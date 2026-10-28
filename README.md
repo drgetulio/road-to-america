@@ -37,6 +37,21 @@ Também revisar:
 1. **Contrato da garantia**: a página descreve a garantia de três anos e cita o direito de arrependimento do CDC. O texto do contrato precisa ter as mesmas regras.
 2. **Regras da garantia na página**: prazo de três anos, aprovação = Pass no Step 1 e nota mínima no Step 2 CK, participação no programa, ao menos uma tentativa da prova que faltou, agendamento livre (o mentor orienta, mas não autoriza) e reembolso de 100% do valor do curso. Validar com o jurídico.
 
+## Pendências que dependem do dono do curso
+
+Os três avaliadores independentes (médica cética, especialista em qualidade e revisor de texto) apontaram que a nota da página só passa de 9 quando estes itens estiverem preenchidos com dados reais e verificáveis:
+
+1. Fundador: nome completo, CRM-DF, RQE das especialidades, Lattes e foto (`config.js > fundador`). Sem RQE, o item "Pediatra e médico do esporte" fica oculto automaticamente, para atender à Resolução CFM 2.336/2023.
+2. Empresa: razão social, CNPJ, cidade e e-mail de contato e do encarregado de dados (`config.js > empresa`).
+3. Mentores: nome, foto, faculdade, resultado no Step 2 CK, programa e cidade nos EUA, de preferência com link verificável (`config.js > mentores`, campos `origem` e `destino` com siglas curtas, como "BSB" e "OH").
+4. Oferta: valor das parcelas e desconto à vista, data de início, número de vagas, formato e horário das aulas e da mentoria (`config.js > oferta`).
+5. Amostras gratuitas do Anki e da apostila (`config.js > amostras`).
+6. Link do grupo de WhatsApp. Recomenda-se uma Comunidade com grupo só de avisos, em que os participantes não veem o número uns dos outros; a página já oferece a opção de receber avisos só por e-mail.
+7. Respostas de produto que a página ainda não dá: idioma das aulas e da apostila; se há banco de questões próprio; se há preparo para o OET Speaking; total de horas de aula, de cards e de páginas; se o reembolso é corrigido pela inflação e inclui juros de parcelamento; regra de trancamento após os sete dias.
+8. Validação jurídica do termo da garantia (`garantia.html`), em especial: critério de 80% das aulas, duas autoavaliações do NBME por Step, ausência de tentativa obrigatória, prazo de 30 dias para o reembolso e a cláusula de encerramento do curso. São propostas redigidas para a página e precisam refletir o contrato.
+9. Imagens: baixar as fotos da CDN para `assets/img/`, convertê-las para AVIF/WebP em três larguras e usar `srcset`.
+10. Levantamento de preços dos concorrentes: arquivar capturas de tela das páginas citadas na data da publicação.
+
 ## Imagens
 
 As fotos foram geradas para o projeto e estão hospedadas numa CDN (URLs `d8j0ntlcm91z4.cloudfront.net` nos HTML). Recomenda-se baixá-las para `assets/img/` e trocar as URLs, para não depender de link externo:
