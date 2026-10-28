@@ -35,39 +35,39 @@
     {
       q: "Minha escola não tem acreditação SAEME. Estou fora?",
       a: [
-        "<strong>Não.</strong> A política de acreditação reconhecida da Intealth começou em novembro de 2024 como medida apenas informativa. A própria instituição afirma que o médico pode seguir com a certificação ECFMG mesmo que a escola não atenda à política.",
-        "A acreditação SAEME pesa somente em um dos Pathways de certificação, o Pathway 3. As demais vias continuam abertas para formados em escolas não acreditadas."
+        "<strong>Não.</strong> A Recognized Accreditation Policy da Intealth entrou em vigor em novembro de 2024 apenas como medida informativa. A própria instituição afirma que o médico pode seguir com a certificação ECFMG mesmo que a escola não atenda à política.",
+        "A acreditação SAEME pesa somente em um dos Pathways de certificação, o Pathway 3. Quem já tem CRM ativo costuma usar o Pathway 1, baseado na licença para exercer a medicina no Brasil. Confira as regras do ciclo vigente no site do ECFMG."
       ],
       s: ["rap", "rapNews", "pathways"]
     },
     {
       q: "Meu inglês ainda não é fluente.",
       a: [
-        "O Step 1 e o Step 2 CK são provas escritas, de leitura clínica, sem parte oral. O vocabulário médico em inglês se constrói desde o primeiro dia, com o Anki e com as questões comentadas.",
-        "A fala entra mais adiante: a certificação ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O seu plano já prevê essa etapa no momento certo."
+        "O Step 1 e o Step 2 CK são provas de múltipla escolha no computador, sem parte oral. O vocabulário médico em inglês se constrói desde o primeiro dia, com o Anki e com as questões comentadas.",
+        "A fala entra mais adiante: a certificação ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O OET entra no cronograma depois do Step 2 CK."
       ],
       s: ["oet"]
     },
     {
       q: "Trabalho em plantões e tenho pouco tempo.",
       a: [
-        "O plano é montado em cima da sua escala: revisão curta de Anki todo dia, blocos de questões nas folgas e simulados em datas combinadas com o mentor.",
-        "O formato da prova também mudou: desde maio de 2026, o Step 1 e o Step 2 CK são aplicados em <strong>blocos de 30 minutos</strong>, e o plano já treina você nesse ritmo. Com três anos de acesso, dá para estudar as duas provas sem largar o trabalho."
+        "O plano é montado em cima da sua escala. A carga mínima é de cerca de 12 horas por semana: 30 a 40 minutos de Anki por dia e um bloco de questões em cada folga.",
+        "Nesse ritmo, o planejamento prevê de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK, dentro dos três anos de acesso. Se o diagnóstico mostrar menos de 10 horas livres por semana, avisamos antes da matrícula que o prazo pode não bastar. As provas usam <strong>blocos de 30 minutos</strong> desde maio de 2026, e os simulados seguem esse formato."
       ],
       s: ["format"]
     },
     {
       q: "Já passei dos 35 anos. Ainda faz sentido?",
       a: [
-        "<strong>Não existe idade máxima</strong> para a residência nos EUA. O que alguns programas observam é o tempo desde a formatura, e cada um informa essa preferência na base FREIDA, da American Medical Association.",
-        "Experiência clínica, cartas de recomendação e uma nota competitiva no Step 2 CK contam a seu favor. Entre IMGs não americanos que conseguiram a especialidade desejada em 2026, a mediana no Step 2 CK foi 248."
+        "<strong>Não existe idade máxima</strong> para a residência nos EUA. O que alguns programas observam é o tempo desde a formatura: muitos preferem candidatos formados há menos de 5 a 10 anos, outros não têm corte. Cada programa informa essa regra na base FREIDA, da American Medical Association.",
+        "Experiência clínica nos EUA, cartas de recomendação e uma nota competitiva no Step 2 CK compensam parte desse tempo. Entre IMGs não americanos que conseguiram a especialidade desejada em 2026, a mediana no Step 2 CK foi 248. No diagnóstico, o mentor indica os programas compatíveis com o seu ano de formatura."
       ],
       s: ["freida", "charting"]
     },
     {
       q: "Vou precisar refazer a residência?",
       a: [
-        "Na maioria dos estados, sim: a licença plena exige residência credenciada nos EUA. Desde 2023, porém, <strong>mais de 20 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia.",
+        "Na maioria dos estados, sim: a licença plena exige residência credenciada nos EUA. Desde 2023, porém, <strong>27 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia (WES, maio de 2026).",
         "Quase todas essas leis exigem a certificação ECFMG, que inclui o Step 1 e o Step 2 CK, e uma oferta de emprego nos EUA."
       ],
       s: ["fsmb", "wes"]
@@ -83,7 +83,7 @@
     {
       q: "E se eu não for aprovado?",
       a: [
-        "Se você participar do programa e, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK, devolvemos o valor integral pago ao curso. As condições estão na <a href=\"#garantia\">seção de garantia</a> e no contrato.",
+        "Se, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK e você tiver assistido a pelo menos 80% das aulas e feito as autoavaliações indicadas, devolvemos o valor integral pago ao curso. Não é preciso ter feito nenhuma tentativa da prova para pedir o reembolso. Veja o <a href=\"garantia.html\">termo completo</a>.",
         "Como cada Step aceita no máximo quatro tentativas na vida, recomendamos agendar só quando os simulados mostrarem folga. A decisão final é sua."
       ],
       s: ["attempts"]
@@ -92,7 +92,7 @@
       q: "Ainda estou na faculdade. Posso começar?",
       a: [
         "<strong>Sim.</strong> Estudantes regularmente matriculados em escola cuja Sponsor Note indica Current, com o ciclo básico concluído, podem fazer o Step 1 e o Step 2 CK antes da formatura. O certificado ECFMG é emitido depois, com o diploma verificado.",
-        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas."
+        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não concluiu o ciclo básico, o prazo da garantia conta a partir dessa conclusão."
       ],
       s: ["students"]
     },
@@ -100,7 +100,7 @@
       q: "Quanto custa o caminho, além do curso?",
       a: [
         "Taxas oficiais em 2026: Step 1, US$ 695 mais US$ 210 de taxa regional para prova fora dos EUA; Step 2 CK, US$ 695 mais US$ 235; inscrição na certificação ECFMG, US$ 580; OET Medicine, cerca de AU$ 587.",
-        "Somando a conta MyIntealth, a verificação do diploma e a inscrição no Pathway, o total oficial costuma ficar <strong>entre US$ 3.000 e US$ 4.000</strong>. Esses valores são pagos diretamente às instituições, e o seu plano já os distribui no tempo."
+        "Somando a conta MyIntealth, a verificação do diploma e a inscrição no Pathway, o total oficial costuma ficar <strong>entre US$ 3.000 e US$ 4.000</strong>. Esses valores são pagos diretamente às instituições, e o cronograma indica quando pagar cada taxa."
       ],
       s: ["fees", "ecfmgFees"]
     },
@@ -113,10 +113,18 @@
       s: ["prometric", "fsmbMove"]
     },
     {
+      q: "O curso ajuda com ERAS, estágio nos EUA e entrevistas?",
+      a: [
+        "O foco desta turma são o Step 1, o Step 2 CK e a certificação ECFMG, que são o pré-requisito de qualquer candidatura.",
+        "O acompanhamento de ERAS, cartas de recomendação, estágio nos EUA e entrevistas não faz parte do pacote da turma fundadora."
+      ],
+      s: ["pathways"]
+    },
+    {
       q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
         "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
-        "A <strong>turma fundadora</strong> paga menos porque é a primeira. Em troca, pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova."
+        "A <strong>turma fundadora</strong> paga menos porque é a primeira. Por isso mesmo, ainda não temos taxa de aprovação para mostrar e não vamos inventar uma: a garantia de três anos existe para cobrir esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
       ],
       s: []
     }
@@ -238,7 +246,7 @@
         "</dl>" +
       "</div>" +
       '<div class="pass__stub" aria-hidden="true">' +
-        "<span>De</span><b>BSB</b><span>Para</span><b>" + (real && m.destino ? esc(m.destino).slice(0, 10) : "EUA") + "</b><span>Assento</span><b>" + seat + "</b>" +
+        "<span>De</span><b>" + (real && m.origem ? esc(m.origem).slice(0, 4) : "BRA") + "</b><span>Para</span><b>" + (real && m.destino ? esc(m.destino).slice(0, 4) : "EUA") + "</b><span>Assento</span><b>" + seat + "</b>" +
       "</div>" +
     "</article>";
   }
@@ -251,6 +259,7 @@
   /* ---------- Fundador, empresa e oferta vindos da configuração ---------- */
   var F = CFG.fundador || {};
   if (F.nome) document.querySelectorAll("[data-fundador-nome]").forEach(function (el) { el.textContent = F.nome; });
+  if (!F.rqe) document.querySelectorAll("[data-requer-rqe]").forEach(function (el) { el.hidden = true; });
   var reg = document.querySelector("[data-fundador-registro]");
   if (reg && (F.crm || F.rqe)) { reg.textContent = [F.crm, F.rqe].filter(Boolean).join(" · "); reg.hidden = false; }
   var lat = document.querySelector("[data-fundador-lattes]");

@@ -140,7 +140,7 @@ async function boot() {
   /* ---------- oceano com borda suave ---------- */
   var oceanMat = new THREE.ShaderMaterial({
     transparent: true,
-    uniforms: { uBase: { value: new THREE.Color() }, uRim: { value: new THREE.Color() }, uRimA: { value: 0.3 } },
+    uniforms: { uBase: { value: new THREE.Vector3() }, uRim: { value: new THREE.Vector3() }, uRimA: { value: 0.3 } },
     vertexShader: "varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
     fragmentShader: "uniform vec3 uBase; uniform vec3 uRim; uniform float uRimA; varying vec3 vN; void main(){ float f = pow(1.0 - max(vN.z, 0.0), 3.2); gl_FragColor = vec4(mix(uBase, uRim, f * 0.32), 1.0); }"
   });
@@ -189,6 +189,8 @@ async function boot() {
   globe.add(halo);
 
   /* ---------- cores conforme o tema ---------- */
+  var srgb = { r: 0, g: 0, b: 0 };
+  function toSRGB(hex) { var c = new THREE.Color(hex), o = { r: 0, g: 0, b: 0 }; c.getRGB(o, THREE.SRGBColorSpace); return new THREE.Vector3(o.r, o.g, o.b); }
   function paint() {
     var ink = new THREE.Color(cssVar("--ink"));
     var red = new THREE.Color(cssVar("--red"));
@@ -213,14 +215,16 @@ async function boot() {
         else c = Math.floor(la / 1.55) % 2 === 0 ? red : (dark ? new THREE.Color("#eef1ec") : new THREE.Color("#c9ced6"));
         a = 0.95; s = 17;
       }
-      colors[i * 3] = c.r; colors[i * 3 + 1] = c.g; colors[i * 3 + 2] = c.b;
+      /* o shader recebe as cores em sRGB, sem conversão linear */
+      c.getRGB(srgb, THREE.SRGBColorSpace);
+      colors[i * 3] = srgb.r; colors[i * 3 + 1] = srgb.g; colors[i * 3 + 2] = srgb.b;
       alphas[i] = a; sizes[i] = s;
     }
     geo.attributes.aColor.needsUpdate = true;
     geo.attributes.aAlpha.needsUpdate = true;
     geo.attributes.aSize.needsUpdate = true;
-    oceanMat.uniforms.uBase.value.set(cssVar(dark ? "--paper-3" : "--paper"));
-    oceanMat.uniforms.uRim.value.copy(ink);
+    oceanMat.uniforms.uBase.value = toSRGB(cssVar(dark ? "--paper-3" : "--paper"));
+    oceanMat.uniforms.uRim.value = toSRGB(cssVar("--ink"));
     tube.material.color.copy(red);
     dashMat.color.copy(ink);
     dashMat.opacity = dark ? 0.5 : 0.4;
@@ -245,7 +249,7 @@ async function boot() {
     var facing = nrm.dot(new THREE.Vector3().copy(camera.position).normalize()) > 0.18;
     tmp.project(camera);
     var x = (tmp.x * 0.5 + 0.5) * W, y = (-tmp.y * 0.5 + 0.5) * H;
-    var align = mode === "below" ? "translate(-50%, 12px)" : mode === "right" ? "translate(16px, -50%)" : "translate(-50%, calc(-100% - 12px))";
+    var align = mode === "below" ? "translate(-50%, 14px)" : mode === "right" ? "translate(16px, -115%)" : "translate(-50%, calc(-100% - 12px))";
     el.style.transform = "translate(" + x.toFixed(1) + "px," + y.toFixed(1) + "px) " + align;
     el.style.opacity = facing ? "1" : "0";
   }

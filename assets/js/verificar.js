@@ -93,8 +93,13 @@
     if (!w) {
       level = "";
       badge = '<i class="ph ph-hourglass-medium" aria-hidden="true"></i>' + (count ? "Faltam " + (4 - count) + (4 - count === 1 ? " resposta" : " respostas") : "Aguardando respostas");
-      title = count ? "Faltam algumas respostas." : "O seu resultado aparece aqui.";
-      text = "A pergunta 3 é a decisiva: ela traduz o que o World Directory diz sobre a sua escola.";
+      title = count ? "Continue respondendo." : "O seu resultado aparece aqui.";
+      text = "A resposta da pergunta 3 define o resultado, porque vem do que o World Directory registra sobre a sua escola.";
+    } else if (w === "ok" && count < 4) {
+      level = "";
+      badge = '<i class="ph ph-hourglass-medium" aria-hidden="true"></i>Faltam ' + (4 - count) + (4 - count === 1 ? " resposta" : " respostas");
+      title = "Quase lá.";
+      text = !answered[0] ? "Informe o nome da escola." : (!answered[1] ? "Informe se já se formou e, se for o caso, o ano de formatura." : "Responda se você estudou em mais de uma escola.");
     } else if (w === "ok") {
       level = "ok";
       badge = '<i class="ph-fill ph-check-circle" aria-hidden="true"></i>Caminho aberto';
@@ -129,7 +134,9 @@
       items.push(li("ph-info", "A conferência é gratuita e não obriga a matrícula."));
     }
 
-    if (school && !school.saeme && w) {
+    if (school && school.vencida && w) {
+      items.push(li("ph-info", "A acreditação SAEME registrada para esta escola venceu em " + school.vencida + ". Confira a renovação em saeme.org.br. Isso não muda a elegibilidade ao USMLE."));
+    } else if (school && !school.saeme && w) {
       items.push(li(level === "ok" ? "ph-check-circle" : "ph-info", "Não temos a acreditação SAEME desta escola registrada na nossa lista. Confira em saeme.org.br. De todo modo, isso não muda a elegibilidade ao USMLE."));
     }
 
@@ -152,6 +159,9 @@
       body.setAttribute("data-anim", "");
       last = key;
     }
+    var live = document.querySelector("[data-result-live]");
+    var liveText = level ? (badge.replace(/<[^>]+>/g, "") + ". " + title) : "";
+    if (live && live.textContent !== liveText) live.textContent = liveText;
     if (level) result.setAttribute("data-level", level);
     else result.removeAttribute("data-level");
 

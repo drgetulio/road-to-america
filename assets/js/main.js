@@ -231,7 +231,7 @@
             grupo.href = CONFIG.grupoWhatsapp; grupo.hidden = false;
             if (grupoAviso) grupoAviso.hidden = true;
             var gt = ok.querySelector("[data-grupo-texto]");
-            if (gt) gt.textContent = "Sua prioridade na turma fundadora está registrada. Falta um passo: entrar no grupo de WhatsApp, onde saem os avisos de vagas, datas e condições.";
+            if (gt && gt.getAttribute("data-com-link")) gt.textContent = gt.getAttribute("data-com-link");
           }
           form.hidden = true;
           ok.hidden = false;

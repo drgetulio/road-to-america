@@ -94,7 +94,7 @@
               </div>
             </div>
             <div class="choices choices--grid">
-              <div class="choice"><input type="radio" id="c-sit-1" name="situacao" value="formado"><label for="c-sit-1">Sim, sou formado<span>Tenho diploma ou colei grau</span></label></div>
+              <div class="choice"><input type="radio" id="c-sit-1" name="situacao" value="formado"><label for="c-sit-1">Sim, já me formei<span>Tenho diploma ou colei grau</span></label></div>
               <div class="choice"><input type="radio" id="c-sit-2" name="situacao" value="estudante"><label for="c-sit-2">Ainda estou cursando<span>Matrícula ativa</span></label></div>
             </div>
             <div class="field" data-ano hidden>
@@ -141,17 +141,18 @@
             </div>
             <div class="choices choices--grid">
               <div class="choice"><input type="radio" id="c-t-1" name="transferencia" value="nao"><label for="c-t-1">Não, fiz todo o curso na mesma escola</label></div>
-              <div class="choice"><input type="radio" id="c-t-2" name="transferencia" value="sim"><label for="c-t-2">Sim, fui transferido</label></div>
+              <div class="choice"><input type="radio" id="c-t-2" name="transferencia" value="sim"><label for="c-t-2">Sim, pedi transferência</label></div>
             </div>
           </fieldset>
         </form>
 
-        <aside class="result" data-result aria-live="polite" aria-atomic="true">
+        <p class="sr-only" aria-live="polite" data-result-live></p>
+        <aside class="result" data-result>
           <div class="result__bar" aria-hidden="true"></div>
           <div class="result__body" data-result-body>
             <span class="result__badge"><i class="ph ph-hourglass-medium" aria-hidden="true"></i>Aguardando respostas</span>
             <h2 class="display h3">O seu resultado aparece aqui.</h2>
-            <p>Responda às quatro perguntas ao lado. Nada é enviado até você pedir a confirmação de um mentor.</p>
+            <p>Responda às quatro perguntas. Nada é enviado até você pedir a confirmação de um mentor.</p>
             <div class="progress-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
           </div>
         </aside>
@@ -173,7 +174,7 @@
           <article class="fact reveal" style="--i:1">
             <i class="ph ph-seal-question" aria-hidden="true"></i>
             <h3>SAEME não é obrigatório</h3>
-            <p>Desde novembro de 2024, a política de acreditação da Intealth apenas informa quais escolas a cumprem. Ela não altera a elegibilidade individual. <a href="https://www.intealth.org/accreditation/" target="_blank" rel="noopener">Intealth</a></p>
+            <p>A política de acreditação da Intealth, em vigor desde novembro de 2024, apenas informa quais escolas a cumprem. Ela não altera a elegibilidade individual. <a href="https://www.intealth.org/accreditation/" target="_blank" rel="noopener">Intealth</a></p>
           </article>
           <article class="fact reveal" style="--i:2">
             <i class="ph ph-student" aria-hidden="true"></i>
@@ -188,7 +189,7 @@
       <div class="wrap v-lead">
         <div>
           <h2 class="display h2" id="t-conf">Receba a confirmação de um mentor.</h2>
-          <p class="lead" style="margin-top:18px">Conferimos a sua escola no World Directory e enviamos o resultado com a rota sugerida para o seu caso. Gratuito e sem compromisso.</p>
+          <p class="lead" style="margin-top:18px">Conferimos a sua escola no World Directory e enviamos o resultado com a rota sugerida para o seu caso. A conferência é gratuita e não obriga a matrícula.</p>
           <ul class="perks">
             <li><i class="ph ph-check-square-offset" aria-hidden="true"></i><span>Conferência manual da Sponsor Note e dos anos de formatura.</span></li>
             <li><i class="ph ph-signpost" aria-hidden="true"></i><span>Indicação do próximo passo, inclusive quando a resposta for negativa.</span></li>
@@ -234,7 +235,7 @@
               <p class="error" data-error-for="ingles" aria-live="polite"></p>
             </fieldset>
             <div>
-              <label class="consent"><input type="checkbox" name="consentimento" value="sim"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por telefone, WhatsApp e e-mail sobre a verificação e a turma fundadora. Meus dados nunca serão vendidos.</span></label>
+              <label class="consent"><input type="checkbox" name="consentimento" value="sim"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por WhatsApp, e-mail e telefone sobre a verificação e a turma fundadora. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
               <p class="error" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
             </div>
             <button class="btn btn--block" type="submit">Quero a confirmação <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
@@ -244,9 +245,8 @@
           <div class="success" data-form-success hidden tabindex="-1">
             <i class="ph-fill ph-check-circle big" aria-hidden="true"></i>
             <h3 class="display h3">Pedido recebido, <span data-first-name></span>.</h3>
-            <p>Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com a rota sugerida para o seu caso. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.</p>
+            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com a rota sugerida para o seu caso. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com a rota sugerida para o seu caso. O convite para o grupo de WhatsApp da turma fundadora chega pelo seu número.</p>
             <a class="btn btn--whats" data-grupo href="#" target="_blank" rel="noopener" hidden><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i> Entrar no grupo da turma</a>
-            <p class="grupo-aviso" data-grupo-aviso><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i><span>O convite para o grupo de WhatsApp da turma fundadora será enviado para o seu número.</span></p>
             <a class="btn btn--ghost" href="index.html#incluido">Conhecer o curso</a>
           </div>
         </div>

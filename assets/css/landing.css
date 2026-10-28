@@ -147,7 +147,7 @@
 .globe-sign small { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.12em; opacity: 0.85; margin-bottom: 2px; }
 .globe-sign b { font-size: 1.15rem; font-weight: 800; }
 .journey__stops { list-style: none; margin: 0; padding: 4vh 0 10vh; display: grid; gap: 0; }
-.stop { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 20px; align-items: start; padding: 8vh 0; opacity: 0.42; transition: opacity 0.5s var(--ease); }
+.stop { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 20px; align-items: start; padding: 8vh 0; opacity: 0.62; transition: opacity 0.5s var(--ease); }
 .stop.is-active, .stop.is-done { opacity: 1; }
 .stop.is-done .exit { background: var(--red-deep); color: #fff; box-shadow: inset 0 0 0 2px var(--red-deep), inset 0 0 0 3.5px rgba(255, 255, 255, 0.85); }
 .stop h3 { font-family: var(--font-display); font-size: clamp(1.6rem, 2.4vw, 2rem); line-height: 1.05; margin: 2px 0 8px; }
@@ -417,3 +417,17 @@
 .tile__sample:hover { background: rgba(255, 255, 255, 0.12); }
 .hero .lead a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
 .consent a { color: var(--ink); font-weight: 600; }
+
+/* ---------- Levantamento de preços e termo da garantia ---------- */
+.survey { margin-top: 8px; font-size: 14px; color: var(--ink-2); }
+.survey summary { cursor: pointer; font-weight: 600; color: var(--ink); padding: 6px 0; }
+.survey ul { margin: 8px 0; padding-left: 18px; display: grid; gap: 6px; }
+.survey a, .compare__row span a { color: var(--ink); }
+.survey p { margin: 0; font-size: 13px; color: var(--ink-3); }
+.conds-link { margin: 18px 0 0; }
+.conds-link a { color: var(--red); font-weight: 600; }
+@media (max-width: 600px) {
+  .hero__media::after { display: none; }
+  .hero__media::before { right: -8px; bottom: -12px; }
+  .hero__media { margin-right: 8px; }
+}
