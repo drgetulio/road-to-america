@@ -1,0 +1,1704 @@
+[
+  {
+    "id": "s1-001",
+    "step": "step1",
+    "vinheta": "A healthy girl is brought to the physician for a well-child examination. She was born at term after an uncomplicated pregnancy. She pulls to stand, walks while holding onto furniture, and took two steps without support yesterday. She picks up small pieces of cereal between the tips of her thumb and index finger. She says 'mama' and 'dada' specifically to her parents and uses one other word consistently. She waves bye-bye and follows the one-step command 'give me the ball' when it is accompanied by a gesture. She cries when held by unfamiliar adults. Weight and length are at the 50th percentile. Physical examination shows no abnormalities.",
+    "pergunta": "This child's developmental skills are most consistent with which of the following ages?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "6 months"
+      },
+      {
+        "letra": "B",
+        "texto": "9 months"
+      },
+      {
+        "letra": "C",
+        "texto": "12 months"
+      },
+      {
+        "letra": "D",
+        "texto": "18 months"
+      },
+      {
+        "letra": "E",
+        "texto": "24 months"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: 12 months. At about 1 year a typical child cruises along furniture and may take first independent steps, has a mature (fine) pincer grasp, uses 'mama' and 'dada' specifically plus one or two other words, waves bye-bye, and follows a one-step command when it is paired with a gesture. Stranger anxiety, which begins in the second half of the first year, is still expected. 6 months: the child sits with support, transfers objects hand to hand, uses a raking grasp, and babbles without specific words. 9 months: the child sits without support, crawls, pulls to stand, uses an immature (inferior) pincer grasp, and says 'mama/dada' nonspecifically; independent steps and consistent words are not yet expected. 18 months: the child walks well and runs stiffly, has a vocabulary of roughly 10 to 25 words, points to body parts, and follows a one-step command without a gesture. 24 months: the child runs well, kicks a ball, combines two words into phrases, and has a vocabulary near 50 words. Note that the CDC 2022 checklists, which list skills reached by 75% of children, place some of these items (first steps, words besides mama/dada) at 15 months; among the options offered, 12 months is the best fit.",
+    "explicacao_pt": "Aos 12 meses a criança anda apoiada nos móveis e pode dar os primeiros passos sozinha, tem pinça fina, fala 'mamã' e 'papá' com sentido e mais uma ou duas palavras e cumpre ordem simples acompanhada de gesto. Aos 9 meses ainda não há palavras com significado nem marcha independente; aos 18 meses a criança já corre e tem vocabulário de várias palavras. As listas do CDC revisadas em 2022 situam os primeiros passos e as palavras além de mamã e papá aos 15 meses, idade que não está entre as opções.",
+    "sistema": "desenvolvimento_humano",
+    "disciplina": "comportamental",
+    "dificuldade": "facil",
+    "tags": [
+      "marcos do desenvolvimento",
+      "puericultura",
+      "linguagem",
+      "motor fino"
+    ],
+    "fonte": "Nelson Textbook of Pediatrics, 22nd ed. (Developmental milestones); CDC/AAP 'Learn the Signs. Act Early.' milestone checklists, 2022 revision (Zubler JM et al., Pediatrics 2022;149:e2021052138)."
+  },
+  {
+    "id": "s1-002",
+    "step": "step1",
+    "vinheta": "A 10-month-old boy is brought to the physician because of his third episode of acute otitis media in 4 months. Two months ago, he was hospitalized for pneumonia, and blood cultures grew Streptococcus pneumoniae. He had no serious infections during the first 6 months of life. His maternal uncle died of meningitis in early childhood. He is at the 10th percentile for weight. Temperature is 38.6°C (101.5°F). Examination shows bulging, erythematous tympanic membranes bilaterally. Tonsillar tissue cannot be seen, and no cervical lymph nodes are palpable. Serum concentrations of IgG, IgA, and IgM are markedly decreased. Flow cytometry of peripheral blood shows no CD19+ cells; the CD3+ T-lymphocyte count is within the reference range.",
+    "pergunta": "A mutation in the gene encoding which of the following proteins is the most likely cause of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Adenosine deaminase"
+      },
+      {
+        "letra": "B",
+        "texto": "Bruton tyrosine kinase"
+      },
+      {
+        "letra": "C",
+        "texto": "CD40 ligand"
+      },
+      {
+        "letra": "D",
+        "texto": "Common gamma chain of cytokine receptors"
+      },
+      {
+        "letra": "E",
+        "texto": "Wiskott-Aldrich syndrome protein"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: Bruton tyrosine kinase. X-linked agammaglobulinemia results from loss of BTK, a kinase required for signaling through the pre-B-cell receptor. Development stops at the pre-B stage in the bone marrow, so mature CD19+ B cells, plasma cells, and all immunoglobulin classes are absent, and lymphoid tissue that depends on B-cell follicles (tonsils, lymph nodes) is hypoplastic. Infections with encapsulated bacteria begin after about 6 months, when transplacental maternal IgG has been catabolized; the affected maternal uncle fits X-linked inheritance. Adenosine deaminase deficiency causes autosomal recessive SCID: toxic deoxyadenosine metabolites kill T, B, and NK cells, and the T-cell count would be very low. CD40 ligand deficiency causes X-linked hyper-IgM syndrome: B cells are present, IgM is normal or high, class switching fails, and opportunistic infections such as Pneumocystis are typical. Common gamma chain (IL2RG) mutations cause X-linked SCID with absent T and NK cells. Wiskott-Aldrich syndrome protein deficiency causes thrombocytopenia with small platelets, eczema, and low IgM, with B cells present.",
+    "explicacao_pt": "A agamaglobulinemia ligada ao X (doença de Bruton) resulta de mutação no gene BTK, que bloqueia a maturação do linfócito pré-B na medula. Faltam células CD19+, todas as classes de imunoglobulina caem e as infecções por bactérias encapsuladas começam depois dos 6 meses, quando a IgG materna se esgota. Tonsilas e linfonodos ficam hipoplásicos, e o tratamento é a reposição de imunoglobulina.",
+    "sistema": "sangue_imune",
+    "disciplina": "imunologia",
+    "dificuldade": "facil",
+    "tags": [
+      "imunodeficiência primária",
+      "agamaglobulinemia ligada ao X",
+      "BTK",
+      "linfócito B",
+      "herança ligada ao X"
+    ],
+    "fonte": "Murphy K, Weaver C. Janeway's Immunobiology, 10th ed. (Primary immunodeficiencies); Abbas AK et al. Cellular and Molecular Immunology, 10th ed."
+  },
+  {
+    "id": "s1-003",
+    "step": "step1",
+    "vinheta": "A 66-year-old woman is evaluated on postoperative day 7 after an elective total knee arthroplasty. Since surgery, she has received subcutaneous unfractionated heparin for thromboprophylaxis. Today she reports pain and swelling of the left calf. She has had no bleeding. Temperature is 37.1°C (98.8°F), pulse is 92/min, and blood pressure is 134/78 mm Hg. The left calf is swollen and tender. The platelet count was 260,000/mm3 before surgery and is 98,000/mm3 today. Hemoglobin concentration is 11.8 g/dL, prothrombin time is 12 seconds (INR 1.0), and fibrinogen concentration is 350 mg/dL. A peripheral blood smear shows no schistocytes. Compression ultrasonography shows a thrombus in the left popliteal vein.",
+    "pergunta": "Which of the following is the most likely mechanism of this patient's thrombocytopenia?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Autoantibodies against platelet glycoprotein IIb/IIIa"
+      },
+      {
+        "letra": "B",
+        "texto": "Consumption of platelets in disseminated intravascular coagulation"
+      },
+      {
+        "letra": "C",
+        "texto": "Deficiency of ADAMTS13 activity"
+      },
+      {
+        "letra": "D",
+        "texto": "Direct nonimmune binding of heparin to platelets"
+      },
+      {
+        "letra": "E",
+        "texto": "Platelet-activating IgG against platelet factor 4-heparin complexes"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: platelet-activating IgG against platelet factor 4 (PF4)-heparin complexes. Heparin-induced thrombocytopenia (type 2) typically begins 5 to 10 days after heparin exposure, with a fall in platelet count of more than 50% and a paradoxical tendency to venous and arterial thrombosis. IgG binds PF4-heparin complexes on the platelet surface; the Fc portion engages platelet FcγRIIa receptors, which activates platelets, releases procoagulant microparticles, and generates thrombin, while antibody-coated platelets are removed. All heparin must be stopped and a nonheparin anticoagulant (for example, argatroban, fondaparinux, or a direct oral anticoagulant) started. Autoantibodies against GPIIb/IIIa cause immune thrombocytopenia, which presents with mucocutaneous bleeding, not thrombosis, and has no link to heparin timing. Disseminated intravascular coagulation would prolong the prothrombin time, lower fibrinogen, and produce schistocytes. ADAMTS13 deficiency causes thrombotic thrombocytopenic purpura, a microangiopathic hemolytic anemia with schistocytes. Direct nonimmune heparin-platelet interaction (formerly 'HIT type 1') appears within the first 2 days, causes a mild drop, carries no thrombotic risk, and resolves even if heparin continues.",
+    "explicacao_pt": "A trombocitopenia induzida por heparina (tipo 2) surge entre 5 e 10 dias após a exposição, com queda de mais de 50% das plaquetas e trombose paradoxal. IgG contra o complexo fator plaquetário 4 e heparina ativa as plaquetas pelo receptor FcγRIIa e gera trombina. A conduta é suspender toda heparina e iniciar anticoagulante não heparínico, como argatrobana ou fondaparinux.",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "HIT",
+      "heparina",
+      "trombocitopenia",
+      "trombose",
+      "fator plaquetário 4",
+      "hipersensibilidade tipo II"
+    ],
+    "fonte": "Cuker A et al. American Society of Hematology 2018 guidelines for management of venous thromboembolism: heparin-induced thrombocytopenia. Blood Adv 2018;2:3360-92; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-004",
+    "step": "step1",
+    "vinheta": "A 58-year-old woman with a 12-year history of rheumatoid arthritis comes to the physician because of fatigue for 3 months. She takes methotrexate, folic acid, and naproxen. She has had no melena or hematochezia, and tests for fecal occult blood are negative on three samples. Pulse is 84/min and blood pressure is 122/76 mm Hg. The conjunctivae are pale. There is symmetric swelling of the metacarpophalangeal joints. Laboratory studies show: Hemoglobin 10.1 g/dL; Mean corpuscular volume 81 μm3; Leukocyte count 7,800/mm3; Platelet count 410,000/mm3; Reticulocyte count 0.8%; Serum iron 38 μg/dL; Total iron-binding capacity 210 μg/dL; Transferrin saturation 18%; Ferritin 420 ng/mL; Erythrocyte sedimentation rate 58 mm/h; Serum vitamin B12 and folate within reference ranges; Direct antiglobulin (Coombs) test negative.",
+    "pergunta": "Which of the following is the most likely primary mechanism of this patient's anemia?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Autoantibodies against erythrocyte membrane antigens"
+      },
+      {
+        "letra": "B",
+        "texto": "Chronic occult gastrointestinal blood loss"
+      },
+      {
+        "letra": "C",
+        "texto": "Impaired DNA synthesis in erythroid precursors"
+      },
+      {
+        "letra": "D",
+        "texto": "Increased hepcidin-mediated degradation of ferroportin"
+      },
+      {
+        "letra": "E",
+        "texto": "Reduced synthesis of beta-globin chains"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: increased hepcidin-mediated degradation of ferroportin. In anemia of inflammation, IL-6 induces hepatic hepcidin, which binds ferroportin on duodenal enterocytes and macrophages and causes its internalization and degradation. Iron is trapped in stores, so serum iron and transferrin saturation fall while ferritin (an acute-phase reactant and storage marker) is normal or high and TIBC is low. Erythropoietin response is blunted and red cell survival is mildly shortened, but iron restriction is the dominant mechanism. Autoimmune hemolytic anemia would cause reticulocytosis, increased LDH and indirect bilirubin, spherocytes, and a positive direct antiglobulin test. Chronic gastrointestinal blood loss, a concern with NSAID use, produces iron deficiency with low ferritin and high TIBC; occult blood tests are negative. Impaired DNA synthesis from methotrexate-induced folate antagonism causes macrocytosis, and she takes folic acid. Beta-thalassemia trait causes lifelong microcytosis, usually with a disproportionately low MCV, normal iron studies, and target cells.",
+    "explicacao_pt": "Na anemia da doença crônica (anemia da inflamação), a IL-6 estimula a produção hepática de hepcidina, que degrada a ferroportina e retém o ferro em macrófagos e enterócitos. O padrão laboratorial típico é ferro sérico baixo, capacidade total de ligação do ferro baixa e ferritina normal ou alta. Na ferropenia, ao contrário, a ferritina cai e a capacidade de ligação do ferro sobe.",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "anemia da doença crônica",
+      "hepcidina",
+      "ferroportina",
+      "metabolismo do ferro",
+      "artrite reumatoide"
+    ],
+    "fonte": "Ganz T. Anemia of inflammation. N Engl J Med 2019;381:1148-57; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-005",
+    "step": "step1",
+    "vinheta": "A 52-year-old man comes to the physician because of fatigue, early satiety, and a 4-kg (9-lb) weight loss over 3 months. Temperature is 37.0°C (98.6°F). The spleen is palpable 8 cm below the left costal margin. Laboratory studies show a hemoglobin concentration of 11.2 g/dL, leukocyte count of 112,000/mm3, and platelet count of 520,000/mm3. A peripheral blood smear shows granulocytes at all stages of maturation, with increased basophils and eosinophils; blasts account for 2% of leukocytes. Cytogenetic analysis of a bone marrow aspirate shows t(9;22)(q34;q11).",
+    "pergunta": "A drug that directly targets the protein product of this patient's chromosomal abnormality acts by which of the following mechanisms?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Binding of CD20 on the surface of B lymphocytes"
+      },
+      {
+        "letra": "B",
+        "texto": "Blockade of the ATP-binding site of a fusion tyrosine kinase"
+      },
+      {
+        "letra": "C",
+        "texto": "Degradation of a PML-RARA fusion transcription factor"
+      },
+      {
+        "letra": "D",
+        "texto": "Inhibition of dihydrofolate reductase in dividing cells"
+      },
+      {
+        "letra": "E",
+        "texto": "Inhibition of ribonucleotide reductase in dividing cells"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: blockade of the ATP-binding site of a fusion tyrosine kinase. The Philadelphia chromosome, t(9;22), fuses BCR with ABL1 and creates a constitutively active cytoplasmic tyrosine kinase that drives myeloid proliferation in chronic myeloid leukemia. Imatinib, and the second-generation agents dasatinib and nilotinib, occupy the ATP-binding pocket of BCR-ABL1 and prevent substrate phosphorylation; acquired resistance usually arises from kinase-domain point mutations (T315I is resistant to most agents except ponatinib and asciminib). Binding of CD20 describes rituximab, used for B-cell lymphomas and chronic lymphocytic leukemia. Degradation of PML-RARA describes arsenic trioxide (and all-trans retinoic acid acts on the same fusion) in acute promyelocytic leukemia with t(15;17). Dihydrofolate reductase inhibition describes methotrexate. Ribonucleotide reductase inhibition describes hydroxyurea, which can lower the leukocyte count in CML but does not act on the molecular lesion.",
+    "explicacao_pt": "A leucemia mieloide crônica nasce da translocação t(9;22), o cromossomo Filadélfia, que gera a tirosina-quinase BCR-ABL1 sempre ativa. O imatinibe e os demais inibidores de tirosina-quinase ocupam o sítio de ligação do ATP e bloqueiam a sinalização proliferativa. A hidroxiureia reduz os leucócitos, mas não atua sobre a lesão molecular.",
+    "sistema": "sangue_imune",
+    "disciplina": "farmacologia",
+    "dificuldade": "media",
+    "tags": [
+      "leucemia mieloide crônica",
+      "cromossomo Filadélfia",
+      "BCR-ABL1",
+      "imatinibe",
+      "terapia-alvo"
+    ],
+    "fonte": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed. (Cancer chemotherapy); NCCN Clinical Practice Guidelines in Oncology: Chronic Myeloid Leukemia."
+  },
+  {
+    "id": "s1-006",
+    "step": "step1",
+    "vinheta": "A 71-year-old man with hypertension and atrial fibrillation is brought to the emergency department 1 hour after his wife noticed that he was dragging his left leg. He does not take anticoagulants. Since symptom onset, he has had one episode of urinary incontinence. Pulse is 96/min and irregularly irregular, and blood pressure is 168/94 mm Hg. He is alert and oriented, and his speech is fluent. Muscle strength is 2/5 in the left lower extremity and 5/5 in the left upper extremity and face. Sensation to pinprick and vibration is decreased over the left leg and foot. There is a Babinski sign on the left. Visual fields are full.",
+    "pergunta": "Occlusion of which of the following arteries is the most likely cause of these findings?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Left anterior cerebral artery"
+      },
+      {
+        "letra": "B",
+        "texto": "Left middle cerebral artery"
+      },
+      {
+        "letra": "C",
+        "texto": "Left posterior cerebral artery"
+      },
+      {
+        "letra": "D",
+        "texto": "Right anterior cerebral artery"
+      },
+      {
+        "letra": "E",
+        "texto": "Right middle cerebral artery"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: right anterior cerebral artery. The ACA supplies the medial surface of the frontal and parietal lobes, including the paracentral lobule, where the leg and foot are represented on the motor and sensory homunculi, and the medial frontal cortex involved in voluntary control of micturition. Occlusion produces contralateral leg weakness and sensory loss, often with urinary incontinence and abulia; deficits on the left localize to the right hemisphere. Left ACA occlusion would affect the right leg. Middle cerebral artery occlusion affects the lateral convexity, so the face and arm are weaker than the leg; left (dominant) MCA strokes add aphasia, and right MCA strokes add hemineglect. Posterior cerebral artery occlusion causes contralateral homonymous hemianopia with macular sparing, and this patient's visual fields are full.",
+    "explicacao_pt": "A artéria cerebral anterior irriga a face medial dos lobos frontal e parietal, onde ficam a representação da perna no córtex motor e sensitivo e o controle cortical da micção. A oclusão causa paresia e hipoestesia da perna contralateral e pode causar incontinência urinária. Déficit à esquerda aponta para lesão no hemisfério direito.",
+    "sistema": "comportamento_nervoso",
+    "disciplina": "anatomia",
+    "dificuldade": "facil",
+    "tags": [
+      "AVC isquêmico",
+      "artéria cerebral anterior",
+      "homúnculo",
+      "neuroanatomia vascular"
+    ],
+    "fonte": "Blumenfeld H. Neuroanatomy through Clinical Cases, 3rd ed. (Cerebral hemispheres and vascular supply)."
+  },
+  {
+    "id": "s1-007",
+    "step": "step1",
+    "vinheta": "A 69-year-old man with Parkinson disease diagnosed 2 years ago began levodopa monotherapy 2 weeks ago. He now reports nausea, vomiting, and lightheadedness when he stands. Pulse is 88/min. Blood pressure is 128/76 mm Hg while supine and 104/64 mm Hg while standing. His resting tremor has improved slightly. The physician adds a drug that relieves the nausea and orthostatic symptoms and allows the levodopa dose to be reduced without loss of motor benefit.",
+    "pergunta": "Which of the following is the mechanism of action of the added drug?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Agonism at dopamine D2 receptors in the striatum"
+      },
+      {
+        "letra": "B",
+        "texto": "Antagonism at NMDA glutamate receptors in the brain"
+      },
+      {
+        "letra": "C",
+        "texto": "Antagonism at striatal muscarinic acetylcholine receptors"
+      },
+      {
+        "letra": "D",
+        "texto": "Inhibition of monoamine oxidase type B in the brain"
+      },
+      {
+        "letra": "E",
+        "texto": "Inhibition of peripheral aromatic L-amino acid decarboxylase"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: inhibition of peripheral aromatic L-amino acid decarboxylase. Carbidopa (benserazide in some countries) inhibits DOPA decarboxylase outside the CNS. Without it, most levodopa is converted to dopamine in the periphery, where dopamine stimulates the chemoreceptor trigger zone in the area postrema (outside the blood-brain barrier), causing nausea and vomiting, and causes vasodilation, orthostatic hypotension, and arrhythmias. Carbidopa does not cross the blood-brain barrier, so blocking peripheral conversion lets more levodopa reach the brain, and the dose can be reduced. Dopamine D2 agonists (pramipexole, ropinirole) cross the blood-brain barrier and themselves cause nausea and orthostatic hypotension. NMDA antagonism describes amantadine. Muscarinic antagonism describes trihexyphenidyl and benztropine, which mainly help tremor and cause anticholinergic effects. MAO-B inhibitors (selegiline, rasagiline) act centrally to reduce dopamine breakdown and can spare levodopa, but they do not prevent peripheral dopamine formation and can worsen orthostatic hypotension.",
+    "explicacao_pt": "A carbidopa inibe a dopa-descarboxilase periférica e não atravessa a barreira hematoencefálica. Assim, menos levodopa vira dopamina fora do sistema nervoso central, o que reduz as náuseas (a área postrema fica fora da barreira) e a hipotensão ortostática e aumenta a fração da dose que chega ao cérebro. No Brasil, a benserazida, associada à levodopa, cumpre a mesma função.",
+    "sistema": "comportamento_nervoso",
+    "disciplina": "farmacologia",
+    "dificuldade": "facil",
+    "tags": [
+      "doença de Parkinson",
+      "levodopa",
+      "carbidopa",
+      "dopa-descarboxilase",
+      "barreira hematoencefálica"
+    ],
+    "fonte": "Brunton LL et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. (Treatment of central nervous system degenerative disorders)."
+  },
+  {
+    "id": "s1-008",
+    "step": "step1",
+    "vinheta": "A 38-year-old woman with bipolar I disorder that has been stable for 4 years with lithium carbonate therapy is brought to the emergency department by her husband because of confusion, unsteady gait, and diarrhea for 2 days. Three weeks ago, she began taking hydrochlorothiazide for hypertension. Temperature is 37.0°C (98.6°F), pulse is 62/min, and blood pressure is 118/74 mm Hg. She is disoriented to time. Examination shows a coarse tremor of the hands, dysarthria, a wide-based gait, and intermittent myoclonic jerks. Serum lithium concentration is 2.6 mEq/L; it was 0.8 mEq/L at her last visit 2 months ago. Serum sodium concentration is 136 mEq/L, and serum creatinine concentration is 1.1 mg/dL.",
+    "pergunta": "Which of the following is the most likely mechanism of the increase in this patient's serum lithium concentration?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Decreased hepatic metabolism of lithium by cytochrome P450 enzymes"
+      },
+      {
+        "letra": "B",
+        "texto": "Displacement of lithium from plasma protein binding sites"
+      },
+      {
+        "letra": "C",
+        "texto": "Increased proximal tubular reabsorption of lithium"
+      },
+      {
+        "letra": "D",
+        "texto": "Inhibition of lithium secretion by organic anion transporters"
+      },
+      {
+        "letra": "E",
+        "texto": "Reduced glomerular filtration from afferent arteriolar constriction"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: increased proximal tubular reabsorption of lithium. Lithium is not metabolized and not protein bound; it is freely filtered, and most of the filtered load is reabsorbed with sodium in the proximal tubule. Thiazides cause natriuresis and mild volume contraction, which triggers compensatory proximal sodium reabsorption, and lithium is reabsorbed along with sodium, so clearance falls and levels rise. ACE inhibitors, angiotensin receptor blockers, dehydration, and NSAIDs raise levels as well. Cytochrome P450 interactions do not apply, because lithium is excreted unchanged. Protein-binding displacement does not apply, because lithium circulates free. Lithium is not secreted by organic anion transporters. Reduced GFR from afferent arteriolar constriction is the mechanism of NSAIDs (loss of vasodilator prostaglandins), not thiazides, and her creatinine is normal.",
+    "explicacao_pt": "O lítio é filtrado livremente, não se liga a proteínas e não sofre metabolismo hepático; o túbulo proximal o reabsorve junto com o sódio. O tiazídico causa natriurese e contração de volume, o túbulo proximal passa a reabsorver mais sódio e, com ele, mais lítio. Inibidores da ECA, bloqueadores do receptor de angiotensina, anti-inflamatórios não esteroides e desidratação também elevam a litemia.",
+    "sistema": "comportamento_nervoso",
+    "disciplina": "farmacologia",
+    "dificuldade": "media",
+    "tags": [
+      "lítio",
+      "intoxicação",
+      "tiazídico",
+      "interação medicamentosa",
+      "farmacocinética renal",
+      "transtorno bipolar"
+    ],
+    "fonte": "Brunton LL et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed. (Pharmacotherapy of mania and bipolar disorder); Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed."
+  },
+  {
+    "id": "s1-009",
+    "step": "step1",
+    "vinheta": "A 57-year-old man comes to the physician because of progressive weakness of his hands for 8 months and difficulty swallowing for 1 month. He has trouble buttoning his shirts and often drops objects. He has had no numbness or bladder symptoms. Examination shows atrophy of the intrinsic hand muscles and fasciculations of the tongue and thighs. Muscle strength is 3/5 in the intrinsic hand muscles. Deep tendon reflexes are 3+ in all extremities, and Babinski signs are present bilaterally. Sensation to pinprick, vibration, and joint position is normal. Extraocular movements are full. Serum vitamin B12 concentration is within the reference range. MRI of the cervical spine shows no compression. Electromyography shows active denervation in muscles of the bulbar, cervical, and lumbosacral regions.",
+    "pergunta": "Postmortem examination of this patient's central nervous system would most likely show which of the following?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Degeneration of the dorsal columns and lateral corticospinal tracts"
+      },
+      {
+        "letra": "B",
+        "texto": "Demyelinating plaques in the periventricular white matter"
+      },
+      {
+        "letra": "C",
+        "texto": "Depigmentation of the substantia nigra with Lewy bodies"
+      },
+      {
+        "letra": "D",
+        "texto": "Expansion of the central canal with destruction of the anterior white commissure"
+      },
+      {
+        "letra": "E",
+        "texto": "Loss of anterior horn motor neurons and degeneration of the lateral corticospinal tracts"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: loss of anterior horn motor neurons and degeneration of the lateral corticospinal tracts. Amyotrophic lateral sclerosis combines lower motor neuron signs (atrophy, fasciculations, denervation on EMG) with upper motor neuron signs (hyperreflexia, Babinski signs), spares sensation and extraocular movements, and progresses across regions. Pathology shows loss of anterior horn cells and brainstem motor nuclei (hypoglossal), loss of Betz cells, pallor of the lateral corticospinal tracts, and cytoplasmic TDP-43 inclusions in most cases. Combined dorsal column and lateral corticospinal degeneration is subacute combined degeneration from vitamin B12 deficiency, which causes loss of vibration and joint position sense and no fasciculations. Periventricular demyelinating plaques define multiple sclerosis, with relapsing sensory, visual, and cerebellar symptoms and no lower motor neuron signs. Nigral depigmentation with Lewy bodies is Parkinson disease, with bradykinesia and rigidity. A syrinx expanding the central canal destroys crossing spinothalamic fibers, producing cape-like loss of pain and temperature sensation, and would be seen on MRI.",
+    "explicacao_pt": "A esclerose lateral amiotrófica combina sinais de neurônio motor inferior (atrofia, fasciculações) e superior (hiper-reflexia, Babinski), sem alteração sensitiva e com movimentos oculares preservados. A necropsia mostra perda de neurônios do corno anterior e dos núcleos motores do tronco e degeneração do trato corticoespinal lateral, em geral com inclusões de TDP-43. A eletroneuromiografia documenta a desnervação em vários segmentos.",
+    "sistema": "comportamento_nervoso",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "esclerose lateral amiotrófica",
+      "neurônio motor",
+      "trato corticoespinal",
+      "neurodegeneração",
+      "TDP-43"
+    ],
+    "fonte": "Robbins and Cotran Pathologic Basis of Disease, 10th ed. (Central nervous system); Brown RH, Al-Chalabi A. Amyotrophic lateral sclerosis. N Engl J Med 2017;377:162-72."
+  },
+  {
+    "id": "s1-010",
+    "step": "step1",
+    "vinheta": "A 47-year-old man is evaluated on hospital day 3 after open reduction and internal fixation of a tibial fracture. Over the past 12 hours he has become agitated and reports seeing insects crawling on the walls. His wife says he drinks 10 to 12 beers daily. Temperature is 38.2°C (100.8°F), pulse is 128/min, respirations are 22/min, and blood pressure is 172/100 mm Hg. He is diaphoretic and disoriented to place and time and has a coarse tremor of the hands. Pupils are 5 mm and reactive to light. Serum glucose concentration is 108 mg/dL.",
+    "pergunta": "Which of the following neurochemical changes best explains this patient's current condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Acute depletion of thiamine pyrophosphate in the mammillary bodies"
+      },
+      {
+        "letra": "B",
+        "texto": "Decreased dopaminergic activity in the nigrostriatal pathway"
+      },
+      {
+        "letra": "C",
+        "texto": "Increased cAMP signaling in locus coeruleus neurons after loss of mu-opioid receptor stimulation"
+      },
+      {
+        "letra": "D",
+        "texto": "Increased serotonergic activity at 5-HT2A receptors"
+      },
+      {
+        "letra": "E",
+        "texto": "Reduced GABA-A receptor responsiveness with increased NMDA receptor activity"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: reduced GABA-A receptor responsiveness with increased NMDA receptor activity. Ethanol enhances GABA-A receptor chloride currents and inhibits NMDA glutamate receptors. With chronic use, the brain adapts by reducing GABA-A function (changes in receptor number and subunit composition) and upregulating NMDA receptors. When drinking stops abruptly, as during hospitalization, glutamatergic excitation and noradrenergic outflow are unopposed, producing tremor, autonomic hyperactivity, seizures, hallucinations, and, typically 48 to 96 hours after the last drink, delirium tremens. Benzodiazepines are first-line treatment because they restore GABA-A signaling. Thiamine depletion causes Wernicke encephalopathy (confusion, ophthalmoplegia, ataxia) without autonomic storm. Reduced nigrostriatal dopamine causes parkinsonism. Opioid withdrawal results from rebound cAMP signaling in the locus coeruleus; it causes mydriasis, yawning, rhinorrhea, diarrhea, and piloerection, with a clear sensorium. Increased 5-HT2A activity underlies hallucinogen effects and contributes to serotonin syndrome, which follows serotonergic drugs and features clonus and hyperreflexia.",
+    "explicacao_pt": "O álcool aumenta a atividade do receptor GABA-A e inibe o receptor NMDA; com o uso crônico, o cérebro se adapta com menor resposta GABAérgica e mais receptores NMDA. Na abstinência, sobram excitação glutamatérgica e hiperatividade simpática, e o delirium tremens costuma surgir entre 48 e 96 horas após a última dose. O tratamento de escolha são benzodiazepínicos, com tiamina antes de soluções com glicose.",
+    "sistema": "comportamento_nervoso",
+    "disciplina": "fisiologia",
+    "dificuldade": "media",
+    "tags": [
+      "abstinência alcoólica",
+      "delirium tremens",
+      "GABA-A",
+      "NMDA",
+      "neurotransmissão"
+    ],
+    "fonte": "Schuckit MA. Recognition and management of withdrawal delirium (delirium tremens). N Engl J Med 2014;371:2109-13; Kaplan & Sadock's Synopsis of Psychiatry, 12th ed."
+  },
+  {
+    "id": "s1-011",
+    "step": "step1",
+    "vinheta": "A 24-year-old man comes to the emergency department 6 hours after he fell onto his outstretched right hand while skateboarding. He reports pain on the lateral side of the wrist. Examination shows tenderness to palpation in the anatomic snuffbox, between the tendons of the extensor pollicis longus and extensor pollicis brevis. Sensation and capillary refill in the hand are normal. X-rays show a nondisplaced fracture through the waist of the scaphoid.",
+    "pergunta": "Which of the following complications is this patient at greatest risk of developing?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Acute carpal tunnel syndrome"
+      },
+      {
+        "letra": "B",
+        "texto": "Avascular necrosis of the proximal fragment"
+      },
+      {
+        "letra": "C",
+        "texto": "Compartment syndrome of the forearm"
+      },
+      {
+        "letra": "D",
+        "texto": "Injury to the deep branch of the ulnar nerve"
+      },
+      {
+        "letra": "E",
+        "texto": "Rupture of the extensor pollicis longus tendon"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: avascular necrosis of the proximal fragment. Most of the scaphoid's blood supply comes from branches of the radial artery that enter the dorsal ridge and distal pole and flow retrograde toward the proximal pole. A fracture through the waist interrupts this flow, so the proximal fragment is at risk of avascular necrosis and nonunion; suspected fractures are immobilized even when initial x-rays are normal. Acute carpal tunnel syndrome is a complication of lunate or perilunate dislocation and distal radius fractures. Forearm compartment syndrome follows crush injuries or displaced forearm fractures. The deep branch of the ulnar nerve is at risk with fractures of the hook of the hamate. Rupture of the extensor pollicis longus tendon is a late complication of distal radius fractures, as the tendon wears against Lister tubercle.",
+    "explicacao_pt": "O escafoide recebe sangue de ramos da artéria radial que entram pelo dorso e pelo polo distal, e o fluxo segue em sentido retrógrado até o polo proximal. Na fratura da cintura, o fragmento proximal perde a irrigação e corre risco de necrose avascular e pseudartrose. Dor na tabaqueira anatômica após queda sobre a mão espalmada exige imobilização mesmo com radiografia inicial normal.",
+    "sistema": "musculoesqueletico_pele",
+    "disciplina": "anatomia",
+    "dificuldade": "facil",
+    "tags": [
+      "escafoide",
+      "tabaqueira anatômica",
+      "necrose avascular",
+      "artéria radial",
+      "trauma de punho"
+    ],
+    "fonte": "Moore KL, Dalley AF, Agur AMR. Clinically Oriented Anatomy, 9th ed. (Upper limb: wrist and hand)."
+  },
+  {
+    "id": "s1-012",
+    "step": "step1",
+    "vinheta": "A 54-year-old man who received a kidney transplant 3 years ago comes to the physician because of fatigue and painful mouth sores for 1 week. His immunosuppressive regimen of azathioprine, tacrolimus, and prednisone has been unchanged for 2 years. Four weeks ago, he began a new drug to prevent recurrent attacks of gouty arthritis. Temperature is 38.3°C (100.9°F). There are several shallow ulcers on the buccal mucosa. Laboratory studies show a hemoglobin concentration of 8.1 g/dL (13.0 g/dL 2 months ago), leukocyte count of 1,200/mm3 with 15% neutrophils, and platelet count of 42,000/mm3. Serum creatinine concentration is 1.3 mg/dL, unchanged from baseline, and the tacrolimus trough concentration is within the target range. A bone marrow biopsy shows marked hypocellularity without infiltrative disease. There is no rash, eosinophilia, or elevation of liver enzymes.",
+    "pergunta": "Which of the following best explains this patient's hematologic findings?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Decreased conversion of 6-mercaptopurine to an inactive metabolite"
+      },
+      {
+        "letra": "B",
+        "texto": "Decreased renal clearance of azathioprine and its metabolites"
+      },
+      {
+        "letra": "C",
+        "texto": "Direct toxicity of oxypurinol to hematopoietic progenitors"
+      },
+      {
+        "letra": "D",
+        "texto": "HLA-B*58:01-associated drug hypersensitivity reaction"
+      },
+      {
+        "letra": "E",
+        "texto": "Inherited deficiency of thiopurine methyltransferase activity"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: decreased conversion of 6-mercaptopurine to an inactive metabolite. The new drug is allopurinol. Azathioprine is converted to 6-mercaptopurine (6-MP), which follows three routes: inactivation by xanthine oxidase to 6-thiouric acid, inactivation by thiopurine methyltransferase (TPMT) to 6-methylmercaptopurine, and activation by HGPRT to cytotoxic thioguanine nucleotides. Allopurinol (and febuxostat) inhibit xanthine oxidase, diverting 6-MP toward thioguanine nucleotides and causing severe myelosuppression; if the combination cannot be avoided, the thiopurine dose must be reduced substantially and blood counts monitored. Azathioprine elimination is mainly metabolic, and renal function is unchanged. Oxypurinol, the active metabolite of allopurinol, is not a recognized direct marrow toxin. HLA-B*58:01 predisposes to allopurinol hypersensitivity syndrome (DRESS, Stevens-Johnson syndrome), which presents with rash, fever, eosinophilia, hepatitis, and renal injury rather than isolated marrow aplasia. Inherited TPMT deficiency also increases thiopurine toxicity, but it causes myelosuppression within the first weeks to months of therapy; this patient tolerated an unchanged dose for 2 years until the new drug was added.",
+    "explicacao_pt": "A azatioprina vira 6-mercaptopurina, que a xantina oxidase e a TPMT inativam e a HGPRT converte em nucleotídeos de tioguanina citotóxicos. O alopurinol bloqueia a xantina oxidase, desvia a 6-mercaptopurina para a via ativa e pode causar aplasia medular. Se a associação for inevitável, a dose de azatioprina deve ser reduzida de forma acentuada e o hemograma, monitorado.",
+    "sistema": "musculoesqueletico_pele",
+    "disciplina": "farmacologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "gota",
+      "alopurinol",
+      "azatioprina",
+      "xantina oxidase",
+      "interação medicamentosa",
+      "metabolismo das purinas"
+    ],
+    "fonte": "Brunton LL et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed.; FitzGerald JD et al. 2020 American College of Rheumatology Guideline for the Management of Gout. Arthritis Care Res 2020;72:744-60."
+  },
+  {
+    "id": "s1-013",
+    "step": "step1",
+    "vinheta": "A 78-year-old woman comes to the physician because of an intensely pruritic eruption on her trunk and thighs for 3 weeks. Examination shows multiple tense bullae, 1 to 3 cm in diameter, on erythematous urticarial plaques over the flexor surfaces of the thighs, the groin, and the lower abdomen. The oral mucosa is normal. Firm lateral pressure on normal-appearing skin next to a lesion does not separate the epidermis. A skin biopsy specimen shows a subepidermal blister with an eosinophil-rich infiltrate. Direct immunofluorescence shows linear deposition of IgG and C3 along the basement membrane zone.",
+    "pergunta": "Autoantibodies against which of the following are most likely responsible for this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Collagen type VII in anchoring fibrils"
+      },
+      {
+        "letra": "B",
+        "texto": "Desmoglein 3 in desmosomes"
+      },
+      {
+        "letra": "C",
+        "texto": "Epidermal transglutaminase (transglutaminase 3)"
+      },
+      {
+        "letra": "D",
+        "texto": "Hemidesmosomal protein BP180 (type XVII collagen)"
+      },
+      {
+        "letra": "E",
+        "texto": "Laminin 332 in the lamina lucida"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: hemidesmosomal protein BP180 (type XVII collagen). Bullous pemphigoid is the most common autoimmune blistering disease of older adults. IgG against the hemidesmosome proteins BP180 and BP230 activates complement and recruits eosinophils and neutrophils, whose proteases split the epidermis from the dermis (type II hypersensitivity). Tense bullae on urticarial plaques, a negative Nikolsky sign, usual sparing of the mucosa, and linear IgG/C3 at the basement membrane zone are typical. Anti-collagen VII antibodies cause epidermolysis bullosa acquisita, with trauma-induced blisters that heal with scarring and milia. Anti-desmoglein 3 causes pemphigus vulgaris: suprabasal acantholysis, flaccid bullae, oral erosions, a positive Nikolsky sign, and intercellular ('fishnet') IgG. Epidermal transglutaminase is the target in dermatitis herpetiformis, with grouped vesicles on extensor surfaces, granular IgA in the dermal papillae, and gluten-sensitive enteropathy. Anti-laminin 332 causes a form of mucous membrane pemphigoid with predominant, scarring mucosal disease.",
+    "explicacao_pt": "No penfigoide bolhoso, autoanticorpos IgG contra proteínas do hemidesmossomo (BP180, ou colágeno XVII, e BP230) ativam complemento e recrutam eosinófilos, o que separa a epiderme da derme. O resultado são bolhas tensas e pruriginosas em idosos, com sinal de Nikolsky negativo e imunofluorescência linear na zona da membrana basal. No pênfigo vulgar, o alvo é a desmogleína 3, e as bolhas são flácidas, intraepidérmicas e acometem a mucosa oral.",
+    "sistema": "musculoesqueletico_pele",
+    "disciplina": "imunologia",
+    "dificuldade": "media",
+    "tags": [
+      "penfigoide bolhoso",
+      "hemidesmossomo",
+      "BP180",
+      "hipersensibilidade tipo II",
+      "doenças bolhosas"
+    ],
+    "fonte": "Bolognia JL, Schaffer JV, Cerroni L. Dermatology, 5th ed. (Pemphigoid group); Robbins and Cotran Pathologic Basis of Disease, 10th ed. (Skin)."
+  },
+  {
+    "id": "s1-014",
+    "step": "step1",
+    "vinheta": "A 19-year-old man undergoes emergency laparoscopic appendectomy. Anesthesia is induced with propofol and succinylcholine and maintained with sevoflurane. Masseter rigidity was noted during intubation. Twenty minutes after induction, generalized muscle rigidity develops, and end-tidal CO2 rises from 38 mm Hg to 78 mm Hg despite increased minute ventilation. Temperature is 38.9°C (102.0°F) and rising, pulse is 148/min, and blood pressure is 92/54 mm Hg. Arterial blood gas analysis shows a pH of 7.14. Serum potassium concentration is 6.4 mEq/L. Twelve hours later, serum creatine kinase activity is 18,000 U/L. His father had an unexplained high fever during a surgical procedure 10 years ago.",
+    "pergunta": "Which of the following best describes the cellular mechanism of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Antagonism of dopamine D2 receptors in the hypothalamus"
+      },
+      {
+        "letra": "B",
+        "texto": "Excess serotonergic stimulation in the central nervous system"
+      },
+      {
+        "letra": "C",
+        "texto": "Persistent depolarization at the motor end plate from pseudocholinesterase deficiency"
+      },
+      {
+        "letra": "D",
+        "texto": "Uncontrolled calcium release from the sarcoplasmic reticulum of skeletal muscle"
+      },
+      {
+        "letra": "E",
+        "texto": "Uncoupling of oxidative phosphorylation by a lipid-soluble weak acid"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: uncontrolled calcium release from the sarcoplasmic reticulum of skeletal muscle. Malignant hyperthermia is an autosomal dominant pharmacogenetic disorder, most often caused by RYR1 variants (less often CACNA1S). In excitation-contraction coupling, the dihydropyridine receptor in the T-tubule membrane opens the ryanodine receptor of the adjacent terminal cisterna. Volatile anesthetics and succinylcholine keep the abnormal channel open, so calcium floods the sarcoplasm and causes sustained contraction, massive ATP use, CO2 and heat production, rhabdomyolysis, and hyperkalemia. Dantrolene blocks RyR1. Dopamine D2 antagonism causes neuroleptic malignant syndrome, which develops over days after antipsychotics. Serotonergic excess causes serotonin syndrome, with clonus and hyperreflexia after serotonergic drugs. Pseudocholinesterase deficiency prolongs paralysis and apnea after succinylcholine without a hypermetabolic state. Uncoupling by weak acids (salicylates, 2,4-dinitrophenol) causes hyperthermia without rigidity and is unrelated to anesthetic triggers.",
+    "explicacao_pt": "A hipertermia maligna ocorre em portadores de variante no receptor de rianodina tipo 1 (RYR1), de herança autossômica dominante, expostos a anestésicos inalatórios halogenados ou succinilcolina. O retículo sarcoplasmático libera cálcio sem controle, o músculo contrai de forma sustentada e consome ATP, com aumento rápido do CO2 expirado, hipertermia, rabdomiólise e hiperpotassemia. O antídoto é o dantroleno, que bloqueia o RYR1.",
+    "sistema": "musculoesqueletico_pele",
+    "disciplina": "histologia",
+    "dificuldade": "media",
+    "tags": [
+      "hipertermia maligna",
+      "receptor de rianodina",
+      "retículo sarcoplasmático",
+      "acoplamento excitação-contração",
+      "farmacogenética",
+      "dantroleno"
+    ],
+    "fonte": "Rosenberg H et al. Malignant hyperthermia: a review. Orphanet J Rare Dis 2015;10:93; Hall JE, Hall ME. Guyton and Hall Textbook of Medical Physiology, 14th ed. (Excitation-contraction coupling)."
+  },
+  {
+    "id": "s1-015",
+    "step": "step1",
+    "vinheta": "A 17-year-old boy is brought to the physician after he briefly lost consciousness while sprinting during a basketball game. He regained consciousness within 1 minute. His paternal uncle died suddenly at the age of 32 years. Pulse is 70/min and blood pressure is 118/72 mm Hg. Cardiac examination shows a harsh grade 3/6 crescendo-decrescendo systolic murmur heard best at the left lower sternal border; the murmur does not radiate to the carotid arteries. Echocardiography shows asymmetric hypertrophy of the interventricular septum and systolic anterior motion of the anterior mitral valve leaflet.",
+    "pergunta": "Which of the following maneuvers is most likely to increase the intensity of this patient's murmur?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Passive leg raise"
+      },
+      {
+        "letra": "B",
+        "texto": "Squatting"
+      },
+      {
+        "letra": "C",
+        "texto": "Standing abruptly from a squatting position"
+      },
+      {
+        "letra": "D",
+        "texto": "Sustained handgrip"
+      },
+      {
+        "letra": "E",
+        "texto": "Transient arterial occlusion with bilateral arm cuffs"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: standing abruptly from a squatting position. In hypertrophic cardiomyopathy with dynamic left ventricular outflow tract obstruction, the obstruction worsens when the left ventricular cavity becomes smaller, because the septum and the anterior mitral leaflet come closer together during systole. Standing quickly pools blood in the legs, reduces venous return and preload, shrinks the ventricle, and makes the murmur louder; the strain phase of the Valsalva maneuver and nitrates act the same way. A passive leg raise increases venous return and preload, so the murmur softens. Squatting increases both preload and afterload, which enlarges the ventricle and softens the murmur. Sustained handgrip and transient arterial occlusion increase afterload, which reduces the outflow gradient and softens the murmur (while making mitral regurgitation and ventricular septal defect murmurs louder).",
+    "explicacao_pt": "Na cardiomiopatia hipertrófica obstrutiva, a obstrução da via de saída do ventrículo esquerdo aumenta quando a cavidade ventricular diminui. Manobras que reduzem a pré-carga ou a pós-carga, como levantar-se rápido de cócoras ou a fase de esforço da manobra de Valsalva, intensificam o sopro. Agachar, elevar as pernas e o handgrip aumentam o volume ventricular ou a pós-carga e atenuam o sopro.",
+    "sistema": "cardiovascular",
+    "disciplina": "fisiologia",
+    "dificuldade": "media",
+    "tags": [
+      "cardiomiopatia hipertrófica",
+      "sopros",
+      "pré-carga",
+      "pós-carga",
+      "morte súbita no atleta",
+      "manobras dinâmicas"
+    ],
+    "fonte": "Libby P et al. Braunwald's Heart Disease, 12th ed.; Ommen SR et al. 2024 AHA/ACC/AMSSM/HRS/PACES/SCMR Guideline for the Management of Hypertrophic Cardiomyopathy. Circulation 2024;149:e1239-311."
+  },
+  {
+    "id": "s1-016",
+    "step": "step1",
+    "vinheta": "A 56-year-old man comes to the emergency department 3 hours after the onset of swelling of his lips and tongue. He has had no itching or rash. One month ago, he began taking a new medication for hypertension. He also takes metformin. He has never had similar episodes, and no family members have had them. Pulse is 88/min, respirations are 18/min, blood pressure is 142/86 mm Hg, and oxygen saturation is 98% on room air. Examination shows nonpitting edema of the lips and tongue without stridor. There is no urticaria. Serum C4 concentration is within the reference range.",
+    "pergunta": "Which of the following is the most likely mechanism of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Decreased degradation of bradykinin"
+      },
+      {
+        "letra": "B",
+        "texto": "Deficiency of C1 esterase inhibitor"
+      },
+      {
+        "letra": "C",
+        "texto": "IgE-mediated mast cell degranulation"
+      },
+      {
+        "letra": "D",
+        "texto": "Nonimmunologic direct release of histamine from mast cells"
+      },
+      {
+        "letra": "E",
+        "texto": "Shunting of arachidonic acid toward leukotriene synthesis"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: decreased degradation of bradykinin. Angiotensin-converting enzyme is the same enzyme as kininase II, which inactivates bradykinin. ACE inhibitors allow bradykinin to accumulate, and bradykinin B2 receptor activation causes vasodilation and increased vascular permeability, which produce angioedema without urticaria or pruritus and with poor response to antihistamines. It can appear weeks to years after starting the drug and is more frequent in Black patients. The ACE inhibitor must be stopped permanently. Hereditary C1 esterase inhibitor deficiency also causes bradykinin-mediated angioedema, but C4 is low and episodes are recurrent and often familial. IgE-mediated reactions follow allergen exposure and usually include urticaria, pruritus, and sometimes bronchospasm. Direct mast cell activation (vancomycin, opioids, radiocontrast) causes flushing and urticaria. Leukotriene shunting after COX inhibition explains NSAID-exacerbated respiratory disease and NSAID-induced urticaria.",
+    "explicacao_pt": "A enzima conversora de angiotensina também degrada a bradicinina; com o IECA, a bradicinina se acumula e causa vasodilatação e aumento da permeabilidade vascular. O angioedema resultante não tem urticária nem prurido e responde mal a anti-histamínicos. C4 normal e ausência de história familiar afastam a deficiência hereditária do inibidor de C1.",
+    "sistema": "cardiovascular",
+    "disciplina": "farmacologia",
+    "dificuldade": "facil",
+    "tags": [
+      "IECA",
+      "angioedema",
+      "bradicinina",
+      "efeito adverso",
+      "anti-hipertensivos"
+    ],
+    "fonte": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed. (Antihypertensive agents); Brunton LL et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed."
+  },
+  {
+    "id": "s1-017",
+    "step": "step1",
+    "vinheta": "A 63-year-old man is admitted to the hospital with an acute anterior ST-elevation myocardial infarction. He arrived 20 hours after the onset of chest pain, and reperfusion therapy was not performed. On hospital day 5, he suddenly becomes unresponsive. Blood pressure is 60/40 mm Hg, the jugular veins are distended, and heart sounds are muffled. Within minutes, no pulse is palpable, although the cardiac monitor continues to show sinus tachycardia at 110/min. Resuscitation is unsuccessful. Autopsy shows hemopericardium and a tear through the anterior wall of the left ventricle.",
+    "pergunta": "Microscopic examination of the myocardium at the edge of the tear would most likely show which of the following?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Coagulative necrosis with wavy fibers and no inflammatory infiltrate"
+      },
+      {
+        "letra": "B",
+        "texto": "Coagulative necrosis with a dense neutrophilic infiltrate"
+      },
+      {
+        "letra": "C",
+        "texto": "Disintegrating myocytes with macrophages at the infarct border"
+      },
+      {
+        "letra": "D",
+        "texto": "Well-formed granulation tissue with new blood vessels"
+      },
+      {
+        "letra": "E",
+        "texto": "Dense collagenous scar with few cells"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: disintegrating myocytes with macrophages at the infarct border. Between about days 3 and 7, macrophages phagocytose dead myocytes, and granulation tissue only begins to form at the margins. The infarct is at its softest because necrotic muscle is being removed and little new collagen has been laid down, which is why free wall rupture (with tamponade and pulseless electrical activity), papillary muscle rupture, and septal rupture cluster in the first 2 weeks, mostly within this window. Wavy fibers without inflammation appear in the first hours to day 1. A dense neutrophilic infiltrate peaks at about days 1 to 3. Well-formed granulation tissue with neovascularization dominates at about 1 to 2 weeks. A dense collagenous scar is present by about 2 months, when the risk of rupture has passed but a ventricular aneurysm may form.",
+    "explicacao_pt": "Entre o 3º e o 7º dia após o infarto, macrófagos removem os miócitos necróticos e o tecido fica mais frágil, ainda sem colágeno novo suficiente. É a fase de maior risco de ruptura da parede livre, que leva a tamponamento e atividade elétrica sem pulso. Neutrófilos predominam nos dias 1 a 3, o tecido de granulação, entre 1 e 2 semanas, e a cicatriz densa, a partir de cerca de 2 meses.",
+    "sistema": "cardiovascular",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "infarto agudo do miocárdio",
+      "evolução histológica",
+      "ruptura de parede livre",
+      "tamponamento",
+      "macrófagos"
+    ],
+    "fonte": "Robbins and Cotran Pathologic Basis of Disease, 10th ed. (The heart: evolution of morphologic changes in myocardial infarction)."
+  },
+  {
+    "id": "s1-018",
+    "step": "step1",
+    "vinheta": "A 3-year-old boy is brought to the physician because of episodes of bluish discoloration of his lips during play. During these episodes he squats, after which his color improves. A heart murmur was noted at 2 months of age, but the family moved and follow-up was lost. He is at the 10th percentile for weight. Oxygen saturation is 82% on room air. Examination shows digital clubbing, a harsh grade 4/6 systolic ejection murmur at the left upper sternal border, and a single second heart sound. A chest x-ray shows a boot-shaped heart with decreased pulmonary vascular markings.",
+    "pergunta": "Which of the following embryologic events most likely caused this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Anterosuperior deviation of the infundibular septum"
+      },
+      {
+        "letra": "B",
+        "texto": "Excessive resorption of the septum primum"
+      },
+      {
+        "letra": "C",
+        "texto": "Failure of fusion of the endocardial cushions"
+      },
+      {
+        "letra": "D",
+        "texto": "Failure of the aorticopulmonary septum to spiral"
+      },
+      {
+        "letra": "E",
+        "texto": "Failure of the truncal ridges to fuse and form a septum"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: anterosuperior deviation of the infundibular septum. In tetralogy of Fallot, the outlet (infundibular) septum, whose formation depends on neural crest cells, is displaced anteriorly and superiorly. This single malalignment narrows the right ventricular outflow tract (pulmonary stenosis), leaves a malalignment ventricular septal defect, lets the aorta override the defect, and leads to right ventricular hypertrophy. The degree of outflow obstruction determines cyanosis; squatting raises systemic vascular resistance and reduces right-to-left shunting across the VSD. Excessive resorption of the septum primum causes an ostium secundum atrial septal defect, which is acyanotic with a fixed split S2. Failed fusion of the endocardial cushions causes atrioventricular septal defects, common in Down syndrome. A nonspiraling aorticopulmonary septum causes transposition of the great arteries, with profound cyanosis from birth and an 'egg on a string' silhouette. Failure of the truncal ridges to form a septum causes persistent truncus arteriosus, with a single great vessel and early heart failure.",
+    "explicacao_pt": "Na tetralogia de Fallot, o septo infundibular se desloca no sentido anterossuperior durante a septação da via de saída, processo que depende das células da crista neural. Esse único desvio gera estenose da via de saída do ventrículo direito, comunicação interventricular por mau alinhamento, aorta cavalgada e hipertrofia do ventrículo direito. Agachar aumenta a resistência vascular sistêmica e reduz o shunt da direita para a esquerda.",
+    "sistema": "cardiovascular",
+    "disciplina": "anatomia",
+    "dificuldade": "media",
+    "tags": [
+      "tetralogia de Fallot",
+      "embriologia cardíaca",
+      "crista neural",
+      "cardiopatia congênita cianótica"
+    ],
+    "fonte": "Sadler TW. Langman's Medical Embryology, 15th ed. (Cardiovascular system); Allen HD et al. Moss and Adams' Heart Disease in Infants, Children, and Adolescents, 10th ed."
+  },
+  {
+    "id": "s1-019",
+    "step": "step1",
+    "vinheta": "A 24-year-old man is brought to the emergency department after he was found unresponsive at home next to drug paraphernalia. Respirations are 6/min and shallow, pulse is 58/min, and blood pressure is 104/62 mm Hg. The pupils are pinpoint. The lungs are clear to auscultation. Arterial blood gas analysis on room air at sea level shows: pH 7.21; PaCO2 70 mm Hg; PaO2 54 mm Hg; HCO3- 27 mEq/L. A chest x-ray shows no abnormalities. Assume a respiratory quotient of 0.8.",
+    "pergunta": "Which of the following best explains this patient's hypoxemia?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Alveolar hypoventilation"
+      },
+      {
+        "letra": "B",
+        "texto": "Diffusion limitation across the alveolar-capillary membrane"
+      },
+      {
+        "letra": "C",
+        "texto": "Low partial pressure of inspired oxygen"
+      },
+      {
+        "letra": "D",
+        "texto": "Right-to-left intracardiac shunt"
+      },
+      {
+        "letra": "E",
+        "texto": "Ventilation-perfusion mismatch"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: alveolar hypoventilation. By the alveolar gas equation, PAO2 = FiO2 x (Patm - PH2O) - PaCO2/R = 0.21 x (760 - 47) - 70/0.8, which is about 150 - 87.5, or about 62 mm Hg. The alveolar-arterial gradient is about 62 - 54 = 8 mm Hg, which is normal for his age. Hypoxemia with a normal A-a gradient and a high PaCO2 is explained by hypoventilation, here from opioid-induced depression of the medullary respiratory center; it corrects with restored ventilation (naloxone, assisted ventilation). Diffusion limitation, right-to-left shunt, and ventilation-perfusion mismatch all widen the A-a gradient, and a shunt also responds poorly to supplemental oxygen. A low inspired oxygen pressure (high altitude) causes hypoxemia with a normal gradient, but the patient is at sea level and hypoxemia from that cause drives hyperventilation with a low PaCO2.",
+    "explicacao_pt": "Pela equação do gás alveolar, a PAO2 fica em cerca de 62 mm Hg (150 menos 70/0,8), e o gradiente alvéolo-arterial, em torno de 8 mm Hg, dentro do normal. Hipoxemia com gradiente normal e PaCO2 alta indica hipoventilação alveolar, aqui por depressão respiratória causada por opioide. Shunt, distúrbio ventilação-perfusão e limitação da difusão aumentam o gradiente.",
+    "sistema": "respiratorio_renal",
+    "disciplina": "fisiologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "equação do gás alveolar",
+      "gradiente alvéolo-arterial",
+      "hipoventilação",
+      "intoxicação por opioide",
+      "gasometria"
+    ],
+    "fonte": "West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed. (Gas transport and hypoxemia)."
+  },
+  {
+    "id": "s1-020",
+    "step": "step1",
+    "vinheta": "A 34-year-old man who emigrated from a country with a high burden of tuberculosis is diagnosed with cavitary pulmonary tuberculosis. He begins directly observed therapy with rifampin, isoniazid, pyrazinamide, and ethambutol. After 2 months of treatment, sputum smears remain positive for acid-fast bacilli. Drug susceptibility testing of the initial isolate shows high-level resistance to isoniazid and susceptibility to rifampin, pyrazinamide, ethambutol, and ethionamide.",
+    "pergunta": "Which of the following mechanisms most likely accounts for this isolate's drug resistance?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Altered arabinosyltransferase that synthesizes cell wall arabinogalactan"
+      },
+      {
+        "letra": "B",
+        "texto": "Loss of catalase-peroxidase activity required for prodrug activation"
+      },
+      {
+        "letra": "C",
+        "texto": "Loss of pyrazinamidase activity required for prodrug activation"
+      },
+      {
+        "letra": "D",
+        "texto": "Mutation of the A subunit of DNA gyrase"
+      },
+      {
+        "letra": "E",
+        "texto": "Mutation of the beta subunit of DNA-dependent RNA polymerase"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: loss of catalase-peroxidase activity required for prodrug activation. Isoniazid is a prodrug activated by the mycobacterial catalase-peroxidase KatG; the activated drug forms an adduct with NAD that inhibits InhA (enoyl-ACP reductase) and blocks mycolic acid synthesis. Mutations in katG (classically at codon 315) are the most common cause of isoniazid resistance and usually give high-level resistance without cross-resistance to ethionamide. Mutations in the inhA promoter cause low-level isoniazid resistance and cross-resistance to ethionamide, which shares the InhA target; this isolate is ethionamide susceptible. Altered arabinosyltransferase (embB) causes ethambutol resistance. Loss of pyrazinamidase (pncA) causes pyrazinamide resistance. Mutations in DNA gyrase (gyrA) cause fluoroquinolone resistance. Mutations in the beta subunit of RNA polymerase (rpoB) cause rifampin resistance and are detected by rapid molecular tests such as Xpert MTB/RIF.",
+    "explicacao_pt": "A isoniazida é um pró-fármaco ativado pela catalase-peroxidase KatG da micobactéria; o metabólito ativo inibe a InhA e bloqueia a síntese de ácidos micólicos. Mutações em katG são a causa mais comum de resistência e dão resistência de alto grau, enquanto mutações no promotor de inhA dão resistência de baixo grau e cruzada com etionamida. Mutações em rpoB, que o teste rápido molecular (Xpert MTB/RIF) detecta, indicam resistência à rifampicina.",
+    "sistema": "respiratorio_renal",
+    "disciplina": "microbiologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "tuberculose",
+      "isoniazida",
+      "katG",
+      "resistência antimicrobiana",
+      "ácidos micólicos",
+      "pró-fármaco"
+    ],
+    "fonte": "World Health Organization. Catalogue of mutations in Mycobacterium tuberculosis complex and their association with drug resistance, 2nd ed., 2023; Ryan KJ. Sherris & Ryan's Medical Microbiology, 8th ed."
+  },
+  {
+    "id": "s1-021",
+    "step": "step1",
+    "vinheta": "A 22-year-old woman comes to the physician because of muscle cramps and fatigue for 6 months. She occasionally has tingling of her hands. She takes no medications and denies use of laxatives or diuretics; a urine diuretic screen is negative. She has not had vomiting or diarrhea. Pulse is 76/min and blood pressure is 102/64 mm Hg. Physical examination shows no abnormalities. Serum studies show: Na+ 137 mEq/L; K+ 2.8 mEq/L; Cl- 94 mEq/L; HCO3- 32 mEq/L; Mg2+ 1.1 mg/dL; Ca2+ 9.6 mg/dL. Plasma renin activity and aldosterone concentration are increased. Urinary calcium excretion is decreased, and urinary chloride excretion is increased.",
+    "pergunta": "A loss-of-function mutation in the gene encoding which of the following transport proteins is the most likely cause of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Na+/H+ exchanger 3 in the proximal tubule"
+      },
+      {
+        "letra": "B",
+        "texto": "Na+-K+-2Cl- cotransporter in the thick ascending limb"
+      },
+      {
+        "letra": "C",
+        "texto": "Na+-Cl- cotransporter in the distal convoluted tubule"
+      },
+      {
+        "letra": "D",
+        "texto": "Epithelial sodium channel in the collecting duct"
+      },
+      {
+        "letra": "E",
+        "texto": "Aquaporin-2 in the collecting duct"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: Na+-Cl- cotransporter in the distal convoluted tubule. Gitelman syndrome (SLC12A3 mutations, autosomal recessive) reproduces the effect of a thiazide: salt wasting with mild volume contraction, secondary hyperaldosteronism, hypokalemia, metabolic alkalosis, hypomagnesemia, and hypocalciuria, with normal or low blood pressure. Hypocalciuria results from lower intracellular sodium in the distal convoluted tubule, which favors basolateral Na+/Ca2+ exchange and apical calcium entry, together with increased proximal reabsorption during volume contraction. Na+/H+ exchanger 3 defects would impair proximal sodium and bicarbonate reabsorption and are not a cause of this syndrome. Na+-K+-2Cl- cotransporter loss causes Bartter syndrome, which mimics a loop diuretic and produces hypercalciuria, often with onset in infancy. Loss of epithelial sodium channel function causes pseudohypoaldosteronism type 1 with hyperkalemia and acidosis (gain of function causes Liddle syndrome with hypertension). Aquaporin-2 mutations cause nephrogenic diabetes insipidus with polyuria and hypernatremia, without hypokalemic alkalosis.",
+    "explicacao_pt": "A síndrome de Gitelman resulta de perda de função do cotransportador Na-Cl do túbulo contorcido distal (gene SLC12A3) e imita o uso crônico de tiazídico. O quadro reúne hipocalemia, alcalose metabólica, hipomagnesemia e hipocalciúria, com pressão normal ou baixa e renina e aldosterona altas. Na síndrome de Bartter, o defeito fica na alça ascendente espessa e a calciúria aumenta, como ocorre com a furosemida.",
+    "sistema": "respiratorio_renal",
+    "disciplina": "fisiologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "síndrome de Gitelman",
+      "túbulo contorcido distal",
+      "tiazídico",
+      "hipocalemia",
+      "alcalose metabólica",
+      "transportadores renais"
+    ],
+    "fonte": "Blanchard A et al. Gitelman syndrome: consensus and guidance from a KDIGO Controversies Conference. Kidney Int 2017;91:24-33; Boron WF, Boulpaep EL. Medical Physiology, 3rd ed."
+  },
+  {
+    "id": "s1-022",
+    "step": "step1",
+    "vinheta": "A 52-year-old man comes to the physician because of swelling of his legs and face for 6 weeks. He takes no medications. Blood pressure is 132/84 mm Hg. Examination shows 3+ pitting edema of the lower extremities. Urinalysis shows 4+ protein, no erythrocytes, and oval fat bodies. Urinary protein excretion is 8.2 g/24 h. Serum albumin concentration is 2.1 g/dL, total cholesterol concentration is 340 mg/dL, and creatinine concentration is 1.0 mg/dL. Serologic tests for hepatitis B, hepatitis C, and HIV are negative; antinuclear antibodies are not detected; C3 and C4 concentrations are within reference ranges. Age-appropriate cancer screening is up to date and normal. A renal biopsy specimen shows diffuse thickening of the glomerular capillary walls without hypercellularity; silver stain shows spikes along the glomerular basement membrane. Immunofluorescence shows granular IgG and C3 along the capillary loops, and electron microscopy shows subepithelial electron-dense deposits.",
+    "pergunta": "Circulating antibodies against which of the following are most likely present in this patient?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Alpha-3 chain of type IV collagen"
+      },
+      {
+        "letra": "B",
+        "texto": "Double-stranded DNA"
+      },
+      {
+        "letra": "C",
+        "texto": "Myeloperoxidase in neutrophil granules"
+      },
+      {
+        "letra": "D",
+        "texto": "Phospholipase A2 receptor on podocytes"
+      },
+      {
+        "letra": "E",
+        "texto": "Streptococcal pyrogenic exotoxin B"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: phospholipase A2 receptor on podocytes. Primary membranous nephropathy is a leading cause of nephrotic syndrome in nonobese, nondiabetic adults. Most patients have IgG4 autoantibodies against PLA2R, a podocyte membrane antigen; immune complexes form in situ in the subepithelial space, activate complement, and injure podocytes through the membrane attack complex. New basement membrane grows between the deposits and appears as spikes on silver stain. Serum anti-PLA2R titers support the diagnosis and track response to therapy. Antibodies to the alpha-3 chain of type IV collagen cause anti-GBM disease, with linear IgG and rapidly progressive, crescentic glomerulonephritis. Anti-double-stranded DNA antibodies occur in lupus nephritis, usually with positive ANA, low complement, and a full-house immunofluorescence pattern. Anti-myeloperoxidase (p-ANCA) disease is a pauci-immune crescentic glomerulonephritis with hematuria. Antibodies against streptococcal pyrogenic exotoxin B accompany poststreptococcal glomerulonephritis, which is nephritic, with low C3 and subepithelial humps.",
+    "explicacao_pt": "A nefropatia membranosa primária é causa frequente de síndrome nefrótica no adulto e, na maioria dos casos, se associa a anticorpos contra o receptor da fosfolipase A2 (PLA2R) do podócito. Os imunocomplexos se formam in situ no espaço subepitelial, ativam complemento e lesam o podócito, o que gera as espículas na prata e o padrão granular na imunofluorescência. Antes de rotular como primária, convém afastar lúpus, hepatites B e C, fármacos e neoplasias.",
+    "sistema": "respiratorio_renal",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "síndrome nefrótica",
+      "nefropatia membranosa",
+      "anti-PLA2R",
+      "glomerulopatias",
+      "imunocomplexos"
+    ],
+    "fonte": "Kidney Disease: Improving Global Outcomes (KDIGO) Glomerular Diseases Work Group. KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases. Kidney Int 2021;100(4S):S1-S276; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-023",
+    "step": "step1",
+    "vinheta": "A 66-year-old man with a 20-year history of type 2 diabetes mellitus comes to the physician for a routine follow-up examination. His only medication is insulin glargine. He has not had vomiting or diarrhea. Blood pressure is 138/82 mm Hg. Examination shows decreased sensation to monofilament over both feet. Laboratory studies show: Serum Na+ 138 mEq/L; K+ 6.0 mEq/L; Cl- 112 mEq/L; HCO3- 18 mEq/L; Urea nitrogen 28 mg/dL; Creatinine 1.8 mg/dL; Glucose 142 mg/dL. Urine pH is 5.1.",
+    "pergunta": "Which of the following is the most likely underlying cause of this patient's acid-base disorder?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Accumulation of unmeasured organic anions"
+      },
+      {
+        "letra": "B",
+        "texto": "Decreased proximal tubular reabsorption of bicarbonate"
+      },
+      {
+        "letra": "C",
+        "texto": "Gastrointestinal loss of bicarbonate"
+      },
+      {
+        "letra": "D",
+        "texto": "Impaired H+ secretion by alpha-intercalated cells"
+      },
+      {
+        "letra": "E",
+        "texto": "Impaired renin and aldosterone secretion"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: impaired renin and aldosterone secretion. The anion gap is 138 - (112 + 18) = 8 mEq/L, so this is a normal anion gap (hyperchloremic) metabolic acidosis, and it is accompanied by hyperkalemia and an appropriately acidic urine. That combination is type 4 renal tubular acidosis. Diabetic nephropathy commonly damages the juxtaglomerular apparatus and causes hyporeninemic hypoaldosteronism. Low aldosterone reduces potassium secretion by principal cells, and the resulting hyperkalemia suppresses proximal ammoniagenesis, so less NH4+ is excreted and acid accumulates; distal H+ secretion is intact, so the urine can still be acidified. Unmeasured organic anions (ketoacids, lactate, toxic alcohols) would raise the anion gap. Proximal bicarbonate wasting (type 2 RTA) and gastrointestinal bicarbonate loss cause hypokalemia. Impaired H+ secretion by alpha-intercalated cells (type 1 RTA) causes hypokalemia and an inability to lower urine pH below about 5.5.",
+    "explicacao_pt": "Acidose metabólica com ânion gap normal (138 menos 130, igual a 8), hiperpotassemia e urina ácida em diabético com doença renal crônica sugere acidose tubular renal tipo 4. O hipoaldosteronismo hiporreninêmico reduz a secreção distal de potássio, e a hiperpotassemia inibe a amoniogênese proximal, o que diminui a excreção de ácido. Nas acidoses tubulares tipos 1 e 2, o potássio costuma estar baixo.",
+    "sistema": "respiratorio_renal",
+    "disciplina": "fisiologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "acidose tubular renal tipo 4",
+      "ânion gap",
+      "hipoaldosteronismo hiporreninêmico",
+      "hiperpotassemia",
+      "nefropatia diabética",
+      "equilíbrio ácido-base"
+    ],
+    "fonte": "Yu ASL et al. Brenner and Rector's The Kidney, 11th ed. (Disorders of acid-base balance); Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed."
+  },
+  {
+    "id": "s1-024",
+    "step": "step1",
+    "vinheta": "A 27-year-old woman comes to the physician because of bloating, loose foul-smelling stools, and fatigue for 1 year. She has lost 4 kg (9 lb) during this period. She has autoimmune thyroiditis treated with levothyroxine. Examination shows grouped, intensely pruritic vesicles and excoriations on the elbows and knees. Laboratory studies show a hemoglobin concentration of 10.2 g/dL, mean corpuscular volume of 74 μm3, and ferritin concentration of 6 ng/mL. Serum IgA anti-tissue transglutaminase antibody titers are markedly increased, and total IgA concentration is within the reference range. Upper endoscopy is performed, and biopsy specimens are taken from the duodenum.",
+    "pergunta": "Microscopic examination of the biopsy specimens is most likely to show which of the following?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Blunted villi with crypt hyperplasia and increased intraepithelial lymphocytes"
+      },
+      {
+        "letra": "B",
+        "texto": "Foamy macrophages containing PAS-positive material in the lamina propria"
+      },
+      {
+        "letra": "C",
+        "texto": "Lipid-laden enterocytes with normal villous architecture"
+      },
+      {
+        "letra": "D",
+        "texto": "Noncaseating granulomas with transmural inflammation"
+      },
+      {
+        "letra": "E",
+        "texto": "Trophozoites adherent to the brush border with normal villi"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: blunted villi with crypt hyperplasia and increased intraepithelial lymphocytes. In celiac disease, tissue transglutaminase deamidates gliadin peptides, which then bind HLA-DQ2 or HLA-DQ8 with high affinity and activate gluten-specific CD4+ T cells; intraepithelial cytotoxic lymphocytes damage enterocytes. The result is villous atrophy, crypt hyperplasia, and intraepithelial lymphocytosis (graded by the Marsh classification), most marked in the duodenum and proximal jejunum, where iron is absorbed. Dermatitis herpetiformis and autoimmune thyroid disease are associated conditions. Foamy PAS-positive macrophages are typical of Whipple disease, which affects middle-aged men with arthralgia and neurologic findings. Lipid-laden enterocytes with normal villi occur in abetalipoproteinemia, which presents in infancy with acanthocytes. Noncaseating granulomas and transmural inflammation define Crohn disease. Giardia trophozoites on the brush border cause malabsorption after exposure to contaminated water, without autoantibodies.",
+    "explicacao_pt": "Na doença celíaca, a gliadina deaminada pela transglutaminase tecidual é apresentada por HLA-DQ2 ou HLA-DQ8 e ativa linfócitos T, o que leva a atrofia de vilosidades, hiperplasia de criptas e aumento de linfócitos intraepiteliais (classificação de Marsh). O acometimento predomina no duodeno e no jejuno proximal, onde o ferro é absorvido, o que explica a anemia ferropriva. As vesículas pruriginosas em cotovelos e joelhos correspondem à dermatite herpetiforme.",
+    "sistema": "gastrointestinal",
+    "disciplina": "patologia",
+    "dificuldade": "facil",
+    "tags": [
+      "doença celíaca",
+      "transglutaminase tecidual",
+      "HLA-DQ2",
+      "má absorção",
+      "dermatite herpetiforme",
+      "anemia ferropriva"
+    ],
+    "fonte": "Rubio-Tapia A et al. American College of Gastroenterology Guidelines Update: Diagnosis and Management of Celiac Disease. Am J Gastroenterol 2023;118:59-76; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-025",
+    "step": "step1",
+    "vinheta": "A 71-year-old woman is hospitalized for cellulitis of the right leg and treated with intravenous clindamycin. On hospital day 6, she develops eight to ten watery stools daily and crampy lower abdominal pain. Temperature is 38.4°C (101.1°F) and pulse is 102/min. The abdomen is mildly distended and diffusely tender, without rebound. Leukocyte count is 19,000/mm3. A stool nucleic acid amplification test for a toxin gene is positive, and a stool enzyme immunoassay for the toxin is positive. Flexible sigmoidoscopy shows multiple raised yellow-white plaques on the colonic mucosa.",
+    "pergunta": "The major virulence factors of the causal organism act by which of the following mechanisms?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "ADP-ribosylation of elongation factor 2"
+      },
+      {
+        "letra": "B",
+        "texto": "ADP-ribosylation of the Gs alpha subunit"
+      },
+      {
+        "letra": "C",
+        "texto": "Cleavage of SNARE proteins at nerve terminals"
+      },
+      {
+        "letra": "D",
+        "texto": "Glucosylation of Rho family GTPases"
+      },
+      {
+        "letra": "E",
+        "texto": "Inactivation of the 60S ribosomal subunit"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: glucosylation of Rho family GTPases. Clostridioides difficile toxins A (TcdA) and B (TcdB) are glucosyltransferases that enter colonocytes and glucosylate Rho, Rac, and Cdc42. Inactivation of these GTPases disrupts the actin cytoskeleton and tight junctions, causes cell rounding and death, and triggers neutrophil-rich inflammation that forms pseudomembranes of fibrin, mucus, and debris. Antibiotics that disrupt the colonic microbiota, such as clindamycin, fluoroquinolones, and cephalosporins, predispose to infection. ADP-ribosylation of elongation factor 2 is the mechanism of diphtheria toxin and Pseudomonas exotoxin A. ADP-ribosylation of Gs alpha, which keeps adenylyl cyclase active, is the mechanism of cholera toxin and heat-labile enterotoxin of E. coli, producing noninflammatory secretory diarrhea. Cleavage of SNARE proteins is the action of botulinum and tetanus toxins. Inactivation of the 60S ribosomal subunit (removal of an adenine from 28S rRNA) is the action of Shiga and Shiga-like toxins.",
+    "explicacao_pt": "As toxinas A e B do Clostridioides difficile são glicosiltransferases que inativam GTPases da família Rho, desorganizam o citoesqueleto de actina e rompem as junções entre os colonócitos. O resultado é diarreia inflamatória com pseudomembranas, em geral após antibiótico que altera a microbiota. O tratamento inicial recomendado é fidaxomicina ou vancomicina por via oral.",
+    "sistema": "gastrointestinal",
+    "disciplina": "microbiologia",
+    "dificuldade": "media",
+    "tags": [
+      "Clostridioides difficile",
+      "colite pseudomembranosa",
+      "exotoxinas",
+      "GTPases Rho",
+      "infecção relacionada à assistência"
+    ],
+    "fonte": "Johnson S et al. Clinical Practice Guideline by IDSA and SHEA: 2021 Focused Update Guidelines on Management of Clostridioides difficile Infection in Adults. Clin Infect Dis 2021;73:e1029-44; Ryan KJ. Sherris & Ryan's Medical Microbiology, 8th ed."
+  },
+  {
+    "id": "s1-026",
+    "step": "step1",
+    "vinheta": "A 23-year-old woman comes to the physician because of yellowing of her eyes and dark urine for 2 weeks. One month ago, she began taking a combined oral contraceptive. She has no abdominal pain or pruritus. Examination shows scleral icterus; there is no hepatosplenomegaly. Laboratory studies show: Total bilirubin 4.6 mg/dL; Direct bilirubin 3.4 mg/dL; AST 22 U/L; ALT 18 U/L; Alkaline phosphatase 70 U/L; Albumin 4.2 g/dL; Hemoglobin 13.4 g/dL; Reticulocyte count 1%. Abdominal ultrasonography shows a normal biliary tree. A liver biopsy specimen shows normal lobular architecture with coarse, dark brown-black pigment granules in centrilobular hepatocytes.",
+    "pergunta": "A defect in which of the following is the most likely cause of this patient's hyperbilirubinemia?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Bile salt export pump (ABCB11)"
+      },
+      {
+        "letra": "B",
+        "texto": "Bilirubin UDP-glucuronosyltransferase (UGT1A1)"
+      },
+      {
+        "letra": "C",
+        "texto": "Canalicular multidrug resistance-associated protein 2 (ABCC2)"
+      },
+      {
+        "letra": "D",
+        "texto": "Hepatic sinusoidal uptake transporters OATP1B1 and OATP1B3"
+      },
+      {
+        "letra": "E",
+        "texto": "Multidrug resistance protein 3 phosphatidylcholine floppase (ABCB4)"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: canalicular multidrug resistance-associated protein 2 (ABCC2). Dubin-Johnson syndrome is an autosomal recessive defect of MRP2, the ATP-dependent canalicular pump that exports conjugated bilirubin and other organic anions into bile. Conjugated bilirubin refluxes into blood, producing a mild, fluctuating direct hyperbilirubinemia with normal aminotransferases and alkaline phosphatase. Estrogens and pregnancy, which further reduce canalicular excretion, often unmask it. A melanin-like pigment derived from retained anionic metabolites gives the liver its dark color; the condition is benign. A bile salt export pump defect causes progressive familial intrahepatic cholestasis type 2 or benign recurrent intrahepatic cholestasis, with pruritus, high serum bile acids, and abnormal liver enzymes. UGT1A1 defects (Gilbert, Crigler-Najjar) cause unconjugated hyperbilirubinemia. OATP1B1/1B3 deficiency causes Rotor syndrome, a conjugated hyperbilirubinemia without hepatic pigment. ABCB4 defects impair phosphatidylcholine secretion and cause cholestasis with high gamma-glutamyltransferase and cholesterol gallstones.",
+    "explicacao_pt": "A síndrome de Dubin-Johnson é autossômica recessiva e decorre de defeito na MRP2 (gene ABCC2), que exporta a bilirrubina conjugada do hepatócito para o canalículo biliar. O quadro é de hiperbilirrubinemia direta com enzimas hepáticas normais, que piora com anticoncepcional oral ou gestação e mostra fígado de pigmento escuro na biópsia. Na síndrome de Rotor, o defeito está na captação sinusoidal (OATP1B1 e OATP1B3), sem pigmento.",
+    "sistema": "gastrointestinal",
+    "disciplina": "patologia",
+    "dificuldade": "dificil",
+    "tags": [
+      "metabolismo da bilirrubina",
+      "síndrome de Dubin-Johnson",
+      "MRP2",
+      "hiperbilirrubinemia conjugada",
+      "transportadores hepáticos"
+    ],
+    "fonte": "Erlinger S, Arias IM, Dhumeaux D. Inherited disorders of bilirubin transport and conjugation: new insights into molecular mechanisms and consequences. Gastroenterology 2014;146:1625-38; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-027",
+    "step": "step1",
+    "vinheta": "A 9-day-old infant is brought to the emergency department because of vomiting and poor feeding for 2 days. The infant was born at term after an uncomplicated pregnancy. The infant is lethargic and appears dehydrated. Pulse is 186/min and blood pressure is 58/32 mm Hg. Genital examination shows clitoromegaly and partial fusion of the labioscrotal folds; no gonads are palpable. Pelvic ultrasonography shows a uterus and ovaries. The karyotype is 46,XX. Serum studies show: Na+ 126 mEq/L; K+ 7.1 mEq/L; Glucose 52 mg/dL. Serum 17-hydroxyprogesterone concentration is markedly increased.",
+    "pergunta": "Deficiency of which of the following enzymes is the most likely cause of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "11beta-hydroxylase"
+      },
+      {
+        "letra": "B",
+        "texto": "17alpha-hydroxylase"
+      },
+      {
+        "letra": "C",
+        "texto": "21-hydroxylase"
+      },
+      {
+        "letra": "D",
+        "texto": "3beta-hydroxysteroid dehydrogenase"
+      },
+      {
+        "letra": "E",
+        "texto": "Aromatase"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: 21-hydroxylase. 21-Hydroxylase (CYP21A2) deficiency is the most common cause of congenital adrenal hyperplasia. It blocks conversion of 17-hydroxyprogesterone to 11-deoxycortisol and of progesterone to 11-deoxycorticosterone, so both cortisol and aldosterone are deficient. ACTH rises, the adrenals enlarge, and accumulated precursors are diverted to adrenal androgens, which virilize the external genitalia of 46,XX fetuses while internal Mullerian structures and ovaries are normal. In the salt-wasting form, hyponatremia, hyperkalemia, hypoglycemia, and shock appear in the first weeks of life. 11beta-Hydroxylase deficiency also virilizes, but accumulated 11-deoxycorticosterone causes hypertension and hypokalemia rather than salt wasting. 17alpha-Hydroxylase deficiency blocks sex steroid synthesis, so there is no virilization, and causes hypertension and hypokalemia. 3beta-Hydroxysteroid dehydrogenase deficiency causes salt wasting with only mild virilization in females (from DHEA), and 17-hydroxypregnenolone rather than 17-hydroxyprogesterone is markedly elevated. Aromatase deficiency virilizes 46,XX fetuses and often the mother during pregnancy but does not affect cortisol or aldosterone.",
+    "explicacao_pt": "A deficiência de 21-hidroxilase (gene CYP21A2) é a forma mais comum de hiperplasia adrenal congênita e bloqueia a síntese de cortisol e aldosterona. O ACTH alto desvia os precursores para androgênios, que virilizam a genitália externa de meninas 46,XX, e a 17-hidroxiprogesterona se acumula. Na forma perdedora de sal, a crise surge nas primeiras semanas de vida, com hiponatremia, hiperpotassemia e choque; no Brasil, o teste do pezinho dosa a 17-hidroxiprogesterona.",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "bioquimica",
+    "dificuldade": "facil",
+    "tags": [
+      "hiperplasia adrenal congênita",
+      "21-hidroxilase",
+      "esteroidogênese",
+      "genitália atípica",
+      "perda de sal"
+    ],
+    "fonte": "Speiser PW et al. Congenital adrenal hyperplasia due to steroid 21-hydroxylase deficiency: an Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2018;103:4043-88."
+  },
+  {
+    "id": "s1-028",
+    "step": "step1",
+    "vinheta": "A 34-year-old woman comes to the physician because of palpitations, heat intolerance, and a 5-kg (11-lb) weight loss over 3 months. She also reports a gritty sensation in both eyes. She has smoked one pack of cigarettes daily for 15 years. Pulse is 112/min and blood pressure is 138/64 mm Hg. Examination shows bilateral proptosis with lid retraction and periorbital edema. The thyroid gland is diffusely enlarged and nontender, with a bruit. There is a fine tremor of the outstretched hands and nonpitting thickening of the skin over both anterior shins. Serum TSH concentration is less than 0.01 μU/mL, and free thyroxine concentration is 4.1 ng/dL. CT of the orbits shows enlargement of the extraocular muscle bellies with sparing of the tendons and increased retro-orbital fat.",
+    "pergunta": "Which of the following best explains the proptosis in this patient?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Activation of orbital fibroblasts by antibodies against the TSH receptor"
+      },
+      {
+        "letra": "B",
+        "texto": "Granulomatous inflammation of the extraocular muscles"
+      },
+      {
+        "letra": "C",
+        "texto": "Lymphocytic infiltration of the lacrimal glands with acinar destruction"
+      },
+      {
+        "letra": "D",
+        "texto": "Sympathetic overactivity of the superior tarsal muscle"
+      },
+      {
+        "letra": "E",
+        "texto": "Venous congestion from obstruction of the cavernous sinus"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: activation of orbital fibroblasts by antibodies against the TSH receptor. In Graves orbitopathy, orbital fibroblasts and preadipocytes express the TSH receptor (and the IGF-1 receptor, which forms a signaling complex with it). Thyrotropin receptor antibodies and infiltrating T cells stimulate these cells to secrete hydrophilic glycosaminoglycans, chiefly hyaluronan, and to differentiate into adipocytes. Edematous extraocular muscle bellies and expanded fat increase orbital volume and push the globe forward; tendons are characteristically spared. Smoking is the strongest modifiable risk factor. The same process in dermal fibroblasts causes pretibial myxedema. Granulomatous myositis (sarcoidosis, granulomatosis with polyangiitis) is not associated with hyperthyroidism and does not spare tendons in this pattern. Lymphocytic destruction of lacrimal glands is Sjögren syndrome, which causes dry eyes without proptosis. Sympathetic overactivity of the superior tarsal (Muller) muscle explains lid retraction and lid lag in any thyrotoxicosis, but not proptosis or muscle enlargement. Cavernous sinus thrombosis or a carotid-cavernous fistula causes chemosis, ophthalmoplegia, and cranial nerve palsies, usually with a different time course.",
+    "explicacao_pt": "Na orbitopatia de Graves, anticorpos contra o receptor de TSH e linfócitos T ativam fibroblastos da órbita, que produzem glicosaminoglicanos (sobretudo ácido hialurônico) e se diferenciam em adipócitos. Os músculos extraoculares incham com preservação dos tendões e o volume da órbita aumenta, o que empurra o globo ocular para a frente. O tabagismo agrava a doença, e a retração palpebral isolada se deve ao tônus simpático sobre o músculo tarsal superior.",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "doença de Graves",
+      "orbitopatia",
+      "receptor de TSH",
+      "autoimunidade",
+      "hipertireoidismo"
+    ],
+    "fonte": "Bahn RS. Graves' ophthalmopathy. N Engl J Med 2010;362:726-38; Bartalena L et al. The 2021 European Group on Graves' Orbitopathy (EUGOGO) clinical practice guidelines for the medical management of Graves' orbitopathy. Eur J Endocrinol 2021;185:G43-G67."
+  },
+  {
+    "id": "s1-029",
+    "step": "step1",
+    "vinheta": "A 16-year-old girl is brought to the physician because she has never had a menstrual period. Breast development began at the age of 11 years. She is 170 cm (5 ft 7 in) tall. Breast development is Tanner stage 4, and pubic and axillary hair are sparse (Tanner stage 1). The external genitalia are normal female. The vagina is short and ends blindly. Firm, nontender, oval masses are palpable in both inguinal canals. Pelvic ultrasonography shows no uterus. Serum testosterone concentration is within the reference range for adult men, serum LH concentration is increased, and serum estradiol concentration is slightly above the reference range for adult men. The karyotype is 46,XY.",
+    "pergunta": "A defect in which of the following is the most likely cause of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "17alpha-hydroxylase"
+      },
+      {
+        "letra": "B",
+        "texto": "5alpha-reductase type 2"
+      },
+      {
+        "letra": "C",
+        "texto": "Androgen receptor"
+      },
+      {
+        "letra": "D",
+        "texto": "Anti-Mullerian hormone receptor"
+      },
+      {
+        "letra": "E",
+        "texto": "SRY transcription factor"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Correct: androgen receptor. Complete androgen insensitivity syndrome is caused by X-linked loss-of-function mutations in AR. The testes form normally (SRY is intact) and secrete testosterone and anti-Mullerian hormone; AMH causes regression of the Mullerian ducts, so there is no uterus, fallopian tubes, or upper vagina. Because target tissues cannot respond to testosterone or dihydrotestosterone, the Wolffian ducts regress, the external genitalia are female, and pubic and axillary hair are scant. Lack of androgen feedback raises LH and testosterone, and aromatization of testosterone to estradiol produces breast development at puberty. Gonadectomy is usually planned because of the risk of germ cell tumors. 17alpha-Hydroxylase deficiency in a 46,XY person blocks testosterone and estrogen synthesis, so there is no breast development, testosterone is low, and hypertension with hypokalemia is typical. 5alpha-Reductase type 2 deficiency causes atypical genitalia at birth with virilization and no breast development at puberty. Defects of the anti-Mullerian hormone receptor cause persistent Mullerian duct syndrome in otherwise normally virilized males. SRY loss causes 46,XY gonadal dysgenesis (Swyer syndrome), with streak gonads, a uterus, low testosterone, and no spontaneous breast development.",
+    "explicacao_pt": "Na insensibilidade androgênica completa, o cariótipo é 46,XY e os testículos produzem testosterona e hormônio antimülleriano, mas o receptor de androgênio (gene AR, no cromossomo X) não funciona. Sem ação androgênica, a genitália externa é feminina e os pelos pubianos e axilares são escassos; a testosterona convertida em estradiol pela aromatase faz as mamas crescerem. O hormônio antimülleriano impede a formação de útero e tubas, por isso a vagina termina em fundo cego.",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "genetica",
+    "dificuldade": "dificil",
+    "tags": [
+      "diferenciação sexual",
+      "insensibilidade androgênica",
+      "receptor de androgênio",
+      "amenorreia primária",
+      "herança ligada ao X"
+    ],
+    "fonte": "Hughes IA et al. Androgen insensitivity syndrome. Lancet 2012;380:1419-28; Melmed S et al. Williams Textbook of Endocrinology, 15th ed."
+  },
+  {
+    "id": "s1-030",
+    "step": "step1",
+    "vinheta": "A 31-year-old primigravid woman at 34 weeks' gestation comes to the emergency department because of a severe headache and blurred vision for 1 day. Her prenatal course had been uncomplicated, and her blood pressure at 20 weeks' gestation was 112/70 mm Hg. Pulse is 88/min, and blood pressure is 164/110 mm Hg; 15 minutes later it is 160/108 mm Hg. There is edema of the hands and face, and deep tendon reflexes are 3+. Urine dipstick shows 3+ protein. Laboratory studies show a platelet count of 96,000/mm3, AST activity of 88 U/L, ALT activity of 94 U/L, and serum creatinine concentration of 1.0 mg/dL. A peripheral blood smear shows no schistocytes.",
+    "pergunta": "Which of the following is the most likely underlying mechanism of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Antibodies against phospholipid-binding proteins"
+      },
+      {
+        "letra": "B",
+        "texto": "Failure of trophoblastic remodeling of the maternal spiral arteries"
+      },
+      {
+        "letra": "C",
+        "texto": "Increased placental secretion of human placental lactogen"
+      },
+      {
+        "letra": "D",
+        "texto": "Proliferation of trophoblast with an exclusively paternal genome"
+      },
+      {
+        "letra": "E",
+        "texto": "Severe deficiency of ADAMTS13 activity"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: failure of trophoblastic remodeling of the maternal spiral arteries. In normal placentation, extravillous cytotrophoblast invades the spiral arteries and replaces their smooth muscle and elastic tissue, turning them into wide, low-resistance channels. In preeclampsia this remodeling is shallow and incomplete, so the placenta becomes ischemic and releases antiangiogenic factors, mainly soluble fms-like tyrosine kinase 1 (sFlt-1) and soluble endoglin, which bind VEGF, PlGF, and TGF-beta and cause widespread maternal endothelial dysfunction: hypertension, proteinuria (glomerular endotheliosis), thrombocytopenia, liver injury, and cerebral symptoms. A systolic pressure of 160 mm Hg or higher or a diastolic pressure of 110 mm Hg or higher, new cerebral or visual symptoms, a platelet count below 100,000/mm3, and doubled aminotransferases all qualify as severe features. Antiphospholipid antibodies increase the risk of preeclampsia but are not its usual mechanism. Human placental lactogen causes maternal insulin resistance and contributes to gestational diabetes. A complete hydatidiform mole (paternal-only genome) can cause preeclampsia before 20 weeks, with very high hCG. Severe ADAMTS13 deficiency causes thrombotic thrombocytopenic purpura, with schistocytes and microangiopathic hemolysis.",
+    "explicacao_pt": "Na pré-eclâmpsia, o citotrofoblasto não remodela as artérias espiraladas maternas, que continuam estreitas e de alta resistência. A placenta isquêmica libera fatores antiangiogênicos, como sFlt-1 e endoglina solúvel, que causam disfunção endotelial sistêmica: hipertensão, proteinúria, plaquetopenia, lesão hepática e sintomas neurológicos. Pressão sistólica de 160 mm Hg ou mais ou diastólica de 110 mm Hg ou mais, sintomas visuais, plaquetas abaixo de 100.000/mm3 e transaminases acima do dobro do normal são critérios de gravidade.",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "patologia",
+    "dificuldade": "media",
+    "tags": [
+      "pré-eclâmpsia",
+      "placentação",
+      "artérias espiraladas",
+      "sFlt-1",
+      "disfunção endotelial",
+      "hipertensão na gestação"
+    ],
+    "fonte": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia. Obstet Gynecol 2020;135:e237-60; Robbins and Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "s1-031",
+    "step": "step1",
+    "vinheta": "A 29-year-old man and his wife come to the physician because they have been unable to conceive for 2 years. He has had chronic sinusitis and recurrent bronchitis since childhood and has a productive cough on most days. Examination shows crackles at both lung bases. The apical impulse is palpable in the right fifth intercostal space at the midclavicular line. The testes are normal in size, and the vas deferens is palpable bilaterally. Semen analysis shows normal volume and sperm concentration; sperm motility is 0%, and a vital stain shows that most sperm are alive. CT of the chest shows bronchiectasis of both lower lobes and situs inversus.",
+    "pergunta": "A defect in which of the following is the most likely cause of this patient's infertility?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Axonemal dynein arms"
+      },
+      {
+        "letra": "B",
+        "texto": "Cystic fibrosis transmembrane conductance regulator"
+      },
+      {
+        "letra": "C",
+        "texto": "Lysosomal enzyme targeting by mannose 6-phosphate"
+      },
+      {
+        "letra": "D",
+        "texto": "Sertoli cell androgen-binding protein"
+      },
+      {
+        "letra": "E",
+        "texto": "Tight junctions between Sertoli cells"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: axonemal dynein arms. Motile cilia and the sperm flagellum share a 9+2 axoneme in which dynein arms, ATPase motors attached to the outer doublet microtubules, make the doublets slide against each other to produce bending. In primary ciliary dyskinesia (mutations in genes such as DNAH5 and DNAI1), absent or defective dynein arms leave cilia and flagella immotile. Failed mucociliary clearance causes chronic sinusitis, otitis, and bronchiectasis; immotile but viable sperm cause male infertility; and loss of the motile cilia of the embryonic node randomizes left-right asymmetry, so about half of patients have situs inversus (Kartagener syndrome). CFTR mutations cause congenital bilateral absence of the vas deferens with obstructive azoospermia, so sperm would be absent and the vas not palpable. Defective mannose 6-phosphate tagging causes I-cell disease, a severe lysosomal disorder of infancy. Androgen-binding protein deficiency would impair spermatogenesis and lower sperm count. Disrupted Sertoli tight junctions (blood-testis barrier) expose germ cells to the immune system and impair spermatogenesis rather than motility alone.",
+    "explicacao_pt": "Na discinesia ciliar primária, defeitos nos braços de dineína do axonema impedem o batimento de cílios e flagelos, que têm o mesmo arranjo 9+2 de microtúbulos. O resultado é sinusite e bronquiectasias por falha da depuração mucociliar e espermatozoides vivos, mas imóveis. Cerca de metade dos pacientes tem situs inversus, porque os cílios do nó embrionário definem a lateralidade (síndrome de Kartagener).",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "histologia",
+    "dificuldade": "media",
+    "tags": [
+      "discinesia ciliar primária",
+      "síndrome de Kartagener",
+      "dineína",
+      "citoesqueleto",
+      "infertilidade masculina",
+      "situs inversus"
+    ],
+    "fonte": "Pawlina W. Ross Histology: A Text and Atlas, 8th ed. (Cilia and the axoneme); Lucas JS et al. European Respiratory Society guidelines for the diagnosis of primary ciliary dyskinesia. Eur Respir J 2017;49:1601090."
+  },
+  {
+    "id": "s1-032",
+    "step": "step1",
+    "vinheta": "A 49-year-old man is brought to the emergency department by police after he was found wandering and confused. He has a long history of alcohol use disorder. Temperature is 36.6°C (97.9°F), pulse is 104/min, and blood pressure is 112/70 mm Hg. He is thin and disheveled and is disoriented to place and time. Examination shows bilateral horizontal nystagmus, weakness of lateral gaze in both eyes, and a wide-based, unsteady gait. Serum glucose concentration is 78 mg/dL.",
+    "pergunta": "Measurement of which of the following enzyme activities in this patient's erythrocytes is most likely to show a decrease?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Aminolevulinate dehydratase"
+      },
+      {
+        "letra": "B",
+        "texto": "Glucose-6-phosphate dehydrogenase"
+      },
+      {
+        "letra": "C",
+        "texto": "Glutathione reductase"
+      },
+      {
+        "letra": "D",
+        "texto": "Pyruvate kinase"
+      },
+      {
+        "letra": "E",
+        "texto": "Transketolase"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: transketolase. Confusion, ophthalmoplegia, and ataxia in a malnourished patient with alcohol use disorder indicate Wernicke encephalopathy from thiamine deficiency. Thiamine pyrophosphate is the cofactor for pyruvate dehydrogenase, alpha-ketoglutarate dehydrogenase, branched-chain alpha-ketoacid dehydrogenase, and transketolase. Transketolase, in the nonoxidative pentose phosphate pathway, is active in erythrocytes, so low erythrocyte transketolase activity that rises when thiamine pyrophosphate is added in vitro confirms deficiency. Thiamine should be given before or with glucose, because glucose metabolism consumes the remaining cofactor. Aminolevulinate dehydratase is inhibited by lead. Glucose-6-phosphate dehydrogenase and pyruvate kinase deficiencies are inherited causes of hemolysis, not vitamin deficiencies. Erythrocyte glutathione reductase depends on FAD and is used to assess riboflavin status.",
+    "explicacao_pt": "A encefalopatia de Wernicke (confusão, oftalmoparesia e ataxia) resulta de deficiência de tiamina, cuja forma ativa, o pirofosfato de tiamina, é cofator da piruvato desidrogenase, da alfa-cetoglutarato desidrogenase e da transcetolase. A transcetolase da via das pentoses está presente nas hemácias, e sua atividade baixa confirma a deficiência. A tiamina deve ser dada antes da glicose ou junto com ela.",
+    "sistema": "multissistemico",
+    "disciplina": "bioquimica",
+    "dificuldade": "media",
+    "tags": [
+      "tiamina",
+      "encefalopatia de Wernicke",
+      "transcetolase",
+      "via das pentoses",
+      "nutrição",
+      "vitaminas do complexo B"
+    ],
+    "fonte": "Ferrier DR. Lippincott Illustrated Reviews: Biochemistry, 8th ed. (Vitamins); Sechi G, Serra A. Wernicke's encephalopathy: new clinical settings and recent advances in diagnosis and management. Lancet Neurol 2007;6:442-55."
+  },
+  {
+    "id": "s1-033",
+    "step": "step1",
+    "vinheta": "A 19-year-old woman is brought to the physician 2 weeks after an episode of severe headache, vomiting, and loss of vision in the left visual field that has partially resolved. She has short stature and has had exercise intolerance since childhood. MRI of the brain shows cortical lesions in the right occipital lobe that do not correspond to a single arterial territory. Serum lactate concentration is increased. A muscle biopsy specimen shows ragged red fibers with modified Gomori trichrome stain. Her mother has diabetes mellitus and sensorineural hearing loss, her maternal uncle had seizures and died at the age of 30 years, and her brother is asymptomatic. Her father and his relatives are healthy. Genetic testing of the patient identifies the m.3243A>G variant in the mitochondrial MT-TL1 gene.",
+    "pergunta": "Which of the following best explains the variable severity of disease among this patient's maternal relatives?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Anticipation from trinucleotide repeat expansion"
+      },
+      {
+        "letra": "B",
+        "texto": "Genomic imprinting"
+      },
+      {
+        "letra": "C",
+        "texto": "Germline mosaicism"
+      },
+      {
+        "letra": "D",
+        "texto": "Heteroplasmy"
+      },
+      {
+        "letra": "E",
+        "texto": "Locus heterogeneity"
+      },
+      {
+        "letra": "F",
+        "texto": "Uniparental disomy"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: heteroplasmy. MELAS (mitochondrial encephalomyopathy, lactic acidosis, and stroke-like episodes) is most often caused by m.3243A>G in the mitochondrial tRNA-Leu gene. Mitochondrial DNA is inherited only from the mother. Each cell contains hundreds to thousands of mtDNA copies, and a mixture of mutant and normal genomes (heteroplasmy) is distributed unevenly among oocytes (the mitochondrial bottleneck) and among tissues. Disease appears in a tissue when the mutant fraction exceeds a threshold, so relatives with the same variant range from asymptomatic to diabetes and deafness to severe encephalomyopathy. Anticipation (earlier onset and greater severity in successive generations) is typical of trinucleotide repeat disorders such as Huntington disease and myotonic dystrophy; here severity varies within one generation. Genomic imprinting produces parent-of-origin effects in nuclear genes (Prader-Willi and Angelman syndromes). Germline mosaicism explains several affected children born to unaffected parents. Locus heterogeneity means mutations in different genes cause the same phenotype, whereas this family shares a single variant. Uniparental disomy is inheritance of both copies of a chromosome from one parent.",
+    "explicacao_pt": "Na MELAS, a variante patogênica está no DNA mitocondrial, herdado só da mãe. Cada célula carrega centenas a milhares de cópias de mtDNA, e a proporção de cópias mutadas (heteroplasmia) varia entre pessoas e entre tecidos; a doença aparece quando essa proporção passa de um limiar. Por isso, parentes pela linha materna com a mesma variante podem ter desde quadro leve, como diabetes e surdez, até encefalopatia grave.",
+    "sistema": "multissistemico",
+    "disciplina": "genetica",
+    "dificuldade": "dificil",
+    "tags": [
+      "herança mitocondrial",
+      "heteroplasmia",
+      "MELAS",
+      "fibras vermelhas rasgadas",
+      "acidose lática",
+      "padrões de herança"
+    ],
+    "fonte": "Nussbaum RL, McInnes RR, Willard HF. Thompson & Thompson Genetics in Medicine, 9th ed.; Gorman GS et al. Mitochondrial diseases. Nat Rev Dis Primers 2016;2:16080."
+  },
+  {
+    "id": "s1-034",
+    "step": "step1",
+    "vinheta": "A 22-year-old woman is brought to the emergency department because of fever, vomiting, watery diarrhea, and lightheadedness for 1 day. She is menstruating and has been using tampons. Temperature is 39.9°C (103.8°F), pulse is 128/min, and blood pressure is 78/42 mm Hg. Examination shows diffuse macular erythroderma, including the palms, and nonpurulent conjunctival injection. Pelvic examination shows a tampon in the vaginal vault, which she says was inserted about 36 hours earlier. Laboratory studies show a platelet count of 88,000/mm3, serum creatinine concentration of 2.1 mg/dL, creatine kinase activity of 1,800 U/L, and AST activity of 112 U/L. Blood cultures show no growth at 48 hours. Culture of a vaginal swab grows coagulase-positive, gram-positive cocci in clusters.",
+    "pergunta": "The toxin responsible for this patient's condition acts by which of the following mechanisms?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Activation of complement by lipooligosaccharide shed in outer membrane blebs"
+      },
+      {
+        "letra": "B",
+        "texto": "Binding of MHC class II and T-cell receptor Vβ regions outside the peptide groove"
+      },
+      {
+        "letra": "C",
+        "texto": "Cleavage of desmoglein 1 in the granular layer of the epidermis"
+      },
+      {
+        "letra": "D",
+        "texto": "Inhibition of protein synthesis by ADP-ribosylation of elongation factor 2"
+      },
+      {
+        "letra": "E",
+        "texto": "Pore formation in host cell membranes by oligomerized toxin monomers"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: binding of MHC class II and T-cell receptor Vβ regions outside the peptide groove. Toxic shock syndrome toxin-1 of Staphylococcus aureus is a superantigen. It links MHC class II molecules on antigen-presenting cells to the variable region of the T-cell receptor beta chain without antigen processing, so it activates a large fraction of T cells regardless of their antigen specificity. The resulting surge of IL-2, IFN-gamma, TNF-alpha, and IL-1 causes fever, diffuse erythroderma with later desquamation, capillary leak, shock, and multiorgan injury. Blood cultures are usually negative because the toxin is absorbed from a local focus, such as a retained tampon, which must be removed. Complement activation by lipooligosaccharide explains meningococcemia. Desmoglein 1 cleavage by exfoliative toxins causes staphylococcal scalded skin syndrome, usually in young children, without shock. ADP-ribosylation of elongation factor 2 is the mechanism of diphtheria toxin and Pseudomonas exotoxin A. Pore formation describes staphylococcal alpha-toxin and streptolysin O.",
+    "explicacao_pt": "A toxina 1 da síndrome do choque tóxico (TSST-1) do Staphylococcus aureus é um superantígeno: liga o MHC de classe II à região Vβ do receptor do linfócito T fora do sulco de apresentação de peptídeos. Isso ativa grande número de linfócitos T de forma policlonal, com liberação maciça de IL-2, interferon gama e TNF, o que causa febre, eritrodermia, choque e falência de órgãos. As hemoculturas costumam ser negativas, e retirar o foco (o tampão) faz parte do tratamento.",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "dificuldade": "media",
+    "tags": [
+      "síndrome do choque tóxico",
+      "Staphylococcus aureus",
+      "superantígeno",
+      "TSST-1",
+      "choque",
+      "imunologia"
+    ],
+    "fonte": "Murphy K, Weaver C. Janeway's Immunobiology, 10th ed. (Superantigens); Ryan KJ. Sherris & Ryan's Medical Microbiology, 8th ed.; CDC. Toxic Shock Syndrome (Other Than Streptococcal) 2011 Case Definition."
+  },
+  {
+    "id": "s1-035",
+    "step": "step1",
+    "vinheta": "A 61-year-old man in the intensive care unit has received a continuous intravenous infusion of sodium nitroprusside for 3 days for a hypertensive emergency. Today he has become confused and agitated. Temperature is 37.2°C (99.0°F), pulse is 118/min, respirations are 28/min, and blood pressure is 128/76 mm Hg. Pulse oximetry shows an oxygen saturation of 99% on 2 L/min of oxygen by nasal cannula. Arterial blood gas analysis shows: pH 7.24; PaCO2 26 mm Hg; PaO2 98 mm Hg; HCO3- 11 mEq/L. Serum lactate concentration is 9.2 mmol/L. Central venous oxygen saturation is 90%. Methemoglobin and carboxyhemoglobin fractions are each 1%.",
+    "pergunta": "Which of the following best explains this patient's metabolic abnormalities?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Binding of carbon monoxide to hemoglobin"
+      },
+      {
+        "letra": "B",
+        "texto": "Inhibition of cytochrome c oxidase (complex IV)"
+      },
+      {
+        "letra": "C",
+        "texto": "Inhibition of mitochondrial ATP synthase (complex V)"
+      },
+      {
+        "letra": "D",
+        "texto": "Oxidation of hemoglobin iron to the ferric state"
+      },
+      {
+        "letra": "E",
+        "texto": "Uncoupling of the proton gradient from ATP synthesis"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: inhibition of cytochrome c oxidase (complex IV). Each nitroprusside molecule contains five cyanide groups. Cyanide is normally converted by rhodanese, using thiosulfate as sulfur donor, to thiocyanate, which the kidneys excrete. With prolonged or high-dose infusions, thiosulfate stores are exhausted and cyanide binds the ferric iron of cytochrome a3 in complex IV, halting oxidative phosphorylation. Cells cannot use oxygen, so venous blood stays highly saturated (a narrow arteriovenous oxygen difference), and anaerobic glycolysis produces a lactic acidosis with an increased anion gap. Treatment is to stop the infusion and give hydroxocobalamin or sodium thiosulfate. Carbon monoxide poisoning would raise the carboxyhemoglobin fraction, and methemoglobinemia (ferric heme) would raise the methemoglobin fraction; both are normal. Inhibition of ATP synthase (oligomycin) is an experimental mechanism that also slows electron transport but is not caused by nitroprusside. Uncouplers (2,4-dinitrophenol, high-dose salicylates) increase oxygen consumption and heat production, so venous saturation falls and hyperthermia develops.",
+    "explicacao_pt": "Cada molécula de nitroprussiato contém cinco grupos cianeto, que a rodanase converte em tiocianato usando tiossulfato. Em infusões prolongadas ou com dose alta, o cianeto se acumula, liga-se ao ferro férrico da citocromo c oxidase (complexo IV) e as células deixam de usar o oxigênio. O sangue venoso continua muito oxigenado e surge acidose lática; o tratamento é suspender a infusão e dar hidroxocobalamina ou tiossulfato de sódio.",
+    "sistema": "multissistemico",
+    "disciplina": "bioquimica",
+    "dificuldade": "dificil",
+    "tags": [
+      "cadeia transportadora de elétrons",
+      "cianeto",
+      "nitroprussiato",
+      "acidose lática",
+      "toxicologia",
+      "fosforilação oxidativa"
+    ],
+    "fonte": "Brunton LL et al. Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed.; Nelson LS et al. Goldfrank's Toxicologic Emergencies, 11th ed. (Cyanide and hydrogen sulfide)."
+  },
+  {
+    "id": "s1-036",
+    "step": "step1",
+    "vinheta": "A new rapid assay for a bacterial infection is evaluated in 1,000 adults who come to an urgent care clinic with symptoms. All participants also undergo the reference-standard test. Of the 200 participants with infection by the reference standard, 180 have a positive result on the new assay. Of the 800 participants without infection by the reference standard, 720 have a negative result on the new assay.",
+    "pergunta": "Which of the following is closest to the negative predictive value of the new assay in this population?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "10%"
+      },
+      {
+        "letra": "B",
+        "texto": "69%"
+      },
+      {
+        "letra": "C",
+        "texto": "80%"
+      },
+      {
+        "letra": "D",
+        "texto": "90%"
+      },
+      {
+        "letra": "E",
+        "texto": "97%"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: 97%. Build the 2 x 2 table: true positives 180, false negatives 20 (200 - 180), true negatives 720, false positives 80 (800 - 720). Negative predictive value = TN / (TN + FN) = 720 / (720 + 20) = 720/740, about 97%. 10% is the false-positive rate (80/800), which equals 1 - specificity. 69% is the positive predictive value, TP / (TP + FP) = 180/260. 80% is the proportion of participants without infection (1 - prevalence of 20%). 90% is both the sensitivity (180/200) and the specificity (720/800). Unlike sensitivity and specificity, predictive values depend on prevalence: at a lower prevalence, NPV would rise further and PPV would fall.",
+    "explicacao_pt": "O valor preditivo negativo é a proporção de verdadeiros negativos entre todos os resultados negativos: 720 dividido por 740 (720 verdadeiros negativos e 20 falsos negativos), cerca de 97%. A sensibilidade e a especificidade são de 90%, e o valor preditivo positivo é de 180/260, cerca de 69%. Os valores preditivos variam com a prevalência, enquanto sensibilidade e especificidade não variam.",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "dificuldade": "dificil",
+    "tags": [
+      "valor preditivo negativo",
+      "sensibilidade",
+      "especificidade",
+      "tabela 2x2",
+      "testes diagnósticos",
+      "prevalência"
+    ],
+    "fonte": "Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. (Assessing the validity and reliability of diagnostic and screening tests)."
+  },
+  {
+    "id": "s1-037",
+    "step": "step1",
+    "vinheta": "Investigators evaluate a new imaging test to screen asymptomatic adults for pancreatic cancer. Among patients whose cancer was detected by screening, median survival measured from the date of diagnosis is 3.1 years, compared with 1.2 years among unscreened patients whose cancer was diagnosed after symptoms appeared. Tumors detected by screening and those detected clinically have similar histologic grade and growth rates. The mean age at death from pancreatic cancer and the pancreatic cancer mortality rate per 100,000 person-years do not differ between the screened and unscreened cohorts.",
+    "pergunta": "Which of the following best explains the apparent survival benefit associated with screening?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Attrition bias"
+      },
+      {
+        "letra": "B",
+        "texto": "Lead-time bias"
+      },
+      {
+        "letra": "C",
+        "texto": "Length-time bias"
+      },
+      {
+        "letra": "D",
+        "texto": "Observer bias"
+      },
+      {
+        "letra": "E",
+        "texto": "Recall bias"
+      },
+      {
+        "letra": "F",
+        "texto": "Selection bias"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Correct: lead-time bias. Screening moves the date of diagnosis earlier in the natural history of the disease. If treatment does not change the course, the time of death is the same, but survival measured from diagnosis looks longer simply because the clock starts sooner. The unchanged age at death and unchanged disease-specific mortality show that screening produced no real benefit. Trials of screening should therefore use disease-specific mortality, not survival from diagnosis, as the outcome. Attrition bias arises from differential loss to follow-up. Length-time bias occurs when screening preferentially detects slow-growing, less aggressive tumors, which is excluded here because grade and growth rates are similar. Observer bias arises when knowledge of exposure influences outcome assessment. Recall bias affects self-reported past exposures, typically in case-control studies. Selection bias (for example, healthier volunteers choosing to be screened) would usually also change mortality in the screened group.",
+    "explicacao_pt": "O viés de tempo de antecipação (lead-time bias) ocorre quando o rastreamento adianta o diagnóstico sem adiar a morte; a sobrevida contada a partir do diagnóstico aumenta só porque o relógio começa antes. A idade de morte e a mortalidade por câncer iguais nos dois grupos mostram que não houve benefício real. Por isso, ensaios de rastreamento devem usar a mortalidade específica, e não a sobrevida desde o diagnóstico, como desfecho.",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "dificuldade": "media",
+    "tags": [
+      "vieses",
+      "rastreamento",
+      "lead-time bias",
+      "length-time bias",
+      "desenho de estudo",
+      "medicina baseada em evidências"
+    ],
+    "fonte": "Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. (Epidemiologic approach to evaluating screening programs)."
+  },
+  {
+    "id": "s1-038",
+    "step": "step1",
+    "vinheta": "A 74-year-old man with type 2 diabetes mellitus is hospitalized for wet gangrene of the right forefoot. The vascular surgeon recommends a below-the-knee amputation and explains that without surgery the infection may spread and could be fatal, and that antibiotics alone are less likely to control it. The patient declines surgery. He accurately restates the risks, says that he understands he could die, and explains that losing his leg would end his work as a farmer, which he values more than a longer life. He gives the same explanation on 2 consecutive days. He is alert and oriented, scores 29 of 30 on the Mini-Mental State Examination, and shows no signs of depression or psychosis. His daughter insists that the surgery be performed. Temperature is 37.8°C (100.0°F), and blood pressure is 128/76 mm Hg.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Ask the daughter to provide consent as surrogate decision-maker"
+      },
+      {
+        "letra": "B",
+        "texto": "Obtain a court order authorizing the amputation"
+      },
+      {
+        "letra": "C",
+        "texto": "Perform the amputation under the emergency exception"
+      },
+      {
+        "letra": "D",
+        "texto": "Request a psychiatric evaluation to declare him incompetent"
+      },
+      {
+        "letra": "E",
+        "texto": "Respect the refusal and continue antibiotics and wound care"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Correct: respect the refusal and continue antibiotics and wound care. Decision-making capacity requires that the patient understand the relevant information, appreciate how it applies to his own situation, reason about the options, and communicate a stable choice. The treating physician can assess capacity, which is specific to each decision. This patient meets every element, and his choice reflects his stated values, so he may refuse even life-saving treatment; the physician should continue the best alternative care and keep surgery available if he changes his mind. A surrogate decides only when the patient lacks capacity, and family disagreement does not override a capable patient. A court order is not needed when a capable patient refuses. The emergency exception applies only when the patient cannot consent and delay would cause serious harm. Psychiatric consultation can help when capacity is uncertain, but it is not a tool to override a capable refusal, and 'competence' is a legal determination made by a court.",
+    "explicacao_pt": "Paciente com capacidade de decisão pode recusar tratamento, mesmo que a recusa traga risco de morte. Ele compreende as informações, reconhece a própria situação, raciocina com coerência e mantém a escolha, e quem avalia a capacidade é o médico assistente. A família só decide quando o paciente não tem capacidade; a conduta é respeitar a recusa, oferecer o melhor tratamento alternativo e manter a cirurgia como opção.",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "dificuldade": "facil",
+    "tags": [
+      "ética médica",
+      "capacidade de decisão",
+      "autonomia",
+      "recusa de tratamento",
+      "consentimento informado"
+    ],
+    "fonte": "Appelbaum PS. Assessment of patients' competence to consent to treatment. N Engl J Med 2007;357:1834-40; American Medical Association. Code of Medical Ethics, Opinion 2.1.1 (Informed Consent)."
+  },
+  {
+    "id": "s1-039",
+    "step": "step1",
+    "vinheta": "A 58-year-old woman is hospitalized for community-acquired pneumonia. Enoxaparin 40 mg subcutaneously once daily was ordered for prophylaxis of venous thromboembolism, but because of a transcription error she received a 60-mg dose this morning. A second-year resident discovers the error 3 hours later. The patient has no bleeding, her hemoglobin concentration and platelet count are unchanged from yesterday, and her vital signs are within normal limits. The resident is concerned that telling the patient will damage her trust in the team.",
+    "pergunta": "Which of the following is the most appropriate action by the resident?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Disclose the error to the patient and file a safety event report"
+      },
+      {
+        "letra": "B",
+        "texto": "Document the dose in the chart without informing the patient"
+      },
+      {
+        "letra": "C",
+        "texto": "File a safety event report and inform the patient only if bleeding occurs"
+      },
+      {
+        "letra": "D",
+        "texto": "Inform the patient after the risk management office reviews the event"
+      },
+      {
+        "letra": "E",
+        "texto": "Report the pharmacist involved to the state board of pharmacy"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Correct: disclose the error to the patient and file a safety event report. Errors that reach the patient should be disclosed promptly and honestly, even when no harm is evident: the physician explains what happened, apologizes, describes the monitoring plan (here, observation for bleeding), and explains what will be done to prevent recurrence. Reporting through the institutional safety system allows a systems-focused (root cause) analysis of the transcription process. Charting the dose without telling the patient conceals the error. Waiting until bleeding occurs, or until risk management finishes its review, delays disclosure the patient is owed. Reporting an individual to a licensing board is a punitive first step that ignores the system failure and is not the resident's immediate obligation.",
+    "explicacao_pt": "Erros que chegam ao paciente devem ser comunicados a ele com clareza, mesmo sem dano aparente, com explicação do ocorrido, pedido de desculpas e plano de vigilância. A notificação ao sistema institucional de segurança permite analisar a causa raiz e corrigir o processo, sem foco em punição individual. Adiar a conversa até haver dano ou até a avaliação do setor de gestão de risco fere o dever de transparência.",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "dificuldade": "media",
+    "tags": [
+      "segurança do paciente",
+      "revelação de erro",
+      "notificação de eventos adversos",
+      "profissionalismo",
+      "ética médica"
+    ],
+    "fonte": "American Medical Association. Code of Medical Ethics, Opinion 8.6 (Promoting Patient Safety); Gallagher TH, Studdert D, Levinson W. Disclosing harmful medical errors to patients. N Engl J Med 2007;356:2713-9."
+  },
+  {
+    "id": "s1-040",
+    "step": "step1",
+    "vinheta": "A 46-year-old woman who moved to the United States from Brazil 1 year ago comes to the clinic to discuss the results of a breast biopsy, which shows invasive ductal carcinoma. She speaks Portuguese and very limited English. Her 14-year-old son, who is fluent in both languages, accompanies her and offers to interpret. The clinic has access to professional medical interpreters by telephone and video.",
+    "pergunta": "Which of the following is the most appropriate way to communicate the biopsy results to this patient?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Ask a bilingual receptionist from the clinic to interpret"
+      },
+      {
+        "letra": "B",
+        "texto": "Ask the son to interpret because he is fluent in both languages"
+      },
+      {
+        "letra": "C",
+        "texto": "Communicate through a translation application on a mobile phone"
+      },
+      {
+        "letra": "D",
+        "texto": "Request a professional medical interpreter by telephone or video"
+      },
+      {
+        "letra": "E",
+        "texto": "Use simple English supported by written materials in English"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Correct: request a professional medical interpreter by telephone or video. Patients with limited English proficiency have better comprehension and fewer clinically significant errors when a trained medical interpreter is used, and in the United States Section 1557 of the Affordable Care Act requires covered entities to offer qualified interpreters and not to rely on minor children to interpret except in an emergency. Using the son also places a child in the role of delivering a cancer diagnosis to his mother and may lead to filtering of information. Untrained bilingual staff make more interpretation errors and raise confidentiality concerns. Machine translation applications are not reliable for complex, high-stakes conversations. Simple English and English-language materials do not overcome the language barrier and would not support informed decisions about treatment.",
+    "explicacao_pt": "Para pacientes com proficiência limitada em inglês, o padrão nos EUA é usar intérprete médico qualificado, presencial, por telefone ou por vídeo; a Seção 1557 do Affordable Care Act veda o uso de menores como intérpretes, salvo em emergência. O filho adolescente, além do risco de erros de tradução, ficaria no papel de dar à mãe um diagnóstico de câncer. Funcionários bilíngues sem formação e aplicativos de tradução não oferecem a precisão necessária para uma notícia difícil.",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "dificuldade": "facil",
+    "tags": [
+      "comunicação",
+      "intérprete médico",
+      "proficiência limitada em inglês",
+      "comunicação de más notícias",
+      "competência cultural"
+    ],
+    "fonte": "U.S. Department of Health and Human Services. Nondiscrimination in Health Programs and Activities (Section 1557 of the Affordable Care Act), 45 CFR 92.201; Karliner LS et al. Do professional interpreters improve clinical care for patients with limited English proficiency? A systematic review. Health Serv Res 2007;42:727-54."
+  }
+]

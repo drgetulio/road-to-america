@@ -1,0 +1,847 @@
+[
+  {
+    "id": "r2a-geral-001",
+    "tipo": "basico",
+    "frente": "A 6-month-old has developmental delay, eczema, fair hair and a musty body odor. Which enzyme is most likely deficient?",
+    "verso": "Phenylalanine hydroxylase",
+    "extra": "Phenylalanine cannot be converted to tyrosine, so it accumulates and is shunted to phenylketones such as phenylacetate (musty odor), while tyrosine becomes essential and melanin synthesis falls. The same picture with normal phenylalanine hydroxylase points to deficient tetrahydrobiopterin (BH<sub>4</sub>), its cofactor.",
+    "nota_pt": "A fenilcetonúria faz parte do teste do pezinho no Brasil.",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "aminoacidos",
+      "erros_inatos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Lippincott Illustrated Reviews: Biochemistry, 8th ed."
+  },
+  {
+    "id": "r2a-geral-002",
+    "tipo": "basico",
+    "frente": "Why can IV glucose given before thiamine precipitate Wernicke encephalopathy in a malnourished patient with alcohol use disorder?",
+    "verso": "The glucose load raises demand for thiamine-dependent enzymes and depletes scarce thiamine",
+    "extra": "Thiamine pyrophosphate is the cofactor of pyruvate dehydrogenase, α-ketoglutarate dehydrogenase and transketolase. More glucose oxidation uses up thiamine, and ATP production fails in vulnerable regions such as the mammillary bodies and medial thalamus. Clinical evidence that one glucose dose triggers the syndrome is limited, but thiamine first remains the rule.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "vitaminas",
+      "metabolismo_energetico"
+    ],
+    "rendimento": "alto",
+    "fonte": "Harper's Illustrated Biochemistry, 32nd ed.; Schabelman E, Kuo D. J Emerg Med. 2012;42(4):488-94 (PMID 22104258)."
+  },
+  {
+    "id": "r2a-geral-003",
+    "tipo": "basico",
+    "frente": "A 4-month-old has fasting hypoglycemia, lactic acidosis, hyperuricemia, hypertriglyceridemia and marked hepatomegaly. Which enzyme is deficient?",
+    "verso": "Glucose-6-phosphatase (von Gierke disease, GSD type Ia)",
+    "extra": "The liver cannot release free glucose from either glycogenolysis or gluconeogenesis. Trapped glucose-6-phosphate is diverted into glycolysis (lactate), the pentose phosphate pathway (purines, then uric acid) and fatty acid synthesis; lactate also competes with urate for renal excretion.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "glicogenoses",
+      "erros_inatos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Lippincott Illustrated Reviews: Biochemistry, 8th ed."
+  },
+  {
+    "id": "r2a-geral-004",
+    "tipo": "basico",
+    "frente": "A boy has hyperuricemia, dystonia and compulsive biting of his lips and fingers. Which purine salvage enzyme is deficient?",
+    "verso": "HGPRT (hypoxanthine-guanine phosphoribosyltransferase)",
+    "extra": "Without salvage, hypoxanthine and guanine are degraded to uric acid, and unused PRPP stimulates de novo purine synthesis, which raises uric acid further. Lesch-Nyhan syndrome is X-linked recessive.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "purinas",
+      "erros_inatos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Harper's Illustrated Biochemistry, 32nd ed."
+  },
+  {
+    "id": "r2a-geral-005",
+    "tipo": "cloze",
+    "frente": "{{c1::HMG-CoA reductase}} is the rate-limiting enzyme of cholesterol synthesis and the target of statins.",
+    "verso": "",
+    "extra": "Lower hepatocyte cholesterol activates SREBP-2, which increases LDL receptor expression, so the liver removes more LDL from plasma.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "lipidios",
+      "estatinas"
+    ],
+    "rendimento": "alto",
+    "fonte": "Lippincott Illustrated Reviews: Biochemistry, 8th ed."
+  },
+  {
+    "id": "r2a-geral-006",
+    "tipo": "basico",
+    "frente": "After a prolonged fast during a viral illness, a 1-year-old develops hypoglycemia with low ketones and elevated C8-C10 acylcarnitines. Which enzyme is deficient?",
+    "verso": "Medium-chain acyl-CoA dehydrogenase (MCAD)",
+    "extra": "Blocked β-oxidation leaves the liver without acetyl-CoA, so it cannot make ketone bodies or activate pyruvate carboxylase for gluconeogenesis. The result is hypoketotic hypoglycemia when glycogen runs out; management is avoiding fasting.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "acidos_graxos",
+      "erros_inatos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Harper's Illustrated Biochemistry, 32nd ed."
+  },
+  {
+    "id": "r2a-geral-007",
+    "tipo": "cloze",
+    "frente": "Fragile X syndrome results from a {{c1::CGG}} trinucleotide repeat expansion in <i>FMR1</i> that leads to promoter hypermethylation and gene silencing.",
+    "verso": "",
+    "extra": "Loss of FMRP, an RNA-binding protein that regulates synaptic translation, causes intellectual disability. Premutation alleles expand to full mutations mainly during maternal transmission, which explains anticipation.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "genetica",
+    "tags": [
+      "step1",
+      "repeticoes_trinucleotideos",
+      "deficiencia_intelectual"
+    ],
+    "rendimento": "alto",
+    "fonte": "Thompson & Thompson Genetics in Medicine, 8th ed."
+  },
+  {
+    "id": "r2a-geral-008",
+    "tipo": "basico",
+    "frente": "An autosomal recessive disease affects 1 in 10,000 newborns in a population in Hardy-Weinberg equilibrium. What is the approximate carrier frequency?",
+    "verso": "About 1 in 50",
+    "extra": "q<sup>2</sup> = 1/10,000, so q = 1/100 and p is close to 1. Carrier frequency is 2pq, roughly 2 × 1/100 = 1/50.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "genetica",
+    "tags": [
+      "step1",
+      "hardy_weinberg",
+      "genetica_de_populacoes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Thompson & Thompson Genetics in Medicine, 8th ed."
+  },
+  {
+    "id": "r2a-geral-009",
+    "tipo": "cloze",
+    "frente": "Prader-Willi syndrome results from loss of the {{c1::paternal}} copies of genes at 15q11-q13, because the other parent's copies are imprinted (silenced).",
+    "verso": "",
+    "extra": "Paternal deletion or maternal uniparental disomy leaves only silenced alleles. Loss of the maternal <i>UBE3A</i> allele in the same region causes Angelman syndrome instead.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "genetica",
+    "tags": [
+      "step1",
+      "imprinting",
+      "sindromes_geneticas"
+    ],
+    "rendimento": "alto",
+    "fonte": "Thompson & Thompson Genetics in Medicine, 8th ed."
+  },
+  {
+    "id": "r2a-geral-010",
+    "tipo": "basico",
+    "frente": "Why do the children of a woman with a mitochondrial DNA disorder show widely different disease severity?",
+    "verso": "Heteroplasmy",
+    "extra": "Each cell carries a mixture of mutant and normal mtDNA that segregates randomly at cell division and through the oocyte bottleneck. Disease appears in a tissue only when the mutant fraction exceeds its energy threshold.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "genetica",
+    "tags": [
+      "step1",
+      "heranca_mitocondrial"
+    ],
+    "rendimento": "medio",
+    "fonte": "Thompson & Thompson Genetics in Medicine, 8th ed."
+  },
+  {
+    "id": "r2a-geral-011",
+    "tipo": "basico",
+    "frente": "How does a reversible competitive antagonist change an agonist's dose-response curve?",
+    "verso": "Shifts it to the right (higher EC<sub>50</sub>) with unchanged maximal efficacy",
+    "extra": "The antagonist occupies the same binding site reversibly, so enough agonist outcompetes it and restores the full response: potency falls, efficacy does not. A noncompetitive or irreversible antagonist lowers the maximal response instead.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "farmacodinamica"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-geral-012",
+    "tipo": "cloze",
+    "frente": "In {{c1::zero-order}} elimination, a constant amount of drug is eliminated per unit time, regardless of plasma concentration.",
+    "verso": "",
+    "extra": "It happens when elimination enzymes are saturated, as with ethanol, phenytoin and high-dose aspirin. Half-life is not constant, and a small dose increase can cause a disproportionate rise in plasma level.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "farmacocinetica"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-geral-013",
+    "tipo": "basico",
+    "frente": "For a drug given intravenously, which pharmacokinetic parameter, together with the target plasma concentration, determines the loading dose?",
+    "verso": "Volume of distribution (V<sub>d</sub>)",
+    "extra": "Loading dose = (target C<sub>p</sub> × V<sub>d</sub>) / F, and F = 1 for IV dosing, because the first dose must fill the space the drug distributes into. The maintenance dose depends on clearance instead, since it replaces what is eliminated each interval.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "farmacocinetica"
+    ],
+    "rendimento": "alto",
+    "fonte": "Goodman & Gilman's The Pharmacological Basis of Therapeutics, 14th ed."
+  },
+  {
+    "id": "r2a-geral-014",
+    "tipo": "basico",
+    "frente": "Which protein occupies the MHC class II peptide groove in the endoplasmic reticulum, preventing binding of endogenous peptides?",
+    "verso": "Invariant chain (Ii, CD74)",
+    "extra": "The invariant chain routes class II molecules to endosomes, where it is degraded to CLIP. HLA-DM then removes CLIP so exogenous peptides can load for presentation to CD4<sup>+</sup> T cells.",
+    "nota_pt": "",
+    "sistema": "geral",
+    "disciplina": "imunologia",
+    "tags": [
+      "step1",
+      "mhc",
+      "apresentacao_de_antigenos"
+    ],
+    "rendimento": "medio",
+    "fonte": "Abbas Cellular and Molecular Immunology, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-001",
+    "tipo": "basico",
+    "frente": "In anemia of chronic disease, which liver-derived peptide, induced by IL-6, traps iron inside macrophages?",
+    "verso": "Hepcidin",
+    "extra": "Hepcidin binds ferroportin and triggers its internalization and degradation, blocking iron export from macrophages and enterocytes. Serum iron and TIBC fall while ferritin is normal or high.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "anemias",
+      "metabolismo_do_ferro"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-002",
+    "tipo": "cloze",
+    "frente": "Lead poisoning inhibits {{c1::ferrochelatase}} and {{c2::ALA dehydratase}}, impairing heme synthesis.",
+    "verso": "",
+    "extra": "Without ferrochelatase, iron is not inserted into protoporphyrin, so zinc protoporphyrin rises and a microcytic sideroblastic anemia develops. Lead also inhibits pyrimidine 5'-nucleotidase, which produces basophilic stippling.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "anemias",
+      "sintese_do_heme",
+      "intoxicacoes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-003",
+    "tipo": "basico",
+    "frente": "Which serum marker is elevated in vitamin B<sub>12</sub> deficiency but normal in folate deficiency?",
+    "verso": "Methylmalonic acid",
+    "extra": "Adenosylcobalamin is the cofactor of methylmalonyl-CoA mutase, which converts methylmalonyl-CoA to succinyl-CoA. Homocysteine rises in both deficiencies because methionine synthase needs both B<sub>12</sub> and folate.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "bioquimica",
+    "tags": [
+      "step1",
+      "anemias",
+      "anemia_megaloblastica",
+      "vitaminas"
+    ],
+    "rendimento": "alto",
+    "fonte": "Harper's Illustrated Biochemistry, 32nd ed."
+  },
+  {
+    "id": "r2a-sangue_imune-004",
+    "tipo": "cloze",
+    "frente": "{{c1::Howell-Jolly bodies}}, nuclear remnants inside red cells, appear on the blood smear after splenectomy or in functional asplenia.",
+    "verso": "",
+    "extra": "Red pulp macrophages normally remove these DNA inclusions as erythrocytes squeeze through the cords and sinusoid slits. Their persistence signals loss of splenic filtering, as in sickle cell disease after autosplenectomy.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "histologia",
+    "tags": [
+      "step1",
+      "baco",
+      "esfregaco_de_sangue"
+    ],
+    "rendimento": "alto",
+    "fonte": "Junqueira's Basic Histology: Text and Atlas, 16th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-005",
+    "tipo": "cloze",
+    "frente": "Unfractionated heparin acts by binding {{c1::antithrombin}}, which then inactivates thrombin and factor Xa much faster.",
+    "verso": "",
+    "extra": "A pentasaccharide sequence changes the conformation of antithrombin; long heparin chains also bridge antithrombin to thrombin. Low-molecular-weight heparins are too short to bridge, so they act mainly on Xa and are only partly reversed by protamine.",
+    "nota_pt": "A enoxaparina é o exemplo clássico de heparina de baixo peso molecular.",
+    "sistema": "sangue_imune",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "anticoagulantes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-006",
+    "tipo": "basico",
+    "frente": "Why can warfarin cause skin necrosis and a transient hypercoagulable state in the first days of therapy?",
+    "verso": "Short-lived protein C falls before most procoagulant factors",
+    "extra": "Warfarin inhibits vitamin K epoxide reductase (VKORC1), reducing γ-carboxylation of factors II, VII, IX and X and of proteins C and S. Protein C falls faster than factors II, IX and X (only factor VII falls as fast), so heparin bridging covers the first days; patients with protein C deficiency are at highest risk of necrosis.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "anticoagulantes",
+      "efeitos_adversos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-007",
+    "tipo": "basico",
+    "frente": "Five days after starting heparin, a patient's platelet count halves and a deep vein thrombosis appears. Antibodies target which complex?",
+    "verso": "Platelet factor 4 bound to heparin (PF4-heparin)",
+    "extra": "IgG immune complexes cross-link platelet FcγRIIa receptors and activate platelets, producing thrombocytopenia with paradoxical thrombosis. All heparin must be stopped and a non-heparin anticoagulant, such as argatroban, started.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "trombocitopenia",
+      "anticoagulantes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-008",
+    "tipo": "cloze",
+    "frente": "Thrombotic thrombocytopenic purpura results from deficient activity of {{c1::ADAMTS13}}, the protease that cleaves von Willebrand factor multimers.",
+    "verso": "",
+    "extra": "Ultralarge vWF multimers remain on endothelium and capture platelets into microthrombi, causing schistocytes, thrombocytopenia and ischemic organ injury. Coagulation factors are not consumed, so PT and aPTT stay normal, unlike in DIC.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "microangiopatia_trombotica",
+      "trombocitopenia"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-009",
+    "tipo": "basico",
+    "frente": "Factor V Leiden causes thrombophilia because the mutant factor Va resists cleavage by which protein?",
+    "verso": "Activated protein C",
+    "extra": "An Arg506Gln substitution removes a cleavage site for activated protein C, so factor Va stays active longer in the prothrombinase complex and generates more thrombin.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "trombofilias",
+      "coagulacao"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-010",
+    "tipo": "basico",
+    "frente": "Imatinib induces remission in chronic myeloid leukemia by inhibiting which enzyme?",
+    "verso": "BCR-ABL tyrosine kinase",
+    "extra": "The t(9;22) Philadelphia translocation fuses <i>BCR</i> to <i>ABL1</i>, creating a constitutively active kinase. Imatinib occupies its ATP-binding site and blocks the downstream proliferative signaling.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "leucemias",
+      "terapia_alvo"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-011",
+    "tipo": "cloze",
+    "frente": "Reed-Sternberg cells of classic Hodgkin lymphoma are typically positive for {{c1::CD15}} and {{c2::CD30}}.",
+    "verso": "",
+    "extra": "Reed-Sternberg cells derive from germinal center B cells but have lost most B-cell markers, so CD20 and CD45 are usually negative. Nodular lymphocyte-predominant Hodgkin lymphoma differs: its LP (popcorn) cells are CD20 positive and CD15 and CD30 negative.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "linfomas",
+      "imuno_histoquimica"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-sangue_imune-012",
+    "tipo": "basico",
+    "frente": "A boy with recurrent <i>Staphylococcus aureus</i> abscesses and <i>Aspergillus</i> pneumonia has an abnormal dihydrorhodamine test. Which enzyme is defective?",
+    "verso": "NADPH oxidase (chronic granulomatous disease)",
+    "extra": "Phagocytes cannot generate superoxide in the respiratory burst, so ingested microbes survive and granulomas form. Typical pathogens are <i>S. aureus</i>, <i>Aspergillus</i>, <i>Burkholderia cepacia</i>, <i>Serratia</i> and <i>Nocardia</i>; the most common form is X-linked (<i>CYBB</i>, gp91<sup>phox</sup>), which explains why most patients are boys.",
+    "nota_pt": "",
+    "sistema": "sangue_imune",
+    "disciplina": "imunologia",
+    "tags": [
+      "step1",
+      "imunodeficiencias",
+      "fagocitos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Abbas Cellular and Molecular Immunology, 10th ed."
+  },
+  {
+    "id": "r2a-reprodutor_endocrino-101",
+    "tipo": "basico",
+    "frente": "A 28-year-old man has a testicular seminoma. Which lymph nodes are the first site of lymphatic spread?",
+    "verso": "Para-aortic (retroperitoneal) lymph nodes",
+    "extra": "The testes develop on the posterior abdominal wall near the upper lumbar levels and descend with their vessels, so lymphatics follow the gonadal vessels back to the para-aortic nodes. Scrotal skin, in contrast, drains to the superficial inguinal nodes.",
+    "nota_pt": "",
+    "sistema": "reprodutor_endocrino",
+    "disciplina": "anatomia",
+    "tags": [
+      "step1",
+      "drenagem_linfatica",
+      "embriologia",
+      "testiculo"
+    ],
+    "rendimento": "alto",
+    "fonte": "Moore Clinically Oriented Anatomy, 9th ed."
+  },
+  {
+    "id": "r2a-multissistemico-001",
+    "tipo": "basico",
+    "frente": "Which component of lipopolysaccharide triggers septic shock in gram-negative bacteremia?",
+    "verso": "Lipid A",
+    "extra": "Lipid A is carried by LPS-binding protein to CD14 and the TLR4-MD2 complex on macrophages, inducing TNF-α, IL-1 and IL-6. These cytokines cause fever, vasodilation, capillary leak and DIC.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "tags": [
+      "step1",
+      "sepse",
+      "toxinas"
+    ],
+    "rendimento": "alto",
+    "fonte": "Sherris Medical Microbiology, 7th ed."
+  },
+  {
+    "id": "r2a-multissistemico-002",
+    "tipo": "cloze",
+    "frente": "Toxic shock syndrome toxin-1 is a {{c1::superantigen}}: it cross-links MHC class II with the T-cell receptor Vβ region outside the peptide groove.",
+    "verso": "",
+    "extra": "Bypassing antigen specificity activates a large fraction of T cells at once, with massive release of IL-2, IFN-γ and TNF-α. The result is fever, diffuse rash, hypotension and multiorgan failure.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "tags": [
+      "step1",
+      "toxinas",
+      "choque"
+    ],
+    "rendimento": "alto",
+    "fonte": "Sherris Medical Microbiology, 7th ed."
+  },
+  {
+    "id": "r2a-multissistemico-003",
+    "tipo": "basico",
+    "frente": "What is the most common cause of overwhelming sepsis in a patient who had a splenectomy?",
+    "verso": "<i>Streptococcus pneumoniae</i>",
+    "extra": "The spleen filters poorly opsonized encapsulated bacteria and hosts marginal-zone B cells that make IgM against polysaccharide capsules. Asplenic patients need pneumococcal, meningococcal and <i>H. influenzae</i> type b vaccines.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "sepse",
+      "asplenia",
+      "bacterias_encapsuladas"
+    ],
+    "rendimento": "alto",
+    "fonte": "Sherris Medical Microbiology, 7th ed."
+  },
+  {
+    "id": "r2a-multissistemico-004",
+    "tipo": "basico",
+    "frente": "Recurrent <i>Neisseria meningitidis</i> bacteremia in a young adult suggests deficiency of which part of the complement system?",
+    "verso": "Terminal components C5-C9 (membrane attack complex)",
+    "extra": "<i>Neisseria</i> is cleared mainly by MAC-mediated lysis. Eculizumab, a C5 inhibitor, creates the same risk, so patients must receive meningococcal vaccination before treatment.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "imunologia",
+    "tags": [
+      "step1",
+      "complemento",
+      "imunodeficiencias"
+    ],
+    "rendimento": "alto",
+    "fonte": "Abbas Cellular and Molecular Immunology, 10th ed."
+  },
+  {
+    "id": "r2a-multissistemico-005",
+    "tipo": "cloze",
+    "frente": "The rash of Rocky Mountain spotted fever typically begins on the {{c1::wrists and ankles}} and spreads centripetally to the trunk.",
+    "verso": "",
+    "extra": "<i>Rickettsia rickettsii</i> infects vascular endothelium and causes vasculitis with increased permeability; palms and soles are characteristically involved. Doxycycline is the treatment at any age.",
+    "nota_pt": "No Brasil, a mesma bactéria causa a forma grave da febre maculosa brasileira; o principal vetor é o carrapato-estrela (<i>Amblyomma sculptum</i>).",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "tags": [
+      "step1",
+      "riquetsioses",
+      "exantemas"
+    ],
+    "rendimento": "medio",
+    "fonte": "Sherris Medical Microbiology, 7th ed."
+  },
+  {
+    "id": "r2a-multissistemico-006",
+    "tipo": "cloze",
+    "frente": "HIV gp120 binds CD4 and then a chemokine coreceptor, {{c1::CCR5}} early in infection and often CXCR4 later.",
+    "verso": "",
+    "extra": "Coreceptor binding exposes gp41, which drives fusion of viral and cell membranes. Homozygous CCR5-Δ32 confers resistance to R5 strains, and maraviroc blocks CCR5.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "tags": [
+      "step1",
+      "hiv",
+      "virologia"
+    ],
+    "rendimento": "alto",
+    "fonte": "Sherris Medical Microbiology, 7th ed."
+  },
+  {
+    "id": "r2a-multissistemico-007",
+    "tipo": "basico",
+    "frente": "What mechanism makes <i>Staphylococcus aureus</i> resistant to methicillin and most other β-lactams?",
+    "verso": "An altered penicillin-binding protein (PBP2a) encoded by <i>mecA</i>",
+    "extra": "PBP2a has low affinity for β-lactams and keeps cross-linking peptidoglycan when the native PBPs are blocked. The anti-MRSA cephalosporins ceftaroline and ceftobiprole are the β-lactams that bind PBP2a well enough to treat MRSA.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "antibioticos",
+      "resistencia_bacteriana"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-multissistemico-008",
+    "tipo": "basico",
+    "frente": "Why are aminoglycosides ineffective against anaerobic bacteria?",
+    "verso": "Their uptake into the bacterium requires oxygen-dependent transport",
+    "extra": "Entry across the cytoplasmic membrane depends on the electrochemical gradient generated by aerobic respiration. Inside the cell they bind the 30S subunit and cause mRNA misreading; cell wall agents enhance their entry, which explains synergy with β-lactams.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "farmacologia",
+    "tags": [
+      "step1",
+      "antibioticos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Katzung Basic & Clinical Pharmacology, 15th ed."
+  },
+  {
+    "id": "r2a-multissistemico-009",
+    "tipo": "basico",
+    "frente": "Why can sarcoidosis cause hypercalcemia with a suppressed PTH?",
+    "verso": "Granuloma macrophages make calcitriol through PTH-independent 1α-hydroxylase",
+    "extra": "Activated macrophages convert 25-hydroxyvitamin D to calcitriol, which increases intestinal calcium absorption; the rising calcium suppresses PTH. The same mechanism occurs in tuberculosis and some lymphomas.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "granulomas",
+      "calcio"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-multissistemico-010",
+    "tipo": "cloze",
+    "frente": "Amyloid deposits stained with Congo red show {{c1::apple-green birefringence}} under polarized light.",
+    "verso": "",
+    "extra": "Every amyloid protein, whatever its precursor, folds into cross-β-pleated sheets that bind Congo red in an ordered array. The same structure resists proteolysis, which is why deposits accumulate.",
+    "nota_pt": "",
+    "sistema": "multissistemico",
+    "disciplina": "patologia",
+    "tags": [
+      "step1",
+      "amiloidose",
+      "coloracoes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Robbins & Cotran Pathologic Basis of Disease, 10th ed."
+  },
+  {
+    "id": "r2a-multissistemico-011",
+    "tipo": "basico",
+    "frente": "A man raised in a rural house infested with triatomine bugs now has dilated cardiomyopathy and megaesophagus. Which organism is responsible?",
+    "verso": "<i>Trypanosoma cruzi</i>",
+    "extra": "The parasite enters through bug feces rubbed into the bite or mucosa. Chronic infection destroys myocardium and the neurons of the myenteric plexus, producing cardiomyopathy, megaesophagus and megacolon. Benznidazole and nifurtimox help most in acute and early chronic infection; in established cardiomyopathy, benznidazole did not reduce clinical progression (BENEFIT trial).",
+    "nota_pt": "Doença de Chagas; o vetor é o barbeiro. O Ministério da Saúde também registra surtos de transmissão oral por alimentos contaminados, como açaí e caldo de cana.",
+    "sistema": "multissistemico",
+    "disciplina": "microbiologia",
+    "tags": [
+      "step1",
+      "protozoarios",
+      "cardiomiopatia"
+    ],
+    "rendimento": "alto",
+    "fonte": "Sherris Medical Microbiology, 7th ed.; Morillo CA, et al. N Engl J Med. 2015;373(14):1295-306 (PMID 26323937)."
+  },
+  {
+    "id": "r2a-bioestatistica-001",
+    "tipo": "basico",
+    "frente": "In a trial, the event rate is 10% with placebo and 5% with the drug. What is the number needed to treat?",
+    "verso": "20",
+    "extra": "Absolute risk reduction = 0.10 − 0.05 = 0.05, and NNT = 1/ARR = 20. The relative risk reduction is 50%, which sounds much larger for the same effect.",
+    "nota_pt": "",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "medidas_de_efeito"
+    ],
+    "rendimento": "alto",
+    "fonte": "Gordis Epidemiology, 6th ed."
+  },
+  {
+    "id": "r2a-bioestatistica-002",
+    "tipo": "cloze",
+    "frente": "When disease prevalence increases, positive predictive value {{c1::increases}} and negative predictive value {{c2::decreases}}, while sensitivity and specificity stay the same.",
+    "verso": "",
+    "extra": "Predictive values depend on pretest probability: with more diseased people in the tested population, a positive result is more likely to be a true positive and a negative result less likely to be a true negative.",
+    "nota_pt": "",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "testes_diagnosticos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Gordis Epidemiology, 6th ed."
+  },
+  {
+    "id": "r2a-bioestatistica-003",
+    "tipo": "basico",
+    "frente": "With effect size and α held constant, how does a larger sample size change statistical power?",
+    "verso": "Power increases (β falls)",
+    "extra": "A larger sample shrinks the standard error, so a true difference is more likely to reach significance. Power equals 1 − β.",
+    "nota_pt": "",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "testes_de_hipotese"
+    ],
+    "rendimento": "alto",
+    "fonte": "Gordis Epidemiology, 6th ed."
+  },
+  {
+    "id": "r2a-bioestatistica-004",
+    "tipo": "basico",
+    "frente": "A screening test detects a cancer earlier and survival from diagnosis lengthens, but age at death does not change. Which bias explains this?",
+    "verso": "Lead-time bias",
+    "extra": "Survival is counted from an earlier starting point while the course of the disease is unchanged. Comparing mortality rates between screened and unscreened groups, instead of survival time, avoids this bias.",
+    "nota_pt": "",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "vieses",
+      "rastreamento"
+    ],
+    "rendimento": "alto",
+    "fonte": "Gordis Epidemiology, 6th ed."
+  },
+  {
+    "id": "r2a-bioestatistica-005",
+    "tipo": "cloze",
+    "frente": "Case-control studies measure association with the {{c1::odds ratio}}, because subjects are selected by outcome and incidence cannot be calculated.",
+    "verso": "",
+    "extra": "Investigators choose how many cases and controls to enroll, so the proportion with disease reflects the design, not the population risk. When the disease is rare, the odds ratio approximates the relative risk.",
+    "nota_pt": "",
+    "sistema": "bioestatistica",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "desenhos_de_estudo",
+      "medidas_de_efeito"
+    ],
+    "rendimento": "alto",
+    "fonte": "Gordis Epidemiology, 6th ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-001",
+    "tipo": "basico",
+    "frente": "A Jehovah's Witness with decision-making capacity is bleeding and refuses transfusion after an informed discussion. What should the physician do?",
+    "verso": "Respect the refusal and offer acceptable alternatives",
+    "extra": "Adults with capacity may refuse any treatment, including life-saving care. The physician confirms capacity and understanding, documents the conversation and uses alternatives the patient accepts. Emergency treatment of a minor follows different rules.",
+    "nota_pt": "",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "etica",
+      "autonomia",
+      "recusa_de_tratamento"
+    ],
+    "rendimento": "alto",
+    "fonte": "Beauchamp & Childress Principles of Biomedical Ethics, 8th ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-002",
+    "tipo": "basico",
+    "frente": "An incapacitated patient has no advance directive. Which standard should the surrogate use to make decisions?",
+    "verso": "Substituted judgment (what the patient would have chosen)",
+    "extra": "The surrogate applies the patient's known values and previous statements. The best-interest standard is used only when the patient's wishes cannot be determined.",
+    "nota_pt": "",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "etica",
+      "decisao_substituta"
+    ],
+    "rendimento": "alto",
+    "fonte": "Beauchamp & Childress Principles of Biomedical Ethics, 8th ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-003",
+    "tipo": "cloze",
+    "frente": "An error that is caught before it reaches the patient is called a {{c1::near miss}}.",
+    "verso": "",
+    "extra": "Near misses expose latent flaws in the system without causing harm. Reporting and analyzing them, for example through root cause analysis, helps prevent future adverse events.",
+    "nota_pt": "Em português, \"quase erro\" ou \"near miss\", termo usado também nos protocolos de segurança do paciente no Brasil.",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "seguranca_do_paciente"
+    ],
+    "rendimento": "alto",
+    "fonte": "Wachter's Understanding Patient Safety, 3rd ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-004",
+    "tipo": "basico",
+    "frente": "A patient receives twice the ordered dose of a medication and suffers no harm. What is the physician's most appropriate action?",
+    "verso": "Disclose the error to the patient and report it to the institutional safety system",
+    "extra": "Patients have a right to know about errors in their care, harmful or not, and honest disclosure preserves trust. Reporting supports system-level analysis instead of individual blame.",
+    "nota_pt": "",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "seguranca_do_paciente",
+      "comunicacao_de_erros"
+    ],
+    "rendimento": "alto",
+    "fonte": "Wachter's Understanding Patient Safety, 3rd ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-005",
+    "tipo": "basico",
+    "frente": "A Portuguese-speaking patient with limited English proficiency arrives with her 12-year-old son to interpret. What is the best approach?",
+    "verso": "Use a trained medical interpreter (in person, by phone or by video)",
+    "extra": "Family members, especially children, may omit or soften information, lack medical vocabulary and compromise confidentiality. Trained interpreters reduce communication errors.",
+    "nota_pt": "Mesmo quando o filho fala bem os dois idiomas, a resposta esperada na prova é o intérprete treinado.",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "comunicacao",
+      "interpretes"
+    ],
+    "rendimento": "alto",
+    "fonte": "Smith's Patient-Centered Interviewing, 4th ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-006",
+    "tipo": "cloze",
+    "frente": "Asking the patient to explain the plan back in their own words is the {{c1::teach-back}} method.",
+    "verso": "",
+    "extra": "Closing the loop detects misunderstandings, which matter most in patients with limited health literacy. It works best framed as a check on the clinician's explanation, not as a test of the patient.",
+    "nota_pt": "",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "comunicacao",
+      "letramento_em_saude"
+    ],
+    "rendimento": "alto",
+    "fonte": "Smith's Patient-Centered Interviewing, 4th ed."
+  },
+  {
+    "id": "r2a-ciencias_sociais-007",
+    "tipo": "basico",
+    "frente": "A physician keeps an initial diagnosis of gastritis despite new findings that point to myocardial ischemia. Which cognitive bias is this?",
+    "verso": "Anchoring bias",
+    "extra": "Anchoring is the tendency to lock onto the first impression and adjust too little when new data arrive. Premature closure, a related error, is stopping the search once a diagnosis seems to fit. Deliberately asking what else the findings could be counters both.",
+    "nota_pt": "",
+    "sistema": "ciencias_sociais",
+    "disciplina": "comportamental",
+    "tags": [
+      "step1",
+      "seguranca_do_paciente",
+      "vieses_cognitivos"
+    ],
+    "rendimento": "alto",
+    "fonte": "Wachter's Understanding Patient Safety, 3rd ed."
+  }
+]

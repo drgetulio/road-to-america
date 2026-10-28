@@ -1,8 +1,9 @@
 """Gera o subconjunto de ícones Phosphor usados no site.
 
-Uso: python3 tools/build-icons.py <caminho para node_modules/@phosphor-icons/web>
+Uso: python3 tools/build-icons.py <caminho para node_modules/@phosphor-icons/web> [--app anki]
 Requer: pip install fonttools brotli
 Lê os nomes ph-* usados nos HTML e JS e grava assets/icons/ com CSS e woff2 mínimos.
+Com --app anki, lê anki/ (HTML e js/) e grava o subconjunto próprio em anki/icons/.
 """
 import pathlib
 import re
@@ -12,11 +13,17 @@ from fontTools import subset
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PKG = pathlib.Path(sys.argv[1])
-OUT = ROOT / "assets" / "icons"
+APP = sys.argv[sys.argv.index("--app") + 1] if "--app" in sys.argv else None
+if APP:
+    OUT = ROOT / APP / "icons"
+    FONTES = list((ROOT / APP).glob("*.html")) + list((ROOT / APP / "js").rglob("*.js"))
+else:
+    OUT = ROOT / "assets" / "icons"
+    FONTES = list(ROOT.glob("*.html")) + list((ROOT / "assets" / "js").glob("*.js"))
 OUT.mkdir(parents=True, exist_ok=True)
 
 used = set()
-for f in list(ROOT.glob("*.html")) + list((ROOT / "assets" / "js").glob("*.js")):
+for f in FONTES:
     used.update(re.findall(r"ph-[a-z0-9-]+", f.read_text(encoding="utf-8")))
 used.discard("ph-fill")
 

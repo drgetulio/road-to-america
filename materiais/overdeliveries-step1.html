@@ -1,0 +1,898 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>20 overdeliveries para a aprovação no Step 1 | Road to America</title>
+<meta name="description" content="Documento de apresentação da turma fundadora da Road to America: 20 entregas além do anunciado para aumentar a margem no USMLE Step 1.">
+<style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 600; src: url("../assets/fonts/barlow-condensed-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; src: url("../assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; src: url("../assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-style: italic; font-weight: 700; src: url("../assets/fonts/barlow-condensed-latin-700-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 400; src: url("../assets/fonts/barlow-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 500; src: url("../assets/fonts/barlow-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-weight: 600; src: url("../assets/fonts/barlow-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Overpass Mono"; font-weight: 400; src: url("../assets/fonts/overpass-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Overpass Mono"; font-weight: 600; src: url("../assets/fonts/overpass-mono-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Phosphor"; src: url("../assets/icons/Phosphor.subset.woff2") format("woff2"); font-display: block; }
+
+/* Tokens do site (tema claro) */
+:root {
+  --paper: #f3f5f2;
+  --paper-2: #e7ebe6;
+  --paper-3: #dde3de;
+  --ink: #0d1a2b;
+  --ink-2: #3a4859;
+  --ink-3: #5b6878;
+  --navy: #0f2747;
+  --navy-deep: #0b1d36;
+  --navy-ink: #f3f5f2;
+  --red: #b0243a;
+  --red-light: #ff8a98;
+  --red-soft: rgba(176, 36, 58, 0.09);
+  --line: rgba(13, 26, 43, 0.14);
+  --line-strong: rgba(13, 26, 43, 0.28);
+  --verde: #1d8a4b;
+  --amarelo: #f1c232;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", system-ui, sans-serif;
+  --font-mono: "Overpass Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+
+@page {
+  size: A4;
+  background: #f3f5f2;
+  margin: 19mm 17mm 21mm 17mm;
+  @top-left { content: "ROAD TO AMERICA  ·  20 OVERDELIVERIES  ·  STEP 1"; font-family: "Overpass Mono", monospace; font-size: 6.6pt; letter-spacing: 0.14em; color: #5b6878; vertical-align: bottom; padding-bottom: 4mm; }
+  @top-right { content: "TURMA FUNDADORA  ·  OUT 2026"; font-family: "Overpass Mono", monospace; font-size: 6.6pt; letter-spacing: 0.14em; color: #b0243a; vertical-align: bottom; padding-bottom: 4mm; }
+  @bottom-left { content: "Documento de apresentação da turma fundadora. Condições completas no Termo da Garantia: drgetulio.github.io/road-to-america/garantia.html"; font-family: "Barlow", sans-serif; font-size: 6.6pt; color: #5b6878; vertical-align: top; padding-top: 5mm; width: 160mm; }
+  @bottom-right { content: counter(page) " / " counter(pages); font-family: "Overpass Mono", monospace; font-size: 7.5pt; font-weight: 600; color: #0d1a2b; vertical-align: top; padding-top: 5mm; }
+}
+@page cover {
+  margin: 0;
+  @top-left { content: none; } @top-right { content: none; }
+  @bottom-left { content: none; } @bottom-right { content: none; }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink-2);
+  font-family: var(--font-body);
+  font-size: 10.5pt;
+  line-height: 1.43;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  font-kerning: normal;
+  hyphens: manual;
+}
+@media screen {
+  body { background: #c9cfd6; }
+  .sheet-preview { width: 210mm; margin: 10mm auto; background: var(--paper); padding: 19mm 17mm 21mm; box-shadow: 0 10px 30px rgba(0,0,0,.2); }
+}
+p { margin: 0 0 2.6mm; }
+a { color: inherit; text-decoration: none; }
+strong { color: var(--ink); font-weight: 600; }
+.ph { font-family: "Phosphor"; font-style: normal; font-weight: normal; line-height: 1; display: inline-block; }
+.ph-cal:before { content: "\e712"; }
+.ph-users:before { content: "\e68e"; }
+.ph-check:before { content: "\e188"; }
+.ph-book:before { content: "\e8f2"; }
+.ph-seal:before { content: "\e606"; }
+.ph-sign:before { content: "\e89c"; }
+
+.cite { font-family: var(--font-mono); font-size: 0.78em; color: var(--red); letter-spacing: 0; white-space: nowrap; }
+.src { font-family: var(--font-mono); font-size: 0.78em; color: var(--ink-3); letter-spacing: 0; white-space: nowrap; }
+
+.fita { display: inline-block; width: 9mm; height: 1.9mm; border-radius: 0.5mm; background: linear-gradient(90deg, var(--verde) 0 50%, var(--amarelo) 50% 100%); flex: none; }
+.eyebrow { font-family: var(--font-mono); font-size: 7.6pt; letter-spacing: 0.15em; text-transform: uppercase; color: var(--red); display: flex; align-items: center; gap: 3mm; margin: 0 0 4mm; font-weight: 600; }
+.display { font-family: var(--font-display); font-weight: 800; color: var(--ink); line-height: 0.95; letter-spacing: -0.005em; margin: 0; text-wrap: balance; }
+.display em { font-style: italic; font-weight: 700; color: var(--red); }
+h1.display { font-size: 31pt; margin-bottom: 5mm; }
+h2.display { font-size: 19pt; line-height: 1.02; margin-bottom: 2.5mm; }
+.lead { font-size: 12pt; line-height: 1.45; color: var(--ink-2); max-width: 150mm; }
+
+/* ---------- CAPA ---------- */
+.cover {
+  page: cover;
+  width: 210mm; height: 296.8mm;
+  background: var(--navy);
+  color: var(--navy-ink);
+  position: relative;
+  overflow: hidden;
+  break-after: page;
+}
+.cover__stripe { position: absolute; top: 0; left: 0; right: 0; height: 3.2mm; background: repeating-linear-gradient(90deg, var(--red) 0 11mm, #f3f5f2 11mm 22mm); }
+.cover__waves { position: absolute; inset: 0; opacity: 0.06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Cpath d='M0 20 C 20 0, 40 0, 60 20 S 100 40, 120 20' fill='none' stroke='%23eef1ec' stroke-width='9'/%3E%3C/svg%3E"); background-size: 16mm 5.33mm; -webkit-mask-image: linear-gradient(180deg, #000 0 30%, transparent 62%); mask-image: linear-gradient(180deg, #000 0 30%, transparent 62%); }
+.cover__top { position: absolute; top: 15mm; left: 18mm; right: 18mm; display: flex; justify-content: space-between; align-items: center; }
+.brand { display: flex; align-items: center; gap: 3.4mm; }
+.brand svg { width: 10.5mm; height: 11.7mm; }
+.brand__name { font-family: var(--font-display); font-weight: 800; font-size: 15pt; letter-spacing: 0.05em; text-transform: uppercase; line-height: 1; color: #fff; }
+.brand__name span { color: var(--red-light); }
+.cover__meta { font-family: var(--font-mono); font-size: 7.6pt; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,245,242,0.78); text-align: right; line-height: 1.6; }
+
+.cover__sign { position: absolute; left: 18mm; right: 18mm; top: 44mm; }
+.signtab {
+  display: inline-flex; align-items: baseline; gap: 2.4mm;
+  background: var(--red); color: #fff;
+  padding: 2.2mm 5mm 2.4mm; border-radius: 2.2mm 2.2mm 0 0;
+  box-shadow: inset 0 0 0 0.55mm var(--red), inset 0 0 0 1.05mm rgba(255,255,255,0.92);
+  font-family: var(--font-display); line-height: 1;
+  margin-left: auto;
+  position: relative; left: 0;
+}
+.signtab small { font-family: var(--font-mono); font-size: 8pt; letter-spacing: 0.16em; font-weight: 600; }
+.signtab b { font-size: 21pt; font-weight: 800; letter-spacing: 0.02em; }
+.signtab-wrap { display: flex; justify-content: flex-end; padding-right: 9mm; }
+.signboard {
+  background: var(--navy-deep);
+  border-radius: 3.4mm;
+  box-shadow: inset 0 0 0 0.8mm var(--navy-deep), inset 0 0 0 1.6mm rgba(243,245,242,0.9), 0 6mm 16mm -6mm rgba(0,0,0,0.55);
+  padding: 11mm 12mm 11mm;
+  position: relative;
+}
+.signboard__kicker { font-family: var(--font-mono); font-size: 8pt; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(243,245,242,0.72); margin: 0 0 5mm; display: flex; gap: 3mm; align-items: center; }
+.signboard h1 { font-family: var(--font-display); font-weight: 800; font-size: 50pt; line-height: 0.9; color: #fff; margin: 0; letter-spacing: -0.008em; text-wrap: balance; }
+.signboard h1 em { font-style: italic; font-weight: 700; color: var(--red-light); }
+.signboard__arrow { position: absolute; right: 11mm; bottom: 10mm; width: 21mm; height: 21mm; }
+.signboard__sub { margin: 7mm 0 0; font-size: 12.5pt; line-height: 1.42; color: rgba(243,245,242,0.88); max-width: 128mm; }
+.posts { display: flex; justify-content: space-between; padding: 0 32mm; height: 18mm; }
+.posts span { width: 2.6mm; background: linear-gradient(90deg, #6f7f93, #a9b5c3 50%, #6f7f93); }
+
+.cover__road { position: absolute; left: 0; right: 0; bottom: 0; height: 112mm; }
+.cover__road svg { width: 100%; height: 100%; display: block; }
+.cover__foot { position: absolute; left: 18mm; right: 18mm; bottom: 13mm; display: flex; justify-content: space-between; align-items: flex-end; gap: 10mm; }
+.cover__author { font-size: 9pt; line-height: 1.45; color: rgba(243,245,242,0.9); }
+.cover__author b { font-family: var(--font-display); font-size: 12.5pt; font-weight: 700; color: #fff; letter-spacing: 0.01em; display: block; margin-bottom: 0.6mm; }
+.cover__badge { font-family: var(--font-mono); font-size: 7.4pt; letter-spacing: 0.15em; text-transform: uppercase; color: #fff; display: flex; align-items: center; gap: 3mm; background: rgba(11,29,54,0.85); padding: 2.6mm 4mm; border-radius: 1.6mm; box-shadow: inset 0 0 0 0.35mm rgba(243,245,242,0.35); white-space: nowrap; }
+
+/* ---------- Blocos gerais ---------- */
+section { break-inside: auto; }
+.page-break { break-before: page; }
+.rule { height: 0; border-top: 0.35mm solid var(--ink); margin: 6mm 0 5mm; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.cols h3 { font-family: var(--font-display); font-size: 14.5pt; font-weight: 700; color: var(--ink); margin: 0 0 2mm; line-height: 1.05; }
+
+.signs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3.2mm; margin: 6mm 0 7mm; }
+.sign { background: var(--navy); color: var(--navy-ink); border-radius: 2.2mm; padding: 4.4mm 4mm 4mm; box-shadow: inset 0 0 0 0.55mm var(--navy), inset 0 0 0 1.05mm rgba(243,245,242,0.85); display: flex; flex-direction: column; gap: 1.6mm; break-inside: avoid; }
+.sign--red { background: var(--red); box-shadow: inset 0 0 0 0.55mm var(--red), inset 0 0 0 1.05mm rgba(255,255,255,0.9); }
+.sign__value { font-family: var(--font-display); font-weight: 800; font-size: 25pt; line-height: 0.95; color: #fff; }
+.sign__value small { font-size: 0.5em; font-weight: 700; letter-spacing: 0.02em; }
+.sign__label { font-size: 8.9pt; line-height: 1.35; color: rgba(243,245,242,0.88); margin: 0; }
+.sign__src { font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(243,245,242,0.62); margin-top: auto; padding-top: 1mm; }
+
+.pull { border-left: 1.2mm solid var(--red); padding: 1mm 0 1mm 5mm; margin: 5mm 0; font-family: var(--font-display); font-weight: 600; font-size: 15pt; line-height: 1.18; color: var(--ink); break-inside: avoid; }
+
+/* ---------- Mapa das fases ---------- */
+.route { margin: 6mm 0 4mm; break-inside: avoid; }
+.route__road { position: relative; height: 13mm; background: var(--navy); border-radius: 2.2mm; display: grid; grid-template-columns: repeat(6, 1fr); align-items: center; overflow: hidden; }
+.route__road::after { content: ""; position: absolute; left: 4mm; right: 4mm; top: 50%; height: 0.8mm; margin-top: -0.4mm; background: linear-gradient(90deg, var(--amarelo) 0 50%, transparent 50% 100%); background-size: 7mm 0.8mm; opacity: 0.85; }
+.route__road span { position: relative; z-index: 1; justify-self: center; font-family: var(--font-mono); font-weight: 600; font-size: 7pt; letter-spacing: 0.14em; color: #fff; background: var(--navy); padding: 0 2mm; }
+.route__cols { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2.4mm; margin-top: 3.2mm; }
+.route__col { border-top: 0.35mm solid var(--ink); padding-top: 2.4mm; }
+.route__col h3 { font-family: var(--font-display); font-weight: 800; font-size: 13pt; line-height: 1; color: var(--ink); margin: 0 0 1.2mm; }
+.route__col p { font-size: 8.6pt; line-height: 1.35; margin: 0 0 2.4mm; color: var(--ink-2); }
+.chips { display: flex; flex-wrap: wrap; gap: 1.2mm; }
+.chip { font-family: var(--font-display); font-weight: 800; font-size: 9.6pt; line-height: 1; background: var(--navy); color: #fff; border-radius: 1.1mm; padding: 1.2mm 1.6mm 1.1mm; box-shadow: inset 0 0 0 0.3mm var(--navy), inset 0 0 0 0.6mm rgba(243,245,242,0.8); }
+.route__col--dedicated .chip { background: var(--red); box-shadow: inset 0 0 0 0.3mm var(--red), inset 0 0 0 0.6mm rgba(255,255,255,0.85); }
+
+.anatomy { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3mm; margin-top: 5mm; break-inside: avoid; }
+.anatomy div { background: var(--paper-2); border-radius: 2mm; padding: 3mm 3.4mm; font-size: 8.9pt; line-height: 1.38; }
+.anatomy b { display: flex; align-items: center; gap: 1.6mm; font-family: var(--font-mono); font-size: 6.9pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink); margin-bottom: 1.2mm; font-weight: 600; }
+.anatomy .ph { color: var(--red); font-size: 9.5pt; }
+
+/* ---------- Faixa de fase ---------- */
+.phase {
+  background: var(--navy); color: var(--navy-ink);
+  border-radius: 2.4mm; padding: 3.8mm 5.5mm 6.4mm; margin: 0 0 0.5mm;
+  position: relative; overflow: hidden;
+  display: grid; grid-template-columns: 1fr auto; gap: 2mm 8mm; align-items: end;
+  break-inside: avoid; break-after: avoid;
+}
+.phase::after { content: ""; position: absolute; left: 0; right: 0; bottom: 2mm; height: 0.8mm; background: linear-gradient(90deg, var(--amarelo) 0 50%, transparent 50% 100%); background-size: 8mm 0.8mm; opacity: 0.9; }
+.phase__kicker { font-family: var(--font-mono); font-size: 7.2pt; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,245,242,0.72); margin: 0 0 1.4mm; font-weight: 600; }
+.phase__name { font-family: var(--font-display); font-weight: 800; font-size: 22pt; line-height: 0.95; color: #fff; margin: 0; }
+.phase__desc { font-size: 9.2pt; line-height: 1.38; color: rgba(243,245,242,0.86); margin: 1.4mm 0 0; max-width: 112mm; }
+.phase__dots { display: flex; gap: 1.6mm; align-items: center; padding-bottom: 1mm; }
+.phase__dots i { width: 2.6mm; height: 2.6mm; border-radius: 50%; background: rgba(243,245,242,0.25); display: block; }
+.phase__dots i.on { background: var(--red-light); width: 7mm; border-radius: 1.3mm; }
+.phase__dots i.done { background: rgba(243,245,242,0.7); }
+.phase--red { background: var(--red); }
+.phase--red .phase__dots i.on { background: #fff; }
+
+/* ---------- Saídas (EXIT) ---------- */
+.exitblock {
+  display: grid; grid-template-columns: 27mm 1fr; gap: 0 6mm;
+  padding: 3.8mm 0 3.6mm;
+  border-bottom: 0.3mm solid var(--line-strong);
+  break-inside: avoid;
+}
+.exitblock:last-child { border-bottom: 0; }
+.exit {
+  display: inline-flex; flex-direction: column; align-items: flex-start;
+  background: var(--navy); color: #fff;
+  border-radius: 2mm; padding: 2.4mm 3.6mm 2.6mm;
+  box-shadow: inset 0 0 0 0.55mm var(--navy), inset 0 0 0 1mm rgba(243,245,242,0.85);
+  font-family: var(--font-display); line-height: 1; min-width: 22mm;
+}
+.exit small { font-family: var(--font-mono); font-size: 6.8pt; letter-spacing: 0.16em; opacity: 0.85; margin-bottom: 1mm; font-weight: 600; }
+.exit b { font-size: 25pt; font-weight: 800; letter-spacing: 0.02em; }
+.exit--red { background: var(--red); box-shadow: inset 0 0 0 0.55mm var(--red), inset 0 0 0 1mm rgba(255,255,255,0.9); }
+.exitblock__phase { font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); margin-top: 2.6mm; line-height: 1.5; }
+.exitblock h2 { font-family: var(--font-display); font-weight: 800; font-size: 17pt; line-height: 1.0; color: var(--ink); margin: 0.2mm 0 1.8mm; text-wrap: balance; }
+.exitblock .what { font-size: 10.2pt; line-height: 1.4; margin: 0 0 2.2mm; }
+.meta { display: grid; grid-template-columns: 1fr 1fr; border-top: 0.3mm solid var(--line-strong); border-bottom: 0.3mm solid var(--line-strong); margin: 0 0 2.6mm; }
+.meta > div { padding: 1.5mm 3mm 1.5mm 0; font-size: 9pt; line-height: 1.36; color: var(--ink); }
+.meta > div:nth-child(2) { padding-left: 3mm; border-left: 0.3mm solid var(--line); }
+.meta > div:nth-child(3) { grid-column: 1 / -1; border-top: 0.3mm solid var(--line); }
+.meta b { display: inline-flex; align-items: center; gap: 1.2mm; font-family: var(--font-mono); font-size: 6.4pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); margin-right: 2mm; font-weight: 600; vertical-align: 0.2mm; }
+.meta .ph { color: var(--red); font-size: 8.6pt; }
+.why { background: var(--paper-2); border-radius: 2mm; padding: 2.2mm 3.6mm 2.4mm; font-size: 9.9pt; line-height: 1.4; }
+.why p { margin: 0; }
+.why b.lbl { font-family: var(--font-mono); font-size: 6.5pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--red); margin-right: 2mm; font-weight: 600; }
+
+.split2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; margin: 0 0 3.2mm; }
+.split2 > div { border: 0.3mm solid var(--line-strong); border-radius: 2mm; padding: 3mm 3.6mm; font-size: 10pt; line-height: 1.42; }
+.split2 h4 { font-family: var(--font-display); font-weight: 800; font-size: 12pt; margin: 0 0 1.2mm; color: var(--ink); display: flex; align-items: center; gap: 2mm; }
+.split2 h4 i { font-style: normal; font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.13em; color: #fff; background: var(--verde); padding: 0.8mm 1.6mm; border-radius: 1mm; font-weight: 600; }
+.split2 > div.fail h4 i { background: var(--red); }
+
+
+/* ---------- Combinados do flashcard (ticket) ---------- */
+.ticket { background: var(--navy); color: var(--navy-ink); border-radius: 2.4mm; padding: 8mm 7mm 6mm; position: relative; overflow: hidden; margin-top: 5mm; break-inside: avoid; }
+.ticket::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2.4mm; background: repeating-linear-gradient(90deg, var(--red) 0 9mm, #f3f5f2 9mm 18mm); }
+.ticket__kicker { font-family: var(--font-mono); font-size: 7pt; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,245,242,0.72); margin: 0 0 1.6mm; font-weight: 600; display: flex; gap: 3mm; align-items: center; }
+.ticket__title { font-family: var(--font-display); font-weight: 800; font-size: 21pt; line-height: 1; color: #fff; margin: 0 0 4mm; }
+.ticket__title em { font-style: italic; font-weight: 700; color: var(--red-light); }
+.rules { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2.6mm 7mm; }
+.rules li { display: grid; grid-template-columns: 7mm 1fr; font-size: 9.6pt; line-height: 1.38; color: rgba(243,245,242,0.92); padding-top: 2.2mm; border-top: 0.3mm solid rgba(243,245,242,0.2); }
+.rules li b { font-family: var(--font-display); font-weight: 800; font-size: 12pt; color: var(--amarelo); line-height: 1.1; }
+.rules strong { color: #fff; }
+.ticket .src { color: rgba(243,245,242,0.6); }
+.sign .src { color: inherit; }
+.ticket .cite { color: var(--red-light); }
+
+/* ---------- Semana-tipo ---------- */
+.week { margin-top: 5mm; background: var(--paper-2); border-radius: 2.4mm; padding: 6mm 7mm 5.2mm; break-inside: avoid; box-shadow: inset 0 0 0 0.3mm var(--line); }
+.week__kicker { font-family: var(--font-mono); font-size: 7pt; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); margin: 0 0 1.6mm; font-weight: 600; display: flex; gap: 3mm; align-items: center; }
+.week__title { font-family: var(--font-display); font-weight: 800; font-size: 21pt; line-height: 1; color: var(--ink); margin: 0 0 2.4mm; }
+.week__title em { font-style: italic; font-weight: 700; color: var(--red); }
+.week__lead { font-size: 9.8pt; line-height: 1.42; margin: 0 0 3.6mm; max-width: 150mm; }
+.week__row { display: grid; grid-template-columns: 58mm 1fr 17mm; gap: 0 4mm; align-items: center; padding: 2.1mm 0; border-top: 0.3mm solid var(--line-strong); }
+.week__row b { display: block; font-family: var(--font-display); font-weight: 700; font-size: 11.5pt; color: var(--ink); line-height: 1.05; }
+.week__row small { display: block; font-size: 8.2pt; line-height: 1.3; color: var(--ink-3); margin-top: 0.4mm; }
+.week__bar { height: 3.4mm; border-radius: 0.8mm; background: var(--navy); position: relative; overflow: hidden; }
+.week__bar::after { content: ""; position: absolute; left: 1.5mm; right: 1.5mm; top: 50%; height: 0.5mm; margin-top: -0.25mm; background: linear-gradient(90deg, var(--amarelo) 0 50%, transparent 50% 100%); background-size: 3.4mm 0.5mm; opacity: 0.9; }
+.week__bar--red { background: var(--red); }
+.week__t { font-family: var(--font-mono); font-weight: 600; font-size: 8.6pt; color: var(--ink); text-align: right; white-space: nowrap; }
+.week__total { border-top: 0.45mm solid var(--ink); }
+.week__total b { font-size: 13pt; }
+.week__total .week__t { font-family: var(--font-display); font-weight: 800; font-size: 15pt; }
+.week__foot { font-size: 8.8pt; line-height: 1.4; color: var(--ink-2); margin: 2.6mm 0 0; }
+
+/* ---------- Garantia ---------- */
+.guar { display: grid; grid-template-columns: 62mm 1fr; gap: 9mm; align-items: center; margin: 2mm 0 6mm; break-inside: avoid; }
+.stamp { width: 58mm; height: 58mm; border-radius: 50%; border: 0.8mm solid var(--red); color: var(--red); display: grid; place-items: center; text-align: center; transform: rotate(-8deg); background: var(--paper); box-shadow: inset 0 0 0 2.4mm var(--paper), inset 0 0 0 2.9mm var(--red); position: relative; }
+.stamp svg { position: absolute; inset: 3.2mm; width: calc(100% - 6.4mm); height: calc(100% - 6.4mm); }
+.stamp__inner { display: grid; gap: 1mm; }
+.stamp__big { font-family: var(--font-display); font-weight: 800; font-size: 31pt; line-height: 0.85; }
+.stamp__mid { font-family: var(--font-display); font-weight: 700; font-size: 10pt; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1; }
+.stamp__small { font-family: var(--font-mono); font-size: 5.4pt; letter-spacing: 0.14em; text-transform: uppercase; }
+
+table { width: 100%; border-collapse: collapse; }
+.map th, .map td { text-align: left; vertical-align: top; padding: 2mm 3mm 2mm 0; border-bottom: 0.3mm solid var(--line-strong); font-size: 9.6pt; line-height: 1.4; }
+.map th { font-family: var(--font-mono); font-size: 6.8pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; border-bottom: 0.45mm solid var(--ink); }
+.map td:first-child { width: 48mm; color: var(--ink); font-weight: 600; }
+.map td:last-child, .map th:last-child { width: 26mm; padding-right: 0; }
+.map tr { break-inside: avoid; }
+.nums { display: inline-flex; gap: 1mm; flex-wrap: wrap; }
+.nums span { font-family: var(--font-display); font-weight: 800; font-size: 9pt; background: var(--navy); color: #fff; border-radius: 0.9mm; padding: 0.6mm 1.3mm 0.5mm; line-height: 1.1; }
+
+.note { margin-top: 6mm; border: 0.35mm solid var(--red); border-radius: 2mm; padding: 3.6mm 4.4mm; background: var(--red-soft); font-size: 10.2pt; line-height: 1.45; color: var(--ink); break-inside: avoid; }
+.note b { font-family: var(--font-mono); font-size: 6.8pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--red); display: block; margin-bottom: 1mm; }
+
+/* ---------- Quadro-resumo ---------- */
+.summary th, .summary td { text-align: left; vertical-align: top; padding: 1.75mm 2.4mm 1.75mm 0; border-bottom: 0.25mm solid var(--line-strong); font-size: 8.75pt; line-height: 1.3; }
+.summary th { font-family: var(--font-mono); font-size: 6.5pt; letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; border-bottom: 0.45mm solid var(--ink); padding-top: 0; }
+.summary td.n { width: 13mm; }
+.summary td.n span { font-family: var(--font-display); font-weight: 800; font-size: 10pt; background: var(--navy); color: #fff; border-radius: 1mm; padding: 0.7mm 1.5mm 0.6mm; display: inline-block; line-height: 1; }
+.summary td.t { width: 54mm; font-family: var(--font-display); font-weight: 700; font-size: 10.6pt; color: var(--ink); line-height: 1.12; }
+.summary td.f { width: 27mm; font-family: var(--font-mono); font-size: 6.6pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); padding-top: 2.2mm; }
+.summary tr.ph-start td { border-top: 0.45mm solid var(--ink); }
+.summary tr { break-inside: avoid; }
+
+/* ---------- Referências ---------- */
+.refs { columns: 2; column-gap: 7mm; font-size: 7.9pt; line-height: 1.34; margin: 0; padding: 0; list-style: none; counter-reset: r; }
+.refs li { break-inside: avoid; margin: 0 0 1.4mm; padding-left: 7mm; position: relative; color: var(--ink-2); overflow-wrap: anywhere; }
+.refs li::before { content: attr(data-n); position: absolute; left: 0; top: 0; font-family: var(--font-mono); font-weight: 600; color: var(--red); font-size: 7.6pt; }
+.refs--src li::before { color: var(--ink); }
+.refs h3 { break-after: avoid; }
+.refs-title { font-family: var(--font-display); font-weight: 800; font-size: 13pt; color: var(--ink); margin: 6mm 0 3mm; display: flex; align-items: center; gap: 3mm; }
+.refs-title:first-of-type { margin-top: 0; }
+.url { font-family: var(--font-mono); font-size: 6.9pt; color: var(--ink-3); }
+
+.end { margin-top: 7mm; display: grid; grid-template-columns: 1fr auto; gap: 8mm; align-items: center; border-top: 0.35mm solid var(--ink); padding-top: 4mm; break-inside: avoid; }
+.end p { font-size: 9.2pt; line-height: 1.45; margin: 0; }
+</style>
+</head>
+<body>
+
+<!-- ================= CAPA ================= -->
+<div class="cover">
+  <div class="cover__stripe"></div>
+  <div class="cover__waves"></div>
+  <div class="cover__top">
+    <div class="brand">
+      <svg viewBox="0 0 34 38" aria-hidden="true">
+        <path d="M3 2.5h28c.9 3.4.9 6.6 0 9.3 2.6 7.6 1.4 15.3-5.4 20.7-3.6 2.8-6.6 3.9-8.6 4.6-2-.7-5-1.8-8.6-4.6C1.6 27.1.4 19.4 3 11.8c-.9-2.7-.9-5.9 0-9.3z" fill="#0b1d36" stroke="#f3f5f2" stroke-width="1.6"/>
+        <path d="M3.4 3.3h27.2c.6 2.6.6 5 0 7.2H3.4c-.6-2.2-.6-4.6 0-7.2z" fill="#b0243a"/>
+        <text x="17" y="26" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="12.5" fill="#f3f5f2">R2A</text>
+      </svg>
+      <span class="brand__name">Road to <span>America</span></span>
+    </div>
+    <div class="cover__meta">USMLE Step 1<br>Outubro de 2026</div>
+  </div>
+
+  <div class="cover__sign">
+    <div class="signtab-wrap"><div class="signtab"><small>EXIT</small><b>01 A 20</b></div></div>
+    <div class="signboard">
+      <p class="signboard__kicker"><span class="fita"></span>Turma fundadora</p>
+      <h1>20 overdeliveries para a aprovação no <em>Step&nbsp;1</em></h1>
+      <p class="signboard__sub">O que a turma fundadora recebe além do que está anunciado, organizado em seis fases, para chegar ao dia da prova com mais margem sobre o padrão mínimo e menos risco de perder uma tentativa.</p>
+      <svg class="signboard__arrow" viewBox="0 0 48 48" aria-hidden="true"><path d="M12 36 L34 14 M18 14 H34 V30" fill="none" stroke="#f3f5f2" stroke-width="4.6" stroke-linecap="square"/></svg>
+    </div>
+    <div class="posts"><span></span><span></span></div>
+  </div>
+
+  <div class="cover__road"><svg viewBox="0 0 600 320" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f2747" stop-opacity="0"/><stop offset="0.35" stop-color="#0b1d36"/><stop offset="1" stop-color="#081628"/></linearGradient><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.3" stop-color="#fff" stop-opacity="1"/></linearGradient><mask id="m"><rect width="600" height="320" fill="url(#fade)"/></mask></defs><g mask="url(#m)"><polygon points="294,0 306,0 770,320 -170,320" fill="url(#g)"/><polygon points="295,0 296,0 -106,320 -120,320" fill="#f3f5f2" opacity="0.75"/><polygon points="305,0 304,0 706,320 720,320" fill="#f3f5f2" opacity="0.75"/><polygon points="299.1,19.2 300.9,19.2 300.9,21.5 299.1,21.5" fill="#f1c232"/><polygon points="299.1,23.6 300.9,23.6 301.0,26.2 299.0,26.2" fill="#f1c232"/><polygon points="299.0,28.5 301.0,28.5 301.0,31.4 299.0,31.4" fill="#f1c232"/><polygon points="298.9,34.0 301.1,34.0 301.1,37.1 298.9,37.1" fill="#f1c232"/><polygon points="298.8,39.9 301.2,39.9 301.2,43.4 298.8,43.4" fill="#f1c232"/><polygon points="298.7,46.5 301.3,46.5 301.3,50.4 298.7,50.4" fill="#f1c232"/><polygon points="298.6,53.8 301.4,53.8 301.4,58.1 298.6,58.1" fill="#f1c232"/><polygon points="298.5,61.9 301.5,61.9 301.5,66.6 298.5,66.6" fill="#f1c232"/><polygon points="298.4,70.8 301.6,70.8 301.7,76.0 298.3,76.0" fill="#f1c232"/><polygon points="298.3,80.6 301.7,80.6 301.8,86.3 298.2,86.3" fill="#f1c232"/><polygon points="298.1,91.5 301.9,91.5 302.0,97.8 298.0,97.8" fill="#f1c232"/><polygon points="297.9,103.5 302.1,103.5 302.2,110.4 297.8,110.4" fill="#f1c232"/><polygon points="297.8,116.7 302.2,116.7 302.3,124.4 297.7,124.4" fill="#f1c232"/><polygon points="297.6,131.3 302.4,131.3 302.6,139.9 297.4,139.9" fill="#f1c232"/><polygon points="297.3,147.5 302.7,147.5 302.8,156.9 297.2,156.9" fill="#f1c232"/><polygon points="297.1,165.4 302.9,165.4 303.1,175.7 296.9,175.7" fill="#f1c232"/><polygon points="296.8,185.1 303.2,185.1 303.4,196.5 296.6,196.5" fill="#f1c232"/><polygon points="296.5,206.8 303.5,206.8 303.7,219.5 296.3,219.5" fill="#f1c232"/><polygon points="296.2,230.9 303.8,230.9 304.0,244.9 296.0,244.9" fill="#f1c232"/><polygon points="295.8,257.4 304.2,257.4 304.4,272.9 295.6,272.9" fill="#f1c232"/><polygon points="295.4,286.8 304.6,286.8 304.9,303.8 295.1,303.8" fill="#f1c232"/><polygon points="294.9,319.2 305.1,319.2 305.4,338.0 294.6,338.0" fill="#f1c232"/></g></svg></div>
+
+  <div class="cover__foot">
+    <div class="cover__author">
+      <b>Dr. Getúlio Bernardo Morato Filho</b>
+      Fundador da Road to America · CRM-DF 13610<br>
+      Pediatria RQE 10178 · Medicina Esportiva RQE 10439
+    </div>
+    <div class="cover__badge"><span class="fita"></span>Documento de apresentação</div>
+  </div>
+</div>
+
+<!-- ================= ABERTURA ================= -->
+<section>
+  <p class="eyebrow"><span class="fita"></span>Antes de pegar a estrada</p>
+  <h1 class="display">O Step 1 que você vai <em>encontrar</em></h1>
+  <p class="lead">A prova mudou de formato em maio de 2026 e continua com resultado apenas Pass ou Fail. Estes são os números que orientam todas as entregas deste documento.</p>
+
+  <div class="signs">
+    <div class="sign">
+      <div class="sign__value">14<small> × </small>30<small> min</small></div>
+      <p class="sign__label">Blocos de no máximo 20 itens, nas provas a partir de 14/05/2026.</p>
+      <span class="sign__src">Fonte <span class="src">[A]</span></span>
+    </div>
+    <div class="sign">
+      <div class="sign__value">280<small> itens</small></div>
+      <p class="sign__label">No máximo, numa sessão de 8 horas com pelo menos 55 minutos de pausa.</p>
+      <span class="sign__src">Fonte <span class="src">[A]</span></span>
+    </div>
+    <div class="sign">
+      <div class="sign__value">P/F</div>
+      <p class="sign__label">Só Pass ou Fail desde 26/01/2022. O padrão equivale a 196 na última divulgação em três dígitos.</p>
+      <span class="sign__src">Fontes <span class="src">[B, C]</span></span>
+    </div>
+    <div class="sign sign--red">
+      <div class="sign__value">4</div>
+      <p class="sign__label">Tentativas no máximo por Step. Tentativas incompletas também contam.</p>
+      <span class="sign__src">Fonte <span class="src">[D]</span></span>
+    </div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <h3>O formato atual</h3>
+      <p>O Step 1 é uma prova de um dia. Desde 14 de maio de 2026, ela tem 14 blocos de 30 minutos, com no máximo 20 itens por bloco e até 280 itens no total, numa sessão de 8 horas que inclui pelo menos 55 minutos de pausa e um tutorial opcional de 5 minutos <span class="src">[A]</span>. O conteúdo e a duração do dia continuam os mesmos. Mudaram o software, com nova interface e ajuste de contraste de imagem, e a divisão em blocos. Material que ainda descreve 7 blocos de 60 minutos ficou desatualizado.</p>
+      <p>Para provas feitas a partir de 26 de janeiro de 2022, o relatório traz só Pass ou Fail <span class="src">[B]</span>. O padrão mínimo equivale a 196 na escala de três dígitos, segundo a última divulgação numérica do USMLE, de dezembro de 2021; o USMLE avisou que as revisões seguintes não seriam publicadas nessa escala <span class="src">[C]</span>. Ele também não divulga o percentual de acertos necessário para passar, e por isso este documento não usa a cifra que circula em fóruns.</p>
+    </div>
+    <div>
+      <h3>Por que começar pelo método</h3>
+      <p>O USMLE não publica as causas das reprovações, e não encontramos estudo que separe, entre médicos formados fora dos EUA, quem reprovou por falta de conteúdo e quem reprovou por falta de método. Não vamos afirmar o que não foi medido. A pesquisa em aprendizagem, porém, já basta para orientar o plano.</p>
+      <p>Reler o material aumenta a confiança do aluno sem melhorar a retenção dias depois <span class="cite">[1]</span>. A previsão que o aluno faz do próprio desempenho não se correlaciona com o desempenho real <span class="cite">[2]</span>. Entre dez técnicas de estudo avaliadas numa revisão ampla, só a prática de testes e a prática distribuída receberam utilidade alta; grifo, resumo e releitura ficaram com utilidade baixa <span class="cite">[3]</span>. Num estudo com 81 estudantes, o número de dias de estudo não se correlacionou com o escore no Step 1 <span class="cite">[4]</span>.</p>
+    </div>
+  </div>
+
+  <p class="pull">Para quem estuda entre plantões, as horas da semana são poucas e quem as fixa é a escala. O que se pode escolher é a técnica usada em cada uma delas, e as 20 entregas partem dessa premissa.</p>
+</section>
+
+<!-- ================= MAPA ================= -->
+<section class="page-break">
+  <p class="eyebrow"><span class="fita"></span>Como o documento se organiza</p>
+  <h1 class="display">Seis fases, <em>vinte saídas</em></h1>
+  <p class="lead">A página de vendas já anuncia Anki completo, apostila, aulas, mentoria em grupo, leitura das autoavaliações, plano individual e guia ECFMG. Overdelivery, aqui, é o que a turma fundadora recebe além dessa lista: ferramentas, rotinas e sessões que fazem o material anunciado render mais. As entregas estão numeradas como as saídas de uma rodovia, na ordem em que entram na preparação.</p>
+
+  <div class="route">
+    <div class="route__road"><span>FASE 1</span><span>FASE 2</span><span>FASE 3</span><span>FASE 4</span><span>FASE 5</span><span>FASE 6</span></div>
+    <div class="route__cols">
+      <div class="route__col"><h3>Diagnóstico</h3><p>Ponto de partida medido, carga calculada e inscrição encaminhada.</p><div class="chips"><span class="chip">01</span><span class="chip">02</span><span class="chip">03</span></div></div>
+      <div class="route__col"><h3>Construção</h3><p>Base do Step 1 com flashcards, questões e o inglês da prova.</p><div class="chips"><span class="chip">04</span><span class="chip">05</span><span class="chip">06</span><span class="chip">07</span><span class="chip">08</span><span class="chip">09</span><span class="chip">10</span></div></div>
+      <div class="route__col"><h3>Consolidação</h3><p>Temas negligenciados, cards problemáticos, rotina e saúde.</p><div class="chips"><span class="chip">11</span><span class="chip">12</span><span class="chip">13</span><span class="chip">14</span><span class="chip">15</span></div></div>
+      <div class="route__col route__col--dedicated"><h3>Período dedicado</h3><p>De 6 a 8 semanas com roteiro diário e critério para a data.</p><div class="chips"><span class="chip">16</span><span class="chip">17</span><span class="chip">18</span></div></div>
+      <div class="route__col"><h3>Semana da prova</h3><p>Logística, interface nova e nada de conteúdo novo.</p><div class="chips"><span class="chip">19</span></div></div>
+      <div class="route__col"><h3>Depois do resultado</h3><p>Ponte para o Step 2 CK ou recuperação sem custo.</p><div class="chips"><span class="chip">20</span></div></div>
+    </div>
+  </div>
+
+  <div class="cols" style="margin-top:7mm">
+    <div>
+      <h3>Feitas para uma turma inteira</h3>
+      <p>A maior parte das entregas é em grupo, gravada ou em forma de ferramenta e modelo, para funcionar da mesma maneira para todos os alunos e continuar disponível nos três anos de acesso. Conversas individuais ficam reservadas para três momentos de decisão, com duração definida: o início do período dedicado (EXIT&nbsp;16), a decisão de manter ou adiar a data da prova (EXIT&nbsp;18) e a leitura do resultado, se ele for Fail (EXIT&nbsp;20).</p>
+    </div>
+    <div>
+      <h3>O que este documento não promete</h3>
+      <p>Nenhuma entrega garante aprovação. O que elas fazem é aumentar a margem sobre o padrão mínimo e reduzir as causas evitáveis de reprovação, com base em evidência publicada. A garantia de reembolso tem condições próprias, descritas na seção sobre a garantia, perto do fim, e no Termo da Garantia. Cada saída informa de onde vem a sua justificativa: números entre colchetes remetem a artigos científicos, e letras, a fontes oficiais.</p>
+    </div>
+  </div>
+
+  <div class="anatomy">
+    <div><b><i class="ph ph-sign"></i>O que você recebe</b>A entrega descrita em termos concretos.</div>
+    <div><b><i class="ph ph-cal"></i>Quando e formato</b>A fase em que começa e como é oferecida.</div>
+    <div><b><i class="ph ph-check"></i>Entregável</b>O que fica com o aluno e como o progresso é medido.</div>
+    <div><b><i class="ph ph-book"></i>Base</b>A evidência ou a razão prática que sustenta a entrega.</div>
+  </div>
+</section>
+
+<!-- ================= FASE 1 ================= -->
+<section class="page-break">
+  <div class="phase">
+    <div>
+      <p class="phase__kicker">Fase 1 de 6 · primeiras duas semanas</p>
+      <p class="phase__name">Diagnóstico</p>
+      <p class="phase__desc">Antes de estudar, medir: onde você está, quantas horas tem de fato e o que falta para poder marcar a prova.</p>
+    </div>
+    <div class="phase__dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>01</b></div><div class="exitblock__phase">Diagnóstico</div></div>
+    <div>
+      <h2>Linha de base oficial e mapa de lacunas</h2>
+      <p class="what">Um roteiro para medir o ponto de partida com material oficial. Todos começam pelas mais de 100 questões de amostra gratuitas do usmle.org, feitas na nova versão interativa e em blocos cronometrados <span class="src">[E]</span>. Quem estudou ciências básicas no último ano faz também uma CBSSA do NBME (comprada à parte, US$ 62) no modo standard-paced <span class="src">[F]</span>. Uma aula gravada ensina a ler o relatório, e a equipe devolve o mapa de lacunas por escrito.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Semana 1: prova. Semana 2: devolutiva.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Aula gravada e devolutiva individual por escrito.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Mapa com os 11 sistemas e as 10 disciplinas do outline, o peso oficial de cada um e o seu desempenho, mais a meta para a próxima autoavaliação.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Na era numérica, a CBSSA sozinha explicou 67% da variância do escore no Step 1 em 12.224 estudantes <span class="cite">[5]</span>. Na era Pass/Fail, o último escore na CBSSA previu o resultado da primeira tentativa em todos os modelos testados com 23.271 estudantes <span class="cite">[6]</span>. Os pesos do outline são desiguais: patologia aparece em 45-55% dos itens e fisiologia em 30-40% <span class="src">[G]</span>, e começar pelo que pesa mais encurta o caminho.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>02</b></div><div class="exitblock__phase">Diagnóstico</div></div>
+    <div>
+      <h2>Calculadora de carga e calendário que acompanha a escala</h2>
+      <p class="what">Uma planilha que transforma as horas reais da semana, plantão por plantão, em cotas diárias: minutos de revisão no Anki, número de cards novos e blocos de questões. Ela mostra quantas revisões por dia você terá daqui a 30, 60 e 90 dias com o ritmo escolhido e em que data o baralho do Step 1 estará todo liberado. O plano individual anunciado é montado uma vez, a partir da escala; a planilha permite que o próprio aluno refaça o mês em poucos minutos sempre que a escala mudar, e a mentoria em grupo confere os ajustes.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Semana 1, com revisão a cada nova escala.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Ferramenta e tutorial gravado.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Calendário exportável para a agenda do celular e previsão de carga diária; o limite de cards novos é calculado a partir do tempo disponível.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O manual do Anki estima cerca de 200 revisões por dia para quem aprende 20 cards novos todos os dias, e cita usuários que estudaram centenas de cards novos no começo e depois não deram conta das revisões <span class="src">[H]</span>. A prática distribuída supera a concentrada, e o intervalo que maximiza a retenção cresce conforme a prova fica mais distante <span class="cite">[7, 8]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>03</b></div><div class="exitblock__phase">Diagnóstico</div></div>
+    <div>
+      <h2>Inscrição assistida, do MyIntealth ao Prometric</h2>
+      <p class="what">Passo a passo com capturas de tela, atualizado para 2026, e uma sessão mensal ao vivo para dúvidas de preenchimento. Cobre a criação da conta no MyIntealth, o pedido de elegibilidade para a certificação ECFMG, a inscrição no Step 1 pelo USMLE Portal da FSMB e o agendamento no Prometric, com a conferência dos centros disponíveis no Brasil na hora de marcar.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Primeiro mês, para que a burocracia não atrase a data.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Guia ilustrado e sessão mensal ao vivo, gravada.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Checklist com cada etapa datada e orçamento: US$ 695 de inscrição e a taxa regional de prova fora dos EUA e do Canadá, de US$ 210 no Step 1, a conferir no portal no dia <span class="src">[I]</span>.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Desde 12/01/2026, a FSMB cuida da inscrição, dos relatórios e do atendimento dos Steps para IMGs, e o ECFMG (Intealth) continua decidindo a elegibilidade e emitindo a certificação <span class="src">[J]</span>. Guias anteriores à transição descrevem outro caminho e outras taxas; a taxa de US$ 1.020 anunciada em janeiro de 2025 foi substituída <span class="src">[I]</span>.</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= FASE 2 ================= -->
+<section>
+  <div class="phase" style="margin-top:5mm">
+    <div>
+      <p class="phase__kicker">Fase 2 de 6 · conforme o plano individual</p>
+      <p class="phase__name">Construção</p>
+      <p class="phase__desc">A base do Step 1 com recordação ativa desde o primeiro dia: flashcards bem escritos, questões dissecadas e o inglês da vinheta.</p>
+    </div>
+    <div class="phase__dots"><i class="done"></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>04</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Sistema de flashcards com FSRS, pronto para usar</h2>
+      <p class="what">Acesso ao app de flashcards da Road to America (drgetulio.github.io/road-to-america/anki) e um preset do Anki já configurado com o FSRS-6: retenção desejada de 0,90, passos de aprendizagem de 1 e 10 minutos, reaprendizagem de 10 minutos e ocultação de irmãos ligada, para que um cloze não entregue a resposta de outro da mesma nota. Um vídeo curto ensina a otimizar os parâmetros uma vez por mês e a separar em presets baralhos de dificuldade muito diferente.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Desde a primeira aula, todos os dias.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>App, arquivo de preset e vídeo gravado.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Preset importável e rotina mensal de otimização; a medida é a retenção real do mês, comparada com a meta de 0,90.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Testar a memória rende mais retenção tardia do que reler <span class="cite">[1, 2]</span>, e espaçar as revisões amplia o efeito, inclusive em estudantes de medicina <span class="cite">[9]</span>. O FSRS-6 está no Anki desde a versão 25.07 e segue na 26.09.3 <span class="src">[K]</span>. O manual desaconselha passos de um dia ou mais com o FSRS e alerta que, acima de 90% de retenção, a carga cresce muito rápido <span class="src">[H]</span>. O uso regular do Anki se associou a escores maiores no Step 1 em estudos observacionais <span class="cite">[10, 11, 12]</span>, que mostram associação sem demonstrar causa.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>05</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Oficina de formulação de cards</h2>
+      <p class="what">Oficina gravada e guia de bolso com as regras que mais pesam: um fato por card, pergunta curta e resposta única; cloze para converter texto de apostila, ocultando o conceito-chave e nunca a palavra de que a frase depende; pergunta e resposta para mecanismo e diagnóstico diferencial; e o mesmo fato visto de ângulos diferentes (mecanismo, clínica, farmacologia) quando isso ajuda. Inclui o tipo de nota Road to America, com campos para mecanismo, fonte e imagem, e a regra de liberação: os cards de um tema só entram depois da aula ou da leitura da apostila.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Primeiro mês da construção.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Oficina gravada e exercício em dupla.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Guia, modelo de nota e dez cards próprios revisados por um colega de pod com o checklist da oficina.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>As regras de Wozniak, em ordem de importância, começam por não aprender o que não se entendeu e entender antes de memorizar. Itens simples de recordação ativa rendem memória melhor que itens complexos, e o cloze é a porta de entrada para quem ainda tem dificuldade com o princípio da informação mínima <span class="src">[L]</span>.</p></div>
+    </div>
+  </article>
+
+  <aside class="ticket">
+    <p class="ticket__kicker"><span class="fita"></span>Regras de bolso · valem da EXIT 04 à prova</p>
+    <p class="ticket__title">Os doze combinados do <em>flashcard</em></p>
+    <ol class="rules"><li><b>01</b><span><strong>Revisões todos os dias.</strong> Inclusive nos dias sem cards novos. Quando o atraso crescer, corte os novos, nunca as revisões.</span></li><li><b>02</b><span><strong>Again quando esquecer.</strong> Hard conta como acerto; usado num card esquecido, infla os intervalos seguintes <span class="src">[H]</span>.</span></li><li><b>03</b><span><strong>Retenção de 0,90.</strong> Acima disso, só medindo a carga: depois de 90% ela cresce muito rápido <span class="src">[H]</span>.</span></li><li><b>04</b><span><strong>Passos no mesmo dia.</strong> Aprendizagem em 1 e 10 minutos, reaprendizagem em 10; o FSRS cuida dos intervalos entre dias <span class="src">[H]</span>.</span></li><li><b>05</b><span><strong>Otimização mensal.</strong> Uma vez por mês basta, e baralhos de dificuldade muito diferente ficam em presets separados <span class="src">[H]</span>.</span></li><li><b>06</b><span><strong>Entender antes de decorar.</strong> Os cards de um tema só são liberados depois da aula ou da apostila <span class="src">[L]</span>.</span></li><li><b>07</b><span><strong>Um fato por card.</strong> Cloze para texto; pergunta e resposta para mecanismo e diagnóstico diferencial <span class="src">[L]</span>.</span></li><li><b>08</b><span><strong>Nada de listas longas.</strong> Enumerações viram clozes separados ou cards de comparação com dica de contexto.</span></li><li><b>09</b><span><strong>Irmãos ocultos.</strong> As opções vêm desligadas no Anki; ligadas, um cloze não entrega a resposta do outro <span class="src">[K]</span>.</span></li><li><b>10</b><span><strong>Leech se trata.</strong> Primeiro reescrever (simplificar, pôr mnemônico ou imagem); apagar o que não compensa o tempo <span class="src">[M]</span>.</span></li><li><b>11</b><span><strong>Cards e questões juntos.</strong> Cada um previu o escore no Step 1 por conta própria num estudo observacional <span class="cite">[13]</span>.</span></li><li><b>12</b><span><strong>Sistemas misturados.</strong> Intercalar rende mais com categorias parecidas e material complexo <span class="cite">[14]</span>.</span></li></ol>
+  </aside>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>06</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Curadoria dos cards dos alunos e registro de mudanças</h2>
+      <p class="what">Um canal para enviar cards próprios e apontar erros no baralho e na apostila. A equipe avalia os envios todo mês, e os aprovados entram no baralho oficial com crédito ao autor. Toda alteração no material vai para um registro de mudanças datado, com a fonte oficial que a motivou, para que o aluno saiba o que mudou e por quê.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Contínuo, com fechamento mensal.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Formulário e registro público para a turma.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Registro de mudanças do baralho e da apostila, com prazo-alvo de 7 dias para responder a cada apontamento de erro.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Entre 2024 e 2026, o Step 1 passou por três mudanças relevantes: a categoria General Principles saiu do outline, com os temas redistribuídos <span class="src">[G]</span>; o formato passou a 14 blocos de 30 minutos em 14/05/2026 <span class="src">[A]</span>; e o conteúdo de nutrição foi reforçado a partir de junho de 2026, com feedback próprio no relatório <span class="src">[N]</span>. Material sem data de revisão deixa o aluno sem saber o que ainda vale.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>07</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Caderno de erros estruturado</h2>
+      <p class="what">Um modelo de caderno em planilha que classifica cada questão errada numa de seis causas: lacuna de conteúdo, leitura da vinheta, vocabulário em inglês, raciocínio, tempo ou troca de uma resposta certa por uma errada. Cada erro de conteúdo vira um ou dois cards. No fim do mês, a planilha mostra onde os erros se concentram, e uma análise em grupo apresenta os padrões da turma sem identificar ninguém.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>A partir do primeiro bloco de questões.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Modelo e análise mensal em grupo, gravada.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Caderno preenchido e gráfico mensal da proporção de erros por causa, que orienta o que estudar no mês seguinte.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Num ensaio randomizado com residentes de pediatria e emergência, testes repetidos com feedback renderam notas 13 pontos percentuais maiores que o estudo repetido seis meses depois da aula <span class="cite">[15]</span>. Como a impressão que o aluno tem do próprio desempenho falha <span class="cite">[2]</span>, o caderno troca a impressão pelo registro.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>08</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Dissecção de questões no estilo NBME</h2>
+      <p class="what">Sessão quinzenal ao vivo, gravada, em que um mentor desmonta itens das amostras oficiais: o que cada frase da vinheta entrega, o que o enunciado de fato pergunta e por que cada distrator está ali. O treino central é formular a resposta antes de ler as alternativas e usar as opções só para conferir.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>A cada 15 dias, da construção ao período dedicado.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Ao vivo em grupo, com gravação indexada.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Biblioteca de sessões por sistema; a medida é o tempo médio por item e o acerto nos blocos seguintes.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Com até 20 itens em 30 minutos, cabe em média um minuto e meio por questão <span class="src">[A]</span>. Num estudo com 72 estudantes, o número de questões no estilo da prova e o número de cards vistos no Anki previram o escore no Step 1, cada um por conta própria <span class="cite">[13]</span>. O estudo é observacional e da era numérica, mas aponta na mesma direção da pesquisa experimental sobre testes <span class="cite">[1]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>09</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Inglês de vinheta e falsos cognatos</h2>
+      <p class="what">Oficina gravada e um baralho próprio com as expressões clínicas e os falsos cognatos que mais confundem brasileiros: <i>injury</i> é lesão, <i>to attend</i> é frequentar ou comparecer, <i>pretend</i> é fingir, <i>eventually</i> é por fim, <i>exquisite tenderness</i> é dor intensa à palpação. Inclui treino de leitura cronometrada de vinhetas longas, com marcação do dado que decide a questão.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Primeiros dois meses, com revisão no Anki.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Oficina gravada e baralho no app.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Baralho de inglês médico; a medida é o tempo de leitura por vinheta, registrado no início e a cada mês.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Razão prática: com cerca de 90 segundos por item <span class="src">[A]</span>, cada releitura provocada por uma dúvida de vocabulário sai do tempo de raciocínio. O mesmo vale para a leitura de um laudo ou de uma tabela dentro da vinheta.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>10</b></div><div class="exitblock__phase">Construção</div></div>
+    <div>
+      <h2>Tabela Brasil-EUA de fármacos e unidades</h2>
+      <p class="what">Uma tabela de bolso com os nomes americanos dos fármacos que mudam em relação ao Brasil (paracetamol é <i>acetaminophen</i>, salbutamol é <i>albuterol</i>, adrenalina é <i>epinephrine</i>, petidina é <i>meperidine</i>, glibenclamida é <i>glyburide</i>) e com as unidades americanas que aparecem na vinheta: temperatura em °F, peso em libras, altura em pés e polegadas. Traz as conversões que precisam sair de cabeça: °C = (°F − 32) ÷ 1,8; 1 lb ≈ 0,454 kg; 1 pé = 30,48 cm; 1 polegada = 2,54 cm.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Desde o início, com revisão no Anki.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>PDF de consulta e cards de conversão.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Tabela e deck de conversões; a meta é converter sem calcular no papel ao fim do primeiro mês.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Razão prática: a prova é escrita para o médico americano, com a nomenclatura e as unidades dos EUA. Para quem aprendeu outros nomes e outras unidades, cada conversão feita na hora consome parte do minuto e meio disponível por item.</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= FASE 3 ================= -->
+<section>
+  <div class="phase" style="margin-top:5mm">
+    <div>
+      <p class="phase__kicker">Fase 3 de 6 · conforme o plano individual</p>
+      <p class="phase__name">Consolidação</p>
+      <p class="phase__desc">Fechar lacunas que costumam passar despercebidas, cuidar dos cards que não fixam e proteger a rotina e a saúde de quem estuda.</p>
+    </div>
+    <div class="phase__dots"><i class="done"></i><i class="done"></i><i class="on"></i><i></i><i></i><i></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>11</b></div><div class="exitblock__phase">Consolidação</div></div>
+    <div>
+      <h2>Trilha de bioestatística, ética e comunicação</h2>
+      <p class="what">Quatro aulas gravadas e blocos de questões por tema para os assuntos que o médico brasileiro costuma deixar para o fim. Na bioestatística, as fórmulas viram cards (sensibilidade, especificidade, valores preditivos, razão de verossimilhança, NNT) e são treinadas em exercícios de cálculo. Na ética e na comunicação, os casos seguem as normas americanas de consentimento, capacidade de decisão, confidencialidade do adolescente e comunicação de más notícias, discutidos com mentores que atuam nos EUA.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Ao longo da consolidação.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Aulas gravadas e blocos temáticos.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Cards de fórmulas e acerto por tema, acompanhado nas autoavaliações seguintes.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>No outline do Step 1, bioestatística e epidemiologia respondem por 4-6% dos itens, e ciências sociais (comunicação e habilidades interpessoais), por 6-9% <span class="src">[G]</span>. Juntas, chegam a 10-15% da prova. Ciências do comportamento, como disciplina, aparecem em 10-15% dos itens <span class="src">[G]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>12</b></div><div class="exitblock__phase">Consolidação</div></div>
+    <div>
+      <h2>Clínica de leeches</h2>
+      <p class="what">Sessão mensal em grupo, gravada, em que cada aluno leva os cards marcados como leech, que no padrão do Anki são os que chegaram a 8 lapsos, e sai com eles reescritos, apagados ou separados. Pares que se confundem viram cards de comparação com dica de contexto, ou um deles fica suspenso até o outro estar firme. O roteiro da sessão ensina a fazer o mesmo sozinho nos meses seguintes.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Uma vez por mês.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Em grupo, ao vivo e gravada.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Lista de leeches tratados; a medida é o número de leeches ativos no painel, mês a mês.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Ao chegar a 8 lapsos, o Anki marca o card e, conforme a configuração, o suspende; se o card continuar falhando, o aviso volta a cada metade do limiar. O manual considera reescrever o card a forma mais eficiente de resolver um leech, e sugere aprender bem um item antes de liberar o outro quando a causa é interferência entre itens parecidos <span class="src">[M]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>13</b></div><div class="exitblock__phase">Consolidação</div></div>
+    <div>
+      <h2>Pods de estudo por rotina</h2>
+      <p class="what">Grupos fixos de 4 a 6 alunos com rotinas parecidas (plantão de 24 horas, residência, faculdade, horário comercial) e um encontro semanal de 45 minutos com roteiro pronto. Cada participante explica em voz alta duas questões que errou na semana, de sistemas diferentes, e o grupo confere as metas de Anki e de questões de cada um.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Toda semana, a partir da construção.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Encontro em grupo, conduzido pelos próprios alunos.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Roteiro do encontro e registro de presença e metas no painel do aluno.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Autoexplicação e interrogação elaborativa receberam utilidade moderada na revisão de Dunlosky e colaboradores <span class="cite">[3]</span>. Misturar sistemas no mesmo encontro também aproxima o treino da prova: a intercalação rende mais quando as categorias são parecidas entre si e o material é complexo <span class="cite">[14]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>14</b></div><div class="exitblock__phase">Consolidação</div></div>
+    <div>
+      <h2>Plantão de dúvidas semanal</h2>
+      <p class="what">Uma hora por semana, ao vivo, com um mentor, e perguntas enviadas com antecedência. O horário alterna entre noite e manhã para atender quem dá plantão diurno e noturno. Tudo fica gravado e indexado por tema, e a dúvida que não couber na hora recebe resposta escrita antes do encontro seguinte.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Toda semana, até a prova.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Ao vivo em grupo, com gravação.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Biblioteca de respostas pesquisável por sistema e disciplina.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Dúvida sem resposta tende a virar card decorado sem entendimento. Entender antes de memorizar está entre as primeiras regras de formulação do conhecimento <span class="src">[L]</span>, e o plantão existe para que o aluno não precise escolher entre parar o cronograma e seguir sem entender.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>15</b></div><div class="exitblock__phase">Consolidação</div></div>
+    <div>
+      <h2>Protocolo de sono, exercício e saúde mental</h2>
+      <p class="what">Um protocolo escrito pelo fundador, médico do esporte, para quem estuda e dá plantão: meta de 7 horas ou mais de sono, com horário regular nas semanas sem plantão noturno; plano de recuperação depois do plantão; treino aeróbico regular encaixado na semana de estudo; e uma sessão mensal em grupo sobre ansiedade de prova, com encaminhamento para atendimento profissional quando for o caso.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Da matrícula à prova.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Protocolo e sessão mensal gravada.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Check-in semanal de horas de sono e de treino no painel do aluno.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O sono consolida a memória recém-adquirida <span class="cite">[16]</span>. Em universitários, as notas acompanharam o sono da semana e do mês anteriores à prova, e não o da véspera <span class="cite">[17]</span>; em primeiranistas de medicina, dormir 7 horas ou mais se associou a notas melhores <span class="cite">[18]</span>. O exercício aeróbico melhora a cognição <span class="cite">[19]</span>, mas o efeito de uma sessão isolada é pequeno <span class="cite">[20]</span> e o aumento do hipocampo foi mostrado em idosos <span class="cite">[21]</span>. A ansiedade de prova foi preditor negativo do escore no Step 1 <span class="cite">[13]</span>.</p></div>
+    </div>
+  </article>
+
+  <aside class="week">
+    <p class="week__kicker"><span class="fita"></span>Semana-tipo · exemplo para 12 horas</p>
+    <p class="week__title">Quanto tempo as entregas <em>ocupam</em></p>
+    <p class="week__lead">A Road to America indica 12 horas por semana como carga mínima do plano, e 15 horas para quem está há mais de cinco anos longe das ciências básicas. Uma distribuição possível na fase de construção, antes do ajuste à sua escala:</p>
+    <div class="week__row"><div><b>Anki, todos os dias</b><small>Revisões antes dos cards novos (EXIT&nbsp;04)</small></div><div class="week__bar week__bar--red" style="width:100%"></div><span class="week__t">4 h 40</span></div>
+    <div class="week__row"><div><b>Aulas e apostila</b><small>Em duas ou três folgas da semana</small></div><div class="week__bar" style="width:64%"></div><span class="week__t">3 h</span></div>
+    <div class="week__row"><div><b>Questões no estilo da prova</b><small>Dois blocos de 20 itens e o caderno de erros (EXIT&nbsp;07)</small></div><div class="week__bar" style="width:54%"></div><span class="week__t">2 h 30</span></div>
+    <div class="week__row"><div><b>Plantão de dúvidas</b><small>Ao vivo ou gravado (EXIT&nbsp;14)</small></div><div class="week__bar" style="width:21%"></div><span class="week__t">1 h</span></div>
+    <div class="week__row"><div><b>Pod da semana</b><small>Encontro com roteiro (EXIT&nbsp;13)</small></div><div class="week__bar" style="width:16%"></div><span class="week__t">45 min</span></div>
+    <div class="week__row week__total"><div><b>Total</b></div><div></div><span class="week__t">≈ 12 h</span></div>
+    <p class="week__foot">Anki: 40 minutos por dia, sete dias por semana. As sessões quinzenais e mensais (dissecção de questões, leeches, análise de erros, saúde mental, inscrição) ficam gravadas e, na semana em que acontecem, ocupam parte do tempo reservado às aulas.</p>
+  </aside>
+</section>
+
+<!-- ================= FASE 4 ================= -->
+<section>
+  <div class="phase phase--red" style="margin-top:5mm">
+    <div>
+      <p class="phase__kicker">Fase 4 de 6 · de 6 a 8 semanas</p>
+      <p class="phase__name">Período dedicado</p>
+      <p class="phase__desc">Questões cronometradas e misturadas, autoavaliações no momento certo e um critério escrito para manter ou adiar a data.</p>
+    </div>
+    <div class="phase__dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="on"></i><i></i><i></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit exit--red"><small>EXIT</small><b>16</b></div><div class="exitblock__phase">Período dedicado</div></div>
+    <div>
+      <h2>Roteiro diário do período dedicado</h2>
+      <p class="what">Roteiro dia a dia para 6, 7 ou 8 semanas, em duas versões: para quem consegue afastamento total e para quem mantém plantões. Pela manhã, blocos de 20 questões cronometradas em modo aleatório; depois, revisão dos erros no caderno; Anki todos os dias, sem exceção; à tarde, as lacunas do mapa. Os cards novos diminuem nas últimas semanas, enquanto as revisões continuam. As autoavaliações ficam distribuídas, com a última marcada de 1 a 2 semanas antes da prova. Uma conversa individual de 20 minutos abre o período.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>As 6 a 8 semanas finais.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Roteiro, revisão semanal em grupo e 20 min individuais.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Roteiro personalizado e check-in diário de dois minutos no painel, com questões feitas, acerto e revisões em dia.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O último escore na CBSSA classificou melhor o resultado quando a prova veio de 1 a 2 semanas depois <span class="cite">[6]</span>. Num estudo com 81 estudantes, o escore se correlacionou com o exame de ciências básicas do NBME feito logo antes do período dedicado (r = 0,71) e com o percentual de acertos no UWorld (r = 0,62); o número de dias de estudo não teve correlação <span class="cite">[4]</span>. Voltar ao conteúdo em sessões espaçadas aumentou muito a retenção a um custo pequeno <span class="cite">[22]</span>, e misturar tipos de problema na prática superou a prática em blocos <span class="cite">[14, 23]</span>. Para a fase final, um preset separado com retenção um pouco maior é opção, se o tempo diário permitir <span class="src">[H]</span>.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit exit--red"><small>EXIT</small><b>17</b></div><div class="exitblock__phase">Período dedicado</div></div>
+    <div>
+      <h2>Simulado de dia inteiro no formato oficial</h2>
+      <p class="what">Dois ensaios gerais em sábados marcados com a turma, reproduzindo o dia da prova: 14 blocos de 30 minutos com 20 questões cada, montados no banco de questões comercial que o aluno assina à parte, tutorial de 5 minutos e pelo menos 55 minutos de pausa, distribuídos segundo um plano testado. A sala virtual fica aberta durante todo o dia, com um mentor de plantão para a logística.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Metade e fim do período dedicado.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Em grupo, com roteiro de horários.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Plano de pausas validado e curva de acerto do bloco 1 ao 14, que mostra se há queda no fim do dia.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O dia oficial tem até 280 itens numa sessão de 8 horas <span class="src">[A]</span>. O tempo que sobra num bloco terminado antes vai para o banco de pausas, a pausa que passa do disponível sai do tempo de prova e um bloco encerrado não reabre <span class="src">[O]</span>. Ensaiar essas regras antes do dia evita perder minutos por desconhecimento.</p></div>
+    </div>
+  </article>
+
+  <article class="exitblock">
+    <div><div class="exit exit--red"><small>EXIT</small><b>18</b></div><div class="exitblock__phase">Período dedicado</div></div>
+    <div>
+      <h2>Painel de prontidão e critério escrito para a data</h2>
+      <p class="what">Um painel que reúne as autoavaliações lançadas, a curva de acerto nas questões e a retenção do Anki. O critério da Road to America é definido antes, por escrito: recomendamos manter a data quando duas CBSSAs seguidas, em standard-paced, mostrarem a faixa provável de escore inteira acima da faixa de aprovação baixa e probabilidade estimada de aprovação de 90% ou mais. Uma conversa individual de 20 minutos fecha a recomendação. A decisão final continua sendo do aluno.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>A cada autoavaliação; decisão a 2 semanas da prova.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Painel e 20 min individuais.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Relatório de prontidão de uma página e registro das autoavaliações, que também serve à garantia.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O relatório da CBSSA estima a probabilidade de aprovação se o Step 1 for feito em até uma semana <span class="src">[F]</span>, e a orientação do NBME lembra que 90% ainda significa que cerca de 1 em cada 10 alunos parecidos é reprovado <span class="src">[P]</span>. Por isso o critério pede duas medidas seguidas. Como cada Step admite no máximo 4 tentativas e as incompletas contam <span class="src">[D]</span>, a margem antes de ir para a prova protege tentativas.</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= FASE 5 e 6 ================= -->
+<section>
+  <div class="phase" style="margin-top:5mm">
+    <div>
+      <p class="phase__kicker">Fase 5 de 6 · os últimos 7 dias</p>
+      <p class="phase__name">Semana da prova</p>
+      <p class="phase__desc">Revisar o que já foi visto, conhecer a interface nova e chegar descansado.</p>
+    </div>
+    <div class="phase__dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="on"></i><i></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>19</b></div><div class="exitblock__phase">Semana da prova</div></div>
+    <div>
+      <h2>Checklist da semana da prova</h2>
+      <p class="what">Um checklist dia a dia para os últimos sete dias. No estudo: só material já visto, Anki em dia e nenhum conteúdo novo. Na logística: confirmação do agendamento e dos documentos exigidos no e-mail do Prometric, rota e horário até o centro, plano de alimentação e de pausas já testado no simulado. Na interface: um bloco das amostras interativas novas para conhecer o menu de configurações e o ajuste de contraste de imagem. Na véspera, uma mensagem gravada dos mentores.</p>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Do 7º dia antes até a manhã da prova.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Checklist e vídeo gravado.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Checklist marcado item a item no painel até a véspera.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>Desde 14/05/2026, a prova roda num software novo, com nova divisão de blocos e menu de configurações <span class="src">[A]</span>, e o USMLE orienta quem faz a prova a partir dessa data a treinar na nova versão interativa das amostras <span class="src">[E]</span>. Quanto ao sono, o que pesa é o da semana e do mês anteriores <span class="cite">[17]</span>, por isso o protocolo da EXIT 15 vale até o fim.</p></div>
+    </div>
+  </article>
+
+  <div class="phase" style="margin-top:5mm">
+    <div>
+      <p class="phase__kicker">Fase 6 de 6 · a partir da divulgação</p>
+      <p class="phase__name">Depois do resultado</p>
+      <p class="phase__desc">Os dois resultados possíveis têm um plano pronto antes da prova.</p>
+    </div>
+    <div class="phase__dots"><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="done"></i><i class="on"></i></div>
+  </div>
+
+  <article class="exitblock">
+    <div><div class="exit"><small>EXIT</small><b>20</b></div><div class="exitblock__phase">Depois do resultado</div></div>
+    <div>
+      <h2>Ponte para o Step 2 CK ou recuperação sem custo</h2>
+      <p class="what">O resultado costuma sair de 2 a 4 semanas depois da prova, às quartas-feiras, com atrasos ocasionais <span class="src">[Q]</span>. Esse intervalo já é usado para o próximo passo.</p>
+      <div class="split2">
+        <div><h4><i>PASS</i>Ponte para o Step 2 CK</h4>Plano de transição que começa durante a espera, aproveita o baralho e o caderno de erros e define a meta de nota no Step 2 CK conforme a especialidade desejada. Para a garantia, conta a nota mínima em vigor (218 desde julho de 2025) <span class="src">[R]</span> e valem de novo as duas autoavaliações do NBME, agora as do Step 2 CK.</div>
+        <div class="fail"><h4><i>FAIL</i>Protocolo de recuperação</h4>Sem custo: leitura do relatório de reprovação, conversa individual de 40 minutos e novo plano, com revisão de todas as áreas e um calendário que respeita as regras de tentativas <span class="src">[D]</span>.</div>
+      </div>
+      <div class="meta">
+        <div><b><i class="ph ph-cal"></i>Quando</b>Da prova à divulgação, e depois dela.</div>
+        <div><b><i class="ph ph-users"></i>Formato</b>Plano escrito; 40 min individuais no caso de Fail.</div>
+        <div><b><i class="ph ph-check"></i>Entregável</b>Plano do Step 2 CK ou novo plano do Step 1, com prazo-alvo de 10 dias úteis.</div>
+      </div>
+      <div class="why"><p><b class="lbl">Base</b>O relatório de reprovação mostra a distância entre o escore global e o padrão mínimo e compara cada área de conteúdo com o desempenho de quem teve aprovação baixa; o USMLE recomenda revisar todas as áreas antes de nova tentativa, porque a prova é integrativa <span class="src">[S]</span>. Ninguém pode fazer o mesmo Step mais de 3 vezes em 12 meses, e a 4ª tentativa exige 12 meses desde a 1ª e 6 meses desde a mais recente <span class="src">[D]</span>. No Step 2 CK, fazer mais de 2.500 questões únicas no UWorld se associou a escore maior num estudo de uma única escola <span class="cite">[24]</span>.</p></div>
+    </div>
+  </article>
+</section>
+
+<!-- ================= GARANTIA ================= -->
+<section class="page-break" id="garantia">
+  <p class="eyebrow"><span class="fita"></span>Risco financeiro e risco acadêmico</p>
+  <h1 class="display">Como as entregas se somam à <em>garantia</em></h1>
+
+  <div class="guar">
+    <div class="stamp">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="circ" d="M100,100 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0"/></defs><text font-family="Overpass Mono, monospace" font-size="9.4" fill="#b0243a" font-weight="600"><textPath href="#circ" textLength="536" lengthAdjust="spacing">ROAD TO AMERICA · TURMA FUNDADORA · ROAD TO AMERICA · TURMA FUNDADORA ·</textPath></text></svg>
+      <div class="stamp__inner">
+        <span class="stamp__small">Garantia</span>
+        <span class="stamp__big">3 anos</span>
+        <span class="stamp__mid">Reembolso<br>integral</span>
+        <span class="stamp__small">Nas condições<br>do termo</span>
+      </div>
+    </div>
+    <div>
+      <p>A garantia cuida do risco financeiro. Se, ao fim de três anos da matrícula, ainda faltar aprovação no Step 1 ou no Step 2 CK, a Road to America devolve 100% do valor pago ao curso. Para quem ainda não concluiu o ciclo básico, o prazo começa quando o concluir. Aprovação é Pass no Step 1 e nota igual ou superior à mínima em vigor no Step 2 CK, que é 218 desde julho de 2025 <span class="src">[R]</span>.</p>
+      <p>Valem duas condições de participação: ter assistido a pelo menos 80% das aulas e ter feito no mínimo duas autoavaliações oficiais do NBME para cada Step que faltar, compradas à parte e lançadas no painel. Não é preciso ter feito nenhuma tentativa, e a data da prova é escolhida pelo aluno.</p>
+      <p>As 20 entregas cuidam do risco acadêmico, ou seja, da margem sobre o padrão mínimo. Algumas também ajudam a cumprir as condições da garantia, como mostra o quadro abaixo.</p>
+    </div>
+  </div>
+
+  <table class="map">
+    <thead><tr><th>Ponto da garantia</th><th>Como as entregas se relacionam</th><th>Saídas</th></tr></thead>
+    <tbody>
+      <tr><td>80% das aulas assistidas</td><td>O calendário põe as aulas dentro da semana real de plantões, os pods conferem o andamento toda semana e o check-in mostra o percentual no painel.</td><td><span class="nums"><span>02</span><span>13</span><span>16</span></span></td></tr>
+      <tr><td>Duas autoavaliações NBME por Step</td><td>A linha de base, o roteiro do período dedicado e o critério de prontidão já preveem pelo menos duas CBSSAs, em modo standard-paced, lançadas no mesmo painel que a garantia usa.</td><td><span class="nums"><span>01</span><span>16</span><span>18</span></span></td></tr>
+      <tr><td>Data escolhida pelo aluno</td><td>O critério escrito orienta e a conversa individual explica a recomendação, mas não há autorização para agendar. O aluno decide com dados na mão.</td><td><span class="nums"><span>18</span></span></td></tr>
+      <tr><td>Aprovação no Step 1 e no Step 2 CK</td><td>A garantia cobre as duas provas. Depois do Pass, a ponte para o Step 2 CK começa na espera do resultado; depois de um Fail, o protocolo de recuperação não tem custo.</td><td><span class="nums"><span>20</span></span></td></tr>
+      <tr><td>Limite de 4 tentativas por Step</td><td>Fora do alcance da garantia, que não devolve tentativas. Por isso o critério de prontidão pede margem antes da prova, e o simulado ensaia o dia para que nenhuma tentativa seja perdida por logística.</td><td><span class="nums"><span>17</span><span>18</span><span>19</span></span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="note"><b>Leia antes de decidir</b>Nenhuma entrega deste documento garante aprovação. A garantia de reembolso é contratual e tem condições; o texto completo está no Termo da Garantia, em https://drgetulio.github.io/road-to-america/garantia.html. Taxas do USMLE, da FSMB, do ECFMG, do NBME e do OET, além de bancos de questões comerciais como o UWorld, são pagas à parte e não entram no reembolso.</div>
+</section>
+
+<!-- ================= QUADRO-RESUMO ================= -->
+<section class="page-break">
+  <p class="eyebrow"><span class="fita"></span>Quadro-resumo</p>
+  <h1 class="display" style="font-size:26pt;margin-bottom:4mm">As 20 saídas <em>numa página</em></h1>
+  <table class="summary">
+    <thead><tr><th>Saída</th><th>Entrega</th><th>Fase</th><th>Entregável</th></tr></thead>
+    <tbody>
+      <tr><td class="n"><span>01</span></td><td class="t">Linha de base oficial e mapa de lacunas</td><td class="f">Diagnóstico</td><td>Mapa por sistema e disciplina, com pesos do outline e meta da próxima autoavaliação</td></tr>
+      <tr><td class="n"><span>02</span></td><td class="t">Calculadora de carga e calendário</td><td class="f">Diagnóstico</td><td>Calendário exportável e previsão de revisões diárias em 30, 60 e 90 dias</td></tr>
+      <tr><td class="n"><span>03</span></td><td class="t">Inscrição assistida</td><td class="f">Diagnóstico</td><td>Checklist datado de MyIntealth, FSMB e Prometric, com orçamento</td></tr>
+      <tr class="ph-start"><td class="n"><span>04</span></td><td class="t">Flashcards com FSRS prontos para usar</td><td class="f">Construção</td><td>App, preset FSRS-6 importável e rotina mensal de otimização</td></tr>
+      <tr><td class="n"><span>05</span></td><td class="t">Oficina de formulação de cards</td><td class="f">Construção</td><td>Guia, modelo de nota e dez cards próprios revisados em dupla</td></tr>
+      <tr><td class="n"><span>06</span></td><td class="t">Curadoria dos cards e registro de mudanças</td><td class="f">Construção</td><td>Registro datado com fonte; resposta a erros em até 7 dias</td></tr>
+      <tr><td class="n"><span>07</span></td><td class="t">Caderno de erros estruturado</td><td class="f">Construção</td><td>Caderno em seis causas e gráfico mensal de erros</td></tr>
+      <tr><td class="n"><span>08</span></td><td class="t">Dissecção de questões no estilo NBME</td><td class="f">Construção</td><td>Biblioteca quinzenal por sistema; tempo e acerto por item</td></tr>
+      <tr><td class="n"><span>09</span></td><td class="t">Inglês de vinheta e falsos cognatos</td><td class="f">Construção</td><td>Baralho de inglês médico; tempo de leitura por vinheta</td></tr>
+      <tr><td class="n"><span>10</span></td><td class="t">Tabela Brasil-EUA de fármacos e unidades</td><td class="f">Construção</td><td>Tabela de consulta e deck de conversões</td></tr>
+      <tr class="ph-start"><td class="n"><span>11</span></td><td class="t">Bioestatística, ética e comunicação</td><td class="f">Consolidação</td><td>Quatro aulas, cards de fórmulas e acerto por tema</td></tr>
+      <tr><td class="n"><span>12</span></td><td class="t">Clínica de leeches</td><td class="f">Consolidação</td><td>Leeches tratados; contagem mensal no painel</td></tr>
+      <tr><td class="n"><span>13</span></td><td class="t">Pods de estudo por rotina</td><td class="f">Consolidação</td><td>Roteiro semanal de 45 min; presença e metas no painel</td></tr>
+      <tr><td class="n"><span>14</span></td><td class="t">Plantão de dúvidas semanal</td><td class="f">Consolidação</td><td>Biblioteca de respostas pesquisável</td></tr>
+      <tr><td class="n"><span>15</span></td><td class="t">Sono, exercício e saúde mental</td><td class="f">Consolidação</td><td>Protocolo escrito e check-in semanal de sono e treino</td></tr>
+      <tr class="ph-start"><td class="n"><span>16</span></td><td class="t">Roteiro diário do período dedicado</td><td class="f">Período dedicado</td><td>Roteiro de 6 a 8 semanas e check-in diário; 20 min individuais</td></tr>
+      <tr><td class="n"><span>17</span></td><td class="t">Simulado de dia inteiro no formato oficial</td><td class="f">Período dedicado</td><td>Dois ensaios de 14 blocos; plano de pausas e curva por bloco</td></tr>
+      <tr><td class="n"><span>18</span></td><td class="t">Painel de prontidão e critério escrito</td><td class="f">Período dedicado</td><td>Relatório de prontidão de uma página; 20 min individuais</td></tr>
+      <tr class="ph-start"><td class="n"><span>19</span></td><td class="t">Checklist da semana da prova</td><td class="f">Semana da prova</td><td>Checklist diário de estudo, logística e interface</td></tr>
+      <tr class="ph-start"><td class="n"><span>20</span></td><td class="t">Ponte para o Step 2 CK ou recuperação</td><td class="f">Depois do resultado</td><td>Novo plano em até 10 dias úteis; 40 min individuais se Fail</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ================= REFERÊNCIAS ================= -->
+<section class="page-break">
+  <p class="eyebrow"><span class="fita"></span>De onde vêm os números</p>
+  <h1 class="display" style="font-size:26pt;margin-bottom:5mm">Referências</h1>
+  <h3 class="refs-title">Artigos científicos <span class="cite">[1-24]</span></h3>
+  <ol class="refs"><li data-n="[1]">Roediger HL, Karpicke JD. Test-enhanced learning: taking memory tests improves long-term retention. Psychol Sci. 2006;17(3):249-55. PMID 16507066. doi:10.1111/j.1467-9280.2006.01693.x</li><li data-n="[2]">Karpicke JD, Roediger HL. The critical importance of retrieval for learning. Science. 2008;319(5865):966-8. PMID 18276894. doi:10.1126/science.1152408</li><li data-n="[3]">Dunlosky J, Rawson KA, Marsh EJ, Nathan MJ, Willingham DT. Improving students&#x27; learning with effective learning techniques: promising directions from cognitive and educational psychology. Psychol Sci Public Interest. 2013;14(1):4-58. PMID 26173288. doi:10.1177/1529100612453266</li><li data-n="[4]">Giordano C, Hutchinson D, Peppler R. A predictive model for USMLE Step 1 scores. Cureus. 2016;8(9):e769. PMID 27738569. doi:10.7759/cureus.769</li><li data-n="[5]">Morrison CA, Ross LP, Fogle T, Butler A, Miller J, Dillon GF. Relationship between performance on the NBME Comprehensive Basic Sciences Self-Assessment and USMLE Step 1 for U.S. and Canadian medical school students. Acad Med. 2010;85(10 Suppl):S98-101. PMID 20881715. doi:10.1097/ACM.0b013e3181ed3f5c</li><li data-n="[6]">Fan F, O&#x27;Donnell F, Morrison C, Durand L, Barone M. Revisiting the utility of the National Board of Medical Examiners Comprehensive Basic Science Self-Assessment to gauge readiness for USMLE Step 1. Med Sci Educ. 2025;35(1):149-55. PMID 40144132. doi:10.1007/s40670-024-02155-0</li><li data-n="[7]">Cepeda NJ, Pashler H, Vul E, Wixted JT, Rohrer D. Distributed practice in verbal recall tasks: a review and quantitative synthesis. Psychol Bull. 2006;132(3):354-80. PMID 16719566. doi:10.1037/0033-2909.132.3.354</li><li data-n="[8]">Cepeda NJ, Vul E, Rohrer D, Wixted JT, Pashler H. Spacing effects in learning: a temporal ridgeline of optimal retention. Psychol Sci. 2008;19(11):1095-102. PMID 19076480. doi:10.1111/j.1467-9280.2008.02209.x</li><li data-n="[9]">Kerfoot BP, DeWolf WC, Masser BA, Church PA, Federman DD. Spaced education improves the retention of clinical knowledge by medical students: a randomised controlled trial. Med Educ. 2007;41(1):23-31. PMID 17209889. doi:10.1111/j.1365-2929.2006.02644.x</li><li data-n="[10]">Lu M, Farhat JH, Beck Dallaghan GL. Enhanced learning and retention of medical knowledge using the mobile flash card application Anki. Med Sci Educ. 2021;31(6):1975-81. PMID 34956708. doi:10.1007/s40670-021-01386-9</li><li data-n="[11]">Wothe JK, Wanberg LJ, Hohle RD, Sakher AA, Bosacker LE, Khan F, et al. Academic and wellness outcomes associated with use of Anki spaced repetition software in medical school. J Med Educ Curric Dev. 2023;10:23821205231173289. PMID 37187920. doi:10.1177/23821205231173289</li><li data-n="[12]">Frappa N, Chernov D, Dillon M, Alben MG. Anki use and academic performance in medical education: a systematic review of evidence and learning theory. Med Sci Educ. 2026;36(2):1015-25. PMID 42183420. doi:10.1007/s40670-026-02643-5</li><li data-n="[13]">Deng F, Gluckstein JA, Larsen DP. Student-directed retrieval practice is a predictor of medical licensing examination performance. Perspect Med Educ. 2015;4(6):308-13. PMID 26498443. doi:10.1007/s40037-015-0220-x</li><li data-n="[14]">Brunmair M, Richter T. Similarity matters: a meta-analysis of interleaved learning and its moderators. Psychol Bull. 2019;145(11):1029-52. PMID 31556629. doi:10.1037/bul0000209</li><li data-n="[15]">Larsen DP, Butler AC, Roediger HL. Repeated testing improves long-term retention relative to repeated study: a randomised controlled trial. Med Educ. 2009;43(12):1174-81. PMID 19930508. doi:10.1111/j.1365-2923.2009.03518.x</li><li data-n="[16]">Diekelmann S, Born J. The memory function of sleep. Nat Rev Neurosci. 2010;11(2):114-26. PMID 20046194. doi:10.1038/nrn2762</li><li data-n="[17]">Okano K, Kaczmarzyk JR, Dave N, Gabrieli JDE, Grossman JC. Sleep quality, duration, and consistency are associated with better academic performance in college students. NPJ Sci Learn. 2019;4:16. PMID 31583118. doi:10.1038/s41539-019-0055-z</li><li data-n="[18]">Spence LE, Khoury SK, Gronewold A, Regan MP, Daly DT, Nebel C. Wellness and work: Anki, study habits, and exam outcomes in first-year medical students. Med Sci Educ. 2026;36(1):237-45. PMID 41939075. doi:10.1007/s40670-025-02549-8</li><li data-n="[19]">Hillman CH, Erickson KI, Kramer AF. Be smart, exercise your heart: exercise effects on brain and cognition. Nat Rev Neurosci. 2008;9(1):58-65. PMID 18094706. doi:10.1038/nrn2298</li><li data-n="[20]">Chang YK, Labban JD, Gapin JI, Etnier JL. The effects of acute exercise on cognitive performance: a meta-analysis. Brain Res. 2012;1453:87-101. PMID 22480735. doi:10.1016/j.brainres.2012.02.068</li><li data-n="[21]">Erickson KI, Voss MW, Prakash RS, Basak C, Szabo A, Chaddock L, et al. Exercise training increases size of hippocampus and improves memory. Proc Natl Acad Sci U S A. 2011;108(7):3017-22. PMID 21282661. doi:10.1073/pnas.1015950108</li><li data-n="[22]">Rawson KA, Dunlosky J. Optimizing schedules of retrieval practice for durable and efficient learning: how much is enough? J Exp Psychol Gen. 2011;140(3):283-302. PMID 21707204. doi:10.1037/a0023956</li><li data-n="[23]">Rohrer D, Taylor K. The shuffling of mathematics problems improves learning. Instr Sci. 2007;35(6):481-98. doi:10.1007/s11251-007-9015-8</li><li data-n="[24]">Ghersin H, Gulfo MC, Frohlich BA, Wilson SM, Berlot AA, Zhang JS, et al. Socioeconomic factors and test preparation strategies are related to success on the USMLE Step 2 clinical knowledge (CK) exam: a single-institution study. BMC Med Educ. 2024;24(1):1412. PMID 39627730. doi:10.1186/s12909-024-06414-x</li></ol>
+  <h3 class="refs-title" style="break-before:page">Fontes oficiais e documentação <span class="src">[A-S]</span></h3>
+  <ol class="refs refs--src"><li data-n="[A]">USMLE. Step 1: formato da prova a partir de 14/05/2026. <span class="url">https://www.usmle.org/step-exams/step-1</span></li><li data-n="[B]">USMLE. Step 1 updates: score reporting and standard setting. <span class="url">https://www.usmle.org/usmle-step-1-updates-score-reporting-and-standard-setting</span></li><li data-n="[C]">USMLE. Change to Step 1 passing standard begins January 26, 2022. <span class="url">https://www.usmle.org/change-step-1-passing-standard-begins-january-26-2022</span></li><li data-n="[D]">USMLE. Bulletin of Information: eligibility (limite de tentativas). <span class="url">https://www.usmle.org/bulletin-information/eligibility</span></li><li data-n="[E]">USMLE. Step 1 sample test questions. <span class="url">https://www.usmle.org/exam-resources/step-1-materials/step-1-sample-test-questions</span></li><li data-n="[F]">NBME. Comprehensive Basic Science Self-Assessment (CBSSA). <span class="url">https://www.nbme.org/examinees/self-assessments/comprehensive-basic-science-self-assessment/</span></li><li data-n="[G]">USMLE. Program updates to content outlines for all Step exams (2024) e especificações de conteúdo do Step 1. <span class="url">https://www.usmle.org/usmle-program-updates-content-outlines-all-step-exams</span></li><li data-n="[H]">Anki Manual. Deck options (FSRS, retenção desejada, carga prevista). <span class="url">https://github.com/ankitects/anki-manual/blob/main/src/deck-options.md</span></li><li data-n="[I]">FSMB. USMLE application fees. <span class="url">https://www.fsmb.org/usmle/usmle-application-fees</span></li><li data-n="[J]">USMLE. 2026 Bulletin Addendum (transição da inscrição de IMGs para a FSMB). <span class="url">https://www.usmle.org/sites/default/files/2025-12/2026%20Bulletin%20Addendum.pdf</span></li><li data-n="[K]">Ankitects. Anki 26.09.3: código-fonte (fsrs 6.6.2; padrões de configuração do baralho). <span class="url">https://github.com/ankitects/anki/blob/main/Cargo.toml</span></li><li data-n="[L]">Wozniak PA. Effective learning: twenty rules of formulating knowledge. SuperMemo; 1999. <span class="url">https://www.supermemo.com/en/archives1990-2015/articles/20rules</span></li><li data-n="[M]">Anki Manual. Leeches. <span class="url">https://github.com/ankitects/anki-manual/blob/main/src/leeches.md</span></li><li data-n="[N]">USMLE. Enhancements to nutrition content on USMLE Step exams coming June 2026. <span class="url">https://www.usmle.org/enhancements-nutrition-content-usmle-step-exams-coming-june-2026</span></li><li data-n="[O]">USMLE. Bulletin of Information: examination day testing (regras de pausa). <span class="url">https://www.usmle.org/bulletin-information/examination-day-testing</span></li><li data-n="[P]">NBME. CBSSA and CBSE score interpretation guidance (2026). <span class="url">https://www.nbme.org/wp-content/uploads/2026/04/CBSSA_CBSE_Guidance.pdf</span></li><li data-n="[Q]">USMLE. 2026 Bulletin information addendum. <span class="url">https://www.usmle.org/2026-bulletin-information-addendum</span></li><li data-n="[R]">USMLE. Examination results and scoring (Step 2 CK: padrão mínimo de 218 desde 01/07/2025). <span class="url">https://usmle.org/scores-transcripts/examination-results-and-scoring</span></li><li data-n="[S]">USMLE. Step 1 sample fail report (provas a partir de 26/01/2022). <span class="url">https://www.usmle.org/sites/default/files/2021-08/STEP1_sample_fail_report_Jan_26_2022.pdf</span></li></ol>
+  <div class="end">
+    <p>Fontes consultadas em 28 de outubro de 2026. Estudos sobre Anki e volume de questões são observacionais e, em sua maioria, anteriores ao Pass/Fail; aqui são descritos como associação. Regras e valores do USMLE, da FSMB e do NBME mudam: confira a fonte oficial antes de cada inscrição. Documento de apresentação da turma fundadora; condições completas no Termo da Garantia (https://drgetulio.github.io/road-to-america/garantia.html).</p>
+    <div class="cover__badge" style="background:var(--navy)"><span class="fita"></span>Road to America</div>
+  </div>
+</section>
+
+</body>
+</html>

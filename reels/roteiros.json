@@ -1,0 +1,3433 @@
+{
+  "projeto": "Road to America",
+  "formato": "Instagram Reels 1080x1920, 50 s, legível sem som; motion graphics em Remotion com a identidade de assets/css (navy, vermelho, branco, fita verde e amarela; Barlow Condensed, Barlow, Overpass Mono).",
+  "convencoes": "Palavras entre *asteriscos* recebem destaque (cor ou peso). As três últimas cenas de cada roteiro são o CTA. virada_s indica o segundo da revelação.",
+  "roteiros": [
+    {
+      "id": "reel-01",
+      "versao": 2,
+      "titulo": "Sem SAEME não dá? Dá.",
+      "angulo": "Objeção: minha escola não tem acreditação SAEME, então estou fora do USMLE.",
+      "framework": "Brunson: quebra de falsa crença de veículo (achar que a acreditação bloqueia a prova) + Hormozi $100M Leads: isca gratuita (verificação da escola).",
+      "gancho_0a3s": "Sem SAEME, sem USMLE? Errado.",
+      "virada_s": 21,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Sem SAEME, *sem USMLE*?",
+          "narracao": "Sem acreditação SAEME, você está fora do USMLE?"
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Não* é bem assim",
+          "narracao": "Não é bem assim."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O critério é *outro*",
+          "narracao": "O critério para fazer a prova é outro."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 11.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "World Directory of *Medical Schools*",
+          "narracao": "Ele fica no World Directory of Medical Schools."
+        },
+        {
+          "inicio_s": 11.0,
+          "fim_s": 13.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Escola *listada* no diretório",
+          "narracao": "A escola precisa estar listada."
+        },
+        {
+          "inicio_s": 13.5,
+          "fim_s": 16.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "*ECFMG Sponsor Note* presente",
+          "narracao": "Com a nota do ECFMG em Sponsor Notes."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Seu ano no *intervalo*",
+          "narracao": "E o seu ano dentro do intervalo."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E a SAEME, *então*?",
+          "narracao": "E a SAEME?"
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Nov 2024: política *informativa*",
+          "narracao": "Desde novembro de 2024, essa regra da Intealth é só informativa."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Certificação ECFMG *segue possível*",
+          "narracao": "A Intealth diz: a certificação segue possível."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Pesa só no *Pathway 3*",
+          "narracao": "Ela pesa só no Pathway 3."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 32.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "CRM ativo: em geral *Pathway 1*",
+          "narracao": "Com CRM ativo, a maioria usa o Pathway 1."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Cursos novos: *anos restritos*",
+          "narracao": "Atenção aos cursos novos: alguns têm anos restritos."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Digite o nome da *escola*",
+          "narracao": "No site, você digita o nome da escola."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Conferência *guiada* no WDOMS",
+          "narracao": "E a ferramenta guia a conferência."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Dúvida? Um *mentor* confere",
+          "narracao": "Se restar dúvida, um mentor confere por você."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 01: *verificar faculdade*",
+          "narracao": "Link na bio. Verifique a sua faculdade, de graça."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Resultado em *poucos minutos*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para verificar a faculdade (verificar.html).",
+      "legenda_post": "Acreditação SAEME não é requisito para o USMLE. O que vale é a ECFMG Sponsor Note da sua escola no World Directory, com o seu ano de formatura no intervalo. Desde novembro de 2024 a política de acreditação da Intealth é apenas informativa e pesa só no Pathway 3. Confira a sua escola pelo link na bio, de graça. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #ECFMG #MedicinaNosEUA #ResidenciaMedica #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Para o USMLE, a escola de fora dos EUA precisa estar no World Directory com ECFMG Sponsor Note e com o ano de formatura em Graduation Years (Current para quem cursa); sem a nota, alunos e formados não são elegíveis",
+          "fonte": "USMLE Bulletin, Eligibility, https://www.usmle.org/bulletin-information/eligibility; ECFMG Sponsor Notes, https://www.ecfmg.org/resources/sponsor-notes.html; WDOMS, https://search.wdoms.org/"
+        },
+        {
+          "fato": "A Recognized Accreditation Policy da Intealth vale desde novembro de 2024 apenas como medida informativa; a acreditação pesa só no Pathway 3",
+          "fonte": "Intealth, https://www.intealth.org/news/2024/11/20/intealth-implements-recognized-accreditation-policy/; ECFMG Pathways, https://www.ecfmg.org/certification-pathways/"
+        },
+        {
+          "fato": "Quem tem licença ativa para exercer medicina no país de formação (CRM) usa, na maioria dos casos, o Pathway 1",
+          "fonte": "ECFMG Pathways, https://www.ecfmg.org/certification-pathways/"
+        },
+        {
+          "fato": "Verificação gratuita da escola no site, com conferência guiada no WDOMS e revisão por mentor em caso de dúvida",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/verificar.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-02",
+      "versao": 2,
+      "titulo": "O USMLE não tem prova oral",
+      "angulo": "Objeção: meu inglês é fraco, então não consigo fazer o USMLE agora.",
+      "framework": "Brunson: quebra de falsa crença interna (inglês) com reordenação do caminho + Hormozi: redução do esforço percebido na equação de valor.",
+      "gancho_0a3s": "O USMLE não tem prova oral.",
+      "virada_s": 26,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O USMLE *não tem* prova oral",
+          "narracao": "O Step 1 e o Step 2 CK não têm prova oral."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Step 1 e *Step 2 CK*",
+          "narracao": "São as duas primeiras provas."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Múltipla escolha, *no computador*",
+          "narracao": "Múltipla escolha, no computador."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O desafio é *ler rápido*",
+          "narracao": "O desafio é ler inglês clínico com velocidade."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Vocabulário se *constrói*",
+          "narracao": "E vocabulário se constrói."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Anki em *inglês clínico*",
+          "narracao": "O baralho já vem em inglês clínico."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "contador",
+          "texto_tela": "*30 a 40 min* por dia",
+          "narracao": "Trinta a quarenta minutos por dia."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Questões comentadas nas *folgas*",
+          "narracao": "Mais as questões comentadas nas folgas."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E a parte *falada*?",
+          "narracao": "E quando chega a parte falada?"
+        },
+        {
+          "inicio_s": 23.0,
+          "fim_s": 26.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "OET Medicine: *na certificação*",
+          "narracao": "Ela entra na certificação ECFMG, com o OET Medicine."
+        },
+        {
+          "inicio_s": 26.0,
+          "fim_s": 29.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*350* em L, R, S",
+          "narracao": "O ECFMG pede 350 em Listening, Reading e Speaking."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*300* em Writing",
+          "narracao": "E 300 em Writing, numa única aplicação."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "globo_rota",
+          "texto_tela": "O OET pode vir *mais adiante*",
+          "narracao": "E o OET pode ficar para mais adiante."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Inglês medido no *diagnóstico*",
+          "narracao": "O diagnóstico mede seu inglês e seu conhecimento."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A rota *se ajusta* a você",
+          "narracao": "E a rota se ajusta a você."
+        },
+        {
+          "inicio_s": 39.0,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Inglês fraco hoje *muda a ordem*",
+          "narracao": "Inglês fraco hoje muda a ordem do plano."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *INGLÊS*",
+          "narracao": "Comente INGLÊS e eu mando os links oficiais."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Links oficiais *no direct*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra INGLÊS.",
+      "entrega_cta": "Resposta automática no direct com o link do requisito de OET do ECFMG, o USMLE Bulletin e a pré-inscrição.",
+      "legenda_post": "Step 1 e Step 2 CK são provas de múltipla escolha no computador, sem parte oral. A parte falada fica para a certificação ECFMG, que exige o OET Medicine: 350 em Listening, Reading e Speaking e 300 em Writing. Por isso o vocabulário clínico começa no primeiro dia, com Anki e questões. Comente INGLÊS e receba os links oficiais. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #OET #InglesMedico #MedicinaNosEUA #Step1",
+      "fatos_usados": [
+        {
+          "fato": "Step 1 e Step 2 CK são provas de múltipla escolha feitas no computador, sem parte oral",
+          "fonte": "USMLE Bulletin of Information, https://www.usmle.org/bulletin-information"
+        },
+        {
+          "fato": "O ECFMG exige OET Medicine com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação",
+          "fonte": "ECFMG Pathways FAQ, https://www.ecfmg.org/certification-pathways/faqs.html"
+        },
+        {
+          "fato": "Plano com carga mínima de cerca de 12 h por semana (30 a 40 min de Anki por dia, aulas gravadas e 2 ou 3 blocos de questões por folga); 15 h para quem está há mais de 5 anos longe das ciências básicas; planejamento de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK; quem tem menos de 12 h é avisado na pré-inscrição",
+          "fonte": "Road to America, Dúvidas, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-03",
+      "versao": 2,
+      "titulo": "12 horas por semana",
+      "angulo": "Objeção: não tenho tempo por causa dos plantões.",
+      "framework": "Hormozi: equação de valor (reduzir tempo e esforço percebidos) com honestidade de qualificação; Brunson: falsa crença externa (a escala de plantão impede).",
+      "gancho_0a3s": "12 h por semana. Faça a conta.",
+      "virada_s": 26,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*12 h* por semana",
+          "narracao": "Doze horas por semana: a carga mínima do plano."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Mesmo com *plantão*?",
+          "narracao": "Com plantão no meio?"
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O plano parte da *sua escala*",
+          "narracao": "O plano é montado a partir da sua escala."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "contador",
+          "texto_tela": "Anki: *30 a 40 min*/dia",
+          "narracao": "Anki, de trinta a quarenta minutos por dia."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Cerca de *4 h* na semana",
+          "narracao": "Isso dá cerca de quatro horas na semana."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Aulas *gravadas* da semana",
+          "narracao": "Mais as aulas gravadas."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "2 a 3 *blocos* por folga",
+          "narracao": "E dois ou três blocos em cada folga."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Revisão dos *erros*",
+          "narracao": "Com revisão dos erros."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Blocos de *30 minutos*",
+          "narracao": "Desde maio de 2026, a prova usa blocos de trinta minutos."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Um bloco cabe numa *folga curta*",
+          "narracao": "Um bloco desse tamanho cabe numa folga curta."
+        },
+        {
+          "inicio_s": 26.0,
+          "fim_s": 29.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Menos de 12 h? *Avisamos*.",
+          "narracao": "A parte honesta: com menos de doze horas, avisamos na pré-inscrição."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Três anos *podem não bastar*",
+          "narracao": "Três anos podem não bastar."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Longe do básico há *5+ anos*?",
+          "narracao": "Está há mais de cinco anos longe das ciências básicas?"
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*15 h* por semana",
+          "narracao": "Aí o mentor costuma indicar quinze horas."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.5,
+          "tipo_visual": "globo_rota",
+          "texto_tela": "Step 1: *10 a 14 meses*",
+          "narracao": "Com doze horas, são dez a catorze meses até o Step 1."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "globo_rota",
+          "texto_tela": "Step 2 CK: mais *8 a 12*",
+          "narracao": "E mais oito a doze até o Step 2 CK."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *PLANTÃO*",
+          "narracao": "Comente PLANTÃO e receba a estimativa para a sua escala."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Estimativa de horas *para você*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra PLANTÃO.",
+      "entrega_cta": "Resposta automática no direct com o link da pré-inscrição, que devolve estimativa de horas semanais e rota sugerida.",
+      "legenda_post": "O plano mínimo tem cerca de 12 h por semana: 30 a 40 min de Anki por dia, aulas gravadas e dois ou três blocos de questões em cada folga, montados a partir da sua escala. Quem está há mais de cinco anos longe do básico costuma precisar de 15 h. Com menos de 12 h livres, avisamos antes que três anos podem não bastar. Comente PLANTÃO. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Plantao #MedicinaNosEUA #Step1 #Step2CK",
+      "fatos_usados": [
+        {
+          "fato": "Plano com carga mínima de cerca de 12 h por semana (30 a 40 min de Anki por dia, aulas gravadas e 2 ou 3 blocos de questões por folga); 15 h para quem está há mais de 5 anos longe das ciências básicas; planejamento de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK; quem tem menos de 12 h é avisado na pré-inscrição",
+          "fonte": "Road to America, Dúvidas, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Desde maio de 2026, Step 1 e Step 2 CK usam blocos de 30 minutos",
+          "fonte": "USMLE, https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026"
+        }
+      ]
+    },
+    {
+      "id": "reel-04",
+      "versao": 3,
+      "titulo": "35+? O número que importa é outro",
+      "angulo": "Objeção: tenho 35 anos ou mais, já passou da hora.",
+      "framework": "Brunson: quebra de falsa crença interna (idade) trocando o critério imaginado pelo critério real; Hormozi: aumento da probabilidade percebida com dado verificável e próximo passo concreto.",
+      "gancho_0a3s": "35+? O número que importa é outro.",
+      "virada_s": 21,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "35+? O número que importa *é outro*",
+          "narracao": "Passou dos trinta e cinco? O número que importa é outro."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Idade máxima: *não existe*",
+          "narracao": "Não existe idade máxima para residência nos EUA."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Ano da *formatura*",
+          "narracao": "Alguns programas olham o ano da formatura."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Muitos preferem *5 a 10 anos*",
+          "narracao": "Muitos preferem até cinco a dez anos de formado."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Outros *não têm corte*",
+          "narracao": "Outros não têm corte nenhum."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 16.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Descubra na *FREIDA*, da AMA",
+          "narracao": "Muitos programas informam isso na FREIDA, a base da AMA."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Veja o critério *de cada programa*",
+          "narracao": "Você confere programa por programa."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Sem informação? *Pergunte*",
+          "narracao": "Não está lá? Pergunte direto ao programa."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E o que *compensa* o tempo?",
+          "narracao": "Agora, o que compensa parte desse tempo?"
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 27.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Step 2 CK: mediana *248*",
+          "narracao": "A nota do Step 2 CK: mediana de 248."
+        },
+        {
+          "inicio_s": 27.0,
+          "fim_s": 29.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "IMGs na *especialidade desejada*, 2026",
+          "narracao": "Entre IMGs não americanos que entraram na especialidade desejada."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Mais *experiência nos EUA* e cartas",
+          "narracao": "Experiência clínica nos EUA e cartas também pesam."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A meta *depende do seu ano*",
+          "narracao": "Sua meta depende do ano de formatura."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.5,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 04: meta *definida no diagnóstico*",
+          "narracao": "No plano, essa meta sai do diagnóstico."
+        },
+        {
+          "inicio_s": 37.5,
+          "fim_s": 40.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Antes de desistir, *faça a conta*",
+          "narracao": "Antes de desistir pela idade, faça essa conta."
+        },
+        {
+          "inicio_s": 40.0,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Decida com *dado oficial*",
+          "narracao": "Com dado oficial."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *FORMATURA*",
+          "narracao": "Comente FORMATURA e receba o link da FREIDA."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Link da FREIDA *no direct*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra FORMATURA.",
+      "entrega_cta": "Resposta automática no direct com o link da AMA FREIDA e o link da pré-inscrição.",
+      "legenda_post": "Não existe idade máxima para a residência nos EUA. O que alguns programas observam é o tempo desde a formatura, e muitos informam esse critério na base FREIDA, da AMA. Uma nota competitiva no Step 2 CK compensa parte desse tempo: a mediana dos IMGs não americanos que entraram na especialidade desejada em 2026 foi 248 (NRMP). Comente FORMATURA e receba os links. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step2CK #ResidenciaMedica #MedicinaNosEUA #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Não há idade máxima para residência nos EUA; muitos programas preferem formados há menos de 5 a 10 anos e informam o critério na base FREIDA",
+          "fonte": "AMA FREIDA, https://freida.ama-assn.org/"
+        },
+        {
+          "fato": "Mediana de 248 no Step 2 CK entre IMGs não americanos que entraram na especialidade desejada no Match 2026",
+          "fonte": "NRMP, Charting Outcomes 2026, https://www.nrmp.org/match-data/charting-outcomes-characteristics-of-non-u-s-citizen-international-medical-students-graduates-who-matched-to-their-preferred-specialty-2026-main-residency-match/"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-05",
+      "versao": 2,
+      "titulo": "R$ 12.000 é caro?",
+      "angulo": "Objeção: é caro.",
+      "framework": "Hormozi: equação de valor (resultado desejado, probabilidade, tempo, esforço) + remoção de risco; Brunson: reenquadramento do preço pela oferta completa.",
+      "gancho_0a3s": "R$ 12.000 é caro? Faça esta conta.",
+      "virada_s": 26.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "R$ 12.000 é *caro*?",
+          "narracao": "Doze mil reais é caro?"
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Depende do que *vem junto*",
+          "narracao": "Depende do que vem junto."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*3 anos* de acesso",
+          "narracao": "São três anos de acesso."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 11.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Ou *12 x R$ 1.000*",
+          "narracao": "Ou doze vezes de mil reais no cartão."
+        },
+        {
+          "inicio_s": 11.0,
+          "fim_s": 13.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Step 1 *e* Step 2 CK",
+          "narracao": "Step 1 e Step 2 CK no mesmo programa."
+        },
+        {
+          "inicio_s": 13.5,
+          "fim_s": 16.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Anki completo + *apostila*",
+          "narracao": "Anki completo e apostila."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Aulas com *quem passou*",
+          "narracao": "Aulas com quem passou nas provas."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Mentoria com médicos *nos EUA*",
+          "narracao": "Mentoria com médicos que atuam nos EUA."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 23.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Plano + *guia ECFMG*",
+          "narracao": "Plano individual e guia ECFMG."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "E se *não passar*?",
+          "narracao": "E se você não for aprovado?"
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Reembolso integral*, com condições",
+          "narracao": "Se faltar aprovação em três anos, reembolso integral, com condições."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "80% das aulas, *2 NBME*/Step",
+          "narracao": "Oitenta por cento das aulas e duas NBME por Step pendente."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Cumpriu? O valor *volta*",
+          "narracao": "Cumpriu as condições, o valor pago ao curso volta."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Fora do preço: *taxas e bancos*",
+          "narracao": "Fica fora: taxas oficiais e bancos de questões."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Avisado *antes* de pagar",
+          "narracao": "Avisamos antes de você pagar."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Pré-inscrição *não obriga* matrícula",
+          "narracao": "E a pré-inscrição é gratuita e não obriga matrícula."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: *pré-inscrição gratuita*",
+          "narracao": "Link na bio: pré-inscrição gratuita da turma fundadora."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Turma *fundadora*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para a pré-inscrição gratuita.",
+      "legenda_post": "R$ 12.000 à vista ou em até 12 x de R$ 1.000 no cartão, com três anos de acesso ao Step 1 e ao Step 2 CK: Anki completo, apostila, aulas, mentoria com médicos que atuam nos EUA, plano individual e guia ECFMG. Se em três anos faltar aprovação, devolvemos o valor integral pago ao curso, desde que você tenha assistido a 80% das aulas e feito duas autoavaliações NBME por Step que faltar. Taxas oficiais e bancos de questões ficam à parte. Termo completo no site. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #Step2CK #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "Turma fundadora: R$ 12.000 à vista ou em até 12 vezes de R$ 1.000 no cartão; 3 anos de acesso; Step 1 e Step 2 CK; Anki completo, apostila pelo Content Outline, aulas, mentoria em grupo, análise das autoavaliações NBME, plano individual e guia ECFMG; bancos de questões, NBME, OET e taxas oficiais à parte; ERAS e estágio fora do pacote",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Reembolso de 100% do valor pago ao curso se, 3 anos após a matrícula, faltar Pass no Step 1 ou a nota mínima no Step 2 CK, com pelo menos 80% das aulas e duas autoavaliações NBME por Step que faltar; não exige tentativa; agendamento livre; não cobre Match, visto, licença nem taxas oficiais; 7 dias de arrependimento pelo CDC",
+          "fonte": "Termo da garantia, https://drgetulio.github.io/road-to-america/garantia.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-06",
+      "versao": 2,
+      "titulo": "O Step 1 não tem mais nota",
+      "angulo": "Objeção: com o Step 1 Pass/Fail dá para estudar menos.",
+      "framework": "Brunson: falsa crença de veículo (P/F = prova fácil) + Hormozi: gancho de mudança de regra e custo da tentativa perdida.",
+      "gancho_0a3s": "Step 1 sem nota. E agora?",
+      "virada_s": 24,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Step 1: *sem nota*",
+          "narracao": "Desde janeiro de 2022, o Step 1 não mostra mais nota."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Pass* ou *Fail*",
+          "narracao": "Só aprovado ou reprovado."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Desde *26/01/2022*",
+          "narracao": "Vale desde 26 de janeiro de 2022."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Então dá para *relaxar*?",
+          "narracao": "Então dá para relaxar no Step 1?"
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Cada reprovação *gasta tentativa*",
+          "narracao": "Porque cada reprovação gasta uma tentativa."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 16.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*4* tentativas na vida",
+          "narracao": "Cada Step aceita no máximo quatro tentativas na vida."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Incompletas *também contam*",
+          "narracao": "E tentativas incompletas também contam."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A meta: passar *com folga*",
+          "narracao": "A meta é passar com folga."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E a nota que *pesa*?",
+          "narracao": "E a nota que pesa no Match?"
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 27.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Foi para o *Step 2 CK*",
+          "narracao": "Ela foi para o Step 2 CK."
+        },
+        {
+          "inicio_s": 27.0,
+          "fim_s": 29.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Step 1 é a *base* do CK",
+          "narracao": "E o Step 1 é a base dele."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 03: aprovação no *Step 1*",
+          "narracao": "No plano, a EXIT 03 é passar no Step 1."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 35.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Simulados com *meta definida*",
+          "narracao": "Com simulados e meta definida no início."
+        },
+        {
+          "inicio_s": 35.0,
+          "fim_s": 37.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Agende quando a nota *sobra*",
+          "narracao": "Agende quando a nota estimada passar com folga."
+        },
+        {
+          "inicio_s": 37.5,
+          "fim_s": 40.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A data é *sua*",
+          "narracao": "Mas a data é sempre sua."
+        },
+        {
+          "inicio_s": 40.0,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Treino no *formato 2026*",
+          "narracao": "No formato de blocos de trinta minutos."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Simulado de *30 minutos* grátis",
+          "narracao": "Link na bio: simulado de trinta minutos, grátis."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "contador",
+          "texto_tela": "Descubra seu *ponto de partida*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para o simulado de 30 minutos grátis.",
+      "dependencias": [
+        "Publicar o simulado gratuito de 30 minutos e colocar o link na bio antes de postar."
+      ],
+      "legenda_post": "Desde 26/01/2022 o Step 1 é só Pass/Fail, e a nota que pesa no Match passou a ser a do Step 2 CK. Isso não deixa a prova mais fácil: cada Step aceita no máximo quatro tentativas na vida, e as incompletas contam. A meta é passar com folga, com simulados e meta definida. Teste seu ponto de partida no simulado de 30 minutos grátis, link na bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #PassFail #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "Step 1 com resultado apenas Pass/Fail desde 26/01/2022",
+          "fonte": "USMLE, https://www.usmle.org/step-1-passfail-score-reporting-implementation-date"
+        },
+        {
+          "fato": "No máximo 4 tentativas por Step ao longo da vida; tentativas incompletas também contam",
+          "fonte": "USMLE, https://www.usmle.org/attemptlimit.html"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Desde maio de 2026, Step 1 e Step 2 CK usam blocos de 30 minutos",
+          "fonte": "USMLE, https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026"
+        }
+      ]
+    },
+    {
+      "id": "reel-07",
+      "versao": 2,
+      "titulo": "218 passa. 248 é a mediana.",
+      "angulo": "Virada de regra: o Step 2 CK agora é o filtro.",
+      "framework": "Hormozi: gancho numérico de contraste + meta clara; Brunson: Epiphany Bridge curta (a nota mínima não é a meta).",
+      "gancho_0a3s": "218 passa. 248 é a mediana.",
+      "virada_s": 24,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*218* passa",
+          "narracao": "Duzentos e dezoito: a mínima para passar no Step 2 CK."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*248*: mediana dos IMGs",
+          "narracao": "Duzentos e quarenta e oito: a mediana dos IMGs."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Viu a *diferença*?",
+          "narracao": "Viu a distância?"
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "218 desde *01/07/2025*",
+          "narracao": "A mínima de 218 vale desde julho de 2025."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "248: IMGs não americanos, *Match 2026*",
+          "narracao": "IMGs não americanos que entraram na especialidade desejada, em 2026."
+        },
+        {
+          "inicio_s": 13.5,
+          "fim_s": 16.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Fonte: *NRMP*",
+          "narracao": "Dado do NRMP."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Step 1 virou *Pass/Fail*",
+          "narracao": "Com o Step 1 em Pass/Fail,"
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A nota que pesa: *Step 2 CK*",
+          "narracao": "a nota que pesa é a do Step 2 CK."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Passar *pode não bastar*",
+          "narracao": "Então só passar pode não bastar."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Qual é a *sua* meta?",
+          "narracao": "Qual nota você precisa?"
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Depende da *especialidade*",
+          "narracao": "Depende da especialidade."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "E do *ano de formatura*",
+          "narracao": "E do seu ano de formatura."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.5,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 04: meta no *diagnóstico*",
+          "narracao": "No plano, essa meta sai do diagnóstico."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Leitura das *NBME* com mentor",
+          "narracao": "As autoavaliações NBME são lidas com o mentor."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Para decidir *a hora* de agendar",
+          "narracao": "Para decidir a hora de agendar."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Treine para *passar com folga*",
+          "narracao": "Treine para passar com folga."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Simulado de *30 minutos* grátis",
+          "narracao": "Link na bio: simulado de trinta minutos, grátis."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "contador",
+          "texto_tela": "Descubra seu *ponto de partida*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para o simulado de 30 minutos grátis.",
+      "dependencias": [
+        "Publicar o simulado gratuito de 30 minutos e colocar o link na bio antes de postar."
+      ],
+      "legenda_post": "A nota mínima do Step 2 CK é 218 desde julho de 2025. A mediana dos IMGs não americanos que entraram na especialidade desejada no Match 2026 foi 248 (NRMP, Charting Outcomes). Com o Step 1 em Pass/Fail, a meta de nota precisa ser definida pela especialidade e pelo ano de formatura. Teste seu ponto de partida no simulado de 30 minutos grátis, link na bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step2CK #Match2026 #ResidenciaMedica #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Nota mínima de aprovação no Step 2 CK é 218 para provas a partir de 01/07/2025",
+          "fonte": "USMLE, https://www.usmle.org/scores-transcripts/examination-results-and-scoring"
+        },
+        {
+          "fato": "Mediana de 248 no Step 2 CK entre IMGs não americanos que entraram na especialidade desejada no Match 2026",
+          "fonte": "NRMP, Charting Outcomes 2026, https://www.nrmp.org/match-data/charting-outcomes-characteristics-of-non-u-s-citizen-international-medical-students-graduates-who-matched-to-their-preferred-specialty-2026-main-residency-match/"
+        },
+        {
+          "fato": "Step 1 com resultado apenas Pass/Fail desde 26/01/2022",
+          "fonte": "USMLE, https://www.usmle.org/step-1-passfail-score-reporting-implementation-date"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-08",
+      "versao": 2,
+      "titulo": "Quanto custa o USMLE sem curso",
+      "angulo": "Objeção: vou sozinho, sai mais barato.",
+      "framework": "Hormozi: ancoragem de custo real e custo do erro (tentativas); Brunson: falsa crença de veículo (estudar sozinho custa só o banco de questões).",
+      "gancho_0a3s": "USMLE sem curso: quanto custa?",
+      "virada_s": 28.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "USMLE *sem curso*: quanto custa?",
+          "narracao": "Quanto custa o caminho do USMLE sem curso nenhum?"
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Só as *taxas oficiais*",
+          "narracao": "Vamos só às taxas oficiais de 2026."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Step 1: *US$ 695 + 210*",
+          "narracao": "Step 1: 695 dólares, mais a taxa regional."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Step 2 CK: *US$ 695 + 235*",
+          "narracao": "Step 2 CK: o mesmo, mais 235."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "ECFMG: *US$ 580*",
+          "narracao": "Inscrição na certificação ECFMG: 580."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "OET Medicine: *cerca de AU$ 587*",
+          "narracao": "OET Medicine: cerca de 587 dólares australianos."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "+ conta, diploma, *Pathway*",
+          "narracao": "Mais conta MyIntealth, verificação do diploma e Pathway."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 21.0,
+          "tipo_visual": "contador",
+          "texto_tela": "Total: *US$ 3.000 a 4.000*",
+          "narracao": "Total oficial: entre três e quatro mil dólares."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 23.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E nada de *estudo* ainda",
+          "narracao": "E isso antes de estudar."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "UWorld: *cerca de US$ 450*",
+          "narracao": "Um banco como o UWorld: cerca de 450 dólares."
+        },
+        {
+          "inicio_s": 26.0,
+          "fim_s": 28.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "NBME: *cerca de US$ 62* cada",
+          "narracao": "Autoavaliação NBME, cerca de 62 cada."
+        },
+        {
+          "inicio_s": 28.5,
+          "fim_s": 31.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Isso se paga *com ou sem* curso",
+          "narracao": "Tudo isso você paga com ou sem curso."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O caro é *errar a ordem*",
+          "narracao": "Caro mesmo é errar a ordem e gastar tentativa."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 37.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*4 tentativas*, no máximo",
+          "narracao": "Cada Step aceita no máximo quatro tentativas."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O cronograma diz *quando pagar*",
+          "narracao": "No nosso plano, o cronograma diz quando pagar cada taxa."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "globo_rota",
+          "texto_tela": "Plano + mentor: *a ordem certa*",
+          "narracao": "E o mentor ajuda a pôr cada etapa na ordem."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *TAXAS*",
+          "narracao": "Comente TAXAS e eu mando a lista com os links oficiais."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Lista com *links oficiais*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra TAXAS.",
+      "entrega_cta": "Resposta automática no direct com a lista de taxas e os links do USMLE, do ECFMG e do OET.",
+      "legenda_post": "Taxas oficiais de 2026: Step 1 US$ 695 + 210 de taxa regional; Step 2 CK US$ 695 + 235; ECFMG US$ 580; OET Medicine cerca de AU$ 587. Com conta MyIntealth, diploma e Pathway, o total oficial fica entre US$ 3.000 e 4.000. Banco de questões e NBME vêm à parte. Tudo isso se paga com ou sem curso. Comente TAXAS e receba os links oficiais. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #ECFMG #MedicinaNosEUA #Step1 #Step2CK",
+      "fatos_usados": [
+        {
+          "fato": "Taxas oficiais 2026: Step 1 US$ 695 + US$ 210 de taxa regional fora dos EUA; Step 2 CK US$ 695 + US$ 235; inscrição ECFMG US$ 580; OET Medicine cerca de AU$ 587; total oficial entre US$ 3.000 e 4.000",
+          "fonte": "USMLE, https://www.usmle.org/apply-exams; ECFMG, https://www.ecfmg.org/news/2026/03/19/fee-increases-beginning-april-1-2026/"
+        },
+        {
+          "fato": "Bancos comerciais como o UWorld a partir de cerca de US$ 450 e autoavaliações NBME cerca de US$ 62 cada, comprados à parte",
+          "fonte": "Levantamento de preços públicos em 27/10/2026 publicado no site, https://drgetulio.github.io/road-to-america/ e https://drgetulio.github.io/road-to-america/garantia.html"
+        },
+        {
+          "fato": "No máximo 4 tentativas por Step ao longo da vida; tentativas incompletas também contam",
+          "fonte": "USMLE, https://www.usmle.org/attemptlimit.html"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-09",
+      "versao": 1,
+      "titulo": "Seus primeiros 30 dias",
+      "angulo": "Primeiros 30 dias: o que fazer antes de gastar com a prova.",
+      "framework": "Hormozi $100M Leads: conteúdo de valor gratuito (dar o passo a passo) + Brunson: Hook-Story-Offer com lista de ação.",
+      "gancho_0a3s": "Não compre nada antes disto.",
+      "virada_s": 28,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Não compre *nada* antes disto",
+          "narracao": "Antes de comprar qualquer coisa para o USMLE, faça isto."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Seus primeiros *30 dias*",
+          "narracao": "Os seus primeiros trinta dias."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Passo 1: *conferir a escola*",
+          "narracao": "Um: confira a sua escola no World Directory."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "*Sponsor Note* + seu ano",
+          "narracao": "Sponsor Note do ECFMG e o seu ano de formatura."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Passo 2: *contar suas horas*",
+          "narracao": "Dois: conte as horas reais que sobram na semana."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Com a escala *na mão*",
+          "narracao": "Com a escala de plantão na mão."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "contador",
+          "texto_tela": "Referência: *12 h*/semana",
+          "narracao": "A nossa referência mínima é de doze horas por semana."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Passo 3: *Anki diário*",
+          "narracao": "Três: comece o Anki todos os dias."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.0,
+          "tipo_visual": "contador",
+          "texto_tela": "*30 a 40 min* por dia",
+          "narracao": "Trinta a quarenta minutos."
+        },
+        {
+          "inicio_s": 23.0,
+          "fim_s": 25.5,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Passo 4: *teste o inglês*",
+          "narracao": "Quatro: teste o seu inglês lendo questões."
+        },
+        {
+          "inicio_s": 25.5,
+          "fim_s": 28.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Leitura vem *antes* da fala",
+          "narracao": "A prova é de leitura. A fala vem depois, no OET."
+        },
+        {
+          "inicio_s": 28.0,
+          "fim_s": 31.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "Passo 5: *não agende* ainda",
+          "narracao": "Cinco, o mais importante: não agende a prova ainda."
+        },
+        {
+          "inicio_s": 31.0,
+          "fim_s": 34.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*4 tentativas*, no máximo",
+          "narracao": "Cada Step aceita no máximo quatro tentativas na vida."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Agende quando os simulados *mostrarem folga*",
+          "narracao": "Agende quando os simulados mostrarem folga."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Nosso diagnóstico faz *isso*",
+          "narracao": "É isso que o nosso diagnóstico faz."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Conhecimento, inglês e *horas reais*",
+          "narracao": "Mede conhecimento, inglês e horas reais."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *ROTA*",
+          "narracao": "Comente ROTA e eu mando este checklist com o link da verificação."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Checklist *no direct*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra ROTA.",
+      "entrega_cta": "Resposta automática no direct com os cinco passos em texto, o link de verificar.html e o da pré-inscrição.",
+      "legenda_post": "Primeiros 30 dias antes de gastar com o USMLE: 1) confira a Sponsor Note da sua escola no World Directory; 2) conte as horas reais que sobram com a sua escala; 3) comece o Anki, 30 a 40 min por dia; 4) teste seu inglês lendo questões; 5) não agende a prova ainda, porque cada Step aceita no máximo quatro tentativas. Comente ROTA e receba o checklist. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #MedicinaNosEUA #Anki #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Para o USMLE, a escola de fora dos EUA precisa estar no World Directory com ECFMG Sponsor Note e com o ano de formatura em Graduation Years (Current para quem cursa); sem a nota, alunos e formados não são elegíveis",
+          "fonte": "USMLE Bulletin, Eligibility, https://www.usmle.org/bulletin-information/eligibility; ECFMG Sponsor Notes, https://www.ecfmg.org/resources/sponsor-notes.html; WDOMS, https://search.wdoms.org/"
+        },
+        {
+          "fato": "Plano com carga mínima de cerca de 12 h por semana (30 a 40 min de Anki por dia, aulas gravadas e 2 ou 3 blocos de questões por folga); 15 h para quem está há mais de 5 anos longe das ciências básicas; planejamento de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK; quem tem menos de 12 h é avisado na pré-inscrição",
+          "fonte": "Road to America, Dúvidas, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "No máximo 4 tentativas por Step ao longo da vida; tentativas incompletas também contam",
+          "fonte": "USMLE, https://www.usmle.org/attemptlimit.html"
+        },
+        {
+          "fato": "Etapas do plano: diagnóstico (conhecimento, inglês e horas), base do Step 1, aprovação no Step 1 com simulados e meta definida, clínica do Step 2 CK com meta por especialidade e ano de formatura, certificação ECFMG; o mentor recomenda agendar quando a nota estimada passa com folga, mas a data é do aluno",
+          "fonte": "Road to America, Método, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "O ECFMG exige OET Medicine com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação",
+          "fonte": "ECFMG Pathways FAQ, https://www.ecfmg.org/certification-pathways/faqs.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-10",
+      "versao": 2,
+      "titulo": "Passou no USMLE? Ainda falta uma sigla",
+      "angulo": "Didático: o que é a certificação ECFMG e por que ela fecha o caminho.",
+      "framework": "Brunson: falsa crença de veículo (aprovação no USMLE basta) + Hormozi: mapa do caminho completo que aumenta a probabilidade percebida.",
+      "gancho_0a3s": "Passou no USMLE? Ainda falta.",
+      "virada_s": 23.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Passou no USMLE? *Ainda falta*",
+          "narracao": "Passou no Step 1 e no CK? Ainda falta uma sigla."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Certificação *ECFMG*",
+          "narracao": "A certificação ECFMG."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "É ela que os *programas exigem*",
+          "narracao": "É o certificado que os programas exigem."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Step 1 *aprovado*",
+          "narracao": "Step 1 aprovado."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Step 2 CK *aprovado*",
+          "narracao": "Step 2 CK aprovado."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Diploma *verificado*",
+          "narracao": "Diploma verificado."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "OET Medicine *aprovado*",
+          "narracao": "OET Medicine, com as notas mínimas do ECFMG."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "*Pathway* aprovado",
+          "narracao": "E um Pathway aprovado."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Pathway: requisito de *habilidades clínicas*",
+          "narracao": "O Pathway é a via para cumprir o requisito de habilidades clínicas."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "CRM ativo: em geral *Pathway 1*",
+          "narracao": "Com CRM ativo, a maioria usa o Pathway 1."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "E o *visto*?",
+          "narracao": "E o visto?"
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 32.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "J-1 patrocinado *pelo ECFMG*",
+          "narracao": "A maioria usa o J-1, patrocinado pelo ECFMG."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Desde 2026: inscrição *pela FSMB*",
+          "narracao": "Desde 2026, a inscrição no USMLE é pela FSMB."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A certificação *segue no ECFMG*",
+          "narracao": "A certificação continua com o ECFMG."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "globo_rota",
+          "texto_tela": "EXIT 05: *certificação ECFMG*",
+          "narracao": "No plano, a certificação é a última saída."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Guia *passo a passo* incluso",
+          "narracao": "E o guia de documentos, OET e Pathway vem no curso."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *ECFMG*",
+          "narracao": "Comente ECFMG e eu mando os links oficiais dos Pathways."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Links *oficiais* no direct"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra ECFMG.",
+      "entrega_cta": "Resposta automática no direct com os links de certificação, Pathways e OET do ECFMG.",
+      "legenda_post": "A certificação ECFMG reúne Step 1, Step 2 CK, diploma verificado, OET Medicine e um Pathway aprovado. Com CRM ativo, a maioria usa o Pathway 1. O J-1, visto da maioria dos residentes estrangeiros, é patrocinado pelo próprio ECFMG. Desde janeiro de 2026 a inscrição no USMLE é feita pela FSMB. Comente ECFMG e receba os links oficiais. Dr. Getúlio Morato Filho, CRM-DF 13610. #ECFMG #USMLE #MedicinaNosEUA #ResidenciaMedica #IMG",
+      "fatos_usados": [
+        {
+          "fato": "O ECFMG exige OET Medicine com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação",
+          "fonte": "ECFMG Pathways FAQ, https://www.ecfmg.org/certification-pathways/faqs.html"
+        },
+        {
+          "fato": "Quem tem licença ativa para exercer medicina no país de formação (CRM) usa, na maioria dos casos, o Pathway 1",
+          "fonte": "ECFMG Pathways, https://www.ecfmg.org/certification-pathways/"
+        },
+        {
+          "fato": "A maioria dos residentes estrangeiros usa o J-1, visto de intercâmbio patrocinado pelo ECFMG",
+          "fonte": "ECFMG EVSP, https://www.ecfmg.org/evsp/"
+        },
+        {
+          "fato": "Desde janeiro de 2026, a inscrição no USMLE de estudantes e formados de fora dos EUA é feita pela FSMB; a certificação segue com o ECFMG",
+          "fonte": "ECFMG, https://www.ecfmg.org/news/2026/01/12/phase-one-of-usmle-service-transition-is-complete-all-usmle-step-exam-services-for-imgs-now-managed-by-fsmb/"
+        },
+        {
+          "fato": "Turma fundadora: R$ 12.000 à vista ou em até 12 vezes de R$ 1.000 no cartão; 3 anos de acesso; Step 1 e Step 2 CK; Anki completo, apostila pelo Content Outline, aulas, mentoria em grupo, análise das autoavaliações NBME, plano individual e guia ECFMG; bancos de questões, NBME, OET e taxas oficiais à parte; ERAS e estágio fora do pacote",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-11",
+      "versao": 2,
+      "titulo": "56,4%",
+      "angulo": "Match em números: chances reais de IMGs não americanos.",
+      "framework": "Hormozi: prova verificável e expectativa honesta; Brunson: falsa crença externa (Match é loteria) substituída por meta planejável.",
+      "gancho_0a3s": "56,4%. Guarde esse número.",
+      "virada_s": 21,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*56,4%*. Guarde esse número.",
+          "narracao": "Cinquenta e seis vírgula quatro por cento. Guarde esse número."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "IMGs não americanos, *Match 2026*",
+          "narracao": "IMGs não americanos com vaga no Match 2026."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Vaga de *PGY-1*",
+          "narracao": "Vaga de primeiro ano, o PGY-1."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Com visto: *54,4%*",
+          "narracao": "Entre os que precisavam de visto, 54,4%."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Fonte: *NRMP 2026*",
+          "narracao": "Dados do NRMP."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Mais da *metade* entrou",
+          "narracao": "Mais da metade entrou."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Quase metade *ficou fora*",
+          "narracao": "E quase metade ficou de fora."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Um dado *ajuda a entender*",
+          "narracao": "Um dado ajuda a entender."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Mediana no Step 2 CK: *248*",
+          "narracao": "Na especialidade desejada, a mediana no Step 2 CK foi 248."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Mínima para passar: *218*",
+          "narracao": "A mínima para passar é 218."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Distância de *30 pontos*",
+          "narracao": "São trinta pontos de distância."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Dá para *planejar* essa nota",
+          "narracao": "É uma meta que dá para planejar."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "mapa_eua",
+          "texto_tela": "*27 estados* com via alternativa",
+          "narracao": "E 27 estados já aprovaram vias alternativas de licença."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Quase todas *exigem ECFMG*",
+          "narracao": "Quase todas exigem a certificação ECFMG."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Os Steps *continuam* no caminho",
+          "narracao": "Ou seja, os Steps continuam no caminho."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Números com *fonte*, sempre",
+          "narracao": "Aqui, todo número vem com fonte."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *MATCH*",
+          "narracao": "Comente MATCH e eu mando os relatórios oficiais do NRMP."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Relatórios *oficiais* no direct"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra MATCH.",
+      "entrega_cta": "Resposta automática no direct com os links do relatório Main Match 2026 e do Charting Outcomes 2026 do NRMP.",
+      "legenda_post": "No Match 2026, 56,4% dos IMGs não americanos conseguiram vaga de PGY-1; entre os que precisavam de visto, 54,4% (NRMP). Entre os que entraram na especialidade desejada, a mediana no Step 2 CK foi 248, contra a mínima de 218. E 27 estados já aprovaram vias alternativas de licença, quase todas exigindo ECFMG (WES, 2026). Comente MATCH e receba os relatórios. Dr. Getúlio Morato Filho, CRM-DF 13610. #Match2026 #USMLE #Step2CK #IMG #ResidenciaMedica",
+      "fatos_usados": [
+        {
+          "fato": "56,4% dos IMGs não americanos conseguiram vaga de PGY-1 no Match 2026; 54,4% entre os que precisavam de visto",
+          "fonte": "NRMP, Main Residency Match Results and Data 2026, https://www.nrmp.org/wp-content/uploads/2026/05/Main_Match_Results_and_Data-2026.pdf"
+        },
+        {
+          "fato": "Mediana de 248 no Step 2 CK entre IMGs não americanos que entraram na especialidade desejada no Match 2026",
+          "fonte": "NRMP, Charting Outcomes 2026, https://www.nrmp.org/match-data/charting-outcomes-characteristics-of-non-u-s-citizen-international-medical-students-graduates-who-matched-to-their-preferred-specialty-2026-main-residency-match/"
+        },
+        {
+          "fato": "Nota mínima de aprovação no Step 2 CK é 218 para provas a partir de 01/07/2025",
+          "fonte": "USMLE, https://www.usmle.org/scores-transcripts/examination-results-and-scoring"
+        },
+        {
+          "fato": "27 estados aprovaram leis de licenciamento alternativo para médicos formados no exterior até maio de 2026; quase todas exigem certificação ECFMG e muitas seguem em regulamentação",
+          "fonte": "WES, maio de 2026, https://www.wes.org/resource-library/blog/welcoming-communities-in-action/27-states-expand-pathways-for-internationally-trained-physicians-in-2026/"
+        }
+      ]
+    },
+    {
+      "id": "reel-12",
+      "versao": 3,
+      "titulo": "O USMLE não pergunta o ranking",
+      "angulo": "Mito: só aluno de faculdade top passa no USMLE.",
+      "framework": "Brunson: quebra de falsa crença interna (minha escola não é boa o bastante) com prova documental; Hormozi: foco no que o candidato controla e próximo passo de baixo atrito.",
+      "gancho_0a3s": "O USMLE não pergunta o ranking da faculdade.",
+      "virada_s": 18.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "USMLE não pergunta *ranking da faculdade*",
+          "narracao": "O USMLE não pergunta o ranking da sua faculdade."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "USMLE Bulletin: *Eligibility*",
+          "narracao": "Veja no Bulletin oficial, na parte de elegibilidade."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A regra cabe *em uma linha*",
+          "narracao": "Para escola fora dos EUA, a regra é curta."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 11.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Escola que *atende ao ECFMG* no WDOMS",
+          "narracao": "Escola que atende às exigências do ECFMG segundo o World Directory."
+        },
+        {
+          "inicio_s": 11.0,
+          "fim_s": 13.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Sponsor Note + *seu ano*",
+          "narracao": "Sponsor Note e o seu ano no intervalo."
+        },
+        {
+          "inicio_s": 13.5,
+          "fim_s": 16.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Nada* sobre ranking",
+          "narracao": "Nada sobre ranking ou fama da escola."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "SAEME? Também *não impede*",
+          "narracao": "E a falta de acreditação SAEME também não impede."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Mesma mínima: *218*",
+          "narracao": "No Step 2 CK, a mínima é 218 para todos."
+        },
+        {
+          "inicio_s": 21.5,
+          "fim_s": 24.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Mesmos blocos de *30 minutos*",
+          "narracao": "Mesmo formato, com blocos de trinta minutos."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 27.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Então o que está *na sua mão*?",
+          "narracao": "Então o que está na sua mão?"
+        },
+        {
+          "inicio_s": 27.0,
+          "fim_s": 29.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "*Horas* reais por semana",
+          "narracao": "Horas reais de estudo por semana."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "*Revisão* todo dia",
+          "narracao": "Revisão todos os dias."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Agendar *com folga*",
+          "narracao": "E agendar só quando os simulados mostrarem folga."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Nosso mínimo: *12 h*/semana",
+          "narracao": "No plano, o mínimo é doze horas por semana."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 40.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Primeiro passo: *sua escola*",
+          "narracao": "Mas o primeiro passo é conferir a sua escola."
+        },
+        {
+          "inicio_s": 40.0,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Leva *poucos minutos*",
+          "narracao": "Leva poucos minutos."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 01: *verificar faculdade*",
+          "narracao": "Link na bio. Verifique a sua faculdade, de graça."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Resultado em *poucos minutos*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para verificar a faculdade (verificar.html).",
+      "legenda_post": "As regras de elegibilidade do USMLE não falam em ranking. Para escolas fora dos EUA, a regra é atender às exigências do ECFMG segundo o World Directory: Sponsor Note e o seu ano de formatura no intervalo. A nota mínima do Step 2 CK é 218 para todos. O que está na sua mão são as horas, a revisão diária e a hora de agendar. Verifique sua escola pelo link na bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #ECFMG #MedicinaNosEUA #FaculdadeDeMedicina #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Para o USMLE, a escola de fora dos EUA precisa estar no World Directory com ECFMG Sponsor Note e com o ano de formatura em Graduation Years (Current para quem cursa); sem a nota, alunos e formados não são elegíveis",
+          "fonte": "USMLE Bulletin, Eligibility, https://www.usmle.org/bulletin-information/eligibility; ECFMG Sponsor Notes, https://www.ecfmg.org/resources/sponsor-notes.html; WDOMS, https://search.wdoms.org/"
+        },
+        {
+          "fato": "A Recognized Accreditation Policy da Intealth vale desde novembro de 2024 apenas como medida informativa; a acreditação pesa só no Pathway 3",
+          "fonte": "Intealth, https://www.intealth.org/news/2024/11/20/intealth-implements-recognized-accreditation-policy/; ECFMG Pathways, https://www.ecfmg.org/certification-pathways/"
+        },
+        {
+          "fato": "Nota mínima de aprovação no Step 2 CK é 218 para provas a partir de 01/07/2025",
+          "fonte": "USMLE, https://www.usmle.org/scores-transcripts/examination-results-and-scoring"
+        },
+        {
+          "fato": "Desde maio de 2026, Step 1 e Step 2 CK usam blocos de 30 minutos",
+          "fonte": "USMLE, https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026"
+        },
+        {
+          "fato": "Plano com carga mínima de cerca de 12 h por semana (30 a 40 min de Anki por dia, aulas gravadas e 2 ou 3 blocos de questões por folga); 15 h para quem está há mais de 5 anos longe das ciências básicas; planejamento de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK; quem tem menos de 12 h é avisado na pré-inscrição",
+          "fonte": "Road to America, Dúvidas, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Verificação gratuita da escola no site, com conferência guiada no WDOMS e revisão por mentor em caso de dúvida",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/verificar.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-13",
+      "versao": 2,
+      "titulo": "O risco é nosso",
+      "angulo": "Garantia: aprovação em 3 anos ou reembolso integral, com as condições à vista.",
+      "framework": "Hormozi: remoção de risco (garantia condicional explícita) e honestidade como prova; Brunson: falsa crença externa (e se eu perder o dinheiro).",
+      "gancho_0a3s": "3 anos: aprovação ou reembolso, com condições.",
+      "virada_s": 24,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "3 anos: aprovação ou *reembolso, com condições*",
+          "narracao": "Aprovação em três anos ou reembolso integral, com condições."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Vou mostrar *todas*",
+          "narracao": "Vou mostrar todas as condições."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Por que oferecer *isso*?",
+          "narracao": "Por que uma turma nova oferece isso?"
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 11.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Ainda *não temos* taxa de aprovação",
+          "narracao": "Porque é a primeira turma. Ainda não temos taxa de aprovação para mostrar."
+        },
+        {
+          "inicio_s": 11.0,
+          "fim_s": 13.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "A garantia cobre *esse risco*",
+          "narracao": "A garantia cobre esse risco."
+        },
+        {
+          "inicio_s": 13.5,
+          "fim_s": 16.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Prazo: *3 anos* da matrícula",
+          "narracao": "Prazo: três anos a partir da matrícula."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Aprovação: *Pass* e nota mínima",
+          "narracao": "Pass no Step 1 e a mínima no Step 2 CK."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "*80%* das aulas assistidas",
+          "narracao": "Você assiste a pelo menos oitenta por cento das aulas."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "*2 NBME* por Step que faltar",
+          "narracao": "E duas NBME oficiais por Step que faltar, compradas à parte."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 27.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Sem* tentativa obrigatória",
+          "narracao": "Detalhe: não é preciso ter feito a prova para pedir."
+        },
+        {
+          "inicio_s": 27.0,
+          "fim_s": 29.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Você escolhe *a data*",
+          "narracao": "A data da prova é sua. O mentor orienta."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*100%* do valor pago",
+          "narracao": "Reembolso de cem por cento do valor pago ao curso."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Não cobre *Match nem visto*",
+          "narracao": "O que não entra: Match, visto e licença."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Nem *taxas oficiais*",
+          "narracao": "Nem taxas da FSMB, do ECFMG, do NBME e do OET."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "+ *7 dias* de arrependimento",
+          "narracao": "E os sete dias de arrependimento do CDC valem."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Termo *completo* no site",
+          "narracao": "O termo completo está no site."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: *pré-inscrição gratuita*",
+          "narracao": "Link na bio: pré-inscrição gratuita da turma fundadora."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Turma *fundadora*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para a pré-inscrição gratuita (o termo da garantia fica no mesmo site).",
+      "legenda_post": "Garantia Road to America: se, três anos após a matrícula, ainda faltar Pass no Step 1 ou a nota mínima no Step 2 CK, devolvemos 100% do valor pago ao curso, desde que você tenha assistido a 80% das aulas e feito duas autoavaliações NBME por Step que faltar, com os resultados lançados no painel. Não exige tentativa. Não cobre Match, visto, licença nem taxas oficiais. Termo completo no site. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #Step2CK #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "Reembolso de 100% do valor pago ao curso se, 3 anos após a matrícula, faltar Pass no Step 1 ou a nota mínima no Step 2 CK, com pelo menos 80% das aulas e duas autoavaliações NBME por Step que faltar; não exige tentativa; agendamento livre; não cobre Match, visto, licença nem taxas oficiais; 7 dias de arrependimento pelo CDC",
+          "fonte": "Termo da garantia, https://drgetulio.github.io/road-to-america/garantia.html"
+        },
+        {
+          "fato": "Primeira turma, ainda sem taxa de aprovação própria nem depoimentos; pré-inscrição gratuita, sem obrigação de matrícula, com grupo da turma, conferência da escola por mentor, estimativa de horas e condições antes da abertura geral; leva menos de um minuto e um mentor responde em até um dia útil",
+          "fonte": "Road to America, Pré-inscrição, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-14",
+      "versao": 2,
+      "titulo": "Quem te ensina já fez a prova?",
+      "angulo": "Como funciona a mentoria com quem passou.",
+      "framework": "Hormozi: aumento da probabilidade percebida (quem ensina já chegou lá); Brunson: Epiphany Bridge do veículo (aprender com quem fez o caminho).",
+      "gancho_0a3s": "Quem te ensina já fez a prova?",
+      "virada_s": 28.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Quem te ensina *já fez* a prova?",
+          "narracao": "Quem te ensina já fez a prova?"
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Pergunte *antes* de pagar",
+          "narracao": "Pergunte isso antes de pagar qualquer curso."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Formados *no Brasil*",
+          "narracao": "Nossos mentores se formaram em medicina no Brasil."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Step 1: *Pass*",
+          "narracao": "Passaram no Step 1."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Step 2 CK: *aprovado*",
+          "narracao": "Passaram no Step 2 CK."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Certificação *ECFMG*",
+          "narracao": "Têm certificação ECFMG."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.5,
+          "tipo_visual": "mapa_eua",
+          "texto_tela": "Hoje: *residência ou assistente* nos EUA",
+          "narracao": "E hoje fazem residência ou já trabalham como médicos assistentes nos EUA."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O que eles *fazem* aqui?",
+          "narracao": "O que eles fazem no curso?"
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 23.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Dão as aulas *de conteúdo*",
+          "narracao": "Dão as aulas de conteúdo."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Conduzem a *mentoria em grupo*",
+          "narracao": "Conduzem a mentoria em grupo."
+        },
+        {
+          "inicio_s": 26.0,
+          "fim_s": 28.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Respondem *em português*",
+          "narracao": "Respondem às dúvidas em português."
+        },
+        {
+          "inicio_s": 28.5,
+          "fim_s": 31.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Leem suas *NBME* com você",
+          "narracao": "E leem com você as NBME, para decidir quando agendar."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Ajustam o plano *ao seu desempenho*",
+          "narracao": "Ajustam o plano conforme o seu desempenho."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Cada prova com *quem passou nela*",
+          "narracao": "Cada prova é ensinada por quem passou nela."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Perfis completos *no site*",
+          "narracao": "Os perfis, com formação, notas e atuação, estão no site."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "*Sem cadastro* para ver",
+          "narracao": "Sem precisar de cadastro."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *MENTOR*",
+          "narracao": "Comente MENTOR e eu mando o link dos perfis."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Link dos perfis *no direct*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra MENTOR.",
+      "entrega_cta": "Resposta automática no direct com o link da seção de mentores do site e o da pré-inscrição.",
+      "dependencias": [
+        "Postar só depois que pelo menos dois perfis de mentores estiverem publicados no site, como pede o README; as cenas 'Perfis completos no site' e o CTA dependem disso."
+      ],
+      "legenda_post": "Os mentores da Road to America se formaram no Brasil, passaram no Step 1 e no Step 2 CK, têm certificação ECFMG e hoje fazem residência ou trabalham como assistentes nos EUA. Eles dão as aulas, conduzem a mentoria em grupo e leem com você as autoavaliações NBME. Os perfis completos, com formação, notas e local de atuação, estão no site, sem cadastro. Comente MENTOR e receba o link. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #MentoriaMedica #MedicinaNosEUA #ECFMG",
+      "fatos_usados": [
+        {
+          "fato": "Mentores formados no Brasil, aprovados no Step 1 e no Step 2 CK, com certificação ECFMG, em residência ou atuando como assistentes nos EUA; dão aulas e mentorias em grupo e respondem em português; perfis completos publicados antes da abertura das matrículas, sem cadastro",
+          "fonte": "Road to America, Equipe, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Dr. Getúlio Bernardo Morato Filho, CRM-DF 13610: graduado em Medicina pela UnB em 2004, 15 anos de docência na ESCS e 9 no UniCEUB, mestre em Medicina Tropical (UnB), doutorando em Ciências Médicas (UnB), supervisor de programa de residência médica no HMIB; desenha o método e escolhe os mentores, e as aulas de cada prova ficam com mentores aprovados nela",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/; Currículo Lattes"
+        }
+      ]
+    },
+    {
+      "id": "reel-15",
+      "versao": 3,
+      "titulo": "Anki com FSRS",
+      "angulo": "Método: Anki com FSRS para quem tem semana irregular de plantão.",
+      "framework": "Hormozi: redução de esforço e tempo (revisar só o necessário) + Brunson: novo veículo (agendador por memória) com tutorial de ativação.",
+      "gancho_0a3s": "Revisando cartão que você já sabe?",
+      "virada_s": 21.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Revisando cartão *que já sabe*?",
+          "narracao": "Perdendo tempo revisando cartão que você já sabe?"
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Ligue o *FSRS*",
+          "narracao": "Ligue o FSRS."
+        },
+        {
+          "inicio_s": 5.0,
+          "fim_s": 7.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Nativo no Anki desde *23.10*",
+          "narracao": "É o agendador nativo do Anki desde a versão 23.10."
+        },
+        {
+          "inicio_s": 7.5,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Estima a *chance de lembrar*",
+          "narracao": "Ele estima a chance de lembrar cada cartão, pelo seu histórico."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Você escolhe a *retenção desejada*",
+          "narracao": "Você escolhe a retenção desejada."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 16.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Plantão *atrasou* as revisões?",
+          "narracao": "Plantão de vinte e quatro horas bagunçou a semana?"
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Conta o *tempo real* desde a última",
+          "narracao": "O FSRS considera o tempo real desde a última revisão."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Falta o *baralho certo*",
+          "narracao": "Só falta o baralho certo."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Baralho *completo*: Step 1 + CK",
+          "narracao": "O nosso baralho é completo, do Step 1 ao Step 2 CK."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Por *sistema* e disciplina",
+          "narracao": "Organizado por sistema e disciplina."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Termos em *inglês clínico*",
+          "narracao": "Com os termos em inglês clínico."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "contador",
+          "texto_tela": "*30 a 40 min* por dia",
+          "narracao": "Revisões curtas: trinta a quarenta minutos por dia."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Dá para fazer *em partes*",
+          "narracao": "Dá para dividir em partes ao longo do dia."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Opções do baralho → *FSRS*",
+          "narracao": "Para ativar: opções do baralho, seção FSRS."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Depois, clique em *Otimizar*",
+          "narracao": "Depois clique em otimizar, para usar o seu histórico."
+        },
+        {
+          "inicio_s": 39.0,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Anki + aulas + *questões*",
+          "narracao": "No plano, o Anki anda junto com aulas e questões."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Comente *ANKI*",
+          "narracao": "Comente ANKI e eu mando o passo a passo para ativar o FSRS."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Passo a passo *no direct*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Road to America"
+        }
+      ],
+      "cta": "Comentar a palavra ANKI.",
+      "entrega_cta": "Resposta automática no direct com o passo a passo do manual do Anki para ativar o FSRS e o link da pré-inscrição.",
+      "legenda_post": "O FSRS é o agendador nativo do Anki desde a versão 23.10. Ele estima a chance de você lembrar de cada cartão a partir do seu histórico e considera o tempo real desde a última revisão, o que ajuda em semanas bagunçadas pelo plantão. Nosso baralho cobre Step 1 e Step 2 CK, por sistema e disciplina, em inglês clínico. Comente ANKI e receba o passo a passo. Dr. Getúlio Morato Filho, CRM-DF 13610. #Anki #FSRS #USMLE #Step1 #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "O Anki traz o agendador FSRS como opção nativa desde a versão 23.10, com retenção desejada ajustável e otimização pelo histórico de revisões",
+          "fonte": "Anki Manual, Deck Options, https://docs.ankiweb.net/deck-options.html"
+        },
+        {
+          "fato": "Turma fundadora: R$ 12.000 à vista ou em até 12 vezes de R$ 1.000 no cartão; 3 anos de acesso; Step 1 e Step 2 CK; Anki completo, apostila pelo Content Outline, aulas, mentoria em grupo, análise das autoavaliações NBME, plano individual e guia ECFMG; bancos de questões, NBME, OET e taxas oficiais à parte; ERAS e estágio fora do pacote",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Plano com carga mínima de cerca de 12 h por semana (30 a 40 min de Anki por dia, aulas gravadas e 2 ou 3 blocos de questões por folga); 15 h para quem está há mais de 5 anos longe das ciências básicas; planejamento de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK; quem tem menos de 12 h é avisado na pré-inscrição",
+          "fonte": "Road to America, Dúvidas, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-16",
+      "versao": 3,
+      "titulo": "Um bloco de 30 minutos, grátis",
+      "angulo": "Isca: simulado gratuito de 30 minutos no formato novo da prova.",
+      "framework": "Hormozi $100M Leads: isca de alto valor e baixo atrito, com expectativa honesta; Brunson: falsa crença interna (não sei de onde parto).",
+      "gancho_0a3s": "Um bloco de 30 minutos. Grátis.",
+      "virada_s": 29,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "contador",
+          "texto_tela": "Um bloco de *30 minutos*. Grátis.",
+          "narracao": "Um bloco de trinta minutos. Grátis."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Formato novo: *maio 2026*",
+          "narracao": "É o formato oficial desde maio de 2026."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Seu treino *já está* nesse ritmo?",
+          "narracao": "O seu treino já está nesse ritmo?"
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Montamos um *simulado grátis*",
+          "narracao": "Por isso montamos um simulado grátis."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "*20 questões*, no relógio",
+          "narracao": "Vinte questões, com o relógio correndo."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Questões *em inglês*",
+          "narracao": "Com questões em inglês."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Correção com *explicação*",
+          "narracao": "E correção com explicação no final."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O que você *descobre*?",
+          "narracao": "O que você descobre?"
+        },
+        {
+          "inicio_s": 21.5,
+          "fim_s": 24.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Seu *ritmo de leitura*",
+          "narracao": "O seu ritmo de leitura em inglês."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Onde você *trava*",
+          "narracao": "Onde você trava."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Que *área* revisar primeiro",
+          "narracao": "Que área revisar primeiro."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 32.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Um bloco *não prevê* nota",
+          "narracao": "Uma regra de honestidade: um bloco não prevê a sua nota."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Para isso: *NBME oficial*",
+          "narracao": "Para estimar nota, existem as autoavaliações oficiais do NBME."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Aqui é o *ponto de partida*",
+          "narracao": "Aqui é o ponto de partida."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Sem pagar *nada*",
+          "narracao": "Sem pagar nada."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Faça hoje, *em 30 minutos*",
+          "narracao": "Dá para fazer hoje, em trinta minutos."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Simulado de *30 minutos* grátis",
+          "narracao": "Link na bio: simulado de trinta minutos, grátis."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "contador",
+          "texto_tela": "Descubra seu *ponto de partida*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para o simulado de 30 minutos grátis.",
+      "dependencias": [
+        "Publicar o simulado gratuito de 30 minutos (tarefa do workflow 3) com 20 questões em inglês, correção comentada e relatório por área antes de postar; se o bloco tiver outro número de questões, ajustar a cena '20 questões, no relógio'; se o relatório por área não existir, trocar a cena 'Que área revisar primeiro'."
+      ],
+      "legenda_post": "Desde maio de 2026 o Step 1 e o Step 2 CK usam blocos de 30 minutos. Montamos um simulado grátis com um bloco de 20 questões nesse tempo, em inglês e correção comentada, para você medir o ritmo de leitura e ver onde trava. Um bloco não prevê nota; para isso existem as autoavaliações oficiais do NBME. Link na bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #Step2CK #SimuladoUSMLE #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "Desde maio de 2026, Step 1 e Step 2 CK usam blocos de 30 minutos",
+          "fonte": "USMLE, https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026"
+        },
+        {
+          "fato": "No formato novo, cada bloco de 30 minutos tem no máximo 20 questões (Step 2 CK desde 07/05/2026; Step 1 desde 14/05/2026), cerca de 90 segundos por questão",
+          "fonte": "USMLE, https://www.usmle.org/test-delivery-software-updates-step-2-ck-and-step-1-coming-may-2026; https://www.usmle.org/step-exams/step-1; https://www.usmle.org/step-exams/step-2-ck"
+        }
+      ]
+    },
+    {
+      "id": "reel-17",
+      "versao": 3,
+      "titulo": "Antes de pagar US$ 695, confira isto",
+      "angulo": "Tutorial: verificar a faculdade no WDOMS em poucos minutos, inclusive para quem ainda cursa.",
+      "framework": "Hormozi $100M Leads: dar o passo a passo de graça com ancoragem no custo do erro; Brunson: falsa crença interna (estudante não pode começar).",
+      "gancho_0a3s": "Antes de pagar US$ 695, confira isto.",
+      "virada_s": 23.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Antes de pagar *US$ 695*, confira isto",
+          "narracao": "Antes de pagar a taxa do Step 1, confira isto."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Site: *search.wdoms.org*",
+          "narracao": "Abra o World Directory: search.wdoms.org."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Busque *sua escola*",
+          "narracao": "Busque pelo nome da sua escola."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Aba *Sponsor Notes*",
+          "narracao": "Abra a aba Sponsor Notes."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Nota do *ECFMG* presente?",
+          "narracao": "A nota do ECFMG está lá?"
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Leia *Graduation Years*",
+          "narracao": "Agora leia o campo Graduation Years."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Seu ano *está dentro*?",
+          "narracao": "O seu ano de formatura está dentro do intervalo?"
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Cursos novos: *anos restritos*",
+          "narracao": "Atenção: cursos novos podem ter anos restritos."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Ainda cursando? Procure *Current*",
+          "narracao": "Ainda está na faculdade? O campo deve indicar Current."
+        },
+        {
+          "inicio_s": 23.5,
+          "fim_s": 26.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Estudante *pode* fazer o USMLE",
+          "narracao": "E sim: estudante pode fazer as duas provas antes da formatura."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Com ciclo básico *concluído*",
+          "narracao": "Desde que tenha concluído o ciclo básico."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 32.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Formatura com *os dois Steps* feitos",
+          "narracao": "Dá para chegar à formatura com as duas provas feitas."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Certificado ECFMG: *após o diploma*",
+          "narracao": "O certificado ECFMG sai depois, com o diploma verificado."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Nossa ferramenta *guia* você",
+          "narracao": "No nosso site, uma ferramenta guia esse passo a passo."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Dúvida? Um *mentor* confere",
+          "narracao": "Se restar dúvida, um mentor confere por você."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "*Grátis*, sem compromisso",
+          "narracao": "É gratuito."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT 01: *verificar faculdade*",
+          "narracao": "Link na bio. Verifique a sua faculdade, de graça."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "tela_app",
+          "texto_tela": "Resultado em *poucos minutos*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para verificar a faculdade (verificar.html).",
+      "legenda_post": "Antes de pagar a taxa do Step 1 (US$ 695), confira sua escola no World Directory: aba Sponsor Notes, nota do ECFMG e o seu ano em Graduation Years. Ainda cursando? O campo deve indicar Current, e com o ciclo básico concluído você já pode fazer as duas provas antes da formatura. A ferramenta do link na bio guia a conferência, de graça. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #ECFMG #EstudanteDeMedicina #MedicinaNosEUA #IMG",
+      "fatos_usados": [
+        {
+          "fato": "Taxas oficiais 2026: Step 1 US$ 695 + US$ 210 de taxa regional fora dos EUA; Step 2 CK US$ 695 + US$ 235; inscrição ECFMG US$ 580; OET Medicine cerca de AU$ 587; total oficial entre US$ 3.000 e 4.000",
+          "fonte": "USMLE, https://www.usmle.org/apply-exams; ECFMG, https://www.ecfmg.org/news/2026/03/19/fee-increases-beginning-april-1-2026/"
+        },
+        {
+          "fato": "Para o USMLE, a escola de fora dos EUA precisa estar no World Directory com ECFMG Sponsor Note e com o ano de formatura em Graduation Years (Current para quem cursa); sem a nota, alunos e formados não são elegíveis",
+          "fonte": "USMLE Bulletin, Eligibility, https://www.usmle.org/bulletin-information/eligibility; ECFMG Sponsor Notes, https://www.ecfmg.org/resources/sponsor-notes.html; WDOMS, https://search.wdoms.org/"
+        },
+        {
+          "fato": "Estudantes matriculados em escola com Sponsor Note Current e ciclo básico concluído podem fazer Step 1 e Step 2 CK antes da formatura; o certificado ECFMG sai depois, com o diploma verificado",
+          "fonte": "ECFMG Information Booklet 2026, https://www.ecfmg.org/2026ib/students.html"
+        },
+        {
+          "fato": "Verificação gratuita da escola no site, com conferência guiada no WDOMS e revisão por mentor em caso de dúvida",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/verificar.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-18",
+      "versao": 2,
+      "titulo": "Ensina a prova quem passou nela",
+      "angulo": "História do fundador: por que as aulas ficam com quem passou em cada prova.",
+      "framework": "Brunson: Epiphany Bridge (contexto, pergunta, revelação, nova crença, oferta); Hormozi: autoridade com credenciais verificáveis e honestidade sobre a primeira turma.",
+      "gancho_0a3s": "15 anos ensinando medicina. Aprendi isto.",
+      "virada_s": 24,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "15 anos ensinando medicina. *Aprendi isto.*",
+          "narracao": "Eu ensino medicina há quinze anos. E aprendi uma coisa."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Dr. Getúlio, *CRM-DF 13610*",
+          "narracao": "Sou o Getúlio, médico e professor em Brasília."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Docente na ESCS *há 15 anos*",
+          "narracao": "Dou aula na ESCS há quinze anos."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Supervisor de *residência* no HMIB",
+          "narracao": "Supervisiono um programa de residência médica no HMIB."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Mestre pela UnB, *doutorando*",
+          "narracao": "Fiz mestrado na UnB e hoje faço doutorado lá."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 16.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Ao desenhar o curso, *uma pergunta*",
+          "narracao": "Quando fui desenhar a Road to America, me fiz uma pergunta."
+        },
+        {
+          "inicio_s": 16.0,
+          "fim_s": 18.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Quem deve *ensinar* cada prova?",
+          "narracao": "Quem deve ensinar cada prova?"
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Professor bom *ajuda muito*",
+          "narracao": "Professor bom ajuda muito."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Ensina a prova *quem passou nela*",
+          "narracao": "Mas a prova, quem ensina é quem passou nela."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 26.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Eu cuido do *método*",
+          "narracao": "Eu cuido do método e escolho os mentores."
+        },
+        {
+          "inicio_s": 26.5,
+          "fim_s": 29.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Mentores *aprovados* nos dois Steps",
+          "narracao": "Médicos formados no Brasil, aprovados nos dois Steps."
+        },
+        {
+          "inicio_s": 29.0,
+          "fim_s": 31.5,
+          "tipo_visual": "mapa_eua",
+          "texto_tela": "Trabalhando *nos EUA* hoje",
+          "narracao": "Que hoje trabalham nos EUA."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Todo número com *fonte*",
+          "narracao": "E cada número que eu mostro tem fonte."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 37.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Primeira turma, *sem depoimento ainda*",
+          "narracao": "É a primeira turma. Ainda não tenho depoimento de aluno para mostrar."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Por isso: *reembolso* com condições",
+          "narracao": "Por isso, reembolso integral em três anos, com condições."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Termo completo *no site*",
+          "narracao": "O termo completo está no site."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: *pré-inscrição gratuita*",
+          "narracao": "Link na bio: pré-inscrição gratuita da turma fundadora."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Turma *fundadora*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para a pré-inscrição gratuita.",
+      "producao": "Fundador grava em vídeo, olhando para a câmera, com legendas cinéticas por cima; é a única pessoa real que aparece. Ele deve validar que cada frase da narração descreve a sua experiência antes de gravar.",
+      "legenda_post": "Sou professor de medicina há 15 anos na ESCS e supervisor de residência médica no HMIB. Quando desenhei a Road to America, decidi que cada prova seria ensinada por quem passou nela: mentores formados no Brasil, aprovados no Step 1 e no Step 2 CK, que trabalham nos EUA. É a primeira turma, sem depoimentos ainda; por isso a garantia de reembolso com condições. Pré-inscrição no link da bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #MedicinaNosEUA #Step1 #Step2CK",
+      "fatos_usados": [
+        {
+          "fato": "Dr. Getúlio Bernardo Morato Filho, CRM-DF 13610: graduado em Medicina pela UnB em 2004, 15 anos de docência na ESCS e 9 no UniCEUB, mestre em Medicina Tropical (UnB), doutorando em Ciências Médicas (UnB), supervisor de programa de residência médica no HMIB; desenha o método e escolhe os mentores, e as aulas de cada prova ficam com mentores aprovados nela",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/; Currículo Lattes"
+        },
+        {
+          "fato": "Mentores formados no Brasil, aprovados no Step 1 e no Step 2 CK, com certificação ECFMG, em residência ou atuando como assistentes nos EUA; dão aulas e mentorias em grupo e respondem em português; perfis completos publicados antes da abertura das matrículas, sem cadastro",
+          "fonte": "Road to America, Equipe, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Reembolso de 100% do valor pago ao curso se, 3 anos após a matrícula, faltar Pass no Step 1 ou a nota mínima no Step 2 CK, com pelo menos 80% das aulas e duas autoavaliações NBME por Step que faltar; não exige tentativa; agendamento livre; não cobre Match, visto, licença nem taxas oficiais; 7 dias de arrependimento pelo CDC",
+          "fonte": "Termo da garantia, https://drgetulio.github.io/road-to-america/garantia.html"
+        },
+        {
+          "fato": "Primeira turma, ainda sem taxa de aprovação própria nem depoimentos; pré-inscrição gratuita, sem obrigação de matrícula, com grupo da turma, conferência da escola por mentor, estimativa de horas e condições antes da abertura geral; leva menos de um minuto e um mentor responde em até um dia útil",
+          "fonte": "Road to America, Pré-inscrição, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    },
+    {
+      "id": "reel-19",
+      "versao": 2,
+      "titulo": "A oferta inteira, item por item",
+      "angulo": "Stack completo da oferta com o que fica de fora.",
+      "framework": "Hormozi: stack de valor com remoção de risco no topo; Brunson: Stack Slide com transparência do que não está incluído.",
+      "gancho_0a3s": "Tudo o que vem por R$ 12.000.",
+      "virada_s": 25.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "Tudo que vem por *R$ 12.000*",
+          "narracao": "Vou abrir a oferta inteira. Item por item."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "1. Step 1 *e* Step 2 CK",
+          "narracao": "Um: Step 1 e Step 2 CK no mesmo programa."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "2. *3 anos* de acesso",
+          "narracao": "Dois: três anos de acesso."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "3. Anki *completo* dos dois Steps",
+          "narracao": "Três: Anki completo dos dois Steps."
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "4. Apostila pelo *Content Outline*",
+          "narracao": "Quatro: apostila organizada pelo conteúdo oficial do USMLE."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "5. Aulas de *raciocínio clínico*",
+          "narracao": "Cinco: aulas sobre o raciocínio clínico que as provas cobram."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "6. Mentoria com *médicos nos EUA*",
+          "narracao": "Seis: mentoria em grupo com médicos que atuam nos EUA."
+        },
+        {
+          "inicio_s": 18.0,
+          "fim_s": 20.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "7. Leitura das suas *NBME*",
+          "narracao": "Sete: leitura das suas autoavaliações NBME com o mentor."
+        },
+        {
+          "inicio_s": 20.5,
+          "fim_s": 23.0,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "8. Plano pela *sua escala*",
+          "narracao": "Oito: plano individual montado pela sua escala."
+        },
+        {
+          "inicio_s": 23.0,
+          "fim_s": 25.5,
+          "tipo_visual": "lista_stack",
+          "texto_tela": "9. Guia *ECFMG* passo a passo",
+          "narracao": "Nove: guia ECFMG, de documentos, OET e Pathway."
+        },
+        {
+          "inicio_s": 25.5,
+          "fim_s": 28.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "10. Reembolso *integral* com condições",
+          "narracao": "Dez: aprovação em três anos ou reembolso integral, nas condições do termo."
+        },
+        {
+          "inicio_s": 28.5,
+          "fim_s": 31.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O que *fica fora*?",
+          "narracao": "Agora o que fica fora, porque você precisa saber."
+        },
+        {
+          "inicio_s": 31.5,
+          "fim_s": 34.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Bancos de questões e *NBME*",
+          "narracao": "Bancos de questões comerciais e autoavaliações NBME."
+        },
+        {
+          "inicio_s": 34.0,
+          "fim_s": 36.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Taxas *oficiais* e OET",
+          "narracao": "Taxas oficiais do USMLE, do ECFMG e do OET."
+        },
+        {
+          "inicio_s": 36.5,
+          "fim_s": 39.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "ERAS e estágio: *não incluso*",
+          "narracao": "ERAS, estágio e entrevistas não fazem parte desta turma."
+        },
+        {
+          "inicio_s": 39.0,
+          "fim_s": 42.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "Ou *12 x R$ 1.000* no cartão",
+          "narracao": "À vista ou em até doze vezes de mil reais no cartão."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: *pré-inscrição gratuita*",
+          "narracao": "Link na bio: pré-inscrição gratuita da turma fundadora."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Turma *fundadora*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para a pré-inscrição gratuita.",
+      "legenda_post": "Por R$ 12.000, ou 12 x R$ 1.000 no cartão: Step 1 e Step 2 CK, três anos de acesso, Anki completo, apostila pelo Content Outline, aulas, mentoria com médicos que atuam nos EUA, leitura das suas NBME, plano pela sua escala, guia ECFMG e reembolso integral se faltar aprovação em três anos, com 80% das aulas e duas NBME por Step que faltar. Ficam fora bancos de questões, NBME, taxas oficiais, ERAS e estágio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #Step2CK #MedicinaNosEUA",
+      "fatos_usados": [
+        {
+          "fato": "Turma fundadora: R$ 12.000 à vista ou em até 12 vezes de R$ 1.000 no cartão; 3 anos de acesso; Step 1 e Step 2 CK; Anki completo, apostila pelo Content Outline, aulas, mentoria em grupo, análise das autoavaliações NBME, plano individual e guia ECFMG; bancos de questões, NBME, OET e taxas oficiais à parte; ERAS e estágio fora do pacote",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Reembolso de 100% do valor pago ao curso se, 3 anos após a matrícula, faltar Pass no Step 1 ou a nota mínima no Step 2 CK, com pelo menos 80% das aulas e duas autoavaliações NBME por Step que faltar; não exige tentativa; agendamento livre; não cobre Match, visto, licença nem taxas oficiais; 7 dias de arrependimento pelo CDC",
+          "fonte": "Termo da garantia, https://drgetulio.github.io/road-to-america/garantia.html"
+        }
+      ]
+    },
+    {
+      "id": "reel-20",
+      "versao": 2,
+      "titulo": "Não temos taxa de aprovação. Ainda.",
+      "angulo": "Chamada da turma fundadora com honestidade sobre a primeira turma.",
+      "framework": "Hormozi: oferta de fundador com escassez real (prioridade) e remoção de risco; Brunson: Hook-Story-Offer com chamada final.",
+      "gancho_0a3s": "Não temos taxa de aprovação. Ainda.",
+      "virada_s": 18.5,
+      "duracao_s": 50,
+      "cenas": [
+        {
+          "inicio_s": 0.0,
+          "fim_s": 3.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Não temos taxa de aprovação. *Ainda.*",
+          "narracao": "Eu não tenho taxa de aprovação para te mostrar. Ainda."
+        },
+        {
+          "inicio_s": 3.0,
+          "fim_s": 5.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "É a *primeira turma*",
+          "narracao": "Esta é a primeira turma da Road to America."
+        },
+        {
+          "inicio_s": 5.5,
+          "fim_s": 8.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Nenhum *depoimento* ainda",
+          "narracao": "Por isso você não vai ver depoimento aqui."
+        },
+        {
+          "inicio_s": 8.0,
+          "fim_s": 10.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "O que você *tem*, então?",
+          "narracao": "Então o que você tem?"
+        },
+        {
+          "inicio_s": 10.5,
+          "fim_s": 13.0,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Mentores *aprovados* nos dois Steps",
+          "narracao": "Mentores aprovados nos dois Steps, atuando nos EUA."
+        },
+        {
+          "inicio_s": 13.0,
+          "fim_s": 15.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Números *com fonte*",
+          "narracao": "Todo número com fonte oficial."
+        },
+        {
+          "inicio_s": 15.5,
+          "fim_s": 18.5,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Reembolso *integral* em 3 anos",
+          "narracao": "E reembolso integral em três anos, nas condições do termo."
+        },
+        {
+          "inicio_s": 18.5,
+          "fim_s": 21.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Preço de *turma fundadora*",
+          "narracao": "E o preço de turma fundadora."
+        },
+        {
+          "inicio_s": 21.0,
+          "fim_s": 24.0,
+          "tipo_visual": "numero_gigante",
+          "texto_tela": "*R$ 12.000*, 3 anos",
+          "narracao": "Doze mil reais, com três anos de acesso."
+        },
+        {
+          "inicio_s": 24.0,
+          "fim_s": 27.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Pré-inscrição: *grátis*",
+          "narracao": "A pré-inscrição é gratuita e não obriga matrícula."
+        },
+        {
+          "inicio_s": 27.0,
+          "fim_s": 29.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Grupo da *turma fundadora*",
+          "narracao": "No grupo da turma saem primeiro vagas e datas."
+        },
+        {
+          "inicio_s": 29.5,
+          "fim_s": 32.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Sua escola *conferida* por mentor",
+          "narracao": "Um mentor confere a sua escola."
+        },
+        {
+          "inicio_s": 32.0,
+          "fim_s": 34.5,
+          "tipo_visual": "checklist",
+          "texto_tela": "Estimativa de *horas semanais*",
+          "narracao": "Você recebe uma estimativa de horas para a sua escala."
+        },
+        {
+          "inicio_s": 34.5,
+          "fim_s": 37.0,
+          "tipo_visual": "checklist",
+          "texto_tela": "Condições *antes da abertura*",
+          "narracao": "E as condições de pagamento antes da abertura geral."
+        },
+        {
+          "inicio_s": 37.0,
+          "fim_s": 39.5,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Leva *menos de um minuto*",
+          "narracao": "Leva menos de um minuto."
+        },
+        {
+          "inicio_s": 39.5,
+          "fim_s": 42.0,
+          "tipo_visual": "legenda_cinetica",
+          "texto_tela": "Mentor responde em *1 dia útil*",
+          "narracao": "Um mentor responde em até um dia útil."
+        },
+        {
+          "inicio_s": 42.0,
+          "fim_s": 45.0,
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: *pré-inscrição gratuita*",
+          "narracao": "Link na bio. Garanta a prioridade na turma fundadora."
+        },
+        {
+          "inicio_s": 45.0,
+          "fim_s": 47.5,
+          "tipo_visual": "cartao_embarque",
+          "texto_tela": "Embarque *prioritário*"
+        },
+        {
+          "inicio_s": 47.5,
+          "fim_s": 50.0,
+          "tipo_visual": "carimbo",
+          "texto_tela": "Link na *bio*"
+        }
+      ],
+      "cta": "Link na bio para a pré-inscrição gratuita.",
+      "legenda_post": "Primeira turma da Road to America: ainda não temos taxa de aprovação nem depoimentos. Temos mentores aprovados no Step 1 e no Step 2 CK que trabalham nos EUA, números com fonte oficial e reembolso integral se faltar aprovação em três anos, com 80% das aulas e duas NBME por Step que faltar. A pré-inscrição é gratuita, não obriga matrícula e dá prioridade na turma fundadora. Link na bio. Dr. Getúlio Morato Filho, CRM-DF 13610. #USMLE #Step1 #Step2CK #MedicinaNosEUA #TurmaFundadora",
+      "fatos_usados": [
+        {
+          "fato": "Primeira turma, ainda sem taxa de aprovação própria nem depoimentos; pré-inscrição gratuita, sem obrigação de matrícula, com grupo da turma, conferência da escola por mentor, estimativa de horas e condições antes da abertura geral; leva menos de um minuto e um mentor responde em até um dia útil",
+          "fonte": "Road to America, Pré-inscrição, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Mentores formados no Brasil, aprovados no Step 1 e no Step 2 CK, com certificação ECFMG, em residência ou atuando como assistentes nos EUA; dão aulas e mentorias em grupo e respondem em português; perfis completos publicados antes da abertura das matrículas, sem cadastro",
+          "fonte": "Road to America, Equipe, https://drgetulio.github.io/road-to-america/"
+        },
+        {
+          "fato": "Reembolso de 100% do valor pago ao curso se, 3 anos após a matrícula, faltar Pass no Step 1 ou a nota mínima no Step 2 CK, com pelo menos 80% das aulas e duas autoavaliações NBME por Step que faltar; não exige tentativa; agendamento livre; não cobre Match, visto, licença nem taxas oficiais; 7 dias de arrependimento pelo CDC",
+          "fonte": "Termo da garantia, https://drgetulio.github.io/road-to-america/garantia.html"
+        },
+        {
+          "fato": "Turma fundadora: R$ 12.000 à vista ou em até 12 vezes de R$ 1.000 no cartão; 3 anos de acesso; Step 1 e Step 2 CK; Anki completo, apostila pelo Content Outline, aulas, mentoria em grupo, análise das autoavaliações NBME, plano individual e guia ECFMG; bancos de questões, NBME, OET e taxas oficiais à parte; ERAS e estágio fora do pacote",
+          "fonte": "Road to America, https://drgetulio.github.io/road-to-america/"
+        }
+      ]
+    }
+  ],
+  "autocritica": {
+    "criterios": "Notas de 0 a 10 no estilo Hormozi: gancho (o polegar para nos 3 primeiros segundos?), oferta (parece boa demais para recusar sem exagero?), prova (há fato verificável com fonte?). Os cinco roteiros com menor soma na primeira versão foram reescritos.",
+    "notas": [
+      {
+        "id": "reel-01",
+        "gancho": 8,
+        "oferta": 7,
+        "prova": 9,
+        "comentario": "Gancho de contradição funciona; a virada da Intealth é forte."
+      },
+      {
+        "id": "reel-02",
+        "gancho": 8,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Objeção bem atacada; oferta aparece pouco, compensada pelo CTA de comentário."
+      },
+      {
+        "id": "reel-03",
+        "gancho": 8,
+        "oferta": 7,
+        "prova": 8,
+        "comentario": "A honestidade sobre menos de 12 h vende mais do que promete; manter."
+      },
+      {
+        "id": "reel-04",
+        "gancho": 8,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Reescrito. V1 abria com pergunta genérica sobre idade máxima e fechava com frase vaga."
+      },
+      {
+        "id": "reel-05",
+        "gancho": 8,
+        "oferta": 9,
+        "prova": 8,
+        "comentario": "Equação de valor completa e risco removido aos 26 s."
+      },
+      {
+        "id": "reel-06",
+        "gancho": 7,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Revisado: a cena fraca 'Cuidado com essa conclusão' virou 'Cada reprovação gasta tentativa', que prepara o dado das 4 tentativas."
+      },
+      {
+        "id": "reel-07",
+        "gancho": 9,
+        "oferta": 6,
+        "prova": 10,
+        "comentario": "Melhor gancho numérico da série."
+      },
+      {
+        "id": "reel-08",
+        "gancho": 8,
+        "oferta": 7,
+        "prova": 10,
+        "comentario": "Virada 'com ou sem curso' derruba a objeção de ir sozinho."
+      },
+      {
+        "id": "reel-09",
+        "gancho": 9,
+        "oferta": 6,
+        "prova": 8,
+        "comentario": "Entrega valor real de graça; bom para salvar e compartilhar."
+      },
+      {
+        "id": "reel-10",
+        "gancho": 8,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Didático; a oferta entra só no guia ECFMG."
+      },
+      {
+        "id": "reel-11",
+        "gancho": 8,
+        "oferta": 5,
+        "prova": 10,
+        "comentario": "Mais prova do que oferta; funciona como topo de funil."
+      },
+      {
+        "id": "reel-12",
+        "gancho": 8,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Reescrito. V1 tinha lista genérica (horas, revisão, questões) sem prova documental."
+      },
+      {
+        "id": "reel-13",
+        "gancho": 8,
+        "oferta": 9,
+        "prova": 9,
+        "comentario": "Garantia com todas as condições na tela; risco legal baixo."
+      },
+      {
+        "id": "reel-14",
+        "gancho": 8,
+        "oferta": 7,
+        "prova": 6,
+        "comentario": "Revisado: o CTA prometia avisar quando os perfis saíssem, mas o reel só vai ao ar com os perfis publicados. Agora o CTA entrega o link dos perfis."
+      },
+      {
+        "id": "reel-15",
+        "gancho": 8,
+        "oferta": 6,
+        "prova": 8,
+        "comentario": "Reescrito. V1 descrevia recurso, sem dor, e fechava com 'memória com método'."
+      },
+      {
+        "id": "reel-16",
+        "gancho": 8,
+        "oferta": 8,
+        "prova": 7,
+        "comentario": "Reescrito. V1 tinha virada tardia e frases de enchimento; depende do simulado publicado."
+      },
+      {
+        "id": "reel-17",
+        "gancho": 9,
+        "oferta": 6,
+        "prova": 9,
+        "comentario": "Reescrito. V1 repetia o reel-01 com gancho fraco ('Abra o WDOMS')."
+      },
+      {
+        "id": "reel-18",
+        "gancho": 7,
+        "oferta": 7,
+        "prova": 9,
+        "comentario": "Epiphany Bridge apoiada só em fatos; depende de o fundador validar a narração."
+      },
+      {
+        "id": "reel-19",
+        "gancho": 7,
+        "oferta": 9,
+        "prova": 8,
+        "comentario": "Stack sem valores inventados por item; transparência do que fica fora."
+      },
+      {
+        "id": "reel-20",
+        "gancho": 9,
+        "oferta": 8,
+        "prova": 8,
+        "comentario": "Honestidade como padrão de interrupção; bom fechamento de campanha."
+      }
+    ],
+    "reescritos": [
+      {
+        "id": "reel-04",
+        "problema_v1": "Gancho 'Idade máxima para residência nos EUA?' é pergunta de busca, sem tensão; final 'A conta é individual' não pedia ação; CTA FREIDA desconectado.",
+        "mudanca_v2": "Gancho troca o critério imaginado pelo real ('35+? O número que importa é outro'), mostra onde conferir na FREIDA, liga a mediana 248 à meta definida no diagnóstico e fecha com CTA FORMATURA."
+      },
+      {
+        "id": "reel-12",
+        "problema_v1": "Afirmava o mito e respondia com lista genérica de hábitos; nenhuma prova documental de que a regra é igual para todos.",
+        "mudanca_v2": "Gancho 'Ranking de faculdade não está no edital', mostra o Bulletin, a regra de elegibilidade, a mesma nota mínima 218 e o mesmo formato, e só então o que o candidato controla."
+      },
+      {
+        "id": "reel-15",
+        "problema_v1": "Falava do algoritmo antes da dor; cenas de enchimento ('Memória com método').",
+        "mudanca_v2": "Abre na dor (revisar o que já sabe), liga o FSRS ao plantão que atrasa revisões, mostra o baralho como virada e ensina a ativar em duas telas."
+      },
+      {
+        "id": "reel-16",
+        "problema_v1": "Gancho '30:00 no relógio' pouco claro, virada depois dos 30 s e cenas vagas ('Sem cadastro pago').",
+        "mudanca_v2": "Gancho com a oferta explícita, benefícios concretos (ritmo, onde trava, área a revisar) e aviso honesto de que um bloco não prevê nota."
+      },
+      {
+        "id": "reel-17",
+        "problema_v1": "Repetia o reel-01 com gancho 'Abra o WDOMS. Faça isto agora.', sem custo do erro.",
+        "mudanca_v2": "Ancoragem na taxa de US$ 695 do Step 1, tutorial tela a tela e virada para estudantes (podem fazer as duas provas antes da formatura)."
+      }
+    ],
+    "revisao_independente": "Revisão de 28/10/2026 (oferta, compliance e português). Trocas principais: gancho do reel-13 passou a trazer 'com condições' já nos 3 primeiros segundos; reel-05 deixou de dizer que 'o risco fica conosco'; reel-02 deixou de afirmar que o OET vem depois do Step 2 CK, o que não tem fonte; reel-07 e reel-04 qualificam a mediana de 248 (IMGs não americanos, especialidade desejada, 2026); reel-12 trocou 'edital' por 'o USMLE não pergunta', porque o USMLE não tem edital; reel-14 teve o CTA alinhado à regra de só postar com perfis publicados; reel-16 ganhou o número oficial de 20 questões por bloco; reel-15 trocou 'cobre por inteiro' pelo termo do site, 'completo'; reel-18 corrigiu a vírgula entre sujeito e verbo; legendas dos reels 05, 13, 19 e 20 passaram a trazer as condições da garantia; e dezenas de falas foram encurtadas para caber no tempo da cena (limite de 4,4 palavras por segundo). Tempos e cenas continuam iguais: 50 s por roteiro."
+  },
+  "pendencias_antes_de_postar": [
+    "Reels 06, 07 e 16 dependem do simulado gratuito de 30 minutos publicado e linkado na bio.",
+    "Reels 05, 14, 18, 19 e 20 descrevem os mentores (formados no Brasil, aprovados nos dois Steps, atuando nos EUA). Só postar com os mentores contratados e pelo menos dois perfis publicados no site; sem isso, a afirmação fica sem prova (CDC, art. 37) e o reel 14 perde o CTA.",
+    "Reel 18: o fundador precisa validar a narração em primeira pessoa antes de gravar.",
+    "Falas em primeira pessoa ('eu mando', 'eu aviso', reel-18 inteiro) são da voz do fundador. Se outra pessoa narrar, trocar para 'a gente manda' antes de gravar.",
+    "LGPD: a resposta automática no direct só envia links e não pede dados. Nome, e-mail e escala ficam na pré-inscrição, que já mostra a política de privacidade (privacidade.html).",
+    "CTAs de comentário (02, 03, 04, 08, 09, 10, 11, 14, 15) exigem resposta automática no direct com o conteúdo descrito em entrega_cta.",
+    "Assinatura com CRM em todas as legendas; especialidade só pode ser citada com RQE conferido (Res. CFM 2.336/2023), por isso os roteiros não citam especialidade.",
+    "Sem música de terceiros: usar trilha original ou só efeitos sonoros próprios; os roteiros são legíveis sem som.",
+    "Revisar os números a cada turma: taxas, Match e estados mudam todo ano."
+  ]
+}
