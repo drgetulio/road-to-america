@@ -81,7 +81,7 @@
     /* selo SAEME, quando a escola consta na lista */
     if (school && school.saeme) {
       saemeHit.classList.add("is-on");
-      saemeHit.querySelector("span").textContent = school.nome + " consta como acreditada pelo SAEME" + (school.validade ? ", com validade até " + school.validade : "") + ". Se a acreditação estava válida no ano da sua formatura, você também pode usar o Pathway 3 da certificação ECFMG. Confira as regras do ano no site do ECFMG.";
+      saemeHit.querySelector("span").textContent = school.nome + " consta como acreditada pelo SAEME" + (school.validade ? ", com validade até " + school.validade : "") + ". Se a acreditação estiver válida no ano da sua formatura, você também pode usar o Pathway 3 da certificação ECFMG. As regras de cada ano estão no site do ECFMG.";
     } else {
       saemeHit.classList.remove("is-on");
     }
@@ -113,31 +113,31 @@
       level = "check";
       badge = '<i class="ph-fill ph-info" aria-hidden="true"></i>Vamos confirmar';
       title = "Confira de novo a aba Sponsor Notes.";
-      text = "Escolas acreditadas pelo SAEME costumam ter a Sponsor Note do ECFMG. Veja se abriu a aba certa e o registro do campus correto.";
+      text = "Escolas acreditadas pelo SAEME em geral têm a Sponsor Note do ECFMG. Veja se abriu a aba certa e o registro do campus correto.";
       items.push(li("ph-info", "No World Directory, cada campus pode ter um registro próprio."));
       items.push(li("ph-info", "Se a dúvida continuar, um mentor confere por você."));
     } else if (w === "fora" || w === "sem-nota") {
       level = "stop";
       badge = '<i class="ph-fill ph-warning-circle" aria-hidden="true"></i>Atenção';
       title = w === "fora" ? "O seu ano de formatura não está coberto hoje." : "Sem a nota do ECFMG, a escola não está liberada por enquanto.";
-      text = w === "fora" ? "O ECFMG só aceita formados nos anos listados na Sponsor Note. Antes de tirar conclusões, confira de novo o campo Graduation Years." : "O ECFMG informa que, sem a Sponsor Note, alunos e formados da escola não são elegíveis à certificação.";
-      items.push(li("ph-arrow-circle-right", "Confira se não há outro registro da escola com nome antigo ou de outro campus."));
+      text = w === "fora" ? "O ECFMG só aceita formados nos anos listados na Sponsor Note. Antes de tirar conclusões, veja de novo o campo Graduation Years." : "O ECFMG informa que, sem a Sponsor Note, alunos e formados da escola não são elegíveis à certificação.";
+      items.push(li("ph-arrow-circle-right", "Procure outro registro da escola, com nome antigo ou de outro campus."));
       items.push(li("ph-arrow-circle-right", "A nota é solicitada pela própria escola, por meio de um representante autorizado. Leve a questão à coordenação do curso."));
       items.push(li("ph-arrow-circle-right", "Peça a conferência de um mentor antes de tomar qualquer decisão."));
     } else {
       level = "check";
       badge = '<i class="ph-fill ph-info" aria-hidden="true"></i>Vamos confirmar';
       title = w === "nao-achei" ? "A escola pode estar listada com outro nome." : "Um mentor confere para você.";
-      text = w === "nao-achei" ? "No World Directory, as escolas brasileiras aparecem pelo nome oficial em português. Pesquise só pela cidade e confira a lista de resultados." : "Envie os seus dados abaixo e receba a conferência por e-mail, com o próximo passo indicado para o seu caso.";
-      items.push(li("ph-info", "Escolas reconhecidas pelo MEC costumam ter a Sponsor Note; cursos muito novos podem ter anos restritos."));
+      text = w === "nao-achei" ? "No World Directory, as escolas brasileiras aparecem pelo nome oficial em português. Pesquise só pela cidade e confira a lista de resultados." : "Envie os seus dados abaixo e receba a conferência por e-mail, com o próximo passo.";
+      items.push(li("ph-info", "Escolas reconhecidas pelo MEC em geral têm a Sponsor Note; cursos muito novos podem ter anos restritos."));
       if (tr === "sim") items.push(li("ph-info", "Com transferência, o histórico de cada escola é verificado separadamente."));
       items.push(li("ph-info", "A conferência é gratuita e não obriga a matrícula."));
     }
 
     if (school && school.vencida && w) {
-      items.push(li("ph-info", "A acreditação SAEME registrada para esta escola venceu em " + school.vencida + ". Confira a renovação em saeme.org.br. Isso não muda a elegibilidade ao USMLE."));
+      items.push(li("ph-info", "A acreditação SAEME registrada para esta escola venceu em " + school.vencida + ". A renovação aparece em saeme.org.br. Isso não muda a elegibilidade ao USMLE."));
     } else if (school && !school.saeme && w) {
-      items.push(li(level === "ok" ? "ph-check-circle" : "ph-info", "Não temos a acreditação SAEME desta escola registrada na nossa lista. Confira em saeme.org.br. De todo modo, isso não muda a elegibilidade ao USMLE."));
+      items.push(li(level === "ok" ? "ph-check-circle" : "ph-info", "Não temos a acreditação SAEME desta escola registrada na nossa lista. A lista oficial está em saeme.org.br. De todo modo, isso não muda a elegibilidade ao USMLE."));
     }
 
     var dots = "";
@@ -162,6 +162,11 @@
     var live = document.querySelector("[data-result-live]");
     var liveText = level ? (badge.replace(/<[^>]+>/g, "") + ". " + title) : "";
     if (live && live.textContent !== liveText) live.textContent = liveText;
+    if (bar) {
+      bar.setAttribute("data-level", level || "");
+      bar.querySelector("[data-result-bar-text]").textContent = level ? badge.replace(/<[^>]+>/g, "") : "";
+      updateBar();
+    }
     if (level) result.setAttribute("data-level", level);
     else result.removeAttribute("data-level");
 
@@ -177,6 +182,16 @@
   if (leadForm) {
     var ve = leadForm.querySelector('[name="escola"]');
     if (ve) ve.addEventListener("input", function () { ve.dataset.touched = "1"; });
+  }
+  var bar = document.querySelector("[data-result-bar]");
+  var resultVisible = true;
+  var mqMobile = window.matchMedia("(max-width: 960px)");
+  function updateBar() {
+    if (!bar) return;
+    bar.hidden = !(mqMobile.matches && bar.getAttribute("data-level") && !resultVisible);
+  }
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (es) { resultVisible = es[es.length - 1].isIntersecting; updateBar(); }).observe(result);
   }
   form.addEventListener("input", render);
   form.addEventListener("change", render);

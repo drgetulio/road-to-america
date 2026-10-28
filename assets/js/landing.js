@@ -28,7 +28,7 @@
       q: "Minha faculdade permite fazer o USMLE?",
       a: [
         "Depende de um registro objetivo: a <strong>ECFMG Sponsor Note</strong> da sua escola no World Directory of Medical Schools, com o seu ano de formatura incluído no campo Graduation Years.",
-        "Escolas brasileiras reconhecidas costumam ter a nota, mas cursos novos podem ter anos restritos. A <a href=\"verificar.html\">ferramenta de verificação</a> guia a conferência em poucos minutos e, se restar dúvida, um mentor confere por você."
+        "Escolas brasileiras reconhecidas em geral têm a nota, mas cursos novos podem ter anos restritos. A <a href=\"verificar.html\">ferramenta de verificação</a> guia a conferência em poucos minutos e, se restar dúvida, um mentor confere por você."
       ],
       s: ["sponsor", "wdoms"]
     },
@@ -36,7 +36,7 @@
       q: "Minha escola não tem acreditação SAEME. Estou fora?",
       a: [
         "<strong>Não.</strong> A Recognized Accreditation Policy da Intealth entrou em vigor em novembro de 2024 apenas como medida informativa. A própria instituição afirma que o médico pode seguir com a certificação ECFMG mesmo que a escola não atenda à política.",
-        "A acreditação SAEME pesa somente em um dos Pathways de certificação, o Pathway 3. Quem já tem CRM ativo costuma usar o Pathway 1, baseado na licença para exercer a medicina no Brasil. Confira as regras do ciclo vigente no site do ECFMG."
+        "A acreditação SAEME pesa somente em um dos Pathways de certificação, o Pathway 3. Quem já tem CRM ativo usa, na maioria dos casos, o Pathway 1, baseado na licença para exercer a medicina no Brasil. As regras de cada ciclo estão no site do ECFMG."
       ],
       s: ["rap", "rapNews", "pathways"]
     },
@@ -44,7 +44,7 @@
       q: "Meu inglês ainda não é fluente.",
       a: [
         "O Step 1 e o Step 2 CK são provas de múltipla escolha no computador, sem parte oral. O vocabulário médico em inglês se constrói desde o primeiro dia, com o Anki e com as questões comentadas.",
-        "A fala entra mais adiante: a certificação ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O OET entra no cronograma depois do Step 2 CK."
+        "A fala fica para depois: a certificação ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O OET está previsto no cronograma para depois do Step 2 CK."
       ],
       s: ["oet"]
     },
@@ -52,7 +52,7 @@
       q: "Trabalho em plantões e tenho pouco tempo.",
       a: [
         "O plano é montado em cima da sua escala. A carga mínima é de cerca de 12 horas por semana: 30 a 40 minutos de Anki por dia e um bloco de questões em cada folga.",
-        "Nesse ritmo, o planejamento prevê de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK, dentro dos três anos de acesso. Se o diagnóstico mostrar menos de 10 horas livres por semana, avisamos antes da matrícula que o prazo pode não bastar. As provas usam <strong>blocos de 30 minutos</strong> desde maio de 2026, e os simulados seguem esse formato."
+        "Nesse ritmo, o planejamento prevê de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK, dentro dos três anos de acesso. Para quem está há mais de cinco anos longe das ciências básicas, o mentor em geral indica 15 horas ou mais por semana, ou um prazo maior até o Step 1. Se você tiver menos de 12 horas livres por semana, avisamos já na pré-inscrição que os três anos podem não bastar. As provas usam <strong>blocos de 30 minutos</strong> desde maio de 2026, e os blocos de questões do plano seguem esse formato."
       ],
       s: ["format"]
     },
@@ -67,23 +67,23 @@
     {
       q: "Vou precisar refazer a residência?",
       a: [
-        "Na maioria dos estados, sim: a licença plena exige residência credenciada nos EUA. Desde 2023, porém, <strong>27 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia (WES, maio de 2026).",
+        "Na prática, ainda sim: a residência credenciada nos EUA continua sendo o caminho habitual para a licença plena. Desde 2023, <strong>27 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia (WES, maio de 2026), mas muitas ainda estão em regulamentação e oferecem poucas vagas.",
         "Quase todas essas leis exigem a certificação ECFMG, que inclui o Step 1 e o Step 2 CK, e uma oferta de emprego nos EUA."
       ],
       s: ["fsmb", "wes"]
     },
     {
-      q: "E o visto de trabalho?",
+      q: "E o visto para a residência?",
       a: [
-        "A maioria dos residentes estrangeiros usa o <strong>J-1</strong>, patrocinado pelo próprio ECFMG. Ao final, há a exigência de dois anos no país de origem, que pode ser dispensada, por exemplo, pelo programa Conrad 30, em troca de atuação em áreas com falta de médicos.",
-        "Alguns programas oferecem o H-1B, que costuma exigir o Step 3. Orientamos cada etapa, mas a decisão migratória é individual e deve ser confirmada com o programa e com um advogado de imigração."
+        "A maioria dos residentes estrangeiros usa o <strong>J-1</strong>, visto de intercâmbio patrocinado pelo próprio ECFMG. Ao final, há a exigência de dois anos no país de origem, que pode ser dispensada, por exemplo, pelo programa Conrad 30, em troca de atuação em áreas com falta de médicos.",
+        "Alguns programas oferecem o H-1B, que geralmente exige o Step 3. Explicamos as opções de visto nas mentorias, mas a decisão migratória é individual e deve ser confirmada com o programa e com um advogado de imigração."
       ],
       s: ["evsp"]
     },
     {
       q: "E se eu não for aprovado?",
       a: [
-        "Se, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK e você tiver assistido a pelo menos 80% das aulas e feito as autoavaliações indicadas, devolvemos o valor integral pago ao curso. Não é preciso ter feito nenhuma tentativa da prova para pedir o reembolso. Veja o <a href=\"garantia.html\">termo completo</a>.",
+        "Se, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK e você tiver assistido a pelo menos 80% das aulas e feito no mínimo duas autoavaliações do NBME por Step que faltar, devolvemos o valor integral pago ao curso. Não é preciso ter feito nenhuma tentativa da prova para pedir o reembolso. Veja o <a href=\"garantia.html\">termo completo</a>.",
         "Como cada Step aceita no máximo quatro tentativas na vida, recomendamos agendar só quando os simulados mostrarem folga. A decisão final é sua."
       ],
       s: ["attempts"]
@@ -92,7 +92,7 @@
       q: "Ainda estou na faculdade. Posso começar?",
       a: [
         "<strong>Sim.</strong> Estudantes regularmente matriculados em escola cuja Sponsor Note indica Current, com o ciclo básico concluído, podem fazer o Step 1 e o Step 2 CK antes da formatura. O certificado ECFMG é emitido depois, com o diploma verificado.",
-        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não concluiu o ciclo básico, o prazo da garantia conta a partir dessa conclusão."
+        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não completou dois anos de curso, o prazo da garantia e o acesso ao conteúdo contam a partir dessa data."
       ],
       s: ["students"]
     },
@@ -100,14 +100,14 @@
       q: "Quanto custa o caminho, além do curso?",
       a: [
         "Taxas oficiais em 2026: Step 1, US$ 695 mais US$ 210 de taxa regional para prova fora dos EUA; Step 2 CK, US$ 695 mais US$ 235; inscrição na certificação ECFMG, US$ 580; OET Medicine, cerca de AU$ 587.",
-        "Somando a conta MyIntealth, a verificação do diploma e a inscrição no Pathway, o total oficial costuma ficar <strong>entre US$ 3.000 e US$ 4.000</strong>. Esses valores são pagos diretamente às instituições, e o cronograma indica quando pagar cada taxa."
+        "Somando a conta MyIntealth, a verificação do diploma e a inscrição no Pathway, o total oficial fica <strong>entre US$ 3.000 e US$ 4.000</strong>. Esses valores são pagos diretamente às instituições, e o cronograma indica quando pagar cada taxa."
       ],
       s: ["fees", "ecfmgFees"]
     },
     {
       q: "Preciso viajar para fazer a prova?",
       a: [
-        "<strong>Não.</strong> O Step 1 e o Step 2 CK são aplicados pela Prometric em centros no Brasil. Confira a lista atualizada de cidades no site da Prometric antes de agendar.",
+        "<strong>Não.</strong> O Step 1 e o Step 2 CK são aplicados pela Prometric em centros no Brasil. A lista atualizada de cidades está no site da Prometric.",
         "Desde janeiro de 2026, a inscrição de formados fora dos EUA é feita pela FSMB. A certificação continua com o ECFMG."
       ],
       s: ["prometric", "fsmbMove"]
@@ -115,7 +115,7 @@
     {
       q: "O curso ajuda com ERAS, estágio nos EUA e entrevistas?",
       a: [
-        "O foco desta turma são o Step 1, o Step 2 CK e a certificação ECFMG, que são o pré-requisito de qualquer candidatura.",
+        "O foco desta turma está no Step 1, no Step 2 CK e na certificação ECFMG, que são pré-requisitos de qualquer candidatura.",
         "O acompanhamento de ERAS, cartas de recomendação, estágio nos EUA e entrevistas não faz parte do pacote da turma fundadora."
       ],
       s: ["pathways"]
@@ -124,7 +124,7 @@
       q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
         "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
-        "A <strong>turma fundadora</strong> paga menos porque é a primeira. Por isso mesmo, ainda não temos taxa de aprovação para mostrar e não vamos inventar uma: a garantia de três anos existe para cobrir esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
+        "A <strong>turma fundadora</strong> tem condição especial por ser a primeira. Por isso mesmo, ainda não temos taxa de aprovação para mostrar e não vamos inventar uma: a garantia de três anos existe para cobrir esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
       ],
       s: []
     }

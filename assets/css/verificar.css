@@ -67,3 +67,9 @@
 
 .v-lead { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
 @media (max-width: 900px) { .v-lead { grid-template-columns: minmax(0, 1fr); } }
+
+/* barra de resultado no celular */
+.result-bar { position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: var(--z-nav); display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 16px; border-radius: var(--radius); background: var(--navy); color: var(--navy-ink); font-weight: 600; text-decoration: none; box-shadow: var(--shadow); }
+.result-bar[data-level="ok"] { background: var(--verde); color: #fff; }
+.result-bar[data-level="stop"] { background: var(--red-deep); color: #fff; }
+.result-bar span:last-child { display: inline-flex; align-items: center; gap: 6px; font-size: 14.5px; }

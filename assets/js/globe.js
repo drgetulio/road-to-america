@@ -261,13 +261,13 @@ async function boot() {
   function aim(force) {
     var travelerPos = curve.getPointAt(Math.min(Math.max(p, 0), 1));
     var mid = curve.getPointAt(0.5);
-    var focus = mid.clone().lerp(travelerPos, 0.45);
+    var focus = mid.clone().lerp(travelerPos, 0.6);
     var f = toLatLon(focus);
     var dir = ll(f.lat, f.lon);
     var ty = -Math.atan2(dir.x, dir.z);
     var tx = (f.lat - 4) * D;
     if (force || reduce) { rotY = ty; rotX = tx; }
-    else { rotY += (ty - rotY) * 0.08; rotX += (tx - rotX) * 0.08; }
+    else { var k = 1 - Math.exp(-16 / 200); rotY += (ty - rotY) * k; rotX += (tx - rotX) * k; }
     globe.rotation.set(rotX, rotY, 0);
     return travelerPos;
   }
@@ -284,10 +284,13 @@ async function boot() {
     kick();
   }
 
+  var lastT = 0;
   function frame(time) {
     raf = 0;
+    var dt = lastT ? Math.min(100, (time || 0) - lastT) : 16;
+    lastT = time || 0;
     var moving = Math.abs(target - p) > 0.0005;
-    if (moving) p = reduce ? target : p + (target - p) * 0.055;
+    if (moving) p = reduce ? target : p + (target - p) * (1 - Math.exp(-dt / 260));
     else p = target;
     var tp = aim(false);
     traveler.position.copy(tp);
@@ -306,7 +309,7 @@ async function boot() {
     dirty = false;
     if (visible && (moving || !reduce)) raf = requestAnimationFrame(frame);
   }
-  function kick() { if (!raf && visible) raf = requestAnimationFrame(frame); }
+  function kick() { if (!raf && visible) { lastT = 0; raf = requestAnimationFrame(frame); } }
 
   onStep = function (i) {
     stepIdx = i;
@@ -316,7 +319,8 @@ async function boot() {
   onStep(stops.findIndex ? Math.max(0, stops.findIndex(function (s) { return s.classList.contains("is-active"); })) : 0);
 
   var visIO = new IntersectionObserver(function (es) {
-    visible = es[0].isIntersecting;
+    /* o observador pode entregar várias leituras de uma vez; vale a mais recente */
+    visible = es[es.length - 1].isIntersecting;
     if (visible) kick();
   });
   visIO.observe(host);

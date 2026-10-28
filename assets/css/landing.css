@@ -15,16 +15,7 @@
   background: var(--navy);
   border-radius: var(--radius);
 }
-.hero__media::after {
-  content: "";
-  position: absolute;
-  left: -14px;
-  top: 12%;
-  width: 6px;
-  height: 46%;
-  background: var(--red);
-  border-radius: 3px;
-}
+
 .hero__img { position: relative; aspect-ratio: 4 / 5; width: 100%; object-fit: cover; border-radius: var(--radius); background: var(--paper-3); box-shadow: var(--shadow); }
 @media (prefers-reduced-motion: no-preference) {
   .js .hero__copy > * { opacity: 0; transform: translateY(18px); animation: rise 1s var(--ease) forwards; }
@@ -62,7 +53,7 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .sign--red { color: #fff; } }
 .sign--red .sign__label, .sign--red .sign__src { color: rgba(255, 255, 255, 0.9); }
 @media (max-width: 960px) { .signs__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 520px) { .signs__grid { grid-template-columns: minmax(0, 1fr); } }
+
 
 /* ---------- Manifesto com estrada ---------- */
 .road { position: relative; isolation: isolate; color: #f3f5f2; padding-block: clamp(96px, 14vw, 180px); overflow: hidden; background: #0b1a2e; }
@@ -192,8 +183,7 @@
 .founder__card figcaption b { font-family: var(--font-display); font-size: 2rem; line-height: 1; }
 .founder__card figcaption span { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(243, 245, 242, 0.75); }
 .creds { list-style: none; margin: 32px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 28px; }
-.creds li { display: grid; gap: 2px; align-content: start; padding-top: 14px; border-top: 2px solid var(--line); }
-.creds li:nth-child(-n+2) { border-top-color: var(--red); }
+.creds li { display: grid; gap: 2px; align-content: start; padding-top: 14px; border-top: 2px solid var(--red); }
 .creds strong { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.05; }
 .creds span { font-size: 14.5px; color: var(--ink-2); line-height: 1.4; }
 @media (max-width: 900px) {
@@ -430,4 +420,12 @@
   .hero__media::after { display: none; }
   .hero__media::before { right: -8px; bottom: -12px; }
   .hero__media { margin-right: 8px; }
+}
+
+@media (max-width: 600px) {
+  .hero__img { aspect-ratio: 4 / 3; }
+  .signs__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .sign { padding: 16px 14px; }
+  .sign__label { font-size: 13.5px; }
+  .sign__value { font-size: 2.3rem; }
 }

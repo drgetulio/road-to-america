@@ -109,7 +109,7 @@
               <span class="q-card__num" aria-hidden="true">3</span>
               <div>
                 <h2>O que aparece no World Directory?</h2>
-                <p class="hint">Confira em dois minutos, seguindo o roteiro abaixo.</p>
+                <p class="hint">Leva uns dois minutos, seguindo o roteiro abaixo.</p>
               </div>
             </div>
             <div class="wdoms-help">
@@ -119,7 +119,7 @@
                 <li>Abra a aba <strong>Sponsor Notes</strong> e procure a nota do ECFMG.</li>
                 <li>Leia o campo <strong>Graduation Years</strong>.</li>
               </ol>
-              <div class="note-example" aria-label="Como a nota costuma aparecer">Students and graduates of this medical school are eligible to apply to ECFMG for ECFMG Certification and examination.<br>Graduation Years: 1975 - Current</div>
+              <div class="note-example" aria-label="Exemplo de como a nota aparece">Students and graduates of this medical school are eligible to apply to ECFMG for ECFMG Certification and examination.<br>Graduation Years: 1975 - Current</div>
             </div>
             <div class="choices" data-wdoms>
               <div class="choice"><input type="radio" id="c-w-1" name="wdoms" value="ok"><label for="c-w-1" data-label-ok>A nota do ECFMG aparece e inclui o meu ano<span data-label-ok-sub>O intervalo de Graduation Years inclui o seu ano</span></label></div>
@@ -147,7 +147,7 @@
         </form>
 
         <p class="sr-only" aria-live="polite" data-result-live></p>
-        <aside class="result" data-result>
+        <aside class="result" id="resultado" data-result>
           <div class="result__bar" aria-hidden="true"></div>
           <div class="result__body" data-result-body>
             <span class="result__badge"><i class="ph ph-hourglass-medium" aria-hidden="true"></i>Aguardando respostas</span>
@@ -162,7 +162,7 @@
     <section class="section" aria-labelledby="t-saber">
       <div class="wrap">
         <div class="head">
-          <h2 class="display h2" id="t-saber">O que define a elegibilidade.</h2>
+          <h2 class="display h2" id="t-saber">O que define a elegibilidade</h2>
           <p class="lead">O USMLE aceita estudantes e formados de escolas fora dos EUA que atendem aos requisitos do ECFMG segundo o World Directory of Medical Schools.</p>
         </div>
         <div class="facts-grid">
@@ -173,7 +173,7 @@
           </article>
           <article class="fact reveal" style="--i:1">
             <i class="ph ph-seal-question" aria-hidden="true"></i>
-            <h3>SAEME não é obrigatório</h3>
+            <h3>Acreditação SAEME não é obrigatória</h3>
             <p>A política de acreditação da Intealth, em vigor desde novembro de 2024, apenas informa quais escolas a cumprem. Ela não altera a elegibilidade individual. <a href="https://www.intealth.org/accreditation/" target="_blank" rel="noopener">Intealth</a></p>
           </article>
           <article class="fact reveal" style="--i:2">
@@ -189,7 +189,7 @@
       <div class="wrap v-lead">
         <div>
           <h2 class="display h2" id="t-conf">Receba a confirmação de um mentor.</h2>
-          <p class="lead" style="margin-top:18px">Conferimos a sua escola no World Directory e enviamos o resultado com a rota sugerida para o seu caso. A conferência é gratuita e não obriga a matrícula.</p>
+          <p class="lead" style="margin-top:18px">Conferimos a sua escola no World Directory e enviamos o resultado com uma rota de estudo sugerida. A conferência é gratuita e não obriga a matrícula.</p>
           <ul class="perks">
             <li><i class="ph ph-check-square-offset" aria-hidden="true"></i><span>Conferência manual da Sponsor Note e dos anos de formatura.</span></li>
             <li><i class="ph ph-signpost" aria-hidden="true"></i><span>Indicação do próximo passo, inclusive quando a resposta for negativa.</span></li>
@@ -204,24 +204,24 @@
             <p hidden><label>Não preencha: <input name="bot-field"></label></p>
             <div class="field">
               <label for="v-nome">Nome completo</label>
-              <input class="input" id="v-nome" name="nome" autocomplete="name" placeholder="Como consta no diploma" required>
-              <p class="error" data-error-for="nome" aria-live="polite"></p>
+              <input class="input" id="v-nome" name="nome" aria-describedby="err-v-nome" autocomplete="name" placeholder="Como consta no diploma" required>
+              <p class="error" id="err-v-nome" data-error-for="nome" aria-live="polite"></p>
             </div>
             <div class="field">
               <label for="v-escola">Escola médica</label>
-              <input class="input" id="v-escola" name="escola" list="lista-escolas" autocomplete="off" placeholder="Onde você se formou ou estuda" required>
-              <p class="error" data-error-for="escola" aria-live="polite"></p>
+              <input class="input" id="v-escola" name="escola" aria-describedby="err-v-escola" list="lista-escolas" autocomplete="off" placeholder="Onde você se formou ou estuda" required>
+              <p class="error" id="err-v-escola" data-error-for="escola" aria-live="polite"></p>
             </div>
             <div class="form-row">
               <div class="field">
                 <label for="v-tel">Telefone com DDD</label>
-                <input class="input" id="v-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(61) 99999-9999" data-phone required>
-                <p class="error" data-error-for="telefone" aria-live="polite"></p>
+                <input class="input" id="v-tel" name="telefone" aria-describedby="err-v-telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(61) 99999-9999" data-phone required>
+                <p class="error" id="err-v-telefone" data-error-for="telefone" aria-live="polite"></p>
               </div>
               <div class="field">
                 <label for="v-email">E-mail</label>
-                <input class="input" id="v-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" required>
-                <p class="error" data-error-for="email" aria-live="polite"></p>
+                <input class="input" id="v-email" name="email" aria-describedby="err-v-email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" required>
+                <p class="error" id="err-v-email" data-error-for="email" aria-live="polite"></p>
               </div>
             </div>
             <fieldset class="choices field">
@@ -232,11 +232,11 @@
                 <div class="choice"><input type="radio" id="vi-3" name="ingles" value="Converso com segurança"><label for="vi-3">Converso com segurança<span>Sustento uma conversa clínica</span></label></div>
                 <div class="choice"><input type="radio" id="vi-4" name="ingles" value="Fluente"><label for="vi-4">Fluente<span>Uso no dia a dia</span></label></div>
               </div>
-              <p class="error" data-error-for="ingles" aria-live="polite"></p>
+              <p class="error" id="err-v-ingles" data-error-for="ingles" aria-live="polite"></p>
             </fieldset>
             <div>
-              <label class="consent"><input type="checkbox" name="consentimento" value="sim"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por WhatsApp, e-mail e telefone sobre a verificação e a turma fundadora. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
-              <p class="error" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
+              <label class="consent"><input type="checkbox" name="consentimento" value="sim" aria-describedby="err-v-consentimento"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por WhatsApp, e-mail e telefone sobre a verificação e a turma fundadora. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
+              <p class="error" id="err-v-consentimento" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
             </div>
             <button class="btn btn--block" type="submit">Quero a confirmação <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
             <p class="form-status" data-form-status role="status"></p>
@@ -245,7 +245,7 @@
           <div class="success" data-form-success hidden tabindex="-1">
             <i class="ph-fill ph-check-circle big" aria-hidden="true"></i>
             <h3 class="display h3">Pedido recebido, <span data-first-name></span>.</h3>
-            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com a rota sugerida para o seu caso. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com a rota sugerida para o seu caso. O convite para o grupo de WhatsApp da turma fundadora chega pelo seu número.</p>
+            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. O convite para o grupo de WhatsApp da turma fundadora chega pelo seu número.</p>
             <a class="btn btn--whats" data-grupo href="#" target="_blank" rel="noopener" hidden><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i> Entrar no grupo da turma</a>
             <a class="btn btn--ghost" href="index.html#incluido">Conhecer o curso</a>
           </div>
@@ -253,6 +253,8 @@
       </div>
     </section>
   </main>
+
+  <a class="result-bar" href="#resultado" data-result-bar hidden><span data-result-bar-text></span><span>Ver resultado <i class="ph ph-arrow-up" aria-hidden="true"></i></span></a>
 
   <footer class="footer">
     <div class="wrap">
