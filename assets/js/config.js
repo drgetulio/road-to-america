@@ -17,7 +17,7 @@ window.R2A_CONFIG = {
   /* Fundador. Nome completo, CRM e RQE são exigidos pelo CFM (Res. 2.336/2023)
      quando o médico divulga especialidade em material público. */
   fundador: {
-    nome: "",      /* ex.: "Dr. Getúlio Sobrenome". Vazio = "Dr. Getúlio" */
+    nome: "Dr. Getúlio Bernardo Morato Filho",
     crm: "CRM-DF 13610",
     rqe: "",       /* ex.: "Pediatria RQE 0000 · Medicina Esportiva RQE 0000" */
     lattes: "",    /* link do Currículo Lattes */
