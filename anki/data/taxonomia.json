@@ -1,0 +1,39 @@
+{
+  "versao": 1,
+  "atualizado_em": "2026-10-28",
+  "fonte": "USMLE Step 1 Content Outline and Specifications (usmle.org), conferido em outubro de 2026",
+  "fonte_url": "https://www.usmle.org/prepare-your-exam/step-1-materials/step-1-content-outline-and-specifications",
+  "observacoes": [
+    "As faixas são a proporção aproximada de itens da prova por sistema e por disciplina. Um item pode pertencer a mais de uma disciplina, por isso as faixas somam mais de 100%. O USMLE avisa que elas podem mudar a qualquer momento.",
+    "General Principles saiu do outline na atualização de 2024; os temas foram redistribuídos entre os sistemas e a nova categoria Human Development. A chave 'geral' fica como conceitos transversais, sem faixa.",
+    "Bioquímica aparece como 'Biochemistry & Nutrition 5-15%'. Uma linha separada de nutrição não foi confirmada; cards com a chave 'nutricao' são contados junto com bioquímica.",
+    "Cardiovascular: 7-11% na maioria das fontes; uma fonte de terceiros dá 10-14%."
+  ],
+  "sistemas": [
+    { "chave": "desenvolvimento_humano", "nome_pt": "Desenvolvimento humano", "nome_en": "Human Development", "faixa_min": 1, "faixa_max": 3 },
+    { "chave": "sangue_imune", "nome_pt": "Sangue e sistemas linforreticular e imune", "nome_curto": "Sangue e imune", "nome_en": "Blood & Lymphoreticular/Immune Systems", "faixa_min": 9, "faixa_max": 13 },
+    { "chave": "comportamento_nervoso", "nome_pt": "Saúde comportamental, sistema nervoso e órgãos dos sentidos", "nome_curto": "Nervoso e comportamento", "nome_en": "Behavioral Health & Nervous Systems/Special Senses", "faixa_min": 10, "faixa_max": 14 },
+    { "chave": "musculoesqueletico_pele", "nome_pt": "Sistema musculoesquelético, pele e tecido subcutâneo", "nome_curto": "Musculoesquelético e pele", "nome_en": "Musculoskeletal, Skin & Subcutaneous Tissue", "faixa_min": 8, "faixa_max": 12 },
+    { "chave": "cardiovascular", "nome_pt": "Sistema cardiovascular", "nome_curto": "Cardiovascular", "nome_en": "Cardiovascular System", "faixa_min": 7, "faixa_max": 11 },
+    { "chave": "respiratorio_renal", "nome_pt": "Sistemas respiratório e renal/urinário", "nome_curto": "Respiratório e renal", "nome_en": "Respiratory & Renal/Urinary Systems", "faixa_min": 11, "faixa_max": 15 },
+    { "chave": "gastrointestinal", "nome_pt": "Sistema gastrointestinal", "nome_curto": "Gastrointestinal", "nome_en": "Gastrointestinal System", "faixa_min": 6, "faixa_max": 10 },
+    { "chave": "reprodutor_endocrino", "nome_pt": "Sistemas reprodutor e endócrino", "nome_curto": "Reprodutor e endócrino", "nome_en": "Reproductive & Endocrine Systems", "faixa_min": 12, "faixa_max": 16 },
+    { "chave": "multissistemico", "nome_pt": "Processos e doenças multissistêmicos", "nome_curto": "Multissistêmico", "nome_en": "Multisystem Processes & Disorders", "faixa_min": 8, "faixa_max": 12 },
+    { "chave": "bioestatistica", "nome_pt": "Bioestatística, epidemiologia e saúde populacional", "nome_curto": "Bioestatística e epidemiologia", "nome_en": "Biostatistics & Epidemiology/Population Health", "faixa_min": 4, "faixa_max": 6 },
+    { "chave": "ciencias_sociais", "nome_pt": "Ciências sociais: comunicação e habilidades interpessoais", "nome_curto": "Ciências sociais e comunicação", "nome_en": "Social Sciences: Communication and Interpersonal Skills", "faixa_min": 6, "faixa_max": 9 },
+    { "chave": "geral", "nome_pt": "Conceitos transversais (fora do outline desde 2024)", "nome_curto": "Conceitos transversais", "nome_en": "General Principles (removed from the outline in 2024)", "faixa_min": null, "faixa_max": null }
+  ],
+  "disciplinas": [
+    { "chave": "patologia", "nome_pt": "Patologia", "nome_en": "Pathology", "faixa_min": 45, "faixa_max": 55 },
+    { "chave": "fisiologia", "nome_pt": "Fisiologia", "nome_en": "Physiology", "faixa_min": 30, "faixa_max": 40 },
+    { "chave": "anatomia", "nome_pt": "Anatomia macroscópica e embriologia", "nome_curto": "Anatomia e embriologia", "nome_en": "Gross Anatomy & Embryology", "faixa_min": 10, "faixa_max": 20 },
+    { "chave": "microbiologia", "nome_pt": "Microbiologia", "nome_en": "Microbiology", "faixa_min": 10, "faixa_max": 20 },
+    { "chave": "farmacologia", "nome_pt": "Farmacologia", "nome_en": "Pharmacology", "faixa_min": 10, "faixa_max": 20 },
+    { "chave": "comportamental", "nome_pt": "Ciências do comportamento", "nome_en": "Behavioral Sciences", "faixa_min": 10, "faixa_max": 15 },
+    { "chave": "bioquimica", "nome_pt": "Bioquímica e nutrição", "nome_en": "Biochemistry & Nutrition", "faixa_min": 5, "faixa_max": 15 },
+    { "chave": "histologia", "nome_pt": "Histologia e biologia celular", "nome_curto": "Histologia e biologia celular", "nome_en": "Histology & Cell Biology", "faixa_min": 5, "faixa_max": 15 },
+    { "chave": "imunologia", "nome_pt": "Imunologia", "nome_en": "Immunology", "faixa_min": 5, "faixa_max": 15 },
+    { "chave": "genetica", "nome_pt": "Genética", "nome_en": "Genetics", "faixa_min": 5, "faixa_max": 10 },
+    { "chave": "nutricao", "nome_pt": "Nutrição (contada com bioquímica)", "nome_curto": "Nutrição", "nome_en": "Nutrition", "faixa_min": null, "faixa_max": null, "agrupar_em": "bioquimica" }
+  ]
+}
