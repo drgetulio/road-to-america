@@ -1,0 +1,152 @@
+/* Escolas médicas brasileiras para o autocompletar.
+   saeme: true  = consta na lista pública de cursos acreditados pelo SAEME-CFM
+                  (reconstruída em 27/10/2026 a partir de saeme.org.br; conferir antes de cada turma).
+   validade     = "Acreditada até" informada pelo SAEME (mês/ano).
+   Escolas sem a marcação podem ou não ser acreditadas. A acreditação SAEME
+   NÃO é requisito para o USMLE: quem decide é a ECFMG Sponsor Note no WDOMS. */
+window.R2A_ESCOLAS = [
+  /* Centro-Oeste */
+  { nome: "Universidade de Brasília", sigla: "UnB", uf: "DF", cidade: "Brasília", saeme: true, validade: "dez/2028" },
+  { nome: "Escola Superior de Ciências da Saúde", sigla: "ESCS", uf: "DF", cidade: "Brasília", saeme: true, validade: "jun/2030" },
+  { nome: "Centro Universitário de Brasília", sigla: "UniCEUB", aliases: ["CEUB", "UNICEUB"], uf: "DF", cidade: "Brasília", saeme: true, validade: "fev/2032" },
+  { nome: "Centro Universitário Alfredo Nasser", sigla: "UNIFAN", uf: "GO", cidade: "Aparecida de Goiânia", saeme: true, validade: "ago/2029" },
+  { nome: "Universidade Evangélica de Goiás", sigla: "UniEVANGÉLICA", uf: "GO", cidade: "Anápolis", saeme: true, validade: "mar/2032" },
+  { nome: "Universidade Estadual de Mato Grosso do Sul", sigla: "UEMS", uf: "MS", cidade: "Campo Grande", saeme: true, validade: "nov/2029" },
+  /* Nordeste */
+  { nome: "Universidade Federal do Ceará, Fortaleza", sigla: "UFC", uf: "CE", cidade: "Fortaleza", saeme: true, validade: "dez/2028" },
+  { nome: "Universidade Federal do Ceará, Campus Sobral", sigla: "UFC Sobral", uf: "CE", cidade: "Sobral", saeme: true, validade: "mar/2030" },
+  { nome: "Centro Universitário Christus", sigla: "UNICHRISTUS", uf: "CE", cidade: "Fortaleza", saeme: true, validade: "ago/2029" },
+  { nome: "Universidade de Fortaleza", sigla: "Unifor", uf: "CE", cidade: "Fortaleza", saeme: true, validade: "jun/2030" },
+  { nome: "Faculdade Pernambucana de Saúde", sigla: "FPS", uf: "PE", cidade: "Recife", saeme: true, validade: "mai/2029" },
+  { nome: "Escola Bahiana de Medicina e Saúde Pública", sigla: "EBMSP", uf: "BA", cidade: "Salvador", saeme: true, validade: "mar/2030" },
+  { nome: "Centro Universitário Cesmac", sigla: "CESMAC", uf: "AL", cidade: "Maceió", saeme: true, validade: "mar/2030" },
+  { nome: "Universidade Federal do Rio Grande do Norte, Natal", sigla: "UFRN", uf: "RN", cidade: "Natal", saeme: true, validade: "dez/2030" },
+  { nome: "Centro Universitário Uninovafapi", sigla: "Uninovafapi", uf: "PI", cidade: "Teresina", saeme: true, validade: "fev/2032" },
+  /* Norte */
+  { nome: "Centro Universitário Metropolitano da Amazônia", sigla: "UNIFAMAZ", uf: "PA", cidade: "Belém", saeme: true, validade: "ago/2029" },
+  { nome: "Centro Universitário do Estado do Pará", sigla: "CESUPA", uf: "PA", cidade: "Belém", saeme: true, validade: "mar/2030" },
+  { nome: "Instituto Tocantinense Presidente Antônio Carlos", sigla: "ITPAC", uf: "TO", cidade: "", saeme: true, validade: "mai/2032" },
+  /* Sudeste */
+  { nome: "Faculdade CERES", sigla: "FACERES", uf: "SP", cidade: "São José do Rio Preto", saeme: true, validade: "out/2026" },
+  { nome: "Faculdade de Medicina da Universidade de São Paulo", sigla: "FMUSP", uf: "SP", cidade: "São Paulo", saeme: true, validade: "jan/2027" },
+  { nome: "Faculdade de Medicina de Ribeirão Preto da USP", sigla: "FMRP-USP", uf: "SP", cidade: "Ribeirão Preto", saeme: true, validade: "jan/2027" },
+  { nome: "Universidade Municipal de São Caetano do Sul", sigla: "USCS", uf: "SP", cidade: "São Caetano do Sul", saeme: true, validade: "jul/2028" },
+  { nome: "Faculdade de Ciências da Saúde de Barretos Dr. Paulo Prata", sigla: "FACISB", uf: "SP", cidade: "Barretos", saeme: true, validade: "jul/2028" },
+  { nome: "Faculdade Santa Marcelina", sigla: "FASM", uf: "SP", cidade: "São Paulo", saeme: true, validade: "jul/2028" },
+  { nome: "Universidade Estadual de Campinas", sigla: "UNICAMP", uf: "SP", cidade: "Campinas", saeme: true, validade: "dez/2028" },
+  { nome: "Universidade Federal de Juiz de Fora, campus sede", sigla: "UFJF", uf: "MG", cidade: "Juiz de Fora", saeme: true, validade: "dez/2028" },
+  { nome: "Faculdade de Ciências Médicas de Minas Gerais", sigla: "FCMMG", uf: "MG", cidade: "Belo Horizonte", saeme: true, validade: "dez/2028" },
+  { nome: "Universidade de Santo Amaro, Campus Interlagos", sigla: "Unisa", uf: "SP", cidade: "São Paulo", saeme: true, validade: "dez/2028" },
+  { nome: "Centro Universitário São Camilo", sigla: "São Camilo", uf: "SP", cidade: "São Paulo", saeme: true, validade: "dez/2028" },
+  { nome: "Faculdade Israelita de Ciências da Saúde Albert Einstein", sigla: "FICSAE", uf: "SP", cidade: "São Paulo", saeme: true, validade: "ago/2029" },
+  { nome: "Centro Universitário de Volta Redonda", sigla: "UNIFOA", uf: "RJ", cidade: "Volta Redonda", saeme: true, validade: "ago/2029" },
+  { nome: "Faculdade de Medicina de Jundiaí", sigla: "FMJ", uf: "SP", cidade: "Jundiaí", saeme: true, validade: "ago/2029" },
+  { nome: "Faculdade de Medicina de São José do Rio Preto", sigla: "FAMERP", uf: "SP", cidade: "São José do Rio Preto", saeme: true, validade: "nov/2029" },
+  { nome: "Universidade de Franca", sigla: "UNIFRAN", uf: "SP", cidade: "Franca", saeme: true, validade: "nov/2029" },
+  { nome: "Centro Universitário Serra dos Órgãos", sigla: "UNIFESO", uf: "RJ", cidade: "Teresópolis", saeme: true, validade: "nov/2029" },
+  { nome: "Centro Universitário Barão de Mauá", sigla: "CUBM", uf: "SP", cidade: "Ribeirão Preto", saeme: true, validade: "nov/2029" },
+  { nome: "Faculdade de Medicina de Marília", sigla: "FAMEMA", uf: "SP", cidade: "Marília", saeme: true, validade: "mar/2030" },
+  { nome: "Pontifícia Universidade Católica de São Paulo, Campus Sorocaba", sigla: "PUC-SP", uf: "SP", cidade: "Sorocaba", saeme: true, validade: "mar/2030" },
+  { nome: "Universidade do Oeste Paulista, Presidente Prudente", sigla: "UNOESTE", uf: "SP", cidade: "Presidente Prudente", saeme: true, validade: "dez/2030" },
+  { nome: "Instituto Master de Ensino Presidente Antônio Carlos", sigla: "IMEPAC", uf: "MG", cidade: "Araguari", saeme: true, validade: "dez/2030" },
+  { nome: "Escola Superior de Ciências da Santa Casa de Misericórdia de Vitória", sigla: "EMESCAM", uf: "ES", cidade: "Vitória", saeme: true, validade: "abr/2031" },
+  { nome: "Faculdade de Medicina de Petrópolis", sigla: "UNIFASE", uf: "RJ", cidade: "Petrópolis", saeme: true, validade: "jun/2031" },
+  { nome: "Universidade de Mogi das Cruzes", sigla: "UMC", uf: "SP", cidade: "Mogi das Cruzes", saeme: true, validade: "set/2031" },
+  { nome: "Pontifícia Universidade Católica de Minas Gerais, Poços de Caldas", sigla: "PUC Minas", uf: "MG", cidade: "Poços de Caldas", saeme: true, validade: "set/2031" },
+  { nome: "Faculdade de Ciências Médicas da Santa Casa de São Paulo", sigla: "FCMSCSP", uf: "SP", cidade: "São Paulo", saeme: true, validade: "set/2031" },
+  { nome: "Faculdade de Ciências Médicas de São José dos Campos, Humanitas", sigla: "FCMSJC", uf: "SP", cidade: "São José dos Campos", saeme: true, validade: "set/2031" },
+  { nome: "Faculdade Estácio Vista Carioca", sigla: "Estácio", uf: "RJ", cidade: "Rio de Janeiro", saeme: true, validade: "dez/2031" },
+  { nome: "Centro Universitário UNIFIPMOC", sigla: "UNIFIPMOC", uf: "MG", cidade: "Montes Claros", saeme: true, validade: "dez/2031" },
+  { nome: "Faculdade de Medicina de Itajubá", sigla: "FMIT", uf: "MG", cidade: "Itajubá", saeme: true, validade: "mar/2032" },
+  { nome: "Universidade Federal de São João del-Rei", sigla: "UFSJ", uf: "MG", cidade: "", saeme: true, validade: "mai/2032" },
+  { nome: "Centro Universitário Presidente Tancredo de Almeida Neves", sigla: "UNIPTAN", uf: "MG", cidade: "São João del-Rei", saeme: true, validade: "mai/2032" },
+  /* Sul */
+  { nome: "Faculdade Evangélica Mackenzie do Paraná", sigla: "FEMPAR", uf: "PR", cidade: "Curitiba", saeme: true, validade: "mar/2027" },
+  { nome: "Pontifícia Universidade Católica do Rio Grande do Sul", sigla: "PUCRS", uf: "RS", cidade: "Porto Alegre", saeme: true, validade: "mar/2027" },
+  { nome: "Pontifícia Universidade Católica do Paraná, Londrina", sigla: "PUCPR Londrina", uf: "PR", cidade: "Londrina", saeme: true, validade: "ago/2029" },
+  { nome: "Pontifícia Universidade Católica do Paraná, Curitiba", sigla: "PUCPR", uf: "PR", cidade: "Curitiba", saeme: true, validade: "jun/2030" },
+  { nome: "Universidade Federal de Ciências da Saúde de Porto Alegre", sigla: "UFCSPA", uf: "RS", cidade: "Porto Alegre", saeme: true, validade: "ago/2029" },
+  { nome: "Universidade Regional de Blumenau", sigla: "FURB", uf: "SC", cidade: "Blumenau", saeme: true, validade: "nov/2029" },
+  { nome: "Faculdades Pequeno Príncipe", sigla: "FPP", uf: "PR", cidade: "Curitiba", saeme: true, validade: "mar/2030" },
+  { nome: "Universidade do Vale do Itajaí", sigla: "Univali", uf: "SC", cidade: "Itajaí", saeme: true, validade: "jun/2030" },
+  { nome: "Centro Universitário para o Desenvolvimento do Alto Vale do Itajaí", sigla: "UNIDAVI", uf: "SC", cidade: "Rio do Sul", saeme: true, validade: "ago/2030" },
+  { nome: "Universidade de Caxias do Sul", sigla: "UCS", uf: "RS", cidade: "Caxias do Sul", saeme: true, validade: "dez/2030" },
+  { nome: "UniCesumar, Campus Maringá", sigla: "UniCesumar", uf: "PR", cidade: "Maringá", saeme: true, validade: "abr/2031" },
+  { nome: "Universidade Estadual de Londrina", sigla: "UEL", uf: "PR", cidade: "Londrina", saeme: true, validade: "dez/2031" },
+  { nome: "Universidade Estadual do Centro-Oeste", sigla: "UNICENTRO", uf: "PR", cidade: "Guarapuava", saeme: true, validade: "mar/2032" },
+  { nome: "Universidade Federal do Rio Grande do Sul", sigla: "UFRGS", uf: "RS", cidade: "Porto Alegre", saeme: true, validade: "mar/2032" },
+  { nome: "Universidade Federal do Pampa", sigla: "UNIPAMPA", uf: "RS", cidade: "Uruguaiana", saeme: true, validade: "mar/2032" },
+
+  /* Outras escolas, sem acreditação SAEME vigente na lista consultada */
+  { nome: "Universidade Federal de Minas Gerais", sigla: "UFMG", uf: "MG", cidade: "Belo Horizonte" },
+  { nome: "Universidade Federal de Viçosa", sigla: "UFV", uf: "MG", cidade: "Viçosa" },
+  { nome: "Universidade Federal de Alagoas", sigla: "UFAL", uf: "AL", cidade: "Maceió" },
+  { nome: "Pontifícia Universidade Católica de Minas Gerais, Betim", sigla: "PUC Minas Betim", uf: "MG", cidade: "Betim" },
+  { nome: "Universidade Federal de São Paulo, Escola Paulista de Medicina", sigla: "UNIFESP", uf: "SP", cidade: "São Paulo" },
+  { nome: "Faculdade de Medicina de Botucatu", sigla: "UNESP", uf: "SP", cidade: "Botucatu" },
+  { nome: "Centro Universitário FMABC", sigla: "FMABC", uf: "SP", cidade: "Santo André" },
+  { nome: "Pontifícia Universidade Católica de Campinas", sigla: "PUC-Campinas", uf: "SP", cidade: "Campinas" },
+  { nome: "Universidade Federal de São Carlos", sigla: "UFSCar", uf: "SP", cidade: "São Carlos" },
+  { nome: "Universidade Federal do Rio de Janeiro", sigla: "UFRJ", uf: "RJ", cidade: "Rio de Janeiro" },
+  { nome: "Universidade do Estado do Rio de Janeiro", sigla: "UERJ", uf: "RJ", cidade: "Rio de Janeiro" },
+  { nome: "Universidade Federal Fluminense", sigla: "UFF", uf: "RJ", cidade: "Niterói" },
+  { nome: "Universidade Federal do Estado do Rio de Janeiro", sigla: "UNIRIO", uf: "RJ", cidade: "Rio de Janeiro" },
+  { nome: "Fundação Técnico-Educacional Souza Marques", sigla: "Souza Marques", uf: "RJ", cidade: "Rio de Janeiro" },
+  { nome: "Universidade do Grande Rio", sigla: "UNIGRANRIO", uf: "RJ", cidade: "Duque de Caxias" },
+  { nome: "Universidade Federal do Espírito Santo", sigla: "UFES", uf: "ES", cidade: "Vitória" },
+  { nome: "Universidade Federal de Uberlândia", sigla: "UFU", uf: "MG", cidade: "Uberlândia" },
+  { nome: "Universidade Federal do Triângulo Mineiro", sigla: "UFTM", uf: "MG", cidade: "Uberaba" },
+  { nome: "Universidade Federal de Ouro Preto", sigla: "UFOP", uf: "MG", cidade: "Ouro Preto" },
+  { nome: "Universidade Estadual de Montes Claros", sigla: "Unimontes", uf: "MG", cidade: "Montes Claros" },
+  { nome: "Universidade José do Rosário Vellano", sigla: "Unifenas", uf: "MG", cidade: "Alfenas" },
+  { nome: "Universidade Federal de Juiz de Fora, Governador Valadares", sigla: "UFJF-GV", uf: "MG", cidade: "Governador Valadares" },
+  { nome: "Universidade Federal do Paraná", sigla: "UFPR", uf: "PR", cidade: "Curitiba" },
+  { nome: "Universidade Estadual de Maringá", sigla: "UEM", uf: "PR", cidade: "Maringá" },
+  { nome: "Universidade Estadual de Ponta Grossa", sigla: "UEPG", uf: "PR", cidade: "Ponta Grossa" },
+  { nome: "Universidade Estadual do Oeste do Paraná", sigla: "UNIOESTE", uf: "PR", cidade: "Cascavel" },
+  { nome: "Universidade Federal de Santa Catarina", sigla: "UFSC", uf: "SC", cidade: "Florianópolis" },
+  { nome: "Universidade do Sul de Santa Catarina", sigla: "Unisul", uf: "SC", cidade: "Tubarão" },
+  { nome: "Universidade Federal de Santa Maria", sigla: "UFSM", uf: "RS", cidade: "Santa Maria" },
+  { nome: "Universidade Federal de Pelotas", sigla: "UFPel", uf: "RS", cidade: "Pelotas" },
+  { nome: "Universidade Federal do Rio Grande", sigla: "FURG", uf: "RS", cidade: "Rio Grande" },
+  { nome: "Universidade Luterana do Brasil", sigla: "ULBRA", uf: "RS", cidade: "Canoas" },
+  { nome: "Universidade de Passo Fundo", sigla: "UPF", uf: "RS", cidade: "Passo Fundo" },
+  { nome: "Universidade Federal de Goiás", sigla: "UFG", uf: "GO", cidade: "Goiânia" },
+  { nome: "Pontifícia Universidade Católica de Goiás", sigla: "PUC Goiás", uf: "GO", cidade: "Goiânia" },
+  { nome: "Universidade Federal de Mato Grosso", sigla: "UFMT", uf: "MT", cidade: "Cuiabá" },
+  { nome: "Universidade Federal de Mato Grosso do Sul", sigla: "UFMS", uf: "MS", cidade: "Campo Grande" },
+  { nome: "Universidade Federal da Bahia", sigla: "UFBA", uf: "BA", cidade: "Salvador" },
+  { nome: "Universidade Estadual de Feira de Santana", sigla: "UEFS", uf: "BA", cidade: "Feira de Santana" },
+  { nome: "Universidade Estadual de Santa Cruz", sigla: "UESC", uf: "BA", cidade: "Ilhéus" },
+  { nome: "Universidade Federal de Pernambuco", sigla: "UFPE", uf: "PE", cidade: "Recife" },
+  { nome: "Universidade de Pernambuco", sigla: "UPE", uf: "PE", cidade: "Recife" },
+  { nome: "Universidade Federal da Paraíba", sigla: "UFPB", uf: "PB", cidade: "João Pessoa" },
+  { nome: "Universidade Federal de Campina Grande", sigla: "UFCG", uf: "PB", cidade: "Campina Grande" },
+  { nome: "Universidade Estadual de Ciências da Saúde de Alagoas", sigla: "UNCISAL", uf: "AL", cidade: "Maceió" },
+  { nome: "Universidade Federal de Sergipe", sigla: "UFS", uf: "SE", cidade: "Aracaju" },
+  { nome: "Universidade Federal do Piauí", sigla: "UFPI", uf: "PI", cidade: "Teresina" },
+  { nome: "Universidade Federal do Maranhão", sigla: "UFMA", uf: "MA", cidade: "São Luís" },
+  { nome: "Universidade Estadual do Ceará", sigla: "UECE", uf: "CE", cidade: "Fortaleza" },
+  { nome: "Universidade Federal do Pará", sigla: "UFPA", uf: "PA", cidade: "Belém" },
+  { nome: "Universidade do Estado do Pará", sigla: "UEPA", uf: "PA", cidade: "Belém" },
+  { nome: "Universidade Federal do Amazonas", sigla: "UFAM", uf: "AM", cidade: "Manaus" },
+  { nome: "Universidade do Estado do Amazonas", sigla: "UEA", uf: "AM", cidade: "Manaus" },
+  { nome: "Universidade Federal do Tocantins", sigla: "UFT", uf: "TO", cidade: "Palmas" },
+  { nome: "Universidade Federal de Rondônia", sigla: "UNIR", uf: "RO", cidade: "Porto Velho" },
+  { nome: "Universidade Federal do Acre", sigla: "UFAC", uf: "AC", cidade: "Rio Branco" },
+  { nome: "Universidade Federal de Roraima", sigla: "UFRR", uf: "RR", cidade: "Boa Vista" },
+  { nome: "Universidade Federal do Amapá", sigla: "UNIFAP", uf: "AP", cidade: "Macapá" }
+];
+
+/* Uma acreditação com validade já vencida não conta como vigente. */
+(function () {
+  var MESES = { jan: 0, fev: 1, mar: 2, abr: 3, mai: 4, jun: 5, jul: 6, ago: 7, set: 8, out: 9, nov: 10, dez: 11 };
+  var hoje = new Date();
+  window.R2A_ESCOLAS.forEach(function (s) {
+    if (!s.saeme || !s.validade) return;
+    var p = s.validade.split("/");
+    var fim = new Date(Number(p[1]), (MESES[p[0]] || 0) + 1, 0, 23, 59);
+    if (fim < hoje) { s.saeme = false; s.vencida = s.validade; }
+  });
+  window.R2A_ESCOLAS.sort(function (a, b) { return a.nome.localeCompare(b.nome, "pt-BR"); });
+})();
