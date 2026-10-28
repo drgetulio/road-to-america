@@ -29,7 +29,7 @@ window.R2A_CONFIG = {
 
   /* Oferta. Cada campo preenchido aparece no cartão de preço. */
   oferta: {
-    pagamento: "", /* ex.: "R$ 12.000 à vista no Pix ou em até 12x de R$ 1.000 no cartão" */
+    pagamento: "À vista ou em até 12 vezes de R$ 1.000 no cartão de crédito.",
     inicio: "",    /* ex.: "Fevereiro de 2027" */
     vagas: "",     /* ex.: "40" */
     aulas: "",     /* ex.: "Gravadas, liberadas toda segunda" */
