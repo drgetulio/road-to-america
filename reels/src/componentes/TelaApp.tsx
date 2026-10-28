@@ -6,7 +6,7 @@ import { interp, mola } from "../anim";
 import { useCena } from "../contexto";
 import { AREA, COR, FONTE } from "../tema";
 import { ajustar, caixaAlta, lerUnidades, semMarcas } from "../texto";
-import { TextoRico } from "./TextoRico";
+import { TextoRico, contarUnidades } from "./TextoRico";
 
 type Props = { texto: string; duracao: number };
 
@@ -40,7 +40,8 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
   );
   const altTitulo = titulo.linhas.length * titulo.tamanho * 0.95;
 
-  const p = mola(frame, fps, a0 + 4, "pop");
+  // a tela sobe quando as últimas palavras do título já pousaram, para não cobrir a segunda linha
+  const p = mola(frame, fps, a0 + Math.max(4, contarUnidades(titulo) * 2.5 - 1), "firme"); // sem overshoot: a tela não sobe além do lugar e não cobre o título
   const dy = (1 - p) * 700;
   const respira = interp(frame, [a0, duracao], [1, 1.03]);
   const tela = COR.papel;
@@ -102,7 +103,7 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
         const ss = String(restante % 60).padStart(2, "0");
         const escolha = t(26, 32);
         return (
-          <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <Barra w={300} h={30} cor={cinza2} />
               {relogio ? (
@@ -111,15 +112,14 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
                 </div>
               ) : null}
             </div>
-            <Barra w="96%" h={22} cor={cinza} />
-            <Barra w="88%" h={22} cor={cinza} />
-            <Barra w="60%" h={22} cor={cinza} style={{ marginBottom: 10 }} />
+            <Barra w="94%" h={22} cor={cinza} />
+            <Barra w="62%" h={22} cor={cinza} style={{ marginBottom: 6 }} />
             {["A", "B", "C", "D", "E"].map((l, i) => {
               const op = t(8 + i * 3, 14 + i * 3);
               const certa = i === 2;
               const marcada = certa && escolha > 0;
               return (
-                <div key={l} style={{ display: "flex", alignItems: "center", gap: 24, padding: "10px 22px", borderRadius: 20, background: marcada ? COR.verde : "#fff", boxShadow: `inset 0 0 0 3px ${marcada ? COR.verde : cinza}`, opacity: op, transform: `translateX(${(1 - op) * 40}px) scale(${1 + 0.04 * interp(frame, [a0 + 26, a0 + 30, a0 + 38], [0, 1, 0])})` }}>
+                <div key={l} style={{ display: "flex", alignItems: "center", gap: 24, padding: "6px 22px", borderRadius: 20, background: marcada ? COR.verde : "#fff", boxShadow: `inset 0 0 0 3px ${marcada ? COR.verde : cinza}`, opacity: op, transform: `translateX(${(1 - op) * 40}px) scale(${1 + 0.04 * interp(frame, [a0 + 26, a0 + 30, a0 + 38], [0, 1, 0])})` }}>
                   <div style={{ width: 64, height: 64, borderRadius: 32, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FONTE.titulo, fontWeight: 800, fontSize: 50, color: marcada ? COR.verde : tinta, background: marcada ? "#fff" : cinza }}>
                     {l}
                   </div>
@@ -169,12 +169,12 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
       case "grafico": {
         const alturas = [0.38, 0.52, 0.47, 0.66, 0.74, 0.86];
         return (
-          <div style={{ height: 600, display: "flex", alignItems: "flex-end", gap: 26, padding: "0 10px", borderBottom: `6px solid ${cinza2}`, position: "relative" }}>
-            <div style={{ position: "absolute", left: 0, right: 0, bottom: 600 * 0.7, borderTop: `5px dashed ${COR.verde}`, opacity: t(30, 36) }} />
+          <div style={{ height: 520, display: "flex", alignItems: "flex-end", gap: 26, padding: "0 10px", borderBottom: `6px solid ${cinza2}`, position: "relative" }}>
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 520 * 0.7, borderTop: `5px dashed ${COR.verde}`, opacity: t(30, 36) }} />
             {alturas.map((h, i) => {
               const g = mola(frame, fps, a0 + 8 + i * 4, "firme");
               const ultima = i === alturas.length - 1;
-              return <div key={i} style={{ flex: 1, height: 600 * h * g, borderRadius: "18px 18px 0 0", background: ultima ? COR.verde : i >= 4 ? "rgba(29,138,75,0.55)" : cinza2 }} />;
+              return <div key={i} style={{ flex: 1, height: 520 * h * g, borderRadius: "18px 18px 0 0", background: ultima ? COR.verde : i >= 4 ? "rgba(29,138,75,0.55)" : cinza2 }} />;
             })}
           </div>
         );
@@ -200,7 +200,7 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
         const prog = interp(frame, [a0 + 10, duracao], [0.1, 0.62], (x) => x);
         return (
           <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
-            <div style={{ height: 420, borderRadius: 26, background: COR.navy, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+            <div style={{ height: 330, borderRadius: 26, background: COR.navy, position: "relative", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
               <div style={{ position: "absolute", inset: 0, background: `linear-gradient(135deg, ${COR.navy}, #1b3c6b)` }} />
               <div style={{ position: "relative", width: 150, height: 150, borderRadius: 75, background: COR.vermelho, display: "flex", alignItems: "center", justifyContent: "center", transform: `scale(${1 + 0.06 * Math.sin(frame * 0.2)})` }}>
                 <svg width={70} height={70} viewBox="0 0 100 100">
@@ -211,7 +211,7 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
                 <div style={{ width: `${prog * 100}%`, height: "100%", borderRadius: 7, background: COR.amarelo }} />
               </div>
             </div>
-            {[0, 1, 2].map((i) => (
+            {[0, 1].map((i) => (
               <div key={i} style={{ display: "flex", gap: 22, alignItems: "center", opacity: t(12 + i * 4, 18 + i * 4) }}>
                 <div style={{ width: 150, height: 90, borderRadius: 16, background: i === 0 ? COR.vermelho : cinza2 }} />
                 <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 12 }}>
@@ -268,8 +268,8 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
 
   return (
     <AbsoluteFill>
-      <div style={{ position: "absolute", left: AREA.x, top: AREA.y, width: AREA.largura, height: AREA.altura, display: "flex", flexDirection: "column", gap: 44, justifyContent: "center" }}>
-        <div style={{ minHeight: altTitulo }}>
+      <div style={{ position: "absolute", left: AREA.x, top: AREA.y, width: AREA.largura, height: AREA.altura, display: "flex", flexDirection: "column", gap: 52, justifyContent: "center" }}>
+        <div style={{ minHeight: altTitulo, position: "relative", zIndex: 2 }}>
           <TextoRico ajuste={titulo} cor={tom.tinta} corDestaque={tom.destaque} alinhar="left" atraso={a0} passo={2.5} sombra={!tom.claro} variante={tom.claro ? "cor" : "pop"} />
         </div>
         <div

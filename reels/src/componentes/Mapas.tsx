@@ -47,22 +47,12 @@ export const RotaBrasilEUA: React.FC<{ itens: Item[]; duracao: number }> = ({ it
   const [bx, by] = bezier(o, c, d, Math.min(1, t + 0.01));
   const ang = (Math.atan2(by - ay, bx - ax) * 180) / Math.PI + 90;
 
-  const textos = useMemo(
-    () =>
-      itens.map((it) =>
-        ajustar(lerUnidades(it.cena.texto_tela), {
-          fonte: "bc800",
-          largura: AREA.largura,
-          altura: n > 1 ? 130 : 240,
-          max: n > 1 ? 100 : 116,
-          min: 64,
-          entrelinha: 0.95,
-          maxLinhas: n > 1 ? 1 : 2,
-          maiusculas: true,
-        }),
-      ),
-    [itens, n],
-  );
+  const textos = useMemo(() => {
+    const opc = { fonte: "bc800" as const, largura: AREA.largura, altura: n > 1 ? 130 : 240, max: n > 1 ? 100 : 116, min: 64, entrelinha: 0.95, maxLinhas: n > 1 ? 1 : 2, maiusculas: true };
+    // as linhas da rota usam o mesmo corpo, para a etapa nova não parecer menor que a anterior
+    const t = Math.min(...itens.map((it) => ajustar(lerUnidades(it.cena.texto_tela), opc).tamanho));
+    return itens.map((it) => ajustar(lerUnidades(it.cena.texto_tela), { ...opc, max: t, min: Math.min(t, 64) }));
+  }, [itens, n]);
 
   const cam = interp(frame, [0, duracao], [1.0, 1.06]);
   const corEua = tom.claro ? COR.navy : "#ffffff";

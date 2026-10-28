@@ -449,7 +449,7 @@
           "inicio_s": 39.5,
           "fim_s": 42.0,
           "tipo_visual": "globo_rota",
-          "texto_tela": "Step 2 CK: mais *8 a 12*",
+          "texto_tela": "Step 2 CK: mais *8 a 12 meses*",
           "narracao": "E mais oito a doze até o Step 2 CK."
         },
         {
@@ -933,8 +933,8 @@
         {
           "inicio_s": 45.0,
           "fim_s": 47.5,
-          "tipo_visual": "contador",
-          "texto_tela": "Descubra seu *ponto de partida*"
+          "tipo_visual": "placa_exit",
+          "texto_tela": "EXIT: descubra seu *ponto de partida*"
         },
         {
           "inicio_s": 47.5,
@@ -1099,7 +1099,7 @@
         {
           "inicio_s": 45.0,
           "fim_s": 47.5,
-          "tipo_visual": "contador",
+          "tipo_visual": "cartao_embarque",
           "texto_tela": "Descubra seu *ponto de partida*"
         },
         {
@@ -2310,7 +2310,7 @@
           "inicio_s": 5.0,
           "fim_s": 7.5,
           "tipo_visual": "tela_app",
-          "texto_tela": "Nativo no Anki desde *23.10*",
+          "texto_tela": "Nativo no Anki desde a *versão 23.10*",
           "narracao": "É o agendador nativo do Anki desde a versão 23.10."
         },
         {
@@ -3138,7 +3138,7 @@
           "inicio_s": 15.5,
           "fim_s": 18.5,
           "tipo_visual": "carimbo",
-          "texto_tela": "Reembolso *integral* em 3 anos",
+          "texto_tela": "Reembolso *integral*, com condições",
           "narracao": "E reembolso integral em três anos, nas condições do termo."
         },
         {
@@ -3201,7 +3201,7 @@
           "inicio_s": 39.5,
           "fim_s": 42.0,
           "tipo_visual": "legenda_cinetica",
-          "texto_tela": "Mentor responde em *1 dia útil*",
+          "texto_tela": "Mentor responde em *até 1 dia útil*",
           "narracao": "Um mentor responde em até um dia útil."
         },
         {

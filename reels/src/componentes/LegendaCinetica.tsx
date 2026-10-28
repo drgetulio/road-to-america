@@ -20,7 +20,7 @@ export const LegendaCinetica: React.FC<Props> = ({ texto, duracao }) => {
     () =>
       ajustar(lerUnidades(texto), {
         fonte: "bc800",
-        largura: AREA.largura,
+        largura: AREA.largura * 0.95,
         altura: AREA.altura * 0.78,
         max: gancho ? 168 : 150,
         min: 84,
@@ -36,7 +36,7 @@ export const LegendaCinetica: React.FC<Props> = ({ texto, duracao }) => {
   const passo = Math.max(1.5, Math.min(5, janela / Math.max(1, n)));
   const atraso = gancho ? -4 : 3;
 
-  const zoom = gancho ? interp(frame, [0, 14], [1.14, 1]) * interp(frame, [14, duracao], [1, 1.03]) : interp(frame, [0, duracao], [1, 1.035]);
+  const zoom = gancho ? interp(frame, [0, 14], [1.08, 1]) * interp(frame, [14, duracao], [1, 1.03]) : interp(frame, [0, duracao], [1, 1.035]);
   const barra = interp(frame, [atraso, atraso + 12], [0, 1]);
 
   return (

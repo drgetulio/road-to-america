@@ -31,8 +31,15 @@ export const Checklist: React.FC<Props> = ({ itens, duracao }) => {
       maiusculas: false,
     };
     const prim = itens.map((it) => ajustar(lerUnidades(it.cena.texto_tela), opcoes));
-    const t = Math.min(...prim.map((a) => a.tamanho));
-    return itens.map((it) => ajustar(lerUnidades(it.cena.texto_tela), { ...opcoes, max: t, min: Math.min(t, 60) }));
+    // o bloco inteiro (com o zoom de 3%) precisa caber na área, senão sobe até a assinatura
+    const limite = AREA.altura / 1.04;
+    let t = Math.min(...prim.map((a) => a.tamanho));
+    for (;;) {
+      const tent = itens.map((it) => ajustar(lerUnidades(it.cena.texto_tela), { ...opcoes, max: t, min: Math.min(t, 60) }));
+      const tot = tent.reduce((s, a) => s + Math.max(CAIXA, a.linhas.length * a.tamanho * 1.02), 0) + VAO * (tent.length - 1);
+      if (tot <= limite || t <= 60) return tent;
+      t -= 2;
+    }
   }, [itens, largTexto]);
 
   const altura = (a: Ajuste) => Math.max(CAIXA, a.linhas.length * a.tamanho * 1.02);
@@ -43,7 +50,7 @@ export const Checklist: React.FC<Props> = ({ itens, duracao }) => {
   const ps = itens.map((it) => mola(frame, fps, it.inicio + a0, "pop"));
   // o bloco sobe conforme os itens entram, para ficar sempre centralizado
   const falta = ps.reduce((s, p, i) => s + (alturas[i] + (i ? VAO : 0)) * (1 - Math.min(1, p)), 0);
-  const topo = AREA.y + (AREA.altura - total) / 2 + falta / 2;
+  const topo = Math.max(AREA.y + 10, AREA.y + (AREA.altura - total) / 2 + falta / 2);
   const ultimo = itens.reduce((acc, it, i) => (frame >= it.inicio + a0 ? i : acc), 0);
 
   let y = 0;

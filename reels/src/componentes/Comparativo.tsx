@@ -18,13 +18,13 @@ export const Comparativo: React.FC<Props> = ({ texto, duracao, troca }) => {
   const a0 = segmento.gancho ? -6 : 3;
   const [min, max, passo] = troca.escala;
   const titulo = useMemo(
-    () => ajustar(lerUnidades(texto), { fonte: "bc800", largura: AREA.largura, altura: 280, max: 136, min: 80, entrelinha: 0.95, maxLinhas: 2, maiusculas: true }),
+    () => ajustar(lerUnidades(texto), { fonte: "bc800", largura: AREA.largura, altura: 230, max: 112, min: 72, entrelinha: 0.95, maxLinhas: 2, maiusculas: true }),
     [texto],
   );
   const margem = 40;
   const largRegua = AREA.largura - margem * 2;
   const xDe = (v: number) => margem + ((v - min) / (max - min)) * largRegua;
-  const yRegua = 720;
+  const yRegua = 640;
   const desenha = interp(frame, [a0 + 2, a0 + 14], [0, 1]);
   const pa = mola(frame, fps, a0 + 10, "pop");
   const pb = mola(frame, fps, a0 + 20, "pop");
@@ -37,7 +37,7 @@ export const Comparativo: React.FC<Props> = ({ texto, duracao, troca }) => {
 
   const rotulo = (txt: string, x: number, y: number, cor: string, op: number) => {
     const w = larguraTexto(txt, "bc700", 62);
-    const left = Math.max(0, Math.min(AREA.largura - w, x - w / 2));
+    const left = Math.max(0, Math.min(AREA.largura - 20 - w, x - w / 2));
     return (
       <div style={{ position: "absolute", left, top: y, fontFamily: FONTE.titulo, fontWeight: 700, fontSize: 62, color: cor, whiteSpace: "nowrap", opacity: op }}>
         {txt}
@@ -62,16 +62,16 @@ export const Comparativo: React.FC<Props> = ({ texto, duracao, troca }) => {
         ))}
         {/* marca A, acima */}
         <div style={{ position: "absolute", left: xa - 14, top: yRegua - 14 - 110 * pa, width: 28, height: 28 + 110 * pa, borderRadius: 14, background: tom.tinta, opacity: interp(frame, [a0 + 10, a0 + 13], [0, 1]) }} />
-        <div style={{ position: "absolute", left: xa - 200, width: 400, top: yRegua - 360, display: "flex", justifyContent: "center", opacity: interp(frame, [a0 + 10, a0 + 13], [0, 1]) }}>
-          <Odometro texto={String(troca.a.valor)} tamanho={200} cor={tom.tinta} atraso={a0 + 10} />
+        <div style={{ position: "absolute", left: xa - 200, width: 400, top: yRegua - 330, display: "flex", justifyContent: "center", opacity: interp(frame, [a0 + 10, a0 + 13], [0, 1]) }}>
+          <Odometro texto={String(troca.a.valor)} tamanho={180} cor={tom.tinta} atraso={a0 + 10} />
         </div>
-        {rotulo(troca.a.rotulo, xa, yRegua - 440, tom.suave, interp(frame, [a0 + 14, a0 + 20], [0, 1]))}
+        {rotulo(troca.a.rotulo, xa, yRegua - 400, tom.suave, interp(frame, [a0 + 14, a0 + 20], [0, 1]))}
         {/* marca B, abaixo */}
         <div style={{ position: "absolute", left: xb - 14, top: yRegua - 14, width: 28, height: 28 + 130 * pb, borderRadius: 14, background: tom.destaque, opacity: interp(frame, [a0 + 20, a0 + 23], [0, 1]) }} />
-        <div style={{ position: "absolute", left: xb - 200, width: 400, top: yRegua + 150, display: "flex", justifyContent: "center", opacity: interp(frame, [a0 + 20, a0 + 23], [0, 1]) }}>
-          <Odometro texto={String(troca.b.valor)} tamanho={200} cor={tom.destaque} atraso={a0 + 20} />
+        <div style={{ position: "absolute", left: xb - 200, width: 400, top: yRegua + 140, display: "flex", justifyContent: "center", opacity: interp(frame, [a0 + 20, a0 + 23], [0, 1]) }}>
+          <Odometro texto={String(troca.b.valor)} tamanho={180} cor={tom.destaque} atraso={a0 + 20} />
         </div>
-        {rotulo(troca.b.rotulo, xb, yRegua + 350, tom.tinta, interp(frame, [a0 + 24, a0 + 30], [0, 1]))}
+        {rotulo(troca.b.rotulo, xb, yRegua + 330, tom.tinta, interp(frame, [a0 + 24, a0 + 30], [0, 1]))}
       </div>
     </AbsoluteFill>
   );
