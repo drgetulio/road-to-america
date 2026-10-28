@@ -62,6 +62,9 @@ export default {
     let mostradoEm = Date.now();
     let espera = null;
     let ocupado = false;
+    /* fica falso quando a tela é trocada; impede que uma resposta ainda em
+       andamento (gravação ou aviso de leech) mexa na tela seguinte */
+    let ativo = true;
     const resumo = { respostas: 0, acertos: 0, inicio: Date.now(), porNota: { 1: 0, 2: 0, 3: 0, 4: 0 } };
     const revlogIds = [];
 
@@ -148,17 +151,19 @@ export default {
           toast("Não foi possível salvar a resposta: " + err.message, "erro");
         }
       }
+      if (!ativo) return;
       live.textContent = BOTOES.find((b) => b.r === rating).rot + ". Próxima revisão em " + formatInterval(new Date(res.state.due) - agora) + ".";
       ocupado = false;
-      if (res.leech && modo === "agenda") await avisarLeech(ctx.cardMap.get(item.card_id));
+      if (res.leech && modo === "agenda") await avisarLeech(ctx.cardMap.get(item.card_id), res.state.lapses);
+      if (!ativo) return;
       proximo();
     }
 
-    async function avisarLeech(card) {
+    async function avisarLeech(card, lapsos) {
       const podeEditar = canEdit(card, ctx.user);
       const r = await dialog({
         titulo: "Este card virou leech",
-        corpo: "<p>Você errou este card " + ctx.settings.limiarLeech + " vezes. Ele foi suspenso e marcado como <b>leech</b> para não consumir mais tempo do que ensina.</p>" +
+        corpo: "<p>Você errou este card " + (lapsos || ctx.settings.limiarLeech) + " vezes depois de já tê-lo aprendido. Ele foi suspenso e marcado como <b>leech</b> para não consumir mais tempo do que ensina.</p>" +
           "<p>O que mais resolve é reescrever: simplificar a pergunta, deixar uma única resposta, acrescentar um mnemônico ou separar dois fatos que se confundem. Se a confusão é com um card parecido, aprenda bem um antes de reativar o outro.</p>",
         acoes: [
           { rotulo: "Continuar a sessão", valor: "seguir", estilo: "ghost", cancelar: true },
@@ -283,7 +288,7 @@ export default {
       if (c) ctx.go("#/criar?id=" + encodeURIComponent(c.id) + "&voltar=estudar");
     });
     document.addEventListener("keydown", onKey);
-    limpar = () => { document.removeEventListener("keydown", onKey); clearTimeout(espera); };
+    limpar = () => { ativo = false; document.removeEventListener("keydown", onKey); clearTimeout(espera); };
 
     proximo();
   }

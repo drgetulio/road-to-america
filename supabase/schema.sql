@@ -83,6 +83,8 @@ begin
   if new.id is distinct from old.id then
     raise exception 'O identificador do perfil não pode mudar.' using errcode = '42501';
   end if;
+  new.email := old.email;          -- o e-mail vem do login, não do perfil
+  new.criado_em := old.criado_em;
   return new;
 end;
 $$;
@@ -146,6 +148,7 @@ declare
   v_admin  boolean := public.is_admin();
   v_mudou  boolean;
   v_entrou boolean;
+  v_nome   text;
 begin
   if tg_op = 'INSERT' then
     new.criado_em := now();
@@ -155,8 +158,14 @@ begin
       new.autor_id := coalesce(new.autor_id, v_uid);
       return new;
     end if;
-    -- participante
+    -- participante: o id é sempre gerado pelo banco (impede ocupar de antemão
+    -- o id de um card oficial que a curadoria ainda vai publicar) e o nome do
+    -- autor vem do perfil (impede assinar o card com o nome de outra pessoa)
+    new.id := 'u-' || substr(replace(gen_random_uuid()::text, '-', ''), 1, 12);
     new.autor_id := v_uid;
+    select coalesce(nullif(p.nome, ''), split_part(coalesce(p.email, ''), '@', 1), '') into v_nome
+      from public.profiles p where p.id = v_uid;
+    new.autor_nome := coalesce(v_nome, '');
     if new.baralho = 'oficial' then
       raise exception 'Só administradores criam cards no baralho oficial.' using errcode = '42501';
     end if;
@@ -205,6 +214,7 @@ begin
   end if;
 
   new.autor_id := old.autor_id;
+  new.autor_nome := old.autor_nome;
   new.revisor_id := old.revisor_id;
   new.comentario_revisao := old.comentario_revisao;
   new.origem := old.origem;
@@ -341,6 +351,9 @@ begin
   end if;
   if tg_op = 'INSERT' then
     new.autor_id := auth.uid();
+    new.autor_nome := coalesce((select coalesce(nullif(p.nome, ''), split_part(coalesce(p.email, ''), '@', 1))
+                                  from public.profiles p where p.id = auth.uid()), '');
+    new.criado_em := now();
     new.status := 'aberta';
     new.resposta := '';
     new.revisor_id := null;

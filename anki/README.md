@@ -120,6 +120,10 @@ mostrar as duas áreas. Os cards de `data/manifest.json` entram como oficiais.
 O status `rascunho` de um card pessoal significa "não compartilhado"; ele é estudável
 pelo autor. O gatilho `cards_guard` força autor, status e campos de revisão quando quem
 grava é participante, e `cards_historico` registra cada versão em `card_historico`.
+Para participantes, o id do card é sempre gerado pelo banco (prefixo `u-`), o que impede
+ocupar de antemão o id de um card oficial que a curadoria ainda vai publicar, e o nome do
+autor vem do perfil, o que impede assinar um card ou uma sinalização com o nome de outra
+pessoa. O e-mail do perfil também não pode ser trocado pelo próprio participante.
 
 ### Testar o schema sem o Supabase
 

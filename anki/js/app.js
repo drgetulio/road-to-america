@@ -134,6 +134,9 @@ async function render() {
   if (viewAtual?.destroy) viewAtual.destroy();
   viewAtual = null;
   fecharMenu();
+  /* um diálogo aberto (leech, sinalização) não deve sobreviver à troca de tela */
+  const modal = $("[data-modal]");
+  if (modal?.open) modal.close();
 
   if (ctx.modo === "supabase" && !ctx.user && rota !== "entrar") {
     location.replace("#/entrar");

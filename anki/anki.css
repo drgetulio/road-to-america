@@ -257,7 +257,14 @@ select.input { appearance: none; padding-right: 40px; cursor: pointer;
 .boarding__stub::before { content: ""; position: absolute; left: -1px; top: 12px; bottom: 12px; border-left: 2px dashed var(--card); }
 .boarding__stub span { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; }
 .boarding__stub b { font-family: var(--font-display); font-size: 2rem; line-height: 1; font-weight: 800; }
-@media (max-width: 420px) { .boarding { grid-template-columns: minmax(0, 1fr) 76px; } .boarding__main { padding: 18px; } .boarding__stub b { font-size: 1.5rem; } }
+/* no celular o canhoto do cartão de embarque vai para baixo, picotado na horizontal */
+@media (max-width: 480px) {
+  .boarding { grid-template-columns: minmax(0, 1fr); }
+  .boarding__main { padding: 18px; }
+  .boarding__stub { display: flex; align-items: baseline; justify-content: center; gap: 10px; padding: 14px 18px; }
+  .boarding__stub::before { left: 12px; right: 12px; top: -1px; bottom: auto; border-left: 0; border-top: 2px dashed var(--card); }
+  .boarding__stub b { font-size: 1.6rem; }
+}
 
 .custom__form { display: grid; gap: 4px; }
 .custom__row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 20px; }
@@ -340,6 +347,8 @@ select.input { appearance: none; padding-right: 40px; cursor: pointer;
 .tool-btn[disabled] { opacity: 0.5; cursor: not-allowed; }
 .tool-btn i { font-size: 18px; }
 @media (max-width: 760px) { .tool-btn kbd, .tool-btn--help { display: none; } }
+/* em telas de toque não há teclado: esconde as dicas de atalho dos botões */
+@media (hover: none) and (pointer: coarse) { .btn--reveal kbd, .grade kbd { display: none; } }
 
 .study__answer {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 35;

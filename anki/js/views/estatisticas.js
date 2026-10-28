@@ -28,10 +28,10 @@ export default {
       pageHead({ eyebrow: "Desempenho", titulo: "Estatísticas", lead: "Retenção medida nas suas respostas, carga dos próximos dias e cobertura do baralho frente ao outline oficial do Step 1." }) +
 
       '<section class="tiles" aria-label="Indicadores">' +
-        tile("Retenção real, 30 dias", ret.taxa == null ? "Sem dados" : pct(ret.taxa, 1), ret.total ? num(ret.total) + " revisões · meta " + pct(meta) : "Aparece depois das primeiras revisões", ret.taxa != null && ret.total >= 30 ? (ret.taxa < meta - 0.03 ? "abaixo" : ret.taxa > meta + 0.04 ? "acima" : "ok") : "") +
+        tile("Retenção real, 30 dias", ret.taxa == null ? "Sem dados" : pct(ret.taxa, 1), ret.total ? num(ret.total) + (ret.total === 1 ? " revisão" : " revisões") + " · meta " + pct(meta) : "Aparece depois das primeiras revisões", ret.taxa != null && ret.total >= 30 ? (ret.taxa < meta - 0.03 ? "abaixo" : ret.taxa > meta + 0.04 ? "acima" : "ok") : "") +
         tile("Respostas hoje", num(hoje), "Revisões vencidas amanhã: " + num(prev[1] || 0)) +
-        tile("Sequência", num(ativ.atual) + (ativ.atual === 1 ? " dia" : " dias"), "Maior sequência: " + num(ativ.maior) + " · " + num(ativ.diasEstudados) + " dias com estudo") +
-        tile("Maduros", num(mat.maduros), "de " + num(mat.total) + " cards (intervalo de 21 dias ou mais)") +
+        tile("Sequência", num(ativ.atual) + (ativ.atual === 1 ? " dia" : " dias"), "Maior sequência: " + num(ativ.maior) + (ativ.maior === 1 ? " dia" : " dias") + " · " + num(ativ.diasEstudados) + (ativ.diasEstudados === 1 ? " dia com estudo" : " dias com estudo")) +
+        tile("Maduros", num(mat.maduros), "de " + num(mat.total) + " itens de estudo (intervalo de 21 dias ou mais)") +
       "</section>" +
 
       '<div class="grid2 grid2--top">' +
@@ -41,7 +41,8 @@ export default {
         '<p class="hint">' + (ret.total < 100 ? "Com menos de 100 revisões, a medida ainda oscila bastante." : ret.taxa < meta - 0.03 ? "Real abaixo da meta: confira se você aperta Errei quando esquece (Difícil conta como acerto) e otimize os parâmetros no Anki desktop depois de algumas centenas de revisões." : "Real perto da meta: o agendamento está calibrado para você.") + "</p>" +
       "</section>" +
 
-      '<section class="panel" aria-labelledby="mat-t"><div class="panel__head"><h2 class="h-sm" id="mat-t">Situação dos cards</h2></div>' +
+      '<section class="panel" aria-labelledby="mat-t"><div class="panel__head"><h2 class="h-sm" id="mat-t">Situação dos cards</h2>' +
+        '<p class="hint">Conta itens de estudo: cada lacuna de um cloze é agendada à parte, então o total (' + num(mat.total) + ') pode passar do número de cards (' + num(cards.length) + ').</p></div>' +
         '<dl class="mat">' +
           matItem("Nunca estudados", mat.novos, mat.total) + matItem("Em aprendizagem", mat.aprendendo, mat.total) +
           matItem("Jovens (menos de 21 dias)", mat.jovens, mat.total) + matItem("Maduros (21 dias ou mais)", mat.maduros, mat.total) +
