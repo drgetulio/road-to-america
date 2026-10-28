@@ -19,9 +19,9 @@ window.R2A_CONFIG = {
   fundador: {
     nome: "Dr. Getúlio Bernardo Morato Filho",
     crm: "CRM-DF 13610",
-    rqe: "",       /* ex.: "Pediatria RQE 0000 · Medicina Esportiva RQE 0000" */
-    lattes: "",    /* link do Currículo Lattes */
-    foto: ""       /* caminho da foto; vazio = monograma */
+    rqe: "Pediatria RQE 10178 · Medicina Esportiva RQE 10439",
+    lattes: "https://lattes.cnpq.br/9792690277110334",
+    foto: "assets/img/fundador.webp"
   },
 
   /* Empresa responsável (aparece no rodapé e na Política de Privacidade). */

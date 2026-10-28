@@ -268,15 +268,20 @@
   if (F.nome) document.querySelectorAll("[data-fundador-nome]").forEach(function (el) { el.textContent = F.nome; });
   if (!F.rqe) document.querySelectorAll("[data-requer-rqe]").forEach(function (el) { el.hidden = true; });
   var reg = document.querySelector("[data-fundador-registro]");
-  if (reg && (F.crm || F.rqe)) { reg.textContent = [F.crm, F.rqe].filter(Boolean).join(" · "); reg.hidden = false; }
+  if (reg && (F.crm || F.rqe)) {
+    /* um registro por linha: CRM e cada RQE */
+    var regs = [F.crm].concat(String(F.rqe || "").split("·")).map(function (t) { return t.trim(); }).filter(Boolean);
+    reg.innerHTML = regs.map(esc).join("<br>");
+    reg.hidden = false;
+  }
   var lat = document.querySelector("[data-fundador-lattes]");
   if (lat && F.lattes) { lat.querySelector("a").href = F.lattes; lat.hidden = false; }
   var fotoBox = document.querySelector("[data-fundador-foto]");
   if (fotoBox && (F.foto || CFG.fotoFundador)) {
-    var mono = fotoBox.querySelector(".founder__mono");
     var img = document.createElement("img");
-    img.src = F.foto || CFG.fotoFundador; img.alt = F.nome || "Fundador da Road to America"; img.className = "founder__photo"; img.width = 600; img.height = 750;
-    if (mono) mono.replaceWith(img);
+    img.src = F.foto || CFG.fotoFundador; img.alt = F.nome || "Fundador da Road to America"; img.className = "founder__avatar"; img.width = 460; img.height = 460;
+    var cap = fotoBox.querySelector("figcaption");
+    if (cap) cap.insertBefore(img, cap.firstChild);
   }
 
   var O = CFG.oferta || {};

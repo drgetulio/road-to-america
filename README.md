@@ -41,7 +41,7 @@ Também revisar:
 
 Os três avaliadores independentes (médica cética, especialista em qualidade e revisor de texto) apontaram que a nota da página só passa de 9 quando estes itens estiverem preenchidos com dados reais e verificáveis:
 
-1. Fundador: RQE das especialidades (confirmar no CRM-DF antes de publicar), Lattes e foto (`config.js > fundador`; nome completo e CRM-DF 13610 já estão preenchidos). Sem RQE, o item "Pediatra e médico do esporte" fica oculto automaticamente, para atender à Resolução CFM 2.336/2023.
+1. Fundador: nome, CRM-DF 13610, RQEs (Pediatria 10178 e Medicina Esportiva 10439), Lattes e foto já estão em `config.js > fundador`. Os RQEs e o link do Lattes vieram de buscas públicas (Doctoralia e página de docentes da ESCS) e precisam ser conferidos no CFM e no CNPq antes da publicação. Sem RQE, o item "Pediatra e médico do esporte" fica oculto automaticamente, para atender à Resolução CFM 2.336/2023.
 2. Empresa: razão social, CNPJ, cidade e e-mail de contato e do encarregado de dados (`config.js > empresa`).
 3. Mentores: nome, foto, faculdade, resultado no Step 2 CK, programa e cidade nos EUA, de preferência com link verificável (`config.js > mentores`, campos `origem` e `destino` com siglas curtas, como "BSB" e "OH").
 4. Oferta: valor das parcelas e desconto à vista, data de início, número de vagas, formato e horário das aulas e da mentoria (`config.js > oferta`).
