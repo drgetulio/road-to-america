@@ -12,8 +12,9 @@ const D: Record<string, Base> = {
   "reel-05": { paleta: "navy", decor: "ondas", legenda: "pop", alinhamento: "centro", numero: "gigante", transicoes: ["faixa", "fade"] },
   "reel-06": { paleta: "asfalto", decor: "estrada", legenda: "sublinhado", alinhamento: "esquerda", numero: "placa", transicoes: ["wipe", "slide"] },
   "reel-07": {
-    paleta: "noite",
-    decor: "estrada",
+    // navy com cruzeiro: o 06 já usa asfalto com estrada e o mesmo fechamento do simulado
+    paleta: "navy",
+    decor: "cruzeiro",
     legenda: "pop",
     alinhamento: "centro",
     numero: "placa",
@@ -44,7 +45,7 @@ const D: Record<string, Base> = {
   "reel-15": { paleta: "navy", decor: "listras", legenda: "bloco", alinhamento: "esquerda", numero: "gigante", transicoes: ["slide", "wipe"] },
   "reel-16": { paleta: "vermelho", decor: "grade", legenda: "pop", alinhamento: "centro", numero: "gigante", transicoes: ["faixa", "slide"] },
   "reel-17": { paleta: "papel", decor: "estrada", legenda: "sublinhado", alinhamento: "esquerda", numero: "placa", transicoes: ["wipe", "slide"] },
-  "reel-18": { paleta: "navy", decor: "ondas", legenda: "sublinhado", alinhamento: "esquerda", numero: "gigante", transicoes: ["fade", "faixa"] },
+  "reel-18": { paleta: "noite", decor: "ondas", legenda: "sublinhado", alinhamento: "esquerda", numero: "gigante", transicoes: ["fade", "faixa"] },
   "reel-19": { paleta: "noite", decor: "listras", legenda: "bloco", alinhamento: "centro", numero: "gigante", transicoes: ["slide", "faixa"] },
   "reel-20": { paleta: "asfalto", decor: "cruzeiro", legenda: "pop", alinhamento: "esquerda", numero: "gigante", transicoes: ["wipe", "faixa"] },
 };

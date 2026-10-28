@@ -47,7 +47,7 @@ export const NumeroGigante: React.FC<Props> = ({ texto, duracao }) => {
   const antes = useMemo(() => (partes.antes ? ajustar(lerUnidades(partes.antes), opRotulo) : null), [partes.antes]); // eslint-disable-line
   const depois = useMemo(() => (partes.depois ? ajustar(lerUnidades(partes.depois), opRotulo) : null), [partes.depois]); // eslint-disable-line
 
-  const a0 = gancho ? -8 : 3;
+  const a0 = gancho ? -12 : 3; // no gancho o número já aparece quase parado no primeiro quadro
   const entra = mola(frame, fps, a0 - 2, "pop");
   const zoom = interp(frame, [0, duracao], [1, 1.04]);
   const corHeroi = placa ? COR.tinta : tom.destaque;

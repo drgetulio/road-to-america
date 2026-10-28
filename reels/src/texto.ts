@@ -33,7 +33,14 @@ export const lerUnidades = (bruto: string): Unidade[] => {
       atual += ch;
     }
     if (atual) u.push({ texto: atual, destaque });
-    if (u.length) res.push(u);
+    if (!u.length) continue;
+    // número curto solto ("1", "12") fica na mesma linha da palavra seguinte ("1 dia", "12 h")
+    const ant = res[res.length - 1];
+    if (ant && ant.length > 0 && /^\d{1,3}$/.test(ant.map((p) => p.texto).join(""))) {
+      ant.push({ texto: " ", destaque: ant[ant.length - 1].destaque && u[0].destaque }, ...u);
+      continue;
+    }
+    res.push(u);
   }
   return res;
 };

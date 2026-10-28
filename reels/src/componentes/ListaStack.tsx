@@ -48,7 +48,8 @@ export const ListaStack: React.FC<Props> = ({ itens, duracao }) => {
   );
 
   const a0 = segmento.gancho ? -6 : 3;
-  const altTitulo = ajTitulo ? ajTitulo.linhas.length * ajTitulo.tamanho * 0.95 + 50 : 0;
+  // folga entre o título e a pilha, para a rolagem (com o degradê) não colar no título
+  const altTitulo = ajTitulo ? ajTitulo.linhas.length * ajTitulo.tamanho * 0.95 + 80 : 0;
   const alturas = dados.map((d) => Math.max(BADGE, d.ajuste.linhas.length * d.ajuste.tamanho * 1.02) + PAD * 2);
   const visivel = AREA.altura - altTitulo;
 
@@ -65,14 +66,28 @@ export const ListaStack: React.FC<Props> = ({ itens, duracao }) => {
   const totalAtual = lista.reduce((acc, _, i) => acc + (alturas[i] + (i ? VAO : 0)) * Math.min(1, ps[i]), 0);
   const sobra = Math.max(0, visivel - Math.max(totalAtual, 0));
   const pTitulo = titulo ? mola(frame, fps, titulo.inicio + a0, "pop") : 1;
+  // no gancho, o título abre grande no centro e sobe para o topo quando o primeiro cartão entra
+  const ajHeroi = useMemo(
+    () =>
+      titulo && segmento.gancho
+        ? ajustar(lerUnidades(titulo.cena.texto_tela), { fonte: "bc800", largura: AREA.largura * 0.95, altura: 620, max: 190, min: 100, entrelinha: 0.95, maxLinhas: 3, maiusculas: true })
+        : null,
+    [titulo, segmento.gancho],
+  );
+  const heroi = ajHeroi ? 1 - Math.min(1, interp(frame, [lista[0].inicio + a0 - 4, lista[0].inicio + a0 + 6], [0, 1])) : 0;
 
   let y = 0;
   return (
     <AbsoluteFill>
       <div style={{ position: "absolute", left: AREA.x, top: AREA.y, width: AREA.largura, height: AREA.altura, transform: `scale(${interp(frame, [0, duracao], [1, 1.02])})` }}>
         {ajTitulo && titulo ? (
-          <div style={{ position: "absolute", top: 0, left: 0, width: AREA.largura, opacity: interp(frame, [titulo.inicio + a0, titulo.inicio + a0 + 5], [0, 1]), transform: `translateY(${(1 - pTitulo) * -60}px)` }}>
+          <div style={{ position: "absolute", top: 0, left: 0, width: AREA.largura, opacity: interp(frame, [titulo.inicio + a0, titulo.inicio + a0 + 5], [0, 1]) * (1 - heroi), transform: `translateY(${(1 - pTitulo) * -60 + heroi * 120}px)` }}>
             <TextoRico ajuste={ajTitulo} cor={tom.tinta} corDestaque={tom.destaque} alinhar="left" atraso={titulo.inicio + a0} passo={2} sombra={!tom.claro} />
+          </div>
+        ) : null}
+        {ajHeroi && heroi > 0 ? (
+          <div style={{ position: "absolute", left: 0, width: AREA.largura, top: 0, height: AREA.altura * 0.8, display: "flex", alignItems: "center", opacity: heroi, transform: `translateY(${(1 - heroi) * -160}px)` }}>
+            <TextoRico ajuste={ajHeroi} cor={tom.tinta} corDestaque={tom.destaque} alinhar="left" atraso={titulo!.inicio + a0} passo={2} sombra={!tom.claro} />
           </div>
         ) : null}
         <div
@@ -83,7 +98,7 @@ export const ListaStack: React.FC<Props> = ({ itens, duracao }) => {
             width: AREA.largura,
             height: visivel,
             overflow: "hidden",
-            maskImage: rolagem > 0 ? "linear-gradient(180deg, transparent 0, #000 120px)" : undefined,
+            maskImage: rolagem > 0 ? "linear-gradient(180deg, transparent 0, transparent 50px, #000 170px)" : undefined,
           }}
         >
           <div style={{ position: "absolute", top: sobra / 2 - rolagem, left: 0, width: AREA.largura }}>

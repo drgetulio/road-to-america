@@ -19,10 +19,12 @@ type Props = {
   maxFonte?: number;
 };
 
-export const Carimbo: React.FC<Props> = ({ texto, duracao, atraso = 4, cor, corDestaque, largura = AREA.largura - 90, rotulo, caixa, maxFonte = 170 }) => {
+export const Carimbo: React.FC<Props> = ({ texto: bruto, duracao, atraso = 4, cor, corDestaque, largura = AREA.largura - 90, rotulo, caixa, maxFonte = 170 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const { tom, segmento, direcao, fundoAtual } = useCena();
+  // "10. Reembolso..." (item final de uma pilha numerada) vira só o texto no carimbo
+  const texto = bruto.replace(/^\d+\.\s+/, "");
   const tinta = cor ?? tom.carimbo;
   const dest = corDestaque ?? (tom.claro ? "#0f2747" : tom.destaque);
   const a0 = segmento.gancho ? -6 : atraso;

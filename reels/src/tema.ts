@@ -15,12 +15,13 @@ export const SEGURA = {
   esquerda: 70,
 } as const;
 
-// Área de conteúdo usada pelos componentes.
+// Área de conteúdo usada pelos componentes. O topo fica 80 px abaixo da
+// assinatura (que termina em y = 330) para nenhum texto encostar nela.
 export const AREA = {
   x: SEGURA.esquerda,
-  y: 370,
+  y: 410,
   largura: W - SEGURA.esquerda - SEGURA.direita - 10, // 860
-  altura: H - SEGURA.base - 370 - 20, // 1110
+  altura: H - SEGURA.base - 410 - 20, // 1070
 } as const;
 
 export const COR = {
