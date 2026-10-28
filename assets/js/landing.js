@@ -124,6 +124,7 @@
       q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
         "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
+        "O valor pode ser pago à vista ou em até 12 vezes de R$ 1.000 no cartão de crédito.",
         "A <strong>turma fundadora</strong> tem preço especial por ser a primeira. Pelo mesmo motivo, ainda não temos taxa de aprovação para mostrar, e a garantia de três anos cobre esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
       ],
       s: []
