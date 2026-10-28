@@ -8,6 +8,12 @@ Página de vendas da turma fundadora de preparação para o USMLE Step 1 e Step 
 
 Site estático, sem etapa de build. Basta publicar a pasta em qualquer hospedagem (Netlify, Vercel, GitHub Pages, servidor próprio).
 
+## Publicação no GitHub Pages
+
+O site é publicado a partir da branch `main`, na raiz, em https://drgetulio.github.io/road-to-america/. O arquivo `.nojekyll` impede o processamento pelo Jekyll, e todos os caminhos são relativos, o que permite servir o site num subdiretório.
+
+No GitHub Pages o Netlify Forms não existe. Para que as pré-inscrições sejam gravadas, é preciso preencher `leadEndpoint` em `assets/js/config.js` com a URL de um serviço que aceite POST JSON (por exemplo, um formulário do Formspree). Sem isso, o formulário exibe a mensagem de falha no envio.
+
 ## Para ver localmente
 
 ```bash
