@@ -214,7 +214,7 @@
             </div>
             <div class="form-row">
               <div class="field">
-                <label for="v-tel">Telefone com DDD</label>
+                <label for="v-tel">Telefone com DDD <span data-tel-opcional hidden>(opcional)</span></label>
                 <input class="input" id="v-tel" name="telefone" aria-describedby="err-v-telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(61) 99999-9999" data-phone required>
                 <p class="error" id="err-v-telefone" data-error-for="telefone"></p>
               </div>
@@ -236,7 +236,7 @@
             </fieldset>
             <div>
               <label class="consent consent--opt"><input type="checkbox" name="so_email" value="sim"><span>Prefiro receber os avisos só por e-mail, sem entrar no grupo de WhatsApp.</span></label>
-              <label class="consent"><input type="checkbox" name="consentimento" value="sim" aria-describedby="err-v-consentimento"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por WhatsApp, e-mail e telefone sobre a verificação e a turma fundadora. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
+              <label class="consent"><input type="checkbox" name="consentimento" value="sim" aria-describedby="err-v-consentimento"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo a Road to America a entrar em contato sobre a verificação e a turma fundadora pelos canais informados acima. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
               <p class="error" id="err-v-consentimento" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
             </div>
             <button class="btn btn--block" type="submit">Quero a confirmação <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
@@ -246,7 +246,7 @@
           <div class="success" data-form-success hidden tabindex="-1">
             <i class="ph-fill ph-check-circle big" aria-hidden="true"></i>
             <h3 class="display h3">Pedido recebido, <span data-first-name></span>.</h3>
-            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. O convite para o grupo de WhatsApp da turma fundadora chega no seu celular.</p>
+            <p data-grupo-texto data-so-email="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Como você preferiu, os avisos da turma também chegam só por e-mail." data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. O convite para o grupo de WhatsApp da turma fundadora chega no seu celular.</p>
             <a class="btn btn--whats" data-grupo href="#" target="_blank" rel="noopener" hidden><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i> Entrar no grupo da turma</a>
             <a class="btn btn--ghost" href="index.html#incluido">Conhecer o curso</a>
           </div>

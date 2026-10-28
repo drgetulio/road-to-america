@@ -44,7 +44,7 @@
       q: "Meu inglês ainda não é fluente.",
       a: [
         "O Step 1 e o Step 2 CK são provas de múltipla escolha no computador, sem parte oral. O vocabulário médico em inglês se constrói desde o primeiro dia, com o Anki e com as questões comentadas.",
-        "A fala fica para depois: a certificação ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O OET está previsto no cronograma para depois do Step 2 CK."
+        "A parte oral vem depois, na certificação: o ECFMG exige o OET Medicine, com mínimo de 350 em Listening, Reading e Speaking e 300 em Writing, em uma única aplicação. O OET está previsto no cronograma para depois do Step 2 CK."
       ],
       s: ["oet"]
     },
@@ -59,7 +59,7 @@
     {
       q: "Já passei dos 35 anos. Ainda faz sentido?",
       a: [
-        "<strong>Não existe idade máxima</strong> para a residência nos EUA. O que alguns programas observam é o tempo desde a formatura: muitos preferem candidatos formados há menos de 5 a 10 anos, outros não têm corte. Cada programa informa essa regra na base FREIDA, da American Medical Association.",
+        "<strong>Não existe idade máxima</strong> para a residência nos EUA. O que alguns programas observam é o tempo desde a formatura: muitos preferem candidatos formados há menos de 5 a 10 anos, outros não têm corte. Muitos programas informam esse critério na base FREIDA, da American Medical Association. Quando não informam, vale perguntar direto ao programa.",
         "Experiência clínica nos EUA, cartas de recomendação e uma nota competitiva no Step 2 CK compensam parte desse tempo. Entre IMGs não americanos que conseguiram a especialidade desejada em 2026, a mediana no Step 2 CK foi 248. No diagnóstico, o mentor indica os programas compatíveis com o seu ano de formatura."
       ],
       s: ["freida", "charting"]
@@ -92,7 +92,7 @@
       q: "Ainda estou na faculdade. Posso começar?",
       a: [
         "<strong>Sim.</strong> Estudantes regularmente matriculados em escola cuja Sponsor Note indica Current, com o ciclo básico concluído, podem fazer o Step 1 e o Step 2 CK antes da formatura. O certificado ECFMG é emitido depois, com o diploma verificado.",
-        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não completou dois anos de curso, o prazo da garantia e o acesso ao conteúdo começam a contar quando você completar o segundo ano."
+        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Se você ainda não concluiu os dois primeiros anos da faculdade, o prazo da garantia e o acesso ao conteúdo começam a contar quando concluir."
       ],
       s: ["students"]
     },
@@ -124,7 +124,7 @@
       q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
         "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
-        "A <strong>turma fundadora</strong> tem condição especial por ser a primeira. Como é a primeira, ainda não temos taxa de aprovação para mostrar, e a garantia de três anos cobre esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
+        "A <strong>turma fundadora</strong> tem preço especial por ser a primeira. Pelo mesmo motivo, ainda não temos taxa de aprovação para mostrar, e a garantia de três anos cobre esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
       ],
       s: []
     }

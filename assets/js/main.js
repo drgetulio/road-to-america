@@ -117,9 +117,10 @@
       return "";
     },
     escola: function (v) { return v.trim().length < 3 ? "Informe a escola médica em que você se formou ou estuda." : ""; },
-    telefone: function (v) {
+    telefone: function (v, form) {
       var d = v.replace(/\D/g, "");
-      if (!d) return "Informe um telefone com DDD.";
+      var opcional = form && form.elements["so_email"] && form.elements["so_email"].checked;
+      if (!d) return opcional ? "" : "Informe um telefone com DDD.";
       if (/^\s*\+/.test(v) && !/^\s*\+55/.test(v)) return d.length >= 8 ? "" : "Confira o número internacional.";
       return d.length >= 10 ? "" : "Confira o DDD e o número.";
     },
@@ -153,7 +154,7 @@
     var firstBad = null;
     Object.keys(RULES).forEach(function (name) {
       if (!form.querySelector('[name="' + name + '"]')) return;
-      var msg = RULES[name](fieldValue(form, name));
+      var msg = RULES[name](fieldValue(form, name), form);
       setError(form, name, msg);
       if (msg && !firstBad) firstBad = form.querySelector('[name="' + name + '"]');
     });
@@ -200,12 +201,19 @@
     var status = form.querySelector("[data-form-status]");
     var label = btn ? btn.innerHTML : "";
 
+    var soEmail = form.elements["so_email"];
+    if (soEmail) soEmail.addEventListener("change", function () {
+      var tag = form.querySelector("[data-tel-opcional]");
+      if (tag) tag.hidden = !soEmail.checked;
+      var tel = form.elements["telefone"];
+      if (tel) { tel.required = !soEmail.checked; setError(form, "telefone", ""); }
+    });
     form.querySelectorAll("input, select, textarea").forEach(function (el) {
       el.addEventListener("blur", function () {
-        if (RULES[el.name] && el.value) setError(form, el.name, RULES[el.name](fieldValue(form, el.name)));
+        if (RULES[el.name] && el.value) setError(form, el.name, RULES[el.name](fieldValue(form, el.name), form));
       });
       el.addEventListener("change", function () {
-        if (RULES[el.name] && (el.type === "radio" || el.type === "checkbox")) setError(form, el.name, RULES[el.name](fieldValue(form, el.name)));
+        if (RULES[el.name] && (el.type === "radio" || el.type === "checkbox")) setError(form, el.name, RULES[el.name](fieldValue(form, el.name), form));
       });
     });
 
@@ -240,7 +248,7 @@
           var grupo = ok.querySelector("[data-grupo]");
           if (data.so_email === "sim") {
             var gtx = ok.querySelector("[data-grupo-texto]");
-            if (gtx) gtx.textContent = "Sua prioridade na turma fundadora está registrada. Como você preferiu, os avisos de vagas, datas e condições chegam só por e-mail.";
+            if (gtx && gtx.getAttribute("data-so-email")) gtx.textContent = gtx.getAttribute("data-so-email");
             grupo = null;
           }
           var grupoAviso = ok.querySelector("[data-grupo-aviso]");
