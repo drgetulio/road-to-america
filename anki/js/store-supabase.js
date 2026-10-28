@@ -1,9 +1,39 @@
 /* Road to America | camada de dados com Supabase (login por link mágico).
    Mesma interface de store-local.js. As regras de permissão valem no banco
    (RLS e gatilhos de supabase/schema.sql); aqui só repetimos as checagens
-   para dar mensagens melhores antes de chamar a API. */
+   para dar mensagens melhores antes de chamar a API.
+
+   Plataforma (simulados, NBME, presença, plano e painel; detalhes em
+   plataforma/INTERFACE.md): mesmos métodos de store-local.js. O painel do admin
+   e o resumo do participante vêm das funções r2a_admin_resumo_participantes() e
+   r2a_meu_resumo(), que devolvem a mesma linha de resumirParticipante().
+   Numa página fora de anki/, passe vendorUrl apontando para
+   anki/vendor/supabase.umd.js (por exemplo "../anki/vendor/supabase.umd.js").
+   A sessão do Supabase fica no localStorage da origem e vale para todas as
+   páginas do site. */
 import { normalizeCard } from "./cards.js";
 import { isAdmin, PermissionError } from "./permissions.js";
+import { validarTentativa } from "../../plataforma/js/simulado.js";
+import { validarNbme, normalizarNbme, parsePresencaCsv, mergeConfig } from "../../plataforma/js/desempenho.js";
+
+const CAMPOS_SIMULADO = ["step", "modo", "questoes", "respostas", "marcadas", "tempos_ms", "inicio", "fim", "duracao_ms", "limite_ms", "total", "acertos", "em_branco", "por_sistema", "por_disciplina", "por_dificuldade", "encerramento", "versao_banco"];
+const CAMPOS_PLANO = ["data_prova_step1", "data_prova_step2ck", "step1_aprovado", "step2ck_aprovado", "data_matricula", "ciclo_basico_concluido_em"];
+function fusoHorario() {
+  try { return Intl.DateTimeFormat().resolvedOptions().timeZone || "America/Sao_Paulo"; } catch { return "America/Sao_Paulo"; }
+}
+function vazioPlano(userId) {
+  return { user_id: userId, data_prova_step1: null, data_prova_step2ck: null, step1_aprovado: false, step2ck_aprovado: false, data_matricula: null, ciclo_basico_concluido_em: null };
+}
+function normalizarCampoPlano(k, v) {
+  if (k.endsWith("_aprovado")) return !!v;
+  if (v === null || v === undefined || v === "") return null;
+  const s = String(v).slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) throw new Error("Data inválida em " + k + " (use AAAA-MM-DD).");
+  return s;
+}
+function linhaSimulado(r) {
+  return { ...r, percentual: Number(r.percentual) };
+}
 
 const CAMPOS = ["tipo", "frente", "verso", "extra", "nota_pt", "sistema", "disciplina", "tags", "rendimento", "fonte"];
 const PAGINA = 1000;
@@ -257,5 +287,159 @@ export class SupabaseStore {
     let n = 0;
     if (Array.isArray(o.revlog)) for (const r of o.revlog) { try { await this.addRevlog(r); n++; } catch { /* card ausente */ } }
     return n;
+  }
+
+  /* =====================================================================
+     Plataforma: simulados, autoavaliações NBME, presença, plano e painel
+     ===================================================================== */
+  _exigeAdmin(msg = "Só administradores fazem isso.") {
+    const u = this._exigeLogin();
+    if (!isAdmin(u)) throw new PermissionError(msg);
+    return u;
+  }
+  _filtroDono(q, { todos, userId }) {
+    const u = this._exigeLogin();
+    if (userId) return q.eq("user_id", userId);
+    if (todos && isAdmin(u)) return q;
+    return q.eq("user_id", u.id);
+  }
+
+  /* ---------- Simulados ---------- */
+  async saveSimulado(t) {
+    const u = this._exigeLogin();
+    const erros = validarTentativa(t);
+    if (erros.length) throw new Error(erros.join(" "));
+    const row = { user_id: u.id };
+    for (const k of CAMPOS_SIMULADO) if (t[k] !== undefined) row[k] = t[k];
+    return linhaSimulado(ok(await this.client.from("simulados").insert(row).select("*").single()));
+  }
+  async listSimulados({ todos = false, userId = null, step = null } = {}) {
+    const rows = await this._todas(() => {
+      let q = this._filtroDono(this.client.from("simulados").select("*"), { todos, userId });
+      if (step) q = q.eq("step", step);
+      return q.order("fim", { ascending: false }).order("id");
+    });
+    return rows.map(linhaSimulado);
+  }
+  async deleteSimulado(id) {
+    this._exigeAdmin("Só administradores excluem simulados.");
+    const r = ok(await this.client.from("simulados").delete().eq("id", id).select("id"));
+    if (!r.length) throw new PermissionError("Tentativa não encontrada ou sem permissão.");
+  }
+
+  /* ---------- Autoavaliações NBME ---------- */
+  async saveNbme(x) {
+    const u = this._exigeLogin();
+    const erros = validarNbme(x);
+    if (erros.length) throw new Error(erros.join(" "));
+    const dados = normalizarNbme(x);
+    if (!x.id) return ok(await this.client.from("nbme_autoavaliacoes").insert({ ...dados, user_id: u.id }).select("*").single());
+    const r = ok(await this.client.from("nbme_autoavaliacoes").update(dados).eq("id", x.id).select("*").maybeSingle());
+    if (!r) throw new PermissionError("Esta autoavaliação não pode ser alterada (já verificada ou de outra pessoa).");
+    return r;
+  }
+  async listNbme({ todos = false, userId = null, step = null } = {}) {
+    return this._todas(() => {
+      let q = this._filtroDono(this.client.from("nbme_autoavaliacoes").select("*"), { todos, userId });
+      if (step) q = q.eq("step", step);
+      return q.order("data", { ascending: false }).order("id");
+    });
+  }
+  async deleteNbme(id) {
+    this._exigeLogin();
+    const r = ok(await this.client.from("nbme_autoavaliacoes").delete().eq("id", id).select("id"));
+    if (!r.length) throw new PermissionError("Esta autoavaliação não pode ser excluída (já verificada ou de outra pessoa).");
+  }
+  async verifyNbme(id, verificada = true) {
+    this._exigeAdmin("Só administradores verificam autoavaliações.");
+    return ok(await this.client.from("nbme_autoavaliacoes").update({ verificada: !!verificada }).eq("id", id).select("*").single());
+  }
+
+  /* ---------- Presença nas aulas ---------- */
+  async getPresenca(userId = null) {
+    const u = this._exigeLogin();
+    return ok(await this.client.from("presenca").select("*").eq("user_id", userId || u.id).maybeSingle());
+  }
+  async listPresenca() {
+    this._exigeAdmin();
+    return this._todas(() => this.client.from("presenca").select("*").order("user_id"));
+  }
+  async setPresenca(userId, { aulas_assistidas, aulas_totais }, { origem = "manual" } = {}) {
+    this._exigeAdmin("Só administradores lançam presença.");
+    const a = Number(aulas_assistidas), t = Number(aulas_totais);
+    if (!Number.isInteger(a) || !Number.isInteger(t) || a < 0 || t < 0) throw new Error("Use números inteiros não negativos.");
+    if (a > t) throw new Error("Aulas assistidas não podem passar do total.");
+    return ok(await this.client.from("presenca").upsert({ user_id: userId, aulas_assistidas: a, aulas_totais: t, origem }, { onConflict: "user_id" }).select("*").single());
+  }
+  async importPresencaCsv(texto) {
+    this._exigeAdmin("Só administradores importam presença.");
+    const { linhas, erros } = parsePresencaCsv(texto);
+    if (!linhas.length) return { atualizados: 0, nao_encontrados: [], erros };
+    const r = ok(await this.client.rpc("r2a_admin_importar_presenca", { p_linhas: linhas }));
+    return { atualizados: r.atualizados, nao_encontrados: r.nao_encontrados || [], erros: erros.concat((r.erros || []).map((e) => ({ linha: null, ...e }))) };
+  }
+
+  /* ---------- Plano do participante ---------- */
+  async getPlano(userId = null) {
+    const u = this._exigeLogin();
+    const alvo = userId || u.id;
+    const r = ok(await this.client.from("plano_participante").select("*").eq("user_id", alvo).maybeSingle());
+    return { ...vazioPlano(alvo), ...(r || {}) };
+  }
+  async savePlano(dados, userId = null) {
+    const u = this._exigeLogin();
+    const alvo = userId || u.id;
+    if (alvo !== u.id && !isAdmin(u)) throw new PermissionError("Você só pode alterar o seu próprio plano.");
+    const permitidos = isAdmin(u) ? CAMPOS_PLANO : ["data_prova_step1", "data_prova_step2ck"];
+    const row = { user_id: alvo };
+    for (const k of permitidos) if (k in (dados || {})) row[k] = normalizarCampoPlano(k, dados[k]);
+    return ok(await this.client.from("plano_participante").upsert(row, { onConflict: "user_id" }).select("*").single());
+  }
+
+  /* ---------- Metas da coorte ---------- */
+  async getConfigPlataforma() {
+    this._exigeLogin();
+    const r = ok(await this.client.from("plataforma_config").select("dados").eq("id", 1).maybeSingle());
+    return mergeConfig(r?.dados || {});
+  }
+  async saveConfigPlataforma(c) {
+    this._exigeAdmin("Só administradores alteram as metas.");
+    const dados = mergeConfig(c);
+    ok(await this.client.from("plataforma_config").upsert({ id: 1, dados, atualizado_em: new Date().toISOString() }, { onConflict: "id" }));
+    return dados;
+  }
+
+  /* ---------- Anotações do mentor (só o admin lê e grava) ---------- */
+  async getAnotacao(userId) {
+    this._exigeAdmin("Só administradores veem as anotações do mentor.");
+    return ok(await this.client.from("anotacoes_mentor").select("*").eq("user_id", userId).maybeSingle());
+  }
+  async saveAnotacao(userId, texto) {
+    this._exigeAdmin("Só administradores escrevem anotações do mentor.");
+    const t = String(texto ?? "");
+    if (t.length > 5000) throw new Error("A anotação tem no máximo 5000 caracteres.");
+    return ok(await this.client.from("anotacoes_mentor").upsert({ user_id: userId, texto: t }, { onConflict: "user_id" }).select("*").single());
+  }
+
+  /* ---------- Leitura agregada ---------- */
+  async listParticipantes() {
+    this._exigeAdmin("Só administradores veem a lista de participantes.");
+    const rows = await this._todas(() => this.client.from("profiles").select("id, nome, email, papel, criado_em").eq("papel", "participante").order("nome"));
+    return rows.map((r) => ({ ...r, sintetico: false }));
+  }
+  async getMeuResumo({ agora = new Date() } = {}) {
+    this._exigeLogin();
+    return ok(await this.client.rpc("r2a_meu_resumo", { p_tz: fusoHorario(), p_agora: new Date(agora).toISOString() }));
+  }
+  async listResumoParticipantes({ agora = new Date() } = {}) {
+    this._exigeAdmin("Só administradores veem o painel de rendimento.");
+    return ok(await this.client.rpc("r2a_admin_resumo_participantes", { p_tz: fusoHorario(), p_agora: new Date(agora).toISOString() })) || [];
+  }
+  async getAtividadeDiaria(userId = null, { dias = 182, agora = new Date() } = {}) {
+    const u = this._exigeLogin();
+    const alvo = userId || u.id;
+    if (alvo !== u.id && !isAdmin(u)) throw new PermissionError("Sem permissão para ver a atividade de outra pessoa.");
+    const rows = ok(await this.client.rpc("r2a_atividade_diaria", { p_user: alvo, p_dias: dias, p_tz: fusoHorario(), p_agora: new Date(agora).toISOString() })) || [];
+    return rows.map((r) => ({ dia: String(r.dia).slice(0, 10), revisoes: r.revisoes, revisao_total: r.revisao_total, revisao_acertos: r.revisao_acertos }));
   }
 }

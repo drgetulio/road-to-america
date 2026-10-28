@@ -130,7 +130,30 @@ pessoa. O e-mail do perfil também não pode ser trocado pelo próprio participa
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
+node supabase/teste-local/03-compara-resumo.mjs
 ```
+
+O bloco final do `02-testa-rls.sql` precisa mostrar `falhas | 0`, e o script `03`
+confere que o resumo de rendimento calculado no banco é igual ao do JavaScript.
+
+## Plataforma: simulados, NBME, presença e painel do admin
+
+As mesmas classes `LocalStore` e `SupabaseStore` também guardam as tentativas do
+simulado de 30 minutos, as autoavaliações NBME, a presença nas aulas e o plano de cada
+participante, e alimentam o painel de rendimento do administrador. A interface completa,
+com as regras de risco, da garantia e da prontidão, está em `plataforma/INTERFACE.md`.
+No modo demonstração, o painel do admin mostra também uma coorte sintética de 16
+participantes fictícios, gerada na memória e marcada como dados de demonstração.
+
+Telas ligadas a essa camada:
+
+- **Meu progresso** (`#/progresso`, `js/views/progresso.js`): o participante vê o
+  checklist da garantia, a leitura da prontidão pela EXIT 18, altera as datas de prova,
+  lança e corrige as próprias autoavaliações NBME (até a equipe verificar) e vê os seus
+  simulados com o acerto por sistema.
+- O menu leva também ao simulado (`../simulado/`), ao conteúdo do Step 1
+  (`../conteudo-step1.html`) e, para administradores, à área de rendimento
+  (`../admin/`, documentada em `admin/README.md`).
 
 ## Formato dos cards iniciais
 
@@ -164,6 +187,9 @@ atualizar as notas em vez de duplicar.
 
 ```bash
 cd anki && node --test tests/*.test.mjs
+cd plataforma && node --test tests/*.test.mjs
+node --test admin/tests/*.test.mjs        # na raiz: cálculos da área administrativa
+node admin/tests/fluxos.e2e.mjs           # na raiz: fluxos no navegador (Playwright)
 ```
 
 Cobrem agendador e fila do dia, sessão e desfazer, verificador de qualidade, cloze,
