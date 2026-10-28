@@ -8,7 +8,7 @@ window.R2A_ESCOLAS = [
   /* Centro-Oeste */
   { nome: "Universidade de Brasília", sigla: "UnB", uf: "DF", cidade: "Brasília", saeme: true, validade: "dez/2028" },
   { nome: "Escola Superior de Ciências da Saúde", sigla: "ESCS", uf: "DF", cidade: "Brasília", saeme: true, validade: "jun/2030" },
-  { nome: "Centro Universitário de Brasília", sigla: "CEUB", uf: "DF", cidade: "Brasília", saeme: true, validade: "fev/2032" },
+  { nome: "Centro Universitário de Brasília", sigla: "UniCEUB", aliases: ["CEUB", "UNICEUB"], uf: "DF", cidade: "Brasília", saeme: true, validade: "fev/2032" },
   { nome: "Centro Universitário Alfredo Nasser", sigla: "UNIFAN", uf: "GO", cidade: "Aparecida de Goiânia", saeme: true, validade: "ago/2029" },
   { nome: "Universidade Evangélica de Goiás", sigla: "UniEVANGÉLICA", uf: "GO", cidade: "Anápolis", saeme: true, validade: "mar/2032" },
   { nome: "Universidade Estadual de Mato Grosso do Sul", sigla: "UEMS", uf: "MS", cidade: "Campo Grande", saeme: true, validade: "nov/2029" },

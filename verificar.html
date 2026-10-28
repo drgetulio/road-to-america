@@ -58,7 +58,7 @@
         <div class="hero__copy">
           <p class="eyebrow"><span class="fita" aria-hidden="true"></span>Verificação gratuita</p>
           <h1 class="display h1" style="font-size:clamp(2.4rem,4.4vw,3.6rem)">Sua faculdade abre a porta do <em>USMLE?</em></h1>
-          <p class="lead">Quatro perguntas, o critério oficial do USMLE e do ECFMG e uma resposta clara sobre o seu próximo passo.</p>
+          <p class="lead">Responda a quatro perguntas e veja, pelo critério oficial do USMLE e do ECFMG, qual é o seu próximo passo.</p>
           <div class="v-hero__meta">
             <span><i class="ph ph-timer" aria-hidden="true"></i>Cerca de três minutos</span>
             <span><i class="ph ph-shield-check" aria-hidden="true"></i>Baseado no World Directory</span>
@@ -122,7 +122,7 @@
               <div class="note-example" aria-label="Como a nota costuma aparecer">Students and graduates of this medical school are eligible to apply to ECFMG for ECFMG Certification and examination.<br>Graduation Years: 1975 - Current</div>
             </div>
             <div class="choices" data-wdoms>
-              <div class="choice"><input type="radio" id="c-w-1" name="wdoms" value="ok"><label for="c-w-1" data-label-ok>A nota do ECFMG aparece e inclui o meu ano<span>Para estudantes: Graduation Years indica Current</span></label></div>
+              <div class="choice"><input type="radio" id="c-w-1" name="wdoms" value="ok"><label for="c-w-1" data-label-ok>A nota do ECFMG aparece e inclui o meu ano<span data-label-ok-sub>O intervalo de Graduation Years inclui o seu ano</span></label></div>
               <div class="choice"><input type="radio" id="c-w-2" name="wdoms" value="fora"><label for="c-w-2">A nota aparece, mas o meu ano está fora do intervalo<span>Por exemplo, a escola só é elegível a partir de uma turma posterior</span></label></div>
               <div class="choice"><input type="radio" id="c-w-3" name="wdoms" value="sem-nota"><label for="c-w-3">A escola aparece, mas sem a nota do ECFMG<span>A aba Sponsor Notes está vazia ou não menciona o ECFMG</span></label></div>
               <div class="choice"><input type="radio" id="c-w-4" name="wdoms" value="nao-achei"><label for="c-w-4">Não encontrei a minha escola<span>Nem pelo nome nem pela cidade</span></label></div>
@@ -224,7 +224,7 @@
               </div>
             </div>
             <fieldset class="choices field">
-              <legend>Você se sente seguro com o inglês?</legend>
+              <legend>Você tem segurança no inglês?</legend>
               <div class="choices choices--grid">
                 <div class="choice"><input type="radio" id="vi-1" name="ingles" value="Ainda não"><label for="vi-1">Ainda não<span>Leio com dificuldade</span></label></div>
                 <div class="choice"><input type="radio" id="vi-2" name="ingles" value="Leio bem, falo pouco"><label for="vi-2">Leio bem, falo pouco<span>Entendo artigos e livros</span></label></div>
@@ -234,7 +234,7 @@
               <p class="error" data-error-for="ingles" aria-live="polite"></p>
             </fieldset>
             <div>
-              <label class="consent"><input type="checkbox" name="consentimento" value="sim"><span>Autorizo o contato da Road to America por telefone, WhatsApp e e-mail sobre a verificação e a turma fundadora. Meus dados serão tratados conforme a LGPD e nunca serão vendidos.</span></label>
+              <label class="consent"><input type="checkbox" name="consentimento" value="sim"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por telefone, WhatsApp e e-mail sobre a verificação e a turma fundadora. Meus dados nunca serão vendidos.</span></label>
               <p class="error" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
             </div>
             <button class="btn btn--block" type="submit">Quero a confirmação <i class="ph ph-arrow-right" aria-hidden="true"></i></button>
@@ -258,7 +258,8 @@
     <div class="wrap">
       <div class="footer__legal" style="margin-top:0;padding-top:0;border-top:0">
         <p style="margin:0">Esta ferramenta orienta a conferência com base nas regras públicas do USMLE e do ECFMG consultadas em outubro de 2026. A decisão final sobre elegibilidade é sempre do ECFMG e da FSMB. USMLE® é programa conjunto da FSMB e do NBME. ECFMG® é marca da Intealth. A Road to America não tem vínculo com essas instituições.</p>
-        <p style="margin:0">© <span data-year>2026</span> Road to America. <a href="index.html">Voltar à página inicial</a></p>
+        <p style="margin:0" data-empresa hidden></p>
+        <p style="margin:0">© <span data-year>2026</span> Road to America. <a href="index.html">Voltar à página inicial</a> · <a href="privacidade.html">Política de Privacidade</a></p>
       </div>
     </div>
   </footer>

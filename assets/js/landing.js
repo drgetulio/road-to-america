@@ -51,8 +51,8 @@
     {
       q: "Trabalho em plantões e tenho pouco tempo.",
       a: [
-        "O plano parte da sua escala de plantões. Na prática, isso significa revisão diária curta no Anki, blocos de questões nos dias de folga e simulados em datas combinadas com o mentor.",
-        "O formato da prova também mudou: desde maio de 2026, o Step 1 e o Step 2 CK são aplicados em <strong>blocos de 30 minutos</strong>, o que favorece quem treina em sessões curtas e frequentes."
+        "O plano é montado em cima da sua escala: revisão curta de Anki todo dia, blocos de questões nas folgas e simulados em datas combinadas com o mentor.",
+        "O formato da prova também mudou: desde maio de 2026, o Step 1 e o Step 2 CK são aplicados em <strong>blocos de 30 minutos</strong>, e o plano já treina você nesse ritmo. Com três anos de acesso, dá para estudar as duas provas sem largar o trabalho."
       ],
       s: ["format"]
     },
@@ -83,8 +83,8 @@
     {
       q: "E se eu não for aprovado?",
       a: [
-        "Você recebe de volta o valor integral pago ao curso, conforme as regras da <a href=\"#garantia\">garantia de três anos</a>.",
-        "Como cada Step permite no máximo quatro tentativas na vida, a prova só é agendada quando os simulados mostram margem de segurança."
+        "Se você participar do programa e, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK, devolvemos o valor integral pago ao curso. As condições estão na <a href=\"#garantia\">seção de garantia</a> e no contrato.",
+        "Como cada Step aceita no máximo quatro tentativas na vida, recomendamos agendar só quando os simulados mostrarem folga. A decisão final é sua."
       ],
       s: ["attempts"]
     },
@@ -113,10 +113,10 @@
       s: ["prometric", "fsmbMove"]
     },
     {
-      q: "Por que R$ 12.000, se pacotes completos custam bem mais?",
+      q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
-        "O modelo é enxuto: o conteúdo é produzido pelos próprios mentores, sem intermediários, e entregue em plataforma digital.",
-        "Os alunos da <strong>turma fundadora</strong> também serão os primeiros resultados públicos da Road to America, e o preço reflete essa parceria."
+        "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
+        "A <strong>turma fundadora</strong> paga menos porque é a primeira. Em troca, pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova."
       ],
       s: []
     }
@@ -172,6 +172,7 @@
       buttons.forEach(function (b, i) {
         if (mobile.matches) {
           b.removeAttribute("role");
+          b.parentElement.removeAttribute("role");
           b.removeAttribute("aria-selected");
           b.removeAttribute("tabindex");
           b.setAttribute("aria-controls", "qa-inline-" + i);
@@ -180,9 +181,12 @@
           b.setAttribute("role", "tab");
           b.setAttribute("aria-controls", "qa-panel");
           b.removeAttribute("aria-expanded");
+          b.parentElement.setAttribute("role", "presentation");
         }
       });
       panel.id = "qa-panel";
+      if (mobile.matches) { list.removeAttribute("role"); list.removeAttribute("aria-orientation"); panel.removeAttribute("role"); }
+      else { list.setAttribute("role", "tablist"); list.setAttribute("aria-orientation", "vertical"); panel.setAttribute("role", "tabpanel"); }
     }
 
     var current = 0;
@@ -229,7 +233,7 @@
         '<h3 class="pass__name">' + (real ? esc(m.nome) : "Mentor " + seat) + "</h3>" +
         '<dl class="pass__data">' +
           "<div><dt>Formação</dt><dd>" + (real ? esc(m.formacao) : "Medicina no Brasil") + "</dd></div>" +
-          "<div><dt>Atuação</dt><dd>" + (real ? esc(m.atuacao) : "Perfil enviado aos pré-inscritos") + "</dd></div>" +
+          "<div><dt>Atuação</dt><dd>" + (real ? esc(m.atuacao) : "Perfil publicado aqui antes das matrículas") + "</dd></div>" +
           (real && m.resultado ? "<div><dt>Resultado</dt><dd>" + esc(m.resultado) + "</dd></div>" : "") +
         "</dl>" +
       "</div>" +
@@ -239,18 +243,45 @@
     "</article>";
   }
   if (box) {
-    var list = mentores.length ? mentores : [null, null, null];
-    box.innerHTML = list.map(pass).join("");
+    var passList = mentores.length ? mentores : [null, null, null];
+    box.innerHTML = passList.map(pass).join("");
     if (mentores.length) { var empty = document.querySelector("[data-mentores-vazio]"); if (empty) empty.hidden = true; }
     if (window.R2A_observeReveals) window.R2A_observeReveals(box.querySelectorAll(".reveal"));
   }
+  /* ---------- Fundador, empresa e oferta vindos da configuração ---------- */
+  var F = CFG.fundador || {};
+  if (F.nome) document.querySelectorAll("[data-fundador-nome]").forEach(function (el) { el.textContent = F.nome; });
+  var reg = document.querySelector("[data-fundador-registro]");
+  if (reg && (F.crm || F.rqe)) { reg.textContent = [F.crm, F.rqe].filter(Boolean).join(" · "); reg.hidden = false; }
+  var lat = document.querySelector("[data-fundador-lattes]");
+  if (lat && F.lattes) { lat.querySelector("a").href = F.lattes; lat.hidden = false; }
   var fotoBox = document.querySelector("[data-fundador-foto]");
-  if (fotoBox && CFG.fotoFundador) {
+  if (fotoBox && (F.foto || CFG.fotoFundador)) {
     var mono = fotoBox.querySelector(".founder__mono");
     var img = document.createElement("img");
-    img.src = CFG.fotoFundador; img.alt = "Dr. Getúlio"; img.className = "founder__photo"; img.width = 600; img.height = 750;
+    img.src = F.foto || CFG.fotoFundador; img.alt = F.nome || "Fundador da Road to America"; img.className = "founder__photo"; img.width = 600; img.height = 750;
     if (mono) mono.replaceWith(img);
   }
+
+  var O = CFG.oferta || {};
+  var pg = document.querySelector("[data-pagamento]");
+  if (pg && O.pagamento) pg.textContent = O.pagamento;
+  var facts = document.querySelector("[data-oferta]");
+  var rows = [["Início", O.inicio], ["Vagas", O.vagas], ["Aulas", O.aulas], ["Mentoria", O.mentoria]].filter(function (r) { return r[1]; });
+  if (facts && rows.length) {
+    facts.innerHTML = rows.map(function (r) { return "<div><dt>" + r[0] + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("");
+    facts.hidden = false;
+  }
+  var A = CFG.amostras || {};
+  [["anki", "Baixar amostra do baralho"], ["apostila", "Ver páginas da apostila"]].forEach(function (k) {
+    var tile = document.querySelector("[data-amostra=\"" + k[0] + "\"]");
+    if (tile && A[k[0]]) {
+      var link = document.createElement("a");
+      link.className = "tile__sample"; link.href = A[k[0]]; link.target = "_blank"; link.rel = "noopener";
+      link.innerHTML = '<i class="ph ph-download-simple" aria-hidden="true"></i>' + k[1];
+      tile.appendChild(link);
+    }
+  });
 
   /* ---------- Autocompletar escolas ---------- */
   if (window.R2A_fillSchoolList) {

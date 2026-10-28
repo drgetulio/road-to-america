@@ -4,6 +4,7 @@ Página de vendas da turma fundadora de preparação para o USMLE Step 1 e Step 
 
 - `index.html`: página principal (oferta, elegibilidade, método com globo em Three.js, fundador e mentores, dúvidas, investimento, garantia e pré-inscrição).
 - `verificar.html`: verificação guiada da escola no World Directory of Medical Schools (critério do USMLE e do ECFMG para escolas fora dos EUA).
+- `privacidade.html`: Política de Privacidade (LGPD), linkada nos formulários e no rodapé.
 
 Site estático, sem etapa de build. Basta publicar a pasta em qualquer hospedagem (Netlify, Vercel, GitHub Pages, servidor próprio).
 
@@ -23,14 +24,18 @@ Tudo o que muda com frequência fica em `assets/js/config.js`:
 | `leadEndpoint` | Destino dos cadastros. Vazio usa o Netlify Forms (automático quando o site está na Netlify). Para outro destino, informe uma URL que aceite POST JSON (Formspree, Make, Zapier, webhook do RD Station ou do ActiveCampaign). |
 | `grupoWhatsapp` | Convite do grupo da turma fundadora (`https://chat.whatsapp.com/...`). O botão verde aparece logo após a pré-inscrição. Vazio mostra o aviso de que o convite será enviado por WhatsApp. |
 | `whatsapp` | Número de atendimento (só dígitos, com 55). Aparece como alternativa quando o envio do formulário falha. |
-| `fotoFundador` | Foto do fundador. Vazio mostra o monograma. |
-| `mentores` | Lista de mentores. Cada item vira um cartão de embarque. Vazio mostra três cartões reservados. |
+| `fundador` | Nome completo, CRM, RQE, link do Lattes e foto. A Resolução CFM 2.336/2023 exige nome, CRM e RQE quando o médico divulga especialidade. Vazio mostra "Dr. Getúlio" e o monograma. |
+| `empresa` | Razão social, CNPJ, cidade e e-mail. Aparecem no rodapé e na Política de Privacidade. |
+| `oferta` | Texto de pagamento, data de início, número de vagas, formato das aulas e da mentoria. Cada campo preenchido aparece no cartão de preço. |
+| `amostras` | Links para amostra gratuita do Anki e da apostila (botões nos blocos do material). |
+| `mentores` | Lista de mentores. Cada item vira um cartão de embarque. Vazio mostra três cartões reservados com o aviso de que os perfis serão publicados antes das matrículas. |
+
+**Antes de captar leads**, preencher no mínimo `fundador`, `empresa`, `grupoWhatsapp` e pelo menos dois `mentores`: os avaliadores independentes apontaram esses itens como os que mais pesam na decisão do médico.
 
 Também revisar:
 
-1. **Nome do fundador**: a página usa "Dr. Getúlio" em `index.html` (seção `#mentores`) e em `assets/js/landing.js`. Trocar pelo nome completo.
-2. **Contrato da garantia**: a página descreve a garantia de três anos e cita o direito de arrependimento do CDC. O texto do contrato precisa ter as mesmas regras.
-3. **Condições de pagamento**: a página diz apenas "à vista com desconto ou parcelado no cartão".
+1. **Contrato da garantia**: a página descreve a garantia de três anos e cita o direito de arrependimento do CDC. O texto do contrato precisa ter as mesmas regras.
+2. **Regras da garantia na página**: prazo de três anos, aprovação = Pass no Step 1 e nota mínima no Step 2 CK, participação no programa, ao menos uma tentativa da prova que faltou, agendamento livre (o mentor orienta, mas não autoriza) e reembolso de 100% do valor do curso. Validar com o jurídico.
 
 ## Imagens
 

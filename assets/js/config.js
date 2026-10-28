@@ -14,8 +14,30 @@ window.R2A_CONFIG = {
      Aparece logo após a pré-inscrição. Vazio = a página avisa que o convite chega pelo WhatsApp. */
   grupoWhatsapp: "",
 
-  /* Foto do fundador (opcional). Vazio = monograma com a inicial. */
-  fotoFundador: "",
+  /* Fundador. Nome completo, CRM e RQE são exigidos pelo CFM (Res. 2.336/2023)
+     quando o médico divulga especialidade em material público. */
+  fundador: {
+    nome: "",      /* ex.: "Dr. Getúlio Sobrenome". Vazio = "Dr. Getúlio" */
+    crm: "",       /* ex.: "CRM-DF 00000" */
+    rqe: "",       /* ex.: "Pediatria RQE 0000 · Medicina Esportiva RQE 0000" */
+    lattes: "",    /* link do Currículo Lattes */
+    foto: ""       /* caminho da foto; vazio = monograma */
+  },
+
+  /* Empresa responsável (aparece no rodapé e na Política de Privacidade). */
+  empresa: { razao: "", cnpj: "", cidade: "Brasília/DF", email: "" },
+
+  /* Oferta. Cada campo preenchido aparece no cartão de preço. */
+  oferta: {
+    pagamento: "", /* ex.: "R$ 12.000 à vista no Pix ou em até 12x de R$ 1.000 no cartão" */
+    inicio: "",    /* ex.: "Fevereiro de 2027" */
+    vagas: "",     /* ex.: "40" */
+    aulas: "",     /* ex.: "Gravadas, liberadas toda segunda" */
+    mentoria: ""   /* ex.: "Ao vivo, quinzenal, às 21h, com gravação" */
+  },
+
+  /* Amostras gratuitas, sem cadastro (botões nos blocos do Anki e da apostila). */
+  amostras: { anki: "", apostila: "" },
 
   /* Mentores. Cada item vira um cartão de embarque na seção de mentores.
      Enquanto a lista estiver vazia, aparecem três cartões reservados

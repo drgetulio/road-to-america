@@ -52,7 +52,7 @@
           io.unobserve(en.target);
         }
       });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.01 });
   }
   window.R2A_observeReveals = function (els) {
     Array.prototype.forEach.call(els, function (el) {
@@ -227,7 +227,12 @@
           if (nameSlot) nameSlot.textContent = first;
           var grupo = ok.querySelector("[data-grupo]");
           var grupoAviso = ok.querySelector("[data-grupo-aviso]");
-          if (grupo && CONFIG.grupoWhatsapp) { grupo.href = CONFIG.grupoWhatsapp; grupo.hidden = false; if (grupoAviso) grupoAviso.hidden = true; }
+          if (grupo && CONFIG.grupoWhatsapp) {
+            grupo.href = CONFIG.grupoWhatsapp; grupo.hidden = false;
+            if (grupoAviso) grupoAviso.hidden = true;
+            var gt = ok.querySelector("[data-grupo-texto]");
+            if (gt) gt.textContent = "Sua prioridade na turma fundadora está registrada. Falta um passo: entrar no grupo de WhatsApp, onde saem os avisos de vagas, datas e condições.";
+          }
           form.hidden = true;
           ok.hidden = false;
           ok.focus();
@@ -261,6 +266,13 @@
         localStorage.setItem(key, JSON.stringify(d));
       } catch (e) { /* ok */ }
     });
+  });
+
+  /* ---------- Empresa responsável no rodapé ---------- */
+  var E = CONFIG.empresa || {};
+  document.querySelectorAll("[data-empresa]").forEach(function (el) {
+    var parts = [E.razao, E.cnpj ? "CNPJ " + E.cnpj : "", E.cidade, E.email].filter(Boolean);
+    if (E.razao || E.cnpj) { el.textContent = parts.join(" · "); el.hidden = false; }
   });
 
   /* ---------- Ano no rodapé ---------- */

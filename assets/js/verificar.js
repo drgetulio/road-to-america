@@ -44,6 +44,7 @@
     ESCOLAS.forEach(function (s) {
       var n = norm(s.nome);
       var sig = norm(s.sigla || "");
+      if ((s.aliases || []).some(function (al) { return norm(al) === t; })) exact = exact || s;
       var full = norm(window.R2A_schoolLabel ? window.R2A_schoolLabel(s) : s.nome);
       if (n === t || full === t || (sig && sig === t)) exact = exact || s;
       else if (!partial && t.length >= 6 && (n.indexOf(t) !== -1 || t.indexOf(n) !== -1)) partial = s;
@@ -73,12 +74,14 @@
     var okLabel = form.querySelector("[data-label-ok]");
     if (okLabel) {
       okLabel.firstChild.nodeValue = sit === "estudante" ? "A nota do ECFMG aparece com Graduation Years: Current" : "A nota do ECFMG aparece e inclui o meu ano";
+      var okSub = okLabel.querySelector("[data-label-ok-sub]");
+      if (okSub) okSub.textContent = sit === "estudante" ? "O campo Graduation Years indica Current" : "O intervalo de Graduation Years inclui o seu ano";
     }
 
     /* selo SAEME, quando a escola consta na lista */
     if (school && school.saeme) {
       saemeHit.classList.add("is-on");
-      saemeHit.querySelector("span").textContent = school.nome + " consta como acreditada pelo SAEME" + (school.validade ? ", com validade até " + school.validade : "") + ". Para quem se formou a partir de 2024, isso abre também o Pathway 3 da certificação ECFMG.";
+      saemeHit.querySelector("span").textContent = school.nome + " consta como acreditada pelo SAEME" + (school.validade ? ", com validade até " + school.validade : "") + ". Se a acreditação estava válida no ano da sua formatura, você também pode usar o Pathway 3 da certificação ECFMG. Confira as regras do ano no site do ECFMG.";
     } else {
       saemeHit.classList.remove("is-on");
     }
@@ -90,37 +93,44 @@
     if (!w) {
       level = "";
       badge = '<i class="ph ph-hourglass-medium" aria-hidden="true"></i>' + (count ? "Faltam " + (4 - count) + (4 - count === 1 ? " resposta" : " respostas") : "Aguardando respostas");
-      title = count ? "Continue, você está quase lá." : "O seu resultado aparece aqui.";
+      title = count ? "Faltam algumas respostas." : "O seu resultado aparece aqui.";
       text = "A pergunta 3 é a decisiva: ela traduz o que o World Directory diz sobre a sua escola.";
     } else if (w === "ok") {
       level = "ok";
       badge = '<i class="ph-fill ph-check-circle" aria-hidden="true"></i>Caminho aberto';
-      title = sit === "estudante" ? "Você já pode se preparar para o Step 1 e o Step 2 CK." : "A sua faculdade abre a porta do USMLE.";
+      title = sit === "estudante" ? "Você já pode se preparar para o Step 1 e o Step 2 CK." : "A sua faculdade está liberada para o USMLE.";
       text = "Pelo que você informou, a sua escola atende aos requisitos do ECFMG segundo o World Directory, que é o critério do USMLE para escolas fora dos EUA.";
       items.push(li("ph-check-circle", "Inscrição no Step 1 e no Step 2 CK pela FSMB, com a conta MyIntealth para a certificação."));
       items.push(li("ph-check-circle", sit === "estudante" ? "A matrícula precisa estar ativa e o ciclo básico concluído no início do período de elegibilidade." : "O diploma final e o histórico serão verificados pelo ECFMG diretamente com a escola."));
       if (tr === "sim") items.push(li("ph-check-circle", "Como houve transferência, o histórico da escola anterior também será verificado."));
       items.push(li("ph-check-circle", "Próximo passo: montar a sua rota de estudo com um mentor."));
+    } else if (w === "sem-nota" && school && school.saeme) {
+      level = "check";
+      badge = '<i class="ph-fill ph-info" aria-hidden="true"></i>Vamos confirmar';
+      title = "Confira de novo a aba Sponsor Notes.";
+      text = "Escolas acreditadas pelo SAEME costumam ter a Sponsor Note do ECFMG. Veja se abriu a aba certa e o registro do campus correto.";
+      items.push(li("ph-info", "No World Directory, cada campus pode ter um registro próprio."));
+      items.push(li("ph-info", "Se a dúvida continuar, um mentor confere por você."));
     } else if (w === "fora" || w === "sem-nota") {
       level = "stop";
       badge = '<i class="ph-fill ph-warning-circle" aria-hidden="true"></i>Atenção';
-      title = w === "fora" ? "O seu ano de formatura não está coberto hoje." : "Sem a nota do ECFMG, a porta está fechada por enquanto.";
-      text = w === "fora" ? "O ECFMG só aceita formados nos anos listados na Sponsor Note. Antes de concluir, vale confirmar se a leitura está correta." : "O ECFMG informa que, sem a Sponsor Note, alunos e formados da escola não são elegíveis à certificação.";
+      title = w === "fora" ? "O seu ano de formatura não está coberto hoje." : "Sem a nota do ECFMG, a escola não está liberada por enquanto.";
+      text = w === "fora" ? "O ECFMG só aceita formados nos anos listados na Sponsor Note. Antes de tirar conclusões, confira de novo o campo Graduation Years." : "O ECFMG informa que, sem a Sponsor Note, alunos e formados da escola não são elegíveis à certificação.";
       items.push(li("ph-arrow-circle-right", "Confira se não há outro registro da escola com nome antigo ou de outro campus."));
       items.push(li("ph-arrow-circle-right", "A nota é solicitada pela própria escola, por meio de um representante autorizado. Leve a questão à coordenação do curso."));
       items.push(li("ph-arrow-circle-right", "Peça a conferência de um mentor antes de tomar qualquer decisão."));
     } else {
       level = "check";
       badge = '<i class="ph-fill ph-info" aria-hidden="true"></i>Vamos confirmar';
-      title = w === "nao-achei" ? "A escola pode estar com o nome oficial diferente." : "Um mentor confere para você.";
-      text = w === "nao-achei" ? "No World Directory, as escolas brasileiras aparecem pelo nome oficial em português e pela cidade. Busque apenas pela cidade e procure entre os resultados." : "Envie os seus dados abaixo e receba a conferência por e-mail, com o próximo passo indicado para o seu caso.";
+      title = w === "nao-achei" ? "A escola pode estar listada com outro nome." : "Um mentor confere para você.";
+      text = w === "nao-achei" ? "No World Directory, as escolas brasileiras aparecem pelo nome oficial em português. Pesquise só pela cidade e confira a lista de resultados." : "Envie os seus dados abaixo e receba a conferência por e-mail, com o próximo passo indicado para o seu caso.";
       items.push(li("ph-info", "Escolas reconhecidas pelo MEC costumam ter a Sponsor Note; cursos muito novos podem ter anos restritos."));
       if (tr === "sim") items.push(li("ph-info", "Com transferência, o histórico de cada escola é verificado separadamente."));
       items.push(li("ph-info", "A conferência é gratuita e não obriga a matrícula."));
     }
 
     if (school && !school.saeme && w) {
-      items.push(li(level === "ok" ? "ph-check-circle" : "ph-info", "A escola não aparece como acreditada na lista SAEME consultada em outubro de 2026. Isso não muda a elegibilidade ao USMLE."));
+      items.push(li(level === "ok" ? "ph-check-circle" : "ph-info", "Não temos a acreditação SAEME desta escola registrada na nossa lista. Confira em saeme.org.br. De todo modo, isso não muda a elegibilidade ao USMLE."));
     }
 
     var dots = "";

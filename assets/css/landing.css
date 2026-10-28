@@ -146,8 +146,8 @@
 .globe-sign { display: inline-flex; flex-direction: column; align-items: flex-start; background: var(--navy); color: var(--navy-ink); border-radius: 6px; padding: 4px 9px 5px; box-shadow: inset 0 0 0 1.5px var(--navy), inset 0 0 0 3px rgba(243, 245, 242, 0.85); font-family: var(--font-display); line-height: 1; }
 .globe-sign small { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.12em; opacity: 0.85; margin-bottom: 2px; }
 .globe-sign b { font-size: 1.15rem; font-weight: 800; }
-.journey__stops { list-style: none; margin: 0; padding: 6vh 0 18vh; display: grid; gap: 0; }
-.stop { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 20px; align-items: start; padding: 9vh 0; opacity: 0.42; transition: opacity 0.5s var(--ease); }
+.journey__stops { list-style: none; margin: 0; padding: 4vh 0 10vh; display: grid; gap: 0; }
+.stop { display: grid; grid-template-columns: 86px minmax(0, 1fr); gap: 20px; align-items: start; padding: 8vh 0; opacity: 0.42; transition: opacity 0.5s var(--ease); }
 .stop.is-active, .stop.is-done { opacity: 1; }
 .stop.is-done .exit { background: var(--red-deep); color: #fff; box-shadow: inset 0 0 0 2px var(--red-deep), inset 0 0 0 3.5px rgba(255, 255, 255, 0.85); }
 .stop h3 { font-family: var(--font-display); font-size: clamp(1.6rem, 2.4vw, 2rem); line-height: 1.05; margin: 2px 0 8px; }
@@ -175,8 +175,8 @@
   .journey { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .journey__stage { top: 68px; z-index: 2; background: var(--paper-2); padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
   .journey__globe { height: 40vh; min-height: 260px; max-height: 360px; }
-  .journey__stops { padding: 2vh 0 30vh; }
-  .stop { grid-template-columns: 66px minmax(0, 1fr); gap: 14px; padding: 6vh 0; }
+  .journey__stops { padding: 2vh 0 6vh; }
+  .stop { grid-template-columns: 66px minmax(0, 1fr); gap: 14px; padding: 5vh 0; }
   .stop .exit { min-width: 62px; padding: 7px 10px; }
   .stop .exit b { font-size: 1.3rem; }
 }
@@ -404,3 +404,16 @@
 .btn--whats:hover { box-shadow: 0 14px 30px -14px var(--verde); }
 .grupo-aviso { display: grid; grid-template-columns: 24px 1fr; gap: 10px; align-items: start; padding: 14px 16px; border-radius: var(--radius); background: rgba(29, 138, 75, 0.1); color: var(--ink); font-size: 15px; }
 .grupo-aviso i { color: var(--verde); font-size: 22px; }
+
+/* ---------- Campos opcionais vindos da configuração ---------- */
+.founder__reg { font-family: var(--font-mono); font-size: 11.5px; color: rgba(243, 245, 242, 0.75); }
+.founder__lattes { margin: 12px 0 0; font-size: 15px; }
+.founder__lattes a { color: var(--red); font-weight: 600; }
+.ticket__facts { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 18px; padding: 14px 0; border-top: 1px solid rgba(243, 245, 242, 0.18); border-bottom: 1px solid rgba(243, 245, 242, 0.18); }
+.ticket__facts dt { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(243, 245, 242, 0.65); }
+.ticket__facts dd { margin: 2px 0 0; font-size: 15px; color: #f3f5f2; }
+.ticket li a { color: inherit; }
+.tile__sample { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; padding: 8px 12px; border-radius: var(--radius); border: 1px solid currentColor; font-weight: 600; font-size: 14.5px; text-decoration: none; color: inherit; }
+.tile__sample:hover { background: rgba(255, 255, 255, 0.12); }
+.hero .lead a { color: inherit; text-decoration-color: var(--red); text-underline-offset: 3px; }
+.consent a { color: var(--ink); font-weight: 600; }
