@@ -29,7 +29,8 @@ export function tabela(titulo, colunas, linhas) {
    valores: números; rotulos: texto de cada barra; parcial: índice da barra em curso (hoje). */
 export function barrasVerticais(valores, { rotulos = [], titulo = "", parcial = -1, linhaMedia = null, rotuloMedia = "", cadaRotulo = 5, altura = 200, largura = 720 } = {}) {
   const W = largura, H = altura;
-  const pad = { l: 46, r: 10, t: 16, b: 28 };
+  const temMedia = linhaMedia !== null && linhaMedia > 0;
+  const pad = { l: 46, r: 10, t: temMedia ? 30 : 16, b: 28 };
   const max = Math.max(5, ...valores, linhaMedia || 0);
   const passo = passoBonito(max);
   const topo = Math.ceil(max / passo) * passo;
@@ -52,9 +53,12 @@ export function barrasVerticais(valores, { rotulos = [], titulo = "", parcial = 
       s += '<text class="chart__lbl" x="' + (x + (bw - 3) / 2) + '" y="' + (H - 9) + '" text-anchor="middle">' + e(rotulos[i]) + "</text>";
     }
   });
-  if (linhaMedia !== null && linhaMedia > 0) {
+  if (temMedia) {
+    /* a legenda da linha fica acima da área do gráfico, sem cobrir barras */
+    const txt = rotuloMedia + " " + fmtNum(linhaMedia);
     s += '<line class="chart__ref" x1="' + pad.l + '" x2="' + (W - pad.r) + '" y1="' + y(linhaMedia) + '" y2="' + y(linhaMedia) + '"/>' +
-      '<text class="chart__lbl chart__lbl--ref chart__lbl--halo" x="' + (pad.l + 6) + '" y="' + (y(linhaMedia) - 6) + '">' + e(rotuloMedia + " " + fmtNum(linhaMedia)) + "</text>";
+      '<line class="chart__ref" x1="' + (W - pad.r - 8 * txt.length - 34) + '" x2="' + (W - pad.r - 8 * txt.length - 10) + '" y1="11" y2="11"/>' +
+      '<text class="chart__lbl chart__lbl--ref" x="' + (W - pad.r) + '" y="15" text-anchor="end">' + e(txt) + "</text>";
   }
   return s + "</svg>";
 }
@@ -96,14 +100,18 @@ export function linhaProporcao(pontos, { titulo = "", meta = null, rotuloMeta = 
 
 /* Barras horizontais de acerto por área, da pior para a melhor, com a meta.
    areas: [{ nome, taxa, acertos, total }] */
-export function barrasAcerto(areas, { meta = 0.6, titulo = "Acerto por área" } = {}) {
+/* minQuestoes: áreas com menos questões ficam em cinza, no fim da lista e sem o
+   vermelho de "abaixo da meta", porque a taxa ainda não diz muita coisa. */
+export function barrasAcerto(areas, { meta = 0.6, titulo = "Acerto por área", minQuestoes = 0 } = {}) {
   if (!areas.length) return '<p class="hint">Ainda não há questões suficientes por área para comparar.</p>';
   const x = (v) => Math.max(0, Math.min(100, v * 100));
-  return '<ul class="acerto" aria-label="' + e(titulo) + '">' + areas.map((a) => {
-    const abaixo = a.taxa < meta;
-    return '<li class="acerto__row' + (abaixo ? " is-abaixo" : "") + '">' +
+  const ordenadas = areas.filter((a) => a.total >= minQuestoes).concat(areas.filter((a) => a.total < minQuestoes));
+  return '<ul class="acerto" aria-label="' + e(titulo) + '">' + ordenadas.map((a) => {
+    const pouco = a.total < minQuestoes;
+    const abaixo = !pouco && a.taxa < meta;
+    return '<li class="acerto__row' + (abaixo ? " is-abaixo" : "") + (pouco ? " is-pouco" : "") + '">' +
       '<span class="acerto__nome">' + e(a.nome) + "</span>" +
-      '<span class="acerto__track" role="img" aria-label="' + e(a.nome + ": " + fmtPct(a.taxa) + " de acerto em " + a.total + " questões" + (abaixo ? ", abaixo da meta de " + fmtPct(meta) : "")) + '">' +
+      '<span class="acerto__track" role="img" aria-label="' + e(a.nome + ": " + fmtPct(a.taxa) + " de acerto em " + a.total + " questões" + (abaixo ? ", abaixo da meta de " + fmtPct(meta) : "") + (pouco ? ", amostra pequena" : "")) + '">' +
         '<span class="acerto__fill" style="width:' + x(a.taxa).toFixed(1) + '%"></span>' +
         '<span class="acerto__meta" style="left:' + x(meta) + '%"></span>' +
       "</span>" +

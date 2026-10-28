@@ -47,6 +47,9 @@ export async function importarPresenca(ctx) {
     if (res.erros.length) partes.push(res.erros.length + " linha(s) com erro");
     toast("Presença importada: " + partes.join(", ") + ".", res.atualizados ? "ok" : "aviso", 6000);
     if (res.nao_encontrados.length || res.erros.length) {
+      /* o evento "close" do primeiro diálogo chega numa tarefa seguinte; abrir o
+         segundo antes disso o fecharia na hora (mesmo elemento <dialog>) */
+      await new Promise((ok) => setTimeout(ok, 30));
       await dialog({
         titulo: "Resultado da importação",
         corpo: "<p><b>" + res.atualizados + "</b> participante(s) atualizado(s).</p>" +

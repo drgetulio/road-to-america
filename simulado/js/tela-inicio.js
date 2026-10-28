@@ -71,7 +71,7 @@ async function montarHistorico(ctx, el, step) {
   const rot = titulosAreas(step);
   const variacao = r.variacao === null ? "" : " A última ficou " + (r.variacao === 0 ? "igual à anterior" : (r.variacao > 0 ? Math.round(r.variacao * 100) + " pontos acima" : Math.round(-r.variacao * 100) + " pontos abaixo") + " da anterior") + ".";
   box.innerHTML =
-    '<p class="body">' + r.n + (r.n === 1 ? " bloco encerrado" : " blocos encerrados") + " do " + NOME_STEP[step] + ". Média de " + pct(r.media) + ", melhor resultado " + pct(r.melhor) + "." + variacao + "</p>" +
+    '<p class="body">' + r.n + (r.n === 1 ? " bloco encerrado" : " blocos encerrados") + " do " + NOME_STEP[step] + (r.n === 1 ? ", com " + pct(r.media) + " de acerto." : ". Média de " + pct(r.media) + ", melhor resultado " + pct(r.melhor) + ".") + variacao + "</p>" +
     (fracas.length ? '<div class="cartao"><h3 class="h-sm">' + e(rot.sistema) + "s com menor acerto somando os blocos</h3><ul class=\"lista-check\">" +
       fracas.map((l) => "<li>" + icon("chart-bar") + "<span><strong>" + e(l.rotulo) + "</strong>: " + l.acertos + " de " + l.total + " (" + pct(l.taxa) + ")</span></li>").join("") + "</ul></div>" : "") +
     '<div class="tabela-wrap"><table class="tabela tabela--cartoes"><caption class="sr-only">Blocos encerrados do ' + NOME_STEP[step] + ", do mais recente para o mais antigo</caption>" +
@@ -82,13 +82,19 @@ async function montarHistorico(ctx, el, step) {
 /* Encerra um bloco salvo pela tela inicial e grava */
 async function encerrarSalvo(ctx, s) {
   encerrar(s, Date.now());
-  const t = paraTentativa(s, ctx.porId);
-  const r = await ctx.salvarTentativa(t);
+  let r;
+  try { r = await ctx.salvarTentativa(paraTentativa(s, ctx.porId)); }
+  catch (err) { console.error(err); toast("Não foi possível gravar o bloco: " + (err.message || err), "erro", 8000); return false; }
   gravarNotas(r.registro.id, s.notas);
   apagarAndamento();
   ctx._ultimoSalvamento = { id: r.registro.id, onde: r.onde, erro: r.erro };
   ctx.go("#/resultado/" + encodeURIComponent(r.registro.id));
+  return true;
 }
+
+/* Bloco salvo que já terminou (tempo esgotado com a página aberta em outra tela, ou
+   encerrado sem gravação): grava antes de qualquer coisa, para não se perder */
+const terminou = (s) => s && (s.encerrada || tempoRestante(s) === 0);
 
 export default {
   titulo: "",
@@ -96,7 +102,10 @@ export default {
     document.body.classList.remove("em-prova");
     const prefs = lerPrefs();
     let step = prefs.step;
-    const salvo = restaurarSessao(lerAndamento());
+    ctx._historico = null;
+    let salvo = restaurarSessao(lerAndamento());
+    if (salvo && ctx.deOutraConta(salvo)) { apagarAndamento(); salvo = null; toast("Um bloco aberto por outra conta neste navegador foi descartado.", "aviso", 7000); }
+    if (terminou(salvo) && (await encerrarSalvo(ctx, salvo))) return;
     const resta = salvo ? tempoRestante(salvo) : 0;
 
     el.innerHTML =
@@ -116,7 +125,7 @@ export default {
 
         avisoConta(ctx) +
 
-        (salvo && resta > 0 ? '<div class="aviso-conta andamento" data-andamento>' + icon("hourglass-medium") +
+        (salvo && !salvo.encerrada && resta > 0 ? '<div class="aviso-conta andamento" data-andamento>' + icon("hourglass-medium") +
           "<div><p><strong>Há um bloco em andamento</strong> (" + NOME_STEP[salvo.step] + ", " + relogio(resta) + " restantes). O relógio do bloco continua correndo mesmo com a página fechada.</p>" +
           '<p class="acoes" style="margin-top:10px"><a class="btn btn--sm" href="#/bloco">' + icon("play") + 'Voltar ao bloco</a><button type="button" class="btn btn--ghost btn--sm" data-encerrar-salvo>Encerrar e ver o resultado</button></p></div></div>' : "") +
 
@@ -194,8 +203,18 @@ export default {
     });
 
     $("[data-iniciar]", el).addEventListener("click", async () => {
-      const aberto = restaurarSessao(lerAndamento());
-      if (aberto && tempoRestante(aberto) > 0) {
+      let aberto = restaurarSessao(lerAndamento());
+      if (aberto && ctx.deOutraConta(aberto)) { apagarAndamento(); aberto = null; }
+      if (terminou(aberto)) {
+        if (await encerrarSalvo(ctx, aberto)) return;
+        const descartar = await dialogo({
+          titulo: "O bloco anterior não foi gravado",
+          corpo: "<p>O último bloco terminou, mas não foi possível gravar o resultado. Você pode tentar de novo mais tarde ou descartá-lo e começar outro bloco.</p>",
+          acoes: [{ rotulo: "Manter e tentar depois", valor: false, estilo: "ghost", foco: true }, { rotulo: "Descartar e começar", valor: true, estilo: "perigo" }]
+        });
+        if (!descartar) return;
+        apagarAndamento();
+      } else if (aberto) {
         const v = await dialogo({
           titulo: "Há um bloco em andamento",
           corpo: "<p>Termine o bloco aberto antes de começar outro. Você pode voltar a ele ou encerrá-lo agora e ver o resultado.</p>",
@@ -211,6 +230,7 @@ export default {
       const semente = (Date.now() ^ Math.floor(Math.random() * 0x7fffffff)) >>> 0;
       const questoes = sortearBloco({ banco, vistas: idsDaUltima(historico, step), semente });
       const s = criarSessao({ step, questoes, agora: Date.now(), semente, versao_banco: step + "-" + banco.length });
+      s.dono = ctx.dono;
       if (!gravarAndamento(s)) toast("O navegador não deixou guardar o bloco: se a página recarregar, o progresso se perde.", "aviso", 6000);
       ctx._sessao = s;
       ctx.go("#/bloco");

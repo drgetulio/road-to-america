@@ -380,8 +380,10 @@ alter table public.sinalizacoes   enable row level security;
 alter table public.configuracoes  enable row level security;
 
 -- Nada é acessível sem login
+-- No Supabase, os privilégios padrão do esquema public dão ALL (inclusive TRUNCATE,
+-- que ignora a RLS) a anon e authenticated; por isso o revoke vale para os dois.
 revoke all on public.profiles, public.cards, public.card_historico, public.srs_estado,
-              public.revlog, public.sinalizacoes, public.configuracoes from anon;
+              public.revlog, public.sinalizacoes, public.configuracoes from anon, authenticated;
 grant select, insert, update on public.profiles to authenticated;
 grant select, insert, update, delete on public.cards, public.srs_estado, public.revlog,
                                         public.sinalizacoes, public.configuracoes to authenticated;
@@ -732,7 +734,7 @@ alter table public.plano_participante  enable row level security;
 alter table public.plataforma_config   enable row level security;
 
 revoke all on public.simulados, public.nbme_autoavaliacoes, public.presenca,
-              public.plano_participante, public.plataforma_config from anon;
+              public.plano_participante, public.plataforma_config from anon, authenticated;
 grant select, insert, update, delete on public.simulados, public.nbme_autoavaliacoes, public.presenca,
                                         public.plano_participante to authenticated;
 grant select, insert, update on public.plataforma_config to authenticated;
@@ -1134,7 +1136,7 @@ create trigger anotacoes_mentor_guard
   for each row execute function public.anotacoes_mentor_guard();
 
 alter table public.anotacoes_mentor enable row level security;
-revoke all on public.anotacoes_mentor from anon;
+revoke all on public.anotacoes_mentor from anon, authenticated;
 grant select, insert, update, delete on public.anotacoes_mentor to authenticated;
 
 drop policy if exists anotacoes_mentor_admin on public.anotacoes_mentor;

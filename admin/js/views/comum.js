@@ -20,7 +20,7 @@ const CLASSE_GARANTIA = { cumprida: "ok", verificar: "aviso", em_dia: "ok", atra
 export function chipGarantia(sit) {
   return '<span class="gar gar--' + (CLASSE_GARANTIA[sit] || "neutro") + '">' + e(ROTULO_SITUACAO_GARANTIA[sit] || sit) + "</span>";
 }
-const CLASSE_PRONTIDAO = { pronto: "ok", nao_pronto: "risco", insuficiente: "neutro", aprovado: "ok" };
+const CLASSE_PRONTIDAO = { pronto: "ok", pronto_sem_faixa: "aviso", nao_pronto: "risco", insuficiente: "neutro", aprovado: "ok" };
 export function chipProntidao(st) {
   return '<span class="gar gar--' + (CLASSE_PRONTIDAO[st] || "neutro") + '">' + e(ROTULO_PRONTIDAO[st] || st) + "</span>";
 }

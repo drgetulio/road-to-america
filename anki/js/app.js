@@ -17,6 +17,7 @@ import estatisticas from "./views/estatisticas.js";
 import guia from "./views/guia.js";
 import ajustes from "./views/ajustes.js";
 import entrar from "./views/entrar.js";
+import progresso from "./views/progresso.js";
 
 const ROTAS = {
   "": painel,
@@ -27,7 +28,8 @@ const ROTAS = {
   estatisticas,
   "como-estudar": guia,
   ajustes,
-  entrar
+  entrar,
+  progresso
 };
 
 const MENU = [
@@ -36,8 +38,13 @@ const MENU = [
   { rota: "cards", rotulo: "Cards", icone: "magnifying-glass" },
   { rota: "curadoria", rotulo: "Curadoria", icone: "seal-check", admin: true },
   { rota: "estatisticas", rotulo: "Estatísticas", icone: "chart-bar" },
+  { rota: "progresso", rotulo: "Meu progresso", icone: "path" },
   { rota: "como-estudar", rotulo: "Como estudar", icone: "lightbulb" },
-  { rota: "ajustes", rotulo: "Ajustes", icone: "gear-six" }
+  { rota: "ajustes", rotulo: "Ajustes", icone: "gear-six" },
+  /* páginas fora do app, com o mesmo login */
+  { href: "../simulado/", rotulo: "Simulado", icone: "clock" },
+  { href: "../conteudo-step1.html", rotulo: "Conteúdo do Step 1", icone: "signpost" },
+  { href: "../admin/", rotulo: "Rendimento", icone: "users-three", admin: true }
 ];
 
 const usaSupabase = !!(config.supabaseUrl && config.supabaseAnonKey);
@@ -109,8 +116,11 @@ function montarMenu() {
   $(".app-menu").hidden = !ctx.user;
   const { rota } = parseHash();
   const atual = rota === "estudar" ? "" : rota;
-  ul.innerHTML = MENU.filter((m) => !m.admin || ctx.admin).map((m) =>
-    '<li><a href="#/' + m.rota + '"' + (m.rota === atual ? ' aria-current="page"' : "") + ">" + icon(m.icone) + "<span>" + e(m.rotulo) + "</span>" +
+  const itens = MENU.filter((m) => !m.admin || ctx.admin);
+  /* com mais de dez itens (administrador) o menu só cabe numa linha sem ícones */
+  ul.classList.toggle("app-links--cheio", itens.length > 10);
+  ul.innerHTML = itens.map((m) =>
+    '<li' + (m.href ? ' class="app-links__fora"' : "") + '><a href="' + (m.href || "#/" + m.rota) + '"' + (!m.href && m.rota === atual ? ' aria-current="page"' : "") + ">" + icon(m.icone) + "<span>" + e(m.rotulo) + "</span>" +
     (m.rota === "curadoria" ? '<span class="nav-badge" data-badge-curadoria hidden></span>' : "") + "</a></li>").join("");
   atualizarBadge();
 }

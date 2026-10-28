@@ -10,7 +10,7 @@ import config from "../../anki/config.js";
 import { LocalStore } from "../../anki/js/store-local.js";
 import { SupabaseStore } from "../../anki/js/store-supabase.js";
 import { aplicarTaxonomia } from "./rotulos.js";
-import { HistoricoLocal, lerAndamento, apagarAndamento } from "./armazenamento.js";
+import { HistoricoLocal, lerAndamento, apagarAndamento, gravarNotas } from "./armazenamento.js";
 import { restaurarSessao, expirou, encerrar, paraTentativa } from "./sessao.js";
 import { $, $$, e, toast } from "./dom.js";
 import { alternarTema, rotularTema } from "./tema.js";
@@ -37,6 +37,19 @@ const ctx = {
   },
   get gravaNaConta() { return this.conta !== "visitante"; },
 
+  /* Quem é o dono do que fica neste navegador: o id da conta, "visitante" ou "demo".
+     Num computador compartilhado, um bloco ou uma tentativa pendente de outra conta
+     não pode ir para a conta de quem entrou depois. */
+  get dono() {
+    if (this.modo === "demo") return "demo";
+    return this.user?.id || "visitante";
+  },
+  /* Bloco salvo por outra conta (um visitante que entra na conta no meio do bloco continua dono dele) */
+  deOutraConta(sessao) {
+    const d = sessao?.dono;
+    return this.modo === "supabase" && !!d && d !== "visitante" && d !== this.dono;
+  },
+
   async listarTentativas(step = null) {
     let lista = [];
     if (this.gravaNaConta && this.store) {
@@ -44,7 +57,7 @@ const ctx = {
       catch (err) { console.error(err); toast("Não foi possível ler o histórico da sua conta: " + (err.message || err), "erro"); }
     }
     /* tentativas feitas sem login ou que não chegaram ao banco */
-    const locais = this.local.listar(step).filter((t) => this.conta === "visitante" || t._pendente_envio);
+    const locais = this.local.listar(step).filter((t) => (this.conta === "visitante" ? !t._pendente_envio : t._pendente_envio && t._dono === this.dono));
     return [...lista, ...locais].sort((a, b) => String(b.fim).localeCompare(String(a.fim)));
   },
 
@@ -56,7 +69,7 @@ const ctx = {
         return { registro: reg, onde: this.modo === "demo" ? "demo" : "conta" };
       } catch (err) {
         console.error(err);
-        const reg = this.local.salvar({ ...t, _pendente_envio: true });
+        const reg = this.local.salvar({ ...t, _pendente_envio: true, _dono: this.dono });
         return { registro: reg, onde: "navegador", erro: err.message || String(err) };
       }
     }
@@ -66,11 +79,11 @@ const ctx = {
   /* Reenvia para a conta as tentativas que ficaram só no navegador por falha de rede */
   async reenviarPendentes() {
     if (this.conta !== "participante") return 0;
-    const pend = this.local.listar().filter((t) => t._pendente_envio);
+    const pend = this.local.listar().filter((t) => t._pendente_envio && t._dono === this.dono);
     let n = 0;
     for (const t of pend) {
       try {
-        const { id, user_id, criado_em, _pendente_envio, _gravado, ...resto } = t;
+        const { id, user_id, criado_em, _pendente_envio, _gravado, _dono, ...resto } = t;
         await this.store.saveSimulado(resto);
         this.local.remover?.(id);
         n++;
@@ -150,12 +163,20 @@ async function retomarOuFechar() {
   const salvo = restaurarSessao(lerAndamento());
   if (!salvo) { apagarAndamento(); return null; }
   if (!salvo.ids.every((id) => ctx.porId.has(id))) { apagarAndamento(); return null; }
-  if (!expirou(salvo)) return salvo;
+  if (ctx.deOutraConta(salvo)) {
+    apagarAndamento();
+    toast("Havia neste navegador um bloco aberto por outra conta. Ele foi descartado e não entrou na sua conta.", "aviso", 7000);
+    return null;
+  }
+  if (!salvo.encerrada && !expirou(salvo)) return salvo;
+  const jaEncerrado = salvo.encerrada;
   encerrar(salvo, Date.now(), "tempo");
-  const t = paraTentativa(salvo, ctx.porId);
-  const r = await ctx.salvarTentativa(t);
+  let r;
+  try { r = await ctx.salvarTentativa(paraTentativa(salvo, ctx.porId)); }
+  catch (err) { console.error(err); toast("Não foi possível gravar o bloco encerrado: " + (err.message || err), "erro", 8000); return null; }
+  gravarNotas(r.registro.id, salvo.notas);
   apagarAndamento();
-  toast("O tempo do bloco terminou enquanto a página estava fechada. O resultado foi gravado.", "info", 6000);
+  toast(jaEncerrado ? "O bloco encerrado na última visita foi gravado." : "O tempo do bloco terminou enquanto a página estava fechada. O resultado foi gravado.", "info", 6000);
   return { encerrado: r.registro.id };
 }
 

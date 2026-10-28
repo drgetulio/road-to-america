@@ -7,16 +7,15 @@
    plataforma/js/desempenho.js; aqui só se agrega e se explica. */
 import { avaliarParticipante, mergeConfig, parseData, CONFIG_PADRAO } from "../../plataforma/js/desempenho.js";
 import { desempenhoPorArea, SIMULADO_30 } from "../../plataforma/js/simulado.js";
-import { situacaoGarantia, stepAtual, NOME_STEP, nomeArea, pct, plural, dataBR } from "../../plataforma/js/acompanhamento.js";
+import { situacaoGarantia, stepAtual, NOME_STEP, nomeArea, pct, plural, dataBR, MIN_QUESTOES_AREA } from "../../plataforma/js/acompanhamento.js";
 import { dayStart, addDays, dayKey } from "../../anki/js/util.js";
 
 const DIA = 86400000;
 /* Meta de retenção desejada do preset da Road to America (EXIT 04 do PDF de
    overdeliveries; padrão do app em anki/js/scheduler.js). */
 export const RETENCAO_DESEJADA = 0.9;
-/* Abaixo deste número de questões numa área, a taxa de acerto oscila demais
-   para orientar estudo (critério interno, ajustável aqui). */
-export const MIN_QUESTOES_AREA = 4;
+/* Limite de questões por área: definido em plataforma/js/acompanhamento.js */
+export { MIN_QUESTOES_AREA };
 /* Leeches a partir dos quais vale levar à Clínica de leeches (EXIT 12):
    critério interno de acompanhamento. */
 export const MIN_LEECHES_CLINICA = 8;
@@ -97,7 +96,12 @@ export function montarLinha(linha, { config = CONFIG_PADRAO, agora = new Date(),
     presenca_txt: linha.presenca && linha.presenca.aulas_totais ? linha.presenca.aulas_assistidas + "/" + linha.presenca.aulas_totais : "",
     prova,
     dias_prova: prova ? diasEntre(agora, parseData(prova)) : null,
-    prontidao: step === "concluido" ? "aprovado" : av.prontidao[stepRef].status,
+    /* EXIT 18 pede probabilidade de 90% ou mais E faixa provável inteira acima da
+       aprovação baixa. Sem a faixa informada, a probabilidade sozinha não fecha o
+       critério: a tela mostra "falta confirmar a faixa" e não conta como pronto. */
+    prontidao: step === "concluido" ? "aprovado"
+      : av.prontidao[stepRef].status === "pronto" && !av.prontidao[stepRef].faixa_confirmada ? "pronto_sem_faixa"
+      : av.prontidao[stepRef].status,
     avaliacao: av,
     linha
   };
@@ -168,7 +172,8 @@ export function ordenarLinhas(rows, chave = "risco", dir = "desc") {
    = + - @ ganha um apóstrofo). E-mail só sai com incluirEmail. */
 function celula(v) {
   let s = v === null || v === undefined ? "" : String(v);
-  if (/^[=+\-@\t\r]/.test(s)) s = "'" + s;
+  /* número negativo (dias desde a prova) não é fórmula: fica como está */
+  if (/^[=+\-@\t\r]/.test(s) && !/^-\d+([.,]\d+)?$/.test(s)) s = "'" + s;
   return /[";\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
 }
 const dec = (x, casas = 1) => (x === null || x === undefined || !Number.isFinite(x) ? "" : (x * 100).toFixed(casas).replace(".", ","));
@@ -255,7 +260,10 @@ export function indicadoresTurma(rows, simulados, { config = CONFIG_PADRAO, agor
   const serie = serieRevisoesTurma(rows.map((r) => r.linha));
   /* sete dias completos (ontem e os seis anteriores): o dia de hoje ainda está em curso */
   const ult7 = serie.slice(-8, -1);
-  const porAtivo = rows.filter((r) => r.revisoes_7d > 0).map((r) => r.revisoes_7d / 7);
+  /* mediana por participante ativo nos mesmos 7 dias completos da média da turma */
+  const porAtivo = rows
+    .map((r) => (r.linha.flashcards?.por_dia_30 || []).slice(-8, -1).reduce((a, b) => a + (b || 0), 0))
+    .filter((n) => n > 0).map((n) => n / 7);
   let tot = 0, ac = 0;
   for (const r of rows) {
     const rt = r.linha.flashcards?.retencao_30d;
@@ -268,6 +276,7 @@ export function indicadoresTurma(rows, simulados, { config = CONFIG_PADRAO, agor
   const status = { risco: 0, atencao: 0, em_dia: 0 };
   for (const r of rows) status[r.status]++;
   const prontos = rows.filter((r) => r.prontidao === "pronto").length;
+  const prontos_sem_faixa = rows.filter((r) => r.prontidao === "pronto_sem_faixa").length;
   return {
     participantes: n,
     ativos_7d: ativos.length,
@@ -286,6 +295,7 @@ export function indicadoresTurma(rows, simulados, { config = CONFIG_PADRAO, agor
     garantia_em_dia: n ? (sit.cumprida + sit.verificar + sit.em_dia) / n : null,
     status,
     prontos,
+    prontos_sem_faixa,
     nbme_nao_verificadas: rows.reduce((a, r) => a + r.nbme_nao_verificadas, 0)
   };
 }

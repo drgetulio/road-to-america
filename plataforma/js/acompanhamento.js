@@ -8,6 +8,10 @@ import { CONFIG_PADRAO, mergeConfig, parseData } from "./desempenho.js";
 
 export const NOME_STEP = Object.freeze({ step1: "Step 1", step2ck: "Step 2 CK" });
 
+/* Abaixo deste número de questões somadas numa área, a taxa de acerto oscila demais
+   para comparar com a meta (critério interno, usado no admin e em "Meu progresso"). */
+export const MIN_QUESTOES_AREA = 4;
+
 /* Nomes curtos dos sistemas e disciplinas do Step 1 (mesmos de anki/data/taxonomia.json),
    usados quando a taxonomia não foi carregada */
 export const NOMES_STEP1 = Object.freeze({
@@ -127,8 +131,12 @@ export function situacaoGarantia(av) {
 }
 
 /* ---------- Checklist da garantia (garantia.html) ----------
-   Devolve itens { chave, ok: true | false | null, titulo, detalhe }.
-   ok null = ainda sem dado para dizer. */
+   Devolve itens { chave, ok: true | false | null, estado, titulo, detalhe }.
+   ok null = ainda sem dado para dizer, ou condição em andamento.
+   estado: "cumprido" | "pendente" | "andamento" | "sem_dado". As autoavaliações
+   ficam "em andamento" (e não "pendente") enquanto não há cobrança: prova a mais
+   de nbme_antecedencia_dias ou sem data, e prazo da garantia aberto. */
+const ESTADO_OK = (ok) => (ok === true ? "cumprido" : ok === false ? "pendente" : "sem_dado");
 export function checklistGarantia(linha, av, { config = CONFIG_PADRAO, participante = false } = {}) {
   const c = mergeConfig(config);
   const g = av.garantia;
@@ -138,10 +146,10 @@ export function checklistGarantia(linha, av, { config = CONFIG_PADRAO, participa
   const p = g.presenca;
   const minPres = pct(c.presenca_minima);
   if (p.cumpre === null) {
-    itens.push({ chave: "presenca", ok: null, titulo: "Pelo menos " + minPres + " das aulas assistidas",
+    itens.push({ chave: "presenca", ok: null, estado: "sem_dado", titulo: "Pelo menos " + minPres + " das aulas assistidas",
       detalhe: voce ? "A equipe ainda não lançou a sua presença." : "Presença ainda não lançada." });
   } else {
-    itens.push({ chave: "presenca", ok: p.cumpre, titulo: "Pelo menos " + minPres + " das aulas assistidas",
+    itens.push({ chave: "presenca", ok: p.cumpre, estado: ESTADO_OK(p.cumpre), titulo: "Pelo menos " + minPres + " das aulas assistidas",
       detalhe: p.aulas_assistidas + " de " + p.aulas_totais + " aulas (" + pct(p.percentual) + ")" +
         (p.cumpre ? "." : "; faltam " + plural(p.faltam_aulas, "aula", "aulas") + " para chegar a " + minPres + " com o total atual.") });
   }
@@ -150,25 +158,31 @@ export function checklistGarantia(linha, av, { config = CONFIG_PADRAO, participa
     const n = g.nbme[step];
     const titulo = "Duas autoavaliações oficiais do NBME do " + NOME_STEP[step];
     if (!n.exigido) {
-      itens.push({ chave: "nbme_" + step, ok: true, titulo, detalhe: NOME_STEP[step] + " aprovado: a condição não se aplica." });
+      itens.push({ chave: "nbme_" + step, ok: true, estado: "cumprido", titulo, detalhe: NOME_STEP[step] + " aprovado: a condição não se aplica." });
       continue;
     }
     let det = n.lancados >= n.minimo ? plural(n.lancados, "lançada", "lançadas") + " (mínimo " + n.minimo + ")" : n.lancados + " de " + n.minimo + " lançadas";
     if (n.lancados) det += ", " + plural(n.verificados, "verificada", "verificadas") + " pela equipe";
     det += ".";
     if (n.pendente_verificacao) det += voce ? " A equipe ainda vai conferir os relatórios." : " Falta verificar.";
-    itens.push({ chave: "nbme_" + step, ok: n.cumpre, titulo, detalhe: det });
+    const cobrada = (av.riscos || []).some((r) => r.codigo === "nbme_insuficiente" && r.step === step) || (g.prazo && g.prazo.dias_restantes < 0);
+    if (!n.cumpre && !cobrada) {
+      det += " Em andamento: " + (voce ? "o painel passa a cobrar" : "a cobrança começa") + " a " + Math.round(c.nbme_antecedencia_dias) + "\u00a0dias da prova do " + NOME_STEP[step].replace(" ", "\u00a0") + ".";
+      itens.push({ chave: "nbme_" + step, ok: null, estado: "andamento", titulo, detalhe: det });
+      continue;
+    }
+    itens.push({ chave: "nbme_" + step, ok: n.cumpre, estado: ESTADO_OK(n.cumpre), titulo, detalhe: det });
   }
 
   const anos = Math.round(c.garantia_anos);
   if (!g.prazo) {
-    itens.push({ chave: "prazo", ok: null, titulo: "Prazo de " + anos + " anos a partir da matrícula",
+    itens.push({ chave: "prazo", ok: null, estado: "sem_dado", titulo: "Prazo de " + anos + " anos a partir da matrícula",
       detalhe: voce ? "A data da sua matrícula ainda não foi lançada pela equipe." : "Data de matrícula não lançada: o prazo não pode ser calculado." });
   } else {
     const desde = linha.plano?.ciclo_basico_concluido_em && linha.plano.ciclo_basico_concluido_em === g.prazo.inicio
       ? "da conclusão do ciclo básico" : "da matrícula";
     const d = g.prazo.dias_restantes;
-    itens.push({ chave: "prazo", ok: d >= 0, titulo: "Prazo de " + anos + " anos a partir " + desde,
+    itens.push({ chave: "prazo", ok: d >= 0, estado: d >= 0 ? "cumprido" : "pendente", titulo: "Prazo de " + anos + " anos a partir " + desde,
       detalhe: "De " + dataBR(g.prazo.inicio) + " a " + dataBR(g.prazo.fim) + (d >= 0 ? "; faltam " + plural(d, "dia", "dias") + "." : "; prazo encerrado há " + plural(-d, "dia", "dias") + ".") });
   }
   return itens;
@@ -178,6 +192,7 @@ export function checklistGarantia(linha, av, { config = CONFIG_PADRAO, participa
    Texto para a tela a partir de avaliarParticipante().prontidao[step]. */
 export const ROTULO_PRONTIDAO = Object.freeze({
   pronto: "Critério atendido",
+  pronto_sem_faixa: "Falta confirmar a faixa",
   nao_pronto: "Critério não atendido",
   insuficiente: "Dados insuficientes",
   aprovado: "Step aprovado"
@@ -188,13 +203,19 @@ export function leituraProntidao(pr, linha, step, { config = CONFIG_PADRAO, agor
   const prova = parseData(linha?.plano?.["data_prova_" + step]);
   const dias = prova ? Math.round((prova.setHours(12, 0, 0, 0) - new Date(agora).setHours(12, 0, 0, 0)) / 86400000) : null;
   const avisos = [];
-  if (pr.status === "pronto" && !pr.faixa_confirmada) avisos.push("A faixa provável de escore não foi informada nas duas autoavaliações: confira no relatório se ela está inteira acima da faixa de aprovação baixa.");
+  /* O critério escrito pede as duas coisas: probabilidade e faixa. Com a
+     probabilidade atingida e a faixa não informada, a tela não diz "atendido". */
+  const semFaixa = pr.status === "pronto" && !pr.faixa_confirmada;
+  if (semFaixa) avisos.push("A probabilidade atinge a meta, mas a faixa provável de escore não foi informada nas duas autoavaliações. Confira no relatório se ela está inteira acima da faixa de aprovação baixa e registre a resposta.");
   if (pr.status !== "aprovado" && dias !== null && dias >= 0 && dias <= 14) avisos.push("Prova em " + plural(dias, "dia", "dias") + ": é o momento da decisão de manter ou adiar a data (EXIT 18).");
+  const statusTela = semFaixa ? "pronto_sem_faixa" : pr.status;
   return {
     status: pr.status,
-    rotulo: ROTULO_PRONTIDAO[pr.status] || pr.status,
+    status_tela: statusTela,
+    rotulo: ROTULO_PRONTIDAO[statusTela] || statusTela,
     criterio: "Duas autoavaliações seguidas, em standard-paced, com probabilidade de aprovação de " + c.meta_probabilidade + "% ou mais e faixa provável de escore inteira acima da faixa de aprovação baixa.",
-    motivo: pr.motivo || (pr.status === "pronto" ? "As duas últimas autoavaliações atendem ao critério." : ""),
+    motivo: semFaixa ? "Probabilidade de " + c.meta_probabilidade + "% ou mais nas duas últimas autoavaliações em standard-paced; falta a faixa provável."
+      : pr.motivo || (pr.status === "pronto" ? "As duas últimas autoavaliações atendem ao critério." : ""),
     consideradas: pr.consideradas || [],
     dias_para_prova: dias,
     avisos

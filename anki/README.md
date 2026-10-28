@@ -145,6 +145,16 @@ com as regras de risco, da garantia e da prontidão, está em `plataforma/INTERF
 No modo demonstração, o painel do admin mostra também uma coorte sintética de 16
 participantes fictícios, gerada na memória e marcada como dados de demonstração.
 
+Telas ligadas a essa camada:
+
+- **Meu progresso** (`#/progresso`, `js/views/progresso.js`): o participante vê o
+  checklist da garantia, a leitura da prontidão pela EXIT 18, altera as datas de prova,
+  lança e corrige as próprias autoavaliações NBME (até a equipe verificar) e vê os seus
+  simulados com o acerto por sistema.
+- O menu leva também ao simulado (`../simulado/`), ao conteúdo do Step 1
+  (`../conteudo-step1.html`) e, para administradores, à área de rendimento
+  (`../admin/`, documentada em `admin/README.md`).
+
 ## Formato dos cards iniciais
 
 Cada arquivo listado em `data/manifest.json` é um array de objetos:
@@ -178,6 +188,8 @@ atualizar as notas em vez de duplicar.
 ```bash
 cd anki && node --test tests/*.test.mjs
 cd plataforma && node --test tests/*.test.mjs
+node --test admin/tests/*.test.mjs        # na raiz: cálculos da área administrativa
+node admin/tests/fluxos.e2e.mjs           # na raiz: fluxos no navegador (Playwright)
 ```
 
 Cobrem agendador e fila do dia, sessão e desfazer, verificador de qualidade, cloze,

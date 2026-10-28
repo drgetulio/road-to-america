@@ -1,7 +1,7 @@
 /* Road to America | área administrativa: ficha do participante */
 import { $, e, icon, toast, confirmar, num } from "../../../anki/js/ui.js";
 import { desempenhoPorArea, ritmo, SIMULADO_30 } from "../../../plataforma/js/simulado.js";
-import { checklistGarantia, leituraProntidao, NOME_STEP, nomeArea, dataBR } from "../../../plataforma/js/acompanhamento.js";
+import { checklistGarantia, leituraProntidao, NOME_STEP, nomeArea, dataBR, ROTULO_PRONTIDAO } from "../../../plataforma/js/acompanhamento.js";
 import { sugestoesAcao, semanasAtividade, gradeCalor, nivelCalor, textoUltimaAtividade, rotuloTurma, pct, plural, RETENCAO_DESEJADA, MIN_QUESTOES_AREA } from "../calculos.js";
 import { barrasVerticais, linhaProporcao, barrasAcerto, mapaCalor, tabela } from "../graficos.js";
 import { chipStatus, chipGarantia, chipProntidao, seloDemo, avisoLgpd } from "./comum.js";
@@ -55,14 +55,14 @@ export default {
           '<div class="ficha__nome"><h1 class="display h2">' + e(r.nome) + "</h1>" + chipStatus(r.status) + seloDemo(r.sintetico) + "</div>" +
           (perfilDemo ? '<p class="hint">Perfil fictício da demonstração: ' + e(perfilDemo) + ".</p>" : "") +
           '<dl class="boarding__data ficha__dados">' +
-            "<div><dt>Contato</dt><dd>" + (r.email ? '<a href="mailto:' + e(r.email) + '">' + e(r.email) + "</a>" : "sem e-mail") + "</dd></div>" +
+            "<div><dt>Contato</dt><dd>" + (r.email ? '<a href="mailto:' + e(r.email) + '">' + e(r.email).replace("@", "<wbr>@") + "</a>" : "sem e-mail") + "</dd></div>" +
             "<div><dt>Última atividade</dt><dd>" + e(textoUltimaAtividade(r)) + (r.ultima_atividade ? " <small>" + e(dataBR(r.ultima_atividade)) + "</small>" : "") + "</dd></div>" +
             "<div><dt>Prova</dt><dd>" + (r.prova ? e(dataBR(r.prova)) + " <small>" + (r.dias_prova >= 0 ? "em " + plural(r.dias_prova, "dia", "dias") : "há " + plural(-r.dias_prova, "dia", "dias")) + "</small>" : "sem data") + "</dd></div>" +
             "<div><dt>Turma</dt><dd>" + e(rotuloTurma(r.turma)) + "</dd></div>" +
             "<div><dt>Garantia</dt><dd>" + chipGarantia(r.garantia) + "</dd></div>" +
           "</dl>" +
         "</div>" +
-        '<div class="boarding__stub ficha__stub"><span>Prontidão</span><b>' + e(r.prontidao === "pronto" ? "OK" : r.prontidao === "aprovado" ? "PASS" : r.prontidao === "nao_pronto" ? "NÃO" : "N/D") + "</b><span>EXIT 18</span></div>" +
+        '<div class="boarding__stub ficha__stub" role="img" aria-label="' + e("Prontidão pela EXIT 18: " + (ROTULO_PRONTIDAO[r.prontidao] || "dados insuficientes")) + '"><span aria-hidden="true">Prontidão</span><b aria-hidden="true">' + e(r.prontidao === "pronto" ? "OK" : r.prontidao === "pronto_sem_faixa" ? "OK?" : r.prontidao === "aprovado" ? "PASS" : r.prontidao === "nao_pronto" ? "NÃO" : "N/D") + '</b><span aria-hidden="true">' + (r.prontidao === "pronto_sem_faixa" ? "Faixa?" : "EXIT 18") + "</span></div>" +
       "</header>" +
       '<p class="ficha__acts"><button type="button" class="btn btn--ghost btn--sm" data-imprimir>' + icon("download-simple") + "Imprimir relatório</button>" +
         (r.email ? '<a class="btn btn--ghost btn--sm" href="mailto:' + e(r.email) + '?subject=' + encodeURIComponent("Road to America: acompanhamento") + '">' + icon("envelope-simple") + "Escrever e-mail</a>" : "") + "</p>" +
@@ -161,7 +161,7 @@ export default {
       "</div>" +
 
       '<section class="panel" aria-labelledby="an-t"><div class="panel__head"><h2 class="h-sm" id="an-t">Anotações do mentor</h2>' +
-        '<p class="hint">Uso interno da equipe; o participante não vê este campo. Registre combinados e conversas, não diagnósticos de saúde nem dados que não sirvam ao acompanhamento.</p></div>' +
+        '<p class="hint">Uso interno da equipe: o participante não vê este campo na tela, mas pode pedir cópia dele pela LGPD (art. 18). Registre combinados e conversas, não diagnósticos de saúde nem dados que não sirvam ao acompanhamento.</p></div>' +
         '<form data-nota novalidate>' +
           '<div class="field"><label for="n-txt" class="sr-only">Anotações</label><textarea id="n-txt" name="texto" class="input input--area" rows="5" maxlength="5000">' + e(nota?.texto || "") + "</textarea></div>" +
           '<div class="nota__foot"><p class="hint" data-nota-info aria-live="polite">' + (nota?.atualizado_em ? "Salva em " + e(dataBR(nota.atualizado_em)) + "." : "Nenhuma anotação ainda.") + "</p>" +
@@ -261,18 +261,18 @@ export default {
   }
 };
 
+const ICONE_CHECK = { cumprido: "check-circle", pendente: "x-circle", andamento: "hourglass-medium", sem_dado: "hourglass-medium" };
+const ROTULO_CHECK = { cumprido: "cumprido", pendente: "pendente", andamento: "em andamento", sem_dado: "sem dado" };
 function listaChecklist(itens) {
-  const ic = (ok) => (ok === true ? "check-circle" : ok === false ? "x-circle" : "hourglass-medium");
-  const rot = (ok) => (ok === true ? "cumprido" : ok === false ? "pendente" : "sem dado");
-  return '<ul class="checks-gar">' + itens.map((i) => '<li class="cg cg--' + rot(i.ok).replace(" ", "-") + '">' + icon(ic(i.ok)) +
-    '<div><b>' + e(i.titulo) + '</b> <span class="sr-only">(' + rot(i.ok) + ")</span><p>" + e(i.detalhe) + "</p></div></li>").join("") + "</ul>";
+  return '<ul class="checks-gar">' + itens.map((i) => '<li class="cg cg--' + (i.estado === "sem_dado" ? "sem-dado" : i.estado) + '">' + icon(ICONE_CHECK[i.estado]) +
+    '<div><b>' + e(i.titulo) + '</b> <span class="sr-only">(' + ROTULO_CHECK[i.estado] + ")</span><p>" + e(i.detalhe) + "</p></div></li>").join("") + "</ul>";
 }
 
 function blocoProntidao(p, step) {
   const linhas = p.consideradas.map((x) => [x.formulario, dataBR(x.data), ROTULO_MODO[x.modo] || x.modo,
     x.probabilidade === null ? "não informada" : String(x.probabilidade).replace(".", ",") + "%",
     x.faixa_acima_aprovacao_baixa === true ? "acima" : x.faixa_acima_aprovacao_baixa === false ? "não está acima" : "não informada"]);
-  return '<div class="pront"><p class="pront__t"><b>' + NOME_STEP[step] + "</b> " + chipProntidao(p.status) + "</p>" +
+  return '<div class="pront"><p class="pront__t"><b>' + NOME_STEP[step] + "</b> " + chipProntidao(p.status_tela) + "</p>" +
     (p.motivo ? '<p class="pront__m">' + e(p.motivo) + "</p>" : "") +
     (linhas.length ? '<table class="mini-tab"><caption class="sr-only">Autoavaliações consideradas no ' + NOME_STEP[step] + '</caption><thead><tr><th scope="col">Formulário</th><th scope="col">Data</th><th scope="col">Modo</th><th scope="col">Probabilidade</th><th scope="col">Faixa</th></tr></thead><tbody>' +
       linhas.map((l) => "<tr>" + l.map((c) => "<td>" + e(c) + "</td>").join("") + "</tr>").join("") + "</tbody></table>" : "") +
@@ -295,8 +295,8 @@ function blocoSimulados(simulados, cfg, ctx) {
   const porStep = ["step1", "step2ck"].filter((st) => simulados.some((s) => s.step === st)).map((st) => {
     const areas = desempenhoPorArea(simulados.filter((s) => s.step === st), "por_sistema").map((a) => ({ ...a, nome: nomeArea(a.chave, { step: st, tax: ctx.tax }) }));
     const poucas = areas.filter((a) => a.total < MIN_QUESTOES_AREA).length;
-    return '<div><h3 class="h-xs">' + NOME_STEP[st] + (st === "step2ck" ? " por área" : " por sistema") + "</h3>" + barrasAcerto(areas, { meta: cfg.simulado_minimo, titulo: "Acerto por " + (st === "step2ck" ? "área" : "sistema") + " no " + NOME_STEP[st] }) +
-      (poucas ? '<p class="hint">' + plural(poucas, "área tem", "áreas têm") + " menos de " + MIN_QUESTOES_AREA + " questões somadas: leia com cautela.</p>" : "") + "</div>";
+    return '<div><h3 class="h-xs">' + NOME_STEP[st] + (st === "step2ck" ? " por área" : " por sistema") + "</h3>" + barrasAcerto(areas, { meta: cfg.simulado_minimo, titulo: "Acerto por " + (st === "step2ck" ? "área" : "sistema") + " no " + NOME_STEP[st], minQuestoes: MIN_QUESTOES_AREA }) +
+      (poucas ? '<p class="hint">Em cinza, no fim da lista: ' + plural(poucas, "área com", "áreas com") + " menos de " + MIN_QUESTOES_AREA + " questões somadas, amostra pequena demais para comparar com a meta.</p>" : "") + "</div>";
   }).join("");
   return tab + '<div class="grid2 grid2--top ficha__areas">' + porStep + "</div>";
 }

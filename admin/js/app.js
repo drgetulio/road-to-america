@@ -28,7 +28,8 @@ const MENU = [
   { rota: "participantes", rotulo: "Participantes", icone: "users-three" },
   { rota: "metas", rotulo: "Metas e critérios", icone: "gear-six" },
   { href: "../anki/#/", rotulo: "Flashcards", icone: "cards" },
-  { href: "../simulado/", rotulo: "Simulado", icone: "clock" }
+  { href: "../simulado/", rotulo: "Simulado", icone: "clock" },
+  { href: "../conteudo-step1.html", rotulo: "Conteúdo do Step 1", icone: "signpost" }
 ];
 
 const usaSupabase = !!(config.supabaseUrl && config.supabaseAnonKey);

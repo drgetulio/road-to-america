@@ -42,12 +42,15 @@ export default {
     const dist = distribuicaoRetencao(rows, { config: cfg });
     const serie = ind.serie_revisoes;
     const rotDias = serie.map((_, i) => ddmm(addDays(hoje, i - 29)));
-    const trend = (step) => tendenciaSimulados(simulados.filter((s) => rows.some((r) => r.id === s.user_id)), step, { agora, semanas: 8 })
+    /* só tentativas de participantes: as de administradores (testes da equipe) ficam de fora */
+    const ids = new Set(rows.map((r) => r.id));
+    const simTurma = simulados.filter((s) => ids.has(s.user_id));
+    const trend = (step) => tendenciaSimulados(simTurma, step, { agora, semanas: 8 })
       .map((w) => ({ rotulo: ddmm(w.inicio), valor: w.media, n: w.n }));
-    const fr1 = areasFracas(simulados, "step1", { agora, tax: ctx.tax });
-    const fr2 = areasFracas(simulados, "step2ck", { agora, tax: ctx.tax });
-    const fr1d = areasFracas(simulados, "step1", { agora, tax: ctx.tax, campo: "por_disciplina" });
-    const fr2d = areasFracas(simulados, "step2ck", { agora, tax: ctx.tax, campo: "por_disciplina" });
+    const fr1 = areasFracas(simTurma, "step1", { agora, tax: ctx.tax });
+    const fr2 = areasFracas(simTurma, "step2ck", { agora, tax: ctx.tax });
+    const fr1d = areasFracas(simTurma, "step1", { agora, tax: ctx.tax, campo: "por_disciplina" });
+    const fr2d = areasFracas(simTurma, "step2ck", { agora, tax: ctx.tax, campo: "por_disciplina" });
 
     el.innerHTML = '<div class="wrap section-sm">' +
       pageHead({
@@ -71,7 +74,9 @@ export default {
         tile({ rotulo: "Garantia em dia", valor: ind.garantia_em_dia === null ? "Sem dados" : pct(ind.garantia_em_dia),
           sub: plural(ind.garantia.atrasada, "atrasado", "atrasados") + ", " + plural(ind.garantia.sem_presenca, "sem presença lançada", "sem presença lançada") + ". Presença de " + pct(cfg.presenca_minima) + " e NBMEs no ritmo da prova.",
           estado: ind.garantia.atrasada ? "abaixo" : "ok", href: "#/participantes?garantia=atrasada" }) +
-        tile({ rotulo: "Prontos pela EXIT 18", valor: String(ind.prontos), sub: plural(ind.nbme_nao_verificadas, "autoavaliação espera", "autoavaliações esperam") + " verificação da equipe.", href: "#/participantes?ordem=prova&dir=asc" }) +
+        tile({ rotulo: "Prontos pela EXIT 18", valor: String(ind.prontos),
+          sub: (ind.prontos_sem_faixa ? plural(ind.prontos_sem_faixa, "atinge", "atingem") + " a probabilidade, mas falta confirmar a faixa. " : "") + plural(ind.nbme_nao_verificadas, "autoavaliação espera", "autoavaliações esperam") + " verificação da equipe.",
+          href: "#/participantes?ordem=prova&dir=asc" }) +
       "</section>" +
 
       '<div class="grid2 grid2--top">' +
@@ -80,7 +85,7 @@ export default {
             const sug = sugestoesAcao(r, { simulados, config: cfg, agora, tax: ctx.tax })[0];
             return '<li class="fila__item"><div class="fila__top"><a class="fila__nome" href="#/p/' + encodeURIComponent(r.id) + '">' + e(r.nome) + "</a>" + chipStatus(r.status) + seloDemo(r.sintetico) + "</div>" +
               '<p class="fila__motivo">' + e(r.riscos.map((x) => x.detalhe).join(" ")) + "</p>" +
-              (sug ? '<p class="fila__acao">' + icon("lightbulb") + "<span><b>" + e(sug.titulo) + ".</b> " + e(textoUltimaAtividade(r)) + " foi a última atividade.</span></p>" : "") + "</li>";
+              (sug ? '<p class="fila__acao">' + icon("lightbulb") + "<span><b>" + e(sug.titulo) + ".</b> " + (r.ultima_atividade ? "Última atividade: " + e(textoUltimaAtividade(r).toLowerCase()) + "." : "Nenhuma atividade registrada.") + "</span></p>" : "") + "</li>";
           }).join("") + "</ol>" : '<p class="body">' + icon("check-circle") + " Ninguém em risco ou em atenção hoje.</p>") +
         "</section>" +
         '<section class="panel" aria-labelledby="cr-t"><div class="panel__head"><h2 class="h-sm" id="cr-t">Critérios de risco na turma</h2>' +

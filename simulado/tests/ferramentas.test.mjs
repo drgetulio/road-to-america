@@ -86,7 +86,7 @@ test("tabela de valores laboratoriais: estrutura completa, sem campos vazios", (
     }
   }
   const texto = JSON.stringify(LAB);
-  assert.ok(!/[–—]/.test(texto), "sem travessão nem meia-risca");
+  assert.ok(!/[\u2013\u2014]/.test(texto), "sem travessão nem meia-risca");
 });
 
 test("tabela de valores laboratoriais: valores-chave das vinhetas e conversões SI coerentes", () => {
@@ -167,4 +167,15 @@ test("andamento e anotações vão e voltam", () => {
   assert.deepEqual(lerNotas("t1", st), ["", "rever K+"]);
   gravarNotas("t2", ["", ""], st);
   assert.equal(lerNotas("t2", st), null, "sem anotação nada é gravado");
+});
+
+test("labs: exames citados nas vinhetas do banco estão na tabela (revisão de 28/10/2026)", () => {
+  for (const termo of ["lipase", "troponin", "d-dimer", "lactate", "c-reactive", "transferrin saturation", "fibrinogen",
+    "magnesium", "bicarbonate", "pco2", "ferritin", "total iron-binding", "bilirubin direct", "creatine kinase", "tsh", "platelet"]) {
+    assert.ok(contarItens(filtrarLabs(LAB, termo)) >= 1, "faltou na tabela: " + termo);
+  }
+  const compl = LAB.secoes.find((s) => s.id === "complementares");
+  assert.ok(compl && /não constam da tabela do NBME/.test(compl.nota), "a seção complementar precisa avisar que está fora da tabela oficial");
+  const mg = LAB.secoes.flatMap((s) => s.itens).find((i) => i.nome.startsWith("Magnesium"));
+  assert.match(mg.nota, /0\.75-1\.0 mmol\/L/);
 });

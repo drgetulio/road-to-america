@@ -20,10 +20,14 @@ plataforma/
   js/simulado.js        formato oficial, sorteio estratificado e correção (funções puras)
   js/desempenho.js      linha de resumo, critérios de risco, garantia e prontidão (funções puras)
   js/coorte-demo.js     coorte sintética do modo demonstração
+  js/acompanhamento.js  textos de tela compartilhados pelo admin/ e por "Meu progresso":
+                        checklist da garantia, situação da garantia hoje, leitura da
+                        prontidão, nomes de sistemas e áreas, formatação
   tests/                node:test (simulado, desempenho e camadas de dados)
 supabase/
   schema.sql            tabelas, gatilhos, RLS e funções do painel (seção PLATAFORMA)
-  teste-local/02-testa-rls.sql       testes de RLS (bloco P1 a P7 para a plataforma)
+  teste-local/02-testa-rls.sql       testes de RLS (blocos P1 a P9 para a plataforma; P9 tenta ataques
+                                     com os privilégios padrão do Supabase simulados no 01)
   teste-local/03-compara-resumo.mjs  confere se o resumo do banco é igual ao do JavaScript
 ```
 
@@ -199,6 +203,18 @@ matrícula e ciclo básico definem os Steps que faltam e o prazo da garantia. Se
 `data_prova_step1` estiver vazia, o resumo usa a data da prova dos Ajustes do app de
 flashcards (`dataProva`).
 
+### Anotações do mentor (acréscimo da área administrativa)
+
+| Método | Participante | Admin | Retorno |
+|---|---|---|---|
+| `getAnotacao(userId)` | não pode | lê | `{ user_id, texto, atualizado_por, atualizado_em }` ou `null` |
+| `saveAnotacao(userId, texto)` | não pode | grava (até 5000 caracteres) | registro |
+
+Texto interno da equipe, um por participante. No Supabase fica na tabela
+`anotacoes_mentor` (só admin lê e grava; o gatilho carimba quem gravou e quando;
+testes P8a a P8h em `02-testa-rls.sql`). No modo demonstração, as anotações sobre
+participantes fictícios ficam na chave `r2a-plataforma-coorte-v1`.
+
 ### Metas da coorte
 
 | Método | Participante | Admin |
@@ -345,7 +361,10 @@ garantia: {
 - `pronto`: as 2 autoavaliações mais recentes do Step em standard-paced têm
   probabilidade ≥ meta (90%) e nenhuma tem a faixa marcada como **não** acima da
   aprovação baixa. `faixa_confirmada` só é `true` quando as duas têm a faixa marcada como
-  acima; sem essa informação, a interface deve avisar.
+  acima; sem essa informação, a interface deve avisar. As telas (admin e "Meu progresso")
+  mostram esse caso como **"Falta confirmar a faixa"** (`leituraProntidao().status_tela`
+  = `pronto_sem_faixa`), e não como critério atendido, porque o critério escrito da
+  EXIT 18 pede as duas coisas; o indicador "Prontos pela EXIT 18" do admin não o conta.
 - `nao_pronto`: alguma das duas abaixo da meta ou com faixa negativa.
 - `insuficiente`: menos de 2 em standard-paced, ou probabilidade não informada.
 - `aprovado`: Step já aprovado.
@@ -397,7 +416,7 @@ Testar localmente (Postgres puro):
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
-# o bloco final precisa mostrar "falhas | 0"
+# o bloco final precisa mostrar "falhas | 0" (80 verificações)
 node supabase/teste-local/03-compara-resumo.mjs   # precisa terminar em "Diferenças: 0"
 ```
 

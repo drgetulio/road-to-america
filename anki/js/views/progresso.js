@@ -3,12 +3,13 @@
    Regras em plataforma/js/desempenho.js; textos em plataforma/js/acompanhamento.js. */
 import { avaliarParticipante, validarNbme } from "../../../plataforma/js/desempenho.js";
 import { desempenhoPorArea, SIMULADO_30 } from "../../../plataforma/js/simulado.js";
-import { checklistGarantia, leituraProntidao, nomeArea, NOME_STEP, ROTULO_PRONTIDAO, dataBR, pct, plural } from "../../../plataforma/js/acompanhamento.js";
+import { checklistGarantia, leituraProntidao, nomeArea, NOME_STEP, dataBR, pct, plural, MIN_QUESTOES_AREA } from "../../../plataforma/js/acompanhamento.js";
 import { $, e, icon, toast, confirmar } from "../ui.js";
+import { dayKey } from "../util.js";
 import { pageHead } from "./shared.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
-const CLASSE_PR = { pronto: "ok", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
+const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
 
 export default {
   titulo: "Meu progresso",
@@ -25,7 +26,8 @@ export default {
     const plano = linha.plano || {};
     const stepsPend = ["step1", "step2ck"].filter((s) => !plano[s + "_aprovado"]);
     const editando = args.editar ? nbme.find((x) => x.id === args.editar && !x.verificada) : null;
-    const hoje = agora.toISOString().slice(0, 10);
+    /* data do calendário local (toISOString daria a data em UTC, um dia à frente à noite) */
+    const hoje = dayKey(agora, 0);
 
     el.innerHTML = '<div class="wrap section-sm prog" data-prog>' +
       pageHead({
@@ -38,15 +40,15 @@ export default {
       '<div class="grid2 grid2--top">' +
         '<section class="panel" aria-labelledby="g-t"><div class="panel__head"><h2 class="h-sm" id="g-t">Checklist da garantia</h2>' +
           '<p class="hint">Condições do <a href="../garantia.html">Termo da Garantia</a>. Elas são conferidas ao fim do prazo; aqui você acompanha o caminho até lá.</p></div>' +
-          '<ul class="prog-check">' + check.map((i) => '<li class="prog-check__i prog-check__i--' + (i.ok === true ? "ok" : i.ok === false ? "pend" : "nd") + '">' +
-            icon(i.ok === true ? "check-circle" : i.ok === false ? "x-circle" : "hourglass-medium") +
-            "<div><b>" + e(i.titulo) + '</b><span class="sr-only"> (' + (i.ok === true ? "cumprido" : i.ok === false ? "pendente" : "sem dado") + ")</span><p>" + e(i.detalhe) + "</p></div></li>").join("") + "</ul>" +
+          '<ul class="prog-check">' + check.map((i) => '<li class="prog-check__i prog-check__i--' + ({ cumprido: "ok", pendente: "pend", andamento: "nd", sem_dado: "nd" })[i.estado] + '">' +
+            icon(i.estado === "cumprido" ? "check-circle" : i.estado === "pendente" ? "x-circle" : "hourglass-medium") +
+            "<div><b>" + e(i.titulo) + '</b><span class="sr-only"> (' + ({ cumprido: "cumprido", pendente: "pendente", andamento: "em andamento", sem_dado: "sem dado" })[i.estado] + ")</span><p>" + e(i.detalhe) + "</p></div></li>").join("") + "</ul>" +
         "</section>" +
         '<section class="panel" aria-labelledby="p-t"><div class="panel__head"><h2 class="h-sm" id="p-t">Prontidão para manter a data (EXIT 18)</h2>' +
           '<p class="hint">Recomendação da Road to America. A decisão sobre a data continua sendo sua.</p></div>' +
           (stepsPend.length ? stepsPend.map((s) => {
             const p = leituraProntidao(av.prontidao[s], linha, s, { config, agora });
-            return '<div class="prog-pr"><p class="prog-pr__t"><b>' + NOME_STEP[s] + '</b> <span class="prog-chip prog-chip--' + CLASSE_PR[p.status] + '">' + e(ROTULO_PRONTIDAO[p.status]) + "</span></p>" +
+            return '<div class="prog-pr"><p class="prog-pr__t"><b>' + NOME_STEP[s] + '</b> <span class="prog-chip prog-chip--' + CLASSE_PR[p.status_tela] + '">' + e(p.rotulo) + "</span></p>" +
               (p.motivo ? "<p>" + e(p.motivo) + "</p>" : "") +
               p.avisos.map((a) => '<p class="prog-pr__aviso">' + icon("warning") + "<span>" + e(a) + "</span></p>").join("") + "</div>";
           }).join("") + '<p class="hint">' + e(leituraProntidao(av.prontidao[stepsPend[0]], linha, stepsPend[0], { config, agora }).criterio) + "</p>"
@@ -117,9 +119,11 @@ export default {
       if (f.data_prova_step2ck) dados.data_prova_step2ck = f.data_prova_step2ck.value || null;
       try {
         await ctx.store.savePlano(dados);
-        /* a data do Step 1 também alimenta a contagem regressiva do painel de estudo */
-        if ("data_prova_step1" in dados && dados.data_prova_step1 && ctx.settings.dataProva !== dados.data_prova_step1) {
-          await ctx.saveSettings({ ...ctx.settings, dataProva: dados.data_prova_step1 });
+        /* A data do Step 1 também alimenta a contagem regressiva do painel de estudo.
+           Apagar a data aqui apaga a dos Ajustes: o resumo usa a dos Ajustes quando o
+           plano está vazio, e sem isso a data apagada voltaria na tela. */
+        if ("data_prova_step1" in dados && (ctx.settings.dataProva || "") !== (dados.data_prova_step1 || "")) {
+          await ctx.saveSettings({ ...ctx.settings, dataProva: dados.data_prova_step1 || "" });
         }
         toast("Datas salvas.", "ok");
         await redesenhar("#d-t");
@@ -189,10 +193,15 @@ function blocoSimulados(simulados, config, ctx) {
       '<span class="muted">' + Math.round((s.duracao_ms || 0) / 60000) + " min" + (s.encerramento === "tempo" ? ", tempo esgotado" : "") + "</span></li>").join("") + "</ul>" +
     (simulados.length > 10 ? '<p class="hint">Mostrando os 10 mais recentes de ' + simulados.length + ".</p>" : "");
   const porStep = ["step1", "step2ck"].filter((st) => simulados.some((s) => s.step === st)).map((st) => {
-    const areas = desempenhoPorArea(simulados.filter((s) => s.step === st), "por_sistema");
-    return '<div><h3 class="h-xs">' + NOME_STEP[st] + (st === "step2ck" ? " por área" : " por sistema") + ', da mais fraca para a mais forte</h3><dl class="mat">' + areas.map((a) =>
-      "<div><dt>" + e(nomeArea(a.chave, { step: st, tax: ctx.tax })) + "</dt><dd><b>" + pct(a.taxa) + '</b><span class="mat__bar" role="img" aria-label="' + e(a.acertos + " de " + a.total + " certas") + '"><span style="width:' + Math.round((a.taxa || 0) * 100) + '%"' + (a.taxa < config.simulado_minimo ? ' class="is-baixo"' : "") + "></span></span></dd></div>").join("") + "</dl>" +
-      '<p class="hint">' + plural(areas.reduce((n, a) => n + a.total, 0), "questão somada", "questões somadas") + ". Com poucas questões por área, use como pista, não como diagnóstico.</p></div>";
+    const todas = desempenhoPorArea(simulados.filter((s) => s.step === st), "por_sistema");
+    /* áreas com amostra pequena vão para o fim, em cinza, sem o vermelho da meta */
+    const areas = todas.filter((a) => a.total >= MIN_QUESTOES_AREA).concat(todas.filter((a) => a.total < MIN_QUESTOES_AREA));
+    const poucas = todas.length - todas.filter((a) => a.total >= MIN_QUESTOES_AREA).length;
+    return '<div><h3 class="h-xs">' + NOME_STEP[st] + (st === "step2ck" ? " por área" : " por sistema") + ', da mais fraca para a mais forte</h3><dl class="mat">' + areas.map((a) => {
+      const pouco = a.total < MIN_QUESTOES_AREA;
+      return '<div' + (pouco ? ' class="is-pouco"' : "") + "><dt>" + e(nomeArea(a.chave, { step: st, tax: ctx.tax })) + "</dt><dd><b>" + pct(a.taxa) + '</b><span class="mat__bar" role="img" aria-label="' + e(a.acertos + " de " + a.total + " certas" + (pouco ? ", amostra pequena" : "")) + '"><span style="width:' + Math.round((a.taxa || 0) * 100) + '%"' + (!pouco && a.taxa < config.simulado_minimo ? ' class="is-baixo"' : "") + "></span></span></dd></div>";
+    }).join("") + "</dl>" +
+      '<p class="hint">' + plural(todas.reduce((n, a) => n + a.total, 0), "questão somada", "questões somadas") + "." + (poucas ? " Em cinza, no fim: " + plural(poucas, "área com", "áreas com") + " menos de " + MIN_QUESTOES_AREA + " questões." : "") + " Com poucas questões por área, use como pista, não como diagnóstico.</p></div>";
   }).join("");
   return lista + '<div class="grid2 grid2--top prog-areas">' + porStep + "</div>";
 }

@@ -8,15 +8,23 @@
    "url": "https://www.nbme.org/laboratory-values/"
   },
   {
+   "rotulo": "Lipase, troponina I e dímero D: NBME, Laboratory Values (página consultada por busca em 28/10/2026)",
+   "url": "https://www.nbme.org/laboratory-values/"
+  },
+  {
    "rotulo": "Conversões para o SI calculadas com os fatores-padrão de conversão (AMA Manual of Style, 11ª ed., tabela de unidades SI); onde o arredondamento da tabela oficial difere, prevalece a conversão calculada",
    "url": ""
   },
   {
    "rotulo": "Cloreto no suor: Farrell PM et al. Diagnosis of cystic fibrosis: consensus guidelines from the Cystic Fibrosis Foundation. J Pediatr 2017;181S:S4-S15",
    "url": "https://doi.org/10.1016/j.jpeds.2016.09.064"
+  },
+  {
+   "rotulo": "Seção complementar: tabela de valores de referência para adultos do American College of Physicians (MKSAP), conferida por cópias secundárias; confirmar no original",
+   "url": ""
   }
  ],
- "total_itens": 87,
+ "total_itens": 94,
  "secoes": [
   {
    "id": "soro-geral",
@@ -114,6 +122,12 @@
      "si": "45-200 U/L"
     },
     {
+     "nome": "Lipase",
+     "pt": "lipase",
+     "conv": "13-60 U/L",
+     "si": "13-60 U/L"
+    },
+    {
      "nome": "Osmolality",
      "pt": "osmolalidade sérica",
      "conv": "275-295 mOsmol/kg H₂O",
@@ -142,6 +156,12 @@
      "pt": "globulinas",
      "conv": "2.3-3.5 g/dL",
      "si": "23-35 g/L"
+    },
+    {
+     "nome": "Troponin I",
+     "pt": "troponina I",
+     "conv": "≤0.04 ng/mL",
+     "si": "≤0.04 µg/L"
     },
     {
      "nome": "Urea nitrogen",
@@ -190,7 +210,8 @@
      "nome": "Magnesium (Mg²⁺)",
      "pt": "magnésio",
      "conv": "1.5-2.0 mg/dL",
-     "si": "0.62-0.82 mmol/L"
+     "si": "0.62-0.82 mmol/L",
+     "nota": "A tabela do NBME traz 0.75-1.0 mmol/L, valor que corresponde a 1.5-2.0 mEq/L. A conversão de 1.5-2.0 mg/dL (massa molar 24,3 g/mol) dá 0.62-0.82 mmol/L."
     }
    ]
   },
@@ -272,8 +293,8 @@
       ],
       [
        "2000 h",
-       "<50% of 0800 h",
-       "fraction of 0800 h: <0.50"
+       "≤50% of 0800 h",
+       "fraction of 0800 h: ≤0.50"
       ]
      ]
     },
@@ -734,16 +755,22 @@
      "si": "2-7 minutes"
     },
     {
-     "nome": "Prothrombin time (PT)",
-     "pt": "tempo de protrombina, TP",
-     "conv": "11-15 seconds",
-     "si": "11-15 seconds"
+     "nome": "D-dimer",
+     "pt": "dímero D",
+     "conv": "≤250 ng/mL",
+     "si": "≤1.4 nmol/L"
     },
     {
      "nome": "Partial thromboplastin time (PTT), activated",
      "pt": "tempo de tromboplastina parcial ativada, TTPa",
      "conv": "25-40 seconds",
      "si": "25-40 seconds"
+    },
+    {
+     "nome": "Prothrombin time (PT)",
+     "pt": "tempo de protrombina, TP",
+     "conv": "11-15 seconds",
+     "si": "11-15 seconds"
     }
    ]
   },
@@ -872,6 +899,38 @@
      "pt": "índice de massa corporal, IMC",
      "conv": "19-25 kg/m²",
      "si": "19-25 kg/m²"
+    }
+   ]
+  },
+  {
+   "id": "complementares",
+   "titulo": "Supplementary values (not in the NBME table)",
+   "titulo_pt": "Complementares, fora da tabela do NBME",
+   "nota": "Estes exames não constam da tabela do NBME. Na prova, aparecem nas vinhetas sem faixa de referência e o candidato precisa reconhecer o valor alterado; ficam aqui para o treino, com a fonte indicada.",
+   "itens": [
+    {
+     "nome": "C-reactive protein",
+     "pt": "proteína C reativa, PCR",
+     "conv": "0.0-0.8 mg/dL",
+     "si": "0-8 mg/L"
+    },
+    {
+     "nome": "Fibrinogen, plasma",
+     "pt": "fibrinogênio",
+     "conv": "150-350 mg/dL",
+     "si": "1.5-3.5 g/L"
+    },
+    {
+     "nome": "Lactate, venous blood",
+     "pt": "lactato, ácido lático",
+     "conv": "6-16 mg/dL",
+     "si": "0.67-1.8 mmol/L"
+    },
+    {
+     "nome": "Transferrin saturation",
+     "pt": "saturação da transferrina, índice de saturação",
+     "conv": "20%-50%",
+     "si": "0.20-0.50"
     }
    ]
   }

@@ -271,6 +271,74 @@ select teste.bloqueia('P7d anon chama meu resumo', 'select public.r2a_meu_resumo
 select teste.bloqueia('P7e anon chama painel do admin', 'select * from public.r2a_admin_resumo_participantes()');
 reset role;
 
+-- ===== P9: ataques extras (com os privilégios padrão do Supabase simulados no 01)
+-- Executa a instrução e desfaz tudo; devolve true se o banco recusou com erro.
+reset role;
+create or replace function teste.recusa(p_sql text) returns boolean language plpgsql as $$
+begin
+  begin
+    execute p_sql;
+    raise exception 'r2a_passou';
+  exception when others then
+    return sqlerrm <> 'r2a_passou';
+  end;
+end $$;
+grant execute on function teste.recusa(text) to authenticated, anon;
+
+set role authenticated; select set_config('request.jwt.claim.sub', :'bia', false);
+\echo '--- P9 ataques da Bia (participante)'
+select teste.ok('P9a Bia esvazia a presença com TRUNCATE', teste.recusa('truncate public.presenca'));
+select teste.ok('P9b Bia esvazia as NBMEs com TRUNCATE', teste.recusa('truncate public.nbme_autoavaliacoes cascade'));
+select teste.ok('P9c Bia esvazia as anotações do mentor com TRUNCATE', teste.recusa('truncate public.anotacoes_mentor'));
+select teste.ok('P9d Bia esvazia o revlog com TRUNCATE', teste.recusa('truncate public.revlog'));
+select teste.ok('P9e Bia não lê o perfil (e-mail) da Ana', (select count(*) from public.profiles where id = :'ana') = 0);
+select teste.bloqueia('P9f Bia se promove a admin', 'update public.profiles set papel = ''admin'' where id = auth.uid()');
+select teste.bloqueia('P9g Bia altera a presença da Ana', format('update public.presenca set aulas_assistidas = 0 where user_id = %L', :'ana'));
+select teste.bloqueia('P9h Bia apaga a presença da Ana', format('delete from public.presenca where user_id = %L', :'ana'));
+select teste.bloqueia('P9i Bia marca a NBME da Ana como verificada', format('update public.nbme_autoavaliacoes set verificada = true where id = %L', :'nb1'));
+select teste.bloqueia('P9j Bia muda a data da prova da Ana', format('update public.plano_participante set data_prova_step1 = current_date where user_id = %L', :'ana'));
+insert into public.plano_participante (user_id, data_prova_step2ck) values (:'ana', current_date + 90)
+  on conflict (user_id) do update set data_prova_step2ck = excluded.data_prova_step2ck
+  returning user_id = auth.uid() as plano_dono \gset
+select teste.ok('P9k plano gravado pela Bia com user_id da Ana fica no nome da Bia', :'plano_dono'::boolean);
+select teste.ok('P9l Bia não lê anotações do mentor', (select count(*) from public.anotacoes_mentor) = 0);
+select teste.ok('P9m meu resumo da Bia traz só a Bia', (select public.r2a_meu_resumo() ->> 'user_id') = :'bia');
+reset role;
+
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+\echo '--- P9 ataques da Ana nas próprias NBMEs'
+insert into public.nbme_autoavaliacoes (step, formulario, data, escore, verificada, verificada_por, verificada_em)
+values ('step2ck', 'CCSSA Form 13', current_date - 1, 230, false, :'adm', now())
+returning id as nb3, verificada_por is null and verificada_em is null as sem_carimbo \gset
+select teste.ok('P9n Ana não forja o carimbo de verificação', :'sem_carimbo'::boolean);
+update public.nbme_autoavaliacoes set user_id = :'bia' where id = :'nb3' returning user_id = auth.uid() as continua_ana \gset
+select teste.ok('P9o Ana não transfere a própria NBME para a Bia', :'continua_ana'::boolean);
+reset role;
+
+set role anon;
+\echo '--- P9 anon'
+select teste.ok('P9p anon esvazia a presença com TRUNCATE', teste.recusa('truncate public.presenca'));
+select teste.bloqueia('P9q anon chama a atividade diária', format('select * from public.r2a_atividade_diaria(%L::uuid)', :'ana'));
+select teste.bloqueia('P9r anon importa presença', $q$select public.r2a_admin_importar_presenca('[]')$q$);
+select teste.bloqueia('P9s anon chama a função interna', format('select * from public.r2a_resumo_interno(array[%L]::uuid[])', :'ana'));
+reset role;
+
+\echo '--- P9 estrutura das funções security definer'
+select teste.ok('P9t toda função security definer do esquema public tem search_path fixo',
+  not exists (select 1 from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+              where n.nspname = 'public' and p.prosecdef
+                and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c where c like 'search_path=%')),
+  (select string_agg(p.proname, ', ') from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+   where n.nspname = 'public' and p.prosecdef and not exists (select 1 from unnest(coalesce(p.proconfig, '{}')) c where c like 'search_path=%')));
+select teste.ok('P9u nenhuma tabela da plataforma dá TRUNCATE, REFERENCES ou TRIGGER a anon ou authenticated',
+  not exists (select 1 from information_schema.role_table_grants
+              where table_schema = 'public' and grantee in ('anon', 'authenticated')
+                and privilege_type in ('TRUNCATE', 'REFERENCES', 'TRIGGER')),
+  (select string_agg(distinct table_name || ':' || grantee || ':' || privilege_type, ', ') from information_schema.role_table_grants
+   where table_schema = 'public' and grantee in ('anon', 'authenticated') and privilege_type in ('TRUNCATE', 'REFERENCES', 'TRIGGER')));
+select teste.ok('P9v authenticated não executa a função interna do resumo',
+  not has_function_privilege('authenticated', 'public.r2a_resumo_interno(uuid[], text, timestamptz)', 'execute'));
+
 \echo '=== RESUMO DA PLATAFORMA (falhas precisa ser 0)'
 select count(*) filter (where not ok) as falhas, count(*) as verificacoes from teste.resultado;
 select nome, detalhe from teste.resultado where not ok;
