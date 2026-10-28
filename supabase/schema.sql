@@ -482,3 +482,661 @@ create policy sinalizacoes_update on public.sinalizacoes for update to authentic
 drop policy if exists sinalizacoes_delete on public.sinalizacoes;
 create policy sinalizacoes_delete on public.sinalizacoes for delete to authenticated
   using ((select public.is_admin()));
+
+-- =============================================================================
+-- PLATAFORMA: simulados de 30 minutos, autoavaliações NBME, presença nas aulas,
+-- plano do participante e painel de rendimento do administrador.
+-- Interface JavaScript correspondente: plataforma/INTERFACE.md.
+--
+-- Regras:
+--   participante  lê só os próprios dados; grava as próprias tentativas de
+--                 simulado (sem editar nem apagar depois); lança, edita e apaga
+--                 as próprias autoavaliações enquanto não forem verificadas; não
+--                 marca autoavaliação como verificada; só lê a presença; no plano,
+--                 altera só as datas de prova.
+--   admin         tudo, inclusive verificar autoavaliações, lançar presença
+--                 (manual ou CSV), marcar Step aprovado e definir as metas.
+-- O painel do admin lê agregados por participante pelas funções
+-- r2a_admin_resumo_participantes() e r2a_meu_resumo() (security definer, com
+-- checagem de papel e search_path fixo), sem expor o revlog bruto.
+-- =============================================================================
+
+-- ---------------------------------------------------------------------------
+-- Tentativas de simulado (um bloco de 20 questões em 30 minutos)
+-- ---------------------------------------------------------------------------
+create table if not exists public.simulados (
+  id              uuid primary key default gen_random_uuid(),
+  user_id         uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  step            text not null check (step in ('step1', 'step2ck')),
+  modo            text not null default 'bloco_30min' check (modo in ('bloco_30min', 'livre')),
+  questoes        text[] not null,
+  respostas       text[] not null,
+  marcadas        boolean[] not null,
+  tempos_ms       integer[] not null,
+  inicio          timestamptz not null,
+  fim             timestamptz not null,
+  duracao_ms      integer not null check (duracao_ms between 0 and 86400000),
+  limite_ms       integer not null default 1800000 check (limite_ms between 0 and 86400000),
+  total           smallint not null check (total between 1 and 40),
+  acertos         smallint not null,
+  percentual      numeric generated always as (round(acertos::numeric / total, 4)) stored,
+  em_branco       smallint not null default 0,
+  por_sistema     jsonb not null default '{}'::jsonb,
+  por_disciplina  jsonb not null default '{}'::jsonb,
+  por_dificuldade jsonb not null default '{}'::jsonb,
+  encerramento    text not null default 'participante' check (encerramento in ('participante', 'tempo')),
+  versao_banco    text not null default '' check (length(versao_banco) <= 40),
+  criado_em       timestamptz not null default now(),
+  constraint simulados_acertos_ck check (acertos between 0 and total and em_branco between 0 and total),
+  constraint simulados_tamanhos_ck check (
+    cardinality(questoes) = total and cardinality(respostas) = total
+    and cardinality(marcadas) = total and cardinality(tempos_ms) = total),
+  constraint simulados_tempo_ck check (fim >= inicio)
+);
+create index if not exists simulados_user_fim_idx on public.simulados (user_id, step, fim desc);
+
+create or replace function public.simulados_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    if auth.uid() is not null and not public.is_admin() then
+      new.user_id := auth.uid();
+    end if;
+    if new.fim > now() + interval '5 minutes' then
+      raise exception 'O fim da tentativa não pode estar no futuro.' using errcode = '22023';
+    end if;
+  else
+    new.id := old.id;
+    new.user_id := old.user_id;
+    new.criado_em := old.criado_em;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists simulados_guard on public.simulados;
+create trigger simulados_guard
+  before insert or update on public.simulados
+  for each row execute function public.simulados_guard();
+
+-- ---------------------------------------------------------------------------
+-- Autoavaliações oficiais do NBME (CBSSA no Step 1, CCSSA no Step 2 CK)
+-- ---------------------------------------------------------------------------
+create table if not exists public.nbme_autoavaliacoes (
+  id                          uuid primary key default gen_random_uuid(),
+  user_id                     uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  step                        text not null check (step in ('step1', 'step2ck')),
+  formulario                  text not null check (length(btrim(formulario)) between 1 and 80),
+  modo                        text not null default 'standard' check (modo in ('standard', 'self', 'desconhecido')),
+  data                        date not null check (data >= date '2015-01-01'),
+  escore                      smallint check (escore between 1 and 999),
+  escore_texto                text not null default '' check (length(escore_texto) <= 40),
+  probabilidade               numeric(5,2) check (probabilidade between 0 and 100),
+  faixa_acima_aprovacao_baixa boolean,
+  observacao                  text not null default '' check (length(observacao) <= 1000),
+  verificada                  boolean not null default false,
+  verificada_por              uuid references auth.users (id) on delete set null,
+  verificada_em               timestamptz,
+  criado_em                   timestamptz not null default now(),
+  atualizado_em               timestamptz not null default now(),
+  constraint nbme_escore_ck check (escore is not null or length(btrim(escore_texto)) > 0)
+);
+create index if not exists nbme_user_step_idx on public.nbme_autoavaliacoes (user_id, step, data);
+
+create or replace function public.nbme_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+declare
+  v_part boolean := auth.uid() is not null and not public.is_admin();
+begin
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    if v_part then
+      new.user_id := auth.uid();
+      new.verificada := false;
+    end if;
+  else
+    if v_part and old.verificada then
+      raise exception 'Esta autoavaliação já foi verificada pela equipe e não pode mais ser alterada.' using errcode = '42501';
+    end if;
+    new.id := old.id;
+    new.user_id := old.user_id;
+    new.criado_em := old.criado_em;
+    if v_part then
+      new.verificada := false;
+    end if;
+  end if;
+  new.atualizado_em := now();
+  if new.data > current_date + 2 then
+    raise exception 'A data da autoavaliação não pode estar no futuro.' using errcode = '22023';
+  end if;
+  if new.verificada then
+    if tg_op = 'INSERT' or not old.verificada then
+      new.verificada_por := coalesce(auth.uid(), new.verificada_por);
+      new.verificada_em := now();
+    else
+      new.verificada_por := old.verificada_por;
+      new.verificada_em := old.verificada_em;
+    end if;
+  else
+    new.verificada_por := null;
+    new.verificada_em := null;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists nbme_guard on public.nbme_autoavaliacoes;
+create trigger nbme_guard
+  before insert or update on public.nbme_autoavaliacoes
+  for each row execute function public.nbme_guard();
+
+-- ---------------------------------------------------------------------------
+-- Presença nas aulas (lançada pelo admin, à mão ou por CSV)
+-- ---------------------------------------------------------------------------
+create table if not exists public.presenca (
+  user_id           uuid primary key references auth.users (id) on delete cascade,
+  aulas_assistidas  integer not null check (aulas_assistidas >= 0),
+  aulas_totais      integer not null check (aulas_totais >= 0),
+  origem            text not null default 'manual' check (origem in ('manual', 'csv')),
+  atualizado_por    uuid references auth.users (id) on delete set null,
+  atualizado_em     timestamptz not null default now(),
+  constraint presenca_ck check (aulas_assistidas <= aulas_totais)
+);
+
+create or replace function public.presenca_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  new.atualizado_por := coalesce(auth.uid(), new.atualizado_por);
+  return new;
+end;
+$$;
+
+drop trigger if exists presenca_guard on public.presenca;
+create trigger presenca_guard
+  before insert or update on public.presenca
+  for each row execute function public.presenca_guard();
+
+-- ---------------------------------------------------------------------------
+-- Plano do participante: datas de prova (ele altera), aprovação, matrícula e
+-- conclusão do ciclo básico (só o admin altera; definem o prazo da garantia)
+-- ---------------------------------------------------------------------------
+create table if not exists public.plano_participante (
+  user_id                    uuid primary key default auth.uid() references auth.users (id) on delete cascade,
+  data_prova_step1           date,
+  data_prova_step2ck         date,
+  step1_aprovado             boolean not null default false,
+  step2ck_aprovado           boolean not null default false,
+  data_matricula             date,
+  ciclo_basico_concluido_em  date,
+  atualizado_em              timestamptz not null default now()
+);
+
+create or replace function public.plano_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  if auth.uid() is null or public.is_admin() then
+    return new;
+  end if;
+  if tg_op = 'INSERT' then
+    new.user_id := auth.uid();
+    if new.step1_aprovado or new.step2ck_aprovado or new.data_matricula is not null or new.ciclo_basico_concluido_em is not null then
+      raise exception 'Aprovação, matrícula e ciclo básico são lançados pela equipe.' using errcode = '42501';
+    end if;
+  else
+    if (new.user_id, new.step1_aprovado, new.step2ck_aprovado, new.data_matricula, new.ciclo_basico_concluido_em)
+       is distinct from (old.user_id, old.step1_aprovado, old.step2ck_aprovado, old.data_matricula, old.ciclo_basico_concluido_em) then
+      raise exception 'Aprovação, matrícula e ciclo básico são lançados pela equipe.' using errcode = '42501';
+    end if;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists plano_guard on public.plano_participante;
+create trigger plano_guard
+  before insert or update on public.plano_participante
+  for each row execute function public.plano_guard();
+
+-- ---------------------------------------------------------------------------
+-- Metas e critérios de risco da coorte (uma linha só; o admin edita)
+-- ---------------------------------------------------------------------------
+create table if not exists public.plataforma_config (
+  id             smallint primary key default 1 check (id = 1),
+  dados          jsonb not null default '{}'::jsonb,
+  atualizado_em  timestamptz not null default now()
+);
+insert into public.plataforma_config (id, dados) values (1, '{}'::jsonb) on conflict (id) do nothing;
+
+-- ---------------------------------------------------------------------------
+-- RLS das tabelas da plataforma
+-- ---------------------------------------------------------------------------
+alter table public.simulados           enable row level security;
+alter table public.nbme_autoavaliacoes enable row level security;
+alter table public.presenca            enable row level security;
+alter table public.plano_participante  enable row level security;
+alter table public.plataforma_config   enable row level security;
+
+revoke all on public.simulados, public.nbme_autoavaliacoes, public.presenca,
+              public.plano_participante, public.plataforma_config from anon;
+grant select, insert, update, delete on public.simulados, public.nbme_autoavaliacoes, public.presenca,
+                                        public.plano_participante to authenticated;
+grant select, insert, update on public.plataforma_config to authenticated;
+
+-- simulados: participante grava e lê os próprios; só o admin altera ou apaga
+drop policy if exists simulados_select on public.simulados;
+create policy simulados_select on public.simulados for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists simulados_insert on public.simulados;
+create policy simulados_insert on public.simulados for insert to authenticated
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists simulados_update on public.simulados;
+create policy simulados_update on public.simulados for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists simulados_delete on public.simulados;
+create policy simulados_delete on public.simulados for delete to authenticated
+  using ((select public.is_admin()));
+
+-- autoavaliações: participante lança e corrige as próprias até a verificação
+drop policy if exists nbme_select on public.nbme_autoavaliacoes;
+create policy nbme_select on public.nbme_autoavaliacoes for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists nbme_insert on public.nbme_autoavaliacoes;
+create policy nbme_insert on public.nbme_autoavaliacoes for insert to authenticated
+  with check ((user_id = (select auth.uid()) and not verificada) or (select public.is_admin()));
+drop policy if exists nbme_update on public.nbme_autoavaliacoes;
+create policy nbme_update on public.nbme_autoavaliacoes for update to authenticated
+  using ((user_id = (select auth.uid()) and not verificada) or (select public.is_admin()))
+  with check ((user_id = (select auth.uid()) and not verificada) or (select public.is_admin()));
+drop policy if exists nbme_delete on public.nbme_autoavaliacoes;
+create policy nbme_delete on public.nbme_autoavaliacoes for delete to authenticated
+  using ((user_id = (select auth.uid()) and not verificada) or (select public.is_admin()));
+
+-- presença: participante só lê a própria
+drop policy if exists presenca_select on public.presenca;
+create policy presenca_select on public.presenca for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists presenca_insert on public.presenca;
+create policy presenca_insert on public.presenca for insert to authenticated
+  with check ((select public.is_admin()));
+drop policy if exists presenca_update on public.presenca;
+create policy presenca_update on public.presenca for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists presenca_delete on public.presenca;
+create policy presenca_delete on public.presenca for delete to authenticated
+  using ((select public.is_admin()));
+
+-- plano: participante lê e altera o próprio (o gatilho limita às datas de prova)
+drop policy if exists plano_select on public.plano_participante;
+create policy plano_select on public.plano_participante for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists plano_insert on public.plano_participante;
+create policy plano_insert on public.plano_participante for insert to authenticated
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists plano_update on public.plano_participante;
+create policy plano_update on public.plano_participante for update to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()))
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists plano_delete on public.plano_participante;
+create policy plano_delete on public.plano_participante for delete to authenticated
+  using ((select public.is_admin()));
+
+-- metas: todos os logados leem (o participante vê os critérios); só o admin grava
+drop policy if exists plataforma_config_select on public.plataforma_config;
+create policy plataforma_config_select on public.plataforma_config for select to authenticated
+  using (true);
+drop policy if exists plataforma_config_insert on public.plataforma_config;
+create policy plataforma_config_insert on public.plataforma_config for insert to authenticated
+  with check ((select public.is_admin()));
+drop policy if exists plataforma_config_update on public.plataforma_config;
+create policy plataforma_config_update on public.plataforma_config for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+
+-- ---------------------------------------------------------------------------
+-- Resumo por participante (mesma forma de resumirParticipante() em
+-- plataforma/js/desempenho.js). Uso interno: só as funções abaixo chamam.
+-- O dia de estudo vira às 4h no fuso p_tz, como no app.
+-- ---------------------------------------------------------------------------
+create or replace function public.r2a_resumo_interno(p_ids uuid[], p_tz text default 'America/Sao_Paulo', p_agora timestamptz default now())
+returns setof jsonb
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  with
+  par as (
+    select ((p_agora at time zone p_tz) - interval '4 hours')::date as hoje
+  ),
+  ofc as (
+    select count(*)::int as n from public.cards where baralho = 'oficial' and status = 'aprovado'
+  ),
+  rv as (
+    select r.user_id, ((r.review at time zone p_tz) - interval '4 hours')::date as dia, r.state, r.rating, r.review
+    from public.revlog r
+    where r.user_id = any (p_ids)
+  ),
+  rv_agg as (
+    select rv.user_id,
+      count(*) filter (where rv.dia = par.hoje)::int as hoje,
+      count(*) filter (where rv.dia between par.hoje - 6 and par.hoje)::int as d7,
+      count(*) filter (where rv.dia between par.hoje - 29 and par.hoje)::int as d30,
+      count(distinct rv.dia) filter (where rv.dia between par.hoje - 29 and par.hoje)::int as dias30,
+      count(*) filter (where rv.state = 2 and rv.dia >= par.hoje - 29)::int as ret_total,
+      count(*) filter (where rv.state = 2 and rv.rating > 1 and rv.dia >= par.hoje - 29)::int as ret_acertos,
+      max(rv.review) as ultima
+    from rv cross join par
+    group by rv.user_id
+  ),
+  rv_dia as (
+    select user_id, dia, count(*)::int as n from rv group by user_id, dia
+  ),
+  serie as (
+    select u.id as user_id, jsonb_agg(coalesce(c.n, 0) order by g.i) as por_dia
+    from unnest(p_ids) as u (id)
+    cross join par
+    cross join generate_series(0, 29) as g (i)
+    left join rv_dia c on c.user_id = u.id and c.dia = par.hoje - 29 + g.i
+    group by u.id
+  ),
+  ilhas as (
+    select user_id, max(dia) as fim, count(*)::int as n
+    from (
+      select user_id, dia, dia - (row_number() over (partition by user_id order by dia))::int as grp
+      from (select distinct user_id, dia from rv) d
+    ) x
+    group by user_id, grp
+  ),
+  seq as (
+    select i.user_id,
+      coalesce(max(i.n) filter (where i.fim between par.hoje - 1 and par.hoje), 0) as atual,
+      max(i.n) as maior
+    from ilhas i cross join par
+    group by i.user_id
+  ),
+  est as (
+    select s.user_id,
+      count(distinct s.card_id) filter (where s.state > 0 and c.baralho = 'oficial' and c.status = 'aprovado')::int as vistos,
+      count(*) filter (where s.state > 0)::int as vistos_itens,
+      count(*) filter (where not s.suspenso and s.state = 2 and s.scheduled_days >= 21)::int as maduros,
+      count(*) filter (where not s.suspenso and s.state = 2 and s.scheduled_days < 21)::int as jovens,
+      count(*) filter (where not s.suspenso and s.state in (1, 3))::int as aprendendo,
+      count(*) filter (where s.leech)::int as leeches,
+      count(*) filter (where s.suspenso)::int as suspensos
+    from public.srs_estado s
+    left join public.cards c on c.id = s.card_id
+    where s.user_id = any (p_ids)
+    group by s.user_id
+  ),
+  sim_r as (
+    select s.user_id, s.step, s.id, s.percentual, s.acertos, s.total, s.fim,
+      row_number() over (partition by s.user_id, s.step order by s.fim desc) as rn
+    from public.simulados s
+    where s.user_id = any (p_ids)
+  ),
+  sim as (
+    select user_id, step, count(*)::int as n, max(fim) as ultimo_em,
+      coalesce(jsonb_agg(jsonb_build_object('id', id, 'percentual', percentual, 'acertos', acertos, 'total', total, 'fim', fim)
+                         order by fim desc) filter (where rn <= 5), '[]'::jsonb) as ultimos
+    from sim_r
+    group by user_id, step
+  ),
+  sim_j as (
+    select user_id,
+      jsonb_object_agg(step, jsonb_build_object('n', n, 'ultimo_em', ultimo_em, 'ultimos', ultimos)) as j,
+      max(ultimo_em) as ultimo
+    from sim
+    group by user_id
+  ),
+  nb as (
+    select user_id,
+      jsonb_agg(jsonb_build_object(
+        'id', id, 'step', step, 'formulario', formulario, 'modo', modo, 'data', data, 'escore', escore,
+        'escore_texto', escore_texto, 'probabilidade', probabilidade,
+        'faixa_acima_aprovacao_baixa', faixa_acima_aprovacao_baixa, 'verificada', verificada, 'criado_em', criado_em)
+        order by data, criado_em) as j,
+      max(data) as ultima_data
+    from public.nbme_autoavaliacoes
+    where user_id = any (p_ids)
+    group by user_id
+  )
+  select jsonb_build_object(
+    'user_id', p.id,
+    'nome', p.nome,
+    'email', p.email,
+    'criado_em', p.criado_em,
+    'sintetico', false,
+    'plano', jsonb_build_object(
+      'data_prova_step1', coalesce(pl.data_prova_step1,
+        case when cfg.dados ->> 'dataProva' ~ '^\d{4}-\d{2}-\d{2}$' then (cfg.dados ->> 'dataProva')::date end),
+      'data_prova_step2ck', pl.data_prova_step2ck,
+      'step1_aprovado', coalesce(pl.step1_aprovado, false),
+      'step2ck_aprovado', coalesce(pl.step2ck_aprovado, false),
+      'data_matricula', pl.data_matricula,
+      'ciclo_basico_concluido_em', pl.ciclo_basico_concluido_em),
+    'flashcards', jsonb_build_object(
+      'revisoes_hoje', coalesce(ra.hoje, 0),
+      'revisoes_7d', coalesce(ra.d7, 0),
+      'revisoes_30d', coalesce(ra.d30, 0),
+      'dias_estudados_30d', coalesce(ra.dias30, 0),
+      'por_dia_30', se.por_dia,
+      'retencao_30d', jsonb_build_object(
+        'total', coalesce(ra.ret_total, 0),
+        'acertos', coalesce(ra.ret_acertos, 0),
+        'taxa', case when coalesce(ra.ret_total, 0) > 0 then round(ra.ret_acertos::numeric / ra.ret_total, 6) end),
+      'sequencia_atual', coalesce(sq.atual, 0),
+      'maior_sequencia', coalesce(sq.maior, 0),
+      'vistos', coalesce(es.vistos, 0),
+      'vistos_itens', coalesce(es.vistos_itens, 0),
+      'maduros', coalesce(es.maduros, 0),
+      'jovens', coalesce(es.jovens, 0),
+      'aprendendo', coalesce(es.aprendendo, 0),
+      'leeches', coalesce(es.leeches, 0),
+      'suspensos', coalesce(es.suspensos, 0),
+      'total_oficial', ofc.n,
+      'cobertura', case when ofc.n > 0 then round(coalesce(es.vistos, 0)::numeric / ofc.n, 6) end,
+      'ultima_revisao', ra.ultima),
+    'simulados', jsonb_build_object(
+      'step1', coalesce(sj.j -> 'step1', '{"n": 0, "ultimo_em": null, "ultimos": []}'::jsonb),
+      'step2ck', coalesce(sj.j -> 'step2ck', '{"n": 0, "ultimo_em": null, "ultimos": []}'::jsonb)),
+    'nbme', coalesce(nb.j, '[]'::jsonb),
+    'presenca', case when pr.user_id is null then null else jsonb_build_object(
+      'aulas_assistidas', pr.aulas_assistidas,
+      'aulas_totais', pr.aulas_totais,
+      'percentual', case when pr.aulas_totais > 0 then round(pr.aulas_assistidas::numeric / pr.aulas_totais, 6) end,
+      'atualizado_em', pr.atualizado_em) end,
+    'ultima_atividade', greatest(ra.ultima, sj.ultimo, (nb.ultima_data + time '12:00') at time zone p_tz)
+  )
+  from public.profiles p
+  cross join ofc
+  left join rv_agg ra on ra.user_id = p.id
+  left join serie se on se.user_id = p.id
+  left join seq sq on sq.user_id = p.id
+  left join est es on es.user_id = p.id
+  left join sim_j sj on sj.user_id = p.id
+  left join nb on nb.user_id = p.id
+  left join public.presenca pr on pr.user_id = p.id
+  left join public.plano_participante pl on pl.user_id = p.id
+  left join public.configuracoes cfg on cfg.user_id = p.id
+  where p.id = any (p_ids)
+  order by p.nome, p.id;
+$$;
+
+-- Ninguém chama a função interna diretamente pela API
+revoke all on function public.r2a_resumo_interno(uuid[], text, timestamptz) from public, anon, authenticated;
+
+-- Painel do admin: uma linha (jsonb) por participante
+create or replace function public.r2a_admin_resumo_participantes(p_tz text default 'America/Sao_Paulo', p_agora timestamptz default now())
+returns setof jsonb
+language plpgsql
+stable
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores veem o painel de rendimento.' using errcode = '42501';
+  end if;
+  return query
+    select * from public.r2a_resumo_interno(
+      array(select id from public.profiles where papel = 'participante'), p_tz, p_agora);
+end;
+$$;
+
+-- Painel do participante: o próprio resumo
+create or replace function public.r2a_meu_resumo(p_tz text default 'America/Sao_Paulo', p_agora timestamptz default now())
+returns jsonb
+language plpgsql
+stable
+security definer
+set search_path = public
+as $$
+declare
+  v jsonb;
+begin
+  if auth.uid() is null then
+    raise exception 'Entre com seu e-mail para continuar.' using errcode = '42501';
+  end if;
+  select r into v from public.r2a_resumo_interno(array[auth.uid()], p_tz, p_agora) as r;
+  return v;
+end;
+$$;
+
+-- Revisões por dia de um participante (heatmap e tendência de retenção).
+-- security invoker: a RLS do revlog já limita ao próprio usuário ou ao admin.
+create or replace function public.r2a_atividade_diaria(p_user uuid, p_dias integer default 182, p_tz text default 'America/Sao_Paulo', p_agora timestamptz default now())
+returns table (dia date, revisoes integer, revisao_total integer, revisao_acertos integer)
+language sql
+stable
+security invoker
+set search_path = public
+as $$
+  with par as (
+    select ((p_agora at time zone p_tz) - interval '4 hours')::date as hoje, least(greatest(coalesce(p_dias, 182), 1), 730) as n
+  ),
+  rv as (
+    select ((r.review at time zone p_tz) - interval '4 hours')::date as d, r.state, r.rating
+    from public.revlog r
+    where r.user_id = p_user
+      and r.review >= p_agora - make_interval(days => (select n from par) + 2)
+  )
+  select (par.hoje - par.n + 1 + g.i)::date as dia,
+    count(rv.d)::int,
+    count(rv.d) filter (where rv.state = 2)::int,
+    count(rv.d) filter (where rv.state = 2 and rv.rating > 1)::int
+  from par
+  cross join lateral generate_series(0, par.n - 1) as g (i)
+  left join rv on rv.d = par.hoje - par.n + 1 + g.i
+  group by g.i, par.hoje, par.n
+  order by g.i;
+$$;
+
+-- Importação de presença por CSV já lido no navegador: [{email, aulas_assistidas, aulas_totais}]
+create or replace function public.r2a_admin_importar_presenca(p_linhas jsonb)
+returns jsonb
+language plpgsql
+volatile
+security definer
+set search_path = public
+as $$
+declare
+  v_item jsonb;
+  v_id uuid;
+  v_a integer;
+  v_t integer;
+  v_ok integer := 0;
+  v_nao jsonb := '[]'::jsonb;
+  v_err jsonb := '[]'::jsonb;
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores importam presença.' using errcode = '42501';
+  end if;
+  if jsonb_typeof(p_linhas) is distinct from 'array' then
+    raise exception 'Envie uma lista de linhas.' using errcode = '22023';
+  end if;
+  for v_item in select * from jsonb_array_elements(p_linhas) loop
+    begin
+      v_a := (v_item ->> 'aulas_assistidas')::integer;
+      v_t := (v_item ->> 'aulas_totais')::integer;
+    exception when others then
+      v_err := v_err || jsonb_build_object('email', v_item ->> 'email', 'motivo', 'Números inválidos.');
+      continue;
+    end;
+    if v_a is null or v_t is null or v_a < 0 or v_t < 0 or v_a > v_t then
+      v_err := v_err || jsonb_build_object('email', v_item ->> 'email', 'motivo', 'Números inválidos.');
+      continue;
+    end if;
+    select p.id into v_id from public.profiles p where lower(p.email) = lower(btrim(v_item ->> 'email')) limit 1;
+    if v_id is null then
+      v_nao := v_nao || to_jsonb(lower(btrim(v_item ->> 'email')));
+      continue;
+    end if;
+    insert into public.presenca (user_id, aulas_assistidas, aulas_totais, origem)
+    values (v_id, v_a, v_t, 'csv')
+    on conflict (user_id) do update
+      set aulas_assistidas = excluded.aulas_assistidas, aulas_totais = excluded.aulas_totais, origem = 'csv';
+    v_ok := v_ok + 1;
+  end loop;
+  return jsonb_build_object('atualizados', v_ok, 'nao_encontrados', v_nao, 'erros', v_err);
+end;
+$$;
+
+revoke all on function public.r2a_admin_resumo_participantes(text, timestamptz) from public, anon;
+revoke all on function public.r2a_meu_resumo(text, timestamptz) from public, anon;
+revoke all on function public.r2a_atividade_diaria(uuid, integer, text, timestamptz) from public, anon;
+revoke all on function public.r2a_admin_importar_presenca(jsonb) from public, anon;
+grant execute on function public.r2a_admin_resumo_participantes(text, timestamptz) to authenticated;
+grant execute on function public.r2a_meu_resumo(text, timestamptz) to authenticated;
+grant execute on function public.r2a_atividade_diaria(uuid, integer, text, timestamptz) to authenticated;
+grant execute on function public.r2a_admin_importar_presenca(jsonb) to authenticated;
+
+-- ---------------------------------------------------------------------------
+-- ÁREA ADMINISTRATIVA (admin/): anotações do mentor sobre cada participante.
+-- Texto interno da equipe, um por participante; o participante não lê nem grava.
+-- Interface JavaScript: getAnotacao(userId) e saveAnotacao(userId, texto).
+-- ---------------------------------------------------------------------------
+create table if not exists public.anotacoes_mentor (
+  user_id         uuid primary key references auth.users (id) on delete cascade,
+  texto           text not null default '' check (char_length(texto) <= 5000),
+  atualizado_por  uuid references auth.users (id) on delete set null,
+  atualizado_em   timestamptz not null default now()
+);
+
+create or replace function public.anotacoes_mentor_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  new.atualizado_por := coalesce(auth.uid(), new.atualizado_por);
+  return new;
+end;
+$$;
+
+drop trigger if exists anotacoes_mentor_guard on public.anotacoes_mentor;
+create trigger anotacoes_mentor_guard
+  before insert or update on public.anotacoes_mentor
+  for each row execute function public.anotacoes_mentor_guard();
+
+alter table public.anotacoes_mentor enable row level security;
+revoke all on public.anotacoes_mentor from anon;
+grant select, insert, update, delete on public.anotacoes_mentor to authenticated;
+
+drop policy if exists anotacoes_mentor_admin on public.anotacoes_mentor;
+create policy anotacoes_mentor_admin on public.anotacoes_mentor for all to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));

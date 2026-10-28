@@ -130,7 +130,20 @@ pessoa. O e-mail do perfil também não pode ser trocado pelo próprio participa
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
+node supabase/teste-local/03-compara-resumo.mjs
 ```
+
+O bloco final do `02-testa-rls.sql` precisa mostrar `falhas | 0`, e o script `03`
+confere que o resumo de rendimento calculado no banco é igual ao do JavaScript.
+
+## Plataforma: simulados, NBME, presença e painel do admin
+
+As mesmas classes `LocalStore` e `SupabaseStore` também guardam as tentativas do
+simulado de 30 minutos, as autoavaliações NBME, a presença nas aulas e o plano de cada
+participante, e alimentam o painel de rendimento do administrador. A interface completa,
+com as regras de risco, da garantia e da prontidão, está em `plataforma/INTERFACE.md`.
+No modo demonstração, o painel do admin mostra também uma coorte sintética de 16
+participantes fictícios, gerada na memória e marcada como dados de demonstração.
 
 ## Formato dos cards iniciais
 
@@ -164,6 +177,7 @@ atualizar as notas em vez de duplicar.
 
 ```bash
 cd anki && node --test tests/*.test.mjs
+cd plataforma && node --test tests/*.test.mjs
 ```
 
 Cobrem agendador e fila do dia, sessão e desfazer, verificador de qualidade, cloze,

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Simulado de 30 minutos | Road to America</title>
+  <meta name="description" content="Simulado de um bloco do USMLE Step 1 ou Step 2 CK: 20 questões em 30 minutos, com valores laboratoriais de referência, marcação para revisão, riscar alternativas, realce, anotações e calculadora.">
+  <meta name="theme-color" content="#0f2747">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="simulado.css">
+  <script>
+    try { var t = localStorage.getItem("r2a-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav sim-nav" data-site-nav>
+    <div class="wrap nav__inner">
+      <a class="brand" href="../index.html" aria-label="Road to America, voltar ao site">
+        <svg class="brand__shield" viewBox="0 0 34 38" aria-hidden="true">
+          <path d="M3 2.5h28c.9 3.4.9 6.6 0 9.3 2.6 7.6 1.4 15.3-5.4 20.7-3.6 2.8-6.6 3.9-8.6 4.6-2-.7-5-1.8-8.6-4.6C1.6 27.1.4 19.4 3 11.8c-.9-2.7-.9-5.9 0-9.3z" fill="#0f2747" stroke="#f3f5f2" stroke-width="1.6"/>
+          <path d="M3.4 3.3h27.2c.6 2.6.6 5 0 7.2H3.4c-.6-2.2-.6-4.6 0-7.2z" fill="#b0243a"/>
+          <text x="17" y="26" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="12.5" fill="#f3f5f2">R2A</text>
+        </svg>
+        <span class="brand__name">Road to <span>America</span></span>
+      </a>
+      <span class="app-tag" aria-hidden="true">Simulado</span>
+      <div class="app-tools">
+        <span class="conta" data-conta hidden></span>
+        <a class="tool-link" href="../anki/">
+          <i class="ph ph-cards" aria-hidden="true"></i><span>Flashcards</span>
+        </a>
+        <button class="theme-btn" type="button" data-theme-toggle aria-label="Alternar tema claro e escuro"><i class="ph ph-circle-half" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="wrap boot" data-boot>
+      <p class="eyebrow"><span class="fita" aria-hidden="true"></span>Simulado de 30 minutos</p>
+      <p class="boot__msg" role="status">Carregando as questões...</p>
+    </div>
+    <div data-tela></div>
+  </main>
+
+  <div class="toasts" aria-live="polite" aria-atomic="false" data-toasts></div>
+  <p class="sr-only" aria-live="assertive" data-alerta></p>
+  <dialog class="modal" data-modal aria-labelledby="modal-titulo"></dialog>
+
+  <noscript><p class="wrap">O simulado precisa de JavaScript ativado.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

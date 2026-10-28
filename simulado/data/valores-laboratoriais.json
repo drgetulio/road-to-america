@@ -1,0 +1,879 @@
+{
+ "versao": "2026-10-28",
+ "titulo": "Valores laboratoriais de referência",
+ "nota": "Faixas de referência para adultos, no padrão da tabela pública de valores laboratoriais usada nas provas do USMLE e nas autoavaliações do NBME. As faixas variam entre laboratórios; durante o simulado, valem as desta tabela, salvo quando a vinheta informar outra.",
+ "fontes": [
+  {
+   "rotulo": "NBME, Laboratory Values (tabela pública usada no USMLE e nas autoavaliações)",
+   "url": "https://www.nbme.org/laboratory-values/"
+  },
+  {
+   "rotulo": "Conversões para o SI calculadas com os fatores-padrão de conversão (AMA Manual of Style, 11ª ed., tabela de unidades SI); onde o arredondamento da tabela oficial difere, prevalece a conversão calculada",
+   "url": ""
+  },
+  {
+   "rotulo": "Cloreto no suor: Farrell PM et al. Diagnosis of cystic fibrosis: consensus guidelines from the Cystic Fibrosis Foundation. J Pediatr 2017;181S:S4-S15",
+   "url": "https://doi.org/10.1016/j.jpeds.2016.09.064"
+  }
+ ],
+ "total_itens": 87,
+ "secoes": [
+  {
+   "id": "soro-geral",
+   "titulo": "Serum: general chemistry",
+   "titulo_pt": "Soro: bioquímica geral",
+   "itens": [
+    {
+     "nome": "Alanine aminotransferase (ALT)",
+     "pt": "alanina aminotransferase, TGP",
+     "conv": "10-40 U/L",
+     "si": "10-40 U/L"
+    },
+    {
+     "nome": "Alkaline phosphatase",
+     "pt": "fosfatase alcalina",
+     "conv": "25-100 U/L",
+     "si": "25-100 U/L"
+    },
+    {
+     "nome": "Amylase",
+     "pt": "amilase",
+     "conv": "25-125 U/L",
+     "si": "25-125 U/L"
+    },
+    {
+     "nome": "Aspartate aminotransferase (AST)",
+     "pt": "aspartato aminotransferase, TGO",
+     "conv": "12-38 U/L",
+     "si": "12-38 U/L"
+    },
+    {
+     "nome": "Bilirubin, total",
+     "pt": "bilirrubina total",
+     "conv": "0.1-1.0 mg/dL",
+     "si": "2-17 µmol/L"
+    },
+    {
+     "nome": "Bilirubin, direct",
+     "pt": "bilirrubina direta",
+     "conv": "0.0-0.3 mg/dL",
+     "si": "0-5 µmol/L"
+    },
+    {
+     "nome": "Calcium",
+     "pt": "cálcio",
+     "conv": "8.4-10.2 mg/dL",
+     "si": "2.10-2.55 mmol/L"
+    },
+    {
+     "nome": "Creatine kinase",
+     "pt": "creatinoquinase, CK, CPK",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "25-90 U/L",
+       "25-90 U/L"
+      ],
+      [
+       "Female",
+       "10-70 U/L",
+       "10-70 U/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Creatinine",
+     "pt": "creatinina",
+     "conv": "0.6-1.2 mg/dL",
+     "si": "53-106 µmol/L"
+    },
+    {
+     "nome": "Glucose",
+     "pt": "glicose, glicemia",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Fasting",
+       "70-100 mg/dL",
+       "3.9-5.6 mmol/L"
+      ],
+      [
+       "Random, non-fasting",
+       "<140 mg/dL",
+       "<7.8 mmol/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Lactate dehydrogenase",
+     "pt": "desidrogenase lática, LDH",
+     "conv": "45-200 U/L",
+     "si": "45-200 U/L"
+    },
+    {
+     "nome": "Osmolality",
+     "pt": "osmolalidade sérica",
+     "conv": "275-295 mOsmol/kg H₂O",
+     "si": "275-295 mOsmol/kg H₂O"
+    },
+    {
+     "nome": "Phosphorus (inorganic)",
+     "pt": "fósforo, fosfato",
+     "conv": "3.0-4.5 mg/dL",
+     "si": "0.97-1.45 mmol/L"
+    },
+    {
+     "nome": "Proteins, total",
+     "pt": "proteínas totais",
+     "conv": "6.0-7.8 g/dL",
+     "si": "60-78 g/L"
+    },
+    {
+     "nome": "Albumin",
+     "pt": "albumina",
+     "conv": "3.5-5.5 g/dL",
+     "si": "35-55 g/L"
+    },
+    {
+     "nome": "Globulin",
+     "pt": "globulinas",
+     "conv": "2.3-3.5 g/dL",
+     "si": "23-35 g/L"
+    },
+    {
+     "nome": "Urea nitrogen",
+     "pt": "ureia, nitrogênio ureico, BUN",
+     "conv": "7-18 mg/dL",
+     "si": "2.5-6.4 mmol/L"
+    },
+    {
+     "nome": "Uric acid",
+     "pt": "ácido úrico",
+     "conv": "3.0-8.2 mg/dL",
+     "si": "0.18-0.49 mmol/L"
+    }
+   ]
+  },
+  {
+   "id": "eletrolitos",
+   "titulo": "Serum: electrolytes",
+   "titulo_pt": "Soro: eletrólitos",
+   "itens": [
+    {
+     "nome": "Sodium (Na⁺)",
+     "pt": "sódio",
+     "conv": "136-146 mEq/L",
+     "si": "136-146 mmol/L"
+    },
+    {
+     "nome": "Potassium (K⁺)",
+     "pt": "potássio",
+     "conv": "3.5-5.0 mEq/L",
+     "si": "3.5-5.0 mmol/L"
+    },
+    {
+     "nome": "Chloride (Cl⁻)",
+     "pt": "cloro, cloreto",
+     "conv": "95-105 mEq/L",
+     "si": "95-105 mmol/L"
+    },
+    {
+     "nome": "Bicarbonate (HCO₃⁻)",
+     "pt": "bicarbonato",
+     "conv": "22-28 mEq/L",
+     "si": "22-28 mmol/L"
+    },
+    {
+     "nome": "Magnesium (Mg²⁺)",
+     "pt": "magnésio",
+     "conv": "1.5-2.0 mg/dL",
+     "si": "0.62-0.82 mmol/L"
+    }
+   ]
+  },
+  {
+   "id": "lipidios",
+   "titulo": "Serum: lipids",
+   "titulo_pt": "Soro: lipídios",
+   "itens": [
+    {
+     "nome": "Cholesterol, total",
+     "pt": "colesterol total",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Normal",
+       "<200 mg/dL",
+       "<5.2 mmol/L"
+      ],
+      [
+       "High",
+       ">240 mg/dL",
+       ">6.2 mmol/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Cholesterol, HDL",
+     "pt": "colesterol HDL",
+     "conv": "40-60 mg/dL",
+     "si": "1.0-1.6 mmol/L"
+    },
+    {
+     "nome": "Cholesterol, LDL",
+     "pt": "colesterol LDL",
+     "conv": "<160 mg/dL",
+     "si": "<4.1 mmol/L"
+    },
+    {
+     "nome": "Triglycerides",
+     "pt": "triglicerídeos",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Normal",
+       "<150 mg/dL",
+       "<1.70 mmol/L"
+      ],
+      [
+       "Borderline",
+       "151-199 mg/dL",
+       "1.71-2.25 mmol/L"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "endocrino",
+   "titulo": "Serum: endocrine",
+   "titulo_pt": "Soro: endocrinologia",
+   "itens": [
+    {
+     "nome": "Cortisol",
+     "pt": "cortisol",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "0800 h",
+       "5-23 µg/dL",
+       "138-635 nmol/L"
+      ],
+      [
+       "1600 h",
+       "3-15 µg/dL",
+       "83-414 nmol/L"
+      ],
+      [
+       "2000 h",
+       "<50% of 0800 h",
+       "fraction of 0800 h: <0.50"
+      ]
+     ]
+    },
+    {
+     "nome": "Follicle-stimulating hormone",
+     "pt": "hormônio folículo-estimulante, FSH",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "4-25 mIU/mL",
+       "4-25 U/L"
+      ],
+      [
+       "Female, premenopause",
+       "4-30 mIU/mL",
+       "4-30 U/L"
+      ],
+      [
+       "Female, midcycle peak",
+       "10-90 mIU/mL",
+       "10-90 U/L"
+      ],
+      [
+       "Female, postmenopause",
+       "40-250 mIU/mL",
+       "40-250 U/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Growth hormone, arginine stimulation",
+     "pt": "hormônio do crescimento, GH",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Fasting",
+       "<5 ng/mL",
+       "<5 µg/L"
+      ],
+      [
+       "Provocative stimuli",
+       ">7 ng/mL",
+       ">7 µg/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Luteinizing hormone",
+     "pt": "hormônio luteinizante, LH",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "6-23 mIU/mL",
+       "6-23 U/L"
+      ],
+      [
+       "Female, follicular phase",
+       "5-30 mIU/mL",
+       "5-30 U/L"
+      ],
+      [
+       "Female, midcycle",
+       "75-150 mIU/mL",
+       "75-150 U/L"
+      ],
+      [
+       "Female, postmenopause",
+       "30-200 mIU/mL",
+       "30-200 U/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Parathyroid hormone, intact",
+     "pt": "paratormônio, PTH",
+     "conv": "10-60 pg/mL",
+     "si": "10-60 ng/L"
+    },
+    {
+     "nome": "Prolactin (hPRL)",
+     "pt": "prolactina",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "<17 ng/mL",
+       "<17 µg/L"
+      ],
+      [
+       "Female",
+       "<25 ng/mL",
+       "<25 µg/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Thyroid-stimulating hormone (TSH)",
+     "pt": "tireotrofina, TSH",
+     "conv": "0.4-4.0 µU/mL",
+     "si": "0.4-4.0 mIU/L"
+    },
+    {
+     "nome": "Thyroxine (T₄)",
+     "pt": "tiroxina total, T4",
+     "conv": "5-12 µg/dL",
+     "si": "64-154 nmol/L"
+    },
+    {
+     "nome": "Free thyroxine (FT₄)",
+     "pt": "tiroxina livre, T4 livre",
+     "conv": "0.9-1.7 ng/dL",
+     "si": "11.6-21.9 pmol/L"
+    },
+    {
+     "nome": "Triiodothyronine (T₃), RIA",
+     "pt": "tri-iodotironina, T3",
+     "conv": "100-200 ng/dL",
+     "si": "1.5-3.1 nmol/L"
+    },
+    {
+     "nome": "Triiodothyronine (T₃) resin uptake",
+     "pt": "captação de T3 em resina",
+     "conv": "25%-35%",
+     "si": "0.25-0.35"
+    },
+    {
+     "nome": "Thyroidal iodine (¹²³I) uptake",
+     "pt": "captação tireoidiana de iodo",
+     "conv": "8%-30% of administered dose/24 h",
+     "si": "0.08-0.30/24 h"
+    }
+   ]
+  },
+  {
+   "id": "ferro-vitaminas-imuno",
+   "titulo": "Serum: iron, vitamins and immunoglobulins",
+   "titulo_pt": "Soro: ferro, vitaminas e imunoglobulinas",
+   "itens": [
+    {
+     "nome": "Ferritin",
+     "pt": "ferritina",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "20-250 ng/mL",
+       "20-250 µg/L"
+      ],
+      [
+       "Female",
+       "10-120 ng/mL",
+       "10-120 µg/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Iron",
+     "pt": "ferro sérico",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "65-175 µg/dL",
+       "11.6-31.3 µmol/L"
+      ],
+      [
+       "Female",
+       "50-170 µg/dL",
+       "9.0-30.4 µmol/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Total iron-binding capacity",
+     "pt": "capacidade total de ligação do ferro, TIBC",
+     "conv": "250-400 µg/dL",
+     "si": "44.8-71.6 µmol/L"
+    },
+    {
+     "nome": "Transferrin",
+     "pt": "transferrina",
+     "conv": "200-360 mg/dL",
+     "si": "2.0-3.6 g/L"
+    },
+    {
+     "nome": "Vitamin B₁₂ (cobalamin)",
+     "pt": "vitamina B12, cobalamina",
+     "conv": "200-800 pg/mL",
+     "si": "148-590 pmol/L"
+    },
+    {
+     "nome": "Immunoglobulin A (IgA)",
+     "pt": "imunoglobulina A",
+     "conv": "76-390 mg/dL",
+     "si": "0.76-3.90 g/L"
+    },
+    {
+     "nome": "Immunoglobulin E (IgE)",
+     "pt": "imunoglobulina E",
+     "conv": "0-380 IU/mL",
+     "si": "0-380 kIU/L"
+    },
+    {
+     "nome": "Immunoglobulin G (IgG)",
+     "pt": "imunoglobulina G",
+     "conv": "650-1500 mg/dL",
+     "si": "6.5-15.0 g/L"
+    },
+    {
+     "nome": "Immunoglobulin M (IgM)",
+     "pt": "imunoglobulina M",
+     "conv": "50-300 mg/dL",
+     "si": "0.5-3.0 g/L"
+    }
+   ]
+  },
+  {
+   "id": "gasometria",
+   "titulo": "Arterial blood gases, room air",
+   "titulo_pt": "Gasometria arterial, ar ambiente",
+   "itens": [
+    {
+     "nome": "pH",
+     "pt": "pH arterial",
+     "conv": "7.35-7.45",
+     "si": "[H⁺] 35-45 nmol/L"
+    },
+    {
+     "nome": "PCO₂",
+     "pt": "pressão parcial de CO2",
+     "conv": "33-45 mm Hg",
+     "si": "4.4-6.0 kPa"
+    },
+    {
+     "nome": "PO₂",
+     "pt": "pressão parcial de O2",
+     "conv": "75-105 mm Hg",
+     "si": "10.0-14.0 kPa"
+    }
+   ]
+  },
+  {
+   "id": "hematologia",
+   "titulo": "Hematologic",
+   "titulo_pt": "Hematologia",
+   "itens": [
+    {
+     "nome": "Erythrocyte count",
+     "pt": "hemácias, eritrócitos",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "4.3-5.9 million/mm³",
+       "4.3-5.9 × 10¹²/L"
+      ],
+      [
+       "Female",
+       "3.5-5.5 million/mm³",
+       "3.5-5.5 × 10¹²/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Hemoglobin, blood",
+     "pt": "hemoglobina",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "13.5-17.5 g/dL",
+       "135-175 g/L"
+      ],
+      [
+       "Female",
+       "12.0-16.0 g/dL",
+       "120-160 g/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Hematocrit",
+     "pt": "hematócrito",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "41%-53%",
+       "0.41-0.53"
+      ],
+      [
+       "Female",
+       "36%-46%",
+       "0.36-0.46"
+      ]
+     ]
+    },
+    {
+     "nome": "Mean corpuscular volume (MCV)",
+     "pt": "volume corpuscular médio, VCM",
+     "conv": "80-100 µm³",
+     "si": "80-100 fL"
+    },
+    {
+     "nome": "Mean corpuscular hemoglobin (MCH)",
+     "pt": "hemoglobina corpuscular média, HCM",
+     "conv": "25-35 pg/cell",
+     "si": "0.39-0.54 fmol/cell"
+    },
+    {
+     "nome": "Mean corpuscular hemoglobin concentration (MCHC)",
+     "pt": "concentração de hemoglobina corpuscular média, CHCM",
+     "conv": "31%-36% Hb/cell",
+     "si": "4.8-5.6 mmol Hb/L"
+    },
+    {
+     "nome": "Reticulocyte count",
+     "pt": "reticulócitos",
+     "conv": "0.5%-1.5% of red cells",
+     "si": "0.005-0.015"
+    },
+    {
+     "nome": "Hemoglobin A₁c",
+     "pt": "hemoglobina glicada, HbA1c",
+     "conv": "≤6%",
+     "si": "≤42 mmol/mol"
+    },
+    {
+     "nome": "Leukocyte count (WBC)",
+     "pt": "leucócitos",
+     "conv": "4500-11,000/mm³",
+     "si": "4.5-11.0 × 10⁹/L"
+    },
+    {
+     "nome": "Neutrophils, segmented",
+     "pt": "neutrófilos segmentados",
+     "conv": "54%-62%",
+     "si": "0.54-0.62"
+    },
+    {
+     "nome": "Neutrophils, bands",
+     "pt": "bastonetes",
+     "conv": "3%-5%",
+     "si": "0.03-0.05"
+    },
+    {
+     "nome": "Eosinophils",
+     "pt": "eosinófilos",
+     "conv": "1%-3%",
+     "si": "0.01-0.03"
+    },
+    {
+     "nome": "Basophils",
+     "pt": "basófilos",
+     "conv": "0%-0.75%",
+     "si": "0-0.0075"
+    },
+    {
+     "nome": "Lymphocytes",
+     "pt": "linfócitos",
+     "conv": "25%-33%",
+     "si": "0.25-0.33"
+    },
+    {
+     "nome": "Monocytes",
+     "pt": "monócitos",
+     "conv": "3%-7%",
+     "si": "0.03-0.07"
+    },
+    {
+     "nome": "CD4⁺ T-lymphocyte count",
+     "pt": "linfócitos T CD4",
+     "conv": "≥500/mm³",
+     "si": "≥0.5 × 10⁹/L"
+    },
+    {
+     "nome": "Platelet count",
+     "pt": "plaquetas",
+     "conv": "150,000-400,000/mm³",
+     "si": "150-400 × 10⁹/L"
+    },
+    {
+     "nome": "Erythrocyte sedimentation rate (Westergren)",
+     "pt": "velocidade de hemossedimentação, VHS",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "0-15 mm/h",
+       "0-15 mm/h"
+      ],
+      [
+       "Female",
+       "0-20 mm/h",
+       "0-20 mm/h"
+      ]
+     ]
+    },
+    {
+     "nome": "Plasma volume",
+     "pt": "volume plasmático",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "25-43 mL/kg",
+       "0.025-0.043 L/kg"
+      ],
+      [
+       "Female",
+       "28-45 mL/kg",
+       "0.028-0.045 L/kg"
+      ]
+     ]
+    },
+    {
+     "nome": "Red cell volume",
+     "pt": "volume eritrocitário",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "20-36 mL/kg",
+       "0.020-0.036 L/kg"
+      ],
+      [
+       "Female",
+       "19-31 mL/kg",
+       "0.019-0.031 L/kg"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "coagulacao",
+   "titulo": "Hemostasis",
+   "titulo_pt": "Hemostasia",
+   "itens": [
+    {
+     "nome": "Bleeding time",
+     "pt": "tempo de sangramento",
+     "conv": "2-7 minutes",
+     "si": "2-7 minutes"
+    },
+    {
+     "nome": "Prothrombin time (PT)",
+     "pt": "tempo de protrombina, TP",
+     "conv": "11-15 seconds",
+     "si": "11-15 seconds"
+    },
+    {
+     "nome": "Partial thromboplastin time (PTT), activated",
+     "pt": "tempo de tromboplastina parcial ativada, TTPa",
+     "conv": "25-40 seconds",
+     "si": "25-40 seconds"
+    }
+   ]
+  },
+  {
+   "id": "liquor",
+   "titulo": "Cerebrospinal fluid",
+   "titulo_pt": "Líquido cefalorraquidiano",
+   "itens": [
+    {
+     "nome": "Cell count",
+     "pt": "celularidade do líquor",
+     "conv": "0-5/mm³",
+     "si": "0-5 × 10⁶/L"
+    },
+    {
+     "nome": "Chloride",
+     "pt": "cloreto no líquor",
+     "conv": "118-132 mEq/L",
+     "si": "118-132 mmol/L"
+    },
+    {
+     "nome": "Gamma globulin",
+     "pt": "gamaglobulina no líquor",
+     "conv": "3%-12% total proteins",
+     "si": "0.03-0.12"
+    },
+    {
+     "nome": "Glucose",
+     "pt": "glicose no líquor",
+     "conv": "40-70 mg/dL",
+     "si": "2.2-3.9 mmol/L"
+    },
+    {
+     "nome": "Pressure",
+     "pt": "pressão de abertura",
+     "conv": "70-180 mm H₂O",
+     "si": "70-180 mm H₂O"
+    },
+    {
+     "nome": "Proteins, total",
+     "pt": "proteínas no líquor",
+     "conv": "<40 mg/dL",
+     "si": "<0.40 g/L"
+    }
+   ]
+  },
+  {
+   "id": "urina",
+   "titulo": "Urine",
+   "titulo_pt": "Urina",
+   "itens": [
+    {
+     "nome": "Calcium",
+     "pt": "cálcio urinário, calciúria",
+     "conv": "100-300 mg/24 h",
+     "si": "2.5-7.5 mmol/24 h"
+    },
+    {
+     "nome": "Creatinine clearance",
+     "pt": "depuração de creatinina, clearance",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Male",
+       "97-137 mL/min",
+       "1.62-2.28 mL/s"
+      ],
+      [
+       "Female",
+       "88-128 mL/min",
+       "1.47-2.13 mL/s"
+      ]
+     ]
+    },
+    {
+     "nome": "Osmolality",
+     "pt": "osmolalidade urinária",
+     "conv": "50-1200 mOsmol/kg H₂O",
+     "si": "50-1200 mOsmol/kg H₂O"
+    },
+    {
+     "nome": "Oxalate",
+     "pt": "oxalato urinário",
+     "conv": "8-40 µg/mL",
+     "si": "90-445 µmol/L"
+    },
+    {
+     "nome": "Proteins, total",
+     "pt": "proteinúria",
+     "conv": "<150 mg/24 h",
+     "si": "<0.15 g/24 h"
+    }
+   ]
+  },
+  {
+   "id": "suor-outros",
+   "titulo": "Sweat and other",
+   "titulo_pt": "Suor e outros",
+   "itens": [
+    {
+     "nome": "Sweat chloride",
+     "pt": "cloreto no suor, teste do suor",
+     "conv": null,
+     "si": null,
+     "linhas": [
+      [
+       "Cystic fibrosis unlikely",
+       "<30 mmol/L",
+       "<30 mmol/L"
+      ],
+      [
+       "Intermediate",
+       "30-59 mmol/L",
+       "30-59 mmol/L"
+      ],
+      [
+       "Consistent with cystic fibrosis",
+       "≥60 mmol/L",
+       "≥60 mmol/L"
+      ]
+     ]
+    },
+    {
+     "nome": "Body mass index (BMI), adult",
+     "pt": "índice de massa corporal, IMC",
+     "conv": "19-25 kg/m²",
+     "si": "19-25 kg/m²"
+    }
+   ]
+  }
+ ]
+}
