@@ -27,7 +27,7 @@ export const LegendaCinetica: React.FC<Props> = ({ texto, duracao }) => {
         entrelinha: 0.96,
         maxLinhas: 5,
         maiusculas: true,
-        folgaDestaque: variante === "bloco" ? 0.18 : 0,
+        folgaDestaque: variante === "bloco" ? 0.18 : variante === "pop" ? 0.1 : 0,
       }),
     [texto, gancho, variante],
   );

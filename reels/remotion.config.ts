@@ -1,5 +1,6 @@
 // Configuração do Remotion Studio e da CLI (npx remotion ...).
 // O render em lote usa scripts/render.mjs, que repete estes valores.
+import fs from "node:fs";
 import { Config } from "@remotion/cli/config";
 
 Config.setVideoImageFormat("jpeg");
@@ -10,8 +11,11 @@ Config.setPixelFormat("yuv420p");
 Config.setMuted(true);
 Config.setConcurrency(2);
 Config.setOverwriteOutput(true);
-// Chromium já instalado na máquina (evita baixar outro navegador).
-// Em outra máquina, apague a linha abaixo e o Remotion baixa o dele.
-Config.setBrowserExecutable(
-  "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell",
-);
+
+// Chromium já instalado nesta máquina (evita baixar outro navegador).
+// Sem ele, o Remotion baixa o Chrome Headless Shell automaticamente.
+const navegador =
+  process.env.REMOTION_BROWSER ?? "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell";
+if (fs.existsSync(navegador)) {
+  Config.setBrowserExecutable(navegador);
+}

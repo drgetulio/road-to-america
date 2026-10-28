@@ -44,7 +44,7 @@ export const TextoRico: React.FC<Props> = ({
   corSobreBloco = "#0d1a2b",
   alinhar = "center",
   entrelinha = 0.96,
-  variante = "pop",
+  variante = "cor",
   atraso = 0,
   passo = 3,
   entrada = "pop",
@@ -79,7 +79,7 @@ export const TextoRico: React.FC<Props> = ({
             const op = entrada === "nenhuma" ? 1 : interp(frame, [d, d + 4], [0, 1]);
             const temDestaque = u.some((s) => s.destaque);
             const pulso = temDestaque && variante === "pop" ? interp(frame, [d + 3, d + 8, d + 18], [0, 1, 0]) : 0;
-            const escala = (entrada === "pop" ? 0.78 + 0.22 * p : 1) * (1 + 0.1 * pulso);
+            const escala = (entrada === "pop" ? 0.78 + 0.22 * p : 1) * (1 + 0.07 * pulso);
             const dy = entrada === "nenhuma" ? 0 : (1 - p) * 0.32;
             const giro = temDestaque && variante === "pop" ? -2.5 * pulso : 0;
             const barra = interp(frame, [d + 4, d + 14], [0, 1]);
@@ -93,6 +93,7 @@ export const TextoRico: React.FC<Props> = ({
                     opacity: op,
                     transform: `translateY(${dy}em) scale(${escala}) rotate(${giro}deg)`,
                     transformOrigin: "50% 80%",
+                    margin: temDestaque && variante === "pop" ? "0 0.05em" : undefined,
                   }}
                 >
                   {temDestaque && variante === "bloco" ? (

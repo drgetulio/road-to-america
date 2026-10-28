@@ -35,7 +35,7 @@ export const TelaApp: React.FC<Props> = ({ texto, duracao }) => {
   const modo = modoDaTela(texto);
 
   const titulo = useMemo(
-    () => ajustar(lerUnidades(texto), { fonte: "bc800", largura: AREA.largura, altura: 300, max: 118, min: 72, entrelinha: 0.95, maxLinhas: 2, maiusculas: true }),
+    () => ajustar(lerUnidades(texto), { fonte: "bc800", largura: AREA.largura, altura: 300, max: 118, min: 72, entrelinha: 0.95, maxLinhas: 2, maiusculas: true, folgaDestaque: 0.1 }),
     [texto],
   );
   const altTitulo = titulo.linhas.length * titulo.tamanho * 0.95;

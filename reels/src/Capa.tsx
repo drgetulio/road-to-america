@@ -18,6 +18,10 @@ const limpar = (t: string) => t.toLowerCase().replace(/[^\p{L}\p{N}%$]/gu, "");
 export const tituloComDestaque = (r: ReelProps["roteiro"]): string => {
   const gancho = r.cenas[0].texto_tela;
   const marcadas = new Set((gancho.match(/\*([^*]+)\*/g) ?? []).flatMap((m) => m.replace(/\*/g, "").split(/\s+/)).map(limpar));
+  // 1) o que vem depois de "?" ou "." no meio do título ("Sem SAEME não dá? *Dá.*")
+  const i = r.titulo.search(/[?.]\s/);
+  if (i > 0) return `${r.titulo.slice(0, i + 1)} *${r.titulo.slice(i + 2)}*`;
+  // 2) números e palavras destacadas no gancho
   const palavras = r.titulo.split(" ");
   let algum = false;
   const out = palavras.map((p) => {
@@ -27,12 +31,8 @@ export const tituloComDestaque = (r: ReelProps["roteiro"]): string => {
     }
     return p;
   });
-  if (!algum) {
-    // destaca o que vem depois de "?" ou ".", ou a última palavra
-    const i = r.titulo.search(/[?.]\s/);
-    if (i > 0) return `${r.titulo.slice(0, i + 1)} *${r.titulo.slice(i + 2)}*`;
-    out[out.length - 1] = `*${out[out.length - 1]}*`;
-  }
+  // 3) senão, a última palavra
+  if (!algum) out[out.length - 1] = `*${out[out.length - 1]}*`;
   return out.join(" ");
 };
 
@@ -47,13 +47,19 @@ export const Capa: React.FC<ReelProps> = ({ roteiro, direcao }) => {
         fonte: "bc800",
         largura: placa ? 760 : 900,
         altura: 760,
-        max: 210,
+        max: roteiro.titulo.length < 12 ? 340 : 210,
         min: 90,
         entrelinha: 0.94,
         maxLinhas: 5,
         maiusculas: true,
       }),
-    [titulo, placa],
+    [titulo, placa, roteiro.titulo.length],
+  );
+  // título curto ("56,4%") ganha o gancho do roteiro como apoio
+  const apoio = roteiro.titulo.length < 12 ? roteiro.cenas[0].texto_tela.replace(/\*/g, "").replace(roteiro.titulo, "").replace(/^[\s.,:]+/, "") : null;
+  const ajApoio = useMemo(
+    () => (apoio ? ajustar(lerUnidades(apoio), { fonte: "bc700", largura: 860, altura: 220, max: 96, min: 60, entrelinha: 1, maxLinhas: 2, maiusculas: true }) : null),
+    [apoio],
   );
   const segs = useMemo(() => montarSegmentos(roteiro, direcao), [roteiro, direcao]);
   const ctx = { tom, direcao, segmento: segs[0], inicioGlobal: 0, fundoAtual: tom.fundo, palavraComentario: null };
@@ -73,7 +79,10 @@ export const Capa: React.FC<ReelProps> = ({ roteiro, direcao }) => {
               <TextoRico ajuste={ajuste} cor="#ffffff" corDestaque={COR.amarelo} entrada="nenhuma" variante="cor" />
             </div>
           ) : (
-            <TextoRico ajuste={ajuste} cor={tom.tinta} corDestaque={tom.destaque} entrada="nenhuma" variante="cor" sombra={!tom.claro} />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
+              <TextoRico ajuste={ajuste} cor={tom.tinta} corDestaque={tom.destaque} entrada="nenhuma" variante="cor" sombra={!tom.claro} />
+              {ajApoio ? <TextoRico ajuste={ajApoio} peso={700} cor={tom.suave} corDestaque={tom.destaque} entrada="nenhuma" variante="cor" /> : null}
+            </div>
           )}
         </div>
         <div style={{ position: "absolute", left: 90, right: 90, top: 1490, display: "flex", justifyContent: "center" }}>
