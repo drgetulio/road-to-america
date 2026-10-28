@@ -26,17 +26,22 @@ export function tokens(s) {
 }
 
 /* Similaridade de Dice entre conjuntos de termos e de pares de termos */
+const cacheGramas = new Map();
+function gramas(texto) {
+  let g = cacheGramas.get(texto);
+  if (g) return g;
+  const t = tokens(texto);
+  g = new Set(t);
+  for (let i = 0; i < t.length - 1; i++) g.add(t[i] + " " + t[i + 1]);
+  if (cacheGramas.size > 20000) cacheGramas.clear();
+  cacheGramas.set(texto, g);
+  return g;
+}
+
 export function similarity(a, b) {
-  const ta = tokens(a);
-  const tb = tokens(b);
-  if (!ta.length || !tb.length) return 0;
-  const grams = (t) => {
-    const s = new Set(t);
-    for (let i = 0; i < t.length - 1; i++) s.add(t[i] + " " + t[i + 1]);
-    return s;
-  };
-  const A = grams(ta);
-  const B = grams(tb);
+  const A = gramas(a);
+  const B = gramas(b);
+  if (!A.size || !B.size) return 0;
   let inter = 0;
   for (const x of A) if (B.has(x)) inter++;
   return (2 * inter) / (A.size + B.size);

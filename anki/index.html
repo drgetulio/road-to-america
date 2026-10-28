@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Flashcards | Road to America</title>
+  <meta name="description" content="Área do aluno da Road to America: flashcards do USMLE Step 1 com repetição espaçada (FSRS), cards oficiais, da comunidade e pessoais.">
+  <meta name="theme-color" content="#0f2747">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../assets/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="icons/icons.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="anki.css">
+  <script>
+    try { var t = localStorage.getItem("r2a-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    document.documentElement.classList.add("js");
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav app-nav" id="topo">
+    <div class="wrap nav__inner">
+      <a class="brand" href="../index.html" aria-label="Road to America, voltar ao site">
+        <svg class="brand__shield" viewBox="0 0 34 38" aria-hidden="true">
+          <path d="M3 2.5h28c.9 3.4.9 6.6 0 9.3 2.6 7.6 1.4 15.3-5.4 20.7-3.6 2.8-6.6 3.9-8.6 4.6-2-.7-5-1.8-8.6-4.6C1.6 27.1.4 19.4 3 11.8c-.9-2.7-.9-5.9 0-9.3z" fill="#0f2747" stroke="#f3f5f2" stroke-width="1.6"/>
+          <path d="M3.4 3.3h27.2c.6 2.6.6 5 0 7.2H3.4c-.6-2.2-.6-4.6 0-7.2z" fill="#b0243a"/>
+          <text x="17" y="26" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="12.5" fill="#f3f5f2">R2A</text>
+        </svg>
+        <span class="brand__name">Road to <span>America</span></span>
+      </a>
+      <span class="app-tag" aria-hidden="true">Flashcards</span>
+      <div class="app-tools">
+        <div class="demo-role" data-demo hidden>
+          <label for="papel-demo" class="demo-role__label"><span class="demo-role__badge">Demonstração</span><span class="sr-only">Papel na demonstração</span></label>
+          <select id="papel-demo" class="demo-role__select">
+            <option value="participante">Participante</option>
+            <option value="admin">Administrador</option>
+          </select>
+        </div>
+        <button class="theme-btn" type="button" data-theme-toggle aria-label="Alternar tema claro e escuro"><i class="ph ph-circle-half" aria-hidden="true"></i></button>
+        <button class="theme-btn" type="button" data-sair hidden aria-label="Sair da conta"><i class="ph ph-sign-out" aria-hidden="true"></i></button>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="app-menu" aria-label="Abrir menu"><i class="ph ph-list" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <nav aria-label="Seções do app" class="app-menu" id="app-menu">
+      <div class="wrap"><ul class="app-links" data-nav></ul></div>
+    </nav>
+  </header>
+
+  <div class="demo-banner" data-demo-banner hidden>
+    <div class="wrap demo-banner__inner">
+      <span class="fita" aria-hidden="true"></span>
+      <p><strong>Modo demonstração.</strong> Os cards, o progresso e as configurações ficam só neste navegador. Troque o papel no seletor do topo para ver a área do administrador.</p>
+      <button type="button" class="link-btn" data-demo-fechar>Entendi</button>
+    </div>
+  </div>
+
+  <main id="conteudo" tabindex="-1">
+    <div class="wrap boot" data-boot>
+      <p class="eyebrow"><span class="fita" aria-hidden="true"></span>Área do aluno</p>
+      <p class="boot__msg" role="status">Carregando seus cards...</p>
+    </div>
+    <div data-view></div>
+  </main>
+
+  <div class="toasts" aria-live="polite" aria-atomic="false" data-toasts></div>
+  <dialog class="modal" data-modal aria-labelledby="modal-titulo"></dialog>
+
+  <noscript><p class="wrap">O app de flashcards precisa de JavaScript ativado.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

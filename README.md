@@ -5,6 +5,7 @@ Página de vendas da turma fundadora de preparação para o USMLE Step 1 e Step 
 - `index.html`: página principal (oferta, elegibilidade, método com globo em Three.js, fundador e mentores, dúvidas, investimento, garantia e pré-inscrição).
 - `verificar.html`: verificação guiada da escola no World Directory of Medical Schools (critério do USMLE e do ECFMG para escolas fora dos EUA).
 - `privacidade.html`: Política de Privacidade (LGPD), linkada nos formulários e no rodapé.
+- `anki/`: app de flashcards do Step 1 com repetição espaçada (FSRS), modo demonstração ou Supabase. Instruções em `anki/README.md`; esquema do banco em `supabase/schema.sql`.
 
 Site estático, sem etapa de build. Basta publicar a pasta em qualquer hospedagem (Netlify, Vercel, GitHub Pages, servidor próprio).
 

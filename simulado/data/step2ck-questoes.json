@@ -1,0 +1,1641 @@
+[
+  {
+    "id": "ck-001",
+    "step": "step2ck",
+    "vinheta": "A 24-year-old woman with type 1 diabetes mellitus is brought to the emergency department because of nausea, vomiting, and diffuse abdominal pain for 1 day. She ran out of insulin 3 days ago. Temperature is 37.2°C (99°F), pulse is 118/min, respirations are 28/min and deep, and blood pressure is 98/62 mm Hg. Mucous membranes are dry. The abdomen is diffusely tender without guarding. Laboratory studies show: Na+ 131 mEq/L, K+ 3.0 mEq/L, Cl- 96 mEq/L, HCO3- 9 mEq/L, urea nitrogen 28 mg/dL, creatinine 1.2 mg/dL, glucose 512 mg/dL, and serum beta-hydroxybutyrate 6.8 mmol/L. Arterial pH is 7.12. An ECG shows sinus tachycardia with prominent U waves. Intravenous infusion of 0.9% saline is started at 1 L/h.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Intravenous phosphate replacement"
+      },
+      {
+        "letra": "B",
+        "texto": "Intravenous potassium chloride before insulin"
+      },
+      {
+        "letra": "C",
+        "texto": "Intravenous regular insulin infusion at 0.1 U/kg/h"
+      },
+      {
+        "letra": "D",
+        "texto": "Intravenous sodium bicarbonate infusion"
+      },
+      {
+        "letra": "E",
+        "texto": "Subcutaneous basal insulin glargine"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Insulin drives potassium into cells. In diabetic ketoacidosis total body potassium is depleted even when the serum level looks normal, and this patient is already hypokalemic (3.0 mEq/L) with U waves on the ECG. Starting insulin now could precipitate severe hypokalemia and arrhythmia, so potassium is replaced intravenously while fluids continue, and insulin is held until serum potassium reaches at least 3.5 mEq/L, the threshold in the 2024 ADA/EASD/JBDS/AACE/DTS consensus (older ADA guidance used 3.3 mEq/L); either threshold applies to this patient. An insulin infusion at about 0.1 U/kg/h is the correct step only after potassium is adequate. Sodium bicarbonate is reserved for pH below 7.0 and would worsen hypokalemia. Phosphate replacement is considered only for severe hypophosphatemia (below 1.0 mg/dL) or cardiac or respiratory compromise. Subcutaneous basal insulin can be given early as an adjunct, but it does not replace intravenous insulin in moderate to severe ketoacidosis and would also lower potassium.",
+    "explicacao_pt": "Na cetoacidose diabética o potássio corporal total está baixo, mesmo quando o sérico parece normal. Com K+ de 3,0 mEq/L, iniciar insulina pode provocar hipocalemia grave e arritmia; por isso o potássio é reposto antes, e a insulina só começa quando o K+ chega a 3,5 mEq/L (3,3 mEq/L nas recomendações mais antigas da ADA). Bicarbonato só entra com pH abaixo de 7,0.",
+    "sistema": "medicina_interna",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "cetoacidose diabetica",
+      "potassio",
+      "insulina",
+      "endocrino"
+    ],
+    "fonte": "Umpierrez GE et al. Hyperglycemic crises in adults with diabetes: a consensus report (ADA/EASD/JBDS/AACE/DTS). Diabetes Care 2024;47:1257-1275."
+  },
+  {
+    "id": "ck-002",
+    "step": "step2ck",
+    "vinheta": "A 68-year-old man with stage 4 chronic kidney disease and heart failure with reduced ejection fraction comes to the emergency department because of generalized weakness for 2 days. Spironolactone was added to his regimen of lisinopril and carvedilol 3 weeks ago. Pulse is 52/min and blood pressure is 132/78 mm Hg. Serum studies show K+ 7.2 mEq/L (confirmed on a nonhemolyzed sample), HCO3- 18 mEq/L, and creatinine 3.4 mg/dL. An ECG shows peaked T waves and a QRS duration of 0.14 seconds.",
+    "pergunta": "Which of the following is the most appropriate initial pharmacotherapy?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Intravenous calcium gluconate"
+      },
+      {
+        "letra": "B",
+        "texto": "Intravenous furosemide"
+      },
+      {
+        "letra": "C",
+        "texto": "Intravenous regular insulin with dextrose"
+      },
+      {
+        "letra": "D",
+        "texto": "Nebulized albuterol"
+      },
+      {
+        "letra": "E",
+        "texto": "Oral sodium zirconium cyclosilicate"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "ECG changes (peaked T waves, QRS widening, bradycardia) mean the myocardium is at immediate risk of a fatal arrhythmia. Intravenous calcium stabilizes the cardiac cell membrane within minutes by restoring the difference between resting and threshold potential; it does not lower serum potassium, so it must be followed by shifting and elimination measures. Insulin with dextrose and nebulized albuterol shift potassium into cells, but they take 15 to 30 minutes and do not protect the myocardium as quickly. Sodium zirconium cyclosilicate removes potassium through the gut over hours, and furosemide depends on residual renal function, which is limited in stage 4 kidney disease; both belong to later therapy.",
+    "explicacao_pt": "Hipercalemia com alteração no ECG exige primeiro estabilizar a membrana do miocárdio com gluconato de cálcio IV, que age em minutos e não reduz o potássio. Em seguida vêm as medidas que deslocam o potássio para dentro da célula (insulina com glicose, beta-2 agonista) e as que o eliminam do corpo.",
+    "sistema": "medicina_interna",
+    "disciplina": "manejo",
+    "dificuldade": "facil",
+    "tags": [
+      "hipercalemia",
+      "ECG",
+      "gluconato de calcio",
+      "nefrologia"
+    ],
+    "fonte": "Panchal AR et al. 2020 AHA Guidelines for CPR and Emergency Cardiovascular Care, part 3 (special circumstances: hyperkalemia). Circulation 2020;142:S366-S468; UK Kidney Association. Clinical practice guideline: treatment of acute hyperkalaemia in adults, 2020."
+  },
+  {
+    "id": "ck-003",
+    "step": "step2ck",
+    "vinheta": "A 45-year-old woman comes to the physician for follow-up of hypertension diagnosed 1 year ago. She reports occasional muscle cramps. She takes amlodipine 10 mg daily and no diuretics or laxatives. Blood pressure is 158/96 mm Hg on repeated measurements, and pulse is 76/min. BMI is 26 kg/m2. Examination shows no abnormalities. Serum studies show Na+ 143 mEq/L, K+ 3.1 mEq/L, Cl- 101 mEq/L, HCO3- 31 mEq/L, and creatinine 0.8 mg/dL.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "24-hour urine free cortisol"
+      },
+      {
+        "letra": "B",
+        "texto": "CT of the adrenal glands"
+      },
+      {
+        "letra": "C",
+        "texto": "Plasma aldosterone-to-renin ratio"
+      },
+      {
+        "letra": "D",
+        "texto": "Plasma free metanephrines"
+      },
+      {
+        "letra": "E",
+        "texto": "Renal artery duplex ultrasonography"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Hypertension with spontaneous hypokalemia and metabolic alkalosis in a patient who takes no diuretics suggests primary aldosteronism, the most common endocrine cause of secondary hypertension. The initial test is the plasma aldosterone-to-renin ratio (high aldosterone with suppressed renin), ideally after correction of hypokalemia. Adrenal CT is performed only after biochemical confirmation, because adrenal incidentalomas are common and imaging cannot prove autonomous aldosterone secretion. Plasma metanephrines screen for pheochromocytoma (paroxysmal headache, palpitations, diaphoresis), and urine free cortisol screens for Cushing syndrome (central obesity, striae, proximal weakness); neither picture fits. Renal artery stenosis causes secondary hyperaldosteronism with high renin and is suspected with abrupt-onset hypertension, an abdominal bruit, or a rise in creatinine after an ACE inhibitor.",
+    "explicacao_pt": "Hipertensão com hipocalemia espontânea e alcalose metabólica sugere hiperaldosteronismo primário. O primeiro exame é a relação aldosterona/renina (no Brasil, também chamada relação aldosterona/atividade de renina plasmática). A TC de adrenais só vem depois da confirmação bioquímica.",
+    "sistema": "medicina_interna",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "hiperaldosteronismo primario",
+      "hipertensao secundaria",
+      "hipocalemia",
+      "endocrino"
+    ],
+    "fonte": "Adler GK et al. Primary aldosteronism: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2025; Funder JW et al. The management of primary aldosteronism: case detection, diagnosis, and treatment. Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab 2016;101:1889-1916."
+  },
+  {
+    "id": "ck-004",
+    "step": "step2ck",
+    "vinheta": "A 61-year-old man comes for a routine visit. He has a 9-year history of type 2 diabetes mellitus and hypertension. He takes metformin 1,000 mg twice daily and lisinopril 40 mg daily. He has no history of heart failure or atherosclerotic cardiovascular disease. Blood pressure is 128/78 mm Hg. BMI is 31 kg/m2. Laboratory studies show hemoglobin A1c 7.6%, serum K+ 4.6 mEq/L, creatinine 1.6 mg/dL, estimated GFR 48 mL/min/1.73 m2, and urine albumin-to-creatinine ratio 420 mg/g, stable on two measurements 6 months apart.",
+    "pergunta": "Addition of which of the following drugs is most appropriate to slow progression of this patient's kidney disease?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Aliskiren"
+      },
+      {
+        "letra": "B",
+        "texto": "Empagliflozin"
+      },
+      {
+        "letra": "C",
+        "texto": "Glipizide"
+      },
+      {
+        "letra": "D",
+        "texto": "Pioglitazone"
+      },
+      {
+        "letra": "E",
+        "texto": "Sitagliptin"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "This patient has diabetic kidney disease (eGFR 48 with severely increased albuminuria) despite a maximally dosed ACE inhibitor. SGLT2 inhibitors such as empagliflozin increase sodium delivery to the macula densa, which restores tubuloglomerular feedback, constricts the afferent arteriole, and lowers intraglomerular pressure. They reduce the risk of kidney failure, cardiovascular death, and heart failure hospitalization independent of glucose lowering, and ADA and KDIGO recommend them for type 2 diabetes with CKD and eGFR of at least 20 mL/min/1.73 m2. Aliskiren added to an ACE inhibitor increases hyperkalemia, hypotension, and acute kidney injury without renal benefit (ALTITUDE trial). Glipizide, pioglitazone, and sitagliptin lower glucose but have not been shown to slow CKD progression; pioglitazone also causes fluid retention, and sulfonylureas cause hypoglycemia that becomes more frequent as eGFR falls.",
+    "explicacao_pt": "Doença renal do diabetes com albuminúria grave, já em uso de IECA em dose máxima, pede um inibidor de SGLT2 (empagliflozina, dapagliflozina), que protege rim e coração independentemente da glicemia. Associar alisquireno ao IECA aumenta hipercalemia e lesão renal sem benefício.",
+    "sistema": "medicina_interna",
+    "disciplina": "manejo",
+    "dificuldade": "dificil",
+    "tags": [
+      "diabetes tipo 2",
+      "doenca renal cronica",
+      "iSGLT2",
+      "albuminuria"
+    ],
+    "fonte": "American Diabetes Association. Standards of Care in Diabetes 2026, section 11 (Chronic Kidney Disease and Risk Management); KDIGO 2022 Clinical Practice Guideline for Diabetes Management in CKD; EMPA-KIDNEY Collaborative Group. N Engl J Med 2023;388:117-127."
+  },
+  {
+    "id": "ck-005",
+    "step": "step2ck",
+    "vinheta": "A 34-year-old woman comes to the emergency department because of right-sided pleuritic chest pain and mild shortness of breath that began 1 day ago. She takes a combined oral contraceptive. She has no history of venous thromboembolism, recent surgery, immobilization, hemoptysis, or cancer. Temperature is 37.0°C (98.6°F), pulse is 106/min, respirations are 18/min, and blood pressure is 122/78 mm Hg. Oxygen saturation is 97% on room air. The lungs are clear, and there is no leg swelling or calf tenderness. An ECG shows sinus tachycardia. A chest x-ray shows no abnormalities. The physician judges that an alternative diagnosis is at least as likely as pulmonary embolism.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "CT pulmonary angiography"
+      },
+      {
+        "letra": "B",
+        "texto": "D-dimer assay"
+      },
+      {
+        "letra": "C",
+        "texto": "Lower extremity duplex ultrasonography"
+      },
+      {
+        "letra": "D",
+        "texto": "No further testing for pulmonary embolism"
+      },
+      {
+        "letra": "E",
+        "texto": "Ventilation-perfusion scan"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Her Wells score is 1.5 (heart rate above 100/min only), which places her in the \"pulmonary embolism unlikely\" group. The PERC rule cannot be used to stop testing because she is tachycardic and takes estrogen, so no further testing would be unsafe. In a patient with low pretest probability who is not PERC negative, a normal high-sensitivity D-dimer excludes pulmonary embolism without imaging and spares radiation and contrast. CT pulmonary angiography is the first test when pretest probability is high or when the D-dimer is elevated. A ventilation-perfusion scan is an alternative to CT when contrast is contraindicated, and leg duplex ultrasonography is useful when there are signs of deep venous thrombosis or chest imaging is not possible.",
+    "explicacao_pt": "Com probabilidade pré-teste baixa (Wells 1,5) e PERC positivo por taquicardia e uso de estrogênio, o próximo passo é dosar o D-dímero. Se vier normal, a embolia pulmonar está afastada sem angiotomografia; se vier elevado, segue-se para a angio-TC de tórax.",
+    "sistema": "medicina_interna",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "tromboembolismo pulmonar",
+      "escore de Wells",
+      "PERC",
+      "D-dimero"
+    ],
+    "fonte": "Raja AS et al. Evaluation of patients with suspected acute pulmonary embolism: best practice advice from the Clinical Guidelines Committee of the American College of Physicians. Ann Intern Med 2015;163:701-711; ACEP Clinical Policy: suspected acute venous thromboembolic disease, 2018."
+  },
+  {
+    "id": "ck-006",
+    "step": "step2ck",
+    "vinheta": "A 52-year-old man is brought to the emergency department 30 minutes after he fainted at home. He returned from a 14-hour international flight 3 days ago and has had progressive shortness of breath since yesterday. He has no history of bleeding, stroke, recent surgery, or trauma. Pulse is 128/min, respirations are 30/min, and blood pressure is 78/48 mm Hg after a 500-mL bolus of 0.9% saline. Oxygen saturation is 86% on 6 L/min of oxygen by nasal cannula. Jugular venous pressure is elevated. CT pulmonary angiography shows bilateral emboli in the main pulmonary arteries, and bedside echocardiography shows a dilated, hypokinetic right ventricle. Hemoglobin is 15.1 g/dL, platelet count is 230,000/mm3, and INR is 1.0. An unfractionated heparin bolus and infusion are started.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Continuation of heparin infusion alone"
+      },
+      {
+        "letra": "B",
+        "texto": "Inferior vena cava filter placement"
+      },
+      {
+        "letra": "C",
+        "texto": "Oral apixaban therapy"
+      },
+      {
+        "letra": "D",
+        "texto": "Surgical pulmonary embolectomy"
+      },
+      {
+        "letra": "E",
+        "texto": "Systemic thrombolysis with alteplase"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Sustained hypotension (systolic pressure below 90 mm Hg) caused by pulmonary embolism defines high-risk (massive) pulmonary embolism, which carries high short-term mortality. In the absence of contraindications to fibrinolysis, systemic thrombolysis with alteplase rapidly reduces clot burden and right ventricular afterload, and it is recommended in addition to anticoagulation. Heparin alone prevents clot propagation but does not dissolve the obstructing thrombus fast enough to reverse shock. Surgical embolectomy or catheter-directed therapy is reserved for patients with contraindications to thrombolysis or in whom thrombolysis has failed. An inferior vena cava filter is indicated when anticoagulation is contraindicated and does nothing for clot already in the lungs. Oral apixaban is appropriate for hemodynamically stable patients.",
+    "explicacao_pt": "Embolia pulmonar com hipotensão sustentada é de alto risco (maciça). Sem contraindicação, faz-se trombólise sistêmica com alteplase junto com a heparina. Embolectomia cirúrgica ou por cateter fica para quem tem contraindicação à trombólise ou não respondeu a ela.",
+    "sistema": "medicina_interna",
+    "disciplina": "manejo",
+    "dificuldade": "dificil",
+    "tags": [
+      "tromboembolismo pulmonar macico",
+      "tromboliticos",
+      "choque obstrutivo"
+    ],
+    "fonte": "Stevens SM et al. Antithrombotic therapy for VTE disease: second update of the CHEST guideline. Chest 2021;160:e545-e608; Konstantinides SV et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism. Eur Heart J 2020;41:543-603."
+  },
+  {
+    "id": "ck-007",
+    "step": "step2ck",
+    "vinheta": "A 67-year-old man comes to the physician because of fatigue and shortness of breath on exertion for 3 months. He has no abdominal pain, change in bowel habits, melena, or hematochezia. He takes no medications and has never had a colonoscopy. His diet includes meat daily. Examination shows conjunctival pallor; rectal examination shows brown stool. Laboratory studies show hemoglobin 9.8 g/dL, mean corpuscular volume 72 μm3, red cell distribution width 18%, platelet count 420,000/mm3, and serum ferritin 8 ng/mL.",
+    "pergunta": "Which of the following is the most appropriate next step in evaluation?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Bone marrow aspiration"
+      },
+      {
+        "letra": "B",
+        "texto": "Colonoscopy and upper endoscopy"
+      },
+      {
+        "letra": "C",
+        "texto": "Hemoglobin electrophoresis"
+      },
+      {
+        "letra": "D",
+        "texto": "Serum vitamin B12 and folate levels"
+      },
+      {
+        "letra": "E",
+        "texto": "Trial of oral iron without further testing"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "Microcytic anemia with a ferritin below 15 ng/mL confirms iron deficiency. In a man or a postmenopausal woman, iron deficiency is presumed to result from occult gastrointestinal blood loss until proven otherwise, and colorectal and gastric cancers are the most important causes to exclude; the AGA recommends bidirectional endoscopy (colonoscopy plus upper endoscopy) in asymptomatic patients. Treating with iron alone could delay a cancer diagnosis. Bone marrow aspiration is unnecessary because ferritin already establishes the diagnosis. Hemoglobin electrophoresis evaluates thalassemia, in which ferritin is normal or high and the red cell distribution width is usually normal. Vitamin B12 and folate deficiencies cause macrocytosis.",
+    "explicacao_pt": "Ferritina abaixo de 15 ng/mL confirma ferropenia. Em homem adulto ou mulher na pós-menopausa, a causa presumida é perda oculta pelo trato digestivo, e por isso se indicam colonoscopia e endoscopia digestiva alta (EDA) antes de apenas repor ferro.",
+    "sistema": "medicina_interna",
+    "disciplina": "diagnostico",
+    "dificuldade": "facil",
+    "tags": [
+      "anemia ferropriva",
+      "sangramento oculto",
+      "endoscopia",
+      "gastroenterologia"
+    ],
+    "fonte": "Ko CW et al. AGA Clinical Practice Guidelines on the gastrointestinal evaluation of iron deficiency anemia. Gastroenterology 2020;159:1085-1094."
+  },
+  {
+    "id": "ck-008",
+    "step": "step2ck",
+    "vinheta": "A 52-year-old man comes to the emergency department because of swelling of his lips and tongue that began 4 hours ago. He has no itching, rash, wheezing, or abdominal pain. Lisinopril was started for hypertension 3 weeks ago. He has no personal or family history of similar episodes and no known allergies. Pulse is 84/min, respirations are 16/min, and blood pressure is 142/88 mm Hg. Oxygen saturation is 98% on room air. Examination shows nonpitting edema of the lips and tongue without urticaria; there is no stridor. Serum C4 concentration is within the reference range.",
+    "pergunta": "Which of the following best explains the pathogenesis of this patient's condition?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "C1 esterase inhibitor deficiency"
+      },
+      {
+        "letra": "B",
+        "texto": "IgE-mediated mast cell degranulation"
+      },
+      {
+        "letra": "C",
+        "texto": "Immune complex deposition in vessel walls"
+      },
+      {
+        "letra": "D",
+        "texto": "Impaired breakdown of bradykinin"
+      },
+      {
+        "letra": "E",
+        "texto": "T-lymphocyte-mediated delayed hypersensitivity"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Angiotensin-converting enzyme (kininase II) degrades bradykinin. ACE inhibitors raise bradykinin levels, which increases vascular permeability and causes angioedema without urticaria or pruritus. The risk is higher in Black patients, and the reaction can appear weeks to years after the drug is started. Because the process is not mediated by histamine, antihistamines, glucocorticoids, and epinephrine often work poorly; the drug must be stopped permanently and the airway monitored. Hereditary or acquired C1 esterase inhibitor deficiency also produces bradykinin-mediated angioedema, but it causes recurrent episodes and typically a low C4 level. IgE-mediated reactions cause urticaria, pruritus, and bronchospasm. Immune complex disease (serum sickness) presents with fever, rash, and arthralgia 1 to 2 weeks after exposure, and delayed T-cell hypersensitivity causes contact dermatitis.",
+    "explicacao_pt": "O IECA bloqueia a degradação da bradicinina, que aumenta a permeabilidade vascular e causa angioedema sem urticária nem prurido. Por não ser mediado por histamina, responde mal a anti-histamínico e corticoide; a conduta é suspender o IECA de forma definitiva e vigiar a via aérea.",
+    "sistema": "medicina_interna",
+    "disciplina": "mecanismo",
+    "dificuldade": "media",
+    "tags": [
+      "angioedema",
+      "IECA",
+      "bradicinina",
+      "farmacologia clinica"
+    ],
+    "fonte": "Jones DW et al. 2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults; Maurer M et al. The international WAO/EAACI guideline for the management of hereditary angioedema, 2021 revision. Allergy 2022;77:1961-1990."
+  },
+  {
+    "id": "ck-009",
+    "step": "step2ck",
+    "vinheta": "A 63-year-old woman with chronic obstructive pulmonary disease and type 2 diabetes mellitus comes to the clinic because of fever, productive cough, and right-sided pleuritic chest pain for 3 days. She has not received antibiotics or been hospitalized in the past year, and she has no history of infection with methicillin-resistant Staphylococcus aureus or Pseudomonas aeruginosa. Temperature is 38.4°C (101.1°F), pulse is 96/min, respirations are 20/min, and blood pressure is 132/80 mm Hg. Oxygen saturation is 94% on room air. She is alert and oriented. Crackles are heard at the right lung base. Serum urea nitrogen is 16 mg/dL. A chest x-ray shows right lower lobe consolidation. She can take oral medications and has reliable support at home.",
+    "pergunta": "Which of the following is the most appropriate pharmacotherapy?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Amoxicillin alone"
+      },
+      {
+        "letra": "B",
+        "texto": "Amoxicillin-clavulanate plus azithromycin"
+      },
+      {
+        "letra": "C",
+        "texto": "Azithromycin alone"
+      },
+      {
+        "letra": "D",
+        "texto": "Doxycycline alone"
+      },
+      {
+        "letra": "E",
+        "texto": "Intravenous vancomycin plus piperacillin-tazobactam"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "She has community-acquired pneumonia suitable for outpatient care (CURB-65 score of 0) and comorbidities (COPD and diabetes). ATS/IDSA guidelines recommend combination therapy with amoxicillin-clavulanate or a cephalosporin plus a macrolide or doxycycline, or monotherapy with a respiratory fluoroquinolone, to cover Streptococcus pneumoniae (including resistant strains), Haemophilus influenzae, Moraxella catarrhalis, and atypical organisms. Amoxicillin alone or doxycycline alone is recommended for healthy adults without comorbidities. Macrolide monotherapy is advised only for healthy adults where pneumococcal macrolide resistance is below 25%. Vancomycin plus piperacillin-tazobactam is reserved for hospitalized patients with risk factors for MRSA and Pseudomonas.",
+    "explicacao_pt": "Pneumonia comunitária de tratamento ambulatorial (CURB-65 igual a 0) em paciente com DPOC e diabetes pede amoxicilina-clavulanato associada a macrolídeo, ou quinolona respiratória isolada. Amoxicilina ou doxiciclina isoladas ficam para adultos sem comorbidades.",
+    "sistema": "medicina_interna",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "pneumonia comunitaria",
+      "antibioticoterapia",
+      "infectologia",
+      "CURB-65"
+    ],
+    "fonte": "Metlay JP et al. Diagnosis and treatment of adults with community-acquired pneumonia: an official clinical practice guideline of the ATS and IDSA. Am J Respir Crit Care Med 2019;200:e45-e67."
+  },
+  {
+    "id": "ck-010",
+    "step": "step2ck",
+    "vinheta": "A 64-year-old man is brought to the physician by his wife because of increasing confusion, thirst, and constipation for 2 weeks. He has smoked 1 pack of cigarettes daily for 50 years and has lost 6 kg (13 lb) over 3 months. He takes no medications or supplements. He is oriented to person only, and his mucous membranes are dry. Laboratory studies show calcium 13.6 mg/dL, albumin 4.0 g/dL, phosphorus 2.2 mg/dL, alkaline phosphatase 92 U/L, creatinine 1.5 mg/dL, intact PTH 6 pg/mL (reference 10 to 65), 25-hydroxyvitamin D 32 ng/mL, and 1,25-dihydroxyvitamin D 18 pg/mL (reference 18 to 72). A chest x-ray shows a 4-cm mass adjacent to the right hilum. A bone scan shows no abnormalities.",
+    "pergunta": "Which of the following is the most likely mechanism of this patient's hypercalcemia?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Autonomous secretion of parathyroid hormone"
+      },
+      {
+        "letra": "B",
+        "texto": "Excess intake of vitamin D"
+      },
+      {
+        "letra": "C",
+        "texto": "Extrarenal 1-alpha-hydroxylase activity"
+      },
+      {
+        "letra": "D",
+        "texto": "Osteolysis by skeletal metastases"
+      },
+      {
+        "letra": "E",
+        "texto": "Tumor secretion of PTH-related protein"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Severe hypercalcemia with suppressed PTH indicates a PTH-independent cause. In a heavy smoker with a central lung mass, the leading cause is humoral hypercalcemia of malignancy from squamous cell carcinoma that secretes PTH-related protein (PTHrP). PTHrP binds the PTH1 receptor, increasing osteoclastic bone resorption and renal calcium reabsorption and causing phosphaturia, which explains the low phosphorus. PTHrP stimulates renal 1-alpha-hydroxylase less than PTH does, so calcitriol is low to low-normal. Primary hyperparathyroidism would show an elevated or inappropriately normal PTH. Extrarenal 1-alpha-hydroxylase activity (lymphoma, sarcoidosis) raises 1,25-dihydroxyvitamin D. Vitamin D intoxication raises 25-hydroxyvitamin D. Osteolytic metastases are unlikely with a normal bone scan and do not cause phosphaturia.",
+    "explicacao_pt": "Hipercalcemia grave com PTH suprimido e fósforo baixo, em tabagista com massa pulmonar central, sugere hipercalcemia humoral da malignidade por PTHrP, típica do carcinoma epidermoide. O exame confirmatório é a dosagem de PTHrP. Calcitriol elevado apontaria para linfoma ou doença granulomatosa.",
+    "sistema": "medicina_interna",
+    "disciplina": "mecanismo",
+    "dificuldade": "dificil",
+    "tags": [
+      "hipercalcemia da malignidade",
+      "PTHrP",
+      "carcinoma epidermoide",
+      "oncologia"
+    ],
+    "fonte": "El-Hajj Fuleihan G et al. Treatment of hypercalcemia of malignancy in adults: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab 2023;108:507-528; Stewart AF. Hypercalcemia associated with cancer. N Engl J Med 2005;352:373-379."
+  },
+  {
+    "id": "ck-011",
+    "step": "step2ck",
+    "vinheta": "A 58-year-old woman comes for a health maintenance examination. She smoked 1 pack of cigarettes daily from age 25 to 50 years and quit 8 years ago. She has no cough, hemoptysis, or weight loss. Her hypertension is controlled with lisinopril. Examination shows no abnormalities. She asks whether she should be screened for lung cancer.",
+    "pergunta": "Which of the following is the most appropriate recommendation regarding lung cancer screening?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Annual chest radiography"
+      },
+      {
+        "letra": "B",
+        "texto": "Annual low-dose CT of the chest"
+      },
+      {
+        "letra": "C",
+        "texto": "Annual sputum cytology"
+      },
+      {
+        "letra": "D",
+        "texto": "No screening at this time"
+      },
+      {
+        "letra": "E",
+        "texto": "Single low-dose CT of the chest at age 65 years"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "The USPSTF (2021) recommends annual low-dose CT for adults aged 50 to 80 years with a smoking history of at least 20 pack-years who currently smoke or quit within the past 15 years. She has 25 pack-years and quit 8 years ago, so she qualifies. Screening stops once a person has not smoked for 15 years or develops a condition that substantially limits life expectancy or the ability or willingness to undergo curative lung surgery. Chest radiography and sputum cytology did not reduce lung cancer mortality in randomized trials. A single CT is not the recommended strategy; the mortality benefit in the NLST and NELSON trials came from repeated screening rounds. Withholding screening would be correct only if she had quit 15 or more years ago or had fewer than 20 pack-years.",
+    "explicacao_pt": "A USPSTF recomenda TC de baixa dose anual dos 50 aos 80 anos para quem tem 20 maços-ano ou mais e ainda fuma ou parou há menos de 15 anos. Radiografia de tórax e citologia de escarro não reduzem a mortalidade por câncer de pulmão.",
+    "sistema": "medicina_interna",
+    "disciplina": "prevencao",
+    "dificuldade": "media",
+    "tags": [
+      "rastreamento",
+      "cancer de pulmao",
+      "USPSTF",
+      "tomografia de baixa dose"
+    ],
+    "fonte": "US Preventive Services Task Force. Screening for lung cancer: US Preventive Services Task Force recommendation statement. JAMA 2021;325:962-970."
+  },
+  {
+    "id": "ck-012",
+    "step": "step2ck",
+    "vinheta": "A 7-year-old boy is brought to the emergency department 40 minutes after being struck by a car. He is pale and lethargic. Pulse is 156/min, respirations are 30/min, and blood pressure is 68/40 mm Hg. The abdomen is distended and tender in the left upper quadrant. Two boluses of crystalloid have been given without improvement. Hemoglobin is 6.1 g/dL. FAST examination shows free intraperitoneal fluid, and the surgical team is preparing for laparotomy. His parents are Jehovah's Witnesses and refuse any blood transfusion for him. The attending physician judges that he will likely die without transfusion.",
+    "pergunta": "Which of the following is the most appropriate next step?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Administer packed red blood cells without delay"
+      },
+      {
+        "letra": "B",
+        "texto": "Obtain a court order before any transfusion"
+      },
+      {
+        "letra": "C",
+        "texto": "Request an ethics committee consultation before transfusion"
+      },
+      {
+        "letra": "D",
+        "texto": "Respect the parents' refusal and continue crystalloid infusion"
+      },
+      {
+        "letra": "E",
+        "texto": "Transfer the patient to a bloodless medicine center"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Adults may refuse treatment for themselves on religious grounds, but parents cannot refuse life-saving treatment for a minor. When a child faces imminent risk of death or serious harm, physicians should provide emergency treatment, including transfusion, even over parental objection, because the child's best interest prevails. A court order is appropriate when treatment can wait (for example, an anticipated transfusion during chemotherapy), but seeking one now would delay care needed within minutes. An ethics consultation is useful for nonurgent conflicts and can be requested afterward. Continuing crystalloid alone or transferring an unstable child would likely result in death.",
+    "explicacao_pt": "Os pais podem recusar transfusão para si, não para o filho em risco iminente de morte. Na emergência, transfunde-se sem esperar ordem judicial ou comitê de ética, que ficam para situações em que há tempo. A decisão se apoia no melhor interesse da criança.",
+    "sistema": "pediatria",
+    "disciplina": "etica",
+    "dificuldade": "media",
+    "tags": [
+      "etica",
+      "transfusao",
+      "menor de idade",
+      "testemunha de Jeova",
+      "trauma"
+    ],
+    "fonte": "AAP Committee on Bioethics. Conflicts between religious or spiritual beliefs and pediatric care: informed refusal, exemptions, and public funding. Pediatrics 2013;132:962-965; AMA Code of Medical Ethics, Opinion 2.2.1 (Pediatric decision making)."
+  },
+  {
+    "id": "ck-013",
+    "step": "step2ck",
+    "vinheta": "A 31-year-old man is brought to the emergency department after a motorcycle collision. He is agitated and in severe respiratory distress but is able to speak in short phrases. There is no external hemorrhage. Pulse is 134/min, respirations are 36/min, and blood pressure is 76/40 mm Hg. Oxygen saturation is 82% on 15 L/min of oxygen by nonrebreather mask. The trachea is deviated to the left. Breath sounds are absent over the right hemithorax, which is hyperresonant to percussion. The jugular veins are distended. Heart sounds are clearly audible.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Chest radiography"
+      },
+      {
+        "letra": "B",
+        "texto": "Endotracheal intubation"
+      },
+      {
+        "letra": "C",
+        "texto": "Focused assessment with sonography for trauma"
+      },
+      {
+        "letra": "D",
+        "texto": "Needle decompression of the right hemithorax"
+      },
+      {
+        "letra": "E",
+        "texto": "Pericardiocentesis"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Hypotension, distended neck veins, tracheal deviation away from the affected side, and absent breath sounds with hyperresonance define tension pneumothorax. It is a clinical diagnosis that requires immediate decompression (needle decompression or finger thoracostomy) followed by tube thoracostomy. Waiting for a chest x-ray delays treatment of a reversible cause of obstructive shock. Intubation with positive-pressure ventilation before decompression enlarges the pneumothorax and can precipitate cardiac arrest. Pericardiocentesis treats cardiac tamponade, which also causes hypotension and jugular venous distention but with muffled heart sounds, a midline trachea, and bilateral breath sounds. FAST is part of the primary survey adjuncts but does not treat the problem.",
+    "explicacao_pt": "Pneumotórax hipertensivo é diagnóstico clínico: hipotensão, turgência jugular, desvio de traqueia e murmúrio abolido com hipertimpanismo. O tratamento é descompressão imediata (punção com agulha ou toracostomia digital), seguida de drenagem torácica, sem esperar radiografia.",
+    "sistema": "cirurgia",
+    "disciplina": "manejo",
+    "dificuldade": "facil",
+    "tags": [
+      "trauma",
+      "pneumotorax hipertensivo",
+      "ATLS",
+      "choque obstrutivo"
+    ],
+    "fonte": "American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. Chicago: ACS; 2018."
+  },
+  {
+    "id": "ck-014",
+    "step": "step2ck",
+    "vinheta": "A 42-year-old woman is brought to the emergency department 30 minutes after a high-speed motor vehicle collision in which she was the restrained driver. Pulse is 128/min, respirations are 24/min, and blood pressure is 82/50 mm Hg. The airway is patent, and breath sounds are equal bilaterally. There is ecchymosis across the lower abdomen in the distribution of the seat belt, and the abdomen is diffusely tender. After 1 L of crystalloid and 2 units of packed red blood cells, blood pressure is 84/52 mm Hg. FAST examination shows free fluid in the hepatorenal space. Chest and pelvic x-rays show no abnormalities.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "CT of the abdomen and pelvis with contrast"
+      },
+      {
+        "letra": "B",
+        "texto": "Diagnostic peritoneal lavage"
+      },
+      {
+        "letra": "C",
+        "texto": "Exploratory laparotomy"
+      },
+      {
+        "letra": "D",
+        "texto": "Repeat FAST examination in 30 minutes"
+      },
+      {
+        "letra": "E",
+        "texto": "Serial abdominal examinations in the ICU"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "A hemodynamically unstable trauma patient who does not respond to initial resuscitation and has intraperitoneal fluid on FAST has ongoing intra-abdominal hemorrhage and needs immediate exploratory laparotomy. CT is reserved for hemodynamically stable patients, because transport to the scanner delays hemorrhage control. Diagnostic peritoneal lavage is used when FAST is unavailable or equivocal; here FAST is already positive. Repeating FAST or observing with serial examinations is appropriate only for stable patients.",
+    "explicacao_pt": "Trauma abdominal fechado com instabilidade hemodinâmica que não responde à reposição e FAST positivo indica laparotomia exploradora imediata. A TC fica para o paciente estável.",
+    "sistema": "cirurgia",
+    "disciplina": "manejo",
+    "dificuldade": "facil",
+    "tags": [
+      "trauma abdominal fechado",
+      "FAST",
+      "laparotomia",
+      "ATLS"
+    ],
+    "fonte": "American College of Surgeons Committee on Trauma. Advanced Trauma Life Support (ATLS) Student Course Manual, 10th ed. Chicago: ACS; 2018."
+  },
+  {
+    "id": "ck-015",
+    "step": "step2ck",
+    "vinheta": "A 74-year-old woman is brought to the emergency department because of sudden onset of severe periumbilical abdominal pain 4 hours ago. She has vomited twice. She has atrial fibrillation and stopped taking apixaban 2 weeks ago because of cost. Temperature is 37.4°C (99.3°F), pulse is 112/min and irregularly irregular, and blood pressure is 138/84 mm Hg. She is writhing in pain, but the abdomen is soft and only mildly tender, without guarding or rebound. Leukocyte count is 17,800/mm3, serum lactate is 4.1 mmol/L, and creatinine is 0.9 mg/dL.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Abdominal radiography in supine and upright positions"
+      },
+      {
+        "letra": "B",
+        "texto": "Colonoscopy with mucosal biopsy"
+      },
+      {
+        "letra": "C",
+        "texto": "CT angiography of the abdomen and pelvis"
+      },
+      {
+        "letra": "D",
+        "texto": "Duplex ultrasonography of the mesenteric arteries"
+      },
+      {
+        "letra": "E",
+        "texto": "Upper gastrointestinal endoscopy"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Sudden severe abdominal pain out of proportion to the examination in a patient with atrial fibrillation who stopped anticoagulation suggests acute mesenteric ischemia from embolic occlusion of the superior mesenteric artery. Multidetector CT angiography is the initial study of choice: it is fast, widely available, and shows the arterial occlusion, bowel wall changes, and alternative diagnoses. Abdominal radiography is often normal early and shows only late findings such as pneumatosis. Duplex ultrasonography is limited by bowel gas and operator dependence and is more useful in chronic mesenteric ischemia. Colonoscopy may show ischemic colitis but does not evaluate the superior mesenteric artery and risks perforation, and upper endoscopy has no role.",
+    "explicacao_pt": "Dor abdominal intensa e desproporcional ao exame físico, em paciente com fibrilação atrial sem anticoagulação, sugere isquemia mesentérica aguda embólica. O exame inicial é a angiotomografia de abdome e pelve. Cada hora de atraso aumenta a chance de necrose intestinal.",
+    "sistema": "cirurgia",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "isquemia mesenterica aguda",
+      "fibrilacao atrial",
+      "angiotomografia",
+      "abdome agudo"
+    ],
+    "fonte": "Björck M et al. Management of the diseases of mesenteric arteries and veins: ESVS 2017 Clinical Practice Guidelines. Eur J Vasc Endovasc Surg 2017;53:460-510; ACR Appropriateness Criteria: Imaging of Mesenteric Ischemia, 2018."
+  },
+  {
+    "id": "ck-016",
+    "step": "step2ck",
+    "vinheta": "A 71-year-old man is brought to the emergency department because of fever, chills, and right upper quadrant abdominal pain for 2 days. His wife noticed yellowing of his eyes yesterday. Temperature is 39.2°C (102.6°F), pulse is 112/min, and blood pressure is 96/58 mm Hg; after 2 L of intravenous crystalloid, blood pressure is 112/68 mm Hg. He is alert and oriented. Examination shows scleral icterus and right upper quadrant tenderness without peritoneal signs. Laboratory studies show leukocyte count 18,400/mm3, total bilirubin 5.8 mg/dL, direct bilirubin 4.6 mg/dL, alkaline phosphatase 420 U/L, AST 180 U/L, ALT 210 U/L, lipase 40 U/L, creatinine 1.1 mg/dL, and INR 1.1. Ultrasonography shows gallstones, a common bile duct diameter of 11 mm, and no gallbladder wall thickening or pericholecystic fluid. Blood cultures are obtained, and intravenous piperacillin-tazobactam is started.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Endoscopic retrograde cholangiopancreatography"
+      },
+      {
+        "letra": "B",
+        "texto": "Hepatobiliary iminodiacetic acid scan"
+      },
+      {
+        "letra": "C",
+        "texto": "Immediate laparoscopic cholecystectomy with cholangiography"
+      },
+      {
+        "letra": "D",
+        "texto": "Magnetic resonance cholangiopancreatography"
+      },
+      {
+        "letra": "E",
+        "texto": "Percutaneous cholecystostomy"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "Fever, jaundice, and right upper quadrant pain (Charcot triad) with cholestatic liver tests and a dilated common bile duct establish acute cholangitis from choledocholithiasis; by Tokyo 2018 criteria it is moderate (grade II), because of leukocytosis above 12,000/mm3, fever of at least 39°C, and bilirubin of at least 5 mg/dL. After resuscitation and antibiotics, the definitive treatment is early biliary drainage, preferably by ERCP with sphincterotomy and stone extraction. MRCP is useful when the probability of a duct stone is intermediate; here the diagnosis is established, and MRCP would only delay drainage. Cholecystectomy, even with intraoperative cholangiography, is done after the duct is cleared, during the same admission; performed now in a septic patient it delays decompression of the obstructed common bile duct. A HIDA scan evaluates acute cholecystitis, and percutaneous cholecystostomy drains the gallbladder, not the common bile duct; percutaneous transhepatic biliary drainage is the alternative when ERCP fails.",
+    "explicacao_pt": "Febre, icterícia e dor no hipocôndrio direito (tríade de Charcot) com colédoco dilatado configuram colangite aguda. Depois de hidratação e antibiótico, o tratamento é drenar a via biliar, de preferência por CPRE. A colecistectomia vem depois, na mesma internação.",
+    "sistema": "cirurgia",
+    "disciplina": "manejo",
+    "dificuldade": "dificil",
+    "tags": [
+      "colangite aguda",
+      "coledocolitiase",
+      "CPRE",
+      "Tokyo Guidelines"
+    ],
+    "fonte": "Kiriyama S et al. Tokyo Guidelines 2018: diagnostic criteria and severity grading of acute cholangitis. J Hepatobiliary Pancreat Sci 2018;25:17-30; Miura F et al. Tokyo Guidelines 2018: flowchart for the management of acute cholecystitis and cholangitis. J Hepatobiliary Pancreat Sci 2018;25:31-40; Buxbaum JL et al. ASGE guideline on the management of choledocholithiasis. Gastrointest Endosc 2019;89:1075-1105."
+  },
+  {
+    "id": "ck-017",
+    "step": "step2ck",
+    "vinheta": "A 15-day-old girl is brought to the emergency department because of a rectal temperature of 38.3°C (100.9°F) measured at home 1 hour ago. She was born at 39 weeks' gestation after an uncomplicated pregnancy and vaginal delivery; maternal group B streptococcal screening was negative. She has been breastfeeding well and has normal wet diapers. She has received no medications. Temperature is 38.2°C (100.8°F), pulse is 164/min, and respirations are 44/min. She is alert, well-appearing, and consolable, with a soft anterior fontanelle and no rash. The remainder of the examination shows no abnormalities.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Discharge home with follow-up in 24 hours and no testing"
+      },
+      {
+        "letra": "B",
+        "texto": "Give oral amoxicillin and arrange follow-up in 24 hours"
+      },
+      {
+        "letra": "C",
+        "texto": "Obtain blood and urine studies, and admit for observation without antibiotics"
+      },
+      {
+        "letra": "D",
+        "texto": "Obtain blood, urine, and CSF studies, start antibiotics, and admit"
+      },
+      {
+        "letra": "E",
+        "texto": "Obtain urinalysis only and discharge if it is normal"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "For well-appearing febrile infants aged 8 to 21 days, the AAP guideline recommends urinalysis, blood culture, and cerebrospinal fluid analysis and culture, followed by parenteral antibiotics and monitoring in the hospital, regardless of inflammatory marker results. In this age group, bacteremia and meningitis cannot be reliably excluded by appearance or by limited testing, and the most common pathogens are Escherichia coli and group B Streptococcus. Admission without antibiotics or omission of the lumbar puncture is an option only for selected infants aged 22 to 60 days with normal inflammatory markers. Oral antibiotics do not adequately treat bacteremia or meningitis in a neonate, and discharge without testing or after a urinalysis alone is unsafe at this age.",
+    "explicacao_pt": "Lactente de 8 a 21 dias com febre, mesmo em bom estado geral, precisa de exame de urina, hemocultura e líquor, antibiótico parenteral e internação, segundo a AAP (2021). A conduta mais flexível, guiada por marcadores inflamatórios, só vale de 22 a 60 dias.",
+    "sistema": "pediatria",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "lactente febril",
+      "neonatologia",
+      "AAP 2021",
+      "infeccao bacteriana invasiva"
+    ],
+    "fonte": "Pantell RH et al. Evaluation and management of well-appearing febrile infants 8 to 60 days old. AAP Clinical Practice Guideline. Pediatrics 2021;148:e2021052228."
+  },
+  {
+    "id": "ck-018",
+    "step": "step2ck",
+    "vinheta": "A 14-month-old boy is brought to the emergency department because of episodes of inconsolable crying for 8 hours. During each episode, which lasts several minutes and recurs every 15 to 20 minutes, he draws his legs up to his abdomen; between episodes he is lethargic. He has vomited three times, and his last diaper contained stool mixed with blood and mucus. He had a viral upper respiratory infection last week. Temperature is 37.6°C (99.7°F), pulse is 138/min, and blood pressure is 92/58 mm Hg. Examination shows a sausage-shaped mass in the right upper quadrant. There are no peritoneal signs.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Barium upper gastrointestinal series"
+      },
+      {
+        "letra": "B",
+        "texto": "CT of the abdomen with contrast"
+      },
+      {
+        "letra": "C",
+        "texto": "Stool culture"
+      },
+      {
+        "letra": "D",
+        "texto": "Technetium-99m pertechnetate scan"
+      },
+      {
+        "letra": "E",
+        "texto": "Ultrasonography of the abdomen"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Intermittent colicky pain with drawing up of the legs, lethargy between episodes, vomiting, \"currant jelly\" stool, and a sausage-shaped mass in a child aged 6 months to 3 years are classic for ileocolic intussusception, often after a viral illness that causes hypertrophy of Peyer patches, which act as a lead point. Ultrasonography is the diagnostic test of choice (target or \"doughnut\" sign), with very high sensitivity and specificity in experienced hands and no radiation. If it is confirmed and there are no signs of perforation or peritonitis, an air or hydrostatic enema is both diagnostic and therapeutic. CT adds radiation and possibly sedation without benefit. An upper GI series evaluates malrotation with volvulus, which presents with bilious vomiting. A technetium scan detects ectopic gastric mucosa in a Meckel diverticulum, which causes painless rectal bleeding. Stool culture does not explain the mass.",
+    "explicacao_pt": "Dor em cólica intermitente, letargia entre as crises, fezes em geleia de framboesa e massa em salsicha sugerem invaginação intestinal. O exame de escolha é a ultrassonografia (sinal do alvo); sem peritonite, o enema com ar ou contraste diagnostica e trata.",
+    "sistema": "pediatria",
+    "disciplina": "diagnostico",
+    "dificuldade": "facil",
+    "tags": [
+      "invaginacao intestinal",
+      "ultrassonografia",
+      "abdome agudo pediatrico"
+    ],
+    "fonte": "Kliegman RM et al. Nelson Textbook of Pediatrics, 22nd ed. Philadelphia: Elsevier; 2024 (Intussusception); Applegate KE. Intussusception in children: evidence-based diagnosis and treatment. Pediatr Radiol 2009;39(Suppl 2):S140-S143."
+  },
+  {
+    "id": "ck-019",
+    "step": "step2ck",
+    "vinheta": "A 3-year-old boy is brought to the physician because of fever up to 39.8°C (103.6°F) for 6 days that has not responded to acetaminophen. Examination shows bilateral bulbar conjunctival injection without exudate, red cracked lips, a strawberry tongue, a polymorphous erythematous rash on the trunk, and edema of the hands and feet. A single 2-cm nontender left cervical lymph node is palpable. Laboratory studies show leukocyte count 15,600/mm3, platelet count 480,000/mm3, ALT 78 U/L, albumin 3.0 g/dL, and C-reactive protein 9.2 mg/dL. A rapid streptococcal antigen test is negative. Echocardiography shows no coronary artery abnormalities.",
+    "pergunta": "Which of the following is the most appropriate pharmacotherapy?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Infliximab"
+      },
+      {
+        "letra": "B",
+        "texto": "Intravenous ceftriaxone"
+      },
+      {
+        "letra": "C",
+        "texto": "Intravenous immune globulin and aspirin"
+      },
+      {
+        "letra": "D",
+        "texto": "Oral penicillin V"
+      },
+      {
+        "letra": "E",
+        "texto": "Oral prednisone followed by oral aspirin"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Fever for at least 5 days with at least four of five principal features establishes Kawasaki disease; this child has all five (bilateral conjunctival injection, oral changes, polymorphous rash, extremity edema, and a cervical node of at least 1.5 cm). Kawasaki disease is a medium-vessel vasculitis. A single infusion of intravenous immune globulin (2 g/kg), ideally within the first 10 days of illness, together with aspirin reduces the incidence of coronary artery aneurysms from about 25% to about 4%, even when the initial echocardiogram is normal. Infliximab and glucocorticoids are reserved for IVIG-resistant disease or as adjuncts in high-risk patients, not as first-line monotherapy. Penicillin and ceftriaxone treat streptococcal infection, which is not supported by the negative antigen test, the bilateral nonexudative conjunctivitis, and the edema of the extremities.",
+    "explicacao_pt": "Febre por 5 dias ou mais com pelo menos quatro dos cinco critérios principais confirma doença de Kawasaki; esta criança tem os cinco. O tratamento é imunoglobulina IV 2 g/kg com AAS, de preferência nos primeiros 10 dias, mesmo com ecocardiograma normal, para prevenir aneurisma coronariano.",
+    "sistema": "pediatria",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "doenca de Kawasaki",
+      "imunoglobulina",
+      "vasculite",
+      "aneurisma coronariano"
+    ],
+    "fonte": "McCrindle BW et al. Diagnosis, treatment, and long-term management of Kawasaki disease: a scientific statement from the American Heart Association. Circulation 2017;135:e927-e999."
+  },
+  {
+    "id": "ck-020",
+    "step": "step2ck",
+    "vinheta": "A male newborn is examined in the hospital nursery on day 1 of life. He was born at 39 weeks' gestation in mid-November in the United States, weighs 3.4 kg (7.5 lb), and has had an uncomplicated course. His mother is healthy; she declined the respiratory syncytial virus (RSV) vaccine during pregnancy. The parents ask how to protect him during the RSV season that is beginning. Examination shows no abnormalities.",
+    "pergunta": "Which of the following is the most appropriate recommendation to prevent severe RSV disease in this infant?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Monthly palivizumab injections throughout the entire RSV season"
+      },
+      {
+        "letra": "B",
+        "texto": "No intervention other than hand hygiene"
+      },
+      {
+        "letra": "C",
+        "texto": "Oral ribavirin prophylaxis during the season"
+      },
+      {
+        "letra": "D",
+        "texto": "RSV prefusion F protein vaccine given to the infant"
+      },
+      {
+        "letra": "E",
+        "texto": "Single intramuscular dose of nirsevimab before discharge"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "CDC and AAP recommend a long-acting RSV monoclonal antibody for all infants younger than 8 months who are born during or entering their first RSV season, unless the mother received the RSV vaccine at least 14 days before delivery. Nirsevimab (or clesrovimab, approved in 2025) is given as a single intramuscular dose, ideally before discharge from the birth hospital, and provides passive protection for about 5 months. Palivizumab requires monthly injections and is reserved for specific high-risk infants only when a long-acting antibody is unavailable. The RSV prefusion F vaccine is licensed for pregnant people and older adults, not for infants. Ribavirin has no role in prophylaxis, and hand hygiene alone does not provide the protection documented in trials.",
+    "explicacao_pt": "Bebê nascido na sazonalidade do VSR (vírus sincicial respiratório), cuja mãe não se vacinou pelo menos 14 dias antes do parto, deve receber dose única de nirsevimabe (ou clesrovimabe), de preferência antes da alta. O palivizumabe mensal fica para alto risco quando não houver anticorpo de longa ação.",
+    "sistema": "pediatria",
+    "disciplina": "prevencao",
+    "dificuldade": "media",
+    "tags": [
+      "virus sincicial respiratorio",
+      "nirsevimabe",
+      "imunizacao",
+      "neonatologia"
+    ],
+    "fonte": "Jones JM et al. Use of nirsevimab for the prevention of respiratory syncytial virus disease among infants and young children: recommendations of the ACIP, United States, 2023. MMWR 2023;72:920-925; AAP. Recommendations for the prevention of RSV disease in infants and children, 2025-2026 season."
+  },
+  {
+    "id": "ck-021",
+    "step": "step2ck",
+    "vinheta": "A 4-month-old girl is brought to the emergency department because of vomiting and decreased responsiveness since this morning. Her mother says the infant rolled off a sofa onto a carpeted floor yesterday. She was born at term and has had normal growth. Temperature is 37.0°C (98.6°F), pulse is 162/min, respirations are 38/min, and blood pressure is 88/52 mm Hg. She is irritable and difficult to console, and the anterior fontanelle is bulging. There are two oval 1-cm bruises on the left chest wall. The sclerae are white. Funduscopic examination shows bilateral multilayered retinal hemorrhages extending to the periphery. CT of the head shows bilateral subdural hematomas of differing densities. Complete blood count, PT, aPTT, and fibrinogen concentration are within the reference ranges.",
+    "pergunta": "Which of the following is the most appropriate next step in evaluation?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Genetic testing for osteogenesis imperfecta"
+      },
+      {
+        "letra": "B",
+        "texto": "Lumbar puncture"
+      },
+      {
+        "letra": "C",
+        "texto": "Serum copper and ceruloplasmin concentrations"
+      },
+      {
+        "letra": "D",
+        "texto": "Skeletal survey"
+      },
+      {
+        "letra": "E",
+        "texto": "Urine organic acid analysis"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "A short fall from a sofa does not explain bilateral subdural hematomas of mixed density, extensive multilayered retinal hemorrhages, and bruising in an infant who is not yet mobile. These findings are highly suggestive of abusive head trauma. The AAP recommends a skeletal survey in all children younger than 2 years with suspected physical abuse to detect occult fractures (classic metaphyseal lesions, posterior rib fractures), with a follow-up survey about 2 weeks later; the case must also be reported to child protective services. Lumbar puncture is contraindicated with a bulging fontanelle and intracranial mass lesions and adds no useful information. Glutaric aciduria type 1 (urine organic acids) and Menkes disease (copper and ceruloplasmin) can cause subdural collections, but they are rare and are tested for when suggestive features (macrocephaly, developmental regression, abnormal hair) are present. Osteogenesis imperfecta is suggested by blue sclerae, dentinogenesis imperfecta, or family history, none of which is present, and it does not cause retinal hemorrhages.",
+    "explicacao_pt": "Hematomas subdurais bilaterais de densidade mista, hemorragias retinianas extensas e equimoses em lactente que ainda não se locomove sugerem traumatismo craniano abusivo. Em menores de 2 anos com suspeita de maus-tratos, a AAP indica inventário esquelético (radiografias de todo o esqueleto), além da notificação obrigatória, que nos EUA vai para o child protective services e no Brasil para o Conselho Tutelar.",
+    "sistema": "pediatria",
+    "disciplina": "diagnostico",
+    "dificuldade": "dificil",
+    "tags": [
+      "maus-tratos infantis",
+      "traumatismo craniano abusivo",
+      "inventario esqueletico",
+      "hemorragia retiniana"
+    ],
+    "fonte": "Christian CW; AAP Committee on Child Abuse and Neglect. The evaluation of suspected child physical abuse. Pediatrics 2015;135:e1337-e1354; ACR Appropriateness Criteria: Suspected Physical Abuse, Child, 2016."
+  },
+  {
+    "id": "ck-022",
+    "step": "step2ck",
+    "vinheta": "A 2-year-old boy is brought to the emergency department because of a barking cough and hoarseness for 2 days and noisy breathing that began tonight. He has had rhinorrhea and a low-grade fever. Immunizations are up to date. Temperature is 38.1°C (100.6°F), pulse is 148/min, and respirations are 42/min. Oxygen saturation is 95% on room air. He is alert, sitting comfortably on his mother's lap, and not drooling. Inspiratory stridor is heard at rest, with moderate suprasternal and subcostal retractions.",
+    "pergunta": "Which of the following is the most appropriate management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Intravenous ceftriaxone and lateral neck radiography"
+      },
+      {
+        "letra": "B",
+        "texto": "Nebulized albuterol"
+      },
+      {
+        "letra": "C",
+        "texto": "Oral dexamethasone alone and discharge home"
+      },
+      {
+        "letra": "D",
+        "texto": "Oral dexamethasone and nebulized epinephrine"
+      },
+      {
+        "letra": "E",
+        "texto": "Urgent endotracheal intubation in the operating room"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Barking cough, hoarseness, and inspiratory stridor after a viral prodrome are typical of croup (laryngotracheobronchitis), usually caused by parainfluenza virus. Stridor at rest with retractions indicates moderate to severe croup, which is treated with a single dose of dexamethasone (0.15 to 0.6 mg/kg) plus nebulized epinephrine. Epinephrine reduces subglottic edema within minutes, and the child should be observed for 2 to 4 hours because its effect wears off. Dexamethasone alone with discharge is appropriate for mild croup without stridor at rest. Albuterol does not treat upper airway edema. A well-appearing, immunized child who is not drooling has no features of epiglottitis or bacterial tracheitis that would call for antibiotics, imaging, or airway management in the operating room.",
+    "explicacao_pt": "Crupe com estridor em repouso e tiragem é moderado a grave e pede dexametasona com epinefrina nebulizada, seguida de observação por 2 a 4 horas. Dexametasona isolada com alta serve para o crupe leve.",
+    "sistema": "pediatria",
+    "disciplina": "manejo",
+    "dificuldade": "facil",
+    "tags": [
+      "crupe",
+      "laringotraqueobronquite",
+      "dexametasona",
+      "epinefrina nebulizada"
+    ],
+    "fonte": "Bjornson CL, Johnson DW. Croup in children. CMAJ 2013;185:1317-1323; Kliegman RM et al. Nelson Textbook of Pediatrics, 22nd ed. Philadelphia: Elsevier; 2024 (Acute inflammatory upper airway obstruction)."
+  },
+  {
+    "id": "ck-023",
+    "step": "step2ck",
+    "vinheta": "A 31-year-old woman, gravida 1, para 0, at 35 0/7 weeks' gestation comes to the labor and delivery unit because of a persistent headache for 6 hours that has not improved with acetaminophen. Her pregnancy had been uncomplicated, and her blood pressure was 118/74 mm Hg at 32 weeks. Blood pressure is 168/112 mm Hg and, 15 minutes later, 170/110 mm Hg. Pulse is 88/min. There is 2+ pitting edema of the legs, and deep tendon reflexes are 3+. Laboratory studies show platelet count 142,000/mm3, AST 38 U/L, ALT 41 U/L, creatinine 0.8 mg/dL, and urine protein-to-creatinine ratio 0.6. The fetal heart rate tracing is category I, and the fetus is in cephalic presentation.",
+    "pergunta": "Which of the following is the most appropriate management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Betamethasone and delay of delivery for 48 hours"
+      },
+      {
+        "letra": "B",
+        "texto": "Expectant management with delivery at 37 weeks' gestation"
+      },
+      {
+        "letra": "C",
+        "texto": "Immediate cesarean delivery under general anesthesia"
+      },
+      {
+        "letra": "D",
+        "texto": "Magnesium sulfate, intravenous labetalol, and delivery"
+      },
+      {
+        "letra": "E",
+        "texto": "Oral labetalol and weekly outpatient monitoring"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Severe-range blood pressure (systolic at least 160 or diastolic at least 110 mm Hg, confirmed within 15 minutes) and a new persistent headache are severe features of preeclampsia. At 34 0/7 weeks or later, ACOG recommends delivery after maternal stabilization: magnesium sulfate for seizure prophylaxis and rapid-acting antihypertensive therapy (intravenous labetalol or hydralazine, or oral immediate-release nifedipine) within 30 to 60 minutes to prevent stroke. Induction of labor is reasonable with a reassuring tracing and cephalic presentation; cesarean delivery is reserved for obstetric indications, and general anesthesia is not required. Expectant management until 37 weeks applies only to preeclampsia without severe features. Antenatal corticosteroids with a 48-hour delay apply to stable patients with severe preeclampsia before 34 weeks. Outpatient oral therapy is unsafe when severe features are present.",
+    "explicacao_pt": "Pré-eclâmpsia com sinais de gravidade (PA sistólica de 160 mm Hg ou mais ou diastólica de 110 mm Hg ou mais, além de cefaleia persistente) a partir de 34 semanas exige sulfato de magnésio, anti-hipertensivo de ação rápida e resolução da gestação. A cesárea não é obrigatória; a indução do parto é aceitável com feto bem e apresentação cefálica.",
+    "sistema": "ginecologia_obstetricia",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "pre-eclampsia grave",
+      "sulfato de magnesio",
+      "hipertensao na gestacao",
+      "ACOG"
+    ],
+    "fonte": "ACOG Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135:e237-e260; ACOG Committee Opinion No. 767: Emergent therapy for acute-onset, severe hypertension during pregnancy and the postpartum period. Obstet Gynecol 2019;133:e174-e180."
+  },
+  {
+    "id": "ck-024",
+    "step": "step2ck",
+    "vinheta": "A 29-year-old woman, gravida 2, para 2, has heavy vaginal bleeding 20 minutes after vaginal delivery of a 4,250-g (9 lb 6 oz) boy. Labor lasted 19 hours and was augmented with oxytocin. The placenta was delivered spontaneously and appears intact. Estimated blood loss is 900 mL and continuing. Pulse is 116/min, and blood pressure is 102/64 mm Hg. The uterine fundus is soft and boggy and is palpable 2 cm above the umbilicus. Inspection shows no cervical or vaginal lacerations. The oxytocin infusion was stopped after delivery of the placenta. She has no history of hypertension or asthma.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Bimanual uterine massage with intravenous oxytocin"
+      },
+      {
+        "letra": "B",
+        "texto": "Emergency abdominal hysterectomy"
+      },
+      {
+        "letra": "C",
+        "texto": "Intrauterine balloon tamponade placement"
+      },
+      {
+        "letra": "D",
+        "texto": "Intravenous tranexamic acid alone"
+      },
+      {
+        "letra": "E",
+        "texto": "Uterine artery embolization by interventional radiology"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "A soft, boggy uterus after delivery of an intact placenta, with risk factors such as a macrosomic infant and a prolonged oxytocin-augmented labor, indicates uterine atony, the most common cause of postpartum hemorrhage. First-line treatment is bimanual uterine massage plus uterotonic drugs, starting with intravenous oxytocin. Tranexamic acid given within 3 hours of birth reduces death from bleeding (WOMAN trial), but it is an adjunct and does not correct atony on its own. If bleeding persists despite second-line uterotonics (methylergonovine, carboprost, misoprostol), the next steps are intrauterine balloon tamponade, then uterine artery embolization in a stable patient or surgical measures, with hysterectomy as the last resort.",
+    "explicacao_pt": "Útero amolecido após dequitação completa indica atonia uterina, principal causa de hemorragia pós-parto. O primeiro passo é massagem uterina bimanual com ocitocina IV; o ácido tranexâmico entra como adjuvante nas primeiras 3 horas. Balão, embolização e histerectomia ficam para falha do tratamento clínico.",
+    "sistema": "ginecologia_obstetricia",
+    "disciplina": "manejo",
+    "dificuldade": "facil",
+    "tags": [
+      "hemorragia pos-parto",
+      "atonia uterina",
+      "ocitocina"
+    ],
+    "fonte": "ACOG Practice Bulletin No. 183: Postpartum hemorrhage. Obstet Gynecol 2017;130:e168-e186; WOMAN Trial Collaborators. Lancet 2017;389:2105-2116."
+  },
+  {
+    "id": "ck-025",
+    "step": "step2ck",
+    "vinheta": "A 27-year-old woman, gravida 1, para 0, comes to the emergency department because of light vaginal spotting for 1 day. Her last menstrual period was 6 weeks ago. She has no abdominal pain or dizziness and no history of sexually transmitted infections or pelvic surgery. The pregnancy is desired. Pulse is 78/min, and blood pressure is 118/76 mm Hg. The abdomen is nontender. Pelvic examination shows a small amount of blood in the vaginal vault, a closed cervical os, and no adnexal tenderness or masses. Serum beta-hCG concentration is 1,150 mIU/mL. Transvaginal ultrasonography shows no intrauterine gestational sac, no adnexal mass, and no free fluid. Her blood type is O, Rh-positive.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Diagnostic laparoscopy"
+      },
+      {
+        "letra": "B",
+        "texto": "Dilation and curettage"
+      },
+      {
+        "letra": "C",
+        "texto": "Intramuscular methotrexate"
+      },
+      {
+        "letra": "D",
+        "texto": "Reassurance and repeat ultrasonography in 6 weeks"
+      },
+      {
+        "letra": "E",
+        "texto": "Repeat serum beta-hCG measurement in 48 hours"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "This hemodynamically stable patient has a pregnancy of unknown location: a positive hCG with neither an intrauterine nor an extrauterine pregnancy on transvaginal ultrasonography. Her hCG of 1,150 mIU/mL is below the discriminatory level at which a gestational sac should be seen (ACOG advises a conservative level as high as 3,500 mIU/mL), so an early viable intrauterine pregnancy is still possible. The next step is a repeat hCG in 48 hours, with repeat ultrasonography as indicated: at this initial level, a rise of at least about 49% is expected in a viable intrauterine pregnancy, while a plateau or slow rise suggests an ectopic or failed pregnancy. Methotrexate or uterine evacuation now could end a desired normal pregnancy. Laparoscopy is for unstable patients or a ruptured ectopic pregnancy. Waiting 6 weeks without hCG follow-up risks missing an ectopic pregnancy before rupture.",
+    "explicacao_pt": "Paciente estável, beta-hCG de 1.150 mUI/mL e ultrassom transvaginal sem gestação visível: é gestação de localização desconhecida, abaixo da zona discriminatória. O certo é repetir o beta-hCG em 48 horas antes de qualquer conduta que possa interromper uma gestação tópica desejada.",
+    "sistema": "ginecologia_obstetricia",
+    "disciplina": "diagnostico",
+    "dificuldade": "dificil",
+    "tags": [
+      "gestacao de localizacao desconhecida",
+      "gravidez ectopica",
+      "beta-hCG",
+      "zona discriminatoria"
+    ],
+    "fonte": "ACOG Practice Bulletin No. 193: Tubal ectopic pregnancy. Obstet Gynecol 2018;131:e91-e103."
+  },
+  {
+    "id": "ck-026",
+    "step": "step2ck",
+    "vinheta": "A 24-year-old woman, gravida 1, para 0, at 36 weeks' gestation comes for a routine prenatal visit. Her pregnancy has been uncomplicated. A urine culture obtained at the first prenatal visit showed no growth. She has no known drug allergies. Blood pressure is 114/72 mm Hg. Fundal height is 36 cm, and the fetal heart rate is 140/min.",
+    "pergunta": "Which of the following is the most appropriate next step to reduce the risk of early-onset neonatal group B streptococcal disease?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Intrapartum penicillin regardless of screening results"
+      },
+      {
+        "letra": "B",
+        "texto": "Midstream urine culture for group B Streptococcus now"
+      },
+      {
+        "letra": "C",
+        "texto": "No screening because she has no risk factors"
+      },
+      {
+        "letra": "D",
+        "texto": "Oral amoxicillin for 7 days now"
+      },
+      {
+        "letra": "E",
+        "texto": "Rectovaginal culture for group B Streptococcus now"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "ACOG recommends universal screening for group B Streptococcus by culture of a swab from the lower vagina and rectum between 36 0/7 and 37 6/7 weeks of gestation, with intrapartum antibiotic prophylaxis (penicillin) for patients who are colonized. Screening is universal and does not depend on risk factors. Intrapartum prophylaxis without screening is given when GBS bacteriuria has been found in the current pregnancy or a previous infant had GBS disease, or when status is unknown at labor and risk factors are present. Antepartum oral antibiotics do not eradicate colonization at delivery, and a urine culture misses most rectovaginal colonization.",
+    "explicacao_pt": "A ACOG recomenda rastreio universal do estreptococo do grupo B com cultura de swab vaginal e retal entre 36 0/7 e 37 6/7 semanas. Antibiótico oral antes do parto não elimina a colonização; a profilaxia nas colonizadas é feita com penicilina durante o trabalho de parto.",
+    "sistema": "ginecologia_obstetricia",
+    "disciplina": "prevencao",
+    "dificuldade": "facil",
+    "tags": [
+      "estreptococo do grupo B",
+      "pre-natal",
+      "profilaxia intraparto",
+      "ACOG"
+    ],
+    "fonte": "ACOG Committee Opinion No. 797: Prevention of group B streptococcal early-onset disease in newborns. Obstet Gynecol 2020;135:e51-e72."
+  },
+  {
+    "id": "ck-027",
+    "step": "step2ck",
+    "vinheta": "A 33-year-old woman, gravida 2, para 1, at 32 weeks' gestation comes to the physician because of intense itching for 2 weeks. The itching is worst on the palms and soles and at night. She has no rash, abdominal pain, nausea, or headache. Blood pressure is 118/74 mm Hg. Examination shows excoriations on the forearms and legs but no primary skin lesions; there is no jaundice. Laboratory studies show AST 92 U/L, ALT 118 U/L, total bilirubin 1.1 mg/dL, alkaline phosphatase 260 U/L, and platelet count 236,000/mm3. Urinalysis shows no protein.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Antinuclear antibody titer"
+      },
+      {
+        "letra": "B",
+        "texto": "Liver biopsy"
+      },
+      {
+        "letra": "C",
+        "texto": "Serum ceruloplasmin concentration"
+      },
+      {
+        "letra": "D",
+        "texto": "Skin biopsy with direct immunofluorescence"
+      },
+      {
+        "letra": "E",
+        "texto": "Total serum bile acid concentration"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "Generalized pruritus predominant on the palms and soles in the late second or third trimester, without primary skin lesions and with elevated aminotransferases, suggests intrahepatic cholestasis of pregnancy. The diagnosis is confirmed by an elevated total serum bile acid concentration (at least 10 μmol/L); levels of 100 μmol/L or higher are associated with a markedly higher risk of stillbirth and guide earlier delivery. Alkaline phosphatase normally rises in pregnancy because of placental production and is not diagnostic. Skin biopsy with direct immunofluorescence diagnoses pemphigoid gestationis, which presents with periumbilical urticarial plaques and blisters. Liver biopsy is unnecessary. Autoimmune hepatitis (antinuclear antibodies) and Wilson disease (ceruloplasmin) are unlikely and are not first-line tests in this setting.",
+    "explicacao_pt": "Prurido intenso em palmas e plantas no terceiro trimestre, sem lesão cutânea primária e com transaminases altas, sugere colestase intra-hepática da gestação. O diagnóstico se confirma com ácidos biliares séricos de 10 μmol/L ou mais; valores a partir de 100 μmol/L elevam o risco de óbito fetal e antecipam o parto.",
+    "sistema": "ginecologia_obstetricia",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "colestase intra-hepatica da gestacao",
+      "acidos biliares",
+      "prurido",
+      "SMFM"
+    ],
+    "fonte": "Society for Maternal-Fetal Medicine; Lee RH et al. SMFM Consult Series No. 53: Intrahepatic cholestasis of pregnancy. Am J Obstet Gynecol 2021;224:B2-B9."
+  },
+  {
+    "id": "ck-028",
+    "step": "step2ck",
+    "vinheta": "A 32-year-old man with schizophrenia is admitted to the psychiatric unit because of severe agitation. He receives intramuscular haloperidol several times over 2 days. On the third hospital day he becomes confused and diaphoretic. Temperature is 40.1°C (104.2°F), pulse is 124/min, and blood pressure is 168/98 mm Hg, falling to 132/80 mm Hg over the next hour. He has generalized \"lead-pipe\" rigidity. Deep tendon reflexes are 2+ and symmetric, and there is no clonus. Pupils are 4 mm and reactive, and bowel sounds are normal. Serum creatine kinase is 14,200 U/L, and leukocyte count is 15,200/mm3.",
+    "pergunta": "Which of the following is the most likely diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Anticholinergic toxicity"
+      },
+      {
+        "letra": "B",
+        "texto": "Malignant hyperthermia"
+      },
+      {
+        "letra": "C",
+        "texto": "Neuroleptic malignant syndrome"
+      },
+      {
+        "letra": "D",
+        "texto": "Serotonin syndrome"
+      },
+      {
+        "letra": "E",
+        "texto": "Thyroid storm"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Fever, altered mental status, generalized lead-pipe rigidity, autonomic instability, and a markedly elevated creatine kinase after exposure to a high-potency dopamine D2 antagonist are diagnostic of neuroleptic malignant syndrome, which usually evolves over days. Management includes stopping the antipsychotic, cooling, fluids, and, in severe cases, dantrolene or bromocriptine. Serotonin syndrome develops within hours of a serotonergic drug and features hyperreflexia, clonus, mydriasis, and diarrhea. Malignant hyperthermia occurs during or shortly after exposure to volatile anesthetics or succinylcholine. Anticholinergic toxicity causes hot, dry skin, mydriasis, decreased bowel sounds, and urinary retention without rigidity. Thyroid storm causes fever and tachycardia but not lead-pipe rigidity or a very high creatine kinase.",
+    "explicacao_pt": "Febre, confusão, rigidez em cano de chumbo, instabilidade autonômica e CK muito elevada após antipsicótico de alta potência configuram síndrome neuroléptica maligna. A síndrome serotoninérgica, ao contrário, tem hiperreflexia e clônus e começa em horas.",
+    "sistema": "psiquiatria",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "sindrome neuroleptica maligna",
+      "antipsicoticos",
+      "hipertermia",
+      "CK"
+    ],
+    "fonte": "Berman BD. Neuroleptic malignant syndrome: a review for neurohospitalists. Neurohospitalist 2011;1:41-47; American Psychiatric Association. Practice Guideline for the Treatment of Patients With Schizophrenia, 3rd ed. 2020."
+  },
+  {
+    "id": "ck-029",
+    "step": "step2ck",
+    "vinheta": "A 58-year-old woman with bipolar I disorder is brought to the emergency department because of confusion and unsteady gait for 2 days. She has taken lithium for 10 years with stable serum concentrations. Hydrochlorothiazide was added for hypertension 3 weeks ago, and she has had vomiting and diarrhea for 4 days. Pulse is 58/min, and blood pressure is 104/68 mm Hg. She is somnolent and responds only to loud verbal stimuli. Examination shows a coarse tremor, multifocal myoclonus, and dysarthria. Serum lithium concentration is 4.3 mEq/L (therapeutic 0.6 to 1.2), Na+ is 136 mEq/L, and creatinine is 2.6 mg/dL (baseline 1.0 mg/dL). An ECG shows sinus bradycardia with a QTc interval of 480 ms. Intravenous 0.9% saline is started.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Activated charcoal"
+      },
+      {
+        "letra": "B",
+        "texto": "Continued intravenous saline alone"
+      },
+      {
+        "letra": "C",
+        "texto": "Hemodialysis"
+      },
+      {
+        "letra": "D",
+        "texto": "Intravenous sodium bicarbonate"
+      },
+      {
+        "letra": "E",
+        "texto": "Whole-bowel irrigation"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "This chronic lithium toxicity was precipitated by a thiazide, which increases proximal tubular reabsorption of sodium and lithium, and by volume depletion with acute kidney injury. The EXTRIP workgroup recommends extracorporeal removal, preferably intermittent hemodialysis, when the lithium concentration exceeds 4.0 mEq/L with impaired kidney function, or when there is a decreased level of consciousness, seizures, or life-threatening dysrhythmias regardless of the concentration; she meets both conditions. Lithium is a small, unbound, water-soluble ion that dialysis removes efficiently. Intravenous saline restores volume and lithium clearance but is too slow on its own with this degree of toxicity and kidney injury. Activated charcoal does not bind lithium. Whole-bowel irrigation may help after a large acute ingestion of sustained-release tablets, not in chronic toxicity. Sodium bicarbonate does not meaningfully increase lithium excretion.",
+    "explicacao_pt": "Intoxicação crônica por lítio desencadeada por tiazídico e desidratação, com lítio acima de 4,0 mEq/L, lesão renal e rebaixamento de consciência, tem indicação de hemodiálise pelos critérios EXTRIP. Carvão ativado não adsorve lítio.",
+    "sistema": "psiquiatria",
+    "disciplina": "manejo",
+    "dificuldade": "dificil",
+    "tags": [
+      "intoxicacao por litio",
+      "hemodialise",
+      "EXTRIP",
+      "tiazidico"
+    ],
+    "fonte": "Decker BS et al. Extracorporeal treatment for lithium poisoning: systematic review and recommendations from the EXTRIP workgroup. Clin J Am Soc Nephrol 2015;10:875-887."
+  },
+  {
+    "id": "ck-030",
+    "step": "step2ck",
+    "vinheta": "A 34-year-old woman comes to the physician because of low mood, loss of interest in her usual activities, sleeping 11 hours a day, poor concentration, and excessive guilt for 3 weeks. She has no suicidal thoughts. Two years ago she had a 6-day period during which she slept 3 hours a night without feeling tired, talked more than usual, started several work projects, and spent more money than usual; her coworkers commented on the change. During that period she kept working, was never hospitalized, and had no hallucinations or delusions. She does not use alcohol or illicit drugs. Physical examination shows no abnormalities. Serum TSH is 2.1 μU/mL.",
+    "pergunta": "Which of the following is the most likely diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Bipolar I disorder"
+      },
+      {
+        "letra": "B",
+        "texto": "Bipolar II disorder"
+      },
+      {
+        "letra": "C",
+        "texto": "Cyclothymic disorder"
+      },
+      {
+        "letra": "D",
+        "texto": "Major depressive disorder"
+      },
+      {
+        "letra": "E",
+        "texto": "Persistent depressive disorder"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "A current major depressive episode plus a past hypomanic episode defines bipolar II disorder. Hypomania requires at least 4 consecutive days of elevated or irritable mood with increased energy and at least three associated symptoms, observable by others, without marked impairment, hospitalization, or psychosis. Bipolar I disorder requires a manic episode lasting at least 1 week (or any duration if hospitalization is needed) with marked impairment or psychotic features. Cyclothymic disorder requires at least 2 years of numerous hypomanic and depressive symptoms that never meet full criteria for a hypomanic or major depressive episode. Major depressive disorder is excluded by any history of hypomania or mania, and persistent depressive disorder requires depressed mood for at least 2 years. The distinction matters because antidepressant monotherapy can precipitate mania or rapid cycling; bipolar depression is treated with agents such as quetiapine, lurasidone, or lamotrigine.",
+    "explicacao_pt": "Episódio depressivo maior atual com hipomania prévia (pelo menos 4 dias, perceptível pelos outros, sem internação, psicose ou prejuízo acentuado) é transtorno bipolar tipo II. Para o tipo I seria preciso um episódio de mania. O antidepressivo isolado deve ser evitado pelo risco de virada maníaca.",
+    "sistema": "psiquiatria",
+    "disciplina": "diagnostico",
+    "dificuldade": "media",
+    "tags": [
+      "transtorno bipolar tipo II",
+      "hipomania",
+      "DSM-5-TR",
+      "depressao"
+    ],
+    "fonte": "American Psychiatric Association. Diagnostic and Statistical Manual of Mental Disorders, 5th ed., Text Revision (DSM-5-TR). Washington, DC: APA; 2022."
+  },
+  {
+    "id": "ck-031",
+    "step": "step2ck",
+    "vinheta": "A 28-year-old man is seen by his psychiatrist for a scheduled outpatient psychotherapy session. He has borderline personality disorder and has been angry since his girlfriend ended their relationship 2 weeks ago. During the session he says calmly that he plans to shoot her this weekend at her apartment, gives her full name, and states that he bought a handgun yesterday. He has no hallucinations or thought disorder. He refuses to discuss the plan further and leaves the office before the session ends.",
+    "pergunta": "Which of the following is the most appropriate action by the psychiatrist?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Ask the patient's family to watch him closely this weekend"
+      },
+      {
+        "letra": "B",
+        "texto": "Document the threat and discuss it at the next session"
+      },
+      {
+        "letra": "C",
+        "texto": "Maintain confidentiality because the threat was made in psychotherapy"
+      },
+      {
+        "letra": "D",
+        "texto": "Prescribe an antipsychotic medication by telephone"
+      },
+      {
+        "letra": "E",
+        "texto": "Warn the intended victim and notify law enforcement"
+      }
+    ],
+    "correta": "E",
+    "explicacao": "When a patient communicates a serious threat of violence against a reasonably identifiable person, the clinician has a duty to protect that person (Tarasoff v Regents of the University of California, 1976). This duty overrides confidentiality and can be discharged by warning the intended victim, notifying law enforcement, or arranging hospitalization; because the patient has left, warning the victim and the police is the appropriate action now. State laws differ, some making the duty mandatory and others permissive, but a credible threat against a named victim by a person with access to a weapon justifies disclosure. Maintaining confidentiality or waiting until the next session leaves the victim unprotected. Asking the family to watch him discloses information without protecting the victim. An antipsychotic does not treat a nonpsychotic threat, and starting one by telephone is inappropriate.",
+    "explicacao_pt": "Ameaça séria contra pessoa identificável cria o dever de proteger (caso Tarasoff), que se sobrepõe ao sigilo. Com o paciente fora do consultório, o médico deve avisar a vítima e a polícia. As leis variam entre os estados americanos, mas o princípio é cobrado no USMLE.",
+    "sistema": "psiquiatria",
+    "disciplina": "etica",
+    "dificuldade": "media",
+    "tags": [
+      "dever de proteger",
+      "Tarasoff",
+      "sigilo medico",
+      "violencia"
+    ],
+    "fonte": "Tarasoff v Regents of the University of California, 17 Cal 3d 425 (1976); AMA Code of Medical Ethics, Opinion 3.2.1 (Confidentiality)."
+  },
+  {
+    "id": "ck-032",
+    "step": "step2ck",
+    "vinheta": "A 66-year-old man is brought to the emergency department 90 minutes after the sudden onset of right-sided weakness and difficulty speaking. He has hypertension treated with lisinopril. He takes no anticoagulants and has had no recent surgery, bleeding, or head trauma. Pulse is 84/min and regular, and blood pressure is 196/112 mm Hg on two measurements. Fingerstick glucose concentration is 128 mg/dL. Examination shows expressive aphasia, right facial droop, and weakness of the right arm and leg; the NIH Stroke Scale score is 12. Noncontrast CT of the head shows no hemorrhage or early ischemic changes. CT angiography shows no large-vessel occlusion. Platelet count is 240,000/mm3.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Intravenous labetalol to below 185/110 mm Hg, then thrombolysis"
+      },
+      {
+        "letra": "B",
+        "texto": "Intravenous nicardipine to below 140/90 mm Hg, then thrombolysis"
+      },
+      {
+        "letra": "C",
+        "texto": "Oral aspirin with permissive hypertension"
+      },
+      {
+        "letra": "D",
+        "texto": "Sublingual nifedipine, then thrombolysis"
+      },
+      {
+        "letra": "E",
+        "texto": "Thrombolysis without antihypertensive therapy"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "This patient is within 4.5 hours of the onset of a disabling ischemic stroke without hemorrhage and is eligible for intravenous thrombolysis (alteplase or tenecteplase). Blood pressure must be lowered below 185/110 mm Hg before thrombolysis and kept below 180/105 mm Hg for 24 hours afterward to reduce the risk of symptomatic intracranial hemorrhage; intravenous labetalol or nicardipine is preferred because the effect is rapid and titratable. Giving thrombolysis without treating the blood pressure increases the bleeding risk. Aggressive lowering to below 140/90 mm Hg can reduce perfusion of the ischemic penumbra and is not recommended. Sublingual nifedipine causes unpredictable, precipitous drops in pressure. Aspirin with permissive hypertension (up to 220/120 mm Hg) is for patients who are not candidates for reperfusion, and aspirin is delayed for 24 hours after thrombolysis.",
+    "explicacao_pt": "AVC isquêmico com até 4,5 horas de evolução e indicação de trombólise exige PA abaixo de 185/110 mm Hg antes da infusão e abaixo de 180/105 mm Hg nas 24 horas seguintes, com labetalol ou nicardipino IV. A hipertensão permissiva até 220/120 mm Hg vale só para quem não vai receber reperfusão.",
+    "sistema": "neurologia",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "AVC isquemico",
+      "trombolise",
+      "controle pressorico",
+      "AHA/ASA"
+    ],
+    "fonte": "Powers WJ et al. Guidelines for the early management of patients with acute ischemic stroke: 2019 update to the 2018 guidelines. AHA/ASA. Stroke 2019;50:e344-e418."
+  },
+  {
+    "id": "ck-033",
+    "step": "step2ck",
+    "vinheta": "A 44-year-old man comes to the emergency department because of worsening midback pain for 5 days and fever for 2 days. He injects heroin daily. This morning he noticed that his legs felt weak when he climbed stairs. Temperature is 38.6°C (101.5°F), pulse is 108/min, and blood pressure is 128/76 mm Hg. There are needle track marks on both forearms. There is focal tenderness over the T10 spinous process. Strength is 4/5 in both lower extremities, and patellar reflexes are brisk. Sensation to pinprick is decreased below the umbilicus. Leukocyte count is 15,900/mm3, erythrocyte sedimentation rate is 88 mm/h, and C-reactive protein is 14 mg/dL. Blood cultures are obtained.",
+    "pergunta": "Which of the following is the most appropriate next step in diagnosis?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "CT of the thoracic spine without contrast"
+      },
+      {
+        "letra": "B",
+        "texto": "Lumbar puncture"
+      },
+      {
+        "letra": "C",
+        "texto": "MRI of the entire spine with gadolinium"
+      },
+      {
+        "letra": "D",
+        "texto": "Plain radiography of the thoracic spine"
+      },
+      {
+        "letra": "E",
+        "texto": "Technetium-99m bone scan"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "Back pain, fever, and new neurologic deficits with a sensory level in a person who injects drugs suggest spinal epidural abscess, a neurosurgical emergency. MRI with gadolinium is the test of choice: it defines the extent of the abscess and cord compression and detects associated vertebral osteomyelitis and discitis. The entire spine is imaged because noncontiguous lesions occur in a substantial minority of patients. Plain radiographs and noncontrast CT are insensitive for epidural collections early in the course. A bone scan is nonspecific and does not show cord compression. Lumbar puncture can spread infection or worsen deficits when an epidural mass is present, and CSF findings are nonspecific. Treatment is urgent surgical decompression and drainage with intravenous antibiotics that cover Staphylococcus aureus, including MRSA.",
+    "explicacao_pt": "Dor na coluna com febre e déficit neurológico novo em usuário de drogas injetáveis sugere abscesso epidural espinhal. O exame de escolha é a ressonância de toda a coluna com gadolínio; a punção lombar está contraindicada. O tratamento combina descompressão cirúrgica e antibiótico com cobertura para MRSA.",
+    "sistema": "neurologia",
+    "disciplina": "diagnostico",
+    "dificuldade": "dificil",
+    "tags": [
+      "abscesso epidural espinhal",
+      "compressao medular",
+      "ressonancia magnetica",
+      "uso de drogas injetaveis"
+    ],
+    "fonte": "Darouiche RO. Spinal epidural abscess. N Engl J Med 2006;355:2012-2020; Berbari EF et al. 2015 IDSA clinical practice guidelines for the diagnosis and treatment of native vertebral osteomyelitis in adults. Clin Infect Dis 2015;61:e26-e46."
+  },
+  {
+    "id": "ck-034",
+    "step": "step2ck",
+    "vinheta": "A 19-year-old woman is brought to the emergency department by her roommate 10 hours after she ingested about forty 500-mg tablets of acetaminophen following an argument with her partner. She weighs 60 kg (132 lb). She has had nausea and vomited once. She reports no other ingestions, and a urine drug screen is negative. Pulse is 92/min, and blood pressure is 118/74 mm Hg. She is alert and oriented, and there is mild right upper quadrant tenderness. Serum acetaminophen concentration 10 hours after ingestion is 92 μg/mL. AST is 48 U/L, ALT is 52 U/L, INR is 1.1, and creatinine is 0.8 mg/dL.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Acetylcysteine infusion"
+      },
+      {
+        "letra": "B",
+        "texto": "Activated charcoal alone"
+      },
+      {
+        "letra": "C",
+        "texto": "Emergency hemodialysis"
+      },
+      {
+        "letra": "D",
+        "texto": "Fomepizole infusion"
+      },
+      {
+        "letra": "E",
+        "texto": "Repeat serum concentration in 4 hours"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "She ingested about 20 g (roughly 330 mg/kg), well above the toxic threshold of 150 mg/kg, and her 10-hour concentration of 92 μg/mL lies above the treatment line of the Rumack-Matthew nomogram (about 53 μg/mL at 10 hours). N-acetylcysteine replenishes glutathione, which detoxifies the hepatotoxic metabolite NAPQI; it is nearly completely protective when started within 8 hours, and with more than 8 hours elapsed it must be started immediately. Activated charcoal is most useful within 1 to 2 hours of ingestion and does not replace the antidote. Waiting 4 hours for a repeat level delays therapy when the nomogram already indicates treatment. Fomepizole treats methanol and ethylene glycol poisoning and is at most an adjunct in massive acetaminophen ingestions, and hemodialysis is reserved for massive ingestions with metabolic acidosis and altered mental status.",
+    "explicacao_pt": "Ingestão aguda acima de 150 mg/kg com nível sérico acima da linha de tratamento do nomograma de Rumack-Matthew indica N-acetilcisteína IV imediata. Depois de 8 horas, cada hora de atraso aumenta o risco de hepatotoxicidade. Carvão ativado não substitui o antídoto.",
+    "sistema": "emergencia",
+    "disciplina": "manejo",
+    "dificuldade": "media",
+    "tags": [
+      "intoxicacao por paracetamol",
+      "N-acetilcisteina",
+      "nomograma de Rumack-Matthew",
+      "toxicologia"
+    ],
+    "fonte": "Dart RC et al. Management of acetaminophen poisoning in the US and Canada: a consensus statement. JAMA Netw Open 2023;6:e2327739."
+  },
+  {
+    "id": "ck-035",
+    "step": "step2ck",
+    "vinheta": "A 62-year-old woman is brought to the emergency department 15 minutes after being stung by a bee. She has hypertension treated with metoprolol. She has diffuse urticaria, wheezing, and lightheadedness. Pulse is 58/min, and blood pressure is 74/40 mm Hg. She receives intramuscular epinephrine 0.5 mg twice, 5 minutes apart, and 2 L of intravenous 0.9% saline. An intravenous epinephrine infusion is then started and titrated. Twenty minutes later, pulse is 62/min, blood pressure is 78/44 mm Hg, and wheezing persists.",
+    "pergunta": "Which of the following is the most appropriate additional pharmacotherapy?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Inhaled albuterol"
+      },
+      {
+        "letra": "B",
+        "texto": "Intravenous atropine"
+      },
+      {
+        "letra": "C",
+        "texto": "Intravenous diphenhydramine"
+      },
+      {
+        "letra": "D",
+        "texto": "Intravenous glucagon"
+      },
+      {
+        "letra": "E",
+        "texto": "Intravenous methylprednisolone"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "Beta-adrenergic blockade blunts the cardiac and bronchodilator response to epinephrine and is a recognized cause of refractory anaphylaxis. Glucagon raises cyclic AMP in cardiac myocytes through its own receptor, bypassing the beta-adrenergic receptor, and produces positive inotropic and chronotropic effects; it is recommended (1 to 5 mg intravenously over 5 minutes, followed by an infusion) for patients taking beta-blockers whose anaphylaxis does not respond to epinephrine. Antihistamines relieve cutaneous symptoms but do not treat hypotension or airway obstruction. Glucocorticoids act over hours and have no proven role in the acute phase. Albuterol may relieve bronchospasm but does not correct shock. Atropine can treat bradycardia but does not address the vasodilation and myocardial depression of anaphylaxis.",
+    "explicacao_pt": "Anafilaxia refratária à epinefrina em usuária de betabloqueador responde ao glucagon IV, que eleva o AMP cíclico sem passar pelo receptor beta. Anti-histamínico e corticoide são adjuvantes e não revertem o choque.",
+    "sistema": "emergencia",
+    "disciplina": "manejo",
+    "dificuldade": "dificil",
+    "tags": [
+      "anafilaxia refrataria",
+      "betabloqueador",
+      "glucagon",
+      "epinefrina"
+    ],
+    "fonte": "Golden DBK et al. Anaphylaxis: a 2023 practice parameter update. Ann Allergy Asthma Immunol 2024;132:124-176; Shaker MS et al. Anaphylaxis: a 2020 practice parameter update. J Allergy Clin Immunol 2020;145:1082-1123."
+  },
+  {
+    "id": "ck-036",
+    "step": "step2ck",
+    "vinheta": "A 68-year-old man comes for a health maintenance examination. He smoked 1 pack of cigarettes daily from age 18 to 33 years. He has hyperlipidemia treated with atorvastatin. A colonoscopy 4 years ago showed no abnormalities. He has no symptoms. Blood pressure is 126/78 mm Hg. BMI is 27 kg/m2. Examination shows no abnormalities. He has discussed and declined prostate cancer screening.",
+    "pergunta": "Which of the following is the most appropriate screening test at this time?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Abdominal ultrasonography"
+      },
+      {
+        "letra": "B",
+        "texto": "Ankle-brachial index measurement"
+      },
+      {
+        "letra": "C",
+        "texto": "Carotid duplex ultrasonography"
+      },
+      {
+        "letra": "D",
+        "texto": "Low-dose CT of the chest"
+      },
+      {
+        "letra": "E",
+        "texto": "Resting 12-lead electrocardiography"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "The USPSTF recommends one-time screening for abdominal aortic aneurysm with ultrasonography in men aged 65 to 75 years who have ever smoked (at least 100 cigarettes in a lifetime). Lung cancer screening requires at least 20 pack-years and quitting within the past 15 years; he has 15 pack-years and quit 35 years ago. The USPSTF recommends against screening for asymptomatic carotid artery stenosis in the general adult population recommends against ECG screening in low-risk asymptomatic adults and finds insufficient evidence for it in those at intermediate or high risk, and finds insufficient evidence for screening with the ankle-brachial index.",
+    "explicacao_pt": "Homem de 65 a 75 anos que já fumou deve fazer uma ultrassonografia de aorta abdominal para rastrear aneurisma. Ele não preenche critérios para TC de baixa dose, e o rastreio de estenose carotídea e o ECG de rotina não são recomendados em assintomáticos.",
+    "sistema": "medicina_preventiva",
+    "disciplina": "prevencao",
+    "dificuldade": "facil",
+    "tags": [
+      "aneurisma de aorta abdominal",
+      "rastreamento",
+      "USPSTF",
+      "tabagismo"
+    ],
+    "fonte": "US Preventive Services Task Force. Screening for abdominal aortic aneurysm. JAMA 2019;322:2211-2218; USPSTF recommendation statements on carotid artery stenosis (2021), cardiovascular risk with ECG (2018), and peripheral artery disease with ABI (2018)."
+  },
+  {
+    "id": "ck-037",
+    "step": "step2ck",
+    "vinheta": "A 62-year-old woman comes for a health maintenance examination. She had herpes zoster on the right side of the chest 2 years ago, which resolved without postherpetic neuralgia. She received the live attenuated zoster vaccine at age 55 years. She has hypothyroidism well controlled with levothyroxine. She has no history of immunodeficiency and takes no immunosuppressive drugs.",
+    "pergunta": "Which of the following is the most appropriate recommendation regarding zoster vaccination?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Measurement of varicella-zoster IgG antibodies before deciding"
+      },
+      {
+        "letra": "B",
+        "texto": "No vaccination because of her prior zoster episode"
+      },
+      {
+        "letra": "C",
+        "texto": "Recombinant zoster vaccine, 2 doses 2 to 6 months apart"
+      },
+      {
+        "letra": "D",
+        "texto": "Recombinant zoster vaccine, single dose"
+      },
+      {
+        "letra": "E",
+        "texto": "Repeat dose of the live attenuated zoster vaccine"
+      }
+    ],
+    "correta": "C",
+    "explicacao": "CDC recommends 2 doses of recombinant zoster vaccine, 2 to 6 months apart, for immunocompetent adults aged 50 years or older, including those with a previous episode of herpes zoster (once the acute episode has resolved) and those who previously received the live vaccine (at least 8 weeks after it). A previous episode does not prevent recurrence. A single dose of the recombinant vaccine gives incomplete and less durable protection. The live attenuated vaccine has not been available in the United States since 2020 and was less effective, with protection that wanes over time. Serologic testing is unnecessary because nearly all US adults born before 1980 have had varicella.",
+    "explicacao_pt": "A CDC recomenda duas doses da vacina recombinante contra herpes-zóster, com intervalo de 2 a 6 meses, a partir dos 50 anos, mesmo após episódio prévio de zóster ou vacina de vírus vivo. Não é preciso sorologia antes de vacinar.",
+    "sistema": "medicina_preventiva",
+    "disciplina": "prevencao",
+    "dificuldade": "media",
+    "tags": [
+      "herpes-zoster",
+      "vacina recombinante",
+      "ACIP",
+      "imunizacao do adulto"
+    ],
+    "fonte": "Dooling KL et al. Recommendations of the Advisory Committee on Immunization Practices for use of herpes zoster vaccines. MMWR 2018;67:103-108; CDC Adult Immunization Schedule, United States, 2025."
+  },
+  {
+    "id": "ck-038",
+    "step": "step2ck",
+    "vinheta": "A 16-year-old girl comes to the clinic alone because of increased vaginal discharge for 1 week. She has been sexually active with one male partner, aged 17 years, for 4 months, and the relationship is consensual. They use condoms inconsistently. Pelvic examination shows mucopurulent cervical discharge and a friable cervix. A urine pregnancy test is negative. A nucleic acid amplification test is positive for Chlamydia trachomatis and negative for Neisseria gonorrhoeae. She asks that her parents not be told.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Doxycycline therapy with confidentiality maintained"
+      },
+      {
+        "letra": "B",
+        "texto": "Notification of her parents before treatment"
+      },
+      {
+        "letra": "C",
+        "texto": "Referral to an adult gynecology clinic"
+      },
+      {
+        "letra": "D",
+        "texto": "Report of the relationship to child protective services"
+      },
+      {
+        "letra": "E",
+        "texto": "Written parental consent before treatment"
+      }
+    ],
+    "correta": "A",
+    "explicacao": "All 50 US states and the District of Columbia allow minors to consent to the diagnosis and treatment of sexually transmitted infections without parental involvement (a few states set a minimum age, generally 12 to 14 years), and confidential care encourages adolescents to seek treatment. Doxycycline 100 mg twice daily for 7 days is the recommended regimen for chlamydial infection, together with partner treatment (including expedited partner therapy where allowed), counseling on condoms and contraception, and retesting in about 3 months. Requiring parental notification or consent is not legally necessary and would discourage care. A consensual relationship with a 17-year-old partner does not by itself indicate abuse that must be reported. Referral would only delay treatment.",
+    "explicacao_pt": "Nos EUA, todos os estados permitem que o adolescente consinta sozinho com diagnóstico e tratamento de IST (alguns fixam idade mínima, em geral de 12 a 14 anos). A clamídia é tratada com doxiciclina 100 mg de 12 em 12 horas por 7 dias, com sigilo, tratamento do parceiro e nova testagem em cerca de 3 meses.",
+    "sistema": "etica_comunicacao",
+    "disciplina": "etica",
+    "dificuldade": "facil",
+    "tags": [
+      "adolescente",
+      "sigilo",
+      "IST",
+      "clamidia",
+      "consentimento de menor"
+    ],
+    "fonte": "Workowski KA et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(4):1-187."
+  },
+  {
+    "id": "ck-039",
+    "step": "step2ck",
+    "vinheta": "An 81-year-old man is in the intensive care unit 5 days after a large left middle cerebral artery stroke. He is intubated, does not respond to voice, and lacks decision-making capacity; the neurology team considers meaningful recovery very unlikely. Two years ago he signed a durable power of attorney for health care naming his longtime friend as his health care agent. He did not write a living will. The friend reports that he said many times he would not want to be kept alive on machines if he could no longer recognize people, and she asks the team to transition to comfort care. The patient's only daughter, who has not seen him in several years, arrives and insists on tracheostomy and full treatment.",
+    "pergunta": "Which of the following is the most appropriate next step?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "Follow the decision of the daughter as next of kin"
+      },
+      {
+        "letra": "B",
+        "texto": "Follow the decision of the designated health care agent"
+      },
+      {
+        "letra": "C",
+        "texto": "Have the ethics committee make the treatment decision"
+      },
+      {
+        "letra": "D",
+        "texto": "Obtain a court-appointed guardian before any change in care"
+      },
+      {
+        "letra": "E",
+        "texto": "Wait for family consensus before changing treatment"
+      }
+    ],
+    "correta": "B",
+    "explicacao": "When a patient lacks capacity, decisions are made by the surrogate the patient chose. A legally designated health care agent (durable power of attorney for health care) takes precedence over next of kin in the default surrogate hierarchy and should use substituted judgment, applying the patient's known wishes. The friend's report of his repeated statements about not wanting prolonged life support is the best available evidence of those wishes. The physician should meet with both, explain the prognosis, and acknowledge the daughter's distress, but her preference does not override the agent's authority. An ethics consultation can help resolve conflict, but the committee advises and does not decide. A court-appointed guardian is needed only when there is no valid surrogate or when the surrogate appears to act against the patient's interests. Waiting for consensus would continue treatment the patient said he did not want.",
+    "explicacao_pt": "O procurador de saúde nomeado pelo paciente (durable power of attorney for health care) tem prioridade sobre os familiares e decide por julgamento substituto, com base nos desejos conhecidos do paciente. O comitê de ética aconselha e media conflitos, mas não decide.",
+    "sistema": "etica_comunicacao",
+    "disciplina": "etica",
+    "dificuldade": "dificil",
+    "tags": [
+      "procurador de saude",
+      "diretivas antecipadas",
+      "julgamento substituto",
+      "cuidados paliativos"
+    ],
+    "fonte": "AMA Code of Medical Ethics, Opinion 2.1.2 (Decisions for adult patients who lack capacity) and Opinion 5.2 (Advance directives)."
+  },
+  {
+    "id": "ck-040",
+    "step": "step2ck",
+    "vinheta": "In a randomized, double-blind trial, 4,000 adults aged 55 to 75 years with no known cardiovascular disease and elevated cardiovascular risk are assigned to a new lipid-lowering drug or to placebo (2,000 participants in each group) and followed for 5 years. Myocardial infarction occurs in 80 participants in the drug group and in 120 participants in the placebo group.",
+    "pergunta": "Based on these results, how many patients need to be treated with the drug for 5 years to prevent one myocardial infarction?",
+    "alternativas": [
+      {
+        "letra": "A",
+        "texto": "17"
+      },
+      {
+        "letra": "B",
+        "texto": "25"
+      },
+      {
+        "letra": "C",
+        "texto": "33"
+      },
+      {
+        "letra": "D",
+        "texto": "50"
+      },
+      {
+        "letra": "E",
+        "texto": "100"
+      }
+    ],
+    "correta": "D",
+    "explicacao": "The event rate is 120/2,000 = 6% with placebo and 80/2,000 = 4% with the drug. The absolute risk reduction is 6% minus 4% = 2% (0.02), and the number needed to treat is 1 divided by the absolute risk reduction, 1/0.02 = 50 patients over 5 years. The value 33 comes from confusing the relative risk reduction (2%/6% = 33%) with the NNT. The value 25 is the reciprocal of the event rate in the treated group (1/0.04), 17 is the reciprocal of the placebo event rate (1/0.06), and 100 would correspond to an absolute difference of 1%.",
+    "explicacao_pt": "A redução absoluta de risco é 6% menos 4%, ou seja, 2%, e o NNT é 1/0,02 = 50 pacientes tratados por 5 anos para evitar um infarto. A redução relativa de risco (33%) não deve ser confundida com o NNT, que vem sempre do inverso da diferença absoluta.",
+    "sistema": "bioestatistica",
+    "disciplina": "prevencao",
+    "dificuldade": "media",
+    "tags": [
+      "NNT",
+      "reducao absoluta de risco",
+      "ensaio clinico",
+      "prevencao primaria"
+    ],
+    "fonte": "Laupacis A, Sackett DL, Roberts RS. An assessment of clinically useful measures of the consequences of treatment. N Engl J Med 1988;318:1728-1733; Celentano DD, Szklo M. Gordis Epidemiology, 6th ed. Philadelphia: Elsevier; 2019."
+  }
+]

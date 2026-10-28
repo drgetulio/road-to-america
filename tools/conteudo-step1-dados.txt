@@ -1,0 +1,1285 @@
+# Road to America | dados da página conteudo-step1.html
+# Formato:
+#   @sys id | Nome em português | Nome em inglês | chave da faixa oficial
+#   % texto de abertura do sistema
+#   @cat Nome em português | Nome em inglês
+#   = texto do outline oficial (cada linha vira um item)
+#   - tópico do complemento Road to America {códigos de disciplina}
+# Códigos: pat fis nut ana mic far com bio his imu gen
+# Gere a página com: node tools/build-conteudo-step1.cjs
+
+@sys dev | Desenvolvimento humano | Human Development | dev
+% Achados normais de cada fase da vida e cuidado do paciente saudável. A categoria foi criada em janeiro de 2024 e reúne temas que antes ficavam em General Principles e em Behavioral Health.
+
+@cat Lactente e criança | Infancy and childhood
+= Alterações físicas normais e fisiologia do crescimento.
+= Estágios do desenvolvimento: motor, cognitivo e psicossocial; orientação antecipatória (anticipatory guidance).
+= Estilo de vida e cuidado preventivo de rotina, como vacinação e rastreamento (screening).
+- Marcos do desenvolvimento (developmental milestones) motor grosso, motor fino, linguagem e social nos primeiros cinco anos {com}
+- Reflexos primitivos (Moro, preensão palmar, sucção, Babinski) e idade em que desaparecem; persistência sugere lesão do sistema nervoso central {fis,ana}
+- Curvas de crescimento de peso, comprimento e perímetro cefálico; falha de crescimento (failure to thrive) orgânica e não orgânica {fis,nut}
+- Apego (attachment), ansiedade diante de estranhos (stranger anxiety), ansiedade de separação e permanência do objeto {com}
+- Estágios de Piaget: sensório-motor, pré-operacional, operacional concreto e operacional formal {com}
+- Estágios de Erikson na infância: confiança vs desconfiança, autonomia vs vergonha, iniciativa vs culpa, diligência vs inferioridade {com}
+- Calendário vacinal da criança e contraindicações das vacinas de vírus vivo atenuado {imu,mic}
+- Aleitamento materno exclusivo, suplementação de vitamina D e ferro; anemia ferropriva por leite de vaca introduzido cedo {nut}
+- Prevenção da síndrome da morte súbita do lactente (SIDS): dormir de barriga para cima, colchão firme, ambiente sem fumaça de cigarro {com}
+- Triagem neonatal: fenilcetonúria, hipotireoidismo congênito, galactosemia, fibrose cística e hemoglobinopatias {gen,bio}
+- Sinais de maus-tratos infantis (child abuse): fraturas em estágios diferentes de consolidação, fratura metafisária em canto, hemorragia retiniana no bebê sacudido (shaken baby syndrome) {com,pat}
+- Orientação antecipatória de segurança: cadeirinha no carro, prevenção de afogamento, de intoxicação e de queimaduras {com}
+
+@cat Adolescência | Adolescence
+= Alterações físicas da puberdade e fisiologia do adolescente.
+= Desenvolvimento cognitivo e psicossocial; comportamentos de risco.
+= Estilo de vida, cuidado preventivo e rastreamento.
+- Estágios de Tanner (sexual maturity rating) e sequência da puberdade: telarca, pubarca, estirão e menarca na menina; aumento do volume testicular primeiro no menino {fis}
+- Puberdade precoce e puberdade atrasada: causas centrais e periféricas, idade óssea {fis,pat}
+- Identidade vs confusão de papéis (Erikson) e início do pensamento abstrato {com}
+- Confidencialidade do adolescente e situações em que o sigilo pode ser quebrado, como risco de suicídio e abuso {com}
+- Comportamentos de risco: uso de substâncias, sexo sem proteção, direção perigosa; acidentes, suicídio e homicídio como principais causas de morte na faixa etária {com}
+- Vacinas da adolescência: HPV, meningocócica e dTpa {imu,mic}
+- Acne, ginecomastia puberal fisiológica e transtornos alimentares como achados comuns da idade {pat}
+
+@cat Vida adulta | Adulthood
+= Fisiologia normal do adulto e estágios psicossociais.
+= Estilo de vida, prevenção e rastreamento de rotina.
+- Intimidade vs isolamento e generatividade vs estagnação (Erikson) {com}
+- Rastreamento de câncer de colo do útero, de mama e colorretal; o que torna uma doença adequada para rastreamento {com}
+- Rastreamento de hipertensão, dislipidemia, diabetes tipo 2 e obesidade {fis}
+- Aconselhamento sobre tabagismo, álcool, atividade física e dieta; modelo de estágios de mudança (stages of change) {com,nut}
+- Vacinação do adulto: influenza anual, reforço de dT, hepatite B e HPV conforme a idade {imu}
+- Fisiologia da menopausa (queda de estrogênio, aumento de FSH) e do envelhecimento masculino {fis}
+
+@cat Idoso | Older adulthood
+= Alterações físicas normais e fisiologia do envelhecimento.
+= Desenvolvimento cognitivo, por exemplo esquecimento senil benigno (benign senescent forgetfulness).
+= Desenvolvimento psicossocial, por exemplo integridade vs desespero e retrospecção (retrospection).
+= Cuidado preventivo de rotina no idoso.
+- Alterações normais do envelhecimento: queda da taxa de filtração glomerular, da massa muscular (sarcopenia), da complacência arterial e da capacidade vital; aumento do volume residual {fis}
+- Presbiopia, presbiacusia (perda auditiva para frequências altas) e redução do sono REM e do sono de ondas lentas {fis}
+- Esquecimento senil benigno vs demência: no envelhecimento normal a memória falha sem prejuízo da funcionalidade {com}
+- Integridade vs desespero (Erikson) e revisão de vida {com}
+- Farmacologia no idoso: meia-vida maior dos fármacos lipossolúveis, menor depuração renal, critérios de Beers, polifarmácia e risco de quedas {far}
+- Prevenção de quedas, rastreamento de osteoporose e vacinas pneumocócica e contra herpes-zóster {imu}
+- Abuso e negligência contra o idoso (elder abuse) {com}
+- Luto normal vs luto complicado; estágios de Kübler-Ross {com}
+
+@sys gp | Ciência básica transversal | General Principles of Foundational Science | gp
+% Em janeiro de 2024 o USMLE deixou de listar esta categoria como linha própria. Os temas passaram a ser cobrados dentro do sistema a que mais se relacionam, e o peso da ciência fundamental na prova continuou o mesmo. Como sustentam boa parte das questões, a página mantém os temas reunidos aqui para facilitar o estudo.
+
+@cat Bioquímica e biologia molecular | Biochemistry and molecular biology
+= Expressão gênica: estrutura do DNA, replicação, reparo e recombinação; transcrição; tradução e modificação pós-traducional.
+= Estrutura e função das proteínas; metabolismo energético; vias metabólicas.
+= Nutrição, incluindo vitaminas e minerais.
+- Replicação do DNA: helicase, primase, DNA polimerases, ligase, topoisomerases e telomerase; fármacos que agem nessa etapa (fluoroquinolonas, irinotecano, etoposídeo) {bio,far}
+- Defeitos de reparo do DNA: xeroderma pigmentoso (excisão de nucleotídeos), síndrome de Lynch (mismatch repair), BRCA1/2 e ataxia-telangiectasia (quebra de dupla fita), anemia de Fanconi {bio,gen}
+- Transcrição e processamento do RNA: RNA polimerase II, splicing, cap 5' e cauda poli-A; anticorpos anti-Smith contra snRNPs no lúpus; alfa-amanitina {bio}
+- Tradução: aminoacil-tRNA sintetase, sítios A, P e E; antibióticos que inibem as subunidades 30S e 50S {bio,far}
+- Endereçamento de proteínas: manose-6-fosfato e doença de inclusão celular (I-cell disease) {bio,his}
+- Síntese do colágeno e suas doenças: escorbuto, osteogênese imperfeita, Ehlers-Danlos, Menkes {bio,his}
+- Glicólise, gliconeogênese e enzimas limitantes; deficiência de piruvato quinase; deficiência de piruvato desidrogenase e acidose lática {bio}
+- Ciclo de Krebs, cadeia transportadora de elétrons, desacopladores (2,4-dinitrofenol, termogenina) e inibidores (cianeto, monóxido de carbono, rotenona) {bio}
+- Via das pentoses fosfato e deficiência de G6PD: corpúsculos de Heinz, células mordidas (bite cells), gatilhos como fava, primaquina e sulfas {bio,pat}
+- Doenças de armazenamento de glicogênio: von Gierke, Pompe, Cori e McArdle {bio,gen}
+- Doenças de depósito lisossômico: Gaucher, Niemann-Pick, Tay-Sachs, Fabry, Krabbe, leucodistrofia metacromática, Hurler e Hunter {bio,gen}
+- Ciclo da ureia e hiperamonemia: deficiência de ornitina transcarbamilase (ácido orótico alto) vs deficiência de carbamoil-fosfato sintetase I {bio}
+- Distúrbios de aminoácidos: fenilcetonúria, alcaptonúria, homocistinúria, doença da urina em xarope de bordo (maple syrup urine disease), doença de Hartnup {bio,gen}
+- Lipoproteínas (quilomícrons, VLDL, LDL, HDL), apolipoproteínas e dislipidemias familiares tipos I a V {bio,fis}
+- Corpos cetônicos, estado alimentado e jejum; ações da insulina e do glucagon sobre as vias metabólicas {bio,fis}
+- Vitaminas hidrossolúveis: B1 (Wernicke, beribéri), B2, B3 (pelagra), B5, B6 (isoniazida), B7, B9, B12 (anemia megaloblástica, ácido metilmalônico) e C {nut,bio}
+- Vitaminas lipossolúveis A, D, E e K: funções, deficiência e toxicidade {nut,bio}
+- Minerais: ferro, zinco, cobre e selênio {nut}
+- Técnicas de laboratório: PCR, Southern, Northern e Western blot, ELISA, microarranjo, citometria de fluxo, FISH e CRISPR {bio,gen}
+
+@cat Biologia celular | Cell biology
+= Estrutura e função da célula.
+= Ciclo celular.
+= Sinalização celular.
+- Ciclo celular: ciclinas, CDKs, p53 e Rb como freios na transição G1/S; fármacos específicos de fase {his,far}
+- Organelas: retículo endoplasmático rugoso e liso, complexo de Golgi, peroxissomo (adrenoleucodistrofia ligada ao X, síndrome de Zellweger) e proteassomo {his,bio}
+- Microtúbulos e fármacos que agem neles (vincristina, paclitaxel, colchicina, griseofulvina); discinesia ciliar primária e síndrome de Kartagener {his,far}
+- Filamentos intermediários na imuno-histoquímica: vimentina, desmina, citoqueratina, GFAP e neurofilamentos {his,pat}
+- Junções celulares: zônula de oclusão, desmossomos (pênfigo), hemidesmossomos (penfigoide bolhoso) e junções comunicantes (gap junctions) {his,imu}
+- Bomba Na+/K+ ATPase e efeito da digoxina; tipos de colágeno I a IV e elastina {fis,bio}
+- Receptores e segundos mensageiros: Gs, Gi, Gq, receptores com atividade tirosina-quinase e via JAK-STAT; hormônios que usam cada via {fis,far}
+
+@cat Genética e desenvolvimento | Human development and genetics
+= Princípios de herança genética.
+= Genética de populações.
+= Testes genéticos e terapia gênica.
+- Padrões de herança: autossômico dominante, autossômico recessivo, ligado ao X e mitocondrial; leitura de heredogramas (pedigree) {gen}
+- Penetrância incompleta, expressividade variável, pleiotropia, antecipação, mosaicismo, heterogeneidade alélica e de locus, imprinting {gen}
+- Equilíbrio de Hardy-Weinberg e cálculo da frequência de portadores {gen}
+- Doenças por expansão de trinucleotídeos: Huntington (CAG), X frágil (CGG), distrofia miotônica (CTG) e ataxia de Friedreich (GAA) {gen}
+- Imprinting genômico: síndromes de Prader-Willi e Angelman (15q11-13) e dissomia uniparental {gen}
+- Aneuploidias: trissomias 21, 18 e 13; síndrome de Turner (45,X) e de Klinefelter (47,XXY); não disjunção na meiose e idade materna {gen}
+- Microdeleções: cri du chat (5p), Williams (7q11.23) e DiGeorge (22q11.2) {gen}
+- Translocações robertsonianas e equilibradas; cariótipo e triagem pré-natal {gen}
+- Doenças autossômicas dominantes clássicas: neurofibromatoses 1 e 2, esclerose tuberosa, von Hippel-Lindau, Marfan, doença renal policística do adulto, hipercolesterolemia familiar, polipose adenomatosa familiar {gen}
+- Doenças autossômicas recessivas clássicas: fibrose cística (CFTR, deleção F508), anemia falciforme, hemocromatose hereditária e doença de Wilson {gen}
+- Doenças ligadas ao X: distrofias de Duchenne e Becker, hemofilias A e B, deficiência de G6PD, Lesch-Nyhan e Fabry {gen}
+- Doenças mitocondriais: MELAS e neuropatia óptica hereditária de Leber; herança materna e heteroplasmia {gen}
+
+@cat Resposta tecidual à doença | Biology of tissue response to disease
+= Inflamação.
+= Lesão e morte celular.
+= Neoplasia.
+= Reparo tecidual.
+- Adaptações celulares: hipertrofia, hiperplasia, atrofia, metaplasia (esôfago de Barrett) e displasia {pat}
+- Lesão reversível vs irreversível; necrose coagulativa, liquefativa, caseosa, gordurosa, fibrinoide e gangrenosa {pat}
+- Apoptose: via intrínseca (BCL-2, citocromo c), via extrínseca (Fas, TNF) e caspases {pat,his}
+- Inflamação aguda: eventos vasculares, mediadores (histamina, prostaglandinas, leucotrienos, bradicinina, C5a, IL-8) e rolamento, adesão e diapedese dos neutrófilos {pat,imu}
+- Deficiência de adesão leucocitária tipo 1 (CD18) e queda tardia do coto umbilical {imu,gen}
+- Inflamação crônica e granulomas: tuberculose, sarcoidose, doença de Crohn e granulomatose com poliangiite {pat}
+- Cicatrização: tecido de granulação, troca de colágeno tipo III por tipo I, queloide, deiscência; papel do zinco e da vitamina C {pat,nut}
+- Calcificação distrófica vs metastática {pat}
+- Amiloidose AL, AA, ATTR e por beta-2 microglobulina; vermelho Congo com birrefringência verde-maçã {pat}
+- Lesão por radicais livres e por reperfusão, esteatose e lipofuscina como pigmento do envelhecimento {pat}
+- Características do câncer (hallmarks of cancer): oncogenes (RAS, MYC, HER2, BCR-ABL), genes supressores de tumor (TP53, RB, APC, BRCA) e hipótese dos dois eventos (two-hit) de Knudson {pat,gen}
+- Marcadores tumorais: PSA, CEA, AFP, CA-125, CA 19-9 e beta-hCG, mais úteis para seguimento que para diagnóstico isolado {pat}
+- Síndromes paraneoplásicas: PTHrP, ACTH ectópico, SIADH, eritropoetina e síndrome miastênica de Lambert-Eaton {pat}
+- Vias de metástase: linfática nos carcinomas, hematogênica nos sarcomas, e as exceções clássicas {pat}
+
+@cat Farmacologia geral | Multisystem pharmacodynamic and pharmacokinetic processes
+= Princípios gerais da ação dos fármacos.
+= Interações medicamentosas.
+= Toxicologia.
+- Farmacocinética: volume de distribuição, depuração, meia-vida, dose de ataque e de manutenção, biodisponibilidade {far}
+- Cinética de primeira ordem vs ordem zero (etanol, fenitoína, aspirina em dose alta) {far}
+- Eliminação de ácidos e bases fracas pela alcalinização ou acidificação da urina {far,fis}
+- Metabolismo de fase I (citocromo P450) e fase II; indutores e inibidores clássicos do CYP450 {far}
+- Farmacodinâmica: agonista total e parcial, antagonista competitivo e não competitivo, curvas dose-resposta, potência vs eficácia {far}
+- Índice terapêutico e fármacos de janela estreita: lítio, digoxina, varfarina, teofilina e aminoglicosídeos {far}
+- Tolerância, taquifilaxia e acetiladores lentos (isoniazida, hidralazina, procainamida) {far,gen}
+- Fases do desenvolvimento de fármacos e dos ensaios clínicos (fase 0 a IV) {far,com}
+- Antídotos: acetilcisteína (paracetamol), naloxona, flumazenil, atropina e pralidoxima (organofosforados), fomepizol, deferoxamina, vitamina K, protamina, idarucizumabe e glucagon (betabloqueador) {far}
+- Reações adversas clássicas: síndrome de Stevens-Johnson, síndrome do homem vermelho (vancomicina), reação semelhante ao dissulfiram (metronidazol), hemólise na deficiência de G6PD {far}
+
+@cat Biologia microbiana e infecção | Microbial biology and infection
+= Bactérias, vírus, fungos, parasitas e príons: estrutura, genética e patogênese.
+= Interação entre hospedeiro e patógeno.
+= Mecanismos de ação e de resistência dos antimicrobianos.
+- Parede de gram-positivos e gram-negativos, lipopolissacarídeo (endotoxina), cápsula e esporos {mic}
+- Exotoxinas: diftérica, exotoxina A de Pseudomonas, colérica, pertússis, tetânica, botulínica e superantígenos (TSST-1) {mic}
+- Genética bacteriana: transformação, conjugação, transdução, transposição e resistência transmitida por plasmídeos {mic,gen}
+- Colorações (Gram, Ziehl-Neelsen, prata, Giemsa, PAS) e meios de cultura clássicos (ágar chocolate, Thayer-Martin, Löwenstein-Jensen, Bordet-Gengou) {mic}
+- Virologia: vírus de DNA e de RNA, envelopados e não envelopados, polaridade do genoma e rearranjo genético (reassortment) do influenza {mic}
+- Antibacterianos por mecanismo: parede celular (betalactâmicos, vancomicina), síntese proteica, folato (sulfametoxazol-trimetoprima) e DNA (fluoroquinolonas, metronidazol) {far,mic}
+- Mecanismos de resistência: betalactamases, PBP alterada (MRSA, gene mecA), D-Ala-D-Lac (enterococo resistente à vancomicina) e bombas de efluxo {far,mic}
+- Antifúngicos, antivirais (aciclovir, ganciclovir, foscarnet, oseltamivir, antirretrovirais) e antiparasitários por mecanismo de ação {far,mic}
+- Príons: doença de Creutzfeldt-Jakob e sua variante, proteína em folha beta resistente a proteases {mic,pat}
+
+@cat Gênero, etnia e comportamento | Gender, ethnic, and behavioral considerations affecting disease treatment and prevention
+= Considerações de gênero, étnicas e comportamentais que afetam o tratamento e a prevenção das doenças.
+- Doenças mais frequentes em certas ancestralidades: anemia falciforme, talassemias, Tay-Sachs, fibrose cística e deficiência de G6PD {gen}
+- Farmacogenômica: HLA-B*5701 e abacavir, HLA-B*1502 e carbamazepina, CYP2C19 e clopidogrel, TPMT e azatioprina {far,gen}
+- Diferenças de apresentação entre homens e mulheres no infarto do miocárdio e nas doenças autoimunes {pat}
+
+@sys imune | Sistema imune | Immune System | heme
+% Imunologia básica e clínica: células e moléculas da resposta imune, imunodeficiências, hipersensibilidade, transplante e imunofarmacologia.
+
+@cat Processos normais | Normal processes
+= Estrutura e função dos órgãos linfoides: medula óssea, timo, linfonodos, baço e tecido linfoide associado à mucosa (MALT).
+= Células da resposta imune inata e adaptativa; processamento e apresentação de antígenos.
+= Citocinas e sinalização imune; anticorpos e complemento.
+= Desenvolvimento das células da resposta adaptativa, incluindo seleção positiva e negativa; tolerância imunológica.
+= Efeito da idade sobre a função dos componentes do sistema imune.
+- Anatomia do linfonodo (folículo, paracórtex, medula) e drenagem linfática regional {ana,his,imu}
+- Baço: polpa branca e vermelha; asplenia e risco de bactérias encapsuladas (S. pneumoniae, H. influenzae tipo b, N. meningitidis); corpúsculos de Howell-Jolly {imu,ana}
+- Timo: seleção positiva no córtex e seleção negativa na medula (AIRE) {imu,his}
+- MHC classe I (CD8, todas as células nucleadas) e classe II (CD4, células apresentadoras de antígeno); associações com HLA-B27, DR3, DR4 e DQ2/DQ8 {imu,gen}
+- Linfócitos T auxiliares: Th1 (IFN-gama), Th2 (IL-4, IL-5, IL-13), Th17 (IL-17) e Treg (FOXP3, IL-10, TGF-beta) {imu}
+- Citocinas: IL-1, IL-6 e TNF-alfa (febre e fase aguda), IL-2, IL-12, IFN-gama e IL-10 {imu}
+- Células NK e citotoxicidade dependente de anticorpo; perda de MHC classe I como sinal de ativação {imu}
+- Imunoglobulinas: estrutura, troca de classe (CD40-CD40L) e funções de IgM, IgG, IgA, IgE e IgD {imu}
+- Complemento: vias clássica, alternativa e das lectinas, C3b como opsonina, complexo de ataque à membrana (C5b-9) e reguladores (inibidor de C1, DAF, CD59) {imu}
+- Receptores de reconhecimento de padrões: TLRs, PAMPs e DAMPs {imu}
+- Imunidade passiva vs ativa; vacinas vivas atenuadas, inativadas, de subunidade e conjugadas {imu,mic}
+- Imunossenescência: resposta vacinal menor e risco maior de infecção no idoso {imu}
+
+@cat Imunodeficiências | Immunodeficiency disorders
+= Deficiência predominante da imunidade humoral, por exemplo imunodeficiência comum variável (common variable immunodeficiency), síndrome de hiper-IgM, agamaglobulinemia ligada ao X (Bruton) e deficiência seletiva de IgA.
+= Deficiência predominante da imunidade celular, por exemplo síndrome de DiGeorge.
+= Imunodeficiência combinada, por exemplo imunodeficiência combinada grave (SCID), Wiskott-Aldrich e ataxia-telangiectasia.
+= Deficiências de fagócitos e de células NK, por exemplo doença granulomatosa crônica, deficiência de adesão leucocitária e Chediak-Higashi.
+= Deficiências do complemento.
+= Imunodeficiência adquirida: HIV/AIDS e imunossupressão.
+- Agamaglobulinemia de Bruton (X-linked agammaglobulinemia): mutação em BTK, ausência de linfócitos B, infecções bacterianas e por enterovírus depois que os anticorpos maternos acabam {imu,gen}
+- Deficiência seletiva de IgA: infecções sinopulmonares e gastrointestinais, anafilaxia com hemoderivados que contêm IgA, falso positivo em testes sorológicos {imu}
+- Imunodeficiência comum variável: falha na diferenciação de linfócitos B, diagnóstico geralmente na vida adulta, mais autoimunidade e linfoma {imu}
+- Síndrome de hiper-IgM: defeito em CD40L, falha na troca de classe e infecções oportunistas (Pneumocystis, Cryptosporidium) {imu,gen}
+- Síndrome de DiGeorge: microdeleção 22q11.2, aplasia de timo e de paratireoides, hipocalcemia e cardiopatia conotruncal {imu,gen,ana}
+- Imunodeficiência combinada grave: deficiência de adenosina desaminase ou da cadeia gama comum do receptor de IL-2; ausência de sombra tímica {imu,gen}
+- Wiskott-Aldrich: trombocitopenia com plaquetas pequenas, eczema e infecções recorrentes; herança ligada ao X (gene WAS) {imu,gen}
+- Ataxia-telangiectasia: gene ATM, ataxia cerebelar, telangiectasias, deficiência de IgA, AFP elevada e sensibilidade à radiação {imu,gen}
+- Síndrome de hiper-IgE (Job): STAT3, falha de Th17, abscessos frios por estafilococo, retenção de dentes decíduos e eczema {imu,gen}
+- Candidíase mucocutânea crônica por defeito de linfócitos T contra Candida {imu}
+- Doença granulomatosa crônica: deficiência de NADPH oxidase, infecções por microrganismos catalase-positivos (S. aureus, Aspergillus, Serratia, Burkholderia), teste da di-hidrorrodamina {imu}
+- Chediak-Higashi: gene LYST, falha no tráfego de lisossomos, albinismo parcial, neuropatia e grânulos gigantes nos leucócitos {imu,gen}
+- Deficiências do complemento: inibidor de C1 (angioedema hereditário sem urticária, evitar IECA), C3 (infecções por encapsulados), C5 a C9 (Neisseria), DAF e CD59 (hemoglobinúria paroxística noturna) {imu}
+- HIV: estrutura (gp120, gp41, p24), tropismo por CCR5 e CXCR4, diagnóstico (imunoensaio de quarta geração, carga viral) e infecções oportunistas conforme a contagem de CD4 {mic,imu}
+- Imunossupressão iatrogênica (corticoides, quimioterapia, inibidores de calcineurina) e as infecções típicas de cada uma {far,imu}
+
+@cat Distúrbios imunologicamente mediados | Immunologically mediated disorders
+= Reações de hipersensibilidade tipos I a IV, como anafilaxia, doença do soro e dermatite de contato.
+= Transplante: rejeição e doença do enxerto contra o hospedeiro (graft-versus-host disease).
+= Doenças autoimunes que afetam o sistema imune.
+- Hipersensibilidade tipo I (IgE, mastócitos): anafilaxia, asma alérgica e urticária; triptase sérica; adrenalina como tratamento {imu}
+- Hipersensibilidade tipo II (anticorpo contra antígeno de superfície): anemia hemolítica autoimune, síndrome de Goodpasture, doença de Graves, miastenia gravis e reação transfusional hemolítica aguda {imu,pat}
+- Hipersensibilidade tipo III (imunocomplexos): doença do soro, reação de Arthus, glomerulonefrite pós-estreptocócica e lúpus {imu,pat}
+- Hipersensibilidade tipo IV (linfócitos T): dermatite de contato, teste tuberculínico (PPD) e rejeição crônica {imu}
+- Reações transfusionais: alérgica, febril não hemolítica, hemolítica aguda e tardia, lesão pulmonar aguda (TRALI) e sobrecarga circulatória (TACO) {imu}
+- Rejeição hiperaguda (anticorpos pré-formados), aguda (celular ou humoral) e crônica; doença do enxerto contra o hospedeiro com acometimento de pele, fígado e intestino {imu}
+- Autoanticorpos de prova: FAN, anti-dsDNA, anti-Smith, anti-histona, anti-Ro/La, anticentrômero, anti-Scl-70, anti-Jo-1, ANCA e antitransglutaminase {imu}
+
+@cat Imunofarmacologia e efeitos adversos | Immunopharmacology and adverse effects of drugs on the immune system
+= Efeitos adversos de fármacos sobre o sistema imune.
+= Imunossupressores, agentes biológicos, vacinas e imunização.
+- Inibidores de calcineurina (ciclosporina, tacrolimo): nefrotoxicidade, hipertensão, neurotoxicidade; hiperplasia gengival e hirsutismo com ciclosporina {far}
+- Sirolimo (mTOR), azatioprina, micofenolato e corticoides: mecanismo e toxicidade de cada um {far}
+- Anticorpos monoclonais e sufixos (-mab, -cept, -nib): infliximabe e adalimumabe (anti-TNF), rituximabe (CD20), basiliximabe (CD25), omalizumabe (IgE) {far,imu}
+- Pesquisa de tuberculose latente antes de iniciar anti-TNF {far,mic}
+- Imunoglobulina intravenosa e antitoxinas como imunização passiva {imu,far}
+
+@sys sangue | Sangue e sistema linforreticular | Blood & Lymphoreticular System | heme
+% Hematopoese, anemias, hemostasia, neoplasias hematológicas e farmacologia de anticoagulantes e antineoplásicos.
+
+@cat Processos normais | Normal processes
+= Hematopoese; estrutura e função das hemácias, da hemoglobina, dos leucócitos e das plaquetas.
+= Hemostasia e coagulação.
+= Metabolismo do ferro, da vitamina B12 e do folato; grupos sanguíneos.
+- Hematopoese por idade (saco vitelino, fígado, baço, medula óssea) e fatores de crescimento (eritropoetina, trombopoetina, G-CSF) {fis,his}
+- Curva de dissociação da hemoglobina: desvio para a direita (ácido, CO2, 2,3-BPG, temperatura) e hemoglobina fetal {fis}
+- Esfregaço periférico: esquizócitos, esferócitos, células em alvo, drepanócitos, dacriócitos, acantócitos e pontilhado basófilo {his,pat}
+- Hemostasia primária (fator de von Willebrand, GPIb, GPIIb/IIIa, ADP, tromboxano A2) e secundária (cascata da coagulação) {fis}
+- Testes de coagulação: TP/INR, TTPa, tempo de sangramento, contagem de plaquetas, fibrinogênio e D-dímero {fis,pat}
+- Anticoagulantes naturais e fibrinólise: proteína C, proteína S, antitrombina e plasmina {fis}
+- Metabolismo do ferro: absorção duodenal (DMT1, ferroportina), transferrina, ferritina e hepcidina {fis,nut}
+- Absorção de B12 (fator intrínseco, íleo terminal) e de folato (jejuno); duração das reservas corporais {fis,nut}
+- Sistemas ABO e Rh; doença hemolítica do recém-nascido e imunoglobulina anti-D {imu}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Hemoglobinopatias, esferocitose hereditária, deficiências enzimáticas, hemofilias e doença de von Willebrand, entre outros.
+- Anemia falciforme: troca de glutamato por valina na beta-globina, crises vaso-oclusivas, autoesplenectomia, osteomielite por Salmonella; hidroxiureia aumenta a HbF {pat,gen}
+- Traço falciforme: necrose de papila renal e dificuldade de concentrar a urina {pat}
+- Talassemia alfa (deleções, doença da HbH, hidropisia fetal com Hb Barts) e beta (mutações pontuais, HbA2 elevada, fácies em esquilo, sobrecarga de ferro) {pat,gen}
+- Esferocitose hereditária: espectrina e anquirina, CHCM elevada, teste de fragilidade osmótica ou de ligação à EMA, esplenectomia {pat,gen}
+- Hemofilia A (fator VIII) e B (fator IX): hemartrose, TTPa prolongado e TP normal {pat,gen}
+- Doença de von Willebrand: sangramento mucocutâneo, tempo de sangramento prolongado, TTPa normal ou prolongado; desmopressina {pat}
+- Porfiria aguda intermitente (porfobilinogênio deaminase, dor abdominal, sintomas neuropsiquiátricos, hemina) e porfiria cutânea tarda (uroporfirinogênio descarboxilase, bolhas em áreas expostas ao sol) {bio,pat}
+- Fator V de Leiden e mutação da protrombina como trombofilias hereditárias {gen,pat}
+
+@cat Neoplasias | Neoplasms
+= Leucemias, linfomas, discrasias de plasmócitos, neoplasias mieloproliferativas e síndromes mielodisplásicas.
+- Leucemia linfoblástica aguda: crianças, TdT positivo, associação com síndrome de Down, t(12;21) de bom prognóstico {pat}
+- Leucemia mieloide aguda: bastonetes de Auer, mieloperoxidase positiva; leucemia promielocítica aguda com t(15;17), CIVD e ácido transretinoico {pat,far}
+- Leucemia mieloide crônica: t(9;22) BCR-ABL (cromossomo Philadelphia), fosfatase alcalina leucocitária baixa, imatinibe {pat,far}
+- Leucemia linfocítica crônica: idosos, CD5 e CD23 positivos, células esmagadas (smudge cells), anemia hemolítica autoimune {pat}
+- Leucemia de células pilosas: projeções citoplasmáticas, TRAP e BRAF V600E, aspirado seco, esplenomegalia, cladribina {pat}
+- Linfoma de Hodgkin: células de Reed-Sternberg (CD15, CD30), subtipo esclerose nodular, sintomas B {pat}
+- Linfomas não Hodgkin: folicular t(14;18) BCL-2, do manto t(11;14) ciclina D1, Burkitt t(8;14) MYC com padrão em céu estrelado, difuso de grandes células B {pat,gen}
+- Linfoma MALT gástrico e H. pylori; linfoma de células T do adulto (HTLV-1); micose fungoide e síndrome de Sézary {pat,mic}
+- Mieloma múltiplo: hipercalcemia, lesão renal, anemia e lesões ósseas líticas; pico monoclonal, proteína de Bence Jones, empilhamento de hemácias (rouleaux) {pat}
+- Gamopatia monoclonal de significado indeterminado e macroglobulinemia de Waldenström (IgM, hiperviscosidade) {pat}
+- Neoplasias mieloproliferativas com JAK2: policitemia vera, trombocitemia essencial e mielofibrose primária (dacriócitos) {pat,gen}
+- Síndromes mielodisplásicas e anomalia de pseudo-Pelger-Huët {pat}
+- Histiocitose de células de Langerhans: grânulos de Birbeck, CD1a e S-100 {pat}
+- Síndrome de lise tumoral: hiperuricemia, hiperpotassemia, hiperfosfatemia e hipocalcemia; alopurinol e rasburicase {pat,far}
+
+@cat Anemias, citopenias e policitemia | Anemias, cytopenias, and polycythemia
+= Anemias microcíticas, normocíticas e macrocíticas; anemias hemolíticas.
+= Citopenias e policitemias.
+- Abordagem pelo VCM: microcíticas (ferropriva, talassemia, doença crônica, sideroblástica, chumbo), normocíticas e macrocíticas {pat}
+- Anemia ferropriva vs anemia de doença crônica: ferritina, capacidade total de ligação do ferro, saturação de transferrina e papel da hepcidina {pat,fis}
+- Anemia sideroblástica: ALA sintase, deficiência de B6, álcool e chumbo; sideroblastos em anel {pat,bio}
+- Intoxicação por chumbo: inibição da ALA desidratase e da ferroquelatase, pontilhado basófilo, linhas de chumbo; quelação com succímero, EDTA ou dimercaprol {pat,far}
+- Anemia megaloblástica por B12 vs folato: ácido metilmalônico, homocisteína e sintomas neurológicos (degeneração combinada subaguda) apenas na falta de B12 {pat,nut}
+- Anemia perniciosa: anticorpos contra fator intrínseco e células parietais, gastrite atrófica {pat,imu}
+- Hemólise extravascular vs intravascular: haptoglobina, LDH, bilirrubina indireta e reticulócitos {pat}
+- Anemia hemolítica autoimune quente (IgG) e fria (IgM, Mycoplasma, mononucleose); teste de Coombs direto {pat,imu}
+- Anemia hemolítica microangiopática: púrpura trombocitopênica trombótica (ADAMTS13), síndrome hemolítico-urêmica (E. coli O157:H7), CIVD e próteses valvares {pat}
+- Hemoglobinúria paroxística noturna: perda de CD55 e CD59 por defeito na âncora GPI, trombose, eculizumabe {pat,imu}
+- Anemia aplásica e suas causas (fármacos, vírus, radiação), anemia de Fanconi; aplasia pura de série vermelha por parvovírus B19 {pat,mic}
+- Neutropenia e agranulocitose por fármacos: clozapina, carbamazepina, propiltiouracil e metimazol {far,pat}
+- Policitemia primária vs secundária (hipóxia, tumores produtores de eritropoetina) {pat,fis}
+
+@cat Distúrbios da coagulação | Coagulation disorders
+= Distúrbios hemorrágicos.
+= Trombofilias.
+- Púrpura trombocitopênica imune: anticorpos contra GPIIb/IIIa, trombocitopenia isolada, corticoides e imunoglobulina intravenosa {pat,imu}
+- Trombocitopenia induzida por heparina: anticorpos contra o complexo PF4-heparina, trombose paradoxal, suspensão de toda heparina {pat,far}
+- Coagulação intravascular disseminada: consumo de fatores e plaquetas, D-dímero elevado; sepse, trauma, leucemia promielocítica e complicações obstétricas {pat}
+- Síndrome de Bernard-Soulier (GPIb) e trombastenia de Glanzmann (GPIIb/IIIa) {pat,gen}
+- Deficiência de vitamina K (recém-nascido, antibióticos, má absorção): fatores II, VII, IX e X e proteínas C e S {pat,nut}
+- Trombofilias: fator V de Leiden, mutação G20210A da protrombina, deficiências de antitrombina, de proteína C e de proteína S, síndrome antifosfolípide {pat}
+- Tríade de Virchow e trombose venosa profunda {pat}
+
+@cat Distúrbios traumáticos, mecânicos e vasculares | Traumatic, mechanical, and vascular disorders
+= Por exemplo, ruptura esplênica e hiperesplenismo.
+- Ruptura esplênica no trauma abdominal e na mononucleose infecciosa {pat,ana}
+- Hiperesplenismo e crise de sequestro esplênico na anemia falciforme {pat}
+- Linfedema e obstrução linfática (filariose, pós-mastectomia) {pat}
+
+@cat Farmacologia hematológica e efeitos adversos | Pharmacology and adverse effects of drugs on the hematologic system
+= Efeitos adversos de fármacos sobre o sistema hematológico.
+= Anticoagulantes, antiplaquetários, trombolíticos, agentes hematopoéticos e antineoplásicos.
+- Heparina não fracionada (ativa a antitrombina, monitorização pelo TTPa, reversão com protamina) vs heparina de baixo peso molecular {far}
+- Varfarina: antagonista da vitamina K, monitorização pelo INR, necrose cutânea por queda precoce de proteína C, teratogenicidade, reversão com vitamina K e complexo protrombínico {far}
+- Anticoagulantes orais diretos: inibidores do fator Xa (rivaroxabana, apixabana) e da trombina (dabigatrana); antídotos andexanete alfa e idarucizumabe {far}
+- Antiplaquetários: aspirina (COX), clopidogrel e ticagrelor (P2Y12), abciximabe (GPIIb/IIIa), dipiridamol e cilostazol (fosfodiesterase) {far}
+- Trombolíticos (alteplase) e contraindicações; ácido tranexâmico como antifibrinolítico {far}
+- Agentes hematopoéticos: eritropoetina, filgrastim, romiplostim e eltrombopague {far}
+- Antineoplásicos e toxicidades: metotrexato (resgate com leucovorina), 5-fluoruracila, citarabina, ciclofosfamida (cistite hemorrágica, mesna), cisplatina (nefro e ototoxicidade), doxorrubicina (cardiotoxicidade, dexrazoxano), bleomicina (fibrose pulmonar), vincristina (neuropatia) {far}
+- Terapias-alvo: imatinibe, rituximabe, trastuzumabe, bortezomibe e inibidores de checkpoint (PD-1, CTLA-4) com seus eventos adversos imunomediados {far,imu}
+- Metemoglobinemia por fármacos (dapsona, benzocaína, nitritos) e tratamento com azul de metileno {far,bio}
+
+@sys comportamento | Saúde comportamental | Behavioral Health | neuro
+% Psicologia, psiquiatria e psicofarmacologia. Na prova, as questões costumam trazer o caso clínico e pedir o diagnóstico, o mecanismo de defesa ou o efeito adverso do fármaco.
+
+@cat Processos normais | Normal processes
+= Processos psicológicos, cognitivos e comportamentais.
+= Princípios de aprendizagem, motivação e emoção.
+= Mecanismos de defesa.
+- Condicionamento clássico e operante: reforço positivo e negativo, punição, extinção e esquemas de reforço (o de razão variável resiste mais à extinção) {com}
+- Mecanismos de defesa imaturos e maduros: negação, projeção, deslocamento, cisão (splitting), formação reativa, regressão, sublimação, humor, altruísmo e supressão {com}
+- Transferência e contratransferência na relação médico-paciente {com}
+- Estágios do sono e ondas do EEG (beta, alfa, teta, fusos e complexos K, delta, sono REM) e os neurotransmissores de cada fase {fis,com}
+- Inteligência, testes de QI e testes projetivos {com}
+
+@cat Transtornos psicóticos | Psychotic disorders
+= Esquizofrenia e outros transtornos psicóticos.
+- Esquizofrenia: sintomas positivos, negativos e cognitivos; vias dopaminérgicas mesolímbica e mesocortical {com,pat}
+- Transtorno psicótico breve, esquizofreniforme e esquizoafetivo; transtorno delirante; diferenças pela duração dos sintomas {com}
+- Delirium vs psicose primária: flutuação do nível de consciência e causa orgânica {com}
+
+@cat Transtornos do humor | Mood disorders
+= Transtornos depressivos e transtornos bipolares.
+- Transtorno depressivo maior: critérios e especificadores (melancólico, atípico, sazonal, com sintomas psicóticos, periparto) {com}
+- Transtorno bipolar tipo I vs tipo II, ciclotimia e transtorno depressivo persistente (distimia) {com}
+- Avaliação do risco de suicídio: fatores de risco e de proteção {com}
+- Luto normal vs episódio depressivo maior {com}
+
+@cat Ansiedade, transtorno obsessivo-compulsivo e trauma | Anxiety disorders; obsessive-compulsive and related disorders; trauma- and stressor-related disorders
+= Transtornos de ansiedade.
+= Transtorno obsessivo-compulsivo e transtornos relacionados.
+= Transtornos relacionados a trauma e a estressores.
+- Ansiedade generalizada, transtorno de pânico, agorafobia, fobia específica e fobia social {com}
+- Transtorno obsessivo-compulsivo, transtorno dismórfico corporal, tricotilomania e acumulação; associação com tiques {com}
+- Transtorno de estresse pós-traumático vs transtorno de estresse agudo (pela duração) e transtorno de adaptação {com}
+- Tratamento: terapia cognitivo-comportamental, exposição, ISRS e uso de curto prazo de benzodiazepínicos {far,com}
+
+@cat Transtornos somáticos, factícios e dissociativos | Somatic symptom and related disorders; factitious disorders; dissociative disorders
+= Transtornos de sintomas somáticos e relacionados.
+= Transtornos factícios.
+= Transtornos dissociativos.
+- Transtorno de sintomas somáticos, transtorno de ansiedade de doença e transtorno conversivo (sintomas neurológicos funcionais) {com}
+- Transtorno factício (Munchausen e imposto a outro) vs simulação (malingering): ganho primário vs ganho secundário {com}
+- Despersonalização, desrealização, amnésia dissociativa e transtorno dissociativo de identidade {com}
+
+@cat Transtornos alimentares e do neurodesenvolvimento | Feeding and eating disorders; neurodevelopmental disorders
+= Transtornos alimentares.
+= Transtornos do neurodesenvolvimento e transtornos diagnosticados geralmente na infância.
+- Anorexia nervosa: baixo peso, amenorreia, osteopenia e síndrome de realimentação (hipofosfatemia) {com,nut}
+- Bulimia nervosa (peso normal, sinal de Russell, aumento das parótidas, alcalose metabólica hipopotassêmica) e transtorno de compulsão alimentar {com,nut}
+- Transtorno do déficit de atenção e hiperatividade: sintomas em mais de um ambiente; estimulantes e atomoxetina {com,far}
+- Transtorno do espectro autista, deficiência intelectual, síndrome de Tourette, transtorno de conduta e transtorno opositor desafiador {com}
+- Causas genéticas de atraso do desenvolvimento: síndrome de Rett (MECP2) e X frágil {gen,com}
+
+@cat Transtornos de personalidade | Personality disorders
+= Transtornos de personalidade dos grupos A, B e C.
+- Grupo A, excêntricos: paranoide, esquizoide e esquizotípica {com}
+- Grupo B, dramáticos: antissocial, borderline (terapia comportamental dialética), histriônica e narcisista {com}
+- Grupo C, ansiosos: evitativa, dependente e obsessivo-compulsiva (egossintônica, diferente do TOC) {com}
+
+@cat Substâncias, sono, sexualidade e comportamentos psicossociais | Substance use disorders; sleep-wake disorders; sexual dysfunctions; psychosocial disorders and behaviors
+= Transtornos por uso de substâncias, intoxicação e abstinência.
+= Aspectos comportamentais dos transtornos do sono e da vigília.
+= Disfunções sexuais e disforia de gênero.
+= Transtornos e comportamentos psicossociais, por exemplo suicídio, violência, abuso e negligência.
+- Intoxicação e abstinência por álcool, opioides, benzodiazepínicos, cocaína, anfetaminas, cannabis, fenciclidina, LSD e nicotina {com,far}
+- Abstinência alcoólica: tremor, alucinose, convulsões e delirium tremens; tratamento com benzodiazepínicos {com,far}
+- Síndrome de Wernicke-Korsakoff: tiamina antes da glicose, lesão dos corpos mamilares {nut,pat}
+- Tratamento da dependência: naltrexona, acamprosato, dissulfiram, metadona, buprenorfina, vareniclina e bupropiona {far}
+- Entrevista motivacional e estágios de mudança {com}
+- Narcolepsia (orexina, cataplexia), insônia, terror noturno e sonambulismo (sono N3) {com,fis}
+- Disfunções sexuais, disforia de gênero e transtornos parafílicos {com}
+- Violência por parceiro íntimo, abuso infantil e abuso do idoso: sinais e conduta {com}
+
+@cat Psicofarmacologia e efeitos adversos | Psychopharmacology and adverse effects of drugs on behavior
+= Efeitos adversos de fármacos sobre o comportamento.
+= Antipsicóticos, antidepressivos, ansiolíticos, estabilizadores do humor e estimulantes.
+- Antipsicóticos típicos (haloperidol): distonia aguda, acatisia, parkinsonismo, discinesia tardia, hiperprolactinemia e síndrome neuroléptica maligna (dantrolene, bromocriptina) {far}
+- Antipsicóticos atípicos: síndrome metabólica (olanzapina), agranulocitose (clozapina) e prolongamento do QT {far}
+- ISRS e IRSN; tricíclicos (efeitos anticolinérgicos, cardiotoxicidade tratada com bicarbonato de sódio); IMAO e crise hipertensiva com tiramina {far}
+- Síndrome serotoninérgica: hipertermia, clônus e hiper-reflexia; ciproeptadina {far}
+- Antidepressivos atípicos: bupropiona (convulsões, sem disfunção sexual), mirtazapina (ganho de peso, sedação), trazodona (priapismo) {far}
+- Lítio: diabetes insípido nefrogênico, hipotireoidismo, tremor e anomalia de Ebstein; interação com tiazídicos, IECA e AINEs {far}
+- Valproato, carbamazepina e lamotrigina como estabilizadores do humor e seus efeitos adversos {far}
+- Benzodiazepínicos (aumentam a frequência de abertura do canal GABA-A) vs barbitúricos (aumentam a duração); buspirona {far}
+
+@sys neuro | Sistema nervoso e órgãos dos sentidos | Nervous System & Special Senses | neuro
+% Neuroanatomia, neurofisiologia, neuropatologia e neurofarmacologia, com olho e ouvido. É um dos sistemas mais cobrados em anatomia aplicada: lesão, localização e déficit.
+
+@cat Processos normais | Normal processes
+= Embriologia do sistema nervoso.
+= Neuroanatomia e neurofisiologia: sistema nervoso central, periférico e autônomo; neurotransmissão.
+= Circulação cerebral e líquor.
+= Órgãos dos sentidos: olho, ouvido, olfato e paladar.
+- Embriologia: tubo neural, crista neural e derivados, prosencéfalo, mesencéfalo e rombencéfalo {ana}
+- Neurônios, células da glia, mielina (oligodendrócitos vs células de Schwann) e potencial de ação {his,fis}
+- Origem dos neurotransmissores: noradrenalina (locus ceruleus), dopamina (área tegmentar ventral e substância negra), serotonina (núcleos da rafe), acetilcolina (núcleo basal de Meynert) {fis,bio}
+- Barreira hematoencefálica e órgãos circunventriculares (área postrema) {fis,his}
+- Núcleos do hipotálamo e funções: supraquiasmático, ventromedial, lateral, supraóptico e paraventricular {fis,ana}
+- Tálamo, núcleos da base (vias direta e indireta), cerebelo e sistema límbico {ana,fis}
+- Vias da medula espinal (coluna dorsal, espinotalâmica, corticospinal lateral) e síndromes medulares: Brown-Séquard, siringomielia, degeneração combinada subaguda, tabes dorsalis {ana,pat}
+- Nervos cranianos: núcleos, forames, funções e reflexos (corneano, pupilar, faríngeo) {ana}
+- Territórios das artérias cerebrais, polígono de Willis e déficits de cada território {ana}
+- Líquor: produção no plexo coroide, circulação, absorção e hidrocefalia comunicante vs não comunicante {fis,ana}
+- Sistema nervoso autônomo: receptores alfa, beta, muscarínicos e nicotínicos e os efeitos de cada um {fis,far}
+- Vias visuais e defeitos de campo (hemianopsia bitemporal, quadrantanopsias), reflexo pupilar e oftalmoplegia internuclear {ana,fis}
+- Audição e equilíbrio: condução aérea e óssea, testes de Weber e Rinne, sistema vestibular {ana,fis}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Defeitos do tubo neural, malformações do sistema nervoso e doenças neurológicas hereditárias.
+- Defeitos do tubo neural: espinha bífida oculta, meningocele, mielomeningocele e anencefalia; AFP elevada e prevenção com ácido fólico {ana,nut}
+- Malformações de Chiari I e II, Dandy-Walker e holoprosencefalia (sonic hedgehog) {ana,gen}
+- Siringomielia: perda de dor e temperatura em capa (cape-like) {ana,pat}
+- Doenças neurocutâneas: neurofibromatose tipo 1 (manchas café com leite, nódulos de Lisch) e tipo 2 (schwannomas vestibulares bilaterais), esclerose tuberosa, Sturge-Weber e von Hippel-Lindau {gen,pat}
+- Ataxia de Friedreich (frataxina, cardiomiopatia hipertrófica), doença de Huntington (CAG, atrofia do caudado) e atrofia muscular espinal (SMN1) {gen,pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Meningite, encefalite e abscesso cerebral.
+= Doenças desmielinizantes e autoimunes do sistema nervoso.
+- Meningite bacteriana por idade (estreptococo do grupo B, E. coli, Listeria, S. pneumoniae, N. meningitidis, H. influenzae) e perfil do líquor bacteriano, viral e fúngico ou tuberculoso {mic,pat}
+- Encefalite herpética (lobo temporal), raiva (corpúsculos de Negri) e leucoencefalopatia multifocal progressiva (vírus JC) {mic,pat}
+- Criptococose (tinta da China, antígeno capsular), toxoplasmose (lesões em anel) e linfoma primário do sistema nervoso central no HIV {mic}
+- Neurossífilis, doença de Lyme (paralisia facial bilateral), poliomielite, botulismo e tétano {mic}
+- Esclerose múltipla: placas periventriculares, bandas oligoclonais, neurite óptica, oftalmoplegia internuclear; interferon beta, natalizumabe {pat,imu,far}
+- Síndrome de Guillain-Barré (Campylobacter, dissociação albuminocitológica) e polineuropatia desmielinizante inflamatória crônica {pat,imu}
+- Miastenia gravis (anticorpos contra o receptor de acetilcolina, timoma) vs síndrome miastênica de Lambert-Eaton (canais de cálcio pré-sinápticos, carcinoma de pequenas células) {imu,pat}
+- Doenças priônicas: demência rapidamente progressiva com mioclonias {pat}
+
+@cat Neoplasias | Neoplasms
+= Tumores primários do sistema nervoso central e metástases.
+= Tumores de nervos periféricos e tumores do olho.
+- Tumores de adultos: glioblastoma (pseudopaliçada, cruza o corpo caloso), meningioma (corpos psamomatosos), schwannoma (S-100, ângulo pontocerebelar), oligodendroglioma (aspecto de ovo frito) e adenoma hipofisário {pat}
+- Tumores da infância: astrocitoma pilocítico (fibras de Rosenthal), meduloblastoma (rosetas de Homer-Wright), ependimoma e craniofaringioma (calcificações, origem na bolsa de Rathke) {pat}
+- Metástases cerebrais (pulmão, mama, melanoma, rim) na junção entre substância branca e cinzenta {pat}
+- Retinoblastoma (gene RB, leucocoria) e melanoma de úvea {pat,gen}
+- Neuroblastoma: tumor da crista neural, N-myc, catecolaminas urinárias, opsoclonia-mioclonia {pat}
+
+@cat AVC, trauma, neurodegeneração e outros distúrbios | Cerebrovascular disease; traumatic and mechanical disorders; neurodegenerative, movement, and seizure disorders
+= Doença cerebrovascular.
+= Trauma craniano e da medula espinal; herniações.
+= Doenças dos nervos periféricos e da junção neuromuscular.
+= Doenças neurodegenerativas e distúrbios do movimento; epilepsias; cefaleias; distúrbios do sono.
+= Doenças do olho e do ouvido.
+- AVC isquêmico: síndromes das artérias cerebrais média, anterior e posterior, lacunas e síndromes de tronco (Wallenberg, Weber) {ana,pat}
+- Hematoma epidural (artéria meníngea média, intervalo lúcido) e subdural (veias ponte) {ana,pat}
+- Hemorragia subaracnóidea (aneurisma sacular, pior cefaleia da vida, vasoespasmo e nimodipino) e intraparenquimatosa hipertensiva (aneurismas de Charcot-Bouchard) {ana,pat,far}
+- Herniações uncal (nervo oculomotor), subfalcina e tonsilar {ana,pat}
+- Lesões de nervos periféricos: radial, ulnar, mediano, axilar, musculocutâneo e fibular comum {ana}
+- Doença de Alzheimer: placas de beta-amiloide, emaranhados de tau, ApoE4; inibidores da colinesterase e memantina {pat,far,gen}
+- Demência frontotemporal, demência com corpos de Lewy (alucinações visuais, sensibilidade a antipsicóticos), demência vascular e hidrocefalia de pressão normal (marcha, incontinência e demência) {pat}
+- Doença de Parkinson (corpos de Lewy, substância negra) e tratamento: levodopa com carbidopa, agonistas dopaminérgicos, inibidores da MAO-B e da COMT {pat,far}
+- Esclerose lateral amiotrófica: sinais de neurônio motor superior e inferior, SOD1, riluzol {pat,far}
+- Distúrbios do movimento: tremor essencial, coreia, atetose, hemibalismo (núcleo subtalâmico) e distonia {pat,ana}
+- Epilepsias: crises focais e generalizadas, crise de ausência (ponta-onda de 3 Hz, etossuximida) e estado de mal epiléptico {pat,far}
+- Cefaleias: enxaqueca (triptanos e profilaxia), em salvas (oxigênio), tensional e arterite de células gigantes {pat,far}
+- Vertigem periférica (vertigem posicional paroxística benigna, doença de Ménière, neurite vestibular) vs central {pat}
+- Glaucoma de ângulo aberto e fechado, catarata, degeneração macular, retinopatia diabética e hipertensiva, oclusão da artéria central da retina {pat}
+- Síndrome de Horner (ptose, miose, anidrose) por tumor de Pancoast ou dissecção carotídea {ana,pat}
+- Pupila de Argyll Robertson (neurossífilis) e defeito pupilar aferente de Marcus Gunn {ana}
+
+@cat Neurofarmacologia e efeitos adversos | Neuropharmacology and adverse effects of drugs on the nervous system
+= Efeitos adversos de fármacos sobre o sistema nervoso.
+= Fármacos autonômicos, anestésicos, analgésicos e opioides, anticonvulsivantes, fármacos para doença de Parkinson e para demência.
+- Colinérgicos (betanecol, neostigmina, piridostigmina, fisostigmina) e anticolinérgicos (atropina, escopolamina, oxibutinina) {far}
+- Intoxicação por organofosforados (síndrome muscarínica e nicotínica) vs intoxicação anticolinérgica (pele seca e quente, midríase, retenção urinária, delirium) {far}
+- Simpatomiméticos e simpatolíticos: adrenalina, noradrenalina, dopamina, dobutamina, fenilefrina, isoproterenol, clonidina, alfa e betabloqueadores {far}
+- Anestésicos inalatórios (coeficiente sangue-gás, concentração alveolar mínima, hipertermia maligna e dantrolene) e intravenosos (propofol, cetamina, etomidato) {far}
+- Anestésicos locais: ésteres vs amidas, ordem de bloqueio das fibras nervosas e toxicidade {far}
+- Bloqueadores neuromusculares despolarizantes (succinilcolina, hiperpotassemia) e não despolarizantes (reversão com neostigmina ou sugamadex) {far}
+- Opioides: receptores mu, delta e kappa; depressão respiratória, miose e constipação; naloxona; convulsões com tramadol {far}
+- Anticonvulsivantes: fenitoína (hiperplasia gengival, nistagmo, indução do CYP450), carbamazepina (SIADH, agranulocitose), valproato (hepatotoxicidade, defeitos do tubo neural), lamotrigina (Stevens-Johnson), topiramato (cálculos renais) {far}
+- Triptanos (agonistas 5-HT1B/1D) e contraindicação na doença coronariana {far}
+- Fármacos para glaucoma: análogos de prostaglandina, betabloqueadores, inibidores da anidrase carbônica, agonistas alfa-2 e colinomiméticos {far}
+
+@sys pele | Pele e tecido subcutâneo | Skin & Subcutaneous Tissue | msk
+% Dermatologia básica: histologia da pele, lesões elementares, infecções, doenças bolhosas e neoplasias cutâneas. As questões costumam trazer imagem clínica ou histológica.
+
+@cat Processos normais | Normal processes
+= Estrutura e função da pele, dos anexos e das mucosas.
+= Cicatrização de feridas.
+- Camadas da epiderme (basal, espinhosa, granulosa, lúcida, córnea) e células (queratinócitos, melanócitos, Langerhans, Merkel) {his}
+- Glândulas écrinas, apócrinas e sebáceas; folículo piloso {his}
+- Lesões elementares e termos histológicos: mácula, pápula, placa, vesícula, bolha, pústula, nódulo; acantose, hiperceratose, paraceratose, acantólise e espongiose {pat}
+- Fases da cicatrização e fatores que a atrasam {pat,nut}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Distúrbios congênitos e hereditários da pele e do tecido subcutâneo.
+- Epidermólise bolhosa: forma simples (queratinas 5 e 14) e forma distrófica (colágeno tipo VII); bolhas após trauma mínimo {gen,his}
+- Ictiose vulgar (filagrina) e ictiose ligada ao X (deficiência de sulfatase de esteroides) {gen,pat}
+- Manifestações cutâneas das síndromes neurocutâneas: manchas café com leite, efélides axilares, máculas hipocrômicas em folha (ash-leaf) e angiofibromas faciais {gen,pat}
+- Síndrome de Ehlers-Danlos: pele hiperextensível e frágil, cicatrizes atróficas e hipermobilidade articular {gen,bio}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Infecções bacterianas, virais, fúngicas e parasitárias da pele.
+= Dermatites, doenças papuloescamosas e doenças bolhosas.
+- Impetigo (crostas melicéricas), erisipela, celulite, fasciíte necrosante e síndrome da pele escaldada estafilocócica {mic,pat}
+- Exantemas virais: sarampo, rubéola, eritema infeccioso (parvovírus B19), roséola (HHV-6), varicela e doença mão-pé-boca (coxsackievírus A) {mic}
+- Herpes simples, herpes-zóster, molusco contagioso e verrugas por HPV {mic}
+- Micoses superficiais: dermatofitoses (tinhas), pitiríase versicolor (Malassezia, aspecto de espaguete com almôndegas) e candidíase {mic}
+- Escabiose e pediculose {mic}
+- Dermatite atópica, dermatite de contato alérgica e irritativa, urticária {imu,pat}
+- Psoríase (hiperplasia epidérmica, microabscessos de Munro, sinal de Auspitz), líquen plano (pápulas poligonais, purpúricas e pruriginosas; hepatite C) e pitiríase rósea (placa-mãe) {pat}
+- Pênfigo vulgar (anticorpos contra desmogleína, acantólise, sinal de Nikolsky) vs penfigoide bolhoso (hemidesmossomos, bolhas tensas) {imu,pat}
+- Dermatite herpetiforme (IgA, doença celíaca), eritema multiforme, síndrome de Stevens-Johnson e necrólise epidérmica tóxica {imu,pat}
+- Eritema nodoso, acantose nigricans (resistência insulínica, câncer gástrico) e sinal de Leser-Trélat {pat}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias benignas, pré-malignas e malignas, incluindo melanoma e câncer de pele não melanoma.
+- Ceratose seborreica, ceratose actínica (pré-maligna) e nevos melanocíticos {pat}
+- Carcinoma basocelular: pápula perolada com telangiectasias, paliçada periférica, mutação em PTCH {pat}
+- Carcinoma espinocelular: pérolas córneas, exposição solar e arsênio; ceratoacantoma {pat}
+- Melanoma: regra ABCDE, profundidade de Breslow como principal fator prognóstico, BRAF V600E e vemurafenibe, S-100 {pat,far}
+- Lesões vasculares: hemangioma infantil, angiossarcoma, sarcoma de Kaposi (HHV-8) e angiomatose bacilar (Bartonella) {pat,mic}
+
+@cat Trauma, pigmentação e efeitos adversos de fármacos | Traumatic and mechanical disorders; disorders of pigmentation; adverse effects of drugs on the skin
+= Queimaduras e lesões por pressão.
+= Distúrbios da pigmentação.
+= Efeitos adversos de fármacos sobre a pele.
+- Classificação das queimaduras pela profundidade e regra dos nove para superfície corporal {pat,ana}
+- Lesão por pressão: estágios e locais típicos {pat}
+- Vitiligo (perda de melanócitos), albinismo (tirosinase), melasma e efélides {pat,bio}
+- Farmacodermias: fotossensibilidade (tetraciclinas, amiodarona, sulfas), DRESS e Stevens-Johnson (sulfas, anticonvulsivantes, alopurinol) {far}
+- Isotretinoína (teratogenicidade), minoxidil e finasterida {far}
+
+@sys msk | Sistema musculoesquelético | Musculoskeletal System | msk
+% Anatomia dos membros e do dorso, fisiologia do músculo e do osso, reumatologia, ortopedia e tumores ósseos.
+
+@cat Processos normais | Normal processes
+= Embriologia; anatomia dos membros e do dorso.
+= Estrutura e função do osso, da cartilagem, das articulações, do músculo esquelético, dos tendões e dos ligamentos.
+= Metabolismo ósseo.
+- Ossificação endocondral e intramembranosa; acondroplasia (FGFR3) {his,gen}
+- Contração do músculo esquelético: sarcômero, acoplamento excitação-contração, receptores de rianodina e de di-hidropiridina {fis,his}
+- Fibras musculares tipo I (oxidativas, lentas) e tipo II (glicolíticas, rápidas) {fis}
+- Plexo braquial e suas lesões: Erb-Duchenne, Klumpke e escápula alada por lesão do nervo torácico longo {ana}
+- Manguito rotador (supraespinal, infraespinal, redondo menor, subescapular) e testes clínicos {ana}
+- Joelho: ligamentos cruzados e colaterais, meniscos, tríade infeliz {ana}
+- Nervos do membro inferior: femoral, obturatório, ciático, tibial, fibular comum (pé caído), glúteo superior (sinal de Trendelenburg) e glúteo inferior {ana}
+- Remodelação óssea: osteoblastos, osteoclastos, RANKL e osteoprotegerina, PTH, vitamina D e calcitonina {fis,his}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Malformações e doenças hereditárias do sistema musculoesquelético.
+- Displasia do desenvolvimento do quadril (manobras de Ortolani e Barlow) {ana,pat}
+- Osteogênese imperfeita: colágeno tipo I, escleras azuladas, fraturas múltiplas e perda auditiva {gen,bio}
+- Distrofias musculares de Duchenne e Becker (distrofina, sinal de Gowers, pseudo-hipertrofia de panturrilhas) e distrofia miotônica {gen,pat}
+- Pé torto congênito, doença de Legg-Calvé-Perthes e epifisiólise da cabeça femoral (slipped capital femoral epiphysis) {pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Osteomielite e artrite séptica.
+= Artrite reumatoide, espondiloartropatias, doenças do tecido conjuntivo e miosites.
+- Osteomielite: S. aureus, Salmonella na anemia falciforme, Pseudomonas em usuários de drogas injetáveis; mal de Pott (tuberculose vertebral) {mic,pat}
+- Artrite séptica e artrite gonocócica (adulto jovem sexualmente ativo, tenossinovite, lesões cutâneas) {mic}
+- Artrite reumatoide: pannus, fator reumatoide, anti-CCP, deformidades em pescoço de cisne e em botoeira, HLA-DR4 {imu,pat}
+- Espondiloartropatias soronegativas associadas ao HLA-B27: espondilite anquilosante, artrite psoriásica, artrite reativa e artrite enteropática {imu,gen}
+- Lúpus eritematoso sistêmico: critérios, autoanticorpos, endocardite de Libman-Sacks, nefrite e lúpus induzido por fármacos (anti-histona) {imu,pat}
+- Esclerose sistêmica difusa (anti-Scl-70) e limitada (síndrome CREST, anticentrômero) {imu}
+- Síndrome de Sjögren (anti-Ro/La, risco de linfoma), polimiosite e dermatomiosite (anti-Jo-1, heliótropo, pápulas de Gottron, associação com câncer) {imu,pat}
+- Polimialgia reumática, fibromialgia e doença mista do tecido conjuntivo (anti-U1 RNP) {pat,imu}
+
+@cat Neoplasias | Neoplasms
+= Tumores ósseos e de partes moles.
+- Osteossarcoma: metáfise ao redor do joelho, triângulo de Codman, associação com retinoblastoma e doença de Paget {pat}
+- Sarcoma de Ewing: diáfise, t(11;22), aspecto em casca de cebola {pat,gen}
+- Tumor de células gigantes (epífise, bolhas de sabão), osteocondroma, osteoma osteoide (dor noturna que melhora com AINE) e condrossarcoma {pat}
+- Rabdomiossarcoma (desmina, miogenina) e lipossarcoma {pat}
+- Metástases ósseas: próstata (blásticas), mama, pulmão, rim e tireoide {pat}
+
+@cat Distúrbios degenerativos, metabólicos e traumáticos | Degenerative, metabolic, traumatic, and mechanical disorders
+= Osteoartrite, osteoporose, gota e doença óssea metabólica.
+= Fraturas, lesões de nervos e síndrome compartimental.
+- Osteoartrite vs artrite reumatoide: nódulos de Heberden e Bouchard, articulações acometidas e duração da rigidez matinal {pat}
+- Osteoporose primária e secundária (corticoides, hipertireoidismo); densitometria óssea {pat,fis}
+- Osteomalácia e raquitismo por deficiência de vitamina D (rosário raquítico) {nut,pat}
+- Doença de Paget do osso (fosfatase alcalina elevada, osteoclastos gigantes) e osteopetrose (anidrase carbônica II) {pat}
+- Gota (urato monossódico, cristais em agulha com birrefringência negativa) vs pseudogota (pirofosfato de cálcio, cristais romboides com birrefringência positiva) {pat,bio}
+- Síndrome do túnel do carpo (nervo mediano), epicondilites e tenossinovite de De Quervain {ana,pat}
+- Fraturas clássicas: escafoide (necrose avascular), colo cirúrgico do úmero (nervo axilar), diáfise do úmero (nervo radial) e colo do fêmur no idoso {ana}
+- Síndrome compartimental e rabdomiólise (creatinoquinase, mioglobinúria, hiperpotassemia) {pat}
+
+@cat Farmacologia e efeitos adversos | Pharmacology and adverse effects of drugs on the musculoskeletal system
+= AINEs, fármacos antirreumáticos modificadores de doença (DMARDs), fármacos para gota e osteoporose, bloqueadores neuromusculares.
+= Efeitos adversos de fármacos sobre o sistema musculoesquelético.
+- AINEs e inibidores seletivos da COX-2: úlcera, lesão renal e risco cardiovascular {far}
+- Paracetamol: hepatotoxicidade pelo NAPQI e acetilcisteína {far}
+- DMARDs: metotrexato (inibe a di-hidrofolato redutase), hidroxicloroquina (retinopatia), sulfassalazina, leflunomida e anti-TNF {far}
+- Gota aguda (AINEs, colchicina, corticoides) e crônica (alopurinol e febuxostate inibem a xantina oxidase; probenecida; pegloticase) {far}
+- Osteoporose: bifosfonatos (esofagite, osteonecrose de mandíbula), teriparatida, denosumabe (anti-RANKL) e raloxifeno {far}
+- Efeitos adversos musculoesqueléticos: miopatia por estatinas, tendinopatia e ruptura de tendão por fluoroquinolonas, osteoporose por corticoides {far}
+
+@sys cardio | Sistema cardiovascular | Cardiovascular System | cv
+% Embriologia e fisiologia cardíaca, hemodinâmica, eletrocardiograma, patologia cardíaca e vascular e farmacologia cardiovascular.
+
+@cat Processos normais | Normal processes
+= Embriologia do coração e dos vasos.
+= Anatomia cardíaca, eletrofisiologia e mecânica do coração.
+= Hemodinâmica e regulação da pressão arterial; biologia vascular; metabolismo de lipoproteínas.
+- Embriologia: tubo cardíaco, septação, derivados dos arcos aórticos e circulação fetal (ducto venoso, forame oval, ducto arterioso) {ana}
+- Potencial de ação do miócito ventricular e da célula do nó sinoatrial; correntes iônicas de cada fase {fis}
+- Eletrocardiograma normal; intervalos PR, QRS e QT {fis}
+- Ciclo cardíaco (diagrama de Wiggers), alças pressão-volume e bulhas (B3, B4, desdobramentos) {fis}
+- Débito cardíaco, lei de Frank-Starling, pré-carga, pós-carga, contratilidade e fração de ejeção {fis}
+- Hemodinâmica: lei de Poiseuille, resistências em série e em paralelo, forças de Starling e edema {fis}
+- Barorreceptores, quimiorreceptores, sistema renina-angiotensina-aldosterona e peptídeo natriurético atrial {fis}
+- Anatomia coronariana, dominância e irrigação dos nós sinoatrial e atrioventricular {ana}
+- Sopros e manobras: estenose aórtica, insuficiência mitral, prolapso de valva mitral e cardiomiopatia hipertrófica; efeito da manobra de Valsalva, do agachamento e da elevação das pernas {fis}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Cardiopatias congênitas e anomalias vasculares.
+- Cardiopatias cianóticas (shunt da direita para a esquerda): tetralogia de Fallot, transposição das grandes artérias, tronco arterioso, atresia tricúspide e drenagem anômala total das veias pulmonares {ana,pat}
+- Cardiopatias acianóticas: comunicação interventricular, comunicação interatrial e persistência do canal arterial (indometacina fecha, prostaglandina E1 mantém aberto); síndrome de Eisenmenger {ana,far}
+- Coarctação da aorta: síndrome de Turner, erosão das costelas, valva aórtica bicúspide {ana,gen}
+- Associações: síndrome de Down (defeito do septo atrioventricular), DiGeorge (anomalias conotruncais), rubéola congênita (persistência do canal arterial), Marfan (dissecção de aorta), filho de mãe diabética (transposição) {gen}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Endocardite, miocardite e pericardite.
+= Febre reumática e vasculites.
+- Endocardite aguda (S. aureus) e subaguda (estreptococos do grupo viridans); valva tricúspide no usuário de droga injetável; Streptococcus gallolyticus e câncer colorretal; critérios de Duke; lesões de Janeway, nódulos de Osler e manchas de Roth {mic,pat}
+- Febre reumática: mimetismo molecular, critérios de Jones, corpos de Aschoff, células de Anitschkow e estenose mitral tardia {imu,pat}
+- Miocardite viral (coxsackievírus B) e doença de Chagas (cardiomiopatia dilatada, megaesôfago) {mic,pat}
+- Pericardite aguda (atrito, supradesnivelamento difuso de ST), tamponamento (tríade de Beck, pulso paradoxal) e pericardite constritiva {pat,fis}
+- Vasculites de grandes vasos (células gigantes, Takayasu), de médios (poliarterite nodosa, Kawasaki) e de pequenos (granulomatose com poliangiite, poliangiite microscópica, granulomatose eosinofílica com poliangiite, vasculite por IgA) {imu,pat}
+- Doença de Kawasaki: febre, conjuntivite, alterações de mucosa, linfadenomegalia e aneurismas coronarianos; aspirina e imunoglobulina intravenosa {pat,far}
+
+@cat Neoplasias | Neoplasms
+= Tumores do coração e dos vasos.
+- Mixoma atrial: átrio esquerdo, obstrução que lembra estenose mitral, síncope {pat}
+- Rabdomioma cardíaco e associação com esclerose tuberosa {pat,gen}
+- Metástases como os tumores mais frequentes do coração {pat}
+
+@cat Isquemia, arritmias, insuficiência cardíaca e valvopatias | Ischemic heart disease; dysrhythmias; heart failure and cardiomyopathies; valvular disease; hypertension and hypotension
+= Doença isquêmica do coração.
+= Arritmias.
+= Insuficiência cardíaca e cardiomiopatias.
+= Valvopatias.
+= Hipertensão e hipotensão.
+- Angina estável, instável e vasoespástica (Prinzmetal) {pat}
+- Infarto agudo do miocárdio: evolução histológica, troponina e complicações por período (arritmias, ruptura de parede livre, de septo e de músculo papilar, aneurisma, síndrome de Dressler) {pat,his}
+- Localização do infarto pelo ECG e artéria responsável {pat,ana}
+- Arritmias: fibrilação e flutter atrial, bloqueios atrioventriculares (primeiro grau, Mobitz I e II, terceiro grau), Wolff-Parkinson-White, torsades de pointes e síndrome do QT longo congênito {fis,pat}
+- Insuficiência cardíaca com fração de ejeção reduzida e preservada; falência esquerda e direita; macrófagos com hemossiderina no pulmão {pat,fis}
+- Cardiomiopatias: dilatada (álcool, doxorrubicina, Chagas, periparto), hipertrófica (genes da miosina, morte súbita em atletas) e restritiva (amiloidose, sarcoidose, hemocromatose) {pat,gen}
+- Valvopatias: estenose aórtica (calcificação, valva bicúspide, pulso parvus et tardus), insuficiência aórtica, estenose e insuficiência mitral, prolapso de valva mitral {pat,fis}
+- Hipertensão primária e secundária (estenose de artéria renal, hiperaldosteronismo, feocromocitoma, coarctação); emergência hipertensiva {pat}
+- Choque hipovolêmico, cardiogênico, distributivo (séptico, anafilático, neurogênico) e obstrutivo, com os parâmetros hemodinâmicos de cada um {fis,pat}
+- Síncope vasovagal e hipotensão ortostática {fis}
+
+@cat Distúrbios vasculares e traumáticos | Vascular disorders; traumatic and mechanical disorders
+= Aterosclerose, aneurisma e dissecção.
+= Doenças venosas e linfáticas.
+= Distúrbios traumáticos e mecânicos do coração e dos vasos.
+- Aterosclerose: estrias gordurosas, células espumosas, placa fibrosa e fatores de risco {pat}
+- Arteriolosclerose hialina (hipertensão, diabetes) e hiperplásica (casca de cebola, hipertensão maligna); esclerose de Mönckeberg {pat,his}
+- Aneurisma de aorta abdominal (aterosclerose, tabagismo) vs torácico (hipertensão, Marfan, sífilis terciária) {pat}
+- Dissecção de aorta: dor rasgada irradiada para o dorso, alargamento do mediastino, classificação de Stanford {pat}
+- Doença arterial periférica, isquemia mesentérica e fenômeno de Raynaud {pat}
+- Telangiectasia hemorrágica hereditária (Osler-Weber-Rendu) {gen,pat}
+- Varizes, tromboflebite e síndrome da veia cava superior {pat}
+- Trauma cardiovascular: ruptura traumática da aorta no istmo após desaceleração, contusão miocárdica e tamponamento por ferimento penetrante {pat,ana}
+
+@cat Farmacologia cardiovascular e efeitos adversos | Pharmacology and adverse effects of drugs on the cardiovascular system
+= Efeitos adversos de fármacos sobre o sistema cardiovascular.
+= Farmacologia cardiovascular.
+- Anti-hipertensivos: tiazídicos, IECA (tosse, angioedema), BRA, bloqueadores dos canais de cálcio di-hidropiridínicos e não di-hidropiridínicos, hidralazina e minoxidil {far}
+- Fármacos que reduzem mortalidade na insuficiência cardíaca com fração reduzida: IECA ou BRA, sacubitril-valsartana, betabloqueadores, espironolactona e inibidores de SGLT2 {far}
+- Digoxina: inibe a Na+/K+ ATPase; toxicidade com visão amarelada, arritmias e hiperpotassemia; fragmentos Fab antidigoxina {far}
+- Antiarrítmicos das classes I a IV, amiodarona (toxicidade pulmonar, tireoidiana e hepática) e adenosina {far}
+- Nitratos (cefaleia, tolerância, contraindicação com inibidores da PDE-5) e ranolazina {far}
+- Hipolipemiantes: estatinas (HMG-CoA redutase, miopatia), ezetimiba, fibratos, niacina (rubor), inibidores de PCSK9 e sequestradores de ácidos biliares {far}
+- Fármacos que prolongam o QT: antiarrítmicos IA e III, macrolídeos, antipsicóticos, ondansetrona e metadona {far}
+- Cardiotoxicidade por doxorrubicina e trastuzumabe; vasoespasmo coronariano por cocaína {far,pat}
+
+@sys resp | Sistema respiratório | Respiratory System | resp
+% Fisiologia respiratória, que costuma vir com gráficos e cálculos, mais infecções, doenças obstrutivas e restritivas, neoplasias e farmacologia.
+
+@cat Processos normais | Normal processes
+= Embriologia; anatomia das vias aéreas e dos pulmões.
+= Mecânica pulmonar, ventilação, perfusão, troca gasosa e transporte de gases.
+= Controle da respiração; mecanismos de defesa.
+- Desenvolvimento pulmonar e surfactante (pneumócitos tipo II, relação lecitina/esfingomielina) {ana,his}
+- Anatomia: brônquio principal direito e aspiração, segmentos pulmonares e relações do hilo {ana}
+- Volumes e capacidades pulmonares, espirometria, espaço morto anatômico e fisiológico {fis}
+- Complacência, tensão superficial e lei de Laplace {fis}
+- Relação ventilação/perfusão (V/Q) do ápice à base; shunt vs espaço morto {fis}
+- Gradiente alvéolo-arterial, equação do gás alveolar e causas de hipoxemia {fis}
+- Transporte de CO2 (bicarbonato, carbaminoemoglobina), efeito Haldane e efeito Bohr {fis}
+- Controle da respiração (quimiorreceptores centrais e periféricos) e adaptação à altitude {fis}
+- Defesas: transporte mucociliar, macrófagos alveolares e IgA {imu,his}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Por exemplo, fibrose cística e síndrome do desconforto respiratório neonatal.
+- Fibrose cística: canal CFTR, teste do suor, Pseudomonas e S. aureus, íleo meconial, infertilidade masculina e deficiência de vitaminas lipossolúveis {gen,fis}
+- Síndrome do desconforto respiratório neonatal: deficiência de surfactante, prematuridade, diabetes materno e corticoide antenatal {fis,pat}
+- Sequestro pulmonar, hipoplasia pulmonar (hérnia diafragmática congênita, oligoidrâmnio) e fístula traqueoesofágica {ana}
+- Deficiência de alfa-1 antitripsina: enfisema panacinar e cirrose {gen,pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Infecções das vias aéreas superiores e inferiores, incluindo tuberculose.
+= Asma, pneumonite de hipersensibilidade, doença pulmonar intersticial e sarcoidose.
+- Pneumonia típica (S. pneumoniae), atípica (Mycoplasma, Chlamydophila, Legionella), hospitalar e aspirativa; padrões lobar, broncopneumonia e intersticial {mic,pat}
+- Agentes por contexto: Klebsiella no etilista (escarro em geleia de groselha), S. aureus após influenza, Pseudomonas na fibrose cística e Pneumocystis no HIV {mic}
+- Tuberculose primária (complexo de Ghon) e secundária (cavitação apical); PPD e IGRA; esquema RIPE e efeitos adversos {mic,far}
+- Micoses endêmicas (histoplasmose, blastomicose, coccidioidomicose, paracoccidioidomicose); aspergilose broncopulmonar alérgica e aspergiloma {mic}
+- Vírus respiratórios: influenza, vírus sincicial respiratório (bronquiolite), parainfluenza (crupe) e SARS-CoV-2 {mic}
+- Coqueluche, difteria e epiglotite {mic}
+- Asma: resposta Th2, eosinófilos, espirais de Curschmann e cristais de Charcot-Leyden; doença respiratória exacerbada por aspirina {imu,pat}
+- Sarcoidose (granulomas não caseosos, adenopatia hilar bilateral, ECA elevada, hipercalcemia) e pneumonite de hipersensibilidade {pat,imu}
+- Pneumoconioses: asbestose, silicose, beriliose e pneumoconiose dos mineiros de carvão {pat}
+- Fibrose pulmonar idiopática (faveolamento) e fibrose por fármacos (bleomicina, amiodarona, metotrexato, nitrofurantoína) {pat,far}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias benignas e malignas do pulmão, da pleura e do mediastino.
+- Adenocarcinoma (periférico, não fumantes, EGFR, ALK), carcinoma escamoso (central, tabagismo, PTHrP, cavitação), carcinoma de pequenas células (central, ACTH, SIADH, Lambert-Eaton) e carcinoma de grandes células {pat}
+- Tumor carcinoide brônquico e hamartoma pulmonar (calcificação em pipoca) {pat}
+- Mesotelioma: asbesto, corpos ferruginosos, calretinina {pat}
+- Tumor de Pancoast, síndrome de Horner e síndrome da veia cava superior {pat,ana}
+- Massas do mediastino anterior (timoma, teratoma, linfoma, tireoide), médio e posterior {ana,pat}
+
+@cat Distúrbios obstrutivos, restritivos, vasculares, pleurais e traumáticos | Obstructive and restrictive disorders; pulmonary vascular disorders; disorders of the pleura and mediastinum; respiratory failure; traumatic and mechanical disorders
+= Doenças pulmonares obstrutivas e restritivas.
+= Distúrbios vasculares pulmonares, como embolia e hipertensão pulmonar.
+= Doenças da pleura e do mediastino.
+= Insuficiência respiratória e distúrbios respiratórios do sono.
+= Distúrbios traumáticos e mecânicos.
+- DPOC: enfisema centroacinar (tabagismo) e panacinar (alfa-1 antitripsina) e bronquite crônica (índice de Reid) {pat,fis}
+- Padrões espirométricos obstrutivo (VEF1/CVF reduzida) e restritivo (capacidade pulmonar total reduzida); DLCO {fis}
+- Bronquiectasias: fibrose cística, discinesia ciliar primária e aspergilose broncopulmonar alérgica {pat}
+- Tromboembolismo pulmonar, embolia gordurosa e embolia por líquido amniótico {pat,fis}
+- Hipertensão pulmonar: BMPR2, grupos etiológicos e cor pulmonale {pat,gen}
+- Derrame pleural transudato vs exsudato (critérios de Light); pneumotórax espontâneo e hipertensivo {pat,fis}
+- Síndrome do desconforto respiratório agudo: dano alveolar difuso, membranas hialinas e causas {pat}
+- Apneia obstrutiva do sono e síndrome de obesidade-hipoventilação {fis,pat}
+- Exame físico do tórax por condição: macicez, timpanismo, frêmito e desvio da traqueia {fis}
+- Trauma torácico: hemotórax, tórax instável (flail chest) e contusão pulmonar; aspiração de corpo estranho {pat,ana}
+
+@cat Farmacologia respiratória e efeitos adversos | Pharmacology and adverse effects of drugs on the respiratory system
+= Efeitos adversos de fármacos sobre o sistema respiratório.
+= Farmacologia respiratória.
+- Agonistas beta-2 de curta e longa ação, antimuscarínicos (ipratrópio, tiotrópio) e corticoides inalatórios (candidíase oral) {far}
+- Antileucotrienos (montelucaste, zileuton), cromoglicato, omalizumabe e teofilina (janela terapêutica estreita) {far}
+- Anti-histamínicos de primeira e segunda geração, descongestionantes, dextrometorfano e expectorantes {far}
+- Fármacos para hipertensão pulmonar: bosentana (endotelina), sildenafila e análogos de prostaciclina {far}
+- Tosse por IECA e broncoespasmo por betabloqueadores não seletivos {far}
+
+@sys renal | Sistema renal e urinário | Renal & Urinary System | resp
+% Fisiologia renal, distúrbios hidreletrolíticos e ácido-base, glomerulopatias e diuréticos. Na prova, é comum receber uma gasometria ou um perfil de eletrólitos para interpretar.
+
+@cat Processos normais | Normal processes
+= Embriologia; anatomia renal.
+= Filtração glomerular, transporte tubular e fluxo sanguíneo renal.
+= Regulação de líquidos, eletrólitos e equilíbrio ácido-base; funções hormonais do rim.
+- Embriologia: pronefro, mesonefro, metanefro e broto ureteral; rim em ferradura preso pela artéria mesentérica inferior; agenesia renal e sequência de Potter {ana}
+- Compartimentos de líquidos corporais e medidas de depuração (inulina, creatinina, PAH) {fis}
+- Taxa de filtração glomerular, fluxo plasmático renal e fração de filtração; efeito da constrição das arteríolas aferente e eferente {fis}
+- Transporte por segmento do néfron (túbulo proximal, alça de Henle, túbulo distal, ducto coletor) e local de ação de cada diurético {fis,far}
+- Síndromes de Bartter, Gitelman e Liddle {fis,gen}
+- Hormônio antidiurético, aldosterona, peptídeo natriurético atrial, PTH e angiotensina II no rim {fis}
+- Funções endócrinas do rim: eritropoetina, 1-alfa-hidroxilação da vitamina D e renina {fis}
+- Equilíbrio ácido-base: compensações, ânion gap, fórmula de Winter e relação delta-delta {fis}
+- Relações anatômicas do ureter: passa sob a artéria uterina e sob o ducto deferente {ana}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Por exemplo, doença renal policística e anomalias do trato urinário.
+- Doença renal policística autossômica dominante (PKD1, PKD2, aneurismas cerebrais, prolapso mitral) e recessiva (fibrose hepática congênita) {gen,pat}
+- Rim displásico multicístico e rim em esponja medular {pat}
+- Refluxo vesicoureteral, válvula de uretra posterior e obstrução da junção ureteropélvica {ana,pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Infecção do trato urinário e pielonefrite.
+= Doenças glomerulares e nefrite intersticial.
+- Infecção urinária: E. coli, Staphylococcus saprophyticus, Proteus (cálculo de estruvita) e Klebsiella; esterase leucocitária e nitrito {mic}
+- Pielonefrite aguda (cilindros leucocitários) e crônica (aspecto de tireoide) {pat}
+- Síndromes nefríticas: glomerulonefrite pós-estreptocócica, nefropatia por IgA, síndrome de Alport (colágeno tipo IV) e glomerulonefrite rapidamente progressiva (anti-membrana basal, imunocomplexos, pauci-imune) {pat,imu}
+- Síndromes nefróticas: doença de lesões mínimas (crianças, resposta a corticoide), glomeruloesclerose segmentar e focal, nefropatia membranosa (anti-PLA2R), glomerulonefrite membranoproliferativa, nefropatia diabética (Kimmelstiel-Wilson) e amiloidose {pat,imu}
+- Nefrite lúpica: classes e lesões em alça de arame (wire loop) {pat,imu}
+- Nefrite intersticial aguda por fármacos (penicilinas, AINEs, diuréticos, inibidores da bomba de prótons): eosinofilúria, febre e exantema {pat,far}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias do rim e das vias urinárias.
+- Carcinoma de células renais: células claras, VHL e cromossomo 3, policitemia e varicocele esquerda {pat,gen}
+- Tumor de Wilms (WT1, síndrome WAGR, Beckwith-Wiedemann), angiomiolipoma (esclerose tuberosa) e oncocitoma {pat,gen}
+- Carcinoma urotelial (tabagismo, anilinas, ciclofosfamida) e carcinoma escamoso de bexiga (Schistosoma haematobium) {pat,mic}
+
+@cat Lesão renal, eletrólitos, ácido-base e trauma | Acute kidney injury and chronic kidney disease; fluid, electrolyte, and acid-base disorders; obstructive uropathy; vascular disorders of the kidney; traumatic and mechanical disorders
+= Lesão renal aguda e doença renal crônica.
+= Distúrbios de líquidos, eletrólitos e equilíbrio ácido-base.
+= Uropatia obstrutiva e litíase urinária.
+= Distúrbios vasculares do rim.
+= Distúrbios traumáticos e mecânicos.
+- Lesão renal aguda pré-renal, intrínseca e pós-renal: relação ureia/creatinina, fração de excreção de sódio e cilindros {pat,fis}
+- Necrose tubular aguda (cilindros granulosos acastanhados; isquemia, aminoglicosídeos, contraste, mioglobina) e necrose de papila renal {pat}
+- Doença renal crônica: anemia, hiperparatireoidismo secundário, osteodistrofia renal, hiperpotassemia e acidose {pat,fis}
+- Hiponatremia e SIADH vs diabetes insípido central e nefrogênico; desmielinização osmótica por correção rápida do sódio {fis,pat}
+- Hiperpotassemia e hipopotassemia: causas e alterações no ECG {fis}
+- Acidose metabólica com ânion gap aumentado e normal; acidoses tubulares renais tipos 1, 2 e 4 {fis}
+- Alcalose metabólica (vômitos, diuréticos), acidose e alcalose respiratórias {fis}
+- Cálculos renais: oxalato de cálcio, fosfato de cálcio, estruvita, ácido úrico (radiotransparente) e cistina (cristais hexagonais) {pat,bio}
+- Hidronefrose e uropatia obstrutiva, incluindo hiperplasia prostática {pat}
+- Estenose de artéria renal (aterosclerose, displasia fibromuscular) e infarto renal {pat}
+- Trauma renal e ruptura de bexiga: intraperitoneal (cúpula) vs extraperitoneal (fratura de pelve) {ana,pat}
+
+@cat Farmacologia renal e efeitos adversos | Pharmacology and adverse effects of drugs on the renal and urinary system
+= Nefrotoxicidade e outros efeitos adversos de fármacos sobre o rim e as vias urinárias.
+= Diuréticos e fármacos que agem no sistema renina-angiotensina.
+- Diuréticos: acetazolamida (acidose metabólica), manitol, furosemida (ototoxicidade, hipocalcemia), tiazídicos (hiperglicemia, hiperuricemia, hipercalcemia) e poupadores de potássio (ginecomastia com espironolactona, amilorida) {far}
+- IECA e BRA: piora da função renal na estenose bilateral de artéria renal, hiperpotassemia e teratogenicidade {far}
+- Desmopressina e antagonistas do ADH (conivaptana, tolvaptana) {far}
+- Nefrotóxicos clássicos: aminoglicosídeos, anfotericina B, cisplatina, AINEs, contraste iodado, ciclosporina e aciclovir em dose alta {far,pat}
+- Ajuste de dose pela função renal {far}
+- Fármacos do trato urinário: alfa-1 bloqueadores (tansulosina), inibidores da 5-alfa-redutase e antimuscarínicos para bexiga hiperativa {far}
+
+@sys gestacao | Gestação, parto e puerpério | Pregnancy, Childbirth & the Puerperium | repro
+% Embriologia, fisiologia materna e fetal, complicações da gestação, infecções congênitas e teratologia.
+
+@cat Processos normais | Normal processes
+= Fertilização, implantação, embriologia e placentação.
+= Alterações fisiológicas maternas na gestação.
+= Desenvolvimento, crescimento e circulação fetal.
+= Trabalho de parto, parto e puerpério normais; lactação.
+- Fertilização, implantação e hCG; folhetos germinativos e seus derivados (ectoderma, mesoderma, endoderma) {ana,fis}
+- Período embrionário (semanas 3 a 8) como fase de maior risco teratogênico {ana}
+- Placenta: citotrofoblasto e sinciciotrofoblasto; hormônios placentários (hCG, lactogênio placentário, progesterona, estrogênio) {fis,his}
+- Gemelaridade: monocoriônica monoamniótica, monocoriônica diamniótica e dicoriônica; síndrome de transfusão feto-fetal {ana}
+- Fisiologia materna: aumento do volume plasmático e do débito cardíaco, anemia dilucional, hipercoagulabilidade, alcalose respiratória e resistência à insulina {fis}
+- Trabalho de parto: períodos, ocitocina e prostaglandinas {fis}
+- Lactação: prolactina, ocitocina e o papel da queda da progesterona após o parto {fis}
+
+@cat Complicações da gestação | Pregnancy complications
+= Por exemplo, gravidez ectópica, abortamento espontâneo, distúrbios hipertensivos, diabetes gestacional, distúrbios placentários e gestação múltipla.
+- Gravidez ectópica: tuba uterina, salpingite prévia, beta-hCG e ultrassonografia, metotrexato {pat,far}
+- Abortamento espontâneo e de repetição (aneuploidias, síndrome antifosfolípide) {pat,gen}
+- Hipertensão gestacional, pré-eclâmpsia, eclâmpsia (sulfato de magnésio) e síndrome HELLP {pat,far}
+- Diabetes gestacional: macrossomia, hipoglicemia neonatal e insulina {pat,fis}
+- Placenta prévia (sangramento indolor), descolamento prematuro de placenta (sangramento doloroso; cocaína, hipertensão), acretismo placentário e vasa prévia {pat}
+- Polidrâmnio (atresia de esôfago, anencefalia) e oligoidrâmnio (agenesia renal, sequência de Potter) {pat,ana}
+- Aloimunização Rh e hidropisia fetal {imu}
+
+@cat Infecções na gestação e infecções congênitas | Infectious disorders in pregnancy; congenital and perinatal infections
+= Infecções maternas durante a gestação.
+= Infecções congênitas e perinatais.
+- Infecções TORCH: toxoplasmose (calcificações difusas, hidrocefalia), rubéola (catarata, surdez, persistência do canal arterial), citomegalovírus (calcificações periventriculares, surdez), herpes e sífilis congênita (dentes de Hutchinson, nariz em sela) {mic}
+- Zika congênita (microcefalia), parvovírus B19 (hidropisia fetal) e varicela congênita {mic}
+- Estreptococo do grupo B: rastreamento e profilaxia intraparto {mic}
+- Transmissão vertical de HIV e hepatite B e como preveni-la {mic,far}
+- Listeriose na gestação {mic}
+
+@cat Neoplasias da gestação | Neoplasms of pregnancy
+= Doença trofoblástica gestacional.
+- Mola hidatiforme completa (46,XX de origem paterna, sem tecido fetal, vesículas em cacho de uva) vs parcial (triploide, com partes fetais) {pat,gen}
+- Coriocarcinoma: beta-hCG muito elevada, metástases pulmonares e boa resposta ao metotrexato {pat}
+- Hiperêmese gravídica e hipertireoidismo associados à beta-hCG elevada {fis}
+
+@cat Parto, puerpério e teratologia | Complications of labor, delivery, and the puerperium; congenital anomalies and teratology; adverse effects of drugs in pregnancy and lactation
+= Complicações do trabalho de parto, do parto e do puerpério.
+= Anomalias congênitas e teratologia.
+= Efeitos adversos de fármacos na gestação e na lactação.
+- Hemorragia pós-parto: atonia uterina, retenção placentária, lacerações e coagulopatia; ocitocina e misoprostol {pat,far}
+- Síndrome de Sheehan: necrose hipofisária pós-parto e falha da lactação {pat,fis}
+- Endometrite pós-parto, mastite e alterações do humor no puerpério (tristeza puerperal, depressão pós-parto, psicose puerperal) {pat,com}
+- Teratógenos: IECA, álcool (síndrome alcoólica fetal), carbamazepina, valproato, fenitoína, isotretinoína, lítio, metotrexato, talidomida, varfarina, tetraciclinas, aminoglicosídeos e dietilestilbestrol {far}
+- Fármacos seguros e contraindicados na gestação e na amamentação; metildopa, labetalol e nifedipino como anti-hipertensivos na gestação {far}
+- Malformação, deformação e ruptura como mecanismos de anomalias congênitas {ana}
+
+@sys feminino | Sistema reprodutor feminino e mama | Female Reproductive System & Breast | repro
+% Diferenciação sexual, ciclo menstrual, infecções sexualmente transmissíveis, neoplasias ginecológicas e mamárias e farmacologia hormonal.
+
+@cat Processos normais | Normal processes
+= Embriologia e diferenciação sexual; anatomia.
+= Eixo hipotálamo-hipófise-ovário e ciclo menstrual.
+= Puberdade e menopausa; estrutura e função da mama.
+- Diferenciação sexual: SRY, hormônio antimülleriano, testosterona e di-hidrotestosterona; ductos de Müller e de Wolff {ana,fis}
+- Anatomia pélvica: ligamento suspensor do ovário (vasos ovarianos), ligamento cardinal (artéria uterina), ligamento redondo e drenagem linfática {ana}
+- Eixo hipotálamo-hipófise-ovário e modelo das duas células (teca e granulosa) {fis}
+- Ciclo menstrual: fase folicular, pico de LH, fase lútea e alterações do endométrio {fis,his}
+- Menopausa: aumento do FSH, sintomas e riscos associados {fis}
+- Histologia da mama e controle hormonal da lactação {his,fis}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Distúrbios do desenvolvimento sexual e malformações do trato reprodutor.
+- Síndrome de insensibilidade aos androgênios: 46,XY, testículos, genitália externa feminina e ausência de útero {gen,fis}
+- Deficiência de 5-alfa-redutase e hiperplasia adrenal congênita por deficiência de 21-hidroxilase {gen,bio}
+- Síndrome de Turner: ovários em fita e amenorreia primária {gen}
+- Agenesia mülleriana (Mayer-Rokitansky-Küster-Hauser), útero bicorno e hímen imperfurado {ana}
+- Síndrome de Kallmann: falha da migração dos neurônios de GnRH e anosmia {gen,fis}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Infecções sexualmente transmissíveis, doença inflamatória pélvica, vaginites e mastite.
+- Vaginites: vaginose bacteriana (Gardnerella, clue cells, odor de peixe), tricomoníase (protozoário móvel, colo em framboesa) e candidíase {mic}
+- Clamídia (corpúsculos de inclusão, tracoma, linfogranuloma venéreo) e gonorreia {mic}
+- Sífilis primária, secundária e terciária; testes treponêmicos e não treponêmicos; reação de Jarisch-Herxheimer {mic}
+- Doença inflamatória pélvica, síndrome de Fitz-Hugh-Curtis e abscesso tubo-ovariano {mic,pat}
+- HPV (tipos 16 e 18; E6 inibe p53 e E7 inibe Rb), herpes genital, cancroide (Haemophilus ducreyi) e donovanose {mic,pat}
+- Mastite puerperal por S. aureus e abscesso subareolar {mic}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias do útero, do colo do útero, do ovário, da vulva e da vagina.
+= Neoplasias da mama.
+- Neoplasia intraepitelial cervical e carcinoma escamoso do colo; rastreamento com citologia e teste de HPV {pat,mic}
+- Leiomioma uterino (dependente de estrogênio) e leiomiossarcoma {pat}
+- Hiperplasia endometrial e carcinoma de endométrio (estrogênio sem oposição, síndrome de Lynch; tipo seroso com p53) {pat,gen}
+- Tumores de ovário epiteliais (seroso, mucinoso; CA-125, BRCA), de células germinativas (teratoma cístico maduro, disgerminoma, tumor do saco vitelino com corpos de Schiller-Duval) e do estroma (tumor de células da granulosa com corpos de Call-Exner, fibroma e síndrome de Meigs) {pat}
+- Tumor de Krukenberg: metástase de câncer gástrico com células em anel de sinete {pat}
+- Carcinoma de vulva (HPV ou líquen escleroso), doença de Paget extramamária e sarcoma botrioide {pat}
+- Lesões benignas da mama: fibroadenoma, alterações fibrocísticas, papiloma intraductal (secreção sanguinolenta) e tumor filoide {pat}
+- Carcinoma de mama: ductal in situ (comedocarcinoma), ductal invasivo, lobular (perda de E-caderina), inflamatório e doença de Paget do mamilo; receptores hormonais e HER2 {pat,gen}
+
+@cat Distúrbios menstruais, endócrinos e infertilidade | Menstrual and endocrine disorders; infertility; traumatic and mechanical disorders
+= Distúrbios menstruais e endócrinos, por exemplo amenorreia, síndrome dos ovários policísticos e endometriose.
+= Infertilidade.
+= Distúrbios traumáticos e mecânicos.
+- Amenorreia primária e secundária: investigação com beta-hCG, prolactina, TSH e FSH; síndrome de Asherman {fis,pat}
+- Síndrome dos ovários policísticos: hiperandrogenismo, anovulação, resistência à insulina e risco de câncer de endométrio; clomifeno, letrozol e metformina {fis,far}
+- Endometriose (lesões em pólvora, cistos de chocolate) e adenomiose (útero aumentado e amolecido) {pat}
+- Insuficiência ovariana primária e amenorreia hipotalâmica da atleta (tríade da mulher atleta) {fis,nut}
+- Torção ovariana e cistos ovarianos funcionais {pat}
+- Prolapso de órgãos pélvicos e incontinência urinária de esforço {ana}
+
+@cat Farmacologia reprodutiva e efeitos adversos | Pharmacology and adverse effects of drugs on the female reproductive system
+= Contracepção hormonal, terapia hormonal e moduladores seletivos do receptor de estrogênio (SERMs).
+= Efeitos adversos de fármacos sobre o sistema reprodutor feminino.
+- Contraceptivos combinados (contraindicação em fumantes com mais de 35 anos, risco de trombose), progestagênio isolado e contracepção de emergência {far}
+- Moduladores seletivos do receptor de estrogênio: tamoxifeno (risco de câncer de endométrio) e raloxifeno (osteoporose, sem efeito uterino) {far}
+- Inibidores da aromatase (anastrozol, letrozol), análogos de GnRH (leuprolida em uso pulsátil vs contínuo) e mifepristona {far}
+- Terapia hormonal da menopausa: indicações e riscos {far}
+- Tocolíticos (nifedipino, indometacina, terbutalina) e uterotônicos (ocitocina, misoprostol, metilergometrina) {far}
+
+@sys masculino | Sistema reprodutor masculino | Male Reproductive System | repro
+% Anatomia, fisiologia testicular, infecções, neoplasias de próstata e testículo e farmacologia androgênica.
+
+@cat Processos normais | Normal processes
+= Embriologia e diferenciação sexual; anatomia.
+= Eixo hipotálamo-hipófise-testículo e espermatogênese.
+= Função sexual.
+- Descida do testículo, gubernáculo e processo vaginal; drenagem linfática do testículo (para-aórtica) vs do escroto (inguinal superficial) {ana}
+- Células de Sertoli (inibina, proteína ligadora de androgênio, barreira hematotesticular, FSH) e de Leydig (testosterona, LH) {fis,his}
+- Espermatogênese: espermatogônias, espermatócitos, espermátides e espermatozoides {his}
+- Ereção (parassimpático, óxido nítrico), emissão (simpático) e ejaculação (nervo pudendo) {fis,ana}
+- Anatomia da uretra masculina e lesões traumáticas da uretra anterior e posterior {ana}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Por exemplo, criptorquidia e hipospádia.
+- Criptorquidia: risco de seminoma e de infertilidade; orquidopexia {pat}
+- Hipospádia (falha na fusão das pregas uretrais) e epispádia (associação com extrofia vesical) {ana}
+- Síndrome de Klinefelter: 47,XXY, testículos pequenos, ginecomastia, FSH e LH elevados {gen}
+- Hidrocele (processo vaginal pérvio) e hérnia inguinal indireta {ana}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Prostatite, epididimite e orquite.
+= Infecções sexualmente transmissíveis no homem.
+- Epididimite por clamídia e gonococo no jovem e por E. coli no idoso {mic}
+- Orquite por caxumba e infertilidade {mic}
+- Prostatite aguda e crônica {mic,pat}
+- Uretrite gonocócica e não gonocócica {mic}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias da próstata, do testículo e do pênis.
+- Adenocarcinoma de próstata: zona periférica, PSA, metástases ósseas osteoblásticas e bloqueio androgênico {pat,far}
+- Tumores de células germinativas: seminoma (fosfatase alcalina placentária, radiossensível), carcinoma embrionário, tumor do saco vitelino (AFP), coriocarcinoma (beta-hCG) e teratoma {pat}
+- Tumores do estroma (células de Leydig com cristais de Reinke e ginecomastia, células de Sertoli) e linfoma testicular no idoso {pat}
+- Carcinoma escamoso de pênis (HPV, ausência de circuncisão), doença de Bowen e eritroplasia de Queyrat {pat,mic}
+
+@cat Hiperplasia prostática, trauma e função sexual | Benign prostatic hyperplasia; traumatic and mechanical disorders; disorders of sexual function and infertility
+= Hiperplasia prostática benigna.
+= Distúrbios traumáticos e mecânicos, por exemplo torção testicular.
+= Distúrbios da função sexual e infertilidade.
+- Hiperplasia prostática benigna: zona de transição e di-hidrotestosterona {pat,fis}
+- Torção testicular (reflexo cremastérico ausente) vs varicocele (veia testicular esquerda drena na veia renal esquerda) {ana,pat}
+- Disfunção erétil orgânica vs psicogênica {fis,com}
+- Infertilidade masculina: varicocele, fibrose cística, Klinefelter e uso de esteroides anabolizantes {pat,far}
+
+@cat Farmacologia e efeitos adversos | Pharmacology and adverse effects of drugs on the male reproductive system
+= Androgênios, antiandrogênios, inibidores da 5-alfa-redutase e inibidores da PDE-5.
+= Efeitos adversos de fármacos sobre o sistema reprodutor masculino.
+- Inibidores da 5-alfa-redutase (finasterida) e alfa-1 bloqueadores (tansulosina) {far}
+- Antiandrogênios (flutamida, bicalutamida, espironolactona, cetoconazol) e análogos de GnRH com piora transitória inicial (flare) {far}
+- Inibidores da PDE-5 (sildenafila, tadalafila): alteração da visão de cores e hipotensão grave com nitratos {far}
+- Testosterona exógena e anabolizantes: atrofia testicular, policitemia e alterações do perfil lipídico {far}
+- Ginecomastia por fármacos: espironolactona, cimetidina, cetoconazol e digoxina {far}
+
+@sys endocrino | Sistema endócrino | Endocrine System | repro
+% Eixos hormonais, tireoide, paratireoides, adrenal, pâncreas endócrino e farmacologia. Junto com o sistema reprodutor, forma uma das linhas de maior peso da prova.
+
+@cat Processos normais | Normal processes
+= Embriologia das glândulas endócrinas.
+= Síntese, secreção, transporte e mecanismo de ação dos hormônios.
+= Hipotálamo e hipófise; tireoide; paratireoides e homeostase do cálcio; córtex e medula adrenais; pâncreas endócrino e homeostase energética.
+- Embriologia da tireoide (ducto tireoglosso, cisto que se move com a deglutição), da hipófise (bolsa de Rathke e neuro-hipófise) e da adrenal (córtex do mesoderma, medula da crista neural) {ana}
+- Eixos hipotálamo-hipófise e retroalimentação; inibição da prolactina pela dopamina {fis}
+- Síntese dos hormônios tireoidianos (peroxidase, organificação, acoplamento), conversão de T4 em T3 e efeitos {fis,bio}
+- Homeostase do cálcio: PTH, vitamina D e calcitonina; efeito do magnésio sobre a secreção de PTH {fis}
+- Esteroidogênese adrenal nas zonas glomerulosa, fasciculada e reticular; enzimas 21, 11 e 17-hidroxilase {bio,fis}
+- Síntese de catecolaminas: tirosina, DOPA, dopamina, noradrenalina e adrenalina (PNMT estimulada pelo cortisol) {bio}
+- Insulina (receptor tirosina-quinase, GLUT4) e glucagon; estado alimentado e jejum {fis,bio}
+- Hormônio do crescimento e IGF-1 {fis}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Distúrbios congênitos e hereditários do sistema endócrino.
+- Hiperplasia adrenal congênita: deficiência de 21-hidroxilase (perda de sal, virilização), de 11-beta-hidroxilase (hipertensão, virilização) e de 17-alfa-hidroxilase {gen,bio}
+- Hipotireoidismo congênito: triagem neonatal, macroglossia, hérnia umbilical e prejuízo do desenvolvimento se não tratado {pat}
+- Neoplasias endócrinas múltiplas: MEN1 (gene MEN1), MEN2A e MEN2B (RET) {gen,pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Por exemplo, tireoidite autoimune e diabetes tipo 1.
+- Tireoidite de Hashimoto (anti-TPO, células de Hürthle, risco de linfoma), tireoidite subaguda de De Quervain (dolorosa, pós-viral), tireoidite pós-parto e tireoidite de Riedel {imu,pat}
+- Doença de Graves: anticorpos estimuladores do receptor de TSH, oftalmopatia e mixedema pré-tibial {imu,pat}
+- Diabetes tipo 1: anticorpos anti-GAD e anti-ilhota, HLA-DR3 e DR4, cetoacidose {imu,pat}
+- Doença de Addison autoimune e síndromes poliglandulares autoimunes {imu}
+
+@cat Neoplasias | Neoplasms
+= Por exemplo, adenoma hipofisário, carcinoma de tireoide, síndromes MEN e tumores adrenais.
+- Adenomas hipofisários: prolactinoma (cabergolina, bromocriptina), somatotrófico (acromegalia, gigantismo, octreotida) e corticotrófico (doença de Cushing); hemianopsia bitemporal {pat,far}
+- Carcinomas de tireoide: papilífero (núcleos em vidro fosco, corpos psamomatosos, RET/PTC e BRAF), folicular (invasão capsular, disseminação hematogênica), medular (calcitonina, amiloide, MEN2) e anaplásico {pat,gen}
+- Feocromocitoma: metanefrinas, crises adrenérgicas e alfabloqueio antes do betabloqueio {pat,far}
+- Adenoma adrenal produtor de aldosterona (síndrome de Conn) ou de cortisol; carcinoma adrenocortical {pat}
+- Tumores neuroendócrinos do pâncreas: insulinoma (tríade de Whipple, peptídeo C), gastrinoma (Zollinger-Ellison), glucagonoma, VIPoma e somatostatinoma {pat}
+- Síndrome carcinoide: metástase hepática, rubor, diarreia, lesão das valvas do coração direito e 5-HIAA urinário {pat}
+
+@cat Diabetes e distúrbios glandulares | Diabetes mellitus; disorders of thyroid, parathyroid, adrenal, and pituitary function
+= Diabetes mellitus.
+= Distúrbios da função tireoidiana, paratireoidiana, adrenal e hipofisária.
+- Diabetes tipo 2: resistência à insulina e amiloide nas ilhotas; complicações micro e macrovasculares; glicação não enzimática e via do sorbitol {pat,bio}
+- Cetoacidose diabética vs estado hiperosmolar hiperglicêmico; potássio corporal total baixo na cetoacidose {pat,fis}
+- Hipotireoidismo e hipertireoidismo: achados clínicos e laboratoriais, crise tireotóxica e coma mixedematoso {pat,fis}
+- Hiperparatireoidismo primário (adenoma, hipercalcemia, cálculos, osteíte fibrosa cística), secundário (doença renal crônica) e terciário {pat,fis}
+- Hipoparatireoidismo (pós-tireoidectomia, sinais de Chvostek e Trousseau) e pseudo-hipoparatireoidismo (osteodistrofia hereditária de Albright) {pat,gen}
+- Síndrome de Cushing exógena, hipofisária, adrenal e ectópica; testes de supressão com dexametasona {pat,fis}
+- Insuficiência adrenal primária (hiperpigmentação, hiperpotassemia) vs secundária; síndrome de Waterhouse-Friderichsen {pat}
+- Hiperaldosteronismo primário vs secundário (relação aldosterona/renina) {pat,fis}
+- Diabetes insípido central vs nefrogênico (restrição hídrica e resposta à desmopressina) e SIADH {pat,fis}
+- Hipopituitarismo, apoplexia hipofisária e sela vazia {pat}
+- Hipercalcemia: hiperparatireoidismo, câncer (PTHrP, metástases), doenças granulomatosas e excesso de vitamina D {pat}
+
+@cat Farmacologia endócrina e efeitos adversos | Pharmacology and adverse effects of drugs on the endocrine system
+= Insulina e antidiabéticos; fármacos tireoidianos e antitireoidianos; corticoides.
+= Efeitos adversos de fármacos sobre o sistema endócrino.
+- Insulinas de ação rápida, curta, intermediária e longa {far}
+- Antidiabéticos: metformina (acidose lática), sulfonilureias (hipoglicemia), tiazolidinedionas (PPAR-gama, edema), inibidores da DPP-4, agonistas do GLP-1 (perda de peso, pancreatite) e inibidores de SGLT2 (infecção genital, cetoacidose euglicêmica) {far}
+- Antitireoidianos: propiltiouracil (também inibe a desiodase periférica, hepatotoxicidade, preferido no primeiro trimestre) e metimazol (teratogênico no primeiro trimestre); iodo radioativo; levotiroxina {far}
+- Glicocorticoides: efeitos e toxicidade (Cushing iatrogênico, supressão do eixo, osteoporose, hiperglicemia) {far}
+- Análogos de somatostatina, cabergolina, desmopressina, cinacalcete, demeclociclina e fludrocortisona {far}
+- Fármacos que alteram a tireoide (amiodarona, lítio) e que elevam a prolactina (antipsicóticos, metoclopramida) {far}
+
+@sys gi | Sistema gastrointestinal | Gastrointestinal System | gi
+% Anatomia abdominal, fisiologia digestiva, fígado e vias biliares, doenças inflamatórias, neoplasias e farmacologia.
+
+@cat Processos normais | Normal processes
+= Embriologia; anatomia.
+= Motilidade, secreção, digestão e absorção; hormônios gastrointestinais.
+= Função exócrina do fígado, das vias biliares e do pâncreas; metabolismo da bilirrubina.
+- Embriologia: rotação intestinal, divertículo de Meckel, gastrosquise vs onfalocele, estenose hipertrófica do piloro e atresia duodenal (síndrome de Down) {ana}
+- Irrigação: tronco celíaco, artérias mesentéricas superior e inferior; anastomoses portossistêmicas {ana}
+- Canal inguinal e hérnias inguinais direta e indireta e femoral; triângulo de Hesselbach {ana}
+- Histologia do tubo digestivo por segmento (glândulas de Brunner, placas de Peyer) {his}
+- Hormônios: gastrina, colecistocinina, secretina, somatostatina, GIP, motilina e VIP {fis}
+- Secreção ácida pela célula parietal: H+/K+ ATPase, histamina, acetilcolina e gastrina {fis}
+- Digestão e absorção de carboidratos, proteínas e lipídios; teste da D-xilose; local de absorção de ferro, folato e B12 {fis,nut}
+- Metabolismo da bilirrubina: conjugação pela UDP-glicuroniltransferase, urobilinogênio e estercobilina {bio,fis}
+- Circulação êntero-hepática dos sais biliares e zonas do ácino hepático {fis,his}
+
+@cat Distúrbios congênitos | Congenital disorders
+= Distúrbios congênitos e hereditários do sistema gastrointestinal.
+- Doença de Hirschsprung: RET, ausência de células ganglionares e atraso na eliminação de mecônio {pat,gen}
+- Atresias intestinais, má rotação com volvo e fístula traqueoesofágica (polidrâmnio, regurgitação) {ana}
+- Hiperbilirrubinemias hereditárias: Gilbert, Crigler-Najjar tipos I e II, Dubin-Johnson (fígado escuro) e Rotor {bio,gen}
+- Hemocromatose hereditária (HFE C282Y, diabetes bronzeado) e doença de Wilson (ATP7B, anel de Kayser-Fleischer, ceruloplasmina baixa) {gen,pat}
+- Síndromes de polipose: polipose adenomatosa familiar (APC), Gardner, Turcot, Peutz-Jeghers (STK11, pólipos hamartomatosos) e síndrome de Lynch {gen,pat}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Diarreia infecciosa e hepatites virais.
+= Doença ulcerosa péptica, doença inflamatória intestinal, doença celíaca e pancreatite.
+- Diarreia invasiva (Shigella, Salmonella, Campylobacter, E. coli enteroinvasiva e êntero-hemorrágica) vs secretora (Vibrio cholerae, E. coli enterotoxigênica); Clostridioides difficile e colite pseudomembranosa {mic}
+- Parasitoses intestinais: Giardia, Entamoeba histolytica (abscesso hepático), Cryptosporidium, Ascaris, Strongyloides, Taenia, Echinococcus e Schistosoma mansoni (hipertensão portal) {mic}
+- Hepatites virais A a E: transmissão, sorologia da hepatite B (HBsAg, anti-HBc IgM, anti-HBs, HBeAg), cronificação da hepatite C e hepatite E na gestação {mic,imu}
+- Gastrite por H. pylori e gastrite autoimune; úlcera gástrica e duodenal e suas complicações (perfuração, sangramento) {pat,mic}
+- Doença de Crohn (transmural, lesões salteadas, granulomas, fístulas) vs retocolite ulcerativa (contínua a partir do reto, colangite esclerosante primária, p-ANCA) {pat,imu}
+- Doença celíaca: antitransglutaminase, HLA-DQ2 e DQ8, atrofia das vilosidades e dermatite herpetiforme {imu,pat}
+- Doença de Whipple: Tropheryma whipplei e macrófagos PAS positivos {mic}
+- Pancreatite aguda (álcool, cálculos, hipertrigliceridemia; lipase) e crônica (calcificações, insuficiência exócrina) {pat}
+- Hepatite autoimune, colangite biliar primária (antimitocôndria) e colangite esclerosante primária (estenoses em contas de rosário) {imu,pat}
+
+@cat Neoplasias | Neoplasms
+= Neoplasias do tubo digestivo, do fígado, das vias biliares e do pâncreas.
+- Câncer de esôfago: carcinoma escamoso (álcool, tabaco, terço médio) vs adenocarcinoma (esôfago de Barrett, terço distal) {pat}
+- Adenocarcinoma gástrico intestinal e difuso (células em anel de sinete, linite plástica); linfonodo de Virchow e nódulo da irmã Maria José {pat}
+- Câncer colorretal: sequência adenoma-carcinoma (APC, KRAS, TP53), instabilidade de microssatélites e anemia ferropriva nos tumores do cólon direito; rastreamento {pat,gen}
+- Pólipos colorretais: hiperplásicos, adenomas tubulares e vilosos e lesões serrilhadas {pat}
+- Carcinoma hepatocelular (hepatites B e C, cirrose, aflatoxina, AFP); hemangioma e adenoma hepático (contraceptivos orais) {pat}
+- Adenocarcinoma de pâncreas (CA 19-9, tromboflebite migratória de Trousseau, vesícula palpável de Courvoisier) e colangiocarcinoma (Clonorchis) {pat,mic}
+- Tumores neuroendócrinos e tumor estromal gastrointestinal (c-KIT, imatinibe) {pat,far}
+
+@cat Fígado, vias biliares, esôfago e intestino | Disorders of the liver and biliary system; malabsorption; vascular, traumatic, and mechanical disorders
+= Distúrbios do fígado e das vias biliares, como cirrose, colestase e litíase biliar.
+= Má absorção.
+= Distúrbios vasculares (isquemia mesentérica, varizes), traumáticos e mecânicos (obstrução, hérnias).
+- Doença hepática alcoólica (corpúsculos de Mallory-Denk, AST maior que ALT) e doença hepática esteatótica associada à disfunção metabólica {pat}
+- Cirrose e hipertensão portal: ascite, varizes, encefalopatia (lactulose, rifaximina) e síndrome hepatorrenal {pat,far}
+- Síndrome de Reye: aspirina em criança com infecção viral {pat,far}
+- Colelitíase (colesterol vs pigmento), colecistite, coledocolitíase, colangite (tríade de Charcot) e íleo biliar {pat}
+- Icterícia pré-hepática, hepatocelular e pós-hepática: padrões laboratoriais {pat,fis}
+- Esôfago: doença do refluxo, acalasia (perda do plexo mioentérico, imagem em bico de pássaro), esclerose sistêmica, Mallory-Weiss, Boerhaave e divertículo de Zenker {pat,ana}
+- Má absorção: insuficiência pancreática, deficiência de lactase, doença celíaca e supercrescimento bacteriano {pat,nut}
+- Isquemia mesentérica aguda e crônica, colite isquêmica nas áreas de transição vascular e angiodisplasia {pat,ana}
+- Obstrução intestinal, volvo, intussuscepção (fezes em geleia de groselha), apendicite, doença diverticular e diverticulite {pat}
+- Hemorragia digestiva alta e baixa: causas por faixa etária {pat}
+
+@cat Farmacologia gastrointestinal e efeitos adversos | Pharmacology and adverse effects of drugs on the gastrointestinal system
+= Efeitos adversos de fármacos sobre o sistema digestivo, incluindo hepatotoxicidade.
+= Farmacologia gastrointestinal.
+- Inibidores da bomba de prótons, antagonistas H2 (interações da cimetidina), antiácidos, sucralfato, misoprostol e bismuto {far}
+- Esquemas de erradicação do H. pylori {far,mic}
+- Antieméticos: ondansetrona (5-HT3), metoclopramida (D2, discinesia tardia) e aprepitanto (NK1) {far}
+- Laxativos, loperamida e octreotida; sulfassalazina, mesalazina e infliximabe na doença inflamatória intestinal {far}
+- Hepatotoxicidade: paracetamol, isoniazida, halotano, amiodarona, valproato, estatinas e metotrexato {far,pat}
+- Pancreatite por fármacos (didanosina, azatioprina, valproato, diuréticos) e colite por C. difficile após antibióticos {far,mic}
+
+@sys multi | Processos e distúrbios multissistêmicos | Multisystem Processes & Disorders | multi
+% Temas que atravessam vários órgãos: nutrição, termorregulação, sepse, doenças genéticas e metabólicas, toxicologia e choque. Com o reforço de nutrição de 2026, esta linha ganhou mais conteúdo de ciência da nutrição.
+
+@cat Processos normais | Normal processes
+= Nutrição: macronutrientes, vitaminas e minerais.
+= Regulação da temperatura corporal; compartimentos de líquidos corporais.
+= Princípios gerais do metabolismo integrado entre os órgãos.
+- Macronutrientes, gasto energético e balanço nitrogenado {nut,bio}
+- Fontes alimentares e funções das vitaminas e minerais; interações entre nutrientes e fármacos {nut}
+- Termorregulação: produção e perda de calor; febre mediada por IL-1 e prostaglandina E2 no hipotálamo {fis}
+- Compartimentos de água corporal e distribuição de soluções cristaloides e coloides {fis}
+- Integração metabólica entre fígado, músculo e tecido adiposo no jejum prolongado {bio,fis}
+- Avaliação do estado nutricional e padrões alimentares associados a melhor desfecho cardiovascular e metabólico {nut}
+
+@cat Distúrbios infecciosos, imunológicos e inflamatórios | Infectious, immunologic, and inflammatory disorders
+= Sepse e síndrome da resposta inflamatória sistêmica.
+= Infecções disseminadas e doenças autoimunes sistêmicas.
+- Sepse e choque séptico: endotoxina, citocinas, vasodilatação e CIVD {pat,mic}
+- Infecções disseminadas: tuberculose miliar, candidemia, bacteremia por S. aureus, febre tifoide, malária (Plasmodium falciparum e vivax), dengue e leptospirose {mic}
+- Doenças transmitidas por vetores: doença de Lyme, febre maculosa (Rickettsia rickettsii), erliquiose, babesiose, doença de Chagas e leishmaniose {mic}
+- Febre de origem indeterminada {pat}
+- Sarcoidose e doença relacionada à IgG4 como doenças inflamatórias multissistêmicas {pat,imu}
+
+@cat Neoplasias e doenças genéticas e metabólicas | Multisystem neoplastic processes; genetic and metabolic disorders
+= Processos neoplásicos multissistêmicos, como metástase e síndromes paraneoplásicas.
+= Doenças genéticas e metabólicas que afetam vários sistemas, por exemplo erros inatos do metabolismo e doenças de depósito.
+- Síndromes de câncer hereditário: Li-Fraumeni (TP53), BRCA1 e BRCA2, Lynch, MEN e von Hippel-Lindau {gen,pat}
+- Síndromes paraneoplásicas organizadas pelo tumor de origem {pat}
+- Erros inatos do metabolismo com apresentação neonatal: hipoglicemia, acidose metabólica e hiperamonemia {bio,gen}
+- Doenças de depósito com acometimento de vários órgãos: Gaucher, Fabry, Pompe e mucopolissacaridoses {bio,gen}
+- Amiloidose sistêmica primária e secundária {pat}
+- Doenças hereditárias do tecido conjuntivo: Marfan (fibrilina 1), Ehlers-Danlos e Loeys-Dietz {gen}
+
+@cat Distúrbios nutricionais | Nutritional disorders
+= Desnutrição, obesidade, deficiência e toxicidade de vitaminas.
+- Desnutrição proteico-calórica: kwashiorkor (edema, fígado gorduroso) vs marasmo {nut,pat}
+- Obesidade: leptina e grelina, síndrome metabólica e tratamento farmacológico (agonistas do GLP-1, orlistate) {nut,fis,far}
+- Síndrome de realimentação: hipofosfatemia, hipopotassemia e hipomagnesemia {nut,fis}
+- Deficiências: tiamina, niacina (dermatite, diarreia e demência), vitamina C (escorbuto), vitamina D, vitamina A (cegueira noturna) e zinco (acrodermatite enteropática) {nut}
+- Toxicidade por vitamina A (hipertensão intracraniana, teratogenicidade), vitamina D (hipercalcemia) e ferro {nut,far}
+- Nutrição em situações especiais: gestação (folato, ferro), dieta vegana (B12), alcoolismo e cirurgia bariátrica {nut}
+
+@cat Lesões ambientais e tóxicas; choque | Environmental and toxic injury; shock and multiorgan failure; adverse effects of drugs affecting multiple systems
+= Intoxicações, doenças relacionadas à temperatura e lesão por radiação.
+= Choque e falência de múltiplos órgãos.
+= Efeitos adversos de fármacos que afetam vários sistemas; toxicologia geral.
+- Intoxicação por monóxido de carbono (oximetria de pulso normal, oxigênio hiperbárico) e por cianeto (hidroxocobalamina, nitritos) {far,bio}
+- Intoxicação por metanol e etilenoglicol (ânion gap e gap osmolar aumentados, fomepizol), salicilatos (alcalose respiratória com acidose metabólica), ferro, lítio e tricíclicos {far,fis}
+- Metais pesados: chumbo, arsênio (odor de alho) e mercúrio {far}
+- Hipertermia, intermação (heat stroke), hipotermia e hipertermia maligna {fis,pat}
+- Lesão por radiação aguda e tardia; risco de leucemia e câncer de tireoide {pat}
+- Afogamento, lesão elétrica e por raio {pat}
+- Choque e falência de múltiplos órgãos {pat,fis}
+- Reações sistêmicas a fármacos: DRESS, síndrome serotoninérgica, síndrome neuroléptica maligna e hipertermia maligna {far}
+
+@sys bioest | Bioestatística, epidemiologia e saúde populacional | Biostatistics, Epidemiology/Population Health & Interpretation of the Medical Literature | bioest
+% Cálculos com tabela 2x2, testes diagnósticos, desenhos de estudo e vieses. Muitas questões trazem um resumo de artigo ou um anúncio de medicamento para leitura crítica.
+
+@cat Epidemiologia e saúde populacional | Epidemiology and population health
+= Medidas de frequência de doença: incidência e prevalência.
+= Medidas de associação e de risco: risco relativo, odds ratio, risco atribuível, número necessário para tratar e para causar dano.
+= Prevenção primária, secundária e terciária; rastreamento.
+= Surtos e vigilância; determinantes sociais da saúde.
+- Incidência vs prevalência e relação entre prevalência, incidência e duração da doença {com}
+- Tabela 2x2: risco relativo, odds ratio, risco atribuível, redução do risco relativo e redução absoluta do risco {com}
+- Número necessário para tratar (NNT) e número necessário para causar dano (NNH) {com}
+- Prevenção primária, secundária, terciária e quaternária {com}
+- Vigilância em saúde pública, notificação compulsória e investigação de surtos {com,mic}
+- Imunidade de rebanho e número básico de reprodução (R0) {com,mic}
+- Determinantes sociais da saúde e desigualdades em saúde {com}
+
+@cat Bioestatística | Biostatistics
+= Probabilidade.
+= Sensibilidade, especificidade, valores preditivos e razões de verossimilhança.
+= Estatística descritiva e distribuições.
+= Testes de hipótese, valor de P, intervalos de confiança, poder, erros tipo I e tipo II; escolha do teste estatístico.
+- Sensibilidade, especificidade, valor preditivo positivo e negativo; efeito da prevalência sobre os valores preditivos {com}
+- Mudança do ponto de corte de um teste e curva ROC {com}
+- Razões de verossimilhança e probabilidade pré-teste e pós-teste {com}
+- Medidas de tendência central e de dispersão; distribuição normal e assimetrias positiva e negativa {com}
+- Hipótese nula, erro tipo I (alfa), erro tipo II (beta), poder estatístico e tamanho da amostra {com}
+- Intervalo de confiança e significância estatística; precisão vs acurácia {com}
+- Escolha do teste: t de Student, ANOVA, qui-quadrado, exato de Fisher e correlação de Pearson {com}
+
+@cat Interpretação da literatura médica | Interpretation of the medical literature
+= Desenhos de estudo: transversal, caso-controle, coorte, ensaio clínico randomizado, revisão sistemática e metanálise.
+= Viés e confusão; validade.
+= Fases do desenvolvimento de fármacos e ensaios clínicos.
+= Medicina baseada em evidências e leitura crítica de figuras, tabelas e resumos.
+- Desenhos de estudo e a medida de associação típica de cada um (odds ratio no caso-controle, risco relativo na coorte) {com}
+- Vieses: seleção, memória (recall), aferição, observador, efeito Hawthorne, tempo de antecipação (lead-time) e duração (length-time) {com}
+- Confusão (confounding) e modificação de efeito; randomização, pareamento e estratificação {com}
+- Validade interna e externa (capacidade de generalização) {com}
+- Ensaios clínicos: cegamento, análise por intenção de tratar vs por protocolo e estudos de não inferioridade {com,far}
+- Hierarquia da evidência, revisão sistemática, metanálise e gráfico de floresta (forest plot) {com}
+- Leitura crítica de resumos de artigos e de anúncios de medicamentos {com}
+
+@sys social | Ciências sociais: comunicação e habilidades interpessoais | Social Sciences: Communication and Interpersonal Skills | social
+% Comunicação, ética, legislação e segurança do paciente segundo as normas dos EUA. A resposta certa costuma ser a que respeita a autonomia do paciente e mantém o diálogo aberto.
+
+@cat Comunicação e habilidades interpessoais | Communication and interpersonal skills
+= Comunicação centrada no paciente.
+= Comunicação de más notícias e manejo de interações difíceis.
+= Considerações culturais e uso de intérpretes.
+= Decisão compartilhada (shared decision-making).
+- Perguntas abertas, escuta ativa, empatia e resumo do que o paciente disse {com}
+- Comunicação de más notícias com o protocolo SPIKES {com}
+- Paciente irritado, paciente que não adere ao tratamento e paciente que pede exame ou antibiótico sem indicação {com}
+- Intérprete profissional vs familiar como intérprete; competência cultural {com}
+- Decisão compartilhada e respeito às preferências e valores do paciente {com}
+- Conflitos com colegas e com a equipe e comunicação respeitosa {com}
+
+@cat Ética médica e jurisprudência | Medical ethics and jurisprudence
+= Consentimento e consentimento informado; capacidade de decisão.
+= Confidencialidade.
+= Diretivas antecipadas e decisão por representante; cuidado no fim da vida.
+= Menores de idade; conflitos de interesse; profissionalismo.
+- Princípios da bioética: autonomia, beneficência, não maleficência e justiça {com}
+- Consentimento informado e exceções: emergência, renúncia do paciente e privilégio terapêutico {com}
+- Capacidade de decisão (avaliada pelo médico) vs competência (determinada pela justiça) {com}
+- Menores de idade: consentimento dos pais e exceções (contracepção, infecções sexualmente transmissíveis, gestação, uso de substâncias, emancipação) {com}
+- Diretivas antecipadas, procurador para decisões de saúde (health care proxy) e ordem de não reanimar {com}
+- Confidencialidade e exceções: risco a terceiros (caso Tarasoff), doenças de notificação e abuso {com}
+- Cuidados paliativos, princípio do duplo efeito, recusa de tratamento e morte assistida conforme a lei de cada estado {com}
+- Recusa de transfusão por Testemunha de Jeová: adulto capaz vs criança {com}
+- Conflitos de interesse, presentes da indústria, relacionamento com pacientes e colega com prejuízo da capacidade de trabalho (impaired physician) {com}
+- Revelação de erro médico ao paciente {com}
+
+@cat Prática baseada em sistemas e segurança do paciente | Systems-based practice and patient safety
+= Organização e financiamento do cuidado em saúde.
+= Melhoria da qualidade; segurança do paciente e revelação de erros.
+= Trabalho em equipe e transições do cuidado.
+- Financiamento do sistema de saúde dos EUA: Medicare (partes A, B, C e D), Medicaid e seguros privados {com}
+- Modelos de pagamento: pagamento por serviço (fee-for-service), capitação e pagamento por pacote {com}
+- Ciclo PDSA (planejar, fazer, estudar, agir) e medidas de estrutura, processo e resultado {com}
+- Tipos de erro (ativo vs latente), quase erro (near miss) e evento adverso; análise de causa raiz e modelo do queijo suíço {com}
+- Listas de verificação, padronização, funções de bloqueio (forcing functions) e reconciliação de medicamentos {com}
+- Transições do cuidado, passagem de plantão (handoff) e prevenção de readmissões {com}
