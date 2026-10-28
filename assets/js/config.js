@@ -18,7 +18,7 @@ window.R2A_CONFIG = {
      quando o médico divulga especialidade em material público. */
   fundador: {
     nome: "",      /* ex.: "Dr. Getúlio Sobrenome". Vazio = "Dr. Getúlio" */
-    crm: "",       /* ex.: "CRM-DF 00000" */
+    crm: "CRM-DF 13610",
     rqe: "",       /* ex.: "Pediatria RQE 0000 · Medicina Esportiva RQE 0000" */
     lattes: "",    /* link do Currículo Lattes */
     foto: ""       /* caminho da foto; vazio = monograma */
