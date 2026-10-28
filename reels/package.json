@@ -8,8 +8,7 @@
     "studio": "remotion studio src/index.ts",
     "typecheck": "tsc --noEmit",
     "render": "node scripts/render.mjs",
-    "render:um": "node scripts/render.mjs",
-    "capas": "node scripts/capas.mjs"
+    "render:um": "node scripts/render.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.534",
