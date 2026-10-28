@@ -16,6 +16,11 @@
   }
   var stored = readTheme();
   if (stored === "light" || stored === "dark") root.setAttribute("data-theme", stored);
+  function syncThemeLabel() {
+    var cur = root.getAttribute("data-theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.querySelectorAll("[data-theme-toggle]").forEach(function (b) { b.setAttribute("aria-label", cur === "dark" ? "Ativar tema claro" : "Ativar tema escuro"); });
+  }
+  syncThemeLabel();
   document.querySelectorAll("[data-theme-toggle]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var current = root.getAttribute("data-theme");
@@ -23,6 +28,7 @@
       var next = current === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
       saveTheme(next);
+      syncThemeLabel();
     });
   });
 
@@ -60,6 +66,11 @@
     });
   };
   window.R2A_observeReveals(document.querySelectorAll(".reveal"));
+  /* segurança: nenhum bloco fica invisível se o observador falhar */
+  window.addEventListener("load", function () {
+    setTimeout(function () { document.querySelectorAll(".reveal:not(.is-in)").forEach(function (el) { el.classList.add("is-in"); }); }, 2500);
+  });
+  window.addEventListener("beforeprint", function () { document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("is-in"); }); });
 
   /* ---------- Lista de escolas para autocompletar ---------- */
   window.R2A_schoolLabel = function (s) {
@@ -211,6 +222,7 @@
         email: fieldValue(form, "email").trim(),
         ingles: fieldValue(form, "ingles"),
         consentimento: fieldValue(form, "consentimento"),
+        so_email: fieldValue(form, "so_email") || "nao",
         origem: form.getAttribute("data-lead"),
         pagina: location.pathname
       };
@@ -226,6 +238,11 @@
           var nameSlot = ok.querySelector("[data-first-name]");
           if (nameSlot) nameSlot.textContent = first;
           var grupo = ok.querySelector("[data-grupo]");
+          if (data.so_email === "sim") {
+            var gtx = ok.querySelector("[data-grupo-texto]");
+            if (gtx) gtx.textContent = "Sua prioridade na turma fundadora está registrada. Como você preferiu, os avisos de vagas, datas e condições chegam só por e-mail.";
+            grupo = null;
+          }
           var grupoAviso = ok.querySelector("[data-grupo-aviso]");
           if (grupo && CONFIG.grupoWhatsapp) {
             grupo.href = CONFIG.grupoWhatsapp; grupo.hidden = false;

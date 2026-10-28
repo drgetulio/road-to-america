@@ -179,7 +179,7 @@
           <article class="fact reveal" style="--i:2">
             <i class="ph ph-student" aria-hidden="true"></i>
             <h3>Estudantes podem começar</h3>
-            <p>Com matrícula ativa e Graduation Years marcado como Current, é possível fazer o Step 1 e o Step 2 CK antes da formatura. <a href="https://www.ecfmg.org/2026ib/students.html" target="_blank" rel="noopener">ECFMG</a></p>
+            <p>Com matrícula ativa, pelo menos dois anos de curso concluídos e Graduation Years marcado como Current, é possível fazer o Step 1 e o Step 2 CK antes da formatura. <a href="https://www.ecfmg.org/2026ib/students.html" target="_blank" rel="noopener">ECFMG</a></p>
           </article>
         </div>
       </div>
@@ -205,36 +205,37 @@
             <div class="field">
               <label for="v-nome">Nome completo</label>
               <input class="input" id="v-nome" name="nome" aria-describedby="err-v-nome" autocomplete="name" placeholder="Como consta no diploma" required>
-              <p class="error" id="err-v-nome" data-error-for="nome" aria-live="polite"></p>
+              <p class="error" id="err-v-nome" data-error-for="nome"></p>
             </div>
             <div class="field">
               <label for="v-escola">Escola médica</label>
               <input class="input" id="v-escola" name="escola" aria-describedby="err-v-escola" list="lista-escolas" autocomplete="off" placeholder="Onde você se formou ou estuda" required>
-              <p class="error" id="err-v-escola" data-error-for="escola" aria-live="polite"></p>
+              <p class="error" id="err-v-escola" data-error-for="escola"></p>
             </div>
             <div class="form-row">
               <div class="field">
                 <label for="v-tel">Telefone com DDD</label>
                 <input class="input" id="v-tel" name="telefone" aria-describedby="err-v-telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(61) 99999-9999" data-phone required>
-                <p class="error" id="err-v-telefone" data-error-for="telefone" aria-live="polite"></p>
+                <p class="error" id="err-v-telefone" data-error-for="telefone"></p>
               </div>
               <div class="field">
                 <label for="v-email">E-mail</label>
                 <input class="input" id="v-email" name="email" aria-describedby="err-v-email" type="email" inputmode="email" autocomplete="email" placeholder="voce@email.com" required>
-                <p class="error" id="err-v-email" data-error-for="email" aria-live="polite"></p>
+                <p class="error" id="err-v-email" data-error-for="email"></p>
               </div>
             </div>
-            <fieldset class="choices field">
-              <legend>Você tem segurança no inglês?</legend>
+            <fieldset class="choices field" aria-describedby="err-v-ingles">
+              <legend>Qual é a sua segurança no inglês hoje?</legend>
               <div class="choices choices--grid">
                 <div class="choice"><input type="radio" id="vi-1" name="ingles" value="Ainda não"><label for="vi-1">Ainda não<span>Leio com dificuldade</span></label></div>
                 <div class="choice"><input type="radio" id="vi-2" name="ingles" value="Leio bem, falo pouco"><label for="vi-2">Leio bem, falo pouco<span>Entendo artigos e livros</span></label></div>
                 <div class="choice"><input type="radio" id="vi-3" name="ingles" value="Converso com segurança"><label for="vi-3">Converso com segurança<span>Sustento uma conversa clínica</span></label></div>
                 <div class="choice"><input type="radio" id="vi-4" name="ingles" value="Fluente"><label for="vi-4">Fluente<span>Uso no dia a dia</span></label></div>
               </div>
-              <p class="error" id="err-v-ingles" data-error-for="ingles" aria-live="polite"></p>
+              <p class="error" id="err-v-ingles" data-error-for="ingles"></p>
             </fieldset>
             <div>
+              <label class="consent consent--opt"><input type="checkbox" name="so_email" value="sim"><span>Prefiro receber os avisos só por e-mail, sem entrar no grupo de WhatsApp.</span></label>
               <label class="consent"><input type="checkbox" name="consentimento" value="sim" aria-describedby="err-v-consentimento"><span>Li a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e autorizo o contato da Road to America por WhatsApp, e-mail e telefone sobre a verificação e a turma fundadora. A Road to America não vende nem compartilha dados para fins comerciais.</span></label>
               <p class="error" id="err-v-consentimento" data-error-for="consentimento" aria-live="polite" style="margin-top:6px"></p>
             </div>
@@ -245,7 +246,7 @@
           <div class="success" data-form-success hidden tabindex="-1">
             <i class="ph-fill ph-check-circle big" aria-hidden="true"></i>
             <h3 class="display h3">Pedido recebido, <span data-first-name></span>.</h3>
-            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. O convite para o grupo de WhatsApp da turma fundadora chega pelo seu número.</p>
+            <p data-grupo-texto data-com-link="Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. Enquanto isso, entre no grupo de WhatsApp da turma fundadora.">Um mentor vai conferir a sua escola no World Directory e responder por e-mail em até um dia útil, com uma rota de estudo sugerida. O convite para o grupo de WhatsApp da turma fundadora chega no seu celular.</p>
             <a class="btn btn--whats" data-grupo href="#" target="_blank" rel="noopener" hidden><i class="ph-fill ph-whatsapp-logo" aria-hidden="true"></i> Entrar no grupo da turma</a>
             <a class="btn btn--ghost" href="index.html#incluido">Conhecer o curso</a>
           </div>

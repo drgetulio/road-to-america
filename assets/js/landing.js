@@ -51,7 +51,7 @@
     {
       q: "Trabalho em plantões e tenho pouco tempo.",
       a: [
-        "O plano é montado em cima da sua escala. A carga mínima é de cerca de 12 horas por semana: 30 a 40 minutos de Anki por dia e um bloco de questões em cada folga.",
+        "O plano é montado a partir da sua escala. A carga mínima é de cerca de 12 horas por semana: 30 a 40 minutos de Anki por dia (cerca de 4 horas), as aulas gravadas da semana e dois ou três blocos de questões com revisão dos erros em cada folga.",
         "Nesse ritmo, o planejamento prevê de 10 a 14 meses até o Step 1 e mais 8 a 12 até o Step 2 CK, dentro dos três anos de acesso. Para quem está há mais de cinco anos longe das ciências básicas, o mentor em geral indica 15 horas ou mais por semana, ou um prazo maior até o Step 1. Se você tiver menos de 12 horas livres por semana, avisamos já na pré-inscrição que os três anos podem não bastar. As provas usam <strong>blocos de 30 minutos</strong> desde maio de 2026, e os blocos de questões do plano seguem esse formato."
       ],
       s: ["format"]
@@ -67,7 +67,7 @@
     {
       q: "Vou precisar refazer a residência?",
       a: [
-        "Na prática, ainda sim: a residência credenciada nos EUA continua sendo o caminho habitual para a licença plena. Desde 2023, <strong>27 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia (WES, maio de 2026), mas muitas ainda estão em regulamentação e oferecem poucas vagas.",
+        "Na prática, sim. A residência credenciada nos EUA continua sendo o caminho habitual para a licença plena. Desde 2023, <strong>27 estados</strong> aprovaram leis de licenciamento alternativo para médicos formados no exterior com experiência prévia (WES, maio de 2026), mas muitas ainda estão em regulamentação e oferecem poucas vagas.",
         "Quase todas essas leis exigem a certificação ECFMG, que inclui o Step 1 e o Step 2 CK, e uma oferta de emprego nos EUA."
       ],
       s: ["fsmb", "wes"]
@@ -84,7 +84,7 @@
       q: "E se eu não for aprovado?",
       a: [
         "Se, ao fim de três anos, ainda faltar aprovação no Step 1 ou no Step 2 CK e você tiver assistido a pelo menos 80% das aulas e feito no mínimo duas autoavaliações do NBME por Step que faltar, devolvemos o valor integral pago ao curso. Não é preciso ter feito nenhuma tentativa da prova para pedir o reembolso. Veja o <a href=\"garantia.html\">termo completo</a>.",
-        "Como cada Step aceita no máximo quatro tentativas na vida, recomendamos agendar só quando os simulados mostrarem folga. A decisão final é sua."
+        "Como cada Step aceita no máximo quatro tentativas na vida, recomendamos agendar só quando os simulados mostrarem folga, mas quem escolhe a data é você."
       ],
       s: ["attempts"]
     },
@@ -92,7 +92,7 @@
       q: "Ainda estou na faculdade. Posso começar?",
       a: [
         "<strong>Sim.</strong> Estudantes regularmente matriculados em escola cuja Sponsor Note indica Current, com o ciclo básico concluído, podem fazer o Step 1 e o Step 2 CK antes da formatura. O certificado ECFMG é emitido depois, com o diploma verificado.",
-        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não completou dois anos de curso, o prazo da garantia e o acesso ao conteúdo contam a partir dessa data."
+        "Quem começa durante o curso pode chegar à formatura com as duas provas feitas. Para quem ainda não completou dois anos de curso, o prazo da garantia e o acesso ao conteúdo começam a contar quando você completar o segundo ano."
       ],
       s: ["students"]
     },
@@ -107,8 +107,8 @@
     {
       q: "Preciso viajar para fazer a prova?",
       a: [
-        "<strong>Não.</strong> O Step 1 e o Step 2 CK são aplicados pela Prometric em centros no Brasil. A lista atualizada de cidades está no site da Prometric.",
-        "Desde janeiro de 2026, a inscrição de formados fora dos EUA é feita pela FSMB. A certificação continua com o ECFMG."
+        "<strong>Não para fora do país.</strong> O Step 1 e o Step 2 CK são aplicados pela Prometric em centros no Brasil, que ficam em algumas capitais. Dependendo de onde você mora, será preciso ir até uma delas. A lista atualizada de cidades está no site da Prometric.",
+        "Desde janeiro de 2026, a inscrição de estudantes e formados de escolas fora dos EUA é feita pela FSMB. A certificação continua com o ECFMG."
       ],
       s: ["prometric", "fsmbMove"]
     },
@@ -124,7 +124,7 @@
       q: "Por que R$ 12.000, se outros pacotes custam mais?",
       a: [
         "O curso é todo online, e as aulas e o material são feitos pela própria equipe. Não pagamos estúdio, licença de conteúdo nem estrutura física.",
-        "A <strong>turma fundadora</strong> tem condição especial por ser a primeira. Por isso mesmo, ainda não temos taxa de aprovação para mostrar e não vamos inventar uma: a garantia de três anos existe para cobrir esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
+        "A <strong>turma fundadora</strong> tem condição especial por ser a primeira. Como é a primeira, ainda não temos taxa de aprovação para mostrar, e a garantia de três anos cobre esse risco. Pedimos sugestões ao longo do curso e, de quem autorizar, um depoimento depois da prova, publicado com a indicação de condição especial de preço."
       ],
       s: []
     }
@@ -221,6 +221,13 @@
 
     applyRoles();
     select(0, false);
+    document.querySelectorAll("[data-qa-abrir]").forEach(function (a) {
+      a.addEventListener("click", function () {
+        var i = Number(a.getAttribute("data-qa-abrir"));
+        if (mobile.matches) { var box = document.getElementById("qa-inline-" + i); if (box && box.hidden) select(i, true); }
+        else select(i, true);
+      });
+    });
     var onChange = function () { applyRoles(); if (!mobile.matches) select(current, false); };
     if (mobile.addEventListener) mobile.addEventListener("change", onChange);
     else if (mobile.addListener) mobile.addListener(onChange);

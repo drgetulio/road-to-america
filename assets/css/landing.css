@@ -165,7 +165,7 @@
 @media (max-width: 900px) {
   .journey { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .journey__stage { top: 68px; z-index: 2; background: var(--paper-2); padding-bottom: 8px; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
-  .journey__globe { height: 40vh; min-height: 260px; max-height: 360px; }
+  .journey__globe { height: 34vh; min-height: 240px; max-height: 300px; }
   .journey__stops { padding: 2vh 0 6vh; }
   .stop { grid-template-columns: 66px minmax(0, 1fr); gap: 14px; padding: 5vh 0; }
   .stop .exit { min-width: 62px; padding: 7px 10px; }
@@ -429,3 +429,4 @@
   .sign__label { font-size: 13.5px; }
   .sign__value { font-size: 2.3rem; }
 }
+.consent--opt { margin-bottom: 12px; }

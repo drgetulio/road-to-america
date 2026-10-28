@@ -8,6 +8,13 @@ var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 var STOP_T = [0, 0.27, 0.5, 0.74, 1];
 
 /* ---------- etapas: funciona mesmo sem WebGL ---------- */
+function stepMargin() {
+  if (!window.matchMedia("(max-width: 900px)").matches) return "-48% 0px -42% 0px";
+  /* no celular, a faixa de leitura começa logo abaixo do globo fixo */
+  var stage = document.querySelector(".journey__stage");
+  var h = stage ? stage.getBoundingClientRect().height : 300;
+  return "-" + Math.round(68 + h + 24) + "px 0px -30% 0px";
+}
 var target = 0;
 var onStep = function () {};
 function setStep(i) {
@@ -25,7 +32,7 @@ if (stops.length) {
       entries.forEach(function (e) {
         if (e.isIntersecting) setStep(stops.indexOf(e.target));
       });
-    }, { rootMargin: window.matchMedia("(max-width: 900px)").matches ? "-64% 0px -24% 0px" : "-48% 0px -42% 0px" });
+    }, { rootMargin: stepMargin() });
     stops.forEach(function (s) { stepIO.observe(s); });
   }
 }
@@ -135,16 +142,19 @@ async function boot() {
       "}"
     ].join("\n")
   });
-  globe.add(new THREE.Points(geo, dotMat));
+  var dots = new THREE.Points(geo, dotMat);
+  dots.renderOrder = 1;
+  globe.add(dots);
 
   /* ---------- oceano com borda suave ---------- */
   var oceanMat = new THREE.ShaderMaterial({
-    transparent: true,
     uniforms: { uBase: { value: new THREE.Vector3() }, uRim: { value: new THREE.Vector3() }, uRimA: { value: 0.3 } },
     vertexShader: "varying vec3 vN; void main(){ vN = normalize(normalMatrix * normal); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
     fragmentShader: "uniform vec3 uBase; uniform vec3 uRim; uniform float uRimA; varying vec3 vN; void main(){ float f = pow(1.0 - max(vN.z, 0.0), 3.2); gl_FragColor = vec4(mix(uBase, uRim, f * 0.32), 1.0); }"
   });
-  globe.add(new THREE.Mesh(new THREE.SphereGeometry(0.995, 64, 48), oceanMat));
+  var ocean = new THREE.Mesh(new THREE.SphereGeometry(0.995, 64, 48), oceanMat);
+  ocean.renderOrder = -1;
+  globe.add(ocean);
 
   /* ---------- rota ---------- */
   var A = ll(-15.79, -47.88), B = ll(40.71, -74.01);
@@ -284,7 +294,7 @@ async function boot() {
     kick();
   }
 
-  var lastT = 0;
+  var lastT = 0, lastChange = 0;
   function frame(time) {
     raf = 0;
     var dt = lastT ? Math.min(100, (time || 0) - lastT) : 16;
@@ -304,12 +314,18 @@ async function boot() {
     place(lblOrigem, A.clone().multiplyScalar(1.01), "below");
     place(lblDestino, B.clone().multiplyScalar(1.01), "above");
     place(lblSign, tp, "right");
+    /* na chegada, a placa sai e o rótulo de destino assume a saída final */
+    var arrived = p > 0.93;
+    if (lblSign && arrived) lblSign.style.opacity = "0";
+    if (lblDestino) lblDestino.textContent = arrived ? "Nova York, EXIT 05" : "Nova York";
     renderer.render(scene, camera);
     host.setAttribute("data-progress", p.toFixed(3));
     dirty = false;
-    if (visible && (moving || !reduce)) raf = requestAnimationFrame(frame);
+    if (moving) lastChange = time || 0;
+    /* o pulso do halo segue por alguns segundos depois de cada etapa e então o laço para */
+    if (visible && (moving || (!reduce && (time || 0) - lastChange < 4000))) raf = requestAnimationFrame(frame);
   }
-  function kick() { if (!raf && visible) { lastT = 0; raf = requestAnimationFrame(frame); } }
+  function kick() { if (!raf && visible) { lastT = 0; lastChange = performance.now(); raf = requestAnimationFrame(frame); } }
 
   onStep = function (i) {
     stepIdx = i;
