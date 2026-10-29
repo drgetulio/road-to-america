@@ -1,0 +1,42 @@
+{
+  "dia": 8,
+  "exemplo": true,
+  "gancho": "A escola dos linfócitos B *perdeu a chave*",
+  "gancho_apoio": "Macrô chegou cedo para a aula, mas a porta não abre. Que peça está faltando?",
+  "imagem": {
+    "arquivo": "imagens/dia-008.svg",
+    "cena": "Macrô diante de uma escola de linfócitos B com a porta trancada por um cadeado vermelho; no canto, um vale-presente amarelo de IgG materna.",
+    "alt": "Macrófago lilás de guardanapo xadrez diante de uma escola trancada"
+  },
+  "questao": {
+    "vinheta": "A 10-month-old boy is brought for his fourth episode of otitis media since age 6 months. Last month he had pneumococcal pneumonia. Tonsils are barely visible and no lymph nodes are palpable. Serum IgG, IgA, and IgM are markedly decreased. Flow cytometry shows almost no CD19+ cells; T-cell counts are normal.",
+    "pergunta": "A defect in which protein is most likely?",
+    "alternativas": {
+      "A": "Adenosine deaminase",
+      "B": "Bruton tyrosine kinase",
+      "C": "CD40 ligand",
+      "D": "NADPH oxidase"
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem BTK, o pré-B não vira *linfócito B*",
+    "certa": [
+      "A *Bruton tyrosine kinase* (BTK) é o sinal que faz o pré-B amadurecer na medula. Sem ela, quase não há células B maduras (*CD19* lá embaixo) e todas as imunoglobulinas caem.",
+      "O gene fica no X, então o quadro aparece em meninos. As infecções começam perto dos 6 meses, quando acaba a *IgG materna* que atravessou a placenta. Amígdalas e linfonodos quase somem porque os folículos são feitos de células B."
+    ],
+    "termos": ["Bruton tyrosine kinase", "X-linked", "CD19", "maternal IgG"],
+    "erradas": {
+      "A": "Na falta de ADA (uma das formas de *SCID*), as células T também somem. Aqui os linfócitos T estão normais.",
+      "C": "Sem *CD40 ligand*, a célula B existe mas não troca de classe: a IgM fica normal ou alta, nunca baixa como aqui.",
+      "D": "*NADPH oxidase* é a doença granulomatosa crônica: o defeito está no fagócito, com células B e anticorpos normais."
+    },
+    "macete": {
+      "frase": "B de *Bruton*, de *BTK*, de *B cell* e de *boy*",
+      "apoio": "O vale-presente da mãe (a IgG materna) vale até uns 6 meses. Depois disso, a escola dos B precisa abrir sozinha."
+    }
+  },
+  "legenda": {
+    "contexto": "Menino de 10 meses, otite atrás de otite desde os 6 meses e quase nenhum CD19 no sangue. A idade em que tudo começou já é metade da resposta."
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "dia": 0,
+  "gancho": "Frase da capa em português, com a *palavra-chave* entre asteriscos",
+  "gancho_apoio": "Uma linha de contexto em português, sem dar a resposta (opcional).",
+  "imagem": {
+    "arquivo": "dia-000.png",
+    "cena": "Descrição da cena para gerar a imagem (aparece no aviso de imagem pendente).",
+    "foco": "50% 40%",
+    "alt": "Texto alternativo curto"
+  },
+  "imagem_macete": null,
+  "questao": {
+    "vinheta": "Vinheta em inglês. Vinheta e pergunta somam no máximo 60 palavras.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": "Alternativa curta",
+      "B": { "texto": "Alternativa longa que não cabe no adesivo do quiz", "quiz": "Versão de até 30 caracteres" },
+      "C": "Alternativa curta",
+      "D": { "texto": "Alternativa de remix", "dia": 2 }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Título do porquê, com *destaque*",
+    "certa": [
+      "Primeiro parágrafo: por que a certa está certa, com os *termos-chave em inglês* destacados.",
+      "Segundo parágrafo (opcional)."
+    ],
+    "termos": ["key term 1", "key term 2", "key term 3"],
+    "erradas": {
+      "B": "Uma ou duas linhas sobre por que a B está errada.",
+      "C": "Por que a C está errada.",
+      "D": "Por que a D está errada."
+    },
+    "macete": {
+      "frase": "Mnemônico curto com *destaques*",
+      "apoio": "Uma frase que liga o mnemônico à imagem ou ao personagem.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Duas ou três linhas para a legenda, sem dar a resposta.",
+    "palavras_chave": null,
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": null
+  },
+  "quiz": { "pergunta": "Qual é a sua letra?" },
+  "cta": null,
+  "tom": null,
+  "reel": null,
+  "exemplo": false
+}

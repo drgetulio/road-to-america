@@ -1,0 +1,41 @@
+{
+  "dia": 9,
+  "exemplo": true,
+  "gancho": "Três saídas, um só *próximo passo*",
+  "gancho_apoio": "O paciente vomitou borra de café e já tem dois acessos com soro. Qual saída você pega?",
+  "imagem": {
+    "cena": "Placa verde de rodovia 'NEXT STEP 500 m' com três saídas desenhadas: um tanque de combustível, um bombeiro apagando uma bomba d'água e uma câmera. Capitã Plaqueta organiza o trânsito no cruzamento.",
+    "foco": "50% 45%"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man comes to the emergency department after two episodes of coffee-ground emesis and black stools. He takes ibuprofen daily for knee pain. Pulse is 112/min and blood pressure is 98/60 mm Hg. Hemoglobin is 8.9 g/dL. Two large-bore IV lines are placed and crystalloid infusion is started.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": { "texto": "CT angiography of the abdomen", "quiz": "CT angiography" },
+      "B": { "texto": "IV pantoprazole, then endoscopy within 24 hours", "quiz": "IV PPI, then EGD in 24 h" },
+      "C": { "texto": "Nasogastric lavage", "quiz": "Nasogastric lavage" },
+      "D": { "texto": "Transfuse to a hemoglobin above 10 g/dL", "quiz": "Transfuse to Hb above 10" }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Encha o tanque, *apague a bomba*, olhe por dentro",
+    "certa": [
+      "Hemorragia digestiva alta com taquicardia pede primeiro *resuscitation*: dois acessos calibrosos e cristaloide. Isso a vinheta já fez.",
+      "O passo seguinte é o *IV PPI* (pantoprazol) e a *upper endoscopy* nas primeiras 24 horas, com o paciente estável. A endoscopia acha a causa (aqui, provável úlcera por anti-inflamatório) e trata o sangramento no mesmo exame."
+    ],
+    "termos": ["upper GI bleeding", "IV PPI", "EGD within 24 h", "restrictive transfusion"],
+    "erradas": {
+      "A": "*CT angiography* entra no sangramento baixo ativo ou quando a endoscopia não encontra a fonte.",
+      "C": "*Nasogastric lavage* não muda a conduta e não substitui a endoscopia. Saiu da rotina.",
+      "D": "Transfunde-se com Hb abaixo de *7 g/dL* (8 com doença cardiovascular). Mirar acima de 10 aumenta ressangramento e mortalidade."
+    },
+    "macete": {
+      "frase": "*Tanque*, *bomba*, *câmera*",
+      "apoio": "Tanque: volume, e sangue só abaixo de 7. Bomba: IBP (*PPI*) na veia para calar a bomba de prótons. Câmera: endoscopia em até 24 horas."
+    }
+  },
+  "legenda": {
+    "contexto": "Borra de café, fezes pretas e ibuprofeno todo dia. O soro já está correndo. A pergunta é o que vem depois."
+  }
+}
