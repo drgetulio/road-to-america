@@ -125,6 +125,10 @@ export default {
 
         avisoConta(ctx) +
 
+        '<section class="cartao inicio__entrada" aria-labelledby="t-completos"><div><h2 class="h-sm" id="t-completos">Simulados que replicam a prova</h2>' +
+          "<p>Step 1 com 14 blocos e até 280 itens, Step 2 CK com 16 blocos e até 318, meio formulário e avaliação de prontidão: tutorial, pausas com saldo, relatório com a probabilidade de aprovação e o perfil por área.</p></div>" +
+          '<a class="btn btn--ghost" href="#/completos">' + icon("flag-banner") + "Simulados completos</a></section>" +
+
         (salvo && !salvo.encerrada && resta > 0 ? '<div class="aviso-conta andamento" data-andamento>' + icon("hourglass-medium") +
           "<div><p><strong>Há um bloco em andamento</strong> (" + NOME_STEP[salvo.step] + ", " + relogio(resta) + " restantes). O relógio do bloco continua correndo mesmo com a página fechada.</p>" +
           '<p class="acoes" style="margin-top:10px"><a class="btn btn--sm" href="#/bloco">' + icon("play") + 'Voltar ao bloco</a><button type="button" class="btn btn--ghost btn--sm" data-encerrar-salvo>Encerrar e ver o resultado</button></p></div></div>' : "") +

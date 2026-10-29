@@ -36,7 +36,13 @@ O passo a passo completo está em `anki/README.md` (seção "Ativar o Supabase")
 for d in anki plataforma simulado admin; do node --test $d/tests/*.test.mjs; done
 node admin/tests/fluxos.e2e.mjs          # fluxos da área administrativa (Playwright)
 node plataforma/tests/percurso.e2e.mjs   # percurso completo: flashcards, simulado, NBME e painel do admin
+node supabase/teste-local/03-compara-resumo.mjs   # resumo do painel: Postgres igual ao JavaScript
+node supabase/teste-local/04-compara-itens.mjs    # estatísticas de itens: Postgres igual ao JavaScript
 ```
+
+O banco de questões (carregador, psicometria, formulários no formato oficial e importação
+para o Supabase) está descrito em `plataforma/README.md`, `plataforma/INTERFACE.md` e
+`plataforma/PSICOMETRIA.md`.
 
 Site estático, sem etapa de build. Basta publicar a pasta em qualquer hospedagem (Netlify, Vercel, GitHub Pages, servidor próprio).
 

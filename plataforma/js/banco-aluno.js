@@ -1,0 +1,499 @@
+/* Road to America | banco de questões no espaço do aluno: lógica pura (sem DOM).
+   Usada por questoes/ (blocos personalizados, desempenho, curva de evolução e painel
+   de probabilidade de aprovação) e pelo cartão resumido de "Meu progresso" (anki/).
+
+   - histórico do aluno por item (vista, errada, marcada) a partir de listRespostas();
+   - filtros do bloco personalizado (Step; sistema, disciplina, área, tarefa,
+     competência; não vistas, erradas, marcadas, todas) com contagem por faceta;
+   - montagem do bloco (sorteio estratificado por sistema, não vistas primeiro) e
+     sessão no mesmo formato do bloco do simulado (simulado/js/sessao.js), para a
+     interface de item compartilhada (plataforma/js/ui-item.js);
+   - conversão da sessão encerrada em respostas por item (saveRespostas);
+   - histórico de blocos, resultado de um bloco e curva de evolução;
+   - contribuição de cada área para a probabilidade de aprovação e recomendações
+     de estudo ligadas ao Conteúdo do Step 1, aos flashcards e ao próprio banco.
+   O método psicométrico está em PSICOMETRIA.md (seções 17 a 19 tratam do que
+   este arquivo acrescenta). */
+
+import { sortearQuestoes, rng } from "./simulado.js";
+import {
+  estimarAluno, prepararRespostas, eap, expit, prontidaoCombinada, PRIORI_PADRAO, PESOS_MODO, REGRA_CONFIANCA, PADRAO_STEP2CK
+} from "./psicometria.js";
+import { TAXONOMIA, sistemasDoOutline, nomeChave } from "./banco.js";
+import { prontidao, CONFIG_PADRAO } from "./desempenho.js";
+import { criarSessao } from "../../simulado/js/sessao.js";
+
+/* Tamanho do bloco: até 20 itens, como o bloco oficial (usmle.org, páginas do Step 1
+   e do Step 2 CK); no modo livre, até 40 (critério interno, para revisão rápida).
+   Ritmo do modo cronometrado: 90 s por item, a média do bloco oficial (30 min / 20). */
+export const LIMITES_BLOCO = Object.freeze({ min: 1, max: 20, max_livre: 40, ritmo_ms: 90000, tutor_limite_ms: 24 * 3600 * 1000 });
+export const MODOS_BLOCO = Object.freeze(["tutor", "cronometrado"]);
+export const SITUACOES = Object.freeze(["nao_vistas", "erradas", "marcadas", "todas"]);
+export const ROTULO_SITUACAO = Object.freeze({ nao_vistas: "Não vistas", erradas: "Erradas", marcadas: "Marcadas", todas: "Todas" });
+export const ROTULO_MODO = Object.freeze({ tutor: "Tutor", cronometrado: "Cronometrado" });
+
+/* Filtros do bloco personalizado por Step. "campo" é onde o item guarda o rótulo
+   (nas disciplinas, a lista com todos os rótulos do item). */
+export const FILTROS_STEP = Object.freeze({
+  step1: Object.freeze([
+    { dim: "sistema", campo: "sistema", rotulo: "Sistemas" },
+    { dim: "disciplina", campo: "disciplinas", rotulo: "Disciplinas" },
+    { dim: "competencia", campo: "competencia", rotulo: "Competências" }
+  ]),
+  step2ck: Object.freeze([
+    { dim: "sistema", campo: "sistema", rotulo: "Sistemas" },
+    { dim: "disciplina_oficial", campo: "disciplinas_oficiais", rotulo: "Disciplinas clínicas" },
+    { dim: "competencia", campo: "competencia", rotulo: "Tarefas do médico (competências)" },
+    { dim: "area", campo: "area", rotulo: "Áreas" },
+    { dim: "tarefa", campo: "tarefa", rotulo: "Tarefas" }
+  ])
+});
+
+const tempoDe = (r) => Date.parse(r?.respondida_em || "") || 0;
+const dentro = (v, set) => (Array.isArray(v) ? v.some((x) => set.has(x)) : set.has(v));
+
+/* ---------- histórico por item ----------
+   respostas: listRespostas() (qualquer origem). Devolve Map id -> {
+     n, respondidas, primeira_correta, ultima_resposta, ultima_correta (null sem
+     resposta dada), ultima_em, marcada (marca da tentativa mais recente), em_branco_ultima } */
+export function historicoItens(respostas) {
+  const ord = (respostas || []).map((r, i) => ({ r, i })).sort((a, b) => tempoDe(a.r) - tempoDe(b.r) || a.i - b.i);
+  const h = new Map();
+  for (const { r } of ord) {
+    const id = r.questao_id;
+    if (!id) continue;
+    const x = h.get(id) || { n: 0, respondidas: 0, primeira_correta: null, ultima_resposta: null, ultima_correta: null, ultima_em: null, marcada: false, em_branco_ultima: false };
+    x.n++;
+    const dada = r.resposta !== null && r.resposta !== undefined && r.resposta !== "";
+    if (dada) {
+      x.respondidas++;
+      if (x.primeira_correta === null) x.primeira_correta = !!r.correta;
+      x.ultima_resposta = r.resposta;
+      x.ultima_correta = !!r.correta;
+    }
+    x.em_branco_ultima = !dada;
+    x.marcada = !!r.marcada;
+    x.ultima_em = r.respondida_em || x.ultima_em;
+    h.set(id, x);
+  }
+  return h;
+}
+
+/* Situação de um item para o filtro do bloco. "erradas": a tentativa mais recente
+   foi errada ou ficou em branco (na prova, em branco conta como erro). */
+export function situacaoItem(id, historico) {
+  const x = historico?.get(id);
+  return {
+    nao_vistas: !x,
+    erradas: !!x && (x.em_branco_ultima || x.ultima_correta === false),
+    marcadas: !!x && x.marcada,
+    todas: true
+  };
+}
+
+function normalizarSelecao(step, selecao) {
+  const out = [];
+  for (const f of FILTROS_STEP[step] || []) {
+    const v = selecao?.[f.dim];
+    const lista = (Array.isArray(v) ? v : v ? [v] : []).filter(Boolean);
+    if (lista.length) out.push({ ...f, set: new Set(lista) });
+  }
+  return out;
+}
+
+/* Itens do Step que passam nos filtros. Dentro de uma dimensão vale "ou"; entre
+   dimensões vale "e". Sem nada marcado numa dimensão, ela não filtra. */
+export function filtrarPool(banco, { step, selecao = {}, situacao = "todas", historico = new Map(), ignorarDim = null } = {}) {
+  const conds = normalizarSelecao(step, selecao).filter((c) => c.dim !== ignorarDim);
+  const sit = SITUACOES.includes(situacao) ? situacao : "todas";
+  return (banco?.steps?.[step] || []).filter((q) => conds.every((c) => dentro(q[c.campo], c.set)) && situacaoItem(q.id, historico)[sit]);
+}
+
+/* Contagens para a tela: por situação (com os filtros de área aplicados) e, para
+   cada dimensão, por chave (com a situação e os filtros das OUTRAS dimensões). */
+export function contagemFacetas(banco, { step, selecao = {}, situacao = "todas", historico = new Map() } = {}) {
+  const situacoes = {};
+  const baseAreas = filtrarPool(banco, { step, selecao, situacao: "todas", historico });
+  for (const s of SITUACOES) situacoes[s] = baseAreas.filter((q) => situacaoItem(q.id, historico)[s]).length;
+  const dims = {};
+  for (const f of FILTROS_STEP[step] || []) {
+    const pool = filtrarPool(banco, { step, selecao, situacao, historico, ignorarDim: f.dim });
+    const cont = {};
+    for (const q of pool) for (const c of new Set(Array.isArray(q[f.campo]) ? q[f.campo] : [q[f.campo]])) if (c) cont[c] = (cont[c] || 0) + 1;
+    dims[f.dim] = cont;
+  }
+  return { situacoes, dims, disponiveis: filtrarPool(banco, { step, selecao, situacao, historico }).length };
+}
+
+/* Chaves de uma dimensão na ordem do outline (as que o banco tem e não estão no
+   outline vão para o fim) */
+export function chavesDaDimensao(step, dim, presentes = []) {
+  const oficiais = (TAXONOMIA[step]?.[dim]?.chaves || []).map((k) => k.chave);
+  const extras = [...new Set(presentes)].filter((c) => c && !oficiais.includes(c)).sort();
+  return [...oficiais, ...extras];
+}
+
+export function limiteItens(livre) { return livre ? LIMITES_BLOCO.max_livre : LIMITES_BLOCO.max; }
+
+/* Valida o pedido de bloco; devolve mensagens (vazia = válido) */
+export function validarPedidoBloco({ step, n, modo, livre = false, disponiveis = Infinity }) {
+  const e = [];
+  if (!["step1", "step2ck"].includes(step)) e.push("Escolha o Step.");
+  if (!MODOS_BLOCO.includes(modo)) e.push("Escolha o modo: tutor ou cronometrado.");
+  const max = limiteItens(livre);
+  if (!Number.isInteger(n) || n < LIMITES_BLOCO.min || n > max) e.push("O bloco tem de " + LIMITES_BLOCO.min + " a " + max + " itens" + (livre ? " no modo livre." : ". Para até " + LIMITES_BLOCO.max_livre + ", ligue o modo livre."));
+  if (disponiveis === 0) e.push("Nenhum item atende aos filtros escolhidos.");
+  return e;
+}
+
+/* Sorteio do bloco a partir do pool filtrado: estratificado por sistema, com as não
+   vistas primeiro e dificuldade alternada (sortearQuestoes, de simulado.js). Mesma
+   semente, mesmo bloco. */
+export function sortearBlocoBanco(pool, { n, semente = Date.now(), historico = new Map() } = {}) {
+  const vistas = (pool || []).filter((q) => historico.has(q.id)).map((q) => q.id);
+  return sortearQuestoes(pool, { n, campo: "sistema", vistas, semente });
+}
+
+function idSessao(semente) {
+  const r = globalThis.crypto?.randomUUID ? globalThis.crypto.randomUUID().replace(/-/g, "").slice(0, 20) : Math.floor(rng(semente)() * 1e15).toString(36);
+  return "bq-" + r;
+}
+
+/* Sessão do bloco do banco: mesmo formato de criarSessao (simulado/js/sessao.js),
+   com os campos do banco. Cronometrado: 90 s por item, relógio regressivo do bloco.
+   Tutor: sem limite de prova; a sessão fecha sozinha depois de 24 h (o relógio da
+   tela conta para a frente). */
+export function criarBlocoBanco({ step, itens, modo, livre = false, agora = Date.now(), semente = null, criterios = null, dono = null, notas = null }) {
+  const n = (itens || []).length;
+  const erros = validarPedidoBloco({ step, n, modo, livre, disponiveis: n });
+  if (erros.length) throw new Error(erros.join(" "));
+  const limite = modo === "cronometrado" ? n * LIMITES_BLOCO.ritmo_ms : LIMITES_BLOCO.tutor_limite_ms;
+  const s = criarSessao({ step, questoes: itens, agora, limite_ms: limite, semente });
+  s.origem = "banco";
+  s.id = idSessao(agora + (semente || 0));
+  s.modo = modo;
+  s.livre = !!livre;
+  s.confirmadas = Array(n).fill(false);
+  s.criterios = criterios || null;
+  s.dono = dono;
+  if (Array.isArray(notas) && notas.length === n) s.notas = notas.map((t) => String(t || "").slice(0, 2000));
+  return s;
+}
+
+/* Tutor: confirmar a resposta trava a alternativa e mostra a explicação */
+export function confirmarResposta(s, i) {
+  if (s.encerrada) throw new Error("O bloco já foi encerrado e não pode ser alterado.");
+  if (s.modo !== "tutor") return s;
+  if (s.respostas[i] === null) throw new Error("Escolha uma alternativa antes de confirmar.");
+  if (!Array.isArray(s.confirmadas)) s.confirmadas = Array(s.ids.length).fill(false);
+  s.confirmadas[i] = true;
+  return s;
+}
+export const travada = (s, i) => s?.modo === "tutor" && !!s.confirmadas?.[i];
+
+/* Respostas por item de uma sessão encerrada, prontas para store.saveRespostas.
+   O acerto é calculado aqui e recalculado pela camada de dados quando o item está
+   no banco. Todas levam a data do fim do bloco. */
+export function paraRespostasBanco(s, porId) {
+  if (!s?.encerrada) throw new Error("Encerre o bloco antes de gravar.");
+  const get = (id) => (porId instanceof Map ? porId.get(id) : porId?.[id]);
+  const fim = new Date(s.fim).toISOString();
+  return s.ids.map((id, i) => {
+    const q = get(id);
+    const resposta = s.respostas[i] || null;
+    return {
+      questao_id: id,
+      step: q?.step || s.step,
+      resposta,
+      correta: !!q && resposta !== null && resposta === q.correta,
+      tempo_ms: Math.min(86400000, Math.max(0, Math.round(s.tempos_ms[i] || 0))),
+      marcada: !!s.marcadas[i],
+      modo: s.modo === "tutor" ? "tutor" : "cronometrado",
+      origem: "banco",
+      sessao_id: s.id,
+      bloco: null,
+      posicao: i,
+      versao_item: q?.versao ?? null,
+      respondida_em: fim
+    };
+  });
+}
+
+/* ---------- histórico de blocos ----------
+   Agrupa as respostas de origem "banco" por sessao_id. Devolve do mais recente para
+   o mais antigo: { id, step, modo, fim, n, respondidas, acertos, em_branco, marcadas,
+   tempo_ms, percentual, esperado_limiar, itens: [{ posicao, questao_id, resposta,
+   correta, marcada, tempo_ms }] }. */
+export function resumoBlocos(respostas, itens = null) {
+  const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
+  const grupos = new Map();
+  for (const r of respostas || []) {
+    if ((r.origem || "banco") !== "banco" || !r.sessao_id) continue;
+    (grupos.get(r.sessao_id) || grupos.set(r.sessao_id, []).get(r.sessao_id)).push(r);
+  }
+  const out = [];
+  for (const [id, lista] of grupos) {
+    lista.sort((a, b) => (a.posicao ?? 0) - (b.posicao ?? 0));
+    const resp = lista.filter((r) => r.resposta !== null && r.resposta !== undefined && r.resposta !== "");
+    const acertos = lista.filter((r) => r.correta).length;
+    const angs = lista.map((r) => get(r.questao_id)?.angoff).filter(Number.isFinite);
+    out.push({
+      id,
+      step: lista[0].step,
+      modo: lista.some((r) => r.modo === "tutor") ? "tutor" : "cronometrado",
+      fim: lista.reduce((m, r) => (String(r.respondida_em) > m ? String(r.respondida_em) : m), ""),
+      n: lista.length,
+      respondidas: resp.length,
+      acertos,
+      em_branco: lista.length - resp.length,
+      marcadas: lista.filter((r) => r.marcada).length,
+      tempo_ms: lista.reduce((t, r) => t + (r.tempo_ms || 0), 0),
+      percentual: lista.length ? acertos / lista.length : 0,
+      esperado_limiar: angs.length ? angs.reduce((a, b) => a + b, 0) / angs.length : null,
+      itens: lista.map((r) => ({ posicao: r.posicao ?? 0, questao_id: r.questao_id, resposta: r.resposta ?? null, correta: !!r.correta, marcada: !!r.marcada, tempo_ms: r.tempo_ms || 0 }))
+    });
+  }
+  return out.sort((a, b) => b.fim.localeCompare(a.fim) || (a.id < b.id ? 1 : -1));
+}
+
+/* Acerto de um bloco por chave de uma dimensão: [{ chave, total, acertos, taxa, esperado_limiar }] */
+export function blocoPorArea(bloco, itens, campo) {
+  const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
+  const m = new Map();
+  for (const it of bloco?.itens || []) {
+    const q = get(it.questao_id);
+    if (!q) continue;
+    const v = q[campo];
+    for (const c of new Set(Array.isArray(v) ? v : [v])) {
+      if (!c) continue;
+      const o = m.get(c) || m.set(c, { chave: c, total: 0, acertos: 0, soma_angoff: 0 }).get(c);
+      o.total++; if (it.correta) o.acertos++; o.soma_angoff += q.angoff;
+    }
+  }
+  return [...m.values()].map((o) => ({ chave: o.chave, total: o.total, acertos: o.acertos, taxa: o.acertos / o.total, esperado_limiar: o.soma_angoff / o.total }))
+    .sort((a, b) => (a.taxa - a.esperado_limiar) - (b.taxa - b.esperado_limiar) || (a.chave < b.chave ? -1 : 1));
+}
+
+/* ---------- curva de evolução ----------
+   Um ponto por sessão (bloco do banco, simulado completo ou bloco de 30 minutos),
+   na data em que ela terminou: P(aprovação) e theta com todas as respostas até ali
+   (mesmas regras de prepararRespostas: primeira resposta, pesos do modo), mais o
+   acerto da própria sessão e o acerto esperado do examinando no limiar nos mesmos
+   itens. maxPontos: se houver mais sessões, ficam as mais recentes. */
+export function curvaEvolucao({ respostas, itens, step, pesos = PESOS_MODO, priori = PRIORI_PADRAO, maxPontos = 40 }) {
+  const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
+  const sessoes = new Map();
+  for (const r of respostas || []) {
+    const q = get(r.questao_id);
+    if (!q || q.step !== step) continue;
+    const chave = r.sessao_id || (r.origem || "banco") + ":" + String(r.respondida_em || "").slice(0, 10);
+    const s = sessoes.get(chave) || sessoes.set(chave, { chave, origem: r.origem || "banco", fim: "", total: 0, acertos: 0, soma_angoff: 0 }).get(chave);
+    if (String(r.respondida_em) > s.fim) s.fim = String(r.respondida_em);
+    s.total++; if (r.correta) s.acertos++; s.soma_angoff += q.angoff;
+  }
+  const lista = [...sessoes.values()].sort((a, b) => a.fim.localeCompare(b.fim)).slice(-maxPontos);
+  return lista.map((s) => {
+    const { usadas } = prepararRespostas(respostas, itens, { step, pesos, ate: s.fim });
+    const est = eap(usadas, { priori });
+    return {
+      sessao: s.chave, origem: s.origem, ate: s.fim,
+      n: est.n, n_efetivo: est.n_efetivo, p_aprovacao: est.p_aprovacao, theta: est.theta, ic90: est.ic90,
+      sessao_total: s.total, sessao_acertos: s.acertos, sessao_taxa: s.total ? s.acertos / s.total : null,
+      sessao_limiar: s.total ? s.soma_angoff / s.total : null
+    };
+  });
+}
+
+/* ---------- contribuição de cada área ----------
+   Pergunta: quanto a probabilidade de aprovação subiria se, só nesta área, o aluno
+   tivesse acertado exatamente o que o examinando no limiar acerta? Para cada item
+   da área, a resposta observada x_i é trocada pela resposta esperada no limiar,
+   a_i = expit(-b_i) (o Angoff, ou o b calibrado), como pseudo-resposta fracionária:
+   w [a_i ln P_i(θ) + (1 - a_i) ln(1 - P_i(θ))], escrita como duas respostas
+   pesadas (acerto com peso w a_i e erro com peso w (1 - a_i)). As demais áreas
+   ficam como estão.
+     ganho = P(aprovação | área no limiar) - P(aprovação | respostas)
+   ganho > 0: a área derruba a probabilidade; ganho < 0: a área a sustenta.
+   deficit = soma de (a_i - x_i) na área: acertos que faltaram para o limiar.
+   As contribuições não se somam (P não é linear e, nas disciplinas, um item
+   conta em mais de um rótulo). */
+export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_PADRAO } = {}) {
+  const base = eap(usadas, { priori }).p_aprovacao;
+  const grupos = new Map();
+  for (const u of usadas || []) {
+    const v = u.item?.[dim];
+    for (const c of new Set(Array.isArray(v) ? v : [v])) if (c) (grupos.get(c) || grupos.set(c, new Set()).get(c)).add(u);
+  }
+  const taxDim = dim === "disciplinas" ? "disciplina" : dim === "disciplinas_oficiais" ? "disciplina_oficial" : dim;
+  const faixas = new Map((TAXONOMIA[step]?.[taxDim]?.chaves || []).map((k) => [k.chave, k.faixa]));
+  const out = [];
+  for (const [chave, set] of grupos) {
+    const alt = [];
+    let n = 0, acertos = 0, esperado = 0;
+    for (const u of usadas) {
+      if (!set.has(u)) { alt.push(u); continue; }
+      const a = expit(-u.b);
+      const w = u.w === undefined ? 1 : u.w;
+      n++; acertos += u.x; esperado += a;
+      if (a > 0) alt.push({ b: u.b, x: 1, w: w * a });
+      if (a < 1) alt.push({ b: u.b, x: 0, w: w * (1 - a) });
+    }
+    const pLim = eap(alt, { priori }).p_aprovacao;
+    const fx = faixas.get(chave);
+    out.push({
+      chave, n, acertos, esperado_limiar: esperado, deficit: esperado - acertos,
+      taxa: n ? acertos / n : null, taxa_limiar: n ? esperado / n : null,
+      p_atual: base, p_area_no_limiar: pLim, ganho: pLim - base,
+      peso_prova: fx ? (fx[0] + fx[1]) / 200 : null
+    });
+  }
+  return out.sort((a, b) => b.ganho - a.ganho || b.deficit - a.deficit || (a.chave < b.chave ? -1 : 1));
+}
+
+/* ---------- recomendações de estudo ----------
+   Ligações (caminhos relativos a uma página um nível abaixo da raiz, como questoes/
+   e anki/):
+   - Conteúdo do Step 1 (conteudo-step1.html): âncora da seção do sistema;
+   - flashcards (anki/#/estudar com o filtro, em modo treino);
+   - banco: bloco já filtrado (questoes/#/criar?...). */
+export const ANCORAS_CONTEUDO_S1 = Object.freeze({
+  desenvolvimento_humano: ["s-dev"], sangue_imune: ["s-imune", "s-sangue"], comportamento_nervoso: ["s-comportamento", "s-neuro"],
+  musculoesqueletico_pele: ["s-pele", "s-msk"], cardiovascular: ["s-cardio"], respiratorio_renal: ["s-resp", "s-renal"],
+  gastrointestinal: ["s-gi"], reprodutor_endocrino: ["s-endocrino", "s-feminino", "s-masculino", "s-gestacao"],
+  multissistemico: ["s-multi"], bioestatistica: ["s-bioest"], ciencias_sociais: ["s-social"]
+});
+/* Sistema do Step 2 CK -> sistema do Step 1 com a ciência básica correspondente
+   (os flashcards e o Conteúdo do Step 1 seguem o outline do Step 1) */
+export const BASE_S1_DO_CK = Object.freeze({
+  ciencias_sociais_etica_seguranca: "ciencias_sociais", renal_urinario_reprodutor: "respiratorio_renal", cardiovascular: "cardiovascular",
+  musculoesqueletico_pele: "musculoesqueletico_pele", saude_comportamental: "comportamento_nervoso", sangue_imune: "sangue_imune",
+  gastrointestinal: "gastrointestinal", nervoso_sentidos: "comportamento_nervoso", respiratorio: "respiratorio_renal",
+  multissistemico: "multissistemico", endocrino: "reprodutor_endocrino", gestacao_parto_puerperio: "reprodutor_endocrino",
+  bioestatistica_epidemiologia: "bioestatistica", desenvolvimento_humano: "desenvolvimento_humano"
+});
+const ANCORA_CK_ESPECIFICA = Object.freeze({ renal_urinario_reprodutor: "s-renal", respiratorio: "s-resp", nervoso_sentidos: "s-neuro", saude_comportamental: "s-comportamento", endocrino: "s-endocrino", gestacao_parto_puerperio: "s-gestacao" });
+
+export function linkBloco({ step, dim, chave, situacao = "nao_vistas", base = "#/" }) {
+  const p = new URLSearchParams({ step, situacao });
+  if (dim && chave) p.set(dim, chave);
+  return base + "criar?" + p.toString();
+}
+
+/* Links de estudo de uma chave. base: prefixo das rotas do banco ("#/" dentro de
+   questoes/, "../questoes/#/" a partir de anki/). */
+export function linksDeEstudo(step, dim, chave, { base = "#/", situacao = "nao_vistas" } = {}) {
+  const links = [];
+  const sisS1 = step === "step1" ? (dim === "sistema" ? chave : null) : dim === "sistema" ? BASE_S1_DO_CK[chave] : null;
+  if (sisS1) {
+    const anc = step === "step2ck" && ANCORA_CK_ESPECIFICA[chave] ? ANCORA_CK_ESPECIFICA[chave] : (ANCORAS_CONTEUDO_S1[sisS1] || [])[0];
+    if (anc) links.push({ tipo: "conteudo", rotulo: step === "step1" ? "Conteúdo do Step 1" : "Base no Conteúdo do Step 1", href: "../conteudo-step1.html#" + anc });
+    links.push({ tipo: "flashcards", rotulo: step === "step1" ? "Flashcards do sistema" : "Flashcards da ciência básica", href: "../anki/#/estudar?" + new URLSearchParams({ sistema: sisS1, modo: "treino" }).toString() });
+  }
+  if (step === "step1" && dim === "disciplinas") {
+    links.push({ tipo: "flashcards", rotulo: "Flashcards da disciplina", href: "../anki/#/estudar?" + new URLSearchParams({ disciplina: chave, modo: "treino" }).toString() });
+  }
+  const dimFiltro = dim === "disciplinas" ? "disciplina" : dim === "disciplinas_oficiais" ? "disciplina_oficial" : dim;
+  links.push({ tipo: "banco", rotulo: "Bloco de itens " + (situacao === "erradas" ? "errados" : "não vistos"), href: linkBloco({ step, dim: dimFiltro, chave, situacao, base }) });
+  return links;
+}
+
+const fmtPp = (x) => (Math.round(x * 1000) / 10).toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const nomeDim = (step, dim, chave) => nomeChave(step, dim === "disciplinas" ? "disciplina" : dim === "disciplinas_oficiais" ? "disciplina_oficial" : dim, chave);
+
+/* Lista de recomendações, da mais urgente para a menos:
+   1. áreas que mais derrubam a probabilidade (ganho >= 0,5 ponto percentual);
+   2. sistemas do outline sem item respondido (cobertura da regra de confiança);
+   3. quantos itens faltam para a contagem mínima N, com o lembrete do peso do tutor. */
+export function recomendacoes({ step, est, contribuicao, historico = new Map(), banco = null, base = "#/", maxAreas = 5, ganhoMin = 0.005 }) {
+  const out = [];
+  for (const c of (contribuicao?.sistema || []).filter((x) => x.ganho >= ganhoMin).slice(0, maxAreas)) {
+    const erradas = c.n - c.acertos > 0;
+    out.push({
+      tipo: "area", dim: "sistema", chave: c.chave, nome: nomeDim(step, "sistema", c.chave), ganho: c.ganho,
+      texto: "Você acertou " + c.acertos + " de " + c.n + "; o examinando no limiar acertaria " + fmtPp(c.taxa_limiar).replace(",0", "") + "% destes itens. Chegar ao nível do limiar aqui somaria " + fmtPp(c.ganho) + " pontos percentuais à probabilidade.",
+      links: linksDeEstudo(step, "sistema", c.chave, { base, situacao: erradas ? "erradas" : "nao_vistas" })
+    });
+  }
+  for (const d of ["disciplinas", "disciplinas_oficiais", "competencia"]) {
+    const top = (contribuicao?.[d] || []).find((x) => x.ganho >= ganhoMin);
+    if (top) out.push({
+      tipo: "area", dim: d, chave: top.chave, nome: nomeDim(step, d, top.chave), ganho: top.ganho,
+      texto: (d === "competencia" ? "Competência" : "Disciplina") + " que mais pesa: " + top.acertos + " de " + top.n + " certas, contra " + fmtPp(top.taxa_limiar).replace(",0", "") + "% esperados no limiar (" + fmtPp(top.ganho) + " pontos percentuais em jogo).",
+      links: linksDeEstudo(step, d, top.chave, { base })
+    });
+  }
+  const faltam = est?.confianca?.faltam_sistemas || [];
+  if (faltam.length) {
+    out.push({
+      tipo: "cobertura", dim: "sistema", chaves: faltam,
+      nome: faltam.length === 1 ? "1 sistema sem itens respondidos" : faltam.length + " sistemas sem itens respondidos",
+      texto: "A regra de alta confiança pede itens em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) + "% dos sistemas do outline. Faltam: " + faltam.map((k) => nomeDim(step, "sistema", k)).join("; ") + ".",
+      links: faltam.slice(0, 4).map((k) => ({ tipo: "banco", rotulo: nomeDim(step, "sistema", k), href: linkBloco({ step, dim: "sistema", chave: k, base }) }))
+    });
+  }
+  const fm = est?.confianca?.faltam_itens_minimo || 0;
+  if (fm > 0) {
+    out.push({
+      tipo: "volume", nome: "Mais " + fm + (fm === 1 ? " item" : " itens") + " para a contagem mínima",
+      texto: "A contagem mínima para a precisão exigida é de " + est.confianca.n_minimo + " itens. No modo cronometrado cada item vale 1; no tutor, 0,5. Blocos cronometrados de 20 itens chegam lá mais rápido e se parecem mais com a prova.",
+      links: [{ tipo: "banco", rotulo: "Bloco cronometrado de 20 itens", href: base + "criar?" + new URLSearchParams({ step, situacao: "nao_vistas", modo: "cronometrado", n: "20" }).toString() }]
+    });
+  }
+  return out;
+}
+
+/* ---------- painel de probabilidade ----------
+   Junta tudo o que a tela precisa para um Step. banco: carregarBanco(); respostas:
+   listRespostas(); modelos: getModelosPsicometricos(); nbme: listNbme(); config:
+   getConfigPlataforma(). */
+export function resumoAprovacao({ banco, respostas, step, modelos = null, nbme = [], config = CONFIG_PADRAO, base = "#/" }) {
+  const itens = banco.porId;
+  const modelo = modelos?.[step] || null;
+  const est = estimarAluno({
+    step, respostas, itens, sistemas: sistemasDoOutline(step),
+    modeloDesfechos: modelo?.desfechos || null,
+    modeloEscore: step === "step2ck" ? modelo?.escore_oficial || null : null
+  });
+  const { usadas } = prepararRespostas(respostas, itens, { step });
+  const dims = step === "step1" ? ["sistema", "disciplinas", "competencia"] : ["sistema", "disciplinas_oficiais", "competencia", "area"];
+  const contribuicao = {};
+  for (const d of dims) contribuicao[d] = contribuicaoPorArea(usadas, d, { step });
+  const historico = historicoItens(respostas);
+  const recs = recomendacoes({ step, est, contribuicao, historico, banco, base });
+  const pr = prontidaoCombinada({ exit18: prontidao((nbme || []).filter((x) => x.step === step), step, config), banco: est.n ? est : null });
+  return {
+    step, est, contribuicao, recomendacoes: recs, prontidao: pr,
+    modelo_demonstracao: !!modelo?.demonstracao,
+    limiar_texto: step === "step2ck"
+      ? "Probabilidade de atingir o padrão de aprovação do Step 2 CK (" + PADRAO_STEP2CK + " desde 01/07/2025), pelo limiar do banco fixado por Angoff."
+      : "Probabilidade de estar acima do padrão de aprovação do Step 1 (Pass/Fail), pelo limiar do banco fixado por Angoff.",
+    itens_no_banco: banco.contagem?.[step] || 0
+  };
+}
+
+/* Densidade posterior de theta para desenhar (pontos a cada passo, entre min e max) */
+export function curvaPosterior(respostas, itens, step, { min = -4, max = 4, passo = 0.05, priori = PRIORI_PADRAO } = {}) {
+  const { usadas } = prepararRespostas(respostas, itens, { step });
+  const r = eap(usadas, { priori, incluirPosterior: true });
+  const { pontos, dens } = r.posterior;
+  const out = [];
+  const k = Math.max(1, Math.round(passo / (pontos[1] - pontos[0])));
+  for (let i = 0; i < pontos.length; i += k) if (pontos[i] >= min - 1e-9 && pontos[i] <= max + 1e-9) out.push([Math.round(pontos[i] * 1000) / 1000, dens[i]]);
+  return { pontos: out, theta: r.theta, ic90: r.ic90, p: r.p_aprovacao };
+}
+
+/* Estatística rápida do aluno no Step: itens no banco, vistos, não vistos, certos
+   na primeira tentativa, marcados */
+export function estatisticasAluno(banco, historico, step) {
+  const ids = (banco?.steps?.[step] || []).map((q) => q.id);
+  let vistos = 0, certos1 = 0, resp1 = 0, marcados = 0, erradas = 0;
+  for (const id of ids) {
+    const h = historico.get(id);
+    if (!h) continue;
+    vistos++;
+    if (h.primeira_correta !== null) { resp1++; if (h.primeira_correta) certos1++; }
+    if (h.marcada) marcados++;
+    if (h.em_branco_ultima || h.ultima_correta === false) erradas++;
+  }
+  return { total: ids.length, vistos, nao_vistos: ids.length - vistos, marcados, erradas, primeira_respondidas: resp1, primeira_certas: certos1, taxa_primeira: resp1 ? certos1 / resp1 : null };
+}

@@ -87,3 +87,25 @@ export function lerPrefs(storage) {
   return { fonte: ["normal", "grande", "maior"].includes(p.fonte) ? p.fonte : "normal", step: ["step1", "step2ck"].includes(p.step) ? p.step : "step1" };
 }
 export function gravarPrefs(p, storage) { gravarJson(abrirArmazenamento(storage), CHAVE_PREFS, p); }
+
+/* Cópia do dia de prova do simulado completo, gravada a cada mudança. A camada de
+   dados recebe a mesma sessão com intervalo (store.salvarProgressoSimulado); esta
+   cópia cobre a queda de rede e o recarregamento entre duas gravações. */
+export const CHAVE_ESPELHO = "r2a-simulado-completo-espelho-v1";
+export function gravarEspelho(id, sessao, storage) {
+  const st = abrirArmazenamento(storage);
+  const tudo = lerJson(st, CHAVE_ESPELHO, {});
+  tudo[id] = { sessao, salvo_em: new Date().toISOString() };
+  const ids = Object.keys(tudo);
+  if (ids.length > 5) for (const k of ids.sort((a, b) => String(tudo[a].salvo_em).localeCompare(String(tudo[b].salvo_em))).slice(0, ids.length - 5)) delete tudo[k];
+  return gravarJson(st, CHAVE_ESPELHO, tudo);
+}
+export function lerEspelho(id, storage) {
+  const tudo = lerJson(abrirArmazenamento(storage), CHAVE_ESPELHO, {});
+  return tudo?.[id]?.sessao || null;
+}
+export function apagarEspelho(id, storage) {
+  const st = abrirArmazenamento(storage);
+  const tudo = lerJson(st, CHAVE_ESPELHO, {});
+  if (tudo[id]) { delete tudo[id]; gravarJson(st, CHAVE_ESPELHO, tudo); }
+}

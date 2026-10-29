@@ -17,6 +17,16 @@ exceção é `resetDemo()`, que só existe no modo demonstração.
 ```
 plataforma/
   INTERFACE.md          este documento
+  PSICOMETRIA.md        método psicométrico do banco (fórmulas, validação e limitações)
+  README.md             importação do banco para o Supabase e modo de desenvolvimento
+  CONTRATO-ITEM.md      formato de cada questão do banco
+  js/banco.js           carregador do banco: leitura, normalização, validação, índice e taxonomia do outline
+  js/psicometria.js     Rasch ancorado no Angoff, EAP, P(aprovação), confiança, perfil por área,
+                        análise de itens, recalibração e regressão com desfechos (funções puras)
+  js/formularios.js     formulários no formato oficial (completo, meio, prontidão) e relógio do simulado completo
+  js/calibracao.js      rotinas do admin: recalibrar com a turma e ajustar modelos com desfechos reais
+  js/registros.js       validação dos registros novos (respostas, simulados completos, reportes...)
+  js/respostas-demo.js  respostas sintéticas da coorte de demonstração (só modo demonstração)
   js/simulado.js        formato oficial, sorteio estratificado e correção (funções puras)
   js/desempenho.js      linha de resumo, critérios de risco, garantia e prontidão (funções puras)
   js/coorte-demo.js     coorte sintética do modo demonstração
@@ -29,6 +39,9 @@ supabase/
   teste-local/02-testa-rls.sql       testes de RLS (blocos P1 a P9 para a plataforma; P9 tenta ataques
                                      com os privilégios padrão do Supabase simulados no 01)
   teste-local/03-compara-resumo.mjs  confere se o resumo do banco é igual ao do JavaScript
+  teste-local/04-compara-itens.mjs   confere se as estatísticas de itens do banco são iguais às do JavaScript
+tools/
+  importar-banco.mjs    importa banco-privado/ para a tabela questoes (plataforma/README.md)
 ```
 
 ## Como abrir a camada de dados numa página nova
@@ -416,8 +429,9 @@ Testar localmente (Postgres puro):
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
-# o bloco final precisa mostrar "falhas | 0" (80 verificações)
+# o bloco final precisa mostrar "falhas | 0" (163 verificações: P1 a P9 da plataforma, Q1 a Q9 do banco de questões)
 node supabase/teste-local/03-compara-resumo.mjs   # precisa terminar em "Diferenças: 0"
+node supabase/teste-local/04-compara-itens.mjs    # precisa terminar em "Diferenças: 0"
 ```
 
 Testes unitários:
@@ -425,4 +439,286 @@ Testes unitários:
 ```bash
 cd plataforma && node --test tests/*.test.mjs
 cd anki && node --test tests/*.test.mjs
+```
+
+
+---
+
+# Banco de questões, simulados completos e psicometria
+
+Acréscimo de 29/10/2026. Tudo abaixo vale nos dois modos (`LocalStore` e
+`SupabaseStore` têm os mesmos métodos; `plataforma/tests/store.test.mjs` confere). O
+método psicométrico, com fórmulas e limitações, está em `PSICOMETRIA.md`.
+
+## Como as telas usam (exemplo de ponta a ponta)
+
+```js
+import { carregarBanco, sistemasDoOutline } from "../plataforma/js/banco.js";
+import { estimarAluno, prontidaoCombinada } from "../plataforma/js/psicometria.js";
+import { montarFormularioFixo, novaSessao, iniciarBloco, responder, encerrarBloco, atualizarSessao, estadoRelogio, corrigirSessao } from "../plataforma/js/formularios.js";
+import { prontidao } from "../plataforma/js/desempenho.js";
+
+const banco = await carregarBanco({ store });             // itens válidos, normalizados e indexados
+if (!banco.itens.length) { /* modo Supabase sem matrícula ativa: mostrar aviso */ }
+
+// simulado completo, formulário fixo A do Step 1 (versão reduzida no modo demonstração)
+const form = montarFormularioFixo(banco, "step1", "S1-A", "completo");
+let sessao = novaSessao(form);
+const reg = await store.criarSimuladoCompleto({ formulario: form, sessao });
+sessao = iniciarBloco(sessao, Date.now());
+sessao = responder(sessao, 0, { resposta: "C", tempo_ms_add: 41000 }, Date.now());
+await store.salvarProgressoSimulado(reg.id, sessao);      // grava a cada mudança: retomada após recarregar
+sessao = encerrarBloco(sessao, Date.now());               // a sobra do bloco vai para a pausa
+// ... ao terminar o último bloco:
+const { resultado, respostas } = corrigirSessao(form, sessao, banco.porId, { sessaoId: reg.id });
+await store.saveRespostas(respostas);
+await store.concluirSimuladoCompleto(reg.id, { sessao, resultado });
+
+// probabilidade de aprovação e prontidão
+const modelos = await store.getModelosPsicometricos();
+const est = estimarAluno({
+  step: "step1", respostas: await store.listRespostas({ step: "step1" }), itens: banco.porId,
+  sistemas: sistemasDoOutline("step1"), modeloDesfechos: modelos.step1?.desfechos
+});
+const pr = prontidaoCombinada({ exit18: prontidao(await store.listNbme({ step: "step1" }), "step1", config), banco: est });
+```
+
+## `plataforma/js/banco.js`
+
+| Exportação | O que faz |
+|---|---|
+| `carregarBanco({ store, step, labsTabela, incluirInativos })` | chama `store.listQuestoes()`, normaliza, valida e indexa. Devolve o objeto `Banco` (abaixo). `labsTabela` (conteúdo de `simulado/data/valores-laboratoriais.json`) só acrescenta avisos |
+| `montarBanco(lista, { origem, fontes, labs, incluirInativos })` | o mesmo, a partir de uma lista de itens brutos |
+| `lerBancoDemo({ base, fetch, privado })` | modo demonstração: lê os 80 itens públicos e, com `privado` (padrão: `bancoCompletoPedido()`, verdadeiro só em `localhost` com `?banco=completo`), `banco-privado/manifest.json`, os arquivos e os blueprints listados nele. `{ itens, fontes, privado, divergencias }` |
+| `normalizarItem(bruto)` | item no contrato atual, com padrões de Angoff e os derivados `b_angoff`, `angoff_origem` (`item` ou `padrao_dificuldade`), `legado`, `taxonomia_desconhecida` |
+| `validarItem(item, { labs })` | `{ erros, avisos }`. Erro tira o item do banco; aviso só entra no relatório |
+| `filtrarBanco(banco, { step, excluir, sistema, disciplina, area, tarefa, competencia, dificuldade })` | valores podem ser texto ou lista |
+| `contarPor(itens, dim)`, `assinaturaBanco(itens)`, `hashTexto(s)` | contagem, assinatura (muda quando o banco muda) e hash FNV-1a |
+| `TAXONOMIA[step][dim]` | chaves, nomes em português e em inglês e faixas oficiais (% de itens) do outline: Step 1 `sistema`, `disciplina`, `competencia`; Step 2 CK `sistema`, `competencia` (tarefas do médico), `disciplina_oficial`, mais as etiquetas do painel `area` e `tarefa` (sem faixa). `multirrotulo` e `exigir_faixa` dizem se a faixa é exigida na montagem |
+| `enriquecerComBlueprint(itens, blueprints)` | completa cada item com o que a especificação de mesmo `spec_id` traz e o item não repete (disciplinas secundárias, disciplinas clínicas oficiais, tópicos do outline) e devolve `{ itens, divergencias }` |
+| `CAMPO_MULTIRROTULO` | campo com todos os rótulos das dimensões multirrótulo: `disciplinas` (Step 1) e `disciplinas_oficiais` (Step 2 CK) |
+| `DIMENSOES[step]`, `sistemasDoOutline(step)`, `chavesDe(step, dim)`, `nomeChave(step, dim, chave)`, `chaveCanonica(step, dim, valor)` | listas e nomes; `chaveCanonica` aceita acentos, maiúsculas, sinônimos e palavras em outra ordem |
+| `ANGOFF_PADRAO`, `ITENS_FORMULARIO_OFICIAL`, `STATUS_QUESTAO`, `DIFICULDADES`, `STEPS_BANCO` | constantes |
+
+Objeto `Banco`:
+
+```js
+{
+  itens,                       // válidos, normalizados, ordenados por id (só ativos, salvo incluirInativos)
+  porId: Map,                  // id -> item
+  steps: { step1: [...], step2ck: [...] },
+  indice: { step1: { sistema: { chave: [ids] }, disciplina, competencia, dificuldade },
+            step2ck: { sistema, competencia, disciplina_oficial, area, tarefa, dificuldade } },
+  invalidos: [{ id, erros }], avisos: [{ id, avisos }], duplicados: [id],
+  contagem: { step1, step2ck },
+  reduzido: { step1: bool, step2ck: bool },   // menos itens que um formulário oficial (280 e 318)
+  assinatura, origem: "supabase" | "demonstracao" | "demonstracao_completa", fontes
+}
+```
+
+Chaves usadas pela plataforma, as mesmas de `banco-privado/blueprint-step1.json` e
+`blueprint-step2ck.json` (sinônimos comuns, acentos e nomes em inglês também são aceitos):
+
+| Step | Dimensão | Chaves |
+|---|---|---|
+| Step 1 | `sistema` | `desenvolvimento_humano`, `sangue_imune`, `comportamento_nervoso`, `musculoesqueletico_pele`, `cardiovascular`, `respiratorio_renal`, `gastrointestinal`, `reprodutor_endocrino`, `multissistemico`, `bioestatistica`, `ciencias_sociais` |
+| Step 1 | `disciplina` | `patologia`, `fisiologia`, `anatomia`, `microbiologia`, `farmacologia`, `comportamental`, `bioquimica`, `histologia`, `imunologia`, `genetica`, `nutricao`; `disciplinas_secundarias` (lista) entra em `disciplinas` (todos os rótulos), usado na montagem e no perfil |
+| Step 1 | `competencia` | `conhecimento_medico`, `diagnostico`, `comunicacao_interpessoal`, `aprendizagem_pratica` (os nomes em inglês do outline, como `applying_foundational_science`, também são aceitos) |
+| Step 2 CK | `sistema` | `ciencias_sociais_etica_seguranca`, `renal_urinario_reprodutor`, `cardiovascular`, `musculoesqueletico_pele`, `saude_comportamental`, `sangue_imune`, `gastrointestinal`, `nervoso_sentidos`, `respiratorio`, `multissistemico`, `endocrino`, `gestacao_parto_puerperio`, `bioestatistica_epidemiologia`, `desenvolvimento_humano` |
+| Step 2 CK | `competencia` (tarefa do médico do outline, com faixa) | `diagnostico`, `exames_laboratoriais_diagnosticos`, `manejo_misto`, `farmacoterapia`, `intervencoes_clinicas`, `manutencao_saude_prevencao`, `prognostico_desfecho`, `pratica_sistemas_seguranca`, `profissionalismo`, `aprendizagem_baseada_pratica` |
+| Step 2 CK | `disciplinas_oficiais` (lista; a primeira vira `disciplina_oficial`) | `medicina`, `pediatria`, `ginecologia_obstetricia`, `psiquiatria`, `cirurgia` (aceita os nomes do outline: Medicine, Surgery, Pediatrics, Obstetrics & Gynecology, Psychiatry). Sem a lista, a principal sai da área |
+| Step 2 CK | `area` (etiqueta do painel, sem faixa) | `medicina_interna`, `pediatria`, `cirurgia`, `ginecologia_obstetricia`, `psiquiatria`, `neurologia`, `emergencia`, `medicina_preventiva`, `etica_comunicacao`, `bioestatistica` |
+| Step 2 CK | `tarefa` (etiqueta do painel, sem faixa) | `manejo`, `diagnostico`, `interpretacao_exames`, `etica`, `prevencao`, `prognostico`, `mecanismo` |
+
+Itens públicos (contrato anterior): no Step 2 CK, o antigo `sistema` vira `area` e o antigo
+`disciplina` vira `tarefa`; sistema, competência e disciplinas clínicas vêm da
+reclassificação feita por leitura de cada vinheta no blueprint (`LEGADO_CK` em
+`banco.js`). No Step 1, a competência e as disciplinas secundárias dos 40 itens vêm da
+mesma fonte (`LEGADO_S1`). Chave fora do outline vira aviso, não erro. Obrigatórios para
+entrar no banco: `sistema`, `disciplina` e `competencia` no Step 1; `sistema`, `area` e
+`competencia` no Step 2 CK.
+
+## `plataforma/js/psicometria.js`
+
+| Exportação | O que faz |
+|---|---|
+| `estimarAluno({ step, respostas, itens, sistemas, bsFormulario, pesos, regra, usarCalibrado, modeloDesfechos, modeloEscore, desde, ate })` | estimativa completa (abaixo) |
+| `prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate })` | `{ usadas, ignoradas }` com as regras de entrada (primeira resposta, pesos, em branco) |
+| `eap(respostas, { priori, grade, incluirPosterior })` | `{ theta, dp, ic90, p_aprovacao, n, n_efetivo, acertos }`; `respostas = [{ b, x, w }]` |
+| `posteriorGrade`, `resumirPosterior`, `cdfPosterior`, `quantilPosterior` | posterior em grade e leituras |
+| `percentualEsperado(posterior, bs)` | `{ media, ic90, limiar, itens }` (0 a 1) |
+| `classificarConfianca({ p, theta, dp, n_efetivo, n_minimo, cob, infoMedia, regra })`, `itensMinimos(bs)`, `itensParaPrecisao(dp, dpAlvo, info)`, `cobertura(contagemPorSistema, sistemas)` | regra de confiança e contas de "quantos itens faltam" |
+| `perfilPorArea(usadas, dim, { min_itens, prob })` | `[{ chave, n, acertos, taxa, esperado_limiar, theta, dp, ic, p_acima, classe }]`, classe `mais_baixo`, `igual`, `mais_alto` ou `insuficiente`; da área mais fraca para a mais forte. Campo com lista (`disciplinas`, `disciplinas_oficiais`) conta o item em cada rótulo |
+| `prontidaoCombinada({ exit18, banco })` | `{ status, principal: "exit18", complementar, divergente, mensagem, regra }` |
+| `analisarItens(respostas, itens, { limiares, usarCalibrado, thetas })` | `{ itens: [AnaliseItem], resumo }` (seção 11 de PSICOMETRIA.md) |
+| `recalibrarRasch(respostas, itens, { tau, priori_theta, max_iter, tol, ancoragem, ancorarEm })` | `{ itens: [{ id, b_angoff, b, ep, n, acertos }], pessoas, iteracoes, convergiu, deslocamento, parametros }` |
+| `regressaoLogistica(X, y)`, `ajustarDesfechos(registros)`, `probAprovacaoDesfechos(modelo, { theta, dp })`, `ajustarEscore(registros)`, `preverEscore(modelo, { theta, dp }, limiar)`, `montarDadosDesfechos(desfechos, respostasPorUsuario, itens)` | desfechos reais |
+| `bDeAngoff(a)`, `bDoItem(item, { usarCalibrado })`, `expit`, `logit`, `normalCdf`, `informacao`, `informacaoMedia`, `correlacao`, `auc` | utilidades |
+| `simularRespostas({ thetas, bs, random })`, `normalAleatoria(random)` | simulação para testes (recebem o gerador) |
+| `PRIORI_PADRAO`, `GRADE_PADRAO`, `REGRA_CONFIANCA`, `PESOS_MODO`, `LIMIARES_ITEM`, `RECALIBRACAO_PADRAO`, `DESFECHOS_PADRAO`, `PADRAO_STEP2CK`, `DIMENSOES_PERFIL` | parâmetros do método |
+
+Saída de `estimarAluno`:
+
+```js
+{
+  step, n, n_efetivo, acertos, taxa_bruta, ignoradas,
+  theta, dp, ic90: [lo, hi],
+  p_aprovacao,                         // P(theta > 0 | respostas)
+  percentual_esperado: { media, ic90: [lo, hi], limiar, itens },   // 0 a 1
+  confianca: { alta, rotulo: "alta_confianca" | "estimativa_preliminar", texto, motivos: [texto],
+               n_minimo, faltam_itens /* null = perto do limiar */, faltam_itens_minimo, faltam_sistemas: [chave], perto_do_limiar },
+  cobertura: { com_itens, faltando, total, proporcao },
+  perfil: { sistema, disciplinas, competencia }            // Step 1
+        | { sistema, disciplinas_oficiais, competencia, area }, // Step 2 CK
+  base: "angoff" | "calibrado" | "misto", itens_calibrados,
+  oficial: false,
+  avisos: [texto],                     // a tela mostra sempre (origem da estimativa; no Step 2 CK, o 218 e a nota de três dígitos)
+  limiar: { tipo: "padrao_angoff_equivalente", resultado_oficial: "Pass/Fail" } | { ..., escore_oficial: 218 },
+  desfechos: null | { p_aprovacao, modelo },   // só com modelo suficiente
+  escore: null | { media, ic90, p_limiar, limiar, suficiente }   // só Step 2 CK com notas reais suficientes
+}
+```
+
+## `plataforma/js/formularios.js`
+
+| Exportação | O que faz |
+|---|---|
+| `montarFormulario(banco, { step, tipo, modo, semente, vistas, evitar, codigo, nome })` | `tipo`: `completo` (14 blocos e 280 itens no Step 1; 16 blocos e 318 no Step 2 CK), `meio` (7 e 140; 8 e 159) ou `prontidao` (4 blocos e 80 itens). `modo`: `fixo` ou `personalizado` |
+| `montarFormularioFixo(banco, step, codigo, tipo)` | formulários fixos `S1-A`, `S1-B`, `S1-C`, `CK-A`, `CK-B`, `CK-C` (`FORMULARIOS_FIXOS`); B evita A e C evita A e B |
+| `montarFormularioPersonalizado(banco, { step, tipo, vistas, semente })` | prioriza itens não vistos sem sair das faixas |
+| `verificarFormulario(form, porId)` | `{ ok, total, blocos, equilibrio, dimensoes, problemas, avisos }`, com cada chave do outline, `pct`, `faixa`, `dentro`, `exigida` e, nas disciplinas, `n_multirrotulo`, `pct_multirrotulo` e `dentro_multirrotulo` (todos os rótulos; fora da faixa vira aviso) |
+| `dimensionar(step, tipo, disponiveis)`, `tamanhosBlocos(total, blocos)`, `cotasNasFaixas`, `alvosDimensao` | contas da montagem |
+| `novaSessao(form)`, `iniciarTutorial`, `iniciarBloco`, `responder(sessao, posicao, { resposta, marcada, tempo_ms_add }, agora)`, `encerrarBloco(sessao, agora, motivo)`, `atualizarSessao(sessao, agora)`, `estadoRelogio(sessao, agora)`, `corrigirSessao(form, sessao, porId, { sessaoId })` | relógio do simulado completo (estado JSON serializável; todas devolvem um estado novo) |
+| `TEMPOS_OFICIAIS`, `TIPOS_FORMULARIO`, `FORMULARIOS_FIXOS`, `SECUNDARIAS` | constantes |
+
+Formulário:
+
+```js
+{
+  id: "step1:completo:fixo:S1-A:<assinatura>", codigo, nome, step, tipo, modo, semente,
+  reduzido, motivo_reducao,              // banco menor que o formato: blocos de 20, aviso pronto para a tela
+  oficial: { blocos, itens, formato_oficial },
+  blocos: [[ids], ...], total,
+  tempo: { bloco_ms: 1800000, pausa_ms, tutorial_ms, dia_ms },
+  assinatura_banco, hash, fora_da_faixa: [chaves sem itens suficientes no banco]
+}
+```
+
+Montagem: cotas de sistema dentro das faixas; escolha gulosa dentro de cada sistema que
+equilibra competência (faixa exigida), disciplina principal, disciplinas com todos os
+rótulos e dificuldade; reparo por trocas dentro do mesmo sistema até a competência e as
+disciplinas (todos os rótulos) caberem nas faixas; distribuição em blocos em serpentina
+pelo Angoff. Com um item por especificação dos blueprints atuais (560 itens no Step 1 e
+520 no Step 2 CK), os 18 formulários fixos (3 códigos, 3 tipos, 2 Steps) saem dentro de
+todas as faixas, inclusive as multirrótulo dos formulários completos
+(`plataforma/tests/banco-privado.test.mjs`, que roda quando `banco-privado/` existe).
+
+Dois alunos com o mesmo `formulario_id` fizeram exatamente os mesmos itens (a assinatura
+muda quando o banco muda). Relógio: pular o tutorial ou terminar antes dá o tempo que
+sobrou à pausa; sobra de bloco também vai para a pausa; todo o tempo fora de bloco e de
+tutorial conta como pausa; pausa além do saldo vira débito, descontado do bloco
+seguinte; `responder` só aceita o bloco atual; `atualizarSessao` fecha o bloco cujo tempo
+acabou com a página fechada. `estadoRelogio` dá `restante_bloco_ms`, `pausa_saldo_ms`,
+`pausa_excedente_ms`, `proximo_bloco_ms` e `tutorial_restante_ms`.
+
+## `plataforma/js/calibracao.js` (admin)
+
+| Função | O que faz |
+|---|---|
+| `prepararRecalibracao({ store, step, tau, minRespostas = 30, incluirTutor })` | prévia: `{ itens: [{ id, b_angoff, b, ep, n, aplicar, delta }], a_aplicar, pessoas, respostas, convergiu, ... }` |
+| `aplicarRecalibracao({ store, preparo })` | grava os b dos itens com `aplicar: true` |
+| `desfazerCalibracao({ store, ids })` | volta esses itens ao Angoff |
+| `calibrarDesfechos({ store, step })` | `{ pass_fail, escore_oficial, escore_nbme, n }` a partir de `resultados_oficiais` e das NBMEs em standard-paced |
+| `salvarModelo({ store, step, desfechos })` | grava o modelo em `modelos_psicometricos` para as telas dos alunos |
+
+## Métodos novos da camada de dados
+
+| Método | Participante | Admin | Retorno |
+|---|---|---|---|
+| `listQuestoes({ step, incluirInativas })` | itens ativos, só com matrícula ativa (sem matrícula: lista vazia) | todos; inativos com `incluirInativas` | itens brutos com `status`, `b_calibrado`, `ep_calibrado`, `n_calibracao`, `calibrado_em` |
+| `setStatusQuestao(id, status)` | não pode | `ativo`, `rascunho`, `suspenso`, `aposentado` | `{ id, status }` |
+| `salvarCalibracao([{ id, b, ep, n }])` | não pode | grava (`b: null` apaga) | `{ gravados }` |
+| `setAtivo(userId, ativo)` | não pode | ativa ou desativa a matrícula (libera o banco) | `{ id, ativo }` |
+| `saveRespostas(lista)`, `saveResposta(r)` | grava as próprias (o gabarito, o Step e a versão vêm do banco quando o item está nele) | idem | `RespostaItem[]` |
+| `listRespostas({ step, origem, desde, userId, todos })` | só as próprias | todas (`todos`) ou de uma pessoa | da mais antiga para a mais nova |
+| `criarSimuladoCompleto({ formulario, sessao })` | cria o próprio | idem | `SimuladoCompleto` |
+| `salvarProgressoSimulado(id, sessao)` | o próprio, em andamento; bloco encerrado não reabre nem muda | qualquer | `SimuladoCompleto` |
+| `concluirSimuladoCompleto(id, { sessao, resultado })`, `abandonarSimuladoCompleto(id)` | o próprio | qualquer | `SimuladoCompleto` |
+| `getSimuladoCompleto(id)`, `listSimuladosCompletos({ todos, userId, step, estado })` | os próprios | todos | registro ou lista (mais recente primeiro) |
+| `deleteSimuladoCompleto(id)` | não pode | pode | nada |
+| `getAnotacaoItem(questaoId)`, `saveAnotacaoItem(questaoId, texto)`, `listAnotacoesItem()` | as próprias (texto vazio apaga; até 5000 caracteres) | só as próprias (o admin não lê as do aluno) | `{ user_id, questao_id, texto, atualizado_em }` |
+| `reportarItem({ questao_id, motivo, texto })` | cria (sempre `aberto`) | idem | `Reporte` |
+| `listReportes({ todos, status, questaoId })` | os próprios | a fila inteira com `todos: true` | lista, mais recente primeiro |
+| `resolverReporte(id, { status, resposta })` | não pode | `em_analise`, `resolvido`, `rejeitado`; carimba quem e quando | `Reporte` |
+| `saveResultadoOficial(x)`, `deleteResultadoOficial(id)` | não pode | lança `{ user_id, step, data, resultado, escore, observacao }` | registro |
+| `listResultadosOficiais({ todos, userId, step })` | os próprios | todos | lista |
+| `getModelosPsicometricos()` | lê | lê | `{ step1: Modelo | null, step2ck: Modelo | null }` |
+| `saveModeloPsicometrico(step, dados)` | não pode | grava | `Modelo` |
+| `listRespostasCalibracao({ step, incluirTutor, todasVersoes })` | não pode | matriz pseudonimizada `[{ pessoa, questao_id, step, resposta, correta, modo, origem, tempo_ms }]` | primeira resposta por pessoa e item |
+| `getEstatisticasItens({ step, incluirTutor, todasVersoes })` | não pode | `[{ questao_id, step, n, acertos, p, em_branco, opcoes, tempo_mediano_ms, pbis, n_superior, n_inferior, opcoes_superior, opcoes_inferior }]` | agregados rápidos; para alertas e Rasch, `analisarItens(await store.listRespostasCalibracao(...), banco.porId)` |
+
+Motivos de reporte (`MOTIVOS_REPORTE` em `registros.js`, com o rótulo da tela):
+`gabarito`, `mais_de_uma_correta`, `desatualizado`, `erro_texto`, `valores_lab`,
+`explicacao`, `outro` (este exige texto).
+
+`RespostaItem`:
+
+```js
+{
+  id, user_id, criado_em,
+  questao_id, step,
+  resposta: "A".."J" | null, correta,      // o banco recalcula correta quando o item está em questoes
+  tempo_ms, marcada,
+  modo: "tutor" | "cronometrado",
+  origem: "banco" | "simulado" | "bloco_30",
+  sessao_id, bloco, posicao,               // no simulado completo
+  versao_item, respondida_em
+}
+```
+
+`SimuladoCompleto`:
+
+```js
+{
+  id, user_id, step, tipo: "completo" | "meio" | "prontidao", montagem: "fixo" | "personalizado",
+  formulario_id, nome, reduzido,
+  formulario,                              // o objeto de montarFormulario, imutável depois de criado
+  sessao,                                  // estado de novaSessao/iniciarBloco/... (relógio, pausa, respostas por bloco)
+  estado: "em_andamento" | "concluido" | "abandonado", bloco_atual,
+  resultado,                               // de corrigirSessao().resultado
+  inicio, atualizado_em, fim, criado_em
+}
+```
+
+Modo demonstração: todos os participantes têm matrícula ativa, salvo se o admin
+desativar; o admin vê, além das respostas reais deste navegador, respostas sintéticas da
+coorte fictícia (`respostas-demo.js`, linhas com `sintetico: true`), para que a análise de
+itens e a calibração tenham o que mostrar. A tela precisa marcar esses dados como
+**"dados de demonstração"**. Os resultados oficiais e os modelos ficam no `localStorage`.
+
+## Tabelas novas no Supabase
+
+| Tabela | Participante | Admin |
+|---|---|---|
+| `profiles.ativo` | não altera (o gatilho recusa) | ativa a matrícula |
+| `questoes` | lê itens `ativo` só com matrícula ativa; não escreve | tudo (a importação usa a chave service_role) |
+| `respostas_item` | insere e lê as próprias; não altera nem apaga | tudo |
+| `simulados_completos` | cria, lê e atualiza o próprio em andamento (formulário imutável, bloco encerrado não reabre) | tudo |
+| `anotacoes_item` | só as próprias | não lê |
+| `reportes_item` | cria (sempre aberto) e lê os próprios | tudo; o gatilho carimba quem resolveu |
+| `resultados_oficiais` | lê os próprios | tudo; no Step 2 CK, nota sem resultado vira Pass ou Fail pelo 218 a partir de 01/07/2025 |
+| `modelos_psicometricos` | lê | grava |
+| `anon` | nada | |
+
+Funções (security definer, `search_path` fixo, só admin): `r2a_admin_estatisticas_itens`,
+`r2a_admin_respostas_calibracao`, `r2a_admin_salvar_calibracao`. Auxiliar:
+`pode_ler_banco()`. Testes: blocos Q1 a Q9 de `supabase/teste-local/02-testa-rls.sql`
+(entre eles: anônimo não lê `questoes`; participante não lê respostas de outro;
+participante não altera o gabarito; participante sem matrícula não lê o banco).
+
+Testes unitários do banco de questões:
+
+```bash
+node --test plataforma/tests/banco.test.mjs plataforma/tests/psicometria.test.mjs plataforma/tests/formularios.test.mjs \
+            plataforma/tests/store-banco.test.mjs plataforma/tests/importar.test.mjs
 ```

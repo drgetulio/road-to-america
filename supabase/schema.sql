@@ -29,6 +29,9 @@ create table if not exists public.profiles (
   papel       text not null default 'participante' check (papel in ('admin', 'participante')),
   criado_em   timestamptz not null default now()
 );
+-- Matrícula ativa: libera o banco de questões (tabela questoes). Só o admin altera.
+-- Quem se cadastra pelo link mágico entra inativo; o admin ativa os alunos matriculados.
+alter table public.profiles add column if not exists ativo boolean not null default false;
 
 -- Função auxiliar: o usuário atual é administrador?
 -- security definer para ler profiles sem cair na própria política RLS.
@@ -75,10 +78,14 @@ begin
   end if;
   if tg_op = 'INSERT' then
     new.papel := 'participante';
+    new.ativo := false;
     return new;
   end if;
   if new.papel is distinct from old.papel then
     raise exception 'Somente administradores podem alterar o papel de um usuário.' using errcode = '42501';
+  end if;
+  if new.ativo is distinct from old.ativo then
+    raise exception 'Somente administradores ativam a matrícula.' using errcode = '42501';
   end if;
   if new.id is distinct from old.id then
     raise exception 'O identificador do perfil não pode mudar.' using errcode = '42501';
@@ -1142,3 +1149,717 @@ grant select, insert, update, delete on public.anotacoes_mentor to authenticated
 drop policy if exists anotacoes_mentor_admin on public.anotacoes_mentor;
 create policy anotacoes_mentor_admin on public.anotacoes_mentor for all to authenticated
   using ((select public.is_admin())) with check ((select public.is_admin()));
+
+-- =============================================================================
+-- BANCO DE QUESTÕES: questões (Step 1 e Step 2 CK), respostas por item,
+-- simulados completos (14 ou 16 blocos de 30 minutos, com retomada), anotações
+-- do aluno por item, reportes de erro, resultados oficiais e funções de análise
+-- de itens. Interface JavaScript: plataforma/INTERFACE.md; método psicométrico:
+-- plataforma/PSICOMETRIA.md; importação: tools/importar-banco.mjs.
+--
+-- Regras:
+--   questoes            leitura só para logados com matrícula ativa (ou admin), e
+--                       só itens com status 'ativo'; escrita só do admin (ou da
+--                       chave service_role usada na importação, que ignora a RLS).
+--   respostas_item      o aluno insere e lê as próprias; não altera nem apaga.
+--                       Quando o item está em questoes, o gabarito, o Step e a
+--                       versão vêm do banco (o aluno não forja o acerto).
+--   simulados_completos o aluno cria, lê e atualiza o próprio enquanto estiver em
+--                       andamento; bloco encerrado não reabre; formulário imutável.
+--   anotacoes_item      só o próprio aluno lê e grava (nem o admin lê).
+--   reportes_item       o aluno cria e lê os próprios (sempre 'aberto'); o admin
+--                       trata a fila.
+--   resultados_oficiais o admin lança; o aluno lê os próprios.
+-- =============================================================================
+
+-- O usuário atual pode ler o banco? (admin, ou participante com matrícula ativa)
+create or replace function public.pode_ler_banco()
+returns boolean
+language sql
+stable
+security definer
+set search_path = public
+as $$
+  select exists (
+    select 1 from public.profiles p
+    where p.id = auth.uid() and (p.papel = 'admin' or (p.papel = 'participante' and p.ativo))
+  );
+$$;
+revoke all on function public.pode_ler_banco() from public, anon;
+grant execute on function public.pode_ler_banco() to authenticated;
+
+-- ---------------------------------------------------------------------------
+-- Questões: o item inteiro fica em "dados" (contrato de plataforma/CONTRATO-ITEM.md);
+-- as colunas de classificação, o gabarito e o Angoff são derivados pelo gatilho.
+-- ---------------------------------------------------------------------------
+create table if not exists public.questoes (
+  id              text primary key check (id ~ '^[A-Za-z0-9._-]{1,40}$'),
+  step            text not null check (step in ('step1', 'step2ck')),
+  versao          integer not null default 1 check (versao >= 1),
+  status          text not null default 'ativo' check (status in ('ativo', 'rascunho', 'suspenso', 'aposentado')),
+  dados           jsonb not null,
+  correta         text not null check (correta ~ '^[A-J]$'),
+  sistema         text,
+  disciplina      text,
+  area            text,
+  tarefa          text,
+  competencia     text,
+  dificuldade     text check (dificuldade in ('facil', 'media', 'dificil')),
+  angoff          numeric(6,4) not null check (angoff > 0 and angoff < 1),
+  b_calibrado     numeric(8,4) check (b_calibrado between -10 and 10),
+  ep_calibrado    numeric(8,4),
+  n_calibracao    integer,
+  calibrado_em    timestamptz,
+  criado_em       timestamptz not null default now(),
+  atualizado_em   timestamptz not null default now(),
+  atualizado_por  uuid references auth.users (id) on delete set null
+);
+create index if not exists questoes_step_status_idx on public.questoes (step, status, sistema);
+
+create or replace function public.questoes_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+declare
+  v_letras text[];
+  v_ang numeric;
+  v_ver integer;
+begin
+  if jsonb_typeof(new.dados) is distinct from 'object' then
+    raise exception 'O item precisa ser um objeto JSON.' using errcode = '22023';
+  end if;
+  new.dados := new.dados || jsonb_build_object('id', new.id);
+  new.step := coalesce(nullif(new.dados ->> 'step', ''), new.step);
+  new.correta := upper(btrim(coalesce(new.dados ->> 'correta', '')));
+  select array_agg(upper(a ->> 'letra')) into v_letras
+  from jsonb_array_elements(case when jsonb_typeof(new.dados -> 'alternativas') = 'array' then new.dados -> 'alternativas' else '[]'::jsonb end) a;
+  if v_letras is null or array_length(v_letras, 1) not between 5 and 8 then
+    raise exception 'O item precisa ter de 5 a 8 alternativas.' using errcode = '22023';
+  end if;
+  if not (new.correta = any (v_letras)) then
+    raise exception 'A resposta correta não está entre as alternativas.' using errcode = '22023';
+  end if;
+  new.sistema := nullif(new.dados ->> 'sistema', '');
+  new.disciplina := nullif(new.dados ->> 'disciplina', '');
+  new.area := nullif(new.dados ->> 'area', '');
+  new.tarefa := nullif(new.dados ->> 'tarefa', '');
+  new.competencia := nullif(new.dados ->> 'competencia', '');
+  new.dificuldade := case when new.dados ->> 'dificuldade' in ('facil', 'media', 'dificil') then new.dados ->> 'dificuldade' end;
+  v_ang := case when (new.dados ->> 'angoff') ~ '^0?\.[0-9]+$' then (new.dados ->> 'angoff')::numeric end;
+  if v_ang is null or v_ang <= 0 or v_ang >= 1 then
+    v_ang := case new.dificuldade when 'facil' then 0.80 when 'dificil' then 0.45 else 0.65 end;
+  end if;
+  new.angoff := v_ang;
+  v_ver := case when (new.dados ->> 'versao') ~ '^[0-9]{1,6}$' then (new.dados ->> 'versao')::integer else 1 end;
+  new.atualizado_em := now();
+  new.atualizado_por := coalesce(auth.uid(), new.atualizado_por);
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    new.versao := greatest(coalesce(new.versao, 1), v_ver);
+  else
+    new.criado_em := old.criado_em;
+    if (new.dados - 'versao' - 'id') is distinct from (old.dados - 'versao' - 'id') then
+      -- conteúdo novo: versão sobe e a calibração antiga deixa de valer
+      new.versao := greatest(v_ver, old.versao + 1);
+      new.b_calibrado := null; new.ep_calibrado := null; new.n_calibracao := null; new.calibrado_em := null;
+    else
+      new.versao := old.versao;
+    end if;
+  end if;
+  new.dados := new.dados || jsonb_build_object('versao', new.versao);
+  return new;
+end;
+$$;
+
+drop trigger if exists questoes_guard on public.questoes;
+create trigger questoes_guard
+  before insert or update on public.questoes
+  for each row execute function public.questoes_guard();
+
+-- ---------------------------------------------------------------------------
+-- Respostas por item (banco, simulado completo e bloco de 30 minutos)
+-- ---------------------------------------------------------------------------
+create table if not exists public.respostas_item (
+  id             uuid primary key default gen_random_uuid(),
+  user_id        uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  questao_id     text not null check (questao_id ~ '^[A-Za-z0-9._-]{1,40}$'),
+  step           text not null check (step in ('step1', 'step2ck')),
+  resposta       text check (resposta ~ '^[A-J]$'),
+  correta        boolean not null default false,
+  tempo_ms       integer not null default 0 check (tempo_ms between 0 and 86400000),
+  marcada        boolean not null default false,
+  modo           text not null check (modo in ('tutor', 'cronometrado')),
+  origem         text not null check (origem in ('banco', 'simulado', 'bloco_30')),
+  sessao_id      text check (length(sessao_id) <= 64),
+  bloco          smallint check (bloco between 0 and 40),
+  posicao        smallint check (posicao between 0 and 40),
+  versao_item    integer,
+  respondida_em  timestamptz not null default now(),
+  criado_em      timestamptz not null default now()
+);
+create index if not exists respostas_item_user_idx on public.respostas_item (user_id, step, respondida_em);
+create index if not exists respostas_item_questao_idx on public.respostas_item (questao_id);
+
+-- security definer para consultar o gabarito mesmo quando o aluno não lê questoes
+create or replace function public.respostas_item_guard()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_step text;
+  v_correta text;
+  v_versao integer;
+begin
+  if tg_op = 'INSERT' then
+    if auth.uid() is not null and not public.is_admin() then
+      new.user_id := auth.uid();
+    end if;
+    new.criado_em := now();
+    if new.respondida_em > now() + interval '5 minutes' then
+      raise exception 'A data da resposta não pode estar no futuro.' using errcode = '22023';
+    end if;
+    select q.step, q.correta, q.versao into v_step, v_correta, v_versao from public.questoes q where q.id = new.questao_id;
+    if found then
+      new.step := v_step;
+      new.correta := new.resposta is not null and new.resposta = v_correta;
+      new.versao_item := v_versao;
+    end if;
+  else
+    new.id := old.id;
+    new.user_id := old.user_id;
+    new.criado_em := old.criado_em;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists respostas_item_guard on public.respostas_item;
+create trigger respostas_item_guard
+  before insert or update on public.respostas_item
+  for each row execute function public.respostas_item_guard();
+
+-- ---------------------------------------------------------------------------
+-- Simulados completos (formulário fixo ou personalizado, com retomada)
+-- formulario: { id, codigo, step, tipo, modo, semente, blocos: [[ids]], tempo, ... }
+-- sessao:     estado do relógio e respostas (plataforma/js/formularios.js)
+-- ---------------------------------------------------------------------------
+create table if not exists public.simulados_completos (
+  id             uuid primary key default gen_random_uuid(),
+  user_id        uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  step           text not null check (step in ('step1', 'step2ck')),
+  tipo           text not null check (tipo in ('completo', 'meio', 'prontidao')),
+  montagem       text not null default 'fixo' check (montagem in ('fixo', 'personalizado')),
+  formulario_id  text not null check (length(formulario_id) between 1 and 120),
+  nome           text not null default '' check (length(nome) <= 120),
+  reduzido       boolean not null default false,
+  formulario     jsonb not null,
+  sessao         jsonb not null,
+  estado         text not null default 'em_andamento' check (estado in ('em_andamento', 'concluido', 'abandonado')),
+  bloco_atual    smallint not null default 0,
+  resultado      jsonb,
+  inicio         timestamptz not null default now(),
+  atualizado_em  timestamptz not null default now(),
+  fim            timestamptz,
+  criado_em      timestamptz not null default now()
+);
+create index if not exists simulados_completos_user_idx on public.simulados_completos (user_id, step, atualizado_em desc);
+
+create or replace function public.simulados_completos_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+declare
+  v_part boolean := auth.uid() is not null and not public.is_admin();
+  v_nb integer;
+  i integer;
+begin
+  if tg_op = 'UPDATE' then
+    new.id := old.id;
+    new.user_id := old.user_id;
+    new.criado_em := old.criado_em;
+    new.inicio := old.inicio;
+    if v_part then
+      if old.estado <> 'em_andamento' then
+        raise exception 'Simulado encerrado não pode ser alterado.' using errcode = '42501';
+      end if;
+      new.formulario := old.formulario;
+      new.formulario_id := old.formulario_id;
+      new.step := old.step;
+      new.tipo := old.tipo;
+      new.montagem := old.montagem;
+      new.reduzido := old.reduzido;
+      new.nome := old.nome;
+    end if;
+  end if;
+  if jsonb_typeof(new.formulario -> 'blocos') is distinct from 'array' then
+    raise exception 'O formulário precisa trazer a lista de blocos.' using errcode = '22023';
+  end if;
+  v_nb := jsonb_array_length(new.formulario -> 'blocos');
+  if v_nb < 1 or v_nb > 16 then
+    raise exception 'O formulário precisa ter de 1 a 16 blocos.' using errcode = '22023';
+  end if;
+  if exists (select 1 from jsonb_array_elements(new.formulario -> 'blocos') b
+             where jsonb_typeof(b) <> 'array' or jsonb_array_length(b) not between 1 and 20) then
+    raise exception 'Cada bloco precisa ter de 1 a 20 itens.' using errcode = '22023';
+  end if;
+  if jsonb_typeof(new.sessao) is distinct from 'object' then
+    raise exception 'O estado do simulado precisa ser um objeto JSON.' using errcode = '22023';
+  end if;
+  new.bloco_atual := case when (new.sessao ->> 'bloco_atual') ~ '^[0-9]{1,2}$' then (new.sessao ->> 'bloco_atual')::integer else 0 end;
+  if new.bloco_atual > v_nb then
+    raise exception 'Bloco atual inválido.' using errcode = '22023';
+  end if;
+  new.atualizado_em := now();
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    new.inicio := now();
+    if v_part then
+      new.user_id := auth.uid();
+      new.estado := 'em_andamento';
+      new.resultado := null;
+      new.fim := null;
+    end if;
+    return new;
+  end if;
+  if v_part then
+    if new.bloco_atual < old.bloco_atual then
+      raise exception 'Um bloco encerrado não reabre.' using errcode = '42501';
+    end if;
+    for i in 0 .. old.bloco_atual - 1 loop
+      if (new.sessao -> 'respostas' -> i) is distinct from (old.sessao -> 'respostas' -> i) then
+        raise exception 'As respostas de um bloco encerrado não podem mudar.' using errcode = '42501';
+      end if;
+    end loop;
+  end if;
+  if new.estado <> 'em_andamento' and old.estado = 'em_andamento' then
+    new.fim := now();
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists simulados_completos_guard on public.simulados_completos;
+create trigger simulados_completos_guard
+  before insert or update on public.simulados_completos
+  for each row execute function public.simulados_completos_guard();
+
+-- ---------------------------------------------------------------------------
+-- Anotações do aluno por item (privadas)
+-- ---------------------------------------------------------------------------
+create table if not exists public.anotacoes_item (
+  user_id        uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  questao_id     text not null check (questao_id ~ '^[A-Za-z0-9._-]{1,40}$'),
+  texto          text not null default '' check (char_length(texto) <= 5000),
+  atualizado_em  timestamptz not null default now(),
+  primary key (user_id, questao_id)
+);
+
+create or replace function public.anotacoes_item_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  if tg_op = 'INSERT' then
+    if auth.uid() is not null then new.user_id := auth.uid(); end if;
+  else
+    new.user_id := old.user_id;
+    new.questao_id := old.questao_id;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists anotacoes_item_guard on public.anotacoes_item;
+create trigger anotacoes_item_guard
+  before insert or update on public.anotacoes_item
+  for each row execute function public.anotacoes_item_guard();
+
+-- ---------------------------------------------------------------------------
+-- Reportes de erro em item (fila do admin)
+-- ---------------------------------------------------------------------------
+create table if not exists public.reportes_item (
+  id             uuid primary key default gen_random_uuid(),
+  user_id        uuid not null default auth.uid() references auth.users (id) on delete cascade,
+  autor_nome     text not null default '' check (length(autor_nome) <= 120),
+  questao_id     text not null check (questao_id ~ '^[A-Za-z0-9._-]{1,40}$'),
+  versao_item    integer,
+  motivo         text not null check (motivo in ('gabarito', 'mais_de_uma_correta', 'desatualizado', 'erro_texto', 'valores_lab', 'explicacao', 'outro')),
+  texto          text not null default '' check (char_length(texto) <= 2000),
+  status         text not null default 'aberto' check (status in ('aberto', 'em_analise', 'resolvido', 'rejeitado')),
+  resposta       text not null default '' check (char_length(resposta) <= 2000),
+  resolvido_por  uuid references auth.users (id) on delete set null,
+  resolvido_em   timestamptz,
+  criado_em      timestamptz not null default now()
+);
+create index if not exists reportes_item_status_idx on public.reportes_item (status, criado_em desc);
+
+create or replace function public.reportes_item_guard()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_part boolean := auth.uid() is not null and not public.is_admin();
+  v_nome text;
+begin
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    if v_part then
+      new.user_id := auth.uid();
+      new.status := 'aberto';
+      new.resposta := '';
+      new.resolvido_por := null;
+      new.resolvido_em := null;
+      select p.nome into v_nome from public.profiles p where p.id = auth.uid();
+      new.autor_nome := left(coalesce(nullif(v_nome, ''), new.autor_nome, ''), 120);
+    end if;
+    select q.versao into new.versao_item from public.questoes q where q.id = new.questao_id;
+    return new;
+  end if;
+  new.id := old.id;
+  new.user_id := old.user_id;
+  new.autor_nome := old.autor_nome;
+  new.questao_id := old.questao_id;
+  new.versao_item := old.versao_item;
+  new.motivo := old.motivo;
+  new.texto := old.texto;
+  new.criado_em := old.criado_em;
+  if new.status in ('resolvido', 'rejeitado') then
+    if new.status is distinct from old.status then
+      new.resolvido_por := coalesce(auth.uid(), new.resolvido_por);
+      new.resolvido_em := now();
+    else
+      new.resolvido_por := old.resolvido_por;
+      new.resolvido_em := old.resolvido_em;
+    end if;
+  else
+    new.resolvido_por := null;
+    new.resolvido_em := null;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists reportes_item_guard on public.reportes_item;
+create trigger reportes_item_guard
+  before insert or update on public.reportes_item
+  for each row execute function public.reportes_item_guard();
+
+-- ---------------------------------------------------------------------------
+-- Resultados oficiais (desfechos usados na calibração: Pass/Fail e nota do CK)
+-- ---------------------------------------------------------------------------
+create table if not exists public.resultados_oficiais (
+  id              uuid primary key default gen_random_uuid(),
+  user_id         uuid not null references auth.users (id) on delete cascade,
+  step            text not null check (step in ('step1', 'step2ck')),
+  data            date not null check (data >= date '2015-01-01'),
+  resultado       text check (resultado in ('pass', 'fail')),
+  escore          smallint check (escore between 1 and 999),
+  observacao      text not null default '' check (char_length(observacao) <= 1000),
+  registrado_por  uuid references auth.users (id) on delete set null,
+  criado_em       timestamptz not null default now(),
+  atualizado_em   timestamptz not null default now(),
+  constraint resultados_oficiais_ck check (resultado is not null),
+  constraint resultados_oficiais_step1_ck check (step <> 'step1' or escore is null)
+);
+create index if not exists resultados_oficiais_user_idx on public.resultados_oficiais (user_id, step, data);
+
+create or replace function public.resultados_oficiais_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  if tg_op = 'INSERT' then
+    new.criado_em := now();
+    new.registrado_por := coalesce(auth.uid(), new.registrado_por);
+  else
+    new.id := old.id;
+    new.criado_em := old.criado_em;
+    new.registrado_por := old.registrado_por;
+  end if;
+  if new.data > current_date + 2 then
+    raise exception 'A data da prova não pode estar no futuro.' using errcode = '22023';
+  end if;
+  -- Step 2 CK a partir de 01/07/2025: padrão de 218 (usmle.org, Examination Results and Scoring)
+  if new.resultado is null and new.step = 'step2ck' and new.escore is not null and new.data >= date '2025-07-01' then
+    new.resultado := case when new.escore >= 218 then 'pass' else 'fail' end;
+  end if;
+  return new;
+end;
+$$;
+
+drop trigger if exists resultados_oficiais_guard on public.resultados_oficiais;
+create trigger resultados_oficiais_guard
+  before insert or update on public.resultados_oficiais
+  for each row execute function public.resultados_oficiais_guard();
+
+-- ---------------------------------------------------------------------------
+-- Modelos psicométricos ajustados com desfechos reais (um por Step). Todos os
+-- logados leem (a tela do aluno usa); só o admin grava. Sem linha, a tela diz
+-- que a estimativa vem do padrão de Angoff.
+-- ---------------------------------------------------------------------------
+create table if not exists public.modelos_psicometricos (
+  step            text primary key check (step in ('step1', 'step2ck')),
+  dados           jsonb not null default '{}'::jsonb check (jsonb_typeof(dados) = 'object'),
+  atualizado_por  uuid references auth.users (id) on delete set null,
+  atualizado_em   timestamptz not null default now()
+);
+
+create or replace function public.modelos_psicometricos_guard()
+returns trigger
+language plpgsql
+set search_path = public
+as $$
+begin
+  new.atualizado_em := now();
+  new.atualizado_por := coalesce(auth.uid(), new.atualizado_por);
+  return new;
+end;
+$$;
+
+drop trigger if exists modelos_psicometricos_guard on public.modelos_psicometricos;
+create trigger modelos_psicometricos_guard
+  before insert or update on public.modelos_psicometricos
+  for each row execute function public.modelos_psicometricos_guard();
+
+-- ---------------------------------------------------------------------------
+-- RLS do banco de questões
+-- ---------------------------------------------------------------------------
+alter table public.questoes            enable row level security;
+alter table public.respostas_item      enable row level security;
+alter table public.simulados_completos enable row level security;
+alter table public.anotacoes_item      enable row level security;
+alter table public.reportes_item       enable row level security;
+alter table public.resultados_oficiais enable row level security;
+alter table public.modelos_psicometricos enable row level security;
+
+revoke all on public.questoes, public.respostas_item, public.simulados_completos, public.anotacoes_item,
+              public.reportes_item, public.resultados_oficiais, public.modelos_psicometricos from anon, authenticated;
+grant select, insert, update, delete on public.questoes, public.respostas_item, public.simulados_completos,
+                                        public.anotacoes_item, public.reportes_item, public.resultados_oficiais,
+                                        public.modelos_psicometricos to authenticated;
+
+-- modelos psicométricos: todos os logados leem; só o admin grava
+drop policy if exists modelos_psicometricos_select on public.modelos_psicometricos;
+create policy modelos_psicometricos_select on public.modelos_psicometricos for select to authenticated
+  using (true);
+drop policy if exists modelos_psicometricos_escrita on public.modelos_psicometricos;
+create policy modelos_psicometricos_escrita on public.modelos_psicometricos for all to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+
+-- questões: leitura de itens ativos para matrícula ativa; o admin lê e escreve tudo
+drop policy if exists questoes_select on public.questoes;
+create policy questoes_select on public.questoes for select to authenticated
+  using ((status = 'ativo' and (select public.pode_ler_banco())) or (select public.is_admin()));
+drop policy if exists questoes_insert on public.questoes;
+create policy questoes_insert on public.questoes for insert to authenticated
+  with check ((select public.is_admin()));
+drop policy if exists questoes_update on public.questoes;
+create policy questoes_update on public.questoes for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists questoes_delete on public.questoes;
+create policy questoes_delete on public.questoes for delete to authenticated
+  using ((select public.is_admin()));
+
+-- respostas: o aluno grava e lê as próprias; só o admin altera ou apaga
+drop policy if exists respostas_item_select on public.respostas_item;
+create policy respostas_item_select on public.respostas_item for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists respostas_item_insert on public.respostas_item;
+create policy respostas_item_insert on public.respostas_item for insert to authenticated
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists respostas_item_update on public.respostas_item;
+create policy respostas_item_update on public.respostas_item for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists respostas_item_delete on public.respostas_item;
+create policy respostas_item_delete on public.respostas_item for delete to authenticated
+  using ((select public.is_admin()));
+
+-- simulados completos: o aluno cria, lê e atualiza o próprio (o gatilho trava o resto)
+drop policy if exists simulados_completos_select on public.simulados_completos;
+create policy simulados_completos_select on public.simulados_completos for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists simulados_completos_insert on public.simulados_completos;
+create policy simulados_completos_insert on public.simulados_completos for insert to authenticated
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists simulados_completos_update on public.simulados_completos;
+create policy simulados_completos_update on public.simulados_completos for update to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()))
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists simulados_completos_delete on public.simulados_completos;
+create policy simulados_completos_delete on public.simulados_completos for delete to authenticated
+  using ((select public.is_admin()));
+
+-- anotações do aluno: só o dono
+drop policy if exists anotacoes_item_dono on public.anotacoes_item;
+create policy anotacoes_item_dono on public.anotacoes_item for all to authenticated
+  using (user_id = (select auth.uid())) with check (user_id = (select auth.uid()));
+
+-- reportes: o aluno cria e lê os próprios; o admin trata
+drop policy if exists reportes_item_select on public.reportes_item;
+create policy reportes_item_select on public.reportes_item for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists reportes_item_insert on public.reportes_item;
+create policy reportes_item_insert on public.reportes_item for insert to authenticated
+  with check (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists reportes_item_update on public.reportes_item;
+create policy reportes_item_update on public.reportes_item for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists reportes_item_delete on public.reportes_item;
+create policy reportes_item_delete on public.reportes_item for delete to authenticated
+  using ((select public.is_admin()));
+
+-- resultados oficiais: o admin lança; o aluno lê os próprios
+drop policy if exists resultados_oficiais_select on public.resultados_oficiais;
+create policy resultados_oficiais_select on public.resultados_oficiais for select to authenticated
+  using (user_id = (select auth.uid()) or (select public.is_admin()));
+drop policy if exists resultados_oficiais_insert on public.resultados_oficiais;
+create policy resultados_oficiais_insert on public.resultados_oficiais for insert to authenticated
+  with check ((select public.is_admin()));
+drop policy if exists resultados_oficiais_update on public.resultados_oficiais;
+create policy resultados_oficiais_update on public.resultados_oficiais for update to authenticated
+  using ((select public.is_admin())) with check ((select public.is_admin()));
+drop policy if exists resultados_oficiais_delete on public.resultados_oficiais;
+create policy resultados_oficiais_delete on public.resultados_oficiais for delete to authenticated
+  using ((select public.is_admin()));
+
+-- ---------------------------------------------------------------------------
+-- Funções de análise de itens (só admin; security definer com search_path fixo).
+-- Regra comum: a primeira resposta de cada pessoa em cada item (a repetição mede
+-- memória do item); modo tutor fora, salvo p_incluir_tutor; só a versão atual
+-- do item, salvo p_todas_versoes. Mesmas regras de LocalStore e de
+-- plataforma/js/psicometria.js (supabase/teste-local/04-compara-itens.mjs confere).
+-- ---------------------------------------------------------------------------
+
+-- Matriz de respostas pseudonimizada (pessoa = 1, 2, 3... pela ordem do user_id)
+create or replace function public.r2a_admin_respostas_calibracao(p_step text default null, p_incluir_tutor boolean default false, p_todas_versoes boolean default false)
+returns table (pessoa integer, questao_id text, step text, resposta text, correta boolean, modo text, origem text, tempo_ms integer)
+language plpgsql
+stable
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores leem as respostas da turma.' using errcode = '42501';
+  end if;
+  return query
+    with base as (
+      select r.user_id, r.questao_id, r.step, r.resposta, r.correta, r.modo, r.origem, r.tempo_ms,
+             row_number() over (partition by r.user_id, r.questao_id order by r.respondida_em, r.id) as ordem
+      from public.respostas_item r
+      left join public.questoes q on q.id = r.questao_id
+      where (p_step is null or r.step = p_step)
+        and (p_todas_versoes or q.id is null or r.versao_item is null or r.versao_item = q.versao)
+    ), prim as (
+      select * from base b where b.ordem = 1 and (p_incluir_tutor or b.modo <> 'tutor')
+    )
+    select dense_rank() over (order by p.user_id::text collate "C")::integer, p.questao_id, p.step, p.resposta, p.correta, p.modo, p.origem, p.tempo_ms
+    from prim p;
+end;
+$$;
+
+-- Estatísticas clássicas por item: n, p, distribuição das alternativas, tempo
+-- mediano, ponto-bisserial corrigida (correlação entre acertar o item e a
+-- proporção de acertos da pessoa nos outros itens, para quem respondeu pelo
+-- menos 2) e as alternativas dos grupos superior e inferior (27% de cada lado,
+-- pela proporção nos outros itens, desempate pelo user_id).
+create or replace function public.r2a_admin_estatisticas_itens(p_step text default null, p_incluir_tutor boolean default false, p_todas_versoes boolean default false)
+returns table (questao_id text, step text, n integer, acertos integer, p numeric, em_branco integer, opcoes jsonb,
+               tempo_mediano_ms integer, pbis numeric, n_superior integer, n_inferior integer, opcoes_superior jsonb, opcoes_inferior jsonb)
+language plpgsql
+stable
+security definer
+set search_path = public
+as $$
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores veem as estatísticas dos itens.' using errcode = '42501';
+  end if;
+  return query
+    with base as (
+      select r.user_id, r.questao_id, r.step, r.resposta, r.correta, r.modo, r.tempo_ms,
+             row_number() over (partition by r.user_id, r.questao_id order by r.respondida_em, r.id) as ordem
+      from public.respostas_item r
+      left join public.questoes q on q.id = r.questao_id
+      where (p_step is null or r.step = p_step)
+        and (p_todas_versoes or q.id is null or r.versao_item is null or r.versao_item = q.versao)
+    ), prim as (
+      select b.user_id, b.questao_id, b.step, b.resposta, b.correta, b.tempo_ms from base b
+      where b.ordem = 1 and (p_incluir_tutor or b.modo <> 'tutor')
+    ), pess as (
+      select pr.user_id, count(*) as nj, sum(pr.correta::int) as sj from prim pr group by pr.user_id
+    ), rr as (
+      select pr.*, case when pe.nj >= 2 then (pe.sj - pr.correta::int)::float8 / (pe.nj - 1) end as resto
+      from prim pr join pess pe on pe.user_id = pr.user_id
+    ), rk as (
+      select rr.*, row_number() over (partition by rr.questao_id order by rr.resto, rr.user_id::text collate "C") as pos,
+             count(*) over (partition by rr.questao_id) as m
+      from rr where rr.resto is not null
+    ), gr as (
+      select rk.questao_id, rk.resposta,
+             case when rk.m >= 4 and rk.pos <= greatest(1, floor(0.27 * rk.m)) then 'inf'
+                  when rk.m >= 4 and rk.pos > rk.m - greatest(1, floor(0.27 * rk.m)) then 'sup' end as grupo
+      from rk
+    ), agg as (
+      select pr.questao_id, min(pr.step) as step, count(*)::int as n, sum(pr.correta::int)::int as acertos,
+             count(*) filter (where pr.resposta is null)::int as em_branco,
+             round(percentile_cont(0.5) within group (order by pr.tempo_ms))::int as tempo_mediano_ms
+      from prim pr group by pr.questao_id
+    )
+    select a.questao_id, a.step, a.n, a.acertos, round(a.acertos::numeric / a.n, 6), a.em_branco,
+      coalesce((select jsonb_object_agg(x.resposta, x.c) from (select pr.resposta, count(*)::int as c from prim pr where pr.questao_id = a.questao_id and pr.resposta is not null group by pr.resposta) x), '{}'::jsonb),
+      a.tempo_mediano_ms,
+      (select round(corr(rr.correta::int::float8, rr.resto)::numeric, 6) from rr where rr.questao_id = a.questao_id and rr.resto is not null),
+      (select count(*)::int from gr where gr.questao_id = a.questao_id and gr.grupo = 'sup'),
+      (select count(*)::int from gr where gr.questao_id = a.questao_id and gr.grupo = 'inf'),
+      coalesce((select jsonb_object_agg(x.resposta, x.c) from (select gr.resposta, count(*)::int as c from gr where gr.questao_id = a.questao_id and gr.grupo = 'sup' and gr.resposta is not null group by gr.resposta) x), '{}'::jsonb),
+      coalesce((select jsonb_object_agg(x.resposta, x.c) from (select gr.resposta, count(*)::int as c from gr where gr.questao_id = a.questao_id and gr.grupo = 'inf' and gr.resposta is not null group by gr.resposta) x), '{}'::jsonb)
+    from agg a;
+end;
+$$;
+
+-- Grava a recalibração feita no navegador do admin: [{ id, b, ep, n }] (b nulo apaga)
+create or replace function public.r2a_admin_salvar_calibracao(p_itens jsonb)
+returns integer
+language plpgsql
+volatile
+security definer
+set search_path = public
+as $$
+declare
+  v integer;
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores gravam a calibração.' using errcode = '42501';
+  end if;
+  if jsonb_typeof(p_itens) is distinct from 'array' then
+    raise exception 'Envie uma lista de itens.' using errcode = '22023';
+  end if;
+  update public.questoes q set
+    b_calibrado = (x ->> 'b')::numeric,
+    ep_calibrado = (x ->> 'ep')::numeric,
+    n_calibracao = case when x ->> 'b' is null then null else (x ->> 'n')::integer end,
+    calibrado_em = case when x ->> 'b' is null then null else now() end
+  from jsonb_array_elements(p_itens) x
+  where q.id = x ->> 'id';
+  get diagnostics v = row_count;
+  return v;
+end;
+$$;
+
+revoke all on function public.r2a_admin_respostas_calibracao(text, boolean, boolean) from public, anon;
+revoke all on function public.r2a_admin_estatisticas_itens(text, boolean, boolean) from public, anon;
+revoke all on function public.r2a_admin_salvar_calibracao(jsonb) from public, anon;
+grant execute on function public.r2a_admin_respostas_calibracao(text, boolean, boolean) to authenticated;
+grant execute on function public.r2a_admin_estatisticas_itens(text, boolean, boolean) to authenticated;
+grant execute on function public.r2a_admin_salvar_calibracao(jsonb) to authenticated;

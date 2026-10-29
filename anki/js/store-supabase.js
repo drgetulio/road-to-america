@@ -10,11 +10,22 @@
    Numa página fora de anki/, passe vendorUrl apontando para
    anki/vendor/supabase.umd.js (por exemplo "../anki/vendor/supabase.umd.js").
    A sessão do Supabase fica no localStorage da origem e vale para todas as
-   páginas do site. */
+   páginas do site.
+
+   Banco de questões (mesmos métodos de store-local.js): tabela questoes (a RLS só
+   entrega itens ativos a participantes com matrícula ativa e a administradores),
+   respostas_item, simulados_completos, anotacoes_item, reportes_item,
+   resultados_oficiais e as funções r2a_admin_estatisticas_itens,
+   r2a_admin_respostas_calibracao e r2a_admin_salvar_calibracao. */
 import { normalizeCard } from "./cards.js";
 import { isAdmin, PermissionError } from "./permissions.js";
 import { validarTentativa } from "../../plataforma/js/simulado.js";
 import { validarNbme, normalizarNbme, parsePresencaCsv, mergeConfig } from "../../plataforma/js/desempenho.js";
+import {
+  normalizarResposta, validarResposta, validarFormularioGravado, validarSessao, validarProgresso,
+  validarAnotacaoItem, validarReporte, validarResultadoOficial, normalizarResultadoOficial, validarCalibracao,
+  STATUS_REPORTE, ESTADOS_SIMULADO
+} from "../../plataforma/js/registros.js";
 
 const CAMPOS_SIMULADO = ["step", "modo", "questoes", "respostas", "marcadas", "tempos_ms", "inicio", "fim", "duracao_ms", "limite_ms", "total", "acertos", "em_branco", "por_sistema", "por_disciplina", "por_dificuldade", "encerramento", "versao_banco"];
 const CAMPOS_PLANO = ["data_prova_step1", "data_prova_step2ck", "step1_aprovado", "step2ck_aprovado", "data_matricula", "ciclo_basico_concluido_em"];
@@ -53,8 +64,12 @@ function erroAmigavel(error) {
   if (!error) return null;
   const msg = error.message || String(error);
   if (error.code === "42501" || /row-level security|permission denied/i.test(msg)) return new PermissionError(msg.includes("row-level") ? "Sem permissão para esta ação." : msg);
-  return new Error(msg);
+  const e = new Error(msg);
+  if (error.code) e.code = error.code;
+  return e;
 }
+/* Coluna inexistente (schema antigo): código 42703 do Postgres */
+function semColuna(e) { return e?.code === "42703" || /column .* does not exist/i.test(e?.message || ""); }
 function ok({ data, error }) {
   if (error) throw erroAmigavel(error);
   return data;
@@ -104,12 +119,19 @@ export class SupabaseStore {
   }
 
   async _carregarPerfil(authUser) {
-    let { data, error } = await this.client.from("profiles").select("id, email, nome, papel").eq("id", authUser.id).maybeSingle();
+    /* "ativo" (matrícula) veio com o banco de questões; se o schema.sql novo ainda não
+       foi aplicado, a coluna não existe e a leitura cai para as colunas antigas */
+    let cols = "id, email, nome, papel, ativo";
+    let { data, error } = await this.client.from("profiles").select(cols).eq("id", authUser.id).maybeSingle();
+    if (error && semColuna(error)) {
+      cols = "id, email, nome, papel";
+      ({ data, error } = await this.client.from("profiles").select(cols).eq("id", authUser.id).maybeSingle());
+    }
     if (!error && !data) {
-      const ins = await this.client.from("profiles").insert({ id: authUser.id, email: authUser.email, nome: (authUser.email || "").split("@")[0] }).select("id, email, nome, papel").single();
+      const ins = await this.client.from("profiles").insert({ id: authUser.id, email: authUser.email, nome: (authUser.email || "").split("@")[0] }).select(cols).single();
       data = ins.data;
     }
-    this._user = { id: authUser.id, email: authUser.email, nome: data?.nome || authUser.email, papel: data?.papel === "admin" ? "admin" : "participante" };
+    this._user = { id: authUser.id, email: authUser.email, nome: data?.nome || authUser.email, papel: data?.papel === "admin" ? "admin" : "participante", ativo: data?.papel === "admin" || !!data?.ativo };
   }
 
   get user() { return this._user; }
@@ -424,7 +446,12 @@ export class SupabaseStore {
   /* ---------- Leitura agregada ---------- */
   async listParticipantes() {
     this._exigeAdmin("Só administradores veem a lista de participantes.");
-    const rows = await this._todas(() => this.client.from("profiles").select("id, nome, email, papel, criado_em").eq("papel", "participante").order("nome"));
+    let rows;
+    try { rows = await this._todas(() => this.client.from("profiles").select("id, nome, email, papel, criado_em, ativo").eq("papel", "participante").order("nome").order("id")); }
+    catch (e) {
+      if (!semColuna(e)) throw e;
+      rows = await this._todas(() => this.client.from("profiles").select("id, nome, email, papel, criado_em").eq("papel", "participante").order("nome").order("id"));
+    }
     return rows.map((r) => ({ ...r, sintetico: false }));
   }
   async getMeuResumo({ agora = new Date() } = {}) {
@@ -441,5 +468,217 @@ export class SupabaseStore {
     if (alvo !== u.id && !isAdmin(u)) throw new PermissionError("Sem permissão para ver a atividade de outra pessoa.");
     const rows = ok(await this.client.rpc("r2a_atividade_diaria", { p_user: alvo, p_dias: dias, p_tz: fusoHorario(), p_agora: new Date(agora).toISOString() })) || [];
     return rows.map((r) => ({ dia: String(r.dia).slice(0, 10), revisoes: r.revisoes, revisao_total: r.revisao_total, revisao_acertos: r.revisao_acertos }));
+  }
+  /* =====================================================================
+     Banco de questões
+     ===================================================================== */
+  async listQuestoes({ step = null, incluirInativas = false } = {}) {
+    const u = this._exigeLogin();
+    const rows = await this._todas(() => {
+      let q = this.client.from("questoes").select("id, status, versao, dados, b_calibrado, ep_calibrado, n_calibracao, calibrado_em");
+      if (step) q = q.eq("step", step);
+      if (!(incluirInativas && isAdmin(u))) q = q.eq("status", "ativo");
+      return q.order("id");
+    });
+    this.ultimaLeituraQuestoes = { fontes: [{ arquivo: "supabase:questoes", n: rows.length, ok: true, erro: "" }], privado: true };
+    return rows.map((r) => ({
+      ...(r.dados || {}), id: r.id, status: r.status, versao: r.versao,
+      b_calibrado: r.b_calibrado === null ? null : Number(r.b_calibrado),
+      ep_calibrado: r.ep_calibrado === null ? null : Number(r.ep_calibrado),
+      n_calibracao: r.n_calibracao || 0, calibrado_em: r.calibrado_em
+    }));
+  }
+  async setStatusQuestao(id, status) {
+    this._exigeAdmin("Só administradores mudam o status de uma questão.");
+    if (!["ativo", "rascunho", "suspenso", "aposentado"].includes(status)) throw new Error("Status inválido.");
+    const r = ok(await this.client.from("questoes").update({ status }).eq("id", id).select("id, status").maybeSingle());
+    if (!r) throw new Error("Questão não encontrada.");
+    return r;
+  }
+  async salvarCalibracao(itens) {
+    this._exigeAdmin("Só administradores gravam a calibração.");
+    const lista = (itens || []).filter((x) => x && x.b !== null);
+    const erros = lista.length ? validarCalibracao(lista) : [];
+    if (erros.length) throw new Error(erros.join(" "));
+    const payload = (itens || []).map((it) => ({ id: it.id, b: it.b === null ? null : Number(it.b), ep: Number.isFinite(it.ep) ? Number(it.ep) : null, n: Number.isInteger(it.n) ? it.n : 0 }));
+    let gravados = 0;
+    for (let i = 0; i < payload.length; i += 500) gravados += ok(await this.client.rpc("r2a_admin_salvar_calibracao", { p_itens: payload.slice(i, i + 500) })) || 0;
+    return { gravados };
+  }
+  async setAtivo(userId, ativo) {
+    this._exigeAdmin("Só administradores ativam matrículas.");
+    const r = ok(await this.client.from("profiles").update({ ativo: !!ativo }).eq("id", userId).select("id, ativo").maybeSingle());
+    if (!r) throw new Error("Participante não encontrado.");
+    return r;
+  }
+
+  /* ---------- respostas por item ---------- */
+  async saveRespostas(lista) {
+    this._exigeLogin();
+    const rows = (Array.isArray(lista) ? lista : [lista]).map((r) => {
+      const n = normalizarResposta(r);
+      const e = validarResposta(n);
+      if (e.length) throw new Error(e.join(" "));
+      return n;
+    });
+    const out = [];
+    for (let i = 0; i < rows.length; i += 500) out.push(...ok(await this.client.from("respostas_item").insert(rows.slice(i, i + 500)).select("*")));
+    return out;
+  }
+  async saveResposta(r) { return (await this.saveRespostas([r]))[0]; }
+  async listRespostas({ step = null, origem = null, desde = null, userId = null, todos = false } = {}) {
+    return this._todas(() => {
+      let q = this._filtroDono(this.client.from("respostas_item").select("*"), { todos, userId });
+      if (step) q = q.eq("step", step);
+      if (origem) q = q.eq("origem", origem);
+      if (desde) q = q.gte("respondida_em", new Date(desde).toISOString());
+      return q.order("respondida_em").order("id");
+    });
+  }
+
+  /* ---------- simulados completos ---------- */
+  async criarSimuladoCompleto({ formulario, sessao }) {
+    this._exigeLogin();
+    const e = validarFormularioGravado(formulario).concat(formulario ? validarSessao(formulario, sessao) : []);
+    if (e.length) throw new Error(e.join(" "));
+    const row = {
+      step: formulario.step, tipo: formulario.tipo, montagem: formulario.modo === "personalizado" ? "personalizado" : "fixo",
+      formulario_id: String(formulario.id), nome: String(formulario.nome || "").slice(0, 120), reduzido: !!formulario.reduzido,
+      formulario, sessao, bloco_atual: sessao.bloco_atual
+    };
+    return ok(await this.client.from("simulados_completos").insert(row).select("*").single());
+  }
+  async _patchSimCompleto(id, patch, sessao = null) {
+    const u = this._exigeLogin();
+    if (sessao && !isAdmin(u)) {
+      const atual = ok(await this.client.from("simulados_completos").select("formulario, sessao, estado").eq("id", id).maybeSingle());
+      if (!atual) throw new PermissionError("Simulado não encontrado ou sem permissão.");
+      if (atual.estado !== "em_andamento") throw new PermissionError("Simulado encerrado não pode ser alterado.");
+      const e = validarSessao(atual.formulario, sessao).concat(validarProgresso(atual.sessao, sessao));
+      if (e.length) throw new Error(e.join(" "));
+    }
+    const row = { ...patch };
+    if (sessao) { row.sessao = sessao; row.bloco_atual = sessao.bloco_atual; }
+    const r = ok(await this.client.from("simulados_completos").update(row).eq("id", id).select("*").maybeSingle());
+    if (!r) throw new PermissionError("Simulado não encontrado ou sem permissão.");
+    return r;
+  }
+  async salvarProgressoSimulado(id, sessao) { return this._patchSimCompleto(id, {}, sessao); }
+  async concluirSimuladoCompleto(id, { sessao = null, resultado = null } = {}) { return this._patchSimCompleto(id, { estado: "concluido", resultado }, sessao); }
+  async abandonarSimuladoCompleto(id) { return this._patchSimCompleto(id, { estado: "abandonado" }); }
+  async getSimuladoCompleto(id) {
+    this._exigeLogin();
+    return ok(await this.client.from("simulados_completos").select("*").eq("id", id).maybeSingle());
+  }
+  async listSimuladosCompletos({ todos = false, userId = null, step = null, estado = null } = {}) {
+    if (estado && !ESTADOS_SIMULADO.includes(estado)) throw new Error("Estado inválido.");
+    return this._todas(() => {
+      let q = this._filtroDono(this.client.from("simulados_completos").select("*"), { todos, userId });
+      if (step) q = q.eq("step", step);
+      if (estado) q = q.eq("estado", estado);
+      return q.order("atualizado_em", { ascending: false }).order("id");
+    });
+  }
+  async deleteSimuladoCompleto(id) {
+    this._exigeAdmin("Só administradores excluem simulados.");
+    const r = ok(await this.client.from("simulados_completos").delete().eq("id", id).select("id"));
+    if (!r.length) throw new PermissionError("Simulado não encontrado ou sem permissão.");
+  }
+
+  /* ---------- anotações do aluno por item ---------- */
+  async getAnotacaoItem(questaoId) {
+    const u = this._exigeLogin();
+    return ok(await this.client.from("anotacoes_item").select("*").eq("user_id", u.id).eq("questao_id", questaoId).maybeSingle());
+  }
+  async saveAnotacaoItem(questaoId, texto) {
+    const u = this._exigeLogin();
+    const e = validarAnotacaoItem(questaoId, texto);
+    if (e.length) throw new Error(e.join(" "));
+    const t = String(texto ?? "");
+    if (!t.trim()) { ok(await this.client.from("anotacoes_item").delete().eq("user_id", u.id).eq("questao_id", questaoId)); return null; }
+    return ok(await this.client.from("anotacoes_item").upsert({ user_id: u.id, questao_id: questaoId, texto: t }, { onConflict: "user_id,questao_id" }).select("*").single());
+  }
+  async listAnotacoesItem() {
+    const u = this._exigeLogin();
+    return this._todas(() => this.client.from("anotacoes_item").select("*").eq("user_id", u.id).order("atualizado_em", { ascending: false }).order("questao_id"));
+  }
+
+  /* ---------- reportes de erro em item ---------- */
+  async reportarItem({ questao_id, motivo, texto = "" }) {
+    const u = this._exigeLogin();
+    const e = validarReporte({ questao_id, motivo, texto });
+    if (e.length) throw new Error(e.join(" "));
+    return ok(await this.client.from("reportes_item").insert({ questao_id, motivo, texto: String(texto).trim(), autor_nome: u.nome || "" }).select("*").single());
+  }
+  async listReportes({ todos = false, status = null, questaoId = null } = {}) {
+    const u = this._exigeLogin();
+    return this._todas(() => {
+      let q = this.client.from("reportes_item").select("*");
+      if (!(todos && isAdmin(u))) q = q.eq("user_id", u.id);
+      if (status) q = q.eq("status", status);
+      if (questaoId) q = q.eq("questao_id", questaoId);
+      return q.order("criado_em", { ascending: false }).order("id");
+    });
+  }
+  async resolverReporte(id, { status = "resolvido", resposta = "" } = {}) {
+    this._exigeAdmin("Só administradores tratam reportes.");
+    if (!STATUS_REPORTE.includes(status)) throw new Error("Status inválido.");
+    if (String(resposta).length > 2000) throw new Error("A resposta tem no máximo 2000 caracteres.");
+    const r = ok(await this.client.from("reportes_item").update({ status, resposta: String(resposta) }).eq("id", id).select("*").maybeSingle());
+    if (!r) throw new Error("Reporte não encontrado.");
+    return r;
+  }
+
+  /* ---------- resultados oficiais ---------- */
+  async saveResultadoOficial(x) {
+    this._exigeAdmin("Só administradores lançam resultados oficiais.");
+    const e = validarResultadoOficial(x);
+    if (e.length) throw new Error(e.join(" "));
+    const d = normalizarResultadoOficial(x);
+    if (x.id) {
+      const r = ok(await this.client.from("resultados_oficiais").update(d).eq("id", x.id).select("*").maybeSingle());
+      if (!r) throw new Error("Resultado não encontrado.");
+      return r;
+    }
+    return ok(await this.client.from("resultados_oficiais").insert(d).select("*").single());
+  }
+  async listResultadosOficiais({ todos = false, userId = null, step = null } = {}) {
+    return this._todas(() => {
+      let q = this._filtroDono(this.client.from("resultados_oficiais").select("*"), { todos, userId });
+      if (step) q = q.eq("step", step);
+      return q.order("data", { ascending: false }).order("id");
+    });
+  }
+  async deleteResultadoOficial(id) {
+    this._exigeAdmin("Só administradores excluem resultados oficiais.");
+    const r = ok(await this.client.from("resultados_oficiais").delete().eq("id", id).select("id"));
+    if (!r.length) throw new PermissionError("Resultado não encontrado ou sem permissão.");
+  }
+
+  /* ---------- modelos psicométricos ---------- */
+  async getModelosPsicometricos() {
+    this._exigeLogin();
+    const rows = ok(await this.client.from("modelos_psicometricos").select("step, dados, atualizado_em, atualizado_por"));
+    const out = { step1: null, step2ck: null };
+    for (const r of rows || []) if (r.step in out) out[r.step] = { ...(r.dados || {}), atualizado_em: r.atualizado_em, atualizado_por: r.atualizado_por };
+    return out;
+  }
+  async saveModeloPsicometrico(step, dados) {
+    this._exigeAdmin("Só administradores gravam modelos psicométricos.");
+    if (!["step1", "step2ck"].includes(step)) throw new Error("Step inválido.");
+    if (!dados || typeof dados !== "object" || Array.isArray(dados)) throw new Error("Modelo inválido.");
+    const r = ok(await this.client.from("modelos_psicometricos").upsert({ step, dados }, { onConflict: "step" }).select("step, dados, atualizado_em, atualizado_por").single());
+    return { ...(r.dados || {}), atualizado_em: r.atualizado_em, atualizado_por: r.atualizado_por };
+  }
+
+  /* ---------- leituras agregadas (só admin) ---------- */
+  async listRespostasCalibracao({ step = null, incluirTutor = false, todasVersoes = false } = {}) {
+    this._exigeAdmin("Só administradores leem as respostas da turma.");
+    return this._todas(() => this.client.rpc("r2a_admin_respostas_calibracao", { p_step: step, p_incluir_tutor: !!incluirTutor, p_todas_versoes: !!todasVersoes }).order("pessoa").order("questao_id"));
+  }
+  async getEstatisticasItens({ step = null, incluirTutor = false, todasVersoes = false } = {}) {
+    this._exigeAdmin("Só administradores veem as estatísticas dos itens.");
+    const rows = await this._todas(() => this.client.rpc("r2a_admin_estatisticas_itens", { p_step: step, p_incluir_tutor: !!incluirTutor, p_todas_versoes: !!todasVersoes }).order("questao_id"));
+    return rows.map((r) => ({ ...r, p: r.p === null ? null : Number(r.p), pbis: r.pbis === null ? null : Number(r.pbis) }));
   }
 }
