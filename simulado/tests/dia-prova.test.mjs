@@ -11,7 +11,7 @@ import { gerarBancoSintetico } from "../../plataforma/tests/sintetico.mjs";
 import {
   criarDia, comecarTutorial, comecarBloco, irParaQuestao, escolherResposta, alternarMarcada, alternarRisco, definirRealces,
   definirNotaItem, avisoDoBloco, fecharBloco, sincronizar, suspender, retomar, podeSuspender, relogioDoDia, resumoDoDia,
-  maisRecente, restanteBloco, blocoExpirou, fimDoBloco, TOLERANCIA_AUSENCIA_MS
+  maisRecente, restanteBloco, blocoExpirou, fimDoBloco, TOLERANCIA_AUSENCIA_MS, EXCEDENTE_MAX_MS
 } from "../js/dia-prova.js";
 
 const MIN = 60000;
@@ -150,6 +150,71 @@ test("página fechada com o bloco aberto: ao voltar, o bloco fecha pelo tempo e 
   const r = relogioDoDia(tarde.sessao, formS1, T0 + 5 * 60 * MIN);
   assert.equal(r.pausa_saldo_ms, 60 * MIN, "a ausência não gastou a pausa");
   assert.equal(r.pausa_excedente_ms, 0);
+});
+
+test("página fechada na pausa: a volta no dia seguinte para o dia quando o saldo acabou e não zera os blocos seguintes", () => {
+  let s = comecarBloco(criarDia(formS1), formS1, T0);
+  s = fecharBloco(s, T0 + 20 * MIN);
+  /* saldo: 55 + 5 do tutorial pulado + 10 de sobra = 70 min; acabou em T0 + 90 min */
+  const dentro = sincronizar(s, T0 + 90 * MIN + TOLERANCIA_AUSENCIA_MS - 1000);
+  assert.equal(dentro.suspendeu, false, "até 2 minutos além do saldo, vale como débito");
+  const r = sincronizar(s, T0 + 24 * 60 * MIN);
+  assert.equal(r.suspendeu, true);
+  assert.equal(r.motivo, "pausa");
+  assert.equal(Date.parse(r.sessao.suspensa.desde), T0 + 90 * MIN);
+  const volta = T0 + 24 * 60 * MIN + 5 * MIN;
+  const s2 = comecarBloco(retomar(r.sessao, volta), formS1, volta);
+  assert.equal(s2.relogio.bloco_limite_ms, 30 * MIN, "a ausência não vira débito");
+  assert.equal(s2.relogio.debito_ms, 0);
+  assert.equal(resumoDoDia(s2, formS1).suspensoes, 1);
+  assert.equal(sincronizar(r.sessao, volta).suspendeu, false, "dia já parado não para de novo");
+});
+
+test("pausa além do saldo com a página aberta: débito até 10 minutos, depois o dia para", () => {
+  let s = comecarBloco(criarDia(formS1), formS1, T0);
+  s = fecharBloco(s, T0 + 30 * MIN);
+  /* saldo de 55 + 5 do tutorial pulado = 60 min, acabou em T0 + 90 min */
+  assert.equal(sincronizar(s, T0 + 90 * MIN + 9 * MIN, { paginaAberta: true }).suspendeu, false);
+  const r = sincronizar(s, T0 + 90 * MIN + 40 * MIN, { paginaAberta: true });
+  assert.equal(r.suspendeu, true);
+  assert.equal(Date.parse(r.sessao.suspensa.desde), T0 + 90 * MIN + EXCEDENTE_MAX_MS);
+  const volta = T0 + 6 * 60 * MIN;
+  const ret = retomar(r.sessao, volta);
+  assert.equal(sincronizar(ret, volta + 30000, { paginaAberta: true }).suspendeu, false, "o débito já cobrado não para o dia de novo na volta");
+  assert.equal(relogioDoDia(ret, formS1, volta).pausa_excedente_ms, EXCEDENTE_MAX_MS);
+  const s2 = comecarBloco(ret, formS1, volta);
+  assert.equal(s2.relogio.bloco_limite_ms, 20 * MIN, "os 10 minutos além do saldo saem do bloco seguinte");
+});
+
+test("tutorial deixado aberto com a página fechada: o excesso gasta a pausa e o dia para quando o saldo zera", () => {
+  const s = comecarTutorial(criarDia(formS1), T0);
+  assert.equal(sincronizar(s, T0 + 30 * MIN).suspendeu, false, "dentro do saldo, o tempo corre como pausa");
+  const r = sincronizar(s, T0 + 10 * 60 * MIN);
+  assert.equal(r.motivo, "tutorial");
+  assert.equal(r.sessao.fase, "intervalo");
+  assert.equal(r.sessao.bloco_atual, 0);
+  assert.equal(Date.parse(r.sessao.suspensa.desde), T0 + 60 * MIN, "5 do tutorial + 55 de pausa");
+  assert.equal(relogioDoDia(r.sessao, formS1, T0 + 10 * 60 * MIN).dia_decorrido_ms, 60 * MIN);
+  const volta = T0 + 11 * 60 * MIN;
+  const s2 = comecarBloco(retomar(r.sessao, volta), formS1, volta);
+  assert.equal(s2.relogio.bloco_limite_ms, 30 * MIN, "a ausência não vira débito");
+  assert.equal(s2.relogio.tutorial_usado_ms, 5 * MIN);
+  assert.equal(s2.relogio.pausa_saldo_ms, 0);
+  assert.equal(relogioDoDia(s2, formS1, volta).dia_decorrido_ms, 60 * MIN);
+});
+
+test("tutorial esquecido com a página aberta: gasta a pausa, débito de 10 minutos e o dia para", () => {
+  const s = comecarTutorial(criarDia(formS1), T0);
+  /* 5 do tutorial + 55 de pausa + 10 de débito = 70 minutos */
+  assert.equal(sincronizar(s, T0 + 70 * MIN, { paginaAberta: true }).suspendeu, false);
+  const r = sincronizar(s, T0 + 5 * 60 * MIN, { paginaAberta: true });
+  assert.equal(r.motivo, "tutorial");
+  const volta = T0 + 6 * 60 * MIN;
+  const ret = retomar(r.sessao, volta);
+  assert.equal(sincronizar(ret, volta + 60000, { paginaAberta: true }).suspendeu, false);
+  const s2 = comecarBloco(ret, formS1, volta);
+  assert.equal(s2.relogio.bloco_limite_ms, 20 * MIN, "só os 10 minutos de débito saem do bloco 1");
+  assert.equal(s2.relogio.pausa_saldo_ms, 0);
 });
 
 test("dia inteiro do Step 2 CK: 16 blocos, fecha com resumo coerente e o relógio oficial confere", () => {

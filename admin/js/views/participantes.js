@@ -5,7 +5,7 @@ import { $, e, icon, download, num } from "../../../anki/js/ui.js";
 import { NOME_STEP, ROTULO_SITUACAO_GARANTIA, dataBR } from "../../../plataforma/js/acompanhamento.js";
 import {
   filtrarLinhas, ordenarLinhas, csvParticipantes, textoUltimaAtividade, rotuloTurma,
-  CHAVES_ORDEM, pct, plural
+  CHAVES_ORDEM, pct, plural, estBancoAtual
 } from "../calculos.js";
 import { pageHead, chipStatus, chipGarantia, seloDemo, avisoLgpd } from "./comum.js";
 import { importarPresenca, botaoImportar } from "./acoes.js";
@@ -18,13 +18,14 @@ const COLUNAS = [
   { chave: "retencao", rotulo: "Retenção 30 dias" },
   { chave: "simulado", rotulo: "Simulados" },
   { chave: "nbme", rotulo: "NBME" },
+  { chave: "banco", rotulo: "Banco" },
   { chave: "presenca", rotulo: "Presença" },
   { chave: "prova", rotulo: "Prova" },
   { chave: null, rotulo: "Garantia" }
 ];
 /* sentido padrão ao clicar numa coluna pela primeira vez */
-const ORDENS = [["risco", "Situação (risco primeiro)"], ["nome", "Nome"], ["ultima", "Última atividade"], ["sequencia", "Sequência de estudo"], ["retencao", "Retenção 30 dias"], ["simulado", "Simulados"], ["nbme", "NBME"], ["presenca", "Presença"], ["prova", "Data da prova"]];
-const DIR_PADRAO = { nome: "asc", risco: "desc", ultima: "asc", sequencia: "desc", retencao: "asc", simulado: "asc", nbme: "asc", presenca: "asc", prova: "asc" };
+const ORDENS = [["risco", "Situação (risco primeiro)"], ["nome", "Nome"], ["ultima", "Última atividade"], ["sequencia", "Sequência de estudo"], ["retencao", "Retenção 30 dias"], ["simulado", "Simulados"], ["nbme", "NBME"], ["banco", "Probabilidade no banco"], ["presenca", "Presença"], ["prova", "Data da prova"]];
+const DIR_PADRAO = { nome: "asc", risco: "desc", ultima: "asc", sequencia: "desc", retencao: "asc", simulado: "asc", nbme: "asc", banco: "asc", presenca: "asc", prova: "asc" };
 
 function opcoes(lista, atual) {
   return lista.map(([v, r]) => '<option value="' + e(v) + '"' + (v === atual ? " selected" : "") + ">" + e(r) + "</option>").join("");
@@ -62,7 +63,7 @@ export default {
         '<div class="list-head__acts"><label class="check check--inline"><input type="checkbox" data-com-email> Incluir e-mails no CSV</label>' +
         '<button type="button" class="btn btn--sm" data-csv>' + icon("download-simple") + "Exportar CSV</button></div></div>" +
       '<div class="ptab-wrap"><table class="ptab"><caption class="sr-only">Participantes e sinais de rendimento</caption><thead><tr data-cab></tr></thead><tbody data-corpo></tbody></table></div>' +
-      '<p class="hint ptab-nota">Retenção em cinza: menos de ' + cfg.retencao_min_revisoes + " revisões em 30 dias, amostra pequena. Simulados: média das " + cfg.simulado_ultimos + " últimas tentativas do Step em preparo. NBME: lançadas do Step em preparo e a última probabilidade de aprovação informada. Os e-mails não aparecem na lista; a busca os considera e a ficha mostra o contato.</p>" +
+      '<p class="hint ptab-nota">Retenção em cinza: menos de ' + cfg.retencao_min_revisoes + " revisões em 30 dias, amostra pequena. Simulados: média das " + cfg.simulado_ultimos + " últimas tentativas do Step em preparo. NBME: lançadas do Step em preparo e a última probabilidade de aprovação informada. Banco: probabilidade de estar acima do limiar do banco no Step em preparo (padrão de Angoff, não oficial); em cinza, estimativa preliminar. Os e-mails não aparecem na lista; a busca os considera e a ficha mostra o contato.</p>" +
       avisoLgpd() +
     "</div>";
 
@@ -147,9 +148,18 @@ function linhaHtml(r, cfg) {
     '<td data-label="Retenção 30 dias">' + ret + "</td>" +
     '<td data-label="Simulados">' + sim + "</td>" +
     '<td data-label="NBME">' + nb + "</td>" +
+    '<td data-label="Banco">' + bancoHtml(r) + "</td>" +
     '<td data-label="Presença">' + pres + "</td>" +
     '<td data-label="Prova">' + prova + "</td>" +
     '<td data-label="Garantia">' + chipGarantia(r.garantia) + "</td>" +
   "</tr>";
 }
 
+
+function bancoHtml(r) {
+  const x = estBancoAtual(r);
+  if (!x) return '<span class="muted">' + (r.banco ? "sem respostas" : "indisponível") + "</span>";
+  const baixo = x.confianca?.alta && x.p_aprovacao <= 0.1;
+  const p = Math.round(x.p_aprovacao * 100);
+  return "<b" + (baixo ? ' class="is-risco"' : x.confianca?.alta ? "" : ' class="muted"') + ">" + (p < 1 && x.p_aprovacao > 0 ? "&lt;1" : p > 99 && x.p_aprovacao < 1 ? "&gt;99" : p) + "%</b><small>" + (x.confianca?.alta ? "alta confiança" : "preliminar") + ", " + Math.round(x.n_efetivo) + " itens</small>";
+}

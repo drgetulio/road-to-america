@@ -12,12 +12,13 @@
    - histórico de blocos, resultado de um bloco e curva de evolução;
    - contribuição de cada área para a probabilidade de aprovação e recomendações
      de estudo ligadas ao Conteúdo do Step 1, aos flashcards e ao próprio banco.
-   O método psicométrico está em PSICOMETRIA.md (seções 17 a 19 tratam do que
-   este arquivo acrescenta). */
+   O método psicométrico está em PSICOMETRIA.md (a seção 18 trata do que este
+   arquivo acrescenta). */
 
 import { sortearQuestoes, rng } from "./simulado.js";
 import {
-  estimarAluno, prepararRespostas, eap, expit, prontidaoCombinada, PRIORI_PADRAO, PESOS_MODO, REGRA_CONFIANCA, PADRAO_STEP2CK
+  estimarAluno, prepararRespostas, eap, expit, prontidaoCombinada, pontosGrade, resumirPosterior,
+  PRIORI_PADRAO, GRADE_PADRAO, PESOS_MODO, REGRA_CONFIANCA, PADRAO_STEP2CK
 } from "./psicometria.js";
 import { TAXONOMIA, sistemasDoOutline, nomeChave } from "./banco.js";
 import { prontidao, CONFIG_PADRAO } from "./desempenho.js";
@@ -227,8 +228,14 @@ export function paraRespostasBanco(s, porId) {
 export function resumoBlocos(respostas, itens = null) {
   const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
   const grupos = new Map();
+  const ja = new Set();
   for (const r of respostas || []) {
     if ((r.origem || "banco") !== "banco" || !r.sessao_id) continue;
+    /* a mesma linha duas vezes (reenvio depois de falha de rede, ou a cópia pendente
+       do navegador somada à da conta) conta uma vez só */
+    const k = r.sessao_id + "|" + (r.posicao ?? "") + "|" + r.questao_id;
+    if (ja.has(k)) continue;
+    ja.add(k);
     (grupos.get(r.sessao_id) || grupos.set(r.sessao_id, []).get(r.sessao_id)).push(r);
   }
   const out = [];
@@ -317,28 +324,67 @@ export function curvaEvolucao({ respostas, itens, step, pesos = PESOS_MODO, prio
    deficit = soma de (a_i - x_i) na área: acertos que faltaram para o limiar.
    As contribuições não se somam (P não é linear e, nas disciplinas, um item
    conta em mais de um rótulo). */
-export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_PADRAO } = {}) {
-  const base = eap(usadas, { priori }).p_aprovacao;
+/* Log-posterior na grade, aditivo por item: a priori mais, para cada b, o termo
+   s1 ln expit(t - b) + s0 ln expit(b - t) = (s1 + s0) ln expit(t - b) - s0 (t - b),
+   a mesma conta de posteriorGrade (psicometria.js). Ser aditivo permite calcular a
+   base uma vez e, em cada área, somar só a diferença entre as pseudo-respostas do
+   limiar e as respostas observadas (com pesos que podem ser negativos). Assim o custo
+   cai de (áreas x itens) para (itens x rótulos por item), o que importa quando os b
+   calibrados deixam de se repetir e o aluno tem centenas de respostas. */
+function logExpit(z) { return z > 0 ? -Math.log1p(Math.exp(-z)) : z - Math.log1p(Math.exp(z)); }
+function somarTermos(lp, pontos, porB) {
+  for (const [b, [s1, s0]] of porB) {
+    if (!s1 && !s0) continue;
+    const s = s1 + s0;
+    for (let k = 0; k < pontos.length; k++) { const z = pontos[k] - b; lp[k] += s * logExpit(z) - s0 * z; }
+  }
+}
+function acumularB(porB, b, s1, s0) {
+  const g = porB.get(b) || porB.set(b, [0, 0]).get(b);
+  g[0] += s1; g[1] += s0;
+}
+function pAcimaDeLp(lp, pontos) {
+  let max = -Infinity;
+  for (let k = 0; k < lp.length; k++) if (lp[k] > max) max = lp[k];
+  const dens = new Float64Array(lp.length);
+  let area = 0;
+  for (let k = 0; k < lp.length; k++) dens[k] = Math.exp(lp[k] - max);
+  for (let k = 1; k < lp.length; k++) area += 0.5 * (dens[k] + dens[k - 1]) * (pontos[k] - pontos[k - 1]);
+  for (let k = 0; k < lp.length; k++) dens[k] /= area;
+  return resumirPosterior({ pontos, dens }, { limiar: 0, intervalo: 0.9 }).p_acima;
+}
+
+export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_PADRAO, grade = GRADE_PADRAO } = {}) {
+  const validas = (usadas || []).filter((u) => Number.isFinite(u.b) && (u.w === undefined || u.w > 0));
+  const base = eap(validas, { priori, grade }).p_aprovacao;
   const grupos = new Map();
-  for (const u of usadas || []) {
+  for (const u of validas) {
     const v = u.item?.[dim];
-    for (const c of new Set(Array.isArray(v) ? v : [v])) if (c) (grupos.get(c) || grupos.set(c, new Set()).get(c)).add(u);
+    for (const c of new Set(Array.isArray(v) ? v : [v])) if (c) (grupos.get(c) || grupos.set(c, []).get(c)).push(u);
   }
   const taxDim = dim === "disciplinas" ? "disciplina" : dim === "disciplinas_oficiais" ? "disciplina_oficial" : dim;
   const faixas = new Map((TAXONOMIA[step]?.[taxDim]?.chaves || []).map((k) => [k.chave, k.faixa]));
+  const pontos = pontosGrade(grade);
+  const lpBase = new Float64Array(pontos.length);
+  const s2 = priori.dp * priori.dp;
+  for (let k = 0; k < pontos.length; k++) { const d = pontos[k] - priori.media; lpBase[k] = -0.5 * d * d / s2; }
+  const porBBase = new Map();
+  for (const u of validas) { const w = u.w === undefined ? 1 : u.w; acumularB(porBBase, u.b, u.x ? w : 0, u.x ? 0 : w); }
+  somarTermos(lpBase, pontos, porBBase);
   const out = [];
-  for (const [chave, set] of grupos) {
-    const alt = [];
+  for (const [chave, lista] of grupos) {
     let n = 0, acertos = 0, esperado = 0;
-    for (const u of usadas) {
-      if (!set.has(u)) { alt.push(u); continue; }
+    const delta = new Map();
+    for (const u of lista) {
       const a = expit(-u.b);
       const w = u.w === undefined ? 1 : u.w;
       n++; acertos += u.x; esperado += a;
-      if (a > 0) alt.push({ b: u.b, x: 1, w: w * a });
-      if (a < 1) alt.push({ b: u.b, x: 0, w: w * (1 - a) });
+      /* troca a resposta observada (peso w em x) pela esperada no limiar (w a acerto, w (1 - a) erro) */
+      acumularB(delta, u.b, w * a - (u.x ? w : 0), w * (1 - a) - (u.x ? 0 : w));
     }
-    const pLim = eap(alt, { priori }).p_aprovacao;
+    const lp = Float64Array.from(lpBase);
+    somarTermos(lp, pontos, delta);
+    const pLim = pAcimaDeLp(lp, pontos);
     const fx = faixas.get(chave);
     out.push({
       chave, n, acertos, esperado_limiar: esperado, deficit: esperado - acertos,
@@ -347,7 +393,9 @@ export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_
       peso_prova: fx ? (fx[0] + fx[1]) / 200 : null
     });
   }
-  return out.sort((a, b) => b.ganho - a.ganho || b.deficit - a.deficit || (a.chave < b.chave ? -1 : 1));
+  /* ganho arredondado em 1e-9: empates de ruído numérico caem no déficit e no nome */
+  const g = (x) => Math.round(x.ganho * 1e9);
+  return out.sort((a, b) => g(b) - g(a) || b.deficit - a.deficit || (a.chave < b.chave ? -1 : 1));
 }
 
 /* ---------- recomendações de estudo ----------
@@ -467,7 +515,8 @@ export function resumoAprovacao({ banco, respostas, step, modelos = null, nbme =
     limiar_texto: step === "step2ck"
       ? "Probabilidade de atingir o padrão de aprovação do Step 2 CK (" + PADRAO_STEP2CK + " desde 01/07/2025), pelo limiar do banco fixado por Angoff."
       : "Probabilidade de estar acima do padrão de aprovação do Step 1 (Pass/Fail), pelo limiar do banco fixado por Angoff.",
-    itens_no_banco: banco.contagem?.[step] || 0
+    itens_no_banco: banco.contagem?.[step] || 0,
+    nao_vistos: (banco.steps?.[step] || []).filter((q) => !historico.has(q.id)).length
   };
 }
 

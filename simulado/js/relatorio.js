@@ -97,31 +97,59 @@ export function instantaneo(est) {
   };
 }
 
-/* Resultado estimado do cabeçalho do relatório */
+/* Resultado estimado do cabeçalho do relatório.
+   Pass ou Fail (no Step 2 CK, acima ou abaixo do padrão) só aparece quando a
+   probabilidade sai da faixa de 10% a 90% (REGRA_CONFIANCA). Dentro dela, o
+   resultado fica "indefinido, perto do limiar", com a tendência dita em texto: uma
+   probabilidade de 55% não autoriza escrever Pass. O rótulo de confiança (alta ou
+   preliminar) continua separado, porque também depende do número de itens e da
+   cobertura do outline. */
 export function resultadoEstimado(est, step) {
   const p = est.p_aprovacao;
+  const decidido = p >= REGRA_CONFIANCA.p_alta || p <= REGRA_CONFIANCA.p_baixa;
   const passa = p >= 0.5;
   const alta = !!est.confianca?.alta;
   const pct = (x) => (x * 100).toFixed(1).replace(".", ",") + "%";
+  const faixa = Math.round(REGRA_CONFIANCA.p_baixa * 100) + "% e " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "%";
+  const confianca = alta ? "Alta confiança" : "Estimativa preliminar";
+  if (!decidido) {
+    const tend = step === "step2ck" ? (passa ? "acima do padrão" : "abaixo do padrão") : (passa ? "Pass" : "Fail");
+    return {
+      codigo: "indefinido",
+      decidido: false,
+      tendencia: passa ? "acima" : "abaixo",
+      titulo: step === "step2ck" ? "Perto do padrão de aprovação: resultado indefinido" : "Resultado estimado: indefinido, perto do limiar",
+      selo: "Indefinido",
+      p,
+      frase: (step === "step2ck" ? "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " : "Probabilidade de aprovação estimada: ") + pct(p) +
+        ". Com a probabilidade entre " + faixa + ", o resultado não pode ser afirmado; a tendência é " + tend + ".",
+      alta,
+      confianca
+    };
+  }
   if (step === "step2ck") {
     return {
       codigo: passa ? "atinge" : "nao_atinge",
+      decidido: true,
+      tendencia: passa ? "acima" : "abaixo",
       titulo: passa ? "Padrão de aprovação provavelmente atingido" : "Padrão de aprovação provavelmente não atingido",
       selo: passa ? "Acima do padrão" : "Abaixo do padrão",
       p,
       frase: "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " + pct(p) + ".",
       alta,
-      confianca: alta ? "Alta confiança" : "Estimativa preliminar"
+      confianca
     };
   }
   return {
     codigo: passa ? "pass" : "fail",
+    decidido: true,
+    tendencia: passa ? "acima" : "abaixo",
     titulo: passa ? "Resultado estimado: Pass" : "Resultado estimado: Fail",
     selo: passa ? "Pass" : "Fail",
     p,
     frase: "Probabilidade de aprovação estimada: " + pct(p) + ".",
     alta,
-    confianca: alta ? "Alta confiança" : "Estimativa preliminar"
+    confianca
   };
 }
 
@@ -153,6 +181,22 @@ export function prioridades(perfil, max = 5) {
   const todas = perfil.flatMap((p) => p.areas.filter((a) => a.classe !== "insuficiente").map((a) => ({ ...a, dim: p.dim, dimensao: p.titulo })));
   return todas.sort((a, b) => (a.classe === "mais_baixo" ? 0 : 1) - (b.classe === "mais_baixo" ? 0 : 1) || a.p_acima - b.p_acima).slice(0, max)
     .filter((a) => a.classe === "mais_baixo" || a.p_acima < 0.5);
+}
+
+/* Itens do formulário que o aluno já tinha respondido no banco antes deste dia
+   (outra sessão, data anterior ao início). A repetição mede em parte a memória do
+   item e tende a elevar o acerto; o relatório avisa quantos foram. */
+export function itensJaVistos(reg, respostas) {
+  const ids = new Set(reg.formulario.blocos.flat());
+  const ini = Date.parse(reg.sessao?.inicio || reg.inicio || "");
+  const vistos = new Set();
+  for (const r of respostas || []) {
+    if (!ids.has(r.questao_id) || (r.sessao_id && r.sessao_id === reg.id)) continue;
+    const t = Date.parse(r.respondida_em || "");
+    if (Number.isFinite(ini) && Number.isFinite(t) && t >= ini) continue;
+    vistos.add(r.questao_id);
+  }
+  return { n: vistos.size, total: ids.size, ids: [...vistos] };
 }
 
 /* Resumo bloco a bloco */
@@ -265,6 +309,15 @@ export function linkCriarFlashcard(q, { base = "../anki/", retorno = "" } = {}) 
 export function textoRegraConfianca(est) {
   return "Alta confiança só com probabilidade de pelo menos " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "% ou de no máximo " + Math.round(REGRA_CONFIANCA.p_baixa * 100) +
     "%, com pelo menos " + est.confianca.n_minimo + " itens e itens em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) + "% dos sistemas do outline.";
+}
+
+/* Leitura da confiança em uma frase, com quantos itens faltam */
+export function leituraConfianca(est) {
+  const c = est.confianca;
+  if (c.alta) return "A probabilidade está fora da faixa de 10% a 90%, com itens suficientes e itens na maioria dos sistemas do outline.";
+  if (c.perto_do_limiar) return "Seu desempenho está praticamente no limiar: mais itens quase não mudam a classificação, e o que decide é subir a habilidade nas áreas mais fracas.";
+  const faltam = c.faltam_itens ?? c.faltam_itens_minimo;
+  return faltam ? "Faltam cerca de " + faltam + (faltam === 1 ? " item respondido" : " itens respondidos") + " para a regra de alta confiança." : "Ainda não dá para afirmar o resultado com alta confiança.";
 }
 
 /* Linha do histórico de simulados completos */

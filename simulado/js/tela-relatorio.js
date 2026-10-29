@@ -2,7 +2,8 @@
    item. Cálculos em relatorio.js e plataforma/js/psicometria.js; método em
    plataforma/PSICOMETRIA.md.
    Ícones usados: ph-seal-check ph-hourglass-medium ph-trend-up ph-trend-down ph-equals
-   ph-cards ph-flag ph-warning ph-chat-text ph-target ph-printer */
+   ph-cards ph-flag ph-warning ph-chat-text ph-target ph-printer ph-path ph-info ph-check-circle
+   ph-x-circle ph-minus-circle ph-clock ph-note-pencil ph-chart-bar ph-flag-banner */
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
 import { prontidaoCombinada, PADRAO_STEP2CK } from "../../plataforma/js/psicometria.js";
 import { prontidao } from "../../plataforma/js/desempenho.js";
@@ -10,7 +11,7 @@ import { nomeChave } from "../../plataforma/js/banco.js";
 import { MOTIVOS_REPORTE, LIMITE_REPORTE } from "../../plataforma/js/registros.js";
 import {
   corrigirRegistro, estimativaDoSimulado, estimativaGeral, resultadoEstimado, perfilRelatorio, prioridades, resumoBlocos,
-  itensRevisao, filtrarItens, ritmoDoDia, linkCriarFlashcard, textoRegraConfianca, posicaoEscala, NOMES_TIPO, ESCALA_PERFIL, CK_PARA_STEP1
+  itensRevisao, itensJaVistos, filtrarItens, ritmoDoDia, linkCriarFlashcard, textoRegraConfianca, leituraConfianca, posicaoEscala, NOMES_TIPO, ESCALA_PERFIL, CK_PARA_STEP1
 } from "./relatorio.js";
 import { resumoDoDia } from "./dia-prova.js";
 import { htmlTabelaItem } from "./interface-bloco.js";
@@ -130,9 +131,9 @@ export default {
     const dia = resumoDoDia(reg.sessao, form);
     const pr = prontidaoCombinada({ exit18: prontidao(nbme, step), banco: geral.n ? geral : null });
     const pe = est.percentual_esperado;
+    const jaVistos = itensJaVistos(reg, todas);
     const retorno = "../simulado/#/relatorio/" + encodeURIComponent(id);
     const conf = est.confianca;
-    const faltam = conf.faltam_itens ?? conf.faltam_itens_minimo;
     const xT = posicaoEscala(est.theta), xLo = posicaoEscala(est.ic90[0]), xHi = posicaoEscala(est.ic90[1]);
     const ck = step === "step2ck";
 
@@ -149,6 +150,7 @@ export default {
           '<div class="embarque__main">' +
             '<p class="embarque__top"><span>' + (ck ? "Padrão de aprovação" : "Resultado estimado") + "</span><span>" + (res.alta ? icon("seal-check") + " Alta confiança" : icon("hourglass-medium") + " Estimativa preliminar") + "</span></p>" +
             '<h2 class="rel__titulo" id="t-resultado">' + e(res.titulo) + "</h2>" +
+            (res.decidido ? "" : '<p class="rel__frase">' + e(res.frase) + "</p>") +
             '<dl class="embarque__dados">' +
               "<div><dt>" + (ck ? "Probabilidade de atingir o padrão" : "Probabilidade de aprovação") + "</dt><dd>" + prob(est.p_aprovacao) + "<small>P(θ acima do limiar), " + plural(est.n, "item", "itens") + "</small></dd></div>" +
               "<div><dt>Habilidade estimada</dt><dd>" + num(est.theta) + "<small>logit; intervalo de 90%: " + num(est.ic90[0]) + " a " + num(est.ic90[1]) + "</small></dd></div>" +
@@ -168,14 +170,15 @@ export default {
             '<span class="escala__ic" style="left:' + xLo.toFixed(1) + "%;width:" + Math.max(1, xHi - xLo).toFixed(1) + '%" aria-hidden="true"></span>' +
             '<span class="escala__pt" style="left:' + xT.toFixed(1) + '%" aria-hidden="true"><span>você</span></span>' +
           "</div>" +
-          '<p class="fine">Escala do modelo de Rasch ancorado no Angoff, de ' + ESCALA_PERFIL.min + " a +" + ESCALA_PERFIL.max + " logit. O 0 é o examinando no limiar de aprovação: ele acerta cada item com a probabilidade que os autores atribuíram no Angoff. A barra é o intervalo de 90% da sua habilidade.</p>" +
-          "<p><strong>" + e(res.confianca) + ".</strong> " + e(conf.texto) + (!conf.alta && faltam ? " Faltam cerca de " + plural(faltam, "item respondido", "itens respondidos") + " para a regra de alta confiança." : "") + "</p>" +
+          '<p class="fine">Escala do modelo de Rasch ancorado no Angoff, de ' + ESCALA_PERFIL.min + " a +" + ESCALA_PERFIL.max + " logit. O 0 é o examinando no limiar de aprovação: ele acerta cada item com a probabilidade que os autores atribuíram no Angoff. A barra é o intervalo de 90% da sua habilidade." + (Math.abs(est.theta) > ESCALA_PERFIL.max ? " A sua estimativa (" + e(num(est.theta)) + " logit) fica fora da escala desenhada e aparece no extremo." : "") + "</p>" +
+          "<p><strong>" + e(res.confianca) + ".</strong> " + e(leituraConfianca(est)) + "</p>" +
           (conf.motivos?.length ? '<ul class="lista-check">' + conf.motivos.map((m) => "<li>" + icon("info") + "<span>" + e(m) + "</span></li>").join("") + "</ul>" : "") +
           '<p class="fine">' + e(textoRegraConfianca(est)) + "</p>" +
-          (est.desfechos ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>Pelo modelo calibrado com os resultados oficiais da turma (" + est.desfechos.modelo.n + " participantes), a probabilidade de aprovação é " + prob(est.desfechos.p_aprovacao) + ".</span></p>" : "") +
-          (ck ? (est.escore ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>Nota esperada pelo modelo calibrado com notas reais: " + Math.round(est.escore.media) + " (intervalo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "); probabilidade de nota de pelo menos " + PADRAO_STEP2CK + ": " + prob(est.escore.p_limiar) + ".</span></p>"
+          (est.desfechos ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração: modelo ajustado com desfechos fictícios (" + est.desfechos.modelo.n + " examinandos simulados). Por ele" : "Pelo modelo calibrado com os resultados oficiais da turma (" + est.desfechos.modelo.n + " participantes)") + ", a probabilidade de aprovação é " + prob(est.desfechos.p_aprovacao) + ". Estimativa da Road to America, não é resultado oficial.</span></p>" : "") +
+          (ck ? (est.escore ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração. " : "") + "Nota esperada pelo modelo calibrado com notas reais (não é nota oficial): " + Math.round(est.escore.media) + " (intervalo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "); probabilidade de nota de pelo menos " + PADRAO_STEP2CK + ": " + prob(est.escore.p_limiar) + ".</span></p>"
             : '<p class="aviso-conta">' + icon("info") + "<span><strong>Sem nota de três dígitos.</strong> O limiar do banco foi fixado por Angoff para representar o padrão mínimo de " + PADRAO_STEP2CK + ". A nota só será estimada depois da calibração com escores reais da turma.</span></p>") : "") +
           '<p class="fine">' + est.avisos.map(e).join(" ") + "</p>" +
+          (jaVistos.n ? '<p class="aviso-conta">' + icon("info") + "<span>" + plural(jaVistos.n, "item deste formulário você já tinha respondido", "itens deste formulário você já tinha respondido") + " no banco antes deste dia (" + pct(jaVistos.n / jaVistos.total) + "). A repetição mede em parte a memória do item e tende a subir o acerto; para uma leitura mais limpa, use o formulário personalizado, que prioriza itens não vistos.</span></p>" : "") +
         "</section>" +
 
         '<section class="historico" aria-labelledby="t-perfil">' +
@@ -218,7 +221,7 @@ export default {
           '<p><label for="f-bloco" class="fine">Bloco </label><select id="f-bloco" class="input input--sel" data-f-bloco><option value="">Todos os blocos</option>' + form.blocos.map((_, i) => '<option value="' + i + '">Bloco ' + (i + 1) + "</option>").join("") + "</select></p>" +
           '<p class="sr-only" role="status" data-qrev-conta></p>' +
           '<ul class="qrev" data-qrev></ul>' +
-          '<p class="fine">Os itens estão em inglês, como na prova; cada um traz a explicação de cada alternativa, o objetivo educacional e o resumo em português.</p>' +
+          '<p class="fine">Os itens estão em inglês, como na prova. Quando o item tem, a revisão mostra a explicação de cada alternativa, o objetivo educacional e o resumo em português.</p>' +
         "</section>" +
 
         '<div class="acoes"><a class="btn" href="#/completos">' + icon("play") + "Simulados completos</a>" +
@@ -235,7 +238,7 @@ export default {
       box.innerHTML = lista.length ? lista.map((x) => {
         const sx = situ[x.situacao];
         const meta = x.questao ? [x.questao.sistema ? nomeChave(step, "sistema", x.questao.sistema) : "", x.questao.topico].filter(Boolean).join(" | ") : "Item fora do banco";
-        return '<li><details data-i="' + (x.numero - 1) + '"><summary>' +
+        return '<li><details data-i="' + (x.numero - 1) + '" data-id="' + e(x.id) + '"><summary>' +
           '<span class="qrev__n qrev__n--' + x.situacao + '" aria-hidden="true">' + x.numero + "</span>" +
           '<span class="qrev__meta"><b>Item ' + x.numero + ', bloco ' + (x.bloco + 1) + '<span class="sr-only">, ' + sx[2].toLowerCase() + "</span></b><span>" + e(meta) + "</span></span>" +
           '<span class="qrev__chips"><span class="chip ' + sx[0] + '">' + icon(sx[1]) + sx[2] + "</span>" +

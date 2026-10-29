@@ -1593,6 +1593,10 @@ begin
   if new.resultado is null and new.step = 'step2ck' and new.escore is not null and new.data >= date '2025-07-01' then
     new.resultado := case when new.escore >= 218 then 'pass' else 'fail' end;
   end if;
+  if new.step = 'step2ck' and new.escore is not null and new.data >= date '2025-07-01'
+     and new.resultado is distinct from (case when new.escore >= 218 then 'pass' else 'fail' end) then
+    raise exception 'A nota não combina com o resultado: desde 01/07/2025 o padrão de aprovação do Step 2 CK é 218.' using errcode = '22023';
+  end if;
   return new;
 end;
 $$;
@@ -1863,3 +1867,192 @@ revoke all on function public.r2a_admin_salvar_calibracao(jsonb) from public, an
 grant execute on function public.r2a_admin_respostas_calibracao(text, boolean, boolean) to authenticated;
 grant execute on function public.r2a_admin_estatisticas_itens(text, boolean, boolean) to authenticated;
 grant execute on function public.r2a_admin_salvar_calibracao(jsonb) to authenticated;
+
+-- =============================================================================
+-- REVISÃO DE ITENS PELO ADMIN (acréscimo de 29/10/2026): marca de revisão,
+-- correção de gabarito com registro de versão e histórico de cada questão.
+-- Interface: plataforma/INTERFACE.md, seção "Análise de itens na área
+-- administrativa"; telas em admin/ (#/itens e #/item/<id>).
+--   questoes.em_revisao    item marcado para revisão; continua no banco até a
+--                          equipe decidir (retirar = status 'suspenso').
+--   questoes_historico     uma linha por mudança de gabarito, de conteúdo, de
+--                          status ou de marca de revisão, com versão, valor antes e
+--                          depois, motivo e quem fez. Só o admin lê; ninguém
+--                          escreve direto (o gatilho grava).
+-- O motivo chega ao gatilho pela configuração local da transação 'r2a.motivo',
+-- preenchida pelas funções r2a_admin_* abaixo.
+-- =============================================================================
+alter table public.questoes add column if not exists em_revisao boolean not null default false;
+alter table public.questoes add column if not exists revisao_nota text not null default '';
+do $$
+begin
+  alter table public.questoes add constraint questoes_revisao_nota_tamanho check (length(revisao_nota) <= 1000);
+exception when duplicate_object then null;
+end;
+$$;
+
+create table if not exists public.questoes_historico (
+  id            bigint generated always as identity primary key,
+  questao_id    text not null references public.questoes (id) on delete cascade,
+  versao        integer not null,
+  acao          text not null check (acao in ('gabarito', 'conteudo', 'status', 'revisao')),
+  de            text,
+  para          text,
+  motivo        text not null default '' check (length(motivo) <= 1000),
+  recorrigidas  integer,
+  editor_id     uuid references auth.users (id) on delete set null,
+  criado_em     timestamptz not null default now()
+);
+create index if not exists questoes_historico_questao_idx on public.questoes_historico (questao_id, criado_em);
+
+create or replace function public.questoes_registrar_historico()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_motivo text := left(coalesce(current_setting('r2a.motivo', true), ''), 1000);
+begin
+  if new.correta is distinct from old.correta then
+    insert into public.questoes_historico (questao_id, versao, acao, de, para, motivo, editor_id)
+    values (new.id, new.versao, 'gabarito', old.correta, new.correta, v_motivo, auth.uid());
+  elsif new.versao <> old.versao then
+    insert into public.questoes_historico (questao_id, versao, acao, de, para, motivo, editor_id)
+    values (new.id, new.versao, 'conteudo', old.versao::text, new.versao::text, v_motivo, auth.uid());
+  end if;
+  if new.status is distinct from old.status then
+    insert into public.questoes_historico (questao_id, versao, acao, de, para, motivo, editor_id)
+    values (new.id, new.versao, 'status', old.status, new.status, v_motivo, auth.uid());
+  end if;
+  if new.em_revisao is distinct from old.em_revisao or new.revisao_nota is distinct from old.revisao_nota then
+    insert into public.questoes_historico (questao_id, versao, acao, de, para, motivo, editor_id)
+    values (new.id, new.versao, 'revisao', case when old.em_revisao then 'sim' else 'nao' end,
+            case when new.em_revisao then 'sim' else 'nao' end, coalesce(nullif(v_motivo, ''), left(new.revisao_nota, 1000)), auth.uid());
+  end if;
+  return null;
+end;
+$$;
+
+drop trigger if exists questoes_historico on public.questoes;
+create trigger questoes_historico
+  after update on public.questoes
+  for each row execute function public.questoes_registrar_historico();
+
+alter table public.questoes_historico enable row level security;
+revoke all on public.questoes_historico from anon, authenticated;
+grant select on public.questoes_historico to authenticated;
+drop policy if exists questoes_historico_select on public.questoes_historico;
+create policy questoes_historico_select on public.questoes_historico for select to authenticated
+  using ((select public.is_admin()));
+
+-- Corrige o gabarito: a versão sobe e a calibração do item é apagada (questoes_guard);
+-- com p_recorrigir, as respostas já gravadas passam a valer pela alternativa nova e
+-- ficam na versão nova (entram nas estatísticas do item e na estimativa dos alunos).
+create or replace function public.r2a_admin_editar_gabarito(p_id text, p_correta text, p_motivo text, p_recorrigir boolean default true)
+returns jsonb
+language plpgsql
+volatile
+security definer
+set search_path = public
+as $$
+declare
+  v_antiga text;
+  v_letra text := upper(btrim(coalesce(p_correta, '')));
+  v_versao integer;
+  v_versao_antiga integer;
+  v_n integer := 0;
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores editam o gabarito.' using errcode = '42501';
+  end if;
+  if length(btrim(coalesce(p_motivo, ''))) < 5 or length(p_motivo) > 1000 then
+    raise exception 'Explique o motivo da mudança (de 5 a 1000 caracteres).' using errcode = '22023';
+  end if;
+  select q.correta, q.versao into v_antiga, v_versao_antiga from public.questoes q where q.id = p_id for update;
+  if not found then
+    raise exception 'Questão não encontrada.' using errcode = 'P0002';
+  end if;
+  if v_letra = v_antiga then
+    raise exception 'A alternativa escolhida já é o gabarito.' using errcode = '22023';
+  end if;
+  perform set_config('r2a.motivo', btrim(p_motivo), true);
+  update public.questoes q set dados = jsonb_set(q.dados, '{correta}', to_jsonb(v_letra))
+  where q.id = p_id
+  returning q.versao into v_versao;
+  if p_recorrigir then
+    -- só as respostas da versão em vigor (mesmo conteúdo); as de uma versão de
+    -- conteúdo anterior continuam fora dos índices
+    update public.respostas_item r set correta = (r.resposta is not null and r.resposta = v_letra), versao_item = v_versao
+    where r.questao_id = p_id and (r.versao_item is null or r.versao_item = v_versao_antiga);
+    get diagnostics v_n = row_count;
+    update public.questoes_historico h set recorrigidas = v_n
+    where h.id = (select max(h2.id) from public.questoes_historico h2 where h2.questao_id = p_id and h2.acao = 'gabarito');
+  end if;
+  perform set_config('r2a.motivo', '', true);
+  return jsonb_build_object('id', p_id, 'versao', v_versao, 'de', v_antiga, 'para', v_letra, 'recorrigidas', v_n);
+end;
+$$;
+
+-- Marca ou desmarca o item para revisão (a nota vai para o histórico)
+create or replace function public.r2a_admin_marcar_revisao(p_id text, p_revisao boolean, p_nota text default '')
+returns jsonb
+language plpgsql
+volatile
+security definer
+set search_path = public
+as $$
+declare
+  v jsonb;
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores marcam itens para revisão.' using errcode = '42501';
+  end if;
+  if length(coalesce(p_nota, '')) > 1000 then
+    raise exception 'A nota tem no máximo 1000 caracteres.' using errcode = '22023';
+  end if;
+  perform set_config('r2a.motivo', btrim(coalesce(p_nota, '')), true);
+  update public.questoes q set em_revisao = coalesce(p_revisao, false),
+    revisao_nota = case when coalesce(p_revisao, false) then btrim(coalesce(p_nota, '')) else '' end
+  where q.id = p_id
+  returning jsonb_build_object('id', q.id, 'em_revisao', q.em_revisao, 'revisao_nota', q.revisao_nota) into v;
+  perform set_config('r2a.motivo', '', true);
+  return v;
+end;
+$$;
+
+-- Muda o status (retirar do banco = 'suspenso' ou 'aposentado'), com o motivo no histórico
+create or replace function public.r2a_admin_status_questao(p_id text, p_status text, p_motivo text default '')
+returns jsonb
+language plpgsql
+volatile
+security definer
+set search_path = public
+as $$
+declare
+  v jsonb;
+begin
+  if not public.is_admin() then
+    raise exception 'Somente administradores mudam o status de uma questão.' using errcode = '42501';
+  end if;
+  if p_status is null or p_status not in ('ativo', 'rascunho', 'suspenso', 'aposentado') then
+    raise exception 'Status inválido.' using errcode = '22023';
+  end if;
+  if length(coalesce(p_motivo, '')) > 1000 then
+    raise exception 'O motivo tem no máximo 1000 caracteres.' using errcode = '22023';
+  end if;
+  perform set_config('r2a.motivo', btrim(coalesce(p_motivo, '')), true);
+  update public.questoes q set status = p_status where q.id = p_id
+  returning jsonb_build_object('id', q.id, 'status', q.status) into v;
+  perform set_config('r2a.motivo', '', true);
+  return v;
+end;
+$$;
+
+revoke all on function public.questoes_registrar_historico() from public, anon, authenticated;
+revoke all on function public.r2a_admin_editar_gabarito(text, text, text, boolean) from public, anon;
+revoke all on function public.r2a_admin_marcar_revisao(text, boolean, text) from public, anon;
+revoke all on function public.r2a_admin_status_questao(text, text, text) from public, anon;
+grant execute on function public.r2a_admin_editar_gabarito(text, text, text, boolean) to authenticated;
+grant execute on function public.r2a_admin_marcar_revisao(text, boolean, text) to authenticated;
+grant execute on function public.r2a_admin_status_questao(text, text, text) to authenticated;

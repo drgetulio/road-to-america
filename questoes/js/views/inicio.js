@@ -9,7 +9,7 @@ import { comecarBloco } from "../iniciar.js";
 export function placaStep(r, st, { link = "#/aprovacao?step=" } = {}) {
   const est = r.est;
   const conf = est.confianca;
-  const falta = conf.alta ? "" : conf.perto_do_limiar ? "Desempenho no limiar: mais itens quase não mudam a classificação." : conf.faltam_itens ? "Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para alta confiança." : conf.faltam_sistemas.length ? "Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + " para alta confiança." : "";
+  const falta = conf.alta ? "" : !est.n ? "O mínimo para alta confiança é de " + conf.n_minimo + " itens, em pelo menos " + Math.ceil(est.cobertura.total * 0.8) + " sistemas." : conf.perto_do_limiar ? "Desempenho no limiar: mais itens quase não mudam a classificação." : conf.faltam_itens ? "Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para alta confiança." : conf.faltam_sistemas.length ? "Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + " para alta confiança." : "";
   return '<article class="q-placa" aria-labelledby="pl-' + r.step + '">' +
     '<div class="q-placa__topo"><span class="exit-tab"><small>EXIT</small><b>' + (r.step === "step1" ? "S1" : "CK") + "</b></span>" +
       '<h2 class="q-placa__step" id="pl-' + r.step + '">' + NOME_STEP[r.step] + "</h2>" + chipConfianca(conf) + "</div>" +

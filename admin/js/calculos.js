@@ -9,6 +9,7 @@ import { avaliarParticipante, mergeConfig, parseData, CONFIG_PADRAO } from "../.
 import { desempenhoPorArea, SIMULADO_30 } from "../../plataforma/js/simulado.js";
 import { situacaoGarantia, stepAtual, NOME_STEP, nomeArea, pct, plural, dataBR, MIN_QUESTOES_AREA } from "../../plataforma/js/acompanhamento.js";
 import { dayStart, addDays, dayKey } from "../../anki/js/util.js";
+import { nomeChave } from "../../plataforma/js/banco.js";
 
 const DIA = 86400000;
 /* Meta de retenção desejada do preset da Road to America (EXIT 04 do PDF de
@@ -147,8 +148,14 @@ const VALOR_ORDEM = {
   simulado: (r) => r.simulado_media,
   nbme: (r) => (r.nbme_prob !== null ? r.nbme_prob : r.nbme_n ? -1 + r.nbme_n / 100 : null),
   presenca: (r) => r.presenca,
-  prova: (r) => r.dias_prova
+  prova: (r) => r.dias_prova,
+  banco: (r) => estBancoAtual(r)?.p_aprovacao ?? null
 };
+/* estimativa do banco do Step em preparo (admin/js/analise.js, aplicarBanco) */
+export function estBancoAtual(r) {
+  const step = r.step === "concluido" ? "step2ck" : r.step;
+  return r.banco?.[step] || null;
+}
 export const CHAVES_ORDEM = Object.keys(VALOR_ORDEM);
 
 export function ordenarLinhas(rows, chave = "risco", dir = "desc") {
@@ -182,14 +189,17 @@ export function csvParticipantes(rows, { incluirEmail = false } = {}) {
   const cab = ["nome"].concat(incluirEmail ? ["email"] : [], [
     "situacao", "motivos", "step_atual", "turma", "garantia", "ultima_atividade", "dias_sem_estudo", "sequencia_dias",
     "revisoes_7d", "retencao_30d_pct", "revisoes_na_retencao", "simulados_n", "simulado_media_pct", "nbme_lancadas_step_atual",
-    "nbme_ultima_probabilidade", "presenca_pct", "aulas", "data_prova", "dias_ate_prova", "prontidao_exit18", "dados_de_demonstracao"
+    "nbme_ultima_probabilidade", "presenca_pct", "aulas", "data_prova", "dias_ate_prova", "prontidao_exit18",
+    "banco_prob_aprovacao_pct", "banco_confianca", "banco_itens", "dados_de_demonstracao"
   ]);
   const linhas = rows.map((r) => [r.nome].concat(incluirEmail ? [r.email] : [], [
     ROTULO_STATUS[r.status], r.motivo, r.step === "concluido" ? "concluído" : NOME_STEP[r.step], rotuloTurma(r.turma), r.garantia,
     r.ultima_atividade ? String(r.ultima_atividade).slice(0, 10) : "", r.dias_sem_estudo ?? "", r.sequencia, r.revisoes_7d,
     dec(r.retencao), r.retencao_n, r.simulado_n, dec(r.simulado_media), r.nbme_n,
     r.nbme_prob === null ? "" : String(r.nbme_prob).replace(".", ","), dec(r.presenca), r.presenca_txt, r.prova || "",
-    r.dias_prova ?? "", r.prontidao, r.sintetico ? "sim" : "nao"
+    r.dias_prova ?? "", r.prontidao,
+    estBancoAtual(r) ? dec(estBancoAtual(r).p_aprovacao) : "", estBancoAtual(r) ? (estBancoAtual(r).confianca?.alta ? "alta" : "preliminar") : "",
+    estBancoAtual(r) ? estBancoAtual(r).n : "", r.sintetico ? "sim" : "nao"
   ]));
   return "﻿" + [cab].concat(linhas).map((l) => l.map(celula).join(";")).join("\r\n") + "\r\n";
 }
@@ -447,6 +457,15 @@ export function sugestoesAcao(row, { simulados = [], config = CONFIG_PADRAO, ago
     if (out.some((s) => s.codigo === "exit18_" + r.step)) continue;
     add("plano_" + r.step, 2, "Revisar o plano até a próxima autoavaliação",
       r.detalhe + " Vale conferir no relatório as áreas mais fracas e ajustar a divisão do tempo antes da próxima CBSSA.");
+  }
+
+  /* banco de questões: probabilidade baixa com alta confiança (admin/js/analise.js) */
+  for (const r of av.riscos.filter((x) => x.codigo === "banco_probabilidade_baixa")) {
+    const est = row.banco?.[r.step];
+    const baixas = (est?.perfil?.sistema || []).filter((x) => x.classe === "mais_baixo").slice(0, 3)
+      .map((x) => nomeChave(r.step, "sistema", x.chave) || x.chave);
+    add("banco_" + r.step, 1, "Rever com o aluno o plano e a data do " + NOME_STEP[r.step],
+      r.detalhe + (baixas.length ? " Sistemas abaixo do examinando no limiar: " + baixas.join(", ") + "." : "") + " A EXIT 18 continua decidindo; o banco antecipa a conversa.");
   }
 
   if (row.nbme_nao_verificadas > 0) {

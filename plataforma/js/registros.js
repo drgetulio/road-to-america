@@ -148,6 +148,9 @@ export function validarResultadoOficial(x, agora = Date.now()) {
   if (r.escore !== null && (!Number.isInteger(r.escore) || r.escore < 1 || r.escore > 999)) e.push("Nota inválida (inteiro de 1 a 999).");
   if (!r.resultado && r.escore === null) e.push("Informe o resultado ou a nota.");
   if (!r.resultado && r.step === "step2ck") e.push("Informe Pass ou Fail para provas anteriores a 01/07/2025.");
+  /* resultado informado que a nota contradiz (desde 01/07/2025 a nota define o Pass) */
+  if (r.step === "step2ck" && Number.isInteger(r.escore) && r.data >= PADRAO_CK_DESDE && r.resultado && r.resultado !== (r.escore >= 218 ? "pass" : "fail"))
+    e.push("A nota " + r.escore + " não combina com " + (r.resultado === "pass" ? "Pass" : "Fail") + ": desde 01/07/2025 o padrão de aprovação do Step 2 CK é 218.");
   if (r.observacao.length > 1000) e.push("A observação tem no máximo 1000 caracteres.");
   return e;
 }

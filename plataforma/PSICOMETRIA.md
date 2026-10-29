@@ -79,9 +79,18 @@ Depois da recalibração (seção 10), o item usa `b_calibrado` no lugar de `-lo
    America: a resposta sem relógio tende a superestimar o desempenho de prova). O peso
    entra como potência da verossimilhança; peso 0 exclui a resposta. Com
    `pesos: { tutor: 0 }` o modo tutor sai por completo.
-3. **Em branco.** No banco, item sem resposta não entra (o aluno pulou). No simulado
-   completo e no bloco de 30 minutos, conta como erro, como na prova.
+3. **Em branco.** No modo cronometrado (bloco cronometrado do banco, simulado completo
+   e bloco de 30 minutos), item sem resposta conta como erro, como na prova: se não
+   contasse, deixar em branco os itens difíceis inflaria a estimativa. No bloco tutor do
+   banco, item sem resposta não entra (o aluno pulou, sem relógio que o forçasse).
+   Correção de 29/10/2026: até essa data, o item em branco do banco ficava fora da conta
+   também no cronometrado.
 4. **Item fora do banco ou de outro Step** não entra (`ignoradas` na saída).
+5. **Resposta a uma versão anterior do item** (o conteúdo mudou, ou o gabarito foi
+   corrigido sem recorreção) não é pontuada contra o item atual e conta em `ignoradas`.
+   O item fica como visto: uma resposta à versão nova já não seria a primeira
+   exposição. Resposta sem versão registrada entra normalmente. Correção de 29/10/2026:
+   até essa data, a resposta antiga continuava pontuada pelo gabarito antigo.
 
 ## 5. Estimativa da habilidade: EAP em grade
 
@@ -226,8 +235,15 @@ que as duas implementações dão os mesmos números (240 itens comparados, 0 di
 | Ponto-bisserial corrigida | correlação de Pearson entre `x_ij` e a proporção de acertos da pessoa j nos **outros** itens, `(S_j - x_ij) / (n_j - 1)`, só para quem respondeu pelo menos 2 itens (correção de Henrysson, 1963) |
 | Discriminação `D` | `p` no grupo superior menos `p` no inferior; grupos de 27% de cada lado pela mesma proporção nos outros itens (Kelley, 1939), desempate pelo identificador da pessoa |
 | Distratores | por alternativa: n, proporção geral, nos grupos superior e inferior, e ponto-bisserial da escolha |
-| Outfit | `(1/n) Σ_j (x_ij - P_ij)² / (P_ij (1 - P_ij))`, com `P_ij = expit(θ̂_j - b_i)` e `θ̂_j` EAP da pessoa |
+| Outfit | `(1/n) Σ_j (x_ij - P_ij)² / (P_ij (1 - P_ij))`, com `P_ij = expit(θ̂_j - b̂_i)`, `θ̂_j` EAP da pessoa e `b̂_i` a dificuldade estimada com as respostas do próprio item (`bAjuste`: máximo a posteriori com os `θ̂_j` fixos e priori N(b em uso, 0,5²)) |
 | Infit | `Σ_j (x_ij - P_ij)² / Σ_j P_ij (1 - P_ij)` |
+
+O ajuste usa `b̂_i`, e não o b de Angoff, porque o infit e o outfit medem a forma da
+curva do item, não a posição. Correção de 29/10/2026: até essa data o ajuste usava o b em
+uso; numa simulação com 320 itens que seguem o Rasch, 400 examinandos de habilidade
+conhecida (cerca de 190 respostas por item) e Angoff com erro de desvio-padrão 0,45
+logit, 38 itens bons recebiam `desajuste_rasch` antes da recalibração; com `b̂_i`, 5. O
+item com gabarito trocado continua com o alerta.
 
 Alertas automáticos (`revisar` pede revisão do item; `informativo` só avisa):
 
@@ -294,8 +310,12 @@ dadas até a data do desfecho (`montarDadosDesfechos()`) e:
 - **resultado oficial Pass/Fail** (tabela `resultados_oficiais`): regressão logística
   `P(Pass) = expit(β0 + β1 θ)` por IRLS com penalização leve (1e-6) no coeficiente
   angular. É considerada suficiente com pelo menos 10 aprovados e 10 reprovados, pela
-  regra de cerca de 10 eventos por variável (Peduzzi et al., 1996). Saem também a área
-  sob a curva ROC e o escore de Brier.
+  regra de cerca de 10 eventos por variável (Peduzzi et al., 1996), desde que o ajuste
+  convirja e não haja separação completa (todos os aprovados com θ acima de todos os
+  reprovados, ou o contrário): nesse caso a verossimilhança não tem máximo finito
+  (Albert e Anderson, 1984), o β1 cresce sem limite e a curva vira degrau, e o modelo
+  fica exploratório (`separacao: true`). Saem também a área sob a curva ROC e o escore
+  de Brier.
 - **nota oficial do Step 2 CK** e **escore NBME em standard-paced**: regressão linear
   `nota = a + b θ + erro`, suficiente com pelo menos 30 notas (critério interno).
 
@@ -363,6 +383,7 @@ de 0,08 nas outras faixas.
 
 ## 16. Referências
 
+- Albert A, Anderson JA. On the existence of maximum likelihood estimates in logistic regression models. Biometrika. 1984;71(1):1-10.
 - Angoff WH. Scales, norms, and equivalent scores. In: Thorndike RL, editor. Educational Measurement. 2nd ed. Washington: American Council on Education; 1971. p. 508-600.
 - Bock RD, Mislevy RJ. Adaptive EAP estimation of ability in a microcomputer environment. Applied Psychological Measurement. 1982;6(4):431-444.
 - Haladyna TM, Downing SM. How many options is enough for a multiple-choice test item? Educational and Psychological Measurement. 1993;53(4):999-1010.
@@ -375,3 +396,262 @@ de 0,08 nas outras faixas.
 - Abramowitz M, Stegun IA. Handbook of Mathematical Functions. Washington: National Bureau of Standards; 1964. Fórmula 7.1.26 (função de distribuição normal).
 - USMLE. Step 1 (formato e conteúdo): https://www.usmle.org/step-exams/step-1. Step 2 CK: https://www.usmle.org/step-exams/step-2-ck. Examination Day Testing: https://www.usmle.org/bulletin-information/examination-day-testing. Examination Results and Scoring: https://usmle.org/scores-transcripts/examination-results-and-scoring. Modelo de relatório de reprovação do Step 1: https://www.usmle.org/sites/default/files/2021-08/STEP1_sample_fail_report_Jan_26_2022.pdf. Consultas em 28/10/2026.
 - NBME. Orientação para interpretar a CBSSA e o CBSE: https://www.nbme.org/wp-content/uploads/2026/04/CBSSA_CBSE_Guidance.pdf (consultada por busca em 28/10/2026).
+
+## 17. Relatório do simulado completo (acréscimo de 29/10/2026)
+
+Telas em `simulado/js/tela-relatorio.js`; contas em `simulado/js/relatorio.js`, sobre as
+funções das seções 5 a 10.
+
+**Respostas usadas.** Só as do simulado: as linhas de `corrigirSessao()` (origem
+`simulado`, modo `cronometrado`, peso 1). Item em branco conta como erro, como na prova
+(a regra da seção 4 que descarta respostas em branco vale só para o modo tutor do banco).
+Cada item aparece uma vez no formulário, então a regra da primeira resposta não corta
+nada aqui.
+
+**Percentual esperado e limiar.** `bsFormulario` recebe as dificuldades dos itens do
+próprio formulário: o percentual esperado e o acerto do examinando no limiar
+(`f(0)`, média dos Angoff) referem-se a um formulário igual ao que o aluno fez.
+
+**Resultado estimado.** A palavra "Pass" ou "Fail" (no Step 2 CK, "padrão
+provavelmente atingido" ou "não atingido") só aparece quando `P(θ > 0 | respostas)`
+sai da faixa de 0,10 a 0,90, os mesmos cortes da seção 7. Dentro da faixa, o relatório
+diz "resultado indefinido, perto do limiar" e escreve a tendência em texto ("a tendência
+é Pass", quando `P >= 0,5`). Com `P = 0,55`, escrever "Pass", mesmo com o rótulo de
+estimativa preliminar ao lado, seria ler como resultado o que é quase um sorteio. O rótulo
+de confiança continua separado: "Alta confiança" exige, além de `P` fora da faixa, pelo
+menos N itens e cobertura de 80% dos sistemas. Um formulário completo tem 280 itens, bem
+acima de N = 73 a 75, e cobre todos os sistemas; nele, o rótulo depende só de `P`. Nas
+versões reduzidas do modo demonstração (40 itens), N não é atingido e o relatório fica
+preliminar, com o número de itens que faltam. No Step 2 CK, nenhuma nota de três dígitos
+aparece sem `preverEscore()` calibrado com pelo menos 30 notas reais (seção 9).
+
+**Validação do relatório por simulação.** `node simulado/tests/validacao-relatorio.mjs`
+(banco sintético de 700 itens por Step, semente 7; 1.000 examinandos por cenário com
+`θ ~ N(0; 0,8²)`, gerador com semente 20261029). Resultado de 29/10/2026:
+
+| Formulário | Itens | Erro comum no Angoff | Intervalo de 90% contém o `θ` verdadeiro | Brier | Relatórios com alta confiança | Pass/Fail trocado entre eles | Indefinidos |
+|---|---|---|---|---|---|---|---|
+| Step 1, completo | 280 | nenhum | 88,9% | 0,033 | 846 | 6 (0,7%) | 154 |
+| Step 2 CK, completo | 318 | nenhum | 88,5% | 0,037 | 857 | 9 (1,1%) | 143 |
+| Step 1, prontidão | 80 | nenhum | 89,9% | 0,064 | 701 | 8 (1,1%) | 299 |
+| Step 1, completo | 280 | itens 0,25 logit mais difíceis | 40,8% | 0,093 | 835 | 49 (5,9%) | 165 |
+| Step 1, completo | 280 | itens 0,25 logit mais fáceis | 45,2% | 0,085 | 849 | 45 (5,3%) | 151 |
+
+Quando o Angoff está certo, a probabilidade é bem calibrada e a alta confiança erra
+cerca de 1 vez em 100. Um erro comum de 0,25 logit (no item de Angoff 0,65, cerca de 6
+pontos percentuais) multiplica o erro da alta confiança por 5 a 8 e derruba a cobertura
+do intervalo para menos da metade, porque o erro desloca toda a escala e não diminui com
+mais itens. É a limitação 1 da seção 15 medida: até a recalibração com dados reais
+(seções 12 e 13), "alta confiança" quer dizer precisão da estimativa em relação ao
+padrão do banco, e não certeza sobre o resultado oficial.
+
+**Escala do limiar e perfil.** A habilidade e cada área são desenhadas numa escala de
+-3 a +3 logit, com o limiar no 0 (valores fora ficam no extremo; o número exato aparece
+no texto). O perfil usa `perfilPorArea()` (seção 8) nas dimensões do outline: sistema,
+disciplina com todos os rótulos e competência no Step 1; sistema, disciplina clínica com
+todos os rótulos e tarefa do médico no Step 2 CK (a área do painel, sem faixa oficial,
+fica de fora do relatório). A barra de cada área é o intervalo de 90%; a classe vem da
+regra da seção 8, com o mesmo critério interno de 5 itens. As cores (vermelho para mais
+baixo, cinza para igual, azul para mais alto) foram conferidas quanto à separação para
+daltonismo, e cada classe também tem ícone e texto, para que a leitura não dependa da cor.
+
+**Por onde começar.** Até 5 áreas classificadas, primeiro as "mais baixo", depois as de
+menor `P(θ_área > 0)`, mostrando só as que estão abaixo do limiar ou com `P < 0,5`.
+
+**Instantâneo e recálculo.** Ao concluir, o simulado grava em `resultado.estimativa`
+`P`, `θ`, desvio-padrão, intervalo, rótulo e base (Angoff, calibrado ou misto), usados no
+histórico. O relatório recalcula tudo ao abrir: depois de uma recalibração do admin
+(seção 12), os números mudam e passam a usar as dificuldades calibradas.
+
+**Indicador complementar.** O relatório mostra também a estimativa com todas as
+respostas do aluno no banco (seção 4) e a prontidão combinada da seção 10, em que a
+EXIT 18 decide.
+
+**Limitações específicas.** Um simulado só é um formulário: a variação de um dia para
+outro (sono, ansiedade, sorte com os temas) não entra no intervalo, que mede só a
+incerteza estatística. O recurso de parar e continuar depois, que não existe na prova,
+tira do dia o cansaço contínuo de 8 ou 9 horas; o relatório informa quantas paradas
+houve. Nos formulários fixos, parte dos itens pode já ter sido respondida no banco; o
+relatório conta esses itens (`itensJaVistos()`: respostas de outra sessão anteriores ao
+início do dia) e avisa que a repetição tende a subir o acerto, sem corrigir a estimativa,
+porque o tamanho do efeito de memória não é conhecido. Validação por simulação em `simulado/tests/relatorio.test.mjs`: examinandos
+simulados com `θ = 1,6` e `θ = -1,6` num formulário completo saem com "Pass" e "Fail" em
+alta confiança, e no limiar (`θ = 0`) o rótulo só é alto quando `P` sai da faixa de 0,10 a
+0,90.
+
+## 18. Banco de questões no espaço do aluno (acréscimo de 29/10/2026)
+
+Telas em `questoes/` (início, criar bloco, bloco em andamento, resultado, desempenho e
+painel de probabilidade); contas em `plataforma/js/banco-aluno.js`, sobre as funções das
+seções 4 a 10. Testes em `plataforma/tests/banco-aluno.test.mjs`.
+
+**Respostas usadas.** As mesmas da seção 4, de todas as origens (banco, simulado completo
+e bloco de 30 minutos): primeira resposta a cada item, cronometrado com peso 1, tutor com
+peso 0,5, item em branco como erro no cronometrado e fora da conta no tutor. O bloco do
+banco grava uma linha por item
+(`origem: "banco"`, `sessao_id` do bloco, posição, tempo e marca), inclusive os itens
+deixados em branco, para que a revisão mostre o bloco inteiro.
+
+**Blocos.** De 1 a 20 itens, como o bloco oficial, ou até 40 no modo livre (critério
+interno). Cronometrado: 90 s por item, a média do bloco oficial de 30 minutos com até 20
+itens (usmle.org, páginas do Step 1 e do Step 2 CK, consulta em 28/10/2026). Tutor: sem
+limite de prova; a resposta trava ao ser confirmada e a explicação aparece em seguida. O
+sorteio usa `sortearQuestoes()` estratificado por sistema, com os itens não vistos
+primeiro. Filtros: "não vistas" (sem nenhuma resposta), "erradas" (a tentativa mais
+recente foi errada ou ficou em branco), "marcadas" (marcada na tentativa mais recente) e
+"todas".
+
+**Painel de probabilidade.** `resumoAprovacao()` chama `estimarAluno()` e mostra
+`P(θ > 0)`, o intervalo de 90% de `θ`, o percentual esperado num formulário com todos
+os itens do Step no banco (com intervalo) e o acerto do examinando no limiar no mesmo
+formulário, o rótulo da seção 7 com cada condição e quantos itens e quais sistemas
+faltam. Quando os itens que faltam passam dos itens ainda não vistos pelo aluno, a tela
+avisa. No Step 2 CK, a frase é "probabilidade de atingir o padrão de aprovação (218) pelo
+limiar do banco", com o aviso da seção 9; a nota de três dígitos só aparece quando houver
+modelo de escore suficiente (seção 13). Com modelo de desfechos suficiente, a
+probabilidade pelos resultados oficiais aparece ao lado. A prontidão combinada da seção
+10 fica no mesmo painel: a EXIT 18 decide.
+
+### 18.1 Contribuição de cada área
+
+Pergunta respondida: quanto a probabilidade subiria se, só naquela área, o aluno tivesse
+acertado o que o examinando no limiar acerta nos mesmos itens. Para os itens `i` da área
+`A`, a resposta observada `x_i` é trocada pela resposta esperada no limiar,
+`a_i = expit(-b_i)` (o Angoff, ou o `b` calibrado), como pseudo-resposta fracionária:
+
+```
+log π_A(θ) = log priori(θ) + Σ_{i ∉ A} w_i ℓ(x_i; θ - b_i) + Σ_{i ∈ A} w_i [a_i ln expit(θ - b_i) + (1 - a_i) ln expit(b_i - θ)]
+ganho_A   = P_A(θ > 0) - P(θ > 0 | respostas)
+deficit_A = Σ_{i ∈ A} (a_i - x_i)          (acertos que faltaram para o limiar)
+```
+
+Na implementação, cada pseudo-resposta vira duas respostas pesadas (acerto com peso
+`w_i a_i` e erro com peso `w_i (1 - a_i)`), o que dá a mesma verossimilhança. Como o
+log-posterior é uma soma por item, a base é calculada uma vez na grade e cada área soma
+só a diferença entre as pseudo-respostas e as respostas observadas dos seus itens. O
+custo cai de (áreas × itens) para (itens × rótulos por item), e o resultado é o da conta
+direta com `eap()` (diferença menor que 1e-10 no teste "contribuição por área (base
+calculada uma vez)"). A diferença de custo aparece depois da recalibração, quando os `b`
+deixam de se repetir. `ganho > 0`:
+a área derruba a probabilidade; `ganho < 0`: a área a sustenta; uma área com acerto igual
+ao esperado no limiar tem ganho zero (conferido no teste). As contribuições não se somam:
+`P` não é linear em `θ` e, nas disciplinas, um item conta em cada rótulo.
+
+A tela mostra os sistemas com ganho de pelo menos 0,5 ponto percentual (critério
+interno, abaixo disso a diferença não muda a leitura), do maior para o menor, com o
+acerto do aluno, o acerto esperado no limiar e o peso do sistema na prova (ponto médio
+da faixa oficial do outline). O peso informa, mas não reordena a lista: a ordem segue o
+efeito na probabilidade estimada.
+
+Validação por simulação (teste "calibração da recomendação", semente 20261029): 300
+alunos com `θ` sorteado de N(0; 0,5²), um sistema do Step 1 sorteado como fraco
+(`θ - 1,5` nesse sistema), cada um respondendo cerca de metade de 400 itens sintéticos
+(200 em média). O sistema fraco foi o primeiro da lista em 247 dos 300 casos (82,3%) e
+um dos dois primeiros em 275 (91,7%). O teste falha abaixo de 80% no primeiro lugar. Os
+erros se concentram nos sistemas com faixa pequena no outline (desenvolvimento humano,
+de 1% a 3%), em que o aluno responde poucos itens.
+
+### 18.2 Recomendações de estudo
+
+Na ordem: (1) até 5 sistemas que mais derrubam a probabilidade; (2) a disciplina e a
+competência (no Step 2 CK, também a disciplina clínica) de maior ganho; (3) os sistemas
+do outline sem item respondido, que impedem a alta confiança; (4) quantos itens faltam
+para a contagem mínima N, lembrando que o tutor vale 0,5. Cada sistema leva à seção
+correspondente de `conteudo-step1.html`, aos flashcards em modo treino filtrados pelo
+sistema (`anki/#/estudar?sistema=...&modo=treino`) e a um bloco já filtrado com os itens
+errados (ou não vistos) daquele sistema. No Step 2 CK, os links de conteúdo e de
+flashcards levam à ciência básica do sistema correspondente do Step 1
+(`BASE_S1_DO_CK`); os itens do bloco são do Step 2 CK.
+
+### 18.3 Curva de evolução
+
+Um ponto por sessão (bloco do banco, simulado completo ou bloco de 30 minutos), na data
+em que ela terminou, com `P(θ > 0)` calculada com todas as respostas até aquela data
+(`prepararRespostas(..., { ate })`). Junto vão o acerto da própria sessão e o acerto
+esperado do examinando no limiar nos mesmos itens. A curva mostra as linhas de 10% e 90%,
+onde a estimativa passa a decidir, e tem a tabela com todos os valores.
+
+### 18.4 Limitações específicas
+
+1. A contribuição é um contrafactual do modelo, não um efeito causal: ela diz quanto a
+   estimativa mudaria, não quanto a nota real mudaria.
+2. Com poucos itens numa área, o ganho é instável; a tela mostra o número de itens ao lado,
+   e o perfil por área (seção 8) marca "poucos itens" abaixo de 5.
+3. Itens do banco feitos em casa, no modo tutor ou repetidos depois de ver a explicação
+   diferem da prova; a primeira resposta e o peso do tutor reduzem, mas não eliminam, a
+   diferença (seção 15).
+
+
+## 19. Banco de questões na área administrativa (acréscimo de 29/10/2026)
+
+Funções em `admin/js/analise.js`; telas descritas em `admin/README.md`.
+
+### 19.1 Probabilidade de aprovação de cada participante
+
+Para cada participante e cada Step com respostas, `estimarAluno` (seções 4 a 9) com os
+itens ativos do banco, os sistemas do outline e o modelo de desfechos gravado, se houver.
+O painel mostra a probabilidade, o rótulo de confiança, o θ com intervalo de 90%, o
+percentual esperado num formulário completo e o perfil por sistema; a distribuição da
+turma separa alta confiança (ponto cheio) de estimativa preliminar (anel).
+
+**Critério de risco `banco_probabilidade_baixa`** (critério interno da Road to America,
+nível alto): `P(θ > 0 | respostas) <= 0,10` **com alta confiança** (seção 7: pelo menos N
+itens efetivos e itens em 80% dos sistemas) num Step ainda não aprovado. O limite de
+0,10 é o mesmo da regra de confiança: abaixo dele a estimativa já é decisiva no sentido
+desfavorável. Estimativa preliminar nunca acende o critério. A prontidão continua decidida
+pela EXIT 18 (seção 10); quando a EXIT 18 está atendida e o banco indica o contrário com
+alta confiança, a ficha mostra a divergência e pede conversa.
+
+### 19.2 Distratores por quartil de habilidade
+
+Cada pessoa da matriz pseudonimizada recebe o θ EAP de todos os itens que respondeu no
+Step (grade de 0,05 logit, b calibrado quando houver). As pessoas são ordenadas pelo θ e
+divididas em quatro grupos de mesmo tamanho (empates desfeitos pelo identificador
+pseudonimizado); com menos de 8 pessoas não há quartis. Para cada alternativa, a tela
+mostra a proporção que a escolheu no total e em cada quartil, além da ponto-bisserial da
+escolha (seção 11). Num item que funciona, a curva da correta sobe de Q1 para Q4 e as dos
+distratores descem; um distrator que supera a correta em Q4 é destacado, e corresponde ao
+alerta `distrator_atrai_melhores` (grupo superior de 27%). O quartil usa o θ, e não a
+proporção de acertos, porque cada aluno responde itens diferentes do banco: o θ desconta a
+dificuldade dos itens que cada um viu.
+
+### 19.3 Correção de gabarito e versões
+
+Corrigir o gabarito sobe a versão do item e apaga a calibração dele. Com recorreção, as
+respostas gravadas na versão em vigor passam a valer pela alternativa nova e vão para a
+versão nova: entram de novo nos índices do item e mudam a estimativa dos alunos que o
+fizeram. As respostas de uma versão de conteúdo anterior não são recorrigidas, porque
+responderam a outro texto. Sem recorreção, as respostas ficam na versão antiga e saem dos
+índices (seção 11) e da estimativa dos alunos (seção 4, regra 5). O resultado já gravado de um simulado
+completo concluído não é refeito. Item retirado do banco (suspenso ou aposentado) sai da
+estimativa dos alunos, como um item eliminado da pontuação.
+
+### 19.4 Dados fictícios do modo demonstração
+
+`plataforma/js/respostas-demo.js` gera respostas por um modelo de Rasch com habilidades
+conhecidas. Todos os números abaixo são parâmetros escolhidos para a demonstração, sem valor
+empírico:
+
+| Parâmetro | Valor |
+|---|---|
+| θ dos participantes fictícios | `logit(acerto médio nos simulados) - logit(0,65)` |
+| θ das turmas anteriores | N(0,3; 1), número de examinandos para cerca de 45 respostas por item (de 60 a 400 por Step), até 160 itens cada, 15% no modo tutor |
+| b verdadeiro | b de Angoff + N(0; 0,45²), sorteado pelo identificador do item |
+| Distratores | pesos 0,36, 0,26, 0,21 e 0,17 em ordem sorteada por item |
+| Defeitos plantados por Step | 2,5% gabarito trocado, 3% pouco discriminativo (acerto de 0,55 em qualquer θ), 2% muito difícil (b passa a ser o maior entre b e 0,5, mais 1,8) e 2% muito fácil (o menor entre b e -0,5, menos 4), no mínimo 1 de cada |
+| Desfechos | 60% das turmas anteriores; Pass quando θ + N(0; 0,3²) > 0; só Pass/Fail, sem nota |
+
+O teste "demonstração" de `admin/tests/analise.test.mjs` confere que cada defeito acende o
+alerta esperado, que a recalibração fica mais perto do b verdadeiro do que o Angoff e que
+há pelo menos 10 aprovados e 10 reprovados por Step. Os defeitos são da simulação: a ficha
+do item avisa e diz que o item público não tem erro conhecido.
+
+### 19.5 Cobertura do blueprint
+
+Para cada linha do outline: itens ativos, proporção do banco, faixa oficial (de
+`TAXONOMIA`), situação (dentro, abaixo, acima, sem faixa), itens que um formulário completo
+pede (`ceil(lo * 280)` a `floor(hi * 280)` no Step 1; 318 no Step 2 CK) e formulários
+completos sem repetição que a linha sustenta (`floor(n / ceil(lo * tamanho))`). O total de
+formulários sem repetição é o menor entre `floor(itens / tamanho)` e os das linhas de
+faixa exigida (sistema e competência). Nas disciplinas, o item conta em cada rótulo, como
+no outline, e a faixa é alvo, não trava.

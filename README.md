@@ -6,16 +6,17 @@ Página de vendas da turma fundadora de preparação para o USMLE Step 1 e Step 
 - `verificar.html`: verificação guiada da escola no World Directory of Medical Schools (critério do USMLE e do ECFMG para escolas fora dos EUA).
 - `privacidade.html`: Política de Privacidade (LGPD), linkada nos formulários e no rodapé.
 - `anki/`: app de flashcards do Step 1 com repetição espaçada (FSRS), modo demonstração ou Supabase. Instruções em `anki/README.md`; esquema do banco em `supabase/schema.sql`.
-- `simulado/`: simulado de 30 minutos no formato do bloco oficial.
+- `simulado/`: simulado de 30 minutos no formato do bloco oficial e simulados completos do Step 1 e do Step 2 CK no formato do dia de prova, com relatório de desempenho.
 - `conteudo-step1.html`: conteúdo do Step 1 pelo Content Outline oficial, gerado por `tools/build-conteudo-step1.cjs`.
 - `admin/`: área administrativa de rendimento dos participantes.
 
 ## Área do aluno e área administrativa
 
-As quatro partes usam a mesma marca, o mesmo botão de tema (a escolha vale em todas as páginas) e links entre si. O rodapé de `index.html` leva aos flashcards, ao simulado e ao conteúdo do Step 1; a área administrativa não aparece no site e só abre para administradores.
+As partes usam a mesma marca, o mesmo botão de tema (a escolha vale em todas as páginas) e links entre si. O rodapé de `index.html` leva aos flashcards, ao simulado e ao conteúdo do Step 1; a área administrativa não aparece no site e só abre para administradores.
 
 - **Flashcards** (`anki/`): estudo com FSRS, criação e curadoria de cards e a tela **Meu progresso** (`anki/#/progresso`), onde o participante vê o checklist da garantia, a prontidão pela EXIT 18, as datas de prova, os simulados e lança as autoavaliações do NBME. É esse o "painel do aluno" citado no Termo da Garantia. Detalhes em `anki/README.md`.
-- **Simulado de 30 minutos** (`simulado/`): um bloco com 20 questões e 30 minutos para o Step 1 ou o Step 2 CK, o tamanho do bloco oficial desde maio de 2026 (usmle.org). As questões são sorteadas por área a partir de `simulado/data/`, com a tabela de valores laboratoriais na tela. Detalhes em `simulado/README.md`.
+- **Banco de questões** (`questoes/`): itens no estilo NBME do Step 1 e do Step 2 CK em blocos personalizados (sistemas, disciplinas, competências, áreas e tarefas; não vistas, erradas, marcadas; de 1 a 20 itens ou até 40 no modo livre; tutor ou cronometrado com 90 s por item), na mesma tela de bloco do simulado, com revisão, desempenho por área, curva de evolução e o painel de probabilidade de aprovação de cada Step (intervalo, rótulo de confiança, itens e sistemas que faltam, áreas que mais derrubam a probabilidade e o que estudar). Detalhes em `questoes/README.md`.
+- **Simulado de 30 minutos** (`simulado/`): um bloco com 20 questões e 30 minutos para o Step 1 ou o Step 2 CK, o tamanho do bloco oficial desde maio de 2026 (usmle.org). As questões são sorteadas por área a partir de `simulado/data/`, com a tabela de valores laboratoriais na tela. Na mesma página, `simulado/#/completos` tem os **simulados que replicam a prova** (Step 1 com 14 blocos e até 280 itens, Step 2 CK com 16 blocos e até 318, meio formulário e avaliação de prontidão), com tutorial, pausas com saldo, parar e continuar depois e relatório de desempenho com a probabilidade de aprovação e o perfil por área. Detalhes em `simulado/README.md`.
 - **Conteúdo do Step 1** (`conteudo-step1.html`): tópicos por sistema, com as faixas oficiais de questões e marcação de estudo guardada no navegador. Para editar, altere `tools/conteudo-step1-dados.txt` e rode `node tools/build-conteudo-step1.cjs`; não edite o HTML gerado.
 - **Área administrativa** (`admin/`): turma, lista de participantes, ficha individual (flashcards, simulados, NBME, presença, riscos e anotações do mentor), metas e exportação CSV. Detalhes em `admin/README.md`.
 
@@ -35,7 +36,10 @@ O passo a passo completo está em `anki/README.md` (seção "Ativar o Supabase")
 ```bash
 for d in anki plataforma simulado admin; do node --test $d/tests/*.test.mjs; done
 node admin/tests/fluxos.e2e.mjs          # fluxos da área administrativa (Playwright)
+AXE_PATH=.../axe.min.js node questoes/tests/fluxos.e2e.mjs   # banco de questões: fluxos, axe, 1440 e 390 px, claro e escuro
 node plataforma/tests/percurso.e2e.mjs   # percurso completo: flashcards, simulado, NBME e painel do admin
+AXE_CORE=.../axe.min.js node simulado/tests/completo.e2e.mjs     # simulados completos: dia de prova, relatório, axe-core em 1440 e 390 px
+node simulado/tests/validacao-relatorio.mjs   # resultado estimado do simulado: calibração por simulação, com e sem erro no Angoff
 node supabase/teste-local/03-compara-resumo.mjs   # resumo do painel: Postgres igual ao JavaScript
 node supabase/teste-local/04-compara-itens.mjs    # estatísticas de itens: Postgres igual ao JavaScript
 ```

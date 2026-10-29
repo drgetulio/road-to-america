@@ -7,8 +7,32 @@ import {
   indicadoresTurma, tendenciaSimulados, areasFracas, distribuicaoRetencao, contagemCriterios,
   prioridadeAtencao, sugestoesAcao, textoUltimaAtividade, pct, plural, RETENCAO_DESEJADA, MIN_QUESTOES_AREA
 } from "../calculos.js";
-import { barrasVerticais, linhaProporcao, barrasAcerto, tiraRetencao, barrasContagem, tabela } from "../graficos.js";
+import { barrasVerticais, linhaProporcao, barrasAcerto, tiraRetencao, barrasContagem, tabela, tiraProbabilidade } from "../graficos.js";
 import { pageHead, tile, chipStatus, seloDemo, variacao, avisoLgpd } from "./comum.js";
+import { distribuicaoProbabilidade, CODIGO_RISCO_BANCO, ROTULO_RISCO_BANCO, REGRA_CONFIANCA, PADRAO_STEP2CK, pctTxt } from "../analise.js";
+
+/* Probabilidade de aprovação pelo banco: distribuição da turma e o critério de risco */
+function painelBanco(ctx, rows, psico) {
+  const cab = '<div class="panel__head panel__head--row"><h2 class="h-sm" id="pb-t">Probabilidade de aprovação pelo banco de questões</h2><a class="link-btn" href="#/itens">Análise de itens' + icon("arrow-right") + "</a></div>";
+  if (!psico) return '<section class="panel" aria-labelledby="pb-t">' + cab + '<p class="alert alert--aviso">' + icon("warning") + "<span>O banco de questões não abriu nesta sessão" + (ctx.psicoErro ? " (" + e(ctx.psicoErro) + ")" : "") + ". O painel segue sem a probabilidade de aprovação.</span></p></section>";
+  const riscos = rows.filter((r) => r.riscos.some((x) => x.codigo === CODIGO_RISCO_BANCO));
+  const dists = ["step1", "step2ck"].map((step) => distribuicaoProbabilidade(rows, step));
+  return '<section class="panel" aria-labelledby="pb-t">' + cab +
+    '<p class="hint pb-hint">Probabilidade de o participante estar acima do limiar do banco, fixado pelo padrão de Angoff, a partir de todas as respostas no banco, nos simulados e nos blocos de 30 minutos (modo tutor com peso 0,5). "Alta confiança" só com probabilidade de até ' + pctTxt(REGRA_CONFIANCA.p_baixa) + " ou de " + pctTxt(REGRA_CONFIANCA.p_alta) + " ou mais, itens suficientes para a precisão exigida e itens em pelo menos " + pctTxt(REGRA_CONFIANCA.cobertura_min) + " dos sistemas. Não é resultado oficial; o critério principal de prontidão continua sendo a EXIT 18.</p>" +
+    '<div class="grid2 grid2--mult">' + dists.map((d) => {
+      const nome = NOME_STEP[d.step];
+      return '<figure class="mult"><figcaption class="mult__t">' + nome + "</figcaption>" +
+        '<p class="tira__resumo"><span class="is-risco"><b>' + d.alta_abaixo + "</b> baixa, alta confiança</span><span class=\"is-ok\"><b>" + d.alta_acima + "</b> alta, alta confiança</span><span><b>" + d.preliminar + "</b> preliminares</span><span><b>" + d.sem_respostas + "</b> sem respostas</span></p>" +
+        tiraProbabilidade(d, { titulo: "Probabilidade de aprovação pelo banco no " + nome + ", um ponto por participante" }) +
+        '<p class="hint">Ponto cheio: alta confiança. Anel: estimativa preliminar.' + (d.step === "step2ck" ? " No Step 2 CK, o limiar do banco representa o padrão de " + PADRAO_STEP2CK + " e foi fixado por Angoff; a nota de três dígitos só será estimada depois da calibração com notas reais." : "") + "</p>" +
+        tabela("Probabilidade de aprovação pelo banco, " + nome, ["Participante", "Probabilidade", "Confiança", "Itens"], d.pontos.map((p) => [p.nome, pctTxt(p.p), p.alta ? "alta confiança" : "preliminar" + (p.faltam ? ", faltam cerca de " + p.faltam + " itens" : ""), String(Math.round(p.n))])) +
+        "</figure>";
+    }).join("") + "</div>" +
+    '<h3 class="h-xs">' + e(ROTULO_RISCO_BANCO) + "</h3>" +
+    (riscos.length ? '<ul class="sinais">' + riscos.map((r) => '<li class="sinal sinal--alto">' + icon("warning-circle") + '<div><b><a href="#/p/' + encodeURIComponent(r.id) + '">' + e(r.nome) + "</a></b> " + seloDemo(r.sintetico) + "<p>" + e(r.riscos.filter((x) => x.codigo === CODIGO_RISCO_BANCO).map((x) => x.detalhe).join(" ")) + "</p></div></li>").join("") + "</ul>"
+      : '<p class="body">' + icon("check-circle") + " Ninguém neste critério hoje. " + (dists.some((d) => d.preliminar) ? "Quem ainda tem estimativa preliminar não entra nele, por mais baixa que seja a probabilidade: faltam itens ou cobertura de sistemas para decidir." : "") + "</p>") +
+  "</section>";
+}
 
 const ddmm = (d) => String(d.getDate()).padStart(2, "0") + "/" + String(d.getMonth() + 1).padStart(2, "0");
 
@@ -16,7 +40,7 @@ export default {
   titulo: "Turma",
   async render(ctx, el) {
     el.innerHTML = '<div class="wrap section-sm"><p class="boot__msg" role="status">Calculando os indicadores da turma...</p></div>';
-    const { rows, simulados, agora } = await ctx.dados();
+    const { rows, simulados, agora, psico } = await ctx.dados();
     const cfg = ctx.config;
     const ind = indicadoresTurma(rows, simulados, { config: cfg, agora });
     const nFict = rows.filter((r) => r.sintetico).length;
@@ -90,12 +114,14 @@ export default {
         "</section>" +
         '<section class="panel" aria-labelledby="cr-t"><div class="panel__head"><h2 class="h-sm" id="cr-t">Critérios de risco na turma</h2>' +
           '<p class="hint">Participantes em cada critério. Uma pessoa pode estar em mais de um. Os limites estão em <a href="#/metas">Metas e critérios</a>.</p></div>' +
-          barrasContagem(Object.entries(CODIGOS_RISCO).map(([k, rot]) => ({ rotulo: rot, n: crit[k] || 0, classe: "is-risco" })), { total: rows.length }) +
+          barrasContagem(Object.entries({ ...CODIGOS_RISCO, [CODIGO_RISCO_BANCO]: ROTULO_RISCO_BANCO }).map(([k, rot]) => ({ rotulo: rot, n: crit[k] || 0, classe: "is-risco" })), { total: rows.length }) +
           '<h3 class="h-xs">Situação da garantia</h3>' +
           barrasContagem(["em_dia", "verificar", "cumprida", "atrasada", "sem_presenca"].map((k) => ({ rotulo: ROTULO_SITUACAO_GARANTIA[k], n: ind.garantia[k], classe: k === "atrasada" ? "is-risco" : k === "sem_presenca" ? "is-neutro" : "" })), { total: rows.length }) +
           '<p class="hint">A garantia só é pedida ao fim do prazo de 3 anos (Termo da Garantia). "Em dia" quer dizer presença de pelo menos ' + pct(cfg.presenca_minima) + " e autoavaliações no ritmo da data de prova.</p>" +
         "</section>" +
       "</div>" +
+
+      painelBanco(ctx, rows, psico) +
 
       '<section class="panel" aria-labelledby="rv-t"><div class="panel__head"><h2 class="h-sm" id="rv-t">Revisões da turma por dia, últimos 30 dias</h2>' +
         '<p class="hint">Soma das respostas no app de flashcards. A última barra é o dia de hoje, ainda em curso. Quedas em fins de semana são esperadas; uma queda que dura dias seguidos merece olhar a lista de inativos.</p></div>' +

@@ -104,8 +104,8 @@ function montarMenu() {
   const { rota } = parseHash();
   const atual = rota === "estudar" ? "" : rota;
   const { html, n } = itensMenu({ admin: ctx.admin, pagina: "anki", rotaAtual: atual, e, icon });
-  /* com mais de dez itens o menu só cabe numa linha sem ícones */
-  ul.classList.toggle("app-links--cheio", n > 10);
+  /* com dez itens ou mais o menu só cabe numa linha sem ícones */
+  ul.classList.toggle("app-links--cheio", n > 9);
   ul.innerHTML = html;
   atualizarBadge();
 }

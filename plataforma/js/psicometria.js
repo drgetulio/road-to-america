@@ -248,7 +248,8 @@ function fmt0(x) { return String(Math.round(Number(x) * 10) / 10).replace(".", "
    Regras (PSICOMETRIA.md, seção 3):
    - só a primeira resposta de cada item conta (a repetição mede memória do item);
    - modo cronometrado peso 1; tutor peso pesos.tutor (0,5 por padrão; 0 exclui);
-   - origem "banco" sem resposta é ignorada; em simulado e bloco_30, em branco é erro;
+   - em branco: no banco em modo tutor, ignorada; no cronometrado (banco, simulado e
+     bloco_30), erro, como na prova;
    - item fora do banco ou de outro Step é ignorado. */
 export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS_MODO, usarCalibrado = true, desde = null, ate = null } = {}) {
   const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
@@ -266,8 +267,15 @@ export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS
     if (dIni !== null && t !== null && t < dIni) continue;
     if (dFim !== null && t !== null && t > dFim) continue;
     if (vistos.has(r.questao_id)) continue;
+    /* resposta a uma versão anterior do item (conteúdo mudou, ou gabarito corrigido
+       sem recorreção): não é pontuada contra o item atual, e o item fica visto,
+       porque uma nova resposta já não seria a primeira exposição */
+    if (Number.isInteger(r.versao_item) && Number.isInteger(q.versao) && r.versao_item !== q.versao) { vistos.add(r.questao_id); ignoradas++; continue; }
     const origem = r.origem || "banco";
-    if ((r.resposta === null || r.resposta === undefined || r.resposta === "") && origem === "banco") continue;
+    /* em branco: no bloco tutor do banco o aluno pulou e o item não entra; no
+       cronometrado (banco, simulado, bloco de 30 minutos) conta como erro, como na
+       prova, para que deixar os itens difíceis sem resposta não infle a estimativa */
+    if ((r.resposta === null || r.resposta === undefined || r.resposta === "") && origem === "banco" && r.modo === "tutor") continue;
     vistos.add(r.questao_id);
     const w = r.modo === "tutor" ? Number(pesos.tutor ?? 0.5) : Number(pesos.cronometrado ?? 1);
     if (!(w > 0)) continue;
@@ -485,11 +493,17 @@ export function analisarItens(respostas, itens, { limiares = LIMIARES_ITEM, usar
       pbis: correlacao(validos.map((r) => (r.resposta === l ? 1 : 0)), validos.map((r) => r.resto))
     }));
     const em_branco = rs.filter((r) => !r.resposta).length;
-    /* ajuste ao Rasch */
+    /* ajuste ao Rasch. O infit e o outfit medem a forma da curva (o item separa
+       como o modelo prevê?), não a posição: por isso usam a dificuldade estimada
+       com as próprias respostas do item (b_ajuste, MAP com os θ fixos e priori
+       N(b em uso, tau²), a mesma da recalibração). Com o b de Angoff, um item bem
+       construído cujo Angoff errou por meio logit pareceria desajustado. */
     const b = bDoItem(q, { usarCalibrado });
+    const thItem = rs.map((r) => th.get(r.pessoa) ?? 0);
+    const bAj = bAjuste(thItem, rs.map((r) => r.x), b);
     let somaZ2 = 0, somaR2 = 0, somaW = 0;
-    for (const r of rs) {
-      const P = expit((th.get(r.pessoa) ?? 0) - b);
+    for (const [k, r] of rs.entries()) {
+      const P = expit(thItem[k] - bAj);
       const W = P * (1 - P);
       const res = r.x - P;
       somaZ2 += (res * res) / W; somaR2 += res * res; somaW += W;
@@ -513,12 +527,28 @@ export function analisarItens(respostas, itens, { limiares = LIMIARES_ITEM, usar
       const naoFunc = opcoes.filter((o) => !o.correta && o.prop !== null && o.prop < L.distrator_funcional && (q.alternativas || []).some((a) => a.letra === o.letra));
       if (naoFunc.length) add("distrator_nao_funcional", "informativo", "Distrator escolhido por menos de " + Math.round(L.distrator_funcional * 100) + "%: " + naoFunc.map((o) => o.letra).join(", ") + ".");
     } else add("amostra_pequena", "informativo", "Menos de " + L.n_min + " respostas: os índices ainda oscilam muito.");
-    saida.push({ questao_id: id, step: q.step || null, n, acertos, p, em_branco, pbis, d, n_superior: superior.length, n_inferior: inferior.length, opcoes, b, infit, outfit, alertas, confiavel, revisar: alertas.some((a) => a.nivel === "revisar") });
+    saida.push({ questao_id: id, step: q.step || null, n, acertos, p, em_branco, pbis, d, n_superior: superior.length, n_inferior: inferior.length, opcoes, b, b_ajuste: bAj, infit, outfit, alertas, confiavel, revisar: alertas.some((a) => a.nivel === "revisar") });
   }
   saida.sort((a, b) => (a.questao_id < b.questao_id ? -1 : 1));
   const por_codigo = {};
   for (const it of saida) for (const a of it.alertas) por_codigo[a.codigo] = (por_codigo[a.codigo] || 0) + 1;
   return { itens: saida, resumo: { itens: saida.length, pessoas: porPessoa.size, respostas: lista.length, a_revisar: saida.filter((i) => i.revisar).length, por_codigo } };
+}
+
+/* Dificuldade do item para o cálculo do ajuste: máximo a posteriori de b com os θ
+   das pessoas fixos e priori N(b0, tau²) (tau da recalibração), por Newton. A
+   priori impede b infinito quando todos acertam ou todos erram. */
+export function bAjuste(thetas, xs, b0, { tau = RECALIBRACAO_PADRAO.tau } = {}) {
+  const t2 = tau * tau;
+  let b = b0;
+  for (let k = 0; k < 50; k++) {
+    let g = -(b - b0) / t2, h = 1 / t2;
+    for (let j = 0; j < xs.length; j++) { const P = expit(thetas[j] - b); g += P - xs[j]; h += P * (1 - P); }
+    const d = clamp(g / h, 1);
+    b += d;
+    if (Math.abs(d) < 1e-8) break;
+  }
+  return b;
 }
 
 /* Correlação de Pearson; null quando uma das variáveis é constante */
@@ -688,10 +718,22 @@ export function ajustarDesfechos(registros, { min_por_classe = DESFECHOS_PADRAO.
   const m = regressaoLogistica(ok.map((r) => [r.theta]), y, { l2 });
   const prev = ok.map((r) => expit(m.beta[0] + m.beta[1] * r.theta));
   const brier = prev.reduce((s, p, i) => s + (p - y[i]) ** 2, 0) / prev.length;
+  /* separação completa: um θ separa todos os aprovados de todos os reprovados. A
+     verossimilhança não tem máximo finito (Albert e Anderson, 1984, Biometrika
+     71:1), o coeficiente cresce sem limite e a curva vira degrau; o modelo fica
+     exploratório até haver sobreposição. */
+  const tMinPass = Math.min(...ok.filter((r) => r.resultado === "pass").map((r) => r.theta));
+  const tMaxFail = Math.max(...ok.filter((r) => r.resultado === "fail").map((r) => r.theta));
+  const tMaxPass = Math.max(...ok.filter((r) => r.resultado === "pass").map((r) => r.theta));
+  const tMinFail = Math.min(...ok.filter((r) => r.resultado === "fail").map((r) => r.theta));
+  const separacao = tMinPass > tMaxFail || tMaxPass < tMinFail;
+  const suficiente = base.suficiente && !separacao && !!m.convergiu;
   return {
-    ...base, beta0: m.beta[0], beta1: m.beta[1], ep0: m.ep[0], ep1: m.ep[1], convergiu: m.convergiu,
+    ...base, suficiente, separacao, beta0: m.beta[0], beta1: m.beta[1], ep0: m.ep[0], ep1: m.ep[1], convergiu: m.convergiu,
     auc: auc(prev, y), brier,
-    aviso: base.suficiente ? "" : "Modelo com poucos desfechos: use só como exploração até ter pelo menos " + min_por_classe + " aprovados e " + min_por_classe + " reprovados."
+    aviso: separacao ? "Separação completa: nenhum aprovado tem θ abaixo de um reprovado (ou o contrário), e os coeficientes não ficam determinados. Use só como exploração até haver sobreposição."
+      : !m.convergiu ? "O ajuste não convergiu. Use só como exploração."
+      : base.suficiente ? "" : "Modelo com poucos desfechos: use só como exploração até ter pelo menos " + min_por_classe + " aprovados e " + min_por_classe + " reprovados."
   };
 }
 /* P(aprovação) pelo modelo de desfechos, integrando a incerteza de theta

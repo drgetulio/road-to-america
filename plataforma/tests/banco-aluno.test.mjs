@@ -307,3 +307,48 @@ test("chaves das dimensões seguem o outline e funcionam com os 80 itens públic
   assert.equal(r.est.n, 20);
   assert.equal(r.itens_no_banco, 40);
 });
+
+test("revisão independente: linha repetida (reenvio ou cópia pendente) conta uma vez no histórico de blocos", () => {
+  const ids = banco.steps.step1.slice(0, 3).map((q) => q.id);
+  const l = ids.map((id, i) => resp(id, "A", i === 0, { sessao_id: "dup", posicao: i }));
+  const b = resumoBlocos(l.concat(l.map((x) => ({ ...x }))), banco.porId);
+  assert.equal(b.length, 1);
+  assert.equal(b[0].n, 3);
+  assert.equal(b[0].acertos, 1);
+});
+
+test("revisão independente: em branco no bloco cronometrado é erro (pular itens não infla a probabilidade); no tutor sai", () => {
+  const itens = banco.steps.step1.slice(0, 60);
+  const t = (i) => new Date(Date.UTC(2026, 9, 1, 0, i)).toISOString();
+  const random = rng(31);
+  const certo = itens.map(() => random() < 0.55);
+  const respondeu = itens.map((q, i) => resp(q.id, certo[i] ? q.correta : "Z", certo[i], { respondida_em: t(i) }));
+  const pulou = itens.map((q, i) => resp(q.id, certo[i] ? q.correta : null, certo[i], { respondida_em: t(i) }));
+  const pR = eap(prepararRespostas(respondeu, banco.porId, { step: "step1" }).usadas).p_aprovacao;
+  const pP = eap(prepararRespostas(pulou, banco.porId, { step: "step1" }).usadas).p_aprovacao;
+  assert.ok(Math.abs(pR - pP) < 1e-12, "deixar em branco no cronometrado vale o mesmo que errar");
+  const tutor = pulou.map((r) => ({ ...r, modo: "tutor" }));
+  const u = prepararRespostas(tutor, banco.porId, { step: "step1" }).usadas;
+  assert.equal(u.length, certo.filter(Boolean).length, "no tutor, o item em branco fica fora");
+});
+
+test("revisão independente: contribuição por área (base calculada uma vez) igual à conta direta com eap", () => {
+  const random = rng(77);
+  const itens = banco.steps.step1.slice(0, 150).map((q, i) => ({ ...q, b_calibrado: bDoItem(q) + 0.3 * normalAleatoria(random), _i: i }));
+  const porId = new Map(itens.map((q) => [q.id, q]));
+  const l = itens.map((q, i) => { const ac = random() < expit(-0.2 - q.b_calibrado); return resp(q.id, ac ? q.correta : "Z", ac, { modo: i % 4 ? "cronometrado" : "tutor", respondida_em: new Date(Date.UTC(2026, 9, 1, 0, i)).toISOString() }); });
+  const { usadas } = prepararRespostas(l, porId, { step: "step1" });
+  for (const dim of ["sistema", "disciplinas", "competencia"]) {
+    const base = eap(usadas).p_aprovacao;
+    for (const c of contribuicaoPorArea(usadas, dim, { step: "step1" })) {
+      const alt = [];
+      for (const u of usadas) {
+        const v = u.item[dim];
+        if (!(Array.isArray(v) ? v : [v]).includes(c.chave)) { alt.push(u); continue; }
+        const a = expit(-u.b);
+        alt.push({ b: u.b, x: 1, w: u.w * a }, { b: u.b, x: 0, w: u.w * (1 - a) });
+      }
+      assert.ok(Math.abs(c.ganho - (eap(alt).p_aprovacao - base)) < 1e-10, dim + " " + c.chave);
+    }
+  }
+});

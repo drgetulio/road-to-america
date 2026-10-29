@@ -762,3 +762,4 @@ select.input { appearance: none; padding-right: 40px; cursor: pointer;
 .prog-lgpd a { color: var(--ink-2); }
 .mat .is-pouco dt, .mat .is-pouco dd b { color: var(--ink-3); }
 .mat .is-pouco .mat__bar span { background: var(--ink-3); opacity: 0.45; }
+.prog-banco__p { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1; }

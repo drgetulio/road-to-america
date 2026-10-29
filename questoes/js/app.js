@@ -3,7 +3,13 @@
    Rotas: #/ (início), #/criar, #/bloco (bloco em andamento), #/blocos,
    #/resultado/<id>, #/desempenho, #/aprovacao.
    A tela do bloco é a do simulado (simulado/js/interface-bloco.js); a lógica do
-   banco no espaço do aluno está em plataforma/js/banco-aluno.js. */
+   banco no espaço do aluno está em plataforma/js/banco-aluno.js.
+   Ícones usados (lidos por tools/build-icons.py --app questoes --extra ..., ver o README):
+    ph-arrow-counter-clockwise ph-arrow-down ph-arrow-right ph-arrow-up ph-book-open ph-caret-right
+    ph-chalkboard-teacher ph-chart-line-up ph-check ph-check-circle ph-clock ph-equals ph-flag ph-gauge
+    ph-hourglass-medium ph-house-line ph-info ph-list-numbers ph-minus-circle ph-note-pencil ph-path
+    ph-play ph-plus-circle ph-seal-check ph-target ph-timer ph-warning ph-x-circle ph-signpost ph-cards
+    ph-list-checks ph-magnifying-glass ph-chart-bar ph-lightbulb ph-gear-six ph-users-three */
 import config from "../../anki/config.js";
 import { LocalStore } from "../../anki/js/store-local.js";
 import { SupabaseStore } from "../../anki/js/store-supabase.js";
@@ -11,8 +17,9 @@ import { isAdmin } from "../../anki/js/permissions.js";
 import { itensMenu } from "../../anki/js/menu.js";
 import { $, $$, e, icon, toast } from "../../anki/js/ui.js";
 import { carregarBanco } from "../../plataforma/js/banco.js";
-import { historicoItens } from "../../plataforma/js/banco-aluno.js";
-import { lerAndamento, lerPendentes, trocarPendentes, lerPrefs, gravarPrefs } from "./local.js";
+import { historicoItens, paraRespostasBanco } from "../../plataforma/js/banco-aluno.js";
+import { restaurarSessao, expirou, encerrar } from "../../simulado/js/sessao.js";
+import { lerAndamento, apagarAndamento, guardarPendentes, lerPendentes, trocarPendentes, lerPrefs, gravarPrefs } from "./local.js";
 
 import inicio from "./views/inicio.js";
 import criar from "./views/criar.js";
@@ -52,13 +59,36 @@ const ctx = {
     if (!s || s.encerrada || s.dono !== this.dono) return null;
     return s;
   },
+  /* Bloco cujo prazo venceu com a página fechada ou em outra tela (cronometrado: o
+     relógio continua, como na prova; tutor: 24 h). Sem isso ele ficaria "em
+     andamento" para sempre e impediria começar outro. Encerra pelo tempo, grava as
+     respostas (ou guarda no navegador, se a rede falhar) e devolve a sessão. */
+  async fecharVencido() {
+    const bruto = this.andamento();
+    if (!bruto) return null;
+    const s = restaurarSessao(bruto);
+    if (!s || !expirou(s)) return null;
+    if (s.ids.some((id) => !this.banco?.porId.get(id))) return null; /* a tela do bloco trata */
+    encerrar(s, Date.now(), "tempo");
+    const lista = paraRespostasBanco(s, this.banco.porId);
+    try { await this.store.saveRespostas(lista); } catch (err) { console.error(err); guardarPendentes(this.dono, lista); }
+    apagarAndamento();
+    try { await this.recarregarRespostas(); } catch { /* segue com o que tem */ }
+    return s;
+  },
   async enviarPendentes() {
     const pend = lerPendentes(this.dono);
     if (!pend.length) return 0;
+    /* A gravação pode ter chegado ao servidor mesmo quando a resposta da rede falhou
+       (tempo esgotado depois do commit). A tabela não tem chave única por bloco, então
+       um bloco cujo sessao_id já está na conta não é reenviado: duplicaria o histórico. */
+    const naConta = new Set(this.respostas.map((r) => r.sessao_id).filter(Boolean));
     const resta = [];
     let n = 0;
     for (const lista of pend) {
-      try { await this.store.saveRespostas(lista); n++; } catch { resta.push(lista); }
+      const sid = lista[0]?.sessao_id;
+      if (sid && naConta.has(sid)) continue;
+      try { await this.store.saveRespostas(lista); n++; if (sid) naConta.add(sid); } catch { resta.push(lista); }
     }
     trocarPendentes(this.dono, resta);
     return n;
@@ -81,7 +111,7 @@ function montarMenu() {
   $(".nav__toggle").hidden = !ctx.user;
   $(".app-menu").hidden = !ctx.user;
   const { html, n } = itensMenu({ admin: ctx.admin, pagina: "questoes", e, icon });
-  ul.classList.toggle("app-links--cheio", n > 10);
+  ul.classList.toggle("app-links--cheio", n > 9);
   ul.innerHTML = html;
 }
 
@@ -91,12 +121,19 @@ async function render() {
   if (viewAtual?.destroy) viewAtual.destroy();
   viewAtual = null;
   fecharMenu();
+  montarMenu();
   const modal = $("[data-modal]");
   if (modal?.open) modal.close();
   const view = ROTAS[rota] || inicio;
   viewAtual = view;
   document.title = (view.titulo ? view.titulo + " | " : "") + "Banco de questões | Road to America";
   try {
+    if (view !== bloco) {
+      const venc = await ctx.fecharVencido();
+      if (venc) toast(venc.modo === "tutor"
+        ? "O bloco tutor que estava aberto passou de 24 horas e foi encerrado. As respostas estão em Meus blocos."
+        : "O tempo do bloco cronometrado acabou enquanto você estava fora dele. Ele foi encerrado como na prova, e os itens sem resposta contam como erro. O resultado está em Meus blocos.", "aviso", 9000);
+    }
     await view.render(ctx, alvo, { sub, params });
   } catch (err) {
     console.error(err);
@@ -183,7 +220,6 @@ async function boot() {
     return;
   }
   bootEl.remove();
-  montarMenu();
   window.addEventListener("hashchange", render);
   if (parseHash().rota === "bloco" && !ctx.andamento()) location.replace("#/");
   render();

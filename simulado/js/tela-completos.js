@@ -5,7 +5,7 @@ import { TIPOS_FORMULARIO, FORMULARIOS_FIXOS, TEMPOS_OFICIAIS, dimensionar, mont
 import { prontidaoCombinada } from "../../plataforma/js/psicometria.js";
 import { prontidao } from "../../plataforma/js/desempenho.js";
 import { criarDia } from "./dia-prova.js";
-import { estimativaGeral, linhaHistorico, NOMES_TIPO, textoRegraConfianca } from "./relatorio.js";
+import { estimativaGeral, linhaHistorico, NOMES_TIPO, textoRegraConfianca, leituraConfianca } from "./relatorio.js";
 import { pct, prob, duracao, plural } from "./formato.js";
 import { lerPrefs, gravarPrefs } from "./armazenamento.js";
 import { $, $$, e, icon, dialogo, dataHora, toast } from "./dom.js";
@@ -62,12 +62,11 @@ async function indicador(ctx, el, banco, step) {
         '<p class="fine">' + e(pr.regra) + "</p></div>";
       return;
     }
-    const faltam = est.confianca.faltam_itens ?? est.confianca.faltam_itens_minimo;
     box.innerHTML =
       '<div class="cartao indicador">' +
         '<div class="indicador__topo"><h3 class="h-sm">Probabilidade de aprovação pelo banco</h3>' + seloConfianca(est.confianca.alta) + "</div>" +
         '<p class="indicador__p"><b>' + prob(est.p_aprovacao) + "</b><span>" + (step === "step2ck" ? "de atingir o padrão de aprovação do banco (que representa o 218)" : "de estar acima do limiar de aprovação") + ", com " + plural(est.n, "item respondido", "itens respondidos") + " do " + NOME_STEP[step] + ".</span></p>" +
-        "<p>" + e(est.confianca.texto) + (!est.confianca.alta && faltam ? " Faltam cerca de " + plural(faltam, "item", "itens") + (est.confianca.faltam_sistemas?.length ? " e itens em " + plural(est.confianca.faltam_sistemas.length, "sistema", "sistemas") + " sem resposta" : "") + "." : "") + "</p>" +
+        "<p>" + e(leituraConfianca(est)) + (!est.confianca.alta && est.confianca.faltam_sistemas?.length ? " Há " + plural(est.confianca.faltam_sistemas.length, "sistema", "sistemas") + " do outline sem itens respondidos." : "") + "</p>" +
         '<p class="fine">' + e(textoRegraConfianca(est)) + "</p>" +
         '<p class="fine">' + est.avisos.map(e).join(" ") + "</p>" +
         '<div class="aviso-conta' + (pr.status === "pronto" ? " aviso-conta--ok" : "") + '">' + icon("flag-banner") + "<p><strong>Prontidão (EXIT 18).</strong> " + e(pr.mensagem) + "</p></div>" +

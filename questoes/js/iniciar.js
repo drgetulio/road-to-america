@@ -14,6 +14,7 @@ async function notasDe(ctx, ids) {
 
 /* pedido: { step, selecao, situacao, n, modo, livre } */
 export async function comecarBloco(ctx, pedido) {
+  await ctx.fecharVencido?.();
   if (ctx.andamento()) throw new Error("Há um bloco em andamento. Termine ou encerre esse bloco antes de começar outro.");
   const pool = filtrarPool(ctx.banco, { step: pedido.step, selecao: pedido.selecao, situacao: pedido.situacao, historico: ctx.historico });
   const nPedido = Math.min(Number(pedido.n) || 0, limiteItens(pedido.livre));
@@ -34,6 +35,7 @@ export async function comecarBloco(ctx, pedido) {
 
 /* Bloco com itens escolhidos (por exemplo, as erradas de um bloco) */
 export async function comecarComIds(ctx, { step, ids, modo = "tutor" }) {
+  await ctx.fecharVencido?.();
   if (ctx.andamento()) throw new Error("Há um bloco em andamento. Termine ou encerre esse bloco antes de começar outro.");
   const itens = ids.map((id) => ctx.banco.porId.get(id)).filter(Boolean).slice(0, 40);
   if (!itens.length) throw new Error("Nenhum desses itens está no banco agora.");

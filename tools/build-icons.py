@@ -4,6 +4,9 @@ Uso: python3 tools/build-icons.py <caminho para node_modules/@phosphor-icons/web
 Requer: pip install fonttools brotli
 Lê os nomes ph-* usados nos HTML e JS e grava assets/icons/ com CSS e woff2 mínimos.
 Com --app anki, lê anki/ (HTML e js/) e grava o subconjunto próprio em anki/icons/.
+Com --extra a.js,b.js, lê também esses arquivos (caminhos a partir da raiz). O banco de
+questões usa a tela de bloco do simulado e o menu do app de flashcards:
+  python3 tools/build-icons.py <pacote> --app questoes --extra simulado/js/interface-bloco.js,simulado/js/dom.js,anki/js/ui.js,anki/js/menu.js
 """
 import pathlib
 import re
@@ -20,6 +23,8 @@ if APP:
 else:
     OUT = ROOT / "assets" / "icons"
     FONTES = list(ROOT.glob("*.html")) + list((ROOT / "assets" / "js").glob("*.js"))
+if "--extra" in sys.argv:
+    FONTES += [ROOT / x for x in sys.argv[sys.argv.index("--extra") + 1].split(",") if x]
 OUT.mkdir(parents=True, exist_ok=True)
 
 used = set()

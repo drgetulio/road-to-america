@@ -12,7 +12,7 @@ import { restaurarSessao, irPara, responder, alternarMarca, alternarRiscada, def
 import { relogio } from "../../../simulado/js/resultado.js";
 import { confirmarResposta, travada, paraRespostasBanco, ROTULO_MODO } from "../../../plataforma/js/banco-aluno.js";
 import { $, e, icon, toast } from "../../../anki/js/ui.js";
-import { lerAndamento, gravarAndamento, apagarAndamento, guardarPendentes } from "../local.js";
+import { lerAndamento, gravarAndamento, apagarAndamento, guardarPendentes, lerPendentes } from "../local.js";
 import { htmlExplicacao, reportarItem } from "../explicacao.js";
 import { NOME_STEP } from "../comum.js";
 
@@ -33,6 +33,20 @@ export default {
     const salvar = () => { gravarAndamento(s); };
 
     async function encerrarBloco(motivo) {
+      /* o mesmo bloco aberto em outra aba (ou encerrado pelo prazo em outra tela) já foi
+         gravado: não grava de novo */
+      const guardado = lerAndamento();
+      let jaGravado = !!guardado && (guardado.id !== s.id || !!guardado.encerrada);
+      if (!guardado) {
+        /* sem cópia no navegador: ou outra aba já encerrou e apagou, ou o navegador não
+           guarda nada; só a presença das linhas na conta (ou na fila) separa os dois casos */
+        try { await ctx.recarregarRespostas(); } catch { /* segue com o que tem */ }
+        jaGravado = ctx.respostas.some((r) => r.sessao_id === s.id) || lerPendentes(ctx.dono).some((l) => l?.[0]?.sessao_id === s.id);
+      }
+      if (jaGravado) {
+        ctx.go("#/resultado/" + encodeURIComponent(s.id));
+        return;
+      }
       encerrar(s, Date.now(), motivo);
       salvar();
       const lista = paraRespostasBanco(s, ctx.banco.porId);
@@ -119,8 +133,8 @@ export default {
       questaoExtra: extra,
       textoNotas: "As anotações ficam na sua conta, uma por questão, e voltam sempre que a questão aparecer.",
       textoFim: () => tutor
-        ? "<p>As respostas confirmadas e as escolhidas sem confirmar entram no seu desempenho. A explicação de todas as questões fica na revisão do bloco.</p>"
-        : "<p>Depois de encerrado, o bloco não reabre, como na prova. A revisão com as explicações vem em seguida.</p>",
+        ? "<p>As respostas confirmadas e as escolhidas sem confirmar entram no seu desempenho; as questões em branco ficam fora da estimativa. A explicação de todas as questões fica na revisão do bloco.</p>"
+        : "<p>Depois de encerrado, o bloco não reabre, como na prova, e as questões em branco contam como erro. A revisão com as explicações vem em seguida.</p>",
       rotuloSair: tutor ? "Sair para o início (o bloco fica guardado)" : "Sair para o início (o relógio continua)",
       sair: () => ctx.go("#/"),
       encerrar: encerrarBloco,

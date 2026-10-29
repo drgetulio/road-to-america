@@ -61,6 +61,8 @@ export async function calibrarDesfechos({ store, step } = {}) {
     escore_oficial: step === "step2ck" ? ajustarEscore(dadosOficiais.filter((d) => d.escore !== null)) : null,
     escore_nbme: ajustarEscore(dadosNbme),
     n: { resultados_oficiais: dadosOficiais.length, nbme: dadosNbme.length, alunos: usuarios.length },
+    /* pontos usados no ajuste (theta na data do desfecho), para os gráficos do admin */
+    dados: { oficiais: dadosOficiais, nbme: dadosNbme },
     demonstracao: store.mode === "local"
   };
 }

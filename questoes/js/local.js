@@ -24,7 +24,10 @@ export const apagarAndamento = () => apagar(CHAVE_ANDAMENTO);
 /* pendentes: { [dono]: [[respostas do bloco], ...] } */
 export function guardarPendentes(dono, lista) {
   const tudo = ler(CHAVE_PENDENTES, {});
-  (tudo[dono] ||= []).push(lista);
+  const sid = lista?.[0]?.sessao_id;
+  const fila = (tudo[dono] ||= []);
+  if (sid && fila.some((l) => l?.[0]?.sessao_id === sid)) return true; /* o mesmo bloco não entra duas vezes */
+  fila.push(lista);
   return gravar(CHAVE_PENDENTES, tudo);
 }
 export function lerPendentes(dono) { return ler(CHAVE_PENDENTES, {})[dono] || []; }

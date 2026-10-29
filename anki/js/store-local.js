@@ -17,8 +17,9 @@
      listParticipantes(), getMeuResumo({ agora }), listResumoParticipantes({ agora, incluirSinteticos }),
      getAtividadeDiaria(userId, { dias, agora })
    Banco de questões (plataforma/INTERFACE.md, seção "Banco de questões"):
-     listQuestoes({ step, incluirInativas }), setStatusQuestao(id, status), salvarCalibracao(itens),
-     setAtivo(userId, ativo)
+     listQuestoes({ step, incluirInativas }), setStatusQuestao(id, status, { motivo }), salvarCalibracao(itens),
+     setAtivo(userId, ativo), editarGabarito(id, { correta, motivo, recorrigir }),
+     marcarRevisaoQuestao(id, { revisao, nota }), listHistoricoQuestao(id)
      saveRespostas(lista), saveResposta(r), listRespostas({ step, origem, desde, userId, todos })
      criarSimuladoCompleto({ formulario, sessao }), salvarProgressoSimulado(id, sessao),
      concluirSimuladoCompleto(id, { sessao, resultado }), abandonarSimuladoCompleto(id),
@@ -40,7 +41,7 @@ import { resumirParticipante, validarNbme, normalizarNbme, parsePresencaCsv, mer
 import { gerarCoorte, ehSintetico } from "../../plataforma/js/coorte-demo.js";
 import { lerBancoDemo, normalizarItem } from "../../plataforma/js/banco.js";
 import { analisarItens } from "../../plataforma/js/psicometria.js";
-import { gerarRespostasDemo } from "../../plataforma/js/respostas-demo.js";
+import { gerarRespostasDemo, gerarDesfechosDemo, gerarReportesDemo, modeloVerdadeiro } from "../../plataforma/js/respostas-demo.js";
 import {
   normalizarResposta, validarResposta, validarFormularioGravado, validarSessao, validarProgresso,
   validarAnotacaoItem, validarReporte, validarResultadoOficial, normalizarResultadoOficial, validarCalibracao,
@@ -65,7 +66,8 @@ function vazio() {
     versao: 1, papel: "participante", cards: {}, historico: [], estados: {}, revlog: {}, sinalizacoes: [], configuracoes: {}, seeds: {},
     simulados: [], nbme: [], presenca: {}, planos: {}, plataforma: {}, anotacoes: {},
     respostas: [], simuladosCompletos: [], anotacoesItem: {}, reportes: [], resultadosOficiais: [],
-    calibracao: {}, statusQuestoes: {}, ativos: {}, modelos: {}
+    calibracao: {}, statusQuestoes: {}, ativos: {}, modelos: {},
+    questoesEdicoes: {}, historicoQuestoes: [], reportesDemo: {}
   };
 }
 function edicoesVazias() {
@@ -615,8 +617,19 @@ export class LocalStore {
     }
     return this._questoesPromessa;
   }
-  async _gabarito() {
+  /* Itens com as correções de gabarito do admin aplicadas (o arquivo original não muda;
+     a correção sobe a versão do item, como o gatilho questoes_guard do banco) */
+  async _questoesVigentes() {
     const brutas = await this._questoesBrutas();
+    const ed = this.db.questoesEdicoes || {};
+    const chave = JSON.stringify(ed);
+    if (this._vigentesCache?.fonte === brutas && this._vigentesCache.chave === chave) return this._vigentesCache.itens;
+    const itens = brutas.map((q) => { const x = ed[q.id]; return x && x.correta ? { ...q, correta: x.correta, versao: x.versao } : q; });
+    this._vigentesCache = { fonte: brutas, chave, itens };
+    return itens;
+  }
+  async _gabarito() {
+    const brutas = await this._questoesVigentes();
     if (this._gabaritoCache?.fonte === brutas) return this._gabaritoCache.mapa;
     const mapa = new Map();
     for (const b of brutas) { const q = normalizarItem(b); if (q.id) mapa.set(q.id, q); }
@@ -629,22 +642,88 @@ export class LocalStore {
     const admin = isAdmin(u);
     if (!admin && !this._ativo(u.id)) return [];
     const out = [];
-    for (const q of await this._questoesBrutas()) {
+    const ed = this.db.questoesEdicoes || {};
+    for (const q of await this._questoesVigentes()) {
       const norm = normalizarItem(q);
       if (step && norm.step !== step) continue;
       const status = this.db.statusQuestoes[q.id] || q.status || "ativo";
       if (status !== "ativo" && !(admin && incluirInativas)) continue;
       const cal = this.db.calibracao[q.id];
-      out.push({ ...structuredClone(q), status, ...(cal ? { b_calibrado: cal.b, ep_calibrado: cal.ep, n_calibracao: cal.n, calibrado_em: cal.em } : {}) });
+      const rev = admin ? { em_revisao: !!ed[q.id]?.em_revisao, revisao_nota: ed[q.id]?.revisao_nota || "" } : {};
+      out.push({ ...structuredClone(q), status, ...rev, ...(cal ? { b_calibrado: cal.b, ep_calibrado: cal.ep, n_calibracao: cal.n, calibrado_em: cal.em } : {}) });
     }
     return out;
   }
-  async setStatusQuestao(id, status) {
+  async _itemVigente(id) {
+    const q = (await this._gabarito()).get(id);
+    if (!q) throw new Error("Questão não encontrada.");
+    return q;
+  }
+  _historicoQuestao(questao_id, versao, acao, de, para, motivo, extra = {}) {
+    const reg = { id: uid("qh"), questao_id, versao, acao, de: de ?? null, para: para ?? null, motivo: String(motivo || "").trim(), recorrigidas: null, editor_id: this.user.id, criado_em: new Date().toISOString(), ...extra };
+    this.db.historicoQuestoes.push(reg);
+    return reg;
+  }
+  async setStatusQuestao(id, status, { motivo = "" } = {}) {
     this._exigeAdmin("Só administradores mudam o status de uma questão.");
     if (!["ativo", "rascunho", "suspenso", "aposentado"].includes(status)) throw new Error("Status inválido.");
+    if (String(motivo).length > 1000) throw new Error("O motivo tem no máximo 1000 caracteres.");
+    const q = await this._itemVigente(id);
+    const antes = this.db.statusQuestoes[id] || "ativo";
     this.db.statusQuestoes[id] = status;
+    if (antes !== status) this._historicoQuestao(id, q.versao, "status", antes, status, motivo);
     this._gravar();
     return { id, status };
+  }
+  /* Correção de gabarito com registro de versão: a versão do item sobe, a calibração
+     dele é apagada e, com recorrigir, as respostas já gravadas são corrigidas de novo
+     pela alternativa nova (no Supabase: r2a_admin_editar_gabarito). */
+  async editarGabarito(id, { correta, motivo = "", recorrigir = true } = {}) {
+    this._exigeAdmin("Só administradores editam o gabarito.");
+    const q = await this._itemVigente(id);
+    const letra = String(correta || "").trim().toUpperCase();
+    const m = String(motivo || "").trim();
+    if (m.length < 5 || m.length > 1000) throw new Error("Explique o motivo da mudança (de 5 a 1000 caracteres).");
+    if (!q.alternativas.some((a) => a.letra === letra)) throw new Error("A resposta correta não está entre as alternativas.");
+    if (letra === q.correta) throw new Error("A alternativa escolhida já é o gabarito.");
+    const versao = (q.versao || 1) + 1;
+    const ed = (this.db.questoesEdicoes[id] ||= {});
+    Object.assign(ed, { correta: letra, versao });
+    delete this.db.calibracao[id];
+    let recorrigidas = 0;
+    if (recorrigir) {
+      for (const r of this.db.respostas) {
+        if (r.questao_id !== id) continue;
+        /* só as respostas da versão em vigor (o mesmo conteúdo): respostas de uma
+           versão de conteúdo anterior continuam fora */
+        if (r.versao_item !== null && r.versao_item !== undefined && r.versao_item !== (q.versao || 1)) continue;
+        r.correta = r.resposta !== null && r.resposta === letra;
+        r.versao_item = versao;
+        recorrigidas++;
+      }
+    }
+    this._historicoQuestao(id, versao, "gabarito", q.correta, letra, m, { recorrigidas: recorrigir ? recorrigidas : null });
+    this._gravar();
+    return { id, versao, de: q.correta, para: letra, recorrigidas };
+  }
+  /* Marca para revisão: o item continua no banco (e na estimativa dos alunos) até
+     a equipe decidir; retirar do banco é setStatusQuestao(id, "suspenso"). */
+  async marcarRevisaoQuestao(id, { revisao = true, nota = "" } = {}) {
+    this._exigeAdmin("Só administradores marcam itens para revisão.");
+    const q = await this._itemVigente(id);
+    const n = String(nota || "").trim();
+    if (n.length > 1000) throw new Error("A nota tem no máximo 1000 caracteres.");
+    const ed = (this.db.questoesEdicoes[id] ||= {});
+    const antes = !!ed.em_revisao;
+    ed.em_revisao = !!revisao;
+    ed.revisao_nota = revisao ? n : "";
+    if (antes !== !!revisao || revisao) this._historicoQuestao(id, q.versao, "revisao", antes ? "sim" : "nao", revisao ? "sim" : "nao", n);
+    this._gravar();
+    return { id, em_revisao: !!revisao, revisao_nota: ed.revisao_nota };
+  }
+  async listHistoricoQuestao(id = null) {
+    this._exigeAdmin("Só administradores leem o histórico das questões.");
+    return this.db.historicoQuestoes.filter((h) => !id || h.questao_id === id).sort((a, b) => a.criado_em.localeCompare(b.criado_em) || (a.id < b.id ? -1 : 1)).map((h) => ({ ...h }));
   }
   /* itens: [{ id, b, ep, n }]; b = null apaga a calibração do item */
   async salvarCalibracao(itens) {
@@ -688,13 +767,29 @@ export class LocalStore {
     return structuredClone(regs);
   }
   async saveResposta(r) { return (await this.saveRespostas([r]))[0]; }
-  async _respostasSinteticas(agora = new Date()) {
+  /* Dados fictícios da demonstração (respostas, desfechos e reportes), gerados na
+     memória a cada dia por respostas-demo.js. As respostas seguem o gabarito em
+     vigor (uma correção do admin vale também para elas). */
+  async _demo(agora = new Date()) {
     const brutas = await this._questoesBrutas();
-    const chave = dayKey(agora) + "|" + brutas.length;
-    if (this._respSintCache?.chave === chave) return this._respSintCache.dados;
-    const dados = gerarRespostasDemo({ itens: brutas, agora });
-    this._respSintCache = { chave, dados };
+    const corr = Object.entries(this.db.questoesEdicoes || {}).filter(([, x]) => x.correta);
+    const chave = dayKey(agora) + "|" + brutas.length + "|" + JSON.stringify(corr.map(([id, x]) => [id, x.correta, x.versao]));
+    if (this._demoCache?.chave === chave && this._demoCache.fonte === brutas) return this._demoCache.dados;
+    const modelo = this._modeloDemo?.fonte === brutas ? this._modeloDemo.modelo : (this._modeloDemo = { fonte: brutas, modelo: modeloVerdadeiro(brutas) }).modelo;
+    const gabaritos = new Map(corr.map(([id, x]) => [id, { correta: x.correta, versao: x.versao }]));
+    const respostas = gerarRespostasDemo({ itens: brutas, agora, gabaritos, modelo });
+    const dados = { respostas, desfechos: gerarDesfechosDemo({ itens: brutas, respostas, agora }), reportes: gerarReportesDemo({ itens: brutas, agora, modelo }) };
+    this._demoCache = { chave, fonte: brutas, dados };
     return dados;
+  }
+  async _respostasSinteticas(agora = new Date()) { return (await this._demo(agora)).respostas; }
+  /* Defeito plantado no item pela simulação da demonstração (ou null), para a ficha
+     do item avisar que o problema é da simulação e não do item público */
+  async _defeitoDemo(id) {
+    const brutas = await this._questoesBrutas();
+    if (this._modeloDemo?.fonte !== brutas) this._modeloDemo = { fonte: brutas, modelo: modeloVerdadeiro(brutas) };
+    const m = this._modeloDemo.modelo.get(id);
+    return m?.defeito ? { defeito: m.defeito, chave_simulada: m.chave_verdadeira } : null;
   }
   async listRespostas({ step = null, origem = null, desde = null, userId = null, todos = false } = {}) {
     const u = this.user;
@@ -808,6 +903,7 @@ export class LocalStore {
     const u = this.user;
     let lista = this.db.reportes.slice();
     if (!isAdmin(u) || !todos) lista = lista.filter((r) => r.user_id === u.id);
+    else lista = lista.concat((await this._demo()).reportes.map((r) => ({ ...r, ...(this.db.reportesDemo[r.id] || {}) })));
     if (status) lista = lista.filter((r) => r.status === status);
     if (questaoId) lista = lista.filter((r) => r.questao_id === questaoId);
     return lista.sort((a, b) => b.criado_em.localeCompare(a.criado_em)).map((r) => ({ ...r }));
@@ -816,9 +912,15 @@ export class LocalStore {
     this._exigeAdmin("Só administradores tratam reportes.");
     if (!STATUS_REPORTE.includes(status)) throw new Error("Status inválido.");
     if (String(resposta).length > 2000) throw new Error("A resposta tem no máximo 2000 caracteres.");
+    const fecha = status === "resolvido" || status === "rejeitado";
+    const fict = (await this._demo()).reportes.find((x) => x.id === id);
+    if (fict) {
+      this.db.reportesDemo[id] = { status, resposta: String(resposta), resolvido_por: fecha ? this.user.id : null, resolvido_em: fecha ? new Date().toISOString() : null };
+      this._gravar();
+      return { ...fict, ...this.db.reportesDemo[id] };
+    }
     const r = this.db.reportes.find((x) => x.id === id);
     if (!r) throw new Error("Reporte não encontrado.");
-    const fecha = status === "resolvido" || status === "rejeitado";
     Object.assign(r, { status, resposta: String(resposta), resolvido_por: fecha ? this.user.id : null, resolvido_em: fecha ? new Date().toISOString() : null });
     this._gravar();
     return { ...r };
@@ -832,6 +934,7 @@ export class LocalStore {
     const dados = normalizarResultadoOficial(x);
     const agora = new Date().toISOString();
     if (x.id) {
+      if (String(x.id).startsWith("demo-res-")) throw new Error("Desfecho fictício da demonstração não pode ser alterado.");
       const old = this.db.resultadosOficiais.find((r) => r.id === x.id);
       if (!old) throw new Error("Resultado não encontrado.");
       Object.assign(old, dados, { atualizado_em: agora });
@@ -846,6 +949,7 @@ export class LocalStore {
   async listResultadosOficiais({ todos = false, userId = null, step = null } = {}) {
     const u = this.user;
     let lista = this.db.resultadosOficiais.slice();
+    if (isAdmin(u) && (todos || (userId && ehSintetico(userId)))) lista = lista.concat((await this._demo()).desfechos);
     if (!isAdmin(u)) lista = lista.filter((r) => r.user_id === u.id);
     else if (userId) lista = lista.filter((r) => r.user_id === userId);
     else if (!todos) lista = lista.filter((r) => r.user_id === u.id);
@@ -854,6 +958,7 @@ export class LocalStore {
   }
   async deleteResultadoOficial(id) {
     this._exigeAdmin("Só administradores excluem resultados oficiais.");
+    if (String(id).startsWith("demo-res-")) throw new Error("Desfecho fictício da demonstração não pode ser excluído.");
     const i = this.db.resultadosOficiais.findIndex((r) => r.id === id);
     if (i >= 0) { this.db.resultadosOficiais.splice(i, 1); this._gravar(); }
   }

@@ -15,7 +15,8 @@ const FILTROS = [["todas", "Todas"], ["erradas", "Erradas"], ["certas", "Certas"
 export default {
   titulo: "Resultado do bloco",
   async render(ctx, el, { sub, params }) {
-    const id = decodeURIComponent(sub[0] || "");
+    let id = "";
+    try { id = decodeURIComponent(sub[0] || ""); } catch { id = ""; }
     const todas = ctx.respostas.concat(lerPendentes(ctx.dono).flat());
     const b = resumoBlocos(todas, ctx.banco.porId).find((x) => x.id === id);
     if (!b) {
@@ -37,7 +38,7 @@ export default {
     el.innerHTML = '<div class="wrap section-sm q-pag res" data-res>' +
       cabecalho({ titulo: "Resultado do bloco", lead: NOME_STEP[st] + ", modo " + ROTULO_MODO[b.modo].toLowerCase() + ", encerrado em " + e(dataHoraBR(b.fim)) + "." }) +
       abas("blocos") +
-      (ult?.porTempo ? '<p class="alert alert--aviso">' + icon("clock") + "<span>O tempo do bloco acabou e ele foi encerrado, como na prova. As questões sem resposta contam como erro no desempenho do bloco.</span></p>" : "") +
+      (ult?.porTempo ? '<p class="alert alert--aviso">' + icon("clock") + "<span>O tempo do bloco acabou e ele foi encerrado, como na prova. As questões sem resposta contam como erro, no bloco e na estimativa de aprovação.</span></p>" : "") +
       '<article class="embarque" aria-labelledby="res-t">' +
         '<div class="embarque__main">' +
           '<p class="embarque__top"><span>Bloco do banco</span><span>' + NOME_STEP[st] + " · " + ROTULO_MODO[b.modo] + "</span></p>" +

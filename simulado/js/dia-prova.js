@@ -23,8 +23,14 @@
    - um bloco cujo tempo acabou com a página fechada é encerrado no instante em que
      o tempo acabou ("tempo") e o dia fica suspenso a partir dali, para que a
      ausência não consuma a pausa nem vire débito no bloco seguinte;
-   - fechar a página durante a pausa, sem "parar", não suspende nada: a pausa
-     continua correndo, como no centro de provas.
+   - fechar a página durante a pausa, sem "parar", não suspende nada enquanto
+     houver saldo: a pausa continua correndo, como no centro de provas. Se a volta
+     acontece mais de 2 minutos depois de o saldo acabar, o dia fica parado no
+     instante em que o saldo acabou; com a página aberta, a pausa além do saldo vira
+     débito no bloco seguinte até 10 minutos, e depois disso o dia para. Sem essa
+     regra, uma pausa esquecida zeraria o tempo de todos os blocos seguintes;
+   - tutorial deixado aberto além dos 5 minutos: o excesso gasta a pausa e segue a
+     mesma regra da pausa; ao parar, o tutorial é encerrado antes do bloco 1.
 
    Funções puras: recebem "agora" em milissegundos (ou Date) e devolvem um estado
    novo. Nada aqui toca o DOM. */
@@ -180,22 +186,72 @@ export function fecharBloco(sessao, agora, motivo = "participante") {
   return tocar(out);
 }
 
-/* Ao abrir a página: fecha o bloco cujo tempo acabou com a página fechada. Se a
-   ausência passou da tolerância e ainda há blocos, o dia fica suspenso no fim do
-   bloco. Devolve { sessao, fechou: bool, suspendeu: bool }. */
-export function sincronizar(sessao, agora) {
+/* Pausa além do saldo com a página aberta: até este limite vira débito no bloco
+   seguinte, como na prova; passou dele, o dia para (critério interno, para que uma
+   pausa esquecida não zere os blocos seguintes) */
+export const EXCEDENTE_MAX_MS = 10 * 60 * 1000;
+
+/* Instante em que o saldo de pausa acabou (fase "intervalo") */
+function fimDoSaldo(s) { return Date.parse(s.relogio.fase_desde) + s.relogio.pausa_saldo_ms; }
+
+/* Ao abrir a página (e a cada segundo na pausa): resolve o tempo que correu sem
+   ninguém na tela. Devolve { sessao, fechou, suspendeu, motivo }.
+   - bloco cujo tempo acabou com a página fechada: fecha no fim do tempo; se a
+     ausência passou da tolerância e ainda há blocos, o dia para no fim do bloco;
+   - pausa que passou do saldo além da tolerância (página fechada) ou além de
+     EXCEDENTE_MAX_MS (página aberta): o dia para; com a página fechada, no instante
+     em que o saldo acabou (a ausência não vira débito); com a página aberta, depois
+     de EXCEDENTE_MAX_MS de débito;
+   - tutorial aberto além de 5 minutos: o excesso gasta a pausa, como na prova, e
+     segue a mesma regra da pausa (página fechada: para quando o saldo zerou; página
+     aberta: débito até EXCEDENTE_MAX_MS). Ao parar, o tutorial é encerrado e o dia
+     fica parado antes do bloco 1. */
+export function sincronizar(sessao, agora, { paginaAberta = false } = {}) {
   const t = ms(agora);
-  if (!blocoExpirou(sessao, t)) return { sessao, fechou: false, suspendeu: false };
+  const nada = { sessao, fechou: false, suspendeu: false, motivo: null };
+  if (sessao.suspensa) return nada;
+  if (sessao.fase === "intervalo" && sessao.relogio.fase_desde) {
+    const zero = fimDoSaldo(sessao);
+    const limite = paginaAberta ? EXCEDENTE_MAX_MS : TOLERANCIA_AUSENCIA_MS;
+    if (t - zero <= limite) return nada;
+    const s = clone(sessao);
+    s.suspensa = { desde: iso(paginaAberta ? zero + EXCEDENTE_MAX_MS : zero), automatica: true, motivo: "pausa" };
+    return { sessao: tocar(s), fechou: false, suspendeu: true, motivo: "pausa" };
+  }
+  if (sessao.fase === "tutorial" && sessao.relogio.fase_desde) {
+    /* o tempo além dos 5 minutos do tutorial gasta a pausa (relógio oficial). Página
+       fechada: passados 2 minutos do fim do saldo, o dia para quando o saldo zerou.
+       Página aberta: o débito vai até EXCEDENTE_MAX_MS e o dia para ali. Ao parar, o
+       tutorial é fechado no instante da parada e o dia fica em pausa antes do bloco 1. */
+    const r0 = sessao.relogio;
+    const zero = Date.parse(r0.fase_desde) + r0.tutorial_ms + r0.pausa_saldo_ms;
+    const limite = paginaAberta ? EXCEDENTE_MAX_MS : TOLERANCIA_AUSENCIA_MS;
+    if (t - zero <= limite) return nada;
+    const corte = paginaAberta ? zero + EXCEDENTE_MAX_MS : zero;
+    const s = clone(sessao);
+    const r = s.relogio;
+    const usado = corte - Date.parse(r.fase_desde);
+    r.tutorial_usado_ms = Math.min(usado, r.tutorial_ms);
+    const excesso = usado - r.tutorial_usado_ms;
+    r.pausa_usada_ms += excesso;
+    r.pausa_saldo_ms -= excesso;
+    if (r.pausa_saldo_ms < 0) { r.debito_ms += -r.pausa_saldo_ms; r.pausa_saldo_ms = 0; }
+    s.fase = "intervalo";
+    r.fase_desde = iso(corte);
+    s.suspensa = { desde: iso(corte), automatica: true, motivo: "tutorial" };
+    return { sessao: tocar(s), fechou: false, suspendeu: true, motivo: "tutorial" };
+  }
+  if (!blocoExpirou(sessao, t)) return nada;
   const fim = fimDoBloco(sessao);
   let s = fecharBloco(sessao, fim, "tempo");
   let suspendeu = false;
   if (s.fase === "intervalo" && t - fim > TOLERANCIA_AUSENCIA_MS) {
     s = clone(s);
-    s.suspensa = { desde: iso(fim), automatica: true };
+    s.suspensa = { desde: iso(fim), automatica: true, motivo: "bloco" };
     suspendeu = true;
     tocar(s);
   }
-  return { sessao: s, fechou: true, suspendeu };
+  return { sessao: s, fechou: true, suspendeu, motivo: suspendeu ? "bloco" : null };
 }
 
 export const podeSuspender = (s) => s.fase === "intervalo" && !s.suspensa;
@@ -203,7 +259,7 @@ export const podeSuspender = (s) => s.fase === "intervalo" && !s.suspensa;
 export function suspender(sessao, agora) {
   if (!podeSuspender(sessao)) throw new Error(sessao.suspensa ? "O dia já está suspenso." : "Só é possível parar entre blocos.");
   const s = clone(sessao);
-  s.suspensa = { desde: iso(ms(agora)), automatica: false };
+  s.suspensa = { desde: iso(ms(agora)), automatica: false, motivo: "participante" };
   return tocar(s);
 }
 
@@ -214,8 +270,18 @@ export function retomar(sessao, agora) {
   const s = clone(sessao);
   const desde = Date.parse(s.suspensa.desde);
   const dur = Math.max(0, t - desde);
-  if (s.fase === "intervalo" && s.relogio.fase_desde) s.relogio.fase_desde = iso(Date.parse(s.relogio.fase_desde) + dur);
-  (s.suspensoes ||= []).push({ desde: s.suspensa.desde, ate: iso(t), automatica: !!s.suspensa.automatica });
+  if (s.fase === "intervalo" && s.relogio.fase_desde) {
+    /* a pausa corrida até a parada entra na conta agora (como faz o relógio oficial ao
+       fechar o intervalo): o saldo cai, o excesso vira débito e a pausa recomeça na
+       volta. Assim, o débito já cobrado não volta a contar para a parada automática. */
+    const r = s.relogio;
+    const usado = Math.max(0, desde - Date.parse(r.fase_desde));
+    r.pausa_usada_ms += usado;
+    r.pausa_saldo_ms -= usado;
+    if (r.pausa_saldo_ms < 0) { r.debito_ms += -r.pausa_saldo_ms; r.pausa_saldo_ms = 0; }
+    r.fase_desde = iso(t);
+  }
+  (s.suspensoes ||= []).push({ desde: s.suspensa.desde, ate: iso(t), automatica: !!s.suspensa.automatica, motivo: s.suspensa.motivo || "participante" });
   s.suspensa = null;
   return tocar(s);
 }

@@ -51,7 +51,7 @@ export default {
             seletorStep(step, "step") +
             '<fieldset class="field q-modos"><legend>Modo</legend><div class="q-modos__grid">' +
               [["cronometrado", "Cronometrado", "90 s por item, como o bloco oficial (30 minutos para 20 itens). O relógio corre e o bloco encerra sozinho. Conta peso " + num(PESOS_MODO.cronometrado, 0) + " na estimativa de aprovação.", "timer"],
-               ["tutor", "Tutor", "Sem limite de tempo. Depois de confirmar cada resposta, a explicação aparece na hora. Conta peso " + num(PESOS_MODO.tutor, 1) + " na estimativa, porque sem relógio o acerto tende a ser maior que na prova.", "chalkboard-teacher"]]
+               ["tutor", "Tutor", "Sem relógio de prova (o bloco fecha sozinho 24 horas depois de começar). Depois de confirmar cada resposta, a explicação aparece na hora. Conta peso " + num(PESOS_MODO.tutor, 1) + " na estimativa, porque sem relógio o acerto tende a ser maior que na prova.", "chalkboard-teacher"]]
                 .map(([v, t, d, ic]) => '<label class="radio radio--card q-modo"><input type="radio" name="modo" value="' + v + '"' + (p.modo === v ? " checked" : "") + "><span><b>" + icon(ic) + e(t) + "</b><small>" + e(d) + "</small></span></label>").join("") +
             "</div></fieldset>" +
           "</section>" +
@@ -113,7 +113,7 @@ export default {
       const qtd = $("#cr-qtd", el);
       qtd.max = String(max);
       const n = Math.min(Math.max(1, Math.round(Number(qtd.value) || 1)), max, Math.max(1, c.disponiveis));
-      const tempo = p.modo === "cronometrado" ? " Tempo do bloco: " + Math.floor((n * LIMITES_BLOCO.ritmo_ms) / 60000) + " min" + ((n * LIMITES_BLOCO.ritmo_ms) % 60000 ? " 30 s" : "") + "." : " Sem limite de tempo.";
+      const tempo = p.modo === "cronometrado" ? " Tempo do bloco: " + Math.floor((n * LIMITES_BLOCO.ritmo_ms) / 60000) + " min" + ((n * LIMITES_BLOCO.ritmo_ms) % 60000 ? " 30 s" : "") + "." : " Sem relógio de prova; o bloco fecha sozinho depois de 24 horas.";
       $("[data-resumo]", el).innerHTML = c.disponiveis
         ? "<b>" + plural(c.disponiveis, "item atende", "itens atendem") + "</b> aos filtros. O bloco terá " + plural(n, "item", "itens") + "." + tempo
         : "<b>Nenhum item atende aos filtros.</b> Tire um filtro ou escolha outra situação.";

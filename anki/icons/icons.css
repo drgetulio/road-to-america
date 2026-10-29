@@ -20,6 +20,7 @@
 .ph.ph-eye:before { content: "\e220"; }
 .ph.ph-flag:before { content: "\e244"; }
 .ph.ph-funnel:before { content: "\e266"; }
+.ph.ph-gauge:before { content: "\e628"; }
 .ph.ph-gear-six:before { content: "\e272"; }
 .ph.ph-hourglass-medium:before { content: "\e2b8"; }
 .ph.ph-info:before { content: "\e2ce"; }
@@ -27,6 +28,7 @@
 .ph.ph-lightbulb:before { content: "\e2dc"; }
 .ph.ph-lightning:before { content: "\e2de"; }
 .ph.ph-list:before { content: "\e2f0"; }
+.ph.ph-list-checks:before { content: "\eadc"; }
 .ph.ph-lock-simple:before { content: "\e308"; }
 .ph.ph-magnifying-glass:before { content: "\e30c"; }
 .ph.ph-path:before { content: "\e39c"; }
@@ -69,6 +71,7 @@
 .ph-fill.ph-eye:before { content: "\e220"; }
 .ph-fill.ph-flag:before { content: "\e244"; }
 .ph-fill.ph-funnel:before { content: "\e266"; }
+.ph-fill.ph-gauge:before { content: "\e628"; }
 .ph-fill.ph-gear-six:before { content: "\e272"; }
 .ph-fill.ph-hourglass-medium:before { content: "\e2b8"; }
 .ph-fill.ph-info:before { content: "\e2ce"; }
@@ -76,6 +79,7 @@
 .ph-fill.ph-lightbulb:before { content: "\e2dc"; }
 .ph-fill.ph-lightning:before { content: "\e2de"; }
 .ph-fill.ph-list:before { content: "\e2f0"; }
+.ph-fill.ph-list-checks:before { content: "\eadc"; }
 .ph-fill.ph-lock-simple:before { content: "\e308"; }
 .ph-fill.ph-magnifying-glass:before { content: "\e30c"; }
 .ph-fill.ph-path:before { content: "\e39c"; }

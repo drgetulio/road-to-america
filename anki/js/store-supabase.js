@@ -475,7 +475,8 @@ export class SupabaseStore {
   async listQuestoes({ step = null, incluirInativas = false } = {}) {
     const u = this._exigeLogin();
     const rows = await this._todas(() => {
-      let q = this.client.from("questoes").select("id, status, versao, dados, b_calibrado, ep_calibrado, n_calibracao, calibrado_em");
+      const admin = isAdmin(u);
+      let q = this.client.from("questoes").select("id, status, versao, dados, b_calibrado, ep_calibrado, n_calibracao, calibrado_em" + (admin ? ", em_revisao, revisao_nota" : ""));
       if (step) q = q.eq("step", step);
       if (!(incluirInativas && isAdmin(u))) q = q.eq("status", "ativo");
       return q.order("id");
@@ -485,15 +486,42 @@ export class SupabaseStore {
       ...(r.dados || {}), id: r.id, status: r.status, versao: r.versao,
       b_calibrado: r.b_calibrado === null ? null : Number(r.b_calibrado),
       ep_calibrado: r.ep_calibrado === null ? null : Number(r.ep_calibrado),
-      n_calibracao: r.n_calibracao || 0, calibrado_em: r.calibrado_em
+      n_calibracao: r.n_calibracao || 0, calibrado_em: r.calibrado_em,
+      ...(r.em_revisao === undefined ? {} : { em_revisao: !!r.em_revisao, revisao_nota: r.revisao_nota || "" })
     }));
   }
-  async setStatusQuestao(id, status) {
+  /* As três ações abaixo passam por funções do banco para que o motivo fique no
+     histórico (questoes_historico) na mesma transação da mudança */
+  async setStatusQuestao(id, status, { motivo = "" } = {}) {
     this._exigeAdmin("Só administradores mudam o status de uma questão.");
     if (!["ativo", "rascunho", "suspenso", "aposentado"].includes(status)) throw new Error("Status inválido.");
-    const r = ok(await this.client.from("questoes").update({ status }).eq("id", id).select("id, status").maybeSingle());
+    if (String(motivo).length > 1000) throw new Error("O motivo tem no máximo 1000 caracteres.");
+    const r = ok(await this.client.rpc("r2a_admin_status_questao", { p_id: id, p_status: status, p_motivo: String(motivo || "") }));
     if (!r) throw new Error("Questão não encontrada.");
-    return r;
+    return { id: r.id, status: r.status };
+  }
+  async editarGabarito(id, { correta, motivo = "", recorrigir = true } = {}) {
+    this._exigeAdmin("Só administradores editam o gabarito.");
+    const m = String(motivo || "").trim();
+    if (m.length < 5 || m.length > 1000) throw new Error("Explique o motivo da mudança (de 5 a 1000 caracteres).");
+    const letra = String(correta || "").trim().toUpperCase();
+    if (!/^[A-J]$/.test(letra)) throw new Error("A resposta correta não está entre as alternativas.");
+    return ok(await this.client.rpc("r2a_admin_editar_gabarito", { p_id: id, p_correta: letra, p_motivo: m, p_recorrigir: !!recorrigir }));
+  }
+  async marcarRevisaoQuestao(id, { revisao = true, nota = "" } = {}) {
+    this._exigeAdmin("Só administradores marcam itens para revisão.");
+    if (String(nota).length > 1000) throw new Error("A nota tem no máximo 1000 caracteres.");
+    const r = ok(await this.client.rpc("r2a_admin_marcar_revisao", { p_id: id, p_revisao: !!revisao, p_nota: String(nota || "").trim() }));
+    if (!r) throw new Error("Questão não encontrada.");
+    return { id: r.id, em_revisao: !!r.em_revisao, revisao_nota: r.revisao_nota || "" };
+  }
+  async listHistoricoQuestao(id = null) {
+    this._exigeAdmin("Só administradores leem o histórico das questões.");
+    return this._todas(() => {
+      let q = this.client.from("questoes_historico").select("*");
+      if (id) q = q.eq("questao_id", id);
+      return q.order("criado_em").order("id");
+    });
   }
   async salvarCalibracao(itens) {
     this._exigeAdmin("Só administradores gravam a calibração.");

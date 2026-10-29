@@ -429,7 +429,7 @@ Testar localmente (Postgres puro):
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
-# o bloco final precisa mostrar "falhas | 0" (163 verificações: P1 a P9 da plataforma, Q1 a Q9 do banco de questões)
+# o bloco final precisa mostrar "falhas | 0" (185 verificações: P1 a P9 da plataforma, Q1 a Q10 do banco de questões)
 node supabase/teste-local/03-compara-resumo.mjs   # precisa terminar em "Diferenças: 0"
 node supabase/teste-local/04-compara-itens.mjs    # precisa terminar em "Diferenças: 0"
 ```
@@ -690,6 +690,15 @@ Motivos de reporte (`MOTIVOS_REPORTE` em `registros.js`, com o rótulo da tela):
 }
 ```
 
+Telas dos simulados completos (`simulado/`, acréscimo de 29/10/2026): o dia de prova usa
+o relógio desta seção e grava na `sessao` campos extras que a camada aceita sem mudança
+(`validarSessao` e o gatilho só olham `respostas` e `bloco_atual`): `ui` (item aberto,
+riscos, realces e avisos do bloco atual), `notas` (`{ questao_id: texto }`), `suspensa` e
+`suspensoes` (parar e continuar depois, só entre blocos), `rev` (contador de mudanças) e
+`respostas_gravadas`. Ao concluir, `resultado` ganha `estimativa` (P, θ, dp, intervalo,
+rótulo de confiança) e `dia` (pausa usada, sobras, paradas). O bloco de 30 minutos grava
+também `respostas_item` com `origem: "bloco_30"`. Detalhes em `simulado/README.md`.
+
 Modo demonstração: todos os participantes têm matrícula ativa, salvo se o admin
 desativar; o admin vê, além das respostas reais deste navegador, respostas sintéticas da
 coorte fictícia (`respostas-demo.js`, linhas com `sintetico: true`), para que a análise de
@@ -722,3 +731,104 @@ Testes unitários do banco de questões:
 node --test plataforma/tests/banco.test.mjs plataforma/tests/psicometria.test.mjs plataforma/tests/formularios.test.mjs \
             plataforma/tests/store-banco.test.mjs plataforma/tests/importar.test.mjs
 ```
+
+---
+
+# Banco de questões no espaço do aluno (`questoes/`)
+
+Acréscimo de 29/10/2026. Página `questoes/` com o mesmo cabeçalho, login, seletor de
+papel da demonstração e menu do app de flashcards (o menu fica em `anki/js/menu.js`, usado
+pelas duas páginas). Detalhes de uso em `questoes/README.md`; método em
+`PSICOMETRIA.md`, seção 18.
+
+## `plataforma/js/banco-aluno.js` (funções puras)
+
+| Exportação | O que faz |
+|---|---|
+| `historicoItens(respostas)` | `Map` id -> `{ n, respondidas, primeira_correta, ultima_resposta, ultima_correta, ultima_em, marcada, em_branco_ultima }` |
+| `situacaoItem(id, historico)` | `{ nao_vistas, erradas, marcadas, todas }` (erradas: tentativa mais recente errada ou em branco) |
+| `filtrarPool(banco, { step, selecao, situacao, historico })` | itens do Step que passam nos filtros; `selecao = { sistema: [...], disciplina: [...], ... }` ("ou" dentro da dimensão, "e" entre dimensões; disciplinas com todos os rótulos) |
+| `contagemFacetas(banco, { step, selecao, situacao, historico })` | `{ situacoes, dims: { dim: { chave: n } }, disponiveis }`; a contagem de cada dimensão ignora o filtro dela mesma |
+| `FILTROS_STEP`, `SITUACOES`, `ROTULO_SITUACAO`, `MODOS_BLOCO`, `ROTULO_MODO`, `LIMITES_BLOCO` | dimensões filtráveis por Step e limites (1 a 20 itens, 40 no modo livre, 90 s por item) |
+| `validarPedidoBloco`, `sortearBlocoBanco(pool, { n, semente, historico })`, `criarBlocoBanco({ step, itens, modo, livre, criterios, dono, notas })` | pedido, sorteio estratificado e sessão no formato de `simulado/js/sessao.js`, com `origem: "banco"`, `id` (`bq-...`), `modo`, `confirmadas` |
+| `confirmarResposta(s, i)`, `travada(s, i)` | modo tutor: a resposta confirmada trava |
+| `paraRespostasBanco(s, porId)` | linhas para `store.saveRespostas` (uma por item, com posição, tempo, marca e `sessao_id`) |
+| `resumoBlocos(respostas, itens)`, `blocoPorArea(bloco, itens, campo)` | histórico de blocos (mais recente primeiro) e acerto por área de um bloco contra o limiar |
+| `curvaEvolucao({ respostas, itens, step, maxPontos })` | um ponto por sessão: `P(aprovação)`, `θ`, intervalo, acerto da sessão e do limiar |
+| `contribuicaoPorArea(usadas, dim, { step })` | `[{ chave, n, acertos, esperado_limiar, deficit, taxa, taxa_limiar, p_atual, p_area_no_limiar, ganho, peso_prova }]`, do maior ganho para o menor |
+| `linksDeEstudo(step, dim, chave, { base, situacao })`, `linkBloco`, `ANCORAS_CONTEUDO_S1`, `BASE_S1_DO_CK` | links para `conteudo-step1.html#s-...`, `anki/#/estudar?...&modo=treino` e `questoes/#/criar?...` |
+| `recomendacoes({ step, est, contribuicao, base })` | lista ordenada `{ tipo: "area" \| "cobertura" \| "volume", nome, texto, links }` |
+| `resumoAprovacao({ banco, respostas, step, modelos, nbme, config, base })` | tudo o que o painel e o cartão de "Meu progresso" mostram: `{ est, contribuicao, recomendacoes, prontidao, limiar_texto, itens_no_banco, nao_vistos, modelo_demonstracao }` |
+| `curvaPosterior(respostas, itens, step)`, `estatisticasAluno(banco, historico, step)`, `chavesDaDimensao` | densidade de `θ` para o gráfico, números do aluno e chaves na ordem do outline |
+
+## Tela do bloco compartilhada (`simulado/js/interface-bloco.js`)
+
+O banco usa a mesma tela de bloco do simulado de 30 minutos e dos simulados completos
+(`montarBloco(el, cfg)`). Para o modo tutor, a tela ganhou ganchos opcionais, que não mudam
+nada para quem não os passa: `estado.travada(i)`, `estado.gabarito(i)`,
+`questaoExtra: { html(i), clique(ev, i) }`, `relogio.progressivo` e o método
+`redesenhar()` no retorno. A página `questoes/` carrega `../simulado/simulado.css` (estilos
+da tela do bloco e do resultado) antes de `../anki/anki.css`; `questoes/questoes.css`
+desfaz o único conflito de nome (`.painel`).
+
+## Onde o banco aparece
+
+- menu da área do aluno (`anki/js/menu.js`): item "Questões";
+- cabeçalho do simulado: link "Questões";
+- "Meu progresso" (`anki/js/views/progresso.js`): cartão com a probabilidade de cada
+  Step pelo banco, o rótulo de confiança, os itens que faltam e a área que mais derruba
+  a probabilidade, com link para `questoes/#/aprovacao`.
+
+Testes: `node --test plataforma/tests/banco-aluno.test.mjs` e
+`node questoes/tests/fluxos.e2e.mjs` (Playwright e axe-core, em 1440 e 390 px, temas
+claro e escuro).
+
+
+---
+
+# Análise de itens na área administrativa
+
+Acréscimo de 29/10/2026. Telas em `admin/` (`#/itens`, `#/item/<id>`, `#/calibracao`,
+`#/blueprint`), descritas em `admin/README.md`; funções puras em `admin/js/analise.js`;
+método em `PSICOMETRIA.md`, seção 19.
+
+## Métodos novos da camada de dados (os dois modos)
+
+| Método | Participante | Admin | Retorno |
+|---|---|---|---|
+| `setStatusQuestao(id, status, { motivo })` | não pode | muda o status; o motivo vai para o histórico | `{ id, status }` |
+| `editarGabarito(id, { correta, motivo, recorrigir = true })` | não pode | motivo de 5 a 1000 caracteres; letra entre as alternativas e diferente da atual; a versão sobe e a calibração do item é apagada; com `recorrigir`, as respostas gravadas na versão em vigor passam a valer pela letra nova e vão para a versão nova (as de versões de conteúdo anteriores não mudam) | `{ id, versao, de, para, recorrigidas }` |
+| `marcarRevisaoQuestao(id, { revisao = true, nota })` | não pode | marca ou desmarca (nota até 1000 caracteres); o item continua no banco | `{ id, em_revisao, revisao_nota }` |
+| `listHistoricoQuestao(id = null)` | não pode | histórico de um item ou de todos, do mais antigo para o mais novo | `[{ id, questao_id, versao, acao: "gabarito" \| "conteudo" \| "status" \| "revisao", de, para, motivo, recorrigidas, editor_id, criado_em }]` |
+
+`listQuestoes` traz, só para o admin, `em_revisao` e `revisao_nota` (o carregador
+`normalizarItem` preserva os dois campos). O campo `revisao` do contrato do item (quem
+revisou o conteúdo) continua sendo outro campo.
+
+No Supabase: colunas `questoes.em_revisao` e `questoes.revisao_nota`; tabela
+`questoes_historico` (só o admin lê; ninguém escreve direto, o gatilho
+`questoes_registrar_historico` grava cada mudança de gabarito, conteúdo, status e marca);
+funções `r2a_admin_editar_gabarito(p_id, p_correta, p_motivo, p_recorrigir)`,
+`r2a_admin_marcar_revisao(p_id, p_revisao, p_nota)` e
+`r2a_admin_status_questao(p_id, p_status, p_motivo)` (security definer, `search_path`
+fixo, só admin). O motivo chega ao gatilho pela configuração local da transação
+`r2a.motivo`. Testes Q10a a Q10v de `supabase/teste-local/02-testa-rls.sql`.
+
+`calibrarDesfechos()` (`calibracao.js`) devolve também `dados: { oficiais, nbme }`, os
+pontos (θ na data do desfecho e resultado ou nota) usados no ajuste, para os gráficos.
+
+## Modo demonstração
+
+`LocalStore` acrescenta, só para o admin, dados fictícios gerados na memória por
+`plataforma/js/respostas-demo.js` (todas as linhas com `sintetico: true`):
+
+- `listRespostas({ todos })` e `listRespostasCalibracao()`: respostas dos participantes
+  fictícios e de examinandos de turmas anteriores simuladas (`demo-sint-cal-s1-001`...,
+  fora da lista de participantes);
+- `listResultadosOficiais({ todos })`: desfechos fictícios Pass/Fail dessas turmas (sem
+  nota de três dígitos); não podem ser alterados nem excluídos;
+- `listReportes({ todos })`: reportes fictícios sobre itens com defeito plantado; a
+  resolução feita pelo admin fica gravada neste navegador.
+
+As respostas fictícias seguem o gabarito em vigor: depois de uma correção de gabarito,
+elas passam a ser corrigidas pela letra nova.

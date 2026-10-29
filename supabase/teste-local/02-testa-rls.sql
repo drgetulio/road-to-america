@@ -340,7 +340,7 @@ select teste.ok('P9v authenticated não executa a função interna do resumo',
   not has_function_privilege('authenticated', 'public.r2a_resumo_interno(uuid[], text, timestamptz)', 'execute'));
 
 -- =============================================================================
--- BANCO DE QUESTÕES (Q1 a Q8): questões, respostas por item, simulados
+-- BANCO DE QUESTÕES (Q1 a Q10): questões, respostas por item, simulados
 -- completos, anotações do aluno, reportes, resultados oficiais e funções do admin
 -- =============================================================================
 \set item1 '{"id":"R2A-S1-0001","step":"step1","versao":1,"vinheta":"A 54-year-old man has crushing chest pain for 3 days.","pergunta":"Which of the following is most likely?","alternativas":[{"letra":"A","texto":"a"},{"letra":"B","texto":"b"},{"letra":"C","texto":"c"},{"letra":"D","texto":"d"},{"letra":"E","texto":"e"}],"correta":"C","sistema":"cardiovascular","disciplina":"patologia","competencia":"applying_foundational_science","dificuldade":"media","angoff":0.62}'
@@ -470,6 +470,7 @@ insert into public.resultados_oficiais (user_id, step, data, escore) values (:'a
 select teste.ok('Q6l Step 2 CK com nota 230 depois de 01/07/2025 vira Pass', :'res_ok'::boolean);
 select teste.bloqueia('Q6m Step 1 com nota de três dígitos', format($q$insert into public.resultados_oficiais (user_id, step, data, escore, resultado) values (%L, 'step1', current_date - 1, 230, 'pass')$q$, :'ana'));
 select teste.bloqueia('Q6n Step 2 CK antigo sem Pass/Fail', format($q$insert into public.resultados_oficiais (user_id, step, data, escore) values (%L, 'step2ck', date '2024-01-10', 216)$q$, :'ana'));
+select teste.bloqueia('Q6n2 Step 2 CK com nota 230 e Fail (contradiz o padrão de 218)', format($q$insert into public.resultados_oficiais (user_id, step, data, escore, resultado) values (%L, 'step2ck', date '2026-02-10', 230, 'fail')$q$, :'ana'));
 select teste.ok('Q6o admin não lê as anotações privadas do aluno', (select count(*) from public.anotacoes_item) = 0);
 select teste.passa('Q6p admin apaga simulado completo', format('delete from public.simulados_completos where id = %L', :'sc1'));
 reset role;
@@ -499,6 +500,65 @@ set role authenticated; select set_config('request.jwt.claim.sub', :'bia', false
 select teste.ok('Q8a Bia esvazia as questões com TRUNCATE', teste.recusa('truncate public.questoes'));
 select teste.ok('Q8b Bia esvazia as respostas com TRUNCATE', teste.recusa('truncate public.respostas_item'));
 select teste.bloqueia('Q8c Bia muda o próprio papel e a matrícula juntos', $q$update public.profiles set papel = 'admin', ativo = true where id = auth.uid()$q$);
+reset role;
+
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+\echo '--- Q10 revisão de itens: marca, gabarito com versão e histórico'
+select public.r2a_admin_salvar_calibracao('[{"id":"R2A-S1-0001","b":0.3,"ep":0.2,"n":40}]') as cal10 \gset
+select teste.passa('Q10a admin marca o item para revisão com nota', $q$select public.r2a_admin_marcar_revisao('R2A-S1-0001', true, 'p abaixo de 0,20 na turma')$q$);
+select teste.ok('Q10b marca gravada e histórico com a nota',
+  (select em_revisao and revisao_nota = 'p abaixo de 0,20 na turma' from public.questoes where id = 'R2A-S1-0001')
+  and exists (select 1 from public.questoes_historico where questao_id = 'R2A-S1-0001' and acao = 'revisao' and de = 'nao' and para = 'sim' and motivo = 'p abaixo de 0,20 na turma' and editor_id = auth.uid()));
+-- uma resposta da Ana na versão 2 (as três anteriores são da versão 1, de conteúdo antigo)
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'A', 'cronometrado', 'banco');
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select (public.r2a_admin_editar_gabarito('R2A-S1-0001', 'a', 'Revisão da referência: a alternativa A é a correta', true)) as gab10 \gset
+select teste.ok('Q10c gabarito corrigido: versão sobe, calibração apagada, retorno com antes e depois',
+  (select correta = 'A' and versao = 3 and (dados ->> 'correta') = 'A' and b_calibrado is null from public.questoes where id = 'R2A-S1-0001')
+  and (:'gab10'::jsonb ->> 'de') = 'C' and (:'gab10'::jsonb ->> 'para') = 'A' and (:'gab10'::jsonb ->> 'versao')::int = 3);
+select teste.ok('Q10d respostas da versão em vigor recorrigidas pela alternativa nova e levadas à versão nova; as da versão de conteúdo anterior ficam',
+  (select bool_and(correta = (resposta = 'A')) and count(*) = 1 and count(*) = (:'gab10'::jsonb ->> 'recorrigidas')::int from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 3)
+  and (select count(*) = 3 from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 1)
+  and not exists (select 1 from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 2));
+select teste.ok('Q10e histórico do gabarito: de C para A, versão 3, motivo e quantas respostas mudaram',
+  exists (select 1 from public.questoes_historico where questao_id = 'R2A-S1-0001' and acao = 'gabarito' and de = 'C' and para = 'A' and versao = 3
+    and motivo like 'Revisão da referência%' and recorrigidas = (:'gab10'::jsonb ->> 'recorrigidas')::int and editor_id = auth.uid()));
+select teste.ok('Q10f estatísticas contam a resposta recorrigida, não as da versão de conteúdo anterior', (select n = 1 and acertos = 1 from public.r2a_admin_estatisticas_itens('step1') where questao_id = 'R2A-S1-0001'));
+select teste.bloqueia('Q10g gabarito sem motivo', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'B', 'ok', true)$q$);
+select teste.bloqueia('Q10h gabarito fora das alternativas', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'H', 'Teste de letra inexistente', true)$q$);
+select teste.bloqueia('Q10i gabarito igual ao atual', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'A', 'Nada muda neste caso', true)$q$);
+select teste.passa('Q10j admin devolve o item ao banco com motivo', $q$select public.r2a_admin_status_questao('R2A-S1-0001', 'ativo', 'Gabarito corrigido; item volta ao banco')$q$);
+select teste.ok('Q10k histórico do status com o motivo', exists (select 1 from public.questoes_historico where questao_id = 'R2A-S1-0001' and acao = 'status' and de = 'suspenso' and para = 'ativo' and motivo = 'Gabarito corrigido; item volta ao banco'));
+select teste.ok('Q10l o motivo não vaza para a próxima mudança da mesma sessão',
+  coalesce(current_setting('r2a.motivo', true), '') = '');
+select teste.bloqueia('Q10m admin escreve no histórico direto', $q$insert into public.questoes_historico (questao_id, versao, acao) values ('R2A-S1-0001', 1, 'status')$q$);
+select teste.bloqueia('Q10n admin apaga o histórico', 'delete from public.questoes_historico');
+select teste.bloqueia('Q10o status inválido pela função', $q$select public.r2a_admin_status_questao('R2A-S1-0001', 'publicado', '')$q$);
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+select teste.bloqueia('Q10p Ana corrige o gabarito pela função', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'B', 'Tentativa de um participante', true)$q$);
+select teste.bloqueia('Q10q Ana marca item para revisão', $q$select public.r2a_admin_marcar_revisao('R2A-S1-0001', false, '')$q$);
+select teste.bloqueia('Q10r Ana muda o status pela função', $q$select public.r2a_admin_status_questao('R2A-S1-0001', 'suspenso', '')$q$);
+select teste.ok('Q10s Ana não lê o histórico das questões', (select count(*) from public.questoes_historico) = 0);
+select teste.ok('Q10t gabarito continua A depois das tentativas da Ana', (select correta from public.questoes where id = 'R2A-S1-0001') = 'A');
+-- resposta da Ana na versão 3; o conteúdo muda (versão 4) e o gabarito é corrigido
+-- com recorreção: só a versão em vigor é recorrigida, a resposta da versão 3 fica fora
+insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'B', 'cronometrado', 'banco');
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+update public.questoes set dados = jsonb_set(dados, '{vinheta}', '"A 54-year-old man has crushing chest pain for 5 days."') where id = 'R2A-S1-0001';
+select (public.r2a_admin_editar_gabarito('R2A-S1-0001', 'B', 'Teste de recorreção restrita à versão em vigor', true)) as gab10w \gset
+select teste.ok('Q10w recorreção não leva respostas de uma versão de conteúdo anterior',
+  (:'gab10w'::jsonb ->> 'versao')::int = 5 and (:'gab10w'::jsonb ->> 'recorrigidas')::int = 0
+  and exists (select 1 from public.respostas_item where questao_id = 'R2A-S1-0001' and resposta = 'B' and versao_item = 3 and not correta));
+select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'A', 'Volta ao gabarito A depois do teste Q10w', false) as gab10w2 \gset
+reset role;
+set role anon;
+select teste.bloqueia('Q10u anon lê o histórico', 'select * from public.questoes_historico');
+select teste.bloqueia('Q10v anon chama a correção de gabarito', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'B', 'Tentativa anônima', true)$q$);
 reset role;
 
 \echo '=== RESUMO DA PLATAFORMA (falhas precisa ser 0)'

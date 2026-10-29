@@ -471,6 +471,9 @@ export function normalizarItem(bruto) {
     valores_lab: Array.isArray(q.valores_lab) ? q.valores_lab.map(String) : [],
     tabela: q.tabela && typeof q.tabela === "object" ? q.tabela : null,
     revisao: q.revisao && typeof q.revisao === "object" ? { ...q.revisao } : { verificado: false, revisor: "", data: "", notas: "" },
+    /* marca de revisão da equipe (área administrativa; só o admin recebe) */
+    em_revisao: q.em_revisao === true,
+    revisao_nota: texto(q.revisao_nota),
     legado,
     taxonomia_desconhecida: [...new Set(desconhecidas)]
   };

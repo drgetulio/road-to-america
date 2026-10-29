@@ -3,7 +3,7 @@
     ph-arrow-counter-clockwise ph-arrow-down ph-arrow-right ph-arrow-up ph-brackets-curly ph-cards
     ph-chart-bar ph-chat-text ph-caret-down ph-check ph-check-circle ph-circle-half ph-clock
     ph-clock-counter-clockwise ph-download-simple ph-envelope-simple ph-eye ph-flag ph-funnel
-    ph-gear-six ph-hourglass-medium ph-info ph-keyboard ph-lightbulb ph-lightning ph-list
+    ph-gauge ph-gear-six ph-hourglass-medium ph-info ph-keyboard ph-lightbulb ph-lightning ph-list ph-list-checks
     ph-lock-simple ph-magnifying-glass ph-path ph-pause-circle ph-pencil-simple ph-play-circle
     ph-plus ph-plus-circle ph-seal-check ph-sign-out ph-signpost ph-text-b ph-text-italic ph-trash
     ph-upload-simple ph-user-circle ph-users-three ph-warning ph-warning-circle ph-x ph-x-circle */

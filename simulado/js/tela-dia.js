@@ -90,11 +90,14 @@ export default {
     gravarEspelho(id, s);
 
     const sinc = sincronizar(s, Date.now());
-    if (sinc.fechou) {
+    if (sinc.fechou || sinc.suspendeu) {
       mudar(sinc.sessao, { urgente: true });
-      toast(sinc.suspendeu
-        ? "O tempo do bloco acabou enquanto a página estava fechada. O bloco foi encerrado e o dia ficou parado a partir do fim dele."
-        : "O tempo do bloco acabou e ele foi encerrado.", "info", 8000);
+      const msg = {
+        bloco: "O tempo do bloco acabou enquanto a página estava fechada. O bloco foi encerrado e o dia ficou parado a partir do fim dele.",
+        pausa: "O saldo de pausa acabou enquanto a página estava fechada. O dia ficou parado no instante em que o saldo zerou, sem desconto nos próximos blocos.",
+        tutorial: "O tutorial ficou aberto com a página fechada e o tempo além dele gastou a pausa. O dia ficou parado, antes do bloco 1, no instante em que o saldo zerou."
+      };
+      toast(msg[sinc.motivo] || "O tempo do bloco acabou e ele foi encerrado.", "info", 9000);
     } else if (sujo) gravarAgora();
 
     const questoesDoBloco = () => form.blocos[s.bloco_atual].map((qid) => banco.porId.get(qid));
@@ -150,7 +153,7 @@ export default {
         (form.reduzido ? '<div class="aviso-conta">' + icon("info") + "<p>" + e(form.motivo_reducao) + "</p></div>" : "") +
         '<section class="cartao" aria-labelledby="t-regras"><h2 class="h-sm" id="t-regras">Regras do dia</h2><ul class="lista-check">' +
           "<li>" + icon("lock-simple") + "<span>Um bloco encerrado, por você ou pelo tempo, não reabre. A revisão de itens marcados vale só dentro do bloco aberto.</span></li>" +
-          "<li>" + icon("coffee") + "<span>Entre os blocos, a pausa usa o seu saldo. O que passar do saldo é descontado do bloco seguinte, porque o dia não se estende.</span></li>" +
+          "<li>" + icon("coffee") + "<span>Entre os blocos, a pausa usa o seu saldo. O que passar do saldo é descontado do bloco seguinte, porque o dia não se estende. Passados 10 minutos além do saldo, o dia para sozinho (regra da Road to America).</span></li>" +
           "<li>" + icon("pause") + "<span>Entre dois blocos, você pode parar e continuar outro dia. O tempo parado não conta como pausa.</span></li>" +
           "<li>" + icon("timer") + "<span>Se a página fechar com um bloco aberto, o relógio do bloco continua, como no centro de provas.</span></li>" +
         "</ul></section>" +
@@ -185,12 +188,19 @@ export default {
         "</div>";
       $("[data-bloco]", el).addEventListener("click", iniciarProximo);
       const atualizar = () => {
+        const sx = sincronizar(s, Date.now(), { paginaAberta: true });
+        if (sx.suspendeu) {
+          mudar(sx.sessao, { urgente: true });
+          desenhar();
+          anunciar("O tutorial passou 10 minutos do saldo de pausa e o dia foi parado antes do bloco 1.");
+          return false;
+        }
         const r = atualizarDia();
         const resta = r.tutorial_restante_ms ?? 0;
         $("[data-tut-t]", el).textContent = relogio(Math.ceil(resta / 1000) * 1000);
         if (resta <= 0) $("[data-tut-sub]", el).textContent = "O tempo do tutorial acabou; daqui em diante, o tempo conta como pausa.";
       };
-      atualizar();
+      if (atualizar() === false) return;
       tick = setInterval(atualizar, 500);
       focarTitulo();
     }
@@ -202,8 +212,8 @@ export default {
         '<div class="pausa">' +
           '<div class="pausa__placa" role="group" aria-label="Saldo de pausa"><p class="pausa__rot" data-pausa-rot>Saldo de pausa</p><p class="pausa__t" data-pausa-t></p><p class="pausa__sub" data-pausa-sub></p></div>' +
           "<div>" +
-            '<h1 class="display h2">Bloco ' + s.blocos_encerrados + " de " + form.blocos.length + " encerrado" + (ultimo?.motivo === "tempo" ? " <em>pelo tempo.</em>" : ".") + "</h1>" +
-            '<p class="lead">' + (ultimo ? (ultimo.sobra_ms > 0 ? "Você encerrou o bloco com " + duracao(ultimo.sobra_ms) + " sobrando, e esse tempo entrou no saldo de pausa. " : "") : "") + "O próximo é o bloco " + proximo + ". Ele não reabre os anteriores.</p>" +
+            '<h1 class="display h2">' + (s.blocos_encerrados ? "Bloco " + s.blocos_encerrados + " de " + form.blocos.length + " encerrado" + (ultimo?.motivo === "tempo" ? " <em>pelo tempo.</em>" : ".") : "Tutorial encerrado. <em>Antes do bloco 1.</em>") + "</h1>" +
+            '<p class="lead">' + (ultimo ? (ultimo.sobra_ms > 0 ? "Você encerrou o bloco com " + duracao(ultimo.sobra_ms) + " sobrando, e esse tempo entrou no saldo de pausa. " : "") : "") + "O próximo é o bloco " + proximo + "." + (s.blocos_encerrados ? " Ele não reabre os anteriores." : "") + "</p>" +
           "</div>" +
         "</div>" +
         trilha(form, s) +
@@ -221,6 +231,13 @@ export default {
       });
       let avisou = false;
       const atualizar = () => {
+        const parar = sincronizar(s, Date.now(), { paginaAberta: true });
+        if (parar.suspendeu) {
+          mudar(parar.sessao, { urgente: true });
+          desenhar();
+          anunciar("A pausa passou 10 minutos do saldo e o dia foi parado. Retome quando voltar.");
+          return false;
+        }
         const r = atualizarDia();
         const placa = $(".pausa__placa", el);
         if (r.pausa_excedente_ms > 0) {
@@ -238,7 +255,7 @@ export default {
         }
         $("[data-proximo-txt]", el).innerHTML = "O bloco " + proximo + " terá <strong>" + relogio(r.proximo_bloco_ms) + "</strong>" + (r.proximo_bloco_ms < form.tempo.bloco_ms ? ", porque a pausa passou do saldo." : ", o tempo inteiro.");
       };
-      atualizar();
+      if (atualizar() === false) return;
       tick = setInterval(atualizar, 500);
       focarTitulo();
     }
@@ -250,8 +267,16 @@ export default {
         '<div class="pausa">' +
           '<div class="pausa__placa is-parado" role="group" aria-label="Saldo de pausa congelado"><p class="pausa__rot">Saldo de pausa</p><p class="pausa__t">' + relogio(r.pausa_saldo_ms) + '</p><p class="pausa__sub">congelado enquanto o dia está parado</p></div>' +
           "<div>" +
-            '<h1 class="display h2">Seu dia está parado <em>no bloco ' + (s.bloco_atual + 1) + ".</em></h1>" +
-            '<p class="lead">' + (auto ? "O tempo do bloco " + s.blocos_encerrados + " acabou com a página fechada; o bloco foi encerrado no fim do tempo e o dia parou ali. " : "") + "Ao retomar, a pausa volta a correr de onde parou. Os blocos encerrados não reabrem.</p>" +
+            '<h1 class="display h2">Seu dia está parado <em>antes do bloco ' + (s.bloco_atual + 1) + ".</em></h1>" +
+            '<p class="lead">' + (auto ? ({
+              bloco: "O tempo do bloco " + s.blocos_encerrados + " acabou com a página fechada; o bloco foi encerrado no fim do tempo e o dia parou ali. ",
+              tutorial: r.pausa_excedente_ms > 0
+                ? "O tutorial passou 10 minutos do saldo de pausa com a página aberta; esses 10 minutos saem do bloco 1, e o dia parou ali. "
+                : "O tutorial ficou aberto com a página fechada e gastou o saldo de pausa; o dia parou no instante em que ele zerou. ",
+              pausa: r.pausa_excedente_ms > 0
+                ? "A pausa passou 10 minutos do saldo com a página aberta; esses 10 minutos saem do próximo bloco, e o dia parou ali. "
+                : "O saldo de pausa acabou com a página fechada; o dia parou no instante em que ele zerou. ",
+            }[s.suspensa.motivo] || "") : "") + "Ao retomar, a pausa volta a correr de onde parou. Os blocos encerrados não reabrem.</p>" +
           "</div>" +
         "</div>" +
         trilha(form, s) +

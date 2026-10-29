@@ -7,6 +7,8 @@ import { checklistGarantia, leituraProntidao, nomeArea, NOME_STEP, dataBR, pct, 
 import { $, e, icon, toast, confirmar } from "../ui.js";
 import { dayKey } from "../util.js";
 import { pageHead } from "./shared.js";
+import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
+import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -22,6 +24,7 @@ export default {
       ctx.store.listSimulados()
     ]);
     const av = avaliarParticipante(linha, { config, agora });
+    const cartaoBanco = await cartaoBancoQuestoes(ctx, { nbme, config });
     const check = checklistGarantia(linha, av, { config, participante: true });
     const plano = linha.plano || {};
     const stepsPend = ["step1", "step2ck"].filter((s) => !plano[s + "_aprovado"]);
@@ -55,6 +58,8 @@ export default {
             : '<p class="body">Os dois Steps estão marcados como aprovados.</p>') +
         "</section>" +
       "</div>" +
+
+      cartaoBanco +
 
       '<section class="panel" aria-labelledby="d-t"><div class="panel__head"><h2 class="h-sm" id="d-t">Datas das provas</h2>' +
         '<p class="hint">Quando faltar menos de ' + config.nbme_antecedencia_dias + " dias para uma prova, o painel passa a cobrar as autoavaliações daquele Step. Aprovação e data de matrícula são lançadas pela equipe" + (plano.data_matricula ? " (matrícula em " + e(dataBR(plano.data_matricula)) + ")" : "") + ".</p></div>" +
@@ -204,4 +209,35 @@ function blocoSimulados(simulados, config, ctx) {
       '<p class="hint">' + plural(todas.reduce((n, a) => n + a.total, 0), "questão somada", "questões somadas") + "." + (poucas ? " Em cinza, no fim: " + plural(poucas, "área com", "áreas com") + " menos de " + MIN_QUESTOES_AREA + " questões." : "") + " Com poucas questões por área, use como pista, não como diagnóstico.</p></div>";
   }).join("");
   return lista + '<div class="grid2 grid2--top prog-areas">' + porStep + "</div>";
+}
+
+/* Cartão resumido do banco de questões: probabilidade de aprovação de cada Step pelo
+   banco (plataforma/js/banco-aluno.js), rótulo de confiança e a área que mais derruba
+   a probabilidade. O painel completo fica em ../questoes/#/aprovacao. */
+const pctProb = (p) => (p > 0.995 ? "> 99%" : p < 0.005 ? "< 1%" : Math.round(p * 100) + "%");
+async function cartaoBancoQuestoes(ctx, { nbme, config }) {
+  let corpo;
+  try {
+    const [banco, respostas, modelos] = await Promise.all([carregarBanco({ store: ctx.store }), ctx.store.listRespostas(), ctx.store.getModelosPsicometricos().catch(() => ({}))]);
+    if (!banco.itens.length) corpo = '<p class="body">O banco de questões ainda não está liberado para a sua conta. A equipe ativa a matrícula depois da confirmação da inscrição.</p>';
+    else corpo = ["step1", "step2ck"].map((st) => {
+      const r = resumoAprovacao({ banco, respostas, step: st, modelos, nbme, config, base: "../questoes/#/" });
+      const est = r.est;
+      const conf = est.confianca;
+      const top = (r.contribuicao.sistema || []).find((c) => c.ganho >= 0.005);
+      return '<div class="prog-pr"><p class="prog-pr__t"><b>' + NOME_STEP[st] + "</b> " +
+        (est.n ? '<span class="prog-banco__p">' + pctProb(est.p_aprovacao) + "</span>" : "") +
+        '<span class="prog-chip prog-chip--' + (conf.alta ? "ok" : "aviso") + '">' + (conf.alta ? "Alta confiança" : "Estimativa preliminar") + "</span></p>" +
+        "<p>" + (est.n
+          ? (st === "step2ck" ? "Probabilidade de atingir o padrão de aprovação (218) pelo limiar do banco, " : "Probabilidade de estar acima do limiar de aprovação do banco, ") + "com " + plural(est.n, "item respondido", "itens respondidos") + "." +
+            (conf.alta ? "" : conf.faltam_itens ? " Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para alta confiança." : conf.faltam_sistemas.length ? " Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + "." : "") +
+            (top ? " Área que mais derruba: " + e(nomeChave(st, "sistema", top.chave)) + " (+" + String(Math.round(top.ganho * 1000) / 10).replace(".", ",") + " pontos percentuais em jogo)." : "")
+          : "Ainda sem respostas deste Step no banco de questões.") + "</p></div>";
+    }).join("") + '<p class="hint">Estimativa do banco pelo padrão de Angoff, complementar à EXIT 18. Não é resultado oficial do USMLE nem do NBME.</p>';
+  } catch (err) {
+    console.error(err);
+    corpo = '<p class="body">Não foi possível calcular a estimativa do banco agora.</p>';
+  }
+  return '<section class="panel" aria-labelledby="bq-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="bq-t">Banco de questões: probabilidade de aprovação</h2>' +
+    '<a class="link-btn" href="../questoes/#/aprovacao">' + icon("gauge") + "Abrir o painel</a></div>" + corpo + "</section>";
 }

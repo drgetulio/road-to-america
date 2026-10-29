@@ -10,7 +10,7 @@ import { gerarBancoSintetico } from "../../plataforma/tests/sintetico.mjs";
 import { criarDia, comecarBloco, irParaQuestao, escolherResposta, fecharBloco, definirNotaItem } from "../js/dia-prova.js";
 import {
   corrigirRegistro, estimativaDoSimulado, resultadoEstimado, perfilRelatorio, prioridades, resumoBlocos, itensRevisao,
-  filtrarItens, cardDoItem, linkCriarFlashcard, linhaHistorico, instantaneo, posicaoEscala, CK_PARA_STEP1, ROTULO_CLASSE
+  filtrarItens, itensJaVistos, cardDoItem, linkCriarFlashcard, linhaHistorico, instantaneo, posicaoEscala, CK_PARA_STEP1, ROTULO_CLASSE
 } from "../js/relatorio.js";
 import { preenchimento, retornoSeguro } from "../../anki/js/views/editor.js";
 
@@ -92,10 +92,30 @@ test("examinando no limiar: alta confiança só com P fora de 0,10 a 0,90 (280 i
     const { est } = fazerDia("step1", "S1-C", 0, semente);
     const decidido = est.p_aprovacao >= 0.9 || est.p_aprovacao <= 0.1;
     assert.equal(est.confianca.alta, decidido, "P = " + est.p_aprovacao);
-    assert.equal(resultadoEstimado(est, "step1").confianca, decidido ? "Alta confiança" : "Estimativa preliminar");
-    if (!decidido) preliminares++;
+    const r = resultadoEstimado(est, "step1");
+    assert.equal(r.confianca, decidido ? "Alta confiança" : "Estimativa preliminar");
+    if (!decidido) {
+      preliminares++;
+      assert.equal(r.codigo, "indefinido", "entre 10% e 90% não se escreve Pass nem Fail");
+      assert.doesNotMatch(r.titulo + " " + r.selo, /\b(Pass|Fail)\b/);
+      assert.match(r.frase, /tendência é (Pass|Fail)/);
+    }
   }
   assert.ok(preliminares >= 1, "no limiar, ao menos uma das quatro tentativas fica preliminar");
+});
+
+test("resultado estimado: Pass e Fail só fora da faixa de 10% a 90%; dentro dela, indefinido com a tendência", () => {
+  const base = { confianca: { alta: false } };
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.55 }, "step1").codigo, "indefinido");
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.89 }, "step1").tendencia, "acima");
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.2 }, "step1").tendencia, "abaixo");
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.9 }, "step1").codigo, "pass");
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.1 }, "step1").codigo, "fail");
+  const ck = resultadoEstimado({ ...base, p_aprovacao: 0.6 }, "step2ck");
+  assert.equal(ck.codigo, "indefinido");
+  assert.match(ck.frase, /218/);
+  assert.match(ck.frase, /acima do padrão/);
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.95 }, "step2ck").codigo, "atinge");
 });
 
 test("Step 2 CK: probabilidade de atingir o padrão, sem nota de três dígitos inventada", () => {
@@ -158,4 +178,20 @@ test("histórico e escala do perfil", () => {
   assert.equal(posicaoEscala(0), 50);
   assert.equal(posicaoEscala(-9), 0);
   assert.equal(posicaoEscala(9), 100);
+});
+
+test("itens já vistos: conta só respostas de outras sessões anteriores ao início do dia", () => {
+  const { reg } = fazerDia("step1", "S1-A", 0.5, 21);
+  const [a, b, c] = reg.formulario.blocos[0];
+  const antes = new Date(Date.parse(reg.sessao.inicio) - 86400000).toISOString();
+  const depois = new Date(Date.parse(reg.sessao.inicio) + 60000).toISOString();
+  const r = itensJaVistos(reg, [
+    { questao_id: a, respondida_em: antes, sessao_id: "outro" },
+    { questao_id: b, respondida_em: depois, sessao_id: reg.id },
+    { questao_id: c, respondida_em: depois, sessao_id: "outro" },
+    { questao_id: "fora-do-form", respondida_em: antes }
+  ]);
+  assert.equal(r.n, 1);
+  assert.deepEqual(r.ids, [a]);
+  assert.equal(r.total, 280);
 });

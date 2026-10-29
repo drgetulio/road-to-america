@@ -46,3 +46,22 @@ export function variacao(v) {
 export function avisoLgpd(texto = "") {
   return '<p class="lgpd">' + icon("lock-simple") + "<span>" + (texto || "Dados usados só para o acompanhamento pedagógico e a verificação das condições da garantia, conforme a <a href=\"../privacidade.html\">Política de Privacidade</a>.") + "</span></p>";
 }
+
+/* Abas de Step (Step 1 e Step 2 CK) para as telas do banco; outros parâmetros ficam */
+export function abasStep(rota, step, params = null) {
+  const q = (s) => { const p = new URLSearchParams(params || ""); p.set("step", s); return "#/" + rota + "?" + p.toString(); };
+  return '<nav class="tabs" aria-label="Step"><a class="tab" href="' + e(q("step1")) + '"' + (step === "step1" ? ' aria-current="page"' : "") + ">Step 1</a>" +
+    '<a class="tab" href="' + e(q("step2ck")) + '"' + (step === "step2ck" ? ' aria-current="page"' : "") + ">Step 2 CK</a></nav>";
+}
+
+/* Aviso fixo das telas do banco no modo demonstração */
+export function avisoDemoBanco(ctx) {
+  if (ctx.modo !== "local") return "";
+  return '<p class="alert alert--aviso demo-banco">' + icon("info") + "<span><span class=\"selo-demo\">dados de demonstração</span> As respostas, os desfechos e os reportes desta tela são fictícios: vêm de examinandos simulados por um modelo de Rasch com habilidades conhecidas (<code>plataforma/js/respostas-demo.js</code>). Alguns itens recebem de propósito um defeito plantado, para os alertas terem o que mostrar; isso não diz nada sobre a qualidade das questões públicas.</span></p>";
+}
+
+/* Rótulo de confiança da estimativa do banco */
+export function chipConfianca(est) {
+  if (!est) return '<span class="gar gar--neutro">sem respostas</span>';
+  return est.confianca?.alta ? '<span class="gar gar--ok">' + icon("seal-check") + "Alta confiança</span>" : '<span class="gar gar--aviso">Estimativa preliminar</span>';
+}

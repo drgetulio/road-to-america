@@ -117,7 +117,8 @@ test("reportes: aluno cria (sempre aberto) e vê os seus; admin vê a fila e res
   await assert.rejects(() => s.resolverReporte(r.id, { status: "resolvido" }), PermissionError);
   s.setDemoRole("admin");
   const fila = await s.listReportes({ todos: true, status: "aberto" });
-  assert.equal(fila.length, 1);
+  assert.equal(fila.filter((x) => !x.sintetico).length, 1);
+  assert.ok(fila.filter((x) => x.sintetico).length >= 2, "a demonstração traz reportes fictícios sobre itens com defeito plantado");
   const ok = await s.resolverReporte(r.id, { status: "rejeitado", resposta: "Gabarito conferido com as listas do CDC." });
   assert.equal(ok.resolvido_por, "demo-admin");
   assert.ok(ok.resolvido_em);
@@ -132,6 +133,7 @@ test("resultados oficiais: só o admin lança; Step 1 sem nota; Step 2 CK com no
   const ck = await s.saveResultadoOficial({ user_id: "demo-participante", step: "step2ck", data: "2026-08-01", escore: 217 });
   assert.equal(ck.resultado, "fail");
   await assert.rejects(() => s.saveResultadoOficial({ user_id: "demo-participante", step: "step2ck", data: "2024-08-01", escore: 216 }), /anteriores/);
+  await assert.rejects(() => s.saveResultadoOficial({ user_id: "demo-participante", step: "step2ck", data: "2026-08-01", escore: 230, resultado: "fail" }), /não combina/);
   s.setDemoRole("participante");
   assert.equal((await s.listResultadosOficiais()).length, 1);
 });
@@ -231,7 +233,14 @@ test("rotinas do admin: recalibração com a turma (só itens com dados suficien
   await desfazerCalibracao({ store: s, ids: cal.map((q) => q.id) });
   assert.equal((await carregarBanco({ store: s })).steps.step1.filter((q) => q.b_calibrado !== null).length, 0);
   const d = await calibrarDesfechos({ store: s, step: "step1" });
-  assert.equal(d.pass_fail.suficiente, false, "sem resultados oficiais, o modelo de Pass/Fail não é ajustado");
+  /* na demonstração, os desfechos fictícios das turmas anteriores bastam para a regressão */
+  assert.equal(d.pass_fail.suficiente, true, "desfechos fictícios suficientes na demonstração");
+  assert.ok(d.pass_fail.beta1 > 0 && d.pass_fail.auc > 0.8, "quem tem theta maior passa mais");
+  const reais = new LocalStore({ storage: memoria(), bancosSimulado: { step1: [], step2ck: [] }, questoes: publicos });
+  await reais.init({ seeds: [] });
+  reais.setDemoRole("admin");
+  reais._demo = async () => ({ respostas: [], desfechos: [], reportes: [] });
+  assert.equal((await calibrarDesfechos({ store: reais, step: "step1" })).pass_fail.suficiente, false, "sem resultados oficiais, o modelo de Pass/Fail não é ajustado");
   assert.ok(d.n.nbme > 0, "a coorte de demonstração tem NBMEs para a regressão de escore");
   const m = await salvarModelo({ store: s, step: "step1", desfechos: d });
   assert.equal(m.demonstracao, true);
@@ -256,4 +265,109 @@ test("SupabaseStore: com schema antigo (sem profiles.ativo), o perfil continua l
   assert.equal(s.user.papel, "admin");
   assert.equal(s.user.ativo, true);
   assert.equal(selects.length, 2);
+});
+
+test("revisão de itens (LocalStore): gabarito com versão, recorreção das respostas, marca de revisão, status com motivo e histórico", async () => {
+  const s = await loja();
+  s.setDemoRole("participante");
+  const q1 = publicos.find((q) => q.id === "s1-001");
+  const nova = q1.alternativas.map((a) => a.letra).find((l) => l !== q1.correta);
+  await s.saveRespostas([resp("s1-001", nova), resp("s1-001", q1.correta)]);
+  await assert.rejects(() => s.editarGabarito("s1-001", { correta: nova, motivo: "Tentativa do aluno" }), PermissionError);
+  await assert.rejects(() => s.marcarRevisaoQuestao("s1-001", { revisao: true }), PermissionError);
+  await assert.rejects(() => s.listHistoricoQuestao("s1-001"), PermissionError);
+  s.setDemoRole("admin");
+  await s.salvarCalibracao([{ id: "s1-001", b: 0.2, ep: 0.3, n: 40 }]);
+  await assert.rejects(() => s.editarGabarito("s1-001", { correta: nova, motivo: "ok" }), /motivo/);
+  await assert.rejects(() => s.editarGabarito("s1-001", { correta: "J", motivo: "Letra que não existe" }), /alternativas/);
+  await assert.rejects(() => s.editarGabarito("s1-001", { correta: q1.correta, motivo: "Mesma alternativa de antes" }), /já é o gabarito/);
+  const r = await s.editarGabarito("s1-001", { correta: nova, motivo: "Referência revista pela equipe" });
+  assert.deepEqual([r.versao, r.de, r.para, r.recorrigidas], [2, q1.correta, nova, 2]);
+  const banco = await carregarBanco({ store: s, incluirInativos: true });
+  const it = banco.porId.get("s1-001");
+  assert.equal(it.correta, nova);
+  assert.equal(it.versao, 2);
+  assert.ok(!Number.isFinite(it.b_calibrado), "versão nova apaga a calibração");
+  const minhas = (await s.listRespostas({ userId: "demo-participante" })).filter((x) => x.questao_id === "s1-001");
+  assert.deepEqual(minhas.map((x) => [x.correta, x.versao_item]), [[true, 2], [false, 2]]);
+  /* as respostas fictícias da demonstração seguem o gabarito em vigor */
+  const fict = (await s.listRespostas({ todos: true })).filter((x) => x.sintetico && x.questao_id === "s1-001");
+  assert.ok(fict.length > 0 && fict.every((x) => x.correta === (x.resposta === nova) && x.versao_item === 2));
+  /* estatísticas só da versão atual: tudo foi levado à versão 2 */
+  const est = (await s.getEstatisticasItens({ step: "step1" })).find((x) => x.questao_id === "s1-001");
+  assert.ok(est.n >= 1);
+  await s.marcarRevisaoQuestao("s1-002", { revisao: true, nota: "p abaixo de 0,20" });
+  await s.setStatusQuestao("s1-003", "suspenso", { motivo: "Valores laboratoriais desatualizados" });
+  const lista = await s.listQuestoes({ step: "step1", incluirInativas: true });
+  assert.equal(lista.find((x) => x.id === "s1-002").em_revisao, true);
+  assert.equal(lista.find((x) => x.id === "s1-002").revisao_nota, "p abaixo de 0,20");
+  assert.equal(lista.find((x) => x.id === "s1-003").status, "suspenso");
+  const hist = await s.listHistoricoQuestao();
+  assert.deepEqual(hist.map((h) => [h.questao_id, h.acao, h.de, h.para]), [["s1-001", "gabarito", q1.correta, nova], ["s1-002", "revisao", "nao", "sim"], ["s1-003", "status", "ativo", "suspenso"]]);
+  assert.equal(hist[0].motivo, "Referência revista pela equipe");
+  assert.equal(hist[0].editor_id, "demo-admin");
+  assert.equal((await s.listHistoricoQuestao("s1-003"))[0].motivo, "Valores laboratoriais desatualizados");
+  /* sem recorreção as respostas ficam na versão 2; uma recorreção seguinte (versão 3
+     para 4) só mexe nas respostas da versão em vigor, e as da versão 2 continuam fora */
+  const r3 = await s.editarGabarito("s1-001", { correta: q1.correta, motivo: "Volta ao gabarito original", recorrigir: false });
+  assert.deepEqual([r3.versao, r3.recorrigidas], [3, 0]);
+  const terceira = q1.alternativas.map((a) => a.letra).find((l) => l !== q1.correta && l !== nova);
+  const r4 = await s.editarGabarito("s1-001", { correta: terceira, motivo: "Teste de recorreção restrita", recorrigir: true });
+  assert.equal(r4.versao, 4);
+  const depois = (await s.listRespostas({ userId: "demo-participante" })).filter((x) => x.questao_id === "s1-001");
+  assert.deepEqual(depois.map((x) => x.versao_item), [2, 2], "respostas da versão 2 não sobem para a 4");
+  s.setDemoRole("participante");
+  assert.equal((await s.listQuestoes({ step: "step1" })).find((x) => x.id === "s1-002").em_revisao, undefined, "o aluno não vê a marca de revisão");
+});
+
+test("demonstração: reportes e desfechos fictícios aparecem só para o admin, com selo, e não são apagados", async () => {
+  const s = await loja();
+  s.setDemoRole("admin");
+  const reps = await s.listReportes({ todos: true });
+  const fict = reps.find((r) => r.sintetico);
+  assert.ok(fict && fict.status === "aberto");
+  const res = await s.resolverReporte(fict.id, { status: "em_analise", resposta: "Conferindo a referência." });
+  assert.equal(res.status, "em_analise");
+  assert.equal((await s.listReportes({ todos: true })).find((r) => r.id === fict.id).status, "em_analise", "a resolução do reporte fictício fica gravada");
+  const desf = await s.listResultadosOficiais({ todos: true });
+  assert.ok(desf.length > 20 && desf.every((d) => d.sintetico && d.escore === null && ["pass", "fail"].includes(d.resultado)), "só Pass/Fail fictício, sem nota de três dígitos");
+  await assert.rejects(() => s.deleteResultadoOficial(desf[0].id), /fictício/);
+  s.setDemoRole("participante");
+  assert.equal((await s.listReportes({ todos: true })).filter((r) => r.sintetico).length, 0);
+  assert.equal((await s.listResultadosOficiais({ todos: true })).length, 0);
+});
+
+test("revisão de itens (SupabaseStore): passa pelas funções do banco com os parâmetros do schema", async () => {
+  const sql = readFileSync(new URL("../../supabase/schema.sql", import.meta.url), "utf8");
+  const chamadas = [];
+  const s = new SupabaseStore({ url: "x", anonKey: "y" });
+  const tabela = (nome) => {
+    const q = { nome, ops: [] };
+    const p = new Proxy({}, { get(_, k) { if (k === "then") return (ok) => ok({ data: [], error: null }); return (...a) => { q.ops.push([k, ...a]); return p; }; } });
+    chamadas.push(q);
+    return p;
+  };
+  s.client = {
+    from: tabela,
+    rpc: (nome, params) => { chamadas.push({ rpc: nome, params }); return Promise.resolve({ data: { id: params.p_id, status: params.p_status, em_revisao: params.p_revisao, revisao_nota: params.p_nota, versao: 2 }, error: null }); }
+  };
+  s._user = { id: "a", papel: "admin", nome: "A", email: "a@x" };
+  await s.editarGabarito("R2A-S1-0001", { correta: "b", motivo: "Referência revista" });
+  await s.marcarRevisaoQuestao("R2A-S1-0001", { revisao: true, nota: "p baixo" });
+  assert.deepEqual(await s.setStatusQuestao("R2A-S1-0001", "suspenso", { motivo: "Retirado" }), { id: "R2A-S1-0001", status: "suspenso" });
+  await s.listHistoricoQuestao("R2A-S1-0001");
+  await assert.rejects(() => s.editarGabarito("R2A-S1-0001", { correta: "B", motivo: "x" }), /motivo/);
+  for (const c of chamadas) {
+    if (c.rpc) {
+      const m = new RegExp("create or replace function public\\." + c.rpc + "\\(([^)]*)\\)").exec(sql);
+      assert.ok(m, "função " + c.rpc);
+      for (const k of Object.keys(c.params)) assert.ok(m[1].includes(k + " "), "parâmetro " + k + " de " + c.rpc);
+    } else {
+      assert.match(sql, new RegExp("create table if not exists public\\." + c.nome + " \\("));
+      for (const op of c.ops) if (op[0] === "eq" || op[0] === "order") assert.match(sql, new RegExp("\\n\\s+" + op[1] + "\\s"), "coluna " + op[1]);
+    }
+  }
+  assert.equal(chamadas[0].params.p_correta, "B", "letra em maiúscula");
+  s._user = { id: "p", papel: "participante", nome: "P", email: "p@x" };
+  await assert.rejects(() => s.editarGabarito("R2A-S1-0001", { correta: "B", motivo: "Referência revista" }), PermissionError);
 });

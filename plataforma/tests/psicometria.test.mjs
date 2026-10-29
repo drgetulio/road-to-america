@@ -119,7 +119,7 @@ test("perfil por área: abaixo, igual ou acima do examinando no limiar, com ince
   assert.ok(Math.abs(p.meio.esperado_limiar - 0.65) < 1e-9);
 });
 
-test("estimarAluno: primeira resposta conta; tutor com peso 0,5; em branco no banco sai e no simulado é erro; avisos do Step 2 CK", () => {
+test("estimarAluno: primeira resposta conta; tutor com peso 0,5; em branco no tutor sai e no cronometrado é erro; avisos do Step 2 CK", () => {
   const banco = montarBanco(gerarBancoSintetico({ porStep: 120, semente: 8 }));
   const ids = banco.steps.step2ck.map((q) => q.id);
   const corretas = new Map(banco.steps.step2ck.map((q) => [q.id, q.correta]));
@@ -130,14 +130,16 @@ test("estimarAluno: primeira resposta conta; tutor com peso 0,5; em branco no ba
     { questao_id: ids[1], resposta: null, correta: false, modo: "cronometrado", origem: "banco", respondida_em: t(3) },
     { questao_id: ids[2], resposta: null, correta: false, modo: "cronometrado", origem: "simulado", respondida_em: t(4) },
     { questao_id: ids[3], resposta: corretas.get(ids[3]), correta: true, modo: "tutor", origem: "banco", respondida_em: t(5) },
-    { questao_id: "fora-do-banco", resposta: "A", correta: true, modo: "cronometrado", origem: "banco", respondida_em: t(6) }
+    { questao_id: "fora-do-banco", resposta: "A", correta: true, modo: "cronometrado", origem: "banco", respondida_em: t(6) },
+    { questao_id: ids[4], resposta: null, correta: false, modo: "tutor", origem: "banco", respondida_em: t(7) }
   ];
   const { usadas, ignoradas } = prepararRespostas(respostas, banco.porId, { step: "step2ck" });
-  assert.deepEqual(usadas.map((u) => [u.questao_id, u.x, u.w]), [[ids[0], 1, 1], [ids[2], 0, 1], [ids[3], 1, 0.5]]);
+  /* em branco no bloco cronometrado do banco é erro, como na prova; em branco no tutor sai */
+  assert.deepEqual(usadas.map((u) => [u.questao_id, u.x, u.w]), [[ids[0], 1, 1], [ids[1], 0, 1], [ids[2], 0, 1], [ids[3], 1, 0.5]]);
   assert.equal(ignoradas, 1);
   const e = estimarAluno({ step: "step2ck", respostas, itens: banco.porId, sistemas: sistemasDoOutline("step2ck") });
-  assert.equal(e.n, 3);
-  assert.equal(e.n_efetivo, 2.5);
+  assert.equal(e.n, 4);
+  assert.equal(e.n_efetivo, 3.5);
   assert.equal(e.base, "angoff");
   assert.equal(e.oficial, false);
   assert.equal(e.confianca.rotulo, "estimativa_preliminar");
@@ -226,6 +228,32 @@ test("análise de itens: p, ponto-bisserial corrigida conferida à mão, distrat
   assert.ok(bom.infit > 0.7 && bom.infit < 1.3 && bom.outfit > 0.7 && bom.outfit < 1.3, "item que segue o modelo fica dentro de 0,7 a 1,3");
   assert.equal(bom.revisar, false);
   assert.ok(ab.resumo.a_revisar >= 2);
+
+  /* item que segue o Rasch, mas cujo Angoff errou a dificuldade em 1 logit: o ajuste
+     mede a forma da curva, então não deve acusar desajuste */
+  const deslocado = [];
+  const itensD = new Map([...itensBig].filter(([k]) => k.startsWith("I")));
+  itensD.set("ANGOFF_ERRADO", { id: "ANGOFF_ERRADO", step: "step1", correta: "A", b_angoff: -1, alternativas: ["A", "B", "C", "D", "E"].map((l) => ({ letra: l })) });
+  thetas.forEach((t, j) => {
+    for (let i = 0; i < 30; i++) { const ok = random() < expit(t - (i - 15) / 10); deslocado.push({ pessoa: "p" + j, questao_id: "I" + i, resposta: ok ? "A" : "C", correta: ok }); }
+    const ok = random() < expit(t - 0);
+    deslocado.push({ pessoa: "p" + j, questao_id: "ANGOFF_ERRADO", resposta: ok ? "A" : "C", correta: ok });
+  });
+  const ad = analisarItens(deslocado, itensD).itens.find((x) => x.questao_id === "ANGOFF_ERRADO");
+  assert.ok(ad.b_ajuste > -0.4 && ad.b_ajuste < 0.4, "b do ajuste perto do verdadeiro (0): " + ad.b_ajuste);
+  assert.ok(!ad.alertas.some((al) => al.codigo === "desajuste_rasch"), "Angoff deslocado não é desajuste: infit " + ad.infit + ", outfit " + ad.outfit);
+});
+
+test("prepararRespostas: resposta a uma versão anterior do item não é pontuada e consome a primeira exposição", () => {
+  const itens = new Map([["X", { id: "X", step: "step1", versao: 2, b_angoff: 0 }], ["Y", { id: "Y", step: "step1", versao: 1, b_angoff: 0 }]]);
+  const rs = [
+    { questao_id: "X", correta: false, versao_item: 1, modo: "cronometrado", origem: "banco", resposta: "A", respondida_em: "2026-10-01T10:00:00Z" },
+    { questao_id: "X", correta: true, versao_item: 2, modo: "cronometrado", origem: "banco", resposta: "B", respondida_em: "2026-10-02T10:00:00Z" },
+    { questao_id: "Y", correta: true, versao_item: null, modo: "cronometrado", origem: "banco", resposta: "B", respondida_em: "2026-10-02T10:00:00Z" }
+  ];
+  const { usadas, ignoradas } = prepararRespostas(rs, itens, { step: "step1" });
+  assert.deepEqual(usadas.map((u) => u.questao_id), ["Y"]);
+  assert.equal(ignoradas, 1);
 });
 
 test("recuperação de parâmetros do Rasch: a recalibração regularizada recupera as dificuldades verdadeiras", () => {
