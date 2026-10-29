@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Serum vitamin B12 and TSH",
-        "quiz": "B12 e TSH"
+        "quiz": "B12 and TSH"
       },
       "B": {
         "texto": "Serum ceruloplasmin and urine copper",
-        "quiz": "Ceruloplasmina"
+        "quiz": "Ceruloplasmin, urine Cu"
       },
       "C": {
         "texto": "CSF 14-3-3 protein",
-        "quiz": "14-3-3 no líquor"
+        "quiz": "CSF 14-3-3"
       },
       "D": {
         "texto": "APOE genotyping",
-        "quiz": "Genótipo APOE"
+        "quiz": "APOE genotype"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Mulher de 72 anos com esquecimento progressivo há 1 ano, ainda independente para se vestir e tomar banho, sem alteração de marcha, incontinência ou alucinações. Hoje, no Dia Mundial do Alzheimer, a pergunta é sobre os exames que procuram causas tratáveis.",
+    "contexto": "Dia Mundial do Alzheimer. Uma questão com calma sobre o começo da investigação: antes de dar nome ao esquecimento, o plantão procura o que pode ser revertido.",
     "palavras_chave": [
-      "progressive forgetfulness",
-      "independent in self-care",
-      "MoCA 20/30",
-      "cognitive workup"
+      "memory concerns",
+      "older adult",
+      "primary care",
+      "laboratory workup"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Esquecimento há 1 ano, MoCA 20 e exame normal: quais exames de sangue?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquecimento há 1 ano, MoCA 20 e exame normal: quais exames de sangue?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

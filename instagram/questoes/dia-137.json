@@ -17,15 +17,15 @@
   "gancho_apoio": "O Garçom Espetinho trouxe três blocos de calendário, e nenhum tem a mesma espessura.",
   "imagem": {
     "arquivo": "dia-137.png",
-    "cena": "Garçom Espetinho, numa papelaria de bairro, segura três blocos de calendário sem números de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. A plaquinha verde e vermelha do rodízio está pendurada de lado no balcão.",
+    "cena": "Garçom Espetinho, numa papelaria de bairro, segura três blocos de calendário sem números, de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho numa papelaria com três blocos de calendário: folha solta, bloco médio e bloco grosso."
+    "alt": "Garçom Espetinho com três blocos de calendário: folha solta, bloco médio e bloco grosso."
   },
   "imagem_macete": {
     "arquivo": "dia-137-macete.png",
-    "cena": "Os três blocos ficam em fila no balcão, do mais fino ao mais grosso, como uma régua de tempo. O bloco médio recebe o lado verde da plaquinha; a folha solta ganha uma fita amarela e o bloco grosso, uma fita navy.",
+    "cena": "Callback: os três blocos ficam em fila no balcão, do mais fino ao mais grosso, como uma régua de tempo, e o bloco médio recebe o lado verde da plaquinha. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Os três blocos em fila como régua de tempo; o bloco médio recebe a plaquinha verde."
+    "alt": "Os três blocos em fila como régua de tempo; o bloco médio ganha o lado verde da plaquinha."
   },
   "questao": {
     "vinheta": "A 23-year-old man has heard voices commenting on his actions and has believed that his neighbors are monitoring him for the past 3 months. He has stopped attending classes. He has no history of substance use, medical illness or prominent mood episodes.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Brief psychotic disorder",
-        "quiz": "Psicótico breve"
+        "quiz": "Brief psychotic disorder"
       },
       "B": {
         "texto": "Schizophreniform disorder",
-        "quiz": "Esquizofreniforme"
+        "quiz": "Schizophreniform"
       },
       "C": {
         "texto": "Schizophrenia",
-        "quiz": "Esquizofrenia"
+        "quiz": "Schizophrenia"
       },
       "D": {
-        "texto": "Schizoaffective disorder",
-        "quiz": "Esquizoafetivo"
+        "texto": "Schizotypal personality disorder",
+        "quiz": "Schizotypal PD"
       }
     },
     "correta": "B"
@@ -64,7 +64,7 @@
     "erradas": {
       "A": "O transtorno psicótico breve dura de 1 dia a menos de 1 mês e termina com volta ao funcionamento anterior.",
       "C": "A esquizofrenia exige sinais da doença por pelo menos 6 meses, contando pródromo e fase residual.",
-      "D": "O esquizoafetivo pede episódio de humor importante junto com a psicose e pelo menos 2 semanas de psicose sem sintomas de humor."
+      "D": "O transtorno de personalidade esquizotípica é um padrão duradouro, desde o começo da vida adulta, de crenças estranhas, pensamento mágico e desconforto social, sem meses de alucinações e delírios francos."
     },
     "macete": {
       "frase": "Régua da psicose: *menos de 1 mês* breve, *1 a 6* esquizofreniforme, *6 ou mais* esquizofrenia",
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta, estação psiquiatria. Nesse grupo de diagnósticos, o que separa um do outro é a duração dos sintomas, e a prova muda só esse número.",
+    "contexto": "Rodízio de Quinta, estação psiquiatria. Nesse grupo de diagnósticos, o que separa um do outro é o tempo, e a prova muda só esse número. No bloco 7, você também já não lembra que dia é.",
     "palavras_chave": [
       "auditory hallucinations",
       "persecutory delusions",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Vozes e delírio há 3 meses, sem droga nem episódio de humor: qual o diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vozes e delírio há 3 meses, sem droga nem episódio de humor: qual o diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-21",
   "tom": null,
-  "gancho": "Febre e neutrófilos em 300: *a pizza do app vai perder essa corrida*",
-  "gancho_apoio": "Dez dias depois da quimioterapia, febre e neutrófilos em 300. Hemoculturas colhidas. Qual é o próximo passo?",
+  "gancho": "Plantão de Terça: *a corrida contra o relógio* da madrugada",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-261.png",
-    "cena": "Três da manhã. Na porta da copa do plantão, Dona Térmica, a garrafa térmica de café, segura um cronômetro gigante e torce por um motoboy de capacete verde que acelera pela avenida com uma caixa térmica fechada na garupa. Na calçada, poucos glóbulos brancos de escudinho olham preocupados. Na parede, o relógio sem números marca 3 horas.",
+    "cena": "Três da manhã, na porta da copa do plantão: Dona Térmica segura um cronômetro gigante e olha a avenida vazia. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica cronometra o motoboy da madrugada"
+    "alt": "Dona Térmica segura um cronômetro gigante e olha a avenida vazia de madrugada"
   },
   "imagem_macete": {
     "arquivo": "dia-261-macete.png",
-    "cena": "O motoboy chega antes de o ponteiro do cronômetro completar uma volta e abre a caixa: dela sai uma bolsa de soro em forma de escudo largo, que rebate bichinhos esverdeados em forma de bastão. Uma seringa extra continua guardada na caixa, esperando indicação. Dona Térmica serve um café de comemoração.",
+    "cena": "Callback: um motoboy de capacete verde chega antes de o cronômetro completar uma volta e abre a caixa: dela sai uma bolsa de soro em forma de escudo largo, que rebate bichinhos esverdeados em forma de bastão. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Neutropenia febril: anti-Pseudomonas em até 1 hora"
+    "alt": "O motoboy chega a tempo e a bolsa de soro em escudo rebate os bastõezinhos verdes"
   },
   "questao": {
     "vinheta": "A 58-year-old woman received chemotherapy for breast cancer 10 days ago. Today her temperature is 38.6°C, her heart rate 104/min, and her blood pressure 118/72 mm Hg. Her port site is clean, and there are no focal findings. Absolute neutrophil count is 300/mm3. Blood cultures have been drawn.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Intravenous cefepime",
-        "quiz": "Cefepima IV"
+        "quiz": "IV cefepime"
       },
       "B": {
         "texto": "Intravenous vancomycin alone",
-        "quiz": "Só vancomicina"
+        "quiz": "IV vancomycin alone"
       },
       "C": {
         "texto": "Intravenous fluconazole",
-        "quiz": "Fluconazol IV"
+        "quiz": "IV fluconazole"
       },
       "D": {
         "texto": "Await culture results before antibiotics",
-        "quiz": "Esperar cultura"
+        "quiz": "Await cultures"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Febre 10 dias depois do ciclo de quimioterapia, neutrófilos em 300 e hemoculturas já colhidas. Qual é o próximo passo?",
+    "contexto": "Plantão de Terça com a Dona Térmica, num tema de oncologia tratado com cuidado. Uma paciente em tratamento chega com febre, e a vinheta traz os exames e o que já foi colhido. Qual é o próximo passo?",
     "palavras_chave": [
-      "chemotherapy",
+      "oncology",
       "fever",
-      "neutrophil count 300",
-      "port site"
+      "emergency department",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre 10 dias após a quimioterapia e neutrófilos em 300: qual é a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre 10 dias após a quimioterapia e neutrófilos em 300: qual é a conduta?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

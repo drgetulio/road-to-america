@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-03",
   "tom": null,
-  "gancho": "Coração tentando sambar *no metrô das 18h*: o que está apertando?",
-  "gancho_apoio": "Seis horas depois de uma ablação, a pressão despencou.",
+  "gancho": "Seis horas depois da ablação, *a pressão foi embora sem avisar*",
+  "gancho_apoio": "Dona Térmica já viu esse aperto às 3 da manhã. Você vê na vinheta.",
   "imagem": {
     "arquivo": "dia-121.png",
-    "cena": "Num vagão de metrô lotado, um coração simpático de cocar de Carnaval tenta sambar espremido entre passageiros em forma de balões. Dona Térmica, segurando a barra de apoio, confere no pulso um relógio sem números nas 3.",
+    "cena": "Na enfermaria à noite, Dona Térmica, de prancheta, observa um monitor simpático em forma de coração que pisca devagar, ao lado de um relógio sem números nas 3. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Um coração de cocar tenta sambar espremido num vagão de metrô lotado de passageiros-balão; Dona Térmica segura a barra de apoio."
+    "alt": "Dona Térmica observa um monitor em forma de coração que pisca devagar, ao lado de um relógio nas 3."
   },
   "imagem_macete": {
     "arquivo": "dia-121-macete.png",
-    "cena": "Callback: o vagão está cheio de água até a cintura do coração. Um canudo comprido e gentil drena a água pela porta de baixo, e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho, mangueira estufada e tamborim com toalha.",
+    "cena": "Callback: um coração simpático, apertado até a cintura dentro de uma bolsa de água, fica livre quando um canudo comprido e gentil drena a água, e ele abre os braços sambando, de fantasia de purpurina. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A água do vagão é drenada por um canudo e o coração samba aliviado, ao lado de um balão murcho, uma mangueira estufada e um tamborim com toalha."
+    "alt": "Um canudo comprido drena a bolsa de água que apertava o coração, que volta a sambar de fantasia de purpurina."
   },
   "questao": {
     "vinheta": "Six hours after catheter ablation for atrial fibrillation, a 64-year-old woman becomes dyspneic and lightheaded. BP 84/62 mm Hg; heart rate 122/min. Systolic pressure falls 16 mm Hg on inspiration. Jugular veins are distended, heart sounds are muffled, the trachea is midline and the lungs are clear.",
@@ -45,7 +45,7 @@
       },
       "D": {
         "texto": "Massive pulmonary embolism",
-        "quiz": "Massive PE"
+        "quiz": "Massive pulmonary embolism"
       }
     },
     "correta": "B"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Seis horas depois de uma ablação, pressão de 84/62, jugulares cheias, bulhas abafadas, traqueia no meio e pulmões limpos. Na inspiração, a sistólica cai 16. Dona Térmica, que já viu esse aperto às 3 da manhã, quer o diagnóstico.",
+    "contexto": "Plantão de Terça com a Dona Térmica: um procedimento para fibrilação atrial, uma enfermaria tranquila e, de repente, uma paciente que fica tonta. O exame à beira do leito está na vinheta, e ele fecha o diagnóstico.",
     "palavras_chave": [
       "catheter ablation",
       "hypotension",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Pós-ablação: hipotensão, jugular cheia e bulhas abafadas. Diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pós-ablação: hipotensão, jugular cheia e bulhas abafadas. Diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

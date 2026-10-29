@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-01",
   "tom": null,
-  "gancho": "Tia Meia-Vida e o mundo pintado de *amarelo canarinho* sem ser dia de jogo",
-  "gancho_apoio": "Digoxina antiga, amiodarona nova na receita e halos amarelos em volta das luzes.",
+  "gancho": "Tia Meia-Vida e *um mundo que mudou de cor* sem ser dia de jogo",
+  "gancho_apoio": "Um remédio antigo, um remédio novo na receita e um sintoma que ninguém esperava.",
   "imagem": {
     "arquivo": "dia-180.png",
-    "cena": "Num canteiro de dedaleiras roxas, a Tia Meia-Vida aponta para a fachada de uma loja com quatro entradas diferentes, todas funcionando: uma porta giratória, uma porta de correr, uma catraca estreita e uma porta vaivém. Bolinhas navy e verdes entram e saem como clientes.",
+    "cena": "Na calçada da farmácia, a Tia Meia-Vida olha pela vitrine de uma loja vizinha onde bolinhas navy e verdes entram e saem como clientes. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida num canteiro de dedaleiras aponta uma loja com quatro entradas por onde passam bolinhas."
+    "alt": "A Tia Meia-Vida olha a vitrine de uma loja vizinha por onde bolinhas navy e verdes entram e saem."
   },
   "imagem_macete": {
     "arquivo": "dia-180-macete.png",
-    "cena": "Um galho de dedaleira trava a porta giratória, enquanto as outras três entradas seguem funcionando: as bolinhas verdes (potássio) se amontoam do lado de fora, as navy (sódio) ficam presas dentro, e a vitrine fica amarela canarinho. A Tia mostra um frasco de antídoto com um anticorpo em Y.",
-    "alt": "Um galho de dedaleira trava a porta giratória; bolinhas presas dos dois lados e a vitrine fica amarela."
+    "cena": "Callback: um galho de dedaleira trava a porta giratória da loja, as bolinhas verdes se amontoam do lado de fora e a vitrine fica amarela canarinho, enquanto a Tia Meia-Vida segura um frasco de antídoto. Fundo limpo.",
+    "alt": "Um galho de dedaleira trava a porta giratória, as bolinhas verdes ficam fora e a vitrine fica amarela."
   },
   "questao": {
     "vinheta": "An 80-year-old woman takes digoxin for heart failure with atrial fibrillation. Two weeks after starting amiodarone, she has nausea, confusion, and yellow halos around lights. Serum potassium is 6.0 mEq/L, and ECG shows frequent ventricular ectopy.",
@@ -35,15 +35,15 @@
       },
       "B": {
         "texto": "Na+/Ca2+ exchanger",
-        "quiz": "Trocador Na/Ca"
+        "quiz": "Na/Ca exchanger"
       },
       "C": {
         "texto": "L-type calcium channel",
-        "quiz": "Canal de Ca tipo L"
+        "quiz": "L-type Ca channel"
       },
       "D": {
         "texto": "Na-K-2Cl cotransporter",
-        "quiz": "Cotransp. Na-K-2Cl"
+        "quiz": "Na-K-2Cl cotransporter"
       }
     },
     "correta": "A"
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Tia Meia-Vida e um vaso de dedaleiras. Paciente em uso de digoxina, remédio novo na receita e um mundo que ficou amarelo. Qual proteína a droga trava?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: uma receita com remédio antigo e remédio novo, e sintomas que a vinheta descreve. Qual proteína a droga trava?",
     "palavras_chave": [
       "heart failure",
       "amiodarone started",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Digoxina com amiodarona, visão amarela e K 6,0: qual proteína ela inibe?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Digoxina com amiodarona, visão amarela e K 6,0: qual proteína ela inibe?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

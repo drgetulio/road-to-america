@@ -41,8 +41,8 @@ import { normalizarItem, validarItem, nomesLaboratoriais, contarPor, enriquecerC
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const IGNORAR = /^(manifest|formularios|referencia-.*|blueprint-.*|.*\.relatorio)\.json$/i;
-/* pastas de apoio dos autores (geradores, versões antigas do blueprint, fontes) */
-const PASTAS_IGNORADAS = /^(ferramentas|versoes|fontes-.*|node_modules|\..*)$/i;
+/* pastas de apoio dos autores (geradores, versões antigas do blueprint, cópias da auditoria, fontes) */
+const PASTAS_IGNORADAS = /^(ferramentas|versoes|auditoria|fontes-.*|node_modules|\..*)$/i;
 const DERIVADOS = ["b_angoff", "angoff_origem", "legado", "taxonomia_desconhecida", "b_calibrado", "ep_calibrado", "n_calibracao", "calibrado_em", "status", "angoff_item", "angoff_painel", "angoff_painel_juizes", "angoff_painel_ep", "revisao_tipo"];
 
 export function lerArgs(argv) {

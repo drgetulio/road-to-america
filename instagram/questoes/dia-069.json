@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-10",
-  "gancho": "O hospital vai casar com uma bomba de infusão nova: *DR antes ou depois*?",
+  "gancho": "O hospital e a bomba de infusão: um *casamento* que o Viés acompanha de perto",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Num cartório enfeitado, uma bomba de infusão simpática, de véu, está prestes a se casar com um hospital pequenininho de gravata. No canto, o Viés, meio escondido atrás de uma tabela 2x2 em branco, segura a lupa e um álbum de fotos vazio, como quem guarda espaço para as brigas que ainda vão vir.",
+    "cena": "Num cartório enfeitado, uma bomba de infusão simpática, de véu, segura a mão de um hospital pequenininho de gravata. No canto, o Viés, meio escondido atrás de uma tabela 2x2 em branco, espia com a lupa.",
     "foco": "50% 35%",
-    "alt": "Uma bomba de infusão de véu vai se casar com um hospital pequenininho de gravata; o Viés espia com um álbum de fotos vazio.",
+    "alt": "Num cartório enfeitado, uma bomba de infusão de véu segura a mão de um hospital pequenininho de gravata; o Viés espia.",
     "arquivo": "dia-069.png"
   },
   "imagem_macete": {
@@ -25,7 +25,7 @@
     "arquivo": "dia-069-macete.png"
   },
   "questao": {
-    "vinheta": "A hospital will introduce smart infusion pumps next month. Before go-live, a team maps every step of the new process, lists how each step could fail, and scores each failure by severity, likelihood, and detectability to redesign the riskiest steps.",
+    "vinheta": "A hospital will introduce smart infusion pumps next month. Before go-live, a team maps every step of the new process, lists every way each step might break down, and rates each failure mode for severity, likelihood, and detectability to redesign the riskiest steps.",
     "pergunta": "Which quality improvement method is this team using?",
     "alternativas": {
       "A": {
@@ -59,7 +59,7 @@
       "patient safety"
     ],
     "erradas": {
-      "A": "A análise de causa raiz é retrospectiva e começa depois de um evento adverso, não antes da implantação.",
+      "A": "A análise de causa raiz olha para trás: começa depois de um evento adverso, não antes da implantação.",
       "B": "O PDSA testa uma mudança em ciclos pequenos e mede o resultado; não pontua modos de falha antes de começar.",
       "D": "A reunião de morbidade e mortalidade discute casos que já aconteceram, com foco educativo."
     },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "A bomba de infusão nova chega no mês que vem, e a equipe já está desenhando cada passo, cada jeito de dar errado e uma nota para cada risco. O Viés preferia esperar o primeiro problema. Que ferramenta é essa?",
+    "contexto": "Sábado Sem Viés de qualidade: quatro ferramentas com sigla, e a prova adora trocar uma pela outra, como você troca PDSA por SDPA às 2 da manhã. A vinheta diz qual ferramenta a equipe está usando.",
     "palavras_chave": [
-      "smart infusion pumps",
-      "new process",
       "quality improvement",
-      "hospital technology"
+      "infusion pumps",
+      "hospital processes",
+      "new technology"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#SabadoSemVies",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Antes de implantar, nota de risco para cada etapa: qual método?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Antes de implantar, nota de risco para cada etapa: qual método?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-24",
-  "gancho": "Na estação da puberdade, qual *vagão* sai primeiro?",
+  "gancho": "Uma mãe preocupada na consulta, e o Seu Allen conferindo o *manual*",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Uma estação de trem antiga com quatro vagões estacionados; o Seu Allen, de avental de marceneiro, segura a folha do manual de montagem do trem, e setinhas de manual pairam sobre os vagões sem mostrar qual vai na frente.",
     "foco": "50% 35%",
-    "alt": "Na estação da puberdade, qual vagão sai primeiro?",
+    "alt": "Uma mãe preocupada na consulta, e o Seu Allen conferindo o manual",
     "arquivo": "dia-052.png"
   },
   "imagem_macete": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Menina de 10 anos, um nódulo pequeno embaixo da aréola, sem outros sinais e crescendo na curva de sempre. A mãe quer saber se está tudo bem, e o Seu Allen confere a ordem das peças.",
+    "contexto": "Quarta do Porquê com o Seu Allen e uma consulta que todo pediatra conhece: a mãe preocupada com uma mudança no corpo da filha. Quatro explicações na mesa; a idade e os sinais da vinheta escolhem uma.",
     "palavras_chave": [
-      "subareolar nodule",
+      "pediatric endocrinology",
       "10-year-old girl",
-      "growth velocity",
-      "pediatric endocrinology"
+      "growth",
+      "parental concern"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Pediatrics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Nódulo subareolar aos 10 anos, sem pelos: o que explica o achado?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo subareolar aos 10 anos, sem pelos: o que explica o achado?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

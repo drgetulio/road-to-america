@@ -1,0 +1,101 @@
+{
+  "descricao": "Folhas de referência (model sheets) do elenco fixo. Gere cada folha uma vez no Higgsfield (Nano Banana Pro, 2k, 16:9), confira contra a descrição fixa, salve no arquivo indicado e suba com media_upload; anote o media_id aqui. Em todo prompt do dia, passe em medias, com role \"image_references\", a folha de cada personagem listado em personagem_referencia do dia.",
+  "gerado_por": "instagram/ferramentas/normalizar-dias.mjs (o media_id preenchido à mão é preservado)",
+  "modelo": "nano_banana_pro",
+  "parametros_folha": {
+    "resolucao": "2k",
+    "proporcao": "16:9"
+  },
+  "personagens": [
+    {
+      "nome": "Macrô",
+      "arquivo": "instagram/imagens/referencias/macro.png",
+      "media_id": null,
+      "dias_com_o_personagem": 45,
+      "descricao_fixa_en": "a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "97ae2664-d951-428d-9deb-37ac101e9d94"
+    },
+    {
+      "nome": "Mito",
+      "arquivo": "instagram/imagens/referencias/mito.png",
+      "media_id": null,
+      "dias_com_o_personagem": 28,
+      "descricao_fixa_en": "a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "7ce0d981-430e-47e2-bd03-9b53cf2a4184"
+    },
+    {
+      "nome": "Seu Néfron",
+      "arquivo": "instagram/imagens/referencias/seu-nefron.png",
+      "media_id": null,
+      "dias_com_o_personagem": 38,
+      "descricao_fixa_en": "a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "71572161-2cc6-4ffb-aa36-060a8d89376d"
+    },
+    {
+      "nome": "Capitã Plaqueta",
+      "arquivo": "instagram/imagens/referencias/capita-plaqueta.png",
+      "media_id": null,
+      "dias_com_o_personagem": 38,
+      "descricao_fixa_en": "a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Capitã Plaqueta, a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "b6021da8-3fe1-434b-a8ed-d2f9c692b406"
+    },
+    {
+      "nome": "Tia Meia-Vida",
+      "arquivo": "instagram/imagens/referencias/tia-meia-vida.png",
+      "media_id": null,
+      "dias_com_o_personagem": 50,
+      "descricao_fixa_en": "a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "984c34b7-e3d4-4b6f-a67a-0b713baca614"
+    },
+    {
+      "nome": "Viés",
+      "arquivo": "instagram/imagens/referencias/vies.png",
+      "media_id": null,
+      "dias_com_o_personagem": 31,
+      "descricao_fixa_en": "a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "e3da9c73-c81f-492c-84a1-c6eff9999ef7"
+    },
+    {
+      "nome": "Dona Térmica",
+      "arquivo": "instagram/imagens/referencias/dona-termica.png",
+      "media_id": null,
+      "dias_com_o_personagem": 40,
+      "descricao_fixa_en": "a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "2e31d856-e9a4-4731-b6d2-9e314ce8ee24"
+    },
+    {
+      "nome": "Seu Allen",
+      "arquivo": "instagram/imagens/referencias/seu-allen.png",
+      "media_id": null,
+      "dias_com_o_personagem": 37,
+      "descricao_fixa_en": "a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Seu Allen, a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "2da9db75-d7f1-4ed0-8d05-6782a0910516"
+    },
+    {
+      "nome": "Garçom Espetinho",
+      "arquivo": "instagram/imagens/referencias/garcom-espetinho.png",
+      "media_id": null,
+      "dias_com_o_personagem": 47,
+      "descricao_fixa_en": "a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "e30b6394-5f90-47be-bd65-b426232b7977"
+    },
+    {
+      "nome": "Dona Bússola",
+      "arquivo": "instagram/imagens/referencias/dona-bussola.png",
+      "media_id": null,
+      "dias_com_o_personagem": 19,
+      "descricao_fixa_en": "a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook",
+      "prompt_folha": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Character model sheet of one recurring cartoon character: Dona Bússola, a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook. Show the same character on one sheet, evenly spaced on the flat paper background: a full-body front view, a full-body side profile view, a full-body three-quarter view, and a row of four head close-ups with different expressions (happy, surprised, tired, focused). Identical proportions, colors, outfit and outline thickness in every view, neutral standing pose in the three turnarounds, only the fixed props of the character. Wide 16:9 sheet. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "higgsfield_job_id_folha": "1e43bed6-5856-4bb0-b2ec-65a74a03e3c8"
+    }
+  ]
+}

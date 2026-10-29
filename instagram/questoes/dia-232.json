@@ -7,18 +7,18 @@
   "sistema": "Sistema gastrointestinal",
   "topico": "E. coli êntero-hemorrágica",
   "conceito": "EHEC O157:H7: Shiga-like toxin, bloody diarrhea, risk of hemolytic uremic syndrome",
-  "personagem": "Seu Néfron",
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-22",
   "tom": null,
-  "gancho": "No arraiá, o hambúrguer *ficou rosado* por dentro",
-  "gancho_apoio": "Diarreia com sangue, sem febre, e o Seu Néfron já está preocupado. Quem é o micróbio?",
+  "gancho": "Bicho de Segunda no arraiá: *uma festa, um lanche* e, três dias depois, o pediatra",
+  "gancho_apoio": "Gastro no NBME: a pergunta sempre é o que a criança comeu na festa, e você nunca foi convidado.",
   "imagem": {
     "arquivo": "dia-232.png",
-    "cena": "Seu Néfron, de gravata e óculos, numa barraca de festa junina com bandeirinhas, franze a testa para um hambúrguer na chapa ainda rosado por dentro. De dentro do pão, espia um bacilinho de chapéu de palha.",
+    "cena": "Macrô, de chapéu de palha sobre o guardanapo xadrez, numa barraca de festa junina com bandeirinhas, olha desconfiado para uma chapa de lanches. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "No arraiá, o hambúrguer ficou rosado por dentro"
+    "alt": "Macrô, de chapéu de palha, olha desconfiado a chapa de lanches da festa junina"
   },
   "imagem_macete": {
     "arquivo": "dia-232-macete.png",
@@ -32,15 +32,15 @@
     "alternativas": {
       "A": {
         "texto": "Shigella dysenteriae",
-        "quiz": "Shigella"
+        "quiz": "Shigella dysenteriae"
       },
       "B": {
         "texto": "Salmonella enterica serovar Enteritidis",
-        "quiz": "Salmonella"
+        "quiz": "Salmonella Enteritidis"
       },
       "C": {
         "texto": "Campylobacter jejuni",
-        "quiz": "Campylobacter"
+        "quiz": "Campylobacter jejuni"
       },
       "D": {
         "texto": "Escherichia coli O157:H7",
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*O157 não come sorbitol, mas come o rim*",
       "apoio": "Na imagem, o bacilinho de chapéu de palha recusa o doce de sorbitol da barraca e joga confete de toxina nos filtros do Seu Néfron. Diarreia com sangue, sem febre, depois de hambúrguer: pense no rim.",
-      "fala": "Sem carimbo, não sai. Confete de toxina no meu filtro, muito menos."
+      "fala": "Comi, mostrei, avisei: esse hambúrguer eu não comia nem com fome de plantão."
     }
   },
   "legenda": {
-    "contexto": "Festa junina, hambúrguer malpassado, três dias de diarreia com sangue e nada de febre. Na cultura, um bacilo que não fermenta sorbitol. O Seu Néfron já sabe por que deve se preocupar.",
+    "contexto": "Bicho de Segunda na festa junina, com o Macrô de chapéu de palha. Uma criança com dor de barriga e diarreia, e a vinheta traz o que ela comeu, a febre e a placa de cultura. Quem é o micróbio?",
     "palavras_chave": [
-      "undercooked hamburger",
-      "bloody diarrhea",
-      "afebrile child",
-      "MacConkey agar"
+      "pediatric diarrhea",
+      "stool culture",
+      "foodborne illness",
+      "Step 1 microbiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Diarreia com sangue e sem sorbitol: quem é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia com sangue e sem sorbitol: quem é?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

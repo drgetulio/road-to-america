@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-08",
   "tom": "acolhedor",
-  "gancho": "Outubro Rosa: *qual rastreamento* para quem tem 42 anos?",
+  "gancho": "Outubro Rosa: *o que recomendar* para quem não tem sintoma nenhum?",
   "gancho_apoio": "Mulher sem sintomas e sem risco aumentado pergunta o que fazer.",
   "imagem": {
     "arquivo": "dia-340.png",
-    "cena": "Garçom Espetinho, calmo, com quatro cartões de cardápio, cada um com um ícone: um ímã grande, uma dupla hélice de DNA, um pequeno aparelho de raio X e uma ampulheta; um laço rosa discreto no avental e a plaquinha verde e vermelha no bolso; tom calmo.",
+    "cena": "O Garçom Espetinho, calmo e gentil, segura um cardápio fechado, com um laço rosa discreto no avental e a plaquinha verde e vermelha no bolso. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Outubro Rosa: qual rastreamento para quem tem 42 anos?"
+    "alt": "Garçom Espetinho, gentil, segura um cardápio fechado, com um laço rosa no avental."
   },
   "imagem_macete": {
     "arquivo": "dia-340-macete.png",
-    "cena": "Callback: o garçom entrega o cartão do pequeno aparelho de raio X e levanta o lado verde da plaquinha; ao fundo, um calendário com as páginas virando de duas em duas, sem números.",
+    "cena": "Callback: o garçom abre o cardápio e mostra um cartão com um pequeno aparelho de raio X, levantando o lado verde da plaquinha; ao fundo, um calendário de parede vira as páginas de duas em duas, sem números.",
     "foco": "50% 45%",
     "alt": "USPSTF 2024: biennial mammography dos 40 aos 74"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Annual breast MRI",
-        "quiz": "RM anual"
+        "quiz": "Annual breast MRI"
       },
       "B": {
         "texto": "BRCA1 and BRCA2 genetic testing",
-        "quiz": "Teste genético BRCA"
+        "quiz": "BRCA1/2 testing"
       },
       "C": {
         "texto": "Begin mammography at age 50",
-        "quiz": "Começar aos 50"
+        "quiz": "Begin mammography at age 50"
       },
       "D": {
         "texto": "Mammography every 2 years",
-        "quiz": "Mamografia bienal"
+        "quiz": "Mammography every 2 years"
       }
     },
     "correta": "D"
@@ -73,19 +73,19 @@
     }
   },
   "legenda": {
-    "contexto": "Outubro Rosa. Mulher de 42 anos, sem sintomas, sem história familiar e sem radiação no tórax, quer saber como rastrear câncer de mama. O que recomendar, segundo a diretriz americana?",
+    "contexto": "Outubro Rosa, com informação e sem medo: uma consulta de rotina e quatro recomendações no cardápio do garçom. A idade da paciente está na vinheta, e a diretriz cobrada é a americana.",
     "palavras_chave": [
-      "annual checkup",
-      "42-year-old",
-      "no family history",
-      "no breast symptoms"
+      "preventive medicine",
+      "women's health",
+      "screening",
+      "primary care"
     ],
     "hashtags": [
       "#USMLE",
       "#USMLEStep2CK",
       "#OutubroRosa",
       "#Ginecologia",
-      "#USPSTF",
+      "#MedicinaPreventiva",
       "#QuestaoDoDia",
       "#RoadToAmerica"
     ],
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "42 anos, risco médio e sem sintomas: qual rastreamento recomendar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "42 anos, risco médio e sem sintomas: qual rastreamento recomendar?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

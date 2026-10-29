@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-29",
   "tom": null,
-  "gancho": "Incha tudo, *não coça nada*, e o antialérgico não resolve",
-  "gancho_apoio": "Lábios, mãos e barriga inchando em crises, e o pai tem o mesmo. Qual mediador está sobrando?",
+  "gancho": "Bicho de Segunda: *crises que vêm e vão*",
+  "gancho_apoio": "Imunologia: você aprende 50 interleucinas e a prova pergunta justo a que você pulou.",
   "imagem": {
     "arquivo": "dia-239.png",
-    "cena": "Numa festa de aniversário no salão do prédio, o Macrô, de comanda no bolso, vê os balões incharem sem parar, sem nenhum mosquito por perto. Numa prateleira, um spray de antialérgico intocado.",
+    "cena": "Numa festa de aniversário no salão do prédio, o Macrô, de comanda no bolso, confere a lista de convidados na porta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Incha tudo, não coça nada, e o antialérgico não resolve"
+    "alt": "Macrô confere a lista de convidados na porta da festa"
   },
   "imagem_macete": {
     "arquivo": "dia-239-macete.png",
-    "cena": "Atrás do balcão do salão, a cadeira do porteiro está vazia e a torneira de água jorra sem freio, enchendo os balões. O spray de antialérgico tenta ajudar e não funciona; o Macrô fecha a torneira girando uma válvula em forma de meia-lua.",
+    "cena": "Callback: atrás do balcão do salão, a cadeira do porteiro (o C1) está vazia e uma torneira jorra sem freio, enchendo os balões; o Macrô fecha a torneira girando uma válvula em forma de meia-lua. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Sem o porteiro C1, a bradicinina inunda"
+    "alt": "A cadeira do porteiro vazia e a torneira enchendo os balões; Macrô fecha a válvula"
   },
   "questao": {
     "vinheta": "A 19-year-old woman has recurrent 2- to 4-day episodes of painless, nonpitting swelling of the lips and hands and crampy abdominal pain, without urticaria or itching. Episodes began at puberty and worsened after she started an estrogen-containing contraceptive. Her father has similar episodes. Serum C4 is low.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Histamine",
-        "quiz": "Histamina"
+        "quiz": "Histamine"
       },
       "B": {
         "texto": "Bradykinin",
-        "quiz": "Bradicinina"
+        "quiz": "Bradykinin"
       },
       "C": {
         "texto": "Leukotriene D4",
-        "quiz": "Leucotrieno D4"
+        "quiz": "Leukotriene D4"
       },
       "D": {
         "texto": "Tumor necrosis factor-alpha",
-        "quiz": "TNF-alfa"
+        "quiz": "TNF-alpha"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Crises de inchaço nos lábios, nas mãos e na barriga desde a puberdade, sem urticária e sem coceira, piores depois do anticoncepcional com estrogênio. O pai tem crises iguais e o C4 está baixo.",
+    "contexto": "Bicho de Segunda na imunologia, com o Macrô. Crises que se repetem, um gatilho e um exame de sangue, tudo na vinheta. Qual mediador está sobrando?",
     "palavras_chave": [
-      "recurrent swelling",
-      "abdominal pain",
-      "no urticaria",
-      "family history"
+      "recurrent episodes",
+      "immune system",
+      "inflammatory mediators",
+      "Step 1 immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Incha sem coçar e C4 baixo: qual mediador?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Incha sem coçar e C4 baixo: qual mediador?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

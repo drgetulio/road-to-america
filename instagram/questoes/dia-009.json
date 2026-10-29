@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-11",
   "tom": null,
-  "gancho": "A Capitã Plaqueta apita, o tanque pinga e a pressão está em *86*. Por onde começa?",
+  "gancho": "Sangue no plantão de madrugada e a Capitã Plaqueta com *um apito só*. Por onde começa?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-009.png",
-    "cena": "Capitã Plaqueta, de colete verde, apita ao lado de um carrinho vermelho de olhos simpáticos parado no acostamento, com a luz de combustível acesa e um furinho pingando no tanque; ela tenta tampar o furo com um cone. No fim da estrada, um guincho espera de motor ligado. Num poste, um relógio sem números marca 3 da manhã.",
+    "cena": "Capitã Plaqueta, de colete verde, apita ao lado de um carrinho vermelho de olhos simpáticos parado no acostamento, com um furinho pingando no tanque. No fim da estrada, um guincho espera de motor ligado. Num poste, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "A Capitã Plaqueta apita, o tanque pinga e a pressão está em 86. Por onde começa?"
+    "alt": "Capitã Plaqueta apita ao lado de um carrinho vermelho com um furinho pingando no tanque; um guincho espera no fim da estrada."
   },
   "imagem_macete": {
     "arquivo": "dia-009-macete.png",
@@ -30,20 +30,20 @@
     "pergunta": "Which is the most appropriate next step in management?",
     "alternativas": {
       "A": {
-        "texto": "Immediate upper endoscopy",
-        "quiz": "EDA imediata"
+        "texto": "Upper endoscopy within the next hour",
+        "quiz": "Urgent EGD"
       },
       "B": {
-        "texto": "CT angiography of the abdomen",
-        "quiz": "Angio-TC"
+        "texto": "CT angiography of the abdomen and pelvis",
+        "quiz": "CT angiography"
       },
       "C": {
-        "texto": "Two large-bore IV lines and crystalloid infusion",
-        "quiz": "2 acessos e volume"
+        "texto": "Two large-bore IV lines and fluid bolus",
+        "quiz": "IV access + fluids"
       },
       "D": {
         "texto": "Nasogastric lavage",
-        "quiz": "Lavagem nasogástrica"
+        "quiz": "Nasogastric lavage"
       }
     },
     "correta": "C"
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: vômito com sangue, ibuprofeno todo dia e pressão de 86 por 52. A Capitã Plaqueta já está no local, mas sozinha ela não segura o vazamento.",
+    "contexto": "Plantão de Terça: vômito com sangue às 3 da manhã e quatro condutas que todo interno já ouviu alguém gritar no corredor. A Capitã Plaqueta só tem um apito: qual vem primeiro?",
     "palavras_chave": [
       "hematemesis",
-      "melena",
-      "NSAID use",
-      "hypotension"
+      "emergency medicine",
+      "initial management",
+      "night shift"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Hematêmese com PA 86/52 e FC 124: o que fazer primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hematêmese com PA 86/52 e FC 124: o que fazer primeiro?"
   },
   "exemplo": false
 }

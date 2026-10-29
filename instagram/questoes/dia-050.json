@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-22",
-  "gancho": "Faltaram dois titulares na foto do time. *Adivinha* quem?",
+  "gancho": "Segunda-feira na UTI neonatal: o Macrô foi chamado para um *caso de quatro suspeitos*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, segura a foto oficial de um time de futebol na beira do campo, com dois lugares vazios na fila de trás, e coça a cabeça tentando lembrar quem faltou. No banco de reservas, um coração de camisa olha para o lado.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, segura uma prancheta na beira de um berçário de desenho, ao lado de um bercinho vazio e arrumado, conferindo a lista de chamada.",
     "foco": "50% 35%",
-    "alt": "Faltaram dois titulares na foto do time. Adivinha quem?",
+    "alt": "Macrô, de prancheta na mão, na beira de um berçário de desenho, ao lado de um bercinho vazio e arrumado.",
     "arquivo": "dia-050.png"
   },
   "imagem_macete": {
-    "cena": "Callback: os dois lugares vazios da foto ganham contornos pontilhados de um timo em forma de borboleta e de quatro bolinhas de paratireoide, e o coração do banco tem um tronco único saindo do topo; numa lagoa ao lado nadam dois patinhos amarelos.",
+    "cena": "Revelação: na prancheta, a foto oficial de um time tem dois lugares vazios, que ganham contornos pontilhados de um timo em forma de borboleta e de quatro bolinhas de paratireoide; no banco, um coração de camisa tem um tronco único saindo do topo, e numa lagoa ao lado nadam dois patinhos amarelos.",
     "alt": "CATCH-22: faltaram as bolsas 3 e 4",
     "arquivo": "dia-050-macete.png"
   },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Recém-nascido com convulsão, sopro, fenda no palato e uma radiografia que não mostra uma sombra esperada. O Macrô sente falta de um time inteiro de células.",
+    "contexto": "Bicho de Segunda na UTI neonatal: convulsão no quarto dia de vida e quatro diagnósticos que a prova adora misturar. O Macrô confere a lista de chamada do berçário.",
     "palavras_chave": [
-      "neonatal seizure",
-      "cleft palate",
-      "truncus arteriosus",
-      "hypocalcemia"
+      "newborn",
+      "seizure",
+      "congenital heart disease",
+      "immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Genetics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Convulsão, cálcio baixo, truncus e sem sombra do timo: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Convulsão, cálcio baixo, truncus e sem sombra do timo: qual diagnóstico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

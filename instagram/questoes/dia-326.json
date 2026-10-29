@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-24",
   "tom": null,
-  "gancho": "Espeto duro como cano e *fervendo a 40 graus*: qual remédio?",
+  "gancho": "Rodízio de Quinta: *um espeto voltou da mesa* e o garçom quer saber por quê",
   "gancho_apoio": "No Rodízio de Quinta, o garçom precisa saber qual espeto devolver para a cozinha e qual servir.",
   "imagem": {
     "arquivo": "dia-326.png",
-    "cena": "Garçom Espetinho na churrasqueira segura um espeto que virou um cano de chumbo cinza e rígido, soltando vapor como chaleira; ao lado, um semáforo em forma de gota com todas as luzes apagadas; a plaquinha verde e vermelha no bolso do avental.",
+    "cena": "Garçom Espetinho na churrasqueira segura um espeto que voltou da mesa e olha para ele intrigado; ao lado, uma bandeja com quatro frasquinhos; a plaquinha verde e vermelha no bolso do avental.",
     "foco": "50% 35%",
-    "alt": "Espeto duro como cano e fervendo a 40 graus: qual remédio?"
+    "alt": "Garçom Espetinho com um espeto que voltou da mesa"
   },
   "imagem_macete": {
     "arquivo": "dia-326-macete.png",
-    "cena": "Callback: o garçom levanta o lado vermelho da plaquinha e devolve o espeto de cano para a cozinha; um ventilador e um balde de gelo esfriam a cena; ele gira uma chave dourada que tranca um portãozinho cheio de bolinhas de cálcio dentro de uma fibra muscular listrada.",
+    "cena": "Callback: o espeto agora é um cano de chumbo cinza e rígido soltando vapor; o garçom levanta o lado vermelho da plaquinha e devolve o espeto para a cozinha, um ventilador e um balde de gelo esfriam a cena, e ele gira uma chave dourada que tranca um portãozinho cheio de bolinhas de cálcio dentro de uma fibra muscular listrada.",
     "foco": "50% 45%",
     "alt": "Síndrome neuroléptica maligna: suspender, esfriar e dantrolene"
   },
@@ -33,11 +33,11 @@
     "alternativas": {
       "A": {
         "texto": "Benztropine",
-        "quiz": "Benztropina"
+        "quiz": "Benztropine"
       },
       "B": {
         "texto": "Cyproheptadine",
-        "quiz": "Ciproeptadina"
+        "quiz": "Cyproheptadine"
       },
       "C": {
         "texto": "Dantrolene",
@@ -45,7 +45,7 @@
       },
       "D": {
         "texto": "Olanzapine",
-        "quiz": "Olanzapina"
+        "quiz": "Olanzapine"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 29 anos recebeu haloperidol intramuscular há 3 dias. Agora está confuso, suando, com 40,1 °C, pressão alta, rigidez generalizada, reflexos normais, sem clônus, e CK de 18.000 U/L. Além de suspender o haloperidol, resfriar e hidratar, qual remédio entra?",
+    "contexto": "Rodízio de Quinta, mesa da psiquiatria e da emergência: um espeto voltou para a cozinha, e o garçom precisa decidir qual frasco entra. Quatro remédios, dois deles ligados a síndromes de nome parecido; a vinheta tem o reflexo que separa.",
     "palavras_chave": [
-      "schizophrenia",
-      "IM haloperidol",
-      "hyperthermia",
-      "very high CK"
+      "psychiatry",
+      "emergency medicine",
+      "medication adverse effect",
+      "pharmacotherapy"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Haloperidol, febre de 40, rigidez em cano de chumbo e CK 18 mil: qual remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Haloperidol, febre de 40, rigidez em cano de chumbo e CK 18 mil: qual remédio?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

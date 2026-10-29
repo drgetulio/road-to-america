@@ -16,7 +16,7 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-002.png",
-    "cena": "Mito, de jaleco amassado e olheiras, está sentado de braços cruzados na esteira parada de uma usina em forma de coração, com um cartaz de greve em branco no colo. No alto, um placar de estádio com o cronômetro correndo; lá fora, um caminhão-pipa de oxigênio está preso atrás de um cano entupido. Na parede, um relógio sem números marca 3 da manhã.",
+    "cena": "Mito, de jaleco amassado e olheiras, está sentado de braços cruzados na esteira parada de uma usina em forma de coração, com um cartaz de greve em branco no colo; pela janela, um caminhão-pipa de oxigênio está preso atrás de um cano entupido. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
     "alt": "Mito entrou em greve: sem oxigênio, sem ATP. Quantos minutos você tem?"
   },
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Primary percutaneous coronary intervention",
-        "quiz": "PCI primária"
+        "quiz": "Primary PCI"
       },
       "B": {
-        "texto": "Fibrinolytic therapy with tenecteplase",
-        "quiz": "Fibrinolítico"
+        "texto": "Fibrinolytic therapy with IV tenecteplase now",
+        "quiz": "Fibrinolysis"
       },
       "C": {
         "texto": "Repeat troponin measurement in 3 hours",
-        "quiz": "Troponina em 3 h"
+        "quiz": "Troponin in 3 h"
       },
       "D": {
         "texto": "Coronary CT angiography",
-        "quiz": "Angio-TC coronária"
+        "quiz": "Coronary CTA"
       }
     },
     "correta": "A"
@@ -71,11 +71,11 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: dor no peito há uma hora, supra de ST no ECG e hemodinâmica de portas abertas. No miocárdio, o Mito já cruzou os braços e o cronômetro está correndo.",
+    "contexto": "Plantão de Terça: dor no peito, ECG na mão e o Mito de braços cruzados no miocárdio. No NBME, quem lê só a primeira linha escolhe o exame mais caro; a resposta mora num detalhe sobre o hospital.",
     "palavras_chave": [
       "chest pain",
-      "ST elevation",
-      "cardiac catheterization lab",
+      "ECG",
+      "emergency cardiology",
       "reperfusion"
     ],
     "hashtags": [
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Supra de ST e hemodinâmica disponível agora: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Supra de ST e hemodinâmica disponível agora: qual conduta?"
   },
   "exemplo": false
 }

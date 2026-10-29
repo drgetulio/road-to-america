@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-30",
   "tom": null,
-  "gancho": "Gestante de 18 semanas com dor que *desceu do umbigo*: picanha ou salada?",
-  "gancho_apoio": "Febre baixa, leucocitose e o Garçom Espetinho segurando dois pratos.",
+  "gancho": "Rodízio de Quinta: *uma dor que mudou de endereço* e quatro espetos de imagem",
+  "gancho_apoio": "Febre baixa, leucocitose e o Garçom Espetinho com o cardápio de imagem na mão.",
   "imagem": {
     "arquivo": "dia-179.png",
-    "cena": "No salão do rodízio, o Garçom Espetinho fica entre o buffet de saladas e um espeto de picanha chiando, com duas mesas esperando: uma com pratinho infantil e um chocalho, outra com um prato comum de adulto. Em cada mesa, a plaquinha verde e vermelha.",
+    "cena": "No salão do rodízio, o Garçom Espetinho fica entre o buffet de saladas e um espeto de picanha chiando, sem decidir para onde ir. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho entre o buffet de saladas e a picanha; duas mesas, uma com chocalho e outra com prato de adulto."
+    "alt": "Garçom Espetinho entre o buffet de saladas e um espeto de picanha, sem decidir para onde ir."
   },
   "imagem_macete": {
     "arquivo": "dia-179-macete.png",
-    "cena": "Na mesa do chocalho a plaquinha fica verde e o garçom serve a salada com uma colher em forma de sonda de ultrassom; o espeto de picanha (TC) segue para a mesa do adulto. Ao fundo, uma porta redonda em túnel, como um aparelho de ressonância, fica de reserva.",
-    "alt": "Na mesa do chocalho, salada servida com colher de ultrassom; a picanha vai para o adulto; a ressonância espera."
+    "cena": "Callback: o Garçom Espetinho serve a salada com uma colher em forma de sonda de ultrassom, e o espeto de picanha volta para a churrasqueira; ao fundo, uma porta redonda em túnel fica de reserva. Fundo limpo.",
+    "alt": "O garçom serve a salada com uma colher-sonda de ultrassom; a picanha volta para a churrasqueira."
   },
   "questao": {
     "vinheta": "At 18 weeks' gestation, a 27-year-old woman has 20 hours of periumbilical pain that has moved to the right lower abdomen, with nausea and a temperature of 38.0°C. She has right-sided abdominal tenderness. Leukocyte count is 14,500/mm3. Fetal heart rate is normal.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Graded-compression ultrasonography",
-        "quiz": "Ultrassom"
+        "quiz": "Ultrasound"
       },
       "B": {
         "texto": "CT of the abdomen and pelvis with IV contrast",
-        "quiz": "TC com contraste"
+        "quiz": "Contrast CT"
       },
       "C": {
         "texto": "Abdominal x-ray",
-        "quiz": "Raio X de abdome"
+        "quiz": "Abdominal x-ray"
       },
       "D": {
         "texto": "Barium enema",
-        "quiz": "Enema baritado"
+        "quiz": "Barium enema"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na cirurgia. Dor que começou no umbigo e desceu para a direita, febre baixa e leucocitose numa gestante de 18 semanas. O garçom tem quatro espetos de imagem.",
+    "contexto": "Rodízio de Quinta na cirurgia: uma dor abdominal de história clássica e uma paciente com uma condição especial, que está na vinheta. O garçom tem quatro espetos de imagem.",
     "palavras_chave": [
       "18 weeks' gestation",
       "migrating abdominal pain",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Gestante de 18 semanas com dor que migrou para a FID: qual a 1ª imagem?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gestante de 18 semanas com dor que migrou para a FID: qual a 1ª imagem?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

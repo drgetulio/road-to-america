@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-04",
-  "gancho": "A *mala* de volta de Orlando não fecha, e o Mito lá dentro está sem ar",
+  "gancho": "Fratura na tíbia, tala na perna e o Mito de *plantão na ortopedia*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma mala navy abarrotada de volta de viagem, em cima de uma mesa de churrascaria, com as costuras esticadas e o zíper suando. Pelo vãozinho do zíper espia o Mito, de jaleco amassado, abanando o rosto com o crachá, sem ar. Ao lado, a plaquinha verde e vermelha está virada de lado.",
+    "cena": "O Mito, de jaleco amassado, está ao lado de uma mesa de churrascaria segurando uma tala de perna de brinquedo e um relógio de bolso, com cara de quem conta as horas. Ao lado, a plaquinha verde e vermelha está virada de lado.",
     "foco": "50% 35%",
-    "alt": "A mala de volta de Orlando não fecha, e o Mito lá dentro está sem ar",
+    "alt": "O Mito, ao lado de uma mesa de churrascaria, segura uma tala de perna de brinquedo e um relógio de bolso.",
     "arquivo": "dia-032.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o zíper da mala é aberto de ponta a ponta, o conteúdo se acomoda e o Mito sai respirando aliviado, com o café na mão. Ao lado, uma almofada e um travesseiro alto ficam de lado com a plaquinha vermelha.",
+    "cena": "Revelação: dentro da tala havia uma mala navy abarrotada, de costuras esticadas. O zíper é aberto de ponta a ponta, o conteúdo se acomoda e o Mito respira aliviado, com o café na mão. Uma almofada e um travesseiro alto ficam de lado com a plaquinha vermelha.",
     "alt": "Abriu o zíper: fasciotomia de urgência",
     "arquivo": "dia-032-macete.png"
   },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Fratura fechada, tala retirada, morfina caprichada e uma dor que piora quando o dedo do pé é esticado. O rodízio de hoje é de cirurgia, e só um espeto é a conduta certa.",
+    "contexto": "Rodízio de Quinta na cirurgia: uma fratura fechada e quatro espetos, de elevar a perna a chamar o centro cirúrgico, e só um é o certo. No Prometric e na perna, ninguém devolve as horas perdidas.",
     "palavras_chave": [
-      "tibial shaft fracture",
-      "pain out of proportion",
-      "passive stretch",
-      "orthopedic trauma"
+      "tibial fracture",
+      "orthopedic trauma",
+      "acute pain",
+      "surgery"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Ortopedia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Dor desproporcional e panturrilha tensa sem a tala: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor desproporcional e panturrilha tensa sem a tala: qual conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

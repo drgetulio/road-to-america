@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-31",
   "tom": null,
-  "gancho": "Sertralina e linezolida no mesmo balcão: *bloco de Carnaval em julho*",
-  "gancho_apoio": "A Tia Meia-Vida viu os dois frascos juntos e a festa começou. Qual remédio encerra o bloco?",
+  "gancho": "Sextou na Farmácia: *dois frascos no mesmo balcão* e uma festa que ninguém pediu",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-271.png",
-    "cena": "Numa rua de interior enfeitada com serpentinas, a Tia Meia-Vida, de óculos vermelhos, tenta atravessar um bloco de Carnaval que brotou do nada: dois frascos de remédio, um de comprimidos redondos e outro de cápsulas, puxam o bloco despejando confete num balde que transborda, e molinhas pulam do chão como pernas inquietas. Ela ergue a sacolinha da farmácia acima da cabeça, espantada.",
+    "cena": "Numa rua de interior enfeitada com serpentinas, a Tia Meia-Vida, de óculos vermelhos, ergue a sacolinha da farmácia acima da cabeça, espantada com um bloco de Carnaval que brotou do nada. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida atravessa um bloco de Carnaval de remédios"
+    "alt": "Tia Meia-Vida ergue a sacolinha, espantada com um bloco de Carnaval que surgiu do nada"
   },
   "imagem_macete": {
     "arquivo": "dia-271-macete.png",
@@ -35,8 +35,8 @@
         "quiz": "Cyproheptadine"
       },
       "B": {
-        "texto": "Dantrolene",
-        "quiz": "Dantrolene"
+        "texto": "Dantrolene sodium",
+        "quiz": "Dantrolene sodium"
       },
       "C": {
         "texto": "Bromocriptine",
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Paciente em uso de sertralina começa linezolida para pneumonia por MRSA. Menos de um dia depois: suor, febre, pupilas grandes e clônus no tornozelo. A Tia Meia-Vida quer saber qual frasco tirar da prateleira.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um remédio de uso contínuo encontra um remédio novo, e a vinheta descreve o que acontece em menos de um dia. Os dois já foram suspensos: qual remédio entra?",
     "palavras_chave": [
-      "sertraline",
-      "linezolid",
-      "hyperthermia",
-      "clonus"
+      "drug interaction",
+      "toxidrome",
+      "antidote",
+      "Step 1 pharmacology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Sertralina com linezolida, clônus e febre: qual remédio entra?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sertralina com linezolida, clônus e febre: qual remédio entra?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-20",
-  "gancho": "O alarme apita até com pão na chapa. E quando fica *mudo*?",
+  "gancho": "O Viés achou um teste *novinho* na cozinha da padaria",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Viés na cozinha de uma padaria, meio escondido atrás de uma tabela 2x2, olhando para um detector de fumaça no teto enquanto um pão francês tosta na chapa.",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, examina com a lupa um detector de fumaça novinho no teto da cozinha de uma padaria.",
     "foco": "50% 35%",
-    "alt": "O alarme apita até com pão na chapa. E quando fica mudo?",
+    "alt": "O Viés, atrás de uma tabela 2x2, examina com a lupa um detector de fumaça novinho no teto de uma cozinha.",
     "arquivo": "dia-048.png"
   },
   "imagem_macete": {
@@ -38,10 +38,10 @@
       },
       "C": {
         "texto": "Specificity is too low to trust a negative",
-        "quiz": "Low Sp: distrust"
+        "quiz": "Low Sp, can't trust it"
       },
       "D": {
-        "texto": "Deep venous thrombosis is effectively ruled out",
+        "texto": "Deep venous thrombosis is effectively excluded",
         "quiz": "DVT ruled out"
       }
     },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um teste rápido muito sensível e pouco específico, uma paciente de baixo risco e um resultado negativo. O Viés quer saber o que você conclui.",
+    "contexto": "Sábado Sem Viés: um teste rápido novo, uma paciente e um resultado. Antes de concluir, lembre a dupla de siglas que todo mundo decora e metade troca na hora da prova.",
     "palavras_chave": [
       "new diagnostic test",
       "deep venous thrombosis",
-      "negative result",
-      "low clinical suspicion"
+      "test interpretation",
+      "biostatistics"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Biostatistics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Teste 99% sensível negativo em paciente de baixo risco: o que concluir?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Teste 99% sensível negativo em paciente de baixo risco: o que concluir?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

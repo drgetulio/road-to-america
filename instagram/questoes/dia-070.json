@@ -15,69 +15,68 @@
     65
   ],
   "explicacao_em": "2027-01-11",
-  "gancho": "Glicose 520, pH 7,12 e *potássio 3,0*: quem passa primeiro pelo portão?",
+  "gancho": "A cetoacidose do dia 37 voltou, agora *seis horas depois*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito, de jaleco amassado e café na mão, está diante do portão fechado de uma célula desenhada como um shopping em dia de liquidação, segurando uma chave dourada. Na calçada, só uma filinha curta de bolinhas de potássio espera, aflita. Um vinil pequeno no canto.",
+    "cena": "Mito, de jaleco amassado, segura uma chave dourada diante do portão aberto de uma célula desenhada como shopping e confere o relógio de pulso, com cara de quem está de plantão desde ontem. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Mito, com uma chave dourada, diante do portão fechado de uma célula-shopping; só uma filinha curta de bolinhas de potássio espera na calçada.",
+    "alt": "Mito segura uma chave dourada diante do portão aberto de uma célula desenhada como shopping e confere o relógio de pulso.",
     "arquivo": "dia-070.png"
   },
   "imagem_macete": {
-    "cena": "Callback do shopping: antes de girar a chave, o Mito descarrega um caminhão de bananas na calçada até a fila de potássio ficar comprida. Só então a chave dourada abre o portão, e um coraçãozinho, que vigiava do estacionamento, relaxa.",
+    "cena": "Callback do shopping: o Mito mantém o portão aberto com a chave dourada, enquanto um carrinho de entregas leva cubinhos de açúcar para dentro do soro, e um mostrador em forma de ponte ainda mostra uma fresta aberta. Ao fundo, um coraçãozinho e um cérebro simpáticos assistem tranquilos do estacionamento.",
     "alt": "Mito descarrega bananas até a fila de potássio crescer e só depois abre o portão com a chave dourada; um coraçãozinho relaxa.",
     "arquivo": "dia-070-macete.png"
   },
   "questao": {
-    "vinheta": "A 24-year-old woman with type 1 diabetes has had 2 days of vomiting and abdominal pain; her neurologic examination is normal. Labs: glucose 520 mg/dL, arterial pH 7.12, anion gap 24, serum potassium 3.0 mEq/L. ECG shows U waves and sinus tachycardia without ST elevation. IV normal saline is running.",
+    "vinheta": "A 24-year-old woman with type 1 diabetes is treated for diabetic ketoacidosis with IV normal saline and a regular insulin infusion. After 6 hours, glucose has fallen from 520 to 190 mg/dL, but arterial pH is 7.24 and the anion gap is 18. Serum potassium is 4.2 mEq/L. Neurologic examination is normal.",
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Primary PCI",
-        "quiz": "Primary PCI",
-        "dia": 2
+        "texto": "Switch to subcutaneous insulin now",
+        "quiz": "Switch to SC insulin"
       },
       "B": {
-        "texto": "Noncontrast head CT",
-        "quiz": "Head CT",
-        "dia": 65
+        "texto": "Give IV potassium and hold the insulin infusion",
+        "quiz": "IV K, hold insulin",
+        "dia": 37
       },
       "C": {
-        "texto": "IV insulin infusion",
-        "quiz": "IV insulin infusion"
+        "texto": "Noncontrast CT of the head",
+        "quiz": "Noncontrast head CT",
+        "dia": 65
       },
       "D": {
-        "texto": "IV potassium replacement",
-        "quiz": "IV potassium",
-        "dia": 37
+        "texto": "Add dextrose to IV fluids, continue insulin",
+        "quiz": "Add dextrose"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Primeiro a *banana*, depois a chave",
+    "titulo": "Glicose caiu, gap aberto: soma dextrose",
     "certa": [
-      "É *diabetic ketoacidosis* (dia 37) com potássio de 3,0 e onda U no ECG. A insulina empurra o potássio para dentro da célula e poderia derrubá-lo a ponto de causar arritmia, então a regra é repor *IV potassium*, manter o soro e só iniciar a insulina quando o K passar do limiar (3,3 nas fontes clássicas, 3,5 no consenso ADA de 2024). Sem supra de ST, não há *primary PCI* (dia 2), e sem déficit neurológico, não há por que pedir a TC do *acute stroke* (dia 65)."
+      "A cetoacidose do dia 37 está melhorando: a glicose caiu para 190, mas o pH segue 7,24 e o anion gap 18, então a cetose ainda não acabou. Quem fecha o gap é a insulina, e não a glicose: a infusão continua, e entra soro com dextrose (*add dextrose*, soro glicosado a 5%) para a glicose não despencar, em geral com a taxa de insulina reduzida. Pelo consenso da ADA de 2024, isso vale quando a glicose fica abaixo de 250 mg/dL. Com potássio de 4,2, a reposição segue no soro, sem parar a insulina."
     ],
     "termos": [
-      "diabetic ketoacidosis",
-      "hypokalemia",
+      "add dextrose",
+      "anion gap closure",
       "insulin infusion",
-      "potassium repletion"
+      "diabetic ketoacidosis"
     ],
     "erradas": {
-      "A": "Dia 2: PCI primária é para supra de ST, e o ECG mostra só taquicardia sinusal com onda U.",
-      "B": "Dia 65: a TC sem contraste é o primeiro passo no déficit focal súbito, e esta paciente tem exame neurológico normal.",
-      "C": "Intruso: insulina agora, com K de 3,0, joga o potássio para dentro da célula e pode causar arritmia grave."
+      "A": "Passar para insulina subcutânea só quando o gap fechar e a paciente comer, com a primeira dose 1 a 2 horas antes de desligar a bomba.",
+      "B": "Dia 37: segurar a insulina e repor potássio vale quando o K está abaixo de 3,3; aqui ele está em 4,2.",
+      "C": "Dia 65: a TC sem contraste é para déficit focal súbito; o edema cerebral da cetoacidose é mais comum em crianças e daria cefaleia e rebaixamento, e o exame neurológico está normal."
     },
     "macete": {
-      "frase": "*Banana antes da chave*: K acima de 3,3 antes da insulina",
-      "apoio": "Pegadinha de prova: O NBME deixa o potássio \"normal ou baixo\" escondido no meio dos exames da cetoacidose; abaixo do limiar, a insulina espera.",
-      "fala": "Abaixo de 3,3, nem eu abro o portão."
+      "frase": "Glicose caiu, gap aberto: *açúcar no soro, insulina no portão*. Quem fecha o gap é a insulina.",
+      "apoio": "Pegadinha de prova: O NBME baixa a glicose e mantém o gap aberto para ver se você desliga a insulina; a resposta é somar dextrose e continuar.",
+      "fala": "Glicose boa não é alta. Gap fechado é."
     }
   },
   "legenda": {
-    "contexto": "Vômitos, dor abdominal, glicose de 520, pH 7,12 e potássio de 3,0 numa jovem com diabetes tipo 1, com o soro já correndo. Infarto, cetoacidose e AVC já passaram por aqui, mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Domingo de revisão juntando a cetoacidose (dia 37) e o AVC (dia 65), mais um intruso que nunca apareceu aqui. O bônus do macete traz o balão dos 90 minutos (dia 2). Selo de dia já visto não é gabarito, assim como nota de simulado não é nota de prova.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -91,12 +90,11 @@
       "#EmergencyMedicine",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "CAD com K 3,0 e soro correndo: qual é a próxima medida?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cetoacidose com glicose 190 e gap ainda aberto: qual o próximo passo?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

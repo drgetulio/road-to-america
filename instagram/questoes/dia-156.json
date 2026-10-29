@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-07",
   "tom": null,
-  "gancho": "A *caixa d'água* do cirrótico pegou febre. O que a punção vai mostrar?",
-  "gancho_apoio": "Ascite, febre baixa e confusão nova. Dona Térmica já separou o tubinho.",
+  "gancho": "Plantão de Terça: *a caixa d'água* deu problema e a punção já saiu",
+  "gancho_apoio": "Dona Térmica subiu o morro com o tubinho e voltou com quatro números.",
   "imagem": {
     "arquivo": "dia-156.png",
-    "cena": "Uma caixa d'água azul de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado. Dona Térmica sobe o morrinho com a prancheta, e um relógio de varanda sem números marca 3 horas.",
+    "cena": "Uma caixa d'água azul de casa de interior, em cima de um morrinho, tem um termômetro espetado na tampa, e Dona Térmica sobe o morrinho com a prancheta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Caixa d'água no morrinho com termômetro na tampa e tubinho vazio; Dona Térmica sobe com a prancheta."
+    "alt": "Caixa d'água no morrinho com termômetro na tampa; Dona Térmica sobe com a prancheta."
   },
   "imagem_macete": {
     "arquivo": "dia-156-macete.png",
-    "cena": "A caixa d'água ganha uma torneirinha que enche o tubo, e no palco ao lado uma dupla sertaneja de frascos, um de antibiótico e um de albumina, canta junta de violão. Dona Térmica bate palma.",
-    "alt": "A torneirinha enche o tubo e uma dupla sertaneja de frascos, antibiótico e albumina, canta junta."
+    "cena": "Callback: a caixa d'água ganha uma torneirinha que enche um tubinho, e ao lado uma dupla sertaneja de frascos, um de antibiótico e um de albumina, canta junta de violão. Fundo limpo.",
+    "alt": "A caixa d'água enche um tubinho; ao lado, uma dupla de frascos, antibiótico e albumina, canta de violão."
   },
   "questao": {
     "vinheta": "A 58-year-old man with alcohol-related cirrhosis and ascites has 2 days of low-grade fever, diffuse mild abdominal tenderness, and new confusion. Paracentesis shows 410 neutrophils/µL, total protein 0.9 g/dL, glucose 110 mg/dL, and LDH below the serum upper limit of normal. Gram stain shows no organisms.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Spontaneous bacterial peritonitis",
-        "quiz": "PBE"
+        "quiz": "SBP"
       },
       "B": {
-        "texto": "Secondary bacterial peritonitis",
-        "quiz": "Perit. secundária"
+        "texto": "Secondary peritonitis from perforation",
+        "quiz": "Secondary peritonitis"
       },
       "C": {
         "texto": "Tuberculous peritonitis",
-        "quiz": "Perit. tuberculosa"
+        "quiz": "TB peritonitis"
       },
       "D": {
         "texto": "Uncomplicated cirrhotic ascites",
-        "quiz": "Ascite não infectada"
+        "quiz": "Uninfected ascites"
       }
     },
     "correta": "A"
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cirrótico com febre e 410 neutrófilos/µL na ascite, Gram negativo: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cirrótico com febre e 410 neutrófilos/µL na ascite, Gram negativo: qual?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

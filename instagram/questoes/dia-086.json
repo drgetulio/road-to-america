@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-27",
-  "gancho": "DPOC saturando 84%: *quanto é nota de aprovação* aqui?",
+  "gancho": "Às 3 da manhã, a Dona Térmica virou *banca examinadora* de oxigênio",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Na mesa do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica corrige uma pilha de provas em branco com caneta vermelha, ao lado de um par de pulmões simpático e cansado que segura um mostrador redondo com ponteiro e faixas coloridas, sem números. Uma nuvenzinha cinza flutua por perto.",
+    "cena": "Na mesa do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica corrige uma pilha de provas em branco com caneta vermelha, ao lado de um par de pulmões simpático e cansado que segura um mostrador redondo de ponteiro, sem números.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica corrige provas ao lado de um par de pulmões cansado que segura um mostrador de ponteiro; uma nuvem cinza flutua perto.",
+    "alt": "Dona Térmica corrige provas ao lado de um par de pulmões cansado que segura um mostrador de ponteiro sem números.",
     "arquivo": "dia-086.png"
   },
   "imagem_macete": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Piora da falta de ar, catarro purulento, saturação de 84% e PaCO2 de 54. Broncodilatador, corticoide e antibiótico já entraram. Dona Térmica já viu muito oxigênio no talo às 3 da manhã e pergunta: até onde subir?",
+    "contexto": "Plantão de Terça: falta de ar, oxigênio na parede e uma pergunta de número que derruba muita gente no CK. Dona Térmica pergunta: até onde subir?",
     "palavras_chave": [
       "COPD",
-      "worsening dyspnea",
-      "purulent sputum",
-      "arterial blood gas"
+      "dyspnea",
+      "oxygen therapy",
+      "night shift"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#PlantaoDeTerca",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "DPOC hipercápnico em exacerbação: qual alvo de saturação?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DPOC hipercápnico em exacerbação: qual alvo de saturação?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

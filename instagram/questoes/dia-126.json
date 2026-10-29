@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Hipersensibilidade tipo I (dia 36), Neisseria meningitidis (dia 92), Malária e hipnozoítos (dia 120)",
   "conceito": "Remix: Type I hypersensitivity + Neisseria meningitidis + Plasmodium vivax and ovale",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     36,
@@ -16,19 +16,19 @@
   ],
   "explicacao_em": "2027-03-08",
   "tom": null,
-  "gancho": "Tratou, curou, voltou para casa. Oito meses depois, a febre deu *spoiler* da segunda temporada",
-  "gancho_apoio": "Remix com alergia (dia 36), meningococo (dia 92) e malária (dia 120). Só um mecanismo explica a reprise.",
+  "gancho": "Malária tratada, vida normal e *a febre pediu bis*",
+  "gancho_apoio": "Remix com alergia (dia 36), meningococo (dia 92) e malária (dia 120). Só um mecanismo explica o bis.",
   "imagem": {
     "arquivo": "dia-126.png",
-    "cena": "Macrô, de guardanapo xadrez e com a comanda em branco no bolso, coça a cabeça na esteira de bagagens de um aeroporto. Passam três malas com adesivos: um mosquito, uma pipoca estourando e dois grãos de feijão juntinhos. Num canto do painel, um pequeno disco de vinil.",
+    "cena": "Na esteira de bagagens de um aeroporto, a Capitã Plaqueta apita, desconfiada, para uma mala com adesivo de mosquito que passa pela segunda vez. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô na esteira do aeroporto olhando três malas com adesivos de mosquito, pipoca e dois feijões."
+    "alt": "A Capitã Plaqueta apita para uma mala com adesivo de mosquito que passa pela segunda vez na esteira."
   },
   "imagem_macete": {
     "arquivo": "dia-126-macete.png",
-    "cena": "A mala do mosquito se abre e revela um hotelzinho em forma de fígado: num quarto escondido, um parasita de pijama acorda com o despertador. Macrô aparece de recepcionista, com a conta do check-out e uma vassoura de cabo em forma de comprimido.",
+    "cena": "Callback: a mala do mosquito se abre e revela um hotelzinho em forma de fígado, onde um parasita de pijama acorda com o despertador num quarto escondido, e a Capitã Plaqueta apita de susto. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Dentro da mala, um hotel em forma de fígado com um parasita acordando; Macrô chega com a conta e a vassoura de comprimido."
+    "alt": "A mala se abre num hotelzinho-fígado onde um parasita de pijama acorda; a Capitã apita de susto."
   },
   "questao": {
     "vinheta": "A 25-year-old volunteer had Plasmodium vivax malaria in Southeast Asia, completed chloroquine and recovered fully. Eight months after returning to her nonendemic home country, she again has fevers every 48 hours. A blood smear shows enlarged red cells with Schüffner dots.",
@@ -36,20 +36,20 @@
     "alternativas": {
       "A": {
         "texto": "Recrudescence of chloroquine-resistant blood-stage parasites",
-        "quiz": "Recrudescência"
+        "quiz": "Resistant blood stage"
       },
       "B": {
         "texto": "Reinfection from a new mosquito bite",
-        "quiz": "Nova picada"
+        "quiz": "New mosquito bite"
       },
       "C": {
         "texto": "Dormant liver hypnozoites",
-        "quiz": "Hipnozoíto hepático",
+        "quiz": "Liver hypnozoites",
         "dia": 120
       },
       "D": {
         "texto": "Red-cell sequestration in brain capillaries",
-        "quiz": "Sequestro cerebral"
+        "quiz": "Brain sequestration"
       }
     },
     "correta": "C"
@@ -77,7 +77,7 @@
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: três bichos já vistos voltam numa vinheta só. Voluntária tratada com cloroquina, de volta a um país sem malária, e febre a cada 48 horas oito meses depois.",
+    "contexto": "Remix de Domingo com a Capitã Plaqueta de olho nas hemácias: três bichos já vistos voltam numa vinheta só. Uma voluntária tratada direito, de volta para casa, e uma febre que reapareceu. Quanto tempo passou e por onde ela andou estão na vinheta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Vivax tratado, sem viagem nova e febre 8 meses depois: por quê?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vivax tratado, sem viagem nova e febre 8 meses depois: por quê?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

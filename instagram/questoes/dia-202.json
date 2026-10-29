@@ -13,7 +13,7 @@
   "explicacao_em": "2027-05-23",
   "tom": null,
   "gancho": "Quantos *guarda-chuvas* para uma pessoa a menos se molhar?",
-  "gancho_apoio": null,
+  "gancho_apoio": "NNT do Anki: quantos cartões você revisa para lembrar de um só na hora da prova?",
   "imagem": {
     "arquivo": "dia-202.png",
     "cena": "Num ponto de ônibus em dia de chuva, o fantasminha Viés, meio escondido atrás de uma tabela 2x2, distribui guarda-chuvas fechados a uma fila longa de gotinhas sorridentes; ao lado, uma calculadora antiga sem números na tela.",
@@ -38,8 +38,8 @@
         "quiz": "5"
       },
       "C": {
-        "texto": "7",
-        "quiz": "7"
+        "texto": "50",
+        "quiz": "50"
       },
       "D": {
         "texto": "20",
@@ -62,7 +62,7 @@
     "erradas": {
       "A": "4 é 1 dividido pela redução relativa do risco (5% sobre 20% = 25%); o NNT usa a redução absoluta.",
       "B": "5 é 1 dividido pelo risco do grupo placebo (20%), uma conta que não mede o efeito do remédio.",
-      "C": "Cerca de 7 é 1 dividido pelo risco do grupo tratado (15%), também sem comparar os grupos."
+      "C": "50 é o número de internações evitadas a cada 1.000 tratados (200 menos 150). O NNT é o inverso dessa fração: 1.000 dividido por 50 dá 20."
     },
     "macete": {
       "frase": "NNT é *quantos guarda-chuvas* você distribui para *uma pessoa a menos se molhar*: 1 dividido pela redução *absoluta* do risco. Se você usar a relativa, o *Viés* te engana com 4.",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Risco 20% contra 15%. Qual o NNT?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Risco 20% contra 15%. Qual o NNT?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

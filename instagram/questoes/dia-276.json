@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-08-05",
   "tom": null,
-  "gancho": "Plaquetas gigantes e o cruzamento parado: *tamanho não é documento*",
-  "gancho_apoio": "A Capitã Plaqueta apita, mas o cruzamento não anda. Qual peça falta na plaqueta?",
+  "gancho": "A Capitã Plaqueta apita, apita, e *ninguém encosta no meio-fio*",
+  "gancho_apoio": "Na Quarta do Porquê, a peça que falta pode estar na plaqueta ou no plasma.",
   "imagem": {
     "arquivo": "dia-276.png",
-    "cena": "A Capitã Plaqueta apita num cruzamento ao lado de uma rachadura na parede vermelha do vaso. Discos amarelos enormes, do tamanho de ônibus, rodam em volta sem conseguir encostar no meio-fio, e ela confere uma prancheta de peças em branco. Setinhas de manual de montagem apontam para o meio-fio rachado.",
+    "cena": "A Capitã Plaqueta apita num cruzamento ao lado de uma rachadura na parede vermelha do vaso. Discos amarelos rodam em volta sem conseguir encostar no meio-fio. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Plaquetas do tamanho de ônibus sem conseguir parar no meio-fio"
+    "alt": "Discos amarelos rodam sem encostar no meio-fio"
   },
   "imagem_macete": {
     "arquivo": "dia-276-macete.png",
@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "P2Y12 ADP receptor",
-        "quiz": "Receptor P2Y12"
+        "quiz": "P2Y12 receptor"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sangramento de nariz e gengiva desde pequeno, plaquetas gigantes e um teste de ristocetina que não corrige com plasma normal. A Capitã Plaqueta precisa achar a peça que falta.",
+    "contexto": "Quarta do Porquê com a Capitã Plaqueta: um sangramento que vem desde a infância e quatro peças possíveis da hemostasia primária. A vinheta tem o teste que separa plaqueta de plasma; leia até a última linha, que é onde o NBME gosta de esconder.",
     "palavras_chave": [
-      "recurrent nosebleeds",
-      "giant platelets",
-      "ristocetin",
-      "platelet aggregation"
+      "bleeding since childhood",
+      "platelet function",
+      "hemostasis",
+      "laboratory testing"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Plaqueta gigante e ristocetina sem resposta: qual molécula falta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Plaqueta gigante e ristocetina sem resposta: qual molécula falta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

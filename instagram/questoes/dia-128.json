@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-10",
   "tom": null,
-  "gancho": "Dois bandeirinhas já levantaram a bandeira. E agora, *juíza*?",
+  "gancho": "Plantão de Terça: *a juíza Térmica* tem quatro jogadas para escolher",
   "gancho_apoio": "Dona Térmica já viu esse jogo às 3 da manhã. Você apita o quê?",
   "imagem": {
     "arquivo": "dia-128.png",
-    "cena": "Dona Térmica, de juíza com apito, hesita diante do monitor do VAR com a tela em branco. No gramado, um pâncreas jogador sentado segura a barriga; dois bandeirinhas já ergueram a bandeira e um terceiro espera. O relógio do estádio, sem números, marca 3 horas.",
+    "cena": "Dona Térmica, de juíza com apito, corre até um jogador simpático em forma de pâncreas, sentado no gramado e segurando a barriga. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica de juíza diante do VAR; dois bandeirinhas com a bandeira erguida e o pâncreas jogador no gramado."
+    "alt": "Dona Térmica, de juíza, corre até um jogador em forma de pâncreas sentado no gramado, com dor."
   },
   "imagem_macete": {
     "arquivo": "dia-128-macete.png",
-    "cena": "Dona Térmica vira de costas para o VAR e aponta a lateral, de onde entra em campo um galão de soro com camisa 10. O pâncreas jogador já toma água sentado.",
+    "cena": "Callback: Dona Térmica vira de costas para o monitor do VAR e chama a lateral, de onde entra em campo um galão de soro com camisa 10; o pâncreas jogador já toma água sentado. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Dona Térmica dispensa o VAR e um galão de soro de camisa 10 entra em campo para hidratar o pâncreas."
+    "alt": "Dona Térmica ignora o VAR e chama um galão de soro com camisa 10; o pâncreas toma água."
   },
   "questao": {
     "vinheta": "A 46-year-old woman with known gallstones has 8 hours of constant epigastric pain radiating to the back, with vomiting. Temperature is 37.8°C and pulse is 112/min. The epigastrium is tender without rigidity. Serum lipase is 5 times the upper limit of normal. Bilirubin and liver enzymes are normal.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Contrast-enhanced CT of the abdomen",
-        "quiz": "TC com contraste"
+        "quiz": "Contrast-enhanced CT"
       },
       "B": {
-        "texto": "IV lactated Ringer solution and analgesia",
-        "quiz": "Ringer e analgesia"
+        "texto": "Lactated Ringer and analgesia",
+        "quiz": "LR + analgesia"
       },
       "C": {
         "texto": "Urgent ERCP",
-        "quiz": "CPRE urgente"
+        "quiz": "Urgent ERCP"
       },
       "D": {
         "texto": "Prophylactic IV imipenem",
-        "quiz": "Imipenem profilático"
+        "quiz": "Prophylactic imipenem"
       }
     },
     "correta": "B"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: dor em faixa que vai para as costas, cálculo na vesícula e uma lipase 5 vezes acima do normal. Bilirrubina e enzimas do fígado normais. O que fazer agora?",
+    "contexto": "Plantão de Terça com a Dona Térmica de juíza: uma dor abdominal que não deixa ninguém dormir, uma vesícula com história e exames de sangue na vinheta. Quatro jogadas possíveis, e a prova quer a primeira.",
     "palavras_chave": [
       "gallstones",
       "epigastric pain radiating to the back",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Dor em faixa, cálculo na vesícula e lipase 5x o normal: o que fazer agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor em faixa, cálculo na vesícula e lipase 5x o normal: o que fazer agora?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

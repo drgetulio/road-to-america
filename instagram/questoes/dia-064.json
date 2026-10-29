@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-05",
-  "gancho": "O bacilo que sai da *máquina de lavar* ainda vermelho",
+  "gancho": "Segunda-feira de microbiologia: o Macrô abre o *dossiê* de um suspeito antigo",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Numa lavanderia de bairro, Macrô, de comanda no bolso, abre uma máquina de lavar e encontra bacilos em forma de bastão, de capa de chuva brilhante, ainda vermelhinhos depois da lavagem. Na prateleira, um galão sem rótulo e um balde de tinta vermelha. Ao lado, uma pilha de camisetas brancas manchadas de rosa.",
+    "cena": "Macrô, de comanda no bolso, está numa sala de arquivo de bairro abrindo uma pasta grossa de dossiê, com uma lupa na mão e uma luminária acesa sobre a mesa.",
     "foco": "50% 35%",
-    "alt": "Macrô abre uma máquina de lavar e encontra bacilos de capa de chuva ainda vermelhos; ao lado, camisetas brancas manchadas de rosa.",
+    "alt": "Macrô, numa sala de arquivo, abre uma pasta grossa de dossiê com uma lupa na mão, sob uma luminária acesa.",
     "arquivo": "dia-064.png"
   },
   "imagem_macete": {
-    "cena": "Callback da lavanderia: de perto, a capa de chuva dos bacilos é de cera grossa, com a tinta vermelha presa nela. Os bacilos saem da máquina enfileirados num cordão sinuoso, como bloco de Carnaval, e o Macrô segura a fila com o guardanapo xadrez.",
+    "cena": "Revelação do dossiê: a foto mostra bacilos de capa de chuva de cera grossa, com a tinta vermelha presa nela, que saem de uma máquina de lavar ainda vermelhinhos, enfileirados num cordão sinuoso como bloco de Carnaval; o Macrô segura a fila com o guardanapo xadrez.",
     "alt": "Bacilos de capa de cera saem da máquina em cordão, como bloco de Carnaval, e o Macrô segura a fila com o guardanapo.",
     "arquivo": "dia-064-macete.png"
   },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dois meses de tosse, suor à noite e um bacilo que não larga a tinta vermelha nem lavado com álcool-ácido. O Macrô foi à lavanderia descobrir o que deixa essa roupa tão impermeável.",
+    "contexto": "Bicho de Segunda: quatro componentes da parede bacteriana na mesa. O Macrô quer saber qual peça explica o que a lâmina mostra. Laboratório de micro, onde todo estudante já confundiu a ordem dos corantes pelo menos uma vez.",
     "palavras_chave": [
-      "chronic cough",
-      "night sweats",
-      "weight loss",
-      "carbolfuchsin stain"
+      "respiratory infection",
+      "microbiology",
+      "bacterial cell wall",
+      "laboratory stains"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#BichoDeSegunda",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Bacilo segue vermelho após álcool-ácido: qual componente?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bacilo segue vermelho após álcool-ácido: qual componente?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

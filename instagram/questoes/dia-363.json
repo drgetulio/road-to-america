@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Disclose the error to him now",
-        "quiz": "Contar tudo"
+        "quiz": "Disclose to him now"
       },
       "B": {
         "texto": "Disclose only if a complication develops",
-        "quiz": "Só se complicar"
+        "quiz": "Disclose only if harm"
       },
       "C": {
         "texto": "Inform only his family",
-        "quiz": "Só a família"
+        "quiz": "Tell only family"
       },
       "D": {
         "texto": "File an incident report without telling him",
-        "quiz": "Só notificar"
+        "quiz": "Incident report only"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Ele recebeu a enoxaparina prescrita para o paciente do leito ao lado. Está bem, sem sangramento, e pergunta por que tanta gente aparece no quarto. O que o médico deve fazer?",
+    "contexto": "Sábado Sem Viés com VAR: o lance já aconteceu, ninguém se machucou e o paciente percebeu o movimento no quarto. Quatro atitudes possíveis; o Viés prefere a que não aparece no replay.",
     "palavras_chave": [
-      "wrong-patient medication",
-      "enoxaparin",
-      "no harm",
-      "physician-patient communication"
+      "patient safety",
+      "medication error",
+      "communication",
+      "medical ethics"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Enoxaparina no paciente errado, sem sangramento: o que fazer agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Enoxaparina no paciente errado, sem sangramento: o que fazer agora?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

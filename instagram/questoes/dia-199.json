@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-20",
   "tom": null,
-  "gancho": "Seu Néfron achou *um pente* no glomérulo e quer saber quem penteou",
-  "gancho_apoio": null,
+  "gancho": "Quarta do Porquê: o Seu Néfron recebeu a biópsia e *quer o nome do anticorpo*",
+  "gancho_apoio": "Glomerulopatia no Step 1: quatro doenças, quatro desenhos na prata e uma vida inteira confundindo.",
   "imagem": {
     "arquivo": "dia-199.png",
-    "cena": "Em estilo manual de montagem, Seu Néfron examina com lupa a cerca do quintal, que ganhou pontinhas enfileiradas como os dentes de um pente; do outro lado, bolinhas brancas de proteína passam pela cerca e caem num balde cheio de espuma. Setinhas de manual de montagem apontam para a cerca.",
+    "cena": "Seu Néfron, de lupa na mão, examina uma lâmina de vidro erguida contra a luz da janela da repartição. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron achou um pente na membrana do glomérulo"
+    "alt": "Seu Néfron examina uma lâmina contra a luz da janela"
   },
   "imagem_macete": {
     "arquivo": "dia-199-macete.png",
-    "cena": "Do lado de fora da cerca, entre as pontinhas, aparecem montinhos redondos grudados (os depósitos); Seu Néfron carimba em verde uma pequena fechadura pendurada num prego do lado de fora (o PLA2R) e aponta com a caneta.",
-    "alt": "Membranosa: anticorpo contra PLA2R"
+    "cena": "Callback: na lâmina, uma cerca ganha pontinhas como dentes de pente, com montinhos redondos grudados do lado de fora; Seu Néfron carimba de verde uma pequena fechadura pendurada na cerca (o PLA2R). Fundo limpo.",
+    "alt": "A cerca com pontinhas de pente e montinhos do lado de fora; Seu Néfron carimba a fechadura"
   },
   "questao": {
     "vinheta": "A 55-year-old man has 2 months of progressive leg swelling. Urine dipstick shows 4+ protein without blood, and 24-hour urine protein is 7 g. Serum albumin is 2.2 g/dL. Kidney biopsy shows diffusely thickened capillary walls, and silver stain shows spikes projecting from the glomerular basement membrane.",
@@ -31,15 +31,15 @@
     "alternativas": {
       "A": {
         "texto": "Alpha-3 chain of type IV collagen",
-        "quiz": "Colágeno IV"
+        "quiz": "Type IV collagen α3"
       },
       "B": {
         "texto": "Myeloperoxidase",
-        "quiz": "Mieloperoxidase"
+        "quiz": "Myeloperoxidase"
       },
       "C": {
         "texto": "Phospholipase A2 receptor",
-        "quiz": "Receptor PLA2R"
+        "quiz": "PLA2 receptor"
       },
       "D": {
         "texto": "C3 convertase",
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê na patologia renal. Edema de pernas, muita proteína na urina e uma biópsia com um desenho muito característico na prata. Qual alvo o anticorpo procura?",
+    "contexto": "Quarta do Porquê na patologia renal, com o Seu Néfron de lupa. A urina, o sangue e a biópsia estão descritos na vinheta, e a coloração de prata tem a última palavra. Qual alvo o anticorpo procura?",
     "palavras_chave": [
-      "leg edema",
-      "heavy proteinuria",
-      "hypoalbuminemia",
-      "silver stain"
+      "glomerular disease",
+      "kidney biopsy",
+      "autoantibody",
+      "Step 1 pathology"
     ]
   },
   "quiz": {
-    "pergunta": "Nefrótico com espículas na prata. Qual alvo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nefrótico com espículas na prata. Qual alvo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

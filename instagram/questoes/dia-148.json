@@ -12,39 +12,39 @@
   "remix_de": null,
   "explicacao_em": "2027-03-30",
   "tom": null,
-  "gancho": "Rim novo chegou de mudança e foi *despejado* antes de desfazer a mala. Quem foi?",
-  "gancho_apoio": "Mal terminou a anastomose e o enxerto ficou roxo. O Macrô viu tudo da portaria.",
+  "gancho": "Bicho de Segunda no transplante: *quem despejou* o rim novo?",
+  "gancho_apoio": "O Macrô viu tudo da portaria. O relógio da vinheta é a pista principal.",
   "imagem": {
     "arquivo": "dia-148.png",
-    "cena": "Na portaria de um prédio, o Macrô, com a comanda em branco no bolso, vê chegar um vizinho novo em forma de rim, puxando uma mala de mudança. O corredor do prédio está na penumbra e um cronômetro sem números pende na parede.",
+    "cena": "Na portaria de um prédio, o Macrô vê chegar um vizinho novo em forma de rim, puxando uma mala de mudança. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô na portaria vê chegar um vizinho em forma de rim com mala de mudança; o corredor está na penumbra."
+    "alt": "Macrô na portaria vê chegar um vizinho novo em forma de rim com uma mala de mudança."
   },
   "imagem_macete": {
     "arquivo": "dia-148-macete.png",
-    "cena": "A luz do corredor acende e mostra uma fila de anticorpos em forma de Y que já estava de tocaia antes da mudança. Eles grudam nas paredes, e plaquetas amarelas se amontoam como engarrafamento, fechando a passagem. O cronômetro mal andou.",
+    "cena": "Callback: a luz do corredor acende e mostra uma fila de anticorpos em forma de Y que já estava de tocaia antes da mudança, grudada nas paredes, e o Macrô olha o cronômetro, que mal andou. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A luz acende e mostra os anticorpos que já esperavam no corredor; as plaquetas fecham a passagem."
+    "alt": "A luz acende e mostra anticorpos em Y já de tocaia nas paredes; o cronômetro mal andou."
   },
   "questao": {
     "vinheta": "Minutes after the vascular anastomoses are completed in a deceased-donor kidney transplant, the graft becomes mottled and cyanotic and produces no urine. Biopsy shows widespread thrombi in glomerular capillaries, neutrophil infiltration and fibrinoid necrosis of arterioles.",
     "pergunta": "Which mechanism is responsible?",
     "alternativas": {
       "A": {
-        "texto": "Preformed recipient antibodies against donor antigens",
-        "quiz": "Ac pré-formado"
+        "texto": "Preformed antibodies against donor antigens",
+        "quiz": "Preformed antibodies"
       },
       "B": {
         "texto": "Recipient CD8+ T cells against donor MHC class I",
-        "quiz": "T CD8 do receptor"
+        "quiz": "Recipient CD8+ T cells"
       },
       "C": {
         "texto": "Donor T cells attacking recipient tissues",
-        "quiz": "T do doador (GVHD)"
+        "quiz": "Donor T cells (GVHD)"
       },
       "D": {
         "texto": "Chronic intimal fibrosis of graft arteries",
-        "quiz": "Fibrose da íntima"
+        "quiz": "Chronic intimal fibrosis"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda na imunologia dos transplantes: um rim que mal chegou e já foi rejeitado. O relógio é a principal pista.",
+    "contexto": "Bicho de Segunda na imunologia dos transplantes: um rim que não foi bem recebido. Quanto tempo levou e o que a biópsia mostrou estão na vinheta.",
     "palavras_chave": [
       "kidney transplant",
       "minutes after anastomosis",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Enxerto roxo e sem urina minutos após a anastomose: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Enxerto roxo e sem urina minutos após a anastomose: qual mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

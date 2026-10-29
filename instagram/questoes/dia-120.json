@@ -7,24 +7,24 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Malária e hipnozoítos",
   "conceito": "Plasmodium vivax and ovale: liver hypnozoites require primaquine to prevent relapse",
-  "personagem": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-02",
   "tom": null,
-  "gancho": "Hotel fígado: tem *hóspede escondido* no quarto dos fundos",
-  "gancho_apoio": "Febre a cada 48 horas depois da Amazônia, cloroquina feita.",
+  "gancho": "O engenheiro voltou da obra e *a febre marcou hora*",
+  "gancho_apoio": "O Mito, que entende de turno, estranhou uma febre que bate ponto.",
   "imagem": {
     "arquivo": "dia-120.png",
-    "cena": "Macrô, de comanda no bolso, é o recepcionista de um pequeno hotel em forma de fígado. Um mosquito simpático faz check-in no balcão, e no andar de cima uma janela está apagada, com um aviso de porta em branco pendurado na maçaneta, igual hóspede de aluguel por temporada que nunca sai.",
+    "cena": "O Mito, de crachá e café na mão, é o recepcionista da noite de um pequeno hotel em forma de fígado, e um mosquito simpático faz check-in no balcão com uma mala de rodinha. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô é recepcionista de um hotel em forma de fígado; um mosquito faz check-in e uma janela do andar de cima está apagada, com aviso na maçaneta."
+    "alt": "Mito, recepcionista de um hotel em forma de fígado, atende um mosquito que faz check-in com mala de rodinha."
   },
   "imagem_macete": {
     "arquivo": "dia-120-macete.png",
-    "cena": "Callback: no saguão do hotel fígado, um aspirador em forma de comprimido limpa o salão (a cloroquina). No andar de cima, um carrinho de camareira em forma de cápsula bate à porta do quarto escondido para o check-out. Na recepção, uma prancheta com um sinal verde de conferido.",
+    "cena": "Callback: no andar de cima do hotel fígado, um carrinho de camareira em forma de cápsula bate à porta de um quarto escuro com aviso de não perturbe, e o Mito, com a prancheta conferida, entrega a conta do check-out. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Aspirador em forma de comprimido limpa o saguão; um carrinho em forma de cápsula bate à porta do quarto escondido."
+    "alt": "Um carrinho de camareira em forma de cápsula bate num quarto escuro; o Mito entrega a conta do check-out."
   },
   "questao": {
     "vinheta": "A 30-year-old engineer returns from 6 months of work in the Amazon region with fever every 48 hours. A blood smear shows enlarged red cells with Schüffner stippling. He is treated with chloroquine, and the fever resolves. G6PD activity is normal.",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de segunda: um engenheiro volta da Amazônia com febre em dias alternados e melhora com cloroquina. O tratamento acabou?",
+    "contexto": "Bicho de Segunda: um engenheiro volta de seis meses de obra fora do país com febre, e o esfregaço da vinheta entrega a espécie. Qual remédio a vinheta pede?",
     "palavras_chave": [
       "Amazon travel",
       "fever every 48 hours",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Vivax tratado: o que evita a recaída?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vivax tratado: o que evita a recaída?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

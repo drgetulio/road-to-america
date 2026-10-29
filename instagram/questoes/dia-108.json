@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-18",
   "tom": null,
-  "gancho": "O rádio fala sem parar, mas não *escuta* ninguém",
-  "gancho_apoio": "Fala fluente, palavras trocadas, não entende nem repete.",
+  "gancho": "Seu Allen desmontou o rádio: *qual peça queimou*?",
+  "gancho_apoio": "Uma conversa saiu torta, e o manual tem quatro endereços possíveis.",
   "imagem": {
     "arquivo": "dia-108.png",
-    "cena": "Na bancada de uma oficina, Seu Allen, a chavinha do manual de montagem, desmonta com cuidado um rádio antigo e simpático, com um microfone na frente e uma antena do lado. O rádio solta uma enxurrada de formas coloridas misturadas, estrelas, espirais e triângulos, e bilhetinhos de papel dobrado voam na direção dele. Setinhas de manual apontam para o microfone e para a antena.",
+    "cena": "Na bancada de uma oficina, Seu Allen desmonta com cuidado um rádio antigo e simpático, com um microfone na frente e uma antena do lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Allen desmonta um rádio antigo que solta uma enxurrada de formas misturadas; bilhetinhos de papel voam na direção dele."
+    "alt": "Seu Allen desmonta com cuidado um rádio antigo com microfone na frente e antena do lado."
   },
   "imagem_macete": {
     "arquivo": "dia-108-macete.png",
-    "cena": "Callback da oficina: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos batem nela e caem no chão sem entrar. O microfone da frente está inteiro e brilhando, e um fio fino liga o microfone à antena. Seu Allen aponta para a antena.",
+    "cena": "Callback da oficina: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos de papel batem nela e caem sem entrar; o microfone da frente segue inteiro e brilhando. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A antena do rádio está torta e solta faíscas, e os bilhetes caem sem entrar; o microfone está inteiro, e Seu Allen aponta para a antena."
+    "alt": "A antena do rádio está torta e solta faíscas; os bilhetes batem nela e caem, e o microfone segue inteiro."
   },
   "questao": {
     "vinheta": "A 71-year-old right-handed man has sudden difficulty communicating. He speaks fluently in long sentences filled with wrong and invented words, cannot follow simple spoken commands and cannot repeat a short phrase. He seems unaware of his errors. Strength and sensation are normal.",
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do porquê, neuroanatomia: um homem destro de repente fala muito, mas sem sentido, e não entende o que dizem a ele.",
+    "contexto": "Quarta do Porquê, neuroanatomia: um homem destro com uma dificuldade súbita de conversa. O que ele fala, o que ele entende e o que ele repete estão na vinheta, e cada detalhe aponta um endereço no cérebro.",
     "palavras_chave": [
       "fluent speech",
       "paraphasias",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Fala fluente, não entende nem repete: onde está a lesão?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fala fluente, não entende nem repete: onde está a lesão?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

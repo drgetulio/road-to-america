@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Anteroposterior pelvic radiograph",
-        "quiz": "Raio X de bacia"
+        "quiz": "AP pelvis radiograph"
       },
       "B": {
         "texto": "Hip ultrasonography",
-        "quiz": "Ultrassom de quadril"
+        "quiz": "Hip ultrasound"
       },
       "C": {
         "texto": "MRI of the hips",
-        "quiz": "Ressonância"
+        "quiz": "MRI of the hips"
       },
       "D": {
         "texto": "Technetium bone scan",
-        "quiz": "Cintilografia"
+        "quiz": "Technetium bone scan"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Menina de 7 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.",
+    "contexto": "Rodízio de Quinta com sobremesa: o brigadeiro pula da forminha e volta, e o garçom trouxe quatro espetos de exame. Só um serve na idade da vinheta, e a idade está escrita em semanas, do jeito que o NBME gosta de esconder.",
     "palavras_chave": [
-      "7-week-old",
-      "breech presentation",
-      "thigh skin fold",
-      "hip clunk"
+      "well-baby visit",
+      "pediatric orthopedics",
+      "hip examination",
+      "imaging choice"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Quadril que sai e volta no bebê de 7 semanas: qual exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quadril que sai e volta no bebê de 7 semanas: qual exame?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

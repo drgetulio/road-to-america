@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-05",
   "tom": null,
-  "gancho": "Sete anos no mesmo frasco e *a prateleira esvaziou*",
-  "gancho_apoio": "Cãibra, tremor e magnésio lá embaixo. Como age o remédio antigo?",
+  "gancho": "Sextou: *um remédio de muitos anos* e um exame que veio baixo",
+  "gancho_apoio": "Receita sem data de revisão é como cronograma sem simulado: ninguém sabe se ainda funciona.",
   "imagem": {
     "arquivo": "dia-215.png",
-    "cena": "Tia Meia-Vida atrás do balcão da farmácia, segurando um frasco antigo, cercada por folhas arrancadas de calendário que voam. Na prateleira atrás dela, dois espaços vazios: falta a caixinha de cristais prateados e a caixinha vermelha.",
+    "cena": "Tia Meia-Vida, atrás do balcão, assopra a poeira de um frasco antigo, cercada por folhas de calendário que voam. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Sete anos no mesmo frasco e a prateleira esvaziou"
+    "alt": "Tia Meia-Vida assopra a poeira de um frasco antigo entre folhas de calendário"
   },
   "imagem_macete": {
     "arquivo": "dia-215-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Irreversible inhibition of the parietal cell H+/K+ ATPase",
-        "quiz": "Trava H+/K+ ATPase"
+        "quiz": "Blocks H+/K+ ATPase"
       },
       "B": {
-        "texto": "Competitive blockade of histamine H2 receptors",
-        "quiz": "Bloqueia receptor H2"
+        "texto": "Competitive blockade of histamine H2 receptors on parietal cells",
+        "quiz": "Blocks H2 receptors"
       },
       "C": {
         "texto": "Activation of prostaglandin E1 receptors",
-        "quiz": "Análogo de PGE1"
+        "quiz": "PGE1 analog"
       },
       "D": {
         "texto": "Neutralization of acid by magnesium hydroxide",
-        "quiz": "Antiácido de Mg"
+        "quiz": "Mg hydroxide antacid"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sete anos tomando o mesmo remédio para refluxo, e agora cãibras, tremor nas mãos, sinal de Chvostek, magnésio e cálcio baixos. A Tia Meia-Vida desconfia do frasco antigo. Como ele age?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Uma senhora toma o mesmo remédio há anos para um problema comum, e agora os exames mudaram. A doença de base e os achados estão na vinheta. Como age esse remédio?",
     "palavras_chave": [
-      "muscle cramps",
-      "Chvostek sign",
-      "long-term GERD therapy",
-      "low magnesium"
+      "long-term medication",
+      "laboratory changes",
+      "mechanism of action",
+      "Step 1 pharmacology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Remédio de 7 anos e magnésio baixo: como age?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Remédio de 7 anos e magnésio baixo: como age?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

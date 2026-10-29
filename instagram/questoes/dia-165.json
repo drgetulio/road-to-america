@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-16",
   "tom": null,
-  "gancho": "Vômito em jato, fome logo depois e uma *azeitona* escondida. Qual exame acha?",
-  "gancho_apoio": "Primeiro filho, 4 semanas e um cloro lá embaixo. O Garçom Espetinho está de olho no chafariz.",
+  "gancho": "Primeiro filho e *a família inteira de plantão*",
+  "gancho_apoio": "A gasometria da vinheta conta metade da história; o exame certo conta o resto.",
   "imagem": {
     "arquivo": "dia-165.png",
-    "cena": "Num parque, ao lado de um chafariz que solta um arco forte de água, o Garçom Espetinho segura um espeto com uma única azeitona verde. No banco, uma mamadeira cheia e a plaquinha verde e vermelha, de lado.",
+    "cena": "Num parque, o Garçom Espetinho segura uma mamadeira cheia e olha preocupado para um relógio de rua. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho num parque com um espeto de uma azeitona; ao lado, um chafariz soltando um arco forte de água."
+    "alt": "Garçom Espetinho segura uma mamadeira cheia e olha preocupado para um relógio de rua, num parque."
   },
   "imagem_macete": {
     "arquivo": "dia-165-macete.png",
-    "cena": "Uma sonda de ultrassom em forma de lupa examina a azeitona e revela por dentro um anel grosso, como uma rosquinha de parede espessa; a plaquinha vira verde. Uma fatia de limão (o ácido perdido) e uma bananinha (o potássio) saem voando.",
-    "alt": "Uma sonda de ultrassom revela o anel grosso dentro da azeitona; limão e bananinha saem voando."
+    "cena": "Callback: uma sonda de ultrassom em forma de lupa examina uma azeitona no espeto do garçom e revela por dentro um anel grosso, como uma rosquinha de parede espessa. Fundo limpo.",
+    "alt": "Uma sonda de ultrassom examina uma azeitona e revela um anel grosso por dentro."
   },
   "questao": {
     "vinheta": "A 4-week-old firstborn boy has had forceful, nonbilious vomiting after every feed for 5 days and seems hungry right after vomiting. He has fewer wet diapers. Serum chemistry: Na+ 134, K+ 3.0, Cl- 88, and HCO3- 33 mEq/L.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Upper endoscopy",
-        "quiz": "Endoscopia"
+        "quiz": "Upper endoscopy"
       },
       "B": {
         "texto": "Upper gastrointestinal contrast series",
-        "quiz": "Seriografia EED"
+        "quiz": "Upper GI series"
       },
       "C": {
         "texto": "CT of the abdomen",
-        "quiz": "TC de abdome"
+        "quiz": "CT of the abdomen"
       },
       "D": {
         "texto": "Abdominal ultrasonography",
-        "quiz": "Ultrassom abdominal"
+        "quiz": "Ultrasound"
       }
     },
     "correta": "D"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na pediatria. Primeiro filho, 4 semanas, vômito forte e não bilioso depois de toda mamada, fome logo em seguida e menos fraldas molhadas. Olhe o cloro e o bicarbonato antes de escolher o exame.",
+    "contexto": "Rodízio de Quinta na pediatria. Um primeiro filho e uma história que a vinheta conta mamada por mamada. Olhe os eletrólitos antes de escolher o exame.",
     "palavras_chave": [
       "nonbilious vomiting",
       "4-week-old",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Lactente de 4 semanas, vômito em jato e cloro 88 com HCO3 33: qual exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lactente de 4 semanas, vômito em jato e cloro 88 com HCO3 33: qual exame?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

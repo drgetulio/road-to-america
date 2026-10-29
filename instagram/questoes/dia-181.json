@@ -14,17 +14,17 @@
   "explicacao_em": "2027-05-02",
   "tom": "acolhedor",
   "gancho": "Dia do Trabalhador: quem *cuida* também precisa de cuidado",
-  "gancho_apoio": "Hoje sem piada. Proteger quem está na mesa e encaminhar o colega com respeito.",
+  "gancho_apoio": "Hoje sem piada. Um colega, um caso marcado e uma decisão difícil.",
   "imagem": {
     "arquivo": "dia-181.png",
-    "cena": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima. No corredor, a Dona Bússola, serena, fica ao lado de um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio; na parede, um quadrinho 2x2 em branco.",
+    "cena": "Na porta de um centro cirúrgico, com um semáforo ainda amarelo em cima, a Dona Bússola, serena, está ao lado de um cabide com um jaleco e um capacete de operário, lembrando o 1º de maio. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Porta do centro cirúrgico com semáforo amarelo; Dona Bússola ao lado de um cabide com jaleco e capacete."
+    "alt": "Dona Bússola na porta do centro cirúrgico, sob um semáforo amarelo, ao lado de um cabide com jaleco e capacete."
   },
   "imagem_macete": {
     "arquivo": "dia-181-macete.png",
-    "cena": "O semáforo fica vermelho na porta da sala e uma seta verde aponta para o elevador da chefia; um guarda-chuva protege a mesa cirúrgica vazia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado.",
-    "alt": "Semáforo vermelho na porta, seta verde para o elevador e um cachecol no jaleco do cabide."
+    "cena": "O semáforo da porta fica vermelho, uma seta verde aponta para o elevador da chefia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado. Fundo limpo.",
+    "alt": "O semáforo fica vermelho, uma seta verde aponta o elevador da chefia e o jaleco ganha um cachecol."
   },
   "questao": {
     "vinheta": "A surgical resident notices that the attending surgeon smells of alcohol, has slurred speech, and is unsteady while scrubbing for an elective case scheduled to start in 10 minutes. The resident worries about damaging their working relationship.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Ask the attending to finish this case and then seek help",
-        "quiz": "Termina e depois vê"
+        "quiz": "Finish case, then help"
       },
       "B": {
         "texto": "Notify the chief of surgery before the case begins",
-        "quiz": "Avisar a chefia já"
+        "quiz": "Tell the chief now"
       },
       "C": {
         "texto": "Report the attending to the state medical board next week",
-        "quiz": "Conselho na semana"
+        "quiz": "State board next week"
       },
       "D": {
         "texto": "Document the concern and watch for a second episode",
-        "quiz": "Anotar e esperar"
+        "quiz": "Document and wait"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje é 1º de maio, e a questão é sobre um colega que não está bem para trabalhar. Na prova e na vida, existe uma ordem certa: proteger quem está na mesa e, ao mesmo tempo, encaminhar quem precisa de ajuda.",
+    "contexto": "Hoje é 1º de maio, e a questão é sobre um colega que não está bem para trabalhar. O que o residente viu e quanto falta para o caso começar estão na vinheta.",
     "palavras_chave": [
       "attending surgeon",
       "smell of alcohol",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cirurgião com hálito alcoólico e fala arrastada antes do caso: e agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cirurgião com hálito alcoólico e fala arrastada antes do caso: e agora?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

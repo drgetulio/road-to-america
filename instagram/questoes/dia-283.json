@@ -13,10 +13,10 @@
   "explicacao_em": "2027-08-12",
   "tom": null,
   "gancho": "Dia do Estudante: por que *a revisão das 2 da manhã* finalmente gruda?",
-  "gancho_apoio": "Estímulo forte, repetido, e a sinapse fica maior por horas. O que precisa entrar no neurônio?",
+  "gancho_apoio": "Dia do Estudante: o Mito estuda e o cavalo-marinho levanta peso. O que está acontecendo na sinapse?",
   "imagem": {
     "arquivo": "dia-283.png",
-    "cena": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, estuda numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos. Atrás deles, uma parede com várias portinhas fechadas. Setinhas de manual apontam para o halter, e ao lado do Mito já há quatro copos de café vazios.",
+    "cena": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, boceja numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos.",
     "foco": "50% 35%",
     "alt": "Mito e o cavalo-marinho estudam às 2 da manhã"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Chloride influx through GABA-A receptors",
-        "quiz": "Cl- pelo GABA-A"
+        "quiz": "Cl- influx via GABA-A"
       },
       "B": {
         "texto": "Potassium efflux through GIRK channels",
-        "quiz": "K+ pelo GIRK"
+        "quiz": "K+ efflux via GIRK"
       },
       "C": {
         "texto": "Calcium influx through NMDA receptors",
-        "quiz": "Ca2+ pelo NMDA"
+        "quiz": "Ca2+ influx via NMDA"
       },
       "D": {
         "texto": "Sodium influx at the axon hillock",
-        "quiz": "Na+ no cone axônico"
+        "quiz": "Na+ influx at hillock"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia do Estudante. Estímulo forte e repetido no hipocampo e a sinapse fica maior por horas, a não ser que o AP5 chegue antes. Qual evento faz a memória grudar?",
+    "contexto": "Feliz Dia do Estudante para quem tem 900 revisões atrasadas no Anki e jura que zera hoje. O Mito estuda junto com um cavalo-marinho, e a pergunta é o que faz a memória grudar na sinapse. A vinheta é de laboratório, com um bloqueador no meio.",
     "palavras_chave": [
-      "hippocampal slices",
-      "Schaffer collaterals",
-      "high-frequency stimulation",
-      "AP5"
+      "hippocampus",
+      "synaptic plasticity",
+      "neurophysiology",
+      "memory"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Estímulo forte e repetido, bloqueado pelo AP5: qual evento induz a mudança?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estímulo forte e repetido, bloqueado pelo AP5: qual evento induz a mudança?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

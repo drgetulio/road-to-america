@@ -1105,7 +1105,7 @@ os formulários adicionais para que cada Step tenha pelo menos dois formulários
 reservados além de um banco de prática separado. A ligação com a NBME e o modelo de
 desfechos já estão prontos e entram sozinhos quando a turma tiver dados suficientes.
 
-## 22. Correções da rodada 4 (30/10/2026)
+## 22. Correções da rodada 4 (29/10/2026)
 
 | Achado | O que mudou | Onde |
 |---|---|---|

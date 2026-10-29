@@ -12,47 +12,47 @@ const segunda = [
   'SI|Imu,Gen,Pat|me|X|Agamaglobulinemia de Bruton|Bruton agammaglobulinemia: BTK defect blocks B-cell maturation, infections start after maternal IgG wanes|bruton',
   'SI|Imu,Gen,Ana|dx|X|Síndrome de DiGeorge|DiGeorge syndrome: 22q11.2 deletion with thymic aplasia, hypocalcemia and conotruncal defects|digeorge',
   'SI|Imu,Bio|me|X|SCID por deficiência de ADA|ADA-deficient SCID: accumulated dATP poisons lymphocyte proliferation|scid',
-  'SI|Mic,Pat|me|X|Malária e hipnozoítos|Plasmodium vivax and ovale: liver hypnozoites require primaquine to prevent relapse|malaria',
+  'SI|Mic,Pat|me|M|Malária e hipnozoítos|Plasmodium vivax and ovale: liver hypnozoites require primaquine to prevent relapse|malaria',
   'SI|Imu,Fis|im|X|MHC I e MHC II|MHC I vs MHC II: MHC I shows endogenous peptides to CD8, MHC II shows exogenous peptides to CD4|mhc',
   'SI|Imu,Gen,Pat|dx|P|Síndrome de Wiskott-Aldrich|Wiskott-Aldrich syndrome: WAS mutation with eczema, recurrent infections and small platelets|was',
-  'SI|Imu,Pat|dx|X|Deficiência do complemento terminal|Terminal complement deficiency: C5-C9 defect predisposes to recurrent Neisseria infections|c5c9',
+  'SI|Imu,Pat|dx||Deficiência do complemento terminal|Terminal complement deficiency: C5-C9 defect predisposes to recurrent Neisseria infections|c5c9',
   'SI|Imu,Bio,Pat|me|X|Doença granulomatosa crônica|Chronic granulomatous disease: NADPH oxidase defect, catalase-positive infections, abnormal DHR test|cgd',
   'SI|Imu|me|X|Síndrome de hiper-IgM|Hyper-IgM syndrome: CD40L defect prevents class switching|hiperigm',
-  'SI|Imu,Pat|pp|X|Deficiência seletiva de IgA|Selective IgA deficiency: anti-IgA antibodies cause anaphylaxis to standard blood products|igadef',
+  'SI|Imu,Pat|pp|P|Deficiência seletiva de IgA|Selective IgA deficiency: anti-IgA antibodies cause anaphylaxis to standard blood products|igadef',
   'MU|Imu,Pat|me|X|Hipersensibilidade tipo I|Type I hypersensitivity: allergen cross-links IgE on mast cells, tryptase confirms degranulation|hs1',
-  'MU|Imu,Pat|dx|X|Doença do soro|Serum sickness: type III immune complexes 1 to 2 weeks after exposure, low complement|hs3',
+  'MU|Imu,Pat|dx|N|Doença do soro|Serum sickness: type III immune complexes 1 to 2 weeks after exposure, low complement|hs3',
   'MU|Imu,Pat|me|X|Rejeição hiperaguda|Hyperacute rejection: preformed recipient antibodies thrombose the graft within minutes|hyperacute',
-  'MU|Imu,Pat|dx|X|Doença do enxerto contra o hospedeiro|Graft-versus-host disease: donor T cells attack skin, liver and gut|gvhd',
+  'MU|Imu,Pat|dx|P|Doença do enxerto contra o hospedeiro|Graft-versus-host disease: donor T cells attack skin, liver and gut|gvhd',
   'CN|Imu,Pat|me|X|Miastenia gravis|Myasthenia gravis: type II antibodies against postsynaptic acetylcholine receptors|mg',
   'ME|Imu,Pat|im|X|Dermatite de contato|Contact dermatitis to nickel: type IV delayed hypersensitivity mediated by T cells|contact',
-  'ME|Imu,Pat|dx|X|Lúpus eritematoso sistêmico|SLE autoantibodies: anti-dsDNA and anti-Smith are specific, anti-histone points to drug-induced lupus|lupus',
+  'ME|Imu,Pat|dx|T|Lúpus eritematoso sistêmico|SLE autoantibodies: anti-dsDNA and anti-Smith are specific, anti-histone points to drug-induced lupus|lupus',
   'ME|Imu,Pat|me|X|Angioedema hereditário|Hereditary angioedema: C1 esterase inhibitor deficiency raises bradykinin, swelling without urticaria|hae',
-  'GI|Imu,Pat,Bio|dx|X|Doença celíaca|Celiac disease: HLA-DQ2/DQ8, IgA anti-tissue transglutaminase as screening|celiac',
+  'GI|Imu,Pat,Bio|dx|P|Doença celíaca|Celiac disease: HLA-DQ2/DQ8, IgA anti-tissue transglutaminase as screening|celiac',
   'RR|Imu,Pat,His|dx|N|Síndrome de Goodpasture|Goodpasture syndrome: anti-GBM (type IV collagen) antibodies with linear immunofluorescence|goodpasture',
   'CV|Imu,Pat|me|X|Febre reumática|Rheumatic fever: molecular mimicry between streptococcal M protein and cardiac antigens|rheumatic',
   'RE|Imu,Pat|me|X|Doença de Graves|Graves disease: stimulating antibodies against the TSH receptor (type II, noncytotoxic)|graves',
   // Microbiologia
   'CV|Mic,Pat|dx|X|Endocardite em uso de drogas injetáveis|Staphylococcus aureus endocarditis in injection drug use: tricuspid valve, acute course|saendo',
-  'CV|Mic,Pat|me|X|Estreptococos do grupo viridans|Viridans streptococci: dextran helps adhesion to damaged valves after dental procedures|viridans',
+  'CV|Mic,Pat|me|M|Estreptococos do grupo viridans|Viridans streptococci: dextran helps adhesion to damaged valves after dental procedures|viridans',
   'GI|Mic,Pat|me|X|Helicobacter pylori|Helicobacter pylori: urease makes an ammonia buffer, positive urea breath test|hpylori',
   'GI|Mic,Fis|me|X|Cólera|Vibrio cholerae toxin: permanently activates Gs, raises cAMP, rice-water diarrhea|cholera',
-  'GI|Mic,Pat|dx|N|E. coli êntero-hemorrágica|EHEC O157:H7: Shiga-like toxin, bloody diarrhea, risk of hemolytic uremic syndrome|ehec',
+  'GI|Mic,Pat|dx|X|E. coli êntero-hemorrágica|EHEC O157:H7: Shiga-like toxin, bloody diarrhea, risk of hemolytic uremic syndrome|ehec',
   'GI|Mic,Pat|dx|X|Hepatite E|Hepatitis E: fecal-oral RNA virus with high mortality in pregnancy|hev',
-  'GI|Mic,Pat|dx|X|Giardíase|Giardia lamblia: fatty diarrhea after drinking stream water, cysts and trophozoites in stool|giardia',
+  'GI|Mic,Pat|dx|M|Giardíase|Giardia lamblia: fatty diarrhea after drinking stream water, cysts and trophozoites in stool|giardia',
   'RR|Mic,Pat|me|X|Mycobacterium tuberculosis|Mycobacterium tuberculosis: mycolic acid makes it acid-fast, cord factor drives virulence|mtb',
   'RR|Mic,Pat|dx|X|Streptococcus pneumoniae|Streptococcus pneumoniae: polysaccharide capsule, optochin-sensitive, top cause of community pneumonia|pneumo',
-  'RR|Mic,Pat|dx|X|Legionella|Legionella pneumophila: pneumonia with hyponatremia and diarrhea, urinary antigen test|legionella',
+  'RR|Mic,Pat|dx|N|Legionella|Legionella pneumophila: pneumonia with hyponatremia and diarrhea, urinary antigen test|legionella',
   'RR|Mic|im|X|Influenza: shift e drift|Influenza shift vs drift: segment reassortment causes pandemics, point mutations cause yearly epidemics|flu',
   'RR|Mic,Pat|dx|X|Mycoplasma pneumoniae|Mycoplasma pneumoniae: no cell wall, cold agglutinins, walking pneumonia in young adults|mycoplasma',
   'RR|Mic,Pat|me|N|Proteus e cálculos de estruvita|Proteus mirabilis: urease alkalinizes urine and builds struvite staghorn stones|proteus',
-  'RR|Mic,Pat|me|N|E. coli uropatogênica|Uropathogenic E. coli: P fimbriae drive ascent to the kidney|upec',
-  'CN|Mic,Pat|dx|X|Neisseria meningitidis|Neisseria meningitidis: lipooligosaccharide, petechial rash and Waterhouse-Friderichsen syndrome|mening',
+  'RR|Mic,Pat|me|P|E. coli uropatogênica|Uropathogenic E. coli: P fimbriae drive ascent to the kidney|upec',
+  'CN|Mic,Pat|dx|P|Neisseria meningitidis|Neisseria meningitidis: lipooligosaccharide, petechial rash and Waterhouse-Friderichsen syndrome|mening',
   'CN|Mic,Pat,His|me|X|Doenças priônicas|Prion disease: misfolded PrP beta-sheets, spongiform encephalopathy, rapid dementia with myoclonus|prion',
   'CN|Mic,Fis|me|X|Botulismo|Botulinum toxin: cleaves SNARE proteins and blocks acetylcholine release, descending flaccid paralysis|botulism',
   'CN|Mic,Fis|me|X|Tétano|Tetanospasmin: blocks GABA and glycine release from Renshaw cells, spastic paralysis|tetanus',
   'CN|Mic,Pat,Ana|dx|X|Encefalite herpética|HSV-1 encephalitis: temporal lobe involvement, CSF PCR confirms|hsv',
   'MU|Mic,Pat|me|X|Superantígenos|Toxic shock syndrome toxin: superantigen links MHC II to the TCR outside the groove, massive cytokine release|tsst',
-  'MU|Mic,Pat|dx|X|Febre maculosa|Rickettsia rickettsii: rash starts at wrists and ankles and spreads centrally after a tick bite|rmsf',
+  'MU|Mic,Pat|dx|P|Febre maculosa|Rickettsia rickettsii: rash starts at wrists and ankles and spreads centrally after a tick bite|rmsf',
   'ME|Mic,Pat|me|X|Gangrena gasosa|Clostridium perfringens alpha toxin: lecithinase destroys membranes, gas gangrene with crepitus|perfringens',
 ];
 
@@ -71,7 +71,7 @@ const quarta = [
   'ME|Gen,Pat|me||Distrofia muscular de Duchenne|Duchenne muscular dystrophy: X-linked frameshift deletion in dystrophin, Gowers sign|duchenne',
   'ME|Ana,Fis|dx||Manguito rotador|Supraspinatus: initiates the first 15 degrees of abduction, empty can test|supraspinatus',
   'ME|Ana|im||Paralisia de Erb|Erb palsy: C5-C6 upper trunk injury, waiter tip posture|erb',
-  'ME|His,Pat|dx|X|Psoríase|Psoriasis histology: parakeratosis, Munro microabscesses, thinned suprapapillary plates|psoriasis',
+  'ME|His,Pat|dx||Psoríase|Psoriasis histology: parakeratosis, Munro microabscesses, thinned suprapapillary plates|psoriasis',
   'ME|Pat,His|dx||Melanoma|Melanoma prognosis: Breslow thickness is the strongest predictor|melanoma',
   'ME|His,Pat|im||Pênfigo vulgar e penfigoide bolhoso|Pemphigus vulgaris vs bullous pemphigoid: desmoglein (intraepidermal) vs hemidesmosome BP180 (subepidermal)|pemphigus',
   'CV|Fis|me|M|Potencial de ação cardíaco|Ventricular action potential: phase 0 fast Na influx, phase 2 plateau from L-type Ca channels|cardiacap',
@@ -93,7 +93,7 @@ const quarta = [
   'RE|Fis,His|me||hCG no primeiro trimestre|hCG: maintains the corpus luteum and its progesterone in the first trimester|hcg',
   'RE|Ana,Gen,Fis|me||Diferenciação sexual|Male differentiation: SRY drives Sertoli cells (anti-Mullerian hormone) and Leydig cells (testosterone)|sry',
   'MU|Gen,Pat|me||Trissomia do 21|Trisomy 21: most cases come from maternal meiotic nondisjunction|t21',
-  'MU|Pat,His|me|M|Apoptose pela via intrínseca|Intrinsic apoptosis: BAX/BAK let cytochrome c leave the mitochondria, BCL-2 blocks it|apoptosis',
+  'MU|Pat,His|me||Apoptose pela via intrínseca|Intrinsic apoptosis: BAX/BAK let cytochrome c leave the mitochondria, BCL-2 blocks it|apoptosis',
   'MU|Gen,Pat|me||Síndrome do X frágil|Fragile X syndrome: CGG repeat expansion silences FMR1 by methylation|fragilex',
 ];
 
@@ -104,7 +104,7 @@ const sextaS1 = [
   'CN|Far,Fis|fa|T|Levodopa e carbidopa|Carbidopa: blocks peripheral DOPA decarboxylase so more levodopa reaches the brain|carbidopa',
   'CN|Far,Fis|im|T|Benzodiazepínicos e barbitúricos|GABA-A modulators: benzodiazepines increase opening frequency, barbiturates increase opening duration|benzobarb',
   'CN|Far,Fis|fa|T|Antipsicóticos típicos|Typical antipsychotics: D2 blockade in the nigrostriatal pathway causes extrapyramidal effects|typicals',
-  'CN|Far,Fis|fa|N|Lítio|Lithium toxicity: narrow therapeutic index, nephrogenic diabetes insipidus, thiazides raise its level|lithium',
+  'CN|Far,Fis|fa|T|Lítio|Lithium toxicity: narrow therapeutic index, nephrogenic diabetes insipidus, thiazides raise its level|lithium',
   'CN|Far,Pat|fa|T|Síndrome serotoninérgica|Serotonin syndrome: SSRI plus MAOI or linezolid, clonus and hyperthermia, cyproheptadine|serotonin',
   'CN|Far,Ana,Fis|fa|T|Colírios para glaucoma|Glaucoma drops: timolol reduces aqueous production, latanoprost increases uveoscleral outflow|glaucoma',
   'ME|Far,Fis|fa|T|Hipertermia maligna|Malignant hyperthermia: RYR1 variant, volatile anesthetic or succinylcholine trigger, dantrolene|mh',
@@ -120,7 +120,7 @@ const sextaS1 = [
   'RR|Far,Fis|fa|N|Aminoglicosídeos|Aminoglycosides: bind 30S, need oxygen-dependent uptake, nephrotoxic and ototoxic|aminoglyc',
   'GI|Far,Fis|fa|T|Inibidores da bomba de prótons|Proton pump inhibitors: irreversibly block H+/K+ ATPase, long-term use lowers magnesium and B12|ppi',
   'RE|Far,Bio|fa|M|Metformina|Metformin: lowers hepatic gluconeogenesis, rare lactic acidosis|metformin',
-  'RE|Far,Fis|fa|N|Inibidores de SGLT2|SGLT2 inhibitors: block proximal glucose reabsorption, genital infections, euglycemic DKA|sglt2',
+  'RE|Far,Fis|fa|T|Inibidores de SGLT2|SGLT2 inhibitors: block proximal glucose reabsorption, genital infections, euglycemic DKA|sglt2',
   'RE|Far,Fis|fa|T|Propiltiouracil|Propylthiouracil: blocks thyroid peroxidase and peripheral T4 to T3 conversion, preferred in the first trimester|ptu',
 ];
 
@@ -139,13 +139,13 @@ const sabadoS1 = [
   'CS|Com|pp||Intérprete profissional|Language barrier: use a professional medical interpreter, not a family member|interpreter',
   'CS|Com|et||Presentes de pacientes|Gifts from patients: a small token may be accepted, expensive gifts are declined|gifts',
   'CS|Com|im||Luto|Grief is not linear: denial, anger, bargaining, depression and acceptance can come and go|grief',
-  'CS|Com|pp|V|Entrevista motivacional|Motivational interviewing: open questions and reflective listening draw out the patient own reasons|mi',
+  'CS|Com|pp||Entrevista motivacional|Motivational interviewing: open questions and reflective listening draw out the patient own reasons|mi',
   'CS|Com|pp||Paciente irritado|Angry patient: acknowledge the emotion and apologize for the experience before explaining|angry',
   'CS|Com|et||Menor emancipado|Emancipated minor: married, in the military or self-supporting adolescents consent for themselves|emancipated',
   'CS|Com|et||Diretivas antecipadas|Advance directive vs durable power of attorney for health care: written wishes vs designated surrogate|advdir',
   'CS|Com|et||Comunicação de erro médico|Medical error disclosure: tell the patient promptly and honestly what happened and what will be done|errordisc',
   'CN|Com|im|V|Mecanismos de defesa|Defense mechanisms: sublimation channels impulses into acceptable acts, reaction formation does the opposite of the impulse|defense',
-  'CN|Com|im||Condicionamento operante|Operant conditioning: negative reinforcement removes an aversive stimulus to increase a behavior|operant',
+  'CN|Com|im|V|Condicionamento operante|Operant conditioning: negative reinforcement removes an aversive stimulus to increase a behavior|operant',
 ];
 
 // ---------- STEP 2 CK ----------
@@ -157,13 +157,13 @@ const terca = [
   'CV|Med|fa||Insuficiência cardíaca com fração reduzida|HFrEF mortality pillars: ARNI or ACE inhibitor, beta-blocker, MRA and SGLT2 inhibitor|hfref',
   'CV|Med|pp|P|Fibrilação atrial e anticoagulação|Atrial fibrillation: anticoagulate when CHA2DS2-VASc is 2 or more in men, 3 or more in women|chadsvasc',
   'CV|Med|pp||Endocardite infecciosa|Suspected endocarditis: three sets of blood cultures before antibiotics, then echocardiography|endocx',
-  'CV|Med|pp||Emergência hipertensiva|Hypertensive emergency: lower mean arterial pressure by no more than 25 percent in the first hour|htnemerg',
+  'CV|Med|pp|N|Emergência hipertensiva|Hypertensive emergency: lower mean arterial pressure by no more than 25 percent in the first hour|htnemerg',
   'CV|Med|dx||Pericardite aguda|Acute pericarditis: diffuse ST elevation with PR depression, NSAID plus colchicine|pericarditis',
   'CV|Med|dx||Doença arterial periférica|Peripheral artery disease: ankle-brachial index below 0.9|abi',
   'RP|Med|pp|P|Tromboembolismo pulmonar|Suspected PE: Wells score guides CT angiography, D-dimer only when probability is low|pe',
   'RP|Med|pp||Exacerbação de DPOC|COPD exacerbation: bronchodilators, systemic steroids, antibiotics if sputum changes, target SpO2 88 to 92 percent|copdex',
   'RP|Med|pp||Nódulo pulmonar incidental|Incidental pulmonary nodule: compare with prior imaging first|nodule',
-  'RP|Med|dx|X|Sarcoidose|Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia|sarcoid',
+  'RP|Med|dx||Sarcoidose|Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia|sarcoid',
   'RP|Med|dx||Derrame pleural|Light criteria: exudate if pleural/serum protein above 0.5 or pleural/serum LDH above 0.6|light',
   'RP|Med|dx||Apneia obstrutiva do sono|Obstructive sleep apnea: polysomnography confirms, CPAP treats|osa',
   'GI|Med,Cir|pp|P|Hemorragia digestiva alta|Upper GI bleeding: resuscitate, IV PPI, endoscopy within 24 hours|ugib',
@@ -177,7 +177,7 @@ const terca = [
   'RU|Med|pp|N|Hipercalemia com alteração no ECG|Hyperkalemia with ECG changes: IV calcium first to stabilize the myocardium|hyperk',
   'RU|Med|pp|N|Correção da hiponatremia crônica|Chronic hyponatremia: correct no faster than 8 to 10 mEq/L per day to avoid osmotic demyelination|sodium',
   'RU|Med|dx|N|Cólica renal|Suspected kidney stone: noncontrast CT, tamsulosin helps distal stones up to 10 mm|stone',
-  'RU|Med|pp||Hematúria macroscópica|Painless gross hematuria in an older smoker: cystoscopy plus CT urography|hematuria',
+  'RU|Med|pp|N|Hematúria macroscópica|Painless gross hematuria in an older smoker: cystoscopy plus CT urography|hematuria',
   'EN|Med|pp|M|Cetoacidose diabética|DKA: fluids first, hold insulin until potassium is at least 3.3|dka',
   'EN|Med|pp||Nódulo de tireoide|Thyroid nodule: check TSH first, then ultrasound to decide on fine-needle aspiration|thyroidnod',
   'EN|Med|pp||Crise adrenal|Adrenal crisis: give IV hydrocortisone immediately, do not wait for tests|adrenalcrisis',
@@ -200,7 +200,7 @@ const terca = [
 // Quinta: rodízio (Ped, GO, Psi, Cir). A ordem de rotação é feita pelo gerador.
 const quinta = [
   'DH|Ped|pp|P|Cadeirinha no carro|Child car seat: rear-facing as long as possible, at least until about age 2|carseat',
-  'DH|Ped|pp|X|Vacinas de vírus vivo aos 12 meses|MMR and varicella: live vaccines given at 12 to 15 months|mmr',
+  'DH|Ped|pp||Vacinas de vírus vivo aos 12 meses|MMR and varicella: live vaccines given at 12 to 15 months|mmr',
   'DH|Ped|dx||Reflexos primitivos|Moro reflex: disappears by about 4 to 6 months, persistence is a red flag|moro',
   'RP|Ped|dx||Crupe|Croup: steeple sign and barking cough, dexamethasone plus nebulized epinephrine if stridor at rest|croup',
   'RP|Ped|pp||Bronquiolite|RSV bronchiolitis: supportive care, no routine bronchodilators or steroids|bronchiolitis',
@@ -208,7 +208,7 @@ const quinta = [
   'GI|Ped,Cir|pp||Intussuscepção|Intussusception: target sign on ultrasound, air or contrast enema reduction|intussusception',
   'NS|Ped|pp||Convulsão febril simples|Simple febrile seizure: no labs, EEG or imaging needed, reassure the family|febrileseizure',
   'NS|Ped|fa||Meningite neonatal|Neonatal meningitis: ampicillin plus cefotaxime or gentamicin to cover GBS, E. coli and Listeria|neomening',
-  'SG|Ped|pp|X|Febre na doença falciforme|Child with sickle cell disease and fever: blood culture and empiric IV ceftriaxone|scdfever',
+  'SG|Ped|pp||Febre na doença falciforme|Child with sickle cell disease and fever: blood culture and empiric IV ceftriaxone|scdfever',
   'SG|Ped|pp|P|Púrpura trombocitopênica imune|Childhood ITP after a viral illness: observe if there is no significant bleeding|itp',
   'MS|Ped|dx||Fibrose cística|Cystic fibrosis: sweat chloride test confirms the diagnosis|cf',
   'MP|Ped|dx||Displasia do desenvolvimento do quadril|Developmental dysplasia of the hip: Ortolani and Barlow, ultrasound before 4 to 6 months|ddh',
@@ -253,12 +253,12 @@ const sextaS2 = [
   'RU|Med|fa|T|Cistite não complicada|Uncomplicated cystitis: nitrofurantoin or TMP-SMX, avoid fluoroquinolones|cystitis',
   'RU|Med|fa|T|Gonorreia|Gonorrhea: single IM dose of ceftriaxone 500 mg, add doxycycline if chlamydia is not excluded|gonorrhea',
   'PG|GO|fa|T|Pré-eclâmpsia com sinais de gravidade|Preeclampsia with severe features: magnesium sulfate, calcium gluconate for toxicity|mgso4',
-  'PG|GO|fa||Hipertensão na gestação|Hypertension in pregnancy: labetalol, nifedipine or methyldopa, never ACE inhibitors|pregnancyhtn',
+  'PG|GO|fa|T|Hipertensão na gestação|Hypertension in pregnancy: labetalol, nifedipine or methyldopa, never ACE inhibitors|pregnancyhtn',
   'EN|Med|fa|T|Diabetes tipo 2 e risco cardiovascular|Type 2 diabetes with ASCVD, heart failure or CKD: add an SGLT2 inhibitor or GLP-1 agonist|t2dcv',
   'MP|Med|fa|T|Bisfosfonatos orais|Oral bisphosphonates: take fasting with water and stay upright 30 minutes (pill esophagitis)|bisphos',
-  'MP|Med|fa||Artrite reumatoide|Rheumatoid arthritis: methotrexate first-line, screen for latent TB before anti-TNF|ra',
+  'MP|Med|fa|T|Artrite reumatoide|Rheumatoid arthritis: methotrexate first-line, screen for latent TB before anti-TNF|ra',
   'MS|Med,Psi|fa||Intoxicação por paracetamol|Acetaminophen overdose: N-acetylcysteine guided by the Rumack-Matthew nomogram|apap',
-  'MS|Med|fa||Intoxicação por organofosforado|Organophosphate poisoning: atropine plus pralidoxime|organophosphate',
+  'MS|Med|fa|T|Intoxicação por organofosforado|Organophosphate poisoning: atropine plus pralidoxime|organophosphate',
   'NS|Ped|fa|T|Otite média aguda|Acute otitis media: high-dose amoxicillin first-line|aom',
   'GI|Med|fa|T|Erradicação do H. pylori|H. pylori eradication: bismuth quadruple therapy when clarithromycin resistance is likely|hpylorirx',
 ];
@@ -281,12 +281,12 @@ const sabadoS2 = [
   'ET|Med,GO|pp||Violência por parceiro íntimo|Intimate partner violence: screen privately and offer a safety plan|ipv',
   'ET|Med|et||Retirar e não iniciar suporte|Withdrawing and withholding life support are ethically equivalent|withdraw',
   'ET|Med|et||Morte encefálica e doação|Brain death and donation: the organ procurement organization approaches the family|opo',
-  'ET|Med|pp|V|Pedido de exame sem indicação|Patient demands MRI for low back pain without red flags: explore concerns and explain why it is not indicated|mri',
+  'ET|Med|pp||Pedido de exame sem indicação|Patient demands MRI for low back pain without red flags: explore concerns and explain why it is not indicated|mri',
   'ET|Med|et|V|Identificação do paciente|Two patient identifiers before medication, blood or procedures|identifiers',
   'ET|Med|et|V|Passagem de plantão|Structured handoff (I-PASS) reduces communication errors|ipass',
   'ET|Med|et||EMTALA|EMTALA: screen and stabilize emergencies regardless of insurance before any transfer|emtala',
-  'ET|Med|et||HIPAA|HIPAA minimum necessary rule: share only what the purpose requires|hipaa',
-  'ET|GO|et||Gestante que recusa cesárea|Competent pregnant patient refusing cesarean: her refusal is respected even if the fetus is at risk|csection',
+  'ET|Med|et|V|HIPAA|HIPAA minimum necessary rule: share only what the purpose requires|hipaa',
+  'ET|GO|et|V|Gestante que recusa cesárea|Competent pregnant patient refusing cesarean: her refusal is respected even if the fetus is at risk|csection',
   'ET|Ped|pp||Hesitação vacinal|Parents refusing vaccines: explore concerns, educate, keep caring for the child|vaxrefusal',
   'ET|Psi|et||Internação psiquiátrica involuntária|Involuntary psychiatric hold: imminent danger to self or others, or grave disability|involuntary',
   'ET|Med|et||Tratamento fútil|Request for nonbeneficial treatment: no obligation to provide it, involve the ethics committee|futility',
@@ -301,13 +301,13 @@ const especiais = {
   '2027-01-25': { step: 1, item: 'ME|Mic,Pat|dx|X|Hanseníase|Mycobacterium leprae: tuberculoid (Th1, few bacilli) vs lepromatous (Th2, many bacilli)|leprae', gancho: 'Janeiro Roxo (conscientização sobre hanseníase). Prepara o remix do Dia Mundial contra a Hanseníase (31/1).' },
   '2027-02-08': { step: 1, item: 'SI|Mic,Pat|dx|X|Mononucleose infecciosa|EBV mononucleosis: infects B cells via CD21, atypical CD8 lymphocytes, heterophile antibodies, no contact sports|ebv', gancho: 'Segunda de Carnaval: a "doença do beijo", sem moralismo.' },
   '2027-03-08': { step: 1, item: 'RE|Mic,Pat|me|X|HPV e câncer do colo do útero|HPV 16 and 18 oncogenesis: E6 degrades p53, E7 inactivates Rb|hpv', gancho: 'Dia Internacional da Mulher (8/3): prevenção do câncer do colo do útero.' },
-  '2027-04-19': { step: 1, item: 'SI|Mic,Pat|dx|X|Malária por falciparum|Plasmodium falciparum: banana-shaped gametocytes, cytoadherence and cerebral malaria|falciparum', gancho: 'Semana do Dia Mundial da Malária (25/4).' },
+  '2027-04-19': { step: 1, item: 'SI|Mic,Pat|dx|P|Malária por falciparum|Plasmodium falciparum: banana-shaped gametocytes, cytoadherence and cerebral malaria|falciparum', gancho: 'Semana do Dia Mundial da Malária (25/4).' },
   '2027-06-14': { step: 1, item: 'SI|Imu,Fis|im|P|Grupos sanguíneos ABO|ABO compatibility: anti-A and anti-B are IgM, type O red cells are the universal donor, AB plasma is universal|abo', gancho: 'Dia Mundial do Doador de Sangue (14/6).' },
   '2027-09-13': { step: 1, item: 'MU|Mic,Pat|me|X|Sepse por gram-negativos|Endotoxin: lipid A of LPS activates TLR4 on macrophages, fever and septic shock|lps', gancho: 'Dia Mundial da Sepse (13/9).' },
   '2027-10-18': { step: 1, item: 'RE|Mic,Pat|dx|X|Febre puerperal|Streptococcus pyogenes puerperal sepsis: Semmelweis showed that hand washing prevents it|semmelweis', gancho: 'Dia do Médico (18/10): homenagem a Semmelweis e à higiene das mãos.' },
   '2027-11-01': { step: 1, item: 'RE|Mic,Pat|dx|X|Prostatite bacteriana aguda|Acute bacterial prostatitis: E. coli in older men, tender boggy prostate|prostatitis', gancho: 'Início do Novembro Azul 2027 e dia 365: formatura do programa.' },
   // Terças (Step 2 CK, Plantão de Terça)
-  '2026-12-01': { step: 2, item: 'SG|Med|pp|X|Profilaxia no HIV|HIV with CD4 below 200: TMP-SMX prophylaxis against Pneumocystis|pcp', gancho: 'Dia Mundial de Luta contra a AIDS (1/12): sem estigma, foco em prevenção.' },
+  '2026-12-01': { step: 2, item: 'SG|Med|pp||Profilaxia no HIV|HIV with CD4 below 200: TMP-SMX prophylaxis against Pneumocystis|pcp', gancho: 'Dia Mundial de Luta contra a AIDS (1/12): sem estigma, foco em prevenção.' },
   '2027-02-09': { step: 2, item: 'MS|Med|pp||Insolação|Exertional heat stroke: core temperature above 40 C with CNS dysfunction, cold-water immersion|heatstroke', gancho: 'Terça de Carnaval: bloco de rua no calor.' },
   '2027-05-04': { step: 2, item: 'RP|Med|fa||Asma|Asthma: as-needed ICS-formoterol preferred over SABA alone (GINA)|asthma', gancho: 'Dia Mundial da Asma (primeira terça de maio, 4/5/2027).' },
   '2027-05-18': { step: 2, item: 'EN|Med|dx|N|Hiperaldosteronismo primário|Primary aldosteronism screening: aldosterone/renin ratio in resistant or hypokalemic hypertension|aldo', gancho: 'Semana do Dia Mundial da Hipertensão (17/5).' },
@@ -316,22 +316,22 @@ const especiais = {
   '2027-10-12': { step: 2, item: 'DH|Ped|dx||Marcos do desenvolvimento|Two-year milestones: about 50 words and two-word phrases|milestones', gancho: 'Dia das Crianças (12/10).' },
   // Quartas (Step 1, Quarta do Porquê)
   '2026-11-04': { step: 1, item: 'RE|Pat,Fis,Ana|me|N|Hiperplasia prostática benigna|BPH: dihydrotestosterone from 5-alpha reductase drives transition zone growth|bph', gancho: 'Novembro Azul.' },
-  '2026-11-18': { step: 1, item: 'RR|Pat,Gen|me|X|Enfisema e alfa-1 antitripsina|Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes|a1at', gancho: 'Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).' },
+  '2026-11-18': { step: 1, item: 'RR|Pat,Gen|me||Enfisema e alfa-1 antitripsina|Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes|a1at', gancho: 'Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).' },
   '2027-02-10': { step: 1, item: 'GI|Bio,Pat|me|M|Metabolismo do etanol|Ethanol metabolism: excess NADH blocks gluconeogenesis, fasting hypoglycemia and fatty liver|ethanol', gancho: 'Quarta-feira de Cinzas: o fígado faz a contabilidade do Carnaval (sem apologia ao álcool).' },
   '2027-03-17': { step: 1, item: 'MU|Gen,Pat|me||Translocação robertsoniana|Robertsonian translocation: fusion of acrocentric chromosomes, familial trisomy 21 risk|robertsonian', gancho: 'Semana do Dia Mundial da Síndrome de Down (21/3): tom respeitoso, sem humor sobre a condição.' },
   '2027-03-24': { step: 1, item: 'RR|Pat,His|dx||Tuberculose primária|Primary tuberculosis: Ghon complex with caseating granuloma|ghon', gancho: 'Dia Mundial da Tuberculose (24/3).' },
   '2027-04-07': { step: 1, item: 'BE|Com|bi|V|Imunidade de rebanho|Herd immunity threshold: 1 minus 1/R0|herd', gancho: 'Dia Mundial da Saúde (7/4).' },
   '2027-04-14': { step: 1, item: 'GI|Pat,His,Ana|dx||Doença de Chagas|Chagas disease: Trypanosoma cruzi destroys the myenteric plexus, megaesophagus and megacolon|chagas', gancho: 'Dia Mundial da Doença de Chagas (14/4).' },
   '2027-04-21': { step: 1, item: 'CN|Ana|im||Bloqueio do nervo alveolar inferior|Inferior alveolar nerve: branch of V3 (mandibular), numbs lower teeth and lip|v3', gancho: 'Tiradentes (21/4): homenagem bem-humorada aos dentistas.' },
-  '2027-05-05': { step: 1, item: 'GI|Pat,His|dx|X|Colite pseudomembranosa|Pseudomembranous colitis: C. difficile toxins A and B damage colonocytes, spores resist alcohol|cdiff', gancho: 'Dia Mundial da Higiene das Mãos (5/5): álcool não mata esporo, use água e sabão.' },
+  '2027-05-05': { step: 1, item: 'GI|Pat,His|dx||Colite pseudomembranosa|Pseudomembranous colitis: C. difficile toxins A and B damage colonocytes, spores resist alcohol|cdiff', gancho: 'Dia Mundial da Higiene das Mãos (5/5): álcool não mata esporo, use água e sabão.' },
   '2027-07-28': { step: 1, item: 'GI|Pat|dx||Sorologia da hepatite B|Hepatitis B window period: HBsAg and anti-HBs both negative, IgM anti-HBc positive|hbvwindow', gancho: 'Dia Mundial das Hepatites (28/7) e Julho Amarelo.' },
-  '2027-08-11': { step: 1, item: 'CN|Fis,His,Ana|me||Potenciação de longo prazo|Long-term potentiation: NMDA receptor Ca influx in the hippocampus strengthens synapses|ltp', gancho: 'Dia do Estudante (11/8).' },
+  '2027-08-11': { step: 1, item: 'CN|Fis,His,Ana|me|M|Potenciação de longo prazo|Long-term potentiation: NMDA receptor Ca influx in the hippocampus strengthens synapses|ltp', gancho: 'Dia do Estudante (11/8).' },
   '2027-09-29': { step: 1, item: 'CV|Pat,His|im||Evolução histológica do infarto|Myocardial infarction timeline: neutrophils at 1 to 3 days, macrophages at 3 to 7 days with the highest rupture risk|mitime', gancho: 'Dia Mundial do Coração (29/9).' },
   '2027-10-06': { step: 1, item: 'RE|Gen,Pat|me||BRCA1 e BRCA2|BRCA1/BRCA2: tumor suppressors for homologous recombination repair of double-strand breaks|brca', gancho: 'Outubro Rosa.' },
   '2027-10-20': { step: 1, item: 'ME|Fis,Pat|me||Osteoporose pós-menopausa|Postmenopausal osteoporosis: estrogen loss raises RANKL and osteoclast activity|rankl', gancho: 'Dia Mundial da Osteoporose (20/10).' },
   // Quintas (Step 2 CK, Rodízio de Quinta)
-  '2026-11-12': { step: 2, item: 'RP|Ped|fa|X|Pneumonia na criança|Uncomplicated pediatric community-acquired pneumonia: high-dose oral amoxicillin|pedcap', gancho: 'Dia Mundial da Pneumonia (12/11).' },
-  '2026-11-26': { step: 2, item: 'SG|Ped|pp|X|Anafilaxia alimentar|Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first|anaphylaxis', gancho: 'Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.' },
+  '2026-11-12': { step: 2, item: 'RP|Ped|fa||Pneumonia na criança|Uncomplicated pediatric community-acquired pneumonia: high-dose oral amoxicillin|pedcap', gancho: 'Dia Mundial da Pneumonia (12/11).' },
+  '2026-11-26': { step: 2, item: 'SG|Ped|pp||Anafilaxia alimentar|Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first|anaphylaxis', gancho: 'Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.' },
   '2026-12-31': { step: 2, item: 'CO|Psi|im|M|Estágios de mudança|Stages of change: contemplation (thinking about it) vs preparation (planning soon) vs action|stages', gancho: 'Réveillon: as resoluções de Ano Novo e os estágios de mudança.' },
   '2027-01-14': { step: 2, item: 'CO|Psi|dx||Episódio depressivo maior|Major depressive episode: 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia|mdd', gancho: 'Janeiro Branco (saúde mental): tom acolhedor, sem piada com o sofrimento.' },
   '2027-02-04': { step: 2, item: 'RU|GO,Cir|pp||Nódulo mamário em mulher jovem|Palpable breast mass in a woman under 30: ultrasound first|breastus', gancho: 'Dia Mundial do Câncer (4/2).' },
@@ -356,14 +356,14 @@ const especiais = {
   '2026-11-07': { step: 2, item: 'BS|Med|bi|V|Rastreamento do câncer de próstata|Lead-time bias: earlier PSA detection lengthens apparent survival without changing the time of death|leadtime', gancho: 'Novembro Azul: decisão compartilhada sobre o PSA.' },
   '2026-11-14': { step: 1, item: 'BE|Com|bi|V|Ponto de corte da HbA1c|Lowering a diagnostic cutoff (HbA1c): sensitivity rises, specificity falls|cutoff', gancho: 'Dia Mundial do Diabetes (14/11).' },
   '2027-05-01': { step: 2, item: 'ET|Med|et||Colega com capacidade prejudicada|Colleague who seems impaired at work: protect patients first and report through institutional channels|impaired', gancho: 'Dia do Trabalhador (1/5): cuidar de quem cuida.' },
-  '2027-06-12': { step: 2, item: 'ET|Ped,GO|et|V|Confidencialidade do adolescente|Adolescent STI testing and treatment: confidential, no parental consent needed|teenconf', gancho: 'Dia dos Namorados (12/6).' },
+  '2027-06-12': { step: 2, item: 'ET|Ped,GO|et||Confidencialidade do adolescente|Adolescent STI testing and treatment: confidential, no parental consent needed|teenconf', gancho: 'Dia dos Namorados (12/6).' },
   // Domingos (Remix de Domingo) com chaves forçadas
   '2026-12-27': { step: 1, remix: null, tema: 'Retrospectiva 2026', tema_en: 'Year-end review 2026', gancho: 'Retrospectiva 2026: os conceitos do primeiro mês de estrada.' },
   '2027-01-31': { step: 1, remix: ['leprae', 'mtb', 'contact'], tema: 'Remix das micobactérias', tema_en: 'Mycobacteria', personagem: 'X', gancho: 'Dia Mundial contra a Hanseníase (último domingo de janeiro, 31/1/2027).' },
   '2027-02-28': { step: 1, remix: ['duchenne', 'oi', '21oh'], tema: 'Remix das doenças raras', tema_en: 'Rare disease', gancho: 'Dia Mundial das Doenças Raras (último dia de fevereiro, 28/2/2027).' },
   '2027-03-21': { step: 1, remix: ['digeorge', 't21', 'robertsonian'], tema: 'Remix dos cromossomos', tema_en: 'Chromosome', gancho: 'Dia Mundial da Síndrome de Down (21/3): tom respeitoso, sem humor sobre a condição.' },
   '2027-03-28': { step: 1, remix: ['tanner', 'lhsurge', 'oocyte'], tema: 'Remix da caça aos ovos', tema_en: 'Easter egg hunt', gancho: 'Páscoa (28/3/2027): o ovo que fica parado em prófase I.' },
-  '2027-04-25': { step: 1, remix: ['falciparum', 'malaria', 'hepcidin'], tema: 'Remix do mosquito', tema_en: 'Mosquito', personagem: 'X', gancho: 'Dia Mundial da Malária (25/4).' },
+  '2027-04-25': { step: 1, remix: ['falciparum', 'malaria', 'hepcidin'], tema: 'Remix do mosquito', tema_en: 'Mosquito', personagem: 'T', gancho: 'Dia Mundial da Malária (25/4).' },
   '2027-05-09': { step: 2, remix: ['previa', 'rhogam', 'gdm'], tema: 'Remix do pré-natal', tema_en: 'Prenatal care', personagem: 'P', gancho: 'Dia das Mães (segundo domingo de maio, 9/5/2027).' },
   '2027-07-04': { step: 2, remix: null, tema: 'Remix Independence Day', tema_en: 'Independence Day', gancho: 'Independence Day (4/7): checkpoint da Road to America.' },
   '2027-08-08': { step: 1, remix: ['duchenne', 'bruton', 'was'], tema: 'Remix do X que o pai não passa', tema_en: 'X-linked inheritance', gancho: 'Dia dos Pais (segundo domingo de agosto, 8/8/2027): herança ligada ao X.' },
@@ -380,20 +380,37 @@ const ganchosExtras = {
 
 // Personagem dos remixes de domingo sem data especial (não muda o Step nem os conceitos do dia).
 const personagensRemix = {
+  '2027-09-26': 'T', // dia 329, rodízio de elenco da rodada 3
+  '2027-09-19': 'N', // dia 322, rodízio de elenco da rodada 3
+  '2027-09-12': 'P', // dia 315, rodízio de elenco da rodada 3
+  '2027-09-05': 'X', // dia 308, rodízio de elenco da rodada 3
+  '2027-08-29': 'M', // dia 301, rodízio de elenco da rodada 3
+  '2027-08-15': 'X', // dia 287, rodízio de elenco da rodada 3
+  '2027-08-08': 'P', // dia 280, rodízio de elenco da rodada 3
+  '2027-08-01': 'X', // dia 273, rodada 3 (dias 184 a 274)
+  '2027-07-25': '', // dia 266, rodada 3 (dias 184 a 274)
+  '2027-07-18': 'N', // dia 259, rodada 3 (dias 184 a 274)
+  '2027-07-11': '', // dia 252, rodada 3 (dias 184 a 274)
+  '2027-07-04': 'P', // dia 245, rodada 3 (dias 184 a 274)
+  '2027-06-13': '', // dia 224, rodada 3 (dias 184 a 274)
+  '2027-04-18': 'M', // dia 168, rodízio de elenco da rodada 3
+  '2027-03-14': 'M', // dia 133, rodízio de elenco da rodada 3
+  '2027-03-07': 'P', // dia 126, rodízio de elenco da rodada 3
+  '2027-02-07': 'N', // dia 98, rodízio de elenco da rodada 3
   '2026-11-08': 'P', // dia 7 (remix de dia 2, dia 4, dia 6)
   '2026-11-15': 'V', // dia 14 (remix de dia 10, dia 13, dia 8)
-  '2026-11-22': 'X', // dia 21 (remix de dia 1, dia 19, dia 15)
+  '2026-11-22': 'T', // dia 21 (remix de dia 1, dia 19, dia 15)
   '2026-11-29': 'T', // dia 28 (remix de dia 22, dia 26, dia 8)
   '2026-12-06': 'M', // dia 35 (remix de dia 32, dia 30, dia 2)
   '2026-12-13': 'M', // dia 42 (remix de dia 36, dia 38, dia 10)
   '2026-12-20': 'N', // dia 49 (remix de dia 15, dia 48, dia 43)
   '2026-12-27': 'X', // dia 56 (remix de dia 22, dia 50, dia 1)
-  '2027-05-16': 'N', // varizes, hiponatremia crônica e hemorragia subaracnoide: o sódio é do Seu Néfron
-  '2027-05-23': 'X', // pneumococo, falciparum e Wiskott-Aldrich
-  '2027-05-30': 'X', // HPV, MHC e influenza
-  '2027-06-06': 'P', // cólera, Wiskott-Aldrich e GVHD
-  '2027-06-20': 'P', // translocação robertsoniana, influenza e ABO
-  '2027-06-27': 'N', // malária, GVHD e síndrome hemolítico-urêmica
+  '2027-05-16': 'N', // dia 196, rodada 3 (dias 184 a 274)
+  '2027-05-23': 'P', // dia 203, rodada 3 (dias 184 a 274)
+  '2027-05-30': 'X', // dia 210, rodada 3 (dias 184 a 274)
+  '2027-06-06': 'P', // dia 217, rodada 3 (dias 184 a 274)
+  '2027-06-20': 'P', // dia 231, rodada 3 (dias 184 a 274)
+  '2027-06-27': 'N', // dia 238, rodada 3 (dias 184 a 274)
 };
 
 module.exports = { segunda, quarta, sextaS1, sabadoS1, terca, quinta, sextaS2, sabadoS2, especiais, ganchosExtras, personagensRemix };

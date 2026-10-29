@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-10",
   "tom": null,
-  "gancho": "Folião fervendo a 41,3 °C: até *a garrafa térmica* sabe o que fazer",
-  "gancho_apoio": "Quatro horas de bloco no sol, 41,3 °C e confusão.",
+  "gancho": "Terça de Carnaval: o folião *desligou* no meio do bloco",
+  "gancho_apoio": "Quatro horas de bloco, um folião confuso e a Dona Térmica de plantão no meio da festa.",
   "imagem": {
     "arquivo": "dia-100.png",
-    "cena": "No meio de um bloco de rua ensolarado, Dona Térmica, de colar de flores, encontra um carrinho alegórico em forma de carro pequeno fervendo no sol, soltando vapor pelo radiador. Ao lado esperam um frasco de comprimidos, uma banheira de plástico vazia e um tomógrafo portátil. No pulso dela, um relógio sem números nas 3.",
+    "cena": "No meio de um bloco de rua, Dona Térmica, de colar de flores, ajuda um folião simpático em forma de confete gigante que sentou no meio-fio, tonto. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica, de colar de flores, encontra um carrinho de bloco fervendo no sol; ao lado, comprimidos, uma banheira vazia e um tomógrafo portátil."
+    "alt": "Dona Térmica, de colar de flores, ajuda um folião em forma de confete que sentou tonto no meio-fio."
   },
   "imagem_macete": {
     "arquivo": "dia-100-macete.png",
-    "cena": "Callback: o carrinho de bloco agora relaxa dentro de uma piscininha inflável cheia de água e cubos de gelo, soltando o último vapor e sorrindo. Atrás, a ambulância espera com paciência, de faróis ligados, a vez de levar o carrinho já resfriado.",
+    "cena": "Callback: o folião confete, que soltava vapor, relaxa dentro de uma piscininha inflável cheia de água e gelo, sorrindo, enquanto uma ambulância espera de faróis ligados. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O carrinho de bloco relaxa numa piscininha com gelo; a ambulância espera atrás."
+    "alt": "O folião confete se resfria numa piscininha com água e gelo; a ambulância espera de faróis ligados."
   },
   "questao": {
     "vinheta": "A 23-year-old man collapses after dancing for 4 hours in a street parade on a hot, humid afternoon. He is confused and agitated. Rectal temperature is 41.3°C (106.3°F), pulse 128/min and BP 98/60 mm Hg; the skin feels hot and sweaty. His airway is patent and fingerstick glucose is normal.",
@@ -41,7 +41,7 @@
       },
       "C": {
         "texto": "Intravenous dantrolene",
-        "quiz": "IV dantrolene"
+        "quiz": "Intravenous dantrolene"
       },
       "D": {
         "texto": "Noncontrast head CT before cooling",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quatro horas de bloco no sol, um folião confuso e agitado, temperatura retal de 41,3 °C e pele quente e suada. Via aérea livre e glicemia normal. Dona Térmica, especialista em guardar calor, pergunta: o que vem primeiro?",
+    "contexto": "Plantão de Terça de Carnaval com a Dona Térmica. Um folião que dançou a tarde toda chega confuso, e os sinais vitais da vinheta contam o resto. Quatro condutas na mesa, e uma vem antes de todas.",
     "palavras_chave": [
       "street parade",
       "hot and humid",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Folião com 41,3 °C e confuso: qual é a primeira conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Folião com 41,3 °C e confuso: qual é a primeira conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

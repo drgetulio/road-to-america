@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-23",
   "tom": null,
-  "gancho": "Choro em crise a cada 15 minutos e uma *rosquinha* no ultrassom. O que sai do forno agora?",
-  "gancho_apoio": "Fezes com sangue e muco, bebê estável e sem sinal de peritonite.",
+  "gancho": "Choro em crise e *um ultrassom que já fechou o caso*",
+  "gancho_apoio": "O diagnóstico já está na vinheta. O Garçom Espetinho só quer saber o próximo espeto.",
   "imagem": {
     "arquivo": "dia-172.png",
-    "cena": "Numa padaria de bairro, atrás do balcão de rosquinhas, o Garçom Espetinho segura uma luneta de pirata com os gomos todos encaixados um dentro do outro. No balcão, a plaquinha verde e vermelha, de lado.",
+    "cena": "Numa padaria de bairro, atrás do balcão de rosquinhas, o Garçom Espetinho segura uma luneta de pirata com os gomos todos encaixados um dentro do outro. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho numa padaria, atrás do balcão de rosquinhas, segura uma luneta com os gomos encaixados."
+    "alt": "Garçom Espetinho, atrás do balcão de rosquinhas, segura uma luneta com os gomos encaixados."
   },
   "imagem_macete": {
     "arquivo": "dia-172-macete.png",
-    "cena": "Uma bombinha de ar sopra a luneta e os gomos deslizam para fora, abrindo de novo; a plaquinha vira verde. O bisturi fica de reserva numa bandeja coberta, ao fundo.",
-    "alt": "Uma bombinha de ar abre a luneta de volta e a plaquinha vira verde; o bisturi espera numa bandeja coberta."
+    "cena": "Callback: uma bombinha de ar sopra a luneta e os gomos deslizam para fora, abrindo de novo, enquanto um bisturi fica de reserva numa bandeja coberta ao fundo. Fundo limpo.",
+    "alt": "Uma bombinha de ar abre a luneta de novo; o bisturi fica de reserva ao fundo."
   },
   "questao": {
     "vinheta": "A 14-month-old boy has bouts of inconsolable crying with drawn-up knees every 15 to 20 minutes, lethargy between bouts, vomiting, and a bloody, mucoid stool. He is afebrile and hemodynamically stable, without peritoneal signs. Ultrasound shows a target sign in the right abdomen.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Stool culture and observation",
-        "quiz": "Coprocultura e obs."
+        "quiz": "Stool culture, observe"
       },
       "B": {
         "texto": "Immediate exploratory laparotomy",
-        "quiz": "Laparotomia"
+        "quiz": "Exploratory laparotomy"
       },
       "C": {
         "texto": "Upper gastrointestinal contrast series",
-        "quiz": "Seriografia EED"
+        "quiz": "Upper GI series"
       },
       "D": {
         "texto": "Air or contrast enema reduction",
-        "quiz": "Enema de ar"
+        "quiz": "Air enema"
       }
     },
     "correta": "D"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na emergência pediátrica. Crises de choro em cólica, fezes com sangue e muco, e o ultrassom já mostrou a imagem que fecha o diagnóstico. O bebê está estável. Qual é o próximo passo?",
+    "contexto": "Rodízio de Quinta na emergência pediátrica. O padrão do choro, as fezes e o achado do ultrassom estão na vinheta, e o diagnóstico está fechado. Qual é o próximo passo?",
     "palavras_chave": [
       "episodic crying",
       "drawn-up knees",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê estável, fezes com sangue e sinal do alvo no ultrassom: e agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê estável, fezes com sangue e sinal do alvo no ultrassom: e agora?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

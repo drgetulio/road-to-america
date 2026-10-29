@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-25",
   "tom": null,
-  "gancho": "Lata de biscoito caseiro no último retorno: o comitê de ética *precisa saber*?",
+  "gancho": "Último retorno, *uma lata de biscoitos* e um dilema que todo médico já viveu",
   "gancho_apoio": "Nove anos de consulta, uma mudança de estado e um cartão escrito à mão.",
   "imagem": {
     "arquivo": "dia-174.png",
-    "cena": "Na mesa do consultório, a Dona Bússola está entre uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho, de um lado, e uma caixinha de veludo com um relógio dourado, do outro. O ponteiro dela ainda gira; na parede, um quadrinho 2x2 em branco.",
+    "cena": "Na mesa do consultório, a Dona Bússola olha uma lata de biscoitos caseiros com laço vermelho, com o ponteiro girando sem decidir. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Bússola entre uma lata de biscoitos caseiros e uma caixinha de relógio dourado, com o ponteiro girando."
+    "alt": "A Dona Bússola olha uma lata de biscoitos caseiros com laço vermelho, com o ponteiro girando."
   },
   "imagem_macete": {
     "arquivo": "dia-174-macete.png",
-    "cena": "O ponteiro para nos biscoitos, que ganham um selo verde; a lata aberta vai para a mesinha do café, com o cartão em pé. A caixinha do relógio volta fechada com laço, ao lado de um cone vermelho, pronta para ser devolvida com carinho.",
-    "alt": "O ponteiro para nos biscoitos, que vão para a mesa do café; a caixinha do relógio volta fechada para devolver."
+    "cena": "Callback: o ponteiro para nos biscoitos, que ganham um selo verde, e a lata aberta vai para a mesinha do café; num canto, uma caixinha de relógio dourado fica fechada, pronta para voltar com carinho. Fundo limpo.",
+    "alt": "O ponteiro para nos biscoitos com selo verde; uma caixinha de relógio dourado fica fechada para ser devolvida."
   },
   "questao": {
     "vinheta": "At her last visit before moving to another state, a 72-year-old woman whom a physician has treated for 9 years brings a tin of homemade cookies and a handwritten thank-you card. She says it is a small way to thank him for his care.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "\"I'm sorry, but I can't accept gifts from patients.\"",
-        "quiz": "Recusar o presente"
+        "quiz": "Decline the gift"
       },
       "B": {
         "texto": "\"Thank you so much, this is very kind of you.\"",
-        "quiz": "Aceitar e agradecer"
+        "quiz": "Accept and thank her"
       },
       "C": {
         "texto": "\"Please donate this to the hospital instead.\"",
-        "quiz": "Mandar p/ hospital"
+        "quiz": "Send it to the hospital"
       },
       "D": {
         "texto": "\"I need to report this gift to the ethics committee.\"",
-        "quiz": "Avisar comitê"
+        "quiz": "Tell ethics committee"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com um dilema que todo médico já viveu: a paciente de muitos anos vai se mudar e traz um presente simples. O ponteiro da Dona Bússola gira, e a prova quer saber para onde ele aponta.",
+    "contexto": "Sábado Sem Viés com um dilema clássico: a paciente de muitos anos vai se mudar e traz um presente. O que é o presente e o que ela diz estão na vinheta. Para onde aponta o ponteiro da Dona Bússola?",
     "palavras_chave": [
       "long-term patient",
       "homemade cookies",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Paciente de 9 anos traz biscoitos caseiros e um cartão: o que dizer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Paciente de 9 anos traz biscoitos caseiros e um cartão: o que dizer?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

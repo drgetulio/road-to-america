@@ -7,24 +7,25 @@
   "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
   "topico": "Paciente irritado",
   "conceito": "Angry patient: acknowledge the emotion and apologize for the experience before explaining",
-  "personagem": "Viés",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-01",
   "tom": null,
   "gancho": "A sala de espera virou *panela de pressão de feijão*",
-  "gancho_apoio": "Laudo perdido, duas horas de estrada e uma reclamação em voz alta. A ordem das próximas frases vale ponto.",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-272.png",
-    "cena": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita diante de quatro objetos na bancada: um apito, um manual grosso, um pano de prato dobrado e um cronômetro de cozinha. O Viés espia, meio escondido atrás de uma tabela 2x2 colada na geladeira.",
+    "cena": "Uma sala de espera desenhada como cozinha: no fogão, uma panela de pressão apita e solta vapor, e Dona Bússola, com o ponteiro girando, olha da porta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A panela de pressão da sala de espera e quatro objetos na bancada"
+    "alt": "A panela de pressão apita no fogão e Dona Bússola olha da porta"
   },
   "imagem_macete": {
     "arquivo": "dia-272-macete.png",
-    "cena": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, o apito e o manual vão parar atrás da geladeira, e o Viés espia, contrariado.",
+    "cena": "Callback: Dona Bússola gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Primeiro acolhe, depois explica"
+    "alt": "Dona Bússola baixa o fogo primeiro e só depois abre a panela"
   },
   "questao": {
     "vinheta": "A 47-year-old woman learns at the front desk that her MRI report never reached the clinic and her visit must be rescheduled. When the physician comes out, she raises her voice: \"I drove two hours and nobody bothered to call me!\" She makes no threats.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "\"The imaging center is responsible for sending the report.\"",
-        "quiz": "Explicar a falha"
+        "quiz": "Explain who is at fault"
       },
       "B": {
         "texto": "\"Please lower your voice, or I will need to call security.\"",
-        "quiz": "Chamar a segurança"
+        "quiz": "Threaten to call security"
       },
       "C": {
-        "texto": "\"I can see how frustrating this is, and I'm sorry it happened.\"",
-        "quiz": "Acolher e desculpar"
+        "texto": "\"I can see how frustrating this is. I am sorry.\"",
+        "quiz": "Acknowledge and apologize"
       },
       "D": {
         "texto": "\"Let's use the time to go over your symptoms right now.\"",
-        "quiz": "Ir aos sintomas"
+        "quiz": "Go straight to symptoms"
       }
     },
     "correta": "C"
@@ -67,16 +68,16 @@
     "macete": {
       "frase": "*Panela de pressão*: primeiro baixa o fogo, depois abre a tampa",
       "apoio": "Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é oferecer apito para panela de pressão.",
-      "fala": "Se você não randomizou, eu entrei. Se começou se defendendo, também."
+      "fala": "Meu norte é o paciente. Explicar antes de acolher é a resposta errada mais educada da prova."
     }
   },
   "legenda": {
-    "contexto": "Duas horas de estrada, um laudo de ressonância que não chegou e uma reclamação em voz alta. Qual é a primeira coisa que o médico fala? Na prova, a ordem das frases decide a questão.",
+    "contexto": "Sábado Sem Viés com a Dona Bússola, na comunicação. Uma paciente descobre na recepção que algo deu errado, e a vinheta conta o que ela disse. Qual é a primeira frase do médico?",
     "palavras_chave": [
-      "missed MRI report",
-      "rescheduled visit",
-      "upset patient",
-      "communication"
+      "patient communication",
+      "outpatient clinic",
+      "patient complaint",
+      "Step 1 behavioral science"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -87,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Paciente irritada com laudo perdido: qual é a primeira frase do médico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Paciente irritada com laudo perdido: qual é a primeira frase do médico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

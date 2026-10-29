@@ -15,9 +15,9 @@
   "gancho": "A aorta abriu *igual zíper de calça jeans*: o que você faz primeiro?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Na sala de descanso do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir no meio. Na mesinha, um pedal de freio, uma chave inglesa e um rolo de fita.",
+    "cena": "Na sala de descanso do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir no meio.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica olha uma mangueira em forma de aorta com um zíper abrindo; na mesinha, um pedal de freio, uma chave inglesa e um rolo de fita.",
+    "alt": "Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir.",
     "arquivo": "dia-079.png"
   },
   "imagem_macete": {
@@ -71,11 +71,11 @@
     }
   },
   "legenda": {
-    "contexto": "Dor rasgando que vai para as costas, pressão de 186 num braço e 150 no outro, e a angiotomografia confirma dissecção tipo B sem má perfusão. Dona Térmica quer saber qual remédio entra antes de todos.",
+    "contexto": "Plantão de Terça: dor rasgando, angiotomografia pronta e quatro condutas na mesa. Dona Térmica quer saber qual remédio entra antes de todos e se o caso é de cirurgia; a classificação na vinheta responde a segunda parte.",
     "palavras_chave": [
-      "tearing chest pain",
-      "pulse differential",
-      "hypertension",
+      "chest pain",
+      "aorta",
+      "emergency medicine",
       "CT angiography"
     ],
     "hashtags": [
@@ -86,12 +86,11 @@
       "#PlantaoDeTerca",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Dissecção tipo B, PA 186/104 e FC 102: qual remédio primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dissecção tipo B, PA 186/104 e FC 102: qual remédio primeiro?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

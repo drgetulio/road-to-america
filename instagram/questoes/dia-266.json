@@ -7,7 +7,8 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Influenza: shift e drift (dia 204), Deficiência do complemento terminal (dia 246), Doença granulomatosa crônica (dia 260)",
   "conceito": "Remix: Influenza shift vs drift + Terminal complement deficiency + Chronic granulomatous disease",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": [
     204,
@@ -16,19 +17,19 @@
   ],
   "explicacao_em": "2027-07-26",
   "tom": null,
-  "gancho": "Metade da turma gripada e o pulmão dele *resolveu ser original*",
-  "gancho_apoio": "DHR apagado, abscesso no fígado e nódulos com halo no pulmão. Qual é o micróbio?",
+  "gancho": "Remix de Domingo: a escola gripada e *um menino que já é conhecido do feed*",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 204, 246 e 260) e um intruso.",
   "imagem": {
     "arquivo": "dia-266.png",
-    "cena": "Numa sala de aula, metade das carteiras tem alunos-vírus de cachecol, espirrando em lencinhos. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, faz a chamada com uma prancheta e para, intrigado, diante de uma fileira onde quatro visitantes de chapéu de festa igual sentam lado a lado: um vírus de cachecol, dois grãos de café de mãos dadas, uma bolota felpuda e uma correntinha de bolinhas. Na lousa em branco, um vinil pequeno serve de ímã.",
+    "cena": "Numa sala de aula, Seu Allen, de avental navy, faz a chamada com uma prancheta diante de carteiras vazias e de um cabide cheio de cachecóis. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô faz a chamada e encontra quatro visitantes"
+    "alt": "Seu Allen faz a chamada numa sala de carteiras vazias e cabide cheio de cachecóis"
   },
   "imagem_macete": {
     "arquivo": "dia-266-macete.png",
-    "cena": "Na mesma sala, a lâmpada de teste na mesa do professor continua apagada e, pela janela, a fogueira da festa julina não acende. A bolota felpuda tira o chapéu: segura um extintor vermelho e está cercada por um anel de neblina, como um halo. Os outros três visitantes voltam para as turmas deles.",
+    "cena": "Callback: uma bolota felpuda (o fungo) tira o chapéu: segura um extintor vermelho e está cercada por um anel de neblina, como um halo, e Seu Allen anota no manual que a fogueira do neutrófilo não acende. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "DGC: o fungo com extintor e halo no pulmão"
+    "alt": "A bolota felpuda de extintor, cercada de neblina, e Seu Allen anotando no manual"
   },
   "questao": {
     "vinheta": "A 6-year-old boy has had a Staphylococcus aureus liver abscess and Serratia lymphadenitis. His neutrophils show no fluorescence on dihydrorhodamine testing. While influenza circulates at his school, he develops fever and cough. CT of the chest shows several lung nodules with surrounding ground-glass halos.",
@@ -36,22 +37,22 @@
     "alternativas": {
       "A": {
         "texto": "Influenza A virus",
-        "quiz": "Vírus influenza A",
+        "quiz": "Influenza A virus",
         "dia": 204
       },
       "B": {
         "texto": "Neisseria meningitidis",
-        "quiz": "Neisseria",
+        "quiz": "Neisseria meningitidis",
         "dia": 246
       },
       "C": {
         "texto": "Aspergillus fumigatus",
-        "quiz": "Aspergillus",
+        "quiz": "Aspergillus fumigatus",
         "dia": 260
       },
       "D": {
         "texto": "Streptococcus pneumoniae",
-        "quiz": "Pneumococo"
+        "quiz": "Streptococcus pneumoniae"
       }
     },
     "correta": "C"
@@ -75,11 +76,11 @@
     "macete": {
       "frase": "Na DGC, *quem traz extintor* ganha a festa: no pulmão, é o *Aspergillus*",
       "apoio": "DHR apagado é a fogueira do neutrófilo que não acende. Quem chega com extintor (catalase) faz a festa: S. aureus no fígado, Serratia no gânglio e Aspergillus no pulmão, com halo em vidro fosco. A gripe da escola e a Neisseria do complemento são distração.",
-      "fala": "Comi, mostrei, avisei. Esse fungo veio de extintor."
+      "fala": "Sobrou peça? Então faltou mecanismo: sem NADPH oxidase, quem traz extintor ganha a festa."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 204, 246 e 260, mais um intruso. A escola está gripada, mas o menino tem DHR apagado, histórico de abscessos e nódulos com halo no pulmão.",
+    "contexto": "Domingo de Remix com o Seu Allen. A escola está gripada, mas o menino da vinheta tem uma história própria que muda a conta. Qual é o micróbio?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,9 +98,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "DHR apagado e nódulos com halo no pulmão: qual é o micróbio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DHR apagado e nódulos com halo no pulmão: qual é o micróbio?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

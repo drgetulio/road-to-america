@@ -12,6 +12,9 @@ export const tiposVisuais = [
   "contador",
   "globo_rota",
   "mapa_eua",
+  // Reels semanais da Questão de Embarque (instagram/reels-semanais.json)
+  "alternativas",
+  "personagem",
 ] as const;
 
 export const cenaSchema = z.object({
@@ -20,10 +23,18 @@ export const cenaSchema = z.object({
   tipo_visual: z.enum(tiposVisuais),
   texto_tela: z.string().min(1),
   narracao: z.string().optional(),
+  // alternativas: as quatro opções curtas, a letra certa (opcional) e o resultado da enquete
+  opcoes: z.array(z.string()).length(4).optional(),
+  correta: z.enum(["A", "B", "C", "D"]).optional(),
+  percentuais: z.array(z.number().nullable()).length(4).optional(),
+  // personagem: nome do personagem fixo (avatar igual ao do carrossel)
+  personagem: z.string().optional(),
+  // personagem: ilustração do carrossel (caminho em public/), quando a imagem já existe
+  imagem: z.string().optional(),
 });
 
 export const roteiroSchema = z.object({
-  id: z.string().regex(/^reel-\d{2}$/),
+  id: z.string().regex(/^(reel|semana)-\d{2}$/),
   titulo: z.string(),
   gancho_0a3s: z.string().optional(),
   virada_s: z.number(),
@@ -50,6 +61,8 @@ export const direcaoSchema = z.object({
   transicoes: z.array(z.enum(["faixa", "fade", "slide", "wipe"])).min(1),
   semente: z.string(),
   trocas: z.record(z.string(), trocaSchema).default({}),
+  // false esconde o endereço do site no fechamento (Reels semanais: conversão pela palavra-chave)
+  url: z.boolean().default(true),
 });
 
 export const reelSchema = z.object({

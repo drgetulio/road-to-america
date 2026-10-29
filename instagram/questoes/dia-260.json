@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-20",
   "tom": null,
-  "gancho": "Macrô engoliu o bicho e o bicho *saiu dançando quadrilha*",
-  "gancho_apoio": "Abscessos de repetição por estafilococo e Aspergillus. O que falha dentro do fagócito?",
+  "gancho": "Bicho de Segunda no arraiá: o Macrô comeu *e não digeriu*",
+  "gancho_apoio": "Fagócito no Step 1: quatro defeitos, quatro testes e um nome que só volta à memória na saída da Prometric.",
   "imagem": {
     "arquivo": "dia-260.png",
-    "cena": "Num arraiá de festa julina com bandeirinhas, Macrô, de chapéu de palha sobre o guardanapo xadrez, está de barriga cheia, e dentro dela micróbios sorridentes dançam quadrilha de braços dados. A comanda em branco aparece no bolso. Macrô olha a própria barriga, desconfiado.",
+    "cena": "Num arraiá de festa julina com bandeirinhas, Macrô, de chapéu de palha sobre o guardanapo xadrez, olha desconfiado para a própria barriga cheia. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô de barriga cheia e os bichos dançando quadrilha lá dentro"
+    "alt": "Macrô, de chapéu de palha, olha desconfiado para a própria barriga cheia"
   },
   "imagem_macete": {
     "arquivo": "dia-260-macete.png",
-    "cena": "No canto do arraiá, a fogueira de São João não acende: o registro do gás, montado com quatro pecinhas, está quebrado, e os micróbios de extintor apagam as faíscas que sobram. Uma lâmpada de teste no poste continua apagada. Num quadrinho, um micróbio sem extintor se apaga com a própria faísca.",
+    "cena": "Callback: no canto do arraiá, a fogueira de São João não acende porque o registro do gás, de quatro pecinhas, está quebrado, e micróbios de extintor apagam as faíscas que sobram. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Sem NADPH oxidase, a fogueira do burst não acende"
+    "alt": "A fogueira não acende pelo registro quebrado e os micróbios de extintor apagam as faíscas"
   },
   "questao": {
     "vinheta": "A 3-year-old boy has had recurrent Staphylococcus aureus skin abscesses, a liver abscess, and Aspergillus pneumonia. His neutrophil count is normal. After stimulation, his neutrophils show no fluorescence on dihydrorhodamine flow cytometry. There is no history of delayed umbilical cord separation or partial albinism.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Adhesion to endothelium via CD18 integrins",
-        "quiz": "Adesão (CD18)"
+        "quiz": "CD18 adhesion"
       },
       "B": {
         "texto": "Fusion of phagosomes with lysosomes",
-        "quiz": "Fusão fagolisossomo"
+        "quiz": "Phagolysosome fusion"
       },
       "C": {
         "texto": "Conversion of hydrogen peroxide to hypochlorous acid",
-        "quiz": "Fazer hipoclorito"
+        "quiz": "H2O2 to hypochlorite"
       },
       "D": {
         "texto": "Generation of superoxide by the respiratory burst",
-        "quiz": "Burst respiratório"
+        "quiz": "Respiratory burst"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Abscessos de repetição por S. aureus e uma pneumonia por Aspergillus num menino de 3 anos. O fagócito come, mas e depois?",
+    "contexto": "Bicho de Segunda na imunologia, com o Macrô de chapéu de palha. Um menino com infecções de repetição, e os germes e os exames dele estão na vinheta. Onde está o defeito?",
     "palavras_chave": [
-      "recurrent abscesses",
-      "Aspergillus pneumonia",
-      "neutrophil flow cytometry",
-      "normal neutrophil count"
+      "phagocyte disorder",
+      "recurrent infections",
+      "neutrophil function",
+      "Step 1 immunology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Abscesso por S. aureus e Aspergillus: o que falha no neutrófilo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Abscesso por S. aureus e Aspergillus: o que falha no neutrófilo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

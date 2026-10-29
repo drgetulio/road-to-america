@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-08",
   "tom": null,
   "gancho": "Rebanho protegido: quantas ovelhas precisam de *escudo*?",
-  "gancho_apoio": "Cada caso passa para 4. O Viés aposta que você erra a conta de uma linha.",
+  "gancho_apoio": "O Viés aposta que você erra a conta de uma linha.",
   "imagem": {
     "arquivo": "dia-157.png",
-    "cena": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída. Setinhas de manual de montagem apontam para os escudos.",
+    "cena": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés espia um rebanho de ovelhas atrás de uma tabela 2x2; uma pilha de escudos verdes espera ao lado."
+    "alt": "O Viés se esgueira num rebanho de ovelhas atrás de uma tabela 2x2; uma pilha de escudos verdes espera."
   },
   "imagem_macete": {
     "arquivo": "dia-157-macete.png",
-    "cena": "Em cada grupo de quatro ovelhas, três usam escudo verde e fazem uma cerca em volta da quarta; o germe, uma bolinha vermelha com espinhos, bate nos escudos e não chega nela. O Viés fica de fora.",
-    "alt": "Em cada grupo de quatro ovelhas, três de escudo cercam a quarta; o germe bate nos escudos; o Viés fica de fora."
+    "cena": "Callback: em cada grupo de quatro ovelhas, três usam escudo verde e fazem uma cerca em volta da quarta, e o germe, uma bolinha vermelha com espinhos, bate nos escudos e não chega nela. Fundo limpo.",
+    "alt": "Em cada grupo de quatro ovelhas, três de escudo cercam a quarta, e o germe não passa."
   },
   "questao": {
     "vinheta": "A health department models a new respiratory virus in a fully susceptible population. On average, each infected person transmits the virus to 4 other people. A new vaccine is assumed to be 100% effective.",
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "7 de abril é o Dia Mundial da Saúde, e a questão de hoje é sobre proteger o grupo inteiro. Uma conta de uma linha que cai em bioestatística e em saúde pública.",
+    "contexto": "7 de abril é o Dia Mundial da Saúde, e a questão de hoje é sobre proteger o grupo inteiro. Uma conta de uma linha, sem calculadora de celular, porque na Prometric ele fica trancado no armário.",
     "palavras_chave": [
       "respiratory virus",
       "susceptible population",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cada infectado transmite para 4 pessoas: quantos % precisam estar imunes?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cada infectado transmite para 4 pessoas: quantos % precisam estar imunes?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

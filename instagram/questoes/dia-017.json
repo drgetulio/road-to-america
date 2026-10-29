@@ -7,22 +7,23 @@
   "sistema": "Sistemas respiratório e renal/urinário",
   "topico": "Enfisema e alfa-1 antitripsina",
   "conceito": "Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).",
   "remix_de": null,
   "explicacao_em": "2026-11-19",
   "tom": null,
-  "gancho": "Dia da DPOC: o time nunca fumou e mesmo assim tomou *goleada* embaixo",
+  "gancho": "Dia Mundial da DPOC: o Seu Allen abriu o pulmão para achar a *peça que sobrou*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-017.png",
-    "cena": "Estádio de futebol em corte, com o formato de dois pulmões: as arquibancadas de baixo estão cheias de buracos espalhados por igual, e as de cima estão inteiras. Na cabine de narração, Macrô, de guardanapo xadrez e fone de locutor, aponta o gol vazio lá embaixo, com setinhas de manual em volta. No portão, um ônibus de time em forma de fígado está preso no engarrafamento.",
+    "cena": "Seu Allen, de avental de marceneiro, examina de prancheta na mão um par de pulmões desenhado como a arquibancada de um estádio, com setinhas de manual de montagem em volta.",
     "foco": "50% 35%",
-    "alt": "Dia da DPOC: o time nunca fumou e mesmo assim tomou goleada embaixo"
+    "alt": "Seu Allen examina, de prancheta na mão, um par de pulmões desenhado como arquibancada de estádio."
   },
   "imagem_macete": {
     "arquivo": "dia-017-macete.png",
-    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso no ônibus em forma de fígado, acenando da janela, e o Macrô narra de pé.",
+    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso no ônibus em forma de fígado, acenando da janela, e o Seu Allen anota tudo na prancheta.",
     "alt": "Sem goleiro, gol nos lobos inferiores"
   },
   "questao": {
@@ -31,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Defective epithelial chloride channel",
-        "quiz": "Canal de cloro"
+        "quiz": "Chloride channel"
       },
       "B": {
         "texto": "Th2-mediated bronchial hyperreactivity",
-        "quiz": "Reatividade Th2"
+        "quiz": "Th2 hyperreactivity"
       },
       "C": {
         "texto": "Hypertrophy of submucosal mucous glands",
-        "quiz": "Glândulas mucosas"
+        "quiz": "Mucous glands"
       },
       "D": {
         "texto": "Unopposed neutrophil elastase activity",
-        "quiz": "Elastase sem freio"
+        "quiz": "Unopposed elastase"
       }
     },
     "correta": "D"
@@ -71,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, o Macrô narra um enfisema que não segue o roteiro do cigarro: 36 anos, nunca fumou, buracos nos lobos de baixo e o fígado reclamando.",
+    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, o Seu Allen desmonta um enfisema peça por peça. Os detalhes da vinheta decidem a letra; o resto é torcida.",
     "palavras_chave": [
-      "never smoker",
-      "FEV1/FVC",
-      "lower-lobe emphysema",
-      "elevated aminotransferases"
+      "emphysema",
+      "pulmonary function",
+      "World COPD Day",
+      "pathophysiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Enfisema panacinar basal aos 36 anos, sem cigarro: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Enfisema panacinar basal aos 36 anos, sem cigarro: qual mecanismo?"
   },
   "exemplo": false
 }

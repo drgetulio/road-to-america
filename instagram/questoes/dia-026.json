@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-28",
   "tom": null,
-  "gancho": "Black Friday: a mesma varfarina, a mesma dieta, e o *INR* caiu pela metade",
+  "gancho": "Black Friday: a Tia Meia-Vida desconfia de uma *promoção* na receita",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-026.png",
-    "cena": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Na porta da loja, uma fila de caixinhas de remédio espera a vez, e a Tia confere a própria ampulheta, desconfiada.",
+    "cena": "A Tia Meia-Vida, atrás do balcão enfeitado com balões de Black Friday, confere com a lupa um frasco de comprimidos e uma caixinha de antibiótico, lado a lado.",
     "foco": "50% 35%",
-    "alt": "Black Friday: a mesma varfarina, a mesma dieta, e o INR caiu pela metade"
+    "alt": "Tia Meia-Vida, atrás do balcão enfeitado com balões, confere com a lupa um frasco de comprimidos e uma caixinha de antibiótico."
   },
   "imagem_macete": {
     "arquivo": "dia-026-macete.png",
-    "cena": "Callback da loja: lá dentro, um gerente que chegou com uma xícara enorme de café contratou uma multidão de funcionários temporários (enzimas CYP), que embrulham e despacham a varfarina num piscar de olhos. Um medidor em forma de gota na parede marca nível baixo, no vermelho.",
+    "cena": "Revelação: do outro lado da rua, numa loja em forma de fígado em liquidação, um gerente que chegou com uma xícara enorme de café contratou uma multidão de funcionários temporários (enzimas CYP), que embrulham e despacham a varfarina num piscar de olhos. Um medidor em forma de gota na parede marca nível baixo.",
     "alt": "Liquidação no fígado"
   },
   "questao": {
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Inhibition of hepatic cytochrome P450 enzymes",
-        "quiz": "Inibição do CYP"
+        "quiz": "CYP inhibition"
       },
       "B": {
         "texto": "Displacement of warfarin from plasma albumin",
-        "quiz": "Desloca da albumina"
+        "quiz": "Albumin displacement"
       },
       "C": {
         "texto": "Decreased vitamin K synthesis by gut flora",
-        "quiz": "Menos vitamina K"
+        "quiz": "Less vitamin K"
       },
       "D": {
         "texto": "Induction of hepatic cytochrome P450 enzymes",
-        "quiz": "Indução do CYP"
+        "quiz": "CYP induction"
       }
     },
     "correta": "D"
@@ -72,11 +72,11 @@
     }
   },
   "legenda": {
-    "contexto": "Black Friday é dia de fila até na farmácia. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.",
+    "contexto": "Black Friday é dia de fila até na farmácia. Sextou na Farmácia com uma interação clássica: dois remédios, um fígado e um INR que mudou sem a dieta mudar. No NBME, interação de varfarina cai mais que preço de passagem na Black Friday.",
     "palavras_chave": [
-      "atrial fibrillation",
-      "anticoagulation",
-      "latent tuberculosis",
+      "warfarin",
+      "drug interactions",
+      "INR",
       "pharmacokinetics"
     ],
     "hashtags": [
@@ -90,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "INR caiu de 2,5 para 1,3 com rifampina: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "INR caiu de 2,5 para 1,3 com rifampina: qual mecanismo?"
   },
   "exemplo": false
 }

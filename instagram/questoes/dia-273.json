@@ -16,70 +16,69 @@
   ],
   "explicacao_em": "2027-08-02",
   "tom": null,
-  "gancho": "Choque, febre e pele vermelha sem urticária: *o Macrô já viu esse filme*?",
-  "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual mecanismo explica febre, choque e vermelhão?",
+  "gancho": "Remix de Domingo: *um inchaço sem coceira* e três suspeitos que já passaram por aqui",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 176, 239 e 267) e um intruso.",
   "imagem": {
     "arquivo": "dia-273.png",
-    "cena": "Num baile de forró lotado, Macrô, de guardanapo xadrez, trabalha na porta com uma lista de convidados em branco: três convidados conhecidos esperam na fila (duas peças de quebra-cabeça de mãos dadas, um balão que incha devagar e um grampeador de óculos escuros) e um quarto, uma abelhinha de outra festa, tenta entrar de penetra. Na parede, um vinil pequeno pendurado como enfeite.",
+    "cena": "Num baile de forró, Macrô, de guardanapo xadrez, trabalha na porta com uma lista de convidados em branco, conferindo um balão de chapéu que incha devagar. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô na porta do forró confere a lista de convidados"
+    "alt": "Macrô, na porta do forró, confere um balão de chapéu que incha devagar"
   },
   "imagem_macete": {
     "arquivo": "dia-273-macete.png",
-    "cena": "Lá dentro, o grampeador de óculos escuros grampeia duas peças de quebra-cabeça pela borda de fora, e o salão inteiro de linfócitos dança forró ao mesmo tempo; na porta, Macrô deixa a prancheta cair, espantado. O balão e a abelhinha ficam do lado de fora.",
+    "cena": "Callback: atrás do balcão do forró, uma lixeira tampada por um comprimido deixa transbordar bolinhas que enchem os balões do salão, e o Macrô tenta segurar a tampa. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "TSST-1: superantígeno liga MHC II ao TCR por fora"
+    "alt": "A lixeira tampada por um comprimido transborda e enche os balões; Macrô segura a tampa"
   },
   "questao": {
-    "vinheta": "A 24-year-old woman develops fever of 39.6°C, vomiting, watery diarrhea, and a diffuse sunburn-like rash 2 days after nasal packing for epistaxis. Blood pressure is 78/44 mm Hg. There is no urticaria, wheezing, or lip swelling. Blood cultures are negative.",
-    "pergunta": "Which mechanism best explains her condition?",
+    "vinheta": "A 58-year-old man has painless swelling of the lips and tongue, without urticaria or itching, 3 months after starting lisinopril for hypertension. He has no prior episodes and no family history of swelling. Antihistamines and epinephrine did not help. Serum C4 and C1 inhibitor levels are normal.",
+    "pergunta": "Which mechanism best explains his swelling?",
     "alternativas": {
       "A": {
-        "texto": "C1 esterase inhibitor deficiency with excess bradykinin",
-        "quiz": "Falta de C1-INH",
+        "texto": "Deficient C1 esterase inhibitor function",
+        "quiz": "Low C1 esterase inhibitor",
         "dia": 239
       },
       "B": {
-        "texto": "Endogenous peptides presented on MHC I to CD8+ cells",
-        "quiz": "MHC I para CD8",
-        "dia": 176
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE cross-linking"
       },
       "C": {
-        "texto": "Allergen cross-linking of IgE on mast cells",
-        "quiz": "IgE no mastócito"
+        "texto": "Superantigen-driven capillary leak",
+        "quiz": "Superantigen capillary leak",
+        "dia": 267
       },
       "D": {
-        "texto": "Toxin linking MHC II to the TCR outside the peptide groove",
-        "quiz": "Superantígeno",
-        "dia": 267
+        "texto": "Reduced bradykinin breakdown by ACE",
+        "quiz": "Less bradykinin breakdown"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "TSST-1: *superantígeno* liga MHC II ao TCR por fora",
+    "titulo": "Lisinopril e lábio inchado: *bradicinina que ninguém quebra*",
     "certa": [
-      "Tampão nasal, febre alta, hipotensão e eritrodermia em queimadura de sol com hemocultura negativa é a *toxic shock syndrome*. A *TSST-1* do *S. aureus* é um *superantigen*: prende o MHC II à cadeia Vβ do TCR por fora do sulco do peptídeo e ativa até 20% das células T de uma vez. O resultado é uma tempestade de IL-2, IFN-γ e TNF."
+      "Angioedema sem urticária e sem coceira, que não responde a anti-histamínico nem a adrenalina, num paciente com lisinopril e com C4 e inibidor de C1 normais, é angioedema por inibidor da ECA, o intruso de hoje. A ECA (cininase II) também quebra a *bradicinina*; com ela bloqueada, a bradicinina se acumula e abre os vasos. Pode surgir meses ou anos depois do início. O remédio sai de vez, a via aérea vem primeiro, e um BRA no futuro exige cautela."
     ],
     "termos": [
-      "toxic shock syndrome toxin",
-      "superantigen",
-      "MHC II",
-      "TCR V beta"
+      "ACE inhibitor angioedema",
+      "bradykinin",
+      "kininase II",
+      "C1 esterase inhibitor"
     ],
     "erradas": {
-      "A": "Angioedema hereditário (dia 239) incha pele e mucosa sem urticária, mas não dá febre, choque nem eritrodermia.",
-      "B": "MHC I com CD8 (dia 176) é a apresentação normal de peptídeo intracelular, que respeita o sulco e ativa poucos clones.",
-      "C": "Anafilaxia por IgE traria urticária, broncoespasmo ou edema de lábio, que a vinheta exclui."
+      "A": "Dia 239: no angioedema hereditário, o mediador também é a bradicinina, mas a causa é falta ou mau funcionamento do inibidor de C1, com C4 baixo e história familiar. Aqui C4 e inibidor de C1 estão normais.",
+      "B": "Fora dos dias revisados: IgE ligando o mastócito é a anafilaxia e a urticária, com coceira, e responde a adrenalina e anti-histamínico.",
+      "C": "Dia 267: o superantígeno liga MHC II ao TCR por fora e solta uma tempestade de citocinas, com febre, choque e eritrodermia; não causa inchaço localizado de lábio sem febre."
     },
     "macete": {
-      "frase": "*Superantígeno é penetra*: entra na festa pela janela, sem convite no sulco",
-      "apoio": "Pele de queimadura de sol, choque e febre depois de tampão nasal: a TSST-1 grampeia MHC II no TCR por fora do sulco e acorda os linfócitos T aos milhares. Angioedema hereditário incha sem febre (bradicinina), MHC I é a apresentação normal ao CD8 e IgE no mastócito dá urticária e chiado.",
-      "fala": "Comi, mostrei, avisei. E o grampeador entrou sem convite."
+      "frase": "A *ECA é a lixeira da bradicinina*: tampou a lixeira, a bradicinina transborda e *incha sem coçar*.",
+      "apoio": "Pegadinha de prova: o NBME mostra o lábio inchado e oferece o inibidor de C1 do angioedema hereditário. Olhe o C4 e a receita: C4 normal com lisinopril é a ECA. Bônus do dia 176: peptídeo de dentro da célula vai no MHC I para o CD8.",
+      "fala": "Comi, mostrei, avisei: com a ECA travada, a bradicinina não vai para o lixo."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 176, 239 e 267, mais um intruso. Febre, choque e pele de quem dormiu no sol, dois dias depois de um tampão nasal para sangramento. Qual mecanismo explica o quadro?",
+    "contexto": "Domingo de Remix com o Macrô na porta do forró. Um homem com um inchaço no rosto, a lista de remédios dele e dois exames de complemento estão na vinheta. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,9 +94,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre, choque e eritrodermia após tampão nasal: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lábio inchado com lisinopril e C4 normal: mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

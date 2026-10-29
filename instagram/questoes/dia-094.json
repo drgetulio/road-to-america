@@ -16,13 +16,13 @@
   "gancho_apoio": "Uma substância só é filtrada; a outra é filtrada e secretada.",
   "imagem": {
     "arquivo": "dia-094.png",
-    "cena": "Seu Néfron trabalha numa cabine de pedágio. Carros azuis passam direto pela cancela, sem parar. Carros amarelos que escaparam da cancela são puxados por ele com um gancho comprido por uma estrada lateral. Na mesa, uma pizza inteira ainda sem cortes.",
+    "cena": "Seu Néfron trabalha numa cabine de pedágio: carros azuis passam direto pela cancela, e os amarelos que escaparam ele puxa de volta com um gancho comprido. No balcão, uma pizza inteira. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron num pedágio: carros azuis passam pela cancela e carros amarelos são puxados com um gancho."
+    "alt": "Seu Néfron num pedágio: carros azuis passam pela cancela e os amarelos são puxados de volta com um gancho."
   },
   "imagem_macete": {
     "arquivo": "dia-094-macete.png",
-    "cena": "Callback: a pizza na mesa do pedágio agora está cortada em cinco fatias iguais, uma delas destacada em verde. Seu Néfron segura a fatia verde com orgulho, enquanto os carros azuis e amarelos fazem fila organizada atrás dele.",
+    "cena": "Callback: a pizza do pedágio agora está cortada em cinco fatias iguais, uma delas em verde, e Seu Néfron ergue a fatia verde com orgulho. Fundo limpo.",
     "foco": "50% 40%",
     "alt": "Pizza cortada em cinco fatias, uma em verde, nas mãos do Seu Néfron no pedágio."
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "0.17",
-        "quiz": "0,17"
+        "quiz": "0.17"
       },
       "B": {
         "texto": "0.20",
-        "quiz": "0,20"
+        "quiz": "0.20"
       },
       "C": {
         "texto": "0.80",
-        "quiz": "0,80"
+        "quiz": "0.80"
       },
       "D": {
         "texto": "5.0",
-        "quiz": "5,0"
+        "quiz": "5.0"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê com o Seu Néfron: duas substâncias, dois clearances e uma conta que cai todo ano. Faça a divisão antes de olhar as alternativas.",
+    "contexto": "Quarta do Porquê com o Seu Néfron: dois clearances e uma divisão que cai todo ano. Na Prometric é você, a folha plastificada e uma caneta que falha justo na hora da conta. Faça a divisão antes de olhar as alternativas.",
     "palavras_chave": [
       "continuous infusion",
       "glomerular filtration",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Clearances de 120 e 600 mL/min: qual a fração de filtração?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Clearances de 120 e 600 mL/min: qual a fração de filtração?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

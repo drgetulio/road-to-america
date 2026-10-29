@@ -13,16 +13,16 @@
   "explicacao_em": "2027-09-14",
   "tom": null,
   "gancho": "Quatro interfones no prédio do Macrô: *qual acordou o condomínio?*",
-  "gancho_apoio": "Dia Mundial da Sepse. Pielonefrite, choque, sangramento nas punções e um bastão gram-negativo na hemocultura.",
+  "gancho_apoio": "Dia Mundial da Sepse. Quatro botões no interfone e só um combina com o germe da vinheta.",
   "imagem": {
     "arquivo": "dia-316.png",
-    "cena": "Macrô de porteiro noturno na portaria de um prédio, com a comanda em branco no bolso, ao lado de um painel com quatro botões de interfone de formatos diferentes; na porta, uma bactéria em bastão, de jaqueta de duas camadas, carrega uma serpentina longa de açúcar, um chicotinho na cauda e um novelo de barbante.",
+    "cena": "Macrô, de porteiro noturno na portaria de um prédio, ao lado de um painel de interfones, vê uma bactéria em bastão de jaqueta fechada chegar à porta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Quatro interfones no prédio do Macrô: qual acordou o condomínio?"
+    "alt": "Macrô, porteiro noturno, vê uma bactéria de jaqueta fechada chegar à portaria."
   },
   "imagem_macete": {
     "arquivo": "dia-316-macete.png",
-    "cena": "Callback: a âncora de duas pontas na base da serpentina aperta o botão de interfone de encaixe igual; o Macrô dá um pulo e dispara três sirenes vermelhas que acendem todas as janelas do prédio.",
+    "cena": "Callback: a bactéria abre a jaqueta e mostra uma serpentina longa de açúcar com uma âncora de duas pontas na base, que aperta o botão de interfone de encaixe igual; o Macrô dá um pulo e dispara três sirenes vermelhas que acendem todas as janelas do prédio.",
     "foco": "50% 45%",
     "alt": "Endotoxina: lipid A toca a campainha do TLR4"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Lipid A binding Toll-like receptor 4",
-        "quiz": "Lipídio A e TLR4"
+        "quiz": "Lipid A + TLR4"
       },
       "B": {
         "texto": "Lipoteichoic acid binding Toll-like receptor 2",
-        "quiz": "Lipoteicoico e TLR2"
+        "quiz": "Lipoteichoic acid + TLR2"
       },
       "C": {
         "texto": "Flagellin binding Toll-like receptor 5",
-        "quiz": "Flagelina e TLR5"
+        "quiz": "Flagellin + TLR5"
       },
       "D": {
         "texto": "Unmethylated CpG DNA binding Toll-like receptor 9",
-        "quiz": "CpG e TLR9"
+        "quiz": "CpG DNA + TLR9"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Mulher de 70 anos com pielonefrite evolui com febre, hipotensão, sangramento nos locais de punção, plaquetas baixas e fibrinogênio baixo. A hemocultura cresce bacilos gram-negativos fermentadores de lactose. Qual componente bacteriano e qual receptor iniciaram a resposta?",
+    "contexto": "Dia Mundial da Sepse, Bicho de Segunda: o Macrô virou porteiro noturno e alguém tocou o interfone errado às 3 da manhã. Quatro botões, quatro receptores, e o Gram da hemocultura está na vinheta.",
     "palavras_chave": [
-      "pyelonephritis",
-      "septic shock",
-      "bleeding from venipuncture sites",
-      "low fibrinogen"
+      "sepsis",
+      "innate immunity",
+      "bloodstream infection",
+      "immunology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Choque séptico com hemocultura gram-negativa: quem disparou a resposta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Choque séptico com hemocultura gram-negativa: quem disparou a resposta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

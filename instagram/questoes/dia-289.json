@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-18",
   "tom": null,
-  "gancho": "O coração vestiu *o suéter de lã que a avó tricotou* e tudo arranha",
-  "gancho_apoio": "Dor que piora deitado e alivia inclinado para a frente, uma semana depois de um resfriado.",
+  "gancho": "Três da manhã, sala de espera vazia e *um coração reclamando de tudo*",
+  "gancho_apoio": "Plantão de Terça: quatro diagnósticos de dor no peito, e o ECG da vinheta separa os quatro.",
   "imagem": {
     "arquivo": "dia-289.png",
-    "cena": "Três da manhã numa sala de espera vazia: um coração simpático, sentado num banco e inclinado para a frente, veste um suéter de lã áspera, tricotado à mão, que solta faisquinhas de atrito; ele faz cara de incômodo. Dona Térmica, a garrafa térmica de café, oferece uma xícara e anota na prancheta. Ao fundo, um traçado ondulado de batimento e um relógio sem números nas 3 horas.",
+    "cena": "Três da manhã numa sala de espera vazia: um coração simpático de suéter de lã, sentado num banco, faz cara de incômodo enquanto a Dona Térmica serve café e anota na prancheta. Na parede, um relógio sem números marca 3 horas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Coração de suéter de lã inclinado para a frente no banco"
+    "alt": "Coração com cara de incômodo na sala de espera às 3 da manhã"
   },
   "imagem_macete": {
     "arquivo": "dia-289-macete.png",
-    "cena": "O coração tira o suéter que arranha e relaxa, recebendo numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado; o traçado ao fundo sobe suavemente em toda a extensão. Dona Térmica dobra o suéter em cima da prancheta.",
+    "cena": "Callback: o coração, que estava vestido com um suéter de lã áspera que arranhava, tira o suéter e relaxa, recebendo numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado; o traçado ao fundo sobe suavemente em toda a extensão. Dona Térmica dobra o suéter em cima da prancheta.",
     "foco": "50% 45%",
     "alt": "ST difuso e PR deprimido: pericardite aguda"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Acute pericarditis",
-        "quiz": "Pericardite aguda"
+        "quiz": "Acute pericarditis"
       },
       "B": {
         "texto": "Benign early repolarization",
-        "quiz": "Repolariz. precoce"
+        "quiz": "Early repolarization"
       },
       "C": {
         "texto": "Acute anterior STEMI",
-        "quiz": "IAM anterior"
+        "quiz": "Anterior STEMI"
       },
       "D": {
         "texto": "Cardiac tamponade",
-        "quiz": "Tamponamento"
+        "quiz": "Cardiac tamponade"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dor no peito que piora deitado e alivia inclinado para a frente, uma semana depois de um resfriado. Barulho de atrito, ECG com supra difuso e troponina normal. Qual é o diagnóstico?",
+    "contexto": "Plantão de Terça: um coração chegou de madrugada reclamando, e o ECG está na vinheta. Dor no peito às 3 da manhã tem quatro caminhos, e o NBME sempre coloca um que assusta demais e um que tranquiliza demais.",
     "palavras_chave": [
-      "chest pain after a cold",
-      "positional pain",
-      "scratchy heart sound",
-      "ECG changes"
+      "chest pain",
+      "ECG interpretation",
+      "emergency department",
+      "cardiology"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dor que alivia inclinado, atrito e ST difuso: qual é o diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor que alivia inclinado, atrito e ST difuso: qual é o diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

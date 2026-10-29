@@ -10,7 +10,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { todosOsDias, blocos, calendario, exportarQuestoes, semMarca, num3, PASTA_INSTAGRAM, RAIZ } from './lib-dias.mjs';
-import { tomDoDia } from '../templates/lib/dados.mjs';
+import os from 'node:os';
+import { tomDoDia, montarDia } from '../templates/lib/dados.mjs';
+import { legenda } from '../templates/lib/legenda.mjs';
+import { conversao, pacoteNaData, diasDoPacote, remixQueRevisa, ctaDoDia as ctaDoDiaConv } from '../templates/lib/conversao.mjs';
 
 const args = process.argv.slice(2);
 const SEM_RENDER = args.includes('--sem-render');
@@ -233,8 +236,9 @@ function raizes(t) {
   return new Set(palavrasNorm(t).filter((w) => w.length >= 4 && !PARADAS.has(w) && !/^#+$/.test(w)).map(raiz));
 }
 // partes do prompt que descrevem o personagem fixo não contam como pista
+// (as frases fixas de fundo limpo e da folha de referência também não contam)
 const cenaDoPrompt = (p) => {
-  const m = /Scene:(.*?)(Vertical 4:5|$)/s.exec(p || '');
+  const m = /Scene:(.*?)(Clean, uncluttered background|Keep (the character|these characters) identical|Vertical 4:5|$)/s.exec(p || '');
   return m ? m[1] : p || '';
 };
 const pistas = [];
@@ -314,6 +318,149 @@ const aceita = (d, onde, raizes) => (ACEITAS[String(d.dia)] || []).some((a) => (
     if (!perg) erro(S, `${rot(d)}: sem pergunta do quiz`);
     else if (perg.length > 80) aviso(S, `${rot(d)}: pergunta do quiz com ${perg.length} caracteres`);
     if (sq.pergunta_curta_pt && d.quiz?.pergunta && sq.pergunta_curta_pt !== d.quiz.pergunta) erro(S, `${rot(d)}: pergunta do story diferente de quiz.pergunta`);
+  }
+}
+
+// ---------------------------------------------------------------- 6b. regras da rodada 4 (avaliação médica e de conteúdo)
+// enquete do dia D sem achados da vinheta; a certa não é a única mais longa; intruso nos remixes;
+// remix diferente do dia revisado; teto de 15% por personagem; cenas com até 3 elementos principais.
+const LIM = config.limites || {};
+const elencoAno = { principal: {}, porQuadro: {}, naImagem: {} };
+const cenasMedidas = { erro: [], aviso: [] };
+let intrusoResumo = null;
+let alternativasResumo = null;
+{
+  const S = 'enquete';
+  ok(S);
+  const PERG = config.enquete?.pergunta || 'Qual é a sua letra?';
+  // regra única de língua: opção em inglês da prova (termos do USMLE), nunca em português
+  const PT = /[ãõçê]|\b(não|com|sem|para|uma|umas|dos|das|pelo|pela|então|depois|antes|ou|de|da|em|e)\b(?![.])/i;
+  const PT_OK = /\bde Quervain\b|\b(hepatitis|vitamin|type|group) E\b/gi;
+  // números de achado (sem ordinais como 4th, que são nome de estrutura)
+  const nums = (t) => (String(t || '').match(/\d+([.,]\d+)?(?!st|nd|rd|th)/g) || []);
+  for (const d of DIAS) {
+    const sq = d.story_quiz || {};
+    const perg = sq.pergunta_curta_pt || d.quiz?.pergunta || '';
+    if (perg !== PERG) erro(S, `${rot(d)}: a enquete do dia D pergunta "${perg.slice(0, 60)}"; a regra é "${PERG}" (o achado decisivo vai em quiz.resumo, para o D+1 e o Reel)`);
+    const vin = new Set(nums(d.questao.vinheta));
+    for (const a of alternativasDe(d)) {
+      if (PT.test(a.quiz.replace(PT_OK, ''))) erro(S, `${rot(d)}: opção ${a.letra} da enquete fora da regra de língua (inglês da prova): "${a.quiz}"`);
+      const extra = nums(a.quiz).filter((n) => !nums(a.texto).includes(n) && vin.has(n));
+      if (extra.length) erro(S, `${rot(d)}: opção ${a.letra} da enquete traz número da vinheta que a alternativa não tem (${extra.join(', ')}): "${a.quiz}"`);
+    }
+    if (!d.quiz?.resumo) aviso(S, `${rot(d)}: sem quiz.resumo (pergunta com o achado, usada no quiz do D+1 e no Reel)`);
+    else if (d.quiz.resumo.length > 90) aviso(S, `${rot(d)}: quiz.resumo com ${d.quiz.resumo.length} caracteres`);
+  }
+}
+{
+  const S = 'alternativas';
+  ok(S);
+  let unicas = 0, certaMaisLonga = 0, unicasCurtas = 0, certaMaisCurta = 0;
+  for (const d of DIAS) {
+    const alts = alternativasDe(d);
+    for (const [campo, f] of [['texto', (a) => semMarca(a.texto).length], ['opção da enquete', (a) => a.quiz.length]]) {
+      const lens = alts.map(f);
+      const mx = Math.max(...lens);
+      const mn = Math.min(...lens);
+      const maiores = alts.filter((a, i) => lens[i] === mx);
+      const menores = alts.filter((a, i) => lens[i] === mn);
+      if (maiores.length === 1) {
+        if (campo === 'texto') unicas++;
+        if (maiores[0].letra === d.questao.correta) {
+          if (campo === 'texto') certaMaisLonga++;
+          erro(S, `${rot(d)}: a certa (${d.questao.correta}) é a única alternativa mais longa no ${campo} (${mx} caracteres)`);
+        }
+      }
+      if (campo === 'texto' && menores.length === 1) { unicasCurtas++; if (menores[0].letra === d.questao.correta) certaMaisCurta++; }
+    }
+  }
+  const pc = unicasCurtas ? certaMaisCurta / unicasCurtas : 0;
+  if (pc > 0.35) aviso(S, `a certa é a única mais curta em ${(pc * 100).toFixed(0)}% dos dias com uma alternativa mais curta (esperado perto de 25%)`);
+  alternativasResumo = { dias_com_unica_mais_longa: unicas, certa_e_a_mais_longa: certaMaisLonga, dias_com_unica_mais_curta: unicasCurtas, certa_e_a_mais_curta: certaMaisCurta, pct_certa_mais_curta: Number((pc * 100).toFixed(1)) };
+}
+{
+  const S = 'remix';
+  ok(S);
+  const R = DIAS.filter((d) => d.remix_de);
+  const intruso = R.filter((d) => (d.questao.alternativas[d.questao.correta]?.dia ?? null) === null);
+  const [lo, hi] = LIM.intruso_remix || [0.35, 0.65];
+  const p = R.length ? intruso.length / R.length : 0;
+  if (p < lo || p > hi) erro(S, `a resposta do remix é o intruso (alternativa sem selo "visto no dia") em ${intruso.length} de ${R.length} domingos (${(p * 100).toFixed(0)}%); a faixa é ${lo * 100}% a ${hi * 100}%`);
+  for (let i = 0; i < R.length; i += 13) {
+    const tri = R.slice(i, i + 13);
+    const n = tri.filter((d) => intruso.includes(d)).length;
+    if (n < 3 || n > tri.length - 3) aviso(S, `domingos ${tri[0].dia} a ${tri.at(-1).dia}: intruso certo em ${n} de ${tri.length} (fica previsível)`);
+  }
+  intrusoResumo = { domingos: R.length, intruso_certo: intruso.length, pct: Number((p * 100).toFixed(1)) };
+  const raizesResp = (t) => palavrasNorm(t).filter((w) => w.length >= 3 && !['the', 'and', 'with', 'for', 'from', 'into'].includes(w)).map((w) => w.slice(0, 6));
+  const jac = (a, b) => { const x = new Set(a); const y = new Set(b); let k = 0; for (const v of x) if (y.has(v)) k++; return x.size + y.size - k ? k / (x.size + y.size - k) : 0; };
+  for (const d of R) {
+    const certa = semMarca(d.questao.alternativas[d.questao.correta].texto);
+    const shD = shingles(`${d.questao.vinheta} ${d.questao.pergunta}`, 3);
+    for (const r of d.remix_de) {
+      const o = DIAS[r - 1];
+      if (!o) continue;
+      const certaO = semMarca(o.questao.alternativas[o.questao.correta].texto);
+      const jr = jac(raizesResp(certa), raizesResp(certaO));
+      const jv = jaccard(shD, shingles(`${o.questao.vinheta} ${o.questao.pergunta}`, 3));
+      if (palavrasNorm(certa).join(' ') === palavrasNorm(certaO).join(' ') || jr >= 0.75) erro(S, `${rot(d)}: o remix tem a mesma resposta do dia ${num3(r)} ("${certa}"); a revisão precisa de pergunta nova`);
+      else if (jr >= 0.5) aviso(S, `${rot(d)}: resposta parecida com a do dia ${num3(r)} ("${certa}" e "${certaO}"); confira se é contraste e não repetição`);
+      if (jv >= 0.35) erro(S, `${rot(d)}: vinheta do remix ${(jv * 100).toFixed(0)}% igual à do dia ${num3(r)}`);
+      else if (jv >= 0.2) aviso(S, `${rot(d)}: vinheta do remix parecida com a do dia ${num3(r)} (${(jv * 100).toFixed(0)}%)`);
+    }
+  }
+}
+{
+  const S = 'elenco';
+  ok(S);
+  const teto = LIM.teto_personagem_ano ?? 0.15;
+  const max = Math.floor(teto * DIAS.length);
+  let refs = null;
+  try { refs = JSON.parse(fs.readFileSync(path.join(PASTA_INSTAGRAM, 'personagens-referencia.json'), 'utf8')); } catch { erro(S, 'falta instagram/personagens-referencia.json (rode normalizar-dias.mjs)'); }
+  const arquivosRef = new Set((refs?.personagens || []).map((x) => x.arquivo));
+  for (const d of DIAS) {
+    const q = d.personagem || d.anfitriao || 'sem personagem';
+    elencoAno.principal[q] = (elencoAno.principal[q] || 0) + 1;
+    (elencoAno.porQuadro[d.quadro] ||= {})[q] = (elencoAno.porQuadro[d.quadro][q] || 0) + 1;
+    const pr = d.personagem_referencia;
+    if (!pr) { erro(S, `${rot(d)}: sem personagem_referencia (rode normalizar-dias.mjs)`); continue; }
+    for (const n of pr.questao || []) elencoAno.naImagem[n] = (elencoAno.naImagem[n] || 0) + 1;
+    for (const a of pr.arquivos || []) if (!arquivosRef.has(a)) erro(S, `${rot(d)}: referência ${a} fora de personagens-referencia.json`);
+    if ((pr.questao || []).length && !/identical to the attached reference sheet/.test(d.imagem_questao.prompt_nano_banana_pro)) erro(S, `${rot(d)}: prompt da questão sem a frase da folha de referência`);
+    if ((pr.questao || []).length > 2) erro(S, `${rot(d)}: ${pr.questao.length} personagens fixos na imagem da questão (no máximo 2, um em ação)`);
+    if (d.personagem && !(pr.questao || []).includes(d.personagem) && !(pr.macete || []).includes(d.personagem)) aviso(S, `${rot(d)}: o personagem do dia (${d.personagem}) não aparece em nenhum prompt`);
+  }
+  for (const [n, c] of Object.entries(elencoAno.principal)) if (n !== 'sem personagem' && c > max) erro(S, `${n} é o personagem do dia em ${c} dias (${(c / DIAS.length * 100).toFixed(1)}%); o teto é ${teto * 100}% do ano (${max} dias)`);
+  for (const [n, c] of Object.entries(elencoAno.naImagem)) if (c > max) erro(S, `${n} aparece em ${c} imagens de questão (${(c / DIAS.length * 100).toFixed(1)}%); o teto é ${teto * 100}% do ano (${max})`);
+}
+{
+  const S = 'cenas';
+  ok(S);
+  // Elementos principais estimados na cena em português: artigos indefinidos e quantidades, sem contar
+  // a assinatura do quadro (vinil, relógio, plaquinha, tabela 2x2, comanda, setinhas) nem o fundo.
+  const ASSINATURA = /\b(um |uma |num |numa )?(pequeno |pequena )?(vinil( pequeno)?|rel[oó]gio( redondo)?( de parede)?( sem n[uú]meros)?|plaquinha verde e vermelha|tabela 2x2( em branco)?|comanda( de boteco)?( em branco)?|setinhas de manual( de montagem)?|crach[aá] em branco|quadrinho|quadro na parede)\b[^,;.]*/gi;
+  const IGNORAR = /\b(cada um|cada uma|uma delas|um deles|uma das|um dos|um de cada|um ao outro|uma a uma|um a um|uma vez|um pouco|de um lado|uma pitada|um canto|num canto|um ar|uma cara|um sorriso|um olhar|uma pose)\b/gi;
+  const elementos = (cena) => {
+    const t = ` ${String(cena).replace(/fundo limpo\.?/gi, ' ').replace(/(tom|cena) [^.]*\.?$/i, ' ').replace(ASSINATURA, ' ').replace(IGNORAR, ' ')} `;
+    const total = (t.match(/\b(um|uma|num|numa|dum|duma)\b/gi) || []).length + (t.match(/\b(dois|duas|três|quatro|cinco|seis|sete|oito|nove|dez)\b/gi) || []).length;
+    const m = /(:|\()\s*([^.;)]*)/.exec(t);
+    const lista = m ? m[2].split(/,|\be\b/).filter((x) => /\b(um|uma)\b/.test(x)).length : 0;
+    return { total, lista, palavras: String(cena).split(/\s+/).length };
+  };
+  const limE = LIM.elementos_cena_erro ?? 6;
+  const limP = LIM.palavras_cena_erro ?? 60;
+  for (const d of DIAS) {
+    const e = elementos(d.imagem.cena);
+    const motivos = [];
+    if (e.total >= limE) motivos.push(`cerca de ${e.total} elementos`);
+    if (e.lista >= 4) motivos.push(`lista de ${e.lista} objetos (as alternativas desenhadas?)`);
+    if (e.palavras > limP) motivos.push(`${e.palavras} palavras`);
+    if (motivos.length) { cenasMedidas.erro.push(d.dia); erro(S, `${rot(d)}: cena da questão carregada demais para o feed (${motivos.join(', ')}); no máximo 3 elementos principais, um personagem em ação e fundo limpo`); }
+    else if (e.total === limE - 1 || e.palavras > 50) { cenasMedidas.aviso.push(d.dia); aviso(S, `${rot(d)}: cena da questão no limite (${e.total} elementos, ${e.palavras} palavras)`); }
+    const pq = d.imagem_questao.prompt_nano_banana_pro;
+    if (!/Clean, uncluttered background with no more than three main elements\./.test(pq)) erro(S, `${rot(d)}: prompt da questão sem "Clean, uncluttered background with no more than three main elements."`);
+    const cena = /Scene:(.*?)(Vertical 4:5|$)/s.exec(pq)?.[1] || '';
+    if (/\b(arrows?|pointing|points?) (at|to|toward)\b|\bpunchline that points\b/i.test(cena)) aviso(S, `${rot(d)}: a cena da questão tem algo que aponta ("${cena.match(/\b(arrows?|pointing|points?) (at|to|toward)\b|\bpunchline that points\b/i)[0]}"); confira se não indica a resposta`);
   }
 }
 
@@ -429,7 +576,160 @@ if (!SEM_RENDER) {
   renderResumo = { codigo: r.status, erros: x.length, banco_privado: banco.length, imagens_pendentes: pendentes, outros_avisos: outros.length, banco_conferido: !semBanco };
 }
 
+// ---------------------------------------------------------------- 11. conversão ativa (links, CTA, desafio, live)
+{
+  const S = 'conversao';
+  ok(S);
+  const C = conversao();
+  const URL_ESCRITA = /https?:\/\/|github\.io|www\.|\.com\.br|link na bio/i;
+  const semCvv = (t) => String(t || '').replace(/cvv\.org\.br/gi, '');
+  for (const d of DIAS) {
+    for (const [campo, t] of [['legenda_questao_pt', d.legenda_questao_pt], ['legenda_explicacao_pt', d.legenda_explicacao_pt], ['legenda.cta_texto', d.legenda?.cta_texto], ['legenda.contexto', d.legenda?.contexto]]) {
+      if (t && URL_ESCRITA.test(semCvv(t))) erro(S, `${rot(d)}: endereço escrito em ${campo} (link só na bio, no adesivo de link e no direct)`);
+    }
+    if ('cta' in d) aviso(S, `${rot(d)}: campo antigo "cta" (use cta_forcado; rode conversao-ativa.mjs)`);
+    if (d.cta_forcado && !C.slide_cta[d.cta_forcado]) erro(S, `${rot(d)}: cta_forcado "${d.cta_forcado}" não existe em conversao.json`);
+  }
+  // legenda completa do post, como o render monta (gabarito de ontem + questão de hoje)
+  const tmpq = fs.mkdtempSync(path.join(os.tmpdir(), 'qe-val-'));
+  exportarQuestoes(DIAS, tmpq);
+  const M = new Map(DIAS.map((d) => [d.dia, montarDia(d.dia, tmpq, path.join(PASTA_INSTAGRAM, 'imagens'))]));
+  for (const d of DIAS) {
+    const leg = legenda(M.get(d.dia), M.get(d.dia - 1) || null, config);
+    if (URL_ESCRITA.test(semCvv(leg))) erro(S, `${rot(d)}: legenda do post com endereço escrito`);
+    if (!/CRM-DF/.test(leg)) erro(S, `${rot(d)}: legenda do post sem CRM`);
+  }
+  fs.rmSync(tmpq, { recursive: true, force: true });
+  for (const [tipo, s] of Object.entries(C.slide_cta)) if (s.palavra && !C.palavras[s.palavra]) erro(S, `slide_cta.${tipo}: palavra ${s.palavra} sem resposta automática`);
+  for (const [palavra, p] of Object.entries(C.palavras)) {
+    if (!/\{aviso\}/.test(p.dm)) erro(S, `palavra ${palavra}: resposta automática sem aviso de privacidade`);
+    if (!/\{assinatura\}/.test(p.dm)) erro(S, `palavra ${palavra}: resposta automática sem assinatura com CRM`);
+    if (p.link && !C.links[p.link]) erro(S, `palavra ${palavra}: link ${p.link} não existe`);
+  }
+  const PROMESSA = /aprova[cç][aã]o garantida|passe no step|garant[ai]\w* (a |sua )?(aprova|vaga|nota|match)|o melhor curso/i;
+  const TRAV = /[—–]/;
+  const todoTexto = JSON.stringify(C);
+  if (TRAV.test(todoTexto)) erro(S, 'conversao.json com travessão ou meia-risca');
+  if (PROMESSA.test(todoTexto)) erro(S, 'conversao.json com promessa proibida');
+  const ini = cal.periodo.inicio;
+  const fim = cal.periodo.fim;
+  for (const e of C.desafio.edicoes) {
+    const n = (iso) => DIAS.find((x) => x.data === iso)?.dia;
+    if (n(e.inicio) !== e.dia_inicio || n(e.fim) !== e.dia_fim) erro(S, `desafio ${e.edicao}: dia_inicio/dia_fim não batem com as datas`);
+    if (e.dia_fim - e.dia_inicio !== 29) erro(S, `desafio ${e.edicao}: não tem 30 dias`);
+    if (!(e.inscricao[1] < e.inicio)) erro(S, `desafio ${e.edicao}: inscrição termina depois do início`);
+  }
+  for (const d of C.lives.datas) {
+    if (d < ini || d > fim) erro(S, `live ${d} fora do programa`);
+    const dd = DIAS.find((x) => x.data === d);
+    if (dd && dd.dia_semana !== 'quinta-feira') aviso(S, `live ${d} não cai numa quinta`);
+    if (dd && dd.tom === 'acolhedor') aviso(S, `live ${d} cai numa data sensível`);
+  }
+  if (C.lives.datas.length !== 12) erro(S, `são ${C.lives.datas.length} lives; o plano é uma por mês`);
+  // MACETE: a promessa ("os sete macetes mais recentes") precisa casar com a entrega
+  for (const d of DIAS) {
+    const m = montarDiaSimples(d);
+    if (palavraCta(m) !== 'MACETE') continue;
+    const k = pacoteNaData(d.data, '12h00');
+    if (!k) erro(S, `${rot(d)}: CTA MACETE antes do primeiro pacote de macetes (sexta do dia 5)`);
+  }
+  if (/No domingo eles voltam no Remix/i.test(C.palavras.MACETE.dm + C.palavras.MACETE.resposta_publica.join(' '))) erro(S, 'MACETE promete que todos os macetes voltam no Remix de domingo');
+}
+
+let reelsResumo = null;
+// ---------------------------------------------------------------- 12. Reels semanais (instagram/reels-semanais.json)
+{
+  const S = 'reels';
+  ok(S);
+  const arq = path.join(PASTA_INSTAGRAM, 'reels-semanais.json');
+  if (!fs.existsSync(arq)) erro(S, 'falta instagram/reels-semanais.json (rode gerar-reels-semanais.mjs)');
+  else {
+    const R = JSON.parse(fs.readFileSync(arq, 'utf8')).reels;
+    const C = conversao();
+    const ganchos = new Map();
+    if (R.length !== 52) erro(S, `são ${R.length} Reels; esperado 52`);
+    const TRAV = /[—–]/;
+    const URL_ESCRITA = /https?:\/\/|github\.io|www\.|link na bio/i;
+    R.forEach((r, i) => {
+      const o = r.id;
+      if (r.semana !== i + 1) erro(S, `${o}: semana ${r.semana} fora de ordem`);
+      const sexta = DIAS[7 * i + 4];
+      if (!sexta || sexta.data !== r.publicar_em || sexta.dia_semana !== 'sexta-feira') erro(S, `${o}: publicar_em ${r.publicar_em} não é a sexta da semana`);
+      if (r.duracao_s < 15 || r.duracao_s > 30) erro(S, `${o}: ${r.duracao_s} s (o Reel tem de 15 a 30 s)`);
+      const c = r.cenas;
+      if (c[0].inicio_s !== 0 || c[0].fim_s > 2.01) erro(S, `${o}: o gancho precisa ocupar os 2 primeiros segundos`);
+      for (let k = 1; k < c.length; k++) if (Math.abs(c[k].inicio_s - c[k - 1].fim_s) > 0.001) erro(S, `${o}: buraco ou sobreposição entre as cenas ${k} e ${k + 1}`);
+      if (Math.abs(c.at(-1).fim_s - r.duracao_s) > 0.001) erro(S, `${o}: a última cena não termina em duracao_s`);
+      for (const x of c) {
+        if (!x.texto_tela) erro(S, `${o}: cena sem texto na tela`);
+        if (TRAV.test(x.texto_tela)) erro(S, `${o}: travessão no texto da tela`);
+        if (URL_ESCRITA.test(x.texto_tela)) erro(S, `${o}: endereço no texto da tela`);
+        if ((x.texto_tela.match(/\*/g) || []).length % 2) erro(S, `${o}: asterisco de destaque sem par`);
+        if (x.tipo_visual === 'alternativas' && (!x.opcoes || x.opcoes.length !== 4)) erro(S, `${o}: alternativas sem as 4 opções`);
+        // texto começando com "Comente" vira a caixa de comentário no Remotion (reels/src/segmentos.ts) e some com as opções
+        if (x.tipo_visual !== 'legenda_cinetica' && /^Comente\s/i.test(x.texto_tela)) erro(S, `${o}: cena ${x.tipo_visual} com texto começando por "Comente" (o render troca pela caixa de comentário)`);
+        if (x.tipo_visual === 'personagem' && !x.personagem) erro(S, `${o}: cena de personagem sem nome`);
+        if (semMarca(x.texto_tela).length > 160) aviso(S, `${o}: texto de cena com ${semMarca(x.texto_tela).length} caracteres (difícil de ler em 5 s)`);
+      }
+      if (!C.palavras[r.palavra_chave]) erro(S, `${o}: palavra-chave ${r.palavra_chave} sem resposta automática`);
+      if (!c.some((x) => new RegExp(`Comente \\*${r.palavra_chave}\\*`).test(x.texto_tela))) erro(S, `${o}: falta a cena "Comente ${r.palavra_chave}"`);
+      if (URL_ESCRITA.test(r.legenda)) erro(S, `${o}: endereço escrito na legenda do Reel`);
+      if (!/CRM-DF/.test(r.legenda)) erro(S, `${o}: legenda sem CRM`);
+      if (TRAV.test(r.legenda)) erro(S, `${o}: travessão na legenda`);
+      if (r.audio?.musica_embutida !== false) erro(S, `${o}: o vídeo não pode levar música embutida`);
+      if (r.dia_questao) {
+        const d = DIAS[r.dia_questao - 1];
+        if (!(d.explicacao_em <= r.publicar_em)) erro(S, `${o}: mostra a questão do dia ${r.dia_questao} antes do gabarito sair`);
+        if ((d.tom === 'acolhedor' || d.cvv) && r.formato !== 'macete') erro(S, `${o}: data sensível num formato com piada`);
+      }
+      if (r.formato === 'resultado' && r.status === 'pronto' && ['A', 'B', 'C', 'D'].some((l) => typeof r.resultado?.[l] !== 'number')) erro(S, `${o}: resultado marcado como pronto sem os números da enquete`);
+      // plano B do Resultado: nada de número nem de barra de percentual
+      if (r.formato === 'resultado' && r.status === 'pronto_plano_b' && c.some((x) => /\{erro\}/.test(x.texto_tela) || x.percentuais_de)) erro(S, `${o}: plano B do Resultado mostra número da enquete`);
+      if (r.formato === 'resultado' && !['pronto', 'pronto_plano_b'].includes(r.status)) erro(S, `${o}: Resultado sem plano B (status ${r.status})`);
+      // gancho próprio da questão da semana
+      const g = palavrasNorm(r.gancho_0a2s).join(' ');
+      if (ganchos.has(g)) erro(S, `${o}: gancho igual ao de ${ganchos.get(g)} ("${semMarca(r.gancho_0a2s)}")`);
+      else ganchos.set(g, o);
+      if (r.dia_questao) {
+        const d = DIAS[r.dia_questao - 1];
+        const fonteDia = raizes(`${d.questao.vinheta} ${d.quiz?.resumo || ''} ${d.gancho} ${d.topico} ${d.conceito} ${(d.explicacao.termos || []).join(' ')}`);
+        const doGancho = [...raizes(r.gancho_0a2s)].filter((x) => fonteDia.has(x));
+        if (!doGancho.length) erro(S, `${o}: gancho genérico, sem nenhum dado da questão do dia ${r.dia_questao} ("${semMarca(r.gancho_0a2s)}")`);
+      }
+      // Pegadinha: troque um dado e a resposta muda
+      if (r.formato === 'pegadinha') {
+        const t = c.find((x) => x.contraste === 'troca');
+        const n = c.find((x) => x.contraste === 'nova_resposta');
+        if (!t || !n || !/Troque/.test(t.texto_tela)) erro(S, `${o}: Pegadinha sem o contraste "troque um dado e a resposta muda"`);
+        else if (r.dia_questao) {
+          const d = DIAS[r.dia_questao - 1];
+          const letra = /^([ABCD]),/.exec(semMarca(r.contraste?.resposta || ''))?.[1];
+          if (letra && letra === d.questao.correta) erro(S, `${o}: a troca de dado leva à mesma letra certa (${letra})`);
+        }
+      }
+      // Macete: só promete o Remix quando o conceito volta
+      const promessa = c.find((x) => /Volta no \*?Remix/i.test(x.texto_tela));
+      if (promessa && r.dia_questao) {
+        const v = remixQueRevisa(r.dia_questao, DIAS);
+        if (!v) erro(S, `${o}: promete a volta no Remix, mas o dia ${r.dia_questao} não está em nenhum remix_de depois dele`);
+        else if (!promessa.texto_tela.includes(v.data.split('-').reverse().slice(0, 2).join('/'))) erro(S, `${o}: a data do Remix na tela não é a do domingo que revisa o dia ${r.dia_questao} (${v.data})`);
+      }
+      if (/volta no remix/i.test(r.legenda) && !(r.dia_questao && remixQueRevisa(r.dia_questao, DIAS))) erro(S, `${o}: a legenda promete a volta no Remix sem o conceito voltar`);
+      // MACETE no direct: o pacote ativo na sexta às 19h precisa trazer a questão do Reel
+      if (r.palavra_chave === 'MACETE' && r.dia_questao) {
+        const k = pacoteNaData(r.publicar_em, '19h00');
+        const [a, b] = k ? diasDoPacote(k) : [0, -1];
+        if (!(r.dia_questao >= a && r.dia_questao <= b)) erro(S, `${o}: pede MACETE, mas o pacote do direct ativo na sexta (dias ${a} a ${b}) não traz o macete do dia ${r.dia_questao}`);
+      }
+      if (r.dia_questao && !r.ilustracoes) erro(S, `${o}: sem o campo ilustracoes (imagens do carrossel para o Reel)`);
+    });
+    reelsResumo = { reels: R.length, ganchos_unicos: ganchos.size, por_formato: R.reduce((acc, r) => ((acc[r.formato] = (acc[r.formato] || 0) + 1), acc), {}), resultado_plano_b: R.filter((r) => r.status === 'pronto_plano_b').length, macete_promete_remix: R.filter((r) => r.cenas.some((x) => /Volta no \*?Remix/.test(x.texto_tela))).length, macete_sem_remix: R.filter((r) => r.formato === 'macete' && !r.cenas.some((x) => /Volta no \*?Remix/.test(x.texto_tela))).length };
+  }
+}
+
 // ---------------------------------------------------------------- relatório
+function montarDiaSimples(d) { return { ...d, n: d.dia }; }
+function palavraCta(m) { const t = ctaDoDiaConv(m); return (conversao().slide_cta[t] || {}).palavra || null; }
 const tab = (o) => Object.entries(o).map(([k, v]) => `${k} ${v}`).join(' | ');
 console.log('VALIDAÇÃO DOS 365 DIAS (instagram/dias)');
 console.log(`dias lidos: ${DIAS.length} em ${blocos().length} blocos`);
@@ -437,6 +737,13 @@ console.log(`letras certas no ano: ${tab(distribuicao.ano)}`);
 for (const m of distribuicao.meses) console.log(`  ${m.mes.padEnd(9)} ${String(m.dias).padStart(2)} dias  A ${m.A}  B ${m.B}  C ${m.C}  D ${m.D}`);
 console.log(`datas sensíveis (sem piada): ${sensiveis.length} (${sensiveis.join(', ')})`);
 console.log(`temas sensíveis (piada nunca sobre a doença): ${temasSensiveis.length} (${temasSensiveis.join(', ')})`);
+console.log(`enquete do dia D: "${config.enquete?.pergunta || 'Qual é a sua letra?'}" nos ${DIAS.filter((d) => d.story_quiz?.pergunta_curta_pt === (config.enquete?.pergunta || 'Qual é a sua letra?')).length} dias; quiz.resumo em ${DIAS.filter((d) => d.quiz?.resumo).length}`);
+if (alternativasResumo) console.log(`alternativas: a certa é a única mais longa em ${alternativasResumo.certa_e_a_mais_longa} de ${alternativasResumo.dias_com_unica_mais_longa} dias com uma mais longa; a única mais curta em ${alternativasResumo.certa_e_a_mais_curta} de ${alternativasResumo.dias_com_unica_mais_curta} (${alternativasResumo.pct_certa_mais_curta}%)`);
+if (intrusoResumo) console.log(`remix: intruso certo em ${intrusoResumo.intruso_certo} de ${intrusoResumo.domingos} domingos (${intrusoResumo.pct}%)`);
+console.log(`elenco (personagem do dia, teto ${((LIM.teto_personagem_ano ?? 0.15) * 100).toFixed(0)}% = ${Math.floor((LIM.teto_personagem_ano ?? 0.15) * DIAS.length)} dias): ${Object.entries(elencoAno.principal).sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n} ${c} (${(c / DIAS.length * 100).toFixed(1)}%)`).join(', ')}`);
+for (const [q, v] of Object.entries(elencoAno.porQuadro)) console.log(`  ${q.padEnd(20)} ${Object.entries(v).sort((a, b) => b[1] - a[1]).map(([n, c]) => `${n} ${c}`).join(', ')}`);
+console.log(`cenas da questão: ${cenasMedidas.erro.length} carregadas demais, ${cenasMedidas.aviso.length} no limite`);
+if (reelsResumo) console.log(`reels: ${reelsResumo.reels}, ${reelsResumo.ganchos_unicos} ganchos únicos, ${JSON.stringify(reelsResumo.por_formato)}, Resultado no plano B ${reelsResumo.resultado_plano_b}, Macete que promete Remix ${reelsResumo.macete_promete_remix} (e ${reelsResumo.macete_sem_remix} que pede para salvar)`);
 if (renderResumo) console.log(`render --so-conferir: ${renderResumo.erros} erro(s), ${renderResumo.banco_privado} de cópia do banco privado, ${renderResumo.imagens_pendentes} aviso(s) de imagem pendente, ${renderResumo.outros_avisos} outro(s) aviso(s); banco conferido: ${renderResumo.banco_conferido ? 'sim' : 'não'}`);
 console.log('');
 for (const [s, v] of Object.entries(secoes)) console.log(`${(v.erros ? 'x' : 'ok').padEnd(2)} ${s.padEnd(12)} ${v.erros} erro(s), ${v.avisos} aviso(s)`);
@@ -448,5 +755,5 @@ if (erros.length) {
   console.log(`\nERROS (${erros.length})`);
   for (const e of erros) console.log(`x ${e}`);
 }
-if (SAIDA_JSON) fs.writeFileSync(SAIDA_JSON, JSON.stringify({ erros, avisos, secoes, distribuicao, sensiveis, temasSensiveis, pistas, render: renderResumo }, null, 2));
+if (SAIDA_JSON) fs.writeFileSync(SAIDA_JSON, JSON.stringify({ erros, avisos, secoes, distribuicao, sensiveis, temasSensiveis, pistas, alternativas: alternativasResumo, remix: intrusoResumo, elenco: elencoAno, cenas: cenasMedidas, reels: reelsResumo, render: renderResumo }, null, 2));
 process.exit(erros.length ? 1 : 0);

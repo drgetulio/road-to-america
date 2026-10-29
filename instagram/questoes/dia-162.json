@@ -7,23 +7,23 @@
   "sistema": "Sistemas respiratório e renal/urinário",
   "topico": "Legionella",
   "conceito": "Legionella pneumophila: pneumonia with hyponatremia and diarrhea, urinary antigen test",
-  "personagem": "Macrô",
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-13",
   "tom": null,
-  "gancho": "Voltou do congresso com tosse, diarreia e o *saleiro vazio*. Quem dedura o culpado?",
-  "gancho_apoio": "Febre alta, confusão e sódio de 127. O Gram veio cheio de neutrófilos e sem bactéria.",
+  "gancho": "Voltou do congresso *com mais que um crachá*",
+  "gancho_apoio": "O Seu Néfron quer carimbar o diagnóstico ainda hoje.",
   "imagem": {
     "arquivo": "dia-162.png",
-    "cena": "No saguão de um hotel de congresso, o Macrô, de crachá e com a comanda em branco no bolso, desconfia de um ar-condicionado antigo de janela que pinga num balde. Na fresta do aparelho, um bacilo pequeno se esconde; num banquinho, uma chave de quarto e um saleiro quase vazio.",
+    "cena": "No saguão de um hotel de congresso, o Seu Néfron, de crachá, desconfia de um ar-condicionado antigo de janela que pinga num balde. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô no saguão do hotel desconfia de um ar-condicionado que pinga; um bacilo se esconde na fresta."
+    "alt": "Seu Néfron, de crachá, desconfia de um ar-condicionado antigo que pinga num balde no saguão do hotel."
   },
   "imagem_macete": {
     "arquivo": "dia-162-macete.png",
-    "cena": "Pego no flagra, o bacilo mostra a carteira de identidade que tirou de dentro de um potinho de coleta de tampa amarela. Macrô confere o documento com a lupa; o saleiro vazio lembra o sódio baixo.",
-    "alt": "O bacilo mostra o documento tirado de um potinho de coleta de tampa amarela; Macrô confere com a lupa."
+    "cena": "Callback: pego no flagra, um bacilo pequeno sai do ar-condicionado e mostra uma carteira de identidade tirada de dentro de um potinho de coleta de tampa amarela, e o Seu Néfron carimba. Fundo limpo.",
+    "alt": "O bacilo sai do ar-condicionado e mostra uma identidade tirada de um potinho de urina; o Seu Néfron carimba."
   },
   "questao": {
     "vinheta": "A 67-year-old man who smokes returns from a hotel conference with 3 days of fever to 39.8°C, dry cough, watery diarrhea, and confusion. Serum sodium is 127 mEq/L. Chest x-ray shows patchy bilateral infiltrates. Sputum Gram stain shows many neutrophils but no organisms.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Sputum culture on sheep blood agar",
-        "quiz": "Cultura ágar sangue"
+        "quiz": "Blood agar sputum culture"
       },
       "B": {
         "texto": "Cold agglutinin titer",
-        "quiz": "Crioaglutininas"
+        "quiz": "Cold agglutinin titer"
       },
       "C": {
         "texto": "Sputum acid-fast stain",
-        "quiz": "BAAR no escarro"
+        "quiz": "Sputum AFB stain"
       },
       "D": {
         "texto": "Urinary antigen test",
-        "quiz": "Antígeno urinário"
+        "quiz": "Urinary antigen test"
       }
     },
     "correta": "D"
@@ -67,11 +67,11 @@
     "macete": {
       "frase": "A *Legião* de sintomas: pulmão, barriga, cabeça e *sódio* baixo. A Legionella *entrega o RG na urina*",
       "apoio": "Hotel, cruzeiro ou spa, com água em aerossol; cultura em BCYE; e não passa de pessoa para pessoa.",
-      "fala": "Comi, mostrei, avisei. Esse aí não aparece no Gram, mas entrega o RG no potinho de urina."
+      "fala": "Sem carimbo, não sai: esse bacilo não aparece no Gram, mas entrega o RG no potinho de urina."
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda. O hóspede de hoje voltou de um congresso no hotel com febre alta, tosse seca, diarreia, confusão e sódio de 127. O Gram do escarro veio cheio de neutrófilos e sem bactéria. Qual exame confirma rápido?",
+    "contexto": "Bicho de Segunda com o Seu Néfron de plantão nos papéis. O hóspede de hoje voltou de um congresso doente, e a vinheta traz os sintomas, um eletrólito fora do lugar e um Gram curioso. Qual exame confirma rápido?",
     "palavras_chave": [
       "hotel stay",
       "high fever",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre, tosse, diarreia, confusão e Na 127 após hotel: qual exame rápido?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, tosse, diarreia, confusão e Na 127 após hotel: qual exame rápido?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

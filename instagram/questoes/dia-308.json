@@ -16,69 +16,69 @@
   ],
   "explicacao_em": "2027-09-06",
   "tom": null,
-  "gancho": "Meningite pela segunda vez e imunoglobulinas perfeitas: *quem falhou?*",
-  "gancho_apoio": "Revisão de domingo com os dias 246, 281 e 302. A hepatite da viagem deixou um recibo que importa.",
+  "gancho": "Macrô na loja de ferragens: *a caixa de ferramentas veio incompleta*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-308.png",
-    "cena": "Macrô no corredor de uma loja de ferragens, com a comanda em branco no bolso, segura uma caixa de ferramentas fechada; no balcão, uma dupla de grãos de café dança de chapeuzinho pela segunda vez; numa prateleira, um passaporte com dois carimbos em branco e uma garrafinha de água de poço; num canto, um vinil pequeno encostado.",
+    "cena": "Macrô no corredor de uma loja de ferragens, com a comanda em branco no bolso, segura uma caixa de ferramentas fechada; no balcão, uma dupla de grãos de café dança de chapeuzinho; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Meningite pela segunda vez e imunoglobulinas perfeitas: quem falhou?"
+    "alt": "Macrô na loja de ferragens com uma caixa de ferramentas fechada"
   },
   "imagem_macete": {
     "arquivo": "dia-308-macete.png",
-    "cena": "Callback: o Macrô abre a caixa de ferramentas e acha uma furadeira sem broca; cinco brocas em fila se encaixam nela, que enfim fura uma bolha de sabão em forma de grão de café duplo; a dupla para de dançar; o Macrô segura um frasquinho de vacina em forma de escudo; no passaporte, os dois carimbos aparecem em ordem, primeiro um grande e depois um pequeno.",
+    "cena": "Callback: o Macrô abre a caixa de ferramentas e acha dois corredores de peças: o da esquerda completo e o da direita sem uma braçadeira logo no começo; a dupla de grãos de café escapa pelo corredor da direita, enquanto o da esquerda funciona. O Macrô segura dois frasquinhos de vacina em forma de escudo, e no passaporte os dois carimbos aparecem em ordem, primeiro um grande e depois um pequeno.",
     "foco": "50% 45%",
-    "alt": "Neisseria de repetição: falta o MAC (C5 a C9)"
+    "alt": "CH50 normal e AH50 baixo: faltou a properdina"
   },
   "questao": {
-    "vinheta": "A 19-year-old man has his second episode of meningococcal meningitis in 3 years. Last year, while traveling, he had acute hepatitis E, with anti-HEV IgM followed by anti-HEV IgG. Serum IgG, IgA, and IgM levels are normal. CH50 activity is undetectable, while C3 and C4 levels are normal.",
+    "vinheta": "A 19-year-old man has his second episode of meningococcal disease in 3 years. Last year, while traveling, he had acute hepatitis E, with anti-HEV IgM followed by anti-HEV IgG. Serum IgG, IgA, and IgM are normal. CH50 is normal, but AH50 is markedly decreased. A maternal uncle died of meningococcemia.",
     "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Common variable immunodeficiency",
-        "quiz": "Imunodef. comum variável"
+        "texto": "Functional asplenia",
+        "quiz": "Functional asplenia"
       },
       "B": {
-        "texto": "Asplenia",
-        "quiz": "Asplenia"
+        "texto": "Terminal complement deficiency",
+        "quiz": "Terminal complement defect",
+        "dia": 246
       },
       "C": {
         "texto": "X-linked hyper-IgM syndrome",
-        "quiz": "Hiper-IgM",
+        "quiz": "X-linked hyper-IgM",
         "dia": 302
       },
       "D": {
-        "texto": "Terminal complement deficiency",
-        "quiz": "Complemento C5-C9",
-        "dia": 246
+        "texto": "Properdin deficiency",
+        "quiz": "Properdin deficiency"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Neisseria de repetição: *falta o MAC* (C5 a C9)",
+    "titulo": "CH50 normal e AH50 baixo: *faltou a properdina*",
     "certa": [
-      "Dois episódios de doença meningocócica, imunoglobulinas normais e *CH50* indetectável com C3 e C4 normais apontam para *terminal complement deficiency* (C5 a C9, dia 246). Sem o *membrane attack complex*, a Neisseria, de parede fina, escapa da lise. A hepatite E da viagem (dia 281) entra como pista: o anti-HEV passou de IgM para IgG, então a troca de classe funciona e a hiper-IgM fica fora. Conduta: vacinas MenACWY e MenB e investigação dos familiares."
+      "Doença meningocócica de repetição com imunoglobulinas normais aponta para o complemento. O CH50 mede a via clássica até o C9, e o AH50 mede a via alternativa até o C9. Se faltasse algum de C5 a C9 (dia 246), os dois viriam baixos. CH50 normal com AH50 baixo localiza a falha na via alternativa: é a *properdin deficiency*, ligada ao X, o que explica o tio materno. A hepatite E da viagem (dia 281) passou de IgM para IgG, então a troca de classe funciona e a hiper-IgM (dia 302) fica de fora. Conduta: vacinas *MenACWY* e *MenB* e investigação da família."
     ],
     "termos": [
-      "terminal complement deficiency",
-      "membrane attack complex",
-      "CH50",
-      "class switching"
+      "properdin deficiency",
+      "AH50 (alternative pathway)",
+      "CH50 (classical pathway)",
+      "X-linked"
     ],
     "erradas": {
-      "A": "A *imunodeficiência comum variável* derruba IgG e IgA e dá infecções sinopulmonares de repetição; aqui as imunoglobulinas são normais.",
-      "B": "A *asplenia* também predispõe a meningococo, mas o CH50 seria normal e haveria corpúsculos de Howell-Jolly no sangue periférico.",
-      "C": "Na *hiper-IgM* (dia 302), sem CD40L, a IgM fica alta e IgG e IgA baixas; ele não teria feito anti-HEV IgG depois da IgM."
+      "A": "Na asplenia o risco maior é de germes encapsulados, sobretudo pneumococo, e o complemento fica normal nos dois testes.",
+      "B": "Na falta de C5 a C9 (dia 246), o complexo de ataque à membrana não se forma por nenhuma via, então CH50 e AH50 vêm baixos ou indetectáveis.",
+      "C": "Na hiper-IgM (dia 302), a IgG e a IgA quase somem; aqui as imunoglobulinas são normais e o anti-HEV trocou de IgM para IgG."
     },
     "macete": {
-      "frase": "*Neisseria repetida é furadeira sem broca*: faltou de C5 a C9, o MAC não fura",
-      "apoio": "Meningococo de novo não é azar, é furadeira sem broca. Bônus do dia 281: a hepatite E da viagem fez IgM e depois IgG, prova de que a troca de classe (o CD40L do dia 302) funciona. Com IgG, IgA e IgM normais e CH50 zerado, sobra o complemento terminal. Vacina meningocócica nele e nos irmãos na investigação.",
-      "fala": "Comi, mostrei, avisei. A furadeira é que veio sem broca."
+      "frase": "*CH50 conta a via clássica, AH50 conta a alternativa*: só o AH50 caiu, a falha é na alternativa",
+      "apoio": "Os dois testes terminam no C9. Os dois baixos: falta de C5 a C9. Só o CH50 baixo: falha no começo da via clássica (C1, C2 ou C4), mais ligada a pneumococo e lúpus. Só o AH50 baixo: properdina ou fatores B e D, com Neisseria de repetição; a properdina é a única ligada ao X.",
+      "fala": "Comi, mostrei, avisei. A caixa de ferramentas veio sem a peça da via alternativa."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 246, 281 e 302. Rapaz com a segunda meningite meningocócica em 3 anos, hepatite E na viagem do ano passado, imunoglobulinas normais e CH50 indetectável. Qual é o diagnóstico?",
+    "contexto": "Domingo de revisão: complemento terminal (dia 246), hepatite E (dia 281) e hiper-IgM (dia 302) voltaram, e um intruso entrou na loja de ferragens. Dois exames de complemento na vinheta, e o NBME sabe que você decorou só um deles.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +94,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Segunda meningite meningocócica, CH50 zerado e C3 e C4 normais: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Neisseria de repetição, CH50 normal e AH50 baixo: qual diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

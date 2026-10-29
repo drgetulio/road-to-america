@@ -14,12 +14,12 @@
   "explicacao_em": "2027-09-10",
   "tom": null,
   "gancho": "Dói no joelho, mas *a conta veio do andar de cima*",
-  "gancho_apoio": "Dor no joelho de adolescente é igual boleto: a origem está sempre em outro lugar.",
+  "gancho_apoio": "Rodízio de Quinta na festa do time: a goteira pinga no joelho, mas a água vem do andar de cima.",
   "imagem": {
     "arquivo": "dia-312.png",
-    "cena": "Garçom Espetinho numa festa de aniversário de um time de futebol de garotos olha para o teto: uma goteira pinga do andar de cima bem em cima de uma joelheira esquecida numa cadeira; na outra mão, um espeto de sobremesa com uma casquinha de sorvete ainda embrulhada no guardanapo; ao fundo, uma bola e um campinho; a plaquinha verde e vermelha no bolso do avental.",
+    "cena": "O Garçom Espetinho olha para o teto: uma goteira do andar de cima pinga bem em cima de uma joelheira de futebol esquecida numa cadeira. A plaquinha verde e vermelha está no bolso. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dói no joelho, mas a conta veio do andar de cima"
+    "alt": "A goteira do andar de cima pinga numa joelheira"
   },
   "imagem_macete": {
     "arquivo": "dia-312-macete.png",
@@ -32,8 +32,8 @@
     "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Legg-Calvé-Perthes disease",
-        "quiz": "Perthes"
+        "texto": "Legg-Calvé-Perthes disease of the hip",
+        "quiz": "Legg-Calvé-Perthes"
       },
       "B": {
         "texto": "Osgood-Schlatter disease",
@@ -41,11 +41,11 @@
       },
       "C": {
         "texto": "Slipped capital femoral epiphysis",
-        "quiz": "Epifisiólise (SCFE)"
+        "quiz": "SCFE"
       },
       "D": {
         "texto": "Transient synovitis",
-        "quiz": "Sinovite transitória"
+        "quiz": "Transient synovitis"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Adolescente de 13 anos, boleiro, com dor surda no joelho e claudicação há 4 semanas, sem febre. O exame do joelho é normal, mas ao fletir o quadril ele roda para fora sozinho. Qual é o diagnóstico?",
+    "contexto": "Rodízio de Quinta na festa do time: a goteira pinga na joelheira, mas a água vem do andar de cima. Quatro diagnósticos de quem manca, e a idade e o exame do quadril da vinheta separam os quatro. Quem examina só onde dói erra no plantão e no NBME.",
     "palavras_chave": [
-      "adolescent",
-      "knee pain",
+      "pediatric orthopedics",
       "limp",
-      "limited hip internal rotation"
+      "sports medicine",
+      "physical examination"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "13 anos, dor no joelho e quadril que roda para fora ao fletir: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "13 anos, dor no joelho e quadril que roda para fora ao fletir: qual?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

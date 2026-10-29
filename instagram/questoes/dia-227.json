@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-17",
   "tom": null,
-  "gancho": "Coração de bota e cianose na mamada: *um erro de obra, quatro defeitos*",
-  "gancho_apoio": "Por que os joelhos no peito ajudam? E de onde vem a bota?",
+  "gancho": "Quarta do Porquê na embriologia: *um erro de obra* lá no começo, e o Mito quer o responsável",
+  "gancho_apoio": "Embriologia cardíaca: você entende no vídeo em 3D e esquece quando fecha a aba.",
   "imagem": {
     "arquivo": "dia-227.png",
-    "cena": "Mito, de capacete de obra por cima do jaleco, agacha com os joelhos no peito para estudar a planta de uma casinha em forma de bota, com setinhas de manual de montagem em volta. Uma colher de pedreiro descansa ao lado, e o problema ainda não aparece.",
+    "cena": "Mito, de capacete de obra por cima do jaleco, estuda a planta de uma casinha, com setinhas de manual de montagem em volta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Mito, agachado, estuda a planta de uma casinha em forma de bota"
+    "alt": "Mito, de capacete de obra, estuda a planta de uma casinha"
   },
   "imagem_macete": {
     "arquivo": "dia-227-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Anterosuperior displacement of the infundibular septum",
-        "quiz": "Septo infundibular"
+        "quiz": "Infundibular septum shift"
       },
       "B": {
-        "texto": "Failure of the aorticopulmonary septum to spiral",
-        "quiz": "Septo não espiralou"
+        "texto": "Failure of the aorticopulmonary septum to spiral normally",
+        "quiz": "Septum failed to spiral"
       },
       "C": {
         "texto": "Failure of the truncus arteriosus to divide",
-        "quiz": "Tronco não dividiu"
+        "quiz": "Truncus failed to divide"
       },
       "D": {
         "texto": "Defective fusion of the endocardial cushions",
-        "quiz": "Coxim endocárdico"
+        "quiz": "Endocardial cushion defect"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Bebê de 4 meses com crises de choro e cianose na mamada, que melhoram com os joelhos dobrados no peito, sopro sistólico na borda esternal esquerda alta e coração em bota no raio X. De onde vêm os quatro defeitos?",
+    "contexto": "Quarta do Porquê na embriologia, com o Mito de capacete de obra. Um bebê de 4 meses e três achados descritos na vinheta. De onde vem o problema?",
     "palavras_chave": [
-      "cyanotic spells",
-      "knee-chest position",
-      "ejection murmur",
-      "boot-shaped heart"
+      "congenital heart disease",
+      "infant",
+      "embryology",
+      "Step 1 cardiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Coração em bota: qual erro embriológico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Coração em bota: qual erro embriológico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

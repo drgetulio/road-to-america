@@ -14,38 +14,38 @@
   "explicacao_em": "2027-03-17",
   "tom": null,
   "gancho": "O joelho virou *forno a lenha* às 3 da manhã. Qual é o seu primeiro movimento?",
-  "gancho_apoio": "Febre, derrame grande e dor a qualquer movimento. Dona Térmica já ouviu quatro planos no corredor.",
+  "gancho_apoio": "Dona Térmica já ouviu quatro planos no corredor, e todos com muita certeza.",
   "imagem": {
     "arquivo": "dia-135.png",
-    "cena": "Na copa do plantão, Dona Térmica, de prancheta, olha um joelho em forma de forno a lenha, vermelho de quente. Na bancada, lado a lado: uma seringa grande, um frasco de antibiótico, um ímã de ressonância e um potinho de comprimidos. Um relógio de parede sem números marca 3 horas.",
+    "cena": "Na copa do plantão, Dona Térmica, de prancheta, olha com cuidado um joelho simpático em forma de forno a lenha, vermelho de quente. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica diante de um joelho em forma de forno a lenha; na bancada, seringa, antibiótico, ímã e comprimidos."
+    "alt": "Dona Térmica, de prancheta, olha um joelho em forma de forno a lenha, vermelho de quente."
   },
   "imagem_macete": {
     "arquivo": "dia-135-macete.png",
-    "cena": "Dona Térmica usa a seringa grande pela portinha do forno e colhe um frasco de líquido turvo, que vai para o laboratório com etiqueta de perícia. Só depois o frasco de antibiótico entra em cena, e o forno esfria.",
+    "cena": "Callback: Dona Térmica usa uma seringa grande pela portinha do forno e colhe um frasco de líquido turvo com etiqueta de perícia; só depois um frasco de antibiótico entra em cena. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Dona Térmica colhe o líquido turvo com a seringa pela portinha do forno; depois entra o antibiótico e o forno esfria."
+    "alt": "Dona Térmica colhe líquido turvo do forno-joelho com uma seringa; o antibiótico entra só depois."
   },
   "questao": {
     "vinheta": "A 67-year-old man with type 2 diabetes has had a painful, swollen right knee for 1 day. Temperature is 38.6°C; BP is 132/80 mm Hg. The knee is warm and red with a large effusion, and any passive movement causes severe pain. Leukocyte count is 15,800/mm3. He has no prosthetic joints.",
     "pergunta": "Which is the most appropriate next step in management?",
     "alternativas": {
       "A": {
-        "texto": "Oral colchicine",
-        "quiz": "Colchicina oral"
+        "texto": "Oral colchicine and rest",
+        "quiz": "Oral colchicine"
       },
       "B": {
         "texto": "Empiric IV vancomycin and ceftriaxone",
-        "quiz": "Antibiótico IV já"
+        "quiz": "Empiric IV antibiotics"
       },
       "C": {
-        "texto": "MRI of the knee",
-        "quiz": "Ressonância"
+        "texto": "MRI of the right knee",
+        "quiz": "Knee MRI"
       },
       "D": {
-        "texto": "Arthrocentesis with fluid analysis and culture",
-        "quiz": "Artrocentese"
+        "texto": "Diagnostic arthrocentesis",
+        "quiz": "Arthrocentesis"
       }
     },
     "correta": "D"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: diabético de 67 anos com um joelho que esquentou da noite para o dia, febre de 38,6 e pressão normal. Quatro caminhos possíveis, e só um vem primeiro.",
+    "contexto": "Plantão de Terça: um joelho que esquentou da noite para o dia e quatro residentes com quatro planos diferentes. O resto está na vinheta. Só um movimento vem primeiro.",
     "palavras_chave": [
       "acute monoarthritis",
       "fever",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Joelho quente com derrame e febre, paciente estável: qual o 1º passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Joelho quente com derrame e febre, paciente estável: qual o 1º passo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -16,70 +16,68 @@
   ],
   "explicacao_em": "2027-02-01",
   "tom": "acolhedor",
-  "gancho": "Hanseníase tem cura: qual resposta imune *segura* o bacilo?",
-  "gancho_apoio": "Dia Mundial contra a Hanseníase. Três conceitos já vistos (dias 43, 64 e 85) e um intruso.",
+  "gancho": "Último domingo de janeiro: *informação* cura, e estigma não tem vez",
+  "gancho_apoio": "Domingo de revisão com três conceitos já vistos (dias 43, 64 e 85).",
   "imagem": {
     "arquivo": "dia-091.png",
-    "cena": "Macrô, sereno e de comanda no bolso, numa praça ao nascer do sol, segura três cartões ilustrados: uma fivela de metal ao lado de uma tigela de massa de pão, um bastonete com capa de cera brilhante e uma fita roxa de conscientização. Um vinil pequeno no canto.",
+    "cena": "Macrô, sereno e de comanda no bolso, está numa praça ao nascer do sol, ao lado de um banco com uma fita roxa de conscientização amarrada. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Macrô, numa praça ao amanhecer, segura três cartões: fivela com massa de pão, bastonete encerado e fita roxa de conscientização."
+    "alt": "Macrô, sereno, numa praça ao nascer do sol, ao lado de um banco com uma fita roxa de conscientização."
   },
   "imagem_macete": {
     "arquivo": "dia-091-macete.png",
-    "cena": "Callback: um linfócito Th1 de capacete entrega ao Macrô um envelope amarelo brilhante (IFN-gama), e os dois constroem um muro redondo e bem feito em volta de dois bacilos pequenos. Ao lado, uma cartela de comprimidos coloridos com um coração verde, sinal de que o tratamento cura.",
+    "cena": "Callback da praça: um linfócito T de capacete entrega ao Macrô um envelope amarelo brilhante, e os dois erguem um muro redondo e bem feito em volta de dois bacilos pequenos, ao lado de uma tigela de massa que cresceu devagar. A fita roxa continua no banco.",
     "foco": "50% 40%",
     "alt": "Um linfócito Th1 entrega um envelope amarelo ao Macrô, e os dois constroem um muro em volta de dois bacilos; ao lado, cartela de comprimidos e um coração verde."
   },
   "questao": {
-    "vinheta": "A 34-year-old man has two well-defined hypopigmented plaques on his forearm that have lost sensation to light touch and temperature. The nearby ulnar nerve is thickened. Skin biopsy shows well-formed granulomas with rare acid-fast bacilli.",
-    "pergunta": "Which immune response best explains the small number of bacilli?",
+    "vinheta": "A 34-year-old man has two well-defined, hypopigmented, anesthetic plaques on his forearm and a thickened ulnar nerve. Skin biopsy shows well-formed granulomas with rare acid-fast bacilli. An intradermal lepromin test produces a firm nodule at the injection site 4 weeks later.",
+    "pergunta": "This skin test reaction is mediated mainly by which mechanism?",
     "alternativas": {
       "A": {
-        "texto": "Delayed T-cell reaction to a nickel hapten",
-        "quiz": "Nickel hapten, T cells",
-        "dia": 43
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE on mast cells"
       },
       "B": {
-        "texto": "Cord factor-driven TNF release by macrophages",
-        "quiz": "Cord factor and TNF",
-        "dia": 64
+        "texto": "Immune complex deposition with complement",
+        "quiz": "Immune complexes"
       },
       "C": {
-        "texto": "Strong Th1 response with IFN-gamma",
-        "quiz": "Strong Th1, IFN-gamma",
-        "dia": 85
+        "texto": "Sensitized T cells activating macrophages",
+        "quiz": "Sensitized T cells",
+        "dia": 43
       },
       "D": {
-        "texto": "Th2-skewed response with IL-4 and IL-10",
-        "quiz": "Th2: IL-4 and IL-10"
+        "texto": "IgG antibodies against skin antigens",
+        "quiz": "IgG to skin antigens"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Forma tuberculoide: *Th1 forte*, poucos bacilos",
+    "titulo": "Teste tardio é linfócito T",
     "certa": [
-      "Poucas lesões bem delimitadas, perda de sensibilidade, nervo espessado e granulomas bem formados com raros bacilos álcool-ácido resistentes descrevem a hanseníase tuberculoide (paucibacilar). Nela, a resposta Th1 com IL-2 e IFN-gama ativa os macrófagos, que cercam o Mycobacterium leprae em granulomas e mantêm a carga bacilar baixa. A hanseníase tem cura com poliquimioterapia (multidrug therapy), oferecida de graça pelo SUS."
+      "Placas hipocrômicas anestésicas, nervo espessado e granulomas com raros bacilos são a hanseníase tuberculoide do dia 85. A lepromina é um extrato de *Mycobacterium leprae* injetado na pele; na forma tuberculoide, com resposta Th1 forte, ela produz um nódulo firme em 3 a 4 semanas (reação de Mitsuda). É uma *type IV hypersensitivity*, igual à dermatite de contato ao níquel do dia 43: linfócitos T sensibilizados reconhecem o antígeno, liberam IFN-gama e ativam macrófagos, sem anticorpo no meio. Na forma virchowiana, com resposta Th2, o teste é negativo. Ele ajuda a classificar a forma clínica, e não a fazer o diagnóstico; a hanseníase tem cura com a poliquimioterapia, gratuita pelo SUS."
     ],
     "termos": [
+      "lepromin test",
+      "type IV hypersensitivity",
       "tuberculoid leprosy",
-      "Th1",
-      "IFN-gamma",
-      "Mycobacterium leprae"
+      "Th1 response"
     ],
     "erradas": {
-      "A": "Dia 43: a reação tardia ao níquel é hipersensibilidade tipo IV na pele que tocou o metal, sem bacilo e sem nervo espessado.",
-      "B": "Dia 64: o cord factor é fator de virulência do Mycobacterium tuberculosis e não explica por que aqui há poucos bacilos.",
-      "D": "Intruso: a resposta Th2 com IL-4 e IL-10 é a da forma virchowiana (lepromatous), com muitos bacilos e lesões difusas."
+      "A": "IgE no mastócito é o tipo I, imediato, em minutos, como a anafilaxia; não forma nódulo depois de semanas.",
+      "B": "Imunocomplexo com complemento é o tipo III, como a doença do soro, e aparece em horas a dias, com vasculite.",
+      "D": "IgG contra antígeno fixo da pele é o tipo II, como no pênfigo, e não explica um nódulo granulomatoso no local da injeção."
     },
     "macete": {
-      "frase": "*T* de Tuberculoide, *T* de Th1: defesa forte, poucos bacilos",
-      "apoio": "Pegadinha de prova: O NBME contrasta as duas formas pela resposta imune: tuberculoide com Th1, IFN-gama e poucos bacilos, virchowiana com Th2 e muitos bacilos.",
-      "fala": "Granuloma bem feito segura o bacilo. E o tratamento completo cura."
+      "frase": "Teste de pele que *demora semanas* é fermentação natural: linfócito T, como no níquel. Th1 forte, teste positivo e poucos bacilos.",
+      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, lepromina, dermatite de contato e rejeição celular; todas tardias e sem anticorpo.",
+      "fala": "Granuloma firme, poucos bacilos e tratamento que cura."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo no Dia Mundial contra a Hanseníase: alergia ao níquel, tuberculose e hanseníase. A biópsia mostra granulomas bem formados e quase nenhum bacilo.",
+    "contexto": "Hoje é o Dia Mundial contra a Hanseníase. A doença tem cura, o tratamento é gratuito pelo SUS, e diagnóstico cedo evita sequela e estigma. No domingo de revisão, três conceitos já vistos voltam juntos (dias 43, 64 e 85), com tom de respeito.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Granulomas firmes e raros bacilos: qual resposta imune explica?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lepromina com nódulo firme em 4 semanas: qual mecanismo?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

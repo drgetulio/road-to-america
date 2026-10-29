@@ -21,66 +21,66 @@
   "gancho_apoio": "Três conceitos de genética já vistos (dias 50, 66 e 136) e um intruso.",
   "imagem": {
     "arquivo": "dia-140.png",
-    "cena": "Seu Allen, de avental navy, pendura com cuidado pares de meias coloridas trocadas num varal, símbolo do Dia Mundial da Síndrome de Down. Na mesinha ao lado, três envelopes fechados com desenhos simples de cromossomos e, num canto, um pequeno vinil.",
+    "cena": "Seu Allen, de avental navy, pendura com cuidado pares de meias coloridas trocadas num varal, símbolo do Dia Mundial da Síndrome de Down. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Allen pendura meias coloridas trocadas num varal; na mesinha, três envelopes com desenhos de cromossomos."
+    "alt": "Seu Allen pendura com cuidado meias coloridas trocadas num varal, símbolo do Dia Mundial da Síndrome de Down."
   },
   "imagem_macete": {
     "arquivo": "dia-140-macete.png",
-    "cena": "Os três envelopes se abrem e mostram cenas: um cromossomo extra que ficou junto na divisão do óvulo (não disjunção materna), dois vagões engatados (robertsoniana) e um pedacinho que falta (deleção do 22). O primeiro brilha em verde.",
+    "cena": "Callback: no varal, duas fileiras de meias, uma mais comprida e outra mais curta, saem do mesmo cesto, e Seu Allen confere as duas com carinho. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Três envelopes abertos: não disjunção, vagões engatados e um pedacinho faltando; o primeiro brilha em verde."
+    "alt": "Duas fileiras de meias, uma mais comprida e outra mais curta, saem do mesmo cesto; Seu Allen confere com carinho."
   },
   "questao": {
-    "vinheta": "A 26-year-old woman asks how her newborn son's Down syndrome occurred. The infant's karyotype is 47,XY,+21 in all cells examined. Both parents have normal karyotypes.",
+    "vinheta": "A 26-year-old woman asks how her son's Down syndrome occurred. Karyotyping of his blood lymphocytes shows 47,XY,+21 in 70% of cells and 46,XY in the remaining 30%. Both parents have normal karyotypes.",
     "pergunta": "Which mechanism most likely explains the infant's karyotype?",
     "alternativas": {
       "A": {
         "texto": "Robertsonian translocation from a parent",
-        "quiz": "Robertsoniana",
+        "quiz": "Robertsonian translocation",
         "dia": 136
       },
       "B": {
-        "texto": "Maternal meiotic nondisjunction",
-        "quiz": "Não disj. materna",
-        "dia": 66
+        "texto": "Postzygotic mitotic nondisjunction",
+        "quiz": "Mitotic nondisjunction"
       },
       "C": {
         "texto": "Microdeletion of 22q11.2",
-        "quiz": "Deleção 22q11.2",
+        "quiz": "22q11.2 deletion",
         "dia": 50
       },
       "D": {
-        "texto": "Postzygotic mitotic nondisjunction",
-        "quiz": "Mosaicismo"
+        "texto": "Maternal meiotic nondisjunction",
+        "quiz": "Maternal meiosis error",
+        "dia": 66
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "47,+21 com pais normais: *não disjunção materna*",
+    "titulo": "Duas linhagens de células: *mosaicismo*",
     "certa": [
-      "Cerca de 95% dos casos de síndrome de Down são trissomia livre (47,+21), e a maioria vem da não disjunção na meiose I da mãe, que fica mais frequente com a idade materna. Com os cariótipos dos pais normais, a recorrência é baixa. O mesmo cariótipo em todas as células afasta o mosaicismo."
+      "Quando parte das células tem 47,XY,+21 e parte tem 46,XY, o erro não aconteceu no óvulo nem no espermatozoide: aconteceu depois da fecundação, numa divisão mitótica do embrião (não disjunção mitótica pós-zigótica). Isso é mosaicismo. Uma parte dos mosaicos também nasce de um zigoto trissômico que perde o 21 extra em algumas células, mas a prova cobra o mosaicismo como erro mitótico depois da fecundação. O quadro clínico costuma ser mais variável, e o risco de recorrência para o casal costuma ser baixo."
     ],
     "termos": [
-      "trisomy 21",
-      "maternal meiotic nondisjunction",
-      "Robertsonian translocation",
-      "mosaicism"
+      "mosaicism",
+      "postzygotic mitotic nondisjunction",
+      "mosaic Down syndrome",
+      "two cell lines"
     ],
     "erradas": {
-      "A": "Dia 136: na translocação robertsoniana a criança tem 46 cromossomos e, muitas vezes, um dos pais é portador com 45.",
-      "C": "Dia 50: a microdeleção 22q11.2 é a síndrome de DiGeorge, sem cromossomo extra.",
-      "D": "Intruso: a não disjunção mitótica depois da fecundação gera mosaicismo, com mistura de células 46 e 47."
+      "A": "Dia 136: a translocação robertsoniana herdada daria 46 cromossomos com um cromossomo fundido em todas as células, e um dos pais seria portador; aqui os pais são normais e há duas linhagens.",
+      "C": "Dia 50: a microdeleção 22q11.2 é a síndrome de DiGeorge, com cardiopatia conotruncal, hipocalcemia e timo pequeno, sem trissomia.",
+      "D": "Dia 66: a não disjunção na meiose materna é a causa mais comum da trissomia 21, mas deixa o cromossomo extra em todas as células, não em 70%."
     },
     "macete": {
-      "frase": "Leia o cariótipo: *47 e pais normais* é não disjunção materna",
-      "apoio": "Errou alguma? Volte ao dia original (50, 66 ou 136) e refaça antes do próximo remix.",
-      "fala": "Cada número do cariótipo conta uma história diferente para a família. Vale ler com calma."
+      "frase": "*Duas* linhagens no cariótipo: o erro foi *depois* da fecundação",
+      "apoio": "Pegadinha de prova: O NBME muda só a porcentagem: 47,+21 em todas as células com pais normais é não disjunção meiótica, quase sempre materna; duas linhagens de células é mosaicismo; 46 cromossomos com um cromossomo fundido é translocação robertsoniana.",
+      "fala": "Cada número do cariótipo conta uma história diferente para a família. Hoje, a história tem duas linhagens."
     }
   },
   "legenda": {
-    "contexto": "Hoje, 21/3, é o Dia Mundial da Síndrome de Down. As meias trocadas da imagem são o símbolo da data, que celebra a diversidade. No remix, três conceitos de genética que caem juntos no aconselhamento.",
+    "contexto": "Hoje, 21/3, é o Dia Mundial da Síndrome de Down. As meias trocadas da imagem são o símbolo da data, que celebra a diversidade. No remix, três conceitos de genética que caem juntos no aconselhamento, e um cariótipo na vinheta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +94,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cariótipo 47,XY,+21 em todas as células e pais normais: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Down com 70% das células 47,XY,+21 e pais normais: qual mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

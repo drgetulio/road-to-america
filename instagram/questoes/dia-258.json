@@ -7,24 +7,25 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "EMTALA",
   "conceito": "EMTALA: screen and stabilize emergencies regardless of insurance before any transfer",
-  "personagem": "Viés",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-18",
   "tom": null,
-  "gancho": "Dor no peito no pronto-socorro americano e a pergunta: *débito ou crédito?*",
-  "gancho_apoio": "Sem plano de saúde, e alguém sugere o hospital do condado. O que a lei manda?",
+  "gancho": "Dor no peito no pronto-socorro americano e a pergunta da recepção: *débito ou crédito?*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-258.png",
-    "cena": "Na entrada de um pronto-socorro com catraca de estádio, uma carteira de bolso de olhos grandes, sem nenhum cartão dentro, encara a catraca, aflita. Atrás dela, o Viés, meio escondido atrás de uma tabela 2x2 em branco pendurada na parede, estende uma maquininha de cartão com sorriso de vendedor. Ao fundo, uma ambulância estacionada, de porta traseira aberta, como quem espera alguém para levar a outro hospital.",
+    "cena": "Na entrada de um pronto-socorro com catraca de estádio, Dona Bússola segura o caderninho e olha uma maquininha de cartão em cima do balcão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés oferece a maquininha na catraca do pronto-socorro"
+    "alt": "Dona Bússola na catraca do pronto-socorro, diante de uma maquininha de cartão"
   },
   "imagem_macete": {
     "arquivo": "dia-258-macete.png",
-    "cena": "A catraca está escancarada e um estetoscópio simpático dá as boas-vindas. Logo depois da entrada, um cinto de segurança afivelado envolve um coração sorridente; só depois disso a ambulância acende as luzes, pronta para uma transferência se for preciso. A maquininha do Viés foi parar no lixo, e ele sai de fininho.",
+    "cena": "Callback: a catraca está escancarada e um cinto de segurança afivelado envolve um coração sorridente; Dona Bússola, de ponteiro firme, deixa a maquininha de cartão de lado. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "EMTALA: avaliar e estabilizar antes de falar de pagamento"
+    "alt": "A catraca aberta e um coração de cinto afivelado; a maquininha fica de lado"
   },
   "questao": {
     "vinheta": "A 52-year-old uninsured man arrives at the emergency department of a private hospital with 1 hour of crushing chest pain. While he waits in triage, a registration clerk suggests sending him to the county hospital 15 minutes away, which accepts uninsured patients. He is alert, and his vital signs are stable.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Arrange transfer to the county hospital",
-        "quiz": "Transferir já"
+        "quiz": "Transfer to county"
       },
       "B": {
-        "texto": "Perform a medical screening examination and stabilize him",
-        "quiz": "Triar e estabilizar"
+        "texto": "Medical screening exam and stabilization",
+        "quiz": "Screen and stabilize"
       },
       "C": {
         "texto": "Obtain a payment guarantee before evaluation",
-        "quiz": "Pedir pagamento"
+        "quiz": "Payment guarantee first"
       },
       "D": {
         "texto": "Discharge him with a cardiology referral",
-        "quiz": "Alta + ambulatório"
+        "quiz": "Discharge + referral"
       }
     },
     "correta": "B"
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "*Catraca livre*: triagem e estabilização *antes* de falar do plano",
       "apoio": "Pela EMTALA, todo pronto-socorro de hospital que recebe Medicare examina e estabiliza quem chega, com ou sem seguro. Primeiro o estetoscópio (avaliação), depois o cinto (estabilização) e só então a ambulância, se a transferência for necessária e aceita. A maquininha do Viés é o viés financeiro: fica para depois.",
-      "fala": "Se você não randomizou, eu entrei. Se perguntou do plano antes, também."
+      "fala": "Meu norte é o paciente. No inglês da prova, \"county hospital\" nunca vem antes de \"stabilize\"."
     }
   },
   "legenda": {
-    "contexto": "Dor torácica, sem seguro, e a sugestão de mandar para outro hospital. O que a lei americana manda fazer?",
+    "contexto": "Sábado Sem Viés com a Dona Bússola, num pronto-socorro dos Estados Unidos. A vinheta conta quem chegou, com que queixa e o que a recepção sugeriu. O que fazer?",
     "palavras_chave": [
-      "uninsured patient",
+      "emergency department",
+      "US health law",
       "chest pain",
-      "triage",
-      "private hospital"
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem seguro e com dor no peito: o que a lei americana manda fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem seguro e com dor no peito: o que a lei americana manda fazer?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

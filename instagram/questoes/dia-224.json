@@ -17,70 +17,69 @@
   ],
   "explicacao_em": "2027-06-14",
   "tom": null,
-  "gancho": "41,3°C depois da corrida: o recruta virou *chaleira*, e a equipe tem minutos para escolher",
-  "gancho_apoio": null,
+  "gancho": "Linha de chegada da maratona e *a Dona Térmica de plantão* na barraca de hidratação",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 100, 191 e 219) e um intruso.",
   "imagem": {
     "arquivo": "dia-224.png",
-    "cena": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma maleta de primeiros socorros está aberta no chão.",
+    "cena": "Linha de chegada de uma maratona sob sol forte; Dona Térmica, ao lado da barraca de hidratação, segura um termômetro de rua e uma garrafinha de água. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica na pista de corrida diante de um termômetro caído no sol"
+    "alt": "Dona Térmica, na barraca de hidratação da maratona, segura um termômetro e uma garrafinha"
   },
   "imagem_macete": {
     "arquivo": "dia-224-macete.png",
-    "cena": "Dona Térmica enche a banheira azul de gelo, e o personagem-termômetro senta dentro, aliviado, com a coluna vermelha descendo. A ambulância espera com calma, o reboque da tomografia fica estacionado e dois frasquinhos de remédio ficam na prateleira, sem uso.",
+    "cena": "Callback: Dona Térmica deixa a banheira de gelo de lado e entrega uma seringa pequena de salina concentrada, com três pitadas de sal desenhadas; o termômetro da barraca marca só um pouco acima do normal. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Insolação por esforço: esfria primeiro, transporta depois"
+    "alt": "Dona Térmica deixa a banheira de lado e entrega a seringa de salina concentrada"
   },
   "questao": {
-    "vinheta": "A 19-year-old military recruit collapses during a 10-km run on a hot, humid afternoon. He is confused and combative. Rectal temperature is 41.3°C (106.3°F), pulse is 140/min, and blood pressure is 96/58 mm Hg. He has no muscle rigidity and takes no medications. Trained medical staff are at the scene.",
-    "pergunta": "Which is the most appropriate next step in management?",
+    "vinheta": "A 28-year-old woman collapses after a 5-hour marathon, during which she drank water at every station. She is confused, vomits, and has a brief generalized seizure. Her rectal temperature is 38.4°C (101.1°F); BP is 118/74 mm Hg. Serum sodium is 121 mEq/L.",
+    "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Cold-water immersion at the scene",
-        "quiz": "Imersão em água gelada",
-        "dia": 100
+        "texto": "100-mL bolus of 3% saline",
+        "quiz": "3% saline, 100 mL"
       },
       "B": {
         "texto": "Noncontrast CT of the head",
-        "quiz": "TC de crânio",
+        "quiz": "Head CT first",
         "dia": 191
       },
       "C": {
-        "texto": "Intravenous dantrolene",
-        "quiz": "Dantroleno IV"
+        "texto": "Cold-water immersion at the scene",
+        "quiz": "Cold-water immersion",
+        "dia": 100
       },
       "D": {
-        "texto": "Intravenous methylprednisolone",
-        "quiz": "Metilprednisolona IV",
-        "dia": 219
+        "texto": "2-L bolus of 0.9% saline",
+        "quiz": "Normal saline, 2 L"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Na insolação, *esfria primeiro e transporta depois*",
+    "titulo": "Maratona, muita água e convulsão: *salina 3% em bolus*",
     "certa": [
-      "Dia 100: confusão depois de esforço no calor, com temperatura retal acima de 40°C, é *exertional heat stroke*. A conduta é *cold-water immersion* no local, antes do transporte, até cerca de 38,6 a 39°C, com a temperatura retal monitorada. *Cool first, transport second*: antitérmico não ajuda, porque o termostato do hipotálamo não mudou; o corpo é que não consegue perder calor."
+      "Confusão e convulsão depois de uma maratona longa, com água em todo posto e sódio de 121, é hiponatremia associada ao exercício (*exercise-associated hyponatremia*), o intruso de hoje. Com sintoma neurológico grave, a conduta é *100 mL de salina a 3% em bolus*, que pode ser repetido até duas vezes, a cada 10 minutos, se o quadro não melhorar; a meta é subir o sódio em 4 a 6 mEq/L e tirar o cérebro do inchaço. A temperatura de 38,4°C não é a da insolação."
     ],
     "termos": [
-      "exertional heat stroke",
-      "cold-water immersion",
-      "cool first, transport second",
-      "rectal temperature"
+      "exercise-associated hyponatremia",
+      "3% hypertonic saline bolus",
+      "cerebral edema",
+      "exertional heat stroke"
     ],
     "erradas": {
-      "B": "Dia 191: a TC de crânio abre o roteiro da cefaleia em trovoada. Aqui a confusão tem causa à vista, e cada minuto acima de 40°C aumenta a lesão de órgãos; imagem, se precisar, vem depois do resfriamento.",
-      "C": "Intruso: dantroleno trata a hipertermia maligna (dia 201), com gatilho anestésico, rigidez e CO2 alto; na insolação por esforço não tem benefício.",
-      "D": "Dia 219: corticoide em dose alta antes da biópsia é a regra da arterite de células gigantes, não da insolação."
+      "B": "Dia 191: a TC de crânio é a regra da cefaleia em trovoada. Aqui a convulsão tem causa na mesa (sódio de 121) e o tratamento não espera a imagem; a TC fica para depois, se o quadro não fizer sentido.",
+      "C": "Dia 100: imersão em água gelada é a conduta da insolação por esforço, com temperatura retal acima de 40°C e disfunção do sistema nervoso. Com 38,4°C, o problema não é o calor.",
+      "D": "Fora dos dias revisados: soro fisiológico em grande volume piora a hiponatremia dilucional, porque o ADH ainda está alto e o rim segura a água livre."
     },
     "macete": {
-      "frase": "*Esfria primeiro, transporta depois*: na insolação por esforço, banheira de água gelada no local. Quem guarda calor é garrafa térmica, não atleta.",
-      "apoio": "O NBME oferece transporte imediato, tomografia ou antitérmico como opção tentadora; com temperatura retal acima de 40°C e confusão depois de esforço, a resposta é imersão em água fria na hora. Dantroleno é da hipertermia maligna.",
-      "fala": "Já vi esse caso às 3 da manhã. E às 3 da tarde, no sol: gelo primeiro."
+      "frase": "Corredor confuso: *termômetro antes da banheira*, sódio antes da tomografia. Abaixo de 40°C e com sódio de 121, quem resolve é o *bolus de salina 3%*.",
+      "apoio": "Pegadinha de prova: o NBME coloca o corredor, o calor e a banheira de gelo na sua frente. Confira a temperatura e o sódio antes: muita água com convulsão pede 100 mL de salina 3%. Bônus do dia 219: na arterite de células gigantes com risco visual, corticoide antes da biópsia.",
+      "fala": "Já vi esse caso às 3 da manhã. E às 3 da tarde, depois da maratona: termômetro primeiro, banheira só se precisar."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix com a Dona Térmica: três conceitos de Step 2 CK (dias 100, 191 e 219) e um intruso. Um recruta desaba numa corrida no calor, confuso, com 41,3°C no termômetro retal. O que fazer primeiro?",
+    "contexto": "Domingo de Remix com a Dona Térmica, que entende de temperatura como ninguém. Uma corredora desaba depois da prova, e a vinheta traz o termômetro, a pressão e um exame de sangue. Leia todos os números antes de votar.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -98,9 +97,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "41,3°C após corrida e confusão: o que fazer já?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Maratona, muita água, sódio 121 e convulsão: o que fazer?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

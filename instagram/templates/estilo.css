@@ -354,3 +354,81 @@ ol, ul { list-style: none; }
 .tela:has(> .cvv) .resposta { bottom: 90px; }
 .story:has(> .cvv) .story__pe { display: none; }
 .story .cvv { top: 1722px; bottom: auto; border-radius: 0; }
+
+/* ---------- rodada 3: recompensa primeiro, CTA com palavra-chave, enquete e desafio ---------- */
+/* capa do gabarito: a questão de hoje anunciada no pé do cartão */
+.resposta__hoje { margin-top: 18px; padding: 16px 20px 14px; background: var(--navy); color: #fff; border-radius: 12px; font-size: 32px; line-height: 1.22; font-weight: 500; max-height: 150px; overflow: hidden; }
+.resposta__hoje b { display: block; font-family: var(--mono); font-weight: 600; font-size: 19px; letter-spacing: 0.16em; color: var(--amarelo); margin-bottom: 6px; }
+.resposta__hoje em { color: var(--amarelo); font-weight: 600; }
+.e1 .resposta { padding-bottom: 26px; }
+.e1 .resposta__txt { font-size: 88px; max-height: 254px; }
+
+/* macete do modo enxuto (sem imagem nova) */
+.e4--enxuto .e4__corpo { font-size: 104px; }
+.e4--enxuto .persona { margin-bottom: 40px; }
+.e4--enxuto .persona .persona__av { width: 150px; height: 150px; }
+.e4--enxuto .persona .persona__av .avatar { width: 116px; height: 116px; }
+
+/* CTA do dia */
+.e5--palavra .e5__titulo { font-size: 112px; padding-top: 48px; }
+.e5--palavra .e5__sub { font-size: 36px; padding-top: 16px; }
+.e5--palavra .passagem { margin-top: 30px; }
+.e5--palavra .passagem__cab { border-bottom: 0; padding-bottom: 10px; }
+.e5--palavra .e5__lista { padding-top: 30px; gap: 16px; }
+.e5--palavra .e5__lista li { font-size: 32px; }
+.comente { margin: 34px var(--margem) 0; position: relative; z-index: 1; }
+.comente__rot { font-family: var(--mono); font-weight: 600; font-size: 22px; letter-spacing: 0.18em; color: var(--vermelho); }
+.comente__caixa { margin-top: 10px; display: flex; align-items: center; justify-content: space-between; background: #fff; border-radius: 60px; padding: 14px 18px 14px 44px; box-shadow: 0 0 0 5px var(--amarelo), 0 24px 40px -22px rgba(15,39,71,0.6); }
+.comente__caixa b { font-family: var(--display); font-weight: 800; font-size: 104px; line-height: 1; color: var(--vermelho); letter-spacing: 0.01em; }
+.comente__env { width: 104px; height: 104px; border-radius: 50%; background: var(--verde); color: #fff; display: grid; place-items: center; flex: none; }
+.comente__env .ico { width: 50px; height: 50px; }
+.comente__nota { display: block; margin-top: 12px; font-size: 26px; font-weight: 500; color: var(--tinta-3); }
+.e5--acao .e5__titulo { padding-top: 120px; }
+.e5--acao .e5__sub { font-size: 44px; padding-top: 30px; }
+.e5--acao .e5__lista { padding-top: 90px; gap: 34px; }
+.e5--acao .e5__lista li { font-size: 40px; }
+.e5--acao .e5__lista .ico { width: 64px; height: 64px; }
+
+/* story da enquete: alternativas curtas no cartão */
+.story__alts { margin-top: 0.6em; display: grid; grid-template-columns: 1fr 1fr; gap: 0.3em 0.8em; font-size: 0.86em; font-weight: 600; color: var(--navy); }
+.story__alts li { display: flex; gap: 0.4em; align-items: baseline; line-height: 1.2; }
+.story__alts b { font-family: var(--display); font-weight: 800; color: var(--vermelho); }
+
+/* story do gabarito de ontem (D+1) */
+.story--gab { background: var(--navy-2); }
+.story--gab .story__rot b { font-size: 44px; }
+.enq { position: absolute; left: 50px; right: 50px; top: 430px; background: var(--papel); color: var(--tinta); border-radius: 22px; border-top: 14px solid var(--vermelho); padding: 34px 44px 30px; box-shadow: 0 40px 70px -30px rgba(0,0,0,0.7); }
+.enq__rot { font-family: var(--mono); font-weight: 600; font-size: 24px; letter-spacing: 0.16em; color: var(--vermelho); }
+.enq__lista { margin-top: 22px; display: flex; flex-direction: column; gap: 18px; }
+.enq__lista li { display: grid; grid-template-columns: 64px 1fr 120px; align-items: center; gap: 18px; }
+.enq__lista b { font-family: var(--display); font-weight: 800; font-size: 64px; line-height: 1; color: var(--navy); }
+.enq__barra { height: 54px; border-radius: 12px; border: 4px dashed var(--linha-forte); background: rgba(15,39,71,0.04); }
+.enq__pct { font-family: var(--display); font-weight: 800; font-size: 56px; text-align: right; color: var(--tinta-3); }
+.enq__guia { margin-top: 18px; font-size: 26px; color: var(--vermelho); font-weight: 600; }
+.chance { position: absolute; left: 70px; right: 70px; top: 1010px; height: 240px; display: flex; flex-direction: column; }
+.chance__rot { font-family: var(--mono); font-weight: 600; font-size: 26px; letter-spacing: 0.16em; color: var(--amarelo); }
+.chance__q { margin-top: 12px; flex: 1; min-height: 0; overflow: hidden; font-family: var(--display); font-weight: 800; font-size: 64px; line-height: 1; text-transform: uppercase; text-wrap: balance; }
+.chance__q em { color: var(--amarelo); }
+
+/* story do desafio e cartela */
+.story--des, .story--cartela { background: var(--navy); }
+.des { position: absolute; left: 50px; right: 50px; top: 430px; background: var(--papel); color: var(--tinta); border-radius: 22px; border-top: 14px solid var(--verde); padding: 40px 44px 36px; box-shadow: 0 40px 70px -30px rgba(0,0,0,0.7); }
+.des__rot { font-family: var(--mono); font-weight: 600; font-size: 22px; letter-spacing: 0.14em; color: var(--verde); }
+.des__dia { font-family: var(--display); font-weight: 800; font-size: 150px; line-height: 0.9; color: var(--navy); margin-top: 14px; }
+.des__dia em { color: var(--vermelho); }
+.des__titulo { font-family: var(--display); font-weight: 800; font-size: 92px; line-height: 0.92; color: var(--navy); text-transform: uppercase; margin-bottom: 18px; }
+.des__grade { margin-top: 30px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.des__grade i { font-style: normal; aspect-ratio: 1; border-radius: 12px; border: 4px solid var(--linha-forte); display: grid; place-items: center; font-family: var(--display); font-weight: 800; font-size: 40px; color: var(--tinta-3); }
+.des__grade i.feito { background: var(--verde); border-color: var(--verde); color: #fff; }
+.des__grade i.hoje { border-color: var(--vermelho); color: var(--vermelho); box-shadow: 0 0 0 4px rgba(176,36,58,0.25); }
+.des__grade--cartela i { display: flex; flex-direction: column; gap: 2px; }
+.des__grade--cartela b { font-size: 46px; line-height: 1; color: var(--navy); }
+.des__grade--cartela small { font-family: var(--mono); font-weight: 600; font-size: 17px; color: var(--tinta-3); }
+.des__passos { margin-top: 30px; display: flex; flex-direction: column; gap: 14px; font-size: 32px; line-height: 1.25; font-weight: 500; }
+.des__passos li { display: flex; gap: 16px; align-items: baseline; }
+.des__passos b { font-family: var(--display); font-weight: 800; font-size: 40px; color: var(--vermelho); }
+.des__leg { margin-top: 26px; display: flex; align-items: center; gap: 14px; font-size: 30px; font-weight: 500; }
+.des__leg span { width: 34px; height: 34px; border-radius: 8px; display: inline-block; }
+.des__leg .v { background: var(--verde); }
+.des__leg .a { background: var(--amarelo); margin-left: 24px; }
+.des__nota { margin-top: 18px; font-size: 26px; color: var(--tinta-3); }

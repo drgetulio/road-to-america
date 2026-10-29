@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Decreased / Decreased / Decreased",
-        "quiz": "C↓ VR↓ VEF1↓"
+        "quiz": "C↓ RV↓ FEV1↓"
       },
       "B": {
         "texto": "Increased / Increased / Decreased",
-        "quiz": "C↑ VR↑ VEF1↓"
+        "quiz": "C↑ RV↑ FEV1↓"
       },
       "C": {
         "texto": "Increased / Decreased / Increased",
-        "quiz": "C↑ VR↓ VEF1↑"
+        "quiz": "C↑ RV↓ FEV1↑"
       },
       "D": {
         "texto": "Decreased / Increased / Unchanged",
-        "quiz": "C↓ VR↑ VEF1 igual"
+        "quiz": "C↓ RV↑ FEV1 same"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Senhora de 80 anos, nunca fumou, sem sintomas, faz espirometria antes de operar o joelho. Só o tempo passou pelos pulmões dela. O que muda na complacência, no volume residual e no FEV1?",
+    "contexto": "Quarta do Porquê no arraiá: o Mito comparou duas sanfonas e virou especialista em fole. Pergunta de três colunas, do tipo que o NBME adora porque basta errar uma seta para errar tudo. Leia cada uma com calma.",
     "palavras_chave": [
-      "80-year-old",
-      "never smoker",
-      "pulmonary function tests",
-      "normal aging"
+      "pulmonary physiology",
+      "older adult",
+      "spirometry",
+      "preoperative evaluation"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pulmão aos 80 anos: complacência, volume residual e FEV1?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pulmão aos 80 anos: complacência, volume residual e FEV1?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

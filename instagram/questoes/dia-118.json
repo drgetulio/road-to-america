@@ -8,6 +8,7 @@
   "topico": "Violência contra a pessoa idosa",
   "conceito": "Suspected elder abuse: report to Adult Protective Services",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-28",
@@ -16,15 +17,15 @@
   "gancho_apoio": "Uma senhora de 82 anos, um cuidador e sinais que não combinam.",
   "imagem": {
     "arquivo": "dia-118.png",
-    "cena": "Uma varanda tranquila no fim da tarde, com uma cadeira de balanço vazia, uma xícara de chá na mesinha e uma única janela acesa. Ao lado do portão, uma placa de trânsito redonda com o desenho de uma balança de tribunal, e um guarda-chuva encostado na parede.",
+    "cena": "Numa varanda tranquila no fim da tarde, a Dona Bússola, serena, está ao lado de uma cadeira de balanço vazia, com uma xícara de chá na mesinha. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Varanda com cadeira de balanço vazia, xícara de chá, janela acesa e uma placa com uma balança."
+    "alt": "Dona Bússola, serena, numa varanda ao lado de uma cadeira de balanço vazia e de uma xícara de chá."
   },
   "imagem_macete": {
     "arquivo": "dia-118-macete.png",
-    "cena": "Callback: um envelope voa da varanda até um prédio firme com um escudo verde na fachada e luz quente nas janelas. A cadeira de balanço agora tem uma manta macia e um vaso de flores ao lado, e o guarda-chuva está aberto, protegendo a varanda.",
+    "cena": "Um envelope voa da varanda até um prédio firme com um escudo verde na fachada; a cadeira de balanço agora tem uma manta macia, e o ponteiro da Dona Bússola aponta para o prédio. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Envelope voando até um prédio com escudo verde; a cadeira de balanço com manta e flores, protegida pelo guarda-chuva aberto."
+    "alt": "Um envelope voa até um prédio com escudo verde; a cadeira de balanço ganhou uma manta macia."
   },
   "questao": {
     "vinheta": "An 82-year-old woman with mild cognitive impairment visits with her son, her caregiver. She has bruises of different ages on both upper arms, has lost 5 kg in 3 months and has had no medication refills for 2 months. Alone, she quietly says she is afraid of upsetting her son.",
@@ -35,7 +36,7 @@
         "quiz": "Confront the son"
       },
       "B": {
-        "texto": "Report the suspicion to Adult Protective Services",
+        "texto": "Report to Adult Protective Services",
         "quiz": "Report to APS"
       },
       "C": {
@@ -67,7 +68,7 @@
     "macete": {
       "frase": "*Pele, peso e pílula*: suspeitou, notificou",
       "apoio": "Pegadinha de prova: No NBME, a suspeita razoável já basta para notificar; confrontar o cuidador, pedir permissão antes e esperar novas lesões são iscas.",
-      "fala": null
+      "fala": "Meu norte é o paciente. Suspeita razoável já basta para notificar, e notificar é proteger."
     }
   },
   "legenda": {
@@ -87,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Hematomas, perda de peso e medo do filho: qual é a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hematomas, perda de peso e medo do filho: qual é a conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

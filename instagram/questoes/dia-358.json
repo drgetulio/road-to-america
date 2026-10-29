@@ -7,22 +7,22 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Deficiência seletiva de IgA",
   "conceito": "Selective IgA deficiency: anti-IgA antibodies cause anaphylaxis to standard blood products",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-26",
   "tom": null,
-  "gancho": "Sem porteiro nas mucosas, *a IgA do doador virou penetra*",
-  "gancho_apoio": "Anafilaxia minutos depois de começar o concentrado de hemácias. E na próxima vez?",
+  "gancho": "A bolsa de sangue chegou *e a Capitã Plaqueta apitou falta*",
+  "gancho_apoio": "Bicho de Segunda no banco de sangue: quatro jeitos de preparar a bolsa, e só um serve para ele.",
   "imagem": {
     "arquivo": "dia-358.png",
-    "cena": "Macrô de porteiro na entrada de uma festa, com a comanda em branco no bolso, ao lado de uma porta em forma de mucosa com o banquinho do porteiro vazio; um entregador traz uma encomenda lacrada com laço de presente; numa prancheta, uma lista de convidados em branco.",
+    "cena": "A Capitã Plaqueta, de colete refletivo, apita e para na porta de um banco de sangue uma bolsa de sangue de desenho animado com laço de presente. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Sem porteiro nas mucosas, a IgA do doador virou penetra"
+    "alt": "Capitã Plaqueta apita e para uma bolsa de sangue com laço de presente na porta do banco de sangue."
   },
   "imagem_macete": {
     "arquivo": "dia-358-macete.png",
-    "cena": "Callback: o Macrô coloca a encomenda numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a encomenda sai limpa e brilhante, e um cone vermelho fica ao lado de outra caixa ainda sem lavar.",
+    "cena": "Callback: a Capitã Plaqueta coloca a bolsa de sangue numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a bolsa sai limpa e brilhante, e um cone vermelho fica ao lado de outra bolsa ainda sem lavar.",
     "foco": "50% 45%",
     "alt": "Deficiência de IgA: washed ou de doador sem IgA"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Irradiated red blood cells",
-        "quiz": "Irradiado"
+        "quiz": "Irradiated RBCs"
       },
       "B": {
         "texto": "Leukoreduced red blood cells",
-        "quiz": "Leucorreduzido"
+        "quiz": "Leukoreduced RBCs"
       },
       "C": {
-        "texto": "Washed or IgA-deficient donor products",
-        "quiz": "Lavado ou sem IgA"
+        "texto": "Washed red blood cells",
+        "quiz": "Washed RBCs"
       },
       "D": {
         "texto": "CMV-negative red blood cells",
-        "quiz": "CMV negativo"
+        "quiz": "CMV-negative RBCs"
       }
     },
     "correta": "C"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*Roupa emprestada a gente lava antes*: sangue para quem não tem IgA também",
       "apoio": "Quem nunca teve IgA pode ter anticorpos contra a IgA do doador e reage como a um penetra: anafilaxia minutos depois de começar. Lavar o concentrado tira o plasma do doador; outra opção é sangue de doador sem IgA. Irradiar é contra doença do enxerto, leucorreduzir é contra febre e CMV, e CMV negativo é para imunossuprimido.",
-      "fala": "Penetra eu reconheço."
+      "fala": "Parou, colou, coagulou. Bolsa sem lavar não passa no meu cruzamento."
     }
   },
   "legenda": {
-    "contexto": "Minutos depois de começar a transfusão, pressão caindo, chiado e urticária pelo corpo. Ele tem sinusites de repetição e doença celíaca, e a IgA veio indetectável. Como transfundir da próxima vez?",
+    "contexto": "Bicho de Segunda no banco de sangue: a Capitã Plaqueta confere a bolsa, e cada máquina da prateleira prepara o sangue de um jeito. A vinheta conta o que aconteceu na primeira transfusão e traz um exame que explica tudo.",
     "palavras_chave": [
-      "transfusion reaction",
-      "urticaria and wheezing",
-      "recurrent sinusitis",
-      "celiac disease"
+      "transfusion medicine",
+      "immunology",
+      "surgery",
+      "blood products"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IgA indetectável e anafilaxia na transfusão: como transfundir da próxima vez?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IgA indetectável e anafilaxia na transfusão: como transfundir da próxima vez?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

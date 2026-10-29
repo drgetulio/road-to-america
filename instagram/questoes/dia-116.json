@@ -14,18 +14,18 @@
   "explicacao_em": "2027-02-26",
   "tom": null,
   "gancho": "O garçom chegou com o *espeto doce* às 26 semanas",
-  "gancho_apoio": "Gestante de baixo risco, teste de 50 g alterado e um teste de 3 horas.",
+  "gancho_apoio": "Gestante de baixo risco, um teste de 50 g alterado e um de 3 horas. O NBME adora contar sininho; você adora contar quantas questões faltam no bloco.",
   "imagem": {
     "arquivo": "dia-116.png",
-    "cena": "Um garçom de rodízio chega à mesa com um espeto de abacaxi assado com canela. Na parede, quatro sininhos de cobre enfileirados, todos parados. A plaquinha redonda verde e vermelha está em pé na mesa.",
+    "cena": "Garçom Espetinho chega à mesa com um espeto de abacaxi assado com canela; na parede, quatro sininhos de cobre enfileirados, todos parados. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom com espeto de abacaxi com canela; quatro sininhos parados na parede."
+    "alt": "Garçom Espetinho com um espeto de abacaxi com canela; quatro sininhos parados na parede."
   },
   "imagem_macete": {
     "arquivo": "dia-116-macete.png",
-    "cena": "Callback: três dos quatro sininhos da parede agora tocam com ondinhas de som, e só um fica parado. Na mesa, um personagem redondo e achatado em forma de placenta segura um pequeno escudo que impede chaves douradas (a insulina) de abrir as portinhas das células. A plaquinha está virada para o verde.",
+    "cena": "Callback: três dos quatro sininhos da parede tocam com ondinhas de som e só um fica parado, enquanto um personagem redondo em forma de placenta segura um escudo que impede chaves douradas de abrir as portinhas das células. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Três sininhos tocando; um personagem placenta segura um escudo diante das chaves douradas da insulina."
+    "alt": "Três dos quatro sininhos tocam; um personagem-placenta bloqueia com um escudo as chaves douradas."
   },
   "questao": {
     "vinheta": "A 29-year-old woman, gravida 1, at 26 weeks' gestation has had an uncomplicated pregnancy. Her prepregnancy BMI was 23 kg/m2. Her 50-g, 1-hour glucose screen is 152 mg/dL. On the follow-up 100-g, 3-hour test, plasma glucose is: fasting 98, 1 hour 192, 2 hours 168 and 3 hours 130 mg/dL.",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Teste de 100 g com três valores altos às 26 semanas: diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Teste de 100 g com três valores altos às 26 semanas: diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

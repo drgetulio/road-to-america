@@ -44,11 +44,12 @@ SUPABASE_URL="https://SEU-PROJETO.supabase.co" SUPABASE_SERVICE_ROLE_KEY="cole-a
 
 O que a ferramenta faz:
 
-- lê todos os `*.json` de `banco-privado/` (subpastas incluídas, menos `ferramentas/`,
+- lê todos os `*.json` de `banco-privado/` (subpastas incluídas, menos `ferramentas/`, `auditoria/`,
   `versoes/` e `fontes-*/`), exceto `manifest.json`, `formularios.json`, `referencia-*.json` e
   `blueprint-*.json`; arquivo que não é lista de itens é ignorado e aparece no relatório;
-- completa cada item com a especificação de mesmo `spec_id` dos blueprints
-  (`banco-privado/blueprint-step1.json` e `blueprint-step2ck.json`): disciplinas
+- completa cada item com a especificação de mesmo `spec_id` dos blueprints (todo
+  `banco-privado/blueprint-*.json`: `blueprint-step1.json`, `blueprint-step2ck.json` e a
+  extensão `blueprint-step2ck-extensao.json`, com CK-0481 a CK-0600 dos lotes 13 a 15): disciplinas
   secundárias, disciplinas clínicas oficiais e tópicos do outline que o item não repete;
   classificação do item diferente da especificação vira aviso no relatório
   (`--sem-blueprint` desliga);

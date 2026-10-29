@@ -7,22 +7,23 @@
   "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
   "topico": "Neisseria meningitidis",
   "conceito": "Neisseria meningitidis: lipooligosaccharide, petechial rash and Waterhouse-Friderichsen syndrome",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
+  "anfitriao": null,
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-02",
   "tom": null,
-  "gancho": "Na república, tudo some na hora da louça. *Menos essas manchas*",
-  "gancho_apoio": "Febre, nuca dura e manchas que não somem nem apertando o copo.",
+  "gancho": "Na república, a louça acumula. Hoje, quem foi *chamada* foi a Capitã Plaqueta",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-092.png",
-    "cena": "Na cozinha de uma república de estudantes, com louça empilhada na pia, Macrô, de comanda no bolso, encontra duas bactérias em forma de feijão, grudadinhas como gêmeas, disparando um canhãozinho de confete vermelho. Um copo de vidro está apertado contra o chão branco, e os pontinhos vermelhos continuam visíveis por baixo dele.",
+    "cena": "Na cozinha de uma república de estudantes, com louça empilhada na pia, a Capitã Plaqueta, de colete e apito, segura uma prancheta e olha a bagunça com as mãos na cintura.",
     "foco": "50% 35%",
-    "alt": "Na cozinha de uma república, Macrô encontra duas bactérias em forma de feijão com um canhão de confete; um copo apertado no chão não apaga os pontinhos vermelhos."
+    "alt": "Na cozinha de uma república com louça empilhada, a Capitã Plaqueta segura uma prancheta com as mãos na cintura."
   },
   "imagem_macete": {
     "arquivo": "dia-092-macete.png",
-    "cena": "Callback: a dupla de feijões solta bolhinhas da própria casca, que viram confete (LOS). Em cima de uma mesa em forma de rim, dois chapeuzinhos de festa triangulares murcham, e o Macrô corre com um extintor e uma seringa em forma de escudo (vacina).",
+    "cena": "Callback da república: duas bactérias em forma de feijão, grudadinhas como gêmeas, soltam bolhinhas da própria casca, que viram confete vermelho. Em cima de uma mesa em forma de rim, dois chapeuzinhos de festa triangulares murcham, e a Capitã Plaqueta corre com um extintor e uma seringa em forma de escudo (vacina).",
     "foco": "50% 40%",
     "alt": "As bactérias soltam bolhas de confete; dois chapeuzinhos triangulares murcham sobre uma mesa em forma de rim."
   },
@@ -72,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Universitário de alojamento, febre, rigidez de nuca, pressão de 82/44 e manchas roxas que não clareiam com pressão. O Gram do líquor mostra o formato do convidado, e o Macrô quer o nome dele.",
+    "contexto": "Bicho de Segunda com a Capitã Plaqueta no lugar do Macrô: um universitário que mora em alojamento, uma emergência grave e quatro germes na lista. O Gram do líquor está na vinheta. Vacina em dia, aliás, é a melhor resposta fora da prova.",
     "palavras_chave": [
-      "college dormitory",
-      "fever and neck stiffness",
-      "purpura",
-      "adrenal hemorrhage"
+      "young adult",
+      "fever and headache",
+      "septic shock",
+      "microbiology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -88,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diplococo gram-negativo, púrpura e choque: qual organismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diplococo gram-negativo, púrpura e choque: qual organismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

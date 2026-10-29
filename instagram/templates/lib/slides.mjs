@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { PASTA_TEMPLATES, RAIZ, num3, dataCurta, diaSemanaDe, DIAS_CURTOS } from './dados.mjs';
+import { slideCta, conversao, somarDias } from './conversao.mjs';
 
 // ---------- texto ----------
 export const esc = (t) =>
@@ -255,13 +256,14 @@ export function questaoEnunciado(dia) {
 export function questaoResponda(dia, config) {
   const teclas = ['A', 'B', 'C', 'D'].map((l) => `<span class="tecla">${l}</span>`).join('');
   const quando = dia.explicacao_em ? dataCurta(dia.explicacao_em) : 'amanhã';
-  const ctaDia = dia.legenda.cta_slide || 'Salve o post: este conceito volta no Remix de domingo.';
+  const sc = slideCta(dia);
+  const ctaDia = dia.legenda.cta_slide || (sc.palavra ? `Comente *${sc.palavra}*: ${sc.sub.charAt(0).toLowerCase()}${sc.sub.slice(1)}` : sc.sub);
   return `<div class="tela noite q3 copacabana-fundo">
     <h2 class="q3__titulo">E aí, qual é a <em>letra?</em></h2>
     <div class="teclas">${teclas}</div>
     <ul class="passos">
-      <li>${ICONES.balao}<div><b>Comente a letra aqui embaixo</b><span>Errar aqui é de graça. Na prova, não.</span></div></li>
-      <li>${ICONES.quiz}<div><b>Ou responda no quiz dos stories</b><span>O resultado parcial sai às 20h30.</span></div></li>
+      <li>${ICONES.quiz}<div><b>Vote na enquete dos stories</b><span>Sem gabarito hoje: a letra certa sai amanhã.</span></div></li>
+      <li>${ICONES.balao}<div><b>Ou comente a letra aqui embaixo</b><span>Errar aqui é de graça. Na prova, não.</span></div></li>
     </ul>
     <div class="bilhete">
       <div class="bilhete__main">
@@ -270,14 +272,14 @@ export function questaoResponda(dia, config) {
         <dl class="bilhete__campos">
           <div><dt>DATA</dt><dd>${esc(quando)}</dd></div>
           <div><dt>HORA</dt><dd>${esc(config.horario_feed.toUpperCase())}</dd></div>
-          <div><dt>PORTÃO</dt><dd>FEED</dd></div>
+          <div><dt>PORTÃO</dt><dd>SLIDE 1</dd></div>
         </dl>
       </div>
       <div class="bilhete__canhoto">
         <span>DIA</span><b>${num3(dia.n)}</b><span>${/2/.test(dia.step) ? 'STEP 2 CK' : 'STEP 1'}</span>
       </div>
     </div>
-    <p class="q3__cta">${ICONES.salvar}<span>${rico(ctaDia)}</span></p>
+    <p class="q3__cta">${sc.palavra ? ICONES.balao : ICONES.salvar}<span data-fit="cta do responda" data-min="28">${rico(ctaDia)}</span></p>
     ${rodape('', false)}
     ${cvv(dia)}${tarja(dia)}
   </div>`;
@@ -286,11 +288,17 @@ export function questaoResponda(dia, config) {
 // =====================================================================
 // EXPLICAÇÃO (1080x1350, 5 slides; sai no dia seguinte)
 // =====================================================================
-export function explicacaoResposta(dia) {
+// Capa do post de D+1: a recompensa de quem voltou. Usa a imagem do macete (a revelação da
+// mesma cena) quando ela existe; no modo enxuto, sem imagem do macete, fica a imagem da questão.
+export function explicacaoResposta(dia, proximo = null) {
   const c = dia.questao.correta;
   const alt = alternativa(dia, c);
+  const img = dia.imagem_macete && dia.imagem_macete.caminho ? dia.imagem_macete : dia.imagem;
+  const hoje = proximo
+    ? `<p class="resposta__hoje" data-fit="questão de hoje na capa" data-min="24"><b>DEPOIS DO MACETE, A DE HOJE</b>${rico(proximo.gancho)}</p>`
+    : `<p class="resposta__hoje"><b>ENCERRAMENTO</b>Último gabarito do programa. Obrigado por embarcar.</p>`;
   return `<div class="tela capa e1">
-    <div class="capa__img">${imagem(dia.imagem)}</div>
+    <div class="capa__img">${imagem(img)}</div>
     <div class="capa__veu"></div>
     <header class="capa__topo">
       <div class="chip-ontem"><span>RESPOSTA DE ONTEM</span><b>DIA ${num3(dia.n)} · ${esc(semMarca(dia.quadro).toUpperCase())}</b></div>
@@ -309,6 +317,7 @@ export function explicacaoResposta(dia) {
       <h1 class="resposta__txt" data-fit="texto da resposta" data-min="48">${esc(alt.texto)}</h1>
       ${dia.explicacao.titulo ? `<p class="resposta__sub" data-fit="título da explicação" data-min="28">${rico(dia.explicacao.titulo)}</p>` : ''}
       <div class="resposta__pe">${marca(false)}${arraste('O PORQUÊ')}</div>
+      ${hoje}
     </section>
     ${tarja(dia)}
   </div>`;
@@ -328,7 +337,7 @@ export function explicacaoCerta(dia) {
       ${dia.explicacao.certa.map((p) => `<p>${rico(p)}</p>`).join('')}
     </main>
     ${termos}
-    ${rodape(arraste('E AS OUTRAS?'), true)}
+    ${rodape(arraste(), true)}
     ${cvv(dia)}${tarja(dia)}
   </div>`;
 }
@@ -355,7 +364,7 @@ export function explicacaoErradas(dia) {
   </div>`;
 }
 
-export function explicacaoMacete(dia) {
+export function explicacaoMacete(dia, { enxuto = false } = {}) {
   const m = dia.explicacao.macete;
   const quem = dia.personagem || dia.anfitriao || null;
   const p = quem && PERSONAGENS[quem];
@@ -363,11 +372,12 @@ export function explicacaoMacete(dia) {
   // quanto mais longo o macete e o apoio, menor a imagem, para o texto caber sem cair abaixo de 36 px
   const tamTexto = semMarca(m.frase || '').length + semMarca(m.apoio || '').length;
   const altImg = tamTexto <= 230 ? 420 : tamTexto <= 290 ? 350 : tamTexto <= 350 ? 290 : tamTexto <= 410 ? 240 : 200;
-  const blocoImg = dia.imagem_macete ? `<div class="e4__img" style="height:${altImg}px">${imagem(dia.imagem_macete)}</div>` : '';
+  const comImg = !enxuto && dia.imagem_macete;
+  const blocoImg = comImg ? `<div class="e4__img" style="height:${altImg}px">${imagem(dia.imagem_macete)}</div>` : '';
   const personagem = p
     ? `<div class="persona"><span class="persona__av">${avatar(quem)}</span><div><b class="persona__nome">${esc(quem.toUpperCase())}</b>${fala ? `<span class="persona__fala">“${esc(fala)}”</span>` : ''}</div></div>`
     : '';
-  return `<div class="tela noite e4 ${dia.imagem_macete ? 'e4--com-img' : ''} copacabana-fundo">
+  return `<div class="tela noite e4 ${comImg ? 'e4--com-img' : ''} ${enxuto ? 'e4--enxuto' : ''} copacabana-fundo">
     <section class="placa placa--macete">
       <div class="placa__aba">ATALHO</div>
       <div class="placa__linha"><span>MACETE PARA A PROVA</span>${ICONES.saida}</div>
@@ -382,50 +392,54 @@ export function explicacaoMacete(dia) {
       ${m.apoio ? `<p class="e4__apoio">${rico(m.apoio)}</p>` : ''}
     </main>
     ${personagem}
-    ${rodape(arraste(), false)}
+    ${rodape(arraste('A DE HOJE'), false)}
     ${cvv(dia)}${tarja(dia)}
   </div>`;
 }
 
-export function explicacaoCTA(dia, config) {
+// CTA do dia (último slide do post, depois do "responda"). Com palavra-chave, mostra a caixa
+// de comentário com a palavra e o cartão de embarque do que chega no direct; sem palavra
+// (compartilhar, debate, salvar), mostra as ações de salvar e mandar.
+export function questaoCTA(dia, config) {
+  const s = slideCta(dia);
   const step = /2/.test(dia.step) ? 'STEP 2 CK' : 'STEP 1';
   const ass = config.assinatura;
   const assinatura = [ass.nome, ass.crm, ass.rqe && ass.especialidade ? `${ass.especialidade}, RQE ${ass.rqe}` : null].filter(Boolean).join(' · ');
   const barras = Array.from({ length: 22 }, (_, i) => `<i style="height:${[3, 6, 2, 4, 7, 3, 5][(i * 5 + dia.n) % 7]}px"></i>`).join('');
-  return `<div class="tela papel e5">
-    <div class="e5__topo">${marca(true)}<span class="e5__dia">DIA ${num3(dia.n)}</span></div>
-    <h2 class="e5__titulo">Gostou do <em>formato?</em></h2>
-    <p class="e5__sub">Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America.</p>
-    <div class="passagem">
+  const comPalavra = !!s.palavra;
+  const caixa = comPalavra
+    ? `<div class="comente"><span class="comente__rot">COMENTE</span><div class="comente__caixa"><b>${esc(s.palavra)}</b><span class="comente__env">${ICONES.enviar}</span></div><span class="comente__nota">Resposta automática no direct. Também na bio.</span></div>`
+    : '';
+  const passagem = comPalavra
+    ? `<div class="passagem">
       <div class="passagem__main">
-        <div class="passagem__cab"><span>CARTÃO DE EMBARQUE</span><b>SIMULADO GRÁTIS</b></div>
-        <div class="passagem__rota">
-          <div><small>DE</small><b>BRA</b><span>Sua rotina</span></div>
-          <div class="passagem__voo"><i></i>${ICONES.aviao}<i></i></div>
-          <div><small>PARA</small><b>${/2/.test(dia.step) ? 'CK' : 'S1'}</b><span>USMLE ${esc(step)}</span></div>
-        </div>
-        <dl class="passagem__campos">
-          <div><dt>PASSAGEIRO</dt><dd>VOCÊ</dd></div>
-          <div><dt>DURAÇÃO</dt><dd>30 MIN</dd></div>
-          <div><dt>TARIFA</dt><dd class="amarelo">GRÁTIS</dd></div>
-          <div><dt>PORTÃO</dt><dd>LINK NA BIO</dd></div>
-        </dl>
+        <div class="passagem__cab"><span>CARTÃO DE EMBARQUE</span><b>${esc(s.cab)}</b></div>
+        <dl class="passagem__campos">${s.campos.map(([k, v], i) => `<div><dt>${esc(k)}</dt><dd class="${i === 2 ? 'amarelo' : ''}">${esc(v)}</dd></div>`).join('')}</dl>
       </div>
-      <div class="passagem__canhoto"><div class="barras">${barras}</div><span>EMBARQUE LIVRE</span></div>
-    </div>
-    <ul class="e5__lista">
-      <li>${ICONES.salvar}<span><b>Salve.</b> Este conceito volta no Remix de domingo.</span></li>
-      <li>${ICONES.enviar}<span><b>Mande</b> para quem vai fazer o Step com você.</span></li>
-    </ul>
+      <div class="passagem__canhoto"><div class="barras">${barras}</div><span>${esc(step)}</span></div>
+    </div>`
+    : '';
+  const lista = {
+    compartilhar: [[ICONES.enviar, '<b>Mande</b> para quem estuda com você e combinem a letra antes do gabarito.'], [ICONES.salvar, '<b>Salve.</b> Este conceito volta no Remix de domingo.']],
+    debate: [[ICONES.balao, '<b>Comente</b> a letra e o porquê em uma frase.'], [ICONES.enviar, '<b>Discordou?</b> Marque quem votou diferente e defenda a sua.']],
+  }[s.tipo] || [[ICONES.salvar, '<b>Salve.</b> Este conceito volta no Remix de domingo.'], [ICONES.enviar, '<b>Mande</b> para quem vai fazer o Step com você.']];
+  return `<div class="tela papel e5 ${comPalavra ? 'e5--palavra' : 'e5--acao'}">
+    <div class="e5__topo">${marca(true)}<span class="e5__dia">DIA ${num3(dia.n)}</span></div>
+    <h2 class="e5__titulo">${rico(s.titulo)}</h2>
+    <p class="e5__sub">${rico(s.sub)}</p>
+    ${caixa}
+    ${passagem}
+    <ul class="e5__lista">${lista.map(([ico, t]) => `<li>${ico}<span>${t}</span></li>`).join('')}</ul>
     <footer class="e5__ass">${esc(assinatura)}<span>Conteúdo educacional. Condutas conforme as diretrizes dos EUA cobradas no USMLE.</span></footer>
     ${cvv(dia)}${tarja(dia)}
   </div>`;
 }
 
 // =====================================================================
-// STORY DO QUIZ (1080x1920)
+// STORIES (1080x1920)
 // =====================================================================
-export function storyQuiz(dia, { guia = false } = {}) {
+// Dia D, 12h06: a questão de hoje com a área do adesivo de ENQUETE (A, B, C, D), sem gabarito.
+export function storyEnquete(dia, { guia = false } = {}) {
   const q = dia.questao;
   return `<div class="tela tela--story story copacabana-fundo">
     <header class="story__topo">
@@ -438,12 +452,83 @@ export function storyQuiz(dia, { guia = false } = {}) {
       <div class="story__q" data-fit="vinheta do story" data-min="27">
         <p class="vinheta">${rico(q.vinheta)}</p>
         <p class="pergunta">${rico(q.pergunta)}</p>
+        <ol class="story__alts">${q.alternativas.map((a) => `<li><b>${a.letra}</b>${esc(a.quiz || a.texto)}</li>`).join('')}</ol>
       </div>
     </section>
-    <div class="story__dica">TOQUE NA SUA LETRA ${ICONES.seta}</div>
-    <div class="story__adesivo ${guia ? 'story__adesivo--guia' : ''}">${guia ? '<span>ADESIVO DE QUIZ AQUI<br><small>4 opções: A, B, C, D</small></span>' : ''}</div>
-    <footer class="story__pe">${ICONES.relogio}<span>Gabarito completo amanhã, ${esc(dia.explicacao_em ? dataCurta(dia.explicacao_em) : '')}, às 12h no feed</span></footer>
+    <div class="story__dica">VOTE NA SUA LETRA ${ICONES.seta}</div>
+    <div class="story__adesivo ${guia ? 'story__adesivo--guia' : ''}">${guia ? '<span>ADESIVO DE ENQUETE AQUI<br><small>4 opções: A, B, C, D · sem resposta certa</small></span>' : ''}</div>
+    <footer class="story__pe">${ICONES.relogio}<span>Gabarito amanhã, ${esc(dia.explicacao_em ? dataCurta(dia.explicacao_em) : '')}, às 12h, no primeiro slide do post</span></footer>
     ${cvv(dia)}${tarja(dia)}
+  </div>`;
+}
+// compatibilidade com quem ainda chama o nome antigo
+export const storyQuiz = storyEnquete;
+
+// D+1, 12h05: abre com o resultado da enquete de ontem e dá a segunda chance no QUIZ,
+// que mostra a letra certa. A peça é do dia D (pasta dia-NNN) e vai ao ar em D+1.
+export function storyGabarito(dia, { guia = false } = {}) {
+  const linhas = dia.questao.alternativas.map((a) => `<li><b>${a.letra}</b><span class="enq__barra"></span><span class="enq__pct">${guia ? '__' : ''}%</span></li>`).join('');
+  return `<div class="tela tela--story story story--gab copacabana-fundo">
+    <header class="story__topo">
+      ${escudo(dia.step, 'escudo--story')}
+      <div class="story__rot"><b>GABARITO DE ONTEM</b><span>DIA ${num3(dia.n)} · ${esc(semMarca(dia.quadro).toUpperCase())}</span></div>
+    </header>
+    <section class="enq">
+      <div class="enq__rot">RESULTADO DA ENQUETE DE ONTEM</div>
+      <ol class="enq__lista">${linhas}</ol>
+      ${guia ? '<p class="enq__guia">Escreva as porcentagens com a ferramenta de texto ou cole o print do resultado por cima deste cartão.</p>' : ''}
+    </section>
+    <section class="chance">
+      <div class="chance__rot">SEGUNDA CHANCE</div>
+      <h2 class="chance__q" data-fit="pergunta da segunda chance" data-min="40">${rico(dia.quiz.resumo || dia.quiz.pergunta || dia.questao.pergunta)}</h2>
+    </section>
+    <div class="story__dica">AGORA VALE O GABARITO ${ICONES.seta}</div>
+    <div class="story__adesivo ${guia ? 'story__adesivo--guia' : ''}">${guia ? '<span>ADESIVO DE QUIZ AQUI<br><small>mesmas 4 opções, letra certa marcada</small></span>' : ''}</div>
+    <footer class="story__pe">${ICONES.seta}<span>O porquê completo está no primeiro slide do post de hoje</span></footer>
+    ${cvv(dia)}${tarja(dia)}
+  </div>`;
+}
+
+// Dias do desafio de 30 dias: check-in com a barra de progresso.
+export function storyDesafio(dia, des) {
+  const quad = Array.from({ length: 30 }, (_, i) => `<i class="${i < des.dia_do_desafio - 1 ? 'feito' : i === des.dia_do_desafio - 1 ? 'hoje' : ''}">${i + 1}</i>`).join('');
+  return `<div class="tela tela--story story story--des copacabana-fundo">
+    <header class="story__topo">
+      ${escudo(dia.step, 'escudo--story')}
+      <div class="story__rot"><b>DESAFIO</b><span>${esc(conversao().desafio.nome.toUpperCase())}</span></div>
+    </header>
+    <section class="des">
+      <div class="des__rot">EDIÇÃO ${des.edicao} · ${esc(dataCurta(des.inicio))} A ${esc(dataCurta(des.fim))}</div>
+      <h2 class="des__dia">DIA <em>${des.dia_do_desafio}</em> DE 30</h2>
+      <div class="des__grade">${quad}</div>
+      <ol class="des__passos">
+        <li><b>1</b>Vote na enquete de hoje, sem consultar.</li>
+        <li><b>2</b>Amanhã, abra o post: a resposta é o primeiro slide.</li>
+        <li><b>3</b>Marque a cartela: verde acertou, amarelo errou e entendeu.</li>
+      </ol>
+    </section>
+    <footer class="story__pe">${ICONES.relogio}<span>Sem prêmio e sem ranking. Só o hábito.</span></footer>
+    ${cvv(dia)}${tarja(dia)}
+  </div>`;
+}
+
+// Cartela da edição (vai no direct de quem comenta DESAFIO), uma por edição.
+export function desafioCartela(des) {
+  const datas = Array.from({ length: 30 }, (_, i) => somarDias(des.inicio, i));
+  const quad = datas.map((d, i) => `<i><b>${i + 1}</b><small>${esc(dataCurta(d))}</small></i>`).join('');
+  return `<div class="tela tela--story story story--cartela copacabana-fundo">
+    <header class="story__topo">
+      ${escudo('Step 1', 'escudo--story')}
+      <div class="story__rot"><b>CARTELA</b><span>EDIÇÃO ${des.edicao}</span></div>
+    </header>
+    <section class="des">
+      <h2 class="des__titulo">${esc(conversao().desafio.nome)}</h2>
+      <div class="des__rot">${esc(dataCurta(des.inicio))} A ${esc(dataCurta(des.fim))} · UMA QUESTÃO POR DIA</div>
+      <div class="des__grade des__grade--cartela">${quad}</div>
+      <div class="des__leg"><span class="v"></span>acertei<span class="a"></span>errei e entendi o porquê</div>
+      <p class="des__nota">Marque com a ferramenta de desenho do celular. Live de encerramento em ${esc(dataCurta(des.live_de_encerramento))}.</p>
+    </section>
+    <footer class="story__pe">${marca(false)}</footer>
   </div>`;
 }
 

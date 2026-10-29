@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-21",
   "tom": null,
-  "gancho": "Tia Meia-Vida tentou o molho inteiro de *chaves* e a porta nem piscou",
+  "gancho": "Semana da resistência: o estafilococo *riu* da oxacilina",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-019.png",
-    "cena": "A Tia Meia-Vida, na porta dos fundos da farmácia, testa um molho de chaves douradas na porta de um castelinho redondo feito de bolinhas em cacho de uva. Nenhuma chave funciona, e ela franze a testa por cima dos óculos vermelhos enquanto a areia da ampulheta escorre.",
+    "cena": "A Tia Meia-Vida, na porta dos fundos da farmácia, encara um castelinho redondo feito de bolinhas em cacho de uva, que mostra a língua para ela por uma janelinha; ela franze a testa por cima dos óculos vermelhos.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida tentou o molho inteiro de chaves e a porta nem piscou"
+    "alt": "Um castelinho feito de bolinhas em cacho de uva mostra a língua para a Tia Meia-Vida pela janelinha."
   },
   "imagem_macete": {
     "arquivo": "dia-019-macete.png",
@@ -31,15 +31,15 @@
     "alternativas": {
       "A": {
         "texto": "Production of beta-lactamase",
-        "quiz": "Betalactamase"
+        "quiz": "Beta-lactamase"
       },
       "B": {
         "texto": "Active efflux of the antibiotic",
-        "quiz": "Bomba de efluxo"
+        "quiz": "Efflux pump"
       },
       "C": {
-        "texto": "Altered penicillin-binding protein with low affinity",
-        "quiz": "PBP alterada"
+        "texto": "Altered penicillin-binding protein",
+        "quiz": "Altered PBP"
       },
       "D": {
         "texto": "Peptidoglycan precursor ending in D-Ala-D-Lac",
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Semana Mundial de Conscientização sobre Resistência Antimicrobiana. Sextou na Farmácia com um estafilococo que não liga para a oxacilina nem para o clavulanato.",
+    "contexto": "Semana Mundial de Conscientização sobre Resistência Antimicrobiana. Sextou na Farmácia com um estafilococo debochado, e a pergunta é a favorita do NBME: não qual remédio usar, mas por que o outro falhou.",
     "palavras_chave": [
       "skin abscess",
-      "gram-positive cocci in clusters",
-      "oxacillin",
-      "antibiotic resistance"
+      "Staphylococcus aureus",
+      "antibiotic resistance",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Estafilo resistente à oxacilina e ao clavulanato: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estafilo resistente à oxacilina e ao clavulanato: qual mecanismo?"
   },
   "exemplo": false
 }

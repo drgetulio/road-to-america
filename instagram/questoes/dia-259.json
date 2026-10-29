@@ -16,19 +16,19 @@
   ],
   "explicacao_em": "2027-07-19",
   "tom": null,
-  "gancho": "Internada pela pedrinha no rim, ela *fez força no banheiro* e tudo mudou",
-  "gancho_apoio": "Cólica renal, pressão alta e uma dor de cabeça que chegou ao máximo em 1 minuto. Qual é o próximo passo?",
+  "gancho": "Remix de Domingo: *uma pedrinha no rim* e uma reviravolta no banheiro do pronto-socorro",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 191, 240 e 254) e um intruso.",
   "imagem": {
     "arquivo": "dia-259.png",
-    "cena": "No leito do pronto-socorro, Seu Néfron, de gravata e óculos na ponta do nariz, preenche a papelada de alta de uma pedrinha teimosa quando, de repente, cai um raio de desenho bem em cima da sala e uma nuvem de trovão aparece no teto. Ele congela com o carimbo no ar. Na mesinha, um vinil pequeno serve de porta-copo.",
+    "cena": "No leito do pronto-socorro, Seu Néfron, de gravata e óculos na ponta do nariz, congela com o carimbo no ar no meio da papelada de alta de uma pedrinha teimosa. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron congela quando o trovão cai no meio da cólica"
+    "alt": "Seu Néfron congela com o carimbo no ar no meio da papelada de alta da pedrinha"
   },
   "imagem_macete": {
     "arquivo": "dia-259-macete.png",
-    "cena": "A nuvem de trovão entra primeiro num túnel de tomografia em forma de rosquinha, sem nenhum frasco de contraste por perto; a pedrinha espera sentada na fila, com um tobogã ao fundo, e um frasco de anti-inflamatório fica trancado na gaveta. Seu Néfron carimba a ordem certa.",
+    "cena": "Callback: uma nuvem de trovão entra primeiro num túnel de tomografia em forma de rosquinha, sem frasco de contraste por perto, e a pedrinha espera sentada na fila. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Cefaleia em trovoada: TC sem contraste antes de tudo"
+    "alt": "A nuvem de trovão entra primeiro na tomografia e a pedrinha espera na fila"
   },
   "questao": {
     "vinheta": "A 50-year-old woman is being treated in the emergency department for renal colic from a 5-mm distal ureteral stone. While straining on the toilet, she develops a sudden, severe occipital headache that peaks within 1 minute. Blood pressure is 176/98 mm Hg. She is alert, with neck stiffness and no focal deficits.",
@@ -36,21 +36,21 @@
     "alternativas": {
       "A": {
         "texto": "Lumbar puncture",
-        "quiz": "Punção lombar"
+        "quiz": "Lumbar puncture"
       },
       "B": {
         "texto": "IV nicardipine to lower blood pressure by 25%",
-        "quiz": "Nicardipina, baixar 25%",
+        "quiz": "IV nicardipine, -25%",
         "dia": 254
       },
       "C": {
         "texto": "An additional dose of IV ketorolac",
-        "quiz": "Mais cetorolaco IV",
+        "quiz": "More IV ketorolac",
         "dia": 240
       },
       "D": {
         "texto": "Noncontrast CT of the head",
-        "quiz": "TC de crânio sem contraste",
+        "quiz": "Noncontrast head CT",
         "dia": 191
       }
     },
@@ -68,18 +68,18 @@
       "lumbar puncture after 6 hours"
     ],
     "erradas": {
-      "A": "Intruso: a punção lombar só entra se a TC vier normal e já tiverem passado mais de 6 horas do início; antes da TC, não.",
+      "A": "Intruso: a punção lombar vem depois da TC, nunca antes. Se a TC vier normal e a suspeita continuar, a punção entra na maioria dos casos, sobretudo quando já passaram mais de 6 horas do início; alguns protocolos aceitam a angiotomografia no lugar dela.",
       "B": "Baixar 25% na primeira hora é a regra da emergência hipertensiva com lesão de órgão-alvo (dia 254); aqui o problema é a cefaleia em trovoada, e a imagem vem antes.",
       "C": "Mais cetorolaco trata a cólica (dia 240), mas um AINE numa possível hemorragia piora o sangramento e atrasa o diagnóstico."
     },
     "macete": {
       "frase": "Trovoada na cabeça? *TC antes de tudo*, até antes da pedrinha",
-      "apoio": "Cólica renal dói muito, mas cefaleia que chega ao pico em 1 minuto fura a fila. TC de crânio sem contraste na hora; se vier normal e já tiverem passado 6 horas, punção lombar. O cetorolaco fica guardado (sangra) e a regra dos 25% é de outra emergência.",
+      "apoio": "Cólica renal dói muito, mas cefaleia que chega ao pico em 1 minuto fura a fila. TC de crânio sem contraste na hora; se vier normal, punção lombar na maioria dos casos, sobretudo depois de 6 horas do início. O cetorolaco fica guardado (sangra) e a regra dos 25% é de outra emergência.",
       "fala": "Sem carimbo, não sai. Sem TC de crânio, ninguém sai da sala."
     }
   },
   "legenda": {
-    "contexto": "Três conceitos dos dias 191, 240 e 254 no mesmo leito, mais um intruso. A pedrinha ainda está lá, a pressão subiu e a dor de cabeça chegou ao máximo em 1 minuto.",
+    "contexto": "Domingo de Remix com o Seu Néfron. Uma paciente em tratamento de cálculo, um evento súbito no banheiro e uma pressão alta, tudo na vinheta. Qual é o próximo passo?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,9 +97,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cólica renal e cefaleia súbita no banheiro: qual é o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cólica renal e cefaleia súbita no banheiro: qual é o próximo passo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

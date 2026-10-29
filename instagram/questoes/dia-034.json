@@ -14,9 +14,9 @@
   "gancho": "Seu Néfron recebeu um formulário *assinado* e mesmo assim não carimbou",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com um formulário assinado na mão e o carimbo parado no ar. Na parede, uma tela de GPS ainda carregando mostra o mapa em branco, ao lado de uma pequena tabela 2x2 em branco; na mesa, um quebra-cabeça com uma peça faltando.",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com um formulário assinado na mão e o carimbo parado no ar. Na mesa, um quebra-cabeça com uma peça faltando; na parede, uma pequena tabela 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron recebeu um formulário assinado e mesmo assim não carimbou",
+    "alt": "Seu Néfron segura um formulário assinado com o carimbo parado no ar; na mesa, um quebra-cabeça com uma peça faltando.",
     "arquivo": "dia-034.png"
   },
   "imagem_macete": {
@@ -41,7 +41,7 @@
         "quiz": "Family signature"
       },
       "D": {
-        "texto": "Approval from the hospital ethics committee",
+        "texto": "Approval from the hospital ethics committee first",
         "quiz": "Ethics committee"
       }
     },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Diagnóstico explicado, procedimento descrito, riscos e benefícios na mesa, paciente capaz e caneta na mão. Até o Seu Néfron, que ama papel assinado, achou que faltou alguma coisa.",
+    "contexto": "Sábado Sem Viés com o Seu Néfron, que ama papel assinado. Hoje ele travou o carimbo num termo de consentimento, e a pergunta é o que faltou. A prova cobra a lista completa; o carimbo também.",
     "palavras_chave": [
-      "elective cholecystectomy",
-      "biliary colic",
-      "consent form",
-      "medical ethics"
+      "informed consent",
+      "elective procedure",
+      "medical ethics",
+      "communication"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#MedicalEthics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Diagnóstico, riscos e benefícios explicados: o que faltou no termo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diagnóstico, riscos e benefícios explicados: o que faltou no termo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

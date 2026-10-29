@@ -16,69 +16,69 @@
     100
   ],
   "explicacao_em": "2027-02-15",
-  "tom": null,
-  "gancho": "Alta depois de uma insolação no carro: *de costas ou de frente* na volta para casa?",
-  "gancho_apoio": "Cadeirinha, insolação e varizes já passaram por aqui. Hoje dois deles se encontram.",
+  "tom": "acolhedor",
+  "gancho": "Alta depois da insolação no carro: *o que falta* antes de ir para casa?",
+  "gancho_apoio": "Tema sensível, tratado com cuidado. Cadeirinha (dia 4), varizes (dia 72) e insolação (dia 100) já passaram por aqui, e há um intruso.",
   "imagem": {
     "arquivo": "dia-105.png",
-    "cena": "No estacionamento do hospital, sob um sol forte, Dona Térmica confere uma cadeirinha de carro vazia dentro de um carrinho de desenho, sem decidir para que lado ela deve ficar virada. No braço dela, um relógio sem números nas 3. Um vinil pequeno no canto.",
+    "cena": "No estacionamento do hospital, num fim de tarde tranquilo, Dona Térmica segura com cuidado uma cadeirinha de carro vazia, com uma mantinha dobrada dentro. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica confere uma cadeirinha vazia dentro de um carrinho, sem decidir para que lado ela fica, num estacionamento ensolarado."
+    "alt": "Dona Térmica segura com cuidado uma cadeirinha de carro vazia com uma mantinha, no estacionamento do hospital."
   },
   "imagem_macete": {
     "arquivo": "dia-105-macete.png",
-    "cena": "Callback do estacionamento: a cadeirinha está virada para trás no banco traseiro, ao lado de uma régua de altura e de uma balança que mostram que ainda falta muito para o limite. No banco da frente, um airbag inflado de cara brava. No painel, um ursinho de pelúcia lembra que ninguém fica sozinho no carro.",
+    "cena": "Um envelope voa até uma casinha firme com um escudo verde na fachada, enquanto Dona Térmica deixa uma bolsa no banco de trás, ao lado da cadeirinha virada para trás. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A cadeirinha virada para trás no banco traseiro, ao lado de uma régua e de uma balança; um airbag bravo na frente e um ursinho no painel."
+    "alt": "Um envelope voa até uma casinha com escudo verde; Dona Térmica deixa uma bolsa no banco de trás, ao lado da cadeirinha."
   },
   "questao": {
-    "vinheta": "A 15-month-old boy is being discharged after treatment for heat stroke; he had been left asleep in his car seat in a parked car on a hot afternoon. He weighs 10 kg, well below the rear-facing limit of his convertible seat. His parents ask how to use the seat at home.",
-    "pergunta": "Which recommendation is most appropriate?",
+    "vinheta": "A 15-month-old boy is about to be discharged after treatment for heat stroke. His father had left him asleep in a parked car for about an hour on a hot afternoon. The father is tearful and cooperative.",
+    "pergunta": "In addition to safety counseling, which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Turn the seat forward-facing now",
-        "quiz": "Forward-facing now"
-      },
-      "B": {
-        "texto": "Move the seat to the front passenger seat",
-        "quiz": "Front passenger seat"
-      },
-      "C": {
-        "texto": "Keep it rear-facing in the back seat",
-        "quiz": "Rear-facing, back seat",
+        "texto": "Discharge with car seat counseling only",
+        "quiz": "Counseling only",
         "dia": 4
       },
+      "B": {
+        "texto": "Ask the parents' consent before reporting",
+        "quiz": "Ask consent to report"
+      },
+      "C": {
+        "texto": "Report to child protective services",
+        "quiz": "Report to CPS"
+      },
       "D": {
-        "texto": "Switch to a belt-positioning booster",
-        "quiz": "Booster seat"
+        "texto": "Report only if a second event occurs",
+        "quiz": "Report if it recurs"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Cadeirinha: *de costas*, no banco de trás",
+    "titulo": "Criança esquecida no carro quente: *notificar é proteger*",
     "certa": [
-      "A AAP recomenda manter a criança *rear-facing* o maior tempo possível, até atingir o limite de peso ou altura da cadeirinha, sempre no *back seat* (dia 4). Com 10 kg e 15 meses, ele está longe do limite, e fazer 1 ano não muda nada. A internação por *heat stroke* (dia 100) vira o momento de orientar também: nunca deixar a criança sozinha no carro, nem por poucos minutos, e criar um lembrete no banco de trás."
+      "Uma criança pequena deixada sozinha num carro quente, com dano real (insolação), é suspeita razoável de negligência por falta de supervisão. Nos EUA, o médico é notificador obrigatório: comunica o serviço de proteção à criança (child protective services) sem pedir permissão aos pais. Notificar não é acusar nem punir; abre uma avaliação que protege a criança e apoia a família, e a orientação de segurança vem junto."
     ],
     "termos": [
-      "rear-facing car seat",
-      "back seat",
-      "vehicular heat stroke",
-      "child passenger safety"
+      "child protective services",
+      "mandated reporter",
+      "supervisory neglect",
+      "vehicular heatstroke"
     ],
     "erradas": {
-      "A": "Dia 4: o aniversário de 1 ano não é critério; virar para a frente antes do limite da cadeirinha aumenta o risco de lesão de cabeça e coluna cervical numa batida.",
-      "B": "No banco da frente, o airbag pode ferir gravemente a criança; até os 13 anos ela viaja no banco de trás.",
-      "D": "O assento de elevação com cinto é para crianças maiores, que já passaram do limite da cadeirinha voltada para a frente."
+      "A": "Dia 4: a cadeirinha de costas no banco de trás continua certa, e orientar é obrigatório, mas orientar sozinho não cumpre o dever de notificar quando houve dano por falta de supervisão.",
+      "B": "A notificação de suspeita de negligência não depende do consentimento dos pais; pedir permissão atrasa a proteção.",
+      "D": "Esperar um segundo evento é esperar uma segunda insolação. A suspeita razoável de agora já basta."
     },
     "macete": {
-      "frase": "Cadeirinha: *de costas até o limite da etiqueta*, sempre atrás",
-      "apoio": "Pegadinha de prova: O NBME oferece o aniversário de 1 ou de 2 anos como gatilho para virar a cadeirinha; o critério é o limite de peso ou altura do fabricante.",
-      "fala": "Aniversário de 1 ano é para bolo, não para virar cadeirinha."
+      "frase": "*Suspeitou, notificou, orientou*: proteger não é acusar",
+      "apoio": "Pegadinha de prova: O NBME coloca pais arrependidos e cooperativos para você deixar de notificar. A emoção da família não muda o dever: suspeita razoável de negligência com dano já pede notificação, junto com a orientação.",
+      "fala": "Já vi esse caso às 3 da manhã. Notificar é cuidar da criança e da família."
     }
   },
   "legenda": {
-    "contexto": "Um menino de 15 meses teve alta depois de uma insolação dentro de um carro estacionado. Na saída, os pais perguntam como usar a cadeirinha conversível. Três conceitos de Step 2 CK já vistos estão por perto, e um deles decide a resposta.",
+    "contexto": "Remix de Domingo com tom acolhedor. Um menino de 15 meses, já tratado de uma insolação, vai para casa, e o pai está arrasado. Leia a vinheta com calma: a pergunta é o que o médico ainda precisa fazer antes da alta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,9 +93,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "15 meses, 10 kg, cadeirinha conversível: qual orientação dar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê esquecido no carro quente e pai colaborativo: além de orientar, o que fazer?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

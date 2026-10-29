@@ -13,18 +13,18 @@
   "explicacao_em": "2027-02-16",
   "tom": null,
   "gancho": "Macrô tentou abraçar a dupla e *escorregou igual sabonete*",
-  "gancho_apoio": "Escarro cor de ferrugem, lobo inferior consolidado e cocos em pares.",
+  "gancho_apoio": "O Macrô perdeu a luta no lava-rápido e agora quer um teste que dedure a dupla.",
   "imagem": {
     "arquivo": "dia-106.png",
-    "cena": "Num lava-rápido de bairro, cheio de espuma, Macrô, de comanda no bolso, tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva transparente e lisa. Elas escorregam dos pseudópodes dele como sabonete. No chão, uma poça esverdeada.",
+    "cena": "Num lava-rápido cheio de espuma, o Macrô tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva lisa, que escorregam dos pseudópodes dele como sabonete. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Num lava-rápido cheio de espuma, Macrô tenta abraçar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
+    "alt": "Num lava-rápido, Macrô tenta abraçar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
   },
   "imagem_macete": {
     "arquivo": "dia-106-macete.png",
-    "cena": "Callback: a dupla de capa de chuva passa diante da vitrine de uma ótica, onde um disco redondo brilha, e desmaia dramaticamente. Ao lado, um primo verde parecido, sem capa, passa assobiando sem se abalar. O Macrô aproveita e segura a dupla pela capa.",
+    "cena": "Callback: a dupla de capa de chuva passa diante da vitrine de uma ótica, onde brilha um disco redondo, e desmaia dramaticamente; um primo verde parecido, sem capa, passa assobiando sem se abalar. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A dupla de capa de chuva desmaia diante do disco da ótica, e o primo verde passa sem se abalar."
+    "alt": "A dupla de capa desmaia diante de um disco na vitrine de uma ótica; um primo verde passa assobiando."
   },
   "questao": {
     "vinheta": "A 68-year-old man has had fever, rigors and a cough productive of rust-colored sputum for 2 days. Chest radiograph shows right lower lobe consolidation. Sputum Gram stain shows lancet-shaped gram-positive cocci in pairs, and blood agar colonies are surrounded by a green zone of partial hemolysis.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Positive coagulase test",
-        "quiz": "Positive coagulase"
+        "quiz": "Positive coagulase test"
       },
       "B": {
         "texto": "Growth in 6.5% sodium chloride",
-        "quiz": "Grows in 6.5% NaCl"
+        "quiz": "Growth in 6.5% sodium chloride"
       },
       "C": {
         "texto": "Growth inhibited by optochin",
-        "quiz": "Optochin-inhibited"
+        "quiz": "Growth inhibited by optochin"
       },
       "D": {
         "texto": "Growth resistant to optochin",
-        "quiz": "Optochin-resistant"
+        "quiz": "Growth resistant to optochin"
       }
     },
     "correta": "C"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda: pneumonia lobar, escarro cor de ferrugem e uma dupla que aparece no Gram. Na placa de ágar, um halo verde. Qual teste confirma quem é?",
+    "contexto": "Bicho de Segunda: uma infecção respiratória de começo rápido e uma dupla difícil de pegar. O Gram e a placa de ágar estão na vinheta. Qual achado a mais fecha a identidade do bicho?",
     "palavras_chave": [
       "rust-colored sputum",
       "lobar consolidation",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diplococo em lança, alfa-hemolítico: qual achado identifica o bicho?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diplococo em lança, alfa-hemolítico: qual achado identifica o bicho?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

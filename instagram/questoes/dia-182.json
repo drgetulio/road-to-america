@@ -17,22 +17,22 @@
   ],
   "explicacao_em": "2027-05-03",
   "tom": null,
-  "gancho": "Soro de cavalo, 10 dias de espera e um *joelho* reclamando. Quem é o culpado?",
-  "gancho_apoio": "Remix com doença do soro (dia 78) e MHC (dia 176); a cólera (dia 155) volta no macete.",
+  "gancho": "Picada de cobra e *soro de cavalo*: qual fatura chegou?",
+  "gancho_apoio": "Remix com doença do soro (dia 78) e MHC (dia 176); a cólera (dia 155) fica de fora, e há um intruso.",
   "imagem": {
     "arquivo": "dia-182.png",
-    "cena": "Num haras ensolarado, o Macrô, com a comanda em branco no bolso, está ao lado de um cavalinho simpático e olha três objetos numa mesinha: um interruptor de luz, uma bandeja com dois pratos e uma pipoca estourando. Num canto da mesinha, um pequeno vinil.",
+    "cena": "Num haras ensolarado, o Macrô está ao lado de um cavalinho simpático que segura uma seringa enorme de soro, com cara de quem já fez isso antes. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô num haras ao lado de um cavalinho, olhando um interruptor, uma bandeja de dois pratos e uma pipoca."
+    "alt": "Macrô num haras ao lado de um cavalinho que segura uma seringa enorme de soro."
   },
   "imagem_macete": {
     "arquivo": "dia-182-macete.png",
-    "cena": "Do cavalinho saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, no joelho de um boneco articulado e num tapete; bichinhos amarelos de complemento mordiscam as bolinhas e encolhem. O interruptor e a bandeja ganham um risco vermelho, e a pipoca é barrada por um cone.",
-    "alt": "Bolinhas de chiclete grudam numa peneira, num joelho de boneco e num tapete; o complemento mordisca e encolhe."
+    "cena": "Callback: um mastócito redondo, cheio de anticorpos em forma de Y presos na superfície como balões numa cerquinha, recebe um pedacinho de cavalo e estoura em confete de histamina, e o Macrô olha um relógio que mal andou. Fundo limpo.",
+    "alt": "Um mastócito cheio de anticorpos em Y estoura em confete ao receber um pedacinho de cavalo; o relógio mal andou."
   },
   "questao": {
-    "vinheta": "A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.",
-    "pergunta": "Which mechanism best explains these findings?",
+    "vinheta": "A rancher who was treated with horse-derived antivenom 3 years ago is bitten by another rattlesnake and receives the same product. Ten minutes into the infusion, hives spread over his trunk, he wheezes and his blood pressure falls to 78/40 mm Hg. Mast cell tryptase is high.",
+    "pergunta": "Which mechanism best explains this reaction?",
     "alternativas": {
       "A": {
         "texto": "CD8+ T cells killing cells that present peptide on MHC I",
@@ -41,44 +41,44 @@
       },
       "B": {
         "texto": "IgG binding a fixed antigen on cell surfaces",
-        "quiz": "IgG na célula"
+        "quiz": "IgG on cell surface"
       },
       "C": {
-        "texto": "Immune complex deposition with complement activation",
-        "quiz": "Imunocomplexos",
-        "dia": 78
+        "texto": "IgE cross-linked by antigen on mast cells",
+        "quiz": "IgE on mast cells"
       },
       "D": {
-        "texto": "IgE cross-linking on mast cells",
-        "quiz": "IgE no mastócito"
+        "texto": "Immune complex deposition with complement activation",
+        "quiz": "Immune complexes",
+        "dia": 78
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Soro de cavalo, 10 dias depois: *imunocomplexos*",
+    "titulo": "Minutos depois, *IgE*; dias depois, *imunocomplexo*",
     "certa": [
-      "A proteína estranha do soro de cavalo induz anticorpos em 1 a 2 semanas. Antígeno e anticorpo formam *immune complexes* que se depositam nos vasos da pele, nas articulações e no glomérulo e ativam o complemento, que é consumido (C3 e C4 baixos). É a *serum sickness*, hipersensibilidade tipo III."
+      "Ele já tinha recebido o soro de cavalo e produziu IgE contra as proteínas equinas (sensibilização). Na segunda dose, o antígeno liga duas IgE vizinhas presas no mastócito, a célula desgranula e libera histamina e triptase em minutos: urticária, broncoespasmo e choque. É a hipersensibilidade tipo I, a anafilaxia, e o tratamento começa por adrenalina intramuscular."
     ],
     "termos": [
-      "serum sickness",
-      "type III hypersensitivity",
-      "immune complexes",
-      "hypocomplementemia"
+      "type I hypersensitivity",
+      "IgE cross-linking",
+      "mast cell degranulation",
+      "prior sensitization"
     ],
     "erradas": {
-      "A": "Dia 176: CD8 matando células que mostram peptídeo no MHC I é imunidade celular (tipo IV), que não consome complemento nem depende de anticorpo contra o soro.",
-      "B": "Anticorpo contra antígeno fixo na superfície da célula é o tipo II, como na anemia hemolítica autoimune; não forma complexos circulantes que se depositam ao mesmo tempo em pele, junta e rim dias depois de um soro.",
-      "D": "Intruso: a ponte de IgE no mastócito é tipo I, começa em minutos (urticária, broncoespasmo, anafilaxia) e não consome complemento."
+      "A": "Dia 176: CD8 matando célula que mostra peptídeo no MHC I é a defesa contra vírus e a base da hipersensibilidade tipo IV citotóxica, que leva dias, não minutos.",
+      "B": "IgG contra antígeno fixo na superfície celular é a hipersensibilidade tipo II, como na anemia hemolítica autoimune ou na rejeição hiperaguda; não explica urticária com triptase alta em minutos.",
+      "D": "Dia 78: imunocomplexos com consumo de complemento são a doença do soro, que aparece 1 a 2 semanas depois do soro de cavalo, com febre, artralgia e C3 e C4 baixos."
     },
     "macete": {
-      "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta",
-      "apoio": "O complemento é gasto para limpar (C3 e C4 baixos). Dez dias é o tempo de a fábrica produzir o anticorpo; o tipo I vem em minutos. Bônus: a cólera trava o Gs ligado (dia 155).",
-      "fala": "Comi, mostrei, avisei. Dez dias depois, a fábrica de anticorpo entregou o pedido grudento."
+      "frase": "Relógio da hipersensibilidade: *minutos* é IgE, *semanas* é imunocomplexo",
+      "apoio": "Pegadinha de prova: O NBME usa o mesmo soro de cavalo para as duas reações e muda só o relógio: minutos depois de uma nova exposição, em quem já foi sensibilizado, é tipo I (IgE); 1 a 2 semanas depois da dose é tipo III, a doença do soro.",
+      "fala": "Comi, mostrei, avisei: da primeira vez, eu mostrei o cavalo para o linfócito. Da segunda, a IgE já estava esperando."
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: três conceitos de Step 1 que já passaram por aqui e os quatro tipos de hipersensibilidade na disputa. Globulina antitimócito equina há 10 dias, febre, rash nas laterais das mãos e dos pés, artrite e complemento baixo. Qual mecanismo?",
+    "contexto": "Remix de Domingo no haras com o Macrô: um fazendeiro, uma picada e um soro de cavalo. O relógio, a história e os exames estão na vinheta, e quatro tipos de hipersensibilidade disputam a explicação.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,8 +86,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre, rash, artrite e C3 e C4 baixos 10 dias após ATG equina: mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Urticária e PA 78/40 dez minutos após o soro de cavalo de novo: qual mecanismo?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

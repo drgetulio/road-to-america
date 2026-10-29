@@ -14,7 +14,7 @@
   "gancho": "O ovócito que espera *mais que fila do INSS*: onde ele parou agora?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Numa rodoviária, o Mito, de jaleco amassado e café na mão, viaja dentro de uma célula redonda que espera num banco novo, com uma malinha pequena ao lado. Num banco antigo e empoeirado, outra célula redonda dorme como quem está na fila há décadas. Um relógio de estação sem números no alto e setinhas de manual apontando para os dois bancos.",
+    "cena": "Numa rodoviária, o Mito, de jaleco amassado e café na mão, viaja dentro de uma célula redonda que espera num banco novo, com uma malinha pequena ao lado; num banco antigo e empoeirado, outra célula redonda cochila. Setinhas de manual apontam para os dois bancos.",
     "foco": "50% 35%",
     "alt": "Numa rodoviária, Mito viaja dentro de uma célula com malinha num banco novo; outra célula cochila num banco empoeirado.",
     "arquivo": "dia-087.png"
@@ -29,8 +29,8 @@
     "pergunta": "At which stage of meiosis is this cell arrested?",
     "alternativas": {
       "A": {
-        "texto": "Prophase I",
-        "quiz": "Prophase I"
+        "texto": "Prophase I (diplotene)",
+        "quiz": "Prophase I (diplotene)"
       },
       "B": {
         "texto": "Metaphase I",
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Fertilização in vitro, punção ovariana depois do gatilho de hCG e um ovócito maduro com o primeiro corpúsculo polar já liberado. O Mito, que só viaja com a mãe, quer saber em que etapa da meiose esse ovócito está parado.",
+    "contexto": "Quarta do Porquê com o Mito, que só viaja com a mãe: a ovogênese tem duas paradas, e a prova adora perguntar em qual delas a célula está. Leia a vinheta com a atenção de quem espera ônibus em rodoviária.",
     "palavras_chave": [
       "in vitro fertilization",
-      "oocyte retrieval",
-      "hCG trigger",
-      "meiosis"
+      "oocyte",
+      "meiosis",
+      "reproductive biology"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#QuartaDoPorque",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Ovócito maduro com o 1º corpúsculo polar: em que fase da meiose?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ovócito maduro com o 1º corpúsculo polar: em que fase da meiose?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

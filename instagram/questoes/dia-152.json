@@ -17,14 +17,14 @@
   "gancho_apoio": "Hoje sem piada. A Tia Meia-Vida explica com calma o que a diretriz americana recomenda.",
   "imagem": {
     "arquivo": "dia-152.png",
-    "cena": "Um balcão de farmácia sereno, à luz suave da manhã, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada. A Tia Meia-Vida, tranquila, apoia as mãos no balcão. Sem piada: a imagem lembra que remédio vem junto com acompanhamento.",
+    "cena": "Num balcão de farmácia sereno, à luz suave da manhã, a Tia Meia-Vida, tranquila, apoia as mãos ao lado de uma balança. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Balcão de farmácia sereno com balança, tubos de exame e uma caixa fechada; a Tia Meia-Vida, tranquila, atrás."
+    "alt": "A Tia Meia-Vida, tranquila, num balcão de farmácia sereno ao lado de uma balança."
   },
   "imagem_macete": {
     "arquivo": "dia-152-macete.png",
-    "cena": "Duas chaves num chaveiro sobre o balcão, uma vermelha e uma verde (os dois remédios aprovados), ao lado da balança e dos tubos de exame; a Tia Meia-Vida aponta para os três juntos.",
-    "alt": "Duas chaves, uma vermelha e uma verde, ao lado da balança e dos tubos de exame; a Tia aponta para os três."
+    "cena": "Duas chaves num chaveiro sobre o balcão, uma vermelha e uma verde (os dois remédios aprovados), ao lado da balança; a Tia Meia-Vida sorri com calma. Fundo limpo.",
+    "alt": "Duas chaves, uma vermelha e uma verde, ao lado da balança; a Tia Meia-Vida sorri com calma."
   },
   "questao": {
     "vinheta": "An 8-year-old boy with autism spectrum disorder has had 6 months of severe irritability with aggression toward family members and self-injury, despite 4 months of consistent behavioral therapy and parent training. Evaluation for medical causes, including pain, constipation, and sleep problems, is unremarkable.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Methylphenidate",
-        "quiz": "Metilfenidato"
+        "quiz": "Methylphenidate"
       },
       "B": {
         "texto": "Fluoxetine",
-        "quiz": "Fluoxetina"
+        "quiz": "Fluoxetine"
       },
       "C": {
         "texto": "Risperidone",
-        "quiz": "Risperidona"
+        "quiz": "Risperidone"
       },
       "D": {
         "texto": "Clonidine",
-        "quiz": "Clonidina"
+        "quiz": "Clonidine"
       }
     },
     "correta": "C"
@@ -82,8 +82,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Irritabilidade grave no TEA apesar de terapia comportamental: qual remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Irritabilidade grave no TEA apesar de terapia comportamental: qual remédio?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

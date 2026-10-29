@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-19",
   "tom": null,
-  "gancho": "Semmelweis pediu sabão em 1847. *O álcool gel só esgotou em 2020*",
-  "gancho_apoio": "Dia do Médico. Febre alta e choque 30 horas depois do parto.",
+  "gancho": "Semmelweis pediu sabão em 1847 e *até hoje tem gente fugindo da pia*",
+  "gancho_apoio": "Dia do Médico, com homenagem a quem lavou as mãos antes de todo mundo.",
   "imagem": {
     "arquivo": "dia-351.png",
-    "cena": "Macrô num corredor de hospital do século 19, com a comanda em branco no bolso, segura uma barra de sabão como troféu ao lado de uma bacia com espuma; ao fundo, uma fileira de cocos redondos em corrente tenta entrar escondida; num pedestal moderno, um dispensador de álcool gel vazio.",
+    "cena": "Macrô num corredor de hospital do século 19, com a comanda em branco no bolso, segura uma barra de sabão como troféu ao lado de uma bacia com espuma; ao fundo, uma fileira de cocos redondos em corrente tenta entrar escondida.",
     "foco": "50% 35%",
-    "alt": "Semmelweis pediu sabão em 1847. O álcool gel só esgotou em 2020"
+    "alt": "Semmelweis pediu sabão em 1847 e até hoje tem gente fugindo da pia"
   },
   "imagem_macete": {
     "arquivo": "dia-351-macete.png",
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia do Médico, com homenagem a Semmelweis. Trinta horas depois do parto, febre de 39,8 °C, calafrios e pressão caindo. Na hemocultura, cocos em cadeia que respeitam a bacitracina. Quem é?",
+    "contexto": "Dia do Médico, com homenagem a Semmelweis e à pia: o Macrô ergueu a barra de sabão como troféu. Quatro cocos gram-positivos suspeitos, e a vinheta tem os testes de laboratório que separam os parecidos.",
     "palavras_chave": [
-      "30 hours after delivery",
-      "fever and chills",
-      "uterine tenderness",
-      "hypotension"
+      "postpartum care",
+      "obstetric infection",
+      "infection control",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Choque 30 h após o parto, cocos em cadeia e PYR positivo: qual agente?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Choque 30 h após o parto, cocos em cadeia e PYR positivo: qual agente?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

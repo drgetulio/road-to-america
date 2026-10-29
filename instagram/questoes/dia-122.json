@@ -12,35 +12,35 @@
   "remix_de": null,
   "explicacao_em": "2027-03-04",
   "tom": null,
-  "gancho": "Pulso que chega *pequeno e atrasado*, igual inscrição às 20h59",
-  "gancho_apoio": "Hoje fecha o rank order list do Match. Tem uma válvula que também está no limite.",
+  "gancho": "Prazo do rank order list: *tudo chega no limite*, até uma válvula",
+  "gancho_apoio": "Hoje fecha o rank order list do Match. Boa sorte a quem ainda está trocando a ordem dos programas.",
   "imagem": {
     "arquivo": "dia-122.png",
-    "cena": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória gira emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo. Setinhas de manual apontam para a porta.",
+    "cena": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória gira emperrada, enquanto glóbulos vermelhos fazem fila para passar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A Capitã Plaqueta apita diante de uma porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase na hora do prazo."
+    "alt": "A Capitã Plaqueta apita diante de uma porta giratória emperrada, com uma fila de glóbulos vermelhos."
   },
   "imagem_macete": {
     "arquivo": "dia-122-macete.png",
-    "cena": "Callback: de perto, as três folhas da porta giratória estão incrustadas de calcário branco, e por isso ela quase não gira. Do outro lado sai só uma tartaruga pequenina carregando um coração, devagar, rumo a uma estrada em forma de carótida. Atrás, a fila espera.",
+    "cena": "Callback: de perto, as três folhas da porta giratória estão incrustadas de calcário branco, e do outro lado sai só uma tartaruga pequenina carregando um coração, bem devagar. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A porta giratória de três folhas aparece coberta de calcário; uma tartaruga pequena sai do outro lado levando um coração, devagar."
+    "alt": "As três folhas da porta giratória estão cheias de calcário; do outro lado sai só uma tartaruga devagar."
   },
   "questao": {
     "vinheta": "A 78-year-old man has chest pressure and lightheadedness when he climbs stairs. Auscultation reveals a harsh crescendo-decrescendo systolic murmur, loudest in the second right intercostal space and transmitted to both carotids. The second heart sound is soft, and the carotid upstroke is weak and delayed.",
     "pergunta": "Which is the most likely cause of this murmur?",
     "alternativas": {
       "A": {
-        "texto": "Calcific degeneration of a trileaflet aortic valve",
+        "texto": "Age-related aortic valve calcification",
         "quiz": "Calcific aortic valve"
       },
       "B": {
         "texto": "Rheumatic fusion of the mitral commissures",
-        "quiz": "Rheumatic mitral"
+        "quiz": "Rheumatic mitral valve"
       },
       "C": {
         "texto": "Myxomatous degeneration of the mitral valve",
-        "quiz": "Myxomatous mitral"
+        "quiz": "Myxomatous mitral valve"
       },
       "D": {
         "texto": "Asymmetric hypertrophy of the septum",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje, 3/3, fecha o rank order list do Match 2027. Boa sorte a quem está enviando a lista. Para a prova: idoso, sopro sistólico e um pulso que chega devagar.",
+    "contexto": "Hoje, 3/3, fecha o rank order list do Match 2027. Boa sorte a quem ainda está reordenando programas às 20h59, com o dedo em cima do certify. Para a prova: um paciente que cansa na escada, um sopro e um pulso que a vinheta descreve com detalhe.",
     "palavras_chave": [
       "exertional chest pressure",
       "systolic murmur",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

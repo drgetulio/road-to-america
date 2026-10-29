@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-21",
   "tom": null,
-  "gancho": "Inseticida sem máscara e o corpo *virou parque aquático*",
-  "gancho_apoio": "Secreção por todo lado, pupilas puntiformes e pulso de 46. Depois de descontaminar, o que entra?",
+  "gancho": "Sextou na Farmácia em domicílio: *a Tia Meia-Vida chegou correndo*",
+  "gancho_apoio": "Sextou na Farmácia em domicílio: quatro frascos na mesinha e só uma combinação certa.",
   "imagem": {
     "arquivo": "dia-292.png",
-    "cena": "No quintal de um sítio, a Tia Meia-Vida, de óculos vermelhos e galochas, descobre que todas as torneiras do muro abriram ao mesmo tempo e escorrem em baldinhos; um pulverizador de jardim está encostado na cerca e quatro frascos de remédio diferentes esperam numa mesinha. Ela abre um guarda-chuva, espantada, enquanto as poças se espalham.",
+    "cena": "Na varanda de uma casa, a Tia Meia-Vida, de óculos vermelhos, chega correndo com a maleta de farmácia; na parede, um relógio bate devagar, e quatro frascos de remédio diferentes esperam numa mesinha.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida e todas as torneiras do quintal abertas"
+    "alt": "Tia Meia-Vida chega correndo a uma varanda com quatro frascos"
   },
   "imagem_macete": {
     "arquivo": "dia-292-macete.png",
-    "cena": "A Tia Meia-Vida fecha o registro geral, que tem uma florzinha roxa de beladona amarrada, e as torneiras param; com a outra mão, solta com uma chave inglesa uma engrenagem presa antes que a ferrugem tome conta. As poças secam e o guarda-chuva está fechado.",
+    "cena": "Callback: na mesma casa, todas as torneiras do quintal tinham aberto ao mesmo tempo; a Tia Meia-Vida fecha o registro geral, que tem uma florzinha roxa de beladona amarrada, e com a outra mão solta com uma chave inglesa uma engrenagem presa antes que a ferrugem tome conta. As poças secam e o relógio da varanda volta ao ritmo.",
     "foco": "50% 45%",
     "alt": "Atropina para o muscarínico, pralidoxima para a enzima"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Physostigmine",
-        "quiz": "Fisostigmina"
+        "quiz": "Physostigmine"
       },
       "B": {
-        "texto": "Pralidoxime alone",
-        "quiz": "Só pralidoxima"
+        "texto": "Pralidoxime without atropine",
+        "quiz": "Pralidoxime, no atropine"
       },
       "C": {
         "texto": "Neostigmine",
-        "quiz": "Neostigmina"
+        "quiz": "Neostigmine"
       },
       "D": {
         "texto": "Atropine plus pralidoxime",
-        "quiz": "Atropina+pralidoxima"
+        "quiz": "Atropine + pralidoxime"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Uma hora depois de pulverizar inseticida sem equipamento de proteção: suor, salivação, chiado com muita secreção, pupilas puntiformes, fasciculações e pulso de 46. Depois da descontaminação, qual é o tratamento?",
+    "contexto": "Sextou na Farmácia em domicílio: a Tia Meia-Vida pegou a maleta e encontrou quatro frascos na mesinha. A vinheta tem uma lista de sintomas que o NBME adora e conta o que o paciente estava fazendo uma hora antes.",
     "palavras_chave": [
-      "insecticide spraying",
-      "pinpoint pupils",
-      "bronchial secretions",
-      "fasciculations"
+      "toxicology",
+      "emergency medicine",
+      "antidotes",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Inseticida, secreção, miose e pulso de 46: qual é o tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Inseticida, secreção, miose e pulso de 46: qual é o tratamento?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

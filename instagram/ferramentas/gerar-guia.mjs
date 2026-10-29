@@ -57,7 +57,7 @@ const amostras = fs.existsSync(s8) ? fs.readdirSync(s8).filter((f) => f.endsWith
 pg('', `${placa('O conceito', '01')}
 <div class="duas">
   <div>
-    <p class="lead">Todo dia, às 12h, uma questão no formato do USMLE: vinheta curta em inglês, quatro alternativas e uma imagem que conta a história com humor. No dia seguinte, no mesmo horário, vem o gabarito com o porquê, as erradas e o macete, junto com a questão nova.</p>
+    <p class="lead">Todo dia, às 12h, uma questão no formato do USMLE: vinheta curta em inglês, quatro alternativas e uma imagem que conta a história com humor. No dia seguinte, no mesmo horário, o post abre com o gabarito (a letra, o porquê, as erradas e o macete) e depois traz a questão nova. Toda sexta sai um Reel, todo mês uma live de correção.</p>
     <p>O humor existe para fixar o conceito. Cada piada carrega um mnemônico, uma analogia ou um personagem que o seguidor vai lembrar na hora da prova: o rim que carimba tudo, a plaqueta que organiza o trânsito, o fantasma do viés escondido atrás da tabela 2x2.</p>
     <p>A imagem da questão mostra a situação e nunca entrega a resposta. A imagem da explicação usa a mesma cena e revela o macete, como um antes e depois. Os domingos revisam três conceitos já vistos, com intervalos que aumentam, para o conteúdo voltar quando está quase esquecido.</p>
     <ul class="pontos">
@@ -68,7 +68,7 @@ pg('', `${placa('O conceito', '01')}
       <li><b>Questões originais</b> escritas do zero e conferidas contra o banco privado de 1000 itens</li>
     </ul>
   </div>
-  <div class="amostra">${amostras.slice(0, 4).map((f) => `<img src="${img(path.join(s8, f))}">`).join('')}<p class="leg">Post do dia 9 (amostra renderizada, imagem anedótica ainda pendente): capa, vinheta, chamada para responder e o gabarito do dia 8.</p></div>
+  <div class="amostra">${amostras.slice(0, 4).map((f) => `<img src="${img(path.join(s8, f))}">`).join('')}<p class="leg">Post do dia 9 (amostra renderizada, imagem anedótica ainda pendente): os quatro primeiros slides são o gabarito do dia 8, com a letra carimbada logo na capa.</p></div>
 </div>`);
 
 // 2. quadros
@@ -79,7 +79,7 @@ const quadros = Object.entries(P.quadros).map(([dia, q]) => {
 pg('', `${placa('Os quadros da semana', '02')}
 <p class="lead">Cada dia da semana tem um quadro fixo, com cenário próprio. O seguidor aprende o ritmo: segunda é micro, terça é plantão, domingo é revisão.</p>
 <table class="tab"><thead><tr><th></th><th>Quadro</th><th>Conteúdo</th><th>Exemplo de capa</th></tr></thead><tbody>${quadros}</tbody></table>
-<div class="caixa"><b>Remix de Domingo.</b> Três conceitos do mesmo Step, um de cada janela (da semana, de 2 a 5 semanas atrás e de 2 a 4 meses atrás), mais um intruso. Cada alternativa leva o selo "visto no dia X", e o remix repete o mnemônico original para o seguidor reconhecer.</div>`);
+<div class="caixa"><b>Remix de Domingo.</b> Três conceitos do mesmo Step, um de cada janela (da semana, de 2 a 5 semanas atrás e de 2 a 4 meses atrás), numa vinheta nova. As alternativas que vêm de dias revisados levam o selo "visto no dia X"; a resposta certa é o intruso, sem selo, em ${dias.filter((d) => d.remix_de && !d.questao.alternativas.find((a) => a.letra === d.questao.correta).visto_no_dia).length} dos ${N.remix} domingos, para o selo não virar pista, e nenhum remix repete a pergunta e a resposta do dia revisado.</div>`);
 
 // 3. personagens
 const pers = P.personagens.map((p) => `<div class="pers"><div class="pers__av">${avatar(p.nome)}</div><div><h3>${esc(p.nome)}</h3><p class="quem">${esc(p.quem)}</p><p>${esc(p.pt)}</p><p class="onde"><b>Onde:</b> ${esc(p.onde)} · ${p.dias.length} dias como personagem do dia</p><p class="bordao">“${esc(p.bordao)}”</p></div></div>`).join('');
@@ -88,49 +88,104 @@ pg('', `${placa('Os personagens', '03')}
 <div class="grade-pers">${pers}</div>
 <p class="nota">A descrição fixa em inglês de cada um e o prompt-base estão na aba "Personagens" da planilha. Apoios: o garçom do Rodízio (mascote de cabeça redonda, colete vermelho, gravata-borboleta navy) e o ônibus Road to America, que leva os seis nas datas especiais e no dia 365.</p>`);
 
+// 3b. consistência do elenco e cena enxuta
+const REF = P.referencias_personagens || { personagens: [] };
+const quem = (d) => d.personagem || d.anfitriao || 'sem personagem';
+const elenco = {};
+for (const d of dias) elenco[quem(d)] = (elenco[quem(d)] || 0) + 1;
+const linhasElenco = Object.entries(elenco).filter(([n]) => n !== 'sem personagem').sort((a, b) => b[1] - a[1])
+  .map(([n, c]) => `<tr><td><b>${esc(n)}</b></td><td>${c}</td><td>${((100 * c) / dias.length).toFixed(1).replace('.', ',')}%</td><td><small>${esc((REF.personagens.find((r) => r.nome === n) || {}).arquivo || '')}</small></td></tr>`).join('');
+pg('', `${placa('Elenco consistente, cena enxuta', '03b')}
+<p class="lead" style="margin-bottom:3mm">O mesmo personagem precisa sair igual em 40 imagens, e a cena precisa caber no tamanho de um polegar na tela do celular.</p>
+<div class="duas">
+  <div><h3>Folha de referência de cada personagem</h3><ol class="num">
+    <li>Uma vez, antes da estreia: gerar a folha (model sheet) dos ${REF.personagens.length} personagens no Nano Banana Pro, 2k, 16:9, com frente, perfil, três quartos e quatro expressões. O prompt de cada um está em <code>personagens-referencia.json</code> e na aba "Personagens" da planilha.</li>
+    <li>Salvar em <code>instagram/imagens/referencias/</code>, subir no Higgsfield e anotar o <code>media_id</code>.</li>
+    <li>Em toda imagem do dia, anexar a folha de cada personagem da cena em <code>medias</code>, com o papel <code>image_references</code>. O campo <code>personagem_referencia</code> do dia e a coluna "Referência do personagem" da planilha dizem quais folhas usar; o prompt já pede o personagem idêntico à folha.</li></ol>
+  <h3>Cena enxuta</h3><ul class="pontos">
+    <li>No máximo 3 elementos principais, um personagem em ação e fundo limpo.</li>
+    <li>As quatro alternativas nunca viram quatro objetos na cena.</li>
+    <li>Nenhum personagem, seta ou objeto aponta a resposta; as setinhas da quarta ficam num canto.</li>
+    <li>O validador estima os elementos de cada cena e bloqueia as carregadas demais.</li></ul></div>
+  <div><h3>Rodízio: ninguém passa de 15% do ano</h3>
+  <table class="tab mini"><thead><tr><th>Personagem do dia</th><th>Dias</th><th>Ano</th><th>Folha</th></tr></thead><tbody>${linhasElenco}</tbody></table>
+  <p class="nota">Teto de ${Math.floor(0.15 * dias.length)} dias por personagem, conferido pelo <code>validar-dias.mjs</code> no personagem do dia e nas imagens de questão. Os anfitriões dos quadros (Dona Térmica, Seu Allen, Garçom Espetinho e Dona Bússola) dividem o ano com os seis personagens de órgão e de ideia.</p></div>
+</div>`);
+
 // 4. rotina D e D+1
-const slidesPost = [
-  ['1', 'Capa', 'imagem da questão, quadro, Step, dia e gancho na placa verde'], ['2', 'Vinheta', 'caso em inglês e alternativas A a D'],
-  ['3', 'Responda', 'comente a letra ou responda no quiz; cartão do gabarito'], ['4', 'Resposta de ontem', 'carimbo com a letra de ontem'],
-  ['5', 'Por que está certa', 'explicação em português e termos-chave em inglês'], ['6', 'E as outras?', 'uma linha por alternativa errada'],
-  ['7', 'Macete', 'imagem do macete, cartão de revisão e o personagem'], ['8', 'CTA', 'cartão de embarque do simulado grátis e assinatura'],
-];
+const CV = P.conversao;
+const slidesPost = P.carrossel.completo.map((t, i) => [String(i + 1), t]);
 pg('', `${placa('A rotina D e D+1', '04')}
 <div class="linha-tempo">
-  <div class="lt"><b>11h50</b><span>Story "gabarito em 10 minutos" com o macete de ontem desfocado</span></div>
-  <div class="lt forte"><b>12h00</b><span>Feed: carrossel de 8 slides, questão de hoje e gabarito de ontem</span></div>
+  <div class="lt forte"><b>12h00</b><span>Feed: o gabarito de ontem abre o carrossel; a questão de hoje vem depois</span></div>
   <div class="lt"><b>12h01</b><span>Comentário fixado: a explicação completa de ontem</span></div>
-  <div class="lt forte"><b>12h05</b><span>Story com adesivo de quiz, quatro opções curtas</span></div>
-  <div class="lt"><b>12h06</b><span>Enquete "Você sabia ou chutou?"</span></div>
+  <div class="lt forte"><b>12h05</b><span>Story do gabarito: resultado da enquete de ontem e quiz de segunda chance, agora com o achado da vinheta</span></div>
+  <div class="lt forte"><b>12h06</b><span>Story da questão: enquete "Qual é a sua letra?", A a D em inglês, sem gabarito e sem pista</span></div>
+  <div class="lt"><b>12h07</b><span>Controle deslizante: quanta certeza você tem?</span></div>
   <div class="lt"><b>20h30</b><span>Resultado parcial sem revelar a letra, link para o post</span></div>
 </div>
 <div class="duas">
-  <div><h3>O carrossel do dia</h3><table class="tab mini"><tbody>${slidesPost.map(([n, a, b]) => `<tr><td class="dsem ${Number(n) > 3 ? 'gab' : ''}">${n}</td><td><b>${a}</b></td><td>${b}</td></tr>`).join('')}</tbody></table>
-  <p class="nota">Slides 1 a 3 são do dia D; 4 a 8 são o gabarito de D-1. No dia 1 o post tem só a questão. O render monta a pasta post-do-dia/ já nessa ordem.</p></div>
-  <div><h3>A legenda</h3><ol class="num">
-    <li>Gancho em uma linha, ligado à imagem.</li><li>Contexto em duas ou três linhas, sem dar a resposta.</li>
-    <li>"Comente A, B, C ou D. O gabarito sai amanhã às 12h."</li><li>Três a cinco palavras-chave neutras, em inglês, tiradas da vinheta.</li>
-    <li>Gabarito de ontem: a letra, a resposta e os termos da resposta (só aqui, no D+1).</li><li>CTA do dia.</li>
-    <li>${esc(P.assinatura.nome)}, ${esc(P.assinatura.crm)}.</li><li>Aviso: condutas dos EUA cobradas no USMLE, que podem diferir das brasileiras.</li><li>Cinco a oito hashtags.</li></ol>
-  <p class="nota">O horário das 12h pega o almoço de quem está no plantão ou no internato. Nas quatro primeiras semanas, teste 20h30 nas terças e quintas e fique com o horário de mais salvamentos por alcance.</p></div>
+  <div><h3>O carrossel: a recompensa primeiro</h3><table class="tab mini"><tbody>${slidesPost.map(([n, a]) => `<tr><td class="dsem ${Number(n) <= 4 ? 'gab' : ''}">${n}</td><td>${esc(a)}</td></tr>`).join('')}</tbody></table>
+  <p class="nota">Slides 1 a 4 são o gabarito de D-1; 5 a 8, a questão de D. Modo enxuto: ${esc(P.carrossel.enxuto.join(', ').toLowerCase())}. ${esc(P.carrossel.dia_1)}</p></div>
+  <div><h3>Por que um post, e não dois</h3><ul class="pontos">
+    <li><b>Recompensa rápida.</b> Quem respondeu ontem vê a letra no primeiro slide e, no mesmo gesto de arrastar, chega à questão de hoje.</li>
+    <li><b>Cabe numa pessoa.</b> Dois posts por dia seriam 730 publicações e o dobro de comentários para responder.</li>
+    <li><b>Comentários juntos.</b> A discussão de ontem e o palpite de hoje somam no mesmo post.</li>
+    <li><b>A capa ainda chama quem não segue.</b> Ela usa a imagem do macete (a revelação da cena) e anuncia o gancho da questão de hoje no pé do cartão.</li></ul>
+  <h3>A legenda</h3><ol class="num">
+    <li>"Ontem deu C. A de hoje:" e o gancho.</li><li>Gabarito de ontem: letra, resposta e termos da resposta (só aqui, no D+1).</li>
+    <li>Questão de hoje: contexto sem a resposta e palavras-chave neutras em inglês.</li><li>"Vote na enquete ou comente a letra. Gabarito amanhã, no primeiro slide."</li>
+    <li>CTA com palavra-chave, sem endereço escrito.</li><li>${esc(P.assinatura.nome)}, ${esc(P.assinatura.crm)}, aviso e hashtags.</li></ol></div>
 </div>`);
 
-// 5. stories e CTA
-pg('', `${placa('Stories e CTA', '05')}
+// 5. stories e conversão
+const pal = CV.automacao_dm.palavras;
+pg('', `${placa('Stories e conversão ativa', '05')}
 <div class="duas">
-  <div><h3>O quiz dos stories</h3>
-  <p>O adesivo de quiz aceita no máximo quatro opções, por isso toda questão tem A a D, com versão curta de até 30 caracteres para o adesivo. O story do quiz já sai pronto (story-quiz.png) com a área livre para o adesivo e um guia de posicionamento.</p>
-  <p>O quiz mostra a resposta certa para quem responde. Por isso a explicação completa fica para o D+1, e o story só confirma a letra. A enquete "Você sabia ou chutou?" faz o seguidor perceber o que não sabe.</p>
-  <p><b>Domingo, 18h:</b> placar da semana com as três questões de menor acerto e o link do simulado grátis.</p>
-  <p><b>Destaques fixos:</b> Step 1, Step 2 CK, Remix, Simulado grátis, Pré-inscrição.</p>
-  <div class="stories">${['story-quiz.png', 'story-quiz-guia.png'].map((f) => `<img src="${img(path.join(PASTA_INSTAGRAM, 'saida', 'dia-009', f))}">`).join('')}<p class="leg">Story do quiz do dia 9 e o guia de onde encaixar o adesivo (o guia não é postado).</p></div></div>
-  <div><h3>CTA por dia</h3><table class="tab mini"><thead><tr><th>Quando</th><th>CTA</th></tr></thead><tbody>
-    <tr><td>Terça, quinta e domingo</td><td><b>Simulado grátis de 30 minutos</b>: "Gostou do formato? Faça um bloco inteiro, grátis."</td></tr>
-    <tr><td>Domingo e datas do Match</td><td><b>Pré-inscrição</b>: "Quer estudar com método e acompanhamento?" Sem promessa de vaga, preço ou aprovação.</td></tr>
-    <tr><td>Primeira quarta do mês</td><td><b>Verificador de faculdade</b>: "Sua escola está habilitada para o USMLE? Confira em 1 minuto."</td></tr>
-    <tr><td>Outros dias</td><td><b>Salvar e compartilhar</b>: "Salve para o Remix de domingo e mande para quem vai fazer o Step com você."</td></tr>
+  <div><h3>Enquete no dia D, quiz no D+1</h3>
+  <p>${esc(P.stories.por_que)}</p>
+  <div class="stories">${['dia-008/story-gabarito.png', 'dia-009/story-enquete.png'].map((f) => `<img src="${img(path.join(PASTA_INSTAGRAM, 'saida', f))}">`).join('')}<p class="leg">12h05 do dia 9: resultado da enquete do dia 8 e quiz com a letra certa. 12h06: a enquete do dia 9, sem gabarito.</p></div></div>
+  <div><h3>Palavra-chave no comentário, link no direct</h3>
+  <table class="tab mini"><thead><tr><th>Palavra</th><th>O que chega no direct</th><th>Dias</th></tr></thead><tbody>
+    ${pal.map((w) => `<tr><td><b>${esc(w.palavra)}</b></td><td>${esc(w.entrega)}</td><td>${w.dias_com_cta}</td></tr>`).join('')}
   </tbody></table>
-  <p class="nota">Links nunca na legenda: só na bio e no adesivo de link, sempre com UTM (utm_source=instagram, utm_campaign=questao_de_embarque, utm_content=dia_NNN). O roteiro de cada dia, com os links prontos, está na coluna "Roteiro dos stories" da planilha e no stories.txt do render.</p></div>
+  <p class="nota">${esc(CV.regra_dos_links)} Ferramenta: ${esc(CV.automacao_dm.ferramenta.o_que_usar)} Cada mensagem termina com o aviso de privacidade e a palavra SAIR para parar. Textos completos na aba "Automação de DM" da planilha.</p>
+  <div class="caixa"><b>CTA por quadro.</b> Segunda e sexta MACETE; terça e quinta SIMULADO; quarta compartilhar (primeira quarta do mês, FACULDADE); sábado debate; domingo EMBARQUE. Na semana de inscrição do desafio, DESAFIO; no dia da live e no sábado antes, LIVE.</div></div>
+</div>`);
+
+// 5b. desafio e live
+pg('', `${placa('Desafio de 30 dias e live do mês', '05b')}
+<div class="duas">
+  <div><h3>${esc(CV.desafio.nome)}</h3>
+  <table class="tab mini"><thead><tr><th>Edição</th><th>Inscrição</th><th>Desafio</th><th>Encerramento</th></tr></thead><tbody>
+    ${CV.desafio.edicoes.map((e) => `<tr><td><b>${e.edicao}</b></td><td>${brc(e.inscricao[0])} a ${brc(e.inscricao[1])}</td><td><b>${br(e.inicio)} a ${br(e.fim)}</b><br><small>dias ${e.dia_inicio} a ${e.dia_fim}</small></td><td>live ${brc(e.live_de_encerramento)}</td></tr>`).join('')}
+  </tbody></table>
+  <ol class="num">${CV.desafio.regras.map((r) => `<li>${esc(r)}</li>`).join('')}</ol>
+  <p class="nota">${esc(CV.desafio.por_que_sem_premio)}</p>
+  <div class="stories">${['dia-015/story-desafio.png', 'dia-015/desafio-cartela.png'].map((f) => `<img src="${img(path.join(PASTA_INSTAGRAM, 'saida', f))}">`).join('')}<p class="leg">Story do dia 1 do desafio e a cartela que vai no direct.</p></div></div>
+  <div><h3>${esc(CV.lives.nome)}: uma por mês</h3>
+  <p>${esc(CV.lives.regra_da_data)}</p>
+  <div class="chips">${CV.lives.datas.map((d) => `<span><b>${brc(d)}</b> ${esc(CV.lives.horario)}</span>`).join('')}</div>
+  <h3>Roteiro de ${CV.lives.duracao_min} minutos</h3><ul class="pontos">${CV.lives.roteiro.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>
+  <h3>Preparo</h3><ul class="pontos">${CV.lives.preparo.map((r) => `<li>${esc(r)}</li>`).join('')}</ul></div>
+</div>`);
+
+// 5c. Reels semanais
+const RS = P.reels_semanais;
+const fq = path.join(PASTA_INSTAGRAM, '..', 'reels', 'out', 'semanais', 'capas');
+const capasR = ['semana-03.jpg', 'semana-04.jpg'].map((f) => path.join(fq, f)).filter((f) => fs.existsSync(f));
+const rDemo = RS.reels.find((r) => r.semana === 3) || RS.reels[0];
+const imgJ = (f) => `data:image/jpeg;base64,${b64(f)}`;
+pg('', `${placa('Reels semanais', '05c')}
+<p class="lead" style="font-size:10.5pt;margin-bottom:3mm">${esc(RS.descricao)}</p>
+<div class="duas" style="font-size:9pt">
+  <div><table class="tab mini" style="font-size:8pt"><thead><tr><th>Formato</th><th>Semanas</th><th>Como é</th></tr></thead><tbody>
+    ${Object.entries(RS.formatos).map(([k, f]) => `<tr><td><b>${esc(f.nome)}</b></td><td>${RS.numeros[k]}</td><td>${esc(f.descricao)}</td></tr>`).join('')}
+  </tbody></table>
+  <ul class="pontos" style="font-size:7.5pt;line-height:1.22;margin-top:1mm">${RS.regras.map((r) => `<li style="margin-bottom:1mm">${esc(r)}</li>`).join('')}</ul></div>
+  <div><div class="stories">${capasR.map((f) => `<img src="${imgJ(f)}" style="height:58mm;object-fit:cover;object-position:top">`).join('')}<p class="leg">Capas das amostras renderizadas: semana 3 (Pegadinha com o dado trocado, questão do dia 17) e semana 4 (Resultado no plano B, questão do dia 23). Também em reels/out/semanais/: semana 1 (POV) e semana 6 (Macete com a volta no Remix de 13/12).</p></div>
+  <h3 style="margin-top:2mm">Roteiro da semana ${rDemo.semana}: troque um dado e a resposta muda</h3><table class="tab mini" style="font-size:7.6pt;margin-bottom:2mm"><tbody>${rDemo.cenas.map((c) => `<tr><td class="dsem" style="font-size:10pt;padding:1mm 2mm">${c.inicio_s}s</td><td style="padding:1mm 2mm">${esc(c.texto_tela.replace(/\*/g, ''))}${c.opcoes ? `<br><small>${esc(c.opcoes.join(' · '))}</small>` : ''}</td></tr>`).join('')}</tbody></table>
+  <p class="nota" style="font-size:7.6pt">${RS.reels.length} ganchos diferentes, um por questão. Ilustrações do carrossel entram no lugar do avatar quando a imagem existe. Áudio: ${esc(rDemo.audio.sugestao)}</p></div>
 </div>`);
 
 // 6. métricas
@@ -143,6 +198,9 @@ const met = [
   ['Conversão', 'sessões, simulados e pré-inscrições com a UTM', 'Resultado do programa no funil.'],
   ['Alcance de não seguidores', '% do alcance', 'Crescimento do perfil.'],
   ['Comentários com letra', 'comentários com A, B, C ou D', 'Sinal para o algoritmo e termômetro de dúvida.'],
+  ['Volta no D+1', 'quiz das 12h05 / votos na enquete de ontem', 'Mede se a recompensa primeiro funciona.'],
+  ['Reels', 'alcance de não seguidores e retenção aos 3 s, por formato', 'Escolher o formato que mais traz gente nova.'],
+  ['Palavras-chave', 'comentários com cada palavra e cliques com utm_medium=dm', 'Qual CTA converte.'],
 ];
 pg('', `${placa('Métricas', '06')}
 <p class="lead">Planilha semanal, toda segunda antes do post, uma linha por dia (a aba Calendário já tem as colunas de alcance, salvamentos, respostas e acerto; a taxa de salvamento se calcula sozinha).</p>
@@ -162,18 +220,26 @@ pg('', `${placa('Regras de humor e compliance', '07')}
 <p class="nota">Nesses dias a capa troca a placa verde por navy, os personagens explicam sem gag e os prompts pedem tom calmo e respeitoso. No Setembro Amarelo, o CVV 188 entra na legenda e nos stories.</p>`);
 
 // 8. produção
-pg('', `${placa('Produção: imagens e posts', '08')}
-<div class="passos">
-  <div><b>1</b><h3>Validar</h3><p><code>node instagram/ferramentas/validar-dias.mjs</code> confere os 365 dias: calendário, duplicidade, letras, pistas da resposta, quiz, datas sensíveis, promessas, prompts e o render com o banco privado.</p></div>
-  <div><b>2</b><h3>Gerar as imagens</h3><p>Higgsfield, modelo Nano Banana Pro, 2k, 4:5. Copie o prompt pronto da aba "Prompts das imagens" (730 linhas) e salve como <code>dia-NNN.png</code> e <code>dia-NNN-macete.png</code> em <code>instagram/imagens/</code>.</p></div>
-  <div><b>3</b><h3>Conferir</h3><p>Sem texto na imagem, personagem igual ao da aba Personagens, terço de baixo liso (a placa do gancho cobre essa área) e nenhuma pista da resposta na imagem da questão.</p></div>
-  <div><b>4</b><h3>Renderizar</h3><p><code>node instagram/templates/render.mjs --intervalo 15-21</code> gera o carrossel, a legenda, o roteiro dos stories e o manifesto de cada dia em <code>instagram/saida/</code>.</p></div>
-  <div><b>5</b><h3>Agendar</h3><p>Poste a pasta <code>post-do-dia/</code> com a legenda.txt, fixe a explicação de ontem como comentário e siga o stories.txt. Marque os status na planilha.</p></div>
-</div>
-<div class="caixa"><b>Ritmo sugerido.</b> Toda segunda: gerar e conferir as imagens da semana seguinte, renderizar e agendar. Uma semana de antecedência dá tempo para refazer imagem e reconferir fonte. Datas móveis de 2027 (Carnaval 09/02, Páscoa 28/03, Match Day 19/03) e condutas de rastreamento são reconferidas uma semana antes do post.</div>
-<div class="nums-prod"><div><b>${N.dias}</b><span>dias escritos e validados</span></div><div><b>${N.imagens}</b><span>prompts prontos</span></div><div><b>${especiais.length}</b><span>dias com gancho de data</span></div><div><b>${N.remix}</b><span>remixes de domingo</span></div></div>`);
+const H = P.rotina.horas;
+pg('', `${placa('Produção para uma pessoa', '08')}
+<p class="lead">O conteúdo do ano já está escrito e validado. Toda semana sobra gerar as imagens, renderizar, agendar e aparecer nos stories. O que dá para fazer de uma vez vai para um dia de lote: a ${esc(P.rotina.dia_do_lote)}. ${esc(P.rotina.antecedencia)}</p>
+<table class="tab mini" style="font-size:8.2pt"><thead><tr><th>Dia</th><th>Modo completo</th><th>Modo enxuto</th></tr></thead><tbody>
+  ${P.rotina.semana.map((x) => `<tr><td class="dsem">${CURTO[x.dia]}</td><td>${x.completo.map(esc).join('<br>')}</td><td>${x.enxuto.map(esc).join('<br>')}</td></tr>`).join('')}
+</tbody></table>
+<div class="nums-prod"><div><b>${(H.completo.total_min / 60).toFixed(1).replace('.', ',')} h</b><span>por semana no completo</span></div><div><b>${(H.enxuto.total_min / 60).toFixed(1).replace('.', ',')} h</b><span>por semana no enxuto</span></div><div><b>${H.completo.imagens_por_semana} / ${H.enxuto.imagens_por_semana}</b><span>imagens por semana</span></div><div><b>${H.completo.stories_por_dia} / ${H.enxuto.stories_por_dia}</b><span>stories por dia</span></div></div>
+<p class="nota" style="margin-top:3mm">${esc(P.rotina.quando_usar_o_enxuto)} ${esc(H.implantacao_texto || '')} ${esc(H.primeiras_semanas || '')} A conta minuto a minuto está na aba "Rotina semanal" da planilha.</p>`);
 
 // 9. calendário mês a mês
+const reelPorData = new Map((P.reels_semanais?.reels || []).map((r) => [r.publicar_em, r]));
+const marcas = (d) => {
+  const m = [];
+  const r = reelPorData.get(d.data);
+  if (r) m.push(`<span class="tag rl">reel ${esc(r.formato_nome.toLowerCase())}</span>`);
+  if (d.live) m.push('<span class="tag lv">live 20h30</span>');
+  if (d.desafio && d.desafio.dia_do_desafio === 1) m.push(`<span class="tag ds">desafio ${d.desafio.edicao} começa</span>`);
+  else if (d.desafio && d.desafio.dia_do_desafio === 30) m.push(`<span class="tag ds">desafio ${d.desafio.edicao}: dia 30</span>`);
+  return m.length ? ' ' + m.join(' ') : '';
+};
 const porMes = new Map();
 for (const d of dias) {
   const k = d.data.slice(0, 7);
@@ -184,7 +250,7 @@ const meses = [...porMes.entries()];
 // novembro de 2027 (só o dia 365) vai junto com outubro
 const ult = meses.pop();
 meses[meses.length - 1][1].push(...ult[1]);
-const capaCal = `${placa('Calendário resumido', '09')}<p class="lead">Um mês por página. <span class="tag s1">S1</span> Step 1, <span class="tag s2">CK</span> Step 2 CK, <span class="tag rx">remix</span> revisão de domingo, <span class="tag ac">acolhedor</span> data sensível sem piada (linhas cinza e azuis); a estrela marca o gancho de data. A letra certa não aparece aqui, para o guia poder circular na equipe sem gabarito.</p>`;
+const capaCal = `${placa('Calendário resumido', '09')}<p class="lead">Um mês por página. <span class="tag s1">S1</span> Step 1, <span class="tag s2">CK</span> Step 2 CK, <span class="tag rx">remix</span> revisão de domingo, <span class="tag ac">acolhedor</span> data sensível sem piada (linhas cinza e azuis); a estrela marca o gancho de data. <span class="tag rl">reel</span> Reel da sexta, <span class="tag lv">live</span> live do mês, <span class="tag ds">desafio</span> começo e fim de cada edição do desafio. A letra certa não aparece aqui, para o guia poder circular na equipe sem gabarito.</p>`;
 {
   const resumo = meses.map(([k, lista]) => {
     const [a, m] = k.split('-');
@@ -197,7 +263,7 @@ const capaCal = `${placa('Calendário resumido', '09')}<p class="lead">Um mês p
 meses.forEach(([k, lista], i) => {
   const [a, m] = k.split('-');
   const titulo = `${MESES[Number(m) - 1]} de ${a}${lista.some((d) => d.data.startsWith('2027-11')) ? ' e 01/11/2027' : ''}`;
-  const linhas = lista.map((d) => `<tr class="${d.remix_de ? 'rx' : ''} ${d.tom === 'acolhedor' ? 'ac' : ''}"><td class="dt">${brc(d.data)}</td><td class="ds">${CURTO[d.dia_semana]}</td><td class="nd">${num3(d.dia)}</td><td class="qd">${QCURTO[d.quadro]}</td><td><span class="tag ${/2/.test(d.step) ? 's2' : 's1'}">${/2/.test(d.step) ? 'CK' : 'S1'}</span></td><td class="tp">${esc(d.remix_de ? 'Remix: ' + d.remix_de.map((x) => dias[x - 1].topico).join(', ') : d.topico)}${d.personagem ? ` <small>· ${esc(d.personagem)}</small>` : ''}</td><td class="gd">${d.gancho_data ? `★ ${esc(d.gancho_data.split(/[.(:]/)[0].slice(0, 46))}` : ''}</td></tr>`).join('');
+  const linhas = lista.map((d) => `<tr class="${d.remix_de ? 'rx' : ''} ${d.tom === 'acolhedor' ? 'ac' : ''}"><td class="dt">${brc(d.data)}</td><td class="ds">${CURTO[d.dia_semana]}</td><td class="nd">${num3(d.dia)}</td><td class="qd">${QCURTO[d.quadro]}</td><td><span class="tag ${/2/.test(d.step) ? 's2' : 's1'}">${/2/.test(d.step) ? 'CK' : 'S1'}</span></td><td class="tp">${esc(d.remix_de ? 'Remix: ' + d.remix_de.map((x) => dias[x - 1].topico).join(', ') : d.topico)}${d.personagem ? ` <small>· ${esc(d.personagem)}</small>` : ''}${marcas(d)}</td><td class="gd">${d.gancho_data ? `★ ${esc(d.gancho_data.split(/[.(:]/)[0].slice(0, 46))}` : ''}</td></tr>`).join('');
   pg('cal', `<div class="mes"><h2>${titulo}</h2><span>${lista.length} dias · Step 1 ${lista.filter((d) => /1/.test(d.step) && !/2/.test(d.step)).length} · Step 2 CK ${lista.filter((d) => /2/.test(d.step)).length}</span></div><table class="caltab"><tbody>${linhas}</tbody></table>`);
 });
 
@@ -295,8 +361,8 @@ ol.num{margin:1mm 0 3mm 5mm}ol.num li{margin-bottom:1.2mm}
 .caltab .qd{font-family:"Barlow Condensed";font-weight:700;font-size:9.5pt;width:15mm}
 .caltab .tp small{color:var(--tinta3)}
 .caltab .gd{font-size:7.4pt;color:#8a6a00;width:44mm}
-.tag{display:inline-block;font-family:"Overpass Mono";font-weight:600;font-size:6.6pt;padding:.2mm 1.2mm;border-radius:1mm;color:#fff;background:var(--navy)}
-.tag.s2{background:var(--vermelho)}.tag.rx{background:#8c98a8}.tag.ac{background:#5b7fb0}
+.tag{display:inline-block;white-space:nowrap;font-family:"Overpass Mono";font-weight:600;font-size:6.6pt;padding:.2mm 1.2mm;border-radius:1mm;color:#fff;background:var(--navy)}
+.tag.s2{background:var(--vermelho)}.tag.rx{background:#8c98a8}.tag.ac{background:#5b7fb0}.tag.rl{background:#8a6a00}.tag.lv{background:var(--verde)}.tag.ds{background:#00643a}
 .cal .lead{font-size:10pt;margin-bottom:4mm}
 .cal .placa{margin-bottom:4mm}
 `;

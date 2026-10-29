@@ -7,23 +7,23 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Malária por falciparum",
   "conceito": "Plasmodium falciparum: banana-shaped gametocytes, cytoadherence and cerebral malaria",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": "Semana do Dia Mundial da Malária (25/4).",
   "remix_de": null,
   "explicacao_em": "2027-04-20",
   "tom": null,
-  "gancho": "Macrô foi buscar no aeroporto um mosquito de *mala e cuia*",
-  "gancho_apoio": "Febre, convulsão e um esfregaço com um formato que entrega a espécie.",
+  "gancho": "A Capitã Plaqueta foi buscar no aeroporto um mosquito de *mala e cuia*",
+  "gancho_apoio": "Um esfregaço com um formato que entrega a espécie, e a Capitã de olho nas hemácias.",
   "imagem": {
     "arquivo": "dia-169.png",
-    "cena": "No desembarque internacional de um aeroporto, o Macrô, com a comanda em branco no bolso, segura uma plaquinha em branco e recebe um mosquito turista de chapéu de palha, óculos escuros e mala de rodinha. Atrás, na fila, hemácias (disquinhos vermelhos) esperam conversando.",
+    "cena": "No desembarque internacional de um aeroporto, a Capitã Plaqueta segura uma plaquinha em branco e recebe um mosquito turista de chapéu de palha e mala de rodinha. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô no desembarque do aeroporto recebe um mosquito turista de chapéu de palha e mala de rodinha."
+    "alt": "A Capitã Plaqueta recebe no desembarque um mosquito turista de chapéu de palha e mala de rodinha."
   },
   "imagem_macete": {
     "arquivo": "dia-169-macete.png",
-    "cena": "Num túnel estreito ao lado do aeroporto (o capilar), as hemácias com adesivos de velcro grudam nas paredes e formam um engarrafamento; num quiosque, um cacho de bananas em foice lembra os gametócitos. Macrô aponta para o velcro.",
-    "alt": "Hemácias com velcro grudam nas paredes de um túnel estreito; num quiosque, bananas em foice; Macrô aponta."
+    "cena": "Callback: num túnel estreito (o capilar), hemácias com adesivos de velcro grudam nas paredes e formam um engarrafamento, e a Capitã Plaqueta segura um cacho de bananas em forma de foice. Fundo limpo.",
+    "alt": "Hemácias de velcro grudam nas paredes de um túnel estreito; a Capitã segura bananas em forma de foice."
   },
   "questao": {
     "vinheta": "A 34-year-old engineer returned from Mozambique 12 days ago and now has fever, headache, confusion, and a generalized seizure. He took no chemoprophylaxis. Hemoglobin is 9.1 g/dL and platelets 62,000/mm3. A blood smear shows 8% parasitemia with multiple ring forms in single red cells and crescent-shaped gametocytes.",
@@ -34,15 +34,15 @@
         "quiz": "Babesia microti"
       },
       "B": {
-        "texto": "Plasmodium vivax",
+        "texto": "P. vivax",
         "quiz": "P. vivax"
       },
       "C": {
-        "texto": "Plasmodium malariae",
+        "texto": "P. malariae",
         "quiz": "P. malariae"
       },
       "D": {
-        "texto": "Plasmodium falciparum",
+        "texto": "P. falciparum",
         "quiz": "P. falciparum"
       }
     },
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Semana do Dia Mundial da Malária (25/4) no Bicho de Segunda. O viajante voltou de Moçambique sem profilaxia, com febre, confusão e convulsão, e o esfregaço traz um detalhe de formato que aponta a espécie.",
+    "contexto": "Semana do Dia Mundial da Malária (25/4) no Bicho de Segunda. O viajante voltou sem profilaxia, e o quadro, a parasitemia e o formato do gametócito estão na vinheta.",
     "palavras_chave": [
       "Mozambique travel",
       "seizure",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre, convulsão, 8% de parasitemia e gametócito em crescente: qual espécie?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, convulsão, 8% de parasitemia e gametócito em crescente: qual espécie?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

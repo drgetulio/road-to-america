@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje é Janeiro Branco, mês de cuidar da saúde mental. A questão pede o critério exato: quantos sintomas, por quanto tempo e quais não podem faltar.",
+    "contexto": "Hoje é Janeiro Branco, mês de cuidar da saúde mental. A questão pede o critério exato: quantos sintomas, por quanto tempo e quais não podem faltar. Se você está passando por um momento difícil, o CVV atende de graça pelo 188, a qualquer hora.",
     "palavras_chave": [
-      "sad mood",
-      "loss of interest",
-      "poor sleep",
-      "worthlessness"
+      "mental health",
+      "mood",
+      "diagnostic criteria",
+      "Janeiro Branco"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,12 +88,11 @@
       "#Psychiatry",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Cinco sintomas há 3 semanas, sem hipomania: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cinco sintomas há 3 semanas, sem hipomania: qual diagnóstico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

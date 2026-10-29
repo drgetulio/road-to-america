@@ -17,35 +17,35 @@
   "gancho_apoio": "Sibilo, crepitação e o Anki jurando que você já viu esse caso às 3 da manhã.",
   "imagem": {
     "arquivo": "dia-123.png",
-    "cena": "Garçom Espetinho, num quiosque de praia, abre em leque quatro espetinhos de queijo coalho: um com copinhos de nebulização, um com comprimidos, um com cápsulas e um com uma pera de borracha ao lado de um copo d'água. No balcão, um celular acende com quatro notificações em branco. A plaquinha verde e vermelha fica de lado, encostada no porta-guardanapo.",
+    "cena": "Num quiosque de praia, o Garçom Espetinho equilibra uma bandeja enquanto um celular no balcão não para de acender com notificações em branco. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho num quiosque de praia com quatro espetos; ao lado, um celular cheio de notificações."
+    "alt": "Garçom Espetinho equilibra uma bandeja num quiosque; no balcão, um celular não para de acender com notificações."
   },
   "imagem_macete": {
     "arquivo": "dia-123-macete.png",
-    "cena": "O Garçom vira o lado verde da plaquinha para o espeto da pera de borracha e do copo d'água e guarda os outros três no isopor, de tampa fechada. O celular agora está no modo avião.",
+    "cena": "Callback: o Garçom Espetinho serve só o espeto da pera de borracha e do copo d'água e guarda os outros no isopor, de tampa fechada; o celular do balcão está em modo avião. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A plaquinha verde fica com a pera de borracha e a água; os remédios vão para o isopor e o celular vai para o modo avião."
+    "alt": "O garçom serve só o espeto da pera de borracha e do copo d'água; os outros vão para o isopor."
   },
   "questao": {
     "vinheta": "A 4-month-old girl has had rhinorrhea and cough for 3 days. Temperature is 38.1°C, respirations are 48/min and SpO2 is 95% on room air. She has mild subcostal retractions with diffuse wheezes and fine crackles. She is breastfeeding a little less than usual and has normal wet diapers.",
     "pergunta": "Which is the most appropriate management?",
     "alternativas": {
       "A": {
-        "texto": "Nebulized albuterol",
-        "quiz": "Salbutamol inalado"
+        "texto": "Nebulized albuterol every 4 hours",
+        "quiz": "Nebulized albuterol"
       },
       "B": {
-        "texto": "Oral prednisolone",
-        "quiz": "Prednisolona oral"
+        "texto": "Oral prednisolone for 5 days",
+        "quiz": "Oral prednisolone"
       },
       "C": {
-        "texto": "Nasal suctioning and supportive care",
-        "quiz": "Aspirar e suporte"
+        "texto": "Suctioning and supportive care",
+        "quiz": "Supportive care"
       },
       "D": {
-        "texto": "Oral amoxicillin",
-        "quiz": "Amoxicilina oral"
+        "texto": "Oral amoxicillin for 10 days",
+        "quiz": "Oral amoxicillin"
       }
     },
     "correta": "C"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta, estação pediatria. Lactente de 4 meses, nariz escorrendo há 3 dias, sibilos difusos, saturação de 95% e mamando um pouco menos. O Garçom Espetinho passa com quatro espetos e só um vai para o prato.",
+    "contexto": "Rodízio de Quinta, estação pediatria: uma lactente com o nariz escorrendo há alguns dias e um grupo de WhatsApp da família com quatro receitas diferentes. Os sinais vitais e a mamada estão na vinheta. O Garçom Espetinho passa com quatro espetos e só um vai para o prato.",
     "palavras_chave": [
       "rhinorrhea and cough",
       "wheezes and crackles",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Lactente com sibilos, SpO2 95% e fraldas molhadas: qual a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lactente com sibilos, SpO2 95% e fraldas molhadas: qual a conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

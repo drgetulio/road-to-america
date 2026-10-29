@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-04",
   "tom": null,
-  "gancho": "No plantão, *passe torto* vira gol contra",
-  "gancho_apoio": "Os erros apareceram sempre na troca de turno. Qual mudança protege o paciente?",
+  "gancho": "Sábado Sem Viés: *uma revisão de segurança* e quatro propostas na mesa",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-244.png",
-    "cena": "Num campo de futebol, duas pranchetas com pernas e tênis trocam de lugar no meio do jogo. Uma chuta a bola de qualquer jeito e ela sai pela lateral, enquanto a outra corre perdida, olhando para o lado errado. Um apito de juiz pendurado na trave. O Viés, de trás de uma tabelinha 2x2 presa na trave, aproveita a confusão para entrar em campo.",
+    "cena": "Num campo de futebol, duas pranchetas com pernas e tênis trocam de lugar no meio do jogo e a bola sai pela lateral; o Viés espia de trás de uma tabelinha 2x2 presa na trave. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "No plantão, passe torto vira gol contra"
+    "alt": "Duas pranchetas trocam de lugar e a bola sai pela lateral; o Viés espia da trave"
   },
   "imagem_macete": {
     "arquivo": "dia-244-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Implement a standardized, structured handoff tool",
-        "quiz": "Handoff estruturado"
+        "quiz": "Structured handoff"
       },
       "B": {
         "texto": "Extend resident shifts to reduce the number of handoffs",
-        "quiz": "Plantões mais longos"
+        "quiz": "Longer resident shifts"
       },
       "C": {
         "texto": "Discipline the residents involved in each event",
-        "quiz": "Punir os envolvidos"
+        "quiz": "Discipline residents"
       },
       "D": {
         "texto": "Require attending cosignature of all overnight orders",
-        "quiz": "Cossinatura noturna"
+        "quiz": "Attending cosignature"
       }
     },
     "correta": "A"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*I-PASS*: o passe que o colega *devolve*",
       "apoio": "Lembre do campo: passe torto dá gol contra. No I-PASS a bola anda por cinco cones (gravidade, resumo, lista de ações, plano de contingência e síntese de quem recebe) e quem recebe devolve o toque, repetindo o plano.",
-      "fala": "Se você passou o plantão no corredor, eu entrei."
+      "fala": "Se você passou o plantão no corredor, eu entrei. Passagem no corredor é como resumo da véspera: parece completa até alguém fazer uma pergunta."
     }
   },
   "legenda": {
-    "contexto": "Os eventos adversos se concentram na troca de turno, e a passagem é feita no corredor. Qual mudança resolve de verdade?",
+    "contexto": "Sábado Sem Viés na segurança do paciente. Um hospital-escola revisou seus eventos adversos, e a vinheta conta quando eles aconteceram e como a equipe trabalha. Qual mudança protege o paciente?",
     "palavras_chave": [
-      "shift change",
+      "patient safety",
       "adverse events",
-      "pending results",
-      "teaching hospital"
+      "quality improvement",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que reduz erro na troca de turno?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O que reduz erro na troca de turno?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

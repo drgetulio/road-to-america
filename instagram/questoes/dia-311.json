@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Dystrophic calcification of necrotic smooth muscle",
-        "quiz": "Calcificação"
+        "quiz": "Dystrophic calcification"
       },
       "B": {
         "texto": "Hyaline deposition of plasma proteins in arterioles",
-        "quiz": "Hialinose"
+        "quiz": "Hyaline arteriolosclerosis"
       },
       "C": {
         "texto": "Uptake of native LDL through regulated LDL receptors",
-        "quiz": "Receptor de LDL"
+        "quiz": "Native LDL receptor uptake"
       },
       "D": {
-        "texto": "Uptake of oxidized LDL by macrophage scavenger receptors",
-        "quiz": "Receptor scavenger"
+        "texto": "Oxidized LDL uptake by scavenger receptors",
+        "quiz": "Scavenger receptor uptake"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Necropsia de um jovem de 24 anos mostra estrias amarelas e planas na íntima da aorta, com células de citoplasma espumoso. O Mito pergunta qual processo formou essas células.",
+    "contexto": "Quarta do Porquê na padaria: o Mito abriu o cano e achou sonhos recheados na parede. Quatro processos e a necropsia de um jovem; no NBME, \"most directly\" quer dizer o passo de dentro da célula, e não o fator de risco da família.",
     "palavras_chave": [
       "autopsy",
-      "abdominal aorta",
-      "yellow intimal streaks",
-      "young adult"
+      "vascular pathology",
+      "young adult",
+      "lipids"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Estria amarela na aorta aos 24 anos: de onde veio a célula espumosa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estria amarela na aorta aos 24 anos: de onde veio a célula espumosa?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

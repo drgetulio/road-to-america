@@ -17,67 +17,68 @@
   ],
   "explicacao_em": "2027-10-25",
   "tom": null,
-  "gancho": "A festa só toca IgM: *quem esqueceu de trocar a música?*",
-  "gancho_apoio": "Revisão de domingo com os dias 302, 330 e 351. Um parasita da cachoeira voltou, agora num lugar diferente.",
+  "gancho": "Domingo de revisão na festa: *o DJ sumiu e a pista esvaziou*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-357.png",
-    "cena": "Salão de festa em que a pista está cheia só de estrelas grandes de cinco pontas, todas iguais, dançando; no palco, um DJ de capuz, de costas para a pista, mexe no equipamento; o Macrô, de comanda em branco no bolso, olha a pista desconfiado; perto da mesa de salgadinhos, uma pera de dois olhinhos se esconde; num canto, um vinil pequeno encostado.",
+    "cena": "Salão de festa com a pista meio vazia; no palco, um DJ de capuz, de costas, mexe no equipamento; o Macrô, de comanda em branco no bolso, olha a pista desconfiado; perto da mesa de salgadinhos, uma pera de dois olhinhos se esconde; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "A festa só toca IgM: quem esqueceu de trocar a música?"
+    "alt": "Macrô olha a pista meio vazia de um salão de festa"
   },
   "imagem_macete": {
     "arquivo": "dia-357-macete.png",
-    "cena": "Callback: o DJ se vira e é um linfócito T de mãos vazias; no chão do palco, um pen drive quebrado, sem o conector; a tomada do linfócito B continua vazia; o Macrô aponta para o pen drive enquanto as estrelas de cinco pontas seguem dançando a mesma música.",
+    "cena": "Callback: no salão, uma fileira de linfócitos B redondos de beca espera na porta de uma fábrica de anticorpos com o portão trancado, sem conseguir entrar para virar plasmócito; a pera de dois olhinhos dança sozinha na pista; o Macrô aponta para o portão e o vinil gira no canto.",
     "foco": "50% 45%",
-    "alt": "Hiper-IgM: sem CD40L, não há troca de classe"
+    "alt": "Todas baixas, com B presente: imunodeficiência comum variável"
   },
   "questao": {
-    "vinheta": "A 2-year-old boy has had recurrent otitis media since age 8 months and 3 months of greasy, foul-smelling diarrhea; stool microscopy shows Giardia trophozoites. He is now hospitalized with Pneumocystis jirovecii pneumonia. Serum IgM is elevated, while IgG, IgA, and IgE are very low. His B-cell count is normal.",
-    "pergunta": "Which defect best explains his condition?",
+    "vinheta": "A 26-year-old woman has had recurrent sinusitis and two pneumonias in 3 years. She now has 4 weeks of greasy, foul-smelling diarrhea, and a stool antigen test is positive for Giardia. Serum IgG, IgA, and IgM are all low, and she did not respond to pneumococcal vaccine. Her B-cell count is normal.",
+    "pergunta": "Which defect best explains her condition?",
     "alternativas": {
       "A": {
-        "texto": "Defective CD40 ligand on T cells",
-        "quiz": "CD40L defeituoso"
+        "texto": "B cells cannot become plasma cells",
+        "quiz": "B to plasma cell failure"
       },
       "B": {
-        "texto": "Absent Bruton tyrosine kinase in B cells",
-        "quiz": "Falta de BTK"
+        "texto": "Absent CD40 ligand on T cells",
+        "quiz": "Absent CD40 ligand (T cell)",
+        "dia": 302
       },
       "C": {
-        "texto": "Absent adenosine deaminase",
-        "quiz": "Falta de ADA"
+        "texto": "Absent Bruton tyrosine kinase",
+        "quiz": "Absent BTK (B cell)"
       },
       "D": {
-        "texto": "Defective NADPH oxidase in phagocytes",
-        "quiz": "NADPH oxidase"
+        "texto": "Absent NADPH oxidase in phagocytes",
+        "quiz": "Absent NADPH oxidase"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Hiper-IgM: *sem CD40L, não há troca de classe*",
+    "titulo": "Todas baixas, com B presente: *imunodeficiência comum variável*",
     "certa": [
-      "IgM alta com IgG, IgA e IgE muito baixas, células B normais, pneumonia por *Pneumocystis* e giardíase crônica (dia 330) fecham *X-linked hyper-IgM syndrome* (dia 302). Sem o *CD40 ligand* do linfócito T, o CD40 do B não recebe o sinal e o *class switching* não acontece. O CD40L também ativa o macrófago, por isso aparecem oportunistas como Pneumocystis; a falta de IgA na mucosa deixa a Giardia se instalar."
+      "Infecções sinopulmonares de repetição, giardíase crônica (dia 330), IgG, IgA e IgM baixas e falta de resposta à vacina num adulto jovem com linfócitos B em número normal são a *common variable immunodeficiency*. Os B existem, mas não se diferenciam em *plasma cells*, e o anticorpo não sai. A falta de IgA na mucosa deixa a Giardia se instalar. Na hiper-IgM (dia 302), a IgM ficaria normal ou alta. O tratamento é a reposição de imunoglobulina. É o intruso do domingo."
     ],
     "termos": [
-      "X-linked hyper-IgM syndrome",
-      "CD40 ligand",
-      "class switching",
-      "Pneumocystis jirovecii"
+      "common variable immunodeficiency",
+      "B cells fail to become plasma cells",
+      "low IgG, IgA and IgM",
+      "poor vaccine response"
     ],
     "erradas": {
-      "B": "Sem *BTK* (agamaglobulinemia de Bruton), faltam as células B e todas as imunoglobulinas, inclusive a IgM.",
-      "C": "Sem *ADA* (SCID), faltam T e B, com infecções graves desde as primeiras semanas e linfopenia.",
-      "D": "Defeito da *NADPH oxidase* (doença granulomatosa crônica) dá abscessos por catalase-positivos, com imunoglobulinas normais."
+      "B": "Sem o CD40L (dia 302), não há troca de classe, mas a IgM fica normal ou alta, e o quadro começa na infância, com Pneumocystis.",
+      "C": "Na agamaglobulinemia de Bruton, faltam os linfócitos B no sangue, e a doença começa nos meninos depois dos 6 meses de vida.",
+      "D": "Na doença granulomatosa crônica, as imunoglobulinas são normais e as infecções são por germes catalase-positivos, com abscessos."
     },
     "macete": {
-      "frase": "*Hiper-IgM é o DJ sem pen drive*: sem CD40L, a festa só toca IgM",
-      "apoio": "O linfócito T entrega o pen drive (CD40L) ao CD40 do B para trocar a faixa de IgM para IgG, IgA e IgE (dia 302). Sem ele, IgM alta, o resto no chão e oportunistas como Pneumocystis e Cryptosporidium, além de Giardia de repetição (dia 330), que aproveita a falta de IgA no intestino. Bônus do dia 351: o S. pyogenes da febre puerperal é sensível à bacitracina.",
-      "fala": "Comi, mostrei, avisei. Mas ninguém trocou a música."
+      "frase": "*Tem B, mas não tem fábrica*: o linfócito não vira plasmócito e as três imunoglobulinas caem",
+      "apoio": "Na comum variável, o B aparece na contagem, mas não termina o curso de plasmócito; costuma surgir depois da adolescência. Sem IgA na mucosa, a Giardia faz festa. Bônus do dia 351: na febre puerperal pelo estreptococo do grupo A, quem salva é a pia, e não o anticorpo.",
+      "fala": "Comi, mostrei, avisei. Mas ninguém virou plasmócito para responder."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 302, 330 e 351. Menino de 2 anos com otites de repetição, diarreia gordurosa por Giardia e pneumonia por Pneumocystis, IgM alta, IgG, IgA e IgE muito baixas e células B normais. Qual mecanismo explica?",
+    "contexto": "Domingo de revisão: hiper-IgM (dia 302), giardíase (dia 330) e febre puerperal (dia 351) voltaram, e um intruso entrou na festa. Quatro defeitos imunológicos; a contagem de células B e as três imunoglobulinas da vinheta decidem.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -96,9 +97,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IgM alta, IgG baixa, Giardia e Pneumocystis aos 2 anos: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IgG, IgA e IgM baixas com B normal e Giardia: qual defeito?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

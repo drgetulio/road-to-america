@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-27",
-  "gancho": "O cartão de embarque diz uma coisa, e a *etiqueta* da mala diz outra",
+  "gancho": "Centro cirúrgico, paciente na maca e a Capitã Plaqueta com o *apito no bolso*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Capitã Plaqueta, de colete e apito, está num cruzamento de corredor de centro cirúrgico desenhado como estrada; diante dela, um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro. Ela leva o apito à boca, e uma pequena tabela 2x2 em branco aparece num quadro na parede.",
+    "cena": "Capitã Plaqueta, de colete e apito, está num corredor de centro cirúrgico desenhado como estrada, com uma prancheta de checklist em branco na mão. Uma pequena tabela 2x2 em branco aparece num quadro na parede.",
     "foco": "50% 35%",
-    "alt": "O cartão de embarque diz uma coisa, e a etiqueta da mala diz outra",
+    "alt": "Capitã Plaqueta num corredor de centro cirúrgico desenhado como estrada, com uma prancheta de checklist na mão.",
     "arquivo": "dia-055.png"
   },
   "imagem_macete": {
@@ -37,7 +37,7 @@
         "quiz": "Pause and verify"
       },
       "C": {
-        "texto": "Proceed and file an incident report afterward",
+        "texto": "Proceed now and file an incident report afterward",
         "quiz": "Report afterward"
       },
       "D": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sala de cirurgia, paciente ainda acordado e uma divergência entre o termo de consentimento e a escala. A Capitã Plaqueta tem um apito e uma pergunta: o que vem antes da incisão?",
+    "contexto": "Sábado Sem Viés de segurança do paciente: centro cirúrgico, equipe com pressa e um checklist que todo mundo acha chato até o dia em que ele salva alguém. O que vem antes da incisão?",
     "palavras_chave": [
+      "operating room",
       "preoperative verification",
-      "consent form",
-      "laterality discrepancy",
-      "patient safety"
+      "patient safety",
+      "teamwork"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#PatientSafety",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Termo diz esquerdo, escala diz direito: o que fazer antes da indução?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Termo diz esquerdo, escala diz direito: o que fazer antes da indução?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

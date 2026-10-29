@@ -13,18 +13,18 @@
   "explicacao_em": "2027-06-15",
   "tom": null,
   "gancho": "Dia do Doador: a Capitã Plaqueta *apitou um engano*",
-  "gancho_apoio": "Hemácia no bairro errado e reação em minutos. Qual anticorpo puxou o apito?",
+  "gancho_apoio": "Doar sangue leva menos tempo que um bloco do NBME e ajuda muito mais gente.",
   "imagem": {
     "arquivo": "dia-225.png",
-    "cena": "Capitã Plaqueta, de colete verde e apito, organiza um cruzamento onde carrinhos vermelhos de hemácia com selos de formas diferentes (triângulo, quadrado, os dois ou nenhum) seguem para um bairro de casinhas de telhado triangular. Um carrinho de selo quadrado pega a rua errada.",
+    "cena": "Capitã Plaqueta, de colete verde e apito, organiza um cruzamento por onde passam carrinhos vermelhos, cada um com um selo de forma diferente. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dia do Doador: a Capitã Plaqueta apitou um engano"
+    "alt": "Capitã Plaqueta organiza o cruzamento de carrinhos vermelhos com selos diferentes"
   },
   "imagem_macete": {
     "arquivo": "dia-225-macete.png",
-    "cena": "Callback: no bairro dos triângulos, uma estrela-do-mar amarela de cinco braços (a IgM) agarra o carrinho de selo quadrado na hora, e a Capitã Plaqueta apita forte. Em outra rua, um carrinho sem selo nenhum passa tranquilo por todos os bairros, cercado de coraçõezinhos de doação.",
+    "cena": "Callback: no bairro dos telhados triangulares, uma estrela-do-mar amarela de cinco braços (a IgM) agarra na hora um carrinho de selo quadrado, e a Capitã apita forte. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Anti-A e anti-B: IgM pronta desde a infância"
+    "alt": "A estrela-do-mar de cinco braços agarra o carrinho de selo quadrado e a Capitã apita"
   },
   "questao": {
     "vinheta": "A 27-year-old man with blood group A, Rh-positive, receives a unit of red cells intended for another patient. Within 10 minutes he has fever, chills, flank pain, hypotension, and dark red urine. The donor unit is group B. Direct antiglobulin test is positive.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Recipient IgE against donor plasma proteins",
-        "quiz": "IgE do receptor"
+        "quiz": "Recipient IgE"
       },
       "B": {
         "texto": "Donor anti-HLA antibodies against recipient leukocytes",
-        "quiz": "Anti-HLA do doador"
+        "quiz": "Donor anti-HLA"
       },
       "C": {
         "texto": "Recipient IgG anti-D antibodies",
-        "quiz": "IgG anti-D"
+        "quiz": "Recipient IgG anti-D"
       },
       "D": {
         "texto": "Recipient preformed IgM anti-B antibodies",
-        "quiz": "IgM anti-B pronta"
+        "quiz": "Recipient IgM anti-B"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "No Dia Mundial do Doador de Sangue, uma bolsa trocada: o receptor é A positivo e a bolsa era B. Em minutos, febre, dor lombar, hipotensão e urina escura. Qual anticorpo puxou o apito? E se você pode doar, hoje é um bom dia.",
+    "contexto": "No Dia Mundial do Doador de Sangue, a Capitã Plaqueta trabalha no banco de sangue. Uma transfusão dá errado, e a vinheta descreve o que aconteceu e em quanto tempo. Qual anticorpo puxou o apito? E se você pode doar, hoje é um bom dia.",
     "palavras_chave": [
-      "wrong blood unit",
-      "fever and chills",
-      "flank pain",
-      "dark urine"
+      "transfusion reaction",
+      "blood bank",
+      "antibodies",
+      "Step 1 immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Bolsa B em paciente A: qual anticorpo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bolsa B em paciente A: qual anticorpo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

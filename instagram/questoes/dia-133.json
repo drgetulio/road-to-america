@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Síndrome de DiGeorge (dia 50), Streptococcus pneumoniae (dia 106), HPV e câncer do colo do útero (dia 127)",
   "conceito": "Remix: DiGeorge syndrome + Streptococcus pneumoniae + HPV 16 and 18 oncogenesis",
-  "personagem": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": [
     50,
@@ -20,15 +20,15 @@
   "gancho_apoio": "Remix com DiGeorge (dia 50), pneumococo (dia 106) e HPV (dia 127) num caso só.",
   "imagem": {
     "arquivo": "dia-133.png",
-    "cena": "Macrô, de luvas de jardinagem e com a comanda em branco no bolso, arranca do canteiro uma erva daninha em forma de couve-flor, e ao lado brotam duas. No banco do jardim, três pacotinhos de sementes: um com uma bolinha de capa de chuva, um com uma bicicleta de dois freios e um com dois patinhos. Num canto, um pequeno vinil.",
+    "cena": "Mito, de luvas de jardinagem e café no bolso do jaleco, arranca do canteiro uma erva daninha em forma de couve-flor, e no mesmo lugar brotam duas. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô arranca uma erva daninha em forma de couve-flor e brotam duas; três pacotinhos de sementes no banco."
+    "alt": "Mito arranca uma erva daninha em forma de couve-flor do canteiro, e no lugar brotam duas."
   },
   "imagem_macete": {
     "arquivo": "dia-133-macete.png",
-    "cena": "Ao lado do canteiro aparece o quartel dos linfócitos T, pequenininho e com a guarita vazia. Macrô aponta para ele; os pacotinhos da capa de chuva e da bicicleta ganham um X vermelho.",
+    "cena": "Callback: ao lado do canteiro aparece o quartel dos linfócitos T, pequenininho e com a guarita vazia, e o Mito olha para ele de regador na mão enquanto as couves-flores continuam brotando. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Ao lado do canteiro, um quartel minúsculo com a guarita vazia; Macrô aponta, e os outros pacotinhos levam um X."
+    "alt": "Ao lado do canteiro, um quartel de linfócitos T pequenininho e com a guarita vazia; o Mito olha de regador na mão."
   },
   "questao": {
     "vinheta": "A 4-year-old girl with 22q11.2 deletion syndrome has had recurrent oral candidiasis since infancy and was treated for neonatal hypocalcemia. She now has dozens of common warts on both hands that recur after every treatment.",
@@ -36,21 +36,21 @@
     "alternativas": {
       "A": {
         "texto": "Polysaccharide capsule that resists phagocytosis",
-        "quiz": "Cápsula contra fagocitose",
+        "quiz": "Capsule vs phagocytosis",
         "dia": 106
       },
       "B": {
         "texto": "Failed B-cell maturation from BTK mutation",
-        "quiz": "Falta de BTK (célula B)"
+        "quiz": "BTK defect (B cells)"
       },
       "C": {
         "texto": "Viral E6 protein degrading host p53",
-        "quiz": "E6 degrada p53",
+        "quiz": "E6 degrades p53",
         "dia": 127
       },
       "D": {
         "texto": "T-cell deficiency from thymic hypoplasia",
-        "quiz": "Pouco T (timo hipoplásico)",
+        "quiz": "T-cell deficiency",
         "dia": 50
       }
     },
@@ -75,11 +75,11 @@
     "macete": {
       "frase": "Verruga demais é *falta de T*, não excesso de vírus: na 22q11.2 o quartel do timo veio pequeno",
       "apoio": "Bônus do remix: pneumococo é \"opto-sim\" e o baço é o porteiro contra a cápsula; E6 com p53, E7 com Rb.",
-      "fala": "Comi, mostrei, avisei. Mas sem T no quartel, ninguém veio buscar o pedido."
+      "fala": "Sem oxigênio eu não trabalho; sem linfócito T, ninguém tira verruga do canteiro."
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: uma menina de 4 anos com deleção 22q11.2, sapinho de repetição desde bebê e verrugas que voltam depois de cada tratamento. Três conceitos já vistos disputam a explicação.",
+    "contexto": "Remix de Domingo com o Mito de jardineiro: uma menina de 4 anos e verrugas que voltam depois de cada tratamento. Três conceitos já vistos disputam a explicação. A síndrome dela está na vinheta, e a pergunta é se o problema é o vírus ou a defesa.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,9 +93,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Deleção 22q11.2, sapinho e verrugas que sempre voltam: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Deleção 22q11.2, sapinho e verrugas que sempre voltam: qual mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

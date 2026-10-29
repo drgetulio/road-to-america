@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-15",
   "tom": null,
-  "gancho": "A régua da HbA1c desceu, e o *Viés* jura que o teste melhorou em tudo. Melhorou?",
+  "gancho": "Dia Mundial do Diabetes: a *régua* da HbA1c mudou de lugar. Quem ganha e quem perde?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-013.png",
-    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, está num barquinho num lago calmo segurando duas redes de pesca, uma de malha larga e outra de malha bem fina. Embaixo da água, peixinhos nadam misturados com um chinelo velho, uma garrafa e um envelope em branco cheio de recibos.",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, está num barquinho num lago calmo segurando duas redes de pesca, uma de malha larga e outra de malha bem fina, sem decidir qual jogar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A régua da HbA1c desceu, e o Viés jura que o teste melhorou em tudo. Melhorou?"
+    "alt": "O Viés, num barquinho, segura duas redes de pesca: uma de malha larga e outra de malha fina."
   },
   "imagem_macete": {
     "arquivo": "dia-013-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Higher sensitivity and lower specificity",
-        "quiz": "Sens.↑ Espec.↓"
+        "quiz": "Sens ↑, Spec ↓"
       },
       "B": {
         "texto": "Lower sensitivity and higher specificity",
-        "quiz": "Sens.↓ Espec.↑"
+        "quiz": "Sens ↓, Spec ↑"
       },
       "C": {
         "texto": "Higher sensitivity and higher specificity",
-        "quiz": "Sens.↑ Espec.↑"
+        "quiz": "Sens ↑, Spec ↑"
       },
       "D": {
         "texto": "Higher positive and lower negative predictive value",
-        "quiz": "VPP↑ VPN↓"
+        "quiz": "PPV ↑, NPV ↓"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, o ponto de corte da HbA1c desce de 6,5% para 6,0%; o exame e a população continuam os mesmos. Leia as quatro alternativas com calma: o Viés está no barco.",
+    "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a régua da HbA1c mudou de lugar, e o exame e a população continuam os mesmos. Leia as quatro alternativas com calma: o Viés está no barco, e a pressa de quem faz bioestatística no fim do bloco é o anzol dele.",
     "palavras_chave": [
       "HbA1c",
       "screening program",
@@ -90,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "O corte da HbA1c caiu de 6,5% para 6,0%: o que muda no teste?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O corte da HbA1c caiu de 6,5% para 6,0%: o que muda no teste?"
   },
   "exemplo": false
 }

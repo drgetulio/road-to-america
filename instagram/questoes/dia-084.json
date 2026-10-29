@@ -15,16 +15,16 @@
     78
   ],
   "explicacao_em": "2027-01-25",
-  "gancho": "Tosse com sangue, urina escura e *complemento intacto*: quem passou por aqui?",
+  "gancho": "Rim e pulmão de novo no cartório, e o Seu Néfron com *três carimbos* conhecidos",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Néfron, de óculos na ponta do nariz, confere no cartório dois carimbos borrados de vermelho: um com o desenho de um rim e outro com o desenho de um pulmão. Na mesa, um tubo de pasta de dente, uma fatura de cartão em branco e uma camisa de time sem número. Um vinil pequeno no canto.",
+    "cena": "Seu Néfron, de óculos na ponta do nariz, confere no cartório dois carimbos borrados de vermelho, um com o desenho de um rim e outro com o desenho de um pulmão. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron confere dois carimbos borrados, um de rim e um de pulmão; na mesa, um tubo de pasta de dente, uma fatura em branco e uma camisa de time.",
+    "alt": "Seu Néfron confere no cartório dois carimbos borrados de vermelho, um de rim e um de pulmão.",
     "arquivo": "dia-084.png"
   },
   "imagem_macete": {
-    "cena": "Callback do cartório: o tubo de pasta de dente desenha uma linha contínua e lisa por um carpete de malha que passa por baixo de uma mesa em forma de rim e de uma mesa em forma de pulmão. A fatura do cartão segue fechada, e a camisa do time fica no varal.",
+    "cena": "Callback do cartório: o tubo de pasta de dente desenha uma linha contínua e lisa por um carpete de malha que passa por baixo de uma mesa em forma de rim e de uma mesa em forma de pulmão. Uma fatura de cartão segue fechada, e uma camisa de time fica no varal.",
     "alt": "O tubo de pasta de dente traça uma linha contínua por um carpete que passa sob uma mesa de rim e uma de pulmão.",
     "arquivo": "dia-084-macete.png"
   },
@@ -77,7 +77,7 @@
     }
   },
   "legenda": {
-    "contexto": "Uma semana de hemoptise e urina escura num homem de 23 anos, C3 normal e ANCA negativo. Três conceitos já vistos voltam juntos: a pasta de dente em linha, a fatura que chega depois e o time sem zagueiro. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Domingo de revisão juntando a pasta de dente em linha (dia 15), o time sem zagueiro (dia 50) e a fatura que chega depois (dia 78), mais um intruso. Cada alternativa que já apareceu leva o selo do dia, e os exames da vinheta separam as quatro.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -91,12 +91,11 @@
       "#Nephrology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Hemoptise, cilindros hemáticos, C3 normal e ANCA negativo: mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hemoptise, cilindros hemáticos, C3 normal e ANCA negativo: mecanismo?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

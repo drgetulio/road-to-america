@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-22",
-  "gancho": "Bebê de 9 meses comemorando *igual gol do Brasil*: festa ou alerta?",
+  "gancho": "Puericultura no Rodízio de Quinta: o Garçom Espetinho traz o *espeto do desenvolvimento*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Garçom Espetinho, com a plaquinha verde e vermelha de lado, passa com espetos por uma casinha. Na janela, um ursinho de pelúcia abre os dois braços como quem comemora gol. Na calçada, um caminhão de mudança espera com caixas, e um calendário na parede mostra várias folhas, sem números.",
+    "cena": "Garçom Espetinho, com a plaquinha verde e vermelha de lado, passa com espetos por uma casinha onde um ursinho de pelúcia brinca na janela. Um calendário de parede, sem números, mostra várias folhas.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho passa por uma casinha onde um ursinho abre os braços na janela; na calçada, um caminhão de mudança espera.",
+    "alt": "Garçom Espetinho passa com espetos por uma casinha onde um ursinho de pelúcia brinca na janela.",
     "arquivo": "dia-081.png"
   },
   "imagem_macete": {
@@ -42,7 +42,7 @@
         "quiz": "Infantile spasms"
       },
       "D": {
-        "texto": "Upper brachial plexus injury",
+        "texto": "Upper brachial plexus injury (Erb palsy)",
         "quiz": "Brachial plexus"
       }
     },
@@ -71,11 +71,11 @@
     }
   },
   "legenda": {
-    "contexto": "Consulta de puericultura, um bebê de 9 meses que ainda não senta sem apoio e um movimento dos dois braços quando a cabeça cai para trás. O Garçom Espetinho traz o espeto de pediatria: como ler esse movimento aos 9 meses?",
+    "contexto": "Rodízio de Quinta na puericultura: um bebê de 9 meses e um achado do exame neurológico que a prova adora. O Garçom Espetinho quer saber como ler esse movimento, e a tabela de marcos que você jurou decorar vai ajudar.",
     "palavras_chave": [
       "well-child visit",
-      "cannot sit without support",
-      "infant reflexes",
+      "infant",
+      "neurologic exam",
       "motor milestones"
     ],
     "hashtags": [
@@ -86,12 +86,11 @@
       "#RodizioDeQuinta",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Braços abrem com a queda da cabeça aos 9 meses: como interpretar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Braços abrem com a queda da cabeça aos 9 meses: como interpretar?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -14,17 +14,17 @@
   "explicacao_em": "2027-04-29",
   "tom": null,
   "gancho": "A fábrica de chocolate do cérebro *apagou* metade das luzes",
-  "gancho_apoio": "Tremor de repouso, lentidão, roda denteada e ótima resposta à levodopa.",
+  "gancho_apoio": "Seu Allen abriu a planta da fábrica para ver o que entope os corredores.",
   "imagem": {
     "arquivo": "dia-178.png",
-    "cena": "Uma fábrica de chocolate escuro em corte, estilo manual de montagem, com esteiras que produzem balinhas e um caminhãozinho de entregas na porta, pronto para levar a carga a um salão vizinho onde bonequinhos dançam. Seu Allen, de prancheta, confere a planta.",
+    "cena": "Uma fábrica de chocolate escuro em corte, estilo manual de montagem, com um caminhãozinho de entregas parado na porta; Seu Allen, de prancheta, confere a planta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Fábrica de chocolate em corte com esteiras e um caminhão de entregas; Seu Allen confere a planta."
+    "alt": "Fábrica de chocolate escuro em corte com um caminhão de entregas na porta; Seu Allen confere a planta."
   },
   "imagem_macete": {
     "arquivo": "dia-178-macete.png",
-    "cena": "Metade da fábrica está com as luzes apagadas e as paredes desbotadas de marrom para bege; nos cômodos que restam, caixas redondas cor-de-rosa lotam os corredores. O caminhão sai quase vazio, e no telhado encaixam um tanque de reabastecimento.",
-    "alt": "Metade da fábrica apagada e desbotada, caixas cor-de-rosa nos corredores; o caminhão sai quase vazio."
+    "cena": "Callback: metade da fábrica está de luz apagada e com as paredes desbotadas, e nos corredores que restam se amontoam caixas redondas cor-de-rosa; Seu Allen tira uma delas do caminho. Fundo limpo.",
+    "alt": "Metade da fábrica apagada e desbotada; caixas cor-de-rosa lotam os corredores e Seu Allen tira uma."
   },
   "questao": {
     "vinheta": "A 67-year-old man has a 2-year history of a resting tremor in his right hand that lessens with movement, slowness when buttoning shirts, and cogwheel rigidity. His symptoms improve markedly with carbidopa-levodopa.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Neurofibrillary tangles of hyperphosphorylated tau",
-        "quiz": "Emaranhados de tau"
+        "quiz": "Tau tangles"
       },
       "B": {
-        "texto": "Loss of pigmented neurons with alpha-synuclein Lewy bodies",
-        "quiz": "Corpos de Lewy"
+        "texto": "Pigmented neuron loss with Lewy bodies",
+        "quiz": "Lewy bodies"
       },
       "C": {
         "texto": "Round argyrophilic tau inclusions (Pick bodies)",
-        "quiz": "Corpos de Pick"
+        "quiz": "Pick bodies"
       },
       "D": {
         "texto": "Intranuclear huntingtin aggregates",
-        "quiz": "Huntingtina"
+        "quiz": "Huntingtin aggregates"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê na fábrica de chocolate do cérebro. Tremor de repouso, lentidão, rigidez em roda denteada e ótima resposta à levodopa. O que o patologista vai ver na substância negra?",
+    "contexto": "Quarta do Porquê na fábrica de chocolate do cérebro. O exame neurológico e a resposta ao remédio estão na vinheta. O que o patologista vai ver no cérebro?",
     "palavras_chave": [
       "resting tremor",
       "bradykinesia",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Tremor de repouso que melhora com levodopa: qual achado na substância negra?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tremor de repouso que melhora com levodopa: qual achado na substância negra?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

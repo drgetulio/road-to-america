@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-09",
   "tom": null,
-  "gancho": "Cinco dias de febre e *o bloco CRASH* desfilando na avenida",
-  "gancho_apoio": "Criança de 3 anos, febre que não cede e o checklist que todo pediatra canta de cor.",
+  "gancho": "Sextou na Farmácia: *a febre não vai embora* e a Tia separou dois frascos",
+  "gancho_apoio": "Sextou na Farmácia com pediatria: a Tia Meia-Vida tem quatro opções no balcão.",
   "imagem": {
     "arquivo": "dia-341.png",
-    "cena": "Tia Meia-Vida atrás do balcão; pela janela passa um bloquinho de Carnaval de brinquedos; no balcão, uma caixa de pistas: um ursinho de olhos vermelhos, um morango rachado, um par de luvas vermelhas inchadas e um termômetro com cinco velinhas; dois frascos tampados atrás dela.",
+    "cena": "Tia Meia-Vida atrás do balcão; pela janela passa um bloquinho de Carnaval de brinquedos; no balcão, um termômetro de brinquedo; dois frascos tampados atrás dela.",
     "foco": "50% 35%",
-    "alt": "Cinco dias de febre e o bloco CRASH desfilando na avenida"
+    "alt": "Tia Meia-Vida vê um bloquinho de brinquedos passar pela janela"
   },
   "imagem_macete": {
     "arquivo": "dia-341-macete.png",
@@ -32,20 +32,20 @@
     "pergunta": "Which is the most appropriate pharmacotherapy?",
     "alternativas": {
       "A": {
-        "texto": "Oral amoxicillin",
-        "quiz": "Amoxicilina"
+        "texto": "Oral amoxicillin for 10 days",
+        "quiz": "Oral amoxicillin"
       },
       "B": {
-        "texto": "Intravenous immunoglobulin plus aspirin",
-        "quiz": "IVIG + aspirina"
+        "texto": "IV immunoglobulin plus aspirin",
+        "quiz": "IVIG + aspirin"
       },
       "C": {
         "texto": "Oral prednisolone alone",
-        "quiz": "Só prednisolona"
+        "quiz": "Prednisolone alone"
       },
       "D": {
-        "texto": "Ibuprofen and observation",
-        "quiz": "Ibuprofeno"
+        "texto": "Ibuprofen and close observation",
+        "quiz": "Ibuprofen, observe"
       }
     },
     "correta": "B"
@@ -73,19 +73,19 @@
     }
   },
   "legenda": {
-    "contexto": "Seis dias de febre sem ceder, olhos vermelhos sem secreção, lábios rachados, mãos e pés inchados e um linfonodo no pescoço. Qual é o tratamento?",
+    "contexto": "Sextou na Farmácia com pediatria: uma febre que não vai embora e quatro opções no balcão, do \"só observa\" ao antibiótico. A vinheta tem os achados do exame físico, um por um, e cada um conta.",
     "palavras_chave": [
-      "fever for 6 days",
-      "conjunctival injection",
-      "cracked lips",
-      "swollen hands and feet"
+      "pediatrics",
+      "prolonged fever",
+      "emergency department",
+      "pharmacotherapy"
     ],
     "hashtags": [
       "#USMLE",
       "#USMLEStep2CK",
       "#Pediatria",
       "#Pediatrics",
-      "#Kawasaki",
+      "#Farmacologia",
       "#QuestaoDoDia",
       "#RoadToAmerica"
     ],
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre há 6 dias, lábios rachados e mãos inchadas: qual tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre há 6 dias, lábios rachados e mãos inchadas: qual tratamento?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

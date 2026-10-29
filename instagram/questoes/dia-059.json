@@ -15,9 +15,9 @@
   "gancho": "Meio do ciclo, fogos no céu: quem acendeu o *pavio*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um painel de controle de fogos de artifício na praia, à noite, com uma alavanca de pedal ainda na posição de freio; o Seu Allen, de avental de marceneiro, confere o painel com setinhas de manual em volta da alavanca, enquanto uma plateia de bolinhas cresce em volume.",
+    "cena": "Na praia, à noite, o Seu Allen, de avental de marceneiro, confere um painel de controle de fogos de artifício com setinhas de manual em volta, enquanto uma plateia de bolinhas espera o show.",
     "foco": "50% 35%",
-    "alt": "Meio do ciclo, fogos no céu: quem acendeu o pavio?",
+    "alt": "Seu Allen confere um painel de controle de fogos de artifício na praia, à noite, enquanto uma plateia espera o show.",
     "arquivo": "dia-059.png"
   },
   "imagem_macete": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Fase folicular, estradiol subindo sem parar e, de repente, um hormônio que dispara. Na véspera da véspera do Ano Novo, o Seu Allen abre o manual do ciclo para achar a peça que virou o jogo.",
+    "contexto": "Quarta do Porquê na véspera da véspera do Ano Novo: o ciclo menstrual tem o seu próprio show de fogos, e o Seu Allen abre o manual para achar a peça que acende o pavio. Fisiologia endócrina, a matéria que você jurou revisar depois do réveillon.",
     "palavras_chave": [
       "menstrual cycle",
-      "late follicular phase",
-      "estradiol",
-      "hypothalamic-pituitary-ovarian axis"
+      "ovulation",
+      "reproductive endocrinology",
+      "hormones"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#Ginecologia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Estradiol acima de 200 por 2 dias: o que explica o pico de LH?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estradiol acima de 200 por 2 dias: o que explica o pico de LH?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

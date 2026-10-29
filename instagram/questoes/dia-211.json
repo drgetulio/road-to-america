@@ -7,24 +7,24 @@
   "sistema": "Processos e doenças multissistêmicos",
   "topico": "Doença do enxerto contra o hospedeiro",
   "conceito": "Graft-versus-host disease: donor T cells attack skin, liver and gut",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-01",
   "tom": null,
-  "gancho": "A medula nova pegou, e *a casa inteira* começou a reclamar",
-  "gancho_apoio": "Três semanas depois do transplante, a pele, o fígado e o intestino reclamaram. Quem está atacando quem?",
+  "gancho": "Bicho de Segunda no transplante: *três semanas depois*, um problema novo",
+  "gancho_apoio": "Transplante no Step 1: quatro tipos de reação, uma tabela e muita confusão na hora da prova.",
   "imagem": {
     "arquivo": "dia-211.png",
-    "cena": "Macrô, de comanda no bolso, faz a portaria de um pequeno estádio e vê descer de um ônibus uma torcida de bolinhas azuis de cachecol, com mochilas e bandeiras. O estádio da casa ainda está intacto, e ninguém sabe o que eles vieram fazer.",
+    "cena": "Capitã Plaqueta, de colete e quepe, espera na portaria de um hospital com uma prancheta em branco, olhando a rua vazia. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A medula nova pegou, e a casa inteira começou a reclamar"
+    "alt": "Capitã Plaqueta espera na portaria do hospital com uma prancheta em branco"
   },
   "imagem_macete": {
     "arquivo": "dia-211-macete.png",
-    "cena": "Callback: a torcida visitante tira das mochilas rolos e baldes de tinta e pinta de azul três lugares do estádio da casa: o revestimento da fachada (pele), a cozinha da lanchonete (fígado) e os canos do vestiário (intestino). O Macrô, de queixo caído, aponta para o ônibus de onde eles vieram.",
+    "cena": "Callback: uma torcida visitante de bolinhas azuis desce de um ônibus e pinta de azul a fachada, a cozinha e os canos de um estádio (pele, fígado e intestino), e a Capitã apita, espantada. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Aqui é o enxerto que ataca o hospedeiro"
+    "alt": "A torcida visitante pinta de azul a fachada, a cozinha e os canos do estádio; a Capitã apita"
   },
   "questao": {
     "vinheta": "A 45-year-old man treated for acute myeloid leukemia received an allogeneic hematopoietic stem cell transplant 3 weeks ago, and his neutrophil count is recovering. He now has a pruritic maculopapular rash on the palms and ears, profuse watery diarrhea, and a conjugated bilirubin of 4.1 mg/dL.",
@@ -35,15 +35,15 @@
         "quiz": "Hyperacute rejection"
       },
       "B": {
-        "texto": "Acute cellular rejection",
-        "quiz": "Acute rejection"
+        "texto": "Acute cellular rejection of the graft",
+        "quiz": "Acute cellular rejection"
       },
       "C": {
         "texto": "Acute graft-versus-host disease",
         "quiz": "Acute GVHD"
       },
       "D": {
-        "texto": "Chronic rejection",
+        "texto": "Chronic allograft rejection",
         "quiz": "Chronic rejection"
       }
     },
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "Na GVHD, a torcida visitante pinta *pele, fígado e intestino*",
       "apoio": "Na imagem, os linfócitos T chegam no ônibus do doador e repintam a fachada, a cozinha e os canos do estádio da casa. Rejeição é a casa expulsando o visitante; GVHD é o visitante querendo mandar na casa.",
-      "fala": "Comi, mostrei, avisei: dessa vez quem invadiu foi a torcida do doador."
+      "fala": "Parou, colou, coagulou... mas essa torcida chegou no ônibus do doador."
     }
   },
   "legenda": {
-    "contexto": "Transplante de medula há três semanas, contagem voltando, e agora manchas nas palmas, diarreia aquosa e bilirrubina alta. O Macrô quer saber quem está atacando quem.",
+    "contexto": "Bicho de Segunda na imunologia do transplante, com a Capitã Plaqueta de visita. O tipo de transplante, o tempo e os órgãos atingidos estão na vinheta. Quem está atacando quem?",
     "palavras_chave": [
-      "acute myeloid leukemia",
-      "stem cell transplant",
-      "rash on palms",
-      "conjugated bilirubin"
+      "transplant immunology",
+      "T cells",
+      "complication",
+      "Step 1 immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Rash, diarreia e icterícia após o TMO: o que é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rash, diarreia e icterícia após o TMO: o que é?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

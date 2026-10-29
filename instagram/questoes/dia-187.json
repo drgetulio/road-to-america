@@ -12,34 +12,34 @@
   "remix_de": null,
   "explicacao_em": "2027-05-08",
   "tom": null,
-  "gancho": "Sextou com a Capitã: uma viatura *apagou antes de todo mundo*, e a pele pagou o pato",
+  "gancho": "Sextou com a Capitã: anticoagulante novo na receita e *uma complicação que cai em prova*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-187.png",
-    "cena": "Capitã Plaqueta, intrigada, no meio de um cruzamento: uma das duas pequenas viaturas de patrulha apagou de repente, enquanto quatro carrinhos coloridos e a outra viatura seguem devagar, com a luz de bateria fraca piscando. Em cima do semáforo, uma ampulheta pequena.",
+    "cena": "Capitã Plaqueta, no meio de um cruzamento, segura uma receita nova contra a luz e franze a testa; em cima do semáforo, uma ampulheta pequena. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta, intrigada, vê uma viatura apagar antes dos outros carros"
+    "alt": "Capitã Plaqueta franze a testa para uma receita nova no meio do cruzamento"
   },
   "imagem_macete": {
     "arquivo": "dia-187-macete.png",
-    "cena": "Aparece o culpado: no canto, um posto de recarga ao lado de um canteiro de couve (a vitamina K) tem a tomada travada por uma chave inglesa (a varfarina); a viatura C apagou primeiro, junto com um carrinho vermelho (o fator VII), e, para segurar o trânsito no começo, a Capitã chama um caminhão-pipa azul de reforço (a heparina).",
-    "alt": "Varfarina tira a vitamina K da tomada"
+    "cena": "Callback: um posto de recarga ao lado de um canteiro de couve (a vitamina K) tem a tomada travada por uma chave inglesa (a varfarina), e a Capitã aponta a viatura C, a primeira a apagar. Fundo limpo.",
+    "alt": "A tomada do posto de recarga travada por uma chave inglesa; a viatura C apaga primeiro"
   },
   "questao": {
     "vinheta": "A 58-year-old man with a new mechanical mitral valve starts an oral anticoagulant. On day 2, he develops painful dark purple lesions on his thigh that become necrotic. Further testing shows heterozygous protein C deficiency.",
     "pergunta": "This drug acts by inhibiting which enzyme?",
     "alternativas": {
       "A": {
-        "texto": "Factor Xa",
-        "quiz": "Fator Xa"
+        "texto": "Hepatic gamma-glutamyl carboxylase",
+        "quiz": "Gamma-glutamyl carboxylase"
       },
       "B": {
         "texto": "Thrombin",
-        "quiz": "Trombina"
+        "quiz": "Thrombin"
       },
       "C": {
         "texto": "Vitamin K epoxide reductase",
-        "quiz": "Epóxido redutase K"
+        "quiz": "VKOR (epoxide reductase)"
       },
       "D": {
         "texto": "Cyclooxygenase-1",
@@ -51,7 +51,7 @@
   "explicacao": {
     "titulo": "Varfarina tira a *vitamina K* da tomada",
     "certa": [
-      "A *warfarin* inibe a *vitamin K epoxide reductase* (VKORC1), que recicla a vitamina K. Sem ela, o fígado não faz a gama-carboxilação dos fatores II, VII, IX e X nem das *proteins C and S*. A proteína C tem meia-vida curta e cai primeiro, o que cria um estado pró-trombótico transitório (*warfarin skin necrosis*), sobretudo em quem já tem deficiência dela."
+      "A *warfarin* inibe a *vitamin K epoxide reductase* (VKORC1), que recicla a vitamina K. Sem ela, o fígado não faz a gama-carboxilação de II, VII, IX e X nem das *proteins C and S*. A proteína C tem meia-vida curta e cai primeiro, o que cria um estado pró-trombótico transitório (*warfarin skin necrosis*), sobretudo em quem já tem deficiência dela."
     ],
     "termos": [
       "warfarin",
@@ -60,7 +60,7 @@
       "warfarin skin necrosis"
     ],
     "erradas": {
-      "A": "Inibir o fator Xa diretamente é o mecanismo de rivaroxabana e apixabana, contraindicadas em valva mecânica.",
+      "A": "A gama-glutamil carboxilase é a enzima que usa a vitamina K reduzida na carboxilação de II, VII, IX, X, proteína C e proteína S. A varfarina não a bloqueia diretamente: ela trava a epóxido redutase, que recicla a vitamina K, e a carboxilase fica sem combustível.",
       "B": "Inibir a trombina diretamente é o mecanismo da dabigatrana, também contraindicada em valva mecânica, e da argatrobana, de uso venoso na trombocitopenia induzida por heparina.",
       "D": "Inibir a COX-1 é o efeito da aspirina sobre a plaqueta, que não reduz os fatores dependentes de vitamina K."
     },
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Capitã Plaqueta. Um paciente com valva mecânica começa um anticoagulante oral e, no segundo dia, aparece uma lesão de pele estranha. A enzima bloqueada explica tudo.",
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta. Um paciente começa um anticoagulante oral e aparece uma complicação, descrita na vinheta. A pergunta é qual enzima o remédio bloqueia, e a vinheta tem as pistas para descobrir quem ele é.",
     "palavras_chave": [
-      "mechanical mitral valve",
-      "oral anticoagulant",
-      "skin necrosis",
-      "protein C deficiency"
+      "anticoagulation",
+      "pharmacology",
+      "adverse effect",
+      "Step 1"
     ]
   },
   "quiz": {
-    "pergunta": "Necrose de pele no 2º dia do anticoagulante: qual enzima?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Necrose de pele no 2º dia do anticoagulante: qual enzima?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

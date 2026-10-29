@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-25",
-  "gancho": "Véspera de Natal: alguém *estacionou* na frente da saída da garagem",
+  "gancho": "Véspera de Natal no plantão da obstetrícia, e a ceia vai *esperar*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Capitã Plaqueta, de colete e apito, está na saída de uma garagem enfeitada para o Natal, com pisca-pisca no portão; um carro redondo e macio estacionou bem na frente da porta de saída, e ela olha intrigada, empurrando o quepe para trás. Numa mesinha ao lado, dois espetos de rodízio cobertos por tampinhas e a plaquinha verde e vermelha virada de lado.",
+    "cena": "Capitã Plaqueta, de colete e apito, está na porta de uma maternidade enfeitada com pisca-pisca de Natal, segurando uma prancheta. A plaquinha verde e vermelha está virada de lado num banquinho.",
     "foco": "50% 35%",
-    "alt": "Véspera de Natal: alguém estacionou na frente da saída da garagem",
+    "alt": "Capitã Plaqueta, de prancheta na mão, na porta de uma maternidade enfeitada com pisca-pisca de Natal.",
     "arquivo": "dia-053.png"
   },
   "imagem_macete": {
-    "cena": "Callback da garagem: a Capitã vira a plaquinha para o vermelho diante do espeto com uma luva dobrada e para o verde diante do espeto com um transdutor de ultrassom, que projeta uma telinha mostrando onde o carro redondo estacionou. Ninguém encosta no carro.",
+    "cena": "Atrás da porta da maternidade, uma garagem: um carro redondo e macio estacionou bem na frente da saída. A Capitã vira a plaquinha para o vermelho diante do espeto com uma luva dobrada e para o verde diante do espeto com um transdutor de ultrassom, que projeta uma telinha mostrando onde o carro estacionou. Ninguém encosta no carro.",
     "alt": "Primeiro a foto, depois o toque",
     "arquivo": "dia-053-macete.png"
   },
@@ -29,8 +29,8 @@
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Digital cervical examination",
-        "quiz": "Digital exam"
+        "texto": "Digital cervical examination to assess dilation",
+        "quiz": "Digital cervical exam"
       },
       "B": {
         "texto": "Ultrasonography to locate the placenta",
@@ -42,7 +42,7 @@
       },
       "D": {
         "texto": "Oxytocin induction of labor",
-        "quiz": "Oxytocin"
+        "quiz": "Oxytocin induction"
       }
     },
     "correta": "B"
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Véspera de Natal no plantão: gestante de 32 semanas, sangramento vermelho vivo que começou sem dor, útero tranquilo e bebê bem. A ceia espera, e a Capitã Plaqueta escolhe o primeiro passo.",
+    "contexto": "Véspera de Natal no plantão: uma gestante de 32 semanas, um sangramento e quatro espetos no rodízio da obstetrícia. A ceia espera, e a Capitã Plaqueta escolhe o primeiro passo.",
     "palavras_chave": [
-      "third-trimester bleeding",
-      "prior cesarean delivery",
-      "soft uterus",
-      "obstetric emergency"
+      "vaginal bleeding",
+      "pregnancy",
+      "obstetric emergency",
+      "Christmas Eve"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Obstetrics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "32 semanas, sangramento indolor e útero mole: qual o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "32 semanas, sangramento indolor e útero mole: qual o próximo passo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

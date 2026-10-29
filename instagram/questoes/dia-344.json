@@ -7,22 +7,22 @@
   "sistema": "Sistemas respiratório e renal/urinário",
   "topico": "E. coli uropatogênica",
   "conceito": "Uropathogenic E. coli: P fimbriae drive ascent to the kidney",
-  "personagem": "Seu Néfron",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-12",
   "tom": null,
-  "gancho": "Portaria rígida, *mas a bactéria subiu com crachá VIP*",
-  "gancho_apoio": "Febre, dor lombar e cilindros leucocitários. Ela passou do térreo e chegou ao rim.",
+  "gancho": "Portaria rígida no prédio, *mas alguém passou com crachá VIP*",
+  "gancho_apoio": "Bicho de Segunda na portaria: quatro acessórios na mesa e só um leva ao destino certo.",
   "imagem": {
     "arquivo": "dia-344.png",
-    "cena": "Seu Néfron na recepção de um prédio em forma de rim confere o crachá de uma bactéria em bastão de mochila nas costas, diante de quatro acessórios na mesa: uma pulseira de ganchinhos, uma capa de chuva grossa, um frasco de toxina e uma garrafa térmica; atrás dele, a porta do elevador.",
+    "cena": "A Capitã Plaqueta, de colete refletivo e apito, confere na portaria de um prédio alto o crachá de uma bactéria em bastão de mochila nas costas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Portaria rígida, mas a bactéria subiu com crachá VIP"
+    "alt": "Capitã Plaqueta confere o crachá de uma bactéria de mochila na portaria de um prédio alto."
   },
   "imagem_macete": {
     "arquivo": "dia-344-macete.png",
-    "cena": "Callback: a bactéria usa os ganchinhos dos pelos para subir agarrada no trilho do elevador até o último andar; o Seu Néfron levanta o carimbo vermelho, indignado, com a gravata torta.",
+    "cena": "Callback: o prédio é um rim de vários andares; a bactéria usa os ganchinhos dos pelos para subir agarrada no trilho do elevador até o último andar, e a Capitã Plaqueta apita, indignada, com o quepe torto.",
     "foco": "50% 45%",
     "alt": "Pielonefrite por E. coli: P fimbriae sobem até o rim"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "K1 capsular antigen",
-        "quiz": "Cápsula K1"
+        "quiz": "K1 capsule"
       },
       "B": {
         "texto": "P fimbriae",
-        "quiz": "Fímbria P"
+        "quiz": "P fimbriae"
       },
       "C": {
         "texto": "Shiga-like toxin",
-        "quiz": "Toxina Shiga-like"
+        "quiz": "Shiga-like toxin"
       },
       "D": {
         "texto": "Heat-labile enterotoxin",
-        "quiz": "Enterotoxina LT"
+        "quiz": "Heat-labile toxin (LT)"
       }
     },
     "correta": "B"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*Fímbria P de Pielo*: o crachá VIP do elevador até o rim",
       "apoio": "No prédio do Seu Néfron, a bexiga é o térreo. A fímbria tipo 1 gruda no térreo e dá cistite; a fímbria P é o crachá VIP que leva até o rim e dá pielonefrite. O cilindro leucocitário é o carimbo de que ela subiu. Cápsula K1 é meningite neonatal; Shiga-like é diarreia com sangue e SHU.",
-      "fala": "Sem carimbo, não sai. Com crachá P, sobe."
+      "fala": "Parou, colou, coagulou. Essa aí colou e subiu."
     }
   },
   "legenda": {
-    "contexto": "Três dias de ardência para urinar e agora febre, dor no flanco e cilindros leucocitários. A cultura mostra um bacilo gram-negativo que fermenta lactose. Que fator deixou a bactéria subir até o rim?",
+    "contexto": "Bicho de Segunda na portaria: uma bactéria de mochila chegou com quatro acessórios e só um deles a leva aonde ela quer ir. A vinheta diz onde ela foi parar, e o NBME quer o acessório, não o endereço.",
     "palavras_chave": [
-      "fever and flank pain",
-      "costovertebral angle tenderness",
-      "white blood cell casts",
-      "gram-negative rod"
+      "gram-negative infection",
+      "virulence factors",
+      "microbiology",
+      "fever"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre, dor lombar e cilindros leucocitários: o que levou a bactéria ao rim?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, dor lombar e cilindros leucocitários: o que levou a bactéria ao rim?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

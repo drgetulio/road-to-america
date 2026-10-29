@@ -13,7 +13,7 @@
   "explicacao_em": "2027-05-30",
   "tom": null,
   "gancho": "O *VAR* do diagnóstico: quanto um teste positivo vale?",
-  "gancho_apoio": null,
+  "gancho_apoio": "LR positiva do \"acho que é a C\": 1,0. Não muda nada.",
   "imagem": {
     "arquivo": "dia-209.png",
     "cena": "O fantasminha Viés, com apito e crachá de árbitro em branco, espia de trás de uma tabela 2x2 desenhada no gramado; ao lado, uma tela de VAR apagada e um balão de chance ainda pequeno amarrado na trave.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "0.125",
-        "quiz": "0,125"
+        "quiz": "0.125"
       },
       "B": {
         "texto": "1.125",
-        "quiz": "1,125"
+        "quiz": "1.125"
       },
       "C": {
         "texto": "4.5",
-        "quiz": "4,5"
+        "quiz": "4.5"
       },
       "D": {
         "texto": "9.0",
-        "quiz": "9,0"
+        "quiz": "9.0"
       }
     },
     "correta": "C"
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sens 90%, espec 80%. Qual a LR positiva?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sens 90%, espec 80%. Qual a LR positiva?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

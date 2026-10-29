@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-27",
   "tom": null,
   "gancho": "Macrô e a *regra do 8*: quem serve qual prato?",
-  "gancho_apoio": "Um vírus dentro da célula, peptídeos cortados no citosol e dois pratos possíveis.",
+  "gancho_apoio": "O Macrô montou um food truck e precisa saber qual prato vai para qual cliente.",
   "imagem": {
     "arquivo": "dia-176.png",
-    "cena": "Num food truck colorido, o Macrô, com a comanda em branco no bolso, atende ao lado de uma célula vizinha com crachá de uma listra. Na fila, um polvo navy e um trevo de quatro folhas esperam ser servidos, e dois pratos vazios aguardam no balcão.",
+    "cena": "Num food truck colorido, o Macrô atende o balcão enquanto, na fila, um polvo navy e um trevo de quatro folhas esperam ser servidos. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô num food truck ao lado de uma célula vizinha; na fila, um polvo e um trevo de quatro folhas."
+    "alt": "Macrô atende num food truck; na fila, um polvo navy e um trevo de quatro folhas."
   },
   "imagem_macete": {
     "arquivo": "dia-176-macete.png",
-    "cena": "A célula de uma listra serve ao polvo de 8 braços, num prato de uma listra, uma marmita caseira fumegante (comida do citosol); o Macrô serve ao trevo de 4 folhas, num prato de duas listras, um pedaço do lanche de rua que ele comeu.",
-    "alt": "A célula serve marmita caseira no prato 1 ao polvo; Macrô serve lanche de rua no prato 2 ao trevo."
+    "cena": "Callback: uma célula vizinha de crachá de uma listra serve ao polvo de 8 braços uma marmita caseira fumegante num prato de uma listra, enquanto o Macrô espera o trevo com um prato de duas listras. Fundo limpo.",
+    "alt": "A célula vizinha serve ao polvo um prato de uma listra; o Macrô espera o trevo com um prato de duas listras."
   },
   "questao": {
     "vinheta": "Cultured human epithelial cells are infected with influenza virus. Viral proteins made in the cytosol are degraded by the proteasome, and the resulting peptides are transported into the endoplasmic reticulum by TAP.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "MHC class I to CD4+ T cells",
-        "quiz": "MHC I p/ CD4"
+        "quiz": "MHC I to CD4"
       },
       "B": {
         "texto": "MHC class II to CD4+ T cells",
-        "quiz": "MHC II p/ CD4"
+        "quiz": "MHC II to CD4"
       },
       "C": {
         "texto": "MHC class I to CD8+ T cells",
-        "quiz": "MHC I p/ CD8"
+        "quiz": "MHC I to CD8"
       },
       "D": {
         "texto": "MHC class II to CD8+ T cells",
-        "quiz": "MHC II p/ CD8"
+        "quiz": "MHC II to CD8"
       }
     },
     "correta": "C"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda com o Macrô num food truck. Células infectadas por influenza fazem proteína viral no citosol, o proteassoma corta e o TAP leva os pedaços para o retículo. Para quem vai esse prato?",
+    "contexto": "Bicho de Segunda com o Macrô num food truck. A regra do 8 é a única conta da prova que você faz sem rascunho. A vinheta conta onde a proteína foi feita e por onde os pedaços passaram. Para quem vai esse prato?",
     "palavras_chave": [
       "influenza virus",
       "cytosolic proteins",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Peptídeo de vírus feito no citosol vai em qual MHC e para qual célula T?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Peptídeo de vírus feito no citosol vai em qual MHC e para qual célula T?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

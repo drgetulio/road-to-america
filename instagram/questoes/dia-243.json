@@ -12,8 +12,8 @@
   "remix_de": null,
   "explicacao_em": "2027-07-03",
   "tom": null,
-  "gancho": "Diplococos no Gram e a Tia de *carimbo erguido*: qual receita passa?",
-  "gancho_apoio": "Diplococos gram-negativos e um teste de clamídia que ainda não voltou. Qual esquema a Tia aprova?",
+  "gancho": "Sextou na Farmácia: a Tia Meia-Vida *confere a dose antes de liberar*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-243.png",
     "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, olha por cima dos óculos para quatro receitas em branco abertas lado a lado no balcão, com o carimbo erguido no ar. Na prateleira atrás dela, frascos sem rótulo. Nada mostra seringa nem caixa de comprimidos.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Azithromycin 1 g orally once",
-        "quiz": "Azitro 1 g"
+        "quiz": "Azithromycin 1 g"
       },
       "B": {
         "texto": "Ciprofloxacin 500 mg orally once",
-        "quiz": "Cipro 500 mg"
+        "quiz": "Ciprofloxacin 500 mg"
       },
       "C": {
         "texto": "Ceftriaxone 250 mg IM once plus azithromycin 1 g orally",
-        "quiz": "Ceftri 250 + azitro"
+        "quiz": "CTX 250 + azithro 1 g"
       },
       "D": {
         "texto": "Ceftriaxone 500 mg IM once plus doxycycline for 7 days",
-        "quiz": "Ceftri 500 + doxi"
+        "quiz": "CTX 500 + doxy 7 days"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Corrimento uretral purulento, diplococos gram-negativos no Gram e o teste de clamídia ainda pendente. Qual esquema a Tia Meia-Vida aprova?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um rapaz com queixa urinária, um exame de lâmina e um teste ainda pendente, tudo na vinheta. Qual receita a Tia libera?",
     "palavras_chave": [
-      "dysuria",
-      "purulent discharge",
-      "new sexual partner",
-      "Gram stain"
+      "urethritis",
+      "Gram stain",
+      "antibiotic dosing",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diplococos gram-negativos e NAAT pendente: qual esquema?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diplococos gram-negativos e NAAT pendente: qual esquema?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

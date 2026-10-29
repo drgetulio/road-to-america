@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-08",
   "tom": null,
-  "gancho": "Três anos a mais de sobrevida, e o relógio do fim não mexeu. Cadê o *truque*?",
+  "gancho": "O estudo do rastreamento saiu com sobrevida maior, e o *Viés* já pediu música no Fantástico",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-006.png",
-    "cena": "O Viés espia por trás de uma tabela 2x2 na beira de um estádio. No telão, dois cronômetros lado a lado mostram barras de tamanhos diferentes, e a torcida de bolinhas comemora com bandeirinhas verdes e amarelas. O Viés esconde um ponteiro de relógio solto atrás das costas.",
+    "cena": "O Viés espia por trás de uma tabela 2x2 na beira de um estádio. No telão, duas barras de tamanhos diferentes, e a torcida de bolinhas comemora com bandeirinhas verdes e amarelas.",
     "foco": "50% 35%",
-    "alt": "Três anos a mais de sobrevida, e o relógio do fim não mexeu. Cadê o truque?"
+    "alt": "O Viés espia atrás de uma tabela 2x2 na beira de um estádio; no telão, duas barras de tamanhos diferentes."
   },
   "imagem_macete": {
     "arquivo": "dia-006-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Selection bias",
-        "quiz": "Seleção"
+        "quiz": "Selection bias"
       },
       "B": {
         "texto": "Length-time bias",
-        "quiz": "Length-time"
+        "quiz": "Length-time bias"
       },
       "C": {
         "texto": "Recall bias",
-        "quiz": "Memória"
+        "quiz": "Recall bias"
       },
       "D": {
         "texto": "Lead-time bias",
-        "quiz": "Lead-time"
+        "quiz": "Lead-time bias"
       }
     },
     "correta": "D"
@@ -73,10 +73,10 @@
   "legenda": {
     "contexto": "Novembro Azul também é decisão compartilhada sobre o PSA. Hoje o Viés mexe nos números de um estudo de rastreamento, e a pergunta é se alguém viveu mais de verdade.",
     "palavras_chave": [
-      "screening study",
-      "survival from diagnosis",
-      "age at death",
-      "study bias"
+      "cancer screening",
+      "PSA",
+      "study design",
+      "biostatistics"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sobrevida maior e idade de morte igual: qual viés explica?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sobrevida maior e idade de morte igual: qual viés explica?"
   },
   "exemplo": false
 }

@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Constriction of the afferent arteriole by angiotensin II",
-        "quiz": "Aferente pela Ang II"
+        "quiz": "Afferent constriction (Ang II)"
       },
       "B": {
         "texto": "Constriction of the efferent arteriole by angiotensin II",
-        "quiz": "Eferente pela Ang II"
+        "quiz": "Efferent constriction (Ang II)"
       },
       "C": {
         "texto": "Dilation of the afferent arteriole by prostaglandins",
-        "quiz": "Prostaglandina"
+        "quiz": "Afferent dilation (PGs)"
       },
       "D": {
         "texto": "Stimulation of aldosterone secretion",
-        "quiz": "Aldosterona"
+        "quiz": "Aldosterone secretion"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 68 anos com estenose bilateral de artéria renal começa lisinopril e, duas semanas depois, a creatinina sobe de 1,1 para 2,4 mg/dL, com urina sem alterações. A perda de qual efeito explica a queda da filtração?",
+    "contexto": "Quarta do Porquê no quintal: o Seu Néfron trocou de remédio e o jardim secou em duas semanas. Quatro efeitos possíveis, e o NBME sabe que as duas arteríolas do glomérulo viram a mesma palavra depois da décima questão de renal.",
     "palavras_chave": [
-      "bilateral renal artery stenosis",
-      "lisinopril",
-      "rising creatinine",
-      "renal physiology"
+      "renal physiology",
+      "hypertension",
+      "medication effect",
+      "glomerular filtration"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Estenose renal bilateral e creatinina dobrou com lisinopril: o que se perdeu?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estenose renal bilateral e creatinina dobrou com lisinopril: o que se perdeu?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

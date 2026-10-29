@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-19",
-  "gancho": "A levodopa saiu de casa e metade ficou no *pedágio*",
+  "gancho": "Parkinson na sexta: a Tia Meia-Vida contando *passageiros* na estrada",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida na beira de uma estrada de serra, olhando ônibus subirem para uma cidade murada no alto; no meio do caminho há um pedágio que tira passageiros dos ônibus.",
+    "cena": "Tia Meia-Vida, na beira de uma estrada de serra e de prancheta na mão, conta os ônibus que sobem para uma cidade murada no alto.",
     "foco": "50% 35%",
-    "alt": "A levodopa saiu de casa e metade ficou no pedágio",
+    "alt": "Tia Meia-Vida, de prancheta na mão, conta os ônibus que sobem uma estrada de serra para uma cidade murada.",
     "arquivo": "dia-047.png"
   },
   "imagem_macete": {
@@ -30,19 +30,19 @@
     "alternativas": {
       "A": {
         "texto": "MAO-B in the brain",
-        "quiz": "MAO-B no cérebro"
+        "quiz": "MAO-B in the brain"
       },
       "B": {
-        "texto": "DOPA decarboxylase in the brain",
-        "quiz": "DDC no cérebro"
+        "texto": "DOPA decarboxylase within the brain",
+        "quiz": "DDC in the brain"
       },
       "C": {
         "texto": "COMT in the periphery",
-        "quiz": "COMT periférica"
+        "quiz": "Peripheral COMT"
       },
       "D": {
         "texto": "DOPA decarboxylase in the periphery",
-        "quiz": "DDC periférica"
+        "quiz": "Peripheral DDC"
       }
     },
     "correta": "D"
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Parkinson, levodopa sozinha e um enjoo que não deixa ninguém em paz. Uma segunda molécula entra na receita e resolve. A Tia Meia-Vida explica onde ela trabalha.",
+    "contexto": "Sextou na Farmácia com Parkinson: quatro enzimas, dois endereços possíveis e a Tia Meia-Vida contando passageiros na estrada. Farmaco de neuro, a dupla de matérias que nunca se separa, igual você e o seu Anki.",
     "palavras_chave": [
       "Parkinson disease",
-      "nausea",
-      "orthostatic hypotension",
-      "dopamine"
+      "pharmacology",
+      "enzymes",
+      "neurology"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Neurologia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Carbidopa melhorou náusea e hipotensão: qual enzima e onde?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Carbidopa melhorou náusea e hipotensão: qual enzima e onde?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

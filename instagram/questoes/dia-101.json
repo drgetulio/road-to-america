@@ -13,18 +13,18 @@
   "explicacao_em": "2027-02-11",
   "tom": null,
   "gancho": "Quarta de Cinzas: o fígado *fecha o caixa* do Carnaval",
-  "gancho_apoio": "Três dias de álcool quase sem comer e uma glicemia de 38.",
+  "gancho_apoio": "O Mito passou a Quarta de Cinzas no caixa do fígado, e a conta não fecha.",
   "imagem": {
     "arquivo": "dia-101.png",
-    "cena": "O Mito trabalha no caixa de um banco em forma de fígado, com cara de quem não consegue fechar a conta. A porta do cofre do estoque está aberta e o cofre está vazio. Pela janela, a chaminé de uma fábrica de açúcar está sem fumaça.",
+    "cena": "O Mito trabalha no caixa de um banco em forma de fígado, com cara de quem não consegue fechar a conta. Pela janela, a chaminé de uma fábrica de açúcar está sem fumaça. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Mito no caixa de um banco em forma de fígado, com o cofre vazio; lá fora, a fábrica de açúcar está parada."
+    "alt": "Mito no caixa de um banco em forma de fígado; lá fora, a fábrica de açúcar está parada."
   },
   "imagem_macete": {
     "arquivo": "dia-101-macete.png",
-    "cena": "Callback: atrás do Mito aparecem pilhas de sacos de moedas iguais e cheios (NADH), e a bandeja de moedas livres (NAD+) está vazia. Ele empurra os sacos para dois trilhos laterais que levam a dois depósitos (lactato e malato). A fábrica de açúcar continua parada, e do telhado do banco fígado sobe um balão amarelo de gordura que vai inchando.",
+    "cena": "Callback: atrás do Mito, sacos de moedas iguais (NADH) lotam o caixa, e a bandeja de moedas livres (NAD+) está vazia; lá fora, a fábrica de açúcar continua parada. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Mito cercado de sacos de moeda, com a bandeja de moedas livres vazia, desvia os sacos para dois depósitos; a fábrica de açúcar parada e um balão amarelo de gordura sobe do telhado."
+    "alt": "Sacos de moedas lotam o caixa do Mito e a bandeja de moedas livres está vazia; a fábrica segue parada."
   },
   "questao": {
     "vinheta": "A 45-year-old man is brought to the emergency department confused and sweating. Over the past 3 days he has drunk large amounts of alcohol and eaten almost nothing. Fingerstick glucose is 38 mg/dL. Serum lactate is mildly elevated, and the liver is enlarged and nontender.",
@@ -32,7 +32,7 @@
     "alternativas": {
       "A": {
         "texto": "Increased hepatic NADH/NAD+ ratio",
-        "quiz": "High NADH/NAD+ ratio"
+        "quiz": "High NADH/NAD+"
       },
       "B": {
         "texto": "Inhibition of hepatic glucose-6-phosphatase",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do porquê na Quarta-feira de Cinzas: o fígado faz a contabilidade. Jejum, álcool e uma glicemia baixa. O que travou a fábrica de açúcar?",
+    "contexto": "Quarta do Porquê na Quarta-feira de Cinzas, sem apologia ao álcool: o fígado fecha o caixa, igual você fechando o UWorld às 2 da manhã com 54% e muita fé. A vinheta conta como foram os três dias dele. Qual mudança dentro do hepatócito explica?",
     "palavras_chave": [
       "binge drinking",
       "poor intake",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Álcool e jejum, glicose 38: por quê?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Álcool e jejum, glicose 38: por quê?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

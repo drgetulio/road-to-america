@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-17",
-  "gancho": "Quatro defesas falharam no mesmo dia: *Mercúrio retrógrado* ou modelo?",
+  "gancho": "Um erro grave no hospital, e o Viés jura que foi *Mercúrio retrógrado*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Num aeroporto, o Viés, de lupa, passa flutuando por quatro postos de segurança enfileirados: o detector de metais está desligado, a esteira de raio X está sem ninguém, a cadeira do fiscal está vazia com uma xícara de café e a cancela final está levantada. Num painel do saguão, uma tabela 2x2 em branco.",
+    "cena": "Num saguão de aeroporto, o Viés, de lupa, lê com atenção um relatório de incidente em branco, sentado numa mala de rodinhas. Num painel do saguão, uma tabela 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "O Viés atravessa flutuando quatro postos de segurança de aeroporto, todos com alguma falha: detector desligado, esteira sem ninguém, cadeira vazia e cancela aberta.",
+    "alt": "Num saguão de aeroporto, o Viés lê um relatório de incidente sentado numa mala de rodinhas.",
     "arquivo": "dia-076.png"
   },
   "imagem_macete": {
-    "cena": "Callback do aeroporto: os quatro postos viraram fatias de queijo suíço amarelo, uma atrás da outra, com os furos alinhados, e o Viés passa pelas quatro pelo mesmo caminho. Do lado de fora, quatro rolhas esperam para tapar um furo de cada fatia.",
+    "cena": "Callback do aeroporto: o relatório vira quatro postos de segurança, que viram fatias de queijo suíço amarelo, uma atrás da outra, com os furos alinhados, e o Viés passa pelas quatro pelo mesmo caminho. Do lado de fora, quatro rolhas esperam para tapar um furo de cada fatia.",
     "alt": "Os quatro postos viram fatias de queijo suíço com os furos alinhados, e o Viés passa por todas; quatro rolhas esperam para tapar os furos.",
     "arquivo": "dia-076-macete.png"
   },
@@ -34,7 +34,7 @@
       },
       "B": {
         "texto": "Just culture algorithm",
-        "quiz": "Just culture"
+        "quiz": "Just culture algorithm"
       },
       "C": {
         "texto": "Plan-Do-Study-Act cycle",
@@ -70,7 +70,7 @@
     }
   },
   "legenda": {
-    "contexto": "Uma dose de insulina dez vezes maior chegou ao paciente. A revisão achou falha na prescrição, no alerta da farmácia, na dupla checagem e na bomba. O Viés jura que foi azar. Qual modelo explica como o erro atravessou tudo?",
+    "contexto": "Sábado Sem Viés de segurança do paciente: uma dose errada chegou ao paciente, e a revisão do caso está na vinheta. O Viés culpa os astros; a prova quer uma ferramenta de segurança. Quatro ferramentas no balcão, e uma explica o que aconteceu.",
     "palavras_chave": [
       "insulin overdose",
       "medication error",
@@ -85,12 +85,11 @@
       "#SabadoSemVies",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Quatro barreiras falharam juntas: qual modelo explica o erro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quatro barreiras falharam juntas: qual modelo explica o erro?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

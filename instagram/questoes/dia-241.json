@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-01",
   "tom": null,
-  "gancho": "Chegou glicose na padaria, mas o forno do *Mito* não acendeu",
-  "gancho_apoio": "O soro com glicose piorou a confusão. Qual enzima ficou sem a peça?",
+  "gancho": "Quarta do Porquê: o Mito *ficou sem uma peça* no meio do expediente",
+  "gancho_apoio": "Mito em modo economia de energia: o expediente que você conhece bem depois do plantão.",
   "imagem": {
     "arquivo": "dia-241.png",
-    "cena": "Mito, de jaleco amassado e café na mão, olha desolado para um forno gigante de padaria apagado. Um caminhãozinho descarrega sacos de açúcar na porta, a fila de pãezinhos crus só cresce, e na engrenagem do forno falta uma pecinha. Não aparece vitamina nem abelha.",
+    "cena": "Mito, de jaleco amassado e café na mão, olha desolado para um forno gigante de padaria apagado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Chegou glicose na padaria, mas o forno do Mito não acendeu"
+    "alt": "Mito olha desolado para um forno de padaria apagado"
   },
   "imagem_macete": {
     "arquivo": "dia-241-macete.png",
@@ -36,15 +36,15 @@
       },
       "B": {
         "texto": "Pyruvate dehydrogenase",
-        "quiz": "Pyruvate DH"
+        "quiz": "Pyruvate dehydrogenase"
       },
       "C": {
         "texto": "Methylmalonyl-CoA mutase",
-        "quiz": "MMA-CoA mutase"
+        "quiz": "Methylmalonyl-CoA mutase"
       },
       "D": {
         "texto": "Lactate dehydrogenase",
-        "quiz": "Lactate DH"
+        "quiz": "Lactate dehydrogenase"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Vômitos depois da bariátrica, nistagmo, marcha alargada e piora logo depois do soro com glicose. Qual enzima ficou sem o cofator?",
+    "contexto": "Quarta do Porquê na bioquímica, com o Mito. Uma história clínica, um exame neurológico e uma ressonância descritos na vinheta. Qual enzima perdeu o cofator?",
     "palavras_chave": [
-      "bariatric surgery",
-      "persistent vomiting",
-      "nystagmus",
-      "wide-based gait"
+      "neurologic deficit",
+      "nutrition",
+      "enzyme cofactor",
+      "Step 1 biochemistry"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bariátrica, vômitos e piora após glicose: qual enzima?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bariátrica, vômitos e piora após glicose: qual enzima?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

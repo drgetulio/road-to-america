@@ -7,22 +7,22 @@
   "sistema": "Sistema cardiovascular",
   "topico": "Estreptococos do grupo viridans",
   "conceito": "Viridans streptococci: dextran helps adhesion to damaged valves after dental procedures",
-  "personagem": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-24",
   "tom": null,
-  "gancho": "Saiu do dentista direto para o coração: *o trenzinho mais romântico da micro*",
-  "gancho_apoio": "Prolapso mitral, febre baixa e uma extração dentária um mês antes.",
+  "gancho": "Mito foi ao dentista *e voltou com mais perguntas do que obturações*",
+  "gancho_apoio": "Bicho de Segunda: quatro produtos bacterianos e uma pergunta de adesão.",
   "imagem": {
     "arquivo": "dia-295.png",
-    "cena": "Na saída de um consultório de dentista, um trenzinho de cocos verdes de mãos dadas sai dançando de um dente gigante e segue pela calçada, com coraçõezinhos flutuando, em direção a uma porta em forma de valva cardíaca com um curativo. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, assiste da esquina, preocupado.",
+    "cena": "Numa estação de trem do interior, o Mito, de jaleco amassado, olheiras e copo de café, confere o relógio da plataforma: um trenzinho de cocos de mãos dadas, em cadeia, chega e desembarca diante de uma porta com um curativo.",
     "foco": "50% 35%",
-    "alt": "O trenzinho verde sai do dentista rumo à valva"
+    "alt": "Um trenzinho de cocos chega a uma porta com curativo"
   },
   "imagem_macete": {
     "arquivo": "dia-295-macete.png",
-    "cena": "Na porta em forma de valva, cada coco do trenzinho despeja um potinho de calda dourada sobre o curativo de fibrina e plaquetas e fica colado ali. Macrô chega com o guardanapo xadrez, tarde demais, ao lado de um açucareiro tombado.",
+    "cena": "Na porta em forma de valva, cada coco do trenzinho despeja um potinho de calda dourada sobre o curativo de fibrina e plaquetas e fica colado ali. Mito chega com o café, tarde demais, ao lado de um açucareiro tombado.",
     "foco": "50% 45%",
     "alt": "Viridans: dextrana gruda na valva lesada"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "M protein",
-        "quiz": "Proteína M"
+        "quiz": "M protein"
       },
       "B": {
         "texto": "Protein A",
-        "quiz": "Proteína A"
+        "quiz": "Protein A"
       },
       "C": {
         "texto": "Dextran",
-        "quiz": "Dextrana"
+        "quiz": "Dextran"
       },
       "D": {
         "texto": "Hyaluronic acid capsule",
-        "quiz": "Cápsula hialurônica"
+        "quiz": "Hyaluronic capsule"
       }
     },
     "correta": "C"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "Viridans é *verde, da boca e cola com açúcar*",
       "apoio": "O trenzinho de cocos verdes sai do dente carregando potes de calda (dextrana, feita de sacarose) e gruda no curativo de fibrina e plaquetas da valva já machucada. O Macrô chega tarde: o doce já colou. Alfa-hemólise, optoquina resistente e bile insolúvel separam o viridans do pneumococo.",
-      "fala": "Comi, mostrei, avisei. Mas esse trenzinho chegou antes."
+      "fala": "Sem oxigênio eu não trabalho. Esse trenzinho trabalha com açúcar."
     }
   },
   "legenda": {
-    "contexto": "Prolapso mitral, febre baixa há três semanas e hemorragias em lasca depois de uma extração dentária. Hemocultura com cocos em cadeia alfa-hemolíticos. O Macrô quer saber que cola eles usaram.",
+    "contexto": "Bicho de Segunda: o trenzinho de cocos chegou na estação, e o Mito, de plantão, quer saber o que fez eles grudarem na porta. Quatro produtos bacterianos; a vinheta tem testes de laboratório que eliminam três suspeitos.",
     "palavras_chave": [
-      "dental extraction",
-      "mitral valve prolapse",
-      "low-grade fever",
-      "alpha-hemolytic cocci"
+      "bacterial adhesion",
+      "blood cultures",
+      "gram-positive cocci",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cocos alfa-hemolíticos após extração dentária: o que gruda na valva?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cocos alfa-hemolíticos após extração dentária: o que gruda na valva?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

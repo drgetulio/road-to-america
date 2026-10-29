@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-13",
   "tom": null,
-  "gancho": "O remédio que é *pão-duro* com o cálcio e mão aberta com a glicose",
-  "gancho_apoio": "Pedra de cálcio, pressão alta e o Seu Néfron com quatro guichês para escolher.",
+  "gancho": "Seu Néfron recebeu um comprimido novo e *quatro guichês* para escolher",
+  "gancho_apoio": "Cada guichê do néfron tem um transportador. Só um é o alvo do remédio.",
   "imagem": {
     "arquivo": "dia-131.png",
-    "cena": "Seu Néfron está sentado num corredor tubular com quatro guichês sem placas. A Tia Meia-Vida, do balcão, entrega a ele um comprimido novo, e ele ajeita os óculos para decidir em qual guichê vai usá-lo.",
+    "cena": "Seu Néfron, sentado num corredor tubular com quatro guichês sem placas, recebe da Tia Meia-Vida um comprimido novo e ajeita os óculos para decidir onde usá-lo. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Seu Néfron recebe um comprimido da Tia Meia-Vida num corredor tubular com quatro guichês."
   },
   "imagem_macete": {
     "arquivo": "dia-131-macete.png",
-    "cena": "No terceiro guichê do corredor (o distal), o Seu Néfron fecha a porta do sódio com o comprimido e carimba as bolinhas de cálcio de volta para o sangue, em verde. Na mesa dele, empilham-se um cubo de açúcar, uma gota de gordura e um cristal de ácido úrico.",
+    "cena": "Callback: no terceiro guichê do corredor, o Seu Néfron fecha a porta do sódio com o comprimido e carimba as bolinhas de cálcio de volta para o sangue, em verde. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Seu Néfron fecha a porta do sódio no guichê distal e carimba o cálcio de volta; açúcar e ácido úrico se acumulam."
+    "alt": "No terceiro guichê, Seu Néfron fecha a porta do sódio e carimba o cálcio de volta para o sangue."
   },
   "questao": {
     "vinheta": "A 66-year-old woman with hypertension and recurrent calcium oxalate kidney stones starts a new antihypertensive drug. Two months later, her 24-hour urinary calcium has decreased, but her serum glucose and uric acid concentrations have increased.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Na-K-2Cl cotransporter in the thick ascending limb",
-        "quiz": "NKCC2 (alça)"
+        "quiz": "NKCC2 (loop)"
       },
       "B": {
-        "texto": "Na-Cl cotransporter in the distal convoluted tubule",
-        "quiz": "NCC (túbulo distal)"
+        "texto": "Na-Cl cotransporter in the early distal tubule",
+        "quiz": "NCC (distal tubule)"
       },
       "C": {
         "texto": "Epithelial sodium channel in the collecting duct",
-        "quiz": "ENaC (coletor)"
+        "quiz": "ENaC (collecting duct)"
       },
       "D": {
         "texto": "Carbonic anhydrase in the proximal tubule",
-        "quiz": "Anidrase carbônica"
+        "quiz": "Carbonic anhydrase"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com o Seu Néfron: um anti-hipertensivo antigo e barato, uma calciúria que caiu e uma glicose que subiu. Em qual guichê do néfron ele age?",
+    "contexto": "Sextou na Farmácia com o Seu Néfron: um anti-hipertensivo novo e dois meses de exames que mudaram em direções opostas. O que subiu e o que caiu está na vinheta, e é ali que o guichê aparece.",
     "palavras_chave": [
       "hypertension",
       "calcium oxalate stones",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Calciúria caiu, glicose e ácido úrico subiram: qual transportador?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Calciúria caiu, glicose e ácido úrico subiram: qual transportador?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

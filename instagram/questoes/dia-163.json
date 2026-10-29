@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-14",
   "tom": null,
-  "gancho": "O sódio subiu 9 em 6 horas e *você comemorou*. O Seu Néfron, não",
-  "gancho_apoio": "Tiazídico suspenso, soro correndo e 2 litros de urina clarinha. O carimbo é outro.",
+  "gancho": "O sódio mudou de número e *o Seu Néfron largou o café*",
+  "gancho_apoio": "Tiazídico suspenso, soro correndo e um carimbo que ainda não saiu.",
   "imagem": {
     "arquivo": "dia-163.png",
-    "cena": "Seu Néfron, na escrivaninha de plantão com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Na mesa, um saleiro; na parede, um relógio sem números com os ponteiros nas 3.",
+    "cena": "Seu Néfron, na escrivaninha de plantão, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron, de olho num bebedouro que jorra água sem parar; relógio sem números marca 3 horas."
+    "alt": "Seu Néfron olha preocupado um bebedouro que jorra água clara sem parar."
   },
   "imagem_macete": {
     "arquivo": "dia-163-macete.png",
-    "cena": "Um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira; Seu Néfron, de radar na mão, puxa uma alavanca verde de freio. Na mesinha ao lado, um copo de água com açúcar e um spray nasal.",
-    "alt": "Seu Néfron, de radar, freia o carrinho-saleiro antes da ponte; ao lado, água com açúcar e um spray nasal."
+    "cena": "Callback: um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira, e o Seu Néfron puxa uma alavanca verde de freio bem a tempo. Fundo limpo.",
+    "alt": "Um carrinho-saleiro dispara rumo a uma ponte frágil; Seu Néfron puxa a alavanca de freio a tempo."
   },
   "questao": {
     "vinheta": "A 74-year-old woman taking hydrochlorothiazide has 4 days of fatigue and mild confusion without seizures. Serum sodium is 116 mEq/L. The thiazide is stopped and isotonic saline is started. Six hours later, she has produced 2 L of dilute urine and serum sodium is 125 mEq/L.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Continue isotonic saline at the same rate",
-        "quiz": "Manter soro 0,9%"
+        "quiz": "Continue normal saline"
       },
       "B": {
         "texto": "Switch to 3% hypertonic saline",
-        "quiz": "Trocar por NaCl 3%"
+        "quiz": "Switch to 3% saline"
       },
       "C": {
-        "texto": "Give desmopressin and 5% dextrose in water",
-        "quiz": "DDAVP + SG 5%"
+        "texto": "Desmopressin plus 5% dextrose in water",
+        "quiz": "DDAVP + D5W"
       },
       "D": {
         "texto": "Start oral tolvaptan",
-        "quiz": "Tolvaptana"
+        "quiz": "Oral tolvaptan"
       }
     },
     "correta": "C"
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça com o Seu Néfron de olho no sódio. A paciente chegou com 116, o tiazídico foi suspenso e, seis horas depois, o número mudou bastante. Qual é o próximo passo?",
+    "contexto": "Plantão de Terça com o Seu Néfron de olho no sódio. Uma senhora chegou com um número muito baixo, o remédio culpado foi suspenso e, horas depois, os exames da vinheta mudaram bastante. Qual é o próximo passo?",
     "palavras_chave": [
       "hydrochlorothiazide",
       "serum sodium 116",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sódio de 116 para 125 em 6 horas, com diurese aquosa: o que fazer agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sódio de 116 para 125 em 6 horas, com diurese aquosa: o que fazer agora?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

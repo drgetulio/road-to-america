@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: E. coli êntero-hemorrágica (dia 232), Superantígenos (dia 267), Estreptococos do grupo viridans (dia 295)",
   "conceito": "Remix: EHEC O157 + Toxic shock syndrome toxin + Viridans streptococci",
-  "personagem": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": [
     232,
@@ -16,17 +16,17 @@
   ],
   "explicacao_em": "2027-08-30",
   "tom": null,
-  "gancho": "Hambúrguer mal passado no churrasco da família e *o rim pagou a conta*",
-  "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual mecanismo explica o sangue nas fezes e depois o rim?",
+  "gancho": "Churrasco de domingo e *um hambúrguer mal passado* na grelha",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso. Qual mecanismo explica o caso?",
   "imagem": {
     "arquivo": "dia-301.png",
-    "cena": "Churrasco de domingo no quintal: Macrô, de avental sobre o guardanapo xadrez, vira os hambúrgueres na churrasqueira de tijolo e para, desconfiado, diante de um ainda rosado por dentro. Na mesa estão três convidados que ele conhece de outros carnavais (um bacilinho de chapéu de palha, um grampeador de óculos escuros e um potinho de calda dourada) e um penetra segurando um interruptor de luz. Na parede, um vinil pequeno.",
+    "cena": "Churrasco de domingo no quintal: o Mito, de avental sobre o jaleco amassado, vira espetinhos na churrasqueira e olha desconfiado para um hambúrguer mal passado na grelha. Na parede, um vinil pequeno. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô no churrasco desconfia de um hambúrguer rosado"
+    "alt": "Mito, no churrasco de domingo, olha desconfiado para um hambúrguer mal passado na grelha."
   },
   "imagem_macete": {
     "arquivo": "dia-301-macete.png",
-    "cena": "O bacilinho de chapéu de palha dá um passo à frente e uma tesourinha vermelha sai do chapéu dele, cortando ao meio uma pequena fábrica redonda de duas partes; ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O grampeador, o potinho e o penetra voltam para a mesa, e Macrô aponta a espátula para o bacilinho: caso resolvido.",
+    "cena": "Callback: de dentro do hambúrguer sai um bacilinho de chapéu de palha com uma tesourinha vermelha, que corta ao meio uma pequena fábrica redonda de duas partes; ao fundo, um filtro em forma de feijão fica entupido de grãozinhos, e o Mito aponta a espátula para o bacilinho: caso resolvido.",
     "foco": "50% 45%",
     "alt": "Shiga-like toxin: tesoura no 60S, conta no rim"
   },
@@ -36,21 +36,21 @@
     "alternativas": {
       "A": {
         "texto": "Toxin raising cAMP in enterocytes",
-        "quiz": "cAMP no enterócito"
+        "quiz": "Toxin raising enterocyte cAMP"
       },
       "B": {
         "texto": "Toxin linking MHC II to the TCR outside the groove",
-        "quiz": "Superantígeno",
+        "quiz": "Superantigen",
         "dia": 267
       },
       "C": {
         "texto": "Toxin inactivating the 60S ribosomal subunit",
-        "quiz": "Toxina no 60S",
+        "quiz": "60S ribosome inactivation",
         "dia": 232
       },
       "D": {
         "texto": "Dextran-mediated adhesion to fibrin-platelet clots",
-        "quiz": "Dextrana na valva",
+        "quiz": "Dextran adhesion",
         "dia": 295
       }
     },
@@ -75,11 +75,11 @@
     "macete": {
       "frase": "*Hambúrguer mal passado, tesoura no 60S e rim no carimbo*: é a EHEC",
       "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio (o 60S). Quem paga a conta é o glomérulo, que entope de microtrombos. O grampeador é o superantígeno, a calda é a dextrana do viridans e o interruptor é o cAMP da cólera.",
-      "fala": "Comi, mostrei, avisei. Hambúrguer bem passado, eu também aviso."
+      "fala": "Sem oxigênio eu não trabalho. Sem ribossomo, ninguém trabalha."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 232, 267 e 295, mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual mecanismo explica o quadro?",
+    "contexto": "Domingo de revisão: E. coli êntero-hemorrágica (dia 232), superantígenos (dia 267) e estreptococos do grupo viridans (dia 295) foram ao churrasco, e um penetra entrou junto. Quatro mecanismos na mesa; a vinheta conta o que aconteceu dias depois.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,9 +95,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Diarreia com sangue e, dias depois, anemia e rim parando: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia com sangue e, dias depois, anemia e rim parando: qual mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -7,22 +7,23 @@
   "sistema": "Sistema gastrointestinal",
   "topico": "Doença celíaca",
   "conceito": "Celiac disease: HLA-DQ2/DQ8, IgA anti-tissue transglutaminase as screening",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
+  "anfitriao": null,
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-01",
   "tom": null,
-  "gancho": "Tomou sulfato ferroso por meses e o *cofrinho* continua vazio",
+  "gancho": "Bicho de Segunda com a Capitã Plaqueta: *quatro exames* de sangue, e só um vale pedir agora",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-029.png",
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, examina com uma lupa um tapete felpudo (as vilosidades do intestino) que ficou achatado e careca num canto. Ao lado, um cofrinho de ferro está vazio, com a tampa aberta. Quem pisou no tapete fica para amanhã.",
+    "cena": "Capitã Plaqueta, de colete verde e apito, segura uma lupa diante de um cofrinho de porquinho vazio, de tampa aberta, com cara de detetive.",
     "foco": "50% 35%",
-    "alt": "Tomou sulfato ferroso por meses e o cofrinho continua vazio"
+    "alt": "Capitã Plaqueta, de lupa na mão, examina um cofrinho de porquinho vazio, com cara de detetive."
   },
   "imagem_macete": {
     "arquivo": "dia-029-macete.png",
-    "cena": "Callback do tapete: ele estava atrás do balcão de uma padaria. Um fiscal em forma de Y, de boné e prancheta, recolhe uma migalha de pão num saquinho de prova. Dois pãezinhos apresentadores, um com duas sementes e outro com oito, mostram a migalha a bolinhas T, que pisoteiam o tapete. Macrô aponta o fiscal.",
+    "cena": "Revelação: o cofrinho ficava em cima de um tapete felpudo (as vilosidades), achatado atrás do balcão de uma padaria. Um fiscal em forma de Y, de boné e prancheta, recolhe uma migalha de pão num saquinho de prova, e dois pãezinhos apresentadores, um com duas sementes e outro com oito, mostram a migalha a bolinhas T que pisoteiam o tapete. A Capitã apita para o fiscal.",
     "alt": "O fiscal só aparece com pão no balcão"
   },
   "questao": {
@@ -31,10 +32,10 @@
     "alternativas": {
       "A": {
         "texto": "IgA anti-tissue transglutaminase with total IgA",
-        "quiz": "Anti-tTG IgA + IgA"
+        "quiz": "IgA tTG + total IgA"
       },
       "B": {
-        "texto": "Anti-Saccharomyces cerevisiae antibodies",
+        "texto": "Anti-Saccharomyces cerevisiae antibodies (ASCA)",
         "quiz": "ASCA"
       },
       "C": {
@@ -43,7 +44,7 @@
       },
       "D": {
         "texto": "Anti-intrinsic factor antibodies",
-        "quiz": "Antifator intrínseco"
+        "quiz": "Anti-intrinsic factor"
       }
     },
     "correta": "A"
@@ -72,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar o tapete do intestino.",
+    "contexto": "Bicho de Segunda com a Capitã Plaqueta no lugar do Macrô, que tirou folga. O caso pede um exame de triagem que cai em toda prova, e o NBME quer o primeiro exame, não o mais impressionante.",
     "palavras_chave": [
-      "bloating",
-      "loose stools",
-      "iron deficiency anemia",
-      "pruritic vesicles"
+      "gastrointestinal symptoms",
+      "anemia",
+      "serologic testing",
+      "immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Anemia ferropriva refratária e vesículas no cotovelo: qual exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Anemia ferropriva refratária e vesículas no cotovelo: qual exame?"
   },
   "exemplo": false
 }

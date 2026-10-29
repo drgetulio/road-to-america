@@ -17,15 +17,15 @@
   "gancho_apoio": "Hoje sem piada. Um atendimento de rotina e um sinal que não pode passar.",
   "imagem": {
     "arquivo": "dia-139.png",
-    "cena": "Um consultório de pré-natal sereno: sobre a mesa, um sonar fetal, um calendário de gestação sem números e um vaso de planta. A Dona Bússola espera com calma ao lado de duas cadeiras vazias; na parede, um quadrinho 2x2 em branco.",
+    "cena": "Num consultório de pré-natal sereno, a Dona Bússola espera com calma ao lado de duas cadeiras vazias, com um vaso de planta na mesa. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Consultório de pré-natal calmo, com sonar fetal e calendário na mesa; Dona Bússola ao lado de duas cadeiras."
+    "alt": "Dona Bússola espera com calma ao lado de duas cadeiras vazias num consultório de pré-natal."
   },
   "imagem_macete": {
     "arquivo": "dia-139-macete.png",
-    "cena": "A porta está fechada; sobre a mesa, um mapa com um caminho verde até uma casinha com escudo, uma mochila pronta e um guarda-chuva aberto. O ponteiro da Dona Bússola aponta para a cadeira da paciente.",
+    "cena": "A porta do consultório está fechada; sobre a mesa, um mapa com um caminho verde até uma casinha com escudo, e o ponteiro da Dona Bússola aponta para a cadeira da paciente. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Porta fechada; na mesa, um mapa com rota até uma casa protegida, uma mochila pronta e um guarda-chuva."
+    "alt": "Porta fechada, um mapa com caminho verde até uma casinha com escudo e o ponteiro na cadeira da paciente."
   },
   "questao": {
     "vinheta": "At a routine prenatal visit, a 31-year-old woman who is 20 weeks pregnant is accompanied by her partner, who answers most questions for her. She has bruises of different ages on both upper arms and says she bumped into a door. Her partner then leaves the room to take a phone call.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Schedule a follow-up visit in 4 weeks",
-        "quiz": "Retorno em 4 semanas"
+        "quiz": "Follow up in 4 weeks"
       },
       "B": {
         "texto": "Report the partner to police without her consent",
-        "quiz": "Polícia sem aval"
+        "quiz": "Call police without consent"
       },
       "C": {
         "texto": "Ask the partner about the bruises when he returns",
-        "quiz": "Perguntar a ele"
+        "quiz": "Ask the partner"
       },
       "D": {
         "texto": "Ask her privately whether she feels safe at home",
-        "quiz": "Perguntar a sós"
+        "quiz": "Ask her alone"
       }
     },
     "correta": "D"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação ética. Gestante de 20 semanas, um acompanhante que responde quase tudo por ela e hematomas de idades diferentes nos braços. Qual é o próximo passo?",
+    "contexto": "Sábado Sem Viés, estação ética: uma consulta de pré-natal que parecia de rotina. Quem fala, quem cala e o que o exame mostra estão na vinheta. Qual é o próximo passo?",
     "palavras_chave": [
       "prenatal visit",
       "bruises of different ages",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Gestante com hematomas e acompanhante que responde por ela: o que fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gestante com hematomas e acompanhante que responde por ela: o que fazer?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

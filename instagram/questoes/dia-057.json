@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-29",
-  "gancho": "Três semanas depois da garganta, o segurança do boteco *expulsou* o freguês errado",
+  "gancho": "Segunda-feira de boteco: o Macrô investiga uma *confusão* com quatro suspeitos",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, na porta do boteco dos micróbios, vê uma corrente de bactérias redondas de chapeuzinho vermelho saindo pelos fundos enquanto seguranças em forma de Y entram marchando; no balcão, um freguês em forma de coração toma um suco, despreocupado.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na porta de um boteco de bairro, de bloquinho na mão, anotando o depoimento de um freguês em forma de coração que segura um copo de suco.",
     "foco": "50% 35%",
-    "alt": "Três semanas depois da garganta, o segurança do boteco expulsou o freguês errado",
+    "alt": "Macrô, na porta de um boteco, anota o depoimento de um freguês em forma de coração que segura um copo de suco.",
     "arquivo": "dia-057.png"
   },
   "imagem_macete": {
-    "cena": "Callback: os seguranças em Y agarram o freguês coração porque ele usa o mesmo chapéu que as bactérias usavam; as bactérias já foram embora, e o Macrô põe a mão na testa.",
+    "cena": "Callback do boteco: os seguranças em Y agarram o freguês coração porque ele usa o mesmo chapéu vermelho que uma corrente de bactérias redondas usava; as bactérias já foram embora pelos fundos, e o Macrô põe a mão na testa.",
     "alt": "Caso de sósia: mimetismo molecular",
     "arquivo": "dia-057-macete.png"
   },
@@ -29,7 +29,7 @@
     "pergunta": "Which mechanism best explains her cardiac findings?",
     "alternativas": {
       "A": {
-        "texto": "Antibodies to M protein cross-reacting with heart",
+        "texto": "Cross-reacting anti-M protein antibodies",
         "quiz": "Molecular mimicry"
       },
       "B": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Uma dor de garganta sem tratamento, três semanas de silêncio, depois febre, articulações que doem uma de cada vez e um sopro novo. O Macrô quer saber por que o coração entrou na briga.",
+    "contexto": "Bicho de Segunda no boteco dos micróbios: um coração envolvido numa confusão e quatro mecanismos possíveis. O Macrô anota o depoimento; a linha do tempo da vinheta resolve.",
     "palavras_chave": [
-      "migratory arthritis",
-      "new murmur",
-      "untreated pharyngitis",
-      "ASO titer"
+      "pharyngitis",
+      "cardiac findings",
+      "immunology",
+      "school-age child"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Cardiologia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Faringite sem tratamento há 3 semanas e sopro novo: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Faringite sem tratamento há 3 semanas e sopro novo: qual mecanismo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

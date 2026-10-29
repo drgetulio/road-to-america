@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-05",
   "tom": null,
-  "gancho": "Inquilino novo no andar das memórias, e *sem RG*: como identificar?",
-  "gancho_apoio": "Febre, mudança de comportamento e convulsão focal. Como confirmar quem chegou?",
+  "gancho": "Inquilino novo no prédio, *sem RG*: como identificar?",
+  "gancho_apoio": "Bicho de Segunda: dia de mudança no prédio e quatro jeitos de conferir o documento do inquilino.",
   "imagem": {
     "arquivo": "dia-337.png",
-    "cena": "Macrô no corredor de um prédio em forma de cérebro, em dia de mudança, com a comanda em branco no bolso; um inquilino misterioso de capuz, com uma mala, entra por uma janela lateral, que agora está acesa com um varal de luzinhas; caixas de mudança vazias no chão.",
+    "cena": "Macrô na portaria de um prédio em dia de mudança, com a comanda em branco no bolso; um inquilino misterioso de capuz, com uma mala, entra pela porta da frente; caixas de mudança vazias no chão.",
     "foco": "50% 35%",
-    "alt": "Inquilino novo no andar das memórias, e sem RG: como identificar?"
+    "alt": "Macrô recebe um inquilino misterioso de capuz no prédio"
   },
   "imagem_macete": {
     "arquivo": "dia-337-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "CSF India ink stain",
-        "quiz": "Tinta da China"
+        "quiz": "CSF India ink"
       },
       "B": {
         "texto": "CSF PCR for HSV DNA",
-        "quiz": "PCR para HSV"
+        "quiz": "CSF HSV PCR"
       },
       "C": {
         "texto": "CSF VDRL",
-        "quiz": "VDRL no líquor"
+        "quiz": "CSF VDRL"
       },
       "D": {
         "texto": "CSF Gram stain and culture",
-        "quiz": "Gram e cultura"
+        "quiz": "CSF Gram stain/culture"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Três dias de febre, mudança de comportamento e uma convulsão focal. A ressonância acende o lobo temporal medial, e o líquor tem linfócitos e hemácias. Qual exame confirma?",
+    "contexto": "Bicho de Segunda em dia de mudança: um inquilino de capuz entrou no prédio sem RG, e o Macrô, de porteiro, quer conferir o documento. Quatro exames de líquor, e a vinheta tem a imagem que diz qual andar ele ocupou.",
     "palavras_chave": [
-      "fever and headache",
-      "personality change",
-      "focal seizure",
-      "temporal lobe MRI"
+      "neurology",
+      "fever",
+      "cerebrospinal fluid",
+      "diagnostic testing"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre, convulsão focal e lobo temporal aceso na RM: qual exame confirma?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, convulsão focal e lobo temporal aceso na RM: qual exame confirma?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

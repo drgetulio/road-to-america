@@ -42,7 +42,7 @@ export function calendario() {
 // Campos que o render lê (templates/README.md, "Campos do JSON").
 const CAMPOS_RENDER = ['dia', 'data', 'dia_semana', 'quadro', 'step', 'sistema', 'topico', 'conceito', 'personagem', 'anfitriao', 'gancho_data',
   'remix_de', 'explicacao_em', 'tom', 'cvv', 'gancho', 'gancho_apoio', 'imagem', 'imagem_macete', 'questao', 'explicacao', 'legenda',
-  'quiz', 'cta', 'reel', 'exemplo'];
+  'quiz', 'cta', 'cta_forcado', 'reel', 'exemplo'];
 
 export function paraRender(d) {
   const o = {};

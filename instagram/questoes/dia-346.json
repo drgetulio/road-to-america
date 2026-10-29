@@ -14,7 +14,7 @@
   "explicacao_em": "2027-10-14",
   "tom": null,
   "gancho": "Soltou o rejunte ou *descolou o piso inteiro?*",
-  "gancho_apoio": "Bolhas tensas, coceira há um mês e uma imunofluorescência em linha.",
+  "gancho_apoio": "Quarta do Porquê no banheiro: o Seu Allen precisa decidir onde a cola falhou.",
   "imagem": {
     "arquivo": "dia-346.png",
     "cena": "Seu Allen diante do corte de uma parede de banheiro em azulejos sobre o contrapiso, com setinhas de manual de montagem e dois problemas lado a lado: um vão onde o rejunte soltou entre dois azulejos e uma placa de azulejos que começa a levantar do cimento; ferramentas de encanador no chão.",
@@ -33,15 +33,15 @@
     "alternativas": {
       "A": {
         "texto": "Desmoglein 3 in desmosomes",
-        "quiz": "Desmogleína 3"
+        "quiz": "Desmoglein 3"
       },
       "B": {
         "texto": "BP180 in hemidesmosomes",
-        "quiz": "BP180"
+        "quiz": "BP180 (hemidesmosome)"
       },
       "C": {
         "texto": "Type VII collagen in anchoring fibrils",
-        "quiz": "Colágeno VII"
+        "quiz": "Type VII collagen (fibrils)"
       },
       "D": {
         "texto": "Epidermal transglutaminase",
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um mês de coceira e depois bolhas tensas nas coxas e no abdome, boca poupada e pele que não descola ao esfregar. A imunofluorescência mostra IgG em linha. Qual é o alvo dos anticorpos?",
+    "contexto": "Quarta do Porquê no banheiro: o Seu Allen tem dois problemas de azulejo lado a lado e precisa saber qual cola falhou. Quatro alvos de anticorpo; a biópsia da vinheta conta em que camada a pele se separou.",
     "palavras_chave": [
+      "dermatology",
+      "blistering disease",
       "older adult",
-      "itching",
-      "tense blisters",
-      "linear IgG and C3"
+      "immunopathology"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "76 anos, bolhas tensas e IgG linear na junção: qual é o alvo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "76 anos, bolhas tensas e IgG linear na junção: qual é o alvo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

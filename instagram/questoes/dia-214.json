@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-04",
   "tom": null,
-  "gancho": "Voltou do intervalo *sorrindo* e caiu no segundo tempo",
-  "gancho_apoio": "Pancada na têmpora, acordou bem, e duas horas depois tudo piorou. Que vaso rompeu?",
+  "gancho": "Rodízio de Quinta: *uma bolada* e uma tomografia que a equipe não esperava",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-214.png",
-    "cena": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha; por trás do reboco passam vários canos, de cores e grossuras diferentes. Na porta, o Garçom Espetinho espia com uma bandeja de espetinhos, e a plaquinha verde e vermelha está no banco.",
+    "cena": "Vestiário vazio de um estádio: o Garçom Espetinho, de bandeja na mão, espia um cronômetro parado em cima do banco. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Voltou do intervalo sorrindo e caiu no segundo tempo"
+    "alt": "O garçom espia um cronômetro parado no vestiário vazio do estádio"
   },
   "imagem_macete": {
     "arquivo": "dia-214-macete.png",
-    "cena": "Callback: o cano vermelho de alta pressão estourou, a água empurrou o reboco para fora formando uma bolha em forma de lente, e a bolha parou exatamente nas duas emendas da parede. O cronômetro voltou a correr: é o segundo tempo.",
+    "cena": "Callback: na parede curva do vestiário, um cano vermelho de alta pressão estourou e empurrou o reboco numa bolha em forma de lente, que para nas emendas da parede; o cronômetro volta a correr. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Intervalo lúcido e lente: artéria meníngea média"
+    "alt": "O cano vermelho estourado forma uma bolha em lente que para nas emendas da parede"
   },
   "questao": {
     "vinheta": "A 20-year-old man is hit on the left temple by a baseball. He loses consciousness for 1 minute, then talks normally. Two hours later he has severe headache, vomiting, drowsiness, and a dilated left pupil. CT shows a left temporal bone fracture and a convex hyperdense collection that does not cross suture lines.",
@@ -37,15 +37,15 @@
       },
       "B": {
         "texto": "Middle meningeal artery",
-        "quiz": "Middle meningeal a."
+        "quiz": "Middle meningeal artery"
       },
       "C": {
         "texto": "Lenticulostriate arteries",
-        "quiz": "Lenticulostriate a."
+        "quiz": "Lenticulostriate arteries"
       },
       "D": {
         "texto": "Anterior communicating artery",
-        "quiz": "ACom artery"
+        "quiz": "Anterior communicating a."
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Pancada na lateral da cabeça, desmaio rápido, acordou conversando e, duas horas depois, cefaleia, vômitos, sonolência e pupila dilatada. Que vaso se rompeu?",
+    "contexto": "Rodízio de Quinta na neurocirurgia, com o Garçom Espetinho. Um trauma na cabeça, uma evolução em horas e uma tomografia com formato específico, tudo na vinheta. Qual vaso se rompeu?",
     "palavras_chave": [
-      "blow to the temple",
-      "brief loss of consciousness",
-      "dilated pupil",
-      "temporal bone fracture"
+      "head trauma",
+      "CT scan",
+      "neurosurgery",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Intervalo lúcido e lente na TC: qual vaso?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Intervalo lúcido e lente na TC: qual vaso?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

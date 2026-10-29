@@ -16,7 +16,7 @@
   "gancho_apoio": "Hazard ratio de 0,70. Três leituras erradas estão escondidas nas alternativas.",
   "imagem": {
     "arquivo": "dia-279.png",
-    "cena": "O Viés espia atrás de um placar quadriculado (tabela 2x2) ao lado de uma corrida de rua com duas raias, uma de camisetas navy e outra de camisetas vermelhas, com um cronômetro gigante no alto. Na calçada, três torcedores digitam no celular sem parar, cada um com um balão de conversa em branco diferente.",
+    "cena": "O Viés espia atrás de um placar quadriculado (tabela 2x2) ao lado de uma corrida de rua com duas raias, uma de camisetas navy e outra de camisetas vermelhas. Na calçada, três torcedores digitam no celular sem parar, cada um com um balão de conversa em branco diferente.",
     "foco": "50% 35%",
     "alt": "Viés atrás do placar 2x2 numa corrida de rua"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Absolute risk of death fell by 30 percentage points",
-        "quiz": "Queda absoluta de 30"
+        "quiz": "Absolute risk 30 points lower"
       },
       "B": {
         "texto": "30% of patients taking the drug died during the trial",
-        "quiz": "30% morreram"
+        "quiz": "30% of them died"
       },
       "C": {
-        "texto": "At any time, the death rate was 30% lower with the drug",
-        "quiz": "Taxa 30% menor"
+        "texto": "Death rate was 30% lower throughout follow-up",
+        "quiz": "Rate 30% lower at any time"
       },
       "D": {
         "texto": "Patients taking the drug lived 30% longer on average",
-        "quiz": "Vivem 30% mais"
+        "quiz": "Lived 30% longer"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Ensaio clínico com 4.000 pessoas com insuficiência cardíaca e hazard ratio de 0,70, com IC 95% de 0,60 a 0,82. O Viés escondeu três leituras erradas no meio das alternativas.",
+    "contexto": "No grupo da turma, o HR de 0,70 virou três versões diferentes e um áudio de 6 minutos. No NBME, cada versão errada vira uma alternativa. O Viés escondeu as três; ache a que sobra.",
     "palavras_chave": [
       "randomized trial",
-      "heart failure",
-      "all-cause death",
-      "survival analysis"
+      "survival analysis",
+      "biostatistics",
+      "interpreting results"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "HR de 0,70 (IC 0,60 a 0,82): qual leitura está certa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "HR de 0,70 (IC 0,60 a 0,82): qual leitura está certa?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

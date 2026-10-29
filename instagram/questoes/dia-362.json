@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-30",
   "tom": null,
-  "gancho": "O relógio do cérebro *não aceita \"só mais cinco minutinhos\"*",
-  "gancho_apoio": "Dia Mundial do AVC. Fraqueza súbita, fala travada e a contagem já começou.",
+  "gancho": "Dia Mundial do AVC: *quatro frascos e um relógio na parede*",
+  "gancho_apoio": "Dia Mundial do AVC, Sextou na Farmácia: a Tia Meia-Vida olha o relógio antes de escolher.",
   "imagem": {
     "arquivo": "dia-362.png",
-    "cena": "Tia Meia-Vida diante de um grande relógio de parede em forma de cérebro, sem números, com os ponteiros correndo; lá fora, um ônibus se aproxima do ponto, e um nó de lã emaranhado bloqueia uma estradinha no mapa do cérebro.",
+    "cena": "Tia Meia-Vida diante de um grande relógio de parede sem números; no balcão, quatro frascos; pela janela, um ônibus se aproxima do ponto.",
     "foco": "50% 35%",
-    "alt": "O relógio do cérebro não aceita \"só mais cinco minutinhos\""
+    "alt": "Tia Meia-Vida olha um relógio de parede com quatro frascos no balcão"
   },
   "imagem_macete": {
     "arquivo": "dia-362-macete.png",
-    "cena": "Callback: a Tia Meia-Vida chega ao ponto a tempo e usa uma tesourinha brilhante para desfazer o nó de lã na estrada do mapa do cérebro; a fatia do relógio ainda dentro do prazo fica verde.",
+    "cena": "Callback: o relógio de parede vira um cérebro com ponteiros correndo, e um nó de lã emaranhado bloqueia uma estradinha no mapa do cérebro; a Tia Meia-Vida chega ao ponto a tempo e usa uma tesourinha brilhante para desfazer o nó, e a fatia do relógio ainda dentro do prazo fica verde.",
     "foco": "50% 45%",
     "alt": "AVC isquêmico em até 4,5 h: intravenous thrombolysis"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Aspirin 325 mg",
-        "quiz": "Aspirina"
+        "quiz": "Aspirin 325 mg"
       },
       "B": {
         "texto": "Intravenous alteplase",
-        "quiz": "Alteplase IV"
+        "quiz": "IV alteplase"
       },
       "C": {
         "texto": "Intravenous heparin infusion",
-        "quiz": "Heparina IV"
+        "quiz": "IV heparin infusion"
       },
       "D": {
         "texto": "IV labetalol to below 140/90 mm Hg",
-        "quiz": "Labetalol"
+        "quiz": "IV labetalol to <140/90"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia Mundial do AVC. Fraqueza súbita no rosto e no braço direito, fala travada, vista bem pela última vez há 2 horas. A TC não mostra sangramento. Qual é o tratamento agora?",
+    "contexto": "Dia Mundial do AVC, Sextou na Farmácia: a Tia Meia-Vida tem quatro frascos no balcão e um relógio na parede. A vinheta tem o horário em que a paciente estava bem pela última vez, e esse horário decide qual frasco sai.",
     "palavras_chave": [
-      "sudden weakness",
-      "aphasia",
-      "2 hours",
-      "CT without hemorrhage"
+      "neurology",
+      "emergency department",
+      "time-critical care",
+      "pharmacotherapy"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Afasia súbita há 2 h, TC sem sangramento e PA 168/94: qual remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Afasia súbita há 2 h, TC sem sangramento e PA 168/94: qual remédio?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

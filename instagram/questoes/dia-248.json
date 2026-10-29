@@ -13,18 +13,18 @@
   "explicacao_em": "2027-07-08",
   "tom": null,
   "gancho": "Seu Néfron fez a conta três vezes e o caixa *continua sem fechar*",
-  "gancho_apoio": "Ânion gap de 30, visão em nevasca e um gole de fluido do para-brisa. Quem é o ânion sem nome?",
+  "gancho_apoio": "Ânion gap: a única conta da prova que você faz de cabeça e confere três vezes na folha plastificada.",
   "imagem": {
     "arquivo": "dia-248.png",
-    "cena": "Fim de expediente no cartório. Seu Néfron, de gravata e óculos na ponta do nariz, confere uma balança de dois pratos no balcão: de um lado um íon grande, do outro dois íons menores, e a balança não fecha. Ele pega a calculadora pela terceira vez, suando. Na fila, um freguês baixinho de máscara navy espera, e pela janela neva sobre um coqueiro. Setinhas de manual de montagem apontam para o prato que sobra.",
+    "cena": "Fim de expediente no cartório. Seu Néfron, de gravata e óculos na ponta do nariz, confere uma balança de dois pratos que não fecha e pega a calculadora pela terceira vez. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron faz a conta pela terceira vez e o caixa não fecha"
+    "alt": "Seu Néfron confere pela terceira vez uma balança que não fecha"
   },
   "imagem_macete": {
     "arquivo": "dia-248-macete.png",
-    "cena": "O freguês tira a máscara: é uma formiguinha simpática, de capa feita de palheta de limpador de para-brisa, que sobe no prato mais leve e equilibra a conta. Seu Néfron carimba aliviado. Na janela, um par de óculos embaçados; num pires separado, uma pedrinha de cristal brilhante.",
+    "cena": "Callback: uma formiguinha simpática, de capa feita de palheta de limpador de para-brisa, sobe no prato mais leve e equilibra a balança; ao lado, num pires separado, brilha uma pedrinha de cristal. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O ânion mascarado era a formiga do metanol"
+    "alt": "A formiguinha de capa de limpador equilibra a balança; ao lado, uma pedrinha de cristal"
   },
   "questao": {
     "vinheta": "A 45-year-old man drank windshield washer fluid by mistake 18 hours ago. He now has blurred vision, 'like a snowstorm.' Arterial pH is 7.15; Na+ 138, Cl- 100, and HCO3- 8 mEq/L. The serum osmolal gap is elevated, and urinalysis is normal.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Formate",
-        "quiz": "Formato"
+        "quiz": "Formate"
       },
       "B": {
         "texto": "Oxalate",
-        "quiz": "Oxalato"
+        "quiz": "Oxalate"
       },
       "C": {
         "texto": "Beta-hydroxybutyrate",
-        "quiz": "Beta-hidroxibutirato"
+        "quiz": "Beta-hydroxybutyrate"
       },
       "D": {
         "texto": "Lactate",
-        "quiz": "Lactato"
+        "quiz": "Lactate"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Fluido do limpador de para-brisa por engano, visão em nevasca e uma acidose que não fecha a conta. Faça o cálculo antes de comentar.",
+    "contexto": "Quarta do Porquê no ácido-base, com o Seu Néfron. Uma história de exposição, um sintoma e uma gasometria estão na vinheta. Faça a conta antes de votar.",
     "palavras_chave": [
-      "windshield washer fluid",
-      "snowstorm vision",
       "metabolic acidosis",
-      "osmolal gap"
+      "acid-base disorder",
+      "toxicology",
+      "Step 1 physiology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ânion gap de 30 e visão em nevasca: qual ânion explica os dois?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ânion gap de 30 e visão em nevasca: qual ânion explica os dois?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-23",
   "tom": null,
-  "gancho": "Biópsia num gel amarelo que *virou rosa em uma hora*: quem pintou?",
-  "gancho_apoio": "Úlcera duodenal, bastonete curvo e um gel de laboratório que mudou de cor.",
+  "gancho": "Bicho de Segunda: o surfista que *não tem medo de onda ácida*",
+  "gancho_apoio": "O Macrô quer saber qual ferramenta o surfista leva na prancha.",
   "imagem": {
     "arquivo": "dia-113.png",
-    "cena": "Numa piscina de ondas de ácido amarelo-esverdeado, uma bactéria em espiral com rabinho de hélice surfa tranquila, sem se queimar, sob uma nuvenzinha branca. Na borda, Macrô, de comanda no bolso e protetor solar no nariz, segura uma tirinha de papel que passou de amarelo para rosa.",
+    "cena": "Numa piscina de ondas de ácido amarelo-esverdeado, uma bactéria em espiral com rabinho de hélice surfa tranquila, sem se queimar; na borda, o Macrô, de protetor solar no nariz, assiste de queixo caído. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Uma bactéria espiral surfa numa piscina de ácido sob uma nuvem branca; na borda, Macrô segura uma tirinha que ficou rosa."
+    "alt": "Uma bactéria em espiral surfa tranquila numa piscina de ácido; o Macrô assiste da borda, de queixo caído."
   },
   "imagem_macete": {
     "arquivo": "dia-113-macete.png",
-    "cena": "Callback: a nuvem sai de um pequeno cilindro de gás que o surfista carrega nas costas, e o ácido em volta dele fica calmo e azulado. Uma bolha de gás sobe do lago e enche um balão de festa lá no alto, enquanto o Macrô aponta para o balão.",
+    "cena": "Callback: uma nuvem branca sai de um cilindro de gás que o surfista leva nas costas, e a água em volta dele fica calma e azulada; na borda, o Macrô segura uma tirinha de papel que ficou rosa. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O surfista solta a nuvem de um cilindro de gás e uma bolha sobe para encher um balão."
+    "alt": "O surfista solta uma nuvem de um cilindro e a água em volta fica calma; o Macrô segura uma tirinha rosa."
   },
   "questao": {
     "vinheta": "A 38-year-old man has epigastric pain that improves with meals. Endoscopy shows a duodenal ulcer. An antral biopsy placed in a gel containing a pH indicator turns from yellow to pink within an hour, and histology shows curved gram-negative rods in the mucus layer.",
@@ -40,7 +40,7 @@
       },
       "C": {
         "texto": "Cytochrome c oxidase",
-        "quiz": "Oxidase"
+        "quiz": "Cytochrome c oxidase"
       },
       "D": {
         "texto": "Superoxide dismutase",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Úlcera duodenal, dor que melhora com a comida e uma biópsia que mudou de cor no gel do laboratório. Das quatro enzimas da lista, o bicho tem mais de uma; só uma explica a mudança de cor e o sossego dele no ácido.",
+    "contexto": "Bicho de Segunda com o Macrô na beira da piscina de ondas. A vinheta traz uma úlcera, uma biópsia e um exame de laboratório que entrega o bicho. Das quatro enzimas da lista, ele tem mais de uma; só uma explica a vinheta inteira.",
     "palavras_chave": [
       "epigastric pain",
       "duodenal ulcer",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Gel da biópsia ficou rosa e o bicho vive no ácido: qual enzima?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gel da biópsia ficou rosa e o bicho vive no ácido: qual enzima?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

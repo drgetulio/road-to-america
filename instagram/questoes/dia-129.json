@@ -16,15 +16,15 @@
   "gancho_apoio": "O oxigênio troca de ônibus mesmo com pouco O2 por perto. Qual é o truque do Mito?",
   "imagem": {
     "arquivo": "dia-129.png",
-    "cena": "Uma rodoviária em forma de placenta com dois ônibus lado a lado, um grande e vermelho e um pequeno e amarelo. Balõezinhos de oxigênio com perninhas passam de um para o outro, e o Mito observa da plataforma com seu café. Setinhas de manual de montagem apontam para os bancos dos ônibus.",
+    "cena": "Numa rodoviária, um ônibus grande e vermelho e um ônibus pequeno e amarelo param lado a lado, e balõezinhos de oxigênio com perninhas passam de um para o outro; o Mito observa da plataforma, de café na mão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Rodoviária em forma de placenta: balõezinhos de oxigênio passam do ônibus vermelho para o amarelo; Mito observa."
+    "alt": "Balõezinhos de oxigênio passam do ônibus vermelho para o amarelo; o Mito observa da plataforma."
   },
   "imagem_macete": {
     "arquivo": "dia-129-macete.png",
-    "cena": "Dentro do ônibus vermelho, sacos de areia cinzentos ocupam os bancos e empurram os passageiros O2 para a porta. No amarelo, o banco tem um formato em que o saco não encaixa, e os passageiros ficam sentados, abraçados ao banco.",
+    "cena": "Callback: dentro do ônibus vermelho, sacos de areia cinzentos ocupam os bancos e empurram os passageiros de oxigênio para a porta; no amarelo, o saco não encaixa no banco e os passageiros ficam sentados. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Sacos de areia empurram os passageiros do ônibus vermelho; no amarelo, os sacos não encaixam e os passageiros ficam."
+    "alt": "No ônibus vermelho, sacos de areia empurram o oxigênio para a porta; no amarelo, o saco não encaixa."
   },
   "questao": {
     "vinheta": "Oxygen moves from maternal to fetal blood across the placenta even though placental PO2 is low. The fetal oxygen-hemoglobin dissociation curve lies to the left of the adult curve.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Weaker binding of 2,3-bisphosphoglycerate",
-        "quiz": "Menos 2,3-BPG"
+        "quiz": "Less 2,3-BPG binding"
       },
       "B": {
         "texto": "Stronger binding of 2,3-bisphosphoglycerate",
-        "quiz": "Mais 2,3-BPG"
+        "quiz": "More 2,3-BPG binding"
       },
       "C": {
         "texto": "Greater sensitivity to hydrogen ions",
-        "quiz": "Mais efeito Bohr"
+        "quiz": "More H+ sensitivity"
       },
       "D": {
         "texto": "Loss of cooperative oxygen binding",
-        "quiz": "Sem cooperatividade"
+        "quiz": "No cooperativity"
       }
     },
     "correta": "A"
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Curva da hemoglobina fetal à esquerda da adulta: qual propriedade explica?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Curva da hemoglobina fetal à esquerda da adulta: qual propriedade explica?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

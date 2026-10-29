@@ -12,11 +12,11 @@
   "remix_de": null,
   "explicacao_em": "2027-08-10",
   "tom": null,
-  "gancho": "Vacina da hepatite A em dia e *a enchente trouxe outra letra*",
-  "gancho_apoio": "Gestante, água contaminada e um fígado que piorou rápido. Qual vírus veio com a água?",
+  "gancho": "Macrô remando de bacia na rua alagada: *segunda-feira de micro, versão enchente*",
+  "gancho_apoio": "Bicho de Segunda: quatro vírus com letra, e só um combina com a história inteira.",
   "imagem": {
     "arquivo": "dia-281.png",
-    "cena": "Numa rua de bairro alagada, Macrô rema dentro de uma bacia de alumínio, de capa de chuva amarela sobre o guardanapo xadrez, enquanto vírus redondinhos surfam nas poças em pranchinhas e um galão de água boia ao lado. Num poste, uma placa com o ícone de um fígado.",
+    "cena": "Numa rua de bairro alagada, Macrô rema dentro de uma bacia de alumínio, de capa de chuva amarela sobre o guardanapo xadrez, enquanto vírus redondinhos surfam nas poças em pranchinhas. Num poste, uma placa com o ícone de um fígado.",
     "foco": "50% 35%",
     "alt": "Macrô rema numa bacia pela rua alagada"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Hepatitis A virus",
-        "quiz": "Hepatite A"
+        "quiz": "Hepatitis A virus"
       },
       "B": {
         "texto": "Hepatitis E virus",
-        "quiz": "Hepatite E"
+        "quiz": "Hepatitis E virus"
       },
       "C": {
         "texto": "Hepatitis B virus",
-        "quiz": "Hepatite B"
+        "quiz": "Hepatitis B virus"
       },
       "D": {
         "texto": "Hepatitis C virus",
-        "quiz": "Hepatite C"
+        "quiz": "Hepatitis C virus"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Gestante de 30 semanas volta de uma região com enchente e água contaminada, onde muita gente ficou amarela. Agora tem icterícia e confusão. Detalhe: ela tomou a vacina de hepatite A na infância.",
+    "contexto": "Bicho de Segunda: o Macrô atravessou a rua alagada de bacia, e o alfabeto das hepatites veio boiando junto. Quatro letras e uma vinheta em que cada detalhe elimina uma delas.",
     "palavras_chave": [
-      "pregnancy",
-      "contaminated drinking water",
-      "jaundice outbreak",
-      "acute liver failure"
+      "viral hepatitis",
+      "liver tests",
+      "public health",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Gestante após enchente, icterícia e confusão: qual é o vírus?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gestante após enchente, icterícia e confusão: qual é o vírus?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

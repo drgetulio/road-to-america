@@ -38,7 +38,7 @@
       },
       "C": {
         "texto": "The hospital ethics committee",
-        "quiz": "Ethics committee"
+        "quiz": "Hospital ethics committee"
       },
       "D": {
         "texto": "A consulting psychiatrist",
@@ -70,7 +70,7 @@
     }
   },
   "legenda": {
-    "contexto": "Um senhor lúcido recusa a intubação, explica os riscos e não muda de ideia há dois dias. A filha quer que alguém diga que ele não pode decidir, e o Viés já está oferecendo atalhos. Quem tem a palavra final sobre a capacidade?",
+    "contexto": "Sábado Sem Viés de ética: uma recusa de intubação, uma família dividida e quatro candidatos a juiz da capacidade. A prova cobra quem decide, e não quem fala mais alto no corredor.",
     "palavras_chave": [
       "refusal of intubation",
       "severe pneumonia",
@@ -84,12 +84,11 @@
       "#MedicalEthics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Recusa lúcida de intubação: quem avalia a capacidade dele?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Recusa lúcida de intubação: quem avalia a capacidade dele?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

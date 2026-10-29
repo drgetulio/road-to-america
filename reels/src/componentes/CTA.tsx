@@ -84,7 +84,8 @@ export const Comente: React.FC<{ texto: string; duracao: number }> = ({ texto, d
 export const CTAFinal: React.FC<{ texto: string; duracao: number }> = ({ texto, duracao }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const { tom, palavraComentario } = useCena();
+  const { tom, palavraComentario, direcao } = useCena();
+  const mostrarUrl = direcao.url !== false;
   const ehMarca = /road to america/i.test(texto);
   const logo = mola(frame, fps, 0, "pop");
   const acao = mola(frame, fps, 14, "pop");
@@ -117,11 +118,19 @@ export const CTAFinal: React.FC<{ texto: string; duracao: number }> = ({ texto, 
           </div>
         </div>
       ) : null}
-      <div style={{ position: "absolute", left: AREA.x, top: AREA.y + (linkNaBio ? 800 : 920), width: AREA.largura, textAlign: "center", fontFamily: FONTE.mono, fontWeight: 600, fontSize: 48, lineHeight: 1.2, color: corUrl, opacity: url * 0.9 }}>
-        {URL_SITE[0]}
-        <br />
-        {URL_SITE[1]}
-      </div>
+      {mostrarUrl ? (
+        <div style={{ position: "absolute", left: AREA.x, top: AREA.y + (linkNaBio ? 800 : 920), width: AREA.largura, textAlign: "center", fontFamily: FONTE.mono, fontWeight: 600, fontSize: 48, lineHeight: 1.2, color: corUrl, opacity: url * 0.9 }}>
+          {URL_SITE[0]}
+          <br />
+          {URL_SITE[1]}
+        </div>
+      ) : (
+        <div style={{ position: "absolute", left: AREA.x, top: AREA.y + 920, width: AREA.largura, textAlign: "center", fontFamily: FONTE.mono, fontWeight: 600, fontSize: 40, lineHeight: 1.3, color: corUrl, opacity: url * 0.9 }}>
+          RESPOSTA AUTOMÁTICA
+          <br />
+          NO DIRECT
+        </div>
+      )}
       {!palavraComentario ? <SetaCurva de={[AREA.x + 330, AREA.y + (linkNaBio ? 950 : 1060)]} para={[AREA.x + 80, 1560]} cor={tom.destaque} progresso={seta} /> : null}
       {palavraComentario ? <SetaCurva de={[AREA.x + AREA.largura - 60, AREA.y + 830]} para={[995, 1330]} cor={tom.destaque} progresso={seta} /> : null}
     </AbsoluteFill>

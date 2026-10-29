@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-30",
-  "gancho": "Tomou alendronato com leite e foi deitar. *A Tia Meia-Vida desmaiou*",
+  "gancho": "Alendronato na receita e a Tia Meia-Vida com um *manual de instruções* novo",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Na farmácia de interior, à noite, a Tia Meia-Vida quase desmaia atrás do balcão ao ver um comprimido grande e simpático de pijama, com um copo de leite numa mão e um travesseiro na outra. No balcão, um prato com pãozinho e um copo de água esperam.",
+    "cena": "Na farmácia de interior, a Tia Meia-Vida segura um comprimido grande e simpático na palma da mão e lê com a lupa uma bula comprida, sem letras.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida quase desmaia ao ver um comprimido de pijama com um copo de leite e um travesseiro; no balcão, um pãozinho e um copo de água.",
+    "alt": "Tia Meia-Vida segura um comprimido grande na palma da mão e lê com a lupa uma bula comprida.",
     "arquivo": "dia-089.png"
   },
   "imagem_macete": {
-    "cena": "Callback, de manhã cedo: o comprimido, ainda em jejum, desce de pé por um escorregador em forma de esôfago com uma onda de água limpa, enquanto a ampulheta da Tia marca meia hora. O pijama, o leite e o pãozinho ficaram para depois.",
+    "cena": "Callback, de manhã cedo: o comprimido, ainda em jejum, desce de pé por um escorregador em forma de esôfago com uma onda de água limpa, enquanto a ampulheta da Tia marca meia hora. Um pijama, um copo de leite e um pãozinho ficaram para depois.",
     "alt": "De manhã, o comprimido desce de pé pelo escorregador do esôfago com água; a ampulheta da Tia marca meia hora.",
     "arquivo": "dia-089-macete.png"
   },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Alendronato semanal, dor atrás do esterno e dor para engolir no dia seguinte a cada dose. Ela toma o comprimido na hora de dormir, com um copo de leite. Qual orientação teria evitado tudo isso?",
+    "contexto": "Sextou na Farmácia com um remédio de osteoporose que tem mais regra de uso que prova da Prometric. A Tia Meia-Vida quer saber qual orientação teria evitado o problema da vinheta.",
     "palavras_chave": [
       "osteoporosis",
-      "retrosternal pain",
-      "odynophagia",
-      "medication counseling"
+      "medication counseling",
+      "adverse effects",
+      "pharmacy"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#SextouNaFarmacia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Alendronato com leite antes de dormir: que orientação evitaria isso?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Alendronato com leite antes de dormir: que orientação evitaria isso?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

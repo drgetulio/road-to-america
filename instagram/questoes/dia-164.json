@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-15",
   "tom": null,
-  "gancho": "Esôfago, cólon e coração: quem ligou o modo *mega*?",
-  "gancho_apoio": "Três anos de disfagia, intestino preso e um ECG com dois bloqueios.",
+  "gancho": "Quarta do Porquê: o Seu Allen achou *um defeito de fiação*",
+  "gancho_apoio": "Seu Allen recebeu um caso que atravessa três especialidades.",
   "imagem": {
     "arquivo": "dia-164.png",
-    "cena": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro. No quintal, três mangueiras de jardim enroladas com fiozinhos coloridos, e uma tesourinha esquecida no parapeito da janela. Seu Allen, de avental navy, examina os fios; setinhas de manual apontam para eles.",
+    "cena": "Na bancada da oficina, Seu Allen examina com a lupa três mangueiras de jardim enroladas, cada uma com fiozinhos coloridos por fora. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Casa de adobe ao entardecer; no quintal, três mangueiras com fiozinhos coloridos e Seu Allen examinando."
+    "alt": "Seu Allen examina com a lupa três mangueiras enroladas com fiozinhos coloridos por fora."
   },
   "imagem_macete": {
     "arquivo": "dia-164-macete.png",
-    "cena": "O barbeiro cortou os fiozinhos das mangueiras, e elas incharam como balões gigantes: um tubo comprido (esôfago), um tubo em laço (cólon) e um balão em forma de coração. Uma fitinha verde e amarela na porta homenageia Carlos Chagas.",
-    "alt": "Sem os fiozinhos, as três mangueiras viram balões gigantes; uma fitinha verde e amarela enfeita a porta."
+    "cena": "Callback: um besouro barbeiro de tesourinha corta os fiozinhos das mangueiras, e elas incham como balões compridos; na porta da oficina, uma fitinha verde e amarela homenageia Carlos Chagas. Fundo limpo.",
+    "alt": "Um besouro barbeiro de tesourinha corta os fios e as mangueiras incham como balões; uma fitinha verde e amarela na porta."
   },
   "questao": {
     "vinheta": "A 52-year-old man who grew up in an adobe house in rural Bolivia has 3 years of progressive dysphagia to solids and liquids, regurgitation, and chronic constipation. Barium swallow shows a dilated esophagus with distal bird's-beak narrowing. His ECG has a right bundle branch block plus a left anterior fascicular block.",
@@ -32,18 +32,18 @@
     "alternativas": {
       "A": {
         "texto": "Esophageal adenocarcinoma",
-        "quiz": "Adenocarcinoma"
+        "quiz": "Esophageal adenocarcinoma"
       },
       "B": {
         "texto": "Idiopathic achalasia",
-        "quiz": "Acalasia idiopática"
+        "quiz": "Idiopathic achalasia"
       },
       "C": {
         "texto": "Systemic sclerosis",
-        "quiz": "Esclerose sistêmica"
+        "quiz": "Systemic sclerosis"
       },
       "D": {
-        "texto": "Trypanosoma cruzi infection",
+        "texto": "Trypanosoma cruzi",
         "quiz": "Trypanosoma cruzi"
       }
     },
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "14 de abril é uma data importante para a saúde da América Latina, e a homenagem completa sai no gabarito de amanhã. Hoje esôfago, cólon e coração aparecem na mesma vinheta. Qual é a causa por trás de tudo?",
+    "contexto": "Na Quarta do Porquê, uma história longa, um exame de imagem e um ECG estão na vinheta, e um único culpado explica todos eles. Qual é a causa por trás de tudo?",
     "palavras_chave": [
       "rural Bolivia",
       "dysphagia",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Esôfago dilatado, constipação e bloqueio de ramo após infância rural: causa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esôfago dilatado, constipação e bloqueio de ramo após infância rural: causa?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

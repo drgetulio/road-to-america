@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-08-17",
   "tom": null,
-  "gancho": "Seu Néfron abriu a gaveta dos formulários e achou *uma galhada de cervo*",
-  "gancho_apoio": "Urina alcalina, cristal em tampa de caixão e uma pedra que ocupa a pelve inteira.",
+  "gancho": "Seu Néfron abriu a gaveta dos formulários e *levou o maior susto da semana*",
+  "gancho_apoio": "Bicho de Segunda na repartição: bastonetes fazendo bagunça na gaveta do Seu Néfron.",
   "imagem": {
     "arquivo": "dia-288.png",
-    "cena": "Seu Néfron, na escrivaninha, abre a gaveta dos formulários e leva um susto: no meio da papelada cresce uma pedra branca ramificada como galhada de cervo, e bastonetes pequenos deslizam sobre a mesa em ondas, como enxame. No canto da mesa, uma comanda de boteco em branco.",
+    "cena": "Seu Néfron, na escrivaninha, abre a gaveta dos formulários e leva um susto: lá dentro, bastonetes pequenos fazem bagunça, e a pilha de papelada ficou toda torta. No canto da mesa, uma comanda de boteco em branco.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron acha uma galhada de cervo na gaveta"
+    "alt": "Seu Néfron acha bastonetes bagunçando a gaveta"
   },
   "imagem_macete": {
     "arquivo": "dia-288-macete.png",
@@ -32,11 +32,11 @@
     "alternativas": {
       "A": {
         "texto": "P fimbriae",
-        "quiz": "Fímbria P"
+        "quiz": "P fimbriae"
       },
       "B": {
         "texto": "Polysaccharide capsule",
-        "quiz": "Cápsula"
+        "quiz": "Polysaccharide capsule"
       },
       "C": {
         "texto": "Urease",
@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "Lipopolysaccharide",
-        "quiz": "LPS"
+        "quiz": "Lipopolysaccharide"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Infecção urinária de repetição, urina com pH 8, cristais em tampa de caixão e um cálculo que preenche a pelve inteira. Seu Néfron quer saber qual produto da bactéria montou essa obra.",
+    "contexto": "Bicho de Segunda: o Seu Néfron abriu a gaveta e achou bastonetes gram-negativos fazendo bagunça na papelada. Quatro produtos bacterianos possíveis, e só um explica tudo o que a vinheta mostra.",
     "palavras_chave": [
-      "recurrent UTI",
-      "alkaline urine",
-      "coffin-lid crystals",
-      "swarming motility"
+      "urinary tract infection",
+      "urine microscopy",
+      "gram-negative rods",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Urina com pH 8 e cálculo em galhada: qual produto bacteriano causou?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Urina com pH 8 e cálculo em galhada: qual produto bacteriano causou?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

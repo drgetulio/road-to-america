@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-18",
-  "gancho": "No rodízio do pânico, o *pão de alho* chega rápido. Mas é ele que fica?",
+  "gancho": "Rodízio de psiquiatria: o Garçom Espetinho traz *quatro espetos* para quem quer tratamento que dure",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O Garçom Espetinho, diante de uma churrasqueira, segura quatro espetos: um assando devagar na brasa, um pão de alho pequeno, um com uma pílula em forma de coração e outro com uma nuvem azul. A plaquinha de duas cores ainda está virada de lado numa mesa tranquila.",
+    "cena": "O Garçom Espetinho, diante de uma churrasqueira, segura quatro espetos cobertos por tampinhas de metal, sem mostrar o que tem em cada um. A plaquinha de duas cores está virada de lado numa mesa tranquila.",
     "foco": "50% 35%",
-    "alt": "No rodízio do pânico, o pão de alho chega rápido. Mas é ele que fica?",
+    "alt": "Garçom Espetinho, diante de uma churrasqueira, segura quatro espetos cobertos por tampinhas de metal.",
     "arquivo": "dia-046.png"
   },
   "imagem_macete": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Crises que chegam do nada, exames normais e o pedido de um tratamento que dure. O Garçom Espetinho traz quatro espetos, e só um assa no tempo certo para o longo prazo.",
+    "contexto": "Rodízio de Quinta na psiquiatria, com respeito: crises de ansiedade intensa são sofrimento real, e a prova cobra o tratamento de longo prazo com precisão. O Garçom Espetinho traz quatro espetos; a vinheta diz qual fica.",
     "palavras_chave": [
-      "recurrent palpitations",
-      "fear of dying",
-      "avoidance",
-      "long-term treatment"
+      "anxiety disorders",
+      "psychiatry",
+      "long-term treatment",
+      "psychotherapy"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Psychiatry",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Crises de pânico recorrentes e TCC marcada: qual remédio fica?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crises de pânico recorrentes e TCC marcada: qual remédio fica?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

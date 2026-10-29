@@ -14,7 +14,7 @@
   "explicacao_em": "2027-10-10",
   "tom": null,
   "gancho": "Pedir tudo é humano. *Oferecer tudo, nem sempre.*",
-  "gancho_apoio": "UTI, família pedindo ECMO e uma equipe que não vê benefício.",
+  "gancho_apoio": "Uma conversa difícil na UTI e quatro caminhos na balança.",
   "imagem": {
     "arquivo": "dia-342.png",
     "cena": "A Dona Bússola, serena, ao lado de uma balança de tribunal desenhada como placa de trânsito: num prato, uma máquina enorme cheia de tubos transparentes vazios; no outro, uma manta macia e um abajur aceso; na parede, uma tabela 2x2 em branco num quadrinho. Tom calmo.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Start ECMO to respect the family's wishes",
-        "quiz": "Iniciar ECMO"
+        "quiz": "Start ECMO"
       },
       "B": {
         "texto": "Withdraw all support without further discussion",
-        "quiz": "Retirar tudo já"
+        "quiz": "Withdraw support, no talk"
       },
       "C": {
         "texto": "Seek a court order before any decision",
-        "quiz": "Ordem judicial"
+        "quiz": "Court order first"
       },
       "D": {
         "texto": "Decline ECMO and request an ethics consultation",
-        "quiz": "Explicar + comitê"
+        "quiz": "Decline ECMO + ethics"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Três semanas de UTI, falência de vários órgãos e uma equipe que concorda que nada mais vai trazer benefício. O marido pede ECMO e tudo o que for possível. Qual é o próximo passo?",
+    "contexto": "Sábado Sem Viés, com calma: uma família pede tudo e a equipe precisa explicar o que ainda faz sentido oferecer. Quatro caminhos na balança da Dona Bússola.",
     "palavras_chave": [
-      "metastatic pancreatic cancer",
-      "multiorgan failure",
-      "husband insists on everything",
-      "ICU"
+      "intensive care",
+      "end-of-life care",
+      "family communication",
+      "professionalism"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "UTI sem chance de alta e o marido exige ECMO: qual a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "UTI sem chance de alta e o marido exige ECMO: qual a conduta?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

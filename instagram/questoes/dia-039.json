@@ -7,20 +7,21 @@
   "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
   "topico": "Vacinas de vírus vivo aos 12 meses",
   "conceito": "MMR and varicella: live vaccines given at 12 to 15 months",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-11",
-  "gancho": "Festa de 1 ano: o Macrô confere a *lista* dos convidados vivos",
+  "gancho": "Festa de 1 ano: o Garçom Espetinho confere a *lista* dos convidados vivos",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de guardanapo xadrez e prancheta, é o porteiro de uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e ele confere uma pulseira de idade em cada uma. Não se vê quais caixas entram. A plaquinha verde e vermelha está de lado na mesa do bolo.",
+    "cena": "O Garçom Espetinho é o porteiro de uma festa de 1 ano com bolo de uma vela; na porta, caixas de presente com laços de cores diferentes esperam, e ele confere uma pulseira de idade em cada uma. A plaquinha verde e vermelha está de lado na mesa do bolo.",
     "foco": "50% 35%",
-    "alt": "Festa de 1 ano: o Macrô confere a lista dos convidados vivos",
+    "alt": "Garçom Espetinho, porteiro de uma festa de 1 ano, confere a pulseira de idade de caixas de presente na porta.",
     "arquivo": "dia-039.png"
   },
   "imagem_macete": {
-    "cena": "Callback: duas caixas entram na festa e se abrem em confete perto do bolo; uma caixa vai embora pela calçada com uma mala (passou da idade) e a última espera num banco com um calendário de dois anos. Macrô vira a plaquinha para o verde.",
+    "cena": "Callback da festa: duas caixas entram e se abrem em confete perto do bolo; uma caixa vai embora pela calçada com uma mala (passou da idade), e a última espera num banco ao lado de um calendário de dois anos. O Garçom vira a plaquinha para o verde.",
     "alt": "No bolo de 1 ano entram MMR e varicela",
     "arquivo": "dia-039-macete.png"
   },
@@ -70,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Consulta de rotina, criança saudável, carteira de vacinas em dia até os 6 meses. A mãe quer saber quais vacinas de vírus vivo entram agora, e o Macrô é o porteiro da festa.",
+    "contexto": "Consulta de 1 ano, carteira na mão e a pergunta que todo pediatra ouve: quais vacinas de vírus vivo entram agora? O Garçom Espetinho é o porteiro da festa, e na prova vale o calendário americano.",
     "palavras_chave": [
       "12-month visit",
       "well-child care",
@@ -85,12 +86,11 @@
       "#Vacinas",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Criança saudável de 12 meses: quais vacinas de vírus vivo hoje?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Criança saudável de 12 meses: quais vacinas de vírus vivo hoje?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

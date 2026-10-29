@@ -13,18 +13,18 @@
   "explicacao_em": "2027-03-28",
   "tom": null,
   "gancho": "Tabela 2x2 de sábado: quatro números, duas medidas e um fantasma *torcendo contra*",
-  "gancho_apoio": "O Viés está escondido atrás da tabela esperando você escolher a medida errada.",
+  "gancho_apoio": "O Viés está escondido atrás da tabela esperando você escolher a medida errada, de preferência no bloco 6, às 16h.",
   "imagem": {
     "arquivo": "dia-146.png",
-    "cena": "O Viés, o fantasminha da estatística, espia por trás de uma tabela 2x2 em branco. De um lado passa um trenzinho para a frente; do outro, um carro com um retrovisor enorme. O fantasminha cruza os dedos.",
+    "cena": "O Viés espia por trás de uma tabela 2x2 em branco: de um lado passa um trenzinho para a frente; do outro, um carro com um retrovisor enorme. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Viés atrás de uma tabela 2x2 em branco; de um lado um trem, do outro um carro com retrovisor enorme."
   },
   "imagem_macete": {
     "arquivo": "dia-146-macete.png",
-    "cena": "O Viés segura o retrovisor do carro, que reflete a tabela 2x2 com as duas diagonais ligadas por um grande X verde. O trem da coorte segue para a frente, ao fundo.",
+    "cena": "Callback: o Viés segura o retrovisor do carro, que reflete a tabela 2x2 com as duas diagonais ligadas por um grande X verde, enquanto o trem segue para a frente ao fundo. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O Viés segura o retrovisor, que reflete a tabela 2x2 com um X verde nas diagonais; o trem segue ao fundo."
+    "alt": "O retrovisor reflete a tabela 2x2 com as diagonais ligadas por um X verde; o trem segue ao fundo."
   },
   "questao": {
     "vinheta": "Investigators identify 100 adults with hip fracture and 200 adults without hip fracture. Long-term proton pump inhibitor use is found in 60 of those with fracture and in 50 of those without fracture.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Odds ratio of 4.5",
-        "quiz": "OR = 4,5"
+        "quiz": "OR = 4.5"
       },
       "B": {
         "texto": "Relative risk of 4.5",
-        "quiz": "RR = 4,5"
+        "quiz": "RR = 4.5"
       },
       "C": {
         "texto": "Relative risk of 2.4",
-        "quiz": "RR = 2,4"
+        "quiz": "RR = 2.4"
       },
       "D": {
         "texto": "Odds ratio of 2.4",
-        "quiz": "OR = 2,4"
+        "quiz": "OR = 2.4"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação bioestatística. Cem pessoas com fratura de quadril, duzentas sem, e o uso de IBP contado nos dois grupos. Qual medida esse estudo permite, e qual é o valor?",
+    "contexto": "Sábado Sem Viés, estação bioestatística. Um estudo sobre remédio para o estômago e fratura de quadril, uma tabela 2x2 para montar e duas decisões: qual medida e qual valor. O desenho do estudo está na vinheta.",
     "palavras_chave": [
       "hip fracture",
       "proton pump inhibitors",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "100 com fratura, 200 sem; IBP em 60 e em 50: qual medida e qual valor?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "100 com fratura, 200 sem; IBP em 60 e em 50: qual medida e qual valor?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-10",
   "tom": null,
-  "gancho": "A escola dos linfócitos B não abriu, e o *vale-presente* da mamãe venceu",
+  "gancho": "Bebê ótimo até os 6 meses, e depois disso o *vale-presente* da mamãe venceu",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-008.png",
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está no portão trancado de uma escolinha das células B, com as banquetas do pátio viradas. Ele mostra o pedaço de um invasor como quem mostra a comanda, mas não tem ninguém para receber. Num banco, um vale-presente embrulhado ao lado de uma ampulheta quase no fim; no quintal vizinho, as bolinhas T brincam normalmente.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, segura um vale-presente embrulhado que acabou de vencer, ao lado de uma ampulheta já vazia, com a cara de quem foi pego de surpresa no caixa.",
     "foco": "50% 35%",
-    "alt": "A escola dos linfócitos B não abriu, e o vale-presente da mamãe venceu"
+    "alt": "Macrô segura um vale-presente que acabou de vencer, ao lado de uma ampulheta vazia, com cara de surpresa."
   },
   "imagem_macete": {
     "arquivo": "dia-008-macete.png",
-    "cena": "Callback da escolinha: os pequenos pré-B esperam do lado de fora com mochilas vazias, olhando a fechadura, porque a chave dourada (BTK) sumiu do gancho. O presente da mãe (IgG) já foi aberto e está vazio, e o Macrô aponta o gancho sem chave.",
+    "cena": "Revelação: atrás do vale vencido havia uma escolinha das células B de portão trancado. Os pequenos pré-B esperam do lado de fora com mochilas vazias, porque a chave dourada (BTK) sumiu do gancho, e o Macrô mostra o gancho sem chave.",
     "alt": "A escola B fechou por falta de chave"
   },
   "questao": {
@@ -30,12 +30,12 @@
     "pergunta": "A defect in which protein is most likely?",
     "alternativas": {
       "A": {
-        "texto": "CD40 ligand",
-        "quiz": "CD40 ligante"
+        "texto": "CD40 ligand on helper T cells",
+        "quiz": "CD40 ligand"
       },
       "B": {
         "texto": "Adenosine deaminase",
-        "quiz": "Adenosina desaminase"
+        "quiz": "ADA"
       },
       "C": {
         "texto": "Bruton tyrosine kinase",
@@ -73,10 +73,10 @@
   "legenda": {
     "contexto": "Bicho de Segunda: um bebê ótimo até os 6 meses e, depois disso, uma otite atrás da outra. O Macrô apresenta os invasores, mas ninguém do outro lado do balcão responde.",
     "palavras_chave": [
-      "recurrent otitis media",
-      "low immunoglobulins",
-      "flow cytometry",
-      "primary immunodeficiency"
+      "recurrent infections",
+      "infant",
+      "immunodeficiency",
+      "immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê sem células CD19 e com Ig baixas: qual proteína falhou?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê sem células CD19 e com Ig baixas: qual proteína falhou?"
   },
   "exemplo": false
 }

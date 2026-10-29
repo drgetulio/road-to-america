@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-06",
   "tom": null,
-  "gancho": "Bolus na hemodinâmica, virilha sangrando e *um megafone ligado*: quem desliga?",
-  "gancho_apoio": "Um remédio turbina a antitrombina contra dois carros da coagulação.",
+  "gancho": "Sangrou na virilha depois da hemodinâmica: *quem desliga* o remédio?",
+  "gancho_apoio": "A Capitã Plaqueta tem quatro antídotos no colete, e só um serve para este remédio.",
   "imagem": {
     "arquivo": "dia-096.png",
-    "cena": "Capitã Plaqueta apita num cruzamento movimentado. Uma ajudante tímida em forma de corrente comprida entrega um megafone enorme a um fiscal de trânsito redondo, que agora consegue parar dois carros de cores diferentes ao mesmo tempo. Os outros carros seguem sem problema.",
+    "cena": "Capitã Plaqueta apita num cruzamento enquanto um fiscal de trânsito redondo, com um megafone enorme emprestado por uma ajudante em forma de corrente comprida, para dois carros de cores diferentes ao mesmo tempo. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta no cruzamento; uma ajudante em forma de corrente dá um megafone ao fiscal, que para dois carros."
+    "alt": "Capitã Plaqueta no cruzamento; um fiscal com megafone emprestado por uma corrente para dois carros ao mesmo tempo."
   },
   "imagem_macete": {
     "arquivo": "dia-096-macete.png",
-    "cena": "Callback: um caminhão-guincho vermelho com um ímã gigante encosta no cruzamento e puxa a corrente azul-marinho, que gruda no ímã como clipe. O fiscal fica sem o megafone, e a Capitã Plaqueta libera o trânsito e acena aliviada.",
+    "cena": "Callback: um caminhão-guincho vermelho com um ímã gigante puxa a corrente, que gruda no ímã como clipe, e a Capitã Plaqueta libera o trânsito, aliviada. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Guincho vermelho com ímã puxa a corrente azul-marinho; Capitã Plaqueta libera o trânsito."
+    "alt": "Um guincho com ímã gigante puxa a corrente, e a Capitã Plaqueta libera o trânsito."
   },
   "questao": {
     "vinheta": "A 58-year-old man undergoing percutaneous coronary intervention receives an intravenous bolus of a drug that binds antithrombin and greatly accelerates its inactivation of thrombin and factor Xa. Two hours later, he has persistent bleeding from the femoral puncture site, and the aPTT is markedly prolonged.",
@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "Protamine sulfate",
-        "quiz": "Protamine sulfate"
+        "quiz": "Protamine"
       }
     },
     "correta": "D"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Na sala de hemodinâmica, um remédio que turbina a antitrombina contra a trombina e o fator Xa. Duas horas depois, a punção femoral não para de sangrar e o TTPa está nas alturas. A Capitã Plaqueta tem quatro antídotos no colete: qual desliga isso mais rápido?",
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta: um cateterismo, um bolus na veia e uma punção que não para de sangrar. O mecanismo do remédio está descrito na vinheta. Ache o remédio pelo mecanismo, e o antídoto vem junto.",
     "palavras_chave": [
       "percutaneous coronary intervention",
       "femoral access bleeding",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sangrou com TTPa alto após bolus na hemodinâmica: qual antídoto?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sangrou com TTPa alto após bolus na hemodinâmica: qual antídoto?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

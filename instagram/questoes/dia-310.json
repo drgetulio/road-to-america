@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-08",
   "tom": null,
-  "gancho": "7 de setembro: *o cálcio deu o grito* e saiu do osso",
+  "gancho": "7 de setembro no plantão: *alguém deu o grito de independência* às 3 da manhã",
   "gancho_apoio": "Às 3 da manhã, a Dona Térmica vê o desfile passar pela janela da copa e já pega a prancheta.",
   "imagem": {
     "arquivo": "dia-310.png",
-    "cena": "Copa do plantão de madrugada, com um relógio de parede sem números nas 3 horas; a Dona Térmica, no balcão, olha pela janela um castelo em forma de osso de portão aberto, de onde bolinhas brancas de giz saem em desfile com bandeirinhas verdes e amarelas; no parapeito, um vaso de planta com a terra rachada de seca.",
+    "cena": "Copa do plantão de madrugada, com um relógio de parede sem números nas 3 horas; a Dona Térmica, no balcão, olha pela janela um desfile de 7 de setembro que passa com bandeirinhas verdes e amarelas; no parapeito, um vaso de planta com a terra rachada de seca.",
     "foco": "50% 35%",
-    "alt": "7 de setembro: o cálcio deu o grito e saiu do osso"
+    "alt": "Dona Térmica vê um desfile de 7 de setembro pela janela da copa"
   },
   "imagem_macete": {
     "arquivo": "dia-310-macete.png",
-    "cena": "Callback: três ferramentas param o desfile: uma mangueira lava as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy tranca o portão do castelo de osso; a Dona Térmica anota na prancheta e a planta do parapeito volta a ficar verde.",
+    "cena": "Callback: um castelo em forma de osso, de portão aberto, solta bolinhas brancas de giz que desfilam pela rua; três ferramentas param o desfile: uma mangueira lava as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy tranca o portão do castelo. A Dona Térmica anota na prancheta e a planta do parapeito volta a ficar verde.",
     "foco": "50% 45%",
     "alt": "Hipercalcemia grave: lava, freia e tranca"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "IV furosemide, then oral fluids",
-        "quiz": "Furosemida IV"
+        "quiz": "IV furosemide"
       },
       "B": {
-        "texto": "IV saline, calcitonin, and zoledronic acid",
-        "quiz": "Soro+calcitonina+ZOL"
+        "texto": "IV saline, calcitonin, and zoledronate",
+        "quiz": "Saline + calcitonin + ZOL"
       },
       "C": {
         "texto": "Oral alendronate and a low-calcium diet",
-        "quiz": "Alendronato oral"
+        "quiz": "Oral alendronate + low-Ca diet"
       },
       "D": {
         "texto": "Emergent hemodialysis",
-        "quiz": "Hemodiálise"
+        "quiz": "Emergent hemodialysis"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 64 anos com carcinoma escamoso de pulmão chega confuso, desidratado, com poliúria e constipação. Cálcio de 14,6 mg/dL e PTH suprimido. Qual é o manejo inicial?",
+    "contexto": "Independência do Brasil no Plantão de Terça: o desfile passou pela janela da copa às 3 da manhã, e a Dona Térmica pegou a prancheta antes do hino acabar. Quatro condutas iniciais, e a vinheta traz um número que pede pressa.",
     "palavras_chave": [
-      "lung cancer",
-      "confusion",
-      "polyuria",
-      "very high serum calcium"
+      "emergency department",
+      "internal medicine",
+      "altered mental status",
+      "initial management"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cálcio 14,6, confusão e mucosas secas: o que fazer primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cálcio 14,6, confusão e mucosas secas: o que fazer primeiro?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

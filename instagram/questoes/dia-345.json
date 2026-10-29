@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Normal development for age",
-        "quiz": "Normal para idade"
+        "quiz": "Normal for age"
       },
       "B": {
         "texto": "Expressive language delay",
-        "quiz": "Atraso expressivo"
+        "quiz": "Expressive language delay"
       },
       "C": {
         "texto": "Receptive language delay",
-        "quiz": "Atraso receptivo"
+        "quiz": "Receptive language delay"
       },
       "D": {
         "texto": "Global developmental delay",
-        "quiz": "Atraso global"
+        "quiz": "Global developmental delay"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia das Crianças. Dois anos, corre, chuta bola, fala umas 50 palavras e junta duas de cada vez. Os pais se preocupam porque o primo já fala frases. Como está o desenvolvimento dela?",
+    "contexto": "Dia das Crianças: o primo fala frases e a família pediu VAR na consulta de 2 anos. A Dona Térmica revê o lance com calma; o que a criança faz está na vinheta, e a pergunta é se o juiz apita ou deixa seguir.",
     "palavras_chave": [
-      "24-month visit",
-      "parental worry",
-      "language",
-      "motor skills"
+      "well-child visit",
+      "child development",
+      "pediatrics",
+      "parental concerns"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "24 meses, 50 palavras e frases de duas: atraso ou dentro do esperado?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "24 meses, 50 palavras e frases de duas: atraso ou dentro do esperado?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

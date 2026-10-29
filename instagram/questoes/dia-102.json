@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-12",
   "tom": null,
-  "gancho": "Uma *foca* sentou no rodízio e começou a tossir",
-  "gancho_apoio": "Dois anos, coriza há dois dias e, à noite, uma tosse que parece latido.",
+  "gancho": "Duas da manhã e *uma tosse que acordou o prédio inteiro*",
+  "gancho_apoio": "Dois anos, coriza há dois dias e uma noite que a família não vai esquecer.",
   "imagem": {
     "arquivo": "dia-102.png",
-    "cena": "Garçom Espetinho chega à mesa com um espeto e encontra uma foca simpática de cachecol de lã sentada na cadeira, tossindo alto. Pela janela, o prédio vizinho acende as luzes, uma a uma, às 2 da manhã. A plaquinha verde e vermelha está em pé na mesa, esperando a escolha.",
+    "cena": "Garçom Espetinho, de bandeja na mão, para no corredor de um prédio às 2 da manhã enquanto, uma a uma, as janelas dos vizinhos acendem. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho encontra uma foca de cachecol tossindo alto na mesa; pela janela, o prédio vizinho acende as luzes no meio da noite."
+    "alt": "Garçom Espetinho num corredor de prédio de madrugada enquanto as janelas dos vizinhos acendem uma a uma."
   },
   "imagem_macete": {
     "arquivo": "dia-102-macete.png",
-    "cena": "Callback: no espeto do garçom aparece uma torre de igreja fina, em forma de ponta de lápis. A foca, agora calma, respira uma nuvenzinha de nebulização, e no prato há um comprimido pequeno. A plaquinha está virada para o verde.",
+    "cena": "Callback: uma foca simpática de cachecol, agora calma, respira uma nuvenzinha de nebulização ao lado de uma torre de igreja fina em forma de ponta de lápis, e o Garçom Espetinho vira a plaquinha para o verde. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O espeto traz uma torre de igreja em ponta de lápis; a foca calma respira uma nuvem de nebulização."
+    "alt": "Uma foca de cachecol respira nebulização ao lado de uma torre fina; o garçom vira a plaquinha para o verde."
   },
   "questao": {
     "vinheta": "A 2-year-old boy has had rhinorrhea and low-grade fever for 2 days. Tonight he developed a barking cough, a hoarse voice and inspiratory stridor at rest with mild suprasternal retractions. He is drinking fluids and is not drooling. Temperature is 38.1°C (100.6°F). A frontal neck radiograph shows subglottic narrowing.",
@@ -44,8 +44,8 @@
         "quiz": "Retropharyngeal abscess"
       },
       "D": {
-        "texto": "Laryngotracheobronchitis",
-        "quiz": "Viral croup"
+        "texto": "Viral laryngotracheitis",
+        "quiz": "Viral laryngotracheitis"
       }
     },
     "correta": "D"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta, espeto de pediatria: criança de 2 anos, coriza há dois dias e, à noite, um barulho que assusta a família.",
+    "contexto": "Rodízio de Quinta, espeto de pediatria: um menino de 2 anos, um resfriado que começou leve e uma madrugada que assustou a família. A tosse, o raio X e o que ele consegue engolir estão na vinheta.",
     "palavras_chave": [
       "barking cough",
       "hoarseness",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Tosse de latido e estridor em repouso aos 2 anos: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tosse de latido e estridor em repouso aos 2 anos: qual diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

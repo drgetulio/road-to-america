@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-28",
   "tom": null,
-  "gancho": "Derrame na insuficiência cardíaca, *mas com febre*: é da casa ou é penetra?",
-  "gancho_apoio": "Insuficiência cardíaca, mas também febre e tosse. O líquido pleural tem a palavra.",
+  "gancho": "Derrame pleural no plantão: *é da casa ou é penetra?*",
+  "gancho_apoio": "Light é a única conta da Prometric que você faz sem chorar e confere chorando.",
   "imagem": {
     "arquivo": "dia-268.png",
-    "cena": "Três da manhã num farol à beira-mar. Dona Térmica, a garrafa térmica de café, faz contas num guardanapo de papel à luz do farol, que ilumina três copos sobre uma pedra: um transparente, um amarelado e um turvo. Um caranguejo de lupa ajuda a conferir. Na parede do farol, um relógio redondo sem números marca 3 horas.",
+    "cena": "Três da manhã num farol à beira-mar: Dona Térmica faz contas num guardanapo de papel à luz do farol, com três copos sobre uma pedra. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica faz a conta do líquido pleural à luz do farol"
+    "alt": "Dona Térmica faz contas num guardanapo à luz do farol, ao lado de três copos"
   },
   "imagem_macete": {
     "arquivo": "dia-268-macete.png",
-    "cena": "O facho do farol agora tem três lâmpadas lado a lado: sobre o copo turvo as três acendem, e sobre o transparente as três continuam apagadas. Dentro do copo turvo, chaminhas abrem buracos na parede de um vasinho e deixam escapar contas de proteína. Dona Térmica circula a resposta no guardanapo e toma um gole de café.",
+    "cena": "Callback: o facho do farol agora tem três lâmpadas; sobre o copo turvo as três acendem e sobre o transparente ficam apagadas, e Dona Térmica circula a resposta no guardanapo. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Light: uma luz acesa já é exsudato"
+    "alt": "As três lâmpadas acendem sobre o copo turvo e ficam apagadas sobre o transparente"
   },
   "questao": {
     "vinheta": "A 67-year-old man with heart failure has had 5 days of fever, productive cough, and right pleuritic chest pain. Thoracentesis yields cloudy fluid. Pleural protein is 4.0 g/dL (serum 6.2 g/dL), and pleural LDH is 310 U/L (serum 250 U/L; upper limit of normal, 220 U/L).",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Transudate from heart failure",
-        "quiz": "Transudato da IC"
+        "quiz": "HF transudate"
       },
       "B": {
         "texto": "Exudate from a parapneumonic process",
-        "quiz": "Exsudato pneumonia"
+        "quiz": "Parapneumonic exudate"
       },
       "C": {
         "texto": "Transudate from hypoalbuminemia",
-        "quiz": "Transud. hipoalbum."
+        "quiz": "Hypoalbuminemia transudate"
       },
       "D": {
-        "texto": "Transudate from hepatic hydrothorax",
-        "quiz": "Hidrotórax hepático"
+        "texto": "Transudate from a hepatic hydrothorax",
+        "quiz": "Hepatic hydrothorax"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Paciente com insuficiência cardíaca, mas agora com febre e tosse. Os números do líquido pleural decidem. Calcule antes de comentar.",
+    "contexto": "Plantão de Terça com a Dona Térmica. Um paciente com doença crônica, uma queixa nova e uma punção pleural com números na vinheta. Calcule antes de comentar.",
     "palavras_chave": [
-      "heart failure",
-      "fever and productive cough",
+      "pleural effusion",
       "thoracentesis",
-      "pleural fluid LDH"
+      "pleural fluid analysis",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Proteína 4,0/6,2 e LDH 310/250: qual é a causa do derrame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Proteína 4,0/6,2 e LDH 310/250: qual é a causa do derrame?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

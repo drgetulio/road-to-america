@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-05-29",
   "tom": null,
-  "gancho": "O tímpano virou *zabumba de São João*: qual frasco a Tia tira da prateleira?",
+  "gancho": "Sextou na Farmácia em clima de São João: *quatro frascos* e uma criança chorando no colo",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-208.png",
-    "cena": "Tia Meia-Vida, atrás do balcão enfeitado com bandeirinhas de São João, olha por cima dos óculos para uma zabumba vermelha e estufada, prestes a estourar, ao lado de quatro frascos sem rótulo.",
+    "cena": "Tia Meia-Vida, atrás do balcão enfeitado com bandeirinhas de São João, escolhe entre quatro frascos sem rótulo, com a areia da ampulheta escorrendo devagar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida diante de uma zabumba vermelha estufada no balcão de São João"
+    "alt": "Tia Meia-Vida escolhe entre quatro frascos sem rótulo no balcão de São João"
   },
   "imagem_macete": {
     "arquivo": "dia-208-macete.png",
@@ -26,24 +26,24 @@
     "alt": "Otite média aguda: amoxicilina em dose alta"
   },
   "questao": {
-    "vinheta": "A 2-year-old boy has had a fever of 39.2°C (102.6°F), ear pulling, and irritability for 2 days. Otoscopy shows a bulging, erythematous, immobile right tympanic membrane. He attends day care, has no drug allergies, and took no antibiotics during the last month.",
+    "vinheta": "A 2-year-old boy has had a temperature of 39.2°C (102.6°F), ear pulling, and irritability for 2 days. Otoscopy shows a bulging, erythematous, immobile right tympanic membrane. He attends day care, has no drug allergies, and took no antibiotics during the last month.",
     "pergunta": "Which is the most appropriate pharmacotherapy?",
     "alternativas": {
       "A": {
         "texto": "Oral azithromycin",
-        "quiz": "Azitromicina"
+        "quiz": "Oral azithromycin"
       },
       "B": {
         "texto": "Ciprofloxacin-dexamethasone ear drops",
-        "quiz": "Gotas de cipro"
+        "quiz": "Ciprofloxacin-dex drops"
       },
       "C": {
         "texto": "Oral trimethoprim-sulfamethoxazole",
-        "quiz": "Sulfa-trimetoprima"
+        "quiz": "Oral TMP-SMX"
       },
       "D": {
         "texto": "High-dose oral amoxicillin",
-        "quiz": "Amoxicilina alta"
+        "quiz": "High-dose amoxicillin"
       }
     },
     "correta": "D"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. Na prateleira, quatro frascos sem rótulo, e só um é a primeira escolha.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida, em clima de festa junina. Uma criança pequena com febre, um exame descrito na vinheta e quatro frascos na prateleira. Qual é a primeira escolha?",
     "palavras_chave": [
-      "ear pulling",
+      "pediatrics",
       "fever",
-      "day care",
-      "otoscopy"
+      "antibiotic choice",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "Tímpano abaulado, 2 anos, sem alergia: o que dar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tímpano abaulado, 2 anos, sem alergia: o que dar?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

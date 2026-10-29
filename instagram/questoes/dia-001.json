@@ -16,58 +16,57 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-001.png",
-    "cena": "Macrô, na recepção de uma pousada pequena e acolhedora, confere com uma lupa o livro de hóspedes: a ficha diz que alguém fez check-in, mas o quarto que se vê pela porta está vazio, só com a cama arrumada e muitos travesseiros brancos. No fundo, uma janelinha redonda acesa mostra que o hóspede está lá dentro. A comanda em branco aparece no guardanapo dele.",
+    "cena": "Macrô, na recepção de uma pousada pequena e acolhedora, confere com uma lupa o livro de hóspedes: a ficha diz que alguém fez check-in, mas o quarto que se vê pela porta parece vazio, só com a cama arrumada. A comanda em branco aparece no guardanapo dele.",
     "foco": "50% 35%",
     "alt": "Estreia com um hóspede que não aparece na foto do Gram"
   },
   "imagem_macete": {
     "arquivo": "dia-001-macete.png",
     "cena": "Callback da pousada, agora em corte: na porta, um viajante pequeno e compacto, de mala fechada, toca a campainha (corpo elementar, o que infecta). Lá dentro, num quarto redondo, as visitas desfizeram as malas, cresceram e se dividem em várias (corpos reticulados). Macrô entrega a chave com calma.",
-    "alt": "O hóspede que só vive dentro da célula"
+    "alt": "O hóspede de mala fechada é o que infecta"
   },
   "questao": {
     "vinheta": "A 22-year-old man has 10 days of dysuria and a scant watery urethral discharge, plus new right scrotal pain. Gram stain of the discharge shows many neutrophils and no organisms. The organism grows only in cell culture, forming intracytoplasmic inclusions.",
-    "pergunta": "Which is the most likely causal organism?",
+    "pergunta": "Which form of this organism is infectious and enters host cells?",
     "alternativas": {
       "A": {
-        "texto": "Chlamydia trachomatis",
-        "quiz": "C. trachomatis"
+        "texto": "Elementary body",
+        "quiz": "Elementary body"
       },
       "B": {
-        "texto": "Neisseria gonorrhoeae",
-        "quiz": "N. gonorrhoeae"
+        "texto": "Reticulate body",
+        "quiz": "Reticulate body"
       },
       "C": {
-        "texto": "Escherichia coli",
-        "quiz": "E. coli"
+        "texto": "Endospore",
+        "quiz": "Endospore"
       },
       "D": {
-        "texto": "Trichomonas vaginalis",
-        "quiz": "T. vaginalis"
+        "texto": "Trophozoite",
+        "quiz": "Trophozoite"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "O hóspede que só vive dentro da célula",
+    "titulo": "O hóspede de mala fechada é o que infecta",
     "certa": [
-      "Secreção aquosa, muitos neutrófilos sem bactéria visível no Gram e crescimento só em cultura de células, com inclusões no citoplasma, apontam para Chlamydia trachomatis, a causa mais comum de uretrite e de epididimite no homem jovem sexualmente ativo. Ela é intracelular obrigatória e alterna duas formas: o corpo elementar (elementary body), pequeno e infectante, que entra na célula, e o corpo reticulado (reticulate body), que se replica dentro da inclusão. Na prática o diagnóstico é por NAAT e, na epididimite, o CDC indica ceftriaxona em dose única mais doxiciclina por 10 dias."
+      "Secreção aquosa, muitos neutrófilos sem bactéria visível no Gram e crescimento só em cultura de células, com inclusões no citoplasma, apontam para *Chlamydia trachomatis*, a causa mais comum de uretrite e de epididimite no homem jovem sexualmente ativo. Ela é intracelular obrigatória e alterna duas formas. O corpo elementar (*elementary body*) é pequeno, resistente e infectante: é ele que entra na célula. Lá dentro, vira corpo reticulado (*reticulate body*), que se replica na inclusão e depois volta a ser elementar para sair e infectar a célula vizinha. Na prática, o diagnóstico é por NAAT e, na epididimite, o CDC indica ceftriaxona em dose única mais doxiciclina por 10 dias."
     ],
     "termos": [
-      "Chlamydia trachomatis",
       "elementary body",
       "reticulate body",
       "obligate intracellular",
-      "NAAT"
+      "Chlamydia trachomatis"
     ],
     "erradas": {
-      "B": "O gonococo costuma dar secreção purulenta abundante, aparece no Gram como diplococo gram-negativo dentro dos neutrófilos e cresce em ágar Thayer-Martin.",
-      "C": "E. coli causa epididimite sobretudo em homens mais velhos ou com alteração urinária, cresce em meio comum e aparece como bacilo gram-negativo.",
-      "D": "Trichomonas é um protozoário flagelado, visto se mexendo no exame a fresco, e não depende de cultura de células."
+      "B": "O corpo reticulado é a forma que se replica dentro da inclusão; é grande, frágil e não infecta a célula seguinte.",
+      "C": "O endósporo é a forma de resistência de gram-positivos como Bacillus e Clostridium; a Chlamydia não forma esporos.",
+      "D": "Trofozoíto é a forma ativa de protozoários como Trichomonas e Giardia, e não de bactéria."
     },
     "macete": {
       "frase": "*Elementar* entra, *Reticulado* replica: o hóspede de mala fechada toca a campainha, e quem desfez a mala se multiplica lá dentro.",
-      "apoio": "Pegadinha de prova: O NBME usa \"neutrófilos sem organismos no Gram\" como pista principal e gosta de perguntar qual das duas formas é a infectante (a elementar).",
+      "apoio": "Pegadinha de prova: O NBME usa \"neutrófilos sem organismos no Gram\" como pista principal e pergunta qual das duas formas é a infectante: a elementar.",
       "fala": null
     }
   },
@@ -76,8 +75,8 @@
     "palavras_chave": [
       "urethritis",
       "scrotal pain",
-      "Gram stain",
-      "cell culture"
+      "microbiology",
+      "sexual health"
     ],
     "hashtags": [
       "#USMLE",
@@ -90,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Uretrite com neutrófilos e Gram sem bactéria: qual é o germe?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Uretrite com Gram sem bactéria: qual forma do germe infecta?"
   },
   "exemplo": false
 }

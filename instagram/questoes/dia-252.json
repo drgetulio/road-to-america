@@ -7,7 +7,8 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Malária por falciparum (dia 169), E. coli êntero-hemorrágica (dia 232), Deficiência do complemento terminal (dia 246)",
   "conceito": "Remix: Plasmodium falciparum + EHEC O157 + Terminal complement deficiency",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": [
     169,
@@ -16,70 +17,70 @@
   ],
   "explicacao_em": "2027-07-12",
   "tom": null,
-  "gancho": "Febre e convulsão depois de Gana: o Macrô *já viu esses suspeitos* no feed",
-  "gancho_apoio": "Malária, EHEC e complemento voltam num caso só. Qual mecanismo explica a convulsão?",
+  "gancho": "Remix de Domingo: uma viagem, uma febre e *suspeitos já conhecidos* na fila",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 169, 232 e 246) e um intruso.",
   "imagem": {
     "arquivo": "dia-252.png",
-    "cena": "Na delegacia do bairro, Macrô, de guardanapo xadrez, faz o reconhecimento atrás de um vidro: em fila estão um mosquito de óculos escuros, uma vaquinha de fazenda segurando um hambúrguer, uma furadeira pequena e outro mosquito, de pijama, bocejando. Macrô aperta os olhos, com um pseudópode no queixo. Na parede, um vinil pequeno serve de relógio.",
+    "cena": "Seu Allen, de avental navy, abre uma caixa de ferramentas no saguão de um aeroporto e confere quatro peças diferentes enfileiradas. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô no reconhecimento de suspeitos já conhecidos"
+    "alt": "Seu Allen confere quatro peças enfileiradas numa caixa de ferramentas no aeroporto"
   },
   "imagem_macete": {
     "arquivo": "dia-252-macete.png",
-    "cena": "O mosquito de óculos escuros dá um passo à frente: atrás dele, hemácias com ventosas grudam nas paredes de uma ruela estreita e formam um engarrafamento. A vaquinha, a furadeira e o mosquito de pijama voltam para o banco, liberados.",
+    "cena": "Callback: dentro de um vaso estreito, longas correntes gigantes (o fator de von Willebrand) prendem plaquetas pelo caminho, e o Seu Allen procura na caixa a tesoura que sumiu (a ADAMTS13). Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Falciparum: hemácia de ventosa engarrafa a vênula"
+    "alt": "Correntes gigantes prendem as plaquetas no vaso e Seu Allen procura a tesoura que sumiu"
   },
   "questao": {
-    "vinheta": "Ten days after returning from Ghana, where he took no malaria prophylaxis, a 24-year-old man has fever, confusion, and a generalized seizure. Hemoglobin is 8.1 g/dL, platelets are 58,000/mm3, and creatinine is 2.1 mg/dL. The blood smear shows many ring forms and crescent-shaped gametocytes.",
-    "pergunta": "Which mechanism best explains his neurologic findings?",
+    "vinheta": "A 34-year-old woman has fever, confusion, and petechiae 3 weeks after returning from Ghana, where she took malaria prophylaxis. She has had no diarrhea. Hemoglobin is 7.9 g/dL, platelets are 14,000/mm3, LDH is high, and creatinine is 1.3 mg/dL. The smear shows schistocytes; three thick and thin smears show no parasites.",
+    "pergunta": "Which mechanism best explains her condition?",
     "alternativas": {
       "A": {
-        "texto": "Infected red cells adhering to cerebral venules",
-        "quiz": "Hemácia gruda na vênula",
-        "dia": 169
+        "texto": "Autoantibody against ADAMTS13",
+        "quiz": "Anti-ADAMTS13 antibody"
       },
       "B": {
-        "texto": "Shiga toxin inactivating the 60S ribosomal subunit",
-        "quiz": "Toxina Shiga no 60S",
+        "texto": "Shiga toxin inactivating the 60S subunit",
+        "quiz": "Shiga toxin on 60S",
         "dia": 232
       },
       "C": {
-        "texto": "Meningococcal invasion without a membrane attack complex",
-        "quiz": "Meningococo sem MAC",
-        "dia": 246
+        "texto": "Red cells with knobs adhering to venules",
+        "quiz": "Cytoadherent red cells",
+        "dia": 169
       },
       "D": {
-        "texto": "Liver hypnozoites reactivating after exposure",
-        "quiz": "Hipnozoíta no fígado"
+        "texto": "Absent membrane attack complex (C5-C9)",
+        "quiz": "No MAC (C5-C9)",
+        "dia": 246
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Falciparum *gruda* no cérebro",
+    "titulo": "Esquizócito, plaqueta baixa e confusão: *ADAMTS13*",
     "certa": [
-      "Muitos anéis e gametócitos em forma de banana são *Plasmodium falciparum* (dia 169). A proteína *PfEMP1* faz a hemácia infectada grudar no endotélio das vênulas cerebrais (*cytoadherence*); o fluxo trava e vêm confusão, convulsão e coma, a *cerebral malaria*. A anemia, as plaquetas baixas e o rim ruim também cabem na malária grave."
+      "Febre, confusão, petéquias, anemia hemolítica com esquizócitos e plaquetas muito baixas, sem diarreia e com creatinina quase normal, formam a púrpura trombocitopênica trombótica (*TTP*), o intruso de hoje. Na forma adquirida, um autoanticorpo inibe a *ADAMTS13*, a protease que quebra os multímeros muito grandes de von Willebrand; sem ela, as plaquetas se agregam em microtrombos e as hemácias se fragmentam. É emergência: plasmaférese e corticoide, muitas vezes com caplacizumabe, sem esperar o resultado da ADAMTS13."
     ],
     "termos": [
-      "cerebral malaria",
-      "PfEMP1",
-      "cytoadherence",
-      "banana-shaped gametocytes"
+      "thrombotic thrombocytopenic purpura",
+      "ADAMTS13",
+      "von Willebrand factor multimers",
+      "schistocytes"
     ],
     "erradas": {
-      "B": "A toxina Shiga da EHEC (dia 232) também dá anemia, plaquetopenia e rim ruim, mas vem depois de diarreia com sangue e com esquizócitos, não com anéis na hemácia.",
-      "C": "Falta de C5 a C9 (dia 246) predispõe a meningococo de repetição; aqui o esfregaço mostra o parasita e não há história de Neisseria.",
-      "D": "Intruso: hipnozoíta é do vivax e do ovale e explica recaída meses depois, não malária cerebral dez dias após a viagem."
+      "B": "Dia 232: a toxina Shiga da E. coli O157:H7 também dá anemia hemolítica com esquizócitos e plaqueta baixa, mas vem depois de diarreia com sangue e com o rim no centro do quadro. Aqui não houve diarreia, a creatinina mal subiu e a confusão manda.",
+      "C": "Dia 169: a malária grave por falciparum explicaria febre, confusão, anemia e plaqueta baixa, com hemácias infectadas grudadas nas vênulas. Mas três pares de gota espessa e esfregaço negativos afastam a malária, e ela não forma esquizócitos.",
+      "D": "Dia 246: faltar o MAC (C5 a C9) deixa a pessoa sem defesa contra a Neisseria; não destrói hemácia nem consome plaqueta. A SHU atípica é o contrário: complemento ativado demais."
     },
     "macete": {
-      "frase": "Falciparum *gruda e engarrafa*; Shiga *corta o 60S*; MAC *fura a Neisseria*",
-      "apoio": "Três vilões, três verbos. A hemácia com ventosa gruda na vênula do cérebro (falciparum), a tesoura da Shiga corta o ribossomo e entope o rim (EHEC) e a furadeira de C5 a C9 fura o diplococo (complemento). Hipnozoíta é o inquilino que volta meses depois: vivax e ovale.",
-      "fala": "Comi, mostrei, avisei. Dessa vez quem travou o trânsito foi a hemácia."
+      "frase": "Na TTP *some a tesoura*: sem a ADAMTS13, o fator de von Willebrand fica *gigante* e prende as plaquetas pelo caminho.",
+      "apoio": "Pegadinha de prova: viagem para a África puxa a malária, e anemia com esquizócitos puxa a SHU. Sem parasita no sangue e sem diarreia, com o cérebro mais atingido que o rim, pense em TTP: plasmaférese antes de qualquer exame confirmar.",
+      "fala": "Sobrou peça? Então faltou a tesoura: sem ADAMTS13, ninguém corta o fator de von Willebrand."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 169, 232 e 246, mais um intruso. Febre, convulsão, anemia, plaquetas baixas e creatinina subindo: três vilões explicariam parte disso, só um explica tudo.",
+    "contexto": "Domingo de Remix com o Seu Allen. Uma viajante com febre, um hemograma, um esfregaço e três pesquisas de parasita na vinheta. Qual mecanismo explica o quadro?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,9 +98,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre e convulsão depois de Gana: qual mecanismo explica o quadro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquizócitos, plaquetas 14 mil e sem parasita: mecanismo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

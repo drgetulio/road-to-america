@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-03",
   "tom": null,
-  "gancho": "Potássio 7,4 e QRS largo: *capacete, mudança ou caminhão*?",
-  "gancho_apoio": "Potássio de 7,4, QRS alargado e acesso venoso pronto.",
+  "gancho": "O laboratório ligou às 3 da manhã e *ninguém gostou do número*",
+  "gancho_apoio": "O único call que você não queria no Match: o do laboratório, às 3 da manhã.",
   "imagem": {
     "arquivo": "dia-093.png",
-    "cena": "Seu Néfron, atrás da mesa do cartório, está soterrado por uma montanha de bananas que chegam por uma esteira. Pela janela, um coração simpático se equilibra numa corda bamba. Na calçada esperam um capacete branco de obra, um caminhão de mudança e um caminhão de lixo. Na parede, um relógio sem números nas 3 da manhã.",
+    "cena": "Seu Néfron, atrás da mesa do cartório, segura com esforço uma pilha de bananas que não para de crescer. Pela janela, um coração simpático se equilibra numa corda bamba. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron soterrado de bananas; pela janela, um coração na corda bamba; na calçada, um capacete, um caminhão de mudança e um de lixo."
+    "alt": "Seu Néfron segura uma pilha crescente de bananas; pela janela, um coração se equilibra numa corda bamba."
   },
   "imagem_macete": {
     "arquivo": "dia-093-macete.png",
-    "cena": "Callback: o coração agora usa um capacete branco de obra (cálcio) e fica firme na corda. Atrás, um caminhão de mudança leva bananas para dentro de casinhas (as células), e um caminhão de lixo espera a vez no fim da rua. Seu Néfron, aliviado, ergue o carimbo.",
+    "cena": "Callback: o coração agora usa um capacete branco de obra e fica firme na corda bamba. Seu Néfron, ainda cercado de bananas, ergue o carimbo, aliviado. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Coração de capacete firme na corda; caminhão de mudança leva bananas para casinhas e um caminhão de lixo espera."
+    "alt": "O coração de capacete branco fica firme na corda bamba; Seu Néfron, cercado de bananas, ergue o carimbo."
   },
   "questao": {
     "vinheta": "A 67-year-old man with advanced chronic kidney disease (eGFR 22 mL/min/1.73 m2) recently started lisinopril and spironolactone. He reports generalized weakness. Pulse is 52/min. Serum potassium is 7.4 mEq/L. ECG shows peaked T waves, a prolonged PR interval and widened QRS complexes. Intravenous access is established.",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Renal crônico, lisinopril e espironolactona recém-começados, pulso de 52, potássio de 7,4 e um ECG que assusta. O acesso venoso está pronto. Seu Néfron já está soterrado de bananas: qual é o primeiro passo?",
+    "contexto": "Plantão de Terça com o Seu Néfron: um renal crônico, remédios novos na receita e um telefonema que acorda qualquer residente. O ECG da vinheta diz quanta pressa você tem. Por onde começar?",
     "palavras_chave": [
       "chronic kidney disease",
       "lisinopril and spironolactone",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "K 7,4 com QRS largo e acesso venoso pronto: o que vem primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "K 7,4 com QRS largo e acesso venoso pronto: o que vem primeiro?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

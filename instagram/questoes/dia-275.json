@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-04",
   "tom": null,
-  "gancho": "A amônia pegou a marginal em horário de pico *rumo ao cérebro*",
-  "gancho_apoio": "Cirrose, confusão e flapping, sem sangramento e sem infecção. Qual remédio libera a pista?",
+  "gancho": "Três da manhã no viaduto: *Dona Térmica e um fígado cansado dividem o café*",
+  "gancho_apoio": "Plantão de Terça com um fígado cansado no viaduto e quatro remédios na prancheta.",
   "imagem": {
     "arquivo": "dia-275.png",
-    "cena": "Três da manhã numa avenida marginal de cidade grande: um engarrafamento de nuvenzinhas amarelas em forma de carrinho segue para uma cidade com silhueta de cérebro, que vai apagando as luzes. De cima de um viaduto, Dona Térmica, a garrafa térmica de café, assiste e serve café para um fígado cansado e cheio de nós sentado ao lado dela. Num poste, um relógio redondo sem números marca 3 horas.",
+    "cena": "Três da manhã no alto de um viaduto de cidade grande: Dona Térmica, a garrafa térmica de café, serve café para um fígado cansado e cheio de nós sentado ao lado dela, enquanto as luzes da cidade piscam lá embaixo. Num poste, um relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Engarrafamento de amônia rumo à cidade-cérebro"
+    "alt": "Dona Térmica serve café para um fígado cansado no viaduto"
   },
   "imagem_macete": {
     "arquivo": "dia-275-macete.png",
-    "cena": "Na mesma estrada, um pedágio em forma de limão transforma cada carrinho de fumaça num caminhão quadrado grande demais para o túnel do cérebro; os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo. No viaduto, Dona Térmica e o fígado brindam com café.",
+    "cena": "Callback: lá embaixo do viaduto, carrinhos amarelos de fumaça seguem para uma cidade em forma de cérebro; um pedágio em forma de limão transforma cada carrinho num caminhão quadrado grande demais para o túnel do cérebro, os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo. No viaduto, Dona Térmica e o fígado brindam com café.",
     "foco": "50% 45%",
     "alt": "Lactulose: ácido no cólon, amônia presa"
   },
@@ -33,15 +33,15 @@
     "alternativas": {
       "A": {
         "texto": "Rifaximin alone",
-        "quiz": "Rifaximina sozinha"
+        "quiz": "Rifaximin alone"
       },
       "B": {
         "texto": "Octreotide",
-        "quiz": "Octreotida"
+        "quiz": "Octreotide"
       },
       "C": {
         "texto": "Neomycin",
-        "quiz": "Neomicina"
+        "quiz": "Neomycin"
       },
       "D": {
         "texto": "Lactulose",
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Cirrose, dois dias de confusão, flapping nas mãos e nenhum sinal de sangramento ou de infecção. Qual remédio libera a pista?",
+    "contexto": "Plantão de Terça às 3 da manhã, aquele horário em que você lê \"most appropriate initial pharmacotherapy\" e só pensa no café da Dona Térmica. Um fígado cansado no viaduto e quatro remédios na prancheta; a vinheta diz o que já foi descartado.",
     "palavras_chave": [
-      "cirrhosis",
-      "confusion",
-      "asterixis",
-      "daytime sleepiness"
+      "liver disease",
+      "emergency medicine",
+      "night shift",
+      "pharmacotherapy"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cirrose, confusão e flapping, sem gatilho: qual é o primeiro remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cirrose, confusão e flapping, sem gatilho: qual é o primeiro remédio?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-23",
   "tom": null,
-  "gancho": "Fez 30 anos e o garçom trouxe bolo. *E o cardápio do rastreio?*",
-  "gancho_apoio": "Citologias normais aos 22, 25 e 28, vacina completa e 31 anos. Qual é o plano agora?",
+  "gancho": "Rodízio de Quinta na ginecologia: *uma consulta de rotina* e um calendário para montar",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-263.png",
-    "cena": "O Garçom Espetinho caminha por uma fileira de mesinhas que representam os aniversários e, nas primeiras, serve um espeto com uma pequena lâmina de vidro a cada três mesas. Mais adiante, ao lado de um bolo com velinhas, ele para e consulta o cardápio, pensativo, com os espetos escondidos atrás das costas e a plaquinha verde e vermelha de lado no bolso do colete.",
+    "cena": "O Garçom Espetinho caminha por uma fileira de mesinhas de aniversário e para diante de um bolo com velinhas, consultando o cardápio, pensativo. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho para diante do bolo de 30 anos e consulta o cardápio"
+    "alt": "O garçom para diante de um bolo com velinhas e consulta o cardápio"
   },
   "imagem_macete": {
     "arquivo": "dia-263-macete.png",
@@ -32,20 +32,20 @@
     "pergunta": "Which is the most appropriate cervical cancer screening plan?",
     "alternativas": {
       "A": {
-        "texto": "Stop screening because she is vaccinated",
-        "quiz": "Parar: vacinada"
+        "texto": "Stop screening because she is fully vaccinated",
+        "quiz": "Stop: she is vaccinated"
       },
       "B": {
-        "texto": "High-risk HPV testing now, repeat in 5 years if negative",
-        "quiz": "HPV agora, 5 anos"
+        "texto": "HPV testing now; repeat in 5 years if negative",
+        "quiz": "HPV test now, then 5 yr"
       },
       "C": {
         "texto": "Annual cytology with pelvic examination",
-        "quiz": "Citologia anual"
+        "quiz": "Annual cytology"
       },
       "D": {
         "texto": "Cytology now, repeat in 1 year if normal",
-        "quiz": "Citologia em 1 ano"
+        "quiz": "Cytology now, again in 1 yr"
       }
     },
     "correta": "B"
@@ -69,16 +69,16 @@
     "macete": {
       "frase": "*Três* nos 20 e poucos, *cinco* depois dos 30",
       "apoio": "O garçom serve a lâmina de vidro a cada três mesas enquanto os aniversários são de vinte e poucos; depois do bolo dos 30, troca para o espeto do HPV, a cada cinco. A seringa sentada à mesa lembra que vacinada também recebe o espeto.",
-      "fala": "Vai uma conduta aí, doutor? Depois dos 30, o espeto passa de cinco em cinco."
+      "fala": "Vai uma conduta aí, doutor? Papanicolau todo ano é tão 2010 quanto estudar por apostila xerocada."
     }
   },
   "legenda": {
-    "contexto": "31 anos, citologias normais, vacina contra HPV completa na adolescência. Qual é o próximo passo do rastreamento?",
+    "contexto": "Rodízio de Quinta na prevenção, com informação sem medo. A idade, os exames anteriores e a vacina da paciente estão na vinheta. Qual é o plano de rastreamento?",
     "palavras_chave": [
-      "routine visit",
-      "prior normal Pap tests",
-      "HPV vaccination",
-      "31-year-old"
+      "preventive care",
+      "screening interval",
+      "gynecology",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "31 anos, citologias normais e vacinada: qual é o plano de rastreio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "31 anos, citologias normais e vacinada: qual é o plano de rastreio?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

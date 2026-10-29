@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-12",
   "tom": null,
-  "gancho": "Seu Néfron foi buscar pão de *sal* e a padaria só tinha doce",
+  "gancho": "Padaria das suprarrenais com um forno *apagado*: o que empilha na frente dele?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-010.png",
-    "cena": "Padaria em corte, estilo manual de montagem: uma esteira leva bolinhas de massa por três fornos em fila; o forno do meio está frio, a massa se acumula na frente dele e parte escorrega por um tobogã até a vitrine de doces, que transborda. Setinhas de manual apontam para o forno frio. No balcão, Seu Néfron segura um saquinho de pão vazio e olha o saleiro tombado.",
+    "cena": "Padaria em corte, estilo manual de montagem: uma esteira leva bolinhas de massa por três fornos em fila, e um deles está apagado, sem mostrar qual. Setinhas de manual contornam os fornos. No balcão, Seu Néfron segura um saquinho de pão vazio e espera.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron foi buscar pão de sal e a padaria só tinha doce"
+    "alt": "Padaria em corte com três fornos em fila, um deles apagado; no balcão, Seu Néfron segura um saquinho de pão vazio."
   },
   "imagem_macete": {
     "arquivo": "dia-010-macete.png",
@@ -31,15 +31,15 @@
     "alternativas": {
       "A": {
         "texto": "11-Deoxycorticosterone",
-        "quiz": "DOC"
+        "quiz": "Deoxycorticosterone (DOC)"
       },
       "B": {
         "texto": "11-Deoxycortisol",
-        "quiz": "11-desoxicortisol"
+        "quiz": "11-deoxycortisol"
       },
       "C": {
         "texto": "17-Hydroxyprogesterone",
-        "quiz": "17-OH-progesterona"
+        "quiz": "17-OH progesterone"
       },
       "D": {
         "texto": "Cortisol",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê: a fábrica de esteroides é uma padaria com fornos em fila. Um forno parou, faltou sal no balcão do Seu Néfron e a vitrine encheu de doce. O que ficou empilhado antes do forno quebrado?",
+    "contexto": "Quarta do Porquê: a fábrica de esteroides é uma padaria com fornos em fila, e um deles parou. Quem decorou a via no Anki às 2 da manhã já sabe que o que empilha é sempre o que vem antes do forno quebrado. Qual forno? A vinheta conta.",
     "palavras_chave": [
-      "ambiguous genitalia",
-      "hyponatremia",
-      "hyperkalemia",
-      "newborn"
+      "newborn",
+      "adrenal gland",
+      "steroid synthesis",
+      "endocrinology"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê 46,XX com sódio baixo e potássio alto: qual nível sobe?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê 46,XX com sódio baixo e potássio alto: qual nível sobe?"
   },
   "exemplo": false
 }

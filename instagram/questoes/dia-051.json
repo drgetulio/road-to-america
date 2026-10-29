@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-23",
-  "gancho": "Seu Néfron segurou o ácido *úrico*, e o dedão acordou às 3 da manhã",
+  "gancho": "Dedão acordou às 3 da manhã, e o *Seu Néfron* foi chamado para depor",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Néfron, de gravata e carimbo, está no guichê de saída da repartição, onde uma fila de bolinhas de ácido úrico espera; uma caixinha de diurético está no balcão, e ele segura o carimbo parado, sem liberar ninguém. Ao lado, um microscópio desenhado como caixinha de costura tem agulhas de um lado e pequenos paralelepípedos do outro. Na parede, um relógio sem números marca 3 da manhã.",
+    "cena": "Seu Néfron, de gravata e carimbo, está no guichê da repartição segurando uma pilha de formulários em branco, com cara de quem vai ter que se explicar. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron segurou o ácido úrico, e o dedão acordou às 3 da manhã",
+    "alt": "Seu Néfron, no guichê da repartição, segura uma pilha de formulários com cara de quem vai ter que se explicar.",
     "arquivo": "dia-051.png"
   },
   "imagem_macete": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dor intensa no dedão de madrugada, diurético na receita e um líquido articular que vai para o microscópio de luz polarizada. Quem estuda depois do plantão conhece essa hora.",
+    "contexto": "Plantão de Terça: uma articulação inflamada às 3 da manhã, punção feita e quatro diagnósticos na mesa. Quem estuda depois do plantão conhece essa hora, e o microscópio da vinheta decide.",
     "palavras_chave": [
-      "first MTP joint",
-      "hydrochlorothiazide",
-      "synovial fluid",
-      "polarized microscopy"
+      "acute monoarthritis",
+      "joint aspiration",
+      "rheumatology",
+      "night shift"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Rheumatology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Dedão de madrugada, tiazida e cristal em agulha: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dedão de madrugada, tiazida e cristal em agulha: qual diagnóstico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

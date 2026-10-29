@@ -16,15 +16,15 @@
   "gancho_apoio": "Hoje é dia de falar de prevenção. E de duas proteínas que a prova adora.",
   "imagem": {
     "arquivo": "dia-127.png",
-    "cena": "Macrô, tranquilo, mostra uma bicicleta parada que representa o ciclo celular, com dois freios de cores diferentes, um vermelho e um verde. Duas luvinhas cinzentas se aproximam dos freios.",
+    "cena": "O Macrô, tranquilo, mostra uma bicicleta parada com dois freios de cores diferentes, um vermelho e um verde, enquanto duas luvinhas cinzentas se aproximam dos freios. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô apontando uma bicicleta com freio vermelho e freio verde; duas luvinhas cinzentas se aproximam."
+    "alt": "O Macrô mostra uma bicicleta com freio vermelho e freio verde; duas luvinhas cinzentas se aproximam."
   },
   "imagem_macete": {
     "arquivo": "dia-127-macete.png",
-    "cena": "Callback: uma luvinha corta o cabo do freio vermelho (E6 e p53) e a outra segura a alavanca do freio verde aberta (E7 e Rb). No canto, um escudo navy e um calendário com um dia marcado lembram vacina e exame preventivo.",
+    "cena": "Callback: uma luvinha corta o cabo do freio vermelho e a outra segura aberta a alavanca do freio verde; num canto, um escudo navy lembra a vacina. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Uma luva corta o freio vermelho e outra segura o freio verde; Macrô mostra um escudo e um calendário."
+    "alt": "Uma luvinha corta o freio vermelho e a outra trava aberto o verde; um escudo navy lembra a vacina."
   },
   "questao": {
     "vinheta": "Cervical cytology in a 32-year-old woman shows HSIL; HPV 16 is detected. In the infected epithelial cells, one viral oncoprotein binds the host retinoblastoma protein, releasing E2F and pushing the cells from G1 into S phase.",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual proteína do HPV inativa o Rb?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Qual proteína do HPV inativa o Rb?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

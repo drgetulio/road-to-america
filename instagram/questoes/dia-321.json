@@ -17,9 +17,9 @@
   "gancho_apoio": "No Sábado Sem Viés, a idade não é a única coisa que a Dona Bússola confere.",
   "imagem": {
     "arquivo": "dia-321.png",
-    "cena": "Mesa de cozinha com a Dona Bússola ao lado de um chaveiro com aliança, um crachá em branco, uma marmita e uma pilha de boletos em branco; uma caneta paira sobre um formulário; ao fundo, uma casinha num morro distante, do outro lado de uma estrada comprida; na geladeira, um ímã com uma tabela 2x2 em branco.",
+    "cena": "A Dona Bússola, na mesa da cozinha, olha um chaveiro com aliança ao lado de um formulário em branco e uma caneta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dezessete anos, aliança e boleto no próprio nome: quem assina?"
+    "alt": "Dona Bússola olha um chaveiro com aliança ao lado de um formulário em branco."
   },
   "imagem_macete": {
     "arquivo": "dia-321-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "The patient herself",
-        "quiz": "Ela mesma"
+        "quiz": "The patient"
       },
       "B": {
         "texto": "Her parents",
-        "quiz": "Os pais"
+        "quiz": "Her parents"
       },
       "C": {
         "texto": "Her husband",
-        "quiz": "O marido"
+        "quiz": "Her husband"
       },
       "D": {
         "texto": "A court-appointed guardian",
-        "quiz": "Tutor judicial"
+        "quiz": "Court-appointed guardian"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Jovem de 17 anos, casada, mora com o marido e trabalha em tempo integral. Ela tem cólica biliar de repetição e vai fazer colecistectomia eletiva. Os pais moram em outro estado e não concordam com a cirurgia. De quem é o consentimento?",
+    "contexto": "Sábado Sem Viés: uma pilha de boletos, uma aliança e um formulário esperando assinatura. A Dona Bússola confere mais do que a data de nascimento, e a vinheta traz cada detalhe da vida da paciente.",
     "palavras_chave": [
-      "17-year-old",
-      "married",
-      "elective cholecystectomy",
-      "parents disagree"
+      "medical ethics",
+      "informed consent",
+      "adolescent",
+      "surgery"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Casada aos 17, mora com o marido e trabalha: quem assina a cirurgia?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Casada aos 17, mora com o marido e trabalha: quem assina a cirurgia?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

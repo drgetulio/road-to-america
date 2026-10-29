@@ -14,12 +14,12 @@
   "explicacao_em": "2027-09-17",
   "tom": null,
   "gancho": "Ciclo que aparece quatro vezes por ano, *igual minhas revisões do Anki*",
-  "gancho_apoio": "Ovários em colar de pérolas, pelo no queixo e nenhum plano de engravidar agora. Qual espeto?",
+  "gancho_apoio": "Rodízio de Quinta, mesa da ginecologia: quatro espetos e um calendário bagunçado.",
   "imagem": {
     "arquivo": "dia-319.png",
-    "cena": "Garçom Espetinho com quatro espetos diante de uma mesa onde dois ovários de desenho animado usam colares de pérolas; na parede, um calendário cujas folhas voam fora de ordem, pulando meses, ao lado de uma pilha enorme de cartões de revisão atrasados; a plaquinha verde e vermelha no avental.",
+    "cena": "Garçom Espetinho com quatro espetos diante de uma mesa; na parede, um calendário cujas folhas voam fora de ordem, pulando meses, ao lado de uma pilha enorme de cartões de revisão atrasados; a plaquinha verde e vermelha no avental.",
     "foco": "50% 35%",
-    "alt": "Ciclo que aparece quatro vezes por ano, igual minhas revisões do Anki"
+    "alt": "Calendário pulando meses ao lado de cartões de revisão atrasados"
   },
   "imagem_macete": {
     "arquivo": "dia-319-macete.png",
@@ -32,20 +32,20 @@
     "pergunta": "Which is the most appropriate initial pharmacotherapy?",
     "alternativas": {
       "A": {
-        "texto": "Letrozole",
-        "quiz": "Letrozol"
+        "texto": "Letrozole for ovulation induction",
+        "quiz": "Letrozole"
       },
       "B": {
-        "texto": "Metformin alone",
-        "quiz": "Só metformina"
+        "texto": "Metformin as monotherapy",
+        "quiz": "Metformin alone"
       },
       "C": {
-        "texto": "Spironolactone alone",
-        "quiz": "Só espironolactona"
+        "texto": "Spironolactone as monotherapy",
+        "quiz": "Spironolactone alone"
       },
       "D": {
-        "texto": "Combined estrogen-progestin oral contraceptive",
-        "quiz": "Pílula combinada"
+        "texto": "Combined oral contraceptive pill",
+        "quiz": "Combined OCP"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Mulher de 23 anos com 4 a 5 menstruações por ano desde a menarca, aumento de pelos no queixo e no abdome, testosterona levemente alta, TSH, prolactina e 17-OH-progesterona normais e ovários com muitos folículos. Ela não quer engravidar agora. Qual é a primeira linha?",
+    "contexto": "Rodízio de Quinta: um ciclo que aparece quatro vezes por ano, igualzinho às suas revisões do Anki na época do internato. Quatro espetos de tratamento, e a vinheta diz o que a paciente quer agora.",
     "palavras_chave": [
-      "oligomenorrhea",
-      "hirsutism",
-      "mildly high testosterone",
-      "no pregnancy plans"
+      "gynecology",
+      "menstrual irregularity",
+      "endocrinology",
+      "treatment choice"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Ciclos raros, pelos no queixo e sem plano de engravidar: qual tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ciclos raros, pelos no queixo e sem plano de engravidar: qual tratamento?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

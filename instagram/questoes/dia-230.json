@@ -13,12 +13,12 @@
   "explicacao_em": "2027-06-20",
   "tom": null,
   "gancho": "Dois *José da Silva* em quartos vizinhos e uma bolsa de hemácias pronta",
-  "gancho_apoio": "Transfusão pronta e dois homônimos no corredor. Como confirmar quem é quem?",
+  "gancho_apoio": "Homônimo no hospital é como alternativa parecida no NBME: só lê com calma quem já se queimou.",
   "imagem": {
     "arquivo": "dia-230.png",
-    "cena": "Corredor de enfermaria com duas portas idênticas lado a lado, cada uma com uma plaquinha igual e um par de chinelos iguais na frente. O Viés espia de trás de uma tabelinha 2x2 presa no carrinho, onde um cofrinho vermelho com um coração espera.",
+    "cena": "Corredor de enfermaria com duas portas idênticas lado a lado e um par de chinelos iguais na frente de cada uma; o Viés espia de trás de uma tabelinha 2x2. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés espia entre duas portas idênticas com chinelos iguais"
+    "alt": "Duas portas idênticas com chinelos iguais e o Viés espiando"
   },
   "imagem_macete": {
     "arquivo": "dia-230-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Confirm the room and bed number on the order",
-        "quiz": "Quarto e leito"
+        "quiz": "Check room and bed number"
       },
       "B": {
-        "texto": "Ask, \"Are you Mr. Silva?\" and wait for a nod",
-        "quiz": "\"É o Sr. Silva?\""
+        "texto": "Ask, \"Are you Mr. Silva?\" and wait for him to nod",
+        "quiz": "\"Are you Mr. Silva?\""
       },
       "C": {
         "texto": "Check that his diagnosis matches the chart",
-        "quiz": "Conferir diagnóstico"
+        "quiz": "Diagnosis matches chart"
       },
       "D": {
         "texto": "Have him state his full name and date of birth",
-        "quiz": "Nome e nascimento"
+        "quiz": "Name and date of birth"
       }
     },
     "correta": "D"
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dois homônimos e uma transfusão: como conferir?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dois homônimos e uma transfusão: como conferir?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

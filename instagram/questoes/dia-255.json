@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-15",
   "tom": null,
-  "gancho": "O TSH toca o interfone 14 vezes e a tireoide *finge que não está em casa*",
-  "gancho_apoio": "Tireoide firme, indolor, TSH alto e anti-TPO lá em cima. O que o patologista vê lá dentro?",
+  "gancho": "Quarta do Porquê: o Seu Allen *desmontou uma glândula* e quer saber o que tem dentro",
+  "gancho_apoio": "Tireoide no Step 1: cinco tireoidites, cinco lâminas e um professor que dizia \"é fácil\".",
   "imagem": {
     "arquivo": "dia-255.png",
-    "cena": "Uma casa em forma de borboleta, de duas alas, numa tarde fria. No portão, uma hipófise de gravata aperta o interfone sem parar, com cara de cobrador. Pela janela, a dona da casa, uma célula cúbica de cachecol e meias grossas, cochila no sofá com uma xícara de chá, ao lado da lareira quase apagada. Seu Allen, a chavinha Allen de avental, espia pela fechadura, com setinhas de manual de montagem em volta da porta.",
+    "cena": "Uma casa em forma de borboleta, de duas alas, numa tarde fria; Seu Allen, de avental, espia pela fechadura com o lápis vermelho atrás da orelha. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O TSH aperta o interfone e a tireoide não atende"
+    "alt": "Seu Allen espia pela fechadura de uma casa em forma de borboleta"
   },
   "imagem_macete": {
     "arquivo": "dia-255-macete.png",
-    "cena": "Seu Allen desmonta a parede da casa-borboleta como num manual: lá dentro, dezenas de bolinhas roxas se mudaram com malas e colchões e montaram coretos redondos de festa nos cômodos, e a dona da casa agora veste um casaco rosa enorme, com os bolsos cheios de feijõezinhos laranja. No portão, a hipófise senta, exausta, ainda segurando o interfone.",
+    "cena": "Callback: Seu Allen desmonta a parede da casa-borboleta: lá dentro, dezenas de bolinhas roxas montaram coretos redondos de festa nos cômodos, e a dona da casa veste um casaco rosa enorme. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Hashimoto: linfócitos com centro germinativo e célula de Hürthle"
+    "alt": "Dentro da casa-borboleta, bolinhas roxas montaram coretos e a anfitriã veste um casaco rosa"
   },
   "questao": {
     "vinheta": "A 45-year-old woman has had fatigue, cold intolerance, and constipation for 6 months. Her thyroid gland is diffusely enlarged, firm, and painless. TSH is 14 μU/mL, free T4 is low, and anti-thyroid peroxidase antibodies are markedly elevated. A core needle biopsy is obtained.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Granulomatous inflammation with multinucleated giant cells",
-        "quiz": "Granuloma gigante"
+        "quiz": "Granulomas, giant cells"
       },
       "B": {
         "texto": "Dense fibrosis extending into adjacent neck muscles",
-        "quiz": "Fibrose invasiva"
+        "quiz": "Invasive dense fibrosis"
       },
       "C": {
         "texto": "Tall follicular cells with scalloped colloid",
-        "quiz": "Coloide recortado"
+        "quiz": "Tall cells, scalloped colloid"
       },
       "D": {
         "texto": "Lymphoid follicles with germinal centers and Hürthle cells",
-        "quiz": "Folículo linfoide"
+        "quiz": "Germinal centers, Hürthle"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Cansaço, frio e intestino preso, com bócio firme e indolor. Na lâmina, o que você esperaria ver?",
+    "contexto": "Quarta do Porquê na endocrinologia, com o Seu Allen. Sintomas de meses, um exame físico e três exames de sangue descritos na vinheta. Na lâmina, o que você esperaria ver?",
     "palavras_chave": [
-      "fatigue",
-      "cold intolerance",
-      "firm goiter",
-      "anti-TPO antibodies"
+      "thyroid disease",
+      "core needle biopsy",
+      "histology",
+      "Step 1 pathology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bócio firme, TSH de 14 e anti-TPO alto: o que a biópsia mostra?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bócio firme, TSH de 14 e anti-TPO alto: o que a biópsia mostra?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

@@ -14,7 +14,7 @@
   "explicacao_em": "2027-09-12",
   "tom": null,
   "gancho": "Três dias sem comer e recusa internar: *até onde vai o não?*",
-  "gancho_apoio": "No Sábado Sem Viés, a lei define quando o cuidado pode vir antes do sim, e por quanto tempo.",
+  "gancho_apoio": "No Sábado Sem Viés, quatro caminhos e uma balança.",
   "imagem": {
     "arquivo": "dia-314.png",
     "cena": "Mesa tranquila com a Dona Bússola ao lado de uma balança de tribunal desenhada como placa de trânsito: num prato, uma chave de casa dourada; no outro, um capacete de segurança amarelo; ao lado, uma ampulheta pequena e, na parede, uma tabela 2x2 em branco num quadrinho. Cena neutra e respeitosa, sem pessoas.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Discharge him with outpatient follow-up",
-        "quiz": "Alta com retorno"
+        "quiz": "Discharge, follow up"
       },
       "B": {
         "texto": "Obtain a court order before further evaluation",
-        "quiz": "Ordem judicial antes"
+        "quiz": "Court order first"
       },
       "C": {
         "texto": "Ask his sister to sign a voluntary admission for him",
-        "quiz": "Irmã assina por ele"
+        "quiz": "Sister signs for him"
       },
       "D": {
         "texto": "Place him on an emergency involuntary hold",
-        "quiz": "Hold involuntário"
+        "quiz": "Emergency hold"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 34 anos com esquizofrenia, sem medicação há 1 mês, encontrado à noite andando numa rodovia, acreditando que nada pode feri-lo e sem comer há 3 dias. Ele recusa a internação. Qual é o próximo passo?",
+    "contexto": "Sábado Sem Viés, com respeito: um paciente recusa a internação e a lei tem regras sobre quando o cuidado pode vir antes do sim. A vinheta traz os fatos; os critérios cobrados são os dos EUA.",
     "palavras_chave": [
-      "schizophrenia",
-      "stopped medication",
-      "walking on a highway",
-      "refuses admission"
+      "psychiatry",
+      "emergency department",
+      "medical law",
+      "patient rights"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Psicose, 3 dias sem comer e recusa internar: o que a lei permite agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Psicose, 3 dias sem comer e recusa internar: o que a lei permite agora?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

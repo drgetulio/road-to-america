@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-17",
-  "gancho": "Fecharam um *portão* do coração e a força caiu. Em qual trecho da estrada?",
+  "gancho": "O Mito pegou a *estrada do potencial de ação*. Em que curva a toxina bateu?",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Mito, de jaleco amassado, dirige um carrinho numa estrada de montanha desenhada como a curva do potencial de ação: subida íngreme, pequeno pico, um trecho plano longo, a descida e um vale. Ele confere o mapa, com setinhas de manual em volta da estrada, sem que a imagem mostre onde está a mudança.",
     "foco": "50% 35%",
-    "alt": "Fecharam um portão do coração e a força caiu. Em qual trecho da estrada?",
+    "alt": "O Mito pegou a estrada do potencial de ação. Em que curva a toxina bateu?",
     "arquivo": "dia-045.png"
   },
   "imagem_macete": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um experimento com um miócito ventricular, uma toxina bem seletiva e uma contração mais fraca. O Mito pegou a estrada do potencial de ação para descobrir qual fase mudou.",
+    "contexto": "Quarta do Porquê com o Mito na estrada do potencial de ação: uma toxina, um canal e quatro fases. Quem desenhou essa curva na lousa do cursinho sabe que ela cai em prova de tudo que é jeito.",
     "palavras_chave": [
       "ventricular myocyte",
-      "voltage-gated calcium channel",
-      "contractility",
-      "cardiac electrophysiology"
+      "ion channels",
+      "cardiac electrophysiology",
+      "action potential"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Cardiologia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Bloqueio do canal de cálcio tipo L e contração fraca: qual fase?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bloqueio do canal de cálcio tipo L e contração fraca: qual fase?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-25",
   "tom": null,
-  "gancho": "O plano pediu pão e o entregador *travou na porta da padaria*",
-  "gancho_apoio": "O plano de saúde quer documentos para pagar a cirurgia do joelho. O que sai da padaria?",
+  "gancho": "Sábado Sem Viés: *um pedido do plano de saúde* e um prontuário cheio de histórias",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-265.png",
-    "cena": "Um entregador de bicicleta para na porta de uma padaria, em dúvida diante de quatro encomendas no balcão: um saquinho de papel com um pão só, uma miniatura da padaria inteira amarrada com cordas, um envelope lacrado com um martelinho de juiz e um pacote com uma tarja preta sobre a etiqueta. No alto da ladeira, uma janelinha pequena de onde só sai uma mão aberta. O Viés espia, meio escondido atrás de uma tabela 2x2 em branco na parede da padaria. Ao fundo, um arquivo de gavetas escancarado.",
+    "cena": "Um entregador de bicicleta para na porta de uma padaria, em dúvida diante de um balcão cheio de pacotes de tamanhos diferentes; o Viés espia de trás de uma tabela 2x2 na parede. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Entregador em dúvida diante de quatro encomendas na padaria"
+    "alt": "O entregador hesita diante de pacotes de tamanhos diferentes; o Viés espia"
   },
   "imagem_macete": {
     "arquivo": "dia-265-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Send the complete medical record",
-        "quiz": "Prontuário inteiro"
+        "quiz": "Entire medical record"
       },
       "B": {
         "texto": "Refuse until a court order is obtained",
-        "quiz": "Ordem judicial"
+        "quiz": "Wait for court order"
       },
       "C": {
-        "texto": "Send the records with the patient's name removed",
-        "quiz": "Tirar o nome"
+        "texto": "Send the full records with the patient's name removed",
+        "quiz": "Remove the name only"
       },
       "D": {
         "texto": "Send only the records related to the knee procedure",
-        "quiz": "Só o do joelho"
+        "quiz": "Only the knee records"
       }
     },
     "correta": "D"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*Pediu um pão, manda um pão*: minimum necessary",
       "apoio": "Para pagamento, a HIPAA libera o mínimo necessário: só a parte do joelho. Mandar a padaria inteira, com o caderninho de fiado (depressão e HIV), seria expor o que o plano não pediu. Tirar o nome não resolve, e para pagamento não precisa de ordem judicial.",
-      "fala": "Se você não randomizou, eu entrei. Se mandou o prontuário inteiro, também."
+      "fala": "Se você não randomizou, eu entrei. Na Prometric revistam os seus bolsos; na HIPAA, você revista o prontuário antes de mandar."
     }
   },
   "legenda": {
-    "contexto": "O plano de saúde pede documentos para pagar a cirurgia do joelho, e o prontuário tem outras informações sensíveis. O que você manda?",
+    "contexto": "Sábado Sem Viés na ética e na lei americana. O plano de saúde pede documentos, e a vinheta conta o motivo do pedido e o que mais existe no prontuário. O que você manda?",
     "palavras_chave": [
-      "insurance claim",
-      "knee arthroscopy",
+      "health insurance",
       "medical records",
-      "privacy"
+      "privacy law",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "O plano pede os papéis da artroscopia: o que você manda?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O plano pede os papéis da artroscopia: o que você manda?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-09",
-  "gancho": "Glicose 520, e o Mito avisa que hoje quem manda na *fila* é outro",
+  "gancho": "Cetoacidose no plantão e o Mito com *uma chave na mão*: abre ou espera?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito no plantão, de jaleco amassado, diante de um painel com três mostradores (uma gota de água, um cubo de açúcar e um raio) e uma chave dourada na mão, em dúvida sobre qual botão apertar primeiro. Na parede, um relógio sem números marca 3 da manhã.",
+    "cena": "O Mito, no plantão, segura uma chave dourada diante da porta fechada de uma célula redonda, em dúvida se gira agora. Na parede, um relógio sem números marca 3 da manhã. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Glicose 520, e o Mito avisa que hoje quem manda na fila é outro",
+    "alt": "Mito segura uma chave dourada diante da porta de uma célula, em dúvida se gira agora.",
     "arquivo": "dia-037.png"
   },
   "imagem_macete": {
@@ -30,7 +30,7 @@
     "alternativas": {
       "A": {
         "texto": "Start an IV regular insulin infusion",
-        "quiz": "Insulin infusion"
+        "quiz": "Start insulin infusion"
       },
       "B": {
         "texto": "Give IV potassium and delay insulin",
@@ -70,11 +70,11 @@
     }
   },
   "legenda": {
-    "contexto": "Cetoacidose clássica, soro já correndo e uma tentação enorme de ligar a insulina. Um número do laboratório pede calma antes do próximo passo, mesmo às 3 da manhã.",
+    "contexto": "Plantão de Terça: cetoacidose clássica, soro já correndo e quatro condutas na mesa. Às 3 da manhã, todo residente tem um protocolo favorito; a vinheta tem o número que manda.",
     "palavras_chave": [
       "type 1 diabetes",
       "metabolic acidosis",
-      "hypokalemia",
+      "electrolytes",
       "IV fluids"
     ],
     "hashtags": [
@@ -84,12 +84,11 @@
       "#Endocrinology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "DKA com potássio de 3,0 e soro correndo: o que fazer agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DKA com potássio de 3,0 e soro correndo: o que fazer agora?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

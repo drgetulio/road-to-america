@@ -14,7 +14,7 @@
   "explicacao_em": "2027-10-21",
   "tom": null,
   "gancho": "A síndica saiu e *a turma da demolição deu festa*",
-  "gancho_apoio": "Dia Mundial da Osteoporose. Exames normais e uma densitometria baixa dez anos depois da menopausa.",
+  "gancho_apoio": "Dia Mundial da Osteoporose. O Seu Allen confere o prédio de favos e acha buracos nas vigas.",
   "imagem": {
     "arquivo": "dia-353.png",
     "cena": "Seu Allen, com setinhas de manual de montagem, na frente de um prédio feito de favos de osso trabecular; a cadeira da síndica está vazia, com um molho de chaves pendurado; no portão, uma equipe com britadeiras e outra com tijolos esperam a ordem.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Increased osteoprotegerin secretion by osteoblasts",
-        "quiz": "Mais OPG"
+        "quiz": "More osteoprotegerin"
       },
       "B": {
         "texto": "Defective mineralization of osteoid",
-        "quiz": "Mineraliza mal"
+        "quiz": "Poor osteoid mineralization"
       },
       "C": {
         "texto": "Increased RANKL signaling and osteoclast activity",
-        "quiz": "Mais RANKL"
+        "quiz": "More RANKL signaling"
       },
       "D": {
         "texto": "Excess parathyroid hormone stimulating resorption",
-        "quiz": "Excesso de PTH"
+        "quiz": "Excess PTH"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia Mundial da Osteoporose. Dez anos depois da menopausa, densitometria com T-score de -2,8 e todos os exames de sangue normais. Por que a falta de estrogênio tira osso?",
+    "contexto": "Dia Mundial da Osteoporose na Quarta do Porquê: a síndica do prédio de osso saiu de férias e o Seu Allen achou buracos nas vigas. Quatro mecanismos; os exames normais da vinheta tiram dois da disputa.",
     "palavras_chave": [
-      "10 years after menopause",
-      "DXA T-score",
-      "normal calcium and PTH",
-      "bone remodeling"
+      "bone metabolism",
+      "menopause",
+      "densitometry",
+      "endocrinology"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "10 anos pós-menopausa, T-score -2,8 e exames normais: por que perde osso?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "10 anos pós-menopausa, T-score -2,8 e exames normais: por que perde osso?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

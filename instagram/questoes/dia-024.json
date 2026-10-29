@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-26",
   "tom": null,
-  "gancho": "Puxadinho com *vergalhão* de arame: racha à toa e a parede ficou azul",
+  "gancho": "O Seu Allen recebeu um puxadinho com *defeito de fábrica*. Qual peça veio errada?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-024.png",
-    "cena": "Canteiro de obras em corte, estilo manual de montagem: um puxadinho de concreto bem acabado, mas cheio de rachaduras finas. Dentro das colunas, os vergalhões são finos como arame e tortos, e uma parede é tão fina que deixa ver uma parede azul-escura por trás. O Seu Allen, de avental de marceneiro, aponta as rachaduras com setinhas de manual.",
+    "cena": "Canteiro de obras em corte, estilo manual de montagem: o Seu Allen, de avental de marceneiro, segura uma lupa diante de um puxadinho de concreto recém-entregue, e setinhas de manual contornam as colunas, sem mostrar o defeito.",
     "foco": "50% 35%",
-    "alt": "Puxadinho com vergalhão de arame: racha à toa e a parede ficou azul"
+    "alt": "Seu Allen segura uma lupa diante de um puxadinho de concreto recém-entregue, com setinhas de manual nas colunas."
   },
   "imagem_macete": {
     "arquivo": "dia-024-macete.png",
@@ -32,15 +32,15 @@
     "alternativas": {
       "A": {
         "texto": "Fibrillin-1",
-        "quiz": "Fibrilina 1"
+        "quiz": "Fibrillin-1"
       },
       "B": {
         "texto": "Type I collagen",
-        "quiz": "Colágeno tipo I"
+        "quiz": "Type I collagen"
       },
       "C": {
         "texto": "Type III collagen",
-        "quiz": "Colágeno tipo III"
+        "quiz": "Type III collagen"
       },
       "D": {
         "texto": "Fibroblast growth factor receptor 3",
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê com o Seu Allen: quatro fraturas em quedas bobas, esclera azul, dentes acinzentados e um pai com perda auditiva. Qual material veio com defeito de fábrica?",
+    "contexto": "Quarta do Porquê com o Seu Allen: uma criança, uma família inteira na consulta e um material que veio com defeito de fábrica. Quatro proteínas no espeto; a vinheta aponta uma.",
     "palavras_chave": [
-      "recurrent fractures",
-      "gray-brown teeth",
-      "hearing loss",
-      "osteopenia"
+      "connective tissue disorders",
+      "pediatric genetics",
+      "musculoskeletal system",
+      "family history"
     ],
     "hashtags": [
       "#USMLE",
@@ -90,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Fraturas fáceis, esclera azul e dentes cinza: qual proteína falha?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fraturas fáceis, esclera azul e dentes cinza: qual proteína falha?"
   },
   "exemplo": false
 }

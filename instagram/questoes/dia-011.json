@@ -7,22 +7,23 @@
   "sistema": "Sistema respiratório",
   "topico": "Pneumonia na criança",
   "conceito": "Uncomplicated pediatric community-acquired pneumonia: high-dose oral amoxicillin",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Dia Mundial da Pneumonia (12/11).",
   "remix_de": null,
   "explicacao_em": "2026-11-13",
   "tom": null,
-  "gancho": "Macrô no rodízio da pediatria: o pulmão pediu a *picanha* da casa",
+  "gancho": "Dia Mundial da Pneumonia: o Garçom Espetinho trouxe *quatro espetos* para um pulmão de 3 anos",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-011.png",
-    "cena": "Macrô, de guardanapo xadrez, está à mesa de uma churrascaria ao lado de um par de pulmões de pelúcia de cachecol e termômetro. O Garçom Espetinho passa com espetos de frascos de xarope e cápsulas gigantes espetados como carne; a plaquinha verde e vermelha está de lado na mesa.",
+    "cena": "O Garçom Espetinho passa por uma mesa de churrascaria onde um par de pulmões de pelúcia, de cachecol e termômetro, espera o pedido; nos espetos dele, frascos de xarope e cápsulas gigantes estão espetados como carne. A plaquinha verde e vermelha está de lado na mesa.",
     "foco": "50% 35%",
-    "alt": "Macrô no rodízio da pediatria: o pulmão pediu a picanha da casa"
+    "alt": "Garçom Espetinho passa com espetos de frascos e cápsulas por uma mesa onde pulmões de pelúcia de cachecol esperam o pedido."
   },
   "imagem_macete": {
     "arquivo": "dia-011-macete.png",
-    "cena": "Callback do rodízio: o garçom serve, em porção dupla, o espeto das cápsulas rosa e brancas (amoxicilina) no prato dos pulmões de pelúcia, e o Macrô vira a plaquinha para o verde. Os outros espetos voltam para a churrasqueira, e os pulmões afrouxam o cachecol.",
+    "cena": "Callback do rodízio: o Garçom Espetinho serve, em porção dupla, o espeto das cápsulas rosa e brancas (amoxicilina) no prato dos pulmões de pelúcia e vira a plaquinha para o verde. Os outros espetos voltam para a churrasqueira, e os pulmões afrouxam o cachecol.",
     "alt": "O primeiro espeto é amoxicilina, porção dupla"
   },
   "questao": {
@@ -30,20 +31,20 @@
     "pergunta": "Which is the most appropriate outpatient pharmacotherapy?",
     "alternativas": {
       "A": {
-        "texto": "Oral azithromycin",
-        "quiz": "Azitromicina"
+        "texto": "Oral azithromycin for 5 days",
+        "quiz": "Azithromycin"
       },
       "B": {
         "texto": "Intramuscular ceftriaxone",
-        "quiz": "Ceftriaxona IM"
+        "quiz": "Intramuscular ceftriaxone"
       },
       "C": {
         "texto": "Oral doxycycline",
-        "quiz": "Doxiciclina"
+        "quiz": "Doxycycline"
       },
       "D": {
         "texto": "High-dose oral amoxicillin",
-        "quiz": "Amoxi em dose alta"
+        "quiz": "High-dose amoxicillin"
       }
     },
     "correta": "D"
@@ -71,11 +72,11 @@
     }
   },
   "legenda": {
-    "contexto": "12/11 é o Dia Mundial da Pneumonia. No Rodízio de Quinta, o Macrô está na mesa da pediatria: criança de 3 anos, consolidação lobar, bebendo bem e indo para casa. Qual espeto abre a mesa?",
+    "contexto": "12/11 é o Dia Mundial da Pneumonia. No Rodízio de Quinta, o Garçom Espetinho atende a mesa da pediatria, e cada espeto é um antibiótico. Escolha como se fosse a sua prescrição, e não como quem chuta no último bloco do NBME.",
     "palavras_chave": [
-      "fever and cough",
-      "lobar consolidation",
-      "fully immunized",
+      "pediatric pneumonia",
+      "home care",
+      "antibiotics",
       "preschool child"
     ],
     "hashtags": [
@@ -89,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Pneumonia lobar aos 3 anos, tratamento em casa: qual antibiótico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pneumonia lobar aos 3 anos, tratamento em casa: qual antibiótico?"
   },
   "exemplo": false
 }

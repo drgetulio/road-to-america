@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-25",
   "tom": null,
-  "gancho": "O vírus trocou de *número, foto e nome*, e o Macrô não salvou o contato",
-  "gancho_apoio": null,
+  "gancho": "Bicho de Segunda: *a gripe de sempre* com uma história genética que cai todo ano",
+  "gancho_apoio": "Influenza é o único conteúdo do Step 1 que muda mais que o formato do NBME.",
   "imagem": {
     "arquivo": "dia-204.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, olha intrigado um vírus redondo de espinhos que chegou com uma roupa totalmente nova, que ninguém ali conhece. Na mesa de fora há um álbum de figurinhas aberto com uma página vazia e, de enfeite, um porquinho, um passarinho e um bonequinho.",
+    "cena": "Macrô, na porta do boteco dos micróbios e com a comanda em branco no bolso, folheia um álbum de figurinhas aberto numa página vazia. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô não reconhece o vírus que chegou de cara nova"
+    "alt": "Macrô folheia um álbum de figurinhas aberto numa página vazia"
   },
   "imagem_macete": {
     "arquivo": "dia-204-macete.png",
-    "cena": "O vírus que trocou figurinhas inteiras exibe um álbum novo com figurinhas de porco, de ave e de gente, e Macrô fica de queixo caído sem reconhecer; o vírus da caneta mostra uma figurinha quase igual à antiga, que Macrô reconhece com desconfiança.",
-    "alt": "Segmentos trocados: antigenic shift"
+    "cena": "Callback: um vírus redondo de espinhos exibe um álbum novo com figurinhas de porco, de ave e de gente, e o Macrô fica de queixo caído, sem reconhecer ninguém. Fundo limpo.",
+    "alt": "O vírus mostra um álbum novo com figurinhas de porco, ave e gente; Macrô não reconhece"
   },
   "questao": {
     "vinheta": "In 2009, a novel influenza A (H1N1) virus spread worldwide within months. Genetic analysis showed that a single virion contained gene segments derived from swine, avian, and human influenza viruses. Most people younger than 60 years had little preexisting immunity.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Point mutations in the hemagglutinin gene",
-        "quiz": "Mutação pontual"
+        "quiz": "Point mutations in HA"
       },
       "B": {
         "texto": "Phenotypic mixing of envelope proteins",
-        "quiz": "Mistura fenotípica"
+        "quiz": "Phenotypic mixing"
       },
       "C": {
         "texto": "Complementation by a coinfecting virus",
-        "quiz": "Complementação"
+        "quiz": "Complementation"
       },
       "D": {
         "texto": "Reassortment of RNA genome segments",
-        "quiz": "Troca de segmentos"
+        "quiz": "Segment reassortment"
       }
     },
     "correta": "D"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda no respiratório, e o Macrô está confuso: o vírus de sempre chegou com uma cara que ninguém tinha visto. A prova quer o processo genético por trás disso.",
+    "contexto": "Bicho de Segunda no respiratório, com o Macrô. A vinheta conta a história de um vírus da gripe e da imunidade da população contra ele. Quatro processos genéticos na mesa: qual explica a história?",
     "palavras_chave": [
-      "2009 pandemic",
       "influenza A",
-      "gene segments",
-      "population immunity"
+      "viral genetics",
+      "epidemiology",
+      "Step 1 microbiology"
     ]
   },
   "quiz": {
-    "pergunta": "Influenza com genes de 3 espécies. Qual processo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Influenza com genes de 3 espécies. Qual processo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

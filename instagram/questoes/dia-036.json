@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-08",
-  "gancho": "Dez minutos depois do camarão, o carrinho de *pipoca* explodiu",
+  "gancho": "Domingo de praia, segunda de imuno: o Macrô investiga o *quiosque do camarão*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, toca um carrinho de pipoca na porta de um quiosque de praia; um prato de camarão acabou de passar, e o carrinho começa a soltar fumaça. A cena não mostra o que tem dentro do carrinho.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está num quiosque de praia olhando desconfiado para um prato de camarão, com uma lupa na mão.",
     "foco": "50% 35%",
-    "alt": "Dez minutos depois do camarão, o carrinho de pipoca explodiu",
+    "alt": "Macrô, num quiosque de praia, olha desconfiado para um prato de camarão com uma lupa na mão.",
     "arquivo": "dia-036.png"
   },
   "imagem_macete": {
-    "cena": "Callback do carrinho: em close, ele está coberto de antenas em Y; o camarão está preso entre duas delas ao mesmo tempo, e a pipoca explode para todos os lados. Um aroma dourado fica pairando no ar, com o Macrô farejando.",
+    "cena": "Revelação: atrás do quiosque, um carrinho de pipoca está coberto de antenas em Y; o camarão ficou preso entre duas delas ao mesmo tempo, e a pipoca explode para todos os lados. Um aroma dourado paira no ar, com o Macrô farejando.",
     "alt": "Duas antenas IgE presas, pipoca estourada",
     "arquivo": "dia-036-macete.png"
   },
@@ -29,7 +29,7 @@
     "pergunta": "Which mechanism best explains this reaction?",
     "alternativas": {
       "A": {
-        "texto": "Allergen cross-linking of IgE bound to mast cells",
+        "texto": "IgE cross-linking on mast cells",
         "quiz": "IgE cross-linking"
       },
       "B": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Urticária, chiado e pressão baixa logo depois do almoço, e um exame de sangue que confirma quem estourou. O Macrô quer saber qual mecanismo abriu a porta da reação.",
+    "contexto": "Bicho de Segunda de imunologia: quatro tipos de hipersensibilidade, e o relógio da vinheta separa um do outro. Quem decorou os quatro com a sigla ACID e esqueceu qual é qual às 2 da manhã, levanta a mão.",
     "palavras_chave": [
-      "shrimp allergy",
-      "urticaria",
-      "wheezing",
-      "hypotension"
+      "food reaction",
+      "hypersensitivity",
+      "immunology",
+      "beach day"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Immunology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Camarão, urticária e triptase alta em minutos: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Camarão, urticária e triptase alta em minutos: qual mecanismo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -12,7 +12,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-29",
-  "gancho": "28 semanas, tudo tranquilo e *um penetra que ainda nem chegou*: e agora?",
+  "gancho": "Pré-natal de 28 semanas e o Garçom Espetinho com o *espeto da obstetrícia*",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Garçom Espetinho passa com espetos perto de uma ponte que leva a um castelo em festa. Algumas hemácias de chapeuzinho amarelo atravessam a ponte em direção ao portão, onde guardinhas com celulares de câmera esperam, curiosos. A plaquinha verde e vermelha fica de lado.",
@@ -26,7 +26,7 @@
     "arquivo": "dia-088-macete.png"
   },
   "questao": {
-    "vinheta": "At a routine prenatal visit at 28 weeks' gestation, a 29-year-old woman in her second pregnancy has blood group O, Rh(D)-negative, with a negative antibody screen. Her first child was born at term. The father of the baby is Rh(D)-positive. The pregnancy has been uncomplicated.",
+    "vinheta": "At a routine prenatal visit at 28 weeks' gestation, a 29-year-old woman in her second pregnancy has blood group O, Rh(D)-negative, with a negative antibody screen. She delivered her first child at term. Her partner, the baby's father, is Rh(D)-positive. The pregnancy has been uncomplicated.",
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Gestação tranquila, mãe O negativo, pai Rh positivo, pesquisa de anticorpos negativa e 28 semanas. O Garçom Espetinho traz o espeto de obstetrícia: o que fazer hoje?",
+    "contexto": "Rodízio de Quinta no pré-natal: uma consulta de rotina, um tipo sanguíneo e quatro condutas. O Garçom Espetinho traz o espeto da obstetrícia, e a semana da gestação e os exames da vinheta decidem.",
     "palavras_chave": [
+      "prenatal care",
       "28 weeks",
-      "blood group O",
-      "antibody screen",
-      "prenatal care"
+      "blood type",
+      "obstetrics"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#RodizioDeQuinta",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Rh negativo não sensibilizada com 28 semanas: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rh negativo não sensibilizada com 28 semanas: qual conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

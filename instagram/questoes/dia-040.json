@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-12",
-  "gancho": "LDL de 232: aqui nem o *VAR* precisa ser chamado",
+  "gancho": "Sextou com o Mito de árbitro: *quatro lances* de colesterol para revisar",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito vestido de árbitro, com apito e cartão, num campo de futebol; um placar gigante transborda de gotinhas amarelas de gordura, e um monitor de VAR está coberto por um pano. Na beira do campo, uma ampulheta pequena faz as vezes de cronômetro.",
+    "cena": "Mito vestido de árbitro, com apito e cartão, num campo de futebol, diante de um placar gigante de bolinhas amarelas de gordura.",
     "foco": "50% 35%",
-    "alt": "LDL de 232: aqui nem o VAR precisa ser chamado",
+    "alt": "Mito vestido de árbitro, com apito e cartão, diante de um placar gigante de bolinhas amarelas de gordura.",
     "arquivo": "dia-040.png"
   },
   "imagem_macete": {
@@ -30,11 +30,11 @@
     "alternativas": {
       "A": {
         "texto": "High-intensity statin",
-        "quiz": "High-intensity"
+        "quiz": "High-intensity statin"
       },
       "B": {
         "texto": "Low-intensity statin",
-        "quiz": "Low-intensity"
+        "quiz": "Low-intensity statin"
       },
       "C": {
         "texto": "Ezetimibe alone",
@@ -42,7 +42,7 @@
       },
       "D": {
         "texto": "No drug; calculate 10-year ASCVD risk",
-        "quiz": "Calculate risk first"
+        "quiz": "Calculate 10-year risk"
       }
     },
     "correta": "A"
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem jovem, sem outros fatores de risco além da família, xantoma no tendão e um colesterol de placar elástico. Sexta é dia de escolher o remédio, e o Mito apita o jogo.",
+    "contexto": "Sextou na Farmácia com o Mito de árbitro: um colesterol, um paciente jovem e quatro decisões possíveis, de calcular risco a mandar tratar. No futebol tem VAR; no Step, tem diretriz do ACC/AHA e nenhum replay.",
     "palavras_chave": [
-      "LDL cholesterol",
-      "tendon xanthomas",
-      "family history of MI",
-      "primary prevention"
+      "cholesterol",
+      "cardiovascular prevention",
+      "lipid therapy",
+      "young adult"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Cardiology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "LDL de 232 e xantoma no tendão aos 34 anos: qual tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "LDL de 232 e xantoma no tendão aos 34 anos: qual tratamento?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

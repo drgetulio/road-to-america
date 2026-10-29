@@ -8,7 +8,7 @@
   "topico": "Remix de domingo: Estreptococos do grupo viridans (dia 295), Febre maculosa (dia 323), E. coli uropatogênica (dia 344)",
   "conceito": "Remix: Viridans streptococci + Rickettsia rickettsii + Uropathogenic E. coli",
   "personagem": null,
-  "anfitriao": "Macrô",
+  "anfitriao": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     295,
@@ -17,70 +17,70 @@
   ],
   "explicacao_em": "2027-10-18",
   "tom": null,
-  "gancho": "Extração de dente em agosto, febre em setembro: *quem pegou carona?*",
-  "gancho_apoio": "Revisão de domingo com os dias 295, 323 e 344. Três maneiras de grudar, só uma serve numa válvula.",
+  "gancho": "Domingo de revisão na portaria: *a bactéria de mochila voltou* com crachá novo",
+  "gancho_apoio": "Quatro jeitos de grudar, e só um combina com o andar da vinheta.",
   "imagem": {
     "arquivo": "dia-350.png",
-    "cena": "Macrô na sala de espera de um consultório de dentista, com a comanda em branco no bolso, vê uma correntinha de cocos verdes de malinha pegar carona num rolinho de algodão rumo a uma porta em forma de coração; num canto, um vinil pequeno encostado.",
+    "cena": "Seu Néfron, com o carimbo na mão, confere na portaria de um prédio o crachá de uma bactéria de mochila que espera no tapete do saguão. Num canto, um vinil pequeno encostado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Extração de dente em agosto, febre em setembro: quem pegou carona?"
+    "alt": "Seu Néfron confere o crachá de uma bactéria de mochila na portaria."
   },
   "imagem_macete": {
     "arquivo": "dia-350-macete.png",
-    "cena": "Callback: a correntinha de cocos verdes, de chapéu de confeiteiro, carameliza uma calda dourada que a gruda na dobradiça de uma portinha em forma de válvula do coração; o Macrô levanta as sobrancelhas, impressionado.",
+    "cena": "Callback: no prédio do Seu Néfron, uma bactéria de mochila gruda no tapete do térreo com um crachá de ganchinhos em forma de chave, enquanto outra, com crachá de outro formato, sobe pelo elevador até a cobertura; o Seu Néfron carimba de vermelho as duas fichas e o vinil gira no canto.",
     "foco": "50% 45%",
-    "alt": "Endocardite subaguda: dextran gruda o viridans na válvula lesada"
+    "alt": "Cistite sem febre: fímbria tipo 1 no térreo"
   },
   "questao": {
-    "vinheta": "A 46-year-old man with known mitral valve prolapse and regurgitation has had 5 weeks of low-grade fever, fatigue, and weight loss that began after a tooth extraction. He has splinter hemorrhages. Blood cultures grow catalase-negative, alpha-hemolytic, gram-positive cocci in chains that are optochin-resistant.",
-    "pergunta": "Which factor most directly allowed this organism to colonize the valve?",
+    "vinheta": "A 23-year-old woman has 2 days of dysuria, urinary frequency, and suprapubic pain. She is afebrile and has no flank pain or costovertebral angle tenderness. Urinalysis shows pyuria and nitrites without white blood cell casts. Urine culture grows Escherichia coli.",
+    "pergunta": "Which virulence factor most directly mediates its attachment to the bladder epithelium?",
     "alternativas": {
       "A": {
-        "texto": "Dextran binding fibrin-platelet deposits",
-        "quiz": "Dextrana",
-        "dia": 295
+        "texto": "Mannose-binding type 1 fimbriae",
+        "quiz": "Type 1 fimbriae",
+        "dia": 344
       },
       "B": {
-        "texto": "P fimbriae binding uroepithelial cells",
-        "quiz": "Fímbria P",
+        "texto": "P fimbriae binding Gal-Gal globoside",
+        "quiz": "P fimbriae (Gal-Gal)",
         "dia": 344
       },
       "C": {
-        "texto": "Replication inside vascular endothelial cells",
-        "quiz": "Invade endotélio",
-        "dia": 323
+        "texto": "Dextran binding fibrin-platelet clots",
+        "quiz": "Dextran (fibrin clots)",
+        "dia": 295
       },
       "D": {
-        "texto": "Protein A binding the Fc region of IgG",
-        "quiz": "Proteína A"
+        "texto": "Filamentous hemagglutinin of pertussis",
+        "quiz": "Filamentous hemagglutinin"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Endocardite subaguda: *dextran* gruda o viridans na válvula lesada",
+    "titulo": "Cistite sem febre: *fímbria tipo 1 no térreo*",
     "certa": [
-      "Febre arrastada depois de extração dentária numa válvula já lesada, com cocos gram-positivos em cadeia, alfa-hemolíticos e resistentes à optoquina, é *subacute endocarditis* por *viridans streptococci*. Eles produzem *dextran* a partir da sacarose, um polissacarídeo que adere aos depósitos de fibrina e plaquetas sobre o endotélio danificado."
+      "Disúria, polaciúria e dor suprapúbica sem febre, sem dor lombar e sem cilindros leucocitários localizam a infecção na bexiga: é cistite por *uropathogenic E. coli*. Quem prende a bactéria ao urotélio da bexiga é a *type 1 fimbriae*, cuja ponta (FimH) se liga à manose da uroplaquina. A *P fimbriae* do dia 344 é a que se liga ao globosídeo do rim e leva à pielonefrite. Mesma bactéria, crachá diferente para cada andar."
     ],
     "termos": [
-      "viridans streptococci",
-      "dextran",
-      "subacute endocarditis",
-      "optochin resistance"
+      "type 1 fimbriae (FimH)",
+      "mannose on uroplakin",
+      "cystitis",
+      "P fimbriae in pyelonephritis"
     ],
     "erradas": {
-      "B": "Fímbria P (dia 344) é o crachá da E. coli para subir até o rim na pielonefrite, não da adesão à válvula.",
-      "C": "Replicação no endotélio é da Rickettsia rickettsii (dia 323), com vasculite e exantema que começa em punhos e tornozelos.",
-      "D": "Proteína A é do S. aureus, catalase-positivo, em cachos, que causa endocardite aguda até em válvula normal."
+      "B": "A fímbria P (dia 344) prende a E. coli ao epitélio do ureter e do rim, na pielonefrite, que viria com febre, dor lombar e cilindros.",
+      "C": "A dextrana do viridans (dia 295) gruda na fibrina e nas plaquetas de uma valva lesada, na endocardite.",
+      "D": "A hemaglutinina filamentosa é a adesina da Bordetella pertussis no epitélio ciliado das vias aéreas, e não uma adesina da E. coli na bexiga."
     },
     "macete": {
-      "frase": "*Viridans é o confeiteiro que caramelizou a válvula*: a dextrana gruda no coágulo",
-      "apoio": "A extração de dente solta o viridans no sangue; ele fabrica dextrana, que gruda na fibrina e nas plaquetas da valva já machucada (o prolapso mitral). Bônus do dia 344: a fímbria P gruda no urotélio, não em valva. Bônus do dia 323: a Rickettsia vive dentro do endotélio, mas não forma vegetação.",
-      "fala": "Esse veio de sobremesa."
+      "frase": "*Térreo é tipo 1, cobertura é P*: a fímbria muda conforme o andar do trato urinário",
+      "apoio": "A tipo 1 gruda na manose da bexiga; a P gruda no globosídeo do rim. Bônus da semana: o Proteus do dia 288 também mora na urina, mas o truque dele é a urease, que faz pedra; e o lipídio A da E. coli que cai no sangue (dia 316) toca o interfone do TLR4. A febre maculosa (dia 323) fica de fora: a Rickettsia gruda no endotélio, não na bexiga.",
+      "fala": "Sem carimbo, não sai. Com fímbria tipo 1, para no térreo."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 295, 323 e 344. Homem com prolapso mitral, febre arrastada há 5 semanas depois de uma extração dentária e cocos gram-positivos em cadeia na hemocultura. O que permitiu a colonização da válvula?",
+    "contexto": "Domingo de revisão: estreptococos do grupo viridans (dia 295), febre maculosa (dia 323) e E. coli uropatogênica (dia 344) voltaram, e o Seu Néfron conferiu os crachás de quem gruda. Quatro adesinas; a vinheta diz em que andar a bactéria parou.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -99,9 +99,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Prolapso mitral e febre há 5 semanas depois de extração dentária: o que grudou?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cistite sem febre por E. coli: qual adesina prende na bexiga?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

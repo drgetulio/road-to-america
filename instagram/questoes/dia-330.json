@@ -7,22 +7,22 @@
   "sistema": "Sistema gastrointestinal",
   "topico": "Giardíase",
   "conceito": "Giardia lamblia: fatty diarrhea after drinking stream water, cysts and trophozoites in stool",
-  "personagem": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-28",
   "tom": null,
   "gancho": "Água de cachoeira de graça: *a conta chega em duas semanas, parcelada*",
-  "gancho_apoio": "O Macrô recebeu um visitante que desceu a cachoeira de carona no cantil.",
+  "gancho_apoio": "O Mito recebeu um visitante que desceu a cachoeira de carona no cantil.",
   "imagem": {
     "arquivo": "dia-330.png",
-    "cena": "Macrô na beira de uma cachoeira num acampamento, com a comanda em branco no bolso, enche um cantil; sombrinhas borradas e misteriosas descem a cachoeira surfando e entram no cantil aberto; numa pedra, uma maquininha de cartão solta uma fita de recibo em branco que não acaba mais.",
+    "cena": "O Mito, de jaleco amassado, enche um cantil na beira de uma cachoeira; sombrinhas misteriosas descem a água e entram no cantil, e numa pedra uma maquininha de cartão começa a imprimir. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Água de cachoeira de graça: a conta chega em duas semanas, parcelada"
   },
   "imagem_macete": {
     "arquivo": "dia-330-macete.png",
-    "cena": "Callback: criaturas em forma de pera, com dois núcleos que parecem olhos, estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Macrô oferece uma chaleira fervendo e um filtro de barro.",
+    "cena": "Callback: criaturas em forma de pera, com dois núcleos que parecem olhos, estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Mito oferece uma chaleira fervendo e um filtro de barro.",
     "foco": "50% 45%",
     "alt": "Água de riacho e gordura nas fezes: Giardia"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Giardia lamblia",
-        "quiz": "Giardia"
+        "quiz": "Giardia lamblia"
       },
       "B": {
         "texto": "Entamoeba histolytica",
-        "quiz": "Entamoeba"
+        "quiz": "Entamoeba histolytica"
       },
       "C": {
         "texto": "Cryptosporidium parvum",
-        "quiz": "Cryptosporidium"
+        "quiz": "Cryptosporidium parvum"
       },
       "D": {
         "texto": "Cyclospora cayetanensis",
-        "quiz": "Cyclospora"
+        "quiz": "Cyclospora cayetanensis"
       }
     },
     "correta": "A"
@@ -68,16 +68,16 @@
     "macete": {
       "frase": "*Giardia é a pera de óculos que gruda de ventosa no duodeno*: a gordura passa direto e boia",
       "apoio": "Os dois núcleos parecem óculos e o disco ventral é a ventosa que gruda nas vilosidades e atrapalha a absorção de gordura: diarreia gordurosa, fétida, que boia, sem sangue e sem leucócitos. Pega pela água de riacho sem tratar. Entamoeba dá sangue; Cryptosporidium pesa no imunossuprimido. Cachoeira linda, água fervida ou filtrada.",
-      "fala": "Essa pera eu não comi."
+      "fala": "Sem oxigênio eu não trabalho. E essa pera nem mitocôndria de verdade tem."
     }
   },
   "legenda": {
-    "contexto": "Homem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. Fezes sem sangue e sem leucócitos. Qual é o agente?",
+    "contexto": "Bicho de Segunda no acampamento: o Mito encheu o cantil na cachoeira e esqueceu que nem toda água de graça sai barata. Quatro protozoários, e a vinheta descreve as fezes com um detalhe que o NBME repete há décadas.",
     "palavras_chave": [
-      "camping in Colorado",
-      "stream water",
-      "greasy diarrhea",
-      "bloating"
+      "travel and outdoor exposure",
+      "diarrhea",
+      "parasitology",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Bebeu água de riacho e há 2 semanas tem diarreia gordurosa que boia: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebeu água de riacho e há 2 semanas tem diarreia gordurosa que boia: qual?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

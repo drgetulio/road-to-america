@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-25",
   "tom": null,
-  "gancho": "Dia Mundial da Tuberculose: o bacilo entrou pelo *térreo* e deixou recado no porão",
-  "gancho_apoio": "Menino sem sintomas, avô com tuberculose e uma TC que conta a história em dois cômodos.",
+  "gancho": "Dia Mundial da Tuberculose: *o avô tossia*, e o neto fez o teste",
+  "gancho_apoio": "O Seu Allen montou a maquete da casa para ver por onde o visitante entrou.",
   "imagem": {
     "arquivo": "dia-143.png",
-    "cena": "Seu Allen monta a maquete de uma casa em forma de pulmão, estilo manual de montagem. Um visitante em forma de bastão, de boné vermelho, entra pela janela do térreo, perto da parede lateral, e setinhas de manual apontam para o corredor que desce até o porão do centro.",
+    "cena": "Seu Allen monta com cuidado a maquete de uma casa em forma de pulmão, e um visitante em forma de bastão, de boné vermelho, bate à porta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Allen monta uma casa em forma de pulmão; um bastão de boné vermelho entra pela janela do térreo."
+    "alt": "Seu Allen monta uma casa em forma de pulmão; um visitante em forma de bastão, de boné vermelho, bate à porta."
   },
   "imagem_macete": {
     "arquivo": "dia-143-macete.png",
-    "cena": "No cômodo do térreo, perto da parede, aparece uma rodinha de queijo minas cercada por macrófagos de mãos dadas; outra rodinha igual surge no porão do centro (hilo), ligada à primeira por uma trilha pontilhada. Seu Allen aperta o último parafuso.",
+    "cena": "Callback: num cômodo do térreo, perto da parede, aparece uma rodinha de queijo cercada de macrófagos de mãos dadas, e outra rodinha igual surge no porão do centro, ligada à primeira por uma trilha pontilhada. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Duas rodinhas de queijo cercadas por macrófagos: uma no térreo, perto da parede, e outra no porão do hilo."
+    "alt": "Uma rodinha de queijo cercada de macrófagos no térreo e outra no porão, ligadas por uma trilha."
   },
   "questao": {
     "vinheta": "A 7-year-old boy has a positive tuberculin skin test after his grandfather is diagnosed with pulmonary tuberculosis. He is asymptomatic, with normal vital signs. Chest CT shows a small subpleural nodule in the lower right lung field with enlarged ipsilateral hilar lymph nodes.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Miliary tuberculosis",
-        "quiz": "TB miliar"
+        "quiz": "Miliary TB"
       },
       "B": {
         "texto": "Secondary (reactivation) tuberculosis",
-        "quiz": "TB secundária"
+        "quiz": "Reactivation TB"
       },
       "C": {
-        "texto": "Primary tuberculosis with a Ghon complex",
-        "quiz": "Ghon (primária)"
+        "texto": "Primary tuberculosis (Ghon complex)",
+        "quiz": "Primary TB"
       },
       "D": {
         "texto": "Sarcoidosis",
-        "quiz": "Sarcoidose"
+        "quiz": "Sarcoidosis"
       }
     },
     "correta": "C"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose. Na Quarta do Porquê, uma criança assintomática com PPD positivo, um nódulo pequeno embaixo da pleura e um linfonodo aumentado no hilo do mesmo lado.",
+    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose, e a tuberculose tem tratamento e cura. Na Quarta do Porquê, uma criança que conviveu com um caso em casa. Os sintomas, o teste e a TC estão na vinheta.",
     "palavras_chave": [
       "positive tuberculin skin test",
       "household contact",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Criança com PPD positivo, nódulo subpleural basal e hilo aumentado: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Criança com PPD positivo, nódulo subpleural basal e hilo aumentado: qual?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

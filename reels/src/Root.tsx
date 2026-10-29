@@ -7,6 +7,7 @@ import { direcaoDe } from "./direcao";
 import { Reel } from "./Reel";
 import { reelSchema, roteiroSchema, type ReelProps } from "./schema";
 import { FPS, H, W } from "./tema";
+import { direcaoSemanal, reelsSemanais, roteiroSemanal } from "./semanais";
 
 // Valida o JSON na carga: erro de digitação no roteiro aparece no Studio e no render.
 const roteiros = (dados as { roteiros: unknown[] }).roteiros.map((r) => roteiroSchema.parse(r));
@@ -36,6 +37,27 @@ export const Root: React.FC = () => (
           width={W}
           height={H}
         />
+      ))}
+    </Folder>
+    <Folder name="Semanais">
+      {reelsSemanais.map((r) => (
+        <Composition
+          key={r.id}
+          id={r.id}
+          component={Reel}
+          schema={reelSchema}
+          defaultProps={{ roteiro: roteiroSemanal(r), direcao: direcaoSemanal(r) }}
+          calculateMetadata={calcular}
+          durationInFrames={Math.round(r.duracao_s * FPS)}
+          fps={FPS}
+          width={W}
+          height={H}
+        />
+      ))}
+    </Folder>
+    <Folder name="CapasSemanais">
+      {reelsSemanais.map((r) => (
+        <Still key={r.id} id={`capa-${r.id}`} component={Capa} schema={reelSchema} defaultProps={{ roteiro: roteiroSemanal(r), direcao: direcaoSemanal(r) }} width={W} height={H} />
       ))}
     </Folder>
     <Folder name="Capas">

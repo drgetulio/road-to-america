@@ -11,7 +11,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-31",
-  "gancho": "Amigo secreto do ensaio clínico: quem *não deu presente* ainda conta?",
+  "gancho": "Amigo secreto do ensaio clínico: o Viés chegou *sem ser convidado*",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Numa festa de fim de ano da firma, o Viés, de lupa, espia de trás de uma tabela 2x2 em branco enquanto bonequinhos de camisa azul e vermelha trocam presentes de amigo secreto. Um bonequinho azul está sentado sem presente nas mãos, e outro tenta trocar escondido o papel que tirou.",
@@ -38,11 +38,11 @@
       },
       "C": {
         "texto": "It eliminates the need for blinding",
-        "quiz": "No blinding needed"
+        "quiz": "Blinding not needed"
       },
       "D": {
         "texto": "It reduces the required sample size",
-        "quiz": "Smaller sample"
+        "quiz": "Smaller sample size"
       }
     },
     "correta": "B"
@@ -70,11 +70,11 @@
     }
   },
   "legenda": {
-    "contexto": "Num ensaio clínico, parte do grupo do remédio parou por efeito adverso e parte do placebo arrumou o remédio por fora. A análise manteve todo mundo no grupo sorteado. O Viés está inconformado. Qual é a vantagem disso?",
+    "contexto": "Sábado Sem Viés de bioestatística: um ensaio clínico com gente que parou o remédio e gente que arrumou o remédio por fora, e uma escolha de análise que a prova cobra todo ano. Qual é a vantagem dela?",
     "palavras_chave": [
       "randomized trial",
       "placebo",
-      "side effects",
+      "nonadherence",
       "analysis plan"
     ],
     "hashtags": [
@@ -85,12 +85,11 @@
       "#SabadoSemVies",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Todos analisados no grupo do sorteio: qual a principal vantagem?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Todos analisados no grupo do sorteio: qual a principal vantagem?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

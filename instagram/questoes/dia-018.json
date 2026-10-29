@@ -16,7 +16,7 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-018.png",
-    "cena": "Capitã Plaqueta, de colete e apito, para diante de uma rua estreita de mão única onde um carrinho pequeno estacionou na contramão, longe da garagem redonda, que está vazia. Ao lado, um painel com cinco luzinhas apagadas e dois espetos de rodízio: um de frasquinhos e seringa de brinquedo, outro de ferramentas de oficina. A plaquinha verde e vermelha está de lado.",
+    "cena": "Capitã Plaqueta, de colete e apito, para diante de uma rua estreita de mão única onde um carrinho pequeno estacionou na contramão, longe da garagem redonda, que está vazia. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
     "alt": "O embrião estacionou na contramão. Remédio resolve ou chama o guincho?"
   },
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Repeat β-hCG in 48 hours",
-        "quiz": "Repetir hCG em 48 h"
+        "quiz": "Repeat hCG in 48 h"
       },
       "B": {
         "texto": "Laparoscopic salpingectomy",
-        "quiz": "Salpingectomia"
+        "quiz": "Salpingectomy"
       },
       "C": {
         "texto": "Intramuscular methotrexate",
-        "quiz": "Metotrexato IM"
+        "quiz": "IM methotrexate"
       },
       "D": {
         "texto": "Dilation and curettage",
-        "quiz": "Curetagem"
+        "quiz": "D&C"
       }
     },
     "correta": "C"
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na obstetrícia: gravidez ectópica numa paciente estável, sem líquido livre e que prefere evitar cirurgia. A Capitã Plaqueta tem cinco luzes para conferir antes de decidir.",
+    "contexto": "Rodízio de Quinta na obstetrícia: uma gravidez fora do lugar e duas escolas no corredor, a do remédio e a do bisturi. A Capitã Plaqueta confere os critérios da vinheta antes de apitar.",
     "palavras_chave": [
+      "early pregnancy",
       "pelvic pain",
-      "spotting",
-      "adnexal mass",
-      "transvaginal ultrasound"
+      "transvaginal ultrasound",
+      "obstetrics"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ectópica de 2,5 cm, hCG 4.100 e sem batimento: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ectópica de 2,5 cm, hCG 4.100 e sem batimento: qual conduta?"
   },
   "exemplo": false
 }

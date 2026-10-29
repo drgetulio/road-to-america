@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-13",
   "tom": null,
-  "gancho": "Duas semanas de tosse e *nenhuma falta na aula*: até o bicho é CDF",
-  "gancho_apoio": "Tosse seca, raio X pior que o paciente, amoxicilina inútil e sangue que aglutina no gelo. Quem é o bicho?",
+  "gancho": "Bicho de Segunda: *uma tosse que não vai embora*",
+  "gancho_apoio": "Na prova, todo estudante da vinheta tem febre baixa e uma avaliação na semana seguinte.",
   "imagem": {
     "arquivo": "dia-253.png",
-    "cena": "Numa sala de aula, um micróbio miudinho de cachecol listrado e jaqueta fofa, que esconde o formato do corpo, senta na primeira fileira com o caderno impecável e tosse baixinho no cotovelo. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, é o colega do lado e se afasta discretamente, sorrindo amarelo. No canto da mesa, um balde de gelo de metal com uma garrafinha.",
+    "cena": "Numa sala de aula, o Macrô, de guardanapo xadrez e comanda no bolso, divide a carteira com um colega de cachecol listrado que tosse baixinho no cotovelo. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Micróbio de cachecol na primeira fileira da aula"
+    "alt": "Macrô divide a carteira com um colega de cachecol que tosse no cotovelo"
   },
   "imagem_macete": {
     "arquivo": "dia-253-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Streptococcus pneumoniae",
-        "quiz": "Pneumococo"
+        "quiz": "Streptococcus pneumoniae"
       },
       "B": {
         "texto": "Legionella pneumophila",
-        "quiz": "Legionella"
+        "quiz": "Legionella pneumophila"
       },
       "C": {
         "texto": "Mycoplasma pneumoniae",
-        "quiz": "Mycoplasma"
+        "quiz": "Mycoplasma pneumoniae"
       },
       "D": {
         "texto": "Chlamydia pneumoniae",
-        "quiz": "Chlamydia pneum."
+        "quiz": "Chlamydia pneumoniae"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Estudante com tosse seca há duas semanas, indo às aulas normalmente. A amoxicilina não fez nada e o sangue aglutina no gelo.",
+    "contexto": "Bicho de Segunda no respiratório, com o Macrô. Um jovem com tosse e quatro exames descritos na vinheta. Quem é o bicho?",
     "palavras_chave": [
-      "low-grade fever",
-      "dry cough",
-      "interstitial infiltrates",
-      "chilled blood sample"
+      "respiratory infection",
+      "chest x-ray",
+      "laboratory tests",
+      "Step 1 microbiology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Tosse seca há 2 semanas e aglutinina fria: qual é o micróbio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tosse seca há 2 semanas e aglutinina fria: qual é o micróbio?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

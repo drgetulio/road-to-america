@@ -7,20 +7,21 @@
   "sistema": "Processos e doenças multissistêmicos",
   "topico": "Doença do soro",
   "conceito": "Serum sickness: type III immune complexes 1 to 2 weeks after exposure, low complement",
-  "personagem": "Macrô",
+  "personagem": "Seu Néfron",
+  "anfitriao": null,
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-19",
-  "gancho": "Picada de cobra resolvida. *Dez dias depois chegou a fatura*",
+  "gancho": "Picada de cobra resolvida, e o Seu Néfron recebeu um *envelope*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Numa banca de feira, Macrô, de comanda no bolso, paga na maquininha de cartão um frasco de soro com tampa em forma de cabeça de cavalo simpático. Ao lado, um calendário de mesa em branco. Ao longe, numa trilha, uma cobra de desenho descansa tranquila na grama.",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, abre um envelope em branco na repartição com cara de surpresa. Ao longe, pela janela, uma cobra de desenho descansa tranquila na grama.",
     "foco": "50% 35%",
-    "alt": "Macrô paga na maquininha de cartão um frasco de soro com tampa de cavalo numa banca de feira; ao longe, uma cobra descansa na trilha.",
+    "alt": "Seu Néfron abre um envelope em branco com cara de surpresa; pela janela, uma cobra de desenho descansa na grama.",
     "arquivo": "dia-078.png"
   },
   "imagem_macete": {
-    "cena": "Callback da feira: dez folhas do calendário caíram e chegou a fatura. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim. O Macrô paga os juros com moedinhas douradas, e a carteira fica vazia.",
+    "cena": "Revelação do envelope: é a fatura, com dez folhas do calendário caídas na mesa. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim, e o Seu Néfron paga os juros com moedinhas douradas.",
     "alt": "Dez folhas do calendário caem; bolinhos de anticorpo com pedacinhos de cavalo entopem canos, e o Macrô paga os juros com moedas douradas.",
     "arquivo": "dia-078-macete.png"
   },
@@ -70,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um soro de cavalo salvou um homem de uma picada de cobra. Dez dias depois vieram febre, placas na pele, dor nas juntas e complemento baixo. O Macrô está conferindo a fatura: qual é o diagnóstico?",
+    "contexto": "Bicho de Segunda com o Seu Néfron no lugar do Macrô: uma picada de cobra tratada e um envelope na mesa. Quatro reações a remédio, e a vinheta diz qual chegou.",
     "palavras_chave": [
       "snakebite",
-      "antivenom",
-      "rash and arthralgia",
-      "proteinuria"
+      "drug reaction",
+      "immunology",
+      "rash"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +86,11 @@
       "#BichoDeSegunda",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Febre, artralgia e C3 baixo 10 dias após antiveneno: o que é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, artralgia e C3 baixo 10 dias após antiveneno: o que é?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-17",
   "tom": null,
-  "gancho": "Metrô da dopamina: uma linha *travou de manhã* e o pescoço foi junto. Qual?",
-  "gancho_apoio": "Haloperidol na véspera e um torcicolo que ninguém pediu.",
+  "gancho": "Metrô da dopamina: *quatro linhas* saem da mesma estação",
+  "gancho_apoio": "Haloperidol na véspera e um efeito na manhã seguinte que ninguém pediu.",
   "imagem": {
     "arquivo": "dia-166.png",
-    "cena": "Tia Meia-Vida, como guia numa estação de metrô, aponta com a caneta para um mapa colorido na parede, com quatro linhas que saem da mesma estação.",
+    "cena": "A Tia Meia-Vida, de guia de estação de metrô, segura a caneta diante de um mapa colorido na parede, com quatro linhas que saem da mesma estação. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida aponta com a caneta um mapa de metrô de quatro linhas que saem da mesma estação."
+    "alt": "A Tia Meia-Vida, de guia de metrô, diante de um mapa de quatro linhas que saem da mesma estação."
   },
   "imagem_macete": {
     "arquivo": "dia-166-macete.png",
-    "cena": "O mapa ganha vida: na linha que leva a um salão de dança, os trens estão engarrafados e os dançarinos pararam como estátuas; a Tia desentope a linha com uma chave inglesa em forma de pílula. As outras seguem livres.",
-    "alt": "Na linha do salão de dança, os trens engarrafam e os dançarinos param; a Tia desentope com uma chave de pílula."
+    "cena": "Callback: o mapa ganha vida: na linha que leva a um salão de dança, os trens estão engarrafados e os dançarinos pararam como estátuas, e a Tia desentope a linha com uma chave inglesa em forma de pílula. Fundo limpo.",
+    "alt": "Na linha do salão de dança os trens engarrafam e os dançarinos param; a Tia desentope com uma chave em forma de pílula."
   },
   "questao": {
     "vinheta": "A 24-year-old man is started on haloperidol for acute psychosis. The next morning, he develops a sustained, painful twisting of his neck to the right, and his eyes deviate upward. He is alert and afebrile, with normal vital signs.",
@@ -31,7 +31,7 @@
     "alternativas": {
       "A": {
         "texto": "Mesolimbic",
-        "quiz": "Mesolímbica"
+        "quiz": "Mesolimbic"
       },
       "B": {
         "texto": "Mesocortical",
@@ -39,7 +39,7 @@
       },
       "C": {
         "texto": "Nigrostriatal",
-        "quiz": "Nigroestriatal"
+        "quiz": "Nigrostriatal"
       },
       "D": {
         "texto": "Tuberoinfundibular",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Torcicolo e olhos para cima horas após o haloperidol: qual via bloqueada?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Torcicolo e olhos para cima horas após o haloperidol: qual via bloqueada?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

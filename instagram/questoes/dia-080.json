@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-21",
-  "gancho": "Garagem lotada de ferro e *a avenida vazia*: quem trancou o portão?",
+  "gancho": "A Capitã Plaqueta apita na saída da *fábrica de hemácias*, e o movimento está fraco",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "A Capitã Plaqueta apita na saída da garagem de um prédio, onde caminhõezinhos carregados de barras de ferro estão estacionados em fila, sem sair. A avenida que leva à fábrica de hemácias está vazia. Um carro parado esconde o portão, e não dá para ver o que segura os caminhões. Setinhas de manual apontam para a garagem.",
+    "cena": "A Capitã Plaqueta apita na porta de uma fábrica de hemácias de chaminé fraca, conferindo uma prancheta de entregas, com setinhas de manual em volta da porta.",
     "foco": "50% 35%",
-    "alt": "A Capitã Plaqueta apita na saída de uma garagem cheia de caminhões de ferro parados; a avenida para a fábrica de hemácias está vazia.",
+    "alt": "A Capitã Plaqueta apita na porta de uma fábrica de hemácias de chaminé fraca, com uma prancheta de entregas.",
     "arquivo": "dia-080.png"
   },
   "imagem_macete": {
@@ -29,7 +29,7 @@
     "pergunta": "Which mechanism best explains her anemia?",
     "alternativas": {
       "A": {
-        "texto": "Chronic blood loss depleting iron stores",
+        "texto": "Chronic blood loss that depletes iron stores",
         "quiz": "Iron loss"
       },
       "B": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Artrite reumatoide de longa data, cansaço, ferro sérico baixo e ferritina alta. A Capitã Plaqueta apita no cruzamento, mas os caminhões de ferro não saem do prédio. Quem fechou a saída?",
+    "contexto": "Quarta do Porquê com a Capitã Plaqueta: uma doença inflamatória de longa data e uma anemia que não se explica sozinha. Quatro mecanismos no cruzamento, e os exames do ferro na vinheta escolhem um. Perfil de ferro é o quebra-cabeça que todo mundo monta errado pelo menos uma vez no NBME.",
     "palavras_chave": [
       "rheumatoid arthritis",
       "fatigue",
-      "iron studies",
-      "microcytic anemia"
+      "anemia",
+      "iron metabolism"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#QuartaDoPorque",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Ferritina alta e ferro sérico baixo na AR: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ferritina alta e ferro sérico baixo na AR: qual mecanismo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

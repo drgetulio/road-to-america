@@ -12,39 +12,39 @@
   "remix_de": null,
   "explicacao_em": "2027-06-03",
   "tom": null,
-  "gancho": "Alguém está *saqueando o cofre* de cálcio dos ossos",
-  "gancho_apoio": "Pedra no rim, intestino preso e cálcio alto no exame. Quem deu a ordem?",
+  "gancho": "Quarta do Porquê: cansaço, intestino preso e *um exame de rotina que ninguém esperava*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-213.png",
-    "cena": "Em estilo de manual de montagem, com setinhas, um cofrinho em forma de osso se esvazia sozinho: moedas brancas de giz caem num riacho que desce até a mesa do Seu Néfron, onde pedrinhas se acumulam na caixa de entrada. Bolinhas azuis seguem rio abaixo.",
+    "cena": "Em estilo de manual de montagem, Seu Néfron segura contra a luz um único exame de sangue, com a sobrancelha erguida. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Alguém está saqueando o cofre de cálcio dos ossos"
+    "alt": "Seu Néfron, de sobrancelha erguida, olha um exame de sangue contra a luz"
   },
   "imagem_macete": {
     "arquivo": "dia-213-macete.png",
-    "cena": "Callback: o mesmo cenário visto de longe. Atrás do cofre, num banquinho em forma de gravata-borboleta (a tireoide), estão quatro ervilhas verdes; três pequenas dormem e uma, enorme, segura um megafone e manda esvaziar o cofre. Na mesa, o Seu Néfron franze a testa para as pedrinhas da caixa de entrada.",
+    "cena": "Callback: num banquinho em forma de gravata-borboleta (a tireoide), estão quatro ervilhas verdes; três pequenas dormem e uma, enorme, segura um megafone e manda esvaziar um cofrinho em forma de osso. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Cálcio alto com PTH alto: paratireoide no comando"
+    "alt": "Uma das quatro ervilhas, enorme, manda de megafone esvaziar o cofrinho de osso"
   },
   "questao": {
-    "vinheta": "A 58-year-old woman has fatigue, constipation, and a recent calcium oxalate kidney stone. Serum calcium is 11.6 mg/dL, phosphate 2.2 mg/dL, and parathyroid hormone 145 pg/mL (normal 10 to 65). Her 24-hour urinary calcium excretion is elevated. Serum creatinine is normal.",
+    "vinheta": "A 58-year-old woman has fatigue and constipation. Serum calcium is 11.4 mg/dL, and parathyroid hormone is 58 pg/mL (normal 10 to 65). Her 24-hour urinary calcium excretion is elevated. Serum creatinine and 25-hydroxyvitamin D are normal.",
     "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
         "texto": "Humoral hypercalcemia of malignancy",
-        "quiz": "PTHrP do tumor"
+        "quiz": "PTHrP from a tumor"
       },
       "B": {
         "texto": "Secondary hyperparathyroidism",
-        "quiz": "HPT secundário"
+        "quiz": "Secondary hyperparathyroidism"
       },
       "C": {
         "texto": "Familial hypocalciuric hypercalcemia",
-        "quiz": "FHH"
+        "quiz": "FHH (CaSR defect)"
       },
       "D": {
         "texto": "Primary hyperparathyroidism",
-        "quiz": "HPT primário"
+        "quiz": "Primary hyperparathyroidism"
       }
     },
     "correta": "D"
@@ -52,7 +52,7 @@
   "explicacao": {
     "titulo": "Cálcio alto com PTH alto: *paratireoide* no comando",
     "certa": [
-      "Cálcio alto com PTH alto (ou inapropriadamente normal) é *primary hyperparathyroidism*, quase sempre por um *parathyroid adenoma*. O PTH tira cálcio do osso, aumenta a reabsorção de cálcio no túbulo distal e joga fosfato fora na urina, por isso o fósforo cai. Com tanto cálcio filtrado, a calciúria sobe e aparecem os cálculos."
+      "Cálcio alto com PTH alto, ou *inapropriadamente normal*, é *primary hyperparathyroidism*, quase sempre por um *parathyroid adenoma*. O PTH de 58 parece normal, mas, com cálcio de 11,4, a paratireoide sadia estaria suprimida: quem ainda secreta está no comando. A calciúria de 24 horas alta afasta a hipercalcemia hipocalciúrica familiar, e a creatinina normal afasta o hiperparatireoidismo secundário da doença renal."
     ],
     "termos": [
       "primary hyperparathyroidism",
@@ -62,7 +62,7 @@
     ],
     "erradas": {
       "A": "Na *humoral hypercalcemia of malignancy*, o PTHrP do tumor sobe o cálcio e o PTH verdadeiro fica suprimido.",
-      "B": "No *secondary hyperparathyroidism* da doença renal crônica, o cálcio está baixo ou normal e o fósforo alto; aqui a creatinina é normal.",
+      "B": "No *secondary hyperparathyroidism* da doença renal crônica ou da falta de vitamina D, o cálcio está baixo ou normal; aqui o cálcio está alto, e a creatinina e a vitamina D são normais.",
       "C": "Na *familial hypocalciuric hypercalcemia*, o receptor sensor de cálcio funciona mal e a calciúria é baixa, não alta."
     },
     "macete": {
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Cálculo renal, intestino preso, cansaço, cálcio alto, fósforo baixo e PTH alto. O cofre dos ossos está sendo esvaziado. Qual é o diagnóstico?",
+    "contexto": "Quarta do Porquê na endocrinologia, com o Seu Néfron de óculos na ponta do nariz. Um cálcio, um hormônio e uma urina de 24 horas: os números estão na vinheta, e cada um elimina um suspeito.",
     "palavras_chave": [
-      "fatigue",
-      "constipation",
-      "kidney stone",
-      "high serum calcium"
+      "calcium disorder",
+      "parathyroid hormone",
+      "24-hour urine",
+      "Step 1 physiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cálcio alto, fósforo baixo e PTH alto?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cálcio 11,4, PTH 58 e calciúria alta: qual diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

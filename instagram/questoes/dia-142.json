@@ -14,38 +14,38 @@
   "explicacao_em": "2027-03-24",
   "tom": null,
   "gancho": "TC de abdome para cólica renal e, de brinde, um *nódulo no pulmão*. E agora?",
-  "gancho_apoio": "Ex-fumante, 9 mm, sem sintomas e uma TC de tórax feita em outro hospital há 3 anos.",
+  "gancho_apoio": "Achado por acaso às 3 da manhã: o radiologista já foi dormir, você não.",
   "imagem": {
     "arquivo": "dia-142.png",
-    "cena": "Dona Térmica, de lupa, examina uma figurinha redonda colada numa folha em forma de pulmão. Em volta, a mesa da copa está cheia de pacotinhos de figurinha fechados, e um relógio de parede sem números marca 3 horas.",
+    "cena": "Dona Térmica, de lupa, examina uma figurinha redonda colada numa folha de álbum em forma de pulmão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica examina com a lupa uma figurinha redonda numa folha em forma de pulmão, cercada de pacotinhos."
+    "alt": "Dona Térmica examina com a lupa uma figurinha redonda numa folha de álbum em forma de pulmão."
   },
   "imagem_macete": {
     "arquivo": "dia-142-macete.png",
-    "cena": "Ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho. Um selo verde de aprovado aparece entre os dois, e os pacotinhos voltam fechados para a gaveta.",
+    "cena": "Callback: ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho, e um selo verde de aprovado aparece entre os dois. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Álbum antigo e álbum novo com a mesma figurinha no mesmo lugar; um selo verde de aprovado entre eles."
+    "alt": "Um álbum antigo mostra a mesma figurinha, igual; um selo verde aparece entre os dois álbuns."
   },
   "questao": {
     "vinheta": "A 63-year-old man who quit smoking 5 years ago after 30 pack-years undergoes abdominal CT for flank pain. The lung bases show a 9-mm solid nodule in the right lower lobe. He has no respiratory symptoms. He had a chest CT at another hospital 3 years ago.",
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "PET-CT",
-        "quiz": "PET-CT"
+        "texto": "Whole-body PET-CT scan now",
+        "quiz": "PET-CT now"
       },
       "B": {
-        "texto": "Obtain the prior chest CT for comparison",
-        "quiz": "Comparar TC antiga"
+        "texto": "Compare with the prior CT scan",
+        "quiz": "Get the old CT"
       },
       "C": {
-        "texto": "CT-guided biopsy",
-        "quiz": "Biópsia por TC"
+        "texto": "CT-guided transthoracic biopsy",
+        "quiz": "CT-guided biopsy"
       },
       "D": {
-        "texto": "Repeat chest CT in 12 months",
-        "quiz": "Nova TC em 12 meses"
+        "texto": "Low-dose chest CT in 12 months",
+        "quiz": "Repeat CT in 12 months"
       }
     },
     "correta": "B"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: o radiologista achou um nódulo que ninguém procurava, na base do pulmão de um ex-fumante que já fez uma TC de tórax em outro hospital. Qual é o primeiro passo?",
+    "contexto": "Plantão de Terça: o radiologista achou um nódulo que ninguém procurava. O tamanho, o cigarro e o resto da história estão na vinheta. Qual é o primeiro passo?",
     "palavras_chave": [
       "former smoker",
       "solid lung nodule",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo de 9 mm achado por acaso e TC de tórax de 3 anos atrás: 1º passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo de 9 mm achado por acaso e TC de tórax de 3 anos atrás: 1º passo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

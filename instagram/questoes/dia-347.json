@@ -33,15 +33,15 @@
     "alternativas": {
       "A": {
         "texto": "Congenital cataract",
-        "quiz": "Catarata congênita"
+        "quiz": "Congenital cataract"
       },
       "B": {
         "texto": "Coats disease",
-        "quiz": "Doença de Coats"
+        "quiz": "Coats disease"
       },
       "C": {
         "texto": "Retinopathy of prematurity",
-        "quiz": "Retinop. prematuro"
+        "quiz": "Retinopathy of prematurity"
       },
       "D": {
         "texto": "Retinoblastoma",
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia Mundial da Visão. Nas fotos com flash, uma pupila sai branca. O olho começou a desviar, e o pai teve um tumor ocular quando era pequeno. Qual é o diagnóstico mais provável?",
+    "contexto": "Dia Mundial da Visão. Uma questão com calma sobre um reflexo diferente nas fotos de um bebê e sobre o que fazer com esse aviso. Os detalhes estão na vinheta.",
     "palavras_chave": [
-      "14-month-old",
-      "white pupil in photos",
-      "strabismus",
-      "family history"
+      "pediatric ophthalmology",
+      "red reflex",
+      "infant",
+      "eye examination"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Reflexo branco nas fotos, estrabismo e história no pai: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Reflexo branco nas fotos, estrabismo e história no pai: qual diagnóstico?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

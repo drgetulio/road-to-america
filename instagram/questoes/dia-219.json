@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-09",
   "tom": null,
-  "gancho": "Dor na têmpora e visão piscando: *quem fura a fila?*",
-  "gancho_apoio": "Biópsia, ressonância ou remédio: a Dona Térmica decide quem passa primeiro.",
+  "gancho": "Plantão de Terça: *uma dor de cabeça nova* e quatro condutas disputando a vez",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-219.png",
-    "cena": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido e um caminhãozinho com um microscópio na carroceria esperam lado a lado, os dois de motor ligado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
+    "cena": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica, de prancheta, organiza uma fila com dois carrinhos de motor ligado, sem saber quem passa primeiro. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica organiza a fila entre um carrinho de comprimido e um caminhão de microscópio"
+    "alt": "Dona Térmica organiza a fila de dois carrinhos de motor ligado na triagem"
   },
   "imagem_macete": {
     "arquivo": "dia-219-macete.png",
-    "cena": "O carrinho do comprimido pega a faixa expressa e dispara na frente, de sirene ligada; o caminhão do microscópio vem atrás, tranquilo, porque a biópsia ainda acha a resposta por duas semanas. Os óculos no banquinho brilham, protegidos, e Dona Térmica aprova com um cafezinho.",
+    "cena": "Callback: um carrinho em forma de comprimido pega a faixa expressa e dispara na frente; um caminhãozinho com um microscópio vem atrás, tranquilo, e Dona Térmica aprova com um cafezinho. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Na arterite de células gigantes, corticoide primeiro"
+    "alt": "O carrinho-comprimido dispara na faixa expressa e o caminhão do microscópio vem atrás"
   },
   "questao": {
     "vinheta": "A 72-year-old woman has had a new right temporal headache for 2 weeks, jaw pain when chewing, and scalp tenderness. This morning she had 10 minutes of blurred vision in the right eye, now resolved. The right temporal artery is tender and nodular. ESR is 92 mm/h.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Temporal artery biopsy before any treatment",
-        "quiz": "Biópsia antes"
+        "quiz": "Biopsy before treating"
       },
       "B": {
         "texto": "MRI of the brain with contrast",
-        "quiz": "RM de crânio"
+        "quiz": "Brain MRI with contrast"
       },
       "C": {
         "texto": "Naproxen and follow-up in 2 weeks",
-        "quiz": "Naproxeno"
+        "quiz": "Naproxen, recheck 2 wk"
       },
       "D": {
         "texto": "High-dose glucocorticoids now",
-        "quiz": "Corticoide já"
+        "quiz": "High-dose steroids now"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Cefaleia nova na têmpora, dor na mandíbula ao mastigar, couro cabeludo dolorido, VHS de 92 e visão embaçada hoje cedo. Qual conduta a Dona Térmica coloca na frente da fila?",
+    "contexto": "Plantão de Terça com a Dona Térmica. Uma cefaleia nova, um exame de sangue e um sintoma de hoje cedo descritos na vinheta. Biópsia, imagem ou remédio: o que vem primeiro?",
     "palavras_chave": [
-      "new headache",
-      "jaw pain",
-      "transient vision loss",
-      "high ESR"
+      "headache",
+      "emergency evaluation",
+      "next step",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "ACG com visão turva: qual a próxima conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "ACG com visão turva: qual a próxima conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

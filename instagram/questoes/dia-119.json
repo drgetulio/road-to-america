@@ -17,27 +17,27 @@
   ],
   "explicacao_em": "2027-03-01",
   "tom": "acolhedor",
-  "gancho": "Dia Mundial das Doenças Raras: a fratura é *a doença ou a consequência*?",
-  "gancho_apoio": "Dia Mundial das Doenças Raras. Três conceitos já vistos (dias 10, 24 e 73) e um intruso.",
+  "gancho": "Dia Mundial das Doenças Raras: o *manual de montagem* tem uma página trocada",
+  "gancho_apoio": "Três conceitos já vistos (dias 10, 24 e 73) e um intruso. Tema tratado com respeito.",
   "imagem": {
     "arquivo": "dia-119.png",
-    "cena": "Uma oficina tranquila ao fim da tarde. Seu Allen, a chavinha do manual de montagem, observa com calma três peças numa bancada: um forninho de padaria, um feixe de vergalhões finos e um trem de brinquedo com vagões de três assentos. Setinhas de manual apontam para as três. Um vinil pequeno no canto.",
+    "cena": "Numa oficina tranquila, Seu Allen observa com calma um trem de brinquedo de vagões de três assentos parado nos trilhos sobre a bancada. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Allen observa com calma três peças numa bancada: um forninho de padaria, vergalhões finos e um trem de vagões de três assentos."
+    "alt": "Seu Allen observa com calma um trem de brinquedo de vagões de três assentos parado na bancada."
   },
   "imagem_macete": {
     "arquivo": "dia-119-macete.png",
-    "cena": "Callback: dois trens de brinquedo com vagões de três assentos coloridos levam uma corda até uma barraca. No de cima falta um assento solto, os passageiros seguintes sentam tortos, um lugar para o lado, e o trem para numa estaçãozinha antes da hora, sem levar a corda. No de baixo falta um vagão inteiro: o trem, mais curto, chega, e a barraca fica firme.",
+    "cena": "Callback: na bancada, o trem de brinquedo, sem um dos vagões e mais curto, chega à estaçãozinha e entrega a corda que segura uma barraca firme, e Seu Allen confere o engate com cuidado. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Dois trens de vagões de três assentos: no de cima falta um assento e o trem para antes da hora; no de baixo falta um vagão e o trem, mais curto, chega à barraca."
+    "alt": "O trem de brinquedo, mais curto, chega à estação e segura a barraca firme; Seu Allen confere o engate."
   },
   "questao": {
-    "vinheta": "A 12-year-old boy has used a wheelchair since age 10 and has taken daily prednisone for 6 years. He fractures his femur after a minor fall. Rising from the floor became difficult at age 4, creatine kinase was markedly elevated, and a maternal uncle had similar weakness. Sclerae are white.",
-    "pergunta": "Which molecular defect underlies his primary disease?",
+    "vinheta": "A 16-year-old boy has had cramps and dark urine after soccer for 2 years but walks and climbs stairs normally. His calves are enlarged, and creatine kinase is 20 times normal. A maternal uncle needed a cane at age 40. Sclerae are white; he has never had a fracture.",
+    "pergunta": "Which molecular defect most likely underlies his disease?",
     "alternativas": {
       "A": {
         "texto": "COL1A1 mutation reducing type I collagen",
-        "quiz": "COL1A1, type I collagen",
+        "quiz": "COL1A1 mutation",
         "dia": 24
       },
       "B": {
@@ -46,41 +46,41 @@
         "dia": 10
       },
       "C": {
-        "texto": "In-frame deletion in the dystrophin gene",
-        "quiz": "In-frame DMD deletion"
-      },
-      "D": {
         "texto": "Frameshift deletion in the dystrophin gene",
         "quiz": "Frameshift DMD deletion",
         "dia": 73
+      },
+      "D": {
+        "texto": "In-frame deletion in the dystrophin gene",
+        "quiz": "In-frame DMD deletion"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Começou no músculo: Duchenne, *frameshift* na distrofina",
+    "titulo": "Distrofina *mais curta, mas funcionando*: deleção *em fase*",
     "certa": [
-      "Fraqueza que começou aos 4 anos, CK muito alta, tio materno afetado e cadeira de rodas aos 10 anos descrevem a *Duchenne muscular dystrophy* (dia 73), causada por uma *frameshift deletion* que praticamente elimina a *dystrophin*. A fratura com queda leve vem da osteoporose do corticoide crônico e da imobilidade, e não da osteogênese imperfeita (dia 24): a esclera é branca e a história começou no músculo, não no osso. O corticoide diário também não transforma o caso em hiperplasia adrenal (dia 10): lá ele repõe o que falta, aqui ele protege o músculo."
+      "Câimbras e urina escura depois do esforço, panturrilhas grandes, CK muito alta e herança pela linhagem materna apontam para uma distrofinopatia ligada ao X. Como ele anda normalmente aos 16 anos e o tio só precisou de bengala aos 40, a forma é a de Becker: uma deleção em fase (in-frame) mantém a leitura do gene e produz uma distrofina mais curta, mas parcialmente funcional."
     ],
     "termos": [
-      "Duchenne muscular dystrophy",
-      "frameshift deletion",
-      "dystrophin",
-      "glucocorticoid-induced osteoporosis"
+      "Becker muscular dystrophy",
+      "in-frame deletion",
+      "truncated dystrophin",
+      "X-linked"
     ],
     "erradas": {
-      "A": "Dia 24: a mutação do colágeno tipo I dá fraturas desde cedo, muitas vezes com esclera azulada e perda auditiva, sem CK alta nem fraqueza progressiva.",
-      "B": "Dia 10: a deficiência de 21-hidroxilase causa perda de sal e virilização; o corticoide diário aqui é tratamento da distrofia, não reposição hormonal.",
-      "C": "Intruso: a deleção in-frame é a distrofia de Becker, com distrofina menor, início mais tardio e marcha preservada até a adolescência ou além."
+      "A": "Dia 24: COL1A1 é da osteogênese imperfeita, com fraturas de repetição, esclera azul e perda auditiva; aqui a esclera é branca e nunca houve fratura.",
+      "B": "Dia 10: CYP21A2 é a hiperplasia adrenal congênita, com virilização e perda de sal, não doença muscular.",
+      "C": "Dia 73: a deleção que muda a fase de leitura (frameshift) quase zera a distrofina e dá a Duchenne, com fraqueza desde os 3 a 5 anos e perda da marcha no começo da adolescência."
     },
     "macete": {
-      "frase": "Começou no músculo: *um assento a menos* embaralha a distrofina",
-      "apoio": "Pegadinha de prova: O NBME coloca uma fratura para puxar a osteogênese imperfeita; num menino com fraqueza desde os 4 anos e anos de corticoide, a fratura é consequência, não a doença.",
-      "fala": "A fratura é a peça que caiu. O defeito está no manual da distrofina."
+      "frase": "*B*ecker é *b*em mais leve: a leitura segue *em fase*",
+      "apoio": "Pegadinha de prova: O NBME troca só a idade e o ritmo da doença: mesma CK alta e mesmas panturrilhas, mas quem ainda anda na adolescência tem Becker (in-frame); quem perde a marcha cedo tem Duchenne (frameshift).",
+      "fala": "O trem chega mais curto, mas chega. É isso que separa Becker de Duchenne."
     }
   },
   "legenda": {
-    "contexto": "No Dia Mundial das Doenças Raras, três conceitos já vistos se encontram num só caso: hiperplasia adrenal, osteogênese imperfeita e Duchenne. Um menino de 12 anos, anos de corticoide e uma fratura depois de uma queda leve. Qual defeito explica a doença de base?",
+    "contexto": "No Dia Mundial das Doenças Raras, três conceitos já vistos se encontram num caso só: hiperplasia adrenal, osteogênese imperfeita e Duchenne. Um adolescente e uma história de família. A idade, os exames e o tio estão na vinheta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,9 +95,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Fraqueza desde os 4 anos, CK alta e fratura leve: qual defeito?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cãibra e urina escura após o futebol, CK 20 vezes o normal e marcha normal: qual defeito?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

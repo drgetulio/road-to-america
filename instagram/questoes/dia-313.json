@@ -17,9 +17,9 @@
   "gancho_apoio": "Uma questão sobre cuidado, acompanhamento e conversa com a família.",
   "imagem": {
     "arquivo": "dia-313.png",
-    "cena": "Farmácia tranquila ao amanhecer: a Tia Meia-Vida, serena, coloca uma fita amarela ao lado de um caderno aberto e de uma xícara de chá; pela janela, um caminho de pedras atravessa um jardim até um banco sob um poste de luz. Tom acolhedor.",
+    "cena": "Farmácia tranquila ao amanhecer: a Tia Meia-Vida, serena, coloca uma fita amarela ao lado de um caderno aberto; pela janela, um caminho de pedras com postes de luz atravessa o jardim. Tom acolhedor.",
     "foco": "50% 35%",
-    "alt": "Setembro Amarelo: o que combinar quando uma adolescente começa antidepressivo?"
+    "alt": "A Tia Meia-Vida coloca uma fita amarela ao lado de um caderno aberto, numa farmácia tranquila ao amanhecer."
   },
   "imagem_macete": {
     "arquivo": "dia-313-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Stop fluoxetine if mood has not improved after 1 week",
-        "quiz": "Parar em 1 semana"
+        "quiz": "Stop if no change in 1 wk"
       },
       "B": {
-        "texto": "Explain the boxed warning and schedule close follow-up",
-        "quiz": "Alerta e retorno"
+        "texto": "Explain the boxed warning and follow closely",
+        "quiz": "Warning + close follow-up"
       },
       "C": {
         "texto": "Schedule the next visit in 6 months",
-        "quiz": "Retorno em 6 meses"
+        "quiz": "Next visit in 6 months"
       },
       "D": {
         "texto": "Keep the prescription confidential from her parents",
-        "quiz": "Sigilo aos pais"
+        "quiz": "Keep it from parents"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Adolescente de 15 anos com depressão há 2 meses, sem ideação suicida, com resposta parcial à psicoterapia, vai começar fluoxetina. Hoje, no Dia Mundial de Prevenção do Suicídio, a pergunta é sobre o plano de orientação e de retorno.",
+    "contexto": "Setembro Amarelo, Dia Mundial de Prevenção do Suicídio. Hoje a questão é sobre cuidado: o que combinar com uma adolescente e com a família quando um tratamento começa, e com que frequência ver de novo.",
     "palavras_chave": [
-      "adolescent depression",
-      "partial response to therapy",
-      "fluoxetine",
-      "family counseling"
+      "adolescent health",
+      "mental health",
+      "follow-up planning",
+      "family communication"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Adolescente vai começar fluoxetina: o que combinar com ela e a família?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Adolescente vai começar fluoxetina: o que combinar com ela e a família?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

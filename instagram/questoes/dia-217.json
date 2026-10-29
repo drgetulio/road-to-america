@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-06-07",
   "tom": null,
-  "gancho": "Eczema, otite e plaqueta baixa: *três suspeitos* e dois álibis",
-  "gancho_apoio": null,
+  "gancho": "Remix de Domingo com a Capitã: *três suspeitos conhecidos* e um intruso na fila",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 155, 197 e 211) e um intruso.",
   "imagem": {
     "arquivo": "dia-217.png",
-    "cena": "Uma sala de reconhecimento de suspeitos, com um vinil pequeno pendurado na parede. A Capitã Plaqueta, de prancheta, observa três suspeitos em fila: uma gotinha de água com grãos de arroz, uma plaquetinha minúscula de suéter que pinica e um ônibus de torcida visitante. Um quarto suspeito, um plugue sem tomada, tenta se enfiar na fila.",
+    "cena": "Uma sala de reconhecimento de suspeitos: a Capitã Plaqueta, de prancheta, observa uma fila de quatro silhuetas atrás de um vidro. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta numa sala de reconhecimento com três suspeitos em fila"
+    "alt": "Capitã Plaqueta observa quatro silhuetas numa sala de reconhecimento"
   },
   "imagem_macete": {
     "arquivo": "dia-217-macete.png",
-    "cena": "A Capitã aponta para a plaquetinha de suéter: por baixo do suéter, um andaime de varetas (a actina) está torto, e no crachá dela brilha a forma de um cromossomo X. A gotinha de arroz e o ônibus mostram seus álibis: nada de sangue nas fezes e nenhum doador.",
+    "cena": "Callback: na fila, um bastãozinho de capa de chuva (o C. difficile) dá um passo à frente com duas tesourinhas e desmonta um andaime de varetas (a actina da célula), e a Capitã apita. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
+    "alt": "O bastãozinho de capa de chuva desmonta o andaime de varetas e a Capitã apita"
   },
   "questao": {
-    "vinheta": "A 20-month-old boy has had eczema since infancy, three episodes of otitis media, and recent bloody stools. Platelet count is 30,000/mm3, and the smear shows unusually small platelets. He has never had a transfusion or transplant. His maternal uncle had similar problems.",
-    "pergunta": "Which mechanism best explains his condition?",
+    "vinheta": "A 3-year-old boy with Wiskott-Aldrich syndrome underwent hematopoietic stem cell transplantation 5 weeks ago. After broad-spectrum antibiotics for febrile neutropenia, he develops fever and profuse watery diarrhea. He has no rash, and bilirubin is normal. Stool testing is positive for toxin B. Colonoscopy shows yellow-white plaques.",
+    "pergunta": "Which mechanism best explains his diarrhea?",
     "alternativas": {
       "A": {
-        "texto": "ADP-ribosylation of Gs that keeps adenylyl cyclase on",
-        "quiz": "Toxina ativa Gs",
+        "texto": "ADP-ribosylation of Gs by an enterotoxin",
+        "quiz": "Gs ADP-ribosylation",
         "dia": 155
       },
       "B": {
-        "texto": "Mutation in an X-linked gene that regulates the actin cytoskeleton",
-        "quiz": "WAS: actina (X)",
-        "dia": 197
+        "texto": "Toxin glucosylation of Rho GTPases",
+        "quiz": "Rho GTPase glucosylation"
       },
       "C": {
-        "texto": "Donor T cells attacking host skin, liver, and gut",
-        "quiz": "T do doador",
+        "texto": "Donor T cells attacking the gut epithelium",
+        "quiz": "Donor T cells in the gut",
         "dia": 211
       },
       "D": {
-        "texto": "Absent CD40 ligand on helper T cells",
-        "quiz": "Falta CD40L"
+        "texto": "Bleeding from small WASP-deficient platelets",
+        "quiz": "Small platelets bleeding",
+        "dia": 197
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Plaqueta pequena, eczema e infecção: *WAS*",
+    "titulo": "Antibiótico e pseudomembrana: *toxina que desliga a Rho*",
     "certa": [
-      "Dia 197: menino, herança pela linha materna, eczema, infecções de repetição e *thrombocytopenia* com *small platelets* formam a *Wiskott-Aldrich syndrome*. A mutação no gene *WAS*, ligado ao X, prejudica o citoesqueleto de actina das células do sangue, e linfócitos e plaquetas funcionam mal. As fezes com sangue vêm das plaquetas baixas, não de uma toxina."
+      "Placas amarelas na colonoscopia depois de antibiótico de amplo espectro, com toxina B nas fezes, é colite por *Clostridioides difficile*, o intruso de hoje. As toxinas A e B são glicosiltransferases: colocam glicose nas *Rho GTPases* (Rho, Rac e Cdc42), o citoesqueleto de actina do colonócito desmonta, as junções se abrem e vêm a diarreia, a inflamação e a pseudomembrana. No transplantado, a doença é comum e pode ser grave; o tratamento inicial é vancomicina oral ou fidaxomicina."
     ],
     "termos": [
-      "Wiskott-Aldrich syndrome",
-      "WAS gene (X-linked)",
-      "small platelets",
-      "eczema"
+      "Clostridioides difficile",
+      "Rho GTPase glucosylation",
+      "pseudomembranous colitis",
+      "hematopoietic stem cell transplantation"
     ],
     "erradas": {
-      "A": "Dia 155: a toxina da cólera trava o Gs ligado e dá diarreia aquosa volumosa, em água de arroz, sem sangue, sem eczema e sem plaqueta baixa.",
-      "C": "Dia 211: a GVHD exige linfócitos T de um doador, por transplante ou transfusão, e ele nunca recebeu nenhum dos dois.",
-      "D": "A falta de *CD40 ligand* causa a hiper-IgM ligada ao X, com infecções, mas sem eczema e com plaquetas normais."
+      "A": "Dia 155: a toxina colérica ADP-ribosila a proteína Gs e deixa a adenilato ciclase ligada; dá diarreia aquosa enorme, sem inflamação e sem pseudomembrana, numa história de água contaminada.",
+      "C": "Dia 211: a GVHD intestinal também dá diarreia aquosa depois do transplante e precisa entrar no diferencial, mas não forma pseudomembrana nem explica a toxina nas fezes; o diagnóstico dela é por biópsia.",
+      "D": "Dia 197: na Wiskott-Aldrich, a plaqueta pequena explica sangramento e fezes com sangue. Aqui a diarreia é aquosa, com pseudomembrana, e o transplante já está corrigindo a doença de base."
     },
     "macete": {
-      "frase": "*WATER*: Wiskott-Aldrich, Thrombocytopenia, Eczema, Recurrent infections",
-      "apoio": "Na sala de reconhecimento, a cólera tem álibi (diarreia em água de arroz, sem sangue e sem eczema) e a GVHD também (nunca houve transplante nem transfusão). Sobra a WAS, com o andaime de actina torto no X.",
-      "fala": "Parou, colou... encolheu de novo! Esse andaime de actina não segura ninguém."
+      "frase": "As toxinas A e B do C. diff *desligam a Rho*: sem a Rho, o andaime de actina do colonócito *cai*.",
+      "apoio": "Pegadinha de prova: no transplantado, o NBME coloca a GVHD como isca para qualquer diarreia. Pseudomembrana e toxina nas fezes depois de antibiótico mudam o culpado. A cólera do dia 155 ADP-ribosila a Gs, sem inflamação.",
+      "fala": "Parou, colou, coagulou. Mas quem derrubou o andaime desta vez foi a toxina do intruso."
     }
   },
   "legenda": {
-    "contexto": "Eczema desde bebê, otites de repetição, fezes com sangue e plaquetas baixas e pequenas. No Remix de hoje, três conceitos das últimas semanas (dias 155, 197 e 211) e um intruso disputam o caso.",
+    "contexto": "Domingo de Remix com a Capitã Plaqueta. Um menino já conhecido do feed passou por um tratamento grande e agora tem um problema novo, descrito na vinheta com o exame que fecha o caso. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,9 +97,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Eczema, otite e plaqueta pequena: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia após antibiótico no transplante, toxina B: mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

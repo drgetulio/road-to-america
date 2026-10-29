@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-27",
   "tom": null,
-  "gancho": "Um cliente *toca o interfone sem parar*; o outro já entrou com a chave",
-  "gancho_apoio": "Dois remédios, o mesmo canal de cloreto, dois jeitos de abrir a porta.",
+  "gancho": "Dois clientes, o mesmo canal de cloreto e *dois jeitos de abrir a porta*",
+  "gancho_apoio": "A Tia Meia-Vida já sabe quem é quem. E você?",
   "imagem": {
     "arquivo": "dia-117.png",
-    "cena": "Na porta da farmácia de interior, dois clientes em forma de cápsula: um aperta a campainha várias vezes bem rápido, com risquinhos de movimento, e o outro se apoia na porta e a mantém escancarada com um tijolo pesado. Atrás do balcão, Tia Meia-Vida observa por cima dos óculos.",
+    "cena": "Na porta da farmácia de interior, dois clientes em forma de cápsula, de cores diferentes, esperam lado a lado diante de uma porta verde fechada, e a Tia Meia-Vida observa por cima dos óculos. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dois clientes em forma de cápsula: um toca a campainha sem parar e o outro segura a porta com um tijolo."
+    "alt": "Dois clientes em forma de cápsula esperam diante de uma porta verde fechada; a Tia Meia-Vida observa."
   },
   "imagem_macete": {
     "arquivo": "dia-117-macete.png",
-    "cena": "Callback: o cliente da campainha agora tem um metrônomo batendo rápido ao lado (frequência), e só ele carrega no pescoço uma chavinha de resgate (o flumazenil). O cliente da porta está sentado num tijolo enorme e firme (duração), e a porta abre até sem ninguém tocar. Tia Meia-Vida aponta para os dois.",
+    "cena": "Callback: o cliente da esquerda aperta a campainha várias vezes bem rápido, ao lado de um metrônomo, e o da direita mantém a porta escancarada com um tijolo pesado. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Cliente da campainha com metrônomo e chavinha de resgate; cliente da porta sentado num tijolo enorme."
+    "alt": "Um cliente toca a campainha sem parar ao lado de um metrônomo; o outro segura a porta aberta com um tijolo."
   },
   "questao": {
     "vinheta": "In a patch-clamp study of GABA-A receptors, drug X added with GABA increases how often the chloride channel opens without changing how long each opening lasts. Drug Y prolongs each opening and, at high concentrations, opens the channel even without GABA.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "X = lorazepam; Y = phenobarbital",
-        "quiz": "X benzo; Y barbiturate"
+        "quiz": "X lorazepam, Y phenobarbital"
       },
       "B": {
         "texto": "X = phenobarbital; Y = lorazepam",
-        "quiz": "X barbiturate; Y benzo"
+        "quiz": "X phenobarbital, Y lorazepam"
       },
       "C": {
         "texto": "X = flumazenil; Y = lorazepam",
-        "quiz": "X flumazenil; Y benzo"
+        "quiz": "X flumazenil, Y lorazepam"
       },
       "D": {
         "texto": "X = baclofen; Y = zolpidem",
-        "quiz": "X baclofen; Y zolpidem"
+        "quiz": "X baclofen, Y zolpidem"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na farmácia com a Tia Meia-Vida: dois remédios que agem no mesmo receptor, com uma diferença que o NBME adora.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: dois remédios no mesmo receptor e um experimento que mede como o canal se abre. O que cada um faz está na vinheta, e o NBME adora essa diferença.",
     "palavras_chave": [
       "patch-clamp study",
       "chloride channel",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Frequência x duração no GABA-A: quem é quem?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Frequência x duração no GABA-A: quem é quem?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

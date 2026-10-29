@@ -12,39 +12,39 @@
   "remix_de": null,
   "explicacao_em": "2027-07-27",
   "tom": null,
-  "gancho": "Tampão no nariz, febre de 39,8 e *vermelhão de quem dormiu na praia*",
-  "gancho_apoio": "Choque e eritrodermia dois dias depois da septoplastia, hemocultura negativa. Como essa toxina age?",
+  "gancho": "Bicho de Segunda: uma cirurgia simples e *um pós-operatório que esquentou*",
+  "gancho_apoio": "Toxina bacteriana no Step 1: a lista em que \"ADP-ribosila\" aparece mais que o seu nome no grupo da turma.",
   "imagem": {
     "arquivo": "dia-267.png",
-    "cena": "Na praia, ao lado de um guarda-sol listrado, Macrô olha desconfiado para um tampão de nariz de algodão enrolado, largado na areia, enquanto um grampeador de óculos escuros e boné sai de fininho com uma bolsa de praia. O celular do Macrô descansa de tela apagada sobre a toalha. A comanda em branco aparece no bolso do guardanapo.",
+    "cena": "Na praia, ao lado de um guarda-sol listrado, o Macrô, de comanda no bolso, olha desconfiado para um grampeador de óculos escuros e boné que sai de fininho. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô desconfia do tampão largado na areia da praia"
+    "alt": "Macrô desconfia de um grampeador de óculos escuros que sai de fininho na praia"
   },
   "imagem_macete": {
     "arquivo": "dia-267-macete.png",
-    "cena": "O grampeador é flagrado: grampeia o crachá do Macrô direto na lateral do chapéu dos linfócitos azuis, por fora, sem passar pela comanda. Cada grampo solta uma chuva de confete e mais uma multidão de linfócitos entra numa selfie gigante, todos dançando ao mesmo tempo. O celular do Macrô superaquece na mão.",
+    "cena": "Callback: o grampeador prende o crachá do Macrô direto na lateral do chapéu dos linfócitos azuis, por fora, e uma multidão de linfócitos dança ao mesmo tempo. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Superantígeno grampeia MHC II no TCR por fora"
+    "alt": "O grampeador prende o crachá do Macrô por fora no chapéu do linfócito e todos dançam"
   },
   "questao": {
-    "vinheta": "A 30-year-old man had nasal packing placed after septoplasty 2 days ago. He now has a temperature of 39.8°C, blood pressure of 82/50 mm Hg, vomiting, and a diffuse sunburn-like rash without blisters. Blood cultures are negative. Culture of the packing grows Staphylococcus aureus.",
+    "vinheta": "A 30-year-old man had nasal packing placed after septoplasty 2 days ago. Today his temperature is 39.8°C, blood pressure of 82/50 mm Hg, vomiting, and a diffuse sunburn-like rash without blisters. Blood cultures are negative. Culture of the packing grows Staphylococcus aureus.",
     "pergunta": "The responsible toxin acts by which mechanism?",
     "alternativas": {
       "A": {
-        "texto": "Binding MHC II and the T-cell receptor outside the antigen groove",
-        "quiz": "Liga MHC II ao TCR"
+        "texto": "Cross-linking MHC II and TCR outside the groove",
+        "quiz": "Links MHC II to TCR"
       },
       "B": {
-        "texto": "ADP-ribosylation of elongation factor 2",
-        "quiz": "ADP-ribosila EF-2"
+        "texto": "ADP-ribosylation of elongation factor 2 in host cells",
+        "quiz": "ADP-ribosylates EF-2"
       },
       "C": {
         "texto": "Cleavage of desmoglein 1",
-        "quiz": "Cliva desmogleína 1"
+        "quiz": "Cleaves desmoglein 1"
       },
       "D": {
         "texto": "Formation of pores in host cell membranes",
-        "quiz": "Forma poros"
+        "quiz": "Forms membrane pores"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Tampão nasal depois de uma septoplastia, choque e eritrodermia em 48 horas. Qual é o truque da toxina?",
+    "contexto": "Bicho de Segunda na imunologia, com o Macrô de férias na praia. Um procedimento recente, um quadro sistêmico e uma cultura que aponta o bicho, tudo na vinheta. Qual é o truque da toxina?",
     "palavras_chave": [
-      "nasal packing",
-      "high fever",
-      "hypotension",
-      "sunburn-like rash"
+      "postoperative fever",
+      "bacterial toxin",
+      "shock",
+      "Step 1 immunology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Tampão nasal, choque e eritrodermia: como a toxina age?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tampão nasal, choque e eritrodermia: como a toxina age?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

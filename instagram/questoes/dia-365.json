@@ -13,12 +13,12 @@
   "explicacao_em": "2027-11-02",
   "tom": "normal",
   "gancho": "Dia 365: formatura no ônibus, *e o Macrô traz a última*",
-  "gancho_apoio": "Novembro Azul e encerramento do programa. Febre, dor perineal e um toque muito doloroso.",
+  "gancho_apoio": "Novembro Azul e encerramento do programa: uma última questão para fechar o ano.",
   "imagem": {
     "arquivo": "dia-365.png",
-    "cena": "O ônibus Road to America estacionado com balões e laço azul, os seis personagens de beca na porta; na frente, Macrô segura um canudo de diploma sem texto e, escondido atrás dele, um micróbio misterioso, coberto por capelo e beca, pede a última questão.",
+    "cena": "O ônibus Road to America parado numa festa de formatura com balões; na porta, o Macrô, de capelo, segura um canudo de diploma sem texto, e um micróbio misterioso, escondido sob uma beca pequena, espia atrás dele. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dia 365: formatura no ônibus, e o Macrô traz a última"
+    "alt": "Macrô, de capelo, segura um diploma na porta do ônibus Road to America, com um micróbio escondido atrás dele."
   },
   "imagem_macete": {
     "arquivo": "dia-365-macete.png",
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia 365! Ônibus de formatura, os seis personagens de beca e uma última questão do Macrô, no começo do Novembro Azul. Febre, dor perineal e próstata quente e dolorosa ao toque. Qual é o germe?",
+    "contexto": "Dia 365! Formatura no ônibus, os seis personagens de beca e uma última questão do Macrô, no começo do Novembro Azul. Foram 365 vinhetas, muitas madrugadas e nenhum NBME a menos na sua vida; obrigado por embarcar. Quatro germes no último quiz, e a idade e o exame da vinheta decidem.",
     "palavras_chave": [
-      "fever and chills",
-      "perineal pain",
-      "tender boggy prostate",
-      "pyuria"
+      "men's health",
+      "urology",
+      "fever",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "64 anos, febre e próstata quente e dolorosa no toque: qual agente?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "64 anos, febre e próstata quente e dolorosa no toque: qual agente?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

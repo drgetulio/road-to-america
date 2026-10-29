@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-07",
   "tom": null,
-  "gancho": "Seis espetos em dez minutos e o balão-coração afundando depois de cada um. *Garçom, e agora?*",
-  "gancho_apoio": null,
+  "gancho": "Sala de parto às 4 da tarde e *o garçom não sabe qual espeto servir*",
+  "gancho_apoio": "Traçado no inglês da prova: a pegadinha mora na preposição. Leia \"before\", \"after\" e \"with\" com calma.",
   "imagem": {
     "arquivo": "dia-186.png",
-    "cena": "No rodízio, o Garçom Espetinho chega correndo com seis espetos de uma vez. Na cadeira, um balão em forma de coração dá uma afundadinha sempre logo depois que cada espeto passa. Ao lado da mesa, um soro pendurado com uma torneirinha aberta, e a plaquinha verde e vermelha de lado.",
+    "cena": "No rodízio, o Garçom Espetinho para diante de uma mesa com um monitor de traçado em branco e segura os espetos no alto, pensativo. A plaquinha verde e vermelha está de lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O garçom chega com seis espetos de uma vez e o balão-coração afunda depois de cada um"
+    "alt": "O Garçom Espetinho, pensativo, diante de um monitor de traçado em branco"
   },
   "imagem_macete": {
     "arquivo": "dia-186-macete.png",
-    "cena": "O Garçom Espetinho fecha a torneirinha do soro, vira a cadeira para o lado esquerdo e mostra o lado vermelho da plaquinha para os espetos extras. O balão-coração volta a flutuar alto e firme.",
-    "alt": "Desaceleração tardia: para a ocitocina e vira de lado"
+    "cena": "Callback: o Garçom Espetinho fecha a torneirinha de um soro pendurado e vira a cadeira para o lado esquerdo; um balão em forma de coração volta a flutuar alto e firme. Fundo limpo.",
+    "alt": "O garçom fecha a torneirinha do soro e vira a cadeira para a esquerda; o balão-coração volta a flutuar"
   },
   "questao": {
     "vinheta": "A 30-year-old primigravida in active labor at 39 weeks' gestation is receiving oxytocin augmentation. Six contractions occur every 10 minutes. Fetal heart tracing shows a baseline of 140/min, minimal variability, and recurrent decelerations whose nadir follows the peak of each contraction.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Perform an immediate cesarean delivery",
-        "quiz": "Cesárea imediata"
+        "quiz": "Immediate cesarean delivery"
       },
       "B": {
-        "texto": "Increase oxytocin to shorten labor",
-        "quiz": "Aumentar ocitocina"
+        "texto": "Increase the oxytocin infusion to shorten labor",
+        "quiz": "Increase oxytocin"
       },
       "C": {
         "texto": "Stop oxytocin and turn her to the left side",
-        "quiz": "Parar ocitocina"
+        "quiz": "Stop oxytocin; turn left"
       },
       "D": {
         "texto": "Start amnioinfusion through a catheter",
-        "quiz": "Amnioinfusão"
+        "quiz": "Amnioinfusion"
       }
     },
     "correta": "C"
@@ -72,17 +72,17 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na obstetrícia: ocitocina correndo, seis contrações a cada dez minutos e um traçado que desce sempre depois do pico. Qual é o primeiro movimento da equipe?",
+    "contexto": "Rodízio de Quinta na obstetrícia: trabalho de parto, um traçado na tela e quatro condutas no espeto. O que define a primeira é a relação entre as contrações e as desacelerações, descrita na vinheta.",
     "palavras_chave": [
-      "active labor",
-      "oxytocin augmentation",
-      "frequent contractions",
-      "fetal heart tracing"
+      "labor and delivery",
+      "fetal heart tracing",
+      "intrapartum management",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "Desacelera depois do pico, com ocitocina: o que fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Desacelera depois do pico, com ocitocina: o que fazer?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

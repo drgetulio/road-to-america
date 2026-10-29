@@ -7,24 +7,25 @@
   "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
   "topico": "Entrevista motivacional",
   "conceito": "Motivational interviewing: open questions and reflective listening draw out the patient own reasons",
-  "personagem": "Viés",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-27",
   "tom": null,
-  "gancho": "\"Eu sei, doutor, mas é o que me relaxa.\" *Qual frase não vira sermão?*",
+  "gancho": "Ele disse \"eu sei, doutor\". *Qual é a sua próxima frase?*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-237.png",
-    "cena": "Um carrinho navy parado numa bifurcação, com duas placas verdes sem texto. Atrás, um caminhão vermelho de buzina enorme. No painel do carro, um GPS apagado, e num outdoor ao lado o Viés espia de trás de uma tabela 2x2 em branco.",
+    "cena": "Um carrinho navy parado numa bifurcação, com duas placas verdes sem texto; Dona Bússola, no painel, gira o ponteiro devagar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Carrinho parado numa bifurcação com um caminhão buzinando atrás e o Viés no outdoor"
+    "alt": "Carrinho parado numa bifurcação, com Dona Bússola no painel"
   },
   "imagem_macete": {
     "arquivo": "dia-237-macete.png",
-    "cena": "Callback: o GPS acende e mostra um espelhinho que reflete as duas estradas ao mesmo tempo; o caminhão buzinador ficou para trás, pequeno, e o carrinho começa a virar por vontade própria para uma das saídas. O Viés, sem briga para alimentar, some atrás do outdoor.",
+    "cena": "Callback: o painel mostra um espelhinho que reflete as duas estradas ao mesmo tempo, e o carrinho começa a virar por vontade própria; Dona Bússola sorri, com o ponteiro calmo. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Entrevista motivacional: refletir os dois lados"
+    "alt": "O espelhinho do painel reflete as duas estradas e o carrinho vira sozinho"
   },
   "questao": {
     "vinheta": "A 52-year-old man who smokes 1 pack of cigarettes daily says, \"I know I should quit, but smoking is the only thing that helps me relax after work.\" He has never tried to quit.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "\"You need to quit now, or you will get lung cancer.\"",
-        "quiz": "Pare agora!"
+        "quiz": "Quit now or get cancer"
       },
       "B": {
         "texto": "\"Smoking helps you unwind, and part of you wants to quit.\"",
-        "quiz": "Alivia, mas pensa em largar"
+        "quiz": "Reflect both sides"
       },
       "C": {
         "texto": "\"Why haven't you quit yet if you know it's harmful?\"",
-        "quiz": "Por que não parou?"
+        "quiz": "Why haven't you quit?"
       },
       "D": {
         "texto": "\"I'll prescribe varenicline, and we'll set a quit date today.\"",
-        "quiz": "Vareniclina hoje"
+        "quiz": "Varenicline today"
       }
     },
     "correta": "B"
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "Na entrevista motivacional, *o paciente dirige e o médico é o GPS que reflete*",
       "apoio": "Na imagem, o carro está numa bifurcação e o caminhão de trás buzina (o confronto), o que só atrapalha. O GPS não manda: mostra as duas estradas num espelho, e o motorista escolhe.",
-      "fala": "Se você confrontou, eu entrei: a resistência sobe e você jura que foi o paciente."
+      "fala": "Meu norte é o paciente. Sermão não é intervenção: se fosse, a sua mãe já tinha resolvido tudo em 2019."
     }
   },
   "legenda": {
-    "contexto": "Fumante de um maço por dia diz: eu sei que deveria parar, mas o cigarro é a única coisa que me relaxa depois do trabalho. Qual frase ajuda a mudança a sair dele?",
+    "contexto": "Sábado Sem Viés com a Dona Bússola, na comunicação. Um fumante diz uma frase que todo médico já ouviu, e ela está na vinheta. Qual é a resposta mais adequada?",
     "palavras_chave": [
       "smoking",
-      "stress relief",
-      "behavior change",
-      "communication"
+      "communication",
+      "primary care",
+      "Step 1 behavioral science"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Fumante que \"sabe que deveria parar\": qual frase?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fumante que \"sabe que deveria parar\": qual frase?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

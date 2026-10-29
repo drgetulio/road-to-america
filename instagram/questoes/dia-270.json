@@ -14,18 +14,18 @@
   "explicacao_em": "2027-07-30",
   "tom": null,
   "gancho": "Rodízio do trauma: cinco espetos na mão e *o garçom travou*",
-  "gancho_apoio": "Respiração gorgolejante, Glasgow 7, pressão no limite e uma coxa deformada. Por onde começar?",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-270.png",
-    "cena": "O Garçom Espetinho está paralisado diante de uma mesa com um carrinho de brinquedo amassado em cima da toalha, segurando cinco espetos de cores diferentes abertos como um leque de cartas, com gotinhas de suor na cabeça redonda, sem saber qual servir primeiro. A plaquinha verde e vermelha está de lado, perto da cesta de pão de queijo.",
+    "cena": "O Garçom Espetinho, com gotinhas de suor na cabeça redonda, segura cinco espetos de cores diferentes abertos como um leque de cartas, sem saber qual servir primeiro. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho com cinco espetos e um carrinho amassado na mesa"
+    "alt": "O garçom segura cinco espetos em leque, sem saber qual servir primeiro"
   },
   "imagem_macete": {
     "arquivo": "dia-270-macete.png",
-    "cena": "O garçom serve, confiante, o primeiro espeto, que traz um tubo de respirar curvo com um colar cervical acolchoado encaixado como um anel; os outros quatro espetos esperam em fila, na ordem, e a plaquinha mostra o verde. O carrinho de brinquedo na mesa parece aliviado.",
+    "cena": "Callback: o garçom serve, confiante, o primeiro espeto, que traz um tubo de respirar curvo com um colar cervical acolchoado encaixado como um anel, e os outros quatro esperam em fila. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Via aérea com colar vem primeiro"
+    "alt": "O primeiro espeto traz o tubo de respirar com o colar cervical; os outros esperam em fila"
   },
   "questao": {
     "vinheta": "A 30-year-old man arrives after a high-speed car crash. He moans, his breathing is gurgling, and there is blood in the oropharynx. Glasgow Coma Scale score is 7, blood pressure 96/60 mm Hg, and pulse 118/min. His left thigh is deformed, without external bleeding.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Splint the left femur",
-        "quiz": "Imobilizar o fêmur"
+        "quiz": "Splint the femur"
       },
       "B": {
-        "texto": "Secure the airway with cervical spine protection",
-        "quiz": "Via aérea + colar"
+        "texto": "Airway with cervical spine motion restriction",
+        "quiz": "Airway + C-spine"
       },
       "C": {
         "texto": "Noncontrast CT of the head",
-        "quiz": "TC de crânio"
+        "quiz": "Head CT"
       },
       "D": {
         "texto": "Focused assessment with sonography for trauma",
-        "quiz": "FAST"
+        "quiz": "FAST exam"
       }
     },
     "correta": "B"
@@ -53,13 +53,13 @@
   "explicacao": {
     "titulo": "*Via aérea* com colar vem primeiro",
     "certa": [
-      "Na avaliação primária (*primary survey*) do *ATLS*, a ordem é ABCDE, e o A vem sempre junto da proteção da coluna cervical: *airway with cervical spine motion restriction*. Respiração gorgolejante, sangue na orofaringe e Glasgow de 8 ou menos indicam via aérea definitiva, com intubação e estabilização manual do pescoço. Circulação, imagem e fratura vêm depois, mesmo que a equipe trabalhe em paralelo."
+      "Na 11ª edição do *ATLS*, a avaliação primária (*primary survey*) segue a sequência *xABCDE*: o x é o controle da hemorragia externa exsanguinante, que aqui não existe (a coxa está deformada, sem sangramento externo). Então o primeiro passo é o A, junto da restrição de movimento da coluna cervical: *airway with cervical spine motion restriction*. Respiração gorgolejante, sangue na orofaringe e Glasgow de 8 ou menos pedem aspiração e via aérea definitiva, com intubação e estabilização manual do pescoço. Circulação, imagem e fratura vêm depois, mesmo que a equipe trabalhe em paralelo."
     ],
     "termos": [
       "primary survey",
-      "airway with cervical spine protection",
-      "definitive airway",
-      "ABCDE"
+      "xABCDE",
+      "cervical spine motion restriction",
+      "definitive airway"
     ],
     "erradas": {
       "A": "Imobilizar o fêmur ajuda a reduzir sangramento e dor, mas vem depois da via aérea.",
@@ -68,17 +68,17 @@
     },
     "macete": {
       "frase": "No rodízio do trauma, o *primeiro espeto* já vem *com colar*",
-      "apoio": "O garçom serve os espetos na ordem A, B, C, D e E, e o primeiro, a via aérea, já vem com o colar cervical encaixado. Ninguém pula para a picanha da tomografia antes do pão de queijo da via aérea.",
-      "fala": "Vai uma conduta aí, doutor? Primeiro o pão de queijo da via aérea."
+      "apoio": "O garçom serve na ordem x, A, B, C, D e E: o x, o sangramento externo que mata, só entra quando existe; sem ele, o primeiro espeto é a via aérea, com o colar cervical encaixado. Ninguém pula para a picanha da tomografia antes do pão de queijo da via aérea.",
+      "fala": "Vai uma conduta aí, doutor? No trauma, o ABC não é sugestão de ordem alfabética do Anki: é a ordem."
     }
   },
   "legenda": {
-    "contexto": "Acidente de carro, respiração gorgolejante, Glasgow 7 e uma coxa deformada. Qual é a primeira coisa a fazer?",
+    "contexto": "Rodízio de Quinta no trauma, com o Garçom Espetinho. Um acidente de carro, um exame inicial e sinais vitais descritos na vinheta, e quatro condutas no espeto. Por onde começar?",
     "palavras_chave": [
-      "high-speed crash",
-      "gurgling breathing",
-      "GCS 7",
-      "femur deformity"
+      "trauma",
+      "car crash",
+      "emergency department",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Gorgolejo, Glasgow 7 e fêmur deformado: qual é o primeiro passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gorgolejo, Glasgow 7 e fêmur deformado: qual é o primeiro passo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

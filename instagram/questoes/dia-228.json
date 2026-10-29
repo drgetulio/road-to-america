@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-18",
   "tom": null,
-  "gancho": "Dor súbita no treino, massa de 7 cm e *um Doppler tímido*: o que o garçom serve?",
-  "gancho_apoio": "Dor súbita, massa no ovário e fluxo diminuído. Qual é o próximo passo?",
+  "gancho": "Rodízio de Quinta na ginecologia: *uma dor que começou no treino*",
+  "gancho_apoio": "Na vinheta de GO, \"urine hCG is negative\" é a primeira coisa que você procura.",
   "imagem": {
     "arquivo": "dia-228.png",
-    "cena": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um guardanapo dobrado espera em cima da mesa. A plaquinha verde e vermelha está de lado.",
+    "cena": "No rodízio, o Garçom Espetinho segura um espeto de onde pende um balão redondo por uma cordinha e olha o relógio. A plaquinha verde e vermelha está de lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O garçom segura um balão que perde a cor na ponta de um espeto"
+    "alt": "O garçom segura um balão pendurado num espeto e olha o relógio"
   },
   "imagem_macete": {
     "arquivo": "dia-228-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Urgent laparoscopy with detorsion",
-        "quiz": "Laparoscopia já"
+        "quiz": "Urgent laparoscopy"
       },
       "B": {
         "texto": "CT of the abdomen and pelvis",
-        "quiz": "Tomografia"
+        "quiz": "CT abdomen/pelvis"
       },
       "C": {
         "texto": "Intramuscular methotrexate",
-        "quiz": "Metotrexato"
+        "quiz": "IM methotrexate"
       },
       "D": {
         "texto": "Analgesia and repeat ultrasound in 6 weeks",
-        "quiz": "Repetir US em 6 sem"
+        "quiz": "Repeat US in 6 weeks"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dor súbita e forte no lado direito durante o treino, náuseas, vômitos, beta-hCG negativo e massa de 7 cm no ovário direito com fluxo reduzido no Doppler. Qual é o próximo passo?",
+    "contexto": "Rodízio de Quinta na ginecologia, com o Garçom Espetinho. Uma dor forte que começou de repente, um exame de urina e um ultrassom descritos na vinheta. Qual é o próximo passo?",
     "palavras_chave": [
-      "sudden pelvic pain",
-      "after exercise",
-      "ovarian mass",
-      "Doppler flow"
+      "pelvic pain",
+      "gynecology",
+      "ultrasound",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Massa ovariana de 7 cm e pouco fluxo: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Massa ovariana de 7 cm e pouco fluxo: qual conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

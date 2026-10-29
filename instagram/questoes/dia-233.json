@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-23",
   "tom": null,
-  "gancho": "Febre, sopro novo e *uma pressa danada* de tratar",
-  "gancho_apoio": "Paciente estável, sopro novo e febre há cinco dias. Qual é o primeiro passo?",
+  "gancho": "Plantão de Terça: febre há cinco dias e *uma ordem que importa*",
+  "gancho_apoio": "Às 3 da manhã, o residente quer prescrever, a enfermeira quer o pedido assinado e a Dona Térmica quer café.",
   "imagem": {
     "arquivo": "dia-233.png",
-    "cena": "Padaria de bairro ao amanhecer, com o relógio sem números ainda marcando 3 horas. Dona Térmica, de avental, segura a porta: lá fora, um caminhão de entrega buzina, ansioso para entrar, enquanto o forno ainda está aceso. Ao fundo, uma montanha com um megafone no topo.",
+    "cena": "Padaria de bairro ao amanhecer, com o relógio sem números ainda marcando 3 horas. Dona Térmica, de avental, segura a porta enquanto um caminhão de entrega buzina lá fora. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Dona Térmica segura a porta da padaria enquanto o caminhão de entrega buzina"
   },
   "imagem_macete": {
     "arquivo": "dia-233-macete.png",
-    "cena": "Três bandejas de pães saem do forno e ficam em fila no balcão; só então o caminhão entra. Ao fundo, o megafone da montanha solta uma onda de som que volta como eco, e Dona Térmica confere as três bandejas, satisfeita.",
+    "cena": "Callback: três bandejas de pães saem do forno e ficam em fila no balcão; só então o caminhão de entrega entra, e Dona Térmica confere as três, satisfeita. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Endocardite: hemocultura antes do antibiótico"
+    "alt": "Três bandejas de pães em fila antes de o caminhão entrar"
   },
   "questao": {
     "vinheta": "A 34-year-old man has had fever for 5 days. He injects heroin daily. Temperature is 39.1°C, blood pressure 124/76 mm Hg, and pulse 104/min. He is alert. A new holosystolic murmur at the left lower sternal border increases with inspiration. He has splinter hemorrhages.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Transesophageal echocardiography before cultures",
-        "quiz": "ETE antes"
+        "quiz": "TEE before cultures"
       },
       "B": {
         "texto": "Immediate IV vancomycin, with cultures later",
-        "quiz": "Vanco antes"
+        "quiz": "IV vancomycin first"
       },
       "C": {
-        "texto": "Three sets of blood cultures from separate venipunctures",
-        "quiz": "3 hemoculturas"
+        "texto": "Three blood culture sets from separate sites",
+        "quiz": "3 blood culture sets"
       },
       "D": {
         "texto": "Urgent tricuspid valve replacement",
-        "quiz": "Troca de valva"
+        "quiz": "Tricuspid valve surgery"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Febre há cinco dias, sopro holossistólico novo que aumenta na inspiração, hemorragias em lasca e uso de drogas injetáveis. Ele está estável. Qual é o primeiro passo com ele estável?",
+    "contexto": "Plantão de Terça na cardiologia, com a Dona Térmica. Febre há dias, um achado novo no exame físico e sinais vitais descritos na vinheta. Qual é o primeiro passo?",
     "palavras_chave": [
       "fever",
-      "heroin injection",
-      "new murmur",
-      "splinter hemorrhages"
+      "heart murmur",
+      "emergency department",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Usa drogas IV, sopro novo e está estável: 1º passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Usa drogas IV, sopro novo e está estável: 1º passo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

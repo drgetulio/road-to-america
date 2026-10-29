@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-19",
   "tom": null,
-  "gancho": "Bactéria em espiral de *luva de goleiro*: quem marca?",
-  "gancho_apoio": "Teste respiratório positivo e um macrolídeo no ano passado. Qual esquema entra em campo?",
+  "gancho": "Sextou na Farmácia em clima de Copa: *a escalação certa* contra uma bactéria teimosa",
+  "gancho_apoio": "Esquema de H. pylori é a escalação que todo estudante sabe de cor e erra a duração.",
   "imagem": {
     "arquivo": "dia-229.png",
-    "cena": "Tia Meia-Vida transformou o balcão da farmácia num banco de reservas de futebol. No gramadinho em frente, uma bactéria em espiral, de luva de goleiro, defende sozinha o chute de uma bola em forma de comprimido, e uma camisa do ano passado está pendurada no varal.",
+    "cena": "Tia Meia-Vida transformou o balcão num banco de reservas de futebol e olha, pensativa, uma prancheta de escalação em branco. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida no banco de reservas vê uma bactéria em espiral defender um chute"
+    "alt": "Tia Meia-Vida, no banco de reservas, olha uma prancheta de escalação em branco"
   },
   "imagem_macete": {
     "arquivo": "dia-229-macete.png",
-    "cena": "Callback: do banco de reservas entram quatro jogadores juntos: um escudo azul (o IBP), um frasco rosa (o bismuto), uma taça dourada (a tetraciclina, do tetra) e um comprimido vermelho (o metronidazol). A espiral não consegue defender os quatro chutes ao mesmo tempo. A Tia Meia-Vida apita do banco.",
+    "cena": "Callback: quatro jogadores entram juntos do banco (um escudo azul, um frasco rosa, uma taça dourada e um comprimido vermelho), e a bactéria em espiral de luva de goleiro não defende os quatro chutes. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Macrolídeo no passado: quádrupla com bismuto"
+    "alt": "Quatro jogadores entram juntos e a bactéria em espiral não defende os quatro chutes"
   },
   "questao": {
     "vinheta": "A 49-year-old woman has had epigastric discomfort for 2 months. A urea breath test is positive for Helicobacter pylori. She took clarithromycin for sinusitis last year. She has no drug allergies and takes no medications.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "PPI, clarithromycin, and amoxicillin for 14 days",
-        "quiz": "IBP + clari + amoxi"
+        "quiz": "PPI + clari + amox"
       },
       "B": {
-        "texto": "PPI, levofloxacin, and amoxicillin for 10 days",
-        "quiz": "IBP + levo + amoxi"
+        "texto": "PPI, levofloxacin, and amoxicillin for 10 to 14 days",
+        "quiz": "PPI + levo + amox"
       },
       "C": {
-        "texto": "PPI, bismuth, tetracycline, and metronidazole for 14 days",
-        "quiz": "Quádrupla c/ bismuto"
+        "texto": "PPI, bismuth, tetracycline, metronidazole, 14 days",
+        "quiz": "Bismuth quadruple"
       },
       "D": {
         "texto": "PPI alone for 8 weeks",
-        "quiz": "Só IBP"
+        "quiz": "PPI alone, 8 weeks"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Desconforto no estômago há dois meses, teste respiratório da ureia positivo para H. pylori e claritromicina para sinusite no ano passado. Na farmácia, a escalação precisa vencer a resistência.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um teste positivo e uma história clínica descrita na vinheta. É ela que escolhe a escalação.",
     "palavras_chave": [
-      "epigastric discomfort",
+      "Helicobacter pylori",
       "urea breath test",
-      "prior macrolide use",
-      "treatment choice"
+      "antibiotic regimen",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "H. pylori e macrolídeo prévio: qual esquema?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "H. pylori e macrolídeo prévio: qual esquema?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

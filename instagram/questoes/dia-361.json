@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-29",
   "tom": null,
-  "gancho": "Primeira ITU febril aos 9 meses: *qual vistoria* o Seu Néfron pede?",
-  "gancho_apoio": "Bebê com a primeira infecção urinária com febre, já melhorando com antibiótico.",
+  "gancho": "O carrinho de brinquedo chegou para vistoria: *o Seu Néfron pede o quê?*",
+  "gancho_apoio": "Rodízio de Quinta com o Seu Néfron: quatro espetos de exame e uma vistoria.",
   "imagem": {
     "arquivo": "dia-361.png",
-    "cena": "Seu Néfron numa mesa de vistoria analisa um carrinho de brinquedo em forma de rim com uma bandeirinha de termômetro; o Garçom Espetinho oferece quatro espetos com ícones: onda sonora, gota de contraste com tubinho, estrela brilhante e calendário de comprimidos; a plaquinha verde e vermelha no avental do garçom.",
+    "cena": "Seu Néfron numa mesa de vistoria analisa um carrinho de brinquedo em forma de rim; ao lado, num suporte, quatro espetos com ícones: onda sonora, gota de contraste com tubinho, estrela brilhante e calendário de comprimidos; a plaquinha verde e vermelha num canto.",
     "foco": "50% 35%",
-    "alt": "Primeira ITU febril aos 9 meses: qual vistoria o Seu Néfron pede?"
+    "alt": "O carrinho de brinquedo chegou para vistoria: o Seu Néfron pede o quê?"
   },
   "imagem_macete": {
     "arquivo": "dia-361-macete.png",
@@ -31,20 +31,20 @@
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Renal and bladder ultrasonography",
-        "quiz": "Ultrassom renal"
+        "texto": "Renal and bladder ultrasound",
+        "quiz": "Renal-bladder ultrasound"
       },
       "B": {
         "texto": "Voiding cystourethrography",
-        "quiz": "Uretrocistografia"
+        "quiz": "Voiding cystourethrogram"
       },
       "C": {
         "texto": "DMSA renal scan",
-        "quiz": "Cintilografia DMSA"
+        "quiz": "DMSA scan"
       },
       "D": {
         "texto": "Daily antibiotic prophylaxis",
-        "quiz": "Profilaxia diária"
+        "quiz": "Daily prophylaxis"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Bebê de 9 meses, primeira infecção urinária febril, urina colhida por sonda e melhora em 48 horas com cefalexina. Que exame pedir agora?",
+    "contexto": "Rodízio de Quinta, mesa da pediatria: o Seu Néfron recebeu um carrinho para vistoria e o Garçom Espetinho trouxe quatro espetos de exame. A vinheta diz se é a primeira vez ou se é reincidência, e isso muda tudo.",
     "palavras_chave": [
-      "9-month-old",
-      "first febrile UTI",
-      "E. coli",
-      "good response to treatment"
+      "pediatric urology",
+      "infant",
+      "urinary tract infection",
+      "imaging choice"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "1ª ITU febril aos 9 meses, já melhorando com antibiótico: o que fazer agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "1ª ITU febril aos 9 meses, já melhorando com antibiótico: o que fazer agora?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

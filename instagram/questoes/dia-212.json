@@ -7,24 +7,25 @@
   "sistema": "Sistema respiratório",
   "topico": "Sarcoidose",
   "conceito": "Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-02",
   "tom": null,
-  "gancho": "Ombreira dos anos 80 no raio X *e cálcio sobrando*",
-  "gancho_apoio": "Tosse seca, nódulos nas canelas e cálcio alto. Que diagnóstico junta tudo?",
+  "gancho": "Plantão de Terça: tosse há três meses e *uma biópsia que chegou de madrugada*",
+  "gancho_apoio": "Três cafés depois, o laudo ainda tem quatro hipóteses e a Dona Térmica tem uma.",
   "imagem": {
     "arquivo": "dia-212.png",
-    "cena": "Padaria de madrugada, com o relógio sem números marcando 3 horas. Atrás do balcão, o Macrô tira do forno uma fornada de pães de queijo. Na frente, um par de pulmões simpáticos, de ombreiras enormes e simétricas no estilo festa dos anos 80, escolhe um salgado. No balcão, uma cestinha com pedaços de giz branco.",
+    "cena": "Padaria de madrugada, com o relógio sem números marcando 3 horas. Dona Térmica, de prancheta, observa uma fornada de pães de queijo saindo do forno. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô serve pão de queijo a um par de pulmões com ombreiras dos anos 80"
+    "alt": "Dona Térmica observa uma fornada de pães de queijo saindo do forno de madrugada"
   },
   "imagem_macete": {
     "arquivo": "dia-212-macete.png",
-    "cena": "O pulmão de ombreiras morde o pão de queijo e descobre que o miolo está vazio, sem queijo nenhum. O Macrô, orgulhoso, mostra que a massa do pão é feita de cópias dele mesmo, e ao lado acende uma lâmpada em forma de sol (a vitamina D ativada) enquanto a cestinha de giz transborda.",
+    "cena": "Callback: um pão de queijo aberto mostra o miolo vazio, sem queijo nenhum, e a massa é feita de cópias do Macrô; ao lado, uma lâmpada em forma de sol (a vitamina D ativada) acende. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Granuloma sem caseificação e cálcio alto"
+    "alt": "O pão de queijo aberto está vazio por dentro e feito de Macrôs; uma lâmpada-sol acende"
   },
   "questao": {
     "vinheta": "A 36-year-old woman has had a dry cough and exertional dyspnea for 3 months. She has tender red nodules on both shins. Chest x-ray shows bilateral hilar lymphadenopathy. Serum calcium is 11.2 mg/dL. Transbronchial biopsy shows noncaseating granulomas; acid-fast and fungal stains are negative.",
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "Sarcoidose é *pão de queijo sem queijo*: granuloma sem caseificação. Quem faz a massa é o Macrô (o macrófago epitelioide), que ainda ativa vitamina D por conta própria e deixa o *cálcio sobrando*.",
       "apoio": "O NBME junta adenopatia hilar bilateral, eritema nodoso e cálcio alto; granuloma sem caseificação com pesquisa de BAAR e de fungos negativa fecha o quadro. A hipercalcemia vem da 1-alfa-hidroxilase do macrófago.",
-      "fala": "Comi, mostrei, avisei... e ainda fiz vitamina D sem receita."
+      "fala": "Já vi esse caso às 3 da manhã: o Macrô fez vitamina D sem receita."
     }
   },
   "legenda": {
-    "contexto": "Tosse seca há meses, nódulos vermelhos e doloridos nas canelas, linfonodos dos dois lados do hilo e cálcio alto. A biópsia mostrou granulomas e as colorações vieram negativas. Qual é o diagnóstico?",
+    "contexto": "Plantão de Terça na pneumologia, com a Dona Térmica. Tosse seca há meses, um raio X, um exame de sangue e uma biópsia descritos na vinheta. As colorações especiais têm a última palavra.",
     "palavras_chave": [
-      "dry cough",
-      "tender shin nodules",
-      "hilar adenopathy",
-      "hypercalcemia"
+      "chronic cough",
+      "chest x-ray",
+      "transbronchial biopsy",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Hilo bilateral, eritema nodoso e cálcio alto: o que é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hilo bilateral, eritema nodoso e cálcio alto: o que é?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

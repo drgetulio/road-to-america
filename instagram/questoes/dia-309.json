@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-09-07",
   "tom": null,
-  "gancho": "Plástico bolha relaxa todo mundo, *menos quando está dentro da coxa*",
-  "gancho_apoio": "Acidente de moto, terra na ferida e o Macrô chegou para um plantão sem colegas de defesa.",
+  "gancho": "Bicho de Segunda no galpão: *um bastão gigante tomou conta do sofá*",
+  "gancho_apoio": "Acidente de moto, terra na ferida e quatro toxinas na lista de suspeitas.",
   "imagem": {
     "arquivo": "dia-309.png",
-    "cena": "Macrô num galpão de entregas, com a comanda em branco no bolso, olha um bastão retangular gigante, em forma de vagão, sentado num sofá listrado em forma de fibra muscular cujas almofadas são de plástico bolha e estalam; a fileira de cadeiras das células de defesa está vazia; no chão, a marca de pneu de moto na lama.",
+    "cena": "Macrô num galpão de entregas, com a comanda em branco no bolso, olha um bastão retangular gigante, em forma de vagão, sentado num sofá listrado; ao lado, uma porta de garagem entreaberta.",
     "foco": "50% 35%",
-    "alt": "Plástico bolha relaxa todo mundo, menos quando está dentro da coxa"
+    "alt": "Macrô e um bastão gigante num galpão de entregas"
   },
   "imagem_macete": {
     "arquivo": "dia-309-macete.png",
@@ -31,20 +31,20 @@
     "pergunta": "Which virulence factor most directly causes the tissue destruction?",
     "alternativas": {
       "A": {
-        "texto": "Lecithinase hydrolyzing membrane phospholipids",
-        "quiz": "Lecitinase"
+        "texto": "Lecithinase destroying cell membranes",
+        "quiz": "Lecithinase"
       },
       "B": {
         "texto": "ADP-ribosylation of elongation factor 2",
-        "quiz": "ADP-ribosila EF-2"
+        "quiz": "ADP-ribosylates EF-2"
       },
       "C": {
         "texto": "Blockade of acetylcholine release",
-        "quiz": "Bloqueia ACh"
+        "quiz": "Blocks ACh release"
       },
       "D": {
         "texto": "Blockade of glycine release by Renshaw cells",
-        "quiz": "Bloqueia glicina"
+        "quiz": "Blocks glycine release"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem com ferida suja de terra depois de um acidente de moto. Dois dias depois: dor que piora rápido, pele bronzeada com bolhas e crepitação. No Gram, bastonetes gram-positivos grandes e quase nenhum neutrófilo. Qual fator de virulência destrói o tecido?",
+    "contexto": "Bicho de Segunda no galpão: um bastão gigante se instalou no sofá e o Macrô quer saber que arma ele trouxe. Quatro toxinas na lista, duas delas de bactérias que moram na terra; a pele e o Gram da vinheta decidem.",
     "palavras_chave": [
-      "crush injury",
-      "soil contamination",
-      "bronze skin",
-      "large gram-positive rods"
+      "trauma",
+      "wound infection",
+      "anaerobes",
+      "microbiology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Crepitação, pele bronzeada e bastões grandes no Gram: qual a arma?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crepitação, pele bronzeada e bastões grandes no Gram: qual a arma?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

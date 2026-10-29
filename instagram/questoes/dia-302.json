@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "Common gamma chain of cytokine receptors",
-        "quiz": "Cadeia gama comum"
+        "quiz": "Common gamma chain"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Menino de 2 anos com otites, sinusites e uma pneumonia por Pneumocystis. A IgM está alta e o resto das imunoglobulinas quase sumiu, com linfócitos B e T em número normal. O Macrô virou roupeiro e quer saber qual peça falta no vestiário.",
+    "contexto": "Bicho de Segunda no vestiário: o Macrô virou roupeiro e ninguém troca de camisa. Quatro peças possíveis, e duas delas param a troca de camisa; a infecção que a vinheta conta separa as duas.",
     "palavras_chave": [
-      "recurrent sinopulmonary infections",
-      "Pneumocystis pneumonia",
-      "high IgM",
-      "normal B and T cells"
+      "recurrent infections",
+      "immunodeficiency",
+      "toddler",
+      "immunology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

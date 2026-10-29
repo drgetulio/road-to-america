@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-08-16",
   "tom": null,
-  "gancho": "Palma da mão coçando é dinheiro chegando? *Depois do transplante, não*",
-  "gancho_apoio": "Quatro semanas depois do transplante de medula: rash, diarreia e bilirrubina subindo. Qual é o diagnóstico?",
+  "gancho": "Casa nova, mudança recente e *o síndico já recebeu reclamação*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-287.png",
-    "cena": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam um trio de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
+    "cena": "Na calçada, diante de um caminhão de mudança, Macrô confere uma lista em branco de quem vai entrar na casa nova. Num canto, um vinil pequeno faz de calota do caminhão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô confere quem entra na casa nova depois da mudança"
+    "alt": "Macrô confere a lista de quem entra na casa nova, diante de um caminhão de mudança."
   },
   "imagem_macete": {
     "arquivo": "dia-287-macete.png",
-    "cena": "Dentro da casinha, as bolinhas azuis de óculos escuros entraram na casinha e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
+    "cena": "Callback: dentro da casinha, Macrô abre o alçapão do encanamento e acha o ralo da cozinha, em forma de fígado, entupido por tijolinhos, com a água subindo pela casa e uma balança de banheiro marcando a mais. O vinil brilha na calota do caminhão.",
     "foco": "50% 45%",
     "alt": "GVHD: T da doadora contra pele, fígado e intestino"
   },
   "questao": {
-    "vinheta": "A 9-year-old boy with chronic granulomatous disease receives an allogeneic hematopoietic stem cell transplant from his HLA-matched sister. Four weeks later, he develops a pruritic maculopapular rash on his palms and soles, profuse watery diarrhea, and a serum bilirubin of 4.6 mg/dL. Stool studies and serum hepatitis E RNA are negative.",
+    "vinheta": "A 9-year-old boy with chronic granulomatous disease receives busulfan conditioning and an allogeneic stem cell transplant from his sister. On day 14, he has tender hepatomegaly, ascites, a 6% weight gain, and a bilirubin of 4.2 mg/dL. He has no rash or diarrhea. Hepatitis E RNA is undetectable.",
     "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Invasive aspergillosis",
-        "quiz": "Aspergilose invasiva",
-        "dia": 260
+        "texto": "Acute graft-versus-host disease",
+        "quiz": "Acute GVHD",
+        "dia": 211
       },
       "B": {
-        "texto": "Acute graft-versus-host disease",
-        "quiz": "GVHD aguda",
-        "dia": 211
+        "texto": "Sinusoidal obstruction syndrome",
+        "quiz": "Sinusoidal obstruction"
       },
       "C": {
         "texto": "Chronic hepatitis E infection",
-        "quiz": "Hepatite E crônica",
+        "quiz": "Chronic hepatitis E",
         "dia": 281
       },
       "D": {
-        "texto": "Hepatic sinusoidal obstruction syndrome",
-        "quiz": "Obstrução sinusoidal"
+        "texto": "Invasive aspergillosis",
+        "quiz": "Invasive aspergillosis",
+        "dia": 260
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Pele, fígado e intestino: *T da doadora*",
+    "titulo": "Fígado grande e doído na 2ª semana: *sinusoide entupido*",
     "certa": [
-      "Rash em palmas e plantas, diarreia aquosa e bilirrubina subindo semanas depois de um *allogeneic stem cell transplant* são *acute graft-versus-host disease* (dia 211): os *donor T cells* da irmã reconhecem os antígenos do menino como estranhos e atacam pele, intestino e fígado. O transplante, que cura a doença granulomatosa crônica (dia 260), trouxe junto o exército da doadora."
+      "Fígado aumentado e doloroso, ascite, ganho de peso e bilirrubina subindo nas três primeiras semanas depois de um transplante com condicionamento por bussulfano formam a *sinusoidal obstruction syndrome* (a antiga doença veno-oclusiva). A quimioterapia do condicionamento lesa o *sinusoidal endothelium* do fígado, os sinusoides entopem e o sangue represa antes de atravessar o órgão: dor, hepatomegalia e retenção de líquido. É o intruso do domingo, e o tratamento dos casos graves é o *defibrotide*."
     ],
     "termos": [
-      "acute graft-versus-host disease",
-      "donor T cells",
-      "allogeneic stem cell transplant",
-      "skin, gut and liver"
+      "sinusoidal obstruction syndrome",
+      "busulfan conditioning",
+      "sinusoidal endothelial injury",
+      "defibrotide"
     ],
     "erradas": {
-      "A": "A aspergilose é a sombra da DGC (dia 260), mas dá nódulos no pulmão, não rash palmoplantar com diarreia.",
-      "C": "A hepatite E (dia 281) pode cronificar no imunossuprimido, mas o RNA veio negativo e ela não explica a pele.",
-      "D": "Intruso: a síndrome de obstrução sinusoidal costuma vir nas 3 primeiras semanas, com fígado grande, ascite e ganho de peso, sem rash nem diarreia."
+      "A": "A GVHD aguda (dia 211) também pega o fígado, mas costuma vir com rash e diarreia e dá icterícia colestática, sem ascite nem ganho de peso.",
+      "C": "A hepatite E (dia 281) só cronifica no imunossuprimido depois de meses de vírus no sangue, e aqui o RNA nem aparece.",
+      "D": "A aspergilose é a sombra da doença granulomatosa crônica (dia 260) e mira o pulmão; não explica fígado doído, ascite e ganho de peso em duas semanas."
     },
     "macete": {
-      "frase": "GVHD: *o hóspede briga com a casa*, na pele, no fígado e no intestino",
-      "apoio": "Na GVHD, quem chega com o enxerto são os linfócitos T da doadora, que estranham a casa nova e reclamam da parede (pele), do encanamento (intestino) e da cozinha (fígado). Aspergilose é a sombra da DGC, hepatite E pede RNA positivo e a obstrução sinusoidal vem antes, sem rash.",
-      "fala": "Comi, mostrei, avisei. Mas esses linfócitos vieram na mudança."
+      "frase": "*Ralo entupido antes do fígado*: hepatomegalia, ascite e balança subindo nas três primeiras semanas",
+      "apoio": "O condicionamento machuca o endotélio dos sinusoides, que entopem como ralo com cabelo. O sangue represa: fígado grande e doído, barriga d'água e quilos a mais, sem rash. GVHD pede pele e intestino, hepatite E crônica pede meses de vírus e a aspergilose mora no pulmão de quem tem doença granulomatosa crônica.",
+      "fala": "Comi, mostrei, avisei. Esse aí não veio na mudança: foi o encanamento."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 211, 260 e 281, mais um intruso. Um menino com doença granulomatosa crônica fez transplante de medula da irmã. Quatro semanas depois: coceira nas palmas, diarreia e bilirrubina subindo.",
+    "contexto": "Domingo de revisão: GVHD (dia 211), doença granulomatosa crônica (dia 260) e hepatite E (dia 281) voltaram, e um intruso entrou no caminhão de mudança. Quatro suspeitos na calçada, e o Macrô só tem a lista em branco e a vinheta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,9 +95,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Transplante há 4 semanas, rash nas palmas, diarreia e icterícia: qual é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Duas semanas após o transplante, fígado doído e ascite sem rash: qual diagnóstico?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -7,24 +7,25 @@
   "sistema": "Processos e doenças multissistêmicos",
   "topico": "Apoptose pela via intrínseca",
   "conceito": "Intrinsic apoptosis: BAX/BAK let cytochrome c leave the mitochondria, BCL-2 blocks it",
-  "personagem": "Mito",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-10",
   "tom": null,
-  "gancho": "Sem fator de crescimento, a célula ia embora. *Quem convenceu a ficar?*",
-  "gancho_apoio": "Um experimento com timócitos e uma proteína teimosa. O Mito sabe a resposta.",
+  "gancho": "Quarta do Porquê: uma proteína *que convence a célula a ficar*",
+  "gancho_apoio": "BCL-2 é aquele colega que te convence a não largar o Step faltando duas semanas.",
   "imagem": {
     "arquivo": "dia-220.png",
-    "cena": "Mito, de jaleco amassado e café, no quarto do plantão de madrugada, de braços cruzados na porta. Do lado de fora da parede, dois tipinhos com furadeiras olham para o relógio.",
+    "cena": "Seu Allen, de avental navy, segura uma célula de brinquedo desmontada em peças e procura qual delas segura o resto. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Sem fator de crescimento, a célula ia embora. Quem convenceu a ficar?"
+    "alt": "Seu Allen procura a peça que segura uma célula de brinquedo desmontada"
   },
   "imagem_macete": {
     "arquivo": "dia-220-macete.png",
-    "cena": "Callback: os dois tipinhos de furadeira tentam furar a parede, mas um porteiro forte, de braços abertos, segura a parede com um cadeado grande. Um disquinho vermelho fica guardado no bolso do Mito, que relaxa com o café.",
+    "cena": "Callback: dois tipinhos de furadeira tentam furar a parede de uma mitocôndria, e um porteiro forte (a BCL-2) segura a parede com um cadeado; o disquinho vermelho (o citocromo c) fica guardado lá dentro. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "BCL-2 é o porteiro da mitocôndria"
+    "alt": "Um porteiro forte segura com cadeado a parede da mitocôndria contra duas furadeiras"
   },
   "questao": {
     "vinheta": "Cultured thymocytes deprived of growth factors shrink, show nuclear condensation and fragmentation, and die without inflammation. Thymocytes engineered to overexpress BCL-2 survive under the same conditions.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Blocking Fas ligand binding to its death receptor",
-        "quiz": "Bloqueia Fas"
+        "quiz": "Blocks Fas ligand"
       },
       "B": {
         "texto": "Inhibiting perforin and granzyme entry into the cell",
-        "quiz": "Barra perforina"
+        "quiz": "Blocks perforin entry"
       },
       "C": {
         "texto": "Preventing BAX/BAK pores and cytochrome c release",
-        "quiz": "Segura citocromo c"
+        "quiz": "Holds cytochrome c in"
       },
       "D": {
         "texto": "Increasing ubiquitin-mediated degradation of p53",
-        "quiz": "Degrada p53"
+        "quiz": "Degrades p53"
       }
     },
     "correta": "C"
@@ -68,11 +69,11 @@
     "macete": {
       "frase": "Citocromo c saiu da Mito, *a célula pediu as contas*",
       "apoio": "Na imagem, BAX e BAK chegam de furadeira para abrir um buraco na parede do quarto do plantão, e a BCL-2 é o porteiro que segura a parede. Enquanto o crachá vermelho (o citocromo c) fica no bolso do Mito, ninguém vai embora.",
-      "fala": "Sem oxigênio eu não trabalho. Sem BCL-2, eu solto o citocromo c e a célula pede as contas."
+      "fala": "Sobrou peça? Então faltou mecanismo: sem BCL-2, o citocromo c sai e a célula pede as contas."
     }
   },
   "legenda": {
-    "contexto": "Num experimento, timócitos sem fator de crescimento encolhem, fragmentam o núcleo e morrem sem inflamação. As células que fabricam BCL-2 em excesso sobrevivem. Como essa proteína mantém a célula viva?",
+    "contexto": "Quarta do Porquê na patologia celular, com o Seu Allen. Um experimento com células em cultura, descrito na vinheta, e uma proteína que muda o destino delas. Como ela age?",
     "palavras_chave": [
       "cultured thymocytes",
       "growth factor withdrawal",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Como a BCL-2 mantém a célula viva?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Como a BCL-2 mantém a célula viva?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

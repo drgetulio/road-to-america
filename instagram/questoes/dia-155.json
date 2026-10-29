@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-06",
   "tom": null,
-  "gancho": "Na feira, o freguês em forma de vírgula pediu *água de arroz* tamanho família",
+  "gancho": "Bicho de Segunda na feira: o freguês *pediu a jarra maior*",
   "gancho_apoio": "Macrô já desconfiou. A pergunta é o que a toxina faz dentro do enterócito.",
   "imagem": {
     "arquivo": "dia-155.png",
-    "cena": "Numa barraca de feira, o Macrô, com a comanda em branco no bolso, observa um freguês em forma de vírgula pedir uma jarra gigante de água com grãos de arroz boiando. Atrás da barraca, uma torneira pinga e um interruptor de parede espera.",
+    "cena": "Numa barraca de feira, o Macrô atende um freguês tímido, escondido atrás de uma jarra gigante de água, enquanto uma torneira atrás da barraca pinga sem parar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô numa barraca de feira observa um freguês em forma de vírgula pedir uma jarra gigante de água de arroz."
+    "alt": "Macrô atende um freguês escondido atrás de uma jarra gigante de água; uma torneira pinga sem parar."
   },
   "imagem_macete": {
     "arquivo": "dia-155-macete.png",
-    "cena": "A bactéria em vírgula prende o interruptor na posição ligada com fita adesiva vermelha: a lâmpada não apaga e a torneira jorra. Macrô aponta para a fita; ao lado, um segundo interruptor com um pedalzinho de freio fica intacto (a Gi, que é da pertussis).",
-    "alt": "A vírgula prende o interruptor ligado com fita vermelha e a torneira jorra; Macrô aponta para a fita."
+    "cena": "Callback: uma bactéria em forma de vírgula prende um interruptor na posição ligada com fita adesiva vermelha, e a torneira jorra; o Macrô segura a ponta da fita com cara de flagra. Fundo limpo.",
+    "alt": "Uma bactéria em vírgula prende o interruptor ligado com fita vermelha e a torneira jorra; o Macrô flagra."
   },
   "questao": {
     "vinheta": "A 26-year-old aid worker returns from a flooded coastal region with sudden, painless, profuse watery diarrhea that looks like rice water. She has no fever and no blood in the stool. Stool culture grows curved, oxidase-positive, gram-negative rods on alkaline agar.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "ADP-ribosylation of Gs, keeping adenylyl cyclase on",
-        "quiz": "Gs ligado, cAMP alto"
+        "quiz": "Gs stuck on"
       },
       "B": {
         "texto": "ADP-ribosylation of Gi, removing inhibition of adenylyl cyclase",
-        "quiz": "Gi desligado"
+        "quiz": "Gi inhibited"
       },
       "C": {
         "texto": "Activation of guanylyl cyclase, raising cGMP",
-        "quiz": "cGMP alto"
+        "quiz": "Guanylyl cyclase on"
       },
       "D": {
         "texto": "Cleavage of 28S rRNA, halting protein synthesis",
-        "quiz": "Corta rRNA 60S"
+        "quiz": "28S rRNA cleaved"
       }
     },
     "correta": "A"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda na feira dos micróbios. O freguês de hoje chegou de uma região alagada e pede água de arroz. Sem febre, sem sangue e muita água. Como a toxina dele age?",
+    "contexto": "Bicho de Segunda na feira dos micróbios: uma voluntária volta de uma região alagada com uma diarreia que a vinheta descreve em detalhe, e uma cultura que entrega o bicho. Como a toxina dele age?",
     "palavras_chave": [
       "aid worker",
       "profuse watery diarrhea",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diarreia em água de arroz, sem febre nem sangue: como age a toxina?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia em água de arroz, sem febre nem sangue: como age a toxina?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

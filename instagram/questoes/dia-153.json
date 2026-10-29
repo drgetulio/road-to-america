@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-04",
   "tom": null,
-  "gancho": "O Viés foi pescar e voltou só com peixe *preguiçoso*",
+  "gancho": "O Viés foi pescar no *rastreamento* e voltou cheio de fama",
   "gancho_apoio": "Um programa de rastreamento parece salvar vidas, mas tem fantasma no barco.",
   "imagem": {
     "arquivo": "dia-153.png",
-    "cena": "O Viés pesca num barquinho de madeira num rio calmo, com a rede numa mão e um cronômetro na outra, meio escondido atrás de uma tabela 2x2 boiando. Na água nadam peixes de velocidades diferentes, e a rede ainda está vazia.",
+    "cena": "O Viés pesca num barquinho de madeira num rio calmo, de rede na mão, meio escondido atrás de uma tabela 2x2 que boia ao lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés pesca num barquinho com rede e cronômetro; no rio, peixes lentos e peixes ligeiros."
+    "alt": "O Viés pesca num barquinho de rede na mão, meio escondido atrás de uma tabela 2x2 que boia."
   },
   "imagem_macete": {
     "arquivo": "dia-153-macete.png",
-    "cena": "A rede volta cheia de peixes preguiçosos com casco de caracol, enquanto os peixes ligeiros passam zunindo entre duas redes. Uma fita métrica comprida na margem lembra o \"length\".",
-    "alt": "A rede volta cheia de peixes lentos com casco de caracol; os ligeiros passam entre as redes."
+    "cena": "Callback: a rede volta cheia de peixes preguiçosos com casco de caracol, enquanto os peixes ligeiros passam zunindo entre duas redes, e o Viés posa com o troféu de pescador. Fundo limpo.",
+    "alt": "A rede volta cheia de peixes lentos com casco de caracol; os ligeiros escapam; o Viés posa com troféu."
   },
   "questao": {
     "vinheta": "In a randomized trial of annual screening for a cancer, tumors found at screening visits are mostly low grade with long doubling times, whereas tumors diagnosed between screens are mostly high grade. Screen-detected patients survive longer, even after correcting for the earlier date of diagnosis.",
@@ -38,8 +38,8 @@
         "quiz": "Length-time bias"
       },
       "C": {
-        "texto": "Volunteer bias",
-        "quiz": "Volunteer bias"
+        "texto": "Healthy volunteer bias",
+        "quiz": "Healthy volunteer bias"
       },
       "D": {
         "texto": "Recall bias",
@@ -61,7 +61,7 @@
     ],
     "erradas": {
       "A": "O *lead-time bias* só adianta a data do diagnóstico, e a vinheta diz que a diferença persiste depois de corrigir esse adiantamento.",
-      "C": "O *volunteer bias* aparece quando quem escolhe se rastrear é mais saudável; aqui os dois grupos de tumor vêm do mesmo braço rastreado, e o que muda é a biologia do tumor.",
+      "C": "O viés do voluntário saudável (*healthy volunteer bias*) aparece quando quem escolhe se rastrear já é mais saudável; num ensaio randomizado, a sorte divide os grupos, e o que muda aqui é a biologia do tumor.",
       "D": "O *recall bias* depende de lembrar exposições passadas, típico de caso-controle, e não há questionário na vinheta."
     },
     "macete": {
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com o Viés pescando. Num ensaio de rastreamento, os tumores achados no exame são de baixo grau e os que aparecem entre um exame e outro são agressivos. Repare no tipo de tumor que cai na rede.",
+    "contexto": "Sábado Sem Viés com o Viés pescando. Um ensaio randomizado de rastreamento, uma sobrevida que parece ótima e um detalhe sobre o tipo de tumor que cada grupo encontra. O detalhe está na vinheta.",
     "palavras_chave": [
       "cancer screening trial",
       "tumor grade",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Rastreio acha tumor lento e o que surge entre exames é agressivo: qual viés?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rastreio acha tumor lento e o que surge entre exames é agressivo: qual viés?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

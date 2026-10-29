@@ -16,17 +16,17 @@
   ],
   "explicacao_em": "2027-09-20",
   "tom": null,
-  "gancho": "Quatro dias de quimio e o coração ganhou *um suéter que arranha*",
-  "gancho_apoio": "Revisão de domingo com os dias 240, 289 e 317. O Seu Néfron está soterrado de formulários e o coração veio reclamar.",
+  "gancho": "Domingo de revisão e *o coração entrou na fila da repartição*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-322.png",
-    "cena": "Seu Néfron na repartição, suando, embaixo de montanhas de formulários sem carimbo que transbordam da mesa; ao lado, um coração de desenho animado com um suéter de lã que arranha, inclinado para a frente numa cadeira para aliviar; pela janela, um caminhão de cristais estacionado; num canto, um vinil pequeno encostado.",
+    "cena": "Seu Néfron, de gravata, confere uma prancheta numa sala de espera de repartição; ao lado, um coração de desenho animado espera numa cadeira, com cara de incômodo; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Quatro dias de quimio e o coração ganhou um suéter que arranha"
+    "alt": "Seu Néfron e um coração esperando na sala da repartição"
   },
   "imagem_macete": {
     "arquivo": "dia-322-macete.png",
-    "cena": "Callback: o Seu Néfron liga uma máquina grande e simpática, como uma lavadora de filtro, que limpa a pilha de formulários; o coração tira o suéter que arranha; na porta, um comprimidinho anti-inflamatório é barrado por um cone vermelho.",
+    "cena": "Callback: atrás do Seu Néfron, os formulários sem carimbo viraram uma montanha; ele liga uma máquina grande e simpática, como uma lavadora de filtro, que limpa a pilha toda; o coração tira o suéter de lã que arranhava; na porta, um comprimidinho anti-inflamatório é barrado por um cone vermelho.",
     "foco": "50% 45%",
     "alt": "Pericardite urêmica na lise tumoral: quem trata é a diálise"
   },
@@ -36,21 +36,21 @@
     "alternativas": {
       "A": {
         "texto": "Ibuprofen plus colchicine",
-        "quiz": "AINE + colchicina",
+        "quiz": "NSAID + colchicine",
         "dia": 289
       },
       "B": {
         "texto": "Rasburicase and IV fluids only",
-        "quiz": "Só rasburicase e soro",
+        "quiz": "Rasburicase + fluids only",
         "dia": 317
       },
       "C": {
         "texto": "Pericardiocentesis",
-        "quiz": "Pericardiocentese"
+        "quiz": "Pericardiocentesis"
       },
       "D": {
         "texto": "Urgent hemodialysis",
-        "quiz": "Hemodiálise urgente"
+        "quiz": "Urgent hemodialysis"
       }
     },
     "correta": "D"
@@ -78,7 +78,7 @@
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 240, 289 e 317. Rapaz com linfoma de Burkitt, quimioterapia há 4 dias, dor torácica que melhora inclinado, atrito pericárdico e ureia de 118. Qual é o próximo passo?",
+    "contexto": "Domingo de revisão: cólica renal (dia 240), pericardite aguda (dia 289) e lise tumoral (dia 317) voltaram, e um intruso entrou na repartição. Três condutas que você já viu aqui; a vinheta mostra por que nenhuma delas basta hoje.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +94,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Quimio há 4 dias, atrito pericárdico e ureia 118: o que resolve?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quimio há 4 dias, atrito pericárdico e ureia 118: o que resolve?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

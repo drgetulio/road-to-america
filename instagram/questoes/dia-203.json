@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Streptococcus pneumoniae (dia 106), Malária por falciparum (dia 169), Síndrome de Wiskott-Aldrich (dia 197)",
   "conceito": "Remix: Streptococcus pneumoniae + Plasmodium falciparum + Wiskott-Aldrich syndrome",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     106,
@@ -16,18 +16,18 @@
   ],
   "explicacao_em": "2027-05-24",
   "tom": null,
-  "gancho": "Voltou de Gana com febre, confusão e *uma lembrancinha* que ninguém pediu",
-  "gancho_apoio": null,
+  "gancho": "Remix de Domingo: *três conhecidos do feed* e um viajante cansado no desembarque",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 106, 169 e 197) e um intruso.",
   "imagem": {
     "arquivo": "dia-203.png",
-    "cena": "Desembarque do aeroporto, com um vinil pequeno pendurado na mochila do Macrô. O Macrô, com a comanda no bolso, recebe uma mala cheia de adesivos de viagem; na alça, uma etiqueta em forma de mosquito. Da mala escapa um calorzinho, como se trouxesse uma lembrança que ninguém pediu.",
+    "cena": "Desembarque do aeroporto: a Capitã Plaqueta, de colete e apito, organiza a fila de malas cheias de adesivos de viagem. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô recebe no desembarque uma mala com etiqueta em forma de mosquito"
+    "alt": "Capitã Plaqueta organiza a fila de malas no desembarque do aeroporto"
   },
   "imagem_macete": {
     "arquivo": "dia-203-macete.png",
-    "cena": "Dentro de uma rede de tunelzinhos em forma de cérebro, carrinhos vermelhos cobertos de bolinhas de chiclete grudam nas paredes e travam o trânsito. O Macrô aponta, e numa banca ao lado há bananas em forma de crescente.",
-    "alt": "Falciparum gruda no vaso do cérebro"
+    "cena": "Callback: dentro de uma rede de tunelzinhos em forma de cérebro, carrinhos vermelhos cobertos de bolinhas de chiclete grudam nas paredes e travam o trânsito; a Capitã apita, e numa banca ao lado há bananas em forma de crescente. Fundo limpo.",
+    "alt": "Carrinhos vermelhos com chiclete grudam nos túneis do cérebro e a Capitã apita"
   },
   "questao": {
     "vinheta": "A 27-year-old man has fever, headache, and confusion 10 days after returning from Ghana, where he took no malaria prophylaxis. He is drowsy, without neck stiffness. Hemoglobin is 9.8 g/dL and platelets 62,000/mm3. A blood smear shows ring forms in 11% of red cells and crescent-shaped gametocytes.",
@@ -35,22 +35,22 @@
     "alternativas": {
       "A": {
         "texto": "Adhesion of infected red cells to brain microvascular endothelium",
-        "quiz": "Hemácia gruda no endotélio",
+        "quiz": "RBC cytoadherence",
         "dia": 169
       },
       "B": {
         "texto": "A polysaccharide capsule that resists opsonization in the meninges",
-        "quiz": "Cápsula nas meninges",
+        "quiz": "Capsule resisting opsonins",
         "dia": 106
       },
       "C": {
         "texto": "Bleeding from small platelets with a defective cytoskeleton",
-        "quiz": "Plaqueta pequena sangra",
+        "quiz": "Bleeding from tiny platelets",
         "dia": 197
       },
       "D": {
         "texto": "Reactivation of dormant hypnozoites in the liver",
-        "quiz": "Hipnozoíto reativado"
+        "quiz": "Liver hypnozoites waking up"
       }
     },
     "correta": "A"
@@ -74,11 +74,11 @@
     "macete": {
       "frase": "Falciparum é a hemácia com *chiclete na lataria*: gruda na parede do vaso do cérebro (*citoaderência*) e trava o trânsito. Gametócito em *banana* e muitos anéis por hemácia entregam a espécie.",
       "apoio": "O NBME coloca a meningite como distrator de febre com confusão; quando o esfregaço já mostra o parasita e houve viagem, a resposta é malária, e a gravidade do falciparum vem da citoaderência.",
-      "fala": "Comi, mostrei, avisei: banana no esfregaço é falciparum, e falciparum gruda."
+      "fala": "Parou, colou... grudou! Banana no esfregaço é falciparum, e falciparum gruda."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix com o Macrô: três conceitos de Step 1 (dias 106, 169 e 197) disputam um viajante com febre, confusão, plaquetas baixas e um esfregaço cheio de achados. Qual mecanismo explica a confusão?",
+    "contexto": "Domingo de Remix com a Capitã Plaqueta. Um viajante com febre e um quadro neurológico, mais um hemograma e um esfregaço cheio de achados, tudo na vinheta. Qual mecanismo explica a parte neurológica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,8 +86,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Voltou de Gana confuso: qual mecanismo explica?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Voltou de Gana confuso: qual mecanismo explica?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

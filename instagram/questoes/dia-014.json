@@ -16,68 +16,68 @@
   ],
   "explicacao_em": "2026-11-16",
   "tom": null,
-  "gancho": "O teste do pezinho baixou a *régua* da 17-OHP. Quem paga a conta?",
+  "gancho": "Teste do pezinho alterado: o Viés pegou a *calculadora*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-014.png",
-    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, segura uma régua comprida na porta de uma maternidade de desenho, ao lado de um varal de pezinhos de papel em branco. Um vinil pequeno pende do varal como enfeite; ao fundo, uma padaria com três fornos, o do meio apagado.",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, segura uma calculadora na porta de uma maternidade de desenho, ao lado de um varal de pezinhos de papel em branco. Um vinil pequeno pende do varal como enfeite.",
     "foco": "50% 35%",
-    "alt": "O teste do pezinho baixou a régua da 17-OHP. Quem paga a conta?"
+    "alt": "O Viés segura uma calculadora na porta de uma maternidade, ao lado de um varal de pezinhos de papel."
   },
   "imagem_macete": {
     "arquivo": "dia-014-macete.png",
-    "cena": "Callback do varal: o Viés abaixa a régua, e uma rede de malha fina pega todos os pezinhos que têm um forninho apagado desenhado, mas pega também vários pezinhos lisos, sem desenho nenhum, que vão para uma caixinha ao lado de um relógio, para colher de novo.",
-    "alt": "Malha fina no teste do pezinho"
+    "cena": "Callback do varal: o Viés mostra a conta na calculadora, e uma fila comprida de pezinhos de papel lisos, sem desenho, volta para colher de novo; só um pezinho, no meio deles, tem um forninho apagado desenhado.",
+    "alt": "Doença rara, positivo desconfiado"
   },
   "questao": {
-    "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. The program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
-    "pergunta": "Which change in screening performance is most likely?",
+    "vinheta": "A newborn screening program measures 17-hydroxyprogesterone to detect classic congenital adrenal hyperplasia, which affects about 1 in 15,000 newborns. The assay has 99% sensitivity and 99% specificity. A well-appearing term infant has an abnormal screen; serum electrolytes are pending.",
+    "pergunta": "Which statement about this result is most accurate?",
     "alternativas": {
       "A": {
-        "texto": "Higher specificity and fewer false-positive recalls",
-        "quiz": "Espec.↑, menos falsos +"
+        "texto": "The positive predictive value is 99%",
+        "quiz": "PPV is 99%"
       },
       "B": {
-        "texto": "Lower sensitivity and more missed 21-hydroxylase cases",
-        "quiz": "Sens.↓, mais casos perdidos",
+        "texto": "The infant most likely has 21-hydroxylase deficiency",
+        "quiz": "Has 21-OH deficiency",
         "dia": 10
       },
       "C": {
-        "texto": "Higher sensitivity and higher positive predictive value",
-        "quiz": "Sens.↑ e VPP↑"
+        "texto": "A lower cutoff would raise the positive predictive value",
+        "quiz": "Lower cutoff, higher PPV",
+        "dia": 13
       },
       "D": {
-        "texto": "Higher sensitivity and more false-positive recalls",
-        "quiz": "Sens.↑, mais falsos +",
-        "dia": 13
+        "texto": "Most abnormal screens like this are false positives",
+        "quiz": "Most are false positives"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Malha fina no teste do pezinho",
+    "titulo": "Doença rara, positivo desconfiado",
     "certa": [
-      "Baixar o corte da 17-OHP é jogar no teste do pezinho a rede de malha fina do dia 13: mais bebês com deficiência de 21-hidroxilase (dia 10) são pegos antes da crise de perda de sal, e a *sensitivity* sobe. O preço é reconvocar mais bebês saudáveis, sobretudo prematuros e recém-nascidos estressados, que têm 17-OHP mais alta: a *specificity* cai e chegam mais *false-positive recalls*."
+      "A hiperplasia adrenal congênita clássica aparece em cerca de 1 de cada 15.000 bebês. Em 15.000 testes, o pezinho acha o único doente, mas 1% dos outros 14.999, perto de 150 bebês, também sai alterado. O valor preditivo positivo (*positive predictive value*) fica abaixo de 1%: quase todo positivo é *false positive*. Na doença rara, especificidade alta não basta, e o pezinho alterado é só o primeiro passo antes da 17-OHP sérica e dos eletrólitos."
     ],
     "termos": [
+      "positive predictive value",
+      "false positive",
       "newborn screening",
-      "17-hydroxyprogesterone cutoff",
-      "sensitivity",
-      "false-positive recall"
+      "pretest probability"
     ],
     "erradas": {
-      "A": "É o contrário: baixar o corte derruba a especificidade e aumenta os falsos positivos.",
-      "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe e menos casos escapam.",
-      "C": "A sensibilidade sobe, mas o VPP cai: com mais falsos positivos entre os positivos, a malha fina traz chinelo junto com o peixe."
+      "A": "VPP de 99% confunde valor preditivo com especificidade; o VPP depende de quantos doentes existem na população, e aqui são muito poucos.",
+      "B": "Dia 10: a deficiência de 21-hidroxilase é a causa clássica de 17-OHP alta, mas, com a doença tão rara, um positivo isolado ainda é provavelmente falso.",
+      "C": "Dia 13: baixar o corte aumenta a sensibilidade e os falsos positivos, então o VPP cai, e não sobe."
     },
     "macete": {
-      "frase": "Régua mais baixa no pezinho é malha fina de novo: pega *todo bebê com o forno 21 quebrado* e chama de volta quem só nasceu cedo.",
-      "apoio": "Pegadinha de prova: O NBME muda só o ponto de corte e mantém o teste e a população: sensibilidade e especificidade andam em sentidos opostos, e o VPP acompanha a especificidade.",
-      "fala": null
+      "frase": "Doença rara, positivo *desconfiado*: com 99% de especificidade, quase todo pezinho alterado ainda é alarme falso.",
+      "apoio": "Pegadinha de prova: O NBME dá sensibilidade e especificidade altas e esconde a frequência da doença no meio da vinheta; sem ela, ninguém sabe o VPP.",
+      "fala": "Cento e cinquenta alarmes para um incêndio. Eu adoro doença rara."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão juntando duas semanas: o forno 21 da padaria (dia 10) e a malha fina do ponto de corte (dia 13). O bônus do macete traz a chave perdida do Bruton (dia 8).",
+    "contexto": "Domingo de revisão juntando o forno 21 da padaria (dia 10) e a malha fina do ponto de corte (dia 13), mais um intruso que não apareceu em nenhum dos dois. O bônus do macete traz a chave perdida do Bruton (dia 8). Bioestatística de domingo: a única conta que dói menos que a taxa de inscrição do Step.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,7 +93,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Corte da 17-OHP mais baixo no pezinho: o que acontece com o teste?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pezinho alterado numa doença de 1 em 15.000: o que concluir?"
   },
   "exemplo": false
 }

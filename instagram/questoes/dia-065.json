@@ -39,7 +39,7 @@
       },
       "C": {
         "texto": "MRI of the brain with diffusion",
-        "quiz": "Brain MRI"
+        "quiz": "Brain MRI with diffusion"
       },
       "D": {
         "texto": "Oral aspirin 325 mg",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Fraqueza súbita na face e no braço, fala travada, 50 minutos do início e todo mundo olhando para o relógio. Dona Térmica já viu esse filme às 3 da manhã: qual é o primeiro movimento?",
+    "contexto": "Plantão de Terça: déficit neurológico súbito, relógio correndo e todo mundo olhando para a Dona Térmica. No inglês da prova, next step quer dizer agora, e não depois do café; ela já viu esse filme às 3 da manhã e sabe que a pressa tem ordem.",
     "palavras_chave": [
-      "sudden hemiparesis",
-      "aphasia",
-      "last known well",
-      "emergency department"
+      "sudden weakness",
+      "emergency medicine",
+      "time-sensitive care",
+      "neurology"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#PlantaoDeTerca",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Déficit focal há 50 min e glicemia 118: qual o primeiro passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Déficit focal há 50 min e glicemia 118: qual o primeiro passo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

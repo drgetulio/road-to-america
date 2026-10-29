@@ -13,6 +13,7 @@ import { PASTA_INSTAGRAM, RAIZ, num3, carregarConfig, montarDia, conferir } from
 import { conferirBanco, bancoDisponivel } from './lib/banco.mjs';
 import * as S from './lib/slides.mjs';
 import { legenda, roteiroStories, ctaDoDia } from './lib/legenda.mjs';
+import { desafioDoDia } from './lib/conversao.mjs';
 
 const require = createRequire(import.meta.url);
 
@@ -67,42 +68,67 @@ const rel = (p) => path.relative(RAIZ, p) || '.';
 const FEED = { largura: 1080, altura: 1350 };
 const STORY = { largura: 1080, altura: 1920 };
 
-function pecasDoDia(dia, comReel) {
+// proximo: o dia N+1 (a capa do gabarito de N anuncia a questão de N+1, publicada no mesmo post)
+function pecasDoDia(dia, comReel, proximo) {
   const p = [
     ['questao-1-capa.png', FEED, () => S.questaoCapa(dia)],
     ['questao-2-enunciado.png', FEED, () => S.questaoEnunciado(dia)],
     ['questao-3-responda.png', FEED, () => S.questaoResponda(dia, config)],
-    ['explicacao-1-resposta.png', FEED, () => S.explicacaoResposta(dia)],
+    ['questao-4-cta.png', FEED, () => S.questaoCTA(dia, config)],
+    ['explicacao-1-resposta.png', FEED, () => S.explicacaoResposta(dia, proximo)],
     ['explicacao-2-certa.png', FEED, () => S.explicacaoCerta(dia)],
     ['explicacao-3-erradas.png', FEED, () => S.explicacaoErradas(dia)],
     ['explicacao-4-macete.png', FEED, () => S.explicacaoMacete(dia)],
-    ['explicacao-5-simulado.png', FEED, () => S.explicacaoCTA(dia, config)],
-    ['story-quiz.png', STORY, () => S.storyQuiz(dia)],
-    ['story-quiz-guia.png', STORY, () => S.storyQuiz(dia, { guia: true })],
+    ['explicacao-4-macete-enxuto.png', FEED, () => S.explicacaoMacete(dia, { enxuto: true })],
+    ['story-enquete.png', STORY, () => S.storyEnquete(dia)],
+    ['story-enquete-guia.png', STORY, () => S.storyEnquete(dia, { guia: true })],
+    ['story-gabarito.png', STORY, () => S.storyGabarito(dia)],
+    ['story-gabarito-guia.png', STORY, () => S.storyGabarito(dia, { guia: true })],
   ];
+  const des = desafioDoDia(dia.data || '');
+  if (des && des.fase === 'em_andamento') {
+    p.push(['story-desafio.png', STORY, () => S.storyDesafio(dia, des)]);
+    if (des.dia_do_desafio === 1) p.push(['desafio-cartela.png', STORY, () => S.desafioCartela(des)]);
+  }
   if (comReel) p.push(['capa-reel.png', STORY, () => S.capaReel(dia)]);
   return p;
 }
 
 const pastaDia = (n) => path.join(args.saida, `dia-${num3(n)}`);
 
-// Post do feed do dia N = questão do dia N (3 slides) + gabarito do dia N-1 (5 slides).
+// Post do feed do dia N: a recompensa primeiro. Gabarito do dia N-1 (slides 1 a 4) e depois a
+// questão do dia N (slides 5 a 8). No modo enxuto: resposta, porquê e macete sem imagem nova,
+// depois capa, vinheta e responda (6 slides). No dia 1, só a questão.
+const MODOS = {
+  'post-do-dia': {
+    gabarito: ['explicacao-1-resposta.png', 'explicacao-2-certa.png', 'explicacao-3-erradas.png', 'explicacao-4-macete.png'],
+    questao: ['questao-1-capa.png', 'questao-2-enunciado.png', 'questao-3-responda.png', 'questao-4-cta.png'],
+  },
+  'post-do-dia-enxuto': {
+    gabarito: ['explicacao-1-resposta.png', 'explicacao-2-certa.png', 'explicacao-4-macete-enxuto.png'],
+    questao: ['questao-1-capa.png', 'questao-2-enunciado.png', 'questao-3-responda.png'],
+  },
+};
 function montarPost(n) {
   const dir = pastaDia(n);
   if (!fs.existsSync(path.join(dir, 'questao-1-capa.png'))) return null;
-  const destino = path.join(dir, 'post-do-dia');
-  fs.rmSync(destino, { recursive: true, force: true });
-  fs.mkdirSync(destino, { recursive: true });
-  const ordem = ['questao-1-capa.png', 'questao-2-enunciado.png', 'questao-3-responda.png'].map((f) => path.join(dir, f));
   const ontem = pastaDia(n - 1);
-  const exp = ['explicacao-1-resposta.png', 'explicacao-2-certa.png', 'explicacao-3-erradas.png', 'explicacao-4-macete.png', 'explicacao-5-simulado.png'].map((f) => path.join(ontem, f));
-  const temOntem = n > 1 && exp.every((f) => fs.existsSync(f));
-  const lista = temOntem ? [...ordem, ...exp] : ordem;
-  lista.forEach((f, i) => {
-    const nome = `${String(i + 1).padStart(2, '0')}-${i < 3 ? 'questao-' + num3(n) : 'gabarito-' + num3(n - 1)}-${path.basename(f).replace(/^(questao|explicacao)-\d-/, '')}`;
-    fs.copyFileSync(f, path.join(destino, nome));
-  });
-  return { slides: lista.length, gabaritoDe: temOntem ? n - 1 : null, faltaGabarito: n > 1 && !temOntem };
+  const r = {};
+  for (const [pasta, m] of Object.entries(MODOS)) {
+    const destino = path.join(dir, pasta);
+    fs.rmSync(destino, { recursive: true, force: true });
+    fs.mkdirSync(destino, { recursive: true });
+    if (!m.questao.every((f) => fs.existsSync(path.join(dir, f)))) return null; // pasta de uma versão antiga do render
+    const exp = m.gabarito.map((f) => path.join(ontem, f));
+    const temOntem = n > 1 && exp.every((f) => fs.existsSync(f));
+    const lista = [...(temOntem ? exp.map((f) => ['gabarito-' + num3(n - 1), f]) : []), ...m.questao.map((f) => ['questao-' + num3(n), path.join(dir, f)])];
+    lista.forEach(([rot, f], i) => {
+      const nome = `${String(i + 1).padStart(2, '0')}-${rot}-${path.basename(f).replace(/^(questao|explicacao)-\d-/, '')}`;
+      fs.copyFileSync(f, path.join(destino, nome));
+    });
+    r[pasta] = { slides: lista.length, gabaritoDe: temOntem ? n - 1 : null, faltaGabarito: n > 1 && !temOntem };
+  }
+  return r;
 }
 
 // ---------- execução ----------
@@ -169,7 +195,8 @@ async function main() {
       const comReel = args.reel || !!dia.reel;
       const avisosLayout = [];
       const arquivos = [];
-      for (const [nome, tam, construir] of pecasDoDia(dia, comReel)) {
+      const proximo = dia.n < 365 ? safeMontar(dia.n + 1) : null;
+      for (const [nome, tam, construir] of pecasDoDia(dia, comReel, proximo)) {
         const { html, token } = S.pagina(construir(), tam);
         if (args.html) fs.writeFileSync(path.join(dir, nome.replace(/\.png$/, '.html')), html);
         const page = await pagina(tam);
@@ -184,7 +211,7 @@ async function main() {
 
       const ontem = dia.n > 1 ? safeMontar(dia.n - 1) : null;
       fs.writeFileSync(path.join(dir, 'legenda.txt'), legenda(dia, ontem, config));
-      fs.writeFileSync(path.join(dir, 'stories.txt'), roteiroStories(dia, config));
+      fs.writeFileSync(path.join(dir, 'stories.txt'), roteiroStories(dia, config, ontem));
       arquivos.push('legenda.txt', 'stories.txt');
 
       const pendentes = [dia.imagem, dia.imagem_macete].filter((i) => i && !i.caminho).map((i) => i.esperado);
@@ -198,9 +225,10 @@ async function main() {
         tom: dia.tom,
         exemplo: dia.exemplo,
         publicar: {
-          questao: `${dia.data} ${config.horario_feed} (feed: post-do-dia/ deste dia)`,
-          explicacao: `${dia.explicacao_em} ${config.horario_feed} (feed: slides 4 a 8 do post-do-dia/ do dia ${num3(dia.n + 1)})`,
-          story_quiz: `${dia.data} 12h05`,
+          questao: `${dia.data} ${config.horario_feed} (feed: slides 5 a 8 do post-do-dia/ deste dia; 4 a 6 no enxuto)`,
+          explicacao: `${dia.explicacao_em} ${config.horario_feed} (feed: slides 1 a 4 do post-do-dia/ do dia ${num3(dia.n + 1)}; 1 a 3 no enxuto)`,
+          story_enquete: `${dia.data} 12h06 (enquete A, B, C, D, sem gabarito)`,
+          story_gabarito: `${dia.explicacao_em} 12h05 (resultado da enquete e quiz com a letra certa)`,
         },
         cta: ctaDoDia(dia),
         correta: dia.questao.correta,
@@ -225,10 +253,11 @@ async function main() {
     if (dia.n < 365) afetados.add(dia.n + 1);
   }
   for (const n of [...afetados].sort((x, y) => x - y)) {
-    const r = montarPost(n);
-    if (!r) continue;
-    const det = r.gabaritoDe ? `questão ${num3(n)} + gabarito ${num3(r.gabaritoDe)}` : `só a questão ${num3(n)}`;
-    console.log(`   post-do-dia ${num3(n)}: ${r.slides} slides (${det})${r.faltaGabarito ? '; gabarito de ontem ainda não renderizado' : ''}`);
+    const rr = montarPost(n);
+    if (!rr) continue;
+    const r = rr['post-do-dia'];
+    const det = r.gabaritoDe ? `gabarito ${num3(r.gabaritoDe)} + questão ${num3(n)}` : `só a questão ${num3(n)}`;
+    console.log(`   post-do-dia ${num3(n)}: ${r.slides} slides, enxuto ${rr['post-do-dia-enxuto'].slides} (${det})${r.faltaGabarito ? '; gabarito de ontem ainda não renderizado' : ''}`);
   }
 }
 

@@ -158,6 +158,7 @@ export function montarDia(n, pastaFonte, pastaImagens) {
     quiz: json.quiz || {},
     reel: json.reel || null,
     cta: json.cta || null,
+    cta_forcado: json.cta_forcado || null,
   };
   // Sem imagem própria, o macete reaproveita a imagem da questão se o JSON pedir.
   return dia;

@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-17",
   "tom": null,
-  "gancho": "Seu Néfron e o pulmão dividem o mesmo carpete, e alguém *sujou* os dois",
+  "gancho": "Rim e pulmão abriram chamado *no mesmo dia*. Coincidência ou conspiração?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-015.png",
-    "cena": "Seu Néfron, de gravata e carimbo na mão, trabalha numa repartição ao lado de um colega pulmão de cardigã. Os dois olham surpresos para o chão, onde dardinhos amarelos em forma de Y caem sobre o mesmo carpete que passa por baixo das duas mesas. Uma comanda de boteco em branco está presa no mural.",
+    "cena": "Seu Néfron, de gravata e carimbo na mão, divide a repartição com um colega pulmão de cardigã; os dois seguram, ao mesmo tempo, o mesmo formulário de reclamação em branco e se olham, desconfiados. A comanda de boteco em branco está presa no mural.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron e o pulmão dividem o mesmo carpete, e alguém sujou os dois"
+    "alt": "Seu Néfron e um colega pulmão de cardigã seguram juntos o mesmo formulário de reclamação e se olham, desconfiados."
   },
   "imagem_macete": {
     "arquivo": "dia-015-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Granulomatosis with polyangiitis",
-        "quiz": "Granulomatose (GPA)"
+        "quiz": "Granulomatosis (GPA)"
       },
       "B": {
         "texto": "Lupus nephritis",
-        "quiz": "Nefrite lúpica"
+        "quiz": "Lupus nephritis"
       },
       "C": {
         "texto": "IgA nephropathy",
-        "quiz": "Nefropatia por IgA"
+        "quiz": "IgA nephropathy"
       },
       "D": {
-        "texto": "Anti-glomerular basement membrane disease",
-        "quiz": "Goodpasture"
+        "texto": "Anti-GBM disease",
+        "quiz": "Anti-GBM disease"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda com Seu Néfron: rim e pulmão sangrando ao mesmo tempo, ANCA negativo e uma biópsia com o padrão que a prova adora desenhar. Lembre que o NBME sempre esconde o detalhe decisivo na última linha.",
+    "contexto": "Bicho de Segunda com Seu Néfron: rim e pulmão reclamando juntos, e quatro diagnósticos que a prova adora misturar. Lembre que o NBME sempre esconde o detalhe decisivo na última linha, de preferência quando você já está no 38º item do bloco.",
     "palavras_chave": [
-      "hemoptysis",
-      "red blood cell casts",
+      "kidney and lung",
+      "glomerulonephritis",
       "renal biopsy",
-      "immunofluorescence"
+      "immunology"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Hemoptise, cilindros hemáticos e IF linear no rim: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hemoptise, cilindros hemáticos e IF linear no rim: qual diagnóstico?"
   },
   "exemplo": false
 }

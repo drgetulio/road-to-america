@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-06-16",
   "tom": null,
-  "gancho": "Fez 45 anos, assoprou as velinhas e *perguntou se precisa de algum exame*",
-  "gancho_apoio": "Sem sintomas e sem história na família. O que a USPSTF recomenda para ele?",
+  "gancho": "Consulta de rotina no Plantão de Terça: *um aniversário* e uma pergunta sobre exames",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-226.png",
-    "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas, que olha pensativo para um calendário de parede soltando folhas voando. Na mesinha, um presente navy com laço vermelho, ainda fechado.",
+    "cena": "Sala de espera com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica conversa com um bolo de aniversário pensativo na sala de espera"
+    "alt": "Dona Térmica conversa com um bolo de aniversário na sala de espera"
   },
   "imagem_macete": {
     "arquivo": "dia-226-macete.png",
-    "cena": "O presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde. As folhas do calendário voltam voando para a parede, como se a festa tivesse sido antecipada, e Dona Térmica ergue um cafezinho.",
+    "cena": "Callback: o presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde, e Dona Térmica ergue um cafezinho. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Risco médio: o rastreamento começa aos 45"
+    "alt": "O presente aberto traz uma câmera na mangueirinha e um kit de amostra de tampa verde"
   },
   "questao": {
     "vinheta": "A 45-year-old man comes for a routine visit. He feels well and has no gastrointestinal symptoms. He has no personal history of polyps or inflammatory bowel disease and no family history of colorectal cancer. Examination and complete blood count are normal.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Defer screening until he reaches age 50",
-        "quiz": "Esperar os 50"
+        "quiz": "Wait until age 50"
       },
       "B": {
         "texto": "Annual CT colonography starting this year",
-        "quiz": "Colono-TC anual"
+        "quiz": "Annual CT colonography"
       },
       "C": {
-        "texto": "Measure serum carcinoembryonic antigen yearly",
-        "quiz": "Dosar CEA"
+        "texto": "Measure serum carcinoembryonic antigen (CEA) every year",
+        "quiz": "Yearly serum CEA"
       },
       "D": {
-        "texto": "Begin screening now with colonoscopy or a stool-based test",
-        "quiz": "Rastrear agora"
+        "texto": "Begin screening now with colonoscopy or a stool test",
+        "quiz": "Screen now"
       }
     },
     "correta": "D"
@@ -69,16 +69,16 @@
     "macete": {
       "frase": "*45 é o novo 50* para o cólon: no risco médio, o rastreamento começa aos 45, com colonoscopia ou exame de fezes. CEA não rastreia nada; ele acompanha quem já tratou.",
       "apoio": "O NBME ainda oferece \"esperar os 50\" e o CEA; desde 2021 a USPSTF recomenda começar aos 45 no risco médio, com colonoscopia a cada 10 anos ou teste de fezes (FIT anual, por exemplo).",
-      "fala": "Já vi esse caso às 3 da manhã: o convite agora chega cinco anos antes."
+      "fala": "Já vi esse caso às 3 da manhã. 45 é o novo 50, e o seu banco de questões de 2019 ainda não ficou sabendo."
     }
   },
   "legenda": {
-    "contexto": "Quarenta e cinco anos, sem sintomas, sem pólipo, sem doença inflamatória intestinal e sem câncer colorretal na família. Ele pergunta sobre exames. O que recomendar hoje?",
+    "contexto": "Consulta de rotina com a Dona Térmica, num tema que merece informação sem medo. Um homem sem queixas pergunta sobre rastreamento, e a idade e a história familiar dele estão na vinheta. O que recomendar hoje?",
     "palavras_chave": [
+      "preventive care",
+      "screening guidelines",
       "routine visit",
-      "45-year-old",
-      "average risk",
-      "preventive care"
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "45 anos, risco médio e sem sintomas: o que recomendar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "45 anos, risco médio e sem sintomas: o que recomendar?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

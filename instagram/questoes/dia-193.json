@@ -12,38 +12,38 @@
   "remix_de": null,
   "explicacao_em": "2027-05-14",
   "tom": null,
-  "gancho": "Terceiro dia de dieta por sonda, e a usina *religou com tudo*. O que a equipe faz?",
-  "gancho_apoio": null,
+  "gancho": "Rodízio de Quinta: o Mito *saiu da bioquímica* para dar plantão na clínica",
+  "gancho_apoio": "Tema sério, tratado com cuidado: aqui a gente fala de fisiologia.",
   "imagem": {
     "arquivo": "dia-193.png",
-    "cena": "Uma pequena usina em forma de célula está religando depois de muito tempo parada. Mito, de jaleco e café, acompanha um tubo fino que traz cubinhos de açúcar para dentro, gota a gota. Do lado de fora, um pote de vidro com poucas moedinhas brilhantes, e o painel da usina começa a piscar.",
+    "cena": "Mito, de jaleco e café, confere com calma um painel de controle com luzinhas piscando numa sala de máquinas tranquila. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Mito acompanha uma usina em forma de célula que religa depois de muito tempo parada"
+    "alt": "Mito confere com calma um painel de luzinhas piscando"
   },
   "imagem_macete": {
     "arquivo": "dia-193-macete.png",
-    "cena": "Uma chave em forma de insulina abre a porta da usina, e as moedinhas do pote correm todas para dentro, virando baterias acesas (o ATP); o pote fica vazio. Mito diminui a vazão do tubo e coloca moedas novas no pote, com calma.",
-    "alt": "Realimentação: o fósforo foge para dentro da célula"
+    "cena": "Callback: uma chave em forma de insulina abre a porta de uma usina em forma de célula, e as moedinhas de um pote correm para dentro, virando baterias acesas (o ATP); o pote fica vazio, e o Mito o reabastece devagar. Fundo limpo.",
+    "alt": "A chave de insulina abre a usina, as moedinhas correm para dentro e o Mito repõe o pote devagar"
   },
   "questao": {
     "vinheta": "A 17-year-old girl with anorexia nervosa and a BMI of 14.5 kg/m2 is admitted for nutritional rehabilitation. On day 3 of rapidly increasing nasogastric feeds, she develops weakness, shortness of breath, confusion, and new ankle edema. Heart rate is 118/min.",
     "pergunta": "In addition to slowing the feeds, which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Give an intravenous 5% dextrose bolus",
-        "quiz": "Bolus de glicose"
+        "texto": "Give an intravenous bolus of 5% dextrose",
+        "quiz": "IV 5% dextrose bolus"
       },
       "B": {
         "texto": "Measure serum phosphate and replace it",
-        "quiz": "Repor fósforo"
+        "quiz": "Replace phosphate"
       },
       "C": {
         "texto": "Start oral olanzapine",
-        "quiz": "Olanzapina"
+        "quiz": "Start olanzapine"
       },
       "D": {
         "texto": "Stop all nutrition for 72 hours",
-        "quiz": "Suspender 72 h"
+        "quiz": "Stop all feeds for 72 h"
       }
     },
     "correta": "B"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na psiquiatria e na clínica. Uma adolescente em reabilitação nutricional por sonda piora no terceiro dia: fraqueza, falta de ar, confusão e edema. Além de desacelerar a dieta, qual é a conduta?",
+    "contexto": "Rodízio de Quinta na psiquiatria e na clínica, com o Mito de visita. Uma adolescente internada piora, e o que mudou e o que apareceu no exame estão na vinheta. Se algo neste tema te toca de perto, procurar ajuda é o primeiro passo.",
     "palavras_chave": [
-      "anorexia nervosa",
-      "nutritional rehabilitation",
-      "nasogastric feeds",
-      "new edema"
+      "inpatient care",
+      "adolescent",
+      "clinical deterioration",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "3º dia de dieta por sonda, fraqueza e edema: conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "3º dia de dieta por sonda, fraqueza e edema: conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

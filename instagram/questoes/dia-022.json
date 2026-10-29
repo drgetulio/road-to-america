@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-24",
   "tom": null,
-  "gancho": "O interfone do prédio funciona de manhã, e à noite ninguém *atende*",
+  "gancho": "Segunda-feira, e o Macrô foi chamado para consertar o *interfone* do prédio",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-022.png",
-    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na portaria de um prédio olhando um carteiro em forma de bolinha que aperta o interfone de vários apartamentos; só alguns botões acendem, e o céu lá fora está alaranjado, de fim de tarde. Macrô coça a cabeça com um pseudópode.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na portaria de um prédio olhando um carteiro em forma de bolinha que aperta o interfone de vários apartamentos; Macrô coça a cabeça com um pseudópode.",
     "foco": "50% 35%",
-    "alt": "O interfone do prédio funciona de manhã, e à noite ninguém atende"
+    "alt": "Macrô, na portaria de um prédio, observa um carteiro em forma de bolinha apertando o interfone."
   },
   "imagem_macete": {
     "arquivo": "dia-022-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Antibodies against presynaptic voltage-gated calcium channels",
-        "quiz": "Anti-canal de cálcio"
+        "quiz": "Anti-VGCC antibodies"
       },
       "B": {
         "texto": "Antibodies against postsynaptic acetylcholine receptors",
-        "quiz": "Anti-receptor de ACh"
+        "quiz": "Anti-AChR antibodies"
       },
       "C": {
         "texto": "Toxin cleavage of SNARE proteins blocking acetylcholine release",
-        "quiz": "Toxina cliva SNARE"
+        "quiz": "SNARE cleavage"
       },
       "D": {
         "texto": "Autoimmune demyelination of peripheral nerves",
-        "quiz": "Desmielinização"
+        "quiz": "Demyelination"
       }
     },
     "correta": "B"
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda na junção neuromuscular: pálpebra caindo no fim do dia, visão dupla e uma bolsa de gelo que melhora tudo. O Macrô foi investigar o interfone do prédio.",
+    "contexto": "Bicho de Segunda na junção neuromuscular, o interfone entre o nervo e o músculo. São quatro suspeitos, cada um sabotando um ponto diferente da ligação, e a vinheta diz qual. O Macrô foi investigar.",
     "palavras_chave": [
-      "diplopia",
+      "neuromuscular junction",
       "ptosis",
-      "fatigable weakness",
-      "ice pack test"
+      "neurology",
+      "autoimmunity"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ptose que piora à noite e melhora com gelo: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ptose que piora à noite e melhora com gelo: qual mecanismo?"
   },
   "exemplo": false
 }

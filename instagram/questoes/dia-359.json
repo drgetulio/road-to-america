@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-27",
   "tom": null,
-  "gancho": "Ele para em toda vitrine. *Não é para comprar.*",
-  "gancho_apoio": "Dor na panturrilha ao andar dois quarteirões, que melhora parado em pé.",
+  "gancho": "Três da manhã na padaria 24 horas: *a Dona Térmica seguiu as pegadas*",
+  "gancho_apoio": "Plantão de Terça: quatro exames na prancheta e um caminho de pegadas na calçada.",
   "imagem": {
     "arquivo": "dia-359.png",
-    "cena": "Calçada de madrugada diante de uma padaria 24 horas, com um relógio sem números nas 3 horas lá dentro; pegadas param diante de cada vitrine cheia de pães e bolos; uma mangueira de jardim vai afinando ao longo do meio-fio; a Dona Térmica, de prancheta, segue as pegadas.",
+    "cena": "Calçada de madrugada diante de uma padaria 24 horas, com um relógio sem números nas 3 horas lá dentro; pegadas atravessam a calçada até a porta; a Dona Térmica, de prancheta, segue as pegadas.",
     "foco": "50% 35%",
-    "alt": "Ele para em toda vitrine. Não é para comprar."
+    "alt": "Dona Térmica segue pegadas até uma padaria 24 horas"
   },
   "imagem_macete": {
     "arquivo": "dia-359-macete.png",
-    "cena": "Callback: dois manguitos de pressão, um no pé de um banco em forma de tornozelo e outro num poste em forma de braço, ligados a uma balança que pende para o braço; a mangueira estreita aparece em destaque e a Dona Térmica confere a prancheta.",
+    "cena": "Callback: as pegadas paravam diante de cada vitrine; agora dois manguitos de pressão, um no pé de um banco em forma de tornozelo e outro num poste em forma de braço, estão ligados a uma balança que pende para o braço; uma mangueira de jardim que vai afinando aparece em destaque e a Dona Térmica confere a prancheta.",
     "foco": "50% 45%",
     "alt": "Claudicação: o primeiro exame é o ankle-brachial index"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Venous duplex ultrasonography",
-        "quiz": "Duplex venoso"
+        "quiz": "Venous duplex ultrasound"
       },
       "B": {
         "texto": "CT angiography of the lower extremities",
-        "quiz": "Angiotomografia"
+        "quiz": "CT angiography"
       },
       "C": {
         "texto": "MRI of the lumbar spine",
-        "quiz": "RM da coluna"
+        "quiz": "Lumbar spine MRI"
       },
       "D": {
         "texto": "Ankle-brachial index",
-        "quiz": "Tornozelo-braço"
+        "quiz": "Ankle-brachial index"
       }
     },
     "correta": "D"
@@ -73,18 +73,17 @@
     }
   },
   "legenda": {
-    "contexto": "Fumante e diabético, ele sente cãibra nas panturrilhas depois de dois quarteirões e melhora parado em pé, como quem olha vitrine. Pulsos dos pés fracos. Qual é o primeiro exame?",
+    "contexto": "Plantão de Terça na calçada da padaria 24 horas: a Dona Térmica seguiu umas pegadas até a porta. Quatro exames na prancheta, e a vinheta diz qual problema eles procuram.",
     "palavras_chave": [
-      "calf pain with walking",
-      "smoker",
-      "type 2 diabetes",
-      "diminished pedal pulses"
+      "vascular medicine",
+      "leg pain",
+      "smoking",
+      "initial diagnostic test"
     ],
     "hashtags": [
       "#USMLE",
       "#USMLEStep2CK",
       "#Cardiologia",
-      "#Angiologia",
       "#ClinicaMedica",
       "#QuestaoDoDia",
       "#RoadToAmerica"
@@ -93,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Fumante, dor na panturrilha ao andar que passa parado: qual 1º exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fumante, dor na panturrilha ao andar que passa parado: qual 1º exame?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

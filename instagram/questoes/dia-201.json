@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-22",
   "tom": null,
-  "gancho": "Sextou: a cirurgia *esquentou*, e a culpa não é do ar-condicionado",
-  "gancho_apoio": null,
+  "gancho": "Sextou na Farmácia: *um antídoto de nome difícil* e um mecanismo que a prova adora",
+  "gancho_apoio": "Antídoto: a lista que todo mundo revisa no carro, a caminho da Prometric.",
   "imagem": {
     "arquivo": "dia-201.png",
-    "cena": "Tia Meia-Vida, atrás do balcão, olha espantada para uma caixa d'água em forma de fibra muscular que treme, endurece e solta vapor; o termômetro da parede sobe, e no chão rola uma latinha de gás.",
+    "cena": "Tia Meia-Vida, atrás do balcão, segura uma caixa de antídoto ainda lacrada e olha o relógio da parede, apressada. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Sextou: a cirurgia esquentou, e a culpa não é do ar-condicionado"
+    "alt": "Tia Meia-Vida, apressada, segura uma caixa de antídoto lacrada"
   },
   "imagem_macete": {
     "arquivo": "dia-201-macete.png",
-    "cena": "Tia Meia-Vida acha a torneira escondida da caixa d'água, emperrada aberta e jorrando bolinhas brilhantes (o cálcio), e a aperta com uma grande chave inglesa laranja; a cascata para, o termômetro da parede desce para o azul, e a latinha de gás vai para a lixeira.",
-    "alt": "Hipertermia maligna: dantroleno fecha o RyR1"
+    "cena": "Callback: Tia Meia-Vida aperta com uma chave inglesa laranja a torneira emperrada de uma caixa d'água em forma de fibra muscular, e as bolinhas brilhantes de cálcio param de jorrar. Fundo limpo.",
+    "alt": "A Tia fecha com a chave laranja a torneira de cálcio emperrada"
   },
   "questao": {
     "vinheta": "During knee arthroscopy under sevoflurane, a 22-year-old man develops masseter and generalized muscle rigidity, rising end-tidal CO2, and tachycardia. His temperature rises from 37.0°C to 39.8°C (103.6°F) within 30 minutes. Serum potassium is 6.1 mEq/L. A cousin had a similar reaction during surgery.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Blocking calcium release through the ryanodine receptor",
-        "quiz": "Bloqueia o RyR1"
+        "quiz": "Blocks RyR1 Ca release"
       },
       "B": {
-        "texto": "Inhibiting prostaglandin synthesis in the hypothalamus",
-        "quiz": "Inibe prostaglandina"
+        "texto": "Inhibiting prostaglandin E2 synthesis in the hypothalamus",
+        "quiz": "Inhibits PGE2 synthesis"
       },
       "C": {
         "texto": "Blocking central dopamine D2 receptors",
-        "quiz": "Bloqueia D2"
+        "quiz": "Blocks D2 receptors"
       },
       "D": {
         "texto": "Blocking nicotinic receptors at the motor end plate",
-        "quiz": "Bloqueia nicotínico"
+        "quiz": "Blocks nicotinic receptors"
       }
     },
     "correta": "A"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. No meio de uma cirurgia simples, o músculo endurece, o CO2 sobe e a temperatura dispara. O antídoto tem um mecanismo que a prova adora.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Algo dá errado de repente, e a vinheta descreve o que acontece minuto a minuto. A pergunta é como age o remédio certo para esse quadro.",
     "palavras_chave": [
-      "knee arthroscopy",
-      "sevoflurane",
-      "muscle rigidity",
-      "rising temperature"
+      "drug reaction",
+      "antidote",
+      "mechanism of action",
+      "Step 1 pharmacology"
     ]
   },
   "quiz": {
-    "pergunta": "Hipertermia maligna. Como age o antídoto?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hipertermia maligna. Como age o antídoto?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

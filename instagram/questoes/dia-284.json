@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-13",
   "tom": null,
-  "gancho": "A avó beijou o neto e *achou que tinha errado no sal do feijão*",
-  "gancho_apoio": "Mama bem, não ganha peso e a triagem neonatal já acendeu a luz amarela. Qual exame confirma?",
+  "gancho": "O neto não engorda e *a avó já trocou o feijão três vezes*",
+  "gancho_apoio": "Rodízio de Quinta na mesa da família: quatro espetos de exame e só um confirma.",
   "imagem": {
     "arquivo": "dia-284.png",
-    "cena": "Na churrascaria, numa mesa de família, ao lado de um pratinho de bebê com colherzinha, aparece uma marca de beijo de batom em forma de coração com cristais de sal brilhando, e um saleiro tombado de vergonha. O Garçom Espetinho chega com quatro espetos de exame em vez de carne: um potinho de amostra, um cartãozinho com uma gota de sangue, um tomógrafo em miniatura e um adesivo redondo de braço com dois fiozinhos. A plaquinha verde e vermelha está de lado.",
+    "cena": "Numa mesa de família da churrascaria, o Garçom Espetinho segura um espeto vazio e olha intrigado para um pratinho de bebê limpinho, ao lado de uma panela de feijão. A plaquinha verde e vermelha está de lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Beijo salgado na mesa e o garçom com quatro espetos de exame"
+    "alt": "Garçom Espetinho olha intrigado para um pratinho de bebê limpo, ao lado de uma panela de feijão."
   },
   "imagem_macete": {
     "arquivo": "dia-284-macete.png",
-    "cena": "O garçom vira a plaquinha para o verde diante do espeto do adesivo de braço; ao lado, gotinhas de água viram cristais de sal brilhando numa balancinha que passa de uma marca. Os outros três espetos descansam num suporte com plaquinhas vermelhas.",
+    "cena": "Callback: o Garçom Espetinho vira a plaquinha para o verde e serve um espeto com um adesivo redondo de braço de dois fiozinhos; ao lado, gotinhas de suor viram cristais de sal brilhando numa balancinha que passa da marca.",
     "foco": "50% 45%",
     "alt": "Confirmação da fibrose cística: cloreto no suor"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Fecal elastase",
-        "quiz": "Elastase fecal"
+        "quiz": "Fecal elastase"
       },
       "B": {
         "texto": "Repeat immunoreactive trypsinogen",
-        "quiz": "Repetir IRT"
+        "quiz": "Repeat trypsinogen (IRT)"
       },
       "C": {
         "texto": "Chest CT",
-        "quiz": "TC de tórax"
+        "quiz": "Chest CT"
       },
       "D": {
         "texto": "Sweat chloride test",
-        "quiz": "Cloreto no suor"
+        "quiz": "Sweat chloride test"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Lactente de 4 meses que mama bem mas não ganha peso, fezes gordurosas, tosse que não passa e pele salgada no beijo. A triagem neonatal já acendeu a luz amarela. Qual exame confirma?",
+    "contexto": "Rodízio de Quinta, mesa da pediatria: o neto mama bem e não engorda, e a avó já culpou o feijão. O Garçom Espetinho trouxe quatro espetos de exame; um deles confirma o diagnóstico e os outros só fazem a conta do hospital subir.",
     "palavras_chave": [
+      "infant",
       "poor weight gain",
-      "greasy stools",
-      "salty skin",
-      "newborn screening"
+      "pediatric gastroenterology",
+      "diagnostic testing"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pele salgada, fezes gordurosas e IRT alto: qual exame confirma?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pele salgada, fezes gordurosas e IRT alto: qual exame confirma?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

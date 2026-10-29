@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-10",
-  "gancho": "O Mito espera oxigênio no ponto, e o ônibus passou *vazio*",
+  "gancho": "O Mito pegou o ônibus do oxigênio, e a *linha* tem quatro pontos possíveis de problema",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito, de jaleco amassado e café na mão, está no fim de uma linha de ônibus com três pontos: um lotado de bolinhas de oxigênio sem ônibus por perto, um alagado e um com poucos passageiros. Um botão gigante de oxigênio está girado no máximo, e setinhas de manual apontam os pontos. Não fica claro qual ponto explica o problema.",
+    "cena": "Mito, de jaleco amassado e café na mão, espera no fim de uma linha de ônibus, olhando o relógio do ponto, com setinhas de manual em volta do mapa da linha.",
     "foco": "50% 35%",
-    "alt": "O Mito espera oxigênio no ponto, e o ônibus passou vazio",
+    "alt": "Mito espera no fim de uma linha de ônibus, olhando o relógio do ponto, com setinhas em volta do mapa da linha.",
     "arquivo": "dia-038.png"
   },
   "imagem_macete": {
@@ -37,7 +37,7 @@
         "quiz": "Diffusion limitation"
       },
       "C": {
-        "texto": "Low ventilation-perfusion units",
+        "texto": "Low ventilation-perfusion ratio units",
         "quiz": "Low V/Q units"
       },
       "D": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Hipoxemia na UTI, FiO2 no máximo e o PaO2 quase não sai do lugar. O Mito está no fim da linha, esperando oxigênio. A pergunta é por quê.",
+    "contexto": "Quarta do Porquê na UTI: hipoxemia, quatro mecanismos e um teste que separa todos eles. O Mito está no fim da linha esperando oxigênio, e você, no fim do bloco, esperando o intervalo.",
     "palavras_chave": [
       "ARDS",
-      "PaO2",
-      "FiO2",
-      "PEEP"
+      "mechanical ventilation",
+      "oxygenation",
+      "respiratory physiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Pneumologia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "FiO2 de 1,0 e PaO2 quase igual: qual mecanismo da hipoxemia?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "FiO2 de 1,0 e PaO2 quase igual: qual mecanismo da hipoxemia?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

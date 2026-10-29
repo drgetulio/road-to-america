@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-08",
-  "gancho": "Tombo de skate, tabaqueira doendo e um raio X dizendo *tô bem*: o que vai no espeto?",
+  "gancho": "Tombo de skate no parque e o Garçom Espetinho com o *espeto da ortopedia*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Garçom Espetinho, de espetos na mão, para ao lado de uma rampa de skate num parque. Num negatoscópio pendurado numa árvore, uma radiografia simples do punho, sem linha de fratura, sorri com um balão de fala em branco. Uma luvinha de desenho, sem pessoa, mostra uma covinha brilhando perto do polegar. A plaquinha verde e vermelha fica de lado.",
+    "cena": "Garçom Espetinho, de espetos na mão, para ao lado de uma rampa de skate num parque, onde um skate de desenho está virado de rodinhas para cima. A plaquinha verde e vermelha fica de lado.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho passa por uma rampa de skate; num negatoscópio, um raio X de punho sorri com um balão em branco, e uma luvinha mostra uma covinha brilhando.",
+    "alt": "Garçom Espetinho, de espetos na mão, para ao lado de uma rampa de skate onde um skate está virado de rodinhas para cima.",
     "arquivo": "dia-067.png"
   },
   "imagem_macete": {
@@ -31,11 +31,11 @@
     "alternativas": {
       "A": {
         "texto": "Reassurance and oral NSAIDs",
-        "quiz": "NSAIDs only"
+        "quiz": "Reassurance + NSAIDs"
       },
       "B": {
         "texto": "Open reduction and internal fixation",
-        "quiz": "ORIF now"
+        "quiz": "Open reduction (ORIF)"
       },
       "C": {
         "texto": "Elastic wrap and follow up as needed",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Queda de skate com a mão espalmada, dor na tabaqueira anatômica e um raio X que jura que não tem nada. No Rodízio de Quinta, o Garçom Espetinho traz o espeto de ortopedia e uma pergunta: o que fazer com essa resposta?",
+    "contexto": "Rodízio de Quinta na ortopedia: queda com a mão espalmada e quatro espetos, do anti-inflamatório à cirurgia. O Garçom Espetinho só serve um, e o exame físico e o raio X da vinheta decidem qual.",
     "palavras_chave": [
-      "fall on outstretched hand",
-      "wrist pain",
+      "wrist injury",
       "skateboarding",
-      "normal radiographs"
+      "orthopedics",
+      "radiographs"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#RodizioDeQuinta",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Dor na tabaqueira com raio X normal: qual é a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor na tabaqueira com raio X normal: qual é a conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

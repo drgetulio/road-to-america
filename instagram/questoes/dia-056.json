@@ -15,12 +15,12 @@
     50
   ],
   "explicacao_em": "2026-12-28",
-  "gancho": "Retrospectiva 2026: o interfone com chiclete tinha um *vizinho* no peito",
+  "gancho": "Retrospectiva 2026: o *álbum de figurinhas* do primeiro mês de estrada",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de guardanapo xadrez e chapeuzinho de fim de ano, folheia um álbum de figurinhas do ano numa mesa com confete; numa página, um prédio com interfone de botões apagados; na outra, a foto do time com dois lugares vazios. Num cantinho, um vinil pequeno faz as vezes de figurinha brilhante.",
+    "cena": "Macrô, de guardanapo xadrez e chapeuzinho de fim de ano, folheia um álbum de figurinhas numa mesa com confete. Num cantinho, um vinil pequeno faz as vezes de figurinha brilhante.",
     "foco": "50% 35%",
-    "alt": "Retrospectiva 2026: o interfone com chiclete tinha um vizinho no peito",
+    "alt": "Macrô, de chapeuzinho de fim de ano, folheia um álbum de figurinhas numa mesa com confete.",
     "arquivo": "dia-056.png"
   },
   "imagem_macete": {
@@ -34,21 +34,21 @@
     "alternativas": {
       "A": {
         "texto": "First pharyngeal pouch",
-        "quiz": "Primeira bolsa faríngea"
+        "quiz": "1st pharyngeal pouch"
       },
       "B": {
         "texto": "Third pharyngeal pouch",
-        "quiz": "Terceira bolsa faríngea",
+        "quiz": "3rd pharyngeal pouch",
         "dia": 50
       },
       "C": {
         "texto": "Fourth pharyngeal pouch",
-        "quiz": "Quarta bolsa faríngea",
+        "quiz": "4th pharyngeal pouch",
         "dia": 50
       },
       "D": {
         "texto": "Second pharyngeal pouch",
-        "quiz": "Segunda bolsa faríngea"
+        "quiz": "2nd pharyngeal pouch"
       }
     },
     "correta": "B"
@@ -76,7 +76,7 @@
     }
   },
   "legenda": {
-    "contexto": "Último remix do ano, juntando o interfone com chiclete da miastenia (dia 22) e a foto do time sem dois titulares do DiGeorge (dia 50). O bônus do macete traz o hóspede que não aparece no Gram (dia 1).",
+    "contexto": "Último remix do ano, juntando a miastenia (dia 22) e o DiGeorge (dia 50) numa pergunta de embriologia, o assunto que todo mundo deixa para o fim e o NBME coloca no começo. O bônus do macete traz o hóspede que não aparece no Gram (dia 1).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -90,12 +90,11 @@
       "#Immunology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Miastenia com massa no mediastino anterior: de qual bolsa vem o órgão?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Miastenia com massa no mediastino anterior: de qual bolsa vem o órgão?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

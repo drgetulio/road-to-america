@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-14",
-  "gancho": "Manual sem uma página ou *furo fora do lugar*: qual derruba o armário?",
+  "gancho": "Seu Allen abriu o *manual de um gene* e achou um erro. Que tipo?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Allen, a chavinha do manual de montagem, encara um armário de caixa meio montado, ainda de pé por enquanto. No chão, duas pistas: um manual com uma página faltando e uma tábua com um furo que parece fora do lugar. Setinhas de manual apontam para as duas, sem dizer qual é o problema.",
+    "cena": "Seu Allen, a chavinha do manual de montagem, encara um armário de caixa meio montado, ainda de pé por enquanto, com o manual aberto no chão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Allen encara um armário meio montado; no chão, um manual sem uma página e uma tábua com um furo fora do lugar.",
+    "alt": "Seu Allen encara um armário meio montado, com o manual aberto no chão.",
     "arquivo": "dia-073.png"
   },
   "imagem_macete": {
@@ -30,8 +30,8 @@
     "pergunta": "Which mutation most likely causes this disorder?",
     "alternativas": {
       "A": {
-        "texto": "In-frame deletion in the dystrophin gene",
-        "quiz": "In-frame DMD del"
+        "texto": "In-frame deletion within the dystrophin gene",
+        "quiz": "In-frame DMD deletion"
       },
       "B": {
         "texto": "CTG repeat expansion in DMPK",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um menino de 4 anos cai muito, sobe escada com dificuldade e apoia as mãos nas coxas para levantar do chão, com CK nas alturas e um tio materno com a mesma fraqueza. Seu Allen abriu o manual desse gene: que tipo de erro está lá?",
+    "contexto": "Quarta do Porquê com o Seu Allen: um gene enorme, um menino e quatro tipos de erro de montagem. A idade e a força da vinheta decidem qual. Genética é a matéria que mais parece manual de móvel às 2 da manhã.",
     "palavras_chave": [
-      "frequent falls",
-      "calf enlargement",
-      "creatine kinase",
-      "maternal uncle"
+      "muscle weakness",
+      "pediatric neurology",
+      "genetics",
+      "family history"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#QuartaDoPorque",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Sinal de Gowers, panturrilha grande e CK alta: qual mutação?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sinal de Gowers, panturrilha grande e CK alta: qual mutação?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

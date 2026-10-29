@@ -16,7 +16,28 @@ import { prepararImportacao } from "../../tools/importar-banco.mjs";
 const raiz = fileURLToPath(new URL("../../", import.meta.url));
 const dir = raiz + "banco-privado/";
 const ler = (p) => JSON.parse(readFileSync(p, "utf8"));
-const bps = existsSync(dir) ? readdirSync(dir).filter((n) => /^blueprint-step(1|2ck)\.json$/.test(n)).map((n) => ler(dir + n)) : [];
+/* um blueprint por Step: o principal (blueprint-step1.json, blueprint-step2ck.json) com as
+   especificações das extensões do mesmo Step (blueprint-step2ck-extensao.json) */
+const bps = (() => {
+  if (!existsSync(dir)) return [];
+  const nomes = readdirSync(dir).filter((n) => /^blueprint-step(1|2ck)(-[^.]+)?\.json$/.test(n)).sort();
+  const porStep = new Map();
+  for (const n of nomes) {
+    const bp = ler(dir + n);
+    const atual = porStep.get(bp.step);
+    porStep.set(bp.step, atual ? { ...atual, itens: [...atual.itens, ...bp.itens] } : { ...bp, itens: [...bp.itens] });
+  }
+  return [...porStep.values()];
+})();
+test("extensão do blueprint do Step 2 CK: CK-0481 a CK-0600 somam-se às 480 especificações sem colisão", { skip: bps.length ? false : "sem banco-privado/blueprint-*.json" }, () => {
+  const ck = bps.find((b) => b.step === "step2ck");
+  const ids = ck.itens.map((s) => s.spec_id);
+  assert.equal(new Set(ids).size, ids.length, "spec_id repetido entre o blueprint e a extensão");
+  if (existsSync(dir + "blueprint-step2ck-extensao.json")) {
+    assert.equal(ids.length, 600);
+    assert.ok(ids.includes("CK-0481") && ids.includes("CK-0600"));
+  }
+});
 const publicos = [...ler(raiz + "simulado/data/step1-questoes.json"), ...ler(raiz + "simulado/data/step2ck-questoes.json")];
 
 test("blueprints do banco completo: chaves do outline e formulários oficiais dentro das faixas", { skip: bps.length ? false : "sem banco-privado/blueprint-*.json" }, () => {

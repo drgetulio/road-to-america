@@ -7,24 +7,25 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Confidencialidade do adolescente",
   "conceito": "Adolescent STI testing and treatment: confidential, no parental consent needed",
-  "personagem": "Viés",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": "Dia dos Namorados (12/6).",
   "remix_de": null,
   "explicacao_em": "2027-06-13",
   "tom": null,
-  "gancho": "Dia dos Namorados no consultório: *quem fica sabendo?*",
-  "gancho_apoio": "Uma adolescente, um teste positivo e um pedido de sigilo. Qual é a conduta?",
+  "gancho": "Dia dos Namorados e a Dona Bússola *de plantão no consultório*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-223.png",
-    "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um telefone de lata com o fio solto.",
+    "cena": "Uma ponte de parque com cadeadinhos coloridos, no Dia dos Namorados, termina na porta de um consultório, onde Dona Bússola espera com o caderninho em branco. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés espia de trás de uma tabelinha na ponte dos cadeados que leva a um consultório"
+    "alt": "A ponte dos cadeados termina na porta do consultório, onde Dona Bússola espera"
   },
   "imagem_macete": {
     "arquivo": "dia-223-macete.png",
-    "cena": "Callback: a porta do consultório agora está fechada por um cadeado em forma de coração. Por baixo da porta saem uma receita dobrada e um envelope lacrado, e um telefone fixo antigo, numa mesinha ao lado, continua quieto. O Viés fecha a própria boca com um zíper.",
+    "cena": "Callback: a porta do consultório fecha com um cadeado em forma de coração, e por baixo dela sai uma receita dobrada; Dona Bússola aponta o ponteiro firme para a porta. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "IST na adolescência: trata e guarda o sigilo"
+    "alt": "A porta fecha com um cadeado de coração e a receita sai por baixo; Dona Bússola aponta firme"
   },
   "questao": {
     "vinheta": "A 16-year-old girl comes alone with vaginal discharge and dysuria for 4 days. She has one consensual sexual partner, also 16. She asks that her parents not be told. Urine pregnancy test is negative, and nucleic acid amplification testing is positive for Chlamydia trachomatis.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Obtain parental consent before treatment",
-        "quiz": "Pedir consentimento"
+        "quiz": "Get parental consent first"
       },
       "B": {
         "texto": "Notify her parents because she is a minor",
-        "quiz": "Avisar os pais"
+        "quiz": "Notify her parents"
       },
       "C": {
-        "texto": "Treat with doxycycline and keep the visit confidential",
-        "quiz": "Doxiciclina e sigilo"
+        "texto": "Treat with doxycycline and keep it confidential",
+        "quiz": "Treat; keep confidential"
       },
       "D": {
-        "texto": "Report the case to child protective services",
-        "quiz": "Notificar conselho"
+        "texto": "Report the sexual activity to child protective services",
+        "quiz": "Report to CPS"
       }
     },
     "correta": "C"
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "*Cadeado do sigilo* no consultório: IST na adolescência se testa e se trata *sem chamar os pais*. É correio elegante: só o destinatário fica sabendo.",
       "apoio": "Na imagem, a ponte dos cadeados do Dia dos Namorados termina num consultório com um cadeado em forma de coração na porta. O telefone de casa fica quieto, e a receita sai por baixo da porta.",
-      "fala": "Se você não randomizou, eu entrei. Mas nesse prontuário nem eu entro."
+      "fala": "Meu norte é o paciente: aqui o prontuário só abre com a chave dela."
     }
   },
   "legenda": {
-    "contexto": "Dezesseis anos, veio sozinha, corrimento e ardência ao urinar, um parceiro da mesma idade e um pedido: não contar aos pais. O teste deu clamídia. No Dia dos Namorados, a questão é sobre sigilo.",
+    "contexto": "Sábado Sem Viés com a Dona Bússola, no Dia dos Namorados. Uma paciente chega sozinha, e a vinheta traz a idade, o motivo da consulta, o resultado do exame e um pedido dela. Qual é a conduta?",
     "palavras_chave": [
-      "adolescent",
-      "vaginal discharge",
-      "positive NAAT",
-      "parents"
+      "sexual health",
+      "office visit",
+      "STI testing",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Clamídia aos 16 e pedido de sigilo: o que fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Clamídia aos 16 e pedido de sigilo: o que fazer?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

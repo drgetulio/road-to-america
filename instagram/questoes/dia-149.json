@@ -17,15 +17,15 @@
   "gancho_apoio": "Três já estão na roda. Qual instrumento falta para fechar o samba?",
   "imagem": {
     "arquivo": "dia-149.png",
-    "cena": "Uma roda de pagode no fundo de quintal: um coração simpático canta no centro, três músicos tocam cavaquinho, pandeiro e surdo, e uma cadeira de plástico está vazia com um tantã encostado. Dona Térmica serve cafezinho na mesa, e o relógio da cozinha, sem números, marca 3 horas.",
+    "cena": "Numa roda de pagode no fundo de quintal, um coração simpático canta no centro ao lado de uma cadeira de plástico vazia, e Dona Térmica serve cafezinho. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Roda de pagode com um coração cantando, três músicos e uma cadeira vazia; Dona Térmica serve café."
+    "alt": "Um coração canta numa roda de pagode ao lado de uma cadeira vazia; Dona Térmica serve café."
   },
   "imagem_macete": {
     "arquivo": "dia-149-macete.png",
-    "cena": "Chega o quarto músico, um cubinho de açúcar simpático carregando o tantã, senta na cadeira vazia e a roda fecha. O coração canta sorrindo, e Dona Térmica bate palma.",
+    "cena": "Callback: chega o quarto músico, um cubinho de açúcar simpático carregando um tantã, e senta na cadeira vazia; o coração canta sorrindo, e Dona Térmica bate palma. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Um cubinho de açúcar chega com o tantã, senta na cadeira vazia e completa a roda; Dona Térmica bate palma."
+    "alt": "Um cubinho de açúcar com um tantã ocupa a cadeira vazia; o coração canta e Dona Térmica aplaude."
   },
   "questao": {
     "vinheta": "A 64-year-old man has ischemic cardiomyopathy, an LVEF of 30% and NYHA class II symptoms; he is euvolemic. He takes sacubitril-valsartan, carvedilol, spironolactone and furosemide as needed. BP 112/70 mm Hg; heart rate 62/min in sinus rhythm. eGFR is 55 mL/min/1.73 m2.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Dapagliflozin",
-        "quiz": "Dapagliflozina"
+        "quiz": "Dapagliflozin"
       },
       "B": {
-        "texto": "Digoxin",
-        "quiz": "Digoxina"
+        "texto": "Hydralazine-isosorbide dinitrate",
+        "quiz": "Hydralazine-nitrate"
       },
       "C": {
-        "texto": "Diltiazem",
-        "quiz": "Diltiazem"
+        "texto": "Lisinopril",
+        "quiz": "Add lisinopril"
       },
       "D": {
         "texto": "Ivabradine",
-        "quiz": "Ivabradina"
+        "quiz": "Ivabradine"
       }
     },
     "correta": "A"
@@ -62,8 +62,8 @@
       "mineralocorticoid receptor antagonist"
     ],
     "erradas": {
-      "B": "A digoxina reduz internações e sintomas, mas não a mortalidade.",
-      "C": "O diltiazem, bloqueador de canal de cálcio não di-hidropiridínico, tem efeito inotrópico negativo e piora a ICFER.",
+      "B": "Hidralazina com dinitrato de isossorbida reduz mortalidade em pacientes negros autodeclarados que seguem sintomáticos com a terapia completa, ou em quem não tolera IECA, BRA ou ARNI; não é o próximo passo aqui.",
+      "C": "Lisinopril junto com sacubitril-valsartana é contraindicado: a dupla aumenta muito o risco de angioedema, e é preciso um intervalo de 36 horas entre os dois.",
       "D": "A ivabradina só entra com frequência de 70 ou mais em ritmo sinusal, apesar do betabloqueador, e reduz internação, não mortalidade total."
     },
     "macete": {
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "FE 30% com sacubitril-valsartana, carvedilol e espironolactona: o que falta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "FE 30% com sacubitril-valsartana, carvedilol e espironolactona: o que falta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

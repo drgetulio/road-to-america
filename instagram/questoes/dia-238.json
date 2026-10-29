@@ -16,42 +16,42 @@
   ],
   "explicacao_em": "2027-06-28",
   "tom": null,
-  "gancho": "Fazendinha no fim de semana e *xixi sumindo* na semana seguinte: quem é o culpado?",
-  "gancho_apoio": null,
+  "gancho": "Remix de Domingo: *três suspeitos no banco de espera* do Seu Néfron",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 120, 211 e 232) e um intruso.",
   "imagem": {
     "arquivo": "dia-238.png",
-    "cena": "Repartição do Seu Néfron, com a caixa de saída quase vazia e um vinil pequeno num canto da mesa. De lupa na mão, ele examina três suspeitos sentados no banco de espera: um mosquito com um fígado de touca dormindo no colo, um ônibus de torcida visitante e um bacilinho de chapéu de palha com bandeirinhas de festa junina.",
+    "cena": "Repartição do Seu Néfron: de lupa na mão, ele examina um banco de espera com três silhuetas sentadas, de costas. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron, de lupa, examina três suspeitos no banco de espera"
+    "alt": "Seu Néfron, de lupa, examina três silhuetas no banco de espera"
   },
   "imagem_macete": {
     "arquivo": "dia-238-macete.png",
-    "cena": "O bacilinho de chapéu de palha joga confete vermelho nas peneirinhas do Seu Néfron, que tenta protegê-las com as mãos; ao lado, discos vermelhos se partem como peças de quebra-cabeça e plaquetinhas somem num redemoinho. O mosquito e o ônibus voltam para o banco com seus álibis.",
+    "cena": "Callback: um bacilinho de chapéu de palha joga confete vermelho nas peneirinhas do Seu Néfron, que tenta protegê-las com as mãos, e discos vermelhos se partem como peças de quebra-cabeça. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Diarreia com sangue e rim parado: toxina Shiga"
+    "alt": "O bacilinho joga confete nas peneiras do Seu Néfron e discos vermelhos se partem"
   },
   "questao": {
     "vinheta": "A 4-year-old girl had bloody diarrhea for 3 days after a farm visit. One week later she is pale, has petechiae, and is passing little urine. Hemoglobin is 7.8 g/dL, platelets 42,000/mm3, and creatinine 2.3 mg/dL. The smear shows schistocytes. She has no history of travel or transplant.",
     "pergunta": "Which mechanism best explains her condition?",
     "alternativas": {
       "A": {
-        "texto": "Toxin that inactivates the 60S ribosomal subunit in endothelial cells",
-        "quiz": "Toxina no 60S",
+        "texto": "Shiga toxin inactivating the 60S ribosomal subunit",
+        "quiz": "Shiga toxin, 60S",
         "dia": 232
       },
       "B": {
         "texto": "Donor T cells attacking host gut epithelium",
-        "quiz": "T do doador",
+        "quiz": "Donor T cells in the gut",
         "dia": 211
       },
       "C": {
         "texto": "Dormant liver forms that reactivate and invade red cells",
-        "quiz": "Hipnozoíto",
+        "quiz": "Reactivated hypnozoites",
         "dia": 120
       },
       "D": {
         "texto": "Autoantibodies against ADAMTS13",
-        "quiz": "Anti-ADAMTS13"
+        "quiz": "Anti-ADAMTS13 antibody"
       }
     },
     "correta": "A"
@@ -79,7 +79,7 @@
     }
   },
   "legenda": {
-    "contexto": "Uma criança com diarreia com sangue na semana passada e, agora, palidez, petéquias, pouca urina e esquizócitos no sangue. Três conceitos das últimas semanas (dias 120, 211 e 232) e um intruso disputam a resposta.",
+    "contexto": "Domingo de Remix com o Seu Néfron. Uma criança com uma semana difícil, contada na vinheta junto com o hemograma, a creatinina e o esfregaço. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,9 +97,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Diarreia com sangue, esquizócitos e pouca urina: mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia com sangue, esquizócitos e pouca urina: mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

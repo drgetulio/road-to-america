@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "A trained organ procurement organization requester",
-        "quiz": "Equipe da OPO"
+        "quiz": "Trained OPO requester"
       },
       "B": {
-        "texto": "The physician who declared death",
-        "quiz": "Médico que declarou"
+        "texto": "The physician who declared death by neurologic criteria",
+        "quiz": "Physician who declared death"
       },
       "C": {
-        "texto": "The neurosurgeon who treated the patient",
-        "quiz": "Neurocirurgião"
+        "texto": "The neurosurgeon who treated him in the ICU",
+        "quiz": "Treating neurosurgeon"
       },
       "D": {
         "texto": "The hospital ethics committee chair",
-        "quiz": "Comitê de ética"
+        "quiz": "Ethics committee chair"
       }
     },
     "correta": "A"
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Quem conversa sobre doação com a família?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quem conversa sobre doação com a família?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

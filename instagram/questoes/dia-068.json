@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-09",
-  "gancho": "Cistite sem febre: a Tia Meia-Vida despacha *qual entregador*?",
+  "gancho": "Ardência para urinar e quatro *entregadores* na porta da farmácia",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura um pedido de entrega em branco. Na calçada esperam uma bicicleta de bombeiro com tanquinho de água, um helicóptero enorme estacionado no meio da rua estreita, uma ambulância e um carro de família. Ao fundo, uma caixa d'água em forma de bexiga solta fumacinha.",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura um pedido de entrega em branco, enquanto quatro entregadores diferentes, de capacete, esperam em fila na calçada.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida segura um pedido de entrega; na rua esperam uma bicicleta de bombeiro, um helicóptero enorme, uma ambulância e um carro.",
+    "alt": "Tia Meia-Vida segura um pedido de entrega em branco, enquanto quatro entregadores esperam em fila na calçada.",
     "arquivo": "dia-068.png"
   },
   "imagem_macete": {
@@ -37,7 +37,7 @@
         "quiz": "Nitrofurantoin"
       },
       "C": {
-        "texto": "IV ceftriaxone",
+        "texto": "IV ceftriaxone for 7 days",
         "quiz": "IV ceftriaxone"
       },
       "D": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Ardor para urinar, urgência, nenhuma febre e nenhuma dor lombar. Na porta da farmácia, quatro entregadores esperam o pedido, e a Tia Meia-Vida só manda um. Qual é a primeira escolha?",
+    "contexto": "Sextou na Farmácia com o antibiótico mais prescrito da vida de quem atende pronto-socorro. A Tia Meia-Vida só despacha um entregador; leia a vinheta para saber se o caso é simples ou complicado.",
     "palavras_chave": [
       "dysuria",
-      "urinary frequency",
-      "nitrites",
-      "nonpregnant woman"
+      "urinary tract infection",
+      "antibiotics",
+      "outpatient care"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#SextouNaFarmacia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Cistite simples, sem gravidez nem alergia: qual antibiótico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cistite simples, sem gravidez nem alergia: qual antibiótico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

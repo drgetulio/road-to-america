@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-09-01",
   "tom": null,
-  "gancho": "A caixa d'água solta água vermelha *sem dor* e o Seu Néfron desconfia",
-  "gancho_apoio": "A torneira parou de pingar vermelho, mas isso não encerra o caso.",
+  "gancho": "Três da manhã no telhado: *o Seu Néfron foi inspecionar a caixa d'água*",
+  "gancho_apoio": "Plantão de Terça: quatro condutas e uma caixa d'água para conferir.",
   "imagem": {
     "arquivo": "dia-303.png",
-    "cena": "Três da manhã no telhado de uma casa: Seu Néfron, de gravata e óculos na ponta do nariz, inspeciona uma caixa d'água ligada a uma longa fileira de canos; embaixo, uma torneira pinga água avermelhada num balde branco, sem drama. Ele segura o carimbo, desconfiado. Um calendário com dois quadradinhos marcados e uma maleta de encanador fechada estão no chão; no muro, um relógio sem números marca 3 horas.",
+    "cena": "Três da manhã no telhado de uma casa: Seu Néfron, de gravata e óculos na ponta do nariz, inspeciona uma caixa d'água; embaixo, uma torneira pinga num balde branco. Ele segura o carimbo, desconfiado; no muro, um relógio sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron inspeciona a caixa d'água que pinga vermelho"
+    "alt": "Seu Néfron inspeciona a caixa d'água no telhado"
   },
   "imagem_macete": {
     "arquivo": "dia-303-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Repeat urinalysis in 6 months",
-        "quiz": "Repetir EAS em 6 m"
+        "quiz": "Repeat urinalysis in 6 months"
       },
       "B": {
         "texto": "Urine cytology alone",
-        "quiz": "Só citologia"
+        "quiz": "Urine cytology alone"
       },
       "C": {
         "texto": "Renal biopsy",
-        "quiz": "Biópsia renal"
+        "quiz": "Renal biopsy"
       },
       "D": {
         "texto": "Cystoscopy and CT urography",
-        "quiz": "Cistoscopia + uro-TC"
+        "quiz": "Cystoscopy + CT urogram"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. Qual é o próximo passo?",
+    "contexto": "Plantão de Terça no telhado: o Seu Néfron subiu de gravata para inspecionar a caixa d'água às 3 da manhã. Quatro condutas na prancheta; a idade e os hábitos da vinheta decidem.",
     "palavras_chave": [
-      "painless red urine",
-      "40 pack-years",
-      "normal RBC morphology",
-      "negative culture"
+      "urology",
+      "urinalysis",
+      "older adult",
+      "diagnostic evaluation"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Urina vermelha sem dor em fumante de 40 maços-ano: qual é o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Urina vermelha sem dor em fumante de 40 maços-ano: qual é o próximo passo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

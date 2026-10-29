@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-24",
   "tom": null,
-  "gancho": "Capitã Plaqueta encontrou a avenida virada num *varal*",
-  "gancho_apoio": "Anemia com esquizócitos, plaquetas no chão, febre e confusão.",
+  "gancho": "Capitã Plaqueta chegou ao plantão e *a avenida estava interditada*",
+  "gancho_apoio": "Hoje a Capitã não organiza o trânsito: ela investiga um acidente em série.",
   "imagem": {
     "arquivo": "dia-114.png",
-    "cena": "Capitã Plaqueta, no meio de uma avenida, procura algo na caixa de ferramentas aberta. Fitas compridas e grudentas atravessam a rua de um poste a outro, com discos amarelos grudados nelas, e carrinhos vermelhos redondos que passam por baixo saem com a lataria rasgada em tiras de papel.",
+    "cena": "No meio de uma avenida, a Capitã Plaqueta apita espantada: fitas compridas e grudentas atravessam a rua de poste a poste, com discos amarelos grudados nelas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta procura algo na caixa de ferramentas; fitas grudentas atravessam a avenida e rasgam os carrinhos vermelhos."
+    "alt": "A Capitã Plaqueta apita espantada diante de fitas grudentas que atravessam a avenida, cheias de discos amarelos."
   },
   "imagem_macete": {
     "arquivo": "dia-114-macete.png",
-    "cena": "Callback: um caminhão chega trazendo uma tesoura gigante e brilhante (a plasmaférese repõe a ADAMTS13). A Capitã Plaqueta corta as fitas em pedaços pequenos, os discos amarelos se soltam e os carrinhos vermelhos passam inteiros.",
+    "cena": "Callback: a Capitã Plaqueta corta as fitas grudentas com uma tesoura gigante e brilhante (a ADAMTS13), e os carrinhos vermelhos voltam a passar inteiros. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Um caminhão traz uma tesoura gigante; a Capitã Plaqueta corta as fitas e os carrinhos passam inteiros."
+    "alt": "A Capitã Plaqueta corta as fitas com uma tesoura gigante, e os carrinhos vermelhos passam inteiros."
   },
   "questao": {
     "vinheta": "A 34-year-old woman has had fatigue, headache and intermittent confusion for 3 days. Temperature is 38.0°C. She has leg petechiae. Hemoglobin is 7.9 g/dL, platelets 14,000/mm3, LDH high and haptoglobin undetectable; the smear shows many schistocytes. Creatinine is 1.3 mg/dL. PT, aPTT and direct Coombs test are normal.",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça com a Capitã Plaqueta: anemia com hemácias rasgadas, plaquetas no chão e confusão mental. Os fatores da coagulação estão normais.",
+    "contexto": "Plantão de Terça com a Capitã Plaqueta: uma paciente, alguns dias de mal-estar e um hemograma que assusta. O esfregaço, os fatores da coagulação e o Coombs estão na vinheta. Qual é a causa por trás?",
     "palavras_chave": [
       "confusion",
       "petechiae",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Esquizócitos, plaquetas 14 mil, TP e TTPa normais: qual causa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquizócitos, plaquetas 14 mil, TP e TTPa normais: qual causa?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-02",
   "tom": null,
-  "gancho": "Refrão repetido 200 vezes, *pior que hit do verão*. E a proteína?",
+  "gancho": "Refrão repetido *mais que hit do verão*. E a proteína?",
   "gancho_apoio": "Repetição demais no lugar errado e a proteína sai de circulação. Mas como?",
   "imagem": {
     "arquivo": "dia-304.png",
-    "cena": "Uma vitrola em forma de cromossomo X, com uma rachadinha perto de uma ponta, tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
+    "cena": "Uma vitrola antiga tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
     "foco": "50% 35%",
-    "alt": "A vitrola em X presa no mesmo refrão"
+    "alt": "A vitrola presa no mesmo refrão"
   },
   "imagem_macete": {
     "arquivo": "dia-304-macete.png",
-    "cena": "A mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
+    "cena": "Callback: a mesma vitrola, agora com um X pintado na tampa, está muda, com dezenas de cadeadinhos navy trancando todos os botões. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
     "foco": "50% 45%",
     "alt": "X frágil: CGG demais metila e silencia o FMR1"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Hypermethylation of the gene promoter",
-        "quiz": "Metilação"
+        "quiz": "Promoter methylation"
       },
       "B": {
         "texto": "Toxic polyglutamine protein",
-        "quiz": "Poliglutamina tóxica"
+        "quiz": "Toxic polyglutamine"
       },
       "C": {
         "texto": "Frameshift deletion in the coding sequence",
-        "quiz": "Frameshift"
+        "quiz": "Frameshift deletion"
       },
       "D": {
         "texto": "Expanded RNA sequestering splicing proteins",
-        "quiz": "RNA sequestrador"
+        "quiz": "RNA sequestering splicing"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Menino de 6 anos com atraso no desenvolvimento e um tio materno com deficiência intelectual. O teste genético encontra o trio CGG copiado mais de 200 vezes no começo do gene FMR1. A pergunta é sobre o mecanismo que tira a proteína de circulação.",
+    "contexto": "Quarta do Porquê: a vitrola travou no refrão e o Seu Allen não acha o botão de pular. Quatro mecanismos genéticos e uma vinheta com história de família. Dica de quem já errou essa às 2 da manhã: leia em que parte do gene fica a repetição.",
     "palavras_chave": [
-      "speech delay",
-      "hand flapping",
-      "large ears",
-      "maternal uncle"
+      "genetics",
+      "developmental delay",
+      "family history",
+      "molecular mechanism"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Mais de 200 CGG no FMR1: por que a proteína some?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Mais de 200 CGG no FMR1: por que a proteína some?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

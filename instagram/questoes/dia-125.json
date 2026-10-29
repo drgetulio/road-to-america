@@ -13,39 +13,39 @@
   "remix_de": null,
   "explicacao_em": "2027-03-07",
   "tom": null,
-  "gancho": "Celular no silencioso, cadeira puxada, lenço na mesa: cenário *nota 10*. E a primeira frase?",
-  "gancho_apoio": "A Dona Bússola já viu muito estudante acertar o cenário e tropeçar na frase seguinte.",
+  "gancho": "Más notícias no consultório: *qual é a primeira frase*?",
+  "gancho_apoio": "A Dona Bússola já viu muito estudante ensaiar a frase perfeita no banho e esquecer na hora.",
   "imagem": {
     "arquivo": "dia-125.png",
-    "cena": "Dona Bússola, no banco do carona de um carrinho parado num cruzamento, segura um mapa dobrado. O GPS do painel está com a tela em branco e quatro estradas saem do cruzamento. Do retrovisor pende um quadrinho 2x2 em branco.",
+    "cena": "Dona Bússola, no banco do carona de um carrinho parado num cruzamento, segura um mapa dobrado diante de um GPS de tela em branco. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Bússola no carona, com mapa no colo, diante de um GPS de tela em branco e um cruzamento de quatro estradas."
+    "alt": "Dona Bússola no carona, com um mapa dobrado, diante de um GPS de tela em branco num cruzamento."
   },
   "imagem_macete": {
     "arquivo": "dia-125-macete.png",
-    "cena": "O alfinete vermelho pousa primeiro no ponto de partida e só depois uma rota verde se desenha pela estrada, em etapas. O ponteiro da Dona Bússola aponta para o motorista, e ela dobra o mapa, satisfeita.",
+    "cena": "Callback: um alfinete vermelho pousa primeiro no ponto de partida do mapa e só depois uma rota verde se desenha pela estrada, em etapas; a Dona Bússola dobra o mapa, satisfeita. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O alfinete pousa no ponto de partida e a rota verde aparece aos poucos; Dona Bússola dobra o mapa."
+    "alt": "Um alfinete vermelho marca o ponto de partida e depois uma rota verde se desenha; a Dona Bússola dobra o mapa."
   },
   "questao": {
     "vinheta": "A 56-year-old man returns to discuss his colon biopsy, which shows adenocarcinoma. The physician has reserved a private room, silenced her phone and sat down facing him. She has not yet shared the result.",
     "pergunta": "Which is the most appropriate initial statement by the physician?",
     "alternativas": {
       "A": {
-        "texto": "\"What have you been told about the biopsy so far?\"",
-        "quiz": "O que já sabe?"
+        "texto": "\"What have you been told about the biopsy?\"",
+        "quiz": "What do you know?"
       },
       "B": {
         "texto": "\"How much detail would you like me to give you?\"",
-        "quiz": "Quanto quer saber?"
+        "quiz": "How much do you want?"
       },
       "C": {
         "texto": "\"The biopsy shows cancer, but we have options.\"",
-        "quiz": "Já dar o resultado"
+        "quiz": "Give the result now"
       },
       "D": {
         "texto": "\"Let's schedule a CT scan before we talk.\"",
-        "quiz": "Pedir TC antes"
+        "quiz": "Order a CT first"
       }
     },
     "correta": "A"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação comunicação. Biópsia pronta, sala reservada, médica sentada de frente para o paciente e o resultado ainda guardado. A conversa difícil tem ordem, e a prova cobra o passo que vem agora.",
+    "contexto": "Sábado Sem Viés, estação comunicação. Biópsia pronta e uma conversa difícil pela frente. O que a médica já fez e o que ainda não fez está na vinheta, e a prova cobra o passo certo da ordem.",
     "palavras_chave": [
       "colon biopsy",
       "private room",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sala reservada e biópsia com câncer na mão: qual a primeira fala?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sala reservada e biópsia com câncer na mão: qual a primeira fala?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-09-29",
   "tom": null,
-  "gancho": "O guaxinim *mordeu, fugiu e deixou a conta* com o plantonista",
-  "gancho_apoio": "Dia Mundial contra a Raiva. A ferida já foi lavada, e o bicho não vai voltar para ser observado.",
+  "gancho": "Dia Mundial contra a Raiva: *a conta do acampamento chegou no plantão*",
+  "gancho_apoio": "Dia Mundial contra a Raiva. A pia já foi usada; a dúvida é o que vem depois.",
   "imagem": {
     "arquivo": "dia-331.png",
-    "cena": "Mesa de primeiros socorros de um acampamento à noite, com um relógio de parede sem números nas 3 horas pendurado numa árvore; a Dona Térmica observa um guaxinim de máscara correndo para o mato com uma comanda em branco sem pagar; ao lado, uma pia com sabão e espuma.",
+    "cena": "Mesa de primeiros socorros de um acampamento à noite, com um relógio de parede sem números nas 3 horas pendurado numa árvore; a Dona Térmica observa um guaxinim de máscara que espia de trás de uma árvore com uma comanda em branco na mão; ao lado, uma pia com sabão e espuma.",
     "foco": "50% 35%",
-    "alt": "O guaxinim mordeu, fugiu e deixou a conta com o plantonista"
+    "alt": "Um guaxinim espia o acampamento às 3 da manhã"
   },
   "imagem_macete": {
     "arquivo": "dia-331-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Rabies vaccine series alone",
-        "quiz": "Só vacina"
+        "quiz": "Vaccine alone"
       },
       "B": {
         "texto": "Rabies immune globulin alone",
-        "quiz": "Só imunoglobulina"
+        "quiz": "Immune globulin alone"
       },
       "C": {
-        "texto": "Rabies immune globulin plus vaccine series",
-        "quiz": "IG + vacina"
+        "texto": "Rabies immune globulin and vaccine",
+        "quiz": "RIG + vaccine"
       },
       "D": {
         "texto": "Observe for 10 days before treating",
-        "quiz": "Observar 10 dias"
+        "quiz": "Observe 10 days"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dia Mundial contra a Raiva. Mordida de guaxinim no acampamento, ferida já lavada, nunca tomou vacina antirrábica, e o bicho sumiu no mato. O que fazer agora?",
+    "contexto": "Dia Mundial contra a Raiva, Plantão de Terça no acampamento: um guaxinim apareceu às 3 da manhã e a ferida já foi lavada. Quatro condutas, e a caderneta de vacina do paciente está escrita na vinheta.",
     "palavras_chave": [
-      "raccoon bite",
-      "camping",
-      "no prior rabies vaccine",
-      "wound care"
+      "animal bite",
+      "wound care",
+      "emergency department",
+      "infectious disease"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Guaxinim mordeu e fugiu, ferida lavada, nunca vacinado: o que fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Guaxinim mordeu e fugiu, ferida lavada, nunca vacinado: o que fazer?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

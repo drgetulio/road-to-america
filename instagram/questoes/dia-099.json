@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-09",
   "tom": null,
-  "gancho": "Segunda de Carnaval: o vírus do beijo entra por *qual porta*?",
-  "gancho_apoio": "Febre, dor de garganta, cansaço e um baço que dá para sentir.",
+  "gancho": "Segunda de Carnaval: o folião voltou do bloco com *a garganta em greve*",
+  "gancho_apoio": "Dez dias sem energia nem para o confete. O Macrô quer saber qual célula o vírus escolheu.",
   "imagem": {
     "arquivo": "dia-099.png",
-    "cena": "Numa ladeira de paralelepípedo, Macrô, de comanda no bolso, assiste a um bloco de Carnaval passar. Um vírus redondo e espetado, de máscara de Carnaval, segura uma chave e passeia diante de quatro casinhas com portas azul, vermelha, verde e amarela.",
+    "cena": "Numa ladeira de paralelepípedo, o Macrô observa um vírus redondo e espetado, de máscara de Carnaval, que passeia com uma chave na mão diante de uma fileira de portinhas coloridas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô assiste a um bloco numa ladeira; um vírus de máscara de Carnaval passeia com uma chave diante de quatro portas coloridas."
+    "alt": "Macrô observa, numa ladeira, um vírus de máscara de Carnaval que passeia com uma chave diante de portinhas coloridas."
   },
   "imagem_macete": {
     "arquivo": "dia-099-macete.png",
-    "cena": "Callback: a chave do vírus encaixa só na porta azul (a casa B). Atrás, um segurança enorme com fantasia exagerada (o T CD8 atípico) chega para conferir. No canto, uma bola de futebol com um sinal de proibido ao lado de um balão em forma de baço.",
+    "cena": "Callback: a chave do vírus encaixa só na porta azul (a casa B), e um segurança grandalhão de fantasia exagerada (o T CD8 atípico) chega correndo para conferir. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A chave do vírus abre só a porta azul; um segurança fantasiado chega; bola de futebol proibida ao lado de um balão em forma de baço."
+    "alt": "A chave do vírus abre só a porta azul; um segurança de fantasia exagerada chega para conferir."
   },
   "questao": {
     "vinheta": "An 18-year-old student has had fever, sore throat and marked fatigue for 10 days. She has tonsillar exudates, posterior cervical lymphadenopathy and a palpable spleen tip. Blood smear shows large lymphocytes with abundant cytoplasm indenting adjacent red cells. A heterophile antibody test is positive.",
@@ -32,15 +32,15 @@
     "alternativas": {
       "A": {
         "texto": "B lymphocytes",
-        "quiz": "B cells"
+        "quiz": "B lymphocytes"
       },
       "B": {
         "texto": "CD8+ T lymphocytes",
-        "quiz": "CD8+ T cells"
+        "quiz": "CD8+ T lymphocytes"
       },
       "C": {
         "texto": "CD4+ T lymphocytes",
-        "quiz": "CD4+ T cells"
+        "quiz": "CD4+ T lymphocytes"
       },
       "D": {
         "texto": "Monocytes",
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de segunda de Carnaval: a famosa doença do beijo. Jovem com garganta inflamada, baço palpável e um esfregaço cheio de células grandes.",
+    "contexto": "Bicho de Segunda de Carnaval, sem moralismo: você no bloco e o Anki com 600 revisões esperando em casa. Na vinheta, um jovem que voltou da folia sem energia, e um hemograma que conta quem é o vírus. A pergunta é onde ele mora.",
     "palavras_chave": [
       "fever and sore throat",
       "fatigue",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Mononucleose: qual célula o vírus infecta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Mononucleose: qual célula o vírus infecta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

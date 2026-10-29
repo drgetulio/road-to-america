@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-18",
   "tom": null,
-  "gancho": "A Capitã Plaqueta voltou do plantão *tamanho P*. Quem lavou na água quente?",
-  "gancho_apoio": null,
+  "gancho": "Bicho de Segunda com convidada: *a Capitã Plaqueta veio de visita*",
+  "gancho_apoio": "Imunologia do Step 1: a matéria que todo mundo decora em lista e esquece em ordem alfabética.",
   "imagem": {
     "arquivo": "dia-197.png",
-    "cena": "Capitã Plaqueta, espantada, olha uma fila de agentes de trânsito em miniatura, do tamanho de botões, que não conseguem fechar o cruzamento. Num poste, um cachecol que pinica e uma comanda em branco; no varal, o colete dela parece ter encolhido na máquina.",
+    "cena": "Capitã Plaqueta, num cruzamento vazio, consulta uma prancheta em branco e coça a cabeça por baixo do quepe. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A Capitã Plaqueta, espantada, diante de uma fila de plaquetinhas do tamanho de botões"
+    "alt": "Capitã Plaqueta coça a cabeça diante de uma prancheta em branco"
   },
   "imagem_macete": {
     "arquivo": "dia-197-macete.png",
-    "cena": "A Capitã ergue um regador azul (WATER), que acabou de aparecer, e das gotas saem quatro ícones: uma plaquinha pequena, um cachecol que pinica, um escudo rachado e um cromossomo X; as mini-agentes ficam enfileiradas ao lado dela.",
-    "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
+    "cena": "Callback: a Capitã ergue um regador azul, e das gotas saem uma plaquinha pequena, um cachecol que pinica e um escudo rachado. Fundo limpo.",
+    "alt": "Do regador azul da Capitã saem uma plaquinha pequena, um cachecol que pinica e um escudo rachado"
   },
   "questao": {
     "vinheta": "A 14-month-old boy has had recurrent otitis media, two pneumonias, and eczema on his face and flexural areas. He has bloody diarrhea and easy bruising. Platelet count is 35,000/mm3, and platelets are small on the blood smear. A maternal uncle had similar problems.",
@@ -39,11 +39,11 @@
       },
       "C": {
         "texto": "Immune thrombocytopenia",
-        "quiz": "PTI"
+        "quiz": "ITP"
       },
       "D": {
         "texto": "Hyper-IgE syndrome",
-        "quiz": "Hiper-IgE"
+        "quiz": "Hyper-IgE syndrome"
       }
     },
     "correta": "A"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda na imunologia, com participação especial da Capitã Plaqueta. Um menino com eczema, infecções de repetição e plaquetas que chamam atenção pelo tamanho. Qual é o diagnóstico?",
+    "contexto": "Bicho de Segunda com a Capitã Plaqueta de visita. Um menino pequeno e uma lista de achados que a vinheta traz um por um. Monte o quebra-cabeça antes de votar.",
     "palavras_chave": [
-      "recurrent infections",
-      "eczema",
-      "easy bruising",
-      "small platelets"
+      "pediatrics",
+      "blood smear",
+      "family history",
+      "Step 1 immunology"
     ]
   },
   "quiz": {
-    "pergunta": "Menino, eczema, otites e plaqueta pequena: qual é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Menino, eczema, otites e plaqueta pequena: qual é?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

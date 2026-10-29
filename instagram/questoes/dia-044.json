@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-16",
-  "gancho": "Poucas plaquetas na rua e mesmo assim *engarrafamento* geral",
+  "gancho": "Pós-operatório de quadril e a Capitã Plaqueta chamada *às pressas* para o cruzamento",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Capitã Plaqueta num cruzamento quase vazio de colegas plaquetas, mas com carros engarrafados por todos os lados; no meio do nó, um carro azul em forma de seringa. Num prédio da esquina, um relógio sem números marca 3 da manhã.",
+    "cena": "Capitã Plaqueta, de colete e apito, está no meio de um cruzamento, conferindo uma prancheta com cara de preocupação. Num prédio da esquina, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Poucas plaquetas na rua e mesmo assim engarrafamento geral",
+    "alt": "Capitã Plaqueta, no meio de um cruzamento, confere uma prancheta com cara de preocupação.",
     "arquivo": "dia-044.png"
   },
   "imagem_macete": {
@@ -29,7 +29,7 @@
     "pergunta": "Which is the most appropriate next step in management?",
     "alternativas": {
       "A": {
-        "texto": "Switch to enoxaparin",
+        "texto": "Switch to subcutaneous enoxaparin",
         "quiz": "Enoxaparin"
       },
       "B": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Pós-operatório de quadril, heparina correndo, plaquetas despencando no sétimo dia e uma trombose nova na perna. A Capitã Plaqueta precisa decidir quem guinchar e quem chamar.",
+    "contexto": "Plantão de Terça com a Capitã Plaqueta: pós-operatório de quadril e quatro condutas no cruzamento, e só uma não piora o trânsito. Às 3 da manhã, a vinheta inteira vale mais que o seu palpite.",
     "palavras_chave": [
-      "unfractionated heparin",
-      "platelet count drop",
-      "deep vein thrombosis",
-      "anticoagulation"
+      "postoperative care",
+      "anticoagulation",
+      "hematology",
+      "hip replacement"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Hematology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Plaquetas caíram 60% no 7º dia, com trombose: o que iniciar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Plaquetas caíram 60% no 7º dia, com trombose: o que iniciar?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

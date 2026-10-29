@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-30",
   "tom": null,
-  "gancho": "Dor do flanco à virilha: *que exame o Seu Néfron pede?*",
-  "gancho_apoio": "Hematúria, cólica e nenhum sinal de infecção. Com contraste ou sem?",
+  "gancho": "Plantão de Terça: uma dor que *não deixa ninguém parado* e quatro exames na mesa",
+  "gancho_apoio": "Na Prometric, a dor da vinheta não te deixa ficar parado, e o relógio da prova também não.",
   "imagem": {
     "arquivo": "dia-240.png",
-    "cena": "Seu Néfron, de gravata e óculos, examina com uma lupa um cano transparente que desce em zigue-zague; dentro, uma pedrinha branca quase escondida. Na mesa ao lado, uma lata de tinta branca e um aparelho em forma de rosquinha. Na parede, o relógio sem números marca 3 horas.",
+    "cena": "Seu Néfron, de gravata e óculos, examina com uma lupa um cano transparente que desce em zigue-zague; na parede, o relógio sem números marca 3 horas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dor do flanco à virilha: que exame o Seu Néfron pede?"
+    "alt": "Seu Néfron examina com a lupa um cano transparente em zigue-zague"
   },
   "imagem_macete": {
     "arquivo": "dia-240-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Noncontrast CT of the abdomen and pelvis",
-        "quiz": "TC sem contraste"
+        "quiz": "CT without contrast"
       },
       "B": {
         "texto": "Contrast-enhanced CT of the abdomen and pelvis",
-        "quiz": "TC com contraste"
+        "quiz": "Contrast-enhanced CT"
       },
       "C": {
         "texto": "Plain abdominal radiograph",
-        "quiz": "Raio X simples"
+        "quiz": "Plain radiograph"
       },
       "D": {
         "texto": "Intravenous pyelography",
-        "quiz": "Urografia excretora"
+        "quiz": "IV pyelography"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dor súbita no flanco esquerdo que desce para a virilha, náuseas, sangue na urina e nenhum sinal de infecção. Creatinina normal. Qual é o exame de imagem inicial?",
+    "contexto": "Plantão de Terça com o Seu Néfron. Uma dor forte e típica, um exame de urina e uma creatinina descritos na vinheta. Qual é o exame de imagem inicial?",
     "palavras_chave": [
-      "flank pain",
-      "radiation to the groin",
-      "hematuria",
-      "restlessness"
+      "acute pain",
+      "urinalysis",
+      "imaging choice",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cólica renal típica: qual o exame inicial?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cólica renal típica: qual o exame inicial?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

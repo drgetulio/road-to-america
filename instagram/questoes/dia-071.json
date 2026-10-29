@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-12",
-  "gancho": "*Greve da coleta de lixo* na fábrica de linfócitos: quem parou?",
+  "gancho": "A fábrica de linfócitos *parou tudo*, e o Macrô foi chamado para a vistoria",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, de comanda no bolso, para numa rua onde sacos de lixo se empilham na calçada de uma pequena fábrica de linfócitos de chaminé parada. Um caminhão de lixo está estacionado, de capô aberto, com uma placa de greve em branco encostada nele. As janelas da fábrica estão escuras.",
+    "cena": "Macrô, de comanda no bolso, está diante do portão de uma pequena fábrica de linfócitos de chaminé parada e janelas escuras, com uma prancheta de vistoria na mão.",
     "foco": "50% 35%",
-    "alt": "Sacos de lixo se empilham na calçada de uma fábrica de linfócitos parada; o caminhão de lixo está de capô aberto, com uma placa de greve em branco.",
+    "alt": "Macrô, de prancheta de vistoria na mão, diante do portão de uma pequena fábrica de linfócitos de chaminé parada.",
     "arquivo": "dia-071.png"
   },
   "imagem_macete": {
@@ -29,19 +29,19 @@
     "pergunta": "Which mechanism best explains her lymphopenia?",
     "alternativas": {
       "A": {
-        "texto": "Defective common gamma chain",
+        "texto": "Defective IL-2 receptor common gamma chain",
         "quiz": "Common gamma chain"
       },
       "B": {
-        "texto": "Absent Bruton tyrosine kinase",
+        "texto": "Absent Bruton tyrosine kinase activity",
         "quiz": "Absent BTK"
       },
       "C": {
-        "texto": "dATP inhibition of ribonucleotide reductase",
+        "texto": "dATP inhibiting ribonucleotide reductase",
         "quiz": "dATP blocks RNR"
       },
       "D": {
-        "texto": "Defective NADPH oxidase",
+        "texto": "Defective phagocyte NADPH oxidase",
         "quiz": "NADPH oxidase"
       }
     },
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sapinho que não sai, diarreia, pneumocistose aos 5 meses e um timo que não aparece no raio X. Falta uma enzima de limpeza, e o Macrô quer saber o que o lixo acumulado travou lá dentro.",
+    "contexto": "Bicho de Segunda: uma fábrica de linfócitos parada e quatro defeitos possíveis, cada um com nome de prova. O Macrô quer saber o que travou a máquina por dentro. Se você já confundiu as imunodeficiências na véspera do simulado, hoje é dia de fazer as pazes.",
     "palavras_chave": [
-      "oral thrush",
-      "chronic diarrhea",
-      "failure to thrive",
-      "Pneumocystis pneumonia"
+      "recurrent infections",
+      "infant",
+      "immunodeficiency",
+      "lymphocytes"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#BichoDeSegunda",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "ADA ausente com T, B e NK baixos: o que trava os linfócitos?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "ADA ausente com T, B e NK baixos: o que trava os linfócitos?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -7,24 +7,25 @@
   "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
   "topico": "Psoríase",
   "conceito": "Psoriasis histology: parakeratosis, Munro microabscesses, thinned suprapapillary plates",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-24",
   "tom": null,
-  "gancho": "Mil-folhas *apressado* demais na vitrine da padaria",
-  "gancho_apoio": "Placas prateadas nos cotovelos e unhas com furinhos. O que a biópsia mostra?",
+  "gancho": "Quarta do Porquê na dermatopatologia: *o Seu Allen trouxe o microscópio*",
+  "gancho_apoio": "Dermato no Step 1: tudo é \"eritematoso\", e só a lâmina te salva.",
   "imagem": {
     "arquivo": "dia-234.png",
-    "cena": "Vitrine de padaria com um mil-folhas que não para de crescer: as camadas sobem tão rápido que a torre já passa do topo da vitrine. O Macrô, espantado, segura uma colher de pau, e setinhas de manual de montagem apontam para a torre.",
+    "cena": "Vitrine de padaria com um mil-folhas alto; Seu Allen, de avental navy, observa a torre com uma lupa, com setinhas de manual de montagem em volta. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô, espantado, diante de um mil-folhas que cresce sem parar na vitrine"
+    "alt": "Seu Allen observa com a lupa um mil-folhas alto na vitrine"
   },
   "imagem_macete": {
     "arquivo": "dia-234-macete.png",
-    "cena": "Em corte, as folhas de cima ainda têm sementinhas escuras dentro (núcleos que não sumiram) e grupinhos de bolinhas brancas amontoadas; embaixo, as colunas de massa se alongam, e a casquinha sobre elas fica bem fina. O Macrô aponta as bolinhas brancas como quem cumprimenta colegas de turma.",
+    "cena": "Callback: em corte, as folhas de cima do mil-folhas ainda têm sementinhas escuras dentro (os núcleos) e grupinhos de bolinhas brancas (os neutrófilos), e Seu Allen marca o achado com o lápis vermelho. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Psoríase: a pele sobe rápido e leva o núcleo"
+    "alt": "As folhas de cima do mil-folhas guardam sementinhas e bolinhas brancas; Seu Allen marca"
   },
   "questao": {
     "vinheta": "A 32-year-old man has sharply demarcated red plaques covered by silvery scale over the elbows, knees, and lower back. His fingernails show small pits. Gently removing the scale causes pinpoint bleeding.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Spongiosis with intraepidermal vesicles",
-        "quiz": "Espongiose"
+        "quiz": "Spongiosis with vesicles"
       },
       "B": {
-        "texto": "Parakeratosis with neutrophil collections in the stratum corneum",
-        "quiz": "Paraceratose + PMN"
+        "texto": "Parakeratosis with neutrophils in the stratum corneum",
+        "quiz": "Parakeratosis + PMNs"
       },
       "C": {
         "texto": "Subepidermal blister with eosinophils",
-        "quiz": "Bolha subepidérmica"
+        "quiz": "Subepidermal blister"
       },
       "D": {
         "texto": "Saw-tooth rete ridges with a band-like lymphocytic infiltrate",
-        "quiz": "Infiltrado em banda"
+        "quiz": "Saw-tooth band infiltrate"
       }
     },
     "correta": "B"
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "Psoríase é *mil-folhas apressado*: sobe rápido e leva o recheio junto",
       "apoio": "Na imagem, o mil-folhas da vitrine cresce tão rápido que as folhas de cima ainda têm sementinhas dentro (os núcleos) e grupinhos de bolinhas brancas (os neutrófilos); por cima das colunas, a casquinha fica fininha.",
-      "fala": "Comi, mostrei, avisei: esse mil-folhas saiu do forno com núcleo e tudo."
+      "fala": "Sobrou peça? Então faltou mecanismo: esse mil-folhas saiu do forno com núcleo e tudo."
     }
   },
   "legenda": {
-    "contexto": "Placas avermelhadas bem delimitadas, com escamas prateadas nos cotovelos, nos joelhos e na lombar, unhas com pequenas depressões e pontinhos de sangramento ao raspar a escama. O que o patologista vai ver?",
+    "contexto": "Quarta do Porquê na pele, com o Seu Allen. As lesões e onde elas ficam estão descritas na vinheta. O que o patologista vai ver na biópsia?",
     "palavras_chave": [
-      "silvery scale",
-      "nail pitting",
-      "elbows and knees",
-      "skin biopsy"
+      "skin plaques",
+      "skin biopsy",
+      "histopathology",
+      "Step 1 pathology"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Placa prateada: o que a biópsia mostra?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Placa prateada: o que a biópsia mostra?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

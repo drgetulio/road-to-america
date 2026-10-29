@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-05",
   "tom": "acolhedor",
-  "gancho": "Nódulo na mama aos 24: qual exame vem *primeiro*?",
-  "gancho_apoio": "Dia Mundial do Câncer. A maioria dos nódulos em mulheres jovens é benigna, e todo nódulo merece avaliação.",
+  "gancho": "Dia Mundial do Câncer: um nódulo na mama e *a primeira parada*",
+  "gancho_apoio": "Informação sem medo: todo nódulo na mama merece avaliação, e a ordem dos exames importa.",
   "imagem": {
     "arquivo": "dia-095.png",
-    "cena": "Garçom Espetinho, sereno, segura uma bandeja com três cúpulas fechadas, e a plaquinha verde e vermelha está em pé na mesa. Ao fundo, uma estrada calma com uma placa de distância em branco e uma leve neblina da manhã.",
+    "cena": "Garçom Espetinho, sereno, segura uma bandeja com três cúpulas fechadas. Ao fundo, uma estrada calma sob uma neblina leve da manhã. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Garçom Espetinho, sereno, com uma bandeja de três cúpulas fechadas; ao fundo, uma estrada com neblina leve."
   },
   "imagem_macete": {
     "arquivo": "dia-095-macete.png",
-    "cena": "Callback: a cúpula do meio foi aberta e revela um pequeno transdutor de ultrassom que emite ondas suaves, como círculos na água. As ondas atravessam a neblina da estrada e iluminam a placa. A plaquinha da mesa está virada para o verde.",
+    "cena": "Callback: a cúpula do meio se abre e revela um pequeno transdutor de ultrassom que emite ondas suaves, como círculos na água, que atravessam a neblina da estrada. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Cúpula aberta com um transdutor de ultrassom cujas ondas atravessam a neblina da estrada."
+    "alt": "A cúpula do meio aberta mostra um transdutor de ultrassom cujas ondas atravessam a neblina."
   },
   "questao": {
     "vinheta": "A 24-year-old woman noticed a lump in her left breast 3 weeks ago. Examination shows a 2-cm firm, mobile, nontender mass in the upper outer quadrant without skin changes, nipple discharge or axillary lymphadenopathy. No relatives have had breast or ovarian cancer.",
@@ -37,7 +37,7 @@
       },
       "B": {
         "texto": "Breast ultrasonography",
-        "quiz": "Breast ultrasound"
+        "quiz": "Breast ultrasonography"
       },
       "C": {
         "texto": "Core needle biopsy",
@@ -45,7 +45,7 @@
       },
       "D": {
         "texto": "Reexamination in 1 year",
-        "quiz": "Reexamine in 1 year"
+        "quiz": "Reexamination in 1 year"
       }
     },
     "correta": "B"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta no Dia Mundial do Câncer: informação sem medo. Mulher de 24 anos, nódulo móvel, sem história familiar. Qual é a primeira parada?",
+    "contexto": "Rodízio de Quinta no Dia Mundial do Câncer, com informação sem medo. Um nódulo palpável, uma paciente preocupada e quatro caminhos possíveis. A idade dela, que está na vinheta, decide a primeira parada.",
     "palavras_chave": [
       "breast lump",
       "mobile mass",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo de mama aos 24: primeiro exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo de mama aos 24: primeiro exame?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

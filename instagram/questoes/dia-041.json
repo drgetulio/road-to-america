@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-13",
-  "gancho": "Quatro cafezinhos por dia e um intervalo que *encosta* no 1. Pode pedir o quinto?",
+  "gancho": "Quatro cafezinhos por dia e um estudo que virou *manchete* no grupo da família",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Viés espiando atrás de uma tabela 2x2 no balcão de uma padaria, com uma xícara de cafezinho e uma baguete comprida deitada sobre uma linha pintada no balcão; um açucareiro esconde justamente o ponto em que ela encontraria a linha.",
+    "cena": "O Viés espia atrás de uma tabela 2x2 no balcão de uma padaria, onde uma baguete comprida está deitada perto de uma linha pintada no balcão; um açucareiro esconde justamente o ponto em que ela encontraria a linha.",
     "foco": "50% 35%",
-    "alt": "Quatro cafezinhos por dia e um intervalo que encosta no 1. Pode pedir o quinto?",
+    "alt": "O Viés espia atrás de uma tabela 2x2 no balcão de uma padaria; um açucareiro esconde parte de uma baguete perto de uma linha pintada.",
     "arquivo": "dia-041.png"
   },
   "imagem_macete": {
@@ -70,7 +70,7 @@
     }
   },
   "legenda": {
-    "contexto": "Um estudo de coorte, um risco relativo acima de 1 e um intervalo de confiança que pede leitura atenta. O Viés está escondido atrás do balcão da padaria.",
+    "contexto": "Sábado Sem Viés: um estudo de coorte sobre café e coração, e quatro leituras possíveis do resultado. O tio do grupo da família já escolheu a dele; você tem até amanhã.",
     "palavras_chave": [
       "cohort study",
       "coffee",
@@ -84,12 +84,11 @@
       "#Biostatistics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Como interpretar um RR de 1,30 com IC de 0,92 a 1,84?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Como interpretar um RR de 1,30 com IC de 0,92 a 1,84?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

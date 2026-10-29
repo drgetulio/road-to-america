@@ -7,8 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Neisseria meningitidis (dia 92), Translocação robertsoniana (dia 136), Legionella (dia 162)",
   "conceito": "Remix: Neisseria meningitidis + Robertsonian translocation + Legionella pneumophila",
-  "personagem": null,
-  "anfitriao": "Macrô",
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": [
     92,
@@ -21,34 +20,34 @@
   "gancho_apoio": "Remix com meningococo (dia 92), Legionella (dia 162) e robertsoniana (dia 136). Quatro fatores reais do germe, e só um derruba a pressão.",
   "imagem": {
     "arquivo": "dia-168.png",
-    "cena": "Na porta de uma república de estudantes, o Macrô, com a comanda em branco no bolso, olha três objetos no capacho: dois grãos de feijão juntinhos, um ar-condicionado de janela pingando e dois vagõezinhos engatados. Num canto do capacho, um pequeno vinil.",
+    "cena": "Na porta de uma república de estudantes, o Mito, de jaleco e café na mão, olha preocupado um termômetro de parede que sobe enquanto um manômetro ao lado desce. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô na porta de uma república olha três objetos no capacho: dois feijões, um ar-condicionado e dois vagões."
+    "alt": "Mito, na porta de uma república, olha um termômetro que sobe e um manômetro que desce."
   },
   "imagem_macete": {
     "arquivo": "dia-168-macete.png",
-    "cena": "Os dois grãos de feijão soltam faíscas de alerta em volta (a endotoxina), e o Macrô aponta para elas. O ar-condicionado e os vagõezinhos ficam de lado, cada um com um X vermelho.",
-    "alt": "Os dois feijões soltam faíscas de alerta e o Macrô aponta; o ar-condicionado e os vagões levam um X vermelho."
+    "cena": "Callback: dois grãos de feijão juntinhos soltam faíscas de alerta em volta, o manômetro da parede despenca, e o Mito, sem fôlego, senta no chão exausto. Fundo limpo.",
+    "alt": "Dois feijõezinhos soltam faíscas de alerta, o manômetro despenca e o Mito senta no chão, exausto."
   },
   "questao": {
     "vinheta": "An 18-year-old college freshman has 10 hours of fever, headache and a rapidly spreading purpuric rash on the legs. BP is 80/40 mm Hg despite fluids, and platelets are 40,000/mm3. Cerebrospinal fluid Gram stain shows gram-negative diplococci.",
     "pergunta": "Which bacterial component most directly causes his shock?",
     "alternativas": {
       "A": {
-        "texto": "IgA1 protease",
-        "quiz": "Protease de IgA1"
+        "texto": "IgA1 protease cleaving mucosal IgA",
+        "quiz": "IgA1 protease"
       },
       "B": {
-        "texto": "Type IV pili",
-        "quiz": "Pili tipo IV"
+        "texto": "Type IV pili for adhesion",
+        "quiz": "Type IV pili"
       },
       "C": {
-        "texto": "Polysaccharide capsule",
-        "quiz": "Cápsula polissacarídica"
+        "texto": "Antiphagocytic polysaccharide capsule",
+        "quiz": "Polysaccharide capsule"
       },
       "D": {
         "texto": "Lipooligosaccharide endotoxin",
-        "quiz": "LOS (endotoxina)",
+        "quiz": "LOS endotoxin",
         "dia": 92
       }
     },
@@ -73,11 +72,11 @@
     "macete": {
       "frase": "Meningococo derruba a pressão com o *LOS*, a endotoxina da dupla de feijões",
       "apoio": "Bônus: Legionella vive dentro do macrófago e não passa de pessoa para pessoa; robertsoniana junta acrocêntricos pelas pontas curtas.",
-      "fala": "Comi, mostrei, avisei. A cápsula ajuda a entrar; quem derruba a pressão é o LOS."
+      "fala": "Sem oxigênio eu não trabalho. E com LOS no sangue, a pressão também não."
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: calouro de 18 anos com febre, cefaleia, púrpura nas pernas, pressão de 80/40 apesar do soro, plaquetas baixas e diplococos gram-negativos no liquor. Qual componente bacteriano derruba a pressão?",
+    "contexto": "Remix de Domingo com o Mito, que entende de choque: um calouro de república, uma noite de febre e uma pressão que não sobe com soro. O Gram do liquor está na vinheta. Qual componente bacteriano derruba a pressão?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -85,8 +84,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Púrpura, PA 80/40 e diplococo gram-negativo no liquor: o que causa o choque?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Púrpura, PA 80/40 e diplococo gram-negativo no liquor: o que causa o choque?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

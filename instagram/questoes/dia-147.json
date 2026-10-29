@@ -21,66 +21,65 @@
   "gancho_apoio": "Remix com puberdade (dia 52), pico de LH (dia 59) e ovogênese (dia 87) numa adolescente só.",
   "imagem": {
     "arquivo": "dia-147.png",
-    "cena": "Seu Allen, de cestinha vazia na mão, procura ovos de Páscoa num jardim ensolarado: quatro ovos embrulhados em papel colorido brilhante estão escondidos na grama e atrás de vasos de flores. Num canto do jardim, um pequeno disco de vinil.",
+    "cena": "Seu Allen, de cestinha na mão, procura ovos de Páscoa num jardim ensolarado e encontra um único ovo grande, ainda embrulhado em papel brilhante, escondido atrás de um vaso. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Allen com a cestinha vazia procura quatro ovos de Páscoa embrulhados, escondidos no jardim."
+    "alt": "Seu Allen encontra no jardim um único ovo de Páscoa grande, ainda embrulhado, atrás de um vaso."
   },
   "imagem_macete": {
     "arquivo": "dia-147-macete.png",
-    "cena": "O ovo verde se abre e mostra um interruptor de parede ainda com fita listrada de obra, sem ligar os fogos de artifício que esperam ao lado. Seu Allen aperta o último parafuso do interruptor com a chavinha.",
+    "cena": "Callback: o ovo grande continua embrulhado porque o interruptor que deveria rasgar o papel ainda está com fita listrada de obra, e Seu Allen aperta o último parafuso do interruptor. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Dentro do ovo verde, um interruptor ainda em obra que não liga os fogos; Seu Allen aperta o último parafuso."
+    "alt": "O ovo segue embrulhado porque o interruptor ainda está em obra; Seu Allen aperta o último parafuso."
   },
   "questao": {
-    "vinheta": "A 13-year-old girl had breast budding at age 10 and menarche 8 months ago. Her cycles are irregular, and serial ultrasounds show follicles that grow but never rupture.",
-    "pergunta": "Which step of her reproductive axis is most likely still immature?",
+    "vinheta": "A 13-year-old girl had breast budding at age 10 and menarche 8 months ago. Her cycles are irregular. Serial ultrasounds show a dominant follicle that grows to 20 mm but never ruptures, and no LH surge is detected.",
+    "pergunta": "The oocyte inside this follicle remains arrested at which stage?",
     "alternativas": {
       "A": {
-        "texto": "Onset of pulsatile GnRH secretion",
-        "quiz": "Pulsos de GnRH",
-        "dia": 52
-      },
-      "B": {
-        "texto": "Estradiol positive feedback triggering the LH surge",
-        "quiz": "Feedback + do estradiol",
-        "dia": 59
-      },
-      "C": {
-        "texto": "Resumption of meiosis I in the dominant oocyte",
-        "quiz": "Ovócito sai da prófase I",
+        "texto": "Metaphase II",
+        "quiz": "Metaphase II",
         "dia": 87
       },
+      "B": {
+        "texto": "Prophase I",
+        "quiz": "Prophase I",
+        "dia": 87
+      },
+      "C": {
+        "texto": "Metaphase I",
+        "quiz": "Metaphase I"
+      },
       "D": {
-        "texto": "Progesterone secretion by the corpus luteum",
-        "quiz": "Progesterona lútea"
+        "texto": "Anaphase II",
+        "quiz": "Anaphase II"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Primeiros ciclos: o *feedback positivo* ainda está em obra",
+    "titulo": "Sem pico de LH, o ovócito *fica na prófase I*",
     "certa": [
-      "Nos primeiros 1 a 2 anos depois da menarca, muitos ciclos são anovulatórios: o folículo cresce e produz estradiol, mas o eixo ainda não responde ao estradiol alto e sustentado com feedback positivo, e o pico de LH não vem. Sem pico, o folículo não rompe, não há corpo lúteo e o ciclo fica irregular. O pulso de GnRH já começou, porque ela tem broto mamário e menarca."
+      "O ovócito primário fica parado na prófase I (diplóteno) desde a vida fetal. Quem libera a meiose I é o pico de LH, que nos primeiros ciclos depois da menarca muitas vezes ainda não acontece, porque o feedback positivo do estradiol amadurece aos poucos. Sem pico, o folículo cresce, não rompe, e o ovócito continua na prófase I. A parada em metáfase II só começa depois do pico, perto da ovulação."
     ],
     "termos": [
-      "anovulatory cycles",
-      "positive feedback",
+      "prophase I arrest",
+      "diplotene",
       "LH surge",
-      "menarche"
+      "anovulatory cycles"
     ],
     "erradas": {
-      "A": "Dia 52: o pulso de GnRH é o que dá a largada da puberdade, e ela já tem broto mamário (o primeiro sinal) e menarca.",
-      "C": "Dia 87: a meiose I só é retomada depois do pico de LH; aqui ela não acontece porque o pico não veio, não por defeito do ovócito.",
-      "D": "Intruso: sem ovulação não há corpo lúteo; a falta de progesterona é consequência da anovulação, não a peça imatura."
+      "A": "Dia 87: a metáfase II é a parada do ovócito que já recebeu o pico de LH e soltou o primeiro corpúsculo polar; ela só termina se houver fecundação.",
+      "C": "A metáfase I é uma passagem rápida dentro da meiose I já retomada, não uma parada que espera o pico de LH.",
+      "D": "A anáfase II só acontece depois da fecundação, quando o ovócito termina a meiose II."
     },
     "macete": {
-      "frase": "Ovo que cresce e não sai: o *feedback positivo* do estradiol ainda está em obra",
-      "apoio": "Bônus: o ovócito espera em prófase I desde antes de nascer e em metáfase II até o espermatozoide; o primeiro sinal da puberdade é o broto mamário.",
-      "fala": "Sobrou peça? Faltou o pico de LH. Nos primeiros ciclos, o interruptor ainda está na obra."
+      "frase": "*Pré-pico, prófase I*; pós-pico, metáfase II",
+      "apoio": "Pegadinha de prova: O NBME pergunta a parada certa para cada momento: prófase I do nascimento até o pico de LH, metáfase II do pico até a fecundação. Nos primeiros ciclos da adolescência, o pico pode faltar, e o folículo não rompe.",
+      "fala": "Sobrou peça? Faltou o pico de LH. Sem ele, o ovo de Páscoa fica embrulhado na prófase I."
     }
   },
   "legenda": {
-    "contexto": "Feliz Páscoa! No Remix de Domingo, uma menina de 13 anos com broto mamário aos 10, menarca há 8 meses, ciclos irregulares e folículos que crescem mas não rompem. Que peça do eixo ainda não amadureceu?",
+    "contexto": "Feliz Páscoa! No Remix de Domingo, uma adolescente com menarca recente, ciclos irregulares e um folículo que cresce mas não rompe. Os exames estão na vinheta, e a pergunta é em que ponto o ovócito ficou parado.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +93,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Menarca há 8 meses e folículo que cresce sem romper: o que falta amadurecer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Folículo que cresce e não rompe aos 13 anos: em que fase o oócito está parado?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

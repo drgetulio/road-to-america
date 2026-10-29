@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-04",
   "tom": null,
-  "gancho": "Tireoide fazendo *hora extra* com o chefe de folga: vazamento, chefe clandestino ou ordem falsa?",
-  "gancho_apoio": "Proptose, bócio difuso com sopro e captação de iodo lá em cima. O Macrô pegou o binóculo.",
+  "gancho": "Tireoide fazendo *hora extra*, e o chefe jura que não mandou ninguém trabalhar",
+  "gancho_apoio": "O Macrô pegou o binóculo para descobrir quem está dando a ordem.",
   "imagem": {
     "arquivo": "dia-183.png",
-    "cena": "Da janela do prédio vizinho, o Macrô, de binóculo e com a comanda em branco no bolso, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar, enquanto um caminhãozinho descarrega carvão no portão. Ao lado do portão há um muro baixo de tijolos e, no alto do morro, uma casinha está de luz apagada.",
+    "cena": "Da janela do prédio vizinho, o Macrô, de binóculo, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô de binóculo observa uma fábrica em forma de borboleta que solta fumaça sem parar; no morro, uma casinha apagada."
+    "alt": "O Macrô, de binóculo, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar."
   },
   "imagem_macete": {
     "arquivo": "dia-183-macete.png",
-    "cena": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva. Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
-    "alt": "O muro cai e mostra um personagem em forma de Y prendendo a campainha com fita; a casinha segue apagada."
+    "cena": "Callback: atrás do muro da fábrica aparece o culpado, um personagem em forma de Y que prendeu com fita adesiva o botão da campainha, e no alto do morro a casinha da hipófise continua apagada. Fundo limpo.",
+    "alt": "Atrás do muro, um personagem em Y prendeu a campainha com fita; a casinha no alto do morro segue apagada."
   },
   "questao": {
     "vinheta": "A 29-year-old woman has weight loss, tremor, heat intolerance, and bilateral proptosis. She has a diffuse, nontender goiter with a bruit. TSH is suppressed, and free T4 is elevated. Radioactive iodine uptake is diffusely increased.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Antibodies that destroy follicles via thyroid peroxidase",
-        "quiz": "Anti-TPO destrói"
+        "quiz": "Anti-TPO destruction"
       },
       "B": {
         "texto": "Autonomous TSH secretion by a pituitary adenoma",
-        "quiz": "Adenoma de TSH"
+        "quiz": "TSH-secreting adenoma"
       },
       "C": {
         "texto": "Release of stored hormone after viral inflammation",
-        "quiz": "Tireoidite viral"
+        "quiz": "Viral thyroiditis"
       },
       "D": {
         "texto": "IgG that stimulates the TSH receptor",
-        "quiz": "IgG ativa receptor"
+        "quiz": "TSH receptor IgG"
       }
     },
     "correta": "D"
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e uma captação de iodo alta e difusa. Qual mecanismo explica?",
+    "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado e uma hipófise em silêncio. Os olhos, o pescoço e a captação de iodo estão na vinheta. Qual mecanismo explica?",
     "palavras_chave": [
       "weight loss",
       "tremor",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

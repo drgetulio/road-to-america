@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-05",
-  "gancho": "Duas portas no balcão da Tia: qual *chave* abre só uma?",
+  "gancho": "Sexta de betabloqueador: *quatro chaves* no molho da Tia Meia-Vida, e só uma serve hoje",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida atrás do balcão de uma farmácia de interior, com um molho de chaves na mão; atrás dela há duas portas: uma com um único vitral em forma de coração e outra com dois vitrais em forma de pulmão, lado a lado.",
+    "cena": "Tia Meia-Vida, atrás do balcão de uma farmácia de interior, segura um molho de quatro chaves e escolhe uma delas com a lupa.",
     "foco": "50% 35%",
-    "alt": "Duas portas no balcão da Tia: qual chave abre só uma?",
+    "alt": "Tia Meia-Vida, atrás do balcão, escolhe com a lupa uma chave num molho de quatro.",
     "arquivo": "dia-033.png"
   },
   "imagem_macete": {
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Infarto recente, asma controlada e um betabloqueador para a prevenção secundária. A Tia Meia-Vida precisa escolher uma chave que não mexa no pulmão.",
+    "contexto": "Sextou na Farmácia com betabloqueador, o assunto em que todo mundo jura que sabe tudo até o NBME perguntar. A Tia Meia-Vida tem quatro chaves e um paciente com mais de um problema.",
     "palavras_chave": [
-      "asthma",
-      "myocardial infarction",
-      "secondary prevention",
-      "beta-blockers"
+      "beta-blockers",
+      "cardiology",
+      "pharmacology",
+      "comorbidities"
     ],
     "hashtags": [
       "#USMLE",
@@ -84,12 +84,11 @@
       "#Pharmacology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Pós-infarto com asma: qual betabloqueador poupa o brônquio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pós-infarto com asma: qual betabloqueador poupa o brônquio?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Superantígenos (dia 267), Síndrome de hiper-IgM (dia 302), Febre maculosa (dia 323)",
   "conceito": "Remix: Toxic shock syndrome toxin + Hyper-IgM syndrome + Rickettsia rickettsii",
-  "personagem": "Macrô",
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": [
     267,
@@ -16,69 +16,69 @@
   ],
   "explicacao_em": "2027-09-27",
   "tom": null,
-  "gancho": "Mancha na palma da mão: *carrapato, toxina ou meningococo?*",
-  "gancho_apoio": "Revisão de domingo com os dias 267, 302 e 323. Três suspeitos, um só começou pelos punhos.",
+  "gancho": "Domingo de manhã e *a Tia Meia-Vida abriu a farmácia mesmo assim*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-329.png",
-    "cena": "Sala de reconhecimento de delegacia: o Macrô, de detetive, com a comanda em branco no bolso, olha três suspeitos atrás do vidro: um carrapatinho de mochila de trilha, uma molécula de toxina em forma de raio de óculos escuros e uma dupla de grãos de café; os três têm pintinhas vermelhas nas mãos; num canto, um vinil pequeno encostado.",
+    "cena": "A Tia Meia-Vida abre a farmácia num domingo de manhã; no balcão, quatro frascos diferentes; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Mancha na palma da mão: carrapato, toxina ou meningococo?"
+    "alt": "Tia Meia-Vida abre a farmácia num domingo"
   },
   "imagem_macete": {
     "arquivo": "dia-329-macete.png",
-    "cena": "Callback: o Macrô aponta para o carrapatinho, cujas pegadas vermelhas num mapa de estádio entram pelos quatro portões dos cantos e vão até o centro; a toxina de óculos e a dupla de grãos de café são liberadas pela porta.",
+    "cena": "Callback: a Tia Meia-Vida entrega um frasco com uma chavinha capaz de entrar numa casinha em forma de célula; lá dentro, pequenos bastões vermelhos param de se multiplicar; os outros três frascos voltam para a prateleira, e o vinil gira no canto.",
     "foco": "50% 45%",
-    "alt": "Rash que começa nos punhos e vai ao centro: febre maculosa"
+    "alt": "Febre maculosa na suspeita: doxiciclina já"
   },
   "questao": {
     "vinheta": "A 26-year-old woman has had fever, headache, and myalgias for 5 days. Nine days ago she hiked in Tennessee. A rash began on her wrists and ankles on day 3 and now covers her palms, soles, and trunk with petechiae. Blood pressure is 112/70 mm Hg. Platelets are 76,000/mm3, and sodium is 128 mEq/L.",
-    "pergunta": "Which is the most likely diagnosis?",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
     "alternativas": {
       "A": {
-        "texto": "Toxic shock syndrome",
-        "quiz": "Choque tóxico",
+        "texto": "Clindamycin plus vancomycin",
+        "quiz": "Clindamycin + vancomycin",
         "dia": 267
       },
       "B": {
-        "texto": "Meningococcemia",
-        "quiz": "Meningococcemia"
+        "texto": "Intravenous ceftriaxone",
+        "quiz": "IV ceftriaxone"
       },
       "C": {
-        "texto": "Secondary syphilis",
-        "quiz": "Sífilis secundária"
+        "texto": "Benzathine penicillin G",
+        "quiz": "Benzathine penicillin G"
       },
       "D": {
-        "texto": "Rocky Mountain spotted fever",
-        "quiz": "Febre maculosa",
+        "texto": "Doxycycline",
+        "quiz": "Doxycycline",
         "dia": 323
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Rash que começa nos punhos e vai ao centro: *febre maculosa*",
+    "titulo": "Febre maculosa na suspeita: *doxiciclina já*",
     "certa": [
-      "Febre, cefaleia e mialgia depois de trilha no sudeste dos EUA, com rash que começa nos punhos e tornozelos e vai para palmas, plantas e tronco, plaquetopenia e hiponatremia, fecham *Rocky Mountain spotted fever* (dia 323). A *Rickettsia rickettsii* invade o endotélio e causa vasculite. Não precisa lembrar do carrapato: muita gente não percebe a picada. Tratamento: *doxycycline* já, em qualquer idade."
+      "Febre, cefaleia e mialgia depois de trilha no sudeste dos EUA, com exantema que começa nos punhos e tornozelos e vai para palmas, plantas e tronco, plaquetas baixas e sódio baixo, fecham *Rocky Mountain spotted fever* (dia 323). O tratamento é *doxycycline*, que entra já na suspeita, em qualquer idade e sem esperar sorologia, porque cada dia de atraso aumenta a mortalidade. A Rickettsia vive dentro da célula, e a doxiciclina, que bloqueia a subunidade 30S, chega até ela."
     ],
     "termos": [
       "Rocky Mountain spotted fever",
-      "Rickettsia rickettsii",
-      "centripetal rash",
-      "doxycycline"
+      "doxycycline at any age",
+      "treat on clinical suspicion",
+      "obligate intracellular"
     ],
     "erradas": {
-      "A": "O *toxic shock syndrome* (dia 267) é superantígeno: eritrodermia difusa, hipotensão e descamação das palmas depois de 1 a 2 semanas; aqui a pressão é normal e o rash é centrípeto.",
-      "B": "A *meningococcemia* também dá petéquias, mas evolui em horas, com choque, e não em 5 dias de pródromo.",
-      "C": "A *sífilis secundária* pega palmas e plantas, mas com rash maculopapular sem febre alta, plaquetopenia ou petéquias."
+      "A": "Clindamicina com vancomicina é o esquema do choque tóxico (dia 267), que vem com hipotensão e eritrodermia difusa, sem exantema que sobe dos punhos.",
+      "B": "Ceftriaxona trata a meningococcemia, que evolui em horas, com petéquias e choque; não alcança a Rickettsia, que vive dentro da célula.",
+      "C": "Penicilina benzatina trata a sífilis secundária, que também pega palmas e plantas, mas sem febre alta, cefaleia forte e plaquetopenia depois de uma trilha."
     },
     "macete": {
-      "frase": "*Entrou pelo punho e foi para o centro*: é a torcida da Rickettsia",
-      "apoio": "Choque tóxico (dia 267) é eritrodermia difusa com hipotensão e descamação depois, sem começar nos punhos. Meningococcemia corre em horas, não em 5 dias. Sífilis secundária pega palmas e plantas, mas sem febre alta, plaquetopenia ou petéquias. Bônus do dia 302: na hiper-IgM, as infecções se repetem desde bebê, não chegam de uma vez depois de uma trilha.",
-      "fala": "Comi, mostrei, avisei. O culpado entrou pelos punhos."
+      "frase": "*Exantema que sobe dos punhos depois da trilha? Doxiciclina hoje*",
+      "apoio": "A febre maculosa não espera exame: o tratamento começa na suspeita, inclusive em criança, porque o curso curto de doxiciclina não mancha dente. Bônus: na hiper-IgM (dia 302), quem falha é o CD40L, e o problema é Pneumocystis, não carrapato.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da doxiciclina na suspeita, todo mundo lembra."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 267, 302 e 323. Mulher de 26 anos com 5 dias de temperatura alta, cefaleia e mialgia depois de uma trilha, manchas que começaram nos punhos e tornozelos e chegaram às palmas e ao tronco, plaquetas de 76 mil e sódio de 128. Qual é o diagnóstico?",
+    "contexto": "Domingo de revisão: superantígenos (dia 267), hiper-IgM (dia 302) e febre maculosa (dia 323) voltaram, e a Tia Meia-Vida abriu a farmácia no domingo. Quatro tratamentos no balcão; a vinheta conta a história completa.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +94,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Trilha há 9 dias, manchas dos punhos às palmas e plaquetas 76 mil: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Exantema dos punhos para as palmas depois de trilha: qual remédio?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

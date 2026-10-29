@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "\"You should have reached acceptance by now.\"",
-        "quiz": "Já devia aceitar"
+        "quiz": "Should accept it by now"
       },
       "B": {
         "texto": "\"Grief often comes in waves, especially on meaningful dates.\"",
-        "quiz": "Luto vem em ondas"
+        "quiz": "Grief comes in waves"
       },
       "C": {
         "texto": "\"Feeling angry again means you have prolonged grief disorder.\"",
-        "quiz": "É luto prolongado"
+        "quiz": "Prolonged grief disorder"
       },
       "D": {
         "texto": "\"An antidepressant will help you move to the next stage.\"",
-        "quiz": "Antidepressivo já"
+        "quiz": "Start an antidepressant"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Ele perdeu a esposa há quatro meses. Sentiu choque, depois raiva, depois calma, e no aniversário de casamento chorou o dia inteiro. Dorme, come e trabalha. Ele pergunta se há algo errado com ele.",
+    "contexto": "Um tema delicado, tratado com cuidado. Ele perdeu a esposa há alguns meses e pergunta se o que sente é normal. A vinheta conta como tem sido o dia a dia dele, e é isso que orienta a resposta.",
     "palavras_chave": [
-      "widower",
-      "wedding anniversary",
-      "crying",
-      "patient communication"
+      "bereavement",
+      "patient communication",
+      "primary care",
+      "Step 1 behavioral science"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +91,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "A saudade voltou forte. O que responder?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "A saudade voltou forte. O que responder?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

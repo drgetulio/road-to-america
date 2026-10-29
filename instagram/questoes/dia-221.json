@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-11",
   "tom": null,
-  "gancho": "Chá de bebê com *três penetras*, e só uma dupla de espetos dá conta",
-  "gancho_apoio": "Recém-nascido com febre e fontanela abaulada. Que dupla de antibióticos cobre todo mundo?",
+  "gancho": "Rodízio de Quinta na pediatria: *uma febre* e uma escolha que não pode errar",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-221.png",
-    "cena": "Garçom de rodízio, de colete e espetos na mão, chega a uma mesa decorada de chá de bebê onde três convidados bacterianos esperam: uma correntinha de bolinhas, um bastão gordinho e um bastãozinho dando cambalhota. A plaquinha verde e vermelha está de lado na mesa.",
+    "cena": "O Garçom Espetinho, com cuidado e pensativo, segura dois espetos diante de uma mesa tranquila, com a plaquinha verde e vermelha de lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Três convidados indesejados no chá de bebê"
+    "alt": "O garçom, pensativo, segura dois espetos com cuidado diante de uma mesa tranquila"
   },
   "imagem_macete": {
     "arquivo": "dia-221-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Ampicillin plus cefotaxime",
-        "quiz": "Ampi + cefotaxima"
+        "quiz": "Ampicillin + cefotaxime"
       },
       "B": {
         "texto": "Vancomycin plus ceftriaxone",
-        "quiz": "Vanco + ceftriaxona"
+        "quiz": "Vancomycin + ceftriaxone"
       },
       "C": {
         "texto": "Clindamycin plus gentamicin",
-        "quiz": "Clinda + genta"
+        "quiz": "Clindamycin + gentamicin"
       },
       "D": {
         "texto": "Acyclovir alone",
-        "quiz": "Só aciclovir"
+        "quiz": "Acyclovir alone"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dez dias de vida, febre, mamando mal, sonolento, fontanela abaulada e líquor com neutrófilos e glicose baixa. O garçom do rodízio precisa escolher os espetos certos para cobrir três bactérias.",
+    "contexto": "Rodízio de Quinta na pediatria, com o Garçom Espetinho servindo com cuidado. Um paciente pequeno com febre e um líquor descrito na vinheta. A idade, que também está lá, decide quais bactérias entram na conta, e o esquema precisa cobrir todas.",
     "palavras_chave": [
-      "10-day-old",
-      "fever",
-      "bulging fontanelle",
-      "CSF neutrophils"
+      "pediatric fever",
+      "cerebrospinal fluid",
+      "empiric antibiotics",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "10 dias de vida e fontanela abaulada: qual esquema?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "10 dias de vida e fontanela abaulada: qual esquema?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

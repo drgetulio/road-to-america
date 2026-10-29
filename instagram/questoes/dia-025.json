@@ -7,7 +7,8 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Anafilaxia alimentar",
   "conceito": "Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.",
   "remix_de": null,
   "explicacao_em": "2026-11-27",
@@ -16,13 +17,13 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-025.png",
-    "cena": "Macrô, de guardanapo xadrez, está à mesa festiva de Thanksgiving numa churrascaria, ao lado de um peru assado no espeto. Na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa; Macrô estreita os olhos, desconfiado. A plaquinha verde e vermelha está de lado.",
+    "cena": "O Garçom Espetinho serve uma mesa festiva de Thanksgiving, com um peru assado no espeto; na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "Thanksgiving: o amendoim chegou de bigode falso dentro da torta"
+    "alt": "Garçom Espetinho serve uma mesa de Thanksgiving; uma torta esconde um amendoim de óculos escuros e bigode falso."
   },
   "imagem_macete": {
     "arquivo": "dia-025-macete.png",
-    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. Macrô vira a plaquinha para o verde, e uma caneta autoinjetora voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa. Um frasco de antialérgico espera no banco de reservas.",
+    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. O Garçom vira a plaquinha para o verde, e uma caneta autoinjetora voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa. Um frasco de antialérgico espera no banco de reservas.",
     "alt": "Chute de coxa, e já"
   },
   "questao": {
@@ -30,20 +31,20 @@
     "pergunta": "Which is the most appropriate initial treatment?",
     "alternativas": {
       "A": {
-        "texto": "Intramuscular epinephrine in the anterolateral thigh",
-        "quiz": "Adrenalina IM coxa"
+        "texto": "Intramuscular epinephrine",
+        "quiz": "IM epinephrine"
       },
       "B": {
         "texto": "Intravenous diphenhydramine",
-        "quiz": "Difenidramina IV"
+        "quiz": "IV diphenhydramine"
       },
       "C": {
         "texto": "Nebulized albuterol",
-        "quiz": "Salbutamol inalado"
+        "quiz": "Nebulized albuterol"
       },
       "D": {
         "texto": "Intravenous methylprednisolone",
-        "quiz": "Metilprednisolona IV"
+        "quiz": "IV methylprednisolone"
       }
     },
     "correta": "A"
@@ -71,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Thanksgiving nos EUA é jantar em família, e a alergia alimentar sempre aparece na mesa. No Rodízio de Quinta, o Macrô está de plantão na emergência pediátrica: urticária, chiado e pressão de 78 por 44.",
+    "contexto": "Thanksgiving nos EUA é jantar em família, e a alergia alimentar sempre aparece na mesa. No Rodízio de Quinta, o Garçom Espetinho passa com quatro remédios no espeto, e a vinheta diz o tamanho da reação.",
     "palavras_chave": [
-      "peanut",
-      "urticaria",
-      "wheezing",
-      "hypotension"
+      "Thanksgiving",
+      "food allergy",
+      "pediatric emergency",
+      "emergency care"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +90,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Anafilaxia aos 9 anos com PA 78/44: qual é o primeiro remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Anafilaxia aos 9 anos com PA 78/44: qual é o primeiro remédio?"
   },
   "exemplo": false
 }

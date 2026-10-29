@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-10",
   "tom": null,
-  "gancho": "A fábrica de colesterol *entrou em greve*. Para onde foi o LDL?",
-  "gancho_apoio": "Seis semanas de atorvastatina, LDL de 162 para 88 e uma dorzinha nas coxas. Qual é a engrenagem?",
+  "gancho": "Sextou na Farmácia com o Mito: *o LDL caiu*, e a pergunta é como",
+  "gancho_apoio": "Mito em greve: o expediente com que todo residente sonha e nenhum consegue.",
   "imagem": {
     "arquivo": "dia-250.png",
-    "cena": "Uma fábrica em forma de fígado está com uma faixa de greve em branco na porta e a engrenagem principal presa por uma trava vermelha. Mito, de jaleco amassado e café na mão, faz piquete na calçada com cara de quem não dorme desde a faculdade. Na rua, bolinhas amarelas de LDL fazem fila como na porta da padaria às 7 da manhã. No muro, uma ampulheta pequena marca o tempo.",
+    "cena": "Uma fábrica em forma de fígado com uma faixa de greve em branco na porta; Mito, de jaleco amassado e café, faz piquete na calçada com cara de quem não dorme desde a faculdade. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A fábrica de colesterol entrou em greve e o LDL faz fila na rua"
+    "alt": "Mito faz piquete diante de uma fábrica em forma de fígado em greve"
   },
   "imagem_macete": {
     "arquivo": "dia-250-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Inhibition of intestinal cholesterol absorption",
-        "quiz": "Menos absorção"
+        "quiz": "Less gut absorption"
       },
       "B": {
         "texto": "Activation of lipoprotein lipase via PPAR-alpha",
-        "quiz": "Ativa LPL"
+        "quiz": "LPL via PPAR-alpha"
       },
       "C": {
         "texto": "Increased expression of hepatic LDL receptors",
-        "quiz": "Mais receptor de LDL"
+        "quiz": "More LDL receptors"
       },
       "D": {
         "texto": "Sequestration of bile acids in the gut",
-        "quiz": "Sequestra bile"
+        "quiz": "Bile acid sequestration"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "LDL de 162 para 88 em seis semanas, e uma dorzinha nas coxas. Qual mecanismo explica a queda do LDL?",
+    "contexto": "Sextou na Farmácia com o Mito. Um remédio novo e um LDL que despencou, tudo na vinheta. Qual mecanismo explica a queda do LDL?",
     "palavras_chave": [
-      "type 2 diabetes",
+      "dyslipidemia",
       "LDL cholesterol",
-      "atorvastatin",
-      "thigh aches"
+      "lipid-lowering therapy",
+      "Step 1 pharmacology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Atorvastatina e LDL despencando: qual mecanismo baixou o LDL?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Atorvastatina e LDL despencando: qual mecanismo baixou o LDL?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

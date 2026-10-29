@@ -16,18 +16,18 @@
   ],
   "explicacao_em": "2027-05-17",
   "tom": null,
-  "gancho": "Cirrose, vômito com sangue e sódio de 116: *quem tem pressa nessa madrugada?*",
-  "gancho_apoio": null,
+  "gancho": "Remix de Domingo na madrugada: *duas pastas urgentes* e só um carimbo",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 72, 163 e 191) e um intruso.",
   "imagem": {
     "arquivo": "dia-196.png",
-    "cena": "Madrugada na repartição do Seu Néfron, com um vinil pequeno num canto da mesa. Duas pastas urgentes chegam juntas: de uma, um cano roxo em forma de cacho de uva espirra água; na outra, um saleiro quase vazio que já estava assim no mês passado. Seu Néfron, de carimbo na mão, decide qual abre primeiro.",
+    "cena": "Madrugada na repartição do Seu Néfron: duas pastas urgentes chegam juntas à mesa, e ele, de carimbo na mão, decide qual abre primeiro. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron entre um cano de uvas espirrando água e um saleiro quase vazio"
+    "alt": "Seu Néfron, de carimbo na mão, decide qual de duas pastas urgentes abrir primeiro"
   },
   "imagem_macete": {
     "arquivo": "dia-196-macete.png",
-    "cena": "Seu Néfron manda primeiro o kit do encanador para o cano de uvas: um escudo (a ceftriaxona), elásticos (a ligadura) e um relógio. A pasta do saleiro vai para a bandeja do \"devagar\", com uma lesma em cima, e uma bolsa vermelha extra é barrada por um cone.",
-    "alt": "Varizes sangrando: ceftriaxona e endoscopia em até 12 horas"
+    "cena": "Callback: Seu Néfron manda primeiro o kit do encanador para um cano roxo em forma de cacho de uva (um escudo e elásticos), e a pasta do saleiro vai para a bandeja do devagar, com uma lesma em cima. Fundo limpo.",
+    "alt": "O kit do encanador vai primeiro para o cano de uvas; a pasta do saleiro fica na bandeja do devagar"
   },
   "questao": {
     "vinheta": "A 56-year-old man with alcohol-related cirrhosis has vomited red blood twice in 2 hours. His blood pressure reads 94/58 mm Hg, heart rate 116/min; he is alert. IV fluids and octreotide are started. Hemoglobin is 8.6 g/dL. Serum sodium is 116 mEq/L, as it was last month; he has no seizures or confusion.",
@@ -35,21 +35,21 @@
     "alternativas": {
       "A": {
         "texto": "Hypertonic saline to raise sodium by 15 mEq/L in 24 hours",
-        "quiz": "Salina 3%: Na +15 em 24 h",
+        "quiz": "Hypertonic saline, +15 Na",
         "dia": 163
       },
       "B": {
         "texto": "IV ceftriaxone and endoscopy within 12 hours",
-        "quiz": "Ceftriaxona e EDA em 12 h",
+        "quiz": "Ceftriaxone + EGD in 12 h",
         "dia": 72
       },
       "C": {
         "texto": "Red cell transfusion to a hemoglobin above 10 g/dL",
-        "quiz": "Transfundir até Hb 10"
+        "quiz": "Transfuse to Hb >10"
       },
       "D": {
         "texto": "Noncontrast head CT followed by lumbar puncture",
-        "quiz": "TC de crânio e punção",
+        "quiz": "Head CT, then LP",
         "dia": 191
       }
     },
@@ -78,7 +78,7 @@
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix com o Seu Néfron: três conceitos de Step 2 CK (dias 72, 163 e 191) no mesmo plantão. Cirrose, vômito com sangue, pressão baixa e um sódio que já estava baixo no mês passado. O que entra agora?",
+    "contexto": "Domingo de Remix com o Seu Néfron. Um paciente chega de madrugada com dois problemas ao mesmo tempo, e a vinheta traz os números de cada um. O que entra agora, além do que já começou?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,8 +86,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Varizes sangrando e Na 116 crônico: o que somar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Varizes sangrando e Na 116 crônico: o que somar?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

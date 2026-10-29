@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Doença granulomatosa crônica (dia 260), Estreptococos do grupo viridans (dia 295), Gangrena gasosa (dia 309)",
   "conceito": "Remix: Chronic granulomatous disease + Viridans streptococci + Clostridium perfringens alpha toxin",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     260,
@@ -16,67 +16,68 @@
   ],
   "explicacao_em": "2027-09-13",
   "tom": null,
-  "gancho": "Ele engole bactéria como ninguém, *mas a digestão nunca começa*",
-  "gancho_apoio": "Revisão de domingo com os dias 260, 295 e 309. Um germe foi embora rápido, e isso é pista.",
+  "gancho": "Um bebê de 4 meses, *três conceitos conhecidos* e um intruso na fila",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-315.png",
-    "cena": "Macrô sentado num banquinho de cozinha, com a barriga redonda e transparente como globo de neve; lá dentro, micróbios de capacete de bombeiro descansam em redinhas, tranquilos; pela porta, uma correntinha de cocos verdes vai embora acenando; a comanda em branco no bolso; num canto, um vinil pequeno encostado.",
+    "cena": "A Capitã Plaqueta, de colete refletivo, confere uma prancheta em branco numa sala de espera de pediatria cheia de brinquedos; num banco, quatro envelopes lacrados de cores diferentes; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Ele engole bactéria como ninguém, mas a digestão nunca começa"
+    "alt": "Capitã Plaqueta confere quatro envelopes lacrados numa sala de pediatria"
   },
   "imagem_macete": {
     "arquivo": "dia-315-macete.png",
-    "cena": "Callback: atrás do Macrô aparece o fogão da cozinha com todas as bocas frias e a válvula de gás quebrada; os micróbios de capacete seguram extintores; a correntinha de cocos verdes, na porta, deixa um frasquinho de água oxigenada no balcão; o Macrô aponta para o fogão.",
+    "cena": "Callback: numa avenida em forma de vaso sanguíneo, carrinhos brancos passam reto sem conseguir frear no meio-fio, que tem ganchinhos esperando, e o trânsito engarrafa; a Capitã Plaqueta apita e mostra um freio de mão faltando. Os quatro envelopes estão abertos no banco, e o vinil continua no canto.",
     "foco": "50% 45%",
-    "alt": "DGC: o fagócito engole, mas não acende o fogão"
+    "alt": "Sem pus e com neutrófilo de sobra: faltou o CD18"
   },
   "questao": {
-    "vinheta": "A 4-year-old boy has a Staphylococcus aureus liver abscess. He had Serratia osteomyelitis at age 2 and Aspergillus pneumonia last year, but a viridans streptococcal bacteremia after a dental procedure cleared quickly with standard therapy. His umbilical cord separated at 10 days, and his neutrophil count is normal.",
-    "pergunta": "Which defect most likely explains his infections?",
+    "vinheta": "A 4-month-old boy has recurrent skin infections and a large perianal ulcer that has never formed pus. His umbilical cord separated at 6 weeks of age. Leukocyte count is 42,000/mm3 with 85% neutrophils, even between infections. A dihydrorhodamine flow cytometry test is normal.",
+    "pergunta": "Which defect most likely explains his condition?",
     "alternativas": {
       "A": {
-        "texto": "Defective β2-integrin-mediated adhesion",
-        "quiz": "Falha de integrina"
+        "texto": "Absent NADPH oxidase activity",
+        "quiz": "No NADPH oxidase",
+        "dia": 260
       },
       "B": {
         "texto": "Defective phagolysosome fusion",
-        "quiz": "Fusão do fagolisossomo"
+        "quiz": "Phagolysosome fusion defect"
       },
       "C": {
-        "texto": "Absent NADPH oxidase activity",
-        "quiz": "Sem NADPH oxidase"
+        "texto": "Absent CD18 β2 integrin",
+        "quiz": "No CD18 β2 integrin"
       },
       "D": {
         "texto": "Myeloperoxidase deficiency",
-        "quiz": "Falta de MPO"
+        "quiz": "Myeloperoxidase deficiency"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "DGC: o fagócito engole, mas *não acende o fogão*",
+    "titulo": "Sem pus e com neutrófilo de sobra: *faltou o CD18*",
     "certa": [
-      "Infecções graves por catalase-positivos (S. aureus, Serratia, Aspergillus) com neutrófilos normais e coto umbilical normal fecham *chronic granulomatous disease* (dia 260). Falta a *NADPH oxidase*, que gera superóxido no *respiratory burst*. Os catalase-positivos destroem o próprio H2O2 e sobrevivem; o viridans (dia 295) é catalase-negativo, deixa o H2O2 que o fagócito aproveita e por isso foi embora rápido. O teste é a dihidrorrodamina (DHR)."
+      "Queda tardia do coto umbilical, infecções de pele e de mucosa que não formam pus e neutrofilia alta mesmo sem infecção são a *leukocyte adhesion deficiency type 1*. Falta a *CD18*, a cadeia β2 das integrinas (como LFA-1 e Mac-1), que prende o neutrófilo ao ICAM do endotélio para ele sair do vaso. O neutrófilo sobra no sangue e não chega ao tecido, por isso não há pus. O DHR normal mostra que a explosão respiratória funciona, o que afasta a doença granulomatosa crônica (dia 260). É o intruso do domingo."
     ],
     "termos": [
-      "chronic granulomatous disease",
-      "NADPH oxidase",
-      "respiratory burst",
-      "catalase-positive organisms"
+      "leukocyte adhesion deficiency type 1",
+      "CD18 (β2 integrin)",
+      "delayed umbilical cord separation",
+      "no pus despite neutrophilia"
     ],
     "erradas": {
-      "A": "Defeito de *integrina CD18* é a deficiência de adesão leucocitária: neutrofilia, queda tardia do coto umbilical e infecções sem pus.",
-      "B": "Falha da *fusão do fagolisossomo* é Chédiak-Higashi: albinismo parcial, neuropatia e grânulos gigantes nos neutrófilos.",
-      "D": "A *falta de mieloperoxidase* costuma ser leve, com Candida no máximo, porque o superóxido continua sendo produzido."
+      "A": "Na doença granulomatosa crônica (dia 260), o neutrófilo chega e forma pus e granuloma, mas não faz superóxido; o teste de DHR viria alterado.",
+      "B": "Na Chédiak-Higashi, a fusão do fagolisossomo falha, com albinismo parcial, grânulos gigantes e neuropatia; o coto cai no tempo normal.",
+      "D": "A deficiência de mieloperoxidase costuma ser silenciosa ou dar candidíase; não atrasa a queda do coto nem tira o pus."
     },
     "macete": {
-      "frase": "*Engole mas não cozinha*: sem NADPH oxidase, o fagócito vira marmita fria",
-      "apoio": "É o fogão do dia 260. Catalase-positivos (S. aureus, Serratia, Aspergillus) desmancham o próprio H2O2 e sobrevivem dentro do fagócito. Bônus do dia 295: o viridans é catalase-negativo, entrega o H2O2 de bandeja e por isso a bacteremia passou rápido. Bônus do dia 309: gangrena gasosa não é defeito do fagócito, é a lecitinase do C. perfringens.",
-      "fala": "Engolir eu engulo. O fogão é que não acende."
+      "frase": "*Coto que não cai e ferida sem pus*: o neutrófilo não freia no endotélio",
+      "apoio": "Sem CD18, o neutrófilo passa reto pelo vaso, como carro sem freio, e o sangue fica lotado deles. Bônus do domingo: o viridans (dia 295) gruda na valva com dextrana, e o C. perfringens (dia 309) destrói o neutrófilo que chega, por isso o Gram da gangrena mostra tão poucos.",
+      "fala": "Parou, colou, coagulou. Neutrófilo sem CD18 não para nem com apito."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 260, 295 e 309. Menino de 4 anos com abscesso hepático por S. aureus, osteomielite por Serratia e pneumonia por Aspergillus, mas uma bacteremia por viridans que passou rápido. Qual defeito explica?",
+    "contexto": "Domingo de revisão: doença granulomatosa crônica (dia 260), estreptococos do grupo viridans (dia 295) e gangrena gasosa (dia 309) voltaram, e um intruso entrou na fila da pediatria. Quatro defeitos de neutrófilo; a vinheta tem um exame normal que derruba o favorito.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -92,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Abscesso por S. aureus, Aspergillus e viridans que sumiu rápido: qual defeito?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Coto umbilical tardio, ferida sem pus e neutrofilia: qual defeito?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

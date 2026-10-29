@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), SCID por deficiência de ADA (dia 71), Neisseria meningitidis (dia 92)",
   "conceito": "Remix: Chlamydia trachomatis + ADA-deficient SCID + Neisseria meningitidis",
-  "personagem": "Macrô",
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     1,
@@ -16,70 +16,69 @@
   ],
   "explicacao_em": "2027-02-08",
   "tom": null,
-  "gancho": "Bebê de 7 meses *sem timo e sem linfonodos*: quem sabotou a fábrica?",
-  "gancho_apoio": "Três conceitos já vistos (dias 1, 71 e 92) e um intruso. Só um explica o quadro.",
+  "gancho": "Véspera de Carnaval e o Gram *já está fantasiado*: quem é o folião?",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 1, 71 e 92) e um intruso. Só um nome explica a secreção.",
   "imagem": {
     "arquivo": "dia-098.png",
-    "cena": "Macrô, de comanda no bolso, banca o detetive com uma lupa diante de três pistas numa mesa: uma casinha redonda de janela acesa, uma pequena fábrica de chaminé parada e um canhãozinho de confete vermelho. Um vinil pequeno no canto.",
+    "cena": "Na véspera do Carnaval, o Seu Néfron confere com a lupa uma lâmina de microscópio onde dois feijõezinhos cor-de-rosa, fantasiados de pierrô, se escondem dentro de uma bolha maior. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô, de lupa, investiga três pistas: uma casinha de janela acesa, uma fábrica de chaminé parada e um canhãozinho de confete."
+    "alt": "Seu Néfron examina com a lupa uma lâmina onde dois feijõezinhos de pierrô se escondem dentro de uma bolha."
   },
   "imagem_macete": {
     "arquivo": "dia-098-macete.png",
-    "cena": "Callback: dentro da fábrica, sacos de lixo iguais (dATP) estão enfiados nas engrenagens da máquina de tijolos, e a esteira que produz linfócitos redondinhos parou. Na porta, o caminhão de lixo segue quebrado, e uma caixa de ferramentas aberta traz uma peça nova e uma mudinha de planta (as células-tronco do transplante).",
+    "cena": "Callback: os dois feijõezinhos pierrô recusam um pirulito em forma de M e aceitam só um cubinho de açúcar, e o Seu Néfron carimba a lâmina, satisfeito. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Sacos de lixo entopem a máquina de tijolos e a esteira de linfócitos para; caminhão de lixo quebrado na porta e caixa de ferramentas com peça nova e muda de planta."
+    "alt": "Os feijõezinhos pierrô recusam um pirulito em forma de M e aceitam só o cubinho de açúcar; Seu Néfron carimba."
   },
   "questao": {
-    "vinheta": "A 7-month-old girl has had recurrent oral thrush, chronic diarrhea and poor weight gain and is now hospitalized with Pneumocystis pneumonia. No lymph nodes are palpable, and the chest radiograph shows no thymic shadow. Blood counts show profound lymphopenia, with very low T, B and NK cells.",
-    "pergunta": "Which mechanism best explains her condition?",
+    "vinheta": "Three days after unprotected sex, a 24-year-old man notices burning on urination and a thick, yellow-green penile discharge. Microscopy of the discharge shows neutrophils packed with gram-negative diplococci. On Thayer-Martin agar, the isolate produces acid from glucose but not from maltose.",
+    "pergunta": "Which organism is most likely responsible?",
     "alternativas": {
       "A": {
-        "texto": "Obligate intracellular replication as reticulate bodies",
-        "quiz": "Reticulate bodies",
+        "texto": "Chlamydia trachomatis",
+        "quiz": "C. trachomatis",
         "dia": 1
       },
       "B": {
-        "texto": "Toxic dATP accumulation in lymphocytes",
-        "quiz": "Toxic dATP buildup",
-        "dia": 71
+        "texto": "Neisseria gonorrhoeae",
+        "quiz": "N. gonorrhoeae"
       },
       "C": {
-        "texto": "Lipooligosaccharide-triggered cytokine release",
-        "quiz": "LOS cytokine release",
+        "texto": "Neisseria meningitidis",
+        "quiz": "N. meningitidis",
         "dia": 92
       },
       "D": {
-        "texto": "Absent CD40 ligand on helper T cells",
-        "quiz": "Absent CD40 ligand"
+        "texto": "Mycoplasma genitalium",
+        "quiz": "M. genitalium"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "SCID por falta de ADA: *dATP* envenena o linfócito",
+    "titulo": "Diplococo *dentro do neutrófilo* na uretra: *gonococo*",
     "certa": [
-      "Infecções oportunistas nos primeiros meses, sem timo e sem linfonodos, com T, B e NK muito baixos, descrevem a imunodeficiência combinada grave por deficiência de adenosina desaminase (ADA-deficient SCID). Sem ADA, acumula dATP, que inibe a ribonucleotídeo redutase e trava a síntese de DNA dos linfócitos, que se dividem muito. O tratamento é transplante de células-tronco, reposição enzimática ou terapia gênica."
+      "Secreção uretral purulenta com diplococos gram-negativos dentro dos neutrófilos é a assinatura da Neisseria gonorrhoeae. O meio de Thayer-Martin seleciona as neissérias, e a fermentação desempata: o gonococo usa só glicose; o meningococo usa glicose e maltose."
     ],
     "termos": [
-      "adenosine deaminase",
-      "SCID",
-      "dATP",
-      "ribonucleotide reductase"
+      "Neisseria gonorrhoeae",
+      "intracellular gram-negative diplococci",
+      "Thayer-Martin agar",
+      "maltose fermentation"
     ],
     "erradas": {
-      "A": "Dia 1: o corpo reticulado é a forma que se replica da Chlamydia trachomatis, causa de uretrite e conjuntivite, não de falta de linfócitos.",
-      "C": "Dia 92: o LOS da Neisseria meningitidis causa choque e púrpura numa infecção aguda, sem linfopenia congênita.",
-      "D": "Intruso: a falta de CD40L é a síndrome de hiper-IgM, com IgM alta e células B presentes no sangue."
+      "A": "Dia 1: a clamídia causa uretrite com secreção mais escassa e Gram sem bactérias, porque é intracelular obrigatória e não cora; o diagnóstico é por teste de amplificação de ácido nucleico (NAAT).",
+      "C": "Dia 92: o meningococo tem o mesmo formato e também cresce no Thayer-Martin, mas fermenta maltose, além de glicose. É o bicho da meningite com púrpura, não da uretrite.",
+      "D": "Também fora dos dias revisados: o Mycoplasma genitalium causa uretrite não gonocócica e não tem parede celular, então não aparece no Gram."
     },
     "macete": {
-      "frase": "Caminhão de lixo ADA quebrado: os *sacos de dATP* travam a fábrica",
-      "apoio": "Pegadinha de prova: O NBME cobra o dATP que inibe a ribonucleotídeo redutase, o teste do pezinho com TREC baixo e a proibição de vacinas de vírus vivo.",
-      "fala": "A greve do lixo voltou. Sem coleta de ADA, a fábrica inteira para."
+      "frase": "*Go*nococo só *go*sta de glicose; *M*eningococo come glicose e *M*altose",
+      "apoio": "Pegadinha de prova: O NBME mostra o mesmo diplococo gram-negativo e separa as duas neissérias pela maltose ou pelo lugar: uretra e articulação para o gonococo, meninge e pele para o meningococo. E pede tratar a clamídia junto quando ela não foi descartada.",
+      "fala": "Na uretra, quem fica dentro do neutrófilo é o gonococo. Sem carimbo, não sai: teste de clamídia também."
     }
   },
   "legenda": {
-    "contexto": "Um bebê de 7 meses com sapinho de repetição, diarreia, pneumocistose e nenhum linfonodo palpável. Três conceitos de Step 1 voltam juntos: a clamídia, a greve do lixo na fábrica de linfócitos e o confete do meningococo. Mais um intruso.",
+    "contexto": "Remix de Domingo na véspera do Carnaval, com o Seu Néfron conferindo a papelada da uretra. A clamídia, a SCID e o meningococo já passaram por aqui. A vinheta traz a lâmina e um teste de açúcar que desempata. Camisinha também é fantasia de Carnaval.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,9 +93,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem timo e sem T, B e NK aos 7 meses: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Corrimento amarelo-esverdeado e diplococo que só fermenta glicose: qual germe?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

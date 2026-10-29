@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-13",
   "tom": null,
-  "gancho": "O porteiro da convulsão *cochilou*: quem acorda ele?",
-  "gancho_apoio": "Sulfato de magnésio, diurese caindo, reflexo sumindo e respiração lenta.",
+  "gancho": "O porteiro *cochilou no turno*: quem acorda ele?",
+  "gancho_apoio": "Uma gestante internada, um remédio na bomba de infusão e a Tia Meia-Vida de olho no relógio.",
   "imagem": {
     "arquivo": "dia-103.png",
-    "cena": "Numa farmácia de interior à noite, a Tia Meia-Vida observa por cima dos óculos um porteiro grandão em forma de pedra prateada que cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado, e no balcão um cata-vento que quase não gira.",
+    "cena": "Numa farmácia de interior à noite, a Tia Meia-Vida observa por cima dos óculos um porteiro grandão em forma de pedra prateada que cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida observa um porteiro de pedra prateada cochilando na porta da farmácia; um martelinho de reflexo parado no chão."
+    "alt": "Tia Meia-Vida observa um porteiro de pedra prateada cochilando na porta; um martelinho de reflexo parado no chão."
   },
   "imagem_macete": {
     "arquivo": "dia-103-macete.png",
-    "cena": "Callback: um gerente branco e firme, em forma de giz, com colete, bate no ombro do porteiro prateado, que acorda e se espreguiça. O martelinho de reflexo volta a quicar, e o cata-vento do balcão gira de novo.",
+    "cena": "Callback: um gerente branco e firme, em forma de giz, bate no ombro do porteiro prateado, que acorda e se espreguiça, e o martelinho de reflexo volta a quicar. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Gerente em forma de giz acorda o porteiro de pedra; o martelinho quica e o cata-vento gira."
+    "alt": "Um gerente em forma de giz acorda o porteiro prateado, e o martelinho de reflexo volta a quicar."
   },
   "questao": {
     "vinheta": "At 35 weeks' gestation, a 31-year-old woman is receiving intravenous magnesium sulfate for preeclampsia with severe features. Six hours later she is drowsy, her respiratory rate is 8/min and her patellar reflexes are absent. Urine output has fallen to 15 mL/h. The infusion is stopped.",
@@ -43,8 +43,8 @@
         "quiz": "Flumazenil"
       },
       "D": {
-        "texto": "Physostigmine",
-        "quiz": "Physostigmine"
+        "texto": "Physostigmine salicylate",
+        "quiz": "Physostigmine salicylate"
       }
     },
     "correta": "A"
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "*Joelho, pulmão, coração*: o cálcio acorda o porteiro",
       "apoio": "Pegadinha de prova: O NBME cobra a vigilância do magnésio (reflexo patelar, frequência respiratória e diurese) e a oligúria como gatilho do acúmulo; o antídoto é gluconato de cálcio.",
-      "fala": "Com o rim parado, o magnésio não vai embora nem em cinco meias-vidas."
+      "fala": "Com o rim parado, o magnésio não vai embora nem em cinco meias-vidas. E o porteiro não acorda com café."
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: gestante de 35 semanas no sulfato de magnésio, diurese caindo, reflexo sumindo e respiração em 8 por minuto. A infusão já foi suspensa. Qual remédio acorda o porteiro?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: gestante de 35 semanas internada, uma infusão que já foi suspensa e um exame físico que preocupa. O que passou do ponto está na vinheta. Qual remédio acorda o porteiro?",
     "palavras_chave": [
       "35 weeks",
       "drowsiness",
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem reflexo e FR 8 no sulfato de magnésio: qual antídoto?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem reflexo e FR 8 no sulfato de magnésio: qual antídoto?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

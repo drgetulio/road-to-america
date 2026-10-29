@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-20",
   "tom": null,
-  "gancho": "Marginal travada no colédoco: *buzinar não resolve*. Quem chama o guincho?",
-  "gancho_apoio": "Febre, dor no hipocôndrio direito e icterícia. O antibiótico já está correndo.",
+  "gancho": "Engarrafamento às 3 da manhã: *buzinar não resolve*. Quem chama o guincho?",
+  "gancho_apoio": "Plantão de Terça na central de trânsito: o soro e o antibiótico já entraram, e agora?",
   "imagem": {
     "arquivo": "dia-352.png",
-    "cena": "Cabine de controle de trânsito à noite, com um relógio de parede sem números nas 3 horas; a Dona Térmica observa pela janela um túnel amarelo bloqueado por uma pedra redonda enorme, com carrinhos parados e buzinando atrás dela, e um semáforo vermelho na entrada.",
+    "cena": "Cabine de controle de trânsito à noite, com um relógio de parede sem números nas 3 horas; a Dona Térmica observa pela janela um engarrafamento de carrinhos parados e buzinando diante de um semáforo vermelho.",
     "foco": "50% 35%",
-    "alt": "Marginal travada no colédoco: buzinar não resolve. Quem chama o guincho?"
+    "alt": "Dona Térmica vê um engarrafamento da cabine de controle"
   },
   "imagem_macete": {
     "arquivo": "dia-352-macete.png",
-    "cena": "Callback: um guincho de braço longo e flexível entra pela saída do túnel e puxa a pedra com uma cestinha na ponta; os carrinhos voltam a andar, o semáforo fica verde e a Dona Térmica anota na prancheta.",
+    "cena": "Callback: o engarrafamento era num túnel amarelo bloqueado por uma pedra redonda enorme; um guincho de braço longo e flexível entra pela saída do túnel e puxa a pedra com uma cestinha na ponta; os carrinhos voltam a andar, o semáforo fica verde e a Dona Térmica anota na prancheta.",
     "foco": "50% 45%",
     "alt": "Colangite aguda: antibiótico e biliary drainage por ERCP"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Laparoscopic cholecystectomy today",
-        "quiz": "Colecistectomia já"
+        "quiz": "Lap cholecystectomy today"
       },
       "B": {
         "texto": "HIDA scan",
-        "quiz": "Cintilografia HIDA"
+        "quiz": "HIDA scan"
       },
       "C": {
         "texto": "Antibiotics and repeat ultrasound in 1 week",
-        "quiz": "Esperar 1 semana"
+        "quiz": "Antibiotics, US in 1 week"
       },
       "D": {
         "texto": "ERCP with biliary drainage",
-        "quiz": "CPRE"
+        "quiz": "ERCP with drainage"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Febre de 39 °C, dor no lado direito da barriga e pele amarelada. O ultrassom mostra o colédoco dilatado com um cálculo. Antibiótico e soro já entraram. E agora?",
+    "contexto": "Plantão de Terça na central de trânsito: engarrafamento às 3 da manhã, carrinhos buzinando e um semáforo vermelho. O soro e o antibiótico já entraram; a vinheta mostra onde está o nó, e o NBME quer saber quem desfaz, de preferência antes do seu café esfriar.",
     "palavras_chave": [
-      "fever",
-      "right upper quadrant pain",
-      "jaundice",
-      "dilated common bile duct"
+      "emergency department",
+      "abdominal pain",
+      "infection",
+      "next step"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre, dor e icterícia com cálculo no colédoco: o que vem depois do antibiótico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, dor e icterícia com cálculo no colédoco: o que vem depois do antibiótico?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

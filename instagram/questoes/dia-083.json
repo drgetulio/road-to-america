@@ -11,7 +11,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-24",
-  "gancho": "Sigilo médico e uma ameaça *com nome e data*: até onde vai o segredo?",
+  "gancho": "Sigilo médico no consultório de terapia: *até onde vai* o segredo?",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Um cofre trancado em cima de uma pedra à beira-mar, numa tarde de sol, ao lado de um farol de listras. O Viés, sentado no cofre com a lupa, parece satisfeito com tanto segredo. No horizonte, um veleiro pequeno navega tranquilo. Na areia, uma tabela 2x2 em branco desenhada como placa.",
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Na terapia, um paciente conta que comprou uma arma e diz o nome de quem quer atingir neste fim de semana. Ele recusa internação voluntária. Até onde vai o sigilo? O tema é sério e a resposta é única.",
+    "contexto": "Sábado Sem Viés de ética: o sigilo é a base da terapia, e a prova cobra com precisão o momento em que ele cede. O tema é sério e a resposta é única; a vinheta traz o que decide.",
     "palavras_chave": [
       "psychotherapy session",
-      "threat of violence",
-      "named person",
-      "medical ethics"
+      "medical secrecy",
+      "medical ethics",
+      "safety"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#SabadoSemVies",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Ameaça com arma, alvo nomeado e data: qual é a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ameaça com arma, alvo nomeado e data: qual é a conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

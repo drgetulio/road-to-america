@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-16",
   "tom": null,
-  "gancho": "Lista na portaria: *sem oxigênio, esse antibiótico não entra*",
-  "gancho_apoio": "Pseudomonas na hemocultura, creatinina subindo e um zumbido novo no ouvido.",
+  "gancho": "Lista na portaria do Seu Néfron: *esse antibiótico só entra com convite*",
+  "gancho_apoio": "Sextou na Farmácia com o Seu Néfron na portaria: quatro mecanismos e um efeito colateral que chegou até ele.",
   "imagem": {
     "arquivo": "dia-348.png",
-    "cena": "Seu Néfron na guarita de um condomínio, com uma lista de convidados em branco, confere um carrinho de entrega que só passa pela porta de uma bactéria se mostrar um bilhete em forma de bolha de oxigênio; ao lado, a porta de outra bactéria, sem bolhas, fica fechada.",
+    "cena": "Seu Néfron na guarita de um condomínio, com uma lista de convidados em branco, confere um carrinho de entrega parado diante da porta de uma bactéria; ao lado, a porta de outra bactéria fica fechada.",
     "foco": "50% 35%",
-    "alt": "Lista na portaria: sem oxigênio, esse antibiótico não entra"
+    "alt": "Seu Néfron confere um carrinho de entrega na guarita"
   },
   "imagem_macete": {
     "arquivo": "dia-348-macete.png",
-    "cena": "Callback: dentro da bactéria, o carrinho emperra a metade menor de uma impressora de duas partes, que solta formulários com rabiscos trocados; do lado de fora, o Seu Néfron segura as costas, ao lado de um cone vermelho, e a Tia Meia-Vida aponta para uma concha do mar com etiqueta vermelha.",
+    "cena": "Callback: o carrinho só passou pela porta porque mostrou um bilhete em forma de bolha de oxigênio; dentro da bactéria, ele emperra a metade menor de uma impressora de duas partes, que solta formulários com rabiscos trocados; do lado de fora, o Seu Néfron segura as costas, ao lado de um cone vermelho, e a Tia Meia-Vida aponta para uma concha do mar com etiqueta vermelha.",
     "foco": "50% 45%",
     "alt": "Aminoglicosídeos: 30S e entrada que depende de O2"
   },
@@ -31,20 +31,20 @@
     "pergunta": "Which mechanism best describes this drug?",
     "alternativas": {
       "A": {
-        "texto": "Binding the 30S subunit, causing mRNA misreading",
-        "quiz": "Liga 30S"
+        "texto": "Binding 30S, causing mRNA misreading",
+        "quiz": "30S, mRNA misreading"
       },
       "B": {
         "texto": "Inhibiting 50S peptidyl transferase",
-        "quiz": "Inibe 50S"
+        "quiz": "50S peptidyl transferase"
       },
       "C": {
         "texto": "Inhibiting DNA gyrase",
-        "quiz": "Inibe DNA girase"
+        "quiz": "DNA gyrase"
       },
       "D": {
         "texto": "Binding D-Ala-D-Ala cell wall precursors",
-        "quiz": "Liga D-Ala-D-Ala"
+        "quiz": "D-Ala-D-Ala binding"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dez dias de antibiótico venoso para Pseudomonas, creatinina dobrando, zumbido e desequilíbrio. E um detalhe: o remédio não funciona contra anaeróbios. Qual é o mecanismo?",
+    "contexto": "Sextou na Farmácia com o Seu Néfron na portaria: um antibiótico venoso entrou, e dez dias depois o porteiro começou a reclamar. Quatro mecanismos de antibiótico; a última frase da vinheta é a dica clássica que o NBME nunca cansa de repetir.",
     "palavras_chave": [
-      "Pseudomonas bacteremia",
-      "rising creatinine",
-      "tinnitus",
-      "oxygen-dependent uptake"
+      "antibiotics",
+      "hospital medicine",
+      "adverse effects",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pseudomonas, creatinina subindo e zumbido: como age esse antibiótico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pseudomonas, creatinina subindo e zumbido: como age esse antibiótico?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

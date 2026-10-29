@@ -11,12 +11,12 @@
   "gancho_data": "Ano Novo.",
   "remix_de": null,
   "explicacao_em": "2027-01-02",
-  "gancho": "Réveillon com metronidazol: por que o brinde *virou mal-estar*?",
+  "gancho": "Ano Novo, roupa branca e uma *receita* na bolsa: a Tia Meia-Vida fica de olho",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida, de roupa branca de réveillon, numa praia à meia-noite com fogos ao fundo. Ela segura uma taça de suco de uva roxo e, com a outra mão, impede uma rolha de espumante de estourar. Na areia, um frasco de comprimidos sem rótulo.",
+    "cena": "Tia Meia-Vida, de roupa branca de réveillon, numa praia à meia-noite com fogos ao fundo, segura uma taça de suco de uva roxo e acena para o mar.",
     "foco": "50% 35%",
-    "alt": "Réveillon com metronidazol: por que o brinde virou mal-estar?",
+    "alt": "Tia Meia-Vida, de roupa branca de réveillon, segura uma taça de suco de uva numa praia com fogos ao fundo.",
     "arquivo": "dia-061.png"
   },
   "imagem_macete": {
@@ -30,19 +30,19 @@
     "alternativas": {
       "A": {
         "texto": "Alcohol dehydrogenase",
-        "quiz": "Alcohol DH"
+        "quiz": "Alcohol dehydrogenase"
       },
       "B": {
         "texto": "Aldehyde dehydrogenase",
-        "quiz": "Aldehyde DH"
+        "quiz": "Aldehyde dehydrogenase"
       },
       "C": {
-        "texto": "Cytochrome P450 2E1",
-        "quiz": "CYP2E1"
+        "texto": "Hepatic cytochrome P450 2E1",
+        "quiz": "Cytochrome P450 2E1"
       },
       "D": {
         "texto": "Monoamine oxidase",
-        "quiz": "MAO"
+        "quiz": "Monoamine oxidase (MAO)"
       }
     },
     "correta": "B"
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Ano Novo, roupa branca, sete ondas e um antibiótico na bolsa. Ela brindou com uma taça, e a noite virou do avesso em 20 minutos. A Tia Meia-Vida quer saber qual catraca travou.",
+    "contexto": "Ano Novo, roupa branca, sete ondas e o primeiro Sextou na Farmácia de 2027. A Tia Meia-Vida começa o ano com uma pergunta de enzima que o NBME adora.",
     "palavras_chave": [
-      "bacterial vaginosis",
-      "alcohol",
-      "facial flushing",
-      "drug reaction"
+      "New Year",
+      "enzymes",
+      "drug reaction",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#Reveillon",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Metronidazol e uma taça no réveillon: qual enzima ficou travada?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metronidazol e uma taça no réveillon: qual enzima ficou travada?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

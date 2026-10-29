@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix do X que o pai não passa: Agamaglobulinemia de Bruton (dia 8), Distrofia muscular de Duchenne (dia 73), Síndrome de Wiskott-Aldrich (dia 197)",
   "conceito": "X-linked inheritance remix: Bruton agammaglobulinemia + Duchenne muscular dystrophy + Wiskott-Aldrich syndrome",
-  "personagem": "Macrô",
+  "personagem": "Capitã Plaqueta",
   "gancho_data": "Dia dos Pais (segundo domingo de agosto, 8/8/2027): herança ligada ao X.",
   "remix_de": [
     8,
@@ -17,69 +17,68 @@
   "explicacao_em": "2027-08-09",
   "tom": null,
   "gancho": "Pai dá *o time e o Y*. E o X do filho?",
-  "gancho_apoio": "Dia dos Pais com três genes do X e um intruso. Eczema, otite e petéquias num menino de 2 anos.",
+  "gancho_apoio": "Dia dos Pais com três genes do X que já passaram por aqui e um intruso na lista.",
   "imagem": {
     "arquivo": "dia-280.png",
-    "cena": "Almoço de Dia dos Pais: numa cadeira, uma camisa de futebol listrada grande; na cadeirinha ao lado, a mesma camisa em miniatura e, em cima dela, um cromossomo de pelúcia baixinho de presente. No lugar da mãe, uma caixa de presente com um cromossomo de pelúcia comprido e laço. Macrô, de guardanapo xadrez, serve farofa e olha para a caixinha, curioso. Num canto, um vinil pequeno serve de descanso de panela.",
+    "cena": "Almoço de Dia dos Pais: na cadeirinha, uma camisa de futebol em miniatura com um cromossomo de pelúcia baixinho em cima; ao lado, uma caixa de presente com um cromossomo de pelúcia comprido e laço. A Capitã Plaqueta, de colete refletivo, olha para a caixa, curiosa. Num canto, um vinil pequeno serve de descanso de panela.",
     "foco": "50% 35%",
     "alt": "Almoço de Dia dos Pais com o presente do pai e o da mãe"
   },
   "imagem_macete": {
     "arquivo": "dia-280-macete.png",
-    "cena": "Macrô abre a caixa da mãe: o cromossomo comprido tem uma pecinha faltando bem onde deveria segurar um andaime minúsculo. Sem ela, plaquetinhas pequenas rolam da mesa, uma folhinha de urtiga de desenho pousa na camisa pequena e notas musicais em forma de orelha flutuam. Dois outros presentes da família, um halter e uma portinha de escola, continuam fechados na mesa.",
+    "cena": "Callback: a Capitã Plaqueta abre a caixa da mãe e acha o cromossomo comprido com uma tomada coletiva faltando; vários plugues diferentes ficam sem ter onde ligar, e soldadinhos pequenos de dois uniformes não saem do quartel. A camisa pequena de futebol continua na cadeirinha, e dois presentes da família, um halter e um ursinho de pelúcia, seguem fechados na mesa.",
     "foco": "50% 45%",
-    "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
+    "alt": "Sem T e sem NK, com B: cadeia gama comum"
   },
   "questao": {
-    "vinheta": "A 2-year-old boy has eczema, recurrent otitis media, and petechiae. Platelet count is 38,000/mm3 with small platelets. Serum IgM is low and IgE is high. His father and paternal grandfather are healthy; a maternal uncle died in childhood from bleeding.",
+    "vinheta": "A 6-month-old boy has oral thrush, chronic diarrhea, poor weight gain, and now Pneumocystis jirovecii pneumonia. No thymic shadow is seen. T cells and NK cells are nearly absent, but B cells are normal in number. His maternal uncle died of infection in infancy.",
     "pergunta": "A defect in which protein is most likely?",
     "alternativas": {
       "A": {
         "texto": "Bruton tyrosine kinase",
-        "quiz": "BTK",
+        "quiz": "Bruton tyrosine kinase",
         "dia": 8
       },
       "B": {
-        "texto": "CD40 ligand",
-        "quiz": "Ligante de CD40"
+        "texto": "Adenosine deaminase",
+        "quiz": "Adenosine deaminase"
       },
       "C": {
-        "texto": "Dystrophin",
-        "quiz": "Distrofina",
-        "dia": 73
+        "texto": "WAS protein (WASp)",
+        "quiz": "WAS protein",
+        "dia": 197
       },
       "D": {
-        "texto": "WAS protein (WASp)",
-        "quiz": "Proteína WAS",
-        "dia": 197
+        "texto": "Common gamma chain",
+        "quiz": "Common gamma chain"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Plaqueta pequena, eczema e infecção: *Wiskott-Aldrich*",
+    "titulo": "Sem T e sem NK, com B: *cadeia gama comum*",
     "certa": [
-      "Eczema, infecções de repetição e *plaquetopenia com plaquetas pequenas* num menino, com tio materno afetado, são a tríade da *Wiskott-Aldrich syndrome* (dia 197): falta a *WAS protein*, que organiza o citoesqueleto de actina de linfócitos e plaquetas. O tio materno afetado e o pai saudável contam a história da herança *X-linked recessive*: a mãe é portadora, e o pai passa o Y para o filho, nunca o X."
+      "Candidíase oral, diarreia crônica, baixo ganho de peso e Pneumocystis aos 6 meses, sem sombra do timo, com linfócitos T e NK quase ausentes e B presentes, formam a *X-linked SCID* (T-B+NK-). Falta a *common gamma chain* (IL2RG), peça que os receptores de IL-2, IL-4, IL-7, IL-9, IL-15 e IL-21 dividem: sem a IL-7 não se forma o linfócito T, e sem a IL-15 não se forma o NK. O B até existe, mas sem a ajuda do T não faz anticorpo. O tio materno conta a herança *X-linked recessive*: a mãe é portadora e o pai passa o Y. O tratamento é o transplante de células-tronco hematopoéticas. É o intruso do domingo."
     ],
     "termos": [
-      "Wiskott-Aldrich syndrome",
-      "WAS protein",
-      "X-linked recessive",
-      "microthrombocytopenia"
+      "X-linked SCID",
+      "common gamma chain (IL2RG)",
+      "T-B+NK- phenotype",
+      "X-linked recessive"
     ],
     "erradas": {
-      "A": "Sem BTK (dia 8), faltam células B e todas as imunoglobulinas; não há eczema nem plaquetas pequenas.",
-      "B": "Intruso: a falta do ligante de CD40 dá a hiper-IgM ligada ao X, com IgM normal ou alta e Pneumocystis, sem plaquetopenia.",
-      "C": "A distrofina (dia 73) é do músculo: Duchenne dá fraqueza proximal e sinal de Gowers, não eczema nem petéquias."
+      "A": "Na agamaglobulinemia de Bruton (dia 8), também ligada ao X, faltam os linfócitos B e os T estão normais; as infecções são bacterianas, depois dos 6 meses.",
+      "B": "A falta de adenosina desaminase também causa SCID, mas é autossômica recessiva e derruba T, B e NK juntos (T-B-NK-), pelo acúmulo de dATP tóxico.",
+      "C": "Na Wiskott-Aldrich (dia 197), ligada ao X, aparecem eczema, plaquetas pequenas e baixas e infecções, com linfócitos T e NK presentes."
     },
     "macete": {
-      "frase": "Pai passa *o sobrenome, o time e o Y*; o X do menino vem da mãe",
-      "apoio": "No Dia dos Pais, os três genes da revisão moram no X: BTK (Bruton), distrofina (Duchenne) e a proteína WAS. O que toca hoje é o da plaqueta pequena, da pele que coça e da otite que volta: Wiskott-Aldrich, o andaime de actina que falta. O pai saudável não passa nada disso: ele dá o Y e o time.",
-      "fala": "Comi, mostrei, avisei. E o pai só passou o time."
+      "frase": "*Gama comum é a tomada coletiva*: sem ela, a IL-7 não liga o T e a IL-15 não liga o NK",
+      "apoio": "A cadeia gama é a tomada que vários receptores de interleucina dividem. Sem ela, o timo nem monta o time de T e de NK. Bônus do dia 73: a distrofina de Duchenne é outro gene do X que o pai nunca passa para o filho; ele só passa o sobrenome, o time e o Y.",
+      "fala": "Parou, colou, coagulou. Hoje o trânsito parado é o dos linfócitos."
     }
   },
   "legenda": {
-    "contexto": "Dia dos Pais com três conceitos ligados ao X que já passaram por aqui (dias 8, 73 e 197) e um intruso. Menino de 2 anos com eczema, otites e petéquias; o pai e o avô paterno são saudáveis. Qual peça do X falhou?",
+    "contexto": "Dia dos Pais no Remix de Domingo: três genes do X que já apareceram no feed (dias 8, 73 e 197) e um intruso. Pai passa o sobrenome, o time e o Y; o resto da história está na vinheta. No Prometric não tem selo de \"visto no dia\", então aproveite hoje.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -96,9 +95,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Eczema, otite e plaquetas pequenas: qual gene do X falhou?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem T, sem NK e com B normal num menino: qual proteína falta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-23",
   "tom": null,
-  "gancho": "Esteira de sushi: tem um prato ali que *nem o Macrô* encara",
-  "gancho_apoio": "Quatro meses de esquecimento, mioclonia ao susto e um EEG com batida periódica.",
+  "gancho": "Esteira de sushi às segundas: *um prato veio tampado*",
+  "gancho_apoio": "O Macrô come de tudo, mas hoje está segurando os hashis no ar.",
   "imagem": {
     "arquivo": "dia-141.png",
-    "cena": "Macrô, de guardanapo xadrez e com a comanda em branco no bolso, está sentado diante de uma esteira de sushi; passam pratinhos variados, e um deles vem coberto por uma tampa de metal. Macrô segura os hashis no ar, desconfiado.",
+    "cena": "O Macrô está sentado diante de uma esteira de sushi; passam pratinhos variados, e um deles vem coberto por uma tampa de metal, enquanto ele segura os hashis no ar, desconfiado. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Macrô na esteira de sushi, de hashis no ar, desconfiado de um prato coberto por tampa de metal."
   },
   "imagem_macete": {
     "arquivo": "dia-141-macete.png",
-    "cena": "A tampa se levanta: fitas de papel em espiral viram leques pregueados em efeito dominó, cada leque ensinando a fita vizinha a dobrar errado. No prato ao lado sobrou uma esponja cheia de furinhos, e o Macrô devolve tudo para a esteira.",
+    "cena": "Callback: a tampa se levanta e fitas de papel em espiral viram leques pregueados em efeito dominó, cada leque ensinando a fita vizinha a dobrar errado; o Macrô devolve o prato para a esteira. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Sob a tampa, fitas em espiral viram leques em dominó; ao lado, uma esponja furadinha; Macrô devolve o prato."
+    "alt": "Fitas em espiral viram leques pregueados em efeito dominó; o Macrô devolve o prato."
   },
   "questao": {
     "vinheta": "A 61-year-old woman has 4 months of rapidly progressive memory loss, gait ataxia and myoclonic jerks triggered by sudden noise. EEG shows periodic sharp-wave complexes, and cerebrospinal fluid 14-3-3 protein is elevated. Diffusion-weighted brain MRI shows cortical ribboning.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Persistent defective measles virus infection",
-        "quiz": "Sarampo persistente"
+        "quiz": "Persistent measles virus"
       },
       "B": {
         "texto": "JC virus infection of oligodendrocytes",
-        "quiz": "Vírus JC"
+        "quiz": "JC virus infection"
       },
       "C": {
         "texto": "Hyperphosphorylated tau in neurofibrillary tangles",
-        "quiz": "Tau fosforilada"
+        "quiz": "Hyperphosphorylated tau"
       },
       "D": {
-        "texto": "Conversion of alpha-helical prion protein into beta-pleated sheets",
-        "quiz": "PrP vira folha beta"
+        "texto": "Prion protein refolded into beta-pleated sheets",
+        "quiz": "Misfolded prion protein"
       }
     },
     "correta": "D"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda: um quadro neurológico que avança em meses, um liquor com 14-3-3 e uma ressonância com fita cortical. Qual mecanismo está por trás?",
+    "contexto": "Bicho de Segunda: um quadro neurológico e exames na vinheta que contam a história toda. Qual mecanismo está por trás?",
     "palavras_chave": [
       "rapidly progressive dementia",
       "myoclonus",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Demência rápida, mioclonia ao susto e 14-3-3 no liquor: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Demência rápida, mioclonia ao susto e 14-3-3 no liquor: qual mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

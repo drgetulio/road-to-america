@@ -17,15 +17,15 @@
   "gancho_apoio": "Hoje sem piada: um tema sério que todo médico precisa saber conduzir.",
   "imagem": {
     "arquivo": "dia-132.png",
-    "cena": "Num corredor de hospital tranquilo e bem iluminado, a Dona Bússola está ao lado de um berço vazio com uma manta dobrada. Perto dela, um telefone numa mesinha; na parede, um quadrinho 2x2 em branco.",
+    "cena": "Num corredor de hospital tranquilo e bem iluminado, a Dona Bússola está ao lado de um berço vazio com uma manta dobrada, perto de um telefone numa mesinha. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Bússola num corredor de hospital calmo, ao lado de um berço vazio e de um telefone numa mesinha."
+    "alt": "Dona Bússola num corredor calmo, ao lado de um berço vazio e de um telefone numa mesinha."
   },
   "imagem_macete": {
     "arquivo": "dia-132-macete.png",
-    "cena": "O telefone está em uso, com uma linha suave que o liga a uma casinha com escudo; um grande guarda-chuva navy cobre o berço, e o ponteiro da Dona Bússola aponta para ele, firme.",
+    "cena": "O telefone está em uso, ligado por uma linha suave a uma casinha com escudo, e um grande guarda-chuva navy cobre o berço; o ponteiro da Dona Bússola aponta firme para ele. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O telefone ligado a uma casa com escudo e um guarda-chuva protegendo o berço; o ponteiro da bússola aponta para ele."
+    "alt": "O telefone ligado a uma casinha com escudo; um guarda-chuva navy protege o berço."
   },
   "questao": {
     "vinheta": "A 2-month-old boy is brought for a swollen right thigh. His father says the baby rolled off the couch yesterday. X-rays show a femoral shaft fracture and a healing posterior rib fracture. When asked more questions, the father becomes angry and wants to take the baby home immediately.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Discharge with orthopedic follow-up in 1 week",
-        "quiz": "Alta e ortopedia"
+        "quiz": "Discharge, ortho follow-up"
       },
       "B": {
         "texto": "Ask the father for permission to notify authorities",
-        "quiz": "Permissão do pai"
+        "quiz": "Ask father to allow report"
       },
       "C": {
-        "texto": "Admit the infant and report to child protective services",
-        "quiz": "Internar e notificar"
+        "texto": "Admit and report to child protective services",
+        "quiz": "Admit and report to CPS"
       },
       "D": {
         "texto": "Refer to social work after discharge",
-        "quiz": "Serviço social após"
+        "quiz": "Social work after discharge"
       }
     },
     "correta": "C"
@@ -88,9 +88,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê de 2 meses, fratura de fêmur e de costela antiga: e agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê de 2 meses, fratura de fêmur e de costela antiga: e agora?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

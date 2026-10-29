@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-18",
   "tom": null,
-  "gancho": "A vaga de garagem *já está ocupada pelo analgésico*: qual remédio cabe?",
-  "gancho_apoio": "No Sextou na Farmácia, a escolha depende do que já está estacionado no receptor.",
+  "gancho": "Sextou na Farmácia: *quatro carrinhos na fila da garagem*",
+  "gancho_apoio": "Sextou na Farmácia: a escolha depende de um detalhe da lista de remédios da vinheta.",
   "imagem": {
     "arquivo": "dia-320.png",
-    "cena": "Tia Meia-Vida atrás do balcão olha uma maquete de garagem de prédio: uma vaga em forma de flor de papoula já tem um carrinho estacionado; na fila, duas caixinhas de remédio esperam, uma em forma de carrinho e outra com um pequeno ralo em forma de feijão embaixo.",
+    "cena": "Tia Meia-Vida atrás do balcão olha uma maquete de garagem de prédio; na fila da rampa, quatro caixinhas de remédio esperam a vez.",
     "foco": "50% 35%",
-    "alt": "A vaga de garagem já está ocupada pelo analgésico: qual remédio cabe?"
+    "alt": "Tia Meia-Vida olha a maquete de uma garagem com quatro caixinhas na fila"
   },
   "imagem_macete": {
     "arquivo": "dia-320-macete.png",
-    "cena": "Callback: a caixinha em forma de carrinho bate na vaga ocupada e recebe uma placa vermelha de pare; a outra caixinha escorre tranquila pelo ralo em forma de feijão e ganha uma placa verde de siga; a Tia Meia-Vida aponta com a caneta.",
+    "cena": "Callback: a vaga ocupada tem a forma de uma flor de papoula; a caixinha em forma de carrinho bate nela e recebe uma placa vermelha de pare, e a outra caixinha escorre tranquila por um ralo em forma de feijão e ganha uma placa verde de siga; a Tia Meia-Vida aponta com a caneta.",
     "foco": "50% 45%",
     "alt": "Álcool com opioide em uso: acamprosato"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Naltrexone",
-        "quiz": "Naltrexona"
+        "quiz": "Naltrexone"
       },
       "B": {
         "texto": "Acamprosate",
-        "quiz": "Acamprosato"
+        "quiz": "Acamprosate"
       },
       "C": {
         "texto": "Disulfiram",
-        "quiz": "Dissulfiram"
+        "quiz": "Disulfiram"
       },
       "D": {
         "texto": "Chlordiazepoxide",
-        "quiz": "Clordiazepóxido"
+        "quiz": "Chlordiazepoxide"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 46 anos com transtorno por uso de álcool, desintoxicação concluída há 5 dias, quer um remédio para manter a abstinência. Ele usa oxicodona todos os dias para dor lombar crônica, e creatinina e enzimas hepáticas são normais. Qual remédio cabe?",
+    "contexto": "Sextou na Farmácia: quatro caixinhas na fila da garagem e só uma vai estacionar. A vinheta tem uma lista de remédios que muda a escolha, e o NBME adora esconder o remédio de uso diário no meio da história clínica.",
     "palavras_chave": [
-      "alcohol use disorder",
-      "after detoxification",
-      "daily oxycodone",
-      "relapse prevention"
+      "addiction medicine",
+      "relapse prevention",
+      "pharmacotherapy",
+      "outpatient clinic"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Quer manter a abstinência do álcool e usa oxicodona todo dia: qual remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quer manter a abstinência do álcool e usa oxicodona todo dia: qual remédio?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

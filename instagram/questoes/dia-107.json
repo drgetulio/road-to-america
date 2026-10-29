@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-17",
   "tom": null,
-  "gancho": "A borboleta achou uma *pedrinha na asa*: furar, fotografar, ligar ou operar?",
-  "gancho_apoio": "Nódulo de 2 cm na tireoide, achado no exame de rotina, sem sintomas.",
+  "gancho": "A borboleta achou *uma pedrinha na asa*. Por onde começa?",
+  "gancho_apoio": "Achado de rotina, paciente tranquila e um interno que já quer resolver tudo na primeira consulta.",
   "imagem": {
     "arquivo": "dia-107.png",
-    "cena": "No balcão de atendimento do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica recebe uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas. Na bancada, uma agulha gigante de desenho, uma câmera, um telefone antigo de gancho e uma tesourinha cirúrgica.",
+    "cena": "No balcão do plantão, Dona Térmica recebe com cuidado uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica recebe uma borboleta-tireoide com uma pedrinha na asa; na bancada, uma agulha gigante, uma câmera, um telefone antigo e uma tesourinha."
+    "alt": "Dona Térmica recebe uma borboleta em forma de tireoide com uma pedrinha numa das asas."
   },
   "imagem_macete": {
     "arquivo": "dia-107-macete.png",
-    "cena": "Callback: a borboleta fala ao telefone com o chefe, um pequeno grão de ervilha de gravata sentado numa cadeira de osso em forma de sela. Atrás dela, uma câmera dispara um flash suave (o ultrassom), e a agulha espera na fila, por último.",
+    "cena": "Callback: a borboleta fala ao telefone com o chefe, um grão de ervilha de gravata sentado numa cadeira em forma de sela, e a agulha gigante espera a vez, por último, encostada na parede. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A borboleta tireoide liga para o chefe ervilha na cadeira em forma de sela; a câmera dispara e a agulha espera."
+    "alt": "A borboleta-tireoide fala ao telefone com a ervilha-chefe; a agulha gigante espera por último."
   },
   "questao": {
     "vinheta": "During a routine examination, a 42-year-old woman is found to have a 2-cm nodule on the right side of her thyroid. She feels well, never received radiation to the head or neck and has no relatives with thyroid cancer. The nodule is firm and mobile, without cervical lymphadenopathy.",
@@ -33,7 +33,7 @@
     "alternativas": {
       "A": {
         "texto": "Measurement of serum TSH",
-        "quiz": "Serum TSH"
+        "quiz": "Measurement of serum TSH"
       },
       "B": {
         "texto": "Fine-needle aspiration",
@@ -41,7 +41,7 @@
       },
       "C": {
         "texto": "Radioactive iodine uptake scan",
-        "quiz": "Radioiodine uptake scan"
+        "quiz": "Radioactive iodine uptake scan"
       },
       "D": {
         "texto": "Total thyroidectomy",
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Nódulo de 2 cm na tireoide, sem sintomas, sem radiação no pescoço e sem família com câncer de tireoide. Dona Térmica já viu muito nódulo às 3 da manhã: por onde começar?",
+    "contexto": "Plantão de Terça com a Dona Térmica, que já viu muito nódulo às 3 da manhã. Um achado de rotina no pescoço e quatro primeiros passos possíveis. A vinheta tem o que importa para não pular etapa.",
     "palavras_chave": [
       "neck mass",
       "routine exam",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo tireoidiano de 2 cm sem sintomas: qual é o primeiro exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo tireoidiano de 2 cm sem sintomas: qual é o primeiro exame?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

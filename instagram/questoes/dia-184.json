@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-05",
   "tom": null,
-  "gancho": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. *Quem a GINA escala hoje?*",
-  "gancho_apoio": null,
+  "gancho": "Dia Mundial da Asma e uma consulta de rotina *no Plantão de Terça*",
+  "gancho_apoio": "Asma no Step 2: quatro inaladores, quatro cores de tampa e nenhuma memória de qual é qual.",
   "imagem": {
     "arquivo": "dia-184.png",
-    "cena": "Conforto médico às 3 da manhã, com o relógio de parede sem números. Dona Térmica, de olho meio fechado, assiste a uma bombinha azul de capa de super-herói correndo sozinha entre balões em forma de pulmão, apagando um foco de fumaça atrás do outro. Numa estante, um troféu empoeirado.",
+    "cena": "Conforto médico às 3 da manhã, com o relógio sem números na parede. Dona Térmica, de olho meio fechado, folheia um guia de bolso enorme, com uma bombinha azul descansando na mesa ao lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica observa uma bombinha azul de capa correndo sozinha entre balões em forma de pulmão"
+    "alt": "Dona Térmica, sonolenta, folheia um guia de bolso enorme ao lado de uma bombinha azul"
   },
   "imagem_macete": {
     "arquivo": "dia-184-macete.png",
-    "cena": "Agora a bombinha azul divide uma bicicleta de dois lugares com uma bombinha vinho na garupa (o corticoide inalatório): os dois pedalam juntos e os balões-pulmão param de soltar fumaça. Dona Térmica serve dois cafezinhos, e o troféu ganha um laço verde.",
-    "alt": "SABA sozinho saiu do time: o resgate vem com corticoide junto"
+    "cena": "Callback: a bombinha azul agora pedala uma bicicleta de dois lugares com uma bombinha vinho na garupa (o corticoide inalatório), e Dona Térmica ergue o café, aprovando. Fundo limpo.",
+    "alt": "A bombinha azul pedala com uma bombinha vinho na garupa: resgate com corticoide junto"
   },
   "questao": {
     "vinheta": "A 24-year-old woman with asthma uses albuterol 2 to 3 times per week for wheezing and has no nighttime awakenings or activity limitation. She takes no other medications. Spirometry shows obstruction that reverses after bronchodilator. She asks for a better treatment plan.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "As-needed low-dose budesonide-formoterol",
-        "quiz": "ICS-formoterol"
+        "quiz": "As-needed ICS-formoterol"
       },
       "B": {
         "texto": "Continue as-needed albuterol alone",
-        "quiz": "Só salbutamol"
+        "quiz": "Albuterol alone as needed"
       },
       "C": {
         "texto": "Daily oral montelukast",
-        "quiz": "Montelucaste diário"
+        "quiz": "Daily montelukast"
       },
       "D": {
-        "texto": "Daily inhaled salmeterol alone",
-        "quiz": "Só salmeterol"
+        "texto": "Daily inhaled salmeterol without a corticosteroid",
+        "quiz": "Daily salmeterol alone"
       }
     },
     "correta": "A"
@@ -72,17 +72,17 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA tem opinião forte sobre esse caso, e a prova também.",
+    "contexto": "Plantão de Terça no Dia Mundial da Asma, com a Dona Térmica servindo o café. Uma adulta jovem quer um plano melhor, e a frequência dos sintomas, o uso da bombinha e a diretriz que a pergunta cita estão na vinheta.",
     "palavras_chave": [
-      "mild asthma",
-      "albuterol use",
-      "reversible obstruction",
-      "treatment plan"
+      "asthma",
+      "outpatient visit",
+      "inhaler therapy",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "Asma leve, salbutamol 3x/semana: qual plano pela GINA?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Asma leve, salbutamol 3x/semana: qual plano pela GINA?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -14,37 +14,37 @@
   "explicacao_em": "2027-04-02",
   "tom": null,
   "gancho": "1º de abril: dois diagnósticos que a prova *adora trocar*",
-  "gancho_apoio": "O NBME esconde a diferença numa linha só da vinheta.",
+  "gancho_apoio": "O NBME esconde a diferença numa linha só da vinheta, de preferência a última, quando faltam 40 segundos.",
   "imagem": {
     "arquivo": "dia-151.png",
-    "cena": "Garçom Espetinho segura dois espetos curiosos: um com uma pulseira de internação e outro com um malote de banco. Atrás dele, um mural de bairro com serpentinas de 1º de abril; a plaquinha verde e vermelha gira no ar, ainda sem decidir a cor.",
+    "cena": "Garçom Espetinho segura dois espetos curiosos, um com uma pulseira de internação e outro com um malote de banco, e a plaquinha verde e vermelha gira no ar, ainda sem decidir a cor. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Garçom Espetinho com dois espetos, uma pulseira de internação e um malote de banco; a plaquinha gira no ar."
   },
   "imagem_macete": {
     "arquivo": "dia-151-macete.png",
-    "cena": "A plaquinha pousa no verde ao lado do espeto da pulseira (motivo de dentro, factício); o espeto do malote fica com o lado vermelho. Uma setinha curva aponta para dentro, para o coração do garçom.",
-    "alt": "A plaquinha pousa no verde ao lado da pulseira; o malote fica com o vermelho; uma seta aponta para dentro."
+    "cena": "Callback: a plaquinha pousa no verde ao lado do espeto da pulseira, e o espeto do malote fica com o lado vermelho; uma setinha curva aponta para dentro, para o coração do garçom. Fundo limpo.",
+    "alt": "A plaquinha fica verde no espeto da pulseira e vermelha no do malote."
   },
   "questao": {
     "vinheta": "A 31-year-old woman is admitted for the fourth time this year with confusion and a glucose of 38 mg/dL. She has no history of diabetes. Serum insulin is markedly elevated and C-peptide is low. She has no pending lawsuit or disability claim and repeatedly asks for more tests and a longer stay.",
     "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Factitious disorder imposed on self",
-        "quiz": "Factício"
+        "texto": "Factitious disorder",
+        "quiz": "Factitious disorder"
       },
       "B": {
         "texto": "Malingering",
-        "quiz": "Simulação"
+        "quiz": "Malingering"
       },
       "C": {
         "texto": "Illness anxiety disorder",
-        "quiz": "Ansiedade de doença"
+        "quiz": "Illness anxiety disorder"
       },
       "D": {
         "texto": "Somatic symptom disorder",
-        "quiz": "Sintomas somáticos"
+        "quiz": "Somatic symptom disorder"
       }
     },
     "correta": "A"
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Insulina alta, peptídeo C baixo e nenhum ganho externo: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Insulina alta, peptídeo C baixo e nenhum ganho externo: qual diagnóstico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

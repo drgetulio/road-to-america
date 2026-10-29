@@ -15,68 +15,68 @@
     32
   ],
   "explicacao_em": "2026-12-07",
-  "gancho": "O Mito voltou para a mala de Orlando, agora com o CD4 *baixo*. Muda alguma coisa?",
+  "gancho": "O Mito voltou com a perna do dia 32 e *um detalhe novo* na ficha",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito, de jaleco amassado, está sentado em cima de uma mala navy abarrotada numa sala de embarque de aeroporto, tentando fechar o zíper com as duas mãos; ao lado, um guarda-chuva azul-marinho fechado, com um lacinho, e um vinil pequeno preso na alça da mala.",
+    "cena": "Mito, de jaleco amassado, está sentado em cima de uma mala navy fechada numa sala de embarque de aeroporto, com um guarda-chuva azul-marinho fechado ao lado. Um vinil pequeno está preso na alça da mala.",
     "foco": "50% 35%",
-    "alt": "O Mito voltou para a mala de Orlando, agora com o CD4 baixo. Muda alguma coisa?",
+    "alt": "Mito sentado numa mala navy fechada numa sala de embarque, com um guarda-chuva fechado ao lado.",
     "arquivo": "dia-035.png"
   },
   "imagem_macete": {
-    "cena": "Callback do aeroporto: o zíper da mala é aberto de ponta a ponta na hora, e o Mito respira aliviado; o guarda-chuva fica encostado numa cadeira com um lembrete em branco preso, para a alta, e um balãozinho de angioplastia fica guardado na mochila, sem uso hoje.",
-    "alt": "A mala abre agora, o guarda-chuva entra na alta",
+    "cena": "Callback do aeroporto: o Mito encosta um manômetro redondo, sem números, na lateral da mala e olha o ponteiro com atenção antes de decidir abrir o zíper; o guarda-chuva fica encostado numa cadeira com um lembrete em branco preso, para a alta.",
+    "alt": "Sedado não reclama: mede a pressão",
     "arquivo": "dia-035-macete.png"
   },
   "questao": {
-    "vinheta": "A 38-year-old man with untreated HIV infection (CD4+ count 150/mm3) has a closed tibial fracture after a motorcycle crash. Four hours after splinting, pain is out of proportion and worsens with passive plantar flexion despite splint removal. The anterior compartment is tense; pulses are palpable.",
+    "vinheta": "A 38-year-old man with HIV infection (CD4+ count 150/mm3) is intubated and sedated in the ICU after a motorcycle crash. His closed tibial fracture was splinted 8 hours ago. The splint has been removed, and the anterior compartment of the leg feels firm. Dorsalis pedis pulse is palpable.",
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Elevate the leg and reassess in 4 hours",
-        "quiz": "Elevar e reavaliar"
+        "texto": "Elevate the leg above the level of the heart",
+        "quiz": "Elevate the leg"
       },
       "B": {
-        "texto": "Delay surgery until CD4 count exceeds 200",
-        "quiz": "Adiar até CD4 acima de 200",
+        "texto": "Start TMP-SMX and defer any surgery",
+        "quiz": "TMP-SMX, defer surgery",
         "dia": 30
       },
       "C": {
-        "texto": "Emergency fasciotomy",
-        "quiz": "Fasciotomia de urgência",
-        "dia": 32
+        "texto": "Measure intracompartmental pressure",
+        "quiz": "Compartment pressure"
       },
       "D": {
-        "texto": "Repeat compartment pressures in 6 hours",
-        "quiz": "Medir a pressão em 6 h"
+        "texto": "Emergency fasciotomy",
+        "quiz": "Fasciotomy now",
+        "dia": 32
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "A mala abre agora, o guarda-chuva entra na alta",
+    "titulo": "Sedado não reclama: mede a pressão",
     "certa": [
-      "Dor desproporcional, dor ao estiramento passivo e compartimento tenso mesmo sem a tala fazem o diagnóstico clínico de *compartment syndrome* (dia 32), e a perna tem poucas horas: *emergency fasciotomy* agora. O CD4 de 150 pede TMP-SMX contra *Pneumocystis* (dia 30), mas imunossupressão não é motivo para adiar uma cirurgia que salva o membro. Pulso palpável não afasta o diagnóstico."
+      "Fratura de tíbia com compartimento tenso é suspeita de *compartment syndrome* (dia 32), mas este paciente está intubado e sedado: não relata dor, e a dor ao estiramento passivo, o sinal mais precoce, não pode ser avaliada. Quando o exame clínico não é confiável, o próximo passo é medir a pressão do compartimento (*intracompartmental pressure*). Quando a pressão diastólica menos a pressão do compartimento (*delta pressure*) fica em 30 mm Hg ou menos, a fasciotomia é de urgência. O CD4 de 150 pede profilaxia de Pneumocystis (dia 30), mas não adia nenhuma conduta da perna."
     ],
     "termos": [
+      "intracompartmental pressure",
+      "delta pressure",
       "compartment syndrome",
-      "emergency fasciotomy",
-      "pain with passive stretch",
-      "Pneumocystis prophylaxis"
+      "unreliable examination"
     ],
     "erradas": {
-      "A": "Elevar a perna acima do coração reduz a perfusão do compartimento, e esperar 4 horas é perder músculo.",
-      "B": "Dia 30: o CD4 baixo pede profilaxia e antirretroviral, não adiar a descompressão de um membro em risco.",
-      "D": "Com quadro clínico claro, medir a pressão não deve atrasar a fasciotomia; repetir em 6 horas é tarde demais."
+      "A": "Elevar a perna acima do coração reduz a perfusão do compartimento e pode piorar a isquemia.",
+      "B": "Dia 30: CD4 abaixo de 200 pede TMP-SMX, mas imunossupressão não é motivo para adiar a investigação nem a cirurgia de um membro em risco.",
+      "D": "Dia 32: no paciente acordado com dor desproporcional, a fasciotomia sai sem medir nada; sedado e sem exame confiável, a medida vem antes e define a indicação."
     },
     "macete": {
-      "frase": "Imunossupressão não adia *zíper*: a mala abre agora, e o guarda-chuva do CD4 entra na prescrição da alta.",
-      "apoio": "Pegadinha de prova: O NBME tenta fazer você adiar a cirurgia por causa da imunossupressão ou de um pulso palpável; nenhum dos dois muda a indicação da fasciotomia.",
-      "fala": null
+      "frase": "Paciente sedado não reclama: *quem fala é o manômetro*. Delta de 30 ou menos, abre a mala.",
+      "apoio": "Pegadinha de prova: O NBME coloca a síndrome compartimental num paciente intubado, inconsciente ou com bloqueio anestésico; sem exame confiável, mede a pressão antes de cortar.",
+      "fala": "Sedado não reclama. Eu reclamo por ele."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão juntando a mala que não fecha (dia 32) e o guarda-chuva do CD4 (dia 30). O bônus do macete traz o balão dos 90 minutos (dia 2).",
+    "contexto": "Domingo de revisão juntando a mala que não fecha (dia 32) e o guarda-chuva do CD4 (dia 30), mais um intruso. O bônus do macete traz o balão dos 90 minutos (dia 2). Cada alternativa que já apareceu leva o selo do dia, e a regra é a do NBME: selo não é gabarito.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -90,12 +90,11 @@
       "#EmergencyMedicine",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Dor desproporcional na perna com CD4 de 150: qual o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Perna tensa num paciente sedado na UTI: qual o próximo passo?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

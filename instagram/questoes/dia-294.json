@@ -17,70 +17,70 @@
   ],
   "explicacao_em": "2027-08-23",
   "tom": null,
-  "gancho": "Dói até mastigar o pão de queijo e a VHS *está em 96*: o que não espera?",
-  "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual conduta sai agora?",
+  "gancho": "Três da manhã na copa e *o paciente do leito 4 reclamando de novo*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso. Qual remédio sai agora?",
   "imagem": {
     "arquivo": "dia-294.png",
-    "cena": "Três da manhã na copa do plantão: um quebra-nozes de madeira tenta mastigar um pão de queijo e faz careta, enquanto Dona Térmica, a garrafa térmica, consulta uma agenda em branco com um dia bem distante circulado. Na mesa, quatro bandejas tampadas. Num canto, um vinil pequeno serve de bandeja do café, e o relógio redondo sem números marca 3 horas.",
+    "cena": "Três da manhã na copa do plantão: Dona Térmica, a garrafa térmica, ao lado de quatro bandejas tampadas; num banquinho, um coração de desenho animado com um curativo redondo no pulso faz careta. Num canto, um vinil pequeno serve de bandeja do café, e o relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Quebra-nozes com dor ao mastigar e a biópsia marcada para longe"
+    "alt": "Dona Térmica confere quatro bandejas tampadas às 3 da manhã"
   },
   "imagem_macete": {
     "arquivo": "dia-294-macete.png",
-    "cena": "Da primeira bandeja salta um extintor pequeno, que apaga uma chaminha numa artéria em forma de mangueira que contorna um abajur, antes que a fumaça chegue a um olho em forma de farol; a tesoura da biópsia espera tranquila na fila, ao lado da agenda. O quebra-nozes, enfim, mastiga o pão de queijo.",
+    "cena": "Callback: Dona Térmica destampa uma das quatro bandejas e serve ao coração um comprimido grande de aspirina; nas outras bandejas, um anti-inflamatório laranja, um frasco de antibiótico e um comprimido de corticoide ficam barrados por um cone vermelho, e no peito do coração aparece uma parede de tijolos ainda com o reboco molhado. O vinil serve de bandeja do café.",
     "foco": "50% 45%",
-    "alt": "Arterite de células gigantes: corticoide antes da biópsia"
+    "alt": "Pericardite logo depois do infarto: aspirina, e só ela"
   },
   "questao": {
-    "vinheta": "For 3 weeks, a 72-year-old woman has had a new temporal headache, scalp tenderness, and jaw pain while chewing. Temperature is 37.9°C, and vision is normal. ESR is 96 mm/h, and the neutrophil count is 7,800/mm3. A temporal artery biopsy is scheduled for next week.",
-    "pergunta": "Which is the most appropriate next step?",
+    "vinheta": "Three days after primary PCI for an anterior ST-elevation myocardial infarction, a 64-year-old man has sharp chest pain that worsens when he lies flat and eases when he sits forward. Temperature is 37.9°C. A friction rub is heard. Troponin is falling, neutrophils are 7,400/mm3, and echocardiography shows a trace effusion.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
     "alternativas": {
       "A": {
         "texto": "Ibuprofen plus colchicine",
-        "quiz": "AINE + colchicina",
+        "quiz": "Ibuprofen + colchicine",
         "dia": 289
       },
       "B": {
-        "texto": "Cefepime within 1 hour",
-        "quiz": "Cefepime em 1 hora",
+        "texto": "Intravenous cefepime",
+        "quiz": "IV cefepime",
         "dia": 261
       },
       "C": {
-        "texto": "Await biopsy results before treating",
-        "quiz": "Esperar a biópsia"
+        "texto": "High-dose prednisone",
+        "quiz": "High-dose prednisone",
+        "dia": 219
       },
       "D": {
-        "texto": "High-dose prednisone now",
-        "quiz": "Prednisona já",
-        "dia": 219
+        "texto": "High-dose aspirin",
+        "quiz": "High-dose aspirin"
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Arterite de células gigantes: *corticoide antes da biópsia*",
+    "titulo": "Pericardite logo depois do infarto: *aspirina, e só ela*",
     "certa": [
-      "Cefaleia temporal nova, couro cabeludo dolorido, *jaw claudication* e VHS alta depois dos 50 anos é *giant cell arteritis*. O risco é a cegueira por neuropatia óptica isquêmica, então o *corticoide em dose alta começa já*, antes da biópsia. A biópsia continua útil por cerca de 2 semanas depois do início do corticoide."
+      "Dor pleurítica que melhora inclinado para a frente, atrito e derrame mínimo três dias depois de um infarto com supra são *peri-infarction pericarditis*, a inflamação do pericárdio por cima da área necrosada. O tratamento é *high-dose aspirin*. Ibuprofeno e outros AINE, assim como o corticoide, atrapalham a cicatrização da parede infartada e aumentam o risco de *ventricular free wall rupture*, por isso ficam de fora nessa fase. É o intruso do domingo."
     ],
     "termos": [
-      "giant cell arteritis",
-      "jaw claudication",
-      "high-dose glucocorticoids",
-      "temporal artery biopsy"
+      "peri-infarction pericarditis",
+      "high-dose aspirin",
+      "avoid NSAIDs and steroids after MI",
+      "free wall rupture"
     ],
     "erradas": {
-      "A": "AINE com colchicina trata a pericardite (dia 289), que tem dor torácica pleurítica e atrito, não cefaleia.",
-      "B": "Cefepime em 1 hora é a regra da neutropenia febril (dia 261), e aqui os neutrófilos estão normais.",
-      "C": "Esperar a biópsia expõe a paciente à perda visual, que pode ser permanente."
+      "A": "Ibuprofeno com colchicina trata a pericardite viral do dia 289, mas logo depois do infarto o ibuprofeno atrapalha a cicatrização e aumenta o risco de ruptura.",
+      "B": "Cefepime é a conduta da neutropenia febril (dia 261); aqui há febrícula de pericardite e neutrófilos normais.",
+      "C": "Prednisona em dose alta é a conduta da arterite de células gigantes (dia 219); depois do infarto, o corticoide afina a cicatriz e aumenta o risco de ruptura."
     },
     "macete": {
-      "frase": "Na arterite temporal, *o corticoide não espera a biópsia*",
-      "apoio": "O extintor de corticoide entra antes da tesoura da biópsia, que continua útil por cerca de duas semanas depois do início do tratamento. O que se protege é a visão. AINE com colchicina é da pericardite e cefepima em 1 hora é da neutropenia febril.",
-      "fala": "Já vi esse caso às 3 da manhã. O corticoide não espera a agenda da biópsia."
+      "frase": "*Pericardite com infarto fresco: só a aspirina entra no quarto*",
+      "apoio": "A parede infartada ainda está cicatrizando. AINE comum e corticoide amolecem a obra e aumentam o risco de ruptura, então a aspirina em dose alta trabalha sozinha. Na síndrome de Dressler, semanas depois, a aspirina também é a preferida.",
+      "fala": "Já vi esse caso às 3 da manhã. O ibuprofeno quis entrar e eu barrei na porta."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com os dias 219, 261 e 289, mais um intruso. Cefaleia nova, couro cabeludo dolorido, dor na mandíbula ao mastigar e VHS de 96 aos 72 anos. A biópsia está marcada para a semana que vem.",
+    "contexto": "Domingo de revisão: arterite de células gigantes (dia 219), neutropenia febril (dia 261) e pericardite aguda (dia 289) voltaram, e um intruso entrou no carrinho de bandejas. Três condutas que você já acertou aqui, agora no paciente errado.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -96,9 +96,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "VHS de 96, dor ao mastigar e biópsia na semana que vem: o que fazer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pericardite três dias depois do infarto: qual remédio?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-09-25",
   "tom": null,
-  "gancho": "Pingou no olho e *o recado chegou no coração*",
+  "gancho": "Pingou no olho e *a cidade inteira ficou sabendo*",
   "gancho_apoio": "A Tia Meia-Vida tem dois colírios no balcão, e um deles fofoca mais que cidade pequena.",
   "imagem": {
     "arquivo": "dia-327.png",
-    "cena": "Tia Meia-Vida atrás do balcão, com dois conta-gotas nas mãos, olha um aquário redondo em forma de olho quase transbordando; o aquário tem uma torneira em cima e um ralo pequeno na lateral; pela janela, uma pracinha de cidade do interior com um coreto.",
+    "cena": "Tia Meia-Vida atrás do balcão, com dois conta-gotas nas mãos, olha um aquário redondo em forma de olho quase transbordando; o aquário tem uma torneira em cima e um ralo pequeno na lateral.",
     "foco": "50% 35%",
-    "alt": "Pingou no olho e o recado chegou no coração"
+    "alt": "Pingou no olho e a cidade inteira ficou sabendo"
   },
   "imagem_macete": {
     "arquivo": "dia-327-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "β-blockade reducing aqueous production",
-        "quiz": "Bloqueio beta"
+        "quiz": "β-blockade, less aqueous"
       },
       "B": {
         "texto": "FP receptor agonism increasing uveoscleral outflow",
-        "quiz": "Agonista FP"
+        "quiz": "FP agonism, more outflow"
       },
       "C": {
         "texto": "Muscarinic contraction of the ciliary muscle",
-        "quiz": "Agonista muscarínico"
+        "quiz": "Muscarinic ciliary contraction"
       },
       "D": {
         "texto": "Carbonic anhydrase inhibition reducing aqueous production",
-        "quiz": "Inibe anidrase"
+        "quiz": "Carbonic anhydrase inhibition"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 64 anos com glaucoma de ângulo aberto já usa latanoprost e ganhou um segundo colírio. Três semanas depois, o pulso caiu de 74 para 52 bpm e apareceu cansaço aos esforços, com pupilas normais. Como o colírio novo baixa a pressão do olho?",
+    "contexto": "Sextou na Farmácia: um colírio novo entrou na receita e, três semanas depois, a cidade inteira ficou sabendo. Quatro mecanismos de colírio, dois que fecham a torneira e dois que abrem o ralo; a vinheta conta o efeito que vazou do olho.",
     "palavras_chave": [
-      "open-angle glaucoma",
-      "latanoprost",
-      "second eye drop",
-      "bradycardia"
+      "ophthalmology",
+      "eye drops",
+      "adverse effects",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Colírio novo no glaucoma e pulso caiu de 74 para 52: qual o mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Colírio novo no glaucoma e pulso caiu de 74 para 52: qual o mecanismo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

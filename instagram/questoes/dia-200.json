@@ -13,38 +13,38 @@
   "remix_de": null,
   "explicacao_em": "2027-05-21",
   "tom": null,
-  "gancho": "Dia 200! Convulsão de 2 minutos no primeiro dia de febre, criança já rindo e *o cardápio de exames aberto na mesa*",
-  "gancho_apoio": null,
+  "gancho": "Dia 200 da Questão de Embarque: obrigado por estar aqui! Hoje o rodízio é *na pediatria*",
+  "gancho_apoio": "200 dias de questão: você já estudou mais do que o seu eu de janeiro prometeu no Réveillon.",
   "imagem": {
     "arquivo": "dia-200.png",
-    "cena": "Dia 200 no rodízio, com confete na mesa. O Garçom Espetinho entrega a uma família de balões um cardápio gigante só de desenhos: fios coloridos de eletrodo, uma agulha comprida, um frasco de comprimidos e uma xícara de chá. A plaquinha verde e vermelha está de lado.",
+    "cena": "O Garçom Espetinho, de bandeja na mão, chega com calma a uma mesa onde uma família de balões espera, ainda assustada; num cantinho do salão, um bolo pequeno com uma velinha comemora o dia 200. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O garçom entrega um cardápio de exames a uma família de balões no dia 200"
+    "alt": "O garçom chega com calma a uma família de balões assustada; ao fundo, um bolo pequeno do dia 200"
   },
   "imagem_macete": {
     "arquivo": "dia-200-macete.png",
-    "cena": "O Garçom Espetinho recolhe o cardápio, vira a plaquinha para o vermelho diante dos fios, da agulha e dos comprimidos e serve só a xícara de chá com um cobertorzinho. O termômetro da mesa sorri aliviado.",
-    "alt": "Convulsão febril simples: tranquilizar"
+    "cena": "Callback: o Garçom Espetinho fecha o cardápio de exames e serve só uma xícara de chá com um cobertorzinho; a família de balões sorri, aliviada. Fundo limpo.",
+    "alt": "O garçom fecha o cardápio de exames e serve só um chá; a família de balões sorri aliviada"
   },
   "questao": {
     "vinheta": "An 18-month-old girl has a 2-minute generalized tonic-clonic seizure at home on the first day of a fever of 39.4°C (103°F). Twenty minutes later she is fully alert and has a runny nose. Vaccinations are up to date. Neurologic examination is normal, with no meningeal signs.",
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Electroencephalography",
-        "quiz": "EEG"
+        "texto": "Electroencephalography within 24 hours",
+        "quiz": "EEG within 24 hours"
       },
       "B": {
-        "texto": "Lumbar puncture",
-        "quiz": "Punção lombar"
+        "texto": "Lumbar puncture with CSF culture",
+        "quiz": "Lumbar puncture"
       },
       "C": {
-        "texto": "Reassure the parents and treat the fever",
-        "quiz": "Tranquilizar"
+        "texto": "Reassure parents; treat the fever",
+        "quiz": "Reassurance"
       },
       "D": {
-        "texto": "Start daily levetiracetam",
-        "quiz": "Levetiracetam"
+        "texto": "Start daily oral levetiracetam",
+        "quiz": "Daily levetiracetam"
       }
     },
     "correta": "C"
@@ -72,17 +72,17 @@
     }
   },
   "legenda": {
-    "contexto": "Dia 200 da Questão de Embarque, obrigado por estudar com a gente! No Rodízio de hoje, uma criança teve uma convulsão no primeiro dia de febre e já está brincando. Qual é a conduta?",
+    "contexto": "Dia 200, e a gente agradece cada voto na enquete. No Rodízio de Quinta, uma criança pequena teve um episódio em casa, e os pais chegaram assustados. A duração, a história e o exame de agora estão na vinheta: são eles que definem o que servir.",
     "palavras_chave": [
-      "seizure with fever",
-      "18-month-old",
-      "normal neurologic exam",
-      "toddler"
+      "pediatric emergency",
+      "seizure",
+      "toddler",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "Convulsão de 2 min no 1º dia de febre: conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Convulsão de 2 min no 1º dia de febre: conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

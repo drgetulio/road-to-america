@@ -13,11 +13,11 @@
   "remix_de": null,
   "explicacao_em": "2027-08-11",
   "tom": null,
-  "gancho": "Crise há 8 minutos e o técnico *ainda escolhendo o batedor do pênalti*",
-  "gancho_apoio": "Crise que não para, via aérea garantida e acesso venoso pronto. Quem bate primeiro?",
+  "gancho": "Três da manhã no vestiário do estádio: *quem bate o primeiro pênalti?*",
+  "gancho_apoio": "Plantão de Terça: a prancheta tem quatro batedores e a ordem importa.",
   "imagem": {
     "arquivo": "dia-282.png",
-    "cena": "Três da manhã no vestiário de um estádio: Dona Térmica, a garrafa térmica, com apito de técnico no pescoço, segura uma prancheta tática com quatro fichas de jogador iguais e redondas (navy, vermelha, amarela e verde) perto da marca do pênalti, e um cronômetro grande na parede já passou bem da marquinha de tempo. Um relógio redondo sem números marca 3 horas.",
+    "cena": "Três da manhã no vestiário de um estádio: Dona Térmica, a garrafa térmica, com apito de técnico no pescoço, segura uma prancheta tática com quatro fichas de jogador redondas (navy, vermelha, amarela e verde). Na parede, um relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
     "alt": "Dona Térmica na prancheta com quatro batedores"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Intravenous lorazepam",
-        "quiz": "Lorazepam IV"
+        "quiz": "IV lorazepam"
       },
       "B": {
         "texto": "Intravenous fosphenytoin",
-        "quiz": "Fosfenitoína IV"
+        "quiz": "IV fosphenytoin"
       },
       "C": {
         "texto": "Intravenous valproate",
-        "quiz": "Valproato IV"
+        "quiz": "IV valproate"
       },
       "D": {
         "texto": "Propofol infusion",
-        "quiz": "Propofol"
+        "quiz": "Propofol infusion"
       }
     },
     "correta": "A"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Crise tônico-clônica há 8 minutos, via aérea garantida, acesso venoso pronto e glicemia normal. Qual é o próximo passo?",
+    "contexto": "Plantão de Terça no vestiário: a Dona Térmica tem quatro batedores na prancheta e um cronômetro correndo. Vale lembrar que \"next step\" no NBME é o próximo mesmo, e não o terceiro que você já está planejando às 3 da manhã.",
     "palavras_chave": [
-      "epilepsy",
-      "generalized tonic-clonic seizure",
-      "seizure lasting 8 minutes",
-      "prehospital care"
+      "emergency department",
+      "neurology",
+      "time-critical care",
+      "pharmacotherapy"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Crise há 8 minutos e acesso venoso pronto: qual remédio primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crise há 8 minutos e acesso venoso pronto: qual remédio primeiro?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

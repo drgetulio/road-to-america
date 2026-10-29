@@ -16,69 +16,68 @@
   ],
   "explicacao_em": "2027-05-31",
   "tom": null,
-  "gancho": "E6 ou E7? A dúvida que *mora no seu marca-texto* desde o primeiro ano",
-  "gancho_apoio": null,
+  "gancho": "E6, E7, L1... a sopa de letrinhas do HPV *voltou para o Remix*",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 127, 176 e 204) e um intruso. Desta vez a pergunta é sobre a vacina.",
   "imagem": {
     "arquivo": "dia-210.png",
-    "cena": "Madrugada de estudo na escrivaninha do Macrô, com marca-textos de quatro cores e um vinil pequeno num canto. Em cima das fichas de revisão, dois vírus gêmeos de roupas idênticas, um com um broche de seis lados e outro com um broche de sete lados, posam como se fossem a mesma pessoa.",
+    "cena": "Madrugada de estudo na escrivaninha do Macrô, com marca-textos de quatro cores; ele segura duas seringas de vacina de brinquedo, uma em cada mão. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô estuda de madrugada diante de dois vírus gêmeos com broches diferentes"
+    "alt": "Macrô, na escrivaninha de estudo, segura duas seringas de vacina de brinquedo"
   },
   "imagem_macete": {
     "arquivo": "dia-210-macete.png",
-    "cena": "O gêmeo do broche de sete lados solta a alavanca de freio de uma bicicleta em forma de célula, que desce a ladeira sem parar; o gêmeo do broche de seis lados carrega para longe um guarda de capacete (a p53). Um despertador toca alto no guidão e ninguém obedece. O Macrô aponta com setinhas.",
-    "alt": "E7 solta a Rb, e o ciclo celular perde o freio"
+    "cena": "Callback: Macrô mostra aos linfócitos B uma casquinha redonda e vazia (a VLP, só L1), e eles disparam anticorpos em forma de Y que trancam a porta de uma célula do colo. Fundo limpo.",
+    "alt": "Macrô mostra a casca vazia aos linfócitos B, que trancam a porta da célula com anticorpos"
   },
   "questao": {
-    "vinheta": "A 34-year-old woman has cervical intraepithelial neoplasia grade 3. HPV 16 DNA is integrated into the genome of the dysplastic cells, and immunostaining shows strong, diffuse p16 expression. Mitoses are seen well above the basal layer.",
-    "pergunta": "Which viral mechanism most directly drives cell-cycle progression in these cells?",
+    "vinheta": "A 12-year-old girl receives her first dose of the 9-valent HPV vaccine, made of recombinant L1 capsid protein assembled into virus-like particles that contain no viral DNA. The same day, she receives this year's influenza vaccine.",
+    "pergunta": "Protection from the HPV vaccine depends mainly on which mechanism?",
     "alternativas": {
       "A": {
-        "texto": "E6 binding to Rb, which releases E2F",
-        "quiz": "E6 se liga à Rb"
-      },
-      "B": {
-        "texto": "E7 binding to Rb, which releases E2F",
-        "quiz": "E7 solta o E2F",
-        "dia": 127
-      },
-      "C": {
-        "texto": "Downregulation of MHC class I on infected cells",
-        "quiz": "Menos MHC I na célula",
+        "texto": "CD8+ T cells killing cells via MHC I",
+        "quiz": "CD8+ T cells via MHC I",
         "dia": 176
       },
+      "B": {
+        "texto": "IgG neutralizing the L1 capsid",
+        "quiz": "Neutralizing IgG to L1"
+      },
+      "C": {
+        "texto": "Antibodies blocking E7 binding to Rb",
+        "quiz": "Antibodies against E7",
+        "dia": 127
+      },
       "D": {
-        "texto": "Reassortment of viral genome segments",
-        "quiz": "Troca de segmentos",
-        "dia": 204
+        "texto": "NK cells lysing cells that lack MHC I",
+        "quiz": "NK cells (missing MHC I)"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "E7 solta a Rb: *ciclo sem freio*",
+    "titulo": "Vacina de HPV: *anticorpo contra a casca*",
     "certa": [
-      "Dia 127: o *E7* do HPV de alto risco se liga à *Rb* e solta o *E2F*, e o ciclo atravessa o ponto de controle G1/S sem freio. Com a Rb fora de ação, a célula fabrica *p16* em excesso, e a retroalimentação não consegue frear nada; por isso o p16 forte e difuso marca a lesão causada pelo HPV. O E6 completa o estrago degradando a p53."
+      "A vacina de HPV é feita de partículas semelhantes a vírus (*virus-like particles*): só a proteína *L1* do capsídeo, montada sem DNA. Como antígeno exógeno, ela é apresentada no MHC II e gera *IgG neutralizante* em título alto, que chega à mucosa do colo e impede o vírus de entrar na célula basal. Ela previne a infecção; não trata a lesão que já existe."
     ],
     "termos": [
-      "HPV E7",
-      "Rb and E2F",
-      "p16 overexpression",
-      "HPV E6 and p53"
+      "virus-like particle",
+      "L1 capsid protein",
+      "neutralizing antibodies",
+      "antigenic drift"
     ],
     "erradas": {
-      "A": "Intruso: o E6 degrada a p53 (pela via da ubiquitina); quem se liga à Rb é o E7. Seis vem antes de sete, P vem antes de R.",
-      "C": "Dia 176: o HPV reduz o MHC I para escapar dos linfócitos CD8, o que ajuda a infecção a persistir, mas não empurra o ciclo celular.",
-      "D": "Dia 204: rearranjo de segmentos é do influenza A, de RNA segmentado; o HPV tem DNA circular de dupla fita, sem segmentos."
+      "A": "Dia 176: o CD8 reconhece peptídeo endógeno no MHC I e mata a célula já infectada. A VLP não tem genoma, não é produzida dentro da célula, e a proteção da vacina vem antes da infecção.",
+      "C": "Dia 127: a E7 que solta a Rb age dentro do núcleo da célula infectada, longe do alcance de anticorpos; a vacina nem contém E7.",
+      "D": "Fora dos dias revisados: a célula NK mata quem perdeu o MHC I, um escape que o HPV usa. É imunidade inata, e a vacina não depende dela."
     },
     "macete": {
-      "frase": "*Seis antes de sete, P antes de R*: E6 leva a p53, E7 solta a Rb. Sem a Rb, o E2F pisa no acelerador da fase S, e o p16 sobe tentando frear em vão.",
-      "apoio": "O NBME troca E6 com E7 e coloca a fuga imune (MHC I mais baixo) como distrator do ciclo celular; persistência da infecção e progressão do ciclo são perguntas diferentes.",
-      "fala": "Comi, mostrei, avisei: foi o E7 que cortou o freio da Rb."
+      "frase": "VLP é *casca sem recheio*: só L1, sem DNA, sem E6 nem E7. O corpo aprende a casca e o *IgG tranca a porta*.",
+      "apoio": "Pegadinha de prova: o NBME oferece CD8 e MHC I porque a palavra \"vírus\" puxa imunidade celular, mas a VLP é antígeno exógeno e vira anticorpo neutralizante. Bônus do dia 204: a vacina da gripe é anual por causa do drift; a casca do HPV quase não muda.",
+      "fala": "Comi, mostrei, avisei: casca vazia, anticorpo de sobra."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix com o Macrô: HPV, MHC e influenza (dias 127, 176 e 204) numa biópsia só. Lesão de alto grau, HPV 16 integrado e p16 forte. Qual mecanismo viral empurra o ciclo celular?",
+    "contexto": "Domingo de Remix com o Macrô. Uma menina de 12 anos toma duas vacinas no mesmo dia, e a vinheta conta do que uma delas é feita. Qual mecanismo protege?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,8 +85,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "NIC 3, HPV 16 e p16 forte: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vacina de HPV feita só de L1: qual mecanismo protege?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

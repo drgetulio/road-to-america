@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-15",
   "tom": null,
-  "gancho": "Caminhão de cristais chega amanhã: *o que o Seu Néfron pede hoje?*",
-  "gancho_apoio": "O Seu Néfron não aceita entrega sem agendamento, muito menos de ácido úrico 9,8.",
+  "gancho": "Entrega grande marcada para amanhã: *o que o Seu Néfron pede hoje?*",
+  "gancho_apoio": "Plantão de Terça na repartição: a papelada está pronta e o caminhão chega amanhã.",
   "imagem": {
     "arquivo": "dia-317.png",
-    "cena": "Seu Néfron na mesa da repartição, de gravata e óculos na ponta do nariz, com um relógio de parede sem números nas 3 horas; pela janela, um caminhão basculante está prestes a despejar cascalho de cristais pontudos na porta; a pilha de formulários treme; na mesa, um frasquinho em forma de escudo com um sinal verde de conferido.",
+    "cena": "Seu Néfron na mesa da repartição, de gravata e óculos na ponta do nariz, com um relógio de parede sem números nas 3 horas; pela janela, um caminhão basculante cheio de caixas lacradas estaciona na porta; a pilha de formulários treme.",
     "foco": "50% 35%",
-    "alt": "Caminhão de cristais chega amanhã: o que o Seu Néfron pede hoje?"
+    "alt": "Seu Néfron vê um caminhão de entrega estacionar na porta"
   },
   "imagem_macete": {
     "arquivo": "dia-317-macete.png",
-    "cena": "Callback: o Seu Néfron usa um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que descem pelo túbulo; no canto, uma torneira fechada com uma chave inglesa pequena; o frasquinho escudo de sinal verde continua na mesa.",
+    "cena": "Callback: o caminhão despeja cascalho de cristais pontudos, e o Seu Néfron usa um aspirador mágico que suga os cristais e os solta como bolhas de sabão que descem pelo túbulo; no canto, uma torneira fechada com uma chave inglesa pequena.",
     "foco": "50% 45%",
     "alt": "Lise tumoral de alto risco: hidratação e rasburicase"
   },
@@ -32,7 +32,7 @@
     "alternativas": {
       "A": {
         "texto": "Urine alkalinization with sodium bicarbonate",
-        "quiz": "Bicarbonato"
+        "quiz": "Urine alkalinization"
       },
       "B": {
         "texto": "Rasburicase",
@@ -40,11 +40,11 @@
       },
       "C": {
         "texto": "Probenecid",
-        "quiz": "Probenecida"
+        "quiz": "Probenecid"
       },
       "D": {
         "texto": "Prophylactic hemodialysis",
-        "quiz": "Diálise profilática"
+        "quiz": "Prophylactic dialysis"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Rapaz de 22 anos com linfoma de Burkitt volumoso vai começar quimioterapia amanhã. Ácido úrico de 9,8 mg/dL, LDH muito alto e G6PD normal. Além de hidratação vigorosa, qual medida protege o rim do Seu Néfron?",
+    "contexto": "Plantão de Terça na repartição: uma entrega enorme chega amanhã cedo, e o Seu Néfron quer tudo resolvido hoje. A vinheta tem os exames de véspera; o soro já está correndo e a pergunta é o que somar a ele.",
     "palavras_chave": [
-      "Burkitt lymphoma",
-      "chemotherapy tomorrow",
-      "high uric acid",
-      "high LDH"
+      "hematology",
+      "laboratory review",
+      "inpatient care",
+      "prevention"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Burkitt, ácido úrico 9,8 e quimio amanhã: o que somar ao soro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Burkitt, ácido úrico 9,8 e quimio amanhã: o que somar ao soro?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

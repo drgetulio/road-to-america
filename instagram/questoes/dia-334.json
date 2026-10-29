@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-02",
   "tom": "acolhedor",
-  "gancho": "Outubro Rosa: dois anos de remédio diário e *dois sinais novos*",
-  "gancho_apoio": "Outubro Rosa. Sangramento vaginal, endométrio espesso e uma trombose há seis meses.",
+  "gancho": "Outubro Rosa: dois anos de remédio diário e *um sinal novo*",
+  "gancho_apoio": "Outubro Rosa. Uma questão com calma sobre como um remédio age em cada tecido.",
   "imagem": {
     "arquivo": "dia-334.png",
     "cena": "Tia Meia-Vida, calma, no balcão da farmácia organiza quatro frasquinhos diferentes numa bandeja; ao lado, um laço rosa e um vaso de planta; luz suave de fim de tarde. Tom calmo e acolhedor.",
     "foco": "50% 35%",
-    "alt": "Outubro Rosa: dois anos de remédio diário e dois sinais novos"
+    "alt": "Outubro Rosa: dois anos de remédio diário e um sinal novo"
   },
   "imagem_macete": {
     "arquivo": "dia-334-macete.png",
@@ -27,24 +27,24 @@
     "alt": "Tamoxifeno: SERM que bloqueia a mama e estimula o endométrio"
   },
   "questao": {
-    "vinheta": "A 58-year-old woman with estrogen receptor-positive breast cancer has taken a daily oral adjuvant drug for 2 years. She now has painless vaginal bleeding, and transvaginal ultrasound shows a thickened endometrium. Six months ago, she was treated for a deep vein thrombosis.",
+    "vinheta": "A 58-year-old woman with estrogen receptor-positive breast cancer has taken a daily oral adjuvant drug for 2 years. She now has painless vaginal bleeding, and transvaginal ultrasound shows a thickened endometrium. Her bone mineral density has not decreased since she began the drug.",
     "pergunta": "Which mechanism best describes this drug?",
     "alternativas": {
       "A": {
         "texto": "Inhibition of aromatase in peripheral tissue",
-        "quiz": "Inibe aromatase"
+        "quiz": "Aromatase inhibition"
       },
       "B": {
         "texto": "ER antagonist in breast, agonist in endometrium",
-        "quiz": "Mama não, útero sim"
+        "quiz": "SERM: uterine agonist"
       },
       "C": {
         "texto": "ER antagonist in breast and uterus, agonist in bone",
-        "quiz": "Poupa útero"
+        "quiz": "SERM: uterine antagonist"
       },
       "D": {
         "texto": "ER degradation in all tissues",
-        "quiz": "Degrada o receptor"
+        "quiz": "ER degradation (SERD)"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Outubro Rosa. Uma mulher em tratamento adjuvante para câncer de mama com receptor de estrogênio positivo passa a ter sangramento vaginal e já teve uma trombose. Como age o remédio que ela usa?",
+    "contexto": "Outubro Rosa, com calma: um remédio usado por anos depois do tratamento do câncer de mama e um sinal novo que pede atenção. A pergunta é sobre como ele age em cada tecido.",
     "palavras_chave": [
-      "ER-positive breast cancer",
+      "breast cancer care",
       "adjuvant therapy",
-      "vaginal bleeding",
-      "prior DVT"
+      "pharmacology",
+      "women's health"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Câncer de mama RE positivo, endométrio espesso e TVP: como age o remédio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Câncer de mama RE positivo e endométrio espesso: como age o remédio?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

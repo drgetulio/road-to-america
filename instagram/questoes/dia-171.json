@@ -17,14 +17,14 @@
   "gancho_apoio": "Uma homenagem aos dentistas, que cuidam do nosso sorriso, e ao trigêmeo, que faz a parte elétrica.",
   "imagem": {
     "arquivo": "dia-171.png",
-    "cena": "Um dente molar sorridente, de babador, está sentado numa cadeira de dentista como num trono. Três fios coloridos saem de trás da cadeira até um quadro de luz com três disjuntores, todos ligados, e Seu Allen, de avental navy, examina o quadro; setinhas de manual apontam para os disjuntores.",
+    "cena": "Um dente molar sorridente, de babador, está sentado numa cadeira de dentista como num trono, e Seu Allen examina um quadro de luz com três disjuntores, todos ligados. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Molar sorridente de babador numa cadeira de dentista; Seu Allen examina um quadro de luz com três disjuntores."
+    "alt": "Um molar sorridente de babador na cadeira de dentista; Seu Allen examina um quadro com três disjuntores ligados."
   },
   "imagem_macete": {
     "arquivo": "dia-171-macete.png",
-    "cena": "Um prédio de três andares em forma de perfil de rosto: só o térreo (queixo) está com a luz apagada, e ali o dente dorme tranquilo de pijama. No quadro de luz, o terceiro disjuntor, o vermelho, está desligado, e Seu Allen guarda a chavinha.",
-    "alt": "Prédio em forma de rosto com só o térreo apagado, onde o dente dorme; o disjuntor vermelho está desligado."
+    "cena": "Callback: num prédio de três andares em forma de perfil de rosto, só o térreo (o queixo) está com a luz apagada, e ali o dente dorme de pijama, enquanto Seu Allen desliga o terceiro disjuntor. Fundo limpo.",
+    "alt": "No prédio em forma de rosto, só o térreo está apagado, com o dente dormindo; Seu Allen desliga o terceiro disjuntor."
   },
   "questao": {
     "vinheta": "Before extracting a lower molar, a dentist injects local anesthetic near the mandibular foramen. Minutes later, the patient has numbness of the lower teeth on that side and of the ipsilateral lower lip and chin. Sensation of the upper teeth and cheek is normal.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Ophthalmic nerve (V1)",
-        "quiz": "V1 oftálmico"
+        "quiz": "Ophthalmic (V1)"
       },
       "B": {
         "texto": "Maxillary nerve (V2)",
-        "quiz": "V2 maxilar"
+        "quiz": "Maxillary (V2)"
       },
       "C": {
         "texto": "Mandibular nerve (V3)",
-        "quiz": "V3 mandibular"
+        "quiz": "Mandibular (V3)"
       },
       "D": {
         "texto": "Facial nerve (CN VII)",
-        "quiz": "VII facial"
+        "quiz": "Facial (CN VII)"
       }
     },
     "correta": "C"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "21 de abril é feriado de Tiradentes, e a questão é uma homenagem aos dentistas. Um bloqueio perto do forame mandibular, dentes de baixo e lábio dormentes, e três ramos do trigêmeo mais um intruso.",
+    "contexto": "21 de abril é feriado de Tiradentes, e a questão é uma homenagem aos dentistas. Onde foi a anestesia e o que ficou dormente estão na vinheta, e três ramos do trigêmeo disputam com um intruso.",
     "palavras_chave": [
       "dental anesthesia",
       "mandibular foramen",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Anestesia no forame mandibular dormiu dentes de baixo e lábio: qual nervo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Anestesia no forame mandibular dormiu dentes de baixo e lábio: qual nervo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

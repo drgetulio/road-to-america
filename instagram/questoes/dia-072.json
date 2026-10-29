@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-13",
-  "gancho": "Octreotida e ceftriaxona já correram. *E a mangueira*, quem fecha?",
+  "gancho": "Cirrose, sangue vivo e a Dona Térmica com a *lista de pendências*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Na copa do plantão, às 3 da manhã no relógio sem números, Dona Térmica observa uma mangueira de jardim azulada e inchada que espirra água pela pia. O registro já está meio fechado e um escudinho de comprimido monta guarda. No armário aberto, um balão de festa murcho, um cano em forma de ponte e um pote de elásticos de cabelo.",
+    "cena": "Na copa do plantão, Dona Térmica observa uma mangueira de jardim azulada e inchada que espirra água pela pia. Na parede, o relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica olha uma mangueira azulada que espirra água na pia da copa; no armário, um balão murcho, um cano em ponte e um pote de elásticos.",
+    "alt": "Na copa do plantão, Dona Térmica observa uma mangueira azulada e inchada que espirra água pela pia.",
     "arquivo": "dia-072.png"
   },
   "imagem_macete": {
@@ -30,7 +30,7 @@
     "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Esophageal balloon tamponade",
+        "texto": "Balloon tamponade of the esophagus",
         "quiz": "Balloon tamponade"
       },
       "B": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Cirrose, vômito de sangue vivo e pressão caindo. Via aérea, sangue, octreotida e antibiótico já foram. Dona Térmica, que não dorme desde ontem, quer saber o que vem agora.",
+    "contexto": "Plantão de Terça: cirrose, sangue vivo e uma equipe que já fez muita coisa antes de você chegar. A Dona Térmica, que não dorme desde ontem, quer saber o que falta. Dica de plantonista: leia o que já foi feito antes de escolher o que fazer.",
     "palavras_chave": [
       "cirrhosis",
       "hematemesis",
-      "hypotension",
-      "airway protection"
+      "GI bleeding",
+      "night shift"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#PlantaoDeTerca",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Varizes sangrando, octreotida e ceftriaxona correndo: e agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Varizes sangrando, octreotida e ceftriaxona correndo: e agora?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

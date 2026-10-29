@@ -8,7 +8,7 @@
   "topico": "Remix de domingo: Hepatite E (dia 281), Gangrena gasosa (dia 309), Giardíase (dia 330)",
   "conceito": "Remix: Hepatitis E + Clostridium perfringens alpha toxin + Giardia lamblia",
   "personagem": null,
-  "anfitriao": "Macrô",
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": [
     281,
@@ -17,67 +17,69 @@
   ],
   "explicacao_em": "2027-10-04",
   "tom": null,
-  "gancho": "Vacinada para A e B, grávida e *com o fígado em pane*",
-  "gancho_apoio": "Revisão de domingo com os dias 281, 309 e 330. A viagem teve água de poço, e não foi só um visitante.",
+  "gancho": "Almoço de domingo para 40 pessoas e *o garçom recebeu reclamação no dia seguinte*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
   "imagem": {
     "arquivo": "dia-336.png",
-    "cena": "Macrô ao lado de um poço numa vila de montanha, com a comanda em branco no bolso, segura um balde de água de poço; num banco, um passaporte e um chocalho de bebê; numa prateleira, dois frasquinhos de vacina em forma de escudo, já usados; num canto, um vinil pequeno encostado.",
+    "cena": "O Garçom Espetinho, num salão de festas de bairro depois de um almoço comunitário, recolhe pratos de uma mesa comprida; num carrinho, quatro travessas tampadas; a plaquinha verde e vermelha no avental; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Vacinada para A e B, grávida e com o fígado em pane"
+    "alt": "Garçom recolhe pratos depois de um almoço comunitário"
   },
   "imagem_macete": {
     "arquivo": "dia-336-macete.png",
-    "cena": "Callback: um balão em forma de fígado, com uma gota de água desenhada, acende um cone vermelho de alerta ao lado do chocalho; os dois escudos de vacina guardam duas portas fechadas, e uma terceira porta, sem escudo, fica aberta; o Macrô aponta para ela.",
+    "cena": "Callback: numa cozinha de salão, uma panela grande de ensopado esfria devagar no fogão desligado; esporos pequenos de capacete, que sobreviveram ao fogo, saem da casca e se multiplicam no caldo morno; o Garçom Espetinho vira a plaquinha para o vermelho diante da panela e mostra um termômetro de cozinha parado na faixa morna; o vinil continua no canto.",
     "foco": "50% 45%",
-    "alt": "Gestante com hepatite fulminante depois de água de poço: hepatite E"
+    "alt": "Ensopado mantido morno e diarreia em 10 horas: C. perfringens"
   },
   "questao": {
-    "vinheta": "A 26-year-old woman who is 31 weeks pregnant develops jaundice and confusion 6 weeks after a trip to Nepal, where she drank untreated well water and had greasy diarrhea that resolved with treatment. She is vaccinated against hepatitis A and B. She has no mucocutaneous lesions. ALT is 2,850 U/L, and INR is 2.4.",
-    "pergunta": "Which pathogen is most likely responsible?",
+    "vinheta": "Ten hours after a community lunch, 18 of 40 guests develop abdominal cramps and watery diarrhea; vomiting and fever are uncommon, and symptoms resolve within 24 hours. The main dish was a beef stew cooked the day before, cooled slowly, and kept warm for hours before serving.",
+    "pergunta": "Which organism most likely caused this outbreak?",
     "alternativas": {
       "A": {
-        "texto": "Hepatitis A virus",
-        "quiz": "Hepatite A"
+        "texto": "Staphylococcus aureus",
+        "quiz": "Staphylococcus aureus"
       },
       "B": {
-        "texto": "Hepatitis B virus",
-        "quiz": "Hepatite B"
+        "texto": "Giardia lamblia",
+        "quiz": "Giardia lamblia",
+        "dia": 330
       },
       "C": {
-        "texto": "Hepatitis E virus",
-        "quiz": "Hepatite E"
+        "texto": "Clostridium perfringens",
+        "quiz": "Clostridium perfringens",
+        "dia": 309
       },
       "D": {
-        "texto": "Herpes simplex virus",
-        "quiz": "Herpes simples"
+        "texto": "Enterotoxigenic E. coli",
+        "quiz": "Enterotoxigenic E. coli"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Gestante com hepatite fulminante depois de água de poço: *hepatite E*",
+    "titulo": "Ensopado mantido morno e diarreia em 10 horas: *C. perfringens*",
     "certa": [
-      "Hepatite aguda grave, com encefalopatia e INR de 2,4, numa gestante de terceiro trimestre semanas depois de beber água sem tratamento no sul da Ásia é *hepatitis E virus* (dia 281). O HEV é fecal-oral, como o HAV, mas na gestante pode virar *fulminant hepatic failure*. A diarreia gordurosa da viagem foi a Giardia (dia 330), um segundo visitante da mesma água."
+      "Cólica e diarreia aquosa cerca de 8 a 16 horas depois de comer carne ou ensopado preparado em grande quantidade, resfriado devagar e mantido morno, com pouco vômito, sem febre e cura em um dia, é a intoxicação alimentar por *Clostridium perfringens* tipo A, o mesmo germe da gangrena gasosa (dia 309). Os *spores* resistem ao cozimento e germinam enquanto a comida esfria devagar; no intestino, as bactérias esporulam e liberam a *enterotoxin*, que abre poros no epitélio. O tratamento é hidratação."
     ],
     "termos": [
-      "hepatitis E virus",
-      "fulminant hepatic failure",
-      "pregnancy",
-      "fecal-oral transmission"
+      "Clostridium perfringens type A",
+      "heat-resistant spores",
+      "enterotoxin",
+      "8 to 16 hour incubation"
     ],
     "erradas": {
-      "A": "A *hepatite A* também vem pela água, mas ela está vacinada e o HAV não tem gravidade especial na gestação.",
-      "B": "A *hepatite B* é parenteral e sexual, e ela completou a vacinação.",
-      "D": "A *hepatite por herpes simples* na gestação é grave, mas costuma ser anictérica, com transaminases muito altas e febre; sem lesões e com icterícia marcada, fica atrás."
+      "A": "O S. aureus deixa a toxina pronta na comida, e o quadro começa em 1 a 6 horas, com vômito intenso.",
+      "B": "A Giardia (dia 330) leva 1 a 2 semanas para dar sintomas e causa diarreia gordurosa que dura semanas, não um surto de um dia.",
+      "D": "A E. coli enterotoxigênica é a diarreia do viajante, com incubação de 1 a 3 dias, ligada a água e comida contaminadas em viagem."
     },
     "macete": {
-      "frase": "*E de Expectante*: das hepatites que vêm pela água, a E é a que pesa no terceiro trimestre",
-      "apoio": "Das hepatites que vêm pela água, a E é a que não respeita o pré-natal. A hepatite E (dia 281) na gestante, sobretudo no terceiro trimestre, pode virar insuficiência hepática fulminante. Bônus do dia 330: a diarreia gordurosa que boiou na viagem foi a Giardia. Bônus do dia 309: gangrena gasosa vem de ferida suja de terra, não de água de poço.",
-      "fala": "Comi, mostrei, avisei. Água de poço, só fervida."
+      "frase": "*Ensopado de véspera mantido morno*: o esporo sobrevive ao fogo e a diarreia chega no jantar",
+      "apoio": "O mesmo C. perfringens que destrói músculo na ferida suja (dia 309) vira, na panela morna, uma diarreia de um dia só. Toxina já pronta na comida (S. aureus, B. cereus da forma com vômito) começa em poucas horas; germe que ainda precisa agir no intestino demora mais. Bônus: a hepatite E (dia 281) também vem da água e da comida, mas leva semanas e dá icterícia.",
+      "fala": "Vai uma conduta aí, doutor? Hoje a conduta é soro e ensopado fresco."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 281, 309 e 330. Gestante de 31 semanas com icterícia e confusão depois de beber água de poço numa viagem, vacinada para hepatite A e B, INR de 2,4. Qual é o agente?",
+    "contexto": "Domingo de revisão: hepatite E (dia 281), gangrena gasosa (dia 309) e giardíase (dia 330) voltaram, e o Garçom Espetinho serviu o almoço da comunidade. Quatro suspeitos; o relógio entre a comida e os sintomas está na vinheta, e é ele que decide.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -96,9 +98,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "31 semanas, água de poço, vacinada para A e B e INR 2,4: qual vírus?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ensopado de véspera e diarreia 10 horas depois em 18 convidados: qual germe?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

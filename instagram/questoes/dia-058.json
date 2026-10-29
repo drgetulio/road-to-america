@@ -12,12 +12,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-30",
-  "gancho": "Coração a 180, pressão de 74 e o pulso ainda batendo: quem *rege* a bateria?",
+  "gancho": "Bateria de escola de samba às 3 da manhã, e o *tamborim* disparou",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Uma bateria de escola de samba com instrumentos personificados; um coração vermelho toca o tamborim rápido demais. Dona Térmica, de estetoscópio no pescoço e olhos de sono, está na frente da bateria como mestre, segurando o apito, e um surdo grande com um raio desenhado espera no canto. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Coração a 180, pressão de 74 e o pulso ainda batendo: quem rege a bateria?",
+    "alt": "Bateria de escola de samba às 3 da manhã, e o tamborim disparou",
     "arquivo": "dia-058.png"
   },
   "imagem_macete": {
@@ -35,7 +35,7 @@
       },
       "B": {
         "texto": "Unsynchronized defibrillation",
-        "quiz": "Defibrillation"
+        "quiz": "Unsynchronized shock"
       },
       "C": {
         "texto": "IV amiodarone infusion",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Taquicardia regular de complexo largo, confusão, sudorese e pressão de 74 por 40, com pulso presente. A Dona Térmica já viu esse caso às 3 da manhã, e não é hora de pensar muito.",
+    "contexto": "Plantão de Terça: um coração acelerado, um ECG e quatro condutas na mesa. A Dona Térmica já viu esse caso às 3 da manhã, e você vai ver no Prometric, com o cronômetro correndo.",
     "palavras_chave": [
-      "palpitations",
-      "hypotension",
-      "wide-complex tachycardia",
-      "altered mental status"
+      "tachycardia",
+      "ECG",
+      "emergency medicine",
+      "night shift"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#ACLS",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Taquicardia de QRS largo a 180 com PA 74/40 e pulso: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Taquicardia de QRS largo a 180 com PA 74/40 e pulso: qual conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

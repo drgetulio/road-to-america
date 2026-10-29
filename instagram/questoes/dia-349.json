@@ -16,7 +16,7 @@
   "gancho_apoio": "Incidência igual, duração dobrada. O Viés quer saber o que acontece com a água.",
   "imagem": {
     "arquivo": "dia-349.png",
-    "cena": "O Viés espia de trás de uma tabela 2x2 ao lado de uma banheira antiga com a torneira aberta, o ralo destampado e um patinho de borracha boiando; uma chave inglesa e uma tampa de ralo esquecidas no chão.",
+    "cena": "O Viés espia de trás de uma tabela 2x2 ao lado de uma banheira antiga com a torneira aberta, o ralo destampado e um patinho de borracha boiando.",
     "foco": "50% 35%",
     "alt": "O remédio não cura, mas a banheira enche"
   },
@@ -32,7 +32,7 @@
     "alternativas": {
       "A": {
         "texto": "0.2%",
-        "quiz": "0,2%"
+        "quiz": "0.2%"
       },
       "B": {
         "texto": "1%",
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Doença crônica sem cura: 20 casos novos por 10.000 pessoas por ano e duração média de 5 anos. Chega um remédio que dobra a sobrevida, sem curar. Quanto fica a prevalência?",
+    "contexto": "Sábado Sem Viés na banheira: a torneira não mudou, mas o ralo ficou mais lento. Faça a conta com os números da vinheta, porque no Prometric a calculadora da tela até existe, mas some quando você mais precisa.",
     "palavras_chave": [
-      "chronic lung disease",
-      "stable incidence",
-      "new drug",
-      "longer survival"
+      "epidemiology",
+      "chronic disease",
+      "disease frequency",
+      "biostatistics"
     ],
     "hashtags": [
       "#USMLE",
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Incidência 20 por 10.000 ao ano e duração de 5 para 10 anos: prevalência?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Incidência 20 por 10.000 ao ano e duração de 5 para 10 anos: prevalência?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

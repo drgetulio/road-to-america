@@ -14,12 +14,12 @@
   "explicacao_em": "2027-10-28",
   "tom": null,
   "gancho": "Na obra do embrião, *uma equipe faltou ao serviço*",
-  "gancho_apoio": "Menino com genitália típica e um útero achado na cirurgia de hérnia. Seu Allen procura a peça que sobrou.",
+  "gancho_apoio": "Quarta do Porquê no canteiro de obras: o Seu Allen procura quem não apareceu.",
   "imagem": {
     "arquivo": "dia-360.png",
-    "cena": "Seu Allen, com setinhas de manual de montagem, num canteiro de obras com duas torres de andaime lado a lado; um capacete de mestre de obras sobre a mesa e duas equipes: uma com bola de demolição e outra com tijolos; uma nuvem de poeira esconde qual equipe não apareceu; na parede, um calendário marcado numa segunda-feira.",
+    "cena": "Seu Allen, com setinhas de manual de montagem e um capacete de mestre de obras, num canteiro de obras; no portão, quatro equipes de capacete esperam com crachás em branco, e uma nuvem de poeira esconde qual delas não apareceu.",
     "foco": "50% 35%",
-    "alt": "Na obra do embrião, uma equipe faltou ao serviço"
+    "alt": "Seu Allen num canteiro de obras com quatro equipes no portão"
   },
   "imagem_macete": {
     "arquivo": "dia-360-macete.png",
@@ -33,11 +33,11 @@
     "alternativas": {
       "A": {
         "texto": "SRY protein from the Y chromosome",
-        "quiz": "Proteína SRY"
+        "quiz": "SRY protein"
       },
       "B": {
         "texto": "Testosterone from Leydig cells",
-        "quiz": "Testosterona"
+        "quiz": "Testosterone"
       },
       "C": {
         "texto": "Dihydrotestosterone from 5-alpha-reductase",
@@ -45,7 +45,7 @@
       },
       "D": {
         "texto": "Anti-Mullerian hormone from Sertoli cells",
-        "quiz": "AMH (Sertoli)"
+        "quiz": "AMH"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Na cirurgia de hérnia de um menino de 3 anos, aparecem útero e tubas ao lado de um testículo. Cariótipo 46,XY, genitália externa típica. Que produto faltou?",
+    "contexto": "Quarta do Porquê no canteiro de obras: o Seu Allen conferiu o cronograma do embrião e uma equipe faltou ao serviço. Quatro produtos do desenvolvimento sexual; a vinheta diz o que foi achado na cirurgia e o que estava normal.",
     "palavras_chave": [
-      "inguinal hernia repair",
-      "uterus in a boy",
-      "46,XY",
-      "normal external genitalia"
+      "embryology",
+      "pediatric surgery",
+      "reproductive development",
+      "genetics"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Menino 46,XY com útero no saco herniário e genitália típica: o que faltou?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Menino 46,XY com útero no saco herniário e genitália típica: o que faltou?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

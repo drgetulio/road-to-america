@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Accept, since it will not change her prescribing",
-        "quiz": "Aceitar"
+        "quiz": "Accept; won't change Rx"
       },
       "B": {
         "texto": "Accept if she discloses the trip to her patients",
-        "quiz": "Aceitar e contar"
+        "quiz": "Accept and disclose"
       },
       "C": {
         "texto": "Decline the invitation",
-        "quiz": "Recusar"
+        "quiz": "Decline the invitation"
       },
       "D": {
         "texto": "Accept if her spouse pays for his own travel",
-        "quiz": "Cônjuge paga"
+        "quiz": "Accept if spouse pays"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um representante convida a médica e o marido para um fim de semana num resort, tudo pago, com uma palestra de uma hora sobre um anticoagulante novo. Ela jura que nada vai mudar na prescrição. Qual a resposta adequada?",
+    "contexto": "Sábado Sem Viés à beira-mar: o fantasminha já passou protetor e arrumou a mala, e a médica jura que nada vai mudar na receita dela. Quatro respostas; no NBME de ética, a resposta que deixa todo mundo feliz no grupo da turma raramente é a certa.",
     "palavras_chave": [
-      "pharmaceutical representative",
-      "paid weekend",
-      "beach resort",
-      "professionalism"
+      "professionalism",
+      "medical ethics",
+      "sales representative",
+      "travel"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Fim de semana em resort pago, com palestra de 1 hora: qual a resposta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fim de semana em resort pago, com palestra de 1 hora: qual a resposta?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

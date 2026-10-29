@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Turn the seat forward-facing with the 5-point harness now",
-        "quiz": "De frente, 5 pontos"
+        "quiz": "Forward-facing harness"
       },
       "B": {
         "texto": "Switch to a belt-positioning booster seat",
-        "quiz": "Assento de elevação"
+        "quiz": "Booster seat"
       },
       "C": {
         "texto": "Keep the seat rear-facing until he reaches its rear-facing limits",
-        "quiz": "De costas até limite"
+        "quiz": "Rear-facing to limits"
       },
       "D": {
-        "texto": "Move the seat to the front passenger seat with the airbag off",
-        "quiz": "Banco da frente"
+        "texto": "Move the seat to the front passenger seat with the airbag turned off",
+        "quiz": "Front seat, airbag off"
       }
     },
     "correta": "C"
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê de 15 meses com o pé no banco do carro: o que orientar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê de 15 meses com o pé no banco do carro: o que orientar?"
   },
   "exemplo": false
 }

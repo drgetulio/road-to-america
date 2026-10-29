@@ -7,24 +7,25 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Deficiência do complemento terminal",
   "conceito": "Terminal complement deficiency: C5-C9 defect predisposes to recurrent Neisseria infections",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-06",
   "tom": null,
-  "gancho": "Montou a furadeira pelo tutorial e *sobrou uma peça*. Adivinha quem voltou?",
-  "gancho_apoio": "Meningococo duas vezes no paciente e uma no irmão. Qual peça do complemento sumiu da caixa?",
+  "gancho": "Bicho de Segunda com o Seu Allen: *uma peça sumiu da caixa*",
+  "gancho_apoio": "Complemento é a única caixa de montagem do Step 1 que vem com nove peças numeradas e nenhum manual.",
   "imagem": {
     "arquivo": "dia-246.png",
-    "cena": "Na sala de casa, Macrô, de guardanapo xadrez e com a comanda em branco no bolso, monta uma furadeira de brinquedo seguindo um tutorial no celular apoiado num copo. As peças coloridas estão espalhadas no tapete e uma delas claramente sobrou. Pela janela, dois grãos de café sorridentes, de mãos dadas, acenam como quem diz \"voltamos\".",
+    "cena": "Na sala de casa, Seu Allen monta uma furadeira de brinquedo seguindo um manual, com as peças coloridas espalhadas no tapete. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô monta a furadeira pelo tutorial e sobra uma peça"
+    "alt": "Seu Allen monta uma furadeira de brinquedo com as peças espalhadas no tapete"
   },
   "imagem_macete": {
     "arquivo": "dia-246-macete.png",
-    "cena": "Macrô encaixa a quinta peça, a furadeira liga e faz um furo redondo na casca de um par de grãos de café, que murcha sem drama. Na parede, cinco ganchos de ferramenta, um de cada cor, agora todos ocupados, e na estante dois frascos de vacina em forma de escudo.",
+    "cena": "Callback: Seu Allen encaixa a quinta peça, a furadeira liga e faz um furo redondo na casca de um par de grãos de café (os diplococos), que murcha sem drama; na estante, dois frascos de vacina em forma de escudo. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Com as cinco peças, a furadeira fura o diplococo"
+    "alt": "A furadeira completa fura o par de grãos de café; na estante, dois frascos de vacina"
   },
   "questao": {
     "vinheta": "A 19-year-old college student is hospitalized with meningococcal meningitis. At age 13, he had meningococcal sepsis, and his older brother had meningococcal meningitis at age 17. He has no other history of serious infections. Serum immunoglobulins are normal, and total hemolytic complement (CH50) activity is nearly absent.",
@@ -32,7 +33,7 @@
     "alternativas": {
       "A": {
         "texto": "C1 esterase inhibitor",
-        "quiz": "Inibidor de C1"
+        "quiz": "C1 esterase inhibitor"
       },
       "B": {
         "texto": "C3",
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "*C5 a C9* é a furadeira que fura a *Neisseria*",
       "apoio": "Sobrou peça, a furadeira não fura: faltou qualquer uma de C5 a C9 e o MAC não monta. Os grãos de café em dupla são os diplococos da Neisseria, que voltam sempre, inclusive no irmão. Antes do eculizumabe (anti-C5), vacina contra meningococo.",
-      "fala": "Comi, mostrei, avisei. Montar furadeira já é outra história."
+      "fala": "Sobrou peça? Então faltou mecanismo: sem C5 a C9, a furadeira não fura a Neisseria."
     }
   },
   "legenda": {
-    "contexto": "Meningococo de repetição, o irmão mais velho com a mesma história e imunoglobulinas normais. O CH50 quase zerou. Onde está o defeito?",
+    "contexto": "Bicho de Segunda na imunologia, com o Seu Allen de visita. Uma infecção que volta, uma família com história parecida e um exame do complemento, tudo na vinheta. Qual peça faltou?",
     "palavras_chave": [
-      "recurrent meningococcal infection",
+      "recurrent infection",
       "family history",
-      "normal immunoglobulins",
-      "CH50"
+      "complement system",
+      "Step 1 immunology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual componente do complemento falta nos dois irmãos?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Qual componente do complemento falta nos dois irmãos?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

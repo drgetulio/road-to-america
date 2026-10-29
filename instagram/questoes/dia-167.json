@@ -17,14 +17,14 @@
   "gancho_apoio": "Hoje sem piada. Um tema delicado, e a Dona Bússola explica com calma.",
   "imagem": {
     "arquivo": "dia-167.png",
-    "cena": "Numa sala tranquila, perto de uma janela com cortina, duas portas iguais e fechadas ficam lado a lado. A Dona Bússola, diante delas, está com o ponteiro parado entre as duas. Na parede, um quadrinho 2x2 em branco. Tom sereno, sem piada.",
+    "cena": "Numa sala tranquila, perto de uma janela com cortina, duas portas iguais e fechadas ficam lado a lado, e a Dona Bússola, diante delas, está com o ponteiro parado entre as duas. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Bússola diante de duas portas iguais e fechadas, com o ponteiro parado entre elas, numa sala tranquila."
+    "alt": "Dona Bússola diante de duas portas iguais e fechadas, com o ponteiro parado entre elas."
   },
   "imagem_macete": {
     "arquivo": "dia-167-macete.png",
-    "cena": "As duas portas se abrem para a mesma salinha iluminada, onde está uma carta escrita à mão com selo de coração (a vontade do paciente), uma manta dobrada e um travesseiro macio. O ponteiro da Dona Bússola aponta para a carta.",
-    "alt": "As duas portas abrem para a mesma sala, com uma carta de selo de coração, uma manta e um travesseiro."
+    "cena": "As duas portas se abrem para a mesma salinha iluminada, onde estão uma carta escrita à mão com selo de coração e uma manta dobrada; o ponteiro da Dona Bússola aponta para a carta. Fundo limpo.",
+    "alt": "As duas portas dão na mesma sala, com uma carta de selo de coração; o ponteiro aponta a carta."
   },
   "questao": {
     "vinheta": "An 81-year-old man has been on mechanical ventilation for 10 days after a severe anoxic brain injury; neurology expects no meaningful recovery. His advance directive refuses prolonged life support. His wife, the health care proxy, asks to remove the ventilator. A resident says stopping is different from never starting.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Continue ventilation, since withdrawing differs from withholding",
-        "quiz": "Manter o ventilador"
+        "quiz": "Keep the ventilator on"
       },
       "B": {
         "texto": "Withdraw ventilation and provide comfort care",
-        "quiz": "Retirar com conforto"
+        "quiz": "Withdraw, comfort care"
       },
       "C": {
         "texto": "Obtain a court order before extubation",
-        "quiz": "Ordem judicial"
+        "quiz": "Get a court order"
       },
       "D": {
         "texto": "Continue ventilation until brain death criteria are met",
-        "quiz": "Até morte encefálica"
+        "quiz": "Wait for brain death"
       }
     },
     "correta": "B"
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com um tema delicado e muito cobrado. O paciente deixou a vontade por escrito, a esposa é a representante legal e um colega acha que retirar é diferente de não iniciar. Qual é a conduta?",
+    "contexto": "Sábado Sem Viés com um tema delicado e muito cobrado. A vontade do paciente, quem fala por ele e a opinião de um colega estão na vinheta. Qual é a conduta?",
     "palavras_chave": [
       "mechanical ventilation",
       "anoxic brain injury",
@@ -82,8 +82,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diretiva recusa suporte prolongado e a procuradora pede retirar: qual conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diretiva recusa suporte prolongado e a procuradora pede retirar: qual conduta?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

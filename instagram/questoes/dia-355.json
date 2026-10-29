@@ -13,7 +13,7 @@
   "explicacao_em": "2027-10-23",
   "tom": null,
   "gancho": "Dia de clássico no estádio do coração: *por que a torcida sumiu?*",
-  "gancho_apoio": "Angina, nitroglicerina sublingual e um remédio novo para a próstata na mesma tarde.",
+  "gancho_apoio": "Sextou na Farmácia: duas caixinhas sem rótulo no balcão.",
   "imagem": {
     "arquivo": "dia-355.png",
     "cena": "Tia Meia-Vida no balcão da farmácia; pela janela, um estádio de futebol em forma de coração recebe uma fila de carrinhos vermelhos em dia de clássico; sobre o balcão, duas caixinhas de remédio sem rótulo.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Beta-1 blockade lowering heart rate",
-        "quiz": "Bloqueio beta-1"
+        "quiz": "β1 blockade, lower HR"
       },
       "B": {
         "texto": "L-type calcium channel blockade",
-        "quiz": "Bloqueio de cálcio"
+        "quiz": "L-type Ca channel block"
       },
       "C": {
         "texto": "Increased cGMP causing venodilation",
-        "quiz": "cGMP e venodilatação"
+        "quiz": "↑cGMP, venodilation"
       },
       "D": {
         "texto": "Increased cAMP causing arteriolar dilation",
-        "quiz": "cAMP e arteríola"
+        "quiz": "↑cAMP, arteriolar dilation"
       }
     },
     "correta": "C"
@@ -72,11 +72,11 @@
     }
   },
   "legenda": {
-    "contexto": "Ele usa nitroglicerina para angina e começou tadalafil para os sintomas urinários da próstata. Duas horas depois, uma dose de nitrato e a pressão vai a 74/40. Qual mecanismo explica?",
+    "contexto": "Sextou na Farmácia em dia de clássico: duas caixinhas na mesma tarde e a torcida do coração sumiu do estádio. A pergunta é como uma delas alivia a angina, e a resposta também explica o susto.",
     "palavras_chave": [
-      "stable angina",
-      "sublingual medication",
-      "tadalafil",
+      "cardiology",
+      "chest pain",
+      "pharmacology",
       "hypotension"
     ],
     "hashtags": [
@@ -92,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Nitroglicerina duas horas após tadalafila e PA 74/40: qual o mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nitroglicerina duas horas após tadalafila e PA 74/40: qual o mecanismo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

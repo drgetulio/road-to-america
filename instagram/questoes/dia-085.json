@@ -12,10 +12,10 @@
   "remix_de": null,
   "explicacao_em": "2027-01-26",
   "tom": "acolhedor",
-  "gancho": "Janeiro Roxo: o Macrô e o *granuloma bem organizado*",
+  "gancho": "Janeiro Roxo: informação que cura, *sem estigma*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô, sereno e de comanda no bolso, numa praça com uma fita roxa de conscientização amarrada num banco. Ao lado, dois canteiros desenhados como um diagrama: num, poucos bastonetes; no outro, muitos bastonetes espalhados. Ele observa os dois com cuidado, sem dizer qual é o caso de hoje.",
+    "cena": "Macrô, sereno, numa praça tranquila com uma fita roxa de conscientização amarrada num banco, observa com cuidado dois canteiros lado a lado: num, poucos bastonetes; no outro, muitos. Fundo limpo.",
     "foco": "50% 35%",
     "alt": "Macrô, numa praça com uma fita roxa no banco, observa dois canteiros: um com poucos bastonetes e outro com muitos.",
     "arquivo": "dia-085.png"
@@ -34,7 +34,7 @@
         "quiz": "Th2: IL-4, IL-10"
       },
       "B": {
-        "texto": "Th1 response with IFN-gamma and IL-2",
+        "texto": "Th1 response with IFN-gamma",
         "quiz": "Th1: IFN-gamma"
       },
       "C": {
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Janeiro Roxo é o mês de conscientização sobre a hanseníase. A questão compara as duas pontas da doença e pergunta qual resposta imune predomina quando há poucos bacilos.",
+    "contexto": "Janeiro Roxo é o mês de conscientização sobre a hanseníase, uma doença que tem cura, com tratamento gratuito pelo SUS, e que ainda carrega estigma demais. A questão compara as duas pontas da doença pela resposta imune.",
     "palavras_chave": [
-      "hypopigmented plaque",
-      "anesthetic skin lesion",
-      "thickened ulnar nerve",
-      "granulomas"
+      "skin lesion",
+      "peripheral nerve",
+      "infectious disease",
+      "Janeiro Roxo"
     ],
     "hashtags": [
       "#USMLE",
@@ -86,12 +86,11 @@
       "#Microbiology",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Placa anestésica, nervo espesso e raros bacilos: qual resposta imune?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Placa anestésica, nervo espesso e raros bacilos: qual resposta imune?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

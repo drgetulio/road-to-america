@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-07-16",
   "tom": null,
-  "gancho": "O grupo dos pais da escola e o da família *concordaram pela primeira vez*",
-  "gancho_apoio": "Professora e pais descrevem a mesma inquietação há um ano, sem desafio e com leitura no nível da série. Qual é o diagnóstico?",
+  "gancho": "Rodízio de Quinta na psiquiatria infantil: *a professora mandou um bilhete*",
+  "gancho_apoio": "Psiquiatria infantil no NBME: quatro siglas parecidas e uma criança que só queria o recreio.",
   "imagem": {
     "arquivo": "dia-256.png",
-    "cena": "Na churrascaria, o Garçom Espetinho segura o celular com duas conversas abertas, de balões vazios: uma com o desenho de uma casinha e outra com o de uma escola de sininho, e as duas terminam com o mesmo joinha gigante. Ele arregala os olhos, surpreso, com os espetos debaixo do braço. A plaquinha verde e vermelha aparece de lado no bolso do colete; na parede, um relógio redondo sem números.",
+    "cena": "Na churrascaria, o Garçom Espetinho lê um bilhete da escola, de sobrancelhas erguidas, com os espetos debaixo do braço. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Os dois grupos de mensagens concordam e o garçom se espanta"
+    "alt": "O garçom lê um bilhete da escola com os espetos debaixo do braço"
   },
   "imagem_macete": {
     "arquivo": "dia-256-macete.png",
@@ -33,15 +33,15 @@
     "alternativas": {
       "A": {
         "texto": "Attention-deficit/hyperactivity disorder",
-        "quiz": "TDAH"
+        "quiz": "ADHD"
       },
       "B": {
         "texto": "Oppositional defiant disorder",
-        "quiz": "TOD (opositor)"
+        "quiz": "Oppositional defiant disorder"
       },
       "C": {
-        "texto": "Specific learning disorder",
-        "quiz": "Transt. aprendizagem"
+        "texto": "Specific learning disorder, reading type",
+        "quiz": "Specific learning disorder"
       },
       "D": {
         "texto": "Disruptive mood dysregulation disorder",
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sintomas na escola e em casa há um ano, sem desafio aos adultos e sem dificuldade de leitura. O que o DSM diz?",
+    "contexto": "Rodízio de Quinta na psiquiatria infantil, com o Garçom Espetinho. A vinheta junta o que a escola e a família contam sobre um menino de 8 anos. Qual é o diagnóstico?",
     "palavras_chave": [
-      "school-age boy",
-      "teacher report",
-      "restlessness",
-      "careless mistakes"
+      "child psychiatry",
+      "school-age child",
+      "behavior",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Inquieto na escola e em casa há 1 ano, sem desafio: qual diagnóstico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Inquieto na escola e em casa há 1 ano, sem desafio: qual diagnóstico?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

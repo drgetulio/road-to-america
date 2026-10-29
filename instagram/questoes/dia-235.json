@@ -7,24 +7,25 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Febre na doença falciforme",
   "conceito": "Child with sickle cell disease and fever: blood culture and empiric IV ceftriaxone",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-25",
   "tom": null,
-  "gancho": "O goleiro *não veio* e as bolas estão encapadas",
-  "gancho_apoio": "Criança com doença falciforme e febre de 39,2°C. Dá para esperar?",
+  "gancho": "Rodízio de Quinta na pediatria: *uma febre de seis horas* e quatro espetos possíveis",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-235.png",
-    "cena": "Um gol de futebol com o lugar do goleiro vazio, só um par de luvas em forma de feijão na grama, enquanto bolas encapadas com capas brilhantes rolam em direção à área. Na beira do campo, o Macrô, de técnico, grita para o banco, onde um reserva em forma de cápsula amarra a chuteira. A plaquinha verde e vermelha está no banco.",
+    "cena": "Um gol de futebol com o lugar do goleiro vazio, só um par de luvas na grama; na beira do campo, o Garçom Espetinho, de bandeja, olha o relógio. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O gol está sem goleiro e o Macrô, de técnico, chama o reserva"
+    "alt": "Gol sem goleiro, só as luvas na grama; o garçom olha o relógio na beira do campo"
   },
   "imagem_macete": {
     "arquivo": "dia-235-macete.png",
-    "cena": "Callback: um frasquinho de hemocultura recolhe uma das bolas encapadas, e o reserva em forma de cápsula entra correndo, com um cronômetro grande na mão, e defende as outras bolas. As luvas continuam na grama. O Macrô comemora na beira do campo.",
+    "cena": "Callback: um frasquinho de hemocultura recolhe uma das bolas encapadas, e um reserva em forma de cápsula entra correndo, de cronômetro na mão, para defender as outras; o Garçom vibra na beira do campo. Fundo limpo.",
     "foco": "50% 45%",
-    "alt": "Febre na falciforme: ceftriaxona sem demora"
+    "alt": "O frasco de hemocultura pega uma bola e o reserva-cápsula entra de cronômetro na mão"
   },
   "questao": {
     "vinheta": "A 3-year-old boy with HbSS disease has had a temperature of 39.2°C for 6 hours. He is alert and well appearing, with normal blood pressure and oxygen saturation. There is no focal source of infection. He takes penicillin prophylaxis.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Oral amoxicillin and follow-up in 48 hours",
-        "quiz": "Amoxicilina oral"
+        "quiz": "Oral amoxicillin"
       },
       "B": {
         "texto": "Antipyretics and observation at home",
-        "quiz": "Antitérmico e casa"
+        "quiz": "Antipyretics and home care"
       },
       "C": {
         "texto": "Exchange transfusion",
-        "quiz": "Transfusão de troca"
+        "quiz": "Exchange transfusion"
       },
       "D": {
         "texto": "Blood culture and empiric IV ceftriaxone",
-        "quiz": "Hemocultura + ceftri"
+        "quiz": "Blood culture + IV CTX"
       }
     },
     "correta": "D"
@@ -68,16 +69,16 @@
     "macete": {
       "frase": "*Sem goleiro, o reserva entra em 1 hora*",
       "apoio": "Na imagem, o baço goleiro não está no gol (só as luvas na grama), e as bolas encapadas avançam. O reserva ceftriaxona entra correndo de cronômetro na mão, depois que o frasco da hemocultura já pegou uma das bolas.",
-      "fala": "Comi, mostrei, avisei: sem baço no gol, bola encapada entra. Reserva em campo em 1 hora."
+      "fala": "Vai uma conduta aí, doutor? Sem baço no gol, hemocultura e ceftriaxona em até 1 hora."
     }
   },
   "legenda": {
-    "contexto": "Três anos, doença falciforme (HbSS), febre de 39,2°C há seis horas, bom estado geral e nenhum foco aparente. O Macrô, de técnico, quer saber o que entra em campo primeiro.",
+    "contexto": "Rodízio de Quinta na pediatria, com o Garçom Espetinho. Um menino de 3 anos com febre, uma doença de base e um remédio que ele toma todo dia, tudo na vinheta. Qual espeto sai primeiro?",
     "palavras_chave": [
-      "HbSS disease",
-      "fever",
-      "penicillin prophylaxis",
-      "well-appearing child"
+      "pediatric fever",
+      "chronic disease",
+      "emergency department",
+      "Step 2 CK"
     ],
     "hashtags": [
       "#USMLE",
@@ -91,9 +92,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Falciforme com febre: qual a conduta?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Falciforme com febre: qual a conduta?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

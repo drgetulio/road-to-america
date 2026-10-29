@@ -20,15 +20,15 @@
   "gancho_apoio": "Quatro pacientes estáveis chamando no mesmo minuto. Quem passa primeiro no cruzamento?",
   "imagem": {
     "arquivo": "dia-245.png",
-    "cena": "A Capitã Plaqueta, de apito na boca, organiza um cruzamento enfeitado com bandeirinhas de 4 de julho. Quatro carrinhos chegam no mesmo segundo e buzinam juntos: um leva uma mamadeira com uma nuvenzinha, outro um quebra-nozes, outro uma pedrinha emburrada e o último um cachorrinho que late. No céu, fogos navy, vermelhos e brancos; ao fundo, o ônibus da Road to America; num canto, um vinil pequeno faz as vezes de placa de rua.",
+    "cena": "A Capitã Plaqueta, de apito na boca, organiza um cruzamento enfeitado com bandeirinhas de 4 de julho, onde quatro carrinhos chegam no mesmo segundo e buzinam juntos. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
     "alt": "Capitã Plaqueta com um apito só e quatro carrinhos chegando juntos"
   },
   "imagem_macete": {
     "arquivo": "dia-245-macete.png",
-    "cena": "A Capitã abre passagem só para o carrinho do quebra-nozes, escoltado por uma pílula de corticoide com sirene na cabeça; um microscópio vem atrás, sem pressa. Os outros três esperam tranquilos: a mamadeira cochila, a pedrinha boceja e o cachorrinho parou de latir.",
+    "cena": "Callback: a Capitã abre passagem só para o carrinho do quebra-nozes (a dor na mandíbula), escoltado por uma pílula de corticoide de sirene na cabeça; os outros três esperam tranquilos. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "A Capitã libera primeiro o quebra-nozes, escoltado pelo corticoide"
+    "alt": "A Capitã dá passagem ao carrinho do quebra-nozes escoltado pela pílula de corticoide"
   },
   "questao": {
     "vinheta": "On July 4, a physician covering a busy emergency department is paged about four patients at the same moment. All four have stable vital signs.",
@@ -36,22 +36,22 @@
     "alternativas": {
       "A": {
         "texto": "Infant with RSV bronchiolitis, SpO2 95%, feeding well",
-        "quiz": "Bebê com VSR, sat 95%",
+        "quiz": "Infant with RSV, SpO2 95%",
         "dia": 123
       },
       "B": {
         "texto": "Woman, 74, with jaw claudication and new blurred vision",
-        "quiz": "Idosa com visão turva",
+        "quiz": "Jaw claudication, vision",
         "dia": 219
       },
       "C": {
         "texto": "Man, 40, with renal colic from a 4-mm stone, pain controlled",
-        "quiz": "Cólica renal controlada",
+        "quiz": "Renal colic, pain controlled",
         "dia": 240
       },
       "D": {
         "texto": "Child, 3, with croup, barking cough, no stridor at rest",
-        "quiz": "Crupe sem estridor"
+        "quiz": "Croup without rest stridor"
       }
     },
     "correta": "B"
@@ -97,9 +97,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Quatro chamados ao mesmo tempo: quem a Capitã atende primeiro?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quatro chamados ao mesmo tempo: quem a Capitã atende primeiro?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

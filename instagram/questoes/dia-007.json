@@ -16,13 +16,13 @@
   ],
   "explicacao_em": "2026-11-09",
   "tom": null,
-  "gancho": "Engarrafamento na coronária, e a hemodinâmica fica a *150* minutos de estrada",
+  "gancho": "O infarto do dia 2 voltou de *excursão* pelo interior",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-007.png",
-    "cena": "Capitã Plaqueta, de apito na boca, está no meio de uma estradinha de interior que vira uma artéria vermelha, ao lado de um engarrafamento de carrinhos amarelos que tampa a pista. No horizonte, bem longe, um hospital só é alcançado por uma estrada comprida e cheia de curvas. Um vinil pequeno está preso no colete dela.",
+    "cena": "Capitã Plaqueta, de apito na boca, organiza um engarrafamento de carrinhos amarelos numa estradinha de interior que vira uma artéria vermelha. Na outra mão, ela segura um mapa dobrado em branco. Um vinil pequeno está preso no colete dela.",
     "foco": "50% 35%",
-    "alt": "Engarrafamento na coronária, e a hemodinâmica fica a 150 minutos de estrada"
+    "alt": "Capitã Plaqueta organiza um engarrafamento de carrinhos amarelos numa estradinha que vira artéria, com um mapa dobrado na mão."
   },
   "imagem_macete": {
     "arquivo": "dia-007-macete.png",
@@ -35,20 +35,20 @@
     "alternativas": {
       "A": {
         "texto": "Transfer for primary PCI",
-        "quiz": "Transferir para PCI",
+        "quiz": "Transfer for PCI",
         "dia": 2
       },
       "B": {
         "texto": "Fibrinolytic therapy now",
-        "quiz": "Fibrinolítico já"
+        "quiz": "Fibrinolysis now"
       },
       "C": {
         "texto": "Serial troponins first",
-        "quiz": "Troponina seriada"
+        "quiz": "Serial troponins"
       },
       "D": {
         "texto": "Coronary CT angiography",
-        "quiz": "Angio-TC coronária"
+        "quiz": "Coronary CTA"
       }
     },
     "correta": "B"
@@ -76,7 +76,7 @@
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão: o STEMI do dia 2 voltou, agora num hospital do interior, longe da hemodinâmica. A regra dos 90 minutos ainda vale? O macete de hoje também puxa a cadeirinha (dia 4) e o relógio do Viés (dia 6).",
+    "contexto": "Domingo de revisão: o STEMI do dia 2 voltou com cenário novo, e cada alternativa que já apareceu leva o selo do dia. O macete também puxa a cadeirinha (dia 4) e o relógio do Viés (dia 6). No Prometric não tem selo, então aproveite.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -92,7 +92,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "STEMI a 150 minutos da hemodinâmica: qual reperfusão agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "STEMI a 150 minutos da hemodinâmica: qual reperfusão agora?"
   },
   "exemplo": false
 }

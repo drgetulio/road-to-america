@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-26",
   "tom": null,
-  "gancho": "Samba atravessado no átrio: *a Capitã soma os pontos* antes de apitar",
-  "gancho_apoio": null,
+  "gancho": "Plantão de Terça com a Capitã Plaqueta: *uma conta de cabeça* às 3 da manhã",
+  "gancho_apoio": "Somar escore às 3 da manhã é o cardio que a residência te deu.",
   "imagem": {
     "arquivo": "dia-205.png",
-    "cena": "Às 3 da manhã, com o relógio sem números num poste, Capitã Plaqueta observa uma praça de baile onde dezenas de passistas dançam cada um num ritmo. Num beco sem saída ao lado, carrinhos estacionados começam a se grudar, e uma balança de feira vazia espera ao lado dela.",
+    "cena": "Às 3 da manhã, com o relógio sem números num poste, a Capitã Plaqueta faz uma conta numa calculadora antiga, sentada no meio-fio de um cruzamento vazio. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta observa uma praça de baile onde cada passista dança num ritmo"
+    "alt": "Capitã Plaqueta faz uma conta na calculadora, sentada no meio-fio às 3 da manhã"
   },
   "imagem_macete": {
     "arquivo": "dia-205-macete.png",
-    "cena": "A Capitã põe três blocos coloridos na balança (um bolo de aniversário, um medidor de pressão e o símbolo do sexo feminino) e o prato desce para o lado de um frasco de comprimidos; ela apita, e o engarrafamento do beco se desfaz. Um guarda-chuva de papel fica jogado de lado.",
-    "alt": "CHA2DS2-VASc 3 na mulher: anticoagular"
+    "cena": "Callback: a Capitã põe três blocos coloridos numa balança (um bolo de aniversário, um medidor de pressão e o símbolo do sexo feminino), e o prato desce para o lado de um frasco de comprimidos. Fundo limpo.",
+    "alt": "Três blocos na balança da Capitã fazem o prato descer para o frasco de comprimidos"
   },
   "questao": {
     "vinheta": "A 68-year-old woman has had palpitations for 3 weeks. Her ECG shows an irregularly irregular rhythm without P waves at 82/min. She has hypertension controlled with lisinopril and no diabetes, heart failure, stroke, or vascular disease. Creatinine clearance is 75 mL/min, and she has no history of bleeding.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Apixaban",
-        "quiz": "Apixabana"
+        "quiz": "Apixaban"
       },
       "B": {
         "texto": "Aspirin alone",
-        "quiz": "Só aspirina"
+        "quiz": "Aspirin alone"
       },
       "C": {
         "texto": "Aspirin plus clopidogrel",
-        "quiz": "Aspirina+clopidogrel"
+        "quiz": "Aspirin + clopidogrel"
       },
       "D": {
         "texto": "No antithrombotic therapy",
-        "quiz": "Nada"
+        "quiz": "No antithrombotic"
       }
     },
     "correta": "A"
@@ -71,17 +71,17 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça na cardiologia com a Capitã Plaqueta. Uma senhora de 68 anos com palpitações, ritmo irregularmente irregular sem onda P, hipertensão controlada e nenhuma outra doença. Faça a conta do escore antes de escolher.",
+    "contexto": "Plantão de Terça com a Capitã Plaqueta. Uma senhora com palpitações, um ECG descrito na vinheta e uma lista de doenças que ela tem e não tem. Faça a conta do escore antes de escolher.",
     "palavras_chave": [
       "palpitations",
-      "irregularly irregular rhythm",
-      "hypertension",
-      "stroke prevention"
+      "ECG",
+      "stroke prevention",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "68 anos, HAS e ritmo sem onda P: qual antitrombótico?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "68 anos, HAS e ritmo sem onda P: qual antitrombótico?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

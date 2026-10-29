@@ -20,9 +20,9 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-231.png",
-    "cena": "Sala de trauma às 2 da manhã, desenhada como um cruzamento movimentado, com um vinil pequeno num canto. A Capitã Plaqueta apita enquanto carrinhos chegam em alta velocidade. Num carrinho de apoio, quatro garrafinhas de líquido dourado, cada uma com uma tampa de forma diferente: triângulo, quadrado, as duas formas e nenhuma.",
+    "cena": "Sala de trauma às 2 da manhã, desenhada como um cruzamento: a Capitã Plaqueta apita diante de um carrinho de apoio com quatro garrafinhas de líquido dourado, cada uma com uma tampa de forma diferente. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta na sala de trauma diante de quatro garrafinhas douradas"
+    "alt": "Capitã Plaqueta apita ao lado de quatro garrafinhas douradas de tampas diferentes"
   },
   "imagem_macete": {
     "arquivo": "dia-231-macete.png",
@@ -36,19 +36,19 @@
     "alternativas": {
       "A": {
         "texto": "Group O plasma",
-        "quiz": "Plasma O"
+        "quiz": "Group O"
       },
       "B": {
-        "texto": "Group A plasma",
-        "quiz": "Plasma A"
+        "texto": "Group O, Rh-negative plasma",
+        "quiz": "Group O Rh-negative"
       },
       "C": {
-        "texto": "Group B plasma",
-        "quiz": "Plasma B"
+        "texto": "Group A plasma",
+        "quiz": "Group A"
       },
       "D": {
         "texto": "Group AB plasma",
-        "quiz": "Plasma AB",
+        "quiz": "Group AB",
         "dia": 225
       }
     },
@@ -67,8 +67,8 @@
     ],
     "erradas": {
       "A": "O plasma do grupo O tem anti-A e anti-B e atacaria as hemácias de quem é A, B ou AB. O grupo O é o doador universal de hemácias, não de plasma.",
-      "B": "Plasma A tem anti-B e só serve para receptores A e O. Alguns centros de trauma usam plasma A com título baixo de anti-B quando falta AB, mas ele não é compatível com todos os grupos.",
-      "C": "Plasma B tem anti-A e só serve para receptores B e O."
+      "B": "Grupo O e Rh negativo fazem da hemácia O negativo a doadora universal de hemácias. No plasma, o grupo O carrega anti-A e anti-B, e o Rh não muda isso.",
+      "C": "Plasma A carrega anti-B e hemolisaria hemácias B e AB. Muitos centros de trauma usam plasma A com título baixo de anti-B quando falta AB, mas o plasma compatível com todos os grupos é o AB."
     },
     "macete": {
       "frase": "*Antígeno no carro, anticorpo no plasma*: quem tem um não tem o outro. Hemácia O passa em todo bairro; *plasma AB* entra em toda casa.",
@@ -95,9 +95,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Tipo desconhecido no trauma: qual plasma serve a todos?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tipo desconhecido no trauma: qual plasma serve a todos?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

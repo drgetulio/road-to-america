@@ -7,23 +7,24 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Pedido de exame sem indicação",
   "conceito": "Patient demands MRI for low back pain without red flags: explore concerns and explain why it is not indicated",
-  "personagem": "Viés",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-16",
   "tom": null,
   "gancho": "Ele quer ressonância *porque o colega do trabalho fez*. O que você responde?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Na prova de comunicação, o paciente sempre tem um colega de trabalho que já fez o exame.",
   "imagem": {
     "arquivo": "dia-195.png",
-    "cena": "Na vitrine de uma padaria, uma ressonância desenhada como rosquinha gigante coberta de confeitos. O Viés, meio escondido atrás de uma tabelinha 2x2 em branco, cochicha olhando para a vitrine, e um celular sobre o balcão vibra com balões de conversa de grupo, sem letras. No balcão, uma xícara de café ainda vazia.",
+    "cena": "Dona Bússola, diante da vitrine de uma padaria, olha uma rosquinha gigante coberta de confeitos, com o ponteiro girando de leve. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Viés cochicha diante de uma ressonância em forma de rosquinha na vitrine da padaria"
+    "alt": "Dona Bússola diante de uma rosquinha gigante na vitrine da padaria"
   },
   "imagem_macete": {
     "arquivo": "dia-195-macete.png",
-    "cena": "Uma xícara simpática atrás do balcão, em vez de embrulhar a rosquinha, serve o cafezinho e puxa a cadeira para uma conversa; num quadro ao lado, cinco bandeirinhas vermelhas estão todas abaixadas. O Viés, sem plateia, murcha atrás da tabela, e a rosquinha continua na vitrine.",
-    "alt": "Primeiro a preocupação, depois a explicação"
+    "cena": "Callback: Dona Bússola puxa uma cadeira e serve um cafezinho para uma conversa; o ponteiro dela aponta firme para a xícara, e a rosquinha continua na vitrine. Fundo limpo.",
+    "alt": "Dona Bússola serve um cafezinho para a conversa e a rosquinha fica na vitrine"
   },
   "questao": {
     "vinheta": "A 38-year-old man has had low back pain for 10 days after moving furniture. He denies fever, weight loss, prior cancer, and bowel or bladder changes; neurologic examination is normal. He insists on an MRI because a coworker had one.",
@@ -31,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "\"I will order the MRI so you can feel reassured.\"",
-        "quiz": "Peço a RM"
+        "quiz": "I'll order it to reassure you"
       },
       "B": {
         "texto": "\"What worries you most about your back pain?\"",
-        "quiz": "O que mais preocupa?"
+        "quiz": "What worries you most?"
       },
       "C": {
         "texto": "\"Your insurance will not pay for that test.\"",
-        "quiz": "O plano não cobre"
+        "quiz": "Insurance won't pay"
       },
       "D": {
         "texto": "\"There is nothing wrong, so it will go away.\"",
-        "quiz": "Não tem nada"
+        "quiz": "Nothing is wrong"
       }
     },
     "correta": "B"
@@ -67,21 +68,21 @@
     "macete": {
       "frase": "Dor lombar sem bandeira vermelha: primeiro o *cafezinho da conversa* (o que mais te preocupa?), depois a explicação. A *rosquinha da ressonância* fica na vitrine: em quem não sente nada, ela já acha disco \"gasto\" com frequência.",
       "apoio": "O NBME oferece pedir o exame para agradar, culpar o seguro ou encerrar o assunto; a resposta certa é uma pergunta aberta sobre a preocupação do paciente.",
-      "fala": "Ressonância sem indicação? Eu adoro: arrumo um achado incidental para cada um."
+      "fala": "Meu norte é o paciente. E o paciente quase nunca quer a máquina: quer saber se é grave."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés na comunicação. Dor lombar de dez dias, exame normal e um pedido firme por ressonância. A prova cobra a frase que respeita o paciente e a evidência ao mesmo tempo.",
+    "contexto": "Sábado Sem Viés com a Dona Bússola, que gira com a pressão do paciente e volta para o mesmo norte. Dor lombar de dez dias, um exame normal e um pedido firme. Quatro frases possíveis: qual delas a prova quer ouvir?",
     "palavras_chave": [
-      "acute low back pain",
-      "lifting injury",
-      "patient request for MRI",
-      "communication"
+      "low back pain",
+      "imaging request",
+      "patient communication",
+      "Step 2 CK"
     ]
   },
   "quiz": {
-    "pergunta": "Lombalgia sem sinal de alarme e pedido de RM: o que dizer?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lombalgia sem sinal de alarme e pedido de RM: o que dizer?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

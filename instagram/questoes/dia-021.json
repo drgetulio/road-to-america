@@ -7,7 +7,8 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), Síndrome de Goodpasture (dia 15), Resistência do MRSA (dia 19)",
   "conceito": "Remix: Chlamydia trachomatis + Goodpasture syndrome + MRSA resistance",
-  "personagem": "Macrô",
+  "personagem": "Tia Meia-Vida",
+  "anfitriao": null,
   "gancho_data": null,
   "remix_de": [
     1,
@@ -16,36 +17,36 @@
   ],
   "explicacao_em": "2026-11-23",
   "tom": null,
-  "gancho": "Dois hóspedes, uma fechadura: por que a oxacilina bateu na porta e *voltou*?",
+  "gancho": "Domingo na farmácia: a Tia Meia-Vida investiga uma *devolução*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-021.png",
-    "cena": "Macrô, de guardanapo xadrez, está num corredor de pousada com duas portas: numa, uma fechadura brilhante e trancada, com um molho de chaves douradas caído no tapete da frente; na outra, um quarto aceso onde alguém se hospedou sem aparecer na janela. Ele coça a cabeça, e um vinil pequeno serve de chaveiro no bolso.",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia, olha intrigada para uma seringa de injeção em cima de um formulário em branco, como quem confere uma devolução. Um vinil pequeno decora a vitrine.",
     "foco": "50% 35%",
-    "alt": "Dois hóspedes, uma fechadura: por que a oxacilina bateu na porta e voltou?"
+    "alt": "Tia Meia-Vida olha intrigada para uma seringa em cima de um formulário em branco, atrás do balcão."
   },
   "imagem_macete": {
     "arquivo": "dia-021-macete.png",
-    "cena": "Callback do corredor: em corte, o miolo da primeira fechadura é novo e de formato esquisito, e as chaves douradas não encaixam; chega um chaveiro azul-marinho com uma chave em forma de grampo. Na segunda porta, um comprimido bate educadamente. Num quadro na parede, um tubo de pasta de dente espremido em linha reta.",
-    "alt": "Fechadura trocada, de novo"
+    "cena": "Callback da farmácia: a seringa abre a porta de um quartinho sem paredes de tijolo, só com cortinas, e não acha onde bater; ao lado, a Tia Meia-Vida separa uma caixinha de comprimidos para uma viagem de 7 dias. Num quadro na parede, um tubo de pasta de dente espremido em linha reta.",
+    "alt": "Sem parede, sem alvo"
   },
   "questao": {
-    "vinheta": "A 23-year-old man has a draining thigh abscess and dysuria with scant urethral discharge. Urethral Gram stain shows neutrophils without organisms. Abscess culture grows catalase-positive, coagulase-positive cocci in clusters. After 3 days of oxacillin, the abscess has enlarged.",
-    "pergunta": "Which mechanism best explains the failure of oxacillin against the abscess organism?",
+    "vinheta": "A 23-year-old man has dysuria and a scant watery urethral discharge. Gram stain shows neutrophils without organisms. He receives a single intramuscular dose of ceftriaxone, but symptoms persist 1 week later, and a urine NAAT now detects Chlamydia trachomatis.",
+    "pergunta": "Which property of this organism best explains the treatment failure?",
     "alternativas": {
       "A": {
-        "texto": "Altered penicillin-binding protein",
-        "quiz": "PBP alterada",
-        "dia": 19
+        "texto": "No classic peptidoglycan cell wall",
+        "quiz": "No peptidoglycan wall",
+        "dia": 1
       },
       "B": {
-        "texto": "Lack of a peptidoglycan target",
-        "quiz": "Sem peptidoglicano",
-        "dia": 1
+        "texto": "Altered penicillin-binding protein",
+        "quiz": "Altered PBP",
+        "dia": 19
       },
       "C": {
         "texto": "Beta-lactamase production",
-        "quiz": "Betalactamase"
+        "quiz": "Beta-lactamase production"
       },
       "D": {
         "texto": "D-Ala-D-Lac cell wall precursor",
@@ -55,29 +56,29 @@
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Fechadura trocada, de novo",
+    "titulo": "Sem parede, sem alvo",
     "certa": [
-      "O abscesso tem *Staphylococcus aureus* (catalase e coagulase positivos) que cresceu apesar da oxacilina: é o MRSA do dia 19. O gene *mecA* codifica a *PBP2a*, uma proteína ligadora de penicilina com pouca afinidade pelos betalactâmicos, e a parede continua sendo montada. A uretrite com neutrófilos e Gram sem bactéria lembra a Chlamydia do dia 1, mas a pergunta é sobre o germe do abscesso."
+      "Uretrite com neutrófilos e Gram sem bactéria, que não melhorou com ceftriaxona e tem NAAT positivo, é a *Chlamydia trachomatis* do dia 1. A parede dela quase não tem peptidoglicano clássico (pouco ácido murâmico), então o betalactâmico não tem onde agir: a ceftriaxona trata o gonococo, mas não a clamídia. Por isso o tratamento é doxiciclina por 7 dias, e o CDC manda tratar a clamídia junto sempre que ela não foi descartada."
     ],
     "termos": [
-      "mecA",
-      "PBP2a",
-      "methicillin-resistant Staphylococcus aureus",
-      "vancomycin"
+      "peptidoglycan",
+      "doxycycline",
+      "beta-lactam",
+      "Chlamydia trachomatis"
     ],
     "erradas": {
-      "B": "Dia 1: a Chlamydia quase não tem peptidoglicano, e por isso betalactâmico não age contra ela; o estafilococo tem parede espessa de peptidoglicano.",
-      "C": "A betalactamase do estafilococo destrói a penicilina, mas a oxacilina foi feita justamente para resistir a ela.",
-      "D": "D-Ala-D-Lac é o truque do enterococo resistente à vancomicina, não do MRSA."
+      "B": "Dia 19: a PBP alterada (PBP2a, gene mecA) é o mecanismo do MRSA, um coco gram-positivo que aparece no Gram.",
+      "C": "Betalactamase é a defesa de vários germes contra penicilinas, mas a ceftriaxona resiste à maioria delas, e a clamídia nem tem o alvo da droga.",
+      "D": "D-Ala-D-Lac é a troca no precursor da parede que dá resistência à vancomicina no enterococo."
     },
     "macete": {
-      "frase": "Abscesso que ri da oxacilina é *fechadura trocada* (mecA, PBP2a). Hóspede que não aparece no Gram é Chlamydia, e nela betalactâmico nem acha parede.",
-      "apoio": "Pegadinha de prova: O NBME coloca dois germes no mesmo paciente e pergunta sobre um só; confira de quem é a falha antes de escolher o mecanismo.",
-      "fala": null
+      "frase": "Clamídia é hóspede *sem parede*: a ceftriaxona procura o tijolo e não acha. Doxiciclina na mala.",
+      "apoio": "Pegadinha de prova: O NBME pergunta por que o betalactâmico falha na clamídia: a parede quase não tem peptidoglicano; no MRSA, a parede existe e a fechadura (PBP2a) é que mudou.",
+      "fala": "Injeção perfeita, alvo inexistente."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão: o hóspede que não aparece no Gram (dia 1) e a fechadura do estafilococo (dia 19) no mesmo paciente. O bônus do macete traz a pasta de dente do dia 15.",
+    "contexto": "Domingo de revisão juntando o hóspede que não aparece no Gram (dia 1) e a fechadura trocada do estafilococo (dia 19). O bônus do macete traz a pasta de dente do dia 15. Cada alternativa que já apareceu leva o selo do dia, e selo não é gabarito.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,7 +94,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Abscesso por estafilo piorou com oxacilina: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Uretrite de volta após ceftriaxona e NAAT para clamídia: por quê?"
   },
   "exemplo": false
 }

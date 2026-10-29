@@ -16,9 +16,9 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-206.png",
-    "cena": "Em corte de manual de montagem, uma padaria em forma de célula; Mito, de plantão, recebe sacos de açúcar pela porta da frente e acende o forno; na parede há uma janelinha aberta, uma porta lateral trancada e cestas de pãezinhos esperando no balcão.",
+    "cena": "Em corte de manual de montagem, Mito, de plantão, acende o forno de uma padaria em forma de célula, com cestas de pãezinhos esperando no balcão. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Na padaria da célula beta, o pão de insulina sai por quê?"
+    "alt": "Mito acende o forno de uma padaria em forma de célula"
   },
   "imagem_macete": {
     "arquivo": "dia-206-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Potassium efflux through ATP-sensitive channels",
-        "quiz": "Saída de potássio"
+        "quiz": "K+ efflux via K-ATP"
       },
       "B": {
         "texto": "Activation of insulin receptor tyrosine kinase",
-        "quiz": "Receptor de insulina"
+        "quiz": "Insulin receptor kinase"
       },
       "C": {
         "texto": "Glucose entry through GLUT4 transporters",
-        "quiz": "Entrada por GLUT4"
+        "quiz": "Glucose entry via GLUT4"
       },
       "D": {
         "texto": "Calcium influx through voltage-gated channels",
-        "quiz": "Entrada de cálcio"
+        "quiz": "Ca2+ influx via VGCC"
       }
     },
     "correta": "D"
@@ -67,11 +67,11 @@
     "macete": {
       "frase": "Na *padaria da célula beta*: o açúcar entra (GLUT2), o *Mito* faz ATP, o ATP *fecha a janela do potássio*, a padaria *esquenta* (despolariza), a *porta do cálcio* abre e o *pão de insulina* sai. Sulfonilureia fecha a janela à força; diazóxido a escancara.",
       "apoio": "O NBME pergunta o mecanismo da sulfonilureia (fechar o K-ATP) e o do diazóxido (abrir o K-ATP); a etapa final que libera os grânulos é sempre a entrada de cálcio.",
-      "fala": "Sem oxigênio eu não trabalho. Com açúcar, faço ATP e fecho a janela do potássio."
+      "fala": "Seu cérebro na véspera da prova: ATP lá em cima, canal de potássio fechado e cálcio entrando. Por isso ninguém dorme."
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê na fisiologia, com o Mito de plantão dentro da célula beta. O açúcar chega, o ATP sobe e uma sequência de portas abre e fecha. Qual evento solta a insulina?",
+    "contexto": "Quarta do Porquê na fisiologia, com o Mito dentro da célula beta. Um experimento com ilhotas e um remédio que trava um canal: a vinheta descreve tudo. Qual evento dispara a saída da insulina?",
     "palavras_chave": [
       "pancreatic islets",
       "glucose stimulation",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que dispara a exocitose da insulina?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O que dispara a exocitose da insulina?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

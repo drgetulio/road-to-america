@@ -7,7 +7,8 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Miastenia gravis (dia 22), Doença do soro (dia 78), Streptococcus pneumoniae (dia 106)",
   "conceito": "Remix: Myasthenia gravis + Serum sickness + Streptococcus pneumoniae",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": [
     22,
@@ -16,19 +17,19 @@
   ],
   "explicacao_em": "2027-02-22",
   "tom": null,
-  "gancho": "Rituximabe sem susto na infusão e, *nove dias depois*, o corpo resolveu se manifestar",
+  "gancho": "A infusão foi tranquila. *A fatura chegou depois*",
   "gancho_apoio": "Três conceitos já vistos (dias 22, 78 e 106) e um intruso.",
   "imagem": {
     "arquivo": "dia-112.png",
-    "cena": "Macrô, de comanda no bolso, olha intrigado um calendário de parede da cozinha, com nove folhas arrancadas espalhadas pelo chão. Na mesa, um frasco de infusão com um rabinho de camundongo de desenho na tampa, um painel de campainha de prédio e um saquinho de pipoca fechado. Um vinil pequeno no canto.",
+    "cena": "Seu Allen, de avental navy, olha intrigado um calendário de parede da cozinha com várias folhas arrancadas pelo chão; na mesa, um frasco de infusão com um rabinho de camundongo de desenho na tampa. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
     "foco": "50% 35%",
-    "alt": "Macrô olha um calendário com nove folhas arrancadas no chão; na mesa, um frasco com rabinho de camundongo, uma campainha de prédio e um saquinho de pipoca."
+    "alt": "Seu Allen olha um calendário com folhas arrancadas no chão; na mesa, um frasco com rabinho de camundongo."
   },
   "imagem_macete": {
     "arquivo": "dia-112-macete.png",
-    "cena": "Callback da cozinha: um envelope de fatura passa por baixo da porta e, dentro dele, bolinhos de anticorpos em Y agarrados a pedacinhos com rabinho de camundongo entopem três filtros de uma casa em corte: o da pia, o de um radiador e um filtro em forma de rim. A carteira do Macrô solta as últimas moedinhas douradas e fica vazia.",
+    "cena": "Callback da cozinha: um envelope de fatura passa por baixo da porta e despeja bolinhas grudentas, anticorpos agarrados a pedacinhos com rabinho de camundongo, que entopem um filtro em forma de rim. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Bolinhos de anticorpo agarrados a pedacinhos com rabinho de camundongo entopem os filtros de uma casa em corte; a carteira do Macrô fica vazia."
+    "alt": "Uma fatura passa por baixo da porta e despeja bolinhas grudentas que entopem um filtro em forma de rim."
   },
   "questao": {
     "vinheta": "A 42-year-old woman with refractory generalized myasthenia gravis receives her first rituximab infusion, which is uneventful. Nine days later she develops fever, an urticarial rash, polyarthralgia and mild proteinuria. Serum C3 and C4 levels are low.",
@@ -40,7 +41,7 @@
         "dia": 22
       },
       "B": {
-        "texto": "Circulating immune complexes with complement",
+        "texto": "Immune complexes activating complement",
         "quiz": "Immune complexes",
         "dia": 78
       },
@@ -74,11 +75,11 @@
     "macete": {
       "frase": "Anticorpo *meio camundongo*: a fatura tipo III chega em 1 a 2 semanas",
       "apoio": "Pegadinha de prova: O NBME coloca uma infusão de anticorpo monoclonal e oferece reação infusional como distrator; ela é imediata, enquanto a doença do soro leva 1 a 2 semanas e derruba o complemento.",
-      "fala": "A fatura chegou em nove dias, com juros de C3 e C4. Eu reconheço essa letra."
+      "fala": "Sobrou peça? Sobrou anticorpo grudado no remédio. A fatura chegou em nove dias, com juros de C3 e C4."
     }
   },
   "legenda": {
-    "contexto": "Miastenia refratária, primeira infusão de rituximabe sem intercorrências e, nove dias depois, febre, urticária, dor nas juntas e C3 e C4 baixos. Três conceitos já vistos estão por perto: a miastenia, a doença do soro e o pneumococo. Qual mecanismo explica os sintomas novos?",
+    "contexto": "Remix de Domingo com o Seu Allen conferindo o manual de defesa do corpo. Miastenia refratária, um remédio biológico novo e sintomas que aparecem depois. O calendário da vinheta é a pista principal. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,9 +94,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre e artralgia 9 dias após rituximabe, C3 baixo: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre e artralgia 9 dias após rituximabe, C3 baixo: qual mecanismo?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

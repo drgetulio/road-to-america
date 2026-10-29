@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-21",
   "tom": null,
-  "gancho": "Addison, dois dias de vômito e pressão de *78 por 44* às 3 da manhã. O que entra primeiro?",
-  "gancho_apoio": "Sódio baixo, potássio alto e glicose de 61. Dona Térmica está estranhamente vazia hoje.",
+  "gancho": "Plantão de Terça: *a garrafa térmica esvaziou* e a pressão foi junto",
+  "gancho_apoio": "Uma doença crônica conhecida, uma virose comum e um soro que já está correndo.",
   "imagem": {
     "arquivo": "dia-170.png",
-    "cena": "Numa mesa de copa de plantão, duas glandulinhas em forma de chapéu triangular estão murchas em cima de dois feijões, como plantas sem água. Ao lado, Dona Térmica, de tampa aberta, olha para dentro de si mesma, vazia; uma prancheta de exames espera num banco e o relógio sem números marca 3 horas.",
+    "cena": "Na copa do plantão, Dona Térmica, de prancheta, observa duas glandulinhas em forma de chapéu triangular, murchas em cima de dois feijões, como plantas sem água. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Duas glandulinhas murchas sobre dois feijões; Dona Térmica, de tampa aberta e vazia, olha preocupada."
+    "alt": "Dona Térmica observa duas glandulinhas murchas em cima de dois feijões, como plantas sem água."
   },
   "imagem_macete": {
     "arquivo": "dia-170-macete.png",
-    "cena": "Uma bolsa de soro em forma de garrafa térmica pinga nas duas glândulas, que se levantam como flores regadas. Dona Térmica, cheia de novo, sorri; a prancheta de exames espera paciente no banco.",
-    "alt": "Uma bolsa de soro em forma de garrafa térmica rega as glândulas, que se levantam; a prancheta espera no banco."
+    "cena": "Callback: uma bolsa de soro em forma de garrafa térmica pinga nas duas glandulinhas, que se levantam como flores regadas, e Dona Térmica sorri. Fundo limpo.",
+    "alt": "Uma bolsa de soro em forma de garrafa térmica pinga nas glandulinhas, que se levantam como flores regadas."
   },
   "questao": {
     "vinheta": "A 38-year-old woman with primary adrenal insufficiency takes hydrocortisone and fludrocortisone. After 2 days of vomiting from gastroenteritis, she is lethargic. She is hypotensive (78/44 mm Hg) and tachycardic (124/min). Sodium is 128 mEq/L, potassium 5.7 mEq/L, and glucose 61 mg/dL. Isotonic saline is running.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Cosyntropin stimulation test first",
-        "quiz": "Teste da cortrosina"
+        "quiz": "Cosyntropin test first"
       },
       "B": {
         "texto": "Intravenous hydrocortisone 100 mg now",
-        "quiz": "Hidrocortisona IV"
+        "quiz": "IV hydrocortisone now"
       },
       "C": {
         "texto": "Increase the oral fludrocortisone dose",
-        "quiz": "Mais fludrocortisona"
+        "quiz": "More fludrocortisone"
       },
       "D": {
         "texto": "Norepinephrine infusion alone",
-        "quiz": "Só noradrenalina"
+        "quiz": "Norepinephrine alone"
       }
     },
     "correta": "B"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça. Paciente com insuficiência adrenal conhecida, dois dias de gastroenterite, letargia e pressão no chão. O soro já está correndo. Qual é o próximo passo?",
+    "contexto": "Plantão de Terça. Uma paciente com uma doença endócrina conhecida, dois dias de gastroenterite e sinais vitais na vinheta que pedem ação. O soro já está correndo. Qual é o próximo passo?",
     "palavras_chave": [
       "primary adrenal insufficiency",
       "gastroenteritis",
@@ -81,8 +81,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Addison com vômitos, PA 78/44, Na 128 e K 5,7: qual o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Addison com vômitos, PA 78/44, Na 128 e K 5,7: qual o próximo passo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

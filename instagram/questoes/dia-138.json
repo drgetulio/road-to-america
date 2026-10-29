@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-20",
   "tom": null,
-  "gancho": "Match Day: o receptor deu match, mas tinha *alguém* na cadeira",
-  "gancho_apoio": "No baile da Tia Meia-Vida, mais convidados resolvem o problema?",
+  "gancho": "Match Day: o receptor deu match, e *alguém atrapalhou o encontro*",
+  "gancho_apoio": "No baile da Tia Meia-Vida, a curva andou, e a pergunta é por quê.",
   "imagem": {
     "arquivo": "dia-138.png",
-    "cena": "Num salão de baile de interior com bandeirinhas, chavinhas amarelas (agonistas) querem sentar nas cadeiras dos receptores, mas um sósia de roupa igual já está sentado numa delas. A Tia Meia-Vida observa da mesa do bolo.",
+    "cena": "Num salão de baile de interior com bandeirinhas, chavinhas amarelas dançam em volta de uma fileira de cadeiras, e a Tia Meia-Vida observa da mesa do bolo. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Baile com chavinhas amarelas querendo sentar nas cadeiras; um sósia cinza ocupa uma delas; a Tia observa."
+    "alt": "Chavinhas amarelas dançam em volta de uma fileira de cadeiras num baile; a Tia Meia-Vida observa."
   },
   "imagem_macete": {
     "arquivo": "dia-138-macete.png",
-    "cena": "À esquerda, uma multidão de chavinhas amarelas tira o sósia cinza da cadeira (competitivo, superável). À direita, outra cadeira está com a perna quebrada e ninguém consegue sentar (não competitivo).",
+    "cena": "Callback: de um lado, uma multidão de chavinhas amarelas tira da cadeira um sósia cinza que estava sentado; do outro, uma cadeira está com a perna quebrada e ninguém consegue sentar. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "À esquerda, muitas chaves amarelas tiram o rival da cadeira; à direita, a cadeira quebrada não aceita ninguém."
+    "alt": "Muitas chavinhas tiram um sósia da cadeira; ao lado, uma cadeira de perna quebrada fica vazia."
   },
   "questao": {
     "vinheta": "In an isolated tissue experiment, an agonist produces a sigmoid dose-response curve. Adding drug X shifts the curve to the right without changing the maximal response, and the shift is overcome by increasing the agonist concentration. Drug X alone produces no response.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Inverse agonist",
-        "quiz": "Agonista inverso"
+        "quiz": "Inverse agonist"
       },
       "B": {
         "texto": "Noncompetitive antagonist",
-        "quiz": "Antag. não compet."
+        "quiz": "Noncompetitive antagonist"
       },
       "C": {
         "texto": "Partial agonist",
-        "quiz": "Agonista parcial"
+        "quiz": "Partial agonist"
       },
       "D": {
         "texto": "Competitive antagonist",
-        "quiz": "Antag. competitivo"
+        "quiz": "Competitive antagonist"
       }
     },
     "correta": "D"
@@ -72,7 +72,7 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje é Match Day! Parabéns a quem deu match e força a quem segue no caminho. Na farmacologia, o match é entre ligante e receptor.",
+    "contexto": "Hoje é Match Day! Parabéns a quem deu match e força a quem segue no caminho; o e-mail mais esperado do ano vale mais que qualquer curva. Na farmacologia, o match é entre ligante e receptor, e a vinheta mostra o que a droga X faz com a curva.",
     "palavras_chave": [
       "dose-response curve",
       "isolated tissue",
@@ -87,9 +87,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Curva vai à direita, efeito máximo igual e mais agonista vence: que droga é?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Curva vai à direita, efeito máximo igual e mais agonista vence: que droga é?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

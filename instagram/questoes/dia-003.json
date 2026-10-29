@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-05",
   "tom": null,
-  "gancho": "Seu Néfron liberou a urina, e ela parou numa *obra* no meio da avenida",
+  "gancho": "Quarta do Porquê com o Seu Néfron e uma pergunta de *bioquímica* que cai todo ano",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-003.png",
-    "cena": "Seu Néfron, de gravata e carimbo, carimba uma fila de gotinhas de água que saem da repartição. Logo adiante, na avenida da cidade, uma obra redonda no meio da pista cresce em volta do asfalto e espreme a passagem; setinhas de manual de montagem apontam para a obra. As gotinhas fazem fila no engarrafamento, e ele olha por cima dos óculos.",
+    "cena": "Seu Néfron, de gravata e carimbo, carimba uma fila de gotinhas de água que saem da repartição em direção à avenida da cidade e olha por cima dos óculos. Setinhas de manual de montagem contornam a avenida.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron liberou a urina, e ela parou numa obra no meio da avenida"
+    "alt": "Seu Néfron carimba uma fila de gotinhas de água que saem da repartição em direção à avenida da cidade."
   },
   "imagem_macete": {
     "arquivo": "dia-003-macete.png",
@@ -35,11 +35,11 @@
       },
       "B": {
         "texto": "5-alpha reductase type 2",
-        "quiz": "5-alfa-redutase"
+        "quiz": "5-alpha reductase"
       },
       "C": {
         "texto": "17-alpha hydroxylase",
-        "quiz": "17-alfa-hidroxilase"
+        "quiz": "17-alpha hydroxylase"
       },
       "D": {
         "texto": "3-beta hydroxysteroid dehydrogenase",
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Novembro Azul também é falar de próstata sem medo. Seu Néfron carimba, a urina sai e trava logo depois da bexiga, numa obra que só cresce. Quarta do Porquê: quem está pagando o concreto?",
+    "contexto": "Novembro Azul, o mês da saúde do homem. Quarta do Porquê com o Seu Néfron: quatro enzimas da via dos esteroides, e a vinheta diz qual delas manda no caso. Bioquímica de via metabólica, a matéria que todo mundo decora na véspera e esquece no Prometric.",
     "palavras_chave": [
-      "nocturia",
-      "weak urinary stream",
-      "digital rectal exam",
-      "androgens"
+      "men's health",
+      "urinary symptoms",
+      "steroid hormones",
+      "reproductive physiology"
     ],
     "hashtags": [
       "#USMLE",
@@ -89,7 +89,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Próstata lisa e aumentada: qual enzima local faz o hormônio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Próstata lisa e aumentada: qual enzima local faz o hormônio?"
   },
   "exemplo": false
 }

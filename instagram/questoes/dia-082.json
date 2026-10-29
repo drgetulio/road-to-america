@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-23",
-  "gancho": "Lactato acumulando *igual Anki atrasado*: quem parou de processar?",
+  "gancho": "Remédio acumulando *igual Anki atrasado*: o Mito quer saber quem parou de processar",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito, de jaleco amassado e café na mão, está numa cozinha de padaria de bairro antes do amanhecer. Uma pilha de pães dormidos espera ao lado de uma forma de pudim vazia e de um forno frio. Um frasco de comprimidos está no balcão. Na parede, um quadro de cortiça coberto de cartõezinhos de revisão empilhados.",
+    "cena": "Mito, de jaleco amassado e café na mão, está numa cozinha de padaria de bairro antes do amanhecer, diante de um quadro de cortiça coberto de cartõezinhos de revisão empilhados, com cara de quem tem 900 revisões atrasadas.",
     "foco": "50% 35%",
-    "alt": "Mito numa cozinha de padaria com pães dormidos empilhados, forma de pudim vazia e forno frio; na parede, uma pilha de cartões de revisão.",
+    "alt": "Mito, numa cozinha de padaria antes do amanhecer, encara um quadro de cortiça coberto de cartões de revisão empilhados.",
     "arquivo": "dia-082.png"
   },
   "imagem_macete": {
@@ -34,7 +34,7 @@
       },
       "B": {
         "texto": "Inhibition of renal SGLT2",
-        "quiz": "SGLT2 inhibition"
+        "quiz": "Renal SGLT2 inhibition"
       },
       "C": {
         "texto": "Decreased hepatic gluconeogenesis",
@@ -70,12 +70,12 @@
     }
   },
   "legenda": {
-    "contexto": "Diabetes tipo 2 com metformina, choque séptico, creatinina de 3,4 e lactato de 9. O Mito quer saber qual efeito do remédio deixou o lactato sobrando na prateleira.",
+    "contexto": "Sextou na Farmácia com o Mito, que conhece bem a sensação de ter coisa demais acumulada para processar. Diabetes, uma internação grave e quatro mecanismos na mesa; a vinheta tem o nome do remédio e a complicação.",
     "palavras_chave": [
       "type 2 diabetes",
       "septic shock",
       "acute kidney injury",
-      "high anion gap"
+      "diabetes drugs"
     ],
     "hashtags": [
       "#USMLE",
@@ -85,12 +85,11 @@
       "#SextouNaFarmacia",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Metformina, choque e lactato 9: qual ação do remédio explica isso?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metformina, choque e lactato 9: qual ação do remédio explica isso?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

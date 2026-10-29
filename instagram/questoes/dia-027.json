@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2026-11-29",
   "tom": null,
-  "gancho": "Uma semana depois, outra recusa de sangue. Só que agora a paciente tem *7 anos*",
+  "gancho": "Uma semana depois, outra recusa de sangue no pronto-socorro. *Mesma resposta*?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-027.png",
-    "cena": "Capitã Plaqueta, de colete e quepe, está na entrada de um pronto-socorro infantil tranquilo, ao lado da placa amarela em losango com a balança desenhada. Um relógio de parede corre, uma ambulância de brinquedo estaciona e um ursinho de pelúcia descansa num leito pequeno, coberto por uma manta. Uma tabela 2x2 em branco aparece pequena num quadro.",
+    "cena": "Capitã Plaqueta, de colete e quepe, está na entrada de um pronto-socorro tranquilo, ao lado da placa amarela em losango com a balança desenhada, segurando o apito. Uma tabela 2x2 em branco aparece pequena num quadro.",
     "foco": "50% 35%",
-    "alt": "Uma semana depois, outra recusa de sangue. Só que agora a paciente tem 7 anos"
+    "alt": "Capitã Plaqueta na entrada de um pronto-socorro tranquilo, ao lado de uma placa amarela com uma balança desenhada."
   },
   "imagem_macete": {
     "arquivo": "dia-027-macete.png",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Obtain a court order before transfusing",
-        "quiz": "Ordem judicial antes"
+        "quiz": "Court order first"
       },
       "B": {
         "texto": "Transfuse packed red blood cells now",
-        "quiz": "Transfundir agora"
+        "quiz": "Transfuse now"
       },
       "C": {
         "texto": "Respect the parents' refusal",
-        "quiz": "Respeitar os pais"
+        "quiz": "Respect the refusal"
       },
       "D": {
         "texto": "Consult the ethics committee before transfusing",
-        "quiz": "Comitê de ética"
+        "quiz": "Ethics consult first"
       }
     },
     "correta": "B"
@@ -71,12 +71,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés de ética pediátrica, uma semana depois da recusa da adulta capaz (dia 20). Agora é uma criança em choque depois de um acidente de carro. Compare as duas situações com calma.",
+    "contexto": "Sábado Sem Viés de ética, uma semana depois da recusa do dia 20. A pergunta parece repetida; leia a vinheta inteira antes de decidir. Tema delicado, tom respeitoso.",
     "palavras_chave": [
-      "motor vehicle collision",
-      "splenic laceration",
-      "hemorrhagic shock",
-      "Jehovah's Witness"
+      "Jehovah's Witness",
+      "trauma",
+      "blood transfusion",
+      "medical ethics"
     ],
     "hashtags": [
       "#USMLE",
@@ -88,7 +88,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Criança em choque e pais recusam sangue: qual o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Criança em choque e pais recusam sangue: qual o próximo passo?"
   },
   "exemplo": false
 }

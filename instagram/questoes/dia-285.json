@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-08-14",
   "tom": null,
-  "gancho": "Amiodarona é aquela parente que *chega para um café e fica três meses*",
-  "gancho_apoio": "Meia-vida de semanas e uma pergunta justa do paciente: por que tantos exames?",
+  "gancho": "Tem remédio que é aquela parente que *chega para um café e fica três meses*",
+  "gancho_apoio": "Sextou na Farmácia: a Tia Meia-Vida separou quatro pacotes de exames no balcão.",
   "imagem": {
     "arquivo": "dia-285.png",
-    "cena": "Na rodoviária de uma cidade do interior, a Tia Meia-Vida, de óculos vermelhos, recebe um frasco de comprimidos em forma de coração que arrasta uma mala gigante, coberta de adesivos de viagem em branco, com cara de quem veio para ficar. A areia da ampulheta dela quase não escorre. Quatro sacolinhas de papel fechadas esperam no banco ao lado.",
+    "cena": "Na rodoviária de uma cidade do interior, a Tia Meia-Vida, de óculos vermelhos, recebe um frasco de comprimidos que arrasta uma mala gigante, coberta de adesivos de viagem em branco, com cara de quem veio para ficar. A areia da ampulheta dela quase não escorre. Quatro sacolinhas de papel fechadas esperam no banco ao lado.",
     "foco": "50% 35%",
-    "alt": "O frasco de amiodarona chega na rodoviária com uma mala gigante"
+    "alt": "Um frasco de remédio chega na rodoviária com uma mala gigante"
   },
   "imagem_macete": {
     "arquivo": "dia-285-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Creatine kinase and lipid panel",
-        "quiz": "CK e lipídios"
+        "quiz": "CK and lipids"
       },
       "B": {
-        "texto": "TSH, liver enzymes, and pulmonary function tests",
-        "quiz": "TSH, fígado e PFT"
+        "texto": "TSH, liver enzymes, and PFTs",
+        "quiz": "TSH, LFTs and PFTs"
       },
       "C": {
         "texto": "Complete blood count and antinuclear antibodies",
-        "quiz": "Hemograma e FAN"
+        "quiz": "CBC and ANA"
       },
       "D": {
         "texto": "Fasting glucose and serum uric acid",
-        "quiz": "Glicose e ác. úrico"
+        "quiz": "Glucose and uric acid"
       }
     },
     "correta": "B"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Taquicardia ventricular recorrente, amiodarona prescrita e uma pergunta justa: por que tantos exames? A Tia Meia-Vida separou quatro pacotes de exames no balcão.",
+    "contexto": "Sextou na Farmácia: um frasco chegou na rodoviária com mala para três meses, e a Tia Meia-Vida já sabe que a visita vai ser longa. Quatro pacotes de exames no balcão; a vinheta diz qual remédio é, e o resto é com você.",
     "palavras_chave": [
-      "ventricular tachycardia",
-      "prior myocardial infarction",
-      "antiarrhythmic therapy",
-      "drug monitoring"
+      "outpatient follow-up",
+      "long-term therapy",
+      "drug monitoring",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Amiodarona para taquicardia ventricular: quais exames monitorar?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Amiodarona para taquicardia ventricular: quais exames monitorar?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

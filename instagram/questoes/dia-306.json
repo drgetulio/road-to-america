@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-09-04",
   "tom": null,
-  "gancho": "8 semanas de gestação e a tireoide *no modo turbo*: qual frasco?",
-  "gancho_apoio": "A Tia Meia-Vida tem dois frascos quase gêmeos e confere o calendário antes de entregar.",
+  "gancho": "A tireoide ligou *o modo turbo* e a Tia tem dois frascos quase gêmeos",
+  "gancho_apoio": "Sextou na Farmácia: quatro opções na prateleira e dois frascos quase gêmeos.",
   "imagem": {
     "arquivo": "dia-306.png",
-    "cena": "Tia Meia-Vida atrás do balcão com dois frascos quase idênticos, um redondo e um quadrado; na parede, um calendário de nove quadradinhos com os três primeiros em amarelo; uma cegonha na fila confere o relógio de pulso com uma trouxinha vazia no bico; sobre o balcão, uma tireoide em forma de borboleta zumbe com uma hélice de turbo nas costas.",
+    "cena": "Tia Meia-Vida atrás do balcão com dois frascos quase idênticos, um redondo e um quadrado; sobre o balcão, uma tireoide em forma de borboleta zumbe com uma hélice de turbo nas costas.",
     "foco": "50% 35%",
-    "alt": "8 semanas de gestação e a tireoide no modo turbo: qual frasco?"
+    "alt": "Tia Meia-Vida e dois frascos quase gêmeos diante de uma tireoide turbo"
   },
   "imagem_macete": {
     "arquivo": "dia-306-macete.png",
@@ -28,23 +28,23 @@
   },
   "questao": {
     "vinheta": "A 28-year-old woman has palpitations, heat intolerance, and a 3-kg weight loss. She is 8 weeks pregnant. Pulse is 112/min. She has a diffuse, nontender goiter and lid lag. TSH is undetectable, free T4 is elevated, and TSH receptor antibodies are positive.",
-    "pergunta": "Which drug and mechanism is most appropriate now?",
+    "pergunta": "Which drug is most appropriate now?",
     "alternativas": {
       "A": {
-        "texto": "Methimazole, inhibiting thyroid peroxidase",
-        "quiz": "Metimazol"
+        "texto": "Methimazole",
+        "quiz": "Methimazole"
       },
       "B": {
-        "texto": "Radioactive iodine, ablating follicular cells",
-        "quiz": "Iodo radioativo"
+        "texto": "Radioactive iodine",
+        "quiz": "Radioactive iodine"
       },
       "C": {
-        "texto": "Propylthiouracil, inhibiting peroxidase and peripheral deiodinase",
-        "quiz": "Propiltiouracil"
+        "texto": "Propylthiouracil",
+        "quiz": "Propylthiouracil"
       },
       "D": {
-        "texto": "Potassium iodide, inhibiting hormone release",
-        "quiz": "Iodeto de potássio"
+        "texto": "Potassium iodide",
+        "quiz": "Potassium iodide"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Mulher de 28 anos com 8 semanas de gestação, palpitações, bócio difuso, TSH suprimido, T4 livre alto e anticorpo contra o receptor de TSH positivo. A Tia Meia-Vida tem dois frascos parecidos na prateleira e só um é o preferido nesta fase.",
+    "contexto": "Sextou na Farmácia: a tireoide ligou o turbo e a Tia Meia-Vida tem dois frascos quase gêmeos na prateleira. A vinheta tem um detalhe da agenda da paciente que muda a escolha, e o NBME adora colocar esse detalhe na segunda linha.",
     "palavras_chave": [
-      "8 weeks pregnant",
-      "palpitations",
-      "diffuse goiter",
-      "TSH receptor antibodies"
+      "thyroid",
+      "endocrinology",
+      "drug choice",
+      "pharmacology"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Graves com 8 semanas de gestação: qual antitireoidiano agora?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Graves com 8 semanas de gestação: qual antitireoidiano agora?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

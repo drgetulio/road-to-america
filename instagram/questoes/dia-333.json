@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-10-01",
   "tom": null,
-  "gancho": "Sexto dia de pós-operatório: *qual espeto o garçom traz agora?*",
+  "gancho": "Febre depois da cirurgia: *o garçom traz os espetos na ordem do cardápio*",
   "gancho_apoio": "Febre depois da colectomia tem cardápio por horário, como rodízio que respeita a ordem.",
   "imagem": {
     "arquivo": "dia-333.png",
     "cena": "Garçom Espetinho segura cinco espetos, cada um com um ícone no topo: nuvem de vento, gota de água, tênis de caminhada, curativo adesivo e cápsula de remédio; atrás, a mesa de entradas com pães de queijo; a plaquinha verde e vermelha no avental.",
     "foco": "50% 35%",
-    "alt": "Sexto dia de pós-operatório: qual espeto o garçom traz agora?"
+    "alt": "Febre depois da cirurgia: o garçom traz os espetos na ordem do cardápio"
   },
   "imagem_macete": {
     "arquivo": "dia-333-macete.png",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Atelectasis",
-        "quiz": "Atelectasia"
+        "quiz": "Atelectasis"
       },
       "B": {
         "texto": "Catheter-associated urinary infection",
-        "quiz": "ITU por sonda"
+        "quiz": "Catheter-associated UTI"
       },
       "C": {
         "texto": "Surgical site infection",
-        "quiz": "Infecção de ferida"
+        "quiz": "Surgical site infection"
       },
       "D": {
         "texto": "Deep vein thrombosis",
-        "quiz": "TVP"
+        "quiz": "Deep vein thrombosis (DVT)"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Sexto dia depois de uma colectomia aberta, febre de 38,6 °C, a paciente anda pelo corredor e a sonda já saiu. No rodízio da febre pós-operatória, qual espeto chegou à mesa?",
+    "contexto": "Rodízio de Quinta, mesa da cirurgia: a febre do pós-operatório tem cardápio por horário, e o garçom sabe de cor a ordem dos espetos. O dia do pós-operatório e o exame da paciente estão na vinheta; a ordem do cardápio você já decorou.",
     "palavras_chave": [
-      "postoperative day 6",
-      "sigmoid colectomy",
+      "postoperative care",
+      "general surgery",
       "fever",
-      "incision findings"
+      "hospital medicine"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Colectomia há 6 dias, febre 38,6 e incisão quente com secreção: qual?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Colectomia há 6 dias, febre 38,6 e incisão quente com secreção: qual?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

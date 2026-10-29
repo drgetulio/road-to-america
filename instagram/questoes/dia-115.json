@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-25",
   "tom": null,
-  "gancho": "O guindaste do ombro *não sai da largada*: qual motor queimou?",
-  "gancho_apoio": "Dor para pintar o teto e fraqueza com o polegar para baixo.",
+  "gancho": "Pintor de parede com *o ombro em greve*: qual motor queimou?",
+  "gancho_apoio": "Quatro motores no manguito, um manual aberto e o Seu Allen de chave na mão.",
   "imagem": {
     "arquivo": "dia-115.png",
-    "cena": "Num canteiro de obras, Seu Allen, a chavinha do manual de montagem, confere com o manual aberto um guindaste simpático com quatro cabos coloridos presos na base. O guindaste tenta levantar uma latinha de refrigerante sem rótulo, virada de cabeça para baixo, que derrama gotas, mas o braço não sai do chão, e um motorzinho na base solta fumacinha.",
+    "cena": "Num canteiro de obras, Seu Allen confere com o manual aberto um guindaste simpático com quatro cabos coloridos presos na base, parado com o braço caído. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Allen confere o manual de um guindaste de quatro cabos que tenta levantar uma latinha virada e não sai do chão."
+    "alt": "Seu Allen confere o manual de um guindaste de quatro cabos coloridos, parado com o braço caído."
   },
   "imagem_macete": {
     "arquivo": "dia-115-macete.png",
-    "cena": "Callback: o motorzinho de arranque da base ganha um curativo e um destaque verde. Um arco desenhado ao lado do guindaste mostra uma fatia pequena verde no começo do movimento e uma fatia grande azul depois, onde um motorzão maior (o deltoide) espera a vez.",
+    "cena": "Callback: o motorzinho de arranque na base do guindaste ganha um curativo verde, e um motorzão maior (o deltoide) espera a vez para continuar o movimento do braço. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "O motorzinho de arranque com curativo e um arco com uma fatia pequena verde no começo do movimento."
+    "alt": "O motorzinho de arranque do guindaste ganha um curativo verde; um motor maior espera a vez."
   },
   "questao": {
     "vinheta": "A 52-year-old man who paints houses has had right shoulder pain for 2 months, worse when working overhead. With his arm abducted to 90 degrees in the scapular plane, internally rotated and thumb pointing down, he has pain and weakness resisting downward pressure. External rotation strength is normal.",
@@ -73,7 +73,7 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do porquê, anatomia: dor no ombro de quem trabalha com o braço acima da cabeça e um teste com o polegar para baixo.",
+    "contexto": "Quarta do Porquê, anatomia: um pintor com dor no ombro há dois meses. A posição do teste e a força que falha estão na vinheta, e é ali que o motor queimado aparece.",
     "palavras_chave": [
       "shoulder pain",
       "overhead work",
@@ -89,9 +89,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Dor e fraqueza no teste do polegar para baixo: qual músculo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor e fraqueza no teste do polegar para baixo: qual músculo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

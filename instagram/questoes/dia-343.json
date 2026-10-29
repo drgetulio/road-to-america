@@ -30,58 +30,57 @@
     "arquivo": "dia-343-macete.png",
     "cena": "Callback: um alarme de incêndio na parede é ajustado com uma pequena chave de fenda; a nuvenzinha de chuva começa a se abrir num pedaço de céu; uma trilha de pegadas atravessa sem pressa um túnel iluminado, e o ponteiro da Dona Bússola fica firme.",
     "foco": "50% 45%",
-    "alt": "Pânico com depressão: ISRS e TCC tratam os dois"
+    "alt": "Crises que chegam ao pico em minutos: transtorno de pânico"
   },
   "questao": {
-    "vinheta": "A 29-year-old woman has recurrent sudden episodes of palpitations, sweating, and fear of dying that peak within 10 minutes. For 3 months she has avoided the subway. For 4 weeks she has also had low mood, loss of interest, and poor sleep, without suicidal ideation. ECG and TSH are normal.",
-    "pergunta": "Which is the most appropriate long-term treatment?",
+    "vinheta": "A 27-year-old woman has had five episodes in 2 months of sudden palpitations, trembling, and fear of dying that peak within minutes and have no trigger; one woke her from sleep. For a month she has worried constantly about the next one. Her mood and sleep are otherwise normal. ECG and TSH are normal.",
+    "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Sertraline plus cognitive behavioral therapy",
-        "quiz": "Sertralina + TCC",
+        "texto": "Panic disorder",
+        "quiz": "Panic disorder",
         "dia": 46
       },
       "B": {
-        "texto": "Long-term daily alprazolam alone",
-        "quiz": "Alprazolam diário"
+        "texto": "Generalized anxiety disorder",
+        "quiz": "Generalized anxiety"
       },
       "C": {
-        "texto": "Risperidone",
-        "quiz": "Risperidona",
-        "dia": 137
+        "texto": "Major depressive disorder",
+        "quiz": "Major depression",
+        "dia": 74
       },
       "D": {
-        "texto": "Bupropion",
-        "quiz": "Bupropiona",
-        "dia": 74
+        "texto": "Illness anxiety disorder",
+        "quiz": "Illness anxiety"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Pânico com depressão: *ISRS e TCC* tratam os dois",
+    "titulo": "Crises que chegam ao pico em minutos: *transtorno de pânico*",
     "certa": [
-      "Crises que atingem o pico em minutos, com medo de morrer e evitação, são *panic disorder* (dia 46); o humor deprimido, a perda de interesse e a insônia há 4 semanas somam um *major depressive episode* (dia 74). Um *SSRI* como a sertralina trata as duas condições, e a *cognitive behavioral therapy* reduz as crises e a evitação. Começar com dose baixa e subir devagar, porque o início pode aumentar a ansiedade."
+      "Crises inesperadas e repetidas de palpitação, tremor e medo de morrer, que chegam ao pico em minutos, inclusive durante o sono, seguidas de pelo menos um mês de preocupação com a próxima crise, definem o *panic disorder* (dia 46). O humor e o sono normais afastam o episódio depressivo maior (dia 74), e o ECG e o TSH normais afastam causa cardíaca e tireoidiana. O tratamento de longo prazo combina um *SSRI* com *cognitive behavioral therapy*."
     ],
     "termos": [
       "panic disorder",
-      "major depressive episode",
-      "SSRI",
-      "cognitive behavioral therapy"
+      "unexpected panic attacks",
+      "1 month of persistent worry",
+      "SSRI plus CBT"
     ],
     "erradas": {
-      "B": "O *alprazolam diário* sozinho alivia por pouco tempo, causa dependência e não trata a depressão.",
-      "C": "A *risperidona* (dia 137) é para psicose; não há delírios nem alucinações.",
-      "D": "A *bupropiona* (dia 74) trata depressão, mas não trata pânico e pode piorar a ansiedade."
+      "B": "No transtorno de ansiedade generalizada, a preocupação é difusa, com vários temas, na maioria dos dias por 6 meses, e não vem em crises que chegam ao pico em minutos.",
+      "C": "O episódio depressivo maior (dia 74) pede humor deprimido ou perda de interesse por 2 semanas; aqui o humor e o sono estão normais.",
+      "D": "No transtorno de ansiedade de doença, a pessoa se preocupa em ter uma doença grave, sem crises agudas de sintomas físicos."
     },
     "macete": {
-      "frase": "*Alarme que toca sem fogo*: o ISRS recalibra e a TCC ensina a atravessar",
-      "apoio": "No pânico (dia 46), o alarme dispara sem incêndio. Com humor deprimido junto (dia 74), o ISRS trata as duas coisas, e a TCC ensina que dá para atravessar o som sem fugir. O benzodiazepínico só abaixa o volume por alguns dias, a bupropiona não trata pânico e o antipsicótico (dia 137) fica para a psicose.",
+      "frase": "*Pico em minutos e medo da próxima*: é pânico, e não a ansiedade do dia inteiro",
+      "apoio": "A crise de pânico sobe e desce em minutos; o transtorno aparece quando as crises se repetem sem gatilho e a pessoa passa a viver com medo da próxima. A ansiedade generalizada é um ruído de fundo que dura meses. Bônus do dia 137: nos transtornos psicóticos, é a duração dos sintomas que separa um diagnóstico do outro.",
       "fala": "Com calma, o norte aparece."
     }
   },
   "legenda": {
-    "contexto": "Revisão de domingo com os dias 46, 74 e 137. Mulher de 29 anos com crises súbitas de palpitação e medo, evitação do metrô e, há 4 semanas, humor baixo e perda de interesse, sem ideação suicida. Qual é o tratamento de longo prazo?",
+    "contexto": "Dia Mundial da Saúde Mental. Revisão de domingo com calma: transtorno de pânico (dia 46), episódio depressivo maior (dia 74) e transtornos psicóticos (dia 137). Uma questão sobre nomear com cuidado o que a paciente sente. Se você precisar conversar, procure alguém de confiança ou o CVV, no 188.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -100,9 +99,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pânico, evita o metrô e 4 semanas de humor baixo: qual tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crises com pico em minutos e medo da próxima há 1 mês: qual diagnóstico?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

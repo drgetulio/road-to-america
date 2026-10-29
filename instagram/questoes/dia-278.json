@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-07",
   "tom": null,
-  "gancho": "Tia Meia-Vida não libera a caneta do biológico *sem um exame na nota*",
-  "gancho_apoio": "Artrite ainda ativa depois de quatro meses de metotrexato e o adalimumabe a caminho.",
+  "gancho": "Tia Meia-Vida não libera *o presente sem um exame na nota*",
+  "gancho_apoio": "O pacote está embrulhado para presente, mas a Tia quer um papel antes.",
   "imagem": {
     "arquivo": "dia-278.png",
-    "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Na barraca, quatro tubinhos de exame com tampas de cores diferentes esperam numa estante de madeira.",
+    "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue um pacote embrulhado para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida não entrega a caneta de presente sem a nota"
+    "alt": "Tia Meia-Vida, numa feira de artesanato, segura um pacote de presente e não entrega."
   },
   "imagem_macete": {
     "arquivo": "dia-278-macete.png",
-    "cena": "Ao lado da barraca surge uma pequena fortaleza redonda de pedra, com um martelo encostado no muro, pronto para tirar o cimento entre as pedras. Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
+    "cena": "Callback: ao lado da barraca surge uma pequena fortaleza redonda de pedra, com um martelo encostado no muro, pronto para tirar o cimento entre as pedras. Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir, a Tia anota no bloquinho e entrega o pacote, que se abre e mostra uma caneta injetora com uma fitinha verde.",
     "foco": "50% 45%",
     "alt": "Anti-TNF só depois de rastrear TB latente"
   },
@@ -36,7 +36,7 @@
       },
       "B": {
         "texto": "Antinuclear antibody titer",
-        "quiz": "FAN"
+        "quiz": "ANA titer"
       },
       "C": {
         "texto": "HLA-B*58:01 genotyping",
@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "Thiopurine methyltransferase activity",
-        "quiz": "TPMT"
+        "quiz": "TPMT activity"
       }
     },
     "correta": "A"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Artrite reumatoide ainda ativa depois de quatro meses de metotrexato e um biológico a caminho. O balcão da farmácia não libera a caneta antes de um exame. Qual?",
+    "contexto": "Sextou na Farmácia: a Tia Meia-Vida segura o pacote no balcão até ver um exame na nota. Quatro exames possíveis, e a vinheta diz qual remédio vai entrar. Spoiler de quem já caiu nessa: remédio novo sem checagem prévia é a pegadinha preferida do NBME.",
     "palavras_chave": [
-      "active rheumatoid arthritis",
-      "methotrexate",
-      "biologic therapy",
-      "pretreatment screening"
+      "rheumatology",
+      "drug safety",
+      "pretreatment testing",
+      "outpatient clinic"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Antes de começar o adalimumabe, qual exame a Tia exige?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Antes de começar o adalimumabe, qual exame a Tia exige?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

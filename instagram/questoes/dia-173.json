@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-24",
   "tom": null,
-  "gancho": "Ponte de metal no coração: qual carro a Capitã *libera*?",
-  "gancho_apoio": "Ele quer o anticoagulante moderno do irmão para fugir do exame. A Capitã já pegou o apito.",
+  "gancho": "Sextou na Farmácia: o irmão *deu palpite na receita*",
+  "gancho_apoio": "A Capitã Plaqueta já pegou o apito para organizar a fila de anticoagulantes.",
   "imagem": {
     "arquivo": "dia-173.png",
-    "cena": "A Capitã Plaqueta apita na entrada de uma ponte metálica cheia de rebites, com uma fila de carros de estilos diferentes: um caminhão antigo carregado de caixotes fechados e vários carros elétricos novinhos. Numa coluna da ponte, uma pequena ampulheta marca o tempo.",
+    "cena": "A Capitã Plaqueta apita na entrada de uma ponte, diante de uma fila de carros de estilos diferentes. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta apita na entrada de uma ponte de metal com um caminhão antigo e carros elétricos na fila."
+    "alt": "A Capitã Plaqueta apita na entrada de uma ponte, diante de uma fila de carros de estilos diferentes."
   },
   "imagem_macete": {
     "arquivo": "dia-173-macete.png",
-    "cena": "Só o caminhão antigo atravessa a ponte de metal, com os caixotes revelando verduras cobertas e trancadas (a vitamina K bloqueada); os carros novos recebem cone vermelho e são desviados para outra ponte, comum.",
-    "alt": "Só o caminhão antigo atravessa a ponte de metal; os carros elétricos são desviados para uma ponte comum."
+    "cena": "Callback: só um caminhão antigo atravessa a ponte de metal, com caixotes de verduras trancados (a vitamina K bloqueada), e os carros novos recebem cone vermelho e vão para outra ponte. Fundo limpo.",
+    "alt": "Só o caminhão antigo atravessa a ponte de metal; os carros novos são desviados com cone vermelho."
   },
   "questao": {
     "vinheta": "A 56-year-old man undergoes mechanical aortic valve replacement for severe bicuspid aortic stenosis. He has no atrial fibrillation and normal renal function. He asks for a direct oral anticoagulant, like the one his brother takes, to avoid INR checks.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Apixaban",
-        "quiz": "Apixabana"
+        "quiz": "Apixaban"
       },
       "B": {
         "texto": "Warfarin",
-        "quiz": "Varfarina"
+        "quiz": "Warfarin"
       },
       "C": {
         "texto": "Dabigatran",
-        "quiz": "Dabigatrana"
+        "quiz": "Dabigatran"
       },
       "D": {
         "texto": "Aspirin alone",
-        "quiz": "Só AAS"
+        "quiz": "Aspirin alone"
       }
     },
     "correta": "B"
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Capitã Plaqueta no trânsito. Prótese valvar mecânica aórtica, sem fibrilação atrial, e um paciente pedindo o anticoagulante do irmão para não fazer exames. Qual carro passa na ponte de metal?",
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta no trânsito. Uma cirurgia de válvula e um irmão que dá palpite na receita. O tipo de válvula e o ritmo estão na vinheta. Qual carro a Capitã libera?",
     "palavras_chave": [
       "aortic valve replacement",
       "bicuspid aortic valve",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Prótese aórtica mecânica, sem FA, e pedido de DOAC: qual anticoagulante?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Prótese aórtica mecânica, sem FA, e pedido de DOAC: qual anticoagulante?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

@@ -14,16 +14,16 @@
   "explicacao_em": "2027-08-20",
   "tom": null,
   "gancho": "O Garçom Espetinho trouxe *um paquímetro* para a mesa. Para medir o quê?",
-  "gancho_apoio": "Sangramento depois da menopausa e um número no laudo do ultrassom.",
+  "gancho_apoio": "Rodízio de Quinta, mesa da ginecologia: quatro espetos e uma régua.",
   "imagem": {
     "arquivo": "dia-291.png",
-    "cena": "O Garçom Espetinho segura quatro espetos com objetos em vez de carne (uma ampulheta, um frasco de comprimidos, uma pipeta fina e uma tesoura cirúrgica). Sobre a toalha branca, um paquímetro brilhante; a plaquinha verde e vermelha está de lado.",
+    "cena": "Num restaurante elegante, o Garçom Espetinho mede com um paquímetro brilhante a espessura de uma fatia de carne na tábua. A plaquinha verde e vermelha está de lado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Garçom Espetinho com quatro espetos e um paquímetro na mesa"
+    "alt": "Garçom Espetinho mede com um paquímetro a espessura de uma fatia de carne."
   },
   "imagem_macete": {
     "arquivo": "dia-291-macete.png",
-    "cena": "O paquímetro aberto passa bem de uma marquinha amarela pequena; o garçom vira a plaquinha para o verde diante do espeto da pipeta fina, e a ampulheta e a tesoura ficam com o lado vermelho.",
+    "cena": "Callback: o paquímetro aberto passa bem de uma marquinha amarela pequena, e o Garçom Espetinho vira a plaquinha para o verde e serve um espeto com uma pipeta fina de amostra.",
     "foco": "50% 45%",
     "alt": "Endométrio acima de 4 mm: biópsia"
   },
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Repeat ultrasound in 3 months",
-        "quiz": "Novo US em 3 meses"
+        "quiz": "Repeat US in 3 months"
       },
       "B": {
         "texto": "Progestin therapy",
-        "quiz": "Progestágeno"
+        "quiz": "Progestin therapy"
       },
       "C": {
         "texto": "Endometrial biopsy",
-        "quiz": "Biópsia endometrial"
+        "quiz": "Endometrial biopsy"
       },
       "D": {
         "texto": "Total hysterectomy",
-        "quiz": "Histerectomia"
+        "quiz": "Total hysterectomy"
       }
     },
     "correta": "C"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Dois episódios de sangramento depois da menopausa, exame pélvico normal e ultrassom transvaginal com endométrio de 9 mm. Qual é a conduta?",
+    "contexto": "Rodízio de Quinta, mesa da ginecologia: o garçom trouxe um paquímetro e quatro espetos, do \"vamos esperar\" ao \"vamos operar\". A medida que decide está no laudo da vinheta, escrita em milímetros, do jeito que o NBME gosta.",
     "palavras_chave": [
-      "postmenopausal woman",
-      "vaginal bleeding",
-      "transvaginal ultrasound",
-      "no hormone therapy"
+      "gynecology",
+      "postmenopausal care",
+      "pelvic ultrasound",
+      "outpatient clinic"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Sangramento pós-menopausa, endométrio de 9 mm: qual é o próximo passo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sangramento pós-menopausa, endométrio de 9 mm: qual é o próximo passo?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

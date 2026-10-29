@@ -13,12 +13,12 @@
   "explicacao_em": "2027-07-24",
   "tom": null,
   "gancho": "A visita que chegou para o almoço *e ficou até a novela das nove*",
-  "gancho_apoio": "Uma vez ao dia, falta de ar melhor, boca seca e jato urinário mais fraco. Quem é o remédio?",
+  "gancho_apoio": "DPOC no Step 1: o paciente usa quatro bombinhas, e você decora as quatro pela cor da tampa.",
   "imagem": {
     "arquivo": "dia-264.png",
-    "cena": "Na sala da casa da Tia Meia-Vida, num domingo, dois inaladores com braços e pernas: um de tênis de corrida e faixa na testa, que já está saindo pela porta; o outro de chinelo, esparramado no sofá com travesseiro e controle remoto, com cara de quem vai ficar. A Tia, de óculos vermelhos, olha o relógio da parede e depois o sofá, de braços cruzados.",
+    "cena": "Num domingo, na sala da casa da Tia Meia-Vida, dois inaladores com braços e pernas: um de tênis, já saindo pela porta, e outro de chinelo, esparramado no sofá. A Tia olha o relógio, de braços cruzados. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A visita de chinelo no sofá e a de tênis saindo pela porta"
+    "alt": "Um inalador de tênis sai pela porta e outro, de chinelo, fica no sofá; a Tia olha o relógio"
   },
   "imagem_macete": {
     "arquivo": "dia-264-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Stimulation of beta-2 receptors, raising cAMP",
-        "quiz": "Agonista beta-2"
+        "quiz": "Beta-2 agonist"
       },
       "B": {
         "texto": "Inhibition of phosphodiesterase-4",
-        "quiz": "Inibe PDE-4"
+        "quiz": "PDE-4 inhibitor"
       },
       "C": {
         "texto": "Blockade of M3 muscarinic receptors",
-        "quiz": "Bloqueia M3"
+        "quiz": "M3 antagonist"
       },
       "D": {
         "texto": "Blockade of leukotriene receptors",
-        "quiz": "Antileucotrieno"
+        "quiz": "Leukotriene blocker"
       }
     },
     "correta": "C"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "DPOC com falta de ar diária, um inalador novo de uso único diário e, depois, boca seca. Qual é o mecanismo?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um paciente com DPOC ganha um inalador novo, e a vinheta conta o que melhorou e o que apareceu depois. Qual é o mecanismo?",
     "palavras_chave": [
       "COPD",
-      "daily dyspnea",
-      "dry mouth",
-      "weak urinary stream"
+      "inhaled therapy",
+      "adverse effects",
+      "Step 1 pharmacology"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -91,9 +91,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Inalador de 1 vez ao dia, boca seca e jato fraco: qual mecanismo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Inalador de 1 vez ao dia, boca seca e jato fraco: qual mecanismo?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

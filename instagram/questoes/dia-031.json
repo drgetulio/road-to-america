@@ -37,8 +37,8 @@
         "quiz": "Right hemisection"
       },
       "C": {
-        "texto": "Anterior cord syndrome",
-        "quiz": "Anterior cord"
+        "texto": "Anterior cord syndrome from spinal artery infarct",
+        "quiz": "Anterior cord syndrome"
       },
       "D": {
         "texto": "Posterior cord syndrome",
@@ -70,7 +70,7 @@
     }
   },
   "legenda": {
-    "contexto": "Um corte de um lado só da medula e duas pernas com queixas opostas. Quem troca de pista cedo e quem troca só no bulbo decide a letra. A Capitã Plaqueta está organizando o trânsito.",
+    "contexto": "Quarta do Porquê com a Capitã Plaqueta no trânsito da medula: quem troca de pista cedo e quem troca só no bulbo decide a letra. Leia de que lado está cada queixa, com a calma de quem nunca trocou direita e esquerda no Prometric.",
     "palavras_chave": [
       "stab wound",
       "hyperreflexia",
@@ -84,12 +84,11 @@
       "#Neuroanatomy",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Perna direita fraca e perna esquerda sem dor: qual lado foi cortado?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Perna direita fraca e perna esquerda sem dor: qual lado foi cortado?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

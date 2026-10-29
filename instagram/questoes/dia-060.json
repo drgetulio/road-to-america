@@ -11,12 +11,12 @@
   "gancho_data": "Réveillon: as resoluções de Ano Novo e os estágios de mudança.",
   "remix_de": null,
   "explicacao_em": "2027-01-01",
-  "gancho": "O Mito promete largar o café \"nos próximos meses\". Em que *degrau* ele está?",
+  "gancho": "Réveillon: o Mito fez uma *lista de resoluções* para 2027",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar. O Mito, de roupa branca por cima do jaleco e copo de café na mão, olha a escada lá de baixo segurando uma lista de resoluções em branco; nenhum degrau está ocupado ainda. A plaquinha verde e vermelha está fincada na areia, de lado.",
+    "cena": "Praia na virada do ano: o Mito, de roupa branca por cima do jaleco, olha de baixo uma escadinha de cinco degraus na areia, com uma lista de resoluções em branco na mão. A plaquinha verde e vermelha está fincada na areia. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "O Mito promete largar o café \"nos próximos meses\". Em que degrau ele está?",
+    "alt": "Réveillon: o Mito fez uma lista de resoluções para 2027",
     "arquivo": "dia-060.png"
   },
   "imagem_macete": {
@@ -70,7 +70,7 @@
     }
   },
   "legenda": {
-    "contexto": "Réveillon é a festa oficial das resoluções, e o Mito já prometeu largar o café em 2027. Um paciente fala sobre o cigarro do mesmo jeito: quer parar, mas sem data. Em que degrau da mudança ele está?",
+    "contexto": "Réveillon é a festa oficial das resoluções: academia, Anki em dia e, claro, marcar a prova. No Rodízio de Quinta, um paciente conta o que pensa sobre o cigarro, e a fala dele tem um degrau certo na escada da mudança.",
     "palavras_chave": [
       "smoking cessation",
       "readiness to change",
@@ -85,12 +85,11 @@
       "#Reveillon",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Quer parar de fumar nos próximos meses, sem data: qual estágio?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quer parar de fumar nos próximos meses, sem data: qual estágio?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

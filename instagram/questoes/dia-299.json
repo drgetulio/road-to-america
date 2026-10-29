@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-28",
   "tom": null,
-  "gancho": "Remédio de uma vez por semana tomado *todo santo dia*: a Tia gelou",
-  "gancho_apoio": "Aftas, manchas roxas e pancitopenia. Qual frasco contorna a enzima travada?",
+  "gancho": "A Tia Meia-Vida leu a receita da cozinha *e precisou sentar*",
+  "gancho_apoio": "Sextou na Farmácia: um cartão de receita e quatro frascos na bancada.",
   "imagem": {
     "arquivo": "dia-299.png",
-    "cena": "Na cozinha da Tia Meia-Vida, um calendário de parede tem só o domingo pintado de verde, mas sete comprimidos amarelos estão enfileirados, um em cada dia. O forno de pão está trancado com cadeado vermelho e uma bola de massa crua espera ao lado. A Tia, de óculos vermelhos, olha o calendário com a mão na testa; quatro frascos esperam na bancada.",
+    "cena": "Na cozinha da Tia Meia-Vida, ela, de óculos vermelhos, lê um cartão de receita com a mão na testa; na bancada, quatro frascos esperam enfileirados.",
     "foco": "50% 35%",
-    "alt": "Sete comprimidos num calendário que pedia só um"
+    "alt": "Tia Meia-Vida lê um cartão de receita com a mão na testa"
   },
   "imagem_macete": {
     "arquivo": "dia-299-macete.png",
-    "cena": "Um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram, passando pelo forno trancado; a massa crua continua parada na frente do forno, e a Tia Meia-Vida faz sinal de positivo.",
+    "cena": "Callback: o forno de pão da cozinha está trancado com cadeado vermelho e uma bola de massa crua espera ao lado; um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram; a Tia Meia-Vida faz sinal de positivo.",
     "foco": "50% 45%",
     "alt": "Leucovorina pula a DHFR e resgata a célula"
   },
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Folic acid",
-        "quiz": "Ácido fólico"
+        "quiz": "Folic acid"
       },
       "B": {
         "texto": "Cyanocobalamin",
-        "quiz": "Cianocobalamina"
+        "quiz": "Cyanocobalamin"
       },
       "C": {
         "texto": "Mesna",
         "quiz": "Mesna"
       },
       "D": {
-        "texto": "Leucovorin (folinic acid)",
-        "quiz": "Leucovorina"
+        "texto": "Leucovorin",
+        "quiz": "Leucovorin"
       }
     },
     "correta": "D"
@@ -72,12 +72,12 @@
     }
   },
   "legenda": {
-    "contexto": "Artrite reumatoide, metotrexato tomado todo dia em vez de uma vez por semana, aftas, manchas roxas e pancitopenia. A Tia Meia-Vida separou quatro frascos no balcão. Qual deles contorna a enzima travada?",
+    "contexto": "Sextou na Farmácia: a Tia Meia-Vida leu uma receita na cozinha e precisou sentar. A vinheta conta o que deu errado e o que o hemograma mostrou; a pergunta é qual frasco resolve.",
     "palavras_chave": [
-      "rheumatoid arthritis",
-      "dosing error",
-      "mouth ulcers",
-      "pancytopenia"
+      "medication error",
+      "pharmacology",
+      "hematology",
+      "antidotes"
     ],
     "hashtags": [
       "#USMLEStep1",
@@ -88,9 +88,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Metotrexato diário por engano e pancitopenia: qual é o resgate?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metotrexato diário por engano e pancitopenia: qual é o resgate?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

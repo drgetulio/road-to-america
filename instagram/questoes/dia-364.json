@@ -17,69 +17,69 @@
   "explicacao_em": "2027-11-01",
   "tom": null,
   "gancho": "Casa mal-assombrada da estatística: *qual fantasma mexeu no resultado?*",
-  "gancho_apoio": "Halloween. Revisão de domingo com os dias 97, 251 e 300.",
+  "gancho_apoio": "Halloween. Revisão de domingo com três fantasmas conhecidos e um intruso.",
   "imagem": {
     "arquivo": "dia-364.png",
-    "cena": "Sala de uma casa mal-assombrada simpática, com três portas de quartos, cada uma com um ícone: uma tabela 2x2, uma lupa e uma tabela partida em duas; o Viés segura uma lanterna de abóbora; no tapete, um isqueiro e um coração de pelúcia ligados por um fio; num canto, um vinil pequeno encostado.",
+    "cena": "Corredor de uma casa mal-assombrada simpática, cheio de portinhas fechadas; o Viés segura uma lanterna de abóbora e olha para elas. Num canto, um vinil pequeno. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Casa mal-assombrada da estatística: qual fantasma mexeu no resultado?"
+    "alt": "O Viés, com uma lanterna de abóbora, olha um corredor de portinhas fechadas numa casa mal-assombrada."
   },
   "imagem_macete": {
     "arquivo": "dia-364-macete.png",
-    "cena": "Callback: o Viés puxa um lençol e revela uma nuvem de fumaça fantasma que segurava as mãos do isqueiro e do coração de pelúcia; quando a tabela se divide em duas, o fio entre o isqueiro e o coração desaparece.",
+    "cena": "Callback: o Viés abre, uma a uma, vinte portinhas num corredor da casa mal-assombrada; atrás de dezenove não há nada, e atrás de uma salta um fantasminha de lençol fantasiado de resultado, segurando uma abóbora; a lanterna do Viés ilumina o corredor e o vinil gira no canto.",
     "foco": "50% 45%",
-    "alt": "Sumiu igual nos dois estratos: confounding"
+    "alt": "Vinte portas abertas, um susto: erro tipo I"
   },
   "questao": {
-    "vinheta": "A case-control study finds that people who carry a lighter have 3.0 times the odds of myocardial infarction (95% CI 2.4 to 3.8). When the analysis is stratified by smoking status, the odds ratio is 1.0 among smokers and 1.0 among nonsmokers.",
-    "pergunta": "Which best explains the original association?",
+    "vinheta": "A randomized trial of a new statin finds no overall effect on stroke (p = 0.62). The investigators then run 20 subgroup analyses (age, sex, birth month, and others). Only patients born in October show a benefit (p = 0.04).",
+    "pergunta": "Which is the most likely explanation for the subgroup finding?",
     "alternativas": {
       "A": {
-        "texto": "Confounding by smoking",
-        "quiz": "Confusão",
-        "dia": 300
+        "texto": "Type I error from multiple testing",
+        "quiz": "Type I error",
+        "dia": 251
       },
       "B": {
-        "texto": "Effect modification by smoking",
-        "quiz": "Modif. de efeito",
+        "texto": "Confounding by birth month",
+        "quiz": "Confounding by month",
         "dia": 300
       },
       "C": {
-        "texto": "Type I error",
-        "quiz": "Erro tipo I",
-        "dia": 251
+        "texto": "Recall bias in the subgroup",
+        "quiz": "Recall bias"
       },
       "D": {
-        "texto": "Recall bias",
-        "quiz": "Viés de memória"
+        "texto": "True effect modification by birth month",
+        "quiz": "Effect modification",
+        "dia": 300
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Sumiu igual nos dois estratos: *confounding*",
+    "titulo": "Vinte portas abertas, um susto: *erro tipo I*",
     "certa": [
-      "O cigarro se associa tanto ao isqueiro quanto ao infarto e cria uma associação falsa entre os dois: é *confounding*. Na *stratification* por tabagismo, o *odds ratio* vira 1,0 nos dois estratos, ou seja, a associação some igualmente. Se os estratos tivessem OR diferentes entre si, seria *effect modification*."
+      "Com alfa de 0,05, cada teste tem 5% de chance de dar \"significativo\" por acaso. Testando 20 subgrupos, a probabilidade de aparecer ao menos um falso positivo passa de 60%. Um benefício só em quem nasceu em outubro, sem efeito no total e sem explicação biológica, é o retrato do *type I error* inflado por *multiple comparisons* (dia 251). Num ensaio randomizado, o sorteio equilibra o mês de nascimento entre os grupos, então confusão por esse fator é improvável. Achado de subgrupo assim serve para gerar hipótese, não para mudar conduta."
     ],
     "termos": [
-      "confounding",
-      "stratification",
-      "effect modification",
-      "odds ratio"
+      "type I error",
+      "multiple comparisons",
+      "subgroup analysis",
+      "alpha 0.05"
     ],
     "erradas": {
-      "B": "Modificação de efeito (dia 300) aparece quando os estratos têm OR diferentes, como 4,0 em fumantes e 1,0 em não fumantes.",
-      "C": "Erro tipo I (dia 251) é um falso positivo por acaso; aqui a associação some de forma sistemática ao estratificar, o que aponta para confusão.",
-      "D": "O *viés de memória* aparece quando casos lembram exposições de um jeito diferente dos controles; ele não faria a associação sumir só ao estratificar por tabagismo. O VPP (dia 97) não entra aqui: é medida de teste diagnóstico, não explicação de associação."
+      "B": "Num ensaio randomizado, o sorteio distribui o mês de nascimento igualmente entre os grupos; a confusão (dia 300) precisa de um fator ligado à exposição e ao desfecho.",
+      "C": "O viés de memória aparece em estudos que dependem da lembrança, como o caso-controle; aqui o tratamento foi sorteado e o AVC foi medido.",
+      "D": "A modificação de efeito (dia 300) seria real se fosse pré-especificada, plausível e reproduzida; um único p de 0,04 entre 20 testes é o que o acaso costuma produzir."
     },
     "macete": {
-      "frase": "*O confundidor é o fantasma que segura as duas mãos*",
-      "apoio": "Isqueiro não causa infarto: quem segura a mão dos dois é o cigarro, o fantasma mais velho da epidemiologia. Estratificou e a associação sumiu igual nos dois andares da casa? Confusão. Mudou de um andar para o outro? Modificação de efeito. Erro tipo I (dia 251) é achar fantasma onde não tem, por acaso; e o VPP (dia 97) é outra casa, a dos testes diagnósticos.",
-      "fala": "Se você não randomizou, eu entrei. De mãos dadas com o cigarro."
+      "frase": "*Abra 20 portas na casa mal-assombrada e um fantasma aparece*: é o alfa de 5% fazendo o trabalho dele",
+      "apoio": "Cada teste é uma porta com 5% de chance de susto falso. Com vinte portas, o susto é quase certo. Subgrupo que não estava no plano, sem plausibilidade e com p perto de 0,05, é erro tipo I até prova em contrário. Bônus do dia 97: com prevalência baixa, até um teste bom tem valor preditivo positivo baixo.",
+      "fala": "Se você não randomizou, eu entrei. Aqui randomizaram, então vim pelos subgrupos."
     }
   },
   "legenda": {
-    "contexto": "Halloween e revisão de domingo com os dias 97, 251 e 300. Quem carrega isqueiro infarta três vezes mais? Estratificou por tabagismo e o OR virou 1,0 nos dois grupos. Qual fantasma foi?",
+    "contexto": "Halloween e domingo de revisão: valor preditivo positivo (dia 97), erros tipo I e tipo II (dia 251) e confusão (dia 300) voltaram, e um intruso se fantasiou de resultado. Quatro fantasmas; a vinheta conta o desenho do estudo.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -98,9 +98,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Isqueiro e infarto com OR 3, mas OR 1,0 em cada estrato de fumo: por quê?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "20 subgrupos e benefício só em quem nasceu em outubro: o que explica?"
   },
-  "cta": "pre_inscricao",
   "reel": null,
   "exemplo": false
 }

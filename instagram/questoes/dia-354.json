@@ -13,17 +13,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-22",
   "tom": null,
-  "gancho": "A pipa de papel de seda branca *que desenha um oito*",
-  "gancho_apoio": "Coceira vulvar de longa data, placas brancas finas e biópsia confirmada.",
+  "gancho": "Rodízio de Quinta: *quatro potes na bandeja* e o garçom quer saber qual servir",
+  "gancho_apoio": "Rodízio de Quinta, mesa da ginecologia: a biópsia já saiu e falta escolher o tratamento.",
   "imagem": {
     "arquivo": "dia-354.png",
-    "cena": "Garçom Espetinho com quatro espetos, cada um com um ícone: um fungo redondo, um pote de creme com flor, um pote de creme com halter e um tubo com escudo; a plaquinha verde e vermelha no avental; ao fundo, uma pipa de papel de seda branca em forma de oito no céu.",
+    "cena": "O Garçom Espetinho segura uma bandeja tampada e espera o pedido, com a plaquinha verde e vermelha no avental. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "A pipa de papel de seda branca que desenha um oito"
+    "alt": "Garçom Espetinho segura uma bandeja tampada e espera o pedido."
   },
   "imagem_macete": {
     "arquivo": "dia-354-macete.png",
-    "cena": "Callback: o garçom serve o espeto do tubo com escudo e levanta o lado verde da plaquinha; a pipa em oito agora está presa por uma linha forte e brilhante e ganha cor aos poucos.",
+    "cena": "Callback: o garçom destampa a bandeja e serve um tubo com escudo, levantando o lado verde da plaquinha; ao fundo, uma pipa de papel de seda branca em forma de oito, agora presa por uma linha forte e brilhante, ganha cor aos poucos.",
     "foco": "50% 45%",
     "alt": "Líquen escleroso: clobetasol e seguimento para sempre"
   },
@@ -32,20 +32,20 @@
     "pergunta": "Which is the most appropriate treatment?",
     "alternativas": {
       "A": {
-        "texto": "Oral fluconazole",
-        "quiz": "Fluconazol oral"
+        "texto": "Oral fluconazole for 2 weeks",
+        "quiz": "Oral fluconazole"
       },
       "B": {
-        "texto": "Topical estrogen cream",
-        "quiz": "Estrogênio tópico"
+        "texto": "Topical estrogen cream nightly",
+        "quiz": "Topical estrogen"
       },
       "C": {
         "texto": "Topical testosterone cream",
-        "quiz": "Testosterona tópica"
+        "quiz": "Topical testosterone"
       },
       "D": {
-        "texto": "Ultrapotent topical corticosteroid",
-        "quiz": "Corticoide potente"
+        "texto": "Ultrapotent topical steroid",
+        "quiz": "Ultrapotent steroid"
       }
     },
     "correta": "D"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Um ano de coceira vulvar intensa e dor na relação. No exame, placas brancas e finas em figura de oito, com perda dos pequenos lábios. A biópsia confirmou. Qual é o tratamento?",
+    "contexto": "Rodízio de Quinta, mesa da ginecologia: a biópsia já confirmou o diagnóstico, e o garçom trouxe quatro potes na bandeja. A descrição do exame na vinheta é clássica, e o NBME a repete do mesmo jeito há anos.",
     "palavras_chave": [
-      "vulvar itching",
-      "dyspareunia",
-      "white wrinkled plaques",
-      "loss of labia minora"
+      "vulvar disease",
+      "gynecology",
+      "dermatology",
+      "treatment choice"
     ],
     "hashtags": [
       "#USMLE",
@@ -93,9 +93,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Placas brancas em oito ao redor da vulva, biópsia confirmada: qual tratamento?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Placas brancas em oito ao redor da vulva, biópsia confirmada: qual tratamento?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

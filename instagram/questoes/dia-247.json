@@ -13,19 +13,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-07",
   "tom": null,
-  "gancho": "Dona Térmica avisa: sem provar o crime, *nada de ressonância*",
-  "gancho_apoio": "Hematomas fáceis, coxa fraca e estrias violáceas, sem corticoide nenhum. Qual exame abre a investigação?",
+  "gancho": "Plantão de Terça: *a Dona Térmica virou delegada* e quer saber qual prova colher primeiro",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-247.png",
-    "cena": "Na copa do plantão, Dona Térmica, a garrafa térmica de café, faz papel de delegada diante de um quadro de cortiça: um barbante vermelho liga três cartões (um risco roxo, uma mancha de hematoma e uma perninha bamba) a uma molécula redonda de hormônio, que assobia disfarçando. Ao lado, uma ressonância de brinquedo com uma etiqueta de preço enorme, em branco. O relógio da parede está coberto por um jaleco pendurado.",
+    "cena": "Na copa do plantão, Dona Térmica, de delegada, olha um quadro de cortiça com três cartões presos por um barbante vermelho. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica, de delegada, liga as pistas no quadro de cortiça"
+    "alt": "Dona Térmica, de delegada, estuda um quadro de cortiça com três cartões"
   },
   "imagem_macete": {
     "arquivo": "dia-247-macete.png",
-    "cena": "Três da manhã, cidade dormindo. Dona Térmica, de lanterna, flagra a molécula de hormônio acordada na varanda, pulando corda, e colhe a prova num tubinho de saliva. Na mesa, a jarra de urina de 24 horas e um comprimido de dexametasona que tenta apagar a luz e não consegue. O jaleco caiu e o relógio aparece com os ponteiros nas 3. A ressonância espera no fim da fila.",
+    "cena": "Callback: três da manhã, Dona Térmica, de lanterna, flagra uma molécula redonda de hormônio acordada na varanda, pulando corda, e colhe a prova num tubinho de saliva. Fundo limpo.",
     "foco": "50% 40%",
-    "alt": "Às 3 da manhã, o cortisol do Cushing continua acordado"
+    "alt": "Dona Térmica flagra o hormônio acordado às 3 da manhã e colhe a saliva"
   },
   "questao": {
     "vinheta": "Over 12 months, a 38-year-old woman has developed easy bruising, proximal muscle weakness, and new hypertension. She uses no glucocorticoids or other drugs. Examination shows wide violaceous abdominal striae, facial plethora, and thin skin. Fasting glucose is 132 mg/dL.",
@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Morning plasma ACTH level",
-        "quiz": "ACTH matinal"
+        "quiz": "Morning plasma ACTH level"
       },
       "B": {
         "texto": "MRI of the pituitary gland",
-        "quiz": "RM de hipófise"
+        "quiz": "Pituitary MRI"
       },
       "C": {
         "texto": "Random morning serum cortisol",
-        "quiz": "Cortisol aleatório"
+        "quiz": "Random AM serum cortisol"
       },
       "D": {
         "texto": "Late-night salivary cortisol",
-        "quiz": "Salivar à noite"
+        "quiz": "Night salivary cortisol"
       }
     },
     "correta": "D"
@@ -69,16 +69,16 @@
     "macete": {
       "frase": "Cushing é o hormônio que *não dorme*: flagre ele *à noite*",
       "apoio": "Cortisol normal cai de madrugada; o do Cushing fica acordado como quem estuda para o Step depois do plantão. Primeiro prova o hipercortisolismo (saliva à noite, urina de 24 horas ou supressão com 1 mg de dexametasona) e só depois procura a origem com ACTH e imagem.",
-      "fala": "Já vi esse caso às 3 da manhã. Literalmente."
+      "fala": "Já vi esse caso às 3 da manhã. Cortisol aleatório para Cushing é como simulado sem cronômetro: dá um número, e o número não diz nada."
     }
   },
   "legenda": {
-    "contexto": "Hematomas, fraqueza proximal, estrias violáceas e glicemia subindo, sem uso de corticoide. Qual exame abre a investigação?",
+    "contexto": "Plantão de Terça na endocrinologia, com a Dona Térmica. Um ano de mudanças no corpo, descritas na vinheta, e nenhum remédio que explique. Qual exame abre a investigação?",
     "palavras_chave": [
-      "easy bruising",
-      "proximal weakness",
-      "violaceous striae",
-      "new hypertension"
+      "endocrine evaluation",
+      "screening test",
+      "hypertension",
+      "Step 2 CK"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -92,9 +92,9 @@
     ]
   },
   "quiz": {
-    "pergunta": "Suspeita de Cushing sem uso de corticoide: qual é o primeiro exame?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Suspeita de Cushing sem uso de corticoide: qual é o primeiro exame?"
   },
-  "cta": "simulado",
   "reel": null,
   "exemplo": false
 }

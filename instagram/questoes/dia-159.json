@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-10",
   "tom": null,
-  "gancho": "Dois antipsicóticos depois, a Tia Meia-Vida foi buscar a *chave do cofre*",
-  "gancho_apoio": "Adesão confirmada por nível sérico. O remédio novo vem com um exame de brinde.",
+  "gancho": "Sextou na Farmácia: um remédio novo que *vem com assinatura*",
+  "gancho_apoio": "A Tia Meia-Vida só entrega se você souber qual exame acompanha.",
   "imagem": {
     "arquivo": "dia-159.png",
-    "cena": "Tia Meia-Vida gira o segredo de um cofre antigo de banco, com cadeado dourado. No chão, ao lado, duas caixas de remédio comuns já abertas; numa prateleira, uma fileira de tubos de exame de tampas coloridas.",
+    "cena": "A Tia Meia-Vida gira o segredo de um cofre antigo de banco, com cadeado dourado. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida gira o segredo de um cofre antigo; duas caixas de remédio abertas no chão e tubos de exame na prateleira."
+    "alt": "A Tia Meia-Vida gira o segredo de um cofre antigo com cadeado dourado."
   },
   "imagem_macete": {
     "arquivo": "dia-159-macete.png",
-    "cena": "Do cofre sai uma fila de soldadinhos brancos (neutrófilos), e a Tia Meia-Vida conta um por um com um contador de mão, como porteira de bloco de Carnaval contando foliões.",
-    "alt": "Do cofre sai uma fila de soldadinhos brancos e a Tia Meia-Vida conta um por um com um contador de mão."
+    "cena": "Callback: do cofre sai uma fila de soldadinhos brancos (os neutrófilos), e a Tia Meia-Vida conta um por um com um contador de mão. Fundo limpo.",
+    "alt": "Soldadinhos brancos saem do cofre e a Tia Meia-Vida conta um por um com um contador de mão."
   },
   "questao": {
     "vinheta": "A 28-year-old man with schizophrenia has persistent auditory hallucinations and paranoid delusions despite 8-week trials of risperidone and then olanzapine at adequate doses. Adherence is confirmed by plasma drug levels. His psychiatrist plans to start the antipsychotic with the best evidence for this situation.",
@@ -31,19 +31,19 @@
     "alternativas": {
       "A": {
         "texto": "Serum creatinine",
-        "quiz": "Creatinina"
+        "quiz": "Serum creatinine"
       },
       "B": {
         "texto": "Absolute neutrophil count",
-        "quiz": "Neutrófilos (ANC)"
+        "quiz": "Absolute neutrophil count"
       },
       "C": {
         "texto": "Thyroid-stimulating hormone",
-        "quiz": "TSH"
+        "quiz": "Thyroid-stimulating hormone"
       },
       "D": {
         "texto": "Serum ammonia",
-        "quiz": "Amônia"
+        "quiz": "Serum ammonia"
       }
     },
     "correta": "B"
@@ -71,7 +71,7 @@
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia. Dois antipsicóticos já foram tentados direito, com dose e tempo adequados e adesão confirmada. A Tia Meia-Vida vai abrir o cofre. Qual exame vem junto?",
+    "contexto": "Sextou na Farmácia. A história do tratamento até aqui e a adesão estão na vinheta, e o psiquiatra vai começar o antipsicótico com melhor evidência para o caso. Qual exame vem junto?",
     "palavras_chave": [
       "persistent hallucinations",
       "failed antipsychotic trials",
@@ -80,8 +80,8 @@
     ]
   },
   "quiz": {
-    "pergunta": "Esquizofrenia refratária a 2 antipsicóticos: que exame vigiar com o novo?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquizofrenia refratária a 2 antipsicóticos: que exame vigiar com o novo?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

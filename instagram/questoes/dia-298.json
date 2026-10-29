@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "2,400 mL",
-        "quiz": "2.400 mL"
+        "quiz": "2,400 mL"
       },
       "B": {
         "texto": "4,800 mL",
-        "quiz": "4.800 mL"
+        "quiz": "4,800 mL"
       },
       "C": {
         "texto": "6,400 mL",
-        "quiz": "6.400 mL"
+        "quiz": "6,400 mL"
       },
       "D": {
         "texto": "9,600 mL",
-        "quiz": "9.600 mL"
+        "quiz": "9,600 mL"
       }
     },
     "correta": "B"
@@ -73,12 +73,12 @@
     }
   },
   "legenda": {
-    "contexto": "Homem de 80 kg, incêndio em casa há uma hora, 30% de queimadura de espessura parcial e mais 10% só de vermelhidão. Quanto de Ringer lactato nas primeiras 8 horas?",
+    "contexto": "Rodízio de Quinta sem churrasco: o Garçom Espetinho trouxe a calculadora, e a conta é de soro. Calculadora no Step até existe, aquela da tela, que some justo quando você mais precisa. Faça a conta no papel com os números da vinheta e confira duas vezes.",
     "palavras_chave": [
-      "house fire",
-      "30% TBSA",
+      "burn care",
       "fluid resuscitation",
-      "first 8 hours"
+      "emergency department",
+      "calculation"
     ],
     "hashtags": [
       "#USMLEStep2CK",
@@ -89,9 +89,9 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Parkland: 80 kg e 30% de queimadura parcial. Quanto nas primeiras 8 h?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Parkland: 80 kg e 30% de queimadura parcial. Quanto nas primeiras 8 h?"
   },
-  "cta": null,
   "reel": null,
   "exemplo": false
 }

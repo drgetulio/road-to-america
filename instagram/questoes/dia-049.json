@@ -15,68 +15,68 @@
     48
   ],
   "explicacao_em": "2026-12-21",
-  "gancho": "Rim e pulmão sangrando, e o exame do Seu Néfron veio *negativo*. Confia?",
+  "gancho": "Rim e pulmão de novo no balcão, e o envelope do exame *chegou*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com o carimbo levantado e um envelope de exame em branco na mão; num quadro na parede, um tubo de pasta de dente fechado; no teto, um detector de fumaça com a luzinha apagada. Um vinil pequeno serve de peso de papel.",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, abre um envelope de exame em branco na repartição, com o carimbo levantado. Num quadro na parede, um tubo de pasta de dente fechado. Um vinil pequeno serve de peso de papel.",
     "foco": "50% 35%",
-    "alt": "Rim e pulmão sangrando, e o exame do Seu Néfron veio negativo. Confia?",
+    "alt": "Seu Néfron abre um envelope de exame com o carimbo levantado; num quadro, um tubo de pasta de dente fechado.",
     "arquivo": "dia-049.png"
   },
   "imagem_macete": {
-    "cena": "Callback da repartição: o detector segue mudo e de luz verde, o tubo de pasta de dente continua fechado, sem nenhuma linha espremida, e Seu Néfron manda o formulário para a mesa vizinha, onde uma lupa procura outro suspeito. Num cantinho, uma tigela de massa cresce devagar.",
-    "alt": "Detector mudo também vale no rim",
+    "cena": "Callback da repartição: Seu Néfron carimba o formulário com força, e o tubo de pasta de dente do quadro espreme uma linha reta e contínua; no teto, um detector de fumaça acende só diante de uma chaminha de verdade. Num cantinho, uma tigela de massa cresce devagar.",
+    "alt": "Positivo específico confirma",
     "arquivo": "dia-049-macete.png"
   },
   "questao": {
-    "vinheta": "A 31-year-old man has 1 week of hemoptysis and dark urine. Urinalysis shows red blood cell casts, and creatinine is 2.8 mg/dL. A serum anti-GBM antibody assay with 99% sensitivity and 90% specificity is negative. Renal biopsy results are not yet available.",
+    "vinheta": "A 31-year-old man has 1 week of hemoptysis and dark urine. Urinalysis shows red blood cell casts, and creatinine is 2.8 mg/dL. ANCA testing is negative. A serum anti-GBM antibody assay with 90% sensitivity and 99% specificity is positive. Renal biopsy results are pending.",
     "pergunta": "Which conclusion about anti-GBM disease is most appropriate?",
     "alternativas": {
       "A": {
-        "texto": "It is confirmed by the clinical picture",
-        "quiz": "Confirmada pela clínica",
-        "dia": 15
+        "texto": "It is unlikely, given the 90% sensitivity",
+        "quiz": "Unlikely, low sensitivity"
       },
       "B": {
-        "texto": "It remains likely, given the 90% specificity",
-        "quiz": "Provável pela especificidade"
+        "texto": "No conclusion is possible before the biopsy",
+        "quiz": "Wait for the biopsy"
       },
       "C": {
-        "texto": "It is very unlikely after this result",
-        "quiz": "Muito improvável",
+        "texto": "It is very likely after this result",
+        "quiz": "Very likely now",
         "dia": 48
       },
       "D": {
-        "texto": "It remains likely, given the assay's high PPV",
-        "quiz": "Provável pelo VPP alto"
+        "texto": "It is excluded because ANCA is negative",
+        "quiz": "Excluded by ANCA",
+        "dia": 15
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Detector mudo também vale no rim",
+    "titulo": "Positivo específico confirma",
     "certa": [
-      "Hemoptise com cilindros hemáticos é síndrome pulmão-rim, e o anti-GBM do dia 15 entra na lista. Só que o teste tem 99% de *sensitivity* e veio negativo: um teste muito sensível quase não deixa doente passar, então o negativo praticamente afasta a doença (*SnNOut*, dia 48), com *negative predictive value* alto. O próximo suspeito passa a ser a vasculite ANCA, e a biópsia vai mostrar o padrão."
+      "Hemoptise com cilindros hemáticos é síndrome pulmão-rim, e o anti-GBM do dia 15 entra na lista. O teste veio positivo e tem 99% de *specificity*: um teste muito específico quase não acusa quem não tem a doença, então o positivo praticamente confirma (*SpPIn*, a outra metade da regra do dia 48), com *positive predictive value* alto. A biópsia ainda vai mostrar o depósito linear de IgG, mas a plasmaférese costuma começar antes dela."
     ],
     "termos": [
-      "SnNOut",
-      "sensitivity",
-      "negative predictive value",
+      "SpPIn",
+      "specificity",
+      "positive predictive value",
       "pulmonary-renal syndrome"
     ],
     "erradas": {
-      "A": "Dia 15: o quadro é compatível, mas um teste com 99% de sensibilidade negativo pesa muito contra a doença.",
-      "B": "Especificidade alta ajuda a confirmar quando o teste dá positivo (SpPIn); com resultado negativo, quem fala é a sensibilidade.",
-      "D": "Valor preditivo positivo só se aplica a resultado positivo; o negativo se lê pelo valor preditivo negativo, que aqui é alto."
+      "A": "A sensibilidade de 90% pesa no resultado negativo (SnNOut); com o teste positivo, quem fala é a especificidade.",
+      "B": "A biópsia confirma o padrão, mas um teste com 99% de especificidade positivo já muda a conduta e permite iniciar o tratamento.",
+      "D": "Dia 15: ANCA negativo afasta a vasculite pauci-imune e combina com a doença anti-MBG; ele não exclui o diagnóstico."
     },
     "macete": {
-      "frase": "Detector *mudo* também vale no rim: teste de 99% de sensibilidade negativo, e a pasta de dente do Goodpasture nem saiu do tubo.",
-      "apoio": "Pegadinha de prova: O NBME testa se você lê o negativo pela sensibilidade e o positivo pela especificidade (SnNOut e SpPIn), mesmo no meio de um caso clínico.",
+      "frase": "Detector que só apita com fogo de verdade: *positivo específico confirma*. A pasta de dente do Goodpasture saiu do tubo.",
+      "apoio": "Pegadinha de prova: O NBME troca o resultado de um dia para o outro: negativo se lê pela sensibilidade (SnNOut), positivo pela especificidade (SpPIn).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão juntando a pasta de dente do Goodpasture (dia 15) e o detector de fumaça mudo (dia 48). O bônus do macete traz o pão de fermentação natural do níquel (dia 43).",
+    "contexto": "Domingo de revisão juntando a pasta de dente do Goodpasture (dia 15) e a dupla de siglas do teste diagnóstico (dia 48). O bônus do macete traz o pão de fermentação natural do níquel (dia 43). Selo é lembrança, e não gabarito.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -90,12 +90,11 @@
       "#Biostatistics",
       "#RoadToAmerica",
       "#QuestaoDoDia"
-    ],
-    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+    ]
   },
   "quiz": {
-    "pergunta": "Pulmão e rim com anti-MBG negativo e 99% sensível: o que concluir?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pulmão e rim com anti-MBG positivo e 99% específico: o que concluir?"
   },
-  "cta": "pre_inscricao",
   "exemplo": false
 }

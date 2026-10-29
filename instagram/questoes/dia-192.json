@@ -13,18 +13,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-13",
   "tom": null,
-  "gancho": "4,6 kg, ombro entalado e um bracinho que *não quis dar tchau*",
-  "gancho_apoio": null,
+  "gancho": "Quarta do Porquê: o parto foi difícil, e o Seu Allen *trouxe o manual do plexo*",
+  "gancho_apoio": "Plexo braquial: o único manual de montagem que você jura que entendeu e esquece no dia seguinte.",
   "imagem": {
     "arquivo": "dia-192.png",
-    "cena": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania sacode a árvore inteira, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
+    "cena": "Seu Allen abre um manual de montagem gigante no jardim diante de uma árvore de cinco raízes, de galhos ainda todos no lugar. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes sacudida pelo vento"
+    "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes"
   },
   "imagem_macete": {
     "arquivo": "dia-192-macete.png",
-    "cena": "As folhas assentam: os dois galhos de cima, esticados, ficam caídos. Ao lado, o Garçom Espetinho, que veio de quinta só para isso, imita a pose: braço colado no corpo, cotovelo reto e palma virada para trás, como quem pede gorjeta escondido. Os galhos de baixo seguram firme uma xícara.",
-    "alt": "Erb: tronco superior, C5 e C6"
+    "cena": "Callback: os dois galhos de cima da árvore ficam caídos, e ao lado o Garçom Espetinho imita a pose: braço colado no corpo, cotovelo reto e palma virada para trás, como quem pede gorjeta escondido. Fundo limpo.",
+    "alt": "Os galhos de cima caídos e o garçom imitando a pose de quem pede gorjeta escondido"
   },
   "questao": {
     "vinheta": "A 4.6-kg newborn is delivered vaginally after shoulder dystocia. He does not move his right arm, which hangs adducted and internally rotated, with the elbow extended and the forearm pronated. The grasp reflex is present in both hands.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Upper trunk of the brachial plexus (C5 to C6)",
-        "quiz": "Tronco sup. C5-C6"
+        "quiz": "Upper trunk C5-C6"
       },
       "B": {
         "texto": "Lower trunk of the brachial plexus (C8 to T1)",
-        "quiz": "Tronco inf. C8-T1"
+        "quiz": "Lower trunk C8-T1"
       },
       "C": {
         "texto": "Radial nerve at the spiral groove",
-        "quiz": "Nervo radial"
+        "quiz": "Radial nerve"
       },
       "D": {
         "texto": "Long thoracic nerve",
-        "quiz": "Torácico longo"
+        "quiz": "Long thoracic nerve"
       }
     },
     "correta": "A"
@@ -72,17 +72,17 @@
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê na anatomia: um parto difícil, um ombro que demorou a sair e um braço que ficou numa posição muito típica. Qual parte do plexo braquial esticou?",
+    "contexto": "Quarta do Porquê na anatomia, com o Seu Allen. Um recém-nascido depois de um parto difícil e um braço que não se mexe. A posição exata do braço e da mão está na vinheta: é ela que diz qual parte do plexo esticou.",
     "palavras_chave": [
       "newborn",
-      "shoulder dystocia",
-      "arm weakness",
-      "macrosomia"
+      "brachial plexus",
+      "birth injury",
+      "Step 1 anatomy"
     ]
   },
   "quiz": {
-    "pergunta": "Braço caído, palma para trás, preensão ok: qual lesão?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Braço caído, palma para trás, preensão ok: qual lesão?"
   },
-  "cta": "simulado",
   "exemplo": false
 }

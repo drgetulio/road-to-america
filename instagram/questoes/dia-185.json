@@ -7,23 +7,24 @@
   "sistema": "Sistema gastrointestinal",
   "topico": "Colite pseudomembranosa",
   "conceito": "Pseudomembranous colitis: C. difficile toxins A and B damage colonocytes, spores resist alcohol",
-  "personagem": "Macrô",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial da Higiene das Mãos (5/5): álcool não mata esporo, use água e sabão.",
   "remix_de": null,
   "explicacao_em": "2027-05-06",
   "tom": null,
-  "gancho": "Dia da Higiene das Mãos: o álcool em gel bateu ponto, e *o penetra nem ligou*",
-  "gancho_apoio": null,
+  "gancho": "Dia Mundial da Higiene das Mãos: 20 segundos de pia, e a questão de hoje *cabe nesse tempo*",
+  "gancho_apoio": "Lavar as mãos por 20 segundos: o único protocolo que o estudante de USMLE cumpre sem procurar atalho.",
   "imagem": {
     "arquivo": "dia-185.png",
-    "cena": "Em corte de manual de montagem, com setinhas apontando, um salão de festa em forma de cólon logo depois que o segurança (um frasco de antibiótico) expulsou quase todos os convidados de sempre. Macrô, com a comanda em branco no bolso, vê um convidado encouraçado entrar tranquilo, de capa de chuva, enquanto um dispenser de álcool em gel borrifa à toa.",
+    "cena": "Em estilo de manual de montagem, Seu Allen confere uma pia de hospital com um frasco de álcool em gel ao lado, de lápis vermelho a postos. Fundo limpo.",
     "foco": "50% 35%",
-    "alt": "Macrô vê um convidado de capa de chuva entrar na festa enquanto o álcool em gel borrifa à toa"
+    "alt": "Seu Allen, em estilo de manual de montagem, confere uma pia de hospital ao lado de um frasco de álcool em gel"
   },
   "imagem_macete": {
     "arquivo": "dia-185-macete.png",
-    "cena": "O convidado encouraçado tira da capa duas tesourinhas, uma com um triângulo e outra com um quadrado (as toxinas A e B), e corta as vigas da parede do salão. Macrô aponta para a pia ao lado: só água corrente e sabão levam as sementinhas encouraçadas pelo ralo, e o álcool em gel continua borrifando à toa.",
-    "alt": "Depois do antibiótico: toxinas A e B, e só sabão leva o esporo"
+    "cena": "Callback: um bastãozinho de capa de chuva (o esporo) escorrega do jato de álcool em gel e só vai embora com a água da pia; na mão do Seu Allen, duas tesourinhas, uma com um triângulo e outra com um quadrado (as toxinas A e B). Fundo limpo.",
+    "alt": "O bastãozinho de capa de chuva resiste ao álcool em gel e sai com água; Seu Allen segura duas tesourinhas"
   },
   "questao": {
     "vinheta": "A 68-year-old woman develops fever, abdominal cramps, and 8 watery stools daily on day 6 of clindamycin for cellulitis. Leukocyte count is 19,000/mm3. Colonoscopy shows raised yellow-white plaques on an inflamed colonic mucosa.",
@@ -31,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Shiga toxin from Shigella dysenteriae",
-        "quiz": "Toxina Shiga"
+        "quiz": "Shigella Shiga toxin"
       },
       "B": {
         "texto": "Toxins A and B from Clostridioides difficile",
-        "quiz": "Toxinas A e B"
+        "quiz": "C. difficile toxins A/B"
       },
       "C": {
         "texto": "Heat-stable toxin from Escherichia coli",
-        "quiz": "Toxina termoestável"
+        "quiz": "E. coli heat-stable toxin"
       },
       "D": {
         "texto": "Preformed enterotoxin from Staphylococcus aureus",
-        "quiz": "Enterotoxina pronta"
+        "quiz": "S. aureus enterotoxin"
       }
     },
     "correta": "B"
@@ -71,17 +72,17 @@
     }
   },
   "legenda": {
-    "contexto": "Hoje é o Dia Mundial da Higiene das Mãos. No sexto dia de clindamicina, ela tem febre, cólica, oito evacuações aquosas por dia e leucocitose. A colonoscopia mostra placas amareladas. Quem entrou e com que arma?",
+    "contexto": "Quarta do Porquê com o Seu Allen, no Dia Mundial da Higiene das Mãos. Uma diarreia com febre e quatro toxinas candidatas na mesa. O detalhe que decide está na vinheta, no segundo slide.",
     "palavras_chave": [
-      "clindamycin",
-      "watery diarrhea",
-      "leukocytosis",
-      "yellow-white plaques"
+      "diarrhea",
+      "enteric pathogens",
+      "fever",
+      "Step 1 microbiology"
     ]
   },
   "quiz": {
-    "pergunta": "6º dia de clindamicina e placas no cólon: qual a causa?"
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "6º dia de clindamicina e placas no cólon: qual a causa?"
   },
-  "cta": "simulado",
   "exemplo": false
 }
