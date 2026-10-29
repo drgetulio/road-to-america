@@ -10,6 +10,7 @@ import {
 import { barrasVerticais, linhaProporcao, barrasAcerto, tiraRetencao, barrasContagem, tabela, tiraProbabilidade } from "../graficos.js";
 import { pageHead, tile, chipStatus, seloDemo, variacao, avisoLgpd } from "./comum.js";
 import { distribuicaoProbabilidade, CODIGO_RISCO_BANCO, ROTULO_RISCO_BANCO, REGRA_CONFIANCA, PADRAO_STEP2CK, pctTxt } from "../analise.js";
+import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
 /* Probabilidade de aprovação pelo banco: distribuição da turma e o critério de risco */
 function painelBanco(ctx, rows, psico) {
@@ -25,7 +26,7 @@ function painelBanco(ctx, rows, psico) {
         '<p class="tira__resumo"><span class="is-risco"><b>' + d.alta_abaixo + "</b> baixa, alta confiança</span><span class=\"is-ok\"><b>" + d.alta_acima + "</b> alta, alta confiança</span><span><b>" + d.preliminar + "</b> preliminares</span><span><b>" + d.sem_respostas + "</b> sem respostas</span></p>" +
         tiraProbabilidade(d, { titulo: "Probabilidade de aprovação pelo banco no " + nome + ", um ponto por participante" }) +
         '<p class="hint">Ponto cheio: alta confiança. Anel: estimativa preliminar.' + (d.step === "step2ck" ? " No Step 2 CK, o limiar do banco representa o padrão de " + PADRAO_STEP2CK + " e foi fixado por Angoff; a nota de três dígitos só será estimada depois da calibração com notas reais." : "") + "</p>" +
-        tabela("Probabilidade de aprovação pelo banco, " + nome, ["Participante", "Probabilidade", "Confiança", "Itens"], d.pontos.map((p) => [p.nome, pctTxt(p.p), p.alta ? "alta confiança" : "preliminar" + (p.faltam ? ", faltam cerca de " + p.faltam + " itens" : ""), String(Math.round(p.n))])) +
+        tabela("Probabilidade de aprovação pelo banco, " + nome, ["Participante", "Probabilidade", "Confiança", "Itens"], d.pontos.map((p) => [p.nome, textoProbabilidade(p.p), p.alta ? "alta confiança" : "preliminar" + (p.faltam ? ", faltam cerca de " + p.faltam + " itens" : ""), String(Math.round(p.n))])) +
         "</figure>";
     }).join("") + "</div>" +
     '<h3 class="h-xs">' + e(ROTULO_RISCO_BANCO) + "</h3>" +

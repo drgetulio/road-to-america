@@ -30,8 +30,8 @@ export function textoProbabilidade(p) {
   const { p_alta, p_baixa } = REGRA_CONFIANCA;
   const inteiro = Math.round(p * 100);
   let v = inteiro;
-  if (p < p_alta && inteiro >= Math.round(p_alta * 100)) v = Math.floor(p * 1000) / 10;
-  else if (p > p_baixa && inteiro <= Math.round(p_baixa * 100)) v = Math.ceil(p * 1000) / 10;
+  if (p < p_alta && inteiro >= Math.round(p_alta * 100)) v = Math.floor(p * 1000 + 1e-9) / 10;
+  else if (p > p_baixa && inteiro <= Math.round(p_baixa * 100)) v = Math.ceil(p * 1000 - 1e-9) / 10;
   return String(v).replace(".", ",") + "%";
 }
 export const PERFIL_PADRAO = Object.freeze({ min_itens: 5, prob: 0.9, priori: PRIORI_PADRAO });

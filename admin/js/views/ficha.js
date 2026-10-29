@@ -10,6 +10,7 @@ import { leituraBanco, pctTxt, numTxt, REGRA_CONFIANCA, PADRAO_STEP2CK } from ".
 import { nomeChave } from "../../../plataforma/js/banco.js";
 import { chipConfianca } from "./comum.js";
 import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
+import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "modo não informado" };
 const PRIORIDADE = { 1: "Agora", 2: "Esta semana", 3: "Acompanhar" };
@@ -305,7 +306,7 @@ function blocoCompletos(lista) {
       return "<tr>" + td("Data", e(dataBR(l.data))) + td("Simulado", nomeSim(r) + (l.reduzido ? " <small>reduzido</small>" : "")) +
         td("Situação", feito ? "encerrado" : (r.sessao?.suspensa ? "parado" : "em andamento") + ", bloco " + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb) +
         td("Acerto", feito && l.acertos !== null ? "<b>" + l.acertos + "/" + l.total + "</b> " + pct(l.percentual) : "") +
-        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? pctTxt(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">alta confiança</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
+        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? textoProbabilidade(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">alta confiança</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
         td("", feito ? '<a href="../simulado/#/relatorio/' + encodeURIComponent(r.id) + '">Relatório<span class="sr-only"> de ' + e(dataBR(l.data)) + "</span></a>" : "") + "</tr>";
     }).join("") + "</tbody></table></div>";
 }
@@ -380,7 +381,7 @@ function cartaoBanco(est, step, av, r) {
   const baixo = c.alta && est.p_aprovacao <= REGRA_CONFIANCA.p_baixa;
   return '<div class="bq__card' + (baixo ? " bq__card--risco" : "") + '">' +
     '<h3 class="h-xs">' + nome + "</h3>" +
-    '<p class="bq__p"><b>' + pctTxt(est.p_aprovacao) + "</b> " + chipConfianca(est) + "</p>" +
+    '<p class="bq__p"><b>' + textoProbabilidade(est.p_aprovacao) + "</b> " + chipConfianca(est) + "</p>" +
     '<p class="bq__sub">de probabilidade de estar acima do limiar do banco' + (step === "step2ck" ? " (que representa o padrão de " + PADRAO_STEP2CK + ")" : "") + ".</p>" +
     '<dl class="mini mini--2">' +
       "<div><dt>θ estimado</dt><dd>" + numTxt(est.theta, 2) + "<small>intervalo de 90%: " + numTxt(est.ic90[0], 2) + " a " + numTxt(est.ic90[1], 2) + "</small></dd></div>" +
@@ -389,8 +390,8 @@ function cartaoBanco(est, step, av, r) {
       "<div><dt>Sistemas com itens</dt><dd>" + est.cobertura.com_itens.length + " de " + est.cobertura.total + "<small>mínimo de " + pctTxt(REGRA_CONFIANCA.cobertura_min) + "</small></dd></div>" +
     "</dl>" +
     (c.alta ? "" : '<p class="pront__aviso">' + icon("info") + "<span>" + e(c.motivos.join(" ")) + (c.faltam_itens ? " Faltam cerca de " + plural(c.faltam_itens, "item", "itens") + " para decidir." : c.perto_do_limiar ? " Perto do limiar, mais itens quase não mudam a decisão." : "") + "</span></p>") +
-    (est.desfechos ? '<p class="body">' + (est.desfechos.demonstracao ? '<span class="selo-demo">dados de demonstração</span> Pelos desfechos fictícios da demonstração: <b>' : "Pela regressão sobre os desfechos oficiais lançados da turma: <b>") + pctTxt(est.desfechos.p_aprovacao) + "</b> de probabilidade de Pass (" + plural(est.desfechos.modelo.n, "desfecho", "desfechos") + "). Estimativa da Road to America, não é resultado oficial.</p>" : "") +
-    (est.escore ? '<p class="body">' + (est.escore.demonstracao ? '<span class="selo-demo">dados de demonstração</span> ' : "") + "Nota estimada pela regressão sobre as notas oficiais lançadas: <b>" + Math.round(est.escore.media) + "</b> (intervalo preditivo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "; " + pctTxt(est.escore.p_limiar) + " de chance de " + PADRAO_STEP2CK + " ou mais). Não é nota oficial.</p>" : "") +
+    (est.desfechos ? '<p class="body">' + (est.desfechos.demonstracao ? '<span class="selo-demo">dados de demonstração</span> Pelos desfechos fictícios da demonstração: <b>' : "Pela regressão sobre os desfechos oficiais lançados da turma: <b>") + textoProbabilidade(est.desfechos.p_aprovacao) + "</b> de probabilidade de Pass (" + plural(est.desfechos.modelo.n, "desfecho", "desfechos") + "). Estimativa da Road to America, não é resultado oficial.</p>" : "") +
+    (est.escore ? '<p class="body">' + (est.escore.demonstracao ? '<span class="selo-demo">dados de demonstração</span> ' : "") + "Nota estimada pela regressão sobre as notas oficiais lançadas: <b>" + Math.round(est.escore.media) + "</b> (intervalo preditivo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "; " + textoProbabilidade(est.escore.p_limiar) + " de chance de " + PADRAO_STEP2CK + " ou mais). Não é nota oficial.</p>" : "") +
     '<p class="body' + (lb.combinada.divergente ? " bq__div" : "") + '">' + (lb.combinada.divergente ? icon("warning") : "") + e(lb.combinada.mensagem) + "</p>" +
     (perfil.length ? '<details class="table-view"><summary>Perfil por sistema em relação ao limiar</summary><table class="mini-tab"><caption class="sr-only">Desempenho por sistema em relação ao examinando no limiar</caption><thead><tr><th scope="col">Sistema</th><th scope="col">Itens</th><th scope="col">Acerto</th><th scope="col">No limiar</th><th scope="col">Comparação</th></tr></thead><tbody>' +
       perfil.map((x) => "<tr><td>" + e(nomeChave(step, "sistema", x.chave) || x.chave) + "</td><td>" + x.n + "</td><td>" + pctTxt(x.taxa) + "</td><td>" + pctTxt(x.esperado_limiar) + '</td><td><span class="gar gar--' + (x.classe === "mais_baixo" ? "risco" : x.classe === "mais_alto" ? "ok" : "neutro") + '">' + ROTULO_CLASSE[x.classe] + "</span></td></tr>").join("") + "</tbody></table></details>" : "") +

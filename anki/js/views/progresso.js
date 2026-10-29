@@ -11,6 +11,7 @@ import { pageHead } from "./shared.js";
 import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
 import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
 import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
+import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -248,7 +249,7 @@ function blocoSimulados(simulados, config, ctx) {
 /* Cartão resumido do banco de questões: probabilidade de aprovação de cada Step pelo
    banco (plataforma/js/banco-aluno.js), rótulo de confiança e a área que mais derruba
    a probabilidade. O painel completo fica em ../questoes/#/aprovacao. */
-const pctProb = (p) => (p > 0.995 ? "> 99%" : p < 0.005 ? "< 1%" : Math.round(p * 100) + "%");
+const pctProb = (p) => textoProbabilidade(p);
 async function cartaoBancoQuestoes(ctx, { nbme, config }) {
   let corpo;
   try {

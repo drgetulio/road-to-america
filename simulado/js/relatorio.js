@@ -12,7 +12,7 @@
    - perfil por área de conteúdo em relação ao examinando no limiar (mais baixo,
      igual, mais alto), com o intervalo de 90% de cada área (seção 8). O relatório
      oficial mostra esse perfil a quem é reprovado; aqui ele aparece sempre. */
-import { estimarAluno, bDoItem, DIMENSOES_PERFIL, REGRA_CONFIANCA } from "../../plataforma/js/psicometria.js";
+import { estimarAluno, bDoItem, DIMENSOES_PERFIL, REGRA_CONFIANCA, textoProbabilidade } from "../../plataforma/js/psicometria.js";
 import { corrigirSessao } from "../../plataforma/js/formularios.js";
 import { sistemasDoOutline, nomeChave, TAXONOMIA } from "../../plataforma/js/banco.js";
 
@@ -109,7 +109,6 @@ export function resultadoEstimado(est, step) {
   const decidido = p >= REGRA_CONFIANCA.p_alta || p <= REGRA_CONFIANCA.p_baixa;
   const passa = p >= 0.5;
   const alta = !!est.confianca?.alta;
-  const pct = (x) => (x * 100).toFixed(1).replace(".", ",") + "%";
   const faixa = Math.round(REGRA_CONFIANCA.p_baixa * 100) + "% e " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "%";
   const confianca = alta ? "Alta confiança" : "Estimativa preliminar";
   if (!decidido) {
@@ -121,7 +120,7 @@ export function resultadoEstimado(est, step) {
       titulo: step === "step2ck" ? "Perto do padrão de aprovação: resultado indefinido" : "Resultado estimado: indefinido, perto do limiar",
       selo: "Indefinido",
       p,
-      frase: (step === "step2ck" ? "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " : "Probabilidade de aprovação estimada: ") + pct(p) +
+      frase: (step === "step2ck" ? "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " : "Probabilidade de aprovação estimada: ") + textoProbabilidade(p) +
         ". Com a probabilidade entre " + faixa + ", o resultado não pode ser afirmado; a tendência é " + tend + ".",
       alta,
       confianca
@@ -135,7 +134,7 @@ export function resultadoEstimado(est, step) {
       titulo: passa ? "Padrão de aprovação provavelmente atingido" : "Padrão de aprovação provavelmente não atingido",
       selo: passa ? "Acima do padrão" : "Abaixo do padrão",
       p,
-      frase: "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " + pct(p) + ".",
+      frase: "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " + textoProbabilidade(p) + ".",
       alta,
       confianca
     };
@@ -147,7 +146,7 @@ export function resultadoEstimado(est, step) {
     titulo: passa ? "Resultado estimado: Pass" : "Resultado estimado: Fail",
     selo: passa ? "Pass" : "Fail",
     p,
-    frase: "Probabilidade de aprovação estimada: " + pct(p) + ".",
+    frase: "Probabilidade de aprovação estimada: " + textoProbabilidade(p) + ".",
     alta,
     confianca
   };

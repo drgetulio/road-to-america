@@ -330,3 +330,20 @@ test("montarDadosDesfechos usa só as respostas dadas até a data da prova", () 
   assert.equal(d[0].n, 1);
   assert.ok(d[0].theta > 0);
 });
+
+test("textoProbabilidade: o mesmo texto em todas as telas, sem cruzar os cortes da alta confiança", async () => {
+  const { textoProbabilidade } = await import("../js/psicometria.js");
+  assert.equal(textoProbabilidade(0), "< 1%");
+  assert.equal(textoProbabilidade(0.004), "< 1%");
+  assert.equal(textoProbabilidade(0.37), "37%");
+  assert.equal(textoProbabilidade(0.374), "37%");
+  assert.equal(textoProbabilidade(0.9), "90%");
+  assert.equal(textoProbabilidade(0.897), "89,7%", "abaixo do corte de 90% não pode aparecer como 90%");
+  assert.equal(textoProbabilidade(0.8999), "89,9%");
+  assert.equal(textoProbabilidade(0.1), "10%");
+  assert.equal(textoProbabilidade(0.103), "10,3%", "acima do corte de 10% não pode aparecer como 10%");
+  assert.equal(textoProbabilidade(0.996), "> 99%");
+  assert.equal(textoProbabilidade(1), "> 99%");
+  assert.equal(textoProbabilidade(null), "sem dados");
+  assert.equal(textoProbabilidade(Number.NaN), "sem dados");
+});

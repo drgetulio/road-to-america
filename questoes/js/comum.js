@@ -1,6 +1,7 @@
 /* Road to America | banco de questões: peças de tela compartilhadas pelas views
    (nomes das áreas, formatação, seletor de Step, gráficos em SVG). */
 import { nomeChave } from "../../plataforma/js/banco.js";
+import { textoProbabilidade } from "../../plataforma/js/psicometria.js";
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
 import { e, icon } from "../../anki/js/ui.js";
 
@@ -18,12 +19,10 @@ export function pct(x, casas = 0) {
   if (x === null || x === undefined || !Number.isFinite(x)) return "sem dado";
   return (x * 100).toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas }) + "%";
 }
-/* Probabilidade para exibição: nunca mostra 0% nem 100% (a estimativa é probabilística) */
+/* Probabilidade para exibição: o texto único de plataforma/js/psicometria.js, igual em
+   "Meu progresso", nos simulados e na área administrativa */
 export function pctProb(p) {
-  if (!Number.isFinite(p)) return "sem dado";
-  if (p > 0.995) return "> 99%";
-  if (p < 0.005) return "< 1%";
-  return Math.round(p * 100) + "%";
+  return textoProbabilidade(p);
 }
 export function num(x, casas = 1) {
   return Number(x).toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas });

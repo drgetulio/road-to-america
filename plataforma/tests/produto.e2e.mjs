@@ -50,7 +50,10 @@ const VIRTUAIS = {
   "/banco-privado/sint-step1.json": JSON.stringify(sint.filter((q) => q.step === "step1")),
   "/banco-privado/sint-step2ck.json": JSON.stringify(sint.filter((q) => q.step === "step2ck"))
 };
-const porId = new Map(sint.map((q) => [q.id, q]));
+/* o banco de demonstração junta os sintéticos aos 80 itens públicos de simulado/data/ */
+const publicos = [];
+for (const f of ["step1-questoes.json", "step2ck-questoes.json"]) publicos.push(...JSON.parse(await readFile(join(raiz, "simulado", "data", f), "utf8")));
+const porId = new Map([...sint, ...publicos].map((q) => [q.id, q]));
 
 const TIPOS = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".mjs": "text/javascript", ".css": "text/css", ".json": "application/json", ".svg": "image/svg+xml", ".woff2": "font/woff2", ".png": "image/png", ".webp": "image/webp", ".pdf": "application/pdf" };
 const servidor = http.createServer(async (req, res) => {
@@ -98,11 +101,11 @@ const foto = (nome, fullPage = true) => page.screenshot({ path: join(saida, Stri
 const seg = (t) => t.trim().split(":").map(Number).reduce((a, x) => a * 60 + x, 0);
 const perto = (txt, esperado, nome) => assert.ok(Math.abs(seg(txt) - seg(esperado)) <= 20, nome + ": " + txt + " (esperado perto de " + esperado + ")");
 const confirmarDia = async () => { await page.locator(".modal[open] .modal__foot button").last().click(); };
-/* "37%", "< 1%", "> 99%" ou "37,4%" -> número entre 0 e 100 */
-const pctNum = (t) => {
-  const m = String(t).match(/([<>]\s*)?(\d+(?:,\d+)?)\s*%/);
-  assert.ok(m, "percentual em: " + t);
-  return Number(m[2].replace(",", "."));
+/* texto da probabilidade, sem espaços nas pontas: "37%", "< 1%", "> 99%" ou "89,7%" */
+const pTxt = async (loc) => {
+  const t = (await loc.innerText()).trim();
+  assert.match(t, /^(< 1%|> 99%|\d{1,2}(,\d)?%)$/, "formato único da probabilidade: " + t);
+  return t;
 };
 const violacoes = [];
 async function conferir(nome) {
@@ -224,7 +227,7 @@ await etapa("3c. Meu progresso mostra o dia parado e leva de volta; retomar e te
   await page.goto(base + "/anki/#/progresso");
   const sc = page.locator('section[aria-labelledby="sc-t"]');
   await sc.waitFor();
-  assert.match(await sc.innerText(), /Step 1, simulado completo[\s\S]*Parado[\s\S]*bloco 3 de 14/);
+  assert.match(await sc.innerText(), /Step 1, simulado completo[\s\S]*Parado[\s\S]*bloco 3 de 14/i);
   await sc.getByRole("link", { name: "Continuar" }).click();
   await page.locator("[data-retomar]").waitFor();
   /* o tempo parado não gastou a pausa */
@@ -268,16 +271,15 @@ await etapa("4. probabilidade igual no banco, em Meu progresso e nos simulados c
   await page.goto(base + "/questoes/#/aprovacao?step=step1");
   await page.getByRole("heading", { name: "Probabilidade de aprovação", level: 1 }).waitFor();
   const placa = page.locator(".q-placa").first();
-  pBanco = pctNum(await placa.locator(".q-placa__p b").innerText());
+  pBanco = await pTxt(placa.locator(".q-placa__p b"));
   assert.match(await page.locator("main").innerText(), /290 itens/, "o painel conta os 10 do banco e os 280 do simulado");
   await foto("banco-aprovacao");
   await page.goto(base + "/anki/#/progresso");
   const bq = page.locator('section[aria-labelledby="bq-t"]');
   await bq.waitFor();
   const s1 = bq.locator(".prog-pr").first();
-  assert.match(await s1.innerText(), /Step 1[\s\S]*290 itens respondidos/);
-  const pProg = pctNum(await s1.locator(".prog-banco__p").innerText());
-  assert.ok(Math.abs(pProg - pBanco) <= 0.5, "Meu progresso " + pProg + "% e banco " + pBanco + "%");
+  assert.match(await s1.innerText(), /Step 1[\s\S]*290 itens respondidos/i);
+  assert.equal(await pTxt(s1.locator(".prog-banco__p")), pBanco, "Meu progresso igual ao banco");
   const sc = page.locator('section[aria-labelledby="sc-t"]');
   const linha = await sc.locator("li").first().innerText();
   assert.match(linha, new RegExp(relatorio.acertos + "/280"), "Meu progresso mostra os acertos do dia");
@@ -286,8 +288,7 @@ await etapa("4. probabilidade igual no banco, em Meu progresso e nos simulados c
   await conferir("meu-progresso-1440");
   await page.goto(base + "/simulado/#/completos");
   await page.locator(".indicador").waitFor();
-  const pSim = pctNum(await page.locator(".indicador__p b").innerText());
-  assert.ok(Math.abs(pSim - pBanco) <= 0.5, "simulados " + pSim + "% e banco " + pBanco + "%");
+  assert.equal(await pTxt(page.locator(".indicador__p b")), pBanco, "simulados completos igual ao banco");
   assert.match(await page.locator(".indicador").innerText(), /290 itens respondidos/);
 });
 
@@ -304,8 +305,10 @@ await etapa("5a. admin: análise de itens com as respostas do aluno e ficha do i
   await page.goto(base + "/admin/#/item/" + encodeURIComponent(alvo));
   await page.getByRole("heading", { name: alvo, level: 1 }).waitFor();
   const ficha = await page.locator("main").innerText();
-  assert.match(ficha, /Dificuldade|dificuldade/);
-  assert.match(ficha, /Discriminação|discriminação/);
+  assert.match(ficha, /Índices do item/);
+  assert.match(ficha, /Dificuldade p/i);
+  assert.match(ficha, /Ponto-bisserial/i);
+  assert.match(ficha, /Infit/i);
   assert.ok(await page.locator(".dq tbody tr").count() >= 4, "tabela de distratores");
   await foto("admin-item");
 });
@@ -316,13 +319,12 @@ await etapa("5b. admin: ficha do participante com a mesma probabilidade, o simul
   const bq = page.locator('section[aria-labelledby="bq-t"]');
   await bq.locator(".bq__card").first().waitFor();
   const card = bq.locator(".bq__card").first();
-  assert.match(await card.innerText(), /Step 1[\s\S]*290 itens respondidos/);
-  const pAdmin = pctNum(await card.locator(".bq__p b").innerText());
-  assert.ok(Math.abs(pAdmin - pBanco) <= 0.5, "admin " + pAdmin + "% e aluno " + pBanco + "%");
+  assert.match(await card.innerText(), /Step 1[\s\S]*290 itens respondidos/i);
+  assert.equal(await pTxt(card.locator(".bq__p b")), pBanco, "ficha do admin igual ao que o aluno vê");
   const sc = page.locator(".mini-tab--completos tbody tr");
   assert.equal(await sc.count(), 1, "um simulado completo na ficha");
   const linha = await sc.first().innerText();
-  assert.match(linha, /Step 1, simulado completo/);
+  assert.match(linha, /Step 1, simulado completo/i);
   assert.match(linha, /encerrado/);
   assert.match(linha, new RegExp(relatorio.acertos + "/280"));
   await conferir("admin-ficha-1440");

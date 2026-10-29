@@ -11,7 +11,7 @@
    Método em plataforma/PSICOMETRIA.md (seções 11, 12, 13 e 19). Sem DOM. */
 import {
   analisarItens, estimarAluno, eap, bDoItem, prontidaoCombinada, expit,
-  REGRA_CONFIANCA, LIMIARES_ITEM, PADRAO_STEP2CK
+  REGRA_CONFIANCA, LIMIARES_ITEM, PADRAO_STEP2CK, textoProbabilidade
 } from "../../plataforma/js/psicometria.js";
 import { TAXONOMIA, CAMPO_MULTIRROTULO, ITENS_FORMULARIO_OFICIAL, sistemasDoOutline, nomeChave } from "../../plataforma/js/banco.js";
 
@@ -233,7 +233,7 @@ export function riscosBanco(row, est, { regra = REGRA_CONFIANCA } = {}) {
     const nome = step === "step1" ? "Step 1" : "Step 2 CK";
     out.push({
       codigo: CODIGO_RISCO_BANCO, nivel: "alto", titulo: ROTULO_RISCO_BANCO, step,
-      detalhe: nome + ": probabilidade de " + pctTxt(x.p_aprovacao) + " de estar acima do limiar do banco, com alta confiança (" + numTxt(x.n_efetivo) + " itens, intervalo de 90% de θ de " + numTxt(x.ic90[0], 2) + " a " + numTxt(x.ic90[1], 2) + "). Estimativa pelo padrão de Angoff, não é resultado oficial.",
+      detalhe: nome + ": probabilidade de " + textoProbabilidade(x.p_aprovacao) + " de estar acima do limiar do banco, com alta confiança (" + numTxt(x.n_efetivo) + " itens, intervalo de 90% de θ de " + numTxt(x.ic90[0], 2) + " a " + numTxt(x.ic90[1], 2) + "). Estimativa pelo padrão de Angoff, não é resultado oficial.",
       valor: x.p_aprovacao, limite: regra.p_baixa
     });
   }

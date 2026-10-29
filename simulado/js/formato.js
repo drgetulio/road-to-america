@@ -1,4 +1,5 @@
 /* Road to America | simulados: formatação de números, tempos e rótulos (puro) */
+import { textoProbabilidade } from "../../plataforma/js/psicometria.js";
 
 /* Percentual com vírgula: 0,9051 -> "90,5%" */
 export function pct(x, casas = 0) {

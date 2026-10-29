@@ -201,13 +201,14 @@
 .nb-obs { font-style: italic; }
 @media (max-width: 760px) {
   .ficha .ptab-wrap { border: 0; background: none; overflow: visible; }
-  .mini-tab--sim, .mini-tab--nbme, .mini-tab--sim tbody, .mini-tab--nbme tbody, .mini-tab--sim tr, .mini-tab--nbme tr { display: block; width: 100%; }
-  .mini-tab--sim thead, .mini-tab--nbme thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .mini-tab--sim tr, .mini-tab--nbme tr { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin-bottom: 10px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; background: var(--card); }
-  .mini-tab--sim td, .mini-tab--nbme td { padding: 0; border: 0; min-width: 0; overflow-wrap: anywhere; }
-  .mini-tab--sim td::before, .mini-tab--nbme td::before { content: attr(data-label); display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+  .mini-tab--sim, .mini-tab--nbme, .mini-tab--completos, .mini-tab--sim tbody, .mini-tab--nbme tbody, .mini-tab--completos tbody, .mini-tab--sim tr, .mini-tab--nbme tr, .mini-tab--completos tr { display: block; width: 100%; }
+  .mini-tab--sim thead, .mini-tab--nbme thead, .mini-tab--completos thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .mini-tab--sim tr, .mini-tab--nbme tr, .mini-tab--completos tr { border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; margin-bottom: 10px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; background: var(--card); }
+  .mini-tab--sim td, .mini-tab--nbme td, .mini-tab--completos td { padding: 0; border: 0; min-width: 0; overflow-wrap: anywhere; }
+  .mini-tab--sim td::before, .mini-tab--nbme td::before, .mini-tab--completos td::before { content: attr(data-label); display: block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
   .mini-tab td[data-label=""]::before { display: none; }
   .mini-tab--nbme td[data-label="Step e formulário"], .mini-tab--nbme td[data-label="Verificação"] { grid-column: 1 / -1; }
+  .mini-tab--completos td[data-label="Simulado"], .mini-tab--completos td[data-label="Situação"] { grid-column: 1 / -1; }
 }
 .pront .mini-tab { font-size: 14.5px; }
 @media (max-width: 560px) { .pront .mini-tab th:nth-child(3), .pront .mini-tab td:nth-child(3) { display: none; } .pront .mini-tab td, .pront .mini-tab th { padding: 6px 4px; } }

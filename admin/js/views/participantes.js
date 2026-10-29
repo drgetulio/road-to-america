@@ -9,6 +9,7 @@ import {
 } from "../calculos.js";
 import { pageHead, chipStatus, chipGarantia, seloDemo, avisoLgpd } from "./comum.js";
 import { importarPresenca, botaoImportar } from "./acoes.js";
+import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
 const FILTROS = ["q", "status", "step", "turma", "garantia", "inatividade"];
 const COLUNAS = [
@@ -160,6 +161,5 @@ function bancoHtml(r) {
   const x = estBancoAtual(r);
   if (!x) return '<span class="muted">' + (r.banco ? "sem respostas" : "indisponível") + "</span>";
   const baixo = x.confianca?.alta && x.p_aprovacao <= 0.1;
-  const p = Math.round(x.p_aprovacao * 100);
-  return "<b" + (baixo ? ' class="is-risco"' : x.confianca?.alta ? "" : ' class="muted"') + ">" + (p < 1 && x.p_aprovacao > 0 ? "&lt;1" : p > 99 && x.p_aprovacao < 1 ? "&gt;99" : p) + "%</b><small>" + (x.confianca?.alta ? "alta confiança" : "preliminar") + ", " + Math.round(x.n_efetivo) + " itens</small>";
+  return "<b" + (baixo ? ' class="is-risco"' : x.confianca?.alta ? "" : ' class="muted"') + ">" + e(textoProbabilidade(x.p_aprovacao)) + "</b><small>" + (x.confianca?.alta ? "alta confiança" : "preliminar") + ", " + Math.round(x.n_efetivo) + " itens</small>";
 }
