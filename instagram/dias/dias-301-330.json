@@ -46,12 +46,12 @@
         "B": "O superantígeno (dia 267) causa febre alta, choque e eritrodermia difusa, e não diarreia com sangue seguida de HUS.",
         "D": "A dextrana (dia 295) prende o viridans à valva lesada depois de procedimento dentário e causa endocardite subaguda, não diarreia."
       },
-      "macete": "Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC. No toca-discos, só o disco do hambúrguer gira: a toxina chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
+      "macete": "Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC. É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
       "pegadinha_de_prova": "O NBME cobra que a EHEC não fermenta sorbitol, não invade a mucosa, quase não dá febre e que antibiótico pode aumentar o risco de HUS."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um hambúrguer no rótulo, outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a vintage turntable with three vinyl records side by side, each center label showing a simple icon: a hamburger, a stapler, and a small jar of golden syrup; a fourth record in a different color, with a light switch icon, lies apart; Macrô wears headphones as the DJ, scratching his head, unsure which record to play. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a vintage turntable with three vinyl records side by side, each center label showing a simple icon: a tiny rod-shaped bacterium wearing a straw hat, a stapler, and a small jar of golden syrup; a fourth record in a different color, with a light switch icon, lies apart; Macrô wears headphones as the DJ, scratching his head, unsure which record to play. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -59,8 +59,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: só o disco do hambúrguer gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda (o ribossomo); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: the same turntable: only the hamburger record spins; a small red pair of scissors flies out of it and snips a little round two-part factory in half; in the background a bean-shaped filter is clogged with tiny round grains; Macrô points at the spinning record with his headphones around his neck, looking proud. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: the same turntable: only the record with the straw-hat bacterium spins; a small red pair of scissors flies out of it and snips a little round two-part factory in half; in the background a bean-shaped filter is clogged with tiny round grains; Macrô points at the spinning record with his headphones around his neck, looking proud. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -88,13 +88,13 @@
     "gancho_apoio": "Remix com EHEC, superantígenos e viridans. Um dos discos é intruso.",
     "imagem": {
       "arquivo": "dia-301.png",
-      "cena": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um hambúrguer no rótulo, outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
+      "cena": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
       "foco": "50% 35%",
       "alt": null
     },
     "imagem_macete": {
       "arquivo": "dia-301-macete.png",
-      "cena": "Callback: só o disco do hambúrguer gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda (o ribossomo); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
+      "cena": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
       "foco": "50% 45%",
       "alt": null
     },
@@ -142,7 +142,7 @@
       },
       "macete": {
         "frase": "*Hambúrguer mal passado, tesoura no 60S e rim no carimbo*: é a EHEC",
-        "apoio": "No toca-discos, só o disco do hambúrguer gira: a toxina chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
+        "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
         "fala": null
       }
     },
@@ -401,7 +401,7 @@
       ],
       "correta": "D"
     },
-    "fonte": "Barocas DA et al. Microhematuria: AUA/SUFU Guideline. J Urol 2020;204:778-86 (amended 2025); Partin AW et al. Campbell-Walsh-Wein Urology, 12th ed., 2021.",
+    "fonte": "Barocas DA et al. Microhematuria: AUA/SUFU Guideline. J Urol 2020;204:778-86; Barocas DA et al. Updates to Microhematuria: AUA/SUFU Guideline (2025). J Urol 2025;213:547-57; Partin AW et al. Campbell-Walsh-Wein Urology, 12th ed., 2021.",
     "revisao": {
       "medica": "",
       "humor_compliance": ""
@@ -658,7 +658,7 @@
     "remix_de": null,
     "explicacao_em": "2027-09-03",
     "gancho_pt": "O brigadeiro sai e volta da forminha. Qual exame enxerga isso?",
-    "vinheta_en": "A 5-week-old girl is seen for routine care. Her mother's first child, she was delivered by cesarean for breech presentation. The left thigh has an extra skin fold. Adduction with posterior pressure dislocates the left hip with a palpable clunk, and abduction relocates it.",
+    "vinheta_en": "A 7-week-old girl is seen for routine care. Her mother's first child, she was delivered by cesarean for breech presentation. The left thigh has an extra skin fold. Adduction with posterior pressure dislocates the left hip with a palpable clunk, and abduction relocates it.",
     "pergunta_en": "Which study is most appropriate to confirm the diagnosis?",
     "alternativas": [
       {
@@ -680,14 +680,14 @@
     ],
     "correta": "B",
     "explicacao_pt": {
-      "por_que_certa": "Menina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a epífise femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.",
+      "por_que_certa": "Menina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.",
       "por_que_erradas": {
         "A": "O raio X só fica confiável depois dos 4 a 6 meses, quando aparece o núcleo de ossificação da cabeça femoral.",
         "C": "A ressonância exige sedação e fica para casos complexos ou para conferir a redução depois do gesso.",
         "D": "A cintilografia procura infecção, fratura oculta ou necrose, e não mostra a relação entre a cabeça femoral e o acetábulo."
       },
       "macete": "Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom. O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer.",
-      "pegadinha_de_prova": "O NBME troca a idade: abaixo de 4 a 6 meses é ultrassom e Pavlik; acima disso, raio X e, se precisar, redução sob anestesia com gesso."
+      "pegadinha_de_prova": "O NBME troca a idade: de 6 semanas a 4 a 6 meses é ultrassom e Pavlik (antes de 6 semanas a frouxidão fisiológica confunde); depois disso, raio X e, se precisar, redução sob anestesia com gesso."
     },
     "imagem_questao": {
       "conceito_visual": "Garçom de rodízio com quatro espetos de sobremesa; no prato à frente, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. As plaquinhas verde e vermelha estão no bolso do avental.",
@@ -707,8 +707,8 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "O brigadeiro sai e volta da forminha. Qual exame enxerga isso?\n\nMenina de 5 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Pediatria #Pediatrics #QuestaoDoDia #RoadToAmerica",
-    "legenda_explicacao_pt": "Gabarito do dia 305: letra B, Hip ultrasonography.\n\nMenina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a epífise femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.\n\nMacete: Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_questao_pt": "O brigadeiro sai e volta da forminha. Qual exame enxerga isso?\n\nMenina de 7 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Pediatria #Pediatrics #QuestaoDoDia #RoadToAmerica",
+    "legenda_explicacao_pt": "Gabarito do dia 305: letra B, Hip ultrasonography.\n\nMenina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.\n\nMacete: Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Quadril que sai e volta no bebê: exame?",
       "opcoes": [
@@ -739,7 +739,7 @@
       "alt": null
     },
     "questao": {
-      "vinheta": "A 5-week-old girl is seen for routine care. Her mother's first child, she was delivered by cesarean for breech presentation. The left thigh has an extra skin fold. Adduction with posterior pressure dislocates the left hip with a palpable clunk, and abduction relocates it.",
+      "vinheta": "A 7-week-old girl is seen for routine care. Her mother's first child, she was delivered by cesarean for breech presentation. The left thigh has an extra skin fold. Adduction with posterior pressure dislocates the left hip with a palpable clunk, and abduction relocates it.",
       "pergunta": "Which study is most appropriate to confirm the diagnosis?",
       "alternativas": {
         "A": {
@@ -764,7 +764,7 @@
     "explicacao": {
       "titulo": "Displasia do quadril antes dos 4 a 6 meses: *ultrassom*",
       "certa": [
-        "Menina, primeira gestação e apresentação pélvica, com *Barlow* e *Ortolani* positivos, tem *developmental dysplasia of the hip*. Até os 4 a 6 meses de vida, a epífise femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha é a *hip ultrasonography*. Nessa idade o tratamento é o *Pavlik harness*, que mantém o quadril fletido e abduzido."
+        "Menina, primeira gestação e apresentação pélvica, com *Barlow* e *Ortolani* positivos, tem *developmental dysplasia of the hip*. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a *hip ultrasonography*. Nessa idade o tratamento é o *Pavlik harness*, que mantém o quadril fletido e abduzido."
       ],
       "termos": [
         "developmental dysplasia of the hip",
@@ -784,7 +784,7 @@
       }
     },
     "legenda": {
-      "contexto": "Menina de 5 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.",
+      "contexto": "Menina de 7 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.",
       "palavras_chave": null,
       "hashtags": [
         "#USMLEStep2CK",
@@ -839,7 +839,7 @@
     ],
     "correta": "C",
     "explicacao_pt": {
-      "por_que_certa": "Doença de Graves no primeiro trimestre pede propylthiouracil, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a thyroid peroxidase, que faz a organificação e o acoplamento do iodo, e também a 5'-deiodinase periférica, que converte T4 em T3. Depois do primeiro trimestre, muitos serviços trocam para methimazole porque o PTU pode causar lesão hepática grave.",
+      "por_que_certa": "Doença de Graves no primeiro trimestre pede propylthiouracil, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a thyroid peroxidase, que faz a organificação e o acoplamento do iodo, e também a 5'-deiodinase periférica, que converte T4 em T3. Depois do primeiro trimestre, a troca para methimazole é decidida caso a caso, porque o PTU pode causar lesão hepática grave.",
       "por_que_erradas": {
         "A": "O methimazole bloqueia a peroxidase, mas não a conversão periférica, e é evitado no primeiro trimestre pelo risco de embriopatia.",
         "B": "O iodo radioativo é contraindicado na gravidez: atravessa a placenta e destrói a tireoide do feto a partir de 10 a 12 semanas.",
@@ -867,7 +867,7 @@
       }
     },
     "legenda_questao_pt": "Dois remédios quase gêmeos no balcão: qual deles a cegonha leva?\n\nMulher de 28 anos com 8 semanas de gestação, palpitações, bócio difuso, TSH suprimido, T4 livre alto e anticorpo contra o receptor de TSH positivo. A Tia Meia-Vida tem dois frascos parecidos na prateleira e só um é o preferido nesta fase.\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Farmacologia #Pharmacology #QuestaoDoDia #RoadToAmerica",
-    "legenda_explicacao_pt": "Gabarito do dia 306: letra C, Propylthiouracil, inhibiting peroxidase and peripheral deiodinase.\n\nDoença de Graves no primeiro trimestre pede propylthiouracil, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a thyroid peroxidase, que faz a organificação e o acoplamento do iodo, e também a 5'-deiodinase periférica, que converte T4 em T3. Depois do primeiro trimestre, muitos serviços trocam para methimazole porque o PTU pode causar lesão hepática grave.\n\nMacete: PTU corta na fábrica e na estrada, e P é de primeiro trimestre.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_explicacao_pt": "Gabarito do dia 306: letra C, Propylthiouracil, inhibiting peroxidase and peripheral deiodinase.\n\nDoença de Graves no primeiro trimestre pede propylthiouracil, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a thyroid peroxidase, que faz a organificação e o acoplamento do iodo, e também a 5'-deiodinase periférica, que converte T4 em T3. Depois do primeiro trimestre, a troca para methimazole é decidida caso a caso, porque o PTU pode causar lesão hepática grave.\n\nMacete: PTU corta na fábrica e na estrada, e P é de primeiro trimestre.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Graves com 8 semanas de gestação: qual?",
       "opcoes": [
@@ -878,7 +878,7 @@
       ],
       "correta": "C"
     },
-    "fonte": "Alexander EK et al. 2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum. Thyroid 2017;27:315-89; Ross DS et al. 2016 ATA Guidelines for Hyperthyroidism. Thyroid 2016;26:1343-421.",
+    "fonte": "American Thyroid Association. Diretriz de 2026 sobre doença tireoidiana na pré-concepção, na gestação e no pós-parto. Thyroid 2026; Alexander EK et al. 2017 Guidelines of the American Thyroid Association for the Diagnosis and Management of Thyroid Disease During Pregnancy and the Postpartum. Thyroid 2017;27:315-89; Ross DS et al. 2016 ATA Guidelines for Hyperthyroidism. Thyroid 2016;26:1343-421.",
     "revisao": {
       "medica": "",
       "humor_compliance": ""
@@ -923,7 +923,7 @@
     "explicacao": {
       "titulo": "Graves no 1º trimestre: *PTU*, que corta na fábrica e na estrada",
       "certa": [
-        "Doença de Graves no primeiro trimestre pede *propylthiouracil*, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a *thyroid peroxidase*, que faz a organificação e o acoplamento do iodo, e também a *5'-deiodinase* periférica, que converte T4 em T3. Depois do primeiro trimestre, muitos serviços trocam para methimazole porque o PTU pode causar lesão hepática grave."
+        "Doença de Graves no primeiro trimestre pede *propylthiouracil*, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a *thyroid peroxidase*, que faz a organificação e o acoplamento do iodo, e também a *5'-deiodinase* periférica, que converte T4 em T3. Depois do primeiro trimestre, a troca para methimazole é decidida caso a caso, porque o PTU pode causar lesão hepática grave."
       ],
       "termos": [
         "propylthiouracil",
@@ -975,7 +975,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-09-05",
-    "gancho_pt": "Pais desconfiados chegaram com uma pasta de prints. E agora?",
+    "gancho_pt": "Pais preocupados chegaram com uma pasta de prints. E agora?",
     "vinheta_en": "At a routine 2-month visit, an infant girl has normal growth and examination findings. Her parents decline all scheduled vaccines because they read online that many vaccines at once will overload her immune system. They ask whether they can keep bringing her to this clinic.",
     "pergunta_en": "Which is the most appropriate response by the physician?",
     "alternativas": [
@@ -1025,7 +1025,7 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Pais desconfiados chegaram com uma pasta de prints. E agora?\n\nBebê de 2 meses, saudável, na consulta de rotina. Os pais leram na internet que tantas vacinas de uma vez sobrecarregam o sistema imune, recusam todas e perguntam se podem continuar no consultório. Qual é a melhor resposta?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Etica #MedicalEthics #QuestaoDoDia #RoadToAmerica",
+    "legenda_questao_pt": "Pais preocupados chegaram com uma pasta de prints. E agora?\n\nBebê de 2 meses, saudável, na consulta de rotina. Os pais leram na internet que tantas vacinas de uma vez sobrecarregam o sistema imune, recusam todas e perguntam se podem continuar no consultório. Qual é a melhor resposta?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Etica #MedicalEthics #QuestaoDoDia #RoadToAmerica",
     "legenda_explicacao_pt": "Gabarito do dia 307: letra C, \"Can you tell me more about what worries you about the vaccines?\".\n\nDiante da recusa vacinal, o primeiro passo é perguntar o que os pais leram e o que temem, sem julgamento. Depois vem a informação clara (o bebê responde a milhares de antígenos todos os dias e o calendário usa uma fração mínima disso) e a recomendação firme, com a porta aberta para vacinar em outra consulta. A criança continua em acompanhamento e a recusa informada fica registrada no prontuário.\n\nMacete: Ouvir, explicar, recomendar e manter a porta aberta: o cafezinho vem antes da vacina.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Pais recusam vacinas: melhor resposta?",
@@ -1042,7 +1042,7 @@
       "medica": "",
       "humor_compliance": ""
     },
-    "gancho": "Pais desconfiados chegaram com uma pasta de prints. *E agora?*",
+    "gancho": "Pais preocupados chegaram com uma pasta de prints. *E agora?*",
     "gancho_apoio": "No Sábado Sem Viés, a conversa começa antes da agulha.",
     "imagem": {
       "arquivo": "dia-307.png",
@@ -1988,7 +1988,7 @@
       }
     },
     "legenda_questao_pt": "Setembro Amarelo: o que combinar quando um adolescente começa antidepressivo?\n\nAdolescente de 15 anos com depressão há 2 meses, sem ideação suicida, com resposta parcial à psicoterapia, vai começar fluoxetina. Hoje, no Dia Mundial de Prevenção do Suicídio, a pergunta é sobre o plano de orientação e de retorno.\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nSetembro Amarelo. Se você ou alguém próximo precisar de apoio, ligue 188 (CVV), gratuito e 24 horas, ou acesse cvv.org.br. Em risco imediato, procure o pronto-socorro ou ligue 192.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Psiquiatria #SetembroAmarelo #QuestaoDoDia #RoadToAmerica",
-    "legenda_explicacao_pt": "Gabarito do dia 313: letra B, Explain the boxed warning and schedule close follow-up.\n\nAntidepressivos em menores de 25 anos têm boxed warning da FDA por um aumento pequeno de pensamentos e comportamentos suicidas nas primeiras semanas e depois de mudanças de dose. Na depressão moderada a grave o benefício supera o risco, então o plano é orientar a paciente e a família sobre os sinais de alerta e fazer close follow-up, sobretudo no primeiro mês. A fluoxetine é a primeira escolha aprovada pela FDA a partir dos 8 anos.\n\nMacete: Começou o ISRS, encurtou o retorno: as primeiras semanas pedem mais perto.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nSetembro Amarelo. Se você ou alguém próximo precisar de apoio, ligue 188 (CVV), gratuito e 24 horas, ou acesse cvv.org.br. Em risco imediato, procure o pronto-socorro ou ligue 192.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_explicacao_pt": "Gabarito do dia 313: letra B, Explain the boxed warning and schedule close follow-up.\n\nAntidepressivos em menores de 25 anos têm boxed warning da FDA por um aumento pequeno de pensamentos e comportamentos suicidas nas primeiras semanas e depois de mudanças de dose. Na depressão moderada a grave o benefício supera o risco, então o plano é orientar a paciente e a família sobre os sinais de alerta e fazer close follow-up, sobretudo no primeiro mês. A fluoxetine é a primeira escolha aprovada pela FDA a partir dos 8 anos.\n\nMacete: Começou o ISRS, encurtou o retorno: as primeiras semanas pedem mais perto.\n\nSetembro Amarelo. Se você ou alguém próximo precisar de apoio, ligue 188 (CVV), gratuito e 24 horas, ou acesse cvv.org.br. Em risco imediato, procure o pronto-socorro ou ligue 192.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Adolescente começa ISRS: qual plano?",
       "opcoes": [
@@ -2455,8 +2455,8 @@
       "pegadinha_de_prova": "O NBME pede o componente (lipid A), o receptor (TLR4 com CD14) e as citocinas, e lembra que endotoxina é estável ao calor e não forma toxoide, ao contrário das exotoxinas."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô na porta do boteco dos micróbios; na parede, quatro campainhas de formatos diferentes; diante delas, uma bactéria em forma de bastão, de jaqueta dupla, com uma longa serpentina de açúcar presa por uma pequena âncora na base.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: Macrô stands at the door of a cozy little diner for microbes; on the door frame there are four doorbells, each with a differently shaped button (round, square, star, two-pronged socket); in front of them a rod-shaped bacterium in a double-layered jacket trails a long sugary party streamer anchored by a small two-pronged anchor at its base; a simple road sign post stands outside. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Macrô na porta do boteco dos micróbios; na parede, quatro campainhas de formatos diferentes; diante delas, uma bactéria em forma de bastão, de jaqueta dupla, carrega três coisas: uma longa serpentina de açúcar, um chicotinho na cauda e um novelo de barbante. Qual delas vai tocar a campainha?",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: Macrô stands at the door of a cozy little diner for microbes; on the door frame there are four doorbells, each with a differently shaped button (round, square, star, two-pronged socket); in front of them a rod-shaped bacterium in a double-layered jacket carries three things: a long sugary party streamer, a thin whip-like tail and a small ball of tangled string; Macrô looks from one item to another, curious; a simple road sign post stands outside. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2493,7 +2493,7 @@
     "gancho_apoio": "Quatro campainhas na porta do boteco e só uma dispara o alarme do choque.",
     "imagem": {
       "arquivo": "dia-316.png",
-      "cena": "Macrô na porta do boteco dos micróbios; na parede, quatro campainhas de formatos diferentes; diante delas, uma bactéria em forma de bastão, de jaqueta dupla, com uma longa serpentina de açúcar presa por uma pequena âncora na base.",
+      "cena": "Macrô na porta do boteco dos micróbios; na parede, quatro campainhas de formatos diferentes; diante delas, uma bactéria em forma de bastão, de jaqueta dupla, carrega três coisas: uma longa serpentina de açúcar, um chicotinho na cauda e um novelo de barbante. Qual delas vai tocar a campainha?",
       "foco": "50% 35%",
       "alt": null
     },
@@ -2623,7 +2623,7 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena. Um frasquinho com uma gota vermelha em forma de escudo (G6PD conferido) fica na mesa.",
+      "conceito_visual": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena (o allopurinol, para risco menor). Um frasquinho em forma de escudo com um sinal verde de conferido (o G6PD normal) fica na mesa.",
       "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Seu Néfron, a wine-colored kidney bean with a navy tie, reading glasses on the tip of his nose, a rubber stamp in hand and a stack of forms. Scene: the same office: Seu Néfron holds a magic vacuum that sucks up the sharp crystal gravel and releases it as soft soap bubbles floating away down a tube; the small tap in the corner has been closed with a little wrench; a tiny shield-shaped vial with a green check mark symbol sits on his desk; relieved mood. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
@@ -2658,7 +2658,7 @@
     },
     "imagem_macete": {
       "arquivo": "dia-317-macete.png",
-      "cena": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena. Um frasquinho com uma gota vermelha em forma de escudo (G6PD conferido) fica na mesa.",
+      "cena": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena (o allopurinol, para risco menor). Um frasquinho em forma de escudo com um sinal verde de conferido (o G6PD normal) fica na mesa.",
       "foco": "50% 45%",
       "alt": null
     },
@@ -2773,8 +2773,8 @@
       "pegadinha_de_prova": "O NBME coloca diabético com oculomotor parético e pupila normal (isquemia) contra cefaleia súbita com pupila dilatada (aneurisma de comunicante posterior, que pede angiotomografia)."
     },
     "imagem_questao": {
-      "conceito_visual": "Um balão vermelho inchando aperta um cabo grosso por fora; o cabo tem fitinhas listradas na superfície e um miolo diferente por dentro, e termina num poste de luz em forma de olho cuja lâmpada redonda está enorme e acesa.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Scene: a red balloon slowly inflating presses against the outside of a thick cable; the cable has thin striped ribbons wrapped on its surface and a different-colored core inside; the cable ends at a streetlamp shaped like an eye whose round lamp is very wide and glowing; clean diagram-like composition. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Um balão vermelho inchando aperta um cabo grosso e liso, visto só por fora; o cabo termina num poste de luz em forma de olho, com a cúpula caída como uma pálpebra e a lâmpada redonda enorme e acesa.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Scene: a red balloon slowly inflating presses against a thick, smooth, plain cable seen only from the outside, its inner layout hidden; the cable ends at a streetlamp shaped like an eye, its lampshade drooping like an eyelid and its round lamp very wide and glowing; clean diagram-like composition. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2808,10 +2808,10 @@
       "humor_compliance": ""
     },
     "gancho": "Balão apertou o cabo e a *pupila foi a primeira a reclamar*",
-    "gancho_apoio": "Na Quarta do Porquê, a resposta está em como os fios estão arrumados dentro do nervo.",
+    "gancho_apoio": "Na Quarta do Porquê, a resposta está em como os fios se arrumam dentro do nervo.",
     "imagem": {
       "arquivo": "dia-318.png",
-      "cena": "Um balão vermelho inchando aperta um cabo grosso por fora; o cabo tem fitinhas listradas na superfície e um miolo diferente por dentro, e termina num poste de luz em forma de olho cuja lâmpada redonda está enorme e acesa.",
+      "cena": "Um balão vermelho inchando aperta um cabo grosso e liso, visto só por fora; o cabo termina num poste de luz em forma de olho, com a cúpula caída como uma pálpebra e a lâmpada redonda enorme e acesa.",
       "foco": "50% 35%",
       "alt": null
     },
@@ -3442,7 +3442,7 @@
       ],
       "correta": "D"
     },
-    "fonte": "Adler Y et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-64; Imazio M et al. A randomized trial of colchicine for acute pericarditis. N Engl J Med 2013;369:1522-8.",
+    "fonte": "Schulz-Menger J, Imazio M et al. 2025 ESC Guidelines for the management of myocarditis and pericarditis. Eur Heart J 2025;46:3952-4041; Imazio M et al. A randomized trial of colchicine for acute pericarditis. N Engl J Med 2013;369:1522-8.",
     "revisao": {
       "medica": "",
       "humor_compliance": ""
@@ -3543,7 +3543,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-09-21",
-    "gancho_pt": "Capivara aqui, carrapato lá: de onde vêm essas manchas?",
+    "gancho_pt": "Acampou em junho e voltou com manchas no punho. Quem veio junto?",
     "vinheta_en": "A 9-year-old boy from North Carolina has had fever, severe headache, and myalgias for 4 days after a camping trip in June. Two days ago, a blanching rash appeared on his wrists and ankles; it now involves the palms, soles, and trunk and has become petechial. Platelets are 82,000/mm3, and sodium is 129 mEq/L.",
     "pergunta_en": "Which organism is most likely responsible?",
     "alternativas": [
@@ -3572,12 +3572,12 @@
         "C": "Ehrlichia infecta leucócitos (mórulas em monócitos) e causa leucopenia; o exantema é raro, sobretudo em adultos.",
         "D": "Rickettsia typhi (tifo murino) vem da pulga, e o exantema começa no tronco e vai para as extremidades, poupando palmas e plantas."
       },
-      "macete": "A torcida da Rickettsia entra pelos portões dos punhos e tornozelos e enche o estádio. Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade.",
+      "macete": "A torcida da Rickettsia entra pelos portões dos punhos e tornozelos e enche o estádio. Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade. A capivara na arquibancada lembra que no Brasil a mesma R. rickettsii causa a febre maculosa brasileira, com o carrapato-estrela.",
       "pegadinha_de_prova": "O NBME cobra o sentido do exantema (da periferia para o centro na febre maculosa, do centro para a periferia no tifo) e a doxiciclina mesmo em criança pequena."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de chapéu de caubói que desceu de uma montanha agarrado num galho; o carrapato carrega uma sacola de confete vermelho. Ao fundo, uma capivara tranquila na beira do rio olha a cena.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: Macrô stands at the door of a cozy little diner for microbes greeting a tiny tick wearing a cowboy hat who has just climbed down from a rocky mountain holding onto a twig; the tick carries a small bag of red confetti dots; in the background a calm capybara sits by a river watching; a simple road sign post stands outside. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de mochila nas costas, que chegou de um acampamento agarrado num galho; ao fundo, uma barraca e uma fogueira apagada.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: Macrô stands at the door of a cozy little diner for microbes greeting a tiny tick wearing a small backpack who has just arrived holding onto a twig; in the background a small camping tent and a campfire that has gone out; a simple road sign post stands outside. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -3585,15 +3585,15 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a top-down view of a soccer stadium: crowds of tiny red dot fans pour in through four gates at the corners and fill the stands toward the center of the field; Macrô dressed as a referee raises a whistle shaped like a capsule pill; the tick in the cowboy hat sits defeated on the bench. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula. Num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a top-down view of a soccer stadium: crowds of tiny red dot fans pour in through four gates at the corners and fill the stands toward the center of the field; Macrô dressed as a referee raises a whistle shaped like a capsule pill; the little tick with its backpack sits defeated on the bench; in one corner of the stands a calm capybara watches the game. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Capivara aqui, carrapato lá: de onde vêm essas manchas?\n\nMenino de 9 anos com febre, cefaleia forte e dor no corpo há 4 dias, depois de acampar em junho na Carolina do Norte. As manchas começaram nos punhos e tornozelos e agora pegam palmas, plantas e tronco, com petéquias. Qual é o agente?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Microbiologia #Microbiology #QuestaoDoDia #RoadToAmerica",
+    "legenda_questao_pt": "Acampou em junho e voltou com manchas no punho. Quem veio junto?\n\nMenino de 9 anos com febre, cefaleia forte e dor no corpo há 4 dias, depois de acampar em junho na Carolina do Norte. As manchas começaram nos punhos e tornozelos e agora pegam palmas, plantas e tronco, com petéquias. Qual é o agente?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Microbiologia #Microbiology #QuestaoDoDia #RoadToAmerica",
     "legenda_explicacao_pt": "Gabarito do dia 323: letra B, Rickettsia rickettsii.\n\nFebre, cefaleia e exantema que começa em punhos e tornozelos, sobe para o tronco e pega palmas e plantas depois de acampar no verão é Rocky Mountain spotted fever. A Rickettsia rickettsii, transmitida pelo carrapato Dermacentor, infecta o endotélio e causa vasculite, o que explica as petéquias, a plaquetopenia e a hiponatremia. O tratamento é doxycycline já na suspeita, em qualquer idade, porque o atraso aumenta muito a mortalidade.\n\nMacete: A torcida da Rickettsia entra pelos portões dos punhos e tornozelos e enche o estádio.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Manchas que começam nos punhos: agente?",
@@ -3610,17 +3610,17 @@
       "medica": "",
       "humor_compliance": ""
     },
-    "gancho": "Capivara aqui, carrapato lá: *de onde vêm essas manchas?*",
-    "gancho_apoio": "O Macrô recebeu um visitante que desceu da montanha agarrado numa perna.",
+    "gancho": "Acampou em junho e voltou com manchas no punho. *Quem veio junto?*",
+    "gancho_apoio": "O Macrô recebeu um visitante que voltou do acampamento agarrado numa perna.",
     "imagem": {
       "arquivo": "dia-323.png",
-      "cena": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de chapéu de caubói que desceu de uma montanha agarrado num galho; o carrapato carrega uma sacola de confete vermelho. Ao fundo, uma capivara tranquila na beira do rio olha a cena.",
+      "cena": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de mochila nas costas, que chegou de um acampamento agarrado num galho; ao fundo, uma barraca e uma fogueira apagada.",
       "foco": "50% 35%",
       "alt": null
     },
     "imagem_macete": {
       "arquivo": "dia-323-macete.png",
-      "cena": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula.",
+      "cena": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula. Num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
       "foco": "50% 45%",
       "alt": null
     },
@@ -3665,7 +3665,7 @@
       },
       "macete": {
         "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos* e enche o estádio",
-        "apoio": "Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade.",
+        "apoio": "Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade. A capivara na arquibancada lembra que no Brasil a mesma R. rickettsii causa a febre maculosa brasileira, com o carrapato-estrela.",
         "fala": null
       }
     },
@@ -4371,8 +4371,8 @@
       "pegadinha_de_prova": "O NBME mostra o funil assimétrico e pede o nome do viés, ou pergunta como reduzi-lo: registro prévio dos ensaios clínicos, como no ClinicalTrials.gov."
     },
     "imagem_questao": {
-      "conceito_visual": "Um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão; um dos cantos de baixo está vazio. O Viés, fantasminha de lençol com lupa, espia meio escondido atrás de um arquivo de escritório com gavetas.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a chart or a 2x2 table. Scene: a large kitchen funnel drawn as a scatter plot made of small round dots, wide at the bottom and narrow at the top; one lower corner of the funnel is empty with no dots; Viés peeks out, half hidden, from behind an office filing cabinet with drawers, holding his magnifying glass. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão; um dos cantos de baixo está vazio. O Viés, fantasminha de lençol com lupa, espia meio escondido atrás do funil, com uma das mãos escondida nas costas.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a chart or a 2x2 table. Scene: a large kitchen funnel drawn as a scatter plot made of small round dots, wide at the bottom and narrow at the top; one lower corner of the funnel is empty with no dots; Viés peeks out, half hidden behind the dotted funnel, holding his magnifying glass and keeping one hand behind his back. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4380,8 +4380,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: o Viés abre a gaveta do arquivo e dela pulam bolinhas pequenas que preenchem o canto vazio do funil; o funil fica simétrico e o fantasminha faz cara de flagrado.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a chart or a 2x2 table. Scene: the same scene: Viés pulls open a drawer of the filing cabinet and a stream of small round dots jumps out and fills the empty lower corner of the dotted funnel, which becomes symmetrical; Viés looks caught red-handed, magnifying glass drooping. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Callback: atrás do funil aparece um arquivo de escritório; o Viés abre a gaveta e dela pulam bolinhas pequenas que preenchem o canto vazio do funil; o funil fica simétrico e o fantasminha faz cara de flagrado.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a chart or a 2x2 table. Scene: the same scene: behind the funnel an office filing cabinet is revealed; Viés pulls open a drawer and a stream of small round dots jumps out and fills the empty lower corner of the dotted funnel, which becomes symmetrical; Viés looks caught red-handed, magnifying glass drooping. Vertical 4:5 composition with the main element centered and clear margins. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4406,16 +4406,16 @@
       "humor_compliance": ""
     },
     "gancho": "O funil ficou torto. *Quem roubou um pedaço do gráfico?*",
-    "gancho_apoio": "No Sábado Sem Viés, o fantasminha guarda alguma coisa na gaveta.",
+    "gancho_apoio": "No Sábado Sem Viés, o fantasminha esconde alguma coisa atrás do gráfico.",
     "imagem": {
       "arquivo": "dia-328.png",
-      "cena": "Um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão; um dos cantos de baixo está vazio. O Viés, fantasminha de lençol com lupa, espia meio escondido atrás de um arquivo de escritório com gavetas.",
+      "cena": "Um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão; um dos cantos de baixo está vazio. O Viés, fantasminha de lençol com lupa, espia meio escondido atrás do funil, com uma das mãos escondida nas costas.",
       "foco": "50% 35%",
       "alt": null
     },
     "imagem_macete": {
       "arquivo": "dia-328-macete.png",
-      "cena": "Callback: o Viés abre a gaveta do arquivo e dela pulam bolinhas pequenas que preenchem o canto vazio do funil; o funil fica simétrico e o fantasminha faz cara de flagrado.",
+      "cena": "Callback: atrás do funil aparece um arquivo de escritório; o Viés abre a gaveta e dela pulam bolinhas pequenas que preenchem o canto vazio do funil; o funil fica simétrico e o fantasminha faz cara de flagrado.",
       "foco": "50% 45%",
       "alt": null
     },
@@ -4664,8 +4664,8 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-09-28",
-    "gancho_pt": "Cachoeira linda, água de graça e uma pera de óculos no cantil",
-    "vinheta_en": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool microscopy shows pear-shaped flagellated trophozoites.",
+    "gancho_pt": "Cachoeira linda, água de graça e um passageiro escondido no cantil",
+    "vinheta_en": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool is negative for blood and leukocytes.",
     "pergunta_en": "Which organism is most likely responsible?",
     "alternativas": [
       {
@@ -4697,8 +4697,8 @@
       "pegadinha_de_prova": "O NBME cobra a esteatorreia sem sangue depois de água de riacho ou de creche, a deficiência de IgA como fator de risco e o tratamento com tinidazol ou metronidazol."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; pequenas criaturas em forma de pera, com dois olhinhos que parecem óculos e caudinhas, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a campsite beside a pretty waterfall with a simple road sign post nearby; tiny pear-shaped creatures with two round eyes that look like eyeglasses and several thin wavy tails surf down the waterfall and dive into an open water canteen left on a rock; Macrô watches from the riverbank, eyebrows raised. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
+      "conceito_visual": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; sombrinhas borradas e misteriosas, sem forma definida, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, bold rounded navy outlines, brand palette of navy #0B1F3A, red #B5162B and white, with small green and yellow accents, plain light paper background. Recurring character: Macrô, a round pale-lilac macrophage blob with short pseudopods, big expressive eyes, a red-and-white checkered napkin tied at the neck and a small blank ID badge hanging from it. Scene: a campsite beside a pretty waterfall with a simple road sign post nearby; tiny mysterious creatures drawn only as soft blurry shadow silhouettes, with no visible shape or features, surf down the waterfall and dive into an open water canteen left on a rock; Macrô watches from the riverbank, eyebrows raised. Vertical 4:5 composition: characters and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4714,7 +4714,7 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Cachoeira linda, água de graça e uma pera de óculos no cantil\n\nHomem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. No exame de fezes, trofozoítos flagelados em forma de pera. Qual é o agente?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Microbiologia #Parasitologia #QuestaoDoDia #RoadToAmerica",
+    "legenda_questao_pt": "Cachoeira linda, água de graça e um passageiro escondido no cantil\n\nHomem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. Fezes sem sangue e sem leucócitos. Qual é o agente?\n\nComente A, B, C ou D e salve para revisar no Remix de Domingo. O gabarito sai amanhã às 12h, junto com a próxima questão.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Microbiologia #Parasitologia #QuestaoDoDia #RoadToAmerica",
     "legenda_explicacao_pt": "Gabarito do dia 330: letra A, Giardia lamblia.\n\nDiarreia gordurosa, fétida e sem sangue, com distensão e gases, em quem bebeu de um riacho sem ferver nem filtrar, é giardiasis. A Giardia lamblia (G. duodenalis) gruda no duodeno pelo disco ventral, atrapalha a absorção de gordura e não invade, por isso não há sangue nem febre. O diagnóstico é por antígeno ou PCR nas fezes, ou pelo achado de cistos e trofozoítos, e as opções de tratamento incluem tinidazol, metronidazol e nitazoxanida.\n\nMacete: Giardia é a pera de óculos que gruda de ventosa no duodeno: a gordura passa direto e as fezes boiam.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Diarreia gordurosa após água de riacho?",
@@ -4731,11 +4731,11 @@
       "medica": "",
       "humor_compliance": ""
     },
-    "gancho": "Cachoeira linda, água de graça e *uma pera de óculos no cantil*",
-    "gancho_apoio": "O Macrô recebeu um visitante que nadou rio abaixo e grudou no duodeno.",
+    "gancho": "Cachoeira linda, água de graça e *um passageiro escondido no cantil*",
+    "gancho_apoio": "O Macrô recebeu um visitante que desceu a cachoeira de carona no cantil.",
     "imagem": {
       "arquivo": "dia-330.png",
-      "cena": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; pequenas criaturas em forma de pera, com dois olhinhos que parecem óculos e caudinhas, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
+      "cena": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; sombrinhas borradas e misteriosas, sem forma definida, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
       "foco": "50% 35%",
       "alt": null
     },
@@ -4746,7 +4746,7 @@
       "alt": null
     },
     "questao": {
-      "vinheta": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool microscopy shows pear-shaped flagellated trophozoites.",
+      "vinheta": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool is negative for blood and leukocytes.",
       "pergunta": "Which organism is most likely responsible?",
       "alternativas": {
         "A": {
@@ -4791,7 +4791,7 @@
       }
     },
     "legenda": {
-      "contexto": "Homem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. No exame de fezes, trofozoítos flagelados em forma de pera. Qual é o agente?",
+      "contexto": "Homem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. Fezes sem sangue e sem leucócitos. Qual é o agente?",
       "palavras_chave": null,
       "hashtags": [
         "#USMLEStep1",
