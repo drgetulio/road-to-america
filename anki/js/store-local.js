@@ -569,6 +569,8 @@ export class LocalStore {
       presenca: this.db.presenca[id] || null,
       plano: this.db.planos[id] || null,
       configuracoes: this.db.configuracoes[id] || null,
+      respostas: (this.db.respostas || []).filter((r) => r.user_id === id),
+      simuladosCompletos: (this.db.simuladosCompletos || []).filter((s) => s.user_id === id),
       agora
     });
   }

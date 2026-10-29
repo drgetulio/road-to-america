@@ -88,8 +88,12 @@ function maisRecente(...ds) {
   plano: { data_prova_step1, data_prova_step2ck, step1_aprovado, step2ck_aprovado,
            data_matricula, ciclo_basico_concluido_em } ou null
   configuracoes: ajustes do app de flashcards (dataProva vira data do Step 1 se faltar)
+  respostas: linhas de respostas_item (banco de questões, simulados completos e blocos
+    de 30 minutos); só respondida_em entra, na última atividade
+  simuladosCompletos: registros de simulados_completos; só atualizado_em entra, na
+    última atividade (um dia de prova parado no meio ainda não gravou respostas)
 */
-export function resumirParticipante({ perfil, revlog = [], estados = [], oficiais = [], simulados = [], nbme = [], presenca = null, plano = null, configuracoes = null, sintetico = false, agora = new Date() }) {
+export function resumirParticipante({ perfil, revlog = [], estados = [], oficiais = [], simulados = [], nbme = [], presenca = null, plano = null, configuracoes = null, respostas = [], simuladosCompletos = [], sintetico = false, agora = new Date() }) {
   const hoje = dayStart(agora);
   const ini7 = addDays(hoje, -6).getTime();
   const ini30 = addDays(hoje, -29).getTime();
@@ -172,6 +176,9 @@ export function resumirParticipante({ perfil, revlog = [], estados = [], oficiai
   };
 
   const ultimaNbme = nb.length ? nb[nb.length - 1].data : null;
+  /* banco de questões e simulados completos também são estudo: sem eles, quem só
+     resolve questões apareceria como inativo e acenderia o risco de inatividade */
+  const ultimaQuestao = maisRecente(...respostas.map((r) => r.respondida_em || r.criado_em), ...simuladosCompletos.map((s) => s.atualizado_em));
   return {
     user_id: perfil.id,
     nome: perfil.nome || "",
@@ -198,7 +205,7 @@ export function resumirParticipante({ perfil, revlog = [], estados = [], oficiai
     simulados: sim,
     nbme: nb,
     presenca: pres,
-    ultima_atividade: maisRecente(ultima === null ? null : ultima, sim.step1.ultimo_em, sim.step2ck.ultimo_em, ultimaNbme ? parseData(ultimaNbme) : null)
+    ultima_atividade: maisRecente(ultima === null ? null : ultima, sim.step1.ultimo_em, sim.step2ck.ultimo_em, ultimaNbme ? parseData(ultimaNbme) : null, ultimaQuestao)
   };
 }
 

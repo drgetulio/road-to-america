@@ -234,3 +234,14 @@ test("validação e normalização da NBME", () => {
   assert.equal(n.modo, "standard");
   assert.equal(n.faixa_acima_aprovacao_baixa, null);
 });
+
+test("última atividade conta o banco de questões e os simulados completos", async () => {
+  const { resumirParticipante } = await import("../js/desempenho.js");
+  const agora = new Date("2026-10-29T15:00:00Z");
+  const perfil = { id: "u1", nome: "Teste", criado_em: "2026-01-01T00:00:00Z" };
+  assert.equal(resumirParticipante({ perfil, agora }).ultima_atividade, null, "sem nada, nunca estudou");
+  const r = resumirParticipante({ perfil, agora, respostas: [{ respondida_em: "2026-10-28T10:00:00Z" }, { respondida_em: "2026-10-20T10:00:00Z" }] });
+  assert.equal(r.ultima_atividade, "2026-10-28T10:00:00.000Z");
+  const c = resumirParticipante({ perfil, agora, respostas: [{ respondida_em: "2026-10-28T10:00:00Z" }], simuladosCompletos: [{ atualizado_em: "2026-10-29T09:00:00Z" }] });
+  assert.equal(c.ultima_atividade, "2026-10-29T09:00:00.000Z", "dia de prova parado no meio, ainda sem respostas gravadas");
+});

@@ -275,7 +275,9 @@ O dia de estudo vira às 4h no fuso do navegador, como no app de flashcards.
   },
   nbme: [NBME resumida, em ordem de data],  // id, step, formulario, modo, data, escore, escore_texto, probabilidade, faixa_acima_aprovacao_baixa, verificada, criado_em
   presenca: { aulas_assistidas, aulas_totais, percentual, atualizado_em } | null,
-  ultima_atividade   // mais recente entre revisão, simulado e data de NBME; null se nunca houve
+  ultima_atividade   // mais recente entre revisão de card, simulado de 30 minutos, data de NBME,
+                     // resposta no banco de questões (respostas_item.respondida_em) e simulado
+                     // completo (simulados_completos.atualizado_em); null se nunca houve
 }
 ```
 
@@ -429,7 +431,7 @@ Testar localmente (Postgres puro):
 ```bash
 createdb r2a
 psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
-# o bloco final precisa mostrar "falhas | 0" (185 verificações: P1 a P9 da plataforma, Q1 a Q10 do banco de questões)
+# o bloco final precisa mostrar "falhas | 0" (187 verificações: P1 a P9 da plataforma, Q1 a Q10 do banco de questões)
 node supabase/teste-local/03-compara-resumo.mjs   # precisa terminar em "Diferenças: 0"
 node supabase/teste-local/04-compara-itens.mjs    # precisa terminar em "Diferenças: 0"
 ```
@@ -554,6 +556,7 @@ entrar no banco: `sistema`, `disciplina` e `competencia` no Step 1; `sistema`, `
 | `recalibrarRasch(respostas, itens, { tau, priori_theta, max_iter, tol, ancoragem, ancorarEm })` | `{ itens: [{ id, b_angoff, b, ep, n, acertos }], pessoas, iteracoes, convergiu, deslocamento, parametros }` |
 | `regressaoLogistica(X, y)`, `ajustarDesfechos(registros)`, `probAprovacaoDesfechos(modelo, { theta, dp })`, `ajustarEscore(registros)`, `preverEscore(modelo, { theta, dp }, limiar)`, `montarDadosDesfechos(desfechos, respostasPorUsuario, itens)` | desfechos reais |
 | `bDeAngoff(a)`, `bDoItem(item, { usarCalibrado })`, `expit`, `logit`, `normalCdf`, `informacao`, `informacaoMedia`, `correlacao`, `auc` | utilidades |
+| `textoProbabilidade(p)` | texto único da probabilidade de aprovação em todas as telas: inteiro, `< 1%` e `> 99%` nas pontas, uma casa decimal só quando o arredondamento cruzaria 10% ou 90% (os cortes da alta confiança); `sem dados` quando não há número |
 | `simularRespostas({ thetas, bs, random })`, `normalAleatoria(random)` | simulação para testes (recebem o gerador) |
 | `PRIORI_PADRAO`, `GRADE_PADRAO`, `REGRA_CONFIANCA`, `PESOS_MODO`, `LIMIARES_ITEM`, `RECALIBRACAO_PADRAO`, `DESFECHOS_PADRAO`, `PADRAO_STEP2CK`, `DIMENSOES_PERFIL` | parâmetros do método |
 
@@ -773,7 +776,11 @@ desfaz o único conflito de nome (`.painel`).
 
 ## Onde o banco aparece
 
+- rodapé de `index.html`: "Banco de questões" (`questoes/`) e "Simulados"
+  (`simulado/#/completos`), ao lado de "Simulado de 30 minutos";
 - menu da área do aluno (`anki/js/menu.js`): item "Questões";
+- menu da área administrativa (`admin/js/app.js`): item "Questões";
+- cabeçalho e rodapé do Conteúdo do Step 1 (gerados por `tools/build-conteudo-step1.cjs`);
 - cabeçalho do simulado: link "Questões";
 - "Meu progresso" (`anki/js/views/progresso.js`): cartão com a probabilidade de cada
   Step pelo banco, o rótulo de confiança, os itens que faltam e a área que mais derruba
@@ -832,3 +839,70 @@ pontos (θ na data do desfecho e resultado ou nota) usados no ajuste, para os gr
 
 As respostas fictícias seguem o gabarito em vigor: depois de uma correção de gabarito,
 elas passam a ser corrigidas pela letra nova.
+
+
+---
+
+# Produto integrado: espaço do aluno e espaço da equipe
+
+Acréscimo de 29/10/2026. As cinco áreas (flashcards, banco de questões, simulados, Meu
+progresso e área administrativa) usam a mesma conta, a mesma camada de dados e as mesmas
+funções de estimativa; esta seção lista o que liga uma à outra.
+
+## Navegação
+
+| Página | Leva a |
+|---|---|
+| `index.html` (rodapé) | flashcards, simulado de 30 minutos, banco de questões, simulados completos, Conteúdo do Step 1 |
+| `anki/` e `questoes/` (menu comum, `anki/js/menu.js`) | todas as telas dos flashcards, Questões, Simulado, Conteúdo do Step 1 e, para o admin, Rendimento |
+| `simulado/` (cabeçalho) | flashcards, Questões, Conteúdo do Step 1 |
+| `admin/` (menu) | telas da equipe, Flashcards, Questões, Simulado, Conteúdo do Step 1 |
+| `conteudo-step1.html` (cabeçalho e rodapé) | flashcards, Questões, Simulado e simulados completos |
+
+## A mesma probabilidade em todas as telas
+
+A probabilidade de aprovação pelo banco sai sempre de `estimarAluno` com todas as
+respostas do aluno no Step (banco, simulados completos e blocos de 30 minutos) e aparece
+com `textoProbabilidade` em: placa e painel do banco (`questoes/#/`, `#/aprovacao`),
+cartão de "Meu progresso", indicador de `simulado/#/completos`, ficha do participante e
+lista de participantes na área administrativa. O relatório de cada simulado completo
+mostra a estimativa daquele dia (só os itens do formulário) e, abaixo, a geral.
+
+## Simulados completos fora da página do simulado
+
+- "Meu progresso" (`anki/#/progresso`), seção "Simulados completos":
+  `listSimuladosCompletos({})` do próprio aluno; em andamento (com o bloco e o link
+  "Continuar" para `simulado/#/dia/<id>`) e encerrados (acertos, probabilidade guardada no
+  fim do dia e link para o relatório). A linha usa `linhaHistorico` de
+  `simulado/js/relatorio.js`, a mesma do histórico da página do simulado.
+- Ficha do participante (`admin/#/p/<id>`), seção "Simulados completos":
+  `listSimuladosCompletos({ userId })`, com a mesma linha e o link para o relatório.
+- Relatório aberto pela equipe (`simulado/#/relatorio/<id>` com `reg.user_id` diferente
+  da conta aberta): a estimativa geral, os itens já vistos e a EXIT 18 usam
+  `listRespostas({ step, userId: reg.user_id })` e `listNbme({ step, userId })`, e o
+  relatório avisa que foi aberto pela equipe.
+
+## Última atividade
+
+`resumirParticipante` recebe `respostas` e `simuladosCompletos` (no `LocalStore`, os da
+própria conta), e `r2a_resumo_interno` lê `respostas_item` e `simulados_completos`. Sem
+isso, quem estuda só pelo banco ou pelos simulados completos aparecia como "Nunca
+estudou" e acendia o risco de inatividade. A função SQL é criada com
+`check_function_bodies` desligado só na sua definição, porque as duas tabelas aparecem
+mais abaixo em `schema.sql`. `03-compara-resumo.mjs` confere a paridade com uma resposta
+recente, uma antiga e um simulado completo.
+
+## Teste do percurso inteiro
+
+```bash
+AXE_PATH=/caminho/axe.min.js node plataforma/tests/produto.e2e.mjs [pasta-das-capturas]
+```
+
+Um navegador, modo demonstração, banco sintético no tamanho oficial servido no lugar de
+`banco-privado/`: rodapé do site; bloco personalizado pelo formulário do banco; Step 1
+completo com bloco 1, pausa com saldo, bloco 2 pelo tempo, parada, volta por "Meu
+progresso", retomada e blocos 3 a 14 pelo tempo (relógio acelerado); relatório; a mesma
+probabilidade no banco, em "Meu progresso", nos simulados completos e na ficha do
+admin, com 290 itens; análise de itens e ficha do item; relatório aberto pela equipe;
+links e navegação das cinco áreas; axe-core e rolagem horizontal em 1440 e 390 px nos dois
+temas; nenhum erro de console. São 13 etapas.

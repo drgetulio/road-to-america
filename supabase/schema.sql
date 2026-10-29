@@ -820,6 +820,11 @@ create policy plataforma_config_update on public.plataforma_config for update to
 -- plataforma/js/desempenho.js). Uso interno: só as funções abaixo chamam.
 -- O dia de estudo vira às 4h no fuso p_tz, como no app.
 -- ---------------------------------------------------------------------------
+-- A última atividade inclui respostas_item e simulados_completos, criadas mais abaixo
+-- neste arquivo. A função é language sql e o Postgres conferiria o corpo agora, antes
+-- dessas tabelas existirem na primeira execução; a conferência fica desligada só para
+-- esta definição (os nomes são resolvidos na chamada, como faz o pg_dump).
+set check_function_bodies = off;
 create or replace function public.r2a_resumo_interno(p_ids uuid[], p_tz text default 'America/Sao_Paulo', p_agora timestamptz default now())
 returns setof jsonb
 language sql
@@ -922,6 +927,19 @@ as $$
     from public.nbme_autoavaliacoes
     where user_id = any (p_ids)
     group by user_id
+  ),
+  -- banco de questões, simulados completos e blocos de 30 minutos também são estudo
+  qi as (
+    select user_id, max(respondida_em) as ultima
+    from public.respostas_item
+    where user_id = any (p_ids)
+    group by user_id
+  ),
+  sc as (
+    select user_id, max(atualizado_em) as ultima
+    from public.simulados_completos
+    where user_id = any (p_ids)
+    group by user_id
   )
   select jsonb_build_object(
     'user_id', p.id,
@@ -968,7 +986,7 @@ as $$
       'aulas_totais', pr.aulas_totais,
       'percentual', case when pr.aulas_totais > 0 then round(pr.aulas_assistidas::numeric / pr.aulas_totais, 6) end,
       'atualizado_em', pr.atualizado_em) end,
-    'ultima_atividade', greatest(ra.ultima, sj.ultimo, (nb.ultima_data + time '12:00') at time zone p_tz)
+    'ultima_atividade', greatest(ra.ultima, sj.ultimo, (nb.ultima_data + time '12:00') at time zone p_tz, qi.ultima, sc.ultima)
   )
   from public.profiles p
   cross join ofc
@@ -978,12 +996,15 @@ as $$
   left join est es on es.user_id = p.id
   left join sim_j sj on sj.user_id = p.id
   left join nb on nb.user_id = p.id
+  left join qi on qi.user_id = p.id
+  left join sc on sc.user_id = p.id
   left join public.presenca pr on pr.user_id = p.id
   left join public.plano_participante pl on pl.user_id = p.id
   left join public.configuracoes cfg on cfg.user_id = p.id
   where p.id = any (p_ids)
   order by p.nome, p.id;
 $$;
+reset check_function_bodies;
 
 -- Ninguém chama a função interna diretamente pela API
 revoke all on function public.r2a_resumo_interno(uuid[], text, timestamptz) from public, anon, authenticated;

@@ -316,6 +316,10 @@ await etapa("5a. admin: análise de itens com as respostas do aluno e ficha do i
 await etapa("5b. admin: ficha do participante com a mesma probabilidade, o simulado completo e o relatório", async () => {
   await page.goto(base + "/admin/#/p/demo-participante");
   await page.getByRole("heading", { name: "Participante (demonstração)" }).waitFor();
+  /* quem só resolveu questões não aparece como inativo (banco e simulado contam como estudo) */
+  const ultima = await page.locator('dt:text-is("Última atividade") + dd').innerText();
+  assert.doesNotMatch(ultima, /Nunca estudou/, "última atividade: " + ultima);
+  assert.doesNotMatch(await page.locator('section[aria-labelledby="mot-t"]').innerText(), /Sem estudo registrado|Nenhum estudo registrado/, "sem risco de inatividade");
   const bq = page.locator('section[aria-labelledby="bq-t"]');
   await bq.locator(".bq__card").first().waitFor();
   const card = bq.locator(".bq__card").first();
