@@ -8,22 +8,23 @@
   "topico": "Doença de Chagas",
   "conceito": "Chagas disease: Trypanosoma cruzi destroys the myenteric plexus, megaesophagus and megacolon",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial da Doença de Chagas (14/4).",
   "remix_de": null,
   "explicacao_em": "2027-04-15",
   "tom": null,
   "gancho": "Esôfago, cólon e coração: quem ligou o modo *mega*?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Três anos de disfagia, intestino preso e um ECG com dois bloqueios.",
   "imagem": {
     "arquivo": "dia-164.png",
-    "cena": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro. No quintal, três mangueiras de jardim enroladas com fiozinhos coloridos, e uma tesourinha esquecida no parapeito da janela, sem dono à vista.",
+    "cena": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro. No quintal, três mangueiras de jardim enroladas com fiozinhos coloridos, e uma tesourinha esquecida no parapeito da janela. Seu Allen, de avental navy, examina os fios; setinhas de manual apontam para eles.",
     "foco": "50% 35%",
-    "alt": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro."
+    "alt": "Casa de adobe ao entardecer; no quintal, três mangueiras com fiozinhos coloridos e Seu Allen examinando."
   },
   "imagem_macete": {
     "arquivo": "dia-164-macete.png",
-    "cena": "O barbeiro cortou os fiozinhos das mangueiras, e elas incharam como balões gigantes: um tubo comprido (esôfago), um tubo em laço (cólon) e um balão em forma de coração. Modo mega ligado.",
-    "alt": "Trypanosoma cruzi: o modo mega"
+    "cena": "O barbeiro cortou os fiozinhos das mangueiras, e elas incharam como balões gigantes: um tubo comprido (esôfago), um tubo em laço (cólon) e um balão em forma de coração. Uma fitinha verde e amarela na porta homenageia Carlos Chagas.",
+    "alt": "Sem os fiozinhos, as três mangueiras viram balões gigantes; uma fitinha verde e amarela enfeita a porta."
   },
   "questao": {
     "vinheta": "A 52-year-old man who grew up in an adobe house in rural Bolivia has 3 years of progressive dysphagia to solids and liquids, regurgitation, and chronic constipation. Barium swallow shows a dilated esophagus with distal bird's-beak narrowing. His ECG has a right bundle branch block plus a left anterior fascicular block.",
@@ -65,9 +66,9 @@
       "C": "Na esclerose sistêmica o esfíncter esofágico inferior fica frouxo, com refluxo, e não estreito em bico de pássaro."
     },
     "macete": {
-      "frase": "O *barbeiro* corta os fios do plexo mioentérico e os tubos viram balão: *mega*esôfago, *mega*cólon e coração grande. Chagas é o modo *mega*, descrito por um brasileiro, Carlos Chagas, em 1909.",
-      "apoio": "O NBME junta disfagia com bico de pássaro a bloqueio de ramo direito, cardiomiopatia dilatada ou megacólon em quem morou na América Latina rural; na fase aguda e em jovens, o tratamento é benznidazol ou nifurtimox.",
-      "fala": null
+      "frase": "O *barbeiro* corta os fios do plexo mioentérico e todo tubo vira *mega*",
+      "apoio": "Descrita por um brasileiro, Carlos Chagas, em 1909. Na fase aguda e em jovens, benznidazol ou nifurtimox.",
+      "fala": "Sobrou peça? Faltaram os fios do plexo. Sem eles, todo tubo vira balão."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Megaesôfago e bloqueio de ramo. Causa?"
+    "pergunta": "Esôfago dilatado, constipação e bloqueio de ramo após infância rural: causa?"
   },
   "cta": "simulado",
   "exemplo": false

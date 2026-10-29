@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-28",
   "tom": null,
-  "gancho": "Cachoeira linda, água de graça e *um passageiro escondido no cantil*",
+  "gancho": "Água de cachoeira de graça: *a conta chega em duas semanas, parcelada*",
   "gancho_apoio": "O Macrô recebeu um visitante que desceu a cachoeira de carona no cantil.",
   "imagem": {
     "arquivo": "dia-330.png",
-    "cena": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; sombrinhas borradas e misteriosas, sem forma definida, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
+    "cena": "Macrô na beira de uma cachoeira num acampamento, com a comanda em branco no bolso, enche um cantil; sombrinhas borradas e misteriosas descem a cachoeira surfando e entram no cantil aberto; numa pedra, uma maquininha de cartão solta uma fita de recibo em branco que não acaba mais.",
     "foco": "50% 35%",
-    "alt": "Cachoeira linda, água de graça e um passageiro escondido no cantil"
+    "alt": "Água de cachoeira de graça: a conta chega em duas semanas, parcelada"
   },
   "imagem_macete": {
     "arquivo": "dia-330-macete.png",
-    "cena": "Callback: as criaturas em forma de pera estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Macrô oferece uma chaleira fervendo e um filtro de barro.",
+    "cena": "Callback: criaturas em forma de pera, com dois núcleos que parecem olhos, estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Macrô oferece uma chaleira fervendo e um filtro de barro.",
     "foco": "50% 45%",
     "alt": "Água de riacho e gordura nas fezes: Giardia"
   },
@@ -66,9 +66,9 @@
       "D": "*Cyclospora* causa diarreia aquosa prolongada ligada a frutas e verduras frescas e mostra oocistos ácido-resistentes."
     },
     "macete": {
-      "frase": "*Giardia é a pera de óculos que gruda de ventosa no duodeno*: a gordura passa direto e as fezes boiam",
-      "apoio": "Na imagem, as peras de óculos (os dois núcleos parecem olhos) grudam com ventosas no tapete de vilosidades, e as gotas de óleo passam boiando sem ser absorvidas. Cachoeira bonita, água fervida ou filtrada.",
-      "fala": null
+      "frase": "*Giardia é a pera de óculos que gruda de ventosa no duodeno*: a gordura passa direto e boia",
+      "apoio": "Os dois núcleos parecem óculos e o disco ventral é a ventosa que gruda nas vilosidades e atrapalha a absorção de gordura: diarreia gordurosa, fétida, que boia, sem sangue e sem leucócitos. Pega pela água de riacho sem tratar. Entamoeba dá sangue; Cryptosporidium pesa no imunossuprimido. Cachoeira linda, água fervida ou filtrada.",
+      "fala": "Essa pera eu não comi."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Diarreia gordurosa após água de riacho?"
+    "pergunta": "Bebeu água de riacho e há 2 semanas tem diarreia gordurosa que boia: qual?"
   },
   "cta": null,
   "reel": null,

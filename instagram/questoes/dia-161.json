@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: SCID por deficiência de ADA (dia 71), HPV e câncer do colo do útero (dia 127), Cólera (dia 155)",
   "conceito": "Remix: ADA-deficient SCID + HPV 16 and 18 oncogenesis + Vibrio cholerae toxin",
   "personagem": null,
+  "anfitriao": "Macrô",
   "gancho_data": null,
   "remix_de": [
     71,
@@ -16,40 +17,38 @@
   ],
   "explicacao_em": "2027-04-12",
   "tom": null,
-  "gancho": "Remix de domingo: três mecanismos e um *impostor* na pista",
-  "gancho_apoio": null,
+  "gancho": "Teste do pezinho com *zero TREC*: o bebê está ótimo, o exame não. Quem travou?",
+  "gancho_apoio": "Remix com SCID por ADA (dia 71), HPV (dia 127) e cólera (dia 155).",
   "imagem": {
     "arquivo": "dia-161.png",
-    "cena": "Toca-discos com três discos de rótulos coloridos (uma fábrica com a chaminé entupida, uma célula com dois cadeados e um interruptor de luz) e um quarto disco impostor de bigode falso e óculos escuros.",
+    "cena": "Macrô, de lupa e com a comanda em branco no bolso, percorre um corredor com três portas: uma com um interruptor de luz, uma com uma bicicleta de dois freios encostada e uma com uma pilha de tijolinhos de montar. Num canto do corredor, um pequeno vinil.",
     "foco": "50% 35%",
-    "alt": "Toca-discos com três discos de rótulos coloridos (uma fábrica com a chaminé entupida, uma célula com dois cadeados e um interruptor de luz) e um quarto disco impostor de bigode fal"
+    "alt": "Macrô de lupa num corredor com três portas: interruptor de luz, bicicleta de dois freios e tijolinhos de montar."
   },
   "imagem_macete": {
     "arquivo": "dia-161-macete.png",
-    "cena": "O disco da fábrica entupida toca e brilha verde, com engrenagens travadas por bolinhas (o dATP na ribonucleotídeo redutase). Os discos dos cadeados e do interruptor ganham um risco vermelho (pares trocados) e o impostor perde o bigode.",
-    "alt": "ADA: o dATP entope a fábrica de DNA"
+    "cena": "A porta dos tijolinhos se abre: a esteira que monta DNA está entupida de bolinhas (dATP) e parada. Macrô, de capacete de obra, aponta; a porta do interruptor ganha um X vermelho.",
+    "alt": "Atrás da porta dos tijolinhos, a esteira de montar DNA está entupida de bolinhas; Macrô de capacete aponta."
   },
   "questao": {
-    "vinheta": "A student reviews four mechanism flashcards from the last two months before an exam. Only one of them is accurate.",
-    "pergunta": "Which flashcard is correct?",
+    "vinheta": "A 4-week-old girl is referred because her newborn screen showed undetectable T-cell receptor excision circles. She is feeding well. Flow cytometry shows very low T, B and NK cells, and chest x-ray shows flared, cupped costochondral junctions. Her parents are first cousins.",
+    "pergunta": "Which mechanism best explains her lymphopenia?",
     "alternativas": {
       "A": {
-        "texto": "Pertussis toxin permanently activates Gs",
-        "quiz": "Pertussis ativa Gs"
+        "texto": "Defective RAG-mediated V(D)J recombination",
+        "quiz": "Falta de RAG"
       },
       "B": {
-        "texto": "HPV 16 E6 protein binds and inactivates Rb",
-        "quiz": "HPV: E6 inativa Rb",
-        "dia": 127
+        "texto": "Mutation of the IL-2 receptor common gamma chain",
+        "quiz": "Cadeia gama comum"
       },
       "C": {
-        "texto": "Cholera toxin ADP-ribosylates Gi",
-        "quiz": "Cólera: ribosila Gi",
-        "dia": 155
+        "texto": "Defective BTK-dependent B-cell maturation",
+        "quiz": "Defeito na BTK"
       },
       "D": {
-        "texto": "Adenosine deaminase deficiency: excess dATP inhibits ribonucleotide reductase",
-        "quiz": "ADA: dATP trava RNR",
+        "texto": "Toxic dATP accumulation inhibiting DNA synthesis",
+        "quiz": "dATP tóxico (ADA)",
         "dia": 71
       }
     },
@@ -58,28 +57,27 @@
   "explicacao": {
     "titulo": "ADA: o *dATP* entope a fábrica de DNA",
     "certa": [
-      "Sem *adenosine deaminase*, a desoxiadenosina vira excesso de *dATP* dentro dos linfócitos. O dATP inibe a *ribonucleotide reductase*, falta desoxirribonucleotídeo para copiar DNA e os linfócitos T e B não proliferam: *SCID* autossômica recessiva."
+      "Sem adenosina desaminase (ADA), a desoxiadenosina vira excesso de dATP dentro dos linfócitos. O dATP inibe a ribonucleotídeo redutase, falta desoxirribonucleotídeo para copiar DNA, e T, B e NK não proliferam: SCID autossômica recessiva, que atinge meninas e meninos. Pais primos combinam com herança recessiva, as junções costocondrais alargadas são uma pista clássica da ADA, e o TREC indetectável na triagem neonatal mostra que quase não saem linfócitos T novos do timo."
     ],
     "termos": [
-      "adenosine deaminase",
+      "adenosine deaminase deficiency",
       "dATP",
       "ribonucleotide reductase",
-      "E6 and p53",
-      "E7 and Rb"
+      "severe combined immunodeficiency"
     ],
     "erradas": {
-      "A": "Impostor: a pertussis ribosila a Gi e tira o freio da adenilato ciclase; ela não ativa a Gs.",
-      "B": "Dia 127: no HPV, a E6 degrada a p53 e a E7 inativa a Rb; o cartão trocou as duas.",
-      "C": "Dia 155: a toxina da cólera ribosila a Gs e a deixa ligada; quem mexe na Gi é a pertussis."
+      "A": "A falta de RAG1 ou RAG2 impede a recombinação V(D)J e derruba T e B, mas poupa as células NK, que não recombinam receptor; aqui as NK também estão baixas.",
+      "B": "a SCID pela cadeia gama comum é ligada ao X, em meninos, e costuma ter células B presentes (T e NK baixos, B normal).",
+      "C": "A falta de BTK (agamaglobulinemia ligada ao X) poupa os linfócitos T, o TREC e o timo, e aparece em meninos."
     },
     "macete": {
-      "frase": "*ADA* entope a fábrica de DNA com dATP. *E7* derruba o *Rb* de Rebelde (sete letras), e a p53 fica para a E6. A cólera *cola* a Gs no ON; a pertussis rouba o freio Gi.",
-      "apoio": "No remix, o NBME troca pares parecidos (E6 e E7, Gs e Gi) para ver se você guardou o mecanismo ou só o nome.",
-      "fala": null
+      "frase": "*ADA* em greve: o lixo *dATP* entope a fábrica de DNA do linfócito",
+      "apoio": "Bônus: cólera cola a Gs no ON; E6 com p53, E7 com Rb. T, B e NK baixos numa menina não combinam com a forma ligada ao X.",
+      "fala": "Bebê ótimo, exame péssimo: o dATP já estava travando a fábrica."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com três mecanismos de Step 1 que já passaram por aqui (dias 71, 127 e 155) e um impostor. Só um cartão está certo do começo ao fim.",
+    "contexto": "Remix de Domingo: menina de 4 semanas, mamando bem, encaminhada porque a triagem neonatal não achou TREC. Linfócitos T, B e NK muito baixos, junções costocondrais alargadas e pais primos. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -87,7 +85,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual mecanismo está certo?"
+    "pergunta": "Triagem sem TREC, T, B e NK baixos e costelas alargadas: qual mecanismo?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

@@ -8,6 +8,7 @@
   "topico": "Tratamento fútil",
   "conceito": "Request for nonbeneficial treatment: no obligation to provide it, involve the ethics committee",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-10",
@@ -16,13 +17,13 @@
   "gancho_apoio": "UTI, família pedindo ECMO e uma equipe que não vê benefício.",
   "imagem": {
     "arquivo": "dia-342.png",
-    "cena": "Uma balança de tribunal desenhada como placa de trânsito: num prato, uma máquina enorme cheia de tubos transparentes vazios; no outro, uma manta macia e um abajur aceso; o Viés espia de longe, atrás de uma tabela 2x2.",
+    "cena": "A Dona Bússola, serena, ao lado de uma balança de tribunal desenhada como placa de trânsito: num prato, uma máquina enorme cheia de tubos transparentes vazios; no outro, uma manta macia e um abajur aceso; na parede, uma tabela 2x2 em branco num quadrinho. Tom calmo.",
     "foco": "50% 35%",
     "alt": "Pedir tudo é humano. Oferecer tudo, nem sempre."
   },
   "imagem_macete": {
     "arquivo": "dia-342-macete.png",
-    "cena": "Callback: uma mesa redonda com cadeiras vazias, um bule de chá e xícaras, a balança em equilíbrio no centro e a manta e o abajur em destaque; a máquina grande fica desligada num canto.",
+    "cena": "Callback: uma mesa redonda com cadeiras vazias, um bule de chá e xícaras, a balança em equilíbrio no centro e a manta e o abajur em destaque; a máquina grande fica desligada num canto e o ponteiro da Dona Bússola aponta para a manta.",
     "foco": "50% 45%",
     "alt": "Tratamento sem benefício: não há obrigação de oferecer"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Conversa, comitê, conforto*",
-      "apoio": "Na balança desenhada como placa de trânsito, o peso de uma máquina grande sem benefício não vence o cuidado. Primeiro a conversa sobre objetivos, depois o comitê de ética, e o conforto o tempo todo.",
-      "fala": null
+      "apoio": "Na balança, o peso de uma máquina sem benefício não vence o cuidado. O médico não é obrigado a oferecer tratamento que não alcança o objetivo; primeiro vem a conversa sobre objetivos, depois a consultoria de ética, e o conforto o tempo todo.",
+      "fala": "O conforto também é tratamento."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Família exige ECMO sem benefício:"
+    "pergunta": "UTI sem chance de alta e o marido exige ECMO: qual a conduta?"
   },
   "cta": "simulado",
   "reel": null,

@@ -8,21 +8,22 @@
   "topico": "Doença arterial periférica",
   "conceito": "Peripheral artery disease: ankle-brachial index below 0.9",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-27",
   "tom": null,
   "gancho": "Ele para em toda vitrine. *Não é para comprar.*",
-  "gancho_apoio": "Dor na panturrilha ao andar que melhora parado em pé.",
+  "gancho_apoio": "Dor na panturrilha ao andar dois quarteirões, que melhora parado em pé.",
   "imagem": {
     "arquivo": "dia-359.png",
-    "cena": "Uma calçada com vitrines de padaria cheias de pães e bolos, pegadas que param diante de cada vitrine e uma mangueira de jardim que vai afinando ao longo do meio-fio; acima, a placa verde de rodovia com três saídas.",
+    "cena": "Calçada de madrugada diante de uma padaria 24 horas, com um relógio sem números nas 3 horas lá dentro; pegadas param diante de cada vitrine cheia de pães e bolos; uma mangueira de jardim vai afinando ao longo do meio-fio; a Dona Térmica, de prancheta, segue as pegadas.",
     "foco": "50% 35%",
     "alt": "Ele para em toda vitrine. Não é para comprar."
   },
   "imagem_macete": {
     "arquivo": "dia-359-macete.png",
-    "cena": "Callback: dois manguitos de pressão, um no pé de um banco em forma de tornozelo e outro num poste em forma de braço, ligados a uma balança que pende para o braço; a mangueira estreita aparece em destaque.",
+    "cena": "Callback: dois manguitos de pressão, um no pé de um banco em forma de tornozelo e outro num poste em forma de braço, ligados a uma balança que pende para o braço; a mangueira estreita aparece em destaque e a Dona Térmica confere a prancheta.",
     "foco": "50% 45%",
     "alt": "Claudicação: o primeiro exame é o ankle-brachial index"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Doença da vitrine*: anda, dói, para, melhora",
-      "apoio": "Na calçada da padaria, quem tem claudicação para em cada vitrine até a dor passar. O ITB compara tornozelo com braço: abaixo de 0,9 tem obstrução. Quem melhora só sentado ou empurrando carrinho de supermercado pensa na coluna.",
-      "fala": null
+      "apoio": "Claudicação é o único motivo honesto para parar em toda vitrine da padaria. O ITB compara a pressão do tornozelo com a do braço: abaixo de 0,9 há obstrução, e é o primeiro exame. Com diabetes, artéria calcificada pode dar ITB acima de 1,4 e pedir o índice do dedo. Quem melhora só sentado ou empurrando carrinho de supermercado pensa na coluna.",
+      "fala": "Já vi esse caso às 3 da manhã, parado na vitrine."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Claudicação nas panturrilhas. 1º exame:"
+    "pergunta": "Fumante, dor na panturrilha ao andar que passa parado: qual 1º exame?"
   },
   "cta": "simulado",
   "reel": null,

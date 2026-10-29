@@ -8,21 +8,22 @@
   "topico": "Epifisiólise femoral proximal",
   "conceito": "Slipped capital femoral epiphysis: adolescent with hip or knee pain, surgical pinning",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-10",
   "tom": null,
-  "gancho": "O joelho reclama, mas o problema *pode estar em outro andar*",
-  "gancho_apoio": "No rodízio de quinta, o garçom traz a sobremesa que escorregou.",
+  "gancho": "Dói no joelho, mas *a conta veio do andar de cima*",
+  "gancho_apoio": "Dor no joelho de adolescente é igual boleto: a origem está sempre em outro lugar.",
   "imagem": {
     "arquivo": "dia-312.png",
-    "cena": "Garçom de rodízio com um espeto de sobremesa: uma casquinha de sorvete em que a bola está escorregando para trás; ao fundo, uma bola de futebol e um campinho. As plaquinhas verde e vermelha estão no bolso do avental.",
+    "cena": "Garçom Espetinho numa festa de aniversário de um time de futebol de garotos olha para o teto: uma goteira pinga do andar de cima bem em cima de uma joelheira esquecida numa cadeira; na outra mão, um espeto de sobremesa com uma casquinha de sorvete ainda embrulhada no guardanapo; ao fundo, uma bola e um campinho; a plaquinha verde e vermelha no bolso do avental.",
     "foco": "50% 35%",
-    "alt": "O joelho reclama, mas o problema pode estar em outro andar"
+    "alt": "Dói no joelho, mas a conta veio do andar de cima"
   },
   "imagem_macete": {
     "arquivo": "dia-312-macete.png",
-    "cena": "Callback: o garçom crava um espeto de metal atravessando a bola de sorvete e a casquinha, fixando a bola onde ela parou, sem empurrar de volta; ele levanta a plaquinha verde. A bola de futebol descansa num banco.",
+    "cena": "Callback: o garçom desembrulha a casquinha e a bola de sorvete escorregou para trás; ele crava um espeto de metal atravessando a bola e a casquinha, fixando a bola onde ela parou, sem empurrar de volta; ele levanta o lado verde da plaquinha e a bola de futebol descansa num banco.",
     "foco": "50% 45%",
     "alt": "Dor no joelho do adolescente: examine o quadril"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Sorvete escorregou da casquinha? Não empurra de volta*: espeta no lugar",
-      "apoio": "A bola de sorvete é a epífise que escorregou da casquinha (o colo do fêmur). O garçom crava um espeto e fixa como está, que é o parafuso in situ. E toda dor no joelho de adolescente pede exame do quadril.",
-      "fala": null
+      "apoio": "A bola de sorvete é a epífise que escorregou da casquinha (o colo do fêmur). O garçom crava um espeto e fixa como está: parafuso in situ, sem tentar reduzir. Rotação externa obrigatória ao fletir o quadril é a assinatura, e todo joelho de adolescente que dói pede exame do quadril.",
+      "fala": "Vai uma conduta aí? Parafuso, sem empurrar."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Joelho dói, quadril roda para fora: qual?"
+    "pergunta": "13 anos, dor no joelho e quadril que roda para fora ao fletir: qual?"
   },
   "cta": null,
   "reel": null,

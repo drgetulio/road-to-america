@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-14",
   "tom": null,
-  "gancho": "O sódio subiu 9 em 6 horas. Seu Néfron carimba o quê?",
-  "gancho_apoio": null,
+  "gancho": "O sódio subiu 9 em 6 horas e *você comemorou*. O Seu Néfron, não",
+  "gancho_apoio": "Tiazídico suspenso, soro correndo e 2 litros de urina clarinha. O carimbo é outro.",
   "imagem": {
     "arquivo": "dia-163.png",
-    "cena": "Seu Néfron na escrivaninha, com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Na mesa, um saleiro e um relógio de parede sem números.",
+    "cena": "Seu Néfron, na escrivaninha de plantão com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Na mesa, um saleiro; na parede, um relógio sem números com os ponteiros nas 3.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron na escrivaninha, com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar."
+    "alt": "Seu Néfron, de olho num bebedouro que jorra água sem parar; relógio sem números marca 3 horas."
   },
   "imagem_macete": {
     "arquivo": "dia-163-macete.png",
-    "cena": "Um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira; Seu Néfron, de radar na mão, puxa uma alavanca verde de freio e tem ao lado um copo de água com açúcar e um spray nasal, o freio do sódio.",
-    "alt": "Sódio acima da velocidade: freia com DDAVP e água livre"
+    "cena": "Um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira; Seu Néfron, de radar na mão, puxa uma alavanca verde de freio. Na mesinha ao lado, um copo de água com açúcar e um spray nasal.",
+    "alt": "Seu Néfron, de radar, freia o carrinho-saleiro antes da ponte; ao lado, água com açúcar e um spray nasal."
   },
   "questao": {
     "vinheta": "A 74-year-old woman taking hydrochlorothiazide has 4 days of fatigue and mild confusion without seizures. Serum sodium is 116 mEq/L. The thiazide is stopped and isotonic saline is started. Six hours later, she has produced 2 L of dilute urine and serum sodium is 125 mEq/L.",
@@ -65,9 +65,9 @@
       "D": "A tolvaptana aumenta a eliminação de água livre e subiria o sódio ainda mais rápido."
     },
     "macete": {
-      "frase": "Do baixo para o alto rápido demais, a *ponte* cai (pons). Seu Néfron é o radar da estrada: no máximo *8* por dia no carimbo, e quem passou disso leva multa de *DDAVP com soro glicosado*.",
-      "apoio": "O NBME mostra o sódio subindo rápido por diurese aquosa (parou o tiazídico, repôs volume, tratou a causa) e quer que você reconheça a hipercorreção; a desmielinização aparece dias depois, com disartria, disfagia e tetraparesia.",
-      "fala": null
+      "frase": "Do baixo para o alto rápido demais, a *ponte* cai (pons): no máximo *8 por dia* no carimbo",
+      "apoio": "Passou do limite por diurese aquosa: freia com desmopressina e soro glicosado a 5%. A desmielinização aparece dias depois.",
+      "fala": "Do baixo para o alto rápido demais, quem cai é a ponte. Multa: DDAVP e soro glicosado."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Na subiu 9 em 6 h. O que fazer agora?"
+    "pergunta": "Sódio de 116 para 125 em 6 horas, com diurese aquosa: o que fazer agora?"
   },
   "cta": "simulado",
   "exemplo": false

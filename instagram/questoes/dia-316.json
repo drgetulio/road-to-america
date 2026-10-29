@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-14",
   "tom": null,
-  "gancho": "Dia Mundial da Sepse: *quem tocou a campainha do Macrô?*",
-  "gancho_apoio": "Quatro campainhas na porta do boteco e só uma dispara o alarme do choque.",
+  "gancho": "Quatro interfones no prédio do Macrô: *qual acordou o condomínio?*",
+  "gancho_apoio": "Dia Mundial da Sepse. Pielonefrite, choque, sangramento nas punções e um bastão gram-negativo na hemocultura.",
   "imagem": {
     "arquivo": "dia-316.png",
-    "cena": "Macrô na porta do boteco dos micróbios; na parede, quatro campainhas de formatos diferentes; diante delas, uma bactéria em forma de bastão, de jaqueta dupla, carrega três coisas: uma longa serpentina de açúcar, um chicotinho na cauda e um novelo de barbante. Qual delas vai tocar a campainha?",
+    "cena": "Macrô de porteiro noturno na portaria de um prédio, com a comanda em branco no bolso, ao lado de um painel com quatro botões de interfone de formatos diferentes; na porta, uma bactéria em bastão, de jaqueta de duas camadas, carrega uma serpentina longa de açúcar, um chicotinho na cauda e um novelo de barbante.",
     "foco": "50% 35%",
-    "alt": "Dia Mundial da Sepse: quem tocou a campainha do Macrô?"
+    "alt": "Quatro interfones no prédio do Macrô: qual acordou o condomínio?"
   },
   "imagem_macete": {
     "arquivo": "dia-316-macete.png",
-    "cena": "Callback: a âncora de duas pontas na base da serpentina encaixa exatamente na campainha de tomada de duas pontas e aperta; o Macrô, assustado, dispara três sirenes vermelhas que acendem as janelas do prédio.",
+    "cena": "Callback: a âncora de duas pontas na base da serpentina aperta o botão de interfone de encaixe igual; o Macrô dá um pulo e dispara três sirenes vermelhas que acendem todas as janelas do prédio.",
     "foco": "50% 45%",
     "alt": "Endotoxina: lipid A toca a campainha do TLR4"
   },
@@ -66,9 +66,9 @@
       "D": "*DNA CpG não metilado* é reconhecido pelo TLR9 dentro do endossomo e não é a endotoxina."
     },
     "macete": {
-      "frase": "*Lipid A é o dedo na campainha do TLR4*: o Macrô acorda o prédio inteiro",
-      "apoio": "Na imagem, a âncora da serpentina de açúcar (o lipid A) aperta a única campainha com o encaixe certo, e o Macrô dispara três sirenes de alarme: IL-1, IL-6 e TNF.",
-      "fala": null
+      "frase": "*Lipídio A é o dedo no interfone do TLR4*: acorda o condomínio inteiro",
+      "apoio": "O LPS da parede gram-negativa tem o lipid A, que encaixa no TLR4 (com CD14 e MD-2) do macrófago. O interfone dispara IL-1, IL-6 e TNF, e a festa termina em choque e CIVD, como na vinheta. Ácido lipoteicoico é TLR2 (gram-positivo), flagelina é TLR5 e CpG é TLR9.",
+      "fala": "Comi, mostrei, avisei. O prédio inteiro ouviu."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Choque por gram-negativo: quem dispara?"
+    "pergunta": "Choque séptico com hemocultura gram-negativa: quem disparou a resposta?"
   },
   "cta": null,
   "reel": null,

@@ -8,21 +8,22 @@
   "topico": "Diretivas antecipadas",
   "conceito": "Advance directive vs durable power of attorney for health care: written wishes vs designated surrogate",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-03",
   "tom": null,
   "gancho": "Ele não pode decidir: *quem fica com o controle remoto?*",
-  "gancho_apoio": "Um documento antigo, dois parentes e uma decisão a tomar.",
+  "gancho_apoio": "Um documento assinado anos atrás, uma parente nomeada, um filho e um respirador.",
   "imagem": {
     "arquivo": "dia-335.png",
-    "cena": "Sala de estar com uma TV desligada, um controle remoto sobre uma almofada de veludo e, ao redor, um caderno de roteiro fechado e uma claquete de cinema vazia, duas poltronas viradas uma para a outra.",
+    "cena": "Sala de estar com a Dona Bússola no braço do sofá; a TV está desligada e um controle remoto descansa numa almofada de veludo; duas poltronas estão viradas uma para a outra; numa gaveta entreaberta, um envelope lacrado; na estante, uma tabela 2x2 em branco num porta-retratos.",
     "foco": "50% 35%",
     "alt": "Ele não pode decidir: quem fica com o controle remoto?"
   },
   "imagem_macete": {
     "arquivo": "dia-335-macete.png",
-    "cena": "Callback: o controle remoto foi entregue numa bandeja para a cadeira de diretor com fita verde, ao lado de um envelope lacrado e assinado; as duas poltronas agora estão viradas para a TV.",
+    "cena": "Callback: o controle remoto foi entregue numa bandeja para uma cadeira de diretor de cinema com fita verde, ao lado do envelope lacrado; as duas poltronas agora estão viradas para a TV e o ponteiro da Dona Bússola aponta para a cadeira de diretor.",
     "foco": "50% 45%",
     "alt": "Procurador nomeado decide: durable power of attorney"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Diretiva é o roteiro; procurador é o diretor*",
-      "apoio": "No set de filmagem, o roteiro escrito (living will) diz o que fazer; quando a cena não está no roteiro, decide o diretor que o paciente escolheu, e não automaticamente o parente mais próximo. O controle remoto da imagem vai para a cadeira do diretor.",
-      "fala": null
+      "apoio": "O roteiro escrito (living will) diz o que fazer; quando a cena não está no roteiro, decide o diretor que o paciente escolheu (o health care proxy), e não automaticamente o parente mais próximo. O filho pode reclamar do canal, mas quem aperta o controle é quem foi nomeado.",
+      "fala": "Meu norte é o paciente, mesmo quando ele não pode falar."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Inconsciente, sobrinha nomeada. Quem decide?"
+    "pergunta": "Intubado, documento nomeando uma parente e filho discordando: quem decide?"
   },
   "cta": "simulado",
   "reel": null,

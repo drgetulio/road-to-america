@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-03-28",
   "tom": null,
-  "gancho": "Estudo que olha *pelo retrovisor* calcula o quê?",
-  "gancho_apoio": "O Viés está escondido atrás da tabela 2x2 esperando você escolher a medida errada.",
+  "gancho": "Tabela 2x2 de sábado: quatro números, duas medidas e um fantasma *torcendo contra*",
+  "gancho_apoio": "O Viés está escondido atrás da tabela esperando você escolher a medida errada.",
   "imagem": {
     "arquivo": "dia-146.png",
-    "cena": "O Viés, o fantasminha da estatística, espia por trás de uma tabela 2x2 em branco. De um lado passa um trenzinho para a frente; do outro, um carro com um retrovisor enorme.",
+    "cena": "O Viés, o fantasminha da estatística, espia por trás de uma tabela 2x2 em branco. De um lado passa um trenzinho para a frente; do outro, um carro com um retrovisor enorme. O fantasminha cruza os dedos.",
     "foco": "50% 35%",
-    "alt": "Fantasminha Viés atrás de uma tabela 2x2 em branco; de um lado um trem, do outro um carro com retrovisor enorme."
+    "alt": "Viés atrás de uma tabela 2x2 em branco; de um lado um trem, do outro um carro com retrovisor enorme."
   },
   "imagem_macete": {
     "arquivo": "dia-146-macete.png",
-    "cena": "Callback: o Viés segura o retrovisor do carro, que reflete a tabela 2x2 com as duas diagonais ligadas por um grande X verde. O trem da coorte segue para a frente, ao fundo.",
+    "cena": "O Viés segura o retrovisor do carro, que reflete a tabela 2x2 com as duas diagonais ligadas por um grande X verde. O trem da coorte segue para a frente, ao fundo.",
     "foco": "50% 40%",
     "alt": "O Viés segura o retrovisor, que reflete a tabela 2x2 com um X verde nas diagonais; o trem segue ao fundo."
   },
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "Coorte anda *de trem para a frente* (RR); caso-controle olha *pelo retrovisor* (OR)",
-      "apoio": "Na imagem, o Viés segura o retrovisor enquanto o trem da coorte segue adiante.",
-      "fala": null
+      "apoio": "OR = ad/bc, o X das diagonais. Com doença rara, a OR se aproxima do RR.",
+      "fala": "Escolheu a amostra pela doença? Então não tem incidência. Quem calcula risco relativo aqui faz o meu sábado."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação bioestatística. Uma tabela, quatro números e uma pergunta: que estudo é esse e o que ele calcula?",
+    "contexto": "Sábado Sem Viés, estação bioestatística. Cem pessoas com fratura de quadril, duzentas sem, e o uso de IBP contado nos dois grupos. Qual medida esse estudo permite, e qual é o valor?",
     "palavras_chave": [
       "hip fracture",
       "proton pump inhibitors",
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Caso-controle: qual medida e valor?"
+    "pergunta": "100 com fratura, 200 sem; IBP em 60 e em 50: qual medida e qual valor?"
   },
   "cta": null,
   "reel": null,

@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-07",
   "tom": null,
-  "gancho": "Plástico bolha estalando no músculo: *qual arma o bastão gigante usou?*",
-  "gancho_apoio": "O Macrô chegou para trabalhar e encontrou o salão vazio de neutrófilos.",
+  "gancho": "Plástico bolha relaxa todo mundo, *menos quando está dentro da coxa*",
+  "gancho_apoio": "Acidente de moto, terra na ferida e o Macrô chegou para um plantão sem colegas de defesa.",
   "imagem": {
     "arquivo": "dia-309.png",
-    "cena": "Macrô na porta do boteco dos micróbios, de bandeja na mão, olhando um bastão retangular gigante, em forma de vagão, que sopra bolhas num sofá listrado em forma de fibra muscular; o sofá estala como plástico bolha. O salão está quase vazio de células de defesa.",
+    "cena": "Macrô num galpão de entregas, com a comanda em branco no bolso, olha um bastão retangular gigante, em forma de vagão, sentado num sofá listrado em forma de fibra muscular cujas almofadas são de plástico bolha e estalam; a fileira de cadeiras das células de defesa está vazia; no chão, a marca de pneu de moto na lama.",
     "foco": "50% 35%",
-    "alt": "Plástico bolha estalando no músculo: qual arma o bastão gigante usou?"
+    "alt": "Plástico bolha relaxa todo mundo, menos quando está dentro da coxa"
   },
   "imagem_macete": {
     "arquivo": "dia-309-macete.png",
-    "cena": "Callback: o bastão gigante segura uma faquinha e corta ao meio uma gema de ovo frito, que escorre sobre uma parede feita de fileiras de bolinhas com caudas (a membrana); o Macrô aponta para uma placa de Petri amarelada no balcão.",
+    "cena": "Callback: o bastão gigante, de chapéu de cozinheiro, corta ao meio uma gema de ovo frito, que escorre sobre uma parede feita de fileiras de bolinhas com duas caudas (a membrana); o Macrô aponta para uma placa de Petri amarelada no balcão.",
     "foco": "50% 45%",
     "alt": "Gangrena gasosa: a alpha toxin é uma lecitinase"
   },
@@ -66,9 +66,9 @@
       "D": "*Bloquear a glicina* das células de Renshaw é a tetanospasmina do C. tetani, que causa espasmo e trismo, não necrose com gás."
     },
     "macete": {
-      "frase": "*Perfringens corta a gema*: lecitinase é a faca na lecitina da membrana",
-      "apoio": "Na imagem, o bastão gigante corta uma gema de ovo (rica em lecitina) como se fosse a parede da célula, e o músculo estala como plástico bolha. Gema é a pista da placa de ágar com gema de ovo do laboratório.",
-      "fala": null
+      "frase": "*C. perfringens é o cozinheiro que só pede gema*: a lecitinase quebra a lecitina da membrana",
+      "apoio": "A alpha toxin é uma fosfolipase C: corta a lecitina das membranas do músculo, da hemácia e do neutrófilo, e por isso o Gram mostra tão pouca célula de defesa. No laboratório, a pista é a placa de ágar com gema de ovo (reação de Nagler). No hospital, centro cirúrgico já para desbridar, com penicilina e clindamicina.",
+      "fala": "Esse aí chegou de faca e garfo."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Crepitação e bastão gram-positivo: qual?"
+    "pergunta": "Crepitação, pele bronzeada e bastões grandes no Gram: qual a arma?"
   },
   "cta": null,
   "reel": null,

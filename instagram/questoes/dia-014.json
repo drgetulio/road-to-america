@@ -30,25 +30,25 @@
     "alt": "Malha fina no teste do pezinho"
   },
   "questao": {
-    "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. To miss fewer affected infants, the program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
+    "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. The program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
     "pergunta": "Which change in screening performance is most likely?",
     "alternativas": {
       "A": {
         "texto": "Higher specificity and fewer false-positive recalls",
-        "quiz": "Mais específico, menos falsos"
+        "quiz": "Espec.↑, menos falsos +"
       },
       "B": {
-        "texto": "Lower sensitivity for 21-hydroxylase deficiency",
-        "quiz": "Menos sensível para 21-OH",
+        "texto": "Lower sensitivity and more missed 21-hydroxylase cases",
+        "quiz": "Sens.↓, mais casos perdidos",
         "dia": 10
       },
       "C": {
-        "texto": "Higher positive predictive value of a positive screen",
-        "quiz": "VPP maior"
+        "texto": "Higher sensitivity and higher positive predictive value",
+        "quiz": "Sens.↑ e VPP↑"
       },
       "D": {
         "texto": "Higher sensitivity and more false-positive recalls",
-        "quiz": "Mais sensível, mais falsos +",
+        "quiz": "Sens.↑, mais falsos +",
         "dia": 13
       }
     },
@@ -67,8 +67,8 @@
     ],
     "erradas": {
       "A": "É o contrário: baixar o corte derruba a especificidade e aumenta os falsos positivos.",
-      "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe, não cai.",
-      "C": "Com mais falsos positivos entre os positivos, o valor preditivo positivo cai, como a malha fina que traz chinelo junto com o peixe."
+      "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe e menos casos escapam.",
+      "C": "A sensibilidade sobe, mas o VPP cai: com mais falsos positivos entre os positivos, a malha fina traz chinelo junto com o peixe."
     },
     "macete": {
       "frase": "Régua mais baixa no pezinho é malha fina de novo: pega *todo bebê com o forno 21 quebrado* e chama de volta quem só nasceu cedo.",

@@ -8,23 +8,24 @@
   "topico": "Tuberculose primária",
   "conceito": "Primary tuberculosis: Ghon complex with caseating granuloma",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial da Tuberculose (24/3).",
   "remix_de": null,
   "explicacao_em": "2027-03-25",
   "tom": null,
-  "gancho": "Dia Mundial da Tuberculose: um *gol* no campo de baixo",
-  "gancho_apoio": "O bacilo marcou no pulmão e o zagueiro do hilo levou a bola junto.",
+  "gancho": "Dia Mundial da Tuberculose: o bacilo entrou pelo *térreo* e deixou recado no porão",
+  "gancho_apoio": "Menino sem sintomas, avô com tuberculose e uma TC que conta a história em dois cômodos.",
   "imagem": {
     "arquivo": "dia-143.png",
-    "cena": "Meio campo de futebol em forma de pulmão. Um bacilo em forma de bastão, de boné vermelho, chuta a bola para a parte de baixo do campo, perto da lateral, e o goleiro está posicionado perto do centro (hilo).",
+    "cena": "Seu Allen monta a maquete de uma casa em forma de pulmão, estilo manual de montagem. Um visitante em forma de bastão, de boné vermelho, entra pela janela do térreo, perto da parede lateral, e setinhas de manual apontam para o corredor que desce até o porão do centro.",
     "foco": "50% 35%",
-    "alt": "Campo de futebol em forma de pulmão; um bacilo de boné chuta a bola para a parte de baixo, perto da lateral."
+    "alt": "Seu Allen monta uma casa em forma de pulmão; um bastão de boné vermelho entra pela janela do térreo."
   },
   "imagem_macete": {
     "arquivo": "dia-143-macete.png",
-    "cena": "Callback: no ponto do gol, perto da lateral, aparece uma rodinha de queijo minas cercada por uma roda de macrófagos de mãos dadas; outra rodinha igual aparece na área do hilo, ligada à primeira por uma trilha pontilhada.",
+    "cena": "No cômodo do térreo, perto da parede, aparece uma rodinha de queijo minas cercada por macrófagos de mãos dadas; outra rodinha igual surge no porão do centro (hilo), ligada à primeira por uma trilha pontilhada. Seu Allen aperta o último parafuso.",
     "foco": "50% 40%",
-    "alt": "Duas rodinhas de queijo cercadas por macrófagos: uma perto da lateral e outra no hilo, ligadas por uma trilha."
+    "alt": "Duas rodinhas de queijo cercadas por macrófagos: uma no térreo, perto da parede, e outra no porão do hilo."
   },
   "questao": {
     "vinheta": "A 7-year-old boy has a positive tuberculin skin test after his grandfather is diagnosed with pulmonary tuberculosis. He is asymptomatic, with normal vital signs. Chest CT shows a small subpleural nodule in the lower right lung field with enlarged ipsilateral hilar lymph nodes.",
@@ -66,13 +67,13 @@
       "D": "A sarcoidose dá linfonodos hilares dos dois lados, com granulomas não caseosos, e é rara nessa idade."
     },
     "macete": {
-      "frase": "Ghon = *gol no campo de baixo + zagueiro do hilo*, recheio de queijo",
-      "apoio": "Na imagem, o gol e a área do hilo viram duas rodas de queijo minas cercadas de macrófagos.",
-      "fala": null
+      "frase": "Ghon é *visita no térreo + recado no porão do hilo*, com recheio de queijo",
+      "apoio": "A reativação sobe para o ápice, onde tem mais oxigênio, e costuma cavitar.",
+      "fala": "Sobrou peça? Não: são duas, o foco e o linfonodo. Juntas, isso é Ghon."
     }
   },
   "legenda": {
-    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose. Na Quarta do Porquê, uma criança assintomática, um avô com tuberculose e um achado de imagem que conta a história.",
+    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose. Na Quarta do Porquê, uma criança assintomática com PPD positivo, um nódulo pequeno embaixo da pleura e um linfonodo aumentado no hilo do mesmo lado.",
     "palavras_chave": [
       "positive tuberculin skin test",
       "household contact",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo subpleural e hilo: qual o diagnóstico?"
+    "pergunta": "Criança com PPD positivo, nódulo subpleural basal e hilo aumentado: qual?"
   },
   "cta": null,
   "reel": null,

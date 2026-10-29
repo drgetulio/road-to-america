@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-25",
   "tom": null,
-  "gancho": "Aquário do olho transbordando: *fechar a torneira ou abrir o ralo?*",
-  "gancho_apoio": "A Tia Meia-Vida tem dois colírios no balcão e um deles chegou até o coração.",
+  "gancho": "Pingou no olho e *o recado chegou no coração*",
+  "gancho_apoio": "A Tia Meia-Vida tem dois colírios no balcão, e um deles fofoca mais que cidade pequena.",
   "imagem": {
     "arquivo": "dia-327.png",
-    "cena": "Tia Meia-Vida atrás do balcão da farmácia, com dois conta-gotas nas mãos, olha um aquário redondo em forma de olho que está quase transbordando; o aquário tem uma torneira em cima e um ralo pequeno na lateral.",
+    "cena": "Tia Meia-Vida atrás do balcão, com dois conta-gotas nas mãos, olha um aquário redondo em forma de olho quase transbordando; o aquário tem uma torneira em cima e um ralo pequeno na lateral; pela janela, uma pracinha de cidade do interior com um coreto.",
     "foco": "50% 35%",
-    "alt": "Aquário do olho transbordando: fechar a torneira ou abrir o ralo?"
+    "alt": "Pingou no olho e o recado chegou no coração"
   },
   "imagem_macete": {
     "arquivo": "dia-327-macete.png",
-    "cena": "Callback: a Tia Meia-Vida fecha a torneira de cima com um conta-gotas e abre o ralo lateral com o outro, e o nível da água desce; ao lado da torneira, um metrônomo em forma de coração balança devagar.",
+    "cena": "Callback: a Tia Meia-Vida fecha a torneira de cima com um conta-gotas e abre o ralo lateral com o outro, e o nível da água desce; um pombo-correio sai do aquário com um bilhete em branco e voa até um metrônomo em forma de coração no coreto, que passa a balançar devagar.",
     "foco": "50% 45%",
     "alt": "Timolol fecha a torneira, latanoprost abre o ralo"
   },
@@ -66,9 +66,9 @@
       "D": "A *inibição da anidrase carbônica* (dorzolamida) também reduz a produção do humor aquoso, mas não causa bradicardia."
     },
     "macete": {
-      "frase": "*Timolol fecha a Torneira; Latanoprost Libera o raLo*, e o beta-bloqueador do colírio chega ao coração",
-      "apoio": "Na imagem, a Tia Meia-Vida fecha a torneira do aquário com um colírio e abre o ralo lateral com o outro. O metrônomo em forma de coração ao lado da torneira bate mais devagar.",
-      "fala": null
+      "frase": "*Timolol fecha a Torneira; Latanoprost Libera o raLo*, e o recado do timolol chega ao coração",
+      "apoio": "O timolol reduz a produção do humor aquoso; o latanoprost abre a drenagem uveoescleral. O colírio cai no ducto nasolacrimal, é absorvido sem passar pelo fígado e chega ao coração: bradicardia, cansaço e broncoespasmo. Igual fofoca de cidade pequena, chega no coração antes de você. Apertar o canto do olho por um minuto diminui o recado.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. A cidade inteira já sabe."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Colírio novo e pulso 52: qual mecanismo?"
+    "pergunta": "Colírio novo no glaucoma e pulso caiu de 74 para 52: qual o mecanismo?"
   },
   "cta": null,
   "reel": null,

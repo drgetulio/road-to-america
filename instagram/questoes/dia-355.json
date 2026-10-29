@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-23",
   "tom": null,
-  "gancho": "Clássico no estádio do coração: *por que a torcida sumiu?*",
-  "gancho_apoio": "Angina, nitroglicerina sublingual e um remédio novo para a próstata.",
+  "gancho": "Dia de clássico no estádio do coração: *por que a torcida sumiu?*",
+  "gancho_apoio": "Angina, nitroglicerina sublingual e um remédio novo para a próstata na mesma tarde.",
   "imagem": {
     "arquivo": "dia-355.png",
-    "cena": "Tia Meia-Vida no balcão da farmácia; pela janela, um estádio de futebol em forma de coração recebe uma fila de carrinhos vermelhos; sobre o balcão, duas caixinhas de remédio sem rótulo.",
+    "cena": "Tia Meia-Vida no balcão da farmácia; pela janela, um estádio de futebol em forma de coração recebe uma fila de carrinhos vermelhos em dia de clássico; sobre o balcão, duas caixinhas de remédio sem rótulo.",
     "foco": "50% 35%",
-    "alt": "Clássico no estádio do coração: por que a torcida sumiu?"
+    "alt": "Dia de clássico no estádio do coração: por que a torcida sumiu?"
   },
   "imagem_macete": {
     "arquivo": "dia-355-macete.png",
-    "cena": "Callback: estacionamentos enormes nas bordas da cidade guardam os carrinhos, e o estádio fica calmo; quando um segundo estacionamento se abre, o estádio esvazia e a Tia Meia-Vida levanta a mão com um cone vermelho.",
+    "cena": "Callback: estacionamentos enormes nas bordas da cidade guardam os carrinhos e o estádio joga tranquilo; quando um segundo estacionamento se abre, o estádio esvazia e a Tia Meia-Vida levanta a mão com um cone vermelho.",
     "foco": "50% 45%",
     "alt": "Nitrato: cGMP, venodilation e queda da pré-carga"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Nitrato abre estacionamento longe do estádio*",
-      "apoio": "As veias são estacionamentos gigantes: com nitrato, os carros (o sangue) ficam lá e menos torcedores chegam ao estádio do coração, que joga mais tranquilo. Com o inibidor da PDE-5 junto, os dois abrem estacionamento e o estádio fica vazio: hipotensão grave.",
-      "fala": null
+      "apoio": "As veias são estacionamentos gigantes: com nitrato (mais cGMP e venodilatação), os carros ficam lá, a pré-carga cai e o coração joga com menos torcida. O inibidor da PDE-5 também segura o cGMP alto; os dois juntos abrem estacionamento demais e a pressão despenca. Nitrato e tadalafila na mesma tarde: o único clássico que termina com o estádio vazio.",
+      "fala": "Do tadalafila, a pressão lembra."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Nitrato + tadalafil. Qual mecanismo?"
+    "pergunta": "Nitroglicerina duas horas após tadalafila e PA 74/40: qual o mecanismo?"
   },
   "cta": "simulado",
   "reel": null,

@@ -8,6 +8,7 @@
   "topico": "Insuficiência cardíaca com fração reduzida",
   "conceito": "HFrEF mortality pillars: ARNI or ACE inhibitor, beta-blocker, MRA and SGLT2 inhibitor",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-31",
@@ -16,15 +17,15 @@
   "gancho_apoio": "Três já estão na roda. Qual instrumento falta para fechar o samba?",
   "imagem": {
     "arquivo": "dia-149.png",
-    "cena": "Uma roda de pagode no fundo de quintal: um coração simpático canta no centro, três músicos tocam cavaquinho, pandeiro e surdo, e uma cadeira de plástico está vazia com um tantã encostado. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+    "cena": "Uma roda de pagode no fundo de quintal: um coração simpático canta no centro, três músicos tocam cavaquinho, pandeiro e surdo, e uma cadeira de plástico está vazia com um tantã encostado. Dona Térmica serve cafezinho na mesa, e o relógio da cozinha, sem números, marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Roda de pagode com um coração cantando, três músicos e uma cadeira vazia com um tantã encostado."
+    "alt": "Roda de pagode com um coração cantando, três músicos e uma cadeira vazia; Dona Térmica serve café."
   },
   "imagem_macete": {
     "arquivo": "dia-149-macete.png",
-    "cena": "Callback: chega o quarto músico, um cubinho de açúcar simpático que sai pela porta carregando o tantã, senta na cadeira vazia e a roda fecha. O coração canta sorrindo.",
+    "cena": "Chega o quarto músico, um cubinho de açúcar simpático carregando o tantã, senta na cadeira vazia e a roda fecha. O coração canta sorrindo, e Dona Térmica bate palma.",
     "foco": "50% 40%",
-    "alt": "Um cubinho de açúcar chega com o tantã, senta na cadeira vazia e completa a roda de pagode."
+    "alt": "Um cubinho de açúcar chega com o tantã, senta na cadeira vazia e completa a roda; Dona Térmica bate palma."
   },
   "questao": {
     "vinheta": "A 64-year-old man has ischemic cardiomyopathy, an LVEF of 30% and NYHA class II symptoms; he is euvolemic. He takes sacubitril-valsartan, carvedilol, spironolactone and furosemide as needed. BP 112/70 mm Hg; heart rate 62/min in sinus rhythm. eGFR is 55 mL/min/1.73 m2.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "ICFER é *pagode de quatro*: ARNI, beta, ARM e iSGLT2",
-      "apoio": "Na imagem, o quarto músico chega, senta na cadeira vazia e a roda fecha.",
-      "fala": null
+      "apoio": "Diurético e digoxina ajudam no sintoma e na internação, não na sobrevida.",
+      "fala": "Pagode de três é ensaio. Com quatro, vira sobrevida."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça: insuficiência cardíaca com fração reduzida, três remédios em dose certa e uma pergunta sobre sobrevida.",
+    "contexto": "Plantão de Terça: insuficiência cardíaca com fração reduzida, três remédios em dose certa e uma pergunta sobre sobrevida.",
     "palavras_chave": [
       "ischemic cardiomyopathy",
       "LVEF 30%",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "ICFER com 3 pilares: o que falta?"
+    "pergunta": "FE 30% com sacubitril-valsartana, carvedilol e espironolactona: o que falta?"
   },
   "cta": null,
   "reel": null,

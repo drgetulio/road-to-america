@@ -8,22 +8,23 @@
   "topico": "Estenose hipertrófica de piloro",
   "conceito": "Pyloric stenosis: hypochloremic hypokalemic metabolic alkalosis, ultrasound confirms",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-16",
   "tom": null,
-  "gancho": "Bebê faminto e vômito em jato: qual exame *fecha* o caso?",
-  "gancho_apoio": null,
+  "gancho": "Vômito em jato, fome logo depois e uma *azeitona* escondida. Qual exame acha?",
+  "gancho_apoio": "Primeiro filho, 4 semanas e um cloro lá embaixo. O Garçom Espetinho está de olho no chafariz.",
   "imagem": {
     "arquivo": "dia-165.png",
-    "cena": "O garçom do rodízio apresenta um espeto com uma única azeitona verde; na mesa, uma mamadeira e a plaquinha verde e vermelha. Ao fundo, um chafariz de jardim faz um arco forte de água.",
+    "cena": "Num parque, ao lado de um chafariz que solta um arco forte de água, o Garçom Espetinho segura um espeto com uma única azeitona verde. No banco, uma mamadeira cheia e a plaquinha verde e vermelha, de lado.",
     "foco": "50% 35%",
-    "alt": "O garçom do rodízio apresenta um espeto com uma única azeitona verde; na mesa, uma mamadeira e a plaquinha verde e vermelha."
+    "alt": "Garçom Espetinho num parque com um espeto de uma azeitona; ao lado, um chafariz soltando um arco forte de água."
   },
   "imagem_macete": {
     "arquivo": "dia-165-macete.png",
     "cena": "Uma sonda de ultrassom em forma de lupa examina a azeitona e revela por dentro um anel grosso, como uma rosquinha de parede espessa; a plaquinha vira verde. Uma fatia de limão (o ácido perdido) e uma bananinha (o potássio) saem voando.",
-    "alt": "Quem acha a azeitona é o ultrassom"
+    "alt": "Uma sonda de ultrassom revela o anel grosso dentro da azeitona; limão e bananinha saem voando."
   },
   "questao": {
     "vinheta": "A 4-week-old firstborn boy has had forceful, nonbilious vomiting after every feed for 5 days and seems hungry right after vomiting. He has fewer wet diapers. Serum chemistry: Na+ 134, K+ 3.0, Cl- 88, and HCO3- 33 mEq/L.",
@@ -65,22 +66,22 @@
       "C": "A TC expõe o lactente à radiação sem acrescentar nada e não faz parte da investigação."
     },
     "macete": {
-      "frase": "*Azeitona* na barriga, *jato* na mamada e gasometria *alcalina*: o bebê perde o ácido (HCl) e o rim, para segurar volume, entrega K e H. Quem acha a azeitona é o *ultrassom*.",
-      "apoio": "O NBME cobra a ordem: corrigir desidratação e alcalose com soro antes da piloromiotomia, que não é cirurgia de emergência, e lembra a eritromicina no lactente pequeno como fator de risco.",
-      "fala": null
+      "frase": "*Azeitona* na barriga, *jato* na mamada e gasometria *alcalina*: quem acha a azeitona é o *ultrassom*",
+      "apoio": "Corrigir desidratação e alcalose com soro antes da piloromiotomia, que não é cirurgia de emergência. Eritromicina no lactente pequeno é fator de risco.",
+      "fala": "Azeitona no espeto é comigo. Azeitona no piloro, só o ultrassom acha."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na pediatria. Primeiro filho, 4 semanas, vômito forte depois de toda mamada e fome logo em seguida. Olhe o cloro e o bicarbonato antes de escolher o exame.",
+    "contexto": "Rodízio de Quinta na pediatria. Primeiro filho, 4 semanas, vômito forte e não bilioso depois de toda mamada, fome logo em seguida e menos fraldas molhadas. Olhe o cloro e o bicarbonato antes de escolher o exame.",
     "palavras_chave": [
       "nonbilious vomiting",
       "4-week-old",
       "hungry after vomiting",
-      "metabolic alkalosis"
+      "low serum chloride"
     ]
   },
   "quiz": {
-    "pergunta": "Vômito em jato e alcalose. Qual exame?"
+    "pergunta": "Lactente de 4 semanas, vômito em jato e cloro 88 com HCO3 33: qual exame?"
   },
   "cta": "simulado",
   "exemplo": false

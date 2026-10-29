@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-04-13",
   "tom": null,
-  "gancho": "Pneumonia, diarreia e sódio baixo: qual exame entrega o *culpado*?",
-  "gancho_apoio": null,
+  "gancho": "Voltou do congresso com tosse, diarreia e o *saleiro vazio*. Quem dedura o culpado?",
+  "gancho_apoio": "Febre alta, confusão e sódio de 127. O Gram veio cheio de neutrófilos e sem bactéria.",
   "imagem": {
     "arquivo": "dia-162.png",
-    "cena": "Macrô na porta do boteco dos micróbios, desconfiado de um ar-condicionado antigo de janela que pinga num balde. Na fresta do aparelho, um bacilo pequeno se esconde; no balcão, uma chave de quarto de hotel e um saleiro quase vazio.",
+    "cena": "No saguão de um hotel de congresso, o Macrô, de crachá e com a comanda em branco no bolso, desconfia de um ar-condicionado antigo de janela que pinga num balde. Na fresta do aparelho, um bacilo pequeno se esconde; num banquinho, uma chave de quarto e um saleiro quase vazio.",
     "foco": "50% 35%",
-    "alt": "Macrô na porta do boteco dos micróbios, desconfiado de um ar-condicionado antigo de janela que pinga num balde."
+    "alt": "Macrô no saguão do hotel desconfia de um ar-condicionado que pinga; um bacilo se esconde na fresta."
   },
   "imagem_macete": {
     "arquivo": "dia-162-macete.png",
-    "cena": "Pego no flagra, o bacilo mostra a carteira de identidade que tirou de dentro de um potinho de coleta de tampa amarela. Macrô confere o documento com a lupa: o antígeno urinário entregou o culpado. O saleiro vazio lembra o sódio baixo.",
-    "alt": "A Legionella entrega o RG na urina"
+    "cena": "Pego no flagra, o bacilo mostra a carteira de identidade que tirou de dentro de um potinho de coleta de tampa amarela. Macrô confere o documento com a lupa; o saleiro vazio lembra o sódio baixo.",
+    "alt": "O bacilo mostra o documento tirado de um potinho de coleta de tampa amarela; Macrô confere com a lupa."
   },
   "questao": {
     "vinheta": "A 67-year-old man who smokes returns from a hotel conference with 3 days of fever to 39.8°C, dry cough, watery diarrhea, and confusion. Serum sodium is 127 mEq/L. Chest x-ray shows patchy bilateral infiltrates. Sputum Gram stain shows many neutrophils but no organisms.",
@@ -65,13 +65,13 @@
       "C": "BAAR procura micobactérias, num quadro arrastado de semanas, com perda de peso e cavitação."
     },
     "macete": {
-      "frase": "A *Legião* de sintomas: pulmão, barriga, cabeça e *sódio* baixo. A Legionella mora no ar-condicionado do hotel e *entrega o RG na urina*.",
-      "apoio": "O NBME descreve pneumonia grave com diarreia e hiponatremia depois de hotel, cruzeiro ou spa e pede o antígeno urinário ou o meio BCYE; também lembra que não há transmissão de pessoa para pessoa.",
-      "fala": null
+      "frase": "A *Legião* de sintomas: pulmão, barriga, cabeça e *sódio* baixo. A Legionella *entrega o RG na urina*",
+      "apoio": "Hotel, cruzeiro ou spa, com água em aerossol; cultura em BCYE; e não passa de pessoa para pessoa.",
+      "fala": "Comi, mostrei, avisei. Esse aí não aparece no Gram, mas entrega o RG no potinho de urina."
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda. O cliente de hoje voltou de um congresso no hotel com pneumonia, diarreia, confusão e sódio baixo. O Gram do escarro veio cheio de neutrófilos e sem bactéria. Qual exame confirma rápido?",
+    "contexto": "Bicho de Segunda. O hóspede de hoje voltou de um congresso no hotel com febre alta, tosse seca, diarreia, confusão e sódio de 127. O Gram do escarro veio cheio de neutrófilos e sem bactéria. Qual exame confirma rápido?",
     "palavras_chave": [
       "hotel stay",
       "high fever",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Pneumonia, diarreia, Na 127. Qual exame?"
+    "pergunta": "Febre, tosse, diarreia, confusão e Na 127 após hotel: qual exame rápido?"
   },
   "cta": "simulado",
   "exemplo": false

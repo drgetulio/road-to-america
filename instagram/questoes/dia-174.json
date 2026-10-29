@@ -8,22 +8,23 @@
   "topico": "Presentes de pacientes",
   "conceito": "Gifts from patients: a small token may be accepted, expensive gifts are declined",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-25",
   "tom": null,
-  "gancho": "Presente de paciente: agradecer, recusar ou *encaminhar*?",
-  "gancho_apoio": null,
+  "gancho": "Lata de biscoito caseiro no último retorno: o comitê de ética *precisa saber*?",
+  "gancho_apoio": "Nove anos de consulta, uma mudança de estado e um cartão escrito à mão.",
   "imagem": {
     "arquivo": "dia-174.png",
-    "cena": "Uma balança de tribunal desenhada como placa de trânsito, sobre a mesa do consultório: num prato, uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho; no outro, uma caixinha de veludo com um relógio dourado. O braço da balança ainda balança.",
+    "cena": "Na mesa do consultório, a Dona Bússola está entre uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho, de um lado, e uma caixinha de veludo com um relógio dourado, do outro. O ponteiro dela ainda gira; na parede, um quadrinho 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Uma balança de tribunal desenhada como placa de trânsito, sobre a mesa do consultório: num prato, uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho; "
+    "alt": "Dona Bússola entre uma lata de biscoitos caseiros e uma caixinha de relógio dourado, com o ponteiro girando."
   },
   "imagem_macete": {
     "arquivo": "dia-174-macete.png",
-    "cena": "O prato dos biscoitos ganha um selo verde e a lata aberta vai para a mesinha do café, com o cartão de coração em pé; a caixinha do relógio volta a ser fechada com laço, ao lado de um cone vermelho, pronta para ser devolvida com carinho.",
-    "alt": "Presente pequeno e sincero: obrigado"
+    "cena": "O ponteiro para nos biscoitos, que ganham um selo verde; a lata aberta vai para a mesinha do café, com o cartão em pé. A caixinha do relógio volta fechada com laço, ao lado de um cone vermelho, pronta para ser devolvida com carinho.",
+    "alt": "O ponteiro para nos biscoitos, que vão para a mesa do café; a caixinha do relógio volta fechada para devolver."
   },
   "questao": {
     "vinheta": "At her last visit before moving to another state, a 72-year-old woman whom a physician has treated for 9 years brings a tin of homemade cookies and a handwritten thank-you card. She says it is a small way to thank him for his care.",
@@ -65,13 +66,13 @@
       "D": "Uma lata de biscoitos caseiros não precisa ser comunicada ao comitê de ética, porque não há conflito de interesse."
     },
     "macete": {
-      "frase": "*Bolo de fubá* se aceita, *relógio de ouro* se devolve com carinho. A pergunta é: esse presente muda o meu cuidado ou cria obrigação? Se não, um obrigado sincero.",
-      "apoio": "O NBME varia o valor (dinheiro, joia, ingresso caro), o momento (presente antes de uma cirurgia ou em troca de receita) e a vulnerabilidade do paciente; nesses casos, a resposta é recusar com gentileza.",
-      "fala": null
+      "frase": "*Bolo de fubá* se aceita, *relógio de ouro* se devolve com carinho",
+      "apoio": "A pergunta é: esse presente muda o meu cuidado ou cria obrigação? Se não, um obrigado sincero. Dinheiro, joia ou presente em troca de receita: recusa gentil.",
+      "fala": "Meu norte é o paciente: biscoito é gratidão, relógio de ouro é obrigação."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com um dilema que todo médico já viveu: a paciente de muitos anos vai se mudar e traz um presente. A balança tem dois pratos, e a prova quer saber para que lado ela pende.",
+    "contexto": "Sábado Sem Viés com um dilema que todo médico já viveu: a paciente de muitos anos vai se mudar e traz um presente simples. O ponteiro da Dona Bússola gira, e a prova quer saber para onde ele aponta.",
     "palavras_chave": [
       "long-term patient",
       "homemade cookies",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Biscoitos caseiros de presente. O que dizer?"
+    "pergunta": "Paciente de 9 anos traz biscoitos caseiros e um cartão: o que dizer?"
   },
   "cta": "simulado",
   "exemplo": false

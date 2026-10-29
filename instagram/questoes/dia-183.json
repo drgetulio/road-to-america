@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-04",
   "tom": null,
-  "gancho": "Tem alguém *tocando a campainha* da tireoide sem parar",
-  "gancho_apoio": null,
+  "gancho": "Tireoide fazendo *hora extra* com o chefe de folga: vazamento, chefe clandestino ou ordem falsa?",
+  "gancho_apoio": "Proptose, bócio difuso com sopro e captação de iodo lá em cima. O Macrô pegou o binóculo.",
   "imagem": {
     "arquivo": "dia-183.png",
-    "cena": "Macrô na porta do boteco dos micróbios observa, do outro lado da rua, uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar; uma mão misteriosa, escondida atrás do muro, aperta a campainha da fábrica, e no alto do morro uma casinha (a hipófise) está de luz apagada.",
+    "cena": "Da janela do prédio vizinho, o Macrô, de binóculo e com a comanda em branco no bolso, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar, enquanto um caminhãozinho descarrega carvão no portão. Ao lado do portão há um muro baixo de tijolos e, no alto do morro, uma casinha está de luz apagada.",
     "foco": "50% 35%",
-    "alt": "Tem alguém tocando a campainha da tireoide sem parar"
+    "alt": "Macrô de binóculo observa uma fábrica em forma de borboleta que solta fumaça sem parar; no morro, uma casinha apagada."
   },
   "imagem_macete": {
     "arquivo": "dia-183-macete.png",
-    "cena": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva; Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
-    "alt": "Graves: a IgG imita o TSH"
+    "cena": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva. Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
+    "alt": "O muro cai e mostra um personagem em forma de Y prendendo a campainha com fita; a casinha segue apagada."
   },
   "questao": {
     "vinheta": "A 29-year-old woman has weight loss, tremor, heat intolerance, and bilateral proptosis. She has a diffuse, nontender goiter with a bruit. TSH is suppressed, and free T4 is elevated. Radioactive iodine uptake is diffusely increased.",
@@ -65,13 +65,13 @@
       "C": "A tireoidite subaguda viral (de Quervain) libera hormônio pronto: glândula dolorosa e captação de iodo baixa."
     },
     "macete": {
-      "frase": "Graves é o *vizinho que aperta a campainha* do receptor de TSH e foge: a tireoide atende a porta sem parar, e a hipófise, que é a dona da campainha, fica calada (TSH baixo). Macrô reconhece o vizinho: tem formato de *Y*, é uma IgG.",
-      "apoio": "O NBME pergunta o tipo de hipersensibilidade (tipo II, anticorpo contra receptor) e separa Graves da tireoidite pela captação de iodo: alta e difusa em Graves, baixa na tireoidite.",
-      "fala": null
+      "frase": "Graves é o *vizinho que toca a campainha* do receptor de TSH e foge",
+      "apoio": "A tireoide atende a porta sem parar e a hipófise, dona da campainha, fica calada (TSH baixo). Tipo II não citotóxico; captação alta e difusa.",
+      "fala": "Comi, mostrei, avisei: o vizinho que toca a campainha e foge tem formato de Y."
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e um culpado que não é hormônio. Descubra quem é que está apertando o botão.",
+    "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e uma captação de iodo alta e difusa. Qual mecanismo explica?",
     "palavras_chave": [
       "weight loss",
       "tremor",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "TSH baixo, captação alta, proptose. Qual mecanismo?"
+    "pergunta": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?"
   },
   "cta": "simulado",
   "exemplo": false

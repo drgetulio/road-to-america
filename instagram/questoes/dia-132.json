@@ -8,6 +8,7 @@
   "topico": "Suspeita de maus-tratos infantis",
   "conceito": "Suspected child abuse: physicians are mandatory reporters, admit if home is unsafe",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-14",
@@ -16,15 +17,15 @@
   "gancho_apoio": "Hoje sem piada: um tema sério que todo médico precisa saber conduzir.",
   "imagem": {
     "arquivo": "dia-132.png",
-    "cena": "Um corredor de hospital tranquilo com uma balança da justiça desenhada como placa de trânsito navy. Perto dela, um berço vazio e um telefone sobre uma mesinha.",
+    "cena": "Num corredor de hospital tranquilo e bem iluminado, a Dona Bússola está ao lado de um berço vazio com uma manta dobrada. Perto dela, um telefone numa mesinha; na parede, um quadrinho 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Corredor de hospital com uma placa de balança da justiça, um berço vazio e um telefone."
+    "alt": "Dona Bússola num corredor de hospital calmo, ao lado de um berço vazio e de um telefone numa mesinha."
   },
   "imagem_macete": {
     "arquivo": "dia-132-macete.png",
-    "cena": "Callback: o telefone está em uso, com uma linha suave ligando-o a uma casinha com escudo; um grande guarda-chuva navy cobre o berço.",
+    "cena": "O telefone está em uso, com uma linha suave que o liga a uma casinha com escudo; um grande guarda-chuva navy cobre o berço, e o ponteiro da Dona Bússola aponta para ele, firme.",
     "foco": "50% 40%",
-    "alt": "O telefone ligado a uma casa com escudo e um guarda-chuva protegendo o berço."
+    "alt": "O telefone ligado a uma casa com escudo e um guarda-chuva protegendo o berço; o ponteiro da bússola aponta para ele."
   },
   "questao": {
     "vinheta": "A 2-month-old boy is brought for a swollen right thigh. His father says the baby rolled off the couch yesterday. X-rays show a femoral shaft fracture and a healing posterior rib fracture. When asked more questions, the father becomes angry and wants to take the baby home immediately.",
@@ -68,11 +69,11 @@
     "macete": {
       "frase": "*Suspeitou, notificou, protegeu*",
       "apoio": "Na imagem, um guarda-chuva protege o berço enquanto a ligação é feita.",
-      "fala": null
+      "fala": "Meu norte é o paciente. Suspeita razoável já basta, e notificar é proteger, não acusar."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação ética. Quando a história contada não explica a lesão, a lei americana diz o que fazer.",
+    "contexto": "Sábado Sem Viés, estação ética. Quando a história contada não explica a lesão, a lei americana diz o que fazer, e a Dona Bússola explica com calma.",
     "palavras_chave": [
       "femur fracture",
       "rib fracture",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Lesão sem explicação no bebê: qual a conduta?"
+    "pergunta": "Bebê de 2 meses, fratura de fêmur e de costela antiga: e agora?"
   },
   "cta": null,
   "reel": null,

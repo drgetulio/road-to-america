@@ -17,16 +17,16 @@
   "explicacao_em": "2027-11-01",
   "tom": null,
   "gancho": "Casa mal-assombrada da estatística: *qual fantasma mexeu no resultado?*",
-  "gancho_apoio": "Halloween. Remix com valor preditivo, erros tipo I e II e confusão.",
+  "gancho_apoio": "Halloween. Revisão de domingo com os dias 97, 251 e 300.",
   "imagem": {
     "arquivo": "dia-364.png",
-    "cena": "Uma casa mal-assombrada simpática com um toca-discos na sala e três portas de quartos, cada uma com um ícone (uma tabela 2x2, uma lupa, uma tabela partida em duas); o Viés segura uma lanterna de abóbora; um isqueiro e um coração de pelúcia no tapete.",
+    "cena": "Sala de uma casa mal-assombrada simpática, com três portas de quartos, cada uma com um ícone: uma tabela 2x2, uma lupa e uma tabela partida em duas; o Viés segura uma lanterna de abóbora; no tapete, um isqueiro e um coração de pelúcia ligados por um fio; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
     "alt": "Casa mal-assombrada da estatística: qual fantasma mexeu no resultado?"
   },
   "imagem_macete": {
     "arquivo": "dia-364-macete.png",
-    "cena": "Callback: o Viés puxa um lençol e revela uma nuvem de fumaça fantasma que segurava as mãos do isqueiro e do coração de pelúcia; quando a tabela se divide em duas, o fio entre isqueiro e coração desaparece.",
+    "cena": "Callback: o Viés puxa um lençol e revela uma nuvem de fumaça fantasma que segurava as mãos do isqueiro e do coração de pelúcia; quando a tabela se divide em duas, o fio entre o isqueiro e o coração desaparece.",
     "foco": "50% 45%",
     "alt": "Sumiu igual nos dois estratos: confounding"
   },
@@ -50,9 +50,8 @@
         "dia": 251
       },
       "D": {
-        "texto": "Higher prevalence raising positive predictive value",
-        "quiz": "Prevalência e VPP",
-        "dia": 97
+        "texto": "Recall bias",
+        "quiz": "Viés de memória"
       }
     },
     "correta": "A"
@@ -71,16 +70,16 @@
     "erradas": {
       "B": "Modificação de efeito (dia 300) aparece quando os estratos têm OR diferentes, como 4,0 em fumantes e 1,0 em não fumantes.",
       "C": "Erro tipo I (dia 251) é um falso positivo por acaso; aqui a associação some de forma sistemática ao estratificar, o que aponta para confusão.",
-      "D": "Prevalência mexe no valor preditivo positivo de um teste diagnóstico (dia 97), não numa medida de associação entre exposição e desfecho."
+      "D": "O *viés de memória* aparece quando casos lembram exposições de um jeito diferente dos controles; ele não faria a associação sumir só ao estratificar por tabagismo. O VPP (dia 97) não entra aqui: é medida de teste diagnóstico, não explicação de associação."
     },
     "macete": {
       "frase": "*O confundidor é o fantasma que segura as duas mãos*",
-      "apoio": "Isqueiro e infarto parecem amigos porque o cigarro segura a mão dos dois. Estratificou e a associação sumiu nos dois andares da casa? Confusão. Mudou de um andar para o outro? Modificação de efeito.",
-      "fala": null
+      "apoio": "Isqueiro não causa infarto: quem segura a mão dos dois é o cigarro, o fantasma mais velho da epidemiologia. Estratificou e a associação sumiu igual nos dois andares da casa? Confusão. Mudou de um andar para o outro? Modificação de efeito. Erro tipo I (dia 251) é achar fantasma onde não tem, por acaso; e o VPP (dia 97) é outra casa, a dos testes diagnósticos.",
+      "fala": "Se você não randomizou, eu entrei. De mãos dadas com o cigarro."
     }
   },
   "legenda": {
-    "contexto": "Halloween com remix de valor preditivo (dia 97), erros tipo I e II (dia 251) e confusão versus modificação de efeito (dia 300). Quem carrega isqueiro infarta três vezes mais? Estratificou por cigarro, sumiu tudo. Qual fantasma foi?",
+    "contexto": "Halloween e revisão de domingo com os dias 97, 251 e 300. Quem carrega isqueiro infarta três vezes mais? Estratificou por tabagismo e o OR virou 1,0 nos dois grupos. Qual fantasma foi?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -99,7 +98,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "OR some igual nos dois estratos:"
+    "pergunta": "Isqueiro e infarto com OR 3, mas OR 1,0 em cada estrato de fumo: por quê?"
   },
   "cta": "pre_inscricao",
   "reel": null,

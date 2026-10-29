@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-16",
   "tom": null,
-  "gancho": "O remédio que *só entra com oxigênio* e cobra caro do rim",
-  "gancho_apoio": "Antibiótico contra Pseudomonas, creatinina subindo e zumbido no ouvido.",
+  "gancho": "Lista na portaria: *sem oxigênio, esse antibiótico não entra*",
+  "gancho_apoio": "Pseudomonas na hemocultura, creatinina subindo e um zumbido novo no ouvido.",
   "imagem": {
     "arquivo": "dia-348.png",
-    "cena": "Seu Néfron numa portaria confere um carrinho de entrega que só passa pela porta de uma bactéria se mostrar um bilhete em forma de bolha de oxigênio; ao lado, a porta de outra bactéria sem oxigênio fica fechada.",
+    "cena": "Seu Néfron na guarita de um condomínio, com uma lista de convidados em branco, confere um carrinho de entrega que só passa pela porta de uma bactéria se mostrar um bilhete em forma de bolha de oxigênio; ao lado, a porta de outra bactéria, sem bolhas, fica fechada.",
     "foco": "50% 35%",
-    "alt": "O remédio que só entra com oxigênio e cobra caro do rim"
+    "alt": "Lista na portaria: sem oxigênio, esse antibiótico não entra"
   },
   "imagem_macete": {
     "arquivo": "dia-348-macete.png",
-    "cena": "Callback: dentro da bactéria, o carrinho emperra a metade menor de uma impressora de duas partes, que solta formulários com rabiscos trocados; do lado de fora, o Seu Néfron segura as costas com um cone vermelho e a Tia Meia-Vida aponta para uma concha do mar com etiqueta vermelha.",
+    "cena": "Callback: dentro da bactéria, o carrinho emperra a metade menor de uma impressora de duas partes, que solta formulários com rabiscos trocados; do lado de fora, o Seu Néfron segura as costas, ao lado de um cone vermelho, e a Tia Meia-Vida aponta para uma concha do mar com etiqueta vermelha.",
     "foco": "50% 45%",
     "alt": "Aminoglicosídeos: 30S e entrada que depende de O2"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Mean GNATS caNNOT kill anaerobes*",
-      "apoio": "Gentamicin, Neomycin, Amikacin, Tobramycin, Streptomycin; e NNOT de Nephrotoxicity, Neuromuscular blockade, Ototoxicity e Teratogen. Na imagem, o carrinho do remédio só passa na porta da bactéria com o bilhete de oxigênio, emperra a metade pequena da impressora e os formulários saem trocados.",
-      "fala": null
+      "apoio": "Gentamicin, Neomycin, Amikacin, Tobramycin, Streptomycin; e NNOT de Nephrotoxicity, Neuromuscular blockade, Ototoxicity e Teratogen. A entrada na bactéria depende de transporte com oxigênio, por isso anaeróbio fica na calçada. Dentro, ele trava a subunidade 30S e o ribossomo lê o mRNA errado: formulário com rabisco trocado.",
+      "fala": "Sem carimbo, não sai. Com aminoglicosídeo, a creatinina sai do lugar."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Nefro e ototóxico, sem anaeróbio:"
+    "pergunta": "Pseudomonas, creatinina subindo e zumbido: como age esse antibiótico?"
   },
   "cta": "simulado",
   "reel": null,

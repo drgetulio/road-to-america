@@ -13,13 +13,13 @@
   "remix_de": null,
   "explicacao_em": "2027-06-16",
   "tom": null,
-  "gancho": "Fez 45 anos e chegou *um convite que ninguém esperava* no correio",
-  "gancho_apoio": "Sem sintomas e sem história na família. A festa do rastreamento já começou?",
+  "gancho": "Fez 45 anos, assoprou as velinhas e *perguntou se precisa de algum exame*",
+  "gancho_apoio": "Sem sintomas e sem história na família. O que a USPSTF recomenda para ele?",
   "imagem": {
     "arquivo": "dia-226.png",
-    "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica entrega um envelope de convite fechado a um bolo de aniversário simpático, de velinhas apagadas. Na mesinha, um presente navy com laço vermelho, e um calendário de parede solta folhas voando.",
+    "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas, que olha pensativo para um calendário de parede soltando folhas voando. Na mesinha, um presente navy com laço vermelho, ainda fechado.",
     "foco": "50% 35%",
-    "alt": "Dona Térmica entrega um convite fechado a um bolo de aniversário na sala de espera"
+    "alt": "Dona Térmica conversa com um bolo de aniversário pensativo na sala de espera"
   },
   "imagem_macete": {
     "arquivo": "dia-226-macete.png",
@@ -32,15 +32,15 @@
     "pergunta": "Which is the most appropriate recommendation regarding colorectal cancer screening?",
     "alternativas": {
       "A": {
-        "texto": "Defer screening until age 50",
+        "texto": "Defer screening until he reaches age 50",
         "quiz": "Esperar os 50"
       },
       "B": {
-        "texto": "CT colonography every year",
+        "texto": "Annual CT colonography starting this year",
         "quiz": "Colono-TC anual"
       },
       "C": {
-        "texto": "Measure serum carcinoembryonic antigen",
+        "texto": "Measure serum carcinoembryonic antigen yearly",
         "quiz": "Dosar CEA"
       },
       "D": {

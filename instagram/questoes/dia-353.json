@@ -8,21 +8,22 @@
   "topico": "Osteoporose pós-menopausa",
   "conceito": "Postmenopausal osteoporosis: estrogen loss raises RANKL and osteoclast activity",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial da Osteoporose (20/10).",
   "remix_de": null,
   "explicacao_em": "2027-10-21",
   "tom": null,
   "gancho": "A síndica saiu e *a turma da demolição deu festa*",
-  "gancho_apoio": "Dia Mundial da Osteoporose. Exames normais e uma densitometria baixa.",
+  "gancho_apoio": "Dia Mundial da Osteoporose. Exames normais e uma densitometria baixa dez anos depois da menopausa.",
   "imagem": {
     "arquivo": "dia-353.png",
-    "cena": "Um prédio feito de favos de osso trabecular, com a cadeira da síndica vazia e um molho de chaves pendurado; no portão, uma equipe com britadeiras e outra com tijolos esperam a ordem.",
+    "cena": "Seu Allen, com setinhas de manual de montagem, na frente de um prédio feito de favos de osso trabecular; a cadeira da síndica está vazia, com um molho de chaves pendurado; no portão, uma equipe com britadeiras e outra com tijolos esperam a ordem.",
     "foco": "50% 35%",
     "alt": "A síndica saiu e a turma da demolição deu festa"
   },
   "imagem_macete": {
     "arquivo": "dia-353-macete.png",
-    "cena": "Callback: dezenas de convites dourados sem texto voam até as células grandes da britadeira, que abrem buracos nas vigas; o porteiro tenta recolher os convites, mas não dá conta.",
+    "cena": "Callback: dezenas de convites dourados em branco voam até as células grandes da britadeira, que abrem buracos nas vigas; o porteiro tenta recolher os convites, mas não dá conta, e o Seu Allen aponta para a cadeira vazia da síndica.",
     "foco": "50% 45%",
     "alt": "Sem estrogênio, sobe o RANKL e o osteoclasto trabalha mais"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Estrogênio é a síndica do prédio do osso*",
-      "apoio": "Com a síndica, os convites da festa da demolição (RANKL) são poucos e o porteiro OPG recolhe os que sobram. Sem ela, os convites se espalham e a turma da britadeira (osteoclasto) faz festa. O denosumabe recolhe os convites: é anticorpo anti-RANKL.",
-      "fala": null
+      "apoio": "Com a síndica, os convites da festa da demolição (RANKL) são poucos e o porteiro OPG recolhe os que sobram. Sem ela, os convites se espalham e a turma da britadeira (osteoclasto) faz festa. Todo condomínio tem essa história. O denosumabe recolhe os convites: é anticorpo anti-RANKL.",
+      "fala": "Sobrou peça? Sobrou buraco na viga."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Sem estrogênio, por que perde osso?"
+    "pergunta": "10 anos pós-menopausa, T-score -2,8 e exames normais: por que perde osso?"
   },
   "cta": "simulado",
   "reel": null,

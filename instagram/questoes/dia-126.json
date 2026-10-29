@@ -16,33 +16,31 @@
   ],
   "explicacao_em": "2027-03-08",
   "tom": null,
-  "gancho": "Remix: qual hóspede *volta* meses depois do check-out?",
-  "gancho_apoio": "Três bichos já vistos (dias 36, 92 e 120) e um intruso. Só um explica o quadro.",
+  "gancho": "Tratou, curou, voltou para casa. Oito meses depois, a febre deu *spoiler* da segunda temporada",
+  "gancho_apoio": "Remix com alergia (dia 36), meningococo (dia 92) e malária (dia 120). Só um mecanismo explica a reprise.",
   "imagem": {
     "arquivo": "dia-126.png",
-    "cena": "Macrô é o DJ de um toca-discos com três discos sem rótulo: um com um mosquito, um com um mastócito estourando como pipoca e um com dois grãos de feijão juntinhos. Ao fundo, um pequeno hotel comum com uma janela de luz apagada.",
+    "cena": "Macrô, de guardanapo xadrez e com a comanda em branco no bolso, coça a cabeça na esteira de bagagens de um aeroporto. Passam três malas com adesivos: um mosquito, uma pipoca estourando e dois grãos de feijão juntinhos. Num canto do painel, um pequeno disco de vinil.",
     "foco": "50% 35%",
-    "alt": "Macrô de DJ com três discos: mosquito, mastócito e diplococo; ao fundo, um pequeno hotel com uma janela apagada."
+    "alt": "Macrô na esteira do aeroporto olhando três malas com adesivos de mosquito, pipoca e dois feijões."
   },
   "imagem_macete": {
     "arquivo": "dia-126-macete.png",
-    "cena": "Callback: o hotel, visto de perto, tem a forma de um fígado. Num quarto escondido, um parasita dorme de pijama e o despertador toca meses depois. Macrô aparece na porta com a conta do check-out e uma vassoura em forma de comprimido (primaquina).",
+    "cena": "A mala do mosquito se abre e revela um hotelzinho em forma de fígado: num quarto escondido, um parasita de pijama acorda com o despertador. Macrô aparece de recepcionista, com a conta do check-out e uma vassoura de cabo em forma de comprimido.",
     "foco": "50% 40%",
-    "alt": "O hotel tem forma de fígado: um parasita dorme num quarto escondido enquanto o despertador toca; Macrô chega com a vassoura de comprimido."
+    "alt": "Dentro da mala, um hotel em forma de fígado com um parasita acordando; Macrô chega com a conta e a vassoura de comprimido."
   },
   "questao": {
     "vinheta": "A 25-year-old volunteer had Plasmodium vivax malaria in Southeast Asia, completed chloroquine and recovered fully. Eight months after returning to her nonendemic home country, she again has fevers every 48 hours. A blood smear shows enlarged red cells with Schüffner dots.",
     "pergunta": "Which best explains this new episode?",
     "alternativas": {
       "A": {
-        "texto": "IgE cross-linking on mast cells",
-        "quiz": "IgE no mastócito",
-        "dia": 36
+        "texto": "Recrudescence of chloroquine-resistant blood-stage parasites",
+        "quiz": "Recrudescência"
       },
       "B": {
-        "texto": "Lipooligosaccharide endotoxin release",
-        "quiz": "Endotoxina LOS",
-        "dia": 92
+        "texto": "Reinfection from a new mosquito bite",
+        "quiz": "Nova picada"
       },
       "C": {
         "texto": "Dormant liver hypnozoites",
@@ -68,18 +66,18 @@
       "G6PD testing"
     ],
     "erradas": {
-      "A": "Dia 36: a ligação cruzada de IgE nos mastócitos explica anafilaxia e alergia, com urticária e broncoespasmo, não febre cíclica.",
-      "B": "Dia 92: o lipo-oligossacarídeo da Neisseria meningitidis causa choque e petéquias, sem parasita no esfregaço.",
+      "A": "A recrudescência vem de formas do sangue que sobreviveram ao tratamento e aparece em semanas, não oito meses depois de uma cura completa.",
+      "B": "Reinfecção exige nova picada, e ela vive desde a volta num país sem malária.",
       "D": "Intruso: o sequestro de hemácias nos capilares do cérebro é a malária cerebral do P. falciparum, que não forma hipnozoíto."
     },
     "macete": {
       "frase": "Vivax e ovale deixam *hóspede dormindo* no hotel fígado",
-      "apoio": "Na imagem, o Macrô faz o check-out do hóspede que dormia escondido.",
-      "fala": null
+      "apoio": "Antes da primaquina ou da tafenoquina, a recepção confere a G6PD. Bônus: IgE cruzada no mastócito é a alergia do dia 36; o LOS do meningococo derruba a pressão (dia 92).",
+      "fala": "A cloroquina limpou o salão. O quarto escondido ainda tinha hóspede."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: alergia, meningococo e malária. Febre que volta oito meses depois pede explicação.",
+    "contexto": "Remix de Domingo: três bichos já vistos voltam numa vinheta só. Voluntária tratada com cloroquina, de volta a um país sem malária, e febre a cada 48 horas oito meses depois.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre volta 8 meses depois: por quê?"
+    "pergunta": "Vivax tratado, sem viagem nova e febre 8 meses depois: por quê?"
   },
   "cta": null,
   "reel": null,

@@ -8,21 +8,22 @@
   "topico": "Síndrome neuroléptica maligna",
   "conceito": "Neuroleptic malignant syndrome: rigidity, fever and high CK, stop the antipsychotic, dantrolene or bromocriptine",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-24",
   "tom": null,
-  "gancho": "O espeto virou *cano de chumbo* e começou a ferver",
-  "gancho_apoio": "No rodízio de quinta, o garçom precisa saber qual espeto devolver e qual servir.",
+  "gancho": "Espeto duro como cano e *fervendo a 40 graus*: qual remédio?",
+  "gancho_apoio": "No Rodízio de Quinta, o garçom precisa saber qual espeto devolver para a cozinha e qual servir.",
   "imagem": {
     "arquivo": "dia-326.png",
-    "cena": "Garçom de rodízio segura um espeto que virou um cano de chumbo cinza e rígido, soltando vapor como chaleira; ao lado, um semáforo em forma de gota está com todas as luzes apagadas. As plaquinhas verde e vermelha estão no bolso do avental.",
+    "cena": "Garçom Espetinho na churrasqueira segura um espeto que virou um cano de chumbo cinza e rígido, soltando vapor como chaleira; ao lado, um semáforo em forma de gota com todas as luzes apagadas; a plaquinha verde e vermelha no bolso do avental.",
     "foco": "50% 35%",
-    "alt": "O espeto virou cano de chumbo e começou a ferver"
+    "alt": "Espeto duro como cano e fervendo a 40 graus: qual remédio?"
   },
   "imagem_macete": {
     "arquivo": "dia-326-macete.png",
-    "cena": "Callback: o garçom levanta a plaquinha vermelha e devolve o espeto de cano de chumbo; um ventilador e um balde de gelo esfriam a cena, e ele gira uma chave dourada que tranca um portãozinho cheio de bolinhas de cálcio dentro de uma fibra muscular listrada.",
+    "cena": "Callback: o garçom levanta o lado vermelho da plaquinha e devolve o espeto de cano para a cozinha; um ventilador e um balde de gelo esfriam a cena; ele gira uma chave dourada que tranca um portãozinho cheio de bolinhas de cálcio dentro de uma fibra muscular listrada.",
     "foco": "50% 45%",
     "alt": "Síndrome neuroléptica maligna: suspender, esfriar e dantrolene"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Cano de chumbo fervendo*: devolve o espeto, esfria, hidrata e fecha o portão do cálcio",
-      "apoio": "Na imagem, o garçom levanta a plaquinha vermelha para o espeto do antipsicótico, liga o ventilador e entrega a chave que tranca o portão do cálcio dentro do músculo (o dantrolene no receptor de rianodina).",
-      "fala": null
+      "apoio": "Cano de chumbo, febre de 40 e CK de 18 mil depois de haloperidol: não é churrasco, é síndrome neuroléptica maligna. Primeiro tira o antipsicótico, esfria e hidrata; o dantrolene fecha o receptor de rianodina e segura o cálcio dentro do retículo, e a bromocriptina devolve a dopamina. Clônus e hiper-reflexia seriam serotoninérgica, que pede ciproeptadina.",
+      "fala": "Esse espeto volta para a cozinha."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Rigidez, febre e CK alta: qual remédio?"
+    "pergunta": "Haloperidol, febre de 40, rigidez em cano de chumbo e CK 18 mil: qual remédio?"
   },
   "cta": null,
   "reel": null,

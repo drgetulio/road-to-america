@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Estreptococos do grupo viridans (dia 295), Febre maculosa (dia 323), E. coli uropatogênica (dia 344)",
   "conceito": "Remix: Viridans streptococci + Rickettsia rickettsii + Uropathogenic E. coli",
   "personagem": null,
+  "anfitriao": "Macrô",
   "gancho_data": null,
   "remix_de": [
     295,
@@ -16,17 +17,17 @@
   ],
   "explicacao_em": "2027-10-18",
   "tom": null,
-  "gancho": "Três discos, uma válvula: *quem colou ali?*",
-  "gancho_apoio": "Remix com viridans, febre maculosa e E. coli uropatogênica. Um disco é intruso.",
+  "gancho": "Extração de dente em agosto, febre em setembro: *quem pegou carona?*",
+  "gancho_apoio": "Revisão de domingo com os dias 295, 323 e 344. Três maneiras de grudar, só uma serve numa válvula.",
   "imagem": {
     "arquivo": "dia-350.png",
-    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (uma gota de calda doce, um carrapatinho simpático, um elevador em forma de rim) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "cena": "Macrô na sala de espera de um consultório de dentista, com a comanda em branco no bolso, vê uma correntinha de cocos verdes de malinha pegar carona num rolinho de algodão rumo a uma porta em forma de coração; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Três discos, uma válvula: quem colou ali?"
+    "alt": "Extração de dente em agosto, febre em setembro: quem pegou carona?"
   },
   "imagem_macete": {
     "arquivo": "dia-350-macete.png",
-    "cena": "Callback: o disco da calda doce gira, e um fio de calda dourada cola uma bolinha de bactéria na dobradiça de uma portinha em forma de válvula do coração; Macrô levanta os fones, impressionado.",
+    "cena": "Callback: a correntinha de cocos verdes, de chapéu de confeiteiro, carameliza uma calda dourada que a gruda na dobradiça de uma portinha em forma de válvula do coração; o Macrô levanta as sobrancelhas, impressionado.",
     "foco": "50% 45%",
     "alt": "Endocardite subaguda: dextran gruda o viridans na válvula lesada"
   },
@@ -73,13 +74,13 @@
       "D": "Proteína A é do S. aureus, catalase-positivo, em cachos, que causa endocardite aguda até em válvula normal."
     },
     "macete": {
-      "frase": "*Viridans é o confeiteiro do dentista*: faz calda de dextrana",
-      "apoio": "Extração de dente solta o viridans no sangue, e ele chega com a calda de dextrana, que gruda no coágulo da válvula machucada. No toca-discos, o disco da calda doce é o que toca.",
-      "fala": null
+      "frase": "*Viridans é o confeiteiro que caramelizou a válvula*: a dextrana gruda no coágulo",
+      "apoio": "A extração de dente solta o viridans no sangue; ele fabrica dextrana, que gruda na fibrina e nas plaquetas da valva já machucada (o prolapso mitral). Bônus do dia 344: a fímbria P gruda no urotélio, não em valva. Bônus do dia 323: a Rickettsia vive dentro do endotélio, mas não forma vegetação.",
+      "fala": "Esse veio de sobremesa."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com viridans (dia 295), febre maculosa (dia 323) e E. coli uropatogênica (dia 344), mais um intruso. Válvula com prolapso, extração dentária e febre arrastada. Qual disco explica a adesão?",
+    "contexto": "Revisão de domingo com os dias 295, 323 e 344. Homem com prolapso mitral, febre arrastada há 5 semanas depois de uma extração dentária e cocos gram-positivos em cadeia na hemocultura. O que permitiu a colonização da válvula?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -98,7 +99,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Viridans na válvula: o que gruda?"
+    "pergunta": "Prolapso mitral e febre há 5 semanas depois de extração dentária: o que grudou?"
   },
   "cta": "pre_inscricao",
   "reel": null,

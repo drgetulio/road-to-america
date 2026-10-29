@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Hepatite E (dia 281), Gangrena gasosa (dia 309), Giardíase (dia 330)",
   "conceito": "Remix: Hepatitis E + Clostridium perfringens alpha toxin + Giardia lamblia",
   "personagem": null,
+  "anfitriao": "Macrô",
   "gancho_data": null,
   "remix_de": [
     281,
@@ -16,70 +17,67 @@
   ],
   "explicacao_em": "2027-10-04",
   "tom": null,
-  "gancho": "Três discos de água suja: *qual tocou na gravidez?*",
-  "gancho_apoio": "Remix com hepatite E, gangrena gasosa e giardíase. Um disco é intruso.",
+  "gancho": "Vacinada para A e B, grávida e *com o fígado em pane*",
+  "gancho_apoio": "Revisão de domingo com os dias 281, 309 e 330. A viagem teve água de poço, e não foi só um visitante.",
   "imagem": {
     "arquivo": "dia-336.png",
-    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (um fígado com uma gota de água, bolhas de gás numa bexiga de festa, uma pera com dois olhinhos) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "cena": "Macrô ao lado de um poço numa vila de montanha, com a comanda em branco no bolso, segura um balde de água de poço; num banco, um passaporte e um chocalho de bebê; numa prateleira, dois frasquinhos de vacina em forma de escudo, já usados; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Três discos de água suja: qual tocou na gravidez?"
+    "alt": "Vacinada para A e B, grávida e com o fígado em pane"
   },
   "imagem_macete": {
     "arquivo": "dia-336-macete.png",
-    "cena": "Callback: o disco do fígado com a gota de água toca e brilha; ao lado, um balde de poço e um chocalho de bebê com um cone vermelho de alerta, enquanto o Macrô aponta para o disco certo.",
+    "cena": "Callback: um balão em forma de fígado, com uma gota de água desenhada, acende um cone vermelho de alerta ao lado do chocalho; os dois escudos de vacina guardam duas portas fechadas, e uma terceira porta, sem escudo, fica aberta; o Macrô aponta para ela.",
     "foco": "50% 45%",
-    "alt": "Gestante, água contaminada e hepatite fulminante: HEV"
+    "alt": "Gestante com hepatite fulminante depois de água de poço: hepatite E"
   },
   "questao": {
-    "vinheta": "A 26-year-old woman who is 31 weeks pregnant develops nausea, jaundice, and confusion 5 weeks after drinking untreated well water while traveling. She received two doses of hepatitis A vaccine in childhood. ALT is 2,850 U/L, INR is 2.4, and hemoglobin is normal. HBsAg is negative.",
+    "vinheta": "A 26-year-old woman who is 31 weeks pregnant develops jaundice and confusion 6 weeks after a trip to Nepal, where she drank untreated well water and had greasy diarrhea that resolved with treatment. She is vaccinated against hepatitis A and B. She has no mucocutaneous lesions. ALT is 2,850 U/L, and INR is 2.4.",
     "pergunta": "Which pathogen is most likely responsible?",
     "alternativas": {
       "A": {
-        "texto": "Giardia lamblia",
-        "quiz": "Giardia",
-        "dia": 330
-      },
-      "B": {
         "texto": "Hepatitis A virus",
         "quiz": "Hepatite A"
       },
+      "B": {
+        "texto": "Hepatitis B virus",
+        "quiz": "Hepatite B"
+      },
       "C": {
         "texto": "Hepatitis E virus",
-        "quiz": "Hepatite E",
-        "dia": 281
+        "quiz": "Hepatite E"
       },
       "D": {
-        "texto": "Clostridium perfringens",
-        "quiz": "C. perfringens",
-        "dia": 309
+        "texto": "Herpes simplex virus",
+        "quiz": "Herpes simples"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Gestante, água contaminada e hepatite fulminante: *HEV*",
+    "titulo": "Gestante com hepatite fulminante depois de água de poço: *hepatite E*",
     "certa": [
-      "Hepatite aguda grave (ALT altíssima, INR alto e encefalopatia) no terceiro trimestre depois de água contaminada é a assinatura do *hepatitis E virus*: vírus RNA de transmissão *fecal-oral*, que na gestação pode evoluir para *fulminant hepatic failure* com mortalidade alta. A vacina da hepatite A afasta o HAV, e a hemoglobina normal afasta hemólise."
+      "Hepatite aguda grave, com encefalopatia e INR de 2,4, numa gestante de terceiro trimestre semanas depois de beber água sem tratamento no sul da Ásia é *hepatitis E virus* (dia 281). O HEV é fecal-oral, como o HAV, mas na gestante pode virar *fulminant hepatic failure*. A diarreia gordurosa da viagem foi a Giardia (dia 330), um segundo visitante da mesma água."
     ],
     "termos": [
       "hepatitis E virus",
-      "fecal-oral",
       "fulminant hepatic failure",
-      "pregnancy"
+      "pregnancy",
+      "fecal-oral transmission"
     ],
     "erradas": {
-      "A": "Giardia (dia 330) dá diarreia gordurosa e distensão depois de água de riacho, sem icterícia nem insuficiência hepática.",
-      "B": "Hepatite A também vem da água, mas ela foi vacinada e o HAV não tem a mortalidade típica da gestação.",
-      "D": "C. perfringens (dia 309) causa gangrena gasosa com crepitação ou hemólise maciça; aqui a hemoglobina está normal."
+      "A": "A *hepatite A* também vem pela água, mas ela está vacinada e o HAV não tem gravidade especial na gestação.",
+      "B": "A *hepatite B* é parenteral e sexual, e ela completou a vacinação.",
+      "D": "A *hepatite por herpes simples* na gestação é grave, mas costuma ser anictérica, com transaminases muito altas e febre; sem lesões e com icterícia marcada, fica atrás."
     },
     "macete": {
-      "frase": "*E de Expectante*: a hepatite E é a que pesa na gravidez",
-      "apoio": "No toca-discos, o disco do fígado com a gota de água do poço toca alto quando chega o chocalho de bebê. A e E vêm pela água; só a E assusta na gestante.",
-      "fala": null
+      "frase": "*E de Expectante*: das hepatites que vêm pela água, a E é a que pesa no terceiro trimestre",
+      "apoio": "Das hepatites que vêm pela água, a E é a que não respeita o pré-natal. A hepatite E (dia 281) na gestante, sobretudo no terceiro trimestre, pode virar insuficiência hepática fulminante. Bônus do dia 330: a diarreia gordurosa que boiou na viagem foi a Giardia. Bônus do dia 309: gangrena gasosa vem de ferida suja de terra, não de água de poço.",
+      "fala": "Comi, mostrei, avisei. Água de poço, só fervida."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: hepatite E (dia 281), gangrena gasosa (dia 309) e giardíase (dia 330), mais um intruso. Gestante, água de poço e um fígado que entrou em pane. Qual disco explica o quadro?",
+    "contexto": "Revisão de domingo com os dias 281, 309 e 330. Gestante de 31 semanas com icterícia e confusão depois de beber água de poço numa viagem, vacinada para hepatite A e B, INR de 2,4. Qual é o agente?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -98,7 +96,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Gestante, água de poço, hepatite grave:"
+    "pergunta": "31 semanas, água de poço, vacinada para A e B e INR 2,4: qual vírus?"
   },
   "cta": "pre_inscricao",
   "reel": null,

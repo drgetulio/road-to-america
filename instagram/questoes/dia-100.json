@@ -33,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Oral acetaminophen",
-        "quiz": "Paracetamol oral"
+        "quiz": "Oral acetaminophen"
       },
       "B": {
         "texto": "Cold-water immersion",
-        "quiz": "Banho de água gelada"
+        "quiz": "Cold-water immersion"
       },
       "C": {
         "texto": "Intravenous dantrolene",
-        "quiz": "Dantrolene IV"
+        "quiz": "IV dantrolene"
       },
       "D": {
         "texto": "Noncontrast head CT before cooling",
-        "quiz": "TC de crânio antes"
+        "quiz": "Head CT before cooling"
       }
     },
     "correta": "B"
@@ -67,7 +67,7 @@
     },
     "macete": {
       "frase": "Bloco quente, *banheira gelada*: esfria primeiro, transporta depois",
-      "apoio": "Na imagem, o carrinho de bloco ferve no sol e as três saídas da placa esperam a escolha.",
+      "apoio": "Pegadinha de prova: O NBME separa insolação (acima de 40 °C com alteração mental) de exaustão pelo calor (estado mental normal) e coloca antitérmico e dantrolene como iscas.",
       "fala": "Eu guardo calor porque sou térmica. Folião não: gelo primeiro, ambulância depois."
     }
   },

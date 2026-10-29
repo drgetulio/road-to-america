@@ -8,22 +8,23 @@
   "topico": "Anemia ferropriva no homem idoso",
   "conceito": "Iron deficiency anemia in an older man: colonoscopy and upper endoscopy",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-28",
   "tom": null,
   "gancho": "Ferro baixo aos 68 anos: onde está o *vazamento*?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Sem queixa digestiva, ferritina 9 e uma colonoscopia normal há seis anos. Dona Térmica desconfia.",
   "imagem": {
     "arquivo": "dia-177.png",
-    "cena": "Placa verde de rodovia com três saídas. No acostamento, um carrinho cor de ferrugem com o ponteiro de combustível na reserva e algumas gotinhas caindo de algum lugar embaixo dele, sem dar para ver de onde.",
+    "cena": "Num posto de gasolina de estrada às 3 da manhã, um carrinho cor de ferrugem está com o ponteiro na reserva e algumas gotinhas caindo de algum lugar embaixo dele. Dona Térmica, de lanterna na mão, confere o relógio sem números da conveniência.",
     "foco": "50% 35%",
-    "alt": "Placa verde de rodovia com três saídas."
+    "alt": "Carrinho cor de ferrugem na reserva pinga no posto de gasolina; Dona Térmica, de lanterna, desconfia."
   },
   "imagem_macete": {
     "arquivo": "dia-177-macete.png",
-    "cena": "Duas lanternas iluminam uma mangueira comprida pelas duas pontas, de cima e de baixo, e os fachos se encontram num furinho brilhante. A primeira saída da placa acende verde.",
-    "alt": "Ferropenia no homem: endoscopia pelas duas pontas"
+    "cena": "Duas lanternas iluminam uma mangueira comprida pelas duas pontas, de cima e de baixo, e os fachos se encontram num furinho brilhante. Dona Térmica aponta o furo; a bomba de combustível fica esperando.",
+    "alt": "Duas lanternas iluminam a mangueira pelas duas pontas e acham o furinho; a bomba de combustível espera."
   },
   "questao": {
     "vinheta": "A 68-year-old man has 3 months of fatigue. He takes no medications and has no gastrointestinal symptoms. Hemoglobin is 9.6 g/dL, MCV 71 fL, and ferritin 9 ng/mL. Stool color is normal. A screening colonoscopy 6 years ago was normal.",
@@ -65,13 +66,13 @@
       "D": "A cápsula fica para depois de colonoscopia e endoscopia digestiva alta sem achados."
     },
     "macete": {
-      "frase": "Ferro baixo em homem é *mangueira furada*: procure o furo pelas *duas pontas*, por cima e por baixo, com duas lanternas.",
-      "apoio": "O NBME coloca uma colonoscopia normal recente ou a ausência de sintomas para tentar você a só repor ferro; a investigação bidirecional continua indicada, e a sorologia para doença celíaca entra junto.",
-      "fala": null
+      "frase": "Ferro baixo em homem é *mangueira furada*: procure o furo pelas *duas pontas*",
+      "apoio": "Colonoscopia e endoscopia alta, mesmo sem sintomas e com colonoscopia normal anos antes; sorologia para doença celíaca junto.",
+      "fala": "Já vi esse caso às 3 da manhã: encher o tanque sem achar o furo só adia a pane."
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça. Homem de 68 anos, cansado, sem queixa digestiva, com ferritina lá embaixo e uma colonoscopia normal há seis anos. A placa tem três saídas.",
+    "contexto": "Plantão de Terça. Homem de 68 anos, cansado, sem sintomas digestivos, com anemia microcítica, ferritina lá embaixo e uma colonoscopia normal há seis anos. Qual é o próximo passo?",
     "palavras_chave": [
       "fatigue",
       "microcytic anemia",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ferropenia em homem de 68. Próximo passo?"
+    "pergunta": "Homem de 68, ferritina 9, sem sintomas e colono normal há 6 anos: e agora?"
   },
   "cta": "simulado",
   "exemplo": false

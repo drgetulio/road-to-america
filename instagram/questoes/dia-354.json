@@ -8,6 +8,7 @@
   "topico": "Líquen escleroso",
   "conceito": "Vulvar lichen sclerosus: biopsy if unclear, high-potency topical steroid",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-22",
@@ -16,13 +17,13 @@
   "gancho_apoio": "Coceira vulvar de longa data, placas brancas finas e biópsia confirmada.",
   "imagem": {
     "arquivo": "dia-354.png",
-    "cena": "Garçom de rodízio com quatro espetos, cada um com um ícone (um fungo redondo, um pote de creme com flor, um pote de creme com halter, um tubo com escudo), e ao fundo uma pipa de papel de seda branca em forma de oito no céu.",
+    "cena": "Garçom Espetinho com quatro espetos, cada um com um ícone: um fungo redondo, um pote de creme com flor, um pote de creme com halter e um tubo com escudo; a plaquinha verde e vermelha no avental; ao fundo, uma pipa de papel de seda branca em forma de oito no céu.",
     "foco": "50% 35%",
     "alt": "A pipa de papel de seda branca que desenha um oito"
   },
   "imagem_macete": {
     "arquivo": "dia-354-macete.png",
-    "cena": "Callback: o garçom serve o espeto do tubo com escudo e levanta a plaquinha verde; a pipa em oito agora está presa por uma linha forte e brilhante e ganha cor aos poucos.",
+    "cena": "Callback: o garçom serve o espeto do tubo com escudo e levanta o lado verde da plaquinha; a pipa em oito agora está presa por uma linha forte e brilhante e ganha cor aos poucos.",
     "foco": "50% 45%",
     "alt": "Líquen escleroso: clobetasol e seguimento para sempre"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Pipa branca em oito, linha de clobetasol*",
-      "apoio": "A pele vira papel de seda branco, como pipa de papel de seda, e desenha um oito ao redor da vulva e do ânus. A linha forte que segura a pipa é o corticoide de alta potência, e o dono da pipa nunca deixa de olhar para ela (seguimento por toda a vida).",
-      "fala": null
+      "apoio": "A pele fina e branca lembra papel de seda e desenha um oito ao redor da vulva e do ânus. A linha forte que segura a pipa é o corticoide tópico de altíssima potência, e o dono da pipa nunca deixa de olhar para ela: seguimento por toda a vida, porque o risco de carcinoma escamoso aumenta.",
+      "fala": "Linha forte e olho na pipa."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Placas brancas em 8, biópsia feita:"
+    "pergunta": "Placas brancas em oito ao redor da vulva, biópsia confirmada: qual tratamento?"
   },
   "cta": "simulado",
   "reel": null,

@@ -8,21 +8,22 @@
   "topico": "Apneia obstrutiva do sono",
   "conceito": "Obstructive sleep apnea: polysomnography confirms, CPAP treats",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-06",
   "tom": null,
-  "gancho": "A orquestra noturna *tem pausas*. Como provar?",
-  "gancho_apoio": "Sonolência de dia, ronco alto e pausas na respiração à noite.",
+  "gancho": "A orquestra da madrugada *faz pausas demais*: quem conta os compassos?",
+  "gancho_apoio": "Sonolência de dia, ronco alto e uma quase batida no trânsito. Falta provar.",
   "imagem": {
     "arquivo": "dia-338.png",
-    "cena": "Um quarto à noite transformado em sala de concerto: uma tuba feita de mangueira de jardim mole toca notas musicais que somem em silêncio de tempos em tempos; uma lua sorridente na janela e um relógio sem números.",
+    "cena": "Um quarto à noite transformado em sala de concerto, com um relógio sem números nas 3 horas; uma tuba feita de mangueira de jardim mole toca notas musicais que somem em silêncio de tempos em tempos; a Dona Térmica, na plateia, espera com a prancheta; uma lua na janela.",
     "foco": "50% 35%",
-    "alt": "A orquestra noturna tem pausas. Como provar?"
+    "alt": "A orquestra da madrugada faz pausas demais: quem conta os compassos?"
   },
   "imagem_macete": {
     "arquivo": "dia-338-macete.png",
-    "cena": "Callback: o mesmo quarto virou laboratório do sono, com fios e uma tela de ondas sem números gravando a noite; uma bombinha de ar acoplada mantém a mangueira esticada e as notas tocam sem pausa.",
+    "cena": "Callback: o mesmo quarto virou laboratório do sono, com fios e uma tela de ondas sem números gravando a noite; a Dona Térmica rege com uma batuta e conta as pausas; uma bombinha de ar acoplada mantém a mangueira esticada e as notas tocam sem parar.",
     "foco": "50% 45%",
     "alt": "Apneia obstrutiva: polysomnography confirma, CPAP trata"
   },
@@ -52,7 +53,7 @@
   "explicacao": {
     "titulo": "Apneia obstrutiva: *polysomnography* confirma, CPAP trata",
     "certa": [
-      "Ronco, pausas observadas, sonolência diurna, pescoço largo e hipertensão resistente apontam para *obstructive sleep apnea*. A *polysomnography* (no laboratório ou, em adulto sem comorbidade grave, o *home sleep apnea test*) conta as apneias e hipopneias por hora e confirma com *apnea-hypopnea index* de 5 ou mais com sintomas. O tratamento de primeira linha é *CPAP*."
+      "Ronco, pausas observadas, sonolência diurna, pescoço largo e hipertensão resistente apontam para *obstructive sleep apnea*. A *polysomnography* no laboratório é o padrão de referência: conta as apneias e hipopneias por hora e confirma com *apnea-hypopnea index* de 5 ou mais com sintomas (ou 15 ou mais sem sintomas). Em adulto sem comorbidade cardiopulmonar importante, o *home sleep apnea test* é uma alternativa aceita, mas é um teste simplificado, não uma polissonografia, e um resultado negativo pede o exame no laboratório. O tratamento de primeira linha é *CPAP*."
     ],
     "termos": [
       "obstructive sleep apnea",
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Mangueira de jardim mole*: de noite dobra, o CPAP sopra",
-      "apoio": "A via aérea é uma mangueira mole: acordada fica aberta, dormindo dobra e o fluxo para. A polissonografia é a câmera que grava a noite inteira, e o CPAP é o ar que mantém a mangueira esticada.",
-      "fala": null
+      "apoio": "A via aérea é uma mangueira mole: acordado fica aberta, dormindo dobra e o fluxo para. Quem confirma não é o ouvido da família, é o maestro que conta as pausas por hora: a polissonografia no laboratório. Em adulto sem doença cardiopulmonar importante, o teste domiciliar simplificado também serve, mas não é polissonografia, e um resultado negativo pede o laboratório. O CPAP mantém a mangueira esticada.",
+      "fala": "Já vi esse caso às 3 da manhã. Roncando."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Ronco, pausas e sono de dia. Que exame?"
+    "pergunta": "Ronco, pausas na respiração e quase dormiu dirigindo: qual exame confirma?"
   },
   "cta": "simulado",
   "reel": null,

@@ -8,22 +8,23 @@
   "topico": "Irritabilidade no autismo",
   "conceito": "Severe irritability in autism: risperidone or aripiprazole with metabolic monitoring",
   "personagem": null,
+  "anfitriao": "Tia Meia-Vida",
   "gancho_data": "Dia Mundial de Conscientização do Autismo (2/4): tom respeitoso, sem humor sobre a condição.",
   "remix_de": null,
   "explicacao_em": "2027-04-03",
   "tom": "acolhedor",
-  "gancho": "Irritabilidade intensa no autismo: quais remédios têm aprovação da FDA?",
-  "gancho_apoio": null,
+  "gancho": "2 de abril: irritabilidade grave, terapia feita e *uma decisão* de remédio",
+  "gancho_apoio": "Hoje sem piada. A Tia Meia-Vida explica com calma o que a diretriz americana recomenda.",
   "imagem": {
     "arquivo": "dia-152.png",
-    "cena": "Um balcão de farmácia sereno, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada, à luz suave da manhã. Sem piada: a imagem lembra que remédio vem junto com acompanhamento.",
+    "cena": "Um balcão de farmácia sereno, à luz suave da manhã, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada. A Tia Meia-Vida, tranquila, apoia as mãos no balcão. Sem piada: a imagem lembra que remédio vem junto com acompanhamento.",
     "foco": "50% 35%",
-    "alt": "Um balcão de farmácia sereno, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada, à luz suave da manhã."
+    "alt": "Balcão de farmácia sereno com balança, tubos de exame e uma caixa fechada; a Tia Meia-Vida, tranquila, atrás."
   },
   "imagem_macete": {
     "arquivo": "dia-152-macete.png",
-    "cena": "Duas chaves num chaveiro sobre o balcão, uma vermelha e uma verde (os dois remédios aprovados), ao lado da balança e dos tubos de exame: remédio e monitorização andam juntos.",
-    "alt": "Irritabilidade grave no autismo: risperidone ou aripiprazole"
+    "cena": "Duas chaves num chaveiro sobre o balcão, uma vermelha e uma verde (os dois remédios aprovados), ao lado da balança e dos tubos de exame; a Tia Meia-Vida aponta para os três juntos.",
+    "alt": "Duas chaves, uma vermelha e uma verde, ao lado da balança e dos tubos de exame; a Tia aponta para os três."
   },
   "questao": {
     "vinheta": "An 8-year-old boy with autism spectrum disorder has had 6 months of severe irritability with aggression toward family members and self-injury, despite 4 months of consistent behavioral therapy and parent training. Evaluation for medical causes, including pain, constipation, and sleep problems, is unremarkable.",
@@ -66,9 +67,9 @@
       "D": "A *clonidine* pode ajudar no sono e na hiperatividade, mas não é a primeira escolha para agressividade grave."
     },
     "macete": {
-      "frase": "Duas chaves aprovadas, *R* e *A*: risperidona e aripiprazol. Junto com elas, sempre a balança e o exame de sangue.",
-      "apoio": "O NBME costuma exigir que a terapia comportamental e as causas médicas de desconforto, como dor e constipação, tenham sido avaliadas antes do antipsicótico, e cobra a monitorização metabólica.",
-      "fala": null
+      "frase": "Duas chaves aprovadas, *R* e *A*: risperidona e aripiprazol, sempre com balança e exame de sangue",
+      "apoio": "Antes do antipsicótico: terapia comportamental e busca de causas de desconforto, como dor, constipação e sono. Depois: peso, glicemia, lipídios e prolactina.",
+      "fala": "Remédio aqui trata a irritabilidade, não o autismo. E vem sempre com acompanhamento."
     }
   },
   "legenda": {
@@ -81,7 +82,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Irritabilidade grave no TEA: qual remédio?"
+    "pergunta": "Irritabilidade grave no TEA apesar de terapia comportamental: qual remédio?"
   },
   "cta": "simulado",
   "exemplo": false

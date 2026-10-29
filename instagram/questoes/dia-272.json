@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-01",
   "tom": null,
-  "gancho": "A sala de espera virou *panela de pressão de feijão*. Quem baixa o fogo?",
+  "gancho": "A sala de espera virou *panela de pressão de feijão*",
   "gancho_apoio": "Laudo perdido, duas horas de estrada e uma reclamação em voz alta. A ordem das próximas frases vale ponto.",
   "imagem": {
     "arquivo": "dia-272.png",
-    "cena": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita entre o botão do fogo e a tampa. Do lado, o Viés, meio escondido atrás de uma tabela 2x2 colada na geladeira, oferece um apito de segurança e um manual grosso de regras.",
+    "cena": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita diante de quatro objetos na bancada: um apito, um manual grosso, um pano de prato dobrado e um cronômetro de cozinha. O Viés espia, meio escondido atrás de uma tabela 2x2 colada na geladeira.",
     "foco": "50% 35%",
-    "alt": "A panela de pressão da sala de espera e o Viés com um apito"
+    "alt": "A panela de pressão da sala de espera e quatro objetos na bancada"
   },
   "imagem_macete": {
     "arquivo": "dia-272-macete.png",
-    "cena": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, e o Viés deixa o apito e o manual caírem atrás da geladeira.",
+    "cena": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, o apito e o manual vão parar atrás da geladeira, e o Viés espia, contrariado.",
     "foco": "50% 45%",
     "alt": "Primeiro acolhe, depois explica"
   },
@@ -66,7 +66,7 @@
     },
     "macete": {
       "frase": "*Panela de pressão*: primeiro baixa o fogo, depois abre a tampa",
-      "apoio": "Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é o Viés oferecendo apito para panela de pressão.",
+      "apoio": "Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é oferecer apito para panela de pressão.",
       "fala": "Se você não randomizou, eu entrei. Se começou se defendendo, também."
     }
   },

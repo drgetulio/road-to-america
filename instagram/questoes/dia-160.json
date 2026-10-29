@@ -8,22 +8,23 @@
   "topico": "Intérprete profissional",
   "conceito": "Language barrier: use a professional medical interpreter, not a family member",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-11",
   "tom": null,
-  "gancho": "Consentimento em outra língua: quem *traduz* essa conversa?",
-  "gancho_apoio": null,
+  "gancho": "O neto traduz o cardápio do restaurante todo domingo. Serve para o *consentimento*?",
+  "gancho_apoio": "Paciente que só fala português, angiografia indicada e um neto de 17 anos muito prestativo.",
   "imagem": {
     "arquivo": "dia-160.png",
-    "cena": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar. Um adolescente segura um dicionário de bolso, um celular no banco mostra só ondinhas e um telefone com fone espera num suporte na parede.",
+    "cena": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar. Um adolescente segura um cardápio de restaurante, um celular no banco mostra só ondinhas e um telefone com fone espera num suporte na parede. Dona Bússola observa, com o ponteiro girando; ao lado, um quadrinho 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar."
+    "alt": "Duas bolhas de fala que não se encontram; um adolescente com cardápio, um celular e um telefone na parede."
   },
   "imagem_macete": {
     "arquivo": "dia-160-macete.png",
-    "cena": "O telefone com fone acende em verde e vira uma ponte de luz entre as duas bolhas de fala, que enfim se tocam. O neto guarda o dicionário na mochila e faz sinal de positivo da cadeira da sala de espera.",
-    "alt": "Procedimento se traduz com intérprete profissional"
+    "cena": "O telefone com fone acende em verde e vira uma ponte de luz entre as duas bolhas de fala, que enfim se tocam. O neto guarda o cardápio e faz sinal de positivo, e o ponteiro da Dona Bússola para no telefone.",
+    "alt": "O telefone vira uma ponte de luz entre as duas bolhas de fala; o neto guarda o cardápio e faz positivo."
   },
   "questao": {
     "vinheta": "A 61-year-old Portuguese-speaking woman with limited English is admitted to a US hospital with chest pain, and coronary angiography is recommended. Her 17-year-old grandson, who is fluent in English, offers to translate the consent discussion. The hospital has a 24-hour professional telephone interpreter service.",
@@ -65,13 +66,13 @@
       "D": "Inglês simples e gestos não garantem que a paciente entenda riscos e alternativas, e o consentimento fica inválido."
     },
     "macete": {
-      "frase": "A família traduz o pedido de pão de queijo na padaria; *procedimento* quem traduz é o *intérprete profissional*.",
-      "apoio": "O NBME oferece o familiar bilíngue, o funcionário que \"fala um pouco\" e o aplicativo: a resposta é o intérprete profissional, mesmo por telefone, salvo emergência sem alternativa.",
-      "fala": null
+      "frase": "A família traduz o *cardápio*; *procedimento* quem traduz é o intérprete profissional",
+      "apoio": "Familiar bilíngue, funcionário que \"fala um pouco\" ou aplicativo: a resposta é o intérprete profissional, mesmo por telefone, salvo emergência sem alternativa.",
+      "fala": "Meu norte é o paciente: neto traduz cardápio, intérprete traduz consentimento."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com uma cena que muito brasileiro vai viver nos EUA: a paciente só fala português, e o neto bilíngue se oferece para ajudar. É um caso clássico de comunicação na prova.",
+    "contexto": "Sábado Sem Viés com uma cena que muito brasileiro vai viver nos EUA: a paciente só fala português, e o neto bilíngue se oferece para ajudar na conversa do consentimento. O hospital tem serviço de intérprete 24 horas.",
     "palavras_chave": [
       "language barrier",
       "family member translator",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Paciente só fala português. Quem traduz?"
+    "pergunta": "Paciente só fala português e vai assinar o consentimento: quem traduz?"
   },
   "cta": "simulado",
   "exemplo": false

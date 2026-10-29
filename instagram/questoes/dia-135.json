@@ -8,23 +8,24 @@
   "topico": "Artrite séptica",
   "conceito": "Suspected septic arthritis: arthrocentesis before antibiotics",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-17",
   "tom": null,
-  "gancho": "Perícia *antes* da faxina: quem entra primeiro no joelho?",
-  "gancho_apoio": "Joelho quente, vermelho e febre. O antibiótico está ansioso na porta.",
+  "gancho": "O joelho virou *forno a lenha* às 3 da manhã. Qual é o seu primeiro movimento?",
+  "gancho_apoio": "Febre, derrame grande e dor a qualquer movimento. Dona Térmica já ouviu quatro planos no corredor.",
   "imagem": {
     "arquivo": "dia-135.png",
-    "cena": "Uma casinha em forma de articulação de joelho cercada por fita amarela e preta de cena de investigação. Um detetive de lupa olha a porta, e uma equipe de faxina formada por cápsulas de antibiótico com rodos e baldes espera ansiosa.",
+    "cena": "Na copa do plantão, Dona Térmica, de prancheta, olha um joelho em forma de forno a lenha, vermelho de quente. Na bancada, lado a lado: uma seringa grande, um frasco de antibiótico, um ímã de ressonância e um potinho de comprimidos. Um relógio de parede sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Casinha em forma de joelho com fita de investigação; um detetive na porta e cápsulas de antibiótico com rodos esperando."
+    "alt": "Dona Térmica diante de um joelho em forma de forno a lenha; na bancada, seringa, antibiótico, ímã e comprimidos."
   },
   "imagem_macete": {
     "arquivo": "dia-135-macete.png",
-    "cena": "Callback: o detetive sai da casinha com um frasco de amostra cheio de líquido turvo, colhido com uma seringa. Só então as cápsulas da faxina entram com os rodos.",
+    "cena": "Dona Térmica usa a seringa grande pela portinha do forno e colhe um frasco de líquido turvo, que vai para o laboratório com etiqueta de perícia. Só depois o frasco de antibiótico entra em cena, e o forno esfria.",
     "foco": "50% 40%",
-    "alt": "O detetive sai com a amostra de líquido; depois entram as cápsulas da faxina."
+    "alt": "Dona Térmica colhe o líquido turvo com a seringa pela portinha do forno; depois entra o antibiótico e o forno esfria."
   },
   "questao": {
     "vinheta": "A 67-year-old man with type 2 diabetes has had a painful, swollen right knee for 1 day. Temperature is 38.6°C; BP is 132/80 mm Hg. The knee is warm and red with a large effusion, and any passive movement causes severe pain. Leukocyte count is 15,800/mm3. He has no prosthetic joints.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "*Perícia antes da faxina*: punciona, depois limpa com antibiótico",
-      "apoio": "Na imagem, o detetive colhe a amostra enquanto a equipe de limpeza espera na porta.",
-      "fala": null
+      "apoio": "Celularidade, Gram, cultura e cristais do líquido; logo depois, hemocultura e antibiótico empírico. Em choque séptico, antibiótico sem esperar.",
+      "fala": "Antibiótico antes da punção é faxina antes da perícia: some a prova do crime."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça: um joelho que esquentou da noite para o dia. Todo mundo quer tratar logo, mas a ordem importa.",
+    "contexto": "Plantão de Terça: diabético de 67 anos com um joelho que esquentou da noite para o dia, febre de 38,6 e pressão normal. Quatro caminhos possíveis, e só um vem primeiro.",
     "palavras_chave": [
       "acute monoarthritis",
       "fever",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Joelho séptico estável: qual o 1º passo?"
+    "pergunta": "Joelho quente com derrame e febre, paciente estável: qual o 1º passo?"
   },
   "cta": null,
   "reel": null,

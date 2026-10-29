@@ -8,22 +8,23 @@
   "topico": "Peritonite bacteriana espontânea",
   "conceito": "Spontaneous bacterial peritonitis: ascitic neutrophils 250 or more, ceftriaxone plus albumin",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-07",
   "tom": null,
-  "gancho": "Caixa d'água com febre: o que a punção vai mostrar?",
-  "gancho_apoio": null,
+  "gancho": "A *caixa d'água* do cirrótico pegou febre. O que a punção vai mostrar?",
+  "gancho_apoio": "Ascite, febre baixa e confusão nova. Dona Térmica já separou o tubinho.",
   "imagem": {
     "arquivo": "dia-156.png",
-    "cena": "Uma caixa d'água de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado. Na beira da estrada, a placa verde com três saídas.",
+    "cena": "Uma caixa d'água azul de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado. Dona Térmica sobe o morrinho com a prancheta, e um relógio de varanda sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Uma caixa d'água de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado."
+    "alt": "Caixa d'água no morrinho com termômetro na tampa e tubinho vazio; Dona Térmica sobe com a prancheta."
   },
   "imagem_macete": {
     "arquivo": "dia-156-macete.png",
-    "cena": "A caixa d'água ganha uma torneirinha que enche o tubo, e no palco ao lado uma dupla sertaneja de frascos (um de antibiótico e um de albumina) canta junta de violão. A primeira saída da placa acende verde.",
-    "alt": "Passou de 250, é peritonite espontânea"
+    "cena": "A caixa d'água ganha uma torneirinha que enche o tubo, e no palco ao lado uma dupla sertaneja de frascos, um de antibiótico e um de albumina, canta junta de violão. Dona Térmica bate palma.",
+    "alt": "A torneirinha enche o tubo e uma dupla sertaneja de frascos, antibiótico e albumina, canta junta."
   },
   "questao": {
     "vinheta": "A 58-year-old man with alcohol-related cirrhosis and ascites has 2 days of low-grade fever, diffuse mild abdominal tenderness, and new confusion. Paracentesis shows 410 neutrophils/µL, total protein 0.9 g/dL, glucose 110 mg/dL, and LDH below the serum upper limit of normal. Gram stain shows no organisms.",
@@ -65,9 +66,9 @@
       "D": "Ascite sem infecção tem menos de 250 neutrófilos/µL; com 410 há infecção."
     },
     "macete": {
-      "frase": "*250* é a senha da caixa d'água: passou disso, chama a dupla sertaneja *Ceftriaxona e Albumina*, que só se apresenta junta.",
-      "apoio": "O NBME pede paracentese diagnóstica em todo cirrótico com ascite que interna ou piora (febre, dor, confusão, lesão renal) e testa o número 250 e a albumina junto com o antibiótico.",
-      "fala": null
+      "frase": "*250* é a senha da caixa d'água: passou disso, chama a dupla *Ceftriaxona e Albumina*",
+      "apoio": "Paracentese em todo cirrótico com ascite que interna ou piora. Albumina 1,5 g/kg no dia 1 e 1 g/kg no dia 3.",
+      "fala": "Passou de 250 neutrófilos, chama a dupla. Ceftriaxona e Albumina só fazem show juntas."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Cirrose, febre e 410 PMN na ascite. Qual é?"
+    "pergunta": "Cirrótico com febre e 410 neutrófilos/µL na ascite, Gram negativo: qual?"
   },
   "cta": "simulado",
   "exemplo": false

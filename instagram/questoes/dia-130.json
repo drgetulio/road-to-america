@@ -13,16 +13,16 @@
   "explicacao_em": "2027-03-12",
   "tom": null,
   "gancho": "Dia Mundial do Rim: a *peneira* deixou passar o que não devia",
-  "gancho_apoio": "Olho inchado de manhã, pernas inchadas e urina cheia de proteína. O Seu Néfron está intrigado.",
+  "gancho_apoio": "Olho inchado de manhã, perna inchada à tarde e urina cheia de proteína. O Seu Néfron está intrigado.",
   "imagem": {
     "arquivo": "dia-130.png",
-    "cena": "Seu Néfron, de lupa na mão, examina uma peneira de cozinha; balõezinhos brancos escapam pelos furos e uma poça de água se forma em volta dos pés da mesa dele.",
+    "cena": "Seu Néfron, de lupa na mão, examina uma peneira de cozinha numa mesa de rodízio; balõezinhos brancos escapam pelos furos e uma poça de água se forma em volta dos pés da mesa. Ao lado do prato, a plaquinha verde e vermelha do rodízio, pequena.",
     "foco": "50% 35%",
     "alt": "Seu Néfron examina com a lupa uma peneira por onde escapam balões brancos; a água empoça em volta da mesa."
   },
   "imagem_macete": {
     "arquivo": "dia-130-macete.png",
-    "cena": "Callback: Seu Néfron troca a lupa por um binóculo enorme e vê, de perto, a fileira de pezinhos dos podócitos achatados como chinelos no chão. Ao lado, um comprimido amarelo em forma de chave levanta os pezinhos de novo.",
+    "cena": "Seu Néfron troca a lupa por um binóculo enorme e vê, de perto, a fileira de pezinhos dos podócitos achatados como chinelos. Um comprimido amarelo em forma de chave levanta os pezinhos de novo, e a plaquinha da mesa mostra o verde.",
     "foco": "50% 40%",
     "alt": "Pelo binóculo, Seu Néfron vê pezinhos achatados como chinelos; um comprimido em forma de chave os levanta."
   },
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "Lesão mínima: *\"não achei nada\"* no óptico, *pés de chinelo* na eletrônica",
-      "apoio": "Na imagem, o Seu Néfron troca a lupa pelo binóculo e encontra os pés achatados dos podócitos.",
-      "fala": null
+      "apoio": "Criança, edema, proteína sem sangue e pressão normal: prednisona primeiro, biópsia só se não responder.",
+      "fala": "Na lupa, nada. No binóculo, pé de chinelo. Carimbo: prednisona."
     }
   },
   "legenda": {
-    "contexto": "Hoje é o Dia Mundial do Rim. No Rodízio de quinta, estação pediatria: um menino com olhos inchados de manhã.",
+    "contexto": "Hoje é o Dia Mundial do Rim. No Rodízio de Quinta, estação pediatria: um menino de 4 anos com olhos inchados toda manhã, pressão normal e urina sem sangue.",
     "palavras_chave": [
       "periorbital edema",
       "leg swelling",
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Criança com nefrótica pura: qual a causa?"
+    "pergunta": "Menino de 4 anos, edema, proteinúria 4+, sem sangue e C3 normal: qual a causa?"
   },
   "cta": null,
   "reel": null,

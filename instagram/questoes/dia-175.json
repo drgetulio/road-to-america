@@ -16,70 +16,69 @@
   ],
   "explicacao_em": "2027-04-26",
   "tom": null,
-  "gancho": "Remix do mosquito: a febre voltou depois de *dois meses*",
-  "gancho_apoio": null,
+  "gancho": "Dia da Malária: o mosquito foi embora, mas a febre *voltou sem convite*",
+  "gancho_apoio": "Remix do mosquito com anemia da doença crônica (dia 80), vivax (dia 120) e falciparum (dia 169).",
   "imagem": {
     "arquivo": "dia-175.png",
-    "cena": "Macrô ao lado de um toca-discos vermelho no boteco; o mosquito turista de chapéu de palha está de volta à porta. Ao lado do toca-discos, três discos com ícones (uma gota de ferro, uma campainha de recepção de hotel e um pedaço de velcro) e um quarto disco desconhecido, de casaco ondulado.",
+    "cena": "Macrô, com a comanda em branco no bolso, está sentado num banco de praça ao lado do mosquito turista de chapéu de palha, que voltou de viagem. No banco, três lembrancinhas: um chaveiro em forma de gota de ferro, um sininho de recepção e um pedaço de velcro. Num canto, um pequeno vinil.",
     "foco": "50% 35%",
-    "alt": "Macrô ao lado de um toca-discos vermelho no boteco; o mosquito turista de chapéu de palha está de volta à porta."
+    "alt": "Macrô num banco de praça com o mosquito turista e três lembrancinhas: gota de ferro, sininho e velcro."
   },
   "imagem_macete": {
     "arquivo": "dia-175-macete.png",
-    "cena": "O disco da campainha toca e acende verde: atrás dele, um hotelzinho em forma de lobo de fígado tem uma janela acesa onde um hóspede de touca de dormir está acordando. Macrô segura a chave do check-out, com cabo em forma de pílula, depois de conferir na recepção uma prancheta com check verde (a G6PD).",
-    "alt": "Vivax deixa um hóspede dormindo no fígado"
+    "cena": "O sininho de recepção toca e, atrás do banco, aparece um hotelzinho em forma de lobo de fígado com uma janela acesa, onde um hóspede de touca de dormir está acordando. Macrô segura a chave do check-out com cabo de pílula, depois de conferir a G6PD numa prancheta com check verde.",
+    "alt": "Atrás do banco, um hotel em forma de fígado com um hóspede acordando; Macrô segura a chave do check-out."
   },
   "questao": {
-    "vinheta": "A 30-year-old man was treated with chloroquine for Plasmodium vivax malaria acquired in the Amazon 2 months ago. He now has fever every 48 hours, and the smear again shows P. vivax. He has not traveled since. G6PD activity is normal.",
-    "pergunta": "Which mechanism best explains the recurrence?",
+    "vinheta": "A 30-year-old man was treated with chloroquine alone for Plasmodium vivax malaria acquired in the Amazon. Two months later, without further travel, he again has fever every 48 hours, and the smear again shows P. vivax. Chloroquine is restarted, and G6PD activity is normal.",
+    "pergunta": "Which additional drug is most likely to prevent further episodes?",
     "alternativas": {
       "A": {
-        "texto": "PfEMP1-mediated cytoadherence",
-        "quiz": "Citoaderência PfEMP1",
+        "texto": "Intravenous artesunate",
+        "quiz": "Artesunato IV",
         "dia": 169
       },
       "B": {
-        "texto": "Hepcidin-mediated iron sequestration",
-        "quiz": "Hepcidina e ferro",
-        "dia": 80
+        "texto": "Atovaquone-proguanil",
+        "quiz": "Atovaquona-proguanil"
       },
       "C": {
-        "texto": "Reactivation of dormant liver hypnozoites",
-        "quiz": "Hipnozoíto hepático",
+        "texto": "Primaquine",
+        "quiz": "Primaquina",
         "dia": 120
       },
       "D": {
-        "texto": "Antigenic variation of variant surface glycoprotein",
-        "quiz": "Variação de VSG"
+        "texto": "Doxycycline",
+        "quiz": "Doxiciclina"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Vivax deixa um *hóspede dormindo* no fígado",
+    "titulo": "Vivax de volta: a *primaquina* limpa o fígado",
     "certa": [
-      "A *P. vivax* e a *P. ovale* deixam *hypnozoites* adormecidos no fígado, e a cloroquina mata as formas do sangue, mas não as do fígado. Semanas a meses depois os hipnozoítos acordam e a doença volta (*relapse*). Para evitar, depois de checar a *G6PD*, entra *primaquine* por 14 dias ou *tafenoquine* em dose única."
+      "A febre voltou porque a P. vivax deixou *hypnozoites* dormindo no fígado, e a cloroquina só mata as formas do sangue. Para a cura radical (*radical cure*), soma-se *primaquine* por 14 dias, ou *tafenoquine* em dose única, as drogas que matam o hipnozoíto. Antes, confirma-se a G6PD normal, porque na deficiência elas causam hemólise."
     ],
     "termos": [
       "Plasmodium vivax",
       "hypnozoites",
-      "relapse",
+      "radical cure",
       "primaquine",
       "G6PD"
     ],
     "erradas": {
-      "A": "Dia 169: a citoaderência pela PfEMP1 é da falciparum e explica a malária cerebral, não a recaída.",
-      "B": "Dia 80: a hepcidina prende o ferro nos macrófagos na anemia da doença crônica; explica anemia, não febre que volta.",
-      "D": "Intruso: a variação da VSG é a estratégia do Trypanosoma brucei, na doença do sono africana."
+      "A": "Dia 169: o artesunato IV é o tratamento da malária grave, como a cerebral por falciparum; age nas formas do sangue e não elimina o hipnozoíto.",
+      "B": "A atovaquona-proguanil mata as formas do sangue e as do fígado em desenvolvimento, por isso serve de profilaxia, mas não alcança o hipnozoíto já dormente.",
+      "D": "A doxiciclina é profilaxia de viagem e age só nas formas do sangue; não previne a recaída."
     },
     "macete": {
-      "frase": "*Vivax* e *ovale* deixam um *hóspede dormindo* no hotel fígado (o hipnozoíto do dia 120), que acorda semanas depois. A cloroquina só arruma o salão (o sangue); o check-out do quarto escondido é da *primaquina*, depois de a recepção conferir a G6PD.",
-      "apoio": "O NBME pergunta qual remédio evita a recaída (primaquina ou tafenoquina) e qual exame vem antes (G6PD, pelo risco de hemólise).",
-      "fala": null
+      "frase": "*Vivax* e *ovale* deixam um *hóspede dormindo* no hotel fígado",
+      "apoio": "A cloroquina só arruma o salão (o sangue); o check-out do quarto escondido é da primaquina ou da tafenoquina, depois da G6PD. Bônus: na anemia da doença crônica (dia 80), a hepcidina prende o ferro no macrófago.",
+      "fala": "Comi, mostrei, avisei. Mas hóspede dormindo no fígado só sai com primaquina."
     }
   },
   "legenda": {
-    "contexto": "25 de abril é o Dia Mundial da Malária, e o Remix de domingo é do mosquito: anemia da doença crônica (dia 80), hipnozoítos (dia 120) e falciparum (dia 169), mais um intruso. A febre voltou dois meses depois. Por quê?",
+    "contexto": "25 de abril é o Dia Mundial da Malária, e o Remix de Domingo é do mosquito: três conceitos já vistos voltam num caso só. Vivax da Amazônia tratado só com cloroquina, sem viagem nova, e febre a cada 48 horas dois meses depois. O que somar ao tratamento?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -87,7 +86,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Vivax voltou em 2 meses. Por quê?"
+    "pergunta": "Vivax de volta 2 meses após só cloroquina: o que somar?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

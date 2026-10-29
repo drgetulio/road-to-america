@@ -8,22 +8,23 @@
   "topico": "Transtorno factício e simulação",
   "conceito": "Factitious disorder vs malingering: internal motive (sick role) vs external gain",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Dia da Mentira (1/4).",
   "remix_de": null,
   "explicacao_em": "2027-04-02",
   "tom": null,
-  "gancho": "1º de abril: o que separa os dois é o *motivo*",
-  "gancho_apoio": null,
+  "gancho": "1º de abril: dois diagnósticos que a prova *adora trocar*",
+  "gancho_apoio": "O NBME esconde a diferença numa linha só da vinheta.",
   "imagem": {
     "arquivo": "dia-151.png",
-    "cena": "O garçom do rodízio oferece dois espetos curiosos, um com uma pulseira de hospital e outro com um malote de banco, e a plaquinha da mesa gira no ar, ainda sem decidir a cor.",
+    "cena": "Garçom Espetinho segura dois espetos curiosos: um com uma pulseira de internação e outro com um malote de banco. Atrás dele, um mural de bairro com serpentinas de 1º de abril; a plaquinha verde e vermelha gira no ar, ainda sem decidir a cor.",
     "foco": "50% 35%",
-    "alt": "O garçom do rodízio oferece dois espetos curiosos, um com uma pulseira de hospital e outro com um malote de banco, e a plaquinha da mesa gira no ar, ainda sem decidir a cor."
+    "alt": "Garçom Espetinho com dois espetos, uma pulseira de internação e um malote de banco; a plaquinha gira no ar."
   },
   "imagem_macete": {
     "arquivo": "dia-151-macete.png",
-    "cena": "A plaquinha pousa no verde ao lado do espeto da pulseira (motivo de dentro, factício); o espeto do malote fica com o lado vermelho. Uma setinha curva aponta para dentro, para o coração do garçom: o motivo é interno.",
-    "alt": "Sem malote, com pulseira: factitious disorder"
+    "cena": "A plaquinha pousa no verde ao lado do espeto da pulseira (motivo de dentro, factício); o espeto do malote fica com o lado vermelho. Uma setinha curva aponta para dentro, para o coração do garçom.",
+    "alt": "A plaquinha pousa no verde ao lado da pulseira; o malote fica com o vermelho; uma seta aponta para dentro."
   },
   "questao": {
     "vinheta": "A 31-year-old woman is admitted for the fourth time this year with confusion and a glucose of 38 mg/dL. She has no history of diabetes. Serum insulin is markedly elevated and C-peptide is low. She has no pending lawsuit or disability claim and repeatedly asks for more tests and a longer stay.",
@@ -65,9 +66,9 @@
       "D": "No *somatic symptom disorder* os sintomas são reais e não intencionais; o problema é a preocupação desproporcional, sem fabricação."
     },
     "macete": {
-      "frase": "Factício pede a *pulseira* de paciente; simulação pede o *malote* (dinheiro, atestado, folga). Pulseira é motivo de dentro, malote é motivo de fora.",
-      "apoio": "O NBME separa os dois pelo motivo: se a vinheta citar processo, benefício, prisão ou folga no trabalho, é simulação; sem ganho externo e com quadro fabricado, é factício.",
-      "fala": null
+      "frase": "Factício pede a *pulseira*; simulação pede o *malote*",
+      "apoio": "Processo, benefício, afastamento ou fuga de obrigação na vinheta: simulação. Sem ganho externo e com quadro fabricado: factício.",
+      "fala": "Pulseira ou malote, doutor? Sem processo nem benefício na vinheta, o espeto é o da pulseira."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Insulina alta e peptídeo C baixo. Qual é?"
+    "pergunta": "Insulina alta, peptídeo C baixo e nenhum ganho externo: qual diagnóstico?"
   },
   "cta": "simulado",
   "exemplo": false

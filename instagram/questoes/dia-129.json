@@ -13,16 +13,16 @@
   "explicacao_em": "2027-03-11",
   "tom": null,
   "gancho": "Na rodoviária da placenta, o ônibus pequeno *segura* melhor o passageiro",
-  "gancho_apoio": "O oxigênio troca de ônibus mesmo com pouco O2 por perto. Qual é o truque?",
+  "gancho_apoio": "O oxigênio troca de ônibus mesmo com pouco O2 por perto. Qual é o truque do Mito?",
   "imagem": {
     "arquivo": "dia-129.png",
-    "cena": "Uma rodoviária em forma de placenta com dois ônibus lado a lado: um grande e vermelho e um pequeno e amarelo. Balõezinhos de oxigênio com perninhas passam de um para o outro, e o Mito observa da plataforma com seu café.",
+    "cena": "Uma rodoviária em forma de placenta com dois ônibus lado a lado, um grande e vermelho e um pequeno e amarelo. Balõezinhos de oxigênio com perninhas passam de um para o outro, e o Mito observa da plataforma com seu café. Setinhas de manual de montagem apontam para os bancos dos ônibus.",
     "foco": "50% 35%",
     "alt": "Rodoviária em forma de placenta: balõezinhos de oxigênio passam do ônibus vermelho para o amarelo; Mito observa."
   },
   "imagem_macete": {
     "arquivo": "dia-129-macete.png",
-    "cena": "Callback: dentro do ônibus vermelho, sacos de areia cinzentos ocupam os bancos e empurram os passageiros O2 para a porta. No ônibus amarelo, os bancos têm um formato em que o saco não encaixa, e os passageiros ficam sentados, abraçados ao banco.",
+    "cena": "Dentro do ônibus vermelho, sacos de areia cinzentos ocupam os bancos e empurram os passageiros O2 para a porta. No amarelo, o banco tem um formato em que o saco não encaixa, e os passageiros ficam sentados, abraçados ao banco.",
     "foco": "50% 40%",
     "alt": "Sacos de areia empurram os passageiros do ônibus vermelho; no amarelo, os sacos não encaixam e os passageiros ficam."
   },
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "2,3-BPG é a *mala que empurra* o O2; a HbF não deixa a mala sentar",
-      "apoio": "Na imagem, os sacos de areia ocupam os bancos do ônibus vermelho e não cabem no amarelo.",
-      "fala": null
+      "apoio": "Curva para a Esquerda, o O2 fica; para a Direita, Descarrega.",
+      "fala": "Bebê tem preferência até na fila do oxigênio. E nem precisa mostrar documento."
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê com o Mito: como o feto consegue oxigênio num lugar onde o O2 é pouco?",
+    "contexto": "Quarta do Porquê com o Mito: como o feto consegue oxigênio num lugar onde o O2 é pouco? A curva fetal fica à esquerda da adulta, e a pergunta é por quê.",
     "palavras_chave": [
       "placenta",
       "oxygen-hemoglobin dissociation curve",
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Por que a curva da HbF vai à esquerda?"
+    "pergunta": "Curva da hemoglobina fetal à esquerda da adulta: qual propriedade explica?"
   },
   "cta": null,
   "reel": null,

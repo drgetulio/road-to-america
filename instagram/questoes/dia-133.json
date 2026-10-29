@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-03-15",
   "tom": null,
-  "gancho": "Remix: três flashcards mentem, *um* fala a verdade",
-  "gancho_apoio": "DiGeorge, pneumococo e HPV voltam hoje (dias 50, 106 e 127), com um intruso.",
+  "gancho": "Verruga que volta toda semana, igual *revisão atrasada do Anki*: vírus forte ou defesa fraca?",
+  "gancho_apoio": "Remix com DiGeorge (dia 50), pneumococo (dia 106) e HPV (dia 127) num caso só.",
   "imagem": {
     "arquivo": "dia-133.png",
-    "cena": "Macrô de DJ num toca-discos com quatro cartões de memória espalhados sobre o tampo e três discos girando sem rótulo: um com o desenho de um timo vazio, um com dois cocos encapsulados e um com uma bicicleta de dois freios.",
+    "cena": "Macrô, de luvas de jardinagem e com a comanda em branco no bolso, arranca do canteiro uma erva daninha em forma de couve-flor, e ao lado brotam duas. No banco do jardim, três pacotinhos de sementes: um com uma bolinha de capa de chuva, um com uma bicicleta de dois freios e um com dois patinhos. Num canto, um pequeno vinil.",
     "foco": "50% 35%",
-    "alt": "Macrô DJ com três discos (timo vazio, bactérias com cápsula, bicicleta) e quatro flashcards em branco."
+    "alt": "Macrô arranca uma erva daninha em forma de couve-flor e brotam duas; três pacotinhos de sementes no banco."
   },
   "imagem_macete": {
     "arquivo": "dia-133-macete.png",
-    "cena": "Callback: só um flashcard brilha com selo verde, o do timo vazio. Os outros três ganham um pequeno X vermelho, e o Macrô aponta para um baço segurança na porta, barrando as bactérias de capa.",
+    "cena": "Ao lado do canteiro aparece o quartel dos linfócitos T, pequenininho e com a guarita vazia. Macrô aponta para ele; os pacotinhos da capa de chuva e da bicicleta ganham um X vermelho.",
     "foco": "50% 40%",
-    "alt": "Um flashcard com selo verde; os outros com X vermelho; um baço segurança barra bactérias com cápsula."
+    "alt": "Ao lado do canteiro, um quartel minúsculo com a guarita vazia; Macrô aponta, e os outros pacotinhos levam um X."
   },
   "questao": {
-    "vinheta": "During Sunday review, a student writes four flashcards. Three contain an error.",
-    "pergunta": "Which flashcard is accurate?",
+    "vinheta": "A 4-year-old girl with 22q11.2 deletion syndrome has had recurrent oral candidiasis since infancy and was treated for neonatal hypocalcemia. She now has dozens of common warts on both hands that recur after every treatment.",
+    "pergunta": "Which mechanism best explains the extent of her warts?",
     "alternativas": {
       "A": {
-        "texto": "Encapsulated bacteria are cleared mainly by the liver",
-        "quiz": "Fígado limpa cápsula"
-      },
-      "B": {
-        "texto": "Pneumococcus: optochin-resistant alpha-hemolytic diplococcus",
-        "quiz": "Pneumo resiste opto",
+        "texto": "Polysaccharide capsule that resists phagocytosis",
+        "quiz": "Cápsula contra fagocitose",
         "dia": 106
       },
+      "B": {
+        "texto": "Failed B-cell maturation from BTK mutation",
+        "quiz": "Falta de BTK (célula B)"
+      },
       "C": {
-        "texto": "HPV 16: E6 binds and inactivates Rb",
-        "quiz": "E6 inativa Rb",
+        "texto": "Viral E6 protein degrading host p53",
+        "quiz": "E6 degrada p53",
         "dia": 127
       },
       "D": {
-        "texto": "DiGeorge: thymic aplasia from 3rd and 4th pouch failure",
-        "quiz": "DiGeorge: sem timo",
+        "texto": "T-cell deficiency from thymic hypoplasia",
+        "quiz": "Pouco T (timo hipoplásico)",
         "dia": 50
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "DiGeorge: *3ª e 4ª bolsas* faríngeas",
+    "titulo": "Verruga que não vai embora pede *linfócito T*",
     "certa": [
-      "Na deleção 22q11.2, a 3ª e a 4ª bolsas faríngeas não se desenvolvem: falta o timo (células T baixas e infecções virais e fúngicas) e faltam as paratireoides (hipocalcemia e tetania), com defeitos conotruncais no coração. É o CATCH-22: Cardiac, Abnormal facies, Thymic aplasia, Cleft palate, Hypocalcemia, cromossomo 22."
+      "Na deleção 22q11.2, a 3ª e a 4ª bolsas faríngeas formam mal o timo e as paratireoides: hipocalcemia neonatal e poucos linfócitos T. Quem controla vírus como o HPV e fungos como a Candida é a imunidade celular, por isso aparecem sapinho de repetição e verrugas extensas que voltam depois de cada tratamento. É o CATCH-22: Cardiac, Abnormal facies, Thymic hypoplasia, Cleft palate, Hypocalcemia, cromossomo 22."
     ],
     "termos": [
       "22q11.2 deletion",
-      "optochin",
-      "E7 and Rb",
-      "asplenia"
+      "thymic hypoplasia",
+      "cell-mediated immunity",
+      "HPV warts"
     ],
     "erradas": {
-      "A": "Intruso: quem remove bactérias encapsuladas opsonizadas é o baço, e por isso a asplenia aumenta o risco dessas infecções.",
-      "B": "Dia 106: o pneumococo é sensível à optoquina; o alfa-hemolítico resistente é o Streptococcus viridans.",
-      "C": "Dia 127: quem inativa o Rb é a E7; a E6 leva o p53 à degradação."
+      "A": "Dia 106: a cápsula polissacarídica do pneumococo explica bacteremia e pneumonia em asplênicos e crianças pequenas, não verrugas.",
+      "B": "Intruso: a falta de BTK é a agamaglobulinemia ligada ao X, em meninos, com infecções por bactérias encapsuladas, sem hipocalcemia nem candidíase.",
+      "C": "Dia 127: a E6 dos HPV de alto risco (16 e 18) degrada a p53 e explica a transformação maligna; a verruga comum vem de tipos de baixo risco e se espalha porque falta o T."
     },
     "macete": {
-      "frase": "*CATCH-22*, pneumo *opto-sim*, *E7 com Rb*, baço contra cápsula",
-      "apoio": "Errou alguma? Volte ao dia original (50, 106 ou 127) e refaça antes do próximo remix.",
-      "fala": null
+      "frase": "Verruga demais é *falta de T*, não excesso de vírus: na 22q11.2 o quartel do timo veio pequeno",
+      "apoio": "Bônus do remix: pneumococo é \"opto-sim\" e o baço é o porteiro contra a cápsula; E6 com p53, E7 com Rb.",
+      "fala": "Comi, mostrei, avisei. Mas sem T no quartel, ninguém veio buscar o pedido."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: três conceitos do mês e um intruso. Só um flashcard está certo.",
+    "contexto": "Remix de Domingo: uma menina de 4 anos com deleção 22q11.2, sapinho de repetição desde bebê e verrugas que voltam depois de cada tratamento. Três conceitos já vistos disputam a explicação.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,7 +93,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual flashcard está certo?"
+    "pergunta": "Deleção 22q11.2, sapinho e verrugas que sempre voltam: qual mecanismo?"
   },
   "cta": null,
   "reel": null,

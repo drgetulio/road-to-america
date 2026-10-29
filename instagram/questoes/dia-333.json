@@ -8,21 +8,22 @@
   "topico": "Febre pós-operatória",
   "conceito": "Postoperative fever by timing: urinary infection after day 3, wound infection around days 5 to 7",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-01",
   "tom": null,
-  "gancho": "Rodízio da febre: *cada espeto passa na sua hora*",
-  "gancho_apoio": "Febre no sexto dia depois de uma colectomia. Qual espeto chegou?",
+  "gancho": "Sexto dia de pós-operatório: *qual espeto o garçom traz agora?*",
+  "gancho_apoio": "Febre depois da colectomia tem cardápio por horário, como rodízio que respeita a ordem.",
   "imagem": {
     "arquivo": "dia-333.png",
-    "cena": "Garçom de rodízio segura cinco espetos, cada um com um ícone no topo: nuvem de vento, gota de água, tênis de caminhada, curativo adesivo e cápsula de remédio; atrás, um relógio de parede sem números.",
+    "cena": "Garçom Espetinho segura cinco espetos, cada um com um ícone no topo: nuvem de vento, gota de água, tênis de caminhada, curativo adesivo e cápsula de remédio; atrás, a mesa de entradas com pães de queijo; a plaquinha verde e vermelha no avental.",
     "foco": "50% 35%",
-    "alt": "Rodízio da febre: cada espeto passa na sua hora"
+    "alt": "Sexto dia de pós-operatório: qual espeto o garçom traz agora?"
   },
   "imagem_macete": {
     "arquivo": "dia-333-macete.png",
-    "cena": "Callback: o garçom serve só o espeto do curativo adesivo e levanta a plaquinha verde; os outros quatro espetos ficam no apoio, com a face vermelha da plaquinha virada para eles.",
+    "cena": "Callback: o garçom serve só o espeto do curativo adesivo e levanta o lado verde da plaquinha; os outros quatro espetos ficam no apoio, com o lado vermelho virado para eles.",
     "foco": "50% 45%",
     "alt": "Dias 5 a 7 com incisão inflamada: surgical site infection"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Os 5 Ws do rodízio*: Wind, Water, Walking, Wound, Wonder drugs",
-      "apoio": "O garçom traz os espetos em ordem: vento (pulmão, dias 1 e 2), água (urina, a partir do dia 3), caminhada (TVP, dias 4 a 6), ferida (dias 5 a 7) e remédio (qualquer dia). No dia 6, o espeto da ferida ganha a plaquinha verde.",
-      "fala": null
+      "apoio": "Febre pós-operatória é rodízio, cada espeto na sua hora: vento (atelectasia e pneumonia, dias 1 e 2), água (urina, a partir do dia 3), caminhada (TVP, dias 4 a 6), ferida (dias 5 a 7) e remédio (qualquer dia). Pedir a ferida no dia 1 é pedir picanha antes do pão de queijo.",
+      "fala": "Picanha só depois do pão de queijo."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Febre no 6º dia pós-op e incisão vermelha:"
+    "pergunta": "Colectomia há 6 dias, febre 38,6 e incisão quente com secreção: qual?"
   },
   "cta": "simulado",
   "reel": null,

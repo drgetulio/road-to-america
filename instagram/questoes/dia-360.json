@@ -8,21 +8,22 @@
   "topico": "Diferenciação sexual",
   "conceito": "Male differentiation: SRY drives Sertoli cells (anti-Mullerian hormone) and Leydig cells (testosterone)",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-28",
   "tom": null,
   "gancho": "Na obra do embrião, *uma equipe faltou ao serviço*",
-  "gancho_apoio": "Menino com genitália típica e um útero achado na cirurgia de hérnia.",
+  "gancho_apoio": "Menino com genitália típica e um útero achado na cirurgia de hérnia. Seu Allen procura a peça que sobrou.",
   "imagem": {
     "arquivo": "dia-360.png",
-    "cena": "Um canteiro de obras com duas torres de andaime lado a lado, um capacete de mestre de obras sobre a mesa e duas equipes: uma com bola de demolição e outra com tijolos; uma nuvem de poeira esconde qual equipe não apareceu.",
+    "cena": "Seu Allen, com setinhas de manual de montagem, num canteiro de obras com duas torres de andaime lado a lado; um capacete de mestre de obras sobre a mesa e duas equipes: uma com bola de demolição e outra com tijolos; uma nuvem de poeira esconde qual equipe não apareceu; na parede, um calendário marcado numa segunda-feira.",
     "foco": "50% 35%",
     "alt": "Na obra do embrião, uma equipe faltou ao serviço"
   },
   "imagem_macete": {
     "arquivo": "dia-360-macete.png",
-    "cena": "Callback: a equipe da bola de demolição não veio, e o guindaste fica parado; por isso a primeira torre continua de pé ao lado da segunda, já completa e com bandeirinha; o capacete do mestre de obras brilha sobre a mesa.",
+    "cena": "Callback: a equipe da bola de demolição não veio e o guindaste ficou parado; por isso a primeira torre continua de pé ao lado da segunda, já completa e com bandeirinha; o capacete do mestre de obras brilha sobre a mesa e o Seu Allen aponta para a torre que sobrou.",
     "foco": "50% 45%",
     "alt": "Útero num menino 46,XY: faltou o anti-Mullerian hormone"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Sertoli Some com o Müller; Leydig Levanta o Wolff*",
-      "apoio": "O SRY é o mestre de obras que contrata duas equipes: a da Sertoli, com a bola de demolição (AMH) que derruba a torre de Müller, e a da Leydig, com os tijolos (testosterona) que levanta a torre de Wolff. Se a demolição falta, a torre de Müller fica de pé.",
-      "fala": null
+      "apoio": "O SRY é o mestre de obras que contrata duas equipes: a da Sertoli, com a bola de demolição (AMH), que derruba a torre de Müller, e a da Leydig, com os tijolos (testosterona), que levanta a torre de Wolff. Se a demolição falta, a torre de Müller fica de pé ao lado de testículo, ducto deferente e genitália normais. Clássico de obra: alguém sempre falta na segunda.",
+      "fala": "Sobrou peça? Sobrou uma torre que ninguém demoliu."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "46,XY com útero e genitália típica:"
+    "pergunta": "Menino 46,XY com útero no saco herniário e genitália típica: o que faltou?"
   },
   "cta": "simulado",
   "reel": null,

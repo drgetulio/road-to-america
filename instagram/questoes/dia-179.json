@@ -8,22 +8,23 @@
   "topico": "Apendicite aguda",
   "conceito": "Suspected appendicitis: CT in adults, ultrasound first in children and in pregnancy",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-30",
   "tom": null,
-  "gancho": "Rodízio da apendicite: na gestante, qual espeto vem *primeiro*?",
-  "gancho_apoio": null,
+  "gancho": "Gestante de 18 semanas com dor que *desceu do umbigo*: picanha ou salada?",
+  "gancho_apoio": "Febre baixa, leucocitose e o Garçom Espetinho segurando dois pratos.",
   "imagem": {
     "arquivo": "dia-179.png",
-    "cena": "O garçom do rodízio fica entre o buffet de saladas e um espeto de picanha chiando, com duas mesas esperando: uma com pratinho infantil e um chocalho, outra com um prato comum de adulto.",
+    "cena": "No salão do rodízio, o Garçom Espetinho fica entre o buffet de saladas e um espeto de picanha chiando, com duas mesas esperando: uma com pratinho infantil e um chocalho, outra com um prato comum de adulto. Em cada mesa, a plaquinha verde e vermelha.",
     "foco": "50% 35%",
-    "alt": "O garçom do rodízio fica entre o buffet de saladas e um espeto de picanha chiando, com duas mesas esperando: uma com pratinho infantil e um chocalho, outra com um prato comum de ad"
+    "alt": "Garçom Espetinho entre o buffet de saladas e a picanha; duas mesas, uma com chocalho e outra com prato de adulto."
   },
   "imagem_macete": {
     "arquivo": "dia-179-macete.png",
     "cena": "Na mesa do chocalho a plaquinha fica verde e o garçom serve a salada com uma colher em forma de sonda de ultrassom; o espeto de picanha (TC) segue para a mesa do adulto. Ao fundo, uma porta redonda em túnel, como um aparelho de ressonância, fica de reserva.",
-    "alt": "Criança e gestante: ultrassom primeiro"
+    "alt": "Na mesa do chocalho, salada servida com colher de ultrassom; a picanha vai para o adulto; a ressonância espera."
   },
   "questao": {
     "vinheta": "At 18 weeks' gestation, a 27-year-old woman has 20 hours of periumbilical pain that has moved to the right lower abdomen, with nausea and a temperature of 38.0°C. She has right-sided abdominal tenderness. Leukocyte count is 14,500/mm3. Fetal heart rate is normal.",
@@ -65,9 +66,9 @@
       "D": "O enema baritado não tem papel no diagnóstico de apendicite e é contraindicado com suspeita de perfuração."
     },
     "macete": {
-      "frase": "No rodízio da apendicite, *criança e gestante* começam pelo *buffet de salada* (ultrassom, sem radiação). A *picanha* (TC) vai primeiro só para o adulto. Se a salada não resolver, a gestante pede a *ressonância* sem gadolínio.",
-      "apoio": "O NBME troca o paciente para mudar a resposta: adulto vai para TC, criança e gestante para ultrassom, e gestante com ultrassom inconclusivo para ressonância.",
-      "fala": null
+      "frase": "*Criança e gestante* começam pela *salada* (ultrassom); a *picanha* (TC) é do adulto",
+      "apoio": "Ultrassom inconclusivo na gestante: ressonância sem gadolínio. Com o diagnóstico, apendicectomia sem atraso.",
+      "fala": "Picanha é para adulto sem bebê a bordo. Gestante e criança começam pela salada, doutor."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Apendicite na gestante: 1ª imagem?"
+    "pergunta": "Gestante de 18 semanas com dor que migrou para a FID: qual a 1ª imagem?"
   },
   "cta": "simulado",
   "exemplo": false

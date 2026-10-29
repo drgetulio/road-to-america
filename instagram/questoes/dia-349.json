@@ -13,7 +13,7 @@
   "explicacao_em": "2027-10-17",
   "tom": null,
   "gancho": "O remédio *não cura*, mas a banheira enche",
-  "gancho_apoio": "Incidência igual, duração dobrada. O que acontece com a prevalência?",
+  "gancho_apoio": "Incidência igual, duração dobrada. O Viés quer saber o que acontece com a água.",
   "imagem": {
     "arquivo": "dia-349.png",
     "cena": "O Viés espia de trás de uma tabela 2x2 ao lado de uma banheira antiga com a torneira aberta, o ralo destampado e um patinho de borracha boiando; uma chave inglesa e uma tampa de ralo esquecidas no chão.",
@@ -22,7 +22,7 @@
   },
   "imagem_macete": {
     "arquivo": "dia-349-macete.png",
-    "cena": "Callback: a tampa cobre metade do ralo, a água subiu e o patinho flutua bem mais alto, enquanto a torneira mantém o mesmo jato; o Viés olha espantado com a lupa.",
+    "cena": "Callback: a tampa cobre metade do ralo, a água subiu e o patinho flutua bem mais alto, enquanto a torneira mantém o mesmo jato; o Viés olha espantado pela lupa.",
     "foco": "50% 45%",
     "alt": "Prevalence = incidence x duration: a duração dobrou"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Torneira é incidência, ralo é saída, água é prevalência*",
-      "apoio": "Na banheira do Viés, a torneira despeja casos novos e o ralo leva quem sai (cura ou óbito). Remédio que prolonga a vida sem curar fecha meio ralo: a água sobe, e a torneira continua igual.",
-      "fala": null
+      "apoio": "A torneira despeja casos novos e o ralo leva quem sai (cura ou óbito). Prevalência é incidência vezes duração: 20 por 10.000 por ano vezes 10 anos dá 200 por 10.000, ou 2%. Remédio que prolonga a vida sem curar fecha meio ralo: a água sobe com a mesma torneira. Prevalência subir pode ser boa notícia.",
+      "fala": "Se você não randomizou, eu entrei. Na banheira, não precisa."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Duração dobrou. Nova prevalência?"
+    "pergunta": "Incidência 20 por 10.000 ao ano e duração de 5 para 10 anos: prevalência?"
   },
   "cta": "simulado",
   "reel": null,

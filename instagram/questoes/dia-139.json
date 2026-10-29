@@ -8,21 +8,22 @@
   "topico": "Violência por parceiro íntimo",
   "conceito": "Intimate partner violence: screen privately and offer a safety plan",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-21",
   "tom": "acolhedor",
-  "gancho": "A pergunta certa precisa de *porta fechada*",
-  "gancho_apoio": "Hoje sem piada. Um atendimento de pré-natal e um sinal que não pode passar.",
+  "gancho": "Pré-natal de 20 semanas e uma explicação *curta demais* para tantos hematomas",
+  "gancho_apoio": "Hoje sem piada. Um atendimento de rotina e um sinal que não pode passar.",
   "imagem": {
     "arquivo": "dia-139.png",
-    "cena": "Um consultório tranquilo com a porta se fechando devagar e um abajur aceso sobre a mesa. Duas cadeiras ficam frente a frente.",
+    "cena": "Um consultório de pré-natal sereno: sobre a mesa, um sonar fetal, um calendário de gestação sem números e um vaso de planta. A Dona Bússola espera com calma ao lado de duas cadeiras vazias; na parede, um quadrinho 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Consultório calmo com a porta se fechando, abajur aceso e duas cadeiras frente a frente."
+    "alt": "Consultório de pré-natal calmo, com sonar fetal e calendário na mesa; Dona Bússola ao lado de duas cadeiras."
   },
   "imagem_macete": {
     "arquivo": "dia-139-macete.png",
-    "cena": "Callback: a porta está fechada; sobre a mesa, um mapa com um caminho verde até uma casinha com escudo, uma mochila pronta e um guarda-chuva aberto.",
+    "cena": "A porta está fechada; sobre a mesa, um mapa com um caminho verde até uma casinha com escudo, uma mochila pronta e um guarda-chuva aberto. O ponteiro da Dona Bússola aponta para a cadeira da paciente.",
     "foco": "50% 40%",
     "alt": "Porta fechada; na mesa, um mapa com rota até uma casa protegida, uma mochila pronta e um guarda-chuva."
   },
@@ -67,17 +68,17 @@
     },
     "macete": {
       "frase": "*Porta fechada, pergunta direta, plano de segurança*",
-      "apoio": "Na imagem, a porta fechada, a luz acesa e a mochila pronta lembram a ordem da conduta.",
-      "fala": null
+      "apoio": "Na imagem, a porta fechada, o mapa e a mochila pronta lembram a ordem da conduta.",
+      "fala": "Meu norte é o paciente. E essa conversa só começa a sós."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés, estação ética. Há perguntas que só podem ser feitas a sós.",
+    "contexto": "Sábado Sem Viés, estação ética. Gestante de 20 semanas, um acompanhante que responde quase tudo por ela e hematomas de idades diferentes nos braços. Qual é o próximo passo?",
     "palavras_chave": [
       "prenatal visit",
-      "bruises",
-      "controlling partner",
-      "patient safety"
+      "bruises of different ages",
+      "partner answers for her",
+      "20 weeks pregnant"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Suspeita de violência no pré-natal: o que fazer?"
+    "pergunta": "Gestante com hematomas e acompanhante que responde por ela: o que fazer?"
   },
   "cta": null,
   "reel": null,

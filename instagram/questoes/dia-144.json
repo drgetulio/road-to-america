@@ -8,21 +8,22 @@
   "topico": "Esplenectomia eletiva",
   "conceito": "Elective splenectomy: vaccinate against encapsulated bacteria at least 2 weeks before",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-26",
   "tom": null,
   "gancho": "O *segurança* da balada vai se aposentar. Quem cobre o turno dele?",
-  "gancho_apoio": "Esplenectomia marcada daqui a seis semanas. O que precisa acontecer antes?",
+  "gancho_apoio": "Esplenectomia marcada daqui a seis semanas e o Garçom Espetinho servindo na despedida.",
   "imagem": {
     "arquivo": "dia-144.png",
-    "cena": "Um segurança em forma de baço, de terno navy e fone de ouvido, está na porta de uma festa e olha para um relógio de pulso. Ao lado da porta, uma caixa com um presente de aposentadoria e um calendário sem números.",
+    "cena": "Na porta de uma festa de despedida, um segurança em forma de baço, de terno navy e fone de ouvido, confere o relógio de pulso. Garçom Espetinho passa com uma bandeja de salgadinhos, e a plaquinha verde e vermelha está de lado na mesa. Na parede, um calendário sem números.",
     "foco": "50% 35%",
-    "alt": "Baço segurança de terno na porta da festa olhando o relógio, com um presente de aposentadoria ao lado."
+    "alt": "Baço segurança de terno confere o relógio na porta da festa de despedida; o Garçom passa com salgadinhos."
   },
   "imagem_macete": {
     "arquivo": "dia-144-macete.png",
-    "cena": "Callback: antes de sair, o baço segurança treina uma fila de anticorpos em forma de Y, de colete verde, que aprendem a barrar três bactérias de capa de chuva. No calendário, duas fileiras estão riscadas antes do dia da festa de despedida.",
+    "cena": "Antes de sair, o baço segurança treina uma fila de anticorpos em forma de Y, de colete verde, que aprendem a barrar três bactérias de capa de chuva. No calendário, duas fileiras estão riscadas antes do dia da festa, e o Garçom vira a plaquinha para o verde.",
     "foco": "50% 40%",
     "alt": "O baço treina anticorpos de colete verde para barrar bactérias de capa; duas semanas riscadas no calendário."
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Vai aposentar o *segurança*? Treine a equipe *2 semanas antes*",
-      "apoio": "Na imagem, o baço segurança treina os anticorpos para barrar quem chega de capa.",
-      "fala": null
+      "apoio": "Cirurgia de urgência: vacina a partir de 2 semanas depois. Os três de capa: pneumococo, meningococo e Hib.",
+      "fala": "Despedida do segurança marcada? Treina a equipe nova 2 semanas antes, doutor."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta, estação cirurgia. Uma cirurgia eletiva com data marcada e uma pergunta: o que precisa estar planejado antes do dia?",
+    "contexto": "Rodízio de Quinta, estação cirurgia. Uma cirurgia eletiva com data marcada e uma pergunta: o que precisa estar planejado antes do dia?",
     "palavras_chave": [
       "immune thrombocytopenia",
       "elective splenectomy",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Esplenectomia eletiva: quando vacinar?"
+    "pergunta": "Esplenectomia eletiva em 6 semanas, sem vacina desde a infância: qual plano?"
   },
   "cta": null,
   "reel": null,

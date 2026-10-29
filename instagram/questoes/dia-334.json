@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-02",
   "tom": "acolhedor",
-  "gancho": "Uma chave que *tranca uma porta e abre outra*",
-  "gancho_apoio": "Outubro Rosa. Um remédio que age de jeitos diferentes em cada tecido.",
+  "gancho": "Outubro Rosa: dois anos de remédio diário e *dois sinais novos*",
+  "gancho_apoio": "Outubro Rosa. Sangramento vaginal, endométrio espesso e uma trombose há seis meses.",
   "imagem": {
     "arquivo": "dia-334.png",
-    "cena": "Tia Meia-Vida no balcão da farmácia segura uma única chave dourada diante de duas portas: uma com laço rosa e outra com um vaso de planta; tom calmo e acolhedor.",
+    "cena": "Tia Meia-Vida, calma, no balcão da farmácia organiza quatro frasquinhos diferentes numa bandeja; ao lado, um laço rosa e um vaso de planta; luz suave de fim de tarde. Tom calmo e acolhedor.",
     "foco": "50% 35%",
-    "alt": "Uma chave que tranca uma porta e abre outra"
+    "alt": "Outubro Rosa: dois anos de remédio diário e dois sinais novos"
   },
   "imagem_macete": {
     "arquivo": "dia-334-macete.png",
-    "cena": "Callback: a mesma chave tranca a porta do laço rosa, com um cadeado verde, e abre a outra porta, de onde brotam folhas; ao lado, um pequeno nó vermelho de lã sinaliza o risco de trombose.",
+    "cena": "Callback: da bandeja, a Tia Meia-Vida pega uma única chave dourada, que tranca a porta do laço rosa com um cadeado verde e abre outra porta, de onde brotam folhas; ao lado, um pequeno nó vermelho de lã sinaliza o risco de trombose.",
     "foco": "50% 45%",
     "alt": "Tamoxifeno: SERM que bloqueia a mama e estimula o endométrio"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Os três Ts do tamoxifeno*: tranca a mama, toca o útero, trombose no caminho",
-      "apoio": "Tia Meia-Vida mostra a mesma chave diante de duas portas: na da mama, ela tranca; na do útero, ela abre. Sangramento e perna inchada são os dois avisos para procurar o médico.",
-      "fala": null
+      "apoio": "A mesma chave faz coisas diferentes em cada porta: na mama, bloqueia o receptor de estrogênio; no útero e no osso, estimula. Sangramento vaginal e perna inchada são os dois avisos para procurar o médico.",
+      "fala": "A mesma chave, cada porta do seu jeito."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Como age o remédio dela no receptor?"
+    "pergunta": "Câncer de mama RE positivo, endométrio espesso e TVP: como age o remédio?"
   },
   "cta": "simulado",
   "reel": null,

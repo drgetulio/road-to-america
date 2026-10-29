@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-09",
   "tom": null,
-  "gancho": "Encanamento com manteiga e um *sonho de padaria* na parede. Explica, Mito!",
-  "gancho_apoio": "Na Quarta do Porquê, o Mito abre o cano e mostra a primeira lesão da placa.",
+  "gancho": "Sonho de padaria na parede da aorta: *quem recheou?*",
+  "gancho_apoio": "Na Quarta do Porquê, o Mito abre o cano e mostra a primeira lesão, que ainda não estreita nada.",
   "imagem": {
     "arquivo": "dia-311.png",
-    "cena": "Mito, de jaleco amassado e copo de café, aponta com uma varinha para um cano em corte, estilo manual de montagem: na parede interna há estrias planas de manteiga amarela e células redondas estufadas de creme, como sonhos de padaria.",
+    "cena": "Mito, de jaleco amassado e copo de café, aponta com uma varinha para um cano em corte, com setinhas de manual de montagem em volta da parede interna; nela há estrias planas de manteiga amarela e células redondas estufadas de creme, iguais a sonhos de padaria.",
     "foco": "50% 35%",
-    "alt": "Encanamento com manteiga e um sonho de padaria na parede. Explica, Mito!"
+    "alt": "Sonho de padaria na parede da aorta: quem recheou?"
   },
   "imagem_macete": {
     "arquivo": "dia-311-macete.png",
-    "cena": "Callback: cubinhos de manteiga com manchas de ferrugem entram numa célula redonda por uma porta giratória sem trava, sem parar; a porta vizinha, com um cadeado de lotado, fica fechada. O Mito mostra a cena com cara de quem já sabia.",
+    "cena": "Callback: cubinhos de manteiga com manchas de ferrugem passam por uma catraca liberada, sem trava, direto para dentro de uma célula redonda; ao lado, outra catraca com cadeado de lotado fica fechada; o Mito suspira com cara de quem já sabia.",
     "foco": "50% 45%",
     "alt": "Foam cell: LDL oxidado entra pela porta sem trava"
   },
@@ -66,9 +66,9 @@
       "C": "O *receptor de LDL* é regulado: quando a célula tem colesterol suficiente, ela reduz o receptor e não vira célula espumosa."
     },
     "macete": {
-      "frase": "*LDL enferrujado entra pela porta giratória sem trava*, e o macrófago vira sonho recheado",
-      "apoio": "Na imagem do Mito, o cubinho de manteiga enferrujado (o LDL oxidado) passa por uma porta giratória que nunca tranca (o receptor scavenger). A porta ao lado, com cadeado de lotado, é o receptor de LDL, que sabe dizer chega.",
-      "fala": null
+      "frase": "*LDL enferrujado passa na catraca liberada*: o scavenger nunca diz chega",
+      "apoio": "O LDL oxidado entra no macrófago pelo receptor scavenger, que não tem freio, e a célula vira a foam cell recheada como sonho de padaria. O receptor de LDL comum tem catraca com limite e diz chega quando a célula enche. A estria gordurosa é a primeira lesão da aterosclerose e não estreita a luz.",
+      "fala": "Sem oxigênio eu não trabalho. Oxidado, aí sim dá trabalho."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Estria gordurosa: quem formou a foam cell?"
+    "pergunta": "Estria amarela na aorta aos 24 anos: de onde veio a célula espumosa?"
   },
   "cta": null,
   "reel": null,

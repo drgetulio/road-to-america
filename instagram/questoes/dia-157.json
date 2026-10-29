@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-08",
   "tom": null,
   "gancho": "Rebanho protegido: quantas ovelhas precisam de *escudo*?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Cada caso passa para 4. O Viés aposta que você erra a conta de uma linha.",
   "imagem": {
     "arquivo": "dia-157.png",
-    "cena": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída.",
+    "cena": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída. Setinhas de manual de montagem apontam para os escudos.",
     "foco": "50% 35%",
-    "alt": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída."
+    "alt": "O Viés espia um rebanho de ovelhas atrás de uma tabela 2x2; uma pilha de escudos verdes espera ao lado."
   },
   "imagem_macete": {
     "arquivo": "dia-157-macete.png",
-    "cena": "Em cada grupo de quatro ovelhas, três usam escudo verde e fazem uma cerca em volta da quarta; o germe, uma bolinha vermelha com espinhos, bate nos escudos e não chega nela. O Viés fica de fora, sem conseguir entrar.",
-    "alt": "Limiar de rebanho: 1 menos 1/R0"
+    "cena": "Em cada grupo de quatro ovelhas, três usam escudo verde e fazem uma cerca em volta da quarta; o germe, uma bolinha vermelha com espinhos, bate nos escudos e não chega nela. O Viés fica de fora.",
+    "alt": "Em cada grupo de quatro ovelhas, três de escudo cercam a quarta; o germe bate nos escudos; o Viés fica de fora."
   },
   "questao": {
     "vinheta": "A health department models a new respiratory virus in a fully susceptible population. On average, each infected person transmits the virus to 4 other people. A new vaccine is assumed to be 100% effective.",
@@ -65,9 +65,9 @@
       "D": "80% seria o limiar com R0 de 5, ou o erro de usar 1 menos 1/(R0 + 1)."
     },
     "macete": {
-      "frase": "Rebanho de *R0* ovelhas: se cada uma passa para 4, de cada 4 ovelhas só *1* pode ficar sem escudo. Escudos = 1 menos 1/R0.",
-      "apoio": "O NBME pode dar a eficácia da vacina: aí a cobertura necessária é o limiar dividido pela eficácia (75% com vacina 90% eficaz pede cerca de 83%).",
-      "fala": null
+      "frase": "Rebanho de *R0* ovelhas: de cada 4, só *1* pode ficar sem escudo. Escudos = 1 menos 1/R0",
+      "apoio": "Com eficácia menor que 100%, a cobertura necessária é o limiar dividido pela eficácia (75% com vacina 90% eficaz pede cerca de 83%).",
+      "fala": "Com 75% de escudo, eu e o vírus ficamos sem ninguém para assombrar."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "R0 = 4. Quantos % imunes para frear?"
+    "pergunta": "Cada infectado transmite para 4 pessoas: quantos % precisam estar imunes?"
   },
   "cta": "simulado",
   "exemplo": false

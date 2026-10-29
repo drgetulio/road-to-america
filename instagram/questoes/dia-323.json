@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-21",
   "tom": null,
-  "gancho": "Acampou em junho e voltou com manchas no punho. *Quem veio junto?*",
-  "gancho_apoio": "O Macrô recebeu um visitante que voltou do acampamento agarrado numa perna.",
+  "gancho": "Voltou do acampamento com uma *lembrancinha de oito patas*",
+  "gancho_apoio": "Junho, Carolina do Norte, febre há 4 dias e manchas que começaram longe do tronco.",
   "imagem": {
     "arquivo": "dia-323.png",
-    "cena": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de mochila nas costas, que chegou de um acampamento agarrado num galho; ao fundo, uma barraca e uma fogueira apagada.",
+    "cena": "Macrô na tenda de recepção de um acampamento enfeitado com bandeirinhas de festa junina, com a comanda em branco no bolso, recebe um carrapatinho turista de mochila e chapéu de sol, que chega pendurado num galho; ao fundo, uma barraca e uma fogueira apagada.",
     "foco": "50% 35%",
-    "alt": "Acampou em junho e voltou com manchas no punho. Quem veio junto?"
+    "alt": "Voltou do acampamento com uma lembrancinha de oito patas"
   },
   "imagem_macete": {
     "arquivo": "dia-323-macete.png",
-    "cena": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula. Num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
+    "cena": "Callback: um estádio visto de cima; torcedores em bolinhas vermelhas entram pelos quatro portões dos cantos e lotam a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula; num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
     "foco": "50% 45%",
     "alt": "Febre maculosa: o exantema entra pelos punhos"
   },
@@ -66,9 +66,9 @@
       "D": "*Rickettsia typhi* (tifo murino) vem da pulga, e o exantema começa no tronco e vai para as extremidades, poupando palmas e plantas."
     },
     "macete": {
-      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos* e enche o estádio",
-      "apoio": "Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade. A capivara na arquibancada lembra que no Brasil a mesma R. rickettsii causa a febre maculosa brasileira, com o carrapato-estrela.",
-      "fala": null
+      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos* e lota até o centro",
+      "apoio": "O rash da febre maculosa começa nos punhos e tornozelos e vai para palmas, plantas e tronco, como torcida entrando pelos portões e lotando até o meio de campo. A Rickettsia vive no endotélio e causa vasculite, daí plaqueta e sódio baixos. Doxiciclina em qualquer idade, criança inclusive. A capivara lembra a febre maculosa brasileira, do carrapato-estrela.",
+      "fala": "Comi, mostrei, avisei. O carrapato veio de carona."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Manchas que começam nos punhos: agente?"
+    "pergunta": "Acampou, febre há 4 dias e manchas dos punhos para o tronco: qual agente?"
   },
   "cta": null,
   "reel": null,

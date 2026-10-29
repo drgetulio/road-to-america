@@ -8,21 +8,22 @@
   "topico": "Compressão do nervo oculomotor",
   "conceito": "Oculomotor nerve compression: the pupil dilates first because parasympathetic fibers run on the outside",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-16",
   "tom": null,
-  "gancho": "Balão apertou o cabo e a *pupila foi a primeira a reclamar*",
-  "gancho_apoio": "Na Quarta do Porquê, a resposta está em como os fios se arrumam dentro do nervo.",
+  "gancho": "Balão encostou no fio e *a pupila reclamou primeiro*",
+  "gancho_apoio": "Na Quarta do Porquê, o Seu Allen desmonta o nervo e procura onde fica cada fio.",
   "imagem": {
     "arquivo": "dia-318.png",
-    "cena": "Um balão vermelho inchando aperta um cabo grosso e liso, visto só por fora; o cabo termina num poste de luz em forma de olho, com a cúpula caída como uma pálpebra e a lâmpada redonda enorme e acesa.",
+    "cena": "Seu Allen ao lado de um cabo grosso e liso, visto de lado e inteiro, com setinhas de manual de montagem; um balão vermelho inchando aperta o cabo; o cabo termina num poste de luz em forma de olho, com a cúpula caída como pálpebra e a lâmpada redonda enorme e acesa.",
     "foco": "50% 35%",
-    "alt": "Balão apertou o cabo e a pupila foi a primeira a reclamar"
+    "alt": "Balão encostou no fio e a pupila reclamou primeiro"
   },
   "imagem_macete": {
     "arquivo": "dia-318-macete.png",
-    "cena": "Callback: o cabo aparece em corte como uma coxinha: a casca dourada achatada pelo balão, o recheio intacto. Ao lado, uma segunda coxinha em corte tem a casca perfeita e o recheio acinzentado (a isquemia do diabetes, que poupa a pupila).",
+    "cena": "Callback: o cabo aparece em corte como uma coxinha: a casca dourada achatada pelo balão e o recheio intacto; ao lado, outra coxinha em corte tem a casca perfeita e o recheio acinzentado; o Seu Allen aponta com o lápis vermelho.",
     "foco": "50% 45%",
     "alt": "Compressão do oculomotor: pupila primeiro"
   },
@@ -66,9 +67,9 @@
       "D": "A via aferente do reflexo fotomotor é o nervo óptico; o oculomotor é a via eferente."
     },
     "macete": {
-      "frase": "*Coxinha apertada por fora amassa a casca*; isquemia estraga o recheio",
-      "apoio": "No corte da imagem, o nervo é uma coxinha: a casca são as fibras da pupila e o recheio, as fibras dos músculos do olho. O balão do aneurisma amassa a casca primeiro; a isquemia do diabetes estraga o recheio e deixa a casca inteira.",
-      "fala": null
+      "frase": "*Aneurisma amassa a casca da coxinha; diabetes estraga o recheio*",
+      "apoio": "Corte o oculomotor como uma coxinha: as fibras parassimpáticas da pupila correm na casca e as dos músculos do olho, no recheio. Compressão de fora (aneurisma da comunicante posterior, herniação do uncus) amassa a casca e a pupila dilata primeiro. A isquemia do diabetes estraga o recheio e poupa a pupila. Pupila dilatada com cefaleia súbita: angiotomografia antes do lanche esfriar.",
+      "fala": "Abriu a coxinha, achou o mecanismo."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Por que a pupila dilata primeiro?"
+    "pergunta": "Cefaleia súbita, ptose e pupila de 7 mm: por que a pupila foi primeiro?"
   },
   "cta": null,
   "reel": null,

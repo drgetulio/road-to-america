@@ -41,12 +41,12 @@
     "C": "O conselho estadual (state medical board) entra quando o canal interno falha ou não existe; esperar uma semana deixa o paciente de hoje sem proteção.",
     "D": "Anotar e esperar um segundo episódio adia a proteção; a suspeita já basta para agir."
    },
-   "macete": "Pense no semáforo da porta da sala: primeiro fica vermelho para a cirurgia, depois você pega o elevador até a chefia. Proteger agora, encaminhar com cuidado em seguida.",
+   "macete": "Pense no semáforo da porta da sala: primeiro fica vermelho para a cirurgia, depois você pega o elevador até a chefia. Proteger agora, encaminhar com cuidado em seguida, pelo programa de saúde do médico.",
    "pegadinha_de_prova": "O NBME oferece a conversa particular depois do caso ou a denúncia direta ao conselho; a resposta protege o paciente agora e usa o canal interno da instituição."
   },
   "imagem_questao": {
-   "conceito_visual": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima, uma placa de trânsito em forma de balança da justiça ao lado e, no corredor, um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a calm hospital corridor in front of a closed operating room double door; above the door hangs a traffic light glowing amber, undecided; beside the door stands a round traffic sign showing a simple balance scale of justice; in the foreground a coat rack holds a white lab coat and a yellow construction hard hat hanging side by side, a gentle Labor Day touch; soft, respectful, caring mood. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima. No corredor, a Dona Bússola, serena, fica ao lado de um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio; na parede, um quadrinho 2x2 em branco.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Bússola, a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook. Scene: a calm hospital corridor in front of a closed operating room double door; above the door hangs a traffic light glowing amber, undecided; Dona Bússola stands serenely beside a coat rack holding a white lab coat and a yellow construction hard hat hanging side by side, a gentle Labor Day touch; a tiny blank 2x2 grid is framed on the wall; soft, respectful, caring mood. Calm, warm and respectful mood, explanatory and gentle, no gag, no suffering shown. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -55,7 +55,7 @@
   },
   "imagem_explicacao": {
    "conceito_visual": "O semáforo fica vermelho na porta da sala e uma seta verde aponta para o elevador da chefia; um guarda-chuva protege a mesa cirúrgica vazia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same hospital corridor: the traffic light above the operating room door now glows red; a small green arrow on the wall points toward an open elevator; inside the room, an empty operating table is covered by a large protective navy umbrella; on the coat rack, the white lab coat now wears a cozy yellow and green scarf, a symbol of care for the colleague; warm, reassuring reveal. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Bússola, a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook. Scene: the same hospital corridor: the traffic light above the operating room door now glows red; a small green arrow on the wall points toward an open elevator; inside the room, an empty operating table is covered by a large protective navy umbrella; on the coat rack, the white lab coat now wears a cozy yellow and green scarf, a symbol of care for the colleague; Dona Bússola's needle points to the umbrella; warm, reassuring light. Calm, warm and respectful mood, explanatory and gentle, no gag, no suffering shown. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -63,9 +63,9 @@
    }
   },
   "legenda_questao_pt": "Dia do Trabalhador: quem cuida também precisa de cuidado\n\nHoje é 1º de maio, e a questão é sobre um colega que não está bem para trabalhar. Na prova e na vida, existe uma ordem certa: proteger quem está na mesa e, ao mesmo tempo, encaminhar quem precisa de ajuda.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: attending surgeon, smell of alcohol, slurred speech, operating room\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #ClinicaMedica",
-  "legenda_explicacao_pt": "Gabarito do dia 181: letra B, avisar a chefia da cirurgia antes de o caso começar.\n\nSinais de intoxicação minutos antes de operar são risco imediato. A conduta é impedir a cirurgia avisando a chefia agora e, depois, encaminhar o colega ao programa de saúde do médico. Proteger o paciente e cuidar de quem cuida andam juntos.\n\nMacete: semáforo vermelho na porta da sala, depois o elevador até a chefia.\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta, link na bio: drgetulio.github.io/road-to-america/#pre-inscricao\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #EticaMedica #MedicalEthics #RoadToAmerica #DiaDoTrabalhador",
+  "legenda_explicacao_pt": "Gabarito do dia 181: letra B, avisar a chefia da cirurgia antes de o caso começar.\n\nSinais de intoxicação minutos antes de operar são risco imediato. A conduta é impedir a cirurgia avisando a chefia agora e, depois, encaminhar o colega ao programa de saúde do médico. Proteger o paciente e cuidar de quem cuida andam juntos.\n\nMacete: Pense no semáforo da porta da sala: primeiro fica vermelho para a cirurgia, depois você pega o elevador até a chefia. Proteger agora, encaminhar com cuidado em seguida, pelo programa de saúde do médico.\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta, link na bio: drgetulio.github.io/road-to-america/#pre-inscricao\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #EticaMedica #MedicalEthics #RoadToAmerica #DiaDoTrabalhador",
   "story_quiz": {
-   "pergunta_curta_pt": "Colega sem condição de operar. E agora?",
+   "pergunta_curta_pt": "Cirurgião com hálito alcoólico e fala arrastada antes do caso: e agora?",
    "opcoes": [
     "Termina e depois vê",
     "Avisar a chefia já",
@@ -77,20 +77,20 @@
   "fonte": "AMA Code of Medical Ethics, Opinion 9.3.2 (Physician Responsibilities to Impaired Colleagues), consultado em 2026; Federation of State Medical Boards, Physician Wellness and Burnout policy (2018).",
   "revisao": {
    "medica": "Resolvida antes do gabarito: B (avisar a chefia antes do caso). Colega com sinais de intoxicação prestes a operar: proteger o paciente agora pela cadeia de comando, depois physician health program (AMA 9.3.2). Distratores homogêneos (condutas). Sem mudança no conteúdo.",
-   "humor_compliance": "Tom acolhedor mantido (substância e colega adoecido pedem cuidado, mesmo sem marca no calendário). Prompts trocados de \"humor\" para \"gentle, respectful tone\". Palavras-chave da legenda trocadas por termos que não entregam a resposta (antes citavam chain of command). Legendas no limite, CRM, sem promessa."
+   "humor_compliance": "Tom acolhedor mantido (substância e colega adoecido pedem cuidado, mesmo sem marca no calendário). Prompts trocados de \"humor\" para \"gentle, respectful tone\". Palavras-chave da legenda trocadas por termos que não entregam a resposta (antes citavam chain of command). Legendas no limite, CRM, sem promessa. Rodada de humor de 29/10/2026: gancho, cenas, macete e fala reescritos com Dona Bússola como anfitrião do quadro; cena-base nova no mês e assinatura pequena do quadro."
   },
   "gancho": "Dia do Trabalhador: quem *cuida* também precisa de cuidado",
-  "gancho_apoio": null,
+  "gancho_apoio": "Hoje sem piada. Proteger quem está na mesa e encaminhar o colega com respeito.",
   "imagem": {
    "arquivo": "dia-181.png",
-   "cena": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima, uma placa de trânsito em forma de balança da justiça ao lado e, no corredor, um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio.",
+   "cena": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima. No corredor, a Dona Bússola, serena, fica ao lado de um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio; na parede, um quadrinho 2x2 em branco.",
    "foco": "50% 35%",
-   "alt": "Dia do Trabalhador: quem cuida também precisa de cuidado"
+   "alt": "Porta do centro cirúrgico com semáforo amarelo; Dona Bússola ao lado de um cabide com jaleco e capacete."
   },
   "imagem_macete": {
    "arquivo": "dia-181-macete.png",
    "cena": "O semáforo fica vermelho na porta da sala e uma seta verde aponta para o elevador da chefia; um guarda-chuva protege a mesa cirúrgica vazia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado.",
-   "alt": "Primeiro o paciente, depois o canal da instituição"
+   "alt": "Semáforo vermelho na porta, seta verde para o elevador e um cachecol no jaleco do cabide."
   },
   "questao": {
    "vinheta": "A surgical resident notices that the attending surgeon smells of alcohol, has slurred speech, and is unsteady while scrubbing for an elective case scheduled to start in 10 minutes. The resident worries about damaging their working relationship.",
@@ -132,9 +132,9 @@
     "D": "Anotar e esperar um segundo episódio adia a proteção; a suspeita já basta para agir."
    },
    "macete": {
-    "frase": "Pense no *semáforo* da porta da sala: primeiro fica *vermelho* para a cirurgia, depois você pega o *elevador* até a chefia. Proteger agora, encaminhar com cuidado em seguida.",
-    "apoio": "O NBME oferece a conversa particular depois do caso ou a denúncia direta ao conselho; a resposta protege o paciente agora e usa o canal interno da instituição.",
-    "fala": null
+    "frase": "Pense no *semáforo* da porta da sala: primeiro *vermelho* para a cirurgia, depois o *elevador* até a chefia",
+    "apoio": "Depois, a instituição encaminha o colega ao programa de saúde do médico, que trata o problema como doença, sem punição automática.",
+    "fala": "Meu norte é o paciente da mesa, e o colega também merece cuidado."
    }
   },
   "legenda": {
@@ -147,11 +147,12 @@
    ]
   },
   "quiz": {
-   "pergunta": "Colega sem condição de operar. E agora?"
+   "pergunta": "Cirurgião com hálito alcoólico e fala arrastada antes do caso: e agora?"
   },
   "cta": "pre_inscricao",
   "tom": "acolhedor",
-  "tipo_pergunta": "ética"
+  "tipo_pergunta": "ética",
+  "anfitriao": "Dona Bússola"
  },
  {
   "dia": 182,
@@ -170,17 +171,17 @@
    176
   ],
   "explicacao_em": "2027-05-03",
-  "gancho_pt": "Remix de domingo: o soro de cavalo cobrou a conta depois",
+  "gancho_pt": "Soro de cavalo, 10 dias de espera e um joelho reclamando. Quem é o culpado?",
   "vinheta_en": "A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.",
   "pergunta_en": "Which mechanism best explains these findings?",
   "alternativas": [
    {
     "letra": "A",
-    "texto": "Endogenous peptides shown on MHC I to CD8+ T cells"
+    "texto": "CD8+ T cells killing cells that present peptide on MHC I"
    },
    {
     "letra": "B",
-    "texto": "Toxin that locks Gs on, raising cAMP"
+    "texto": "IgG binding a fixed antigen on cell surfaces"
    },
    {
     "letra": "C",
@@ -195,16 +196,16 @@
   "explicacao_pt": {
    "por_que_certa": "A proteína estranha do soro de cavalo induz anticorpos em 1 a 2 semanas. Antígeno e anticorpo formam immune complexes que se depositam nos vasos da pele, nas articulações e no glomérulo e ativam o complemento, que é consumido (C3 e C4 baixos). É a serum sickness, hipersensibilidade tipo III.",
    "por_que_erradas": {
-    "A": "Dia 176: MHC I apresenta peptídeos de dentro da célula ao CD8; é a via da célula infectada por vírus, não explica febre, artralgia e complemento baixo após soro.",
-    "B": "Dia 155: a toxina da cólera trava o Gs ligado e causa diarreia aquosa; não há toxina nem diarreia aqui.",
+    "A": "Dia 176: CD8 matando células que mostram peptídeo no MHC I é imunidade celular (tipo IV), que não consome complemento nem depende de anticorpo contra o soro.",
+    "B": "Anticorpo contra antígeno fixo na superfície da célula é o tipo II, como na anemia hemolítica autoimune; não forma complexos circulantes que se depositam ao mesmo tempo em pele, junta e rim dias depois de um soro.",
     "D": "Intruso: a ponte de IgE no mastócito é tipo I, começa em minutos (urticária, broncoespasmo, anafilaxia) e não consome complemento."
    },
-   "macete": "Na doença do soro, antígeno e anticorpo viram bolinhas de chiclete que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo.",
+   "macete": "Na doença do soro, antígeno e anticorpo viram bolinhas de chiclete que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo; o tipo I vem em minutos. Bônus: a cólera trava o Gs ligado (dia 155).",
    "pegadinha_de_prova": "O NBME cita soro animal, anticorpo monoclonal quimérico ou antibiótico (penicilina, cefaclor) com sintomas 1 a 2 semanas depois e complemento baixo; o tipo I aparece em minutos, o tipo III demora dias."
   },
   "imagem_questao": {
-   "conceito_visual": "Um toca-discos de DJ com três discos de rótulos com ícones simples (uma ferradura, uma vírgula com um interruptor de luz e uma bandeja de garçom com duas pratas) e um quarto disco com uma pipoca estourando tentando entrar na pilha.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a red vintage turntable on a small stage, with three vinyl records stacked beside it, each with a plain colored center label decorated only with a simple icon: a horseshoe, a comma-shaped bacterium next to a wall light switch, and a small serving tray with two silver plates. A fourth record with an odd purple label showing a bursting popcorn kernel sneaks toward the stack like an intruder. Festive Sunday mood with small yellow and green confetti. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Num haras ensolarado, o Macrô, com a comanda em branco no bolso, está ao lado de um cavalinho simpático e olha três objetos numa mesinha: um interruptor de luz, uma bandeja com dois pratos e uma pipoca estourando. Num canto da mesinha, um pequeno vinil.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: at a sunny horse farm, Macrô stands next to a friendly cartoon pony, a blank bar order slip peeking from his pocket, and looks at three objects on a small table: a wall light switch, a serving tray with two plates, and a popcorn kernel bursting; a small vinyl record leans in one corner of the table. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -212,57 +213,57 @@
    }
   },
   "imagem_explicacao": {
-   "conceito_visual": "O disco da ferradura toca e, da caixa de som, saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, num joelho de boneco articulado e num tapete; os outros dois discos ganham um risco vermelho e o da pipoca é barrado por um cone.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same turntable now plays the record with the horseshoe label; from the speaker float small pink bubble-gum balls that stick to a kidney-shaped kitchen sieve, to the knee of a wooden artist mannequin and to a small rug; a few tiny Pac-Man-like yellow complement shapes nibble at the gum balls and shrink. The record with the comma and switch and the record with the serving tray rest nearby with a small red scratch mark each, and the purple popcorn record is stopped at the stage edge by a tiny orange traffic cone. Satisfying reveal. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Do cavalinho saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, no joelho de um boneco articulado e num tapete; bichinhos amarelos de complemento mordiscam as bolinhas e encolhem. O interruptor e a bandeja ganham um risco vermelho, e a pipoca é barrada por um cone.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: the same horse farm: small pink bubble-gum balls float from the pony and stick to a kidney-shaped kitchen sieve, to the knee of a wooden artist mannequin and to a small rug; a few tiny round yellow complement shapes nibble at the gum balls and shrink; the light switch and the serving tray each have a small red scratch mark, and the popcorn kernel is stopped by a tiny traffic cone; Macrô points at the gum balls. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Remix de domingo: o soro de cavalo cobrou a conta depois\n\nDomingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 78, 155 e 176) e um intruso. Só um mecanismo explica o quadro da vinheta.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 1 review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #IntegracaoDeConceitosJaVistos",
-  "legenda_explicacao_pt": "Gabarito do dia 182: letra C, deposição de imunocomplexos com ativação do complemento (doença do soro).\n\nProteína estranha, sintomas cerca de 10 dias depois, febre, rash, artralgia, proteinúria e complemento baixo: hipersensibilidade tipo III (dia 78). MHC I para CD8 é a via da célula infectada (dia 176) e a cólera trava o Gs (dia 155). IgE no mastócito é tipo I, de minutos.\n\nMacete: antígeno e anticorpo viram bolinhas de chiclete que grudam no rim, na pele e na junta.\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta, link na bio: drgetulio.github.io/road-to-america/#pre-inscricao\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Imunologia #Immunology #RoadToAmerica #RevisaoEspacada",
+  "legenda_questao_pt": "Soro de cavalo, 10 dias de espera e um joelho reclamando. Quem é o culpado?\n\nRemix de Domingo: três conceitos de Step 1 que já passaram por aqui e um intruso. Globulina antitimócito equina há 10 dias, febre, rash nas laterais das mãos e dos pés, artrite e complemento baixo. Qual mecanismo?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 1 review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #IntegracaoDeConceitosJaVistos",
+  "legenda_explicacao_pt": "Gabarito do dia 182: letra C, deposição de imunocomplexos com ativação do complemento (doença do soro).\n\nProteína estranha, sintomas cerca de 10 dias depois, febre, rash, artralgia, proteinúria e complemento baixo: hipersensibilidade tipo III (dia 78). CD8 matando a célula pelo MHC I é tipo IV (dia 176), anticorpo contra antígeno fixo na célula é tipo II e IgE no mastócito é tipo I, de minutos.\n\nMacete: Na doença do soro, antígeno e anticorpo viram bolinhas de chiclete que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo; o tipo I vem em minutos. Bônus: a cólera trava o Gs ligado (dia 155).\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta, link na bio: drgetulio.github.io/road-to-america/#pre-inscricao\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Imunologia #Immunology #RoadToAmerica #RevisaoEspacada",
   "story_quiz": {
-   "pergunta_curta_pt": "Soro de cavalo e C3 baixo. Qual mecanismo?",
+   "pergunta_curta_pt": "Febre, rash, artrite e C3 e C4 baixos 10 dias após ATG equina: mecanismo?",
    "opcoes": [
-    "MHC I para CD8",
-    "Gs travado, cAMP",
+    "CD8 via MHC I",
+    "IgG na célula",
     "Imunocomplexos",
     "IgE no mastócito"
    ],
    "correta": "C"
   },
-  "fonte": "Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10a ed. (2022); Kumar V et al. Robbins and Cotran Pathologic Basis of Disease, 10a ed. (2021).",
+  "fonte": "Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed., 2022; Robbins and Cotran Pathologic Basis of Disease, 10th ed., 2020.",
   "revisao": {
    "medica": "Resolvida antes do gabarito: C (imunocomplexos, tipo III). Soro heterólogo, 10 dias, febre, rash, artralgia, proteinúria, C3 e C4 baixos: vinheta suficiente e gabarito único. Selos de dia 155 e 176 conferidos.",
-   "humor_compliance": "Gancho trocado: \"quem gruda no rim\" apontava para deposição de imunocomplexos. Palavras-chave da legenda da questão não citam mais serum sickness nem immune complexes. Piada do chiclete mantida, boa e correta."
+   "humor_compliance": "Gancho trocado: \"quem gruda no rim\" apontava para deposição de imunocomplexos. Palavras-chave da legenda da questão não citam mais serum sickness nem immune complexes. Piada do chiclete mantida, boa e correta. Rodada de humor de 29/10/2026: gancho, cenas, macete e fala reescritos com Macrô como anfitrião do quadro; cena-base nova no mês e assinatura pequena do quadro.",
+   "revisao_cega_123_183": "Alternativa B (toxina da cólera travando o Gs) não era mecanismo possível para doença do soro. As quatro agora são os quatro tipos de hipersensibilidade (I, II, III e IV, com o IV pelo CD8 e MHC I do dia 176); cólera voltou como bônus no macete."
   },
-  "gancho": "Remix de domingo: o soro de cavalo *cobrou a conta* depois",
-  "gancho_apoio": null,
+  "gancho": "Soro de cavalo, 10 dias de espera e um *joelho* reclamando. Quem é o culpado?",
+  "gancho_apoio": "Remix com doença do soro (dia 78), cólera (dia 155) e MHC (dia 176), mais um intruso.",
   "imagem": {
    "arquivo": "dia-182.png",
-   "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (uma ferradura, uma vírgula com um interruptor de luz e uma bandeja de garçom com duas pratas) e um quarto disco com uma pipoca estourando tentando entrar na pilha.",
+   "cena": "Num haras ensolarado, o Macrô, com a comanda em branco no bolso, está ao lado de um cavalinho simpático e olha três objetos numa mesinha: um interruptor de luz, uma bandeja com dois pratos e uma pipoca estourando. Num canto da mesinha, um pequeno vinil.",
    "foco": "50% 35%",
-   "alt": "Remix de domingo: o soro de cavalo cobrou a conta depois"
+   "alt": "Macrô num haras ao lado de um cavalinho, olhando um interruptor, uma bandeja de dois pratos e uma pipoca."
   },
   "imagem_macete": {
    "arquivo": "dia-182-macete.png",
-   "cena": "O disco da ferradura toca e, da caixa de som, saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, num joelho de boneco articulado e num tapete; os outros dois discos ganham um risco vermelho e o da pipoca é barrado por um cone.",
-   "alt": "Soro de cavalo, 10 dias depois: imunocomplexos"
+   "cena": "Do cavalinho saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, no joelho de um boneco articulado e num tapete; bichinhos amarelos de complemento mordiscam as bolinhas e encolhem. O interruptor e a bandeja ganham um risco vermelho, e a pipoca é barrada por um cone.",
+   "alt": "Bolinhas de chiclete grudam numa peneira, num joelho de boneco e num tapete; o complemento mordisca e encolhe."
   },
   "questao": {
    "vinheta": "A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.",
    "pergunta": "Which mechanism best explains these findings?",
    "alternativas": {
     "A": {
-     "texto": "Endogenous peptides shown on MHC I to CD8+ T cells",
-     "quiz": "MHC I para CD8",
+     "texto": "CD8+ T cells killing cells that present peptide on MHC I",
+     "quiz": "CD8 via MHC I",
      "dia": 176
     },
     "B": {
-     "texto": "Toxin that locks Gs on, raising cAMP",
-     "quiz": "Gs travado, cAMP",
-     "dia": 155
+     "texto": "IgG binding a fixed antigen on cell surfaces",
+     "quiz": "IgG na célula"
     },
     "C": {
      "texto": "Immune complex deposition with complement activation",
@@ -288,18 +289,18 @@
     "hypocomplementemia"
    ],
    "erradas": {
-    "A": "Dia 176: MHC I apresenta peptídeos de dentro da célula ao CD8; é a via da célula infectada por vírus, não explica febre, artralgia e complemento baixo após soro.",
-    "B": "Dia 155: a toxina da cólera trava o Gs ligado e causa diarreia aquosa; não há toxina nem diarreia aqui.",
+    "A": "Dia 176: CD8 matando células que mostram peptídeo no MHC I é imunidade celular (tipo IV), que não consome complemento nem depende de anticorpo contra o soro.",
+    "B": "Anticorpo contra antígeno fixo na superfície da célula é o tipo II, como na anemia hemolítica autoimune; não forma complexos circulantes que se depositam ao mesmo tempo em pele, junta e rim dias depois de um soro.",
     "D": "Intruso: a ponte de IgE no mastócito é tipo I, começa em minutos (urticária, broncoespasmo, anafilaxia) e não consome complemento."
    },
    "macete": {
-    "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo.",
-    "apoio": "O NBME cita soro animal, anticorpo monoclonal quimérico ou antibiótico (penicilina, cefaclor) com sintomas 1 a 2 semanas depois e complemento baixo; o tipo I aparece em minutos, o tipo III demora dias.",
-    "fala": null
+    "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta",
+    "apoio": "O complemento é gasto para limpar (C3 e C4 baixos). Dez dias é o tempo de a fábrica produzir o anticorpo; o tipo I vem em minutos. Bônus: a cólera trava o Gs ligado (dia 155).",
+    "fala": "Comi, mostrei, avisei. Dez dias depois, a fábrica de anticorpo entregou o pedido grudento."
    }
   },
   "legenda": {
-   "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 78, 155 e 176) e um intruso. Só um mecanismo explica o quadro da vinheta.",
+   "contexto": "Remix de Domingo: três conceitos de Step 1 que já passaram por aqui e um intruso. Globulina antitimócito equina há 10 dias, febre, rash nas laterais das mãos e dos pés, artrite e complemento baixo. Qual mecanismo?",
    "palavras_chave": [
     "Sunday remix",
     "spaced repetition",
@@ -307,11 +308,12 @@
    ]
   },
   "quiz": {
-   "pergunta": "Soro de cavalo e C3 baixo. Qual mecanismo?"
+   "pergunta": "Febre, rash, artrite e C3 e C4 baixos 10 dias após ATG equina: mecanismo?"
   },
   "cta": "pre_inscricao",
   "tom": null,
-  "tipo_pergunta": "imagem mental"
+  "tipo_pergunta": "imagem mental",
+  "anfitriao": "Macrô"
  },
  {
   "dia": 183,
@@ -326,7 +328,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-04",
-  "gancho_pt": "Tem alguém tocando a campainha da tireoide sem parar",
+  "gancho_pt": "Tireoide fazendo hora extra com o chefe de folga: vazamento, chefe clandestino ou ordem falsa?",
   "vinheta_en": "A 29-year-old woman has weight loss, tremor, heat intolerance, and bilateral proptosis. She has a diffuse, nontender goiter with a bruit. TSH is suppressed, and free T4 is elevated. Radioactive iodine uptake is diffusely increased.",
   "pergunta_en": "Which mechanism best explains her hyperthyroidism?",
   "alternativas": [
@@ -359,8 +361,8 @@
    "pegadinha_de_prova": "O NBME pergunta o tipo de hipersensibilidade (tipo II, anticorpo contra receptor) e separa Graves da tireoidite pela captação de iodo: alta e difusa em Graves, baixa na tireoidite."
   },
   "imagem_questao": {
-   "conceito_visual": "Macrô na porta do boteco dos micróbios observa, do outro lado da rua, uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar; uma mão misteriosa, escondida atrás do muro, aperta a campainha da fábrica, e no alto do morro uma casinha (a hipófise) está de luz apagada.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: the macrophage character stands at the door of a small cozy neighborhood bar with a plain blank road sign next to it, looking across the street with curiosity at a factory shaped like a butterfly whose two chimneys puff white smoke nonstop; a mysterious hand, hidden behind a low brick wall, keeps pressing the round doorbell of the factory; on a hill in the background, a tiny house sits with its lights turned off and a sleeping cat on the roof. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Da janela do prédio vizinho, o Macrô, de binóculo e com a comanda em branco no bolso, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar, enquanto um caminhãozinho descarrega carvão no portão. Ao lado do portão há um muro baixo de tijolos e, no alto do morro, uma casinha está de luz apagada.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: from the window of a neighboring building, Macrô looks through binoculars, a blank bar order slip peeking from his pocket, at a factory shaped like a butterfly whose two chimneys puff white smoke nonstop while a small truck keeps unloading lumps of coal at its gate; a low brick wall stands beside the gate; on a hill in the background, a tiny house sits with its lights turned off and a sleeping cat on the roof. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -368,18 +370,18 @@
    }
   },
   "imagem_explicacao": {
-   "conceito_visual": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva; Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: the same scene: the low brick wall has been removed and reveals a small Y-shaped navy character, an antibody, pressing the factory doorbell button and keeping it stuck with a strip of yellow tape; the butterfly factory chimneys puff nonstop; the macrophage character points at the Y-shaped culprit with his checkered napkin, smiling; the tiny house on the hill still has its lights off. Satisfying reveal. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva. Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: the same scene: the low brick wall has been removed and reveals a small Y-shaped navy character, an antibody, pressing the factory doorbell button and keeping it stuck with a strip of yellow tape; the butterfly factory chimneys puff nonstop; Macrô points at the Y-shaped culprit with his checkered napkin, smiling; the tiny house on the hill still has its lights off. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Tem alguém tocando a campainha da tireoide sem parar\n\nBicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e um culpado que não é hormônio. Descubra quem é que está apertando o botão.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: weight loss, tremor, proptosis, diffuse goiter\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Imunologia",
-  "legenda_explicacao_pt": "Gabarito do dia 183: letra D, IgG que estimula o receptor de TSH (doença de Graves).\n\nBócio difuso com sopro, proptose, TSH suprimido e captação de iodo alta e difusa: doença de Graves. Uma IgG estimula o receptor de TSH sem destruir a célula (hipersensibilidade tipo II). Hashimoto e tireoidite viral têm captação baixa; adenoma de TSH deixaria o TSH alto.\n\nMacete: a IgG é o vizinho que aperta a campainha do receptor de TSH; a tireoide atende sem parar e a hipófise fica calada.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Endocrinologia #Endocrinology #RoadToAmerica #BichoDeSegunda",
+  "legenda_questao_pt": "Tireoide fazendo hora extra com o chefe de folga: vazamento, chefe clandestino ou ordem falsa?\n\nBicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e uma captação de iodo alta e difusa. Qual mecanismo explica?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: weight loss, tremor, proptosis, diffuse goiter\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Imunologia",
+  "legenda_explicacao_pt": "Gabarito do dia 183: letra D, IgG que estimula o receptor de TSH (doença de Graves).\n\nBócio difuso com sopro, proptose, TSH suprimido e captação de iodo alta e difusa: doença de Graves. Uma IgG estimula o receptor de TSH sem destruir a célula (hipersensibilidade tipo II). Hashimoto e tireoidite viral têm captação baixa; adenoma de TSH deixaria o TSH alto.\n\nMacete: Graves é o vizinho que aperta a campainha do receptor de TSH e foge: a tireoide atende a porta sem parar, e a hipófise, que é a dona da campainha, fica calada (TSH baixo). Macrô reconhece o vizinho: tem formato de Y, é uma IgG.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Endocrinologia #Endocrinology #RoadToAmerica #BichoDeSegunda",
   "story_quiz": {
-   "pergunta_curta_pt": "TSH baixo, captação alta, proptose. Qual mecanismo?",
+   "pergunta_curta_pt": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?",
    "opcoes": [
     "Anti-TPO destrói",
     "Adenoma de TSH",
@@ -388,23 +390,24 @@
    ],
    "correta": "D"
   },
-  "fonte": "Ross DS et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis; Kumar V et al. Robbins and Cotran Pathologic Basis of Disease, 10a ed. (2021).",
+  "fonte": "Ross DS et al. 2016 American Thyroid Association Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis; Robbins and Cotran Pathologic Basis of Disease, 10th ed., 2020.",
   "revisao": {
    "medica": "Resolvida antes do gabarito: D (IgG estimuladora do TSH-R). Captação alta e difusa, TSH suprimido e proptose separam de Hashimoto, De Quervain e adenoma de TSH. Explicações corretas (tipo II não citotóxica).",
-   "humor_compliance": "Palavras-chave sem \"TSH receptor antibody\". Campainha e vizinho que foge: boa imagem, não entrega o culpado. Sem outras mudanças."
+   "humor_compliance": "Palavras-chave sem \"TSH receptor antibody\". Campainha e vizinho que foge: boa imagem, não entrega o culpado. Sem outras mudanças. Rodada de humor de 29/10/2026: gancho, cenas, macete e fala reescritos com Macrô; cena-base nova no mês e assinatura pequena do quadro.",
+   "revisao_cega_123_183": "Pista: gancho (\"tocando a campainha e saindo correndo\"), cena (mão escondida apertando a campainha) e legenda (\"quem está apertando o botão\", \"culpado que não é hormônio\") já mostravam o anticorpo estimulador, que é o próprio macete do D+1. Gancho, apoio, cena, alt, prompt e legenda trocados; a campainha só aparece no macete."
   },
-  "gancho": "Tem alguém *tocando a campainha* da tireoide sem parar",
-  "gancho_apoio": null,
+  "gancho": "Tireoide fazendo *hora extra* com o chefe de folga: vazamento, chefe clandestino ou ordem falsa?",
+  "gancho_apoio": "Proptose, bócio difuso com sopro e captação de iodo lá em cima. O Macrô pegou o binóculo.",
   "imagem": {
    "arquivo": "dia-183.png",
-   "cena": "Macrô na porta do boteco dos micróbios observa, do outro lado da rua, uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar; uma mão misteriosa, escondida atrás do muro, aperta a campainha da fábrica, e no alto do morro uma casinha (a hipófise) está de luz apagada.",
+   "cena": "Da janela do prédio vizinho, o Macrô, de binóculo e com a comanda em branco no bolso, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar, enquanto um caminhãozinho descarrega carvão no portão. Ao lado do portão há um muro baixo de tijolos e, no alto do morro, uma casinha está de luz apagada.",
    "foco": "50% 35%",
-   "alt": "Tem alguém tocando a campainha da tireoide sem parar"
+   "alt": "Macrô de binóculo observa uma fábrica em forma de borboleta que solta fumaça sem parar; no morro, uma casinha apagada."
   },
   "imagem_macete": {
    "arquivo": "dia-183-macete.png",
-   "cena": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva; Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
-   "alt": "Graves: a IgG imita o TSH"
+   "cena": "O muro cai e revela o culpado: um personagem em forma de Y (a IgG) segurando o botão da campainha preso com fita adesiva. Macrô aponta para ele com o guardanapo, e a casinha do morro continua apagada.",
+   "alt": "O muro cai e mostra um personagem em forma de Y prendendo a campainha com fita; a casinha segue apagada."
   },
   "questao": {
    "vinheta": "A 29-year-old woman has weight loss, tremor, heat intolerance, and bilateral proptosis. She has a diffuse, nontender goiter with a bruit. TSH is suppressed, and free T4 is elevated. Radioactive iodine uptake is diffusely increased.",
@@ -446,13 +449,13 @@
     "C": "A tireoidite subaguda viral (de Quervain) libera hormônio pronto: glândula dolorosa e captação de iodo baixa."
    },
    "macete": {
-    "frase": "Graves é o *vizinho que aperta a campainha* do receptor de TSH e foge: a tireoide atende a porta sem parar, e a hipófise, que é a dona da campainha, fica calada (TSH baixo). Macrô reconhece o vizinho: tem formato de *Y*, é uma IgG.",
-    "apoio": "O NBME pergunta o tipo de hipersensibilidade (tipo II, anticorpo contra receptor) e separa Graves da tireoidite pela captação de iodo: alta e difusa em Graves, baixa na tireoidite.",
-    "fala": null
+    "frase": "Graves é o *vizinho que toca a campainha* do receptor de TSH e foge",
+    "apoio": "A tireoide atende a porta sem parar e a hipófise, dona da campainha, fica calada (TSH baixo). Tipo II não citotóxico; captação alta e difusa.",
+    "fala": "Comi, mostrei, avisei: o vizinho que toca a campainha e foge tem formato de Y."
    }
   },
   "legenda": {
-   "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e um culpado que não é hormônio. Descubra quem é que está apertando o botão.",
+   "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado, uma hipófise em silêncio e uma captação de iodo alta e difusa. Qual mecanismo explica?",
    "palavras_chave": [
     "weight loss",
     "tremor",
@@ -461,7 +464,7 @@
    ]
   },
   "quiz": {
-   "pergunta": "TSH baixo, captação alta, proptose. Qual mecanismo?"
+   "pergunta": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?"
   },
   "cta": "simulado",
   "tom": null,
@@ -480,7 +483,7 @@
   "gancho_data": "Dia Mundial da Asma (primeira terça de maio, 4/5/2027).",
   "remix_de": null,
   "explicacao_em": "2027-05-05",
-  "gancho_pt": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. Ainda é titular?",
+  "gancho_pt": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. Quem a GINA escala hoje?",
   "vinheta_en": "A 24-year-old woman with asthma uses albuterol 2 to 3 times per week for wheezing and has no nighttime awakenings or activity limitation. She takes no other medications. Spirometry shows obstruction that reverses after bronchodilator. She asks for a better treatment plan.",
   "pergunta_en": "Following GINA recommendations, which is the most appropriate pharmacotherapy?",
   "alternativas": [
@@ -530,7 +533,7 @@
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. Ainda é titular?\n\nHoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA mudou essa resposta nos últimos anos, e a prova foi junto.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: mild asthma, albuterol use, reversible obstruction, treatment plan\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #ClinicaMedica",
+  "legenda_questao_pt": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. Quem a GINA escala hoje?\n\nHoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA tem opinião forte sobre esse caso, e a prova também.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: mild asthma, albuterol use, reversible obstruction, treatment plan\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #ClinicaMedica",
   "legenda_explicacao_pt": "Gabarito do dia 184: letra A, budesonida-formoterol em dose baixa conforme a necessidade.\n\nAsma leve, sintomas menos de 4 a 5 dias por semana: pela GINA, o preferido é corticoide inalatório com formoterol no resgate. Cada alívio leva corticoide junto e reduz crises graves. SABA sozinho e LABA sem corticoide aumentam o risco; montelucaste é menos eficaz.\n\nMacete: SABA sozinho é estudar só na véspera: apaga a crise de hoje e garante a de amanhã. Pela GINA, o resgate vem em combo: o formoterol abre rápido e o corticoide inalatório vai na garupa, no mesmo jato.\n\nPara mandar no grupo da turma: SABA sozinho é estudar só na véspera: apaga a crise de hoje e garante a de amanhã.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Pneumologia #Asthma #RoadToAmerica #DiaMundialDaAsma",
   "story_quiz": {
    "pergunta_curta_pt": "Asma leve, salbutamol 3x/semana: qual plano pela GINA?",
@@ -547,7 +550,7 @@
    "medica": "Resolvida antes do gabarito: A. A NAEPP 2020 colocaria corticoide inalatório diário e aceitaria montelucaste como alternativa no passo 2, o que abria discussão com C; o lead-in passou a citar a GINA (\"Following GINA recommendations...\"), deixando o gabarito único (GINA: ICS-formoterol conforme a necessidade nos passos 1 e 2). Alerta da FDA do montelucaste e proibição de LABA isolado conferidos. Fonte GINA 2025: conferir a edição vigente antes de postar.",
    "humor_compliance": "A capa entregava a resposta: o gancho \"a bombinha azul não anda sozinha\" e a bicicleta de dois inaladores na imagem da questão apontavam para a combinação. Gancho novo e bicicleta movida para a imagem da explicação. Palavras-chave sem ICS-formoterol. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
   },
-  "gancho": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. *Ainda é titular?*",
+  "gancho": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. *Quem a GINA escala hoje?*",
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-184.png",
@@ -606,7 +609,7 @@
    }
   },
   "legenda": {
-   "contexto": "Hoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA mudou essa resposta nos últimos anos, e a prova foi junto.",
+   "contexto": "Hoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA tem opinião forte sobre esse caso, e a prova também.",
    "palavras_chave": [
     "mild asthma",
     "albuterol use",
@@ -789,7 +792,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-07",
-  "gancho_pt": "Seis espetos em dez minutos: nem no rodízio isso é educado",
+  "gancho_pt": "Seis espetos em dez minutos e o balão-coração afundando depois de cada um. Garçom, e agora?",
   "vinheta_en": "A 30-year-old primigravida in active labor at 39 weeks' gestation is receiving oxytocin augmentation. Six contractions occur every 10 minutes. Fetal heart tracing shows a baseline of 140/min, minimal variability, and recurrent decelerations whose nadir follows the peak of each contraction.",
   "pergunta_en": "Which is the most appropriate next step?",
   "alternativas": [
@@ -839,7 +842,7 @@
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Seis espetos em dez minutos: nem no rodízio isso é educado\n\nRodízio de Quinta na obstetrícia: ocitocina correndo, seis contrações a cada dez minutos e um traçado que desce sempre depois do pico. Qual é o primeiro movimento da equipe?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: active labor, oxytocin augmentation, frequent contractions, fetal heart tracing\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #GinecologiaEObstetricia",
+  "legenda_questao_pt": "Seis espetos em dez minutos e o balão-coração afundando depois de cada um. Garçom, e agora?\n\nRodízio de Quinta na obstetrícia: ocitocina correndo, seis contrações a cada dez minutos e um traçado que desce sempre depois do pico. Qual é o primeiro movimento da equipe?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: active labor, oxytocin augmentation, frequent contractions, fetal heart tracing\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #GinecologiaEObstetricia",
   "legenda_explicacao_pt": "Gabarito do dia 186: letra C, suspender a ocitocina e colocar a gestante em decúbito lateral esquerdo.\n\nO fundo da desaceleração vem depois do pico da contração: desaceleração tardia, insuficiência uteroplacentária. A causa aqui é taquissistolia pela ocitocina. Primeiro vem a ressuscitação intrauterina: parar a ocitocina, decúbito lateral, volume. Cesárea se o traçado não melhorar.\n\nMacete: VEAL CHOP: Variable é Cord, Early é Head, Acceleration é OK, Late é Placenta. Seis contrações em dez minutos é taquissistolia: o garçom para de servir (desliga a ocitocina) e vira a mãe de lado antes de qualquer cesárea.\n\nPara mandar no grupo da turma: O NBME oferece cesárea imediata para quem leu só a última linha do traçado.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Obstetricia #Obstetrics #RoadToAmerica #RodizioDeQuinta",
   "story_quiz": {
    "pergunta_curta_pt": "Desacelera depois do pico, com ocitocina: o que fazer?",
@@ -856,7 +859,7 @@
    "medica": "Resolvida antes do gabarito: C. Taquissistolia por ocitocina com desacelerações tardias recorrentes e variabilidade mínima (categoria II): ressuscitação intrauterina primeiro. Explicações e VEAL CHOP corretos.",
    "humor_compliance": "Gancho \"o coração do bebê só cai\" trocado por \"o traçado só desce\", menos alarmante para gestantes que seguem o perfil. Palavras-chave sem intrauterine resuscitation. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
   },
-  "gancho": "Seis espetos em dez minutos: *nem no rodízio* isso é educado",
+  "gancho": "Seis espetos em dez minutos e o balão-coração afundando depois de cada um. *Garçom, e agora?*",
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-186.png",
@@ -944,7 +947,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-08",
-  "gancho_pt": "Sextou com a Capitã: a viatura C apagou primeiro, e a pele pagou o pato",
+  "gancho_pt": "Sextou com a Capitã: uma viatura apagou antes de todo mundo, e a pele pagou o pato",
   "vinheta_en": "A 58-year-old man with a new mechanical mitral valve starts an oral anticoagulant. On day 2, he develops painful dark purple lesions on his thigh that become necrotic. Further testing shows heterozygous protein C deficiency.",
   "pergunta_en": "This drug acts by inhibiting which enzyme?",
   "alternativas": [
@@ -994,7 +997,7 @@
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Sextou com a Capitã: a viatura C apagou primeiro, e a pele pagou o pato\n\nSextou na Farmácia com a Capitã Plaqueta. Um paciente com valva mecânica começa um anticoagulante oral e, no segundo dia, aparece uma lesão de pele estranha. A enzima bloqueada explica tudo.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: mechanical mitral valve, oral anticoagulant, skin necrosis, protein C deficiency\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia",
+  "legenda_questao_pt": "Sextou com a Capitã: uma viatura apagou antes de todo mundo, e a pele pagou o pato\n\nSextou na Farmácia com a Capitã Plaqueta. Um paciente com valva mecânica começa um anticoagulante oral e, no segundo dia, aparece uma lesão de pele estranha. A enzima bloqueada explica tudo.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: mechanical mitral valve, oral anticoagulant, skin necrosis, protein C deficiency\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia",
   "legenda_explicacao_pt": "Gabarito do dia 187: letra C, epóxido redutase da vitamina K (varfarina).\n\nValva mecânica pede varfarina. Ela inibe a epóxido redutase da vitamina K, e caem os fatores II, VII, IX e X e as proteínas C e S. A proteína C cai primeiro e, em quem já tem deficiência, surge a necrose de pele: por isso a ponte com heparina no início.\n\nMacete: a varfarina tira da tomada o recarregador da vitamina K; a viatura C apaga primeiro, por isso a ponte com heparina.\n\nPara mandar no grupo da turma: A proteína C tem bateria de celular velho: é a primeira a morrer quando a varfarina tira o carregador.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep1 #Farmacologia #Pharmacology #RoadToAmerica #SextouNaFarmacia",
   "story_quiz": {
    "pergunta_curta_pt": "Necrose de pele no 2º dia do anticoagulante: qual enzima?",
@@ -1011,7 +1014,7 @@
    "medica": "Resolvida antes do gabarito: C (VKOR). Corrigido o macete: dizia que as viaturas C e S param primeiro, mas a proteína S tem meia-vida longa; só a proteína C (e o fator VII) caem primeiro. Corrigida a errada B: argatrobana não é \"contraindicada em valva mecânica\", é anticoagulante venoso usado na HIT; a dabigatrana é a contraindicada. Imagem da explicação ajustada (só a viatura C e o carro 7 apagam primeiro).",
    "humor_compliance": "Gancho citava \"Varfarina\", o que reduzia a questão à lembrança do mecanismo; trocado. A horta de couve (vitamina K) e o posto de recarga saíram da imagem da questão e foram para a da explicação. Palavras-chave sem warfarin e vitamin K epoxide reductase. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
   },
-  "gancho": "Sextou com a Capitã: a viatura *C* apagou primeiro, e a pele pagou o pato",
+  "gancho": "Sextou com a Capitã: uma viatura *apagou antes de todo mundo*, e a pele pagou o pato",
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-187.png",
@@ -1131,8 +1134,8 @@
    "pegadinha_de_prova": "O NBME oferece o médico assistente fazendo o pedido ou esperar a família tocar no assunto; a resposta é notificar a OPO e deixar a abordagem com a equipe treinada."
   },
   "imagem_questao": {
-   "conceito_visual": "Uma placa de trânsito em forma de balança da justiça diante da porta de uma sala de família com luz suave; sobre uma mesinha, um bastão de revezamento em forma de coração brilha, à espera de quem vai buscá-lo.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a quiet hospital hallway with soft warm light in front of a closed wooden door of a family room with a small plant beside it; a round traffic sign showing a simple balance scale of justice stands near the door; on a small side table rests a glowing relay baton shaped like a red heart, waiting to be picked up; respectful, gentle, hopeful mood. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Uma placa de trânsito em forma de balança da justiça diante da porta de uma sala de família com luz suave; sobre uma mesinha, uma pequena luminária em forma de coração brilha com luz suave.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a quiet hospital hallway with soft warm light in front of a closed wooden door of a family room with a small plant beside it; a round traffic sign showing a simple balance scale of justice stands near the door; on a small side table a small heart-shaped lamp glows with a soft warm light; respectful, gentle, hopeful mood. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -1140,8 +1143,8 @@
    }
   },
   "imagem_explicacao": {
-   "conceito_visual": "Uma figura estilizada de jaleco branco entrega o bastão-coração a outra figura estilizada de colete verde, que vai entrar na sala da família; pela janela, uma van branca com faixa verde e um coração na lateral está estacionada.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same hallway: a simple stylized figure in a white coat, faceless and generic, gently hands the glowing heart-shaped relay baton to another stylized generic figure wearing a green vest, who is about to enter the family room; through a window, a white van with a green stripe and a small heart icon on its side is parked outside; calm, respectful, hopeful reveal. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Uma figura estilizada de jaleco branco entrega um bastão de revezamento em forma de coração a outra figura estilizada de colete verde, que vai entrar na sala da família; pela janela, uma van branca com faixa verde e um coração na lateral está estacionada.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same hallway: a simple stylized figure in a white coat, faceless and generic, gently hands a glowing heart-shaped relay baton to another stylized generic figure wearing a green vest, who is about to enter the family room; through a window, a white van with a green stripe and a small heart icon on its side is parked outside; calm, respectful, hopeful reveal. Gentle, respectful, educational tone. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -1169,13 +1172,13 @@
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-188.png",
-   "cena": "Uma placa de trânsito em forma de balança da justiça diante da porta de uma sala de família com luz suave; sobre uma mesinha, um bastão de revezamento em forma de coração brilha, à espera de quem vai buscá-lo.",
+   "cena": "Uma placa de trânsito em forma de balança da justiça diante da porta de uma sala de família com luz suave; sobre uma mesinha, uma pequena luminária em forma de coração brilha com luz suave.",
    "foco": "50% 35%",
    "alt": "Morte encefálica e doação: quem conversa com a família?"
   },
   "imagem_macete": {
    "arquivo": "dia-188-macete.png",
-   "cena": "Uma figura estilizada de jaleco branco entrega o bastão-coração a outra figura estilizada de colete verde, que vai entrar na sala da família; pela janela, uma van branca com faixa verde e um coração na lateral está estacionada.",
+   "cena": "Uma figura estilizada de jaleco branco entrega um bastão de revezamento em forma de coração a outra figura estilizada de colete verde, que vai entrar na sala da família; pela janela, uma van branca com faixa verde e um coração na lateral está estacionada.",
    "alt": "Quem declara não pede: a OPO conversa"
   },
   "questao": {
@@ -1754,8 +1757,8 @@
    "pegadinha_de_prova": "O NBME separa Erb (ombro e cotovelo, preensão preservada, tração do pescoço) de Klumpke (mão em garra, Horner possível, tração do braço para cima); bebê grande e distocia de ombro são as pistas."
   },
   "imagem_questao": {
-   "conceito_visual": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania puxa a copa para o lado, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
-   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Allen, a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be. Scene: the hex key character opens a giant assembly manual in a garden; the part of the day is a tree with five roots, with small assembly arrows around it; a strong gust of wind pulls the treetop to one side, and a swirl of leaves hides which branches are being stretched. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+   "conceito_visual": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania sacode a árvore inteira, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
+   "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Allen, a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be. Scene: the hex key character opens a giant assembly manual in a garden; the part of the day is a tree with five roots, with small assembly arrows around it; a strong gust of wind shakes the whole tree, and a swirl of leaves hides which branches are being stretched. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
    "parametros": {
     "modelo": "nano_banana_pro",
     "resolucao": "2k",
@@ -1792,9 +1795,9 @@
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-192.png",
-   "cena": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania puxa a copa para o lado, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
+   "cena": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania sacode a árvore inteira, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
    "foco": "50% 35%",
-   "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes puxada pelo vento"
+   "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes sacudida pelo vento"
   },
   "imagem_macete": {
    "arquivo": "dia-192-macete.png",
@@ -2961,7 +2964,7 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-21",
-  "gancho_pt": "Dia 200! Convulsão de 2 minutos, criança já rindo e os pais querendo o cardápio inteiro de exames",
+  "gancho_pt": "Dia 200! Convulsão de 2 minutos no primeiro dia de febre, criança já rindo e o cardápio de exames aberto na mesa",
   "vinheta_en": "An 18-month-old girl has a 2-minute generalized tonic-clonic seizure at home on the first day of a fever of 39.4°C (103°F). Twenty minutes later she is fully alert and has a runny nose. Vaccinations are up to date. Neurologic examination is normal, with no meningeal signs.",
   "pergunta_en": "Which is the most appropriate next step?",
   "alternativas": [
@@ -3011,7 +3014,7 @@
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "Dia 200! Convulsão de 2 minutos, criança já rindo e os pais querendo o cardápio inteiro de exames\n\nDia 200 da Questão de Embarque, obrigado por estudar com a gente! No Rodízio de hoje, uma criança teve uma convulsão no primeiro dia de febre e já está brincando. Qual é a conduta?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: seizure with fever, 18-month-old, normal neurologic exam, toddler\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Pediatria",
+  "legenda_questao_pt": "Dia 200! Convulsão de 2 minutos no primeiro dia de febre, criança já rindo e o cardápio de exames aberto na mesa\n\nDia 200 da Questão de Embarque, obrigado por estudar com a gente! No Rodízio de hoje, uma criança teve uma convulsão no primeiro dia de febre e já está brincando. Qual é a conduta?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: seizure with fever, 18-month-old, normal neurologic exam, toddler\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Pediatria",
   "legenda_explicacao_pt": "Gabarito do dia 200: letra C, tranquilizar os pais e tratar a febre.\n\nCriança de 18 meses, convulsão generalizada de 2 minutos no primeiro dia de febre, volta ao normal, vacinada e sem sinais meníngeos: convulsão febril simples. Sem EEG, sem imagem, sem punção. Trate a febre, explique o risco de recorrência e oriente a família.\n\nMacete: Convulsão febril simples é 15, 24, 1: menos de 15 minutos, uma vez em 24 horas, 1 episódio generalizado. Criança bem e vacinada: o garçom recolhe o cardápio e diz \"não, obrigado\" para EEG, punção e remédio diário.\n\nPara mandar no grupo da turma: Pedir EEG na convulsão febril simples é mandar áudio de 4 minutos para responder ok.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Pediatria #Pediatrics #RoadToAmerica #RodizioDeQuinta",
   "story_quiz": {
    "pergunta_curta_pt": "Convulsão de 2 min no 1º dia de febre: conduta?",
@@ -3028,7 +3031,7 @@
    "medica": "Resolvida antes do gabarito: C. Convulsão febril simples em criança vacinada, sem sinais meníngeos: sem EEG, imagem ou punção (AAP 2011); sem anticonvulsivante contínuo (AAP 2008).",
    "humor_compliance": "Gancho \"nada de exame?\" entregava a conduta; trocado por um gancho que acolhe o susto dos pais. A comemoração do Dia 200 ficou só no contexto da legenda, longe da capa. Palavras-chave sem reassurance. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
   },
-  "gancho": "Dia 200! Convulsão de 2 minutos, criança já rindo e *os pais querendo o cardápio inteiro de exames*",
+  "gancho": "Dia 200! Convulsão de 2 minutos no primeiro dia de febre, criança já rindo e *o cardápio de exames aberto na mesa*",
   "gancho_apoio": null,
   "imagem": {
    "arquivo": "dia-200.png",
@@ -4251,7 +4254,7 @@
     "proporcao": "4:5"
    }
   },
-  "legenda_questao_pt": "O tímpano virou zabumba de São João: qual frasco a Tia tira da prateleira?\n\nSextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. A escolha certa depende da dose tanto quanto do nome do remédio.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: ear pulling, fever, day care, otoscopy\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Pediatria",
+  "legenda_questao_pt": "O tímpano virou zabumba de São João: qual frasco a Tia tira da prateleira?\n\nSextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. Na prateleira, quatro frascos sem rótulo, e só um é a primeira escolha.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: ear pulling, fever, day care, otoscopy\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Pediatria",
   "legenda_explicacao_pt": "Gabarito do dia 208: letra D, amoxicilina oral em dose alta.\n\nTímpano abaulado, vermelho e imóvel com febre de 39,2 °C: otite média aguda com sinal de gravidade, que pede antibiótico. Primeira linha: amoxicilina em dose alta, 80 a 90 mg/kg/dia, para vencer o pneumococo menos sensível. Azitromicina e sulfa não são primeira linha; gota é para otite externa.\n\nMacete: o tímpano é a zabumba estufada; o remédio é o xarope rosa de amoxicilina em dose dobrada.\n\nPara mandar no grupo da turma: Na otite, a amoxicilina vem em dose de festa junina: dobrada.\n\nQuer treinar com o relógio correndo? Faça o simulado grátis de 30 minutos, link na bio: drgetulio.github.io/road-to-america/simulado/\n\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\n\n#USMLE #USMLEStep2CK #Pediatria #Pediatrics #RoadToAmerica #SextouNaFarmacia",
   "story_quiz": {
    "pergunta_curta_pt": "Tímpano abaulado, 2 anos, sem alergia: o que dar?",
@@ -4327,7 +4330,7 @@
    }
   },
   "legenda": {
-   "contexto": "Sextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. A escolha certa depende da dose tanto quanto do nome do remédio.",
+   "contexto": "Sextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. Na prateleira, quatro frascos sem rótulo, e só um é a primeira escolha.",
    "palavras_chave": [
     "ear pulling",
     "fever",

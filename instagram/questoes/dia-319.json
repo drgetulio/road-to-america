@@ -8,21 +8,22 @@
   "topico": "Síndrome dos ovários policísticos",
   "conceito": "PCOS: combined oral contraceptives are first-line for cycle control and hirsutism",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-17",
   "tom": null,
-  "gancho": "Ovário de colar de pérolas e calendário bagunçado: *qual espeto?*",
-  "gancho_apoio": "O garçom do rodízio quer saber primeiro se ela quer engravidar agora.",
+  "gancho": "Ciclo que aparece quatro vezes por ano, *igual minhas revisões do Anki*",
+  "gancho_apoio": "Ovários em colar de pérolas, pelo no queixo e nenhum plano de engravidar agora. Qual espeto?",
   "imagem": {
     "arquivo": "dia-319.png",
-    "cena": "Garçom de rodízio com quatro espetos diferentes diante de uma mesa onde dois ovários de desenho animado usam colares de pérolas; na parede, um calendário com as folhas fora de ordem, pulando meses. As plaquinhas verde e vermelha estão no avental.",
+    "cena": "Garçom Espetinho com quatro espetos diante de uma mesa onde dois ovários de desenho animado usam colares de pérolas; na parede, um calendário cujas folhas voam fora de ordem, pulando meses, ao lado de uma pilha enorme de cartões de revisão atrasados; a plaquinha verde e vermelha no avental.",
     "foco": "50% 35%",
-    "alt": "Ovário de colar de pérolas e calendário bagunçado: qual espeto?"
+    "alt": "Ciclo que aparece quatro vezes por ano, igual minhas revisões do Anki"
   },
   "imagem_macete": {
     "arquivo": "dia-319-macete.png",
-    "cena": "Callback: o garçom levanta a plaquinha verde ao lado de um espeto com uma cartela redonda de pílulas; o calendário da parede agora vira uma folha por mês, em ordem, e uma esponja amarela enxuga gotinhas na mesa.",
+    "cena": "Callback: o garçom levanta o lado verde da plaquinha ao lado de um espeto com uma cartela redonda; o calendário da parede vira uma folha por mês, em ordem, e uma esponja amarela enxuga gotinhas na mesa; a pilha de cartões continua lá, igualzinha.",
     "foco": "50% 45%",
     "alt": "SOP sem desejo de gestação: pílula combinada"
   },
@@ -66,9 +67,9 @@
       "C": "*Espironolactona* sozinha reduz o hirsutismo, mas não regula o ciclo nem protege o endométrio e é teratogênica sem contracepção."
     },
     "macete": {
-      "frase": "*Colar de pérolas sem plano de gravidez*: pílula combinada organiza o calendário",
-      "apoio": "Na imagem, o garçom levanta a plaquinha verde para a cartela de pílulas, o calendário volta a marcar um mês por vez e uma esponja (a SHBG) enxuga as gotinhas de andrógeno. Se o plano fosse engravidar, o espeto seria o letrozol.",
-      "fala": null
+      "frase": "*Colar de pérolas sem plano de bebê*: pílula combinada põe o calendário em dia",
+      "apoio": "A pílula combinada regula o ciclo, protege o endométrio da hiperplasia e sobe a SHBG, que segura a testosterona livre. Se o plano fosse engravidar, o espeto seria o letrozol. Espironolactona entra junto se o pelo não melhorar, nunca sozinha sem contracepção, porque é teratogênica. O calendário dela fica em dia; o do seu Anki, não prometo.",
+      "fala": "Vai uma conduta aí? Calendário em dia."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "SOP sem plano de gravidez: primeira linha?"
+    "pergunta": "Ciclos raros, pelos no queixo e sem plano de engravidar: qual tratamento?"
   },
   "cta": null,
   "reel": null,

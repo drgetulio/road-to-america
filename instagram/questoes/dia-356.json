@@ -8,21 +8,22 @@
   "topico": "Conflito de interesses",
   "conceito": "Industry gifts and conflicts of interest: disclose and decline gifts that can sway prescribing",
   "personagem": null,
+  "anfitriao": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-24",
   "tom": null,
-  "gancho": "Praia de graça no fim de semana? *O Viés fez as malas*",
-  "gancho_apoio": "Um convite da indústria com resort, palestra de uma hora e acompanhante.",
+  "gancho": "Praia de graça no fim de semana? *O Viés já passou protetor*",
+  "gancho_apoio": "Um convite com resort, palestra de uma hora e acompanhante incluído.",
   "imagem": {
     "arquivo": "dia-356.png",
-    "cena": "O Viés de óculos escuros, com guarda-sol e mala de viagem, espia de trás de uma tabela 2x2; ao lado, uma caixa de presente com laço vermelho em cima de um bloco de receitas em branco.",
+    "cena": "O Viés de óculos escuros, com guarda-sol, boia e mala de viagem, espia de trás de uma tabela 2x2; ao lado, uma caixa de presente com laço vermelho em cima de um bloco de receitas em branco.",
     "foco": "50% 35%",
-    "alt": "Praia de graça no fim de semana? O Viés fez as malas"
+    "alt": "Praia de graça no fim de semana? O Viés já passou protetor"
   },
   "imagem_macete": {
     "arquivo": "dia-356-macete.png",
-    "cena": "Callback: a balança desenhada como placa de trânsito tem num prato uma caneta e um livro-texto e, no outro, a mala com toalha de praia barrada por um cone vermelho; o Viés murcha, com a mala fechada.",
+    "cena": "Callback: a balança desenhada como placa de trânsito tem num prato uma caneta e um livro-texto e, no outro, a mala com toalha de praia barrada por um cone vermelho; o Viés murcha, ainda de boia, com a mala fechada.",
     "foco": "50% 45%",
     "alt": "Presente de valor alto da indústria: decline"
   },
@@ -66,9 +67,9 @@
       "D": "O problema é o presente para a médica; quem paga a passagem do cônjuge não muda isso."
     },
     "macete": {
-      "frase": "*Teste da padaria*: cabe no balcão, talvez; cabe na mala, recuse",
-      "apoio": "Se o brinde cabe no balcão da padaria e serve ao paciente ou ao estudo, pode ser aceitável. Se precisa de mala de viagem, não. Presente cria dívida, e o Viés adora uma dívida.",
-      "fala": null
+      "frase": "*Teste da padaria*: cabe no balcão, talvez; precisa de mala, recuse",
+      "apoio": "Se o brinde cabe no balcão da padaria e serve ao paciente ou ao estudo, pode ser aceitável. Se precisa de mala de viagem, não. Uma hora de palestra num fim de semana de praia: a palestra é a desculpa, a praia é o recado. Presente cria dívida, e o Viés adora uma dívida.",
+      "fala": "Se pagaram a viagem, eu fui junto."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Resort pago pela indústria. E agora?"
+    "pergunta": "Fim de semana em resort pago, com palestra de 1 hora: qual a resposta?"
   },
   "cta": "simulado",
   "reel": null,

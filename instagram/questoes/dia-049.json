@@ -38,7 +38,7 @@
         "dia": 15
       },
       "B": {
-        "texto": "It is likely, given the 90% specificity",
+        "texto": "It remains likely, given the 90% specificity",
         "quiz": "Provável pela especificidade"
       },
       "C": {
@@ -47,8 +47,8 @@
         "dia": 48
       },
       "D": {
-        "texto": "The negative result has a high PPV",
-        "quiz": "Negativo com VPP alto"
+        "texto": "It remains likely, given the assay's high PPV",
+        "quiz": "Provável pelo VPP alto"
       }
     },
     "correta": "C"
@@ -67,7 +67,7 @@
     "erradas": {
       "A": "Dia 15: o quadro é compatível, mas um teste com 99% de sensibilidade negativo pesa muito contra a doença.",
       "B": "Especificidade alta ajuda a confirmar quando o teste dá positivo (SpPIn); com resultado negativo, quem fala é a sensibilidade.",
-      "D": "Valor preditivo positivo só existe para resultado positivo; o negativo é lido pelo valor preditivo negativo, que aqui é alto."
+      "D": "Valor preditivo positivo só se aplica a resultado positivo; o negativo se lê pelo valor preditivo negativo, que aqui é alto."
     },
     "macete": {
       "frase": "Detector *mudo* também vale no rim: teste de 99% de sensibilidade negativo, e a pasta de dente do Goodpasture nem saiu do tubo.",

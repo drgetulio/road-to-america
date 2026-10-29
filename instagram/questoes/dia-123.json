@@ -8,23 +8,24 @@
   "topico": "Bronquiolite",
   "conceito": "RSV bronchiolitis: supportive care, no routine bronchodilators or steroids",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-05",
   "tom": null,
-  "gancho": "No rodízio do bebê chiador, qual *espeto* você aceita?",
-  "gancho_apoio": "Nariz escorrendo, chiado e um garçom oferecendo de tudo. Calma.",
+  "gancho": "Bebê chiando e o grupo da família já mandou *quatro receitas*. Qual espeto você aceita?",
+  "gancho_apoio": "Sibilo, crepitação e o Anki jurando que você já viu esse caso às 3 da manhã.",
   "imagem": {
     "arquivo": "dia-123.png",
-    "cena": "Garçom de churrascaria rodízio oferece quatro espetos a uma mesa vazia: um de copinhos de nebulização, um de comprimidos, um de cápsulas e um com um aspirador nasal de pera e uma mamadeira. Ele segura a plaquinha verde e vermelha virada de lado.",
+    "cena": "Garçom Espetinho, num quiosque de praia, abre em leque quatro espetinhos de queijo coalho: um com copinhos de nebulização, um com comprimidos, um com cápsulas e um com uma pera de borracha ao lado de um copo d'água. No balcão, um celular acende com quatro notificações em branco. A plaquinha verde e vermelha fica de lado, encostada no porta-guardanapo.",
     "foco": "50% 35%",
-    "alt": "Garçom de rodízio oferecendo quatro espetos: nebulização, comprimidos, cápsulas e aspirador nasal com mamadeira."
+    "alt": "Garçom Espetinho num quiosque de praia com quatro espetos; ao lado, um celular cheio de notificações."
   },
   "imagem_macete": {
     "arquivo": "dia-123-macete.png",
-    "cena": "Callback: o garçom vira a plaquinha verde para o prato do aspirador nasal e da mamadeira e a vermelha para os espetos de remédio, que ele recolhe educadamente.",
+    "cena": "O Garçom vira o lado verde da plaquinha para o espeto da pera de borracha e do copo d'água e guarda os outros três no isopor, de tampa fechada. O celular agora está no modo avião.",
     "foco": "50% 40%",
-    "alt": "Garçom mostra o lado verde para o aspirador nasal e a mamadeira e recolhe os espetos de remédio."
+    "alt": "A plaquinha verde fica com a pera de borracha e a água; os remédios vão para o isopor e o celular vai para o modo avião."
   },
   "questao": {
     "vinheta": "A 4-month-old girl has had rhinorrhea and cough for 3 days. Temperature is 38.1°C, respirations are 48/min and SpO2 is 95% on room air. She has mild subcostal retractions with diffuse wheezes and fine crackles. She is breastfeeding a little less than usual and has normal wet diapers.",
@@ -66,13 +67,13 @@
       "D": "Antibiótico não trata vírus; só entra se houver infecção bacteriana documentada, como otite."
     },
     "macete": {
-      "frase": "Bronquiolite no rodízio: *aspira, hidrata e observa*; o resto é \"não, obrigado\"",
-      "apoio": "Na imagem, a plaquinha verde fica ao lado do aspirador nasal e da mamadeira.",
-      "fala": null
+      "frase": "Bronquiolite: *aspira, hidrata e observa*. Salbutamol, corticoide e antibiótico ficam no isopor",
+      "apoio": "Oxigênio só se a saturação cair abaixo de 90%. Sinal de alarme muda o lugar do cuidado, não a receita.",
+      "fala": "Vai uma conduta aí, doutor? Hoje o espeto campeão é o que não tem remédio."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta, estação pediatria: um lactente com nariz escorrendo e chiado. O garçom traz quatro opções e só uma entra no prato.",
+    "contexto": "Rodízio de Quinta, estação pediatria. Lactente de 4 meses, nariz escorrendo há 3 dias, sibilos difusos, saturação de 95% e mamando um pouco menos. O Garçom Espetinho passa com quatro espetos e só um vai para o prato.",
     "palavras_chave": [
       "rhinorrhea and cough",
       "wheezes and crackles",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Lactente com bronquiolite: qual a conduta?"
+    "pergunta": "Lactente com sibilos, SpO2 95% e fraldas molhadas: qual a conduta?"
   },
   "cta": null,
   "reel": null,

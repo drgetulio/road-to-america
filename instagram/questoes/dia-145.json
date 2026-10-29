@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-27",
   "tom": null,
-  "gancho": "Sexta-feira Santa: o peixe que tomou *sol* fora da geladeira",
+  "gancho": "Sexta-feira Santa: o peixe que tomou *sol* fora do gelo",
   "gancho_apoio": "Atum no almoço, rosto vermelho em minutos e a mesa toda igual. A Tia Meia-Vida tem a resposta.",
   "imagem": {
     "arquivo": "dia-145.png",
-    "cena": "Na farmácia da Tia Meia-Vida, um atum simpático está deitado numa espreguiçadeira com óculos escuros, tomando sol ao lado de uma geladeira desligada da tomada. A Tia observa do balcão, preocupada.",
+    "cena": "Na areia de uma praia, um atum simpático de óculos escuros toma sol numa espreguiçadeira listrada, ao lado de um isopor aberto e sem gelo. A Tia Meia-Vida, de chapéu de palha sobre o coque, aponta preocupada para o termômetro de rua.",
     "foco": "50% 35%",
-    "alt": "Atum de óculos escuros tomando sol numa espreguiçadeira ao lado de uma geladeira desligada; a Tia observa."
+    "alt": "Atum de óculos escuros toma sol na praia ao lado de um isopor sem gelo; a Tia Meia-Vida aponta o termômetro."
   },
   "imagem_macete": {
     "arquivo": "dia-145-macete.png",
-    "cena": "Callback: o atum está vermelho como um camarão, cercado de bolhinhas brilhantes, e a Tia Meia-Vida entrega a ele dois comprimidos de cores diferentes. A geladeira já está ligada, com o plugue na tomada.",
+    "cena": "O atum está vermelho como camarão, cercado de bolhinhas brilhantes, e a Tia Meia-Vida entrega a ele dois comprimidos de cores diferentes com um copo d'água. O isopor agora está cheio de gelo.",
     "foco": "50% 40%",
-    "alt": "O atum vermelho recebe dois comprimidos da Tia Meia-Vida; a geladeira agora está ligada."
+    "alt": "O atum vermelho recebe dois comprimidos da Tia Meia-Vida; o isopor agora está cheio de gelo."
   },
   "questao": {
     "vinheta": "Twenty minutes after eating grilled tuna at a restaurant, a 38-year-old man has flushing of the face and upper trunk, a throbbing headache, a peppery taste in his mouth and diarrhea. His friend who ate the same dish has similar symptoms. BP is 118/74 mm Hg; there is no wheezing or lip swelling.",
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "Escombroide é *peixe que tomou sol*: histidina vira histamina",
-      "apoio": "Na imagem, o atum fica vermelho de sol e a Tia Meia-Vida entrega dois anti-histamínicos.",
-      "fala": null
+      "apoio": "Vários comensais iguais e sem alergia prévia: anti-histamínico H1, com ou sem H2. Adrenalina só se houver broncoespasmo ou choque.",
+      "fala": "Peixe que tomou sol volta vermelho. E a mesa inteira vai junto."
     }
   },
   "legenda": {
-    "contexto": "Sexta-feira Santa é dia de peixe para muitas famílias. Hoje a farmácia da Tia Meia-Vida explica por que ele precisa estar fresco e bem gelado.",
+    "contexto": "Sexta-feira Santa é dia de peixe para muitas famílias. Hoje a Tia Meia-Vida explica por que ele precisa estar fresco e bem gelado, e o que fazer quando a mesa inteira fica vermelha.",
     "palavras_chave": [
       "grilled tuna",
       "flushing",
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Rubor depois do atum: qual o tratamento?"
+    "pergunta": "Rubor, cefaleia e gosto apimentado 20 min após atum, amigo igual: qual remédio?"
   },
   "cta": null,
   "reel": null,

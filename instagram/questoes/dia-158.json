@@ -8,22 +8,23 @@
   "topico": "Hemorragia pós-parto",
   "conceito": "Postpartum hemorrhage from uterine atony: bimanual massage and oxytocin",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-09",
   "tom": null,
-  "gancho": "Rodízio do pós-parto: qual espeto o garçom serve *primeiro*?",
-  "gancho_apoio": null,
+  "gancho": "O pudim *não deu o ponto* logo depois da sobremesa sair. O que vem primeiro?",
+  "gancho_apoio": "Placenta inteira, útero mole acima do umbigo e o Garçom Espetinho de luva de forno.",
   "imagem": {
     "arquivo": "dia-158.png",
-    "cena": "O garçom do rodízio traz quatro espetos diferentes, abertos como um buquê: um pudim mole, um rolinho de atadura, um pão redondo e um cubinho de esponja amarela. A plaquinha verde e vermelha espera na mesa.",
+    "cena": "Numa confeitaria de bairro, o Garçom Espetinho, de luvas de forno, olha a vitrine com quatro espetos: um pudim mole que não deu o ponto, um rolinho de atadura, um balão de festa murcho e um cubinho de esponja amarela. A plaquinha verde e vermelha está deitada no balcão.",
     "foco": "50% 35%",
-    "alt": "O garçom do rodízio traz quatro espetos diferentes, abertos como um buquê: um pudim mole, um rolinho de atadura, um pão redondo e um cubinho de esponja amarela."
+    "alt": "Garçom Espetinho de luvas de forno numa confeitaria; na vitrine, um pudim mole e outros três espetos."
   },
   "imagem_macete": {
     "arquivo": "dia-158-macete.png",
-    "cena": "A plaquinha vira para o verde no espeto do pudim: duas luvas de forno abraçam o pudim mole (massagem bimanual) e um soro pinga ao lado (ocitocina). O pudim firma e dá o ponto.",
-    "alt": "Útero mole: massagem e ocitocina"
+    "cena": "A plaquinha vira para o verde no espeto do pudim: as duas luvas de forno abraçam o pudim mole por fora e por dentro (massagem bimanual) e um soro pinga ao lado (ocitocina). O pudim firma e dá o ponto.",
+    "alt": "As luvas de forno abraçam o pudim, um soro pinga ao lado e o pudim firma; a plaquinha mostra o verde."
   },
   "questao": {
     "vinheta": "A 33-year-old woman, gravida 3 para 3, delivers a 4.3-kg infant vaginally after a prolonged labor. The placenta is delivered intact. Fifteen minutes later, she bleeds about 1,100 mL. The uterus is soft, boggy, and above the umbilicus; no lacerations are seen. Pulse is 112/min.",
@@ -65,13 +66,13 @@
       "C": "A embolização das artérias uterinas é para sangramento persistente em paciente estável, depois das medidas iniciais."
     },
     "macete": {
-      "frase": "Os 4 Ts do rodízio: *Tônus*, Trauma, Tecido e Trombina. O espeto que mais passa é o Tônus: útero mole como pudim que não deu o ponto pede *massagem com as duas mãos e ocitocina*.",
-      "apoio": "O NBME cobra a escada em ordem (massagem e ocitocina, outros uterotônicos, balão, embolização, cirurgia) e as contraindicações: metilergonovina na hipertensão e carboprost na asma.",
-      "fala": null
+      "frase": "Os 4 Ts: *Tônus*, Trauma, Tecido e Trombina. Útero mole como pudim pede *massagem com as duas mãos e ocitocina*",
+      "apoio": "A escada: massagem e ocitocina, outros uterotônicos (metilergonovina não na hipertensão, carboprost não na asma), balão, embolização, cirurgia. Ácido tranexâmico cedo.",
+      "fala": "Pudim mole não vai para o lixo: duas mãos e ocitocina, doutor."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na sala de parto. Útero mole e sangramento logo depois da dequitação. O garçom traz quatro espetos, e só um é o primeiro passo.",
+    "contexto": "Rodízio de Quinta na sala de parto. Útero mole e sangramento logo depois da dequitação completa, sem laceração. Quatro condutas possíveis, e só uma é o primeiro passo.",
     "palavras_chave": [
       "vaginal delivery",
       "macrosomia",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Útero mole e sangramento. Primeiro passo?"
+    "pergunta": "Útero mole acima do umbigo e 1.100 mL de sangramento: qual o 1º passo?"
   },
   "cta": "simulado",
   "exemplo": false

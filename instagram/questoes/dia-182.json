@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Doença do soro (dia 78), Cólera (dia 155), MHC I e MHC II (dia 176)",
   "conceito": "Remix: Serum sickness + Vibrio cholerae toxin + MHC I vs MHC II",
   "personagem": null,
+  "anfitriao": "Macrô",
   "gancho_data": null,
   "remix_de": [
     78,
@@ -16,32 +17,31 @@
   ],
   "explicacao_em": "2027-05-03",
   "tom": null,
-  "gancho": "Remix de domingo: o soro de cavalo *cobrou a conta* depois",
-  "gancho_apoio": null,
+  "gancho": "Soro de cavalo, 10 dias de espera e um *joelho* reclamando. Quem é o culpado?",
+  "gancho_apoio": "Remix com doença do soro (dia 78), cólera (dia 155) e MHC (dia 176), mais um intruso.",
   "imagem": {
     "arquivo": "dia-182.png",
-    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (uma ferradura, uma vírgula com um interruptor de luz e uma bandeja de garçom com duas pratas) e um quarto disco com uma pipoca estourando tentando entrar na pilha.",
+    "cena": "Num haras ensolarado, o Macrô, com a comanda em branco no bolso, está ao lado de um cavalinho simpático e olha três objetos numa mesinha: um interruptor de luz, uma bandeja com dois pratos e uma pipoca estourando. Num canto da mesinha, um pequeno vinil.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: o soro de cavalo cobrou a conta depois"
+    "alt": "Macrô num haras ao lado de um cavalinho, olhando um interruptor, uma bandeja de dois pratos e uma pipoca."
   },
   "imagem_macete": {
     "arquivo": "dia-182-macete.png",
-    "cena": "O disco da ferradura toca e, da caixa de som, saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, num joelho de boneco articulado e num tapete; os outros dois discos ganham um risco vermelho e o da pipoca é barrado por um cone.",
-    "alt": "Soro de cavalo, 10 dias depois: imunocomplexos"
+    "cena": "Do cavalinho saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, no joelho de um boneco articulado e num tapete; bichinhos amarelos de complemento mordiscam as bolinhas e encolhem. O interruptor e a bandeja ganham um risco vermelho, e a pipoca é barrada por um cone.",
+    "alt": "Bolinhas de chiclete grudam numa peneira, num joelho de boneco e num tapete; o complemento mordisca e encolhe."
   },
   "questao": {
     "vinheta": "A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.",
     "pergunta": "Which mechanism best explains these findings?",
     "alternativas": {
       "A": {
-        "texto": "Endogenous peptides shown on MHC I to CD8+ T cells",
-        "quiz": "MHC I para CD8",
+        "texto": "CD8+ T cells killing cells that present peptide on MHC I",
+        "quiz": "CD8 via MHC I",
         "dia": 176
       },
       "B": {
-        "texto": "Toxin that locks Gs on, raising cAMP",
-        "quiz": "Gs travado, cAMP",
-        "dia": 155
+        "texto": "IgG binding a fixed antigen on cell surfaces",
+        "quiz": "IgG na célula"
       },
       "C": {
         "texto": "Immune complex deposition with complement activation",
@@ -67,18 +67,18 @@
       "hypocomplementemia"
     ],
     "erradas": {
-      "A": "Dia 176: MHC I apresenta peptídeos de dentro da célula ao CD8; é a via da célula infectada por vírus, não explica febre, artralgia e complemento baixo após soro.",
-      "B": "Dia 155: a toxina da cólera trava o Gs ligado e causa diarreia aquosa; não há toxina nem diarreia aqui.",
+      "A": "Dia 176: CD8 matando células que mostram peptídeo no MHC I é imunidade celular (tipo IV), que não consome complemento nem depende de anticorpo contra o soro.",
+      "B": "Anticorpo contra antígeno fixo na superfície da célula é o tipo II, como na anemia hemolítica autoimune; não forma complexos circulantes que se depositam ao mesmo tempo em pele, junta e rim dias depois de um soro.",
       "D": "Intruso: a ponte de IgE no mastócito é tipo I, começa em minutos (urticária, broncoespasmo, anafilaxia) e não consome complemento."
     },
     "macete": {
-      "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo.",
-      "apoio": "O NBME cita soro animal, anticorpo monoclonal quimérico ou antibiótico (penicilina, cefaclor) com sintomas 1 a 2 semanas depois e complemento baixo; o tipo I aparece em minutos, o tipo III demora dias.",
-      "fala": null
+      "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta",
+      "apoio": "O complemento é gasto para limpar (C3 e C4 baixos). Dez dias é o tempo de a fábrica produzir o anticorpo; o tipo I vem em minutos. Bônus: a cólera trava o Gs ligado (dia 155).",
+      "fala": "Comi, mostrei, avisei. Dez dias depois, a fábrica de anticorpo entregou o pedido grudento."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 78, 155 e 176) e um intruso. Só um mecanismo explica o quadro da vinheta.",
+    "contexto": "Remix de Domingo: três conceitos de Step 1 que já passaram por aqui e um intruso. Globulina antitimócito equina há 10 dias, febre, rash nas laterais das mãos e dos pés, artrite e complemento baixo. Qual mecanismo?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,7 +86,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Soro de cavalo e C3 baixo. Qual mecanismo?"
+    "pergunta": "Febre, rash, artrite e C3 e C4 baixos 10 dias após ATG equina: mecanismo?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

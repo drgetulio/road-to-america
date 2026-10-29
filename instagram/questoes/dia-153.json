@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-04",
   "tom": null,
   "gancho": "O Viés foi pescar e voltou só com peixe *preguiçoso*",
-  "gancho_apoio": null,
+  "gancho_apoio": "Um programa de rastreamento parece salvar vidas, mas tem fantasma no barco.",
   "imagem": {
     "arquivo": "dia-153.png",
-    "cena": "O Viés pesca num rio cheio de peixes de velocidades diferentes, com a rede numa mão e um cronômetro na outra. Quem vai cair na rede?",
+    "cena": "O Viés pesca num barquinho de madeira num rio calmo, com a rede numa mão e um cronômetro na outra, meio escondido atrás de uma tabela 2x2 boiando. Na água nadam peixes de velocidades diferentes, e a rede ainda está vazia.",
     "foco": "50% 35%",
-    "alt": "O Viés pesca num rio cheio de peixes de velocidades diferentes, com a rede numa mão e um cronômetro na outra."
+    "alt": "O Viés pesca num barquinho com rede e cronômetro; no rio, peixes lentos e peixes ligeiros."
   },
   "imagem_macete": {
     "arquivo": "dia-153-macete.png",
     "cena": "A rede volta cheia de peixes preguiçosos com casco de caracol, enquanto os peixes ligeiros passam zunindo entre duas redes. Uma fita métrica comprida na margem lembra o \"length\".",
-    "alt": "Rede de rastreamento pega o peixe lento"
+    "alt": "A rede volta cheia de peixes lentos com casco de caracol; os ligeiros passam entre as redes."
   },
   "questao": {
     "vinheta": "In a randomized trial of annual screening for a cancer, tumors found at screening visits are mostly low grade with long doubling times, whereas tumors diagnosed between screens are mostly high grade. Screen-detected patients survive longer, even after correcting for the earlier date of diagnosis.",
@@ -65,22 +65,22 @@
       "D": "O *recall bias* depende de lembrar exposições passadas, típico de caso-controle, e não há questionário na vinheta."
     },
     "macete": {
-      "frase": "*Length* lembra *lento*: a rede do rastreamento pega o peixe preguiçoso, que fica muito tempo na água, e o peixe ligeiro passa entre uma rede e outra.",
-      "apoio": "O NBME separa os dois assim: lead-time mexe no relógio (diagnóstico mais cedo, morte na mesma data); length-time mexe no tipo de doença (tumor lento pego, tumor rápido escapando entre os exames).",
-      "fala": null
+      "frase": "*Length* lembra *lento*: a rede do rastreamento pega o peixe preguiçoso",
+      "apoio": "Lead-time mexe no relógio (diagnóstico mais cedo, morte na mesma data); length-time mexe no tipo de doença.",
+      "fala": "Peixe preguiçoso cai na rede e eu ganho fama de pescador."
     }
   },
   "legenda": {
-    "contexto": "Sábado Sem Viés com o Viés pescando. Um programa de rastreamento parece salvar vidas, mas tem fantasma no barco. Repare no tipo de tumor que cai na rede e no que aparece entre um exame e outro.",
+    "contexto": "Sábado Sem Viés com o Viés pescando. Num ensaio de rastreamento, os tumores achados no exame são de baixo grau e os que aparecem entre um exame e outro são agressivos. Repare no tipo de tumor que cai na rede.",
     "palavras_chave": [
       "cancer screening trial",
       "tumor grade",
-      "interval tumors",
+      "tumors found between screens",
       "survival analysis"
     ]
   },
   "quiz": {
-    "pergunta": "Rastreio pega mais tumor lento. Qual viés?"
+    "pergunta": "Rastreio acha tumor lento e o que surge entre exames é agressivo: qual viés?"
   },
   "cta": "simulado",
   "exemplo": false

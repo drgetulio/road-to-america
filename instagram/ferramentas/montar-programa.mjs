@@ -36,12 +36,13 @@ const personagens = Object.entries(PERSONAGENS).map(([nome, en]) => ({
   ...QUEM[nome],
   descricao_en: en,
   prompt_base: promptBase(NOME_EN[nome], en),
-  dias: DIAS.filter((d) => d.personagem === nome).map((d) => d.dia),
+  dias: DIAS.filter((d) => d.personagem === nome || d.anfitriao === nome).map((d) => d.dia),
 }));
 const apoio = [
   { nome: 'Garçom Espetinho', quem: 'Anfitrião do Rodízio de Quinta; serve as condutas em espetos.', pt: 'Mascote de cabeça redonda, camisa branca, colete vermelho e gravata-borboleta navy, nunca uma pessoa real. A plaquinha verde e vermelha fica de lado na questão.', descricao_en: APOIO.garcom, onde: 'Rodízio de Quinta', bordao: 'Vai uma conduta aí, doutor?' },
   { nome: 'Dona Térmica', quem: 'Anfitriã do Plantão de Terça: a garrafa térmica de café do plantão, que já viu de tudo às 3 da manhã.', pt: 'Garrafa térmica vermelha de pressão, tampa navy, olhos de sono mas espertos, estetoscópio no pescoço, prancheta em branco.', descricao_en: APOIO.termica, onde: 'Plantão de Terça, remix de Step 2 CK', bordao: 'Já vi esse caso às 3 da manhã.' },
   { nome: 'Seu Allen', quem: 'Anfitrião da Quarta do Porquê quando nenhum órgão combina: a chave Allen do manual de montagem.', pt: 'Chavinha Allen prateada em forma de L, olhos grandes e redondos, avental navy de marceneiro, lápis vermelho atrás da orelha.', descricao_en: APOIO.allen, onde: 'Quarta do Porquê', bordao: 'Sobrou peça? Então faltou mecanismo.' },
+  { nome: 'Dona Bússola', quem: 'Anfitriã do Sábado Sem Viés nos dias de ética e comunicação: a bússola de bolso que sempre aponta para o paciente.', pt: 'Bússola de bolso redonda, caixa amarela com aro navy, ponteiro vermelho no mostrador claro, olhos grandes e simpáticos, lencinho verde no pescoço e um caderninho em branco.', descricao_en: APOIO.bussola, onde: 'Sábado Sem Viés (ética e comunicação), remix acolhedor', bordao: 'Meu norte é o paciente.' },
   { nome: 'Ônibus Road to America', quem: 'O ônibus da viagem; leva os seis personagens nas datas especiais e no dia 365.', pt: 'Ônibus navy arredondado de desenho, com faixa verde e amarela na lateral.', descricao_en: APOIO.onibus, onde: 'Datas especiais e encerramento', bordao: null },
 ].map((a) => ({ ...a, prompt_base: `${ESTILO} Recurring ${a.bordao ? `character: ${a.nome},` : 'scene element:'} ${a.descricao_en}. Scene: [cena do dia]. ${COMPOSICAO} ${PROIBICOES}`, dias: DIAS.filter((d) => d.anfitriao === a.nome).map((d) => d.dia) }));
 

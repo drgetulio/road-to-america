@@ -29,20 +29,20 @@
     "pergunta": "Which counseling would most likely have prevented these symptoms?",
     "alternativas": {
       "A": {
-        "texto": "Take it with a calcium supplement",
-        "quiz": "With calcium"
+        "texto": "Take it with breakfast, stay upright",
+        "quiz": "Breakfast, upright"
       },
       "B": {
-        "texto": "Take it at bedtime lying on the left side",
-        "quiz": "Bedtime, left side"
+        "texto": "Take it fasting with milk, stay upright",
+        "quiz": "Fasting, milk, upright"
       },
       "C": {
-        "texto": "Crush the tablet and mix it with food",
-        "quiz": "Crush into food"
+        "texto": "Take it fasting with water, then lie down",
+        "quiz": "Fasting, water, lie down"
       },
       "D": {
         "texto": "Take it fasting with water, stay upright",
-        "quiz": "Fasting, upright"
+        "quiz": "Fasting, water, upright"
       }
     },
     "correta": "D"
@@ -59,9 +59,9 @@
       "upright for 30 minutes"
     ],
     "erradas": {
-      "A": "O cálcio se liga ao bisfosfonato no intestino e bloqueia a absorção; o suplemento vai em outro horário.",
-      "B": "Deitar logo depois deixa o comprimido parado no esôfago, que é exatamente o que causa a esofagite.",
-      "C": "Triturar e misturar com comida irrita a mucosa e derruba a absorção."
+      "A": "Comida e café derrubam a absorção, que já é baixa; ficar de pé protege o esôfago, mas o comprimido precisa ir em jejum, 30 minutos antes do café da manhã.",
+      "B": "Leite e cálcio se ligam ao bisfosfonato no intestino e bloqueiam a absorção; o copo tem que ser de água pura.",
+      "C": "Deitar logo depois deixa o comprimido parado no esôfago, que é exatamente o que causa a esofagite; é preciso ficar sentado ou em pé por 30 minutos."
     },
     "macete": {
       "frase": "Alendronato é a *fila do pão de domingo*: jejum, água e de pé",

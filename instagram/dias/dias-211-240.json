@@ -553,8 +553,8 @@
       "pegadinha_de_prova": "O NBME descreve o trauma na têmpora com intervalo lúcido e pede o vaso (artéria meníngea média) ou a próxima conduta (craniotomia de urgência), e coloca as veias ponte como distrator."
     },
     "imagem_questao": {
-      "conceito_visual": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha com um cano vermelho grosso passando por trás. Na porta, o Garçom Espetinho espia com uma bandeja de espetinhos, e a plaquinha verde e vermelha está no banco.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: a calm football locker room during halftime: a pair of boots resting on a wooden bench, a stopwatch on a hook, and on a curved plastered wall near a vertical seam a thin crack with a thick red high-pressure pipe running just behind the plaster. Peaceful, slightly suspicious mood. The waiter mascot peeks in at the door holding a tray of skewers, and the round green-and-red table card rests on the bench. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha; por trás do reboco passam vários canos, de cores e grossuras diferentes. Na porta, o Garçom Espetinho espia com uma bandeja de espetinhos, e a plaquinha verde e vermelha está no banco.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: a calm football locker room during halftime: a pair of boots resting on a wooden bench, a stopwatch on a hook, and on a curved plastered wall near a vertical seam a thin crack, with several pipes of different colors and thicknesses running behind the plaster. Peaceful, slightly suspicious mood. The waiter mascot peeks in at the door holding a tray of skewers, and the round green-and-red table card rests on the bench. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -593,7 +593,7 @@
     "gancho_apoio": "Pancada na têmpora, acordou bem, e duas horas depois tudo piorou. Que vaso rompeu?",
     "imagem": {
       "arquivo": "dia-214.png",
-      "cena": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha com um cano vermelho grosso passando por trás. Na porta, o Garçom Espetinho espia com uma bandeja de espetinhos, e a plaquinha verde e vermelha está no banco.",
+      "cena": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha; por trás do reboco passam vários canos, de cores e grossuras diferentes. Na porta, o Garçom Espetinho espia com uma bandeja de espetinhos, e a plaquinha verde e vermelha está no banco.",
       "foco": "50% 35%",
       "alt": "Voltou do intervalo sorrindo e caiu no segundo tempo"
     },
@@ -1405,8 +1405,8 @@
       "pegadinha_de_prova": "O NBME oferece a biópsia como resposta tentadora; com suspeita forte, principalmente com sintoma visual, a resposta é corticoide antes de qualquer exame."
     },
     "imagem_questao": {
-      "conceito_visual": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido, com sirene, e um caminhãozinho com um microscópio na carroceria esperam lado a lado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a triage desk at 3 a.m., with a small round wall clock with no numbers, its hands pointing to three o'clock; the thermos character organizes the line: a little pill-shaped car with a siren and a small truck carrying a microscope wait side by side; a pair of forgotten glasses rests on a stool, and a temple-shaped mountain rises in the background. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido e um caminhãozinho com um microscópio na carroceria esperam lado a lado, os dois de motor ligado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a triage desk at 3 a.m., with a small round wall clock with no numbers, its hands pointing to three o'clock; the thermos character organizes the line: a little pill-shaped car and a small truck carrying a microscope wait side by side, both with engines running; a pair of forgotten glasses rests on a stool, and a temple-shaped mountain rises in the background. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1442,10 +1442,10 @@
       "humor_compliance": "Pílula na frente, microscópio atrás, na placa NEXT STEP do Plantão de Terça. Funciona e reforça a ordem certa. Sem ajustes. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
     },
     "gancho": "Dor na têmpora e visão piscando: *quem fura a fila?*",
-    "gancho_apoio": "Biópsia, ressonância ou remédio? No plantão, só uma escolha protege o olho.",
+    "gancho_apoio": "Biópsia, ressonância ou remédio: a Dona Térmica decide quem passa primeiro.",
     "imagem": {
       "arquivo": "dia-219.png",
-      "cena": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido, com sirene, e um caminhãozinho com um microscópio na carroceria esperam lado a lado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
+      "cena": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido e um caminhãozinho com um microscópio na carroceria esperam lado a lado, os dois de motor ligado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
       "foco": "50% 35%",
       "alt": "Dona Térmica organiza a fila entre um carrinho de comprimido e um caminhão de microscópio"
     },
@@ -1542,7 +1542,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-06-10",
-    "gancho_pt": "Sem fator de crescimento, a célula ia embora. Quem segurou?",
+    "gancho_pt": "Sem fator de crescimento, a célula ia embora. Quem convenceu a ficar?",
     "vinheta_en": "Cultured thymocytes deprived of growth factors shrink, show nuclear condensation and fragmentation, and die without inflammation. Thymocytes engineered to overexpress BCL-2 survive under the same conditions.",
     "pergunta_en": "BCL-2 protects these cells mainly by which mechanism?",
     "alternativas": [
@@ -1575,8 +1575,8 @@
       "pegadinha_de_prova": "O NBME liga a BCL-2 alta ao linfoma folicular com t(14;18) e pergunta o efeito na via intrínseca; Fas e caspase-8 (via extrínseca) e perforina com granzima (arma do linfócito T citotóxico) são os distratores."
     },
     "imagem_questao": {
-      "conceito_visual": "Mito, de jaleco amassado e café, no quarto do plantão de madrugada, com um disquinho vermelho espiando do bolso. Do lado de fora da parede, dois tipinhos com furadeiras olham para o relógio.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: Mito sits in a small on-call room at night, wrinkled coat, coffee in hand, with a small shiny red disc peeking out of his coat pocket. Outside the room's wall, two small round characters holding power drills look at a wall clock, waiting. Cozy, slightly suspenseful mood. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Mito, de jaleco amassado e café, no quarto do plantão de madrugada, de braços cruzados na porta. Do lado de fora da parede, dois tipinhos com furadeiras olham para o relógio.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: Mito sits in a small on-call room at night, wrinkled coat, coffee in hand, arms crossed by the door. Outside the room's wall, two small round characters holding power drills look at a wall clock, waiting. Cozy, slightly suspenseful mood. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1585,8 +1585,8 @@
       "arquivo": "dia-220.png"
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: os dois tipinhos de furadeira tentam furar a parede, mas um porteiro forte, de braços abertos, segura a parede com um cadeado grande. O disquinho vermelho continua no bolso do Mito, que relaxa com o café.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: the same on-call room: the two small characters press their drills against the wall, but a sturdy doorman character with arms spread wide holds the wall firmly closed with a big padlock. The small red disc stays safe in Mito's pocket, and Mito relaxes with his coffee. Clear, satisfying reveal. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Callback: os dois tipinhos de furadeira tentam furar a parede, mas um porteiro forte, de braços abertos, segura a parede com um cadeado grande. Um disquinho vermelho fica guardado no bolso do Mito, que relaxa com o café.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: the same on-call room: the two small characters press their drills against the wall, but a sturdy doorman character with arms spread wide holds the wall firmly closed with a big padlock. A small shiny red disc stays tucked safely in Mito's coat pocket, and Mito relaxes with his coffee. Clear, satisfying reveal. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1594,7 +1594,7 @@
       },
       "arquivo": "dia-220-macete.png"
     },
-    "legenda_questao_pt": "Sem fator de crescimento, a célula ia embora. Quem segurou?\n\nNum experimento, timócitos sem fator de crescimento encolhem, fragmentam o núcleo e morrem sem inflamação. As células que fabricam BCL-2 em excesso sobrevivem. Como essa proteína segura a célula?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: cultured thymocytes, growth factor withdrawal, nuclear fragmentation, cell death\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Patologia #Pathology",
+    "legenda_questao_pt": "Sem fator de crescimento, a célula ia embora. Quem convenceu a ficar?\n\nNum experimento, timócitos sem fator de crescimento encolhem, fragmentam o núcleo e morrem sem inflamação. As células que fabricam BCL-2 em excesso sobrevivem. Como essa proteína mantém a célula viva?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: cultured thymocytes, growth factor withdrawal, nuclear fragmentation, cell death\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Patologia #Pathology",
     "legenda_explicacao_pt": "Gabarito do dia 220: letra C, Preventing BAX/BAK pores and cytochrome c release.\n\nA falta de fator de crescimento e o dano ao DNA ativam a intrinsic (mitochondrial) pathway: BAX e BAK abrem poros na membrana externa da mitocôndria e o cytochrome c sai para o citosol, onde monta o apoptossomo com APAF-1 e ativa a caspase-9. A BCL-2 segura BAX e BAK e impede esses poros, então o citocromo c fica dentro e a célula sobrevive. Por isso a t(14;18), que põe a BCL-2 sob um promotor forte, mantém vivas células que deveriam morrer.\n\nMacete: Citocromo c saiu da Mito, a célula pediu as contas.\n\nPara mandar no grupo da turma: BCL-2 é o chefe que rasga a carta de demissão da célula antes de o RH ver.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Como a BCL-2 mantém a célula viva?",
@@ -1611,17 +1611,17 @@
       "medica": "Resolvida: C. BCL-2 impede os poros de BAX/BAK e a saída do citocromo c. Pegadinha corrigida: perforina e granzima não são via extrínseca; agora a frase separa Fas e caspase-8 (extrínseca) de perforina e granzima (linfócito T citotóxico).",
       "humor_compliance": "Mito de plantão com porteiro segurando a parede é coerente com o personagem. A capa mostra as furadeiras (BAX/BAK) sem revelar como a BCL-2 age. Sem ajustes de humor. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
     },
-    "gancho": "Sem fator de crescimento, a célula ia embora. *Quem segurou?*",
+    "gancho": "Sem fator de crescimento, a célula ia embora. *Quem convenceu a ficar?*",
     "gancho_apoio": "Um experimento com timócitos e uma proteína teimosa. O Mito sabe a resposta.",
     "imagem": {
       "arquivo": "dia-220.png",
-      "cena": "Mito, de jaleco amassado e café, no quarto do plantão de madrugada, com um disquinho vermelho espiando do bolso. Do lado de fora da parede, dois tipinhos com furadeiras olham para o relógio.",
+      "cena": "Mito, de jaleco amassado e café, no quarto do plantão de madrugada, de braços cruzados na porta. Do lado de fora da parede, dois tipinhos com furadeiras olham para o relógio.",
       "foco": "50% 35%",
-      "alt": "Sem fator de crescimento, a célula ia embora. Quem segurou?"
+      "alt": "Sem fator de crescimento, a célula ia embora. Quem convenceu a ficar?"
     },
     "imagem_macete": {
       "arquivo": "dia-220-macete.png",
-      "cena": "Callback: os dois tipinhos de furadeira tentam furar a parede, mas um porteiro forte, de braços abertos, segura a parede com um cadeado grande. O disquinho vermelho continua no bolso do Mito, que relaxa com o café.",
+      "cena": "Callback: os dois tipinhos de furadeira tentam furar a parede, mas um porteiro forte, de braços abertos, segura a parede com um cadeado grande. Um disquinho vermelho fica guardado no bolso do Mito, que relaxa com o café.",
       "foco": "50% 45%",
       "alt": "BCL-2 é o porteiro da mitocôndria"
     },
@@ -1671,7 +1671,7 @@
       }
     },
     "legenda": {
-      "contexto": "Num experimento, timócitos sem fator de crescimento encolhem, fragmentam o núcleo e morrem sem inflamação. As células que fabricam BCL-2 em excesso sobrevivem. Como essa proteína segura a célula?",
+      "contexto": "Num experimento, timócitos sem fator de crescimento encolhem, fragmentam o núcleo e morrem sem inflamação. As células que fabricam BCL-2 em excesso sobrevivem. Como essa proteína mantém a célula viva?",
       "palavras_chave": [
         "cultured thymocytes",
         "growth factor withdrawal",
@@ -1914,8 +1914,8 @@
       "pegadinha_de_prova": "O NBME descreve cetoacidose com glicose quase normal em quem começou gliflozina, principalmente com jejum, cirurgia ou infecção, e cobra também a infecção genital por fungo e o benefício cardíaco e renal."
     },
     "imagem_questao": {
-      "conceito_visual": "Seu Néfron, de gravata e óculos na ponta do nariz, sentado no banco de espera de uma farmácia de interior, segura um frasco novo de comprimidos e olha intrigado para uma nuvenzinha amarela em forma de limão que paira sobre um medidor de açúcar na parede, que marca quase normal. Num vasinho ao lado do banco, brotam cogumelinhos. No balcão, uma ampulheta pequena.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: Seu Néfron sits on the waiting bench of a cozy small-town pharmacy, holding a brand-new pill bottle and looking puzzled, eyebrows raised, at a small sour lemon-shaped yellow cloud floating above a round wall gauge whose needle points almost to the middle green zone. Beside the bench, a tiny flowerpot sprouts little cute mushrooms. A small hourglass sits on the pharmacy counter. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Seu Néfron, de gravata e óculos na ponta do nariz, divide o banco de espera de uma farmácia de interior com três clientes simpáticos: um pâncreas de boné, um fígado de cachecol e um intestino enrolado como mangueira. Os quatro olham intrigados para um frasco novo de comprimidos no balcão e para uma nuvenzinha amarela em forma de limão que paira sobre um medidor de açúcar na parede, que marca quase normal. Num vasinho ao lado do banco, brotam cogumelinhos. No balcão, uma ampulheta pequena.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: Seu Néfron shares the waiting bench of a cozy small-town pharmacy with three friendly organ characters, a pancreas in a cap, a liver in a scarf and a coiled intestine; all four look puzzled, eyebrows raised, at a brand-new pill bottle on the counter and at a small sour lemon-shaped yellow cloud floating above a round wall gauge whose needle points almost to the middle green zone. Beside the bench, a tiny flowerpot sprouts little cute mushrooms. A small hourglass sits on the pharmacy counter. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1933,7 +1933,7 @@
       },
       "arquivo": "dia-222-macete.png"
     },
-    "legenda_questao_pt": "Glicemia quase normal e o sangue azedou: quem foi?\n\nDiabetes tipo 2, insuficiência cardíaca, remédio novo há dois meses, candidíase genital no mês passado e agora cetoacidose com glicose de 182. O Seu Néfron já desconfia de qual carimbo mudou.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: type 2 diabetes, heart failure, candidal balanitis, ketoacidosis\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Pharmacology",
+    "legenda_questao_pt": "Glicemia quase normal e o sangue azedou: quem foi?\n\nDiabetes tipo 2, insuficiência cardíaca, remédio novo há dois meses, candidíase genital no mês passado e agora cetoacidose com glicose de 182. No banco da farmácia, pâncreas, fígado, intestino e Seu Néfron trocam olhares. Onde o remédio age?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: type 2 diabetes, heart failure, candidal balanitis, ketoacidosis\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Pharmacology",
     "legenda_explicacao_pt": "Gabarito do dia 222: letra C, Proximal tubule sodium-glucose cotransporter 2.\n\nOs SGLT2 inhibitors (dapagliflozina, empagliflozina) bloqueiam o cotransportador de sódio e glicose do proximal convoluted tubule, que reabsorve cerca de 90% da glicose filtrada. A glicose sai na urina e alimenta as genital mycotic infections. Com pouca ingestão, a insulina cai, o glucagon sobe e aparece a euglycemic DKA: cetoacidose com glicose abaixo de 250 mg/dL.\n\nMacete: Gliflozina é carimbo trocado: açúcar EXCRETADO no túbulo proximal.\n\nPara mandar no grupo da turma: Cetoacidose com glicose de 182 é o golpe do Pix: parece tudo normal até a conta zerar.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Cetoacidose com glicose 182: onde o remédio age?",
@@ -1954,7 +1954,7 @@
     "gancho_apoio": "Remédio novo para diabetes e coração, dois dias comendo pouco, e o pH caiu. Onde o remédio age?",
     "imagem": {
       "arquivo": "dia-222.png",
-      "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, sentado no banco de espera de uma farmácia de interior, segura um frasco novo de comprimidos e olha intrigado para uma nuvenzinha amarela em forma de limão que paira sobre um medidor de açúcar na parede, que marca quase normal. Num vasinho ao lado do banco, brotam cogumelinhos. No balcão, uma ampulheta pequena.",
+      "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, divide o banco de espera de uma farmácia de interior com três clientes simpáticos: um pâncreas de boné, um fígado de cachecol e um intestino enrolado como mangueira. Os quatro olham intrigados para um frasco novo de comprimidos no balcão e para uma nuvenzinha amarela em forma de limão que paira sobre um medidor de açúcar na parede, que marca quase normal. Num vasinho ao lado do banco, brotam cogumelinhos. No balcão, uma ampulheta pequena.",
       "foco": "50% 35%",
       "alt": "Glicemia quase normal e o sangue azedou: quem foi?"
     },
@@ -2010,7 +2010,7 @@
       }
     },
     "legenda": {
-      "contexto": "Diabetes tipo 2, insuficiência cardíaca, remédio novo há dois meses, candidíase genital no mês passado e agora cetoacidose com glicose de 182. O Seu Néfron já desconfia de qual carimbo mudou.",
+      "contexto": "Diabetes tipo 2, insuficiência cardíaca, remédio novo há dois meses, candidíase genital no mês passado e agora cetoacidose com glicose de 182. No banco da farmácia, pâncreas, fígado, intestino e Seu Néfron trocam olhares. Onde o remédio age?",
       "palavras_chave": [
         "type 2 diabetes",
         "heart failure",
@@ -2083,8 +2083,8 @@
       "pegadinha_de_prova": "O NBME cobra as situações em que o menor consente sozinho (IST em todos os estados; contracepção, pré-natal e tratamento de uso de substâncias em muitos deles) e as que quebram o sigilo: risco grave à vida, abuso e ameaça a terceiros."
     },
     "imagem_questao": {
-      "conceito_visual": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um envelope de correio elegante de festa junina.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: a park bridge full of colorful couples' love locks on Brazilian Valentine's Day ends at the door of a doctor's office with a stethoscope hanging on the doorknob; the little ghost peeks from behind a small blank 2x2 table tied to the railing, holding a sealed June festival love-letter envelope. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um telefone de lata com o fio solto.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: a park bridge full of colorful couples' love locks on Brazilian Valentine's Day ends at the door of a doctor's office with a stethoscope hanging on the doorknob; the little ghost peeks from behind a small blank 2x2 table tied to the railing, holding a tin-can string telephone with a loose string. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2123,7 +2123,7 @@
     "gancho_apoio": "Uma adolescente, um teste positivo e um pedido de sigilo. Qual é a conduta?",
     "imagem": {
       "arquivo": "dia-223.png",
-      "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um envelope de correio elegante de festa junina.",
+      "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um telefone de lata com o fio solto.",
       "foco": "50% 35%",
       "alt": "O Viés espia de trás de uma tabelinha na ponte dos cadeados que leva a um consultório"
     },
@@ -2223,7 +2223,7 @@
       219
     ],
     "explicacao_em": "2027-06-14",
-    "gancho_pt": "41,3°C depois da corrida e alguém já está chamando a tomografia",
+    "gancho_pt": "41,3°C depois da corrida: o recruta virou chaleira, e a equipe tem minutos para escolher",
     "vinheta_en": "A 19-year-old military recruit collapses during a 10-km run on a hot, humid afternoon. He is confused and combative. Rectal temperature is 41.3°C (106.3°F), pulse is 140/min, and blood pressure is 96/58 mm Hg. He has no muscle rigidity and takes no medications. Trained medical staff are at the scene.",
     "pergunta_en": "Which is the most appropriate next step in management?",
     "alternativas": [
@@ -2256,8 +2256,8 @@
       "pegadinha_de_prova": "O NBME oferece transporte imediato, tomografia ou antitérmico como opção tentadora; com temperatura retal acima de 40°C e confusão depois de esforço, a resposta é imersão em água fria na hora."
     },
     "imagem_questao": {
-      "conceito_visual": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma banheira azul inflável está dobrada no chão.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a running track under a blazing sun; a small vinyl record hangs on a hydration tent; next to the tent, the thermos character looks at a street thermometer in the red and at a little thermometer character collapsed on the track, sweating; a trailer carrying a donut-shaped scanner pulls in, and a folded blue inflatable tub lies on the ground. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma maleta de primeiros socorros está aberta no chão.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a running track under a blazing sun; a small vinyl record hangs on a hydration tent; next to the tent, the thermos character looks at a street thermometer in the red and at a little thermometer character collapsed on the track, sweating; a trailer carrying a donut-shaped scanner pulls in, and an open first-aid case lies on the ground. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2275,7 +2275,7 @@
       },
       "arquivo": "dia-224-macete.png"
     },
-    "legenda_questao_pt": "41,3°C depois da corrida e alguém já está chamando a tomografia\n\nDomingo é dia de Remix com a Dona Térmica: três conceitos de Step 2 CK (dias 100, 191 e 219) e um intruso. Um recruta desaba numa corrida no calor, confuso, com 41,3°C no termômetro retal. O que fazer primeiro?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 2 CK review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Emergencia #EmergencyMedicine",
+    "legenda_questao_pt": "41,3°C depois da corrida: o recruta virou chaleira, e a equipe tem minutos para escolher\n\nDomingo é dia de Remix com a Dona Térmica: três conceitos de Step 2 CK (dias 100, 191 e 219) e um intruso. Um recruta desaba numa corrida no calor, confuso, com 41,3°C no termômetro retal. O que fazer primeiro?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 2 CK review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Emergencia #EmergencyMedicine",
     "legenda_explicacao_pt": "Gabarito do dia 224: letra A, imersão em água fria no local.\n\nConfusão depois de esforço no calor com temperatura retal acima de 40°C é insolação por esforço: imersão em água fria no local, antes do transporte (dia 100). A TC de crânio é o começo do roteiro da cefaleia em trovoada (dia 191) e aqui só atrasaria o resfriamento. Corticoide antes da biópsia é da arterite de células gigantes (dia 219). Dantroleno é da hipertermia maligna.\n\nMacete: Esfria primeiro, transporta depois: na insolação por esforço, banheira de água gelada no local. Quem guarda calor é garrafa térmica, não atleta.\n\nPara mandar no grupo da turma: Quem guarda calor é garrafa térmica, não atleta: na insolação, esfria primeiro e transporta depois.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "41,3°C após corrida e confusão: o que fazer já?",
@@ -2292,11 +2292,11 @@
       "medica": "Remix reescrito como vinheta clínica (antes: quatro planos de um interno para quatro pacientes). Um recruta com insolação por esforço (dia 100) recebe como distratores a TC de crânio (dia 191), o corticoide da arterite (dia 219) e o dantroleno (intruso); alternativas homogêneas (condutas imediatas). Gabarito único A (ACSM 2023: imersão em água fria no local, cool first, transport second).",
       "humor_compliance": "Macete alinhado ao dia 191 (\"foto limpa, vá olhar a água\"); o dia 100 já usava banheira de gelo antes da ambulância. Onda de calor no plantão sem piada com paciente. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
     },
-    "gancho": "41,3°C depois da corrida e alguém já está chamando *a tomografia*",
+    "gancho": "41,3°C depois da corrida: o recruta virou *chaleira*, e a equipe tem minutos para escolher",
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-224.png",
-      "cena": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma banheira azul inflável está dobrada no chão.",
+      "cena": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma maleta de primeiros socorros está aberta no chão.",
       "foco": "50% 35%",
       "alt": "Dona Térmica na pista de corrida diante de um termômetro caído no sol"
     },
@@ -2565,21 +2565,21 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-06-16",
-    "gancho_pt": "Fez 45 anos e chegou um convite que ninguém esperava no correio",
+    "gancho_pt": "Fez 45 anos, assoprou as velinhas e perguntou se precisa de algum exame",
     "vinheta_en": "A 45-year-old man comes for a routine visit. He feels well and has no gastrointestinal symptoms. He has no personal history of polyps or inflammatory bowel disease and no family history of colorectal cancer. Examination and complete blood count are normal.",
     "pergunta_en": "Which is the most appropriate recommendation regarding colorectal cancer screening?",
     "alternativas": [
       {
         "letra": "A",
-        "texto": "Defer screening until age 50"
+        "texto": "Defer screening until he reaches age 50"
       },
       {
         "letra": "B",
-        "texto": "CT colonography every year"
+        "texto": "Annual CT colonography starting this year"
       },
       {
         "letra": "C",
-        "texto": "Measure serum carcinoembryonic antigen"
+        "texto": "Measure serum carcinoembryonic antigen yearly"
       },
       {
         "letra": "D",
@@ -2598,8 +2598,8 @@
       "pegadinha_de_prova": "O NBME muda a história familiar: parente de primeiro grau com câncer colorretal antes dos 60 anos antecipa a colonoscopia para os 40 anos ou 10 anos antes da idade do diagnóstico do parente, repetida a cada 5 anos."
     },
     "imagem_questao": {
-      "conceito_visual": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica entrega um envelope de convite fechado a um bolo de aniversário simpático, de velinhas apagadas. Na mesinha, um presente navy com laço vermelho, e um calendário de parede solta folhas voando.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a clinic waiting room with a small round wall clock with no numbers, its hands pointing to three o'clock; the thermos character hands a sealed invitation envelope to a cheerful birthday cake character with unlit candles; on a side table sits a navy gift box with a red bow, and a wall calendar sheds flying pages. Light, friendly and respectful mood; the visual metaphor explains the mechanism and never makes fun of the disease or the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas, que olha pensativo para um calendário de parede soltando folhas voando. Na mesinha, um presente navy com laço vermelho, ainda fechado.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: a clinic waiting room with a small round wall clock with no numbers, its hands pointing to three o'clock; the thermos character, holding a blank clipboard, chats with a cheerful birthday cake character with unlit candles, who looks thoughtfully at a wall calendar shedding flying pages; on a side table sits a closed navy gift box with a red bow. Light, friendly and respectful mood; the visual metaphor explains the mechanism and never makes fun of the disease or the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2617,7 +2617,7 @@
       },
       "arquivo": "dia-226-macete.png"
     },
-    "legenda_questao_pt": "Fez 45 anos e chegou um convite que ninguém esperava no correio\n\nQuarenta e cinco anos, sem sintomas, sem pólipo, sem doença inflamatória intestinal e sem câncer colorretal na família. Ele pergunta sobre exames. O que recomendar hoje?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: routine visit, 45-year-old, average risk, preventive care\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Prevencao #PreventiveMedicine",
+    "legenda_questao_pt": "Fez 45 anos, assoprou as velinhas e perguntou se precisa de algum exame\n\nQuarenta e cinco anos, sem sintomas, sem pólipo, sem doença inflamatória intestinal e sem câncer colorretal na família. Ele pergunta sobre exames. O que recomendar hoje?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: routine visit, 45-year-old, average risk, preventive care\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Prevencao #PreventiveMedicine",
     "legenda_explicacao_pt": "Gabarito do dia 226: letra D, Begin screening now with colonoscopy or a stool-based test.\n\nDesde 2021, a USPSTF recomenda rastrear câncer colorretal em adultos de risco médio dos 45 aos 75 anos (grau B entre 45 e 49, grau A entre 50 e 75). Valem colonoscopy a cada 10 anos, FIT anual, FIT-DNA a cada 1 a 3 anos, colonografia por TC a cada 5 anos ou sigmoidoscopia flexível a cada 5 anos. O melhor teste é o que a pessoa vai fazer, e um teste de fezes positivo leva à colonoscopia.\n\nMacete: 45 é o novo 50 para o cólon: no risco médio, o rastreamento começa aos 45, com colonoscopia ou exame de fezes. CEA não rastreia nada; ele acompanha quem já tratou.\n\nPara mandar no grupo da turma: O convite do rastreamento colorretal chegou cinco anos antes: 45 é o novo 50.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "45 anos, risco médio e sem sintomas: o que recomendar?",
@@ -2635,13 +2635,13 @@
       "humor_compliance": "\"45 é o novo 50 para o cólon\" brinca com a regra, não com a idade da pessoa. Presente de aniversário com câmera e kit é leve. Sem ajustes. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D.",
       "letras": "Letras reordenadas em 29/10/2026 para equilibrar o gabarito do ano: a certa passou de B para D, trocando de lugar com a antiga D. Conteúdo sem mudança."
     },
-    "gancho": "Fez 45 anos e chegou *um convite que ninguém esperava* no correio",
-    "gancho_apoio": "Sem sintomas e sem história na família. A festa do rastreamento já começou?",
+    "gancho": "Fez 45 anos, assoprou as velinhas e *perguntou se precisa de algum exame*",
+    "gancho_apoio": "Sem sintomas e sem história na família. O que a USPSTF recomenda para ele?",
     "imagem": {
       "arquivo": "dia-226.png",
-      "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica entrega um envelope de convite fechado a um bolo de aniversário simpático, de velinhas apagadas. Na mesinha, um presente navy com laço vermelho, e um calendário de parede solta folhas voando.",
+      "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas, que olha pensativo para um calendário de parede soltando folhas voando. Na mesinha, um presente navy com laço vermelho, ainda fechado.",
       "foco": "50% 35%",
-      "alt": "Dona Térmica entrega um convite fechado a um bolo de aniversário na sala de espera"
+      "alt": "Dona Térmica conversa com um bolo de aniversário pensativo na sala de espera"
     },
     "imagem_macete": {
       "arquivo": "dia-226-macete.png",
@@ -2654,15 +2654,15 @@
       "pergunta": "Which is the most appropriate recommendation regarding colorectal cancer screening?",
       "alternativas": {
         "A": {
-          "texto": "Defer screening until age 50",
+          "texto": "Defer screening until he reaches age 50",
           "quiz": "Esperar os 50"
         },
         "B": {
-          "texto": "CT colonography every year",
+          "texto": "Annual CT colonography starting this year",
           "quiz": "Colono-TC anual"
         },
         "C": {
-          "texto": "Measure serum carcinoembryonic antigen",
+          "texto": "Measure serum carcinoembryonic antigen yearly",
           "quiz": "Dosar CEA"
         },
         "D": {
@@ -2905,7 +2905,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-06-18",
-    "gancho_pt": "Dor súbita no treino, massa de 7 cm e um Doppler tímido: dá para esperar?",
+    "gancho_pt": "Dor súbita no treino, massa de 7 cm e um Doppler tímido: o que o garçom serve?",
     "vinheta_en": "A 24-year-old woman has had sudden, severe right lower quadrant pain with nausea and vomiting since exercising 3 hours ago. Temperature is 37.4°C. Urine hCG is negative. There is right adnexal tenderness. Transvaginal ultrasound shows a 7-cm right ovarian mass with decreased Doppler flow.",
     "pergunta_en": "Which is the most appropriate next step?",
     "alternativas": [
@@ -2938,8 +2938,8 @@
       "pegadinha_de_prova": "O NBME coloca Doppler normal para enganar: fluxo presente não exclui torção, e a suspeita clínica forte já indica laparoscopia."
     },
     "imagem_questao": {
-      "conceito_visual": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um cronômetro corre em cima da mesa. A plaquinha verde e vermelha está de lado.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: at the rodízio steakhouse, the waiter mascot holds a skewer from which a round balloon hangs on a string; the balloon is slowly losing its color, a stopwatch runs on the table, and the round green-and-red table card stands sideways. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um guardanapo dobrado espera em cima da mesa. A plaquinha verde e vermelha está de lado.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: at the rodízio steakhouse, the waiter mascot holds a skewer from which a round balloon hangs on a string; the balloon is slowly losing its color, a folded napkin rests on the table, and the round green-and-red table card stands sideways. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2957,7 +2957,7 @@
       },
       "arquivo": "dia-228-macete.png"
     },
-    "legenda_questao_pt": "Dor súbita no treino, massa de 7 cm e um Doppler tímido: dá para esperar?\n\nDor súbita e forte no lado direito durante o treino, náuseas, vômitos, beta-hCG negativo e massa de 7 cm no ovário direito com fluxo reduzido no Doppler. Qual é o próximo passo?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: sudden pelvic pain, after exercise, ovarian mass, Doppler flow\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Ginecologia #Gynecology",
+    "legenda_questao_pt": "Dor súbita no treino, massa de 7 cm e um Doppler tímido: o que o garçom serve?\n\nDor súbita e forte no lado direito durante o treino, náuseas, vômitos, beta-hCG negativo e massa de 7 cm no ovário direito com fluxo reduzido no Doppler. Qual é o próximo passo?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: sudden pelvic pain, after exercise, ovarian mass, Doppler flow\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Ginecologia #Gynecology",
     "legenda_explicacao_pt": "Gabarito do dia 228: letra A, Urgent laparoscopy with detorsion.\n\nDor súbita e unilateral com náuseas, massa anexial (o cisto ou tumor serve de pêndulo) e Doppler com fluxo diminuído formam a ovarian torsion. A conduta é urgent laparoscopy com detorsion; mesmo o ovário escurecido costuma se recuperar, por isso a ACOG recomenda preservar o ovário em vez de retirá-lo, principalmente na mulher jovem.\n\nMacete: Torceu, destorce: tempo é ovário.\n\nPara mandar no grupo da turma: Na torção, o ovário não lê o \"vejo depois\" do WhatsApp.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Massa ovariana de 7 cm e pouco fluxo: qual conduta?",
@@ -2974,11 +2974,11 @@
       "medica": "Resolvida: A. Dor súbita, massa anexial de 7 cm e Doppler reduzido: laparoscopia com destorção e preservação do ovário (ACOG CO 783). Uma só correta.",
       "humor_compliance": "Cordinha do balão enrolada no espeto do rodízio é visual claro e engraçado. Sem ajustes. Rodada de humor e personagens (dias 184 a 244): gancho, cenas, macete e legenda com tirada, personagem fixo ou anfitrião do quadro e assinatura pequena do quadro; sem pista da resposta no dia D."
     },
-    "gancho": "Dor súbita no treino, massa de 7 cm e *um Doppler tímido*: dá para esperar?",
-    "gancho_apoio": "Dor súbita, massa no ovário e fluxo diminuído. O garçom precisa decidir rápido.",
+    "gancho": "Dor súbita no treino, massa de 7 cm e *um Doppler tímido*: o que o garçom serve?",
+    "gancho_apoio": "Dor súbita, massa no ovário e fluxo diminuído. Qual é o próximo passo?",
     "imagem": {
       "arquivo": "dia-228.png",
-      "cena": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um cronômetro corre em cima da mesa. A plaquinha verde e vermelha está de lado.",
+      "cena": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um guardanapo dobrado espera em cima da mesa. A plaquinha verde e vermelha está de lado.",
       "foco": "50% 35%",
       "alt": "O garçom segura um balão que perde a cor na ponta de um espeto"
     },
@@ -3262,7 +3262,7 @@
       },
       {
         "letra": "D",
-        "texto": "Ask him to state his full name and date of birth, then match the wristband"
+        "texto": "Have him state his full name and date of birth"
       }
     ],
     "correta": "D",
@@ -3297,7 +3297,7 @@
       "arquivo": "dia-230-macete.png"
     },
     "legenda_questao_pt": "Dois José da Silva em quartos vizinhos e uma bolsa de hemácias pronta\n\nUma transfusão de hemácias pronta, dois pacientes com o mesmo nome em quartos vizinhos e o paciente acordado. Antes de começar, qual é a conferência correta?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: red cell transfusion, patients with the same name, nursing, patient safety\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #SegurancaDoPaciente #PatientSafety",
-    "legenda_explicacao_pt": "Gabarito do dia 230: letra D, Ask him to state his full name and date of birth, then match the wristband.\n\nA Joint Commission exige pelo menos two patient identifiers (por exemplo, nome completo e data de nascimento) antes de remédio, sangue, coleta de exames e procedimentos. O paciente acordado diz os dados com as próprias palavras (open-ended), e a equipe confere com a pulseira e a requisição; na transfusão, a checagem é feita à beira do leito, por dois profissionais ou com leitor de código de barras.\n\nMacete: Nome e nascimento, nunca quarto e leito.\n\nPara mandar no grupo da turma: Conferir paciente pelo leito é reconhecer contato pela foto do WhatsApp: tem dez José da Silva de óculos escuros.\n\nQuer estudar com método e acompanhamento? A pré-inscrição da Road to America está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_explicacao_pt": "Gabarito do dia 230: letra D, Have him state his full name and date of birth.\n\nA Joint Commission exige pelo menos two patient identifiers (por exemplo, nome completo e data de nascimento) antes de remédio, sangue, coleta de exames e procedimentos. O paciente acordado diz os dados com as próprias palavras (open-ended), e a equipe confere com a pulseira e a requisição; na transfusão, a checagem é feita à beira do leito, por dois profissionais ou com leitor de código de barras.\n\nMacete: Nome e nascimento, nunca quarto e leito.\n\nPara mandar no grupo da turma: Conferir paciente pelo leito é reconhecer contato pela foto do WhatsApp: tem dez José da Silva de óculos escuros.\n\nQuer estudar com método e acompanhamento? A pré-inscrição da Road to America está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Dois homônimos e uma transfusão: como conferir?",
       "opcoes": [
@@ -3344,7 +3344,7 @@
           "quiz": "Conferir diagnóstico"
         },
         "D": {
-          "texto": "Ask him to state his full name and date of birth, then match the wristband",
+          "texto": "Have him state his full name and date of birth",
           "quiz": "Nome e nascimento"
         }
       },
@@ -3826,7 +3826,7 @@
       "letras": "Letras reordenadas em 29/10/2026 para equilibrar o gabarito do ano: a certa passou de A para C, trocando de lugar com a antiga C. Conteúdo sem mudança."
     },
     "gancho": "Febre, sopro novo e *uma pressa danada* de tratar",
-    "gancho_apoio": "Paciente estável, sopro novo e febre há cinco dias. O que vem antes do antibiótico?",
+    "gancho_apoio": "Paciente estável, sopro novo e febre há cinco dias. Qual é o primeiro passo?",
     "imagem": {
       "arquivo": "dia-233.png",
       "cena": "Padaria de bairro ao amanhecer, com o relógio sem números ainda marcando 3 horas. Dona Térmica, de avental, segura a porta: lá fora, um caminhão de entrega buzina, ansioso para entrar, enquanto o forno ainda está aceso. Ao fundo, uma montanha com um megafone no topo.",
@@ -4297,8 +4297,8 @@
       "pegadinha_de_prova": "O NBME junta lítio com tiazida, AINE ou IECA e pede o mecanismo do aumento; também cobra o diabetes insípido nefrogênico, o hipotireoidismo e a anomalia de Ebstein na gestação."
     },
     "imagem_questao": {
-      "conceito_visual": "Seu Néfron, de gravata e óculos, na plateia de um circo de bairro, assiste a um equilibrista em forma de comprimido prateado andando numa corda bamba bem fina. No colo dele, uma pasta nova com um comprimido de diurético preso no clipe. Na bilheteria do circo, uma ampulheta pequena.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: Seu Néfron sits in the audience of a small neighborhood circus, watching a silver pill-shaped tightrope walker balancing on a very thin rope high above the ring. On his lap rests a new folder with a small diuretic tablet clipped to it. He peers over his reading glasses, a little worried. A small hourglass sits on the circus ticket booth. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Seu Néfron, de gravata e óculos, assiste na plateia de um circo de bairro a um equilibrista em forma de comprimido prateado andando numa corda bamba bem fina. No mesmo banco, um fígado de boné, um intestino de cachecol e uma gotinha de sangue com um saco de pipoca acompanham, preocupados. No picadeiro, um comprimido de diurético faz malabarismo. Na bilheteria do circo, uma ampulheta pequena.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: Seu Néfron sits in the audience of a small neighborhood circus beside a liver character in a cap, an intestine character in a scarf and a small blood-drop character holding a bag of popcorn; all four watch, a little worried, a silver pill-shaped tightrope walker balancing on a very thin rope high above the ring, while a small diuretic tablet character juggles in the ring below. A small hourglass sits on the circus ticket booth. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4316,7 +4316,7 @@
       },
       "arquivo": "dia-236-macete.png"
     },
-    "legenda_questao_pt": "Remédio novo para pressão e a mão começou a tremer\n\nCinco anos estável com lítio, começou hidroclorotiazida para a pressão e, duas semanas depois, tremor grosseiro, diarreia, ataxia e confusão. O Seu Néfron sabe por que o nível subiu.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: bipolar I disorder, hydrochlorothiazide, coarse tremor, ataxia\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Psychopharmacology",
+    "legenda_questao_pt": "Remédio novo para pressão e a mão começou a tremer\n\nCinco anos estável com lítio, começou hidroclorotiazida para a pressão e, duas semanas depois, tremor grosseiro, diarreia, ataxia e confusão. Na plateia do circo, fígado, intestino, sangue e Seu Néfron juram inocência. Por que o nível subiu?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: bipolar I disorder, hydrochlorothiazide, coarse tremor, ataxia\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Psychopharmacology",
     "legenda_explicacao_pt": "Gabarito do dia 236: letra C, Increased proximal tubular reabsorption of lithium.\n\nO lithium é filtrado e reabsorvido em grande parte no proximal tubule, pelo mesmo caminho do sódio. A tiazida causa perda de sódio e contração de volume, e o túbulo proximal compensa reabsorvendo mais sódio e, junto, mais lítio. Com narrow therapeutic index, o nível sobe para a faixa tóxica; AINEs e IECA fazem o mesmo. O uso crônico também causa nephrogenic diabetes insipidus e hipotireoidismo.\n\nMacete: Seu Néfron confunde lítio com sódio: faltou sódio, carimba REABSORVIDO nos dois.\n\nPara mandar no grupo da turma: Seu Néfron confunde lítio com sódio igual a gente confunde shift com drift na véspera da prova.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Lítio + tiazida: por que o nível subiu?",
@@ -4337,7 +4337,7 @@
     "gancho_apoio": "Cinco anos estável no lítio, duas semanas de diurético e veio a intoxicação. Por quê?",
     "imagem": {
       "arquivo": "dia-236.png",
-      "cena": "Seu Néfron, de gravata e óculos, na plateia de um circo de bairro, assiste a um equilibrista em forma de comprimido prateado andando numa corda bamba bem fina. No colo dele, uma pasta nova com um comprimido de diurético preso no clipe. Na bilheteria do circo, uma ampulheta pequena.",
+      "cena": "Seu Néfron, de gravata e óculos, assiste na plateia de um circo de bairro a um equilibrista em forma de comprimido prateado andando numa corda bamba bem fina. No mesmo banco, um fígado de boné, um intestino de cachecol e uma gotinha de sangue com um saco de pipoca acompanham, preocupados. No picadeiro, um comprimido de diurético faz malabarismo. Na bilheteria do circo, uma ampulheta pequena.",
       "foco": "50% 35%",
       "alt": "Remédio novo para pressão e a mão começou a tremer"
     },
@@ -4393,7 +4393,7 @@
       }
     },
     "legenda": {
-      "contexto": "Cinco anos estável com lítio, começou hidroclorotiazida para a pressão e, duas semanas depois, tremor grosseiro, diarreia, ataxia e confusão. O Seu Néfron sabe por que o nível subiu.",
+      "contexto": "Cinco anos estável com lítio, começou hidroclorotiazida para a pressão e, duas semanas depois, tremor grosseiro, diarreia, ataxia e confusão. Na plateia do circo, fígado, intestino, sangue e Seu Néfron juram inocência. Por que o nível subiu?",
       "palavras_chave": [
         "bipolar I disorder",
         "hydrochlorothiazide",
@@ -4491,7 +4491,7 @@
       "pergunta_curta_pt": "Fumante que \"sabe que deveria parar\": qual frase?",
       "opcoes": [
         "Pare agora!",
-        "Reflexão dupla",
+        "Alivia, mas pensa em largar",
         "Por que não parou?",
         "Vareniclina hoje"
       ],
@@ -4526,7 +4526,7 @@
         },
         "B": {
           "texto": "\"Smoking helps you unwind, and part of you wants to quit.\"",
-          "quiz": "Reflexão dupla"
+          "quiz": "Alivia, mas pensa em largar"
         },
         "C": {
           "texto": "\"Why haven't you quit yet if you know it's harmful?\"",

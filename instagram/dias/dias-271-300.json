@@ -75,7 +75,7 @@
       ],
       "correta": "A"
     },
-    "fonte": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-20; Vanderah TW, ed. Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024",
+    "fonte": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352:1112-20; Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024",
     "revisao": {
       "medica": "Resolvida antes do gabarito: A (cyproheptadine). Clônus induzível, hiper-reflexia, hipertermia e diaforese após ISRS + linezolida fecham síndrome serotoninérgica (critérios de Hunter). Mudado: o lead-in agora diz que o benzodiazepínico já foi iniciado, porque benzo é a primeira droga e deixava margem para discutir. Distratores (dantroleno, bromocriptina, fisostigmina) corretos e homogêneos.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Tia Meia-Vida no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Bloco de Carnaval e vassoura de cipreste de sete ramos (cypro-hepta-dine) ajudam a lembrar; sem apologia a álcool. Legendas dentro do limite, CRM-DF 13610, sem promessa, sem travessão. Sem mudança no humor."
@@ -177,7 +177,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-08-01",
-    "gancho_pt": "A sala de espera virou panela de pressão de feijão. Quem baixa o fogo?",
+    "gancho_pt": "A sala de espera virou panela de pressão de feijão",
     "vinheta_en": "A 47-year-old woman learns at the front desk that her MRI report never reached the clinic and her visit must be rescheduled. When the physician comes out, she raises her voice: \"I drove two hours and nobody bothered to call me!\" She makes no threats.",
     "pergunta_en": "Which is the most appropriate initial response by the physician?",
     "alternativas": [
@@ -210,8 +210,8 @@
       "pegadinha_de_prova": "O NBME coloca uma alternativa com a explicação verdadeira da falha para tentar você; acolher a emoção vem antes de explicar ou de mudar de assunto."
     },
     "imagem_questao": {
-      "conceito_visual": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita entre o botão do fogo e a tampa. Do lado, o Viés, meio escondido atrás de uma tabela 2x2 colada na geladeira, oferece um apito de segurança e um manual grosso de regras.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: A cozy clinic waiting room drawn like a small kitchen: an empty report envelope on the counter and, on a little stove, a whistling pressure cooker letting off steam. A physician's hand with a stethoscope around the wrist hovers between the stove knob and the cooker lid. Nearby, Viés, half hidden behind a small blank 2x2 chart stuck on the fridge, offers a security whistle and a thick rule book. No faces of people. Warm humor about the pressure cooker and Viés, never about the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita diante de quatro objetos na bancada: um apito, um manual grosso, um pano de prato dobrado e um cronômetro de cozinha. O Viés espia, meio escondido atrás de uma tabela 2x2 colada na geladeira.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: A cozy clinic waiting room drawn like a small kitchen: an empty report envelope on the counter and, on a little stove, a whistling pressure cooker letting off steam. A physician's hand with a stethoscope around the wrist hovers over four objects lined up on the counter: a whistle, a thick rule book, a folded dish towel and a kitchen timer. Nearby, Viés peeks out, half hidden behind a small blank 2x2 chart stuck on the fridge. No faces of people. Warm humor about the pressure cooker and Viés, never about the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -219,15 +219,15 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, e o Viés deixa o apito e o manual caírem atrás da geladeira.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: The same kitchen-like waiting room: the physician's hand turns the stove knob down first, the steam fades and the whistle stops; then the cooker lid opens calmly and a warm plate of Brazilian beans is served, and the empty envelope now sits next to a calendar with a new date circled. Viés drops his whistle and rule book behind the fridge, disappointed. Calm, friendly mood, no faces of people. Warm humor about the pressure cooker and Viés, never about the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, o apito e o manual vão parar atrás da geladeira, e o Viés espia, contrariado.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: The same kitchen-like waiting room: the physician's hand turns the stove knob down first, the steam fades and the whistle stops; then the cooker lid opens calmly and a warm plate of Brazilian beans is served, and the empty envelope now sits next to a calendar with a new date circled. The whistle and the rule book slide behind the fridge, and Viés peeks out, disappointed. Calm, friendly mood, no faces of people. Warm humor about the pressure cooker and Viés, never about the patient. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "A sala de espera virou panela de pressão de feijão. Quem baixa o fogo?\n\nDuas horas de estrada, um laudo de ressonância que não chegou e uma reclamação em voz alta. Qual é a primeira coisa que o médico fala? Na prova, a ordem das frases decide a questão.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: missed MRI report, rescheduled visit, upset patient, communication\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Comunicacao #BehavioralScience",
+    "legenda_questao_pt": "A sala de espera virou panela de pressão de feijão\n\nDuas horas de estrada, um laudo de ressonância que não chegou e uma reclamação em voz alta. Qual é a primeira coisa que o médico fala? Na prova, a ordem das frases decide a questão.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: missed MRI report, rescheduled visit, upset patient, communication\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Comunicacao #BehavioralScience",
     "legenda_explicacao_pt": "Gabarito do dia 272: letra C, \"I can see how frustrating this is, and I'm sorry it happened.\".\n\nDiante da raiva, o primeiro passo é nomear a emoção e pedir desculpas pela experiência (\"vejo que isso é frustrante, sinto muito pelo que aconteceu\"). Isso baixa a tensão e abre espaço para a conversa. A explicação da falha e a remarcação vêm depois, nunca antes.\n\nMacete: Panela de pressão: primeiro baixa o fogo, depois abre a tampa. Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é o Viés oferecendo apito para panela de pressão.\n\nQuer estudar com método e acompanhamento? A pré-inscrição da Road to America está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Paciente irritada com laudo perdido: qual é a primeira frase do médico?",
@@ -241,20 +241,20 @@
     },
     "fonte": "Fortin AH et al. Smith's Patient-Centered Interviewing, 4th ed., McGraw-Hill, 2019; Back AL, Arnold RM, Tulsky JA. Mastering Communication with Seriously Ill Patients, Cambridge University Press, 2009.",
     "revisao": {
-      "medica": "Resolvida: C. Acolher a emoção e pedir desculpas pela experiência vem antes de explicar a falha; sem ameaça, segurança é inadequada. Gabarito único. Sem mudança.",
+      "medica": "Resolvida: C. Acolher a emoção e pedir desculpas pela experiência vem antes de explicar a falha; sem ameaça, segurança é inadequada. Gabarito único. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Viés no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Panela de pressão (baixa o fogo antes de abrir a tampa) é boa e não zomba da paciente, a raiva é tratada como legítima. Sem mudança."
     },
-    "gancho": "A sala de espera virou *panela de pressão de feijão*. Quem baixa o fogo?",
+    "gancho": "A sala de espera virou *panela de pressão de feijão*",
     "gancho_apoio": "Laudo perdido, duas horas de estrada e uma reclamação em voz alta. A ordem das próximas frases vale ponto.",
     "imagem": {
       "arquivo": "dia-272.png",
-      "cena": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita entre o botão do fogo e a tampa. Do lado, o Viés, meio escondido atrás de uma tabela 2x2 colada na geladeira, oferece um apito de segurança e um manual grosso de regras.",
+      "cena": "Uma sala de espera desenhada como cozinha: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando e soltando vapor. A mão de um médico, com estetoscópio no pulso, hesita diante de quatro objetos na bancada: um apito, um manual grosso, um pano de prato dobrado e um cronômetro de cozinha. O Viés espia, meio escondido atrás de uma tabela 2x2 colada na geladeira.",
       "foco": "50% 35%",
-      "alt": "A panela de pressão da sala de espera e o Viés com um apito"
+      "alt": "A panela de pressão da sala de espera e quatro objetos na bancada"
     },
     "imagem_macete": {
       "arquivo": "dia-272-macete.png",
-      "cena": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, e o Viés deixa o apito e o manual caírem atrás da geladeira.",
+      "cena": "A mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma. O envelope agora está ao lado de um calendário com uma data nova circulada, o apito e o manual vão parar atrás da geladeira, e o Viés espia, contrariado.",
       "foco": "50% 45%",
       "alt": "Primeiro acolhe, depois explica"
     },
@@ -298,7 +298,7 @@
       },
       "macete": {
         "frase": "*Panela de pressão*: primeiro baixa o fogo, depois abre a tampa",
-        "apoio": "Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é o Viés oferecendo apito para panela de pressão.",
+        "apoio": "Acolher e pedir desculpas é baixar o fogo; explicar a falha, remarcar e resolver é abrir a tampa, e isso só funciona depois. Ameaçar com a segurança ou empurrar a culpa para o laboratório é oferecer apito para panela de pressão.",
         "fala": "Se você não randomizou, eu entrei. Se começou se defendendo, também."
       }
     },
@@ -903,7 +903,7 @@
       ],
       "correta": "C"
     },
-    "fonte": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed., 2020; Nurden AT, Nurden P. Congenital platelet disorders and understanding of platelet function. Br J Haematol 2014;165:165-78.",
+    "fonte": "Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed., 2021; Nurden AT, Nurden P. Congenital platelet disorders and understanding of platelet function. Br J Haematol 2014;165:165-78.",
     "revisao": {
       "medica": "Resolvida: C (GpIb). Plaquetas gigantes, ristocetina sem correção com plasma e ADP normal = Bernard-Soulier; vWD corrige com plasma, Glanzmann falha com ADP. Mudado: gancho, apoio e imagem da questão mostravam plaquetas gigantes \"sem conseguir estacionar\" (entregava defeito de adesão); agora a cena é um congestionamento neutro.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Capitã Plaqueta no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Trânsito e estacionamento continuam no macete (adesão vs mãos dadas da agregação), que é o melhor da peça. Mudado: gancho e apoio neutros para não entregar a resposta."
@@ -1038,8 +1038,8 @@
       "pegadinha_de_prova": "O NBME separa as duas pelo tempo (primeira semana ou depois dela) e pela ingestão (perda de peso e poucas fraldas), e a resposta de conduta quase nunca é suspender a amamentação."
     },
     "imagem_questao": {
-      "conceito_visual": "O Garçom Espetinho, ao lado de uma pequena fábrica em forma de sol coberta por uma neblina amarela, segura a plaquinha verde e vermelha de lado. Na estrada em frente, uma lambreta de entrega de leite está estacionada ao lado de um calendário de parede em branco e de uma balancinha de bebê. Um laço dourado do Agosto Dourado enfeita o canto.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: Garçom Espetinho stands beside a small sun-shaped factory covered in a light yellow fog, holding a small round card that is green on one side and red on the other, sideways. On the road in front, a single milk delivery scooter is parked next to a blank wall calendar and a small baby scale. A golden ribbon decoration hangs in one corner. Gentle, warm and supportive mood; breastfeeding is always shown positively. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "O Garçom Espetinho, ao lado de uma pequena fábrica em forma de sol coberta por uma neblina amarela, segura a plaquinha verde e vermelha de lado. Na estrada em frente passa uma lambreta de entrega de leite, perto de um calendário de parede em branco e de uma balancinha de bebê. Um laço dourado do Agosto Dourado enfeita o canto.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: Garçom Espetinho stands beside a small sun-shaped factory covered in a light yellow fog, holding a small round card that is green on one side and red on the other, sideways. On the road in front, a milk delivery scooter rides by, near a blank wall calendar and a small baby scale. A golden ribbon decoration hangs in one corner. Gentle, warm and supportive mood; breastfeeding is always shown positively. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1069,14 +1069,14 @@
     },
     "fonte": "Kemper AR et al. Clinical Practice Guideline Revision: Management of Hyperbilirubinemia in the Newborn Infant 35 or More Weeks of Gestation. Pediatrics 2022;150:e2022058859; Flaherman VJ et al. ABM Clinical Protocol #22: Guidelines for Management of Jaundice in the Breastfeeding Infant 35 Weeks or More of Gestation. Breastfeed Med 2017;12:250-7.",
     "revisao": {
-      "medica": "Rodada de humor: a certa perdeu o parêntese que repetia a vinheta (\"Breastfeeding jaundice\") e a atresia biliar (direta normal, heterogênea) virou icterícia fisiológica. Resolvida: B. Dia 4, 5 mamadas/dia, 2 fraldas, perda de 11%, BI 15 com BD 0,4 e Coombs negativo = icterícia por ingestão subótima; conduta sem suspender o aleitamento (AAP 2022, ABM #22). Mudado: a imagem da questão mostrava uma única lambreta de leite passando raramente (entregava a baixa ingestão); agora a lambreta está estacionada e neutra.",
+      "medica": "Rodada de humor: a certa perdeu o parêntese que repetia a vinheta (\"Breastfeeding jaundice\") e a atresia biliar (direta normal, heterogênea) virou icterícia fisiológica. Resolvida: B. Dia 4, 5 mamadas/dia, 2 fraldas, perda de 11%, BI 15 com BD 0,4 e Coombs negativo = icterícia por ingestão subótima; conduta sem suspender o aleitamento (AAP 2022, ABM #22). Mudado: a imagem da questão mostrava uma única lambreta de leite passando raramente (entregava a baixa ingestão); agora a lambreta está estacionada e neutra. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Garçom Espetinho no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Agosto Dourado com recado pró-amamentação. Mudado: \"Culpa de quem?\" saiu, porque podia soar como culpar a mãe ou a amamentação; o gancho agora é \"bebê amarelinho no quarto dia. O que explica?\"."
     },
     "gancho": "Agosto Dourado: bebê amarelinho no quarto dia e *a balança dedurou*",
-    "gancho_apoio": "Semana Mundial do Aleitamento Materno. A pista está nas fraldas e na balança.",
+    "gancho_apoio": "Semana Mundial do Aleitamento Materno. Quarto dia de vida, só no peito e amarelinha.",
     "imagem": {
       "arquivo": "dia-277.png",
-      "cena": "O Garçom Espetinho, ao lado de uma pequena fábrica em forma de sol coberta por uma neblina amarela, segura a plaquinha verde e vermelha de lado. Na estrada em frente, uma lambreta de entrega de leite está estacionada ao lado de um calendário de parede em branco e de uma balancinha de bebê. Um laço dourado do Agosto Dourado enfeita o canto.",
+      "cena": "O Garçom Espetinho, ao lado de uma pequena fábrica em forma de sol coberta por uma neblina amarela, segura a plaquinha verde e vermelha de lado. Na estrada em frente passa uma lambreta de entrega de leite, perto de um calendário de parede em branco e de uma balancinha de bebê. Um laço dourado do Agosto Dourado enfeita o canto.",
       "foco": "50% 35%",
       "alt": "Garçom ao lado da fábrica de bilirrubina coberta de neblina amarela"
     },
@@ -1204,8 +1204,8 @@
       "pegadinha_de_prova": "O NBME cobra o rastreio de TB latente (IGRA ou PPD, com radiografia) e de hepatite B antes do anti-TNF, e lembra que o metotrexato pede ácido fólico e controle de hemograma e de função hepática."
     },
     "imagem_questao": {
-      "conceito_visual": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Atrás dela, uma pequena fortaleza redonda de pedra, com uma janelinha fechada, e um martelo encostado no muro, pronto para tirar o cimento entre as pedras.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: At a small-town craft fair, Tia Meia-Vida holds up an injector pen wrapped like a gift and refuses to hand it over, pointing at a blank receipt pad on her stall. Behind her stands a little round stone fortress with a closed tiny window, and a mallet leans against its wall, ready to knock out the mortar between the stones. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Na barraca, quatro tubinhos de exame com tampas de cores diferentes esperam numa estante de madeira.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: At a small-town craft fair, Tia Meia-Vida holds up an injector pen wrapped like a gift and refuses to hand it over, pointing at a blank receipt pad on her stall. On her stall, four small lab sample tubes with different colored caps wait in a wooden rack. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1213,8 +1213,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Before the mallet is used, a flashlight shaped like a small blood collection tube shines through the fortress window, revealing a tiny rod-shaped bacillus sleeping in a nightcap inside. Tia Meia-Vida writes on the receipt pad, satisfied, and only then hands over the gift-wrapped injector pen tied with a green ribbon. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Ao lado da barraca surge uma pequena fortaleza redonda de pedra, com um martelo encostado no muro, pronto para tirar o cimento entre as pedras. Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Next to the stall stands a little round stone fortress with a closed tiny window and a mallet leaning against its wall, ready to knock out the mortar. Before the mallet is used, a flashlight shaped like a small blood collection tube shines through the fortress window, revealing a tiny rod-shaped bacillus sleeping in a nightcap inside. Tia Meia-Vida writes on the receipt pad, satisfied, and only then hands over the gift-wrapped injector pen tied with a green ribbon. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -1235,20 +1235,20 @@
     },
     "fonte": "Fraenkel L et al. 2021 American College of Rheumatology Guideline for the Treatment of Rheumatoid Arthritis. Arthritis Care Res 2021;73:924-39; Sterling TR et al. Guidelines for the Treatment of Latent Tuberculosis Infection (NTCA/CDC). MMWR Recomm Rep 2020;69(1):1-11.",
     "revisao": {
-      "medica": "Resolvida: A (IGRA). Rastreio de TB latente obrigatório antes de anti-TNF (ACR 2021); HBV também, mas não está entre as opções. Distratores HLA-B*58:01 e TPMT corretos. Sem mudança.",
+      "medica": "Resolvida: A (IGRA). Rastreio de TB latente obrigatório antes de anti-TNF (ACR 2021); HBV também, mas não está entre as opções. Distratores HLA-B*58:01 e TPMT corretos. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Tia Meia-Vida no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Fortaleza do granuloma e lanterna do IGRA funcionam. Sem mudança."
     },
     "gancho": "Tia Meia-Vida não libera a caneta do biológico *sem um exame na nota*",
     "gancho_apoio": "Artrite ainda ativa depois de quatro meses de metotrexato e o adalimumabe a caminho.",
     "imagem": {
       "arquivo": "dia-278.png",
-      "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Atrás dela, uma pequena fortaleza redonda de pedra, com uma janelinha fechada, e um martelo encostado no muro, pronto para tirar o cimento entre as pedras.",
+      "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Na barraca, quatro tubinhos de exame com tampas de cores diferentes esperam numa estante de madeira.",
       "foco": "50% 35%",
       "alt": "Tia Meia-Vida não entrega a caneta de presente sem a nota"
     },
     "imagem_macete": {
       "arquivo": "dia-278-macete.png",
-      "cena": "Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
+      "cena": "Ao lado da barraca surge uma pequena fortaleza redonda de pedra, com um martelo encostado no muro, pronto para tirar o cimento entre as pedras. Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
       "foco": "50% 45%",
       "alt": "Anti-TNF só depois de rastrear TB latente"
     },
@@ -2034,8 +2034,8 @@
       "pegadinha_de_prova": "O NBME descreve o experimento com AP5 ou com Mg2+ e pergunta qual receptor detecta a coincidência entre glutamato e despolarização: é o NMDA, e o AMPA é o que aumenta depois."
     },
     "imagem_questao": {
-      "conceito_visual": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, estuda numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos. Atrás deles, uma parede com várias portinhas fechadas, uma delas tampada com uma rolha. Setinhas de manual apontam para o halter, e ao lado do Mito já há quatro copos de café vazios.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: At two in the morning, Mito studies at a desk piled with blank flashcards next to a cheerful seahorse student wearing headphones who lifts a dumbbell made of two round synaptic knobs. Behind them stands a wall with several small closed doors, one of them plugged with a cork. Small assembly-manual arrows point at the dumbbell, and four empty coffee cups line up next to Mito, who yawns hugely. Warm desk lamp. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, estuda numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos. Atrás deles, uma parede com várias portinhas fechadas. Setinhas de manual apontam para o halter, e ao lado do Mito já há quatro copos de café vazios.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: At two in the morning, Mito studies at a desk piled with blank flashcards next to a cheerful seahorse student wearing headphones who lifts a dumbbell made of two round synaptic knobs. Behind them stands a wall with several small closed doors. Small assembly-manual arrows point at the dumbbell, and four empty coffee cups line up next to Mito, who yawns hugely. Warm desk lamp. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2043,8 +2043,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "O cavalo-marinho levanta o halter várias vezes, a rolha de uma das portinhas pula, bolinhas brancas entram e um pequeno personal trainer instala portas novas na parede da sinapse. As fichas viram uma pilha alta e arrumada, e Mito dorme na mesa com um sorriso, ainda segurando o café.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: The same desk: the seahorse lifts the dumbbell again and again, the cork pops off one small door, a stream of bright white beads flows in, and a tiny trainer figure installs extra small doors in the wall. The flashcards now stand in a neat, tall stack, and Mito sleeps on the desk with a satisfied smile, coffee cup still in hand. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "O cavalo-marinho levanta o halter várias vezes, uma rolha que tampava uma das portinhas pula, bolinhas brancas entram e um pequeno personal trainer instala portas novas na parede da sinapse. As fichas viram uma pilha alta e arrumada, e Mito dorme na mesa com um sorriso, ainda segurando o café.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: The same desk: the seahorse lifts the dumbbell again and again, a cork that was plugging one small door pops off, a stream of bright white beads flows in, and a tiny trainer figure installs extra small doors in the wall. The flashcards now stand in a neat, tall stack, and Mito sleeps on the desk with a satisfied smile, coffee cup still in hand. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2065,20 +2065,20 @@
     },
     "fonte": "Kandel ER et al. Principles of Neural Science, 6th ed., McGraw-Hill, 2021; Bliss TV, Collingridge GL. A synaptic model of memory: long-term potentiation in the hippocampus. Nature 1993;361:31-9.",
     "revisao": {
-      "medica": "Resolvida: C. AP5 bloqueia NMDA e impede a indução da LTP sem afetar a transmissão basal (AMPA); remoção do Mg2+, Ca2+, CaMKII e inserção de AMPA corretos. Sem mudança.",
+      "medica": "Resolvida: C. AP5 bloqueia NMDA e impede a indução da LTP sem afetar a transmissão basal (AMPA); remoção do Mg2+, Ca2+, CaMKII e inserção de AMPA corretos. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Mito no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Dia do Estudante com cavalo-marinho na academia e revisão espaçada: excelente para a marca. Sem mudança."
     },
     "gancho": "Dia do Estudante: por que *a revisão das 2 da manhã* finalmente gruda?",
     "gancho_apoio": "Estímulo forte, repetido, e a sinapse fica maior por horas. O que precisa entrar no neurônio?",
     "imagem": {
       "arquivo": "dia-283.png",
-      "cena": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, estuda numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos. Atrás deles, uma parede com várias portinhas fechadas, uma delas tampada com uma rolha. Setinhas de manual apontam para o halter, e ao lado do Mito já há quatro copos de café vazios.",
+      "cena": "Duas da manhã: Mito, a mitocôndria de jaleco amassado e olheiras, estuda numa escrivaninha cheia de fichas de revisão ao lado de um cavalo-marinho estudante de fone de ouvido, que levanta um halter feito de dois botões sinápticos. Atrás deles, uma parede com várias portinhas fechadas. Setinhas de manual apontam para o halter, e ao lado do Mito já há quatro copos de café vazios.",
       "foco": "50% 35%",
       "alt": "Mito e o cavalo-marinho estudam às 2 da manhã"
     },
     "imagem_macete": {
       "arquivo": "dia-283-macete.png",
-      "cena": "O cavalo-marinho levanta o halter várias vezes, a rolha de uma das portinhas pula, bolinhas brancas entram e um pequeno personal trainer instala portas novas na parede da sinapse. As fichas viram uma pilha alta e arrumada, e Mito dorme na mesa com um sorriso, ainda segurando o café.",
+      "cena": "O cavalo-marinho levanta o halter várias vezes, uma rolha que tampava uma das portinhas pula, bolinhas brancas entram e um pequeno personal trainer instala portas novas na parede da sinapse. As fichas viram uma pilha alta e arrumada, e Mito dorme na mesa com um sorriso, ainda segurando o café.",
       "foco": "50% 45%",
       "alt": "LTP: cálcio pelo NMDA fortalece a sinapse"
     },
@@ -2393,7 +2393,7 @@
       ],
       "correta": "B"
     },
-    "fonte": "Vanderah TW, ed. Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024; Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
+    "fonte": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024; Joglar JA et al. 2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation. Circulation 2024;149:e1-e156.",
     "revisao": {
       "medica": "Resolvida: B. Amiodarona: TSH, enzimas hepáticas e PFT/DLCO (mais RX, olho e pele). Distratores bem pareados com outras drogas. Mudado: a imagem da explicação punha a pele azul-acinzentada no braço da Tia Meia-Vida (personagem não adoece); agora é um lenço azul-acinzentado e óculos na cesta.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Tia Meia-Vida no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. \"Tia de novela\" e cestas de visita funcionam. Mudado: a personagem não exibe mais efeito adverso no corpo (regra dos personagens)."
@@ -2697,8 +2697,8 @@
       "pegadinha_de_prova": "O NBME põe a doença de base (DGC) e uma hepatite possível para desviar; rash palmoplantar, diarreia e bilirrubina semanas após o transplante alogênico são GVHD aguda."
     },
     "imagem_questao": {
-      "conceito_visual": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam uma caixa de mudança cheia de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: A moving truck is parked in front of a freshly painted little house. Macrô checks a blank list of who is moving in: on the sidewalk, like suspects, wait a moving box full of small blue round cells in sunglasses, a fuzzy puffball, a drop of murky water and a little brick plugging a pipe. Macrô scratches the palm of his own pseudopod, puzzled. A small vinyl record serves as the truck's hubcap in one corner. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam um trio de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: A moving truck is parked in front of a freshly painted little house. Macrô checks a blank list of who is moving in: on the sidewalk, like suspects, wait a trio of small blue round cells in sunglasses, a fuzzy puffball, a drop of murky water and a little brick plugging a pipe. Macrô scratches the palm of his own pseudopod, puzzled. A small vinyl record serves as the truck's hubcap in one corner. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2706,8 +2706,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Dentro da casinha, as bolinhas azuis de óculos escuros desfizeram as malas e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: Inside the little house, the small blue cells in sunglasses have unpacked and frown while pointing at three rooms of a cutaway view: a living room with patterned wallpaper, pipes under the floor and a kitchen with a liver-shaped stove. The fuzzy puffball, the murky drop and the little brick wait outside on the sidewalk, cleared. Macrô watches, impressed, the vinyl hubcap glinting. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Dentro da casinha, as bolinhas azuis de óculos escuros entraram na casinha e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: Inside the little house, the small blue cells in sunglasses have moved in and frown while pointing at three rooms of a cutaway view: a living room with patterned wallpaper, pipes under the floor and a kitchen with a liver-shaped stove. The fuzzy puffball, the murky drop and the little brick wait outside on the sidewalk, cleared. Macrô watches, impressed, the vinyl hubcap glinting. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2728,20 +2728,20 @@
     },
     "fonte": "Zeiser R, Blazar BR. Acute Graft-versus-Host Disease: Biologic Process, Prevention, and Therapy. N Engl J Med 2017;377:2167-79; Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed., 2022",
     "revisao": {
-      "medica": "Rodada de humor: remix reescrito como vinheta clínica no estilo USMLE que integra os conceitos revisados, com quatro alternativas da mesma categoria e a mesma letra certa. Resolvida: B. Rash de palmas e plantas, diarreia e bilirrubina subindo 4 semanas após TCTH alogênico = GVHD aguda (células T do doador). Distratores do remix (CGD, HEV) e rejeição hiperaguda corretos. Sem mudança.",
+      "medica": "Rodada de humor: remix reescrito como vinheta clínica no estilo USMLE que integra os conceitos revisados, com quatro alternativas da mesma categoria e a mesma letra certa. Resolvida: B. Rash de palmas e plantas, diarreia e bilirrubina subindo 4 semanas após TCTH alogênico = GVHD aguda (células T do doador). Distratores do remix (CGD, HEV) e rejeição hiperaguda corretos. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Macrô no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Hóspede que reclama da casa (pele, cozinha, encanamento): bom e respeitoso com o transplantado. Sem mudança."
     },
     "gancho": "Palma da mão coçando é dinheiro chegando? *Depois do transplante, não*",
     "gancho_apoio": "Quatro semanas depois do transplante de medula: rash, diarreia e bilirrubina subindo. Qual é o diagnóstico?",
     "imagem": {
       "arquivo": "dia-287.png",
-      "cena": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam uma caixa de mudança cheia de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
+      "cena": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam um trio de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
       "foco": "50% 35%",
       "alt": "Macrô confere quem entra na casa nova depois da mudança"
     },
     "imagem_macete": {
       "arquivo": "dia-287-macete.png",
-      "cena": "Dentro da casinha, as bolinhas azuis de óculos escuros desfizeram as malas e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
+      "cena": "Dentro da casinha, as bolinhas azuis de óculos escuros entraram na casinha e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
       "foco": "50% 45%",
       "alt": "GVHD: T da doadora contra pele, fígado e intestino"
     },
@@ -3193,8 +3193,8 @@
       "pegadinha_de_prova": "O NBME separa complacência do pulmão (aumenta) de complacência da parede torácica (diminui) e lembra que a TLC fica quase igual enquanto o gradiente A-a aumenta com a idade."
     },
     "imagem_questao": {
-      "conceito_visual": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, com o fole gasto e macio. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: At a late-season Brazilian June festival, Mito compares two forró accordions on a festival table: one brand new and shiny, the other vintage with worn, soft bellows. Small assembly-manual arrows point at both bellows, and colorful bunting flags hang above. Curious look. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, de fole remendado, que já tocou em muitos arraiás. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Mito, a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge. Scene: At a late-season Brazilian June festival, Mito compares two forró accordions on a festival table: one brand new and shiny, the other vintage with patched bellows. Small assembly-manual arrows point at both bellows, and colorful bunting flags hang above. Curious look. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -3224,14 +3224,14 @@
     },
     "fonte": "West JB, Luks AM. West's Respiratory Physiology: The Essentials, 11th ed., 2020; Sharma G, Goodwin J. Effect of aging on respiratory system physiology and immunology. Clin Interv Aging 2006;1:253-60.",
     "revisao": {
-      "medica": "Resolvida: B. Envelhecimento: complacência pulmonar sobe, VR sobe, VEF1 cai, CPT quase igual, parede torácica mais rígida. Sem mudança.",
+      "medica": "Resolvida: B. Envelhecimento: complacência pulmonar sobe, VR sobe, VEF1 cai, CPT quase igual, parede torácica mais rígida. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Mito no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Sanfona de forró antiga mostra o envelhecimento sem piada com idoso. Sem mudança."
     },
     "gancho": "Mito achou duas sanfonas: uma nova e outra *que tocou no casamento da avó*",
     "gancho_apoio": "Pulmão sem doença nenhuma, só com tempo de casa. O que muda com os anos?",
     "imagem": {
       "arquivo": "dia-290.png",
-      "cena": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, com o fole gasto e macio. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
+      "cena": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, de fole remendado, que já tocou em muitos arraiás. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
       "foco": "50% 35%",
       "alt": "Mito compara uma sanfona nova e uma antiga"
     },
@@ -3687,8 +3687,8 @@
       "pegadinha_de_prova": "O NBME testa se você trata a gestante como qualquer adulta capaz: recusa informada é respeitada, sem ordem judicial e sem consentimento de parceiro ou família."
     },
     "imagem_questao": {
-      "conceito_visual": "Uma encruzilhada tranquila com uma placa de trânsito em forma de balança de tribunal e, logo abaixo, uma tabela 2x2 em branco, de onde o Viés espia e aponta para três estradas ao mesmo tempo. As quatro estradas levam a um fórum com colunas, a um centro cirúrgico com a luz acesa, a uma casa de família e a uma salinha com duas cadeiras frente a frente e balões de conversa vazios. Tom respeitoso, sem pessoas.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: A calm crossroads with a road sign shaped like a balance scale and a small blank 2x2 chart pinned below it, where Viés half hides and points toward three roads at once. Four roads lead to four small buildings: a courthouse with columns, an operating room with a bright surgical lamp, a family house and a cozy room with two chairs facing each other and empty speech bubbles. Soft, respectful morning light; no people. Gentle, respectful mood, no gags. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Uma encruzilhada tranquila com uma placa de trânsito em forma de balança de tribunal e, logo abaixo, uma tabela 2x2 em branco, de onde o Viés espia com a lupa. As quatro estradas levam a um fórum com colunas, a um centro cirúrgico com a luz acesa, a uma casa de família e a uma salinha com duas cadeiras frente a frente e balões de conversa vazios. Tom respeitoso, sem pessoas.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Viés, a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart. Scene: A calm crossroads with a road sign shaped like a balance scale and a small blank 2x2 chart pinned below it, where Viés half hides and peeks out with his magnifying glass. Four roads lead to four small buildings: a courthouse with columns, an operating room with a bright surgical lamp, a family house and a cozy room with two chairs facing each other and empty speech bubbles. Soft, respectful morning light; no people. Gentle, respectful mood, no gags. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -3718,16 +3718,16 @@
     },
     "fonte": "ACOG Committee Opinion No. 664: Refusal of Medically Recommended Treatment During Pregnancy. Obstet Gynecol 2016;127:e175-82; ACOG Committee Opinion No. 819: Informed Consent and Shared Decision Making in Obstetrics and Gynecology. Obstet Gynecol 2021;137:e34-41.",
     "revisao": {
-      "medica": "Resolvida: A. Gestante com capacidade pode recusar cesárea; ACOG CO 664 desaconselha ordem judicial; parceiro não decide. Tom neutro e respeitoso. Sem mudança.",
+      "medica": "Resolvida: A. Gestante com capacidade pode recusar cesárea; ACOG CO 664 desaconselha ordem judicial; parceiro não decide. Tom neutro e respeitoso. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Viés no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Tom neutro e respeitoso, sem piada, e caneta como símbolo da autonomia. Sem mudança."
     },
     "gancho": "Sábado de ética na sala de parto: *quatro estradas e uma decisão difícil*",
     "gancho_apoio": "Ela entende os riscos, repete tudo com as próprias palavras e diz não.",
     "imagem": {
       "arquivo": "dia-293.png",
-      "cena": "Uma encruzilhada tranquila com uma placa de trânsito em forma de balança de tribunal e, logo abaixo, uma tabela 2x2 em branco, de onde o Viés espia e aponta para três estradas ao mesmo tempo. As quatro estradas levam a um fórum com colunas, a um centro cirúrgico com a luz acesa, a uma casa de família e a uma salinha com duas cadeiras frente a frente e balões de conversa vazios. Tom respeitoso, sem pessoas.",
+      "cena": "Uma encruzilhada tranquila com uma placa de trânsito em forma de balança de tribunal e, logo abaixo, uma tabela 2x2 em branco, de onde o Viés espia com a lupa. As quatro estradas levam a um fórum com colunas, a um centro cirúrgico com a luz acesa, a uma casa de família e a uma salinha com duas cadeiras frente a frente e balões de conversa vazios. Tom respeitoso, sem pessoas.",
       "foco": "50% 35%",
-      "alt": "Encruzilhada com quatro estradas e o Viés apontando atalhos"
+      "alt": "Encruzilhada com quatro estradas e o Viés espiando atrás da placa"
     },
     "imagem_macete": {
       "arquivo": "dia-293-macete.png",
@@ -3875,7 +3875,7 @@
     "legenda_questao_pt": "Dói até mastigar o pão de queijo e a VHS está em 96: o que não espera?\n\nDomingo de revisão com os dias 219, 261 e 289, mais um intruso. Cefaleia nova, couro cabeludo dolorido, dor na mandíbula ao mastigar e VHS de 96 aos 72 anos. A biópsia está marcada para a semana que vem.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 2 CK review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Reumatologia #Rheumatology",
     "legenda_explicacao_pt": "Gabarito do dia 294: letra D, High-dose prednisone now.\n\nCefaleia temporal nova, couro cabeludo dolorido, jaw claudication e VHS alta depois dos 50 anos é giant cell arteritis. O risco é a cegueira por neuropatia óptica isquêmica, então o corticoide em dose alta começa já, antes da biópsia. A biópsia continua útil por cerca de 2 semanas depois do início do corticoide.\n\nMacete: Na arterite temporal, o corticoide não espera a biópsia. O extintor de corticoide entra antes da tesoura da biópsia, que continua útil por cerca de duas semanas depois do início do tratamento. O que se protege é a visão. AINE com colchicina é da pericardite e cefepima em 1 hora é da neutropenia febril.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "VHS de 96, dor ao mastigar e biópsia só na semana que vem: o que fazer?",
+      "pergunta_curta_pt": "VHS de 96, dor ao mastigar e biópsia na semana que vem: o que fazer?",
       "opcoes": [
         "AINE + colchicina",
         "Cefepime em 1 hora",
@@ -3886,7 +3886,7 @@
     },
     "fonte": "Maz M et al. 2021 American College of Rheumatology/Vasculitis Foundation Guideline for the Management of Giant Cell Arteritis and Takayasu Arteritis. Arthritis Rheumatol 2021;73:1349-65.",
     "revisao": {
-      "medica": "Resolvida: D. ACG clínica (cefaleia nova, claudicação mandibular, VHS 96, > 50 anos): prednisona em dose alta já, sem esperar a biópsia (ACR/VF 2021). Neutrófilos normais afastam o distrator da neutropenia febril. Sem mudança.",
+      "medica": "Resolvida: D. ACG clínica (cefaleia nova, claudicação mandibular, VHS 96, > 50 anos): prednisona em dose alta já, sem esperar a biópsia (ACR/VF 2021). Neutrófilos normais afastam o distrator da neutropenia febril. Sem mudança. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Dona Térmica no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Extintor antes da tesoura fixa a regra de não esperar a biópsia. Sem mudança."
     },
     "gancho": "Dói até mastigar o pão de queijo e a VHS *está em 96*: o que não espera?",
@@ -3968,7 +3968,7 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "VHS de 96, dor ao mastigar e biópsia só na semana que vem: o que fazer?"
+      "pergunta": "VHS de 96, dor ao mastigar e biópsia na semana que vem: o que fazer?"
     },
     "cta": null,
     "tom": null,
@@ -4187,8 +4187,8 @@
       "pegadinha_de_prova": "O NBME descreve dor desproporcional e crepitação e pergunta o próximo passo: a resposta é exploração e desbridamento cirúrgico urgente, não esperar TC ou RM."
     },
     "imagem_questao": {
-      "conceito_visual": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo com uma pontinha de iceberg na superfície e a água turva, que não deixa ver o que há embaixo; uma boia vermelha de alerta pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: At three in the morning on a small pier, Dona Térmica looks through binoculars at a calm sea with a tiny iceberg tip above the surface; the murky water hides whatever lies underneath, and a red warning buoy blinks nearby. A round clock with no numbers on the pier lamppost shows three o'clock. Tense but clean; no people. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo coberto por uma neblina baixa, que esconde o que há embaixo da superfície; uma boia vermelha de alerta pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: At three in the morning on a small pier, Dona Térmica looks through binoculars at a calm sea covered by a low fog that hides whatever lies beneath the surface, and a red warning buoy blinks nearby. A round clock with no numbers on the pier lamppost shows three o'clock. Tense but clean; no people. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4196,8 +4196,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa, enorme, ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: The same sea: a small boat carrying a bright surgical lamp sails straight to the iceberg, and sculptor's chisels quickly cut away the large submerged part along a flat layer; three antibiotic vials ride along in the boat. On the pier, Dona Térmica waves the boat on with her clipboard. Decisive mood; no people. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A neblina se abre e mostra um iceberg de pontinha pequena e base enorme debaixo da água. Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa, enorme, ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: The same sea: the fog lifts and reveals an iceberg with a tiny tip above the surface and a huge mass below; a small boat carrying a bright surgical lamp sails straight to the iceberg, and sculptor's chisels quickly cut away the large submerged part along a flat layer; three antibiotic vials ride along in the boat. On the pier, Dona Térmica waves the boat on with her clipboard. Decisive mood; no people. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4218,20 +4218,20 @@
     },
     "fonte": "Stevens DL et al. Practice Guidelines for the Diagnosis and Management of Skin and Soft Tissue Infections: 2014 Update by the IDSA. Clin Infect Dis 2014;59:e10-52; Stevens DL, Bryant AE. Necrotizing Soft-Tissue Infections. N Engl J Med 2017;377:2253-65.",
     "revisao": {
-      "medica": "Resolvida: B. Dor desproporcional, bolhas violáceas, crepitação e choque = fasciíte necrosante; conduta e esquema antibiótico de acordo com IDSA 2014. Mudado: gancho (\"embaixo, um iceberg\") e imagem da questão (iceberg se espalhando pela camada plana soltando bolhas) entregavam o diagnóstico; agora o gancho pergunta de onde vem a dor e a água turva esconde o que há embaixo. A revelação ficou na imagem da explicação.",
+      "medica": "Resolvida: B. Dor desproporcional, bolhas violáceas, crepitação e choque = fasciíte necrosante; conduta e esquema antibiótico de acordo com IDSA 2014. Mudado: gancho (\"embaixo, um iceberg\") e imagem da questão (iceberg se espalhando pela camada plana soltando bolhas) entregavam o diagnóstico; agora o gancho pergunta de onde vem a dor e a água turva esconde o que há embaixo. A revelação ficou na imagem da explicação. Teste cego de pistas (dias 245 a 305): material do dia D lido sem a vinheta; a pista encontrada saiu do gancho, da cena, do alt ou do story e a revelação ficou para o macete do dia seguinte.",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Dona Térmica no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Iceberg mantido no macete e na explicação, sem dramatizar. Mudado: o gancho não entrega mais o diagnóstico."
     },
     "gancho": "Arranhão nota 2 e dor nota 10: *a matemática do plantão não fecha*",
     "gancho_apoio": "Diabético, arranhão na perna há dois dias, bolhas escuras e um som estranho ao apertar a pele.",
     "imagem": {
       "arquivo": "dia-296.png",
-      "cena": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo com uma pontinha de iceberg na superfície e a água turva, que não deixa ver o que há embaixo; uma boia vermelha de alerta pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
+      "cena": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo coberto por uma neblina baixa, que esconde o que há embaixo da superfície; uma boia vermelha de alerta pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
       "foco": "50% 35%",
-      "alt": "Dona Térmica vê só a ponta do iceberg"
+      "alt": "Dona Térmica vigia o mar calmo e enevoado às 3 da manhã"
     },
     "imagem_macete": {
       "arquivo": "dia-296-macete.png",
-      "cena": "Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa, enorme, ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
+      "cena": "A neblina se abre e mostra um iceberg de pontinha pequena e base enorme debaixo da água. Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa, enorme, ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
       "foco": "50% 45%",
       "alt": "Dor desproporcional e crepitação: fasciíte necrosante"
     },
@@ -4711,7 +4711,7 @@
       ],
       "correta": "D"
     },
-    "fonte": "Vanderah TW, ed. Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024; Institute for Safe Medication Practices. Targeted Medication Safety Best Practices for Hospitals, 2024-2025 (dose semanal de metotrexato oral).",
+    "fonte": "Katzung BG, Vanderah TW. Basic and Clinical Pharmacology, 16th ed., McGraw Hill, 2024; Institute for Safe Medication Practices. Targeted Medication Safety Best Practices for Hospitals, 2024-2025 (dose semanal de metotrexato oral).",
     "revisao": {
       "medica": "Resolvida: D. Leucovorina entra depois da DHFR; ácido fólico depende da enzima bloqueada; mesna e B12 corretos como distratores. Mudado: fonte do ISMP com o ciclo correto (2024-2025).",
       "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Tia Meia-Vida no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Pizza pronta que pula o forno e \"semanal como o jogo de domingo\" reforçam o erro de dose sem culpar o paciente. Sem mudança."

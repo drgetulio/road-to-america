@@ -8,6 +8,7 @@
   "topico": "Investigação de demência",
   "conceito": "Dementia workup: check B12 and TSH to exclude reversible causes",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": "Dia Mundial do Alzheimer (21/9): tom respeitoso.",
   "remix_de": null,
   "explicacao_em": "2027-09-22",
@@ -16,13 +17,13 @@
   "gancho_apoio": "Antes de fechar um diagnóstico, o plantão procura as causas que podem ser revertidas.",
   "imagem": {
     "arquivo": "dia-324.png",
-    "cena": "Placa verde de rodovia com três saídas sobre uma estrada tranquila ao entardecer; à beira do caminho, um caderno de memórias aberto e um pequeno vaso com flores lilases. Cena serena, sem personagens.",
+    "cena": "Mesa tranquila de consultório ao entardecer, com um relógio de parede sem números; a Dona Térmica, serena, está ao lado de um caderno de memórias aberto e de um vasinho de flores lilases; pela janela, uma estrada calma. Tom acolhedor.",
     "foco": "50% 35%",
     "alt": "Dia Mundial do Alzheimer: quais exames procuram o que tem tratamento?"
   },
   "imagem_macete": {
     "arquivo": "dia-324-macete.png",
-    "cena": "Callback: a mesma estrada com duas portas laterais abertas; numa fechadura entra uma chave em forma de cápsula de vitamina, na outra uma chave em forma de borboleta (a tireoide). A estrada principal continua iluminada e as flores lilases seguem no vaso.",
+    "cena": "Callback: a mesma estrada pela janela, agora com duas portas laterais abertas; a Dona Térmica segura duas chaves, uma em forma de cápsula de vitamina e outra em forma de borboleta; a estrada principal continua iluminada e as flores lilases seguem no vaso.",
     "foco": "50% 45%",
     "alt": "Declínio cognitivo: B12 e TSH para todos"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Antes de fechar o diagnóstico, abra as portas reversíveis*: B12 e TSH",
-      "apoio": "Na imagem, duas chavinhas (uma cápsula de vitamina e uma borboleta da tireoide) abrem duas portas laterais da estrada. São as causas que têm tratamento e não podem passar sem ser conferidas.",
-      "fala": null
+      "apoio": "Na investigação de declínio cognitivo, a diretriz pede B12 e TSH, além da imagem do crânio. São causas que têm tratamento e não podem passar sem ser conferidas. Ceruloplasmina, proteína 14-3-3 e APOE ficam para quadros com outras pistas.",
+      "fala": "Primeiro, o que tem tratamento."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Esquecimento progressivo: quais exames?"
+    "pergunta": "Esquecimento há 1 ano, MoCA 20 e exame normal: quais exames de sangue?"
   },
   "cta": null,
   "reel": null,

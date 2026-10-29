@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-12",
   "tom": null,
-  "gancho": "Seu Néfron confere o crachá: *quem deixou a bactéria subir?*",
-  "gancho_apoio": "Febre, dor lombar e cilindros leucocitários. A bactéria chegou ao rim.",
+  "gancho": "Portaria rígida, *mas a bactéria subiu com crachá VIP*",
+  "gancho_apoio": "Febre, dor lombar e cilindros leucocitários. Ela passou do térreo e chegou ao rim.",
   "imagem": {
     "arquivo": "dia-344.png",
-    "cena": "Seu Néfron na recepção de um prédio em forma de rim confere crachás de uma bactéria em bastão de mochila nas costas, diante de quatro acessórios na mesa: pulseira de ganchinhos, capa de chuva grossa, frasco de toxina e garrafa térmica de líquido.",
+    "cena": "Seu Néfron na recepção de um prédio em forma de rim confere o crachá de uma bactéria em bastão de mochila nas costas, diante de quatro acessórios na mesa: uma pulseira de ganchinhos, uma capa de chuva grossa, um frasco de toxina e uma garrafa térmica; atrás dele, a porta do elevador.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron confere o crachá: quem deixou a bactéria subir?"
+    "alt": "Portaria rígida, mas a bactéria subiu com crachá VIP"
   },
   "imagem_macete": {
     "arquivo": "dia-344-macete.png",
-    "cena": "Callback: a bactéria em bastão usa os ganchinhos dos pelos para subir agarrada no trilho do elevador até o andar de cima, e o Seu Néfron levanta o carimbo vermelho, furioso e engraçado.",
+    "cena": "Callback: a bactéria usa os ganchinhos dos pelos para subir agarrada no trilho do elevador até o último andar; o Seu Néfron levanta o carimbo vermelho, indignado, com a gravata torta.",
     "foco": "50% 45%",
     "alt": "Pielonefrite por E. coli: P fimbriae sobem até o rim"
   },
@@ -66,9 +66,9 @@
       "D": "A enterotoxina termolábil é da ETEC, que causa a diarreia aquosa do viajante."
     },
     "macete": {
-      "frase": "*Fímbria P de Pielo*: o crachá para subir ao andar do rim",
-      "apoio": "No prédio do Seu Néfron, a bexiga é o térreo. Fímbria tipo 1 entra no térreo; fímbria P é o crachá do elevador que leva ao rim. Cilindro de leucócito é o carimbo de que ela subiu.",
-      "fala": null
+      "frase": "*Fímbria P de Pielo*: o crachá VIP do elevador até o rim",
+      "apoio": "No prédio do Seu Néfron, a bexiga é o térreo. A fímbria tipo 1 gruda no térreo e dá cistite; a fímbria P é o crachá VIP que leva até o rim e dá pielonefrite. O cilindro leucocitário é o carimbo de que ela subiu. Cápsula K1 é meningite neonatal; Shiga-like é diarreia com sangue e SHU.",
+      "fala": "Sem carimbo, não sai. Com crachá P, sobe."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pielonefrite por E. coli. Que fator?"
+    "pergunta": "Febre, dor lombar e cilindros leucocitários: o que levou a bactéria ao rim?"
   },
   "cta": "simulado",
   "reel": null,

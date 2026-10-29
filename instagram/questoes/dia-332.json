@@ -8,21 +8,22 @@
   "topico": "Evolução histológica do infarto",
   "conceito": "Myocardial infarction timeline: neutrophils at 1 to 3 days, macrophages at 3 to 7 days with the highest rupture risk",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Dia Mundial do Coração (29/9).",
   "remix_de": null,
   "explicacao_em": "2027-09-30",
   "tom": null,
   "gancho": "Dia 5 da reforma no coração: *qual turma está na obra?*",
-  "gancho_apoio": "Dia Mundial do Coração. Infarto sem reperfusão e uma complicação no meio da semana.",
+  "gancho_apoio": "Dia Mundial do Coração. O Seu Allen conferiu o cronograma da obra e achou a parede fina.",
   "imagem": {
     "arquivo": "dia-332.png",
-    "cena": "Uma casa em forma de coração em reforma, cercada por fita zebrada, com quatro equipes de células esperando no portão: uma com marretas, uma com caçamba de entulho, uma com colher de pedreiro e uma com rolos de pintura; um calendário de parede sem números.",
+    "cena": "Seu Allen segura um cronograma de obra em branco diante de uma casa em forma de coração em reforma, cercada por fita zebrada, com setinhas de manual de montagem apontando para a parede; quatro equipes de células esperam no portão: uma com marretas, uma com caçamba de entulho, uma com colher de pedreiro e uma com rolos de pintura.",
     "foco": "50% 35%",
     "alt": "Dia 5 da reforma no coração: qual turma está na obra?"
   },
   "imagem_macete": {
     "arquivo": "dia-332-macete.png",
-    "cena": "Callback: só a equipe da caçamba está trabalhando, células grandes e redondas levando entulho, e a parede da casa-coração ficou fina e com uma rachadura protegida por um cone vermelho.",
+    "cena": "Callback: só a equipe da caçamba está trabalhando, células grandes e redondas levando entulho, e a parede da casa-coração ficou fina, com uma rachadura protegida por um cone vermelho; o Seu Allen aponta com o lápis.",
     "foco": "50% 45%",
     "alt": "Dias 3 a 7: macrófagos limpam e a parede fica frágil"
   },
@@ -66,9 +67,9 @@
       "D": "Cicatriz densa de colágeno só se completa por volta de 2 meses e se associa a aneurisma ventricular."
     },
     "macete": {
-      "frase": "*Demolição, caçamba, reboco, pintura*",
-      "apoio": "Neutrófilo é a demolição (1 a 3 dias), macrófago é a caçamba que tira o entulho (3 a 7 dias, parede fina, cuidado), granulação é o reboco (1 a 2 semanas) e cicatriz é a parede pintada (2 meses). Rompe na hora da caçamba.",
-      "fala": null
+      "frase": "*Demolição, caçamba, reboco, pintura*: rompe no dia da caçamba",
+      "apoio": "Toda reforma tem o dia em que a parede fica fina e o pedreiro diz que é normal; no infarto, esse dia vai do 3 ao 7. Neutrófilo é a demolição (1 a 3 dias), macrófago é a caçamba que tira o entulho (3 a 7 dias, parede mais fraca, ruptura), granulação é o reboco (1 a 2 semanas) e cicatriz é a pintura (2 meses).",
+      "fala": "Sobrou peça? Sobrou entulho."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Infarto, dia 5, ruptura. O que domina?"
+    "pergunta": "Infarto sem reperfusão e ruptura no 5º dia: o que domina na parede?"
   },
   "cta": "simulado",
   "reel": null,

@@ -8,6 +8,7 @@
   "topico": "Remix da saúde mental: Transtorno de pânico (dia 46), Episódio depressivo maior (dia 74), Esquizofrenia e transtornos relacionados (dia 137)",
   "conceito": "Mental health remix: Panic disorder + Major depressive episode + Psychotic disorders by duration",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": "Dia Mundial da Saúde Mental (10/10): tom acolhedor.",
   "remix_de": [
     46,
@@ -17,22 +18,22 @@
   "explicacao_em": "2027-10-11",
   "tom": "acolhedor",
   "cvv": true,
-  "gancho": "Três discos sobre saúde mental. *Hoje a conversa é com calma.*",
-  "gancho_apoio": "Dia Mundial da Saúde Mental. Remix de pânico, depressão e psicose.",
+  "gancho": "Dia Mundial da Saúde Mental: *hoje a revisão é com calma*",
+  "gancho_apoio": "Revisão de domingo com os dias 46, 74 e 137, num só caso.",
   "imagem": {
     "arquivo": "dia-343.png",
-    "cena": "Toca-discos sereno com três discos lado a lado, cada um com um ícone suave (um coração com ondas leves, uma pequena nuvem de chuva, uma ampulheta) e um quarto disco de outra cor; luz quente e plantas ao redor.",
+    "cena": "Sala iluminada pelo sol, com plantas; a Dona Bússola, serena, ao lado de três almofadas, cada uma com um ícone suave: um coração com ondas leves, uma pequena nuvem de chuva e uma ampulheta; num canto, um vinil pequeno encostado. Tom acolhedor.",
     "foco": "50% 35%",
-    "alt": "Três discos sobre saúde mental. Hoje a conversa é com calma."
+    "alt": "Dia Mundial da Saúde Mental: hoje a revisão é com calma"
   },
   "imagem_macete": {
     "arquivo": "dia-343-macete.png",
-    "cena": "Callback: o disco do coração com ondas toca, e um alarme de incêndio na parede é ajustado com uma pequena chave de fenda, enquanto uma trilha de pegadas atravessa um túnel iluminado sem pressa.",
+    "cena": "Callback: um alarme de incêndio na parede é ajustado com uma pequena chave de fenda; a nuvenzinha de chuva começa a se abrir num pedaço de céu; uma trilha de pegadas atravessa sem pressa um túnel iluminado, e o ponteiro da Dona Bússola fica firme.",
     "foco": "50% 45%",
-    "alt": "Transtorno de pânico: SSRI com CBT a longo prazo"
+    "alt": "Pânico com depressão: ISRS e TCC tratam os dois"
   },
   "questao": {
-    "vinheta": "A 29-year-old woman has recurrent sudden episodes of palpitations, sweating, chest tightness, and fear of dying that peak within 10 minutes. For 3 months, she has avoided the subway for fear of another episode. ECG, TSH, and glucose are normal, and she uses no substances.",
+    "vinheta": "A 29-year-old woman has recurrent sudden episodes of palpitations, sweating, and fear of dying that peak within 10 minutes. For 3 months she has avoided the subway. For 4 weeks she has also had low mood, loss of interest, and poor sleep, without suicidal ideation. ECG and TSH are normal.",
     "pergunta": "Which is the most appropriate long-term treatment?",
     "alternativas": {
       "A": {
@@ -58,29 +59,29 @@
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Transtorno de pânico: *SSRI* com *CBT* a longo prazo",
+    "titulo": "Pânico com depressão: *ISRS e TCC* tratam os dois",
     "certa": [
-      "Crises inesperadas e recorrentes que atingem o pico em minutos, com medo de novas crises e evitação por mais de 1 mês, depois de afastar causas clínicas, definem *panic disorder*. O tratamento de manutenção é um *SSRI* (como a sertralina) associado a *cognitive behavioral therapy*. Benzodiazepínico só como ponte curta no início."
+      "Crises que atingem o pico em minutos, com medo de morrer e evitação, são *panic disorder* (dia 46); o humor deprimido, a perda de interesse e a insônia há 4 semanas somam um *major depressive episode* (dia 74). Um *SSRI* como a sertralina trata as duas condições, e a *cognitive behavioral therapy* reduz as crises e a evitação. Começar com dose baixa e subir devagar, porque o início pode aumentar a ansiedade."
     ],
     "termos": [
       "panic disorder",
+      "major depressive episode",
       "SSRI",
-      "cognitive behavioral therapy",
-      "benzodiazepine"
+      "cognitive behavioral therapy"
     ],
     "erradas": {
-      "B": "Benzodiazepínico alivia rápido, mas uso diário prolongado traz tolerância, dependência e rebote; serve só como ponte curta (dia 46).",
-      "C": "Risperidona trata psicose (dia 137), e ela não tem delírio, alucinação nem desorganização.",
-      "D": "Bupropiona é antidepressivo para episódio depressivo (dia 74), sem eficácia no pânico, e pode aumentar a ansiedade."
+      "B": "O *alprazolam diário* sozinho alivia por pouco tempo, causa dependência e não trata a depressão.",
+      "C": "A *risperidona* (dia 137) é para psicose; não há delírios nem alucinações.",
+      "D": "A *bupropiona* (dia 74) trata depressão, mas não trata pânico e pode piorar a ansiedade."
     },
     "macete": {
-      "frase": "*Alarme que toca sem fogo*",
-      "apoio": "No pânico, o alarme de incêndio dispara sem incêndio. O ISRS recalibra o alarme aos poucos, e a TCC ensina que dá para atravessar o som sem fugir. O benzodiazepínico só abaixa o volume por alguns dias.",
-      "fala": null
+      "frase": "*Alarme que toca sem fogo*: o ISRS recalibra e a TCC ensina a atravessar",
+      "apoio": "No pânico (dia 46), o alarme dispara sem incêndio. Com humor deprimido junto (dia 74), o ISRS trata as duas coisas, e a TCC ensina que dá para atravessar o som sem fugir. O benzodiazepínico só abaixa o volume por alguns dias, a bupropiona não trata pânico e o antipsicótico (dia 137) fica para a psicose.",
+      "fala": "Com calma, o norte aparece."
     }
   },
   "legenda": {
-    "contexto": "Dia Mundial da Saúde Mental. Remix com transtorno de pânico (dia 46), episódio depressivo maior (dia 74) e transtornos psicóticos por duração (dia 137), mais um distrator. Crises de minutos, medo de novas crises e exames normais. Qual tratamento?",
+    "contexto": "Revisão de domingo com os dias 46, 74 e 137. Mulher de 29 anos com crises súbitas de palpitação e medo, evitação do metrô e, há 4 semanas, humor baixo e perda de interesse, sem ideação suicida. Qual é o tratamento de longo prazo?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -99,7 +100,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pânico com evitação. Longo prazo:"
+    "pergunta": "Pânico, evita o metrô e 4 semanas de humor baixo: qual tratamento?"
   },
   "cta": "pre_inscricao",
   "reel": null,

@@ -8,21 +8,22 @@
   "topico": "Transtorno por uso de álcool",
   "conceito": "Alcohol use disorder: naltrexone (avoid with opioids), acamprosate (avoid in renal failure)",
   "personagem": null,
+  "anfitriao": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-18",
   "tom": null,
-  "gancho": "No balcão, um analgésico já ocupa a fechadura. *Qual chave sobra?*",
-  "gancho_apoio": "No Sextou na Farmácia, a escolha depende do que o paciente já usa.",
+  "gancho": "A vaga de garagem *já está ocupada pelo analgésico*: qual remédio cabe?",
+  "gancho_apoio": "No Sextou na Farmácia, a escolha depende do que já está estacionado no receptor.",
   "imagem": {
     "arquivo": "dia-320.png",
-    "cena": "Balcão de farmácia de interior com uma ampulheta discreta num canto; sobre o balcão, uma fechadura em forma de flor de papoula já com uma chave encaixada; ao lado, duas caixinhas de remédio: uma com uma chave e outra com um pequeno ralo em forma de feijão embaixo.",
+    "cena": "Tia Meia-Vida atrás do balcão olha uma maquete de garagem de prédio: uma vaga em forma de flor de papoula já tem um carrinho estacionado; na fila, duas caixinhas de remédio esperam, uma em forma de carrinho e outra com um pequeno ralo em forma de feijão embaixo.",
     "foco": "50% 35%",
-    "alt": "No balcão, um analgésico já ocupa a fechadura. Qual chave sobra?"
+    "alt": "A vaga de garagem já está ocupada pelo analgésico: qual remédio cabe?"
   },
   "imagem_macete": {
     "arquivo": "dia-320-macete.png",
-    "cena": "Callback: a chave da primeira caixa bate na fechadura de papoula ocupada e recebe um sinal vermelho de pare; a segunda caixa escorre tranquila pelo ralo em forma de feijão e ganha um sinal verde de siga.",
+    "cena": "Callback: a caixinha em forma de carrinho bate na vaga ocupada e recebe uma placa vermelha de pare; a outra caixinha escorre tranquila pelo ralo em forma de feijão e ganha uma placa verde de siga; a Tia Meia-Vida aponta com a caneta.",
     "foco": "50% 45%",
     "alt": "Álcool com opioide em uso: acamprosato"
   },
@@ -66,9 +67,9 @@
       "D": "*Clordiazepóxido* trata a síndrome de abstinência, que já passou, e não ajuda a manter a abstinência."
     },
     "macete": {
-      "frase": "*Naltrexona nega o opioide; acamprosato acalma o glutamato e sai pelo rim*",
-      "apoio": "Na imagem, a fechadura do opioide já está ocupada pela chave do analgésico, então a chave da naltrexona não entra. A outra caixa passa tranquila pelo ralo em forma de feijão, porque o rim funciona.",
-      "fala": null
+      "frase": "*Usa opioide? Naltrexona não estaciona*: o acamprosato vai pelo rim",
+      "apoio": "A naltrexona é antagonista opioide e precipita abstinência em quem usa oxicodona: é a vaga já ocupada. O acamprosato modula o glutamato, não mexe no receptor opioide e sai pelo rim, por isso pede creatinina normal. Dissulfiram depende de adesão e supervisão; clordiazepóxido é da desintoxicação, que já acabou.",
+      "fala": "Vaga ocupada, a naltrexona não estaciona."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Álcool e oxicodona: qual remédio?"
+    "pergunta": "Quer manter a abstinência do álcool e usa oxicodona todo dia: qual remédio?"
   },
   "cta": null,
   "reel": null,

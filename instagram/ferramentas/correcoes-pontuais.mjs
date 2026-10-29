@@ -67,11 +67,7 @@ const troca = (d, caminho, de, para) => {
   troca(d, 'imagem.alt', null, 'Prótese de quadril, panturrilha inchada e um caminhão atravessado no túnel');
 }
 troca(dia(32), 'legenda.contexto', 'e só um espeto salva o membro.', 'e só um espeto é a conduta certa.');
-{
-  const d = dia(144);
-  troca(d, 'gancho', null, 'O *segurança* da balada vai se aposentar. Quem cobre o turno dele?');
-  troca(d, 'legenda.contexto', null, 'Rodízio de quinta, estação cirurgia. Uma cirurgia eletiva com data marcada e uma pergunta: o que precisa estar planejado antes do dia?');
-}
+// dia 144: gancho e contexto agora vivem só em instagram/dias (rodada de humor dos dias 123 a 183, 29/10/2026)
 troca(dia(197), 'imagem.alt', null, 'A Capitã Plaqueta, espantada, diante de uma fila de plaquetinhas do tamanho de botões');
 {
   const d = dia(204);
@@ -104,13 +100,8 @@ troca(dia(197), 'imagem.alt', null, 'A Capitã Plaqueta, espantada, diante de um
   troca(d, 'imagem_questao.prompt_nano_banana_pro', 'a small pink rod-shaped bacterium in a tiny graduation cap peeks from behind him', 'a tiny mystery microbe, completely hidden under a small graduation cap and gown, peeks from behind him');
 }
 troca(dia(20), 'legenda.contexto', 'Um tema delicado, que pede respeito e conhecimento da regra.', 'Um tema delicado, e a prova cobra a regra com precisão.');
-{
-  // o aspirador nasal ficava num prato à parte, diferente dos espetos (destacava a resposta)
-  const d = dia(123);
-  troca(d, 'imagem.cena', null, 'Garçom de churrascaria rodízio oferece quatro espetos a uma mesa vazia: um de copinhos de nebulização, um de comprimidos, um de cápsulas e um com um aspirador nasal de pera e uma mamadeira. Ele segura a plaquinha verde e vermelha virada de lado.');
-  troca(d, 'imagem.alt', null, 'Garçom de rodízio oferecendo quatro espetos: nebulização, comprimidos, cápsulas e aspirador nasal com mamadeira.');
-  troca(d, 'imagem_questao.prompt_nano_banana_pro', 'one with capsules, and next to them a simple white plate holding a small rubber bulb nasal aspirator and a baby bottle;', 'one with capsules, and one holding a small rubber bulb nasal aspirator next to a baby bottle;');
-}
+// dia 123: a cena dos quatro espetos (sem prato à parte para o aspirador) foi reescrita direto em instagram/dias
+// na rodada de humor dos dias 123 a 183 (29/10/2026); não há mais troca a fazer aqui.
 // texto alternativo que repetia o tópico do calendário (no remix, a lista dos conceitos)
 for (const d of BS.flatMap((b) => b.dias)) {
   const alt = (d.imagem.alt || '').trim();

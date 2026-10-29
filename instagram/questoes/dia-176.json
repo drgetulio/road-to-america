@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-27",
   "tom": null,
   "gancho": "Macrô e a *regra do 8*: quem serve qual prato?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Um vírus dentro da célula, peptídeos cortados no citosol e dois pratos possíveis.",
   "imagem": {
     "arquivo": "dia-176.png",
-    "cena": "Macrô no balcão do boteco com o crachá de duas listras, ao lado de uma célula vizinha com crachá de uma listra. Na fila, um polvo e um trevo de quatro folhas esperam ser servidos, e dois pratos vazios aguardam no balcão.",
+    "cena": "Num food truck colorido, o Macrô, com a comanda em branco no bolso, atende ao lado de uma célula vizinha com crachá de uma listra. Na fila, um polvo navy e um trevo de quatro folhas esperam ser servidos, e dois pratos vazios aguardam no balcão.",
     "foco": "50% 35%",
-    "alt": "Macrô no balcão do boteco com o crachá de duas listras, ao lado de uma célula vizinha com crachá de uma listra."
+    "alt": "Macrô num food truck ao lado de uma célula vizinha; na fila, um polvo e um trevo de quatro folhas."
   },
   "imagem_macete": {
     "arquivo": "dia-176-macete.png",
-    "cena": "A célula de uma listra serve ao polvo de 8 braços, num prato de uma listra, uma marmita caseira fumegante (comida do citosol); o Macrô, de duas listras, serve ao trevo de 4 folhas, num prato de duas listras, um pedaço do lanche de rua que ele comeu.",
-    "alt": "Comida de casa vai no prato 1, para o CD8"
+    "cena": "A célula de uma listra serve ao polvo de 8 braços, num prato de uma listra, uma marmita caseira fumegante (comida do citosol); o Macrô serve ao trevo de 4 folhas, num prato de duas listras, um pedaço do lanche de rua que ele comeu.",
+    "alt": "A célula serve marmita caseira no prato 1 ao polvo; Macrô serve lanche de rua no prato 2 ao trevo."
   },
   "questao": {
     "vinheta": "Cultured human epithelial cells are infected with influenza virus. Viral proteins made in the cytosol are degraded by the proteasome, and the resulting peptides are transported into the endoplasmic reticulum by TAP.",
@@ -66,13 +66,13 @@
       "D": "O CD8 se encaixa no MHC I; MHC II com CD8 é combinação que não existe."
     },
     "macete": {
-      "frase": "Regra do 8: *1 x 8* e *2 x 4*. Comida *de casa*, feita na cozinha da célula (citosol), vai no prato 1 para o polvo de *8* braços (CD8). Comida *de rua*, que o Macrô comeu, vai no prato 2 para o trevo de *4* folhas (CD4).",
-      "apoio": "O NBME cobra as peças de cada via (proteassoma e TAP no MHC I, cadeia invariante e CLIP no MHC II) e as deficiências: falta de TAP derruba o MHC I, e a síndrome do linfócito nu derruba o MHC II.",
-      "fala": null
+      "frase": "Regra do 8: *1 x 8* e *2 x 4*. Comida *de casa* vai no prato 1 para o polvo de 8 braços",
+      "apoio": "Comida de rua, que o Macrô comeu, vai no prato 2 para o trevo de 4 folhas. Falta de TAP derruba o MHC I; linfócito nu derruba o MHC II.",
+      "fala": "Comi, mostrei, avisei. Comida de rua eu mostro no prato 2 para o 4; comida de casa a célula mostra no 1 para o 8."
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda com o Macrô e o crachá que ele usa desde o primeiro dia. Um vírus dentro da célula, peptídeos cortados no citosol e dois pratos possíveis. Para quem vai esse prato?",
+    "contexto": "Bicho de Segunda com o Macrô num food truck. Células infectadas por influenza fazem proteína viral no citosol, o proteassoma corta e o TAP leva os pedaços para o retículo. Para quem vai esse prato?",
     "palavras_chave": [
       "influenza virus",
       "cytosolic proteins",
@@ -81,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Peptídeo viral do citosol vai para:"
+    "pergunta": "Peptídeo de vírus feito no citosol vai em qual MHC e para qual célula T?"
   },
   "cta": "simulado",
   "exemplo": false

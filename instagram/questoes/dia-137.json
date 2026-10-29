@@ -8,23 +8,24 @@
   "topico": "Esquizofrenia e transtornos relacionados",
   "conceito": "Psychotic disorders by duration: brief under 1 month, schizophreniform 1 to 6 months, schizophrenia 6 months or more",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-19",
   "tom": null,
-  "gancho": "Na psiquiatria, o *calendário* também dá o diagnóstico",
-  "gancho_apoio": "Mesmos sintomas, durações diferentes. O garçom traz três blocos de calendário.",
+  "gancho": "Mesma vinheta, só muda a *data*: o NBME adora esse truque",
+  "gancho_apoio": "O Garçom Espetinho trouxe três blocos de calendário, e nenhum tem a mesma espessura.",
   "imagem": {
     "arquivo": "dia-137.png",
-    "cena": "Um garçom de rodízio traz um espeto com três blocos de calendário sem números, de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. Ele segura a plaquinha verde e vermelha de lado.",
+    "cena": "Garçom Espetinho, numa papelaria de bairro, segura três blocos de calendário sem números de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. A plaquinha verde e vermelha do rodízio está pendurada de lado no balcão.",
     "foco": "50% 35%",
-    "alt": "Garçom de rodízio com um espeto de três blocos de calendário de espessuras diferentes."
+    "alt": "Garçom Espetinho numa papelaria com três blocos de calendário: folha solta, bloco médio e bloco grosso."
   },
   "imagem_macete": {
     "arquivo": "dia-137-macete.png",
-    "cena": "Callback: o bloco médio ganha a plaquinha verde. A folha solta recebe uma faixa amarela, o bloco grosso uma faixa navy, formando uma régua de tempo da esquerda para a direita.",
+    "cena": "Os três blocos ficam em fila no balcão, do mais fino ao mais grosso, como uma régua de tempo. O bloco médio recebe o lado verde da plaquinha; a folha solta ganha uma fita amarela e o bloco grosso, uma fita navy.",
     "foco": "50% 40%",
-    "alt": "Os três blocos em fila como uma régua de tempo; o bloco médio recebe a plaquinha verde."
+    "alt": "Os três blocos em fila como régua de tempo; o bloco médio recebe a plaquinha verde."
   },
   "questao": {
     "vinheta": "A 23-year-old man has heard voices commenting on his actions and has believed that his neighbors are monitoring him for the past 3 months. He has stopped attending classes. He has no history of substance use, medical illness or prominent mood episodes.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Régua da psicose: *menos de 1 mês* breve, *1 a 6* esquizofreniforme, *6 ou mais* esquizofrenia",
-      "apoio": "Na imagem, cada bloco de calendário tem uma espessura: folha solta, bloco médio e bloco grosso.",
-      "fala": null
+      "apoio": "Conte os meses desde os primeiros sinais, incluindo pródromo, e confira se há episódio de humor.",
+      "fala": "Folha solta, bloco médio, bloco grosso. Hoje sai o do meio, doutor."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta, estação psiquiatria. Nesse grupo de diagnósticos, quem decide é a duração dos sintomas.",
+    "contexto": "Rodízio de Quinta, estação psiquiatria. Nesse grupo de diagnósticos, o que separa um do outro é a duração dos sintomas, e a prova muda só esse número.",
     "palavras_chave": [
       "auditory hallucinations",
       "persecutory delusions",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Psicose há 3 meses: qual o diagnóstico?"
+    "pergunta": "Vozes e delírio há 3 meses, sem droga nem episódio de humor: qual o diagnóstico?"
   },
   "cta": null,
   "reel": null,

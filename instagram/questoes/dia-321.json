@@ -8,21 +8,22 @@
   "topico": "Menor emancipado",
   "conceito": "Emancipated minor: married, in the military or self-supporting adolescents consent for themselves",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-19",
   "tom": null,
-  "gancho": "Dezessete anos, aliança no dedo e marmita na bolsa: *quem assina?*",
-  "gancho_apoio": "No Sábado Sem Viés, a idade não é a única coisa que conta.",
+  "gancho": "Dezessete anos, aliança e *boleto no próprio nome*: quem assina?",
+  "gancho_apoio": "No Sábado Sem Viés, a idade não é a única coisa que a Dona Bússola confere.",
   "imagem": {
     "arquivo": "dia-321.png",
-    "cena": "Uma balança de tribunal desenhada como placa de trânsito; em cima de uma mesa, um chaveiro com uma aliança, um crachá em branco e uma marmita; uma caneta paira sobre um formulário em branco. Ao fundo, uma casinha num morro distante, do outro lado de uma estrada comprida.",
+    "cena": "Mesa de cozinha com a Dona Bússola ao lado de um chaveiro com aliança, um crachá em branco, uma marmita e uma pilha de boletos em branco; uma caneta paira sobre um formulário; ao fundo, uma casinha num morro distante, do outro lado de uma estrada comprida; na geladeira, um ímã com uma tabela 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Dezessete anos, aliança no dedo e marmita na bolsa: quem assina?"
+    "alt": "Dezessete anos, aliança e boleto no próprio nome: quem assina?"
   },
   "imagem_macete": {
     "arquivo": "dia-321-macete.png",
-    "cena": "Callback: a caneta pousa ao lado do chaveiro com a aliança, do crachá e da marmita, e a balança fica equilibrada do lado deles; a casinha distante continua no morro, com a estrada vazia.",
+    "cena": "Callback: o ponteiro da Dona Bússola aponta para o chaveiro com a aliança, o crachá, a marmita e os boletos, e a caneta pousa ao lado deles; a casinha distante continua no morro, com a estrada vazia.",
     "foco": "50% 45%",
     "alt": "Menor emancipado decide como adulto"
   },
@@ -66,9 +67,9 @@
       "D": "Tutor nomeado pelo juiz só entra quando o paciente não tem capacidade e não há substituto legal."
     },
     "macete": {
-      "frase": "*Casou, fardou ou se sustenta: assinou* (married, military, self-supporting)",
-      "apoio": "Na imagem, a caneta pula para o chaveiro com a aliança, o crachá e a marmita, que juntos são a independência. A casinha dos pais, lá longe na estrada, fica fora da balança.",
-      "fala": null
+      "frase": "*Casou, fardou ou paga os próprios boletos: assina sozinha*",
+      "apoio": "Menor emancipado decide pelo próprio tratamento: casamento, serviço militar ou sustento próprio morando fora da casa dos pais (married, military, self-supporting). Os pais não assinam, o marido também não, e tutor judicial só entra quando não há quem decida. Quem paga os próprios boletos assina o próprio consentimento.",
+      "fala": "Meu norte é a paciente."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Casada aos 17, cirurgia eletiva: quem?"
+    "pergunta": "Casada aos 17, mora com o marido e trabalha: quem assina a cirurgia?"
   },
   "cta": null,
   "reel": null,

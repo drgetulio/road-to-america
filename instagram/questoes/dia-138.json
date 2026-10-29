@@ -13,16 +13,16 @@
   "explicacao_em": "2027-03-20",
   "tom": null,
   "gancho": "Match Day: o receptor deu match, mas tinha *alguém* na cadeira",
-  "gancho_apoio": "No baile da farmácia da Tia Meia-Vida, mais convidados resolvem o problema?",
+  "gancho_apoio": "No baile da Tia Meia-Vida, mais convidados resolvem o problema?",
   "imagem": {
     "arquivo": "dia-138.png",
-    "cena": "Na farmácia da Tia Meia-Vida, um baile: chavinhas amarelas (agonistas) querem sentar nas cadeiras dos receptores, mas um sósia de roupa igual já está sentado numa delas. A Tia observa do balcão.",
+    "cena": "Num salão de baile de interior com bandeirinhas, chavinhas amarelas (agonistas) querem sentar nas cadeiras dos receptores, mas um sósia de roupa igual já está sentado numa delas. A Tia Meia-Vida observa da mesa do bolo.",
     "foco": "50% 35%",
-    "alt": "Baile na farmácia: chavinhas amarelas querem sentar nas cadeiras; um sósia cinza já ocupa uma delas."
+    "alt": "Baile com chavinhas amarelas querendo sentar nas cadeiras; um sósia cinza ocupa uma delas; a Tia observa."
   },
   "imagem_macete": {
     "arquivo": "dia-138-macete.png",
-    "cena": "Callback: à esquerda, uma multidão de chavinhas amarelas empurra o sósia cinza para fora da cadeira (competitivo, superável). À direita, outra cadeira está com a perna quebrada e ninguém consegue sentar (não competitivo).",
+    "cena": "À esquerda, uma multidão de chavinhas amarelas tira o sósia cinza da cadeira (competitivo, superável). À direita, outra cadeira está com a perna quebrada e ninguém consegue sentar (não competitivo).",
     "foco": "50% 40%",
     "alt": "À esquerda, muitas chaves amarelas tiram o rival da cadeira; à direita, a cadeira quebrada não aceita ninguém."
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Competitivo *disputa a cadeira*; não competitivo *quebra a cadeira*",
-      "apoio": "Na imagem, uma multidão de agonistas tira o rival da cadeira; na outra, a cadeira quebrada não tem conserto.",
-      "fala": null
+      "apoio": "Direita com o mesmo teto é competitivo (menos potência, mesma eficácia); teto mais baixo é não competitivo ou irreversível.",
+      "fala": "Se a briga é pela cadeira, chama mais convidado. Se a cadeira quebrou, nem o baile inteiro resolve."
     }
   },
   "legenda": {
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Curva à direita, mesmo Emax: que droga é?"
+    "pergunta": "Curva vai à direita, efeito máximo igual e mais agonista vence: que droga é?"
   },
   "cta": null,
   "reel": null,

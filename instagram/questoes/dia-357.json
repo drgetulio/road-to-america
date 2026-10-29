@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Síndrome de hiper-IgM (dia 302), Giardíase (dia 330), Febre puerperal (dia 351)",
   "conceito": "Remix: Hyper-IgM syndrome + Giardia lamblia + Streptococcus pyogenes puerperal sepsis",
   "personagem": null,
+  "anfitriao": "Macrô",
   "gancho_data": null,
   "remix_de": [
     302,
@@ -16,70 +17,67 @@
   ],
   "explicacao_em": "2027-10-25",
   "tom": null,
-  "gancho": "O DJ que *não troca a música*: quem é ele?",
-  "gancho_apoio": "Remix com hiper-IgM, giardíase e febre puerperal. Um disco é intruso.",
+  "gancho": "A festa só toca IgM: *quem esqueceu de trocar a música?*",
+  "gancho_apoio": "Revisão de domingo com os dias 302, 330 e 351. Um parasita da cachoeira voltou, agora num lugar diferente.",
   "imagem": {
     "arquivo": "dia-357.png",
-    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (um plugue e uma tomada, uma pera com dois olhinhos, uma barra de sabão) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "cena": "Salão de festa em que a pista está cheia só de estrelas grandes de cinco pontas, todas iguais, dançando; no palco, um DJ de capuz, de costas para a pista, mexe no equipamento; o Macrô, de comanda em branco no bolso, olha a pista desconfiado; perto da mesa de salgadinhos, uma pera de dois olhinhos se esconde; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "O DJ que não troca a música: quem é ele?"
+    "alt": "A festa só toca IgM: quem esqueceu de trocar a música?"
   },
   "imagem_macete": {
     "arquivo": "dia-357-macete.png",
-    "cena": "Callback: o disco do plugue gira, mas o plugue está sem os pinos e não encaixa na tomada; a pista de dança só tem grandes estrelas de cinco pontas repetidas, todas iguais, e o Macrô aponta para o plugue quebrado.",
+    "cena": "Callback: o DJ se vira e é um linfócito T de mãos vazias; no chão do palco, um pen drive quebrado, sem o conector; a tomada do linfócito B continua vazia; o Macrô aponta para o pen drive enquanto as estrelas de cinco pontas seguem dançando a mesma música.",
     "foco": "50% 45%",
-    "alt": "Hiper-IgM: sem CD40L, o linfócito B não faz class switching"
+    "alt": "Hiper-IgM: sem CD40L, não há troca de classe"
   },
   "questao": {
-    "vinheta": "A 2-year-old boy has had recurrent otitis media and sinusitis since age 8 months and is now hospitalized with Pneumocystis jirovecii pneumonia. Serum IgM is elevated, while IgG, IgA, and IgE are very low. The peripheral B-cell count is normal.",
-    "pergunta": "Which mechanism best explains his condition?",
+    "vinheta": "A 2-year-old boy has had recurrent otitis media since age 8 months and 3 months of greasy, foul-smelling diarrhea; stool microscopy shows Giardia trophozoites. He is now hospitalized with Pneumocystis jirovecii pneumonia. Serum IgM is elevated, while IgG, IgA, and IgE are very low. His B-cell count is normal.",
+    "pergunta": "Which defect best explains his condition?",
     "alternativas": {
       "A": {
-        "texto": "Defective CD40 ligand blocking class switching",
-        "quiz": "CD40L defeituoso",
-        "dia": 302
+        "texto": "Defective CD40 ligand on T cells",
+        "quiz": "CD40L defeituoso"
       },
       "B": {
-        "texto": "Trophozoites adhering to the duodenal brush border",
-        "quiz": "Giardia aderida",
-        "dia": 330
+        "texto": "Absent Bruton tyrosine kinase in B cells",
+        "quiz": "Falta de BTK"
       },
       "C": {
-        "texto": "Streptococcal M protein blocking opsonization",
-        "quiz": "Proteína M",
-        "dia": 351
+        "texto": "Absent adenosine deaminase",
+        "quiz": "Falta de ADA"
       },
       "D": {
-        "texto": "Absent Bruton tyrosine kinase arresting B-cell maturation",
-        "quiz": "Falta de BTK"
+        "texto": "Defective NADPH oxidase in phagocytes",
+        "quiz": "NADPH oxidase"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Hiper-IgM: sem *CD40L*, o linfócito B não faz *class switching*",
+    "titulo": "Hiper-IgM: *sem CD40L, não há troca de classe*",
     "certa": [
-      "IgM alta com IgG, IgA e IgE baixas, infecções sinopulmonares e *Pneumocystis* num menino é a *hyper-IgM syndrome* ligada ao X. O linfócito T ativado não expressa o *CD40 ligand*, então o B não recebe o segundo sinal para a *class switching* e fica preso na IgM. O defeito também prejudica a ativação de macrófagos pelo T, por isso aparecem oportunistas."
+      "IgM alta com IgG, IgA e IgE muito baixas, células B normais, pneumonia por *Pneumocystis* e giardíase crônica (dia 330) fecham *X-linked hyper-IgM syndrome* (dia 302). Sem o *CD40 ligand* do linfócito T, o CD40 do B não recebe o sinal e o *class switching* não acontece. O CD40L também ativa o macrófago, por isso aparecem oportunistas como Pneumocystis; a falta de IgA na mucosa deixa a Giardia se instalar."
     ],
     "termos": [
-      "hyper-IgM syndrome",
+      "X-linked hyper-IgM syndrome",
       "CD40 ligand",
       "class switching",
       "Pneumocystis jirovecii"
     ],
     "erradas": {
-      "B": "A Giardia (dia 330) adere à borda em escova e causa diarreia gordurosa; ela complica deficiências de anticorpo, mas não explica o defeito imune.",
-      "C": "A proteína M é o escudo do S. pyogenes (dia 351) contra a opsonização, um fator do micróbio e não um defeito do paciente.",
-      "D": "Falta de BTK é a agamaglobulinemia de Bruton, com todas as imunoglobulinas baixas e quase nenhum linfócito B."
+      "B": "Sem *BTK* (agamaglobulinemia de Bruton), faltam as células B e todas as imunoglobulinas, inclusive a IgM.",
+      "C": "Sem *ADA* (SCID), faltam T e B, com infecções graves desde as primeiras semanas e linfopenia.",
+      "D": "Defeito da *NADPH oxidase* (doença granulomatosa crônica) dá abscessos por catalase-positivos, com imunoglobulinas normais."
     },
     "macete": {
-      "frase": "*Hiper-IgM é o DJ sem o plugue*: a festa toca só IgM",
-      "apoio": "O CD40L é o plugue do linfócito T que encaixa na tomada CD40 do B e manda trocar a faixa. Sem plugue, a festa toca IgM a noite inteira. No toca-discos, é o disco da tomada que explica o quadro.",
-      "fala": null
+      "frase": "*Hiper-IgM é o DJ sem pen drive*: sem CD40L, a festa só toca IgM",
+      "apoio": "O linfócito T entrega o pen drive (CD40L) ao CD40 do B para trocar a faixa de IgM para IgG, IgA e IgE (dia 302). Sem ele, IgM alta, o resto no chão e oportunistas como Pneumocystis e Cryptosporidium, além de Giardia de repetição (dia 330), que aproveita a falta de IgA no intestino. Bônus do dia 351: o S. pyogenes da febre puerperal é sensível à bacitracina.",
+      "fala": "Comi, mostrei, avisei. Mas ninguém trocou a música."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com hiper-IgM (dia 302), giardíase (dia 330) e febre puerperal (dia 351), mais um intruso. Menino de 2 anos com otites, sinusites e pneumonia por Pneumocystis. IgM alta e o resto lá embaixo. Qual disco explica?",
+    "contexto": "Revisão de domingo com os dias 302, 330 e 351. Menino de 2 anos com otites de repetição, diarreia gordurosa por Giardia e pneumonia por Pneumocystis, IgM alta, IgG, IgA e IgE muito baixas e células B normais. Qual mecanismo explica?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -98,7 +96,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IgM alta, IgG baixa e Pneumocystis:"
+    "pergunta": "IgM alta, IgG baixa, Giardia e Pneumocystis aos 2 anos: qual mecanismo?"
   },
   "cta": "pre_inscricao",
   "reel": null,

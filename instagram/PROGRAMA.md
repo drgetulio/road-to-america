@@ -68,19 +68,23 @@ Regras dos personagens: nenhum deles adoece, sofre ou faz piada com paciente. El
 
 ### Anfitriões dos quadros
 
-Três quadros não têm órgão nem célula que combine com todo tema (o plantão de clínica, a quarta de anatomia e neuro, o rodízio de especialidades). Para esses dias entra um anfitrião fixo do quadro, com desenho e bordão próprios. Ele não ocupa o campo `personagem` do calendário (que continua com os seis acima); vai no campo `anfitriao` do dia e no prompt, sempre com a mesma descrição, depois de "Recurring character: Nome,". Quando o tema pede um dos seis (o Seu Néfron numa hipercalemia, a Capitã Plaqueta numa PTT), o personagem fixo ganha o dia e o anfitrião fica de fora ou aparece pequeno, de figurante.
+Quatro quadros não têm órgão nem célula que combine com todo tema (o plantão de clínica, a quarta de anatomia e neuro, o rodízio de especialidades e o sábado de ética). Para esses dias entra um anfitrião fixo do quadro, com desenho e bordão próprios. Ele não ocupa o campo `personagem` do calendário (que continua com os seis acima); vai no campo `anfitriao` do dia e no prompt, sempre com a mesma descrição, depois de "Recurring character: Nome,". Quando o tema pede um dos seis (o Seu Néfron numa hipercalemia, a Capitã Plaqueta numa PTT), o personagem fixo ganha o dia e o anfitrião fica de fora ou aparece pequeno, de figurante.
 
 | Anfitrião | Quadro | Quem é | Descrição visual fixa | Bordão |
 |---|---|---|---|---|
 | **Dona Térmica** | Plantão de Terça | A garrafa térmica de café do plantão. Já viu de tudo às 3 da manhã, cochila em pé e acorda certa. É a autoironia de quem estuda para o Step depois de 12 horas de plantão | Garrafa térmica vermelha de pressão, tampa navy, olhos de sono mas espertos, estetoscópio no pescoço, prancheta em branco | "Já vi esse caso às 3 da manhã." |
 | **Seu Allen** | Quarta do Porquê | A chave Allen que vem na caixa do móvel. Desmonta qualquer mecanismo e sempre acha a peça que sobrou | Chavinha Allen prateada em forma de L, olhos grandes e redondos, avental navy de marceneiro, lápis vermelho atrás da "orelha" | "Sobrou peça? Então faltou mecanismo." |
 | **Garçom Espetinho** | Rodízio de Quinta | O garçom do rodízio, que passa servindo condutas no espeto (o mascote que já existia, agora com nome e bordão) | Mascote de cabeça redonda, camisa branca, colete vermelho e gravata-borboleta navy, nunca uma pessoa real | "Vai uma conduta aí, doutor?" |
+| **Dona Bússola** | Sábado Sem Viés (ética e comunicação) | A bússola de bolso do consultório. Nas questões de ética, o ponteiro gira com a pressão da família, do convite da indústria ou do medo de processo, e sempre volta para o mesmo lugar: o paciente. Divide a cena com o Viés quando o tema é um viés de conduta (conflito de interesses, erro escondido) | Bússola de bolso redonda, caixa amarela com aro navy, ponteiro vermelho no mostrador claro, olhos grandes e simpáticos, lencinho verde no pescoço e um caderninho em branco | "Meu norte é o paciente." |
 
 Descrição fixa em inglês:
 
 - Dona Térmica: *a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard*
 - Seu Allen: *a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be*
 - Garçom Espetinho: *a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie*
+- Dona Bússola: *a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook*
+
+Quando o calendário não traz personagem e um dos seis combina com o tema (a Tia Meia-Vida numa sexta de farmacoterapia do Step 2, o Macrô num remix de micro, o Viés num conflito de interesses), ele entra pelo campo `anfitriao`, com a mesma descrição fixa. O slide do macete usa `personagem` ou, na falta dele, `anfitriao`, e o campo `explicacao.macete.fala` troca o bordão por uma fala do dia quando a piada pede.
 
 **Assinatura pequena, cena variada.** Cada quadro guarda só um detalhe de assinatura no canto da cena, e a cena-base muda toda semana (nenhuma se repete no mesmo mês):
 

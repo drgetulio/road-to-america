@@ -12,18 +12,18 @@
   "remix_de": null,
   "explicacao_em": "2027-05-01",
   "tom": null,
-  "gancho": "Tia Meia-Vida e o mundo pintado de *amarelo canarinho*",
-  "gancho_apoio": null,
+  "gancho": "Tia Meia-Vida e o mundo pintado de *amarelo canarinho* sem ser dia de jogo",
+  "gancho_apoio": "Digoxina antiga, amiodarona nova na receita e halos amarelos em volta das luzes.",
   "imagem": {
     "arquivo": "dia-180.png",
-    "cena": "Tia Meia-Vida atrás do balcão, ao lado de um vaso de dedaleiras roxas. A farmácia tem quatro entradas diferentes, todas abertas e funcionando: uma porta giratória, uma porta de correr, uma catraca estreita e uma porta vaivém. Qual delas vai emperrar?",
+    "cena": "Num canteiro de dedaleiras roxas, a Tia Meia-Vida aponta para a fachada de uma loja com quatro entradas diferentes, todas funcionando: uma porta giratória, uma porta de correr, uma catraca estreita e uma porta vaivém. Bolinhas navy e verdes entram e saem como clientes.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida atrás do balcão, ao lado de um vaso de dedaleiras roxas."
+    "alt": "Tia Meia-Vida num canteiro de dedaleiras aponta uma loja com quatro entradas por onde passam bolinhas."
   },
   "imagem_macete": {
     "arquivo": "dia-180-macete.png",
-    "cena": "Um galho de dedaleira trava a porta giratória, enquanto as outras três entradas seguem funcionando: as bolinhas verdes (potássio) se amontoam do lado de fora, as navy (sódio) ficam presas dentro, e a vitrine inteira fica tingida de amarelo canarinho. A Tia mostra um frasco de antídoto com um anticorpo em forma de Y.",
-    "alt": "Digoxina trava a bomba Na/K"
+    "cena": "Um galho de dedaleira trava a porta giratória, enquanto as outras três entradas seguem funcionando: as bolinhas verdes (potássio) se amontoam do lado de fora, as navy (sódio) ficam presas dentro, e a vitrine fica amarela canarinho. A Tia mostra um frasco de antídoto com um anticorpo em Y.",
+    "alt": "Um galho de dedaleira trava a porta giratória; bolinhas presas dos dois lados e a vitrine fica amarela."
   },
   "questao": {
     "vinheta": "An 80-year-old woman takes digoxin for heart failure with atrial fibrillation. Two weeks after starting amiodarone, she has nausea, confusion, and yellow halos around lights. Serum potassium is 6.0 mEq/L, and ECG shows frequent ventricular ectopy.",
@@ -65,13 +65,13 @@
       "D": "O cotransportador Na-K-2Cl da alça de Henle é o alvo da furosemida, que tende a baixar o potássio."
     },
     "macete": {
-      "frase": "A digoxina *trava a catraca* (bomba Na/K): o sódio fica preso dentro, sobra cálcio e o coração bate forte; o potássio fica do lado de fora e o mundo ganha um filtro *amarelo canarinho*. Antídoto: *digoxin immune Fab*.",
-      "apoio": "O NBME cobra os gatilhos de toxicidade (hipocalemia por diurético, insuficiência renal, amiodarona, verapamil, quinidina), a hipercalemia como sinal de gravidade e o Fab antidigoxina como tratamento.",
-      "fala": null
+      "frase": "A digoxina *trava a catraca* (bomba Na/K): sódio dentro, potássio fora e o mundo *amarelo canarinho*",
+      "apoio": "Gatilhos: hipocalemia por diurético, insuficiência renal, amiodarona, verapamil, quinidina. Hipercalemia indica gravidade; antídoto é o Fab antidigoxina.",
+      "fala": "Mundo amarelo canarinho e não é dia de jogo do Brasil? Confere a digoxina."
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Tia Meia-Vida e um vaso de dedaleiras no balcão. Paciente em uso de digoxina, remédio novo na receita e um mundo que ficou amarelo. Qual proteína a droga trava?",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida e um vaso de dedaleiras. Paciente em uso de digoxina, remédio novo na receita e um mundo que ficou amarelo. Qual proteína a droga trava?",
     "palavras_chave": [
       "heart failure",
       "amiodarone started",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Digoxina: qual proteína ela inibe?"
+    "pergunta": "Digoxina com amiodarona, visão amarela e K 6,0: qual proteína ela inibe?"
   },
   "cta": "simulado",
   "exemplo": false

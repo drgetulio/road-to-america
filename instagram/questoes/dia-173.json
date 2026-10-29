@@ -13,17 +13,17 @@
   "explicacao_em": "2027-04-24",
   "tom": null,
   "gancho": "Ponte de metal no coração: qual carro a Capitã *libera*?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Ele quer o anticoagulante moderno do irmão para fugir do exame. A Capitã já pegou o apito.",
   "imagem": {
     "arquivo": "dia-173.png",
-    "cena": "Capitã Plaqueta apita na entrada de uma ponte metálica brilhante, cheia de rebites, com carros de estilos diferentes na fila: um caminhão antigo carregado de caixotes fechados e vários carros elétricos novinhos.",
+    "cena": "A Capitã Plaqueta apita na entrada de uma ponte metálica cheia de rebites, com uma fila de carros de estilos diferentes: um caminhão antigo carregado de caixotes fechados e vários carros elétricos novinhos. Numa coluna da ponte, uma pequena ampulheta marca o tempo.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta apita na entrada de uma ponte metálica brilhante, cheia de rebites, com carros de estilos diferentes na fila: um caminhão antigo carregado de caixotes fechados e vá"
+    "alt": "Capitã Plaqueta apita na entrada de uma ponte de metal com um caminhão antigo e carros elétricos na fila."
   },
   "imagem_macete": {
     "arquivo": "dia-173-macete.png",
-    "cena": "Só o caminhão antigo atravessa a ponte de metal, com os caixotes agora revelando verduras, cobertos e trancados (a vitamina K bloqueada); os carros novos recebem cone vermelho e são desviados para outra ponte, comum, a da fibrilação atrial.",
-    "alt": "Prótese mecânica: warfarin, não DOAC"
+    "cena": "Só o caminhão antigo atravessa a ponte de metal, com os caixotes revelando verduras cobertas e trancadas (a vitamina K bloqueada); os carros novos recebem cone vermelho e são desviados para outra ponte, comum.",
+    "alt": "Só o caminhão antigo atravessa a ponte de metal; os carros elétricos são desviados para uma ponte comum."
   },
   "questao": {
     "vinheta": "A 56-year-old man undergoes mechanical aortic valve replacement for severe bicuspid aortic stenosis. He has no atrial fibrillation and normal renal function. He asks for a direct oral anticoagulant, like the one his brother takes, to avoid INR checks.",
@@ -65,13 +65,13 @@
       "D": "AAS sozinho não protege a prótese mecânica; ele pode ser somado à varfarina em casos selecionados, nunca no lugar dela."
     },
     "macete": {
-      "frase": "Na *ponte de metal* só passa o *caminhão das antigas*, a varfarina. Os carros novos (DOACs) andam bem na estrada da fibrilação atrial, mas na ponte de ferro a Capitã barra com o cone.",
-      "apoio": "O NBME troca a prótese mecânica pela biológica ou pela fibrilação atrial não valvar, em que os DOACs são aceitos; com prótese mecânica ou estenose mitral reumática moderada a grave, a resposta é varfarina.",
-      "fala": null
+      "frase": "Na *ponte de metal* só passa o *caminhão das antigas*, a varfarina",
+      "apoio": "DOAC vai bem na fibrilação atrial não valvar e na prótese biológica; na mecânica, varfarina (INR 2,5 aórtica sem fatores de risco, 3,0 mitral).",
+      "fala": "Carro novo vai muito bem na estrada da fibrilação. Na ponte de metal, só passa o caminhão das antigas."
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com a Capitã Plaqueta no trânsito. Prótese valvar mecânica e um paciente pedindo o anticoagulante moderno do irmão para fugir dos exames. Qual carro passa na ponte de metal?",
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta no trânsito. Prótese valvar mecânica aórtica, sem fibrilação atrial, e um paciente pedindo o anticoagulante do irmão para não fazer exames. Qual carro passa na ponte de metal?",
     "palavras_chave": [
       "aortic valve replacement",
       "bicuspid aortic valve",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Prótese mecânica aórtica: qual anticoagulante?"
+    "pergunta": "Prótese aórtica mecânica, sem FA, e pedido de DOAC: qual anticoagulante?"
   },
   "cta": "simulado",
   "exemplo": false

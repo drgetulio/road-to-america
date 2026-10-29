@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-09-15",
   "tom": null,
-  "gancho": "Caminhão de cristais chegando ao rim amanhã cedo. *O que fazer hoje?*",
-  "gancho_apoio": "O Seu Néfron já separou os carimbos. Falta escolher a conduta.",
+  "gancho": "Caminhão de cristais chega amanhã: *o que o Seu Néfron pede hoje?*",
+  "gancho_apoio": "O Seu Néfron não aceita entrega sem agendamento, muito menos de ácido úrico 9,8.",
   "imagem": {
     "arquivo": "dia-317.png",
-    "cena": "Placa verde de rodovia com três saídas; embaixo, o Seu Néfron na mesa de repartição, de gravata e óculos na ponta do nariz, vê pela janela um caminhão basculante prestes a despejar cascalho de cristais pontudos. A pilha de formulários treme.",
+    "cena": "Seu Néfron na mesa da repartição, de gravata e óculos na ponta do nariz, com um relógio de parede sem números nas 3 horas; pela janela, um caminhão basculante está prestes a despejar cascalho de cristais pontudos na porta; a pilha de formulários treme; na mesa, um frasquinho em forma de escudo com um sinal verde de conferido.",
     "foco": "50% 35%",
-    "alt": "Caminhão de cristais chegando ao rim amanhã cedo. O que fazer hoje?"
+    "alt": "Caminhão de cristais chega amanhã: o que o Seu Néfron pede hoje?"
   },
   "imagem_macete": {
     "arquivo": "dia-317-macete.png",
-    "cena": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena (o allopurinol, para risco menor). Um frasquinho em forma de escudo com um sinal verde de conferido (o G6PD normal) fica na mesa.",
+    "cena": "Callback: o Seu Néfron usa um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que descem pelo túbulo; no canto, uma torneira fechada com uma chave inglesa pequena; o frasquinho escudo de sinal verde continua na mesa.",
     "foco": "50% 45%",
     "alt": "Lise tumoral de alto risco: hidratação e rasburicase"
   },
@@ -66,9 +66,9 @@
       "D": "Diálise trata a lise já instalada, com hipercalemia ou insuficiência renal grave, e não é prevenção."
     },
     "macete": {
-      "frase": "*Rasburicase raspa o que já existe; allopurinol fecha a torneira* do que vai vir",
-      "apoio": "Na imagem, o Seu Néfron usa um aspirador mágico que transforma os cristais pontudos em bolhas de sabão que descem pelo túbulo. A torneira no canto, fechada com uma chave menor, é o allopurinol, para quando o risco é menor.",
-      "fala": null
+      "frase": "*Rasburicase desmancha o que já existe; allopurinol só fecha a torneira*",
+      "apoio": "Com ácido úrico já alto e risco alto, o allopurinol não basta: ele impede ácido úrico novo, mas não mexe no que já circula. A rasburicase transforma ácido úrico em alantoína, que sai fácil pelo rim. Antes, confira a G6PD, porque o peróxido gerado causa hemólise. Alcalinizar a urina saiu da rotina: favorece cristais de fosfato de cálcio.",
+      "fala": "Sem carimbo, não sai. Com rasburicase, sai como alantoína."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Burkitt antes da quimio: além do soro?"
+    "pergunta": "Burkitt, ácido úrico 9,8 e quimio amanhã: o que somar ao soro?"
   },
   "cta": null,
   "reel": null,

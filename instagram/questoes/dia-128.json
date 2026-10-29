@@ -8,23 +8,24 @@
   "topico": "Pancreatite aguda",
   "conceito": "Acute pancreatitis: 2 of 3 criteria (pain, lipase 3 times normal, imaging), early fluids",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-10",
   "tom": null,
-  "gancho": "Dois bandeirinhas já levantaram a bandeira. E agora, *juiz*?",
-  "gancho_apoio": "Dor em faixa nas costas, lipase lá em cima. Qual é a jogada certa agora?",
+  "gancho": "Dois bandeirinhas já levantaram a bandeira. E agora, *juíza*?",
+  "gancho_apoio": "Dona Térmica já viu esse jogo às 3 da manhã. Você apita o quê?",
   "imagem": {
     "arquivo": "dia-128.png",
-    "cena": "Um campo de futebol com um pâncreas jogador de chuteira caído segurando a barriga. O juiz hesita olhando para o monitor do VAR, enquanto dois bandeirinhas já estão com as bandeiras levantadas e um terceiro espera.",
+    "cena": "Dona Térmica, de juíza com apito, hesita diante do monitor do VAR com a tela em branco. No gramado, um pâncreas jogador sentado segura a barriga; dois bandeirinhas já ergueram a bandeira e um terceiro espera. O relógio do estádio, sem números, marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Juiz hesitando diante do monitor do VAR; dois bandeirinhas já levantaram a bandeira e o pâncreas jogador está no gramado."
+    "alt": "Dona Térmica de juíza diante do VAR; dois bandeirinhas com a bandeira erguida e o pâncreas jogador no gramado."
   },
   "imagem_macete": {
     "arquivo": "dia-128-macete.png",
-    "cena": "Callback: o juiz dispensa o VAR com a mão e aponta para a beira do campo, onde entra um galão de água com soro, como reforço do time. O pâncreas jogador já toma água sentado.",
+    "cena": "Dona Térmica vira de costas para o VAR e aponta a lateral, de onde entra em campo um galão de soro com camisa 10. O pâncreas jogador já toma água sentado.",
     "foco": "50% 40%",
-    "alt": "O juiz dispensa o VAR e um galão de soro entra em campo para hidratar o pâncreas jogador."
+    "alt": "Dona Térmica dispensa o VAR e um galão de soro de camisa 10 entra em campo para hidratar o pâncreas."
   },
   "questao": {
     "vinheta": "A 46-year-old woman with known gallstones has 8 hours of constant epigastric pain radiating to the back, with vomiting. Temperature is 37.8°C and pulse is 112/min. The epigastrium is tender without rigidity. Serum lipase is 5 times the upper limit of normal. Bilirubin and liver enzymes are normal.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Pancreatite é *2 de 3 bandeirinhas*: com duas no alto, não chama o VAR",
-      "apoio": "Na imagem, o juiz dispensa o VAR e manda a hidratação entrar em campo.",
-      "fala": null
+      "apoio": "Na imagem, a juíza dispensa o VAR (tomografia) e manda a hidratação entrar em campo cedo.",
+      "fala": "Duas bandeiras em pé dispensam replay. Soro em campo, analgesia e dieta assim que tolerar."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça: dor em faixa, cálculo na vesícula e uma lipase que não deixa dúvida. A pergunta é o que fazer agora.",
+    "contexto": "Plantão de Terça: dor em faixa que vai para as costas, cálculo na vesícula e uma lipase 5 vezes acima do normal. Bilirrubina e enzimas do fígado normais. O que fazer agora?",
     "palavras_chave": [
       "gallstones",
       "epigastric pain radiating to the back",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Pancreatite confirmada: qual o próximo passo?"
+    "pergunta": "Dor em faixa, cálculo na vesícula e lipase 5x o normal: o que fazer agora?"
   },
   "cta": null,
   "reel": null,

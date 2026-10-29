@@ -8,21 +8,22 @@
   "topico": "BRCA1 e BRCA2",
   "conceito": "BRCA1/BRCA2: tumor suppressors for homologous recombination repair of double-strand breaks",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Outubro Rosa.",
   "remix_de": null,
   "explicacao_em": "2027-10-07",
   "tom": "acolhedor",
-  "gancho": "Outubro Rosa: a costureira do DNA perdeu *um dos kits*. Qual?",
+  "gancho": "Outubro Rosa: a costura do DNA perdeu *um dos kits*. Qual?",
   "gancho_apoio": "Um gene que cuida de um tipo específico de conserto do DNA.",
   "imagem": {
     "arquivo": "dia-339.png",
-    "cena": "Ateliê de costura com uma fita de DNA em dupla hélice cortada nas duas fitas sobre a mesa e quatro kits de conserto diferentes: um molde com uma fita gêmea idêntica, uma lupa de revisão, uma tesoura cortando um nó volumoso e uma conta isolada; um laço rosa discreto num cabide.",
+    "cena": "Ateliê de costura sereno; o Seu Allen, com setinhas de manual de montagem, está ao lado de uma fita em forma de escada sobre a mesa e de quatro caixinhas de costura fechadas, de cores diferentes; um laço rosa discreto num cabide.",
     "foco": "50% 35%",
-    "alt": "Outubro Rosa: a costureira do DNA perdeu um dos kits. Qual?"
+    "alt": "Outubro Rosa: a costura do DNA perdeu um dos kits. Qual?"
   },
   "imagem_macete": {
     "arquivo": "dia-339-macete.png",
-    "cena": "Callback: a fita gêmea idêntica foi estendida ao lado do rasgo e uma linha dourada costura as duas fitas copiando o molde; os outros três kits ficam fechados na prateleira.",
+    "cena": "Callback: a fita em escada aparece cortada de ponta a ponta; o Seu Allen abre uma das caixinhas, estende ao lado do corte uma fita gêmea idêntica e uma linha dourada costura as duas partes copiando o molde; as outras três caixinhas ficam fechadas na prateleira.",
     "foco": "50% 45%",
     "alt": "BRCA1 e BRCA2: homologous recombination da quebra dupla"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*BRCA: Break Repair Com Amostra*",
-      "apoio": "A costureira do BRCA conserta o rasgo nas duas fitas copiando a fita gêmea, a cromátide irmã. Sem ela, o conserto vira remendo improvisado e os erros se acumulam. Na imagem, o molde gêmeo fica estendido ao lado do rasgo.",
-      "fala": null
+      "apoio": "O BRCA conserta o corte nas duas fitas copiando a fita gêmea, a cromátide irmã: recombinação homóloga. Sem ele, o conserto vira remendo improvisado e os erros se acumulam. Por isso os inibidores de PARP funcionam tão bem nessas células.",
+      "fala": "Cada conserto tem o seu kit."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "BRCA1 alterado: que reparo falha?"
+    "pergunta": "BRCA1 alterado: qual conserto do DNA deixa de funcionar?"
   },
   "cta": "simulado",
   "reel": null,

@@ -16,70 +16,69 @@
   ],
   "explicacao_em": "2027-09-27",
   "tom": null,
-  "gancho": "Três discos, uma trilha no mato: *quem pintou os punhos primeiro?*",
-  "gancho_apoio": "Remix com superantígenos, hiper-IgM e febre maculosa. Um disco é intruso.",
+  "gancho": "Mancha na palma da mão: *carrapato, toxina ou meningococo?*",
+  "gancho_apoio": "Revisão de domingo com os dias 267, 302 e 323. Três suspeitos, um só começou pelos punhos.",
   "imagem": {
     "arquivo": "dia-329.png",
-    "cena": "Macrô de DJ diante de um toca-discos com três discos: um com um grampeador, outro com uma camisa de cinco estrelas e outro com um estádio; um quarto disco, de outra cor, com dois grãos de café em dupla, fica separado. Ao fundo, uma trilha no mato.",
+    "cena": "Sala de reconhecimento de delegacia: o Macrô, de detetive, com a comanda em branco no bolso, olha três suspeitos atrás do vidro: um carrapatinho de mochila de trilha, uma molécula de toxina em forma de raio de óculos escuros e uma dupla de grãos de café; os três têm pintinhas vermelhas nas mãos; num canto, um vinil pequeno encostado.",
     "foco": "50% 35%",
-    "alt": "Três discos, uma trilha no mato: quem pintou os punhos primeiro?"
+    "alt": "Mancha na palma da mão: carrapato, toxina ou meningococo?"
   },
   "imagem_macete": {
     "arquivo": "dia-329-macete.png",
-    "cena": "Callback: o disco do estádio gira; torcedores em bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro; o Macrô, de fones no pescoço, levanta um apito em forma de cápsula.",
+    "cena": "Callback: o Macrô aponta para o carrapatinho, cujas pegadas vermelhas num mapa de estádio entram pelos quatro portões dos cantos e vão até o centro; a toxina de óculos e a dupla de grãos de café são liberadas pela porta.",
     "foco": "50% 45%",
-    "alt": "Carrapato e exantema centrípeto: Rickettsia rickettsii"
+    "alt": "Rash que começa nos punhos e vai ao centro: febre maculosa"
   },
   "questao": {
-    "vinheta": "A 26-year-old woman has had fever, headache, and myalgias for 5 days. She went hiking in Tennessee 9 days ago and removed a tick from her leg. On day 3, a rash appeared on her wrists and ankles; it now involves the palms, soles, and trunk and is petechial. Platelets are 76,000/mm3.",
-    "pergunta": "Which is the most likely cause?",
+    "vinheta": "A 26-year-old woman has had fever, headache, and myalgias for 5 days. Nine days ago she hiked in Tennessee. A rash began on her wrists and ankles on day 3 and now covers her palms, soles, and trunk with petechiae. Blood pressure is 112/70 mm Hg. Platelets are 76,000/mm3, and sodium is 128 mEq/L.",
+    "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Toxic shock syndrome toxin-1",
-        "quiz": "TSST-1",
+        "texto": "Toxic shock syndrome",
+        "quiz": "Choque tóxico",
         "dia": 267
       },
       "B": {
-        "texto": "CD40 ligand deficiency",
-        "quiz": "Falta de CD40L",
-        "dia": 302
+        "texto": "Meningococcemia",
+        "quiz": "Meningococcemia"
       },
       "C": {
-        "texto": "Neisseria meningitidis",
-        "quiz": "Meningococo"
+        "texto": "Secondary syphilis",
+        "quiz": "Sífilis secundária"
       },
       "D": {
-        "texto": "Rickettsia rickettsii",
-        "quiz": "R. rickettsii",
+        "texto": "Rocky Mountain spotted fever",
+        "quiz": "Febre maculosa",
         "dia": 323
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Carrapato e exantema centrípeto: *Rickettsia rickettsii*",
+    "titulo": "Rash que começa nos punhos e vai ao centro: *febre maculosa*",
     "certa": [
-      "Picada de carrapato, febre e cefaleia por dias e exantema que começa em punhos e tornozelos, vai para o tronco e pega palmas e plantas é *Rocky Mountain spotted fever*. A *Rickettsia rickettsii* infecta o endotélio, causa vasculite com petéquias e consome plaquetas. O tratamento é *doxycycline* já na suspeita, sem esperar a sorologia."
+      "Febre, cefaleia e mialgia depois de trilha no sudeste dos EUA, com rash que começa nos punhos e tornozelos e vai para palmas, plantas e tronco, plaquetopenia e hiponatremia, fecham *Rocky Mountain spotted fever* (dia 323). A *Rickettsia rickettsii* invade o endotélio e causa vasculite. Não precisa lembrar do carrapato: muita gente não percebe a picada. Tratamento: *doxycycline* já, em qualquer idade."
     ],
     "termos": [
       "Rocky Mountain spotted fever",
       "Rickettsia rickettsii",
-      "centripetal petechial rash",
+      "centripetal rash",
       "doxycycline"
     ],
     "erradas": {
-      "A": "A *TSST-1* (dia 267) causa eritrodermia difusa tipo queimadura de sol desde o início, que descama depois, sem picada de carrapato.",
-      "B": "A *deficiência de CD40L* (dia 302) é uma imunodeficiência da infância com IgM alta, e não um quadro febril agudo em adulta saudável.",
-      "C": "A *meningococcemia* evolui em horas, com petéquias e púrpura sem predileção pelos punhos, e não tem a história de carrapato."
+      "A": "O *toxic shock syndrome* (dia 267) é superantígeno: eritrodermia difusa, hipotensão e descamação das palmas depois de 1 a 2 semanas; aqui a pressão é normal e o rash é centrípeto.",
+      "B": "A *meningococcemia* também dá petéquias, mas evolui em horas, com choque, e não em 5 dias de pródromo.",
+      "C": "A *sífilis secundária* pega palmas e plantas, mas com rash maculopapular sem febre alta, plaquetopenia ou petéquias."
     },
     "macete": {
-      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos*",
-      "apoio": "É o disco do dia 323: os torcedores de bolinha vermelha entram pelos portões dos cantos e enchem o estádio até o meio. Na febre maculosa, quem dá o apito final é a doxiciclina.",
-      "fala": null
+      "frase": "*Entrou pelo punho e foi para o centro*: é a torcida da Rickettsia",
+      "apoio": "Choque tóxico (dia 267) é eritrodermia difusa com hipotensão e descamação depois, sem começar nos punhos. Meningococcemia corre em horas, não em 5 dias. Sífilis secundária pega palmas e plantas, mas sem febre alta, plaquetopenia ou petéquias. Bônus do dia 302: na hiper-IgM, as infecções se repetem desde bebê, não chegam de uma vez depois de uma trilha.",
+      "fala": "Comi, mostrei, avisei. O culpado entrou pelos punhos."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com superantígenos (dia 267), síndrome de hiper-IgM (dia 302) e febre maculosa (dia 323), mais um intruso. Mulher de 26 anos com febre e cefaleia há 5 dias, depois de uma trilha com picada de carrapato, e manchas que começaram nos punhos e tornozelos. Qual disco toca?",
+    "contexto": "Revisão de domingo com os dias 267, 302 e 323. Mulher de 26 anos com 5 dias de temperatura alta, cefaleia e mialgia depois de uma trilha, manchas que começaram nos punhos e tornozelos e chegaram às palmas e ao tronco, plaquetas de 76 mil e sódio de 128. Qual é o diagnóstico?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +94,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Carrapato e manchas nos punhos: qual?"
+    "pergunta": "Trilha há 9 dias, manchas dos punhos às palmas e plaquetas 76 mil: qual?"
   },
   "cta": null,
   "reel": null,

@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-26",
   "tom": null,
-  "gancho": "O porteiro das mucosas *nunca apareceu*. E a transfusão?",
-  "gancho_apoio": "Anafilaxia minutos depois de começar o concentrado de hemácias.",
+  "gancho": "Sem porteiro nas mucosas, *a IgA do doador virou penetra*",
+  "gancho_apoio": "Anafilaxia minutos depois de começar o concentrado de hemácias. E na próxima vez?",
   "imagem": {
     "arquivo": "dia-358.png",
-    "cena": "Macrô na porta do boteco dos micróbios ao lado de uma porta de mucosa com o banquinho do porteiro vazio; um entregador traz uma encomenda lacrada com laço de presente.",
+    "cena": "Macrô de porteiro na entrada de uma festa, com a comanda em branco no bolso, ao lado de uma porta em forma de mucosa com o banquinho do porteiro vazio; um entregador traz uma encomenda lacrada com laço de presente; numa prancheta, uma lista de convidados em branco.",
     "foco": "50% 35%",
-    "alt": "O porteiro das mucosas nunca apareceu. E a transfusão?"
+    "alt": "Sem porteiro nas mucosas, a IgA do doador virou penetra"
   },
   "imagem_macete": {
     "arquivo": "dia-358-macete.png",
-    "cena": "Callback: Macrô coloca a encomenda numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a encomenda sai limpa e brilhante, e um cone vermelho fica ao lado de outra caixa ainda sem lavar.",
+    "cena": "Callback: o Macrô coloca a encomenda numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a encomenda sai limpa e brilhante, e um cone vermelho fica ao lado de outra caixa ainda sem lavar.",
     "foco": "50% 45%",
     "alt": "Deficiência de IgA: washed ou de doador sem IgA"
   },
@@ -66,9 +66,9 @@
       "D": "Hemocomponente CMV negativo protege receptores CMV negativos de alto risco, como transplantados e recém-nascidos."
     },
     "macete": {
-      "frase": "*Roupa emprestada a gente lava antes*",
-      "apoio": "Quem nunca teve IgA estranha a IgA do doador e reage como a um penetra. Lavar o concentrado tira o perfume do plasma de outra pessoa. Na imagem, o Macrô passa a encomenda na máquina de lavar antes de entregar.",
-      "fala": null
+      "frase": "*Roupa emprestada a gente lava antes*: sangue para quem não tem IgA também",
+      "apoio": "Quem nunca teve IgA pode ter anticorpos contra a IgA do doador e reage como a um penetra: anafilaxia minutos depois de começar. Lavar o concentrado tira o plasma do doador; outra opção é sangue de doador sem IgA. Irradiar é contra doença do enxerto, leucorreduzir é contra febre e CMV, e CMV negativo é para imunossuprimido.",
+      "fala": "Penetra eu reconheço."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Sem IgA e anafilaxia na transfusão:"
+    "pergunta": "IgA indetectável e anafilaxia na transfusão: como transfundir da próxima vez?"
   },
   "cta": "simulado",
   "reel": null,

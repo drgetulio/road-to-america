@@ -8,6 +8,7 @@
   "topico": "Remix da caça aos ovos: Puberdade e estágios de Tanner (dia 52), Pico de LH (dia 59), Ovogênese (dia 87)",
   "conceito": "Easter egg hunt remix: Puberty onset + LH surge + Oocyte arrest",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": "Páscoa (28/3/2027): o ovo que fica parado em prófase I.",
   "remix_de": [
     52,
@@ -16,70 +17,70 @@
   ],
   "explicacao_em": "2027-03-29",
   "tom": null,
-  "gancho": "Remix da Páscoa: só *um* ovo esconde o cartão certo",
-  "gancho_apoio": "Puberdade, pico de LH e ovogênese voltam hoje (dias 52, 59 e 87), com um intruso.",
+  "gancho": "Páscoa no ovário: o ovo cresce, cresce e *não sai do papel*",
+  "gancho_apoio": "Remix com puberdade (dia 52), pico de LH (dia 59) e ovogênese (dia 87) numa adolescente só.",
   "imagem": {
     "arquivo": "dia-147.png",
-    "cena": "Um jardim de caça aos ovos com quatro ovos de chocolate em papel colorido escondidos na grama. No centro, um toca-discos cujos três discos são pintados como ovos de Páscoa.",
+    "cena": "Seu Allen, de cestinha vazia na mão, procura ovos de Páscoa num jardim ensolarado: quatro ovos embrulhados em papel colorido brilhante estão escondidos na grama e atrás de vasos de flores. Num canto do jardim, um pequeno disco de vinil.",
     "foco": "50% 35%",
-    "alt": "Jardim com quatro ovos de chocolate escondidos e um toca-discos com discos pintados de ovo de Páscoa."
+    "alt": "Seu Allen com a cestinha vazia procura quatro ovos de Páscoa embrulhados, escondidos no jardim."
   },
   "imagem_macete": {
     "arquivo": "dia-147-macete.png",
-    "cena": "Callback: o ovo verde se abre e revela uma escada de degraus amarelos que sobe até um interruptor; o interruptor virado solta fogos de artifício. Num outro ovo aberto, um ovócito redondo está congelado no meio de um passo de dança, com um relógio de pausa ao lado.",
+    "cena": "O ovo verde se abre e mostra um interruptor de parede ainda com fita listrada de obra, sem ligar os fogos de artifício que esperam ao lado. Seu Allen aperta o último parafuso do interruptor com a chavinha.",
     "foco": "50% 40%",
-    "alt": "Ovo verde aberto com escada até um interruptor que solta fogos; outro ovo mostra um ovócito parado no meio da dança."
+    "alt": "Dentro do ovo verde, um interruptor ainda em obra que não liga os fogos; Seu Allen aperta o último parafuso."
   },
   "questao": {
-    "vinheta": "At a study-group Easter egg hunt, each hidden egg holds a flashcard on reproductive physiology. Only one card is accurate.",
-    "pergunta": "Which card is accurate?",
+    "vinheta": "A 13-year-old girl had breast budding at age 10 and menarche 8 months ago. Her cycles are irregular, and serial ultrasounds show follicles that grow but never rupture.",
+    "pergunta": "Which step of her reproductive axis is most likely still immature?",
     "alternativas": {
       "A": {
-        "texto": "First sign of puberty in girls: menarche",
-        "quiz": "Menarca é o 1º sinal",
+        "texto": "Onset of pulsatile GnRH secretion",
+        "quiz": "Pulsos de GnRH",
         "dia": 52
       },
       "B": {
-        "texto": "LH surge: sustained high estradiol switches to positive feedback",
-        "quiz": "Feedback + do E2",
+        "texto": "Estradiol positive feedback triggering the LH surge",
+        "quiz": "Feedback + do estradiol",
         "dia": 59
       },
       "C": {
-        "texto": "Ovulated oocyte: arrested in prophase I",
-        "quiz": "Ovulado em prófase I",
+        "texto": "Resumption of meiosis I in the dominant oocyte",
+        "quiz": "Ovócito sai da prófase I",
         "dia": 87
       },
       "D": {
-        "texto": "Ovulation: triggered by the progesterone peak",
-        "quiz": "Pico de progesterona"
+        "texto": "Progesterone secretion by the corpus luteum",
+        "quiz": "Progesterona lútea"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Estradiol alto e sustentado: *feedback positivo*",
+    "titulo": "Primeiros ciclos: o *feedback positivo* ainda está em obra",
     "certa": [
-      "Na maior parte do ciclo, o estradiol freia o eixo (feedback negativo). Quando fica alto, acima de cerca de 200 pg/mL por uns 2 dias, a resposta inverte: vira feedback positivo na hipófise e no hipotálamo, e vem o pico de LH. A ovulação acontece de 24 a 36 horas depois do início do pico."
+      "Nos primeiros 1 a 2 anos depois da menarca, muitos ciclos são anovulatórios: o folículo cresce e produz estradiol, mas o eixo ainda não responde ao estradiol alto e sustentado com feedback positivo, e o pico de LH não vem. Sem pico, o folículo não rompe, não há corpo lúteo e o ciclo fica irregular. O pulso de GnRH já começou, porque ela tem broto mamário e menarca."
     ],
     "termos": [
-      "LH surge",
+      "anovulatory cycles",
       "positive feedback",
-      "metaphase II arrest",
-      "thelarche"
+      "LH surge",
+      "menarche"
     ],
     "erradas": {
-      "A": "Dia 52: o primeiro sinal da puberdade nas meninas é a telarca (broto mamário); a menarca vem 2 a 3 anos depois.",
-      "C": "Dia 87: o ovócito ovulado está parado em metáfase II até a fertilização; a parada em prófase I vai da vida fetal até perto da ovulação.",
-      "D": "Intruso: o pico de progesterona vem do corpo lúteo, depois da ovulação, na fase lútea."
+      "A": "Dia 52: o pulso de GnRH é o que dá a largada da puberdade, e ela já tem broto mamário (o primeiro sinal) e menarca.",
+      "C": "Dia 87: a meiose I só é retomada depois do pico de LH; aqui ela não acontece porque o pico não veio, não por defeito do ovócito.",
+      "D": "Intruso: sem ovulação não há corpo lúteo; a falta de progesterona é consequência da anovulação, não a peça imatura."
     },
     "macete": {
-      "frase": "*Prófase I* desde antes de nascer, *Metáfase II* esperando o espermatozoide",
-      "apoio": "Errou alguma? Volte ao dia original (52, 59 ou 87) e refaça antes do próximo remix.",
-      "fala": null
+      "frase": "Ovo que cresce e não sai: o *feedback positivo* do estradiol ainda está em obra",
+      "apoio": "Bônus: o ovócito espera em prófase I desde antes de nascer e em metáfase II até o espermatozoide; o primeiro sinal da puberdade é o broto mamário.",
+      "fala": "Sobrou peça? Faltou o pico de LH. Nos primeiros ciclos, o interruptor ainda está na obra."
     }
   },
   "legenda": {
-    "contexto": "Feliz Páscoa! No Remix de domingo, a caça aos ovos é de fisiologia: três cartões trazem erro e um está certo.",
+    "contexto": "Feliz Páscoa! No Remix de Domingo, uma menina de 13 anos com broto mamário aos 10, menarca há 8 meses, ciclos irregulares e folículos que crescem mas não rompem. Que peça do eixo ainda não amadureceu?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -93,7 +94,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix da Páscoa: qual cartão está certo?"
+    "pergunta": "Menarca há 8 meses e folículo que cresce sem romper: o que falta amadurecer?"
   },
   "cta": null,
   "reel": null,

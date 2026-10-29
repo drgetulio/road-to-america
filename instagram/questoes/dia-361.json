@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-10-29",
   "tom": null,
-  "gancho": "Primeira multa do rim: *vistoria antes de processo*",
-  "gancho_apoio": "Bebê com a primeira infecção urinária febril, já melhorando com antibiótico.",
+  "gancho": "Primeira ITU febril aos 9 meses: *qual vistoria* o Seu Néfron pede?",
+  "gancho_apoio": "Bebê com a primeira infecção urinária com febre, já melhorando com antibiótico.",
   "imagem": {
     "arquivo": "dia-361.png",
-    "cena": "Seu Néfron numa mesa de vistoria, como de órgão de trânsito, analisa um carrinho de brinquedo em forma de rim com uma bandeirinha de termômetro; o garçom de rodízio oferece quatro espetos com ícones: onda sonora, gota de contraste com tubinho, estrela brilhante e calendário de pílulas.",
+    "cena": "Seu Néfron numa mesa de vistoria analisa um carrinho de brinquedo em forma de rim com uma bandeirinha de termômetro; o Garçom Espetinho oferece quatro espetos com ícones: onda sonora, gota de contraste com tubinho, estrela brilhante e calendário de comprimidos; a plaquinha verde e vermelha no avental do garçom.",
     "foco": "50% 35%",
-    "alt": "Primeira multa do rim: vistoria antes de processo"
+    "alt": "Primeira ITU febril aos 9 meses: qual vistoria o Seu Néfron pede?"
   },
   "imagem_macete": {
     "arquivo": "dia-361-macete.png",
-    "cena": "Callback: o Seu Néfron carimba de verde a ficha da onda sonora e manda o carrinho para a vistoria simples, enquanto os outros três espetos ficam numa prateleira com a etiqueta de depois.",
+    "cena": "Callback: o Seu Néfron carimba de verde a ficha da onda sonora e manda o carrinho para a vistoria simples, enquanto os outros três espetos ficam numa prateleira de depois; o garçom levanta o lado verde da plaquinha.",
     "foco": "50% 45%",
     "alt": "Primeira ITU febril de 2 a 24 meses: renal and bladder ultrasound"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Primeira infração, vistoria; reincidente, processo*",
-      "apoio": "O Seu Néfron é rigoroso, mas justo: na primeira ITU febril, faz só a vistoria do imóvel com ultrassom. A uretrocistografia, que dá mais trabalho, fica para o reincidente ou para a vistoria que achou problema.",
-      "fala": null
+      "apoio": "Na primeira ITU febril entre 2 e 24 meses, a AAP pede só a vistoria do imóvel: ultrassom de rins e bexiga. A uretrocistografia, que dá mais trabalho, fica para o reincidente ou para a vistoria que achou problema (hidronefrose, cicatriz). Profilaxia diária e DMSA não são rotina.",
+      "fala": "Sem carimbo, não sai. Na primeira, só vistoria."
     }
   },
   "legenda": {
@@ -92,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "1ª ITU febril aos 9 meses. Próximo passo:"
+    "pergunta": "1ª ITU febril aos 9 meses, já melhorando com antibiótico: o que fazer agora?"
   },
   "cta": "simulado",
   "reel": null,

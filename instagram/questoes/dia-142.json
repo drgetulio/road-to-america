@@ -8,21 +8,22 @@
   "topico": "Nódulo pulmonar incidental",
   "conceito": "Incidental pulmonary nodule: compare with prior imaging first",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-03-24",
   "tom": null,
-  "gancho": "Nódulo achado *sem querer* na tomografia: qual saída você pega?",
-  "gancho_apoio": "Uma tomografia de abdome achou algo no pulmão. Antes de correr, um detalhe da história.",
+  "gancho": "TC de abdome para cólica renal e, de brinde, um *nódulo no pulmão*. E agora?",
+  "gancho_apoio": "Ex-fumante, 9 mm, sem sintomas e uma TC de tórax feita em outro hospital há 3 anos.",
   "imagem": {
     "arquivo": "dia-142.png",
-    "cena": "Uma lupa gigante examina uma figurinha redonda colada numa folha solta em forma de pulmão. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+    "cena": "Dona Térmica, de lupa, examina uma figurinha redonda colada numa folha em forma de pulmão. Em volta, a mesa da copa está cheia de pacotinhos de figurinha fechados, e um relógio de parede sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Folha em forma de pulmão com uma figurinha redonda sob uma lupa; ao fundo, placa verde de três saídas."
+    "alt": "Dona Térmica examina com a lupa uma figurinha redonda numa folha em forma de pulmão, cercada de pacotinhos."
   },
   "imagem_macete": {
     "arquivo": "dia-142-macete.png",
-    "cena": "Callback: ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho. Um selo verde de aprovado aparece entre os dois.",
+    "cena": "Ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho. Um selo verde de aprovado aparece entre os dois, e os pacotinhos voltam fechados para a gaveta.",
     "foco": "50% 40%",
     "alt": "Álbum antigo e álbum novo com a mesma figurinha no mesmo lugar; um selo verde de aprovado entre eles."
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "*Abra o álbum antigo* antes de pedir figurinha nova",
-      "apoio": "Na imagem, a mesma figurinha no mesmo lugar, três anos antes, encerra o caso.",
-      "fala": null
+      "apoio": "Sólido estável por 2 anos ou mais é benigno; sem imagem antiga, entra a régua da Fleischner.",
+      "fala": "Antes do PET, abre o álbum velho. Figurinha repetida a gente não cola duas vezes."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça: o radiologista achou um nódulo que ninguém procurava. Qual é o primeiro passo?",
+    "contexto": "Plantão de Terça: o radiologista achou um nódulo que ninguém procurava, na base do pulmão de um ex-fumante que já fez uma TC de tórax em outro hospital. Qual é o primeiro passo?",
     "palavras_chave": [
       "former smoker",
       "solid lung nodule",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo achado por acaso: qual o 1º passo?"
+    "pergunta": "Nódulo de 9 mm achado por acaso e TC de tórax de 3 anos atrás: 1º passo?"
   },
   "cta": null,
   "reel": null,

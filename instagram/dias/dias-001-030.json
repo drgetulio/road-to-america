@@ -1970,7 +1970,7 @@
     "remix_de": null,
     "explicacao_em": "2026-11-15",
     "tom": null,
-    "gancho_pt": "Baixaram a régua da HbA1c e metade da cidade caiu na malha fina",
+    "gancho_pt": "A régua da HbA1c desceu, e o Viés jura que o teste melhorou em tudo. Melhorou?",
     "vinheta_en": "A health system lowers the HbA1c cutoff for diagnosing diabetes in its screening program from 6.5% to 6.0%. The test itself and the population screened do not change.",
     "pergunta_en": "Which change in test performance is most likely?",
     "alternativas": [
@@ -2020,7 +2020,7 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Baixaram a régua da HbA1c e metade da cidade caiu na malha fina\n\n14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a pergunta é o que acontece quando o ponto de corte de um teste desce de 6,5% para 6,0%. Dica: pense na declaração do imposto de renda.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: HbA1c, screening program, test performance, biostatistics\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Bioestatistica #Biostatistics",
+    "legenda_questao_pt": "A régua da HbA1c desceu, e o Viés jura que o teste melhorou em tudo. Melhorou?\n\n14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, o ponto de corte da HbA1c desce de 6,5% para 6,0%; o exame e a população continuam os mesmos. Leia as quatro alternativas com calma: o Viés está no barco.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: HbA1c, screening program, test performance, biostatistics\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Bioestatistica #Biostatistics",
     "legenda_explicacao_pt": "Gabarito da questão 13 (Sábado Sem Viés): letra A, Higher sensitivity and lower specificity.\n\nBaixar o ponto de corte transforma em positivo quem tem HbA1c entre 6,0% e 6,4%: quase nenhum doente escapa (menos falsos negativos, sensibilidade sobe), mas entram mais pessoas sem diabetes (mais falsos positivos, especificidade cai). Com mais falsos positivos, o valor preditivo positivo cai e o negativo sobe. Quando só o ponto de corte muda, sensibilidade e especificidade andam em sentidos opostos.\n\nMacete: Baixar o ponto de corte é a malha fina do imposto de renda: pega todo mundo que deve (sensibilidade sobe), mas também quem só esqueceu um recibo (especificidade cai). E quanto mais chinelo na rede, menor o valor preditivo positivo.\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "O corte da HbA1c caiu de 6,5% para 6,0%: o que muda no teste?",
@@ -2034,17 +2034,17 @@
     },
     "fonte": "American Diabetes Association Professional Practice Committee. Standards of Care in Diabetes 2026, seção 2 (Diabetes Care, 2026); Gordis Epidemiology, 6ª ed. (2019).",
     "revisao": {
-      "medica": "Resolvida às cegas: A. Corte menor: sensibilidade sobe, especificidade cai, VPP cai e VPN sobe; distrator D coerente. Troquei a última frase do macete (\"o Viés adora quem esquece o chinelo\", sem sentido) por um reforço sobre o VPP.",
+      "medica": "Resolvida às cegas: A. Corte menor: sensibilidade sobe, especificidade cai, VPP cai e VPN sobe; distrator D coerente. Troquei a última frase do macete (\"o Viés adora quem esquece o chinelo\", sem sentido) por um reforço sobre o VPP. Teste cego de pistas (29/10/2026): gancho e contexto citavam a malha fina e o imposto de renda (o macete do D+1); trocados por uma provocação neutra.",
       "humor_compliance": "Rede de malha fina é uma boa imagem. Frase final do macete reescrita para ter sentido. Alt corrigido.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Viés) com a descrição visual fixa."
     },
-    "gancho": "Baixaram a régua da HbA1c e metade da cidade *caiu na malha fina*",
+    "gancho": "A régua da HbA1c desceu, e o *Viés* jura que o teste melhorou em tudo. Melhorou?",
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-013.png",
       "cena": "O Viés, meio escondido atrás de uma tabela 2x2, está num barquinho num lago calmo segurando duas redes de pesca, uma de malha larga e outra de malha bem fina. Embaixo da água, peixinhos nadam misturados com um chinelo velho, uma garrafa e um envelope em branco cheio de recibos.",
       "foco": "50% 35%",
-      "alt": "Baixaram a régua da HbA1c e metade da cidade caiu na malha fina"
+      "alt": "A régua da HbA1c desceu, e o Viés jura que o teste melhorou em tudo. Melhorou?"
     },
     "imagem_macete": {
       "arquivo": "dia-013-macete.png",
@@ -2098,7 +2098,7 @@
       }
     },
     "legenda": {
-      "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a pergunta é o que acontece quando o ponto de corte de um teste desce de 6,5% para 6,0%. Dica: pense na declaração do imposto de renda.",
+      "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, o ponto de corte da HbA1c desce de 6,5% para 6,0%; o exame e a população continuam os mesmos. Leia as quatro alternativas com calma: o Viés está no barco.",
       "palavras_chave": [
         "HbA1c",
         "screening program",
@@ -2139,7 +2139,7 @@
     "explicacao_em": "2026-11-16",
     "tom": null,
     "gancho_pt": "O teste do pezinho baixou a régua da 17-OHP. Quem paga a conta?",
-    "vinheta_en": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. To miss fewer affected infants, the program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
+    "vinheta_en": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. The program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
     "pergunta_en": "Which change in screening performance is most likely?",
     "alternativas": [
       {
@@ -2148,11 +2148,11 @@
       },
       {
         "letra": "B",
-        "texto": "Lower sensitivity for 21-hydroxylase deficiency"
+        "texto": "Lower sensitivity and more missed 21-hydroxylase cases"
       },
       {
         "letra": "C",
-        "texto": "Higher positive predictive value of a positive screen"
+        "texto": "Higher sensitivity and higher positive predictive value"
       },
       {
         "letra": "D",
@@ -2164,8 +2164,8 @@
       "por_que_certa": "Baixar o corte da 17-OHP é jogar no teste do pezinho a rede de malha fina do dia 13: mais bebês com deficiência de 21-hidroxilase (dia 10) são pegos antes da crise de perda de sal, e a sensitivity sobe. O preço é reconvocar mais bebês saudáveis, sobretudo prematuros e recém-nascidos estressados, que têm 17-OHP mais alta: a specificity cai e chegam mais false-positive recalls.",
       "por_que_erradas": {
         "A": "É o contrário: baixar o corte derruba a especificidade e aumenta os falsos positivos.",
-        "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe, não cai.",
-        "C": "Com mais falsos positivos entre os positivos, o valor preditivo positivo cai, como a malha fina que traz chinelo junto com o peixe."
+        "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe e menos casos escapam.",
+        "C": "A sensibilidade sobe, mas o VPP cai: com mais falsos positivos entre os positivos, a malha fina traz chinelo junto com o peixe."
       },
       "macete": "Régua mais baixa é malha fina (dia 13): pega todos os bebês com o forno 21 quebrado (dia 10), mas reconvoca também o prematuro estressado, que tem 17-OHP alta sem doença. Sensibilidade sobe; especificidade e valor preditivo positivo caem. Bônus: o vale-presente de IgG da mãe vence aos 6 meses no Bruton (dia 8).",
       "pegadinha_de_prova": "O NBME muda só o ponto de corte e mantém o teste e a população: sensibilidade e especificidade andam em sentidos opostos, e o VPP acompanha a especificidade."
@@ -2193,16 +2193,16 @@
     "story_quiz": {
       "pergunta_curta_pt": "Corte da 17-OHP mais baixo no pezinho: o que acontece com o teste?",
       "opcoes": [
-        "Mais específico, menos falsos",
-        "Menos sensível para 21-OH",
-        "VPP maior",
-        "Mais sensível, mais falsos +"
+        "Espec.↑, menos falsos +",
+        "Sens.↓, mais casos perdidos",
+        "Sens.↑ e VPP↑",
+        "Sens.↑, mais falsos +"
       ],
       "correta": "D"
     },
     "fonte": "Abbas, Lichtman, Pillai. Cellular and Molecular Immunology, 10ª ed. (2022); Speiser PW, et al. Endocrine Society CAH Guideline (2018); Gordis Epidemiology, 6ª ed. (2019).",
     "revisao": {
-      "medica": "Resolvida às cegas: D. Frases A, B e C falsas (21-OH perde sal; corte menor baixa especificidade; hiper-IgM tem células B). Sem mudança.",
+      "medica": "Resolvida às cegas: D. Frases A, B e C falsas (21-OH perde sal; corte menor baixa especificidade; hiper-IgM tem células B). Sem mudança. Teste cego de pistas (29/10/2026): tirada da vinheta a finalidade que entregava a sensibilidade; as quatro alternativas viraram pares \"sensibilidade/especificidade e consequência\".",
       "humor_compliance": "Humor ligado ao conceito, sem zombar de paciente, doença, corpo, grupo ou profissão. Sem promessa de aprovação, assinatura com CRM-DF 13610, CTA com link do site e \"(link na bio)\", sem travessão nem meia-risca, legendas dentro do limite e 4 a 7 hashtags. Prompts no estilo da marca, 4:5, sem texto. Corrigido em todos os dias: o texto alternativo da imagem da questão repetia o título da explicação e entregava a resposta; agora repete o gancho.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Viés) com a descrição visual fixa. Remix reescrito como vinheta clínica que junta conceitos já vistos, com alternativas da mesma categoria e a mesma letra certa."
     },
@@ -2220,25 +2220,25 @@
       "alt": "Malha fina no teste do pezinho"
     },
     "questao": {
-      "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. To miss fewer affected infants, the program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
+      "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. The program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
       "pergunta": "Which change in screening performance is most likely?",
       "alternativas": {
         "A": {
           "texto": "Higher specificity and fewer false-positive recalls",
-          "quiz": "Mais específico, menos falsos"
+          "quiz": "Espec.↑, menos falsos +"
         },
         "B": {
-          "texto": "Lower sensitivity for 21-hydroxylase deficiency",
-          "quiz": "Menos sensível para 21-OH",
+          "texto": "Lower sensitivity and more missed 21-hydroxylase cases",
+          "quiz": "Sens.↓, mais casos perdidos",
           "dia": 10
         },
         "C": {
-          "texto": "Higher positive predictive value of a positive screen",
-          "quiz": "VPP maior"
+          "texto": "Higher sensitivity and higher positive predictive value",
+          "quiz": "Sens.↑ e VPP↑"
         },
         "D": {
           "texto": "Higher sensitivity and more false-positive recalls",
-          "quiz": "Mais sensível, mais falsos +",
+          "quiz": "Sens.↑, mais falsos +",
           "dia": 13
         }
       },
@@ -2257,8 +2257,8 @@
       ],
       "erradas": {
         "A": "É o contrário: baixar o corte derruba a especificidade e aumenta os falsos positivos.",
-        "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe, não cai.",
-        "C": "Com mais falsos positivos entre os positivos, o valor preditivo positivo cai, como a malha fina que traz chinelo junto com o peixe."
+        "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe e menos casos escapam.",
+        "C": "A sensibilidade sobe, mas o VPP cai: com mais falsos positivos entre os positivos, a malha fina traz chinelo junto com o peixe."
       },
       "macete": {
         "frase": "Régua mais baixa no pezinho é malha fina de novo: pega *todo bebê com o forno 21 quebrado* e chama de volta quem só nasceu cedo.",
@@ -2365,7 +2365,7 @@
     },
     "fonte": "Kumar, Abbas, Aster. Robbins & Cotran Pathologic Basis of Disease, 10ª ed. (2021); KDIGO 2021 Clinical Practice Guideline for the Management of Glomerular Diseases (Kidney Int, 2021).",
     "revisao": {
-      "medica": "Resolvida às cegas: B. IF linear, crescentes, ANCA negativo; colágeno IV alfa-3 NC1 e tratamento (plasmaférese, corticoide, ciclofosfamida) conferidos no KDIGO 2021. Sem mudança.",
+      "medica": "Resolvida às cegas: D. IF linear, crescentes, ANCA negativo; colágeno IV alfa-3 NC1 e tratamento (plasmaférese, corticoide, ciclofosfamida) conferidos no KDIGO 2021. Sem mudança.",
       "humor_compliance": "Humor ligado ao conceito, sem zombar de paciente, doença, corpo, grupo ou profissão. Sem promessa de aprovação, assinatura com CRM-DF 13610, CTA com link do site e \"(link na bio)\", sem travessão nem meia-risca, legendas dentro do limite e 4 a 7 hashtags. Prompts no estilo da marca, 4:5, sem texto. Corrigido em todos os dias: o texto alternativo da imagem da questão repetia o título da explicação e entregava a resposta; agora repete o gancho.",
       "letras": "Letras reordenadas em 29/10/2026 para equilibrar o gabarito do ano: a certa passou de B para D, trocando de lugar com a antiga D. Conteúdo sem mudança.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Seu Néfron) com a descrição visual fixa."
@@ -2498,8 +2498,8 @@
       "pegadinha_de_prova": "O NBME traz um paciente pós-operatório com Wells alto e oferece o D-dímero; ele estará alto de qualquer jeito e não muda a conduta."
     },
     "imagem_questao": {
-      "conceito_visual": "A Capitã Plaqueta apita no meio de um cruzamento dentro de uma estrada em forma de túnel rosado (o vaso pulmonar). Um caminhão grande, escuro e encaroçado está atravessado na pista, e os carrinhos fazem fila. Mais à frente a estrada se divide: uma faixa vai para uma cabine de pedágio pequena e a outra segue reto até um grande aparelho em forma de anel. Na parede do túnel, um relógio sem números marca 3 da manhã.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Capitã Plaqueta, a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her. Scene: Capitã Plaqueta blows her whistle in the middle of a crossroads inside a pink tunnel-shaped road; a big dark lumpy truck is stuck sideways across the lane and small cars wait in line; further ahead the road splits, one lane leading to a small toll booth and the other straight to a large ring-shaped machine; on the tunnel wall, a small blank wall clock with no numbers shows its hands at 3 a.m. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A Capitã Plaqueta apita no meio de um cruzamento dentro de uma estrada em forma de túnel rosado (o vaso pulmonar). Um caminhão grande, escuro e encaroçado está atravessado na pista, e os carrinhos fazem fila. Mais à frente, a estrada se abre em quatro faixas iguais, cada uma terminando numa cabine diferente: um pedágio pequeno, um aparelho em forma de anel, um farolzinho que pisca e uma garagem em forma de coração. Na parede do túnel, um relógio sem números marca 3 da manhã.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Capitã Plaqueta, a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her. Scene: Capitã Plaqueta blows her whistle in the middle of a crossroads inside a pink tunnel-shaped road; a big dark lumpy truck is stuck sideways across the lane and small cars wait in line; further ahead the road opens into four equal lanes, each ending at a different booth: a small toll booth, a large ring-shaped machine, a small blinking lighthouse and a heart-shaped garage; on the tunnel wall, a small blank wall clock with no numbers shows its hands at 3 a.m. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -2529,7 +2529,7 @@
     },
     "fonte": "Konstantinides SV, et al. 2019 ESC Guidelines for the Diagnosis and Management of Acute Pulmonary Embolism (Eur Heart J, 2020); Raja AS, et al. Evaluation of Patients With Suspected Acute Pulmonary Embolism: ACP Best Practice Advice (Ann Intern Med, 2015).",
     "revisao": {
-      "medica": "Resolvida às cegas: A. Wells 9 (alto), estável, função renal normal: angio-TC direto. D-dímero só para probabilidade baixa (ESC 2019, ACP 2015). A imagem da questão mostra os dois caminhos sem escolher. Sem mudança.",
+      "medica": "Resolvida às cegas: A. Wells 9 (alto), estável, função renal normal: angio-TC direto. D-dímero só para probabilidade baixa (ESC 2019, ACP 2015). A imagem da questão mostra os dois caminhos sem escolher. Sem mudança. Teste cego de pistas (29/10/2026): a cena mostrava só dois caminhos e um deles \"reto\" para o tomógrafo; agora são quatro faixas iguais, uma por alternativa.",
       "humor_compliance": "Humor ligado ao conceito, sem zombar de paciente, doença, corpo, grupo ou profissão. Sem promessa de aprovação, assinatura com CRM-DF 13610, CTA com link do site e \"(link na bio)\", sem travessão nem meia-risca, legendas dentro do limite e 4 a 7 hashtags. Prompts no estilo da marca, 4:5, sem texto. Corrigido em todos os dias: o texto alternativo da imagem da questão repetia o título da explicação e entregava a resposta; agora repete o gancho.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Capitã Plaqueta) com a descrição visual fixa."
     },
@@ -2537,7 +2537,7 @@
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-016.png",
-      "cena": "A Capitã Plaqueta apita no meio de um cruzamento dentro de uma estrada em forma de túnel rosado (o vaso pulmonar). Um caminhão grande, escuro e encaroçado está atravessado na pista, e os carrinhos fazem fila. Mais à frente a estrada se divide: uma faixa vai para uma cabine de pedágio pequena e a outra segue reto até um grande aparelho em forma de anel. Na parede do túnel, um relógio sem números marca 3 da manhã.",
+      "cena": "A Capitã Plaqueta apita no meio de um cruzamento dentro de uma estrada em forma de túnel rosado (o vaso pulmonar). Um caminhão grande, escuro e encaroçado está atravessado na pista, e os carrinhos fazem fila. Mais à frente, a estrada se abre em quatro faixas iguais, cada uma terminando numa cabine diferente: um pedágio pequeno, um aparelho em forma de anel, um farolzinho que pisca e uma garagem em forma de coração. Na parede do túnel, um relógio sem números marca 3 da manhã.",
       "foco": "50% 35%",
       "alt": "Prótese de quadril, panturrilha inchada e um caminhão atravessado no túnel"
     },
@@ -3315,8 +3315,8 @@
       "pegadinha_de_prova": "O NBME coloca dois germes no mesmo paciente e pergunta sobre um só; confira de quem é a falha antes de escolher o mecanismo."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô, de guardanapo xadrez, está num corredor de pousada com duas portas: numa, a fechadura brilhante teve o miolo pintado de outra cor, e um molho de chaves douradas está no chão; na outra, um quarto aceso onde alguém se hospedou sem aparecer na janela. Ele coça a cabeça, e um vinil pequeno serve de chaveiro no bolso.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: Macrô stands in a guesthouse hallway with two doors: on one, the shiny lock core has been painted a different color and a ring of golden keys lies on the floor; the other leads to a lit room where someone is staying without showing at the window; Macrô scratches his head; a tiny vinyl record sits in one corner as a small decoration, hanging from his pocket like a keychain. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Macrô, de guardanapo xadrez, está num corredor de pousada com duas portas: numa, uma fechadura brilhante e trancada, com um molho de chaves douradas caído no tapete da frente; na outra, um quarto aceso onde alguém se hospedou sem aparecer na janela. Ele coça a cabeça, e um vinil pequeno serve de chaveiro no bolso.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: Macrô stands in a guesthouse hallway with two doors: on one, a shiny locked lock with a ring of golden keys dropped on the doormat in front of it; the other leads to a lit room where someone is staying without showing at the window; Macrô scratches his head; a tiny vinyl record sits in one corner as a small decoration, hanging from his pocket like a keychain. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -3346,7 +3346,7 @@
     },
     "fonte": "CDC STI Treatment Guidelines (2021); Robbins & Cotran Pathologic Basis of Disease, 10ª ed. (2021); IDSA MRSA Guideline (Clin Infect Dis, 2011).",
     "revisao": {
-      "medica": "Resolvida às cegas: A. B, C e D falsos e coerentes com os dias 1, 15 e 19. Sem mudança.",
+      "medica": "Resolvida às cegas: A. B, C e D falsos e coerentes com os dias 1, 15 e 19. Sem mudança. Teste cego de pistas (29/10/2026): a cena mostrava o miolo da fechadura trocado (PBP alterada); agora só a porta trancada e as chaves no chão.",
       "humor_compliance": "Humor ligado ao conceito, sem zombar de paciente, doença, corpo, grupo ou profissão. Sem promessa de aprovação, assinatura com CRM-DF 13610, CTA com link do site e \"(link na bio)\", sem travessão nem meia-risca, legendas dentro do limite e 4 a 7 hashtags. Prompts no estilo da marca, 4:5, sem texto. Corrigido em todos os dias: o texto alternativo da imagem da questão repetia o título da explicação e entregava a resposta; agora repete o gancho.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Macrô) com a descrição visual fixa. Remix reescrito como vinheta clínica que junta conceitos já vistos, com alternativas da mesma categoria e a mesma letra certa."
     },
@@ -3354,7 +3354,7 @@
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-021.png",
-      "cena": "Macrô, de guardanapo xadrez, está num corredor de pousada com duas portas: numa, a fechadura brilhante teve o miolo pintado de outra cor, e um molho de chaves douradas está no chão; na outra, um quarto aceso onde alguém se hospedou sem aparecer na janela. Ele coça a cabeça, e um vinil pequeno serve de chaveiro no bolso.",
+      "cena": "Macrô, de guardanapo xadrez, está num corredor de pousada com duas portas: numa, uma fechadura brilhante e trancada, com um molho de chaves douradas caído no tapete da frente; na outra, um quarto aceso onde alguém se hospedou sem aparecer na janela. Ele coça a cabeça, e um vinil pequeno serve de chaveiro no bolso.",
       "foco": "50% 35%",
       "alt": "Dois hóspedes, uma fechadura: por que a oxacilina bateu na porta e voltou?"
     },
@@ -4096,7 +4096,7 @@
     "remix_de": null,
     "explicacao_em": "2026-11-28",
     "tom": null,
-    "gancho_pt": "Black Friday no fígado: a varfarina saiu pela metade do preço",
+    "gancho_pt": "Black Friday: a mesma varfarina, a mesma dieta, e o INR caiu pela metade",
     "vinheta_en": "A 66-year-old woman with atrial fibrillation has had a stable INR of 2.5 on warfarin for a year. She starts rifampin for latent tuberculosis infection. Three weeks later, her INR is 1.3. Her diet and adherence are unchanged.",
     "pergunta_en": "Which mechanism best explains the change in her INR?",
     "alternativas": [
@@ -4129,8 +4129,8 @@
       "pegadinha_de_prova": "O NBME pergunta o que acontece ao suspender o indutor: o metabolismo volta ao normal em semanas e o INR pode subir demais se a dose não for corrigida."
     },
     "imagem_questao": {
-      "conceito_visual": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Uma esteira despacha caixinhas de remédio a toda velocidade, e a areia da ampulheta dela escorre rápido demais.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Tia Meia-Vida looks through her pharmacy window at a liver-shaped department store across the street in the middle of a big sale, with blank red and yellow banners and balloons; a conveyor belt ships medicine boxes out at full speed, and the sand in her hourglass body drains far too fast. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Na porta da loja, uma fila de caixinhas de remédio espera a vez, e a Tia confere a própria ampulheta, desconfiada.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Tia Meia-Vida looks through her pharmacy window at a liver-shaped department store across the street in the middle of a big sale, with blank red and yellow banners and balloons; a line of small medicine boxes waits at the store entrance, and she eyes the sand in her own hourglass body with suspicion. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4146,7 +4146,7 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Black Friday no fígado: a varfarina saiu pela metade do preço\n\nBlack Friday também acontece no fígado. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: atrial fibrillation, anticoagulation, latent tuberculosis, pharmacokinetics\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Pharmacology",
+    "legenda_questao_pt": "Black Friday: a mesma varfarina, a mesma dieta, e o INR caiu pela metade\n\nBlack Friday é dia de fila até na farmácia. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: atrial fibrillation, anticoagulation, latent tuberculosis, pharmacokinetics\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Farmacologia #Pharmacology",
     "legenda_explicacao_pt": "Gabarito da questão 26 (Sextou na Farmácia): letra D, Induction of hepatic cytochrome P450 enzymes.\n\nA rifampina é um indutor potente do citocromo P450 (CYP2C9, CYP3A4 e outros): aumenta a produção das enzimas do fígado, que passam a metabolizar a varfarina mais rápido, e o INR despenca, com risco de AVC na fibrilação atrial. Carbamazepina, fenitoína, fenobarbital, erva-de-são-joão e o álcool em uso crônico fazem o mesmo. Quando o indutor é suspenso, o efeito some em algumas semanas e o INR sobe de novo, por isso a dose precisa ser reajustada nas duas pontas.\n\nMacete: Indutor é CAFÉ RI no fígado: CArbamazepina, FEnitoína e FEnobarbital, RIfampina. O fígado contrata temporário (mais CYP) na Black Friday e despacha a varfarina rapidinho, e o INR cai. O café é só a imagem: cafeína não induz o CYP.\n\nGostou do formato? Faça um bloco de 30 minutos no simulado grátis: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "INR caiu de 2,5 para 1,3 com rifampina: qual mecanismo?",
@@ -4160,17 +4160,17 @@
     },
     "fonte": "Katzung, Vanderah. Basic & Clinical Pharmacology, 16ª ed. (2024); Sterling TR, et al. Guidelines for the Treatment of Latent Tuberculosis Infection: NTCA and CDC (MMWR Recomm Rep, 2020).",
     "revisao": {
-      "medica": "Resolvida às cegas: D. Rifampina induz CYP2C9/3A4 e derruba o INR; distratores elevariam o INR. Acrescentei no macete que o café é só imagem, para ninguém sair achando que cafeína é indutor do CYP.",
+      "medica": "Resolvida às cegas: D. Rifampina induz CYP2C9/3A4 e derruba o INR; distratores elevariam o INR. Acrescentei no macete que o café é só imagem, para ninguém sair achando que cafeína é indutor do CYP. Teste cego de pistas (29/10/2026): gancho (\"liquidação no fígado\"), contexto e cena (esteira a toda velocidade, areia escorrendo rápido) mostravam a indução; ficaram só o INR e a Black Friday.",
       "humor_compliance": "Black Friday no fígado é engraçado e ajuda a lembrar que o indutor acelera o metabolismo; ressalva do café acrescentada. Alt corrigido.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Tia Meia-Vida) com a descrição visual fixa."
     },
-    "gancho": "Black Friday no fígado: a varfarina saiu *pela metade* do preço",
+    "gancho": "Black Friday: a mesma varfarina, a mesma dieta, e o *INR* caiu pela metade",
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-026.png",
-      "cena": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Uma esteira despacha caixinhas de remédio a toda velocidade, e a areia da ampulheta dela escorre rápido demais.",
+      "cena": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Na porta da loja, uma fila de caixinhas de remédio espera a vez, e a Tia confere a própria ampulheta, desconfiada.",
       "foco": "50% 35%",
-      "alt": "Black Friday no fígado: a varfarina saiu pela metade do preço"
+      "alt": "Black Friday: a mesma varfarina, a mesma dieta, e o INR caiu pela metade"
     },
     "imagem_macete": {
       "arquivo": "dia-026-macete.png",
@@ -4224,7 +4224,7 @@
       }
     },
     "legenda": {
-      "contexto": "Black Friday também acontece no fígado. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.",
+      "contexto": "Black Friday é dia de fila até na farmácia. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.",
       "palavras_chave": [
         "atrial fibrillation",
         "anticoagulation",
@@ -4459,8 +4459,8 @@
       "pegadinha_de_prova": "O NBME esconde a interação num antibiótico para tuberculose latente: rifampina com corticoide, varfarina, anticoncepcional ou tacrolimo."
     },
     "imagem_questao": {
-      "conceito_visual": "Tia Meia-Vida, atrás do balcão, observa do outro lado da rua uma loja em forma de fígado com faixas de liquidação sem texto, de onde caixinhas de remédio saem em disparada. Na calçada, um prédio com interfone de botões apagados; no balcão, um frasco de comprimidos cor de laranja. Um vinil pequeno decora a vitrine.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Tia Meia-Vida stands behind her pharmacy counter watching a liver-shaped store across the street with blank sale banners, where small medicine boxes rush out the door; on the sidewalk, an apartment building with darkened intercom buttons; on her counter sits a bottle of bright orange pills; a tiny vinyl record sits in one corner as a small decoration, in the shop window. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Tia Meia-Vida, atrás do balcão, observa do outro lado da rua uma loja em forma de fígado com faixas de liquidação sem texto, com uma fila de caixinhas de remédio na porta. Na calçada, um prédio com interfone de botões apagados; no balcão, um frasco de comprimidos cor de laranja. Um vinil pequeno decora a vitrine.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Tia Meia-Vida, a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away. Scene: Tia Meia-Vida stands behind her pharmacy counter watching a liver-shaped store across the street with blank sale banners, with a line of small medicine boxes waiting at the door; on the sidewalk, an apartment building with darkened intercom buttons; on her counter sits a bottle of bright orange pills; a tiny vinyl record sits in one corner as a small decoration, in the shop window. Playful, witty and friendly mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -4490,7 +4490,7 @@
     },
     "fonte": "Abbas, Lichtman, Pillai. Cellular and Molecular Immunology, 10ª ed. (2022); Narayanaswami P, et al. MG Consensus Guidance 2020 Update (Neurology, 2021); Katzung, Vanderah. Basic & Clinical Pharmacology, 16ª ed. (2024).",
     "revisao": {
-      "medica": "Resolvida às cegas: C. A (Bruton sem células B), B (rifampina baixa o INR) e D (LEMS melhora com o uso) falsos. Sem mudança.",
+      "medica": "Resolvida às cegas: C. A (Bruton sem células B), B (rifampina baixa o INR) e D (LEMS melhora com o uso) falsos. Sem mudança. Teste cego de pistas (29/10/2026): as caixinhas saindo em disparada da loja-fígado mostravam a indução; agora esperam em fila.",
       "humor_compliance": "Humor ligado ao conceito, sem zombar de paciente, doença, corpo, grupo ou profissão. Sem promessa de aprovação, assinatura com CRM-DF 13610, CTA com link do site e \"(link na bio)\", sem travessão nem meia-risca, legendas dentro do limite e 4 a 7 hashtags. Prompts no estilo da marca, 4:5, sem texto. Corrigido em todos os dias: o texto alternativo da imagem da questão repetia o título da explicação e entregava a resposta; agora repete o gancho.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Tia Meia-Vida) com a descrição visual fixa. Remix reescrito como vinheta clínica que junta conceitos já vistos, com alternativas da mesma categoria e a mesma letra certa."
     },
@@ -4498,7 +4498,7 @@
     "gancho_apoio": null,
     "imagem": {
       "arquivo": "dia-028.png",
-      "cena": "Tia Meia-Vida, atrás do balcão, observa do outro lado da rua uma loja em forma de fígado com faixas de liquidação sem texto, de onde caixinhas de remédio saem em disparada. Na calçada, um prédio com interfone de botões apagados; no balcão, um frasco de comprimidos cor de laranja. Um vinil pequeno decora a vitrine.",
+      "cena": "Tia Meia-Vida, atrás do balcão, observa do outro lado da rua uma loja em forma de fígado com faixas de liquidação sem texto, com uma fila de caixinhas de remédio na porta. Na calçada, um prédio com interfone de botões apagados; no balcão, um frasco de comprimidos cor de laranja. Um vinil pequeno decora a vitrine.",
       "foco": "50% 35%",
       "alt": "Chegou o antibiótico laranja e a pálpebra caiu de novo. Coincidência?"
     },
@@ -4639,7 +4639,7 @@
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Tomou sulfato ferroso por meses e o cofrinho continua vazio\n\nBicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar a padaria do intestino.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: bloating, iron deficiency anemia, pruritic vesicles, wheat\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Gastroenterologia #Immunology",
+    "legenda_questao_pt": "Tomou sulfato ferroso por meses e o cofrinho continua vazio\n\nBicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar o tapete do intestino.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: bloating, loose stools, iron deficiency anemia, pruritic vesicles\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Gastroenterologia #Immunology",
     "legenda_explicacao_pt": "Gabarito da questão 29 (Bicho de Segunda): letra A, IgA anti-tissue transglutaminase with total IgA.\n\nDiarreia crônica, falta de ferro que persiste apesar do sulfato ferroso (o ferro é absorvido no duodeno, o segmento mais atingido) e dermatite herpetiforme nos cotovelos apontam para doença celíaca. O teste inicial é a IgA antitransglutaminase tecidual (anti-tTG IgA), feita com a paciente ainda comendo glúten e acompanhada da dosagem de IgA sérica total, já que celíacos têm mais deficiência seletiva de IgA. A confirmação vem da biópsia duodenal, e a doença depende dos alelos HLA-DQ2 ou DQ8, que apresentam a gliadina modificada às células T.\n\nMacete: Na padaria do intestino, o fiscal é o anti-tTG IgA, e ele só aparece com pão no balcão (paciente comendo glúten). Peça sempre a IgA total junto, porque a deficiência de IgA deixa o fiscal de folga e dá falso negativo. DQ2 e DQ8: dois pães, oito sementes.\n\nGostou do formato? Faça um bloco de 30 minutos no simulado grátis: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
       "pergunta_curta_pt": "Anemia ferropriva refratária e vesículas no cotovelo: qual exame?",
@@ -4653,7 +4653,7 @@
     },
     "fonte": "Rubio-Tapia A, et al. American College of Gastroenterology Guidelines Update: Diagnosis and Management of Celiac Disease (Am J Gastroenterol, 2023).",
     "revisao": {
-      "medica": "Resolvida às cegas: A. Anti-tTG IgA com IgA total, ainda com glúten (ACG 2023). O pão na capa e no gancho entregava o diagnóstico e, com ele, o exame: troquei a capa por Macrô diante do tapete careca (vilosidades) e do cofrinho de ferro vazio, e o pão ficou só na explicação.",
+      "medica": "Resolvida às cegas: A. Anti-tTG IgA com IgA total, ainda com glúten (ACG 2023). O pão na capa e no gancho entregava o diagnóstico e, com ele, o exame: troquei a capa por Macrô diante do tapete careca (vilosidades) e do cofrinho de ferro vazio, e o pão ficou só na explicação. Teste cego de pistas (29/10/2026): palavra-chave \"wheat\" e a \"padaria do intestino\" saíram do dia D; a padaria fica para a revelação do D+1.",
       "humor_compliance": "Padaria fica para a explicação; capa nova com Macrô investigando o tapete e o cofrinho, ainda engraçada. Gancho e contexto da legenda sem \"padaria\". Alt corrigido.",
       "roteiro": "Roteiro de humor revisto em 29/10/2026: gancho, cenas, prompts, macete com punchline, pergunta do story e personagem fixo (Macrô) com a descrição visual fixa."
     },
@@ -4717,12 +4717,12 @@
       }
     },
     "legenda": {
-      "contexto": "Bicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar a padaria do intestino.",
+      "contexto": "Bicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar o tapete do intestino.",
       "palavras_chave": [
         "bloating",
+        "loose stools",
         "iron deficiency anemia",
-        "pruritic vesicles",
-        "wheat"
+        "pruritic vesicles"
       ],
       "hashtags": [
         "#USMLE",

@@ -8,22 +8,23 @@
   "topico": "Intussuscepção",
   "conceito": "Intussusception: target sign on ultrasound, air or contrast enema reduction",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-23",
   "tom": null,
-  "gancho": "Rosquinha no ultrassom do bebê: qual espeto vem *agora*?",
-  "gancho_apoio": null,
+  "gancho": "Choro em crise a cada 15 minutos e uma *rosquinha* no ultrassom. O que sai do forno agora?",
+  "gancho_apoio": "Fezes com sangue e muco, bebê estável e sem sinal de peritonite.",
   "imagem": {
     "arquivo": "dia-172.png",
-    "cena": "O garçom do rodízio traz um espeto de rosquinhas de padaria; na mesa, uma luneta de pirata com os gomos todos encaixados um dentro do outro e a plaquinha verde e vermelha.",
+    "cena": "Numa padaria de bairro, atrás do balcão de rosquinhas, o Garçom Espetinho segura uma luneta de pirata com os gomos todos encaixados um dentro do outro. No balcão, a plaquinha verde e vermelha, de lado.",
     "foco": "50% 35%",
-    "alt": "O garçom do rodízio traz um espeto de rosquinhas de padaria; na mesa, uma luneta de pirata com os gomos todos encaixados um dentro do outro e a plaquinha verde e vermelha."
+    "alt": "Garçom Espetinho numa padaria, atrás do balcão de rosquinhas, segura uma luneta com os gomos encaixados."
   },
   "imagem_macete": {
     "arquivo": "dia-172-macete.png",
     "cena": "Uma bombinha de ar sopra a luneta e os gomos deslizam para fora, abrindo de novo; a plaquinha vira verde. O bisturi fica de reserva numa bandeja coberta, ao fundo.",
-    "alt": "Intussuscepção estável: enema que diagnostica e trata"
+    "alt": "Uma bombinha de ar abre a luneta de volta e a plaquinha vira verde; o bisturi espera numa bandeja coberta."
   },
   "questao": {
     "vinheta": "A 14-month-old boy has bouts of inconsolable crying with drawn-up knees every 15 to 20 minutes, lethargy between bouts, vomiting, and a bloody, mucoid stool. He is afebrile and hemodynamically stable, without peritoneal signs. Ultrasound shows a target sign in the right abdomen.",
@@ -65,13 +66,13 @@
       "C": "A seriografia contrastada procura má rotação no vômito bilioso; não trata e não é o exame da intussuscepção."
     },
     "macete": {
-      "frase": "O intestino vira *luneta* fechada, um pedaço entrando no outro, e no ultrassom aparece a *rosquinha*. Um sopro de *ar* abre a luneta de volta.",
-      "apoio": "O NBME cobra quando não fazer o enema (peritonite, perfuração, choque vão direto para cirurgia) e lembra o divertículo de Meckel como ponto de partida em crianças maiores.",
-      "fala": null
+      "frase": "O intestino vira *luneta* fechada e aparece a *rosquinha* no ultrassom; um sopro de *ar* abre a luneta de volta",
+      "apoio": "Peritonite, perfuração ou choque vão direto para a cirurgia. Em criança maior, procure o divertículo de Meckel como ponto de partida.",
+      "fala": "Luneta fechada? Um sopro de ar resolve. Bisturi só se o enema falhar, doutor."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na emergência pediátrica. Crises de choro em cólica, fezes com sangue e muco, e o ultrassom já mostrou a imagem que fecha o diagnóstico. O bebê está estável. Qual espeto o garçom traz agora?",
+    "contexto": "Rodízio de Quinta na emergência pediátrica. Crises de choro em cólica, fezes com sangue e muco, e o ultrassom já mostrou a imagem que fecha o diagnóstico. O bebê está estável. Qual é o próximo passo?",
     "palavras_chave": [
       "episodic crying",
       "drawn-up knees",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sinal do alvo, bebê estável. E agora?"
+    "pergunta": "Bebê estável, fezes com sangue e sinal do alvo no ultrassom: e agora?"
   },
   "cta": "simulado",
   "exemplo": false

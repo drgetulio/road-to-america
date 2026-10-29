@@ -8,21 +8,22 @@
   "topico": "Hipercalcemia da malignidade",
   "conceito": "Hypercalcemia of malignancy: IV saline, calcitonin and a bisphosphonate",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": "Independência do Brasil (7/9).",
   "remix_de": null,
   "explicacao_em": "2027-09-08",
   "tom": null,
-  "gancho": "No 7 de setembro, *o cálcio também quis dar o grito*",
-  "gancho_apoio": "O cálcio saiu do osso em desfile. Qual é a conduta do plantão?",
+  "gancho": "7 de setembro: *o cálcio deu o grito* e saiu do osso",
+  "gancho_apoio": "Às 3 da manhã, a Dona Térmica vê o desfile passar pela janela da copa e já pega a prancheta.",
   "imagem": {
     "arquivo": "dia-310.png",
-    "cena": "Placa verde de rodovia com três saídas; embaixo, um castelo em forma de osso abre o portão e bolinhas brancas de giz (o cálcio) saem em desfile com bandeirinhas verdes e amarelas, rumo à estrada.",
+    "cena": "Copa do plantão de madrugada, com um relógio de parede sem números nas 3 horas; a Dona Térmica, no balcão, olha pela janela um castelo em forma de osso de portão aberto, de onde bolinhas brancas de giz saem em desfile com bandeirinhas verdes e amarelas; no parapeito, um vaso de planta com a terra rachada de seca.",
     "foco": "50% 35%",
-    "alt": "No 7 de setembro, o cálcio também quis dar o grito"
+    "alt": "7 de setembro: o cálcio deu o grito e saiu do osso"
   },
   "imagem_macete": {
     "arquivo": "dia-310-macete.png",
-    "cena": "Callback: três ferramentas param o desfile: uma mangueira de soro empurra as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy fecha o portão do castelo de osso.",
+    "cena": "Callback: três ferramentas param o desfile: uma mangueira lava as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy tranca o portão do castelo de osso; a Dona Térmica anota na prancheta e a planta do parapeito volta a ficar verde.",
     "foco": "50% 45%",
     "alt": "Hipercalcemia grave: lava, freia e tranca"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "*Lava, freia e tranca*: soro lava, calcitonina freia e bifosfonato tranca o osteoclasto",
-      "apoio": "Na imagem, a mangueira de soro lava o cálcio para o ralo do rim, o freio de mão para o desfile em poucas horas e o cadeado no portão do osso segura a saída por semanas.",
-      "fala": null
+      "apoio": "O soro lava o cálcio pelo rim e corrige a desidratação; a calcitonina freia em poucas horas, mas cansa em dois dias; o ácido zoledrônico tranca o osteoclasto por semanas. Furosemida antes de hidratar é tirar água de quem já chegou seco: só entra depois, se sobrar volume. Diálise fica para insuficiência renal grave ou cálcio que não responde.",
+      "fala": "Já vi esse caso às 3 da manhã. Primeiro o soro."
     }
   },
   "legenda": {
-    "contexto": "Homem de 64 anos com carcinoma escamoso de pulmão chega confuso, desidratado, com poliúria e constipação. Cálcio de 14,6 mg/dL e PTH suprimido. A placa verde tem três saídas e o plantão precisa escolher a combinação certa.",
+    "contexto": "Homem de 64 anos com carcinoma escamoso de pulmão chega confuso, desidratado, com poliúria e constipação. Cálcio de 14,6 mg/dL e PTH suprimido. Qual é o manejo inicial?",
     "palavras_chave": [
       "lung cancer",
       "confusion",
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cálcio 14,6 e confusão: conduta inicial?"
+    "pergunta": "Cálcio 14,6, confusão e mucosas secas: o que fazer primeiro?"
   },
   "cta": null,
   "reel": null,

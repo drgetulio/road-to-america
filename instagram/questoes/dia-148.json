@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-03-30",
   "tom": null,
-  "gancho": "Rim novo, festa estragada em *minutos*. Quem foi?",
-  "gancho_apoio": "Mal terminou a anastomose e o enxerto ficou roxo. O Macrô viu tudo da porta.",
+  "gancho": "Rim novo chegou de mudança e foi *despejado* antes de desfazer a mala. Quem foi?",
+  "gancho_apoio": "Mal terminou a anastomose e o enxerto ficou roxo. O Macrô viu tudo da portaria.",
   "imagem": {
     "arquivo": "dia-148.png",
-    "cena": "Na porta do boteco dos micróbios, o Macrô vê chegar um convidado novo em forma de rim, trazendo um presente. O corredor de entrada está na penumbra, e um cronômetro sem números pende na parede.",
+    "cena": "Na portaria de um prédio, o Macrô, com a comanda em branco no bolso, vê chegar um vizinho novo em forma de rim, puxando uma mala de mudança. O corredor do prédio está na penumbra e um cronômetro sem números pende na parede.",
     "foco": "50% 35%",
-    "alt": "Macrô vê chegar um convidado em forma de rim; o corredor está na penumbra e há um cronômetro na parede."
+    "alt": "Macrô na portaria vê chegar um vizinho em forma de rim com mala de mudança; o corredor está na penumbra."
   },
   "imagem_macete": {
     "arquivo": "dia-148-macete.png",
-    "cena": "Callback: a luz do corredor acende e mostra uma fila de anticorpos em forma de Y que já estava de tocaia desde antes da festa. Eles grudam no batente e nas paredes, e plaquetas amarelas em forma de disco se amontoam como um engarrafamento, fechando a passagem. O cronômetro mal andou.",
+    "cena": "A luz do corredor acende e mostra uma fila de anticorpos em forma de Y que já estava de tocaia antes da mudança. Eles grudam nas paredes, e plaquetas amarelas se amontoam como engarrafamento, fechando a passagem. O cronômetro mal andou.",
     "foco": "50% 40%",
-    "alt": "A luz acende e mostra os anticorpos que já esperavam no corredor; eles grudam nas paredes e as plaquetas fecham a passagem."
+    "alt": "A luz acende e mostra os anticorpos que já esperavam no corredor; as plaquetas fecham a passagem."
   },
   "questao": {
     "vinheta": "Minutes after the vascular anastomoses are completed in a deceased-donor kidney transplant, the graft becomes mottled and cyanotic and produces no urine. Biopsy shows widespread thrombi in glomerular capillaries, neutrophil infiltration and fibrinoid necrosis of arterioles.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Hiperaguda = *hiper-rápida*: o anticorpo já estava *de tocaia*",
-      "apoio": "Na imagem, a luz acende e mostra os anticorpos que já esperavam no corredor; as plaquetas fecham o caminho.",
-      "fala": null
+      "apoio": "Minutos é anticorpo pré-formado; semanas a meses, T CD8 ou anticorpo novo; anos, fibrose da íntima.",
+      "fala": "Nem deu tempo de eu comer nada. Esses anticorpos já estavam de tocaia antes da mudança."
     }
   },
   "legenda": {
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Rejeição em minutos: qual o mecanismo?"
+    "pergunta": "Enxerto roxo e sem urina minutos após a anastomose: qual mecanismo?"
   },
   "cta": null,
   "reel": null,

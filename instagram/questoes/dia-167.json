@@ -8,22 +8,23 @@
   "topico": "Retirar e não iniciar suporte",
   "conceito": "Withdrawing and withholding life support are ethically equivalent",
   "personagem": null,
+  "anfitriao": "Dona Bússola",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-18",
   "tom": "acolhedor",
   "gancho": "Desligar ou nunca ligar o ventilador: o que pesa mais?",
-  "gancho_apoio": null,
+  "gancho_apoio": "Hoje sem piada. Um tema delicado, e a Dona Bússola explica com calma.",
   "imagem": {
     "arquivo": "dia-167.png",
-    "cena": "Uma balança de tribunal desenhada como placa de trânsito, com dois pratos cobertos por campânulas fechadas, numa mesa tranquila perto de uma janela com cortina. Tom sereno, sem piada.",
+    "cena": "Numa sala tranquila, perto de uma janela com cortina, duas portas iguais e fechadas ficam lado a lado. A Dona Bússola, diante delas, está com o ponteiro parado entre as duas. Na parede, um quadrinho 2x2 em branco. Tom sereno, sem piada.",
     "foco": "50% 35%",
-    "alt": "Uma balança de tribunal desenhada como placa de trânsito, com dois pratos cobertos por campânulas fechadas, numa mesa tranquila perto de uma janela com cortina."
+    "alt": "Dona Bússola diante de duas portas iguais e fechadas, com o ponteiro parado entre elas, numa sala tranquila."
   },
   "imagem_macete": {
     "arquivo": "dia-167-macete.png",
-    "cena": "As campânulas se abrem: nos dois pratos está a mesma carta escrita à mão, com um selo de coração (a vontade do paciente). A balança fica perfeitamente nivelada, e ao lado aparecem uma manta dobrada e um travesseiro macio, o cuidado de conforto.",
-    "alt": "Retirar e não iniciar: mesmo peso na ética"
+    "cena": "As duas portas se abrem para a mesma salinha iluminada, onde está uma carta escrita à mão com selo de coração (a vontade do paciente), uma manta dobrada e um travesseiro macio. O ponteiro da Dona Bússola aponta para a carta.",
+    "alt": "As duas portas abrem para a mesma sala, com uma carta de selo de coração, uma manta e um travesseiro."
   },
   "questao": {
     "vinheta": "An 81-year-old man has been on mechanical ventilation for 10 days after a severe anoxic brain injury; neurology expects no meaningful recovery. His advance directive refuses prolonged life support. His wife, the health care proxy, asks to remove the ventilator. A resident says stopping is different from never starting.",
@@ -66,9 +67,9 @@
       "D": "Morte encefálica não é pré-requisito para retirar um suporte que o paciente recusou."
     },
     "macete": {
-      "frase": "Na balança da ética, *retirar* e *não iniciar* pesam exatamente o mesmo: nos dois pratos está a mesma carta, a *vontade do paciente*. Quem decide é ela, não o momento em que o suporte começou.",
-      "apoio": "O NBME costuma colocar um colega ou um familiar dizendo que \"agora que começou não dá para parar\": a resposta respeita a vontade documentada do paciente e garante conforto.",
-      "fala": null
+      "frase": "*Retirar* e *não iniciar* são duas portas para a mesma sala: a vontade do paciente",
+      "apoio": "Quem decide é a vontade documentada e o representante, não o momento em que o suporte começou. O conforto entra junto.",
+      "fala": "Meu norte é o paciente. Por qualquer uma das portas, chego na vontade dele."
     }
   },
   "legenda": {
@@ -81,7 +82,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Esposa pede retirar o ventilador. E agora?"
+    "pergunta": "Diretiva recusa suporte prolongado e a procuradora pede retirar: qual conduta?"
   },
   "cta": "simulado",
   "exemplo": false

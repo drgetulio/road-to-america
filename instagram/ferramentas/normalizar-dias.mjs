@@ -29,6 +29,7 @@ export const APOIO = {
   // anfitriões dos quadros (PROGRAMA.md, seção 3)
   termica: 'a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard',
   allen: 'a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be',
+  bussola: 'a round brass pocket-compass character with a yellow case and navy rim, a red needle on her pale face, big friendly eyes, a small green scarf and a tiny blank notebook',
 };
 const NOMES = {
   Macro: 'Macrô', 'Macrô': 'Macrô', Mito: 'Mito', 'Seu Nefron': 'Seu Néfron', 'Seu Néfron': 'Seu Néfron', 'Capitã Plaqueta': 'Capitã Plaqueta',

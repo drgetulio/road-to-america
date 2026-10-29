@@ -8,23 +8,24 @@
   "topico": "Síndrome de Klinefelter",
   "conceito": "Klinefelter syndrome 47,XXY: seminiferous tubule dysgenesis, low inhibin, high FSH",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-04-01",
   "tom": null,
-  "gancho": "Fábrica parada, *chefe* gritando: quem desligou o setor dos túbulos?",
+  "gancho": "Fábrica parada e o chefe lá em cima *gritando no viva-voz*: quem desligou o setor?",
   "gancho_apoio": "Infertilidade, testículos pequenos e um hormônio da hipófise lá no alto.",
   "imagem": {
     "arquivo": "dia-150.png",
-    "cena": "Uma fábrica em corte, estilo manual de montagem: no térreo, dois setores, um com uma esteira parada e empoeirada, outro trabalhando devagar. No andar de cima, um chefe em forma de glândula gira um botão de volume no painel.",
+    "cena": "Uma fábrica em corte, estilo manual de montagem: no térreo, dois setores, um com a esteira parada e empoeirada, outro trabalhando devagar. No andar de cima, um chefe em forma de glândula grita num viva-voz e gira um botão de volume. Seu Allen, de prancheta, confere a planta.",
     "foco": "50% 35%",
-    "alt": "Fábrica em corte: um setor parado e empoeirado, outro devagar; no alto, um chefe em forma de glândula gira um botão."
+    "alt": "Fábrica em corte com um setor parado e outro lento; no alto, o chefe grita no viva-voz; Seu Allen confere."
   },
   "imagem_macete": {
     "arquivo": "dia-150-macete.png",
-    "cena": "Callback: na planta da fábrica, um cromossomo X extra está colado no projeto. Do setor parado não sobe nenhuma carta pelo tubo de correio, e o chefe lá em cima gira o botão até o máximo.",
+    "cena": "Na planta da fábrica, um cromossomo X extra está colado no projeto. Do setor parado não sobe nenhuma carta pelo tubo de correio, e o chefe gira o botão até o máximo.",
     "foco": "50% 40%",
-    "alt": "Um cromossomo X extra colado no projeto; o tubo de correio do setor parado não leva carta e o chefe gira o botão até o máximo."
+    "alt": "Um X extra colado na planta; o tubo de correio do setor parado não leva carta e o chefe gira o botão até o máximo."
   },
   "questao": {
     "vinheta": "A 28-year-old man is evaluated for infertility. He is 191 cm tall, with small, firm testes and sparse facial and body hair. Semen analysis shows azoospermia. Serum FSH and LH are elevated, testosterone is low-normal and inhibin B is low.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "XXY: *mais um X, menos inibina, mais FSH*",
-      "apoio": "Na imagem, o setor dos túbulos fecha, a carta de inibina não sobe e o chefe lá em cima aumenta o FSH.",
-      "fala": null
+      "apoio": "Sertoli fraco derruba a inibina e sobe o FSH; Leydig fraco derruba a testosterona e sobe o LH.",
+      "fala": "Sobrou peça? Sobrou um X. E faltou a carta de inibina."
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê na genética e na endocrinologia: um casal procura ajuda para engravidar e os exames contam a história do eixo hormonal.",
+    "contexto": "Quarta do Porquê na genética e na endocrinologia: um casal procura ajuda para engravidar, e os exames contam a história do eixo hormonal.",
     "palavras_chave": [
       "infertility",
       "tall stature",
@@ -87,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Azoospermia e FSH alto: qual cariótipo?"
+    "pergunta": "Homem alto, testículo pequeno, azoospermia e FSH alto: qual cariótipo?"
   },
   "cta": null,
   "reel": null,

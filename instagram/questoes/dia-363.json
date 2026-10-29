@@ -8,21 +8,22 @@
   "topico": "Comunicação de erro médico",
   "conceito": "Medical error disclosure: tell the patient promptly and honestly what happened and what will be done",
   "personagem": null,
+  "anfitriao": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-10-31",
   "tom": null,
-  "gancho": "O VAR não esconde o lance: *e o médico?*",
-  "gancho_apoio": "Uma dose dada ao paciente errado, sem dano até agora.",
+  "gancho": "Enoxaparina no leito errado e *um paciente contando as visitas*",
+  "gancho_apoio": "Uma dose dada ao paciente errado, sem dano até agora, e um paciente que já percebeu o movimento.",
   "imagem": {
     "arquivo": "dia-363.png",
-    "cena": "À beira de um campo de futebol, um monitor de VAR com a tela em branco, um apito e um boné de árbitro num banco; o Viés, de trás de uma tabela 2x2, tenta cobrir a tela com o lençol.",
+    "cena": "À beira de um campo de futebol, um monitor de VAR com a tela em branco, um apito e um boné de árbitro num banco; o Viés, de trás de uma tabela 2x2, examina a tela em branco com a lupa.",
     "foco": "50% 35%",
-    "alt": "O VAR não esconde o lance: e o médico?"
+    "alt": "Enoxaparina no leito errado e um paciente contando as visitas"
   },
   "imagem_macete": {
     "arquivo": "dia-363-macete.png",
-    "cena": "Callback: a tela do VAR mostra um grande ícone de replay em círculo para o estádio todo, ao lado de uma balança desenhada como placa de trânsito e de um balão de fala em forma de coração; o lençol do Viés ficou caído no chão.",
+    "cena": "Callback: a tela do VAR mostra um grande ícone de replay em círculo para o estádio inteiro, ao lado de uma balança desenhada como placa de trânsito e de um balão de fala em forma de coração; o Viés guarda a lupa, sem ter o que procurar.",
     "foco": "50% 45%",
     "alt": "Erro com o paciente: disclosure honesto e rápido"
   },
@@ -66,9 +67,9 @@
       "D": "Notificar é obrigatório para a segurança do paciente, mas não dispensa a conversa honesta com ele."
     },
     "macete": {
-      "frase": "*Seja o VAR*: mostra o lance, explica, diz o plano",
-      "apoio": "O VAR mostra o replay para o estádio inteiro, explica a decisão e o jogo segue. No erro médico, é igual: o que aconteceu, o que significa, o que vai ser feito e um pedido de desculpas. Esconder o lance é que dá cartão vermelho.",
-      "fala": null
+      "frase": "*Seja o VAR*: mostra o lance, explica e diz o plano",
+      "apoio": "O VAR mostra o replay para o estádio inteiro, explica a decisão e o jogo segue. No erro médico é igual: o que aconteceu, o que significa, o que vai ser feito e um pedido de desculpas, mesmo sem dano. Notificar o incidente é obrigação, mas não substitui a conversa. Erro escondido é lance polêmico sem VAR: vira assunto por 20 anos.",
+      "fala": "Se escondeu o erro, eu fiquei."
     }
   },
   "legenda": {
@@ -92,7 +93,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dose errada, sem dano. O que fazer?"
+    "pergunta": "Enoxaparina no paciente errado, sem sangramento: o que fazer agora?"
   },
   "cta": "simulado",
   "reel": null,

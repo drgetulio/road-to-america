@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Profilaxia no HIV (dia 30), Bronquiolite (dia 123), Insuficiência cardíaca com fração reduzida (dia 149)",
   "conceito": "Remix: HIV with CD4 below 200 + RSV bronchiolitis + HFrEF mortality pillars",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": [
     30,
@@ -16,69 +17,68 @@
   ],
   "explicacao_em": "2027-04-05",
   "tom": null,
-  "gancho": "Remix de domingo: três condutas e um *intruso* no plantão",
-  "gancho_apoio": null,
+  "gancho": "Coração *zerado* nos quatro pilares e HIV de volta ao tratamento. O que ainda falta?",
+  "gancho_apoio": "Remix de Step 2 CK com profilaxia no HIV (dia 30) e ICFER (dia 149); a bronquiolite (dia 123) volta no macete.",
   "imagem": {
     "arquivo": "dia-154.png",
-    "cena": "Um toca-discos de DJ com três discos de rótulos coloridos (um escudo, um galhinho de bronquíolo e um coração sobre quatro colunas) e um quarto disco estranho, de outra cor, tentando entrar na pilha.",
+    "cena": "Dona Térmica, num domingo de plantão, monta uma marmita de quatro andares: três potes já fechados e encaixados e um quarto pote vazio, de tampa ao lado. Um relógio sem números marca 3 horas e, num canto da bancada, há um pequeno disco de vinil.",
     "foco": "50% 35%",
-    "alt": "Um toca-discos de DJ com três discos de rótulos coloridos (um escudo, um galhinho de bronquíolo e um coração sobre quatro colunas) e um quarto disco estranho, de outra cor, tentand"
+    "alt": "Dona Térmica monta uma marmita de quatro andares com três potes fechados e um vazio, num domingo de plantão."
   },
   "imagem_macete": {
     "arquivo": "dia-154-macete.png",
-    "cena": "O disco do escudo toca e acende verde: TMP-SMX abaixo de 200. Os discos do bronquíolo e do coração ganham um risco vermelho (sem spray na bronquiolite, sem diurético sozinho na IC), e o disco intruso é barrado na porta por um cone.",
-    "alt": "Abaixo de 200, o escudo é TMP-SMX"
+    "cena": "No quarto pote entra um guarda-chuva dobrado (a profilaxia). Ao lado, uma bananinha num pires lembra de vigiar o potássio, e Dona Térmica fecha a marmita com um clique.",
+    "alt": "Um guarda-chuva dobrado entra no quarto pote; uma bananinha no pires lembra o potássio."
   },
   "questao": {
-    "vinheta": "On Sunday review rounds, a resident writes four next-step flashcards from recent cases. Only one of them follows current US guidelines.",
-    "pergunta": "Which flashcard is correct?",
+    "vinheta": "A 54-year-old man with HIV and ischemic cardiomyopathy (LVEF 30%) is euvolemic on sacubitril-valsartan, metoprolol succinate, spironolactone and empagliflozin. He restarted antiretroviral therapy 1 month ago after a long gap. CD4 count is 160/µL, he has no thrush, and Toxoplasma IgG is negative.",
+    "pergunta": "Which is the most appropriate additional measure?",
     "alternativas": {
       "A": {
-        "texto": "HIV with CD4 150 cells/µL: start TMP-SMX prophylaxis",
-        "quiz": "CD4 150: TMP-SMX",
+        "texto": "Start daily TMP-SMX",
+        "quiz": "TMP-SMX diário",
         "dia": 30
       },
       "B": {
-        "texto": "RSV bronchiolitis at 4 months: albuterol and dexamethasone",
-        "quiz": "VSR: corticoide",
-        "dia": 123
-      },
-      "C": {
-        "texto": "HFrEF with EF 30%: furosemide alone lowers mortality",
-        "quiz": "IC: só furosemida",
+        "texto": "Add digoxin",
+        "quiz": "Acrescentar digoxina",
         "dia": 149
       },
+      "C": {
+        "texto": "Start weekly azithromycin",
+        "quiz": "Azitromicina semanal"
+      },
       "D": {
-        "texto": "HIV with CD4 150 cells/µL: start azithromycin for MAC",
-        "quiz": "Azitro p/ MAC"
+        "texto": "Start daily oral fluconazole",
+        "quiz": "Fluconazol diário"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Abaixo de 200, o escudo é *TMP-SMX*",
+    "titulo": "Abaixo de 200, o escudo é *TMP-SMX*, mesmo com o coração em dia",
     "certa": [
-      "Com *CD4* abaixo de 200 células/µL (ou candidíase oral), o HIV pede profilaxia de *Pneumocystis jirovecii* com *TMP-SMX*, que também protege contra toxoplasmose quando o CD4 cai abaixo de 100 com IgG positiva. A profilaxia pode ser suspensa quando o CD4 fica acima de 200 por 3 meses com a terapia antirretroviral."
+      "Com CD4 abaixo de 200/µL, o HIV pede profilaxia de Pneumocystis jirovecii com TMP-SMX, mantida até o CD4 ficar acima de 200 por 3 meses com a terapia antirretroviral. A insuficiência cardíaca já está nos quatro pilares (ARNI, betabloqueador, antagonista mineralocorticoide e iSGLT2), então nada falta ali. Como ele usa espironolactona e sacubitril-valsartana, o potássio precisa ser acompanhado: o trimetoprim age como a amilorida no túbulo coletor."
     ],
     "termos": [
       "Pneumocystis prophylaxis",
       "TMP-SMX",
-      "RSV bronchiolitis",
-      "HFrEF"
+      "CD4 below 200",
+      "trimethoprim hyperkalemia"
     ],
     "erradas": {
-      "B": "Dia 123: na *bronchiolitis* por VSR o tratamento é de suporte (oxigênio se a saturação cair, hidratação, aspiração nasal); salbutamol e corticoide de rotina não são recomendados.",
-      "C": "Dia 149: a furosemida alivia a congestão, mas não reduz mortalidade; quem reduz são os quatro pilares (ARNI ou IECA, betabloqueador, antagonista mineralocorticoide e iSGLT2).",
-      "D": "Intruso: a profilaxia de MAC só se considera com CD4 abaixo de 50 e quando a terapia antirretroviral não começa logo; com CD4 de 150 não há indicação."
+      "B": "Dia 149: a digoxina reduz internação e sintomas, mas não a mortalidade, e ele já está com os quatro pilares completos.",
+      "C": "Intruso: a profilaxia de MAC só se considera com CD4 abaixo de 50 e sem terapia antirretroviral eficaz; com CD4 de 160 não há indicação.",
+      "D": "Fluconazol profilático não é recomendado de rotina; sem candidíase, não há indicação."
     },
     "macete": {
-      "frase": "Abaixo de *200*, o escudo é o *TMP-SMX*; bebê com VSR ganha *colo e oxigênio*, não spray; coração fraco precisa dos *quatro pilares*, não só de diurético.",
-      "apoio": "O NBME gosta de oferecer a profilaxia de MAC com CD4 entre 50 e 200 e o broncodilatador na bronquiolite: as duas condutas parecem ativas, mas estão fora da diretriz.",
-      "fala": null
+      "frase": "CD4 abaixo de 200: *guarda-chuva aberto* com TMP-SMX, mesmo com o coração em dia",
+      "apoio": "Com espironolactona e ARNI, confira o potássio: o trimetoprim age como amilorida. Bônus: bronquiolite é aspira, hidrata e observa.",
+      "fala": "Já vi esse caso às 3 da manhã: o coração estava em dia, o guarda-chuva não."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix: três condutas de Step 2 CK que já passaram por aqui (dias 30, 123 e 149) e um intruso. Só um cartão segue a diretriz americana.",
+    "contexto": "Remix de Domingo: homem de 54 anos com ICFER nos quatro pilares, de volta à terapia antirretroviral, CD4 de 160, sem sapinho e com toxoplasma negativo. Qual é a medida que falta?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,7 +86,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual conduta está certa?"
+    "pergunta": "ICFER nos 4 pilares, HIV com CD4 160 e toxo negativo: o que acrescentar?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

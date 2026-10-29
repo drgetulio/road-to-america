@@ -13,19 +13,19 @@
   "explicacao_em": "2027-03-06",
   "tom": null,
   "cvv": true,
-  "gancho": "O fígado ficou sem *estoque* de glutationa. Quem repõe?",
-  "gancho_apoio": "Na farmácia da Tia Meia-Vida, um antídoto clássico que todo plantão precisa saber.",
+  "gancho": "AST normal 4 horas depois não é alta: a conta do fígado *chega depois*",
+  "gancho_apoio": "Na farmácia da Tia Meia-Vida, um gráfico decide antes do exame do fígado.",
   "imagem": {
     "arquivo": "dia-124.png",
-    "cena": "Um armazém em forma de fígado tem as prateleiras de potes iguais quase vazias, e uma poça roxa e grudenta se espalha no chão. A Tia Meia-Vida olha do balcão da farmácia com a mão no queixo.",
+    "cena": "Tia Meia-Vida, de prancheta com um gráfico de linha, visita um armazém em forma de fígado. As prateleiras de potes amarelos iguais estão quase vazias e, na porta, um carteiro deixa um envelope fechado, sem pressa nenhuma.",
     "foco": "50% 35%",
-    "alt": "Armazém em forma de fígado com prateleiras vazias e uma poça roxa; a Tia Meia-Vida observa do balcão."
+    "alt": "Tia Meia-Vida num armazém em forma de fígado com prateleiras quase vazias; um carteiro deixa um envelope fechado na porta."
   },
   "imagem_macete": {
     "arquivo": "dia-124-macete.png",
-    "cena": "Callback: um caminhãozinho de entrega estaciona e a Tia Meia-Vida passa caixas de potes amarelos cor de enxofre para as prateleiras do fígado. A poça roxa encolhe à medida que os potes voltam.",
+    "cena": "Um caminhãozinho verde estaciona e a Tia Meia-Vida descarrega caixas de potes amarelos cor de enxofre; as prateleiras voltam a encher e o envelope fechado vai direto para a lixeira.",
     "foco": "50% 40%",
-    "alt": "Caminhão de entrega e a Tia Meia-Vida reabastecem as prateleiras do fígado com potes amarelos."
+    "alt": "Tia Meia-Vida reabastece as prateleiras do fígado com potes amarelos e joga o envelope fechado na lixeira."
   },
   "questao": {
     "vinheta": "A 20-year-old woman is brought to the emergency department 4 hours after ingesting about forty 500-mg acetaminophen tablets. She is nauseated but alert, and vital signs are normal. Her 4-hour serum acetaminophen concentration is above the treatment line on the Rumack-Matthew nomogram. AST and ALT are normal.",
@@ -68,12 +68,12 @@
     },
     "macete": {
       "frase": "NAC = *Novo Abastecimento de Cisteína* para o estoque de glutationa",
-      "apoio": "Na imagem, o caminhão da Tia Meia-Vida reabastece as prateleiras vazias do fígado.",
-      "fala": null
+      "apoio": "Acima da linha do nomograma, a partir de 4 horas: começa a NAC, mesmo com AST e ALT normais.",
+      "fala": "A transaminase só sobe em 24 a 72 horas. Quem decide hoje é o nível no nomograma."
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia com um antídoto que cai em toda prova e em todo pronto-socorro. Um nível sérico, um gráfico e uma decisão.",
+    "contexto": "Sextou na Farmácia. Ingestão única, horário conhecido, nível sérico de 4 horas acima da linha do gráfico e transaminases ainda normais. Qual remédio entra agora?",
     "palavras_chave": [
       "intentional overdose",
       "acetaminophen level",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Paracetamol acima da linha: qual o antídoto?"
+    "pergunta": "Paracetamol acima da linha do nomograma às 4 horas: qual remédio?"
   },
   "cta": null,
   "reel": null,
