@@ -63,5 +63,5 @@ export function avisoDemoBanco(ctx) {
 /* Rótulo de confiança da estimativa do banco */
 export function chipConfianca(est) {
   if (!est) return '<span class="gar gar--neutro">sem respostas</span>';
-  return est.confianca?.alta ? '<span class="gar gar--ok">' + icon("seal-check") + "Alta confiança</span>" : '<span class="gar gar--aviso">Estimativa preliminar</span>';
+  return est.confianca?.alta ? '<span class="gar gar--ok">' + icon("seal-check") + "Precisão alta</span>" : '<span class="gar gar--aviso">Estimativa preliminar</span>';
 }

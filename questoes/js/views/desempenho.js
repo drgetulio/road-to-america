@@ -2,7 +2,7 @@
    Perfil por área como no relatório oficial de reprovação (mais baixo, igual ou mais
    alto que o examinando no limiar), a partir das primeiras respostas a cada item. */
 import { estimarAluno, prepararRespostas } from "../../../plataforma/js/psicometria.js";
-import { sistemasDoOutline } from "../../../plataforma/js/banco.js";
+import { sistemasDoOutline, pesosDoOutline } from "../../../plataforma/js/banco.js";
 import { curvaEvolucao, chavesDaDimensao, estatisticasAluno, LIMITES_BLOCO } from "../../../plataforma/js/banco-aluno.js";
 import { $, e, icon } from "../../../anki/js/ui.js";
 import { cabecalho, abas, seletorStep, NOME_STEP, pct, pctProb, plural, dataBR, segundos, nome, ROTULO_DIM, CLASSE_PERFIL, svgEvolucao, barraLimiar } from "../comum.js";
@@ -17,7 +17,7 @@ export default {
     const raiz = $("[data-raiz]", el);
     let step = ["step1", "step2ck"].includes(params.get("step")) ? params.get("step") : ctx.step;
     const desenhar = () => {
-      const est = estimarAluno({ step, respostas: ctx.respostas, itens: ctx.banco.porId, sistemas: sistemasDoOutline(step) });
+      const est = estimarAluno({ step, respostas: ctx.respostas, itens: ctx.banco.porId, sistemas: sistemasDoOutline(step), pesosSistemas: pesosDoOutline(step) });
       const curva = curvaEvolucao({ respostas: ctx.respostas, itens: ctx.banco.porId, step });
       const st = estatisticasAluno(ctx.banco, ctx.historico, step);
       const { usadas } = prepararRespostas(ctx.respostas, ctx.banco.porId, { step });
@@ -25,7 +25,7 @@ export default {
       const tMedio = cron.length ? cron.reduce((s, r) => s + r.tempo_ms, 0) / cron.length : null;
       const nTutor = usadas.filter((u) => u.modo === "tutor").length;
       raiz.innerHTML = '<div class="wrap section-sm q-pag">' +
-        cabecalho({ titulo: "Desempenho", lead: "Como você está em cada área do outline em relação ao examinando no limiar de aprovação, e como a probabilidade de aprovação mudou a cada sessão. Conta a primeira resposta a cada item: a repetição mede memória do item, não habilidade." }) +
+        cabecalho({ titulo: "Desempenho", lead: "Como você está em cada área do outline em relação ao examinando no limiar do banco, e como a probabilidade de estar acima do limiar mudou a cada sessão. Conta a primeira resposta a cada item: a repetição mede memória do item, não habilidade." }) +
         abas("desempenho") +
         seletorStep(step) +
         '<dl class="q-nums q-nums--faixa">' +
@@ -37,7 +37,7 @@ export default {
         "</dl>" +
 
         '<section class="panel" aria-labelledby="ev-t"><div class="panel__head"><h2 class="h-sm" id="ev-t">Curva de evolução</h2>' +
-          '<p class="hint">Cada ponto é uma sessão (bloco do banco, simulado completo ou bloco de 30 minutos): a probabilidade de aprovação com todas as respostas até ali. Entre 10% e 90% a estimativa ainda não decide.</p></div>' +
+          '<p class="hint">Cada ponto é uma sessão (bloco do banco, simulado completo ou bloco de 30 minutos): a probabilidade de estar acima do limiar do banco com todas as respostas até ali. Entre 10% e 90% a estimativa ainda não decide.</p></div>' +
           (curva.length
             ? svgEvolucao(curva) +
               '<details class="q-tabela-dados"><summary>Ver os valores em tabela</summary><div class="q-tab-wrap"><table class="q-tab"><thead><tr><th scope="col">Sessão</th><th scope="col">Data</th><th scope="col" class="num">Acerto na sessão</th><th scope="col" class="num">Limiar na sessão</th><th scope="col" class="num">Itens acumulados</th><th scope="col" class="num">Probabilidade</th></tr></thead><tbody>' +
@@ -65,7 +65,7 @@ export default {
             sem.map((k) => '<tr class="is-sem"><th scope="row">' + e(nome(step, d, k)) + '</th><td class="num">0</td><td colspan="2"><span class="muted">Sem itens respondidos</span></td><td><a class="link-btn" href="#/criar?step=' + step + "&" + (DIM_TAX[d] || d) + "=" + encodeURIComponent(k) + '&situacao=nao_vistas" aria-label="' + e("Criar bloco de " + nome(step, d, k)) + '">' + icon("plus-circle") + "Bloco</a></td></tr>").join("") +
             "</tbody></table></div></section>";
         }).join("") +
-        '<p class="q-nota">' + icon("info") + "<span>O relatório oficial de quem é reprovado no USMLE mostra o desempenho por área em relação ao examinando com aprovação baixa (mais baixo, igual ou mais alto). Aqui a comparação é com o limiar do banco, fixado por Angoff; não é resultado oficial. Método em plataforma/PSICOMETRIA.md, seção 8.</span></p>" +
+        '<p class="q-nota">' + icon("info") + "<span>O relatório oficial de quem é reprovado no USMLE mostra o desempenho por área em relação ao examinando com aprovação baixa (mais baixo, igual ou mais alto). Aqui a comparação é com o limiar do banco, hoje provisório (dificuldade-alvo dos itens); não é resultado oficial. Método em plataforma/PSICOMETRIA.md, seção 8.</span></p>" +
       "</div>";
     };
     desenhar();

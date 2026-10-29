@@ -49,7 +49,9 @@ test("calibração da P(aprovação): entre examinandos simulados que recebem P 
     const n = 40 + Math.floor(random() * 160);
     const rs = [];
     for (let k = 0; k < n; k++) { const b = bs[Math.floor(random() * bs.length)]; rs.push({ b, x: random() < expit(theta - b) ? 1 : 0 }); }
-    const e = eap(rs, { grade: GRADE_RAPIDA });
+    /* só a incerteza da medida (sigmaCorte 0): aqui o padrão é conhecido */
+    const e = eap(rs, { grade: GRADE_RAPIDA, sigmaCorte: 0 });
+    assert.equal(e.p_aprovacao, e.p_medida);
     res.push({ p: e.p_aprovacao, aprovado: theta > 0, dentro: e.ic90[0] <= theta && theta <= e.ic90[1] });
   }
   const faixa = (lo, hi) => { const s = res.filter((r) => r.p >= lo && r.p < hi); return { n: s.length, real: s.filter((r) => r.aprovado).length / s.length, media: s.reduce((a, r) => a + r.p, 0) / s.length }; };
@@ -81,11 +83,22 @@ test("percentual esperado: no limiar é a média dos Angoff; com mais habilidade
 
 test("regra de confiança: alta só com P decidida, N mínimo de itens e 80% dos sistemas; senão diz quantos itens faltam", () => {
   const sist = ["a", "b", "c", "d", "e"];
-  const cob = cobertura({ a: 3, b: 1, c: 2, d: 1 }, sist);
+  const cob = cobertura({ a: 3, b: 1, c: 2, d: 1 }, sist, { minPorSistema: 1 });
   assert.equal(cob.proporcao, 0.8);
+  /* mínimo padrão: 5 itens por sistema e metade do que o peso pede */
+  assert.equal(cobertura({ a: 3, b: 1, c: 2, d: 1 }, sist).proporcao, 0);
+  const cp = cobertura({ a: 40, b: 6, c: 5, d: 5, e: 4 }, sist, { pesos: { a: 0.6, b: 0.1, c: 0.1, d: 0.1, e: 0.1 }, nTotal: 60 });
+  assert.deepEqual(cp.minimos, { a: 18, b: 5, c: 5, d: 5, e: 5 });
+  assert.deepEqual(cp.faltando, ["e"]);
   assert.deepEqual(cob.faltando, ["e"]);
   const base = { theta: 0.5, dp: 0.24, n_efetivo: 80, n_minimo: 75, cob };
-  assert.equal(classificarConfianca({ ...base, p: 0.93 }).rotulo, "alta_confianca");
+  assert.equal(classificarConfianca({ ...base, p: 0.93 }).rotulo, "precisao_alta");
+  assert.match(classificarConfianca({ ...base, p: 0.93 }).texto, /^Precisão alta em relação ao padrão do banco \(padrão provisório\)$/);
+  assert.doesNotMatch(classificarConfianca({ ...base, p: 0.93, origemCorte: "painel" }).texto, /provisório/);
+  /* com o padrão incerto, perto do limiar nenhum número de itens decide */
+  const lim = classificarConfianca({ ...base, p: 0.7, theta: 0.3, dp: 0.2, sigmaCorte: 0.4 });
+  assert.equal(lim.faltam_itens, null);
+  assert.equal(lim.padrao_limita, true);
   assert.equal(classificarConfianca({ ...base, p: 0.05, theta: -0.5 }).alta, true);
   const poucos = classificarConfianca({ ...base, p: 0.99, n_efetivo: 40 });
   assert.equal(poucos.rotulo, "estimativa_preliminar");
@@ -143,7 +156,8 @@ test("estimarAluno: primeira resposta conta; tutor com peso 0,5; em branco no tu
   assert.equal(e.base, "angoff");
   assert.equal(e.oficial, false);
   assert.equal(e.confianca.rotulo, "estimativa_preliminar");
-  assert.ok(e.confianca.faltam_itens > 0);
+  assert.ok(e.confianca.faltam_itens_minimo > 0);
+  assert.ok(e.confianca.faltam_itens === null ? e.confianca.padrao_limita || e.confianca.perto_do_limiar : e.confianca.faltam_itens > 0);
   assert.equal(e.limiar.escore_oficial, PADRAO_STEP2CK);
   assert.match(e.avisos.join(" "), /218/);
   assert.match(e.avisos.join(" "), /três dígitos só será estimada depois da calibração/);
@@ -152,7 +166,7 @@ test("estimarAluno: primeira resposta conta; tutor com peso 0,5; em branco no tu
   assert.deepEqual(Object.keys(e.perfil), ["sistema", "disciplinas_oficiais", "competencia", "area"]);
 });
 
-test("estimarAluno com aluno simulado forte e muitas respostas chega a alta confiança", () => {
+test("estimarAluno com aluno simulado forte e muitas respostas chega à precisão alta", () => {
   const banco = montarBanco(gerarBancoSintetico({ porStep: 400, semente: 9 }));
   const random = rng(77);
   const theta = 1.0;
@@ -164,7 +178,7 @@ test("estimarAluno com aluno simulado forte e muitas respostas chega a alta conf
   assert.ok(e.n_efetivo >= e.confianca.n_minimo, "n " + e.n_efetivo + " para mínimo " + e.confianca.n_minimo);
   assert.ok(e.dp < 0.3, "dp " + e.dp);
   assert.ok(e.p_aprovacao >= 0.9);
-  assert.equal(e.confianca.rotulo, "alta_confianca");
+  assert.equal(e.confianca.rotulo, "precisao_alta");
   assert.ok(e.cobertura.proporcao >= 0.8);
   assert.equal(e.confianca.faltam_itens, 0);
 });
@@ -308,9 +322,10 @@ test("regressão logística e desfechos: recupera coeficientes, exige eventos su
   const d = ajustarDesfechos(regs);
   assert.equal(d.suficiente, true);
   assert.ok(d.auc > 0.8);
+  /* a regressão é calibrada sobre o EAP: dp não entra de novo (não conta o erro de medida duas vezes) */
   const p0 = probAprovacaoDesfechos(d, { theta: 0.5, dp: 0 });
   const p1 = probAprovacaoDesfechos(d, { theta: 0.5, dp: 0.8 });
-  assert.ok(p1 < p0, "com mais incerteza a probabilidade se aproxima de 0,5");
+  assert.equal(p1, p0, "dp é ignorado");
   const esc = ajustarEscore(X.slice(0, 40).map((x) => ({ theta: x[0], escore: Math.round(230 + 12 * x[0] + 8 * normalAleatoria(random)) })));
   assert.equal(esc.suficiente, true);
   assert.ok(Math.abs(esc.b - 12) < 5);
@@ -346,4 +361,245 @@ test("textoProbabilidade: o mesmo texto em todas as telas, sem cruzar os cortes 
   assert.equal(textoProbabilidade(1), "> 99%");
   assert.equal(textoProbabilidade(null), "sem dados");
   assert.equal(textoProbabilidade(Number.NaN), "sem dados");
+});
+
+/* ---------- correções da rodada 1 da banca (29/10/2026) ---------- */
+import { pAcimaDoCorte, incertezaCorte, intervaloRelativo, ponderarPeloOutline, intervaloDesfechos, estimarEfeitoModo, INCERTEZA_CORTE } from "../js/psicometria.js";
+
+/* Validação do sigma_c provisório (PSICOMETRIA.md, seção 6.1). Formulário de 280 itens
+   com a mistura 20/55/25, erro de cada item com DP de 0,6 logit em torno da
+   dificuldade-alvo e o banco inteiro deslocado (vies) em relação a ela. Erro: a
+   classificação decidida (P >= 0,90 ou <= 0,10) do lado errado do limiar verdadeiro.
+   Os números da tabela da seção 6.1 saem daqui (semente 20261029). */
+function cenarioPadrao({ vies, sigma, media = 0, n = 500 }) {
+  const random = rng(20261029);
+  const angs = Array.from({ length: 280 }, (_, i) => [0.85, 0.69, 0.5][i % 20 < 4 ? 0 : i % 20 < 15 ? 1 : 2] + (random() - 0.5) * 0.08);
+  const b0 = angs.map(bDeAngoff);
+  const r2 = rng(7);
+  const bv = b0.map((b) => b + vies + 0.6 * normalAleatoria(r2));
+  let alta = 0, erro = 0;
+  for (let j = 0; j < n; j++) {
+    const th = media + 0.8 * normalAleatoria(r2);
+    const rs = b0.map((b, i) => ({ b, x: r2() < expit(th - bv[i]) ? 1 : 0 }));
+    const e = eap(rs, { grade: { min: -6, max: 6, passo: 0.05 }, sigmaCorte: sigma });
+    if (e.p_aprovacao >= 0.9 || e.p_aprovacao <= 0.1) { alta++; if ((e.p_aprovacao >= 0.9) !== (th > 0)) erro++; }
+  }
+  return { decididos: alta / n, taxa: alta ? erro / alta : 0 };
+}
+
+test("incerteza do padrão: com sigma_c = 0,7 a classificação decidida erra menos de 4% até 0,75 logit de viés; 1,0 logit é o limite documentado", () => {
+  const sig = INCERTEZA_CORTE.provisorio;
+  assert.equal(sig, 0.7);
+  const sem = cenarioPadrao({ vies: -0.5, sigma: 0 });
+  assert.ok(sem.taxa > 0.12, "sem a incerteza do padrão, com viés de 0,5 logit a precisão alta erra " + (100 * sem.taxa).toFixed(1) + "%");
+  const antigo = cenarioPadrao({ vies: -0.75, sigma: 0.4 });
+  assert.ok(antigo.taxa > 0.08, "com o sigma antigo de 0,4 e viés de 0,75 logit, erra " + (100 * antigo.taxa).toFixed(1) + "%");
+  for (const vies of [0, -0.5, 0.5, -0.75, 0.75]) {
+    const r = cenarioPadrao({ vies, sigma: sig });
+    assert.ok(r.taxa < 0.04, "viés " + vies + ": erra " + (100 * r.taxa).toFixed(1) + "%");
+  }
+  /* limite do método: com o banco 1,0 logit mais fácil o erro volta a subir */
+  const limite = cenarioPadrao({ vies: -1.0, sigma: sig });
+  assert.ok(limite.taxa > 0.02 && limite.taxa < 0.09, "viés de 1,0 logit: " + (100 * limite.taxa).toFixed(1) + "% (documentado como limite)");
+  /* numa população realista (theta médio +0,9) a maioria ainda é classificada */
+  const real = cenarioPadrao({ vies: -0.75, sigma: sig, media: 0.9 });
+  assert.ok(real.decididos > 0.6 && real.taxa < 0.02, JSON.stringify(real));
+});
+
+test("incertezaCorte: provisório 0,7; painel pelo erro-padrão em logit, com piso; P e intervalo relativo, também com o corte deslocado", () => {
+  assert.equal(incertezaCorte([{ b: 0, x: 1 }]).sigma, 0.7);
+  assert.equal(incertezaCorte([{ b: 0, x: 1, item: { angoff_origem: "painel", angoff: 0.5, angoff_painel_ep: 0.02 } }]).sigma, 0.1, "0,02 / 0,25 = 0,08 vai ao piso de 0,1");
+  const misto = incertezaCorte([{ b: 0, x: 1, item: { angoff_origem: "painel", angoff: 0.5, angoff_painel_ep: 0.05 } }, { b: 0, x: 0, item: { angoff_origem: "item" } }]);
+  assert.ok(Math.abs(misto.sigma - 0.45) < 1e-12 && misto.origem === "misto");
+  const post = posteriorGrade([], { priori: { media: 1, dp: 0.3 } });
+  /* theta ~ N(1; 0,3²) e c ~ N(0; 0,4²): theta - c ~ N(1; 0,5²) */
+  assert.ok(Math.abs(pAcimaDoCorte(post, 0.4) - normalCdf(2)) < 1e-4);
+  const ic = intervaloRelativo(post, 0.4);
+  assert.ok(Math.abs(ic[0] - (1 - 1.6449 * 0.5)) < 0.01 && Math.abs(ic[1] - (1 + 1.6449 * 0.5)) < 0.01, JSON.stringify(ic));
+  /* c ~ N(0,5; 0,4²): theta - c ~ N(0,5; 0,5²) */
+  assert.ok(Math.abs(pAcimaDoCorte(post, 0.4, null, 0.5) - normalCdf(1)) < 1e-4);
+  const ic2 = intervaloRelativo(post, 0.4, 0.9, 0.5);
+  assert.ok(Math.abs(ic2[0] - (0.5 - 1.6449 * 0.5)) < 0.01, JSON.stringify(ic2));
+  assert.ok(Math.abs(pAcimaDoCorte(post, 0, null, 1) - 0.5) < 1e-3, "sem incerteza, P(theta > 1) = 0,5");
+});
+
+test("ponderarPeloOutline: repesa para a composição da prova, com limite, sem mudar a soma dos pesos", () => {
+  const mk = (s, n, x) => Array.from({ length: n }, () => ({ b: 0, x, w: 1, item: { sistema: s } }));
+  const usadas = [...mk("forte", 80, 1), ...mk("fraco", 20, 0)];
+  const r = ponderarPeloOutline(usadas, { forte: 0.5, fraco: 0.5 });
+  const soma = r.usadas.reduce((a, u) => a + u.w, 0);
+  assert.ok(Math.abs(soma - 100) < 1e-9);
+  assert.ok(Math.abs(r.fatores.forte - 0.625) < 1e-9 && Math.abs(r.fatores.fraco - 2.5) < 1e-9, JSON.stringify(r.fatores));
+  assert.ok(Math.abs(r.distancia - 0.3) < 1e-12);
+  /* quem responde sobretudo os sistemas fortes não ganha theta inflado */
+  assert.ok(eap(r.usadas, { sigmaCorte: 0 }).theta < eap(usadas, { sigmaCorte: 0 }).theta);
+  const lim = ponderarPeloOutline([...mk("a", 99, 1), ...mk("b", 1, 0)], { a: 0.5, b: 0.5 });
+  assert.ok(lim.fatores.b / lim.fatores.a <= 9 + 1e-9, "fator limitado a [1/3, 3]");
+});
+
+test("desfechos: 30 aprovados e 30 reprovados para ir ao aluno, covariância dos coeficientes, taxa de resposta e ponderação", () => {
+  const random = rng(44);
+  const regs = [];
+  for (let i = 0; i < 300; i++) { const t = 1.2 * normalAleatoria(random); regs.push({ theta: t, resultado: random() < expit(0.5 + 2 * t) ? "pass" : "fail" }); }
+  const poucos = ajustarDesfechos(regs.slice(0, 50));
+  assert.equal(poucos.suficiente, false);
+  assert.equal(poucos.exploratorio, poucos.aprovados >= 10 && poucos.reprovados >= 10);
+  const d = ajustarDesfechos(regs);
+  assert.ok(d.aprovados >= 30 && d.reprovados >= 30 && d.suficiente);
+  assert.ok(d.cov && d.cov[0][0] > 0 && d.cov[1][1] > 0);
+  const iv = intervaloDesfechos(d, { theta: 0.2, dp: 0.2 });
+  assert.ok(iv.ic90[0] < iv.p && iv.p < iv.ic90[1], JSON.stringify(iv));
+  assert.ok(Math.abs(iv.p - probAprovacaoDesfechos(d, { theta: 0.2, dp: 0.2 })) < 1e-12);
+  /* com poucos eventos o intervalo é mais largo */
+  const d60 = ajustarDesfechos(regs.slice(0, 80), { min_por_classe: 10 });
+  const iv60 = intervaloDesfechos(d60, { theta: 0.2, dp: 0.2 });
+  assert.ok(iv60.ic90[1] - iv60.ic90[0] > iv.ic90[1] - iv.ic90[0]);
+  /* quem não informa o resultado: taxa registrada; abaixo de 50% o modelo não vai ao aluno */
+  const sem = Array.from({ length: 400 }, () => ({ theta: 1.2 * normalAleatoria(random) - 0.5 }));
+  const baixa = ajustarDesfechos(regs, { naoRespondentes: sem });
+  assert.ok(Math.abs(baixa.taxa_resposta - 300 / 700) < 1e-12);
+  assert.equal(baixa.suficiente, false);
+  assert.equal(baixa.ponderado, true);
+  const boa = ajustarDesfechos(regs, { naoRespondentes: sem.slice(0, 100) });
+  assert.equal(boa.suficiente, true);
+});
+
+test("efeito do modo tutor: deslocamento estimado com os dados da turma e aplicado ao b dos itens no tutor", () => {
+  const random = rng(91);
+  const itens = new Map(Array.from({ length: 120 }, (_, i) => ["I" + i, { id: "I" + i, step: "step1", b_angoff: (i % 7 - 3) / 3 }]));
+  const resp = [];
+  for (let j = 0; j < 150; j++) {
+    const th = normalAleatoria(random);
+    for (let i = 0; i < 120; i++) {
+      const tutor = i % 3 === 0;
+      const b = itens.get("I" + i).b_angoff;
+      resp.push({ pessoa: j, questao_id: "I" + i, modo: tutor ? "tutor" : "cronometrado", correta: random() < expit(th - b + (tutor ? 0.6 : 0)) });
+    }
+  }
+  const m = estimarEfeitoModo(resp, itens);
+  assert.ok(m.suficiente && Math.abs(m.delta - 0.6) < 0.2, "delta " + m.delta);
+  const { usadas } = prepararRespostas([{ questao_id: "I0", modo: "tutor", origem: "banco", resposta: "A", correta: true, respondida_em: "2026-10-01" }], itens, { step: "step1", efeitoModo: m });
+  assert.ok(Math.abs(usadas[0].b - (itens.get("I0").b_angoff - m.delta)) < 1e-12);
+});
+
+/* ---------- rodada 2 da banca (29/10/2026) ---------- */
+import { corteLigadoNbme, LIGACAO_NBME, SENSIBILIDADE_PADRAO, nomePadrao } from "../js/psicometria.js";
+
+/* Examinando com theta ~ N(media, 1) em itens fixos; EAP com a priori do banco e
+   posterior com a priori da população (para a probabilidade verdadeira). */
+function examinando(r, bs, media = 0.3) {
+  const th = media + normalAleatoria(r);
+  const rs = bs.map((b) => ({ b, x: r() < expit(th - b) ? 1 : 0 }));
+  const g = { min: -6, max: 6, passo: 0.05 };
+  const e = eap(rs, { grade: g, sigmaCorte: 0 });
+  e.posterior_pop = eap(rs, { grade: g, sigmaCorte: 0, incluirPosterior: true, priori: { media, dp: 1 } }).posterior;
+  return { th, e };
+}
+
+test("desfechos sobre o EAP: calibração e cobertura do intervalo de P; integrar dp de novo piora", () => {
+  const r0 = rng(5);
+  const bs = Array.from({ length: 40 }, () => normalAleatoria(r0) * 0.9);
+  const ruido = 0.5; /* P(Pass | theta) = Phi(theta / 0,5) */
+  let meioT = 0, meioC = 0, errNovo = 0, errVelho = 0, tot = 0;
+  for (let rep = 0; rep < 25; rep++) {
+    const r = rng(100 + rep);
+    const regs = Array.from({ length: 250 }, () => examinando(r, bs)).map(({ th, e }) => ({ theta: e.theta, resultado: r() < normalCdf(th / ruido) ? "pass" : "fail" }));
+    const m = ajustarDesfechos(regs);
+    assert.ok(m.suficiente, "réplica " + rep);
+    for (let k = 0; k < 50; k++) {
+      const { e } = examinando(r, bs);
+      const { pontos, dens } = e.posterior_pop;
+      let verdade = 0;
+      for (let i = 1; i < pontos.length; i++) verdade += 0.5 * (pontos[i] - pontos[i - 1]) * (dens[i] * normalCdf(pontos[i] / ruido) + dens[i - 1] * normalCdf(pontos[i - 1] / ruido));
+      const iv = intervaloDesfechos(m, { theta: e.theta, dp: e.dp });
+      /* abordagem anterior: integrava de novo a incerteza de theta */
+      const C = m.cov, mm = m.beta0 + m.beta1 * e.theta;
+      const sd = Math.sqrt(C[0][0] + 2 * e.theta * C[0][1] + e.theta * e.theta * C[1][1] + (m.beta1 * m.beta1 + C[1][1]) * e.dp * e.dp);
+      let s = 0, w = 0;
+      for (let q = -40; q <= 40; q++) { const z = q / 10, d = Math.exp(-0.5 * z * z); s += d * expit(mm + z * sd); w += d; }
+      errNovo += Math.abs(iv.p - verdade); errVelho += Math.abs(s / w - verdade); tot++;
+      if (verdade > 0.1 && verdade < 0.9) { meioT++; if (verdade >= iv.ic90[0] && verdade <= iv.ic90[1]) meioC++; }
+    }
+  }
+  const cob = meioC / meioT;
+  assert.ok(cob > 0.85 && cob < 0.96, "cobertura do intervalo de 90% entre 10% e 90%: " + (100 * cob).toFixed(1) + "%");
+  assert.ok(errNovo < errVelho, "erro médio " + (errNovo / tot).toFixed(4) + " contra " + (errVelho / tot).toFixed(4) + " integrando dp");
+  assert.ok(errNovo / tot < 0.035);
+  console.log("# cobertura " + (100 * cob).toFixed(1) + "% (" + meioT + " examinandos entre 10% e 90%); erro médio " + (errNovo / tot).toFixed(4) + " contra " + (errVelho / tot).toFixed(4));
+});
+
+test("ligação com a NBME: recupera o theta do padrão, erro-padrão pelo método delta, e o limiar ligado entra no lugar do provisório", () => {
+  assert.deepEqual({ ...LIGACAO_NBME.limiar }, { step1: 196, step2ck: 218 });
+  const r0 = rng(5);
+  const bs = Array.from({ length: 100 }, () => normalAleatoria(r0) * 0.9);
+  /* escore = 200 + 15 theta + N(0; 8²): o padrão 196 fica em theta = -4/15 */
+  const alvo = -4 / 15;
+  let cobre = 0, soma = 0;
+  const R = 40;
+  let ultimo = null;
+  for (let rep = 0; rep < R; rep++) {
+    const r = rng(900 + rep);
+    const regs = Array.from({ length: 80 }, () => examinando(r, bs)).map(({ th, e }) => ({ theta: e.theta, escore: 200 + 15 * th + 8 * normalAleatoria(r) }));
+    const mod = ajustarEscore(regs);
+    assert.ok(Number.isFinite(mod.var_a) && Number.isFinite(mod.var_b) && Number.isFinite(mod.cov_ab));
+    const c = corteLigadoNbme(mod, { step: "step1" });
+    assert.ok(c.suficiente, c.motivo);
+    soma += c.mu;
+    if (Math.abs(c.mu - alvo) <= 1.6449 * c.ep) cobre++;
+    ultimo = { mod, c };
+  }
+  assert.ok(Math.abs(soma / R - alvo) < 0.08, "média do corte ligado " + (soma / R).toFixed(3) + " para " + alvo.toFixed(3));
+  assert.ok(cobre / R >= 0.8, "intervalo de 90% do corte cobriu " + cobre + " de " + R);
+  /* método delta conferido à mão */
+  const { mod, c } = ultimo;
+  const d = 196 - mod.a;
+  const ep = Math.sqrt(mod.var_a / mod.b ** 2 + d * d * mod.var_b / mod.b ** 4 + 2 * d * mod.cov_ab / mod.b ** 3);
+  assert.ok(Math.abs(c.ep - ep) < 1e-12 && Math.abs(c.mu - d / mod.b) < 1e-12);
+  assert.equal(c.sigma, Math.max(c.ep, 0.1));
+  /* insuficiente: poucos escores, relação fraca ou sem covariância */
+  assert.equal(corteLigadoNbme({ ...mod, n: 12 }, { step: "step1" }).suficiente, false);
+  assert.equal(corteLigadoNbme({ ...mod, b: 0.5 }, { step: "step1" }).suficiente, false);
+  assert.match(corteLigadoNbme({ a: 200, b: 10, n: 40 }).motivo, /covariância/);
+  assert.equal(corteLigadoNbme(null).suficiente, false);
+  /* estimarAluno: com a ligação suficiente, o limiar sai do provisório */
+  const banco = montarBanco(gerarBancoSintetico({ porStep: 300, semente: 4 }));
+  const random = rng(31);
+  const respostas = banco.steps.step1.slice(0, 200).map((q, i) => {
+    const ok = random() < expit(0.3 - q.b_angoff);
+    return { questao_id: q.id, resposta: ok ? q.correta : "Z", correta: ok, modo: "cronometrado", origem: "banco", respondida_em: new Date(Date.UTC(2026, 8, 1) + i * 60000).toISOString() };
+  });
+  const prov = estimarAluno({ step: "step1", respostas, itens: banco.porId, sistemas: sistemasDoOutline("step1") });
+  const lig = { ...c, mu: 0.6, ep: 0.12, sigma: 0.12, suficiente: true };
+  const nb = estimarAluno({ step: "step1", respostas, itens: banco.porId, sistemas: sistemasDoOutline("step1"), ligacaoNbme: lig });
+  assert.equal(prov.corte.origem, "provisorio");
+  assert.ok(prov.sensibilidade && prov.sensibilidade.deslocamento === SENSIBILIDADE_PADRAO.deslocamento);
+  assert.equal(nb.corte.origem, "nbme");
+  assert.equal(nb.corte.centro, 0.6);
+  assert.equal(nb.corte.sigma, 0.12);
+  assert.equal(nb.sensibilidade, null, "sem análise de sensibilidade quando o limiar é empírico");
+  assert.ok(nb.p_aprovacao < prov.p_aprovacao, "limiar mais alto, probabilidade menor");
+  assert.ok(Math.abs(nb.ic90_relativo[0] - (prov.ic90[0] - 0.6)) < 0.3);
+  assert.ok(nb.percentual_esperado.limiar > prov.percentual_esperado.limiar);
+  assert.match(nb.avisos[0], /autoavaliações NBME da turma/);
+  assert.equal(nomePadrao("nbme"), "ligado às autoavaliações NBME da turma");
+  /* ligação insuficiente não muda nada */
+  const ins = estimarAluno({ step: "step1", respostas, itens: banco.porId, sistemas: sistemasDoOutline("step1"), ligacaoNbme: { ...lig, suficiente: false } });
+  assert.equal(ins.p_aprovacao, prov.p_aprovacao);
+});
+
+test("sensibilidade ao padrão provisório: probabilidade com o banco 0,75 logit mais fácil ou mais difícil", () => {
+  const post = posteriorGrade([], { priori: { media: 0.5, dp: 0.2 } });
+  /* theta ~ N(0,5; 0,2²): com o banco 0,75 mais fácil o limiar verdadeiro fica em +0,75 */
+  assert.ok(Math.abs(pAcimaDoCorte(post, 0, null, 0.75) - normalCdf(-1.25)) < 1e-3);
+  const banco = montarBanco(gerarBancoSintetico({ porStep: 200, semente: 6 }));
+  const random = rng(8);
+  const respostas = banco.steps.step1.slice(0, 160).map((q, i) => {
+    const ok = random() < expit(0.6 - q.b_angoff);
+    return { questao_id: q.id, resposta: ok ? q.correta : "Z", correta: ok, modo: "cronometrado", origem: "banco", respondida_em: new Date(Date.UTC(2026, 8, 1) + i * 60000).toISOString() };
+  });
+  const e = estimarAluno({ step: "step1", respostas, itens: banco.porId, sistemas: sistemasDoOutline("step1") });
+  const s = e.sensibilidade;
+  assert.ok(s.itens_mais_faceis < e.p_medida && e.p_medida < s.itens_mais_dificeis, JSON.stringify(s));
+  assert.equal(s.pontos, 15);
+  assert.equal(typeof s.muda_leitura, "boolean");
 });

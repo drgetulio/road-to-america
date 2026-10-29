@@ -17,10 +17,10 @@
 
 import { sortearQuestoes, rng } from "./simulado.js";
 import {
-  estimarAluno, prepararRespostas, eap, expit, prontidaoCombinada, pontosGrade, resumirPosterior,
-  PRIORI_PADRAO, GRADE_PADRAO, PESOS_MODO, REGRA_CONFIANCA, PADRAO_STEP2CK
+  estimarAluno, prepararRespostas, eap, expit, prontidaoCombinada, pontosGrade, ponderarPeloOutline, incertezaCorte, pAcimaDoCorte, nomePadrao, padraoProvisorio,
+  PRIORI_PADRAO, GRADE_PADRAO, PESOS_MODO, REGRA_CONFIANCA, PADRAO_STEP2CK, PERFIL_PADRAO
 } from "./psicometria.js";
-import { TAXONOMIA, sistemasDoOutline, nomeChave } from "./banco.js";
+import { TAXONOMIA, sistemasDoOutline, pesosDoOutline, nomeChave } from "./banco.js";
 import { prontidao, CONFIG_PADRAO } from "./desempenho.js";
 import { criarSessao } from "../../simulado/js/sessao.js";
 
@@ -103,11 +103,13 @@ function normalizarSelecao(step, selecao) {
 }
 
 /* Itens do Step que passam nos filtros. Dentro de uma dimensão vale "ou"; entre
-   dimensões vale "e". Sem nada marcado numa dimensão, ela não filtra. */
-export function filtrarPool(banco, { step, selecao = {}, situacao = "todas", historico = new Map(), ignorarDim = null } = {}) {
+   dimensões vale "e". Sem nada marcado numa dimensão, ela não filtra. Itens de
+   formulário reservado ainda não feito pelo aluno (banco.reservados, Set de ids, ver
+   itensReservados em formularios.js) ficam fora. */
+export function filtrarPool(banco, { step, selecao = {}, situacao = "todas", historico = new Map(), ignorarDim = null, reservados = banco?.reservados || null } = {}) {
   const conds = normalizarSelecao(step, selecao).filter((c) => c.dim !== ignorarDim);
   const sit = SITUACOES.includes(situacao) ? situacao : "todas";
-  return (banco?.steps?.[step] || []).filter((q) => conds.every((c) => dentro(q[c.campo], c.set)) && situacaoItem(q.id, historico)[sit]);
+  return (banco?.steps?.[step] || []).filter((q) => !(reservados && reservados.has(q.id)) && conds.every((c) => dentro(q[c.campo], c.set)) && situacaoItem(q.id, historico)[sit]);
 }
 
 /* Contagens para a tela: por situação (com os filtros de área aplicados) e, para
@@ -123,7 +125,22 @@ export function contagemFacetas(banco, { step, selecao = {}, situacao = "todas",
     for (const q of pool) for (const c of new Set(Array.isArray(q[f.campo]) ? q[f.campo] : [q[f.campo]])) if (c) cont[c] = (cont[c] || 0) + 1;
     dims[f.dim] = cont;
   }
-  return { situacoes, dims, disponiveis: filtrarPool(banco, { step, selecao, situacao, historico }).length };
+  const pool = filtrarPool(banco, { step, selecao, situacao, historico });
+  const maxBloco = maximoSemInimigos(pool);
+  return { situacoes, dims, disponiveis: pool.length, max_bloco: maxBloco, fora_por_inimigos: pool.length - maxBloco };
+}
+
+/* Quantos itens do pool cabem num mesmo bloco sem pares inimigos (as mesmas exclusões
+   de semInimigos, em ordem gulosa): é o tamanho máximo que a montagem consegue
+   entregar com estes filtros. */
+export function maximoSemInimigos(pool) {
+  const ids = new Set((pool || []).map((q) => q.id));
+  const inimigos = new Map();
+  const liga = (a, b) => { if (!ids.has(a) || !ids.has(b) || a === b) return; (inimigos.get(a) || inimigos.set(a, new Set()).get(a)).add(b); (inimigos.get(b) || inimigos.set(b, new Set()).get(b)).add(a); };
+  for (const q of pool || []) for (const x of q.inimigos || []) liga(q.id, x);
+  const dentro = new Set();
+  for (const q of pool || []) if (![...(inimigos.get(q.id) || [])].some((x) => dentro.has(x))) dentro.add(q.id);
+  return dentro.size;
 }
 
 /* Chaves de uma dimensão na ordem do outline (as que o banco tem e não estão no
@@ -150,9 +167,25 @@ export function validarPedidoBloco({ step, n, modo, livre = false, disponiveis =
 /* Sorteio do bloco a partir do pool filtrado: estratificado por sistema, com as não
    vistas primeiro e dificuldade alternada (sortearQuestoes, de simulado.js). Mesma
    semente, mesmo bloco. */
+/* Pares inimigos (item.inimigos, CONTRATO-ITEM.md): itens que se entregam um ao
+   outro (mesma vinheta, um responde o outro) nunca saem no mesmo bloco. Depois do
+   sorteio, cada item cujo inimigo já está no bloco é trocado pelo próximo do pool que
+   não conflita. */
+export function semInimigos(escolhidos, pool) {
+  const ids = new Set();
+  const conflita = (q) => (q.inimigos || []).some((x) => ids.has(x)) || [...ids].some((id) => (pool.find((p) => p.id === id)?.inimigos || []).includes(q.id));
+  const usados = new Set(escolhidos.map((q) => q.id));
+  const out = [];
+  for (const q of escolhidos) {
+    if (!conflita(q)) { out.push(q); ids.add(q.id); continue; }
+    const troca = pool.find((p) => !usados.has(p.id) && !conflita(p));
+    if (troca) { usados.add(troca.id); out.push(troca); ids.add(troca.id); }
+  }
+  return out;
+}
 export function sortearBlocoBanco(pool, { n, semente = Date.now(), historico = new Map() } = {}) {
   const vistas = (pool || []).filter((q) => historico.has(q.id)).map((q) => q.id);
-  return sortearQuestoes(pool, { n, campo: "sistema", vistas, semente });
+  return semInimigos(sortearQuestoes(pool, { n, campo: "sistema", vistas, semente }), pool || []);
 }
 
 function idSessao(semente) {
@@ -287,7 +320,7 @@ export function blocoPorArea(bloco, itens, campo) {
    (mesmas regras de prepararRespostas: primeira resposta, pesos do modo), mais o
    acerto da própria sessão e o acerto esperado do examinando no limiar nos mesmos
    itens. maxPontos: se houver mais sessões, ficam as mais recentes. */
-export function curvaEvolucao({ respostas, itens, step, pesos = PESOS_MODO, priori = PRIORI_PADRAO, maxPontos = 40 }) {
+export function curvaEvolucao({ respostas, itens, step, pesos = PESOS_MODO, priori = PRIORI_PADRAO, maxPontos = 40, efeitoModo = null }) {
   const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
   const sessoes = new Map();
   for (const r of respostas || []) {
@@ -300,8 +333,10 @@ export function curvaEvolucao({ respostas, itens, step, pesos = PESOS_MODO, prio
   }
   const lista = [...sessoes.values()].sort((a, b) => a.fim.localeCompare(b.fim)).slice(-maxPontos);
   return lista.map((s) => {
-    const { usadas } = prepararRespostas(respostas, itens, { step, pesos, ate: s.fim });
-    const est = eap(usadas, { priori });
+    /* mesmas contas do painel: repesagem pelo outline e incerteza do padrão */
+    const { usadas: brutas } = prepararRespostas(respostas, itens, { step, pesos, ate: s.fim, efeitoModo });
+    const usadas = ponderarPeloOutline(brutas, pesosDoOutline(step)).usadas;
+    const est = eap(usadas, { priori, sigmaCorte: incertezaCorte(brutas).sigma });
     return {
       sessao: s.chave, origem: s.origem, ate: s.fim,
       n: est.n, n_efetivo: est.n_efetivo, p_aprovacao: est.p_aprovacao, theta: est.theta, ic90: est.ic90,
@@ -343,7 +378,7 @@ function acumularB(porB, b, s1, s0) {
   const g = porB.get(b) || porB.set(b, [0, 0]).get(b);
   g[0] += s1; g[1] += s0;
 }
-function pAcimaDeLp(lp, pontos) {
+function pAcimaDeLp(lp, pontos, sigma = 0, mu = 0) {
   let max = -Infinity;
   for (let k = 0; k < lp.length; k++) if (lp[k] > max) max = lp[k];
   const dens = new Float64Array(lp.length);
@@ -351,12 +386,18 @@ function pAcimaDeLp(lp, pontos) {
   for (let k = 0; k < lp.length; k++) dens[k] = Math.exp(lp[k] - max);
   for (let k = 1; k < lp.length; k++) area += 0.5 * (dens[k] + dens[k - 1]) * (pontos[k] - pontos[k - 1]);
   for (let k = 0; k < lp.length; k++) dens[k] /= area;
-  return resumirPosterior({ pontos, dens }, { limiar: 0, intervalo: 0.9 }).p_acima;
+  return pAcimaDoCorte({ pontos, dens }, sigma, null, mu);
 }
 
-export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_PADRAO, grade = GRADE_PADRAO } = {}) {
+/* minItens: área com menos itens fica com ganho null e poucos_itens: true (o mesmo
+   mínimo de 5 do perfil por área); sigmaCorte: incerteza do padrão, a mesma do painel;
+   centroCorte: posição do limiar (0 no padrão do banco; o corte ligado à NBME quando
+   estiver em uso). "Área no limiar" troca as respostas pelas do examinando nesse ponto. */
+export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_PADRAO, grade = GRADE_PADRAO, sigmaCorte = undefined, centroCorte = 0, minItens = PERFIL_PADRAO.min_itens } = {}) {
   const validas = (usadas || []).filter((u) => Number.isFinite(u.b) && (u.w === undefined || u.w > 0));
-  const base = eap(validas, { priori, grade }).p_aprovacao;
+  const sig = Number.isFinite(sigmaCorte) ? sigmaCorte : incertezaCorte(validas).sigma;
+  const mu = Number.isFinite(centroCorte) ? centroCorte : 0;
+  const base = eap(validas, { priori, grade, sigmaCorte: sig, centroCorte: mu }).p_aprovacao;
   const grupos = new Map();
   for (const u of validas) {
     const v = u.item?.[dim];
@@ -376,7 +417,7 @@ export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_
     let n = 0, acertos = 0, esperado = 0;
     const delta = new Map();
     for (const u of lista) {
-      const a = expit(-u.b);
+      const a = expit(mu - u.b);
       const w = u.w === undefined ? 1 : u.w;
       n++; acertos += u.x; esperado += a;
       /* troca a resposta observada (peso w em x) pela esperada no limiar (w a acerto, w (1 - a) erro) */
@@ -384,17 +425,19 @@ export function contribuicaoPorArea(usadas, dim, { step = null, priori = PRIORI_
     }
     const lp = Float64Array.from(lpBase);
     somarTermos(lp, pontos, delta);
-    const pLim = pAcimaDeLp(lp, pontos);
+    const pLim = pAcimaDeLp(lp, pontos, sig, mu);
     const fx = faixas.get(chave);
+    const poucos = n < minItens;
     out.push({
       chave, n, acertos, esperado_limiar: esperado, deficit: esperado - acertos,
       taxa: n ? acertos / n : null, taxa_limiar: n ? esperado / n : null,
-      p_atual: base, p_area_no_limiar: pLim, ganho: pLim - base,
+      p_atual: base, p_area_no_limiar: pLim, ganho: poucos ? null : pLim - base, ganho_bruto: pLim - base, poucos_itens: poucos,
       peso_prova: fx ? (fx[0] + fx[1]) / 200 : null
     });
   }
-  /* ganho arredondado em 1e-9: empates de ruído numérico caem no déficit e no nome */
-  const g = (x) => Math.round(x.ganho * 1e9);
+  /* ganho arredondado em 1e-9: empates de ruído numérico caem no déficit e no nome;
+     as áreas com poucos itens vão para o fim */
+  const g = (x) => (x.ganho === null ? -Infinity : Math.round(x.ganho * 1e9));
   return out.sort((a, b) => g(b) - g(a) || b.deficit - a.deficit || (a.chave < b.chave ? -1 : 1));
 }
 
@@ -454,19 +497,28 @@ const nomeDim = (step, dim, chave) => nomeChave(step, dim === "disciplinas" ? "d
    3. quantos itens faltam para a contagem mínima N, com o lembrete do peso do tutor. */
 export function recomendacoes({ step, est, contribuicao, historico = new Map(), banco = null, base = "#/", maxAreas = 5, ganhoMin = 0.005 }) {
   const out = [];
-  for (const c of (contribuicao?.sistema || []).filter((x) => x.ganho >= ganhoMin).slice(0, maxAreas)) {
+  /* só áreas com pelo menos 5 itens (o mesmo mínimo do perfil): com 1 ou 2 itens o
+     ganho é ruído */
+  const vistasRec = new Set();
+  for (const c of (contribuicao?.sistema || []).filter((x) => x.ganho !== null && x.ganho >= ganhoMin).slice(0, maxAreas)) {
     const erradas = c.n - c.acertos > 0;
+    vistasRec.add(c.chave);
     out.push({
       tipo: "area", dim: "sistema", chave: c.chave, nome: nomeDim(step, "sistema", c.chave), ganho: c.ganho,
-      texto: "Você acertou " + c.acertos + " de " + c.n + "; o examinando no limiar acertaria " + fmtPp(c.taxa_limiar).replace(",0", "") + "% destes itens. Chegar ao nível do limiar aqui somaria " + fmtPp(c.ganho) + " pontos percentuais à probabilidade.",
+      texto: "Você acertou " + c.acertos + " de " + c.n + "; o examinando no limiar acertaria " + fmtPp(c.taxa_limiar).replace(",0", "") + "% destes itens. Se aqui você ficasse no nível do limiar, a probabilidade subiria " + fmtPp(c.ganho) + " pontos.",
       links: linksDeEstudo(step, "sistema", c.chave, { base, situacao: erradas ? "erradas" : "nao_vistas" })
     });
   }
+  /* No Step 1, a competência de aprendizado baseado na prática e a de comunicação
+     coincidem item a item com os sistemas de bioestatística e de ciências sociais; a
+     recomendação da competência sai quando os mesmos itens já foram recomendados pelo
+     sistema. */
+  const MESMOS_ITENS_S1 = { aprendizagem_pratica: "bioestatistica", comunicacao_interpessoal: "ciencias_sociais" };
   for (const d of ["disciplinas", "disciplinas_oficiais", "competencia"]) {
-    const top = (contribuicao?.[d] || []).find((x) => x.ganho >= ganhoMin);
+    const top = (contribuicao?.[d] || []).find((x) => x.ganho !== null && x.ganho >= ganhoMin && !(step === "step1" && d === "competencia" && vistasRec.has(MESMOS_ITENS_S1[x.chave])));
     if (top) out.push({
       tipo: "area", dim: d, chave: top.chave, nome: nomeDim(step, d, top.chave), ganho: top.ganho,
-      texto: (d === "competencia" ? "Competência" : "Disciplina") + " que mais pesa: " + top.acertos + " de " + top.n + " certas, contra " + fmtPp(top.taxa_limiar).replace(",0", "") + "% esperados no limiar (" + fmtPp(top.ganho) + " pontos percentuais em jogo).",
+      texto: (d === "competencia" ? "Competência" : "Disciplina") + " que mais pesa: " + top.acertos + " de " + top.n + " certas, contra " + fmtPp(top.taxa_limiar).replace(",0", "") + "% esperados no limiar. No nível do limiar aqui, a probabilidade subiria " + fmtPp(top.ganho) + " pontos.",
       links: linksDeEstudo(step, d, top.chave, { base })
     });
   }
@@ -474,8 +526,8 @@ export function recomendacoes({ step, est, contribuicao, historico = new Map(), 
   if (faltam.length) {
     out.push({
       tipo: "cobertura", dim: "sistema", chaves: faltam,
-      nome: faltam.length === 1 ? "1 sistema sem itens respondidos" : faltam.length + " sistemas sem itens respondidos",
-      texto: "A regra de alta confiança pede itens em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) + "% dos sistemas do outline. Faltam: " + faltam.map((k) => nomeDim(step, "sistema", k)).join("; ") + ".",
+      nome: faltam.length === 1 ? "1 sistema com poucos itens respondidos" : faltam.length + " sistemas com poucos itens respondidos",
+      texto: "A regra de precisão pede itens suficientes em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) + "% dos sistemas do outline: pelo menos " + REGRA_CONFIANCA.min_por_sistema + " em cada um e metade do que o peso do sistema pede. Faltam: " + faltam.map((k) => nomeDim(step, "sistema", k) + (est?.cobertura?.minimos ? " (" + (est.cobertura.itens?.[k] ?? 0) + " de " + est.cobertura.minimos[k] + ")" : "")).join("; ") + ".",
       links: faltam.slice(0, 4).map((k) => ({ tipo: "banco", rotulo: nomeDim(step, "sistema", k), href: linkBloco({ step, dim: "sistema", chave: k, base }) }))
     });
   }
@@ -487,7 +539,10 @@ export function recomendacoes({ step, est, contribuicao, historico = new Map(), 
       links: [{ tipo: "banco", rotulo: "Bloco cronometrado de 20 itens", href: base + "criar?" + new URLSearchParams({ step, situacao: "nao_vistas", modo: "cronometrado", n: "20" }).toString() }]
     });
   }
-  return out;
+  /* áreas (sistema, disciplina, competência) juntas, da que mais mexe na
+     probabilidade para a que menos; depois cobertura e volume */
+  const areas = out.filter((x) => x.tipo === "area").sort((a, b) => b.ganho - a.ganho);
+  return [...areas, ...out.filter((x) => x.tipo !== "area")];
 }
 
 /* ---------- painel de probabilidade ----------
@@ -498,14 +553,17 @@ export function resumoAprovacao({ banco, respostas, step, modelos = null, nbme =
   const itens = banco.porId;
   const modelo = modelos?.[step] || null;
   const est = estimarAluno({
-    step, respostas, itens, sistemas: sistemasDoOutline(step),
+    step, respostas, itens, sistemas: sistemasDoOutline(step), pesosSistemas: pesosDoOutline(step),
     modeloDesfechos: modelo?.desfechos || null,
-    modeloEscore: step === "step2ck" ? modelo?.escore_oficial || null : null
+    modeloEscore: step === "step2ck" ? modelo?.escore_oficial || null : null,
+    ligacaoNbme: modelo?.ligacao_nbme || null,
+    efeitoModo: modelo?.efeito_modo || null
   });
-  const { usadas } = prepararRespostas(respostas, itens, { step });
+  /* a contribuição parte das mesmas respostas (com a repesagem) e do mesmo padrão */
+  const usadas = est.usadas;
   const dims = step === "step1" ? ["sistema", "disciplinas", "competencia"] : ["sistema", "disciplinas_oficiais", "competencia", "area"];
   const contribuicao = {};
-  for (const d of dims) contribuicao[d] = contribuicaoPorArea(usadas, d, { step });
+  for (const d of dims) contribuicao[d] = contribuicaoPorArea(usadas, d, { step, sigmaCorte: est.corte.sigma, centroCorte: est.corte.centro || 0 });
   const historico = historicoItens(respostas);
   const recs = recomendacoes({ step, est, contribuicao, historico, banco, base });
   const pr = prontidaoCombinada({ exit18: prontidao((nbme || []).filter((x) => x.step === step), step, config), banco: est.n ? est : null });
@@ -513,28 +571,34 @@ export function resumoAprovacao({ banco, respostas, step, modelos = null, nbme =
     step, est, contribuicao, recomendacoes: recs, prontidao: pr,
     modelo_demonstracao: !!modelo?.demonstracao,
     limiar_texto: step === "step2ck"
-      ? "Probabilidade de atingir o padrão de aprovação do Step 2 CK (" + PADRAO_STEP2CK + " desde 01/07/2025), pelo limiar do banco fixado por Angoff."
-      : "Probabilidade de estar acima do padrão de aprovação do Step 1 (Pass/Fail), pelo limiar do banco fixado por Angoff.",
+      ? "Probabilidade de estar acima do limiar do banco, fixado para representar o padrão de aprovação do Step 2 CK (" + PADRAO_STEP2CK + " desde 01/07/2025). Padrão " + (padraoProvisorio(est.corte.origem) ? "provisório, pela dificuldade-alvo dos itens" : nomePadrao(est.corte.origem)) + "."
+      : "Probabilidade de estar acima do limiar do banco, fixado para representar o padrão de aprovação do Step 1 (Pass/Fail). Padrão " + (padraoProvisorio(est.corte.origem) ? "provisório, pela dificuldade-alvo dos itens" : nomePadrao(est.corte.origem)) + ".",
     itens_no_banco: banco.contagem?.[step] || 0,
-    nao_vistos: (banco.steps?.[step] || []).filter((q) => !historico.has(q.id)).length
+    nao_vistos: (banco.steps?.[step] || []).filter((q) => !historico.has(q.id) && !(banco.reservados && banco.reservados.has(q.id))).length,
+    reservados: (banco.steps?.[step] || []).filter((q) => banco.reservados && banco.reservados.has(q.id) && !historico.has(q.id)).length,
+    formularios_reservados: (banco.reservados_info || []).filter((f) => f.step === step)
   };
 }
 
 /* Densidade posterior de theta para desenhar (pontos a cada passo, entre min e max) */
-export function curvaPosterior(respostas, itens, step, { min = -4, max = 4, passo = 0.05, priori = PRIORI_PADRAO } = {}) {
-  const { usadas } = prepararRespostas(respostas, itens, { step });
-  const r = eap(usadas, { priori, incluirPosterior: true });
+/* centro: posição do limiar em uso; a curva sai em distância ao limiar (theta - centro) */
+export function curvaPosterior(respostas, itens, step, { min = -4, max = 4, passo = 0.05, priori = PRIORI_PADRAO, efeitoModo = null, centro = 0 } = {}) {
+  const { usadas: brutas } = prepararRespostas(respostas, itens, { step, efeitoModo });
+  const usadas = ponderarPeloOutline(brutas, pesosDoOutline(step)).usadas;
+  const r = eap(usadas, { priori, incluirPosterior: true, sigmaCorte: incertezaCorte(brutas).sigma });
   const { pontos, dens } = r.posterior;
   const out = [];
   const k = Math.max(1, Math.round(passo / (pontos[1] - pontos[0])));
-  for (let i = 0; i < pontos.length; i += k) if (pontos[i] >= min - 1e-9 && pontos[i] <= max + 1e-9) out.push([Math.round(pontos[i] * 1000) / 1000, dens[i]]);
-  return { pontos: out, theta: r.theta, ic90: r.ic90, p: r.p_aprovacao };
+  for (let i = 0; i < pontos.length; i += k) { const x = pontos[i] - centro; if (x >= min - 1e-9 && x <= max + 1e-9) out.push([Math.round(x * 1000) / 1000, dens[i]]); }
+  return { pontos: out, theta: r.theta - centro, ic90: [r.ic90[0] - centro, r.ic90[1] - centro], p: r.p_aprovacao };
 }
 
 /* Estatística rápida do aluno no Step: itens no banco, vistos, não vistos, certos
    na primeira tentativa, marcados */
 export function estatisticasAluno(banco, historico, step) {
-  const ids = (banco?.steps?.[step] || []).map((q) => q.id);
+  const reserv = banco?.reservados || null;
+  const todosIds = (banco?.steps?.[step] || []).map((q) => q.id);
+  const ids = reserv ? todosIds.filter((id) => !reserv.has(id) || historico.has(id)) : todosIds;
   let vistos = 0, certos1 = 0, resp1 = 0, marcados = 0, erradas = 0;
   for (const id of ids) {
     const h = historico.get(id);
@@ -544,5 +608,5 @@ export function estatisticasAluno(banco, historico, step) {
     if (h.marcada) marcados++;
     if (h.em_branco_ultima || h.ultima_correta === false) erradas++;
   }
-  return { total: ids.length, vistos, nao_vistos: ids.length - vistos, marcados, erradas, primeira_respondidas: resp1, primeira_certas: certos1, taxa_primeira: resp1 ? certos1 / resp1 : null };
+  return { total: ids.length, vistos, nao_vistos: ids.length - vistos, marcados, erradas, primeira_respondidas: resp1, primeira_certas: certos1, taxa_primeira: resp1 ? certos1 / resp1 : null, reservados: todosIds.length - ids.length };
 }

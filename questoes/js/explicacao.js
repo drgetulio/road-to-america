@@ -32,8 +32,8 @@ export function htmlExplicacao(q, resposta, { tutor = false, anotacao = "", idBa
         (porAlt[a.letra] ? '<p lang="en">' + e(porAlt[a.letra]) + "</p>" : "") + "</div></li>").join("") + "</ul></div>" : "") +
     (q.explicacao_pt ? '<div class="texp__bloco texp__pt"><h4><span class="fita" aria-hidden="true"></span>Resumo em português</h4><p>' + e(q.explicacao_pt) + "</p></div>" : "") +
     '<div class="texp__rodape">' + classificacao(q) +
-      '<p class="texp__meta">' + icon("target") + "<span>Padrão do item: o examinando no limiar de aprovação acerta este item com probabilidade de " + pct(q.angoff) +
-        (q.angoff_origem === "padrao_dificuldade" ? " (padrão do contrato para a dificuldade " + e({ facil: "fácil", media: "média", dificil: "difícil" }[q.dificuldade] || "média") + ")" : " (julgamento de Angoff do autor)") + ".</span></p>" +
+      '<p class="texp__meta">' + icon("target") + "<span>Padrão do item: o examinando no limiar do banco acerta este item com probabilidade de " + pct(q.angoff) +
+        (q.angoff_origem === "padrao_dificuldade" ? " (padrão do contrato para a dificuldade " + e({ facil: "fácil", media: "média", dificil: "difícil" }[q.dificuldade] || "média") + ", provisório)" : q.angoff_origem === "painel" ? " (Angoff do painel de juízes)" : " (dificuldade-alvo fixada pelos autores na especificação, provisória até o painel de juízes)") + ".</span></p>" +
       (q.fonte ? '<p class="texp__meta">' + icon("book-open") + '<span>Fonte: <span lang="en">' + e(q.fonte) + "</span></span></p>" : "") +
       (anotacao ? '<p class="texp__meta">' + icon("note-pencil") + "<span>Sua anotação: " + e(anotacao) + "</span></p>" : "") +
     "</div>" +

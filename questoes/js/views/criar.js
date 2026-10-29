@@ -112,10 +112,11 @@ export default {
       const max = limiteItens(p.livre);
       const qtd = $("#cr-qtd", el);
       qtd.max = String(max);
-      const n = Math.min(Math.max(1, Math.round(Number(qtd.value) || 1)), max, Math.max(1, c.disponiveis));
+      const n = Math.min(Math.max(1, Math.round(Number(qtd.value) || 1)), max, Math.max(1, c.max_bloco ?? c.disponiveis));
       const tempo = p.modo === "cronometrado" ? " Tempo do bloco: " + Math.floor((n * LIMITES_BLOCO.ritmo_ms) / 60000) + " min" + ((n * LIMITES_BLOCO.ritmo_ms) % 60000 ? " 30 s" : "") + "." : " Sem relógio de prova; o bloco fecha sozinho depois de 24 horas.";
       $("[data-resumo]", el).innerHTML = c.disponiveis
-        ? "<b>" + plural(c.disponiveis, "item atende", "itens atendem") + "</b> aos filtros. O bloco terá " + plural(n, "item", "itens") + "." + tempo
+        ? "<b>" + plural(c.disponiveis, "item atende", "itens atendem") + "</b> aos filtros. O bloco terá " + plural(n, "item", "itens") + "." +
+          (c.fora_por_inimigos && n === c.max_bloco ? " " + (c.fora_por_inimigos === 1 ? "Um item fica de fora porque" : c.fora_por_inimigos + " itens ficam de fora porque") + " se entregam com outro do mesmo bloco (mesma vinheta ou um responde o outro)." : "") + tempo
         : "<b>Nenhum item atende aos filtros.</b> Tire um filtro ou escolha outra situação.";
     }
 

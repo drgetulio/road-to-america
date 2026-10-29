@@ -33,13 +33,28 @@ test("montagem com banco de 1000 itens: todos os tipos dentro das faixas oficiai
         const f = montarFormularioFixo(banco, step, codigo, tipo);
         const v = verificarFormulario(f, banco.porId);
         assert.equal(f.reduzido, false);
-        assert.equal(f.total, TIPOS_FORMULARIO[tipo][step].itens);
-        assert.equal(f.blocos.length, TIPOS_FORMULARIO[tipo][step].blocos);
+        const N = TIPOS_FORMULARIO[tipo][step].itens;
+        const sobra = banco.steps[step].length - N;
+        if (codigo.endsWith("-B") && sobra < N) {
+          /* o B fica com o restante do banco, sem repetir item do A, e sai como parcial */
+          assert.equal(f.parcial, true);
+          assert.equal(f.total, sobra);
+          assert.equal(f.blocos.length, Math.ceil(sobra / 20));
+          assert.match(f.motivo_parcial, /parcial/);
+          const a = new Set(montarFormularioFixo(banco, step, FORMULARIOS_FIXOS[step][0].codigo, tipo).blocos.flat());
+          assert.equal(f.blocos.flat().filter((id) => a.has(id)).length, 0, "sem sobreposição com o A");
+        } else {
+          assert.equal(f.parcial, false);
+          assert.equal(f.total, N);
+          assert.equal(f.blocos.length, TIPOS_FORMULARIO[tipo][step].blocos);
+        }
         assert.ok(v.ok, step + " " + tipo + " " + codigo + ": " + v.problemas.join(" | "));
         assert.ok(v.equilibrio.dp_entre_blocos < 0.01, "Angoff médio parecido entre blocos (" + v.equilibrio.dp_entre_blocos + ")");
         const exigidas = Object.values(v.dimensoes).flat().filter((x) => x.exigida);
         assert.ok(exigidas.length >= 14, "sistemas e competências ou tarefas conferidos");
-        assert.ok(exigidas.every((x) => x.dentro));
+        /* no parcial do banco sintético (500 por Step) as faixas são meta: bioestatística
+           tem 15 itens, que não cabem em 4% de dois formulários */
+        if (!f.parcial) assert.ok(exigidas.every((x) => x.dentro));
         for (const b of v.blocos) {
           const d = b.por_dificuldade;
           assert.ok(d.facil > 0 && d.media > 0 && d.dificil > 0, "cada bloco tem as três dificuldades");
@@ -49,7 +64,7 @@ test("montagem com banco de 1000 itens: todos os tipos dentro das faixas oficiai
   }
 });
 
-test("formulário fixo reproduzível pela semente; B evita A; personalizado prioriza não vistos", () => {
+test("formulário fixo reproduzível pela semente; B não repete item do A; personalizado prioriza não vistos", () => {
   const a1 = montarFormularioFixo(banco, "step1", "S1-A");
   const a2 = montarFormularioFixo(banco, "step1", "S1-A");
   assert.equal(a1.hash, a2.hash);
@@ -59,7 +74,7 @@ test("formulário fixo reproduzível pela semente; B evita A; personalizado prio
   assert.notEqual(a1.hash, b.hash);
   const emA = new Set(a1.blocos.flat());
   const sobreposicao = b.blocos.flat().filter((id) => emA.has(id)).length;
-  assert.ok(sobreposicao <= 2 * 280 - 500 + 25, "sobreposição perto do mínimo possível (" + sobreposicao + ")");
+  assert.equal(sobreposicao, 0, "A e B formam uma partição: nenhum item repetido");
   const vistas = banco.steps.step1.slice(0, 200).map((q) => q.id);
   const p = montarFormularioPersonalizado(banco, { step: "step1", tipo: "completo", vistas });
   const vistasSet = new Set(vistas);

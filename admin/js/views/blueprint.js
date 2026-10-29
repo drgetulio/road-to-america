@@ -39,11 +39,11 @@ export default {
         tile({ rotulo: "Formulário oficial", valor: num(c.tamanho_formulario), sub: e(of) }) +
         tile({ rotulo: "Formulários completos sem repetir item", valor: num(c.formularios_sem_repeticao), sub: "Limitado pelo total e pela linha mais escassa das faixas exigidas.", estado: c.formularios_sem_repeticao >= 3 ? "ok" : "abaixo" }) +
         tile({ rotulo: "Linhas dentro da faixa", valor: num(dentro) + " <small>de " + num(comFaixa) + "</small>", sub: "Sistemas e " + (step === "step1" ? "competências" : "tarefas do médico") + ", cuja faixa a montagem exige.", estado: dentro === comFaixa ? "ok" : "abaixo" }) +
-        tile({ rotulo: "Dificuldade declarada", valor: c.por_dificuldade.map((x) => x.n).join(" · "), sub: "Fácil, média e difícil. Angoff médio de " + numTxt(c.angoff_medio, 2) + ": o examinando no limiar acerta, em média, " + pctTxt(c.escore_corte_esperado) + " do banco." }) +
+        tile({ rotulo: "Dificuldade declarada", valor: c.por_dificuldade.map((x) => x.n).join(" · "), sub: "Fácil, média e difícil. Dificuldade-alvo média de " + numTxt(c.angoff_medio, 2) + ": o examinando no limiar acerta, em média, " + pctTxt(c.escore_corte_esperado) + " do banco." }) +
       "</section>" +
       c.dims.map((d) => secaoDim(d, step, c)).join("") +
       '<section class="panel" aria-labelledby="ff-t"><div class="panel__head"><h2 class="h-sm" id="ff-t">Formulários fixos do simulado completo</h2>' +
-        '<p class="hint">Monta os três formulários fixos completos deste Step (o B evita os itens do A; o C evita os do A e do B) e confere cada um contra as faixas, como faz a tela do aluno. Com o banco pequeno, os formulários saem reduzidos.</p></div>' +
+        '<p class="hint">Monta os formulários fixos A e B deste Step e confere cada um contra as faixas, como faz a tela do aluno. A e B dividem o banco sem repetir item; quando não sobra o bastante para um B completo, ele sai parcial, com o restante. Com o banco pequeno, os formulários saem reduzidos.</p></div>' +
         '<p class="acts-row"><button class="btn btn--sm" type="button" data-conferir>' + icon("list-checks") + "Conferir os formulários fixos</button></p><div data-ff-out aria-live=\"polite\"></div>" +
       "</section>" +
       avisoLgpd("Esta tela usa só os itens; nenhum dado de aluno.") +
@@ -56,11 +56,11 @@ export default {
         try {
           const form = montarFormularioFixo(banco, step, f.codigo, "completo");
           const v = verificarFormulario(form, banco.porId);
-          return { codigo: f.codigo, nome: f.nome, total: form.total, blocos: form.blocos.length, reduzido: form.reduzido, ok: v.ok, problemas: v.problemas, avisos: v.avisos, motivo: form.motivo_reducao || "" };
+          return { codigo: f.codigo, nome: f.nome, total: form.total, blocos: form.blocos.length, reduzido: form.reduzido, parcial: !!form.parcial, gravado: form.origem_montagem === "gravado", corte: v.corte?.angoff_medio, ok: v.ok, problemas: v.problemas, avisos: v.avisos, motivo: form.motivo_reducao || form.motivo_parcial || "" };
         } catch (err) { return { codigo: f.codigo, nome: f.nome, erro: err.message }; }
       });
       out.innerHTML = '<ul class="sinais">' + linhas.map((l) => '<li class="sinal' + (l.erro || (!l.reduzido && !l.ok) ? " sinal--alto" : "") + '">' + icon(l.erro || !l.ok ? "warning-circle" : l.reduzido ? "info" : "check-circle") +
-        "<div><b>" + e(l.nome) + " (" + e(l.codigo) + ")</b><p>" + (l.erro ? e(l.erro) : plural(l.total, "item", "itens") + " em " + plural(l.blocos, "bloco", "blocos") + ". " + (l.reduzido ? "Versão reduzida: " + e(l.motivo) : l.ok ? "Todas as faixas exigidas atendidas." : plural(l.problemas.length, "problema", "problemas") + ": " + e(l.problemas.slice(0, 3).join(" "))) + (l.avisos?.length && !l.reduzido ? " " + plural(l.avisos.length, "aviso", "avisos") + " nas disciplinas com todos os rótulos." : "")) + "</p></div></li>").join("") + "</ul>";
+        "<div><b>" + e(l.nome) + " (" + e(l.codigo) + ")</b><p>" + (l.erro ? e(l.erro) : plural(l.total, "item", "itens") + " em " + plural(l.blocos, "bloco", "blocos") + ". " + (l.reduzido ? "Versão reduzida: " + e(l.motivo) : (l.parcial ? e(l.motivo) + " " : "") + (l.gravado ? "Composição gravada (formularios_fixos). " : "") + (Number.isFinite(l.corte) ? "Corte provisório pela média da dificuldade-alvo: " + pctTxt(l.corte, 1) + ". " : "") + (l.ok ? "Todas as faixas exigidas atendidas." : plural(l.problemas.length, "problema", "problemas") + ": " + e(l.problemas.slice(0, 3).join(" ")))) + (l.avisos?.length && !l.reduzido ? " " + plural(l.avisos.length, "aviso", "avisos") + " nas disciplinas com todos os rótulos." : "")) + "</p></div></li>").join("") + "</ul>";
       ev.currentTarget.disabled = false;
     });
   }

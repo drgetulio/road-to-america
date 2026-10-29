@@ -17,6 +17,7 @@ import { join, extname, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
+import { prepararRede, vigiarErros } from "../../plataforma/tests/e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-questoes-capturas"));
@@ -71,6 +72,7 @@ async function semRolagem(page, nome) {
 for (const [largura, tema] of [[1440, "light"], [1440, "dark"], [390, "light"], [390, "dark"]]) {
   const tag = largura + "-" + tema;
   const ctx = await navegador.newContext({ viewport: { width: largura, height: largura > 500 ? 900 : 844 }, colorScheme: tema, locale: "pt-BR", reducedMotion: "reduce" });
+  await prepararRede(ctx, base);
   await ctx.addInitScript(() => {
     if (sessionStorage.getItem("__ini")) return;
     sessionStorage.setItem("__ini", "1");
@@ -80,8 +82,7 @@ for (const [largura, tema] of [[1440, "light"], [1440, "dark"], [390, "light"], 
   });
   const page = await ctx.newPage();
   const erros = [];
-  page.on("console", (m) => { if (m.type() === "error") erros.push(m.text()); });
-  page.on("pageerror", (e) => erros.push(e.message));
+  vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
   await page.clock.install();
   const demo = () => page.evaluate(() => JSON.parse(localStorage.getItem("r2a-anki-demo-v1") || "{}"));
   const foto = (n) => page.screenshot({ path: join(saida, tag + "-" + n + ".png"), fullPage: false });
@@ -161,10 +162,11 @@ for (const [largura, tema] of [[1440, "light"], [1440, "dark"], [390, "light"], 
   });
 
   await etapa(tag + " · painel de aprovação dos dois Steps", async () => {
-    /* respostas erradas em itens de cardiologia: garantem uma área que derruba a probabilidade */
+    /* respostas erradas nos itens de um sistema com 5 itens públicos (o mínimo para a
+       recomendação por área): garantem uma área que derruba a probabilidade */
     await page.evaluate(async () => {
       const db = JSON.parse(localStorage.getItem("r2a-anki-demo-v1") || "{}");
-      const itens = (await (await fetch("/simulado/data/step1-questoes.json")).json()).filter((q) => q.sistema === "cardiovascular").slice(0, 4);
+      const itens = (await (await fetch("/simulado/data/step1-questoes.json")).json()).filter((q) => q.sistema === "respiratorio_renal").slice(0, 5);
       const quando = new Date(Date.now() - 3600000).toISOString();
       db.respostas = (db.respostas || []).filter((r) => !itens.some((q) => q.id === r.questao_id)).concat(itens.map((q, i) => ({
         id: "ri-e2e-" + i, user_id: "demo-participante", criado_em: quando, questao_id: q.id, step: "step1", resposta: q.correta === "A" ? "B" : "A", correta: false,
@@ -174,7 +176,7 @@ for (const [largura, tema] of [[1440, "light"], [1440, "dark"], [390, "light"], 
     });
     await page.goto(base + "/questoes/#/aprovacao?step=step1");
     await page.reload();
-    await page.getByRole("heading", { name: "Probabilidade de aprovação", level: 1 }).waitFor();
+    await page.getByRole("heading", { name: "Acima do limiar do banco", level: 1 }).waitFor();
     assert.match(await page.locator(".q-placa__p b").innerText(), /%/);
     assert.match(await page.locator(".q-placa").innerText(), /Estimativa preliminar/);
     assert.ok(await page.locator(".q-rec").count() >= 1, "recomendações");

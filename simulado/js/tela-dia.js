@@ -8,11 +8,12 @@
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
 import {
   comecarTutorial, comecarBloco, irParaQuestao, escolherResposta, alternarMarcada, alternarRisco, definirRealces,
-  definirNotaItem, avisoDoBloco, fecharBloco, sincronizar, suspender, retomar, podeSuspender, relogioDoDia,
+  definirNotaItem, avisoDoBloco, fecharBloco, sincronizar, suspender, retomar, podeSuspender, relogioDoDia, emCondicoesOficiais,
   resumoDoDia, maisRecente, restanteBloco, blocoExpirou
 } from "./dia-prova.js";
 import { montarBloco } from "./interface-bloco.js";
-import { corrigirRegistro, estimativaDoSimulado, instantaneo, NOMES_TIPO } from "./relatorio.js";
+import { corrigirRegistro, estimativaDoSimulado, instantaneo, validadeDoSimulado, NOMES_TIPO } from "./relatorio.js";
+import { mesclarRevelados } from "../../plataforma/js/banco.js";
 import { gravarEspelho, lerEspelho, apagarEspelho } from "./armazenamento.js";
 import { relogio } from "./resultado.js";
 import { duracao, plural, pct } from "./formato.js";
@@ -133,6 +134,7 @@ export default {
       return telaInicio();
     }
 
+    const oficiais = emCondicoesOficiais(s);
     function telaInicio() {
       const temTutorial = form.tempo.tutorial_ms > 0;
       el.innerHTML = '<div class="wrap section-sm dia">' + cabecalho("Check-in") +
@@ -142,8 +144,9 @@ export default {
             '<p class="embarque__top"><span>' + e(form.nome) + "</span><span>" + (form.modo === "fixo" ? "Formulário fixo " + e(form.codigo) : "Formulário personalizado") + "</span></p>" +
             '<dl class="embarque__dados">' +
               "<div><dt>Blocos</dt><dd>" + form.blocos.length + "<small>de 30 minutos, até 20 itens</small></dd></div>" +
-              "<div><dt>Itens</dt><dd>" + form.total + "<small>" + (form.reduzido ? "versão reduzida" : "formato " + (form.oficial.formato_oficial ? "oficial" : "da Road to America")) + "</small></dd></div>" +
-              "<div><dt>Pausa</dt><dd>" + duracao(form.tempo.pausa_ms) + "<small>mais as sobras de blocos" + (temTutorial ? " e do tutorial" : "") + "</small></dd></div>" +
+              "<div><dt>Itens</dt><dd>" + form.total + "<small>" + (form.reduzido ? "versão reduzida" : form.parcial ? "formulário parcial (" + form.blocos.length + " de " + form.oficial.blocos + " blocos)" : "formato " + (form.oficial.formato_oficial ? "oficial" : "da Road to America")) + "</small></dd></div>" +
+              "<div><dt>Pausa</dt><dd>" + duracao(form.tempo.pausa_ms) + "<small>" + (form.tempo.pausa_proporcional ? "proporcional aos " + form.blocos.length + " blocos, " : "") + "mais as sobras de blocos" + (temTutorial ? " e do tutorial" : "") + "</small></dd></div>" +
+              "<div><dt>Condições</dt><dd>" + (oficiais ? "Oficiais" : "Estudo") + "<small>" + (oficiais ? "sem parar, como na prova" : "pode parar entre blocos") + "</small></dd></div>" +
               "<div><dt>Tutorial</dt><dd>" + (temTutorial ? duracao(form.tempo.tutorial_ms) : "sem") + "<small>" + (temTutorial ? "opcional" : "neste formato") + "</small></dd></div>" +
               "<div><dt>Dia</dt><dd>" + duracao(form.tempo.dia_ms) + "<small>blocos, pausa e tutorial</small></dd></div>" +
             "</dl>" +
@@ -151,10 +154,14 @@ export default {
           '<div class="embarque__stub" aria-hidden="true"><span>Embarque</span><b>' + form.blocos.length + "</b><em>blocos</em></div>" +
         "</article>" +
         (form.reduzido ? '<div class="aviso-conta">' + icon("info") + "<p>" + e(form.motivo_reducao) + "</p></div>" : "") +
+        (form.parcial ? '<div class="aviso-conta">' + icon("info") + "<p>" + e(form.motivo_parcial || "Formulário parcial.") + (form.tempo.pausa_proporcional ? " A pausa foi reduzida na proporção dos blocos: " + duracao(form.tempo.pausa_ms) + " em vez de 55 minutos." : "") + "</p></div>" : "") +
         '<section class="cartao" aria-labelledby="t-regras"><h2 class="h-sm" id="t-regras">Regras do dia</h2><ul class="lista-check">' +
           "<li>" + icon("lock-simple") + "<span>Um bloco encerrado, por você ou pelo tempo, não reabre. A revisão de itens marcados vale só dentro do bloco aberto.</span></li>" +
-          "<li>" + icon("coffee") + "<span>Entre os blocos, a pausa usa o seu saldo. O que passar do saldo é descontado do bloco seguinte, porque o dia não se estende. Passados 10 minutos além do saldo, o dia para sozinho (regra da Road to America).</span></li>" +
-          "<li>" + icon("pause") + "<span>Entre dois blocos, você pode parar e continuar outro dia. O tempo parado não conta como pausa.</span></li>" +
+          (oficiais
+            ? "<li>" + icon("coffee") + "<span>Entre os blocos, a pausa usa o seu saldo. Todo o tempo além do saldo é descontado dos blocos seguintes, como na prova, mesmo com a página fechada. O dia não para.</span></li>" +
+              "<li>" + icon("seal-check") + "<span>Condições oficiais: o relatório marca o dia como padronizado, e só um dia assim entra na leitura de prontidão.</span></li>"
+            : "<li>" + icon("coffee") + "<span>Entre os blocos, a pausa usa o seu saldo. O que passar do saldo é descontado do bloco seguinte, porque o dia não se estende. Passados 10 minutos além do saldo, o dia para sozinho (regra da Road to America).</span></li>" +
+              "<li>" + icon("pause") + "<span>Entre dois blocos, você pode parar e continuar outro dia. O tempo parado não conta como pausa. Condições de estudo: o relatório marca o dia como não padronizado.</span></li>") +
           "<li>" + icon("timer") + "<span>Se a página fechar com um bloco aberto, o relógio do bloco continua, como no centro de provas.</span></li>" +
         "</ul></section>" +
         '<div class="iniciar"><p>' + (temTutorial ? "O tutorial mostra as ferramentas da tela. Pular dá os 5 minutos inteiros à pausa." : "Este formato não tem tutorial. O relógio começa com o bloco 1.") + "</p>" +
@@ -182,7 +189,7 @@ export default {
           '<section class="cartao"><h2 class="h-sm">' + icon("flask") + "Valores e calculadora</h2><p>Lab (L) abre a tabela de valores laboratoriais com busca em inglês e português. A calculadora (C) faz as quatro operações, porcentagem e raiz. Alguns itens trazem a própria tabela de exames no meio do caso.</p></section>" +
           '<section class="cartao"><h2 class="h-sm">' + icon("note-pencil") + "Anotações</h2><p>Anotações (O) guardam um texto por item. Elas voltam no relatório, ao lado da explicação.</p></section>" +
           '<section class="cartao"><h2 class="h-sm">' + icon("clock-countdown") + "Relógio do bloco</h2><p>Começa em 30:00, avisa a 5 minutos e a 1 minuto e encerra o bloco ao zerar. Se você encerrar antes, a sobra vai para a pausa.</p></section>" +
-          '<section class="cartao"><h2 class="h-sm">' + icon("coffee") + "Pausa</h2><p>Depois de cada bloco aparece o saldo de pausa. O tempo além do saldo é descontado do bloco seguinte. Entre blocos, Parar guarda o dia para continuar depois.</p></section>" +
+          '<section class="cartao"><h2 class="h-sm">' + icon("coffee") + "Pausa</h2><p>Depois de cada bloco aparece o saldo de pausa. O tempo além do saldo é descontado do bloco seguinte." + (oficiais ? " Em condições oficiais a pausa corre sem parar, como na prova." : " Entre blocos, Parar guarda o dia para continuar depois.") + "</p></section>" +
         "</div>" +
         '<div class="iniciar"><p>Ao encerrar o tutorial, o bloco 1 começa e o tempo que sobrou do tutorial vai para a pausa.</p><button type="button" class="btn" data-bloco>' + icon("play") + "Encerrar o tutorial e iniciar o bloco 1</button></div>" +
         "</div>";
@@ -217,12 +224,14 @@ export default {
           "</div>" +
         "</div>" +
         trilha(form, s) +
-        '<div class="iniciar"><p data-proximo-txt></p><div class="acoes"><button type="button" class="btn btn--ghost" data-parar>' + icon("pause") + "Parar e continuar depois</button>" +
+        '<div class="iniciar"><p data-proximo-txt></p><div class="acoes">' + (oficiais ? "" : '<button type="button" class="btn btn--ghost" data-parar>' + icon("pause") + "Parar e continuar depois</button>") +
           '<button type="button" class="btn" data-bloco>' + icon("play") + "Iniciar o bloco " + proximo + "</button></div></div>" +
-        '<p class="fine">Parar guarda o dia na sua conta: o saldo de pausa fica congelado até você voltar. Na prova, a pausa corre sem parar; por isso o relatório informa quantas vezes o dia foi interrompido.</p>' +
+        (oficiais
+          ? '<p class="fine">Condições oficiais: a pausa corre sem parar, como na prova. O que passar do saldo sai dos blocos seguintes.</p>'
+          : '<p class="fine">Parar guarda o dia na sua conta: o saldo de pausa fica congelado até você voltar. Na prova, a pausa corre sem parar; por isso o relatório marca este dia como não padronizado e informa quantas vezes ele foi interrompido.</p>') +
         "</div>";
       $("[data-bloco]", el).addEventListener("click", iniciarProximo);
-      $("[data-parar]", el).addEventListener("click", async () => {
+      $("[data-parar]", el)?.addEventListener("click", async () => {
         if (!podeSuspender(s)) return;
         mudar(suspender(s, Date.now()), { urgente: true });
         await gravarAgora();
@@ -353,16 +362,30 @@ export default {
         '<h1 class="display h2">Fim do dia de prova. <em>Corrigindo...</em></h1><p class="muted" role="status" data-status>Gravando as respostas e calculando o relatório.</p></div>';
       focarTitulo();
       try {
-        const { resultado, respostas } = corrigirRegistro({ ...reg, sessao: s }, banco.porId);
-        if (!s.respostas_gravadas) {
-          await ctx.store.saveRespostas(respostas);
-          mudar({ ...s, respostas_gravadas: true, rev: (s.rev || 0) + 1 });
+        let resultado, respostas;
+        if (ctx.store.gabaritoNoServidor) {
+          /* gabarito no servidor: o dia inteiro é gravado, corrigido no servidor
+             (r2a_corrigir_simulado) e só então chegam o gabarito e as explicações */
           await gravarAgora();
+          const corr = await ctx.store.corrigirSimulado(id);
+          mesclarRevelados(banco, Object.fromEntries((corr?.itens || []).filter((x) => x.revelado).map((x) => [x.questao_id, x.revelado])));
+          ({ resultado, respostas } = corrigirRegistro({ ...reg, sessao: s }, banco.porId));
+          resultado = { ...resultado, ...(corr?.resultado ? { total: corr.resultado.total, acertos: corr.resultado.acertos, percentual: corr.resultado.percentual, em_branco: corr.resultado.em_branco, por_bloco: corr.resultado.por_bloco } : {}) };
+          const modelos = await ctx.store.getModelosPsicometricos().catch(() => null);
+          const est = estimativaDoSimulado({ form, linhas: respostas, porId: banco.porId, modelos });
+          await ctx.store.corrigirSimulado(id, { estimativa: instantaneo(est, validadeDoSimulado({ formulario: form, sessao: s })), dia: resumoDoDia(s, form), por: resultado.por, tempo_medio_ms: resultado.tempo_medio_ms, encerramentos: resultado.encerramentos, reduzido: resultado.reduzido, formulario_id: resultado.formulario_id, step: resultado.step, tipo: resultado.tipo });
+        } else {
+          ({ resultado, respostas } = corrigirRegistro({ ...reg, sessao: s }, banco.porId));
+          if (!s.respostas_gravadas) {
+            await ctx.store.saveRespostas(respostas);
+            mudar({ ...s, respostas_gravadas: true, rev: (s.rev || 0) + 1 });
+            await gravarAgora();
+          }
+          const modelos = await ctx.store.getModelosPsicometricos().catch(() => null);
+          const est = estimativaDoSimulado({ form, linhas: respostas, porId: banco.porId, modelos });
+          await gravarAgora();
+          await ctx.store.concluirSimuladoCompleto(id, { sessao: s, resultado: { ...resultado, estimativa: instantaneo(est, validadeDoSimulado({ formulario: form, sessao: s })), dia: resumoDoDia(s, form) } });
         }
-        const modelos = await ctx.store.getModelosPsicometricos().catch(() => null);
-        const est = estimativaDoSimulado({ form, linhas: respostas, porId: banco.porId, modelos });
-        await gravarAgora();
-        await ctx.store.concluirSimuladoCompleto(id, { sessao: s, resultado: { ...resultado, estimativa: instantaneo(est), dia: resumoDoDia(s, form) } });
         apagarEspelho(id);
         const dia = resumoDoDia(s, form);
         el.innerHTML = '<div class="wrap section-sm dia">' + cabecalho("Fim do dia") +

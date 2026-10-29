@@ -472,23 +472,62 @@ export class SupabaseStore {
   /* =====================================================================
      Banco de questões
      ===================================================================== */
+  /* Gabarito no servidor: o aluno não recebe gabarito nem explicações antes de
+     responder (tabela questoes_publicas; correção por r2a_responder, r2a_revelar e
+     r2a_corrigir_simulado). O admin lê a tabela questoes inteira. */
+  get gabaritoNoServidor() { return !isAdmin(this.user); }
+
   async listQuestoes({ step = null, incluirInativas = false } = {}) {
     const u = this._exigeLogin();
+    const admin = isAdmin(u);
+    const tabela = admin ? "questoes" : "questoes_publicas";
     const rows = await this._todas(() => {
-      const admin = isAdmin(u);
-      let q = this.client.from("questoes").select("id, status, versao, dados, b_calibrado, ep_calibrado, n_calibracao, calibrado_em" + (admin ? ", em_revisao, revisao_nota" : ""));
+      let q = this.client.from(tabela).select("id, status, versao, dados, b_calibrado, ep_calibrado, n_calibracao, calibrado_em, angoff_painel, angoff_painel_juizes, angoff_painel_ep" + (admin ? ", em_revisao, revisao_nota" : ""));
       if (step) q = q.eq("step", step);
-      if (!(incluirInativas && isAdmin(u))) q = q.eq("status", "ativo");
+      if (!(incluirInativas && admin)) q = q.eq("status", "ativo");
       return q.order("id");
     });
-    this.ultimaLeituraQuestoes = { fontes: [{ arquivo: "supabase:questoes", n: rows.length, ok: true, erro: "" }], privado: true };
+    /* formulários fixos gravados (composição e ordem dos blocos, sem gabarito) */
+    let formularios = null;
+    try { formularios = await this._todas(() => this.client.from("formularios_fixos").select("step, codigo, tipo, nome, parcial, reservado, blocos").order("step").order("codigo")); }
+    catch (e) { if (!semColuna(e) && !/formularios_fixos/.test(String(e.message || ""))) throw e; formularios = null; }
+    this.ultimaLeituraQuestoes = { fontes: [{ arquivo: "supabase:" + tabela, n: rows.length, ok: true, erro: "" }], privado: true, formularios: formularios && formularios.length ? formularios : null };
     return rows.map((r) => ({
       ...(r.dados || {}), id: r.id, status: r.status, versao: r.versao,
       b_calibrado: r.b_calibrado === null ? null : Number(r.b_calibrado),
       ep_calibrado: r.ep_calibrado === null ? null : Number(r.ep_calibrado),
       n_calibracao: r.n_calibracao || 0, calibrado_em: r.calibrado_em,
+      ...(r.angoff_painel === null || r.angoff_painel === undefined ? {} : { angoff_painel: Number(r.angoff_painel), angoff_painel_juizes: r.angoff_painel_juizes || 0, angoff_painel_ep: r.angoff_painel_ep === null || r.angoff_painel_ep === undefined ? null : Number(r.angoff_painel_ep) }),
       ...(r.em_revisao === undefined ? {} : { em_revisao: !!r.em_revisao, revisao_nota: r.revisao_nota || "" })
     }));
+  }
+  /* Registra respostas (banco e bloco de 30 minutos) pelo servidor e devolve, por
+     linha, { id, questao_id, posicao, resposta, correta, revelado? } (revelado: a
+     parte privada do item, com correta e explicações). */
+  async responderItens(lista, { revelar = true } = {}) {
+    this._exigeLogin();
+    const rows = (Array.isArray(lista) ? lista : [lista]).map((r) => {
+      const n = normalizarResposta(r);
+      const e = validarResposta(n);
+      if (e.length) throw new Error(e.join(" "));
+      return { questao_id: n.questao_id, resposta: n.resposta, tempo_ms: n.tempo_ms, marcada: n.marcada, modo: n.modo, origem: n.origem, sessao_id: n.sessao_id, bloco: n.bloco, posicao: n.posicao, respondida_em: n.respondida_em };
+    });
+    const out = [];
+    for (let i = 0; i < rows.length; i += 200) out.push(...(ok(await this.client.rpc("r2a_responder", { p_linhas: rows.slice(i, i + 200), p_revelar: !!revelar })) || []));
+    return out;
+  }
+  /* Gabarito e explicações dos itens já respondidos: { id: parte privada } */
+  async revelarItens(ids) {
+    this._exigeLogin();
+    const lista = [...new Set((ids || []).filter(Boolean).map(String))];
+    const out = {};
+    for (let i = 0; i < lista.length; i += 1000) Object.assign(out, ok(await this.client.rpc("r2a_revelar", { p_ids: lista.slice(i, i + 1000) })) || {});
+    return out;
+  }
+  /* Correção do simulado completo no servidor (depois do último bloco) */
+  async corrigirSimulado(id, complemento = {}) {
+    this._exigeLogin();
+    return ok(await this.client.rpc("r2a_corrigir_simulado", { p_id: id, p_complemento: complemento || {} }));
   }
   /* As três ações abaixo passam por funções do banco para que o motivo fique no
      histórico (questoes_historico) na mesma transação da mudança */
@@ -542,7 +581,9 @@ export class SupabaseStore {
 
   /* ---------- respostas por item ---------- */
   async saveRespostas(lista) {
-    this._exigeLogin();
+    const u = this._exigeLogin();
+    /* o participante grava pelo servidor (r2a_responder); só o admin insere direto */
+    if (!isAdmin(u)) return this.responderItens(lista, { revelar: false });
     const rows = (Array.isArray(lista) ? lista : [lista]).map((r) => {
       const n = normalizarResposta(r);
       const e = validarResposta(n);
@@ -611,6 +652,88 @@ export class SupabaseStore {
     this._exigeAdmin("Só administradores excluem simulados.");
     const r = ok(await this.client.from("simulados_completos").delete().eq("id", id).select("id"));
     if (!r.length) throw new PermissionError("Simulado não encontrado ou sem permissão.");
+  }
+
+  /* ---------- painel Angoff (tabelas angoff_* e funções r2a_angoff_*) ---------- */
+  async listJuizesPossiveis() {
+    this._exigeAdmin("Só administradores designam juízes.");
+    /* aluno com matrícula ativa não pode ser juiz (o banco também recusa) */
+    const rows = await this._todas(() => this.client.from("profiles").select("id, nome, email, papel, ativo").order("nome").order("id"));
+    return rows.filter((r) => r.papel === "admin" || !r.ativo).map((r) => ({ id: r.id, nome: r.nome || r.email || r.id, email: r.email, papel: r.papel, sintetico: false }));
+  }
+  async listPaineisAngoff() {
+    this._exigeLogin();
+    return this._todas(() => this.client.from("angoff_paineis").select("*").order("criado_em", { ascending: false }).order("id"));
+  }
+  async getPainelAngoff(id) {
+    const u = this._exigeLogin();
+    const painel = ok(await this.client.from("angoff_paineis").select("*").eq("id", id).maybeSingle());
+    if (!painel) throw new PermissionError("Painel não encontrado ou sem permissão.");
+    const juizes = await this._todas(() => this.client.from("angoff_juizes").select("*").eq("painel_id", id).order("nome").order("juiz_id"));
+    return { painel, juizes, n_juizes: isAdmin(u) ? juizes.length : null, sou_juiz: juizes.some((j) => j.juiz_id === u.id) };
+  }
+  async criarPainelAngoff({ step, nome, descricao = "", itens = [], rodadas_max = 3, juizes = [] } = {}) {
+    this._exigeAdmin("Só administradores criam painéis.");
+    const { validarPainel } = await import("../../plataforma/js/angoff.js");
+    const e = validarPainel({ step, nome, itens, rodadas_max });
+    if (e.length) throw new Error(e.join(" "));
+    const p = ok(await this.client.from("angoff_paineis").insert({ step, nome: String(nome).trim(), descricao: String(descricao || ""), itens, rodadas_max: Number(rodadas_max) }).select("*").single());
+    if (juizes.length) await this.designarJuizesAngoff(p.id, juizes);
+    return p;
+  }
+  async designarJuizesAngoff(id, juizes) {
+    this._exigeAdmin("Só administradores designam juízes.");
+    const ids = [...new Set((juizes || []).map((j) => (typeof j === "string" ? j : j.id)))];
+    ok(await this.client.from("angoff_juizes").delete().eq("painel_id", id).not("juiz_id", "in", "(" + (ids.length ? ids.join(",") : "00000000-0000-0000-0000-000000000000") + ")"));
+    if (ids.length) ok(await this.client.from("angoff_juizes").upsert(ids.map((juiz_id) => ({ painel_id: id, juiz_id })), { onConflict: "painel_id,juiz_id", ignoreDuplicates: true }));
+    return this._todas(() => this.client.from("angoff_juizes").select("*").eq("painel_id", id).order("nome").order("juiz_id"));
+  }
+  async listItensPainelAngoff(id) {
+    this._exigeLogin();
+    const rows = ok(await this.client.rpc("r2a_angoff_itens", { p_painel: id })) || [];
+    return rows.map((r) => ({ ...(r.dados || {}), id: r.id, step: r.step, versao: r.versao, status: r.status }));
+  }
+  async avaliarItemAngoff(id, questao_id, valor, comentario = "") {
+    this._exigeLogin();
+    const { validarEstimativa } = await import("../../plataforma/js/angoff.js");
+    const e = validarEstimativa(valor);
+    if (e.length) throw new Error(e.join(" "));
+    return ok(await this.client.rpc("r2a_angoff_avaliar", { p_painel: id, p_questao: questao_id, p_valor: Number(valor), p_comentario: String(comentario || "") }));
+  }
+  async revelarPainelAngoff(id) { this._exigeLogin(); return ok(await this.client.rpc("r2a_angoff_revelar", { p_painel: id })) || {}; }
+  async listAvaliacoesAngoff(id) {
+    this._exigeLogin();
+    return this._todas(() => this.client.from("angoff_avaliacoes").select("*").eq("painel_id", id).order("rodada").order("questao_id").order("juiz_id"));
+  }
+  async feedbackPainelAngoff(id) { this._exigeLogin(); return ok(await this.client.rpc("r2a_angoff_feedback", { p_painel: id })); }
+  async listDiscussaoAngoff(id) {
+    this._exigeLogin();
+    return this._todas(() => this.client.from("angoff_discussao").select("*").eq("painel_id", id).order("criado_em").order("id"));
+  }
+  async comentarAngoff(id, { questao_id = null, texto = "" } = {}) {
+    this._exigeLogin();
+    const t = String(texto || "").trim();
+    if (!t || t.length > 2000) throw new Error("O comentário tem de 1 a 2000 caracteres.");
+    return ok(await this.client.from("angoff_discussao").insert({ painel_id: id, questao_id: questao_id || null, texto: t }).select("*").single());
+  }
+  async listHofsteeAngoff(id) {
+    this._exigeLogin();
+    return this._todas(() => this.client.from("angoff_hofstee").select("*").eq("painel_id", id).order("juiz_id"));
+  }
+  async salvarHofsteeAngoff(id, h) {
+    const u = this._exigeLogin();
+    const { validarHofstee } = await import("../../plataforma/js/angoff.js");
+    const e = validarHofstee(h);
+    if (e.length) throw new Error(e.join(" "));
+    return ok(await this.client.from("angoff_hofstee").upsert({ painel_id: id, juiz_id: u.id, k_min: Number(h.k_min), k_max: Number(h.k_max), f_min: Number(h.f_min), f_max: Number(h.f_max) }, { onConflict: "painel_id,juiz_id" }).select("*").single());
+  }
+  async avancarPainelAngoff(id, acao) {
+    this._exigeAdmin("Somente administradores conduzem o painel.");
+    return ok(await this.client.rpc("r2a_admin_angoff_avancar", { p_painel: id, p_acao: acao }));
+  }
+  async publicarAngoff(id, { minJuizes = 10, justificativa = "" } = {}) {
+    this._exigeAdmin("Somente administradores publicam o Angoff do painel.");
+    return ok(await this.client.rpc("r2a_admin_publicar_angoff", { p_painel: id, p_min_juizes: minJuizes, p_justificativa: String(justificativa || "").trim() || null }));
   }
 
   /* ---------- anotações do aluno por item ---------- */

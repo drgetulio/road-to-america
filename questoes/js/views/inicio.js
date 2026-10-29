@@ -1,7 +1,8 @@
-/* Road to America | banco de questões: início (placas com a probabilidade de
-   aprovação dos dois Steps, bloco em andamento, atalhos e últimos blocos) */
+/* Road to America | banco de questões: início (placas com a posição em relação ao
+   limiar do banco nos dois Steps, bloco em andamento, atalhos e últimos blocos) */
 import { resumoAprovacao, resumoBlocos, estatisticasAluno, ROTULO_MODO } from "../../../plataforma/js/banco-aluno.js";
-import { ITENS_FORMULARIO_OFICIAL } from "../../../plataforma/js/banco.js";
+import { ITENS_FORMULARIO_OFICIAL, resumoRevisao } from "../../../plataforma/js/banco.js";
+import { nomePadrao } from "../../../plataforma/js/psicometria.js";
 import { $, e, icon, toast } from "../../../anki/js/ui.js";
 import { cabecalho, abas, NOME_STEP, pct, pctProb, plural, dataHoraBR, chipConfianca } from "../comum.js";
 import { comecarBloco } from "../iniciar.js";
@@ -9,16 +10,18 @@ import { comecarBloco } from "../iniciar.js";
 export function placaStep(r, st, { link = "#/aprovacao?step=" } = {}) {
   const est = r.est;
   const conf = est.confianca;
-  const falta = conf.alta ? "" : !est.n ? "O mínimo para alta confiança é de " + conf.n_minimo + " itens, em pelo menos " + Math.ceil(est.cobertura.total * 0.8) + " sistemas." : conf.perto_do_limiar ? "Desempenho no limiar: mais itens quase não mudam a classificação." : conf.faltam_itens ? "Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para alta confiança." : conf.faltam_sistemas.length ? "Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + " para alta confiança." : "";
+  const falta = conf.alta ? "" : !est.n ? "O mínimo para a precisão alta é de " + conf.n_minimo + " itens, com itens suficientes em pelo menos " + Math.ceil(est.cobertura.total * 0.8) + " sistemas." : conf.padrao_limita ? "Perto do limiar: com o padrão provisório, mais itens não decidem a classificação." : conf.perto_do_limiar ? "Desempenho no limiar: mais itens quase não mudam a classificação." : conf.faltam_itens ? "Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para a precisão alta." : conf.faltam_sistemas.length ? "Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + " para a precisão alta." : "";
   return '<article class="q-placa" aria-labelledby="pl-' + r.step + '">' +
-    '<div class="q-placa__topo"><span class="exit-tab"><small>EXIT</small><b>' + (r.step === "step1" ? "S1" : "CK") + "</b></span>" +
+    '<div class="q-placa__topo"><span class="exit-tab"><small>Step</small><b>' + (r.step === "step1" ? "1" : "CK") + "</b></span>" +
       '<h2 class="q-placa__step" id="pl-' + r.step + '">' + NOME_STEP[r.step] + "</h2>" + chipConfianca(conf) + "</div>" +
     (est.n
-      ? '<p class="q-placa__p"><b>' + pctProb(est.p_aprovacao) + "</b><span>" + (r.step === "step2ck" ? "de atingir o padrão de aprovação (218)" : "de estar acima do limiar de aprovação") + "</span></p>"
+      ? '<p class="q-placa__p"><b>' + pctProb(est.p_aprovacao) + "</b><span>de estar acima do limiar do banco" + (r.step === "step2ck" ? ", que representa o 218" : "") + " (padrão " + e(nomePadrao(est.corte?.origem)) + ")</span></p>"
       : '<p class="q-placa__p q-placa__p--vazio"><b>Sem estimativa</b><span>Responda itens deste Step para começar.</span></p>') +
     '<dl class="q-placa__dados"><div><dt>Itens que contam</dt><dd>' + String(Math.round(est.n_efetivo * 10) / 10).replace(".", ",") + " <small>de " + conf.n_minimo + " mínimos</small></dd></div>" +
       "<div><dt>Acerto bruto</dt><dd>" + (est.n ? pct(est.taxa_bruta) : "sem dado") + "</dd></div>" +
       "<div><dt>Sistemas cobertos</dt><dd>" + est.cobertura.com_itens.length + " <small>de " + est.cobertura.total + "</small></dd></div></dl>" +
+    (r.reservados ? '<p class="q-placa__falta">' + (r.reservados === 1 ? "1 item fica reservado" : r.reservados + " itens ficam reservados") + " para o seu simulado completo (" + e((r.formularios_reservados || []).map((f) => f.codigo).join(", ")) + ") e " + (r.reservados === 1 ? "sai" : "saem") + " do banco de questões até você fazê-lo." +
+      (r.step === "step2ck" && r.itens_no_banco ? " No Step 2 CK o banco ainda é pequeno: o estudo e o simulado limpo disputam os mesmos " + r.itens_no_banco + " itens, e com a reserva ficam " + (r.itens_no_banco - r.reservados) + " para estudar (" + r.nao_vistos + " ainda não vistos)." : "") + "</p>" : "") +
     (falta ? '<p class="q-placa__falta">' + e(falta) + "</p>" : "") +
     '<a class="btn btn--sign btn--sm" href="' + link + r.step + '">' + icon("gauge") + "Ver o painel do " + NOME_STEP[r.step] + "</a>" +
   "</article>";
@@ -33,6 +36,7 @@ export default {
       ctx.store.getConfigPlataforma().catch(() => undefined)
     ]);
     const rs = ["step1", "step2ck"].map((st) => resumoAprovacao({ banco: ctx.banco, respostas: ctx.respostas, step: st, modelos, nbme, config }));
+    const revisao = resumoRevisao(ctx.banco.itens);
     const blocos = resumoBlocos(ctx.respostas, ctx.banco.porId);
     const and = ctx.andamento();
     const st = ctx.step;
@@ -40,12 +44,12 @@ export default {
     const semBanco = !ctx.banco.itens.length;
     const origem = ctx.banco.origem === "supabase" ? "" : ctx.banco.origem === "demonstracao_completa"
       ? "Banco completo de desenvolvimento (banco-privado/), lido só neste computador."
-      : "Modo demonstração: os 80 itens públicos (40 por Step). O banco completo fica no servidor e abre com a matrícula ativa.";
+      : "Modo demonstração: os " + ctx.banco.itens.length + " itens públicos. O banco completo fica no servidor e abre com a matrícula ativa.";
 
     el.innerHTML = '<div class="wrap section-sm q-pag" data-inicio>' +
       cabecalho({
         titulo: "Banco de questões",
-        lead: "Itens no estilo NBME do Step 1 e do Step 2 CK, com explicação de cada alternativa. Monte blocos por sistema, disciplina e competência, no modo tutor ou cronometrado, e acompanhe a probabilidade de aprovação calculada a partir das suas respostas.",
+        lead: "Itens no estilo NBME do Step 1 e do Step 2 CK, com explicação de cada alternativa. Monte blocos por sistema, disciplina e competência, no modo tutor ou cronometrado, e acompanhe a sua posição em relação ao limiar do banco, calculada a partir das suas respostas.",
         acoes: '<a class="btn btn--sm" href="#/criar">' + icon("plus-circle") + "Criar bloco</a>"
       }) +
       abas("") +
@@ -56,8 +60,9 @@ export default {
         (and.modo === "cronometrado" ? " No modo cronometrado o relógio continua correndo com a página fechada, como na prova." : "") + "</p></section>" : "") +
 
       '<div class="q-placas">' + rs.map((r) => placaStep(r)).join("") + "</div>" +
-      '<p class="q-nota">' + icon("info") + "<span>Probabilidade calculada pelo modelo de Rasch ancorado no padrão de Angoff do banco, com as suas primeiras respostas a cada item. Não é resultado oficial do USMLE nem do NBME; o critério principal para manter a data continua sendo a EXIT 18 (duas autoavaliações NBME seguidas com pelo menos 90%). " +
+      '<p class="q-nota">' + icon("info") + "<span>Probabilidade de estar acima do limiar do banco, calculada pelo modelo de Rasch com as suas primeiras respostas a cada item. O limiar ainda é provisório (dificuldade-alvo dos itens, sem painel de juízes), e a conta inclui essa incerteza. Não é probabilidade de aprovação no USMLE nem resultado do NBME; o critério principal para manter a data continua sendo a EXIT 18 (duas autoavaliações NBME seguidas com pelo menos 90%). " +
         '<a href="#/aprovacao">Como a estimativa é feita</a>.</span></p>' +
+      (revisao.aviso ? '<p class="q-nota" data-aviso-revisao>' + icon("warning") + "<span>" + e(revisao.aviso) + "</span></p>" : "") +
 
       '<div class="grid2 grid2--top">' +
         '<section class="panel" aria-labelledby="at-t"><div class="panel__head"><h2 class="h-sm" id="at-t">Começar agora</h2><p class="hint">Atalhos com o que mais se parece com a prova. O Step é o escolhido por último (' + NOME_STEP[st] + ").</p></div>" +

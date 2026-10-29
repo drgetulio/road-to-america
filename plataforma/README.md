@@ -12,8 +12,17 @@ em `CONTRATO-ITEM.md`.
 - **Públicas (demonstração):** os 80 itens de `simulado/data/` (40 por Step), na versão
   anterior do contrato. O carregador converte para o contrato atual.
 - **Banco completo:** `banco-privado/` (fora do git, porque o repositório é público).
-  Em produção ele vive na tabela `questoes` do Supabase, que só entrega itens ativos a
-  alunos com matrícula ativa (`profiles.ativo`, ligado pelo admin) e aos administradores.
+  Em produção ele vive na tabela `questoes` do Supabase, lida só pelos administradores.
+  Alunos com matrícula ativa (`profiles.ativo`, ligado pelo admin) leem os itens ativos em
+  `questoes_publicas`, espelho sem gabarito nem explicações; a correção vem das RPCs
+  `r2a_responder`, `r2a_revelar` e `r2a_corrigir_simulado` depois que a resposta é
+  gravada (detalhes em `INTERFACE.md`, seção Gabarito no servidor).
+- **Formulários fixos:** `banco-privado/formularios.json` (S1-A, S1-B, CK-A e CK-B,
+  gerados por `banco-privado/ferramentas/formularios.mjs --gravar`). No Supabase vão para
+  a tabela `formularios_fixos`.
+- **Ferramentas de consolidação:** `banco-privado/ferramentas/` (validar, duplicidade,
+  laboratório, gabarito, formulários, manifesto e relatório); o resultado da última
+  consolidação está em `banco-privado/relatorio-banco.md`.
 
 ## Importar o banco para o Supabase
 
@@ -33,7 +42,7 @@ SUPABASE_URL="https://SEU-PROJETO.supabase.co" SUPABASE_SERVICE_ROLE_KEY="cole-a
 O que a ferramenta faz:
 
 - lê todos os `*.json` de `banco-privado/` (subpastas incluídas, menos `ferramentas/`,
-  `versoes/` e `fontes-*/`), exceto `manifest.json`, `referencia-*.json` e
+  `versoes/` e `fontes-*/`), exceto `manifest.json`, `formularios.json`, `referencia-*.json` e
   `blueprint-*.json`; arquivo que não é lista de itens é ignorado e aparece no relatório;
 - completa cada item com a especificação de mesmo `spec_id` dos blueprints
   (`banco-privado/blueprint-step1.json` e `blueprint-step2ck.json`): disciplinas
@@ -52,6 +61,9 @@ O que a ferramenta faz:
   esse status em todos;
 - `--incluir-publicos` importa também os 80 itens públicos, para que o banco corrija no
   servidor as respostas do simulado de 30 minutos;
+- envia os formulários fixos de `banco-privado/formularios.json` para a tabela
+  `formularios_fixos` (`--sem-formularios` desliga); o espelho `questoes_publicas` é
+  atualizado pelo gatilho a cada item enviado;
 - no fim, conta os itens por Step na tabela. Código de saída: 0 sem problemas; 1 com item
   inválido ou falha de envio (`--ignorar-invalidos` devolve 0 mesmo com inválidos); 2 com
   uso errado ou sem as variáveis de ambiente. Credencial passada como opção na linha de
@@ -63,7 +75,7 @@ O modo demonstração (sem `anki/config.js`) lê os 80 itens públicos. Para tes
 com o banco completo no seu computador, gere o manifesto e sirva a raiz do repositório:
 
 ```bash
-node tools/importar-banco.mjs --dry-run --gerar-manifest   # grava banco-privado/manifest.json
+node tools/importar-banco.mjs --dry-run --gerar-manifest   # grava banco-privado/manifest.json (com formularios.json, se houver)
 python3 -m http.server 8080                                # e abra uma página com ?banco=completo
 # por exemplo http://localhost:8080/simulado/?banco=completo
 ```
@@ -77,7 +89,7 @@ pasta nem existe (está no `.gitignore`).
 ## Testes
 
 ```bash
-node --test plataforma/tests/*.test.mjs      # inclui recuperação de parâmetros do Rasch e calibração da P(aprovação)
+node --test plataforma/tests/*.test.mjs      # inclui recuperação de parâmetros do Rasch, calibração da P(acima do limiar), sensibilidade do padrão, ligação com a NBME e cobertura do intervalo dos desfechos
 createdb r2a && psql -d r2a -f supabase/teste-local/01-simula-supabase.sql -f supabase/schema.sql -f supabase/teste-local/02-testa-rls.sql
 node supabase/teste-local/04-compara-itens.mjs   # estatísticas de itens: banco de dados igual ao JavaScript
 ```

@@ -45,15 +45,18 @@ function fazerDia(step, codigo, theta, semente = 1, { emBranco = 0 } = {}) {
   return { form, s, reg, resultado, respostas, est };
 }
 
-test("Step 1, examinando forte: Pass estimado com alta confiança, perfil nas três dimensões do outline", () => {
+test("Step 1, examinando forte: acima do limiar do banco com precisão alta (sem Pass com padrão provisório), perfil nas três dimensões do outline", () => {
   const { est, resultado, reg } = fazerDia("step1", "S1-A", 1.6, 3);
   assert.equal(est.n, 280);
-  assert.ok(est.p_aprovacao > 0.99, "P = " + est.p_aprovacao);
+  assert.ok(est.p_aprovacao > 0.95, "P = " + est.p_aprovacao + " (com a incerteza de 0,7 logit do padrão provisório)");
   assert.equal(est.confianca.alta, true);
   const r = resultadoEstimado(est, "step1");
-  assert.equal(r.codigo, "pass");
-  assert.equal(r.selo, "Pass");
-  assert.match(r.confianca, /Alta confiança/);
+  assert.equal(r.codigo, "acima");
+  assert.equal(r.selo, "Acima do limiar do banco", "Pass e Fail só com a ligação com a NBME ou com desfechos");
+  assert.doesNotMatch(r.titulo + " " + r.selo, /\b(Pass|Fail)\b/);
+  assert.match(r.confianca, /Precisão alta em relação ao padrão do banco \(padrão provisório\)/);
+  assert.match(r.frase, /limiar do banco \(padrão provisório\)/, "a frase não fala em probabilidade de aprovação no USMLE");
+  assert.ok(Math.abs(est.corte.sigma - 0.7) < 1e-9 && est.corte.origem === "provisorio" && est.p_aprovacao <= est.p_medida + 1e-12, "a incerteza do padrão entra na probabilidade");
   const perfil = perfilRelatorio(est, "step1");
   assert.deepEqual(perfil.map((p) => p.dim), ["sistema", "disciplinas", "competencia"]);
   const sis = perfil[0].areas.map((a) => a.chave);
@@ -75,37 +78,43 @@ test("Step 1, examinando forte: Pass estimado com alta confiança, perfil nas tr
   assert.equal(snap.n, 280);
 });
 
-test("Step 1, examinando fraco: Fail estimado com alta confiança e áreas abaixo do limiar como prioridade", () => {
+test("Step 1, examinando fraco: abaixo do limiar do banco com precisão alta e áreas abaixo do limiar como prioridade", () => {
   const { est } = fazerDia("step1", "S1-B", -1.6, 5);
-  assert.ok(est.p_aprovacao < 0.01);
+  assert.ok(est.p_aprovacao < 0.05);
   assert.equal(est.confianca.alta, true);
-  assert.equal(resultadoEstimado(est, "step1").codigo, "fail");
+  assert.equal(resultadoEstimado(est, "step1").codigo, "abaixo");
   const prio = prioridades(perfilRelatorio(est, "step1"));
   assert.ok(prio.length > 0 && prio.length <= 5);
   assert.ok(prio.every((a) => a.classe === "mais_baixo" || a.p_acima < 0.5));
   assert.ok(prio[0].dim, "prioridade sabe de que dimensão veio");
 });
 
-test("examinando no limiar: alta confiança só com P fora de 0,10 a 0,90 (280 itens e todos os sistemas cobertos)", () => {
+test("examinando no limiar: precisão alta só com P fora de 0,10 a 0,90 (280 itens e todos os sistemas cobertos)", () => {
   let preliminares = 0;
   for (const semente of [8, 13, 17, 19]) {
-    const { est } = fazerDia("step1", "S1-C", 0, semente);
+    const { est } = fazerDia("step1", "S1-B", 0, semente);
     const decidido = est.p_aprovacao >= 0.9 || est.p_aprovacao <= 0.1;
     assert.equal(est.confianca.alta, decidido, "P = " + est.p_aprovacao);
     const r = resultadoEstimado(est, "step1");
-    assert.equal(r.confianca, decidido ? "Alta confiança" : "Estimativa preliminar");
+    assert.equal(r.confianca, decidido ? "Precisão alta em relação ao padrão do banco (padrão provisório)" : "Estimativa preliminar");
     if (!decidido) {
       preliminares++;
       assert.equal(r.codigo, "indefinido", "entre 10% e 90% não se escreve Pass nem Fail");
       assert.doesNotMatch(r.titulo + " " + r.selo, /\b(Pass|Fail)\b/);
-      assert.match(r.frase, /tendência é (Pass|Fail)/);
+      assert.match(r.frase, /tendência é (acima|abaixo) do limiar/);
     }
   }
   assert.ok(preliminares >= 1, "no limiar, ao menos uma das quatro tentativas fica preliminar");
 });
 
-test("resultado estimado: Pass e Fail só fora da faixa de 10% a 90%; dentro dela, indefinido com a tendência", () => {
-  const base = { confianca: { alta: false } };
+test("resultado estimado: Pass e Fail só com padrão empírico e fora da faixa de 10% a 90%; dentro dela, indefinido com a tendência", () => {
+  const base = { confianca: { alta: false }, corte: { origem: "nbme" } };
+  const prov = { confianca: { alta: false }, corte: { origem: "provisorio" } };
+  assert.equal(resultadoEstimado({ ...prov, p_aprovacao: 0.95 }, "step1").selo, "Acima do limiar do banco");
+  assert.equal(resultadoEstimado({ ...prov, p_aprovacao: 0.05 }, "step1").selo, "Abaixo do limiar do banco");
+  assert.equal(resultadoEstimado({ ...prov, p_aprovacao: 0.95, desfechos: { p_aprovacao: 0.97 } }, "step1").codigo, "pass", "com modelo de desfechos, Pass");
+  assert.equal(resultadoEstimado({ ...prov, p_aprovacao: 0.95 }, "step2ck").selo, "Acima do limiar do banco");
+  assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.95 }, "step1").titulo, "Resultado estimado pelo limiar ligado à NBME: Pass");
   assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.55 }, "step1").codigo, "indefinido");
   assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.89 }, "step1").tendencia, "acima");
   assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.2 }, "step1").tendencia, "abaixo");
@@ -114,12 +123,12 @@ test("resultado estimado: Pass e Fail só fora da faixa de 10% a 90%; dentro del
   const ck = resultadoEstimado({ ...base, p_aprovacao: 0.6 }, "step2ck");
   assert.equal(ck.codigo, "indefinido");
   assert.match(ck.frase, /218/);
-  assert.match(ck.frase, /acima do padrão/);
+  assert.match(ck.frase, /acima do limiar/);
   assert.equal(resultadoEstimado({ ...base, p_aprovacao: 0.95 }, "step2ck").codigo, "atinge");
 });
 
 test("Step 2 CK: probabilidade de atingir o padrão, sem nota de três dígitos inventada", () => {
-  const { est, form } = fazerDia("step2ck", "CK-A", 1.2, 9, { emBranco: 1 });
+  const { est, form } = fazerDia("step2ck", "CK-A", 1.6, 9, { emBranco: 1 });
   assert.equal(form.total, 318);
   assert.equal(est.escore, null, "sem modelo calibrado com notas reais, não há nota");
   const r = resultadoEstimado(est, "step2ck");
@@ -134,7 +143,7 @@ test("Step 2 CK: probabilidade de atingir o padrão, sem nota de três dígitos 
 });
 
 test("revisão item a item: ordem da prova, situação, filtros, tempo e anotação", () => {
-  const { reg, resultado } = fazerDia("step2ck", "CK-B", 0.4, 12, { emBranco: 2 });
+  const { reg, resultado } = fazerDia("step2ck", "CK-A", 0.4, 12, { emBranco: 2 });
   const itens = itensRevisao(reg, banco.porId);
   assert.equal(itens.length, 318);
   assert.equal(itens[0].numero, 1);
@@ -194,4 +203,21 @@ test("itens já vistos: conta só respostas de outras sessões anteriores ao in�
   assert.equal(r.n, 1);
   assert.deepEqual(r.ids, [a]);
   assert.equal(r.total, 280);
+});
+
+test("validade do simulado: só o dia em condições oficiais, sem paradas, sem reaplicação e completo vale para a prontidão", async () => {
+  const { validadeDoSimulado } = await import("../js/relatorio.js");
+  const { reg, est } = fazerDia("step1", "S1-A", 1.0, 21);
+  const estudo = validadeDoSimulado(reg);
+  assert.equal(estudo.padronizado, false, "o dia de teste foi criado em condições de estudo");
+  assert.equal(estudo.valido_prontidao, false);
+  const oficial = validadeDoSimulado({ ...reg, sessao: { ...reg.sessao, condicoes: "oficiais", suspensoes: [] } });
+  assert.equal(oficial.valido_prontidao, true);
+  const reap = validadeDoSimulado({ ...reg, sessao: { ...reg.sessao, condicoes: "oficiais", suspensoes: [] }, formulario: { ...reg.formulario, ja_vistos: { n: 100, total: 280, reaplicacao: true } } });
+  assert.equal(reap.reaplicacao, true);
+  assert.equal(reap.valido_prontidao, false);
+  assert.match(reap.motivos.join(" "), /reaplicação, não comparável/);
+  const snap = instantaneo(est, oficial);
+  assert.equal(snap.valido_prontidao, true);
+  assert.equal(snap.corte_origem, "provisorio");
 });

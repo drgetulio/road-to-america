@@ -187,14 +187,14 @@ export function barrasContagem(itens, { total = null } = {}) {
 /* ---------- Banco de questões ---------- */
 
 /* Probabilidade de aprovação da turma num Step: um ponto por participante sobre a
-   régua de 0 a 100%. Ponto cheio = alta confiança; anel = estimativa preliminar.
+   régua de 0 a 100%. Ponto cheio = precisão alta; anel = estimativa preliminar.
    As faixas de 0 a 10% e de 90 a 100% são as da regra de confiança. */
 export function tiraProbabilidade(dist, { titulo = "", baixa = 0.1, alta = 0.9 } = {}) {
   const W = 720, H = 104;
   const pad = { l: 14, r: 14 };
   const x = (v) => pad.l + (W - pad.l - pad.r) * Math.max(0, Math.min(1, v));
   const desc = dist.pontos.length
-    ? dist.pontos.length + " participantes com respostas; " + dist.alta_abaixo + " com probabilidade de até " + fmtPct(baixa) + " e alta confiança, " + dist.alta_acima + " com " + fmtPct(alta) + " ou mais e alta confiança, " + dist.preliminar + " com estimativa preliminar."
+    ? dist.pontos.length + " participantes com respostas; " + dist.alta_abaixo + " com probabilidade de até " + fmtPct(baixa) + " e precisão alta, " + dist.alta_acima + " com " + fmtPct(alta) + " ou mais e precisão alta, " + dist.preliminar + " com estimativa preliminar."
     : "Nenhum participante com respostas no banco.";
   let s = '<svg class="chart chart--tira" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + e(titulo + ". " + desc) + '">';
   s += '<rect class="tira__faixa" x="' + x(0) + '" y="32" width="' + (x(baixa) - x(0)) + '" height="34"/>';
@@ -211,7 +211,7 @@ export function tiraProbabilidade(dist, { titulo = "", baixa = 0.1, alta = 0.9 }
     usados.push({ cx, nivel });
     const cy = 49 + (nivel % 2 ? 1 : -1) * Math.ceil(nivel / 2) * 10;
     const cls = "chart__dot" + (p.alta ? (p.p <= baixa ? " is-abaixo" : "") : " is-oco");
-    s += '<circle class="' + cls + '" cx="' + cx.toFixed(1) + '" cy="' + cy + '" r="5"><title>' + e(p.nome + ": " + fmtPct(p.p) + (p.alta ? ", alta confiança" : ", estimativa preliminar") + " (" + fmtNum(p.n) + " itens)") + "</title></circle>";
+    s += '<circle class="' + cls + '" cx="' + cx.toFixed(1) + '" cy="' + cy + '" r="5"><title>' + e(p.nome + ": " + fmtPct(p.p) + (p.alta ? ", precisão alta" : ", estimativa preliminar") + " (" + fmtNum(p.n) + " itens)") + "</title></circle>";
   }
   return s + "</svg>";
 }
@@ -272,7 +272,7 @@ export function curvasOpcao(dq, { titulo = "" } = {}) {
   return s + "</svg>";
 }
 
-/* Dispersão da recalibração: b de Angoff (x) contra b recalibrado (y), com a
+/* Dispersão da recalibração: b da dificuldade-alvo (x) contra b recalibrado (y), com a
    diagonal. Pontos cheios recebem o b novo; anéis têm respostas de menos. */
 export function dispersaoCalibracao(itens, { titulo = "" } = {}) {
   const W = 480, H = 320;
@@ -287,11 +287,11 @@ export function dispersaoCalibracao(itens, { titulo = "" } = {}) {
     s += '<line class="chart__grid" x1="' + pad.l + '" x2="' + (W - pad.r) + '" y1="' + y(v) + '" y2="' + y(v) + '"/><text class="chart__lbl" x="' + (pad.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + String(v).replace("-", "−") + "</text>";
     s += '<text class="chart__lbl" x="' + x(v) + '" y="' + (H - 22) + '" text-anchor="middle">' + String(v).replace("-", "−") + "</text>";
   }
-  s += '<text class="chart__lbl" x="' + ((pad.l + W - pad.r) / 2) + '" y="' + (H - 4) + '" text-anchor="middle">b de Angoff (logit)</text>';
+  s += '<text class="chart__lbl" x="' + ((pad.l + W - pad.r) / 2) + '" y="' + (H - 4) + '" text-anchor="middle">b da dificuldade-alvo (logit)</text>';
   s += '<line class="chart__diag" x1="' + x(lo) + '" y1="' + y(lo) + '" x2="' + x(hi) + '" y2="' + y(hi) + '"/>';
   for (const i of itens) {
     if (!Number.isFinite(i.b) || !Number.isFinite(i.b_angoff)) continue;
-    s += '<circle class="chart__dot' + (i.aplicar ? "" : " is-oco") + '" cx="' + x(i.b_angoff).toFixed(1) + '" cy="' + y(i.b).toFixed(1) + '" r="4"><title>' + e(i.id + ": Angoff " + i.b_angoff.toFixed(2) + ", novo " + i.b.toFixed(2) + " (" + i.n + " respostas)") + "</title></circle>";
+    s += '<circle class="chart__dot' + (i.aplicar ? "" : " is-oco") + '" cx="' + x(i.b_angoff).toFixed(1) + '" cy="' + y(i.b).toFixed(1) + '" r="4"><title>' + e(i.id + ": alvo " + i.b_angoff.toFixed(2) + ", novo " + i.b.toFixed(2) + " (" + i.n + " respostas)") + "</title></circle>";
   }
   return s + "</svg>";
 }
@@ -310,7 +310,7 @@ export function curvaLogistica(dados, modelo, { titulo = "" } = {}) {
   let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + e(titulo + ". " + dados.length + " desfechos; a probabilidade ajustada passa de 50% em θ = " + (t50 === null ? "sem dado" : t50.toFixed(2).replace(".", ",")) + "; o limiar do banco é θ = 0.") + '">';
   for (const v of [0, 0.25, 0.5, 0.75, 1]) s += '<line class="chart__grid" x1="' + pad.l + '" x2="' + (W - pad.r) + '" y1="' + y(v) + '" y2="' + y(v) + '"/><text class="chart__lbl" x="' + (pad.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + Math.round(v * 100) + "%</text>";
   for (let v = lo; v <= hi; v++) s += '<text class="chart__lbl" x="' + x(v) + '" y="' + (H - 22) + '" text-anchor="middle">' + String(v).replace("-", "−") + "</text>";
-  s += '<text class="chart__lbl" x="' + ((pad.l + W - pad.r) / 2) + '" y="' + (H - 4) + '" text-anchor="middle">θ do banco (logit; 0 = limiar de Angoff)</text>';
+  s += '<text class="chart__lbl" x="' + ((pad.l + W - pad.r) / 2) + '" y="' + (H - 4) + '" text-anchor="middle">θ do banco (logit; 0 = limiar provisório)</text>';
   s += '<line class="chart__ref" x1="' + x(0) + '" x2="' + x(0) + '" y1="' + pad.t + '" y2="' + y(0) + '"/>';
   if (t50 !== null && t50 > lo && t50 < hi) s += '<line class="chart__meta-ok" x1="' + x(t50) + '" x2="' + x(t50) + '" y1="' + pad.t + '" y2="' + y(0) + '"/>';
   let d = "";

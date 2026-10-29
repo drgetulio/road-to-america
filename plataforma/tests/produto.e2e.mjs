@@ -12,7 +12,8 @@
       dos simulados completos, com os 290 itens respondidos.
    5. Administrador: análise de itens com as respostas do aluno, ficha do item, ficha
       do participante com a mesma probabilidade e o simulado completo, e o relatório
-      aberto pela equipe com os dados do participante.
+      aberto pela equipe com os dados do participante e sem as ações do aluno
+      (reportar erro e criar flashcard).
    6. Navegação: as cinco áreas apontam para o banco e para os simulados; links
       internos respondem; axe-core (WCAG 2.1 A e AA) e sem rolagem horizontal nas
       telas mudadas, em 1440 e 390 px, nos dois temas; nenhum erro de console.
@@ -27,6 +28,7 @@ import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
 import { gerarBancoSintetico } from "./sintetico.mjs";
+import { prepararRede, vigiarErros } from "./e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-produto-capturas"));
@@ -81,6 +83,7 @@ async function etapa(nome, fn) {
 
 const MIN = 60000;
 const ctx = await navegador.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: "light", locale: "pt-BR", reducedMotion: "reduce" });
+await prepararRede(ctx, base);
 await ctx.addInitScript(() => {
   if (sessionStorage.getItem("__ini")) return;
   sessionStorage.setItem("__ini", "1");
@@ -90,8 +93,7 @@ await ctx.addInitScript(() => {
 });
 const page = await ctx.newPage();
 const erros = [];
-page.on("console", (m) => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) erros.push(m.text()); });
-page.on("pageerror", (e) => erros.push(e.message));
+vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
 page.on("dialog", (d) => d.accept());
 await page.clock.install({ time: new Date("2026-10-29T11:00:00Z") });
 
@@ -100,7 +102,9 @@ let nFoto = 0;
 const foto = (nome, fullPage = true) => page.screenshot({ path: join(saida, String(++nFoto).padStart(2, "0") + "-" + nome + ".png"), fullPage });
 const seg = (t) => t.trim().split(":").map(Number).reduce((a, x) => a * 60 + x, 0);
 const perto = (txt, esperado, nome) => assert.ok(Math.abs(seg(txt) - seg(esperado)) <= 20, nome + ": " + txt + " (esperado perto de " + esperado + ")");
-const confirmarDia = async () => { await page.locator(".modal[open] .modal__foot button").last().click(); };
+/* o modal de início pede as condições do dia; o percurso usa "estudo", porque testa
+   parar e continuar depois */
+const confirmarDia = async () => { const est = page.locator('.modal[open] input[name="condicoes"][value="estudo"]'); if (await est.count()) await est.check(); await page.locator(".modal[open] .modal__foot button").last().click(); };
 /* texto da probabilidade, sem espaços nas pontas: "37%", "< 1%", "> 99%" ou "89,7%" */
 const pTxt = async (loc) => {
   const t = (await loc.innerText()).trim();
@@ -252,13 +256,20 @@ await etapa("3d. relatório: resultado, confiança, perfil, blocos e parada regi
   await page.getByRole("link", { name: "Ver o relatório de desempenho" }).click();
   await page.locator(".rel").waitFor();
   const txt = await page.locator(".rel").innerText();
-  assert.match(txt, /Resultado estimado: (Pass|Fail|indefinido, perto do limiar)/);
-  assert.match(txt, /Estimativa preliminar|Alta confiança/);
+  assert.match(txt, /Resultado estimado(?: pelo limiar do banco)?: indefinido, perto do limiar|Acima do limiar do banco|Abaixo do limiar do banco/);
+  assert.match(txt, /Estimativa preliminar|Precisão alta/);
   assert.match(txt, /Não é documento do USMLE nem do NBME/);
   assert.match(txt, /O dia foi parado 1 vez/);
   assert.equal(await page.locator('[data-rot="Encerramento"]:text("tempo esgotado")').count(), 13, "13 blocos pelo tempo");
   assert.doesNotMatch(txt, /itens deste formulário você já tinha respondido/i, "personalizado sem itens já vistos");
   assert.equal(await page.locator("[data-relatorio-alheio]").count(), 0);
+  /* no próprio relatório, o aluno pode reportar erro e criar flashcard */
+  const it = page.locator("[data-qrev] details").first();
+  await it.locator("summary").click();
+  await it.locator(".qrev__corpo").waitFor();
+  assert.equal(await it.locator("[data-reportar]").count(), 1, "o aluno vê reportar erro");
+  assert.equal(await it.locator('a[href*="anki/#/criar"]').count(), 1, "o aluno vê criar flashcard");
+  await it.locator("summary").click();
   const reg = (await demo()).simuladosCompletos.find((s) => s.id === idDia);
   relatorio = { acertos: reg.resultado.acertos, total: reg.resultado.total, p: reg.resultado.estimativa.p_aprovacao, titulo: await page.locator(".rel h1").first().innerText() };
   assert.equal(relatorio.total, 280);
@@ -269,7 +280,7 @@ await etapa("3d. relatório: resultado, confiança, perfil, blocos e parada regi
 let pBanco = null;
 await etapa("4. probabilidade igual no banco, em Meu progresso e nos simulados completos, com 290 itens", async () => {
   await page.goto(base + "/questoes/#/aprovacao?step=step1");
-  await page.getByRole("heading", { name: "Probabilidade de aprovação", level: 1 }).waitFor();
+  await page.getByRole("heading", { name: "Acima do limiar do banco", level: 1 }).waitFor();
   const placa = page.locator(".q-placa").first();
   pBanco = await pTxt(placa.locator(".q-placa__p b"));
   assert.match(await page.locator("main").innerText(), /290 itens/, "o painel conta os 10 do banco e os 280 do simulado");
@@ -337,6 +348,13 @@ await etapa("5b. admin: ficha do participante com a mesma probabilidade, o simul
   await page.locator(".rel").waitFor();
   await page.locator("[data-relatorio-alheio]").waitFor();
   assert.equal(await page.locator(".rel h1").first().innerText(), relatorio.titulo, "mesmo relatório");
+  /* aberto pela equipe: sem as ações do aluno (reportar erro e criar flashcard) */
+  const item = page.locator("[data-qrev] details").first();
+  await item.locator("summary").click();
+  await item.locator(".qrev__corpo").waitFor();
+  assert.equal(await page.locator("[data-qrev] [data-reportar]").count(), 0, "a equipe não vê reportar erro");
+  assert.equal(await page.locator('[data-qrev] a[href*="anki/#/criar"]').count(), 0, "a equipe não vê criar flashcard");
+  assert.doesNotMatch(await item.innerText(), /Sua resposta|Sua anotação/, "os rótulos falam do participante");
   await foto("admin-relatorio");
   /* a estimativa geral do relatório aberto pela equipe usa as respostas do participante */
   assert.doesNotMatch(await page.locator(".rel").innerText(), /ainda não respondeu itens/i);

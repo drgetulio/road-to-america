@@ -37,8 +37,8 @@ const DIA = 86400000;
 
 export const SIMULACAO_DEMO = Object.freeze({
   dp_erro_angoff: 0.45,
-  calibracao: Object.freeze({ prefixo: PREFIXO_SINTETICO + "cal-", media: 0.3, dp: 1, itens_por_pessoa: 160, respostas_por_item: 45, min_pessoas: 60, max_pessoas: 400, tutor: 0.15, dias: 150 }),
-  desfechos: Object.freeze({ proporcao: 0.6, dp_erro_prova: 0.3 }),
+  calibracao: Object.freeze({ prefixo: PREFIXO_SINTETICO + "cal-", media: 0.3, dp: 1, itens_por_pessoa: 160, respostas_por_item: 45, min_pessoas: 150, max_pessoas: 400, tutor: 0.15, dias: 150 }),
+  desfechos: Object.freeze({ proporcao: 0.8, dp_erro_prova: 0.3 }),
   /* pesos de atração dos distratores (em ordem sorteada por item) */
   distratores: Object.freeze([0.36, 0.26, 0.21, 0.17]),
   /* proporção de itens de cada Step com defeito plantado (no mínimo 1 de cada, com 20 itens ou mais) */
@@ -231,7 +231,9 @@ export function gerarReportesDemo({ itens, agora = new Date(), modelo = null } =
     const a = autores[k % autores.length];
     out.push({
       id: "demo-rep-" + (++k), user_id: PREFIXO_SINTETICO + a.slug, autor_nome: a.nome, questao_id: q.id, versao_item: q.versao || 1,
-      motivo, texto, status: "aberto", resposta: "", resolvido_por: null, resolvido_em: null,
+      /* o prefixo deixa claro, no próprio texto, que o defeito foi plantado pela
+         simulação, mesmo quando o identificador é de um item real do banco completo */
+      motivo, texto: "DEMO, defeito fictício da simulação: " + texto, status: "aberto", resposta: "", resolvido_por: null, resolvido_em: null,
       criado_em: new Date(t0 - diasAtras * DIA - k * 3600e3).toISOString(), sintetico: true
     });
   };

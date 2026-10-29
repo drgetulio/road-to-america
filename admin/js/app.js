@@ -13,7 +13,7 @@ import { LocalStore } from "../../anki/js/store-local.js";
 import { SupabaseStore } from "../../anki/js/store-supabase.js";
 import { loadTaxonomy, loadSeeds } from "../../anki/js/data.js";
 import { isAdmin } from "../../anki/js/permissions.js";
-import { $, $$, e, icon, toast } from "../../anki/js/ui.js";
+import { $, $$, e, icon, toast, limparToasts } from "../../anki/js/ui.js";
 import { montarLinhas } from "./calculos.js";
 import { carregarBanco } from "../../plataforma/js/banco.js";
 import { estimativasTurma, aplicarBanco } from "./analise.js";
@@ -27,8 +27,9 @@ import itens from "./views/itens.js";
 import item from "./views/item.js";
 import calibracao from "./views/calibracao.js";
 import blueprint from "./views/blueprint.js";
+import angoff from "./views/angoff.js";
 
-const ROTAS = { "": turma, participantes, p: ficha, metas, itens, item, calibracao, blueprint };
+const ROTAS = { "": turma, participantes, p: ficha, metas, itens, item, calibracao, blueprint, angoff };
 /* rota de detalhe -> item do menu que fica marcado */
 const MENU_PAI = { p: "participantes", item: "itens" };
 
@@ -38,6 +39,7 @@ const MENU = [
   { rota: "itens", rotulo: "Itens", icone: "list-checks" },
   { rota: "calibracao", rotulo: "Calibração", icone: "gauge" },
   { rota: "blueprint", rotulo: "Blueprint", icone: "path" },
+  { rota: "angoff", rotulo: "Painel Angoff", icone: "users-three", juiz: true },
   { rota: "metas", rotulo: "Metas", icone: "gear-six" },
   { href: "../anki/#/", rotulo: "Flashcards", icone: "cards" },
   { href: "../questoes/", rotulo: "Questões", icone: "list-checks" },
@@ -96,7 +98,13 @@ const ctx = {
     if (!this._bancoAdmin) this._bancoAdmin = await carregarBanco({ store: this.store, incluirInativos: true });
     return this._bancoAdmin;
   },
-  invalidar() { this._dados = null; this._psico = null; this._bancoAdmin = null; },
+  invalidar() { this._dados = null; this._psico = null; this._bancoAdmin = null; this.juiz = null; },
+  /* juiz designado de algum painel Angoff (mentor sem papel de admin) */
+  juiz: null,
+  async ehJuiz() {
+    if (!this.user || this.admin) return false;
+    try { return (await this.store.listPaineisAngoff()).length > 0; } catch { return false; }
+  },
   go(hash) {
     if (location.hash === hash) render();
     else location.hash = hash;
@@ -117,7 +125,8 @@ function montarMenu() {
   const ul = $("[data-nav]");
   const { rota } = parseHash();
   const atual = MENU_PAI[rota] ?? rota;
-  const itens = MENU.filter((m) => m.href || ctx.admin);
+  /* o juiz designado que não é admin vê só o painel Angoff */
+  const itens = MENU.filter((m) => m.href || ctx.admin || (m.juiz && ctx.juiz));
   ul.innerHTML = itens.map((m) => {
     const href = m.href || "#/" + m.rota;
     const corrente = !m.href && m.rota === atual;
@@ -126,6 +135,7 @@ function montarMenu() {
 }
 
 async function render() {
+  limparToasts();
   const alvo = $("[data-view]");
   const { rota, sub, params } = parseHash();
   if (viewAtual?.destroy) viewAtual.destroy();
@@ -133,10 +143,12 @@ async function render() {
   fecharMenu();
   const modal = $("[data-modal]");
   if (modal?.open) modal.close();
+  if (ctx.user && !ctx.admin && ctx.juiz === null) ctx.juiz = await ctx.ehJuiz();
   montarMenu();
 
   let view = ROTAS[rota] || turma;
-  if (!ctx.user || !ctx.admin) view = bloqueio;
+  if (!ctx.user || (!ctx.admin && !(ctx.juiz && view === angoff))) view = bloqueio;
+  if (view === bloqueio && ctx.juiz) { location.replace("#/angoff"); return; }
   viewAtual = view;
   document.title = (view.titulo ? view.titulo + " | " : "") + "Rendimento | Road to America";
   try {

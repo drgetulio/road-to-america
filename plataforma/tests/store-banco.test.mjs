@@ -166,7 +166,7 @@ test("leituras do admin: matriz pseudonimizada (primeira resposta, sem tutor) e 
   await assert.rejects(() => s.salvarCalibracao([{ id: "s1-001", b: 40 }]), /inválida/);
 });
 
-test("SupabaseStore: lê questoes ativas, grava respostas em lote e barra o participante antes da rede nas leituras do admin", async () => {
+test("SupabaseStore: o participante lê o espelho sem gabarito, responde pelo servidor em lotes e é barrado antes da rede nas leituras do admin", async () => {
   const chamadas = [];
   const resultado = { data: [], error: null };
   const q = new Proxy({}, {
@@ -178,7 +178,9 @@ test("SupabaseStore: lê questoes ativas, grava respostas em lote e barra o part
   const s = new SupabaseStore({ url: "x", anonKey: "y" });
   s.client = { from: (t) => { chamadas.push(["from", t]); return q; }, rpc: (f, a) => { chamadas.push(["rpc", f, a]); return q; } };
   s._user = { id: "u1", papel: "participante", ativo: true };
+  assert.equal(s.gabaritoNoServidor, true);
   await s.listQuestoes({ step: "step1" });
+  assert.deepEqual(chamadas.filter((c) => c[0] === "from").map((c) => c[1]), ["questoes_publicas", "formularios_fixos"], "o participante não lê a tabela com gabarito");
   assert.deepEqual(chamadas.filter((c) => c[0] === "eq").map((c) => c.slice(1)), [["step", "step1"], ["status", "ativo"]]);
   for (const m of ["listRespostasCalibracao", "getEstatisticasItens", "deleteSimuladoCompleto", "saveResultadoOficial", "setAtivo", "setStatusQuestao", "salvarCalibracao"]) {
     chamadas.length = 0;
@@ -188,9 +190,30 @@ test("SupabaseStore: lê questoes ativas, grava respostas em lote e barra o part
   chamadas.length = 0;
   resultado.data = [{ id: "r1" }];
   await s.saveRespostas(Array.from({ length: 1200 }, (_, i) => resp("R2A-S1-" + String(i).padStart(4, "0"), "A")));
-  assert.equal(chamadas.filter((c) => c[0] === "insert").length, 3, "lotes de 500");
+  const rpcs = chamadas.filter((c) => c[0] === "rpc");
+  assert.equal(chamadas.filter((c) => c[0] === "insert").length, 0, "o participante não insere direto");
+  assert.equal(rpcs.length, 6, "r2a_responder em lotes de 200");
+  assert.ok(rpcs.every((c) => c[1] === "r2a_responder" && c[2].p_revelar === false && !("correta" in c[2].p_linhas[0]) && !("user_id" in c[2].p_linhas[0])), "sem acerto nem dono vindos do navegador");
   await assert.rejects(() => s.saveRespostas([resp("x y", "A")]), /Identificador/);
+  chamadas.length = 0;
+  await s.responderItens([resp("R2A-S1-0001", "B")]);
+  assert.equal(chamadas.find((c) => c[0] === "rpc")[2].p_revelar, true);
+  chamadas.length = 0;
+  await s.revelarItens(["R2A-S1-0001", "R2A-S1-0001", "R2A-S1-0002"]);
+  assert.deepEqual(chamadas.find((c) => c[0] === "rpc").slice(1), ["r2a_revelar", { p_ids: ["R2A-S1-0001", "R2A-S1-0002"] }]);
+  chamadas.length = 0;
+  await s.corrigirSimulado("sc-1", { estimativa: { p_aprovacao: 0.5 } });
+  assert.deepEqual(chamadas.find((c) => c[0] === "rpc").slice(1), ["r2a_corrigir_simulado", { p_id: "sc-1", p_complemento: { estimativa: { p_aprovacao: 0.5 } } }]);
   s._user = { id: "a1", papel: "admin" };
+  assert.equal(s.gabaritoNoServidor, false);
+  chamadas.length = 0;
+  resultado.data = [{ id: "r1" }];
+  await s.saveRespostas(Array.from({ length: 1200 }, (_, i) => resp("R2A-S1-" + String(i).padStart(4, "0"), "A")));
+  assert.equal(chamadas.filter((c) => c[0] === "insert").length, 3, "o admin insere em lotes de 500");
+  chamadas.length = 0;
+  resultado.data = [];
+  await s.listQuestoes({ step: "step1" });
+  assert.equal(chamadas.find((c) => c[0] === "from")[1], "questoes", "o admin lê o item inteiro");
   chamadas.length = 0;
   resultado.data = [];
   await s.getEstatisticasItens({ step: "step2ck" });
@@ -203,8 +226,11 @@ test("schema: tabelas do banco com RLS, sem privilégio para anon e com funçõe
     assert.match(sql, new RegExp("create table if not exists public\\." + t + " \\("));
     assert.match(sql, new RegExp("alter table public\\." + t + "\\s+enable row level security"));
   }
-  assert.match(sql, /create policy questoes_select on public\.questoes for select to authenticated\s+using \(\(status = 'ativo' and \(select public\.pode_ler_banco\(\)\)\) or \(select public\.is_admin\(\)\)\)/);
-  for (const f of ["r2a_admin_respostas_calibracao", "r2a_admin_estatisticas_itens", "r2a_admin_salvar_calibracao", "pode_ler_banco"]) {
+  /* gabarito no servidor: a tabela com gabarito é só do admin; o aluno lê o espelho */
+  assert.match(sql, /create policy questoes_select on public\.questoes for select to authenticated\s+using \(\(select public\.is_admin\(\)\)\);/);
+  assert.match(sql, /create policy questoes_publicas_select on public\.questoes_publicas for select to authenticated\s+using \(\(status = 'ativo' and \(select public\.pode_ler_banco\(\)\)\) or \(select public\.is_admin\(\)\)\)/);
+  assert.match(sql, /create policy respostas_item_insert on public\.respostas_item for insert to authenticated\s+with check \(\(select public\.is_admin\(\)\)\);/);
+  for (const f of ["r2a_admin_respostas_calibracao", "r2a_admin_estatisticas_itens", "r2a_admin_salvar_calibracao", "pode_ler_banco", "r2a_responder", "r2a_revelar", "r2a_corrigir_simulado", "questoes_espelhar"]) {
     const bloco = sql.slice(sql.indexOf("create or replace function public." + f));
     assert.match(bloco.slice(0, 600), /security definer\s+set search_path = public/, f);
   }
@@ -246,7 +272,8 @@ test("rotinas do admin: recalibração com a turma (só itens com dados suficien
   assert.equal(m.demonstracao, true);
   s.setDemoRole("participante");
   const modelos = await s.getModelosPsicometricos();
-  assert.equal(modelos.step1.metodo, "regressao_logistica_e_linear_sobre_theta_eap");
+  assert.equal(modelos.step1.metodo, "regressao_logistica_ponderada_e_linear_sobre_theta_eap_sem_integrar_dp");
+  assert.ok("ligacao_nbme" in modelos.step1, "o modelo leva a ligação com a NBME");
   assert.equal(modelos.step2ck, null);
   await assert.rejects(() => s.saveModeloPsicometrico("step1", {}), PermissionError);
 });
@@ -370,4 +397,74 @@ test("revisão de itens (SupabaseStore): passa pelas funções do banco com os p
   assert.equal(chamadas[0].params.p_correta, "B", "letra em maiúscula");
   s._user = { id: "p", papel: "participante", nome: "P", email: "p@x" };
   await assert.rejects(() => s.editarGabarito("R2A-S1-0001", { correta: "B", motivo: "Referência revista" }), PermissionError);
+});
+
+test("gabarito no servidor: o banco do aluno chega sem gabarito; a correção e a explicação só vêm depois da resposta", async () => {
+  const { partePublica, partePrivada, CAMPOS_PRIVADOS, garantirGabarito, mesclarRevelados, temGabarito } = await import("../js/banco.js");
+  const real = await loja();
+  real.setDemoRole("participante");
+  /* store que imita o Supabase do participante: lista o espelho público e corrige pelo LocalStore */
+  const servidor = {
+    gabaritoNoServidor: true,
+    listQuestoes: async (o) => (await real.listQuestoes(o)).map(partePublica),
+    revelarItens: async (ids) => {
+      const respondidas = new Set((await real.listRespostas()).map((r) => r.questao_id));
+      return Object.fromEntries(Object.entries(await real.revelarItens(ids)).filter(([id]) => respondidas.has(id)));
+    },
+    responderItens: (l, o) => real.responderItens(l, o)
+  };
+  const banco = await carregarBanco({ store: servidor });
+  const q = banco.porId.get("s1-001");
+  assert.ok(q && !temGabarito(q) && !q.explicacao && !q.topico, "sem gabarito nem explicação antes de responder");
+  assert.ok(banco.itens.length === publicos.length, "o item sem gabarito continua válido para montar blocos e formulários");
+  assert.equal(await garantirGabarito(servidor, banco, ["s1-001"]), 0, "nada revelado sem resposta");
+  const [r] = await servidor.responderItens([resp("s1-001", "A", { sessao_id: "blk-x", posicao: 0 })], { revelar: true });
+  const original = publicos.find((x) => x.id === "s1-001");
+  assert.equal(r.correta, original.correta === "A");
+  assert.equal(r.revelado.correta, original.correta);
+  mesclarRevelados(banco, { "s1-001": r.revelado });
+  assert.equal(banco.porId.get("s1-001").correta, original.correta);
+  assert.equal(banco.porId.get("s1-001").explicacao, original.explicacao);
+  assert.deepEqual(Object.keys(partePrivada(original)).every((k) => CAMPOS_PRIVADOS.includes(k)), true);
+  assert.equal(await garantirGabarito(servidor, banco, ["s1-001", "s1-002"]), 0, "o já revelado não é pedido de novo; o não respondido não vem");
+  assert.equal(temGabarito(banco.porId.get("s1-002")), false);
+});
+
+test("LocalStore: corrigirSimulado (mesma interface do servidor) grava uma resposta por item, conclui e devolve a correção", async () => {
+  const s = await loja();
+  s.setDemoRole("participante");
+  const banco = await carregarBanco({ store: s });
+  const f = montarFormularioFixo(banco, "step1", "S1-A");
+  let sess = novaSessao(f);
+  const t0 = Date.UTC(2026, 9, 29, 8);
+  let t = t0;
+  for (let b = 0; b < f.blocos.length; b++) {
+    sess = iniciarBloco(sess, t);
+    sess = responder(sess, 0, { resposta: banco.porId.get(f.blocos[b][0]).correta, tempo_ms_add: 1000 }, t + 1000);
+    sess = encerrarBloco(sess, t + 60000);
+    t += 120000;
+  }
+  const reg = await s.criarSimuladoCompleto({ formulario: f, sessao: novaSessao(f) });
+  await s.salvarProgressoSimulado(reg.id, sess);
+  const c = await s.corrigirSimulado(reg.id, { estimativa: { p_aprovacao: 0.4 }, acertos: 999 });
+  assert.equal(c.resultado.acertos, f.blocos.length, "um acerto por bloco; o complemento não muda a nota");
+  assert.equal(c.resultado.estimativa.p_aprovacao, 0.4);
+  assert.equal(c.itens.length, f.total);
+  assert.ok(c.itens[0].revelado.correta);
+  assert.equal((await s.getSimuladoCompleto(reg.id)).estado, "concluido");
+  await s.corrigirSimulado(reg.id);
+  assert.equal((await s.listRespostas()).filter((r) => r.sessao_id === reg.id).length, f.total, "corrigir de novo não duplica");
+});
+
+test("histórico das questões na ordem de gravação mesmo com ações no mesmo milissegundo", async () => {
+  const s = await loja();
+  s.setDemoRole("admin");
+  const DataReal = globalThis.Date;
+  const fixo = DataReal.parse("2026-10-29T12:00:00.000Z");
+  globalThis.Date = class extends DataReal { constructor(...a) { super(...(a.length ? a : [fixo])); } static now() { return fixo; } };
+  try {
+    for (let k = 0; k < 15; k++) await s.marcarRevisaoQuestao("s1-00" + (k % 9 + 1), { revisao: true, nota: "nota " + k });
+  } finally { globalThis.Date = DataReal; }
+  const h = await s.listHistoricoQuestao();
+  assert.deepEqual(h.map((x) => x.motivo), Array.from({ length: 15 }, (_, k) => "nota " + k), "a ordem não depende do id aleatório");
 });

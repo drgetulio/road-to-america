@@ -16,7 +16,8 @@
 
    Funções puras e determinísticas (a mesma semente e o mesmo banco dão o mesmo
    formulário). Interface em plataforma/INTERFACE.md. */
-import { TAXONOMIA, DIMENSOES, CAMPO_MULTIRROTULO, assinaturaBanco, hashTexto } from "./banco.js";
+import { TAXONOMIA, DIMENSOES, CAMPO_MULTIRROTULO, assinaturaBanco, hashTexto, normalizarFormulariosGravados } from "./banco.js";
+export { normalizarFormulariosGravados };
 import { rng } from "./simulado.js";
 
 const MIN = 60 * 1000;
@@ -39,20 +40,48 @@ export const TIPOS_FORMULARIO = Object.freeze({
 });
 
 /* Formulários fixos: mesma semente para todos os alunos, para comparar resultados.
-   O formulário B evita os itens do A, e o C evita os do A e do B, até onde o banco
-   permitir. */
+   A e B formam uma partição do banco do Step: nenhum item do A volta no B. Quando o
+   banco tem itens para dois formulários inteiros (Step 1: 560 itens, 2 x 280), os dois
+   saem completos; quando não tem (Step 2 CK: 520 itens, 318 + 202), o B fica com o
+   restante e sai sinalizado como parcial (parcial: true), em blocos de até 20 itens.
+   A montagem é conjunta (montarParticao): os dois formulários ficam dentro das faixas
+   oficiais e com Angoff médio e dificuldade parecidos. */
+/* reservado: o formulário completo fica fora do sorteio do banco do aluno até ele
+   concluir (ou abandonar depois de começar) aquele formulário, como o NBME faz com as
+   autoavaliações (itensReservados). Um formulário completo por Step: S1-B no Step 1 e
+   CK-A no Step 2 CK, o único completo. Enquanto o banco tiver só os itens dos dois
+   formulários, a reserva tira esses itens da prática até o aluno fazer o simulado. */
 export const FORMULARIOS_FIXOS = Object.freeze({
   step1: Object.freeze([
-    Object.freeze({ codigo: "S1-A", nome: "Formulário A", semente: 20261101 }),
-    Object.freeze({ codigo: "S1-B", nome: "Formulário B", semente: 20261102 }),
-    Object.freeze({ codigo: "S1-C", nome: "Formulário C", semente: 20261103 })
+    Object.freeze({ codigo: "S1-A", nome: "Formulário A", semente: 20261101, reservado: false }),
+    Object.freeze({ codigo: "S1-B", nome: "Formulário B", semente: 20261102, reservado: true })
   ]),
   step2ck: Object.freeze([
-    Object.freeze({ codigo: "CK-A", nome: "Formulário A", semente: 20261201 }),
-    Object.freeze({ codigo: "CK-B", nome: "Formulário B", semente: 20261202 }),
-    Object.freeze({ codigo: "CK-C", nome: "Formulário C", semente: 20261203 })
+    Object.freeze({ codigo: "CK-A", nome: "Formulário A", semente: 20261201, reservado: true }),
+    Object.freeze({ codigo: "CK-B", nome: "Formulário B", semente: 20261202, reservado: false })
   ])
 });
+
+/* Fração de itens já vistos acima da qual o simulado é tratado como reaplicação: o
+   modal pede confirmação e o relatório sai como "reaplicação, não comparável", fora
+   da estimativa de prontidão (critério interno) */
+export const LIMITE_JA_VISTOS = 0.25;
+
+/* Pausa do formulário parcial: proporcional aos blocos (55 min x blocos / 16 no Step 2
+   CK), arredondada para cima em minutos */
+export function pausaProporcional(pausaMs, blocos, blocosOficiais) {
+  if (!(blocosOficiais > 0) || blocos >= blocosOficiais) return pausaMs;
+  return Math.ceil((pausaMs * blocos) / blocosOficiais / 60000) * 60000;
+}
+
+/* Faixas de dificuldade do projeto (não são do outline oficial): 20% fáceis, 55% médias
+   e 25% difíceis, com tolerância de 3 pontos, as mesmas do blueprint do banco */
+export const FAIXAS_DIFICULDADE = Object.freeze({ facil: Object.freeze([17, 23]), media: Object.freeze([52, 58]), dificil: Object.freeze([22, 28]) });
+
+/* Angoff usado na montagem: o do próprio item (angoff_item), que não muda quando o
+   painel de juízes publica estimativas; assim os formulários fixos continuam os
+   mesmos. O corte do formulário usa o Angoff em vigor (q.angoff, do painel quando há). */
+export const angoffMontagem = (q) => (Number.isFinite(q?.angoff_item) ? q.angoff_item : q?.angoff);
 
 /* Tamanhos dos blocos: os primeiros ficam com um item a mais quando a divisão não
    é exata (318 em 16 blocos: 14 de 20 e 2 de 19). */
@@ -171,7 +200,7 @@ export function cotasNasFaixas(step, dim, n, disponiveis) {
        espalham os sistemas entre os blocos; dentro do bloco, a ordem evita dois
        itens seguidos do mesmo sistema.
 */
-export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo", semente = 1, vistas = [], evitar = [], codigo = "", nome = "" } = {}) {
+export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo", semente = 1, vistas = [], evitar = [], codigo = "", nome = "", apenasItens = false } = {}) {
   const pool = (banco?.steps?.[step] || []).filter((q) => q && q.id && (q.status === undefined || q.status === "ativo"));
   const dim = dimensionar(step, tipo, pool.length);
   const random = rng(semente);
@@ -263,10 +292,20 @@ export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo"
   }
 
   const reparo = repararFaixas(escolhidos, pool, { step, principal, N, prioridade: (q) => (modo === "personalizado" && vistasSet.has(q.id) ? 2 : 0) + (evitarSet.has(q.id) ? 1 : 0) + chaveAleatoria.get(q.id) * 1e-3 });
-  const blocos = distribuirEmBlocos(escolhidos, tamanhosBlocos(escolhidos.length, dim.blocos), { random, principal, chaveAleatoria });
+  if (apenasItens) return { itens: escolhidos, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas, dim };
+  return formularioDeItens(escolhidos, { step, tipo, modo, semente, codigo, nome, pool, dim, random, chaveAleatoria, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas });
+}
+
+/* Monta o objeto do formulário a partir dos itens escolhidos: blocos equilibrados,
+   tempos, assinatura do banco e hash. pool: banco do Step (para a assinatura). */
+function formularioDeItens(escolhidos, { step, tipo, modo, semente, codigo, nome, pool, dim, random, chaveAleatoria, fora = [], trocas = 0, parcial = false, motivoParcial = "" }) {
+  const principal = DIMENSOES[step][0];
+  const nBlocos = parcial ? Math.max(1, Math.ceil(escolhidos.length / TEMPOS_OFICIAIS.itens_por_bloco_max)) : dim.blocos;
+  const blocos = distribuirEmBlocos(escolhidos, tamanhosBlocos(escolhidos.length, nBlocos), { random, principal, chaveAleatoria });
   const t = TIPOS_FORMULARIO[tipo];
   const assinatura = assinaturaBanco(pool);
   const cod = codigo || (step === "step1" ? "S1" : "CK") + "-" + (modo === "fixo" ? "F" : "P") + semente;
+  const pausa = parcial ? pausaProporcional(t.pausa_ms, blocos.length, t[step].blocos) : t.pausa_ms;
   const form = {
     id: [step, tipo, modo, cod, assinatura].join(":"),
     codigo: cod,
@@ -274,18 +313,21 @@ export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo"
     step, tipo, modo, semente,
     reduzido: dim.reduzido,
     motivo_reducao: dim.motivo,
+    parcial: !!parcial,
+    motivo_parcial: parcial ? motivoParcial : "",
     oficial: { blocos: t[step].blocos, itens: t[step].itens, formato_oficial: !!t.oficial },
     blocos: blocos.map((b) => b.map((q) => q.id)),
     total: escolhidos.length,
     tempo: {
       bloco_ms: TEMPOS_OFICIAIS.bloco_ms,
-      pausa_ms: t.pausa_ms,
+      pausa_ms: pausa,
       tutorial_ms: t.tutorial_ms,
-      dia_ms: blocos.length * TEMPOS_OFICIAIS.bloco_ms + t.pausa_ms + t.tutorial_ms
+      dia_ms: blocos.length * TEMPOS_OFICIAIS.bloco_ms + pausa + t.tutorial_ms,
+      pausa_proporcional: pausa !== t.pausa_ms
     },
     assinatura_banco: assinatura,
-    fora_da_faixa: [...new Set([...fora, ...reparo.pendentes])].sort(),
-    trocas_de_reparo: reparo.trocas
+    fora_da_faixa: fora,
+    trocas_de_reparo: trocas
   };
   form.hash = hashTexto(form.blocos.map((b) => b.join(",")).join("|"));
   return form;
@@ -345,14 +387,243 @@ function repararFaixas(escolhidos, pool, { step, principal, N, prioridade }) {
   return { trocas, pendentes };
 }
 
-/* Formulário fixo pelo código (S1-A, S1-B, CK-A...): B evita A, C evita A e B */
-export function montarFormularioFixo(banco, step, codigo, tipo = "completo") {
+/* ---------- partição do banco nos formulários fixos ----------
+   Restrições de proporção de um Step: as faixas oficiais exigidas (sistema e
+   competência ou tarefa do médico), as disciplinas contadas com todos os rótulos e a
+   meta de dificuldade do projeto. */
+function restricoesDoStep(step) {
+  const out = [];
+  for (const d of DIMENSOES[step]) {
+    const tax = TAXONOMIA[step]?.[d];
+    if (!tax) continue;
+    const faixas = Object.fromEntries(tax.chaves.filter((c) => c.faixa).map((c) => [c.chave, c.faixa]));
+    const campo = CAMPO_MULTIRROTULO[step]?.[d];
+    if (!Object.keys(faixas).length || (!tax.exigir_faixa && !campo)) continue;
+    out.push({ d, exigida: !!tax.exigir_faixa, peso: tax.exigir_faixa ? 1 : 0.6, faixas, rot: campo ? (q) => [...new Set([q[d], ...(q[campo] || [])].filter(Boolean))] : (q) => (q[d] ? [q[d]] : []) });
+  }
+  out.push({ d: "dificuldade", peso: 0.6, faixas: FAIXAS_DIFICULDADE, rot: (q) => (q.dificuldade ? [q.dificuldade] : []) });
+  return out;
+}
+/* Penalidade de uma chave: fora da faixa oficial pesa 1000 vezes mais que ficar na
+   margem interna de 0,5 ponto percentual (folga para não encostar no limite) */
+function penalidadeFaixa(c, n, faixa, soDuro = false) {
+  if (!n || !faixa) return 0;
+  const p = (100 * c) / n, [lo, hi] = faixa, meio = (lo + hi) / 2;
+  const l = Math.min(lo + 0.5, meio), h = Math.max(hi - 0.5, meio);
+  let v = 0;
+  if (p < lo) v += 1000 * (lo - p) ** 2; else if (p > hi) v += 1000 * (p - hi) ** 2;
+  if (soDuro) return v;
+  if (p < l) v += (l - p) ** 2; else if (p > h) v += (p - h) ** 2;
+  return v;
+}
+
+/* Partição do banco do Step em A (nA itens), B (nB itens) e reserva (o resto), por busca
+   local a partir da escolha gulosa: trocas de itens entre os grupos que diminuem a soma
+   das penalidades de faixa dos dois formulários e a diferença de Angoff médio entre
+   eles; as penalidades do A pesam 100 vezes as do B. Determinística pela semente do A.
+   Devolve { A, B, reserva }. */
+/* O A tem prioridade: quando o banco não comporta dois formulários dentro das faixas,
+   o B (completo ou parcial) cede, e o A continua dentro delas */
+const PESO_GRUPO = [100, 1];
+export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = null, inicialB = null } = {}) {
+  const random = rng(semente ^ 0x5bd1e995);
+  const restr = restricoesDoStep(step);
+  const grupo = new Map();
+  const setA = new Set((inicialA || pool.slice(0, nA)).map((q) => q.id));
+  const setB = new Set((inicialB || pool.filter((q) => !setA.has(q.id)).slice(0, nB)).map((q) => q.id));
+  for (const q of pool) grupo.set(q.id, setA.has(q.id) ? 0 : setB.has(q.id) ? 1 : 2);
+  const membros = [[], [], []];
+  for (const q of pool) membros[grupo.get(q.id)].push(q);
+  const cont = [0, 1].map(() => restr.map(() => ({})));
+  const soma = [0, 0];
+  for (const g of [0, 1]) for (const q of membros[g]) { soma[g] += angoffMontagem(q); restr.forEach((r, i) => { for (const k of r.rot(q)) cont[g][i][k] = (cont[g][i][k] || 0) + 1; }); }
+  const n = [membros[0].length, membros[1].length];
+  const custoAngoff = () => (n[0] && n[1] ? 1e4 * (soma[0] / n[0] - soma[1] / n[1]) ** 2 : 0);
+  /* variação da penalidade do grupo g quando sai x e entra y (qualquer um pode ser null);
+     soDuro: só a parte fora das faixas oficiais exigidas (sistema e competência) */
+  const delta = (g, x, y, soDuro = false) => {
+    let d = 0;
+    restr.forEach((r, i) => {
+      if (soDuro && !r.exigida) return;
+      const mud = {};
+      if (x) for (const k of r.rot(x)) mud[k] = (mud[k] || 0) - 1;
+      if (y) for (const k of r.rot(y)) mud[k] = (mud[k] || 0) + 1;
+      for (const [k, dd] of Object.entries(mud)) {
+        if (!dd || !r.faixas[k]) continue;
+        const c = cont[g][i][k] || 0;
+        d += PESO_GRUPO[g] * r.peso * (penalidadeFaixa(c + dd, n[g], r.faixas[k], soDuro) - penalidadeFaixa(c, n[g], r.faixas[k], soDuro));
+      }
+    });
+    return d;
+  };
+  const aplicar = (g, x, y) => {
+    restr.forEach((r, i) => { for (const k of r.rot(x)) cont[g][i][k]--; for (const k of r.rot(y)) cont[g][i][k] = (cont[g][i][k] || 0) + 1; });
+    soma[g] += angoffMontagem(y) - angoffMontagem(x);
+  };
+  const iteracoes = Math.min(60000, pool.length * 120);
+  for (let it = 0; it < iteracoes; it++) {
+    const g1 = random() < 0.5 ? 0 : 1;
+    const opcoes = [0, 1, 2].filter((g) => g !== g1 && membros[g].length);
+    if (!membros[g1].length || !opcoes.length) continue;
+    const g2 = opcoes[Math.floor(random() * opcoes.length)];
+    const i1 = Math.floor(random() * membros[g1].length), i2 = Math.floor(random() * membros[g2].length);
+    const x = membros[g1][i1], y = membros[g2][i2];
+    /* o A nunca sai mais das faixas oficiais exigidas para melhorar o B */
+    const durA = g1 === 0 ? delta(0, x, y, true) : g2 === 0 ? delta(0, y, x, true) : 0;
+    if (durA > 1e-9) continue;
+    const ang0 = custoAngoff();
+    let d = delta(g1, x, y) + (g2 < 2 ? delta(g2, y, x) : 0);
+    soma[g1] += angoffMontagem(y) - angoffMontagem(x);
+    if (g2 < 2) soma[g2] += angoffMontagem(x) - angoffMontagem(y);
+    d += custoAngoff() - ang0;
+    soma[g1] -= angoffMontagem(y) - angoffMontagem(x);
+    if (g2 < 2) soma[g2] -= angoffMontagem(x) - angoffMontagem(y);
+    if (d < -1e-9) {
+      aplicar(g1, x, y);
+      if (g2 < 2) aplicar(g2, y, x);
+      membros[g1][i1] = y; membros[g2][i2] = x;
+    }
+  }
+  const ordem = (l) => l.slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
+  return { A: ordem(membros[0]), B: ordem(membros[1]), reserva: ordem(membros[2]) };
+}
+
+/* Formulário fixo pelo código (S1-A, S1-B, CK-A, CK-B). A e B saem da mesma partição
+   (montarParticao com a semente do A), então o A é o mesmo quando se pede só o A ou
+   quando se pede o B. Com banco pequeno demais para separar (menos de um bloco
+   sobrando depois do A), o B repete itens, evitando os do A até onde der. */
+/* Formulário a partir de blocos gravados (ordem e composição fixas). Devolve null quando
+   a gravação não serve para o banco atual (item ausente, inativo ou repetido). */
+function formularioGravado(banco, step, f, tipo, pool) {
+  const g = banco?.formularios_fixos?.[step]?.[f.codigo];
+  if (!g || tipo !== "completo" || (g.tipo && g.tipo !== "completo")) return null;
+  const porId = new Map(pool.map((q) => [q.id, q]));
+  const ids = g.blocos.flat();
+  if (new Set(ids).size !== ids.length || ids.some((id) => !porId.has(id))) return null;
+  const t = TIPOS_FORMULARIO[tipo];
+  if (!g.parcial && (ids.length !== t[step].itens || g.blocos.length !== t[step].blocos)) return null;
+  const assinatura = assinaturaBanco(pool);
+  const blocos = g.blocos.map((b) => b.slice());
+  const pausa = g.parcial ? pausaProporcional(t.pausa_ms, blocos.length, t[step].blocos) : t.pausa_ms;
+  const form = {
+    id: [step, tipo, "fixo", f.codigo, assinatura].join(":"),
+    codigo: f.codigo,
+    nome: f.nome + " (" + t.nome.toLowerCase() + ")" + (g.parcial ? ", parcial" : ""),
+    step, tipo, modo: "fixo", semente: f.semente,
+    reduzido: false, motivo_reducao: "",
+    parcial: !!g.parcial,
+    motivo_parcial: g.parcial ? "Formulário parcial: depois do formulário A sobram " + ids.length + " itens deste Step, menos que os " + t[step].itens + " do formato, e nenhum item do A é repetido." : "",
+    oficial: { blocos: t[step].blocos, itens: t[step].itens, formato_oficial: !!t.oficial },
+    blocos,
+    total: ids.length,
+    tempo: { bloco_ms: TEMPOS_OFICIAIS.bloco_ms, pausa_ms: pausa, tutorial_ms: t.tutorial_ms, dia_ms: blocos.length * TEMPOS_OFICIAIS.bloco_ms + pausa + t.tutorial_ms, pausa_proporcional: pausa !== t.pausa_ms },
+    assinatura_banco: assinatura,
+    fora_da_faixa: [],
+    trocas_de_reparo: 0,
+    origem_montagem: "gravado"
+  };
+  form.hash = hashTexto(form.blocos.map((b) => b.join(",")).join("|"));
+  return form;
+}
+
+export function montarFormularioFixo(banco, step, codigo, tipo = "completo", { ignorarGravado = false } = {}) {
   const lista = FORMULARIOS_FIXOS[step] || [];
   const i = lista.findIndex((f) => f.codigo === codigo);
   if (i < 0) throw new Error("Formulário fixo desconhecido: " + codigo);
-  const evitar = [];
-  for (let k = 0; k < i; k++) evitar.push(...montarFormulario(banco, { step, tipo, modo: "fixo", semente: lista[k].semente, codigo: lista[k].codigo, evitar: [...evitar] }).blocos.flat());
-  return montarFormulario(banco, { step, tipo, modo: "fixo", semente: lista[i].semente, codigo, nome: lista[i].nome + " (" + TIPOS_FORMULARIO[tipo].nome.toLowerCase() + ")", evitar });
+  const pool = (banco?.steps?.[step] || []).filter((q) => q && q.id && (q.status === undefined || q.status === "ativo"));
+  if (!ignorarGravado) { const g = formularioGravado(banco, step, lista[i], tipo, pool); if (g) return g; }
+  const fA = lista[0], fB = lista[1];
+  const nomeDe = (f) => f.nome + " (" + TIPOS_FORMULARIO[tipo].nome.toLowerCase() + ")";
+  const selA = montarFormulario(banco, { step, tipo, modo: "fixo", semente: fA.semente, codigo: fA.codigo, apenasItens: true });
+  const N = selA.dim.itens;
+  const resto = pool.length - N;
+  const separavel = resto >= TEMPOS_OFICIAIS.itens_por_bloco_max;
+  if (!separavel) {
+    /* banco reduzido (demonstração): A é o formulário guloso; B repete itens */
+    if (i === 0) return montarFormulario(banco, { step, tipo, modo: "fixo", semente: fA.semente, codigo: fA.codigo, nome: nomeDe(fA) });
+    const evitar = montarFormulario(banco, { step, tipo, modo: "fixo", semente: fA.semente, codigo: fA.codigo }).blocos.flat();
+    return montarFormulario(banco, { step, tipo, modo: "fixo", semente: fB.semente, codigo: fB.codigo, nome: nomeDe(fB), evitar });
+  }
+  const nB = Math.min(N, resto);
+  const parcialB = nB < N;
+  const idsA = new Set(selA.itens.map((q) => q.id));
+  const restoItens = pool.filter((q) => !idsA.has(q.id));
+  const inicialB = parcialB ? restoItens : montarFormulario({ steps: { [step]: restoItens } }, { step, tipo, modo: "fixo", semente: fB.semente, codigo: fB.codigo, apenasItens: true }).itens;
+  const part = montarParticao(pool, step, N, nB, { semente: fA.semente, inicialA: selA.itens, inicialB });
+  const f = i === 0 ? fA : fB;
+  const itens = i === 0 ? part.A : part.B;
+  const random = rng(f.semente);
+  const chaveAleatoria = new Map(pool.map((q) => [q.id, random()]));
+  const dimB = i === 1 && parcialB ? { ...selA.dim, reduzido: false, motivo: "" } : selA.dim;
+  const parcial = i === 1 && parcialB;
+  const form = formularioDeItens(itens, {
+    step, tipo, modo: "fixo", semente: f.semente, codigo: f.codigo, nome: nomeDe(f) + (parcial ? ", parcial" : ""), pool, dim: dimB, random, chaveAleatoria, parcial,
+    motivoParcial: parcial ? "Formulário parcial: depois do formulário A sobram " + itens.length + " itens deste Step, menos que os " + N + " do formato, e nenhum item do A é repetido." : ""
+  });
+  form.particao = { codigos: lista.map((x) => x.codigo), itens_a: N, itens_b: nB, reserva: part.reserva.length };
+  form.origem_montagem = "calculado";
+  return form;
+}
+
+/* Itens fora do corte num formulário fixo: os itens públicos (legado, os 80 de
+   simulado/data/, com gabarito e explicação no repositório aberto) continuam no
+   formulário, para não mudar a composição nem o tempo, mas não entram na estimativa,
+   como os itens de pré-teste da prova real. Só vale quando o formulário também tem
+   itens privados: no modo demonstração, com os 80 públicos apenas, todos contam.
+   Devolve um Set de ids. */
+export function itensForaDoCorte(form, porId) {
+  if (!form || form.modo !== "fixo") return new Set();
+  const get = porId instanceof Map ? (id) => porId.get(id) : (id) => porId?.[id];
+  const ids = (form.blocos || []).flat();
+  const legado = ids.filter((id) => get(id)?.legado);
+  if (!legado.length || legado.length === ids.filter((id) => get(id)).length) return new Set();
+  return new Set(legado);
+}
+
+/* Formulário fixo é reservado? A gravação em formularios.json (reservado) vale mais
+   que o padrão de FORMULARIOS_FIXOS. */
+export function formularioReservado(banco, step, codigo) {
+  const g = banco?.formularios_fixos?.[step]?.[codigo];
+  if (g && typeof g.reservado === "boolean") return g.reservado;
+  return !!(FORMULARIOS_FIXOS[step] || []).find((f) => f.codigo === codigo)?.reservado;
+}
+
+/* Itens reservados para um aluno: os dos formulários fixos completos marcados como
+   reservados que ele ainda não fez. simulados: listSimuladosCompletos() do aluno; um
+   formulário é liberado quando há um simulado concluído dele, ou abandonado depois
+   de pelo menos um bloco encerrado (os itens já foram expostos). Formulário reduzido
+   (banco pequeno, como os 80 itens públicos) nunca é reservado: tiraria o banco
+   inteiro da prática. Devolve { ids: Set, formularios: [{ step, codigo, nome, itens }] }. */
+export function itensReservados(banco, simulados = [], { steps = ["step1", "step2ck"] } = {}) {
+  const ids = new Set();
+  const formularios = [];
+  const feitos = new Set();
+  for (const r of simulados || []) {
+    const cod = r?.formulario?.codigo;
+    if (!cod) continue;
+    if (r.estado === "concluido" || (r.estado === "abandonado" && (r.sessao?.blocos_encerrados || 0) > 0)) feitos.add(r.step + "|" + cod);
+  }
+  for (const step of steps) {
+    for (const f of FORMULARIOS_FIXOS[step] || []) {
+      if (!formularioReservado(banco, step, f.codigo) || feitos.has(step + "|" + f.codigo)) continue;
+      let form;
+      try { form = montarFormularioFixo(banco, step, f.codigo, "completo"); } catch { continue; }
+      if (form.reduzido) continue;
+      const lista = form.blocos.flat();
+      for (const id of lista) ids.add(id);
+      formularios.push({ step, codigo: f.codigo, nome: f.nome, itens: lista.length, parcial: !!form.parcial });
+    }
+  }
+  return { ids, formularios };
+}
+
+/* Itens de um formulário que o aluno já respondeu (respostas de qualquer origem,
+   antes de começar o formulário) */
+export function vistosNoFormulario(form, respostas) {
+  const ids = new Set((form?.blocos || []).flat());
+  const vistos = new Set();
+  for (const r of respostas || []) if (ids.has(r.questao_id)) vistos.add(r.questao_id);
+  return { n: vistos.size, total: ids.size, fracao: ids.size ? vistos.size / ids.size : 0, reaplicacao: ids.size ? vistos.size / ids.size > LIMITE_JA_VISTOS : false };
 }
 
 /* Formulário personalizado do aluno: prioriza itens não vistos */
@@ -361,9 +632,14 @@ export function montarFormularioPersonalizado(banco, { step, tipo = "completo", 
   return montarFormulario(banco, { step, tipo, modo: "personalizado", semente: s, vistas });
 }
 
+/* Distribuição em blocos: serpentina pela ordem do Angoff de montagem, depois busca
+   local por trocas entre blocos que aproximam de cada bloco a média de Angoff do
+   formulário, a proporção de cada dificuldade e a de cada sistema. Dentro do bloco, a
+   ordem é embaralhada pela semente, evitando dois itens seguidos do mesmo sistema. */
 function distribuirEmBlocos(itens, tamanhos, { random, principal, chaveAleatoria }) {
   const B = tamanhos.length;
-  const ord = itens.slice().sort((a, b) => b.angoff - a.angoff || chaveAleatoria.get(a.id) - chaveAleatoria.get(b.id));
+  const ang = (q) => angoffMontagem(q);
+  const ord = itens.slice().sort((a, b) => ang(b) - ang(a) || chaveAleatoria.get(a.id) - chaveAleatoria.get(b.id));
   const blocos = Array.from({ length: B }, () => []);
   let dir = 1, bIdx = 0;
   for (const q of ord) {
@@ -373,28 +649,33 @@ function distribuirEmBlocos(itens, tamanhos, { random, principal, chaveAleatoria
     bIdx += dir;
     if (bIdx >= B) { bIdx = B - 1; dir = -1; } else if (bIdx < 0) { bIdx = 0; dir = 1; }
   }
-  /* trocas entre blocos para espalhar os sistemas, só entre itens de Angoff próximo */
   if (B > 1) {
-    const cont = blocos.map((b) => { const m = new Map(); for (const q of b) m.set(q[principal], (m.get(q[principal]) || 0) + 1); return m; });
-    const tentativas = Math.min(20000, itens.length * 40);
+    const total = itens.length;
+    const mGlobal = itens.reduce((s, q) => s + ang(q), 0) / Math.max(1, total);
+    const prop = (campo) => { const m = {}; for (const q of itens) m[q[campo]] = (m[q[campo]] || 0) + 1 / total; return m; };
+    const pDif = prop("dificuldade"), pSis = prop(principal);
+    const est = blocos.map((b) => ({ soma: b.reduce((s, q) => s + ang(q), 0), dif: contarCampo(b, "dificuldade"), sis: contarCampo(b, principal), n: b.length }));
+    const custoBloco = (e) => {
+      let c = 1e4 * (e.soma / e.n - mGlobal) ** 2;
+      for (const [k, p] of Object.entries(pDif)) c += ((e.dif[k] || 0) - p * e.n) ** 2;
+      for (const [k, p] of Object.entries(pSis)) c += 0.3 * ((e.sis[k] || 0) - p * e.n) ** 2;
+      return c;
+    };
+    const mover = (e, q, s) => { e.soma += s * ang(q); e.dif[q.dificuldade] = (e.dif[q.dificuldade] || 0) + s; e.sis[q[principal]] = (e.sis[q[principal]] || 0) + s; };
+    const tentativas = Math.min(60000, total * 150);
     for (let t = 0; t < tentativas; t++) {
       const b1 = Math.floor(random() * B), b2 = Math.floor(random() * B);
       if (b1 === b2 || !blocos[b1].length || !blocos[b2].length) continue;
       const i1 = Math.floor(random() * blocos[b1].length), i2 = Math.floor(random() * blocos[b2].length);
       const q1 = blocos[b1][i1], q2 = blocos[b2][i2];
-      const s1 = q1[principal], s2 = q2[principal];
-      if (s1 === s2 || Math.abs(q1.angoff - q2.angoff) > 0.03) continue;
-      const c = (m, s) => m.get(s) || 0;
-      const antes = c(cont[b1], s1) ** 2 + c(cont[b1], s2) ** 2 + c(cont[b2], s1) ** 2 + c(cont[b2], s2) ** 2;
-      const depois = (c(cont[b1], s1) - 1) ** 2 + (c(cont[b1], s2) + 1) ** 2 + (c(cont[b2], s1) + 1) ** 2 + (c(cont[b2], s2) - 1) ** 2;
-      if (depois < antes) {
-        blocos[b1][i1] = q2; blocos[b2][i2] = q1;
-        cont[b1].set(s1, c(cont[b1], s1) - 1); cont[b1].set(s2, c(cont[b1], s2) + 1);
-        cont[b2].set(s1, c(cont[b2], s1) + 1); cont[b2].set(s2, c(cont[b2], s2) - 1);
-      }
+      if (q1.dificuldade === q2.dificuldade && q1[principal] === q2[principal] && Math.abs(ang(q1) - ang(q2)) < 1e-9) continue;
+      const antes = custoBloco(est[b1]) + custoBloco(est[b2]);
+      mover(est[b1], q1, -1); mover(est[b1], q2, 1); mover(est[b2], q2, -1); mover(est[b2], q1, 1);
+      const depois = custoBloco(est[b1]) + custoBloco(est[b2]);
+      if (depois < antes - 1e-9) { blocos[b1][i1] = q2; blocos[b2][i2] = q1; }
+      else { mover(est[b1], q2, -1); mover(est[b1], q1, 1); mover(est[b2], q1, -1); mover(est[b2], q2, 1); }
     }
   }
-  /* ordem dentro do bloco: embaralhada pela semente, evitando o mesmo sistema em seguida */
   return blocos.map((b) => {
     const a = b.slice().sort((x, y) => chaveAleatoria.get(x.id) - chaveAleatoria.get(y.id));
     for (let k = 1; k < a.length; k++) {
@@ -405,6 +686,7 @@ function distribuirEmBlocos(itens, tamanhos, { random, principal, chaveAleatoria
     return a;
   });
 }
+function contarCampo(lista, campo) { const m = {}; for (const q of lista) m[q[campo]] = (m[q[campo]] || 0) + 1; return m; }
 
 /* Conferência de um formulário contra as faixas oficiais e o equilíbrio entre blocos.
    porId: Map id -> item (banco.porId). Devolve:
@@ -423,16 +705,22 @@ export function verificarFormulario(form, porId) {
   if (itens.some((q) => !q)) problemas.push("Há itens que não estão no banco.");
   const total = ids.length;
   if (form.blocos.some((b) => b.length > TEMPOS_OFICIAIS.itens_por_bloco_max)) problemas.push("Bloco com mais de 20 itens.");
-  if (!form.reduzido && total !== form.oficial.itens) problemas.push("Total diferente do formato: " + total + " de " + form.oficial.itens + ".");
-  if (!form.reduzido && form.blocos.length !== form.oficial.blocos) problemas.push("Número de blocos diferente do formato.");
+  const inteiro = !form.reduzido && !form.parcial;
+  if (inteiro && total !== form.oficial.itens) problemas.push("Total diferente do formato: " + total + " de " + form.oficial.itens + ".");
+  if (inteiro && form.blocos.length !== form.oficial.blocos) problemas.push("Número de blocos diferente do formato.");
+  if (form.parcial) avisos.push(form.motivo_parcial || "Formulário parcial.");
   const blocos = form.blocos.map((b, i) => {
     const qs = b.map(get).filter(Boolean);
     const pd = { facil: 0, media: 0, dificil: 0 };
     for (const q of qs) pd[q.dificuldade] = (pd[q.dificuldade] || 0) + 1;
-    return { indice: i, n: b.length, angoff_medio: qs.length ? qs.reduce((s, q) => s + q.angoff, 0) / qs.length : null, por_dificuldade: pd, sistemas: new Set(qs.map((q) => q.sistema)).size };
+    return { indice: i, n: b.length, angoff_medio: qs.length ? qs.reduce((s, q) => s + q.angoff, 0) / qs.length : null, angoff_montagem_medio: qs.length ? qs.reduce((s, q) => s + angoffMontagem(q), 0) / qs.length : null, por_dificuldade: pd, sistemas: new Set(qs.map((q) => q.sistema)).size };
   });
-  const medias = blocos.map((b) => b.angoff_medio).filter((x) => x !== null);
-  const mg = itens.filter(Boolean).reduce((s, q) => s + q.angoff, 0) / Math.max(1, itens.filter(Boolean).length);
+  const medias = blocos.map((b) => b.angoff_montagem_medio).filter((x) => x !== null);
+  const validos = itens.filter(Boolean);
+  const mg = validos.reduce((s, q) => s + angoffMontagem(q), 0) / Math.max(1, validos.length);
+  /* corte provisório: média do Angoff em vigor (do painel de juízes quando houver) */
+  const corte = validos.reduce((s, q) => s + q.angoff, 0) / Math.max(1, validos.length);
+  const doPainel = validos.filter((q) => q.angoff_origem === "painel").length;
   const dpb = medias.length > 1 ? Math.sqrt(medias.reduce((s, m) => s + (m - mg) ** 2, 0) / (medias.length - 1)) : 0;
   const dimensoes = {};
   for (const d of DIMENSOES[form.step]) {
@@ -461,10 +749,18 @@ export function verificarFormulario(form, porId) {
       }
       return out;
     });
-    for (const x of dimensoes[d]) if (x.exigida && x.dentro === false && !form.reduzido) problemas.push(d + " " + x.chave + " fora da faixa oficial (" + (x.pct * 100).toFixed(1) + "% para " + x.faixa[0] + " a " + x.faixa[1] + "%).");
+    if (d === "dificuldade") for (const x of dimensoes[d]) { x.faixa = FAIXAS_DIFICULDADE[x.chave] || null; x.dentro = x.faixa ? x.pct >= x.faixa[0] / 100 - 1e-9 && x.pct <= x.faixa[1] / 100 + 1e-9 : null; x.meta_do_projeto = true; }
+    for (const x of dimensoes[d]) if (d === "dificuldade" && x.dentro === false && !form.reduzido) avisos.push("dificuldade " + x.chave + " fora da meta do projeto (" + (x.pct * 100).toFixed(1) + "% para " + x.faixa[0] + " a " + x.faixa[1] + "%).");
+    /* no formulário parcial (o restante do banco), a faixa é meta: fora dela vira aviso */
+    for (const x of dimensoes[d]) if (x.exigida && x.dentro === false && !form.reduzido) (form.parcial ? avisos : problemas).push(d + " " + x.chave + " fora da faixa oficial (" + (x.pct * 100).toFixed(1) + "% para " + x.faixa[0] + " a " + x.faixa[1] + "%)" + (form.parcial ? " no formulário parcial." : "."));
     for (const x of dimensoes[d]) if (x.dentro_multirrotulo === false && !form.reduzido) avisos.push(d + " " + x.chave + " (todos os rótulos) fora da faixa oficial (" + (x.pct_multirrotulo * 100).toFixed(1) + "% para " + x.faixa[0] + " a " + x.faixa[1] + "%).");
   }
-  return { ok: problemas.length === 0, total, blocos, equilibrio: { angoff_medio: mg, dp_entre_blocos: dpb, amplitude: medias.length ? Math.max(...medias) - Math.min(...medias) : 0 }, dimensoes, problemas, avisos };
+  return {
+    ok: problemas.length === 0, total, blocos,
+    equilibrio: { angoff_medio: mg, dp_entre_blocos: dpb, amplitude: medias.length ? Math.max(...medias) - Math.min(...medias) : 0 },
+    corte: { angoff_medio: corte, origem: doPainel === validos.length && validos.length ? "painel" : doPainel ? "misto" : "provisorio", itens_com_painel: doPainel },
+    dimensoes, problemas, avisos
+  };
 }
 
 /* =====================================================================

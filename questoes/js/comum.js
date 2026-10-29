@@ -51,7 +51,7 @@ export function cabecalho({ eyebrow = "Banco de questões", titulo, lead = "", a
 
 /* Abas internas do banco */
 export function abas(atual) {
-  const lista = [["", "Início", "house-line"], ["criar", "Criar bloco", "plus-circle"], ["blocos", "Meus blocos", "list-numbers"], ["desempenho", "Desempenho", "chart-line-up"], ["aprovacao", "Probabilidade de aprovação", "gauge"]];
+  const lista = [["", "Início", "house-line"], ["criar", "Criar bloco", "plus-circle"], ["blocos", "Meus blocos", "list-numbers"], ["desempenho", "Desempenho", "chart-line-up"], ["aprovacao", "Acima do limiar", "gauge"]];
   return '<nav class="q-abas" aria-label="Seções do banco de questões"><ul>' + lista.map(([r, t, ic]) =>
     '<li><a href="#/' + r + '"' + (r === atual ? ' aria-current="page"' : "") + ">" + icon(ic) + "<span>" + e(t) + "</span></a></li>").join("") + "</ul></nav>";
 }
@@ -88,7 +88,7 @@ export function svgPosterior(curva, { largura = 640, altura = 170, titulo = "" }
   const ticks = [-3, -2, -1, 0, 1, 2, 3].filter((t) => t >= xmin && t <= xmax);
   return '<figure class="q-fig"><svg class="q-post" viewBox="0 0 ' + largura + " " + altura + '" role="img" aria-labelledby="post-t post-d">' +
     '<title id="post-t">' + e(titulo || "Distribuição da habilidade estimada") + "</title>" +
-    '<desc id="post-d">' + e("Curva da distribuição posterior da habilidade. O limiar de aprovação do banco é o zero. A área à direita do zero é a probabilidade de aprovação, " + pctProb(curva.p) + ". Intervalo de 90%: " + num(lo, 2) + " a " + num(hi, 2) + " logits.") + "</desc>" +
+    '<desc id="post-d">' + e("Curva da distribuição posterior da habilidade. O limiar do banco é o zero. A área à direita do zero, com a incerteza do padrão, é a probabilidade de estar acima do limiar, " + pctProb(curva.p) + ". Intervalo de 90%: " + num(lo, 2) + " a " + num(hi, 2) + " logits.") + "</desc>" +
     '<rect class="q-post__ic" x="' + X(Math.max(xmin, lo)).toFixed(1) + '" y="' + m.t + '" width="' + Math.max(1, X(Math.min(xmax, hi)) - X(Math.max(xmin, lo))).toFixed(1) + '" height="' + (altura - m.t - m.b) + '"></rect>' +
     (area ? '<path class="q-post__area" d="' + area + '"></path>' : "") +
     '<path class="q-post__linha" d="' + linha + '"></path>' +
@@ -96,7 +96,7 @@ export function svgPosterior(curva, { largura = 640, altura = 170, titulo = "" }
     '<line class="q-post__limiar" x1="' + X(0) + '" x2="' + X(0) + '" y1="' + (m.t - 4) + '" y2="' + (altura - m.b + 4) + '"></line>' +
     ticks.map((t) => '<text class="q-post__tick" x="' + X(t).toFixed(1) + '" y="' + (altura - m.b + 18) + '" text-anchor="middle">' + (t === 0 ? "limiar" : (t > 0 ? "+" : "−") + Math.abs(t)) + "</text>").join("") +
     "</svg>" +
-    '<figcaption class="q-fig__leg"><span><i class="q-leg q-leg--area" aria-hidden="true"></i>Probabilidade de estar acima do limiar</span><span><i class="q-leg q-leg--ic" aria-hidden="true"></i>Intervalo de 90% da habilidade</span><span><i class="q-leg q-leg--limiar" aria-hidden="true"></i>Limiar do banco (Angoff)</span></figcaption></figure>';
+    '<figcaption class="q-fig__leg"><span><i class="q-leg q-leg--area" aria-hidden="true"></i>Probabilidade de estar acima do limiar</span><span><i class="q-leg q-leg--ic" aria-hidden="true"></i>Intervalo de 90% da habilidade</span><span><i class="q-leg q-leg--limiar" aria-hidden="true"></i>Limiar do banco (padrão provisório)</span></figcaption></figure>';
 }
 
 /* Curva de evolução: P(aprovação) depois de cada sessão, com as faixas de decisão
@@ -110,7 +110,7 @@ export function svgEvolucao(pontos, { largura = 720, altura = 240 } = {}) {
   const linha = pontos.map((p, i) => (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(p.p_aprovacao).toFixed(1)).join(" ");
   const grade = [0, 0.1, 0.5, 0.9, 1];
   return '<figure class="q-fig"><svg class="q-evo" viewBox="0 0 ' + largura + " " + altura + '" role="img" aria-labelledby="evo-t evo-d">' +
-    '<title id="evo-t">Probabilidade de aprovação depois de cada sessão</title>' +
+    '<title id="evo-t">Probabilidade de estar acima do limiar do banco depois de cada sessão</title>' +
     '<desc id="evo-d">' + e(pontos.length + " sessões. Primeira: " + pctProb(pontos[0].p_aprovacao) + "; última: " + pctProb(pontos[pontos.length - 1].p_aprovacao) + ". A tabela abaixo do gráfico tem todos os valores.") + "</desc>" +
     grade.map((g) => '<line class="q-evo__grade' + (g === 0.1 || g === 0.9 ? " q-evo__grade--decisao" : "") + '" x1="' + m.l + '" x2="' + (largura - m.r) + '" y1="' + Y(g) + '" y2="' + Y(g) + '"></line>' +
       '<text class="q-evo__eixo" x="' + (m.l - 8) + '" y="' + (Y(g) + 4) + '" text-anchor="end">' + Math.round(g * 100) + "%</text>").join("") +
@@ -122,7 +122,7 @@ export function svgEvolucao(pontos, { largura = 720, altura = 240 } = {}) {
     '<text class="q-evo__eixo" x="' + m.l + '" y="' + (altura - 8) + '">' + e(dataBR(pontos[0].ate)) + "</text>" +
     (pontos.length > 1 ? '<text class="q-evo__eixo" x="' + (largura - m.r) + '" y="' + (altura - 8) + '" text-anchor="end">' + e(dataBR(pontos[pontos.length - 1].ate)) + "</text>" : "") +
     "</svg>" +
-    '<figcaption class="q-fig__leg"><span><i class="q-leg q-leg--linha" aria-hidden="true"></i>Probabilidade de aprovação, com todas as respostas até a sessão</span><span><i class="q-leg q-leg--decisao" aria-hidden="true"></i>10% e 90%: faixas em que a estimativa decide</span></figcaption></figure>';
+    '<figcaption class="q-fig__leg"><span><i class="q-leg q-leg--linha" aria-hidden="true"></i>Probabilidade de estar acima do limiar do banco, com todas as respostas até a sessão</span><span><i class="q-leg q-leg--decisao" aria-hidden="true"></i>10% e 90%: faixas em que a estimativa decide</span></figcaption></figure>';
 }
 
 /* Barra horizontal com marca do limiar (taxa do aluno e taxa esperada no limiar) */
@@ -135,7 +135,7 @@ export function barraLimiar(taxa, limiar, rotulo) {
 
 export function chipConfianca(conf) {
   return conf?.alta
-    ? '<span class="prog-chip prog-chip--ok">' + icon("seal-check") + "Alta confiança</span>"
+    ? '<span class="prog-chip prog-chip--ok">' + icon("seal-check") + e(conf.texto_curto || "Precisão alta") + "</span>"
     : '<span class="prog-chip prog-chip--aviso">' + icon("hourglass-medium") + "Estimativa preliminar</span>";
 }
 

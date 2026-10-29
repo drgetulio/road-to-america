@@ -32,6 +32,14 @@
    - tutorial deixado aberto além dos 5 minutos: o excesso gasta a pausa e segue a
      mesma regra da pausa; ao parar, o tutorial é encerrado antes do bloco 1.
 
+   Condições de aplicação (sessao.condicoes), escolhidas antes de começar:
+   - "oficiais": como no centro de provas. Não há "parar e continuar depois", o dia
+     nunca para sozinho e toda pausa além do saldo sai dos blocos seguintes, com a
+     página aberta ou fechada. Só este modo conta como condições padronizadas (como o
+     standard-paced do NBME) e entra na estimativa de prontidão do relatório;
+   - "estudo": as regras de parada descritas acima. O relatório marca o dia como
+     não padronizado.
+
    Funções puras: recebem "agora" em milissegundos (ou Date) e devolvem um estado
    novo. Nada aqui toca o DOM. */
 import {
@@ -62,8 +70,14 @@ function uiNova(s, form, t) {
   };
 }
 
-export function criarDia(form) {
-  return { ...novaSessao(form), notas: {}, suspensa: null, suspensoes: [], ui: null, rev: 0 };
+export const CONDICOES = Object.freeze(["oficiais", "estudo"]);
+export function criarDia(form, { condicoes = "estudo" } = {}) {
+  return { ...novaSessao(form), notas: {}, suspensa: null, suspensoes: [], ui: null, rev: 0, condicoes: CONDICOES.includes(condicoes) ? condicoes : "estudo" };
+}
+export const emCondicoesOficiais = (s) => s?.condicoes === "oficiais";
+/* Dia em condições padronizadas: condições oficiais escolhidas e nenhuma parada */
+export function condicoesPadronizadas(s) {
+  return emCondicoesOficiais(s) && !(s.suspensoes || []).length && !s.suspensa;
 }
 
 /* Fim previsto do bloco atual (ms) */
@@ -210,6 +224,13 @@ export function sincronizar(sessao, agora, { paginaAberta = false } = {}) {
   const t = ms(agora);
   const nada = { sessao, fechou: false, suspendeu: false, motivo: null };
   if (sessao.suspensa) return nada;
+  /* condições oficiais: o dia nunca para; pausa e tutorial além do saldo viram débito
+     (o relógio oficial cobra ao iniciar o bloco seguinte) e o bloco vencido fecha no
+     fim do tempo */
+  if (emCondicoesOficiais(sessao)) {
+    if (!blocoExpirou(sessao, t)) return nada;
+    return { sessao: fecharBloco(sessao, fimDoBloco(sessao), "tempo"), fechou: true, suspendeu: false, motivo: null };
+  }
   if (sessao.fase === "intervalo" && sessao.relogio.fase_desde) {
     const zero = fimDoSaldo(sessao);
     const limite = paginaAberta ? EXCEDENTE_MAX_MS : TOLERANCIA_AUSENCIA_MS;
@@ -254,9 +275,10 @@ export function sincronizar(sessao, agora, { paginaAberta = false } = {}) {
   return { sessao: s, fechou: true, suspendeu, motivo: suspendeu ? "bloco" : null };
 }
 
-export const podeSuspender = (s) => s.fase === "intervalo" && !s.suspensa;
+export const podeSuspender = (s) => s.fase === "intervalo" && !s.suspensa && !emCondicoesOficiais(s);
 
 export function suspender(sessao, agora) {
+  if (emCondicoesOficiais(sessao)) throw new Error("Em condições oficiais o dia não para, como na prova.");
   if (!podeSuspender(sessao)) throw new Error(sessao.suspensa ? "O dia já está suspenso." : "Só é possível parar entre blocos.");
   const s = clone(sessao);
   s.suspensa = { desde: iso(ms(agora)), automatica: false, motivo: "participante" };
@@ -328,7 +350,9 @@ export function resumoDoDia(s, form) {
     suspensoes: (s.suspensoes || []).length + (s.suspensa ? 1 : 0),
     tempo_suspenso_ms: tempoSuspenso(s, s.fim ? Date.parse(s.fim) : Date.now()),
     dia_ms: s.inicio && s.fim ? Math.max(0, Date.parse(s.fim) - Date.parse(s.inicio) - tempoSuspenso(s, Date.parse(s.fim))) : null,
-    dia_previsto_ms: form.tempo.dia_ms
+    dia_previsto_ms: form.tempo.dia_ms,
+    condicoes: s.condicoes || "estudo",
+    padronizadas: condicoesPadronizadas(s)
   };
 }
 

@@ -343,10 +343,11 @@ select teste.ok('P9v authenticated não executa a função interna do resumo',
 -- BANCO DE QUESTÕES (Q1 a Q10): questões, respostas por item, simulados
 -- completos, anotações do aluno, reportes, resultados oficiais e funções do admin
 -- =============================================================================
-\set item1 '{"id":"R2A-S1-0001","step":"step1","versao":1,"vinheta":"A 54-year-old man has crushing chest pain for 3 days.","pergunta":"Which of the following is most likely?","alternativas":[{"letra":"A","texto":"a"},{"letra":"B","texto":"b"},{"letra":"C","texto":"c"},{"letra":"D","texto":"d"},{"letra":"E","texto":"e"}],"correta":"C","sistema":"cardiovascular","disciplina":"patologia","competencia":"applying_foundational_science","dificuldade":"media","angoff":0.62}'
+\set item1 '{"id":"R2A-S1-0001","step":"step1","versao":1,"vinheta":"A 54-year-old man has crushing chest pain for 3 days.","pergunta":"Which of the following is most likely?","alternativas":[{"letra":"A","texto":"a"},{"letra":"B","texto":"b"},{"letra":"C","texto":"c"},{"letra":"D","texto":"d"},{"letra":"E","texto":"e"}],"correta":"C","explicacao":"Coagulative necrosis at 3 days.","explicacoes_alternativas":{"C":"Correct."},"explicacao_pt":"Necrose de coagulação.","objetivo_educacional":"Timeline of infarction.","conceito_testado":"Infarct day 3","topico":"Myocardial infarction","fonte":"Robbins 2020","tags":["infarto"],"revisao":{"verificado":true,"notas":"interna"},"sistema":"cardiovascular","disciplina":"patologia","competencia":"applying_foundational_science","dificuldade":"media","angoff":0.62}'
 \set item2 '{"id":"R2A-S1-0002","step":"step1","vinheta":"A 30-year-old woman has fatigue for 2 months.","pergunta":"Which of the following is most likely?","alternativas":[{"letra":"A","texto":"a"},{"letra":"B","texto":"b"},{"letra":"C","texto":"c"},{"letra":"D","texto":"d"},{"letra":"E","texto":"e"}],"correta":"A","sistema":"sangue_imune","disciplina":"patologia","dificuldade":"dificil"}'
 \set sessao0 '{"bloco_atual":0,"respostas":[[{"resposta":null,"marcada":false,"tempo_ms":0}],[{"resposta":null,"marcada":false,"tempo_ms":0}]]}'
 \set sessao1 '{"bloco_atual":1,"respostas":[[{"resposta":"C","marcada":false,"tempo_ms":60000}],[{"resposta":null,"marcada":false,"tempo_ms":0}]]}'
+\set sessao2 '{"bloco_atual":2,"respostas":[[{"resposta":"C","marcada":false,"tempo_ms":60000}],[{"resposta":"B","marcada":true,"tempo_ms":45000}]],"encerramentos":[{"bloco":0,"fim":"2099-10-29T10:00:00Z"},{"bloco":1,"fim":"2099-10-29T10:30:00Z"}]}'
 \set form2 '{"id":"step1:prontidao:fixo:S1-A:x","step":"step1","tipo":"prontidao","blocos":[["R2A-S1-0001"],["R2A-S1-0002"]]}'
 
 set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
@@ -377,37 +378,69 @@ set role authenticated; select set_config('request.jwt.claim.sub', :'bia', false
 select teste.ok('Q3a Bia (inativa) não lê nenhuma questão', (select count(*) from public.questoes) = 0);
 select teste.bloqueia('Q3b Bia ativa a própria matrícula', 'update public.profiles set ativo = true where id = auth.uid()');
 select teste.ok('Q3c pode_ler_banco() é falso para a Bia', not public.pode_ler_banco());
+select teste.ok('Q3d Bia (inativa) não lê o espelho público das questões', (select count(*) from public.questoes_publicas) = 0);
 reset role;
 
 set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
 \echo '--- Q4 Ana (matrícula ativa)'
-select teste.ok('Q4a Ana lê só a questão ativa', (select count(*) from public.questoes) = 1 and (select count(*) from public.questoes where id = 'R2A-S1-0002') = 0);
+select teste.ok('Q4a Ana não lê a tabela com gabarito; lê só a questão ativa no espelho público', (select count(*) from public.questoes) = 0
+  and (select count(*) from public.questoes_publicas) = 1 and (select count(*) from public.questoes_publicas where id = 'R2A-S1-0002') = 0);
+select teste.ok('Q4a2 o espelho público não traz gabarito, explicações, objetivo, conceito, tópico, fonte, tags nem revisão',
+  (select not (dados ?| array['correta','explicacao','explicacoes_alternativas','explicacao_pt','objetivo_educacional','conceito_testado','topico','fonte','tags','revisao'])
+     and dados ->> 'vinheta' like 'A 54-year-old%' and jsonb_array_length(dados -> 'alternativas') = 5 and angoff = 0.62 and sistema = 'cardiovascular'
+   from public.questoes_publicas where id = 'R2A-S1-0001'));
+select teste.bloqueia('Q4a3 Ana escreve no espelho público', $q$update public.questoes_publicas set dados = '{}' where id = 'R2A-S1-0001'$q$);
 select teste.bloqueia('Q4b Ana altera o gabarito (coluna)', $q$update public.questoes set correta = 'A' where id = 'R2A-S1-0001'$q$);
 select teste.bloqueia('Q4c Ana altera o gabarito (dados)', $q$update public.questoes set dados = jsonb_set(dados, '{correta}', '"A"') where id = 'R2A-S1-0001'$q$);
 select teste.bloqueia('Q4d Ana insere questão', format('insert into public.questoes (id, step, dados) values (%L, %L, %L::jsonb)', 'R2A-S1-0050', 'step1', replace(:'item1', 'R2A-S1-0001', 'R2A-S1-0050')));
 select teste.bloqueia('Q4e Ana apaga questão', $q$delete from public.questoes where id = 'R2A-S1-0001'$q$);
-select teste.ok('Q4f gabarito continua C', (select correta from public.questoes where id = 'R2A-S1-0001') = 'C');
-insert into public.respostas_item (user_id, questao_id, step, resposta, correta, modo, origem, respondida_em)
-values (:'bia', 'R2A-S1-0001', 'step2ck', 'A', true, 'cronometrado', 'banco', now() - interval '2 hours')
-returning user_id = auth.uid() and not correta and step = 'step1' and versao_item = 1 as resp_ok \gset
-select teste.ok('Q4g resposta errada com acerto, dono e Step forjados: o banco corrige', :'resp_ok'::boolean);
-insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'C', 'cronometrado', 'banco') returning correta as resp_c \gset
+select teste.ok('Q4f Ana não lê o gabarito (nem na tabela, nem no espelho)', (select count(*) from public.questoes) = 0 and not exists (select 1 from public.questoes_publicas where dados ? 'correta'));
+select teste.bloqueia('Q4f2 Ana grava resposta direto na tabela (só pelas funções)', $q$insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'C', 'cronometrado', 'banco')$q$);
+select teste.ok('Q4f3 Ana não recebe a correção de item que não respondeu', public.r2a_revelar(array['R2A-S1-0001']) = '{}'::jsonb);
+select public.r2a_responder(jsonb_build_array(jsonb_build_object('questao_id', 'R2A-S1-0001', 'resposta', 'A', 'modo', 'cronometrado', 'origem', 'banco',
+  'sessao_id', 'blk-1', 'posicao', 0, 'respondida_em', (now() - interval '2 hours')::text, 'correta', true, 'user_id', :'bia', 'step', 'step2ck')), true) -> 0 as resp_a \gset
+select teste.ok('Q4g resposta errada pela função, com acerto, dono e Step forjados: o banco corrige e só então revela',
+  (:'resp_a'::jsonb ->> 'correta')::boolean = false and (:'resp_a'::jsonb -> 'revelado' ->> 'correta') = 'C'
+  and (:'resp_a'::jsonb -> 'revelado' ->> 'explicacao') like 'Coagulative%' and (:'resp_a'::jsonb -> 'revelado' ->> 'topico') = 'Myocardial infarction'
+  and (select user_id = auth.uid() and not correta and step = 'step1' and versao_item = 1 from public.respostas_item where id = (:'resp_a'::jsonb ->> 'id')::uuid));
+select public.r2a_responder(jsonb_build_array(jsonb_build_object('questao_id', 'R2A-S1-0001', 'resposta', 'A', 'modo', 'cronometrado', 'origem', 'banco', 'sessao_id', 'blk-1', 'posicao', 0)), false) -> 0 as resp_rep \gset
+select teste.ok('Q4g2 reenvio da mesma linha não duplica e, sem p_revelar, não traz explicação',
+  (select count(*) from public.respostas_item where sessao_id = 'blk-1') = 1 and not (:'resp_rep'::jsonb ? 'revelado'));
+select (public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"C","modo":"tutor","origem":"banco","sessao_id":"blk-2","posicao":0}]'::jsonb) -> 0 ->> 'correta')::boolean as resp_c \gset
 select teste.ok('Q4h resposta certa marcada como certa pelo banco', :'resp_c'::boolean);
+select teste.ok('Q4h2 depois de responder, a Ana recebe a correção do item pela revelação',
+  (public.r2a_revelar(array['R2A-S1-0001','R2A-S1-0002']) -> 'R2A-S1-0001' ->> 'correta') = 'C' and not (public.r2a_revelar(array['R2A-S1-0002']) ? 'R2A-S1-0002'));
+select teste.bloqueia('Q4h3 resposta de origem simulado pela função de responder', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"C","modo":"cronometrado","origem":"simulado"}]')$q$);
+select teste.bloqueia('Q4h4 resposta a item suspenso', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0002","resposta":"A","modo":"cronometrado","origem":"banco"}]')$q$);
 select teste.bloqueia('Q4i Ana altera a própria resposta', 'update public.respostas_item set correta = true');
 select teste.bloqueia('Q4j Ana apaga a própria resposta', 'delete from public.respostas_item');
-select teste.bloqueia('Q4k resposta com data no futuro', $q$insert into public.respostas_item (questao_id, step, resposta, modo, origem, respondida_em) values ('R2A-S1-0001', 'step1', 'C', 'tutor', 'banco', now() + interval '1 day')$q$);
-select teste.bloqueia('Q4l resposta com origem inválida', $q$insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'C', 'tutor', 'outro')$q$);
+select public.r2a_responder(jsonb_build_array(jsonb_build_object('questao_id', 'R2A-S1-0001', 'resposta', 'B', 'modo', 'tutor', 'origem', 'banco', 'sessao_id', 'blk-3', 'posicao', 0, 'respondida_em', (now() + interval '1 day')::text)), false) -> 0 ->> 'id' as resp_fut \gset
+select teste.ok('Q4k resposta com data no futuro fica com a data de agora', (select respondida_em <= now() from public.respostas_item where id = :'resp_fut'::uuid));
+select teste.bloqueia('Q4l resposta com origem inválida', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"C","modo":"tutor","origem":"outro"}]')$q$);
 insert into public.simulados_completos (user_id, step, tipo, formulario_id, formulario, sessao, estado)
 values (:'bia', 'step1', 'prontidao', 'step1:prontidao:fixo:S1-A:x', :'form2'::jsonb, :'sessao0'::jsonb, 'concluido')
 returning id as sc1, user_id = auth.uid() and estado = 'em_andamento' as sc_ok \gset
 select teste.ok('Q4m simulado completo criado no nome da Ana e em andamento', :'sc_ok'::boolean);
+select teste.bloqueia('Q4m2 item de simulado em andamento não é corrigido antes do fim', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"C","modo":"tutor","origem":"banco"}]')$q$);
+select teste.ok('Q4m3 nem revelado antes do fim', public.r2a_revelar(array['R2A-S1-0001']) = '{}'::jsonb);
+select teste.bloqueia('Q4m4 correção antes do último bloco', format('select public.r2a_corrigir_simulado(%L)', :'sc1'));
 select teste.passa('Q4n Ana encerra o bloco 1 (avança para o 2)', format('update public.simulados_completos set sessao = %L::jsonb where id = %L', :'sessao1', :'sc1'));
 select teste.ok('Q4o bloco_atual derivado da sessão', (select bloco_atual = 1 from public.simulados_completos where id = :'sc1'));
 select teste.bloqueia('Q4p Ana muda a resposta de um bloco encerrado', format('update public.simulados_completos set sessao = jsonb_set(sessao, %L, %L) where id = %L', '{respostas,0,0,resposta}', '"A"', :'sc1'));
 select teste.bloqueia('Q4q Ana volta ao bloco encerrado', format('update public.simulados_completos set sessao = %L::jsonb where id = %L', :'sessao0', :'sc1'));
 update public.simulados_completos set formulario = '{"blocos":[["R2A-S1-0002"],["R2A-S1-0001"]]}'::jsonb, tipo = 'completo' where id = :'sc1';
 select teste.ok('Q4r formulário e tipo não mudam depois de criados', (select formulario = :'form2'::jsonb and tipo = 'prontidao' from public.simulados_completos where id = :'sc1'));
-select teste.passa('Q4s Ana conclui o simulado', format($q$update public.simulados_completos set estado = 'concluido', resultado = '{"acertos":1}' where id = %L$q$, :'sc1'));
+select teste.bloqueia('Q4s Ana conclui o simulado direto, com resultado forjado', format($q$update public.simulados_completos set estado = 'concluido', resultado = '{"acertos":2}' where id = %L$q$, :'sc1'));
+select teste.passa('Q4s2 Ana encerra o último bloco', format('update public.simulados_completos set sessao = %L::jsonb where id = %L', :'sessao2', :'sc1'));
+select public.r2a_corrigir_simulado(:'sc1', '{"estimativa":{"p_aprovacao":0.5},"acertos":99}'::jsonb) as corr1 \gset
+select teste.ok('Q4s3 correção no servidor: acertos do servidor (o complemento não muda a nota), uma resposta por item e revelação no fim',
+  (:'corr1'::jsonb -> 'resultado' ->> 'acertos')::int = 1 and (:'corr1'::jsonb -> 'resultado' ->> 'total')::int = 2
+  and (:'corr1'::jsonb -> 'resultado' -> 'estimativa' ->> 'p_aprovacao')::numeric = 0.5
+  and (:'corr1'::jsonb -> 'itens' -> 0 -> 'revelado' ->> 'correta') = 'C' and (:'corr1'::jsonb -> 'itens' -> 1 ->> 'correta')::boolean = false
+  and (select count(*) = 2 and bool_and(origem = 'simulado' and modo = 'cronometrado') from public.respostas_item where sessao_id = :'sc1')
+  and (select estado = 'concluido' and (resultado ->> 'corrigido_no_servidor')::boolean from public.simulados_completos where id = :'sc1'));
+select public.r2a_corrigir_simulado(:'sc1') as corr2 \gset
+select teste.ok('Q4s4 corrigir de novo não duplica respostas', (select count(*) from public.respostas_item where sessao_id = :'sc1') = 2 and (:'corr2'::jsonb -> 'resultado' ->> 'acertos')::int = 1);
 select teste.ok('Q4t conclusão carimba o fim', (select fim is not null from public.simulados_completos where id = :'sc1'));
 select teste.bloqueia('Q4u Ana altera simulado concluído', format($q$update public.simulados_completos set resultado = '{"acertos":2}' where id = %L$q$, :'sc1'));
 select teste.bloqueia('Q4v Ana apaga o próprio simulado', format('delete from public.simulados_completos where id = %L', :'sc1'));
@@ -435,19 +468,24 @@ select teste.ok('Q5c Bia não lê anotações da Ana', (select count(*) from pub
 select teste.ok('Q5d Bia não lê reportes da Ana', (select count(*) from public.reportes_item) = 0);
 select teste.bloqueia('Q5e Bia altera simulado da Ana', format('update public.simulados_completos set sessao = %L::jsonb where id = %L', :'sessao0', :'sc1'));
 select teste.bloqueia('Q5f Bia altera anotação da Ana', $q$update public.anotacoes_item set texto = 'x'$q$);
-insert into public.respostas_item (user_id, questao_id, step, resposta, modo, origem) values (:'ana', 'R2A-S1-0001', 'step1', 'B', 'cronometrado', 'banco')
-returning user_id = auth.uid() as bia_dona \gset
-select teste.ok('Q5g resposta da Bia com user_id da Ana fica no nome da Bia', :'bia_dona'::boolean);
+select teste.bloqueia('Q5g Bia grava resposta direto no nome da Ana', format($q$insert into public.respostas_item (user_id, questao_id, step, resposta, modo, origem) values (%L, 'R2A-S1-0001', 'step1', 'B', 'cronometrado', 'banco')$q$, :'ana'));
+select teste.bloqueia('Q5g2 Bia (inativa) chama a função de responder', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"B","modo":"cronometrado","origem":"banco"}]')$q$);
+select teste.bloqueia('Q5g3 Bia (inativa) pede a revelação', $q$select public.r2a_revelar(array['R2A-S1-0001'])$q$);
+select teste.bloqueia('Q5g4 Bia corrige o simulado da Ana', format('select public.r2a_corrigir_simulado(%L)', :'sc1'));
 insert into public.anotacoes_item (user_id, questao_id, texto) values (:'ana', 'R2A-S1-0001', 'forjada')
   on conflict (user_id, questao_id) do update set texto = excluded.texto
   returning user_id = auth.uid() as anot_dona \gset
 select teste.ok('Q5h anotação da Bia com user_id da Ana fica no nome da Bia', :'anot_dona'::boolean);
-select teste.ok('Q5i Bia não lê a questão mesmo depois de responder', (select count(*) from public.questoes) = 0);
+select teste.ok('Q5i Bia não lê a questão', (select count(*) from public.questoes) = 0);
+reset role;
+-- resposta da Bia lançada pelo admin (a Bia está inativa), para as estatísticas abaixo
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+insert into public.respostas_item (user_id, questao_id, step, resposta, modo, origem) values (:'bia', 'R2A-S1-0001', 'step1', 'B', 'cronometrado', 'banco');
 reset role;
 
 set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
 \echo '--- Q6 admin'
-select teste.ok('Q6a admin lê as respostas da turma', (select count(*) from public.respostas_item) = 3);
+select teste.ok('Q6a admin lê as respostas da turma (3 da Ana pelo banco, 2 do simulado, 1 da Bia)', (select count(*) from public.respostas_item) = 6);
 select teste.ok('Q6b admin vê a questão suspensa', (select count(*) from public.questoes) = 2);
 select teste.ok('Q6c estatísticas: primeira resposta de cada pessoa (Ana errou, Bia errou)',
   (select n = 2 and acertos = 0 and opcoes = '{"A": 1, "B": 1}'::jsonb from public.r2a_admin_estatisticas_itens('step1') where questao_id = 'R2A-S1-0001'));
@@ -509,19 +547,16 @@ select teste.passa('Q10a admin marca o item para revisão com nota', $q$select p
 select teste.ok('Q10b marca gravada e histórico com a nota',
   (select em_revisao and revisao_nota = 'p abaixo de 0,20 na turma' from public.questoes where id = 'R2A-S1-0001')
   and exists (select 1 from public.questoes_historico where questao_id = 'R2A-S1-0001' and acao = 'revisao' and de = 'nao' and para = 'sim' and motivo = 'p abaixo de 0,20 na turma' and editor_id = auth.uid()));
--- uma resposta da Ana na versão 2 (as três anteriores são da versão 1, de conteúdo antigo)
-reset role;
-set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
-insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'A', 'cronometrado', 'banco');
-reset role;
-set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+-- uma resposta da Ana na versão 2 (as anteriores são da versão 1, de conteúdo antigo),
+-- lançada pelo admin porque o item está suspenso
+insert into public.respostas_item (user_id, questao_id, step, resposta, modo, origem) values (:'ana', 'R2A-S1-0001', 'step1', 'A', 'cronometrado', 'banco');
 select (public.r2a_admin_editar_gabarito('R2A-S1-0001', 'a', 'Revisão da referência: a alternativa A é a correta', true)) as gab10 \gset
 select teste.ok('Q10c gabarito corrigido: versão sobe, calibração apagada, retorno com antes e depois',
   (select correta = 'A' and versao = 3 and (dados ->> 'correta') = 'A' and b_calibrado is null from public.questoes where id = 'R2A-S1-0001')
   and (:'gab10'::jsonb ->> 'de') = 'C' and (:'gab10'::jsonb ->> 'para') = 'A' and (:'gab10'::jsonb ->> 'versao')::int = 3);
 select teste.ok('Q10d respostas da versão em vigor recorrigidas pela alternativa nova e levadas à versão nova; as da versão de conteúdo anterior ficam',
   (select bool_and(correta = (resposta = 'A')) and count(*) = 1 and count(*) = (:'gab10'::jsonb ->> 'recorrigidas')::int from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 3)
-  and (select count(*) = 3 from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 1)
+  and (select count(*) = 5 from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 1)
   and not exists (select 1 from public.respostas_item where questao_id = 'R2A-S1-0001' and versao_item = 2));
 select teste.ok('Q10e histórico do gabarito: de C para A, versão 3, motivo e quantas respostas mudaram',
   exists (select 1 from public.questoes_historico where questao_id = 'R2A-S1-0001' and acao = 'gabarito' and de = 'C' and para = 'A' and versao = 3
@@ -543,10 +578,10 @@ select teste.bloqueia('Q10p Ana corrige o gabarito pela função', $q$select pub
 select teste.bloqueia('Q10q Ana marca item para revisão', $q$select public.r2a_admin_marcar_revisao('R2A-S1-0001', false, '')$q$);
 select teste.bloqueia('Q10r Ana muda o status pela função', $q$select public.r2a_admin_status_questao('R2A-S1-0001', 'suspenso', '')$q$);
 select teste.ok('Q10s Ana não lê o histórico das questões', (select count(*) from public.questoes_historico) = 0);
-select teste.ok('Q10t gabarito continua A depois das tentativas da Ana', (select correta from public.questoes where id = 'R2A-S1-0001') = 'A');
+select teste.ok('Q10t gabarito continua A depois das tentativas da Ana', (public.r2a_revelar(array['R2A-S1-0001']) -> 'R2A-S1-0001' ->> 'correta') = 'A');
 -- resposta da Ana na versão 3; o conteúdo muda (versão 4) e o gabarito é corrigido
 -- com recorreção: só a versão em vigor é recorrigida, a resposta da versão 3 fica fora
-insert into public.respostas_item (questao_id, step, resposta, modo, origem) values ('R2A-S1-0001', 'step1', 'B', 'cronometrado', 'banco');
+select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"B","modo":"cronometrado","origem":"banco","sessao_id":"blk-10","posicao":0}]'::jsonb, false);
 reset role;
 set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
 update public.questoes set dados = jsonb_set(dados, '{vinheta}', '"A 54-year-old man has crushing chest pain for 5 days."') where id = 'R2A-S1-0001';
@@ -560,6 +595,167 @@ set role anon;
 select teste.bloqueia('Q10u anon lê o histórico', 'select * from public.questoes_historico');
 select teste.bloqueia('Q10v anon chama a correção de gabarito', $q$select public.r2a_admin_editar_gabarito('R2A-S1-0001', 'B', 'Tentativa anônima', true)$q$);
 reset role;
+
+-- ===== Q11 gabarito no servidor e formulários fixos
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select teste.ok('Q11a espelho acompanha a tabela (gabarito corrigido e versão)', (select p.versao = q.versao and p.status = q.status from public.questoes q join public.questoes_publicas p using (id) where q.id = 'R2A-S1-0001'));
+select teste.passa('Q11b admin grava formulário fixo', $q$insert into public.formularios_fixos (step, codigo, nome, blocos) values ('step1', 'S1-A', 'Formulário A', '[["R2A-S1-0001"]]')$q$);
+select teste.ok('Q11c admin recebe a revelação de qualquer item', public.r2a_revelar(array['R2A-S1-0002']) ? 'R2A-S1-0002');
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+select teste.ok('Q11d Ana lê o formulário fixo (sem gabarito)', (select count(*) from public.formularios_fixos) = 1);
+select teste.bloqueia('Q11e Ana grava formulário fixo', $q$insert into public.formularios_fixos (step, codigo, nome, blocos) values ('step1', 'S1-B', 'x', '[["R2A-S1-0001"]]')$q$);
+select teste.bloqueia('Q11f Ana altera formulário fixo', $q$update public.formularios_fixos set blocos = '[["R2A-S1-0002"]]'$q$);
+select teste.ok('Q11g Ana não executa as funções internas do espelho', not has_function_privilege('authenticated', 'public.r2a_parte_privada(jsonb, text)', 'execute')
+  and not has_function_privilege('authenticated', 'public.r2a_em_simulado_aberto(uuid, text)', 'execute'));
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'bia', false);
+select teste.ok('Q11h Bia (inativa) não lê formulários fixos', (select count(*) from public.formularios_fixos) = 0);
+reset role;
+set role anon;
+select teste.bloqueia('Q11i anon chama a função de responder', $q$select public.r2a_responder('[{"questao_id":"R2A-S1-0001","resposta":"A"}]')$q$);
+select teste.bloqueia('Q11j anon pede a revelação', $q$select public.r2a_revelar(array['R2A-S1-0001'])$q$);
+select teste.bloqueia('Q11k anon corrige simulado', $q$select public.r2a_corrigir_simulado(gen_random_uuid())$q$);
+select teste.bloqueia('Q11l anon lê o espelho público', 'select * from public.questoes_publicas');
+select teste.bloqueia('Q11m anon lê formulários fixos', 'select * from public.formularios_fixos');
+reset role;
+
+-- ===== A1 a A9: painel Angoff (juízes designados, rodadas, feedback, Hofstee e publicação)
+reset role;
+insert into auth.users (id, email, raw_user_meta_data) values
+ ('00000000-0000-0000-0000-0000000000d1','m1@x.com','{"nome":"Mentor 1"}'),
+ ('00000000-0000-0000-0000-0000000000d2','m2@x.com','{"nome":"Mentor 2"}'),
+ ('00000000-0000-0000-0000-0000000000d3','m3@x.com','{"nome":"Mentor 3"}'),
+ ('00000000-0000-0000-0000-0000000000d4','m4@x.com','{"nome":"Mentor 4"}'),
+ ('00000000-0000-0000-0000-0000000000d5','m5@x.com','{"nome":"Mentor 5"}'),
+ ('00000000-0000-0000-0000-0000000000d6','m6@x.com','{"nome":"Mentor 6"}'),
+ ('00000000-0000-0000-0000-0000000000d7','m7@x.com','{"nome":"Mentor 7"}'),
+ ('00000000-0000-0000-0000-0000000000d8','m8@x.com','{"nome":"Mentor 8"}'),
+ ('00000000-0000-0000-0000-0000000000d9','m9@x.com','{"nome":"Mentor 9"}'),
+ ('00000000-0000-0000-0000-0000000000da','m0@x.com','{"nome":"Mentor 10"}');
+\set m1 '00000000-0000-0000-0000-0000000000d1'
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+\echo '--- A1 admin cria o painel e designa os juízes'
+insert into public.angoff_paineis (step, nome, itens, rodadas_max, estado, rodada) values ('step1', 'Painel de teste', array['R2A-S1-0001'], 2, 'encerrado', 2) returning id as pa1, estado = 'avaliacao' and rodada = 1 as pa_ok \gset
+select teste.ok('A1a painel nasce na rodada 1, em avaliação (estado forjado ignorado)', :'pa_ok'::boolean);
+select teste.bloqueia('A1b painel com item fora do banco', $q$insert into public.angoff_paineis (step, nome, itens) values ('step1', 'Painel ruim', array['R2A-S1-9999'])$q$);
+select teste.passa('A1c admin designa 10 mentores', format($q$insert into public.angoff_juizes (painel_id, juiz_id) select %L, ('00000000-0000-0000-0000-0000000000d' || k)::uuid from unnest(array['1','2','3','4','5','6','7','8','9','a']) k$q$, :'pa1'));
+select teste.ok('A1d nome do juiz vem do perfil', (select bool_and(nome like 'Mentor %') and count(*) = 10 from public.angoff_juizes where painel_id = :'pa1'));
+select teste.bloqueia('A1e aluno com matrícula ativa não pode ser juiz', format('insert into public.angoff_juizes (painel_id, juiz_id) values (%L, %L)', :'pa1', :'ana'));
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+\echo '--- A2 Ana (aluna) e Bia fora do painel'
+select teste.ok('A2a Ana não vê o painel', (select count(*) from public.angoff_paineis) = 0);
+select teste.bloqueia('A2b Ana pede os itens do painel', format('select public.r2a_angoff_itens(%L)', :'pa1'));
+select teste.bloqueia('A2c Ana avalia', format('select public.r2a_angoff_avaliar(%L, %L, 50)', :'pa1', 'R2A-S1-0001'));
+select teste.bloqueia('A2d Ana conduz o painel', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'fechar_rodada'));
+select teste.bloqueia('A2e Ana se designa juíza', format('insert into public.angoff_juizes (painel_id, juiz_id) values (%L, %L)', :'pa1', :'ana'));
+select teste.bloqueia('A2f Ana comenta na discussão', format($q$insert into public.angoff_discussao (painel_id, texto) values (%L, 'oi')$q$, :'pa1'));
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'m1', false);
+\echo '--- A3 juiz 1'
+select teste.ok('A3a o juiz vê o painel em que foi designado', (select count(*) from public.angoff_paineis) = 1);
+select teste.ok('A3b o juiz não lê a tabela de questões nem o espelho de aluno', (select count(*) from public.questoes) = 0 and (select count(*) from public.questoes_publicas) = 0);
+select teste.ok('A3c itens do painel chegam completos e sem gabarito', (select jsonb_array_length(x) = 1 and not ((x -> 0 -> 'dados') ?| array['correta','explicacao','explicacoes_alternativas']) and (x -> 0 -> 'dados' ->> 'vinheta') like 'A 54%' from (select public.r2a_angoff_itens(:'pa1') as x) t));
+select teste.ok('A3d sem avaliar, nada de gabarito', public.r2a_angoff_revelar(:'pa1') = '{}'::jsonb);
+select teste.bloqueia('A3e juiz grava estimativa direto na tabela', format($q$insert into public.angoff_avaliacoes (painel_id, juiz_id, questao_id, rodada, valor) values (%L, %L, 'R2A-S1-0001', 1, 50)$q$, :'pa1', :'m1'));
+select teste.bloqueia('A3f estimativa fora de 0 a 100', format('select public.r2a_angoff_avaliar(%L, %L, 101)', :'pa1', 'R2A-S1-0001'));
+select public.r2a_angoff_avaliar(:'pa1', 'R2A-S1-0001', 60, 'item direto') as av1 \gset
+select teste.ok('A3g estimativa registrada e só então o gabarito e a explicação', (:'av1'::jsonb ->> 'valor')::int = 60 and (:'av1'::jsonb -> 'revelado' ->> 'correta') = 'A' and (:'av1'::jsonb -> 'revelado' ? 'explicacao'));
+select teste.ok('A3h depois de avaliar, o juiz revê o gabarito', public.r2a_angoff_revelar(:'pa1') ? 'R2A-S1-0001');
+select teste.ok('A3i feedback ainda vazio com a rodada aberta', (public.r2a_angoff_feedback(:'pa1') ->> 'rodadas_fechadas')::int = 0 and jsonb_array_length(public.r2a_angoff_feedback(:'pa1') -> 'estimativas') = 0);
+select teste.bloqueia('A3j juiz conduz o painel', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'fechar_rodada'));
+select teste.passa('A3k juiz responde o Hofstee', format('insert into public.angoff_hofstee (painel_id, juiz_id, k_min, k_max, f_min, f_max) values (%L, %L, 55, 70, 5, 20)', :'pa1', :'adm'));
+select teste.ok('A3l o Hofstee fica no nome do juiz (dono forjado ignorado)', (select juiz_id = auth.uid() from public.angoff_hofstee where painel_id = :'pa1'));
+select teste.bloqueia('A3m Hofstee com janela invertida', format('update public.angoff_hofstee set k_min = 80 where painel_id = %L', :'pa1'));
+reset role;
+-- os outros quatro juízes avaliam
+do $$
+declare j text; v int := 50;
+begin
+  for j in select id::text from auth.users where email in ('m2@x.com','m3@x.com','m4@x.com','m5@x.com') order by email loop
+    perform set_config('request.jwt.claim.sub', j, true);
+    perform public.r2a_angoff_avaliar((select id from public.angoff_paineis where nome = 'Painel de teste'), 'R2A-S1-0001', v, '');
+    v := v + 5;
+  end loop;
+end $$;
+set role authenticated; select set_config('request.jwt.claim.sub', :'m1', false);
+select teste.ok('A4a o juiz lê só as próprias estimativas', (select count(*) from public.angoff_avaliacoes) = 1);
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+\echo '--- A5 admin fecha a rodada 1'
+select teste.ok('A5a admin lê as 5 estimativas', (select count(*) from public.angoff_avaliacoes where painel_id = :'pa1') = 5);
+select teste.passa('A5b admin fecha a rodada', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'fechar_rodada'));
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'m1', false);
+select public.r2a_angoff_feedback(:'pa1') as fb1 \gset
+select teste.ok('A6a feedback da rodada fechada: 5 estimativas, média 58 (60, 50, 55, 60, 65), histograma e p observado',
+  (:'fb1'::jsonb -> 'estimativas' -> 0 ->> 'n')::int = 5 and (:'fb1'::jsonb -> 'estimativas' -> 0 ->> 'media')::numeric = 58
+  and jsonb_array_length(:'fb1'::jsonb -> 'estimativas' -> 0 -> 'histograma') = 10 and (:'fb1'::jsonb -> 'p_observado') ? 'R2A-S1-0001');
+select teste.bloqueia('A6b avaliar com a rodada fechada', format('select public.r2a_angoff_avaliar(%L, %L, 70)', :'pa1', 'R2A-S1-0001'));
+select teste.passa('A6c juiz comenta na discussão', format($q$insert into public.angoff_discussao (painel_id, questao_id, texto, autor_nome) values (%L, 'R2A-S1-0001', 'O distrator B é forte para o limítrofe.', 'Outro nome')$q$, :'pa1'));
+select teste.ok('A6d comentário com o nome e a rodada certos', (select autor_nome = 'Mentor 1' and rodada = 1 and autor_id = auth.uid() from public.angoff_discussao where painel_id = :'pa1'));
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'ana', false);
+select teste.ok('A6e Ana não lê a discussão', (select count(*) from public.angoff_discussao) = 0);
+reset role;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+\echo '--- A7 rodada 2, encerramento e publicação'
+select teste.passa('A7a admin abre a rodada 2', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'abrir_rodada'));
+reset role;
+do $$
+declare j text; v int := 60;
+begin
+  for j in select id::text from auth.users where email like 'm_@x.com' order by email loop
+    perform set_config('request.jwt.claim.sub', j, true);
+    perform public.r2a_angoff_avaliar((select id from public.angoff_paineis where nome = 'Painel de teste'), 'R2A-S1-0001', v, '');
+    v := v + 1;
+  end loop;
+end $$;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select teste.bloqueia('A7b abrir rodada além do máximo', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'abrir_rodada'));
+select teste.bloqueia('A7c publicar antes de encerrar', format('select public.r2a_admin_publicar_angoff(%L)', :'pa1'));
+select teste.passa('A7d admin encerra o painel', format('select public.r2a_admin_angoff_avancar(%L, %L)', :'pa1', 'encerrar'));
+select teste.bloqueia('A7e publicar com menos de 10 juízes por item', format('select public.r2a_admin_publicar_angoff(%L, 9)', :'pa1'));
+-- Hofstee obrigatório: sem resposta ou com o corte fora da janela, só com justificativa
+reset role;
+create temp table hof_guardado as select * from public.angoff_hofstee where painel_id = :'pa1';
+delete from public.angoff_hofstee where painel_id = :'pa1';
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select teste.bloqueia('A7e1 publicar sem nenhuma resposta de Hofstee e sem justificativa', format('select public.r2a_admin_publicar_angoff(%L)', :'pa1'));
+select teste.bloqueia('A7e2 justificativa curta não basta', format('select public.r2a_admin_publicar_angoff(%L, 10, %L)', :'pa1', 'curta'));
+select public.r2a_admin_publicar_angoff(:'pa1', 10, 'Painel de teste sem Hofstee: refazer com a turma seguinte.') as pubj \gset
+select teste.ok('A7e3 com justificativa, publica e grava o motivo e a verificação', (:'pubj'::jsonb ->> 'hofstee_ok')::boolean = false
+  and (select publicacao_justificativa like 'Painel de teste sem Hofstee%' and (publicacao_hofstee ->> 'ok')::boolean = false from public.angoff_paineis where id = :'pa1'));
+reset role;
+alter table public.angoff_hofstee disable trigger angoff_hofstee_guard;
+insert into public.angoff_hofstee (painel_id, juiz_id, k_min, k_max, f_min, f_max) select painel_id, juiz_id, 70, 80, f_min, f_max from hof_guardado;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select teste.bloqueia('A7e4 corte de 64,5% fora da janela de 70% a 80% dos juízes, sem justificativa', format('select public.r2a_admin_publicar_angoff(%L)', :'pa1'));
+reset role;
+update public.angoff_hofstee h set k_min = g.k_min, k_max = g.k_max from hof_guardado g where h.painel_id = g.painel_id and h.juiz_id = g.juiz_id;
+alter table public.angoff_hofstee enable trigger angoff_hofstee_guard;
+set role authenticated; select set_config('request.jwt.claim.sub', :'adm', false);
+select public.r2a_admin_publicar_angoff(:'pa1') as pub1 \gset
+select teste.ok('A7e5 com o corte dentro da janela, publica sem justificativa e limpa a anterior', (:'pub1'::jsonb ->> 'hofstee_ok')::boolean
+  and (select publicacao_justificativa is null and (publicacao_hofstee ->> 'ok')::boolean from public.angoff_paineis where id = :'pa1'));
+select teste.ok('A7f publicação: o item com 10 juízes recebe o Angoff da rodada final (média 64,5), com erro-padrão do item e do corte abaixo de 0,02',
+  (:'pub1'::jsonb ->> 'publicados')::int = 1 and (:'pub1'::jsonb ->> 'corte_ep')::numeric < 0.02
+  and (select angoff_painel = 0.645 and angoff_painel_juizes = 10 and angoff_painel_ep between 0.009 and 0.0097 and angoff_painel_id = :'pa1'::uuid from public.questoes where id = 'R2A-S1-0001'));
+select teste.ok('A7g o espelho do aluno recebe o Angoff do painel', (select angoff_painel = 0.645 and angoff_painel_juizes = 10 and angoff_painel_ep is not null from public.questoes_publicas where id = 'R2A-S1-0001'));
+select teste.bloqueia('A7h juiz avalia painel encerrado', format('select public.r2a_angoff_avaliar(%L, %L, 70)', :'pa1', 'R2A-S1-0001'));
+update public.questoes set dados = jsonb_set(dados, '{vinheta}', '"A 54-year-old man has crushing chest pain for 6 days."') where id = 'R2A-S1-0001';
+select teste.ok('A7i conteúdo novo apaga o Angoff do painel (valia para o conteúdo antigo)', (select angoff_painel is null and angoff_painel_juizes is null and angoff_painel_ep is null from public.questoes where id = 'R2A-S1-0001'));
+reset role;
+set role anon;
+select teste.bloqueia('A8a anon lê painéis', 'select * from public.angoff_paineis');
+select teste.bloqueia('A8b anon pede itens do painel', format('select public.r2a_angoff_itens(%L)', :'pa1'));
+select teste.bloqueia('A8c anon publica', format('select public.r2a_admin_publicar_angoff(%L)', :'pa1'));
+reset role;
+
+-- verificações que não podem ter ficado de fora por erro no meio da instrução
+select teste.ok('Z1 todas as verificações do gabarito no servidor e do painel Angoff rodaram',
+  (select count(distinct split_part(nome, ' ', 1)) from teste.resultado where split_part(nome, ' ', 1) = any (array['Q4a2','Q4f3','Q4g','Q4g2','Q4h','Q4h2','Q4k','Q4m3','Q4s3','Q4s4','Q11a','Q11c','Q11d','Q11g','Q11h','A1a','A1d','A3a','A3b','A3c','A3d','A3g','A3h','A3i','A3l','A4a','A5a','A6a','A6d','A6e','A7f','A7g','A7i'])) = 33);
 
 \echo '=== RESUMO DA PLATAFORMA (falhas precisa ser 0)'
 select count(*) filter (where not ok) as falhas, count(*) as verificacoes from teste.resultado;

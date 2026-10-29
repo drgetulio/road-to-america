@@ -14,12 +14,21 @@
    Funções puras, sem DOM. A única entrada e saída é fetch (no modo demonstração) e
    store.listQuestoes() (nos dois modos). Interface em plataforma/INTERFACE.md. */
 
+import { MIN_JUIZES } from "./angoff.js";
+
 export const STEPS_BANCO = Object.freeze(["step1", "step2ck"]);
+/* Mídia do item (CONTRATO-ITEM.md): imagem, áudio ou vídeo, com texto alternativo,
+   licença e fonte. */
+export const TIPOS_MIDIA = Object.freeze(["imagem", "audio", "video"]);
+/* Revisor que é o próprio sistema de geração (modelo de IA ou rotina automática):
+   não conta como revisão médica, mesmo com verificado = true. */
+const REVISOR_AUTOMATIZADO = /\b(claude|gpt|ia|ai|modelo|automatizad[ao]|automatic|llm|chatgpt|gemini)\b/i;
 export const DIFICULDADES = Object.freeze(["facil", "media", "dificil"]);
 export const STATUS_QUESTAO = Object.freeze(["ativo", "rascunho", "suspenso", "aposentado"]);
 
-/* Probabilidade de acerto do examinando no limiar quando o item não traz "angoff"
-   (CONTRATO-ITEM.md; método em PSICOMETRIA.md) */
+/* Dificuldade-alvo (probabilidade de acerto do examinando no limiar) quando o item não
+   traz "angoff" (CONTRATO-ITEM.md; método em PSICOMETRIA.md). O campo se chama angoff
+   por compatibilidade; só o valor do painel de juízes é Angoff de fato. */
 export const ANGOFF_PADRAO = Object.freeze({ facil: 0.8, media: 0.65, dificil: 0.45 });
 
 const FONTE_S1 = "https://www.usmle.org/step-exams/step-1 (Step 1 Exam Content; outline revisado em 29/01/2024; consulta em 28/10/2026)";
@@ -63,7 +72,7 @@ export const TAXONOMIA = Object.freeze({
         k("histologia", "Histologia e biologia celular", "Histology & Cell Biology", [5, 15]),
         k("imunologia", "Imunologia", "Immunology", [5, 15]),
         k("genetica", "Genética", "Genetics", [5, 10]),
-        k("nutricao", "Nutrição", "Nutrition", null, { nota: "Linha recente (reforço de nutrição anunciado em 14/04/2026); faixa de 15 a 20% ainda não confirmada na página oficial." })
+        k("nutricao", "Nutrição (faixa não confirmada)", "Nutrition", null, { nota: "Linha recente (reforço de nutrição anunciado em 14/04/2026); faixa de 15 a 20% ainda não confirmada na página oficial." })
       ])
     }),
     competencia: Object.freeze({
@@ -238,7 +247,7 @@ const LEGADO_CK = Object.freeze({
   "ck-005": { s: "respiratorio", c: "exames_laboratoriais_diagnosticos", d: ["medicina"] },
   "ck-006": { s: "respiratorio", c: "farmacoterapia", d: ["medicina"] },
   "ck-007": { s: "gastrointestinal", c: "exames_laboratoriais_diagnosticos", d: ["medicina"] },
-  "ck-008": { s: "sangue_imune", c: "diagnostico", d: ["medicina"] },
+  "ck-008": { s: "sangue_imune", c: "intervencoes_clinicas", d: ["medicina"] }, /* reescrito em 29/10/2026: conduta (via aérea) no angioedema por IECA */
   "ck-009": { s: "respiratorio", c: "farmacoterapia", d: ["medicina"] },
   "ck-010": { s: "multissistemico", c: "diagnostico", d: ["medicina"] },
   "ck-011": { s: "respiratorio", c: "manutencao_saude_prevencao", d: ["medicina"] },
@@ -305,6 +314,17 @@ export function chavesDe(step, dim) {
   return (TAXONOMIA[step]?.[dim]?.chaves || []).map((x) => x.chave);
 }
 export function sistemasDoOutline(step) { return chavesDe(step, "sistema"); }
+/* Peso de cada sistema na prova: ponto médio da faixa oficial, normalizado para somar
+   1 (chave -> proporção). Usado pela cobertura e pela repesagem do theta
+   (PSICOMETRIA.md, seções 5.1 e 7). */
+export function pesosDoOutline(step) {
+  const ks = TAXONOMIA[step]?.sistema?.chaves || [];
+  const mid = ks.map((x) => (x.faixa ? (x.faixa[0] + x.faixa[1]) / 2 : 0));
+  const tot = mid.reduce((a, b) => a + b, 0);
+  const out = {};
+  ks.forEach((x, i) => { if (tot > 0 && mid[i] > 0) out[x.chave] = mid[i] / tot; });
+  return out;
+}
 
 /* Chave canônica: aceita acentos, maiúsculas e os sinônimos de ALIASES.
    Devolve { chave, conhecida } (conhecida = está na taxonomia oficial) */
@@ -363,7 +383,8 @@ function competenciaStep1(item, sistema) {
 /* ---------- normalização ----------
    Recebe o item bruto (contrato atual ou anterior) e devolve uma cópia no contrato
    atual, com os campos derivados:
-     angoff_origem: "item" | "padrao_dificuldade"
+     angoff_origem: "item" | "padrao_dificuldade" | "painel"
+     angoff_item: Angoff do próprio item (ou o padrão), mesmo quando o do painel vale
      b_angoff: -logit(angoff)  (dificuldade de Rasch no limiar; PSICOMETRIA.md)
      legado: true para os itens públicos da versão anterior do contrato
      taxonomia_desconhecida: [dimensões cuja chave não está no outline] */
@@ -406,6 +427,18 @@ export function normalizarItem(bruto) {
     angoff_origem = "padrao_dificuldade";
   } else if (angoff >= 2 && angoff < 100) {
     angoff = angoff / 100; /* aceita percentual (62 vira 0,62) */
+  }
+  /* Angoff do painel de juízes (plataforma/js/angoff.js): substitui a dificuldade-alvo
+     provisória do item quando pelo menos MIN_JUIZES (10) juízes avaliaram o item na
+     rodada final. angoff_item guarda o do próprio item, usado na montagem dos
+     formulários fixos (que assim não mudam). angoff_painel_ep: erro-padrão da média
+     dos juízes no item (proporção), usado na incerteza do corte. */
+  const angoff_item = angoff;
+  const angPainel = Number(q.angoff_painel), juizesPainel = Number(q.angoff_painel_juizes);
+  const epPainel = Number(q.angoff_painel_ep);
+  if (q.angoff_painel !== undefined && q.angoff_painel !== null && Number.isFinite(angPainel) && angPainel > 0 && angPainel < 1 && juizesPainel >= MIN_JUIZES) {
+    angoff = angPainel;
+    angoff_origem = "painel";
   }
 
   let competencia = "";
@@ -460,6 +493,9 @@ export function normalizarItem(bruto) {
     dificuldade,
     angoff,
     angoff_origem,
+    angoff_item,
+    angoff_painel_juizes: angoff_origem === "painel" ? juizesPainel : 0,
+    angoff_painel_ep: angoff_origem === "painel" && q.angoff_painel_ep !== null && q.angoff_painel_ep !== undefined && Number.isFinite(epPainel) && epPainel > 0 ? epPainel : null,
     b_angoff: angoff > 0 && angoff < 1 ? -logit(angoff) : null,
     b_calibrado: q.b_calibrado !== undefined && q.b_calibrado !== null && Number.isFinite(b_cal) ? b_cal : null,
     ep_calibrado: Number.isFinite(Number(q.ep_calibrado)) && q.ep_calibrado !== null ? Number(q.ep_calibrado) : null,
@@ -471,6 +507,9 @@ export function normalizarItem(bruto) {
     valores_lab: Array.isArray(q.valores_lab) ? q.valores_lab.map(String) : [],
     tabela: q.tabela && typeof q.tabela === "object" ? q.tabela : null,
     revisao: q.revisao && typeof q.revisao === "object" ? { ...q.revisao } : { verificado: false, revisor: "", data: "", notas: "" },
+    revisao_tipo: tipoRevisao(q.revisao),
+    midia: normalizarMidia(q.midia),
+    inimigos: Array.isArray(q.inimigos) ? [...new Set(q.inimigos.map((x) => texto(x)).filter((x) => x && x !== id))] : [],
     /* marca de revisão da equipe (área administrativa; só o admin recebe) */
     em_revisao: q.em_revisao === true,
     revisao_nota: texto(q.revisao_nota),
@@ -479,23 +518,128 @@ export function normalizarItem(bruto) {
   };
 }
 
-/* Nomes da tabela de valores laboratoriais (simulado/data/valores-laboratoriais.json) */
+/* ---------- tabela de valores laboratoriais ----------
+   (simulado/data/valores-laboratoriais.json). Cada nome da tabela é único; o mesmo
+   analito em materiais diferentes leva o material no nome ("Calcium, serum" e
+   "Calcium, urine"; "Glucose, serum" e "Glucose, CSF"). Um nome citado no item casa com
+   a tabela pelo nome completo, pelo nome sem parênteses ou pelo nome sem o material
+   ("Potassium, serum" e "Potassium" casam com "Potassium (K⁺)"), sempre do mais
+   específico para o menos específico; quando o primeiro nível que encontra algo
+   encontra mais de um exame, o nome é ambíguo ("Calcium" sem material). */
+const MATERIAL_LAB = /,\s*(serum|plasma|blood|urine|whole blood|arterial|csf|cerebrospinal fluid|sweat)\s*$/i;
+const MATERIAL_DA_SECAO = { "soro-geral": "serum", eletrolitos: "serum", lipidios: "serum", endocrino: "serum", "ferro-vitaminas-imuno": "serum", gasometria: "arterial", hematologia: "blood", coagulacao: "plasma", liquor: "csf", urina: "urine" };
+function niveisLab(nome) {
+  const semParenteses = String(nome).replace(/\([^)]*\)/g, " ");
+  const semMaterial = semParenteses.replace(MATERIAL_LAB, "");
+  return [...new Set([normalizarChave(nome), normalizarChave(semParenteses), normalizarChave(semMaterial)].filter(Boolean))];
+}
+function variantesDaTabela(nome, secaoId) {
+  const v = niveisLab(nome);
+  const mat = MATERIAL_DA_SECAO[secaoId];
+  if (mat && !MATERIAL_LAB.test(String(nome).replace(/\([^)]*\)/g, " "))) v.push(normalizarChave(String(nome).replace(/\([^)]*\)/g, " ") + ", " + mat));
+  return [...new Set(v)];
+}
+const CACHE_LAB = new WeakMap();
+function indiceLab(tabela) {
+  if (tabela && CACHE_LAB.has(tabela)) return CACHE_LAB.get(tabela);
+  const m = new Map(); /* variante -> [{ item, secao }] */
+  for (const s of tabela?.secoes || []) for (const it of s.itens || []) {
+    if (!it?.nome) continue;
+    for (const v of variantesDaTabela(it.nome, s.id)) { if (!m.has(v)) m.set(v, []); m.get(v).push({ item: it, secao: s }); }
+  }
+  if (tabela && typeof tabela === "object") CACHE_LAB.set(tabela, m);
+  return m;
+}
+/* Set com as variantes que apontam para um único exame; .ambiguos traz as que
+   apontam para mais de um (usado por validarItem). */
 export function nomesLaboratoriais(tabela) {
   const out = new Set();
-  for (const s of tabela?.secoes || []) for (const it of s.itens || []) if (it?.nome) for (const v of variantesLab(it.nome)) out.add(v);
+  const ambiguos = new Set();
+  for (const [v, l] of indiceLab(tabela)) (l.length === 1 ? out : ambiguos).add(v);
+  out.ambiguos = ambiguos;
   return out;
 }
-/* "Potassium (K⁺)", "Potassium, serum" e "Potassium" contam como o mesmo nome */
-function variantesLab(nome) {
-  const semParenteses = String(nome).replace(/\([^)]*\)/g, " ");
-  const semMaterial = semParenteses.replace(/,\s*(serum|plasma|blood|urine|whole blood|arterial)\s*$/i, "");
-  return [...new Set([normalizarChave(nome), normalizarChave(semParenteses), normalizarChave(semMaterial)].filter(Boolean))];
+/* Exame da tabela citado por um nome: { item, secao, ambiguo, candidatos } */
+export function resolverLab(tabela, nome) {
+  const m = indiceLab(tabela);
+  for (const v of niveisLab(nome)) {
+    const l = m.get(v);
+    if (!l || !l.length) continue;
+    const unicos = [...new Map(l.map((x) => [x.item.nome, x])).values()];
+    if (unicos.length === 1) return { item: unicos[0].item, secao: unicos[0].secao, ambiguo: false, candidatos: [unicos[0].item.nome] };
+    return { item: unicos[0].item, secao: unicos[0].secao, ambiguo: true, candidatos: unicos.map((x) => x.item.nome) };
+  }
+  return { item: null, secao: null, ambiguo: false, candidatos: [] };
+}
+/* Situação de um nome citado diante do Set de nomesLaboratoriais: "ok", "ambiguo" ou "fora" */
+function situacaoLab(labs, nome) {
+  for (const v of niveisLab(nome)) {
+    if (labs.has(v)) return "ok";
+    if (labs.ambiguos?.has(v)) return "ambiguo";
+  }
+  return "fora";
+}
+
+/* Texto das alternativas para a conferência de repetição: mantém setas, sinais e
+   símbolos ("CD15+, CD30+" e "CD15−, CD30−" são alternativas diferentes; "↑ / ↔" e
+   "↓ / ↔" também), ignorando só caixa, espaços e acentos. */
+export function chaveAlternativa(t) {
+  return String(t ?? "").normalize("NFKC").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[\u2212\u2013\u2014]/g, "-").replace(/\s+/g, " ").replace(/\s*([,/;:])\s*/g, "$1").trim();
+}
+
+/* Tipo da revisão registrada no item: "medica" (verificado, com revisor humano e
+   data), "automatizada" (revisor é o próprio sistema, modelo de IA ou rotina) ou
+   "nenhuma". A palavra "independente" no nome do revisor não muda nada: o que conta é
+   quem revisou. */
+export function tipoRevisao(rev) {
+  const r = rev && typeof rev === "object" ? rev : {};
+  const quem = String(r.revisor || "");
+  if (REVISOR_AUTOMATIZADO.test(quem) || r.tipo === "automatizada") return "automatizada";
+  if (r.verificado === true && quem.trim() && String(r.data || "").trim()) return "medica";
+  return "nenhuma";
+}
+
+/* Revisão dos itens de uma lista (formulário, Step ou banco): quantos têm revisão
+   médica registrada (nome, data e decisão), quantos só a automatizada e quantos
+   nenhuma. aviso: frase única para as telas do aluno (tela de escolha dos simulados,
+   relatório e banco de questões), ou "" quando todos têm revisão médica. O aviso só
+   sai das telas quando todos os itens tiverem revisão médica; os índices da turma
+   (p, ponto-bisserial e infit dentro dos limites de LIMIARES_ITEM) continuam
+   conferidos na área administrativa (PSICOMETRIA.md, seção 11). */
+export function resumoRevisao(itens) {
+  const lista = (itens || []).filter(Boolean);
+  const c = { total: lista.length, medica: 0, automatizada: 0, nenhuma: 0 };
+  for (const q of lista) c[q.revisao_tipo || tipoRevisao(q.revisao)]++;
+  const sem = c.total - c.medica;
+  const aviso = !c.total || !sem ? ""
+    : (sem === c.total ? (c.total === 1 ? "Este item ainda não passou" : "Nenhum destes " + c.total + " itens passou ainda") : sem + " de " + c.total + " itens ainda não passaram") +
+      " por revisão de médico especialista com nome registrado" + (c.automatizada ? ": a revisão feita até agora é automatizada, por modelo de IA" : "") +
+      ". Erros de conteúdo são possíveis; se achar um, use o botão de reportar erro do item.";
+  return { ...c, sem_medica: sem, aviso };
+}
+
+/* Mídia do item: [{ tipo, src, alt, legenda, licenca, fonte, credito, transcricao }]
+   (transcricao para áudio e vídeo). Itens sem mídia devolvem lista vazia. */
+export function normalizarMidia(m) {
+  if (!Array.isArray(m)) return [];
+  return m.filter((x) => x && typeof x === "object").map((x) => ({
+    tipo: texto(x.tipo).toLowerCase(),
+    src: texto(x.src),
+    alt: texto(x.alt),
+    legenda: texto(x.legenda),
+    licenca: texto(x.licenca),
+    fonte: texto(x.fonte),
+    credito: texto(x.credito),
+    transcricao: texto(x.transcricao)
+  }));
 }
 
 /* ---------- validação ----------
    erros: o item não entra no banco. avisos: entra, mas aparece no relatório.
    labs: Set de nomes normalizados (nomesLaboratoriais), opcional. */
-export function validarItem(item, { labs = null } = {}) {
+/* exigirGabarito: false para o item que chega do servidor sem a parte privada
+   (questoes_publicas): sem gabarito e sem explicações não é erro nem aviso. */
+export function validarItem(item, { labs = null, exigirGabarito = true } = {}) {
   const q = item || {};
   const erros = [];
   const avisos = [];
@@ -509,9 +653,10 @@ export function validarItem(item, { labs = null } = {}) {
   const esperadas = alts.map((_, i) => String.fromCharCode(65 + i));
   if (letras.join("") !== esperadas.join("")) erros.push("As letras das alternativas precisam seguir A, B, C... sem repetição.");
   if (alts.some((a) => !a.texto)) erros.push("Há alternativa sem texto.");
-  const textos = alts.map((a) => normalizarChave(a.texto));
+  const textos = alts.map((a) => chaveAlternativa(a.texto));
   if (new Set(textos).size !== textos.length) erros.push("Há alternativas repetidas.");
-  if (!letras.includes(q.correta)) erros.push("A resposta correta não está entre as alternativas.");
+  const semGabarito = !exigirGabarito && !q.correta;
+  if (!semGabarito && !letras.includes(q.correta)) erros.push("A resposta correta não está entre as alternativas.");
   if (!DIFICULDADES.includes(q.dificuldade)) erros.push("Dificuldade inválida (use facil, media ou dificil).");
   if (!(q.angoff > 0 && q.angoff < 1)) erros.push("Angoff precisa ser uma probabilidade entre 0 e 1.");
   else if (q.angoff < 0.1 || q.angoff > 0.97) avisos.push("Angoff extremo (" + q.angoff + "); confira a estimativa.");
@@ -523,22 +668,35 @@ export function validarItem(item, { labs = null } = {}) {
   if (q.step === "step1" && !q.competencia) erros.push("Competência ausente (Step 1).");
   for (const dim of q.taxonomia_desconhecida || []) avisos.push("Chave de " + dim + " fora do outline: " + q[dim] + ".");
 
-  if (!q.explicacao) avisos.push("Explicação em inglês ausente.");
-  if (!q.explicacao_pt) avisos.push("Resumo em português ausente.");
-  if (!q.legado) {
+  if (!semGabarito && !q.explicacao) avisos.push("Explicação em inglês ausente.");
+  if (!semGabarito && !q.explicacao_pt) avisos.push("Resumo em português ausente.");
+  if (!q.legado && !semGabarito) {
     const faltam = letras.filter((l) => !texto(q.explicacoes_alternativas?.[l]));
     if (faltam.length) avisos.push("Sem explicação por alternativa em: " + faltam.join(", ") + ".");
     if (!q.objetivo_educacional) avisos.push("Objetivo educacional ausente.");
     if (!q.fonte) avisos.push("Fonte ausente.");
-    if (!q.revisao?.verificado) avisos.push("Item ainda não verificado pelo revisor.");
-    if (q.angoff_origem !== "item") avisos.push("Sem Angoff próprio; usado o padrão da dificuldade.");
+    if (q.revisao_tipo === "automatizada") avisos.push("Revisão só automatizada (modelo de IA); falta a revisão médica com nome, data e decisão.");
+    else if (q.revisao_tipo !== "medica") avisos.push("Item ainda sem revisão médica registrada (nome, data e decisão).");
+    if (q.angoff_origem === "padrao_dificuldade") avisos.push("Sem Angoff próprio; usado o padrão da dificuldade.");
+  }
+  for (const [i, m] of (q.midia || []).entries()) {
+    const k = "Mídia " + (i + 1) + ": ";
+    if (!TIPOS_MIDIA.includes(m.tipo)) erros.push(k + "tipo inválido (use imagem, audio ou video).");
+    if (!m.src) erros.push(k + "endereço do arquivo ausente.");
+    else if (/^(javascript|data:text)/i.test(m.src)) erros.push(k + "endereço não permitido.");
+    if (!m.alt) erros.push(k + "texto alternativo ausente (obrigatório para acessibilidade; descreve o que se vê, sem dar a resposta).");
+    if (!m.licenca) erros.push(k + "licença ausente.");
+    if (!m.fonte) erros.push(k + "fonte ou autoria ausente.");
   }
   if (TRAVESSAO.test(q.explicacao_pt || "")) avisos.push("Travessão ou meia-risca no resumo em português.");
   if (alts.some((a) => /\b(all|none) of the above\b/i.test(a.texto))) avisos.push("Alternativa do tipo 'all/none of the above' (regra do NBME).");
   if (/\b(EXCEPT|NOT|LEAST)\b/.test(q.pergunta || "")) avisos.push("Pergunta em forma negativa (regra do NBME).");
   if (labs && q.valores_lab?.length) {
-    const fora = q.valores_lab.filter((n) => !variantesLab(n).some((v) => labs.has(v)));
+    const sit = q.valores_lab.map((n) => [n, situacaoLab(labs, n)]);
+    const fora = sit.filter(([, x]) => x === "fora").map(([n]) => n);
+    const amb = sit.filter(([, x]) => x === "ambiguo").map(([n]) => n);
     if (fora.length) avisos.push("Valores laboratoriais fora da tabela: " + fora.join("; ") + ".");
+    if (amb.length) avisos.push("Nome laboratorial ambíguo (informe o material, por exemplo serum, urine ou CSF): " + amb.join("; ") + ".");
   }
   return { erros, avisos };
 }
@@ -560,7 +718,7 @@ export function validarItem(item, { labs = null } = {}) {
    } */
 export const ITENS_FORMULARIO_OFICIAL = Object.freeze({ step1: 280, step2ck: 318 });
 
-export function montarBanco(lista, { origem = "desconhecida", fontes = [], labs = null, incluirInativos = false } = {}) {
+export function montarBanco(lista, { origem = "desconhecida", fontes = [], labs = null, incluirInativos = false, formularios = null, exigirGabarito = true } = {}) {
   const porIdBruto = new Map();
   const duplicados = [];
   for (const b of Array.isArray(lista) ? lista : []) {
@@ -576,7 +734,7 @@ export function montarBanco(lista, { origem = "desconhecida", fontes = [], labs 
   const invalidos = [];
   const avisos = [];
   for (const q of porIdBruto.values()) {
-    const v = validarItem(q, { labs });
+    const v = validarItem(q, { labs, exigirGabarito });
     if (v.erros.length) { invalidos.push({ id: q.id || "(sem id)", erros: v.erros }); continue; }
     if (v.avisos.length) avisos.push({ id: q.id, avisos: v.avisos });
     if (!incluirInativos && q.status !== "ativo") continue;
@@ -601,7 +759,9 @@ export function montarBanco(lista, { origem = "desconhecida", fontes = [], labs 
     reduzido: { step1: steps.step1.length < ITENS_FORMULARIO_OFICIAL.step1, step2ck: steps.step2ck.length < ITENS_FORMULARIO_OFICIAL.step2ck },
     assinatura: assinaturaBanco(itens),
     origem,
-    fontes
+    fontes,
+    /* formulários fixos gravados (formularios.js, normalizarFormulariosGravados) */
+    formularios_fixos: formularios || null
   };
 }
 
@@ -650,6 +810,61 @@ export function enriquecerComBlueprint(itens, blueprints) {
   return { itens: out, divergencias, especificacoes: specs.size };
 }
 
+/* Formulários fixos gravados (banco-privado/formularios.json no modo local; tabela
+   formularios_fixos no Supabase), lidos com o banco: { step: { codigo: { blocos, parcial,
+   nome } } }. Aceita o formato do formularios.json ({ step1: { A: { codigo, blocos_itens } } })
+   e linhas da tabela ([{ step, codigo, blocos, parcial, nome }]). */
+export function normalizarFormulariosGravados(dados) {
+  const out = { step1: {}, step2ck: {} };
+  const add = (step, r) => {
+    if (!out[step] || !r || !r.codigo || !Array.isArray(r.blocos) || !r.blocos.length) return;
+    if (!r.blocos.every((b) => Array.isArray(b) && b.length && b.length <= 20 && b.every((id) => typeof id === "string"))) return;
+    out[step][r.codigo] = { codigo: r.codigo, blocos: r.blocos.map((b) => b.slice()), parcial: !!r.parcial, nome: String(r.nome || ""), tipo: r.tipo || "completo", ...(typeof r.reservado === "boolean" ? { reservado: r.reservado } : {}) };
+  };
+  if (Array.isArray(dados)) for (const r of dados) add(r?.step, r);
+  else if (dados && typeof dados === "object") for (const step of ["step1", "step2ck"]) for (const r of Object.values(dados[step] || {})) add(step, { ...r, blocos: Array.isArray(r.blocos) ? r.blocos : r.blocos_itens });
+  return out;
+}
+
+/* ---------- gabarito no servidor ----------
+   Campos que o aluno só recebe depois de responder (no Supabase, a tabela
+   questoes_publicas não os traz; vêm por r2a_responder, r2a_revelar e
+   r2a_corrigir_simulado). A mesma lista está em r2a_campos_privados() no schema. */
+export const CAMPOS_PRIVADOS = Object.freeze(["correta", "explicacao", "explicacoes_alternativas", "explicacao_pt", "objetivo_educacional", "conceito_testado", "topico", "fonte", "tags", "revisao"]);
+export function partePrivada(item) {
+  const out = {};
+  for (const k of CAMPOS_PRIVADOS) if (item && item[k] !== undefined) out[k] = structuredClone(item[k]);
+  return out;
+}
+export function partePublica(item) {
+  const out = { ...(item || {}) };
+  for (const k of CAMPOS_PRIVADOS) delete out[k];
+  return out;
+}
+/* O item já tem o gabarito em memória? */
+export const temGabarito = (q) => !!q && typeof q.correta === "string" && /^[A-J]$/.test(q.correta);
+/* Junta a parte privada revelada ({ id: privado }) aos itens do banco em memória,
+   normalizando como normalizarItem. Devolve quantos itens mudaram. */
+export function mesclarRevelados(banco, revelados) {
+  let n = 0;
+  for (const [id, priv] of Object.entries(revelados || {})) {
+    const q = banco?.porId?.get(id);
+    if (!q || !priv) continue;
+    const norm = normalizarItem({ ...q, ...priv, id, step: q.step });
+    for (const k of CAMPOS_PRIVADOS) if (priv[k] !== undefined) q[k] = norm[k];
+    n++;
+  }
+  return n;
+}
+/* Garante o gabarito dos ids no banco em memória: no modo do servidor, pede ao
+   store os que faltam (só os já respondidos voltam) */
+export async function garantirGabarito(store, banco, ids) {
+  if (!store?.gabaritoNoServidor || typeof store.revelarItens !== "function") return 0;
+  const falta = [...new Set(ids || [])].filter((id) => banco?.porId?.has(id) && !temGabarito(banco.porId.get(id)));
+  if (!falta.length) return 0;
+  return mesclarRevelados(banco, await store.revelarItens(falta));
+}
+
 /* ---------- leitura no modo demonstração ----------
    base: URL da raiz do site (padrão: dois níveis acima deste arquivo).
    Lê os itens públicos e, com privado (padrão: bancoCompletoPedido()), também
@@ -657,7 +872,8 @@ export function enriquecerComBlueprint(itens, blueprints) {
      { "versao": "2026-10-29", "arquivos": ["step1/lote-01.json", ...],
        "blueprints": ["blueprint-step1.json", "blueprint-step2ck.json"] }
    (blueprints é opcional; quando vem, os itens são completados por
-   enriquecerComBlueprint).
+   enriquecerComBlueprint; "formularios": "formularios.json", também opcional, traz os
+   formulários fixos gravados, usados por montarFormularioFixo).
    Cada arquivo é um array de itens (ou { "itens": [...] }).
    Devolve { itens, fontes: [{ arquivo, n, ok, erro }], privado: bool }. */
 /* O banco completo só é procurado em desenvolvimento, quando pedido: página servida
@@ -714,13 +930,19 @@ export async function lerBancoDemo({ base = null, fetch: f = globalThis.fetch, p
         try { bps.push(await lerJson("banco-privado/" + rel)); fontes.push({ arquivo: "banco-privado/" + rel, n: 0, ok: true, erro: "" }); }
         catch (e) { fontes.push({ arquivo: "banco-privado/" + rel, n: 0, ok: false, erro: String(e.message || e) }); }
       }
+      let formularios = null;
+      if (seguro(manifesto.formularios)) {
+        try { formularios = await lerJson("banco-privado/" + manifesto.formularios); fontes.push({ arquivo: "banco-privado/" + manifesto.formularios, n: 0, ok: true, erro: "" }); }
+        catch (e) { fontes.push({ arquivo: "banco-privado/" + manifesto.formularios, n: 0, ok: false, erro: String(e.message || e) }); }
+      }
       if (bps.length) {
         const r = enriquecerComBlueprint(itens, bps);
-        return { itens: r.itens, fontes, privado: true, divergencias: r.divergencias };
+        return { itens: r.itens, fontes, privado: true, divergencias: r.divergencias, formularios };
       }
+      return { itens, fontes, privado: true, divergencias: [], formularios };
     }
   }
-  return { itens, fontes, privado: temPrivado, divergencias: [] };
+  return { itens, fontes, privado: temPrivado, divergencias: [], formularios: null };
 }
 
 /* ---------- carregamento pela camada de dados ----------
@@ -732,5 +954,5 @@ export async function carregarBanco({ store, step = null, labsTabela = null, inc
   const lista = await store.listQuestoes({ step, incluirInativas: incluirInativos });
   const meta = store.ultimaLeituraQuestoes || {};
   const origem = store.mode === "supabase" ? "supabase" : meta.privado ? "demonstracao_completa" : "demonstracao";
-  return montarBanco(lista, { origem, fontes: meta.fontes || [], labs: labsTabela ? nomesLaboratoriais(labsTabela) : null, incluirInativos });
+  return montarBanco(lista, { origem, fontes: meta.fontes || [], labs: labsTabela ? nomesLaboratoriais(labsTabela) : null, incluirInativos, formularios: meta.formularios ? normalizarFormulariosGravados(meta.formularios) : null, exigirGabarito: !store.gabaritoNoServidor });
 }

@@ -26,6 +26,9 @@
                               que o modo demonstração lê no servidor local
      --ignorar-invalidos      termina com código 0 mesmo com itens inválidos (eles nunca
                               são enviados)
+     --sem-formularios        não envia <dir>/formularios.json (por padrão, quando o arquivo
+                              existe, os formulários fixos vão para a tabela formularios_fixos,
+                              e a plataforma abre exatamente a composição e a ordem gravadas)
      --sem-blueprint          não completa os itens com banco-privado/blueprint-*.json (por
                               padrão, o que o item não repete da especificação de mesmo spec_id,
                               como disciplinas secundárias e disciplinas clínicas oficiais, vem
@@ -34,16 +37,16 @@
 import { readFile, readdir, writeFile, stat } from "node:fs/promises";
 import { join, relative, resolve, dirname, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { normalizarItem, validarItem, nomesLaboratoriais, contarPor, enriquecerComBlueprint, STATUS_QUESTAO } from "../plataforma/js/banco.js";
+import { normalizarItem, validarItem, nomesLaboratoriais, contarPor, enriquecerComBlueprint, STATUS_QUESTAO, normalizarFormulariosGravados } from "../plataforma/js/banco.js";
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const IGNORAR = /^(manifest|referencia-.*|blueprint-.*|.*\.relatorio)\.json$/i;
+const IGNORAR = /^(manifest|formularios|referencia-.*|blueprint-.*|.*\.relatorio)\.json$/i;
 /* pastas de apoio dos autores (geradores, versões antigas do blueprint, fontes) */
 const PASTAS_IGNORADAS = /^(ferramentas|versoes|fontes-.*|node_modules|\..*)$/i;
-const DERIVADOS = ["b_angoff", "angoff_origem", "legado", "taxonomia_desconhecida", "b_calibrado", "ep_calibrado", "n_calibracao", "calibrado_em", "status"];
+const DERIVADOS = ["b_angoff", "angoff_origem", "legado", "taxonomia_desconhecida", "b_calibrado", "ep_calibrado", "n_calibracao", "calibrado_em", "status", "angoff_item", "angoff_painel", "angoff_painel_juizes", "angoff_painel_ep", "revisao_tipo"];
 
 export function lerArgs(argv) {
-  const o = { dir: "banco-privado", dryRun: false, status: null, incluirPublicos: false, lote: 200, relatorio: null, manifest: null, ignorarInvalidos: false, blueprint: true };
+  const o = { dir: "banco-privado", dryRun: false, status: null, incluirPublicos: false, lote: 200, relatorio: null, manifest: null, ignorarInvalidos: false, blueprint: true, formularios: true };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     const prox = () => { const v = argv[++i]; if (v === undefined || v.startsWith("--")) throw new Error("Falta o valor de " + a + "."); return v; };
@@ -56,6 +59,7 @@ export function lerArgs(argv) {
     else if (a === "--gerar-manifest") { const v = argv[i + 1]; o.manifest = v && !v.startsWith("--") ? (i++, v) : true; }
     else if (a === "--ignorar-invalidos") o.ignorarInvalidos = true;
     else if (a === "--sem-blueprint") o.blueprint = false;
+    else if (a === "--sem-formularios") o.formularios = false;
     else if (/key|token|senha|secret/i.test(a)) throw new Error("Credenciais só por variável de ambiente (SUPABASE_SERVICE_ROLE_KEY).");
     else throw new Error("Opção desconhecida: " + a + ".");
   }
@@ -78,7 +82,9 @@ async function listarJson(dir) {
 export function itemParaDados(n) {
   const d = { ...n };
   for (const k of DERIVADOS) delete d[k];
-  if (n.angoff_origem !== "item") delete d.angoff;
+  /* o Angoff do painel fica nas colunas angoff_painel*; em dados vai o do item */
+  if (n.angoff_origem === "painel") d.angoff = n.angoff_item;
+  else if (n.angoff_origem !== "item") delete d.angoff;
   if (n.step === "step2ck") delete d.disciplina;
   if (n.step === "step1") { delete d.area; delete d.tarefa; }
   return d;
@@ -141,6 +147,20 @@ export async function prepararImportacao(o, { raiz = RAIZ } = {}) {
   return { relatorio: rel, linhas, arquivosDeItens, arquivosBlueprint, dir };
 }
 
+/* Linhas da tabela formularios_fixos a partir de formularios.json (sem gabarito) */
+export function linhasFormularios(dados, gerado_em = null) {
+  const n = normalizarFormulariosGravados(dados);
+  const out = [];
+  for (const step of ["step1", "step2ck"]) for (const f of Object.values(n[step])) out.push({ step, codigo: f.codigo, tipo: f.tipo || "completo", nome: f.nome || "", parcial: !!f.parcial, ...(typeof f.reservado === "boolean" ? { reservado: f.reservado } : {}), blocos: f.blocos, gerado_em });
+  return out;
+}
+export async function enviarFormularios(linhas, { url, chave, fetch: f = globalThis.fetch }) {
+  const base = String(url).replace(/\/+$/, "");
+  const r = await f(base + "/rest/v1/formularios_fixos?on_conflict=step,codigo,tipo", { method: "POST", headers: { apikey: chave, Authorization: "Bearer " + chave, "Content-Type": "application/json", Prefer: "resolution=merge-duplicates,return=minimal" }, body: JSON.stringify(linhas) });
+  if (!r.ok) { let c = ""; try { c = (await r.text()).slice(0, 500); } catch { c = ""; } throw new Error("Falha no envio dos formulários fixos (HTTP " + r.status + "): " + c.replaceAll(chave, "***")); }
+  return linhas.length;
+}
+
 export async function enviar(linhas, { url, chave, lote = 200, fetch: f = globalThis.fetch, log = () => {} }) {
   const base = String(url).replace(/\/+$/, "");
   if (!/^https?:\/\//.test(base)) throw new Error("SUPABASE_URL inválida.");
@@ -182,8 +202,16 @@ export async function executar(argv, { env = process.env, fetch: f = globalThis.
   if (rel.invalidos.length > 50) log("  ... e mais " + (rel.invalidos.length - 50) + ".");
   if (o.manifest) {
     const destino = o.manifest === true ? join(dir, "manifest.json") : resolve(raiz, o.manifest);
-    await writeFile(destino, JSON.stringify({ versao: new Date().toISOString().slice(0, 10), arquivos: arquivosDeItens, blueprints: arquivosBlueprint }, null, 2) + "\n");
+    const temFormularios = await stat(join(dir, "formularios.json")).then(() => true, () => false);
+    await writeFile(destino, JSON.stringify({ versao: new Date().toISOString().slice(0, 10), arquivos: arquivosDeItens, blueprints: arquivosBlueprint, ...(temFormularios ? { formularios: "formularios.json" } : {}) }, null, 2) + "\n");
     log("Manifesto gravado em " + relative(raiz, destino) + " (" + arquivosDeItens.length + " arquivos).");
+  }
+  /* formulários fixos gravados (banco-privado/formularios.json) */
+  let forms = [];
+  if (o.formularios) {
+    try { const d = JSON.parse(await readFile(join(dir, "formularios.json"), "utf8")); forms = linhasFormularios(d, d.gerado_em || null); } catch { forms = []; }
+    if (forms.length) log("Formulários fixos: " + forms.map((x) => x.codigo + " (" + x.blocos.flat().length + " itens" + (x.parcial ? ", parcial" : "") + ")").join(", ") + ".");
+    rel.formularios = forms.map((x) => ({ step: x.step, codigo: x.codigo, itens: x.blocos.flat().length, parcial: x.parcial }));
   }
   let codigo = rel.invalidos.length && !o.ignorarInvalidos ? 1 : 0;
   if (o.dryRun) {
@@ -192,7 +220,11 @@ export async function executar(argv, { env = process.env, fetch: f = globalThis.
   } else {
     const url = env.SUPABASE_URL, chave = env.SUPABASE_SERVICE_ROLE_KEY;
     if (!url || !chave) { log("Erro: defina SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY no ambiente (ou use --dry-run)."); return 2; }
-    try { rel.envio = await enviar(linhas, { url, chave, lote: o.lote, fetch: f, log }); log("Contagem no banco: " + JSON.stringify(rel.envio.contagem_no_banco) + "."); }
+    try {
+      rel.envio = await enviar(linhas, { url, chave, lote: o.lote, fetch: f, log });
+      log("Contagem no banco: " + JSON.stringify(rel.envio.contagem_no_banco) + ".");
+      if (forms.length) { rel.envio.formularios = await enviarFormularios(forms, { url, chave, fetch: f }); log("Formulários fixos enviados: " + forms.map((x) => x.codigo).join(", ") + "."); }
+    }
     catch (e) { rel.envio = { erro: e.message }; log("Erro: " + e.message); codigo = 1; }
   }
   if (o.relatorio) { await writeFile(resolve(raiz, o.relatorio), JSON.stringify(rel, null, 2) + "\n"); log("Relatório gravado em " + o.relatorio + "."); }

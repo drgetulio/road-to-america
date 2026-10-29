@@ -31,15 +31,20 @@ Formato de cada questão do banco Road to America (Step 1 e Step 2 CK). Os 80 it
   "fonte": "Referência-padrão ou diretriz com ano.",
   "valores_lab": ["Potassium, serum"],
   "tabela": { "titulo": "Laboratory studies", "linhas": [["Hemoglobin", "9.1 g/dL"]] },
-  "revisao": { "verificado": true, "revisor": "", "data": "2026-10-29", "notas": "" }
+  "midia": [{ "tipo": "imagem", "src": "midia/R2A-S1-0001-ecg.png", "alt": "Traçado de ECG de 12 derivações em ritmo sinusal", "legenda": "Electrocardiogram", "licenca": "CC BY 4.0", "fonte": "Acervo próprio da Road to America", "credito": "", "transcricao": "" }],
+  "inimigos": ["R2A-S1-0181"],
+  "revisao": { "verificado": false, "tipo": "automatizada", "revisor": "revisão automatizada (modelo de IA)", "data": "2026-10-29", "decisao": "", "notas": "" }
 }
 ```
 
 Regras:
 
 - Step 1 usa `sistema` e `disciplina`; Step 2 CK usa `area`, `tarefa` e `sistema`.
-- `angoff`: probabilidade, de 0 a 1, de um examinando no limiar de aprovação acertar o item. Quando ausente, o carregador usa 0,80 (fácil), 0,65 (média) ou 0,45 (difícil).
+- `angoff`: **dificuldade-alvo** do item, de 0 a 1: a probabilidade de o examinando no limiar acertá-lo, fixada pelos autores na especificação do blueprint, com pequeno ajuste depois da redação. O nome do campo continua `angoff` por compatibilidade, mas o valor **não é** o julgamento de um painel de juízes e as telas dizem "dificuldade-alvo" e "padrão provisório". O Angoff de fato vem do painel (`plataforma/js/angoff.js`): com pelo menos 10 juízes no item e erro-padrão do corte abaixo de 0,02, o valor publicado vai para as colunas `angoff_painel`, `angoff_painel_juizes` e `angoff_painel_ep` e substitui a dificuldade-alvo na estimativa (`angoff_origem: "painel"`). Quando `angoff` falta, o carregador usa 0,80 (fácil), 0,65 (média) ou 0,45 (difícil).
 - `alternativas`: de 5 a 8, homogêneas, com uma única melhor resposta.
-- `valores_lab`: nomes que existem em `simulado/data/valores-laboratoriais.json`. Valores fora da tabela oficial vêm na própria vinheta com a faixa de referência.
+- `valores_lab`: nomes que existem em `simulado/data/valores-laboratoriais.json`. Cada nome é único na tabela; exame que existe em mais de um material leva o material no nome (`Glucose, serum` e `Glucose, CSF`; `Calcium, urine`; `Proteins, total, CSF`). Os nomes antigos sem material ainda resolvem, com aviso quando são ambíguos. Valores fora da tabela oficial vêm na própria vinheta com a faixa de referência.
 - `tabela`: opcional, para painéis laboratoriais exibidos como tabela.
+- `midia`: opcional, lista de imagens, áudios ou vídeos que a prova mostraria (ECG, radiografia, TC, fotomicrografia, peça macroscópica, lesão de pele, esfregaço, Gram, ausculta). Cada elemento tem `tipo` (`imagem`, `audio` ou `video`), `src` (caminho relativo ou https), `alt` (obrigatório: descreve o que se vê sem dar o diagnóstico nem o achado interpretado), `licenca` e `fonte` (obrigatórios), e opcionalmente `legenda` (em inglês), `credito` e `transcricao` (áudio e vídeo). A vinheta não repete em texto o que a imagem mostra. A tela do bloco mostra a imagem com ampliação (1x a 3x) e ajuste de contraste; o relatório, a revisão e a ficha do item da equipe também. Item com mídia sem `alt`, `licenca` ou `fonte`, ou com endereço `javascript:`, não entra no banco.
+- `inimigos`: opcional, identificadores de itens que não podem sair no mesmo bloco ou formulário personalizado que este (mesma vinheta, ou um item entrega a resposta do outro, como R2A-S1-0143 e R2A-S1-0181). O sorteio do banco troca o segundo item do par.
+- `revisao`: proveniência da revisão. `tipo: "automatizada"` (ou revisor com "IA", "modelo", "Claude" e afins) é revisão feita pelo próprio sistema que escreveu o item: não conta como revisão médica, mesmo com `verificado: true`, e não se chama "independente". Revisão médica exige `verificado: true`, `revisor` com o nome do médico, `data` e, de preferência, `decisao` (aprovado, aprovado com ajustes, reprovado). O carregador deriva `revisao_tipo` (`medica`, `automatizada` ou `nenhuma`) e o relatório de validação avisa o que falta.
 - O banco completo não fica no repositório público. Ele é importado para o Supabase (tabela `questoes`, leitura só para alunos autenticados) com a ferramenta de importação; no modo demonstração o app usa apenas os itens públicos de `simulado/data/`.

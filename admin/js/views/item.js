@@ -2,6 +2,7 @@
    Enunciado com o gabarito, índices, distratores por quartil de habilidade,
    reportes dos alunos, ações da equipe (marcar para revisão, retirar do banco,
    corrigir o gabarito com registro de versão) e histórico de versões. */
+import { htmlMidiaItem } from "../../../plataforma/js/midia.js";
 import { $, e, icon, toast, confirmar, num } from "../../../anki/js/ui.js";
 import { nomeChave } from "../../../plataforma/js/banco.js";
 import { MOTIVOS_REPORTE, STATUS_REPORTE } from "../../../plataforma/js/registros.js";
@@ -51,8 +52,8 @@ export default {
             "<div><dt>Sistema</dt><dd>" + e(nomeChave(step, "sistema", q.sistema) || "sem sistema") + "</dd></div>" +
             "<div><dt>" + (step === "step1" ? "Disciplinas" : "Disciplinas clínicas") + "</dt><dd>" + e(disc.filter(Boolean).map(nomeDisc).join(", ") || "sem disciplina") + "</dd></div>" +
             "<div><dt>" + (step === "step1" ? "Competência" : "Tarefa do médico") + "</dt><dd>" + e(nomeChave(step, "competencia", q.competencia) || "sem competência") + "</dd></div>" +
-            "<div><dt>Angoff</dt><dd>" + numTxt(q.angoff, 2) + " <small>" + (q.angoff_origem === "item" ? "do autor do item" : "padrão da dificuldade " + e(({ facil: "fácil", media: "média", dificil: "difícil" })[q.dificuldade] || q.dificuldade || "média")) + "</small></dd></div>" +
-            "<div><dt>b em uso</dt><dd>" + (Number.isFinite(q.b_calibrado) ? numTxt(q.b_calibrado, 2) + " <small>calibrado com " + plural(q.n_calibracao, "resposta", "respostas") + (Number.isFinite(q.ep_calibrado) ? ", EP " + numTxt(q.ep_calibrado, 2) : "") + "; Angoff " + numTxt(q.b_angoff, 2) + "</small>" : numTxt(q.b_angoff, 2) + " <small>de Angoff, ainda sem calibração</small>") + "</dd></div>" +
+            "<div><dt>Dificuldade-alvo</dt><dd>" + numTxt(q.angoff, 2) + " <small>" + (q.angoff_origem === "painel" ? "Angoff do painel de juízes" : q.angoff_origem === "item" ? "fixada pelos autores na especificação; não é julgamento de juízes" : "padrão da dificuldade " + e(({ facil: "fácil", media: "média", dificil: "difícil" })[q.dificuldade] || q.dificuldade || "média")) + "</small></dd></div>" +
+            "<div><dt>b em uso</dt><dd>" + (Number.isFinite(q.b_calibrado) ? numTxt(q.b_calibrado, 2) + " <small>calibrado com " + plural(q.n_calibracao, "resposta", "respostas") + (Number.isFinite(q.ep_calibrado) ? ", EP " + numTxt(q.ep_calibrado, 2) : "") + "; alvo " + numTxt(q.b_angoff, 2) + "</small>" : numTxt(q.b_angoff, 2) + " <small>da dificuldade-alvo, ainda sem calibração</small>") + "</dd></div>" +
           "</dl>" +
         "</div>" +
         '<div class="boarding__stub ficha__stub" role="img" aria-label="' + e("Gabarito em vigor: alternativa " + q.correta) + '"><span aria-hidden="true">Gabarito</span><b aria-hidden="true">' + e(q.correta) + '</b><span aria-hidden="true">v' + q.versao + "</span></div>" +
@@ -66,6 +67,7 @@ export default {
           (q.topico || q.conceito_testado ? '<p class="hint">' + e([q.topico, q.conceito_testado].filter(Boolean).join(": ")) + "</p>" : "") + "</div>" +
           '<div class="enu" lang="en"><p class="enu__vin">' + e(q.vinheta) + "</p>" +
             (q.tabela?.linhas?.length ? '<table class="mini-tab enu__tab"><caption>' + e(q.tabela.titulo || "Laboratory studies") + "</caption><tbody>" + q.tabela.linhas.map((l) => "<tr>" + l.map((c) => "<td>" + e(c) + "</td>").join("") + "</tr>").join("") + "</tbody></table>" : "") +
+            htmlMidiaItem(q.midia) +
             '<p class="enu__perg"><b>' + e(q.pergunta) + "</b></p>" +
             '<ol class="enu__alts">' + q.alternativas.map((a) => '<li class="enu__alt' + (a.letra === q.correta ? " is-correta" : "") + '"><span class="enu__l">' + e(a.letra) + "</span><span>" + e(a.texto) + (a.letra === q.correta ? ' <span class="gar gar--ok" lang="pt-BR">gabarito</span>' : "") + "</span></li>").join("") + "</ol>" +
           "</div>" +
@@ -150,7 +152,7 @@ export default {
       ev.preventDefault();
       const status = ev.target.elements.status.value;
       if (status === q.status) { toast("A situação escolhida já é a atual.", "info"); return; }
-      if (status !== "ativo" && !(await confirmar("Retirar o item do banco?", "O item sai dos blocos do banco, dos simulados montados daqui em diante e da estimativa de aprovação dos alunos. As respostas continuam guardadas e o item pode voltar depois.", "Retirar do banco", true))) return;
+      if (status !== "ativo" && !(await confirmar("Retirar o item do banco?", "O item sai dos blocos do banco, dos simulados montados daqui em diante e da estimativa dos alunos. As respostas continuam guardadas e o item pode voltar depois.", "Retirar do banco", true))) return;
       try {
         await ctx.store.setStatusQuestao(id, status, { motivo: ev.target.elements.motivo.value });
         await recarregar(status === "ativo" ? "Item de volta ao banco." : "Item retirado do banco.");

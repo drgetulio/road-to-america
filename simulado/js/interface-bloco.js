@@ -57,6 +57,9 @@ export function htmlTabelaItem(tab, { id = "" } = {}) {
     }).join("") + "</tbody></table></div>";
 }
 
+export { htmlMidiaItem } from "../../plataforma/js/midia.js";
+import { htmlMidiaItem } from "../../plataforma/js/midia.js";
+
 export function montarBloco(el, cfg) {
   const { questoes, estado: E, acoes: A } = cfg;
   const n = questoes.length;
@@ -222,7 +225,7 @@ export function montarBloco(el, cfg) {
         '<div class="pquestao__cab"><h2 tabindex="-1" data-titulo-q>Questão ' + (i + 1) + " de " + n + "</h2>" +
         (E.marcada(i) ? '<span class="chip chip--erro">' + icon("flag") + "Marcada</span>" : "") + "</div>" +
         '<p class="texto-q" lang="en" data-realce="vinheta">' + htmlRealce(q.vinheta, rl.vinheta) + "</p>" +
-        htmlTabelaItem(q.tabela) +
+        htmlTabelaItem(q.tabela) + htmlMidiaItem(q.midia) +
         '<p class="texto-q texto-q--pergunta" lang="en" data-realce="pergunta" id="perg-' + i + '">' + htmlRealce(q.pergunta, rl.pergunta) + "</p>" +
         '<fieldset class="alts" aria-describedby="perg-' + i + '"><legend>Alternativas</legend>' +
           q.alternativas.map((a) => {

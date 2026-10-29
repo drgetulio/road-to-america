@@ -284,3 +284,62 @@ test("camada de dados (demonstração): cria, grava o progresso com o estado da 
   assert.equal(lido.sessao.notas[form.blocos[0][0]], "nota");
   assert.equal(lido.bloco_atual, 1);
 });
+
+test("condições oficiais: sem parar, o dia nunca para sozinho e a pausa além do saldo vira débito integral; só assim é padronizado", async () => {
+  const { condicoesPadronizadas, emCondicoesOficiais } = await import("../js/dia-prova.js");
+  let s = criarDia(formS1, { condicoes: "oficiais" });
+  assert.equal(emCondicoesOficiais(s), true);
+  s = comecarBloco(s, formS1, T0);
+  s = fecharBloco(s, T0 + 10 * MIN);
+  assert.equal(podeSuspender(s), false);
+  assert.throws(() => suspender(s, T0 + 11 * MIN), /condições oficiais/);
+  /* página fechada por 3 horas na pausa: nada para, o excesso vira débito */
+  const volta = sincronizar(s, T0 + 10 * MIN + 3 * 60 * MIN);
+  assert.equal(volta.suspendeu, false);
+  const r = relogioDoDia(volta.sessao, formS1, T0 + 10 * MIN + 3 * 60 * MIN);
+  assert.ok(r.pausa_excedente_ms > 60 * MIN, "o tempo além do saldo é cobrado dos blocos seguintes");
+  assert.equal(condicoesPadronizadas(volta.sessao), true);
+  assert.equal(resumoDoDia(volta.sessao, formS1).padronizadas, true);
+  /* bloco esquecido aberto: fecha pelo tempo, sem parar o dia */
+  let b = comecarBloco(criarDia(formS1, { condicoes: "oficiais" }), formS1, T0);
+  const sb = sincronizar(b, T0 + 2 * 60 * MIN);
+  assert.equal(sb.fechou, true);
+  assert.equal(sb.suspendeu, false);
+  /* estudo: pode parar, e o dia deixa de ser padronizado */
+  let e = criarDia(formS1, { condicoes: "estudo" });
+  e = fecharBloco(comecarBloco(e, formS1, T0), T0 + 5 * MIN);
+  e = retomar(suspender(e, T0 + 6 * MIN), T0 + 60 * MIN);
+  assert.equal(condicoesPadronizadas(e), false);
+  assert.equal(criarDia(formS1).condicoes, "estudo", "sem escolha, estudo (compatível com os dias já gravados)");
+  /* as condições não mudam depois de escolhidas */
+  assert.match(validarProgresso(s, { ...s, condicoes: "estudo" }).join(" "), /condições do dia/);
+});
+
+test("formulário parcial (CK-B): pausa proporcional aos blocos; reserva do formulário completo e itens já vistos", async () => {
+  const { pausaProporcional, itensReservados, vistosNoFormulario, LIMITE_JA_VISTOS, FORMULARIOS_FIXOS } = await import("../../plataforma/js/formularios.js");
+  assert.equal(pausaProporcional(55 * MIN, 11, 16), 38 * MIN);
+  assert.equal(pausaProporcional(55 * MIN, 16, 16), 55 * MIN);
+  const bancoCK = montarBanco(gerarBancoSintetico({ porStep: 520, semente: 7 }), { origem: "teste" });
+  const b = montarFormularioFixo(bancoCK, "step2ck", "CK-B", "completo");
+  assert.equal(b.parcial, true);
+  assert.equal(b.tempo.pausa_ms, pausaProporcional(55 * MIN, b.blocos.length, 16));
+  assert.equal(b.tempo.pausa_proporcional, true);
+  assert.equal(b.tempo.dia_ms, b.blocos.length * 30 * MIN + b.tempo.pausa_ms + 5 * MIN);
+  /* um formulário completo reservado por Step; liberado quando o aluno o conclui */
+  assert.deepEqual(FORMULARIOS_FIXOS.step1.filter((f) => f.reservado).map((f) => f.codigo), ["S1-B"]);
+  assert.deepEqual(FORMULARIOS_FIXOS.step2ck.filter((f) => f.reservado).map((f) => f.codigo), ["CK-A"]);
+  const r0 = itensReservados(banco, []);
+  const s1b = montarFormularioFixo(banco, "step1", "S1-B", "completo").blocos.flat();
+  assert.ok(s1b.every((id) => r0.ids.has(id)));
+  assert.ok(formS1.blocos.flat().every((id) => !r0.ids.has(id)), "o S1-A fica no banco de prática");
+  const feito = itensReservados(banco, [{ step: "step1", estado: "concluido", formulario: { codigo: "S1-B" } }]);
+  assert.ok(s1b.every((id) => !feito.ids.has(id)));
+  /* banco reduzido (demonstração): nenhuma reserva, para não esvaziar a prática */
+  const pequeno = montarBanco(publicos, { origem: "demonstracao" });
+  assert.equal(itensReservados(pequeno, []).ids.size, 0);
+  /* itens vistos: acima de 25% é reaplicação */
+  const ids = formS1.blocos.flat();
+  const v = vistosNoFormulario(formS1, ids.slice(0, 100).map((id) => ({ questao_id: id })));
+  assert.equal(v.n, 100);
+  assert.equal(v.reaplicacao, 100 / ids.length > LIMITE_JA_VISTOS);
+});

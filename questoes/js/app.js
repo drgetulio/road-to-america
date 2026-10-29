@@ -15,8 +15,9 @@ import { LocalStore } from "../../anki/js/store-local.js";
 import { SupabaseStore } from "../../anki/js/store-supabase.js";
 import { isAdmin } from "../../anki/js/permissions.js";
 import { itensMenu } from "../../anki/js/menu.js";
-import { $, $$, e, icon, toast } from "../../anki/js/ui.js";
+import { $, $$, e, icon, toast, limparToasts } from "../../anki/js/ui.js";
 import { carregarBanco } from "../../plataforma/js/banco.js";
+import { itensReservados } from "../../plataforma/js/formularios.js";
 import { historicoItens, paraRespostasBanco } from "../../plataforma/js/banco-aluno.js";
 import { restaurarSessao, expirou, encerrar } from "../../simulado/js/sessao.js";
 import { lerAndamento, apagarAndamento, guardarPendentes, lerPendentes, trocarPendentes, lerPrefs, gravarPrefs } from "./local.js";
@@ -52,6 +53,17 @@ const ctx = {
   },
   async recarregarBanco() {
     this.banco = await carregarBanco({ store: this.store });
+    await this.recalcularReservados();
+  },
+  /* itens dos formulários reservados que o aluno ainda não fez ficam fora do sorteio
+     (formularios.js, itensReservados). O administrador vê o banco inteiro. */
+  async recalcularReservados() {
+    if (!this.banco) return;
+    if (this.admin) { this.banco.reservados = null; this.banco.reservados_info = []; return; }
+    const sims = this.store.listSimuladosCompletos ? await this.store.listSimuladosCompletos({}).catch(() => []) : [];
+    const r = itensReservados(this.banco, sims);
+    this.banco.reservados = r.ids.size ? r.ids : null;
+    this.banco.reservados_info = r.formularios;
   },
   /* Bloco em andamento deste navegador e desta conta (ou null) */
   andamento() {
@@ -116,6 +128,7 @@ function montarMenu() {
 }
 
 async function render() {
+  limparToasts();
   const alvo = $("[data-view]");
   const { rota, sub, params } = parseHash();
   if (viewAtual?.destroy) viewAtual.destroy();
@@ -212,6 +225,10 @@ async function boot() {
       $("[data-demo-fechar]").addEventListener("click", () => { banner.hidden = true; gravarPrefs({ banner: true }); });
     }
     await Promise.all([ctx.recarregarBanco(), ctx.recarregarRespostas()]);
+    /* o texto da faixa segue a origem do banco carregado */
+    const txt = $("[data-demo-texto]");
+    if (txt && ctx.banco?.origem === "demonstracao_completa") txt.innerHTML = "<strong>Modo demonstração.</strong> As respostas e o progresso ficam só neste navegador. Banco completo de desenvolvimento lido de banco-privado/ neste computador (" + ctx.banco.itens.length + " itens); no site publicado, o banco completo vem do servidor com a conta ativa.";
+    else if (txt && ctx.banco && ctx.banco.origem !== "supabase") txt.innerHTML = "<strong>Modo demonstração.</strong> As respostas e o progresso ficam só neste navegador. O banco tem os " + ctx.banco.itens.length + " itens públicos; com a conta ativa, o banco completo vem do servidor.";
     const n = await ctx.enviarPendentes();
     if (n) { await ctx.recarregarRespostas(); toast(n === 1 ? "Um bloco que tinha ficado no navegador foi enviado para a sua conta." : n + " blocos que tinham ficado no navegador foram enviados para a sua conta.", "ok"); }
   } catch (err) {

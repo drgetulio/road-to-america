@@ -64,7 +64,7 @@ export default {
         '<div class="list-head__acts"><label class="check check--inline"><input type="checkbox" data-com-email> Incluir e-mails no CSV</label>' +
         '<button type="button" class="btn btn--sm" data-csv>' + icon("download-simple") + "Exportar CSV</button></div></div>" +
       '<div class="ptab-wrap"><table class="ptab"><caption class="sr-only">Participantes e sinais de rendimento</caption><thead><tr data-cab></tr></thead><tbody data-corpo></tbody></table></div>' +
-      '<p class="hint ptab-nota">Retenção em cinza: menos de ' + cfg.retencao_min_revisoes + " revisões em 30 dias, amostra pequena. Simulados: média das " + cfg.simulado_ultimos + " últimas tentativas do Step em preparo. NBME: lançadas do Step em preparo e a última probabilidade de aprovação informada. Banco: probabilidade de estar acima do limiar do banco no Step em preparo (padrão de Angoff, não oficial); em cinza, estimativa preliminar. Os e-mails não aparecem na lista; a busca os considera e a ficha mostra o contato.</p>" +
+      '<p class="hint ptab-nota">Retenção em cinza: menos de ' + cfg.retencao_min_revisoes + " revisões em 30 dias, amostra pequena. Simulados: média das " + cfg.simulado_ultimos + " últimas tentativas do Step em preparo. NBME: lançadas do Step em preparo e a última probabilidade de aprovação informada. Banco: probabilidade de estar acima do limiar do banco no Step em preparo (padrão provisório, não oficial); em cinza, estimativa preliminar. Os e-mails não aparecem na lista; a busca os considera e a ficha mostra o contato.</p>" +
       avisoLgpd() +
     "</div>";
 
@@ -161,5 +161,5 @@ function bancoHtml(r) {
   const x = estBancoAtual(r);
   if (!x) return '<span class="muted">' + (r.banco ? "sem respostas" : "indisponível") + "</span>";
   const baixo = x.confianca?.alta && x.p_aprovacao <= 0.1;
-  return "<b" + (baixo ? ' class="is-risco"' : x.confianca?.alta ? "" : ' class="muted"') + ">" + e(textoProbabilidade(x.p_aprovacao)) + "</b><small>" + (x.confianca?.alta ? "alta confiança" : "preliminar") + ", " + Math.round(x.n_efetivo) + " itens</small>";
+  return "<b" + (baixo ? ' class="is-risco"' : x.confianca?.alta ? "" : ' class="muted"') + ">" + e(textoProbabilidade(x.p_aprovacao)) + "</b><small>" + (x.confianca?.alta ? "precisão alta" : "preliminar") + ", " + Math.round(x.n_efetivo) + " itens</small>";
 }

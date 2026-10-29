@@ -16,20 +16,46 @@ export const icon = (nome, extra = "") => '<i class="ph ph-' + nome + (extra ? "
 
 export const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+/* Avisos curtos. Ficam no canto inferior, com botão de fechar; enquanto há aviso, o
+   corpo da página ganha espaço embaixo (classe com-toast), para que o fim do conteúdo
+   possa subir acima dele. limparToasts() é chamado a cada troca de tela: o aviso
+   que veio da tela anterior some logo, e só o que acabou de ser emitido (menos de
+   1,2 s, isto é, a confirmação da ação que levou à tela nova) fica, por no máximo
+   2,5 s. */
+function ajustarEspacoToast() {
+  const box = $("[data-toasts]");
+  const n = box ? box.children.length : 0;
+  document.body.classList.toggle("com-toast", n > 0);
+  if (n) document.body.style.setProperty("--toast-h", Math.ceil(box.getBoundingClientRect().height + 32) + "px");
+}
+function tirarToast(el) {
+  if (!el.isConnected) return;
+  el.classList.remove("is-in");
+  setTimeout(() => { el.remove(); ajustarEspacoToast(); }, 300);
+}
 export function toast(msg, tipo = "info", ms = 4200) {
   const box = $("[data-toasts]");
   if (!box) return;
   const el = document.createElement("div");
   el.className = "toast toast--" + tipo;
   el.setAttribute("role", tipo === "erro" ? "alert" : "status");
+  el.dataset.criado = String(Date.now());
   const ic = { info: "info", ok: "check-circle", erro: "warning-circle", aviso: "warning" }[tipo] || "info";
-  el.innerHTML = icon(ic) + "<span>" + e(msg) + "</span>";
+  el.innerHTML = icon(ic) + "<span>" + e(msg) + '</span><button type="button" class="toast__fechar" aria-label="Fechar aviso">' + icon("x") + "</button>";
+  el.querySelector(".toast__fechar").addEventListener("click", () => tirarToast(el));
   box.appendChild(el);
-  requestAnimationFrame(() => el.classList.add("is-in"));
-  setTimeout(() => {
-    el.classList.remove("is-in");
-    setTimeout(() => el.remove(), 300);
-  }, ms);
+  requestAnimationFrame(() => { el.classList.add("is-in"); ajustarEspacoToast(); });
+  el._timer = setTimeout(() => tirarToast(el), ms);
+}
+export function limparToasts({ recente = 1200, resto = 2500 } = {}) {
+  const box = $("[data-toasts]");
+  if (!box) return;
+  const agora = Date.now();
+  for (const el of [...box.children]) {
+    if (agora - Number(el.dataset.criado || 0) > recente) { clearTimeout(el._timer); el.remove(); }
+    else { clearTimeout(el._timer); el._timer = setTimeout(() => tirarToast(el), resto); }
+  }
+  ajustarEspacoToast();
 }
 
 /*

@@ -11,7 +11,7 @@ import { pageHead } from "./shared.js";
 import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
 import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
 import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
-import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
+import { textoProbabilidade, nomePadrao } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -109,7 +109,7 @@ export default {
       "</section>" +
 
       '<section class="panel" aria-labelledby="sc-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="sc-t">Simulados completos</h2><a class="link-btn" href="../simulado/#/completos">' + icon("clock") + "Novo simulado completo</a></div>" +
-        '<p class="hint">O dia de prova no formato oficial: Step 1 com 14 blocos de 30 minutos e Step 2 CK com 16. A probabilidade é a calculada no fim de cada dia, pelo padrão de Angoff do banco; não é resultado oficial.</p>' +
+        '<p class="hint">O dia de prova no formato oficial: Step 1 com 14 blocos de 30 minutos e Step 2 CK com 16. A probabilidade é a de estar acima do limiar do banco, calculada no fim de cada dia, com o padrão ainda provisório; não é resultado oficial. O dia em condições de estudo ou com itens já vistos aparece como leitura de estudo.</p>' +
         blocoCompletos(completos) +
       "</section>" +
 
@@ -220,8 +220,9 @@ function blocoCompletos(lista) {
     feitos.slice(0, 10).map((l) =>
       '<li><span class="prog-sim__d">' + e(dataBR(l.data)) + "</span><b>" + nome(l) + "</b>" +
         '<span class="prog-sim__n">' + (l.acertos === null ? "sem dados" : l.acertos + "/" + l.total + " (" + pct(l.percentual) + ")") + "</span>" +
-        (l.p_aprovacao === null ? "" : '<span class="muted">aprovação ' + pctProb(l.p_aprovacao) + "</span>" +
-          '<span class="prog-chip prog-chip--' + (l.alta ? "ok" : "aviso") + '">' + (l.alta ? "Alta confiança" : "Estimativa preliminar") + "</span>") +
+        (l.p_aprovacao === null ? "" : '<span class="muted">acima do limiar do banco ' + pctProb(l.p_aprovacao) + "</span>" +
+          '<span class="prog-chip prog-chip--' + (l.alta ? "ok" : "aviso") + '">' + (l.alta ? "Precisão alta" : "Estimativa preliminar") + "</span>" +
+          (l.padronizado === false || l.reaplicacao ? '<span class="prog-chip prog-chip--aviso">' + (l.reaplicacao ? "reaplicação" : "estudo") + "</span>" : "")) +
         '<a href="../simulado/#/relatorio/' + encodeURIComponent(l.id) + '">Relatório<span class="sr-only"> do simulado de ' + e(dataBR(l.data)) + "</span></a></li>").join("") +
   "</ul>" + (feitos.length > 10 ? '<p class="hint">Mostrando os 10 mais recentes de ' + feitos.length + ". Todos estão em <a href=\"../simulado/#/completos\">Simulados completos</a>.</p>" : "");
 }
@@ -246,7 +247,7 @@ function blocoSimulados(simulados, config, ctx) {
   return lista + '<div class="grid2 grid2--top prog-areas">' + porStep + "</div>";
 }
 
-/* Cartão resumido do banco de questões: probabilidade de aprovação de cada Step pelo
+/* Cartão resumido do banco de questões: posição em relação ao limiar do banco em cada Step, pelo
    banco (plataforma/js/banco-aluno.js), rótulo de confiança e a área que mais derruba
    a probabilidade. O painel completo fica em ../questoes/#/aprovacao. */
 const pctProb = (p) => textoProbabilidade(p);
@@ -262,17 +263,17 @@ async function cartaoBancoQuestoes(ctx, { nbme, config }) {
       const top = (r.contribuicao.sistema || []).find((c) => c.ganho >= 0.005);
       return '<div class="prog-pr"><p class="prog-pr__t"><b>' + NOME_STEP[st] + "</b> " +
         (est.n ? '<span class="prog-banco__p">' + pctProb(est.p_aprovacao) + "</span>" : "") +
-        '<span class="prog-chip prog-chip--' + (conf.alta ? "ok" : "aviso") + '">' + (conf.alta ? "Alta confiança" : "Estimativa preliminar") + "</span></p>" +
+        '<span class="prog-chip prog-chip--' + (conf.alta ? "ok" : "aviso") + '">' + (conf.alta ? e(conf.texto_curto || "Precisão alta") : "Estimativa preliminar") + "</span></p>" +
         "<p>" + (est.n
-          ? (st === "step2ck" ? "Probabilidade de atingir o padrão de aprovação (218) pelo limiar do banco, " : "Probabilidade de estar acima do limiar de aprovação do banco, ") + "com " + plural(est.n, "item respondido", "itens respondidos") + "." +
-            (conf.alta ? "" : conf.faltam_itens ? " Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para alta confiança." : conf.faltam_sistemas.length ? " Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + "." : "") +
+          ? "Probabilidade de estar acima do limiar do banco" + (st === "step2ck" ? ", que representa o 218" : "") + " (padrão " + e(nomePadrao(est.corte?.origem)) + "), com " + plural(est.n, "item respondido", "itens respondidos") + "." +
+            (conf.alta ? "" : conf.faltam_itens ? " Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para a precisão alta." : conf.faltam_sistemas.length ? " Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + "." : "") +
             (top ? " Área que mais derruba: " + e(nomeChave(st, "sistema", top.chave)) + " (+" + String(Math.round(top.ganho * 1000) / 10).replace(".", ",") + " pontos percentuais em jogo)." : "")
           : "Ainda sem respostas deste Step no banco de questões.") + "</p></div>";
-    }).join("") + '<p class="hint">Estimativa do banco pelo padrão de Angoff, complementar à EXIT 18. Não é resultado oficial do USMLE nem do NBME.</p>';
+    }).join("") + '<p class="hint">Estimativa do banco, complementar à EXIT 18: enquanto o padrão for provisório, ele vem da dificuldade-alvo dos itens, sem painel de juízes nem ligação com as autoavaliações NBME. Não é probabilidade de aprovação no USMLE nem resultado do NBME.</p>';
   } catch (err) {
     console.error(err);
     corpo = '<p class="body">Não foi possível calcular a estimativa do banco agora.</p>';
   }
-  return '<section class="panel" aria-labelledby="bq-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="bq-t">Banco de questões: probabilidade de aprovação</h2>' +
+  return '<section class="panel" aria-labelledby="bq-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="bq-t">Banco de questões: posição em relação ao limiar</h2>' +
     '<a class="link-btn" href="../questoes/#/aprovacao">' + icon("gauge") + "Abrir o painel</a></div>" + corpo + "</section>";
 }

@@ -494,6 +494,7 @@ const pr = prontidaoCombinada({ exit18: prontidao(await store.listNbme({ step: "
 | `lerBancoDemo({ base, fetch, privado })` | modo demonstração: lê os 80 itens públicos e, com `privado` (padrão: `bancoCompletoPedido()`, verdadeiro só em `localhost` com `?banco=completo`), `banco-privado/manifest.json`, os arquivos e os blueprints listados nele. `{ itens, fontes, privado, divergencias }` |
 | `normalizarItem(bruto)` | item no contrato atual, com padrões de Angoff e os derivados `b_angoff`, `angoff_origem` (`item` ou `padrao_dificuldade`), `legado`, `taxonomia_desconhecida` |
 | `validarItem(item, { labs })` | `{ erros, avisos }`. Erro tira o item do banco; aviso só entra no relatório |
+| `tipoRevisao(revisao)`, `resumoRevisao(itens)` | tipo da revisão do item (`medica`, `automatizada` ou `nenhuma`) e, para uma lista, `{ total, medica, automatizada, nenhuma, sem_medica, aviso }`: o aviso vai para a tela de escolha dos simulados, o relatório e o banco de questões enquanto houver item sem revisão médica |
 | `filtrarBanco(banco, { step, excluir, sistema, disciplina, area, tarefa, competencia, dificuldade })` | valores podem ser texto ou lista |
 | `contarPor(itens, dim)`, `assinaturaBanco(itens)`, `hashTexto(s)` | contagem, assinatura (muda quando o banco muda) e hash FNV-1a |
 | `TAXONOMIA[step][dim]` | chaves, nomes em português e em inglês e faixas oficiais (% de itens) do outline: Step 1 `sistema`, `disciplina`, `competencia`; Step 2 CK `sistema`, `competencia` (tarefas do médico), `disciplina_oficial`, mais as etiquetas do painel `area` e `tarefa` (sem faixa). `multirrotulo` e `exigir_faixa` dizem se a faixa é exigida na montagem |
@@ -544,19 +545,24 @@ entrar no banco: `sistema`, `disciplina` e `competencia` no Step 1; `sistema`, `
 
 | Exportação | O que faz |
 |---|---|
-| `estimarAluno({ step, respostas, itens, sistemas, bsFormulario, pesos, regra, usarCalibrado, modeloDesfechos, modeloEscore, desde, ate })` | estimativa completa (abaixo) |
-| `prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate })` | `{ usadas, ignoradas }` com as regras de entrada (primeira resposta, pesos, em branco) |
-| `eap(respostas, { priori, grade, incluirPosterior })` | `{ theta, dp, ic90, p_aprovacao, n, n_efetivo, acertos }`; `respostas = [{ b, x, w }]` |
+| `estimarAluno({ step, respostas, itens, sistemas, pesosSistemas, bsFormulario, pesos, regra, usarCalibrado, modeloDesfechos, modeloEscore, ligacaoNbme, desde, ate, efeitoModo, sigmaCorte, ponderar })` | estimativa completa (abaixo). `ligacaoNbme` (o `ligacao_nbme` do modelo do Step, saída de `corteLigadoNbme`): quando suficiente e sem padrão do painel, o limiar passa a ser o corte ligado às autoavaliações NBME, `c ~ N(mu, sigma²)`. `pesosSistemas` (de `pesosDoOutline(step)` em `banco.js`) liga a cobertura proporcional e a repesagem pelo outline; `ponderar: false` desliga só a repesagem (simulado completo) |
+| `prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate, efeitoModo })` | `{ usadas, ignoradas }` com as regras de entrada (primeira resposta, pesos, em branco, `b - δ` no tutor) |
+| `eap(respostas, { priori, grade, incluirPosterior, sigmaCorte })` | `{ theta, dp, ic90, p_aprovacao, p_medida, sigma_corte, origem_corte, n, n_efetivo, acertos }`; `respostas = [{ b, x, w, item? }]`. Sem `sigmaCorte`, usa `incertezaCorte(respostas)` (0,4 para item sem origem) |
+| `incertezaCorte(usadas)`, `pAcimaDoCorte(posterior, sigma, cum, mu)`, `intervaloRelativo(posterior, sigma, intervalo, mu)`, `INCERTEZA_CORTE` (provisório 0,7), `SENSIBILIDADE_PADRAO` (0,75 logit, cerca de 15 pontos) | incerteza do padrão (seção 6.1 de PSICOMETRIA.md); `mu` é o centro do corte (0 no padrão do banco) |
+| `corteLigadoNbme(modeloEscore, { step, limiar, min_escores, min_t, ep_max })`, `LIGACAO_NBME` | ligação com as autoavaliações NBME (seção 6.2): `{ metodo, limiar, n, mu, ep, sigma, t, suficiente, motivo }`; `mu = (limiar - a) / b`, erro-padrão pelo método delta |
+| `nomePadrao(origem)`, `padraoProvisorio(origem)`, `faixaP(p)` | texto único do padrão em uso ("provisório", "do painel de juízes", "ligado às autoavaliações NBME da turma") e faixa da probabilidade |
+| `ponderarPeloOutline(usadas, pesos)`, `PONDERACAO_OUTLINE` | `{ usadas, fatores, distancia, mistura }` (seção 5.1) |
+| `estimarEfeitoModo(matriz, itens)` | `{ delta, ep, n_tutor, pessoas, suficiente }` (seção 13.1) |
 | `posteriorGrade`, `resumirPosterior`, `cdfPosterior`, `quantilPosterior` | posterior em grade e leituras |
 | `percentualEsperado(posterior, bs)` | `{ media, ic90, limiar, itens }` (0 a 1) |
-| `classificarConfianca({ p, theta, dp, n_efetivo, n_minimo, cob, infoMedia, regra })`, `itensMinimos(bs)`, `itensParaPrecisao(dp, dpAlvo, info)`, `cobertura(contagemPorSistema, sistemas)` | regra de confiança e contas de "quantos itens faltam" |
+| `classificarConfianca({ p, theta, dp, n_efetivo, n_minimo, cob, infoMedia, regra, sigmaCorte, origemCorte })`, `itensMinimos(bs)`, `itensParaPrecisao(dp, dpAlvo, info)`, `cobertura(contagemPorSistema, sistemas, { minPorSistema, pesos, nTotal })` | regra de precisão e contas de "quantos itens faltam"; `ROTULOS_CONFIANCA` |
 | `perfilPorArea(usadas, dim, { min_itens, prob })` | `[{ chave, n, acertos, taxa, esperado_limiar, theta, dp, ic, p_acima, classe }]`, classe `mais_baixo`, `igual`, `mais_alto` ou `insuficiente`; da área mais fraca para a mais forte. Campo com lista (`disciplinas`, `disciplinas_oficiais`) conta o item em cada rótulo |
 | `prontidaoCombinada({ exit18, banco })` | `{ status, principal: "exit18", complementar, divergente, mensagem, regra }` |
 | `analisarItens(respostas, itens, { limiares, usarCalibrado, thetas })` | `{ itens: [AnaliseItem], resumo }` (seção 11 de PSICOMETRIA.md) |
 | `recalibrarRasch(respostas, itens, { tau, priori_theta, max_iter, tol, ancoragem, ancorarEm })` | `{ itens: [{ id, b_angoff, b, ep, n, acertos }], pessoas, iteracoes, convergiu, deslocamento, parametros }` |
-| `regressaoLogistica(X, y)`, `ajustarDesfechos(registros)`, `probAprovacaoDesfechos(modelo, { theta, dp })`, `ajustarEscore(registros)`, `preverEscore(modelo, { theta, dp }, limiar)`, `montarDadosDesfechos(desfechos, respostasPorUsuario, itens)` | desfechos reais |
+| `regressaoLogistica(X, y, { pesos })` (com `cov`), `ajustarDesfechos(registros, { naoRespondentes })` (`suficiente`, `exploratorio`, `taxa_resposta`, `ponderado`, `cov`), `intervaloDesfechos(modelo, { theta })` (`{ p, ic90 }`; regressão calibrada sobre o EAP, `dp` aceito e ignorado), `probAprovacaoDesfechos(modelo, { theta })`, `ajustarEscore(registros)` (com `var_a`, `var_b`, `cov_ab`, `media_theta`), `preverEscore(modelo, { theta }, limiar)` (incerteza dos coeficientes, sem `dp`), `montarDadosDesfechos(desfechos, respostasPorUsuario, itens)` | desfechos reais |
 | `bDeAngoff(a)`, `bDoItem(item, { usarCalibrado })`, `expit`, `logit`, `normalCdf`, `informacao`, `informacaoMedia`, `correlacao`, `auc` | utilidades |
-| `textoProbabilidade(p)` | texto único da probabilidade de aprovação em todas as telas: inteiro, `< 1%` e `> 99%` nas pontas, uma casa decimal só quando o arredondamento cruzaria 10% ou 90% (os cortes da alta confiança); `sem dados` quando não há número |
+| `textoProbabilidade(p)` | texto único da probabilidade em todas as telas: inteiro, `< 1%` e `> 99%` nas pontas, uma casa decimal só quando o arredondamento cruzaria 10% ou 90% (os cortes da precisão alta); `sem dados` quando não há número |
 | `simularRespostas({ thetas, bs, random })`, `normalAleatoria(random)` | simulação para testes (recebem o gerador) |
 | `PRIORI_PADRAO`, `GRADE_PADRAO`, `REGRA_CONFIANCA`, `PESOS_MODO`, `LIMIARES_ITEM`, `RECALIBRACAO_PADRAO`, `DESFECHOS_PADRAO`, `PADRAO_STEP2CK`, `DIMENSOES_PERFIL` | parâmetros do método |
 
@@ -565,19 +571,26 @@ Saída de `estimarAluno`:
 ```js
 {
   step, n, n_efetivo, acertos, taxa_bruta, ignoradas,
-  theta, dp, ic90: [lo, hi],
-  p_aprovacao,                         // P(theta > 0 | respostas)
+  theta, dp, ic90: [lo, hi],           // só a incerteza da medida
+  ic90_relativo: [lo, hi],             // distância ao limiar, theta - c, com a incerteza do padrão
+  p_aprovacao,                         // P(theta > c | respostas), c ~ N(0, sigma²): probabilidade de estar acima do limiar do banco
+  p_medida,                            // P(theta > centro | respostas), sem a incerteza do padrão
+  corte: { sigma, origem: "provisorio" | "misto" | "painel" | "nbme", centro /* 0, ou mu da ligação com a NBME */, itens_painel, ligacao_nbme: null | { limiar, n, ep } },
+  sensibilidade: null | { deslocamento: 0.75, pontos: 15, itens_mais_faceis, itens_mais_dificeis, muda_leitura },   // só com padrão provisório
+  mistura: { distancia, fatores, sistemas },   // repesagem pelo outline
   percentual_esperado: { media, ic90: [lo, hi], limiar, itens },   // 0 a 1
-  confianca: { alta, rotulo: "alta_confianca" | "estimativa_preliminar", texto, motivos: [texto],
-               n_minimo, faltam_itens /* null = perto do limiar */, faltam_itens_minimo, faltam_sistemas: [chave], perto_do_limiar },
-  cobertura: { com_itens, faltando, total, proporcao },
+  confianca: { alta, rotulo: "precisao_alta" | "estimativa_preliminar", texto, texto_curto, motivos: [texto],
+               n_minimo, faltam_itens /* null = perto do limiar */, faltam_itens_minimo, faltam_sistemas: [chave], perto_do_limiar,
+               padrao_limita /* o padrão incerto, sozinho, impede a decisão */, sigma_corte, origem_corte },
+  cobertura: { com_itens, faltando, total, proporcao, minimos: { chave: n }, itens: { chave: n }, min_por_sistema },
   perfil: { sistema, disciplinas, competencia }            // Step 1
         | { sistema, disciplinas_oficiais, competencia, area }, // Step 2 CK
   base: "angoff" | "calibrado" | "misto", itens_calibrados,
   oficial: false,
   avisos: [texto],                     // a tela mostra sempre (origem da estimativa; no Step 2 CK, o 218 e a nota de três dígitos)
-  limiar: { tipo: "padrao_angoff_equivalente", resultado_oficial: "Pass/Fail" } | { ..., escore_oficial: 218 },
-  desfechos: null | { p_aprovacao, modelo },   // só com modelo suficiente
+  limiar: { tipo: "padrao_do_banco", origem, resultado_oficial: "Pass/Fail" } | { ..., escore_oficial: 218 },
+  efeito_modo: null | delta,
+  desfechos: null | { p_aprovacao, ic90, rotulo: "alta_confianca" | "estimativa_preliminar", texto, modelo },   // só com modelo suficiente (30 + 30, taxa de resposta >= 50%)
   escore: null | { media, ic90, p_limiar, limiar, suficiente }   // só Step 2 CK com notas reais suficientes
 }
 ```
@@ -587,9 +600,14 @@ Saída de `estimarAluno`:
 | Exportação | O que faz |
 |---|---|
 | `montarFormulario(banco, { step, tipo, modo, semente, vistas, evitar, codigo, nome })` | `tipo`: `completo` (14 blocos e 280 itens no Step 1; 16 blocos e 318 no Step 2 CK), `meio` (7 e 140; 8 e 159) ou `prontidao` (4 blocos e 80 itens). `modo`: `fixo` ou `personalizado` |
-| `montarFormularioFixo(banco, step, codigo, tipo)` | formulários fixos `S1-A`, `S1-B`, `S1-C`, `CK-A`, `CK-B`, `CK-C` (`FORMULARIOS_FIXOS`); B evita A e C evita A e B |
+| `montarFormularioFixo(banco, step, codigo, tipo, { ignorarGravado })` | formulários fixos `S1-A`, `S1-B`, `CK-A`, `CK-B` (`FORMULARIOS_FIXOS`). A e B são uma partição do banco do Step (nenhum item em comum). Quando o banco traz `formularios_fixos` (de `banco-privado/formularios.json` ou da tabela `formularios_fixos`) e a assinatura confere, o formulário completo é o gravado (`origem_montagem: "gravado"`); senão é calculado (`"calculado"`). B com menos itens que o formato sai `parcial: true` |
+| `montarParticao(pool, step, nA, nB, { semente })` | partição de A e B por busca local: A tem prioridade nas faixas exigidas, B fica com o restante |
+| `angoffMontagem(q)`, `FAIXAS_DIFICULDADE` | Angoff usado na montagem (o do item, mesmo depois do painel) e meta de dificuldade do projeto (fácil 17 a 23%, média 52 a 58%, difícil 22 a 28%) |
 | `montarFormularioPersonalizado(banco, { step, tipo, vistas, semente })` | prioriza itens não vistos sem sair das faixas |
-| `verificarFormulario(form, porId)` | `{ ok, total, blocos, equilibrio, dimensoes, problemas, avisos }`, com cada chave do outline, `pct`, `faixa`, `dentro`, `exigida` e, nas disciplinas, `n_multirrotulo`, `pct_multirrotulo` e `dentro_multirrotulo` (todos os rótulos; fora da faixa vira aviso) |
+| `formularioReservado(banco, step, codigo)`, `itensReservados(banco, simulados)` | formulário completo reservado por Step (S1-B e CK-A): `{ ids: Set, formularios }` com os itens fora do banco do aluno até ele concluir o formulário; formulário reduzido nunca é reservado |
+| `vistosNoFormulario(form, respostas)`, `LIMITE_JA_VISTOS` (0,25) | `{ n, total, fracao, reaplicacao }` |
+| `pausaProporcional(pausaMs, blocos, blocosOficiais)` | pausa do formulário parcial (`tempo.pausa_proporcional: true`) |
+| `verificarFormulario(form, porId)` | `{ ok, total, blocos, equilibrio, corte: { angoff_medio, origem: "provisorio" \| "misto" \| "painel", itens_com_painel }, dimensoes, problemas, avisos }` (no formulário parcial, faixa fora vira aviso), com cada chave do outline, `pct`, `faixa`, `dentro`, `exigida` e, nas disciplinas, `n_multirrotulo`, `pct_multirrotulo` e `dentro_multirrotulo` (todos os rótulos; fora da faixa vira aviso) |
 | `dimensionar(step, tipo, disponiveis)`, `tamanhosBlocos(total, blocos)`, `cotasNasFaixas`, `alvosDimensao` | contas da montagem |
 | `novaSessao(form)`, `iniciarTutorial`, `iniciarBloco`, `responder(sessao, posicao, { resposta, marcada, tempo_ms_add }, agora)`, `encerrarBloco(sessao, agora, motivo)`, `atualizarSessao(sessao, agora)`, `estadoRelogio(sessao, agora)`, `corrigirSessao(form, sessao, porId, { sessaoId })` | relógio do simulado completo (estado JSON serializável; todas devolvem um estado novo) |
 | `TEMPOS_OFICIAIS`, `TIPOS_FORMULARIO`, `FORMULARIOS_FIXOS`, `SECUNDARIAS` | constantes |
@@ -611,10 +629,22 @@ Montagem: cotas de sistema dentro das faixas; escolha gulosa dentro de cada sist
 equilibra competência (faixa exigida), disciplina principal, disciplinas com todos os
 rótulos e dificuldade; reparo por trocas dentro do mesmo sistema até a competência e as
 disciplinas (todos os rótulos) caberem nas faixas; distribuição em blocos em serpentina
-pelo Angoff. Com um item por especificação dos blueprints atuais (560 itens no Step 1 e
-520 no Step 2 CK), os 18 formulários fixos (3 códigos, 3 tipos, 2 Steps) saem dentro de
-todas as faixas, inclusive as multirrótulo dos formulários completos
+pelo Angoff. Os formulários completos fixos do banco privado são gravados por
+`banco-privado/ferramentas/formularios.mjs --gravar` em `banco-privado/formularios.json`
+(lido pelo modo demonstração via `manifest.formularios`; no Supabase, tabela
+`formularios_fixos`, enviada por `tools/importar-banco.mjs`). Com os 1080 itens atuais,
+S1-A e S1-B têm 280 itens em 14 blocos, CK-A tem 318 em 16 e CK-B fica parcial com os 202
+itens restantes; os quatro saem dentro das faixas oficiais, com Angoff e dificuldade
+iguais entre blocos e o gabarito equilibrado por bloco
 (`plataforma/tests/banco-privado.test.mjs`, que roda quando `banco-privado/` existe).
+O corte provisório de cada formulário é a média do Angoff dos seus itens; quando o painel
+de juízes publica valores (pelo menos 10 juízes por item e Hofstee verificado, ou
+publicação justificada), `angoff` passa a ser o do painel (`angoff_origem: "painel"`) e a
+composição não muda. Itens públicos (`legado`) de um formulário fixo ficam fora da
+estimativa: `itensForaDoCorte(form, porId)` devolve o `Set` desses ids, e
+`estimativaDoSimulado` (simulado/js/relatorio.js) os tira das respostas e do percentual
+esperado (`est.fora_do_corte: { n, ids }`). No modo demonstração, com só os itens
+públicos, todos contam.
 
 Dois alunos com o mesmo `formulario_id` fizeram exatamente os mesmos itens (a assinatura
 muda quando o banco muda). Relógio: pular o tutorial ou terminar antes dá o tempo que
@@ -624,6 +654,62 @@ seguinte; `responder` só aceita o bloco atual; `atualizarSessao` fecha o bloco 
 acabou com a página fechada. `estadoRelogio` dá `restante_bloco_ms`, `pausa_saldo_ms`,
 `pausa_excedente_ms`, `proximo_bloco_ms` e `tutorial_restante_ms`.
 
+## `plataforma/js/angoff.js` (painel de juízes)
+
+| Exportação | O que faz |
+|---|---|
+| `MIN_JUIZES` (10), `CORTE_EP_MAX` (0,02), `RODADAS_MAX` (5), `ESTADOS_PAINEL` (`avaliacao`, `discussao`, `encerrado`) | constantes |
+| `validarEstimativa(v)`, `validarHofstee(h)`, `validarPainel(p)` | estimativa de 0 a 100; Hofstee com corte mínimo e máximo e reprovação mínima e máxima |
+| `proximoEstado(painel, acao)` | `fechar_rodada` (avaliação para discussão), `nova_rodada` (discussão para a rodada seguinte), `encerrar` |
+| `estatisticaItem(valores)`, `resumoRodada(itens, avaliacoes, rodada)` | média, DP, mínimo, máximo e n por item; corte Angoff modificado (média das médias) com erro padrão entre juízes |
+| `pObservado(respostas, itens)` | acerto real por item (primeira resposta de cada pessoa, fora do modo tutor) |
+| `distribuicaoEscores(respostas, itens, { minItens, porId })`, `reprovacaoNoCorte`, `hofstee`, `verificarHofstee(corteAngoff, h, escores)` | compromisso de Hofstee e se o corte Angoff cai dentro do retângulo; com `porId`, o escore de cada pessoa é o esperado no formulário do painel pelo theta EAP de todas as respostas dela |
+| `valoresParaPublicar(painel, avaliacoes, { minJuizes, corteEpMax, verificacao, justificativa })` | `{ publicar: [{ questao_id, angoff, juizes, ep }], insuficientes, corte, corte_ep, bloqueado, bloqueado_ep, motivo, hofstee_ok, exige_justificativa }`: média da última rodada por item, só dos itens com pelo menos `minJuizes` juízes; nada quando o erro-padrão do corte passa de `corteEpMax`, ou quando `verificacao` (saída de `verificarHofstee`) não tem `ok: true` e a justificativa tem menos de `JUSTIFICATIVA_MIN` (30) caracteres |
+| `regraHofsteePublicacao(corte, respostasHofstee, justificativa)` | regra que o servidor confere (a mesma de `r2a_admin_publicar_angoff`): pelo menos uma resposta de Hofstee e o corte dentro da janela média `[k_min, k_max]`; fora disso, `bloqueado` sem justificativa de 30 caracteres |
+| `estimativasFicticias(...)` | estimativas dos mentores fictícios do modo demonstração |
+
+Na tela (área da equipe, Angoff), o juiz vê o item completo sem a letra correta nem as
+explicações até gravar a estimativa; entre rodadas recebe a média do painel, a própria
+estimativa anterior, o p observado e os comentários da discussão.
+
+## Gabarito no servidor (modo Supabase)
+
+No Supabase o participante não lê o gabarito: `questoes` é só da equipe e o participante lê
+`questoes_publicas` (espelho mantido por gatilho, sem `CAMPOS_PRIVADOS`). As telas usam as
+mesmas chamadas nos dois modos; no modo demonstração (`gabaritoNoServidor: false`) a
+correção continua no navegador.
+
+| Método da camada de dados | O que faz |
+|---|---|
+| `gabaritoNoServidor` | `true` no Supabase para quem não é admin |
+| `responderItens(lista, { revelar })` | grava as respostas (RPC `r2a_responder`, em lotes de 200) e devolve `{ id, questao_id, resposta, correta, revelado }`; `revelado` traz a parte privada do item (modo tutor na hora, cronometrado no fim do bloco) |
+| `revelarItens(ids)` | parte privada de itens já respondidos ou de simulado concluído (RPC `r2a_revelar`) |
+| `corrigirSimulado(id, complemento)` | corrige o simulado completo no servidor (RPC `r2a_corrigir_simulado`) e grava conclusão e resultado |
+
+Em `plataforma/js/banco.js`: `CAMPOS_PRIVADOS`, `partePrivada(item)`, `partePublica(item)`,
+`temGabarito(q)`, `mesclarRevelados(banco, revelados)` e `garantirGabarito(store, banco, ids)`
+(busca o que falta antes de mostrar correção ou relatório). `validarItem` e `montarBanco`
+aceitam `exigirGabarito: false` para itens sem gabarito.
+
+## Painel Angoff na camada de dados
+
+| Método | Admin | Juiz designado | Outros |
+|---|---|---|---|
+| `listJuizesPossiveis()` | lista mentores e admins | não | não |
+| `listPaineisAngoff()`, `getPainelAngoff(id)` | todos | os seus | nada |
+| `criarPainelAngoff({ step, nome, descricao, itens, rodadas_max, juizes })`, `designarJuizesAngoff(id, juizes)` | pode | não | não |
+| `listItensPainelAngoff(id)` | itens do painel | itens sem gabarito nem explicações (RPC `r2a_angoff_itens`) | não |
+| `avaliarItemAngoff(id, questao_id, valor, comentario)` | só se também for juiz designado | a própria, na rodada aberta | não |
+| `revelarPainelAngoff(id)` | pode | gabarito só dos itens que já avaliou | não |
+| `listAvaliacoesAngoff(id)`, `feedbackPainelAngoff(id)` | todas, com p observado e histograma | as próprias e a média do painel das rodadas fechadas | não |
+| `listDiscussaoAngoff(id)`, `comentarAngoff(id, { questao_id, texto })` | pode | pode | não |
+| `listHofsteeAngoff(id)`, `salvarHofsteeAngoff(id, h)` | pode | o próprio | não |
+| `avancarPainelAngoff(id, acao)`, `publicarAngoff(id, { minJuizes, justificativa })` | pode (publica em `questoes.angoff_painel` só com 10 juízes ou mais, erro-padrão do corte abaixo de 0,02 e Hofstee com o corte na janela; sem Hofstee ou fora da janela, só com justificativa de 30 caracteres, gravada em `angoff_paineis.publicacao_justificativa`) | não | não |
+
+Tabelas `angoff_paineis`, `angoff_juizes`, `angoff_avaliacoes`, `angoff_discussao` e
+`angoff_hofstee`, com RLS: só a equipe e os juízes designados; juiz não pode ser
+participante com matrícula ativa. Mudança de conteúdo do item apaga o Angoff do painel.
+
 ## `plataforma/js/calibracao.js` (admin)
 
 | Função | O que faz |
@@ -631,8 +717,8 @@ acabou com a página fechada. `estadoRelogio` dá `restante_bloco_ms`, `pausa_sa
 | `prepararRecalibracao({ store, step, tau, minRespostas = 30, incluirTutor })` | prévia: `{ itens: [{ id, b_angoff, b, ep, n, aplicar, delta }], a_aplicar, pessoas, respostas, convergiu, ... }` |
 | `aplicarRecalibracao({ store, preparo })` | grava os b dos itens com `aplicar: true` |
 | `desfazerCalibracao({ store, ids })` | volta esses itens ao Angoff |
-| `calibrarDesfechos({ store, step })` | `{ pass_fail, escore_oficial, escore_nbme, n }` a partir de `resultados_oficiais` e das NBMEs em standard-paced |
-| `salvarModelo({ store, step, desfechos })` | grava o modelo em `modelos_psicometricos` para as telas dos alunos |
+| `calibrarDesfechos({ store, step })` | `{ pass_fail, escore_oficial, escore_nbme, ligacao_nbme, efeito_modo, n, dados }` a partir de `resultados_oficiais` e das NBMEs em standard-paced; `ligacao_nbme` é `corteLigadoNbme(escore_nbme, { step })` |
+| `salvarModelo({ store, step, desfechos })` | grava o modelo (versão 3, `metodo: "regressao_logistica_ponderada_e_linear_sobre_theta_eap_sem_integrar_dp"`) em `modelos_psicometricos` para as telas dos alunos, com `ligacao_nbme` |
 
 ## Métodos novos da camada de dados
 
@@ -750,15 +836,16 @@ pelas duas páginas). Detalhes de uso em `questoes/README.md`; método em
 |---|---|
 | `historicoItens(respostas)` | `Map` id -> `{ n, respondidas, primeira_correta, ultima_resposta, ultima_correta, ultima_em, marcada, em_branco_ultima }` |
 | `situacaoItem(id, historico)` | `{ nao_vistas, erradas, marcadas, todas }` (erradas: tentativa mais recente errada ou em branco) |
-| `filtrarPool(banco, { step, selecao, situacao, historico })` | itens do Step que passam nos filtros; `selecao = { sistema: [...], disciplina: [...], ... }` ("ou" dentro da dimensão, "e" entre dimensões; disciplinas com todos os rótulos) |
-| `contagemFacetas(banco, { step, selecao, situacao, historico })` | `{ situacoes, dims: { dim: { chave: n } }, disponiveis }`; a contagem de cada dimensão ignora o filtro dela mesma |
+| `filtrarPool(banco, { step, selecao, situacao, historico, reservados })` (`reservados` padrão: `banco.reservados`, que `questoes/js/app.js` preenche com `itensReservados`) | itens do Step que passam nos filtros; `selecao = { sistema: [...], disciplina: [...], ... }` ("ou" dentro da dimensão, "e" entre dimensões; disciplinas com todos os rótulos) |
+| `contagemFacetas(banco, { step, selecao, situacao, historico })` | `{ situacoes, dims: { dim: { chave: n } }, disponiveis, max_bloco, fora_por_inimigos }`; a contagem de cada dimensão ignora o filtro dela mesma; `max_bloco` (`maximoSemInimigos(pool)`) é quantos itens cabem num bloco sem pares inimigos, o mesmo corte da montagem |
 | `FILTROS_STEP`, `SITUACOES`, `ROTULO_SITUACAO`, `MODOS_BLOCO`, `ROTULO_MODO`, `LIMITES_BLOCO` | dimensões filtráveis por Step e limites (1 a 20 itens, 40 no modo livre, 90 s por item) |
 | `validarPedidoBloco`, `sortearBlocoBanco(pool, { n, semente, historico })`, `criarBlocoBanco({ step, itens, modo, livre, criterios, dono, notas })` | pedido, sorteio estratificado e sessão no formato de `simulado/js/sessao.js`, com `origem: "banco"`, `id` (`bq-...`), `modo`, `confirmadas` |
 | `confirmarResposta(s, i)`, `travada(s, i)` | modo tutor: a resposta confirmada trava |
 | `paraRespostasBanco(s, porId)` | linhas para `store.saveRespostas` (uma por item, com posição, tempo, marca e `sessao_id`) |
 | `resumoBlocos(respostas, itens)`, `blocoPorArea(bloco, itens, campo)` | histórico de blocos (mais recente primeiro) e acerto por área de um bloco contra o limiar |
 | `curvaEvolucao({ respostas, itens, step, maxPontos })` | um ponto por sessão: `P(aprovação)`, `θ`, intervalo, acerto da sessão e do limiar |
-| `contribuicaoPorArea(usadas, dim, { step })` | `[{ chave, n, acertos, esperado_limiar, deficit, taxa, taxa_limiar, p_atual, p_area_no_limiar, ganho, peso_prova }]`, do maior ganho para o menor |
+| `contribuicaoPorArea(usadas, dim, { step, sigmaCorte, minItens })` | `[{ chave, n, acertos, esperado_limiar, deficit, taxa, taxa_limiar, p_atual, p_area_no_limiar, ganho, ganho_bruto, poucos_itens, peso_prova }]`, do maior ganho para o menor; `ganho: null` com menos de 5 itens |
+| `semInimigos(escolhidos, pool)` | troca o segundo item de um par inimigo (`item.inimigos`) pelo próximo do pool; `sortearBlocoBanco` já aplica |
 | `linksDeEstudo(step, dim, chave, { base, situacao })`, `linkBloco`, `ANCORAS_CONTEUDO_S1`, `BASE_S1_DO_CK` | links para `conteudo-step1.html#s-...`, `anki/#/estudar?...&modo=treino` e `questoes/#/criar?...` |
 | `recomendacoes({ step, est, contribuicao, base })` | lista ordenada `{ tipo: "area" \| "cobertura" \| "volume", nome, texto, links }` |
 | `resumoAprovacao({ banco, respostas, step, modelos, nbme, config, base })` | tudo o que o painel e o cartão de "Meu progresso" mostram: `{ est, contribuicao, recomendacoes, prontidao, limiar_texto, itens_no_banco, nao_vistos, modelo_demonstracao }` |
@@ -861,12 +948,13 @@ funções de estimativa; esta seção lista o que liga uma à outra.
 
 ## A mesma probabilidade em todas as telas
 
-A probabilidade de aprovação pelo banco sai sempre de `estimarAluno` com todas as
+A probabilidade de estar acima do limiar do banco sai sempre de `estimarAluno` com todas as
 respostas do aluno no Step (banco, simulados completos e blocos de 30 minutos) e aparece
 com `textoProbabilidade` em: placa e painel do banco (`questoes/#/`, `#/aprovacao`),
 cartão de "Meu progresso", indicador de `simulado/#/completos`, ficha do participante e
 lista de participantes na área administrativa. O relatório de cada simulado completo
-mostra a estimativa daquele dia (só os itens do formulário) e, abaixo, a geral.
+mostra a estimativa daquele dia (só os itens do formulário que contam) e, abaixo, a geral,
+com uma frase que explica por que as duas podem diferir (a geral repesa pelo outline).
 
 ## Simulados completos fora da página do simulado
 

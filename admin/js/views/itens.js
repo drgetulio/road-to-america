@@ -1,6 +1,6 @@
 /* Road to America | área administrativa: análise de itens do banco de questões
    Tabela de todos os itens de um Step com dificuldade (p), discriminação
-   (ponto-bisserial corrigida e D), Angoff, b de Angoff e calibrado, ajuste ao
+   (ponto-bisserial corrigida e D), dificuldade-alvo, b dela e calibrado, ajuste ao
    Rasch, alertas e situação. Filtros e ordem ficam no endereço. */
 import { $, e, icon, num } from "../../../anki/js/ui.js";
 import { TAXONOMIA, nomeChave } from "../../../plataforma/js/banco.js";
@@ -10,7 +10,7 @@ import { pageHead, tile, abasStep, avisoDemoBanco, avisoLgpd } from "./comum.js"
 import { dataBR, plural } from "../../../plataforma/js/acompanhamento.js";
 
 const FILTROS = ["q", "sistema", "disciplina", "competencia", "alerta", "situacao"];
-const ORDENS = [["prioridade", "Prioridade de revisão"], ["id", "Identificador"], ["p", "Dificuldade (p)"], ["pbis", "Discriminação"], ["angoff", "Angoff"], ["b", "b em uso"], ["n", "Respostas"]];
+const ORDENS = [["prioridade", "Prioridade de revisão"], ["id", "Identificador"], ["p", "Dificuldade (p)"], ["pbis", "Discriminação"], ["angoff", "Dificuldade-alvo"], ["b", "b em uso"], ["n", "Respostas"]];
 const DIR_PADRAO = { prioridade: "desc", id: "asc", p: "asc", pbis: "asc", angoff: "asc", b: "desc", n: "desc" };
 const POR_PAGINA = 100;
 export const ROTULO_STATUS_ITEM = { ativo: "No banco", rascunho: "Rascunho", suspenso: "Retirado", aposentado: "Aposentado" };
@@ -61,7 +61,7 @@ export default {
         tile({ rotulo: "Com " + LIMIARES_ITEM.n_min + " respostas ou mais", valor: num(r.confiaveis), sub: plural(r.com_dados, "item tem", "itens têm") + " alguma resposta; " + plural(r.pessoas || 0, "pessoa", "pessoas") + " e " + num(r.respostas || 0) + " respostas na matriz." }) +
         tile({ rotulo: "Pedem revisão", valor: num(r.a_revisar_confiaveis) + ' <small>de ' + num(r.a_revisar) + "</small>", sub: "Com amostra suficiente, de todos os que têm algum alerta de revisão.", estado: r.a_revisar_confiaveis ? "abaixo" : "ok", href: "#/itens?step=" + step + "&alerta=revisar" }) +
         tile({ rotulo: "Reportes de alunos", valor: num(abertos.length), sub: "Abertos ou em análise.", estado: abertos.length ? "abaixo" : "ok", href: "#/itens?step=" + step + "&situacao=reportes" }) +
-        tile({ rotulo: "Calibrados com a turma", valor: num(r.calibrados), sub: "Os demais usam o b de Angoff.", href: "#/calibracao?step=" + step }) +
+        tile({ rotulo: "Calibrados com a turma", valor: num(r.calibrados), sub: "Os demais usam o b da dificuldade-alvo.", href: "#/calibracao?step=" + step }) +
       "</section>" +
       (abertos.length ? '<section class="panel" aria-labelledby="rep-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="rep-t">Reportes de erro dos alunos</h2><a class="link-btn" href="#/itens?step=' + step + '&situacao=reportes">Ver os itens com reporte' + icon("arrow-right") + "</a></div>" +
         '<ul class="reps">' + abertos.slice(0, 5).map((x) => '<li class="rep"><div class="rep__top"><a class="rep__item" href="#/item/' + encodeURIComponent(x.questao_id) + '">' + e(x.questao_id) + '</a><span class="chip">' + e(MOTIVOS_REPORTE[x.motivo] || x.motivo) + "</span>" + (x.status === "em_analise" ? '<span class="gar gar--aviso">em análise</span>' : "") + (x.sintetico ? '<span class="selo-demo">dados de demonstração</span>' : "") + '<small class="muted">' + e(dataBR(x.criado_em)) + "</small></div>" +
@@ -79,10 +79,10 @@ export default {
       "</form>" +
       '<div class="list-head"><p class="list-head__n" data-contagem aria-live="polite"></p></div>' +
       '<div class="ptab-wrap"><table class="ptab itab"><caption class="sr-only">Itens do ' + (step === "step1" ? "Step 1" : "Step 2 CK") + ' e seus índices</caption><thead><tr>' +
-        ["Item", "Respostas", "Dificuldade p", "Discriminação", "Angoff", "b em uso", "Ajuste ao Rasch", "Alertas", "Situação"].map((c) => '<th scope="col">' + c + "</th>").join("") +
+        ["Item", "Respostas", "Dificuldade p", "Discriminação", "Dificuldade-alvo", "b em uso", "Ajuste ao Rasch", "Alertas", "Situação"].map((c) => '<th scope="col">' + c + "</th>").join("") +
       '</tr></thead><tbody data-corpo></tbody></table></div>' +
       '<p class="mais" data-mais-wrap hidden><button type="button" class="btn btn--ghost btn--sm" data-mais>Mostrar mais itens</button></p>' +
-      '<p class="hint ptab-nota">Dificuldade p: proporção de acerto. Discriminação: ponto-bisserial corrigida (correlação entre acertar o item e o acerto da pessoa nos outros itens); D é a diferença de acerto entre os 27% melhores e os 27% piores. b em uso: dificuldade de Rasch na escala ancorada no limiar (0 = examinando no limiar acerta com a probabilidade de Angoff); calibrado quando houver, senão o de Angoff. Ajuste: infit e outfit, com a dificuldade estimada pelas respostas do próprio item, para medir a forma da curva e não o erro do Angoff; esperado perto de 1 (alerta fora de 0,7 a 1,3, com 30 respostas ou mais).</p>' +
+      '<p class="hint ptab-nota">Dificuldade p: proporção de acerto. Discriminação: ponto-bisserial corrigida (correlação entre acertar o item e o acerto da pessoa nos outros itens); D é a diferença de acerto entre os 27% melhores e os 27% piores. b em uso: dificuldade de Rasch na escala ancorada no limiar (0 = examinando no limiar acerta com a dificuldade-alvo); calibrado quando houver, senão o da dificuldade-alvo. Ajuste: infit e outfit, com a dificuldade estimada pelas respostas do próprio item, para medir a forma da curva e não o erro da dificuldade-alvo; esperado perto de 1 (alerta fora de 0,7 a 1,3, com 30 respostas ou mais).</p>' +
       avisoLgpd("Os índices usam a matriz pseudonimizada de respostas: nenhuma tela de itens mostra quem respondeu o quê.") +
     "</div>";
 
@@ -134,8 +134,8 @@ function linhaHtml(l, step) {
     '<td data-label="Respostas"><b' + (prov ? ' class="muted"' : "") + ">" + num(l.n) + "</b>" + (prov ? "<small>provisório</small>" : "") + "</td>" +
     '<td data-label="Dificuldade p">' + (l.p === null ? '<span class="muted">sem respostas</span>' : "<b" + (prov ? ' class="muted"' : l.p < LIMIARES_ITEM.p_min || l.p > LIMIARES_ITEM.p_max ? ' class="is-risco"' : "") + ">" + numTxt(l.p, 2) + "</b><small>" + pctTxt(l.p) + " de acerto</small>") + "</td>" +
     '<td data-label="Discriminação">' + (l.pbis === null ? '<span class="muted">sem dado</span>' : "<b" + (prov ? ' class="muted"' : l.pbis < LIMIARES_ITEM.pbis_min ? ' class="is-risco"' : "") + ">" + numTxt(l.pbis, 2) + "</b>") + (l.d === null ? "" : "<small>D " + numTxt(l.d, 2) + "</small>") + "</td>" +
-    '<td data-label="Angoff"><b>' + numTxt(l.angoff, 2) + "</b><small>b " + numTxt(l.b_angoff, 2) + "</small></td>" +
-    '<td data-label="b em uso">' + (l.b_calibrado !== null ? "<b>" + numTxt(l.b_calibrado, 2) + "</b><small>calibrado" + (l.ep_calibrado !== null ? ", EP " + numTxt(l.ep_calibrado, 2) : "") + "</small>" : "<b>" + numTxt(l.b_angoff, 2) + "</b><small>Angoff</small>") + "</td>" +
+    '<td data-label="Dificuldade-alvo"><b>' + numTxt(l.angoff, 2) + "</b><small>b " + numTxt(l.b_angoff, 2) + "</small></td>" +
+    '<td data-label="b em uso">' + (l.b_calibrado !== null ? "<b>" + numTxt(l.b_calibrado, 2) + "</b><small>calibrado" + (l.ep_calibrado !== null ? ", EP " + numTxt(l.ep_calibrado, 2) : "") + "</small>" : "<b>" + numTxt(l.b_angoff, 2) + "</b><small>alvo</small>") + "</td>" +
     '<td data-label="Ajuste ao Rasch">' + (l.infit === null ? '<span class="muted">sem dado</span>' : v(l.infit) + "<small>outfit " + numTxt(l.outfit, 2) + "</small>") + "</td>" +
     '<td data-label="Alertas">' + (alertas ? '<ul class="ptab__motivos">' + alertas + "</ul>" : l.n ? '<span class="muted">nenhum</span>' : '<span class="muted">sem respostas</span>') + "</td>" +
     '<td data-label="Situação"><div class="itab__sit">' + sit + "</div></td>" +

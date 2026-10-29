@@ -150,3 +150,24 @@ test("carregarBanco pela camada de dados: participante ativo lê; inativo não l
   b = await carregarBanco({ store: s });
   assert.equal(b.itens.length, 0, "matrícula inativa não lê o banco");
 });
+
+test("contrato: mídia com texto alternativo, licença e fonte; pares inimigos; revisão automatizada não conta como médica", async () => {
+  const { normalizarItem, validarItem, tipoRevisao } = await import("../js/banco.js");
+  const q0 = gerarBancoSintetico({ porStep: 3, semente: 3 })[0];
+  const comMidia = normalizarItem({ ...q0, midia: [{ tipo: "imagem", src: "midia/ecg-1.png", alt: "Traçado de ECG de 12 derivações", licenca: "CC BY 4.0", fonte: "Acervo próprio" }], inimigos: ["R2A-S1-0181", q0.id] });
+  assert.equal(comMidia.midia.length, 1);
+  assert.deepEqual(comMidia.inimigos, ["R2A-S1-0181"], "o próprio item não é inimigo dele");
+  assert.equal(validarItem(comMidia).erros.length, 0, validarItem(comMidia).erros.join(" "));
+  const semAlt = normalizarItem({ ...q0, midia: [{ tipo: "imagem", src: "midia/x.png" }] });
+  const er = validarItem(semAlt).erros.join(" ");
+  assert.match(er, /texto alternativo/);
+  assert.match(er, /licença/);
+  assert.match(er, /fonte/);
+  assert.match(validarItem(normalizarItem({ ...q0, midia: [{ tipo: "imagem", src: "javascript:alert(1)", alt: "x", licenca: "x", fonte: "x" }] })).erros.join(" "), /não permitido/);
+  assert.equal(tipoRevisao({ verificado: true, revisor: "Revisor médico independente (Claude)", data: "2026-10-29" }), "automatizada");
+  assert.equal(tipoRevisao({ verificado: false, revisor: "revisão automatizada (modelo de IA)" }), "automatizada");
+  assert.equal(tipoRevisao({ verificado: true, revisor: "Dra. Ana Souza, CRM 1234", data: "2026-11-02" }), "medica");
+  assert.equal(tipoRevisao({ verificado: true, revisor: "Dra. Ana Souza" }), "nenhuma", "sem data, não há registro da revisão");
+  const auto = normalizarItem({ ...q0, legado: false, revisao: { verificado: true, revisor: "Revisor médico independente (Claude)", data: "2026-10-29" } });
+  assert.match(validarItem(auto).avisos.join(" "), /automatizada/);
+});

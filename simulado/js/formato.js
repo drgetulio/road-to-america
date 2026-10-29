@@ -7,7 +7,7 @@ export function pct(x, casas = 0) {
   return (x * 100).toFixed(casas).replace(".", ",") + "%";
 }
 
-/* Probabilidade de aprovação: o mesmo texto do banco, de "Meu progresso" e da área
+/* Probabilidade de estar acima do limiar do banco: o mesmo texto do banco, de "Meu progresso" e da área
    administrativa (textoProbabilidade, em plataforma/js/psicometria.js) */
 export function prob(p) {
   return textoProbabilidade(p);

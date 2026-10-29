@@ -103,6 +103,8 @@ export function validarProgresso(anterior, nova) {
   const e = [];
   const a = anterior || {}, n = nova || {};
   if ((n.bloco_atual ?? 0) < (a.bloco_atual ?? 0)) e.push("Um bloco encerrado não reabre.");
+  /* as condições de aplicação (oficiais ou estudo) são escolhidas antes do início e não mudam */
+  if (a.condicoes && n.condicoes !== a.condicoes) e.push("As condições do dia (oficiais ou estudo) não mudam depois de escolhidas.");
   for (let i = 0; i < Math.min(a.bloco_atual ?? 0, a.respostas?.length ?? 0); i++) {
     if (jsonCanonico(a.respostas[i]) !== jsonCanonico(n.respostas?.[i])) { e.push("As respostas de um bloco encerrado não podem mudar."); break; }
   }

@@ -15,6 +15,15 @@ import { $, e, icon, toast } from "../../../anki/js/ui.js";
 import { lerAndamento, gravarAndamento, apagarAndamento, guardarPendentes, lerPendentes } from "../local.js";
 import { htmlExplicacao, reportarItem } from "../explicacao.js";
 import { NOME_STEP } from "../comum.js";
+import { mesclarRevelados, garantirGabarito } from "../../../plataforma/js/banco.js";
+
+/* Gabarito no servidor (Supabase): a correção e a explicação só chegam depois de a
+   resposta ser registrada (r2a_responder). Tutor: uma questão por vez, ao confirmar;
+   cronometrado: o bloco inteiro, ao encerrar. No modo demonstração, o navegador já tem
+   o banco inteiro e nada muda. */
+function mesclarLinhas(ctx, linhas) {
+  mesclarRevelados(ctx.banco, Object.fromEntries((linhas || []).filter((x) => x.revelado).map((x) => [x.questao_id, x.revelado])));
+}
 
 let tela = null;
 let tNotas = {};
@@ -28,6 +37,11 @@ export default {
     if (!Array.isArray(s.confirmadas) || s.confirmadas.length !== s.ids.length) s.confirmadas = Array(s.ids.length).fill(false);
     const questoes = s.ids.map((id) => ctx.banco.porId.get(id));
     if (questoes.some((q) => !q)) { apagarAndamento(); toast("O banco de questões mudou e este bloco não pode continuar.", "erro", 7000); location.replace("#/"); return; }
+    /* bloco tutor retomado: as questões já confirmadas voltam com a explicação */
+    if (ctx.store.gabaritoNoServidor && s.confirmadas.some(Boolean)) {
+      try { await garantirGabarito(ctx.store, ctx.banco, s.ids.filter((_, i) => s.confirmadas[i])); }
+      catch (err) { toast("Não foi possível trazer as explicações já vistas: " + (err.message || err), "aviso", 8000); }
+    }
     const n = s.ids.length;
     const tutor = s.modo === "tutor";
     const salvar = () => { gravarAndamento(s); };
@@ -51,7 +65,9 @@ export default {
       salvar();
       const lista = paraRespostasBanco(s, ctx.banco.porId);
       try {
-        await ctx.store.saveRespostas(lista);
+        /* no servidor, reenvio de linha já registrada (tutor) não duplica */
+        if (ctx.store.gabaritoNoServidor) mesclarLinhas(ctx, await ctx.store.responderItens(lista, { revelar: true }));
+        else await ctx.store.saveRespostas(lista);
       } catch (err) {
         console.error(err);
         guardarPendentes(ctx.dono, lista);
@@ -74,13 +90,32 @@ export default {
       html: (i) => '<div data-tutor-extra>' + htmlTutor(i) + "</div>",
       clique(ev, i) {
         const t = ev.target;
-        if (t.closest("[data-confirmar]")) {
-          try { confirmarResposta(s, i); } catch (err) { toast(err.message, "aviso"); return true; }
-          salvar();
-          tela.redesenhar();
-          const h = $("[data-texp-titulo]", el);
-          h?.focus({ preventScroll: true });
-          h?.scrollIntoView({ block: "start", behavior: "smooth" });
+        const conf = t.closest("[data-confirmar]");
+        if (conf) {
+          const mostrar = () => {
+            salvar();
+            tela.redesenhar();
+            const h = $("[data-texp-titulo]", el);
+            h?.focus({ preventScroll: true });
+            h?.scrollIntoView({ block: "start", behavior: "smooth" });
+          };
+          if (!ctx.store.gabaritoNoServidor) {
+            try { confirmarResposta(s, i); } catch (err) { toast(err.message, "aviso"); return true; }
+            mostrar();
+            return true;
+          }
+          if (s.respostas[i] === null) { toast("Escolha uma alternativa antes de confirmar.", "aviso"); return true; }
+          /* registra a resposta no servidor e só então recebe a correção e a explicação */
+          conf.disabled = true;
+          const linha = { questao_id: s.ids[i], step: s.step, resposta: s.respostas[i], tempo_ms: Math.min(86400000, Math.round(s.tempos_ms[i] || 0)), marcada: !!s.marcadas[i], modo: "tutor", origem: "banco", sessao_id: s.id, posicao: i, respondida_em: new Date().toISOString() };
+          ctx.store.responderItens([linha], { revelar: true }).then((r) => {
+            mesclarLinhas(ctx, r);
+            confirmarResposta(s, i);
+            mostrar();
+          }).catch((err) => {
+            conf.disabled = false;
+            toast("A resposta não chegou ao servidor (" + (err.message || err) + "). Tente confirmar de novo.", "erro", 8000);
+          });
           return true;
         }
         if (t.closest("[data-proxima]")) { $("[data-prox]", el)?.click(); return true; }

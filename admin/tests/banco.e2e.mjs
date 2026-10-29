@@ -5,6 +5,8 @@
    2. recalibração: prévia, gravação e volta ao Angoff; desfecho real lançado e
       regressão ajustada e salva;
    3. blueprint: faixas oficiais e conferência dos formulários fixos;
+   3b. painel Angoff: criação, avaliação sem gabarito até a estimativa, duas rodadas
+      com retorno e discussão, Hofstee, encerramento e publicação;
    4. turma e ficha com um banco sintético grande (servido no lugar de
       banco-privado/, que fica fora do git): o critério "probabilidade baixa com alta
       confiança" acende e aparece na turma, na lista e na ficha;
@@ -22,6 +24,7 @@ import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
 import { gerarBancoSintetico } from "../../plataforma/tests/sintetico.mjs";
+import { prepararRede, vigiarErros } from "../../plataforma/tests/e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-admin-banco-capturas"));
@@ -64,6 +67,7 @@ async function etapa(nome, fn) {
 }
 async function abrir({ largura = 1440, altura = 900, tema = "light", grande = false } = {}) {
   const ctx = await navegador.newContext({ viewport: { width: largura, height: altura }, colorScheme: tema, locale: "pt-BR" });
+  await prepararRede(ctx, base);
   await ctx.addInitScript(() => {
     if (sessionStorage.getItem("__papel")) return;
     sessionStorage.setItem("__papel", "1");
@@ -79,8 +83,7 @@ async function abrir({ largura = 1440, altura = 900, tema = "light", grande = fa
   }
   const page = await ctx.newPage();
   const erros = [];
-  page.on("console", (m) => { if (m.type() === "error") erros.push(m.text()); });
-  page.on("pageerror", (e) => erros.push(e.message));
+  vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
   page.on("dialog", (d) => d.accept());
   return { ctx, page, erros };
 }
@@ -188,8 +191,8 @@ await etapa("2. recalibração, desfecho real e regressão", async () => {
   await page.getByRole("heading", { name: "Análise de itens", level: 1 }).waitFor();
   assert.ok(await page.locator("tbody").getByText(/^calibrado/).count() >= 30);
   await page.goto(base + "/admin/#/calibracao");
-  await page.getByRole("button", { name: "Voltar todos ao Angoff" }).click();
-  await confirmarDialogo(page, "Voltar ao Angoff");
+  await page.getByRole("button", { name: "Voltar todos à dificuldade-alvo" }).click();
+  await confirmarDialogo(page, "Voltar à dificuldade-alvo");
   await page.getByText("Calibração desfeita.").waitFor();
   /* desfecho real do participante de demonstração */
   await page.locator("#df-u").selectOption("demo-participante");
@@ -224,8 +227,8 @@ await etapa("3. blueprint e formulários fixos", async () => {
   assert.equal(await page.locator(".bp").count(), 3, "sistemas, disciplinas e competências");
   assert.equal(await page.locator(".bp").first().locator(".bp__row").count(), 11, "11 sistemas do Step 1");
   await page.getByRole("button", { name: "Conferir os formulários fixos" }).click();
-  await page.locator("[data-ff-out] .sinal").nth(2).waitFor();
-  assert.match(await page.locator("[data-ff-out]").innerText(), /Formulário A[\s\S]*Formulário B[\s\S]*Formulário C/);
+  await page.locator("[data-ff-out] .sinal").nth(1).waitFor();
+  assert.match(await page.locator("[data-ff-out]").innerText(), /Formulário A[\s\S]*Formulário B/);
   await axe(page, "blueprint");
   await page.goto(base + "/admin/#/blueprint?step=step2ck");
   await page.locator('nav.tabs a[aria-current="page"]', { hasText: "Step 2 CK" }).waitFor();
@@ -235,7 +238,7 @@ await etapa("3. blueprint e formulários fixos", async () => {
   await ctx.close();
 });
 
-await etapa("4. banco grande: risco de probabilidade baixa com alta confiança na turma, na lista e na ficha", async () => {
+await etapa("4. banco grande: risco de probabilidade baixa com precisão alta na turma, na lista e na ficha", async () => {
   const { ctx, page, erros } = await abrir({ grande: true });
   await page.goto(base + "/admin/?banco=completo#/");
   await page.getByRole("heading", { name: "Rendimento da turma", level: 1 }).waitFor();
@@ -243,25 +246,90 @@ await etapa("4. banco grande: risco de probabilidade baixa com alta confiança n
   await painel.waitFor();
   const lista = painel.locator(".sinais .sinal");
   const n = await lista.count();
-  assert.ok(n >= 1, "alguém com probabilidade baixa e alta confiança");
+  assert.ok(n >= 1, "alguém com probabilidade baixa e precisão alta");
   const nome = await lista.first().locator("a").innerText();
-  assert.match(await lista.first().innerText(), /alta confiança/);
+  assert.match(await lista.first().innerText(), /precisão alta/);
   await axe(page, "turma com banco grande");
   await page.screenshot({ path: join(saida, "04-turma-banco.png"), fullPage: true });
   await page.goto(base + "/admin/#/participantes?status=risco");
   await page.getByRole("heading", { name: "Participantes", level: 1 }).waitFor();
   const linha = page.locator("tbody tr", { hasText: nome });
-  assert.match(await linha.innerText(), /Probabilidade baixa no banco, com alta confiança \(alto\)/);
+  assert.match(await linha.innerText(), /Probabilidade baixa no banco, com precisão alta \(alto\)/);
   await linha.locator(".ptab__nome").click();
   await page.getByRole("heading", { name: nome, level: 1 }).waitFor();
   const card = page.locator(".bq__card--risco");
   await card.waitFor();
-  assert.match(await card.innerText(), /Alta confiança/);
+  assert.match(await card.innerText(), /Precisão alta/);
   assert.match(await card.innerText(), /intervalo de 90%/);
   assert.match(await page.locator(".sinais").first().innerText(), /Probabilidade baixa no banco/);
   assert.match(await page.locator(".sugs").innerText(), /Rever com o aluno o plano e a data/);
   await axe(page, "ficha com banco grande");
   await page.screenshot({ path: join(saida, "05-ficha-banco.png"), fullPage: true });
+  assert.deepEqual(erros, []);
+  await ctx.close();
+});
+
+await etapa("4b. painel Angoff: item sem gabarito até a estimativa, duas rodadas com retorno e discussão, Hofstee e publicação", async () => {
+  const { ctx, page, erros } = await abrir();
+  await page.goto(base + "/admin/#/angoff");
+  await page.getByRole("heading", { name: "Painel Angoff", level: 1 }).waitFor();
+  await page.locator("#pn-n").fill("4");
+  await page.getByRole("button", { name: "Criar o painel" }).click();
+  await page.getByRole("heading", { name: "Painel Angoff do formulário A", level: 1 }).waitFor();
+  await axe(page, "angoff detalhe");
+  const avaliarTudo = async (valor) => {
+    await page.getByRole("link", { name: /avaliação/ }).click();
+    for (let k = 0; k < 4; k++) {
+      await page.getByRole("heading", { name: "Item " + (k + 1) + " de 4", level: 1 }).waitFor();
+      const art = page.locator("article.enu-painel");
+      assert.equal(await art.locator(".gar--ok").count(), 0, "sem gabarito antes da estimativa");
+      await page.locator("#es-v").fill(String(valor + k));
+      await page.getByRole("button", { name: /Registrar e ver o gabarito|Atualizar a estimativa/ }).click();
+      await art.locator(".angoff__rev").waitFor();
+      assert.equal(await art.locator(".enu__alt .gar--ok").count(), 1, "gabarito depois da estimativa");
+      if (k === 0 && valor === 60) await axe(page, "angoff avaliar");
+      if (k < 3) await page.getByRole("button", { name: "Próximo item" }).click();
+    }
+    await page.getByRole("link", { name: "Voltar ao painel" }).click();
+  };
+  await avaliarTudo(60);
+  await page.getByRole("button", { name: "Fechar a rodada 1" }).click();
+  /* espera a tela da rodada fechada (o painel recalcula os escores do Hofstee pelo theta) */
+  await page.getByRole("button", { name: "Abrir a rodada 2" }).waitFor();
+  await page.locator("#ri-t").waitFor();
+  const tabRi = await page.locator("section[aria-labelledby=ri-t]").innerText();
+  assert.match(tabRi, /n 11\b/, "o admin e os 10 mentores fictícios na rodada 1: " + tabRi.slice(0, 400));
+  await page.locator("#ds-txt").fill("O distrator C atrai o examinando limítrofe.");
+  await page.getByRole("button", { name: "Comentar" }).click();
+  await page.locator(".angoff__disc li").first().waitFor();
+  await page.getByRole("button", { name: /Salvar o Hofstee|Atualizar o Hofstee/ }).click();
+  await page.getByRole("button", { name: "Abrir a rodada 2" }).click();
+  await page.getByRole("link", { name: /avaliação/ }).waitFor();
+  await page.getByRole("link", { name: /avaliação/ }).click();
+  await page.locator(".angoff__fb").waitFor();
+  assert.match(await page.locator(".angoff__fb").innerText(), /Média do painel[\s\S]*Acerto real na turma/, "retorno da rodada 1 com o p observado");
+  await page.getByRole("link", { name: "Voltar ao painel" }).click();
+  await avaliarTudo(62);
+  await page.getByRole("button", { name: "Encerrar o painel" }).click();
+  await confirmarDialogo(page, "Encerrar");
+  /* Hofstee obrigatório: se a verificação não passa (ou não tem dados), a tela pede a
+     justificativa antes de publicar e recusa sem ela */
+  const verif = await page.locator(".tiles").innerText();
+  const passa = /Verificação do corte\s*Passa\b/i.test(verif);
+  const just = page.locator("[data-justificativa]");
+  assert.equal(await just.count(), passa ? 0 : 1, "campo de justificativa só quando a verificação de Hofstee não passa: " + verif.slice(0, 300));
+  if (!passa) {
+    await page.getByRole("button", { name: "Publicar o Angoff do painel" }).click();
+    await page.getByText(/Escreva a justificativa/).first().waitFor();
+    assert.equal(await page.locator("[data-acao-out] .alert").count(), 0, "sem justificativa, nada é publicado");
+    await just.fill("Painel de demonstração: a curva de reprovação da turma fictícia não representa a turma real.");
+  }
+  await page.getByRole("button", { name: "Publicar o Angoff do painel" }).click();
+  await page.locator("[data-acao-out] .alert").waitFor();
+  assert.match(await page.locator("[data-acao-out]").innerText(), /publicado em 4 itens/);
+  assert.match(await page.locator(".tiles").innerText(), /hofstee[\s\S]*verificação do corte/i);
+  await page.screenshot({ path: join(saida, "04b-angoff.png"), fullPage: true });
+  await semRolagem(page, "angoff");
   assert.deepEqual(erros, []);
   await ctx.close();
 });
@@ -274,7 +342,8 @@ await etapa("5. axe e sem rolagem horizontal em 1440 e 390 px, temas claro e esc
     ["/admin/#/calibracao", "Recalibração e desfechos", "calibracao"],
     ["/admin/#/blueprint?step=step2ck", "Blueprint e cobertura do banco", "blueprint"],
     ["/admin/#/p/demo-sint-hugo-ficticio", "Hugo Fictício", "ficha"],
-    ["/admin/#/participantes", "Participantes", "participantes"]
+    ["/admin/#/participantes", "Participantes", "participantes"],
+    ["/admin/#/angoff", "Painel Angoff", "angoff"]
   ];
   for (const largura of [1440, 390]) {
     for (const tema of ["light", "dark"]) {

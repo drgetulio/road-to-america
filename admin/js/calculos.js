@@ -459,7 +459,7 @@ export function sugestoesAcao(row, { simulados = [], config = CONFIG_PADRAO, ago
       r.detalhe + " Vale conferir no relatório as áreas mais fracas e ajustar a divisão do tempo antes da próxima CBSSA.");
   }
 
-  /* banco de questões: probabilidade baixa com alta confiança (admin/js/analise.js) */
+  /* banco de questões: probabilidade baixa com precisão alta em relação ao padrão do banco (admin/js/analise.js) */
   for (const r of av.riscos.filter((x) => x.codigo === "banco_probabilidade_baixa")) {
     const est = row.banco?.[r.step];
     const baixas = (est?.perfil?.sistema || []).filter((x) => x.classe === "mais_baixo").slice(0, 3)

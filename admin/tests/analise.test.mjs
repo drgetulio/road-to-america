@@ -138,7 +138,7 @@ test("probabilidade da turma: baixa com alta confiança vira risco alto; prelimi
   assert.equal(f.status, "risco");
   assert.equal(f.riscos[0].codigo, CODIGO_RISCO_BANCO);
   assert.equal(f.riscos[0].nivel, "alto");
-  assert.match(f.riscos[0].detalhe, /alta confiança/);
+  assert.match(f.riscos[0].detalhe, /precisão alta/);
   assert.match(f.riscos[0].detalhe, /não é resultado oficial/);
   assert.equal(fo.status, "em_dia");
   assert.equal(po.status, "em_dia", "estimativa preliminar não acende o critério");

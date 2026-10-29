@@ -5,19 +5,21 @@
    ph-cards ph-flag ph-warning ph-chat-text ph-target ph-printer ph-path ph-info ph-check-circle
    ph-x-circle ph-minus-circle ph-clock ph-note-pencil ph-chart-bar ph-flag-banner */
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
-import { prontidaoCombinada, PADRAO_STEP2CK } from "../../plataforma/js/psicometria.js";
+import { prontidaoCombinada, PADRAO_STEP2CK, nomePadrao, padraoProvisorio } from "../../plataforma/js/psicometria.js";
 import { prontidao } from "../../plataforma/js/desempenho.js";
-import { nomeChave } from "../../plataforma/js/banco.js";
+import { nomeChave, garantirGabarito, resumoRevisao } from "../../plataforma/js/banco.js";
 import { MOTIVOS_REPORTE, LIMITE_REPORTE } from "../../plataforma/js/registros.js";
 import {
   corrigirRegistro, estimativaDoSimulado, estimativaGeral, resultadoEstimado, perfilRelatorio, prioridades, resumoBlocos,
-  itensRevisao, itensJaVistos, filtrarItens, ritmoDoDia, linkCriarFlashcard, textoRegraConfianca, leituraConfianca, posicaoEscala, NOMES_TIPO, ESCALA_PERFIL, CK_PARA_STEP1
+  itensRevisao, itensJaVistos, filtrarItens, ritmoDoDia, linkCriarFlashcard, textoRegraConfianca, leituraConfianca, posicaoEscala, validadeDoSimulado, NOMES_TIPO, ESCALA_PERFIL, CK_PARA_STEP1
 } from "./relatorio.js";
+import { htmlMidiaItem } from "../../plataforma/js/midia.js";
 import { resumoDoDia } from "./dia-prova.js";
 import { htmlTabelaItem } from "./interface-bloco.js";
 import { linkFlashcards } from "./rotulos.js";
 import { relogio } from "./resultado.js";
 import { pct, prob, num, duracao, plural } from "./formato.js";
+import { LIMITE_JA_VISTOS as LIMITE_JA_VISTOS_TXT } from "../../plataforma/js/formularios.js";
 import { $, $$, e, icon, toast, dialogo, dataHora } from "./dom.js";
 
 const ICONE_CLASSE = { mais_baixo: "trend-down", igual: "equals", mais_alto: "trend-up", insuficiente: "hourglass-medium" };
@@ -53,18 +55,22 @@ function tabelaPerfil(p, id) {
   "</section>";
 }
 
-function htmlItem(x, retorno) {
+/* alheio: relatório de um participante aberto pela equipe. Criar flashcard e reportar
+   erro são ações do aluno sobre a própria prova e não aparecem; os rótulos falam da
+   resposta do participante, não da "sua". */
+function htmlItem(x, retorno, { alheio = false } = {}) {
   const q = x.questao;
   if (!q) return '<div class="qrev__corpo"><p class="muted">Este item saiu do banco depois do simulado.</p></div>';
-  const linkCard = linkCriarFlashcard(q, { retorno });
+  const linkCard = alheio ? "" : linkCriarFlashcard(q, { retorno });
+  const SUA = alheio ? "Resposta do participante" : "Sua resposta";
   return '<div class="qrev__corpo">' +
     '<p lang="en" class="qrev__texto">' + e(q.vinheta) + "</p>" +
-    htmlTabelaItem(q.tabela) +
+    htmlTabelaItem(q.tabela) + htmlMidiaItem(q.midia) +
     '<p lang="en" class="qrev__texto" style="font-weight:600">' + e(q.pergunta) + "</p>" +
     '<ul class="alts-rev alts-rev--explic">' + q.alternativas.map((a) => {
       const sua = x.resposta === a.letra;
       const cor = a.letra === q.correta;
-      const tag = cor && sua ? '<span class="chip chip--ok">' + icon("check") + "Sua resposta, correta</span>" : cor ? '<span class="chip chip--ok">' + icon("check") + "Correta</span>" : sua ? '<span class="chip chip--erro">' + icon("x") + "Sua resposta</span>" : "";
+      const tag = cor && sua ? '<span class="chip chip--ok">' + icon("check") + SUA + ", correta</span>" : cor ? '<span class="chip chip--ok">' + icon("check") + "Correta</span>" : sua ? '<span class="chip chip--erro">' + icon("x") + SUA + "</span>" : "";
       const ex = q.explicacoes_alternativas?.[a.letra];
       return '<li class="' + (cor ? "is-correta " : "") + (sua ? "is-sua" : "") + '"><span class="letra">' + a.letra + '.</span><span lang="en">' + e(a.texto) + "</span>" + tag +
         (ex ? '<p class="alts-rev__ex" lang="en">' + e(ex) + "</p>" : "") + "</li>";
@@ -73,10 +79,10 @@ function htmlItem(x, retorno) {
     (q.objetivo_educacional ? '<div class="explic explic--obj"><h4>' + icon("target") + "Objetivo educacional</h4><p lang=\"en\">" + e(q.objetivo_educacional) + "</p></div>" : "") +
     (q.explicacao ? '<div class="explic"><h4>Explanation</h4><p lang="en">' + e(q.explicacao) + "</p></div>" : "") +
     (q.explicacao_pt ? '<div class="explic"><h4>Resumo em português</h4><p>' + e(q.explicacao_pt) + "</p></div>" : "") +
-    (x.nota ? '<div class="explic"><h4>Sua anotação na prova</h4><p>' + e(x.nota) + "</p></div>" : "") +
+    (x.nota ? '<div class="explic"><h4>' + (alheio ? "Anotação do participante na prova" : "Sua anotação na prova") + "</h4><p>" + e(x.nota) + "</p></div>" : "") +
     '<p class="fine">Tempo neste item: ' + relogio(x.tempo_ms) + (x.tempo_ms > 90000 ? ", acima dos 90 s de referência" : "") + ". Bloco " + (x.bloco + 1) + ", item " + (x.posicao + 1) + "." + (q.fonte ? " Fonte: " + e(q.fonte) : "") + "</p>" +
-    '<p class="acoes">' + (linkCard ? '<a class="btn btn--ghost btn--sm" href="' + e(linkCard) + '">' + icon("cards") + "Criar flashcard</a>" : "") +
-      '<button type="button" class="btn btn--ghost btn--sm" data-reportar="' + e(q.id) + '">' + icon("warning") + "Reportar erro no item</button></p>" +
+    (alheio ? "" : '<p class="acoes">' + (linkCard ? '<a class="btn btn--ghost btn--sm" href="' + e(linkCard) + '">' + icon("cards") + "Criar flashcard</a>" : "") +
+      '<button type="button" class="btn btn--ghost btn--sm" data-reportar="' + e(q.id) + '">' + icon("warning") + "Reportar erro no item</button></p>") +
   "</div>";
 }
 
@@ -123,6 +129,9 @@ export default {
       ctx.store.listNbme ? ctx.store.listNbme({ step, userId }).catch(() => []) : []
     ]);
     const form = reg.formulario;
+    /* gabarito no servidor: o simulado já foi corrigido; o gabarito e as explicações
+       dos itens respondidos vêm agora */
+    await garantirGabarito(ctx.store, banco, form.blocos.flat());
     const { resultado, respostas } = corrigirRegistro(reg, banco.porId);
     const est = estimativaDoSimulado({ form, linhas: respostas, porId: banco.porId, modelos });
     const geral = estimativaGeral({ step, respostas: todas, porId: banco.porId, modelos });
@@ -136,10 +145,18 @@ export default {
     const pr = prontidaoCombinada({ exit18: prontidao(nbme, step), banco: geral.n ? geral : null });
     const pe = est.percentual_esperado;
     const jaVistos = itensJaVistos(reg, todas);
+    const val = validadeDoSimulado(reg, jaVistos);
+    const semMidia = !form.blocos.flat().some((qid) => (banco.porId.get(qid)?.midia || []).length);
     const retorno = "../simulado/#/relatorio/" + encodeURIComponent(id);
     const conf = est.confianca;
-    const xT = posicaoEscala(est.theta), xLo = posicaoEscala(est.ic90[0]), xHi = posicaoEscala(est.ic90[1]);
+    /* a escala é relativa ao limiar em uso (0 no padrão do banco; o corte ligado à NBME quando houver) */
+    const centro = est.corte.centro || 0;
+    const xT = posicaoEscala(est.theta - centro), xLo = posicaoEscala(est.ic90[0] - centro), xHi = posicaoEscala(est.ic90[1] - centro);
     const ck = step === "step2ck";
+    const provisorio = padraoProvisorio(est.corte.origem);
+    const revisao = resumoRevisao(form.blocos.flat().map((qid) => banco.porId.get(qid)));
+    const sens = est.sensibilidade;
+    const fora = est.fora_do_corte || { n: 0 };
 
     el.innerHTML =
       '<div class="wrap section-sm res rel">' +
@@ -150,14 +167,24 @@ export default {
           (alheio ? '<p class="fine" data-relatorio-alheio>Relatório de um participante, aberto pela equipe. As estimativas usam as respostas e as autoavaliações dessa conta.</p>' : "") +
         "</div>" +
         '<p class="rel__oficial">' + icon("info") + "<span>Relatório da Road to America, calculado pelo método de PSICOMETRIA.md. Não é documento do USMLE nem do NBME e não substitui as autoavaliações oficiais.</span></p>" +
+        '<div class="aviso-conta' + (val.valido_prontidao ? " aviso-conta--ok" : "") + '" data-validade>' + icon(val.valido_prontidao ? "seal-check" : "warning") + "<p><strong>Condições padronizadas: " + (val.padronizado ? "sim" : "não") + ".</strong> " +
+          (val.padronizado ? "Dia em condições oficiais, sem paradas, como na prova." : val.condicoes === "oficiais" ? "O dia em condições oficiais foi interrompido." : "Dia em condições de estudo, com a opção de parar entre blocos.") +
+          (val.reaplicacao ? " <strong>Reaplicação, não comparável:</strong> mais de " + Math.round(LIMITE_JA_VISTOS_TXT * 100) + "% dos itens já tinham sido respondidos antes." : "") +
+          (val.valido_prontidao ? " Esta estimativa vale como leitura de prontidão do banco." : (() => {
+            const outros = val.motivos.filter((m) => !/condições de estudo|interrompido|reaplicação/.test(m));
+            return " Por isso a estimativa abaixo é leitura de estudo e não entra na leitura de prontidão" + (outros.length ? "; além disso, " + e(outros.join("; ")) : "") + ".";
+          })()) + "</p></div>" +
+        (semMidia ? '<p class="aviso-conta">' + icon("info") + "<span>Os itens deste formulário não têm imagem, áudio nem vídeo: ECG, exames de imagem e histologia aparecem descritos no texto, o que deixa o item mais fácil que na prova. O acerto aqui tende a ficar acima do que seria com as imagens.</span></p>" : "") +
+        (revisao.aviso ? '<p class="aviso-conta" data-aviso-revisao>' + icon("warning") + "<span>" + e(revisao.aviso) + "</span></p>" : "") +
+        (fora.n ? '<p class="aviso-conta" data-fora-corte>' + icon("info") + "<span>" + plural(fora.n, "item público deste formulário (publicado no site, com gabarito aberto) ficou", "itens públicos deste formulário (publicados no site, com gabarito aberto) ficaram") + " fora da estimativa, como os itens de pré-teste da prova real. Eles contam nos acertos do dia, mas não na probabilidade, na habilidade nem no perfil.</span></p>" : "") +
 
         '<article class="embarque rel__res rel__res--' + res.codigo + '" aria-labelledby="t-resultado">' +
           '<div class="embarque__main">' +
-            '<p class="embarque__top"><span>' + (ck ? "Padrão de aprovação" : "Resultado estimado") + "</span><span>" + (res.alta ? icon("seal-check") + " Alta confiança" : icon("hourglass-medium") + " Estimativa preliminar") + "</span></p>" +
+            '<p class="embarque__top"><span>' + (ck ? "Limiar do banco" : "Resultado estimado") + (val.valido_prontidao ? "" : ", leitura de estudo") + "</span><span>" + (res.alta ? icon("seal-check") + " " + e(conf.texto_curto || "Precisão alta") : icon("hourglass-medium") + " Estimativa preliminar") + "</span></p>" +
             '<h2 class="rel__titulo" id="t-resultado">' + e(res.titulo) + "</h2>" +
             (res.decidido ? "" : '<p class="rel__frase">' + e(res.frase) + "</p>") +
             '<dl class="embarque__dados">' +
-              "<div><dt>" + (ck ? "Probabilidade de atingir o padrão" : "Probabilidade de aprovação") + "</dt><dd>" + prob(est.p_aprovacao) + "<small>P(θ acima do limiar), " + plural(est.n, "item", "itens") + "</small></dd></div>" +
+              "<div><dt>Probabilidade de estar acima do limiar do banco</dt><dd>" + prob(est.p_aprovacao) + "<small>padrão " + e(nomePadrao(est.corte.origem)) + ", com a incerteza dele; " + plural(est.n, "item que conta", "itens que contam") + "</small></dd></div>" +
               "<div><dt>Habilidade estimada</dt><dd>" + num(est.theta) + "<small>logit; intervalo de 90%: " + num(est.ic90[0]) + " a " + num(est.ic90[1]) + "</small></dd></div>" +
               "<div><dt>Acertos</dt><dd>" + resultado.acertos + "<small>de " + resultado.total + " (" + pct(resultado.percentual) + "), " + resultado.em_branco + " em branco</small></dd></div>" +
               "<div><dt>Percentual esperado</dt><dd>" + pct(pe.media) + "<small>num formulário como este; intervalo de 90%: " + pct(pe.ic90[0]) + " a " + pct(pe.ic90[1]) + "</small></dd></div>" +
@@ -169,21 +196,22 @@ export default {
         "</article>" +
 
         '<section class="cartao" aria-labelledby="t-escala"><h2 class="h-sm" id="t-escala">Onde você ficou em relação ao limiar</h2>' +
-          '<div class="escala" role="img" aria-label="Habilidade estimada ' + e(num(est.theta)) + " logit, intervalo de 90% de " + e(num(est.ic90[0])) + " a " + e(num(est.ic90[1])) + '; o limiar de aprovação é 0">' +
+          '<div class="escala" role="img" aria-label="Distância ao limiar do banco: ' + e(num(est.theta - centro)) + " logit, intervalo de 90% de " + e(num(est.ic90[0] - centro)) + " a " + e(num(est.ic90[1] - centro)) + '; o limiar do banco é 0">' +
             '<span class="escala__zona escala__zona--baixa" aria-hidden="true">abaixo do limiar</span><span class="escala__zona escala__zona--alta" aria-hidden="true">acima do limiar</span>' +
             '<span class="escala__lim" aria-hidden="true"><span>limiar</span></span>' +
             '<span class="escala__ic" style="left:' + xLo.toFixed(1) + "%;width:" + Math.max(1, xHi - xLo).toFixed(1) + '%" aria-hidden="true"></span>' +
             '<span class="escala__pt" style="left:' + xT.toFixed(1) + '%" aria-hidden="true"><span>você</span></span>' +
           "</div>" +
-          '<p class="fine">Escala do modelo de Rasch ancorado no Angoff, de ' + ESCALA_PERFIL.min + " a +" + ESCALA_PERFIL.max + " logit. O 0 é o examinando no limiar de aprovação: ele acerta cada item com a probabilidade que os autores atribuíram no Angoff. A barra é o intervalo de 90% da sua habilidade." + (Math.abs(est.theta) > ESCALA_PERFIL.max ? " A sua estimativa (" + e(num(est.theta)) + " logit) fica fora da escala desenhada e aparece no extremo." : "") + "</p>" +
+          '<p class="fine">Escala do modelo de Rasch, de ' + ESCALA_PERFIL.min + " a +" + ESCALA_PERFIL.max + " logit. O 0 é o examinando no limiar do banco: " + (est.corte.origem === "nbme" ? "a habilidade em que o escore NBME previsto atinge o padrão de aprovação, pela ligação com as autoavaliações da turma." : est.corte.origem === "painel" ? "ele acerta cada item com o Angoff publicado pelo painel de juízes." : "ele acerta cada item com a dificuldade-alvo que os autores deram ao item (padrão provisório, ainda sem painel de juízes nem ligação com a NBME).") + " A barra é o intervalo de 90% da sua habilidade, só com a incerteza da medida. Somando a incerteza do padrão, a distância ao limiar fica entre " + e(num(est.ic90_relativo[0])) + " e " + e(num(est.ic90_relativo[1])) + " logit (intervalo de 90%)." + (Math.abs(est.theta) > ESCALA_PERFIL.max ? " A sua estimativa (" + e(num(est.theta)) + " logit) fica fora da escala desenhada e aparece no extremo." : "") + "</p>" +
           "<p><strong>" + e(res.confianca) + ".</strong> " + e(leituraConfianca(est)) + "</p>" +
           (conf.motivos?.length ? '<ul class="lista-check">' + conf.motivos.map((m) => "<li>" + icon("info") + "<span>" + e(m) + "</span></li>").join("") + "</ul>" : "") +
           '<p class="fine">' + e(textoRegraConfianca(est)) + "</p>" +
-          (est.desfechos ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração: modelo ajustado com desfechos fictícios (" + est.desfechos.modelo.n + " examinandos simulados). Por ele" : "Pelo modelo calibrado com os resultados oficiais da turma (" + est.desfechos.modelo.n + " participantes)") + ", a probabilidade de aprovação é " + prob(est.desfechos.p_aprovacao) + ". Estimativa da Road to America, não é resultado oficial.</span></p>" : "") +
+          (sens ? '<p class="aviso-conta" data-sensibilidade>' + icon("info") + "<span><strong>Se o padrão provisório estiver errado.</strong> Os itens ainda não têm imagem e passaram só por revisão automatizada, então podem ser mais fáceis do que a dificuldade-alvo supõe. Se o banco inteiro for cerca de " + sens.pontos + " pontos percentuais mais fácil (" + num(sens.deslocamento) + " logit), a sua probabilidade seria " + prob(sens.itens_mais_faceis) + "; se for mais difícil na mesma medida, " + prob(sens.itens_mais_dificeis) + ". " + (sens.muda_leitura ? "Num desses cenários a sua leitura mudaria de faixa." : "Nos dois cenários a sua leitura fica na mesma faixa.") + "</span></p>" : "") +
+          (est.desfechos ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração: modelo ajustado com desfechos fictícios (" + est.desfechos.modelo.n + " examinandos simulados). Por ele" : "Pelo modelo calibrado com os resultados oficiais da turma (" + est.desfechos.modelo.n + " participantes, " + est.desfechos.modelo.reprovados + " reprovações" + (est.desfechos.modelo.taxa_resposta !== null ? ", taxa de resposta de " + pct(est.desfechos.modelo.taxa_resposta) : "") + ")") + ", a probabilidade de aprovação é " + prob(est.desfechos.p_aprovacao) + (est.desfechos.ic90?.[0] !== null && est.desfechos.ic90?.[0] !== undefined ? " (intervalo de 90% pela incerteza do modelo: " + prob(est.desfechos.ic90[0]) + " a " + prob(est.desfechos.ic90[1]) + ")" : "") + ". " + e(est.desfechos.texto) + ". Estimativa da Road to America, não é resultado oficial.</span></p>" : "") +
           (ck ? (est.escore ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração. " : "") + "Nota esperada pelo modelo calibrado com notas reais (não é nota oficial): " + Math.round(est.escore.media) + " (intervalo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "); probabilidade de nota de pelo menos " + PADRAO_STEP2CK + ": " + prob(est.escore.p_limiar) + ".</span></p>"
-            : '<p class="aviso-conta">' + icon("info") + "<span><strong>Sem nota de três dígitos.</strong> O limiar do banco foi fixado por Angoff para representar o padrão mínimo de " + PADRAO_STEP2CK + ". A nota só será estimada depois da calibração com escores reais da turma.</span></p>") : "") +
+            : '<p class="aviso-conta">' + icon("info") + "<span><strong>Sem nota de três dígitos.</strong> O limiar do banco foi fixado para representar o padrão mínimo de " + PADRAO_STEP2CK + ", hoje pela dificuldade-alvo dos itens. A nota só será estimada depois da calibração com escores reais da turma.</span></p>") : "") +
           '<p class="fine">' + est.avisos.map(e).join(" ") + "</p>" +
-          (jaVistos.n ? '<p class="aviso-conta">' + icon("info") + "<span>" + plural(jaVistos.n, "item deste formulário você já tinha respondido", "itens deste formulário você já tinha respondido") + " no banco antes deste dia (" + pct(jaVistos.n / jaVistos.total) + "). A repetição mede em parte a memória do item e tende a subir o acerto; para uma leitura mais limpa, use o formulário personalizado, que prioriza itens não vistos.</span></p>" : "") +
+          (jaVistos.n ? '<p class="aviso-conta">' + icon("info") + "<span>" + plural(jaVistos.n, "item deste formulário você já tinha respondido", "itens deste formulário você já tinha respondido") + " no banco antes deste dia (" + pct(jaVistos.n / jaVistos.total) + "). A repetição mede em parte a memória do item e tende a subir o acerto" + (val.reaplicacao ? "; por isso este simulado conta como reaplicação, não comparável." : "; para uma leitura mais limpa, use o formulário reservado ou o personalizado, que prioriza itens não vistos.") + "</span></p>" : "") +
         "</section>" +
 
         '<section class="historico" aria-labelledby="t-perfil">' +
@@ -191,7 +219,7 @@ export default {
           '<p class="fine">Cada área tem uma estimativa própria e o intervalo de 90%. Mais baixo: o intervalo inteiro abaixo do limiar. Mais alto: inteiro acima. Igual: cruza o limiar. Com menos de 5 itens, a área fica sem classificação.</p></div>' +
           '<ul class="legenda" aria-label="Legenda do perfil"><li>' + chipClasse({ classe: "mais_baixo", rotulo_classe: "Mais baixo" }) + "</li><li>" + chipClasse({ classe: "igual", rotulo_classe: "Igual" }) + "</li><li>" + chipClasse({ classe: "mais_alto", rotulo_classe: "Mais alto" }) + "</li><li><span class=\"legenda__lim\" aria-hidden=\"true\"></span>limiar de aprovação</li></ul>" +
           perfil.map((p, i) => tabelaPerfil(p, "t-perfil-" + i)).join("") +
-          '<p class="fine">"Você" é o seu acerto bruto na área; "Limiar" é o acerto esperado do examinando no limiar nos mesmos itens (média do Angoff). O relatório oficial do USMLE mostra um perfil parecido a quem é reprovado; aqui ele aparece sempre, para orientar o estudo.</p>' +
+          '<p class="fine">"Você" é o seu acerto bruto na área; "Limiar" é o acerto esperado do examinando no limiar nos mesmos itens (' + (provisorio ? "média da dificuldade-alvo dos itens, padrão provisório" : "pelo padrão " + e(nomePadrao(est.corte.origem))) + '). O relatório oficial do USMLE mostra um perfil parecido a quem é reprovado; aqui ele aparece sempre, para orientar o estudo.</p>' +
         "</section>" +
 
         (prio.length ? '<section class="cartao" aria-labelledby="t-prio"><h2 class="h-sm" id="t-prio">Por onde começar a revisar</h2><ul class="revisar">' +
@@ -212,7 +240,8 @@ export default {
         "</section>" +
 
         '<section class="cartao" aria-labelledby="t-geral"><h2 class="h-sm" id="t-geral">Indicador do banco e prontidão</h2>' +
-          (geral.n ? "<p>Com todas as suas respostas do " + NOME_STEP[step] + " no banco (" + plural(geral.n, "item", "itens") + "), a probabilidade " + (ck ? "de atingir o padrão" : "de aprovação") + " é <strong>" + prob(geral.p_aprovacao) + "</strong>, " + (geral.confianca.alta ? "com alta confiança" : "como estimativa preliminar") + ".</p>" : "") +
+          (geral.n ? "<p>Com todas as suas respostas do " + NOME_STEP[step] + " no banco (" + plural(geral.n, "item", "itens") + "), a probabilidade de estar acima do limiar do banco é <strong>" + prob(geral.p_aprovacao) + "</strong>, " + (geral.confianca.alta ? "com precisão alta em relação ao padrão do banco" : "como estimativa preliminar") + ".</p>" +
+            '<p class="fine" data-indicador-nota>Este número pode diferir do resultado do formulário mesmo quando as respostas são as mesmas: o indicador do banco junta as respostas de todas as sessões (só a primeira de cada item, com peso menor no modo tutor) e repesa cada sistema pela composição do outline; o resultado acima usa só as respostas deste formulário' + (fora.n ? " (sem os itens públicos)" : "") + ", que já segue o outline e por isso não é repesado.</p>" : "") +
           '<div class="aviso-conta' + (pr.status === "pronto" ? " aviso-conta--ok" : "") + '">' + icon("flag-banner") + "<p><strong>EXIT 18.</strong> " + e(pr.mensagem) + "</p></div>" +
           '<p class="fine">' + e(pr.regra) + "</p>" +
         "</section>" +
@@ -256,11 +285,11 @@ export default {
       const d = ev.target;
       if (!d.matches?.("details") || !d.open || d.dataset.pronto) return;
       d.dataset.pronto = "1";
-      d.insertAdjacentHTML("beforeend", htmlItem(itens[Number(d.dataset.i)], retorno));
+      d.insertAdjacentHTML("beforeend", htmlItem(itens[Number(d.dataset.i)], retorno, { alheio }));
     }, true);
     box.addEventListener("click", (ev) => {
       const b = ev.target.closest("[data-reportar]");
-      if (b) reportar(ctx, b.dataset.reportar);
+      if (b && !alheio) reportar(ctx, b.dataset.reportar);
     });
     $$("[data-filtro]", el).forEach((b) => b.addEventListener("click", () => {
       filtro = b.dataset.filtro;

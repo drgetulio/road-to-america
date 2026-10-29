@@ -5,7 +5,7 @@
    - análise de itens para a tabela e a ficha do item (p, ponto-bisserial corrigida,
      D, infit, outfit, alertas), com os distratores por quartil de habilidade;
    - probabilidade de aprovação de cada participante pelo banco (estimarAluno) e o
-     critério de risco "probabilidade baixa com alta confiança";
+     critério de risco "probabilidade baixa com precisão alta";
    - distribuição da turma;
    - cobertura do banco contra as faixas oficiais do outline.
    Método em plataforma/PSICOMETRIA.md (seções 11, 12, 13 e 19). Sem DOM. */
@@ -13,7 +13,7 @@ import {
   analisarItens, estimarAluno, eap, bDoItem, prontidaoCombinada, expit,
   REGRA_CONFIANCA, LIMIARES_ITEM, PADRAO_STEP2CK, textoProbabilidade
 } from "../../plataforma/js/psicometria.js";
-import { TAXONOMIA, CAMPO_MULTIRROTULO, ITENS_FORMULARIO_OFICIAL, sistemasDoOutline, nomeChave } from "../../plataforma/js/banco.js";
+import { TAXONOMIA, CAMPO_MULTIRROTULO, ITENS_FORMULARIO_OFICIAL, sistemasDoOutline, pesosDoOutline, nomeChave } from "../../plataforma/js/banco.js";
 
 export const STEPS = ["step1", "step2ck"];
 
@@ -186,7 +186,7 @@ export function ordenarItens(linhas, chave = "prioridade", dir = "desc") {
 /* ---------- probabilidade de aprovação da turma ---------- */
 
 export const CODIGO_RISCO_BANCO = "banco_probabilidade_baixa";
-export const ROTULO_RISCO_BANCO = "Probabilidade baixa no banco, com alta confiança";
+export const ROTULO_RISCO_BANCO = "Probabilidade baixa no banco, com precisão alta";
 
 /* Estimativa de cada participante nos dois Steps.
    rows: linhas do painel (montarLinha); respostas: store.listRespostas({ todos: true });
@@ -203,9 +203,11 @@ export function estimativasTurma({ rows, respostas, banco, modelos = null }) {
     for (const step of STEPS) {
       const doStep = rs.filter((r) => r.step === step);
       e[step] = doStep.length ? estimarAluno({
-        step, respostas: doStep, itens: banco.porId, sistemas: sistemasDoOutline(step),
+        step, respostas: doStep, itens: banco.porId, sistemas: sistemasDoOutline(step), pesosSistemas: pesosDoOutline(step),
         modeloDesfechos: modelos?.[step]?.desfechos || null,
-        modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null
+        modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null,
+        ligacaoNbme: modelos?.[step]?.ligacao_nbme || null,
+        efeitoModo: modelos?.[step]?.efeito_modo || null
       }) : null;
       /* modelo gravado no modo demonstração: desfechos fictícios, a tela precisa dizer */
       if (e[step]?.desfechos) e[step].desfechos.demonstracao = !!modelos?.[step]?.demonstracao;
@@ -223,8 +225,8 @@ export function stepsPendentes(row) {
 }
 
 /* Critério de risco do banco: probabilidade de aprovação de no máximo 10% com
-   alta confiança (a mesma regra de PSICOMETRIA.md, seção 7) num Step pendente.
-   Nível alto: com alta confiança, a estimativa já é decisiva. */
+   precisão alta (a mesma regra de PSICOMETRIA.md, seção 7, já com a incerteza do
+   padrão) num Step pendente. Nível alto: com precisão alta, a estimativa já é decisiva. */
 export function riscosBanco(row, est, { regra = REGRA_CONFIANCA } = {}) {
   const out = [];
   for (const step of stepsPendentes(row)) {
@@ -233,7 +235,7 @@ export function riscosBanco(row, est, { regra = REGRA_CONFIANCA } = {}) {
     const nome = step === "step1" ? "Step 1" : "Step 2 CK";
     out.push({
       codigo: CODIGO_RISCO_BANCO, nivel: "alto", titulo: ROTULO_RISCO_BANCO, step,
-      detalhe: nome + ": probabilidade de " + textoProbabilidade(x.p_aprovacao) + " de estar acima do limiar do banco, com alta confiança (" + numTxt(x.n_efetivo) + " itens, intervalo de 90% de θ de " + numTxt(x.ic90[0], 2) + " a " + numTxt(x.ic90[1], 2) + "). Estimativa pelo padrão de Angoff, não é resultado oficial.",
+      detalhe: nome + ": probabilidade de " + textoProbabilidade(x.p_aprovacao) + " de estar acima do limiar do banco, com precisão alta em relação ao padrão do banco (" + numTxt(x.n_efetivo) + " itens, intervalo de 90% de θ de " + numTxt(x.ic90[0], 2) + " a " + numTxt(x.ic90[1], 2) + "). Padrão provisório do banco (dificuldade-alvo, sem painel de juízes); não é resultado oficial.",
       valor: x.p_aprovacao, limite: regra.p_baixa
     });
   }

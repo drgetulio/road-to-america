@@ -12,21 +12,21 @@ import { pageHead, tile, chipStatus, seloDemo, variacao, avisoLgpd } from "./com
 import { distribuicaoProbabilidade, CODIGO_RISCO_BANCO, ROTULO_RISCO_BANCO, REGRA_CONFIANCA, PADRAO_STEP2CK, pctTxt } from "../analise.js";
 import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
-/* Probabilidade de aprovação pelo banco: distribuição da turma e o critério de risco */
+/* Probabilidade de estar acima do limiar do banco: distribuição da turma e o critério de risco */
 function painelBanco(ctx, rows, psico) {
-  const cab = '<div class="panel__head panel__head--row"><h2 class="h-sm" id="pb-t">Probabilidade de aprovação pelo banco de questões</h2><a class="link-btn" href="#/itens">Análise de itens' + icon("arrow-right") + "</a></div>";
-  if (!psico) return '<section class="panel" aria-labelledby="pb-t">' + cab + '<p class="alert alert--aviso">' + icon("warning") + "<span>O banco de questões não abriu nesta sessão" + (ctx.psicoErro ? " (" + e(ctx.psicoErro) + ")" : "") + ". O painel segue sem a probabilidade de aprovação.</span></p></section>";
+  const cab = '<div class="panel__head panel__head--row"><h2 class="h-sm" id="pb-t">Posição em relação ao limiar do banco de questões</h2><a class="link-btn" href="#/itens">Análise de itens' + icon("arrow-right") + "</a></div>";
+  if (!psico) return '<section class="panel" aria-labelledby="pb-t">' + cab + '<p class="alert alert--aviso">' + icon("warning") + "<span>O banco de questões não abriu nesta sessão" + (ctx.psicoErro ? " (" + e(ctx.psicoErro) + ")" : "") + ". O painel segue sem a probabilidade do banco.</span></p></section>";
   const riscos = rows.filter((r) => r.riscos.some((x) => x.codigo === CODIGO_RISCO_BANCO));
   const dists = ["step1", "step2ck"].map((step) => distribuicaoProbabilidade(rows, step));
   return '<section class="panel" aria-labelledby="pb-t">' + cab +
-    '<p class="hint pb-hint">Probabilidade de o participante estar acima do limiar do banco, fixado pelo padrão de Angoff, a partir de todas as respostas no banco, nos simulados e nos blocos de 30 minutos (modo tutor com peso 0,5). "Alta confiança" só com probabilidade de até ' + pctTxt(REGRA_CONFIANCA.p_baixa) + " ou de " + pctTxt(REGRA_CONFIANCA.p_alta) + " ou mais, itens suficientes para a precisão exigida e itens em pelo menos " + pctTxt(REGRA_CONFIANCA.cobertura_min) + " dos sistemas. Não é resultado oficial; o critério principal de prontidão continua sendo a EXIT 18.</p>" +
+    '<p class="hint pb-hint">Probabilidade de o participante estar acima do limiar do banco (padrão provisório, com a incerteza dele), a partir de todas as respostas no banco, nos simulados e nos blocos de 30 minutos (modo tutor com peso 0,5). "Precisão alta" só com probabilidade de até ' + pctTxt(REGRA_CONFIANCA.p_baixa) + " ou de " + pctTxt(REGRA_CONFIANCA.p_alta) + " ou mais, itens suficientes para a precisão exigida e itens em pelo menos " + pctTxt(REGRA_CONFIANCA.cobertura_min) + " dos sistemas. Não é resultado oficial; o critério principal de prontidão continua sendo a EXIT 18.</p>" +
     '<div class="grid2 grid2--mult">' + dists.map((d) => {
       const nome = NOME_STEP[d.step];
       return '<figure class="mult"><figcaption class="mult__t">' + nome + "</figcaption>" +
-        '<p class="tira__resumo"><span class="is-risco"><b>' + d.alta_abaixo + "</b> baixa, alta confiança</span><span class=\"is-ok\"><b>" + d.alta_acima + "</b> alta, alta confiança</span><span><b>" + d.preliminar + "</b> preliminares</span><span><b>" + d.sem_respostas + "</b> sem respostas</span></p>" +
-        tiraProbabilidade(d, { titulo: "Probabilidade de aprovação pelo banco no " + nome + ", um ponto por participante" }) +
-        '<p class="hint">Ponto cheio: alta confiança. Anel: estimativa preliminar.' + (d.step === "step2ck" ? " No Step 2 CK, o limiar do banco representa o padrão de " + PADRAO_STEP2CK + " e foi fixado por Angoff; a nota de três dígitos só será estimada depois da calibração com notas reais." : "") + "</p>" +
-        tabela("Probabilidade de aprovação pelo banco, " + nome, ["Participante", "Probabilidade", "Confiança", "Itens"], d.pontos.map((p) => [p.nome, textoProbabilidade(p.p), p.alta ? "alta confiança" : "preliminar" + (p.faltam ? ", faltam cerca de " + p.faltam + " itens" : ""), String(Math.round(p.n))])) +
+        '<p class="tira__resumo"><span class="is-risco"><b>' + d.alta_abaixo + "</b> baixa, precisão alta</span><span class=\"is-ok\"><b>" + d.alta_acima + "</b> alta, precisão alta</span><span><b>" + d.preliminar + "</b> preliminares</span><span><b>" + d.sem_respostas + "</b> sem respostas</span></p>" +
+        tiraProbabilidade(d, { titulo: "Probabilidade de estar acima do limiar do banco no " + nome + ", um ponto por participante" }) +
+        '<p class="hint">Ponto cheio: precisão alta em relação ao padrão do banco. Anel: estimativa preliminar.' + (d.step === "step2ck" ? " No Step 2 CK, o limiar do banco representa o padrão de " + PADRAO_STEP2CK + " e ainda é provisório (dificuldade-alvo dos itens); a nota de três dígitos só será estimada depois da calibração com notas reais." : "") + "</p>" +
+        tabela("Probabilidade de estar acima do limiar do banco, " + nome, ["Participante", "Probabilidade", "Confiança", "Itens"], d.pontos.map((p) => [p.nome, textoProbabilidade(p.p), p.alta ? "precisão alta" : "preliminar" + (p.faltam ? ", faltam cerca de " + p.faltam + " itens" : ""), String(Math.round(p.n))])) +
         "</figure>";
     }).join("") + "</div>" +
     '<h3 class="h-xs">' + e(ROTULO_RISCO_BANCO) + "</h3>" +

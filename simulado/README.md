@@ -131,7 +131,10 @@ formato, a versão reduzida tem blocos de 20 itens e a tela avisa.
 | Tutorial | relógio de 5 minutos e as ferramentas da tela do bloco; o que sobrar vai para a pausa; depois de 5 minutos, o tempo conta como pausa |
 | Bloco | a mesma tela do bloco de 30 minutos (`js/interface-bloco.js`): marcar, riscar, realçar, valores laboratoriais, anotações, calculadora, tabela do item, revisão só dentro do bloco, relógio do bloco com avisos de 5 e 1 minuto e, no rodapé, o cronômetro do dia |
 | Pausa | saldo de pausa em contagem regressiva (55 min, mais sobras de blocos e do tutorial), trilha dos blocos, duração do próximo bloco; pausa além do saldo fica em vermelho e sai do bloco seguinte |
-| Dia parado | entre blocos, "Parar e continuar depois" congela o saldo de pausa; "Retomar" volta a correr de onde parou |
+| Condições do dia | escolhidas no modal de início: "oficiais" (sem parar; toda pausa além do saldo sai dos blocos seguintes, com a página aberta ou fechada; dia padronizado) ou "estudo" (pode parar entre blocos; dia não padronizado). Não mudam depois de escolhidas |
+| Dia parado | só em condições de estudo: entre blocos, "Parar e continuar depois" congela o saldo de pausa; "Retomar" volta a correr de onde parou |
+| Itens já vistos e reserva | o modal mostra quantos itens do formulário o aluno já respondeu; acima de 25%, pede confirmação e o relatório sai como reaplicação, não comparável. O formulário reservado (S1-B, CK-A) fica fora do banco de questões até o aluno fazê-lo |
+| Formulário parcial | o CK-B (11 blocos) tem pausa proporcional, e o resumo e o check-in dizem "formulário parcial" |
 | Fim do dia | corrige, grava as respostas em `respostas_item` (origem `simulado`, modo `cronometrado`), conclui o simulado e mostra o resumo |
 
 Regras do relógio (as oficiais vêm de `plataforma/js/formularios.js`; os acréscimos ficam
@@ -170,9 +173,10 @@ avisos do bloco atual), `notas` (anotações por item), `suspensa` e `suspensoes
 
 Método em `plataforma/PSICOMETRIA.md` (seção 17). O relatório traz:
 
-- **Step 1:** resultado estimado Pass ou Fail pela probabilidade de aprovação
-  P(theta > 0 | respostas do simulado) quando ela sai da faixa de 10% a 90%; dentro da
-  faixa, "resultado indefinido, perto do limiar", com a tendência em texto. Ao lado, o rótulo "Alta confiança" ou "Estimativa
+- **Step 1:** "Acima do limiar do banco" ou "Abaixo do limiar do banco" pela probabilidade
+  P(theta > c | respostas do simulado) quando ela sai da faixa de 10% a 90% (Pass ou Fail só
+  com o limiar ligado às autoavaliações NBME da turma ou com o modelo de desfechos); dentro da
+  faixa, "resultado indefinido, perto do limiar", com a tendência em texto. Ao lado, o rótulo "Precisão alta" ou "Estimativa
   preliminar" e quantos itens faltam; habilidade estimada com intervalo de 90%; percentual
   esperado num formulário igual; acerto esperado do examinando no limiar;
 - **Step 2 CK:** probabilidade de atingir o padrão do banco, que representa o mínimo de

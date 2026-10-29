@@ -3,18 +3,19 @@
    o banco (plataforma/js/banco.js) e a psicometria (plataforma/js/psicometria.js).
 
    O relatório segue a lógica do relatório oficial do USMLE sem copiar a sua forma:
-   - Step 1: resultado estimado Pass ou Fail pela probabilidade de aprovação
-     P(theta > 0 | respostas), com o rótulo de confiança da regra de PSICOMETRIA.md
-     (seção 7);
+   - Step 1: posição em relação ao limiar do banco pela probabilidade
+     P(theta > c | respostas), com o rótulo de precisão da regra de PSICOMETRIA.md
+     (seção 7). Pass ou Fail só quando o limiar está ligado às autoavaliações NBME da
+     turma ou há modelo de desfechos suficiente;
    - Step 2 CK: probabilidade de atingir o padrão de aprovação (218 desde
      01/07/2025), sem nota de três dígitos, que só será estimada depois da
      calibração com escores reais (seção 9);
    - perfil por área de conteúdo em relação ao examinando no limiar (mais baixo,
      igual, mais alto), com o intervalo de 90% de cada área (seção 8). O relatório
      oficial mostra esse perfil a quem é reprovado; aqui ele aparece sempre. */
-import { estimarAluno, bDoItem, DIMENSOES_PERFIL, REGRA_CONFIANCA, textoProbabilidade } from "../../plataforma/js/psicometria.js";
-import { corrigirSessao } from "../../plataforma/js/formularios.js";
-import { sistemasDoOutline, nomeChave, TAXONOMIA } from "../../plataforma/js/banco.js";
+import { estimarAluno, bDoItem, DIMENSOES_PERFIL, REGRA_CONFIANCA, textoProbabilidade, nomePadrao, padraoProvisorio } from "../../plataforma/js/psicometria.js";
+import { corrigirSessao, itensForaDoCorte, LIMITE_JA_VISTOS } from "../../plataforma/js/formularios.js";
+import { sistemasDoOutline, pesosDoOutline, nomeChave, TAXONOMIA } from "../../plataforma/js/banco.js";
 
 export const NOMES_TIPO = Object.freeze({ completo: "Simulado completo", meio: "Meio formulário", prontidao: "Avaliação de prontidão" });
 
@@ -28,6 +29,7 @@ export const TITULOS_PERFIL = Object.freeze({
    Step 2 CK é etiqueta interna, sem faixa oficial, e fica de fora */
 export const DIMENSOES_RELATORIO = Object.freeze({ step1: ["sistema", "disciplinas", "competencia"], step2ck: ["sistema", "disciplinas_oficiais", "competencia"] });
 
+export { LIMITE_JA_VISTOS };
 export const ROTULO_CLASSE = Object.freeze({
   mais_baixo: "Mais baixo",
   igual: "Igual",
@@ -49,24 +51,34 @@ export function corrigirRegistro(reg, porId) {
   return corrigirSessao(reg.formulario, reg.sessao, porId, { sessaoId: reg.id });
 }
 
-/* Dificuldades (b) dos itens do formulário: base do percentual esperado */
+/* Dificuldades (b) dos itens do formulário que contam: base do percentual esperado */
 export function bsDoFormulario(form, porId) {
   const get = getter(porId);
-  return form.blocos.flat().map(get).filter(Boolean).map((q) => bDoItem(q));
+  const fora = itensForaDoCorte(form, porId);
+  return form.blocos.flat().filter((id) => !fora.has(id)).map(get).filter(Boolean).map((q) => bDoItem(q));
 }
 
-/* Estimativa a partir só das respostas deste simulado */
+/* Estimativa a partir só das respostas deste simulado. Os itens públicos de um
+   formulário fixo ficam fora do corte (itensForaDoCorte): a estimativa usa os outros,
+   e fora_do_corte diz quantos e quais saíram. */
 export function estimativaDoSimulado({ form, linhas, porId, modelos = null }) {
   const step = form.step;
-  return estimarAluno({
+  const fora = itensForaDoCorte(form, porId);
+  const est = estimarAluno({
     step,
-    respostas: linhas,
+    respostas: fora.size ? (linhas || []).filter((l) => !fora.has(l.questao_id)) : linhas,
     itens: porId,
     sistemas: sistemasDoOutline(step),
+    pesosSistemas: pesosDoOutline(step),
     bsFormulario: bsDoFormulario(form, porId),
     modeloDesfechos: modelos?.[step]?.desfechos || null,
-    modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null
+    modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null,
+    ligacaoNbme: modelos?.[step]?.ligacao_nbme || null,
+    /* o formulário já segue a composição do outline: sem repesagem */
+    ponderar: false
   });
+  Object.defineProperty(est, "fora_do_corte", { value: { n: fora.size, ids: [...fora] }, enumerable: true });
+  return est;
 }
 
 /* Estimativa com todas as respostas do aluno no banco (indicador complementar) */
@@ -76,13 +88,39 @@ export function estimativaGeral({ step, respostas, porId, modelos = null }) {
     respostas,
     itens: porId,
     sistemas: sistemasDoOutline(step),
+    pesosSistemas: pesosDoOutline(step),
     modeloDesfechos: modelos?.[step]?.desfechos || null,
-    modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null
+    modeloEscore: step === "step2ck" ? modelos?.[step]?.escore_oficial || null : null,
+    ligacaoNbme: modelos?.[step]?.ligacao_nbme || null,
+    efeitoModo: modelos?.[step]?.efeito_modo || null
   });
 }
 
+/* Validade do simulado como medida de prontidão (PSICOMETRIA.md, seção 17):
+   - padronizado: condições oficiais escolhidas e nenhuma parada (como o
+     standard-paced do NBME);
+   - reaplicação: mais de LIMITE_JA_VISTOS (25%) dos itens já respondidos antes do
+     início (gravado no formulário ao começar; sem esse registro, pelas respostas
+     anteriores ao dia, jaVistos);
+   - valido_prontidao: padronizado, sem reaplicação e formulário completo (não
+     reduzido nem parcial). Fora disso, o relatório mostra a estimativa como leitura
+     de estudo. */
+export function validadeDoSimulado(reg, jaVistos = null) {
+  const s = reg?.sessao || {};
+  const form = reg?.formulario || {};
+  const padronizado = s.condicoes === "oficiais" && !(s.suspensoes || []).length && !s.suspensa;
+  const frac = form.ja_vistos ? (form.ja_vistos.total ? form.ja_vistos.n / form.ja_vistos.total : 0) : jaVistos ? (jaVistos.total ? jaVistos.n / jaVistos.total : 0) : 0;
+  const reaplicacao = form.ja_vistos ? !!form.ja_vistos.reaplicacao : frac > LIMITE_JA_VISTOS;
+  const inteiro = !form.reduzido && !form.parcial && form.tipo === "completo";
+  const motivos = [];
+  if (!padronizado) motivos.push(s.condicoes === "oficiais" ? "o dia foi interrompido" : "o dia foi feito em condições de estudo, com a opção de parar");
+  if (reaplicacao) motivos.push("mais de " + Math.round(LIMITE_JA_VISTOS * 100) + "% dos itens já tinham sido respondidos antes (reaplicação, não comparável)");
+  if (!inteiro) motivos.push(form.parcial ? "o formulário é parcial" : form.reduzido ? "o formulário é reduzido" : "o formato não é o simulado completo");
+  return { padronizado, condicoes: s.condicoes || "estudo", reaplicacao, fracao_vistos: frac, inteiro, valido_prontidao: padronizado && !reaplicacao && inteiro, motivos };
+}
+
 /* Resumo gravado com o simulado concluído (aparece no histórico) */
-export function instantaneo(est) {
+export function instantaneo(est, validade = null) {
   return {
     p_aprovacao: est.p_aprovacao,
     theta: est.theta,
@@ -93,6 +131,11 @@ export function instantaneo(est) {
     n: est.n,
     base: est.base,
     percentual_esperado: est.percentual_esperado?.media ?? null,
+    corte_origem: est.corte?.origem ?? null,
+    sigma_corte: est.corte?.sigma ?? null,
+    padronizado: validade ? validade.padronizado : null,
+    reaplicacao: validade ? validade.reaplicacao : null,
+    valido_prontidao: validade ? validade.valido_prontidao : null,
     calculado_em: new Date().toISOString()
   };
 }
@@ -110,18 +153,24 @@ export function resultadoEstimado(est, step) {
   const passa = p >= 0.5;
   const alta = !!est.confianca?.alta;
   const faixa = Math.round(REGRA_CONFIANCA.p_baixa * 100) + "% e " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "%";
-  const confianca = alta ? "Alta confiança" : "Estimativa preliminar";
+  const confianca = est.confianca?.texto || (alta ? "Precisão alta em relação ao padrão do banco" : "Estimativa preliminar");
+  const origem = est.corte?.origem;
+  const padrao = "padrão " + nomePadrao(origem);
+  /* Pass e Fail só com padrão empírico (ligação com a NBME) ou com o modelo de
+     desfechos; com o padrão provisório ou do painel, a leitura é a posição em relação
+     ao limiar do banco */
+  const empirico = origem === "nbme" || !!est.desfechos;
+  const fraseP = "Probabilidade de estar acima do limiar do banco (" + padrao + (step === "step2ck" ? ", que representa o mínimo de 218" : "") + "): " + textoProbabilidade(p);
   if (!decidido) {
-    const tend = step === "step2ck" ? (passa ? "acima do padrão" : "abaixo do padrão") : (passa ? "Pass" : "Fail");
+    const tend = step === "step2ck" || !empirico ? (passa ? "acima do limiar" : "abaixo do limiar") : (passa ? "Pass" : "Fail");
     return {
       codigo: "indefinido",
       decidido: false,
       tendencia: passa ? "acima" : "abaixo",
-      titulo: step === "step2ck" ? "Perto do padrão de aprovação: resultado indefinido" : "Resultado estimado: indefinido, perto do limiar",
+      titulo: step === "step2ck" ? "Perto do limiar do banco: resultado indefinido" : "Resultado estimado: indefinido, perto do limiar do banco",
       selo: "Indefinido",
       p,
-      frase: (step === "step2ck" ? "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " : "Probabilidade de aprovação estimada: ") + textoProbabilidade(p) +
-        ". Com a probabilidade entre " + faixa + ", o resultado não pode ser afirmado; a tendência é " + tend + ".",
+      frase: fraseP + ". Com a probabilidade entre " + faixa + ", o resultado não pode ser afirmado; a tendência é " + tend + ".",
       alta,
       confianca
     };
@@ -131,10 +180,23 @@ export function resultadoEstimado(est, step) {
       codigo: passa ? "atinge" : "nao_atinge",
       decidido: true,
       tendencia: passa ? "acima" : "abaixo",
-      titulo: passa ? "Padrão de aprovação provavelmente atingido" : "Padrão de aprovação provavelmente não atingido",
-      selo: passa ? "Acima do padrão" : "Abaixo do padrão",
+      titulo: passa ? "Acima do limiar do banco para o padrão mínimo" : "Abaixo do limiar do banco para o padrão mínimo",
+      selo: empirico ? (passa ? "Acima do padrão" : "Abaixo do padrão") : (passa ? "Acima do limiar do banco" : "Abaixo do limiar do banco"),
       p,
-      frase: "Probabilidade de atingir o padrão de aprovação do banco, que representa o mínimo de 218: " + textoProbabilidade(p) + ".",
+      frase: fraseP + ".",
+      alta,
+      confianca
+    };
+  }
+  if (!empirico) {
+    return {
+      codigo: passa ? "acima" : "abaixo",
+      decidido: true,
+      tendencia: passa ? "acima" : "abaixo",
+      titulo: passa ? "Acima do limiar do banco" : "Abaixo do limiar do banco",
+      selo: passa ? "Acima do limiar do banco" : "Abaixo do limiar do banco",
+      p,
+      frase: fraseP + ". Enquanto o padrão for " + (padraoProvisorio(origem) ? "provisório" : "só do painel") + ", o relatório mostra a posição em relação ao limiar do banco, e não Pass ou Fail.",
       alta,
       confianca
     };
@@ -143,10 +205,10 @@ export function resultadoEstimado(est, step) {
     codigo: passa ? "pass" : "fail",
     decidido: true,
     tendencia: passa ? "acima" : "abaixo",
-    titulo: passa ? "Resultado estimado: Pass" : "Resultado estimado: Fail",
+    titulo: passa ? "Resultado estimado " + (origem === "nbme" ? "pelo limiar ligado à NBME" : "pelos resultados oficiais da turma") + ": Pass" : "Resultado estimado " + (origem === "nbme" ? "pelo limiar ligado à NBME" : "pelos resultados oficiais da turma") + ": Fail",
     selo: passa ? "Pass" : "Fail",
     p,
-    frase: "Probabilidade de aprovação estimada: " + textoProbabilidade(p) + ".",
+    frase: fraseP + ".",
     alta,
     confianca
   };
@@ -155,6 +217,8 @@ export function resultadoEstimado(est, step) {
 /* Perfil de desempenho por dimensão, na ordem do outline, com as posições na escala */
 export function perfilRelatorio(est, step) {
   const out = [];
+  /* posições relativas ao limiar em uso (0 no padrão do banco; o corte ligado à NBME quando houver) */
+  const c = est.corte?.centro || 0;
   for (const dim of DIMENSOES_RELATORIO[step] || []) {
     const linhas = est.perfil?.[dim] || [];
     const dimTax = DIM_TAX[dim];
@@ -164,9 +228,9 @@ export function perfilRelatorio(est, step) {
       ...l,
       nome: nomeChave(step, dimTax, l.chave),
       rotulo_classe: ROTULO_CLASSE[l.classe] || l.classe,
-      x_theta: posicaoEscala(l.theta),
-      x_lo: posicaoEscala(l.ic[0]),
-      x_hi: posicaoEscala(l.ic[1])
+      x_theta: posicaoEscala(l.theta - c),
+      x_lo: posicaoEscala(l.ic[0] - c),
+      x_hi: posicaoEscala(l.ic[1] - c)
     }));
     const contagem = { mais_baixo: 0, igual: 0, mais_alto: 0, insuficiente: 0 };
     for (const a of areas) contagem[a.classe] = (contagem[a.classe] || 0) + 1;
@@ -304,19 +368,21 @@ export function linkCriarFlashcard(q, { base = "../anki/", retorno = "" } = {}) 
   return base + "#/criar?" + p.toString();
 }
 
-/* Texto do critério de confiança, para a tela */
+/* Texto do critério de precisão, para a tela */
 export function textoRegraConfianca(est) {
-  return "Alta confiança só com probabilidade de pelo menos " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "% ou de no máximo " + Math.round(REGRA_CONFIANCA.p_baixa * 100) +
-    "%, com pelo menos " + est.confianca.n_minimo + " itens e itens em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) + "% dos sistemas do outline.";
+  return "Precisão alta só com probabilidade de pelo menos " + Math.round(REGRA_CONFIANCA.p_alta * 100) + "% ou de no máximo " + Math.round(REGRA_CONFIANCA.p_baixa * 100) +
+    "% (já contando a incerteza do padrão, de " + String(Math.round((est.corte?.sigma ?? 0) * 100) / 100).replace(".", ",") + " logit), com pelo menos " + est.confianca.n_minimo + " itens e itens suficientes em pelo menos " + Math.round(REGRA_CONFIANCA.cobertura_min * 100) +
+    "% dos sistemas do outline (pelo menos " + REGRA_CONFIANCA.min_por_sistema + " por sistema e metade do que o peso do sistema pede). A precisão é em relação ao padrão do banco; alta confiança de aprovação no USMLE só com o modelo calibrado pelos resultados oficiais da turma.";
 }
 
-/* Leitura da confiança em uma frase, com quantos itens faltam */
+/* Leitura da precisão em uma frase, com quantos itens faltam */
 export function leituraConfianca(est) {
   const c = est.confianca;
-  if (c.alta) return "A probabilidade está fora da faixa de 10% a 90%, com itens suficientes e itens na maioria dos sistemas do outline.";
+  if (c.alta) return "A probabilidade está fora da faixa de 10% a 90%, com itens suficientes e itens na maioria dos sistemas do outline. A leitura é em relação ao padrão " + nomePadrao(c.origem_corte) + (padraoProvisorio(c.origem_corte) ? " do banco." : ".");
+  if (c.padrao_limita) return "Você está perto demais do limiar para a incerteza do padrão " + nomePadrao(c.origem_corte) + ": mais itens não decidem a classificação enquanto o padrão não for fixado (painel de juízes ou ligação com as autoavaliações NBME da turma). O que muda a leitura é subir a habilidade nas áreas mais fracas.";
   if (c.perto_do_limiar) return "Seu desempenho está praticamente no limiar: mais itens quase não mudam a classificação, e o que decide é subir a habilidade nas áreas mais fracas.";
   const faltam = c.faltam_itens ?? c.faltam_itens_minimo;
-  return faltam ? "Faltam cerca de " + faltam + (faltam === 1 ? " item respondido" : " itens respondidos") + " para a regra de alta confiança." : "Ainda não dá para afirmar o resultado com alta confiança.";
+  return faltam ? "Faltam cerca de " + faltam + (faltam === 1 ? " item respondido" : " itens respondidos") + " para a regra de precisão alta." : "Ainda não dá para afirmar a posição em relação ao limiar com precisão alta.";
 }
 
 /* Linha do histórico de simulados completos */
@@ -332,7 +398,10 @@ export function linhaHistorico(reg) {
     blocos: reg.formulario?.blocos?.length ?? null,
     bloco_atual: reg.sessao?.bloco_atual ?? reg.bloco_atual ?? 0,
     p_aprovacao: est?.p_aprovacao ?? null,
-    alta: !!est?.alta
+    alta: !!est?.alta,
+    padronizado: est?.padronizado ?? (reg.sessao ? reg.sessao.condicoes === "oficiais" && !(reg.sessao.suspensoes || []).length : null),
+    reaplicacao: est?.reaplicacao ?? !!reg.formulario?.ja_vistos?.reaplicacao,
+    valido_prontidao: est?.valido_prontidao ?? null
   };
 }
 

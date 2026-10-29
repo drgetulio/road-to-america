@@ -649,6 +649,14 @@ select.input { appearance: none; padding-right: 40px; cursor: pointer;
 .toast--erro { background: var(--red); color: var(--red-ink); }
 .toast--aviso i { color: var(--amarelo); }
 @media (prefers-reduced-motion: reduce) { .toast { transition: none; } }
+/* aviso com botão de fechar; o corpo reserva espaço embaixo enquanto há aviso */
+.toast { position: relative; padding-right: 44px; }
+.toast__fechar { position: absolute; top: 6px; right: 6px; width: 32px; height: 32px; display: grid; place-items: center; border: 0; border-radius: 8px; background: transparent; color: inherit; cursor: pointer; }
+.toast__fechar:hover, .toast__fechar:focus-visible { background: rgba(255,255,255,0.14); outline: 2px solid currentColor; outline-offset: -2px; }
+.toast__fechar i { font-size: 16px; margin: 0; }
+body.com-toast { padding-bottom: var(--toast-h, 96px); }
+@media (min-width: 900px) { .toasts { left: auto; right: 24px; transform: none; width: min(400px, calc(100vw - 48px)); } }
+
 
 @media (forced-colors: active) {
   .grade, .highway, .pass-card, .boarding, .btn { border: 2px solid CanvasText; }

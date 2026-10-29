@@ -138,7 +138,7 @@ export default {
       "</section>" +
 
       '<section class="panel" aria-labelledby="sc-t"><div class="panel__head"><h2 class="h-sm" id="sc-t">Simulados completos</h2>' +
-        '<p class="hint">Dia de prova no formato oficial (Step 1: 14 blocos; Step 2 CK: 16). A probabilidade é a guardada no fim de cada dia, pelo padrão de Angoff do banco ou pela calibração em uso na data; não é resultado oficial. O relatório abre na página do simulado com os dados deste participante.</p></div>' +
+        '<p class="hint">Dia de prova no formato oficial (Step 1: 14 blocos; Step 2 CK: 16). A probabilidade é a guardada no fim de cada dia, pelo padrão provisório do banco ou pela calibração em uso na data; não é resultado oficial. O relatório abre na página do simulado com os dados deste participante.</p></div>' +
         blocoCompletos(completos) +
       "</section>" +
 
@@ -306,7 +306,7 @@ function blocoCompletos(lista) {
       return "<tr>" + td("Data", e(dataBR(l.data))) + td("Simulado", nomeSim(r) + (l.reduzido ? " <small>reduzido</small>" : "")) +
         td("Situação", feito ? "encerrado" : (r.sessao?.suspensa ? "parado" : "em andamento") + ", bloco " + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb) +
         td("Acerto", feito && l.acertos !== null ? "<b>" + l.acertos + "/" + l.total + "</b> " + pct(l.percentual) : "") +
-        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? textoProbabilidade(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">alta confiança</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
+        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? textoProbabilidade(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">precisão alta</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
         td("", feito ? '<a href="../simulado/#/relatorio/' + encodeURIComponent(r.id) + '">Relatório<span class="sr-only"> de ' + e(dataBR(l.data)) + "</span></a>" : "") + "</tr>";
     }).join("") + "</tbody></table></div>";
 }
@@ -360,8 +360,8 @@ function campoData(nome, rotulo, valor) {
    de quem é reprovado) e a leitura combinada com a EXIT 18 */
 const ROTULO_CLASSE = { mais_baixo: "Mais baixo", igual: "Igual", mais_alto: "Mais alto", insuficiente: "Poucos itens" };
 function painelBancoFicha(r, av, oficiais, ctx) {
-  const cab = '<div class="panel__head"><h2 class="h-sm" id="bq-t">Probabilidade de aprovação pelo banco</h2>' +
-    '<p class="hint">Estimativa pelo modelo de Rasch ancorado no padrão de Angoff, com todas as respostas do participante no banco, nos simulados e nos blocos de 30 minutos. Não é resultado oficial e não substitui a EXIT 18.</p></div>';
+  const cab = '<div class="panel__head"><h2 class="h-sm" id="bq-t">Posição em relação ao limiar do banco</h2>' +
+    '<p class="hint">Estimativa pelo modelo de Rasch ancorado no padrão provisório do banco (dificuldade-alvo dos itens), com a incerteza do padrão, com todas as respostas do participante no banco, nos simulados e nos blocos de 30 minutos. Não é resultado oficial e não substitui a EXIT 18.</p></div>';
   if (!r.banco) return '<section class="panel" aria-labelledby="bq-t">' + cab + '<p class="body">O banco de questões não abriu nesta sessão' + (ctx.psicoErro ? " (" + e(ctx.psicoErro) + ")" : "") + ".</p></section>";
   const steps = ["step1", "step2ck"].filter((s) => r.banco[s] || !r.linha.plano?.[s + "_aprovado"]);
   return '<section class="panel" aria-labelledby="bq-t">' + cab +

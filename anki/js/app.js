@@ -6,7 +6,7 @@ import { loadTaxonomy, loadSeeds } from "./data.js";
 import { mergeSettings, makeScheduler } from "./scheduler.js";
 import { isAdmin } from "./permissions.js";
 import { dayStart } from "./util.js";
-import { $, $$, e, icon, toast } from "./ui.js";
+import { $, $$, e, icon, toast, limparToasts } from "./ui.js";
 import { itensMenu } from "./menu.js";
 
 import painel from "./views/painel.js";
@@ -124,6 +124,7 @@ async function atualizarBadge() {
 ctx.atualizarBadge = atualizarBadge;
 
 async function render() {
+  limparToasts();
   const alvo = $("[data-view]");
   const { rota, sub, params } = parseHash();
   if (viewAtual?.destroy) viewAtual.destroy();

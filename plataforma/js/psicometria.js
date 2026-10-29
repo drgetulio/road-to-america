@@ -1,10 +1,18 @@
 /* Road to America | psicometria do banco de questões.
 
-   Modelo de Rasch ancorado no padrão de Angoff, estimativa EAP em grade,
-   probabilidade de aprovação, regra de confiança, percentual esperado num
-   formulário completo, perfil por área em relação ao limiar, análise de itens
-   (dificuldade, ponto-bisserial corrigida, distratores, infit e outfit),
-   recalibração regularizada e regressão com desfechos reais.
+   Modelo de Rasch ancorado na dificuldade-alvo do banco, estimativa EAP em grade,
+   probabilidade de estar acima do limiar do banco com a incerteza do próprio padrão,
+   regra de precisão, percentual esperado num formulário completo, perfil por área em
+   relação ao limiar, análise de itens (dificuldade, ponto-bisserial corrigida,
+   distratores, infit e outfit), recalibração regularizada, efeito do modo tutor e
+   regressão com desfechos reais.
+
+   Sobre o nome "angoff": o campo angoff dos itens do banco é a dificuldade-alvo
+   fixada pelos autores na especificação, com pequeno ajuste depois da redação; não é
+   o julgamento de um painel de juízes. Só o valor publicado pelo painel
+   (plataforma/js/angoff.js, angoff_origem "painel") é Angoff de fato. O código mantém
+   o nome do campo por compatibilidade com o contrato do item, e as telas dizem
+   "dificuldade-alvo" e "padrão provisório" enquanto o painel não substituir o valor.
 
    JavaScript puro, sem dependências e determinístico (nenhuma chamada a
    Math.random; as simulações recebem o gerador como parâmetro).
@@ -13,9 +21,52 @@
 /* ---------- parâmetros do método (PSICOMETRIA.md, seção 2) ---------- */
 export const PRIORI_PADRAO = Object.freeze({ media: 0, dp: 1.5 });
 export const GRADE_PADRAO = Object.freeze({ min: -6, max: 6, passo: 0.01 });
-/* Critérios internos da Road to America; a justificativa de cada número está em PSICOMETRIA.md */
-export const REGRA_CONFIANCA = Object.freeze({ p_alta: 0.9, p_baixa: 0.1, dp_max: 0.25, cobertura_min: 0.8, min_por_sistema: 1 });
+/* Critérios internos da Road to America; a justificativa de cada número está em PSICOMETRIA.md.
+   min_por_sistema e fracao_peso_sistema: um sistema só conta como coberto com pelo
+   menos 5 itens e pelo menos metade do número que um formulário com o mesmo total de
+   itens teria pelo peso do sistema no outline (seção 7). */
+export const REGRA_CONFIANCA = Object.freeze({ p_alta: 0.9, p_baixa: 0.1, dp_max: 0.25, cobertura_min: 0.8, min_por_sistema: 5, fracao_peso_sistema: 0.5 });
 export const PESOS_MODO = Object.freeze({ cronometrado: 1, tutor: 0.5 });
+/* Incerteza do padrão, em logit (PSICOMETRIA.md, seção 6.1). O limiar do banco vem da
+   dificuldade-alvo dos autores (provisório) até o painel de juízes publicar o Angoff
+   de cada item ou até a ligação com as autoavaliações NBME da turma ficar suficiente
+   (corteLigadoNbme). provisorio: 0,7 logit. Não há dado empírico para esse número; ele
+   foi escolhido pela simulação da seção 6.1, para que a classificação decidida erre
+   menos de 4% com o banco inteiro até 0,75 logit (cerca de 15 pontos percentuais no
+   item de 0,65) mais fácil ou mais difícil do que a dificuldade-alvo supõe. Com 1,0
+   logit o erro volta a cerca de 5%: é o limite documentado do método. painel_padrao:
+   valor usado para item do painel sem erro-padrão gravado; minimo: piso para o item do
+   painel e para a ligação com a NBME (a variação entre painéis, métodos e coortes não
+   cabe no erro-padrão de um ajuste só). */
+export const INCERTEZA_CORTE = Object.freeze({ provisorio: 0.7, painel_padrao: 0.25, minimo: 0.1 });
+/* Análise de sensibilidade mostrada ao aluno enquanto o padrão for provisório: a
+   probabilidade se os itens forem 0,75 logit mais fáceis (ou mais difíceis) do que a
+   dificuldade-alvo supõe, cerca de 15 pontos percentuais no item de 0,65. */
+export const SENSIBILIDADE_PADRAO = Object.freeze({ deslocamento: 0.75, pontos: 15 });
+/* Ligação com as autoavaliações NBME (seção 6.2). Padrão de aprovação na escala de três
+   dígitos usada nos relatórios da CBSSA e da CCSSA: Step 1, 196 (padrão do Step 1 desde
+   26/01/2022, antes do Pass/Fail); Step 2 CK, 218 (desde 01/07/2025). Conferir em
+   usmle.org antes de cada ciclo: o USMLE pode mudar o padrão. min_t: o coeficiente
+   angular precisa ser pelo menos 4 vezes o seu erro-padrão; ep_max: erro-padrão do
+   corte ligado de no máximo 0,35 logit (acima disso o corte provisório, com 0,7, ainda
+   é a escolha mais honesta). */
+export const LIGACAO_NBME = Object.freeze({ limiar: Object.freeze({ step1: 196, step2ck: 218 }), min_escores: 30, min_t: 4, ep_max: 0.35 });
+/* Nome do padrão em uso, para todas as telas */
+export function nomePadrao(origem) {
+  return origem === "painel" ? "do painel de juízes" : origem === "nbme" ? "ligado às autoavaliações NBME da turma" : "provisório";
+}
+/* Padrão definitivo (painel ou ligação com a NBME) ou provisório */
+export function padraoProvisorio(origem) { return origem !== "painel" && origem !== "nbme"; }
+/* Rótulos da regra de precisão. "alta_confianca" fica reservado para a probabilidade
+   que vem de desfechos reais (resultados oficiais da turma) com modelo suficiente. */
+export const ROTULOS_CONFIANCA = Object.freeze({
+  precisao_alta: "Precisão alta em relação ao padrão do banco",
+  estimativa_preliminar: "Estimativa preliminar",
+  alta_confianca: "Alta confiança de aprovação"
+});
+/* Mistura de sistemas: o theta do banco é estimado com as respostas repesadas para a
+   composição do outline (seção 5.1); fator de cada sistema limitado a [1/3, 3]. */
+export const PONDERACAO_OUTLINE = Object.freeze({ fator_min: 1 / 3, fator_max: 3 });
 
 /* Texto único da probabilidade de aprovação, usado no banco, em "Meu progresso", nos
    simulados e na área administrativa, para que o mesmo número apareça igual em todas as
@@ -37,7 +88,10 @@ export function textoProbabilidade(p) {
 export const PERFIL_PADRAO = Object.freeze({ min_itens: 5, prob: 0.9, priori: PRIORI_PADRAO });
 export const LIMIARES_ITEM = Object.freeze({ p_min: 0.2, p_max: 0.95, pbis_min: 0.1, ajuste_min: 0.7, ajuste_max: 1.3, n_min: 30, grupo: 0.27, distrator_funcional: 0.05, min_itens_pessoa: 2 });
 export const RECALIBRACAO_PADRAO = Object.freeze({ tau: 0.5, priori_theta: PRIORI_PADRAO, max_iter: 300, tol: 1e-5, ancoragem: "tcc" });
-export const DESFECHOS_PADRAO = Object.freeze({ min_por_classe: 10, min_escores: 30 });
+/* Desfechos reais: o modelo só é mostrado ao aluno com pelo menos 30 aprovados e 30
+   reprovados e taxa de resposta de pelo menos 50% (seção 13); com 10 de cada, fica
+   exploratório, só na área administrativa. */
+export const DESFECHOS_PADRAO = Object.freeze({ min_por_classe: 30, min_exploratorio: 10, min_escores: 30, taxa_resposta_min: 0.5, peso_ipw_max: 10 });
 /* Padrão mínimo de aprovação do Step 2 CK desde 01/07/2025
    (https://usmle.org/scores-transcripts/examination-results-and-scoring) */
 export const PADRAO_STEP2CK = 218;
@@ -59,7 +113,8 @@ export function normalCdf(z) {
 }
 
 /* Dificuldade de Rasch ancorada no limiar: b = -logit(angoff).
-   O examinando no limiar (theta = 0) acerta o item com probabilidade angoff. */
+   O examinando no limiar (theta = 0) acerta o item com probabilidade angoff, que é a
+   dificuldade-alvo do banco (ou o Angoff do painel, quando publicado). */
 export function bDeAngoff(angoff) {
   const a = Math.min(0.999, Math.max(0.001, Number(angoff)));
   return -logit(a);
@@ -157,15 +212,78 @@ export function resumirPosterior(post, { limiar = 0, intervalo = 0.9 } = {}) {
   };
 }
 
+/* Incerteza do corte (seção 6.1): média, pesada pelo peso de cada resposta, do
+   desvio-padrão do padrão em logit de cada item usado. Item com Angoff do painel usa
+   o erro-padrão do painel convertido em logit (ep / (a (1 - a))), com piso; item com
+   a dificuldade-alvo provisória usa INCERTEZA_CORTE.provisorio. Resposta sem item
+   (listas de teste { b, x }) conta como provisória. */
+export function incertezaCorte(usadas, { incerteza = INCERTEZA_CORTE } = {}) {
+  let sw = 0, s = 0, n = 0, nPainel = 0;
+  for (const u of usadas || []) {
+    const w = u.w === undefined ? 1 : Number(u.w);
+    if (!(w > 0)) continue;
+    const q = u.item || null;
+    let sig = incerteza.provisorio;
+    if (q && q.angoff_origem === "painel") {
+      nPainel++;
+      const a = Number(q.angoff), ep = Number(q.angoff_painel_ep);
+      sig = Number.isFinite(ep) && ep > 0 && a > 0 && a < 1 ? Math.max(incerteza.minimo, ep / (a * (1 - a))) : incerteza.painel_padrao;
+    }
+    s += w * sig; sw += w; n++;
+  }
+  return { sigma: sw > 0 ? s / sw : incerteza.provisorio, origem: n && nPainel === n ? "painel" : nPainel ? "misto" : "provisorio", itens_painel: nPainel, itens: n };
+}
+
+/* P(theta > c | respostas) com o corte incerto, c ~ N(mu, sigma²):
+   integral de pi(theta) Phi((theta - mu) / sigma). Com sigma = 0, P(theta > mu).
+   mu = 0 no padrão do banco; mu = corte ligado à NBME quando houver (seção 6.2). */
+export function pAcimaDoCorte(post, sigma = 0, cum = null, mu = 0) {
+  if (!(sigma > 0)) return 1 - cdfPosterior(post, mu, cum || acumulada(post));
+  const { pontos, dens } = post;
+  let s = 0, fa = dens[0] * normalCdf((pontos[0] - mu) / sigma);
+  for (let i = 1; i < pontos.length; i++) {
+    const fb = dens[i] * normalCdf((pontos[i] - mu) / sigma);
+    s += 0.5 * (fa + fb) * (pontos[i] - pontos[i - 1]);
+    fa = fb;
+  }
+  return Math.min(1, Math.max(0, s));
+}
+
+/* Intervalo de 90% da distância ao limiar, theta - c, somando a incerteza da medida
+   (posterior de theta) e a do padrão (c ~ N(mu, sigma²)). F(x) = integral de
+   pi(theta) (1 - Phi((theta - mu - x) / sigma)); quantis por bisseção. */
+export function intervaloRelativo(post, sigma = 0, intervalo = 0.9, mu = 0) {
+  const a = (1 - intervalo) / 2;
+  if (mu) { const r = intervaloRelativo(post, sigma, intervalo, 0); return [r[0] - mu, r[1] - mu]; }
+  if (!(sigma > 0)) { const cum = acumulada(post); return [quantilPosterior(post, a, cum), quantilPosterior(post, 1 - a, cum)]; }
+  const { pontos, dens } = post;
+  const F = (x) => {
+    let s = 0, fa = dens[0] * (1 - normalCdf((pontos[0] - x) / sigma));
+    for (let i = 1; i < pontos.length; i++) { const fb = dens[i] * (1 - normalCdf((pontos[i] - x) / sigma)); s += 0.5 * (fa + fb) * (pontos[i] - pontos[i - 1]); fa = fb; }
+    return s;
+  };
+  const q = (alvo) => { let lo = -10, hi = 10; for (let k = 0; k < 40; k++) { const m = (lo + hi) / 2; if (F(m) < alvo) lo = m; else hi = m; } return (lo + hi) / 2; };
+  return [q(a), q(1 - a)];
+}
+
 /* EAP: média a posteriori de theta, desvio-padrão posterior, intervalo de
-   credibilidade de 90% e P(theta > 0), que é a probabilidade de estar acima do
-   limiar de aprovação do banco. */
-export function eap(respostas, { priori = PRIORI_PADRAO, grade = GRADE_PADRAO, incluirPosterior = false } = {}) {
+   credibilidade de 90% e a probabilidade de estar acima do limiar do banco.
+   p_aprovacao = P(theta > c | respostas) com a incerteza do corte (sigmaCorte; sem
+   ele, incertezaCorte das respostas); p_medida = P(theta > centroCorte | respostas),
+   só com a incerteza da medida. centroCorte: posição do limiar na escala (0 no padrão
+   do banco; o corte ligado à NBME quando houver). */
+export function eap(respostas, { priori = PRIORI_PADRAO, grade = GRADE_PADRAO, incluirPosterior = false, sigmaCorte = undefined, centroCorte = 0 } = {}) {
   const lista = (respostas || []).filter((r) => Number.isFinite(r.b) && (r.w === undefined || r.w > 0));
   const post = posteriorGrade(lista, { priori, grade });
-  const r = resumirPosterior(post, { limiar: 0, intervalo: 0.9 });
+  const mu = Number.isFinite(centroCorte) ? centroCorte : 0;
+  const r = resumirPosterior(post, { limiar: mu, intervalo: 0.9 });
+  const inc = Number.isFinite(sigmaCorte) ? { sigma: Math.max(0, sigmaCorte), origem: "informada" } : incertezaCorte(lista);
   const out = {
-    theta: r.theta, dp: r.dp, ic90: r.ic, p_aprovacao: r.p_acima,
+    theta: r.theta, dp: r.dp, ic90: r.ic,
+    p_aprovacao: pAcimaDoCorte(post, inc.sigma, null, mu),
+    p_medida: r.p_acima,
+    sigma_corte: inc.sigma,
+    origem_corte: inc.origem,
     n: lista.length,
     n_efetivo: lista.reduce((s, x) => s + (x.w === undefined ? 1 : x.w), 0),
     acertos: lista.filter((x) => x.x).length
@@ -192,7 +310,7 @@ export function itensParaPrecisao(dpAtual, dpAlvo, infoMedia) {
    E[ média_i expit(theta - b_i) | respostas ], com intervalo de 90% (a função é
    crescente em theta, então os quantis de theta dão os quantis do percentual) e o
    percentual do examinando no limiar (theta = 0). */
-export function percentualEsperado(post, bs) {
+export function percentualEsperado(post, bs, { limiar = 0 } = {}) {
   const lista = (bs || []).filter(Number.isFinite);
   if (!lista.length) return { media: null, ic90: [null, null], limiar: null, itens: 0 };
   const f = (t) => { let s = 0; for (const b of lista) s += expit(t - b); return s / lista.length; };
@@ -205,19 +323,70 @@ export function percentualEsperado(post, bs) {
     fa = fb;
   }
   const cum = acumulada(post);
-  return { media: m, ic90: [f(quantilPosterior(post, 0.05, cum)), f(quantilPosterior(post, 0.95, cum))], limiar: f(0), itens: lista.length };
+  return { media: m, ic90: [f(quantilPosterior(post, 0.05, cum)), f(quantilPosterior(post, 0.95, cum))], limiar: f(Number.isFinite(limiar) ? limiar : 0), itens: lista.length };
 }
 
-/* ---------- regra de confiança ----------
-   "alta_confianca" só quando: P >= 0,90 ou P <= 0,10; pelo menos N itens
-   respondidos, com N definido pela largura do intervalo (o examinando no limiar
-   chega a desvio-padrão posterior de 0,25); e itens respondidos em pelo menos 80%
-   dos sistemas do outline. */
-export function cobertura(sistemasRespondidos, sistemasOutline, { minPorSistema = REGRA_CONFIANCA.min_por_sistema } = {}) {
+/* ---------- regra de precisão ----------
+   "precisao_alta" só quando: P >= 0,90 ou P <= 0,10 (P já com a incerteza do
+   padrão); pelo menos N itens respondidos, com N definido pela largura do intervalo
+   (o examinando no limiar chega a desvio-padrão posterior de 0,25); e itens
+   suficientes em pelo menos 80% dos sistemas do outline. Sistema coberto: pelo menos
+   minPorSistema itens (5) e pelo menos fracaoPeso (metade) do número que um
+   formulário com o mesmo total de itens teria pelo peso do sistema (pesos: chave ->
+   proporção do outline; nTotal: itens respondidos). */
+export function cobertura(sistemasRespondidos, sistemasOutline, { minPorSistema = REGRA_CONFIANCA.min_por_sistema, pesos = null, nTotal = null, fracaoPeso = REGRA_CONFIANCA.fracao_peso_sistema } = {}) {
   const cont = sistemasRespondidos instanceof Map ? sistemasRespondidos : new Map(Object.entries(sistemasRespondidos || {}));
   const todos = [...(sistemasOutline || [])];
-  const com = todos.filter((s) => (cont.get(s) || 0) >= minPorSistema);
-  return { com_itens: com, faltando: todos.filter((s) => !com.includes(s)), total: todos.length, proporcao: todos.length ? com.length / todos.length : 0 };
+  let n = Number(nTotal);
+  if (!Number.isFinite(n)) { n = 0; for (const v of cont.values()) n += Number(v) || 0; }
+  const minimos = {};
+  for (const s of todos) { const p = Number(pesos?.[s]); minimos[s] = Math.max(minPorSistema, p > 0 ? Math.ceil(fracaoPeso * p * n - 1e-9) : 0); }
+  const com = todos.filter((s) => (cont.get(s) || 0) >= minimos[s]);
+  const itens = {};
+  for (const s of todos) itens[s] = cont.get(s) || 0;
+  return { com_itens: com, faltando: todos.filter((s) => !com.includes(s)), total: todos.length, proporcao: todos.length ? com.length / todos.length : 0, minimos, itens, min_por_sistema: minPorSistema };
+}
+
+/* Repesagem pela composição do outline (seção 5.1). pesos: chave do sistema ->
+   proporção na prova. Cada resposta do sistema s recebe o fator
+   (pi_s / soma de pi nos sistemas respondidos) / (fração das respostas em s),
+   limitado a [fator_min, fator_max]; depois os pesos são reescalados para que a soma
+   continue a mesma (n_efetivo não muda). Resposta sem sistema do outline fica com
+   fator 1. distancia: variação total entre a mistura respondida e o outline (0 =
+   igual; 1 = nada em comum), contando os sistemas sem resposta. */
+export function ponderarPeloOutline(usadas, pesos, { fator_min = PONDERACAO_OUTLINE.fator_min, fator_max = PONDERACAO_OUTLINE.fator_max } = {}) {
+  const lista = usadas || [];
+  if (!pesos || !lista.length) return { usadas: lista, fatores: {}, distancia: null, mistura: {} };
+  const somaS = new Map();
+  let totPres = 0;
+  for (const u of lista) {
+    const s = u.item?.sistema, w = u.w === undefined ? 1 : u.w;
+    if (s && Number(pesos[s]) > 0) { somaS.set(s, (somaS.get(s) || 0) + w); totPres += w; }
+  }
+  const somaPesos = Object.values(pesos).reduce((a, b) => a + (Number(b) > 0 ? Number(b) : 0), 0);
+  const mistura = {};
+  let distancia = 0;
+  for (const [s, p] of Object.entries(pesos)) {
+    const obs = totPres > 0 ? (somaS.get(s) || 0) / totPres : 0;
+    mistura[s] = { observado: obs, outline: somaPesos > 0 ? Number(p) / somaPesos : 0 };
+    distancia += Math.abs(mistura[s].observado - mistura[s].outline);
+  }
+  distancia /= 2;
+  if (!(totPres > 0)) return { usadas: lista, fatores: {}, distancia, mistura };
+  const piPres = [...somaS.keys()].reduce((a, s) => a + Number(pesos[s]), 0);
+  const fatores = {};
+  for (const [s, w] of somaS) fatores[s] = Math.min(fator_max, Math.max(fator_min, (Number(pesos[s]) / piPres) / (w / totPres)));
+  let somaNova = 0;
+  for (const [s, w] of somaS) somaNova += w * fatores[s];
+  const k = somaNova > 0 ? totPres / somaNova : 1;
+  for (const s of Object.keys(fatores)) fatores[s] *= k;
+  const novas = lista.map((u) => {
+    const s = u.item?.sistema;
+    if (!s || !(s in fatores)) return u;
+    const w = u.w === undefined ? 1 : u.w;
+    return { ...u, w: w * fatores[s], w_original: w };
+  });
+  return { usadas: novas, fatores, distancia, mistura };
 }
 
 /* Número mínimo de itens N: quantos itens o examinando no limiar (theta = 0)
@@ -228,36 +397,55 @@ export function itensMinimos(bs, { regra = REGRA_CONFIANCA, priori = PRIORI_PADR
   return itensParaPrecisao(priori.dp, regra.dp_max, informacaoMedia(0, bs));
 }
 
-/* p: P(aprovação); theta e dp: posterior; n_efetivo: soma dos pesos; n_minimo:
-   itensMinimos(); cob: cobertura(). infoMedia: informação média dos próximos itens
-   em theta (para estimar quantos faltam para decidir). */
-export function classificarConfianca({ p, theta, dp, n_efetivo = 0, n_minimo = 0, cob, infoMedia = 0.2, regra = REGRA_CONFIANCA }) {
+/* p: P(acima do limiar), já com a incerteza do padrão; theta e dp: posterior;
+   sigmaCorte: desvio-padrão do padrão em logit; origemCorte: "provisorio", "misto",
+   "painel" ou "nbme" (theta já relativo ao centro do corte); n_efetivo: soma dos pesos; n_minimo: itensMinimos(); cob: cobertura().
+   infoMedia: informação média dos próximos itens em theta (para estimar quantos
+   faltam para decidir). O rótulo nunca é "alta_confianca": esse fica para a
+   probabilidade pelos desfechos reais (estimarAluno, campo desfechos). */
+export function classificarConfianca({ p, theta, dp, n_efetivo = 0, n_minimo = 0, cob, infoMedia = 0.2, regra = REGRA_CONFIANCA, sigmaCorte = 0, origemCorte = "provisorio" }) {
   const motivos = [];
   const decidida = p >= regra.p_alta || p <= regra.p_baixa;
   const suficiente = n_efetivo >= n_minimo;
   const coberta = (cob?.proporcao ?? 0) >= regra.cobertura_min;
   if (!decidida) motivos.push("A probabilidade está entre " + pct(regra.p_baixa) + " e " + pct(regra.p_alta) + ".");
   if (!suficiente) motivos.push("Foram " + fmt0(n_efetivo) + " itens; o mínimo para a precisão exigida é " + n_minimo + ".");
-  if (!coberta) motivos.push("Há itens respondidos em " + (cob?.com_itens?.length ?? 0) + " de " + (cob?.total ?? 0) + " sistemas; o mínimo é " + pct(regra.cobertura_min) + ".");
+  if (!coberta) motivos.push("Há itens suficientes em " + (cob?.com_itens?.length ?? 0) + " de " + (cob?.total ?? 0) + " sistemas; o mínimo é " + pct(regra.cobertura_min) + ". Um sistema conta com pelo menos " + (cob?.min_por_sistema ?? regra.min_por_sistema) + " itens e metade do que pede o peso dele no outline.");
   const faltam_minimo = suficiente ? 0 : Math.ceil(n_minimo - n_efetivo);
-  /* Para a probabilidade sair da faixa intermediária, |theta| precisa passar de
-     1,28 desvio-padrão; com theta perto de zero, mais itens quase não mudam a decisão. */
+  /* Para a probabilidade sair da faixa intermediária, |theta| precisa passar de 1,28
+     vezes a raiz de (dp² + sigmaCorte²). A parte do padrão não diminui com mais itens:
+     se |theta| < 1,28 sigmaCorte, nenhum número de itens decide enquanto o padrão
+     for o mesmo. */
   let faltam_decisao = 0;
-  if (!decidida) faltam_decisao = Math.abs(theta) < 0.05 ? null : itensParaPrecisao(dp, Math.abs(theta) / Z90, infoMedia);
+  let padrao_limita = false;
+  if (!decidida) {
+    const alvo2 = (theta / Z90) ** 2 - sigmaCorte * sigmaCorte;
+    if (Math.abs(theta) < 0.05 || !(alvo2 > 0)) { faltam_decisao = null; padrao_limita = sigmaCorte > 0 && Math.abs(theta) >= 0.05; }
+    else faltam_decisao = itensParaPrecisao(dp, Math.sqrt(alvo2), infoMedia);
+  }
   const alta = decidida && suficiente && coberta;
+  const provisorio = padraoProvisorio(origemCorte);
+  const sufixo = provisorio ? " (padrão provisório)" : origemCorte === "nbme" ? " (limiar ligado à NBME)" : "";
+  const texto = alta ? ROTULOS_CONFIANCA.precisao_alta + sufixo : ROTULOS_CONFIANCA.estimativa_preliminar;
   return {
     alta,
-    rotulo: alta ? "alta_confianca" : "estimativa_preliminar",
-    texto: alta ? "Alta confiança" : "Estimativa preliminar",
+    rotulo: alta ? "precisao_alta" : "estimativa_preliminar",
+    texto,
+    texto_curto: alta ? "Precisão alta" + sufixo : "Estimativa preliminar",
     motivos,
     n_minimo,
     faltam_itens: alta ? 0 : faltam_decisao === null ? null : Math.max(faltam_minimo, faltam_decisao ?? 0),
     faltam_itens_minimo: faltam_minimo,
     faltam_sistemas: cob?.faltando || [],
-    perto_do_limiar: !decidida && faltam_decisao === null
+    perto_do_limiar: !decidida && faltam_decisao === null,
+    padrao_limita,
+    sigma_corte: sigmaCorte,
+    origem_corte: origemCorte
   };
 }
 function pct(x) { return Math.round(x * 100) + "%"; }
+/* Faixa da probabilidade: acima (>= p_alta), abaixo (<= p_baixa) ou indefinida */
+export function faixaP(p, regra = REGRA_CONFIANCA) { return p >= regra.p_alta ? "acima" : p <= regra.p_baixa ? "abaixo" : "indefinida"; }
 function fmt0(x) { return String(Math.round(Number(x) * 10) / 10).replace(".", ","); }
 
 /* ---------- preparação das respostas do aluno ----------
@@ -268,8 +456,11 @@ function fmt0(x) { return String(Math.round(Number(x) * 10) / 10).replace(".", "
    - modo cronometrado peso 1; tutor peso pesos.tutor (0,5 por padrão; 0 exclui);
    - em branco: no banco em modo tutor, ignorada; no cronometrado (banco, simulado e
      bloco_30), erro, como na prova;
-   - item fora do banco ou de outro Step é ignorado. */
-export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS_MODO, usarCalibrado = true, desde = null, ate = null } = {}) {
+   - item fora do banco ou de outro Step é ignorado;
+   - efeitoModo ({ delta } de estimarEfeitoModo, gravado no modelo do Step): no modo
+     tutor, o item entra com b - delta, porque a resposta sem relógio acerta mais que
+     a cronometrada; o peso do tutor continua valendo. */
+export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS_MODO, usarCalibrado = true, desde = null, ate = null, efeitoModo = null } = {}) {
   const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
   const ordenadas = (respostas || []).map((r, i) => ({ r, i })).sort((a, b) =>
     String(a.r.respondida_em || "").localeCompare(String(b.r.respondida_em || "")) || a.i - b.i);
@@ -297,7 +488,8 @@ export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS
     vistos.add(r.questao_id);
     const w = r.modo === "tutor" ? Number(pesos.tutor ?? 0.5) : Number(pesos.cronometrado ?? 1);
     if (!(w > 0)) continue;
-    usadas.push({ questao_id: q.id, item: q, b: bDoItem(q, { usarCalibrado }), x: r.correta ? 1 : 0, w, modo: r.modo, origem });
+    const delta = r.modo === "tutor" && Number.isFinite(efeitoModo?.delta) ? efeitoModo.delta : 0;
+    usadas.push({ questao_id: q.id, item: q, b: bDoItem(q, { usarCalibrado }) - delta, x: r.correta ? 1 : 0, w, modo: r.modo, origem });
   }
   return { usadas, ignoradas };
 }
@@ -307,7 +499,7 @@ export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS
    estimativa EAP (mesma priori); a classe usa o intervalo central de prob (0,90
    por padrão, isto é, de 5% a 95%): inteiro acima de 0 = mais alto, inteiro abaixo
    = mais baixo, cruzando o 0 = igual (indistinguível do limiar). */
-export function perfilPorArea(usadas, dim, { min_itens = PERFIL_PADRAO.min_itens, prob = PERFIL_PADRAO.prob, priori = PERFIL_PADRAO.priori, grade = GRADE_PADRAO } = {}) {
+export function perfilPorArea(usadas, dim, { min_itens = PERFIL_PADRAO.min_itens, prob = PERFIL_PADRAO.prob, priori = PERFIL_PADRAO.priori, grade = GRADE_PADRAO, limiar = 0 } = {}) {
   const grupos = new Map();
   for (const u of usadas || []) {
     const v = u.item?.[dim];
@@ -317,14 +509,14 @@ export function perfilPorArea(usadas, dim, { min_itens = PERFIL_PADRAO.min_itens
   const out = [];
   for (const [chave, lista] of grupos) {
     const post = posteriorGrade(lista, { priori, grade });
-    const r = resumirPosterior(post, { limiar: 0, intervalo: prob });
+    const r = resumirPosterior(post, { limiar, intervalo: prob });
     const n = lista.length;
     const acertos = lista.filter((u) => u.x).length;
     let classe = "igual";
     if (n < min_itens) classe = "insuficiente";
-    else if (r.ic[0] > 0) classe = "mais_alto";
-    else if (r.ic[1] < 0) classe = "mais_baixo";
-    out.push({ chave, n, acertos, taxa: n ? acertos / n : null, esperado_limiar: n ? lista.reduce((s, u) => s + expit(-u.b), 0) / n : null, theta: r.theta, dp: r.dp, ic: r.ic, p_acima: r.p_acima, classe });
+    else if (r.ic[0] > limiar) classe = "mais_alto";
+    else if (r.ic[1] < limiar) classe = "mais_baixo";
+    out.push({ chave, n, acertos, taxa: n ? acertos / n : null, esperado_limiar: n ? lista.reduce((s, u) => s + expit(limiar - u.b), 0) / n : null, theta: r.theta, dp: r.dp, ic: r.ic, p_acima: r.p_acima, classe });
   }
   return out.sort((a, b) => a.p_acima - b.p_acima || (a.chave < b.chave ? -1 : 1));
 }
@@ -340,37 +532,73 @@ export const DIMENSOES_PERFIL = Object.freeze({ step1: ["sistema", "disciplinas"
    itens: Map id -> item normalizado (banco.porId)
    sistemas: chaves do outline (sistemasDoOutline(step) em banco.js); sem elas,
              usa os sistemas presentes nos itens do Step
+   pesosSistemas: chave -> proporção do sistema na prova (pesosDoOutline(step) em
+             banco.js). Com eles, a cobertura exige o mínimo proporcional ao peso e o
+             theta é estimado com as respostas repesadas para a composição do outline
+             (ponderarPeloOutline); sem eles, mínimo fixo e sem repesagem
    bsFormulario: dificuldades do formulário de referência para o percentual
              esperado; sem elas, usa todos os itens do Step no banco
    modeloDesfechos / modeloEscore: saídas de ajustarDesfechos / ajustarEscore,
-             opcionais; só entram quando "suficiente" for verdadeiro */
-export function estimarAluno({ step, respostas, itens, sistemas = null, bsFormulario = null, pesos = PESOS_MODO, regra = REGRA_CONFIANCA, usarCalibrado = true, modeloDesfechos = null, modeloEscore = null, priori = PRIORI_PADRAO, desde = null, ate = null } = {}) {
+             opcionais; só entram quando "suficiente" for verdadeiro
+   efeitoModo: { delta } do modo tutor (estimarEfeitoModo), opcional
+   sigmaCorte: desvio-padrão do padrão em logit; sem ele, incertezaCorte() dos
+             itens respondidos
+   ligacaoNbme: saída de corteLigadoNbme (gravada no modelo do Step como
+             ligacao_nbme). Com ela suficiente, e sem padrão do painel, o limiar passa a
+             ser o theta em que o escore NBME previsto atinge o padrão de aprovação,
+             c ~ N(mu, ep²), no lugar do provisório (seção 6.2) */
+export function estimarAluno({ step, respostas, itens, sistemas = null, pesosSistemas = null, bsFormulario = null, pesos = PESOS_MODO, regra = REGRA_CONFIANCA, usarCalibrado = true, modeloDesfechos = null, modeloEscore = null, ligacaoNbme = null, priori = PRIORI_PADRAO, desde = null, ate = null, efeitoModo = null, sigmaCorte = undefined, ponderar = true } = {}) {
   const todos = itens instanceof Map ? [...itens.values()] : Object.values(itens || {});
   const doStep = todos.filter((q) => q.step === step);
-  const { usadas, ignoradas } = prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate });
-  const est = eap(usadas, { priori, incluirPosterior: true });
+  const { usadas: brutas, ignoradas } = prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate, efeitoModo });
+  const pond = ponderar && pesosSistemas ? ponderarPeloOutline(brutas, pesosSistemas) : { usadas: brutas, fatores: {}, distancia: null, mistura: {} };
+  const usadas = pond.usadas;
+  let inc = Number.isFinite(sigmaCorte) ? { sigma: sigmaCorte, origem: sigmaCorte > 0 ? "informada" : "sem_incerteza" } : incertezaCorte(brutas);
+  let mu = 0;
+  const usarNbme = !!(ligacaoNbme?.suficiente && Number.isFinite(ligacaoNbme.mu) && Number.isFinite(ligacaoNbme.sigma) && !Number.isFinite(sigmaCorte) && inc.origem !== "painel");
+  if (usarNbme) { mu = ligacaoNbme.mu; inc = { sigma: ligacaoNbme.sigma, origem: "nbme", itens_painel: inc.itens_painel ?? 0 }; }
+  const est = eap(usadas, { priori, incluirPosterior: true, sigmaCorte: inc.sigma, centroCorte: mu });
   const post = est.posterior;
   const bsForm = bsFormulario || doStep.map((q) => bDoItem(q, { usarCalibrado }));
-  const pe = percentualEsperado(post, bsForm);
+  const pe = percentualEsperado(post, bsForm, { limiar: mu });
   const vistos = new Set(usadas.map((u) => u.questao_id));
   const restantes = doStep.filter((q) => !vistos.has(q.id)).map((q) => bDoItem(q, { usarCalibrado }));
   const infoMedia = informacaoMedia(est.theta, restantes.length ? restantes : bsForm);
   const contSist = new Map();
-  for (const u of usadas) if (u.item.sistema) contSist.set(u.item.sistema, (contSist.get(u.item.sistema) || 0) + 1);
+  for (const u of brutas) if (u.item.sistema) contSist.set(u.item.sistema, (contSist.get(u.item.sistema) || 0) + 1);
   const outline = sistemas && sistemas.length ? sistemas : [...new Set(doStep.map((q) => q.sistema).filter(Boolean))].sort();
-  const cob = cobertura(contSist, outline, { minPorSistema: regra.min_por_sistema });
+  const cob = cobertura(contSist, outline, { minPorSistema: regra.min_por_sistema, pesos: pesosSistemas, nTotal: brutas.length, fracaoPeso: regra.fracao_peso_sistema ?? REGRA_CONFIANCA.fracao_peso_sistema });
   const n_minimo = itensMinimos(bsForm, { regra, priori });
-  const confianca = classificarConfianca({ p: est.p_aprovacao, theta: est.theta, dp: est.dp, n_efetivo: est.n_efetivo, n_minimo, cob, infoMedia, regra });
+  const origemCorte = inc.origem === "painel" ? "painel" : inc.origem === "nbme" ? "nbme" : inc.origem === "misto" ? "misto" : "provisorio";
+  const confianca = classificarConfianca({ p: est.p_aprovacao, theta: est.theta - mu, dp: est.dp, n_efetivo: est.n_efetivo, n_minimo, cob, infoMedia, regra, sigmaCorte: inc.sigma, origemCorte });
+  /* perfil por área com os pesos originais: a repesagem é para a estimativa global;
+     numa área, ela só daria precisão que os dados não têm */
   const perfil = {};
-  for (const dim of DIMENSOES_PERFIL[step] || []) perfil[dim] = perfilPorArea(usadas, dim, { priori });
+  for (const dim of DIMENSOES_PERFIL[step] || []) perfil[dim] = perfilPorArea(brutas, dim, { priori, limiar: mu });
+  /* Sensibilidade ao padrão provisório: P(theta > c) se o banco inteiro for
+     SENSIBILIDADE_PADRAO.deslocamento logit mais fácil (o theta estimado está inflado
+     nessa quantidade, então o limiar verdadeiro fica em +d) ou mais difícil (-d), só
+     com a incerteza da medida em cada cenário. */
+  const dS = SENSIBILIDADE_PADRAO.deslocamento;
+  const sensibilidade = padraoProvisorio(origemCorte) ? {
+    deslocamento: dS, pontos: SENSIBILIDADE_PADRAO.pontos,
+    itens_mais_faceis: pAcimaDoCorte(post, 0, null, dS),
+    itens_mais_dificeis: pAcimaDoCorte(post, 0, null, -dS),
+    muda_leitura: [dS, -dS].some((d) => faixaP(pAcimaDoCorte(post, 0, null, d), regra) !== faixaP(est.p_aprovacao, regra))
+  } : null;
   const nCal = usadas.filter((u) => usarCalibrado && Number.isFinite(u.item.b_calibrado)).length;
   const base = nCal === 0 ? "angoff" : nCal === usadas.length ? "calibrado" : "misto";
   const avisos = [
-    base === "angoff"
-      ? "Estimativa calculada pelo padrão de Angoff do banco (julgamento dos autores sobre o examinando no limiar). Não é resultado oficial do USMLE nem do NBME."
-      : "Estimativa com dificuldades recalibradas pelas respostas da turma e ancoradas no padrão de Angoff. Não é resultado oficial do USMLE nem do NBME."
+    origemCorte === "painel"
+      ? "O limiar do banco vem do Angoff publicado pelo painel de juízes. A probabilidade inclui a incerteza do painel. Não é resultado oficial do USMLE nem do NBME."
+      : origemCorte === "nbme"
+      ? "O limiar está ligado às autoavaliações NBME da turma: é a habilidade em que o escore NBME previsto atinge " + ligacaoNbme.limiar + ", estimada com " + ligacaoNbme.n + " escores reais. A probabilidade inclui a incerteza dessa ligação (desvio-padrão de " + String(Math.round(inc.sigma * 100) / 100).replace(".", ",") + " logit). Não é resultado oficial do USMLE nem do NBME."
+      : "O limiar do banco é provisório: vem da dificuldade-alvo que os autores deram a cada item, e não de um painel de juízes. A probabilidade inclui essa incerteza (desvio-padrão de " + String(Math.round(inc.sigma * 100) / 100).replace(".", ",") + " logit no padrão) e mede a posição em relação ao padrão do banco. Não é probabilidade de aprovação no USMLE nem resultado do NBME.",
+    base === "angoff" ? "Dificuldades dos itens: as do banco, ainda sem recalibração pelas respostas da turma." : "Dificuldades recalibradas pelas respostas da turma e ancoradas no mesmo limiar."
   ];
-  if (step === "step2ck") avisos.push("No Step 2 CK, o limiar do banco representa o padrão mínimo de aprovação (" + PADRAO_STEP2CK + " desde 01/07/2025) e foi fixado por Angoff. A nota de três dígitos só será estimada depois da calibração com escores reais.");
+  if (step === "step2ck") avisos.push("No Step 2 CK, o limiar do banco foi fixado para representar o padrão mínimo de aprovação (" + PADRAO_STEP2CK + " desde 01/07/2025). A nota de três dígitos só será estimada depois da calibração com escores reais.");
+  if (pond.distancia !== null && pond.distancia > 0.15) avisos.push("A mistura de sistemas que você respondeu está longe da prova (distância de " + Math.round(pond.distancia * 100) + "%); a estimativa repesa as respostas para a composição do outline, com limite, e fica menos precisa.");
+  const ic90_relativo = intervaloRelativo(post, inc.sigma, 0.9, mu);
   const out = {
     step,
     n: est.n,
@@ -381,20 +609,40 @@ export function estimarAluno({ step, respostas, itens, sistemas = null, bsFormul
     theta: est.theta,
     dp: est.dp,
     ic90: est.ic90,
+    ic90_relativo,
     p_aprovacao: est.p_aprovacao,
+    p_medida: est.p_medida,
+    corte: { sigma: inc.sigma, origem: origemCorte, centro: mu, itens_painel: inc.itens_painel ?? 0, ligacao_nbme: usarNbme ? { limiar: ligacaoNbme.limiar, n: ligacaoNbme.n, ep: ligacaoNbme.ep } : null },
+    sensibilidade,
     percentual_esperado: pe,
     confianca,
     cobertura: cob,
+    mistura: { distancia: pond.distancia, fatores: pond.fatores, sistemas: pond.mistura },
     perfil,
     base,
     itens_calibrados: nCal,
+    efeito_modo: Number.isFinite(efeitoModo?.delta) ? efeitoModo.delta : null,
     oficial: false,
     avisos,
-    limiar: step === "step2ck" ? { tipo: "padrao_angoff_equivalente", escore_oficial: PADRAO_STEP2CK } : { tipo: "padrao_angoff_equivalente", resultado_oficial: "Pass/Fail" },
+    limiar: step === "step2ck" ? { tipo: "padrao_do_banco", origem: origemCorte, escore_oficial: PADRAO_STEP2CK } : { tipo: "padrao_do_banco", origem: origemCorte, resultado_oficial: "Pass/Fail" },
     desfechos: null,
     escore: null
   };
-  if (modeloDesfechos?.suficiente) out.desfechos = { p_aprovacao: probAprovacaoDesfechos(modeloDesfechos, { theta: est.theta, dp: est.dp }), modelo: { beta0: modeloDesfechos.beta0, beta1: modeloDesfechos.beta1, n: modeloDesfechos.n } };
+  /* respostas usadas (com a repesagem), para que outras contas (contribuição por área)
+     partam exatamente da mesma estimativa; fora da serialização */
+  Object.defineProperty(out, "usadas", { value: usadas, enumerable: false });
+  Object.defineProperty(out, "usadas_brutas", { value: brutas, enumerable: false });
+  if (modeloDesfechos?.suficiente) {
+    const d = intervaloDesfechos(modeloDesfechos, { theta: est.theta, dp: est.dp });
+    const decidida = d.p >= regra.p_alta || d.p <= regra.p_baixa;
+    const ok = decidida && d.ic90[0] !== null && (d.ic90[0] >= regra.p_alta || d.ic90[1] <= regra.p_baixa) && confianca.alta;
+    out.desfechos = {
+      p_aprovacao: d.p, ic90: d.ic90,
+      rotulo: ok ? "alta_confianca" : "estimativa_preliminar",
+      texto: ok ? ROTULOS_CONFIANCA.alta_confianca + " (pelos resultados oficiais da turma)" : "Estimativa pelos resultados oficiais da turma, ainda sem decisão",
+      modelo: { beta0: modeloDesfechos.beta0, beta1: modeloDesfechos.beta1, n: modeloDesfechos.n, aprovados: modeloDesfechos.aprovados ?? null, reprovados: modeloDesfechos.reprovados ?? null, taxa_resposta: modeloDesfechos.taxa_resposta ?? null }
+    };
+  }
   if (step === "step2ck" && modeloEscore?.suficiente) out.escore = preverEscore(modeloEscore, { theta: est.theta, dp: est.dp }, PADRAO_STEP2CK);
   return out;
 }
@@ -416,12 +664,12 @@ export function prontidaoCombinada({ exit18, banco = null }) {
   else if (st === "pronto") {
     divergente = desfavoravel;
     mensagem = divergente
-      ? "As duas últimas autoavaliações NBME atingem a meta, mas o banco indica, com alta confiança, desempenho abaixo do limiar. Converse com o mentor antes de manter a data."
+      ? "As duas últimas autoavaliações NBME atingem a meta, mas o banco indica, com precisão alta, desempenho abaixo do limiar do banco. Converse com o mentor antes de manter a data."
       : "Critério principal atendido (EXIT 18)." + (banco ? " Indicador do banco: " + leituraBanco(banco) + "." : "");
   } else if (st === "nao_pronto") {
     divergente = favoravel;
     mensagem = divergente
-      ? "O banco indica, com alta confiança, desempenho acima do limiar, mas o critério principal (NBME) ainda não foi atingido. A decisão segue a NBME."
+      ? "O banco indica, com precisão alta, desempenho acima do limiar do banco, mas o critério principal (NBME) ainda não foi atingido. A decisão segue a NBME."
       : "Critério principal ainda não atendido (EXIT 18)." + (banco ? " Indicador do banco: " + leituraBanco(banco) + "." : "");
   } else {
     mensagem = "Faltam autoavaliações NBME para o critério principal (EXIT 18)." + (banco ? " Indicador do banco, só complementar: " + leituraBanco(banco) + "." : "");
@@ -436,7 +684,7 @@ export function prontidaoCombinada({ exit18, banco = null }) {
   };
 }
 function leituraBanco(b) {
-  return Math.round((b.p_aprovacao ?? 0) * 100) + "% de probabilidade de estar acima do limiar (" + (b.confianca?.alta ? "alta confiança" : "estimativa preliminar") + ")";
+  return textoProbabilidade(b.p_aprovacao) + " de probabilidade de estar acima do limiar do banco, padrão " + (b.corte?.origem === "painel" ? "do painel" : "provisório") + " (" + (b.confianca?.alta ? "precisão alta" : "estimativa preliminar") + ")";
 }
 
 /* ---------- análise de itens ----------
@@ -662,9 +910,12 @@ export function recalibrarRasch(respostas, itens, opcoes = {}) {
 function clamp(x, m) { return x > m ? m : x < -m ? -m : x; }
 
 /* ---------- regressão logística (IRLS com penalização leve) ----------
-   X: linhas de covariáveis sem o intercepto; y: 0 ou 1.
-   Devolve { beta: [b0, b1, ...], ep, convergiu, iteracoes, loglik }. */
-export function regressaoLogistica(X, y, { l2 = 1e-6, max_iter = 100, tol = 1e-9 } = {}) {
+   X: linhas de covariáveis sem o intercepto; y: 0 ou 1; pesos: peso de cada linha
+   (opcional; ponderação pelo inverso da probabilidade de resposta, por exemplo).
+   Devolve { beta: [b0, b1, ...], ep, cov (inversa da informação), convergiu,
+   iteracoes, loglik }. Com pesos, cov é a inversa da informação pesada (aproximação
+   que não inclui a variância extra da estimação dos pesos). */
+export function regressaoLogistica(X, y, { l2 = 1e-6, max_iter = 100, tol = 1e-9, pesos = null } = {}) {
   const n = y.length;
   const p = (X[0]?.length || 0) + 1;
   const Z = X.map((row) => [1, ...row]);
@@ -675,8 +926,9 @@ export function regressaoLogistica(X, y, { l2 = 1e-6, max_iter = 100, tol = 1e-9
     H = Array.from({ length: p }, () => new Array(p).fill(0));
     for (let i = 0; i < n; i++) {
       let eta = 0; for (let k = 0; k < p; k++) eta += Z[i][k] * beta[k];
-      const mu = expit(eta), w = mu * (1 - mu);
-      for (let k = 0; k < p; k++) { g[k] += Z[i][k] * (y[i] - mu); for (let l = 0; l < p; l++) H[k][l] += w * Z[i][k] * Z[i][l]; }
+      const pi = pesos ? Number(pesos[i]) : 1;
+      const mu = expit(eta), w = pi * mu * (1 - mu);
+      for (let k = 0; k < p; k++) { g[k] += pi * Z[i][k] * (y[i] - mu); for (let l = 0; l < p; l++) H[k][l] += w * Z[i][k] * Z[i][l]; }
     }
     for (let k = 1; k < p; k++) { g[k] -= l2 * beta[k]; H[k][k] += l2; }
     const d = resolver(H, g);
@@ -687,8 +939,8 @@ export function regressaoLogistica(X, y, { l2 = 1e-6, max_iter = 100, tol = 1e-9
   }
   const inv = H ? inverter(H) : null;
   let ll = 0;
-  for (let i = 0; i < n; i++) { let eta = 0; for (let k = 0; k < p; k++) eta += Z[i][k] * beta[k]; ll += y[i] ? logExpit(eta) : logExpit(-eta); }
-  return { beta, ep: inv ? inv.map((r, k) => Math.sqrt(Math.max(0, r[k]))) : beta.map(() => null), convergiu: conv, iteracoes: Math.min(it, max_iter), loglik: ll };
+  for (let i = 0; i < n; i++) { let eta = 0; for (let k = 0; k < p; k++) eta += Z[i][k] * beta[k]; ll += (pesos ? Number(pesos[i]) : 1) * (y[i] ? logExpit(eta) : logExpit(-eta)); }
+  return { beta, ep: inv ? inv.map((r, k) => Math.sqrt(Math.max(0, r[k]))) : beta.map(() => null), cov: inv, convergiu: conv, iteracoes: Math.min(it, max_iter), loglik: ll };
 }
 function resolver(A, b) {
   const n = b.length;
@@ -725,15 +977,38 @@ export function auc(prob, y) {
 
 /* Desfechos reais (resultado oficial Pass/Fail) contra o theta do banco:
    P(aprovação) = expit(beta0 + beta1 * theta). registros: [{ theta, resultado: "pass" | "fail" }].
-   suficiente = pelo menos min_por_classe aprovados e reprovados (regra de cerca de
-   10 eventos por variável; Peduzzi et al., 1996, J Clin Epidemiol 49:1373). */
-export function ajustarDesfechos(registros, { min_por_classe = DESFECHOS_PADRAO.min_por_classe, l2 = 1e-6 } = {}) {
+   naoRespondentes: [{ theta }] dos participantes elegíveis que não informaram o
+   resultado (calibrarDesfechos). Com eles, a taxa de resposta é registrada e o
+   ajuste é ponderado pelo inverso da probabilidade de informar o resultado, estimada
+   por uma regressão logística de "informou" sobre theta (peso limitado a
+   peso_ipw_max), o que corrige o viés de seleção quando quem informa difere de quem
+   não informa só pelo theta.
+   suficiente (o modelo pode aparecer para o aluno): pelo menos min_por_classe (30)
+   aprovados e reprovados, ajuste convergido, sem separação completa e taxa de
+   resposta de pelo menos taxa_resposta_min (50%) quando conhecida. exploratorio:
+   pelo menos min_exploratorio (10) de cada classe, para a área administrativa. */
+export function ajustarDesfechos(registros, { min_por_classe = DESFECHOS_PADRAO.min_por_classe, min_exploratorio = DESFECHOS_PADRAO.min_exploratorio, taxa_resposta_min = DESFECHOS_PADRAO.taxa_resposta_min, naoRespondentes = null, l2 = 1e-6 } = {}) {
   const ok = (registros || []).filter((r) => Number.isFinite(r.theta) && (r.resultado === "pass" || r.resultado === "fail"));
   const y = ok.map((r) => (r.resultado === "pass" ? 1 : 0));
   const aprovados = y.filter(Boolean).length, reprovados = y.length - aprovados;
-  const base = { n: ok.length, aprovados, reprovados, suficiente: aprovados >= min_por_classe && reprovados >= min_por_classe };
-  if (!ok.length || !aprovados || !reprovados) return { ...base, suficiente: false, beta0: null, beta1: null, ep0: null, ep1: null, auc: null, brier: null, aviso: "Ainda não há aprovados e reprovados suficientes para ajustar o modelo." };
-  const m = regressaoLogistica(ok.map((r) => [r.theta]), y, { l2 });
+  const semResp = Array.isArray(naoRespondentes) ? naoRespondentes.filter((r) => Number.isFinite(r.theta)) : null;
+  const taxa_resposta = semResp ? (ok.length + semResp.length ? ok.length / (ok.length + semResp.length) : null) : null;
+  const exploratorio = aprovados >= min_exploratorio && reprovados >= min_exploratorio;
+  const base = { n: ok.length, aprovados, reprovados, taxa_resposta, nao_respondentes: semResp ? semResp.length : null, exploratorio, suficiente: false };
+  if (!ok.length || !aprovados || !reprovados) return { ...base, exploratorio: false, beta0: null, beta1: null, ep0: null, ep1: null, cov: null, auc: null, brier: null, ponderado: false, aviso: "Ainda não há aprovados e reprovados suficientes para ajustar o modelo." };
+  /* ponderação pelo inverso da probabilidade de resposta */
+  let pesosIpw = null;
+  if (semResp && semResp.length >= 5 && ok.length >= 5) {
+    const Xr = [...ok.map((r) => [r.theta]), ...semResp.map((r) => [r.theta])];
+    const yr = [...ok.map(() => 1), ...semResp.map(() => 0)];
+    const mr = regressaoLogistica(Xr, yr, { l2: 1e-3 });
+    if (mr.convergiu) {
+      const w = ok.map((r) => Math.min(DESFECHOS_PADRAO.peso_ipw_max, 1 / Math.max(1e-6, expit(mr.beta[0] + mr.beta[1] * r.theta))));
+      const media = w.reduce((a, b) => a + b, 0) / w.length;
+      pesosIpw = w.map((x) => x / media);
+    }
+  }
+  const m = regressaoLogistica(ok.map((r) => [r.theta]), y, { l2, pesos: pesosIpw });
   const prev = ok.map((r) => expit(m.beta[0] + m.beta[1] * r.theta));
   const brier = prev.reduce((s, p, i) => s + (p - y[i]) ** 2, 0) / prev.length;
   /* separação completa: um θ separa todos os aprovados de todos os reprovados. A
@@ -745,27 +1020,99 @@ export function ajustarDesfechos(registros, { min_por_classe = DESFECHOS_PADRAO.
   const tMaxPass = Math.max(...ok.filter((r) => r.resultado === "pass").map((r) => r.theta));
   const tMinFail = Math.min(...ok.filter((r) => r.resultado === "fail").map((r) => r.theta));
   const separacao = tMinPass > tMaxFail || tMaxPass < tMinFail;
-  const suficiente = base.suficiente && !separacao && !!m.convergiu;
+  const eventos = aprovados >= min_por_classe && reprovados >= min_por_classe;
+  const respostaOk = taxa_resposta === null || taxa_resposta >= taxa_resposta_min;
+  const suficiente = eventos && respostaOk && !separacao && !!m.convergiu;
   return {
-    ...base, suficiente, separacao, beta0: m.beta[0], beta1: m.beta[1], ep0: m.ep[0], ep1: m.ep[1], convergiu: m.convergiu,
+    ...base, exploratorio: exploratorio && !separacao && !!m.convergiu, suficiente, separacao, ponderado: !!pesosIpw,
+    beta0: m.beta[0], beta1: m.beta[1], ep0: m.ep[0], ep1: m.ep[1], cov: m.cov ? m.cov.map((r) => r.slice()) : null, convergiu: m.convergiu,
     auc: auc(prev, y), brier,
     aviso: separacao ? "Separação completa: nenhum aprovado tem θ abaixo de um reprovado (ou o contrário), e os coeficientes não ficam determinados. Use só como exploração até haver sobreposição."
       : !m.convergiu ? "O ajuste não convergiu. Use só como exploração."
-      : base.suficiente ? "" : "Modelo com poucos desfechos: use só como exploração até ter pelo menos " + min_por_classe + " aprovados e " + min_por_classe + " reprovados."
+      : !eventos ? "Modelo com poucos desfechos: fica só na área administrativa até ter pelo menos " + min_por_classe + " aprovados e " + min_por_classe + " reprovados."
+      : !respostaOk ? "Taxa de resposta dos desfechos de " + Math.round(taxa_resposta * 100) + "%, abaixo de " + Math.round(taxa_resposta_min * 100) + "%: quem informa o resultado pode ser diferente de quem não informa. O modelo fica só na área administrativa."
+      : ""
   };
 }
-/* P(aprovação) pelo modelo de desfechos, integrando a incerteza de theta
-   (theta ~ N(theta, dp^2), 81 pontos entre -4 e +4 desvios-padrão) */
+
+/* Probabilidade pelos desfechos e o seu intervalo. Abordagem escolhida (seção 13):
+   regressão calibrada sobre o theta EAP. O modelo é ajustado com o EAP de cada aluno
+   na data da prova, e o EAP já carrega o encolhimento e o erro de medida; a curva
+   ajustada é P(Pass | EAP), que é exatamente o que se quer prever para um aluno novo
+   com o seu EAP. Integrar de novo a incerteza de theta (dp) contaria o erro de medida
+   duas vezes e puxaria P para 0,5; por isso dp é aceito e ignorado. O que entra é a
+   incerteza dos coeficientes, eta = beta0 + beta1 * theta com beta ~ N(beta, cov):
+     m = beta0 + beta1 theta;  v_b = cov00 + 2 theta cov01 + theta² cov11
+     p = E[expit(eta)], eta ~ N(m, v_b) (quadratura de 81 pontos)
+     ic90 = [expit(m - 1,645 raiz(v_b)), expit(m + 1,645 raiz(v_b))]
+   Validação: teste "desfechos sobre o EAP: calibração e cobertura do intervalo de P".
+   Supõe que o aluno novo tenha EAP com precisão parecida com a dos alunos do ajuste.
+   Sem cov (modelo antigo), p = expit(m) e ic90 = [null, null]. */
+export function intervaloDesfechos(modelo, { theta } = {}) {
+  if (!modelo || modelo.beta0 === null || modelo.beta0 === undefined) return { p: null, ic90: [null, null] };
+  const b0 = modelo.beta0, b1 = modelo.beta1;
+  const C = Array.isArray(modelo.cov) && modelo.cov.length >= 2 ? modelo.cov : null;
+  const m = b0 + b1 * theta;
+  const vb = C ? Math.max(0, C[0][0] + 2 * theta * C[0][1] + theta * theta * C[1][1]) : 0;
+  const sd = Math.sqrt(vb);
+  let p;
+  if (!(sd > 0)) p = expit(m);
+  else { let s = 0, w = 0; for (let k = -40; k <= 40; k++) { const z = k / 10, d = Math.exp(-0.5 * z * z); s += d * expit(m + z * sd); w += d; } p = s / w; }
+  if (!C) return { p, ic90: [null, null] };
+  const h = 1.6448536 * sd;
+  return { p, ic90: [expit(m - h), expit(m + h)] };
+}
+/* P(aprovação) pelo modelo de desfechos (regressão sobre o EAP; dp ignorado, ver acima) */
 export function probAprovacaoDesfechos(modelo, { theta, dp = 0 }) {
   if (!modelo || modelo.beta0 === null) return null;
-  if (!(dp > 0)) return expit(modelo.beta0 + modelo.beta1 * theta);
-  let s = 0, w = 0;
-  for (let k = -40; k <= 40; k++) { const z = k / 10, d = Math.exp(-0.5 * z * z); s += d * expit(modelo.beta0 + modelo.beta1 * (theta + z * dp)); w += d; }
-  return s / w;
+  return intervaloDesfechos(modelo, { theta, dp }).p;
+}
+
+/* ---------- efeito do modo tutor ----------
+   Deslocamento médio do modo tutor em relação ao cronometrado, como efeito fixo no
+   Rasch: P(acerto no tutor) = expit(theta_j - b_i + delta). theta_j de cada pessoa
+   vem só das respostas cronometradas (EAP, b em uso); delta é o máximo a posteriori
+   com priori N(0, 1²), por Newton, com os theta fixos. respostas: matriz de primeiras
+   respostas com { pessoa, questao_id, correta, modo } (listRespostasCalibracao com
+   incluirTutor). Só entram pessoas com pelo menos minCronometradas respostas
+   cronometradas. Devolve { delta, ep, n_tutor, pessoas, suficiente } (suficiente com
+   pelo menos minTutor respostas no tutor). */
+export function estimarEfeitoModo(respostas, itens, { minCronometradas = 10, minTutor = 200, usarCalibrado = true } = {}) {
+  const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
+  const porPessoa = new Map();
+  for (const r of respostas || []) {
+    const q = get(r.questao_id);
+    if (!q) continue;
+    const p = porPessoa.get(String(r.pessoa)) || porPessoa.set(String(r.pessoa), { cron: [], tutor: [] }).get(String(r.pessoa));
+    (r.modo === "tutor" ? p.tutor : p.cron).push({ b: bDoItem(q, { usarCalibrado }), x: r.correta ? 1 : 0 });
+  }
+  const linhas = [];
+  let pessoas = 0;
+  for (const p of porPessoa.values()) {
+    if (p.cron.length < minCronometradas || !p.tutor.length) continue;
+    pessoas++;
+    const th = eap(p.cron, { grade: { min: -6, max: 6, passo: 0.05 }, sigmaCorte: 0 }).theta;
+    for (const t of p.tutor) linhas.push({ z: th - t.b, x: t.x });
+  }
+  if (!linhas.length) return { delta: null, ep: null, n_tutor: 0, pessoas: 0, suficiente: false };
+  let d = 0, h = 1;
+  for (let k = 0; k < 50; k++) {
+    let g = -d; h = 1;
+    for (const l of linhas) { const P = expit(l.z + d); g += l.x - P; h += P * (1 - P); }
+    const passo = clamp(g / h, 1);
+    d += passo;
+    if (Math.abs(passo) < 1e-8) break;
+  }
+  return { delta: d, ep: 1 / Math.sqrt(h), n_tutor: linhas.length, pessoas, suficiente: linhas.length >= minTutor };
 }
 
 /* Escores reais (Step 2 CK oficial ou NBME) contra o theta do banco, por mínimos
-   quadrados: escore = a + b * theta + erro (desvio-padrão residual sigma).
+   quadrados: escore = a + b * theta + erro (desvio-padrão residual sigma), com a
+   covariância dos coeficientes (var_a, var_b, cov_ab) para o corte ligado e a
+   predição. O regressor é o EAP: como E[theta | respostas] = EAP, a covariância entre
+   theta e EAP é a variância do EAP, e o coeficiente angular sobre o EAP estima o da
+   relação com o theta verdadeiro sem a atenuação de um regressor com erro clássico
+   (seção 6.2), desde que a priori represente a população.
    suficiente = pelo menos min_escores registros (critério interno). */
 export function ajustarEscore(registros, { min_escores = DESFECHOS_PADRAO.min_escores } = {}) {
   const ok = (registros || []).filter((r) => Number.isFinite(r.theta) && Number.isFinite(r.escore));
@@ -777,25 +1124,60 @@ export function ajustarEscore(registros, { min_escores = DESFECHOS_PADRAO.min_es
   const b = sxx > 0 ? sxy / sxx : 0, a = my - b * mx;
   const sse = ok.reduce((s, r) => s + (r.escore - a - b * r.theta) ** 2, 0);
   const sigma = Math.sqrt(sse / Math.max(1, n - 2));
-  return { n, suficiente: n >= min_escores, a, b, sigma, r2: syy > 0 ? 1 - sse / syy : null, aviso: n >= min_escores ? "" : "Poucos escores reais (" + n + "); a nota estimada ainda não é mostrada ao aluno." };
+  const s2 = sigma * sigma;
+  const var_b = sxx > 0 ? s2 / sxx : null;
+  const var_a = sxx > 0 ? s2 * (1 / n + (mx * mx) / sxx) : null;
+  const cov_ab = sxx > 0 ? -mx * s2 / sxx : null;
+  return { n, suficiente: n >= min_escores, a, b, sigma, r2: syy > 0 ? 1 - sse / syy : null, var_a, var_b, cov_ab, media_theta: mx, aviso: n >= min_escores ? "" : "Poucos escores reais (" + n + "); a nota estimada ainda não é mostrada ao aluno." };
 }
-/* Escore previsto, intervalo preditivo de 90% e P(escore >= limiar) */
-export function preverEscore(modelo, { theta, dp = 0 }, limiar = PADRAO_STEP2CK) {
+/* Escore previsto, intervalo preditivo de 90% e P(escore >= limiar). Mesma abordagem
+   dos desfechos: a regressão é sobre o EAP e o resíduo sigma já contém o erro de
+   medida de theta, então dp não entra de novo; entra a incerteza dos coeficientes
+   (var_a + 2 theta cov_ab + theta² var_b), quando o modelo a traz. */
+export function preverEscore(modelo, { theta } = {}, limiar = PADRAO_STEP2CK) {
   if (!modelo || modelo.a === null) return null;
   const media = modelo.a + modelo.b * theta;
-  const s = Math.sqrt(modelo.sigma * modelo.sigma + modelo.b * modelo.b * dp * dp);
+  const vCoef = Number.isFinite(modelo.var_a) && Number.isFinite(modelo.var_b) && Number.isFinite(modelo.cov_ab) ? Math.max(0, modelo.var_a + 2 * theta * modelo.cov_ab + theta * theta * modelo.var_b) : 0;
+  const s = Math.sqrt(modelo.sigma * modelo.sigma + vCoef);
   return { media, ic90: [media - 1.6448536 * s, media + 1.6448536 * s], p_limiar: s > 0 ? 1 - normalCdf((limiar - media) / s) : media >= limiar ? 1 : 0, limiar, suficiente: !!modelo.suficiente };
+}
+
+/* ---------- ligação com as autoavaliações NBME (seção 6.2) ----------
+   Com a regressão escore NBME = a + b theta (ajustarEscore sobre o EAP de cada aluno
+   na data da autoavaliação, só standard-paced), o corte ligado é o theta em que o
+   escore previsto atinge o padrão de aprovação: mu = (limiar - a) / b. Erro-padrão pelo
+   método delta, com gradiente (-1/b, -(limiar - a)/b²):
+     ep² = var_a / b² + (limiar - a)² var_b / b⁴ + 2 (limiar - a) cov_ab / b³
+   suficiente: pelo menos min_escores escores, b > 0 com b / ep(b) >= min_t e
+   ep <= ep_max. sigma = max(ep, INCERTEZA_CORTE.minimo) vai no lugar do provisório. É
+   uma ligação linear (regressão), não equipercentil: com 30 a 100 escores a ligação
+   equipercentil fica instável nas caudas, e o que interessa é um ponto só, o corte. */
+export function corteLigadoNbme(modelo, { step = "step1", limiar = LIGACAO_NBME.limiar[step], min_escores = LIGACAO_NBME.min_escores, min_t = LIGACAO_NBME.min_t, ep_max = LIGACAO_NBME.ep_max } = {}) {
+  const base = { metodo: "linear_regressao_sobre_eap", limiar, n: modelo?.n ?? 0, mu: null, ep: null, sigma: null, suficiente: false };
+  if (!modelo || !Number.isFinite(modelo.a) || !Number.isFinite(modelo.b)) return { ...base, motivo: "Ainda não há escores NBME suficientes para a ligação." };
+  const { a, b } = modelo;
+  if (!Number.isFinite(modelo.var_b) || !Number.isFinite(modelo.var_a) || !Number.isFinite(modelo.cov_ab)) return { ...base, motivo: "Modelo sem a covariância dos coeficientes; recalcule a calibração." };
+  if (!(b > 0)) return { ...base, motivo: "O escore NBME não cresce com a habilidade do banco nos dados da turma (coeficiente angular " + String(Math.round(b * 10) / 10).replace(".", ",") + ")." };
+  const t = b / Math.sqrt(modelo.var_b);
+  const d = limiar - a;
+  const ep2 = modelo.var_a / (b * b) + (d * d * modelo.var_b) / b ** 4 + (2 * d * modelo.cov_ab) / b ** 3;
+  const mu = d / b, ep = Math.sqrt(Math.max(0, ep2));
+  const motivos = [];
+  if ((modelo.n ?? 0) < min_escores) motivos.push("Faltam escores: " + (modelo.n ?? 0) + " de " + min_escores + ".");
+  if (t < min_t) motivos.push("Relação fraca entre o escore NBME e a habilidade do banco (b / ep = " + String(Math.round(t * 10) / 10).replace(".", ",") + "; mínimo " + min_t + ").");
+  if (ep > ep_max) motivos.push("Erro-padrão do corte ligado de " + String(Math.round(ep * 100) / 100).replace(".", ",") + " logit, acima de " + String(ep_max).replace(".", ",") + ".");
+  return { ...base, mu, ep, sigma: Math.max(ep, INCERTEZA_CORTE.minimo), t, suficiente: motivos.length === 0, motivo: motivos.join(" ") };
 }
 
 /* Junta desfechos e respostas: para cada desfecho, o theta do aluno com as respostas
    dadas até a data da prova. desfechos: [{ user_id, step, data, resultado?, escore? }];
    respostasPorUsuario: Map user_id -> respostas; itens: Map id -> item. */
-export function montarDadosDesfechos(desfechos, respostasPorUsuario, itens, { pesos = PESOS_MODO } = {}) {
+export function montarDadosDesfechos(desfechos, respostasPorUsuario, itens, { pesos = PESOS_MODO, efeitoModo = null } = {}) {
   const out = [];
   for (const d of desfechos || []) {
     const rs = respostasPorUsuario instanceof Map ? respostasPorUsuario.get(d.user_id) : respostasPorUsuario?.[d.user_id];
     const ate = d.data ? new Date(String(d.data).slice(0, 10) + "T23:59:59Z").toISOString() : null;
-    const { usadas } = prepararRespostas(rs || [], itens, { step: d.step, pesos, ate });
+    const { usadas } = prepararRespostas(rs || [], itens, { step: d.step, pesos, ate, efeitoModo });
     if (!usadas.length) continue;
     const e = eap(usadas);
     out.push({ user_id: d.user_id, step: d.step, data: d.data, theta: e.theta, dp: e.dp, n: e.n, resultado: d.resultado ?? null, escore: Number.isFinite(Number(d.escore)) && d.escore !== null ? Number(d.escore) : null });

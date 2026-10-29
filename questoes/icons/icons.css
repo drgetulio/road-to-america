@@ -49,6 +49,7 @@
 .ph.ph-list-numbers:before { content: "\e2f6"; }
 .ph.ph-lock-simple:before { content: "\e308"; }
 .ph.ph-magnifying-glass:before { content: "\e30c"; }
+.ph.ph-magnifying-glass-plus:before { content: "\e310"; }
 .ph.ph-minus-circle:before { content: "\e32c"; }
 .ph.ph-note-pencil:before { content: "\e34c"; }
 .ph.ph-path:before { content: "\e39c"; }
@@ -126,6 +127,7 @@
 .ph-fill.ph-list-numbers:before { content: "\e2f6"; }
 .ph-fill.ph-lock-simple:before { content: "\e308"; }
 .ph-fill.ph-magnifying-glass:before { content: "\e30c"; }
+.ph-fill.ph-magnifying-glass-plus:before { content: "\e310"; }
 .ph-fill.ph-minus-circle:before { content: "\e32c"; }
 .ph-fill.ph-note-pencil:before { content: "\e34c"; }
 .ph-fill.ph-path:before { content: "\e39c"; }

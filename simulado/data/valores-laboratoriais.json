@@ -68,7 +68,7 @@
      "si": "0-5 µmol/L"
     },
     {
-     "nome": "Calcium",
+     "nome": "Calcium, serum",
      "pt": "cálcio",
      "conv": "8.4-10.2 mg/dL",
      "si": "2.10-2.55 mmol/L"
@@ -98,7 +98,7 @@
      "si": "53-106 µmol/L"
     },
     {
-     "nome": "Glucose",
+     "nome": "Glucose, serum",
      "pt": "glicose, glicemia",
      "conv": null,
      "si": null,
@@ -128,7 +128,7 @@
      "si": "13-60 U/L"
     },
     {
-     "nome": "Osmolality",
+     "nome": "Osmolality, serum",
      "pt": "osmolalidade sérica",
      "conv": "275-295 mOsmol/kg H₂O",
      "si": "275-295 mOsmol/kg H₂O"
@@ -140,7 +140,7 @@
      "si": "0.97-1.45 mmol/L"
     },
     {
-     "nome": "Proteins, total",
+     "nome": "Proteins, total, serum",
      "pt": "proteínas totais",
      "conv": "6.0-7.8 g/dL",
      "si": "60-78 g/L"
@@ -780,37 +780,37 @@
    "titulo_pt": "Líquido cefalorraquidiano",
    "itens": [
     {
-     "nome": "Cell count",
+     "nome": "Cell count, CSF",
      "pt": "celularidade do líquor",
      "conv": "0-5/mm³",
      "si": "0-5 × 10⁶/L"
     },
     {
-     "nome": "Chloride",
+     "nome": "Chloride, CSF",
      "pt": "cloreto no líquor",
      "conv": "118-132 mEq/L",
      "si": "118-132 mmol/L"
     },
     {
-     "nome": "Gamma globulin",
+     "nome": "Gamma globulin, CSF",
      "pt": "gamaglobulina no líquor",
      "conv": "3%-12% total proteins",
      "si": "0.03-0.12"
     },
     {
-     "nome": "Glucose",
+     "nome": "Glucose, CSF",
      "pt": "glicose no líquor",
      "conv": "40-70 mg/dL",
      "si": "2.2-3.9 mmol/L"
     },
     {
-     "nome": "Pressure",
+     "nome": "Opening pressure, CSF",
      "pt": "pressão de abertura",
      "conv": "70-180 mm H₂O",
      "si": "70-180 mm H₂O"
     },
     {
-     "nome": "Proteins, total",
+     "nome": "Proteins, total, CSF",
      "pt": "proteínas no líquor",
      "conv": "<40 mg/dL",
      "si": "<0.40 g/L"
@@ -823,7 +823,7 @@
    "titulo_pt": "Urina",
    "itens": [
     {
-     "nome": "Calcium",
+     "nome": "Calcium, urine",
      "pt": "cálcio urinário, calciúria",
      "conv": "100-300 mg/24 h",
      "si": "2.5-7.5 mmol/24 h"
@@ -847,19 +847,19 @@
      ]
     },
     {
-     "nome": "Osmolality",
+     "nome": "Osmolality, urine",
      "pt": "osmolalidade urinária",
      "conv": "50-1200 mOsmol/kg H₂O",
      "si": "50-1200 mOsmol/kg H₂O"
     },
     {
-     "nome": "Oxalate",
+     "nome": "Oxalate, urine",
      "pt": "oxalato urinário",
      "conv": "8-40 µg/mL",
      "si": "90-445 µmol/L"
     },
     {
-     "nome": "Proteins, total",
+     "nome": "Proteins, total, urine",
      "pt": "proteinúria",
      "conv": "<150 mg/24 h",
      "si": "<0.15 g/24 h"

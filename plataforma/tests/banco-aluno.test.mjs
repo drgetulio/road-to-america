@@ -2,9 +2,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { montarBanco, sistemasDoOutline } from "../js/banco.js";
+import { montarBanco, sistemasDoOutline, pesosDoOutline } from "../js/banco.js";
 import { rng } from "../js/simulado.js";
-import { expit, prepararRespostas, eap, simularRespostas, normalAleatoria, bDoItem } from "../js/psicometria.js";
+import { expit, prepararRespostas, eap, simularRespostas, normalAleatoria, bDoItem, estimarAluno } from "../js/psicometria.js";
 import { gerarBancoSintetico } from "./sintetico.mjs";
 import {
   historicoItens, situacaoItem, filtrarPool, contagemFacetas, validarPedidoBloco, sortearBlocoBanco, criarBlocoBanco,
@@ -174,8 +174,8 @@ test("curva de evolução: um ponto por sessão, acumulando as respostas até a 
   assert.equal(c.length, 3);
   assert.deepEqual(c.map((p) => p.n), [20, 40, 60]);
   assert.ok(c.every((p) => p.sessao_total === 20 && p.sessao_acertos === 15));
-  const { usadas } = prepararRespostas(l, banco.porId, { step: "step1" });
-  assert.ok(Math.abs(c[2].p_aprovacao - eap(usadas).p_aprovacao) < 1e-12, "o último ponto é a estimativa atual");
+  const atual = estimarAluno({ step: "step1", respostas: l, itens: banco.porId, sistemas: sistemasDoOutline("step1"), pesosSistemas: pesosDoOutline("step1") });
+  assert.ok(Math.abs(c[2].p_aprovacao - atual.p_aprovacao) < 1e-9, "o último ponto é a estimativa atual (com a repesagem e a incerteza do padrão)");
   assert.equal(curvaEvolucao({ respostas: l, itens: banco.porId, step: "step1", maxPontos: 2 }).length, 2);
   assert.equal(curvaEvolucao({ respostas: l, itens: banco.porId, step: "step2ck" }).length, 0);
 });
@@ -243,11 +243,11 @@ test("painel de aprovação: aluno simulado forte, fraco, sem respostas e Step 2
   const gerar = (theta, n) => its.slice(0, n).map((q) => resp(q.id, "A", random() < expit(theta - bDoItem(q))));
   const forte = resumoAprovacao({ banco, respostas: gerar(1.2, 250), step: "step1" });
   assert.ok(forte.est.p_aprovacao > 0.97);
-  assert.equal(forte.est.confianca.rotulo, "alta_confianca");
+  assert.equal(forte.est.confianca.rotulo, "precisao_alta", "precisão alta em relação ao padrão do banco; alta confiança de aprovação só com desfechos reais");
   assert.equal(forte.prontidao.status, "insuficiente", "sem NBME, a EXIT 18 fica insuficiente");
   assert.match(forte.prontidao.mensagem, /complementar/);
   const fraco = resumoAprovacao({ banco, respostas: gerar(-1.2, 250), step: "step1" });
-  assert.ok(fraco.est.p_aprovacao < 0.03);
+  assert.ok(fraco.est.p_aprovacao < 0.1, "com a incerteza do padrão provisório (0,7 logit), theta de -1,2 fica perto de 5%");
   assert.ok(fraco.recomendacoes.some((r) => r.tipo === "area"), "recomendações por área");
   assert.ok(fraco.recomendacoes.filter((r) => r.tipo === "area" && r.dim === "sistema").every((r, i, a) => i === 0 || a[i - 1].ganho >= r.ganho));
   const vazio = resumoAprovacao({ banco, respostas: [], step: "step1" });
@@ -351,4 +351,79 @@ test("revisão independente: contribuição por área (base calculada uma vez) i
       assert.ok(Math.abs(c.ganho - (eap(alt).p_aprovacao - base)) < 1e-10, dim + " " + c.chave);
     }
   }
+});
+
+test("formulário reservado fora do sorteio; pares inimigos nunca no mesmo bloco; recomendações só com 5 itens ou mais", async () => {
+  const { semInimigos, sortearBlocoBanco: sortear } = await import("../js/banco-aluno.js");
+  const step = "step1";
+  const ids = banco.steps[step].map((q) => q.id);
+  const reservados = new Set(ids.slice(0, 100));
+  const b2 = { ...banco, reservados };
+  const pool = filtrarPool(b2, { step, situacao: "todas" });
+  assert.equal(pool.length, ids.length - 100);
+  assert.ok(pool.every((q) => !reservados.has(q.id)));
+  assert.equal(contagemFacetas(b2, { step }).disponiveis, ids.length - 100);
+  /* par inimigo: o segundo item do par é trocado */
+  const [p1, p2] = banco.steps[step];
+  const comPar = banco.steps[step].map((q) => (q.id === p1.id ? { ...q, inimigos: [p2.id] } : q));
+  const bloco = semInimigos([comPar[0], comPar[1], comPar[2]], comPar);
+  assert.equal(bloco.length, 3);
+  assert.ok(!(bloco.some((q) => q.id === p1.id) && bloco.some((q) => q.id === p2.id)));
+  for (let k = 0; k < 20; k++) {
+    const s = sortear(comPar.slice(0, 30), { n: 20, semente: 100 + k });
+    assert.ok(!(s.some((q) => q.id === p1.id) && s.some((q) => q.id === p2.id)), "semente " + (100 + k));
+  }
+  /* área com 1 item: sem ganho e fora das recomendações */
+  const usadas = [];
+  for (const q of banco.steps[step].slice(0, 120)) usadas.push({ questao_id: q.id, item: q, b: q.b_angoff, x: q.sistema === "cardiovascular" ? 0 : 1, w: 1 });
+  const um = banco.steps[step].find((q) => q.sistema === "desenvolvimento_humano" && !usadas.some((u) => u.questao_id === q.id));
+  if (um) usadas.push({ questao_id: um.id, item: um, b: um.b_angoff, x: 0, w: 1 });
+  const c = contribuicaoPorArea(usadas, "sistema", { step });
+  const dh = c.find((x) => x.chave === "desenvolvimento_humano");
+  if (dh && dh.n < 5) { assert.equal(dh.ganho, null); assert.equal(dh.poucos_itens, true); }
+  const recs = recomendacoes({ step, est: { confianca: { faltam_sistemas: [], faltam_itens_minimo: 0 } }, contribuicao: { sistema: c } });
+  assert.ok(recs.filter((r) => r.tipo === "area").every((r) => (c.find((x) => x.chave === r.chave)?.n ?? 0) >= 5));
+  assert.ok(recs.every((r) => !/p\.p\./.test(r.texto)), "o efeito é escrito por extenso");
+});
+
+/* ---------- rodada 2 da banca ---------- */
+import { maximoSemInimigos, contagemFacetas as contagemR2, recomendacoes as recomendacoesR2 } from "../js/banco-aluno.js";
+import { resumoRevisao } from "../js/banco.js";
+import { itensForaDoCorte } from "../js/formularios.js";
+
+test("resumo do bloco conta as mesmas exclusões da montagem: par inimigo tira um item do máximo", () => {
+  const pool = Array.from({ length: 20 }, (_, i) => ({ id: "x" + i, inimigos: i === 0 ? ["x1"] : [] }));
+  assert.equal(maximoSemInimigos(pool), 19);
+  assert.equal(maximoSemInimigos(pool.map((q) => ({ ...q, inimigos: [] }))), 20);
+  const b = montarBanco(gerarBancoSintetico({ porStep: 30, semente: 2 }));
+  const ids = b.steps.step1.map((q) => q.id);
+  b.steps.step1[0].inimigos = [ids[1]];
+  const c = contagemR2(b, { step: "step1" });
+  assert.equal(c.max_bloco, c.disponiveis - 1);
+  assert.equal(c.fora_por_inimigos, 1);
+});
+
+test("recomendações: áreas na ordem do ganho, de qualquer dimensão", () => {
+  const contribuicao = {
+    sistema: [{ chave: "gastrointestinal", ganho: 0.016, acertos: 3, n: 8, taxa_limiar: 0.6 }],
+    disciplinas: [{ chave: "patologia", ganho: 0.048, acertos: 2, n: 9, taxa_limiar: 0.6 }],
+    competencia: [{ chave: "diagnostico", ganho: 0.029, acertos: 4, n: 10, taxa_limiar: 0.6 }]
+  };
+  const r = recomendacoesR2({ step: "step1", est: { confianca: { faltam_sistemas: [], faltam_itens_minimo: 0 } }, contribuicao });
+  const g = r.filter((x) => x.tipo === "area").map((x) => x.ganho);
+  assert.deepEqual(g, [...g].sort((a, b) => b - a));
+});
+
+test("aviso de revisão: só some quando todos os itens têm revisão médica; itens públicos ficam fora do corte nos formulários fixos", () => {
+  const auto = { revisao: { verificado: false, tipo: "automatizada", revisor: "Revisão automatizada (modelo de IA)" } };
+  const med = { revisao: { verificado: true, revisor: "Dra. Ana Souza, CRM 1234", data: "2026-10-29" } };
+  const r1 = resumoRevisao([auto, auto]);
+  assert.equal(r1.sem_medica, 2);
+  assert.match(r1.aviso, /Nenhum destes 2 itens passou ainda por revisão de médico especialista[\s\S]*automatizada/);
+  assert.match(resumoRevisao([auto, med]).aviso, /^1 de 2 itens/);
+  assert.equal(resumoRevisao([med, med]).aviso, "");
+  const porId = new Map([["s1-001", { id: "s1-001", legado: true }], ["R2A-S1-0001", { id: "R2A-S1-0001" }]]);
+  assert.deepEqual([...itensForaDoCorte({ modo: "fixo", blocos: [["s1-001", "R2A-S1-0001"]] }, porId)], ["s1-001"]);
+  assert.equal(itensForaDoCorte({ modo: "personalizado", blocos: [["s1-001", "R2A-S1-0001"]] }, porId).size, 0);
+  assert.equal(itensForaDoCorte({ modo: "fixo", blocos: [["s1-001"]] }, porId).size, 0, "só públicos (demonstração): todos contam");
 });

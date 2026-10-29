@@ -17,7 +17,7 @@ import { SupabaseStore } from "../../anki/js/store-supabase.js";
 import { aplicarTaxonomia } from "./rotulos.js";
 import { HistoricoLocal, lerAndamento, apagarAndamento, gravarNotas } from "./armazenamento.js";
 import { restaurarSessao, expirou, encerrar, paraTentativa } from "./sessao.js";
-import { $, $$, e, toast } from "./dom.js";
+import { $, $$, e, toast, limparToasts } from "./dom.js";
 import { alternarTema, rotularTema } from "./tema.js";
 import telaInicio from "./tela-inicio.js";
 import telaProva from "./tela-prova.js";
@@ -152,6 +152,7 @@ function parseHash() {
 }
 
 async function render() {
+  limparToasts();
   const alvo = $("[data-tela]");
   const { rota, sub } = parseHash();
   if (telaAtual?.destroy) telaAtual.destroy();

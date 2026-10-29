@@ -1,4 +1,5 @@
 /* Road to America | simulado: resultado de um bloco encerrado */
+import { htmlMidiaItem } from "../../plataforma/js/midia.js";
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
 import { resumo, linhasPorCampo, titulosAreas, itensRevisao, filtrarRevisao, sistemasParaRevisar, relogio, pct, segundos, resumoHistorico } from "./resultado.js";
 import { lerNotas } from "./armazenamento.js";
@@ -26,7 +27,7 @@ function blocoQuestao(x, nota) {
     "</summary>" +
     (x.faltando ? '<div class="qrev__corpo"><p class="muted">Sem o texto da questão.</p></div>' :
     '<div class="qrev__corpo">' +
-      '<p lang="en" style="margin:12px 0 0">' + e(q.vinheta) + "</p>" +
+      '<p lang="en" style="margin:12px 0 0">' + e(q.vinheta) + "</p>" + htmlMidiaItem(q.midia) +
       '<p lang="en" style="margin:0;font-weight:600">' + e(q.pergunta) + "</p>" +
       '<ul class="alts-rev">' + q.alternativas.map((a) => {
         const sua = x.resposta === a.letra;

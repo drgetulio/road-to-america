@@ -2,27 +2,27 @@
 
 Página `questoes/` da área do aluno: itens no estilo NBME do Step 1 e do Step 2 CK, em
 blocos personalizados, com desempenho por área, curva de evolução e o painel de
-probabilidade de aprovação. Mesmo login, mesma camada de dados e mesmo menu do app de
+posição em relação ao limiar do banco. Mesmo login, mesma camada de dados e mesmo menu do app de
 flashcards (`anki/`). Site estático, módulos ES, sem etapa de build.
 
 ## Telas
 
 | Rota | O que tem |
 |---|---|
-| `#/` | placas EXIT com a probabilidade de aprovação do Step 1 e do Step 2 CK, bloco em andamento, atalhos (bloco de prova de 20 itens cronometrado, refazer erradas, rever marcadas), números do aluno e últimos blocos |
+| `#/` | placas EXIT com a posição em relação ao limiar do banco no Step 1 e no Step 2 CK, bloco em andamento, atalhos (bloco de prova de 20 itens cronometrado, refazer erradas, rever marcadas), números do aluno e últimos blocos |
 | `#/criar` | bloco personalizado: Step; sistemas, disciplinas, competências e, no Step 2 CK, disciplinas clínicas, áreas e tarefas; não vistas, erradas, marcadas ou todas; de 1 a 20 itens (até 40 no modo livre); tutor ou cronometrado. As contagens mudam a cada escolha. A rota aceita parâmetros (`?step=step1&sistema=cardiovascular&situacao=erradas&modo=tutor&n=10`) |
 | `#/bloco` | bloco em andamento, na mesma tela do simulado (`simulado/js/interface-bloco.js`): navegação, marcar, riscar, realçar, valores laboratoriais, calculadora, anotações, revisão do bloco, atalhos de teclado. Cronometrado: 90 s por item, relógio regressivo, encerra sozinho. Tutor: relógio conta o tempo gasto; ao confirmar a resposta, a alternativa trava, a correta aparece e a explicação vem logo abaixo |
 | `#/blocos` | histórico de blocos, por Step |
-| `#/resultado/<id>` | acerto contra o examinando no limiar (média do Angoff dos mesmos itens), tempo contra o ritmo de 90 s, acerto por área, revisão de cada questão com a explicação de cada alternativa, resumo em português, fonte, anotação e reporte de erro; botão para refazer as erradas no modo tutor |
+| `#/resultado/<id>` | acerto contra o examinando no limiar (média da dificuldade-alvo dos mesmos itens), tempo contra o ritmo de 90 s, acerto por área, revisão de cada questão com a explicação de cada alternativa, resumo em português, fonte, anotação e reporte de erro; botão para refazer as erradas no modo tutor |
 | `#/desempenho` | perfil por sistema, disciplina e competência em relação ao limiar (mais baixo, igual, mais alto), como no relatório oficial de reprovação; curva de evolução da probabilidade com tabela |
-| `#/aprovacao` | painel de probabilidade de aprovação (abaixo) |
+| `#/aprovacao` | painel de posição em relação ao limiar do banco (abaixo) |
 
-## Painel de probabilidade de aprovação
+## Painel de posição em relação ao limiar do banco
 
 Para cada Step: probabilidade de estar acima do limiar do banco (no Step 2 CK, de atingir
 o padrão de 218 pelo limiar do banco), intervalo de 90% da habilidade, percentual esperado
 num formulário completo e acerto do limiar, gráfico da distribuição posterior, as três
-condições da alta confiança (probabilidade decidida, itens suficientes, sistemas
+condições da precisão alta (probabilidade decidida, itens suficientes, sistemas
 cobertos) com quantos itens e quais sistemas faltam, as áreas que mais derrubam a
 probabilidade (contribuição de cada área), recomendações de estudo com links para o
 Conteúdo do Step 1, os flashcards e blocos filtrados, e a prontidão combinada com a

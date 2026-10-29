@@ -39,7 +39,11 @@ import { uid, dayKey } from "./util.js";
 import { validarTentativa } from "../../plataforma/js/simulado.js";
 import { resumirParticipante, validarNbme, normalizarNbme, parsePresencaCsv, mergeConfig, atividadeDiaria } from "../../plataforma/js/desempenho.js";
 import { gerarCoorte, ehSintetico } from "../../plataforma/js/coorte-demo.js";
-import { lerBancoDemo, normalizarItem } from "../../plataforma/js/banco.js";
+import { lerBancoDemo, normalizarItem, partePrivada, partePublica } from "../../plataforma/js/banco.js";
+
+/* Mentores fictícios do painel Angoff da demonstração (selo "fictício" na tela) */
+const PREFIXO_MENTOR = "demo-sint-mentor-";
+const MENTORES_FICTICIOS = Object.freeze(["Helena Prado", "Rafael Moura", "Camila Teixeira", "Daniel Souza", "Lívia Andrade", "Marcos Faria", "Beatriz Nunes", "Gustavo Lima", "Paula Rezende", "Thiago Barros", "Renata Costa", "Felipe Araújo"].map((n, i) => Object.freeze({ id: PREFIXO_MENTOR + (i + 1), nome: n + " (fictício)" })));
 import { analisarItens } from "../../plataforma/js/psicometria.js";
 import { gerarRespostasDemo, gerarDesfechosDemo, gerarReportesDemo, modeloVerdadeiro } from "../../plataforma/js/respostas-demo.js";
 import {
@@ -153,7 +157,8 @@ export class LocalStore {
   }
 
   _historico(c, acao) {
-    this.db.historico.push({ id: uid("h"), card_id: c.id, versao: c.versao, acao, editor_id: this.user.id, dados: { ...c, tags: [...c.tags] }, criado_em: new Date().toISOString() });
+    const seq = (this.db.seqHistoricoCards = (Number(this.db.seqHistoricoCards) || this.db.historico.length) + 1);
+    this.db.historico.push({ id: uid("h"), seq, card_id: c.id, versao: c.versao, acao, editor_id: this.user.id, dados: { ...c, tags: [...c.tags] }, criado_em: new Date().toISOString() });
   }
 
   async saveCard(input) {
@@ -217,7 +222,8 @@ export class LocalStore {
   async listHistory(cardId) {
     const c = this.db.cards[cardId];
     if (c && !canView(c, this.user)) return [];
-    return this.db.historico.filter((h) => h.card_id === cardId).sort((a, b) => b.criado_em.localeCompare(a.criado_em));
+    /* mais recente primeiro; no mesmo milissegundo, a ordem de gravação (seq) desempata */
+    return this.db.historico.filter((h) => h.card_id === cardId).sort((a, b) => b.criado_em.localeCompare(a.criado_em) || (b.seq ?? 0) - (a.seq ?? 0));
   }
 
   /* Importação em lote. Admin escolhe o baralho; participante importa como pessoal. */
@@ -614,7 +620,7 @@ export class LocalStore {
   async _questoesBrutas() {
     if (this.questoesInjetadas) { this.ultimaLeituraQuestoes = { fontes: [], privado: false }; return this.questoesInjetadas; }
     if (!this._questoesPromessa) {
-      this._questoesPromessa = lerBancoDemo().then((r) => { this.ultimaLeituraQuestoes = { fontes: r.fontes, privado: r.privado }; return r.itens; })
+      this._questoesPromessa = lerBancoDemo().then((r) => { this.ultimaLeituraQuestoes = { fontes: r.fontes, privado: r.privado, formularios: r.formularios || null }; return r.itens; })
         .catch((e) => { this._questoesPromessa = null; throw e; });
     }
     return this._questoesPromessa;
@@ -639,6 +645,24 @@ export class LocalStore {
     return mapa;
   }
 
+  /* No modo demonstração o navegador tem o banco inteiro: o gabarito não fica no
+     servidor e a correção acontece no próprio navegador, como antes. Os métodos
+     responderItens, revelarItens e corrigirSimulado existem para que as telas usem a
+     mesma chamada nos dois modos. */
+  get gabaritoNoServidor() { return false; }
+  async responderItens(lista, { revelar = true } = {}) {
+    const linhas = Array.isArray(lista) ? lista : [lista];
+    const gravadas = await this.saveRespostas(linhas);
+    const mapa = await this._gabarito();
+    return gravadas.map((r) => ({ id: r.id, questao_id: r.questao_id, posicao: r.posicao ?? null, resposta: r.resposta ?? null, correta: !!r.correta, ...(revelar && mapa.get(r.questao_id) ? { revelado: partePrivada(mapa.get(r.questao_id)) } : {}) }));
+  }
+  async revelarItens(ids) {
+    const mapa = await this._gabarito();
+    const out = {};
+    for (const id of ids || []) if (mapa.has(id)) out[id] = partePrivada(mapa.get(id));
+    return out;
+  }
+
   async listQuestoes({ step = null, incluirInativas = false } = {}) {
     const u = this.user;
     const admin = isAdmin(u);
@@ -652,7 +676,10 @@ export class LocalStore {
       if (status !== "ativo" && !(admin && incluirInativas)) continue;
       const cal = this.db.calibracao[q.id];
       const rev = admin ? { em_revisao: !!ed[q.id]?.em_revisao, revisao_nota: ed[q.id]?.revisao_nota || "" } : {};
-      out.push({ ...structuredClone(q), status, ...rev, ...(cal ? { b_calibrado: cal.b, ep_calibrado: cal.ep, n_calibracao: cal.n, calibrado_em: cal.em } : {}) });
+      /* Angoff publicado pelo painel (vale enquanto a versão do item for a mesma) */
+      const pub = this.db.angoff?.publicado?.[q.id];
+      const ang = pub && pub.versao === (norm.versao || 1) ? { angoff_painel: pub.angoff, angoff_painel_juizes: pub.juizes, angoff_painel_ep: pub.ep ?? null } : {};
+      out.push({ ...structuredClone(q), status, ...rev, ...ang, ...(cal ? { b_calibrado: cal.b, ep_calibrado: cal.ep, n_calibracao: cal.n, calibrado_em: cal.em } : {}) });
     }
     return out;
   }
@@ -662,7 +689,10 @@ export class LocalStore {
     return q;
   }
   _historicoQuestao(questao_id, versao, acao, de, para, motivo, extra = {}) {
-    const reg = { id: uid("qh"), questao_id, versao, acao, de: de ?? null, para: para ?? null, motivo: String(motivo || "").trim(), recorrigidas: null, editor_id: this.user.id, criado_em: new Date().toISOString(), ...extra };
+    /* seq: ordem de gravação. Duas ações no mesmo milissegundo têm o mesmo criado_em, e o
+       desempate pelo id (aleatório) trocava a ordem às vezes (como o identity do banco) */
+    const seq = (this.db.seqHistorico = (Number(this.db.seqHistorico) || this.db.historicoQuestoes.length) + 1);
+    const reg = { id: uid("qh"), seq, questao_id, versao, acao, de: de ?? null, para: para ?? null, motivo: String(motivo || "").trim(), recorrigidas: null, editor_id: this.user.id, criado_em: new Date().toISOString(), ...extra };
     this.db.historicoQuestoes.push(reg);
     return reg;
   }
@@ -725,7 +755,7 @@ export class LocalStore {
   }
   async listHistoricoQuestao(id = null) {
     this._exigeAdmin("Só administradores leem o histórico das questões.");
-    return this.db.historicoQuestoes.filter((h) => !id || h.questao_id === id).sort((a, b) => a.criado_em.localeCompare(b.criado_em) || (a.id < b.id ? -1 : 1)).map((h) => ({ ...h }));
+    return this.db.historicoQuestoes.filter((h) => !id || h.questao_id === id).sort((a, b) => a.criado_em.localeCompare(b.criado_em) || (a.seq ?? 0) - (b.seq ?? 0)).map((h) => ({ ...h }));
   }
   /* itens: [{ id, b, ep, n }]; b = null apaga a calibração do item */
   async salvarCalibracao(itens) {
@@ -846,6 +876,232 @@ export class LocalStore {
   async salvarProgressoSimulado(id, sessao) { return this._atualizarSimCompleto(id, sessao); }
   async concluirSimuladoCompleto(id, { sessao = null, resultado = null } = {}) {
     return this._atualizarSimCompleto(id, sessao, { estado: "concluido", resultado: resultado ? structuredClone(resultado) : null, fim: new Date().toISOString() });
+  }
+  /* =====================================================================
+     Painel Angoff (plataforma/js/angoff.js). No Supabase: tabelas angoff_* e funções
+     r2a_angoff_* (supabase/schema.sql). Na demonstração: o admin de demonstração pode
+     ser juiz, e 6 mentores fictícios (com selo) completam o painel; as estimativas
+     deles entram quando a rodada é fechada.
+     ===================================================================== */
+  _angoff() {
+    const a = (this.db.angoff ||= { paineis: [], juizes: [], avaliacoes: [], discussao: [], hofstee: [], publicado: {}, seq: 0 });
+    for (const k of ["paineis", "juizes", "avaliacoes", "discussao", "hofstee"]) a[k] ||= [];
+    a.publicado ||= {};
+    return a;
+  }
+  _painel(id) {
+    const p = this._angoff().paineis.find((x) => x.id === id);
+    if (!p) throw new Error("Painel não encontrado.");
+    if (!isAdmin(this.user) && !this._souJuiz(id)) throw new PermissionError("Só o admin e os juízes designados veem este painel.");
+    return p;
+  }
+  _souJuiz(id, userId = this.user.id) { return this._angoff().juizes.some((j) => j.painel_id === id && j.juiz_id === userId); }
+  async listJuizesPossiveis() {
+    this._exigeAdmin("Só administradores designam juízes.");
+    return [{ id: DEMO_USERS.admin.id, nome: DEMO_USERS.admin.nome, sintetico: false }, ...MENTORES_FICTICIOS.map((m) => ({ ...m, sintetico: true }))];
+  }
+  async listPaineisAngoff() {
+    const a = this._angoff();
+    const lista = isAdmin(this.user) ? a.paineis : a.paineis.filter((p) => this._souJuiz(p.id));
+    return structuredClone(lista).sort((x, y) => String(y.criado_em).localeCompare(String(x.criado_em)));
+  }
+  async getPainelAngoff(id) {
+    const p = this._painel(id);
+    const juizes = this._angoff().juizes.filter((j) => j.painel_id === id);
+    return { painel: structuredClone(p), juizes: isAdmin(this.user) ? structuredClone(juizes) : juizes.filter((j) => j.juiz_id === this.user.id).map((j) => ({ ...j })), n_juizes: juizes.length, sou_juiz: this._souJuiz(id) };
+  }
+  async criarPainelAngoff({ step, nome, descricao = "", itens = [], rodadas_max = 3, juizes = [] } = {}) {
+    this._exigeAdmin("Só administradores criam painéis.");
+    const { validarPainel } = await import("../../plataforma/js/angoff.js");
+    const e = validarPainel({ step, nome, itens, rodadas_max });
+    if (e.length) throw new Error(e.join(" "));
+    const mapa = await this._gabarito();
+    if (itens.some((id) => mapa.get(id)?.step !== step)) throw new Error("Todos os itens do painel precisam estar no banco e no Step do painel.");
+    const a = this._angoff();
+    const p = { id: uid("pa"), step, nome: String(nome).trim(), descricao: String(descricao || "").slice(0, 2000), itens: [...itens], rodada: 1, rodadas_max: Number(rodadas_max), estado: "avaliacao", publicado_em: null, criado_por: this.user.id, criado_em: new Date().toISOString(), atualizado_em: new Date().toISOString() };
+    a.paineis.push(p);
+    this._gravar();
+    if (juizes.length) await this.designarJuizesAngoff(p.id, juizes);
+    return structuredClone(p);
+  }
+  async designarJuizesAngoff(id, juizes) {
+    this._exigeAdmin("Só administradores designam juízes.");
+    this._painel(id);
+    const ids = [...new Set((juizes || []).map((j) => (typeof j === "string" ? j : j.id)))];
+    if (ids.includes(DEMO_USERS.participante.id) && this._ativo(DEMO_USERS.participante.id)) throw new Error("Aluno com matrícula ativa não pode ser juiz do painel Angoff.");
+    const nomes = new Map([[DEMO_USERS.admin.id, DEMO_USERS.admin.nome], ...MENTORES_FICTICIOS.map((m) => [m.id, m.nome])]);
+    const a = this._angoff();
+    a.juizes = a.juizes.filter((j) => j.painel_id !== id).concat(ids.map((jid) => ({ painel_id: id, juiz_id: jid, nome: nomes.get(jid) || jid, sintetico: jid.startsWith(PREFIXO_MENTOR), designado_em: new Date().toISOString() })));
+    this._gravar();
+    return a.juizes.filter((j) => j.painel_id === id).map((j) => ({ ...j }));
+  }
+  async listItensPainelAngoff(id) {
+    const p = this._painel(id);
+    const mapa = await this._gabarito();
+    return p.itens.map((qid) => mapa.get(qid)).filter(Boolean).map((q) => partePublica(structuredClone(q)));
+  }
+  async avaliarItemAngoff(id, questao_id, valor, comentario = "") {
+    const p = this._painel(id);
+    if (!this._souJuiz(id)) throw new PermissionError("Só os juízes designados avaliam os itens do painel.");
+    if (p.estado !== "avaliacao") throw new Error("Não há rodada de avaliação aberta neste painel.");
+    if (!p.itens.includes(questao_id)) throw new Error("O item não faz parte do painel.");
+    const { validarEstimativa } = await import("../../plataforma/js/angoff.js");
+    const e = validarEstimativa(valor);
+    if (e.length) throw new Error(e.join(" "));
+    if (String(comentario || "").length > 1000) throw new Error("O comentário tem no máximo 1000 caracteres.");
+    const a = this._angoff();
+    const k = (x) => x.painel_id === id && x.juiz_id === this.user.id && x.questao_id === questao_id && x.rodada === p.rodada;
+    const reg = { painel_id: id, juiz_id: this.user.id, questao_id, rodada: p.rodada, valor: Number(valor), comentario: String(comentario || "").trim(), atualizado_em: new Date().toISOString() };
+    const i = a.avaliacoes.findIndex(k);
+    if (i >= 0) a.avaliacoes[i] = { ...a.avaliacoes[i], ...reg }; else a.avaliacoes.push({ ...reg, criado_em: reg.atualizado_em });
+    this._gravar();
+    const q = (await this._gabarito()).get(questao_id);
+    return { questao_id, rodada: p.rodada, valor: Number(valor), revelado: partePrivada(q) };
+  }
+  async revelarPainelAngoff(id) {
+    const p = this._painel(id);
+    const mapa = await this._gabarito();
+    const minhas = new Set(this._angoff().avaliacoes.filter((x) => x.painel_id === id && x.juiz_id === this.user.id).map((x) => x.questao_id));
+    const out = {};
+    for (const qid of p.itens) if (mapa.has(qid) && (isAdmin(this.user) || minhas.has(qid))) out[qid] = partePrivada(mapa.get(qid));
+    return out;
+  }
+  async listAvaliacoesAngoff(id) {
+    this._painel(id);
+    const l = this._angoff().avaliacoes.filter((x) => x.painel_id === id);
+    return structuredClone(isAdmin(this.user) ? l : l.filter((x) => x.juiz_id === this.user.id));
+  }
+  async feedbackPainelAngoff(id) {
+    const p = this._painel(id);
+    const { rodadasFechadas, estatisticaItem, pObservado } = await import("../../plataforma/js/angoff.js");
+    const fechadas = rodadasFechadas(p);
+    const av = this._angoff().avaliacoes.filter((x) => x.painel_id === id);
+    const estimativas = [];
+    for (const r of fechadas) for (const qid of p.itens) {
+      const vs = av.filter((x) => x.rodada === r && x.questao_id === qid).map((x) => x.valor);
+      if (!vs.length) continue;
+      const st = estatisticaItem(vs);
+      estimativas.push({ questao_id: qid, rodada: r, n: st.n, media: Math.round(st.media * 100) / 100, dp: Math.round(st.dp * 100) / 100, min: st.min, max: st.max, histograma: st.histograma });
+    }
+    let p_observado = {};
+    if (fechadas.length) {
+      const mapa = await this._gabarito();
+      const todas = (await this._todasRespostas()).filter((r) => mapa.get(r.questao_id) && (r.versao_item === null || r.versao_item === undefined || r.versao_item === mapa.get(r.questao_id).versao));
+      p_observado = pObservado(todas, p.itens);
+    }
+    return { rodadas_fechadas: fechadas.length ? Math.max(...fechadas) : 0, estimativas, p_observado };
+  }
+  /* todas as respostas da turma (as do aluno de demonstração e as fictícias) */
+  async _todasRespostas() {
+    const ant = this.db.papel;
+    this.db.papel = "admin";
+    try { return await this.listRespostas({ todos: true }); } finally { this.db.papel = ant; }
+  }
+  async listDiscussaoAngoff(id) {
+    this._painel(id);
+    return structuredClone(this._angoff().discussao.filter((x) => x.painel_id === id)).sort((a, b) => a.seq - b.seq);
+  }
+  async comentarAngoff(id, { questao_id = null, texto = "" } = {}) {
+    const p = this._painel(id);
+    if (p.estado === "encerrado") throw new Error("O painel está encerrado.");
+    if (questao_id && !p.itens.includes(questao_id)) throw new Error("O item não faz parte do painel.");
+    const t = String(texto || "").trim();
+    if (!t || t.length > 2000) throw new Error("O comentário tem de 1 a 2000 caracteres.");
+    const a = this._angoff();
+    const c = { id: uid("ad"), seq: ++a.seq, painel_id: id, questao_id: questao_id || null, rodada: p.rodada, autor_id: this.user.id, autor_nome: this.user.nome, texto: t, criado_em: new Date().toISOString() };
+    a.discussao.push(c);
+    this._gravar();
+    return { ...c };
+  }
+  async listHofsteeAngoff(id) {
+    this._painel(id);
+    const l = this._angoff().hofstee.filter((x) => x.painel_id === id);
+    return structuredClone(isAdmin(this.user) ? l : l.filter((x) => x.juiz_id === this.user.id));
+  }
+  async salvarHofsteeAngoff(id, h) {
+    const p = this._painel(id);
+    if (!this._souJuiz(id) && !isAdmin(this.user)) throw new PermissionError("Só os juízes designados respondem o Hofstee.");
+    if (p.estado === "encerrado") throw new Error("O painel está encerrado.");
+    const { validarHofstee } = await import("../../plataforma/js/angoff.js");
+    const e = validarHofstee(h);
+    if (e.length) throw new Error(e.join(" "));
+    const a = this._angoff();
+    const reg = { painel_id: id, juiz_id: this.user.id, k_min: Number(h.k_min), k_max: Number(h.k_max), f_min: Number(h.f_min), f_max: Number(h.f_max), atualizado_em: new Date().toISOString() };
+    a.hofstee = a.hofstee.filter((x) => !(x.painel_id === id && x.juiz_id === this.user.id)).concat([reg]);
+    this._gravar();
+    return { ...reg };
+  }
+  async avancarPainelAngoff(id, acao) {
+    this._exigeAdmin("Somente administradores conduzem o painel.");
+    const p = this._painel(id);
+    const { proximoEstado, estimativasFicticias, pObservado } = await import("../../plataforma/js/angoff.js");
+    const prox = proximoEstado(p, acao);
+    const a = this._angoff();
+    /* ao fechar a rodada (ou encerrar com a rodada aberta), os mentores fictícios
+       designados entram com as estimativas da rodada e, no fim, com o Hofstee */
+    if ((acao === "fechar_rodada" || acao === "encerrar") && p.estado === "avaliacao") {
+      const ficticios = a.juizes.filter((j) => j.painel_id === id && j.sintetico).map((j) => j.juiz_id)
+        .filter((jid) => !a.avaliacoes.some((x) => x.painel_id === id && x.juiz_id === jid && x.rodada === p.rodada));
+      if (ficticios.length) {
+        const mapa = await this._gabarito();
+        const pObs = p.rodada > 1 ? pObservado(await this._todasRespostas(), p.itens) : {};
+        const novas = estimativasFicticias({ juizes: ficticios, itens: p.itens, porId: mapa, rodada: p.rodada, anteriores: a.avaliacoes.filter((x) => x.painel_id === id), pObs });
+        const agora = new Date().toISOString();
+        a.avaliacoes.push(...novas.map(({ ordem, ...x }) => ({ painel_id: id, comentario: "", criado_em: agora, atualizado_em: agora, ...x })));
+      }
+    }
+    if (prox.estado === "encerrado" || acao === "fechar_rodada") {
+      for (const j of a.juizes.filter((x) => x.painel_id === id && x.sintetico)) {
+        if (a.hofstee.some((x) => x.painel_id === id && x.juiz_id === j.juiz_id)) continue;
+        const k = MENTORES_FICTICIOS.findIndex((m) => m.id === j.juiz_id);
+        a.hofstee.push({ painel_id: id, juiz_id: j.juiz_id, k_min: 52 + (k % 3) * 2, k_max: 68 + (k % 4) * 2, f_min: 3 + (k % 3), f_max: 18 + (k % 4) * 3, sintetico: true, atualizado_em: new Date().toISOString() });
+      }
+    }
+    Object.assign(p, prox, { atualizado_em: new Date().toISOString() });
+    this._gravar();
+    return { id, estado: p.estado, rodada: p.rodada };
+  }
+  async publicarAngoff(id, { minJuizes = 10, justificativa = "" } = {}) {
+    this._exigeAdmin("Somente administradores publicam o Angoff do painel.");
+    const p = this._painel(id);
+    const { valoresParaPublicar, regraHofsteePublicacao, MIN_JUIZES } = await import("../../plataforma/js/angoff.js");
+    if (minJuizes < MIN_JUIZES) throw new Error("O mínimo é de " + MIN_JUIZES + " juízes por item.");
+    if (p.estado !== "encerrado") throw new Error("Encerre o painel antes de publicar.");
+    const a = this._angoff();
+    /* juízes e erro-padrão do corte; a regra de Hofstee é a do servidor, logo abaixo */
+    const { publicar, insuficientes, bloqueado, motivo, corte, corte_ep } = valoresParaPublicar(p, a.avaliacoes.filter((x) => x.painel_id === id), { minJuizes, verificacao: { ok: true } });
+    if (bloqueado) throw new Error(motivo);
+    const hof = regraHofsteePublicacao(corte, a.hofstee.filter((x) => x.painel_id === id), justificativa);
+    if (hof.bloqueado) throw new Error(hof.motivo);
+    p.publicacao_justificativa = hof.ok ? null : String(justificativa).trim();
+    p.publicacao_hofstee = { ok: hof.ok, k_min: hof.k_min ?? null, k_max: hof.k_max ?? null, corte };
+    const agora = new Date().toISOString();
+    const mapa = await this._gabarito();
+    for (const x of publicar) a.publicado[x.questao_id] = { angoff: x.angoff, juizes: x.juizes, ep: x.ep, painel_id: id, em: agora, versao: mapa.get(x.questao_id)?.versao || 1 };
+    p.publicado_em = agora;
+    this._gravar();
+    this._vigentesCache = null;
+    return { publicados: publicar.length, insuficientes, corte_ep, hofstee_ok: hof.ok, justificativa: p.publicacao_justificativa };
+  }
+
+  /* Mesma chamada do SupabaseStore (r2a_corrigir_simulado): corrige pelo gabarito do
+     banco em memória, grava uma resposta por item e conclui. As telas do modo
+     demonstração continuam usando concluirSimuladoCompleto; este método existe para que
+     as duas camadas tenham a mesma interface. */
+  async corrigirSimulado(id, complemento = {}) {
+    const s = this._simCompleto(id);
+    if (s.estado === "abandonado") throw new Error("Simulado abandonado não é corrigido.");
+    if (s.estado === "em_andamento" && s.bloco_atual < s.formulario.blocos.length) throw new Error("O simulado só é corrigido depois do último bloco.");
+    const mapa = await this._gabarito();
+    const { corrigirSessao } = await import("../../plataforma/js/formularios.js");
+    const { resultado, respostas } = corrigirSessao(s.formulario, s.sessao, mapa, { sessaoId: s.id });
+    if (!this.db.respostas.some((r) => r.sessao_id === s.id && r.origem === "simulado")) await this.saveRespostas(respostas);
+    const permitidos = ["estimativa", "dia", "por", "tempo_medio_ms", "encerramentos", "reduzido", "formulario_id", "step", "tipo"];
+    const comp = Object.fromEntries(Object.entries(complemento || {}).filter(([k]) => permitidos.includes(k)));
+    const final = { ...(s.resultado || {}), ...resultado, ...comp, total: resultado.total, acertos: resultado.acertos, percentual: resultado.percentual, em_branco: resultado.em_branco, por_bloco: resultado.por_bloco };
+    Object.assign(s, { estado: "concluido", resultado: structuredClone(final), fim: s.fim || new Date().toISOString(), atualizado_em: new Date().toISOString() });
+    this._gravar();
+    return { resultado: structuredClone(final), itens: respostas.map((r) => ({ questao_id: r.questao_id, bloco: r.bloco, posicao: r.posicao, resposta: r.resposta, correta: r.correta, ...(mapa.get(r.questao_id) ? { revelado: partePrivada(mapa.get(r.questao_id)) } : {}) })) };
   }
   async abandonarSimuladoCompleto(id) { return this._atualizarSimCompleto(id, null, { estado: "abandonado", fim: new Date().toISOString() }); }
   async getSimuladoCompleto(id) {

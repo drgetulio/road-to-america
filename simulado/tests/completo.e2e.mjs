@@ -22,6 +22,7 @@ import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
 import { gerarBancoSintetico } from "../../plataforma/tests/sintetico.mjs";
+import { prepararRede, vigiarErros } from "../../plataforma/tests/e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-completo-capturas"));
@@ -97,17 +98,19 @@ async function conferir(page, nome, { tema }) {
 
 async function novaPagina({ largura, altura, tema }) {
   const ctx = await navegador.newContext({ viewport: { width: largura, height: altura }, colorScheme: tema, locale: "pt-BR" });
+  await prepararRede(ctx, base);
   const page = await ctx.newPage();
   const erros = [];
-  page.on("console", (m) => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) erros.push(m.text()); });
-  page.on("pageerror", (e) => erros.push(e.message));
+  vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
   await page.clock.install({ time: new Date("2026-10-29T11:00:00Z") });
   return { ctx, page, erros };
 }
 /* o relógio falso do Playwright anda junto com o real: compara com folga de 20 s */
 const seg = (t) => t.trim().split(":").map(Number).reduce((a, x) => a * 60 + x, 0);
 const perto = (txt, esperado, nome = "relógio") => assert.ok(Math.abs(seg(txt) - seg(esperado)) <= 20, nome + ": " + txt + " (esperado perto de " + esperado + ")");
-const confirmar = async (page) => { await page.locator(".modal[open] .modal__foot button").last().click(); };
+/* no modal de início, as condições do dia: "estudo" por padrão nestes testes, porque
+   eles param e continuam o dia; o teste das condições oficiais escolhe "oficiais" */
+const confirmar = async (page, { condicoes = "estudo" } = {}) => { const c = page.locator('.modal[open] input[name="condicoes"][value="' + condicoes + '"]'); if (await c.count()) await c.check(); await page.locator(".modal[open] .modal__foot button").last().click(); };
 
 /* ===================== A. Step 1 completo, 1440 px, claro ===================== */
 const A = await novaPagina({ largura: 1440, altura: 900, tema: "light" });
@@ -119,8 +122,15 @@ await etapa("A1. escolha: Step 1, simulado completo, formulário A, com banco de
   await page.locator("[data-iniciar]").waitFor();
   assert.match(await page.locator("[data-resumo-inicio]").innerText(), /14 blocos de 30 minutos, 280 itens, 55 min de pausa e tutorial opcional de 5 minutos, dia de 8 h/);
   await conferir(page, "a-completos", { tema: "light" });
+  assert.match(await page.locator("[data-formularios]").innerText(), /S1-B, reservado para você/, "o formulário B fica reservado até o aluno fazê-lo");
+  await page.locator('[data-vistos="S1-A"]').filter({ hasText: /respondeu|Nenhum item/ }).waitFor();
+  assert.match(await page.locator("[data-aviso-midia]").innerText(), /Sem itens com imagem/);
   await page.locator("[data-iniciar]").click();
-  assert.match(await page.locator(".modal[open]").innerText(), /14 blocos, 280 itens/);
+  const modal = await page.locator(".modal[open]").innerText();
+  assert.match(modal, /14 blocos, 280 itens/);
+  assert.match(modal, /Condições do dia[\s\S]*Condições oficiais[\s\S]*Estudo/);
+  assert.match(modal, /Nenhum item deste formulário foi respondido por você antes|Você já respondeu \d+ de 280 itens/);
+  assert.ok(await page.locator('.modal[open] input[name="condicoes"][value="oficiais"]').isChecked(), "condições oficiais por padrão");
   await confirmar(page);
   await page.locator(".dia").waitFor();
   idA = decodeURIComponent(page.url().split("#/dia/")[1]);
@@ -227,18 +237,28 @@ await etapa("A7. relatório do Step 1: resultado estimado, confiança, perfil na
   await page.getByRole("link", { name: "Ver o relatório de desempenho" }).click();
   await page.locator(".rel").waitFor();
   const txt = await page.locator(".rel").innerText();
-  assert.match(txt, /Resultado estimado: (Pass|Fail|indefinido, perto do limiar)/);
-  assert.match(txt, /Estimativa preliminar|Alta confiança/);
+  assert.match(txt, /Resultado estimado(?: pelo limiar do banco)?: indefinido, perto do limiar|Acima do limiar do banco|Abaixo do limiar do banco/);
+  /* com o padrão provisório, nada de Pass ou Fail no selo nem no título */
+  assert.doesNotMatch(await page.locator(".rel__stub b").innerText(), /^(Pass|Fail)$/i);
+  assert.doesNotMatch(await page.locator("#t-resultado").innerText(), /\b(Pass|Fail)\b/);
+  assert.match(txt, /Se o padrão provisório estiver errado\.[\s\S]*15 pontos percentuais/, "análise de sensibilidade");
+  assert.match(txt, /indicador do banco junta as respostas de todas as sessões/, "explica a diferença entre os dois números");
+  assert.match(txt, /Estimativa preliminar|Precisão alta/);
   assert.match(txt, /Não é documento do USMLE nem do NBME/);
   for (const h of ["Sistemas", "Disciplinas", "Competências"]) assert.ok(await page.getByRole("heading", { name: h, exact: true }).isVisible(), h);
   assert.equal(await page.locator(".perfil__tab").count(), 3);
   assert.match(txt, /O dia foi parado 1 vez/);
+  assert.match(txt, /Condições padronizadas: não\.[\s\S]*leitura de estudo|Condições padronizadas: não\./, "o dia em condições de estudo não é padronizado");
+  assert.match(txt, /não têm imagem, áudio nem vídeo/);
+  assert.match(txt, /Probabilidade de estar acima do limiar do banco/i);
   assert.equal(await page.locator('[data-rot="Encerramento"]:text("tempo esgotado")').count(), 13);
   await page.locator("[data-qrev] details summary").first().click();
   await page.locator(".qrev__corpo").first().waitFor();
   assert.match(await page.locator(".qrev__corpo").first().innerText(), /Explanation[\s\S]*Resumo em português[\s\S]*Tempo neste item/i);
   const sintetico = page.locator('[data-qrev] details[data-id^="R2A-S1-"]').first();
-  await sintetico.locator("summary").click();
+  /* o primeiro item do formulário pode já ser sintético (e já estar aberto): clicar de novo o fecharia */
+  if (!(await sintetico.evaluate((d) => d.open))) await sintetico.locator("summary").click();
+  await sintetico.locator(".qrev__corpo").waitFor();
   const corpo = await sintetico.locator(".qrev__corpo").innerText();
   assert.match(corpo, /Why [A-E]\./, "explicação por alternativa");
   assert.match(corpo, /Objetivo educacional[\s\S]*Synthetic objective/i);
@@ -276,7 +296,7 @@ await etapa("A9. histórico de simulados completos e estimativa com todas as res
   await page.getByRole("heading", { name: "Histórico de simulados completos" }).waitFor();
   assert.equal(await page.locator('a[href^="#/relatorio/"]').count(), 1);
   await page.locator(".indicador").waitFor();
-  assert.match(await page.locator(".indicador").innerText(), /de estar acima do limiar de aprovação/);
+  assert.match(await page.locator(".indicador").innerText(), /de estar acima do limiar do banco/);
   assert.match(await page.locator(".indicador").innerText(), /EXIT 18/);
   await conferir(page, "a-historico", { tema: "light" });
 });
@@ -348,7 +368,7 @@ await etapa("B2. relatório do Step 2 CK: probabilidade do padrão, 218 e nenhum
   await page.getByRole("link", { name: "Ver o relatório de desempenho" }).click();
   await page.locator(".rel").waitFor();
   const txt = await page.locator(".rel").innerText();
-  assert.match(txt, /Padrão de aprovação provavelmente (atingido|não atingido)|Perto do padrão de aprovação: resultado indefinido/);
+  assert.match(txt, /(Acima|Abaixo) do limiar do banco para o padrão mínimo|Perto do limiar do banco: resultado indefinido/);
   assert.match(txt, /Sem nota de três dígitos/);
   assert.match(txt, /218/);
   assert.match(txt, /Tarefas do médico/);
