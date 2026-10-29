@@ -40,6 +40,7 @@ const MENU = [
   { rota: "blueprint", rotulo: "Blueprint", icone: "path" },
   { rota: "metas", rotulo: "Metas", icone: "gear-six" },
   { href: "../anki/#/", rotulo: "Flashcards", icone: "cards" },
+  { href: "../questoes/", rotulo: "Questões", icone: "list-checks" },
   { href: "../simulado/", rotulo: "Simulado", icone: "clock" },
   { href: "../conteudo-step1.html", rotulo: "Conteúdo do Step 1", icone: "signpost" }
 ];

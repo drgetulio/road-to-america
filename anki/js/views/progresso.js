@@ -1,5 +1,6 @@
 /* Road to America | Meu progresso: checklist da garantia, prontidão (EXIT 18),
-   datas de prova, autoavaliações NBME e simulados do próprio participante.
+   datas de prova, autoavaliações NBME, simulados de 30 minutos, simulados completos e o
+   cartão do banco de questões do próprio participante.
    Regras em plataforma/js/desempenho.js; textos em plataforma/js/acompanhamento.js. */
 import { avaliarParticipante, validarNbme } from "../../../plataforma/js/desempenho.js";
 import { desempenhoPorArea, SIMULADO_30 } from "../../../plataforma/js/simulado.js";
@@ -9,6 +10,7 @@ import { dayKey } from "../util.js";
 import { pageHead } from "./shared.js";
 import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
 import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
+import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -17,11 +19,12 @@ export default {
   titulo: "Meu progresso",
   async render(ctx, el, args = {}) {
     const agora = new Date();
-    const [linha, config, nbme, simulados] = await Promise.all([
+    const [linha, config, nbme, simulados, completos] = await Promise.all([
       ctx.store.getMeuResumo({ agora }),
       ctx.store.getConfigPlataforma(),
       ctx.store.listNbme(),
-      ctx.store.listSimulados()
+      ctx.store.listSimulados(),
+      ctx.store.listSimuladosCompletos ? ctx.store.listSimuladosCompletos({}).catch((err) => { console.error(err); return null; }) : []
     ]);
     const av = avaliarParticipante(linha, { config, agora });
     const cartaoBanco = await cartaoBancoQuestoes(ctx, { nbme, config });
@@ -99,9 +102,14 @@ export default {
         "</form>" +
       "</section>" +
 
-      '<section class="panel" aria-labelledby="s-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="s-t">Meus simulados</h2><a class="link-btn" href="../simulado/">' + icon("clock") + "Novo simulado</a></div>" +
+      '<section class="panel" aria-labelledby="s-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="s-t">Simulados de 30 minutos</h2><a class="link-btn" href="../simulado/">' + icon("clock") + "Novo simulado de 30 minutos</a></div>" +
         '<p class="hint">Cada simulado reproduz um bloco oficial: ' + SIMULADO_30.questoes + " questões em " + Math.round(SIMULADO_30.duracao_ms / 60000) + " minutos. Eles servem para treinar e não contam para a garantia.</p>" +
         blocoSimulados(simulados, config, ctx) +
+      "</section>" +
+
+      '<section class="panel" aria-labelledby="sc-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="sc-t">Simulados completos</h2><a class="link-btn" href="../simulado/#/completos">' + icon("clock") + "Novo simulado completo</a></div>" +
+        '<p class="hint">O dia de prova no formato oficial: Step 1 com 14 blocos de 30 minutos e Step 2 CK com 16. A probabilidade é a calculada no fim de cada dia, pelo padrão de Angoff do banco; não é resultado oficial.</p>' +
+        blocoCompletos(completos) +
       "</section>" +
 
       '<p class="prog-lgpd">' + icon("lock-simple") + '<span>A equipe da Road to America vê estes dados (estudo nos flashcards, simulados, autoavaliações e presença) para o acompanhamento pedagógico e para conferir as condições da garantia, conforme a <a href="../privacidade.html">Política de Privacidade</a>.</span></p>' +
@@ -189,6 +197,32 @@ function listaNbme(lista) {
         ? '<span class="prog-chip prog-chip--ok">' + icon("seal-check") + "Verificada pela equipe</span>"
         : '<span class="prog-chip prog-chip--neutro">Aguardando verificação</span><button type="button" class="link-btn" data-editar="' + e(x.id) + '">' + icon("pencil-simple") + 'Corrigir</button><button type="button" class="link-btn link-btn--perigo" data-excluir="' + e(x.id) + '">' + icon("trash") + "Excluir</button>") +
       "</div></li>").join("") + "</ul>";
+}
+
+/* Simulados completos do próprio participante: em andamento (com o bloco e o link para
+   continuar) e encerrados (acertos e a probabilidade guardada no fim do dia, a mesma do
+   histórico do simulado, por linhaHistorico de simulado/js/relatorio.js) */
+function blocoCompletos(lista) {
+  if (lista === null) return '<p class="body">Não foi possível ler os simulados completos agora.</p>';
+  const andamento = lista.filter((r) => r.estado === "em_andamento");
+  const feitos = lista.filter((r) => r.estado === "concluido").map(linhaHistorico);
+  if (!andamento.length && !feitos.length) return '<p class="body">Nenhum simulado completo ainda.</p>';
+  const nome = (l) => e(NOME_STEP[l.step]) + ", " + e((NOMES_TIPO[l.tipo] || l.tipo).toLowerCase());
+  return '<ul class="prog-sim" data-completos>' +
+    andamento.map((r) => {
+      const nb = r.formulario?.blocos?.length || 0;
+      return '<li><span class="prog-sim__d">' + e(dataBR(r.atualizado_em || r.inicio)) + "</span><b>" + nome(r) + '</b><span class="prog-chip prog-chip--neutro">' +
+        (r.sessao?.suspensa ? "Parado" : "Em andamento") + "</span>" +
+        '<span class="muted">bloco ' + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb + "</span>" +
+        '<a href="../simulado/#/dia/' + encodeURIComponent(r.id) + '">Continuar</a></li>';
+    }).join("") +
+    feitos.slice(0, 10).map((l) =>
+      '<li><span class="prog-sim__d">' + e(dataBR(l.data)) + "</span><b>" + nome(l) + "</b>" +
+        '<span class="prog-sim__n">' + (l.acertos === null ? "sem dados" : l.acertos + "/" + l.total + " (" + pct(l.percentual) + ")") + "</span>" +
+        (l.p_aprovacao === null ? "" : '<span class="muted">aprovação ' + pctProb(l.p_aprovacao) + "</span>" +
+          '<span class="prog-chip prog-chip--' + (l.alta ? "ok" : "aviso") + '">' + (l.alta ? "Alta confiança" : "Estimativa preliminar") + "</span>") +
+        '<a href="../simulado/#/relatorio/' + encodeURIComponent(l.id) + '">Relatório<span class="sr-only"> do simulado de ' + e(dataBR(l.data)) + "</span></a></li>").join("") +
+  "</ul>" + (feitos.length > 10 ? '<p class="hint">Mostrando os 10 mais recentes de ' + feitos.length + ". Todos estão em <a href=\"../simulado/#/completos\">Simulados completos</a>.</p>" : "");
 }
 
 function blocoSimulados(simulados, config, ctx) {

@@ -16,6 +16,24 @@ export const GRADE_PADRAO = Object.freeze({ min: -6, max: 6, passo: 0.01 });
 /* Critérios internos da Road to America; a justificativa de cada número está em PSICOMETRIA.md */
 export const REGRA_CONFIANCA = Object.freeze({ p_alta: 0.9, p_baixa: 0.1, dp_max: 0.25, cobertura_min: 0.8, min_por_sistema: 1 });
 export const PESOS_MODO = Object.freeze({ cronometrado: 1, tutor: 0.5 });
+
+/* Texto único da probabilidade de aprovação, usado no banco, em "Meu progresso", nos
+   simulados e na área administrativa, para que o mesmo número apareça igual em todas as
+   telas. Inteiro, porque o modelo não tem precisão de décimos; "< 1%" e "> 99%" nas
+   pontas, porque a estimativa nunca é certeza; uma casa decimal só quando o
+   arredondamento cruzaria um corte da alta confiança (89,7% não pode aparecer como 90%
+   ao lado de "estimativa preliminar", nem 10,3% como 10%). */
+export function textoProbabilidade(p) {
+  if (p === null || p === undefined || !Number.isFinite(p)) return "sem dados";
+  if (p > 0.995) return "> 99%";
+  if (p < 0.005) return "< 1%";
+  const { p_alta, p_baixa } = REGRA_CONFIANCA;
+  const inteiro = Math.round(p * 100);
+  let v = inteiro;
+  if (p < p_alta && inteiro >= Math.round(p_alta * 100)) v = Math.floor(p * 1000) / 10;
+  else if (p > p_baixa && inteiro <= Math.round(p_baixa * 100)) v = Math.ceil(p * 1000) / 10;
+  return String(v).replace(".", ",") + "%";
+}
 export const PERFIL_PADRAO = Object.freeze({ min_itens: 5, prob: 0.9, priori: PRIORI_PADRAO });
 export const LIMIARES_ITEM = Object.freeze({ p_min: 0.2, p_max: 0.95, pbis_min: 0.1, ajuste_min: 0.7, ajuste_max: 1.3, n_min: 30, grupo: 0.27, distrator_funcional: 0.05, min_itens_pessoa: 2 });
 export const RECALIBRACAO_PADRAO = Object.freeze({ tau: 0.5, priori_theta: PRIORI_PADRAO, max_iter: 300, tol: 1e-5, ancoragem: "tcc" });

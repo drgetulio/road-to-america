@@ -6,12 +6,10 @@ export function pct(x, casas = 0) {
   return (x * 100).toFixed(casas).replace(".", ",") + "%";
 }
 
-/* Probabilidade para leitura: nunca mostra 0% nem 100% (o modelo nunca dá certeza) */
+/* Probabilidade de aprovação: o mesmo texto do banco, de "Meu progresso" e da área
+   administrativa (textoProbabilidade, em plataforma/js/psicometria.js) */
 export function prob(p) {
-  if (p === null || p === undefined || !Number.isFinite(p)) return "sem dados";
-  if (p > 0.999) return "acima de 99,9%";
-  if (p < 0.001) return "abaixo de 0,1%";
-  return pct(p, 1);
+  return textoProbabilidade(p);
 }
 
 export function num(x, casas = 2) {

@@ -9,6 +9,7 @@ import { importarPresenca, botaoImportar } from "./acoes.js";
 import { leituraBanco, pctTxt, numTxt, REGRA_CONFIANCA, PADRAO_STEP2CK } from "../analise.js";
 import { nomeChave } from "../../../plataforma/js/banco.js";
 import { chipConfianca } from "./comum.js";
+import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "modo não informado" };
 const PRIORIDADE = { 1: "Agora", 2: "Esta semana", 3: "Acompanhar" };
@@ -28,7 +29,7 @@ export default {
     }
     if (!el.querySelector("[data-ficha]")) el.innerHTML = '<div class="wrap section-sm"><p class="boot__msg" role="status">Abrindo a ficha de ' + e(r.nome) + "...</p></div>";
     const cfg = ctx.config;
-    const [atividade, simulados, nbme, presenca, plano, nota, perfis, oficiais] = await Promise.all([
+    const [atividade, simulados, nbme, presenca, plano, nota, perfis, oficiais, completos] = await Promise.all([
       ctx.store.getAtividadeDiaria(id, { dias: 182, agora }),
       ctx.store.listSimulados({ userId: id }),
       ctx.store.listNbme({ userId: id }),
@@ -36,7 +37,8 @@ export default {
       ctx.store.getPlano(id),
       ctx.store.getAnotacao(id).catch(() => null),
       r.sintetico ? ctx.store.listParticipantes().catch(() => []) : Promise.resolve([]),
-      ctx.store.listResultadosOficiais({ userId: id }).catch(() => [])
+      ctx.store.listResultadosOficiais({ userId: id }).catch(() => []),
+      ctx.store.listSimuladosCompletos ? ctx.store.listSimuladosCompletos({ userId: id }).catch((err) => { console.error(err); return null; }) : []
     ]);
     const perfilDemo = perfis.find?.((p) => p.id === id)?.perfil_demo || "";
     const l = r.linha;
@@ -132,6 +134,11 @@ export default {
       '<section class="panel" aria-labelledby="sim-t"><div class="panel__head"><h2 class="h-sm" id="sim-t">Simulados de 30 minutos</h2>' +
         '<p class="hint">Cada tentativa é um bloco de ' + SIMULADO_30.questoes + " questões em " + Math.round(SIMULADO_30.duracao_ms / 60000) + " minutos. Ritmo de prova: " + Math.round(SIMULADO_30.ritmo_ms / 1000) + " s por questão. Simulados são formativos e não contam para a garantia.</p></div>" +
         blocoSimulados(simulados, cfg, ctx) +
+      "</section>" +
+
+      '<section class="panel" aria-labelledby="sc-t"><div class="panel__head"><h2 class="h-sm" id="sc-t">Simulados completos</h2>' +
+        '<p class="hint">Dia de prova no formato oficial (Step 1: 14 blocos; Step 2 CK: 16). A probabilidade é a guardada no fim de cada dia, pelo padrão de Angoff do banco ou pela calibração em uso na data; não é resultado oficial. O relatório abre na página do simulado com os dados deste participante.</p></div>' +
+        blocoCompletos(completos) +
       "</section>" +
 
       '<section class="panel" aria-labelledby="nb-t"><div class="panel__head"><h2 class="h-sm" id="nb-t">Autoavaliações NBME lançadas</h2>' +
@@ -284,6 +291,23 @@ function blocoProntidao(p, step) {
       linhas.map((l) => "<tr>" + l.map((c) => "<td>" + e(c) + "</td>").join("") + "</tr>").join("") + "</tbody></table>" : "") +
     p.avisos.map((a) => '<p class="pront__aviso">' + icon("warning") + "<span>" + e(a) + "</span></p>").join("") +
     '<p class="hint">' + e(p.criterio) + "</p></div>";
+}
+
+function blocoCompletos(lista) {
+  if (lista === null) return '<p class="body">Não foi possível ler os simulados completos agora.</p>';
+  if (!lista.length) return '<p class="body">Nenhum simulado completo iniciado.</p>';
+  const nomeSim = (r) => e(NOME_STEP[r.step]) + ", " + e((NOMES_TIPO[r.tipo] || r.tipo).toLowerCase());
+  return '<div class="ptab-wrap"><table class="mini-tab mini-tab--completos"><caption class="sr-only">Simulados completos, mais recente primeiro</caption><thead><tr><th scope="col">Data</th><th scope="col">Simulado</th><th scope="col">Situação</th><th scope="col">Acerto</th><th scope="col">Probabilidade no dia</th><th scope="col"><span class="sr-only">Relatório</span></th></tr></thead><tbody>' +
+    lista.filter((r) => r.estado !== "abandonado").map((r) => {
+      const l = linhaHistorico(r);
+      const nb = r.formulario?.blocos?.length || 0;
+      const feito = r.estado === "concluido";
+      return "<tr>" + td("Data", e(dataBR(l.data))) + td("Simulado", nomeSim(r) + (l.reduzido ? " <small>reduzido</small>" : "")) +
+        td("Situação", feito ? "encerrado" : (r.sessao?.suspensa ? "parado" : "em andamento") + ", bloco " + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb) +
+        td("Acerto", feito && l.acertos !== null ? "<b>" + l.acertos + "/" + l.total + "</b> " + pct(l.percentual) : "") +
+        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? pctTxt(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">alta confiança</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
+        td("", feito ? '<a href="../simulado/#/relatorio/' + encodeURIComponent(r.id) + '">Relatório<span class="sr-only"> de ' + e(dataBR(l.data)) + "</span></a>" : "") + "</tr>";
+    }).join("") + "</tbody></table></div>";
 }
 
 function blocoSimulados(simulados, cfg, ctx) {

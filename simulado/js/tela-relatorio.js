@@ -113,10 +113,14 @@ export default {
     if (!reg) { el.innerHTML = '<div class="wrap section-sm"><div class="vazio"><h1 class="h-sm">Relatório não encontrado.</h1><p>Este simulado não está na sua conta.</p>' + voltar + "</div></div>"; return; }
     if (reg.estado !== "concluido") { location.replace("#/dia/" + encodeURIComponent(id)); return; }
     const step = reg.step;
+    /* a equipe abre o relatório de um participante pela ficha: a estimativa geral, os
+       itens já vistos e a EXIT 18 vêm das respostas e das NBME do dono do simulado */
+    const alheio = !!(reg.user_id && ctx.user?.id && reg.user_id !== ctx.user.id);
+    const userId = alheio ? reg.user_id : null;
     [modelos, todas, nbme] = await Promise.all([
       ctx.store.getModelosPsicometricos().catch(() => null),
-      ctx.store.listRespostas({ step }).catch(() => []),
-      ctx.store.listNbme ? ctx.store.listNbme({ step }).catch(() => []) : []
+      ctx.store.listRespostas({ step, userId }).catch(() => []),
+      ctx.store.listNbme ? ctx.store.listNbme({ step, userId }).catch(() => []) : []
     ]);
     const form = reg.formulario;
     const { resultado, respostas } = corrigirRegistro(reg, banco.porId);
@@ -143,6 +147,7 @@ export default {
           '<p class="eyebrow"><span class="fita" aria-hidden="true"></span>Relatório de desempenho</p>' +
           '<h1 class="display h2">' + NOME_STEP[step] + ", " + e((NOMES_TIPO[reg.tipo] || reg.tipo).toLowerCase()) + "</h1>" +
           '<p class="fine">' + e(form.nome) + ". Encerrado em " + e(dataHora(reg.fim)) + "." + (form.reduzido ? " " + e(form.motivo_reducao) : "") + "</p>" +
+          (alheio ? '<p class="fine" data-relatorio-alheio>Relatório de um participante, aberto pela equipe. As estimativas usam as respostas e as autoavaliações dessa conta.</p>' : "") +
         "</div>" +
         '<p class="rel__oficial">' + icon("info") + "<span>Relatório da Road to America, calculado pelo método de PSICOMETRIA.md. Não é documento do USMLE nem do NBME e não substitui as autoavaliações oficiais.</span></p>" +
 
