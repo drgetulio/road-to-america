@@ -1,0 +1,96 @@
+{
+  "dia": 132,
+  "data": "2027-03-13",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Suspeita de maus-tratos infantis",
+  "conceito": "Suspected child abuse: physicians are mandatory reporters, admit if home is unsafe",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-14",
+  "tom": "acolhedor",
+  "gancho": "Quando a história *não combina* com a fratura",
+  "gancho_apoio": "Hoje sem piada: um tema sério que todo médico precisa saber conduzir.",
+  "imagem": {
+    "arquivo": "dia-132.png",
+    "cena": "Num corredor de hospital tranquilo e bem iluminado, a Dona Bússola está ao lado de um berço vazio com uma manta dobrada, perto de um telefone numa mesinha. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola num corredor calmo, ao lado de um berço vazio e de um telefone numa mesinha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-132-macete.png",
+    "cena": "O telefone está em uso, ligado por uma linha suave a uma casinha com escudo, e um grande guarda-chuva navy cobre o berço; o ponteiro da Dona Bússola aponta firme para ele. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O telefone ligado a uma casinha com escudo; um guarda-chuva navy protege o berço."
+  },
+  "questao": {
+    "vinheta": "A 2-month-old boy is brought for a swollen right thigh. His father says the baby rolled off the couch yesterday. X-rays show a femoral shaft fracture and a healing posterior rib fracture. When asked more questions, the father becomes angry and wants to take the baby home immediately.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Discharge with orthopedic follow-up in 1 week",
+        "quiz": "Discharge, ortho follow-up"
+      },
+      "B": {
+        "texto": "Ask the father for permission to notify authorities",
+        "quiz": "Ask father to allow report"
+      },
+      "C": {
+        "texto": "Admit and report to child protective services",
+        "quiz": "Admit and report to CPS"
+      },
+      "D": {
+        "texto": "Refer to social work after discharge",
+        "quiz": "Social work after discharge"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Suspeitou, *notificou*: o médico é notificador obrigatório",
+    "certa": [
+      "Um bebê de 2 meses ainda não rola, então a história não explica a fratura de fêmur, e a fratura posterior de costela em consolidação sugere trauma anterior. Nos EUA, o médico é notificador obrigatório (mandatory reporter): a suspeita razoável já obriga a comunicar o caso ao Child Protective Services (CPS), sem precisar de certeza nem de permissão dos pais. Se a casa pode não ser segura, a criança fica internada, com inventário esquelético."
+    ],
+    "termos": [
+      "mandatory reporter",
+      "child protective services",
+      "skeletal survey",
+      "sentinel injury"
+    ],
+    "erradas": {
+      "A": "Dar alta devolve a criança a um ambiente possivelmente inseguro, sem notificação.",
+      "B": "A notificação não depende do consentimento dos responsáveis e pedir permissão pode atrasar a proteção.",
+      "D": "O serviço social ajuda, mas não substitui a notificação nem a proteção imediata, que precisam acontecer antes da alta."
+    },
+    "macete": {
+      "frase": "*Suspeitou, notificou, protegeu*",
+      "apoio": "Na imagem, um guarda-chuva protege o berço enquanto a ligação é feita.",
+      "fala": "Meu norte é o paciente. Suspeita razoável já basta, e notificar é proteger, não acusar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés, estação ética. Quando a história contada não explica a lesão, a lei americana diz o que fazer, e a Dona Bússola explica com calma.",
+    "palavras_chave": [
+      "femur fracture",
+      "rib fracture",
+      "inconsistent history",
+      "2-month-old"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#EticaMedica",
+      "#ChildProtection"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê de 2 meses, fratura de fêmur e de costela antiga: e agora?"
+  },
+  "reel": null,
+  "exemplo": false
+}

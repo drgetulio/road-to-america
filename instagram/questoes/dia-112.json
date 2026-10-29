@@ -1,0 +1,102 @@
+{
+  "dia": 112,
+  "data": "2027-02-21",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Miastenia gravis (dia 22), Doença do soro (dia 78), Streptococcus pneumoniae (dia 106)",
+  "conceito": "Remix: Myasthenia gravis + Serum sickness + Streptococcus pneumoniae",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": [
+    22,
+    78,
+    106
+  ],
+  "explicacao_em": "2027-02-22",
+  "tom": null,
+  "gancho": "A infusão foi tranquila. *A fatura chegou depois*",
+  "gancho_apoio": "Três conceitos já vistos (dias 22, 78 e 106) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-112.png",
+    "cena": "Seu Allen, de avental navy, olha intrigado um calendário de parede da cozinha com várias folhas arrancadas pelo chão; na mesa, um frasco de infusão com um rabinho de camundongo de desenho na tampa. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen olha um calendário com folhas arrancadas no chão; na mesa, um frasco com rabinho de camundongo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-112-macete.png",
+    "cena": "Callback da cozinha: um envelope de fatura passa por baixo da porta e despeja bolinhas grudentas, anticorpos agarrados a pedacinhos com rabinho de camundongo, que entopem um filtro em forma de rim. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Uma fatura passa por baixo da porta e despeja bolinhas grudentas que entopem um filtro em forma de rim."
+  },
+  "questao": {
+    "vinheta": "A 42-year-old woman with refractory generalized myasthenia gravis receives her first rituximab infusion, which is uneventful. Nine days later she develops fever, an urticarial rash, polyarthralgia and mild proteinuria. Serum C3 and C4 levels are low.",
+    "pergunta": "Which mechanism best explains her new symptoms?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies against acetylcholine receptors",
+        "quiz": "Anti-AChR antibodies",
+        "dia": 22
+      },
+      "B": {
+        "texto": "Immune complexes activating complement",
+        "quiz": "Immune complexes",
+        "dia": 78
+      },
+      "C": {
+        "texto": "Cytokine release from lysed B cells",
+        "quiz": "Cytokine release"
+      },
+      "D": {
+        "texto": "IgE-mediated mast cell degranulation",
+        "quiz": "IgE on mast cells"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Nove dias depois do anticorpo quimérico: *doença do soro*",
+    "certa": [
+      "Febre, urticária, artralgia e proteinúria 1 a 2 semanas depois de uma proteína estranha, com C3 e C4 baixos, é *serum sickness* (dia 78), a *type III hypersensitivity*. O rituximabe é um anticorpo quimérico, com uma parte de camundongo: a paciente faz anticorpos contra ele, e os *immune complexes* se depositam em vasos, articulações e rim e consomem complemento. A *myasthenia gravis* (dia 22) explica por que ela recebeu o remédio, não os sintomas novos."
+    ],
+    "termos": [
+      "serum sickness",
+      "type III hypersensitivity",
+      "immune complexes",
+      "chimeric monoclonal antibody"
+    ],
+    "erradas": {
+      "A": "Dia 22: o anticorpo contra o receptor de acetilcolina é tipo II e dá fraqueza que piora com o esforço, sem febre, urticária nem complemento baixo.",
+      "C": "A liberação de citocinas pela lise das células B é a reação infusional, que aparece durante ou logo depois da primeira infusão, não nove dias depois.",
+      "D": "Intruso: a degranulação de mastócitos por IgE é tipo I, aparece em minutos e não consome complemento."
+    },
+    "macete": {
+      "frase": "Anticorpo *meio camundongo*: a fatura tipo III chega em 1 a 2 semanas",
+      "apoio": "Pegadinha de prova: O NBME coloca uma infusão de anticorpo monoclonal e oferece reação infusional como distrator; ela é imediata, enquanto a doença do soro leva 1 a 2 semanas e derruba o complemento.",
+      "fala": "Sobrou peça? Sobrou anticorpo grudado no remédio. A fatura chegou em nove dias, com juros de C3 e C4."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo com o Seu Allen conferindo o manual de defesa do corpo. Miastenia refratária, um remédio biológico novo e sintomas que aparecem depois. O calendário da vinheta é a pista principal. Qual mecanismo explica?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Imunologia",
+      "#Immunology",
+      "#Microbiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre e artralgia 9 dias após rituximabe, C3 baixo: qual mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

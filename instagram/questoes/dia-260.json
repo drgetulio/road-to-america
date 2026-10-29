@@ -1,0 +1,99 @@
+{
+  "dia": 260,
+  "data": "2027-07-19",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Doença granulomatosa crônica",
+  "conceito": "Chronic granulomatous disease: NADPH oxidase defect, catalase-positive infections, abnormal DHR test",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-20",
+  "tom": null,
+  "gancho": "Bicho de Segunda no arraiá: o Macrô comeu *e não digeriu*",
+  "gancho_apoio": "Fagócito no Step 1: quatro defeitos, quatro testes e um nome que só volta à memória na saída da Prometric.",
+  "imagem": {
+    "arquivo": "dia-260.png",
+    "cena": "Num arraiá de festa julina com bandeirinhas, Macrô, de chapéu de palha sobre o guardanapo xadrez, olha desconfiado para a própria barriga cheia. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô, de chapéu de palha, olha desconfiado para a própria barriga cheia"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-260-macete.png",
+    "cena": "Callback: no canto do arraiá, a fogueira de São João não acende porque o registro do gás, de quatro pecinhas, está quebrado, e micróbios de extintor apagam as faíscas que sobram. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A fogueira não acende pelo registro quebrado e os micróbios de extintor apagam as faíscas"
+  },
+  "questao": {
+    "vinheta": "A 3-year-old boy has had recurrent Staphylococcus aureus skin abscesses, a liver abscess, and Aspergillus pneumonia. His neutrophil count is normal. After stimulation, his neutrophils show no fluorescence on dihydrorhodamine flow cytometry. There is no history of delayed umbilical cord separation or partial albinism.",
+    "pergunta": "Which neutrophil function is most likely defective?",
+    "alternativas": {
+      "A": {
+        "texto": "Adhesion to endothelium via CD18 integrins",
+        "quiz": "CD18 adhesion"
+      },
+      "B": {
+        "texto": "Fusion of phagosomes with lysosomes",
+        "quiz": "Phagolysosome fusion"
+      },
+      "C": {
+        "texto": "Conversion of hydrogen peroxide to hypochlorous acid",
+        "quiz": "H2O2 to hypochlorite"
+      },
+      "D": {
+        "texto": "Generation of superoxide by the respiratory burst",
+        "quiz": "Respiratory burst"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Sem *NADPH oxidase*, sem explosão",
+    "certa": [
+      "Na *chronic granulomatous disease* falta a *NADPH oxidase*, que gera superóxido na *respiratory burst*. Sem ela, o fagócito engole mas não mata direito os germes *catalase-positive* (como *S. aureus*, *Aspergillus*, *Burkholderia*, *Serratia* e *Nocardia*), que destroem o próprio peróxido. O teste da *dihydrorhodamine* (DHR) sem fluorescência confirma o diagnóstico."
+    ],
+    "termos": [
+      "NADPH oxidase",
+      "respiratory burst",
+      "catalase-positive",
+      "dihydrorhodamine test"
+    ],
+    "erradas": {
+      "A": "Falha na adesão por *CD18* é a deficiência de adesão leucocitária, com atraso na queda do coto umbilical e neutrofilia sem pus.",
+      "B": "Defeito na fusão do fagolisossomo é a síndrome de *Chédiak-Higashi*, com albinismo parcial e grânulos gigantes.",
+      "C": "Na falta de *myeloperoxidase* o superóxido continua sendo gerado e a maioria das pessoas não tem sintomas; quando há, costuma ser Candida, não abscessos graves por estafilococo e Aspergillus."
+    },
+    "macete": {
+      "frase": "Na DGC, a *fogueira não acende* e o bicho do *extintor* faz a festa",
+      "apoio": "Engolir não é o problema: a barriga cheia do Macrô prova. Sem NADPH oxidase, a fogueira do burst respiratório não acende. Quem traz extintor (catalase) apaga a pouca água oxigenada que sobra e dança: S. aureus, Aspergillus, Serratia, Nocardia e Burkholderia. DHR negativo é a lâmpada apagada.",
+      "fala": "Comi, mostrei, avisei. Só não consegui acender a fogueira."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na imunologia, com o Macrô de chapéu de palha. Um menino com infecções de repetição, e os germes e os exames dele estão na vinheta. Onde está o defeito?",
+    "palavras_chave": [
+      "phagocyte disorder",
+      "recurrent infections",
+      "neutrophil function",
+      "Step 1 immunology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Imunologia",
+      "#Microbiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Abscesso por S. aureus e Aspergillus: o que falha no neutrófilo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

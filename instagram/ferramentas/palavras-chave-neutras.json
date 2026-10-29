@@ -1,0 +1,1883 @@
+{
+ "_sobre": "Palavras-chave neutras da legenda do dia D: sinais, exames e contexto da vinheta, nunca o nome da resposta nem os termos de explicacao.termos (esses ficam para o gabarito, no D+1). Os domingos de remix usam a lista padrão de sincronizar-legendas.mjs.",
+ "dias": {
+  "1": [
+   "urethritis",
+   "scrotal pain",
+   "microbiology",
+   "sexual health"
+  ],
+  "2": [
+   "chest pain",
+   "ECG",
+   "emergency cardiology",
+   "reperfusion"
+  ],
+  "3": [
+   "men's health",
+   "urinary symptoms",
+   "steroid hormones",
+   "reproductive physiology"
+  ],
+  "4": [
+   "well-child visit",
+   "car seat",
+   "child passenger safety",
+   "injury prevention"
+  ],
+  "5": [
+   "prostate",
+   "urinary symptoms",
+   "pharmacology",
+   "mechanism of action"
+  ],
+  "6": [
+   "cancer screening",
+   "PSA",
+   "study design",
+   "biostatistics"
+  ],
+  "8": [
+   "recurrent infections",
+   "infant",
+   "immunodeficiency",
+   "immunology"
+  ],
+  "9": [
+   "hematemesis",
+   "emergency medicine",
+   "initial management",
+   "night shift"
+  ],
+  "10": [
+   "newborn",
+   "adrenal gland",
+   "steroid synthesis",
+   "endocrinology"
+  ],
+  "11": [
+   "pediatric pneumonia",
+   "home care",
+   "antibiotics",
+   "preschool child"
+  ],
+  "12": [
+   "mood disorders",
+   "psychopharmacology",
+   "medication choice",
+   "mental health"
+  ],
+  "13": [
+   "HbA1c",
+   "screening program",
+   "test performance",
+   "biostatistics"
+  ],
+  "15": [
+   "kidney and lung",
+   "glomerulonephritis",
+   "renal biopsy",
+   "immunology"
+  ],
+  "16": [
+   "postoperative dyspnea",
+   "hip replacement",
+   "diagnostic workup",
+   "night shift"
+  ],
+  "17": [
+   "emphysema",
+   "pulmonary function",
+   "World COPD Day",
+   "pathophysiology"
+  ],
+  "18": [
+   "early pregnancy",
+   "pelvic pain",
+   "transvaginal ultrasound",
+   "obstetrics"
+  ],
+  "19": [
+   "skin abscess",
+   "Staphylococcus aureus",
+   "antibiotic resistance",
+   "microbiology"
+  ],
+  "20": [
+   "Jehovah's Witness",
+   "blood transfusion",
+   "anemia",
+   "medical ethics"
+  ],
+  "22": [
+   "neuromuscular junction",
+   "ptosis",
+   "neurology",
+   "autoimmunity"
+  ],
+  "23": [
+   "rising creatinine",
+   "urine studies",
+   "nephrology",
+   "night shift"
+  ],
+  "24": [
+   "connective tissue disorders",
+   "pediatric genetics",
+   "musculoskeletal system",
+   "family history"
+  ],
+  "25": [
+   "Thanksgiving",
+   "food allergy",
+   "pediatric emergency",
+   "emergency care"
+  ],
+  "26": [
+   "warfarin",
+   "drug interactions",
+   "INR",
+   "pharmacokinetics"
+  ],
+  "27": [
+   "Jehovah's Witness",
+   "trauma",
+   "blood transfusion",
+   "medical ethics"
+  ],
+  "29": [
+   "gastrointestinal symptoms",
+   "anemia",
+   "serologic testing",
+   "immunology"
+  ],
+  "30": [
+   "new HIV diagnosis",
+   "CD4 count",
+   "antiretroviral therapy",
+   "prevention"
+  ],
+  "31": [
+   "stab wound",
+   "hyperreflexia",
+   "vibration and position sense",
+   "pain and temperature"
+  ],
+  "32": [
+   "tibial fracture",
+   "orthopedic trauma",
+   "acute pain",
+   "surgery"
+  ],
+  "33": [
+   "beta-blockers",
+   "cardiology",
+   "pharmacology",
+   "comorbidities"
+  ],
+  "34": [
+   "informed consent",
+   "elective procedure",
+   "medical ethics",
+   "communication"
+  ],
+  "36": [
+   "food reaction",
+   "hypersensitivity",
+   "immunology",
+   "beach day"
+  ],
+  "37": [
+   "type 1 diabetes",
+   "metabolic acidosis",
+   "electrolytes",
+   "IV fluids"
+  ],
+  "38": [
+   "ARDS",
+   "mechanical ventilation",
+   "oxygenation",
+   "respiratory physiology"
+  ],
+  "39": [
+   "12-month visit",
+   "well-child care",
+   "live-virus vaccines",
+   "immunization schedule"
+  ],
+  "40": [
+   "cholesterol",
+   "cardiovascular prevention",
+   "lipid therapy",
+   "young adult"
+  ],
+  "41": [
+   "cohort study",
+   "coffee",
+   "atrial fibrillation",
+   "study interpretation"
+  ],
+  "43": [
+   "itchy plaque",
+   "new belt",
+   "dermatology",
+   "hypersensitivity"
+  ],
+  "44": [
+   "postoperative care",
+   "anticoagulation",
+   "hematology",
+   "hip replacement"
+  ],
+  "45": [
+   "ventricular myocyte",
+   "ion channels",
+   "cardiac electrophysiology",
+   "action potential"
+  ],
+  "46": [
+   "anxiety disorders",
+   "psychiatry",
+   "long-term treatment",
+   "psychotherapy"
+  ],
+  "47": [
+   "Parkinson disease",
+   "pharmacology",
+   "enzymes",
+   "neurology"
+  ],
+  "48": [
+   "new diagnostic test",
+   "deep venous thrombosis",
+   "test interpretation",
+   "biostatistics"
+  ],
+  "50": [
+   "newborn",
+   "seizure",
+   "congenital heart disease",
+   "immunology"
+  ],
+  "51": [
+   "acute monoarthritis",
+   "joint aspiration",
+   "rheumatology",
+   "night shift"
+  ],
+  "52": [
+   "pediatric endocrinology",
+   "10-year-old girl",
+   "growth",
+   "parental concern"
+  ],
+  "53": [
+   "vaginal bleeding",
+   "pregnancy",
+   "obstetric emergency",
+   "Christmas Eve"
+  ],
+  "54": [
+   "kidney transplant",
+   "Christmas",
+   "drug interaction",
+   "immunosuppression"
+  ],
+  "55": [
+   "operating room",
+   "preoperative verification",
+   "patient safety",
+   "teamwork"
+  ],
+  "57": [
+   "pharyngitis",
+   "cardiac findings",
+   "immunology",
+   "school-age child"
+  ],
+  "58": [
+   "tachycardia",
+   "ECG",
+   "emergency medicine",
+   "night shift"
+  ],
+  "59": [
+   "menstrual cycle",
+   "ovulation",
+   "reproductive endocrinology",
+   "hormones"
+  ],
+  "60": [
+   "smoking cessation",
+   "readiness to change",
+   "counseling",
+   "behavioral science"
+  ],
+  "61": [
+   "New Year",
+   "enzymes",
+   "drug reaction",
+   "pharmacology"
+  ],
+  "62": [
+   "refusal of intubation",
+   "severe pneumonia",
+   "family disagreement",
+   "medical ethics"
+  ],
+  "64": [
+   "respiratory infection",
+   "microbiology",
+   "bacterial cell wall",
+   "laboratory stains"
+  ],
+  "65": [
+   "sudden weakness",
+   "emergency medicine",
+   "time-sensitive care",
+   "neurology"
+  ],
+  "66": [
+   "newborn",
+   "palmar crease",
+   "atrioventricular septal defect",
+   "karyotype"
+  ],
+  "67": [
+   "wrist injury",
+   "skateboarding",
+   "orthopedics",
+   "radiographs"
+  ],
+  "68": [
+   "dysuria",
+   "urinary tract infection",
+   "antibiotics",
+   "outpatient care"
+  ],
+  "69": [
+   "quality improvement",
+   "infusion pumps",
+   "hospital processes",
+   "new technology"
+  ],
+  "71": [
+   "recurrent infections",
+   "infant",
+   "immunodeficiency",
+   "lymphocytes"
+  ],
+  "72": [
+   "cirrhosis",
+   "hematemesis",
+   "GI bleeding",
+   "night shift"
+  ],
+  "73": [
+   "muscle weakness",
+   "pediatric neurology",
+   "genetics",
+   "family history"
+  ],
+  "74": [
+   "mental health",
+   "mood",
+   "diagnostic criteria",
+   "Janeiro Branco"
+  ],
+  "75": [
+   "heart failure",
+   "renal pharmacology",
+   "renal physiology",
+   "adverse effects"
+  ],
+  "76": [
+   "insulin overdose",
+   "medication error",
+   "event review",
+   "patient safety"
+  ],
+  "78": [
+   "snakebite",
+   "drug reaction",
+   "immunology",
+   "rash"
+  ],
+  "79": [
+   "chest pain",
+   "aorta",
+   "emergency medicine",
+   "CT angiography"
+  ],
+  "80": [
+   "rheumatoid arthritis",
+   "fatigue",
+   "anemia",
+   "iron metabolism"
+  ],
+  "81": [
+   "well-child visit",
+   "infant",
+   "neurologic exam",
+   "motor milestones"
+  ],
+  "82": [
+   "type 2 diabetes",
+   "septic shock",
+   "acute kidney injury",
+   "diabetes drugs"
+  ],
+  "83": [
+   "psychotherapy session",
+   "medical secrecy",
+   "medical ethics",
+   "safety"
+  ],
+  "85": [
+   "skin lesion",
+   "peripheral nerve",
+   "infectious disease",
+   "Janeiro Roxo"
+  ],
+  "86": [
+   "COPD",
+   "dyspnea",
+   "oxygen therapy",
+   "night shift"
+  ],
+  "87": [
+   "in vitro fertilization",
+   "oocyte",
+   "meiosis",
+   "reproductive biology"
+  ],
+  "88": [
+   "prenatal care",
+   "28 weeks",
+   "blood type",
+   "obstetrics"
+  ],
+  "89": [
+   "osteoporosis",
+   "medication counseling",
+   "adverse effects",
+   "pharmacy"
+  ],
+  "90": [
+   "randomized trial",
+   "placebo",
+   "nonadherence",
+   "analysis plan"
+  ],
+  "92": [
+   "young adult",
+   "fever and headache",
+   "septic shock",
+   "microbiology"
+  ],
+  "93": [
+   "chronic kidney disease",
+   "lisinopril and spironolactone",
+   "bradycardia",
+   "ECG changes"
+  ],
+  "94": [
+   "continuous infusion",
+   "glomerular filtration",
+   "tubular secretion",
+   "renal physiology"
+  ],
+  "95": [
+   "breast lump",
+   "mobile mass",
+   "young woman",
+   "no family history"
+  ],
+  "96": [
+   "percutaneous coronary intervention",
+   "femoral access bleeding",
+   "anticoagulant reversal",
+   "prolonged aPTT"
+  ],
+  "97": [
+   "rapid antigen test",
+   "referral clinic",
+   "health fair",
+   "screening"
+  ],
+  "99": [
+   "fever and sore throat",
+   "fatigue",
+   "posterior cervical lymphadenopathy",
+   "splenomegaly"
+  ],
+  "100": [
+   "street parade",
+   "hot and humid",
+   "confusion",
+   "rectal temperature"
+  ],
+  "101": [
+   "binge drinking",
+   "poor intake",
+   "hypoglycemia",
+   "hepatomegaly"
+  ],
+  "102": [
+   "barking cough",
+   "hoarseness",
+   "inspiratory stridor",
+   "toddler"
+  ],
+  "103": [
+   "35 weeks",
+   "drowsiness",
+   "respiratory depression",
+   "absent patellar reflexes"
+  ],
+  "104": [
+   "potassium chloride",
+   "wrong patient bag",
+   "medication administration",
+   "error caught in time"
+  ],
+  "106": [
+   "rust-colored sputum",
+   "lobar consolidation",
+   "lancet-shaped diplococci",
+   "green hemolysis"
+  ],
+  "107": [
+   "neck mass",
+   "routine exam",
+   "no radiation exposure",
+   "euthyroid symptoms"
+  ],
+  "108": [
+   "fluent speech",
+   "paraphasias",
+   "poor comprehension",
+   "impaired repetition"
+  ],
+  "109": [
+   "weekend futsal",
+   "sudden pop",
+   "ankle pain",
+   "cannot stand on tiptoe"
+  ],
+  "110": [
+   "hypertension",
+   "dry cough",
+   "lip and tongue swelling",
+   "new medication"
+  ],
+  "111": [
+   "aggressive impulses",
+   "judo",
+   "coaching",
+   "ego defenses"
+  ],
+  "113": [
+   "epigastric pain",
+   "duodenal ulcer",
+   "antral biopsy",
+   "curved gram-negative rods"
+  ],
+  "114": [
+   "confusion",
+   "petechiae",
+   "schistocytes",
+   "low platelets"
+  ],
+  "115": [
+   "shoulder pain",
+   "overhead work",
+   "house painter",
+   "shoulder exam"
+  ],
+  "116": [
+   "26 weeks",
+   "glucose screen",
+   "3-hour glucose test",
+   "prenatal care"
+  ],
+  "117": [
+   "patch-clamp study",
+   "chloride channel",
+   "GABA",
+   "sedative-hypnotics"
+  ],
+  "118": [
+   "82-year-old woman",
+   "bruises of different ages",
+   "weight loss",
+   "caregiver"
+  ],
+  "120": [
+   "Amazon travel",
+   "fever every 48 hours",
+   "Schuffner stippling",
+   "chloroquine"
+  ],
+  "121": [
+   "catheter ablation",
+   "hypotension",
+   "distended neck veins",
+   "muffled heart sounds"
+  ],
+  "122": [
+   "exertional chest pressure",
+   "systolic murmur",
+   "carotid radiation",
+   "older man"
+  ],
+  "123": [
+   "rhinorrhea and cough",
+   "wheezes and crackles",
+   "infant",
+   "breastfeeding"
+  ],
+  "124": [
+   "intentional overdose",
+   "acetaminophen level",
+   "nomogram",
+   "emergency department"
+  ],
+  "125": [
+   "colon biopsy",
+   "private room",
+   "doctor-patient communication",
+   "difficult conversations"
+  ],
+  "127": [
+   "cervical cytology",
+   "HSIL",
+   "HPV 16",
+   "cell cycle"
+  ],
+  "128": [
+   "gallstones",
+   "epigastric pain radiating to the back",
+   "elevated lipase",
+   "vomiting"
+  ],
+  "129": [
+   "placenta",
+   "oxygen-hemoglobin dissociation curve",
+   "fetal circulation",
+   "oxygen affinity"
+  ],
+  "130": [
+   "periorbital edema",
+   "leg swelling",
+   "proteinuria",
+   "hypoalbuminemia"
+  ],
+  "131": [
+   "hypertension",
+   "calcium oxalate stones",
+   "urinary calcium",
+   "uric acid"
+  ],
+  "132": [
+   "femur fracture",
+   "rib fracture",
+   "inconsistent history",
+   "2-month-old"
+  ],
+  "134": [
+   "arthralgia",
+   "pleuritic chest pain",
+   "hydralazine",
+   "positive ANA"
+  ],
+  "135": [
+   "acute monoarthritis",
+   "fever",
+   "knee effusion",
+   "type 2 diabetes"
+  ],
+  "136": [
+   "Down syndrome",
+   "recurrence risk",
+   "karyotype",
+   "genetic counseling"
+  ],
+  "137": [
+   "auditory hallucinations",
+   "persecutory delusions",
+   "3 months",
+   "psychosis"
+  ],
+  "138": [
+   "dose-response curve",
+   "isolated tissue",
+   "maximal response",
+   "pharmacodynamics"
+  ],
+  "139": [
+   "prenatal visit",
+   "bruises of different ages",
+   "partner answers for her",
+   "20 weeks pregnant"
+  ],
+  "141": [
+   "rapidly progressive dementia",
+   "myoclonus",
+   "periodic sharp waves",
+   "14-3-3 protein"
+  ],
+  "142": [
+   "former smoker",
+   "solid lung nodule",
+   "incidental finding",
+   "abdominal CT"
+  ],
+  "143": [
+   "positive tuberculin skin test",
+   "household contact",
+   "subpleural nodule",
+   "hilar lymph nodes"
+  ],
+  "144": [
+   "immune thrombocytopenia",
+   "elective splenectomy",
+   "surgical planning",
+   "vaccination history"
+  ],
+  "145": [
+   "grilled tuna",
+   "flushing",
+   "peppery taste",
+   "foodborne illness"
+  ],
+  "146": [
+   "hip fracture",
+   "proton pump inhibitors",
+   "study design",
+   "2x2 table"
+  ],
+  "148": [
+   "kidney transplant",
+   "minutes after anastomosis",
+   "cyanotic graft",
+   "glomerular thrombi"
+  ],
+  "149": [
+   "ischemic cardiomyopathy",
+   "LVEF 30%",
+   "NYHA class II",
+   "guideline-directed therapy"
+  ],
+  "150": [
+   "infertility",
+   "tall stature",
+   "small firm testes",
+   "azoospermia"
+  ],
+  "151": [
+   "recurrent hypoglycemia",
+   "high insulin",
+   "low C-peptide",
+   "repeated admissions"
+  ],
+  "152": [
+   "autism spectrum disorder",
+   "aggression",
+   "self-injury",
+   "behavioral therapy"
+  ],
+  "153": [
+   "cancer screening trial",
+   "tumor grade",
+   "tumors found between screens",
+   "survival analysis"
+  ],
+  "155": [
+   "aid worker",
+   "profuse watery diarrhea",
+   "comma-shaped rods",
+   "dehydration"
+  ],
+  "156": [
+   "cirrhosis",
+   "ascites",
+   "fever and confusion",
+   "paracentesis"
+  ],
+  "157": [
+   "respiratory virus",
+   "susceptible population",
+   "vaccine efficacy",
+   "transmission"
+  ],
+  "158": [
+   "vaginal delivery",
+   "macrosomia",
+   "boggy uterus",
+   "blood loss"
+  ],
+  "159": [
+   "persistent hallucinations",
+   "failed antipsychotic trials",
+   "adherence",
+   "lab monitoring"
+  ],
+  "160": [
+   "language barrier",
+   "family member translator",
+   "coronary angiography",
+   "communication"
+  ],
+  "162": [
+   "hotel stay",
+   "high fever",
+   "diarrhea and confusion",
+   "low serum sodium"
+  ],
+  "163": [
+   "hydrochlorothiazide",
+   "serum sodium 116",
+   "dilute urine",
+   "rapid rise in sodium"
+  ],
+  "164": [
+   "rural Bolivia",
+   "dysphagia",
+   "bird's-beak sign",
+   "conduction abnormalities"
+  ],
+  "165": [
+   "nonbilious vomiting",
+   "4-week-old",
+   "hungry after vomiting",
+   "low serum chloride"
+  ],
+  "166": [
+   "haloperidol",
+   "neck twisting",
+   "upward eye deviation",
+   "dopamine pathways"
+  ],
+  "167": [
+   "mechanical ventilation",
+   "anoxic brain injury",
+   "advance directive",
+   "end-of-life care"
+  ],
+  "169": [
+   "Mozambique travel",
+   "seizure",
+   "no chemoprophylaxis",
+   "ring forms"
+  ],
+  "170": [
+   "primary adrenal insufficiency",
+   "gastroenteritis",
+   "hypotension",
+   "hypoglycemia"
+  ],
+  "171": [
+   "dental anesthesia",
+   "mandibular foramen",
+   "lower lip numbness",
+   "head and neck anatomy"
+  ],
+  "172": [
+   "episodic crying",
+   "drawn-up knees",
+   "bloody stool",
+   "target sign"
+  ],
+  "173": [
+   "aortic valve replacement",
+   "bicuspid aortic valve",
+   "anticoagulation",
+   "patient preference"
+  ],
+  "174": [
+   "long-term patient",
+   "homemade cookies",
+   "thank-you card",
+   "professionalism"
+  ],
+  "176": [
+   "influenza virus",
+   "cytosolic proteins",
+   "proteasome",
+   "antigen processing"
+  ],
+  "177": [
+   "fatigue",
+   "microcytic anemia",
+   "low ferritin",
+   "older man"
+  ],
+  "178": [
+   "resting tremor",
+   "bradykinesia",
+   "cogwheel rigidity",
+   "levodopa response"
+  ],
+  "179": [
+   "18 weeks' gestation",
+   "migrating abdominal pain",
+   "fever",
+   "leukocytosis"
+  ],
+  "180": [
+   "heart failure",
+   "amiodarone started",
+   "yellow vision",
+   "ventricular ectopy"
+  ],
+  "181": [
+   "attending surgeon",
+   "smell of alcohol",
+   "slurred speech",
+   "operating room"
+  ],
+  "183": [
+   "weight loss",
+   "tremor",
+   "proptosis",
+   "diffuse goiter"
+  ],
+  "184": [
+   "asthma",
+   "outpatient visit",
+   "inhaler therapy",
+   "Step 2 CK"
+  ],
+  "185": [
+   "diarrhea",
+   "enteric pathogens",
+   "fever",
+   "Step 1 microbiology"
+  ],
+  "186": [
+   "labor and delivery",
+   "fetal heart tracing",
+   "intrapartum management",
+   "Step 2 CK"
+  ],
+  "187": [
+   "anticoagulation",
+   "pharmacology",
+   "adverse effect",
+   "Step 1"
+  ],
+  "188": [
+   "traumatic brain injury",
+   "death by neurologic criteria",
+   "ICU",
+   "family meeting"
+  ],
+  "190": [
+   "cardiac murmur",
+   "blood cultures",
+   "fever",
+   "Step 1 microbiology"
+  ],
+  "191": [
+   "headache",
+   "emergency department",
+   "neuroimaging",
+   "Step 2 CK"
+  ],
+  "192": [
+   "newborn",
+   "brachial plexus",
+   "birth injury",
+   "Step 1 anatomy"
+  ],
+  "193": [
+   "inpatient care",
+   "adolescent",
+   "clinical deterioration",
+   "Step 2 CK"
+  ],
+  "194": [
+   "type 2 diabetes",
+   "metformin",
+   "add-on therapy",
+   "Step 2 CK"
+  ],
+  "195": [
+   "low back pain",
+   "imaging request",
+   "patient communication",
+   "Step 2 CK"
+  ],
+  "197": [
+   "pediatrics",
+   "blood smear",
+   "family history",
+   "Step 1 immunology"
+  ],
+  "198": [
+   "uncontrolled blood pressure",
+   "diagnostic workup",
+   "first test",
+   "Step 2 CK"
+  ],
+  "199": [
+   "glomerular disease",
+   "kidney biopsy",
+   "autoantibody",
+   "Step 1 pathology"
+  ],
+  "200": [
+   "pediatric emergency",
+   "seizure",
+   "toddler",
+   "Step 2 CK"
+  ],
+  "201": [
+   "drug reaction",
+   "antidote",
+   "mechanism of action",
+   "Step 1 pharmacology"
+  ],
+  "202": [
+   "randomized trial",
+   "heart failure",
+   "hospitalization",
+   "placebo"
+  ],
+  "204": [
+   "influenza A",
+   "viral genetics",
+   "epidemiology",
+   "Step 1 microbiology"
+  ],
+  "205": [
+   "palpitations",
+   "ECG",
+   "stroke prevention",
+   "Step 2 CK"
+  ],
+  "206": [
+   "pancreatic islets",
+   "glucose stimulation",
+   "beta cells",
+   "ATP-sensitive potassium channels"
+  ],
+  "207": [
+   "preterm labor",
+   "obstetrics",
+   "pregnancy medications",
+   "Step 2 CK"
+  ],
+  "208": [
+   "pediatrics",
+   "fever",
+   "antibiotic choice",
+   "Step 2 CK"
+  ],
+  "209": [
+   "rapid antigen test",
+   "throat culture",
+   "reference standard",
+   "diagnostic accuracy"
+  ],
+  "211": [
+   "transplant immunology",
+   "T cells",
+   "complication",
+   "Step 1 immunology"
+  ],
+  "212": [
+   "chronic cough",
+   "chest x-ray",
+   "transbronchial biopsy",
+   "Step 2 CK"
+  ],
+  "213": [
+   "calcium disorder",
+   "parathyroid hormone",
+   "24-hour urine",
+   "Step 1 physiology"
+  ],
+  "214": [
+   "head trauma",
+   "CT scan",
+   "neurosurgery",
+   "Step 2 CK"
+  ],
+  "215": [
+   "long-term medication",
+   "laboratory changes",
+   "mechanism of action",
+   "Step 1 pharmacology"
+  ],
+  "216": [
+   "bereavement",
+   "patient communication",
+   "primary care",
+   "Step 1 behavioral science"
+  ],
+  "218": [
+   "neuromuscular weakness",
+   "synapse",
+   "mechanism",
+   "Step 1"
+  ],
+  "219": [
+   "headache",
+   "emergency evaluation",
+   "next step",
+   "Step 2 CK"
+  ],
+  "220": [
+   "cultured thymocytes",
+   "growth factor withdrawal",
+   "nuclear fragmentation",
+   "cell death"
+  ],
+  "221": [
+   "pediatric fever",
+   "cerebrospinal fluid",
+   "empiric antibiotics",
+   "Step 2 CK"
+  ],
+  "222": [
+   "type 2 diabetes",
+   "new medication",
+   "adverse effect",
+   "Step 1 pharmacology"
+  ],
+  "223": [
+   "sexual health",
+   "office visit",
+   "STI testing",
+   "Step 2 CK"
+  ],
+  "225": [
+   "transfusion reaction",
+   "blood bank",
+   "antibodies",
+   "Step 1 immunology"
+  ],
+  "226": [
+   "preventive care",
+   "screening guidelines",
+   "routine visit",
+   "Step 2 CK"
+  ],
+  "227": [
+   "congenital heart disease",
+   "infant",
+   "embryology",
+   "Step 1 cardiology"
+  ],
+  "228": [
+   "pelvic pain",
+   "gynecology",
+   "ultrasound",
+   "Step 2 CK"
+  ],
+  "229": [
+   "Helicobacter pylori",
+   "urea breath test",
+   "antibiotic regimen",
+   "Step 2 CK"
+  ],
+  "230": [
+   "red cell transfusion",
+   "patients with the same name",
+   "nursing",
+   "patient safety"
+  ],
+  "232": [
+   "pediatric diarrhea",
+   "stool culture",
+   "foodborne illness",
+   "Step 1 microbiology"
+  ],
+  "233": [
+   "fever",
+   "heart murmur",
+   "emergency department",
+   "Step 2 CK"
+  ],
+  "234": [
+   "skin plaques",
+   "skin biopsy",
+   "histopathology",
+   "Step 1 pathology"
+  ],
+  "235": [
+   "pediatric fever",
+   "chronic disease",
+   "emergency department",
+   "Step 2 CK"
+  ],
+  "236": [
+   "drug interaction",
+   "serum drug level",
+   "toxicity",
+   "Step 1 pharmacology"
+  ],
+  "237": [
+   "smoking",
+   "communication",
+   "primary care",
+   "Step 1 behavioral science"
+  ],
+  "239": [
+   "recurrent episodes",
+   "immune system",
+   "inflammatory mediators",
+   "Step 1 immunology"
+  ],
+  "240": [
+   "acute pain",
+   "urinalysis",
+   "imaging choice",
+   "Step 2 CK"
+  ],
+  "241": [
+   "neurologic deficit",
+   "nutrition",
+   "enzyme cofactor",
+   "Step 1 biochemistry"
+  ],
+  "242": [
+   "trauma",
+   "shock",
+   "chest examination",
+   "Step 2 CK"
+  ],
+  "243": [
+   "urethritis",
+   "Gram stain",
+   "antibiotic dosing",
+   "Step 2 CK"
+  ],
+  "244": [
+   "patient safety",
+   "adverse events",
+   "quality improvement",
+   "Step 2 CK"
+  ],
+  "246": [
+   "recurrent infection",
+   "family history",
+   "complement system",
+   "Step 1 immunology"
+  ],
+  "247": [
+   "endocrine evaluation",
+   "screening test",
+   "hypertension",
+   "Step 2 CK"
+  ],
+  "248": [
+   "metabolic acidosis",
+   "acid-base disorder",
+   "toxicology",
+   "Step 1 physiology"
+  ],
+  "249": [
+   "pediatrics",
+   "petechiae",
+   "platelet count",
+   "Step 2 CK"
+  ],
+  "250": [
+   "dyslipidemia",
+   "LDL cholesterol",
+   "lipid-lowering therapy",
+   "Step 1 pharmacology"
+  ],
+  "251": [
+   "randomized trial",
+   "hypothesis testing",
+   "statistical error",
+   "Step 1 biostatistics"
+  ],
+  "253": [
+   "respiratory infection",
+   "chest x-ray",
+   "laboratory tests",
+   "Step 1 microbiology"
+  ],
+  "254": [
+   "severe hypertension",
+   "IV antihypertensive",
+   "blood pressure goal",
+   "Step 2 CK"
+  ],
+  "255": [
+   "thyroid disease",
+   "core needle biopsy",
+   "histology",
+   "Step 1 pathology"
+  ],
+  "256": [
+   "child psychiatry",
+   "school-age child",
+   "behavior",
+   "Step 2 CK"
+  ],
+  "257": [
+   "chronic disease",
+   "medication review",
+   "drug safety",
+   "Step 2 CK"
+  ],
+  "258": [
+   "emergency department",
+   "US health law",
+   "chest pain",
+   "Step 2 CK"
+  ],
+  "260": [
+   "phagocyte disorder",
+   "recurrent infections",
+   "neutrophil function",
+   "Step 1 immunology"
+  ],
+  "261": [
+   "oncology",
+   "fever",
+   "emergency department",
+   "Step 2 CK"
+  ],
+  "262": [
+   "skin lesion",
+   "pathology report",
+   "prognosis",
+   "Step 1 pathology"
+  ],
+  "263": [
+   "preventive care",
+   "screening interval",
+   "gynecology",
+   "Step 2 CK"
+  ],
+  "264": [
+   "COPD",
+   "inhaled therapy",
+   "adverse effects",
+   "Step 1 pharmacology"
+  ],
+  "265": [
+   "health insurance",
+   "medical records",
+   "privacy law",
+   "Step 2 CK"
+  ],
+  "267": [
+   "postoperative fever",
+   "bacterial toxin",
+   "shock",
+   "Step 1 immunology"
+  ],
+  "268": [
+   "pleural effusion",
+   "thoracentesis",
+   "pleural fluid analysis",
+   "Step 2 CK"
+  ],
+  "269": [
+   "hepatitis B",
+   "recovery",
+   "falling ALT",
+   "serology"
+  ],
+  "270": [
+   "trauma",
+   "car crash",
+   "emergency department",
+   "Step 2 CK"
+  ],
+  "271": [
+   "drug interaction",
+   "toxidrome",
+   "antidote",
+   "Step 1 pharmacology"
+  ],
+  "272": [
+   "patient communication",
+   "outpatient clinic",
+   "patient complaint",
+   "Step 1 behavioral science"
+  ],
+  "274": [
+   "neurotoxin",
+   "neurotransmission",
+   "neurologic exam",
+   "Step 1 microbiology"
+  ],
+  "275": [
+   "liver disease",
+   "emergency medicine",
+   "night shift",
+   "pharmacotherapy"
+  ],
+  "276": [
+   "bleeding since childhood",
+   "platelet function",
+   "hemostasis",
+   "laboratory testing"
+  ],
+  "277": [
+   "newborn",
+   "neonatal jaundice",
+   "breastfeeding",
+   "pediatrics"
+  ],
+  "278": [
+   "rheumatology",
+   "drug safety",
+   "pretreatment testing",
+   "outpatient clinic"
+  ],
+  "279": [
+   "randomized trial",
+   "survival analysis",
+   "biostatistics",
+   "interpreting results"
+  ],
+  "281": [
+   "viral hepatitis",
+   "liver tests",
+   "public health",
+   "microbiology"
+  ],
+  "282": [
+   "emergency department",
+   "neurology",
+   "time-critical care",
+   "pharmacotherapy"
+  ],
+  "283": [
+   "hippocampus",
+   "synaptic plasticity",
+   "neurophysiology",
+   "memory"
+  ],
+  "284": [
+   "infant",
+   "poor weight gain",
+   "pediatric gastroenterology",
+   "diagnostic testing"
+  ],
+  "285": [
+   "outpatient follow-up",
+   "long-term therapy",
+   "drug monitoring",
+   "pharmacology"
+  ],
+  "286": [
+   "behavioral science",
+   "learning theory",
+   "habits",
+   "psychology"
+  ],
+  "288": [
+   "urinary tract infection",
+   "urine microscopy",
+   "gram-negative rods",
+   "microbiology"
+  ],
+  "289": [
+   "chest pain",
+   "ECG interpretation",
+   "emergency department",
+   "cardiology"
+  ],
+  "290": [
+   "pulmonary physiology",
+   "older adult",
+   "spirometry",
+   "preoperative evaluation"
+  ],
+  "291": [
+   "gynecology",
+   "postmenopausal care",
+   "pelvic ultrasound",
+   "outpatient clinic"
+  ],
+  "292": [
+   "toxicology",
+   "emergency medicine",
+   "antidotes",
+   "pharmacology"
+  ],
+  "293": [
+   "medical ethics",
+   "labor and delivery",
+   "communication",
+   "obstetrics"
+  ],
+  "295": [
+   "bacterial adhesion",
+   "blood cultures",
+   "gram-positive cocci",
+   "microbiology"
+  ],
+  "296": [
+   "skin and soft tissue infection",
+   "diabetes",
+   "emergency department",
+   "infectious disease"
+  ],
+  "297": [
+   "reproductive physiology",
+   "early pregnancy",
+   "hormones",
+   "obstetrics"
+  ],
+  "298": [
+   "burn care",
+   "fluid resuscitation",
+   "emergency department",
+   "calculation"
+  ],
+  "299": [
+   "medication error",
+   "pharmacology",
+   "hematology",
+   "antidotes"
+  ],
+  "300": [
+   "cohort study",
+   "stratified analysis",
+   "epidemiology",
+   "biostatistics"
+  ],
+  "302": [
+   "recurrent infections",
+   "immunodeficiency",
+   "toddler",
+   "immunology"
+  ],
+  "303": [
+   "urology",
+   "urinalysis",
+   "older adult",
+   "diagnostic evaluation"
+  ],
+  "304": [
+   "genetics",
+   "developmental delay",
+   "family history",
+   "molecular mechanism"
+  ],
+  "305": [
+   "well-baby visit",
+   "pediatric orthopedics",
+   "hip examination",
+   "imaging choice"
+  ],
+  "306": [
+   "thyroid",
+   "endocrinology",
+   "drug choice",
+   "pharmacology"
+  ],
+  "307": [
+   "pediatrics",
+   "vaccination",
+   "communication",
+   "ethics"
+  ],
+  "309": [
+   "trauma",
+   "wound infection",
+   "anaerobes",
+   "microbiology"
+  ],
+  "310": [
+   "emergency department",
+   "internal medicine",
+   "altered mental status",
+   "initial management"
+  ],
+  "311": [
+   "autopsy",
+   "vascular pathology",
+   "young adult",
+   "lipids"
+  ],
+  "312": [
+   "pediatric orthopedics",
+   "limp",
+   "sports medicine",
+   "physical examination"
+  ],
+  "313": [
+   "adolescent health",
+   "mental health",
+   "follow-up planning",
+   "family communication"
+  ],
+  "314": [
+   "psychiatry",
+   "emergency department",
+   "medical law",
+   "patient rights"
+  ],
+  "316": [
+   "sepsis",
+   "innate immunity",
+   "bloodstream infection",
+   "immunology"
+  ],
+  "317": [
+   "hematology",
+   "laboratory review",
+   "inpatient care",
+   "prevention"
+  ],
+  "318": [
+   "neuroanatomy",
+   "cranial nerves",
+   "headache",
+   "eye findings"
+  ],
+  "319": [
+   "gynecology",
+   "menstrual irregularity",
+   "endocrinology",
+   "treatment choice"
+  ],
+  "320": [
+   "addiction medicine",
+   "relapse prevention",
+   "pharmacotherapy",
+   "outpatient clinic"
+  ],
+  "321": [
+   "medical ethics",
+   "informed consent",
+   "adolescent",
+   "surgery"
+  ],
+  "323": [
+   "tick-borne illness",
+   "summer camping",
+   "pediatric infectious disease",
+   "fever with rash"
+  ],
+  "324": [
+   "memory concerns",
+   "older adult",
+   "primary care",
+   "laboratory workup"
+  ],
+  "325": [
+   "renal physiology",
+   "hypertension",
+   "medication effect",
+   "glomerular filtration"
+  ],
+  "326": [
+   "psychiatry",
+   "emergency medicine",
+   "medication adverse effect",
+   "pharmacotherapy"
+  ],
+  "327": [
+   "ophthalmology",
+   "eye drops",
+   "adverse effects",
+   "pharmacology"
+  ],
+  "328": [
+   "meta-analysis",
+   "evidence-based medicine",
+   "biostatistics",
+   "clinical research"
+  ],
+  "330": [
+   "travel and outdoor exposure",
+   "diarrhea",
+   "parasitology",
+   "microbiology"
+  ],
+  "331": [
+   "animal bite",
+   "wound care",
+   "emergency department",
+   "infectious disease"
+  ],
+  "332": [
+   "cardiac pathology",
+   "myocardial infarction",
+   "histology",
+   "hospital course"
+  ],
+  "333": [
+   "postoperative care",
+   "general surgery",
+   "fever",
+   "hospital medicine"
+  ],
+  "334": [
+   "breast cancer care",
+   "adjuvant therapy",
+   "pharmacology",
+   "women's health"
+  ],
+  "335": [
+   "end-of-life decisions",
+   "surrogate decision-making",
+   "ICU",
+   "medical ethics"
+  ],
+  "337": [
+   "neurology",
+   "fever",
+   "cerebrospinal fluid",
+   "diagnostic testing"
+  ],
+  "338": [
+   "sleep medicine",
+   "daytime sleepiness",
+   "hypertension",
+   "diagnostic testing"
+  ],
+  "339": [
+   "genetic counseling",
+   "family history",
+   "DNA repair",
+   "molecular biology"
+  ],
+  "340": [
+   "preventive medicine",
+   "women's health",
+   "screening",
+   "primary care"
+  ],
+  "341": [
+   "pediatrics",
+   "prolonged fever",
+   "emergency department",
+   "pharmacotherapy"
+  ],
+  "342": [
+   "intensive care",
+   "end-of-life care",
+   "family communication",
+   "professionalism"
+  ],
+  "344": [
+   "gram-negative infection",
+   "virulence factors",
+   "microbiology",
+   "fever"
+  ],
+  "345": [
+   "well-child visit",
+   "child development",
+   "pediatrics",
+   "parental concerns"
+  ],
+  "346": [
+   "dermatology",
+   "blistering disease",
+   "older adult",
+   "immunopathology"
+  ],
+  "347": [
+   "pediatric ophthalmology",
+   "red reflex",
+   "infant",
+   "eye examination"
+  ],
+  "348": [
+   "antibiotics",
+   "hospital medicine",
+   "adverse effects",
+   "pharmacology"
+  ],
+  "349": [
+   "epidemiology",
+   "chronic disease",
+   "disease frequency",
+   "biostatistics"
+  ],
+  "351": [
+   "postpartum care",
+   "obstetric infection",
+   "infection control",
+   "microbiology"
+  ],
+  "352": [
+   "emergency department",
+   "abdominal pain",
+   "infection",
+   "next step"
+  ],
+  "353": [
+   "bone metabolism",
+   "menopause",
+   "densitometry",
+   "endocrinology"
+  ],
+  "354": [
+   "vulvar disease",
+   "gynecology",
+   "dermatology",
+   "treatment choice"
+  ],
+  "355": [
+   "cardiology",
+   "chest pain",
+   "pharmacology",
+   "hypotension"
+  ],
+  "356": [
+   "professionalism",
+   "medical ethics",
+   "sales representative",
+   "travel"
+  ],
+  "358": [
+   "transfusion medicine",
+   "immunology",
+   "surgery",
+   "blood products"
+  ],
+  "359": [
+   "vascular medicine",
+   "leg pain",
+   "smoking",
+   "initial diagnostic test"
+  ],
+  "360": [
+   "embryology",
+   "pediatric surgery",
+   "reproductive development",
+   "genetics"
+  ],
+  "361": [
+   "pediatric urology",
+   "infant",
+   "urinary tract infection",
+   "imaging choice"
+  ],
+  "362": [
+   "neurology",
+   "emergency department",
+   "time-critical care",
+   "pharmacotherapy"
+  ],
+  "363": [
+   "patient safety",
+   "medication error",
+   "communication",
+   "medical ethics"
+  ],
+  "365": [
+   "men's health",
+   "urology",
+   "fever",
+   "microbiology"
+  ]
+ }
+}

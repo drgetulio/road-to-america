@@ -1,0 +1,100 @@
+{
+  "dia": 225,
+  "data": "2027-06-14",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Grupos sanguíneos ABO",
+  "conceito": "ABO compatibility: anti-A and anti-B are IgM, type O red cells are the universal donor, AB plasma is universal",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Dia Mundial do Doador de Sangue (14/6).",
+  "remix_de": null,
+  "explicacao_em": "2027-06-15",
+  "tom": null,
+  "gancho": "Dia do Doador: a Capitã Plaqueta *apitou um engano*",
+  "gancho_apoio": "Doar sangue leva menos tempo que um bloco do NBME e ajuda muito mais gente.",
+  "imagem": {
+    "arquivo": "dia-225.png",
+    "cena": "Capitã Plaqueta, de colete verde e apito, organiza um cruzamento por onde passam carrinhos vermelhos, cada um com um selo de forma diferente. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta organiza o cruzamento de carrinhos vermelhos com selos diferentes"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-225-macete.png",
+    "cena": "Callback: no bairro dos telhados triangulares, uma estrela-do-mar amarela de cinco braços (a IgM) agarra na hora um carrinho de selo quadrado, e a Capitã apita forte. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "A estrela-do-mar de cinco braços agarra o carrinho de selo quadrado e a Capitã apita"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old man with blood group A, Rh-positive, receives a unit of red cells intended for another patient. Within 10 minutes he has fever, chills, flank pain, hypotension, and dark red urine. The donor unit is group B. Direct antiglobulin test is positive.",
+    "pergunta": "Which antibody is primarily responsible for this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Recipient IgE against donor plasma proteins",
+        "quiz": "Recipient IgE"
+      },
+      "B": {
+        "texto": "Donor anti-HLA antibodies against recipient leukocytes",
+        "quiz": "Donor anti-HLA"
+      },
+      "C": {
+        "texto": "Recipient IgG anti-D antibodies",
+        "quiz": "Recipient IgG anti-D"
+      },
+      "D": {
+        "texto": "Recipient preformed IgM anti-B antibodies",
+        "quiz": "Recipient IgM anti-B"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Anti-A e anti-B: *IgM pronta* desde a infância",
+    "certa": [
+      "Os anticorpos do sistema ABO são *isohemagglutinins* naturais, sobretudo *IgM*, formados nos primeiros meses de vida contra antígenos parecidos de bactérias do intestino. Quem é do grupo A já tem anti-B: a IgM pentamérica fixa complemento na hora e destrói a hemácia B dentro do vaso, a *acute hemolytic transfusion reaction*. Por isso a hemácia O é a doadora universal (sem antígeno A ou B) e o plasma AB é o plasma universal (sem anti-A ou anti-B)."
+    ],
+    "termos": [
+      "ABO isohemagglutinins (IgM)",
+      "acute hemolytic transfusion reaction",
+      "group O universal red cell donor",
+      "group AB universal plasma donor"
+    ],
+    "erradas": {
+      "A": "IgE contra proteínas do plasma do doador dá reação alérgica, com urticária ou anafilaxia (típica na deficiência de IgA), sem hemólise e sem Coombs positivo.",
+      "B": "Anticorpo anti-HLA do doador contra leucócitos do receptor causa TRALI, com edema pulmonar não cardiogênico em até 6 horas.",
+      "C": "Ele é Rh positivo, então não forma anti-D, e anticorpos IgG anti-Rh costumam dar hemólise extravascular, mais lenta."
+    },
+    "macete": {
+      "frase": "IgM é a *estrela-do-mar de cinco braços* que agarra a hemácia errada",
+      "apoio": "Na imagem, a Capitã Plaqueta apita no cruzamento: o carro de hemácia com selo quadrado entrou no bairro dos triângulos, e a estrela-do-mar IgM agarra o carro na hora. O carro sem selo nenhum (grupo O) passa em todos os bairros.",
+      "fala": "Parou, colou, aglutinou! Hemácia B no bairro A não passa."
+    }
+  },
+  "legenda": {
+    "contexto": "No Dia Mundial do Doador de Sangue, a Capitã Plaqueta trabalha no banco de sangue. Uma transfusão dá errado, e a vinheta descreve o que aconteceu e em quanto tempo. Qual anticorpo puxou o apito? E se você pode doar, hoje é um bom dia.",
+    "palavras_chave": [
+      "transfusion reaction",
+      "blood bank",
+      "antibodies",
+      "Step 1 immunology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Hematologia",
+      "#BloodDonation",
+      "#DoeSangue",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bolsa B em paciente A: qual anticorpo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

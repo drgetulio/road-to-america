@@ -1,0 +1,87 @@
+{
+  "dia": 173,
+  "data": "2027-04-23",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Prótese valvar mecânica",
+  "conceito": "Mechanical heart valve: warfarin, not DOACs",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-24",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: o irmão *deu palpite na receita*",
+  "gancho_apoio": "A Capitã Plaqueta já pegou o apito para organizar a fila de anticoagulantes.",
+  "imagem": {
+    "arquivo": "dia-173.png",
+    "cena": "A Capitã Plaqueta apita na entrada de uma ponte, diante de uma fila de carros de estilos diferentes. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Capitã Plaqueta apita na entrada de uma ponte, diante de uma fila de carros de estilos diferentes."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-173-macete.png",
+    "cena": "Callback: só um caminhão antigo atravessa a ponte de metal, com caixotes de verduras trancados (a vitamina K bloqueada), e os carros novos recebem cone vermelho e vão para outra ponte. Fundo limpo.",
+    "alt": "Só o caminhão antigo atravessa a ponte de metal; os carros novos são desviados com cone vermelho."
+  },
+  "questao": {
+    "vinheta": "A 56-year-old man undergoes mechanical aortic valve replacement for severe bicuspid aortic stenosis. He has no atrial fibrillation and normal renal function. He asks for a direct oral anticoagulant, like the one his brother takes, to avoid INR checks.",
+    "pergunta": "Which is the most appropriate long-term anticoagulant?",
+    "alternativas": {
+      "A": {
+        "texto": "Apixaban",
+        "quiz": "Apixaban"
+      },
+      "B": {
+        "texto": "Warfarin",
+        "quiz": "Warfarin"
+      },
+      "C": {
+        "texto": "Dabigatran",
+        "quiz": "Dabigatran"
+      },
+      "D": {
+        "texto": "Aspirin alone",
+        "quiz": "Aspirin alone"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Prótese mecânica: *warfarin*, não DOAC",
+    "certa": [
+      "Toda prótese valvar *mechanical* precisa de anticoagulação para sempre com *warfarin*; na posição aórtica sem fatores de risco o alvo é *INR* 2,5, e na mitral ou com fatores de risco, 3,0. Os *DOACs* são contraindicados: a dabigatrana aumentou trombose e sangramento no RE-ALIGN, e a apixabana teve mais tromboembolismo no PROACT Xa."
+    ],
+    "termos": [
+      "mechanical heart valve",
+      "warfarin",
+      "INR target",
+      "DOAC contraindication"
+    ],
+    "erradas": {
+      "A": "A apixabana foi testada em prótese mecânica aórtica (PROACT Xa), e o estudo parou cedo por excesso de tromboembolismo.",
+      "C": "A dabigatrana aumentou trombose valvar e sangramento no RE-ALIGN e é contraindicada em prótese mecânica.",
+      "D": "AAS sozinho não protege a prótese mecânica; ele pode ser somado à varfarina em casos selecionados, nunca no lugar dela."
+    },
+    "macete": {
+      "frase": "Na *ponte de metal* só passa o *caminhão das antigas*, a varfarina",
+      "apoio": "DOAC vai bem na fibrilação atrial não valvar e na prótese biológica; na mecânica, varfarina (INR 2,5 aórtica sem fatores de risco, 3,0 mitral).",
+      "fala": "Carro novo vai muito bem na estrada da fibrilação. Na ponte de metal, só passa o caminhão das antigas."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta no trânsito. Uma cirurgia de válvula e um irmão que dá palpite na receita. O tipo de válvula e o ritmo estão na vinheta. Qual carro a Capitã libera?",
+    "palavras_chave": [
+      "aortic valve replacement",
+      "bicuspid aortic valve",
+      "anticoagulation",
+      "patient preference"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Prótese aórtica mecânica, sem FA, e pedido de DOAC: qual anticoagulante?"
+  },
+  "exemplo": false
+}

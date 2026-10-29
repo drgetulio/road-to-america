@@ -1,0 +1,96 @@
+{
+  "dia": 86,
+  "data": "2027-01-26",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Exacerbação de DPOC",
+  "conceito": "COPD exacerbation: bronchodilators, systemic steroids, antibiotics if sputum changes, target SpO2 88 to 92 percent",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-27",
+  "gancho": "Às 3 da manhã, a Dona Térmica virou *banca examinadora* de oxigênio",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Na mesa do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica corrige uma pilha de provas em branco com caneta vermelha, ao lado de um par de pulmões simpático e cansado que segura um mostrador redondo de ponteiro, sem números.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica corrige provas ao lado de um par de pulmões cansado que segura um mostrador de ponteiro sem números.",
+    "arquivo": "dia-086.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o ponteiro do mostrador para numa faixa verde estreita, nem no começo nem no fim, e Dona Térmica carimba aprovação em verde na prova. Ao lado, a nuvem cinza de CO2 incha quando uma mão de desenho tenta girar o oxigênio até o máximo.",
+    "alt": "O ponteiro para numa faixa verde estreita e Dona Térmica carimba aprovação; a nuvem cinza incha quando alguém gira o oxigênio ao máximo.",
+    "arquivo": "dia-086-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old woman with COPD has 3 days of worsening dyspnea and increased purulent sputum. Respiratory rate is 26/min and SpO2 is 84% on room air. She is alert. ABG: pH 7.33, PaCO2 54 mm Hg. Nebulized albuterol and ipratropium, oral prednisone, and an antibiotic are started.",
+    "pergunta": "Which oxygen saturation target is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "94% to 98%",
+        "quiz": "94% to 98%"
+      },
+      "B": {
+        "texto": "98% to 100%",
+        "quiz": "98% to 100%"
+      },
+      "C": {
+        "texto": "88% to 92%",
+        "quiz": "88% to 92%"
+      },
+      "D": {
+        "texto": "80% to 84%",
+        "quiz": "80% to 84%"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Alvo de *88 a 92%*",
+    "certa": [
+      "Na *COPD exacerbation*, o tratamento é broncodilatador de curta ação (beta-2 com ou sem anticolinérgico), *systemic corticosteroids* por cerca de 5 dias e antibiótico quando o escarro fica purulento. O oxigênio é titulado para *SpO2 88 to 92%*: abaixo disso falta oxigênio, e acima disso o retentor crônico de CO2 piora a hipercapnia, pela perda da vasoconstrição hipóxica (pior relação V/Q) e pelo *Haldane effect*. Com acidose respiratória que não melhora, entra a ventilação não invasiva."
+    ],
+    "termos": [
+      "COPD exacerbation",
+      "controlled oxygen therapy",
+      "SpO2 88 to 92%",
+      "hypercapnia"
+    ],
+    "erradas": {
+      "A": "O alvo de 94 a 98% serve para quem não retém CO2; no DPOC hipercápnico ele aumenta o risco de acidose respiratória.",
+      "B": "Buscar 98 a 100% pede oxigênio demais e pode precipitar narcose por CO2 nesta paciente.",
+      "D": "Saturação de 80 a 84% deixa a paciente hipoxêmica, com risco de arritmia e lesão de órgãos."
+    },
+    "macete": {
+      "frase": "DPOC: *88 a 92* é nota de aprovação",
+      "apoio": "Pegadinha de prova: O NBME dá um DPOC com saturação baixa e oferece 100% de oxigênio; a resposta é oxigênio controlado com alvo de 88 a 92%, e gasometria de controle se houver retenção de CO2.",
+      "fala": "Única prova em que tirar menos de 95 é passar."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: falta de ar, oxigênio na parede e uma pergunta de número que derruba muita gente no CK. Dona Térmica pergunta: até onde subir?",
+    "palavras_chave": [
+      "COPD",
+      "dyspnea",
+      "oxygen therapy",
+      "night shift"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pneumologia",
+      "#COPD",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DPOC hipercápnico em exacerbação: qual alvo de saturação?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 22,
+  "data": "2026-11-23",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Miastenia gravis",
+  "conceito": "Myasthenia gravis: type II antibodies against postsynaptic acetylcholine receptors",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-24",
+  "tom": null,
+  "gancho": "Segunda-feira, e o Macrô foi chamado para consertar o *interfone* do prédio",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-022.png",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na portaria de um prédio olhando um carteiro em forma de bolinha que aperta o interfone de vários apartamentos; Macrô coça a cabeça com um pseudópode.",
+    "foco": "50% 35%",
+    "alt": "Macrô, na portaria de um prédio, observa um carteiro em forma de bolinha apertando o interfone."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-022-macete.png",
+    "cena": "Callback do prédio: um corte da parede mostra o lado de dentro do painel do interfone. Anticorpos pequenos em forma de Y colaram chiclete rosa nos botões de dentro, e o sinal não entra. O carteiro está exausto de tanto tocar, e Macrô aponta o chiclete com cara de quem descobriu tudo.",
+    "alt": "Chiclete no botão de dentro"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old woman has 3 months of double vision and drooping eyelids that worsen in the evening. Repeated arm abduction causes progressive weakness that improves with rest. An ice pack test improves her ptosis. Deep tendon reflexes are normal.",
+    "pergunta": "Which mechanism best explains her weakness?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies against presynaptic voltage-gated calcium channels",
+        "quiz": "Anti-VGCC antibodies"
+      },
+      "B": {
+        "texto": "Antibodies against postsynaptic acetylcholine receptors",
+        "quiz": "Anti-AChR antibodies"
+      },
+      "C": {
+        "texto": "Toxin cleavage of SNARE proteins blocking acetylcholine release",
+        "quiz": "SNARE cleavage"
+      },
+      "D": {
+        "texto": "Autoimmune demyelination of peripheral nerves",
+        "quiz": "Demyelination"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Chiclete no botão de dentro",
+    "certa": [
+      "Pálpebra caída e visão dupla que se agravam à noite, cansaço muscular que aumenta com o esforço e cede com repouso e com gelo, com reflexos preservados: é miastenia gravis. Autoanticorpos IgG contra o receptor nicotínico de acetilcolina na membrana pós-sináptica bloqueiam o receptor, aceleram sua retirada e ativam o complemento, numa hipersensibilidade tipo II. Com menos receptores, cada estímulo repetido dá uma resposta menor, e a fraqueza aparece com o esforço."
+    ],
+    "termos": [
+      "myasthenia gravis",
+      "acetylcholine receptor antibodies",
+      "type II hypersensitivity",
+      "postsynaptic"
+    ],
+    "erradas": {
+      "A": "Anticorpo contra o canal de cálcio pré-sináptico é Lambert-Eaton, em que a força melhora com o uso e os reflexos diminuem.",
+      "C": "A toxina botulínica cliva proteínas SNARE e causa paralisia descendente aguda com pupilas dilatadas, e não fadiga que oscila por meses.",
+      "D": "A desmielinização periférica (Guillain-Barré) dá fraqueza ascendente com reflexos abolidos."
+    },
+    "macete": {
+      "frase": "Miastenia é interfone com *chiclete do lado de dentro*: o carteiro (acetilcolina) toca, e quanto mais tarde, menos apartamento atende.",
+      "apoio": "Pegadinha de prova: O NBME contrasta miastenia (piora com o uso, reflexos normais, receptor pós) com Lambert-Eaton (melhora com o uso, reflexos baixos, canal pré, associação com câncer de pulmão de pequenas células).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na junção neuromuscular, o interfone entre o nervo e o músculo. São quatro suspeitos, cada um sabotando um ponto diferente da ligação, e a vinheta diz qual. O Macrô foi investigar.",
+    "palavras_chave": [
+      "neuromuscular junction",
+      "ptosis",
+      "neurology",
+      "autoimmunity"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Neurology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ptose que piora à noite e melhora com gelo: qual mecanismo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 77,
+  "data": "2027-01-17",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Deficiência de 21-hidroxilase (dia 10), Dermatite de contato (dia 43), SCID por deficiência de ADA (dia 71)",
+  "conceito": "Remix: 21-hydroxylase deficiency + Contact dermatitis to nickel + ADA-deficient SCID",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    10,
+    43,
+    71
+  ],
+  "explicacao_em": "2027-01-18",
+  "gancho": "A padaria das suprarrenais *voltou ao cardápio*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, no balcão do cartório, olha pela janela uma padaria em forma de suprarrenal com três fornos, todos de porta fechada, sem mostrar qual está apagado. Um vinil pequeno no canto.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron olha pela janela do cartório uma padaria em forma de suprarrenal com três fornos de porta fechada.",
+    "arquivo": "dia-077.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da padaria: uma lanterna ilumina o último forno apagado; antes dele, uma pilha de massa salgada (DOC) vai para o cartório, onde o Seu Néfron carimba entrada para cada cristal de sal, e a vitrine de doces de androgênio transborda. Um medidor de pressão em forma de balão sobe ao lado do balcão.",
+    "alt": "O forno do meio da padaria-suprarrenal está apagado: massa empilhada antes dele, vitrine de doces transbordando e prateleiras de pão vazias.",
+    "arquivo": "dia-077-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old girl with a 46,XX karyotype has had clitoromegaly since birth and rapid linear growth. Her blood pressure, 124/82 mm Hg, exceeds the 99th percentile for her age. Serum sodium is 144 mEq/L and potassium 3.1 mEq/L. Plasma renin activity is suppressed.",
+    "pergunta": "Deficiency of which enzyme is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "21-hydroxylase",
+        "quiz": "21-hydroxylase",
+        "dia": 10
+      },
+      "B": {
+        "texto": "11-beta-hydroxylase",
+        "quiz": "11-beta-hydroxylase"
+      },
+      "C": {
+        "texto": "17-alpha-hydroxylase",
+        "quiz": "17-alpha-hydroxylase"
+      },
+      "D": {
+        "texto": "3-beta-hydroxysteroid dehydrogenase",
+        "quiz": "3-beta-HSD"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Forno 11 apagado: viriliza e sobe a pressão",
+    "certa": [
+      "Menina 46,XX virilizada desde o nascimento, com pressão alta, potássio baixo e renina suprimida, tem a deficiência de *11-beta-hydroxylase*. O bloqueio fica no último forno da via do cortisol: sem cortisol, o ACTH sobe e empurra a via para os androgênios (virilização), e a *11-deoxycorticosterone* acumulada age como mineralocorticoide, segurando sódio, perdendo potássio e subindo a pressão. Na deficiência de 21-hidroxilase do dia 10, a virilização vem com perda de sal, sódio baixo e potássio alto, o contrário daqui."
+    ],
+    "termos": [
+      "11-beta-hydroxylase deficiency",
+      "11-deoxycorticosterone",
+      "low-renin hypertension",
+      "virilization"
+    ],
+    "erradas": {
+      "A": "Dia 10: a 21-hidroxilase também viriliza, mas sem aldosterona e sem DOC o bebê perde sal, com sódio baixo, potássio alto e pressão baixa.",
+      "C": "Na deficiência de 17-alfa-hidroxilase também há hipertensão e potássio baixo, mas faltam androgênios, e uma menina 46,XX não virilizaria.",
+      "D": "A falta de 3-beta-HSD bloqueia a via logo no começo, com perda de sal e virilização apenas leve na menina, sem hipertensão."
+    },
+    "macete": {
+      "frase": "*Um no começo* sobe a pressão (11 e 17); *um no fim* viriliza (21 e 11). O 11 faz as duas coisas.",
+      "apoio": "Pegadinha de prova: O NBME troca 21 por 11: as duas virilizam, mas a de 11 vem com hipertensão e potássio baixo, e a de 21 perde sal.",
+      "fala": "Com DOC sobrando, eu carimbo entrada para todo sódio."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão com a padaria das suprarrenais (dia 10) e mais um intruso. O bônus do macete traz a alergia ao níquel (dia 43) e a fábrica de linfócitos parada (dia 71). Os fornos têm número, e a prova adora trocar um pelo outro.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Menina 46,XX virilizada, com PA alta e K baixo: qual enzima falta?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 246,
+  "data": "2027-07-05",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Deficiência do complemento terminal",
+  "conceito": "Terminal complement deficiency: C5-C9 defect predisposes to recurrent Neisseria infections",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-06",
+  "tom": null,
+  "gancho": "Bicho de Segunda com o Seu Allen: *uma peça sumiu da caixa*",
+  "gancho_apoio": "Complemento é a única caixa de montagem do Step 1 que vem com nove peças numeradas e nenhum manual.",
+  "imagem": {
+    "arquivo": "dia-246.png",
+    "cena": "Na sala de casa, Seu Allen monta uma furadeira de brinquedo seguindo um manual, com as peças coloridas espalhadas no tapete. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen monta uma furadeira de brinquedo com as peças espalhadas no tapete"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-246-macete.png",
+    "cena": "Callback: Seu Allen encaixa a quinta peça, a furadeira liga e faz um furo redondo na casca de um par de grãos de café (os diplococos), que murcha sem drama; na estante, dois frascos de vacina em forma de escudo. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A furadeira completa fura o par de grãos de café; na estante, dois frascos de vacina"
+  },
+  "questao": {
+    "vinheta": "A 19-year-old college student is hospitalized with meningococcal meningitis. At age 13, he had meningococcal sepsis, and his older brother had meningococcal meningitis at age 17. He has no other history of serious infections. Serum immunoglobulins are normal, and total hemolytic complement (CH50) activity is nearly absent.",
+    "pergunta": "Deficiency of which of the following is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "C1 esterase inhibitor",
+        "quiz": "C1 esterase inhibitor"
+      },
+      "B": {
+        "texto": "C3",
+        "quiz": "C3"
+      },
+      "C": {
+        "texto": "C8",
+        "quiz": "C8"
+      },
+      "D": {
+        "texto": "Decay-accelerating factor (CD55)",
+        "quiz": "DAF (CD55)"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sem *MAC*, a Neisseria volta",
+    "certa": [
+      "Os componentes terminais (*C5 a C9*) formam o *membrane attack complex* (MAC), que abre poros na membrana externa fina das bactérias gram-negativas. A *Neisseria* depende muito desse mecanismo para ser destruída, e por isso a falta de qualquer componente de C5 a C9 dá meningococcemia ou meningite de repetição, muitas vezes com outro caso na família. O CH50 baixo com imunoglobulinas normais aponta para o complemento."
+    ],
+    "termos": [
+      "membrane attack complex",
+      "C5-C9",
+      "Neisseria meningitidis",
+      "CH50"
+    ],
+    "erradas": {
+      "A": "A falta do inibidor de C1 causa *hereditary angioedema*, com inchaço por bradicinina e sem infecções de repetição.",
+      "B": "A deficiência de C3 também facilita a Neisseria, mas vem com infecções piogênicas graves desde cedo, como pneumonia e sinusite por bactérias encapsuladas.",
+      "D": "Sem DAF (CD55), o complemento ataca as hemácias: é a *paroxysmal nocturnal hemoglobinuria*, com hemólise e não com meningite."
+    },
+    "macete": {
+      "frase": "*C5 a C9* é a furadeira que fura a *Neisseria*",
+      "apoio": "Sobrou peça, a furadeira não fura: faltou qualquer uma de C5 a C9 e o MAC não monta. Os grãos de café em dupla são os diplococos da Neisseria, que voltam sempre, inclusive no irmão. Antes do eculizumabe (anti-C5), vacina contra meningococo.",
+      "fala": "Sobrou peça? Então faltou mecanismo: sem C5 a C9, a furadeira não fura a Neisseria."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na imunologia, com o Seu Allen de visita. Uma infecção que volta, uma família com história parecida e um exame do complemento, tudo na vinheta. Qual peça faltou?",
+    "palavras_chave": [
+      "recurrent infection",
+      "family history",
+      "complement system",
+      "Step 1 immunology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Imunologia",
+      "#Microbiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Qual componente do complemento falta nos dois irmãos?"
+  },
+  "reel": null,
+  "exemplo": false
+}

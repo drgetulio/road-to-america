@@ -1,0 +1,96 @@
+{
+  "dia": 88,
+  "data": "2027-01-28",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Isoimunização Rh",
+  "conceito": "Rh-negative mother: anti-D immune globulin at 28 weeks and after delivery of an Rh-positive baby",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-29",
+  "gancho": "Pré-natal de 28 semanas e o Garçom Espetinho com o *espeto da obstetrícia*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Garçom Espetinho passa com espetos perto de uma ponte que leva a um castelo em festa. Algumas hemácias de chapeuzinho amarelo atravessam a ponte em direção ao portão, onde guardinhas com celulares de câmera esperam, curiosos. A plaquinha verde e vermelha fica de lado.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho passa perto de uma ponte; hemácias de chapeuzinho amarelo vão para o castelo, onde guardinhas esperam com celulares.",
+    "arquivo": "dia-088.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do castelo: uma equipe de seguranças de boné navy acompanha as hemácias de chapeuzinho para fora, gentilmente, antes que os guardinhas tirem a foto. Os celulares ficam sem nenhuma foto na galeria, e o garçom levanta a plaquinha verde.",
+    "alt": "Seguranças de boné tiram as hemácias de chapeuzinho do castelo antes da foto; o Garçom Espetinho levanta a plaquinha verde.",
+    "arquivo": "dia-088-macete.png"
+  },
+  "questao": {
+    "vinheta": "At a routine prenatal visit at 28 weeks' gestation, a 29-year-old woman in her second pregnancy has blood group O, Rh(D)-negative, with a negative antibody screen. She delivered her first child at term. Her partner, the baby's father, is Rh(D)-positive. The pregnancy has been uncomplicated.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Anti-D immune globulin now",
+        "quiz": "Anti-D now"
+      },
+      "B": {
+        "texto": "Anti-D immune globulin only after delivery",
+        "quiz": "Anti-D after birth"
+      },
+      "C": {
+        "texto": "Middle cerebral artery Doppler surveillance",
+        "quiz": "MCA Doppler"
+      },
+      "D": {
+        "texto": "Repeat antibody screen, no treatment",
+        "quiz": "Repeat screen only"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Aos 28 semanas: *anti-D*",
+    "certa": [
+      "Mãe Rh(D) negativo ainda não sensibilizada (pesquisa de anticorpos negativa) com pai Rh positivo recebe *anti-D immune globulin* (RhoGAM, 300 microgramas) com 28 semanas, porque pequenas passagens de hemácias fetais acontecem no terceiro trimestre. Depois do parto, se o recém-nascido for Rh positivo, ela recebe nova dose em até 72 horas, ajustada pelo teste de Kleihauer-Betke. A imunoglobulina remove as hemácias fetais antes que a mãe forme memória contra o antígeno D, prevenindo a *alloimmunization* e a *hemolytic disease of the fetus and newborn*."
+    ],
+    "termos": [
+      "anti-D immune globulin",
+      "Rh alloimmunization",
+      "Kleihauer-Betke test",
+      "hemolytic disease of the fetus and newborn"
+    ],
+    "erradas": {
+      "B": "Esperar o parto deixa descoberto o terceiro trimestre, quando boa parte das sensibilizações acontece.",
+      "C": "O Doppler da artéria cerebral média segue fetos de mães já sensibilizadas, para detectar anemia, e esta pesquisa é negativa.",
+      "D": "Repetir o exame sem tratar perde a chance de prevenir a sensibilização."
+    },
+    "macete": {
+      "frase": "*28 semanas* e *depois do parto*",
+      "apoio": "Pegadinha de prova: O NBME dá a pesquisa de anticorpos positiva para ver se você lembra que, com a mãe já sensibilizada, a imunoglobulina não adianta e o caminho é o seguimento com Doppler.",
+      "fala": "Vai um anti-D aí? Agora e depois do parto."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta no pré-natal: uma consulta de rotina, um tipo sanguíneo e quatro condutas. O Garçom Espetinho traz o espeto da obstetrícia, e a semana da gestação e os exames da vinheta decidem.",
+    "palavras_chave": [
+      "prenatal care",
+      "28 weeks",
+      "blood type",
+      "obstetrics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RodizioDeQuinta",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rh negativo não sensibilizada com 28 semanas: qual conduta?"
+  },
+  "exemplo": false
+}

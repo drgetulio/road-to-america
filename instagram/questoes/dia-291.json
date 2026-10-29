@@ -1,0 +1,97 @@
+{
+  "dia": 291,
+  "data": "2027-08-19",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Sangramento pós-menopausa",
+  "conceito": "Postmenopausal bleeding: transvaginal ultrasound, biopsy if endometrium thicker than 4 mm",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-20",
+  "tom": null,
+  "gancho": "O Garçom Espetinho trouxe *um paquímetro* para a mesa. Para medir o quê?",
+  "gancho_apoio": "Rodízio de Quinta, mesa da ginecologia: quatro espetos e uma régua.",
+  "imagem": {
+    "arquivo": "dia-291.png",
+    "cena": "Num restaurante elegante, o Garçom Espetinho mede com um paquímetro brilhante a espessura de uma fatia de carne na tábua. A plaquinha verde e vermelha está de lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho mede com um paquímetro a espessura de uma fatia de carne."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-291-macete.png",
+    "cena": "Callback: o paquímetro aberto passa bem de uma marquinha amarela pequena, e o Garçom Espetinho vira a plaquinha para o verde e serve um espeto com uma pipeta fina de amostra.",
+    "foco": "50% 45%",
+    "alt": "Endométrio acima de 4 mm: biópsia"
+  },
+  "questao": {
+    "vinheta": "Seven years after menopause, a 58-year-old woman reports two episodes of light vaginal bleeding during the past month. She takes no hormone therapy. Pelvic examination and cervical cytology are normal. Transvaginal ultrasound shows an endometrial thickness of 9 mm.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Repeat ultrasound in 3 months",
+        "quiz": "Repeat US in 3 months"
+      },
+      "B": {
+        "texto": "Progestin therapy",
+        "quiz": "Progestin therapy"
+      },
+      "C": {
+        "texto": "Endometrial biopsy",
+        "quiz": "Endometrial biopsy"
+      },
+      "D": {
+        "texto": "Total hysterectomy",
+        "quiz": "Total hysterectomy"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Endométrio acima de 4 mm: *biópsia*",
+    "certa": [
+      "Todo *postmenopausal bleeding* precisa afastar *endometrial carcinoma*. A *transvaginal ultrasound* separa os casos: endométrio de 4 mm ou menos tem risco muito baixo; acima de 4 mm, como aqui (9 mm), o próximo passo é a *endometrial biopsy*, feita no consultório. Sangramento que persiste mesmo com endométrio fino também pede biópsia."
+    ],
+    "termos": [
+      "postmenopausal bleeding",
+      "transvaginal ultrasound",
+      "endometrial thickness over 4 mm",
+      "endometrial biopsy"
+    ],
+    "erradas": {
+      "A": "Esperar 3 meses atrasa o diagnóstico quando o endométrio já passou de 4 mm.",
+      "B": "Progestágeno sem diagnóstico pode mascarar hiperplasia atípica ou câncer.",
+      "D": "Histerectomia é tratamento e não vem antes da biópsia que define o que há no endométrio."
+    },
+    "macete": {
+      "frase": "Sangrou depois da menopausa? *Régua do 4*: passou de 4 mm, biópsia",
+      "apoio": "No Rodízio de Quinta, o garçom mede com o paquímetro antes de servir: até 4 mm, a plaquinha fica no vermelho; passou de 4, vira verde para a pipeta da biópsia endometrial no consultório. Sangramento que volta mesmo com endométrio fino também pede a pipeta.",
+      "fala": "Vai uma conduta aí, doutor? Passou de 4 mm, vai a pipeta."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, mesa da ginecologia: o garçom trouxe um paquímetro e quatro espetos, do \"vamos esperar\" ao \"vamos operar\". A medida que decide está no laudo da vinheta, escrita em milímetros, do jeito que o NBME gosta.",
+    "palavras_chave": [
+      "gynecology",
+      "postmenopausal care",
+      "pelvic ultrasound",
+      "outpatient clinic"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Ginecologia",
+      "#OBGYN"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sangramento pós-menopausa, endométrio de 9 mm: qual é o próximo passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

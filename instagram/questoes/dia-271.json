@@ -1,0 +1,96 @@
+{
+  "dia": 271,
+  "data": "2027-07-30",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Síndrome serotoninérgica",
+  "conceito": "Serotonin syndrome: SSRI plus MAOI or linezolid, clonus and hyperthermia, cyproheptadine",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-31",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: *dois frascos no mesmo balcão* e uma festa que ninguém pediu",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-271.png",
+    "cena": "Numa rua de interior enfeitada com serpentinas, a Tia Meia-Vida, de óculos vermelhos, ergue a sacolinha da farmácia acima da cabeça, espantada com um bloco de Carnaval que brotou do nada. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida ergue a sacolinha, espantada com um bloco de Carnaval que surgiu do nada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-271-macete.png",
+    "cena": "A mesma rua depois do bloco: a Tia Meia-Vida varre o confete com uma vassoura feita de um galho de cipreste com exatamente sete ramos, as molinhas se acalmam e os dois frascos descansam tampados num banco, recuperando o fôlego.",
+    "foco": "50% 45%",
+    "alt": "Serotonina em excesso pede antagonista 5-HT2A"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman taking sertraline starts linezolid for MRSA pneumonia. Eighteen hours later she is agitated and diaphoretic, with a temperature of 39.4°C and pulse of 124/min. She has mydriasis, hyperactive bowel sounds, hyperreflexia, and inducible ankle clonus.",
+    "pergunta": "Both drugs are stopped, and supportive care with benzodiazepines is begun. Which additional drug is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Cyproheptadine",
+        "quiz": "Cyproheptadine"
+      },
+      "B": {
+        "texto": "Dantrolene sodium",
+        "quiz": "Dantrolene sodium"
+      },
+      "C": {
+        "texto": "Bromocriptine",
+        "quiz": "Bromocriptine"
+      },
+      "D": {
+        "texto": "Physostigmine",
+        "quiz": "Physostigmine"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Serotonina em excesso pede *antagonista 5-HT2A*",
+    "certa": [
+      "A *linezolid* é um *IMAO fraco* e, somada ao *ISRS*, deixa serotonina sobrando na sinapse. Clônus, hiper-reflexia, hipertermia, diarreia e midríase poucas horas depois formam a *serotonin syndrome*. Depois de suspender os remédios e dar suporte (benzodiazepínico para a agitação, resfriamento), o antídoto é a *cyproheptadine*, antagonista 5-HT2A."
+    ],
+    "termos": [
+      "serotonin syndrome",
+      "linezolid (weak MAOI)",
+      "inducible clonus",
+      "cyproheptadine"
+    ],
+    "erradas": {
+      "B": "*Dantrolene* bloqueia o receptor de rianodina e trata a hipertermia maligna, que vem após anestésico inalatório ou succinilcolina, com rigidez e não com clônus.",
+      "C": "*Bromocriptine* é agonista dopaminérgico usado na síndrome neuroléptica maligna, que evolui em dias, com rigidez em cano de chumbo e reflexos lentos.",
+      "D": "*Physostigmine* reverte a intoxicação anticolinérgica, que deixa a pele seca e o intestino parado; aqui há suor e ruídos intestinais aumentados."
+    },
+    "macete": {
+      "frase": "*Cipreste de sete galhos* varre a serotonina: cypro-hepta-dine",
+      "apoio": "A sertralina segura a serotonina na sinapse e a linezolida, que também inibe a MAO, impede que ela seja destruída: o bloco não para. Clônus, hiper-reflexia e febre são o confete pulando. Suspende os dois, benzodiazepínico e, se precisar, o galho de cipreste de sete ramos: cypro-hepta-dine, antagonista 5-HT2A.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Desse bloco, todo mundo vai lembrar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um remédio de uso contínuo encontra um remédio novo, e a vinheta descreve o que acontece em menos de um dia. Os dois já foram suspensos: qual remédio entra?",
+    "palavras_chave": [
+      "drug interaction",
+      "toxidrome",
+      "antidote",
+      "Step 1 pharmacology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sertralina com linezolida, clônus e febre: qual remédio entra?"
+  },
+  "reel": null,
+  "exemplo": false
+}

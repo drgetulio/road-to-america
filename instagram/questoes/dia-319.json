@@ -1,0 +1,97 @@
+{
+  "dia": 319,
+  "data": "2027-09-16",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Síndrome dos ovários policísticos",
+  "conceito": "PCOS: combined oral contraceptives are first-line for cycle control and hirsutism",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-17",
+  "tom": null,
+  "gancho": "Ciclo que aparece quatro vezes por ano, *igual minhas revisões do Anki*",
+  "gancho_apoio": "Rodízio de Quinta, mesa da ginecologia: quatro espetos e um calendário bagunçado.",
+  "imagem": {
+    "arquivo": "dia-319.png",
+    "cena": "Garçom Espetinho com quatro espetos diante de uma mesa; na parede, um calendário cujas folhas voam fora de ordem, pulando meses, ao lado de uma pilha enorme de cartões de revisão atrasados; a plaquinha verde e vermelha no avental.",
+    "foco": "50% 35%",
+    "alt": "Calendário pulando meses ao lado de cartões de revisão atrasados"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-319-macete.png",
+    "cena": "Callback: o garçom levanta o lado verde da plaquinha ao lado de um espeto com uma cartela redonda; o calendário da parede vira uma folha por mês, em ordem, e uma esponja amarela enxuga gotinhas na mesa; a pilha de cartões continua lá, igualzinha.",
+    "foco": "50% 45%",
+    "alt": "SOP sem desejo de gestação: pílula combinada"
+  },
+  "questao": {
+    "vinheta": "A 23-year-old woman has had 4 to 5 menstrual periods per year since menarche and increasing hair growth on her chin and lower abdomen. She does not want to become pregnant now. Total testosterone is mildly elevated; TSH, prolactin, and 17-hydroxyprogesterone are normal. Ultrasound shows enlarged ovaries with many small follicles.",
+    "pergunta": "Which is the most appropriate initial pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Letrozole for ovulation induction",
+        "quiz": "Letrozole"
+      },
+      "B": {
+        "texto": "Metformin as monotherapy",
+        "quiz": "Metformin alone"
+      },
+      "C": {
+        "texto": "Spironolactone as monotherapy",
+        "quiz": "Spironolactone alone"
+      },
+      "D": {
+        "texto": "Combined oral contraceptive pill",
+        "quiz": "Combined OCP"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "SOP sem desejo de gestação: *pílula combinada*",
+    "certa": [
+      "Oligomenorreia desde a menarca, hiperandrogenismo clínico e laboratorial e ovários policísticos, com TSH, prolactina e 17-OH-progesterona normais, preenchem os critérios de Rotterdam para *polycystic ovary syndrome*. Em quem não quer engravidar, a primeira linha é o *combined oral contraceptive*: regula o ciclo, protege o endométrio do estrogênio sem oposição e reduz os andrógenos livres porque aumenta a *SHBG* e freia o LH. Mudanças de estilo de vida acompanham qualquer opção."
+    ],
+    "termos": [
+      "polycystic ovary syndrome",
+      "Rotterdam criteria",
+      "combined oral contraceptive",
+      "SHBG"
+    ],
+    "erradas": {
+      "A": "*Letrozol* induz ovulação e é a primeira linha para quem quer engravidar, o que não é o caso.",
+      "B": "*Metformina* ajuda no perfil metabólico, mas sozinha tem pouco efeito sobre o ciclo e o hirsutismo.",
+      "C": "*Espironolactona* sozinha reduz o hirsutismo, mas não regula o ciclo nem protege o endométrio e é teratogênica sem contracepção."
+    },
+    "macete": {
+      "frase": "*Colar de pérolas sem plano de bebê*: pílula combinada põe o calendário em dia",
+      "apoio": "A pílula combinada regula o ciclo, protege o endométrio da hiperplasia e sobe a SHBG, que segura a testosterona livre. Se o plano fosse engravidar, o espeto seria o letrozol. Espironolactona entra junto se o pelo não melhorar, nunca sozinha sem contracepção, porque é teratogênica. O calendário dela fica em dia; o do seu Anki, não prometo.",
+      "fala": "Vai uma conduta aí? Calendário em dia."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta: um ciclo que aparece quatro vezes por ano, igualzinho às suas revisões do Anki na época do internato. Quatro espetos de tratamento, e a vinheta diz o que a paciente quer agora.",
+    "palavras_chave": [
+      "gynecology",
+      "menstrual irregularity",
+      "endocrinology",
+      "treatment choice"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Ginecologia",
+      "#Gynecology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ciclos raros, pelos no queixo e sem plano de engravidar: qual tratamento?"
+  },
+  "reel": null,
+  "exemplo": false
+}

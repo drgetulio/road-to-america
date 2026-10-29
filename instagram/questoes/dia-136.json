@@ -1,0 +1,96 @@
+{
+  "dia": 136,
+  "data": "2027-03-17",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Translocação robertsoniana",
+  "conceito": "Robertsonian translocation: fusion of acrocentric chromosomes, familial trisomy 21 risk",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Semana do Dia Mundial da Síndrome de Down (21/3): tom respeitoso, sem humor sobre a condição.",
+  "remix_de": null,
+  "explicacao_em": "2027-03-18",
+  "tom": "acolhedor",
+  "gancho": "Semana do Dia Mundial da Síndrome de Down: *o cariótipo da mãe* conta uma história",
+  "gancho_apoio": "Semana do Dia Mundial da Síndrome de Down. Hoje é dia de genética e de aconselhamento.",
+  "imagem": {
+    "arquivo": "dia-136.png",
+    "cena": "Numa estação de trem calma, dois vagões compridos estão parados lado a lado em trilhos paralelos, e Seu Allen, de avental navy, observa da plataforma com o manual na mão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dois vagões compridos lado a lado numa estação calma; Seu Allen observa da plataforma com o manual."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-136-macete.png",
+    "cena": "Callback: os dois vagões compridos agora estão engatados pela ponta curta, formando um trem só, e os dois pedacinhos curtos ficam estacionados com cuidado num trilho lateral. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Os dois vagões engatados pela ponta curta formam um trem só; os pedacinhos curtos ficam num trilho lateral."
+  },
+  "questao": {
+    "vinheta": "A couple asks about recurrence risk after their son is diagnosed with Down syndrome. His karyotype has 46 chromosomes, one formed by the long arms of chromosomes 14 and 21 joined at the centromere. The healthy mother has 45 chromosomes, including the same fused chromosome.",
+    "pergunta": "Which mechanism produced the fused chromosome?",
+    "alternativas": {
+      "A": {
+        "texto": "Isochromosome formation",
+        "quiz": "Isochromosome"
+      },
+      "B": {
+        "texto": "Balanced reciprocal translocation",
+        "quiz": "Reciprocal translocation"
+      },
+      "C": {
+        "texto": "Meiotic nondisjunction",
+        "quiz": "Meiotic nondisjunction"
+      },
+      "D": {
+        "texto": "Robertsonian translocation",
+        "quiz": "Robertsonian"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Translocação *robertsoniana*: acrocêntricos unidos",
+    "certa": [
+      "Na translocação robertsoniana, dois cromossomos acrocêntricos (13, 14, 15, 21 ou 22) se unem pelos braços longos perto do centrômero e perdem os braços curtos, que só têm cópias repetidas de genes de RNA ribossômico. A mãe é portadora equilibrada, saudável, com 45 cromossomos. O filho recebeu o cromossomo fundido e mais um 21 livre: tem 46 cromossomos, mas três cópias do braço longo do 21, e o risco de recorrência para o casal é maior do que na trissomia livre."
+    ],
+    "termos": [
+      "Robertsonian translocation",
+      "acrocentric chromosomes",
+      "balanced carrier",
+      "recurrence risk"
+    ],
+    "erradas": {
+      "A": "O isocromossomo une dois braços iguais do mesmo cromossomo, como dois 21q, e não o 14 com o 21.",
+      "B": "A translocação recíproca troca pedaços entre dois cromossomos sem fundi-los num só e não reduz o número para 45.",
+      "C": "A não disjunção meiótica gera um cromossomo 21 a mais, livre (47 cromossomos), e não um cromossomo fundido."
+    },
+    "macete": {
+      "frase": "Robertsoniana é *engate de vagões*: dois acrocêntricos unidos pelos braços longos",
+      "apoio": "Quem carrega o engate tem 45 cromossomos e é saudável; o filho pode receber o vagão engatado e mais um 21.",
+      "fala": "Dois vagões engatados e nada importante perdido na estação. O aconselhamento muda, e a família merece essa explicação."
+    }
+  },
+  "legenda": {
+    "contexto": "Nesta semana do Dia Mundial da Síndrome de Down (21/3), falamos de genética com respeito a cada família. A pergunta é sobre o mecanismo e o aconselhamento.",
+    "palavras_chave": [
+      "Down syndrome",
+      "recurrence risk",
+      "karyotype",
+      "genetic counseling"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Genetica",
+      "#Genetics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Filho com 46 cromossomos e o 14 fundido ao 21; mãe com 45: qual mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

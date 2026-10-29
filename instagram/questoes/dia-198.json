@@ -1,0 +1,87 @@
+{
+  "dia": 198,
+  "data": "2027-05-18",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Hiperaldosteronismo primário",
+  "conceito": "Primary aldosteronism screening: aldosterone/renin ratio in resistant or hypokalemic hypertension",
+  "personagem": "Seu Néfron",
+  "gancho_data": "Semana do Dia Mundial da Hipertensão (17/5).",
+  "remix_de": null,
+  "explicacao_em": "2027-05-19",
+  "tom": null,
+  "gancho": "Três remédios em dose cheia, adesão perfeita e a pressão *nem tchum*",
+  "gancho_apoio": "Pressão que não cede é como nota baixa no simulado: antes de aumentar a dose, procure a causa.",
+  "imagem": {
+    "arquivo": "dia-198.png",
+    "cena": "Repartição do Seu Néfron às 3 da manhã, com o relógio sem números na parede. Ele examina com a lupa um medidor de pressão de ponteiro preso no vermelho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron examina com a lupa um medidor de pressão preso no vermelho"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-198-macete.png",
+    "cena": "Callback: Seu Néfron põe numa balança de feira um saco pesado de sal (a aldosterona alta) e uma pena levinha (a renina baixa), e carimba de verde a conta. Fundo limpo.",
+    "alt": "Seu Néfron pesa um saco de sal contra uma pena e carimba a conta"
+  },
+  "questao": {
+    "vinheta": "A 46-year-old woman has a blood pressure of 162/98 mm Hg despite full doses of amlodipine, lisinopril, and chlorthalidone with good adherence. Serum potassium is 3.2 mEq/L despite oral supplements, and sodium is 143 mEq/L. She does not use NSAIDs or licorice.",
+    "pergunta": "Which is the most appropriate next step in diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "CT scan of the adrenal glands",
+        "quiz": "Adrenal CT"
+      },
+      "B": {
+        "texto": "Plasma aldosterone and renin activity",
+        "quiz": "Aldosterone/renin ratio"
+      },
+      "C": {
+        "texto": "24-hour urine metanephrines",
+        "quiz": "24-h urine metanephrines"
+      },
+      "D": {
+        "texto": "Duplex ultrasonography of the renal arteries",
+        "quiz": "Renal artery duplex"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Hipertensão resistente com K baixo: *aldosterona sobre renina*",
+    "certa": [
+      "Hipertensão resistente (três remédios, um deles diurético) e hipocalemia são indicações clássicas de rastrear *primary aldosteronism*. O primeiro exame é a *aldosterone-to-renin ratio*: aldosterona alta com renina suprimida. Se positivo, vem a confirmação (por exemplo, sobrecarga de sal) e só depois a TC das adrenais e o cateterismo das veias adrenais."
+    ],
+    "termos": [
+      "primary aldosteronism",
+      "aldosterone-to-renin ratio",
+      "resistant hypertension",
+      "hypokalemia"
+    ],
+    "erradas": {
+      "A": "A TC antes do diagnóstico bioquímico acha nódulos que não funcionam (incidentalomas) e pode levar à cirurgia errada.",
+      "C": "Metanefrinas investigam feocromocitoma, que costuma dar crises de cefaleia, sudorese e palpitação, sem hipocalemia típica.",
+      "D": "O Doppler renal procura estenose de artéria renal, que também eleva a renina; aqui a pista do potássio baixo aponta para a aldosterona."
+    },
+    "macete": {
+      "frase": "Hiperaldosteronismo: a adrenal *guarda o sal e joga a banana fora* (retém sódio, perde potássio). Para achar, *primeiro a conta* (aldosterona alta sobre renina baixa), *depois a foto* (TC).",
+      "apoio": "O NBME oferece a TC de adrenal como primeiro passo; a sequência é rastrear com a relação aldosterona/renina, confirmar e só então localizar com imagem e cateterismo venoso.",
+      "fala": "Sem a conta carimbada, não sai tomografia."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na semana do Dia Mundial da Hipertensão, com o Seu Néfron. Três remédios em dose cheia e uma pressão que não cede. Quatro exames na mesa, e um deles vem antes dos outros.",
+    "palavras_chave": [
+      "uncontrolled blood pressure",
+      "diagnostic workup",
+      "first test",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "HAS com 3 drogas e K 3,2: qual o primeiro exame?"
+  },
+  "exemplo": false
+}

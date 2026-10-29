@@ -1,0 +1,97 @@
+{
+  "dia": 296,
+  "data": "2027-08-24",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Fasciíte necrosante",
+  "conceito": "Necrotizing fasciitis: pain out of proportion and crepitus, urgent surgical debridement",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-25",
+  "tom": null,
+  "gancho": "Três da manhã no cais e *a Dona Térmica pegou o binóculo*",
+  "gancho_apoio": "Plantão de Terça: quatro diagnósticos de pele e perna na prancheta.",
+  "imagem": {
+    "arquivo": "dia-296.png",
+    "cena": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo; uma boia vermelha pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica olha o mar pelo binóculo às 3 da manhã"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-296-macete.png",
+    "cena": "Callback: pelo binóculo, o mar calmo mostra um iceberg de pontinha pequena e base enorme debaixo da água. Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
+    "foco": "50% 45%",
+    "alt": "Dor desproporcional e crepitação: fasciíte necrosante"
+  },
+  "questao": {
+    "vinheta": "Two days after scraping his leg, a 56-year-old man with type 2 diabetes has severe leg pain far greater than the mild redness suggests, tense edema, dusky bullae, and crepitus. He is febrile (39.2°C), hypotensive (88/54 mm Hg), and tachycardic (122/min).",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Cellulitis",
+        "quiz": "Cellulitis"
+      },
+      "B": {
+        "texto": "Necrotizing fasciitis",
+        "quiz": "Necrotizing fasciitis"
+      },
+      "C": {
+        "texto": "Erysipelas",
+        "quiz": "Erysipelas"
+      },
+      "D": {
+        "texto": "Deep venous thrombosis",
+        "quiz": "Deep venous thrombosis"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Dor desproporcional e crepitação: *fasciíte necrosante*",
+    "certa": [
+      "*Dor desproporcional* ao que a pele mostra, edema tenso, bolhas escuras, *crepitação* (gás no subcutâneo) e choque num diabético indicam *necrotizing fasciitis*: a infecção corre pela fáscia por baixo de uma pele que ainda parece pouco doente. O tratamento é *desbridamento cirúrgico urgente* mais antibiótico de amplo espectro (vancomicina, piperacilina-tazobactam e clindamicina, que corta a produção de toxina). Exame de imagem nunca pode atrasar a cirurgia."
+    ],
+    "termos": [
+      "necrotizing fasciitis",
+      "pain out of proportion",
+      "crepitus",
+      "urgent surgical debridement"
+    ],
+    "erradas": {
+      "A": "Celulite dá eritema e dor proporcionais, sem crepitação nem bolhas escuras com choque.",
+      "C": "Erisipela é superficial, com borda elevada bem demarcada, e não causa gás nem dor desproporcional.",
+      "D": "Trombose venosa profunda incha e dói, mas não dá febre alta, bolhas, crepitação nem choque."
+    },
+    "macete": {
+      "frase": "Dor maior que a pele *é iceberg*: o que importa está por baixo",
+      "apoio": "A ponta do iceberg é pequena e calma, mas embaixo da água ele cresce rápido pela camada plana (a fáscia), soltando bolhas (o gás que dá crepitação). Contra iceberg, o barco vai direto, com a luz do centro cirúrgico acesa: desbridamento cirúrgico já e antibiótico de amplo espectro.",
+      "fala": "Já vi esse caso às 3 da manhã. Iceberg não espera o dia clarear."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça no cais: a Dona Térmica pegou o binóculo às 3 da manhã. No Prometric ninguém deixa você pedir segunda opinião, então a vinheta precisa ser lida inteira, número por número.",
+    "palavras_chave": [
+      "skin and soft tissue infection",
+      "diabetes",
+      "emergency department",
+      "infectious disease"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Infectologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor desproporcional, bolhas escuras e crepitação: qual é o diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,97 @@
+{
+  "dia": 92,
+  "data": "2027-02-01",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Neisseria meningitidis",
+  "conceito": "Neisseria meningitidis: lipooligosaccharide, petechial rash and Waterhouse-Friderichsen syndrome",
+  "personagem": "Capitã Plaqueta",
+  "anfitriao": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-02",
+  "tom": null,
+  "gancho": "Na república, a louça acumula. Hoje, quem foi *chamada* foi a Capitã Plaqueta",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-092.png",
+    "cena": "Na cozinha de uma república de estudantes, com louça empilhada na pia, a Capitã Plaqueta, de colete e apito, segura uma prancheta e olha a bagunça com as mãos na cintura.",
+    "foco": "50% 35%",
+    "alt": "Na cozinha de uma república com louça empilhada, a Capitã Plaqueta segura uma prancheta com as mãos na cintura."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-092-macete.png",
+    "cena": "Callback da república: duas bactérias em forma de feijão, grudadinhas como gêmeas, soltam bolhinhas da própria casca, que viram confete vermelho. Em cima de uma mesa em forma de rim, dois chapeuzinhos de festa triangulares murcham, e a Capitã Plaqueta corre com um extintor e uma seringa em forma de escudo (vacina).",
+    "foco": "50% 40%",
+    "alt": "As bactérias soltam bolhas de confete; dois chapeuzinhos triangulares murcham sobre uma mesa em forma de rim."
+  },
+  "questao": {
+    "vinheta": "A 19-year-old college student who lives in a dormitory has had fever, headache and neck stiffness for 12 hours. BP is 82/44 mm Hg. Nonblanching purpura covers his trunk and legs. Cerebrospinal fluid Gram stain shows gram-negative diplococci. Despite treatment, shock persists, and CT shows bilateral adrenal hemorrhage.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Streptococcus pneumoniae",
+        "quiz": "S. pneumoniae"
+      },
+      "B": {
+        "texto": "Haemophilus influenzae type b",
+        "quiz": "H. influenzae type b"
+      },
+      "C": {
+        "texto": "Listeria monocytogenes",
+        "quiz": "Listeria"
+      },
+      "D": {
+        "texto": "Neisseria meningitidis",
+        "quiz": "N. meningitidis"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Meningococo: *LOS*, púrpura e adrenais",
+    "certa": [
+      "Diplococos gram-negativos no líquor de um jovem que mora em alojamento coletivo apontam para Neisseria meningitidis. O lipo-oligossacarídeo (lipooligosaccharide, LOS) da membrana externa é liberado em bolhas e dispara choque, coagulação intravascular e púrpura. A hemorragia bilateral das adrenais com choque refratário é a síndrome de Waterhouse-Friderichsen."
+    ],
+    "termos": [
+      "Neisseria meningitidis",
+      "lipooligosaccharide",
+      "Waterhouse-Friderichsen syndrome",
+      "gram-negative diplococci"
+    ],
+    "erradas": {
+      "A": "S. pneumoniae é a causa mais comum de meningite no adulto, mas é diplococo gram-positivo em forma de lança.",
+      "B": "H. influenzae tipo b é cocobacilo gram-negativo e ficou rara depois da vacina; não forma diplococos.",
+      "C": "Listeria é bacilo gram-positivo e atinge recém-nascidos, idosos, gestantes e imunossuprimidos."
+    },
+    "macete": {
+      "frase": "Dupla de feijões, *confete vermelho* e chapeuzinhos do rim murchos",
+      "apoio": "Pegadinha de prova: O NBME cobra a profilaxia dos contatos próximos (rifampicina, ciprofloxacino ou ceftriaxona) e a vacina MenACWY aos 11 a 12 anos com reforço aos 16.",
+      "fala": "Esse confete nem eu dou conta. Antibiótico já, e vacina para a república toda."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com a Capitã Plaqueta no lugar do Macrô: um universitário que mora em alojamento, uma emergência grave e quatro germes na lista. O Gram do líquor está na vinheta. Vacina em dia, aliás, é a melhor resposta fora da prova.",
+    "palavras_chave": [
+      "young adult",
+      "fever and headache",
+      "septic shock",
+      "microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Meningite"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diplococo gram-negativo, púrpura e choque: qual organismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

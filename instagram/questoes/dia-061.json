@@ -1,0 +1,95 @@
+{
+  "dia": 61,
+  "data": "2027-01-01",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Metronidazol e álcool",
+  "conceito": "Metronidazole: disulfiram-like reaction with alcohol from acetaldehyde buildup",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Ano Novo.",
+  "remix_de": null,
+  "explicacao_em": "2027-01-02",
+  "gancho": "Ano Novo, roupa branca e uma *receita* na bolsa: a Tia Meia-Vida fica de olho",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Tia Meia-Vida, de roupa branca de réveillon, numa praia à meia-noite com fogos ao fundo, segura uma taça de suco de uva roxo e acena para o mar.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, de roupa branca de réveillon, segura uma taça de suco de uva numa praia com fogos ao fundo.",
+    "arquivo": "dia-061.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do réveillon: a entrada da festa tem duas catracas em sequência. A primeira gira livre, a segunda está presa por um cadeado em forma de comprimido. Entre as duas, bolinhas vermelhas e enjoadas se acumulam, e Tia Meia-Vida aponta para o cadeado.",
+    "alt": "A festa trava na aldeído desidrogenase",
+    "arquivo": "dia-061-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman is taking oral metronidazole for bacterial vaginosis. At a New Year's Eve party she drinks a glass of champagne. Within 20 minutes she develops facial flushing, throbbing headache, palpitations, nausea, and vomiting.",
+    "pergunta": "Inhibition of which enzyme best explains her symptoms?",
+    "alternativas": {
+      "A": {
+        "texto": "Alcohol dehydrogenase",
+        "quiz": "Alcohol dehydrogenase"
+      },
+      "B": {
+        "texto": "Aldehyde dehydrogenase",
+        "quiz": "Aldehyde dehydrogenase"
+      },
+      "C": {
+        "texto": "Hepatic cytochrome P450 2E1",
+        "quiz": "Cytochrome P450 2E1"
+      },
+      "D": {
+        "texto": "Monoamine oxidase",
+        "quiz": "Monoamine oxidase (MAO)"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A festa trava na *aldeído desidrogenase*",
+    "certa": [
+      "O etanol vira acetaldeído pela *alcohol dehydrogenase* e o acetaldeído vira acetato pela *aldehyde dehydrogenase* (ALDH). O *metronidazole* inibe a ALDH como o dissulfiram, e o *acetaldehyde* acumulado causa rubor, cefaleia latejante, taquicardia, náusea e vômito: a *disulfiram-like reaction*. Por isso a orientação de bula é evitar álcool durante o tratamento e por pelo menos 3 dias depois."
+    ],
+    "termos": [
+      "metronidazole",
+      "aldehyde dehydrogenase",
+      "acetaldehyde",
+      "disulfiram-like reaction"
+    ],
+    "erradas": {
+      "A": "Bloquear a álcool desidrogenase impede a formação de acetaldeído; é o mecanismo do fomepizol, usado no envenenamento por metanol e etilenoglicol.",
+      "C": "A CYP2E1 é uma via secundária do etanol que se induz no uso crônico; o quadro agudo de rubor vem do acetaldeído parado na etapa seguinte.",
+      "D": "Inibir a MAO causa crise hipertensiva com alimentos ricos em tiramina, não reação ao álcool."
+    },
+    "macete": {
+      "frase": "Metronidazol tranca a *segunda catraca* (ALDH): o acetaldeído fica preso no meio da festa, e a virada vira rubor e enjoo em 20 minutos.",
+      "apoio": "Pegadinha de prova: O NBME troca as duas enzimas: fomepizol bloqueia a primeira (ADH), dissulfiram e metronidazol bloqueiam a segunda (ALDH).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Ano Novo, roupa branca, sete ondas e o primeiro Sextou na Farmácia de 2027. A Tia Meia-Vida começa o ano com uma pergunta de enzima que o NBME adora.",
+    "palavras_chave": [
+      "New Year",
+      "enzymes",
+      "drug reaction",
+      "pharmacology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Reveillon",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metronidazol e uma taça no réveillon: qual enzima ficou travada?"
+  },
+  "exemplo": false
+}

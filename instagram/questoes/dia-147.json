@@ -1,0 +1,101 @@
+{
+  "dia": 147,
+  "data": "2027-03-28",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix da caça aos ovos: Puberdade e estágios de Tanner (dia 52), Pico de LH (dia 59), Ovogênese (dia 87)",
+  "conceito": "Easter egg hunt remix: Puberty onset + LH surge + Oocyte arrest",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Páscoa (28/3/2027): o ovo que fica parado em prófase I.",
+  "remix_de": [
+    52,
+    59,
+    87
+  ],
+  "explicacao_em": "2027-03-29",
+  "tom": null,
+  "gancho": "Páscoa no ovário: o ovo cresce, cresce e *não sai do papel*",
+  "gancho_apoio": "Remix com puberdade (dia 52), pico de LH (dia 59) e ovogênese (dia 87) numa adolescente só.",
+  "imagem": {
+    "arquivo": "dia-147.png",
+    "cena": "Seu Allen, de cestinha na mão, procura ovos de Páscoa num jardim ensolarado e encontra um único ovo grande, ainda embrulhado em papel brilhante, escondido atrás de um vaso. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen encontra no jardim um único ovo de Páscoa grande, ainda embrulhado, atrás de um vaso."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-147-macete.png",
+    "cena": "Callback: o ovo grande continua embrulhado porque o interruptor que deveria rasgar o papel ainda está com fita listrada de obra, e Seu Allen aperta o último parafuso do interruptor. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O ovo segue embrulhado porque o interruptor ainda está em obra; Seu Allen aperta o último parafuso."
+  },
+  "questao": {
+    "vinheta": "A 13-year-old girl had breast budding at age 10 and menarche 8 months ago. Her cycles are irregular. Serial ultrasounds show a dominant follicle that grows to 20 mm but never ruptures, and no LH surge is detected.",
+    "pergunta": "The oocyte inside this follicle remains arrested at which stage?",
+    "alternativas": {
+      "A": {
+        "texto": "Metaphase II",
+        "quiz": "Metaphase II",
+        "dia": 87
+      },
+      "B": {
+        "texto": "Prophase I",
+        "quiz": "Prophase I",
+        "dia": 87
+      },
+      "C": {
+        "texto": "Metaphase I",
+        "quiz": "Metaphase I"
+      },
+      "D": {
+        "texto": "Anaphase II",
+        "quiz": "Anaphase II"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem pico de LH, o ovócito *fica na prófase I*",
+    "certa": [
+      "O ovócito primário fica parado na prófase I (diplóteno) desde a vida fetal. Quem libera a meiose I é o pico de LH, que nos primeiros ciclos depois da menarca muitas vezes ainda não acontece, porque o feedback positivo do estradiol amadurece aos poucos. Sem pico, o folículo cresce, não rompe, e o ovócito continua na prófase I. A parada em metáfase II só começa depois do pico, perto da ovulação."
+    ],
+    "termos": [
+      "prophase I arrest",
+      "diplotene",
+      "LH surge",
+      "anovulatory cycles"
+    ],
+    "erradas": {
+      "A": "Dia 87: a metáfase II é a parada do ovócito que já recebeu o pico de LH e soltou o primeiro corpúsculo polar; ela só termina se houver fecundação.",
+      "C": "A metáfase I é uma passagem rápida dentro da meiose I já retomada, não uma parada que espera o pico de LH.",
+      "D": "A anáfase II só acontece depois da fecundação, quando o ovócito termina a meiose II."
+    },
+    "macete": {
+      "frase": "*Pré-pico, prófase I*; pós-pico, metáfase II",
+      "apoio": "Pegadinha de prova: O NBME pergunta a parada certa para cada momento: prófase I do nascimento até o pico de LH, metáfase II do pico até a fecundação. Nos primeiros ciclos da adolescência, o pico pode faltar, e o folículo não rompe.",
+      "fala": "Sobrou peça? Faltou o pico de LH. Sem ele, o ovo de Páscoa fica embrulhado na prófase I."
+    }
+  },
+  "legenda": {
+    "contexto": "Feliz Páscoa! No Remix de Domingo, uma adolescente com menarca recente, ciclos irregulares e um folículo que cresce mas não rompe. Os exames estão na vinheta, e a pergunta é em que ponto o ovócito ficou parado.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Fisiologia",
+      "#Physiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Folículo que cresce e não rompe aos 13 anos: em que fase o oócito está parado?"
+  },
+  "reel": null,
+  "exemplo": false
+}

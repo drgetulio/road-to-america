@@ -1,0 +1,96 @@
+{
+  "dia": 293,
+  "data": "2027-08-21",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Gestante que recusa cesárea",
+  "conceito": "Competent pregnant patient refusing cesarean: her refusal is respected even if the fetus is at risk",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-22",
+  "tom": "normal",
+  "gancho": "Sábado de ética na sala de parto: *quatro estradas e uma decisão difícil*",
+  "gancho_apoio": "Uma decisão difícil na sala de parto, e o Viés espia a encruzilhada.",
+  "imagem": {
+    "arquivo": "dia-293.png",
+    "cena": "Uma encruzilhada tranquila com uma placa de trânsito em forma de balança de tribunal; atrás de uma tabela 2x2 em branco, o Viés espia com a lupa. Luz suave da manhã, sem pessoas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Encruzilhada tranquila com uma placa em forma de balança, e o Viés espiando atrás de uma tabela 2x2."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-293-macete.png",
+    "cena": "A balança pende para a estrada da salinha; numa cadeira repousa uma caneta e na outra um estetoscópio, com um monitor fetal aceso entre as duas. As estradas do fórum, do centro cirúrgico e da casa de família têm a cancela fechada, e o Viés se afasta atrás da tabela 2x2.",
+    "foco": "50% 45%",
+    "alt": "Gestante capaz pode recusar a cesárea"
+  },
+  "questao": {
+    "vinheta": "During active labor at 39 weeks' gestation, a 31-year-old woman's fetal heart tracing shows recurrent late decelerations with minimal variability, and cesarean delivery is recommended. She has decision-making capacity, accurately restates the risks to the fetus, including death, and declines surgery because she wants a vaginal birth.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Respect her refusal and keep monitoring",
+        "quiz": "Respect refusal, monitor"
+      },
+      "B": {
+        "texto": "Seek a court order to perform the cesarean",
+        "quiz": "Seek a court order"
+      },
+      "C": {
+        "texto": "Perform the cesarean under the emergency exception",
+        "quiz": "Cesarean under emergency rule"
+      },
+      "D": {
+        "texto": "Obtain consent from her husband",
+        "quiz": "Husband consents"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Gestante capaz pode *recusar a cesárea*",
+    "certa": [
+      "Uma gestante com *decision-making capacity* tem o direito de recusar qualquer procedimento, inclusive a cesárea, mesmo quando a recusa aumenta o risco para o feto. O médico registra a conversa, oferece a cirurgia de novo, segue monitorando e cuida dela pelo plano que ela escolheu. O ACOG desaconselha ordem judicial para forçar tratamento em gestante capaz."
+    ],
+    "termos": [
+      "decision-making capacity",
+      "informed refusal",
+      "maternal autonomy",
+      "ACOG"
+    ],
+    "erradas": {
+      "B": "Ordem judicial contra gestante capaz fere a autonomia e é desaconselhada pelo ACOG.",
+      "C": "A exceção de emergência vale para quem não consegue decidir, não para quem decidiu e recusou.",
+      "D": "O parceiro não decide por uma adulta capaz; um representante só decide quando ela perde a capacidade."
+    },
+    "macete": {
+      "frase": "Gestante capaz *segura a caneta*: a decisão sobre o corpo é dela",
+      "apoio": "A estrada certa é a da conversa: o médico continua ao lado, explica de novo, oferece alternativas e monitora, sem atalho pelo fórum nem pelo marido. Capacidade preservada e recusa informada se respeitam, mesmo com o feto em risco.",
+      "fala": "Atalho pelo fórum é viés. A decisão é dela."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés na sala de parto, com respeito: uma decisão difícil e quatro caminhos na encruzilhada. A vinheta descreve a paciente com cuidado, e cada palavra sobre o que ela entende conta.",
+    "palavras_chave": [
+      "medical ethics",
+      "labor and delivery",
+      "communication",
+      "obstetrics"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gestante capaz recusa a cesárea indicada: qual é o próximo passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

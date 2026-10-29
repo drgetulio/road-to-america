@@ -1,0 +1,96 @@
+{
+  "dia": 292,
+  "data": "2027-08-20",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Intoxicação por organofosforado",
+  "conceito": "Organophosphate poisoning: atropine plus pralidoxime",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-21",
+  "tom": null,
+  "gancho": "Sextou na Farmácia em domicílio: *a Tia Meia-Vida chegou correndo*",
+  "gancho_apoio": "Sextou na Farmácia em domicílio: quatro frascos na mesinha e só uma combinação certa.",
+  "imagem": {
+    "arquivo": "dia-292.png",
+    "cena": "Na varanda de uma casa, a Tia Meia-Vida, de óculos vermelhos, chega correndo com a maleta de farmácia; na parede, um relógio bate devagar, e quatro frascos de remédio diferentes esperam numa mesinha.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida chega correndo a uma varanda com quatro frascos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-292-macete.png",
+    "cena": "Callback: na mesma casa, todas as torneiras do quintal tinham aberto ao mesmo tempo; a Tia Meia-Vida fecha o registro geral, que tem uma florzinha roxa de beladona amarrada, e com a outra mão solta com uma chave inglesa uma engrenagem presa antes que a ferrugem tome conta. As poças secam e o relógio da varanda volta ao ritmo.",
+    "foco": "50% 45%",
+    "alt": "Atropina para o muscarínico, pralidoxima para a enzima"
+  },
+  "questao": {
+    "vinheta": "One hour after spraying insecticide in an orchard without protective equipment, a 35-year-old man has vomiting, diarrhea, sweating, drooling, wheezing with copious bronchial secretions, pinpoint pupils, and diffuse muscle fasciculations. Pulse is 46/min.",
+    "pergunta": "After decontamination and airway support, which pharmacotherapy is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Physostigmine",
+        "quiz": "Physostigmine"
+      },
+      "B": {
+        "texto": "Pralidoxime without atropine",
+        "quiz": "Pralidoxime, no atropine"
+      },
+      "C": {
+        "texto": "Neostigmine",
+        "quiz": "Neostigmine"
+      },
+      "D": {
+        "texto": "Atropine plus pralidoxime",
+        "quiz": "Atropine + pralidoxime"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Atropina para o muscarínico, *pralidoxima para a enzima*",
+    "certa": [
+      "O *organophosphate* inibe a *acetylcholinesterase*, e sobra acetilcolina nos receptores muscarínicos (secreções, broncorreia, bradicardia, miose) e nicotínicos (fasciculações, fraqueza). A *atropine* bloqueia o lado muscarínico e é repetida até secar as secreções brônquicas. A *pralidoxime* reativa a enzima, se chegar antes do *aging* (a ligação que fica definitiva), e é a única das duas que trata o lado nicotínico."
+    ],
+    "termos": [
+      "organophosphate poisoning",
+      "acetylcholinesterase",
+      "atropine",
+      "pralidoxime and aging"
+    ],
+    "erradas": {
+      "A": "Fisostigmina inibe a acetilcolinesterase e pioraria o excesso de acetilcolina.",
+      "B": "Pralidoxima sozinha não controla as secreções nem a bradicardia, que matam pelo pulmão.",
+      "C": "Neostigmina também inibe a colinesterase, o mesmo mecanismo do veneno."
+    },
+    "macete": {
+      "frase": "*Atropina seca, pralidoxima solta*",
+      "apoio": "Todas as torneiras da casa abertas é o excesso de acetilcolina. A atropina fecha o registro geral e seca as secreções (dose até o pulmão secar); a pralidoxima solta a engrenagem da acetilcolinesterase antes que ela enferruje de vez (o envelhecimento da enzima) e cuida da fasciculação, que a atropina não alcança.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da atropina eu lembro: vai até o pulmão secar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia em domicílio: a Tia Meia-Vida pegou a maleta e encontrou quatro frascos na mesinha. A vinheta tem uma lista de sintomas que o NBME adora e conta o que o paciente estava fazendo uma hora antes.",
+    "palavras_chave": [
+      "toxicology",
+      "emergency medicine",
+      "antidotes",
+      "pharmacology"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Toxicologia",
+      "#Toxicology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Inseticida, secreção, miose e pulso de 46: qual é o tratamento?"
+  },
+  "reel": null,
+  "exemplo": false
+}

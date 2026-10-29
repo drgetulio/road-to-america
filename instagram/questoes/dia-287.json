@@ -1,0 +1,103 @@
+{
+  "dia": 287,
+  "data": "2027-08-15",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Doença do enxerto contra o hospedeiro (dia 211), Doença granulomatosa crônica (dia 260), Hepatite E (dia 281)",
+  "conceito": "Remix: Graft-versus-host disease + Chronic granulomatous disease + Hepatitis E",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    211,
+    260,
+    281
+  ],
+  "explicacao_em": "2027-08-16",
+  "tom": null,
+  "gancho": "Casa nova, mudança recente e *o síndico já recebeu reclamação*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
+  "imagem": {
+    "arquivo": "dia-287.png",
+    "cena": "Na calçada, diante de um caminhão de mudança, Macrô confere uma lista em branco de quem vai entrar na casa nova. Num canto, um vinil pequeno faz de calota do caminhão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô confere a lista de quem entra na casa nova, diante de um caminhão de mudança."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-287-macete.png",
+    "cena": "Callback: dentro da casinha, Macrô abre o alçapão do encanamento e acha o ralo da cozinha, em forma de fígado, entupido por tijolinhos, com a água subindo pela casa e uma balança de banheiro marcando a mais. O vinil brilha na calota do caminhão.",
+    "foco": "50% 45%",
+    "alt": "GVHD: T da doadora contra pele, fígado e intestino"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy with chronic granulomatous disease receives busulfan conditioning and an allogeneic stem cell transplant from his sister. On day 14, he has tender hepatomegaly, ascites, a 6% weight gain, and a bilirubin of 4.2 mg/dL. He has no rash or diarrhea. Hepatitis E RNA is undetectable.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Acute graft-versus-host disease",
+        "quiz": "Acute GVHD",
+        "dia": 211
+      },
+      "B": {
+        "texto": "Sinusoidal obstruction syndrome",
+        "quiz": "Sinusoidal obstruction"
+      },
+      "C": {
+        "texto": "Chronic hepatitis E infection",
+        "quiz": "Chronic hepatitis E",
+        "dia": 281
+      },
+      "D": {
+        "texto": "Invasive aspergillosis",
+        "quiz": "Invasive aspergillosis",
+        "dia": 260
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Fígado grande e doído na 2ª semana: *sinusoide entupido*",
+    "certa": [
+      "Fígado aumentado e doloroso, ascite, ganho de peso e bilirrubina subindo nas três primeiras semanas depois de um transplante com condicionamento por bussulfano formam a *sinusoidal obstruction syndrome* (a antiga doença veno-oclusiva). A quimioterapia do condicionamento lesa o *sinusoidal endothelium* do fígado, os sinusoides entopem e o sangue represa antes de atravessar o órgão: dor, hepatomegalia e retenção de líquido. É o intruso do domingo, e o tratamento dos casos graves é o *defibrotide*."
+    ],
+    "termos": [
+      "sinusoidal obstruction syndrome",
+      "busulfan conditioning",
+      "sinusoidal endothelial injury",
+      "defibrotide"
+    ],
+    "erradas": {
+      "A": "A GVHD aguda (dia 211) também pega o fígado, mas costuma vir com rash e diarreia e dá icterícia colestática, sem ascite nem ganho de peso.",
+      "C": "A hepatite E (dia 281) só cronifica no imunossuprimido depois de meses de vírus no sangue, e aqui o RNA nem aparece.",
+      "D": "A aspergilose é a sombra da doença granulomatosa crônica (dia 260) e mira o pulmão; não explica fígado doído, ascite e ganho de peso em duas semanas."
+    },
+    "macete": {
+      "frase": "*Ralo entupido antes do fígado*: hepatomegalia, ascite e balança subindo nas três primeiras semanas",
+      "apoio": "O condicionamento machuca o endotélio dos sinusoides, que entopem como ralo com cabelo. O sangue represa: fígado grande e doído, barriga d'água e quilos a mais, sem rash. GVHD pede pele e intestino, hepatite E crônica pede meses de vírus e a aspergilose mora no pulmão de quem tem doença granulomatosa crônica.",
+      "fala": "Comi, mostrei, avisei. Esse aí não veio na mudança: foi o encanamento."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: GVHD (dia 211), doença granulomatosa crônica (dia 260) e hepatite E (dia 281) voltaram, e um intruso entrou no caminhão de mudança. Quatro suspeitos na calçada, e o Macrô só tem a lista em branco e a vinheta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Duas semanas após o transplante, fígado doído e ascite sem rash: qual diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

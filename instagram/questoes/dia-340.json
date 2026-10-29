@@ -1,0 +1,101 @@
+{
+  "dia": 340,
+  "data": "2027-10-07",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Rastreamento do câncer de mama",
+  "conceito": "Breast cancer screening: biennial mammography from 40 to 74 (USPSTF 2024)",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": "Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-08",
+  "tom": "acolhedor",
+  "gancho": "Outubro Rosa: *o que recomendar* para quem não tem sintoma nenhum?",
+  "gancho_apoio": "Mulher sem sintomas e sem risco aumentado pergunta o que fazer.",
+  "imagem": {
+    "arquivo": "dia-340.png",
+    "cena": "O Garçom Espetinho, calmo e gentil, segura um cardápio fechado, com um laço rosa discreto no avental e a plaquinha verde e vermelha no bolso. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho, gentil, segura um cardápio fechado, com um laço rosa no avental."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-340-macete.png",
+    "cena": "Callback: o garçom abre o cardápio e mostra um cartão com um pequeno aparelho de raio X, levantando o lado verde da plaquinha; ao fundo, um calendário de parede vira as páginas de duas em duas, sem números.",
+    "foco": "50% 45%",
+    "alt": "USPSTF 2024: biennial mammography dos 40 aos 74"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old woman presents for her annual checkup. She has no breast symptoms, and breast examination is normal. She has never had a mammogram. No relatives have had breast or ovarian cancer, and she never received chest radiation. She asks about breast cancer screening.",
+    "pergunta": "Which is the most appropriate recommendation?",
+    "alternativas": {
+      "A": {
+        "texto": "Annual breast MRI",
+        "quiz": "Annual breast MRI"
+      },
+      "B": {
+        "texto": "BRCA1 and BRCA2 genetic testing",
+        "quiz": "BRCA1/2 testing"
+      },
+      "C": {
+        "texto": "Begin mammography at age 50",
+        "quiz": "Begin mammography at age 50"
+      },
+      "D": {
+        "texto": "Mammography every 2 years",
+        "quiz": "Mammography every 2 years"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "USPSTF 2024: *biennial mammography* dos 40 aos 74",
+    "certa": [
+      "Desde 2024, a USPSTF recomenda *biennial screening mammography* para mulheres de risco médio dos 40 aos 74 anos (recomendação B). Ela tem 42 anos, sem sintomas, sem história familiar e sem radiação torácica, então entra no rastreamento de rotina, a cada 2 anos."
+    ],
+    "termos": [
+      "USPSTF",
+      "biennial screening mammography",
+      "average risk",
+      "age 40 to 74"
+    ],
+    "erradas": {
+      "A": "RM anual é para alto risco (BRCA, radiação torácica antes dos 30 ou risco ao longo da vida de 20% ou mais), não para risco médio.",
+      "B": "Teste genético é para quem tem história pessoal ou familiar que sugere síndrome hereditária, o que ela não tem.",
+      "C": "Começar aos 50 era a recomendação de 2016; a atualização de 2024 trouxe o início para os 40."
+    },
+    "macete": {
+      "frase": "*40, de 2 em 2, até 74*",
+      "apoio": "A USPSTF (2024) recomenda mamografia a cada dois anos dos 40 aos 74 para mulher de risco médio. Risco alto pede outro cardápio (RM e aconselhamento genético); risco médio fica no 40, 2, 74.",
+      "fala": "Hoje o cardápio é informação."
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa, com informação e sem medo: uma consulta de rotina e quatro recomendações no cardápio do garçom. A idade da paciente está na vinheta, e a diretriz cobrada é a americana.",
+    "palavras_chave": [
+      "preventive medicine",
+      "women's health",
+      "screening",
+      "primary care"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#OutubroRosa",
+      "#Ginecologia",
+      "#MedicinaPreventiva",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "42 anos, risco médio e sem sintomas: qual rastreamento recomendar?"
+  },
+  "reel": null,
+  "exemplo": false
+}

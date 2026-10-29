@@ -1,0 +1,95 @@
+{
+  "dia": 87,
+  "data": "2027-01-27",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Ovogênese",
+  "conceito": "Oocyte arrest: the primary oocyte waits in prophase I, the secondary oocyte in metaphase II until fertilization",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-28",
+  "gancho": "O ovócito que espera *mais que fila do INSS*: onde ele parou agora?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Numa rodoviária, o Mito, de jaleco amassado e café na mão, viaja dentro de uma célula redonda que espera num banco novo, com uma malinha pequena ao lado; num banco antigo e empoeirado, outra célula redonda cochila. Setinhas de manual apontam para os dois bancos.",
+    "foco": "50% 35%",
+    "alt": "Numa rodoviária, Mito viaja dentro de uma célula com malinha num banco novo; outra célula cochila num banco empoeirado.",
+    "arquivo": "dia-087.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da rodoviária: a célula da malinha está de pé na plataforma, com bastõezinhos de cromossomos enfileirados bem no meio da barriga, como passageiros alinhados na faixa amarela. Ao longe, um trenzinho em forma de espermatozoide se aproxima. No banco antigo, a outra célula continua cochilando.",
+    "alt": "Ovócito secundário: metáfase II",
+    "arquivo": "dia-087-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman undergoes oocyte retrieval for in vitro fertilization after ovarian stimulation and an hCG trigger. A mature oocyte with an extruded first polar body is examined before insemination.",
+    "pergunta": "At which stage of meiosis is this cell arrested?",
+    "alternativas": {
+      "A": {
+        "texto": "Prophase I (diplotene)",
+        "quiz": "Prophase I (diplotene)"
+      },
+      "B": {
+        "texto": "Metaphase I",
+        "quiz": "Metaphase I"
+      },
+      "C": {
+        "texto": "Metaphase II",
+        "quiz": "Metaphase II"
+      },
+      "D": {
+        "texto": "Anaphase II",
+        "quiz": "Anaphase II"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Ovócito secundário: *metáfase II*",
+    "certa": [
+      "O *primary oocyte* fica parado na *prophase I* desde a vida fetal até a puberdade (na fase de diplóteno). Com o pico de LH (ou o hCG do gatilho), ele termina a meiose I, solta o primeiro corpúsculo polar e vira *secondary oocyte*, que para de novo na *metaphase II*. Só a fertilização faz a meiose II terminar e liberar o segundo corpúsculo polar."
+    ],
+    "termos": [
+      "secondary oocyte",
+      "metaphase II arrest",
+      "prophase I arrest",
+      "first polar body"
+    ],
+    "erradas": {
+      "A": "Prófase I é a parada do ovócito primário, antes da ovulação e antes de liberar o primeiro corpúsculo polar.",
+      "B": "A metáfase I é uma etapa de passagem, sem parada prolongada no ovócito humano.",
+      "D": "A anáfase II só acontece depois que o espermatozoide entra, já com a fertilização em curso."
+    },
+    "macete": {
+      "frase": "Prófase I *parada longa*, metáfase II *espera o trem*",
+      "apoio": "Pegadinha de prova: O NBME troca as duas paradas: ovócito primário é prófase I, secundário (ovulado, com o primeiro corpúsculo polar) é metáfase II até a fertilização.",
+      "fala": "Eu só viajo com a mãe. E essa viagem está parada na plataforma até o trem chegar."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Mito, que só viaja com a mãe: a ovogênese tem duas paradas, e a prova adora perguntar em qual delas a célula está. Leia a vinheta com a atenção de quem espera ônibus em rodoviária.",
+    "palavras_chave": [
+      "in vitro fertilization",
+      "oocyte",
+      "meiosis",
+      "reproductive biology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Embriologia",
+      "#Embryology",
+      "#QuartaDoPorque",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ovócito maduro com o 1º corpúsculo polar: em que fase da meiose?"
+  },
+  "exemplo": false
+}

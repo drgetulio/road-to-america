@@ -1,0 +1,42 @@
+{
+  "dia": 7,
+  "exemplo": true,
+  "gancho": "Remix: só *um* cartão passa no embarque",
+  "gancho_apoio": "Três conceitos da semana e um intruso. Qual frase está certa?",
+  "imagem": {
+    "arquivo": "imagens/dia-007.svg",
+    "cena": "Toca-discos vermelho com três discos rotulados Dia 2, Dia 4 e Dia 6."
+  },
+  "questao": {
+    "vinheta": "Before Sunday rounds, a medical student reviews four flashcards from last week. Only one of them is accurate.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": { "texto": "A 9-month-old may ride forward-facing once over 9 kg", "quiz": "9 months: forward-facing", "dia": 4 },
+      "B": { "texto": "STEMI: door-to-balloon goal for primary PCI is 90 minutes or less", "quiz": "STEMI: PCI in 90 min", "dia": 2 },
+      "C": { "texto": "Lead-time bias means screening truly delays death", "quiz": "Lead-time delays death", "dia": 6 },
+      "D": { "texto": "Length-time bias favors detection of fast-growing tumors", "quiz": "Length-time: fast tumors" }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Do portão ao balão em até *90 minutos*",
+    "certa": [
+      "No *STEMI*, a reperfusão corre contra o relógio. Num hospital com hemodinâmica, a meta da *primary PCI* é abrir a artéria em até *90 minutos* do primeiro contato (120 se o paciente precisa ser transferido).",
+      "Se a PCI não vai sair em 120 minutos, entra a *fibrinolysis*, com a meta de até 30 minutos da chegada."
+    ],
+    "termos": ["door-to-balloon", "primary PCI", "lead-time bias", "rear-facing car seat"],
+    "erradas": {
+      "A": "Dia 4: a cadeirinha fica *rear-facing* o maior tempo possível, até o limite de peso e altura do fabricante. Aos 9 meses, de costas para a estrada.",
+      "C": "Dia 6: no *lead-time bias* o diagnóstico só chega mais cedo. A sobrevida parece maior, mas a morte acontece na mesma data.",
+      "D": "Intruso: o *length-time bias* pega mais os tumores lentos, que passam mais tempo na fase em que dá para detectar."
+    },
+    "macete": {
+      "frase": "*90* no balão, *de costas* na cadeirinha, *relógio adiantado* no lead-time",
+      "apoio": "Errou alguma? Volte ao dia original (2, 4 ou 6) e refaça antes do próximo remix."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de remix: três conceitos da semana e um intruso. Cada alternativa mostra o dia em que o assunto apareceu."
+  },
+  "reel": { "titulo": "Remix: só *um* cartão passa" }
+}

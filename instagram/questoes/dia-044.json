@@ -1,0 +1,94 @@
+{
+  "dia": 44,
+  "data": "2026-12-15",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Trombocitopenia induzida por heparina",
+  "conceito": "Heparin-induced thrombocytopenia: stop all heparin, start a non-heparin anticoagulant such as argatroban",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-16",
+  "gancho": "Pós-operatório de quadril e a Capitã Plaqueta chamada *às pressas* para o cruzamento",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Capitã Plaqueta, de colete e apito, está no meio de um cruzamento, conferindo uma prancheta com cara de preocupação. Num prédio da esquina, um relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta, no meio de um cruzamento, confere uma prancheta com cara de preocupação.",
+    "arquivo": "dia-044.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: um guincho leva embora o carro-seringa azul e também um carrinho-seringa menor; uma viatura em forma de flecha prende um carro marcado com dois pontos (a trombina), e o trânsito começa a fluir.",
+    "alt": "Guincha toda heparina, chama o argatroban",
+    "arquivo": "dia-044-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old woman receiving unfractionated heparin after hip replacement has a platelet count fall from 260,000 to 95,000/mm3 on postoperative day 7. Her left calf is newly swollen, and ultrasound shows femoral vein thrombosis. Heparin is discontinued.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Switch to subcutaneous enoxaparin",
+        "quiz": "Enoxaparin"
+      },
+      "B": {
+        "texto": "Start warfarin immediately",
+        "quiz": "Warfarin now"
+      },
+      "C": {
+        "texto": "Transfuse platelets",
+        "quiz": "Platelet transfusion"
+      },
+      "D": {
+        "texto": "Start an argatroban infusion",
+        "quiz": "Argatroban"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Guincha *toda* heparina, chama o *argatroban*",
+    "certa": [
+      "Queda de mais de 50% das plaquetas entre o 5º e o 10º dia de heparina, com trombose nova, é *heparin-induced thrombocytopenia*: anticorpos contra o complexo PF4-heparina ativam as plaquetas e o paciente coagula demais. Suspender a heparina não basta, porque o risco de trombose continua alto. É preciso um *non-heparin anticoagulant* como *argatroban*, um inibidor direto da trombina."
+    ],
+    "termos": [
+      "heparin-induced thrombocytopenia",
+      "PF4-heparin antibodies",
+      "argatroban",
+      "direct thrombin inhibitor"
+    ],
+    "erradas": {
+      "A": "A enoxaparina tem reação cruzada com os anticorpos da HIT; heparina de baixo peso também é heparina.",
+      "B": "Varfarina no início da HIT derruba a proteína C antes dos fatores e pode causar gangrena venosa; ela só entra com plaquetas acima de 150 mil, sobreposta.",
+      "C": "Transfundir plaqueta joga mais combustível na trombose; não se faz sem sangramento grave."
+    },
+    "macete": {
+      "frase": "No HIT, guincha *toda* heparina, até a de baixo peso, e chama a viatura do *argatroban*, que prende a trombina. Varfarina só depois das plaquetas voltarem.",
+      "apoio": "Pegadinha de prova: O NBME oferece enoxaparina como \"outra heparina mais segura\" e transfusão de plaquetas pela contagem baixa; as duas pioram a trombose.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Capitã Plaqueta: pós-operatório de quadril e quatro condutas no cruzamento, e só uma não piora o trânsito. Às 3 da manhã, a vinheta inteira vale mais que o seu palpite.",
+    "palavras_chave": [
+      "postoperative care",
+      "anticoagulation",
+      "hematology",
+      "hip replacement"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Hematologia",
+      "#Hematology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Plaquetas caíram 60% no 7º dia, com trombose: o que iniciar?"
+  },
+  "exemplo": false
+}

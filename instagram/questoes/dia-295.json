@@ -1,0 +1,96 @@
+{
+  "dia": 295,
+  "data": "2027-08-23",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estreptococos do grupo viridans",
+  "conceito": "Viridans streptococci: dextran helps adhesion to damaged valves after dental procedures",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-24",
+  "tom": null,
+  "gancho": "Mito foi ao dentista *e voltou com mais perguntas do que obturações*",
+  "gancho_apoio": "Bicho de Segunda: quatro produtos bacterianos e uma pergunta de adesão.",
+  "imagem": {
+    "arquivo": "dia-295.png",
+    "cena": "Numa estação de trem do interior, o Mito, de jaleco amassado, olheiras e copo de café, confere o relógio da plataforma: um trenzinho de cocos de mãos dadas, em cadeia, chega e desembarca diante de uma porta com um curativo.",
+    "foco": "50% 35%",
+    "alt": "Um trenzinho de cocos chega a uma porta com curativo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-295-macete.png",
+    "cena": "Na porta em forma de valva, cada coco do trenzinho despeja um potinho de calda dourada sobre o curativo de fibrina e plaquetas e fica colado ali. Mito chega com o café, tarde demais, ao lado de um açucareiro tombado.",
+    "foco": "50% 45%",
+    "alt": "Viridans: dextrana gruda na valva lesada"
+  },
+  "questao": {
+    "vinheta": "Shortly after a dental extraction, a 42-year-old man with mitral valve prolapse and regurgitation develops 3 weeks of low-grade fever, fatigue, and splinter hemorrhages. Three blood cultures grow gram-positive cocci in chains that are alpha-hemolytic, optochin resistant, and bile insoluble.",
+    "pergunta": "Which bacterial product most directly allows adhesion to his valve?",
+    "alternativas": {
+      "A": {
+        "texto": "M protein",
+        "quiz": "M protein"
+      },
+      "B": {
+        "texto": "Protein A",
+        "quiz": "Protein A"
+      },
+      "C": {
+        "texto": "Dextran",
+        "quiz": "Dextran"
+      },
+      "D": {
+        "texto": "Hyaluronic acid capsule",
+        "quiz": "Hyaluronic capsule"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Viridans: *dextrana* gruda na valva lesada",
+    "certa": [
+      "Coco gram-positivo em cadeia, *alfa-hemolítico*, resistente à optoquina e insolúvel em bile é *viridans streptococci*, da flora da boca. Depois do dentista, ele cai no sangue e usa a *dextran*, sintetizada a partir da sacarose, para grudar nos agregados de *fibrina e plaquetas* que já existem na valva lesada. O resultado é a *endocardite subaguda*."
+    ],
+    "termos": [
+      "viridans streptococci",
+      "dextran",
+      "fibrin-platelet aggregates",
+      "subacute endocarditis"
+    ],
+    "erradas": {
+      "A": "Proteína M é do estreptococo do grupo A (beta-hemolítico) e serve para escapar da fagocitose.",
+      "B": "Proteína A é do Staphylococcus aureus e prende a IgG pela porção Fc.",
+      "D": "A cápsula de ácido hialurônico também é do estreptococo do grupo A e ajuda a fugir da fagocitose."
+    },
+    "macete": {
+      "frase": "Viridans é *verde, da boca e cola com açúcar*",
+      "apoio": "O trenzinho de cocos verdes sai do dente carregando potes de calda (dextrana, feita de sacarose) e gruda no curativo de fibrina e plaquetas da valva já machucada. O Macrô chega tarde: o doce já colou. Alfa-hemólise, optoquina resistente e bile insolúvel separam o viridans do pneumococo.",
+      "fala": "Sem oxigênio eu não trabalho. Esse trenzinho trabalha com açúcar."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: o trenzinho de cocos chegou na estação, e o Mito, de plantão, quer saber o que fez eles grudarem na porta. Quatro produtos bacterianos; a vinheta tem testes de laboratório que eliminam três suspeitos.",
+    "palavras_chave": [
+      "bacterial adhesion",
+      "blood cultures",
+      "gram-positive cocci",
+      "microbiology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Cardiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cocos alfa-hemolíticos após extração dentária: o que gruda na valva?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -252,6 +252,7 @@ function page(systems) {
         <a class="c-nav__link" href="#estrutura">Estrutura da prova</a>
         <a class="c-nav__link" href="#lista">Conteúdo</a>
         <a class="c-nav__link" href="anki/">Flashcards</a>
+        <a class="c-nav__link" href="questoes/">Questões</a>
         <a class="c-nav__link" href="simulado/">Simulado</a>
         <button class="theme-btn" type="button" data-theme-toggle aria-label="Alternar tema claro e escuro"><i class="ph ph-circle-half" aria-hidden="true"></i></button>
       </div>
@@ -399,7 +400,7 @@ ${sysHtml}
   <footer class="footer">
     <div class="wrap">
       <div class="footer__legal" style="margin-top:0;padding-top:0;border-top:0">
-        <p style="margin:0"><a href="index.html">Página inicial</a> · <a href="anki/">Área do aluno: flashcards</a> · <a href="simulado/">Simulado de 30 minutos</a> · <a href="garantia.html">Termo da Garantia</a> · <a href="privacidade.html">Política de Privacidade</a></p>
+        <p style="margin:0"><a href="index.html">Página inicial</a> · <a href="anki/">Área do aluno: flashcards</a> · <a href="questoes/">Banco de questões</a> · <a href="simulado/">Simulado de 30 minutos</a> · <a href="simulado/#/completos">Simulados</a> · <a href="garantia.html">Termo da Garantia</a> · <a href="privacidade.html">Política de Privacidade</a></p>
         <p style="margin:0" data-empresa hidden></p>
         <p style="margin:0">© <span data-year>2026</span> Road to America.</p>
       </div>

@@ -1,0 +1,99 @@
+{
+  "dia": 257,
+  "data": "2027-07-16",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Hipertensão na gestação",
+  "conceito": "Hypertension in pregnancy: labetalol, nifedipine or methyldopa, never ACE inhibitors",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-17",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: a Tia Meia-Vida *pediu para ver a receita de novo*",
+  "gancho_apoio": "A Tia Meia-Vida revisa receita como você revisa questão errada: devagar e desconfiada.",
+  "imagem": {
+    "arquivo": "dia-257.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, de óculos vermelhos, lê uma receita antiga contra a luz, com cara de fiscal de alfândega. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida lê uma receita antiga contra a luz, com cara de fiscal"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-257-macete.png",
+    "cena": "Callback: num chá de bebê, a Tia Meia-Vida entrega à futura mamãe, uma cegonha simpática, um frasco da cesta e tranca na bolsa o presente confiscado, que ganhou um rinzinho desenhado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "No chá de bebê, a Tia entrega um frasco à cegonha e tranca o presente confiscado"
+  },
+  "questao": {
+    "vinheta": "A home pregnancy test is positive in a 29-year-old woman (gravida 2, para 1); ultrasound confirms an 8-week intrauterine pregnancy. Lisinopril has controlled her chronic hypertension since age 26. Today, her blood pressure reads 148/94 mm Hg; serum creatinine is normal and there is no proteinuria.",
+    "pergunta": "Which is the most appropriate change in her medication?",
+    "alternativas": {
+      "A": {
+        "texto": "Continue lisinopril",
+        "quiz": "Continue lisinopril"
+      },
+      "B": {
+        "texto": "Switch to losartan",
+        "quiz": "Switch to losartan"
+      },
+      "C": {
+        "texto": "Switch to spironolactone",
+        "quiz": "Switch to spironolactone"
+      },
+      "D": {
+        "texto": "Switch to labetalol",
+        "quiz": "Switch to labetalol"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Gestante: *IECA sai*, labetalol entra",
+    "certa": [
+      "IECA e BRA são contraindicados na gestação: no segundo e no terceiro trimestres causam lesão renal fetal, oligoidrâmnio, hipoplasia pulmonar e defeitos de ossificação do crânio, e o ideal é trocar assim que a gestação é descoberta. As opções de primeira linha nos EUA são *labetalol* e *nifedipine* de liberação prolongada; a *methyldopa* também é segura, mas é menos usada por causa da sedação. Com pressão de 148/94, o tratamento continua, com meta abaixo de 140/90."
+    ],
+    "termos": [
+      "ACE inhibitor fetotoxicity",
+      "labetalol",
+      "nifedipine",
+      "chronic hypertension in pregnancy"
+    ],
+    "erradas": {
+      "A": "Manter o *ACE inhibitor* expõe o feto à toxicidade renal; a troca deve ser feita já.",
+      "B": "A *losartan* é um BRA e tem a mesma toxicidade fetal dos IECA.",
+      "C": "A *spironolactone* tem efeito antiandrogênico e pode feminizar o feto masculino; não é usada na gestação."
+    },
+    "macete": {
+      "frase": "Na gestação, *Lá Na Maternidade*: Labetalol, Nifedipina, Metildopa",
+      "apoio": "IECA e BRA dão dano renal fetal: a Tia confisca os dois, que são gêmeos no efeito (por isso a losartana não serve de troca). Na cesta liberada ficam os três da maternidade, Labetalol, Nifedipina e Metildopa, o LNM de Lá Na Maternidade. A espironolactona também fica fora, pelo efeito antiandrogênico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Do presente errado, a Tia lembra."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Uma paciente com doença crônica bem controlada chega com uma novidade, contada na vinheta, que muda a receita. Qual é a troca certa?",
+    "palavras_chave": [
+      "chronic disease",
+      "medication review",
+      "drug safety",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Obstetricia",
+      "#Farmacologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Grávida de 8 semanas usando lisinopril: qual é a troca certa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

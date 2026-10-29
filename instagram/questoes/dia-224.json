@@ -1,0 +1,105 @@
+{
+  "dia": 224,
+  "data": "2027-06-13",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Insolação (dia 100), Hemorragia subaracnoide (dia 191), Arterite de células gigantes (dia 219)",
+  "conceito": "Remix: Exertional heat stroke + Thunderclap headache + Giant cell arteritis",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": [
+    100,
+    191,
+    219
+  ],
+  "explicacao_em": "2027-06-14",
+  "tom": null,
+  "gancho": "Linha de chegada da maratona e *a Dona Térmica de plantão* na barraca de hidratação",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 100, 191 e 219) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-224.png",
+    "cena": "Linha de chegada de uma maratona sob sol forte; Dona Térmica, ao lado da barraca de hidratação, segura um termômetro de rua e uma garrafinha de água. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, na barraca de hidratação da maratona, segura um termômetro e uma garrafinha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-224-macete.png",
+    "cena": "Callback: Dona Térmica deixa a banheira de gelo de lado e entrega uma seringa pequena de salina concentrada, com três pitadas de sal desenhadas; o termômetro da barraca marca só um pouco acima do normal. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Dona Térmica deixa a banheira de lado e entrega a seringa de salina concentrada"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman collapses after a 5-hour marathon, during which she drank water at every station. She is confused, vomits, and has a brief generalized seizure. Her rectal temperature is 38.4°C (101.1°F); BP is 118/74 mm Hg. Serum sodium is 121 mEq/L.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "100-mL bolus of 3% saline",
+        "quiz": "3% saline, 100 mL"
+      },
+      "B": {
+        "texto": "Noncontrast CT of the head",
+        "quiz": "Head CT first",
+        "dia": 191
+      },
+      "C": {
+        "texto": "Cold-water immersion at the scene",
+        "quiz": "Cold-water immersion",
+        "dia": 100
+      },
+      "D": {
+        "texto": "2-L bolus of 0.9% saline",
+        "quiz": "Normal saline, 2 L"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Maratona, muita água e convulsão: *salina 3% em bolus*",
+    "certa": [
+      "Confusão e convulsão depois de uma maratona longa, com água em todo posto e sódio de 121, é hiponatremia associada ao exercício (*exercise-associated hyponatremia*), o intruso de hoje. Com sintoma neurológico grave, a conduta é *100 mL de salina a 3% em bolus*, que pode ser repetido até duas vezes, a cada 10 minutos, se o quadro não melhorar; a meta é subir o sódio em 4 a 6 mEq/L e tirar o cérebro do inchaço. A temperatura de 38,4°C não é a da insolação."
+    ],
+    "termos": [
+      "exercise-associated hyponatremia",
+      "3% hypertonic saline bolus",
+      "cerebral edema",
+      "exertional heat stroke"
+    ],
+    "erradas": {
+      "B": "Dia 191: a TC de crânio é a regra da cefaleia em trovoada. Aqui a convulsão tem causa na mesa (sódio de 121) e o tratamento não espera a imagem; a TC fica para depois, se o quadro não fizer sentido.",
+      "C": "Dia 100: imersão em água gelada é a conduta da insolação por esforço, com temperatura retal acima de 40°C e disfunção do sistema nervoso. Com 38,4°C, o problema não é o calor.",
+      "D": "Fora dos dias revisados: soro fisiológico em grande volume piora a hiponatremia dilucional, porque o ADH ainda está alto e o rim segura a água livre."
+    },
+    "macete": {
+      "frase": "Corredor confuso: *termômetro antes da banheira*, sódio antes da tomografia. Abaixo de 40°C e com sódio de 121, quem resolve é o *bolus de salina 3%*.",
+      "apoio": "Pegadinha de prova: o NBME coloca o corredor, o calor e a banheira de gelo na sua frente. Confira a temperatura e o sódio antes: muita água com convulsão pede 100 mL de salina 3%. Bônus do dia 219: na arterite de células gigantes com risco visual, corticoide antes da biópsia.",
+      "fala": "Já vi esse caso às 3 da manhã. E às 3 da tarde, depois da maratona: termômetro primeiro, banheira só se precisar."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com a Dona Térmica, que entende de temperatura como ninguém. Uma corredora desaba depois da prova, e a vinheta traz o termômetro, a pressão e um exame de sangue. Leia todos os números antes de votar.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Emergencia",
+      "#EmergencyMedicine",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Maratona, muita água, sódio 121 e convulsão: o que fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

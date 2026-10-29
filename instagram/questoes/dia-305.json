@@ -1,0 +1,97 @@
+{
+  "dia": 305,
+  "data": "2027-09-02",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Displasia do desenvolvimento do quadril",
+  "conceito": "Developmental dysplasia of the hip: Ortolani and Barlow, ultrasound before 4 to 6 months",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-03",
+  "tom": null,
+  "gancho": "O brigadeiro sai e volta da forminha. *Qual exame enxerga isso?*",
+  "gancho_apoio": "No rodízio de quinta, a sobremesa vem com uma pergunta de pediatria.",
+  "imagem": {
+    "arquivo": "dia-305.png",
+    "cena": "O Garçom Espetinho segura quatro espetos de sobremesa; no prato à frente dele, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. A plaquinha verde e vermelha aparece de lado no bolso do colete.",
+    "foco": "50% 35%",
+    "alt": "O brigadeiro sai e volta da forminha rasa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-305-macete.png",
+    "cena": "O garçom levanta a plaquinha verde ao lado de um espeto com uma sonda de ultrassom na ponta; na telinha da sonda aparece o brigadeiro dentro da forminha rasa. Ao lado, um raio X num negatoscópio mostra só a forminha vazia, porque o doce mole não aparece, e um suspensório macio de tiras descansa na mesa.",
+    "foco": "50% 45%",
+    "alt": "Displasia do quadril antes dos 4 a 6 meses: ultrassom"
+  },
+  "questao": {
+    "vinheta": "A 7-week-old girl is seen for routine care. Her mother's first child, she was delivered by cesarean for breech presentation. The left thigh has an extra skin fold. Adduction with posterior pressure dislocates the left hip with a palpable clunk, and abduction relocates it.",
+    "pergunta": "Which study is most appropriate to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Anteroposterior pelvic radiograph",
+        "quiz": "AP pelvis radiograph"
+      },
+      "B": {
+        "texto": "Hip ultrasonography",
+        "quiz": "Hip ultrasound"
+      },
+      "C": {
+        "texto": "MRI of the hips",
+        "quiz": "MRI of the hips"
+      },
+      "D": {
+        "texto": "Technetium bone scan",
+        "quiz": "Technetium bone scan"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Displasia do quadril antes dos 4 a 6 meses: *ultrassom*",
+    "certa": [
+      "Menina, primeira gestação e apresentação pélvica, com *Barlow* e *Ortolani* positivos, tem *developmental dysplasia of the hip*. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a *hip ultrasonography*. Nessa idade o tratamento é o *Pavlik harness*, que mantém o quadril fletido e abduzido."
+    ],
+    "termos": [
+      "developmental dysplasia of the hip",
+      "Barlow and Ortolani maneuvers",
+      "hip ultrasonography",
+      "Pavlik harness"
+    ],
+    "erradas": {
+      "A": "O *raio X* só fica confiável depois dos 4 a 6 meses, quando aparece o núcleo de ossificação da cabeça femoral.",
+      "C": "A *ressonância* exige sedação e fica para casos complexos ou para conferir a redução depois do gesso.",
+      "D": "A *cintilografia* procura infecção, fratura oculta ou necrose, e não mostra a relação entre a cabeça femoral e o acetábulo."
+    },
+    "macete": {
+      "frase": "*Brigadeiro não aparece no raio X*: cabeça de cartilagem, olhe com ultrassom",
+      "apoio": "O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer (até 4 a 6 meses). Depois disso, o raio X assume.",
+      "fala": "Vai uma conduta aí, doutor? Brigadeiro mole, só o ultrassom vê."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta com sobremesa: o brigadeiro pula da forminha e volta, e o garçom trouxe quatro espetos de exame. Só um serve na idade da vinheta, e a idade está escrita em semanas, do jeito que o NBME gosta de esconder.",
+    "palavras_chave": [
+      "well-baby visit",
+      "pediatric orthopedics",
+      "hip examination",
+      "imaging choice"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quadril que sai e volta no bebê de 7 semanas: qual exame?"
+  },
+  "reel": null,
+  "exemplo": false
+}

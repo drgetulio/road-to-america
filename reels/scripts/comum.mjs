@@ -22,3 +22,7 @@ export const idsDosRoteiros = () => {
   const dados = JSON.parse(fs.readFileSync(path.join(RAIZ, "roteiros.json"), "utf8"));
   return dados.roteiros.map((r) => r.id);
 };
+
+// Reels semanais da Questão de Embarque (instagram/reels-semanais.json)
+export const ARQ_SEMANAIS = path.join(RAIZ, "..", "instagram", "reels-semanais.json");
+export const idsSemanais = () => JSON.parse(fs.readFileSync(ARQ_SEMANAIS, "utf8")).reels.map((r) => r.id);

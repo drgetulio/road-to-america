@@ -1,0 +1,87 @@
+{
+  "dia": 197,
+  "data": "2027-05-17",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de Wiskott-Aldrich",
+  "conceito": "Wiskott-Aldrich syndrome: WAS mutation with eczema, recurrent infections and small platelets",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-18",
+  "tom": null,
+  "gancho": "Bicho de Segunda com convidada: *a Capitã Plaqueta veio de visita*",
+  "gancho_apoio": "Imunologia do Step 1: a matéria que todo mundo decora em lista e esquece em ordem alfabética.",
+  "imagem": {
+    "arquivo": "dia-197.png",
+    "cena": "Capitã Plaqueta, num cruzamento vazio, consulta uma prancheta em branco e coça a cabeça por baixo do quepe. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta coça a cabeça diante de uma prancheta em branco"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-197-macete.png",
+    "cena": "Callback: a Capitã ergue um regador azul, e das gotas saem uma plaquinha pequena, um cachecol que pinica e um escudo rachado. Fundo limpo.",
+    "alt": "Do regador azul da Capitã saem uma plaquinha pequena, um cachecol que pinica e um escudo rachado"
+  },
+  "questao": {
+    "vinheta": "A 14-month-old boy has had recurrent otitis media, two pneumonias, and eczema on his face and flexural areas. He has bloody diarrhea and easy bruising. Platelet count is 35,000/mm3, and platelets are small on the blood smear. A maternal uncle had similar problems.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Wiskott-Aldrich syndrome",
+        "quiz": "Wiskott-Aldrich"
+      },
+      "B": {
+        "texto": "Bernard-Soulier syndrome",
+        "quiz": "Bernard-Soulier"
+      },
+      "C": {
+        "texto": "Immune thrombocytopenia",
+        "quiz": "ITP"
+      },
+      "D": {
+        "texto": "Hyper-IgE syndrome",
+        "quiz": "Hyper-IgE syndrome"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Plaqueta pequena, eczema e infecção: *Wiskott-Aldrich*",
+    "certa": [
+      "A *Wiskott-Aldrich syndrome* é ligada ao X, por mutação no gene *WAS*, que organiza o citoesqueleto de actina de linfócitos e plaquetas. A tríade é *thrombocytopenia* com plaquetas pequenas, *eczema* e infecções de repetição. Costuma ter IgM baixa e IgA e IgE altas, maior risco de autoimunidade e linfoma, e a cura é o transplante de células-tronco."
+    ],
+    "termos": [
+      "Wiskott-Aldrich syndrome",
+      "microthrombocytopenia",
+      "eczema",
+      "X-linked"
+    ],
+    "erradas": {
+      "B": "A síndrome de Bernard-Soulier tem plaquetas gigantes por falta de GPIb, sem imunodeficiência nem eczema.",
+      "C": "A PTI tem plaquetas normais ou grandes e não causa eczema nem infecções de repetição.",
+      "D": "A síndrome de hiper-IgE (Job) tem eczema e abscessos frios, mas as plaquetas são normais."
+    },
+    "macete": {
+      "frase": "*WATER*: *W*iskott-*A*ldrich com *T*hrombocytopenia, *E*czema e *R*ecurrent infections. A assinatura é a *plaqueta miniatura*: a Capitã Plaqueta encolheu. Na Bernard-Soulier e na PTI, a plaqueta é grande.",
+      "apoio": "O NBME separa pelo tamanho da plaqueta: pequena na Wiskott-Aldrich, grande na Bernard-Soulier e na PTI; menino com tio materno afetado sugere herança ligada ao X.",
+      "fala": "Parou, colou... encolheu! Com plaqueta tamanho P, nem apito resolve."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com a Capitã Plaqueta de visita. Um menino pequeno e uma lista de achados que a vinheta traz um por um. Monte o quebra-cabeça antes de votar.",
+    "palavras_chave": [
+      "pediatrics",
+      "blood smear",
+      "family history",
+      "Step 1 immunology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Menino, eczema, otites e plaqueta pequena: qual é?"
+  },
+  "exemplo": false
+}

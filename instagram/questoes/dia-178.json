@@ -1,0 +1,88 @@
+{
+  "dia": 178,
+  "data": "2027-04-28",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Doença de Parkinson",
+  "conceito": "Parkinson disease: loss of dopaminergic neurons in the substantia nigra pars compacta, Lewy bodies with alpha-synuclein",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-29",
+  "tom": null,
+  "gancho": "A fábrica de chocolate do cérebro *apagou* metade das luzes",
+  "gancho_apoio": "Seu Allen abriu a planta da fábrica para ver o que entope os corredores.",
+  "imagem": {
+    "arquivo": "dia-178.png",
+    "cena": "Uma fábrica de chocolate escuro em corte, estilo manual de montagem, com um caminhãozinho de entregas parado na porta; Seu Allen, de prancheta, confere a planta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Fábrica de chocolate escuro em corte com um caminhão de entregas na porta; Seu Allen confere a planta."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-178-macete.png",
+    "cena": "Callback: metade da fábrica está de luz apagada e com as paredes desbotadas, e nos corredores que restam se amontoam caixas redondas cor-de-rosa; Seu Allen tira uma delas do caminho. Fundo limpo.",
+    "alt": "Metade da fábrica apagada e desbotada; caixas cor-de-rosa lotam os corredores e Seu Allen tira uma."
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man has a 2-year history of a resting tremor in his right hand that lessens with movement, slowness when buttoning shirts, and cogwheel rigidity. His symptoms improve markedly with carbidopa-levodopa.",
+    "pergunta": "Which finding is most likely in his substantia nigra pars compacta?",
+    "alternativas": {
+      "A": {
+        "texto": "Neurofibrillary tangles of hyperphosphorylated tau",
+        "quiz": "Tau tangles"
+      },
+      "B": {
+        "texto": "Pigmented neuron loss with Lewy bodies",
+        "quiz": "Lewy bodies"
+      },
+      "C": {
+        "texto": "Round argyrophilic tau inclusions (Pick bodies)",
+        "quiz": "Pick bodies"
+      },
+      "D": {
+        "texto": "Intranuclear huntingtin aggregates",
+        "quiz": "Huntingtin aggregates"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Substância negra pálida e *corpos de Lewy*",
+    "certa": [
+      "Na *Parkinson disease* morrem os neurônios dopaminérgicos pigmentados da *substantia nigra pars compacta*, que fica pálida, e os que sobram têm *Lewy bodies*, inclusões citoplasmáticas eosinofílicas de *alpha-synuclein*. Com menos dopamina no estriado, a via direta (D1) perde força e a indireta (D2) fica sem freio: menos movimento, tremor de repouso e rigidez."
+    ],
+    "termos": [
+      "substantia nigra pars compacta",
+      "Lewy bodies",
+      "alpha-synuclein",
+      "dopaminergic neurons"
+    ],
+    "erradas": {
+      "A": "Emaranhados neurofibrilares de tau hiperfosforilada são marca da doença de Alzheimer, no córtex e no hipocampo.",
+      "C": "Corpos de Pick (tau redonda) são da demência frontotemporal, com atrofia frontal e temporal.",
+      "D": "Agregados de huntingtina, por expansão CAG, são da doença de Huntington, com perda no núcleo caudado e coreia."
+    },
+    "macete": {
+      "frase": "A *substância negra* é a fábrica de chocolate do movimento: ficou pálida e lotada de caixas de *alfa-sinucleína*",
+      "apoio": "Pars compacta, alfa-sinucleína e menos dopamina no estriado: via direta fraca, indireta sem freio.",
+      "fala": "Sobrou peça? Sobraram caixas de alfa-sinucleína no corredor. Isso é corpo de Lewy."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na fábrica de chocolate do cérebro. O exame neurológico e a resposta ao remédio estão na vinheta. O que o patologista vai ver no cérebro?",
+    "palavras_chave": [
+      "resting tremor",
+      "bradykinesia",
+      "cogwheel rigidity",
+      "levodopa response"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tremor de repouso que melhora com levodopa: qual achado na substância negra?"
+  },
+  "exemplo": false
+}

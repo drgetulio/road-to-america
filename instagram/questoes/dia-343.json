@@ -1,0 +1,107 @@
+{
+  "dia": 343,
+  "data": "2027-10-10",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix da saúde mental: Transtorno de pânico (dia 46), Episódio depressivo maior (dia 74), Esquizofrenia e transtornos relacionados (dia 137)",
+  "conceito": "Mental health remix: Panic disorder + Major depressive episode + Psychotic disorders by duration",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": "Dia Mundial da Saúde Mental (10/10): tom acolhedor.",
+  "remix_de": [
+    46,
+    74,
+    137
+  ],
+  "explicacao_em": "2027-10-11",
+  "tom": "acolhedor",
+  "cvv": true,
+  "gancho": "Dia Mundial da Saúde Mental: *hoje a revisão é com calma*",
+  "gancho_apoio": "Revisão de domingo com os dias 46, 74 e 137, num só caso.",
+  "imagem": {
+    "arquivo": "dia-343.png",
+    "cena": "Sala iluminada pelo sol, com plantas; a Dona Bússola, serena, ao lado de três almofadas, cada uma com um ícone suave: um coração com ondas leves, uma pequena nuvem de chuva e uma ampulheta; num canto, um vinil pequeno encostado. Tom acolhedor.",
+    "foco": "50% 35%",
+    "alt": "Dia Mundial da Saúde Mental: hoje a revisão é com calma"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-343-macete.png",
+    "cena": "Callback: um alarme de incêndio na parede é ajustado com uma pequena chave de fenda; a nuvenzinha de chuva começa a se abrir num pedaço de céu; uma trilha de pegadas atravessa sem pressa um túnel iluminado, e o ponteiro da Dona Bússola fica firme.",
+    "foco": "50% 45%",
+    "alt": "Crises que chegam ao pico em minutos: transtorno de pânico"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman has had five episodes in 2 months of sudden palpitations, trembling, and fear of dying that peak within minutes and have no trigger; one woke her from sleep. For a month she has worried constantly about the next one. Her mood and sleep are otherwise normal. ECG and TSH are normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Panic disorder",
+        "quiz": "Panic disorder",
+        "dia": 46
+      },
+      "B": {
+        "texto": "Generalized anxiety disorder",
+        "quiz": "Generalized anxiety"
+      },
+      "C": {
+        "texto": "Major depressive disorder",
+        "quiz": "Major depression",
+        "dia": 74
+      },
+      "D": {
+        "texto": "Illness anxiety disorder",
+        "quiz": "Illness anxiety"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Crises que chegam ao pico em minutos: *transtorno de pânico*",
+    "certa": [
+      "Crises inesperadas e repetidas de palpitação, tremor e medo de morrer, que chegam ao pico em minutos, inclusive durante o sono, seguidas de pelo menos um mês de preocupação com a próxima crise, definem o *panic disorder* (dia 46). O humor e o sono normais afastam o episódio depressivo maior (dia 74), e o ECG e o TSH normais afastam causa cardíaca e tireoidiana. O tratamento de longo prazo combina um *SSRI* com *cognitive behavioral therapy*."
+    ],
+    "termos": [
+      "panic disorder",
+      "unexpected panic attacks",
+      "1 month of persistent worry",
+      "SSRI plus CBT"
+    ],
+    "erradas": {
+      "B": "No transtorno de ansiedade generalizada, a preocupação é difusa, com vários temas, na maioria dos dias por 6 meses, e não vem em crises que chegam ao pico em minutos.",
+      "C": "O episódio depressivo maior (dia 74) pede humor deprimido ou perda de interesse por 2 semanas; aqui o humor e o sono estão normais.",
+      "D": "No transtorno de ansiedade de doença, a pessoa se preocupa em ter uma doença grave, sem crises agudas de sintomas físicos."
+    },
+    "macete": {
+      "frase": "*Pico em minutos e medo da próxima*: é pânico, e não a ansiedade do dia inteiro",
+      "apoio": "A crise de pânico sobe e desce em minutos; o transtorno aparece quando as crises se repetem sem gatilho e a pessoa passa a viver com medo da próxima. A ansiedade generalizada é um ruído de fundo que dura meses. Bônus do dia 137: nos transtornos psicóticos, é a duração dos sintomas que separa um diagnóstico do outro.",
+      "fala": "Com calma, o norte aparece."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial da Saúde Mental. Revisão de domingo com calma: transtorno de pânico (dia 46), episódio depressivo maior (dia 74) e transtornos psicóticos (dia 137). Uma questão sobre nomear com cuidado o que a paciente sente. Se você precisar conversar, procure alguém de confiança ou o CVV, no 188.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SaudeMental",
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crises com pico em minutos e medo da próxima há 1 mês: qual diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

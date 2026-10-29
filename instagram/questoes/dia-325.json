@@ -1,0 +1,96 @@
+{
+  "dia": 325,
+  "data": "2027-09-22",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Angiotensina II e TFG",
+  "conceito": "Angiotensin II: constricts the efferent arteriole to preserve GFR",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-23",
+  "tom": null,
+  "gancho": "Remédio novo e *o jardim do Seu Néfron secou* em duas semanas",
+  "gancho_apoio": "Na Quarta do Porquê, o Seu Néfron descobre quem segurava a pressão da mangueira.",
+  "imagem": {
+    "arquivo": "dia-325.png",
+    "cena": "Seu Néfron no quintal da repartição, de gravata e óculos, rega o jardim com uma mangueira de jato fraquinho, com setinhas de manual de montagem em volta da torneira e da mangueira; na outra mão, um frasco de remédio novo; as plantas murcham e, do outro lado do muro, um anão de jardim continua sequinho.",
+    "foco": "50% 35%",
+    "alt": "Remédio novo e o jardim do Seu Néfron secou em duas semanas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-325-macete.png",
+    "cena": "Callback: num primeiro quadro, um ajudante em forma de grampo navy, de quepe, aperta a ponta da mangueira e o jato vai longe e molha o anão de jardim do outro lado; num segundo quadro, o frasco de remédio afasta o ajudante, a ponta fica solta e o jato cai aos pés do Seu Néfron.",
+    "foco": "50% 45%",
+    "alt": "Angiotensina II aperta a eferente e segura a TFG"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man with hypertension has bilateral renal artery stenosis on imaging. Two weeks after starting lisinopril, his serum creatinine rises from 1.1 to 2.4 mg/dL. His blood pressure has fallen to 118/72 mm Hg, and the urine dipstick and sediment are bland.",
+    "pergunta": "Loss of which effect most directly explains the decrease in his glomerular filtration rate?",
+    "alternativas": {
+      "A": {
+        "texto": "Constriction of the afferent arteriole by angiotensin II",
+        "quiz": "Afferent constriction (Ang II)"
+      },
+      "B": {
+        "texto": "Constriction of the efferent arteriole by angiotensin II",
+        "quiz": "Efferent constriction (Ang II)"
+      },
+      "C": {
+        "texto": "Dilation of the afferent arteriole by prostaglandins",
+        "quiz": "Afferent dilation (PGs)"
+      },
+      "D": {
+        "texto": "Stimulation of aldosterone secretion",
+        "quiz": "Aldosterone secretion"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Angiotensina II *aperta a eferente* e segura a TFG",
+    "certa": [
+      "Na estenose bilateral de artéria renal, a pressão que chega ao glomérulo é baixa, e quem segura a TFG é a *angiotensin II*, que contrai preferencialmente a *efferent arteriole* e aumenta a pressão hidrostática do capilar glomerular. O IECA tira essa angiotensina, a eferente relaxa e a filtração despenca, o que aparece como subida da creatinina. Por isso IECA e BRA são evitados na estenose bilateral e pedem creatinina de controle 1 a 2 semanas depois do início."
+    ],
+    "termos": [
+      "angiotensin II",
+      "efferent arteriole constriction",
+      "bilateral renal artery stenosis",
+      "filtration fraction"
+    ],
+    "erradas": {
+      "A": "O efeito da angiotensina II na aferente é pequeno; perdê-lo aumentaria o fluxo para o glomérulo, e não reduziria a TFG.",
+      "C": "As *prostaglandinas* dilatam a aferente; quem tira esse efeito é o AINE, e não o IECA.",
+      "D": "Menos *aldosterona* explica a hipercalemia do IECA, mas não a queda da filtração."
+    },
+    "macete": {
+      "frase": "*Angiotensina II é o polegar na ponta da mangueira*: aperta a saída e o jato vai longe",
+      "apoio": "Todo brasileiro já apertou a ponta da mangueira para molhar o irmão do outro lado do quintal: isso é a angiotensina II na arteríola eferente. A ponta é a eferente e o jato é a TFG. Na estenose bilateral, a TFG depende desse polegar; tirou com o IECA, o jato cai, a creatinina sobe e o jardim do Seu Néfron seca.",
+      "fala": "Sem carimbo, não sai. Sem polegar, não filtra."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê no quintal: o Seu Néfron trocou de remédio e o jardim secou em duas semanas. Quatro efeitos possíveis, e o NBME sabe que as duas arteríolas do glomérulo viram a mesma palavra depois da décima questão de renal.",
+    "palavras_chave": [
+      "renal physiology",
+      "hypertension",
+      "medication effect",
+      "glomerular filtration"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estenose renal bilateral e creatinina dobrou com lisinopril: o que se perdeu?"
+  },
+  "reel": null,
+  "exemplo": false
+}

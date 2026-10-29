@@ -1,0 +1,100 @@
+{
+  "dia": 337,
+  "data": "2027-10-04",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Encefalite herpética",
+  "conceito": "HSV-1 encephalitis: temporal lobe involvement, CSF PCR confirms",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-05",
+  "tom": null,
+  "gancho": "Inquilino novo no prédio, *sem RG*: como identificar?",
+  "gancho_apoio": "Bicho de Segunda: dia de mudança no prédio e quatro jeitos de conferir o documento do inquilino.",
+  "imagem": {
+    "arquivo": "dia-337.png",
+    "cena": "Macrô na portaria de um prédio em dia de mudança, com a comanda em branco no bolso; um inquilino misterioso de capuz, com uma mala, entra pela porta da frente; caixas de mudança vazias no chão.",
+    "foco": "50% 35%",
+    "alt": "Macrô recebe um inquilino misterioso de capuz no prédio"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-337-macete.png",
+    "cena": "Callback: o Macrô opera uma copiadora de papelaria que solta uma pilha enorme de cópias de uma dupla hélice de DNA, como xerox de apostila; uma seringa de soro com escudo verde já está a caminho do prédio.",
+    "foco": "50% 45%",
+    "alt": "Encefalite herpética: CSF PCR confirma, aciclovir não espera"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old man has 3 days of fever, headache, and personality change, and today had a focal seizure. MRI shows T2 hyperintensity in the left medial temporal lobe. CSF has 110 lymphocytes/mm³, many red blood cells, elevated protein, and normal glucose.",
+    "pergunta": "Which test is most likely to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "CSF India ink stain",
+        "quiz": "CSF India ink"
+      },
+      "B": {
+        "texto": "CSF PCR for HSV DNA",
+        "quiz": "CSF HSV PCR"
+      },
+      "C": {
+        "texto": "CSF VDRL",
+        "quiz": "CSF VDRL"
+      },
+      "D": {
+        "texto": "CSF Gram stain and culture",
+        "quiz": "CSF Gram stain/culture"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Encefalite herpética: *CSF PCR* confirma, aciclovir não espera",
+    "certa": [
+      "Febre, alteração de comportamento, convulsão focal e lesão no lobo temporal medial são a cara da *HSV-1 encephalitis*. O líquor tem linfócitos, hemácias (necrose hemorrágica) e glicose normal. A *CSF PCR for HSV DNA* confirma, com sensibilidade e especificidade acima de 95%, e o *IV acyclovir* começa antes do resultado."
+    ],
+    "termos": [
+      "HSV-1 encephalitis",
+      "temporal lobe",
+      "CSF PCR",
+      "IV acyclovir"
+    ],
+    "erradas": {
+      "A": "Tinta da China busca Cryptococcus, de evolução subaguda no imunossuprimido, sem predileção pelo lobo temporal.",
+      "C": "VDRL no líquor investiga neurossífilis, de evolução lenta, sem convulsão aguda com lesão temporal hemorrágica.",
+      "D": "Gram e cultura servem para meningite bacteriana, com neutrófilos e glicose baixa; o HSV quase nunca cresce em cultura de líquor."
+    },
+    "macete": {
+      "frase": "*PCR é a xerox da véspera da prova*: tira milhões de cópias do DNA do HSV",
+      "apoio": "O HSV-1 mora de favor no gânglio trigeminal e um dia se muda para o lobo temporal medial, o andar das memórias: febre, mudança de comportamento, convulsão focal e hemácias no líquor. A PCR do líquor copia o DNA do vírus até aparecer, como a xerox da apostila na véspera da prova. Aciclovir IV começa antes do resultado.",
+      "fala": "Comi, mostrei, avisei. E tirei cópia."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda em dia de mudança: um inquilino de capuz entrou no prédio sem RG, e o Macrô, de porteiro, quer conferir o documento. Quatro exames de líquor, e a vinheta tem a imagem que diz qual andar ele ocupou.",
+    "palavras_chave": [
+      "neurology",
+      "fever",
+      "cerebrospinal fluid",
+      "diagnostic testing"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Neurologia",
+      "#Neurology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, convulsão focal e lobo temporal aceso na RM: qual exame confirma?"
+  },
+  "reel": null,
+  "exemplo": false
+}

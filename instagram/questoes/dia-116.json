@@ -1,0 +1,97 @@
+{
+  "dia": 116,
+  "data": "2027-02-25",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Diabetes gestacional",
+  "conceito": "Gestational diabetes screening at 24 to 28 weeks with an oral glucose test",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-26",
+  "tom": null,
+  "gancho": "O garçom chegou com o *espeto doce* às 26 semanas",
+  "gancho_apoio": "Gestante de baixo risco, um teste de 50 g alterado e um de 3 horas. O NBME adora contar sininho; você adora contar quantas questões faltam no bloco.",
+  "imagem": {
+    "arquivo": "dia-116.png",
+    "cena": "Garçom Espetinho chega à mesa com um espeto de abacaxi assado com canela; na parede, quatro sininhos de cobre enfileirados, todos parados. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho com um espeto de abacaxi com canela; quatro sininhos parados na parede."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-116-macete.png",
+    "cena": "Callback: três dos quatro sininhos da parede tocam com ondinhas de som e só um fica parado, enquanto um personagem redondo em forma de placenta segura um escudo que impede chaves douradas de abrir as portinhas das células. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Três dos quatro sininhos tocam; um personagem-placenta bloqueia com um escudo as chaves douradas."
+  },
+  "questao": {
+    "vinheta": "A 29-year-old woman, gravida 1, at 26 weeks' gestation has had an uncomplicated pregnancy. Her prepregnancy BMI was 23 kg/m2. Her 50-g, 1-hour glucose screen is 152 mg/dL. On the follow-up 100-g, 3-hour test, plasma glucose is: fasting 98, 1 hour 192, 2 hours 168 and 3 hours 130 mg/dL.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Normal insulin resistance of pregnancy",
+        "quiz": "Normal pregnancy change"
+      },
+      "B": {
+        "texto": "Overt type 2 diabetes mellitus",
+        "quiz": "Overt type 2 diabetes"
+      },
+      "C": {
+        "texto": "Gestational diabetes mellitus",
+        "quiz": "Gestational diabetes"
+      },
+      "D": {
+        "texto": "Renal glycosuria of pregnancy",
+        "quiz": "Renal glycosuria"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Diabetes gestacional: rastreio entre *24 e 28 semanas*",
+    "certa": [
+      "O rastreio do diabetes gestacional é feito entre 24 e 28 semanas; no esquema em dois passos, o teste de 50 g sem jejum alterado leva ao teste de 100 g em 3 horas. Pelos limites de Carpenter-Coustan (95, 180, 155 e 140 mg/dL), dois ou mais valores alterados fecham o diagnóstico, e aqui são três. O tratamento começa com orientação alimentar e atividade física, e a insulina é a primeira escolha se precisar de remédio."
+    ],
+    "termos": [
+      "gestational diabetes mellitus",
+      "glucose challenge test",
+      "Carpenter-Coustan criteria",
+      "3-hour oral glucose tolerance test"
+    ],
+    "erradas": {
+      "A": "A resistência à insulina da gestação existe, mas dois ou mais valores acima dos limites já definem diabetes gestacional.",
+      "B": "Diabetes prévio exige jejum de 126 mg/dL ou mais, A1c de 6,5% ou mais ou glicemia aleatória de 200 mg/dL ou mais, em geral no início do pré-natal.",
+      "D": "A glicosúria da gestação vem do aumento da filtração renal, com glicemia normal; aqui a glicemia está alterada."
+    },
+    "macete": {
+      "frase": "Provinha de 50 g, rodízio de 100 g e *dois sininhos* tocando",
+      "apoio": "Pegadinha de prova: O NBME cobra o momento do rastreio (24 a 28 semanas, ou na primeira consulta se houver fatores de risco), a regra de dois valores no teste de 100 g e a insulina como primeira escolha de remédio.",
+      "fala": "Dois sininhos tocaram? Fecha a conta, doutor."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, espeto de obstetrícia: gestante de baixo risco faz o rastreio na janela certa. O teste de 3 horas tem quatro números. Quantos passaram do ponto?",
+    "palavras_chave": [
+      "26 weeks",
+      "glucose screen",
+      "3-hour glucose test",
+      "prenatal care"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Obstetricia",
+      "#Obstetrics",
+      "#Diabetes"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Teste de 100 g com três valores altos às 26 semanas: diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

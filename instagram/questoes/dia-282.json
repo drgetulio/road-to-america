@@ -1,0 +1,97 @@
+{
+  "dia": 282,
+  "data": "2027-08-10",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Estado de mal epiléptico",
+  "conceito": "Status epilepticus: IV lorazepam first, then fosphenytoin, levetiracetam or valproate",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-11",
+  "tom": null,
+  "gancho": "Três da manhã no vestiário do estádio: *quem bate o primeiro pênalti?*",
+  "gancho_apoio": "Plantão de Terça: a prancheta tem quatro batedores e a ordem importa.",
+  "imagem": {
+    "arquivo": "dia-282.png",
+    "cena": "Três da manhã no vestiário de um estádio: Dona Térmica, a garrafa térmica, com apito de técnico no pescoço, segura uma prancheta tática com quatro fichas de jogador redondas (navy, vermelha, amarela e verde). Na parede, um relógio redondo sem números marca 3 horas.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica na prancheta com quatro batedores"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-282-macete.png",
+    "cena": "Na mesma prancheta, a ficha navy, agora com forma de travesseiro macio, cobra primeiro e a bola entra; as fichas vermelha e amarela esperam no banco como segundo tempo, e a verde aguarda no vestiário como prorrogação. O cronômetro para e Dona Térmica comemora erguendo o café.",
+    "foco": "50% 45%",
+    "alt": "Mais de 5 minutos: benzodiazepínico primeiro"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man who has epilepsy arrives by ambulance in a generalized tonic-clonic seizure that started 8 minutes ago. Oxygen is given, the airway is supported, and IV access is obtained. Fingerstick glucose is 96 mg/dL. The seizure continues.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Intravenous lorazepam",
+        "quiz": "IV lorazepam"
+      },
+      "B": {
+        "texto": "Intravenous fosphenytoin",
+        "quiz": "IV fosphenytoin"
+      },
+      "C": {
+        "texto": "Intravenous valproate",
+        "quiz": "IV valproate"
+      },
+      "D": {
+        "texto": "Propofol infusion",
+        "quiz": "Propofol infusion"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Mais de 5 minutos: *benzodiazepínico primeiro*",
+    "certa": [
+      "Crise que dura mais de 5 minutos já é *status epilepticus*. Com via aérea, oxigênio e glicemia resolvidos, a primeira droga é um *benzodiazepínico*: *lorazepam IV* (ou midazolam IM, ou diazepam IV). Se a crise continuar, entra a segunda linha (fosphenytoin, levetiracetam ou valproate) e, depois dela, anestesia com intubação."
+    ],
+    "termos": [
+      "status epilepticus",
+      "lorazepam",
+      "second-line antiseizure drug",
+      "refractory status epilepticus"
+    ],
+    "erradas": {
+      "B": "Fosfenitoína é segunda linha e entra depois do benzodiazepínico.",
+      "C": "Valproato também é segunda linha e não vem antes do benzodiazepínico.",
+      "D": "Propofol é para o estado de mal refratário, depois da falha das duas primeiras linhas."
+    },
+    "macete": {
+      "frase": "No pênalti do status, *o batedor oficial é o benzo*",
+      "apoio": "Passou de 5 minutos, é estado de mal: o primeiro a chutar é o benzodiazepínico (lorazepam IV, ou midazolam IM se não houver acesso). O segundo tempo é fosfenitoína, levetiracetam ou valproato; a prorrogação é a anestesia com propofol ou midazolam em infusão.",
+      "fala": "Já vi esse caso às 3 da manhã. O benzo sempre bate primeiro."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça no vestiário: a Dona Térmica tem quatro batedores na prancheta e um cronômetro correndo. Vale lembrar que \"next step\" no NBME é o próximo mesmo, e não o terceiro que você já está planejando às 3 da manhã.",
+    "palavras_chave": [
+      "emergency department",
+      "neurology",
+      "time-critical care",
+      "pharmacotherapy"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Neurologia",
+      "#Neurology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crise há 8 minutos e acesso venoso pronto: qual remédio primeiro?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,94 @@
+{
+  "dia": 48,
+  "data": "2026-12-19",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Sensibilidade e especificidade",
+  "conceito": "SnNOut and SpPIn: a negative highly sensitive test rules out, a positive highly specific test rules in",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-20",
+  "gancho": "O Viés achou um teste *novinho* na cozinha da padaria",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, examina com a lupa um detector de fumaça novinho no teto da cozinha de uma padaria.",
+    "foco": "50% 35%",
+    "alt": "O Viés, atrás de uma tabela 2x2, examina com a lupa um detector de fumaça novinho no teto de uma cozinha.",
+    "arquivo": "dia-048.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o detector de fumaça está em silêncio, com a luzinha verde, e a cozinha inteira está calma e sem fogo; o Viés relaxa encostado na tabela 2x2 tomando um cafezinho.",
+    "alt": "SnNOut: sensível e negativo, fora",
+    "arquivo": "dia-048-macete.png"
+  },
+  "questao": {
+    "vinheta": "A new rapid blood test for deep venous thrombosis has 99% sensitivity and 60% specificity. A 45-year-old woman with low pretest probability of deep venous thrombosis is tested, and the result is negative.",
+    "pergunta": "Which is the most appropriate conclusion?",
+    "alternativas": {
+      "A": {
+        "texto": "The positive predictive value is 99%",
+        "quiz": "PPV is 99%"
+      },
+      "B": {
+        "texto": "Deep venous thrombosis is effectively ruled in",
+        "quiz": "DVT ruled in"
+      },
+      "C": {
+        "texto": "Specificity is too low to trust a negative",
+        "quiz": "Low Sp, can't trust it"
+      },
+      "D": {
+        "texto": "Deep venous thrombosis is effectively excluded",
+        "quiz": "DVT ruled out"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*SnNOut*: sensível e negativo, *fora*",
+    "certa": [
+      "Um teste muito *sensitive* quase não deixa doente passar como negativo, então quase não há falso negativo. Por isso um resultado negativo num teste sensível, em quem tem baixa probabilidade pré-teste, praticamente *rules out* a doença (*SnNOut*). A especificidade baixa só significa muitos falsos positivos, o que pesa quando o resultado é positivo."
+    ],
+    "termos": [
+      "sensitivity",
+      "SnNOut",
+      "SpPIn",
+      "pretest probability"
+    ],
+    "erradas": {
+      "A": "Sensibilidade não é valor preditivo positivo; com especificidade de 60%, o VPP é baixo.",
+      "B": "Resultado negativo não confirma doença; confirmar é papel de um positivo num teste muito específico (SpPIn).",
+      "C": "Especificidade baixa afeta a confiança no positivo, não no negativo; o negativo depende da sensibilidade."
+    },
+    "macete": {
+      "frase": "Detector sensível apita até com pão na chapa; quando fica *mudo*, pode ir dormir: não tem fogo. *SnNOut*.",
+      "apoio": "Pegadinha de prova: O NBME embaralha sensibilidade com valor preditivo e pergunta qual teste usar para rastrear (sensível) e qual para confirmar (específico).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: um teste rápido novo, uma paciente e um resultado. Antes de concluir, lembre a dupla de siglas que todo mundo decora e metade troca na hora da prova.",
+    "palavras_chave": [
+      "new diagnostic test",
+      "deep venous thrombosis",
+      "test interpretation",
+      "biostatistics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Teste 99% sensível negativo em paciente de baixo risco: o que concluir?"
+  },
+  "exemplo": false
+}

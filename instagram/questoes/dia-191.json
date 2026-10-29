@@ -1,0 +1,88 @@
+{
+  "dia": 191,
+  "data": "2027-05-11",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Hemorragia subaracnoide",
+  "conceito": "Thunderclap headache: CT first, lumbar puncture for xanthochromia if CT is negative",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-12",
+  "tom": null,
+  "gancho": "Três da manhã, cefaleia na triagem e *a vontade de ir dormir* brigando com o protocolo",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-191.png",
+    "cena": "Corredor do pronto-socorro às 3 da manhã, com o relógio sem números. Dona Térmica, sonolenta, segura uma prancheta em branco e olha para a porta de saída entreaberta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, sonolenta, olha a porta de saída entreaberta do pronto-socorro"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-191-macete.png",
+    "cena": "Callback: Dona Térmica fecha a porta de saída e enche um copinho de vidro com uma água levemente amarelada numa pequena fonte de pedra. Fundo limpo.",
+    "alt": "Dona Térmica fecha a porta de saída e enche um copinho com água amarelada"
+  },
+  "questao": {
+    "vinheta": "Nine hours ago, while carrying a heavy box, a 44-year-old woman felt an abrupt, severe headache that reached maximal intensity in under a minute. She vomited once. Examination shows neck stiffness and no focal neurologic deficits. Noncontrast head CT shows no abnormalities.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Discharge with oral sumatriptan",
+        "quiz": "Discharge with triptan"
+      },
+      "B": {
+        "texto": "Repeat noncontrast head CT in 24 hours",
+        "quiz": "Repeat CT in 24 h"
+      },
+      "C": {
+        "texto": "Outpatient brain MRI in 2 weeks",
+        "quiz": "Outpatient MRI in 2 wk"
+      },
+      "D": {
+        "texto": "Lumbar puncture for xanthochromia",
+        "quiz": "Lumbar puncture"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "TC normal depois de 6 horas: *punção lombar*",
+    "certa": [
+      "Cefaleia que atinge o máximo em menos de 1 minuto (*thunderclap headache*) é hemorragia subaracnoide até prova em contrário. A TC sem contraste é o primeiro exame; feita depois de 6 horas do início, uma TC normal não exclui o sangramento. O próximo passo é a *lumbar puncture*, buscando *xanthochromia* e hemácias que não diminuem do primeiro ao último tubo."
+    ],
+    "termos": [
+      "thunderclap headache",
+      "subarachnoid hemorrhage",
+      "lumbar puncture",
+      "xanthochromia"
+    ],
+    "erradas": {
+      "A": "Dar alta com triptano trata como enxaqueca uma cefaleia em trovoada com rigidez de nuca, sem excluir sangramento.",
+      "B": "Repetir a TC em 24 horas atrasa o diagnóstico, e a sensibilidade da TC cai com o passar das horas.",
+      "C": "Ressonância ambulatorial em 2 semanas deixa sem diagnóstico um aneurisma que pode sangrar de novo nos primeiros dias."
+    },
+    "macete": {
+      "frase": "Trovoada com TC limpa: *a foto não viu, então vá olhar a água*. Depois de 6 horas, TC normal não exclui sangramento: punção lombar atrás da *xantocromia*, o amarelinho do sangue que já se desmanchou no líquor.",
+      "apoio": "O NBME mostra TC normal horas depois do início e oferece alta com analgésico; com cefaleia em trovoada, o próximo passo é a punção lombar (alguns protocolos aceitam angiotomografia).",
+      "fala": "Já vi esse caso às 3 da manhã: foto limpa não é alta."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na neurologia, com a Dona Térmica. Uma cefaleia forte, um exame de imagem já feito e quatro caminhos. O horário de início e o resultado da imagem estão na vinheta, e é deles que sai a conduta.",
+    "palavras_chave": [
+      "headache",
+      "emergency department",
+      "neuroimaging",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Trovoada há 9 h e TC normal: pode dar alta?"
+  },
+  "exemplo": false
+}

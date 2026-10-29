@@ -1,0 +1,100 @@
+{
+  "dia": 223,
+  "data": "2027-06-12",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Confidencialidade do adolescente",
+  "conceito": "Adolescent STI testing and treatment: confidential, no parental consent needed",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": "Dia dos Namorados (12/6).",
+  "remix_de": null,
+  "explicacao_em": "2027-06-13",
+  "tom": null,
+  "gancho": "Dia dos Namorados e a Dona Bússola *de plantão no consultório*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-223.png",
+    "cena": "Uma ponte de parque com cadeadinhos coloridos, no Dia dos Namorados, termina na porta de um consultório, onde Dona Bússola espera com o caderninho em branco. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A ponte dos cadeados termina na porta do consultório, onde Dona Bússola espera"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-223-macete.png",
+    "cena": "Callback: a porta do consultório fecha com um cadeado em forma de coração, e por baixo dela sai uma receita dobrada; Dona Bússola aponta o ponteiro firme para a porta. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "A porta fecha com um cadeado de coração e a receita sai por baixo; Dona Bússola aponta firme"
+  },
+  "questao": {
+    "vinheta": "A 16-year-old girl comes alone with vaginal discharge and dysuria for 4 days. She has one consensual sexual partner, also 16. She asks that her parents not be told. Urine pregnancy test is negative, and nucleic acid amplification testing is positive for Chlamydia trachomatis.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Obtain parental consent before treatment",
+        "quiz": "Get parental consent first"
+      },
+      "B": {
+        "texto": "Notify her parents because she is a minor",
+        "quiz": "Notify her parents"
+      },
+      "C": {
+        "texto": "Treat with doxycycline and keep it confidential",
+        "quiz": "Treat; keep confidential"
+      },
+      "D": {
+        "texto": "Report the sexual activity to child protective services",
+        "quiz": "Report to CPS"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "IST na adolescência: *trata e guarda o sigilo*",
+    "certa": [
+      "Em todos os estados americanos, o adolescente pode consentir sozinho com o diagnóstico e o tratamento de *sexually transmitted infections* (alguns estados fixam uma idade mínima, em geral entre 12 e 14 anos), e a consulta fica *confidential*. Com teste de gravidez negativo, a clamídia se trata com *doxycycline* 100 mg de 12 em 12 horas, por uma semana (CDC 2021). Na mesma consulta: tratar o parceiro (*expedited partner therapy*), orientar preservativo e retestar em 3 meses."
+    ],
+    "termos": [
+      "adolescent confidentiality",
+      "minor consent for STI care",
+      "doxycycline",
+      "expedited partner therapy"
+    ],
+    "erradas": {
+      "A": "Exigir consentimento dos pais afasta o adolescente do cuidado, e a lei não pede isso para IST.",
+      "B": "Quebrar o sigilo sem risco grave à vida dela ou de outra pessoa viola a confidencialidade; o médico pode incentivar a conversa com a família, sem obrigar.",
+      "D": "Relação consensual com parceiro da mesma idade não indica abuso; a notificação entra quando há coerção, diferença de idade prevista em lei ou suspeita de abuso."
+    },
+    "macete": {
+      "frase": "*Cadeado do sigilo* no consultório: IST na adolescência se testa e se trata *sem chamar os pais*. É correio elegante: só o destinatário fica sabendo.",
+      "apoio": "Na imagem, a ponte dos cadeados do Dia dos Namorados termina num consultório com um cadeado em forma de coração na porta. O telefone de casa fica quieto, e a receita sai por baixo da porta.",
+      "fala": "Meu norte é o paciente: aqui o prontuário só abre com a chave dela."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com a Dona Bússola, no Dia dos Namorados. Uma paciente chega sozinha, e a vinheta traz a idade, o motivo da consulta, o resultado do exame e um pedido dela. Qual é a conduta?",
+    "palavras_chave": [
+      "sexual health",
+      "office visit",
+      "STI testing",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Adolescencia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Clamídia aos 16 e pedido de sigilo: o que fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

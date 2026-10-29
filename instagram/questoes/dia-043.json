@@ -1,0 +1,95 @@
+{
+  "dia": 43,
+  "data": "2026-12-14",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Dermatite de contato",
+  "conceito": "Contact dermatitis to nickel: type IV delayed hypersensitivity mediated by T cells",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-15",
+  "gancho": "Cinto novo, *look* aprovado, e a pele reprovou",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está diante do espelho de um provador de loja segurando um cinto com uma fivela de metal brilhante, com cara de desconfiado.",
+    "foco": "50% 35%",
+    "alt": "Macrô, diante do espelho de um provador, segura um cinto com fivela de metal brilhante, desconfiado.",
+    "arquivo": "dia-043.png"
+  },
+  "imagem_macete": {
+    "cena": "Revelação no provador: a fivela vai para um pratinho, e o Macrô, no papel de apresentador da pele, entrega um pedacinho dela a bolinhas redondas com antenas (linfócitos T), que trabalham como fermento numa tigela de massa que cresceu enorme em dois dias.",
+    "alt": "Fermentação natural: linfócito T, 48 a 72 horas",
+    "arquivo": "dia-043-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman has an itchy, scaly, erythematous plaque beneath the metal buckle of a new belt. It appeared 2 days after she began wearing the belt. As a teenager, she had a similar rash under a metal watchband. Patch testing with nickel sulfate produces a vesicular reaction at 48 to 72 hours.",
+    "pergunta": "Which cells directly mediate this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "IgE-coated mast cells",
+        "quiz": "IgE on mast cells"
+      },
+      "B": {
+        "texto": "Neutrophils and complement",
+        "quiz": "Neutrophils + complement"
+      },
+      "C": {
+        "texto": "Sensitized T lymphocytes",
+        "quiz": "Sensitized T cells"
+      },
+      "D": {
+        "texto": "IgG-secreting plasma cells",
+        "quiz": "IgG plasma cells"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Fermentação natural: *linfócito T*, 48 a 72 horas",
+    "certa": [
+      "A *allergic contact dermatitis* ao níquel é *type IV hypersensitivity*, a única que não depende de anticorpo. O níquel funciona como hapteno. A primeira exposição, a pulseira do relógio na adolescência, sensibilizou os linfócitos T; agora, na reexposição, as células de Langerhans apresentam o níquel aos *T cells* de memória, que liberam citocinas e atacam os queratinócitos. Como precisa recrutar e ativar células, a reação demora de 48 a 72 horas, o tempo do *patch test*."
+    ],
+    "termos": [
+      "allergic contact dermatitis",
+      "type IV hypersensitivity",
+      "hapten",
+      "patch test"
+    ],
+    "erradas": {
+      "A": "Mastócito com IgE é tipo I, imediato, em minutos, com urticária e não placa descamativa tardia.",
+      "B": "Neutrófilos atraídos por imunocomplexos são tipo III (vasculite, doença do soro).",
+      "D": "IgG produzida por plasmócito contra antígeno de pele é tipo II, como no pênfigo vulgar."
+    },
+    "macete": {
+      "frase": "Tipo IV é *fermentação natural*: o fermento é o linfócito T e o pão só cresce em 48 horas. Cinto novo que coça em 2 dias não é pipoca.",
+      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, dermatite de contato (níquel, hera venenosa), rejeição celular aguda do enxerto e algumas reações a droga; todas sem anticorpo e tardias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: o Macrô foi às compras e voltou com um caso de imunologia. Quatro tipos de reação e quatro células suspeitas; a história da paciente separa uma da outra.",
+    "palavras_chave": [
+      "itchy plaque",
+      "new belt",
+      "dermatology",
+      "hypersensitivity"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#Dermatologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Placa sob a fivela que acende no patch test em 48 h: qual célula?"
+  },
+  "exemplo": false
+}

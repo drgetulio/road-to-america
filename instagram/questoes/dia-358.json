@@ -1,0 +1,100 @@
+{
+  "dia": 358,
+  "data": "2027-10-25",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Deficiência seletiva de IgA",
+  "conceito": "Selective IgA deficiency: anti-IgA antibodies cause anaphylaxis to standard blood products",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-26",
+  "tom": null,
+  "gancho": "A bolsa de sangue chegou *e a Capitã Plaqueta apitou falta*",
+  "gancho_apoio": "Bicho de Segunda no banco de sangue: quatro jeitos de preparar a bolsa, e só um serve para ele.",
+  "imagem": {
+    "arquivo": "dia-358.png",
+    "cena": "A Capitã Plaqueta, de colete refletivo, apita e para na porta de um banco de sangue uma bolsa de sangue de desenho animado com laço de presente. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta apita e para uma bolsa de sangue com laço de presente na porta do banco de sangue."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-358-macete.png",
+    "cena": "Callback: a Capitã Plaqueta coloca a bolsa de sangue numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a bolsa sai limpa e brilhante, e um cone vermelho fica ao lado de outra bolsa ainda sem lavar.",
+    "foco": "50% 45%",
+    "alt": "Deficiência de IgA: washed ou de doador sem IgA"
+  },
+  "questao": {
+    "vinheta": "A 35-year-old man develops hypotension, wheezing, and diffuse urticaria within minutes of starting a red blood cell transfusion after surgery. He has a history of recurrent sinusitis and celiac disease. The transfusion is stopped and epinephrine is given. Serum IgA is undetectable, with normal IgG and IgM.",
+    "pergunta": "Which is the most appropriate approach for his future transfusions?",
+    "alternativas": {
+      "A": {
+        "texto": "Irradiated red blood cells",
+        "quiz": "Irradiated RBCs"
+      },
+      "B": {
+        "texto": "Leukoreduced red blood cells",
+        "quiz": "Leukoreduced RBCs"
+      },
+      "C": {
+        "texto": "Washed red blood cells",
+        "quiz": "Washed RBCs"
+      },
+      "D": {
+        "texto": "CMV-negative red blood cells",
+        "quiz": "CMV-negative RBCs"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Deficiência de IgA: *washed* ou de doador sem IgA",
+    "certa": [
+      "Na *selective IgA deficiency*, alguns pacientes formam *anti-IgA antibodies*. Quando recebem plasma de doador com IgA, mesmo o pouco que sobra num concentrado de hemácias, podem ter *anaphylaxis*. Nas próximas transfusões, usar *washed red blood cells* (a lavagem retira o plasma) ou hemocomponentes de doadores com deficiência de IgA."
+    ],
+    "termos": [
+      "selective IgA deficiency",
+      "anti-IgA antibodies",
+      "anaphylactic transfusion reaction",
+      "washed red blood cells"
+    ],
+    "erradas": {
+      "A": "Irradiar inativa os linfócitos do doador e protege imunossuprimidos da GVHD transfusional, mas não muda a IgA do plasma.",
+      "B": "Leucorredução reduz reação febril não hemolítica, aloimunização HLA e transmissão de CMV, mas não remove a IgA do plasma.",
+      "D": "Hemocomponente CMV negativo protege receptores CMV negativos de alto risco, como transplantados e recém-nascidos."
+    },
+    "macete": {
+      "frase": "*Roupa emprestada a gente lava antes*: sangue para quem não tem IgA também",
+      "apoio": "Quem nunca teve IgA pode ter anticorpos contra a IgA do doador e reage como a um penetra: anafilaxia minutos depois de começar. Lavar o concentrado tira o plasma do doador; outra opção é sangue de doador sem IgA. Irradiar é contra doença do enxerto, leucorreduzir é contra febre e CMV, e CMV negativo é para imunossuprimido.",
+      "fala": "Parou, colou, coagulou. Bolsa sem lavar não passa no meu cruzamento."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no banco de sangue: a Capitã Plaqueta confere a bolsa, e cada máquina da prateleira prepara o sangue de um jeito. A vinheta conta o que aconteceu na primeira transfusão e traz um exame que explica tudo.",
+    "palavras_chave": [
+      "transfusion medicine",
+      "immunology",
+      "surgery",
+      "blood products"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Hematologia",
+      "#Immunology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IgA indetectável e anafilaxia na transfusão: como transfundir da próxima vez?"
+  },
+  "reel": null,
+  "exemplo": false
+}

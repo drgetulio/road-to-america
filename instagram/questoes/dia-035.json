@@ -1,0 +1,100 @@
+{
+  "dia": 35,
+  "data": "2026-12-06",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Profilaxia no HIV (dia 30), Síndrome compartimental (dia 32)",
+  "conceito": "Remix: STEMI + HIV with CD4 below 200 + Compartment syndrome",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": [
+    2,
+    30,
+    32
+  ],
+  "explicacao_em": "2026-12-07",
+  "gancho": "O Mito voltou com a perna do dia 32 e *um detalhe novo* na ficha",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito, de jaleco amassado, está sentado em cima de uma mala navy fechada numa sala de embarque de aeroporto, com um guarda-chuva azul-marinho fechado ao lado. Um vinil pequeno está preso na alça da mala.",
+    "foco": "50% 35%",
+    "alt": "Mito sentado numa mala navy fechada numa sala de embarque, com um guarda-chuva fechado ao lado.",
+    "arquivo": "dia-035.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do aeroporto: o Mito encosta um manômetro redondo, sem números, na lateral da mala e olha o ponteiro com atenção antes de decidir abrir o zíper; o guarda-chuva fica encostado numa cadeira com um lembrete em branco preso, para a alta.",
+    "alt": "Sedado não reclama: mede a pressão",
+    "arquivo": "dia-035-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man with HIV infection (CD4+ count 150/mm3) is intubated and sedated in the ICU after a motorcycle crash. His closed tibial fracture was splinted 8 hours ago. The splint has been removed, and the anterior compartment of the leg feels firm. Dorsalis pedis pulse is palpable.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Elevate the leg above the level of the heart",
+        "quiz": "Elevate the leg"
+      },
+      "B": {
+        "texto": "Start TMP-SMX and defer any surgery",
+        "quiz": "TMP-SMX, defer surgery",
+        "dia": 30
+      },
+      "C": {
+        "texto": "Measure intracompartmental pressure",
+        "quiz": "Compartment pressure"
+      },
+      "D": {
+        "texto": "Emergency fasciotomy",
+        "quiz": "Fasciotomy now",
+        "dia": 32
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sedado não reclama: mede a pressão",
+    "certa": [
+      "Fratura de tíbia com compartimento tenso é suspeita de *compartment syndrome* (dia 32), mas este paciente está intubado e sedado: não relata dor, e a dor ao estiramento passivo, o sinal mais precoce, não pode ser avaliada. Quando o exame clínico não é confiável, o próximo passo é medir a pressão do compartimento (*intracompartmental pressure*). Quando a pressão diastólica menos a pressão do compartimento (*delta pressure*) fica em 30 mm Hg ou menos, a fasciotomia é de urgência. O CD4 de 150 pede profilaxia de Pneumocystis (dia 30), mas não adia nenhuma conduta da perna."
+    ],
+    "termos": [
+      "intracompartmental pressure",
+      "delta pressure",
+      "compartment syndrome",
+      "unreliable examination"
+    ],
+    "erradas": {
+      "A": "Elevar a perna acima do coração reduz a perfusão do compartimento e pode piorar a isquemia.",
+      "B": "Dia 30: CD4 abaixo de 200 pede TMP-SMX, mas imunossupressão não é motivo para adiar a investigação nem a cirurgia de um membro em risco.",
+      "D": "Dia 32: no paciente acordado com dor desproporcional, a fasciotomia sai sem medir nada; sedado e sem exame confiável, a medida vem antes e define a indicação."
+    },
+    "macete": {
+      "frase": "Paciente sedado não reclama: *quem fala é o manômetro*. Delta de 30 ou menos, abre a mala.",
+      "apoio": "Pegadinha de prova: O NBME coloca a síndrome compartimental num paciente intubado, inconsciente ou com bloqueio anestésico; sem exame confiável, mede a pressão antes de cortar.",
+      "fala": "Sedado não reclama. Eu reclamo por ele."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando a mala que não fecha (dia 32) e o guarda-chuva do CD4 (dia 30), mais um intruso. O bônus do macete traz o balão dos 90 minutos (dia 2). Cada alternativa que já apareceu leva o selo do dia, e a regra é a do NBME: selo não é gabarito.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#RemixDeDomingo",
+      "#Emergencia",
+      "#EmergencyMedicine",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Perna tensa num paciente sedado na UTI: qual o próximo passo?"
+  },
+  "exemplo": false
+}

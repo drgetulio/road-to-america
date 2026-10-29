@@ -1,0 +1,94 @@
+{
+  "dia": 41,
+  "data": "2026-12-12",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Intervalo de confiança",
+  "conceito": "95 percent confidence interval of a relative risk that crosses 1: not statistically significant",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-13",
+  "gancho": "Quatro cafezinhos por dia e um estudo que virou *manchete* no grupo da família",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Viés espia atrás de uma tabela 2x2 no balcão de uma padaria, onde uma baguete comprida está deitada perto de uma linha pintada no balcão; um açucareiro esconde justamente o ponto em que ela encontraria a linha.",
+    "foco": "50% 35%",
+    "alt": "O Viés espia atrás de uma tabela 2x2 no balcão de uma padaria; um açucareiro esconde parte de uma baguete perto de uma linha pintada.",
+    "arquivo": "dia-041.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o açucareiro sai do lugar e a baguete aparece passando por cima da linha pintada; o Viés dá de ombros com um sorriso maroto, e a xícara de café fica com cara de inocente, mas ainda sob a lupa.",
+    "alt": "O intervalo cruzou o 1: sem significância",
+    "arquivo": "dia-041-macete.png"
+  },
+  "questao": {
+    "vinheta": "A cohort study of 4,000 adults examines whether drinking four or more cups of coffee daily is associated with incident atrial fibrillation. The relative risk is 1.30 (95% confidence interval, 0.92 to 1.84).",
+    "pergunta": "Which is the most appropriate interpretation of this result?",
+    "alternativas": {
+      "A": {
+        "texto": "Coffee increases atrial fibrillation risk by 30%",
+        "quiz": "Risk up by 30%"
+      },
+      "B": {
+        "texto": "The p-value is less than 0.05",
+        "quiz": "p below 0.05"
+      },
+      "C": {
+        "texto": "The study proves coffee has no effect",
+        "quiz": "Proves no effect"
+      },
+      "D": {
+        "texto": "The association is not statistically significant",
+        "quiz": "Not significant"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O intervalo *cruzou o 1*: sem significância",
+    "certa": [
+      "Para *relative risk* e *odds ratio*, o valor nulo é 1. Se o *95% confidence interval* inclui o 1 (aqui, de 0,92 a 1,84), o resultado não é *statistically significant* no nível de 0,05, e o p é maior que 0,05. Isso não prova que o café é inocente: o estudo pode simplesmente não ter poder para mostrar um efeito pequeno."
+    ],
+    "termos": [
+      "95% confidence interval",
+      "relative risk",
+      "null value",
+      "statistical significance"
+    ],
+    "erradas": {
+      "A": "O 1,30 é só a estimativa pontual; com o intervalo cruzando o 1, não dá para afirmar aumento de 30%.",
+      "B": "Intervalo de 95% que contém o valor nulo corresponde a p maior que 0,05, não menor.",
+      "C": "Ausência de significância não prova ausência de efeito; o intervalo vai de leve proteção a aumento de 84%."
+    },
+    "macete": {
+      "frase": "A *baguete* do intervalo encostou na linha do 1? Não dá para dizer de que lado da padaria ela está: *não é significativo*.",
+      "apoio": "Pegadinha de prova: O NBME troca a linha nula de lugar: para razões (RR, OR) é 1, para diferenças é 0, e quem confunde marca significativo onde não é.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: um estudo de coorte sobre café e coração, e quatro leituras possíveis do resultado. O tio do grupo da família já escolheu a dele; você tem até amanhã.",
+    "palavras_chave": [
+      "cohort study",
+      "coffee",
+      "atrial fibrillation",
+      "study interpretation"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Como interpretar um RR de 1,30 com IC de 0,92 a 1,84?"
+  },
+  "exemplo": false
+}

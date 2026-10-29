@@ -1,0 +1,96 @@
+{
+  "dia": 285,
+  "data": "2027-08-13",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Amiodarona",
+  "conceito": "Amiodarone: class III potassium channel blocker, monitor thyroid, lung and liver",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-14",
+  "tom": null,
+  "gancho": "Tem remédio que é aquela parente que *chega para um café e fica três meses*",
+  "gancho_apoio": "Sextou na Farmácia: a Tia Meia-Vida separou quatro pacotes de exames no balcão.",
+  "imagem": {
+    "arquivo": "dia-285.png",
+    "cena": "Na rodoviária de uma cidade do interior, a Tia Meia-Vida, de óculos vermelhos, recebe um frasco de comprimidos que arrasta uma mala gigante, coberta de adesivos de viagem em branco, com cara de quem veio para ficar. A areia da ampulheta dela quase não escorre. Quatro sacolinhas de papel fechadas esperam no banco ao lado.",
+    "foco": "50% 35%",
+    "alt": "Um frasco de remédio chega na rodoviária com uma mala gigante"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-285-macete.png",
+    "cena": "A Tia Meia-Vida sai com três cestas de visita para três casinhas: uma em forma de borboleta, uma em forma de pulmões e uma em forma de fígado. Uma estrela-do-mar vai numa das cestas, e outra leva um lenço azul-acinzentado e um par de óculos. A ampulheta gigante continua quase parada ao fundo.",
+    "foco": "50% 45%",
+    "alt": "Amiodarona: tireoide, pulmão e fígado no radar"
+  },
+  "questao": {
+    "vinheta": "Because of recurrent ventricular tachycardia after a prior myocardial infarction, a 68-year-old man begins amiodarone. Before discharge, he asks why he needs blood tests and a breathing test now and during follow-up.",
+    "pergunta": "Which set of tests is most important for monitoring this drug's toxicity?",
+    "alternativas": {
+      "A": {
+        "texto": "Creatine kinase and lipid panel",
+        "quiz": "CK and lipids"
+      },
+      "B": {
+        "texto": "TSH, liver enzymes, and PFTs",
+        "quiz": "TSH, LFTs and PFTs"
+      },
+      "C": {
+        "texto": "Complete blood count and antinuclear antibodies",
+        "quiz": "CBC and ANA"
+      },
+      "D": {
+        "texto": "Fasting glucose and serum uric acid",
+        "quiz": "Glucose and uric acid"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Amiodarona: *tireoide, pulmão e fígado* no radar",
+    "certa": [
+      "A *amiodarone* é antiarrítmico *classe III* (bloqueia canais de K+ e prolonga o potencial de ação e o QT), com efeitos também das classes I, II e IV. É rica em *iodo*, muito lipofílica e tem meia-vida de semanas, por isso a toxicidade aparece nos órgãos onde ela acumula: *tireoide* (hipo ou hipertireoidismo), *pulmão* (fibrose) e *fígado* (hepatite). Por isso o seguimento pede TSH e enzimas hepáticas no início e a cada 6 meses, raio X do tórax e PFT com DLCO, mais exame oftalmológico e da pele."
+    ],
+    "termos": [
+      "amiodarone",
+      "class III antiarrhythmic",
+      "pulmonary fibrosis",
+      "thyroid dysfunction"
+    ],
+    "erradas": {
+      "A": "CK e lipídios acompanham a estatina (miopatia), não a amiodarona.",
+      "C": "Hemograma e FAN lembram a procainamida, que causa lúpus induzido e agranulocitose.",
+      "D": "Glicose e ácido úrico são os exames da tiazida e da niacina."
+    },
+    "macete": {
+      "frase": "Amiodarona é *tia de novela*: mexe com a *tireoide*, o *pulmão* e o *fígado*",
+      "apoio": "A amiodarona chega para um café e fica meses (meia-vida de semanas) e visita a família toda: tireoide (iodo, a estrela-do-mar), pulmão (fibrose) e fígado. Por isso TSH, enzimas hepáticas e prova de função pulmonar no começo e no seguimento. Pele azul-acinzentada e depósitos na córnea completam a fofoca.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da amiodarona, só daqui a meses."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia: um frasco chegou na rodoviária com mala para três meses, e a Tia Meia-Vida já sabe que a visita vai ser longa. Quatro pacotes de exames no balcão; a vinheta diz qual remédio é, e o resto é com você.",
+    "palavras_chave": [
+      "outpatient follow-up",
+      "long-term therapy",
+      "drug monitoring",
+      "pharmacology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Cardiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Amiodarona para taquicardia ventricular: quais exames monitorar?"
+  },
+  "reel": null,
+  "exemplo": false
+}

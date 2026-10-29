@@ -1,0 +1,93 @@
+{
+  "dia": 154,
+  "data": "2027-04-04",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Profilaxia no HIV (dia 30), Bronquiolite (dia 123), Insuficiência cardíaca com fração reduzida (dia 149)",
+  "conceito": "Remix: HIV with CD4 below 200 + RSV bronchiolitis + HFrEF mortality pillars",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": [
+    30,
+    123,
+    149
+  ],
+  "explicacao_em": "2027-04-05",
+  "tom": null,
+  "gancho": "Coração em dia, profilaxia em dia e *um potássio que não estava no plano*",
+  "gancho_apoio": "Remix de Step 2 CK com profilaxia no HIV (dia 30) e ICFER (dia 149); a bronquiolite (dia 123) volta no macete.",
+  "imagem": {
+    "arquivo": "dia-154.png",
+    "cena": "Dona Térmica, num domingo de plantão, monta uma marmita de quatro andares com todos os potes encaixados, e uma bananinha escapa pela tampa de cima. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica monta uma marmita de quatro andares; uma bananinha escapa pela tampa de cima."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-154-macete.png",
+    "cena": "Callback: o guarda-chuva dobrado que saiu da marmita fecha uma portinha de canal na parede de um tubo, e as bananinhas se amontoam do lado de dentro, enquanto Dona Térmica confere a prancheta. Fundo limpo.",
+    "alt": "O guarda-chuva da marmita fecha a portinha de um canal e as bananinhas se acumulam; Dona Térmica confere."
+  },
+  "questao": {
+    "vinheta": "A 54-year-old man with HIV (CD4 count 160/µL) and ischemic cardiomyopathy takes sacubitril-valsartan, metoprolol, spironolactone and empagliflozin. Daily trimethoprim-sulfamethoxazole was added 2 weeks ago. Serum potassium has risen from 4.6 to 6.0 mEq/L; creatinine is unchanged.",
+    "pergunta": "Which drug most likely raised his potassium by blocking the epithelial sodium channel?",
+    "alternativas": {
+      "A": {
+        "texto": "Trimethoprim",
+        "quiz": "Trimethoprim",
+        "dia": 30
+      },
+      "B": {
+        "texto": "Spironolactone",
+        "quiz": "Spironolactone",
+        "dia": 149
+      },
+      "C": {
+        "texto": "Sacubitril-valsartan",
+        "quiz": "Sacubitril-valsartan"
+      },
+      "D": {
+        "texto": "Empagliflozin",
+        "quiz": "Empagliflozin"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O trimetoprim *fecha o ENaC* como a amilorida",
+    "certa": [
+      "O trimetoprim tem estrutura parecida com a da amilorida e bloqueia o canal epitelial de sódio (ENaC) do ducto coletor. Sem a entrada de sódio, a luz do túbulo fica menos negativa e o potássio deixa de ser secretado. Mesmo na dose de profilaxia, somado ao ARNI e à espironolactona, ele pode levar o potássio a 6. O potássio subiu logo depois que ele entrou na receita, com a creatinina estável."
+    ],
+    "termos": [
+      "trimethoprim",
+      "ENaC blockade",
+      "amiloride-like effect",
+      "hyperkalemia"
+    ],
+    "erradas": {
+      "B": "Dia 149: a espironolactona também eleva o potássio, mas bloqueando o receptor de mineralocorticoide, não o canal; e ela já estava na receita antes da subida.",
+      "C": "O sacubitril-valsartana eleva o potássio ao bloquear o receptor AT1 e reduzir a aldosterona, um efeito indireto, sem bloquear o ENaC.",
+      "D": "A empagliflozina age no túbulo proximal (SGLT2) e não costuma elevar o potássio; nos estudos, até reduziu a hipercalemia em quem usa antagonista mineralocorticoide."
+    },
+    "macete": {
+      "frase": "Trimetoprim, triantereno e amilorida: *o trio que fecha o ENaC*",
+      "apoio": "Pegadinha de prova: O NBME coloca o trimetoprim em paciente com IECA, BRA ou espironolactona e pergunta o mecanismo da hipercalemia: bloqueio do ENaC no ducto coletor, igual ao da amilorida e do triantereno.",
+      "fala": "Já vi esse caso às 3 da manhã: o potássio subiu duas semanas depois do remédio novo. Desconfia sempre do último que chegou."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo com a Dona Térmica: um paciente com HIV e insuficiência cardíaca, receita cheia e um exame que mudou. Os remédios e os exames estão na vinheta, e um deles é o culpado.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Potássio de 4,6 para 6,0 duas semanas após o TMP-SMX: qual droga bloqueou o ENaC?"
+  },
+  "exemplo": false
+}

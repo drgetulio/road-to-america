@@ -1,0 +1,88 @@
+{
+  "dia": 164,
+  "data": "2027-04-14",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Doença de Chagas",
+  "conceito": "Chagas disease: Trypanosoma cruzi destroys the myenteric plexus, megaesophagus and megacolon",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Dia Mundial da Doença de Chagas (14/4).",
+  "remix_de": null,
+  "explicacao_em": "2027-04-15",
+  "tom": null,
+  "gancho": "Quarta do Porquê: o Seu Allen achou *um defeito de fiação*",
+  "gancho_apoio": "Seu Allen recebeu um caso que atravessa três especialidades.",
+  "imagem": {
+    "arquivo": "dia-164.png",
+    "cena": "Na bancada da oficina, Seu Allen examina com a lupa três mangueiras de jardim enroladas, cada uma com fiozinhos coloridos por fora. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen examina com a lupa três mangueiras enroladas com fiozinhos coloridos por fora."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-164-macete.png",
+    "cena": "Callback: um besouro barbeiro de tesourinha corta os fiozinhos das mangueiras, e elas incham como balões compridos; na porta da oficina, uma fitinha verde e amarela homenageia Carlos Chagas. Fundo limpo.",
+    "alt": "Um besouro barbeiro de tesourinha corta os fios e as mangueiras incham como balões; uma fitinha verde e amarela na porta."
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man who grew up in an adobe house in rural Bolivia has 3 years of progressive dysphagia to solids and liquids, regurgitation, and chronic constipation. Barium swallow shows a dilated esophagus with distal bird's-beak narrowing. His ECG has a right bundle branch block plus a left anterior fascicular block.",
+    "pergunta": "Which is the most likely underlying cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Esophageal adenocarcinoma",
+        "quiz": "Esophageal adenocarcinoma"
+      },
+      "B": {
+        "texto": "Idiopathic achalasia",
+        "quiz": "Idiopathic achalasia"
+      },
+      "C": {
+        "texto": "Systemic sclerosis",
+        "quiz": "Systemic sclerosis"
+      },
+      "D": {
+        "texto": "Trypanosoma cruzi",
+        "quiz": "Trypanosoma cruzi"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*Trypanosoma cruzi*: o modo mega",
+    "certa": [
+      "Megaesôfago com bico de pássaro, constipação crônica (megacólon) e bloqueio de ramo direito com bloqueio fascicular anterior esquerdo em quem viveu em área endêmica é *Chagas disease* crônica. O *Trypanosoma cruzi*, transmitido pelo barbeiro (*triatomine bug*), destrói os neurônios do *myenteric (Auerbach) plexus* e o miocárdio. A acalasia idiopática dá o mesmo esôfago, mas não explica o coração nem o cólon."
+    ],
+    "termos": [
+      "Trypanosoma cruzi",
+      "myenteric plexus",
+      "megaesophagus",
+      "right bundle branch block"
+    ],
+    "erradas": {
+      "A": "O adenocarcinoma pode imitar acalasia, mas a disfagia começa por sólidos, evolui em meses com perda de peso e não explica cólon nem coração.",
+      "B": "A acalasia idiopática também perde o plexo mioentérico, mas fica restrita ao esôfago e não explica megacólon nem bloqueio de ramo.",
+      "C": "Na esclerose sistêmica o esfíncter esofágico inferior fica frouxo, com refluxo, e não estreito em bico de pássaro."
+    },
+    "macete": {
+      "frase": "O *barbeiro* corta os fios do plexo mioentérico e todo tubo vira *mega*",
+      "apoio": "Descrita por um brasileiro, Carlos Chagas, em 1909. Na fase aguda e em jovens, benznidazol ou nifurtimox.",
+      "fala": "Sobrou peça? Faltaram os fios do plexo. Sem eles, todo tubo vira balão."
+    }
+  },
+  "legenda": {
+    "contexto": "Na Quarta do Porquê, uma história longa, um exame de imagem e um ECG estão na vinheta, e um único culpado explica todos eles. Qual é a causa por trás de tudo?",
+    "palavras_chave": [
+      "rural Bolivia",
+      "dysphagia",
+      "bird's-beak sign",
+      "conduction abnormalities"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esôfago dilatado, constipação e bloqueio de ramo após infância rural: causa?"
+  },
+  "exemplo": false
+}

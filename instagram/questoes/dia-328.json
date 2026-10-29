@@ -1,0 +1,96 @@
+{
+  "dia": 328,
+  "data": "2027-09-25",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Viés de publicação",
+  "conceito": "Publication bias: asymmetric funnel plot in a meta-analysis",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-26",
+  "tom": null,
+  "gancho": "Sábado Sem Viés na cozinha: *quatro panelas tampadas e um fantasminha calado*",
+  "gancho_apoio": "Sábado Sem Viés: quatro panelas tampadas, e o fantasminha sabe o que tem em cada uma.",
+  "imagem": {
+    "arquivo": "dia-328.png",
+    "cena": "O Viés, fantasminha de lençol com lupa, espia numa cozinha de restaurante com quatro panelas tampadas no fogão; na parede, uma tabela 2x2 em branco num quadrinho.",
+    "foco": "50% 35%",
+    "alt": "O Viés numa cozinha com quatro panelas tampadas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-328-macete.png",
+    "cena": "Callback: o Viés destampa as panelas e de uma delas sai um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão, com um dos cantos de baixo vazio; atrás do funil aparece um arquivo de escritório, o Viés abre a gaveta e dela pulam bolinhas pequenas que preenchem o canto vazio; o funil fica simétrico e o fantasminha faz cara de flagrado.",
+    "foco": "50% 45%",
+    "alt": "Funil assimétrico: viés de publicação"
+  },
+  "questao": {
+    "vinheta": "A meta-analysis pools 18 randomized trials of a new drug for migraine prevention. A plot of each trial's effect size against its standard error shows that large trials cluster around a small benefit. Small trials showing large benefits are present, but small trials showing no benefit or harm are almost absent.",
+    "pergunta": "Which is the most likely explanation for this pattern?",
+    "alternativas": {
+      "A": {
+        "texto": "Lead-time bias",
+        "quiz": "Lead-time bias"
+      },
+      "B": {
+        "texto": "Confounding by indication",
+        "quiz": "Confounding by indication"
+      },
+      "C": {
+        "texto": "Recall bias",
+        "quiz": "Recall bias"
+      },
+      "D": {
+        "texto": "Publication bias",
+        "quiz": "Publication bias"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Funil assimétrico: *viés de publicação*",
+    "certa": [
+      "O *funnel plot* coloca o efeito de cada estudo contra o seu tamanho (ou erro padrão): sem viés, os estudos pequenos se espalham dos dois lados dos grandes, formando um funil simétrico. Quando falta o canto dos estudos pequenos com resultado nulo ou negativo, o mais provável é *publication bias*, porque estudo pequeno sem efeito tende a ficar na gaveta. Isso infla o efeito estimado pela meta-análise."
+    ],
+    "termos": [
+      "funnel plot",
+      "publication bias",
+      "small-study effects",
+      "trial registration"
+    ],
+    "erradas": {
+      "A": "*Lead-time bias* aparece no rastreamento, quando o diagnóstico antecipado parece aumentar a sobrevida sem mudar a evolução.",
+      "B": "*Confusão* exige uma terceira variável ligada à exposição e ao desfecho dentro de um estudo, e não estudos ausentes da literatura.",
+      "C": "*Recall bias* acontece no caso-controle, quando quem teve o desfecho lembra melhor das exposições."
+    },
+    "macete": {
+      "frase": "*Funil torto é estudo pequeno na pasta oculta*: o resultado nulo nunca foi postado",
+      "apoio": "No funnel plot, estudos grandes ficam no topo, perto do efeito real, e os pequenos se espalham dos dois lados. Faltou o canto dos pequenos sem efeito? Foram para a gaveta, igual foto ruim vai para a pasta oculta da galeria: estudo negativo pequeno quase não é publicado. O Viés só posta o que deu bom.",
+      "fala": "Se deu nulo, eu escondi."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: 18 ensaios entraram na meta-análise, e o Viés jura que não mexeu em nada. Quatro vieses possíveis; o gráfico descrito na vinheta mostra onde falta gente.",
+    "palavras_chave": [
+      "meta-analysis",
+      "evidence-based medicine",
+      "biostatistics",
+      "clinical research"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Meta-análise sem os estudos pequenos negativos no gráfico: o que explica?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 137,
+  "data": "2027-03-18",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Esquizofrenia e transtornos relacionados",
+  "conceito": "Psychotic disorders by duration: brief under 1 month, schizophreniform 1 to 6 months, schizophrenia 6 months or more",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-19",
+  "tom": null,
+  "gancho": "Mesma vinheta, só muda a *data*: o NBME adora esse truque",
+  "gancho_apoio": "O Garçom Espetinho trouxe três blocos de calendário, e nenhum tem a mesma espessura.",
+  "imagem": {
+    "arquivo": "dia-137.png",
+    "cena": "Garçom Espetinho, numa papelaria de bairro, segura três blocos de calendário sem números, de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho com três blocos de calendário: folha solta, bloco médio e bloco grosso."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-137-macete.png",
+    "cena": "Callback: os três blocos ficam em fila no balcão, do mais fino ao mais grosso, como uma régua de tempo, e o bloco médio recebe o lado verde da plaquinha. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Os três blocos em fila como régua de tempo; o bloco médio ganha o lado verde da plaquinha."
+  },
+  "questao": {
+    "vinheta": "A 23-year-old man has heard voices commenting on his actions and has believed that his neighbors are monitoring him for the past 3 months. He has stopped attending classes. He has no history of substance use, medical illness or prominent mood episodes.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Brief psychotic disorder",
+        "quiz": "Brief psychotic disorder"
+      },
+      "B": {
+        "texto": "Schizophreniform disorder",
+        "quiz": "Schizophreniform"
+      },
+      "C": {
+        "texto": "Schizophrenia",
+        "quiz": "Schizophrenia"
+      },
+      "D": {
+        "texto": "Schizotypal personality disorder",
+        "quiz": "Schizotypal PD"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Psicose pela régua do *tempo*",
+    "certa": [
+      "Alucinações e delírios por 3 meses, sem substância, doença clínica ou episódio de humor, encaixam no transtorno esquizofreniforme, que dura de 1 a 6 meses. Com menos de 1 mês seria transtorno psicótico breve, e com 6 meses ou mais, incluindo pródromo e fase residual, esquizofrenia. O diagnóstico muda com o tempo, então o acompanhamento é parte da conduta."
+    ],
+    "termos": [
+      "schizophreniform disorder",
+      "brief psychotic disorder",
+      "schizophrenia",
+      "DSM-5-TR duration"
+    ],
+    "erradas": {
+      "A": "O transtorno psicótico breve dura de 1 dia a menos de 1 mês e termina com volta ao funcionamento anterior.",
+      "C": "A esquizofrenia exige sinais da doença por pelo menos 6 meses, contando pródromo e fase residual.",
+      "D": "O transtorno de personalidade esquizotípica é um padrão duradouro, desde o começo da vida adulta, de crenças estranhas, pensamento mágico e desconforto social, sem meses de alucinações e delírios francos."
+    },
+    "macete": {
+      "frase": "Régua da psicose: *menos de 1 mês* breve, *1 a 6* esquizofreniforme, *6 ou mais* esquizofrenia",
+      "apoio": "Conte os meses desde os primeiros sinais, incluindo pródromo, e confira se há episódio de humor.",
+      "fala": "Folha solta, bloco médio, bloco grosso. Hoje sai o do meio, doutor."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, estação psiquiatria. Nesse grupo de diagnósticos, o que separa um do outro é o tempo, e a prova muda só esse número. No bloco 7, você também já não lembra que dia é.",
+    "palavras_chave": [
+      "auditory hallucinations",
+      "persecutory delusions",
+      "3 months",
+      "psychosis"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Psiquiatria",
+      "#Psychiatry"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vozes e delírio há 3 meses, sem droga nem episódio de humor: qual o diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

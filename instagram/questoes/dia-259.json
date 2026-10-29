@@ -1,0 +1,105 @@
+{
+  "dia": 259,
+  "data": "2027-07-18",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hemorragia subaracnoide (dia 191), Cólica renal (dia 240), Emergência hipertensiva (dia 254)",
+  "conceito": "Remix: Thunderclap headache + Suspected kidney stone + Hypertensive emergency",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    191,
+    240,
+    254
+  ],
+  "explicacao_em": "2027-07-19",
+  "tom": null,
+  "gancho": "Remix de Domingo: *uma pedrinha no rim* e uma reviravolta no banheiro do pronto-socorro",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 191, 240 e 254) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-259.png",
+    "cena": "No leito do pronto-socorro, Seu Néfron, de gravata e óculos na ponta do nariz, congela com o carimbo no ar no meio da papelada de alta de uma pedrinha teimosa. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron congela com o carimbo no ar no meio da papelada de alta da pedrinha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-259-macete.png",
+    "cena": "Callback: uma nuvem de trovão entra primeiro num túnel de tomografia em forma de rosquinha, sem frasco de contraste por perto, e a pedrinha espera sentada na fila. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A nuvem de trovão entra primeiro na tomografia e a pedrinha espera na fila"
+  },
+  "questao": {
+    "vinheta": "A 50-year-old woman is being treated in the emergency department for renal colic from a 5-mm distal ureteral stone. While straining on the toilet, she develops a sudden, severe occipital headache that peaks within 1 minute. Blood pressure is 176/98 mm Hg. She is alert, with neck stiffness and no focal deficits.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Lumbar puncture",
+        "quiz": "Lumbar puncture"
+      },
+      "B": {
+        "texto": "IV nicardipine to lower blood pressure by 25%",
+        "quiz": "IV nicardipine, -25%",
+        "dia": 254
+      },
+      "C": {
+        "texto": "An additional dose of IV ketorolac",
+        "quiz": "More IV ketorolac",
+        "dia": 240
+      },
+      "D": {
+        "texto": "Noncontrast CT of the head",
+        "quiz": "Noncontrast head CT",
+        "dia": 191
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Trovoada no meio da cólica: *TC primeiro*",
+    "certa": [
+      "Cefaleia em trovoada (pico em 1 minuto) com rigidez de nuca é *subarachnoid hemorrhage* até prova em contrário (dia 191): o próximo passo é a *noncontrast head CT*, já. A cólica renal (dia 240) virou coadjuvante, e a pressão de 176/98 sem lesão de órgão-alvo comprovada não é a emergência hipertensiva clássica (dia 254); ela é tratada depois que a TC mostra o que há."
+    ],
+    "termos": [
+      "thunderclap headache",
+      "subarachnoid hemorrhage",
+      "noncontrast head CT",
+      "lumbar puncture after 6 hours"
+    ],
+    "erradas": {
+      "A": "Intruso: a punção lombar vem depois da TC, nunca antes. Se a TC vier normal e a suspeita continuar, a punção entra na maioria dos casos, sobretudo quando já passaram mais de 6 horas do início; alguns protocolos aceitam a angiotomografia no lugar dela.",
+      "B": "Baixar 25% na primeira hora é a regra da emergência hipertensiva com lesão de órgão-alvo (dia 254); aqui o problema é a cefaleia em trovoada, e a imagem vem antes.",
+      "C": "Mais cetorolaco trata a cólica (dia 240), mas um AINE numa possível hemorragia piora o sangramento e atrasa o diagnóstico."
+    },
+    "macete": {
+      "frase": "Trovoada na cabeça? *TC antes de tudo*, até antes da pedrinha",
+      "apoio": "Cólica renal dói muito, mas cefaleia que chega ao pico em 1 minuto fura a fila. TC de crânio sem contraste na hora; se vier normal, punção lombar na maioria dos casos, sobretudo depois de 6 horas do início. O cetorolaco fica guardado (sangra) e a regra dos 25% é de outra emergência.",
+      "fala": "Sem carimbo, não sai. Sem TC de crânio, ninguém sai da sala."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com o Seu Néfron. Uma paciente em tratamento de cálculo, um evento súbito no banheiro e uma pressão alta, tudo na vinheta. Qual é o próximo passo?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#Emergencia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cólica renal e cefaleia súbita no banheiro: qual é o próximo passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

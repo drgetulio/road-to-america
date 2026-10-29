@@ -1,0 +1,95 @@
+{
+  "dia": 138,
+  "data": "2027-03-19",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Antagonistas competitivo e não competitivo",
+  "conceito": "Competitive vs noncompetitive antagonist: right shift with the same Emax vs lower Emax",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Match Day (19/3/2027, confirmado pelo NRMP): o dia em que ligante e receptor dão match.",
+  "remix_de": null,
+  "explicacao_em": "2027-03-20",
+  "tom": null,
+  "gancho": "Match Day: o receptor deu match, e *alguém atrapalhou o encontro*",
+  "gancho_apoio": "No baile da Tia Meia-Vida, a curva andou, e a pergunta é por quê.",
+  "imagem": {
+    "arquivo": "dia-138.png",
+    "cena": "Num salão de baile de interior com bandeirinhas, chavinhas amarelas dançam em volta de uma fileira de cadeiras, e a Tia Meia-Vida observa da mesa do bolo. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Chavinhas amarelas dançam em volta de uma fileira de cadeiras num baile; a Tia Meia-Vida observa."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-138-macete.png",
+    "cena": "Callback: de um lado, uma multidão de chavinhas amarelas tira da cadeira um sósia cinza que estava sentado; do outro, uma cadeira está com a perna quebrada e ninguém consegue sentar. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Muitas chavinhas tiram um sósia da cadeira; ao lado, uma cadeira de perna quebrada fica vazia."
+  },
+  "questao": {
+    "vinheta": "In an isolated tissue experiment, an agonist produces a sigmoid dose-response curve. Adding drug X shifts the curve to the right without changing the maximal response, and the shift is overcome by increasing the agonist concentration. Drug X alone produces no response.",
+    "pergunta": "Drug X is best classified as which type of drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Inverse agonist",
+        "quiz": "Inverse agonist"
+      },
+      "B": {
+        "texto": "Noncompetitive antagonist",
+        "quiz": "Noncompetitive antagonist"
+      },
+      "C": {
+        "texto": "Partial agonist",
+        "quiz": "Partial agonist"
+      },
+      "D": {
+        "texto": "Competitive antagonist",
+        "quiz": "Competitive antagonist"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Competitivo: curva *para a direita*, mesmo teto",
+    "certa": [
+      "O antagonista competitivo ocupa o mesmo sítio do agonista de forma reversível. Com mais agonista, ele perde a disputa: a curva se desloca para a direita (a potência cai e a EC50 sobe), mas o efeito máximo (Emax) continua o mesmo. Exemplos: atropina nos receptores muscarínicos e naloxona nos opioides."
+    ],
+    "termos": [
+      "competitive antagonist",
+      "right shift",
+      "Emax",
+      "potency vs efficacy"
+    ],
+    "erradas": {
+      "A": "O agonista inverso reduz a atividade basal do receptor sozinho, o que o drug X não fez.",
+      "B": "O antagonista não competitivo (ou irreversível, como a fenoxibenzamina) reduz o Emax, e mais agonista não recupera o efeito.",
+      "C": "O agonista parcial produz algum efeito sozinho, com Emax menor que o do agonista pleno."
+    },
+    "macete": {
+      "frase": "Competitivo *disputa a cadeira*; não competitivo *quebra a cadeira*",
+      "apoio": "Direita com o mesmo teto é competitivo (menos potência, mesma eficácia); teto mais baixo é não competitivo ou irreversível.",
+      "fala": "Se a briga é pela cadeira, chama mais convidado. Se a cadeira quebrou, nem o baile inteiro resolve."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é Match Day! Parabéns a quem deu match e força a quem segue no caminho; o e-mail mais esperado do ano vale mais que qualquer curva. Na farmacologia, o match é entre ligante e receptor, e a vinheta mostra o que a droga X faz com a curva.",
+    "palavras_chave": [
+      "dose-response curve",
+      "isolated tissue",
+      "maximal response",
+      "pharmacodynamics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#MatchDay"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Curva vai à direita, efeito máximo igual e mais agonista vence: que droga é?"
+  },
+  "reel": null,
+  "exemplo": false
+}

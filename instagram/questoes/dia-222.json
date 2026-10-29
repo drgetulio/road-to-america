@@ -1,0 +1,99 @@
+{
+  "dia": 222,
+  "data": "2027-06-11",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Inibidores de SGLT2",
+  "conceito": "SGLT2 inhibitors: block proximal glucose reabsorption, genital infections, euglycemic DKA",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-12",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: um remédio novo e *uma visita inesperada ao pronto-socorro*",
+  "gancho_apoio": "A Tia Meia-Vida desconfia de toda receita que chegou há menos de três meses.",
+  "imagem": {
+    "arquivo": "dia-222.png",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, examina um frasco novo de comprimidos com a lupa, de sobrancelha erguida. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida examina com a lupa um frasco novo de comprimidos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-222-macete.png",
+    "cena": "Callback: na repartição ao lado, o Seu Néfron carimba de vermelho cada cubinho de açúcar, que escorrega por um ralo para fora; num canto, gotinhas azedas fazem uma festa discreta. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Seu Néfron carimba os cubinhos de açúcar para fora e gotinhas azedas fazem festa no canto"
+  },
+  "questao": {
+    "vinheta": "A 56-year-old man with type 2 diabetes and heart failure started a new oral drug 2 months ago. Last month he had candidal balanitis. After 2 days of poor intake, he has vomiting and abdominal pain. Glucose is 182 mg/dL, pH 7.21, bicarbonate 11 mEq/L, and beta-hydroxybutyrate is elevated.",
+    "pergunta": "Where does his new drug most likely act?",
+    "alternativas": {
+      "A": {
+        "texto": "Pancreatic beta-cell ATP-sensitive potassium channel",
+        "quiz": "Beta-cell K-ATP channel"
+      },
+      "B": {
+        "texto": "Hepatic AMP-activated protein kinase",
+        "quiz": "Hepatic AMPK"
+      },
+      "C": {
+        "texto": "Proximal tubule sodium-glucose cotransporter 2",
+        "quiz": "Proximal tubule SGLT2"
+      },
+      "D": {
+        "texto": "Plasma dipeptidyl peptidase-4",
+        "quiz": "Plasma DPP-4"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Gliflozina: açúcar na urina e *cetona escondida*",
+    "certa": [
+      "Os *SGLT2 inhibitors* (dapagliflozina, empagliflozina) bloqueiam o cotransportador de sódio e glicose do *proximal convoluted tubule*, que reabsorve cerca de 90% da glicose filtrada. A glicose sai na urina e alimenta as *genital mycotic infections*. Com pouca ingestão, a insulina cai, o glucagon sobe e aparece a *euglycemic DKA*: cetoacidose com glicose abaixo de 250 mg/dL."
+    ],
+    "termos": [
+      "SGLT2 inhibitor",
+      "proximal convoluted tubule",
+      "euglycemic DKA",
+      "genital mycotic infection"
+    ],
+    "erradas": {
+      "A": "As sulfonilureias fecham o canal de potássio sensível a ATP da célula beta e causam hipoglicemia e ganho de peso, não cetoacidose euglicêmica.",
+      "B": "A metformina ativa a AMPK do fígado e reduz a gliconeogênese; o risco grave é acidose láctica, não cetose com fungo genital.",
+      "D": "Os inibidores da DPP-4 prolongam o GLP-1 do próprio corpo e se associam a nasofaringite e pancreatite, sem glicosúria."
+    },
+    "macete": {
+      "frase": "Gliflozina é *carimbo trocado*: açúcar EXCRETADO no túbulo proximal",
+      "apoio": "Na imagem, o Seu Néfron carimba de vermelho os cubinhos de açúcar que antes voltavam para o sangue. Na saída do ralo nascem cogumelinhos (os fungos), e num canto, sem açúcar alto para chamar atenção, as cetonas fazem uma festa quieta.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da cetoacidose com glicose de 182, todo mundo lembra."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um diabético começou um remédio novo há dois meses, e desde então duas coisas aconteceram, ambas descritas na vinheta. Onde o remédio age?",
+    "palavras_chave": [
+      "type 2 diabetes",
+      "new medication",
+      "adverse effect",
+      "Step 1 pharmacology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Diabetes",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cetoacidose com glicose 182: onde o remédio age?"
+  },
+  "reel": null,
+  "exemplo": false
+}

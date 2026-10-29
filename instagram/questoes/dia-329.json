@@ -1,0 +1,102 @@
+{
+  "dia": 329,
+  "data": "2027-09-26",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Superantígenos (dia 267), Síndrome de hiper-IgM (dia 302), Febre maculosa (dia 323)",
+  "conceito": "Remix: Toxic shock syndrome toxin + Hyper-IgM syndrome + Rickettsia rickettsii",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": [
+    267,
+    302,
+    323
+  ],
+  "explicacao_em": "2027-09-27",
+  "tom": null,
+  "gancho": "Domingo de manhã e *a Tia Meia-Vida abriu a farmácia mesmo assim*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
+  "imagem": {
+    "arquivo": "dia-329.png",
+    "cena": "A Tia Meia-Vida abre a farmácia num domingo de manhã; no balcão, quatro frascos diferentes; num canto, um vinil pequeno encostado.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida abre a farmácia num domingo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-329-macete.png",
+    "cena": "Callback: a Tia Meia-Vida entrega um frasco com uma chavinha capaz de entrar numa casinha em forma de célula; lá dentro, pequenos bastões vermelhos param de se multiplicar; os outros três frascos voltam para a prateleira, e o vinil gira no canto.",
+    "foco": "50% 45%",
+    "alt": "Febre maculosa na suspeita: doxiciclina já"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman has had fever, headache, and myalgias for 5 days. Nine days ago she hiked in Tennessee. A rash began on her wrists and ankles on day 3 and now covers her palms, soles, and trunk with petechiae. Blood pressure is 112/70 mm Hg. Platelets are 76,000/mm3, and sodium is 128 mEq/L.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Clindamycin plus vancomycin",
+        "quiz": "Clindamycin + vancomycin",
+        "dia": 267
+      },
+      "B": {
+        "texto": "Intravenous ceftriaxone",
+        "quiz": "IV ceftriaxone"
+      },
+      "C": {
+        "texto": "Benzathine penicillin G",
+        "quiz": "Benzathine penicillin G"
+      },
+      "D": {
+        "texto": "Doxycycline",
+        "quiz": "Doxycycline",
+        "dia": 323
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Febre maculosa na suspeita: *doxiciclina já*",
+    "certa": [
+      "Febre, cefaleia e mialgia depois de trilha no sudeste dos EUA, com exantema que começa nos punhos e tornozelos e vai para palmas, plantas e tronco, plaquetas baixas e sódio baixo, fecham *Rocky Mountain spotted fever* (dia 323). O tratamento é *doxycycline*, que entra já na suspeita, em qualquer idade e sem esperar sorologia, porque cada dia de atraso aumenta a mortalidade. A Rickettsia vive dentro da célula, e a doxiciclina, que bloqueia a subunidade 30S, chega até ela."
+    ],
+    "termos": [
+      "Rocky Mountain spotted fever",
+      "doxycycline at any age",
+      "treat on clinical suspicion",
+      "obligate intracellular"
+    ],
+    "erradas": {
+      "A": "Clindamicina com vancomicina é o esquema do choque tóxico (dia 267), que vem com hipotensão e eritrodermia difusa, sem exantema que sobe dos punhos.",
+      "B": "Ceftriaxona trata a meningococcemia, que evolui em horas, com petéquias e choque; não alcança a Rickettsia, que vive dentro da célula.",
+      "C": "Penicilina benzatina trata a sífilis secundária, que também pega palmas e plantas, mas sem febre alta, cefaleia forte e plaquetopenia depois de uma trilha."
+    },
+    "macete": {
+      "frase": "*Exantema que sobe dos punhos depois da trilha? Doxiciclina hoje*",
+      "apoio": "A febre maculosa não espera exame: o tratamento começa na suspeita, inclusive em criança, porque o curso curto de doxiciclina não mancha dente. Bônus: na hiper-IgM (dia 302), quem falha é o CD40L, e o problema é Pneumocystis, não carrapato.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da doxiciclina na suspeita, todo mundo lembra."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: superantígenos (dia 267), hiper-IgM (dia 302) e febre maculosa (dia 323) voltaram, e a Tia Meia-Vida abriu a farmácia no domingo. Quatro tratamentos no balcão; a vinheta conta a história completa.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Exantema dos punhos para as palmas depois de trilha: qual remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

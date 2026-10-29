@@ -1,0 +1,229 @@
+{
+ "_sobre": "Coincidências de palavra entre a resposta certa e o material do dia D que um humano leu e aceitou: a palavra aparece, mas não entrega a resposta (já está na vinheta, é o tema do dia ou é uma das opções mostradas). validar-dias.mjs rebaixa estas ocorrências de erro para aviso.",
+ "aceitas": {
+  "16": [
+   {
+    "onde": "*",
+    "raizes": [
+     "pulmon"
+    ],
+    "motivo": "a vinheta já sugere embolia; a pergunta é o exame, e o túnel do vaso pulmonar não escolhe entre angio-TC e D-dímero"
+   }
+  ],
+  "20": [
+   {
+    "onde": "prompt da imagem da questão",
+    "raizes": [
+     "respec"
+    ],
+    "motivo": "'respectful mood' é o tom pedido à imagem, não aparece no post"
+   }
+  ],
+  "57": [
+   {
+    "onde": "*",
+    "raizes": [
+     "heart"
+    ],
+    "motivo": "o sopro novo está na vinheta e a pergunta já fala em achado cardíaco"
+   }
+  ],
+  "67": [
+   {
+    "onde": "*",
+    "raizes": [
+     "thumb"
+    ],
+    "motivo": "a tabaqueira anatômica está na vinheta; a imagem não mostra tala"
+   }
+  ],
+  "89": [
+   {
+    "onde": "*",
+    "raizes": [
+     "water"
+    ],
+    "motivo": "o copo de água é uma de quatro opções mostradas lado a lado"
+   }
+  ],
+  "95": [
+   {
+    "onde": "*",
+    "raizes": [
+     "mama"
+    ],
+    "motivo": "mama é o tema do dia; a resposta é o exame"
+   }
+  ],
+  "121": [
+   {
+    "onde": "*",
+    "raizes": [
+     "cardia"
+    ],
+    "motivo": "'procedimento cardíaco' é a ablação da vinheta"
+   }
+  ],
+  "122": [
+   {
+    "onde": "*",
+    "raizes": [
+     "aortic"
+    ],
+    "motivo": "o foco aórtico está na vinheta; a pergunta é a causa"
+   }
+  ],
+  "123": [
+   {
+    "onde": "*",
+    "raizes": [
+     "nasal",
+     "aspira"
+    ],
+    "motivo": "o aspirador nasal é um de quatro espetos iguais"
+   }
+  ],
+  "163": [
+   {
+    "onde": "*",
+    "raizes": [
+     "water"
+    ],
+    "motivo": "o bebedouro mostra a perda de água livre (o problema), não a conduta"
+   }
+  ],
+  "167": [
+   {
+    "onde": "*",
+    "raizes": [
+     "retira"
+    ],
+    "motivo": "o pedido da esposa e a dúvida do residente estão na vinheta"
+   }
+  ],
+  "174": [
+   {
+    "onde": "*",
+    "raizes": [
+     "agrade"
+    ],
+    "motivo": "o gancho lista as três saídas possíveis"
+   }
+  ],
+  "220": [
+   {
+    "onde": "*",
+    "raizes": [
+     "segura"
+    ],
+    "motivo": "'segura a célula' é a pergunta, não o mecanismo"
+   }
+  ],
+  "223": [
+   {
+    "onde": "*",
+    "raizes": [
+     "sigilo"
+    ],
+    "motivo": "o pedido de sigilo está na vinheta"
+   }
+  ],
+  "226": [
+   {
+    "onde": "*",
+    "raizes": [
+     "rastre"
+    ],
+    "motivo": "rastreamento é o tema; a resposta é quando e como"
+   }
+  ],
+  "233": [
+   {
+    "onde": "*",
+    "raizes": [
+     "thre"
+    ],
+    "motivo": "'three' é numeral comum"
+   }
+  ],
+  "248": [
+   {
+    "onde": "*",
+    "raizes": [
+     "format"
+    ],
+    "motivo": "'formato' da frase do CTA, sem relação com formato"
+   }
+  ],
+  "265": [
+   {
+    "onde": "*",
+    "raizes": [
+     "joelho"
+    ],
+    "motivo": "a cirurgia do joelho está na vinheta"
+   }
+  ],
+  "293": [
+   {
+    "onde": "*",
+    "raizes": [
+     "respei"
+    ],
+    "motivo": "'tom respeitoso' descreve o clima da imagem"
+   },
+   {
+    "onde": "*",
+    "raizes": [
+     "respec"
+    ],
+    "motivo": "'respectful mood' é o tom do prompt"
+   }
+  ],
+  "305": [
+   {
+    "onde": "*",
+    "raizes": [
+     "quadri"
+    ],
+    "motivo": "o quadril é o tema e está na vinheta"
+   }
+  ],
+  "307": [
+   {
+    "onde": "*",
+    "raizes": [
+     "preocu"
+    ],
+    "motivo": "os pais preocupados estão na vinheta"
+   }
+  ],
+  "319": [
+   {
+    "onde": "*",
+    "raizes": [
+     "proges"
+    ],
+    "motivo": "a 17-OH-progesterona normal está na vinheta"
+   }
+  ],
+  "334": [
+   {
+    "onde": "*",
+    "raizes": [
+     "mama"
+    ],
+    "motivo": "o câncer de mama está na vinheta; a pergunta é o mecanismo"
+   }
+  ],
+  "335": [
+   {
+    "onde": "*",
+    "raizes": [
+     "sobrin"
+    ],
+    "motivo": "a sobrinha nomeada está na vinheta; a pergunta é quem decide"
+   }
+  ]
+ }
+}

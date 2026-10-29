@@ -89,7 +89,20 @@ for (const p of escolhidos) {
     [lit(uuid.get(p.id)), lit(d1), lit(pl.data_prova_step2ck), pl.step1_aprovado, pl.step2ck_aprovado, lit(pl.data_matricula)].join(",") + ");\n";
 }
 sql += "insert into public.configuracoes (user_id, dados) values (" + lit(uuid.get(escolhidos[0].id)) + ", jsonb_build_object('dataProva', " + lit(coorte.planos[escolhidos[0].id].data_prova_step1) + "));\n";
+/* banco de questões e simulados completos contam como atividade: uma resposta recente,
+   uma antiga (não muda nada) e um simulado completo, cujo atualizado_em vem do gatilho */
+const respostasExtra = {
+  [escolhidos[1].id]: [{ questao_id: "R2A-S1-0001", step: "step1", resposta: "A", modo: "cronometrado", origem: "banco", respondida_em: new Date(agora.getTime() - 3600e3).toISOString() }],
+  [escolhidos[2].id]: [{ questao_id: "R2A-S1-0002", step: "step1", resposta: null, modo: "tutor", origem: "banco", respondida_em: new Date(agora.getTime() - 400 * 86400e3).toISOString() }]
+};
+for (const [pid, linhas] of Object.entries(respostasExtra)) for (const r of linhas) {
+  sql += "insert into public.respostas_item (user_id, questao_id, step, resposta, modo, origem, respondida_em) values (" +
+    [lit(uuid.get(pid)), lit(r.questao_id), lit(r.step), lit(r.resposta), lit(r.modo), lit(r.origem), lit(r.respondida_em)].join(",") + ");\n";
+}
+const comCompleto = escolhidos[3];
+sql += "insert into public.simulados_completos (user_id, step, tipo, formulario_id, formulario, sessao) values (" + lit(uuid.get(comCompleto.id)) + ", 'step1', 'prontidao', 'teste', '{\"blocos\": [[\"R2A-S1-0003\"]]}'::jsonb, '{\"bloco_atual\": 0}'::jsonb);\n";
 sql += "commit;\n";
+sql += "select coalesce(jsonb_object_agg(user_id, atualizado_em), '{}'::jsonb) from public.simulados_completos;\n";
 sql += "select jsonb_agg(r) from public.r2a_resumo_interno(" + arr([...uuid.values()], "uuid") + ", '" + TZ + "', " + lit(agora.toISOString()) + ") as r;\n";
 
 const dir = mkdtempSync(join(tmpdir(), "r2a-"));
@@ -101,7 +114,9 @@ chmodSync(arq, 0o644);
 sh("dropdb --if-exists " + DB + " && createdb " + DB);
 psql("-q -v ON_ERROR_STOP=1 -d " + DB + " -f " + join(raiz, "supabase/teste-local/01-simula-supabase.sql") + " -f " + join(raiz, "supabase/schema.sql") + " >/dev/null");
 const saida = psql("-q -At -v ON_ERROR_STOP=1 -d " + DB + " -f " + arq);
-const linhasSql = JSON.parse(saida.trim().split("\n").pop());
+const linhasSaida = saida.trim().split("\n");
+const linhasSql = JSON.parse(linhasSaida.pop());
+const atualizadoCompleto = JSON.parse(linhasSaida.pop());
 
 /* ---------- comparação ---------- */
 const porId = new Map(linhasSql.map((l) => [l.user_id, l]));
@@ -123,6 +138,8 @@ for (const p of escolhidos) {
     presenca: coorte.presenca[p.id],
     plano: p === escolhidos[0] ? { ...coorte.planos[p.id], data_prova_step1: null } : coorte.planos[p.id],
     configuracoes: p === escolhidos[0] ? { dataProva: coorte.planos[p.id].data_prova_step1 } : null,
+    respostas: respostasExtra[p.id] || [],
+    simuladosCompletos: atualizadoCompleto[id] ? [{ atualizado_em: atualizadoCompleto[id] }] : [],
     agora
   });
   const db = porId.get(id);
@@ -153,6 +170,12 @@ for (const p of escolhidos) {
   confere(n + ": garantia", a1.garantia.cumpre === a2.garantia.cumpre && JSON.stringify(a1.garantia.prazo) === JSON.stringify(a2.garantia.prazo));
   confere(n + ": prontidão", a1.prontidao.step1.status === a2.prontidao.step1.status && a1.prontidao.step2ck.status === a2.prontidao.step2ck.status);
   console.log((falhas ? "" : "ok ") + n.padEnd(18) + " status " + a2.status.padEnd(8) + " riscos " + (a2.riscos.map((r) => r.codigo).join(",") || "-"));
+}
+/* a resposta recente no banco e o simulado completo de fato movem a última atividade */
+{
+  const r1 = porId.get(uuid.get(escolhidos[1].id)), r3 = porId.get(uuid.get(comCompleto.id));
+  confere("resposta do banco entra na última atividade", Date.parse(r1.ultima_atividade) >= Date.parse(respostasExtra[escolhidos[1].id][0].respondida_em), r1.ultima_atividade);
+  confere("simulado completo entra na última atividade", Date.parse(r3.ultima_atividade) === Date.parse(atualizadoCompleto[uuid.get(comCompleto.id)]), r3.ultima_atividade);
 }
 /* série diária (r2a_atividade_diaria x atividadeDiaria) nos três primeiros perfis */
 for (const p of escolhidos.slice(0, 3)) {

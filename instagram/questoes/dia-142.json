@@ -1,0 +1,96 @@
+{
+  "dia": 142,
+  "data": "2027-03-23",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Nódulo pulmonar incidental",
+  "conceito": "Incidental pulmonary nodule: compare with prior imaging first",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-24",
+  "tom": null,
+  "gancho": "TC de abdome para cólica renal e, de brinde, um *nódulo no pulmão*. E agora?",
+  "gancho_apoio": "Achado por acaso às 3 da manhã: o radiologista já foi dormir, você não.",
+  "imagem": {
+    "arquivo": "dia-142.png",
+    "cena": "Dona Térmica, de lupa, examina uma figurinha redonda colada numa folha de álbum em forma de pulmão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica examina com a lupa uma figurinha redonda numa folha de álbum em forma de pulmão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-142-macete.png",
+    "cena": "Callback: ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho, e um selo verde de aprovado aparece entre os dois. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um álbum antigo mostra a mesma figurinha, igual; um selo verde aparece entre os dois álbuns."
+  },
+  "questao": {
+    "vinheta": "A 63-year-old man who quit smoking 5 years ago after 30 pack-years undergoes abdominal CT for flank pain. The lung bases show a 9-mm solid nodule in the right lower lobe. He has no respiratory symptoms. He had a chest CT at another hospital 3 years ago.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Whole-body PET-CT scan now",
+        "quiz": "PET-CT now"
+      },
+      "B": {
+        "texto": "Compare with the prior CT scan",
+        "quiz": "Get the old CT"
+      },
+      "C": {
+        "texto": "CT-guided transthoracic biopsy",
+        "quiz": "CT-guided biopsy"
+      },
+      "D": {
+        "texto": "Low-dose chest CT in 12 months",
+        "quiz": "Repeat CT in 12 months"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Nódulo incidental: *compare* com a imagem antiga",
+    "certa": [
+      "Diante de um nódulo pulmonar achado por acaso, o primeiro passo é procurar exames anteriores. Um nódulo sólido sem crescimento por 2 anos ou mais é considerado benigno e não precisa de seguimento. Se não houver imagem antiga, a conduta segue a Fleischner pelo tamanho e pelo risco: aqui, 9 mm em ex-tabagista pesado levaria a TC em 3 meses, PET-CT ou biópsia."
+    ],
+    "termos": [
+      "incidental pulmonary nodule",
+      "prior imaging",
+      "Fleischner Society",
+      "2-year stability"
+    ],
+    "erradas": {
+      "A": "O PET-CT pode entrar depois, mas não antes de saber se o nódulo já existia e estava estável.",
+      "C": "A biópsia é invasiva e pode ser desnecessária se o nódulo estiver estável há 3 anos.",
+      "D": "Esperar 12 meses é longo demais para um nódulo sólido de 9 mm em paciente de alto risco sem imagem anterior."
+    },
+    "macete": {
+      "frase": "*Abra o álbum antigo* antes de pedir figurinha nova",
+      "apoio": "Sólido estável por 2 anos ou mais é benigno; sem imagem antiga, entra a régua da Fleischner.",
+      "fala": "Antes do PET, abre o álbum velho. Figurinha repetida a gente não cola duas vezes."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: o radiologista achou um nódulo que ninguém procurava. O tamanho, o cigarro e o resto da história estão na vinheta. Qual é o primeiro passo?",
+    "palavras_chave": [
+      "former smoker",
+      "solid lung nodule",
+      "incidental finding",
+      "abdominal CT"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pneumologia",
+      "#Pulmonology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo de 9 mm achado por acaso e TC de tórax de 3 anos atrás: 1º passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

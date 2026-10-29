@@ -1,0 +1,96 @@
+{
+  "dia": 330,
+  "data": "2027-09-27",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Giardíase",
+  "conceito": "Giardia lamblia: fatty diarrhea after drinking stream water, cysts and trophozoites in stool",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-28",
+  "tom": null,
+  "gancho": "Água de cachoeira de graça: *a conta chega em duas semanas, parcelada*",
+  "gancho_apoio": "O Mito recebeu um visitante que desceu a cachoeira de carona no cantil.",
+  "imagem": {
+    "arquivo": "dia-330.png",
+    "cena": "O Mito, de jaleco amassado, enche um cantil na beira de uma cachoeira; sombrinhas misteriosas descem a água e entram no cantil, e numa pedra uma maquininha de cartão começa a imprimir. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Água de cachoeira de graça: a conta chega em duas semanas, parcelada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-330-macete.png",
+    "cena": "Callback: criaturas em forma de pera, com dois núcleos que parecem olhos, estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Mito oferece uma chaleira fervendo e um filtro de barro.",
+    "foco": "50% 45%",
+    "alt": "Água de riacho e gordura nas fezes: Giardia"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool is negative for blood and leukocytes.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Giardia lamblia",
+        "quiz": "Giardia lamblia"
+      },
+      "B": {
+        "texto": "Entamoeba histolytica",
+        "quiz": "Entamoeba histolytica"
+      },
+      "C": {
+        "texto": "Cryptosporidium parvum",
+        "quiz": "Cryptosporidium parvum"
+      },
+      "D": {
+        "texto": "Cyclospora cayetanensis",
+        "quiz": "Cyclospora cayetanensis"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Água de riacho e gordura nas fezes: *Giardia*",
+    "certa": [
+      "Diarreia gordurosa, fétida e sem sangue, com distensão e gases, em quem bebeu de um riacho sem ferver nem filtrar, é *giardiasis*. A *Giardia lamblia* (G. duodenalis) gruda no duodeno pelo disco ventral, atrapalha a absorção de gordura e não invade, por isso não há sangue nem febre. O diagnóstico é por antígeno ou PCR nas fezes, ou pelo achado de cistos e trofozoítos, e as opções de tratamento incluem tinidazol, metronidazol e nitazoxanida."
+    ],
+    "termos": [
+      "Giardia lamblia",
+      "ventral sucking disk",
+      "steatorrhea",
+      "stool antigen test"
+    ],
+    "erradas": {
+      "B": "*Entamoeba histolytica* invade a mucosa e causa disenteria com sangue e abscesso hepático, com trofozoítos que fagocitam hemácias.",
+      "C": "*Cryptosporidium* dá diarreia aquosa, grave nos imunossuprimidos, e aparece como oocistos ácido-resistentes, sem flagelo.",
+      "D": "*Cyclospora* causa diarreia aquosa prolongada ligada a frutas e verduras frescas e mostra oocistos ácido-resistentes."
+    },
+    "macete": {
+      "frase": "*Giardia é a pera de óculos que gruda de ventosa no duodeno*: a gordura passa direto e boia",
+      "apoio": "Os dois núcleos parecem óculos e o disco ventral é a ventosa que gruda nas vilosidades e atrapalha a absorção de gordura: diarreia gordurosa, fétida, que boia, sem sangue e sem leucócitos. Pega pela água de riacho sem tratar. Entamoeba dá sangue; Cryptosporidium pesa no imunossuprimido. Cachoeira linda, água fervida ou filtrada.",
+      "fala": "Sem oxigênio eu não trabalho. E essa pera nem mitocôndria de verdade tem."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no acampamento: o Mito encheu o cantil na cachoeira e esqueceu que nem toda água de graça sai barata. Quatro protozoários, e a vinheta descreve as fezes com um detalhe que o NBME repete há décadas.",
+    "palavras_chave": [
+      "travel and outdoor exposure",
+      "diarrhea",
+      "parasitology",
+      "microbiology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Parasitologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebeu água de riacho e há 2 semanas tem diarreia gordurosa que boia: qual?"
+  },
+  "reel": null,
+  "exemplo": false
+}

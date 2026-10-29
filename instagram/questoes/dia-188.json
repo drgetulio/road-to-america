@@ -1,0 +1,87 @@
+{
+  "dia": 188,
+  "data": "2027-05-08",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Morte encefálica e doação",
+  "conceito": "Brain death and donation: the organ procurement organization approaches the family",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-09",
+  "tom": "acolhedor",
+  "gancho": "Morte encefálica e doação: quem conversa com a *família*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-188.png",
+    "cena": "Uma placa de trânsito em forma de balança da justiça diante da porta de uma sala de família com luz suave; sobre uma mesinha, uma pequena luminária em forma de coração brilha com luz suave.",
+    "foco": "50% 35%",
+    "alt": "Morte encefálica e doação: quem conversa com a família?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-188-macete.png",
+    "cena": "Uma figura estilizada de jaleco branco entrega um bastão de revezamento em forma de coração a outra figura estilizada de colete verde, que vai entrar na sala da família; pela janela, uma van branca com faixa verde e um coração na lateral está estacionada.",
+    "alt": "Quem declara não pede: a OPO conversa"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man has been declared dead by neurologic criteria after a traumatic brain injury. He remains on mechanical ventilation in the ICU. His organ donor registration status is unknown. The physician who declared death is about to meet the family.",
+    "pergunta": "Who should first discuss organ donation with the family?",
+    "alternativas": {
+      "A": {
+        "texto": "A trained organ procurement organization requester",
+        "quiz": "Trained OPO requester"
+      },
+      "B": {
+        "texto": "The physician who declared death by neurologic criteria",
+        "quiz": "Physician who declared death"
+      },
+      "C": {
+        "texto": "The neurosurgeon who treated him in the ICU",
+        "quiz": "Treating neurosurgeon"
+      },
+      "D": {
+        "texto": "The hospital ethics committee chair",
+        "quiz": "Ethics committee chair"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Quem declara não pede: a *OPO* conversa",
+    "certa": [
+      "Nos EUA, o hospital é obrigado a notificar a *organ procurement organization* (OPO) de toda morte iminente ou ocorrida. A conversa sobre doação deve ser feita por profissional treinado da OPO (*designated requester*), separada da notícia da morte (*decoupling*). Isso aumenta o consentimento e evita que a família ache que a equipe desistiu do paciente para conseguir órgãos."
+    ],
+    "termos": [
+      "brain death",
+      "organ procurement organization",
+      "designated requester",
+      "decoupling"
+    ],
+    "erradas": {
+      "B": "Quem declarou a morte deve dar a notícia e apoiar a família, mas não fazer o pedido, para não misturar os dois papéis.",
+      "C": "O neurocirurgião também cuidou do paciente; a abordagem deve ser feita pela equipe treinada da OPO.",
+      "D": "O comitê de ética entra em conflito ou dúvida; a solicitação de rotina é papel da OPO."
+    },
+    "macete": {
+      "frase": "*Quem declara não pede.* Pense num *bastão de revezamento* em forma de coração: o médico entrega a notícia com cuidado e passa o bastão para a equipe da OPO, treinada para essa conversa.",
+      "apoio": "O NBME oferece o médico assistente fazendo o pedido ou esperar a família tocar no assunto; a resposta é notificar a OPO e deixar a abordagem com a equipe treinada.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um tema delicado do Sábado Sem Viés. A morte foi declarada por critérios neurológicos, o paciente segue no ventilador e a família está na sala ao lado. A prova quer saber quem faz o pedido de doação.",
+    "palavras_chave": [
+      "traumatic brain injury",
+      "death by neurologic criteria",
+      "ICU",
+      "family meeting"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quem conversa sobre doação com a família?"
+  },
+  "exemplo": false
+}

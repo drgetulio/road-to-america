@@ -1,0 +1,101 @@
+{
+  "dia": 345,
+  "data": "2027-10-12",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
+  "topico": "Marcos do desenvolvimento",
+  "conceito": "Two-year milestones: about 50 words and two-word phrases",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Dia das Crianças (12/10).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-13",
+  "tom": null,
+  "gancho": "Dia das Crianças: o primo fala frases e *a família pediu VAR*",
+  "gancho_apoio": "Dia das Crianças. Consulta de rotina aos 2 anos e um primo que já fala em frases.",
+  "imagem": {
+    "arquivo": "dia-345.png",
+    "cena": "Festa de Dia das Crianças num campinho de futebol de brinquedo, com bandeirinhas e um relógio sem números pendurado no alambrado; dois balões de fala, sem letras, trocam passes com uma bola pequena; ao lado, um balão de fala maior, do primo, faz embaixadinha; a Dona Térmica assiste da arquibancada com a prancheta.",
+    "foco": "50% 35%",
+    "alt": "Dia das Crianças: o primo fala frases e a família pediu VAR"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-345-macete.png",
+    "cena": "Callback: o time completo de pequenos balões de fala posa para a foto oficial com camisas iguais, e dois deles à frente fazem a tabelinha com a bola; cada um ganha uma medalha verde; a Dona Térmica levanta a prancheta, satisfeita.",
+    "foco": "50% 45%",
+    "alt": "Aos 2 anos: two-word phrases e cerca de 50 palavras"
+  },
+  "questao": {
+    "vinheta": "At a 24-month checkup, the parents of a girl worry because her cousin speaks in sentences. She runs, kicks a ball, and climbs stairs holding the rail. She says about 50 words, combines two words (\"more juice\"), follows one-step commands, and points to body parts. Hearing screening is normal.",
+    "pergunta": "Which best describes her development?",
+    "alternativas": {
+      "A": {
+        "texto": "Normal development for age",
+        "quiz": "Normal for age"
+      },
+      "B": {
+        "texto": "Expressive language delay",
+        "quiz": "Expressive language delay"
+      },
+      "C": {
+        "texto": "Receptive language delay",
+        "quiz": "Receptive language delay"
+      },
+      "D": {
+        "texto": "Global developmental delay",
+        "quiz": "Global developmental delay"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Aos 2 anos: *two-word phrases* e cerca de 50 palavras",
+    "certa": [
+      "Aos 24 meses, frases de duas palavras e um vocabulário de cerca de 50 palavras estão dentro do esperado, e ela também corre, chuta bola e segue comandos simples. Os *developmental milestones* estão adequados nos domínios motor, de linguagem e social, então a conduta é tranquilizar a família e seguir a vigilância de rotina (*developmental surveillance*). Falar em frases completas é esperado mais perto dos 3 anos."
+    ],
+    "termos": [
+      "developmental milestones",
+      "two-word phrases",
+      "expressive language",
+      "developmental surveillance"
+    ],
+    "erradas": {
+      "B": "Atraso expressivo seria não juntar duas palavras aos 24 meses ou ter vocabulário muito pequeno, o que não é o caso.",
+      "C": "Atraso receptivo apareceria como não seguir comandos nem apontar partes do corpo, e ela faz as duas coisas.",
+      "D": "Atraso global exige atraso em dois ou mais domínios; o motor e a linguagem dela estão normais."
+    },
+    "macete": {
+      "frase": "*Aos 2 anos, joga de dois*: tabelinha de duas palavras",
+      "apoio": "Craque de 2 anos tem uns 50 jogadores no elenco (palavras) e faz tabelinha de dois (frases de duas palavras), segue ordem de um passo e aponta partes do corpo. Inteligibilidade para estranhos: cerca de 50% aos 2, 75% aos 3 e quase 100% aos 4. Primo que fala em frases é igual colega que já fez 3 mil questões: comparação não é diagnóstico.",
+      "fala": "Já vi esse caso às 3 da manhã. O primo também."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia das Crianças: o primo fala frases e a família pediu VAR na consulta de 2 anos. A Dona Térmica revê o lance com calma; o que a criança faz está na vinheta, e a pergunta é se o juiz apita ou deixa seguir.",
+    "palavras_chave": [
+      "well-child visit",
+      "child development",
+      "pediatrics",
+      "parental concerns"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#DesenvolvimentoInfantil",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "24 meses, 50 palavras e frases de duas: atraso ou dentro do esperado?"
+  },
+  "reel": null,
+  "exemplo": false
+}

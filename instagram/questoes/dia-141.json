@@ -1,0 +1,95 @@
+{
+  "dia": 141,
+  "data": "2027-03-22",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Doenças priônicas",
+  "conceito": "Prion disease: misfolded PrP beta-sheets, spongiform encephalopathy, rapid dementia with myoclonus",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-23",
+  "tom": null,
+  "gancho": "Esteira de sushi às segundas: *um prato veio tampado*",
+  "gancho_apoio": "O Macrô come de tudo, mas hoje está segurando os hashis no ar.",
+  "imagem": {
+    "arquivo": "dia-141.png",
+    "cena": "O Macrô está sentado diante de uma esteira de sushi; passam pratinhos variados, e um deles vem coberto por uma tampa de metal, enquanto ele segura os hashis no ar, desconfiado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô na esteira de sushi, de hashis no ar, desconfiado de um prato coberto por tampa de metal."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-141-macete.png",
+    "cena": "Callback: a tampa se levanta e fitas de papel em espiral viram leques pregueados em efeito dominó, cada leque ensinando a fita vizinha a dobrar errado; o Macrô devolve o prato para a esteira. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Fitas em espiral viram leques pregueados em efeito dominó; o Macrô devolve o prato."
+  },
+  "questao": {
+    "vinheta": "A 61-year-old woman has 4 months of rapidly progressive memory loss, gait ataxia and myoclonic jerks triggered by sudden noise. EEG shows periodic sharp-wave complexes, and cerebrospinal fluid 14-3-3 protein is elevated. Diffusion-weighted brain MRI shows cortical ribboning.",
+    "pergunta": "Which mechanism underlies this disease?",
+    "alternativas": {
+      "A": {
+        "texto": "Persistent defective measles virus infection",
+        "quiz": "Persistent measles virus"
+      },
+      "B": {
+        "texto": "JC virus infection of oligodendrocytes",
+        "quiz": "JC virus infection"
+      },
+      "C": {
+        "texto": "Hyperphosphorylated tau in neurofibrillary tangles",
+        "quiz": "Hyperphosphorylated tau"
+      },
+      "D": {
+        "texto": "Prion protein refolded into beta-pleated sheets",
+        "quiz": "Misfolded prion protein"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Príon: *hélice alfa vira folha beta*",
+    "certa": [
+      "Declínio cognitivo rápido, mioclonia de sobressalto, complexos periódicos no EEG, proteína 14-3-3 no liquor e fita cortical na ressonância apontam para Creutzfeldt-Jakob. Nela, a PrPc, rica em hélices alfa, muda para a forma PrPsc, rica em folhas beta pregueadas, que resiste a proteases e converte as moléculas normais vizinhas. O resultado é a degeneração espongiforme: vacúolos na substância cinzenta, sem inflamação."
+    ],
+    "termos": [
+      "prion protein",
+      "beta-pleated sheet",
+      "spongiform encephalopathy",
+      "Creutzfeldt-Jakob disease"
+    ],
+    "erradas": {
+      "A": "O sarampo defeituoso persistente causa panencefalite esclerosante subaguda, em geral anos depois de sarampo na infância.",
+      "B": "O vírus JC infecta oligodendrócitos e causa leucoencefalopatia multifocal progressiva em imunossuprimidos, com lesões de substância branca.",
+      "C": "Tau hiperfosforilada em emaranhados neurofibrilares é achado da doença de Alzheimer, de evolução lenta, em anos."
+    },
+    "macete": {
+      "frase": "Príon é *origami mal dobrado*: a fita em espiral vira leque pregueado",
+      "apoio": "Sem inflamação e sem DNA: sobram buraquinhos, como numa esponja (espongiforme), e o príon resiste à esterilização comum.",
+      "fala": "Comi de tudo nessa vida. Origami mal dobrado eu devolvo para a esteira."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: um quadro neurológico e exames na vinheta que contam a história toda. Qual mecanismo está por trás?",
+    "palavras_chave": [
+      "rapidly progressive dementia",
+      "myoclonus",
+      "periodic sharp waves",
+      "14-3-3 protein"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Neurologia",
+      "#Neurology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Demência rápida, mioclonia ao susto e 14-3-3 no liquor: qual mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 250,
+  "data": "2027-07-09",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estatinas",
+  "conceito": "Statins: inhibit HMG-CoA reductase and upregulate LDL receptors, watch for myopathy",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-10",
+  "tom": null,
+  "gancho": "Sextou na Farmácia com o Mito: *o LDL caiu*, e a pergunta é como",
+  "gancho_apoio": "Mito em greve: o expediente com que todo residente sonha e nenhum consegue.",
+  "imagem": {
+    "arquivo": "dia-250.png",
+    "cena": "Uma fábrica em forma de fígado com uma faixa de greve em branco na porta; Mito, de jaleco amassado e café, faz piquete na calçada com cara de quem não dorme desde a faculdade. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Mito faz piquete diante de uma fábrica em forma de fígado em greve"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-250-macete.png",
+    "cena": "A fábrica, com a engrenagem ainda travada, abre dezenas de portinhas na parede, e as bolinhas de LDL são puxadas da rua para dentro como por um aspirador gentil; a fila da padaria some. Na calçada, Mito alonga a coxa com cara de dorzinha, sem largar o café.",
+    "foco": "50% 40%",
+    "alt": "Sem fábrica própria, o fígado abre portas para o LDL"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with type 2 diabetes and an LDL cholesterol of 162 mg/dL begins atorvastatin. Six weeks later, his LDL is 88 mg/dL. He reports mild, symmetric thigh aches, and his creatine kinase level is normal.",
+    "pergunta": "Which mechanism best explains the fall in his serum LDL?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of intestinal cholesterol absorption",
+        "quiz": "Less gut absorption"
+      },
+      "B": {
+        "texto": "Activation of lipoprotein lipase via PPAR-alpha",
+        "quiz": "LPL via PPAR-alpha"
+      },
+      "C": {
+        "texto": "Increased expression of hepatic LDL receptors",
+        "quiz": "More LDL receptors"
+      },
+      "D": {
+        "texto": "Sequestration of bile acids in the gut",
+        "quiz": "Bile acid sequestration"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Menos síntese, *mais receptor*",
+    "certa": [
+      "A atorvastatina inibe a *HMG-CoA reductase*, etapa limitante da síntese de colesterol no fígado. Com menos colesterol dentro do hepatócito, o *SREBP-2* é ativado e aumenta a expressão de *LDL receptors* na membrana, que tiram o LDL do sangue. O efeito adverso clássico é a *statin-associated myopathy* (de mialgia com CK normal até rabdomiólise), com risco maior junto de genfibrozila ou de inibidores do CYP3A4."
+    ],
+    "termos": [
+      "HMG-CoA reductase",
+      "LDL receptor",
+      "SREBP-2",
+      "statin myopathy"
+    ],
+    "erradas": {
+      "A": "Bloquear a absorção intestinal pela NPC1L1 é o mecanismo da *ezetimibe*.",
+      "B": "Ativar a lipoproteína lipase via PPAR-alfa é o mecanismo dos *fibrates*, que baixam mais o triglicerídeo.",
+      "D": "Prender ácidos biliares no intestino é o mecanismo das resinas, como a *cholestyramine*."
+    },
+    "macete": {
+      "frase": "Estatina *fecha a fábrica* e *abre as portas*",
+      "apoio": "Com a HMG-CoA redutase travada, o fígado fica sem colesterol próprio e faz o que todo mundo faz no fim do mês: busca na rua. Ele abre mais receptores de LDL e esvazia a fila do sangue. A dorzinha na coxa do Mito é a mialgia; com CK normal, segue o jogo.",
+      "fala": "Sem oxigênio eu não trabalho. Sem HMG-CoA redutase, o fígado também não."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o Mito. Um remédio novo e um LDL que despencou, tudo na vinheta. Qual mecanismo explica a queda do LDL?",
+    "palavras_chave": [
+      "dyslipidemia",
+      "LDL cholesterol",
+      "lipid-lowering therapy",
+      "Step 1 pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Farmacologia",
+      "#Cardiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Atorvastatina e LDL despencando: qual mecanismo baixou o LDL?"
+  },
+  "reel": null,
+  "exemplo": false
+}

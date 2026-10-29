@@ -1,0 +1,88 @@
+{
+  "dia": 179,
+  "data": "2027-04-29",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Apendicite aguda",
+  "conceito": "Suspected appendicitis: CT in adults, ultrasound first in children and in pregnancy",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-30",
+  "tom": null,
+  "gancho": "Rodízio de Quinta: *uma dor que mudou de endereço* e quatro espetos de imagem",
+  "gancho_apoio": "Febre baixa, leucocitose e o Garçom Espetinho com o cardápio de imagem na mão.",
+  "imagem": {
+    "arquivo": "dia-179.png",
+    "cena": "No salão do rodízio, o Garçom Espetinho fica entre o buffet de saladas e um espeto de picanha chiando, sem decidir para onde ir. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho entre o buffet de saladas e um espeto de picanha, sem decidir para onde ir."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-179-macete.png",
+    "cena": "Callback: o Garçom Espetinho serve a salada com uma colher em forma de sonda de ultrassom, e o espeto de picanha volta para a churrasqueira; ao fundo, uma porta redonda em túnel fica de reserva. Fundo limpo.",
+    "alt": "O garçom serve a salada com uma colher-sonda de ultrassom; a picanha volta para a churrasqueira."
+  },
+  "questao": {
+    "vinheta": "At 18 weeks' gestation, a 27-year-old woman has 20 hours of periumbilical pain that has moved to the right lower abdomen, with nausea and a temperature of 38.0°C. She has right-sided abdominal tenderness. Leukocyte count is 14,500/mm3. Fetal heart rate is normal.",
+    "pergunta": "Which is the most appropriate initial imaging study?",
+    "alternativas": {
+      "A": {
+        "texto": "Graded-compression ultrasonography",
+        "quiz": "Ultrasound"
+      },
+      "B": {
+        "texto": "CT of the abdomen and pelvis with IV contrast",
+        "quiz": "Contrast CT"
+      },
+      "C": {
+        "texto": "Abdominal x-ray",
+        "quiz": "Abdominal x-ray"
+      },
+      "D": {
+        "texto": "Barium enema",
+        "quiz": "Barium enema"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Criança e gestante: *ultrassom* primeiro",
+    "certa": [
+      "Na suspeita de *appendicitis*, a imagem inicial depende do paciente: adulto não gestante faz *CT* com contraste; criança e gestante começam pelo *ultrasound*, sem radiação. Se o ultrassom não for conclusivo na gestante, o próximo passo é *MRI* sem gadolínio, e com o diagnóstico vem a apendicectomia, em geral laparoscópica, sem atraso."
+    ],
+    "termos": [
+      "acute appendicitis",
+      "graded-compression ultrasound",
+      "MRI without gadolinium",
+      "CT with IV contrast"
+    ],
+    "erradas": {
+      "B": "A TC é a escolha no adulto não gestante; na gravidez, fica para quando ultrassom e ressonância não estão disponíveis ou não resolvem.",
+      "C": "O raio X de abdome não mostra o apêndice e não serve para diagnosticar apendicite.",
+      "D": "O enema baritado não tem papel no diagnóstico de apendicite e é contraindicado com suspeita de perfuração."
+    },
+    "macete": {
+      "frase": "*Criança e gestante* começam pela *salada* (ultrassom); a *picanha* (TC) é do adulto",
+      "apoio": "Ultrassom inconclusivo na gestante: ressonância sem gadolínio. Com o diagnóstico, apendicectomia sem atraso.",
+      "fala": "Picanha é para adulto sem bebê a bordo. Gestante e criança começam pela salada, doutor."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na cirurgia: uma dor abdominal de história clássica e uma paciente com uma condição especial, que está na vinheta. O garçom tem quatro espetos de imagem.",
+    "palavras_chave": [
+      "18 weeks' gestation",
+      "migrating abdominal pain",
+      "fever",
+      "leukocytosis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gestante de 18 semanas com dor que migrou para a FID: qual a 1ª imagem?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,97 @@
+{
+  "dia": 115,
+  "data": "2027-02-24",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Manguito rotador",
+  "conceito": "Supraspinatus: initiates the first 15 degrees of abduction, empty can test",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-25",
+  "tom": null,
+  "gancho": "Pintor de parede com *o ombro em greve*: qual motor queimou?",
+  "gancho_apoio": "Quatro motores no manguito, um manual aberto e o Seu Allen de chave na mão.",
+  "imagem": {
+    "arquivo": "dia-115.png",
+    "cena": "Num canteiro de obras, Seu Allen confere com o manual aberto um guindaste simpático com quatro cabos coloridos presos na base, parado com o braço caído. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen confere o manual de um guindaste de quatro cabos coloridos, parado com o braço caído."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-115-macete.png",
+    "cena": "Callback: o motorzinho de arranque na base do guindaste ganha um curativo verde, e um motorzão maior (o deltoide) espera a vez para continuar o movimento do braço. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O motorzinho de arranque do guindaste ganha um curativo verde; um motor maior espera a vez."
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man who paints houses has had right shoulder pain for 2 months, worse when working overhead. With his arm abducted to 90 degrees in the scapular plane, internally rotated and thumb pointing down, he has pain and weakness resisting downward pressure. External rotation strength is normal.",
+    "pergunta": "Which muscle is most likely injured?",
+    "alternativas": {
+      "A": {
+        "texto": "Supraspinatus",
+        "quiz": "Supraspinatus"
+      },
+      "B": {
+        "texto": "Infraspinatus",
+        "quiz": "Infraspinatus"
+      },
+      "C": {
+        "texto": "Teres minor",
+        "quiz": "Teres minor"
+      },
+      "D": {
+        "texto": "Subscapularis",
+        "quiz": "Subscapularis"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Supraespinal: começa a abdução e falha na *lata vazia*",
+    "certa": [
+      "O teste da lata vazia (empty can, ou teste de Jobe) avalia o supraespinal, que inicia os primeiros 15 graus de abdução e é inervado pelo nervo supraescapular. É o tendão do manguito rotador que mais se lesa, porque passa sob o acrômio e sofre com o trabalho acima da cabeça. Depois dos 15 graus o deltoide assume, e acima de 90 graus entram trapézio e serrátil anterior."
+    ],
+    "termos": [
+      "supraspinatus",
+      "empty can test",
+      "rotator cuff",
+      "abduction"
+    ],
+    "erradas": {
+      "B": "O infraespinal faz rotação externa, que aqui está normal.",
+      "C": "O redondo menor também faz rotação externa e é inervado pelo nervo axilar; a força de rotação externa está preservada.",
+      "D": "O subescapular faz rotação interna e é testado pelo lift-off e pelo belly press, não pela lata vazia."
+    },
+    "macete": {
+      "frase": "Supraespinal é o *motor de arranque* do guindaste",
+      "apoio": "Pegadinha de prova: O NBME usa um teste por músculo: lata vazia para supraespinal, rotação externa para infraespinal e redondo menor, lift-off e belly press para subescapular.",
+      "fala": "Sobrou peça? Então faltou o motor de arranque."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê, anatomia: um pintor com dor no ombro há dois meses. A posição do teste e a força que falha estão na vinheta, e é ali que o motor queimado aparece.",
+    "palavras_chave": [
+      "shoulder pain",
+      "overhead work",
+      "house painter",
+      "shoulder exam"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Anatomia",
+      "#Anatomy",
+      "#Ortopedia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor e fraqueza no teste do polegar para baixo: qual músculo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

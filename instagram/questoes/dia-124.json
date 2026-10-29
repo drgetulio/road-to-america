@@ -1,0 +1,96 @@
+{
+  "dia": 124,
+  "data": "2027-03-05",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Intoxicação por paracetamol",
+  "conceito": "Acetaminophen overdose: N-acetylcysteine guided by the Rumack-Matthew nomogram",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-06",
+  "tom": "acolhedor",
+  "cvv": true,
+  "gancho": "Exame normal às 4 horas *não é carta de alta*",
+  "gancho_apoio": "Hoje com cuidado: a vinheta fala de uma ingestão intencional, e a linha do CVV 188 está na legenda.",
+  "imagem": {
+    "arquivo": "dia-124.png",
+    "cena": "A Tia Meia-Vida, de prancheta, chega à porta de um armazém em forma de fígado enquanto um carteiro deixa ali um envelope fechado, sem pressa nenhuma. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Tia Meia-Vida chega a um armazém em forma de fígado; um carteiro deixa um envelope fechado na porta."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-124-macete.png",
+    "cena": "Callback: um caminhãozinho verde estaciona, e a Tia Meia-Vida descarrega caixas de potes amarelos cor de enxofre que enchem de novo as prateleiras do armazém fígado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A Tia Meia-Vida descarrega potes amarelos de um caminhãozinho e as prateleiras do armazém voltam a encher."
+  },
+  "questao": {
+    "vinheta": "A 20-year-old woman is brought to the emergency department 4 hours after ingesting about forty 500-mg acetaminophen tablets. She is nauseated but alert, and vital signs are normal. Her 4-hour serum acetaminophen concentration is above the treatment line on the Rumack-Matthew nomogram. AST and ALT are normal.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Deferoxamine",
+        "quiz": "Deferoxamine"
+      },
+      "B": {
+        "texto": "Fomepizole",
+        "quiz": "Fomepizole"
+      },
+      "C": {
+        "texto": "N-acetylcysteine",
+        "quiz": "N-acetylcysteine"
+      },
+      "D": {
+        "texto": "Sodium bicarbonate",
+        "quiz": "Sodium bicarbonate"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Paracetamol: *N-acetilcisteína* pelo nomograma",
+    "certa": [
+      "Na dose tóxica, o paracetamol vira NAPQI pelo CYP2E1, e o NAPQI só é neutralizado pela glutationa do fígado. A N-acetilcisteína repõe a cisteína para refazer a glutationa e protege o fígado, com benefício máximo se começar até 8 horas depois da ingestão. O nível sérico a partir de 4 horas, acima da linha do nomograma de Rumack-Matthew, indica o tratamento mesmo com transaminases normais."
+    ],
+    "termos": [
+      "NAPQI",
+      "glutathione",
+      "N-acetylcysteine",
+      "Rumack-Matthew nomogram"
+    ],
+    "erradas": {
+      "A": "Deferoxamina é o quelante do ferro.",
+      "B": "Fomepizol bloqueia a álcool desidrogenase e é o antídoto de metanol e etilenoglicol.",
+      "D": "Bicarbonato de sódio trata a intoxicação por tricíclicos e alcaliniza a urina na intoxicação por salicilato."
+    },
+    "macete": {
+      "frase": "NAC = *Novo Abastecimento de Cisteína* para o estoque de glutationa",
+      "apoio": "Acima da linha do nomograma, a partir de 4 horas: começa a NAC, mesmo com AST e ALT normais.",
+      "fala": "A transaminase só sobe em 24 a 72 horas. Quem decide hoje é o nível no nomograma."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia. Uma ingestão única, com horário conhecido, e um nível sérico na vinheta que decide o tratamento. Qual antídoto entra agora?",
+    "palavras_chave": [
+      "intentional overdose",
+      "acetaminophen level",
+      "nomogram",
+      "emergency department"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Toxicologia",
+      "#Toxicology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Paracetamol acima da linha do nomograma às 4 horas: qual remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

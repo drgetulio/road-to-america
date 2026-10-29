@@ -1,0 +1,101 @@
+{
+  "dia": 331,
+  "data": "2027-09-28",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Profilaxia da raiva",
+  "conceito": "Rabies post-exposure: wash the wound, give rabies immune globulin and vaccine",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Dia Mundial contra a Raiva (28/9).",
+  "remix_de": null,
+  "explicacao_em": "2027-09-29",
+  "tom": null,
+  "gancho": "Dia Mundial contra a Raiva: *a conta do acampamento chegou no plantão*",
+  "gancho_apoio": "Dia Mundial contra a Raiva. A pia já foi usada; a dúvida é o que vem depois.",
+  "imagem": {
+    "arquivo": "dia-331.png",
+    "cena": "Mesa de primeiros socorros de um acampamento à noite, com um relógio de parede sem números nas 3 horas pendurado numa árvore; a Dona Térmica observa um guaxinim de máscara que espia de trás de uma árvore com uma comanda em branco na mão; ao lado, uma pia com sabão e espuma.",
+    "foco": "50% 35%",
+    "alt": "Um guaxinim espia o acampamento às 3 da manhã"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-331-macete.png",
+    "cena": "Callback: o guaxinim fugitivo para diante de dois escudos lado a lado, um já pronto e brilhante, emprestado, e outro sendo montado peça por peça por pequenos operários; a Dona Térmica confere a prancheta e a pia de sabão continua ao fundo.",
+    "foco": "50% 45%",
+    "alt": "Nunca vacinado: imunoglobulina e vacina, juntas"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man is bitten on the hand by a raccoon while camping 6 hours ago. The animal escaped into the woods. He has never received rabies vaccine. The wound has already been washed thoroughly with soap and water, and his tetanus immunization is current.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Rabies vaccine series alone",
+        "quiz": "Vaccine alone"
+      },
+      "B": {
+        "texto": "Rabies immune globulin alone",
+        "quiz": "Immune globulin alone"
+      },
+      "C": {
+        "texto": "Rabies immune globulin and vaccine",
+        "quiz": "RIG + vaccine"
+      },
+      "D": {
+        "texto": "Observe for 10 days before treating",
+        "quiz": "Observe 10 days"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Nunca vacinado: *imunoglobulina e vacina*, juntas",
+    "certa": [
+      "Guaxinim é animal silvestre de alto risco e fugiu, então não há como observar. Quem nunca foi vacinado recebe a *post-exposure prophylaxis* completa: lavar bem a ferida, infiltrar a *rabies immune globulin* (20 UI/kg, o máximo possível na ferida) e começar a *rabies vaccine* nos dias 0, 3, 7 e 14. A imunoglobulina protege já, enquanto a vacina leva cerca de 7 a 10 dias para gerar anticorpo próprio."
+    ],
+    "termos": [
+      "post-exposure prophylaxis",
+      "rabies immune globulin",
+      "rabies vaccine",
+      "wound washing"
+    ],
+    "erradas": {
+      "A": "Vacina sozinha deixa uma janela de 7 a 10 dias sem anticorpo; ela basta apenas para quem já tinha esquema prévio completo (doses nos dias 0 e 3, sem imunoglobulina).",
+      "B": "A imunoglobulina é proteção passiva e passageira; sem a vacina, não surge imunidade duradoura.",
+      "D": "Observar por 10 dias só vale para cão, gato ou furão saudável e disponível; bicho silvestre que fugiu pede profilaxia imediata."
+    },
+    "macete": {
+      "frase": "*Lava, empresta e constrói*: imunoglobulina emprestada e vacina construída",
+      "apoio": "Bicho silvestre que morde e foge nos EUA (morcego, guaxinim, raposa, gambá) é calote: ninguém vai observar o animal por 10 dias. Lava bem a ferida, empresta o escudo pronto (a imunoglobulina, infiltrada na ferida) e constrói o próprio (a vacina nos dias 0, 3, 7 e 14). Observar 10 dias só vale para cão, gato ou furão saudáveis.",
+      "fala": "Já vi esse caso às 3 da manhã. O guaxinim nunca volta para pagar."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial contra a Raiva, Plantão de Terça no acampamento: um guaxinim apareceu às 3 da manhã e a ferida já foi lavada. Quatro condutas, e a caderneta de vacina do paciente está escrita na vinheta.",
+    "palavras_chave": [
+      "animal bite",
+      "wound care",
+      "emergency department",
+      "infectious disease"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Raiva",
+      "#Rabies",
+      "#ClinicaMedica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Guaxinim mordeu e fugiu, ferida lavada, nunca vacinado: o que fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 365,
+  "data": "2027-11-01",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Prostatite bacteriana aguda",
+  "conceito": "Acute bacterial prostatitis: E. coli in older men, tender boggy prostate",
+  "personagem": "Macrô",
+  "gancho_data": "Início do Novembro Azul 2027 e dia 365: formatura do programa.",
+  "remix_de": null,
+  "explicacao_em": "2027-11-02",
+  "tom": "normal",
+  "gancho": "Dia 365: formatura no ônibus, *e o Macrô traz a última*",
+  "gancho_apoio": "Novembro Azul e encerramento do programa: uma última questão para fechar o ano.",
+  "imagem": {
+    "arquivo": "dia-365.png",
+    "cena": "O ônibus Road to America parado numa festa de formatura com balões; na porta, o Macrô, de capelo, segura um canudo de diploma sem texto, e um micróbio misterioso, escondido sob uma beca pequena, espia atrás dele. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô, de capelo, segura um diploma na porta do ônibus Road to America, com um micróbio escondido atrás dele."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-365-macete.png",
+    "cena": "Callback: Macrô apresenta o bacilo em bastão gram-negativo, agora identificado, ao lado de uma noz morna e brilhante, enquanto os outros personagens aplaudem dentro do ônibus com confete azul, verde e amarelo.",
+    "foco": "50% 45%",
+    "alt": "Prostatite aguda depois dos 35: Escherichia coli"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man has 2 days of fever of 39.0°C, chills, dysuria, urinary frequency, perineal pain, and difficulty starting his stream. Digital rectal examination reveals an exquisitely tender, warm, boggy prostate. Urinalysis shows pyuria and bacteriuria.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Chlamydia trachomatis",
+        "quiz": "C. trachomatis"
+      },
+      "B": {
+        "texto": "Escherichia coli",
+        "quiz": "E. coli"
+      },
+      "C": {
+        "texto": "Neisseria gonorrhoeae",
+        "quiz": "N. gonorrhoeae"
+      },
+      "D": {
+        "texto": "Staphylococcus saprophyticus",
+        "quiz": "S. saprophyticus"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Prostatite aguda depois dos 35: *Escherichia coli*",
+    "certa": [
+      "Febre, calafrios, sintomas urinários, dor perineal e próstata muito dolorosa, quente e amolecida ao toque são *acute bacterial prostatitis*. Acima dos 35 anos, a causa mais comum é *Escherichia coli* e outros gram-negativos do trato urinário, que sobem pela uretra (*ascending infection*). O tratamento é antibiótico com boa penetração na próstata, como fluoroquinolona ou sulfametoxazol-trimetoprima."
+    ],
+    "termos": [
+      "acute bacterial prostatitis",
+      "Escherichia coli",
+      "boggy prostate",
+      "ascending infection"
+    ],
+    "erradas": {
+      "A": "Clamídia causa prostatite e uretrite em homens mais jovens com risco sexual, geralmente abaixo dos 35 anos.",
+      "C": "Gonococo também é mais comum em homens jovens com risco sexual e costuma dar corrimento uretral purulento.",
+      "D": "S. saprophyticus é causa de cistite em mulheres jovens, não de prostatite em homem mais velho."
+    },
+    "macete": {
+      "frase": "*O velho conhecido do trato urinário fecha o ano*",
+      "apoio": "Depois dos 35, a prostatite aguda é do E. coli, o mesmo do Seu Néfron no dia 344. Antes dos 35, com risco sexual, pense em clamídia e gonococo. Próstata quente, dolorosa e amolecida: não massageie, porque pode espalhar a bactéria no sangue. São 365 dias depois, o Anki ainda tem revisões atrasadas, mas agora você sabe o porquê de cada uma.",
+      "fala": "Comi, mostrei, avisei. E me formei."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia 365! Formatura no ônibus, os seis personagens de beca e uma última questão do Macrô, no começo do Novembro Azul. Foram 365 vinhetas, muitas madrugadas e nenhum NBME a menos na sua vida; obrigado por embarcar. Quatro germes no último quiz, e a idade e o exame da vinheta decidem.",
+    "palavras_chave": [
+      "men's health",
+      "urology",
+      "fever",
+      "microbiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#NovembroAzul",
+      "#Microbiologia",
+      "#Microbiology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "64 anos, febre e próstata quente e dolorosa no toque: qual agente?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,97 @@
+{
+  "dia": 290,
+  "data": "2027-08-18",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Desenvolvimento humano",
+  "topico": "Envelhecimento pulmonar normal",
+  "conceito": "Normal lung aging: compliance and residual volume rise, FEV1 falls",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-19",
+  "tom": null,
+  "gancho": "Mito achou duas sanfonas: uma nova e outra *que tocou no casamento da avó*",
+  "gancho_apoio": "Pulmão sem doença nenhuma, só com tempo de casa. O que muda com os anos?",
+  "imagem": {
+    "arquivo": "dia-290.png",
+    "cena": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, de fole remendado, que já tocou em muitos arraiás. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
+    "foco": "50% 35%",
+    "alt": "Mito compara uma sanfona nova e uma antiga"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-290-macete.png",
+    "cena": "Mito toca a sanfona antiga: o fole abre muito com um dedo só, mas no fim fica um bolsão de ar preso dentro, e as notas saem lentas perto das notas rápidas da sanfona nova. Uma caixa de madeira rígida em volta quase não muda de tamanho.",
+    "foco": "50% 45%",
+    "alt": "Envelhecer: complacência e VR sobem, FEV1 cai"
+  },
+  "questao": {
+    "vinheta": "An 80-year-old woman who has never smoked undergoes pulmonary function testing before elective knee surgery. She has no respiratory symptoms, and her results reflect only normal aging.",
+    "pergunta": "Compared with her values at age 25, which pattern of lung compliance, residual volume, and FEV1 is expected?",
+    "alternativas": {
+      "A": {
+        "texto": "Decreased / Decreased / Decreased",
+        "quiz": "C↓ RV↓ FEV1↓"
+      },
+      "B": {
+        "texto": "Increased / Increased / Decreased",
+        "quiz": "C↑ RV↑ FEV1↓"
+      },
+      "C": {
+        "texto": "Increased / Decreased / Increased",
+        "quiz": "C↑ RV↓ FEV1↑"
+      },
+      "D": {
+        "texto": "Decreased / Increased / Unchanged",
+        "quiz": "C↓ RV↑ FEV1 same"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Envelhecer: *complacência e VR sobem*, FEV1 cai",
+    "certa": [
+      "Com a idade, o pulmão perde fibras elásticas: o *elastic recoil* cai e a *lung compliance* aumenta (o pulmão estica fácil, mas volta devagar). As vias aéreas pequenas fecham mais cedo na expiração, o *residual volume* sobe e o *FEV1* cai. A parede torácica fica mais rígida, então a capacidade pulmonar total quase não muda."
+    ],
+    "termos": [
+      "elastic recoil",
+      "lung compliance",
+      "residual volume",
+      "FEV1"
+    ],
+    "erradas": {
+      "A": "Tudo diminuído é o padrão restritivo, como na fibrose pulmonar, não o envelhecimento.",
+      "C": "O volume residual sobe com a idade e o FEV1 cai; nenhum dos dois melhora.",
+      "D": "A complacência do pulmão aumenta com a idade; quem fica mais rígida é a parede torácica."
+    },
+    "macete": {
+      "frase": "Pulmão idoso é *sanfona antiga*: abre fácil, mas não fecha tudo",
+      "apoio": "Mito toca uma sanfona de forró antiga: o fole abre sem esforço (complacência do pulmão alta), sobra ar dentro no fim (volume residual alto) e a nota sai mais lenta (FEV1 menor). A caixa de madeira é a parede torácica, que endurece; a capacidade pulmonar total quase não muda.",
+      "fala": "Sem oxigênio eu não trabalho. Com sanfona velha, eu toco devagar."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê no arraiá: o Mito comparou duas sanfonas e virou especialista em fole. Pergunta de três colunas, do tipo que o NBME adora porque basta errar uma seta para errar tudo. Leia cada uma com calma.",
+    "palavras_chave": [
+      "pulmonary physiology",
+      "older adult",
+      "spirometry",
+      "preoperative evaluation"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology",
+      "#Pneumologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pulmão aos 80 anos: complacência, volume residual e FEV1?"
+  },
+  "reel": null,
+  "exemplo": false
+}

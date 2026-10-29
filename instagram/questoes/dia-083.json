@@ -1,0 +1,95 @@
+{
+  "dia": 83,
+  "data": "2027-01-23",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Dever de proteger terceiros",
+  "conceito": "Duty to warn and protect: confidentiality yields to a credible threat to an identifiable person",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-24",
+  "gancho": "Sigilo médico no consultório de terapia: *até onde vai* o segredo?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um cofre trancado em cima de uma pedra à beira-mar, numa tarde de sol, ao lado de um farol de listras. O Viés, sentado no cofre com a lupa, parece satisfeito com tanto segredo. No horizonte, um veleiro pequeno navega tranquilo. Na areia, uma tabela 2x2 em branco desenhada como placa.",
+    "foco": "50% 35%",
+    "alt": "O Viés, satisfeito, sentado num cofre trancado ao lado de um farol numa tarde de sol; no horizonte, um veleiro navega tranquilo.",
+    "arquivo": "dia-083.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do farol: o farol acende um feixe forte direto no veleiro, que desvia das pedras, e um barco de patrulha da guarda costeira vai ao encontro dele. O Viés escorrega do cofre, surpreso. O cofre continua trancado, só com uma frestinha aberta de onde sai a luz.",
+    "alt": "O farol acende direto no veleiro, que desvia das pedras, e a guarda costeira vai ao encontro dele; o Viés escorrega do cofre.",
+    "arquivo": "dia-083-macete.png"
+  },
+  "questao": {
+    "vinheta": "During a psychotherapy session, a 32-year-old man says he has bought a gun and plans to shoot his former business partner, whom he names, this weekend. He refuses voluntary hospitalization.",
+    "pergunta": "Which is the most appropriate action by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "Warn the partner and notify police",
+        "quiz": "Warn and notify"
+      },
+      "B": {
+        "texto": "Keep confidentiality and document",
+        "quiz": "Keep it confidential"
+      },
+      "C": {
+        "texto": "Ask his family for permission to disclose",
+        "quiz": "Ask the family"
+      },
+      "D": {
+        "texto": "Schedule an earlier follow-up visit",
+        "quiz": "Earlier follow-up"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Ameaça séria a alguém identificável: *dever de proteger*",
+    "certa": [
+      "O sigilo médico é a regra, mas tem exceções. Pelo princípio do caso *Tarasoff*, quando o paciente faz uma ameaça séria e crível contra uma pessoa identificável, o médico tem o *duty to warn and protect*: avisar a vítima, comunicar a polícia e tomar outras medidas razoáveis, como avaliar internação involuntária. A quebra de *confidentiality* se limita ao necessário para proteger a pessoa ameaçada."
+    ],
+    "termos": [
+      "duty to warn",
+      "Tarasoff",
+      "confidentiality",
+      "identifiable victim"
+    ],
+    "erradas": {
+      "B": "Só documentar deixa a vítima exposta; o risco sério e iminente a uma pessoa identificada se sobrepõe ao sigilo.",
+      "C": "A exceção ao sigilo não depende de permissão da família, e pedir autorização atrasa a proteção.",
+      "D": "Antecipar a consulta não protege a vítima de um plano para este fim de semana."
+    },
+    "macete": {
+      "frase": "Farol só acende para *barco com nome*",
+      "apoio": "Pegadinha de prova: O NBME testa os dois requisitos: ameaça crível e vítima identificável; ameaça vaga contra ninguém em particular não autoriza a quebra de sigilo.",
+      "fala": "Eu gosto de segredo. Mas segredo com alvo e data, até eu entrego."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de ética: o sigilo é a base da terapia, e a prova cobra com precisão o momento em que ele cede. O tema é sério e a resposta é única; a vinheta traz o que decide.",
+    "palavras_chave": [
+      "psychotherapy session",
+      "medical secrecy",
+      "medical ethics",
+      "safety"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ameaça com arma, alvo nomeado e data: qual é a conduta?"
+  },
+  "exemplo": false
+}

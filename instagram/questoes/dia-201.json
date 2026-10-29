@@ -1,0 +1,87 @@
+{
+  "dia": 201,
+  "data": "2027-05-21",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Hipertermia maligna",
+  "conceito": "Malignant hyperthermia: RYR1 variant, volatile anesthetic or succinylcholine trigger, dantrolene",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-22",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: *um antídoto de nome difícil* e um mecanismo que a prova adora",
+  "gancho_apoio": "Antídoto: a lista que todo mundo revisa no carro, a caminho da Prometric.",
+  "imagem": {
+    "arquivo": "dia-201.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, segura uma caixa de antídoto ainda lacrada e olha o relógio da parede, apressada. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, apressada, segura uma caixa de antídoto lacrada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-201-macete.png",
+    "cena": "Callback: Tia Meia-Vida aperta com uma chave inglesa laranja a torneira emperrada de uma caixa d'água em forma de fibra muscular, e as bolinhas brilhantes de cálcio param de jorrar. Fundo limpo.",
+    "alt": "A Tia fecha com a chave laranja a torneira de cálcio emperrada"
+  },
+  "questao": {
+    "vinheta": "During knee arthroscopy under sevoflurane, a 22-year-old man develops masseter and generalized muscle rigidity, rising end-tidal CO2, and tachycardia. His temperature rises from 37.0°C to 39.8°C (103.6°F) within 30 minutes. Serum potassium is 6.1 mEq/L. A cousin had a similar reaction during surgery.",
+    "pergunta": "The most appropriate drug for this condition acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Blocking calcium release through the ryanodine receptor",
+        "quiz": "Blocks RyR1 Ca release"
+      },
+      "B": {
+        "texto": "Inhibiting prostaglandin E2 synthesis in the hypothalamus",
+        "quiz": "Inhibits PGE2 synthesis"
+      },
+      "C": {
+        "texto": "Blocking central dopamine D2 receptors",
+        "quiz": "Blocks D2 receptors"
+      },
+      "D": {
+        "texto": "Blocking nicotinic receptors at the motor end plate",
+        "quiz": "Blocks nicotinic receptors"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Hipertermia maligna: *dantroleno* fecha o RyR1",
+    "certa": [
+      "Na *malignant hyperthermia*, uma variante do *RYR1* (herança autossômica dominante) deixa o receptor de rianodina do retículo sarcoplasmático liberar cálcio sem controle quando exposto a anestésico inalatório ou succinilcolina. O músculo contrai sem parar, gasta ATP, produz calor, CO2 e lactato e libera potássio. O *dantrolene* se liga ao RyR1 e bloqueia a saída de cálcio."
+    ],
+    "termos": [
+      "malignant hyperthermia",
+      "RYR1",
+      "dantrolene",
+      "end-tidal CO2"
+    ],
+    "erradas": {
+      "B": "Inibir prostaglandina no hipotálamo é o efeito do paracetamol na febre comum; aqui o calor vem do músculo, não do termostato.",
+      "C": "Bloquear D2 é o mecanismo dos antipsicóticos, que causam síndrome neuroléptica maligna em vez de tratá-la.",
+      "D": "Bloquear o receptor nicotínico da placa motora relaxa o músculo esquelético, mas não age no cálcio liberado dentro da fibra, onde está o defeito."
+    },
+    "macete": {
+      "frase": "Na hipertermia maligna, a *torneira do cálcio* (RyR1) emperra aberta com gás anestésico ou succinilcolina. A Tia Meia-Vida chega com a *chave laranja*: *dan-TROLE-no, dá o controle* do cálcio no retículo.",
+      "apoio": "O NBME costuma dar o CO2 expirado subindo como primeiro sinal, depois rigidez, febre e hipercalemia; a conduta é interromper o anestésico na hora e infundir dantroleno. Síndrome neuroléptica maligna tem outro gatilho e evolui em dias.",
+      "fala": "Cinco meias-vidas? Aqui não dá tempo: dantroleno agora."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Algo dá errado de repente, e a vinheta descreve o que acontece minuto a minuto. A pergunta é como age o remédio certo para esse quadro.",
+    "palavras_chave": [
+      "drug reaction",
+      "antidote",
+      "mechanism of action",
+      "Step 1 pharmacology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hipertermia maligna. Como age o antídoto?"
+  },
+  "exemplo": false
+}

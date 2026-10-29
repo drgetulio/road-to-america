@@ -1,0 +1,95 @@
+{
+  "dia": 130,
+  "data": "2027-03-11",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Síndrome nefrótica na criança",
+  "conceito": "Minimal change disease: most common nephrotic syndrome in children, responds to steroids",
+  "personagem": "Seu Néfron",
+  "gancho_data": "Dia Mundial do Rim (segunda quinta-feira de março, 11/3/2027).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-12",
+  "tom": null,
+  "gancho": "Dia Mundial do Rim: o Seu Néfron *quer ver a peneira de perto*",
+  "gancho_apoio": "Antes de carimbar, ele trocou a lupa pelo binóculo.",
+  "imagem": {
+    "arquivo": "dia-130.png",
+    "cena": "Seu Néfron, de lupa na mão, examina numa mesa de rodízio uma peneira de cozinha por onde escapam balõezinhos brancos. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron examina com a lupa uma peneira por onde escapam balõezinhos brancos."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-130-macete.png",
+    "cena": "Callback: Seu Néfron troca a lupa por um binóculo enorme e vê a fileira de pezinhos dos podócitos achatados como chinelos, enquanto um comprimido amarelo em forma de chave levanta os pezinhos de novo. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "De binóculo, Seu Néfron vê pezinhos achatados como chinelos; um comprimido-chave levanta os pezinhos."
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has had puffy eyelids every morning for 1 week and now has swelling of both legs. Blood pressure is normal. Urinalysis shows 4+ protein and no blood. Serum albumin is 1.9 g/dL, cholesterol is elevated and C3 is normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "IgA nephropathy",
+        "quiz": "IgA nephropathy"
+      },
+      "B": {
+        "texto": "Poststreptococcal glomerulonephritis",
+        "quiz": "Poststreptococcal GN"
+      },
+      "C": {
+        "texto": "Focal segmental glomerulosclerosis",
+        "quiz": "Focal segmental GS"
+      },
+      "D": {
+        "texto": "Minimal change disease",
+        "quiz": "Minimal change"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Lesão mínima: *nada* no óptico, pés achatados na eletrônica",
+    "certa": [
+      "Criança pequena com síndrome nefrótica pura (proteinúria maciça, albumina baixa, edema e colesterol alto), sem hematúria, com pressão e complemento normais, tem doença de lesão mínima até prova em contrário. No microscópio óptico o glomérulo parece normal; na eletrônica, os pés dos podócitos estão apagados. Responde ao corticoide, e por isso a prednisona começa sem biópsia."
+    ],
+    "termos": [
+      "minimal change disease",
+      "podocyte effacement",
+      "nephrotic syndrome",
+      "steroid-responsive"
+    ],
+    "erradas": {
+      "A": "A nefropatia por IgA dá hematúria logo depois de uma infecção de vias aéreas, não nefrótica pura.",
+      "B": "A glomerulonefrite pós-estreptocócica é nefrítica, com hematúria, hipertensão e C3 baixo.",
+      "C": "A GESF é a causa mais comum de nefrótica em adultos nos EUA, e na criança aparece quando o quadro não responde ao corticoide."
+    },
+    "macete": {
+      "frase": "Lesão mínima: *\"não achei nada\"* no óptico, *pés de chinelo* na eletrônica",
+      "apoio": "Criança, edema, proteína sem sangue e pressão normal: prednisona primeiro, biópsia só se não responder.",
+      "fala": "Na lupa, nada. No binóculo, pé de chinelo. Carimbo: prednisona."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é o Dia Mundial do Rim. No Rodízio de Quinta, a idade, a pressão e o exame de urina estão na vinheta, e cada um tira uma alternativa.",
+    "palavras_chave": [
+      "periorbital edema",
+      "leg swelling",
+      "proteinuria",
+      "hypoalbuminemia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Nefrologia",
+      "#Pediatrics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Menino de 4 anos, edema, proteinúria 4+, sem sangue e C3 normal: qual a causa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

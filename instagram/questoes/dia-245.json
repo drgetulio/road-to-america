@@ -1,0 +1,105 @@
+{
+  "dia": 245,
+  "data": "2027-07-04",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix Independence Day: Bronquiolite (dia 123), Arterite de células gigantes (dia 219), Cólica renal (dia 240)",
+  "conceito": "Independence Day remix: RSV bronchiolitis + Giant cell arteritis + Suspected kidney stone",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Independence Day (4/7): checkpoint da Road to America.",
+  "remix_de": [
+    123,
+    219,
+    240
+  ],
+  "explicacao_em": "2027-07-05",
+  "tom": null,
+  "gancho": "4 de julho: quatro chamados juntos e a Capitã só tem *um apito*",
+  "gancho_apoio": "Quatro pacientes estáveis chamando no mesmo minuto. Quem passa primeiro no cruzamento?",
+  "imagem": {
+    "arquivo": "dia-245.png",
+    "cena": "A Capitã Plaqueta, de apito na boca, organiza um cruzamento enfeitado com bandeirinhas de 4 de julho, onde quatro carrinhos chegam no mesmo segundo e buzinam juntos. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta com um apito só e quatro carrinhos chegando juntos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-245-macete.png",
+    "cena": "Callback: a Capitã abre passagem só para o carrinho do quebra-nozes (a dor na mandíbula), escoltado por uma pílula de corticoide de sirene na cabeça; os outros três esperam tranquilos. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A Capitã dá passagem ao carrinho do quebra-nozes escoltado pela pílula de corticoide"
+  },
+  "questao": {
+    "vinheta": "On July 4, a physician covering a busy emergency department is paged about four patients at the same moment. All four have stable vital signs.",
+    "pergunta": "Which patient should be evaluated and treated first?",
+    "alternativas": {
+      "A": {
+        "texto": "Infant with RSV bronchiolitis, SpO2 95%, feeding well",
+        "quiz": "Infant with RSV, SpO2 95%",
+        "dia": 123
+      },
+      "B": {
+        "texto": "Woman, 74, with jaw claudication and new blurred vision",
+        "quiz": "Jaw claudication, vision",
+        "dia": 219
+      },
+      "C": {
+        "texto": "Man, 40, with renal colic from a 4-mm stone, pain controlled",
+        "quiz": "Renal colic, pain controlled",
+        "dia": 240
+      },
+      "D": {
+        "texto": "Child, 3, with croup, barking cough, no stridor at rest",
+        "quiz": "Croup without rest stridor"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Visão em risco passa *na frente*",
+    "certa": [
+      "Claudicação de mandíbula com visão turva nova numa senhora de 74 anos é *giant cell arteritis* com ameaça de perda visual irreversível (dia 219). A conduta é *high-dose glucocorticoids* na hora, antes da biópsia, e por isso ela passa na frente mesmo com sinais vitais normais. Na triagem, quem fura a fila é o órgão com relógio correndo."
+    ],
+    "termos": [
+      "giant cell arteritis",
+      "jaw claudication",
+      "visual symptoms",
+      "high-dose glucocorticoids"
+    ],
+    "erradas": {
+      "A": "Bronquiolite com saturação de 95% e boa aceitação da mamada pede só suporte e reavaliação (dia 123); não é a prioridade.",
+      "C": "Cálculo de 4 mm com dor controlada costuma passar sozinho, e a analgesia já resolveu a urgência (dia 240).",
+      "D": "Intruso: crupe com tosse ladrante e sem estridor em repouso é leve; dexametasona oral e alta, sem pressa de vaga."
+    },
+    "macete": {
+      "frase": "Na arterite, *olho em risco fura a fila*: corticoide já",
+      "apoio": "Quatro chamados estáveis, mas só um tem um órgão com relógio correndo: o olho da arterite. Bronquiolite saturando bem é suporte, pedra de 4 mm com dor controlada espera e crupe sem estridor em repouso vai para casa com dexametasona.",
+      "fala": "Apito só tenho um: o olho passa primeiro."
+    }
+  },
+  "legenda": {
+    "contexto": "Feriado nos Estados Unidos e checkpoint aqui: três casos dos dias 123, 219 e 240 e um intruso chamam ao mesmo tempo. Todos com sinais vitais normais, e só um não pode esperar.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#IndependenceDay",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quatro chamados ao mesmo tempo: quem a Capitã atende primeiro?"
+  },
+  "reel": null,
+  "exemplo": false
+}

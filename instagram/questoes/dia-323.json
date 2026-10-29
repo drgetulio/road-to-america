@@ -1,0 +1,96 @@
+{
+  "dia": 323,
+  "data": "2027-09-20",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Febre maculosa",
+  "conceito": "Rickettsia rickettsii: rash starts at wrists and ankles and spreads centrally after a tick bite",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-21",
+  "tom": null,
+  "gancho": "Voltou do acampamento com uma *lembrancinha de oito patas*",
+  "gancho_apoio": "Bicho de Segunda no acampamento: a Capitã Plaqueta recebeu um turista de oito patas.",
+  "imagem": {
+    "arquivo": "dia-323.png",
+    "cena": "A Capitã Plaqueta, de colete refletivo e apito, na tenda de recepção de um acampamento enfeitado com bandeirinhas de festa junina, recebe um carrapatinho turista de mochila e chapéu de sol, que chega pendurado num galho.",
+    "foco": "50% 35%",
+    "alt": "Voltou do acampamento com uma lembrancinha de oito patas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-323-macete.png",
+    "cena": "Callback: um estádio visto de cima; torcedores em bolinhas vermelhas entram pelos quatro portões dos cantos e lotam a arquibancada até o centro do campo; a Capitã Plaqueta, de juíza, levanta um apito em forma de cápsula; num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
+    "foco": "50% 45%",
+    "alt": "Febre maculosa: o exantema entra pelos punhos"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy has had fever, severe headache, and myalgias for 4 days after camping in North Carolina in June. A blanching rash began on his wrists and ankles 2 days ago and now involves the palms, soles, and trunk, with petechiae. Leukocytes are 8,200/mm3, platelets 82,000/mm3, and sodium 129 mEq/L.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Borrelia burgdorferi",
+        "quiz": "Borrelia burgdorferi"
+      },
+      "B": {
+        "texto": "Rickettsia rickettsii",
+        "quiz": "Rickettsia rickettsii"
+      },
+      "C": {
+        "texto": "Ehrlichia chaffeensis",
+        "quiz": "Ehrlichia chaffeensis"
+      },
+      "D": {
+        "texto": "Rickettsia typhi",
+        "quiz": "Rickettsia typhi"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Febre maculosa: o exantema *entra pelos punhos*",
+    "certa": [
+      "Febre, cefaleia e exantema que começa em punhos e tornozelos, sobe para o tronco e pega palmas e plantas depois de acampar no verão é *Rocky Mountain spotted fever*. A *Rickettsia rickettsii*, transmitida pelo carrapato Dermacentor, infecta o endotélio e causa vasculite, o que explica as petéquias, a plaquetopenia e a hiponatremia. Os leucócitos normais ajudam a separar da ehrlichiose, que costuma derrubá-los. O tratamento é *doxycycline* já na suspeita, em qualquer idade, porque o atraso aumenta muito a mortalidade."
+    ],
+    "termos": [
+      "Rocky Mountain spotted fever",
+      "Rickettsia rickettsii",
+      "centripetal rash",
+      "doxycycline"
+    ],
+    "erradas": {
+      "A": "*Borrelia burgdorferi* dá erythema migrans, uma lesão que cresce em alvo no local da picada, e não petéquias que começam nas extremidades.",
+      "C": "*Ehrlichia chaffeensis* também vem do carrapato e dá febre com plaquetas baixas, e o exantema aparece em até um terço dos adultos e em mais da metade das crianças. Pesa contra ela a falta de leucopenia: a Ehrlichia infecta monócitos e costuma derrubar os leucócitos, e aqui eles estão normais. O exantema que começa nos punhos e chega às palmas favorece a Rickettsia.",
+      "D": "*Rickettsia typhi* (tifo murino) vem da pulga, e o exantema começa no tronco e vai para as extremidades, poupando palmas e plantas."
+    },
+    "macete": {
+      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos* e lota até o centro",
+      "apoio": "O rash da febre maculosa começa nos punhos e tornozelos e vai para palmas, plantas e tronco, como torcida entrando pelos portões e lotando até o meio de campo. A Rickettsia vive no endotélio e causa vasculite, daí plaqueta e sódio baixos. Doxiciclina em qualquer idade, criança inclusive. A capivara lembra a febre maculosa brasileira, do carrapato-estrela.",
+      "fala": "Parou, colou, coagulou. Esse turista gastou as minhas plaquetas."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no acampamento: chegou um turista de oito patas, e a Capitã Plaqueta, de colete refletivo, já desconfiou. Três dos quatro suspeitos andam de carrapato; o mapa do exantema e o hemograma da vinheta separam os três.",
+    "palavras_chave": [
+      "tick-borne illness",
+      "summer camping",
+      "pediatric infectious disease",
+      "fever with rash"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Acampou, febre há 4 dias e manchas dos punhos para o tronco: qual agente?"
+  },
+  "reel": null,
+  "exemplo": false
+}

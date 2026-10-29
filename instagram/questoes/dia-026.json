@@ -1,0 +1,97 @@
+{
+  "dia": 26,
+  "data": "2026-11-27",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Indutores do CYP450",
+  "conceito": "CYP450 inducers: rifampin and carbamazepine speed warfarin metabolism and lower the INR",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Black Friday: o indutor do CYP450 faz liquidação do remédio no fígado.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-28",
+  "tom": null,
+  "gancho": "Black Friday: a Tia Meia-Vida desconfia de uma *promoção* na receita",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-026.png",
+    "cena": "A Tia Meia-Vida, atrás do balcão enfeitado com balões de Black Friday, confere com a lupa um frasco de comprimidos e uma caixinha de antibiótico, lado a lado.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, atrás do balcão enfeitado com balões, confere com a lupa um frasco de comprimidos e uma caixinha de antibiótico."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-026-macete.png",
+    "cena": "Revelação: do outro lado da rua, numa loja em forma de fígado em liquidação, um gerente que chegou com uma xícara enorme de café contratou uma multidão de funcionários temporários (enzimas CYP), que embrulham e despacham a varfarina num piscar de olhos. Um medidor em forma de gota na parede marca nível baixo.",
+    "alt": "Liquidação no fígado"
+  },
+  "questao": {
+    "vinheta": "A 66-year-old woman with atrial fibrillation has had a stable INR of 2.5 on warfarin for a year. She starts rifampin for latent tuberculosis infection. Three weeks later, her INR is 1.3. Her diet and adherence are unchanged.",
+    "pergunta": "Which mechanism best explains the change in her INR?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of hepatic cytochrome P450 enzymes",
+        "quiz": "CYP inhibition"
+      },
+      "B": {
+        "texto": "Displacement of warfarin from plasma albumin",
+        "quiz": "Albumin displacement"
+      },
+      "C": {
+        "texto": "Decreased vitamin K synthesis by gut flora",
+        "quiz": "Less vitamin K"
+      },
+      "D": {
+        "texto": "Induction of hepatic cytochrome P450 enzymes",
+        "quiz": "CYP induction"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Liquidação no fígado",
+    "certa": [
+      "A rifampina é um indutor potente do citocromo P450 (CYP2C9, CYP3A4 e outros): aumenta a produção das enzimas do fígado, que passam a metabolizar a varfarina mais rápido, e o INR despenca, com risco de AVC na fibrilação atrial. Carbamazepina, fenitoína, fenobarbital, erva-de-são-joão e o álcool em uso crônico fazem o mesmo. Quando o indutor é suspenso, o efeito some em algumas semanas e o INR sobe de novo, por isso a dose precisa ser reajustada nas duas pontas."
+    ],
+    "termos": [
+      "CYP450 induction",
+      "rifampin",
+      "warfarin",
+      "INR",
+      "drug interaction"
+    ],
+    "erradas": {
+      "A": "Inibir o CYP, como fazem amiodarona, fluconazol e isoniazida, deixaria a varfarina acumular e o INR subiria.",
+      "B": "Deslocar a varfarina da albumina aumenta a fração livre e o efeito, ou seja, elevaria o INR.",
+      "C": "Antibiótico que reduz a flora produtora de vitamina K tende a aumentar o INR, e não a diminuir."
+    },
+    "macete": {
+      "frase": "Indutor é *CAFÉ RI*: CArbamazepina, FEnitoína, FEnobarbital e RIfampina. O fígado contrata temporário na Black Friday, despacha a varfarina e o INR cai.",
+      "apoio": "Pegadinha de prova: O NBME pergunta o que acontece ao suspender o indutor: o metabolismo volta ao normal em semanas e o INR pode subir demais se a dose não for corrigida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Black Friday é dia de fila até na farmácia. Sextou na Farmácia com uma interação clássica: dois remédios, um fígado e um INR que mudou sem a dieta mudar. No NBME, interação de varfarina cai mais que preço de passagem na Black Friday.",
+    "palavras_chave": [
+      "warfarin",
+      "drug interactions",
+      "INR",
+      "pharmacokinetics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#BlackFriday",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "INR caiu de 2,5 para 1,3 com rifampina: qual mecanismo?"
+  },
+  "exemplo": false
+}

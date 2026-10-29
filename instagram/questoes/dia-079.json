@@ -1,0 +1,96 @@
+{
+  "dia": 79,
+  "data": "2027-01-19",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Dissecção de aorta",
+  "conceito": "Aortic dissection: IV beta-blocker first, CT angiography if stable, TEE if unstable",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-20",
+  "gancho": "A aorta abriu *igual zíper de calça jeans*: o que você faz primeiro?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Na sala de descanso do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir no meio.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir.",
+    "arquivo": "dia-079.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: Dona Térmica pisa no pedal de freio e o zíper para de abrir. Só depois ela afrouxa um cinto em volta da aorta. A chave inglesa fica guardada na caixa, porque a tipo B sem complicação não vai para a cirurgia.",
+    "alt": "Dona Térmica pisa no freio e o zíper da aorta para de abrir; depois ela afrouxa o cinto, e a chave inglesa fica guardada.",
+    "arquivo": "dia-079-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 62-year-old man with hypertension has sudden tearing chest pain radiating to the back. Blood pressure is 186/104 mm Hg in the right arm and 150/88 mm Hg in the left; pulse is 102/min. CT angiography shows a type B aortic dissection without malperfusion.",
+    "pergunta": "Which is the most appropriate initial therapy?",
+    "alternativas": {
+      "A": {
+        "texto": "IV esmolol infusion",
+        "quiz": "IV esmolol"
+      },
+      "B": {
+        "texto": "IV nitroprusside alone",
+        "quiz": "Nitroprusside alone"
+      },
+      "C": {
+        "texto": "IV unfractionated heparin",
+        "quiz": "IV heparin"
+      },
+      "D": {
+        "texto": "Emergency open surgical repair",
+        "quiz": "Open surgery"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Betabloqueador venoso *primeiro*",
+    "certa": [
+      "Na *aortic dissection*, o primeiro remédio é um *IV beta-blocker* (esmolol ou labetalol): ele baixa a frequência e a força de ejeção (dP/dt), que empurram o rasgo adiante. A diretriz ACC/AHA de 2022 mira pressão sistólica abaixo de 120 mm Hg e frequência de 60 a 80; o vasodilatador só entra depois do betabloqueio. Dissecção tipo B sem complicação é tratamento clínico; tipo A vai para cirurgia, e o paciente instável faz *TEE* à beira do leito."
+    ],
+    "termos": [
+      "aortic dissection",
+      "IV beta-blocker",
+      "esmolol",
+      "type B dissection"
+    ],
+    "erradas": {
+      "B": "Nitroprussiato sozinho causa taquicardia reflexa, aumenta a força de ejeção e pode estender a dissecção.",
+      "C": "Anticoagular uma aorta rasgada aumenta o risco de sangramento e ruptura; a dor torácica aqui não é síndrome coronariana.",
+      "D": "Cirurgia de urgência é para tipo A ou tipo B complicada (ruptura, má perfusão, dor refratária), não para tipo B sem complicação."
+    },
+    "macete": {
+      "frase": "Dissecção é *zíper*: primeiro para de puxar, depois afrouxa o cinto",
+      "apoio": "Pegadinha de prova: O NBME oferece o nitroprussiato como primeira escolha; ele só entra depois do betabloqueador, e a anticoagulação não faz parte do tratamento inicial da dissecção.",
+      "fala": "Ninguém afrouxa o cinto puxando o zíper. Beta primeiro."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: dor rasgando, angiotomografia pronta e quatro condutas na mesa. Dona Térmica quer saber qual remédio entra antes de todos e se o caso é de cirurgia; a classificação na vinheta responde a segunda parte.",
+    "palavras_chave": [
+      "chest pain",
+      "aorta",
+      "emergency medicine",
+      "CT angiography"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dissecção tipo B, PA 186/104 e FC 102: qual remédio primeiro?"
+  },
+  "exemplo": false
+}

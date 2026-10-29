@@ -1,0 +1,95 @@
+{
+  "dia": 82,
+  "data": "2027-01-22",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Metformina",
+  "conceito": "Metformin: lowers hepatic gluconeogenesis, rare lactic acidosis",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-23",
+  "gancho": "Remédio acumulando *igual Anki atrasado*: o Mito quer saber quem parou de processar",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito, de jaleco amassado e café na mão, está numa cozinha de padaria de bairro antes do amanhecer, diante de um quadro de cortiça coberto de cartõezinhos de revisão empilhados, com cara de quem tem 900 revisões atrasadas.",
+    "foco": "50% 35%",
+    "alt": "Mito, numa cozinha de padaria antes do amanhecer, encara um quadro de cortiça coberto de cartões de revisão empilhados.",
+    "arquivo": "dia-082.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da padaria, agora revelada dentro de um fígado: o forno está apagado com um cadeado em forma de comprimido, a forma de pudim continua vazia e os pães dormidos se empilham até o teto. Ao lado, uma lixeira em forma de rim está entupida e não leva nada embora. O Mito toma o café com cara de quem previu tudo.",
+    "alt": "Menos gliconeogênese, lactato sobrando",
+    "arquivo": "dia-082-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old man with type 2 diabetes treated with metformin is admitted with septic shock and acute kidney injury (creatinine 3.4 mg/dL). Arterial pH is 7.14, anion gap is 26 mEq/L, and lactate is 9 mmol/L.",
+    "pergunta": "Which action of this drug is most closely linked to this complication?",
+    "alternativas": {
+      "A": {
+        "texto": "Closure of beta-cell K-ATP channels",
+        "quiz": "K-ATP closure"
+      },
+      "B": {
+        "texto": "Inhibition of renal SGLT2",
+        "quiz": "Renal SGLT2 inhibition"
+      },
+      "C": {
+        "texto": "Decreased hepatic gluconeogenesis",
+        "quiz": "Less gluconeogenesis"
+      },
+      "D": {
+        "texto": "Activation of PPAR-gamma",
+        "quiz": "PPAR-gamma"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Menos gliconeogênese, *lactato sobrando*",
+    "certa": [
+      "A *metformin* baixa a glicose principalmente por *decreased hepatic gluconeogenesis*: ela age na mitocôndria do hepatócito (complexo I e glicerofosfato desidrogenase mitocondrial) e ativa a AMPK. O lactato é uma das matérias-primas da gliconeogênese, então, com essa via freada, ele sobra. Como a metformina é eliminada pelo rim, a insuficiência renal e a hipoperfusão do choque fazem o remédio acumular, e aparece a rara *lactic acidosis*."
+    ],
+    "termos": [
+      "metformin",
+      "hepatic gluconeogenesis",
+      "lactic acidosis",
+      "AMPK"
+    ],
+    "erradas": {
+      "A": "Fechar canais K-ATP da célula beta é o mecanismo das sulfonilureias, cujo risco é hipoglicemia, não acidose láctica.",
+      "B": "Os inibidores de SGLT2 causam glicosúria e podem dar cetoacidose euglicêmica, outro tipo de acidose.",
+      "D": "Ativar PPAR-gama é o mecanismo das glitazonas, ligadas a retenção de líquido e insuficiência cardíaca."
+    },
+    "macete": {
+      "frase": "Cozinha do pudim *fechada*, pão dormido *empilhado*",
+      "apoio": "Pegadinha de prova: O NBME liga a metformina à acidose láctica em quem tem insuficiência renal, choque ou contraste iodado; a TFG abaixo de 30 contraindica o uso.",
+      "fala": "Sem oxigênio eu não trabalho. Com metformina, a cozinha do pudim também não."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o Mito, que conhece bem a sensação de ter coisa demais acumulada para processar. Diabetes, uma internação grave e quatro mecanismos na mesa; a vinheta tem o nome do remédio e a complicação.",
+    "palavras_chave": [
+      "type 2 diabetes",
+      "septic shock",
+      "acute kidney injury",
+      "diabetes drugs"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#SextouNaFarmacia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metformina, choque e lactato 9: qual ação do remédio explica isso?"
+  },
+  "exemplo": false
+}

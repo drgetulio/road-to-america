@@ -1,0 +1,96 @@
+{
+  "dia": 143,
+  "data": "2027-03-24",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Tuberculose primária",
+  "conceito": "Primary tuberculosis: Ghon complex with caseating granuloma",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Dia Mundial da Tuberculose (24/3).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-25",
+  "tom": null,
+  "gancho": "Dia Mundial da Tuberculose: *o avô tossia*, e o neto fez o teste",
+  "gancho_apoio": "O Seu Allen montou a maquete da casa para ver por onde o visitante entrou.",
+  "imagem": {
+    "arquivo": "dia-143.png",
+    "cena": "Seu Allen monta com cuidado a maquete de uma casa em forma de pulmão, e um visitante em forma de bastão, de boné vermelho, bate à porta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen monta uma casa em forma de pulmão; um visitante em forma de bastão, de boné vermelho, bate à porta."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-143-macete.png",
+    "cena": "Callback: num cômodo do térreo, perto da parede, aparece uma rodinha de queijo cercada de macrófagos de mãos dadas, e outra rodinha igual surge no porão do centro, ligada à primeira por uma trilha pontilhada. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Uma rodinha de queijo cercada de macrófagos no térreo e outra no porão, ligadas por uma trilha."
+  },
+  "questao": {
+    "vinheta": "A 7-year-old boy has a positive tuberculin skin test after his grandfather is diagnosed with pulmonary tuberculosis. He is asymptomatic, with normal vital signs. Chest CT shows a small subpleural nodule in the lower right lung field with enlarged ipsilateral hilar lymph nodes.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Miliary tuberculosis",
+        "quiz": "Miliary TB"
+      },
+      "B": {
+        "texto": "Secondary (reactivation) tuberculosis",
+        "quiz": "Reactivation TB"
+      },
+      "C": {
+        "texto": "Primary tuberculosis (Ghon complex)",
+        "quiz": "Primary TB"
+      },
+      "D": {
+        "texto": "Sarcoidosis",
+        "quiz": "Sarcoidosis"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Complexo de Ghon: *foco + linfonodo hilar*",
+    "certa": [
+      "Na tuberculose primária, o bacilo inalado se instala na periferia subpleural dos campos médios e inferiores (foco de Ghon) e drena para os linfonodos hilares do mesmo lado; os dois juntos formam o complexo de Ghon. Os dois têm granulomas com necrose caseosa, e na maioria das pessoas a infecção fica contida e sem sintomas. Quando calcifica, recebe o nome de complexo de Ranke."
+    ],
+    "termos": [
+      "Ghon complex",
+      "primary tuberculosis",
+      "caseating granuloma",
+      "Ranke complex"
+    ],
+    "erradas": {
+      "A": "A tuberculose miliar mostra incontáveis micronódulos espalhados pelos dois pulmões, por disseminação hematogênica.",
+      "B": "A tuberculose secundária (reativação) prefere os ápices, onde o oxigênio é mais alto, e costuma cavitar, com tosse, febre e perda de peso.",
+      "D": "A sarcoidose dá linfonodos hilares dos dois lados, com granulomas não caseosos, e é rara nessa idade."
+    },
+    "macete": {
+      "frase": "Ghon é *visita no térreo + recado no porão do hilo*, com recheio de queijo",
+      "apoio": "A reativação sobe para o ápice, onde tem mais oxigênio, e costuma cavitar.",
+      "fala": "Sobrou peça? Não: são duas, o foco e o linfonodo. Juntas, isso é Ghon."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose, e a tuberculose tem tratamento e cura. Na Quarta do Porquê, uma criança que conviveu com um caso em casa. Os sintomas, o teste e a TC estão na vinheta.",
+    "palavras_chave": [
+      "positive tuberculin skin test",
+      "household contact",
+      "subpleural nodule",
+      "hilar lymph nodes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Tuberculose",
+      "#Tuberculosis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Criança com PPD positivo, nódulo subpleural basal e hilo aumentado: qual?"
+  },
+  "reel": null,
+  "exemplo": false
+}

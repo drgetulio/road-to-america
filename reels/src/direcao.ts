@@ -2,7 +2,7 @@
 // transições e trocas pontuais de componente. O texto vem só de roteiros.json.
 import type { Direcao } from "./schema";
 
-type Base = Omit<Direcao, "semente" | "trocas"> & { trocas?: Direcao["trocas"] };
+type Base = Omit<Direcao, "semente" | "trocas" | "url"> & { trocas?: Direcao["trocas"] };
 
 const D: Record<string, Base> = {
   "reel-01": { paleta: "navy", decor: "estrada", legenda: "pop", alinhamento: "centro", numero: "placa", transicoes: ["faixa", "slide", "wipe"] },
@@ -54,5 +54,5 @@ const PADRAO: Base = { paleta: "navy", decor: "estrada", legenda: "pop", alinham
 
 export const direcaoDe = (id: string): Direcao => {
   const b = D[id] ?? PADRAO;
-  return { ...b, trocas: b.trocas ?? {}, semente: id };
+  return { ...b, trocas: b.trocas ?? {}, semente: id, url: true };
 };

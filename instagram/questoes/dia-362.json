@@ -1,0 +1,101 @@
+{
+  "dia": 362,
+  "data": "2027-10-29",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Trombólise no AVC",
+  "conceito": "Alteplase for ischemic stroke: within 4.5 hours of last known well",
+  "personagem": null,
+  "anfitriao": "Tia Meia-Vida",
+  "gancho_data": "Dia Mundial do AVC (29/10).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-30",
+  "tom": null,
+  "gancho": "Dia Mundial do AVC: *quatro frascos e um relógio na parede*",
+  "gancho_apoio": "Dia Mundial do AVC, Sextou na Farmácia: a Tia Meia-Vida olha o relógio antes de escolher.",
+  "imagem": {
+    "arquivo": "dia-362.png",
+    "cena": "Tia Meia-Vida diante de um grande relógio de parede sem números; no balcão, quatro frascos; pela janela, um ônibus se aproxima do ponto.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida olha um relógio de parede com quatro frascos no balcão"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-362-macete.png",
+    "cena": "Callback: o relógio de parede vira um cérebro com ponteiros correndo, e um nó de lã emaranhado bloqueia uma estradinha no mapa do cérebro; a Tia Meia-Vida chega ao ponto a tempo e usa uma tesourinha brilhante para desfazer o nó, e a fatia do relógio ainda dentro do prazo fica verde.",
+    "foco": "50% 45%",
+    "alt": "AVC isquêmico em até 4,5 h: intravenous thrombolysis"
+  },
+  "questao": {
+    "vinheta": "A 70-year-old woman arrives by ambulance with sudden right face and arm weakness and aphasia; she was last known well 2 hours ago. Blood pressure is 168/94 mm Hg and glucose is 118 mg/dL. Noncontrast head CT shows no hemorrhage. She takes no anticoagulants, and platelet count is normal.",
+    "pergunta": "Which is the most appropriate pharmacotherapy now?",
+    "alternativas": {
+      "A": {
+        "texto": "Aspirin 325 mg",
+        "quiz": "Aspirin 325 mg"
+      },
+      "B": {
+        "texto": "Intravenous alteplase",
+        "quiz": "IV alteplase"
+      },
+      "C": {
+        "texto": "Intravenous heparin infusion",
+        "quiz": "IV heparin infusion"
+      },
+      "D": {
+        "texto": "IV labetalol to below 140/90 mm Hg",
+        "quiz": "IV labetalol to <140/90"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "AVC isquêmico em até 4,5 h: *intravenous thrombolysis*",
+    "certa": [
+      "Déficit focal súbito, *last known well* há 2 horas, TC sem sangramento, glicemia normal e sem contraindicação: é candidata a *intravenous thrombolysis* com *alteplase* (0,9 mg/kg) dentro de 4,5 horas. As diretrizes atuais aceitam a *tenecteplase* como alternativa equivalente. Em paralelo, angiotomografia para procurar oclusão de grande vaso e avaliar trombectomia."
+    ],
+    "termos": [
+      "last known well",
+      "alteplase",
+      "intravenous thrombolysis",
+      "tenecteplase"
+    ],
+    "erradas": {
+      "A": "Aspirina é para quem não recebe trombólise, ou só 24 horas depois dela; não substitui o trombolítico na janela.",
+      "C": "Heparina plena no AVC agudo não melhora o desfecho e aumenta o risco de sangramento.",
+      "D": "A pressão só precisa baixar se estiver acima de 185/110 antes da trombólise; 168/94 já permite tratar."
+    },
+    "macete": {
+      "frase": "*Tempo é cérebro: quatro horas e meia, a partir do último \"estava bem\"*",
+      "apoio": "O relógio conta desde a última vez em que a pessoa foi vista bem, não desde que foi encontrada: igual prazo de inscrição, que conta do edital e não de quando você viu o post. Quem acorda com o déficit conta da hora em que foi dormir. PA até 185/110 permite trombólise; aspirina só depois de 24 horas.",
+      "fala": "O relógio do cérebro lembra."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial do AVC, Sextou na Farmácia: a Tia Meia-Vida tem quatro frascos no balcão e um relógio na parede. A vinheta tem o horário em que a paciente estava bem pela última vez, e esse horário decide qual frasco sai.",
+    "palavras_chave": [
+      "neurology",
+      "emergency department",
+      "time-critical care",
+      "pharmacotherapy"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#AVC",
+      "#Stroke",
+      "#Neurologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Afasia súbita há 2 h, TC sem sangramento e PA 168/94: qual remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

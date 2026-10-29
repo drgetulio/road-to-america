@@ -1,0 +1,93 @@
+{
+  "dia": 189,
+  "data": "2027-05-09",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do pré-natal: Placenta prévia (dia 53), Isoimunização Rh (dia 88), Diabetes gestacional (dia 116)",
+  "conceito": "Prenatal care remix: Painless third-trimester bleeding + Rh-negative mother + Gestational diabetes screening at 24 to 28 weeks with an oral glucose test",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Dia das Mães (segundo domingo de maio, 9/5/2027).",
+  "remix_de": [
+    53,
+    88,
+    116
+  ],
+  "explicacao_em": "2027-05-10",
+  "tom": null,
+  "gancho": "Dia das Mães: o pré-natal de 28 semanas tem *mais checklist que viagem com criança*",
+  "gancho_apoio": "Remix de Domingo: placenta (dia 53), tipagem (dia 88) e açúcar (dia 116) na mesma consulta, mais um intruso.",
+  "imagem": {
+    "arquivo": "dia-189.png",
+    "cena": "Um cruzamento enfeitado com flores para o Dia das Mães; a Capitã Plaqueta segura uma prancheta com quatro quadradinhos em branco para marcar. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta, com uma prancheta de quatro quadradinhos, num cruzamento enfeitado para o Dia das Mães"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-189-macete.png",
+    "cena": "Callback: o escudo dourado chegou tarde: atrás de um carrinho vermelho pequenininho já correm perseguidores, e a Capitã passa a vigiar a velocidade do trânsito com um radar portátil. Fundo limpo.",
+    "alt": "O escudo chegou tarde e a Capitã vigia a velocidade do trânsito com um radar"
+  },
+  "questao": {
+    "vinheta": "At 28 weeks' gestation, a 31-year-old Rh(D)-negative woman has an antibody screen showing anti-D at a titer of 1:64. A 20-week ultrasound showed a placenta covering the internal os, without bleeding since. Her 1-hour 50-g glucose challenge result is 118 mg/dL.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Digital cervical examination",
+        "quiz": "Digital cervical exam",
+        "dia": 53
+      },
+      "B": {
+        "texto": "3-hour 100-g oral glucose tolerance test",
+        "quiz": "3-hour 100-g OGTT",
+        "dia": 116
+      },
+      "C": {
+        "texto": "Middle cerebral artery Doppler",
+        "quiz": "MCA Doppler"
+      },
+      "D": {
+        "texto": "Anti-D immune globulin now",
+        "quiz": "Anti-D immune globulin",
+        "dia": 88
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Anti-D já presente: *vigiar a anemia fetal*",
+    "certa": [
+      "Com anti-D já no rastreio de anticorpos e título de 1:64, acima do título crítico (em geral 1:16 a 1:32, conforme o laboratório), ela já está aloimunizada; anti-D passivo depois de imunoglobulina raramente passa de 1:4. A imunoglobulina anti-D só previne a sensibilização. Agora o objetivo é vigiar a anemia fetal, e o exame de escolha é o *middle cerebral artery Doppler* (pico de velocidade sistólica), repetido a cada 1 a 2 semanas: sangue anêmico é mais fino e corre mais rápido. Se o pico passar de 1,5 MoM, o próximo passo é cordocentese, com transfusão intrauterina se preciso."
+    ],
+    "termos": [
+      "alloimmunization",
+      "critical titer",
+      "middle cerebral artery Doppler",
+      "peak systolic velocity"
+    ],
+    "erradas": {
+      "A": "Dia 53: com placenta prévia, toque vaginal é proibido, porque pode provocar sangramento grave. A conduta é ultrassom de controle e, se a prévia persistir, cesárea programada entre 36 e 37 semanas.",
+      "B": "Dia 116: glicose de 1 hora de 118 mg/dL está abaixo do corte (130 a 140 mg/dL), então o rastreamento de diabetes gestacional terminou negativo e o teste de 3 horas não entra.",
+      "D": "Dia 88: a imunoglobulina anti-D serve para quem ainda não tem anticorpo. Com o rastreio positivo para anti-D em título alto, ela já está sensibilizada, e a imunoglobulina não traz benefício."
+    },
+    "macete": {
+      "frase": "Escudo anti-D é *prevenção*: se o anticorpo já existe, o escudo chegou tarde e o *radar* entra em campo.",
+      "apoio": "Pegadinha de prova: o NBME repete o cenário clássico das 28 semanas e troca um detalhe, o rastreio de anticorpos positivo. Acima do título crítico, a vigilância é pelo pico de velocidade sistólica da artéria cerebral média fetal.",
+      "fala": "Parou, colou, coagulou. Anticorpo que já nasceu não volta para a garagem: agora é radar."
+    }
+  },
+  "legenda": {
+    "contexto": "Feliz Dia das Mães! O Remix de hoje junta três conceitos do pré-natal numa consulta de 28 semanas, com um detalhe novo no exame de sangue. Leia a vinheta inteira: um resultado muda tudo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rh negativo com anti-D 1:64 às 28 semanas: o que fazer?"
+  },
+  "exemplo": false
+}

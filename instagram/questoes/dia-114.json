@@ -1,0 +1,96 @@
+{
+  "dia": 114,
+  "data": "2027-02-23",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Púrpura trombocitopênica trombótica",
+  "conceito": "TTP: microangiopathic anemia with schistocytes and low ADAMTS13, plasma exchange",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-24",
+  "tom": null,
+  "gancho": "Capitã Plaqueta chegou ao plantão e *a avenida estava interditada*",
+  "gancho_apoio": "Hoje a Capitã não organiza o trânsito: ela investiga um acidente em série.",
+  "imagem": {
+    "arquivo": "dia-114.png",
+    "cena": "No meio de uma avenida, a Capitã Plaqueta apita espantada: fitas compridas e grudentas atravessam a rua de poste a poste, com discos amarelos grudados nelas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Capitã Plaqueta apita espantada diante de fitas grudentas que atravessam a avenida, cheias de discos amarelos."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-114-macete.png",
+    "cena": "Callback: a Capitã Plaqueta corta as fitas grudentas com uma tesoura gigante e brilhante (a ADAMTS13), e os carrinhos vermelhos voltam a passar inteiros. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A Capitã Plaqueta corta as fitas com uma tesoura gigante, e os carrinhos vermelhos passam inteiros."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has had fatigue, headache and intermittent confusion for 3 days. Temperature is 38.0°C. She has leg petechiae. Hemoglobin is 7.9 g/dL, platelets 14,000/mm3, LDH high and haptoglobin undetectable; the smear shows many schistocytes. Creatinine is 1.3 mg/dL. PT, aPTT and direct Coombs test are normal.",
+    "pergunta": "Which is the most likely underlying cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Shiga toxin injury to endothelium",
+        "quiz": "Shiga toxin"
+      },
+      "B": {
+        "texto": "Consumption of clotting factors",
+        "quiz": "Factor consumption"
+      },
+      "C": {
+        "texto": "Antibodies to platelet factor 4-heparin",
+        "quiz": "Anti-PF4/heparin"
+      },
+      "D": {
+        "texto": "Autoantibody against ADAMTS13",
+        "quiz": "Anti-ADAMTS13"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "PTT: sem *ADAMTS13*, o von Willebrand gigante prende as plaquetas",
+    "certa": [
+      "Hemácias rasgadas (esquizócitos) com hemólise, plaquetopenia grave, alteração neurológica, febre e piora renal leve, com coagulograma e Coombs normais, descrevem púrpura trombocitopênica trombótica (TTP). Na forma adquirida, um autoanticorpo inibe a ADAMTS13, a protease que corta os grandes multímeros de von Willebrand, e as plaquetas formam microtrombos. A conduta é plasmaférese urgente com corticoide, além de caplacizumabe e rituximabe."
+    ],
+    "termos": [
+      "thrombotic thrombocytopenic purpura",
+      "ADAMTS13",
+      "schistocytes",
+      "plasma exchange"
+    ],
+    "erradas": {
+      "A": "A toxina Shiga causa síndrome hemolítico-urêmica, em geral em criança depois de diarreia com sangue, com lesão renal predominante.",
+      "B": "Na coagulação intravascular disseminada os fatores são gastos, e o TP e o TTPa ficam alargados; aqui são normais.",
+      "C": "Anticorpo anti-PF4 com heparina causa trombocitopenia induzida por heparina, com trombose e sem esquizócitos, e exige exposição à heparina."
+    },
+    "macete": {
+      "frase": "Sem a *tesoura* ADAMTS13, o varal de von Willebrand rasga as hemácias",
+      "apoio": "Pegadinha de prova: O NBME separa PTT (coagulograma normal, ADAMTS13 baixa), SHU (diarreia e rim) e CIVD (TP e TTPa alargados), e coloca a transfusão de plaquetas como isca.",
+      "fala": "Parou, colou, coagulou. Mas colou demais e rasgou os carrinhos!"
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Capitã Plaqueta: uma paciente, alguns dias de mal-estar e um hemograma que assusta. O esfregaço, os fatores da coagulação e o Coombs estão na vinheta. Qual é a causa por trás?",
+    "palavras_chave": [
+      "confusion",
+      "petechiae",
+      "schistocytes",
+      "low platelets"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Hematologia",
+      "#Hematology",
+      "#ClinicaMedica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquizócitos, plaquetas 14 mil, TP e TTPa normais: qual causa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

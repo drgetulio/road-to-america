@@ -1,0 +1,103 @@
+{
+  "dia": 280,
+  "data": "2027-08-08",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do X que o pai não passa: Agamaglobulinemia de Bruton (dia 8), Distrofia muscular de Duchenne (dia 73), Síndrome de Wiskott-Aldrich (dia 197)",
+  "conceito": "X-linked inheritance remix: Bruton agammaglobulinemia + Duchenne muscular dystrophy + Wiskott-Aldrich syndrome",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Dia dos Pais (segundo domingo de agosto, 8/8/2027): herança ligada ao X.",
+  "remix_de": [
+    8,
+    73,
+    197
+  ],
+  "explicacao_em": "2027-08-09",
+  "tom": null,
+  "gancho": "Pai dá *o time e o Y*. E o X do filho?",
+  "gancho_apoio": "Dia dos Pais com três genes do X que já passaram por aqui e um intruso na lista.",
+  "imagem": {
+    "arquivo": "dia-280.png",
+    "cena": "Almoço de Dia dos Pais: na cadeirinha, uma camisa de futebol em miniatura com um cromossomo de pelúcia baixinho em cima; ao lado, uma caixa de presente com um cromossomo de pelúcia comprido e laço. A Capitã Plaqueta, de colete refletivo, olha para a caixa, curiosa. Num canto, um vinil pequeno serve de descanso de panela.",
+    "foco": "50% 35%",
+    "alt": "Almoço de Dia dos Pais com o presente do pai e o da mãe"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-280-macete.png",
+    "cena": "Callback: a Capitã Plaqueta abre a caixa da mãe e acha o cromossomo comprido com uma tomada coletiva faltando; vários plugues diferentes ficam sem ter onde ligar, e soldadinhos pequenos de dois uniformes não saem do quartel. A camisa pequena de futebol continua na cadeirinha, e dois presentes da família, um halter e um ursinho de pelúcia, seguem fechados na mesa.",
+    "foco": "50% 45%",
+    "alt": "Sem T e sem NK, com B: cadeia gama comum"
+  },
+  "questao": {
+    "vinheta": "A 6-month-old boy has oral thrush, chronic diarrhea, poor weight gain, and now Pneumocystis jirovecii pneumonia. No thymic shadow is seen. T cells and NK cells are nearly absent, but B cells are normal in number. His maternal uncle died of infection in infancy.",
+    "pergunta": "A defect in which protein is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Bruton tyrosine kinase",
+        "quiz": "Bruton tyrosine kinase",
+        "dia": 8
+      },
+      "B": {
+        "texto": "Adenosine deaminase",
+        "quiz": "Adenosine deaminase"
+      },
+      "C": {
+        "texto": "WAS protein (WASp)",
+        "quiz": "WAS protein",
+        "dia": 197
+      },
+      "D": {
+        "texto": "Common gamma chain",
+        "quiz": "Common gamma chain"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Sem T e sem NK, com B: *cadeia gama comum*",
+    "certa": [
+      "Candidíase oral, diarreia crônica, baixo ganho de peso e Pneumocystis aos 6 meses, sem sombra do timo, com linfócitos T e NK quase ausentes e B presentes, formam a *X-linked SCID* (T-B+NK-). Falta a *common gamma chain* (IL2RG), peça que os receptores de IL-2, IL-4, IL-7, IL-9, IL-15 e IL-21 dividem: sem a IL-7 não se forma o linfócito T, e sem a IL-15 não se forma o NK. O B até existe, mas sem a ajuda do T não faz anticorpo. O tio materno conta a herança *X-linked recessive*: a mãe é portadora e o pai passa o Y. O tratamento é o transplante de células-tronco hematopoéticas. É o intruso do domingo."
+    ],
+    "termos": [
+      "X-linked SCID",
+      "common gamma chain (IL2RG)",
+      "T-B+NK- phenotype",
+      "X-linked recessive"
+    ],
+    "erradas": {
+      "A": "Na agamaglobulinemia de Bruton (dia 8), também ligada ao X, faltam os linfócitos B e os T estão normais; as infecções são bacterianas, depois dos 6 meses.",
+      "B": "A falta de adenosina desaminase também causa SCID, mas é autossômica recessiva e derruba T, B e NK juntos (T-B-NK-), pelo acúmulo de dATP tóxico.",
+      "C": "Na Wiskott-Aldrich (dia 197), ligada ao X, aparecem eczema, plaquetas pequenas e baixas e infecções, com linfócitos T e NK presentes."
+    },
+    "macete": {
+      "frase": "*Gama comum é a tomada coletiva*: sem ela, a IL-7 não liga o T e a IL-15 não liga o NK",
+      "apoio": "A cadeia gama é a tomada que vários receptores de interleucina dividem. Sem ela, o timo nem monta o time de T e de NK. Bônus do dia 73: a distrofina de Duchenne é outro gene do X que o pai nunca passa para o filho; ele só passa o sobrenome, o time e o Y.",
+      "fala": "Parou, colou, coagulou. Hoje o trânsito parado é o dos linfócitos."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia dos Pais no Remix de Domingo: três genes do X que já apareceram no feed (dias 8, 73 e 197) e um intruso. Pai passa o sobrenome, o time e o Y; o resto da história está na vinheta. No Prometric não tem selo de \"visto no dia\", então aproveite hoje.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Genetica",
+      "#Immunology",
+      "#DiaDosPais",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem T, sem NK e com B normal num menino: qual proteína falta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

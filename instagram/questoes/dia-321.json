@@ -1,0 +1,97 @@
+{
+  "dia": 321,
+  "data": "2027-09-18",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Menor emancipado",
+  "conceito": "Emancipated minor: married, in the military or self-supporting adolescents consent for themselves",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-19",
+  "tom": null,
+  "gancho": "Dezessete anos, aliança e *boleto no próprio nome*: quem assina?",
+  "gancho_apoio": "No Sábado Sem Viés, a idade não é a única coisa que a Dona Bússola confere.",
+  "imagem": {
+    "arquivo": "dia-321.png",
+    "cena": "A Dona Bússola, na mesa da cozinha, olha um chaveiro com aliança ao lado de um formulário em branco e uma caneta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola olha um chaveiro com aliança ao lado de um formulário em branco."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-321-macete.png",
+    "cena": "Callback: o ponteiro da Dona Bússola aponta para o chaveiro com a aliança, o crachá, a marmita e os boletos, e a caneta pousa ao lado deles; a casinha distante continua no morro, com a estrada vazia.",
+    "foco": "50% 45%",
+    "alt": "Menor emancipado decide como adulto"
+  },
+  "questao": {
+    "vinheta": "A 17-year-old woman has recurrent biliary colic, and her surgeon advises an elective laparoscopic cholecystectomy. Eight months ago she got married; she lives with her husband and works full time. She understands the risks and benefits and wants the surgery. Her parents live in another state and disagree with the plan.",
+    "pergunta": "Who should provide informed consent for the procedure?",
+    "alternativas": {
+      "A": {
+        "texto": "The patient herself",
+        "quiz": "The patient"
+      },
+      "B": {
+        "texto": "Her parents",
+        "quiz": "Her parents"
+      },
+      "C": {
+        "texto": "Her husband",
+        "quiz": "Her husband"
+      },
+      "D": {
+        "texto": "A court-appointed guardian",
+        "quiz": "Court-appointed guardian"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Menor emancipado *decide como adulto*",
+    "certa": [
+      "*Emancipated minor* é quem casou, está nas forças armadas ou vive de forma independente e se sustenta; para fins médicos, decide como um adulto. Ela é casada, mora com o marido e trabalha, então o consentimento é dela, mesmo para cirurgia eletiva e mesmo que os pais discordem. Isso vale porque ela tem *decision-making capacity*: entende, raciocina e expressa uma escolha."
+    ],
+    "termos": [
+      "emancipated minor",
+      "informed consent",
+      "decision-making capacity",
+      "surrogate decision maker"
+    ],
+    "erradas": {
+      "B": "Os pais deixam de ser responsáveis legais pela decisão médica de um menor emancipado.",
+      "C": "O cônjuge não consente por um adulto capaz; ele só seria consultado como substituto se ela perdesse a capacidade.",
+      "D": "Tutor nomeado pelo juiz só entra quando o paciente não tem capacidade e não há substituto legal."
+    },
+    "macete": {
+      "frase": "*Casou, fardou ou paga os próprios boletos: assina sozinha*",
+      "apoio": "Menor emancipado decide pelo próprio tratamento: casamento, serviço militar ou sustento próprio morando fora da casa dos pais (married, military, self-supporting). Os pais não assinam, o marido também não, e tutor judicial só entra quando não há quem decida. Quem paga os próprios boletos assina o próprio consentimento.",
+      "fala": "Meu norte é a paciente."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: uma pilha de boletos, uma aliança e um formulário esperando assinatura. A Dona Bússola confere mais do que a data de nascimento, e a vinheta traz cada detalhe da vida da paciente.",
+    "palavras_chave": [
+      "medical ethics",
+      "informed consent",
+      "adolescent",
+      "surgery"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Etica",
+      "#MedicalEthics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Casada aos 17, mora com o marido e trabalha: quem assina a cirurgia?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 278,
+  "data": "2027-08-06",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Artrite reumatoide",
+  "conceito": "Rheumatoid arthritis: methotrexate first-line, screen for latent TB before anti-TNF",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-07",
+  "tom": null,
+  "gancho": "Tia Meia-Vida não libera *o presente sem um exame na nota*",
+  "gancho_apoio": "O pacote está embrulhado para presente, mas a Tia quer um papel antes.",
+  "imagem": {
+    "arquivo": "dia-278.png",
+    "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue um pacote embrulhado para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, numa feira de artesanato, segura um pacote de presente e não entrega."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-278-macete.png",
+    "cena": "Callback: ao lado da barraca surge uma pequena fortaleza redonda de pedra, com um martelo encostado no muro, pronto para tirar o cimento entre as pedras. Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir, a Tia anota no bloquinho e entrega o pacote, que se abre e mostra uma caneta injetora com uma fitinha verde.",
+    "foco": "50% 45%",
+    "alt": "Anti-TNF só depois de rastrear TB latente"
+  },
+  "questao": {
+    "vinheta": "Rheumatoid arthritis in a 46-year-old woman remains active, with synovitis of both hands, after 4 months of methotrexate 25 mg weekly plus folic acid. CRP is elevated. Her rheumatologist plans to add adalimumab. She has no cough, fever, or weight loss, and her chest x-ray is normal.",
+    "pergunta": "Which test is most appropriate before starting this drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Interferon-gamma release assay",
+        "quiz": "IGRA"
+      },
+      "B": {
+        "texto": "Antinuclear antibody titer",
+        "quiz": "ANA titer"
+      },
+      "C": {
+        "texto": "HLA-B*58:01 genotyping",
+        "quiz": "HLA-B*58:01"
+      },
+      "D": {
+        "texto": "Thiopurine methyltransferase activity",
+        "quiz": "TPMT activity"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Anti-TNF só depois de *rastrear TB latente*",
+    "certa": [
+      "O *methotrexate* é o primeiro remédio da artrite reumatoide e, quando a doença segue ativa, soma-se um biológico como o *anti-TNF*. O *TNF-α* sustenta o *granuloma* que mantém a tuberculose latente presa, então antes de bloquear o TNF é obrigatório rastrear *latent TB* com *IGRA* (ou PPD). Hepatite B e hepatite C também são rastreadas antes de qualquer biológico."
+    ],
+    "termos": [
+      "methotrexate first-line",
+      "anti-TNF",
+      "latent tuberculosis",
+      "interferon-gamma release assay"
+    ],
+    "erradas": {
+      "B": "FAN não muda a decisão de iniciar anti-TNF e não rastreia nenhum risco infeccioso.",
+      "C": "HLA-B*58:01 prevê reação cutânea grave ao alopurinol, não ao adalimumabe.",
+      "D": "TPMT é dosada antes de azatioprina ou 6-mercaptopurina, para evitar mielotoxicidade."
+    },
+    "macete": {
+      "frase": "Antes do anti-TNF, *bata na porta do granuloma*",
+      "apoio": "O TNF é o cimento do granuloma onde o bacilo dorme. Tirar o cimento sem olhar quem mora lá dentro é acordar o inquilino. O IGRA (ou o PPD) é a lanterna que espia pela fresta antes, a nota que a Tia exige; TB latente positiva trata antes ou junto do biológico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Do IGRA antes do biológico, eu lembro."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia: a Tia Meia-Vida segura o pacote no balcão até ver um exame na nota. Quatro exames possíveis, e a vinheta diz qual remédio vai entrar. Spoiler de quem já caiu nessa: remédio novo sem checagem prévia é a pegadinha preferida do NBME.",
+    "palavras_chave": [
+      "rheumatology",
+      "drug safety",
+      "pretreatment testing",
+      "outpatient clinic"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Reumatologia",
+      "#Rheumatology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Antes de começar o adalimumabe, qual exame a Tia exige?"
+  },
+  "reel": null,
+  "exemplo": false
+}

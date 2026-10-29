@@ -1,0 +1,96 @@
+{
+  "dia": 316,
+  "data": "2027-09-13",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Sepse por gram-negativos",
+  "conceito": "Endotoxin: lipid A of LPS activates TLR4 on macrophages, fever and septic shock",
+  "personagem": "Macrô",
+  "gancho_data": "Dia Mundial da Sepse (13/9).",
+  "remix_de": null,
+  "explicacao_em": "2027-09-14",
+  "tom": null,
+  "gancho": "Quatro interfones no prédio do Macrô: *qual acordou o condomínio?*",
+  "gancho_apoio": "Dia Mundial da Sepse. Quatro botões no interfone e só um combina com o germe da vinheta.",
+  "imagem": {
+    "arquivo": "dia-316.png",
+    "cena": "Macrô, de porteiro noturno na portaria de um prédio, ao lado de um painel de interfones, vê uma bactéria em bastão de jaqueta fechada chegar à porta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô, porteiro noturno, vê uma bactéria de jaqueta fechada chegar à portaria."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-316-macete.png",
+    "cena": "Callback: a bactéria abre a jaqueta e mostra uma serpentina longa de açúcar com uma âncora de duas pontas na base, que aperta o botão de interfone de encaixe igual; o Macrô dá um pulo e dispara três sirenes vermelhas que acendem todas as janelas do prédio.",
+    "foco": "50% 45%",
+    "alt": "Endotoxina: lipid A toca a campainha do TLR4"
+  },
+  "questao": {
+    "vinheta": "A 70-year-old woman with pyelonephritis develops a temperature of 39.8°C, blood pressure of 78/40 mm Hg, and oozing from venipuncture sites. Blood cultures grow lactose-fermenting gram-negative rods. Platelets are 48,000/mm3, fibrinogen is low, and D-dimer is markedly elevated.",
+    "pergunta": "Which bacterial component and host receptor most directly initiated this response?",
+    "alternativas": {
+      "A": {
+        "texto": "Lipid A binding Toll-like receptor 4",
+        "quiz": "Lipid A + TLR4"
+      },
+      "B": {
+        "texto": "Lipoteichoic acid binding Toll-like receptor 2",
+        "quiz": "Lipoteichoic acid + TLR2"
+      },
+      "C": {
+        "texto": "Flagellin binding Toll-like receptor 5",
+        "quiz": "Flagellin + TLR5"
+      },
+      "D": {
+        "texto": "Unmethylated CpG DNA binding Toll-like receptor 9",
+        "quiz": "CpG DNA + TLR9"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Endotoxina: *lipid A* toca a campainha do *TLR4*",
+    "certa": [
+      "Bacilos gram-negativos fermentadores de lactose, como a E. coli, liberam *lipopolysaccharide* da membrana externa, e a porção tóxica é o *lipid A*. Com a ajuda da LPS-binding protein e do CD14, o lipid A ativa o *TLR4* dos macrófagos, que liberam IL-1, IL-6 e TNF-α (febre e vasodilatação) e expressam fator tecidual, o que dispara a DIC. A endotoxina faz parte da parede, sai quando a bactéria se rompe, resiste ao calor e não vira toxoide."
+    ],
+    "termos": [
+      "lipopolysaccharide",
+      "lipid A",
+      "TLR4 and CD14",
+      "septic shock and DIC"
+    ],
+    "erradas": {
+      "B": "*Ácido lipoteicoico* com TLR2 é o sinal típico das gram-positivas, que não têm LPS.",
+      "C": "*Flagelina* com TLR5 também é bacteriana, mas não é o gatilho principal do choque séptico por gram-negativo.",
+      "D": "*DNA CpG não metilado* é reconhecido pelo TLR9 dentro do endossomo e não é a endotoxina."
+    },
+    "macete": {
+      "frase": "*Lipídio A é o dedo no interfone do TLR4*: acorda o condomínio inteiro",
+      "apoio": "O LPS da parede gram-negativa tem o lipid A, que encaixa no TLR4 (com CD14 e MD-2) do macrófago. O interfone dispara IL-1, IL-6 e TNF, e a festa termina em choque e CIVD, como na vinheta. Ácido lipoteicoico é TLR2 (gram-positivo), flagelina é TLR5 e CpG é TLR9.",
+      "fala": "Comi, mostrei, avisei. O prédio inteiro ouviu."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial da Sepse, Bicho de Segunda: o Macrô virou porteiro noturno e alguém tocou o interfone errado às 3 da manhã. Quatro botões, quatro receptores, e o Gram da hemocultura está na vinheta.",
+    "palavras_chave": [
+      "sepsis",
+      "innate immunity",
+      "bloodstream infection",
+      "immunology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Sepse"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Choque séptico com hemocultura gram-negativa: quem disparou a resposta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

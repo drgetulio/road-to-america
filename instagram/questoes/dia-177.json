@@ -1,0 +1,88 @@
+{
+  "dia": 177,
+  "data": "2027-04-27",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Anemia ferropriva no homem idoso",
+  "conceito": "Iron deficiency anemia in an older man: colonoscopy and upper endoscopy",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-28",
+  "tom": null,
+  "gancho": "Plantão de Terça: um cansaço de três meses e *um hemograma que fala alto*",
+  "gancho_apoio": "Dona Térmica já viu esse caso às 3 da manhã e não se contenta com a primeira resposta.",
+  "imagem": {
+    "arquivo": "dia-177.png",
+    "cena": "Num posto de gasolina de estrada às 3 da manhã, Dona Térmica, de lanterna na mão, examina um carrinho cor de ferrugem com o ponteiro na reserva. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, de lanterna, examina num posto de gasolina um carrinho cor de ferrugem na reserva."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-177-macete.png",
+    "cena": "Callback: duas lanternas iluminam uma mangueira comprida pelas duas pontas, de cima e de baixo, e os fachos se encontram num furinho brilhante. Fundo limpo.",
+    "alt": "Duas lanternas iluminam a mangueira pelas duas pontas e os fachos se encontram num furinho."
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man has 3 months of fatigue. He takes no medications and has no gastrointestinal symptoms. Hemoglobin is 9.6 g/dL, MCV 71 fL, and ferritin 9 ng/mL. Stool color is normal. A screening colonoscopy 6 years ago was normal.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Colonoscopy and upper endoscopy",
+        "quiz": "Colonoscopy + EGD"
+      },
+      "B": {
+        "texto": "Oral iron and repeat CBC in 3 months",
+        "quiz": "Oral iron, recheck"
+      },
+      "C": {
+        "texto": "Fecal immunochemical test",
+        "quiz": "Fecal immunochemical test"
+      },
+      "D": {
+        "texto": "Capsule endoscopy",
+        "quiz": "Capsule endoscopy"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Ferropenia no homem: *endoscopia pelas duas pontas*",
+    "certa": [
+      "Anemia por deficiência de ferro (ferritina baixa) em homem adulto ou mulher na pós-menopausa é perda de sangue pelo trato gastrointestinal até prova em contrário, incluindo câncer colorretal e gástrico. A diretriz da AGA recomenda *bidirectional endoscopy* (*colonoscopy* e *upper endoscopy*), mesmo sem sintomas e mesmo com colonoscopia normal anos antes. O ferro pode ser reposto, mas sem deixar de investigar."
+    ],
+    "termos": [
+      "iron deficiency anemia",
+      "bidirectional endoscopy",
+      "colonoscopy",
+      "upper endoscopy"
+    ],
+    "erradas": {
+      "B": "Repor ferro e esperar trata o número e atrasa o diagnóstico da causa.",
+      "C": "O FIT é exame de rastreamento para quem não tem sintomas nem anemia; com ferropenia, um FIT negativo não afasta lesão.",
+      "D": "A cápsula fica para depois de colonoscopia e endoscopia digestiva alta sem achados."
+    },
+    "macete": {
+      "frase": "Ferro baixo em homem é *mangueira furada*: procure o furo pelas *duas pontas*",
+      "apoio": "Colonoscopia e endoscopia alta, mesmo sem sintomas e com colonoscopia normal anos antes; sorologia para doença celíaca junto.",
+      "fala": "Já vi esse caso às 3 da manhã: encher o tanque sem achar o furo só adia a pane."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça. Um homem de 68 anos, cansado há três meses, com um hemograma e uma ferritina na vinheta que pedem explicação. A história de exames anteriores também está lá. Qual é o próximo passo?",
+    "palavras_chave": [
+      "fatigue",
+      "microcytic anemia",
+      "low ferritin",
+      "older man"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Homem de 68, ferritina 9, sem sintomas e colono normal há 6 anos: e agora?"
+  },
+  "exemplo": false
+}

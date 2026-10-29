@@ -1,0 +1,97 @@
+{
+  "dia": 109,
+  "data": "2027-02-18",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Ruptura do tendão de Aquiles",
+  "conceito": "Achilles tendon rupture: positive Thompson test",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-19",
+  "tom": null,
+  "gancho": "Futsal de casados x solteiros: *o lance mais famoso* ninguém viu",
+  "gancho_apoio": "Um mancar, uma quadra vazia e um Garçom Espetinho que serve ortopedia de sobremesa.",
+  "imagem": {
+    "arquivo": "dia-109.png",
+    "cena": "Numa quadra de futsal vazia, um tênis simpático com olhos está sentado no banco de reservas com uma bolsa de gelo em cima, e o Garçom Espetinho segura a plaquinha redonda verde e vermelha na beira da quadra. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um tênis com bolsa de gelo no banco de reservas; o Garçom Espetinho segura a plaquinha verde e vermelha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-109-macete.png",
+    "cena": "Callback: o tênis agora é uma marionete de madeira; uma mão aperta a barrinha da panturrilha, mas o pé fica parado, porque o fio do calcanhar arrebentou como um elástico cortado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Marionete de tênis: apertam a panturrilha e o pé não mexe, porque o fio do calcanhar arrebentou."
+  },
+  "questao": {
+    "vinheta": "A 41-year-old man playing weekend futsal felt a sudden pop behind his right ankle, as if someone had kicked him, though no one was behind him. He walks with a limp and cannot stand on tiptoe on that side. With him prone, squeezing the right calf produces no plantar flexion.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Anterior talofibular ligament sprain",
+        "quiz": "ATFL sprain"
+      },
+      "B": {
+        "texto": "Medial gastrocnemius strain",
+        "quiz": "Medial calf strain"
+      },
+      "C": {
+        "texto": "Posterior tibial tendon dysfunction",
+        "quiz": "Tibialis posterior"
+      },
+      "D": {
+        "texto": "Achilles tendon rupture",
+        "quiz": "Achilles rupture"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Aquiles rompido: *Thompson positivo*",
+    "certa": [
+      "Estalo súbito atrás do tornozelo, sensação de chute e incapacidade de ficar na ponta do pé descrevem ruptura do tendão de Aquiles. O teste de Thompson é positivo quando apertar a panturrilha não produz flexão plantar, porque o tendão que transmite a força está rompido. Andar mancando não afasta o diagnóstico, pois outros flexores ainda ajudam a mover o pé."
+    ],
+    "termos": [
+      "Achilles tendon rupture",
+      "Thompson test",
+      "plantar flexion",
+      "fluoroquinolones"
+    ],
+    "erradas": {
+      "A": "A entorse do ligamento talofibular anterior acontece na inversão, com dor e edema na face lateral do tornozelo, e o Thompson é normal.",
+      "B": "O estiramento do gastrocnêmio medial dói no meio da panturrilha, e apertá-la ainda produz flexão plantar.",
+      "C": "A disfunção do tibial posterior é crônica, com pé plano adquirido e dor na face medial, sem estalo agudo."
+    },
+    "macete": {
+      "frase": "Marionete de *fio cortado*: aperta a panturrilha e o pé não mexe",
+      "apoio": "Pegadinha de prova: O NBME descreve o chute que ninguém deu e o teste de Thompson, e associa a ruptura ao uso de fluoroquinolona e de corticoide.",
+      "fala": "Ninguém te chutou, doutor. Foi o seu Aquiles pedindo demissão."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, espeto de ortopedia: futsal de fim de semana, 41 anos de idade e 20 de sedentarismo. O que ele sentiu e o exame da vinheta fecham o diagnóstico.",
+    "palavras_chave": [
+      "weekend futsal",
+      "sudden pop",
+      "ankle pain",
+      "cannot stand on tiptoe"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Ortopedia",
+      "#Orthopedics",
+      "#MedicinaEsportiva"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estalo, sem ponta de pé e panturrilha que não move o pé: diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

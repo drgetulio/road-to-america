@@ -1,0 +1,96 @@
+{
+  "dia": 97,
+  "data": "2027-02-06",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Valor preditivo positivo",
+  "conceito": "Positive predictive value rises with prevalence while sensitivity and specificity stay fixed",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-07",
+  "tom": null,
+  "gancho": "O mesmo teste rápido saiu da clínica e *foi para a feira*: o que mudou?",
+  "gancho_apoio": "Mesmo kit, mesma bula, outro bairro. O Viés já está de lupa.",
+  "imagem": {
+    "arquivo": "dia-097.png",
+    "cena": "Numa feira de rua, o Viés espia de trás de uma tabela 2x2 em branco enquanto um kit de teste rápido, sem marcas, passa de barraca em barraca num carrinho de mão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O Viés espia de trás de uma tabela 2x2 numa feira; um kit de teste rápido passa num carrinho de mão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-097-macete.png",
+    "cena": "Callback da feira: quase todas as bandeirinhas de alerta erguidas no corredor estão nas mãos de bonecos de papelão, e o Viés ri atrás da tabela, com um celular cheio de mensagens sem palavras. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Bandeirinhas de alerta quase todas nas mãos de bonecos de papelão; o Viés ri com um celular cheio de mensagens."
+  },
+  "questao": {
+    "vinheta": "A rapid viral antigen test has 90% sensitivity and 90% specificity. It is first used in a referral clinic where disease prevalence is 50%, and then at a community health fair where prevalence is 5%.",
+    "pergunta": "Compared with its use in the clinic, which change is expected at the health fair?",
+    "alternativas": {
+      "A": {
+        "texto": "Higher sensitivity",
+        "quiz": "Higher sensitivity"
+      },
+      "B": {
+        "texto": "Lower specificity",
+        "quiz": "Lower specificity"
+      },
+      "C": {
+        "texto": "Lower positive predictive value",
+        "quiz": "Lower PPV"
+      },
+      "D": {
+        "texto": "Lower negative predictive value",
+        "quiz": "Lower NPV"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "VPP *depende da prevalência*",
+    "certa": [
+      "Sensibilidade e especificidade pertencem ao teste e ficam iguais em qualquer população. O valor preditivo positivo (positive predictive value) cai quando a prevalência cai: em 1000 pessoas na feira, há 45 verdadeiros positivos e 95 falsos positivos, e o VPP vai de 90% para cerca de 32%. Com menos doentes, o valor preditivo negativo sobe, e não desce."
+    ],
+    "termos": [
+      "positive predictive value",
+      "prevalence",
+      "sensitivity",
+      "specificity"
+    ],
+    "erradas": {
+      "A": "A sensibilidade é uma propriedade do teste nos doentes e não muda com a prevalência.",
+      "B": "A especificidade é uma propriedade do teste nos sadios e também não muda com a prevalência.",
+      "D": "Com menos doentes, um negativo fica ainda mais confiável: o VPN sobe, de 90% para mais de 99%."
+    },
+    "macete": {
+      "frase": "VPP é *corrente de WhatsApp*: com pouca doença, quase todo alerta é golpe",
+      "apoio": "Pegadinha de prova: O NBME muda a população (rastreamento na comunidade versus clínica de referência) e pergunta o que acontece com VPP e VPN; sensibilidade e especificidade ficam iguais.",
+      "fala": "Prevalência baixa é o meu habitat. Ali todo alarme parece verdade."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: o mesmo teste rápido muda de endereço, e o Viés adorou a mudança. Os números de cada lugar estão na vinheta. O que muda quando a população muda?",
+    "palavras_chave": [
+      "rapid antigen test",
+      "referral clinic",
+      "health fair",
+      "screening"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#Epidemiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Mesmo teste, prevalência de 50% para 5%: qual valor muda e como?"
+  },
+  "reel": null,
+  "exemplo": false
+}

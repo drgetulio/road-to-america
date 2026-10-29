@@ -1,0 +1,95 @@
+{
+  "dia": 8,
+  "data": "2026-11-09",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Agamaglobulinemia de Bruton",
+  "conceito": "Bruton agammaglobulinemia: BTK defect blocks B-cell maturation, infections start after maternal IgG wanes",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-10",
+  "tom": null,
+  "gancho": "Bebê ótimo até os 6 meses, e depois disso o *vale-presente* da mamãe venceu",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-008.png",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, segura um vale-presente embrulhado que acabou de vencer, ao lado de uma ampulheta já vazia, com a cara de quem foi pego de surpresa no caixa.",
+    "foco": "50% 35%",
+    "alt": "Macrô segura um vale-presente que acabou de vencer, ao lado de uma ampulheta vazia, com cara de surpresa."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-008-macete.png",
+    "cena": "Revelação: atrás do vale vencido havia uma escolinha das células B de portão trancado. Os pequenos pré-B esperam do lado de fora com mochilas vazias, porque a chave dourada (BTK) sumiu do gancho, e o Macrô mostra o gancho sem chave.",
+    "alt": "A escola B fechou por falta de chave"
+  },
+  "questao": {
+    "vinheta": "A 9-month-old boy has had recurrent otitis media and two pneumonias since age 6 months. Tonsils are tiny and no lymph nodes are palpable. Serum IgG, IgA and IgM are markedly decreased. Flow cytometry shows almost no CD19+ cells; T-cell counts are normal.",
+    "pergunta": "A defect in which protein is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "CD40 ligand on helper T cells",
+        "quiz": "CD40 ligand"
+      },
+      "B": {
+        "texto": "Adenosine deaminase",
+        "quiz": "ADA"
+      },
+      "C": {
+        "texto": "Bruton tyrosine kinase",
+        "quiz": "BTK"
+      },
+      "D": {
+        "texto": "NADPH oxidase",
+        "quiz": "NADPH oxidase"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "A escola B fechou por falta de chave",
+    "certa": [
+      "Menino com infecções bacterianas que começam depois dos 6 meses, amígdalas e linfonodos quase ausentes, todas as imunoglobulinas baixas e quase nenhuma célula CD19 positiva, com células T normais: é a agamaglobulinemia ligada ao X, de Bruton. A tirosina-quinase de Bruton (BTK) é necessária para o pré-B amadurecer, então faltam células B e plasmócitos. Os primeiros meses passam bem porque a IgG que veio da mãe pela placenta ainda protege."
+    ],
+    "termos": [
+      "X-linked agammaglobulinemia",
+      "Bruton tyrosine kinase",
+      "CD19",
+      "maternal IgG"
+    ],
+    "erradas": {
+      "A": "Na falta de CD40 ligante (hiper-IgM), as células B existem, mas não trocam de classe, e a IgM fica normal ou alta.",
+      "B": "Na deficiência de ADA (SCID) as células T também faltam, e aqui elas estão normais.",
+      "D": "Na doença granulomatosa crônica (NADPH oxidase), células B e imunoglobulinas são normais e as infecções são por germes catalase-positivos."
+    },
+    "macete": {
+      "frase": "*B* de Bruton, de BTK, de B cell e de boy. O vale-presente de IgG da mãe *vence aos 6 meses*, e a escolinha B nunca abriu.",
+      "apoio": "Pegadinha de prova: O NBME marca a idade: infecções que começam por volta dos 6 meses, quando a IgG materna acaba, junto com amígdalas e linfonodos pequenos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: um bebê ótimo até os 6 meses e, depois disso, uma otite atrás da outra. O Macrô apresenta os invasores, mas ninguém do outro lado do balcão responde.",
+    "palavras_chave": [
+      "recurrent infections",
+      "infant",
+      "immunodeficiency",
+      "immunology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê sem células CD19 e com Ig baixas: qual proteína falhou?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 135,
+  "data": "2027-03-16",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Artrite séptica",
+  "conceito": "Suspected septic arthritis: arthrocentesis before antibiotics",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-17",
+  "tom": null,
+  "gancho": "O joelho virou *forno a lenha* às 3 da manhã. Qual é o seu primeiro movimento?",
+  "gancho_apoio": "Dona Térmica já ouviu quatro planos no corredor, e todos com muita certeza.",
+  "imagem": {
+    "arquivo": "dia-135.png",
+    "cena": "Na copa do plantão, Dona Térmica, de prancheta, olha com cuidado um joelho simpático em forma de forno a lenha, vermelho de quente. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, de prancheta, olha um joelho em forma de forno a lenha, vermelho de quente."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-135-macete.png",
+    "cena": "Callback: Dona Térmica usa uma seringa grande pela portinha do forno e colhe um frasco de líquido turvo com etiqueta de perícia; só depois um frasco de antibiótico entra em cena. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Dona Térmica colhe líquido turvo do forno-joelho com uma seringa; o antibiótico entra só depois."
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with type 2 diabetes has had a painful, swollen right knee for 1 day. Temperature is 38.6°C; BP is 132/80 mm Hg. The knee is warm and red with a large effusion, and any passive movement causes severe pain. Leukocyte count is 15,800/mm3. He has no prosthetic joints.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral colchicine and rest",
+        "quiz": "Oral colchicine"
+      },
+      "B": {
+        "texto": "Empiric IV vancomycin and ceftriaxone",
+        "quiz": "Empiric IV antibiotics"
+      },
+      "C": {
+        "texto": "MRI of the right knee",
+        "quiz": "Knee MRI"
+      },
+      "D": {
+        "texto": "Diagnostic arthrocentesis",
+        "quiz": "Arthrocentesis"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Artrite séptica: *punção antes* do antibiótico",
+    "certa": [
+      "Monoartrite aguda, quente e com febre é artrite séptica até prova em contrário. No paciente estável, o primeiro passo é a artrocentese, com celularidade, Gram, cultura e pesquisa de cristais, colhida antes do antibiótico para não negativar a cultura. Logo depois da punção (e das hemoculturas) começa o antibiótico empírico."
+    ],
+    "termos": [
+      "septic arthritis",
+      "arthrocentesis",
+      "synovial fluid culture",
+      "Staphylococcus aureus"
+    ],
+    "erradas": {
+      "A": "Colchicina trata gota, e só se pensa nela depois que o líquido mostra cristais e exclui infecção.",
+      "B": "O antibiótico é necessário, mas iniciado antes da punção pode esterilizar a cultura; no paciente estável, a punção vem primeiro e sem demora.",
+      "C": "A ressonância atrasa o diagnóstico e não diferencia infecção de cristal; o líquido sinovial é que decide."
+    },
+    "macete": {
+      "frase": "*Perícia antes da faxina*: punciona, depois limpa com antibiótico",
+      "apoio": "Celularidade, Gram, cultura e cristais do líquido; logo depois, hemocultura e antibiótico empírico. Em choque séptico, antibiótico sem esperar.",
+      "fala": "Antibiótico antes da punção é faxina antes da perícia: some a prova do crime."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: um joelho que esquentou da noite para o dia e quatro residentes com quatro planos diferentes. O resto está na vinheta. Só um movimento vem primeiro.",
+    "palavras_chave": [
+      "acute monoarthritis",
+      "fever",
+      "knee effusion",
+      "type 2 diabetes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Reumatologia",
+      "#SepticArthritis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Joelho quente com derrame e febre, paciente estável: qual o 1º passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

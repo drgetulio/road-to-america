@@ -1,0 +1,99 @@
+{
+  "dia": 248,
+  "data": "2027-07-07",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Acidose com ânion gap aumentado",
+  "conceito": "High anion gap metabolic acidosis: unmeasured anions such as lactate, ketones and methanol",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-08",
+  "tom": null,
+  "gancho": "Seu Néfron fez a conta três vezes e o caixa *continua sem fechar*",
+  "gancho_apoio": "Ânion gap: a única conta da prova que você faz de cabeça e confere três vezes na folha plastificada.",
+  "imagem": {
+    "arquivo": "dia-248.png",
+    "cena": "Fim de expediente no cartório. Seu Néfron, de gravata e óculos na ponta do nariz, confere uma balança de dois pratos que não fecha e pega a calculadora pela terceira vez. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron confere pela terceira vez uma balança que não fecha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-248-macete.png",
+    "cena": "Callback: uma formiguinha simpática, de capa feita de palheta de limpador de para-brisa, sobe no prato mais leve e equilibra a balança; ao lado, num pires separado, brilha uma pedrinha de cristal. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A formiguinha de capa de limpador equilibra a balança; ao lado, uma pedrinha de cristal"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man drank windshield washer fluid by mistake 18 hours ago. He now has blurred vision, 'like a snowstorm.' Arterial pH is 7.15; Na+ 138, Cl- 100, and HCO3- 8 mEq/L. The serum osmolal gap is elevated, and urinalysis is normal.",
+    "pergunta": "Which anion best explains both the acid-base disorder and his visual symptoms?",
+    "alternativas": {
+      "A": {
+        "texto": "Formate",
+        "quiz": "Formate"
+      },
+      "B": {
+        "texto": "Oxalate",
+        "quiz": "Oxalate"
+      },
+      "C": {
+        "texto": "Beta-hydroxybutyrate",
+        "quiz": "Beta-hydroxybutyrate"
+      },
+      "D": {
+        "texto": "Lactate",
+        "quiz": "Lactate"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O ânion sem nome era o *formato*",
+    "certa": [
+      "O ânion gap é o sódio menos a soma de cloreto e bicarbonato: 138 menos 108, igual a 30, e sobra um ânion que a bioquímica de rotina não mede. No metanol, a álcool desidrogenase e a aldeído desidrogenase geram *formic acid*, e o *formate* é o ânion não medido que consome o bicarbonato e lesa a retina e o nervo óptico, daí a visão em nevasca. O *osmolal gap* alto mostra o álcool tóxico ainda circulando."
+    ],
+    "termos": [
+      "anion gap",
+      "formate",
+      "osmolal gap",
+      "fomepizole"
+    ],
+    "erradas": {
+      "B": "O *oxalate* vem do etilenoglicol (anticongelante), com lesão renal e cristais na urina; aqui a urina está normal.",
+      "C": "O *beta-hydroxybutyrate* é da cetoacidose, que não lesa a retina nem deixa o gap osmolar tão alto.",
+      "D": "O lactato pode subir um pouco, mas não explica a lesão da retina nem o gap osmolar."
+    },
+    "macete": {
+      "frase": "Metanol vira *formiga* no olho; etilenoglicol vira *pedra* no rim",
+      "apoio": "Ácido fórmico vem de formica, formiga em latim: é ela que embaça a visão em nevasca. O etilenoglicol do anticongelante vira oxalato, a pedrinha no pires que vai para o rim. Nos dois, o antídoto bloqueia a álcool desidrogenase: fomepizol.",
+      "fala": "Sem carimbo, não sai. E esse ânion estava sem carimbo."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê no ácido-base, com o Seu Néfron. Uma história de exposição, um sintoma e uma gasometria estão na vinheta. Faça a conta antes de votar.",
+    "palavras_chave": [
+      "metabolic acidosis",
+      "acid-base disorder",
+      "toxicology",
+      "Step 1 physiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Fisiologia",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ânion gap de 30 e visão em nevasca: qual ânion explica os dois?"
+  },
+  "reel": null,
+  "exemplo": false
+}

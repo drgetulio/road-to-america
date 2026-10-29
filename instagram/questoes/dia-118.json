@@ -1,0 +1,96 @@
+{
+  "dia": 118,
+  "data": "2027-02-27",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Violência contra a pessoa idosa",
+  "conceito": "Suspected elder abuse: report to Adult Protective Services",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-28",
+  "tom": "acolhedor",
+  "gancho": "Pele, peso e pílulas que *não fecham a conta*: o que o médico faz?",
+  "gancho_apoio": "Uma senhora de 82 anos, um cuidador e sinais que não combinam.",
+  "imagem": {
+    "arquivo": "dia-118.png",
+    "cena": "Numa varanda tranquila no fim da tarde, a Dona Bússola, serena, está ao lado de uma cadeira de balanço vazia, com uma xícara de chá na mesinha. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola, serena, numa varanda ao lado de uma cadeira de balanço vazia e de uma xícara de chá."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-118-macete.png",
+    "cena": "Um envelope voa da varanda até um prédio firme com um escudo verde na fachada; a cadeira de balanço agora tem uma manta macia, e o ponteiro da Dona Bússola aponta para o prédio. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um envelope voa até um prédio com escudo verde; a cadeira de balanço ganhou uma manta macia."
+  },
+  "questao": {
+    "vinheta": "An 82-year-old woman with mild cognitive impairment visits with her son, her caregiver. She has bruises of different ages on both upper arms, has lost 5 kg in 3 months and has had no medication refills for 2 months. Alone, she quietly says she is afraid of upsetting her son.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Confront the son about the bruises",
+        "quiz": "Confront the son"
+      },
+      "B": {
+        "texto": "Report to Adult Protective Services",
+        "quiz": "Report to APS"
+      },
+      "C": {
+        "texto": "Wait for her explicit permission to report",
+        "quiz": "Wait for permission"
+      },
+      "D": {
+        "texto": "Reexamine her in 1 month for new injuries",
+        "quiz": "Recheck in 1 month"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Suspeita de violência contra a pessoa idosa: *notificar*",
+    "certa": [
+      "Hematomas de idades diferentes em locais protegidos, perda de peso, remédios sem reposição e medo relatado a sós sugerem violência e negligência contra a pessoa idosa. Nos Estados Unidos, o médico deve notificar a suspeita ao Adult Protective Services (APS), que investiga; não é preciso ter certeza nem prova. Junto com isso, o médico trata as lesões, avalia a segurança imediata e registra os achados com cuidado."
+    ],
+    "termos": [
+      "elder abuse",
+      "Adult Protective Services",
+      "mandatory reporting"
+    ],
+    "erradas": {
+      "A": "Confrontar o cuidador pode aumentar o risco para a paciente, e investigar cabe ao serviço de proteção.",
+      "C": "Na maioria dos estados a notificação da suspeita é obrigatória e não depende de autorização, ainda mais com prejuízo cognitivo.",
+      "D": "Esperar novas lesões expõe a paciente a mais dano; os sinais atuais já justificam a notificação."
+    },
+    "macete": {
+      "frase": "*Pele, peso e pílula*: suspeitou, notificou",
+      "apoio": "Pegadinha de prova: No NBME, a suspeita razoável já basta para notificar; confrontar o cuidador, pedir permissão antes e esperar novas lesões são iscas.",
+      "fala": "Meu norte é o paciente. Suspeita razoável já basta para notificar, e notificar é proteger."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado sem viés, ética: uma consulta de rotina, uma senhora com prejuízo cognitivo leve e sinais que pedem atenção. O que o médico deve fazer?",
+    "palavras_chave": [
+      "82-year-old woman",
+      "bruises of different ages",
+      "weight loss",
+      "caregiver"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Geriatria"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hematomas, perda de peso e medo do filho: qual é a conduta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 1,
+  "data": "2026-11-02",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Uretrite e epididimite no homem jovem",
+  "conceito": "Chlamydia trachomatis: obligate intracellular, infectious elementary body vs replicating reticulate body",
+  "personagem": "Macrô",
+  "gancho_data": "Estreia do programa e início do Novembro Azul (saúde do homem). Também é Finados: tom leve, sem piada sobre morte.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-03",
+  "tom": "acolhedor",
+  "gancho": "Estreia com um *hóspede* que não aparece na foto do Gram",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-001.png",
+    "cena": "Macrô, na recepção de uma pousada pequena e acolhedora, confere com uma lupa o livro de hóspedes: a ficha diz que alguém fez check-in, mas o quarto que se vê pela porta parece vazio, só com a cama arrumada. A comanda em branco aparece no guardanapo dele.",
+    "foco": "50% 35%",
+    "alt": "Estreia com um hóspede que não aparece na foto do Gram"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-001-macete.png",
+    "cena": "Callback da pousada, agora em corte: na porta, um viajante pequeno e compacto, de mala fechada, toca a campainha (corpo elementar, o que infecta). Lá dentro, num quarto redondo, as visitas desfizeram as malas, cresceram e se dividem em várias (corpos reticulados). Macrô entrega a chave com calma.",
+    "alt": "O hóspede de mala fechada é o que infecta"
+  },
+  "questao": {
+    "vinheta": "A 22-year-old man has 10 days of dysuria and a scant watery urethral discharge, plus new right scrotal pain. Gram stain of the discharge shows many neutrophils and no organisms. The organism grows only in cell culture, forming intracytoplasmic inclusions.",
+    "pergunta": "Which form of this organism is infectious and enters host cells?",
+    "alternativas": {
+      "A": {
+        "texto": "Elementary body",
+        "quiz": "Elementary body"
+      },
+      "B": {
+        "texto": "Reticulate body",
+        "quiz": "Reticulate body"
+      },
+      "C": {
+        "texto": "Endospore",
+        "quiz": "Endospore"
+      },
+      "D": {
+        "texto": "Trophozoite",
+        "quiz": "Trophozoite"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O hóspede de mala fechada é o que infecta",
+    "certa": [
+      "Secreção aquosa, muitos neutrófilos sem bactéria visível no Gram e crescimento só em cultura de células, com inclusões no citoplasma, apontam para *Chlamydia trachomatis*, a causa mais comum de uretrite e de epididimite no homem jovem sexualmente ativo. Ela é intracelular obrigatória e alterna duas formas. O corpo elementar (*elementary body*) é pequeno, resistente e infectante: é ele que entra na célula. Lá dentro, vira corpo reticulado (*reticulate body*), que se replica na inclusão e depois volta a ser elementar para sair e infectar a célula vizinha. Na prática, o diagnóstico é por NAAT e, na epididimite, o CDC indica ceftriaxona em dose única mais doxiciclina por 10 dias."
+    ],
+    "termos": [
+      "elementary body",
+      "reticulate body",
+      "obligate intracellular",
+      "Chlamydia trachomatis"
+    ],
+    "erradas": {
+      "B": "O corpo reticulado é a forma que se replica dentro da inclusão; é grande, frágil e não infecta a célula seguinte.",
+      "C": "O endósporo é a forma de resistência de gram-positivos como Bacillus e Clostridium; a Chlamydia não forma esporos.",
+      "D": "Trofozoíto é a forma ativa de protozoários como Trichomonas e Giardia, e não de bactéria."
+    },
+    "macete": {
+      "frase": "*Elementar* entra, *Reticulado* replica: o hóspede de mala fechada toca a campainha, e quem desfez a mala se multiplica lá dentro.",
+      "apoio": "Pegadinha de prova: O NBME usa \"neutrófilos sem organismos no Gram\" como pista principal e pergunta qual das duas formas é a infectante: a elementar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Estreia da Questão de Embarque, no começo do Novembro Azul, o mês de cuidar da saúde do homem. Hoje também é Finados, e o tom é tranquilo: uma questão por dia, com a explicação amanhã, no mesmo horário.",
+    "palavras_chave": [
+      "urethritis",
+      "scrotal pain",
+      "microbiology",
+      "sexual health"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Uretrite com Gram sem bactéria: qual forma do germe infecta?"
+  },
+  "exemplo": false
+}

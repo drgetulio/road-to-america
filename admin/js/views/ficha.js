@@ -6,6 +6,11 @@ import { sugestoesAcao, semanasAtividade, gradeCalor, nivelCalor, textoUltimaAti
 import { barrasVerticais, linhaProporcao, barrasAcerto, mapaCalor, tabela } from "../graficos.js";
 import { chipStatus, chipGarantia, chipProntidao, seloDemo, avisoLgpd } from "./comum.js";
 import { importarPresenca, botaoImportar } from "./acoes.js";
+import { leituraBanco, pctTxt, numTxt, REGRA_CONFIANCA, PADRAO_STEP2CK } from "../analise.js";
+import { nomeChave } from "../../../plataforma/js/banco.js";
+import { chipConfianca } from "./comum.js";
+import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
+import { textoProbabilidade } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "modo não informado" };
 const PRIORIDADE = { 1: "Agora", 2: "Esta semana", 3: "Acompanhar" };
@@ -25,14 +30,16 @@ export default {
     }
     if (!el.querySelector("[data-ficha]")) el.innerHTML = '<div class="wrap section-sm"><p class="boot__msg" role="status">Abrindo a ficha de ' + e(r.nome) + "...</p></div>";
     const cfg = ctx.config;
-    const [atividade, simulados, nbme, presenca, plano, nota, perfis] = await Promise.all([
+    const [atividade, simulados, nbme, presenca, plano, nota, perfis, oficiais, completos] = await Promise.all([
       ctx.store.getAtividadeDiaria(id, { dias: 182, agora }),
       ctx.store.listSimulados({ userId: id }),
       ctx.store.listNbme({ userId: id }),
       ctx.store.getPresenca(id),
       ctx.store.getPlano(id),
       ctx.store.getAnotacao(id).catch(() => null),
-      r.sintetico ? ctx.store.listParticipantes().catch(() => []) : Promise.resolve([])
+      r.sintetico ? ctx.store.listParticipantes().catch(() => []) : Promise.resolve([]),
+      ctx.store.listResultadosOficiais({ userId: id }).catch(() => []),
+      ctx.store.listSimuladosCompletos ? ctx.store.listSimuladosCompletos({ userId: id }).catch((err) => { console.error(err); return null; }) : []
     ]);
     const perfilDemo = perfis.find?.((p) => p.id === id)?.perfil_demo || "";
     const l = r.linha;
@@ -93,6 +100,8 @@ export default {
         "</section>" +
       "</div>" +
 
+      painelBancoFicha(r, av, oficiais, ctx) +
+
       '<section class="panel" aria-labelledby="tl-t"><div class="panel__head"><h2 class="h-sm" id="tl-t">Linha do tempo de estudo, 26 semanas</h2>' +
         '<p class="hint">Respostas no app de flashcards por dia. O dia vira às 4h, como no app.</p></div>' +
         '<dl class="mini">' +
@@ -126,6 +135,11 @@ export default {
       '<section class="panel" aria-labelledby="sim-t"><div class="panel__head"><h2 class="h-sm" id="sim-t">Simulados de 30 minutos</h2>' +
         '<p class="hint">Cada tentativa é um bloco de ' + SIMULADO_30.questoes + " questões em " + Math.round(SIMULADO_30.duracao_ms / 60000) + " minutos. Ritmo de prova: " + Math.round(SIMULADO_30.ritmo_ms / 1000) + " s por questão. Simulados são formativos e não contam para a garantia.</p></div>" +
         blocoSimulados(simulados, cfg, ctx) +
+      "</section>" +
+
+      '<section class="panel" aria-labelledby="sc-t"><div class="panel__head"><h2 class="h-sm" id="sc-t">Simulados completos</h2>' +
+        '<p class="hint">Dia de prova no formato oficial (Step 1: 14 blocos; Step 2 CK: 16). A probabilidade é a guardada no fim de cada dia, pelo padrão provisório do banco ou pela calibração em uso na data; não é resultado oficial. O relatório abre na página do simulado com os dados deste participante.</p></div>' +
+        blocoCompletos(completos) +
       "</section>" +
 
       '<section class="panel" aria-labelledby="nb-t"><div class="panel__head"><h2 class="h-sm" id="nb-t">Autoavaliações NBME lançadas</h2>' +
@@ -280,6 +294,23 @@ function blocoProntidao(p, step) {
     '<p class="hint">' + e(p.criterio) + "</p></div>";
 }
 
+function blocoCompletos(lista) {
+  if (lista === null) return '<p class="body">Não foi possível ler os simulados completos agora.</p>';
+  if (!lista.length) return '<p class="body">Nenhum simulado completo iniciado.</p>';
+  const nomeSim = (r) => e(NOME_STEP[r.step]) + ", " + e((NOMES_TIPO[r.tipo] || r.tipo).toLowerCase());
+  return '<div class="ptab-wrap"><table class="mini-tab mini-tab--completos"><caption class="sr-only">Simulados completos, mais recente primeiro</caption><thead><tr><th scope="col">Data</th><th scope="col">Simulado</th><th scope="col">Situação</th><th scope="col">Acerto</th><th scope="col">Probabilidade no dia</th><th scope="col"><span class="sr-only">Relatório</span></th></tr></thead><tbody>' +
+    lista.filter((r) => r.estado !== "abandonado").map((r) => {
+      const l = linhaHistorico(r);
+      const nb = r.formulario?.blocos?.length || 0;
+      const feito = r.estado === "concluido";
+      return "<tr>" + td("Data", e(dataBR(l.data))) + td("Simulado", nomeSim(r) + (l.reduzido ? " <small>reduzido</small>" : "")) +
+        td("Situação", feito ? "encerrado" : (r.sessao?.suspensa ? "parado" : "em andamento") + ", bloco " + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb) +
+        td("Acerto", feito && l.acertos !== null ? "<b>" + l.acertos + "/" + l.total + "</b> " + pct(l.percentual) : "") +
+        td("Probabilidade no dia", feito && l.p_aprovacao !== null ? textoProbabilidade(l.p_aprovacao) + " " + (l.alta ? '<span class="gar gar--ok">precisão alta</span>' : '<span class="gar gar--neutro">preliminar</span>') : "") +
+        td("", feito ? '<a href="../simulado/#/relatorio/' + encodeURIComponent(r.id) + '">Relatório<span class="sr-only"> de ' + e(dataBR(l.data)) + "</span></a>" : "") + "</tr>";
+    }).join("") + "</tbody></table></div>";
+}
+
 function blocoSimulados(simulados, cfg, ctx) {
   if (!simulados.length) return '<p class="body">Nenhuma tentativa ainda. O simulado fica em <a href="../simulado/">../simulado/</a>.</p>';
   const tab = '<div class="ptab-wrap"><table class="mini-tab mini-tab--sim"><caption class="sr-only">Tentativas de simulado, mais recente primeiro</caption><thead><tr><th scope="col">Data</th><th scope="col">Step</th><th scope="col">Acerto</th><th scope="col">Em branco</th><th scope="col">Tempo</th><th scope="col">Média por questão</th><th scope="col">Encerrado por</th><th scope="col"><span class="sr-only">Ações</span></th></tr></thead><tbody>' +
@@ -322,4 +353,48 @@ function td(rotulo, html) {
 
 function campoData(nome, rotulo, valor) {
   return '<div class="field"><label for="pl-' + nome + '">' + e(rotulo) + '</label><input id="pl-' + nome + '" name="' + nome + '" type="date" class="input" value="' + e(valor || "") + '"></div>';
+}
+
+/* Probabilidade de aprovação pelo banco nos dois Steps, com intervalo, confiança,
+   perfil por sistema em relação ao examinando no limiar (como no relatório oficial
+   de quem é reprovado) e a leitura combinada com a EXIT 18 */
+const ROTULO_CLASSE = { mais_baixo: "Mais baixo", igual: "Igual", mais_alto: "Mais alto", insuficiente: "Poucos itens" };
+function painelBancoFicha(r, av, oficiais, ctx) {
+  const cab = '<div class="panel__head"><h2 class="h-sm" id="bq-t">Posição em relação ao limiar do banco</h2>' +
+    '<p class="hint">Estimativa pelo modelo de Rasch ancorado no padrão provisório do banco (dificuldade-alvo dos itens), com a incerteza do padrão, com todas as respostas do participante no banco, nos simulados e nos blocos de 30 minutos. Não é resultado oficial e não substitui a EXIT 18.</p></div>';
+  if (!r.banco) return '<section class="panel" aria-labelledby="bq-t">' + cab + '<p class="body">O banco de questões não abriu nesta sessão' + (ctx.psicoErro ? " (" + e(ctx.psicoErro) + ")" : "") + ".</p></section>";
+  const steps = ["step1", "step2ck"].filter((s) => r.banco[s] || !r.linha.plano?.[s + "_aprovado"]);
+  return '<section class="panel" aria-labelledby="bq-t">' + cab +
+    '<div class="grid2 grid2--top bq">' + steps.map((step) => cartaoBanco(r.banco[step], step, av, r)).join("") + "</div>" +
+    (oficiais.length ? '<h3 class="h-xs">Resultados oficiais lançados</h3><ul class="checks-gar">' + oficiais.map((o) => '<li class="cg cg--' + (o.resultado === "pass" ? "cumprido" : "pendente") + '">' + icon(o.resultado === "pass" ? "check-circle" : "x-circle") + "<div><b>" + NOME_STEP[o.step] + ": " + (o.resultado === "pass" ? "Pass" : o.resultado === "fail" ? "Fail" : "sem resultado") + (o.escore ? ", nota " + o.escore : "") + "</b><p>Prova em " + e(dataBR(o.data)) + (o.sintetico ? " · desfecho fictício da demonstração" : "") + "</p></div></li>").join("") + "</ul>" : "") +
+    '<p class="hint">Desfechos reais entram em <a href="#/calibracao">Calibração</a>, onde também se ajusta a regressão que liga o banco ao resultado oficial.</p>' +
+  "</section>";
+}
+function cartaoBanco(est, step, av, r) {
+  const nome = NOME_STEP[step];
+  if (r.linha.plano?.[step + "_aprovado"]) return '<div class="bq__card"><h3 class="h-xs">' + nome + '</h3><p class="body">Step aprovado.</p></div>';
+  if (!est) return '<div class="bq__card"><h3 class="h-xs">' + nome + '</h3><p class="body">Nenhuma resposta no banco deste Step ainda.</p></div>';
+  const lb = leituraBanco(est, av.prontidao[step]);
+  const c = est.confianca;
+  const pe = est.percentual_esperado;
+  const perfil = (est.perfil?.sistema || []).slice().sort((a, b) => a.p_acima - b.p_acima);
+  const baixo = c.alta && est.p_aprovacao <= REGRA_CONFIANCA.p_baixa;
+  return '<div class="bq__card' + (baixo ? " bq__card--risco" : "") + '">' +
+    '<h3 class="h-xs">' + nome + "</h3>" +
+    '<p class="bq__p"><b>' + textoProbabilidade(est.p_aprovacao) + "</b> " + chipConfianca(est) + "</p>" +
+    '<p class="bq__sub">de probabilidade de estar acima do limiar do banco' + (step === "step2ck" ? " (que representa o padrão de " + PADRAO_STEP2CK + ")" : "") + ".</p>" +
+    '<dl class="mini mini--2">' +
+      "<div><dt>θ estimado</dt><dd>" + numTxt(est.theta, 2) + "<small>intervalo de 90%: " + numTxt(est.ic90[0], 2) + " a " + numTxt(est.ic90[1], 2) + "</small></dd></div>" +
+      "<div><dt>Num formulário completo</dt><dd>" + pctTxt(pe.media) + "<small>esperado, de " + pctTxt(pe.ic90[0]) + " a " + pctTxt(pe.ic90[1]) + "; limiar " + pctTxt(pe.limiar) + "</small></dd></div>" +
+      "<div><dt>Itens efetivos</dt><dd>" + numTxt(est.n_efetivo) + "<small>" + plural(est.n, "item respondido", "itens respondidos") + " (no modo tutor cada um vale 0,5); mínimo " + c.n_minimo + "</small></dd></div>" +
+      "<div><dt>Sistemas com itens</dt><dd>" + est.cobertura.com_itens.length + " de " + est.cobertura.total + "<small>mínimo de " + pctTxt(REGRA_CONFIANCA.cobertura_min) + "</small></dd></div>" +
+    "</dl>" +
+    (c.alta ? "" : '<p class="pront__aviso">' + icon("info") + "<span>" + e(c.motivos.join(" ")) + (c.faltam_itens ? " Faltam cerca de " + plural(c.faltam_itens, "item", "itens") + " para decidir." : c.perto_do_limiar ? " Perto do limiar, mais itens quase não mudam a decisão." : "") + "</span></p>") +
+    (est.desfechos ? '<p class="body">' + (est.desfechos.demonstracao ? '<span class="selo-demo">dados de demonstração</span> Pelos desfechos fictícios da demonstração: <b>' : "Pela regressão sobre os desfechos oficiais lançados da turma: <b>") + textoProbabilidade(est.desfechos.p_aprovacao) + "</b> de probabilidade de Pass (" + plural(est.desfechos.modelo.n, "desfecho", "desfechos") + "). Estimativa da Road to America, não é resultado oficial.</p>" : "") +
+    (est.escore ? '<p class="body">' + (est.escore.demonstracao ? '<span class="selo-demo">dados de demonstração</span> ' : "") + "Nota estimada pela regressão sobre as notas oficiais lançadas: <b>" + Math.round(est.escore.media) + "</b> (intervalo preditivo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "; " + textoProbabilidade(est.escore.p_limiar) + " de chance de " + PADRAO_STEP2CK + " ou mais). Não é nota oficial.</p>" : "") +
+    '<p class="body' + (lb.combinada.divergente ? " bq__div" : "") + '">' + (lb.combinada.divergente ? icon("warning") : "") + e(lb.combinada.mensagem) + "</p>" +
+    (perfil.length ? '<details class="table-view"><summary>Perfil por sistema em relação ao limiar</summary><table class="mini-tab"><caption class="sr-only">Desempenho por sistema em relação ao examinando no limiar</caption><thead><tr><th scope="col">Sistema</th><th scope="col">Itens</th><th scope="col">Acerto</th><th scope="col">No limiar</th><th scope="col">Comparação</th></tr></thead><tbody>' +
+      perfil.map((x) => "<tr><td>" + e(nomeChave(step, "sistema", x.chave) || x.chave) + "</td><td>" + x.n + "</td><td>" + pctTxt(x.taxa) + "</td><td>" + pctTxt(x.esperado_limiar) + '</td><td><span class="gar gar--' + (x.classe === "mais_baixo" ? "risco" : x.classe === "mais_alto" ? "ok" : "neutro") + '">' + ROTULO_CLASSE[x.classe] + "</span></td></tr>").join("") + "</tbody></table></details>" : "") +
+    '<p class="hint">' + e(est.avisos.join(" ")) + "</p>" +
+  "</div>";
 }

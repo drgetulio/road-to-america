@@ -1,0 +1,96 @@
+{
+  "dia": 3,
+  "data": "2026-11-04",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Hiperplasia prostática benigna",
+  "conceito": "BPH: dihydrotestosterone from 5-alpha reductase drives transition zone growth",
+  "personagem": "Seu Néfron",
+  "gancho_data": "Novembro Azul.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-05",
+  "tom": null,
+  "gancho": "Quarta do Porquê com o Seu Néfron e uma pergunta de *bioquímica* que cai todo ano",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-003.png",
+    "cena": "Seu Néfron, de gravata e carimbo, carimba uma fila de gotinhas de água que saem da repartição em direção à avenida da cidade e olha por cima dos óculos. Setinhas de manual de montagem contornam a avenida.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron carimba uma fila de gotinhas de água que saem da repartição em direção à avenida da cidade."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-003-macete.png",
+    "cena": "Callback da obra, em corte: um operário em forma de bolinha, com uma betoneira, transforma tijolos cinza (testosterona) em tijolos dourados mais fortes (DHT). Os dourados se empilham só no anel em volta da avenida. Seu Néfron, de capacete por cima dos óculos, confere a nota fiscal da betoneira.",
+    "alt": "A obra fica bem no meio da avenida"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man has 2 years of nocturia, hesitancy and a weak urinary stream. Digital rectal examination shows a smooth, symmetric, rubbery, enlarged prostate without nodules. The enlarged tissue surrounds the prostatic urethra.",
+    "pergunta": "Growth of this tissue is driven mainly by a hormone formed locally by which enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Aromatase",
+        "quiz": "Aromatase"
+      },
+      "B": {
+        "texto": "5-alpha reductase type 2",
+        "quiz": "5-alpha reductase"
+      },
+      "C": {
+        "texto": "17-alpha hydroxylase",
+        "quiz": "17-alpha hydroxylase"
+      },
+      "D": {
+        "texto": "3-beta hydroxysteroid dehydrogenase",
+        "quiz": "3-beta-HSD"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A obra fica bem no meio da avenida",
+    "certa": [
+      "O quadro é hiperplasia prostática benigna (BPH): próstata lisa, simétrica e elástica, com sintomas obstrutivos porque cresce a zona de transição (transition zone), que abraça a uretra. Dentro da próstata, a 5-alfa-redutase tipo 2 transforma a testosterona em di-hidrotestosterona (DHT), um androgênio mais potente que estimula a proliferação do estroma e do epitélio. Por isso a finasterida, que bloqueia essa enzima, reduz o volume da glândula."
+    ],
+    "termos": [
+      "benign prostatic hyperplasia",
+      "5-alpha reductase type 2",
+      "dihydrotestosterone",
+      "transition zone"
+    ],
+    "erradas": {
+      "A": "A aromatase transforma testosterona em estradiol, não em DHT, o androgênio que faz a próstata crescer.",
+      "C": "A 17-alfa-hidroxilase atua na adrenal e no testículo, antes da testosterona existir, e não é a etapa local que alimenta a próstata.",
+      "D": "A 3-beta-HSD também é uma etapa inicial da síntese de esteroides, longe da conversão final que acontece na próstata."
+    },
+    "macete": {
+      "frase": "BPH é obra no meio da avenida: cresce na zona de *transição*, trava o *trânsito*, e quem paga o concreto é a DHT da 5-alfa-redutase.",
+      "apoio": "Pegadinha de prova: O NBME troca as zonas: a BPH nasce na zona de transição (sintoma urinário cedo) e o carcinoma, na zona periférica (nódulo no toque retal).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Novembro Azul, o mês da saúde do homem. Quarta do Porquê com o Seu Néfron: quatro enzimas da via dos esteroides, e a vinheta diz qual delas manda no caso. Bioquímica de via metabólica, a matéria que todo mundo decora na véspera e esquece no Prometric.",
+    "palavras_chave": [
+      "men's health",
+      "urinary symptoms",
+      "steroid hormones",
+      "reproductive physiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pathology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Próstata lisa e aumentada: qual enzima local faz o hormônio?"
+  },
+  "exemplo": false
+}

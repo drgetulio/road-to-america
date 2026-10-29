@@ -1,0 +1,95 @@
+{
+  "dia": 145,
+  "data": "2027-03-26",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Intoxicação escombroide",
+  "conceito": "Scombroid poisoning: histamine from poorly refrigerated fish, treat with antihistamines",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Sexta-feira Santa: dia de peixe (fresco e bem refrigerado).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-27",
+  "tom": null,
+  "gancho": "Sexta-feira Santa: o almoço de peixe *terminou no pronto-socorro*",
+  "gancho_apoio": "A Tia Meia-Vida tem quatro remédios no balcão, e só um resolve.",
+  "imagem": {
+    "arquivo": "dia-145.png",
+    "cena": "Numa peixaria de interior, um atum simpático de avental acena do balcão para a Tia Meia-Vida, que chega com uma cesta de feira e um chapéu de palha sobre o coque. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um atum de avental acena do balcão da peixaria para a Tia Meia-Vida, de cesta e chapéu de palha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-145-macete.png",
+    "cena": "Callback: o atum, que tomou sol fora do gelo, está vermelho como camarão, e a Tia Meia-Vida entrega a ele dois comprimidos de cores diferentes; ao lado, um isopor agora cheio de gelo. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O atum vermelho como camarão recebe dois comprimidos da Tia Meia-Vida; ao lado, um isopor cheio de gelo."
+  },
+  "questao": {
+    "vinheta": "Twenty minutes after eating grilled tuna at a restaurant, a 38-year-old man has flushing of the face and upper trunk, a throbbing headache, a peppery taste in his mouth and diarrhea. His friend who ate the same dish has similar symptoms. BP is 118/74 mm Hg; there is no wheezing or lip swelling.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral ciprofloxacin",
+        "quiz": "Ciprofloxacin"
+      },
+      "B": {
+        "texto": "Intramuscular epinephrine",
+        "quiz": "IM epinephrine"
+      },
+      "C": {
+        "texto": "H1 and H2 antihistamines",
+        "quiz": "H1 + H2 blockers"
+      },
+      "D": {
+        "texto": "Atropine and pralidoxime",
+        "quiz": "Atropine + pralidoxime"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Escombroide: *histamina* do peixe mal refrigerado",
+    "certa": [
+      "Peixes como atum, cavala e sardinha guardados sem refrigeração adequada deixam bactérias transformarem histidina em histamina, que não sai com o cozimento. Minutos depois, vêm rubor, cefaleia, gosto apimentado ou metálico, diarreia e às vezes urticária, em todos que comeram o mesmo prato. O tratamento é anti-histamínico H1, com ou sem H2, e o quadro some em horas."
+    ],
+    "termos": [
+      "scombroid poisoning",
+      "histamine",
+      "improper refrigeration",
+      "H1 antihistamine"
+    ],
+    "erradas": {
+      "A": "Não é infecção, e sim uma toxina já formada no peixe; antibiótico não ajuda.",
+      "B": "Adrenalina fica para broncoespasmo ou hipotensão grave, que esse paciente não tem.",
+      "D": "Atropina e pralidoxima tratam intoxicação por organofosforado, com salivação, miose e bradicardia."
+    },
+    "macete": {
+      "frase": "Escombroide é *peixe que tomou sol*: histidina vira histamina",
+      "apoio": "Vários comensais iguais e sem alergia prévia: anti-histamínico H1, com ou sem H2. Adrenalina só se houver broncoespasmo ou choque.",
+      "fala": "Peixe que tomou sol volta vermelho. E a mesa inteira vai junto."
+    }
+  },
+  "legenda": {
+    "contexto": "Sexta-feira Santa é dia de peixe para muitas famílias. O que aconteceu depois do almoço, e com quem, está na vinheta. A Tia Meia-Vida quer o remédio certo, e amanhã explica como deixar o peixe fresco e bem gelado.",
+    "palavras_chave": [
+      "grilled tuna",
+      "flushing",
+      "peppery taste",
+      "foodborne illness"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Toxicologia",
+      "#FoodPoisoning"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rubor, cefaleia e gosto apimentado 20 min após atum, amigo igual: qual remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

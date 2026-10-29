@@ -1,0 +1,97 @@
+{
+  "dia": 274,
+  "data": "2027-08-02",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Tétano",
+  "conceito": "Tetanospasmin: blocks GABA and glycine release from Renshaw cells, spastic paralysis",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-03",
+  "tom": null,
+  "gancho": "Bicho de Segunda: *um ensaio de escola de samba* que não acaba nunca",
+  "gancho_apoio": "Neurotransmissão no Step 1: inibitório, excitatório, pré, pós... e o seu cérebro às 3 da manhã sem nenhum dos quatro.",
+  "imagem": {
+    "arquivo": "dia-274.png",
+    "cena": "Na quadra de uma escola de samba ao amanhecer, o Macrô, de guardanapo xadrez e comanda no bolso, tampa os ouvidos diante de uma bateria que não para. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô tampa os ouvidos diante de uma bateria que não para"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-274-macete.png",
+    "cena": "Callback: bacilos em forma de baqueta fogem com o apito do mestre de bateria, um neurônio de boné, que fica sem como mandar parar, e a bateria segue tocando. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Os bacilos-baqueta roubam o apito do mestre de bateria e a bateria não para"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man is brought 9 days after a puncture wound from a garden fork. His last vaccination was in childhood. He has jaw stiffness, a fixed grimace, an arched back, and painful generalized spasms triggered by noise. He is alert, and sensation is normal.",
+    "pergunta": "The responsible toxin most likely blocks which process?",
+    "alternativas": {
+      "A": {
+        "texto": "Release of GABA and glycine from inhibitory interneurons",
+        "quiz": "GABA/glycine release"
+      },
+      "B": {
+        "texto": "Exocytosis of acetylcholine at the neuromuscular junction",
+        "quiz": "ACh release at the NMJ"
+      },
+      "C": {
+        "texto": "Glycine binding to postsynaptic receptors",
+        "quiz": "Glycine receptor binding"
+      },
+      "D": {
+        "texto": "Presynaptic calcium entry at the motor nerve terminals",
+        "quiz": "Presynaptic Ca2+ entry"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Sem *freio inibitório*, o músculo não relaxa",
+    "certa": [
+      "A *tetanospasmin* do *Clostridium tetani* entra no neurônio motor e sobe por *transporte axonal retrógrado* até a medula. Lá, cliva a *synaptobrevin* (proteína SNARE) nos interneurônios inibitórios, incluindo as *células de Renshaw*, e bloqueia a liberação de GABA e glicina. Sem freio, o neurônio motor dispara sem parar: trismo, riso sardônico, opistótono e espasmos."
+    ],
+    "termos": [
+      "tetanospasmin",
+      "retrograde axonal transport",
+      "Renshaw cells",
+      "SNARE proteins"
+    ],
+    "erradas": {
+      "B": "Bloquear a liberação de acetilcolina na junção é a toxina botulínica, que causa paralisia flácida descendente, o oposto deste quadro.",
+      "C": "Bloquear o receptor de glicina é a ação da estricnina, que dá espasmos parecidos, mas age no receptor e não na liberação.",
+      "D": "Perda da entrada de cálcio pré-sináptico lembra Lambert-Eaton, com fraqueza que melhora com o uso repetido, não espasmo."
+    },
+    "macete": {
+      "frase": "Tétano *rouba o apito do mestre de bateria*",
+      "apoio": "Na escola de samba, a célula de Renshaw é o mestre que apita para a bateria parar. Sem apito (sem GABA e glicina), ninguém para de tocar: espasmo. Já o botulismo corta o som da bateria inteira: ninguém toca.",
+      "fala": "Comi, mostrei, avisei. Mas quem roubou o apito foi ele."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no sistema nervoso, com o Macrô. Uma história, um exame neurológico e um detalhe que a vinheta conta. A toxina bloqueia o quê?",
+    "palavras_chave": [
+      "neurotoxin",
+      "neurotransmission",
+      "neurologic exam",
+      "Step 1 microbiology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#Neurociencia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Garfo de jardim e espasmos com barulho: a toxina bloqueia o quê?"
+  },
+  "reel": null,
+  "exemplo": false
+}

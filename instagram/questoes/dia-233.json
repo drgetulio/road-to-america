@@ -1,0 +1,100 @@
+{
+  "dia": 233,
+  "data": "2027-06-22",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Endocardite infecciosa",
+  "conceito": "Suspected endocarditis: three sets of blood cultures before antibiotics, then echocardiography",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-23",
+  "tom": null,
+  "gancho": "Plantão de Terça: febre há cinco dias e *uma ordem que importa*",
+  "gancho_apoio": "Às 3 da manhã, o residente quer prescrever, a enfermeira quer o pedido assinado e a Dona Térmica quer café.",
+  "imagem": {
+    "arquivo": "dia-233.png",
+    "cena": "Padaria de bairro ao amanhecer, com o relógio sem números ainda marcando 3 horas. Dona Térmica, de avental, segura a porta enquanto um caminhão de entrega buzina lá fora. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica segura a porta da padaria enquanto o caminhão de entrega buzina"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-233-macete.png",
+    "cena": "Callback: três bandejas de pães saem do forno e ficam em fila no balcão; só então o caminhão de entrega entra, e Dona Térmica confere as três, satisfeita. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Três bandejas de pães em fila antes de o caminhão entrar"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has had fever for 5 days. He injects heroin daily. Temperature is 39.1°C, blood pressure 124/76 mm Hg, and pulse 104/min. He is alert. A new holosystolic murmur at the left lower sternal border increases with inspiration. He has splinter hemorrhages.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Transesophageal echocardiography before cultures",
+        "quiz": "TEE before cultures"
+      },
+      "B": {
+        "texto": "Immediate IV vancomycin, with cultures later",
+        "quiz": "IV vancomycin first"
+      },
+      "C": {
+        "texto": "Three blood culture sets from separate sites",
+        "quiz": "3 blood culture sets"
+      },
+      "D": {
+        "texto": "Urgent tricuspid valve replacement",
+        "quiz": "Tricuspid valve surgery"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Endocardite: *hemocultura antes* do antibiótico",
+    "certa": [
+      "No paciente estável com suspeita de *infective endocarditis*, o primeiro passo é colher *three sets of blood cultures* de punções separadas, antes de qualquer antibiótico, porque a bacteremia é contínua e a cultura guia semanas de tratamento. Logo depois entram o antibiótico empírico (com vancomicina, pelo *S. aureus*) e a *echocardiography*, começando pela transtorácica. Sopro tricúspide em quem injeta drogas é a apresentação clássica."
+    ],
+    "termos": [
+      "infective endocarditis",
+      "three sets of blood cultures",
+      "tricuspid valve",
+      "echocardiography"
+    ],
+    "erradas": {
+      "A": "O ecocardiograma vem depois das culturas e, em geral, começa pelo transtorácico; ele não substitui o diagnóstico microbiológico.",
+      "B": "Antibiótico antes da cultura negativa os frascos e tira o germe e o antibiograma; só no paciente instável se aceita colher rápido e tratar em seguida.",
+      "D": "Cirurgia valvar fica para insuficiência cardíaca, abscesso, êmbolos de repetição ou infecção sem controle, e nada disso aparece aqui."
+    },
+    "macete": {
+      "frase": "*Três fornadas antes de abrir a padaria*",
+      "apoio": "Na imagem, as três bandejas saem do forno ao amanhecer, e só depois o caminhão de entrega (o antibiótico) entra na padaria; por último, o megafone na montanha faz eco. Cultura, antibiótico, eco.",
+      "fala": "Já vi esse caso às 3 da manhã: três fornadas antes do caminhão."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na cardiologia, com a Dona Térmica. Febre há dias, um achado novo no exame físico e sinais vitais descritos na vinheta. Qual é o primeiro passo?",
+    "palavras_chave": [
+      "fever",
+      "heart murmur",
+      "emergency department",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Infectologia",
+      "#InfectiousDiseases",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Usa drogas IV, sopro novo e está estável: 1º passo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

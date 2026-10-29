@@ -1,0 +1,101 @@
+{
+  "dia": 63,
+  "data": "2027-01-03",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Hipersensibilidade tipo I (dia 36), Febre reumática (dia 57)",
+  "conceito": "Remix: Bruton agammaglobulinemia + Type I hypersensitivity + Rheumatic fever",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    8,
+    36,
+    57
+  ],
+  "explicacao_em": "2027-01-04",
+  "gancho": "Garganta tratada, e o Macrô recebe *duas entregas* na portaria",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de comanda no bolso, é o porteiro de um prédio e recebe ao mesmo tempo a bag térmica de um motoboy e uma caixa de encomenda internacional coberta de selos; ele coça a cabeça, sem saber qual abrir primeiro. Um vinil pequeno no canto.",
+    "foco": "50% 35%",
+    "alt": "Macrô, porteiro de prédio, recebe ao mesmo tempo a bag de um motoboy e uma encomenda internacional coberta de selos.",
+    "arquivo": "dia-063.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da portaria: dias depois da bag do motoboy, chega um envelope de boleto, e dele saem bolinhas de anticorpos em Y agarradas a pedacinhos de comprimido, que entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim; o Macrô confere o calendário. A encomenda internacional continua na alfândega, e o envelope da escolinha segue trancado.",
+    "alt": "A bag do motoboy explode em pipoca e antenas em Y; a encomenda internacional espera na alfândega com um coraçãozinho no lacre.",
+    "arquivo": "dia-063-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy with streptococcal pharyngitis receives intramuscular benzathine penicillin G. Nine days later, he develops fever, an urticarial rash, and pain and swelling of the wrists and knees. He has no heart murmur. Urinalysis shows mild proteinuria, and serum C3 and C4 levels are low.",
+    "pergunta": "Which mechanism best explains this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Immune complex deposition with complement",
+        "quiz": "Immune complexes"
+      },
+      "B": {
+        "texto": "Antibodies to M protein cross-reacting with heart",
+        "quiz": "M protein mimicry",
+        "dia": 57
+      },
+      "C": {
+        "texto": "Cross-linking of IgE on mast cells",
+        "quiz": "IgE cross-linking",
+        "dia": 36
+      },
+      "D": {
+        "texto": "Failure of pre-B cell maturation",
+        "quiz": "No B cell maturation",
+        "dia": 8
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Chegou o boleto: imunocomplexo",
+    "certa": [
+      "Febre, urticária, artrite e proteinúria cerca de 9 dias depois da penicilina, com C3 e C4 baixos, são uma reação por imunocomplexos, a *type III hypersensitivity* da doença do soro (*serum sickness*). O menino formou anticorpos contra a droga ligada a proteínas do próprio corpo; os complexos antígeno-anticorpo se depositam em vasos, articulações e glomérulo, e ativam e consomem o complemento. A anafilaxia do tipo I (dia 36) seria em minutos, a febre reumática (dia 57) leva 2 a 4 semanas e não consome complemento, e no Bruton (dia 8) falta anticorpo para formar qualquer complexo."
+    ],
+    "termos": [
+      "type III hypersensitivity",
+      "serum sickness",
+      "immune complexes",
+      "hypocomplementemia"
+    ],
+    "erradas": {
+      "B": "Dia 57: a mímica molecular da proteína M dá febre reumática 2 a 4 semanas depois da faringite, com cardite, artrite migratória e complemento normal.",
+      "C": "Dia 36: IgE no mastócito é tipo I, com urticária e chiado em minutos, e não febre e artrite depois de 9 dias.",
+      "D": "Dia 8: sem BTK não há célula B nem anticorpo, então não haveria imunocomplexo nem reação a droga mediada por anticorpo."
+    },
+    "macete": {
+      "frase": "Tipo III é *boleto*: a compra foi a penicilina, a fatura chega 1 a 2 semanas depois e cobra juros no complemento.",
+      "apoio": "Pegadinha de prova: O NBME planta um estreptococo para puxar febre reumática; olhe o relógio e o complemento: 1 a 2 semanas com C3 baixo é imunocomplexo.",
+      "fala": "Dez minutos é motoboy. Dez dias é boleto."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando três conceitos de imuno já vistos (dias 8, 36 e 57) e um intruso que ainda não passou por aqui. Cada alternativa que já apareceu leva o selo do dia. O relógio da vinheta separa os quatro, e no NBME quem lê o tempo antes do sintoma ganha a questão.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Imunologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, artrite e C3 baixo 9 dias após a penicilina: qual mecanismo?"
+  },
+  "exemplo": false
+}

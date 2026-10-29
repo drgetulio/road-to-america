@@ -1,0 +1,88 @@
+{
+  "dia": 185,
+  "data": "2027-05-05",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Colite pseudomembranosa",
+  "conceito": "Pseudomembranous colitis: C. difficile toxins A and B damage colonocytes, spores resist alcohol",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Dia Mundial da Higiene das Mãos (5/5): álcool não mata esporo, use água e sabão.",
+  "remix_de": null,
+  "explicacao_em": "2027-05-06",
+  "tom": null,
+  "gancho": "Dia Mundial da Higiene das Mãos: 20 segundos de pia, e a questão de hoje *cabe nesse tempo*",
+  "gancho_apoio": "Lavar as mãos por 20 segundos: o único protocolo que o estudante de USMLE cumpre sem procurar atalho.",
+  "imagem": {
+    "arquivo": "dia-185.png",
+    "cena": "Em estilo de manual de montagem, Seu Allen confere uma pia de hospital com um frasco de álcool em gel ao lado, de lápis vermelho a postos. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen, em estilo de manual de montagem, confere uma pia de hospital ao lado de um frasco de álcool em gel"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-185-macete.png",
+    "cena": "Callback: um bastãozinho de capa de chuva (o esporo) escorrega do jato de álcool em gel e só vai embora com a água da pia; na mão do Seu Allen, duas tesourinhas, uma com um triângulo e outra com um quadrado (as toxinas A e B). Fundo limpo.",
+    "alt": "O bastãozinho de capa de chuva resiste ao álcool em gel e sai com água; Seu Allen segura duas tesourinhas"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old woman develops fever, abdominal cramps, and 8 watery stools daily on day 6 of clindamycin for cellulitis. Leukocyte count is 19,000/mm3. Colonoscopy shows raised yellow-white plaques on an inflamed colonic mucosa.",
+    "pergunta": "Which is the most likely cause of her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Shiga toxin from Shigella dysenteriae",
+        "quiz": "Shigella Shiga toxin"
+      },
+      "B": {
+        "texto": "Toxins A and B from Clostridioides difficile",
+        "quiz": "C. difficile toxins A/B"
+      },
+      "C": {
+        "texto": "Heat-stable toxin from Escherichia coli",
+        "quiz": "E. coli heat-stable toxin"
+      },
+      "D": {
+        "texto": "Preformed enterotoxin from Staphylococcus aureus",
+        "quiz": "S. aureus enterotoxin"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Depois do antibiótico: *toxinas A e B*",
+    "certa": [
+      "O antibiótico (clindamicina é o clássico) apaga a microbiota e abre espaço para o *Clostridioides difficile*. Suas *toxins A and B* inativam as Rho GTPases, desmontam o citoesqueleto do colonócito e causam inflamação com *pseudomembranes*. O esporo resiste ao álcool em gel, então a higiene é com água e sabão."
+    ],
+    "termos": [
+      "Clostridioides difficile",
+      "toxins A and B",
+      "pseudomembranous colitis",
+      "spores"
+    ],
+    "erradas": {
+      "A": "A toxina Shiga inativa o ribossomo 60S e causa disenteria com sangue, sem relação com antibiótico recente nem pseudomembranas.",
+      "C": "A toxina termoestável da E. coli enterotoxigênica ativa a guanilato ciclase e causa a diarreia do viajante, aquosa e sem placas no cólon.",
+      "D": "A enterotoxina pré-formada do S. aureus causa vômitos poucas horas após a refeição, sem febre alta nem colite."
+    },
+    "macete": {
+      "frase": "C. diff é o *penetra da festa vazia*: o antibiótico expulsa os convidados de sempre e ele entra com duas tesouras, as *toxinas A e B*. O esporo vem de *capa de chuva*: álcool em gel não tira, só *água e sabão*.",
+      "apoio": "O NBME cita clindamicina, fluoroquinolona ou cefalosporina, pede teste de toxina nas fezes e lembra a precaução de contato com água e sabão; o tratamento inicial é fidaxomicina ou vancomicina oral.",
+      "fala": "Álcool em gel em esporo é marca-texto no First Aid inteiro: dá sensação de dever cumprido e não resolve nada."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Seu Allen, no Dia Mundial da Higiene das Mãos. Uma diarreia com febre e quatro toxinas candidatas na mesa. O detalhe que decide está na vinheta, no segundo slide.",
+    "palavras_chave": [
+      "diarrhea",
+      "enteric pathogens",
+      "fever",
+      "Step 1 microbiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "6º dia de clindamicina e placas no cólon: qual a causa?"
+  },
+  "exemplo": false
+}

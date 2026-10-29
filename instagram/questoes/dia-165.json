@@ -1,0 +1,88 @@
+{
+  "dia": 165,
+  "data": "2027-04-15",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Estenose hipertrófica de piloro",
+  "conceito": "Pyloric stenosis: hypochloremic hypokalemic metabolic alkalosis, ultrasound confirms",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-16",
+  "tom": null,
+  "gancho": "Primeiro filho e *a família inteira de plantão*",
+  "gancho_apoio": "A gasometria da vinheta conta metade da história; o exame certo conta o resto.",
+  "imagem": {
+    "arquivo": "dia-165.png",
+    "cena": "Num parque, o Garçom Espetinho segura uma mamadeira cheia e olha preocupado para um relógio de rua. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho segura uma mamadeira cheia e olha preocupado para um relógio de rua, num parque."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-165-macete.png",
+    "cena": "Callback: uma sonda de ultrassom em forma de lupa examina uma azeitona no espeto do garçom e revela por dentro um anel grosso, como uma rosquinha de parede espessa. Fundo limpo.",
+    "alt": "Uma sonda de ultrassom examina uma azeitona e revela um anel grosso por dentro."
+  },
+  "questao": {
+    "vinheta": "A 4-week-old firstborn boy has had forceful, nonbilious vomiting after every feed for 5 days and seems hungry right after vomiting. He has fewer wet diapers. Serum chemistry: Na+ 134, K+ 3.0, Cl- 88, and HCO3- 33 mEq/L.",
+    "pergunta": "Which is the most appropriate test to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Upper endoscopy",
+        "quiz": "Upper endoscopy"
+      },
+      "B": {
+        "texto": "Upper gastrointestinal contrast series",
+        "quiz": "Upper GI series"
+      },
+      "C": {
+        "texto": "CT of the abdomen",
+        "quiz": "CT of the abdomen"
+      },
+      "D": {
+        "texto": "Abdominal ultrasonography",
+        "quiz": "Ultrasound"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Quem acha a azeitona é o *ultrassom*",
+    "certa": [
+      "Vômito em jato, não bilioso, com fome logo depois, entre 2 e 8 semanas de vida, em primogênito do sexo masculino é *hypertrophic pyloric stenosis*. A perda de suco gástrico (H+ e Cl-) gera *hypochloremic hypokalemic metabolic alkalosis*, e a hipovolemia ativa a aldosterona, que troca Na por K e H no rim. A *ultrasound* confirma com o piloro espessado (parede de 3 mm ou mais e canal de 15 mm ou mais)."
+    ],
+    "termos": [
+      "hypertrophic pyloric stenosis",
+      "hypochloremic metabolic alkalosis",
+      "pyloric ultrasound",
+      "pyloromyotomy"
+    ],
+    "erradas": {
+      "A": "A endoscopia é invasiva e desnecessária para esse diagnóstico.",
+      "B": "A seriografia contrastada fica para ultrassom inconclusivo e é a escolha no vômito bilioso, para procurar má rotação.",
+      "C": "A TC expõe o lactente à radiação sem acrescentar nada e não faz parte da investigação."
+    },
+    "macete": {
+      "frase": "*Azeitona* na barriga, *jato* na mamada e gasometria *alcalina*: quem acha a azeitona é o *ultrassom*",
+      "apoio": "Corrigir desidratação e alcalose com soro antes da piloromiotomia, que não é cirurgia de emergência. Eritromicina no lactente pequeno é fator de risco.",
+      "fala": "Azeitona no espeto é comigo. Azeitona no piloro, só o ultrassom acha."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na pediatria. Um primeiro filho e uma história que a vinheta conta mamada por mamada. Olhe os eletrólitos antes de escolher o exame.",
+    "palavras_chave": [
+      "nonbilious vomiting",
+      "4-week-old",
+      "hungry after vomiting",
+      "low serum chloride"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lactente de 4 semanas, vômito em jato e cloro 88 com HCO3 33: qual exame?"
+  },
+  "exemplo": false
+}

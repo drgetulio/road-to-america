@@ -1,0 +1,95 @@
+{
+  "dia": 69,
+  "data": "2027-01-09",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Análise de causa raiz",
+  "conceito": "Root cause analysis looks back at an event, FMEA looks ahead at a process",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-10",
+  "gancho": "O hospital e a bomba de infusão: um *casamento* que o Viés acompanha de perto",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Num cartório enfeitado, uma bomba de infusão simpática, de véu, segura a mão de um hospital pequenininho de gravata. No canto, o Viés, meio escondido atrás de uma tabela 2x2 em branco, espia com a lupa.",
+    "foco": "50% 35%",
+    "alt": "Num cartório enfeitado, uma bomba de infusão de véu segura a mão de um hospital pequenininho de gravata; o Viés espia.",
+    "arquivo": "dia-069.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do cartório: antes do sim, os noivos sentam com uma prancheta e um mapa de todos os passos do casamento, e cada passo ganha uma bandeirinha vermelha, amarela ou verde. Num cantinho escuro, um telão de VAR repassa um casamento antigo que já deu errado, só para comparar.",
+    "alt": "Os noivos marcam cada passo do casamento com bandeirinhas de risco; num canto, um telão de replay mostra um casamento que já deu errado.",
+    "arquivo": "dia-069-macete.png"
+  },
+  "questao": {
+    "vinheta": "A hospital will introduce smart infusion pumps next month. Before go-live, a team maps every step of the new process, lists every way each step might break down, and rates each failure mode for severity, likelihood, and detectability to redesign the riskiest steps.",
+    "pergunta": "Which quality improvement method is this team using?",
+    "alternativas": {
+      "A": {
+        "texto": "Root cause analysis",
+        "quiz": "Root cause analysis"
+      },
+      "B": {
+        "texto": "Plan-Do-Study-Act cycle",
+        "quiz": "PDSA cycle"
+      },
+      "C": {
+        "texto": "Failure mode and effects analysis",
+        "quiz": "FMEA"
+      },
+      "D": {
+        "texto": "Morbidity and mortality conference",
+        "quiz": "M&M conference"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Olhar para a frente é *FMEA*",
+    "certa": [
+      "A *failure mode and effects analysis* (FMEA) é prospectiva: antes de implantar um processo, a equipe lista cada etapa, imagina como ela pode falhar e dá nota de gravidade, probabilidade e detecção para atacar primeiro os pontos de maior risco. A *root cause analysis* faz o caminho inverso: parte de um evento que já aconteceu e volta no tempo para achar as causas do sistema."
+    ],
+    "termos": [
+      "failure mode and effects analysis",
+      "root cause analysis",
+      "prospective risk assessment",
+      "patient safety"
+    ],
+    "erradas": {
+      "A": "A análise de causa raiz olha para trás: começa depois de um evento adverso, não antes da implantação.",
+      "B": "O PDSA testa uma mudança em ciclos pequenos e mede o resultado; não pontua modos de falha antes de começar.",
+      "D": "A reunião de morbidade e mortalidade discute casos que já aconteceram, com foco educativo."
+    },
+    "macete": {
+      "frase": "RCA é *DR depois da briga*; FMEA, *antes de casar*",
+      "apoio": "Pegadinha de prova: O NBME diferencia pela linha do tempo: evento que já aconteceu é RCA; processo novo ou mudança planejada, com notas de risco, é FMEA.",
+      "fala": "Eu ia esperar a primeira briga para aparecer."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de qualidade: quatro ferramentas com sigla, e a prova adora trocar uma pela outra, como você troca PDSA por SDPA às 2 da manhã. A vinheta diz qual ferramenta a equipe está usando.",
+    "palavras_chave": [
+      "quality improvement",
+      "infusion pumps",
+      "hospital processes",
+      "new technology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Antes de implantar, nota de risco para cada etapa: qual método?"
+  },
+  "exemplo": false
+}

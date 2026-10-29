@@ -1,0 +1,95 @@
+{
+  "dia": 134,
+  "data": "2027-03-15",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Lúpus eritematoso sistêmico",
+  "conceito": "SLE autoantibodies: anti-dsDNA and anti-Smith are specific, anti-histone points to drug-induced lupus",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Início da Match Week (15 a 19/3/2027).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-16",
+  "tom": null,
+  "gancho": "Semana do Match: *quem deu match* com quem?",
+  "gancho_apoio": "A Tia Meia-Vida virou cupido e precisa formar o casal certo entre anticorpo e história clínica.",
+  "imagem": {
+    "arquivo": "dia-134.png",
+    "cena": "A Tia Meia-Vida, com uma flechinha de cupido, apresenta um programa de namoro em que quatro anticorpos em forma de Y, cada um com um chapéu diferente, esperam em fila. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Tia Meia-Vida, de cupido, apresenta quatro anticorpos em Y de chapéus diferentes num programa de namoro."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-134-macete.png",
+    "cena": "Callback: o anticorpo de chapéu em forma de comprimido dança com um carretel de linha (a histona) com o DNA enrolado, e a Tia Meia-Vida aplaude do balcão. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O anticorpo de chapéu de comprimido dança com um carretel de linha com DNA enrolado; a Tia aplaude."
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man has had arthralgias, low-grade fever and pleuritic chest pain for 3 weeks. He started hydralazine for hypertension 8 months ago. He has no rash, and urinalysis and neurologic examination are normal. Antinuclear antibody is positive.",
+    "pergunta": "Which additional antibody is most likely to be present?",
+    "alternativas": {
+      "A": {
+        "texto": "Anti-double-stranded DNA",
+        "quiz": "Anti-dsDNA"
+      },
+      "B": {
+        "texto": "Anti-histone",
+        "quiz": "Anti-histone"
+      },
+      "C": {
+        "texto": "Anti-Smith",
+        "quiz": "Anti-Smith"
+      },
+      "D": {
+        "texto": "Anti-centromere",
+        "quiz": "Anti-centromere"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Lúpus induzido por droga: *anti-histona*",
+    "certa": [
+      "Artralgia, febre e serosite depois de meses de hidralazina, sem rim e sem sistema nervoso acometidos, sugerem lúpus induzido por droga, que tem anti-histona em mais de 90% dos casos. As drogas clássicas são hidralazina, procainamida e isoniazida, e o quadro melhora quando o remédio é suspenso."
+    ],
+    "termos": [
+      "drug-induced lupus",
+      "anti-histone",
+      "anti-dsDNA",
+      "anti-Smith"
+    ],
+    "erradas": {
+      "A": "O anti-dsDNA é específico do lúpus sistêmico, acompanha a atividade da nefrite e é raro no lúpus por hidralazina ou procainamida.",
+      "C": "O anti-Smith é o mais específico do lúpus sistêmico, não do induzido por droga.",
+      "D": "O anticentrômero é da esclerose sistêmica limitada (CREST)."
+    },
+    "macete": {
+      "frase": "Lúpus de remédio é *HIP com histona*: Hidralazina, Isoniazida, Procainamida",
+      "apoio": "Anti-dsDNA e anti-Sm são o RG do lúpus sistêmico; o de remédio poupa rim e cérebro e melhora quando a droga sai.",
+      "fala": "Casal perfeito: hidralazina e anti-histona. Rim e cérebro nem foram convidados."
+    }
+  },
+  "legenda": {
+    "contexto": "Começou a Match Week. Boa sorte a quem espera a sexta! No Bicho de Segunda, a Tia Meia-Vida também está formando pares. A história e os exames estão na vinheta. Qual anticorpo completa o casal?",
+    "palavras_chave": [
+      "arthralgia",
+      "pleuritic chest pain",
+      "hydralazine",
+      "positive ANA"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Reumatologia",
+      "#Rheumatology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Artralgia e serosite após 8 meses de hidralazina, rim normal: qual anticorpo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

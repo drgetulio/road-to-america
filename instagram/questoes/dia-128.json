@@ -1,0 +1,96 @@
+{
+  "dia": 128,
+  "data": "2027-03-09",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Pancreatite aguda",
+  "conceito": "Acute pancreatitis: 2 of 3 criteria (pain, lipase 3 times normal, imaging), early fluids",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-10",
+  "tom": null,
+  "gancho": "Plantão de Terça: *a juíza Térmica* tem quatro jogadas para escolher",
+  "gancho_apoio": "Dona Térmica já viu esse jogo às 3 da manhã. Você apita o quê?",
+  "imagem": {
+    "arquivo": "dia-128.png",
+    "cena": "Dona Térmica, de juíza com apito, corre até um jogador simpático em forma de pâncreas, sentado no gramado e segurando a barriga. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, de juíza, corre até um jogador em forma de pâncreas sentado no gramado, com dor."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-128-macete.png",
+    "cena": "Callback: Dona Térmica vira de costas para o monitor do VAR e chama a lateral, de onde entra em campo um galão de soro com camisa 10; o pâncreas jogador já toma água sentado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Dona Térmica ignora o VAR e chama um galão de soro com camisa 10; o pâncreas toma água."
+  },
+  "questao": {
+    "vinheta": "A 46-year-old woman with known gallstones has 8 hours of constant epigastric pain radiating to the back, with vomiting. Temperature is 37.8°C and pulse is 112/min. The epigastrium is tender without rigidity. Serum lipase is 5 times the upper limit of normal. Bilirubin and liver enzymes are normal.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Contrast-enhanced CT of the abdomen",
+        "quiz": "Contrast-enhanced CT"
+      },
+      "B": {
+        "texto": "Lactated Ringer and analgesia",
+        "quiz": "LR + analgesia"
+      },
+      "C": {
+        "texto": "Urgent ERCP",
+        "quiz": "Urgent ERCP"
+      },
+      "D": {
+        "texto": "Prophylactic IV imipenem",
+        "quiz": "Prophylactic imipenem"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Pancreatite: *2 de 3* e hidratação cedo",
+    "certa": [
+      "A pancreatite aguda se confirma com 2 de 3 critérios: dor típica, lipase pelo menos 3 vezes o normal e imagem compatível. Ela já tem dois, então a imagem não é necessária para o diagnóstico. O passo seguinte é hidratação venosa precoce, em volume moderado e ajustada à resposta, com Ringer lactato como primeira escolha, e analgesia."
+    ],
+    "termos": [
+      "2 of 3 criteria",
+      "lipase 3 times normal",
+      "lactated Ringer",
+      "no prophylactic antibiotics"
+    ],
+    "erradas": {
+      "A": "Tomografia com contraste não muda a conduta nas primeiras horas; fica para dúvida diagnóstica ou piora depois de 48 a 72 horas.",
+      "C": "CPRE de urgência entra quando há colangite ou obstrução biliar persistente, e aqui bilirrubina e enzimas estão normais.",
+      "D": "Antibiótico profilático não é recomendado na pancreatite, nem na grave; só para infecção comprovada."
+    },
+    "macete": {
+      "frase": "Pancreatite é *2 de 3 bandeirinhas*: com duas no alto, não chama o VAR",
+      "apoio": "Na imagem, a juíza dispensa o VAR (tomografia) e manda a hidratação entrar em campo cedo.",
+      "fala": "Duas bandeiras em pé dispensam replay. Soro em campo, analgesia e dieta assim que tolerar."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Dona Térmica de juíza: uma dor abdominal que não deixa ninguém dormir, uma vesícula com história e exames de sangue na vinheta. Quatro jogadas possíveis, e a prova quer a primeira.",
+    "palavras_chave": [
+      "gallstones",
+      "epigastric pain radiating to the back",
+      "elevated lipase",
+      "vomiting"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Gastroenterologia",
+      "#Pancreatitis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor em faixa, cálculo na vesícula e lipase 5x o normal: o que fazer agora?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 261,
+  "data": "2027-07-20",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Neutropenia febril",
+  "conceito": "Febrile neutropenia: antipseudomonal beta-lactam such as cefepime within 1 hour",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-21",
+  "tom": null,
+  "gancho": "Plantão de Terça: *a corrida contra o relógio* da madrugada",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-261.png",
+    "cena": "Três da manhã, na porta da copa do plantão: Dona Térmica segura um cronômetro gigante e olha a avenida vazia. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica segura um cronômetro gigante e olha a avenida vazia de madrugada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-261-macete.png",
+    "cena": "Callback: um motoboy de capacete verde chega antes de o cronômetro completar uma volta e abre a caixa: dela sai uma bolsa de soro em forma de escudo largo, que rebate bichinhos esverdeados em forma de bastão. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O motoboy chega a tempo e a bolsa de soro em escudo rebate os bastõezinhos verdes"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman received chemotherapy for breast cancer 10 days ago. Today her temperature is 38.6°C, her heart rate 104/min, and her blood pressure 118/72 mm Hg. Her port site is clean, and there are no focal findings. Absolute neutrophil count is 300/mm3. Blood cultures have been drawn.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Intravenous cefepime",
+        "quiz": "IV cefepime"
+      },
+      "B": {
+        "texto": "Intravenous vancomycin alone",
+        "quiz": "IV vancomycin alone"
+      },
+      "C": {
+        "texto": "Intravenous fluconazole",
+        "quiz": "IV fluconazole"
+      },
+      "D": {
+        "texto": "Await culture results before antibiotics",
+        "quiz": "Await cultures"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "*Cefepima* em até 1 hora",
+    "certa": [
+      "Febre (38,3 °C uma vez ou 38,0 °C mantida por 1 hora) com neutrófilos abaixo de 500/mm3 é *febrile neutropenia*, uma emergência: depois das hemoculturas, o antibiótico de amplo espectro com cobertura para *Pseudomonas* deve entrar em até 1 hora. As opções de monoterapia são *cefepime*, piperacilina-tazobactam ou um carbapenêmico. Esperar o resultado da cultura aumenta a mortalidade, e mesmo quem depois se classifica como de baixo risco (escore MASCC) recebe a primeira dose sem demora."
+    ],
+    "termos": [
+      "febrile neutropenia",
+      "antipseudomonal beta-lactam",
+      "cefepime",
+      "absolute neutrophil count"
+    ],
+    "erradas": {
+      "B": "A vancomicina não cobre gram-negativos e só se acrescenta com indicação específica (instabilidade, infecção de cateter ou de pele, pneumonia, MRSA).",
+      "C": "O antifúngico empírico entra se a febre persistir depois de 4 a 7 dias de antibiótico, não no início.",
+      "D": "Esperar a cultura atrasa o tratamento de uma infecção que pode matar em horas; o antibiótico é empírico."
+    },
+    "macete": {
+      "frase": "Neutropenia febril: *uma hora* para o *anti-Pseudomonas*",
+      "apoio": "O motoboy tem uma volta do cronômetro, 1 hora, para entregar o escudo que rebate os bastões verdes da Pseudomonas: betalactâmico antipseudomonas, como a cefepima. A seringa da vancomicina só sai da caixa com indicação (cateter infectado, pele, pneumonia, instabilidade ou MRSA). Esperar cultura não é opção.",
+      "fala": "Já vi esse caso às 3 da manhã. Ele não espera a cultura."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Dona Térmica, num tema de oncologia tratado com cuidado. Uma paciente em tratamento chega com febre, e a vinheta traz os exames e o que já foi colhido. Qual é o próximo passo?",
+    "palavras_chave": [
+      "oncology",
+      "fever",
+      "emergency department",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Oncologia",
+      "#Infectologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre 10 dias após a quimioterapia e neutrófilos em 300: qual é a conduta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

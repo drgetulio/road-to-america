@@ -1,0 +1,96 @@
+{
+  "dia": 2,
+  "data": "2026-11-03",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Infarto com supra de ST",
+  "conceito": "STEMI: primary PCI with door-to-balloon time under 90 minutes",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-04",
+  "tom": null,
+  "gancho": "Mito entrou em greve: sem oxigênio, *sem* ATP. Quantos minutos você tem?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-002.png",
+    "cena": "Mito, de jaleco amassado e olheiras, está sentado de braços cruzados na esteira parada de uma usina em forma de coração, com um cartaz de greve em branco no colo; pela janela, um caminhão-pipa de oxigênio está preso atrás de um cano entupido. Na parede, um relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Mito entrou em greve: sem oxigênio, sem ATP. Quantos minutos você tem?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-002-macete.png",
+    "cena": "Callback da usina: um balãozinho na ponta de um fio fino desentope o cano, o caminhão-pipa de oxigênio passa e o Mito volta ao trabalho, café na mão. O cronômetro do placar parou antes do apito dos 90 minutos.",
+    "alt": "90 minutos, sem prorrogação"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man has 1 hour of crushing substernal chest pain and diaphoresis. BP is 136/84 mm Hg and pulse 96/min. ECG shows 3-mm ST elevations in V1 through V4. He has received aspirin. The hospital has a cardiac catheterization laboratory available now.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Primary percutaneous coronary intervention",
+        "quiz": "Primary PCI"
+      },
+      "B": {
+        "texto": "Fibrinolytic therapy with IV tenecteplase now",
+        "quiz": "Fibrinolysis"
+      },
+      "C": {
+        "texto": "Repeat troponin measurement in 3 hours",
+        "quiz": "Troponin in 3 h"
+      },
+      "D": {
+        "texto": "Coronary CT angiography",
+        "quiz": "Coronary CTA"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "90 minutos, sem prorrogação",
+    "certa": [
+      "Supra de ST na parede anterior com dor há 1 hora é STEMI, e o tratamento é reperfusão imediata. Num hospital com hemodinâmica, a escolha é a angioplastia primária (primary PCI), com meta de até 90 minutos entre o primeiro contato médico e a abertura da artéria (first medical contact-to-device). Se o paciente precisa ser transferido, a meta sobe para 120 minutos."
+    ],
+    "termos": [
+      "STEMI",
+      "primary PCI",
+      "first medical contact-to-device",
+      "fibrinolysis"
+    ],
+    "erradas": {
+      "B": "A fibrinólise fica para quando a PCI não sai em 120 minutos, de preferência em até 30 minutos da chegada.",
+      "C": "Esperar troponina atrasa a reperfusão: no STEMI, o ECG já basta para decidir.",
+      "D": "A angio-TC de coronárias serve para dor torácica estável ou de risco baixo, nunca para supra de ST."
+    },
+    "macete": {
+      "frase": "Porta-balão é futebol: *90 minutos*. A prorrogação até 120 é só para quem precisa pegar a estrada.",
+      "apoio": "Pegadinha de prova: O NBME oferece troponina seriada ou exame de imagem como distrator; com supra de ST e hemodinâmica disponível, a resposta é PCI primária.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: dor no peito, ECG na mão e o Mito de braços cruzados no miocárdio. No NBME, quem lê só a primeira linha escolhe o exame mais caro; a resposta mora num detalhe sobre o hospital.",
+    "palavras_chave": [
+      "chest pain",
+      "ECG",
+      "emergency cardiology",
+      "reperfusion"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#Plantao",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Supra de ST e hemodinâmica disponível agora: qual conduta?"
+  },
+  "exemplo": false
+}

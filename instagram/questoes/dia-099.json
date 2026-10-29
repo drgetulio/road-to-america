@@ -1,0 +1,96 @@
+{
+  "dia": 99,
+  "data": "2027-02-08",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Mononucleose infecciosa",
+  "conceito": "EBV mononucleosis: infects B cells via CD21, atypical CD8 lymphocytes, heterophile antibodies, no contact sports",
+  "personagem": "Macrô",
+  "gancho_data": "Segunda de Carnaval: a \"doença do beijo\", sem moralismo.",
+  "remix_de": null,
+  "explicacao_em": "2027-02-09",
+  "tom": null,
+  "gancho": "Segunda de Carnaval: o folião voltou do bloco com *a garganta em greve*",
+  "gancho_apoio": "Dez dias sem energia nem para o confete. O Macrô quer saber qual célula o vírus escolheu.",
+  "imagem": {
+    "arquivo": "dia-099.png",
+    "cena": "Numa ladeira de paralelepípedo, o Macrô observa um vírus redondo e espetado, de máscara de Carnaval, que passeia com uma chave na mão diante de uma fileira de portinhas coloridas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô observa, numa ladeira, um vírus de máscara de Carnaval que passeia com uma chave diante de portinhas coloridas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-099-macete.png",
+    "cena": "Callback: a chave do vírus encaixa só na porta azul (a casa B), e um segurança grandalhão de fantasia exagerada (o T CD8 atípico) chega correndo para conferir. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A chave do vírus abre só a porta azul; um segurança de fantasia exagerada chega para conferir."
+  },
+  "questao": {
+    "vinheta": "An 18-year-old student has had fever, sore throat and marked fatigue for 10 days. She has tonsillar exudates, posterior cervical lymphadenopathy and a palpable spleen tip. Blood smear shows large lymphocytes with abundant cytoplasm indenting adjacent red cells. A heterophile antibody test is positive.",
+    "pergunta": "The causative virus primarily infects which cells?",
+    "alternativas": {
+      "A": {
+        "texto": "B lymphocytes",
+        "quiz": "B lymphocytes"
+      },
+      "B": {
+        "texto": "CD8+ T lymphocytes",
+        "quiz": "CD8+ T lymphocytes"
+      },
+      "C": {
+        "texto": "CD4+ T lymphocytes",
+        "quiz": "CD4+ T lymphocytes"
+      },
+      "D": {
+        "texto": "Monocytes",
+        "quiz": "Monocytes"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "EBV entra no *linfócito B* pelo CD21",
+    "certa": [
+      "Febre, exsudato amigdaliano, linfonodos cervicais posteriores, baço palpável e anticorpo heterófilo positivo fecham mononucleose pelo vírus Epstein-Barr (EBV). O vírus usa a glicoproteína gp350 para se ligar ao CD21 (receptor de complemento CR2) e infecta os linfócitos B. Os linfócitos atípicos do esfregaço são T CD8 reativos, que respondem à infecção das células B."
+    ],
+    "termos": [
+      "Epstein-Barr virus",
+      "CD21",
+      "heterophile antibody",
+      "atypical lymphocytes"
+    ],
+    "erradas": {
+      "B": "Os linfócitos atípicos (células de Downey) são T CD8, mas eles reagem à infecção; o vírus não entra neles.",
+      "C": "O CD4 é a porta do HIV, que causa síndrome retroviral aguda com anticorpo heterófilo negativo.",
+      "D": "O citomegalovírus fica latente em monócitos e dá quadro parecido, mas com anticorpo heterófilo negativo."
+    },
+    "macete": {
+      "frase": "O folião EBV entra pela *porta 21* da casa B",
+      "apoio": "Pegadinha de prova: O NBME pergunta a célula infectada (B, via CD21) e coloca o CD8 atípico como isca; também cobra o exantema com amoxicilina e o veto ao esporte de contato.",
+      "fala": "No bloco, quem beija é o vírus. Quem aparece fantasiado no esfregaço é o segurança CD8."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda de Carnaval, sem moralismo: você no bloco e o Anki com 600 revisões esperando em casa. Na vinheta, um jovem que voltou da folia sem energia, e um hemograma que conta quem é o vírus. A pergunta é onde ele mora.",
+    "palavras_chave": [
+      "fever and sore throat",
+      "fatigue",
+      "posterior cervical lymphadenopathy",
+      "splenomegaly"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Carnaval"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Mononucleose: qual célula o vírus infecta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

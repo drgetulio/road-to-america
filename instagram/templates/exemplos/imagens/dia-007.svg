@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+  <!-- Ilustração de TESTE para os templates (não é a arte final). -->
+  <rect width="1080" height="1350" fill="#0f2747"/>
+  <g fill="none" stroke="#f3f5f2" stroke-opacity="0.08" stroke-width="10">
+    <path d="M0 140c90-60 180-60 270 0s180 60 270 0 180-60 270 0 180 60 270 0"/>
+    <path d="M0 230c90-60 180-60 270 0s180 60 270 0 180-60 270 0 180 60 270 0"/>
+  </g>
+  <!-- toca-discos -->
+  <g stroke="#07111f" stroke-width="10" stroke-linejoin="round">
+    <rect x="110" y="380" width="860" height="560" rx="36" fill="#b0243a"/>
+    <rect x="140" y="410" width="800" height="500" rx="24" fill="#8a1a2d" stroke="none"/>
+    <circle cx="470" cy="660" r="230" fill="#0d1a2b"/>
+  </g>
+  <g fill="none" stroke="#3a4859" stroke-width="4">
+    <circle cx="470" cy="660" r="200"/><circle cx="470" cy="660" r="170"/><circle cx="470" cy="660" r="140"/><circle cx="470" cy="660" r="110"/>
+  </g>
+  <circle cx="470" cy="660" r="78" fill="#f1c232" stroke="#07111f" stroke-width="8"/>
+  <circle cx="470" cy="660" r="12" fill="#07111f"/>
+  <!-- braço -->
+  <g stroke="#07111f" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="830" cy="470" r="46" fill="#dde3de" stroke-width="10"/>
+    <path d="M830 470L800 700L650 790" fill="none" stroke="#f3f5f2" stroke-width="22"/>
+    <path d="M830 470L800 700L650 790" fill="none" stroke="#07111f" stroke-width="6"/>
+    <rect x="610" y="770" width="70" height="44" rx="8" fill="#f1c232" stroke-width="8" transform="rotate(-30 645 792)"/>
+  </g>
+  <!-- botões -->
+  <circle cx="860" cy="860" r="26" fill="#1d8a4b" stroke="#07111f" stroke-width="8"/>
+  <circle cx="780" cy="860" r="26" fill="#f1c232" stroke="#07111f" stroke-width="8"/>
+  <!-- três discos encostados -->
+  <g stroke="#07111f" stroke-width="8">
+    <rect x="740" y="250" width="200" height="200" rx="10" fill="#1d8a4b" transform="rotate(10 840 350)"/>
+    <rect x="160" y="230" width="200" height="200" rx="10" fill="#f1c232" transform="rotate(-9 260 330)"/>
+  </g>
+  <circle cx="852" cy="352" r="56" fill="#0d1a2b"/>
+  <circle cx="252" cy="332" r="56" fill="#0d1a2b"/>
+  <!-- chão -->
+  <rect y="940" width="1080" height="410" fill="#0a1b33"/>
+  <path d="M60 1030H1020" stroke="#f1c232" stroke-opacity="0.5" stroke-width="14" stroke-dasharray="70 50"/>
+  <!-- notas musicais -->
+  <g fill="#f3f5f2">
+    <circle cx="600" cy="300" r="22"/><rect x="614" y="200" width="10" height="100"/>
+    <circle cx="680" cy="250" r="18"/><rect x="691" y="160" width="9" height="90"/><rect x="614" y="200" width="86" height="12" transform="rotate(-25 614 200)"/>
+  </g>
+</svg>

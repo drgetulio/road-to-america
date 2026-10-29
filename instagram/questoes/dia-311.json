@@ -1,0 +1,96 @@
+{
+  "dia": 311,
+  "data": "2027-09-08",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Aterosclerose",
+  "conceito": "Atherosclerosis: oxidized LDL taken up by macrophages forms foam cells and fatty streaks",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-09",
+  "tom": null,
+  "gancho": "Sonho de padaria na parede da aorta: *quem recheou?*",
+  "gancho_apoio": "Na Quarta do Porquê, o Mito abre o cano e mostra a primeira lesão, que ainda não estreita nada.",
+  "imagem": {
+    "arquivo": "dia-311.png",
+    "cena": "Mito, de jaleco amassado e copo de café, aponta com uma varinha para um cano em corte, com setinhas de manual de montagem em volta da parede interna; nela há estrias planas de manteiga amarela e células redondas estufadas de creme, iguais a sonhos de padaria.",
+    "foco": "50% 35%",
+    "alt": "Sonho de padaria na parede da aorta: quem recheou?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-311-macete.png",
+    "cena": "Callback: cubinhos de manteiga com manchas de ferrugem passam por uma catraca liberada, sem trava, direto para dentro de uma célula redonda; ao lado, outra catraca com cadeado de lotado fica fechada; o Mito suspira com cara de quem já sabia.",
+    "foco": "50% 45%",
+    "alt": "Foam cell: LDL oxidado entra pela porta sem trava"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man dies in a motor vehicle collision. At autopsy, the intimal surface of the abdominal aorta shows flat, yellow streaks that do not narrow the lumen. Microscopy of the streaks shows intimal cells with abundant pale, foamy, lipid-filled cytoplasm.",
+    "pergunta": "Which process most directly produced these cells?",
+    "alternativas": {
+      "A": {
+        "texto": "Dystrophic calcification of necrotic smooth muscle",
+        "quiz": "Dystrophic calcification"
+      },
+      "B": {
+        "texto": "Hyaline deposition of plasma proteins in arterioles",
+        "quiz": "Hyaline arteriolosclerosis"
+      },
+      "C": {
+        "texto": "Uptake of native LDL through regulated LDL receptors",
+        "quiz": "Native LDL receptor uptake"
+      },
+      "D": {
+        "texto": "Oxidized LDL uptake by scavenger receptors",
+        "quiz": "Scavenger receptor uptake"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Foam cell: *LDL oxidado* entra pela porta sem trava",
+    "certa": [
+      "Estrias gordurosas são a lesão mais precoce da *atherosclerosis* e já aparecem em adolescentes. O LDL preso na íntima é oxidado e capturado pelos *scavenger receptors* (como CD36 e SR-A) dos macrófagos, que, ao contrário do receptor de LDL, não têm freio por retroalimentação. O macrófago enche de colesterol e vira *foam cell*."
+    ],
+    "termos": [
+      "fatty streak",
+      "oxidized LDL",
+      "scavenger receptors",
+      "foam cells"
+    ],
+    "erradas": {
+      "A": "A *calcificação distrófica* aparece em placas antigas, com necrose, e não nas estrias gordurosas iniciais.",
+      "B": "A *hialinose arteriolar* é a lesão de arteríola da hipertensão e do diabetes, sem lipídio dentro das células.",
+      "C": "O *receptor de LDL* é regulado: quando a célula tem colesterol suficiente, ela reduz o receptor e não vira célula espumosa."
+    },
+    "macete": {
+      "frase": "*LDL enferrujado passa na catraca liberada*: o scavenger nunca diz chega",
+      "apoio": "O LDL oxidado entra no macrófago pelo receptor scavenger, que não tem freio, e a célula vira a foam cell recheada como sonho de padaria. O receptor de LDL comum tem catraca com limite e diz chega quando a célula enche. A estria gordurosa é a primeira lesão da aterosclerose e não estreita a luz.",
+      "fala": "Sem oxigênio eu não trabalho. Oxidado, aí sim dá trabalho."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na padaria: o Mito abriu o cano e achou sonhos recheados na parede. Quatro processos e a necropsia de um jovem; no NBME, \"most directly\" quer dizer o passo de dentro da célula, e não o fator de risco da família.",
+    "palavras_chave": [
+      "autopsy",
+      "vascular pathology",
+      "young adult",
+      "lipids"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pathology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Estria amarela na aorta aos 24 anos: de onde veio a célula espumosa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

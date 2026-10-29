@@ -1,0 +1,100 @@
+{
+  "dia": 220,
+  "data": "2027-06-09",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Apoptose pela via intrínseca",
+  "conceito": "Intrinsic apoptosis: BAX/BAK let cytochrome c leave the mitochondria, BCL-2 blocks it",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-10",
+  "tom": null,
+  "gancho": "Quarta do Porquê: uma proteína *que convence a célula a ficar*",
+  "gancho_apoio": "BCL-2 é aquele colega que te convence a não largar o Step faltando duas semanas.",
+  "imagem": {
+    "arquivo": "dia-220.png",
+    "cena": "Seu Allen, de avental navy, segura uma célula de brinquedo desmontada em peças e procura qual delas segura o resto. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen procura a peça que segura uma célula de brinquedo desmontada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-220-macete.png",
+    "cena": "Callback: dois tipinhos de furadeira tentam furar a parede de uma mitocôndria, e um porteiro forte (a BCL-2) segura a parede com um cadeado; o disquinho vermelho (o citocromo c) fica guardado lá dentro. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Um porteiro forte segura com cadeado a parede da mitocôndria contra duas furadeiras"
+  },
+  "questao": {
+    "vinheta": "Cultured thymocytes deprived of growth factors shrink, show nuclear condensation and fragmentation, and die without inflammation. Thymocytes engineered to overexpress BCL-2 survive under the same conditions.",
+    "pergunta": "BCL-2 protects these cells mainly by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Blocking Fas ligand binding to its death receptor",
+        "quiz": "Blocks Fas ligand"
+      },
+      "B": {
+        "texto": "Inhibiting perforin and granzyme entry into the cell",
+        "quiz": "Blocks perforin entry"
+      },
+      "C": {
+        "texto": "Preventing BAX/BAK pores and cytochrome c release",
+        "quiz": "Holds cytochrome c in"
+      },
+      "D": {
+        "texto": "Increasing ubiquitin-mediated degradation of p53",
+        "quiz": "Degrades p53"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "BCL-2 é o *porteiro* da mitocôndria",
+    "certa": [
+      "A falta de fator de crescimento e o dano ao DNA ativam a *intrinsic (mitochondrial) pathway*: BAX e BAK abrem poros na membrana externa da mitocôndria e o *cytochrome c* sai para o citosol, onde monta o apoptossomo com APAF-1 e ativa a caspase-9. A *BCL-2* segura BAX e BAK e impede esses poros, então o citocromo c fica dentro e a célula sobrevive. Por isso a t(14;18), que põe a BCL-2 sob um promotor forte, mantém vivas células que deveriam morrer."
+    ],
+    "termos": [
+      "intrinsic apoptosis",
+      "BAX/BAK",
+      "cytochrome c",
+      "BCL-2"
+    ],
+    "erradas": {
+      "A": "Fas e Fas ligand formam a *extrinsic pathway*, que ativa a caspase-8 sem depender da BCL-2.",
+      "B": "Perforina e granzima são a arma do linfócito T citotóxico e da célula NK; a BCL-2 não barra a entrada delas.",
+      "D": "Quem degrada p53 é a MDM2 (e a E6 do HPV); a BCL-2 age depois, na mitocôndria."
+    },
+    "macete": {
+      "frase": "Citocromo c saiu da Mito, *a célula pediu as contas*",
+      "apoio": "Na imagem, BAX e BAK chegam de furadeira para abrir um buraco na parede do quarto do plantão, e a BCL-2 é o porteiro que segura a parede. Enquanto o crachá vermelho (o citocromo c) fica no bolso do Mito, ninguém vai embora.",
+      "fala": "Sobrou peça? Então faltou mecanismo: sem BCL-2, o citocromo c sai e a célula pede as contas."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na patologia celular, com o Seu Allen. Um experimento com células em cultura, descrito na vinheta, e uma proteína que muda o destino delas. Como ela age?",
+    "palavras_chave": [
+      "cultured thymocytes",
+      "growth factor withdrawal",
+      "nuclear fragmentation",
+      "cell death"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pathology",
+      "#BiologiaCelular",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Como a BCL-2 mantém a célula viva?"
+  },
+  "reel": null,
+  "exemplo": false
+}

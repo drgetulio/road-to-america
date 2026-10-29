@@ -1,0 +1,101 @@
+{
+  "dia": 363,
+  "data": "2027-10-30",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Comunicação de erro médico",
+  "conceito": "Medical error disclosure: tell the patient promptly and honestly what happened and what will be done",
+  "personagem": null,
+  "anfitriao": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-31",
+  "tom": null,
+  "gancho": "Enoxaparina no leito errado e *um paciente contando as visitas*",
+  "gancho_apoio": "Uma dose dada ao paciente errado, sem dano até agora, e um paciente que já percebeu o movimento.",
+  "imagem": {
+    "arquivo": "dia-363.png",
+    "cena": "À beira de um campo de futebol, um monitor de VAR com a tela em branco, um apito e um boné de árbitro num banco; o Viés, de trás de uma tabela 2x2, examina a tela em branco com a lupa.",
+    "foco": "50% 35%",
+    "alt": "Enoxaparina no leito errado e um paciente contando as visitas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-363-macete.png",
+    "cena": "Callback: a tela do VAR mostra um grande ícone de replay em círculo para o estádio inteiro, ao lado de uma balança desenhada como placa de trânsito e de um balão de fala em forma de coração; o Viés guarda a lupa, sem ter o que procurar.",
+    "foco": "50% 45%",
+    "alt": "Erro com o paciente: disclosure honesto e rápido"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old hospitalized man receives a dose of enoxaparin that was ordered for the patient in the next bed. One hour later, the error is discovered. He has no bleeding, and laboratory results are normal. He is alert and asks why the team is checking on him so often.",
+    "pergunta": "Which is the most appropriate action by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "Disclose the error to him now",
+        "quiz": "Disclose to him now"
+      },
+      "B": {
+        "texto": "Disclose only if a complication develops",
+        "quiz": "Disclose only if harm"
+      },
+      "C": {
+        "texto": "Inform only his family",
+        "quiz": "Tell only family"
+      },
+      "D": {
+        "texto": "File an incident report without telling him",
+        "quiz": "Incident report only"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Erro com o paciente: *disclosure* honesto e rápido",
+    "certa": [
+      "Diante de um erro, o paciente tem direito a saber, mesmo sem dano. O médico deve fazer o *error disclosure* logo: explicar com clareza o que aconteceu, os riscos possíveis, o que será feito para monitorar e corrigir e como evitar que se repita, com um pedido de desculpas. A *incident report* também deve ser feita, mas não substitui a conversa."
+    ],
+    "termos": [
+      "medical error",
+      "error disclosure",
+      "apology",
+      "incident report"
+    ],
+    "erradas": {
+      "B": "A obrigação de contar não depende de complicação; esconder um erro sem dano também quebra a confiança.",
+      "C": "Ele está lúcido e capaz; contar só para a família sem a autorização dele viola a autonomia e a confidencialidade.",
+      "D": "Notificar é obrigatório para a segurança do paciente, mas não dispensa a conversa honesta com ele."
+    },
+    "macete": {
+      "frase": "*Seja o VAR*: mostra o lance, explica e diz o plano",
+      "apoio": "O VAR mostra o replay para o estádio inteiro, explica a decisão e o jogo segue. No erro médico é igual: o que aconteceu, o que significa, o que vai ser feito e um pedido de desculpas, mesmo sem dano. Notificar o incidente é obrigação, mas não substitui a conversa. Erro escondido é lance polêmico sem VAR: vira assunto por 20 anos.",
+      "fala": "Se escondeu o erro, eu fiquei."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com VAR: o lance já aconteceu, ninguém se machucou e o paciente percebeu o movimento no quarto. Quatro atitudes possíveis; o Viés prefere a que não aparece no replay.",
+    "palavras_chave": [
+      "patient safety",
+      "medication error",
+      "communication",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Enoxaparina no paciente errado, sem sangramento: o que fazer agora?"
+  },
+  "reel": null,
+  "exemplo": false
+}

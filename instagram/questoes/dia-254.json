@@ -1,0 +1,99 @@
+{
+  "dia": 254,
+  "data": "2027-07-13",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Emergência hipertensiva",
+  "conceito": "Hypertensive emergency: lower mean arterial pressure by no more than 25 percent in the first hour",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-14",
+  "tom": null,
+  "gancho": "Plantão de Terça: *a descida da serra* mais rápida do ano",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-254.png",
+    "cena": "Um carrinho desce a serra em alta velocidade; no banco de trás, Seu Néfron, de gravata e óculos na ponta do nariz, abraça a pilha de formulários com cara de susto. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron, assustado, no banco de trás de um carrinho que desce a serra"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-254-macete.png",
+    "cena": "Callback: o mesmo carrinho freia com suavidade; no mostrador redondo do painel, só um quarto do círculo aparece sombreado, como uma fatia de pizza tirada, e Seu Néfron carimba aprovado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O carrinho freia suave, com só um quarto do mostrador sombreado"
+  },
+  "questao": {
+    "vinheta": "A 56-year-old man has had headache and blurred vision for 1 day. Blood pressure is 228/134 mm Hg in both arms. Funduscopy shows papilledema and flame hemorrhages. Creatinine is 2.4 mg/dL (baseline 1.0). Head CT and chest imaging are normal, and an intravenous nicardipine infusion is started.",
+    "pergunta": "Which blood pressure goal is most appropriate for the first hour?",
+    "alternativas": {
+      "A": {
+        "texto": "Lower to below 120/80 mm Hg",
+        "quiz": "Below 120/80 mm Hg"
+      },
+      "B": {
+        "texto": "Lower by no more than 25%",
+        "quiz": "Lower by at most 25%"
+      },
+      "C": {
+        "texto": "Lower systolic to below 120 mm Hg within 20 minutes",
+        "quiz": "SBP below 120 in 20 min"
+      },
+      "D": {
+        "texto": "Lower gradually over 24 to 48 hours with oral agents",
+        "quiz": "Oral agents over 24-48 h"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Emergência: *25%* na primeira hora",
+    "certa": [
+      "Pressão muito alta com lesão aguda de órgão-alvo (papiledema, piora renal) é *hypertensive emergency*, tratada em UTI com droga intravenosa titulável. Como a autorregulação do cérebro e do rim está deslocada para cima, uma queda brusca causa isquemia. A diretriz da *ACC/AHA* pede reduzir no máximo 25% na primeira hora, depois chegar a cerca de 160/100 a 110 nas 2 a 6 horas seguintes e normalizar em 24 a 48 horas."
+    ],
+    "termos": [
+      "hypertensive emergency",
+      "autoregulation",
+      "nicardipine",
+      "end-organ damage"
+    ],
+    "erradas": {
+      "A": "Normalizar a pressão de uma vez provoca isquemia cerebral, renal e coronariana por causa da autorregulação desviada.",
+      "C": "Sistólica abaixo de 120 em 20 minutos é a meta da *aortic dissection*, que não é o caso aqui.",
+      "D": "Remédio oral ao longo de 24 a 48 horas serve para a hipertensão grave sem lesão de órgão-alvo, não para a emergência."
+    },
+    "macete": {
+      "frase": "Na primeira hora, tira *só uma fatia* da pizza: *25%*",
+      "apoio": "O carrinho que freia de leve tira só um quarto da pizza do velocímetro na primeira hora e depois vai para 160/100 em 2 a 6 horas. Quem freia de uma vez joga cérebro, rim e olho no para-brisa: a autorregulação acostumada à pressão alta vira isquemia.",
+      "fala": "Sem carimbo, não sai. Baixar para 120/80 na primeira hora é a versão clínica de estudar 12 horas na véspera."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com o Seu Néfron no banco de trás. Uma pressão muito alta, um fundo de olho e uma creatinina descritos na vinheta, e um remédio já correndo na veia. Qual é a meta da primeira hora?",
+    "palavras_chave": [
+      "severe hypertension",
+      "IV antihypertensive",
+      "blood pressure goal",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Cardiologia",
+      "#Emergencia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "PA de 228/134 com papiledema: qual é a meta da primeira hora?"
+  },
+  "reel": null,
+  "exemplo": false
+}

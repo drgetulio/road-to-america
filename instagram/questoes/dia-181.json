@@ -1,0 +1,88 @@
+{
+  "dia": 181,
+  "data": "2027-05-01",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Colega com capacidade prejudicada",
+  "conceito": "Colleague who seems impaired at work: protect patients first and report through institutional channels",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": "Dia do Trabalhador (1/5): cuidar de quem cuida.",
+  "remix_de": null,
+  "explicacao_em": "2027-05-02",
+  "tom": "acolhedor",
+  "gancho": "Dia do Trabalhador: quem *cuida* também precisa de cuidado",
+  "gancho_apoio": "Hoje sem piada. Um colega, um caso marcado e uma decisão difícil.",
+  "imagem": {
+    "arquivo": "dia-181.png",
+    "cena": "Na porta de um centro cirúrgico, com um semáforo ainda amarelo em cima, a Dona Bússola, serena, está ao lado de um cabide com um jaleco e um capacete de operário, lembrando o 1º de maio. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola na porta do centro cirúrgico, sob um semáforo amarelo, ao lado de um cabide com jaleco e capacete."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-181-macete.png",
+    "cena": "O semáforo da porta fica vermelho, uma seta verde aponta para o elevador da chefia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado. Fundo limpo.",
+    "alt": "O semáforo fica vermelho, uma seta verde aponta o elevador da chefia e o jaleco ganha um cachecol."
+  },
+  "questao": {
+    "vinheta": "A surgical resident notices that the attending surgeon smells of alcohol, has slurred speech, and is unsteady while scrubbing for an elective case scheduled to start in 10 minutes. The resident worries about damaging their working relationship.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Ask the attending to finish this case and then seek help",
+        "quiz": "Finish case, then help"
+      },
+      "B": {
+        "texto": "Notify the chief of surgery before the case begins",
+        "quiz": "Tell the chief now"
+      },
+      "C": {
+        "texto": "Report the attending to the state medical board next week",
+        "quiz": "State board next week"
+      },
+      "D": {
+        "texto": "Document the concern and watch for a second episode",
+        "quiz": "Document and wait"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro o paciente, depois o *canal da instituição*",
+    "certa": [
+      "Um colega com sinais de intoxicação prestes a operar é risco imediato para o paciente (*patient safety*). O passo certo é impedir que ele atue agora, avisando a chefia antes de a cirurgia começar (*chain of command*). Depois, a instituição encaminha o colega ao programa de saúde do médico (*physician health program*), que trata o problema como doença, sem punição automática."
+    ],
+    "termos": [
+      "impaired physician",
+      "patient safety",
+      "chain of command",
+      "physician health program"
+    ],
+    "erradas": {
+      "A": "Deixar terminar a cirurgia mantém o paciente exposto ao risco que você já percebeu; a conversa particular não protege ninguém nos próximos 10 minutos.",
+      "C": "O conselho estadual (*state medical board*) entra quando o canal interno falha ou não existe; esperar uma semana deixa o paciente de hoje sem proteção.",
+      "D": "Anotar e esperar um segundo episódio adia a proteção; a suspeita já basta para agir."
+    },
+    "macete": {
+      "frase": "Pense no *semáforo* da porta da sala: primeiro *vermelho* para a cirurgia, depois o *elevador* até a chefia",
+      "apoio": "Depois, a instituição encaminha o colega ao programa de saúde do médico, que trata o problema como doença, sem punição automática.",
+      "fala": "Meu norte é o paciente da mesa, e o colega também merece cuidado."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é 1º de maio, e a questão é sobre um colega que não está bem para trabalhar. O que o residente viu e quanto falta para o caso começar estão na vinheta.",
+    "palavras_chave": [
+      "attending surgeon",
+      "smell of alcohol",
+      "slurred speech",
+      "operating room"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cirurgião com hálito alcoólico e fala arrastada antes do caso: e agora?"
+  },
+  "exemplo": false
+}

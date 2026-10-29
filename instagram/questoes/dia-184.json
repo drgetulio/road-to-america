@@ -1,0 +1,88 @@
+{
+  "dia": 184,
+  "data": "2027-05-04",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Asma",
+  "conceito": "Asthma: as-needed ICS-formoterol preferred over SABA alone (GINA)",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Dia Mundial da Asma (primeira terça de maio, 4/5/2027).",
+  "remix_de": null,
+  "explicacao_em": "2027-05-05",
+  "tom": null,
+  "gancho": "Dia Mundial da Asma e uma consulta de rotina *no Plantão de Terça*",
+  "gancho_apoio": "Asma no Step 2: quatro inaladores, quatro cores de tampa e nenhuma memória de qual é qual.",
+  "imagem": {
+    "arquivo": "dia-184.png",
+    "cena": "Conforto médico às 3 da manhã, com o relógio sem números na parede. Dona Térmica, de olho meio fechado, folheia um guia de bolso enorme, com uma bombinha azul descansando na mesa ao lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, sonolenta, folheia um guia de bolso enorme ao lado de uma bombinha azul"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-184-macete.png",
+    "cena": "Callback: a bombinha azul agora pedala uma bicicleta de dois lugares com uma bombinha vinho na garupa (o corticoide inalatório), e Dona Térmica ergue o café, aprovando. Fundo limpo.",
+    "alt": "A bombinha azul pedala com uma bombinha vinho na garupa: resgate com corticoide junto"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman with asthma uses albuterol 2 to 3 times per week for wheezing and has no nighttime awakenings or activity limitation. She takes no other medications. Spirometry shows obstruction that reverses after bronchodilator. She asks for a better treatment plan.",
+    "pergunta": "Following GINA recommendations, which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "As-needed low-dose budesonide-formoterol",
+        "quiz": "As-needed ICS-formoterol"
+      },
+      "B": {
+        "texto": "Continue as-needed albuterol alone",
+        "quiz": "Albuterol alone as needed"
+      },
+      "C": {
+        "texto": "Daily oral montelukast",
+        "quiz": "Daily montelukast"
+      },
+      "D": {
+        "texto": "Daily inhaled salmeterol without a corticosteroid",
+        "quiz": "Daily salmeterol alone"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Resgate com *corticoide junto*",
+    "certa": [
+      "Pela GINA, em adolescentes e adultos com asma leve (passos 1 e 2), o preferido é *as-needed low-dose ICS-formoterol*: cada resgate leva junto uma dose de corticoide inalatório, o que reduz crises graves em comparação com o SABA sozinho. O formoterol age rápido e permite usar o mesmo inalador para alívio."
+    ],
+    "termos": [
+      "ICS-formoterol",
+      "as-needed therapy",
+      "SABA-only",
+      "GINA"
+    ],
+    "erradas": {
+      "B": "Com SABA sozinho a inflamação segue sem tratamento, e as crises graves e as mortes por asma ficam mais frequentes; a GINA deixou de recomendar essa opção isolada.",
+      "C": "O montelucaste é alternativa menos eficaz que o corticoide inalatório e tem alerta da FDA para efeitos neuropsiquiátricos.",
+      "D": "LABA sem corticoide inalatório (*LABA monotherapy*) aumenta o risco de morte relacionada à asma e é contraindicado."
+    },
+    "macete": {
+      "frase": "SABA sozinho é *estudar só na véspera*: apaga a crise de hoje e garante a de amanhã. Pela GINA, o resgate vem em *combo*: o formoterol abre rápido e o *corticoide inalatório* vai na garupa, no mesmo jato.",
+      "apoio": "O NBME pune LABA sem corticoide e SABA sozinho como único tratamento; se a vinheta citar GINA ou asma leve em adulto, a resposta é ICS-formoterol conforme a necessidade.",
+      "fala": "Já vi esse caso às 3 da manhã: bombinha sozinha só adia a próxima crise."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça no Dia Mundial da Asma, com a Dona Térmica servindo o café. Uma adulta jovem quer um plano melhor, e a frequência dos sintomas, o uso da bombinha e a diretriz que a pergunta cita estão na vinheta.",
+    "palavras_chave": [
+      "asthma",
+      "outpatient visit",
+      "inhaler therapy",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Asma leve, salbutamol 3x/semana: qual plano pela GINA?"
+  },
+  "exemplo": false
+}

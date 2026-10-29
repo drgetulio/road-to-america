@@ -1,0 +1,101 @@
+{
+  "dia": 105,
+  "data": "2027-02-14",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Cadeirinha no carro (dia 4), Varizes esofágicas (dia 72), Insolação (dia 100)",
+  "conceito": "Remix: Child car seat + Variceal bleeding + Exertional heat stroke",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": [
+    4,
+    72,
+    100
+  ],
+  "explicacao_em": "2027-02-15",
+  "tom": "acolhedor",
+  "gancho": "Alta depois da insolação no carro: *o que falta* antes de ir para casa?",
+  "gancho_apoio": "Tema sensível, tratado com cuidado. Cadeirinha (dia 4), varizes (dia 72) e insolação (dia 100) já passaram por aqui, e há um intruso.",
+  "imagem": {
+    "arquivo": "dia-105.png",
+    "cena": "No estacionamento do hospital, num fim de tarde tranquilo, Dona Térmica segura com cuidado uma cadeirinha de carro vazia, com uma mantinha dobrada dentro. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica segura com cuidado uma cadeirinha de carro vazia com uma mantinha, no estacionamento do hospital."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-105-macete.png",
+    "cena": "Um envelope voa até uma casinha firme com um escudo verde na fachada, enquanto Dona Térmica deixa uma bolsa no banco de trás, ao lado da cadeirinha virada para trás. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um envelope voa até uma casinha com escudo verde; Dona Térmica deixa uma bolsa no banco de trás, ao lado da cadeirinha."
+  },
+  "questao": {
+    "vinheta": "A 15-month-old boy is about to be discharged after treatment for heat stroke. His father had left him asleep in a parked car for about an hour on a hot afternoon. The father is tearful and cooperative.",
+    "pergunta": "In addition to safety counseling, which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Discharge with car seat counseling only",
+        "quiz": "Counseling only",
+        "dia": 4
+      },
+      "B": {
+        "texto": "Ask the parents' consent before reporting",
+        "quiz": "Ask consent to report"
+      },
+      "C": {
+        "texto": "Report to child protective services",
+        "quiz": "Report to CPS"
+      },
+      "D": {
+        "texto": "Report only if a second event occurs",
+        "quiz": "Report if it recurs"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Criança esquecida no carro quente: *notificar é proteger*",
+    "certa": [
+      "Uma criança pequena deixada sozinha num carro quente, com dano real (insolação), é suspeita razoável de negligência por falta de supervisão. Nos EUA, o médico é notificador obrigatório: comunica o serviço de proteção à criança (child protective services) sem pedir permissão aos pais. Notificar não é acusar nem punir; abre uma avaliação que protege a criança e apoia a família, e a orientação de segurança vem junto."
+    ],
+    "termos": [
+      "child protective services",
+      "mandated reporter",
+      "supervisory neglect",
+      "vehicular heatstroke"
+    ],
+    "erradas": {
+      "A": "Dia 4: a cadeirinha de costas no banco de trás continua certa, e orientar é obrigatório, mas orientar sozinho não cumpre o dever de notificar quando houve dano por falta de supervisão.",
+      "B": "A notificação de suspeita de negligência não depende do consentimento dos pais; pedir permissão atrasa a proteção.",
+      "D": "Esperar um segundo evento é esperar uma segunda insolação. A suspeita razoável de agora já basta."
+    },
+    "macete": {
+      "frase": "*Suspeitou, notificou, orientou*: proteger não é acusar",
+      "apoio": "Pegadinha de prova: O NBME coloca pais arrependidos e cooperativos para você deixar de notificar. A emoção da família não muda o dever: suspeita razoável de negligência com dano já pede notificação, junto com a orientação.",
+      "fala": "Já vi esse caso às 3 da manhã. Notificar é cuidar da criança e da família."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo com tom acolhedor. Um menino de 15 meses, já tratado de uma insolação, vai para casa, e o pai está arrasado. Leia a vinheta com calma: a pergunta é o que o médico ainda precisa fazer antes da alta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#MedicinaDeEmergencia",
+      "#EmergencyMedicine",
+      "#Hepatologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê esquecido no carro quente e pai colaborativo: além de orientar, o que fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

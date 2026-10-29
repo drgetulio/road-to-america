@@ -1,0 +1,100 @@
+{
+  "dia": 226,
+  "data": "2027-06-15",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Rastreamento de câncer colorretal",
+  "conceito": "Average-risk colorectal cancer screening starts at age 45",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-16",
+  "tom": null,
+  "gancho": "Consulta de rotina no Plantão de Terça: *um aniversário* e uma pergunta sobre exames",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-226.png",
+    "cena": "Sala de espera com o relógio sem números na parede. Dona Térmica, de prancheta em branco, conversa com um bolo de aniversário simpático, de velinhas apagadas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica conversa com um bolo de aniversário na sala de espera"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-226-macete.png",
+    "cena": "Callback: o presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde, e Dona Térmica ergue um cafezinho. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "O presente aberto traz uma câmera na mangueirinha e um kit de amostra de tampa verde"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man comes for a routine visit. He feels well and has no gastrointestinal symptoms. He has no personal history of polyps or inflammatory bowel disease and no family history of colorectal cancer. Examination and complete blood count are normal.",
+    "pergunta": "Which is the most appropriate recommendation regarding colorectal cancer screening?",
+    "alternativas": {
+      "A": {
+        "texto": "Defer screening until he reaches age 50",
+        "quiz": "Wait until age 50"
+      },
+      "B": {
+        "texto": "Annual CT colonography starting this year",
+        "quiz": "Annual CT colonography"
+      },
+      "C": {
+        "texto": "Measure serum carcinoembryonic antigen (CEA) every year",
+        "quiz": "Yearly serum CEA"
+      },
+      "D": {
+        "texto": "Begin screening now with colonoscopy or a stool test",
+        "quiz": "Screen now"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Risco médio: o rastreamento começa *aos 45*",
+    "certa": [
+      "Desde 2021, a USPSTF recomenda rastrear câncer colorretal em adultos de risco médio dos *45 aos 75 anos* (grau B entre 45 e 49, grau A entre 50 e 75). Valem *colonoscopy* a cada 10 anos, *FIT* anual, FIT-DNA a cada 1 a 3 anos, colonografia por TC a cada 5 anos ou sigmoidoscopia flexível a cada 5 anos. O melhor teste é o que a pessoa vai fazer, e um teste de fezes positivo leva à colonoscopia."
+    ],
+    "termos": [
+      "colorectal cancer screening",
+      "USPSTF 2021: age 45",
+      "colonoscopy every 10 years",
+      "annual FIT"
+    ],
+    "erradas": {
+      "A": "Esperar os 50 segue a recomendação antiga; a idade baixou para 45 com o aumento de casos em adultos mais jovens.",
+      "B": "A colonografia por TC é uma opção, mas a cada 5 anos, não todo ano.",
+      "C": "O CEA serve para acompanhar recidiva depois do tratamento e não tem sensibilidade para rastreamento."
+    },
+    "macete": {
+      "frase": "*45 é o novo 50* para o cólon: no risco médio, o rastreamento começa aos 45, com colonoscopia ou exame de fezes. CEA não rastreia nada; ele acompanha quem já tratou.",
+      "apoio": "O NBME ainda oferece \"esperar os 50\" e o CEA; desde 2021 a USPSTF recomenda começar aos 45 no risco médio, com colonoscopia a cada 10 anos ou teste de fezes (FIT anual, por exemplo).",
+      "fala": "Já vi esse caso às 3 da manhã. 45 é o novo 50, e o seu banco de questões de 2019 ainda não ficou sabendo."
+    }
+  },
+  "legenda": {
+    "contexto": "Consulta de rotina com a Dona Térmica, num tema que merece informação sem medo. Um homem sem queixas pergunta sobre rastreamento, e a idade e a história familiar dele estão na vinheta. O que recomendar hoje?",
+    "palavras_chave": [
+      "preventive care",
+      "screening guidelines",
+      "routine visit",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Prevencao",
+      "#PreventiveMedicine",
+      "#Rastreamento",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "45 anos, risco médio e sem sintomas: o que recomendar?"
+  },
+  "reel": null,
+  "exemplo": false
+}

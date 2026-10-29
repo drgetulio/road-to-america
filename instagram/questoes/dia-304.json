@@ -1,0 +1,97 @@
+{
+  "dia": 304,
+  "data": "2027-09-01",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Síndrome do X frágil",
+  "conceito": "Fragile X syndrome: CGG repeat expansion silences FMR1 by methylation",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-02",
+  "tom": null,
+  "gancho": "Refrão repetido *mais que hit do verão*. E a proteína?",
+  "gancho_apoio": "Repetição demais no lugar errado e a proteína sai de circulação. Mas como?",
+  "imagem": {
+    "arquivo": "dia-304.png",
+    "cena": "Uma vitrola antiga tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
+    "foco": "50% 35%",
+    "alt": "A vitrola presa no mesmo refrão"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-304-macete.png",
+    "cena": "Callback: a mesma vitrola, agora com um X pintado na tampa, está muda, com dezenas de cadeadinhos navy trancando todos os botões. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
+    "foco": "50% 45%",
+    "alt": "X frágil: CGG demais metila e silencia o FMR1"
+  },
+  "questao": {
+    "vinheta": "A 6-year-old boy has speech delay and hyperactivity. He avoids eye contact and flaps his hands. He has a long face, large ears, and lax finger joints. His maternal uncle has intellectual disability. Genetic testing shows more than 200 CGG repeats in the 5' untranslated region of FMR1.",
+    "pergunta": "Which mechanism best explains loss of the gene product?",
+    "alternativas": {
+      "A": {
+        "texto": "Hypermethylation of the gene promoter",
+        "quiz": "Promoter methylation"
+      },
+      "B": {
+        "texto": "Toxic polyglutamine protein",
+        "quiz": "Toxic polyglutamine"
+      },
+      "C": {
+        "texto": "Frameshift deletion in the coding sequence",
+        "quiz": "Frameshift deletion"
+      },
+      "D": {
+        "texto": "Expanded RNA sequestering splicing proteins",
+        "quiz": "RNA sequestering splicing"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "X frágil: CGG demais *metila e silencia* o FMR1",
+    "certa": [
+      "Acima de 200 cópias do trinucleotídeo CGG no começo do FMR1, fora do trecho que vira proteína, caracterizam a *full mutation*. A expansão atrai *hypermethylation* do promotor e das ilhas CpG, o FMR1 fica mudo e a *FMRP*, proteína que regula a tradução nas sinapses, para de ser fabricada. É perda de função por silenciamento epigenético, e a expansão costuma crescer quando passa pela mãe (*anticipation*)."
+    ],
+    "termos": [
+      "fragile X syndrome",
+      "CGG repeat expansion",
+      "FMR1 hypermethylation",
+      "FMRP"
+    ],
+    "erradas": {
+      "B": "*Poliglutamina tóxica* é o mecanismo da doença de Huntington (CAG na região codificadora), um ganho de função.",
+      "C": "A alteração não está na sequência codificadora: é uma repetição na região não traduzida que desliga o gene inteiro.",
+      "D": "*RNA expandido* que prende proteínas de splicing é o mecanismo da distrofia miotônica (CTG na região 3'), sem silenciar o gene."
+    },
+    "macete": {
+      "frase": "*Disco arranhado no X*: repetiu demais, ganhou cadeado de metil e ficou mudo",
+      "apoio": "A vitrola em forma de X repete o mesmo trecho CGG até que dezenas de cadeadinhos (os grupos metil) trancam o promotor do FMR1. O som não sai errado: ele simplesmente para, e falta a proteína FMRP. Mais de 200 repetições é a mutação completa; entre 55 e 200, pré-mutação.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui sobrou repetição."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê: a vitrola travou no refrão e o Seu Allen não acha o botão de pular. Quatro mecanismos genéticos e uma vinheta com história de família. Dica de quem já errou essa às 2 da manhã: leia em que parte do gene fica a repetição.",
+    "palavras_chave": [
+      "genetics",
+      "developmental delay",
+      "family history",
+      "molecular mechanism"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Mais de 200 CGG no FMR1: por que a proteína some?"
+  },
+  "reel": null,
+  "exemplo": false
+}

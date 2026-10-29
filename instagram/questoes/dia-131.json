@@ -1,0 +1,95 @@
+{
+  "dia": 131,
+  "data": "2027-03-12",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Tiazídicos",
+  "conceito": "Thiazides: block NCC in the distal tubule, lower urinary calcium, raise glucose and uric acid",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-13",
+  "tom": null,
+  "gancho": "Seu Néfron recebeu um comprimido novo e *quatro guichês* para escolher",
+  "gancho_apoio": "Cada guichê do néfron tem um transportador. Só um é o alvo do remédio.",
+  "imagem": {
+    "arquivo": "dia-131.png",
+    "cena": "Seu Néfron, sentado num corredor tubular com quatro guichês sem placas, recebe da Tia Meia-Vida um comprimido novo e ajeita os óculos para decidir onde usá-lo. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron recebe um comprimido da Tia Meia-Vida num corredor tubular com quatro guichês."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-131-macete.png",
+    "cena": "Callback: no terceiro guichê do corredor, o Seu Néfron fecha a porta do sódio com o comprimido e carimba as bolinhas de cálcio de volta para o sangue, em verde. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "No terceiro guichê, Seu Néfron fecha a porta do sódio e carimba o cálcio de volta para o sangue."
+  },
+  "questao": {
+    "vinheta": "A 66-year-old woman with hypertension and recurrent calcium oxalate kidney stones starts a new antihypertensive drug. Two months later, her 24-hour urinary calcium has decreased, but her serum glucose and uric acid concentrations have increased.",
+    "pergunta": "This drug most likely inhibits which transporter?",
+    "alternativas": {
+      "A": {
+        "texto": "Na-K-2Cl cotransporter in the thick ascending limb",
+        "quiz": "NKCC2 (loop)"
+      },
+      "B": {
+        "texto": "Na-Cl cotransporter in the early distal tubule",
+        "quiz": "NCC (distal tubule)"
+      },
+      "C": {
+        "texto": "Epithelial sodium channel in the collecting duct",
+        "quiz": "ENaC (collecting duct)"
+      },
+      "D": {
+        "texto": "Carbonic anhydrase in the proximal tubule",
+        "quiz": "Carbonic anhydrase"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Tiazídico bloqueia o *NCC* do túbulo distal",
+    "certa": [
+      "Os tiazídicos bloqueiam o cotransportador Na-Cl (NCC) do túbulo contorcido distal. Com menos sódio entrando na célula, o trocador Na/Ca da membrana basolateral trabalha mais e o cálcio é reabsorvido, o que reduz a calciúria e ajuda quem forma cálculos de cálcio. Os efeitos metabólicos clássicos são hiperglicemia, hiperlipidemia, hiperuricemia e hipercalcemia."
+    ],
+    "termos": [
+      "thiazide diuretics",
+      "NCC",
+      "distal convoluted tubule",
+      "hypocalciuria"
+    ],
+    "erradas": {
+      "A": "Os diuréticos de alça bloqueiam o NKCC2 e aumentam a perda de cálcio na urina, o oposto do que aconteceu.",
+      "C": "Amilorida e triantereno bloqueiam o ENaC, poupam potássio e não mudam muito o cálcio urinário.",
+      "D": "A acetazolamida inibe a anidrase carbônica, causa acidose metabólica e pode favorecer cálculos de fosfato de cálcio."
+    },
+    "macete": {
+      "frase": "Tiazídico é *hiperGLUC*: Glicose, Lipídios, ácido Úrico e Cálcio sobem",
+      "apoio": "Alça perde cálcio (Loops Lose calcium); tiazídico guarda, e por isso é o diurético de quem tem pedra de cálcio.",
+      "fala": "Guichê 3, túbulo distal: cálcio fica, glicose e ácido úrico sobem. Sem carimbo, não sai."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o Seu Néfron: um anti-hipertensivo novo e dois meses de exames que mudaram em direções opostas. O que subiu e o que caiu está na vinheta, e é ali que o guichê aparece.",
+    "palavras_chave": [
+      "hypertension",
+      "calcium oxalate stones",
+      "urinary calcium",
+      "uric acid"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Calciúria caiu, glicose e ácido úrico subiram: qual transportador?"
+  },
+  "reel": null,
+  "exemplo": false
+}

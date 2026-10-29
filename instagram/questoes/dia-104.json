@@ -1,0 +1,95 @@
+{
+  "dia": 104,
+  "data": "2027-02-13",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Quase erro",
+  "conceito": "Near miss: an error caught before reaching the patient still gets reported",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-14",
+  "tom": null,
+  "gancho": "Bola na trave e *ninguém na arquibancada*: o que fazer com esse lance?",
+  "gancho_apoio": "No inglês da prova, near miss não é aquele quase namoro do internato.",
+  "imagem": {
+    "arquivo": "dia-104.png",
+    "cena": "Um campo de futebol vazio no fim da tarde: a bola acaba de bater na trave e volta quicando, e, atrás de uma tabela 2x2 em branco na beira do campo, o Viés tapa os olhos com o lençol e finge que não viu. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A bola bate na trave num campo vazio; na beira do campo, o Viés tapa os olhos e finge que não viu."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-104-macete.png",
+    "cena": "Callback: num telão, o replay mostra a bola indo até a trave em linha pontilhada, e um envelope voa para dentro de uma caixa de correio em forma de escudo verde; o Viés, flagrado, desce o lençol dos olhos. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Replay da bola na trave num telão; um envelope entra numa caixa de correio em forma de escudo e o Viés é flagrado."
+  },
+  "questao": {
+    "vinheta": "A second-year resident is about to give intravenous potassium chloride to a patient when she notices that the bag is labeled for the patient in the next bed. She stops, the correct bag is obtained and the patient is not harmed. No one else saw the mix-up.",
+    "pergunta": "Which is the most appropriate next step regarding this event?",
+    "alternativas": {
+      "A": {
+        "texto": "Make no report because no harm occurred",
+        "quiz": "No report, no harm done"
+      },
+      "B": {
+        "texto": "Discuss it only with the nurse who prepared the bag",
+        "quiz": "Tell only the nurse"
+      },
+      "C": {
+        "texto": "Report it only if a similar event recurs",
+        "quiz": "Report only if it recurs"
+      },
+      "D": {
+        "texto": "Report it in the hospital's safety system",
+        "quiz": "File a safety report"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Quase erro também se *notifica*",
+    "certa": [
+      "Um erro interceptado antes de chegar ao paciente é um quase erro (near miss). Ele mostra a mesma falha do sistema que um erro com dano mostraria, só que sem custo para ninguém. Por isso vai para o sistema de notificação do hospital, que analisa a causa sem buscar culpado e corrige o processo, como a conferência de identificação na beira do leito."
+    ],
+    "termos": [
+      "near miss",
+      "safety reporting system",
+      "patient safety"
+    ],
+    "erradas": {
+      "A": "A ausência de dano não dispensa a notificação; o quase erro é a chance mais barata de corrigir o sistema.",
+      "B": "Conversar com a colega pode ser útil, mas não substitui a notificação, que permite ao hospital mudar o processo.",
+      "C": "Esperar um segundo evento é esperar o paciente que talvez não tenha a mesma sorte."
+    },
+    "macete": {
+      "frase": "Bola na trave *também vai para o VAR*",
+      "apoio": "Pegadinha de prova: O NBME pergunta o que fazer com quase erro ou erro sem dano; a resposta é notificar no sistema de segurança, e não esconder nem esperar repetir.",
+      "fala": "Ninguém viu, ninguém se machucou... eu adoro quando ninguém conta."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés no plantão: um quase erro, uma residente atenta e um corredor vazio. O Viés tem uma sugestão. A vinheta tem o resto.",
+    "palavras_chave": [
+      "potassium chloride",
+      "wrong patient bag",
+      "medication administration",
+      "error caught in time"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#EticaMedica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Erro pego antes de chegar ao paciente, sem dano: o que fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

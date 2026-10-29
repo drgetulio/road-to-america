@@ -1,0 +1,100 @@
+{
+  "dia": 212,
+  "data": "2027-06-01",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Sarcoidose",
+  "conceito": "Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-02",
+  "tom": null,
+  "gancho": "Plantão de Terça: tosse há três meses e *uma biópsia que chegou de madrugada*",
+  "gancho_apoio": "Três cafés depois, o laudo ainda tem quatro hipóteses e a Dona Térmica tem uma.",
+  "imagem": {
+    "arquivo": "dia-212.png",
+    "cena": "Padaria de madrugada, com o relógio sem números marcando 3 horas. Dona Térmica, de prancheta, observa uma fornada de pães de queijo saindo do forno. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica observa uma fornada de pães de queijo saindo do forno de madrugada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-212-macete.png",
+    "cena": "Callback: um pão de queijo aberto mostra o miolo vazio, sem queijo nenhum, e a massa é feita de cópias do Macrô; ao lado, uma lâmpada em forma de sol (a vitamina D ativada) acende. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "O pão de queijo aberto está vazio por dentro e feito de Macrôs; uma lâmpada-sol acende"
+  },
+  "questao": {
+    "vinheta": "A 36-year-old woman has had a dry cough and exertional dyspnea for 3 months. She has tender red nodules on both shins. Chest x-ray shows bilateral hilar lymphadenopathy. Serum calcium is 11.2 mg/dL. Transbronchial biopsy shows noncaseating granulomas; acid-fast and fungal stains are negative.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Pulmonary tuberculosis",
+        "quiz": "Tuberculosis"
+      },
+      "B": {
+        "texto": "Sarcoidosis",
+        "quiz": "Sarcoidosis"
+      },
+      "C": {
+        "texto": "Histoplasmosis",
+        "quiz": "Histoplasmosis"
+      },
+      "D": {
+        "texto": "Hodgkin lymphoma",
+        "quiz": "Hodgkin lymphoma"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Granuloma sem caseificação e *cálcio alto*",
+    "certa": [
+      "Adenopatia hilar bilateral, *erythema nodosum* nas canelas e *noncaseating granulomas* com colorações negativas para micobactéria e fungo apontam para *sarcoidosis*. O cálcio sobe porque os macrófagos do granuloma expressam *1-alpha-hydroxylase* e fabricam calcitriol por conta própria, fora do controle do PTH."
+    ],
+    "termos": [
+      "bilateral hilar lymphadenopathy",
+      "noncaseating granulomas",
+      "erythema nodosum",
+      "1-alpha-hydroxylase"
+    ],
+    "erradas": {
+      "A": "A *tuberculosis* forma granulomas caseosos, com necrose central, e a coloração álcool-ácido resistente costuma achar o bacilo.",
+      "C": "A *histoplasmosis* pode dar adenopatia hilar, mas os granulomas tendem a necrosar, e a coloração para fungos mostraria leveduras pequenas dentro dos macrófagos.",
+      "D": "O *Hodgkin lymphoma* aumenta linfonodos do mediastino, mas a biópsia mostraria células de Reed-Sternberg, não granulomas com colorações negativas e cálcio alto."
+    },
+    "macete": {
+      "frase": "Sarcoidose é *pão de queijo sem queijo*: granuloma sem caseificação. Quem faz a massa é o Macrô (o macrófago epitelioide), que ainda ativa vitamina D por conta própria e deixa o *cálcio sobrando*.",
+      "apoio": "O NBME junta adenopatia hilar bilateral, eritema nodoso e cálcio alto; granuloma sem caseificação com pesquisa de BAAR e de fungos negativa fecha o quadro. A hipercalcemia vem da 1-alfa-hidroxilase do macrófago.",
+      "fala": "Já vi esse caso às 3 da manhã: o Macrô fez vitamina D sem receita."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na pneumologia, com a Dona Térmica. Tosse seca há meses, um raio X, um exame de sangue e uma biópsia descritos na vinheta. As colorações especiais têm a última palavra.",
+    "palavras_chave": [
+      "chronic cough",
+      "chest x-ray",
+      "transbronchial biopsy",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pneumologia",
+      "#Pulmonology",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hilo bilateral, eritema nodoso e cálcio alto: o que é?"
+  },
+  "reel": null,
+  "exemplo": false
+}

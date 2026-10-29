@@ -1,0 +1,96 @@
+{
+  "dia": 299,
+  "data": "2027-08-27",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Metotrexato",
+  "conceito": "Methotrexate: inhibits dihydrofolate reductase, leucovorin rescues normal cells",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-28",
+  "tom": null,
+  "gancho": "A Tia Meia-Vida leu a receita da cozinha *e precisou sentar*",
+  "gancho_apoio": "Sextou na Farmácia: um cartão de receita e quatro frascos na bancada.",
+  "imagem": {
+    "arquivo": "dia-299.png",
+    "cena": "Na cozinha da Tia Meia-Vida, ela, de óculos vermelhos, lê um cartão de receita com a mão na testa; na bancada, quatro frascos esperam enfileirados.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida lê um cartão de receita com a mão na testa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-299-macete.png",
+    "cena": "Callback: o forno de pão da cozinha está trancado com cadeado vermelho e uma bola de massa crua espera ao lado; um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram; a Tia Meia-Vida faz sinal de positivo.",
+    "foco": "50% 45%",
+    "alt": "Leucovorina pula a DHFR e resgata a célula"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old woman has painful mouth ulcers, fatigue, and easy bruising 10 days after she began taking her rheumatoid arthritis medication, methotrexate, once daily instead of once weekly by mistake. Laboratory studies show pancytopenia (hemoglobin 8.9 g/dL, leukocytes 1,800/mm3, platelets 42,000/mm3).",
+    "pergunta": "Which agent is most appropriate because it bypasses the inhibited enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Folic acid",
+        "quiz": "Folic acid"
+      },
+      "B": {
+        "texto": "Cyanocobalamin",
+        "quiz": "Cyanocobalamin"
+      },
+      "C": {
+        "texto": "Mesna",
+        "quiz": "Mesna"
+      },
+      "D": {
+        "texto": "Leucovorin",
+        "quiz": "Leucovorin"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Leucovorina *pula a DHFR* e resgata a célula",
+    "certa": [
+      "O *methotrexate* inibe a *dihydrofolate reductase* (DHFR), que transforma di-hidrofolato em tetra-hidrofolato; sem THF, faltam timidina e purinas, e as células que se dividem rápido (medula, mucosa) sofrem. A *leucovorin* (ácido folínico) já é um folato reduzido, entra no ciclo depois da DHFR e resgata as células normais. Por isso é o antídoto, junto com suporte e hidratação."
+    ],
+    "termos": [
+      "methotrexate",
+      "dihydrofolate reductase",
+      "leucovorin rescue",
+      "folinic acid"
+    ],
+    "erradas": {
+      "A": "Ácido fólico precisa da DHFR para virar THF, justamente a enzima bloqueada.",
+      "B": "Cianocobalamina corrige falta de B12, que não é o problema aqui.",
+      "C": "Mesna protege a bexiga da acroleína da ciclofosfamida."
+    },
+    "macete": {
+      "frase": "Leucovorina é *a pizza que já chega pronta*: pula o forno quebrado (DHFR)",
+      "apoio": "O forno trancado é a DHFR inibida pelo metotrexato. O ácido fólico é a massa crua, que precisa do forno; a leucovorina (ácido folínico) chega de motoboy já assada e alimenta a medula. E o metotrexato da artrite é semanal, como o jogo de domingo.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Metotrexato semanal, todo mundo tem que lembrar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia: a Tia Meia-Vida leu uma receita na cozinha e precisou sentar. A vinheta conta o que deu errado e o que o hemograma mostrou; a pergunta é qual frasco resolve.",
+    "palavras_chave": [
+      "medication error",
+      "pharmacology",
+      "hematology",
+      "antidotes"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Metotrexato diário por engano e pancitopenia: qual é o resgate?"
+  },
+  "reel": null,
+  "exemplo": false
+}

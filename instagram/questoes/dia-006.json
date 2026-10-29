@@ -1,0 +1,96 @@
+{
+  "dia": 6,
+  "data": "2026-11-07",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Rastreamento do câncer de próstata",
+  "conceito": "Lead-time bias: earlier PSA detection lengthens apparent survival without changing the time of death",
+  "personagem": "Viés",
+  "gancho_data": "Novembro Azul: decisão compartilhada sobre o PSA.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-08",
+  "tom": null,
+  "gancho": "O estudo do rastreamento saiu com sobrevida maior, e o *Viés* já pediu música no Fantástico",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-006.png",
+    "cena": "O Viés espia por trás de uma tabela 2x2 na beira de um estádio. No telão, duas barras de tamanhos diferentes, e a torcida de bolinhas comemora com bandeirinhas verdes e amarelas.",
+    "foco": "50% 35%",
+    "alt": "O Viés espia atrás de uma tabela 2x2 na beira de um estádio; no telão, duas barras de tamanhos diferentes."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-006-macete.png",
+    "cena": "Callback dos cronômetros: dois sofás lado a lado diante de duas TVs com o mesmo jogo. Um torcedor ligou a TV no pré-jogo, o outro só no intervalo, mas o apito final aparece no mesmo instante nas duas telas. O Viés segura o ponteiro que ele adiantou.",
+    "alt": "O relógio foi adiantado, o apito é o mesmo"
+  },
+  "questao": {
+    "vinheta": "A study compares men whose prostate cancer was found by PSA screening with men diagnosed after symptoms. Survival from diagnosis is 11 years vs 8 years. Tumor biology is similar, but mean age at diagnosis is 67 vs 70 years, and mean age at death is 78 in both groups.",
+    "pergunta": "Which best explains the survival difference?",
+    "alternativas": {
+      "A": {
+        "texto": "Selection bias",
+        "quiz": "Selection bias"
+      },
+      "B": {
+        "texto": "Length-time bias",
+        "quiz": "Length-time bias"
+      },
+      "C": {
+        "texto": "Recall bias",
+        "quiz": "Recall bias"
+      },
+      "D": {
+        "texto": "Lead-time bias",
+        "quiz": "Lead-time bias"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O relógio foi adiantado, o apito é o mesmo",
+    "certa": [
+      "O rastreamento só antecipou o diagnóstico em 3 anos (67 contra 70), e a morte chegou na mesma idade, 78 anos, nos dois grupos. A sobrevida contada a partir do diagnóstico cresceu 3 anos sem que ninguém vivesse mais: é o viés de antecipação diagnóstica (lead-time bias). Para fugir dele, compare a mortalidade, e não a sobrevida desde o diagnóstico."
+    ],
+    "termos": [
+      "lead-time bias",
+      "length-time bias",
+      "survival vs mortality",
+      "PSA screening"
+    ],
+    "erradas": {
+      "A": "Viés de seleção exige grupos diferentes desde o início, como voluntários mais saudáveis, e a idade igual na morte não sugere isso.",
+      "B": "O length-time bias aparece quando o rastreamento pega mais os tumores lentos, mas aqui a biologia dos tumores era parecida.",
+      "C": "O viés de memória (recall bias) depende de lembrar exposições passadas, típico do caso-controle, e não muda a data do diagnóstico."
+    },
+    "macete": {
+      "frase": "Ligou a TV no pré-jogo? O jogo não ficou mais longo: o *apito final* toca na mesma hora. Lead-time só adianta o seu relógio.",
+      "apoio": "Pegadinha de prova: O NBME mostra sobrevida maior com o rastreamento e idade de morte igual; a saída é olhar a mortalidade, e não a sobrevida desde o diagnóstico.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Novembro Azul também é decisão compartilhada sobre o PSA. Hoje o Viés mexe nos números de um estudo de rastreamento, e a pergunta é se alguém viveu mais de verdade.",
+    "palavras_chave": [
+      "cancer screening",
+      "PSA",
+      "study design",
+      "biostatistics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Epidemiology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sobrevida maior e idade de morte igual: qual viés explica?"
+  },
+  "exemplo": false
+}

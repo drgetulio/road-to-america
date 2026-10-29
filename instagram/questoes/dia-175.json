@@ -1,0 +1,92 @@
+{
+  "dia": 175,
+  "data": "2027-04-25",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do mosquito: Anemia da doença crônica (dia 80), Malária e hipnozoítos (dia 120), Malária por falciparum (dia 169)",
+  "conceito": "Mosquito remix: Anemia of chronic disease + Plasmodium vivax and ovale + Plasmodium falciparum",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Dia Mundial da Malária (25/4).",
+  "remix_de": [
+    80,
+    120,
+    169
+  ],
+  "explicacao_em": "2027-04-26",
+  "tom": null,
+  "gancho": "Dia Mundial da Malária: *o mosquito voltou* com o primo mais perigoso",
+  "gancho_apoio": "Remix do mosquito com anemia da doença crônica (dia 80), vivax (dia 120) e falciparum (dia 169).",
+  "imagem": {
+    "arquivo": "dia-175.png",
+    "cena": "A Tia Meia-Vida, atrás do balcão da farmácia, recebe de volta o mosquito turista de chapéu de palha, que chega acompanhado de um primo maior e mal-encarado. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "A Tia Meia-Vida recebe no balcão o mosquito turista, que volta com um primo maior e mal-encarado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-175-macete.png",
+    "cena": "Callback: a Tia Meia-Vida deixa a caixa de comprimidos no balcão e pendura uma bolsa de soro brilhante num suporte, enquanto o primo mal-encarado do mosquito encolhe. Fundo limpo.",
+    "alt": "A Tia Meia-Vida deixa os comprimidos de lado e pendura uma bolsa de soro; o primo do mosquito encolhe."
+  },
+  "questao": {
+    "vinheta": "Ten days after a trip to Nigeria, a 30-year-old woman is drowsy, keeps vomiting and cannot keep pills down. Her thin smear shows 9% parasitemia with banana-shaped gametocytes. Hemoglobin is 8.6 g/dL. She took no prophylaxis.",
+    "pergunta": "Which is the most appropriate antimalarial therapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral chloroquine",
+        "quiz": "Oral chloroquine"
+      },
+      "B": {
+        "texto": "Oral atovaquone-proguanil",
+        "quiz": "Oral atovaquone-proguanil"
+      },
+      "C": {
+        "texto": "Intravenous artesunate",
+        "quiz": "IV artesunate",
+        "dia": 169
+      },
+      "D": {
+        "texto": "Oral primaquine",
+        "quiz": "Oral primaquine",
+        "dia": 120
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Falciparum grave: *artesunato na veia*, já",
+    "certa": [
+      "Gametócitos em banana, parasitemia acima de 5%, rebaixamento de consciência e vômitos que impedem o comprimido: é malária grave por Plasmodium falciparum. O tratamento de escolha, inclusive nos EUA, é o artesunato intravenoso, que derruba a parasitemia mais rápido que qualquer opção oral. Depois de pelo menos 24 horas e com melhora, completa-se o esquema com um antimalárico oral."
+    ],
+    "termos": [
+      "severe falciparum malaria",
+      "intravenous artesunate",
+      "hyperparasitemia",
+      "impaired consciousness"
+    ],
+    "erradas": {
+      "A": "A cloroquina oral não serve: quase todo falciparum da África é resistente, e malária grave não se trata por boca.",
+      "B": "Atovaquona-proguanil oral trata malária não complicada; com sonolência, vômitos e parasitemia de 9%, a via oral não é segura nem rápida o bastante.",
+      "D": "Dia 120: a primaquina age no hipnozoíto do vivax e do ovale; o falciparum não tem hipnozoíto, e a primaquina não trata a forma grave no sangue."
+    },
+    "macete": {
+      "frase": "Falciparum *grave* pede *artesunato na veia*; comprimido fica para depois",
+      "apoio": "Pegadinha de prova: O NBME marca a malária grave com parasitemia acima de 5%, alteração de consciência, convulsão, acidose ou incapacidade de engolir. Qualquer um desses pede artesunato intravenoso, sem esperar.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Mas malária grave não espera nem uma: artesunato na veia."
+    }
+  },
+  "legenda": {
+    "contexto": "25 de abril é o Dia Mundial da Malária, e a malária tem prevenção, diagnóstico e tratamento. No Remix de Domingo, uma viajante de volta da África e uma decisão de tratamento no balcão da Tia Meia-Vida. O estado dela e o esfregaço estão na vinheta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Falciparum com 9% de parasitemia e vômitos sem parar: qual antimalárico?"
+  },
+  "exemplo": false
+}

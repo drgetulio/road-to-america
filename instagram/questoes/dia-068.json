@@ -1,0 +1,95 @@
+{
+  "dia": 68,
+  "data": "2027-01-08",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Cistite não complicada",
+  "conceito": "Uncomplicated cystitis: nitrofurantoin or TMP-SMX, avoid fluoroquinolones",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-09",
+  "gancho": "Ardência para urinar e quatro *entregadores* na porta da farmácia",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura um pedido de entrega em branco, enquanto quatro entregadores diferentes, de capacete, esperam em fila na calçada.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida segura um pedido de entrega em branco, enquanto quatro entregadores esperam em fila na calçada.",
+    "arquivo": "dia-068.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o bombeiro de bicicleta entra na caixa d'água e apaga o fogo por dentro, sem subir no telhado da casa, onde mora um rim tranquilo. O helicóptero continua parado na rua, coberto por uma capa, ao lado de um saquinho de pão francês que ninguém precisou buscar de jatinho.",
+    "alt": "A bicicleta de bombeiro apaga o fogo dentro da caixa d'água sem subir ao telhado do rim; o helicóptero fica coberto ao lado de um saquinho de pão.",
+    "arquivo": "dia-068-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old nonpregnant woman has 2 days of dysuria, frequency, and urgency. She has no fever, flank pain, or vaginal discharge, and no costovertebral angle tenderness. Urine dipstick is positive for leukocyte esterase and nitrites. She has no drug allergies.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Ciprofloxacin for 3 days",
+        "quiz": "Ciprofloxacin"
+      },
+      "B": {
+        "texto": "Nitrofurantoin for 5 days",
+        "quiz": "Nitrofurantoin"
+      },
+      "C": {
+        "texto": "IV ceftriaxone for 7 days",
+        "quiz": "IV ceftriaxone"
+      },
+      "D": {
+        "texto": "Amoxicillin for 7 days",
+        "quiz": "Amoxicillin"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Cistite simples: *nitrofurantoína*",
+    "certa": [
+      "Mulher não grávida com disúria, urgência e polaciúria, sem febre e sem dor lombar, tem *uncomplicated cystitis*. A primeira linha da IDSA é *nitrofurantoin* por 5 dias, *TMP-SMX* por 3 dias (quando a resistência da região fica abaixo de 20%) ou *fosfomycin* em dose única. A nitrofurantoína se concentra na urina e quase não chega ao tecido renal, ótima na bexiga e inútil na pielonefrite."
+    ],
+    "termos": [
+      "uncomplicated cystitis",
+      "nitrofurantoin",
+      "TMP-SMX",
+      "fluoroquinolone stewardship"
+    ],
+    "erradas": {
+      "A": "Fluoroquinolona funciona, mas fica reservada pelos efeitos adversos graves (tendão, aorta, sistema nervoso) e pela resistência; não é primeira linha na cistite simples.",
+      "C": "Antibiótico venoso é para pielonefrite grave ou paciente internado, não para cistite de ambulatório.",
+      "D": "Amoxicilina tem resistência alta entre as E. coli e não é recomendada como tratamento empírico."
+    },
+    "macete": {
+      "frase": "Nitrofurantoína é o *bombeiro do bairro*: bexiga sim, rim não",
+      "apoio": "Pegadinha de prova: O NBME dá cistite simples e oferece ciprofloxacino; guarde a fluoroquinolona e lembre que nitrofurantoína não trata pielonefrite nem funciona bem com filtração renal muito baixa.",
+      "fala": "Helicóptero para cistite? Isso é buscar pão na esquina de jatinho, meu bem."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o antibiótico mais prescrito da vida de quem atende pronto-socorro. A Tia Meia-Vida só despacha um entregador; leia a vinheta para saber se o caso é simples ou complicado.",
+    "palavras_chave": [
+      "dysuria",
+      "urinary tract infection",
+      "antibiotics",
+      "outpatient care"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Infectologia",
+      "#UTI",
+      "#SextouNaFarmacia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cistite simples, sem gravidez nem alergia: qual antibiótico?"
+  },
+  "exemplo": false
+}

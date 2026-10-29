@@ -1,0 +1,100 @@
+{
+  "dia": 268,
+  "data": "2027-07-27",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Derrame pleural",
+  "conceito": "Light criteria: exudate if pleural/serum protein above 0.5 or pleural/serum LDH above 0.6",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-28",
+  "tom": null,
+  "gancho": "Derrame pleural no plantão: *é da casa ou é penetra?*",
+  "gancho_apoio": "Light é a única conta da Prometric que você faz sem chorar e confere chorando.",
+  "imagem": {
+    "arquivo": "dia-268.png",
+    "cena": "Três da manhã num farol à beira-mar: Dona Térmica faz contas num guardanapo de papel à luz do farol, com três copos sobre uma pedra. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica faz contas num guardanapo à luz do farol, ao lado de três copos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-268-macete.png",
+    "cena": "Callback: o facho do farol agora tem três lâmpadas; sobre o copo turvo as três acendem e sobre o transparente ficam apagadas, e Dona Térmica circula a resposta no guardanapo. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "As três lâmpadas acendem sobre o copo turvo e ficam apagadas sobre o transparente"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with heart failure has had 5 days of fever, productive cough, and right pleuritic chest pain. Thoracentesis yields cloudy fluid. Pleural protein is 4.0 g/dL (serum 6.2 g/dL), and pleural LDH is 310 U/L (serum 250 U/L; upper limit of normal, 220 U/L).",
+    "pergunta": "Which is the most likely cause of the effusion?",
+    "alternativas": {
+      "A": {
+        "texto": "Transudate from heart failure",
+        "quiz": "HF transudate"
+      },
+      "B": {
+        "texto": "Exudate from a parapneumonic process",
+        "quiz": "Parapneumonic exudate"
+      },
+      "C": {
+        "texto": "Transudate from hypoalbuminemia",
+        "quiz": "Hypoalbuminemia transudate"
+      },
+      "D": {
+        "texto": "Transudate from a hepatic hydrothorax",
+        "quiz": "Hepatic hydrothorax"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Light*: três luzes acesas, exsudato",
+    "certa": [
+      "Pelos *Light criteria*, o derrame é exsudato quando pelo menos um critério está presente: proteína pleural/sérica acima de 0,5, LDH pleural/sérico acima de 0,6, ou LDH do líquido maior que 2/3 do teto de referência do LDH no sangue. Aqui a proteína dá 0,65, o LDH dá 1,24 e 310 passa de 147: os três estão positivos. Febre, tosse produtiva e dor pleurítica apontam para *parapneumonic effusion*, em que a inflamação aumenta a permeabilidade capilar."
+    ],
+    "termos": [
+      "Light criteria",
+      "exudate",
+      "parapneumonic effusion",
+      "serum-pleural albumin gradient"
+    ],
+    "erradas": {
+      "A": "Insuficiência cardíaca dá transudato por aumento da pressão hidrostática; o paciente tem IC, mas o líquido não se comporta como transudato.",
+      "C": "Hipoalbuminemia (nefrose, desnutrição) dá transudato por queda da pressão oncótica.",
+      "D": "O hidrotórax hepático é ascite que passa pelo diafragma e também é transudato."
+    },
+    "macete": {
+      "frase": "Light: *basta uma luz acesa* para ser exsudato",
+      "apoio": "O critério de Light já vem com o nome certo: basta uma luz acender para ser exsudato. Proteína pleural/sérica acima de 0,5, LDH pleural/sérica acima de 0,6 ou LDH pleural acima de dois terços do limite superior. Aqui acendem as três; com febre e tosse, é parapneumônico, mesmo no paciente com insuficiência cardíaca.",
+      "fala": "Já vi esse caso às 3 da manhã. A conta coube no guardanapo."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Dona Térmica. Um paciente com doença crônica, uma queixa nova e uma punção pleural com números na vinheta. Calcule antes de comentar.",
+    "palavras_chave": [
+      "pleural effusion",
+      "thoracentesis",
+      "pleural fluid analysis",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Pneumologia",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Proteína 4,0/6,2 e LDH 310/250: qual é a causa do derrame?"
+  },
+  "reel": null,
+  "exemplo": false
+}

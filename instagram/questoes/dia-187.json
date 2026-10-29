@@ -1,0 +1,87 @@
+{
+  "dia": 187,
+  "data": "2027-05-07",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Varfarina",
+  "conceito": "Warfarin: inhibits vitamin K epoxide reductase, so factors II, VII, IX, X and proteins C and S fall",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-08",
+  "tom": null,
+  "gancho": "Sextou com a Capitã: anticoagulante novo na receita e *uma complicação que cai em prova*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-187.png",
+    "cena": "Capitã Plaqueta, no meio de um cruzamento, segura uma receita nova contra a luz e franze a testa; em cima do semáforo, uma ampulheta pequena. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta franze a testa para uma receita nova no meio do cruzamento"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-187-macete.png",
+    "cena": "Callback: um posto de recarga ao lado de um canteiro de couve (a vitamina K) tem a tomada travada por uma chave inglesa (a varfarina), e a Capitã aponta a viatura C, a primeira a apagar. Fundo limpo.",
+    "alt": "A tomada do posto de recarga travada por uma chave inglesa; a viatura C apaga primeiro"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with a new mechanical mitral valve starts an oral anticoagulant. On day 2, he develops painful dark purple lesions on his thigh that become necrotic. Further testing shows heterozygous protein C deficiency.",
+    "pergunta": "This drug acts by inhibiting which enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Hepatic gamma-glutamyl carboxylase",
+        "quiz": "Gamma-glutamyl carboxylase"
+      },
+      "B": {
+        "texto": "Thrombin",
+        "quiz": "Thrombin"
+      },
+      "C": {
+        "texto": "Vitamin K epoxide reductase",
+        "quiz": "VKOR (epoxide reductase)"
+      },
+      "D": {
+        "texto": "Cyclooxygenase-1",
+        "quiz": "COX-1"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Varfarina tira a *vitamina K* da tomada",
+    "certa": [
+      "A *warfarin* inibe a *vitamin K epoxide reductase* (VKORC1), que recicla a vitamina K. Sem ela, o fígado não faz a gama-carboxilação de II, VII, IX e X nem das *proteins C and S*. A proteína C tem meia-vida curta e cai primeiro, o que cria um estado pró-trombótico transitório (*warfarin skin necrosis*), sobretudo em quem já tem deficiência dela."
+    ],
+    "termos": [
+      "warfarin",
+      "vitamin K epoxide reductase",
+      "protein C",
+      "warfarin skin necrosis"
+    ],
+    "erradas": {
+      "A": "A gama-glutamil carboxilase é a enzima que usa a vitamina K reduzida na carboxilação de II, VII, IX, X, proteína C e proteína S. A varfarina não a bloqueia diretamente: ela trava a epóxido redutase, que recicla a vitamina K, e a carboxilase fica sem combustível.",
+      "B": "Inibir a trombina diretamente é o mecanismo da dabigatrana, também contraindicada em valva mecânica, e da argatrobana, de uso venoso na trombocitopenia induzida por heparina.",
+      "D": "Inibir a COX-1 é o efeito da aspirina sobre a plaqueta, que não reduz os fatores dependentes de vitamina K."
+    },
+    "macete": {
+      "frase": "A varfarina tira da tomada o *recarregador da vitamina K*. Sem carga, vão parando os carros *2, 7, 9 e 10* e as viaturas *C e S*. A *viatura C* tem a bateria mais curta e apaga primeiro, junto com o carro 7: por isso, no começo, faz-se a *ponte com heparina*.",
+      "apoio": "O NBME pergunta qual fator cai primeiro (fator VII, por isso o INR sobe antes) e associa necrose de pele nos primeiros dias à queda precoce da proteína C; valva mecânica pede varfarina, não DOAC.",
+      "fala": "Parou, colou, coagulou. Menos a viatura C, que tem bateria de celular de 2016."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta. Um paciente começa um anticoagulante oral e aparece uma complicação, descrita na vinheta. A pergunta é qual enzima o remédio bloqueia, e a vinheta tem as pistas para descobrir quem ele é.",
+    "palavras_chave": [
+      "anticoagulation",
+      "pharmacology",
+      "adverse effect",
+      "Step 1"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Necrose de pele no 2º dia do anticoagulante: qual enzima?"
+  },
+  "exemplo": false
+}

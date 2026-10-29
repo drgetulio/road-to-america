@@ -1,0 +1,94 @@
+{
+  "dia": 54,
+  "data": "2026-12-25",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Alopurinol e azatioprina",
+  "conceito": "Allopurinol: xanthine oxidase inhibition raises azathioprine and 6-MP toxicity",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Natal: a gota do Papai Noel (personagem fictício).",
+  "remix_de": null,
+  "explicacao_em": "2026-12-26",
+  "gancho": "Papai Noel mudou a receita e esqueceu de avisar a *farmácia*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Tia Meia-Vida numa farmácia de interior decorada para o Natal; pela vitrine se vê um trenó vermelho estacionado, e no balcão há um frasco novo ao lado de uma travessa de pavê.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida numa farmácia decorada para o Natal; pela vitrine, um trenó, e no balcão um frasco novo e uma travessa de pavê.",
+    "arquivo": "dia-054.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o cadeado está na porta de saída de uma salinha; dentro, muitos duendezinhos em forma de comprimido se amontoam sem conseguir sair, e a Tia Meia-Vida, com uma tesoura, corta um comprimido grande em quatro pedaços.",
+    "alt": "O alopurinol trancou a saída do 6-MP",
+    "arquivo": "dia-054-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man with a kidney transplant takes azathioprine and tacrolimus. After recurrent gout flares, allopurinol is started. Three weeks later, he has fever and mouth ulcers. His leukocyte count has fallen to 1,200/mm3 and his platelets to 60,000/mm3. There is no rash, and liver tests are normal.",
+    "pergunta": "Which mechanism best explains this adverse effect?",
+    "alternativas": {
+      "A": {
+        "texto": "HLA-B*58:01-associated hypersensitivity reaction",
+        "quiz": "HLA-B*58:01 reaction"
+      },
+      "B": {
+        "texto": "CYP3A4 inhibition that raises tacrolimus levels",
+        "quiz": "Tacrolimus via CYP3A4"
+      },
+      "C": {
+        "texto": "Xanthine oxidase inhibition sparing 6-MP",
+        "quiz": "XO inhibition"
+      },
+      "D": {
+        "texto": "Inhibition of thiopurine methyltransferase activity",
+        "quiz": "TPMT inhibition"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "O alopurinol *trancou a saída* do 6-MP",
+    "certa": [
+      "A azatioprina vira *6-mercaptopurine*, que é inativada em parte pela *xanthine oxidase*. O *allopurinol* bloqueia essa enzima, o 6-MP se acumula e a medula sofre: neutropenia, plaquetopenia e mucosite. Se for preciso usar os dois, a dose de azatioprina cai para um quarto a um terço, com hemograma seriado; o febuxostate tem a mesma interação."
+    ],
+    "termos": [
+      "allopurinol",
+      "xanthine oxidase",
+      "azathioprine",
+      "6-mercaptopurine"
+    ],
+    "erradas": {
+      "A": "A reação ligada ao HLA-B*58:01 é DRESS ou Stevens-Johnson, com rash, eosinofilia e hepatite, ausentes aqui.",
+      "B": "O alopurinol não é inibidor relevante da CYP3A4; tacrolimus alto daria nefrotoxicidade e tremor, não aplasia.",
+      "D": "A TPMT é a outra via de inativação, e sua deficiência é genética; o alopurinol não a inibe."
+    },
+    "macete": {
+      "frase": "Alopurinol *tranca a porta* de saída do 6-MP: a xantina oxidase sai de férias de Natal e o remédio lota a medula. A azatioprina cai para um quarto.",
+      "apoio": "Pegadinha de prova: O NBME costuma esconder a azatioprina ou a mercaptopurina na lista de remédios de um transplantado ou de um paciente com doença inflamatória intestinal que começa alopurinol.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Natal na farmácia: um transplantado, um remédio novo e uma interação que a Tia Meia-Vida precisa explicar antes que o tio do pavê pergunte se o remédio novo é pavê ou pacumê.",
+    "palavras_chave": [
+      "kidney transplant",
+      "Christmas",
+      "drug interaction",
+      "immunosuppression"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Azatioprina com alopurinol e leucócitos a 1.200: qual mecanismo?"
+  },
+  "exemplo": false
+}

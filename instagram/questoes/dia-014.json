@@ -1,0 +1,100 @@
+{
+  "dia": 14,
+  "data": "2026-11-15",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Deficiência de 21-hidroxilase (dia 10), Ponto de corte da HbA1c (dia 13)",
+  "conceito": "Remix: Bruton agammaglobulinemia + 21-hydroxylase deficiency + Lowering a diagnostic cutoff (HbA1c)",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": [
+    8,
+    10,
+    13
+  ],
+  "explicacao_em": "2026-11-16",
+  "tom": null,
+  "gancho": "Teste do pezinho alterado: o Viés pegou a *calculadora*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-014.png",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, segura uma calculadora na porta de uma maternidade de desenho, ao lado de um varal de pezinhos de papel em branco. Um vinil pequeno pende do varal como enfeite.",
+    "foco": "50% 35%",
+    "alt": "O Viés segura uma calculadora na porta de uma maternidade, ao lado de um varal de pezinhos de papel."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-014-macete.png",
+    "cena": "Callback do varal: o Viés mostra a conta na calculadora, e uma fila comprida de pezinhos de papel lisos, sem desenho, volta para colher de novo; só um pezinho, no meio deles, tem um forninho apagado desenhado.",
+    "alt": "Doença rara, positivo desconfiado"
+  },
+  "questao": {
+    "vinheta": "A newborn screening program measures 17-hydroxyprogesterone to detect classic congenital adrenal hyperplasia, which affects about 1 in 15,000 newborns. The assay has 99% sensitivity and 99% specificity. A well-appearing term infant has an abnormal screen; serum electrolytes are pending.",
+    "pergunta": "Which statement about this result is most accurate?",
+    "alternativas": {
+      "A": {
+        "texto": "The positive predictive value is 99%",
+        "quiz": "PPV is 99%"
+      },
+      "B": {
+        "texto": "The infant most likely has 21-hydroxylase deficiency",
+        "quiz": "Has 21-OH deficiency",
+        "dia": 10
+      },
+      "C": {
+        "texto": "A lower cutoff would raise the positive predictive value",
+        "quiz": "Lower cutoff, higher PPV",
+        "dia": 13
+      },
+      "D": {
+        "texto": "Most abnormal screens like this are false positives",
+        "quiz": "Most are false positives"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Doença rara, positivo desconfiado",
+    "certa": [
+      "A hiperplasia adrenal congênita clássica aparece em cerca de 1 de cada 15.000 bebês. Em 15.000 testes, o pezinho acha o único doente, mas 1% dos outros 14.999, perto de 150 bebês, também sai alterado. O valor preditivo positivo (*positive predictive value*) fica abaixo de 1%: quase todo positivo é *false positive*. Na doença rara, especificidade alta não basta, e o pezinho alterado é só o primeiro passo antes da 17-OHP sérica e dos eletrólitos."
+    ],
+    "termos": [
+      "positive predictive value",
+      "false positive",
+      "newborn screening",
+      "pretest probability"
+    ],
+    "erradas": {
+      "A": "VPP de 99% confunde valor preditivo com especificidade; o VPP depende de quantos doentes existem na população, e aqui são muito poucos.",
+      "B": "Dia 10: a deficiência de 21-hidroxilase é a causa clássica de 17-OHP alta, mas, com a doença tão rara, um positivo isolado ainda é provavelmente falso.",
+      "C": "Dia 13: baixar o corte aumenta a sensibilidade e os falsos positivos, então o VPP cai, e não sobe."
+    },
+    "macete": {
+      "frase": "Doença rara, positivo *desconfiado*: com 99% de especificidade, quase todo pezinho alterado ainda é alarme falso.",
+      "apoio": "Pegadinha de prova: O NBME dá sensibilidade e especificidade altas e esconde a frequência da doença no meio da vinheta; sem ela, ninguém sabe o VPP.",
+      "fala": "Cento e cinquenta alarmes para um incêndio. Eu adoro doença rara."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando o forno 21 da padaria (dia 10) e a malha fina do ponto de corte (dia 13), mais um intruso que não apareceu em nenhum dos dois. O bônus do macete traz a chave perdida do Bruton (dia 8). Bioestatística de domingo: a única conta que dói menos que a taxa de inscrição do Step.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RevisaoEspacada",
+      "#SpacedRepetition",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pezinho alterado numa doença de 1 em 15.000: o que concluir?"
+  },
+  "exemplo": false
+}

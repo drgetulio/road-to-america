@@ -1,0 +1,96 @@
+{
+  "dia": 327,
+  "data": "2027-09-24",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Colírios para glaucoma",
+  "conceito": "Glaucoma drops: timolol reduces aqueous production, latanoprost increases uveoscleral outflow",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-25",
+  "tom": null,
+  "gancho": "Pingou no olho e *a cidade inteira ficou sabendo*",
+  "gancho_apoio": "A Tia Meia-Vida tem dois colírios no balcão, e um deles fofoca mais que cidade pequena.",
+  "imagem": {
+    "arquivo": "dia-327.png",
+    "cena": "Tia Meia-Vida atrás do balcão, com dois conta-gotas nas mãos, olha um aquário redondo em forma de olho quase transbordando; o aquário tem uma torneira em cima e um ralo pequeno na lateral.",
+    "foco": "50% 35%",
+    "alt": "Pingou no olho e a cidade inteira ficou sabendo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-327-macete.png",
+    "cena": "Callback: a Tia Meia-Vida fecha a torneira de cima com um conta-gotas e abre o ralo lateral com o outro, e o nível da água desce; um pombo-correio sai do aquário com um bilhete em branco e voa até um metrônomo em forma de coração no coreto, que passa a balançar devagar.",
+    "foco": "50% 45%",
+    "alt": "Timolol fecha a torneira, latanoprost abre o ralo"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man with primary open-angle glaucoma uses latanoprost eye drops nightly. A second drop is added because intraocular pressure remains above target. Three weeks later, his resting pulse is 52/min, down from 74/min, and he reports new exertional fatigue. Pupils are 4 mm and equal.",
+    "pergunta": "The added drug most likely lowers intraocular pressure by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "β-blockade reducing aqueous production",
+        "quiz": "β-blockade, less aqueous"
+      },
+      "B": {
+        "texto": "FP receptor agonism increasing uveoscleral outflow",
+        "quiz": "FP agonism, more outflow"
+      },
+      "C": {
+        "texto": "Muscarinic contraction of the ciliary muscle",
+        "quiz": "Muscarinic ciliary contraction"
+      },
+      "D": {
+        "texto": "Carbonic anhydrase inhibition reducing aqueous production",
+        "quiz": "Carbonic anhydrase inhibition"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Timolol *fecha a torneira*, latanoprost *abre o ralo*",
+    "certa": [
+      "Bradicardia e cansaço novos depois de um colírio para glaucoma apontam para o *timolol*, beta-bloqueador tópico absorvido pela mucosa nasal (via ducto lacrimal) sem passar pelo fígado. Ele bloqueia receptores beta no epitélio ciliar e reduz a produção do *aqueous humor*. O *latanoprost*, análogo de prostaglandina F2α que ele já usava, age do outro lado: aumenta o *uveoscleral outflow*."
+    ],
+    "termos": [
+      "timolol",
+      "aqueous humor production",
+      "latanoprost",
+      "uveoscleral outflow"
+    ],
+    "erradas": {
+      "B": "Aumentar a saída uveoscleral é o mecanismo do *latanoprost*, que ele já usava; o efeito típico é escurecer a íris e alongar os cílios.",
+      "C": "Contrair o músculo ciliar é o mecanismo da *pilocarpina*, que dá miose e visão turva; aqui as pupilas estão normais.",
+      "D": "A *inibição da anidrase carbônica* (dorzolamida) também reduz a produção do humor aquoso, mas não causa bradicardia."
+    },
+    "macete": {
+      "frase": "*Timolol fecha a Torneira; Latanoprost Libera o raLo*, e o recado do timolol chega ao coração",
+      "apoio": "O timolol reduz a produção do humor aquoso; o latanoprost abre a drenagem uveoescleral. O colírio cai no ducto nasolacrimal, é absorvido sem passar pelo fígado e chega ao coração: bradicardia, cansaço e broncoespasmo. Igual fofoca de cidade pequena, chega no coração antes de você. Apertar o canto do olho por um minuto diminui o recado.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. A cidade inteira já sabe."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia: um colírio novo entrou na receita e, três semanas depois, a cidade inteira ficou sabendo. Quatro mecanismos de colírio, dois que fecham a torneira e dois que abrem o ralo; a vinheta conta o efeito que vazou do olho.",
+    "palavras_chave": [
+      "ophthalmology",
+      "eye drops",
+      "adverse effects",
+      "pharmacology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Colírio novo no glaucoma e pulso caiu de 74 para 52: qual o mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

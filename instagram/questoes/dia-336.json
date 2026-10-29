@@ -1,0 +1,106 @@
+{
+  "dia": 336,
+  "data": "2027-10-03",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hepatite E (dia 281), Gangrena gasosa (dia 309), Giardíase (dia 330)",
+  "conceito": "Remix: Hepatitis E + Clostridium perfringens alpha toxin + Giardia lamblia",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": [
+    281,
+    309,
+    330
+  ],
+  "explicacao_em": "2027-10-04",
+  "tom": null,
+  "gancho": "Almoço de domingo para 40 pessoas e *o garçom recebeu reclamação no dia seguinte*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
+  "imagem": {
+    "arquivo": "dia-336.png",
+    "cena": "O Garçom Espetinho, num salão de festas de bairro depois de um almoço comunitário, recolhe pratos de uma mesa comprida; num carrinho, quatro travessas tampadas; a plaquinha verde e vermelha no avental; num canto, um vinil pequeno encostado.",
+    "foco": "50% 35%",
+    "alt": "Garçom recolhe pratos depois de um almoço comunitário"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-336-macete.png",
+    "cena": "Callback: numa cozinha de salão, uma panela grande de ensopado esfria devagar no fogão desligado; esporos pequenos de capacete, que sobreviveram ao fogo, saem da casca e se multiplicam no caldo morno; o Garçom Espetinho vira a plaquinha para o vermelho diante da panela e mostra um termômetro de cozinha parado na faixa morna; o vinil continua no canto.",
+    "foco": "50% 45%",
+    "alt": "Ensopado mantido morno e diarreia em 10 horas: C. perfringens"
+  },
+  "questao": {
+    "vinheta": "Ten hours after a community lunch, 18 of 40 guests develop abdominal cramps and watery diarrhea; vomiting and fever are uncommon, and symptoms resolve within 24 hours. The main dish was a beef stew cooked the day before, cooled slowly, and kept warm for hours before serving.",
+    "pergunta": "Which organism most likely caused this outbreak?",
+    "alternativas": {
+      "A": {
+        "texto": "Staphylococcus aureus",
+        "quiz": "Staphylococcus aureus"
+      },
+      "B": {
+        "texto": "Giardia lamblia",
+        "quiz": "Giardia lamblia",
+        "dia": 330
+      },
+      "C": {
+        "texto": "Clostridium perfringens",
+        "quiz": "Clostridium perfringens",
+        "dia": 309
+      },
+      "D": {
+        "texto": "Enterotoxigenic E. coli",
+        "quiz": "Enterotoxigenic E. coli"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Ensopado mantido morno e diarreia em 10 horas: *C. perfringens*",
+    "certa": [
+      "Cólica e diarreia aquosa cerca de 8 a 16 horas depois de comer carne ou ensopado preparado em grande quantidade, resfriado devagar e mantido morno, com pouco vômito, sem febre e cura em um dia, é a intoxicação alimentar por *Clostridium perfringens* tipo A, o mesmo germe da gangrena gasosa (dia 309). Os *spores* resistem ao cozimento e germinam enquanto a comida esfria devagar; no intestino, as bactérias esporulam e liberam a *enterotoxin*, que abre poros no epitélio. O tratamento é hidratação."
+    ],
+    "termos": [
+      "Clostridium perfringens type A",
+      "heat-resistant spores",
+      "enterotoxin",
+      "8 to 16 hour incubation"
+    ],
+    "erradas": {
+      "A": "O S. aureus deixa a toxina pronta na comida, e o quadro começa em 1 a 6 horas, com vômito intenso.",
+      "B": "A Giardia (dia 330) leva 1 a 2 semanas para dar sintomas e causa diarreia gordurosa que dura semanas, não um surto de um dia.",
+      "D": "A E. coli enterotoxigênica é a diarreia do viajante, com incubação de 1 a 3 dias, ligada a água e comida contaminadas em viagem."
+    },
+    "macete": {
+      "frase": "*Ensopado de véspera mantido morno*: o esporo sobrevive ao fogo e a diarreia chega no jantar",
+      "apoio": "O mesmo C. perfringens que destrói músculo na ferida suja (dia 309) vira, na panela morna, uma diarreia de um dia só. Toxina já pronta na comida (S. aureus, B. cereus da forma com vômito) começa em poucas horas; germe que ainda precisa agir no intestino demora mais. Bônus: a hepatite E (dia 281) também vem da água e da comida, mas leva semanas e dá icterícia.",
+      "fala": "Vai uma conduta aí, doutor? Hoje a conduta é soro e ensopado fresco."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: hepatite E (dia 281), gangrena gasosa (dia 309) e giardíase (dia 330) voltaram, e o Garçom Espetinho serviu o almoço da comunidade. Quatro suspeitos; o relógio entre a comida e os sintomas está na vinheta, e é ele que decide.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ensopado de véspera e diarreia 10 horas depois em 18 convidados: qual germe?"
+  },
+  "reel": null,
+  "exemplo": false
+}

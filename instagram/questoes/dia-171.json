@@ -1,0 +1,88 @@
+{
+  "dia": 171,
+  "data": "2027-04-21",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Bloqueio do nervo alveolar inferior",
+  "conceito": "Inferior alveolar nerve: branch of V3 (mandibular), numbs lower teeth and lip",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Tiradentes (21/4): homenagem bem-humorada aos dentistas.",
+  "remix_de": null,
+  "explicacao_em": "2027-04-22",
+  "tom": null,
+  "gancho": "Feriado de Tiradentes: qual *fio* o dentista desligou?",
+  "gancho_apoio": "Uma homenagem aos dentistas, que cuidam do nosso sorriso, e ao trigêmeo, que faz a parte elétrica.",
+  "imagem": {
+    "arquivo": "dia-171.png",
+    "cena": "Um dente molar sorridente, de babador, está sentado numa cadeira de dentista como num trono, e Seu Allen examina um quadro de luz com três disjuntores, todos ligados. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um molar sorridente de babador na cadeira de dentista; Seu Allen examina um quadro com três disjuntores ligados."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-171-macete.png",
+    "cena": "Callback: num prédio de três andares em forma de perfil de rosto, só o térreo (o queixo) está com a luz apagada, e ali o dente dorme de pijama, enquanto Seu Allen desliga o terceiro disjuntor. Fundo limpo.",
+    "alt": "No prédio em forma de rosto, só o térreo está apagado, com o dente dormindo; Seu Allen desliga o terceiro disjuntor."
+  },
+  "questao": {
+    "vinheta": "Before extracting a lower molar, a dentist injects local anesthetic near the mandibular foramen. Minutes later, the patient has numbness of the lower teeth on that side and of the ipsilateral lower lip and chin. Sensation of the upper teeth and cheek is normal.",
+    "pergunta": "The anesthetized nerve is a branch of which nerve?",
+    "alternativas": {
+      "A": {
+        "texto": "Ophthalmic nerve (V1)",
+        "quiz": "Ophthalmic (V1)"
+      },
+      "B": {
+        "texto": "Maxillary nerve (V2)",
+        "quiz": "Maxillary (V2)"
+      },
+      "C": {
+        "texto": "Mandibular nerve (V3)",
+        "quiz": "Mandibular (V3)"
+      },
+      "D": {
+        "texto": "Facial nerve (CN VII)",
+        "quiz": "Facial (CN VII)"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dente de baixo é do *V3*",
+    "certa": [
+      "O *inferior alveolar nerve* é ramo do *mandibular nerve (V3)*: entra no forame mandibular, inerva os dentes de baixo e sai pelo forame mentual como *mental nerve*, para o lábio inferior e o queixo. O V3 sai do crânio pelo *foramen ovale* e é o único ramo do trigêmeo com fibras motoras, para os músculos da mastigação."
+    ],
+    "termos": [
+      "inferior alveolar nerve",
+      "mandibular nerve V3",
+      "foramen ovale",
+      "mental nerve"
+    ],
+    "erradas": {
+      "A": "O V1 inerva testa, couro cabeludo da frente, pálpebra superior e córnea.",
+      "B": "O V2 inerva bochecha, lábio superior e dentes de cima, pelos nervos alveolares superiores.",
+      "D": "O facial é motor da mímica e leva o paladar dos dois terços anteriores da língua, mas não a sensibilidade dos dentes."
+    },
+    "macete": {
+      "frase": "Rosto em *prédio de três andares*: V1 no último, V2 no meio, *V3 no térreo* (queixo e dentes de baixo)",
+      "apoio": "Saídas do crânio: Standing Room Only (fissura orbital Superior, Rotundo, Oval). O V3 sai pelo oval e é o único ramo com fibra motora.",
+      "fala": "Sobrou peça? Não: o dentista desligou só o disjuntor do térreo."
+    }
+  },
+  "legenda": {
+    "contexto": "21 de abril é feriado de Tiradentes, e a questão é uma homenagem aos dentistas. Onde foi a anestesia e o que ficou dormente estão na vinheta, e três ramos do trigêmeo disputam com um intruso.",
+    "palavras_chave": [
+      "dental anesthesia",
+      "mandibular foramen",
+      "lower lip numbness",
+      "head and neck anatomy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Anestesia no forame mandibular dormiu dentes de baixo e lábio: qual nervo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,94 @@
+{
+  "dia": 34,
+  "data": "2026-12-05",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Consentimento informado",
+  "conceito": "Informed consent: diagnosis, risks, benefits and alternatives, including no treatment",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-06",
+  "gancho": "Seu Néfron recebeu um formulário *assinado* e mesmo assim não carimbou",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com um formulário assinado na mão e o carimbo parado no ar. Na mesa, um quebra-cabeça com uma peça faltando; na parede, uma pequena tabela 2x2 em branco.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron segura um formulário assinado com o carimbo parado no ar; na mesa, um quebra-cabeça com uma peça faltando.",
+    "arquivo": "dia-034.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: a tela do GPS agora mostra três rotas, uma delas voltando para a casinha; a peça que faltava se encaixa no quebra-cabeça com formato de placa de bifurcação, e Seu Néfron finalmente carimba, satisfeito.",
+    "alt": "Sem alternativas, não é consentimento",
+    "arquivo": "dia-034-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old woman with recurrent biliary colic is scheduled for elective laparoscopic cholecystectomy. The surgeon explains her diagnosis, the planned procedure, its expected benefits, and the risks of bleeding, infection, and bile duct injury. She has decision-making capacity and signs the form.",
+    "pergunta": "Which additional element was required for valid informed consent?",
+    "alternativas": {
+      "A": {
+        "texto": "An estimate of total hospital costs",
+        "quiz": "Hospital costs"
+      },
+      "B": {
+        "texto": "Alternatives to surgery, including no treatment",
+        "quiz": "Alternatives"
+      },
+      "C": {
+        "texto": "A witness signature from a family member",
+        "quiz": "Family signature"
+      },
+      "D": {
+        "texto": "Approval from the hospital ethics committee first",
+        "quiz": "Ethics committee"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem *alternativas*, não é consentimento",
+    "certa": [
+      "O *informed consent* válido tem diagnóstico, natureza do procedimento, riscos, benefícios e *alternatives*, incluindo a opção de não tratar e o que se espera dela. A paciente só decide de verdade se sabe o que acontece em cada caminho. Capacidade de decisão e ausência de coerção completam o pacote; a assinatura apenas registra a conversa."
+    ],
+    "termos": [
+      "informed consent",
+      "alternatives",
+      "decision-making capacity",
+      "right to refuse"
+    ],
+    "erradas": {
+      "A": "Custo pode ser discutido, mas não faz parte dos elementos obrigatórios do consentimento.",
+      "C": "Paciente adulta e capaz decide sozinha; família não assina no lugar dela nem precisa testemunhar.",
+      "D": "Cirurgia eletiva em adulta capaz não passa por comitê de ética; o comitê entra em conflitos e dilemas."
+    },
+    "macete": {
+      "frase": "Consentimento sem *alternativa* é GPS com rota única: até o Seu Néfron, que ama papel assinado, se recusa a carimbar.",
+      "apoio": "Pegadinha de prova: O NBME esconde o erro na alternativa que esquece a opção de não tratar, ou oferece a assinatura da família como se fosse exigida para adulto capaz.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com o Seu Néfron, que ama papel assinado. Hoje ele travou o carimbo num termo de consentimento, e a pergunta é o que faltou. A prova cobra a lista completa; o carimbo também.",
+    "palavras_chave": [
+      "informed consent",
+      "elective procedure",
+      "medical ethics",
+      "communication"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diagnóstico, riscos e benefícios explicados: o que faltou no termo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,12 @@
+{
+ "descricao": "Números reais da enquete do story das 12h06 (porcentagem de cada letra), um objeto por dia de questão usada num Reel de Resultado. Preencha na sexta, antes de renderizar, e rode node instagram/ferramentas/gerar-reels-semanais.mjs. Dia sem números sai no plano B.",
+ "exemplo": {
+  "23": {
+   "A": 41,
+   "B": 33,
+   "C": 18,
+   "D": 8
+  }
+ },
+ "dias": {}
+}

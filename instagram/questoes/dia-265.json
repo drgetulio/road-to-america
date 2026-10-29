@@ -1,0 +1,99 @@
+{
+  "dia": 265,
+  "data": "2027-07-24",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "HIPAA",
+  "conceito": "HIPAA minimum necessary rule: share only what the purpose requires",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-25",
+  "tom": null,
+  "gancho": "Sábado Sem Viés: *um pedido do plano de saúde* e um prontuário cheio de histórias",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-265.png",
+    "cena": "Um entregador de bicicleta para na porta de uma padaria, em dúvida diante de um balcão cheio de pacotes de tamanhos diferentes; o Viés espia de trás de uma tabela 2x2 na parede. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O entregador hesita diante de pacotes de tamanhos diferentes; o Viés espia"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-265-macete.png",
+    "cena": "O mesmo entregador pedala leve, levando só um pão francês num saquinho de papel até a janelinha. O arquivo do fundo está fechado com cadeado, e o Viés ficou enrolado nas cordas que sobraram, emburrado.",
+    "foco": "50% 40%",
+    "alt": "HIPAA: o mínimo necessário"
+  },
+  "questao": {
+    "vinheta": "A health insurer requests documentation to process a claim for a patient's recent knee arthroscopy. The patient's chart also contains notes about depression treatment and an HIV diagnosis. The office staff member preparing the records asks the physician what to send.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "Send the complete medical record",
+        "quiz": "Entire medical record"
+      },
+      "B": {
+        "texto": "Refuse until a court order is obtained",
+        "quiz": "Wait for court order"
+      },
+      "C": {
+        "texto": "Send the full records with the patient's name removed",
+        "quiz": "Remove the name only"
+      },
+      "D": {
+        "texto": "Send only the records related to the knee procedure",
+        "quiz": "Only the knee records"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "HIPAA: o *mínimo necessário*",
+    "certa": [
+      "Pela *HIPAA*, informações podem ser compartilhadas sem autorização para tratamento, pagamento e operações de saúde, mas, fora do tratamento, vale a *minimum necessary rule*: só vai o que o objetivo exige. Para processar o pagamento da artroscopia, o plano precisa da documentação do joelho, e não dos registros de depressão nem do diagnóstico de HIV. Leis estaduais costumam dar proteção extra a saúde mental e HIV."
+    ],
+    "termos": [
+      "HIPAA",
+      "minimum necessary",
+      "treatment, payment and operations",
+      "protected health information"
+    ],
+    "erradas": {
+      "A": "Mandar o prontuário inteiro viola a regra do mínimo necessário e expõe dados sensíveis sem motivo.",
+      "B": "Pagamento é uma finalidade permitida pela HIPAA; não precisa de ordem judicial.",
+      "C": "Tirar o nome impede o plano de processar a conta e não corrige o excesso de informação."
+    },
+    "macete": {
+      "frase": "*Pediu um pão, manda um pão*: minimum necessary",
+      "apoio": "Para pagamento, a HIPAA libera o mínimo necessário: só a parte do joelho. Mandar a padaria inteira, com o caderninho de fiado (depressão e HIV), seria expor o que o plano não pediu. Tirar o nome não resolve, e para pagamento não precisa de ordem judicial.",
+      "fala": "Se você não randomizou, eu entrei. Na Prometric revistam os seus bolsos; na HIPAA, você revista o prontuário antes de mandar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés na ética e na lei americana. O plano de saúde pede documentos, e a vinheta conta o motivo do pedido e o que mais existe no prontuário. O que você manda?",
+    "palavras_chave": [
+      "health insurance",
+      "medical records",
+      "privacy law",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#EticaMedica",
+      "#MedicinaNosEUA",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O plano pede os papéis da artroscopia: o que você manda?"
+  },
+  "reel": null,
+  "exemplo": false
+}

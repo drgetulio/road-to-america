@@ -1,0 +1,87 @@
+{
+  "dia": 193,
+  "data": "2027-05-13",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Síndrome de realimentação",
+  "conceito": "Anorexia nervosa refeeding syndrome: watch for hypophosphatemia",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-14",
+  "tom": null,
+  "gancho": "Rodízio de Quinta: o Mito *saiu da bioquímica* para dar plantão na clínica",
+  "gancho_apoio": "Tema sério, tratado com cuidado: aqui a gente fala de fisiologia.",
+  "imagem": {
+    "arquivo": "dia-193.png",
+    "cena": "Mito, de jaleco e café, confere com calma um painel de controle com luzinhas piscando numa sala de máquinas tranquila. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Mito confere com calma um painel de luzinhas piscando"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-193-macete.png",
+    "cena": "Callback: uma chave em forma de insulina abre a porta de uma usina em forma de célula, e as moedinhas de um pote correm para dentro, virando baterias acesas (o ATP); o pote fica vazio, e o Mito o reabastece devagar. Fundo limpo.",
+    "alt": "A chave de insulina abre a usina, as moedinhas correm para dentro e o Mito repõe o pote devagar"
+  },
+  "questao": {
+    "vinheta": "A 17-year-old girl with anorexia nervosa and a BMI of 14.5 kg/m2 is admitted for nutritional rehabilitation. On day 3 of rapidly increasing nasogastric feeds, she develops weakness, shortness of breath, confusion, and new ankle edema. Heart rate is 118/min.",
+    "pergunta": "In addition to slowing the feeds, which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Give an intravenous bolus of 5% dextrose",
+        "quiz": "IV 5% dextrose bolus"
+      },
+      "B": {
+        "texto": "Measure serum phosphate and replace it",
+        "quiz": "Replace phosphate"
+      },
+      "C": {
+        "texto": "Start oral olanzapine",
+        "quiz": "Start olanzapine"
+      },
+      "D": {
+        "texto": "Stop all nutrition for 72 hours",
+        "quiz": "Stop all feeds for 72 h"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Realimentação: o *fósforo* foge para dentro",
+    "certa": [
+      "Na *refeeding syndrome*, o carboidrato eleva a insulina, e a insulina puxa o fósforo (junto com potássio e magnésio) do sangue para o interior da célula. O fósforo é gasto para fazer ATP e 2,3-BPG, e a *hypophosphatemia* causa fraqueza muscular, insuficiência respiratória, insuficiência cardíaca, arritmia e confusão. Conduta: medir e repor fósforo, potássio e magnésio, dar tiamina e avançar a dieta devagar."
+    ],
+    "termos": [
+      "refeeding syndrome",
+      "hypophosphatemia",
+      "anorexia nervosa",
+      "thiamine"
+    ],
+    "erradas": {
+      "A": "Bolus de glicose aumenta a insulina e empurra ainda mais fósforo para dentro das células, piorando o quadro.",
+      "C": "A olanzapina pode ajudar no tratamento da anorexia, mas não corrige a emergência metabólica atual.",
+      "D": "Suspender toda a nutrição prolonga a desnutrição; a recomendação é reduzir a velocidade e corrigir os eletrólitos."
+    },
+    "macete": {
+      "frase": "Na realimentação, a insulina volta e a usina do Mito religa: o *fósforo* corre para dentro da célula para virar ATP, e o sangue fica *sem moeda*. Músculo fraco, respiração curta, coração cansado. Começa devagar, dosa e repõe fósforo, potássio e magnésio.",
+      "apoio": "O NBME descreve piora nos primeiros dias de dieta em paciente muito desnutrido e pergunta o eletrólito; a resposta é hipofosfatemia, com potássio e magnésio baixos também.",
+      "fala": "Fiquei muito tempo parado. Se o turno volta com tudo, eu gasto o cofrinho inteiro de fósforo."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na psiquiatria e na clínica, com o Mito de visita. Uma adolescente internada piora, e o que mudou e o que apareceu no exame estão na vinheta. Se algo neste tema te toca de perto, procurar ajuda é o primeiro passo.",
+    "palavras_chave": [
+      "inpatient care",
+      "adolescent",
+      "clinical deterioration",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "3º dia de dieta por sonda, fraqueza e edema: conduta?"
+  },
+  "exemplo": false
+}

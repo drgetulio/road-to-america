@@ -1,0 +1,95 @@
+{
+  "dia": 58,
+  "data": "2026-12-29",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Taquicardia instável",
+  "conceito": "Unstable tachyarrhythmia with a pulse: synchronized cardioversion",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-30",
+  "gancho": "Bateria de escola de samba às 3 da manhã, e o *tamborim* disparou",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma bateria de escola de samba com instrumentos personificados; um coração vermelho toca o tamborim rápido demais. Dona Térmica, de estetoscópio no pescoço e olhos de sono, está na frente da bateria como mestre, segurando o apito, e um surdo grande com um raio desenhado espera no canto. Na parede, um relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Bateria de escola de samba às 3 da manhã, e o tamborim disparou",
+    "arquivo": "dia-058.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: Dona Térmica levanta a mão, e o raio do surdo cai exatamente sobre a marca do tempo forte de uma pauta desenhada como um traçado de ECG; um contratempo logo depois fica marcado com um sinal vermelho de proibido, e o coração volta a tocar no ritmo.",
+    "alt": "Instável com pulso: choque sincronizado",
+    "arquivo": "dia-058-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 66-year-old man has palpitations and chest pressure for 30 minutes. He is confused and diaphoretic. Pulse is 180/min and regular, and BP is 74/40 mm Hg. A carotid pulse is palpable. ECG shows a regular wide-complex tachycardia.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Synchronized cardioversion",
+        "quiz": "Synchronized shock"
+      },
+      "B": {
+        "texto": "Unsynchronized defibrillation",
+        "quiz": "Unsynchronized shock"
+      },
+      "C": {
+        "texto": "IV amiodarone infusion",
+        "quiz": "IV amiodarone"
+      },
+      "D": {
+        "texto": "IV adenosine",
+        "quiz": "IV adenosine"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Instável com pulso: *choque sincronizado*",
+    "certa": [
+      "Taquiarritmia com hipotensão, confusão e dor no peito é *unstable tachyarrhythmia*, e com pulso presente a conduta é *synchronized cardioversion* imediata, com sedação se não atrasar. O sincronismo dispara o choque na onda R e evita cair na onda T, o que poderia gerar fibrilação ventricular (*R-on-T*). Remédio fica para o paciente estável."
+    ],
+    "termos": [
+      "unstable tachyarrhythmia",
+      "synchronized cardioversion",
+      "R-on-T phenomenon",
+      "ACLS"
+    ],
+    "erradas": {
+      "B": "Desfibrilação não sincronizada é para TV sem pulso e fibrilação ventricular; com pulso, o choque precisa ser sincronizado.",
+      "C": "Amiodarona entra na TV estável ou depois da cardioversão; em paciente instável, atrasa o tratamento.",
+      "D": "Adenosina só se considera em taquicardia regular estável, e não substitui o choque no paciente instável."
+    },
+    "macete": {
+      "frase": "Instável *com* pulso: o raio entra no tempo do surdo, sincronizado no QRS. *Sem* pulso, desfibrila sem esperar o compasso.",
+      "apoio": "Pegadinha de prova: O NBME dá o pulso palpável no meio da vinheta; quem não lê marca desfibrilação, e quem não vê a instabilidade marca amiodarona.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: um coração acelerado, um ECG e quatro condutas na mesa. A Dona Térmica já viu esse caso às 3 da manhã, e você vai ver no Prometric, com o cronômetro correndo.",
+    "palavras_chave": [
+      "tachycardia",
+      "ECG",
+      "emergency medicine",
+      "night shift"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#ACLS",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Taquicardia de QRS largo a 180 com PA 74/40 e pulso: qual conduta?"
+  },
+  "exemplo": false
+}

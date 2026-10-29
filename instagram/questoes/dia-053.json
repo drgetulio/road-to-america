@@ -1,0 +1,94 @@
+{
+  "dia": 53,
+  "data": "2026-12-24",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Placenta prévia",
+  "conceito": "Painless third-trimester bleeding: ultrasound before any digital exam (placenta previa)",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-25",
+  "gancho": "Véspera de Natal no plantão da obstetrícia, e a ceia vai *esperar*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Capitã Plaqueta, de colete e apito, está na porta de uma maternidade enfeitada com pisca-pisca de Natal, segurando uma prancheta. A plaquinha verde e vermelha está virada de lado num banquinho.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta, de prancheta na mão, na porta de uma maternidade enfeitada com pisca-pisca de Natal.",
+    "arquivo": "dia-053.png"
+  },
+  "imagem_macete": {
+    "cena": "Atrás da porta da maternidade, uma garagem: um carro redondo e macio estacionou bem na frente da saída. A Capitã vira a plaquinha para o vermelho diante do espeto com uma luva dobrada e para o verde diante do espeto com um transdutor de ultrassom, que projeta uma telinha mostrando onde o carro estacionou. Ninguém encosta no carro.",
+    "alt": "Primeiro a foto, depois o toque",
+    "arquivo": "dia-053-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old woman, gravida 3 para 2, at 32 weeks gestation has sudden painless bright red vaginal bleeding. She had two previous cesarean deliveries and no prenatal care. Pulse is 92/min and BP 116/72 mm Hg. The uterus is soft and nontender. Fetal heart rate tracing is reassuring.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Digital cervical examination to assess dilation",
+        "quiz": "Digital cervical exam"
+      },
+      "B": {
+        "texto": "Ultrasonography to locate the placenta",
+        "quiz": "Ultrasound"
+      },
+      "C": {
+        "texto": "Immediate cesarean delivery",
+        "quiz": "Immediate cesarean"
+      },
+      "D": {
+        "texto": "Oxytocin induction of labor",
+        "quiz": "Oxytocin induction"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *foto*, depois o *toque*",
+    "certa": [
+      "Sangramento vermelho vivo e indolor no terceiro trimestre, com útero mole, é *placenta previa* até prova em contrário. Sem pré-natal, ninguém sabe onde está a placenta, então a conduta é *ultrasonography* (transabdominal e, se preciso, transvaginal com cuidado) antes de qualquer *digital exam*, que pode provocar hemorragia grave. Duas cesáreas prévias também aumentam o risco de acretismo, que o ultrassom ajuda a avaliar."
+    ],
+    "termos": [
+      "placenta previa",
+      "painless third-trimester bleeding",
+      "no digital exam",
+      "transvaginal ultrasound"
+    ],
+    "erradas": {
+      "A": "Toque vaginal com placenta prévia pode romper vasos e causar sangramento maciço; é contraindicado até a placenta ser localizada.",
+      "C": "Mãe e feto estão estáveis com 32 semanas; cesárea imediata fica para sangramento intenso, instabilidade ou sofrimento fetal.",
+      "D": "Induzir parto vaginal sem saber onde está a placenta é perigoso, e a prévia contraindica o parto vaginal."
+    },
+    "macete": {
+      "frase": "Sangrou sem dor? *Foto antes do toque*: se a placenta estacionou na frente da saída, toque vaginal é empurrar o carro com a mão.",
+      "apoio": "Pegadinha de prova: O NBME separa prévia de descolamento pela dor: prévia é indolor com útero mole; descolamento dói e o útero fica duro e sensível.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Véspera de Natal no plantão: uma gestante de 32 semanas, um sangramento e quatro espetos no rodízio da obstetrícia. A ceia espera, e a Capitã Plaqueta escolhe o primeiro passo.",
+    "palavras_chave": [
+      "vaginal bleeding",
+      "pregnancy",
+      "obstetric emergency",
+      "Christmas Eve"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "32 semanas, sangramento indolor e útero mole: qual o próximo passo?"
+  },
+  "exemplo": false
+}

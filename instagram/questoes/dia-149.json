@@ -1,0 +1,96 @@
+{
+  "dia": 149,
+  "data": "2027-03-30",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Insuficiência cardíaca com fração reduzida",
+  "conceito": "HFrEF mortality pillars: ARNI or ACE inhibitor, beta-blocker, MRA and SGLT2 inhibitor",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-31",
+  "tom": null,
+  "gancho": "O pagode da insuficiência cardíaca está com *um músico a menos*",
+  "gancho_apoio": "Três já estão na roda. Qual instrumento falta para fechar o samba?",
+  "imagem": {
+    "arquivo": "dia-149.png",
+    "cena": "Numa roda de pagode no fundo de quintal, um coração simpático canta no centro ao lado de uma cadeira de plástico vazia, e Dona Térmica serve cafezinho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um coração canta numa roda de pagode ao lado de uma cadeira vazia; Dona Térmica serve café."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-149-macete.png",
+    "cena": "Callback: chega o quarto músico, um cubinho de açúcar simpático carregando um tantã, e senta na cadeira vazia; o coração canta sorrindo, e Dona Térmica bate palma. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um cubinho de açúcar com um tantã ocupa a cadeira vazia; o coração canta e Dona Térmica aplaude."
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man has ischemic cardiomyopathy, an LVEF of 30% and NYHA class II symptoms; he is euvolemic. He takes sacubitril-valsartan, carvedilol, spironolactone and furosemide as needed. BP 112/70 mm Hg; heart rate 62/min in sinus rhythm. eGFR is 55 mL/min/1.73 m2.",
+    "pergunta": "Adding which drug will most likely reduce mortality?",
+    "alternativas": {
+      "A": {
+        "texto": "Dapagliflozin",
+        "quiz": "Dapagliflozin"
+      },
+      "B": {
+        "texto": "Hydralazine-isosorbide dinitrate",
+        "quiz": "Hydralazine-nitrate"
+      },
+      "C": {
+        "texto": "Lisinopril",
+        "quiz": "Add lisinopril"
+      },
+      "D": {
+        "texto": "Ivabradine",
+        "quiz": "Ivabradine"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "ICFER: os *quatro pilares*",
+    "certa": [
+      "Na insuficiência cardíaca com fração reduzida, quatro classes reduzem mortalidade: betabloqueador, ARNI (na falta dele, IECA ou BRA), inibidor de SGLT2 e antagonista do receptor mineralocorticoide. Ele já usa as três primeiras, então falta o iSGLT2, como dapagliflozina ou empagliflozina, que funciona com ou sem diabetes e com eGFR acima de 20 a 25."
+    ],
+    "termos": [
+      "HFrEF",
+      "SGLT2 inhibitor",
+      "ARNI",
+      "mineralocorticoid receptor antagonist"
+    ],
+    "erradas": {
+      "B": "Hidralazina com dinitrato de isossorbida reduz mortalidade em pacientes negros autodeclarados que seguem sintomáticos com a terapia completa, ou em quem não tolera IECA, BRA ou ARNI; não é o próximo passo aqui.",
+      "C": "Lisinopril junto com sacubitril-valsartana é contraindicado: a dupla aumenta muito o risco de angioedema, e é preciso um intervalo de 36 horas entre os dois.",
+      "D": "A ivabradina só entra com frequência de 70 ou mais em ritmo sinusal, apesar do betabloqueador, e reduz internação, não mortalidade total."
+    },
+    "macete": {
+      "frase": "ICFER é *pagode de quatro*: ARNI, beta, ARM e iSGLT2",
+      "apoio": "Diurético e digoxina ajudam no sintoma e na internação, não na sobrevida.",
+      "fala": "Pagode de três é ensaio. Com quatro, vira sobrevida."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: insuficiência cardíaca com fração reduzida, três remédios em dose certa e uma pergunta sobre sobrevida.",
+    "palavras_chave": [
+      "ischemic cardiomyopathy",
+      "LVEF 30%",
+      "NYHA class II",
+      "guideline-directed therapy"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#HeartFailure"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "FE 30% com sacubitril-valsartana, carvedilol e espironolactona: o que falta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

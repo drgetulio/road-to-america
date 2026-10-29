@@ -1,0 +1,97 @@
+{
+  "dia": 30,
+  "data": "2026-12-01",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Profilaxia no HIV",
+  "conceito": "HIV with CD4 below 200: TMP-SMX prophylaxis against Pneumocystis",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Dia Mundial de Luta contra a AIDS (1/12): sem estigma, foco em prevenção.",
+  "remix_de": null,
+  "explicacao_em": "2026-12-02",
+  "tom": "acolhedor",
+  "gancho": "1º de dezembro: cuidado, informação e *prevenção*, sem estigma",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-030.png",
+    "cena": "Dona Térmica, serena, está sentada num banco de praça com um guarda-chuva azul-marinho fechado no colo, enquanto nuvens leves passam no céu. Um lacinho vermelho, símbolo da luta contra a AIDS, está amarrado num poste de luz.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, serena num banco de praça, segura um guarda-chuva fechado; um lacinho vermelho está amarrado num poste."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-030-macete.png",
+    "cena": "Callback da praça: Dona Térmica abre o guarda-chuva e protege um par de pulmões de pelúcia de uma garoa leve. A cobertura é feita de dois tecidos costurados, vermelho e branco (as duas drogas da combinação), e ao fundo o sol começa a aparecer, iluminando o lacinho vermelho.",
+    "alt": "Guarda-chuva aberto antes da chuva"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man received an HIV diagnosis last week and feels well. CD4+ count is 160/mm3 and viral load is 85,000 copies/mL. Toxoplasma IgG is negative. He has no drug allergies and will start antiretroviral therapy today.",
+    "pergunta": "Which additional medication is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Azithromycin once weekly",
+        "quiz": "Azithromycin"
+      },
+      "B": {
+        "texto": "Fluconazole once daily",
+        "quiz": "Fluconazole"
+      },
+      "C": {
+        "texto": "Valganciclovir once daily",
+        "quiz": "Valganciclovir"
+      },
+      "D": {
+        "texto": "TMP-SMX once daily",
+        "quiz": "TMP-SMX"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Guarda-chuva aberto antes da chuva",
+    "certa": [
+      "Com CD4 abaixo de 200 células/mm³, a pessoa vivendo com HIV tem risco de pneumonia por Pneumocystis jirovecii, e a profilaxia indicada é sulfametoxazol-trimetoprima (TMP-SMX), um comprimido por dia. O mesmo remédio protege contra a toxoplasmose quando o CD4 está abaixo de 100 e a sorologia é positiva. A profilaxia pode ser suspensa quando o tratamento antirretroviral mantém o CD4 acima de 200 por pelo menos 3 meses."
+    ],
+    "termos": [
+      "Pneumocystis jirovecii",
+      "TMP-SMX prophylaxis",
+      "CD4 count",
+      "opportunistic infections"
+    ],
+    "erradas": {
+      "A": "A azitromicina para o complexo Mycobacterium avium só se considera com CD4 abaixo de 50 e quando o antirretroviral não começa logo.",
+      "B": "O fluconazol não é profilaxia de rotina, e o criptococo é rastreado com antígeno sérico quando o CD4 está abaixo de 100.",
+      "C": "O valganciclovir não é usado como profilaxia primária de citomegalovírus no adulto com HIV."
+    },
+    "macete": {
+      "frase": "CD4 abaixo de 200: guarda-chuva *aberto antes da chuva*, com TMP-SMX. Abaixo de 100 e toxo positivo, o mesmo guarda-chuva cobre o cérebro.",
+      "apoio": "Pegadinha de prova: O NBME dá a contagem de CD4 e pergunta qual profilaxia começar; guarde os cortes 200 (Pneumocystis), 100 (toxoplasmose, com IgG positiva) e 50 (MAC, só se o antirretroviral não começa logo).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é o Dia Mundial de Luta contra a AIDS. Testagem, tratamento e prevenção mudaram a história do HIV, e quem está em tratamento com carga viral indetectável não transmite o vírus por via sexual (indetectável = intransmissível).",
+    "palavras_chave": [
+      "new HIV diagnosis",
+      "CD4 count",
+      "antiretroviral therapy",
+      "prevention"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#DezembroVermelho",
+      "#HIV",
+      "#InfectiousDiseases",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "HIV recente com CD4 de 160 e toxo negativo: qual profilaxia somar?"
+  },
+  "exemplo": false
+}

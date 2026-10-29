@@ -1,0 +1,101 @@
+{
+  "dia": 339,
+  "data": "2027-10-06",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "BRCA1 e BRCA2",
+  "conceito": "BRCA1/BRCA2: tumor suppressors for homologous recombination repair of double-strand breaks",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-07",
+  "tom": "acolhedor",
+  "gancho": "Outubro Rosa: a costura do DNA perdeu *um dos kits*. Qual?",
+  "gancho_apoio": "Um gene que cuida de um tipo específico de conserto do DNA.",
+  "imagem": {
+    "arquivo": "dia-339.png",
+    "cena": "Ateliê de costura sereno; o Seu Allen, com setinhas de manual de montagem, está ao lado de uma fita em forma de escada sobre a mesa e de quatro caixinhas de costura fechadas, de cores diferentes; um laço rosa discreto num cabide.",
+    "foco": "50% 35%",
+    "alt": "Outubro Rosa: a costura do DNA perdeu um dos kits. Qual?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-339-macete.png",
+    "cena": "Callback: a fita em escada aparece cortada de ponta a ponta; o Seu Allen abre uma das caixinhas, estende ao lado do corte uma fita gêmea idêntica e uma linha dourada costura as duas partes copiando o molde; as outras três caixinhas ficam fechadas na prateleira.",
+    "foco": "50% 45%",
+    "alt": "BRCA1 e BRCA2: homologous recombination da quebra dupla"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman is referred for genetic counseling. Her mother had breast cancer at 41, and her maternal aunt had ovarian cancer at 50. Germline testing shows a pathogenic BRCA1 variant. Cells that lose the remaining normal allele cannot properly repair one specific type of DNA damage.",
+    "pergunta": "Which repair process is most directly impaired?",
+    "alternativas": {
+      "A": {
+        "texto": "Mismatch repair after replication",
+        "quiz": "Mismatch repair"
+      },
+      "B": {
+        "texto": "Nucleotide excision repair",
+        "quiz": "Nucleotide excision repair"
+      },
+      "C": {
+        "texto": "Base excision repair",
+        "quiz": "Base excision repair"
+      },
+      "D": {
+        "texto": "Homologous recombination repair",
+        "quiz": "Homologous recombination"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "BRCA1 e BRCA2: *homologous recombination* da quebra dupla",
+    "certa": [
+      "BRCA1 e BRCA2 são *tumor suppressor genes* que consertam a *double-strand break* por *homologous recombination*, usando a cromátide irmã como molde fiel. Herda-se uma cópia alterada e a segunda se perde na célula (dois golpes de Knudson). Sem esse conserto, a célula depende de vias sujeitas a erro e acumula mutações."
+    ],
+    "termos": [
+      "BRCA1",
+      "homologous recombination",
+      "double-strand break",
+      "tumor suppressor gene"
+    ],
+    "erradas": {
+      "A": "Reparo de pareamento (MLH1, MSH2) corrige erros da replicação; o defeito dá síndrome de Lynch, com cólon e endométrio.",
+      "B": "Excisão de nucleotídeo remove dímeros de timina e lesões volumosas por UV; o defeito é o xeroderma pigmentoso.",
+      "C": "Excisão de base troca bases isoladas danificadas por glicosilases; o defeito clássico é o MUTYH, com polipose."
+    },
+    "macete": {
+      "frase": "*BRCA: Break Repair Com Amostra*",
+      "apoio": "O BRCA conserta o corte nas duas fitas copiando a fita gêmea, a cromátide irmã: recombinação homóloga. Sem ele, o conserto vira remendo improvisado e os erros se acumulam. Por isso os inibidores de PARP funcionam tão bem nessas células.",
+      "fala": "Cada conserto tem o seu kit."
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa também é mês de falar de genética com calma. Quatro caixinhas de costura, cada uma com um tipo de conserto do DNA; a vinheta traz a história da família e o resultado do teste.",
+    "palavras_chave": [
+      "genetic counseling",
+      "family history",
+      "DNA repair",
+      "molecular biology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#OutubroRosa",
+      "#Genetica",
+      "#Genetics",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "BRCA1 alterado: qual conserto do DNA deixa de funcionar?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 206,
+  "data": "2027-05-26",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Secreção de insulina",
+  "conceito": "Insulin release: glucose raises ATP, closes K-ATP channels, depolarization opens Ca channels",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-27",
+  "tom": null,
+  "gancho": "Na padaria da célula beta, o *pão* de insulina sai por quê?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-206.png",
+    "cena": "Em corte de manual de montagem, Mito, de plantão, acende o forno de uma padaria em forma de célula, com cestas de pãezinhos esperando no balcão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Mito acende o forno de uma padaria em forma de célula"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-206-macete.png",
+    "cena": "Mito fecha a janelinha com uma das mãos, segurando o café; a padaria esquenta, a porta lateral se abre e entram clientes amarelos brilhantes (o cálcio), que empurram as cestas de pão para fora.",
+    "alt": "Quem solta a insulina é o cálcio"
+  },
+  "questao": {
+    "vinheta": "A researcher perfuses isolated pancreatic islets with a high-glucose solution, and insulin release increases within minutes. The response is abolished when beta cells are pretreated with a drug that holds ATP-sensitive potassium channels open.",
+    "pergunta": "Which event directly triggers insulin exocytosis in this experiment?",
+    "alternativas": {
+      "A": {
+        "texto": "Potassium efflux through ATP-sensitive channels",
+        "quiz": "K+ efflux via K-ATP"
+      },
+      "B": {
+        "texto": "Activation of insulin receptor tyrosine kinase",
+        "quiz": "Insulin receptor kinase"
+      },
+      "C": {
+        "texto": "Glucose entry through GLUT4 transporters",
+        "quiz": "Glucose entry via GLUT4"
+      },
+      "D": {
+        "texto": "Calcium influx through voltage-gated channels",
+        "quiz": "Ca2+ influx via VGCC"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Quem solta a insulina é o *cálcio*",
+    "certa": [
+      "A glicose entra na célula beta pelo *GLUT2*, é metabolizada e eleva o ATP. O ATP fecha os *K-ATP channels*, a célula despolariza e abrem-se os *voltage-gated calcium channels*. A entrada de cálcio dispara a exocitose dos grânulos de insulina. Um fármaco que mantém o K-ATP aberto (diazóxido) impede a despolarização e bloqueia a resposta."
+    ],
+    "termos": [
+      "K-ATP channel",
+      "depolarization",
+      "voltage-gated calcium channel",
+      "GLUT2"
+    ],
+    "erradas": {
+      "A": "A saída de potássio pelo K-ATP é o que mantém a célula em repouso; o ATP fecha esse canal para que a secreção comece.",
+      "B": "O receptor de insulina com atividade tirosina-quinase age nas células-alvo depois da secreção, não dispara a liberação.",
+      "C": "O GLUT4 é o transportador do músculo e da gordura, dependente de insulina; a célula beta usa o GLUT2."
+    },
+    "macete": {
+      "frase": "Na *padaria da célula beta*: o açúcar entra (GLUT2), o *Mito* faz ATP, o ATP *fecha a janela do potássio*, a padaria *esquenta* (despolariza), a *porta do cálcio* abre e o *pão de insulina* sai. Sulfonilureia fecha a janela à força; diazóxido a escancara.",
+      "apoio": "O NBME pergunta o mecanismo da sulfonilureia (fechar o K-ATP) e o do diazóxido (abrir o K-ATP); a etapa final que libera os grânulos é sempre a entrada de cálcio.",
+      "fala": "Seu cérebro na véspera da prova: ATP lá em cima, canal de potássio fechado e cálcio entrando. Por isso ninguém dorme."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na fisiologia, com o Mito dentro da célula beta. Um experimento com ilhotas e um remédio que trava um canal: a vinheta descreve tudo. Qual evento dispara a saída da insulina?",
+    "palavras_chave": [
+      "pancreatic islets",
+      "glucose stimulation",
+      "beta cells",
+      "ATP-sensitive potassium channels"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O que dispara a exocitose da insulina?"
+  },
+  "exemplo": false
+}

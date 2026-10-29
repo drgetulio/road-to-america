@@ -1,0 +1,88 @@
+{
+  "dia": 160,
+  "data": "2027-04-10",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Intérprete profissional",
+  "conceito": "Language barrier: use a professional medical interpreter, not a family member",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-11",
+  "tom": null,
+  "gancho": "Consentimento em inglês para quem só fala português: *quem traduz*?",
+  "gancho_apoio": "Seu inglês de NBME salva a prova, não a conversa com a avó de ninguém.",
+  "imagem": {
+    "arquivo": "dia-160.png",
+    "cena": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar, e a Dona Bússola observa com o ponteiro girando. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Duas bolhas de fala que não se encontram no corredor; a Dona Bússola observa com o ponteiro girando."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-160-macete.png",
+    "cena": "Callback: um telefone com fone acende em verde e vira uma ponte de luz entre as duas bolhas de fala, que enfim se tocam, e o ponteiro da Dona Bússola para no telefone. Fundo limpo.",
+    "alt": "Um telefone aceso em verde liga as duas bolhas de fala; o ponteiro da Dona Bússola para nele."
+  },
+  "questao": {
+    "vinheta": "A 61-year-old Portuguese-speaking woman with limited English is admitted to a US hospital with chest pain, and coronary angiography is recommended. Her 17-year-old grandson, who is fluent in English, offers to translate the consent discussion. The hospital has a 24-hour professional telephone interpreter service.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Call a professional medical interpreter",
+        "quiz": "Professional interpreter"
+      },
+      "B": {
+        "texto": "Use the grandson as the interpreter",
+        "quiz": "Grandson interprets"
+      },
+      "C": {
+        "texto": "Use a smartphone translation app",
+        "quiz": "Translation app"
+      },
+      "D": {
+        "texto": "Explain in simple English with gestures",
+        "quiz": "Simple English, gestures"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Procedimento se traduz com *intérprete profissional*",
+    "certa": [
+      "Quando o paciente tem proficiência limitada em inglês, a conduta é usar um *professional medical interpreter*, presencial, por vídeo ou por telefone. O intérprete treinado traduz com precisão, mantém a confidencialidade e não filtra informações, o que pesa ainda mais numa conversa de *informed consent*."
+    ],
+    "termos": [
+      "limited English proficiency",
+      "professional medical interpreter",
+      "informed consent",
+      "confidentiality"
+    ],
+    "erradas": {
+      "B": "Familiar, ainda mais menor de idade, pode omitir ou suavizar informação, quebra a privacidade e não domina os termos médicos; só se usa em emergência sem outra opção.",
+      "C": "Aplicativo de tradução erra termos médicos e não garante compreensão; não substitui intérprete num consentimento.",
+      "D": "Inglês simples e gestos não garantem que a paciente entenda riscos e alternativas, e o consentimento fica inválido."
+    },
+    "macete": {
+      "frase": "A família traduz o *cardápio*; *procedimento* quem traduz é o intérprete profissional",
+      "apoio": "Familiar bilíngue, funcionário que \"fala um pouco\" ou aplicativo: a resposta é o intérprete profissional, mesmo por telefone, salvo emergência sem alternativa.",
+      "fala": "Meu norte é o paciente: neto traduz cardápio, intérprete traduz consentimento."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com uma cena que muito brasileiro vai viver nos EUA: a paciente só fala português, e a conversa do consentimento não pode esperar. Quem está disponível para traduzir está na vinheta.",
+    "palavras_chave": [
+      "language barrier",
+      "family member translator",
+      "coronary angiography",
+      "communication"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Paciente só fala português e vai assinar o consentimento: quem traduz?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,92 @@
+{
+  "dia": 210,
+  "data": "2027-05-30",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: HPV e câncer do colo do útero (dia 127), MHC I e MHC II (dia 176), Influenza: shift e drift (dia 204)",
+  "conceito": "Remix: HPV 16 and 18 oncogenesis + MHC I vs MHC II + Influenza shift vs drift",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    127,
+    176,
+    204
+  ],
+  "explicacao_em": "2027-05-31",
+  "tom": null,
+  "gancho": "E6, E7, L1... a sopa de letrinhas do HPV *voltou para o Remix*",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 127, 176 e 204) e um intruso. Desta vez a pergunta é sobre a vacina.",
+  "imagem": {
+    "arquivo": "dia-210.png",
+    "cena": "Madrugada de estudo na escrivaninha do Macrô, com marca-textos de quatro cores; ele segura duas seringas de vacina de brinquedo, uma em cada mão. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Macrô, na escrivaninha de estudo, segura duas seringas de vacina de brinquedo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-210-macete.png",
+    "cena": "Callback: Macrô mostra aos linfócitos B uma casquinha redonda e vazia (a VLP, só L1), e eles disparam anticorpos em forma de Y que trancam a porta de uma célula do colo. Fundo limpo.",
+    "alt": "Macrô mostra a casca vazia aos linfócitos B, que trancam a porta da célula com anticorpos"
+  },
+  "questao": {
+    "vinheta": "A 12-year-old girl receives her first dose of the 9-valent HPV vaccine, made of recombinant L1 capsid protein assembled into virus-like particles that contain no viral DNA. The same day, she receives this year's influenza vaccine.",
+    "pergunta": "Protection from the HPV vaccine depends mainly on which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "CD8+ T cells killing cells via MHC I",
+        "quiz": "CD8+ T cells via MHC I",
+        "dia": 176
+      },
+      "B": {
+        "texto": "IgG neutralizing the L1 capsid",
+        "quiz": "Neutralizing IgG to L1"
+      },
+      "C": {
+        "texto": "Antibodies blocking E7 binding to Rb",
+        "quiz": "Antibodies against E7",
+        "dia": 127
+      },
+      "D": {
+        "texto": "NK cells lysing cells that lack MHC I",
+        "quiz": "NK cells (missing MHC I)"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Vacina de HPV: *anticorpo contra a casca*",
+    "certa": [
+      "A vacina de HPV é feita de partículas semelhantes a vírus (*virus-like particles*): só a proteína *L1* do capsídeo, montada sem DNA. Como antígeno exógeno, ela é apresentada no MHC II e gera *IgG neutralizante* em título alto, que chega à mucosa do colo e impede o vírus de entrar na célula basal. Ela previne a infecção; não trata a lesão que já existe."
+    ],
+    "termos": [
+      "virus-like particle",
+      "L1 capsid protein",
+      "neutralizing antibodies",
+      "antigenic drift"
+    ],
+    "erradas": {
+      "A": "Dia 176: o CD8 reconhece peptídeo endógeno no MHC I e mata a célula já infectada. A VLP não tem genoma, não é produzida dentro da célula, e a proteção da vacina vem antes da infecção.",
+      "C": "Dia 127: a E7 que solta a Rb age dentro do núcleo da célula infectada, longe do alcance de anticorpos; a vacina nem contém E7.",
+      "D": "Fora dos dias revisados: a célula NK mata quem perdeu o MHC I, um escape que o HPV usa. É imunidade inata, e a vacina não depende dela."
+    },
+    "macete": {
+      "frase": "VLP é *casca sem recheio*: só L1, sem DNA, sem E6 nem E7. O corpo aprende a casca e o *IgG tranca a porta*.",
+      "apoio": "Pegadinha de prova: o NBME oferece CD8 e MHC I porque a palavra \"vírus\" puxa imunidade celular, mas a VLP é antígeno exógeno e vira anticorpo neutralizante. Bônus do dia 204: a vacina da gripe é anual por causa do drift; a casca do HPV quase não muda.",
+      "fala": "Comi, mostrei, avisei: casca vazia, anticorpo de sobra."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com o Macrô. Uma menina de 12 anos toma duas vacinas no mesmo dia, e a vinheta conta do que uma delas é feita. Qual mecanismo protege?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vacina de HPV feita só de L1: qual mecanismo protege?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,94 @@
+{
+  "dia": 40,
+  "data": "2026-12-11",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estatina de alta intensidade",
+  "conceito": "LDL of 190 mg/dL or more: start a high-intensity statin",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-12",
+  "gancho": "Sextou com o Mito de árbitro: *quatro lances* de colesterol para revisar",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito vestido de árbitro, com apito e cartão, num campo de futebol, diante de um placar gigante de bolinhas amarelas de gordura.",
+    "foco": "50% 35%",
+    "alt": "Mito vestido de árbitro, com apito e cartão, diante de um placar gigante de bolinhas amarelas de gordura.",
+    "arquivo": "dia-040.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: Mito aponta direto para a marca do pênalti, sem olhar o monitor do VAR, e uma bola em forma de comprimido grande e pesado vai com força para o gol; as gotinhas de gordura saem correndo do placar.",
+    "alt": "LDL acima de 190: pênalti, bate forte",
+    "arquivo": "dia-040-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has LDL cholesterol of 232 mg/dL, HDL 45 mg/dL, and triglycerides 140 mg/dL. TSH, glucose, and liver tests are normal. He does not smoke, and BP is 118/76 mm Hg. His father had a myocardial infarction at age 46. Achilles tendon xanthomas are present.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "High-intensity statin",
+        "quiz": "High-intensity statin"
+      },
+      "B": {
+        "texto": "Low-intensity statin",
+        "quiz": "Low-intensity statin"
+      },
+      "C": {
+        "texto": "Ezetimibe alone",
+        "quiz": "Ezetimibe alone"
+      },
+      "D": {
+        "texto": "No drug; calculate 10-year ASCVD risk",
+        "quiz": "Calculate 10-year risk"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "LDL acima de *190*: pênalti, bate *forte*",
+    "certa": [
+      "Com *LDL of 190 mg/dL or more*, o risco já é alto por definição (aqui com cara de *familial hypercholesterolemia*), e a conduta é *high-intensity statin* sem passar pela calculadora de risco em 10 anos. Estatina de alta intensidade é atorvastatina 40 a 80 mg ou rosuvastatina 20 a 40 mg, com meta de reduzir o LDL em pelo menos 50%. Se o LDL continuar alto, entram ezetimiba e depois inibidor de PCSK9 como complemento."
+    ],
+    "termos": [
+      "high-intensity statin",
+      "LDL 190 mg/dL or higher",
+      "familial hypercholesterolemia",
+      "ASCVD risk calculator"
+    ],
+    "erradas": {
+      "B": "Baixa intensidade reduz menos de 30% do LDL e fica muito aquém do necessário com LDL acima de 190.",
+      "C": "Ezetimiba é complemento quando a estatina não basta, não a primeira escolha.",
+      "D": "As calculadoras de risco não valem para LDL acima de 190; o tratamento já está indicado."
+    },
+    "macete": {
+      "frase": "LDL acima de 190 é *pênalti claro*: nem chame o VAR da calculadora de risco. Estatina de alta intensidade, bate forte.",
+      "apoio": "Pegadinha de prova: O NBME coloca um paciente jovem e sem outros fatores para tentar você a calcular risco; com LDL acima de 190, a calculadora não entra.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o Mito de árbitro: um colesterol, um paciente jovem e quatro decisões possíveis, de calcular risco a mandar tratar. No futebol tem VAR; no Step, tem diretriz do ACC/AHA e nenhum replay.",
+    "palavras_chave": [
+      "cholesterol",
+      "cardiovascular prevention",
+      "lipid therapy",
+      "young adult"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "LDL de 232 e xantoma no tendão aos 34 anos: qual tratamento?"
+  },
+  "exemplo": false
+}

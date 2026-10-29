@@ -1,0 +1,101 @@
+{
+  "dia": 333,
+  "data": "2027-09-30",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Febre pós-operatória",
+  "conceito": "Postoperative fever by timing: urinary infection after day 3, wound infection around days 5 to 7",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-01",
+  "tom": null,
+  "gancho": "Febre depois da cirurgia: *o garçom traz os espetos na ordem do cardápio*",
+  "gancho_apoio": "Febre depois da colectomia tem cardápio por horário, como rodízio que respeita a ordem.",
+  "imagem": {
+    "arquivo": "dia-333.png",
+    "cena": "Garçom Espetinho segura cinco espetos, cada um com um ícone no topo: nuvem de vento, gota de água, tênis de caminhada, curativo adesivo e cápsula de remédio; atrás, a mesa de entradas com pães de queijo; a plaquinha verde e vermelha no avental.",
+    "foco": "50% 35%",
+    "alt": "Febre depois da cirurgia: o garçom traz os espetos na ordem do cardápio"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-333-macete.png",
+    "cena": "Callback: o garçom serve só o espeto do curativo adesivo e levanta o lado verde da plaquinha; os outros quatro espetos ficam no apoio, com o lado vermelho virado para eles.",
+    "foco": "50% 45%",
+    "alt": "Dias 5 a 7 com incisão inflamada: surgical site infection"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old woman has a temperature of 38.6°C on postoperative day 6 after open sigmoid colectomy. Her urinary catheter was removed on day 2, she walks the halls, and she has no cough or dysuria. Calves are nontender. The midline incision is warm, red, and tender, with cloudy drainage.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Atelectasis",
+        "quiz": "Atelectasis"
+      },
+      "B": {
+        "texto": "Catheter-associated urinary infection",
+        "quiz": "Catheter-associated UTI"
+      },
+      "C": {
+        "texto": "Surgical site infection",
+        "quiz": "Surgical site infection"
+      },
+      "D": {
+        "texto": "Deep vein thrombosis",
+        "quiz": "Deep vein thrombosis (DVT)"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dias 5 a 7 com incisão inflamada: *surgical site infection*",
+    "certa": [
+      "Febre entre os dias 5 e 7 com incisão quente, vermelha, dolorosa e drenando secreção turva é *surgical site infection* (infecção de ferida operatória). O dia sugere a lista e o exame decide: aqui, nada de tosse, disúria ou panturrilha dolorosa. A conduta é abrir e drenar a incisão e associar antibiótico se houver celulite ou sinais sistêmicos."
+    ],
+    "termos": [
+      "surgical site infection",
+      "postoperative fever",
+      "wound",
+      "five Ws"
+    ],
+    "erradas": {
+      "A": "Atelectasia fica nas primeiras 24 a 48 horas e nem é causa comprovada de febre; aqui não há tosse nem sinal pulmonar.",
+      "B": "Infecção urinária costuma surgir a partir do dia 3, mas a sonda saiu no dia 2 e não há disúria; a incisão aponta outro foco.",
+      "D": "TVP aparece por volta dos dias 4 a 6, mas as panturrilhas estão indolores e o achado está na ferida."
+    },
+    "macete": {
+      "frase": "*Os 5 Ws do rodízio*: Wind, Water, Walking, Wound, Wonder drugs",
+      "apoio": "Febre pós-operatória é rodízio, cada espeto na sua hora: vento (atelectasia e pneumonia, dias 1 e 2), água (urina, a partir do dia 3), caminhada (TVP, dias 4 a 6), ferida (dias 5 a 7) e remédio (qualquer dia). Pedir a ferida no dia 1 é pedir picanha antes do pão de queijo.",
+      "fala": "Picanha só depois do pão de queijo."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, mesa da cirurgia: a febre do pós-operatório tem cardápio por horário, e o garçom sabe de cor a ordem dos espetos. O dia do pós-operatório e o exame da paciente estão na vinheta; a ordem do cardápio você já decorou.",
+    "palavras_chave": [
+      "postoperative care",
+      "general surgery",
+      "fever",
+      "hospital medicine"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Surgery",
+      "#ClinicaCirurgica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Colectomia há 6 dias, febre 38,6 e incisão quente com secreção: qual?"
+  },
+  "reel": null,
+  "exemplo": false
+}

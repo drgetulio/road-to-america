@@ -1,0 +1,101 @@
+{
+  "dia": 315,
+  "data": "2027-09-12",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Doença granulomatosa crônica (dia 260), Estreptococos do grupo viridans (dia 295), Gangrena gasosa (dia 309)",
+  "conceito": "Remix: Chronic granulomatous disease + Viridans streptococci + Clostridium perfringens alpha toxin",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": [
+    260,
+    295,
+    309
+  ],
+  "explicacao_em": "2027-09-13",
+  "tom": null,
+  "gancho": "Um bebê de 4 meses, *três conceitos conhecidos* e um intruso na fila",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
+  "imagem": {
+    "arquivo": "dia-315.png",
+    "cena": "A Capitã Plaqueta, de colete refletivo, confere uma prancheta em branco numa sala de espera de pediatria cheia de brinquedos; num banco, quatro envelopes lacrados de cores diferentes; num canto, um vinil pequeno encostado.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta confere quatro envelopes lacrados numa sala de pediatria"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-315-macete.png",
+    "cena": "Callback: numa avenida em forma de vaso sanguíneo, carrinhos brancos passam reto sem conseguir frear no meio-fio, que tem ganchinhos esperando, e o trânsito engarrafa; a Capitã Plaqueta apita e mostra um freio de mão faltando. Os quatro envelopes estão abertos no banco, e o vinil continua no canto.",
+    "foco": "50% 45%",
+    "alt": "Sem pus e com neutrófilo de sobra: faltou o CD18"
+  },
+  "questao": {
+    "vinheta": "A 4-month-old boy has recurrent skin infections and a large perianal ulcer that has never formed pus. His umbilical cord separated at 6 weeks of age. Leukocyte count is 42,000/mm3 with 85% neutrophils, even between infections. A dihydrorhodamine flow cytometry test is normal.",
+    "pergunta": "Which defect most likely explains his condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Absent NADPH oxidase activity",
+        "quiz": "No NADPH oxidase",
+        "dia": 260
+      },
+      "B": {
+        "texto": "Defective phagolysosome fusion",
+        "quiz": "Phagolysosome fusion defect"
+      },
+      "C": {
+        "texto": "Absent CD18 β2 integrin",
+        "quiz": "No CD18 β2 integrin"
+      },
+      "D": {
+        "texto": "Myeloperoxidase deficiency",
+        "quiz": "Myeloperoxidase deficiency"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sem pus e com neutrófilo de sobra: *faltou o CD18*",
+    "certa": [
+      "Queda tardia do coto umbilical, infecções de pele e de mucosa que não formam pus e neutrofilia alta mesmo sem infecção são a *leukocyte adhesion deficiency type 1*. Falta a *CD18*, a cadeia β2 das integrinas (como LFA-1 e Mac-1), que prende o neutrófilo ao ICAM do endotélio para ele sair do vaso. O neutrófilo sobra no sangue e não chega ao tecido, por isso não há pus. O DHR normal mostra que a explosão respiratória funciona, o que afasta a doença granulomatosa crônica (dia 260). É o intruso do domingo."
+    ],
+    "termos": [
+      "leukocyte adhesion deficiency type 1",
+      "CD18 (β2 integrin)",
+      "delayed umbilical cord separation",
+      "no pus despite neutrophilia"
+    ],
+    "erradas": {
+      "A": "Na doença granulomatosa crônica (dia 260), o neutrófilo chega e forma pus e granuloma, mas não faz superóxido; o teste de DHR viria alterado.",
+      "B": "Na Chédiak-Higashi, a fusão do fagolisossomo falha, com albinismo parcial, grânulos gigantes e neuropatia; o coto cai no tempo normal.",
+      "D": "A deficiência de mieloperoxidase costuma ser silenciosa ou dar candidíase; não atrasa a queda do coto nem tira o pus."
+    },
+    "macete": {
+      "frase": "*Coto que não cai e ferida sem pus*: o neutrófilo não freia no endotélio",
+      "apoio": "Sem CD18, o neutrófilo passa reto pelo vaso, como carro sem freio, e o sangue fica lotado deles. Bônus do domingo: o viridans (dia 295) gruda na valva com dextrana, e o C. perfringens (dia 309) destrói o neutrófilo que chega, por isso o Gram da gangrena mostra tão poucos.",
+      "fala": "Parou, colou, coagulou. Neutrófilo sem CD18 não para nem com apito."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: doença granulomatosa crônica (dia 260), estreptococos do grupo viridans (dia 295) e gangrena gasosa (dia 309) voltaram, e um intruso entrou na fila da pediatria. Quatro defeitos de neutrófilo; a vinheta tem um exame normal que derruba o favorito.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Coto umbilical tardio, ferida sem pus e neutrofilia: qual defeito?"
+  },
+  "reel": null,
+  "exemplo": false
+}

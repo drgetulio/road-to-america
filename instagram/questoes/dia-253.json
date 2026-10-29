@@ -1,0 +1,99 @@
+{
+  "dia": 253,
+  "data": "2027-07-12",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Mycoplasma pneumoniae",
+  "conceito": "Mycoplasma pneumoniae: no cell wall, cold agglutinins, walking pneumonia in young adults",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-13",
+  "tom": null,
+  "gancho": "Bicho de Segunda: *uma tosse que não vai embora*",
+  "gancho_apoio": "Na prova, todo estudante da vinheta tem febre baixa e uma avaliação na semana seguinte.",
+  "imagem": {
+    "arquivo": "dia-253.png",
+    "cena": "Numa sala de aula, o Macrô, de guardanapo xadrez e comanda no bolso, divide a carteira com um colega de cachecol listrado que tosse baixinho no cotovelo. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô divide a carteira com um colega de cachecol que tosse no cotovelo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-253-macete.png",
+    "cena": "Uma bola de demolição (a amoxicilina) passa direto pelo micróbio sem casca, sem acertar nada, porque não há parede para quebrar. No balde de gelo, hemácias se abraçam de frio. Macrô oferece uma chavinha que encaixa no ribossomo do bicho.",
+    "foco": "50% 40%",
+    "alt": "Sem parede, a amoxicilina passa reto"
+  },
+  "questao": {
+    "vinheta": "A 20-year-old student has had low-grade fever, headache, and dry cough for 2 weeks but keeps attending classes. Chest x-ray shows patchy bilateral interstitial infiltrates. Sputum Gram stain shows no organisms, and amoxicillin did not help. His red cells agglutinate when the blood sample is chilled.",
+    "pergunta": "Which organism is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Streptococcus pneumoniae",
+        "quiz": "Streptococcus pneumoniae"
+      },
+      "B": {
+        "texto": "Legionella pneumophila",
+        "quiz": "Legionella pneumophila"
+      },
+      "C": {
+        "texto": "Mycoplasma pneumoniae",
+        "quiz": "Mycoplasma pneumoniae"
+      },
+      "D": {
+        "texto": "Chlamydia pneumoniae",
+        "quiz": "Chlamydia pneumoniae"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Bicho sem parede, *walking pneumonia*",
+    "certa": [
+      "Tosse seca arrastada num adulto jovem que segue a rotina (*walking pneumonia*), raio X pior que o exame e falha do betalactâmico apontam para *Mycoplasma pneumoniae*. Ele não tem parede celular, então não aparece no Gram e não sofre com penicilinas; a membrana tem esteróis. As *cold agglutinins* (IgM contra o antígeno I das hemácias) explicam o sangue que aglutina no gelo, e o tratamento é com macrolídeo, doxiciclina ou fluoroquinolona."
+    ],
+    "termos": [
+      "Mycoplasma pneumoniae",
+      "cold agglutinins",
+      "no cell wall",
+      "walking pneumonia"
+    ],
+    "erradas": {
+      "A": "O pneumococo aparece no Gram como diplococo gram-positivo, dá consolidação lobar e costuma responder à amoxicilina.",
+      "B": "A *Legionella* vem com doença mais grave, hiponatremia e diarreia, e sem aglutininas frias.",
+      "D": "A *Chlamydia pneumoniae* também é atípica, mas não causa aglutininas frias; costuma vir com rouquidão e faringite."
+    },
+    "macete": {
+      "frase": "Sem parede, *sem Gram*, sem penicilina; no frio, as hemácias *se abraçam*",
+      "apoio": "O micróbio de cachecol que não falta à aula é a walking pneumonia: raio X feio, paciente andando. Sem parede, a bola de demolição da amoxicilina passa reto e o Gram não acha nada; no gelo, as hemácias se abraçam (aglutinina fria). A chave certa é a do ribossomo: macrolídeo ou doxiciclina.",
+      "fala": "Comi, mostrei, avisei. Esse aí nem casca tinha para eu mostrar."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no respiratório, com o Macrô. Um jovem com tosse e quatro exames descritos na vinheta. Quem é o bicho?",
+    "palavras_chave": [
+      "respiratory infection",
+      "chest x-ray",
+      "laboratory tests",
+      "Step 1 microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Microbiologia",
+      "#Pneumologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tosse seca há 2 semanas e aglutinina fria: qual é o micróbio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

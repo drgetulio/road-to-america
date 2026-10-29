@@ -1,0 +1,87 @@
+{
+  "dia": 204,
+  "data": "2027-05-24",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Influenza: shift e drift",
+  "conceito": "Influenza shift vs drift: segment reassortment causes pandemics, point mutations cause yearly epidemics",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-25",
+  "tom": null,
+  "gancho": "Bicho de Segunda: *a gripe de sempre* com uma história genética que cai todo ano",
+  "gancho_apoio": "Influenza é o único conteúdo do Step 1 que muda mais que o formato do NBME.",
+  "imagem": {
+    "arquivo": "dia-204.png",
+    "cena": "Macrô, na porta do boteco dos micróbios e com a comanda em branco no bolso, folheia um álbum de figurinhas aberto numa página vazia. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô folheia um álbum de figurinhas aberto numa página vazia"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-204-macete.png",
+    "cena": "Callback: um vírus redondo de espinhos exibe um álbum novo com figurinhas de porco, de ave e de gente, e o Macrô fica de queixo caído, sem reconhecer ninguém. Fundo limpo.",
+    "alt": "O vírus mostra um álbum novo com figurinhas de porco, ave e gente; Macrô não reconhece"
+  },
+  "questao": {
+    "vinheta": "In 2009, a novel influenza A (H1N1) virus spread worldwide within months. Genetic analysis showed that a single virion contained gene segments derived from swine, avian, and human influenza viruses. Most people younger than 60 years had little preexisting immunity.",
+    "pergunta": "Which process best explains the emergence of this virus?",
+    "alternativas": {
+      "A": {
+        "texto": "Point mutations in the hemagglutinin gene",
+        "quiz": "Point mutations in HA"
+      },
+      "B": {
+        "texto": "Phenotypic mixing of envelope proteins",
+        "quiz": "Phenotypic mixing"
+      },
+      "C": {
+        "texto": "Complementation by a coinfecting virus",
+        "quiz": "Complementation"
+      },
+      "D": {
+        "texto": "Reassortment of RNA genome segments",
+        "quiz": "Segment reassortment"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Segmentos trocados: *antigenic shift*",
+    "certa": [
+      "O genoma do influenza A tem 8 segmentos de RNA. Quando dois vírus de hospedeiros diferentes (porco, ave, humano) infectam a mesma célula, os segmentos se misturam (*reassortment*) e surge um vírus com hemaglutinina ou neuraminidase nova: *antigenic shift*. A população não tem imunidade e vem a *pandemic*. O *antigenic drift* são mutações pontuais pequenas, que causam as epidemias de cada ano."
+    ],
+    "termos": [
+      "antigenic shift",
+      "reassortment",
+      "antigenic drift",
+      "segmented genome"
+    ],
+    "erradas": {
+      "A": "Mutações pontuais na hemaglutinina são o antigenic drift: mudanças pequenas, epidemias sazonais e vacina atualizada todo ano, sem genes de outros animais.",
+      "B": "Na mistura fenotípica, o vírus só veste proteínas de outro vírus por uma geração; o genoma não muda e os filhos voltam ao original.",
+      "C": "Na complementação, um vírus fornece uma proteína funcional ao outro; não surge um genoma novo e estável."
+    },
+    "macete": {
+      "frase": "*Shift é Salto*: troca de *figurinha inteira* entre álbuns (segmentos de porco, ave e humano), álbum novo, ninguém reconhece, *pandemia*. *Drift é Deriva*: a figurinha *desbota um pouquinho* por ano, epidemia sazonal e vacina nova todo ano.",
+      "apoio": "O NBME pede o mecanismo de uma pandemia (rearranjo de segmentos, shift) e contrasta com a necessidade de vacina anual (mutação pontual, drift); só vírus de genoma segmentado fazem shift.",
+      "fala": "Comi, mostrei, avisei... mas esse aí trocou até de contato."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no respiratório, com o Macrô. A vinheta conta a história de um vírus da gripe e da imunidade da população contra ele. Quatro processos genéticos na mesa: qual explica a história?",
+    "palavras_chave": [
+      "influenza A",
+      "viral genetics",
+      "epidemiology",
+      "Step 1 microbiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Influenza com genes de 3 espécies. Qual processo?"
+  },
+  "exemplo": false
+}

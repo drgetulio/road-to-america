@@ -1,0 +1,96 @@
+{
+  "dia": 113,
+  "data": "2027-02-22",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Helicobacter pylori",
+  "conceito": "Helicobacter pylori: urease makes an ammonia buffer, positive urea breath test",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-23",
+  "tom": null,
+  "gancho": "Bicho de Segunda: o surfista que *não tem medo de onda ácida*",
+  "gancho_apoio": "O Macrô quer saber qual ferramenta o surfista leva na prancha.",
+  "imagem": {
+    "arquivo": "dia-113.png",
+    "cena": "Numa piscina de ondas de ácido amarelo-esverdeado, uma bactéria em espiral com rabinho de hélice surfa tranquila, sem se queimar; na borda, o Macrô, de protetor solar no nariz, assiste de queixo caído. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Uma bactéria em espiral surfa tranquila numa piscina de ácido; o Macrô assiste da borda, de queixo caído."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-113-macete.png",
+    "cena": "Callback: uma nuvem branca sai de um cilindro de gás que o surfista leva nas costas, e a água em volta dele fica calma e azulada; na borda, o Macrô segura uma tirinha de papel que ficou rosa. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O surfista solta uma nuvem de um cilindro e a água em volta fica calma; o Macrô segura uma tirinha rosa."
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has epigastric pain that improves with meals. Endoscopy shows a duodenal ulcer. An antral biopsy placed in a gel containing a pH indicator turns from yellow to pink within an hour, and histology shows curved gram-negative rods in the mucus layer.",
+    "pergunta": "Which bacterial enzyme explains the color change and the organism's survival in gastric acid?",
+    "alternativas": {
+      "A": {
+        "texto": "Urease",
+        "quiz": "Urease"
+      },
+      "B": {
+        "texto": "Catalase",
+        "quiz": "Catalase"
+      },
+      "C": {
+        "texto": "Cytochrome c oxidase",
+        "quiz": "Cytochrome c oxidase"
+      },
+      "D": {
+        "texto": "Superoxide dismutase",
+        "quiz": "Superoxide dismutase"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Gel ficou rosa: é a *urease*",
+    "certa": [
+      "O gel do *rapid urease test* tem ureia e um indicador de pH. A *urease* do *Helicobacter pylori* quebra a ureia em amônia e CO2; a *ammonia* alcaliniza o meio, e o indicador fica rosa. É a mesma nuvem de amônia que protege a bactéria do ácido na camada de muco e ainda lesa o epitélio. O *urea breath test* usa o mesmo princípio, medindo o CO2 marcado no sopro."
+    ],
+    "termos": [
+      "urease",
+      "ammonia",
+      "rapid urease test",
+      "urea breath test"
+    ],
+    "erradas": {
+      "B": "O H. pylori é catalase positivo, mas a catalase desfaz o peróxido dos neutrófilos; não gera amônia nem muda o pH do gel.",
+      "C": "O teste de oxidase positivo ajuda a identificar o H. pylori no laboratório, mas a oxidase é enzima da cadeia respiratória e não neutraliza ácido.",
+      "D": "A superóxido dismutase protege a bactéria do radical superóxido dos fagócitos, não do ácido gástrico."
+    },
+    "macete": {
+      "frase": "Urease faz o *guarda-chuva de amônia*; o CO2 sai no sopro",
+      "apoio": "Pegadinha de prova: O NBME lista catalase e oxidase, que o H. pylori também tem; só a urease explica o pH subir e a bactéria sobreviver no ácido.",
+      "fala": "O surfista leva o próprio guarda-chuva de amônia. E ainda deixa o gel rosa de prova."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com o Macrô na beira da piscina de ondas. A vinheta traz uma úlcera, uma biópsia e um exame de laboratório que entrega o bicho. Das quatro enzimas da lista, ele tem mais de uma; só uma explica a vinheta inteira.",
+    "palavras_chave": [
+      "epigastric pain",
+      "duodenal ulcer",
+      "antral biopsy",
+      "curved gram-negative rods"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Gastroenterologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gel da biópsia ficou rosa e o bicho vive no ácido: qual enzima?"
+  },
+  "reel": null,
+  "exemplo": false
+}

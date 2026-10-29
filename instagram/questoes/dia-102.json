@@ -1,0 +1,97 @@
+{
+  "dia": 102,
+  "data": "2027-02-11",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Crupe",
+  "conceito": "Croup: steeple sign and barking cough, dexamethasone plus nebulized epinephrine if stridor at rest",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-12",
+  "tom": null,
+  "gancho": "Duas da manhã e *uma tosse que acordou o prédio inteiro*",
+  "gancho_apoio": "Dois anos, coriza há dois dias e uma noite que a família não vai esquecer.",
+  "imagem": {
+    "arquivo": "dia-102.png",
+    "cena": "Garçom Espetinho, de bandeja na mão, para no corredor de um prédio às 2 da manhã enquanto, uma a uma, as janelas dos vizinhos acendem. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho num corredor de prédio de madrugada enquanto as janelas dos vizinhos acendem uma a uma."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-102-macete.png",
+    "cena": "Callback: uma foca simpática de cachecol, agora calma, respira uma nuvenzinha de nebulização ao lado de uma torre de igreja fina em forma de ponta de lápis, e o Garçom Espetinho vira a plaquinha para o verde. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Uma foca de cachecol respira nebulização ao lado de uma torre fina; o garçom vira a plaquinha para o verde."
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had rhinorrhea and low-grade fever for 2 days. Tonight he developed a barking cough, a hoarse voice and inspiratory stridor at rest with mild suprasternal retractions. He is drinking fluids and is not drooling. Temperature is 38.1°C (100.6°F). A frontal neck radiograph shows subglottic narrowing.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Epiglottitis",
+        "quiz": "Epiglottitis"
+      },
+      "B": {
+        "texto": "Bacterial tracheitis",
+        "quiz": "Bacterial tracheitis"
+      },
+      "C": {
+        "texto": "Retropharyngeal abscess",
+        "quiz": "Retropharyngeal abscess"
+      },
+      "D": {
+        "texto": "Viral laryngotracheitis",
+        "quiz": "Viral laryngotracheitis"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Crupe: tosse de foca e *sinal da torre*",
+    "certa": [
+      "Pródromo de resfriado, tosse ladrante, rouquidão e estridor inspiratório entre 6 meses e 3 anos são crupe (laryngotracheobronchitis), quase sempre pelo vírus parainfluenza. O estreitamento subglótico na radiografia frontal é o sinal da torre de igreja (steeple sign). O tratamento é dexametasona para todos e, com estridor em repouso, epinefrina nebulizada, com observação de 2 a 4 horas depois da dose."
+    ],
+    "termos": [
+      "croup",
+      "laryngotracheobronchitis",
+      "steeple sign",
+      "parainfluenza virus"
+    ],
+    "erradas": {
+      "A": "Epiglotite dá febre alta, baba, posição de tripé e aspecto toxêmico, com sinal do polegar na radiografia lateral.",
+      "B": "Traqueíte bacteriana, em geral por S. aureus, começa como crupe, mas evolui com febre alta, aspecto tóxico e falta de resposta à epinefrina.",
+      "C": "Abscesso retrofaríngeo causa febre, dor ao engolir, rigidez de pescoço e alargamento pré-vertebral na radiografia lateral."
+    },
+    "macete": {
+      "frase": "*Tosse de foca* e torre de igreja: crupe",
+      "apoio": "Pegadinha de prova: O NBME diferencia crupe, epiglotite (baba e tripé) e traqueíte bacteriana (tóxica e sem resposta à epinefrina) pela clínica, e dá a dexametasona como conduta de todos os graus.",
+      "fala": "Dexa para toda foca. Adrenalina para a que faz barulho até sentada."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, espeto de pediatria: um menino de 2 anos, um resfriado que começou leve e uma madrugada que assustou a família. A tosse, o raio X e o que ele consegue engolir estão na vinheta.",
+    "palavras_chave": [
+      "barking cough",
+      "hoarseness",
+      "inspiratory stridor",
+      "toddler"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pediatria",
+      "#Pediatrics",
+      "#Crupe"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tosse de latido e estridor em repouso aos 2 anos: qual diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

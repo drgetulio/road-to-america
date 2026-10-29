@@ -1,0 +1,97 @@
+{
+  "dia": 107,
+  "data": "2027-02-16",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Nódulo de tireoide",
+  "conceito": "Thyroid nodule: check TSH first, then ultrasound to decide on fine-needle aspiration",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-17",
+  "tom": null,
+  "gancho": "A borboleta achou *uma pedrinha na asa*. Por onde começa?",
+  "gancho_apoio": "Achado de rotina, paciente tranquila e um interno que já quer resolver tudo na primeira consulta.",
+  "imagem": {
+    "arquivo": "dia-107.png",
+    "cena": "No balcão do plantão, Dona Térmica recebe com cuidado uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica recebe uma borboleta em forma de tireoide com uma pedrinha numa das asas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-107-macete.png",
+    "cena": "Callback: a borboleta fala ao telefone com o chefe, um grão de ervilha de gravata sentado numa cadeira em forma de sela, e a agulha gigante espera a vez, por último, encostada na parede. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A borboleta-tireoide fala ao telefone com a ervilha-chefe; a agulha gigante espera por último."
+  },
+  "questao": {
+    "vinheta": "During a routine examination, a 42-year-old woman is found to have a 2-cm nodule on the right side of her thyroid. She feels well, never received radiation to the head or neck and has no relatives with thyroid cancer. The nodule is firm and mobile, without cervical lymphadenopathy.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Measurement of serum TSH",
+        "quiz": "Measurement of serum TSH"
+      },
+      "B": {
+        "texto": "Fine-needle aspiration",
+        "quiz": "Fine-needle aspiration"
+      },
+      "C": {
+        "texto": "Radioactive iodine uptake scan",
+        "quiz": "Radioactive iodine uptake scan"
+      },
+      "D": {
+        "texto": "Total thyroidectomy",
+        "quiz": "Total thyroidectomy"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Nódulo de tireoide: *TSH primeiro*",
+    "certa": [
+      "Todo nódulo de tireoide começa com TSH sérico (e ultrassom da tireoide, que não está entre as alternativas). Se o TSH vier baixo, a cintilografia mostra se o nódulo é quente (hiperfuncionante); nódulo quente raramente é câncer e não precisa de punção. Com TSH normal ou alto, o ultrassom define pelo tamanho e pelo padrão se o nódulo vai para punção aspirativa por agulha fina (fine-needle aspiration)."
+    ],
+    "termos": [
+      "thyroid nodule",
+      "serum TSH",
+      "radionuclide scan",
+      "fine-needle aspiration"
+    ],
+    "erradas": {
+      "B": "A punção vem depois do TSH e do ultrassom; num nódulo quente ela é desnecessária e pode confundir.",
+      "C": "A cintilografia só entra se o TSH estiver baixo.",
+      "D": "Cirurgia sem diagnóstico não é conduta inicial; ela depende da citologia e do ultrassom."
+    },
+    "macete": {
+      "frase": "Nódulo de tireoide: *primeiro fala com o gerente* (TSH)",
+      "apoio": "Pegadinha de prova: Se o TSH vier baixo, o NBME quer cintilografia antes de punção; se vier normal ou alto, ultrassom e punção conforme o tamanho e o padrão.",
+      "fala": "Antes de furar qualquer coisa, eu pergunto para a hipófise."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Dona Térmica, que já viu muito nódulo às 3 da manhã. Um achado de rotina no pescoço e quatro primeiros passos possíveis. A vinheta tem o que importa para não pular etapa.",
+    "palavras_chave": [
+      "neck mass",
+      "routine exam",
+      "no radiation exposure",
+      "euthyroid symptoms"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#Tireoide"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo tireoidiano de 2 cm sem sintomas: qual é o primeiro exame?"
+  },
+  "reel": null,
+  "exemplo": false
+}

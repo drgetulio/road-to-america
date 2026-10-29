@@ -1,5 +1,7 @@
 # Reels da Road to America
 
+Dois conjuntos: os 20 reels do curso (`roteiros.json`, abaixo) e os 52 Reels semanais da Questão de Embarque (`../instagram/reels-semanais.json`, seção "Reels semanais" no fim).
+
 Vinte reels verticais (1080x1920, 30 fps, 50 s, sem áudio) feitos com [Remotion](https://www.remotion.dev) a partir de `roteiros.json`. Os vídeos prontos ficam em `out/reel-XX.mp4` e as capas em `out/capas/reel-XX.jpg`.
 
 ## O que tem aqui
@@ -90,3 +92,15 @@ Todos os pacotes do Remotion estão fixados na mesma versão exata (`4.0.534`, p
 O Remotion é gratuito para pessoas físicas e para empresas com até 3 funcionários. Acima disso, a empresa precisa de uma licença de empresa (Company License). Detalhes em <https://www.remotion.dev/license>.
 
 As fontes (Barlow, Barlow Condensed e Overpass Mono) são OFL e vêm do próprio site.
+
+## Reels semanais da Questão de Embarque
+
+Um Reel por semana (52), de 15 a 30 segundos, publicado na sexta às 19h00 e ligado a uma questão de segunda a quarta da mesma semana. A fonte é `../instagram/reels-semanais.json`, gerado por `node ../instagram/ferramentas/gerar-reels-semanais.mjs` a partir dos dias já escritos; `src/semanais.ts` converte cada Reel no roteiro que `Reel.tsx` já usa.
+
+- **Composições:** pasta "Semanais" do Studio (`semana-01` a `semana-52`) e "CapasSemanais" (`capa-semana-01`...).
+- **Componentes novos:** `Alternativas` (as quatro opções em cartões, com barra de tempo, barras de resultado da enquete e a certa acendendo) e `Personagem` (o personagem fixo falando num balão; os avatares vêm de `src/avatares.ts`, gerado por `node scripts/gerar-avatares.mjs` a partir de `instagram/templates/lib/slides.mjs`, para o desenho ser igual ao do carrossel). O resto reaproveita legenda cinética, carimbo, checklist, caixa de "Comente" e fechamento.
+- **Fechamento sem endereço:** a direção dos semanais liga `url: false`, então o fim mostra "Comente PALAVRA" e "resposta automática no direct", sem o endereço do site.
+- **Render:** `npm run render:semanais -- semana-01,semana-06` grava `out/semanais/semana-NN.mp4` e `out/semanais/capas/semana-NN.jpg`. Sem argumento, renderiza as 52. Reels do formato Resultado só renderizam com os números da enquete preenchidos em `resultado` (ou `FORCAR=1`).
+- **Quadros para revisão:** `node scripts/quadros.mjs /tmp/q semana-01 0.5,3,8,14,24`.
+- **Áudio:** os vídeos saem mudos. Cada Reel traz a sugestão em `audio.sugestao` (voz própria, efeitos gravados no celular ou faixa da Biblioteca de Áudio Comercial do Instagram), sem música protegida embutida.
+- **Amostras:** `out/semanais/semana-01.mp4` (POV, questão do dia 2, 25,5 s) e `out/semanais/semana-06.mp4` (o Macrô explica o macete do dia 36, 23,5 s).

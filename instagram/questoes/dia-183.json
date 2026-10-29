@@ -1,0 +1,87 @@
+{
+  "dia": 183,
+  "data": "2027-05-03",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Doença de Graves",
+  "conceito": "Graves disease: stimulating antibodies against the TSH receptor (type II, noncytotoxic)",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-04",
+  "tom": null,
+  "gancho": "Tireoide fazendo *hora extra*, e o chefe jura que não mandou ninguém trabalhar",
+  "gancho_apoio": "O Macrô pegou o binóculo para descobrir quem está dando a ordem.",
+  "imagem": {
+    "arquivo": "dia-183.png",
+    "cena": "Da janela do prédio vizinho, o Macrô, de binóculo, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O Macrô, de binóculo, observa uma fábrica em forma de borboleta com as chaminés soltando fumaça sem parar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-183-macete.png",
+    "cena": "Callback: atrás do muro da fábrica aparece o culpado, um personagem em forma de Y que prendeu com fita adesiva o botão da campainha, e no alto do morro a casinha da hipófise continua apagada. Fundo limpo.",
+    "alt": "Atrás do muro, um personagem em Y prendeu a campainha com fita; a casinha no alto do morro segue apagada."
+  },
+  "questao": {
+    "vinheta": "A 29-year-old woman has weight loss, tremor, heat intolerance, and bilateral proptosis. She has a diffuse, nontender goiter with a bruit. TSH is suppressed, and free T4 is elevated. Radioactive iodine uptake is diffusely increased.",
+    "pergunta": "Which mechanism best explains her hyperthyroidism?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies that destroy follicles via thyroid peroxidase",
+        "quiz": "Anti-TPO destruction"
+      },
+      "B": {
+        "texto": "Autonomous TSH secretion by a pituitary adenoma",
+        "quiz": "TSH-secreting adenoma"
+      },
+      "C": {
+        "texto": "Release of stored hormone after viral inflammation",
+        "quiz": "Viral thyroiditis"
+      },
+      "D": {
+        "texto": "IgG that stimulates the TSH receptor",
+        "quiz": "TSH receptor IgG"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Graves: a IgG *imita o TSH*",
+    "certa": [
+      "Na doença de Graves, uma IgG se liga ao receptor de TSH e o estimula (*thyroid-stimulating immunoglobulin*), sem destruir a célula: é hipersensibilidade tipo II não citotóxica. A tireoide cresce por igual e capta muito iodo, e o T4 alto silencia a hipófise (TSH baixo). Fibroblastos da órbita também têm receptor de TSH, o que explica a *proptosis*."
+    ],
+    "termos": [
+      "Graves disease",
+      "TSH receptor antibody",
+      "type II hypersensitivity",
+      "radioactive iodine uptake"
+    ],
+    "erradas": {
+      "A": "Anticorpos anti-TPO destruindo folículos é a tireoidite de Hashimoto; na fase de liberação a captação de iodo é baixa, e não há proptose.",
+      "B": "Adenoma hipofisário produtor de TSH deixaria o TSH normal ou alto, nunca suprimido.",
+      "C": "A tireoidite subaguda viral (de Quervain) libera hormônio pronto: glândula dolorosa e captação de iodo baixa."
+    },
+    "macete": {
+      "frase": "Graves é o *vizinho que toca a campainha* do receptor de TSH e foge",
+      "apoio": "A tireoide atende a porta sem parar e a hipófise, dona da campainha, fica calada (TSH baixo). Tipo II não citotóxico; captação alta e difusa.",
+      "fala": "Comi, mostrei, avisei: o vizinho que toca a campainha e foge tem formato de Y."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no sistema endócrino: uma tireoide trabalhando dobrado e uma hipófise em silêncio. Os olhos, o pescoço e a captação de iodo estão na vinheta. Qual mecanismo explica?",
+    "palavras_chave": [
+      "weight loss",
+      "tremor",
+      "proptosis",
+      "diffuse goiter"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Proptose, bócio difuso, TSH baixo e captação alta de iodo: qual mecanismo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 28,
+  "data": "2026-11-29",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Miastenia gravis (dia 22), Indutores do CYP450 (dia 26)",
+  "conceito": "Remix: Bruton agammaglobulinemia + Myasthenia gravis + CYP450 inducers",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": [
+    8,
+    22,
+    26
+  ],
+  "explicacao_em": "2026-11-30",
+  "tom": null,
+  "gancho": "A miastenia do dia 22 voltou ao balcão com *receita nova*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-028.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, confere com a lupa uma receita nova em branco, ao lado de um prédio de brinquedo com interfone. Um vinil pequeno decora a vitrine.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida confere com a lupa uma receita nova em branco ao lado de um prédio de brinquedo com interfone."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-028-macete.png",
+    "cena": "Callback da farmácia: dentro do prédio de brinquedo, um carteiro em forma de bolinha anda com a bolsa quase vazia de cartas (acetilcolina), porque a bolsinha de soro prendeu a alça dele; os botões do interfone ficam apagados, e a Tia Meia-Vida anota na receita uma lista de remédios a evitar.",
+    "alt": "Carteiro em greve no interfone"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old woman with generalized myasthenia gravis has been stable on pyridostigmine. She is hospitalized for acute pyelonephritis and receives intravenous gentamicin. Within 24 hours, ptosis, diplopia, and proximal weakness worsen. Her pyridostigmine dose is unchanged, and she takes no other new drugs.",
+    "pergunta": "Which drug effect best explains her worsening?",
+    "alternativas": {
+      "A": {
+        "texto": "Induction of hepatic cytochrome P450 3A4",
+        "quiz": "CYP3A4 induction",
+        "dia": 26
+      },
+      "B": {
+        "texto": "Inhibition of hepatic cytochrome P450 3A4",
+        "quiz": "CYP3A4 inhibition"
+      },
+      "C": {
+        "texto": "Decreased presynaptic acetylcholine release",
+        "quiz": "Less presynaptic ACh"
+      },
+      "D": {
+        "texto": "Inhibition of acetylcholinesterase at the synapse",
+        "quiz": "Synaptic AChE inhibition",
+        "dia": 22
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Carteiro em greve no interfone",
+    "certa": [
+      "A miastenia do dia 22 estava estável e piorou um dia depois da gentamicina. Os aminoglicosídeos reduzem a liberação de acetilcolina no terminal pré-sináptico (competem com o cálcio que dispara a liberação) e ainda diminuem um pouco a resposta do receptor pós-sináptico (*neuromuscular blockade*). Numa junção que já tem poucos receptores, essa perda basta para a fraqueza voltar. Por isso aminoglicosídeos, fluoroquinolonas, magnésio IV e betabloqueadores entram na lista de remédios que pioram a miastenia."
+    ],
+    "termos": [
+      "aminoglycoside",
+      "presynaptic release",
+      "neuromuscular blockade",
+      "myasthenic crisis"
+    ],
+    "erradas": {
+      "A": "Dia 26: a indução do CYP3A4, como pela rifampina, leva semanas e baixaria o corticoide; a gentamicina não é indutora e agiu em horas.",
+      "B": "Inibir o CYP3A4 aumentaria o nível dos remédios metabolizados por ele, e a gentamicina nem passa pelo fígado: sai pelo rim.",
+      "D": "Dia 22: inibir a acetilcolinesterase é o efeito da piridostigmina e melhora a miastenia; só o excesso dela daria crise colinérgica, e a dose não mudou."
+    },
+    "macete": {
+      "frase": "Aminoglicosídeo na miastenia é *carteiro em greve*: toca menos o interfone, e a pálpebra cai em horas.",
+      "apoio": "Pegadinha de prova: O NBME interna o paciente com miastenia por uma infecção e dá gentamicina, magnésio ou ciprofloxacino; a piora vem em horas, e não em semanas como na indução do CYP.",
+      "fala": "Rifampina demora semanas. Gentamicina estraga a festa em um dia."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando o interfone da miastenia (dia 22) e a liquidação do fígado (dia 26), mais um intruso que nunca apareceu aqui. O bônus do macete traz a chave perdida do Bruton (dia 8). Interação de remédio na miastenia é a pegadinha que o NBME guarda para quando você já relaxou.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RevisaoEspacada",
+      "#SpacedRepetition",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Miastenia piorou um dia após a gentamicina: qual efeito da droga?"
+  },
+  "exemplo": false
+}

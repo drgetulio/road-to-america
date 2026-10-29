@@ -1,0 +1,97 @@
+{
+  "dia": 25,
+  "data": "2026-11-26",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Anafilaxia alimentar",
+  "conceito": "Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": "Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-27",
+  "tom": null,
+  "gancho": "Thanksgiving: o *amendoim* chegou de bigode falso dentro da torta",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-025.png",
+    "cena": "O Garçom Espetinho serve uma mesa festiva de Thanksgiving, com um peru assado no espeto; na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa. A plaquinha verde e vermelha está de lado.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho serve uma mesa de Thanksgiving; uma torta esconde um amendoim de óculos escuros e bigode falso."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-025-macete.png",
+    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. O Garçom vira a plaquinha para o verde, e uma caneta autoinjetora voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa. Um frasco de antialérgico espera no banco de reservas.",
+    "alt": "Chute de coxa, e já"
+  },
+  "questao": {
+    "vinheta": "At a Thanksgiving dinner, a 9-year-old boy eats pie containing peanuts. Fifteen minutes later, in the emergency department, he has diffuse hives, lip swelling, wheezing and vomiting. BP is 78/44 mm Hg and pulse 138/min. He weighs 30 kg.",
+    "pergunta": "Which is the most appropriate initial treatment?",
+    "alternativas": {
+      "A": {
+        "texto": "Intramuscular epinephrine",
+        "quiz": "IM epinephrine"
+      },
+      "B": {
+        "texto": "Intravenous diphenhydramine",
+        "quiz": "IV diphenhydramine"
+      },
+      "C": {
+        "texto": "Nebulized albuterol",
+        "quiz": "Nebulized albuterol"
+      },
+      "D": {
+        "texto": "Intravenous methylprednisolone",
+        "quiz": "IV methylprednisolone"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Chute de coxa, e já",
+    "certa": [
+      "Exposição a um alérgeno seguida, em minutos, de pele (urticária, edema de lábio), respiração (sibilância), trato digestivo (vômitos) e hipotensão é anafilaxia. O primeiro remédio é a adrenalina intramuscular na face anterolateral da coxa, na dose de 0,01 mg/kg da solução de 1 mg/mL (no máximo 0,5 mg, aqui 0,3 mg), que pode voltar a ser aplicada depois de 5 a 15 minutos, com o paciente deitado e volume intravenoso pela hipotensão. A adrenalina age nos receptores alfa-1 (sobe a pressão e reduz o edema) e beta-2 (abre os brônquios e freia a liberação de mediadores dos mastócitos)."
+    ],
+    "termos": [
+      "anaphylaxis",
+      "intramuscular epinephrine",
+      "anterolateral thigh",
+      "peanut allergy"
+    ],
+    "erradas": {
+      "B": "O anti-histamínico só alivia coceira e urticária, não trata choque nem obstrução da via aérea e nunca substitui a adrenalina.",
+      "C": "O salbutamol ajuda o broncoespasmo que sobra depois da adrenalina, mas não corrige a hipotensão.",
+      "D": "O corticoide demora horas para agir e não tem benefício comprovado na fase aguda da anafilaxia."
+    },
+    "macete": {
+      "frase": "Anafilaxia é pênalti: *chute de coxa*, e já. Antialérgico na veia antes da adrenalina é comemorar antes da bola entrar.",
+      "apoio": "Pegadinha de prova: O NBME oferece anti-histamínico e corticoide como alternativas que parecem completas; toda anafilaxia, inclusive na criança, começa pela adrenalina IM.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Thanksgiving nos EUA é jantar em família, e a alergia alimentar sempre aparece na mesa. No Rodízio de Quinta, o Garçom Espetinho passa com quatro remédios no espeto, e a vinheta diz o tamanho da reação.",
+    "palavras_chave": [
+      "Thanksgiving",
+      "food allergy",
+      "pediatric emergency",
+      "emergency care"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Anaphylaxis",
+      "#Thanksgiving",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Anafilaxia aos 9 anos com PA 78/44: qual é o primeiro remédio?"
+  },
+  "exemplo": false
+}

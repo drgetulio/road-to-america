@@ -1,0 +1,97 @@
+{
+  "dia": 289,
+  "data": "2027-08-17",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Pericardite aguda",
+  "conceito": "Acute pericarditis: diffuse ST elevation with PR depression, NSAID plus colchicine",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-18",
+  "tom": null,
+  "gancho": "Três da manhã, sala de espera vazia e *um coração reclamando de tudo*",
+  "gancho_apoio": "Plantão de Terça: quatro diagnósticos de dor no peito, e o ECG da vinheta separa os quatro.",
+  "imagem": {
+    "arquivo": "dia-289.png",
+    "cena": "Três da manhã numa sala de espera vazia: um coração simpático de suéter de lã, sentado num banco, faz cara de incômodo enquanto a Dona Térmica serve café e anota na prancheta. Na parede, um relógio sem números marca 3 horas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Coração com cara de incômodo na sala de espera às 3 da manhã"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-289-macete.png",
+    "cena": "Callback: o coração, que estava vestido com um suéter de lã áspera que arranhava, tira o suéter e relaxa, recebendo numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado; o traçado ao fundo sobe suavemente em toda a extensão. Dona Térmica dobra o suéter em cima da prancheta.",
+    "foco": "50% 45%",
+    "alt": "ST difuso e PR deprimido: pericardite aguda"
+  },
+  "questao": {
+    "vinheta": "One week after a cold, a 29-year-old man has 2 days of sharp chest pain that is worse lying flat and better sitting forward. A scratchy, three-component sound is heard over the precordium. ECG shows diffuse ST elevation with PR depression. Troponin is normal, and echocardiography shows no effusion.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Acute pericarditis",
+        "quiz": "Acute pericarditis"
+      },
+      "B": {
+        "texto": "Benign early repolarization",
+        "quiz": "Early repolarization"
+      },
+      "C": {
+        "texto": "Acute anterior STEMI",
+        "quiz": "Anterior STEMI"
+      },
+      "D": {
+        "texto": "Cardiac tamponade",
+        "quiz": "Cardiac tamponade"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "ST difuso e PR deprimido: *pericardite aguda*",
+    "certa": [
+      "Dor pleurítica que piora deitado e melhora inclinado para a frente, *atrito pericárdico* e ECG com *supradesnivelamento difuso do ST* e *infradesnivelamento do PR* fecham *acute pericarditis*, quase sempre viral ou idiopática. O tratamento de primeira linha é *AINE (ou aspirina) mais colchicina*, e a colchicina por 3 meses reduz a recorrência."
+    ],
+    "termos": [
+      "acute pericarditis",
+      "diffuse ST elevation",
+      "PR depression",
+      "NSAID plus colchicine"
+    ],
+    "erradas": {
+      "B": "Repolarização precoce não dá dor, atrito nem depressão do PR.",
+      "C": "No IAM com supra, o ST sobe em um território, com imagem em espelho, e a troponina sobe.",
+      "D": "Tamponamento exige derrame com hipotensão, turgência jugular e pulso paradoxal, e o eco não mostra derrame."
+    },
+    "macete": {
+      "frase": "Pericardite: *o ST sobe em todo lugar, o PR desce* e a cura vem com *flor*",
+      "apoio": "O suéter de lã que arranha é o atrito pericárdico; inclinar para a frente afasta o suéter da pele. O ST sobe difuso e o PR desce. O tratamento é anti-inflamatório com colchicina, a florzinha de açafrão-do-prado de onde ela veio.",
+      "fala": "Já vi esse caso às 3 da manhã. A culpa era do suéter."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: um coração chegou de madrugada reclamando, e o ECG está na vinheta. Dor no peito às 3 da manhã tem quatro caminhos, e o NBME sempre coloca um que assusta demais e um que tranquiliza demais.",
+    "palavras_chave": [
+      "chest pain",
+      "ECG interpretation",
+      "emergency department",
+      "cardiology"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor que alivia inclinado, atrito e ST difuso: qual é o diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 4,
+  "data": "2026-11-05",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
+  "topico": "Cadeirinha no carro",
+  "conceito": "Child car seat: rear-facing as long as possible, at least until about age 2",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-06",
+  "tom": null,
+  "gancho": "Blitz da Capitã Plaqueta: o pé do bebê encostou no banco. Dá *multa*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-004.png",
+    "cena": "Capitã Plaqueta, de colete e apito, faz uma blitz amigável numa rua de brinquedo: ela se inclina na janela de um carrinho e olha a cadeirinha no banco de trás, onde um ursinho de pelúcia encosta as perninhas no encosto. Na mão, ela segura a plaquinha redonda verde e vermelha, virada de lado.",
+    "foco": "50% 35%",
+    "alt": "Blitz da Capitã Plaqueta: o pé do bebê encostou no banco. Dá multa?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-004-macete.png",
+    "cena": "Callback da blitz: a Capitã vira a plaquinha para o verde, guarda o bloco de multas e aponta a etiqueta em branco costurada na lateral da cadeirinha, que continua virada para trás. O ursinho segue tranquilo, de perninhas dobradas.",
+    "alt": "De costas até o limite do fabricante"
+  },
+  "questao": {
+    "vinheta": "At a 15-month-old boy's well-child visit, his parents ask whether they can turn his convertible car seat to face forward because his feet now touch the vehicle seat. He weighs 11 kg and is below the seat's rear-facing weight and height limits.",
+    "pergunta": "Which is the most appropriate recommendation?",
+    "alternativas": {
+      "A": {
+        "texto": "Turn the seat forward-facing with the 5-point harness now",
+        "quiz": "Forward-facing harness"
+      },
+      "B": {
+        "texto": "Switch to a belt-positioning booster seat",
+        "quiz": "Booster seat"
+      },
+      "C": {
+        "texto": "Keep the seat rear-facing until he reaches its rear-facing limits",
+        "quiz": "Rear-facing to limits"
+      },
+      "D": {
+        "texto": "Move the seat to the front passenger seat with the airbag turned off",
+        "quiz": "Front seat, airbag off"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "De costas até o limite do fabricante",
+    "certa": [
+      "A Academia Americana de Pediatria (AAP) recomenda manter a criança de costas para o movimento (rear-facing) pelo maior tempo possível, até ela atingir o limite de peso ou de altura indicado pelo fabricante da cadeirinha, o que costuma passar dos 2 anos. Nessa posição, o encosto distribui a força da batida pelas costas, pela cabeça e pelo pescoço. Pé encostado no banco do carro não é motivo para virar a cadeirinha."
+    ],
+    "termos": [
+      "rear-facing car seat",
+      "convertible car seat",
+      "booster seat",
+      "AAP"
+    ],
+    "erradas": {
+      "A": "Virar de frente antes do limite troca a proteção do encosto pelo tranco no pescoço; a regra antiga de 1 ano e 9 kg não vale mais.",
+      "B": "O assento de elevação (booster) é para crianças maiores, que já passaram do limite da cadeirinha de frente com cinto de 5 pontos.",
+      "D": "A AAP orienta o banco de trás para todos os menores de 13 anos, e uma cadeirinha de costas nunca deve ficar diante de um airbag ativo."
+    },
+    "macete": {
+      "frase": "Na blitz da cadeirinha, quem manda é a *etiqueta do fabricante*, não o bolo de aniversário. Perninha dobrada não dá multa.",
+      "apoio": "Pegadinha de prova: O NBME traz a regra antiga (1 ano e 9 kg) como distrator; a resposta é seguir o limite de peso e de altura da própria cadeirinha.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "O Rodízio de Quinta começa pela pediatria preventiva, com blitz da Capitã Plaqueta. Bebê de 15 meses, pé encostando no banco do carro e os pais doidos para virar a cadeirinha.",
+    "palavras_chave": [
+      "well-child visit",
+      "car seat",
+      "child passenger safety",
+      "injury prevention"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Puericultura",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê de 15 meses com o pé no banco do carro: o que orientar?"
+  },
+  "exemplo": false
+}

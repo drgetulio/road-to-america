@@ -1,0 +1,99 @@
+{
+  "dia": 211,
+  "data": "2027-05-31",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Doença do enxerto contra o hospedeiro",
+  "conceito": "Graft-versus-host disease: donor T cells attack skin, liver and gut",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-01",
+  "tom": null,
+  "gancho": "Bicho de Segunda no transplante: *três semanas depois*, um problema novo",
+  "gancho_apoio": "Transplante no Step 1: quatro tipos de reação, uma tabela e muita confusão na hora da prova.",
+  "imagem": {
+    "arquivo": "dia-211.png",
+    "cena": "Capitã Plaqueta, de colete e quepe, espera na portaria de um hospital com uma prancheta em branco, olhando a rua vazia. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta espera na portaria do hospital com uma prancheta em branco"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-211-macete.png",
+    "cena": "Callback: uma torcida visitante de bolinhas azuis desce de um ônibus e pinta de azul a fachada, a cozinha e os canos de um estádio (pele, fígado e intestino), e a Capitã apita, espantada. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "A torcida visitante pinta de azul a fachada, a cozinha e os canos do estádio; a Capitã apita"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man treated for acute myeloid leukemia received an allogeneic hematopoietic stem cell transplant 3 weeks ago, and his neutrophil count is recovering. He now has a pruritic maculopapular rash on the palms and ears, profuse watery diarrhea, and a conjugated bilirubin of 4.1 mg/dL.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Hyperacute rejection",
+        "quiz": "Hyperacute rejection"
+      },
+      "B": {
+        "texto": "Acute cellular rejection of the graft",
+        "quiz": "Acute cellular rejection"
+      },
+      "C": {
+        "texto": "Acute graft-versus-host disease",
+        "quiz": "Acute GVHD"
+      },
+      "D": {
+        "texto": "Chronic allograft rejection",
+        "quiz": "Chronic rejection"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Aqui é o enxerto que ataca o *hospedeiro*",
+    "certa": [
+      "No *allogeneic hematopoietic stem cell transplant*, os *donor T cells* do enxerto reconhecem o MHC do receptor como estranho e atacam a pele, o fígado (ductos biliares) e o intestino. Rash nas palmas e nas orelhas, diarreia volumosa e bilirrubina direta alta nas primeiras semanas formam a *acute graft-versus-host disease*. A contagem subindo mostra que a medula pegou: ninguém está rejeitando o enxerto, é ele que reage contra o corpo."
+    ],
+    "termos": [
+      "graft-versus-host disease",
+      "donor T cells",
+      "allogeneic HSCT",
+      "skin, liver and gut"
+    ],
+    "erradas": {
+      "A": "*Hyperacute rejection* acontece em minutos, por anticorpos pré-formados do receptor contra um órgão sólido, com trombose do enxerto.",
+      "B": "Na *acute cellular rejection*, o linfócito T do receptor ataca o enxerto; no transplante de medula isso apareceria como falha da pega, com a contagem caindo.",
+      "D": "*Chronic rejection* surge meses a anos depois, com fibrose e obliteração vascular do órgão transplantado, e não com rash e diarreia em três semanas."
+    },
+    "macete": {
+      "frase": "Na GVHD, a torcida visitante pinta *pele, fígado e intestino*",
+      "apoio": "Na imagem, os linfócitos T chegam no ônibus do doador e repintam a fachada, a cozinha e os canos do estádio da casa. Rejeição é a casa expulsando o visitante; GVHD é o visitante querendo mandar na casa.",
+      "fala": "Parou, colou, coagulou... mas essa torcida chegou no ônibus do doador."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na imunologia do transplante, com a Capitã Plaqueta de visita. O tipo de transplante, o tempo e os órgãos atingidos estão na vinheta. Quem está atacando quem?",
+    "palavras_chave": [
+      "transplant immunology",
+      "T cells",
+      "complication",
+      "Step 1 immunology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#Transplante",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Rash, diarreia e icterícia após o TMO: o que é?"
+  },
+  "reel": null,
+  "exemplo": false
+}

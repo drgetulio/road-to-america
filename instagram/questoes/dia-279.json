@@ -1,0 +1,96 @@
+{
+  "dia": 279,
+  "data": "2027-08-07",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Hazard ratio",
+  "conceito": "Hazard ratio of 0.7: the event rate at any moment is 30 percent lower in the treatment group",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-08",
+  "tom": null,
+  "gancho": "No grupo da turma, o HR de 0,70 *já virou três versões diferentes*",
+  "gancho_apoio": "Hazard ratio de 0,70. Três leituras erradas estão escondidas nas alternativas.",
+  "imagem": {
+    "arquivo": "dia-279.png",
+    "cena": "O Viés espia atrás de um placar quadriculado (tabela 2x2) ao lado de uma corrida de rua com duas raias, uma de camisetas navy e outra de camisetas vermelhas. Na calçada, três torcedores digitam no celular sem parar, cada um com um balão de conversa em branco diferente.",
+    "foco": "50% 35%",
+    "alt": "Viés atrás do placar 2x2 numa corrida de rua"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-279-macete.png",
+    "cena": "Vista de cima, a corrida ganha marcos a cada trecho; em todos eles, a raia navy (remédio) tem menos corredores saindo para a calçada que a raia vermelha (placebo), sempre na mesma proporção, e o Viés, flagrado pelo reflexo da própria lupa, desiste de embaralhar.",
+    "foco": "50% 45%",
+    "alt": "HR 0,70: 30% menos eventos a cada instante"
+  },
+  "questao": {
+    "vinheta": "In a randomized trial, 4,000 adults with heart failure receive a new drug or placebo and are followed for a median of 3 years. For all-cause death, the hazard ratio is 0.70 (95% CI, 0.60 to 0.82).",
+    "pergunta": "Which statement best interprets this result?",
+    "alternativas": {
+      "A": {
+        "texto": "Absolute risk of death fell by 30 percentage points",
+        "quiz": "Absolute risk 30 points lower"
+      },
+      "B": {
+        "texto": "30% of patients taking the drug died during the trial",
+        "quiz": "30% of them died"
+      },
+      "C": {
+        "texto": "Death rate was 30% lower throughout follow-up",
+        "quiz": "Rate 30% lower at any time"
+      },
+      "D": {
+        "texto": "Patients taking the drug lived 30% longer on average",
+        "quiz": "Lived 30% longer"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "HR 0,70: *30% menos eventos a cada instante*",
+    "certa": [
+      "O *hazard ratio* compara a taxa instantânea do evento entre os grupos ao longo do seguimento. HR de 0,70 quer dizer que, em qualquer momento, quem recebe o remédio tem uma taxa de morte 30% menor que a do placebo, uma *redução relativa*. Como o *IC 95%* não inclui 1, o resultado é estatisticamente significativo."
+    ],
+    "termos": [
+      "hazard ratio",
+      "instantaneous event rate",
+      "relative reduction",
+      "95% confidence interval"
+    ],
+    "erradas": {
+      "A": "Redução absoluta exige as taxas de cada grupo; o HR é uma medida relativa.",
+      "B": "O HR não informa quantos morreram; isso é a incidência acumulada de cada grupo.",
+      "D": "HR não é razão de tempo de sobrevida; viver 30% mais seria outra medida, como a razão das medianas."
+    },
+    "macete": {
+      "frase": "HR 0,7: *a cada 10 eventos no placebo, 7 no remédio*, em qualquer trecho da corrida",
+      "apoio": "Em cada trecho da corrida, a raia do remédio perde menos corredores, sempre na mesma proporção: é ritmo de saída, não tempo de prova nem total de chegada. Queda absoluta exige os números absolutos, e \"vivem 30% mais\" é o boato do grupo.",
+      "fala": "Se você não randomizou, eu entrei. Aqui randomizaram, então só espalhei boato."
+    }
+  },
+  "legenda": {
+    "contexto": "No grupo da turma, o HR de 0,70 virou três versões diferentes e um áudio de 6 minutos. No NBME, cada versão errada vira uma alternativa. O Viés escondeu as três; ache a que sobra.",
+    "palavras_chave": [
+      "randomized trial",
+      "survival analysis",
+      "biostatistics",
+      "interpreting results"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "HR de 0,70 (IC 0,60 a 0,82): qual leitura está certa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

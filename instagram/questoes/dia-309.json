@@ -1,0 +1,96 @@
+{
+  "dia": 309,
+  "data": "2027-09-06",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Gangrena gasosa",
+  "conceito": "Clostridium perfringens alpha toxin: lecithinase destroys membranes, gas gangrene with crepitus",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-07",
+  "tom": null,
+  "gancho": "Bicho de Segunda no galpão: *um bastão gigante tomou conta do sofá*",
+  "gancho_apoio": "Acidente de moto, terra na ferida e quatro toxinas na lista de suspeitas.",
+  "imagem": {
+    "arquivo": "dia-309.png",
+    "cena": "Macrô num galpão de entregas, com a comanda em branco no bolso, olha um bastão retangular gigante, em forma de vagão, sentado num sofá listrado; ao lado, uma porta de garagem entreaberta.",
+    "foco": "50% 35%",
+    "alt": "Macrô e um bastão gigante num galpão de entregas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-309-macete.png",
+    "cena": "Callback: o bastão gigante, de chapéu de cozinheiro, corta ao meio uma gema de ovo frito, que escorre sobre uma parede feita de fileiras de bolinhas com duas caudas (a membrana); o Macrô aponta para uma placa de Petri amarelada no balcão.",
+    "foco": "50% 45%",
+    "alt": "Gangrena gasosa: a alpha toxin é uma lecitinase"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old man has rapidly worsening pain in his left thigh 2 days after a crush injury in a motorcycle collision; the wound was contaminated with soil. The skin is bronze with hemorrhagic bullae, and crepitus is palpable. Gram stain of the exudate shows large gram-positive rods and few neutrophils.",
+    "pergunta": "Which virulence factor most directly causes the tissue destruction?",
+    "alternativas": {
+      "A": {
+        "texto": "Lecithinase destroying cell membranes",
+        "quiz": "Lecithinase"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of elongation factor 2",
+        "quiz": "ADP-ribosylates EF-2"
+      },
+      "C": {
+        "texto": "Blockade of acetylcholine release",
+        "quiz": "Blocks ACh release"
+      },
+      "D": {
+        "texto": "Blockade of glycine release by Renshaw cells",
+        "quiz": "Blocks glycine release"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Gangrena gasosa: a *alpha toxin* é uma lecitinase",
+    "certa": [
+      "Ferida suja de terra, dor desproporcional, crepitação e bastonetes gram-positivos grandes com poucos neutrófilos é *gas gangrene* (mionecrose) por *Clostridium perfringens*. A *alpha toxin* é uma *lecithinase* (phospholipase C) que quebra a lecitina das membranas e destrói músculo, hemácias e leucócitos, o que explica a falta de neutrófilos no Gram. A conduta é levar logo ao centro cirúrgico para desbridar, junto com penicilina e clindamicina."
+    ],
+    "termos": [
+      "Clostridium perfringens",
+      "alpha toxin",
+      "lecithinase (phospholipase C)",
+      "gas gangrene"
+    ],
+    "erradas": {
+      "B": "*ADP-ribosilar o EF-2* é a ação da toxina diftérica e da exotoxina A da Pseudomonas, que param a síntese de proteína.",
+      "C": "*Bloquear a acetilcolina* é a toxina botulínica, que dá paralisia flácida descendente sem destruir tecido.",
+      "D": "*Bloquear a glicina* das células de Renshaw é a tetanospasmina do C. tetani, que causa espasmo e trismo, não necrose com gás."
+    },
+    "macete": {
+      "frase": "*C. perfringens é o cozinheiro que só pede gema*: a lecitinase quebra a lecitina da membrana",
+      "apoio": "A alpha toxin é uma fosfolipase C: corta a lecitina das membranas do músculo, da hemácia e do neutrófilo, e por isso o Gram mostra tão pouca célula de defesa. No laboratório, a pista é a placa de ágar com gema de ovo (reação de Nagler). No hospital, centro cirúrgico já para desbridar, com penicilina e clindamicina.",
+      "fala": "Esse aí chegou de faca e garfo."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no galpão: um bastão gigante se instalou no sofá e o Macrô quer saber que arma ele trouxe. Quatro toxinas na lista, duas delas de bactérias que moram na terra; a pele e o Gram da vinheta decidem.",
+    "palavras_chave": [
+      "trauma",
+      "wound infection",
+      "anaerobes",
+      "microbiology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Crepitação, pele bronzeada e bastões grandes no Gram: qual a arma?"
+  },
+  "reel": null,
+  "exemplo": false
+}

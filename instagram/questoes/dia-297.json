@@ -1,0 +1,97 @@
+{
+  "dia": 297,
+  "data": "2027-08-25",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "hCG no primeiro trimestre",
+  "conceito": "hCG: maintains the corpus luteum and its progesterone in the first trimester",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-26",
+  "tom": null,
+  "gancho": "A estrela ia sair da novela no capítulo 14. *Quem renovou o contrato?*",
+  "gancho_apoio": "Quarta do Porquê no estúdio: o Seu Allen aperta o parafuso do cenário e procura o produtor.",
+  "imagem": {
+    "arquivo": "dia-297.png",
+    "cena": "Num estúdio de novela com holofotes, uma atriz em forma de estrela amarela segura um contrato em branco, preocupada. Seu Allen, o marceneiro do cenário, aperta um parafuso no palco com setinhas de manual em volta, enquanto um produtor redondo e misterioso entra pela porta, de costas.",
+    "foco": "50% 35%",
+    "alt": "A estrela da novela com o contrato perto do fim"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-297-macete.png",
+    "cena": "O produtor é uma pequena célula roxa de chapéu, que assina o contrato com uma caneta dourada; a estrela amarela sorri e continua sob o holofote. Ao fundo, uma placenta de óculos escuros ensaia para ser a protagonista mais adiante, e Seu Allen aplaude do palco.",
+    "foco": "50% 45%",
+    "alt": "hCG mantém o corpo lúteo no primeiro trimestre"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old woman has a positive pregnancy test. At 6 weeks' gestation, ultrasound shows an intrauterine pregnancy with cardiac activity and a 2-cm cystic corpus luteum in the left ovary. Serum progesterone is high.",
+    "pergunta": "Progesterone secretion by this ovarian structure is maintained mainly by which hormone?",
+    "alternativas": {
+      "A": {
+        "texto": "hCG from the syncytiotrophoblast",
+        "quiz": "hCG"
+      },
+      "B": {
+        "texto": "LH from the anterior pituitary",
+        "quiz": "Pituitary LH"
+      },
+      "C": {
+        "texto": "Human placental lactogen",
+        "quiz": "hPL"
+      },
+      "D": {
+        "texto": "Estriol from the fetoplacental unit",
+        "quiz": "Estriol"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "hCG mantém o *corpo lúteo* no primeiro trimestre",
+    "certa": [
+      "Sem gravidez, o *corpus luteum* regride em cerca de 14 dias, quando o LH cai. Na gravidez, o *syncytiotrophoblast* produz *hCG*, que se parece com o LH e age no mesmo receptor, mantendo o corpo lúteo e a sua *progesterone* no primeiro trimestre. Por volta de 8 a 10 semanas, a placenta assume a produção de progesterona e o corpo lúteo pode regredir."
+    ],
+    "termos": [
+      "hCG",
+      "corpus luteum",
+      "syncytiotrophoblast",
+      "luteal-placental shift"
+    ],
+    "erradas": {
+      "B": "O LH da hipófise cai na gravidez pelo retorno negativo do estrogênio e da progesterona.",
+      "C": "O hPL mexe no metabolismo materno (resistência à insulina, lipólise) e não sustenta o corpo lúteo.",
+      "D": "O estriol depende do feto e da placenta e reflete o bem-estar fetal, sem papel no corpo lúteo."
+    },
+    "macete": {
+      "frase": "Corpo lúteo é *ator com contrato de 14 dias*; o *hCG renova* até a placenta assumir a novela",
+      "apoio": "A estrela amarela (corpo lúteo quer dizer corpo amarelo) ia sair da novela no capítulo 14, mas o produtor sinciciotrofoblasto chega com a caneta dourada do hCG, que age como LH, e renova o contrato até a placenta virar protagonista, por volta de 8 a 10 semanas.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui faltava a caneta dourada."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê no estúdio de novela: a estrela ganhou mais capítulos e o contrato chegou assinado, mas ninguém viu quem assinou. Quatro hormônios no elenco; a vinheta diz em que semana estamos.",
+    "palavras_chave": [
+      "reproductive physiology",
+      "early pregnancy",
+      "hormones",
+      "obstetrics"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Endocrinology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Gravidez de 6 semanas: que hormônio mantém o corpo lúteo produzindo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

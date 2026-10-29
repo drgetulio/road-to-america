@@ -1,0 +1,98 @@
+{
+  "dia": 74,
+  "data": "2027-01-14",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Episódio depressivo maior",
+  "conceito": "Major depressive episode: 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": "Janeiro Branco (saúde mental): tom acolhedor, sem piada com o sofrimento.",
+  "remix_de": null,
+  "explicacao_em": "2027-01-15",
+  "tom": "acolhedor",
+  "cvv": true,
+  "gancho": "Janeiro Branco: quando a tristeza vira *diagnóstico*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um caminho de parque ao amanhecer. Garçom Espetinho, sem espetos e com um sorriso tranquilo, deixa uma xícara de chá fumegante num banco de madeira com uma fita branca amarrada. Ao longo do caminho, nove lanternas apagadas esperam para ser conferidas. A plaquinha verde e vermelha descansa de lado no banco.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho, sem espetos, deixa uma xícara de chá num banco de parque com fita branca; nove lanternas apagadas ao longo do caminho.",
+    "arquivo": "dia-074.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do parque: cinco das nove lanternas estão acesas, e a primeira acesa tem um ícone de nuvenzinha, o humor. No céu, uma fileira de pequenos sóis desenha duas semanas. Ao lado do banco, o Garçom Espetinho aponta com delicadeza para uma placa com o ícone de um telefone, que leva a um posto de ajuda.",
+    "alt": "Cinco de nove lanternas acesas e uma fileira de sóis de duas semanas; o Garçom Espetinho aponta para uma placa com ícone de telefone.",
+    "arquivo": "dia-074-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has felt sad nearly every day for 3 weeks. She has lost interest in her hobbies, sleeps poorly, feels worthless, and has trouble concentrating. She denies suicidal ideation and has never had elevated mood. TSH is normal, and she uses no medications or substances.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Persistent depressive disorder",
+        "quiz": "Dysthymia (PDD)"
+      },
+      "B": {
+        "texto": "Adjustment disorder",
+        "quiz": "Adjustment disorder"
+      },
+      "C": {
+        "texto": "Major depressive disorder",
+        "quiz": "Major depressive"
+      },
+      "D": {
+        "texto": "Bipolar II disorder",
+        "quiz": "Bipolar II"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Cinco sintomas por duas semanas: *episódio depressivo maior*",
+    "certa": [
+      "O *major depressive episode* exige no mínimo cinco de nove sintomas, durante duas semanas ou mais, e um deles precisa ser humor deprimido ou *anhedonia*. Ela tem humor deprimido, perda de interesse, insônia, sentimento de inutilidade e dificuldade de concentração: são 5, há 3 semanas, sem hipomania e sem causa orgânica, então o diagnóstico é *major depressive disorder*. Perguntar sobre ideação suicida faz parte de toda avaliação."
+    ],
+    "termos": [
+      "major depressive disorder",
+      "anhedonia",
+      "SIG E CAPS",
+      "persistent depressive disorder"
+    ],
+    "erradas": {
+      "A": "O transtorno depressivo persistente exige humor deprimido na maior parte dos dias por pelo menos 2 anos.",
+      "B": "O transtorno de adaptação depende de um estressor identificável e não preenche critérios de episódio depressivo maior.",
+      "D": "O bipolar II exige pelo menos um episódio de hipomania, e ela nunca teve humor elevado."
+    },
+    "macete": {
+      "frase": "*5 de 9* por *2 semanas*, com humor ou anedonia",
+      "apoio": "Pegadinha de prova: O NBME testa a duração: 2 semanas é episódio depressivo maior, 2 anos é transtorno persistente, e qualquer hipomania no passado muda para bipolar.",
+      "fala": "Hoje não tem espeto. Tem escuta, e o critério certo."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é Janeiro Branco, mês de cuidar da saúde mental. A questão pede o critério exato: quantos sintomas, por quanto tempo e quais não podem faltar. Se você está passando por um momento difícil, o CVV atende de graça pelo 188, a qualquer hora.",
+    "palavras_chave": [
+      "mental health",
+      "mood",
+      "diagnostic criteria",
+      "Janeiro Branco"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#JaneiroBranco",
+      "#SaudeMental",
+      "#Psychiatry",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cinco sintomas há 3 semanas, sem hipomania: qual diagnóstico?"
+  },
+  "exemplo": false
+}

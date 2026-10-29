@@ -1,0 +1,96 @@
+{
+  "dia": 302,
+  "data": "2027-08-30",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de hiper-IgM",
+  "conceito": "Hyper-IgM syndrome: CD40L defect prevents class switching",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-31",
+  "tom": null,
+  "gancho": "Fim de jogo e *ninguém consegue trocar de camisa*. Por quê?",
+  "gancho_apoio": "No vestiário dos linfócitos B, todo mundo ficou com a camisa de treino.",
+  "imagem": {
+    "arquivo": "dia-302.png",
+    "cena": "Num vestiário de futebol, uma fileira de linfócitos B redondos veste a mesma camisa de treino estampada de estrelinhas e segura camisas novas de outras cores que não consegue vestir. Macrô, de roupeiro, com um cesto de roupa e a comanda em branco no bolso do guardanapo, coça a cabeça.",
+    "foco": "50% 35%",
+    "alt": "Fim de jogo e ninguém consegue trocar de camisa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-302-macete.png",
+    "cena": "Em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. Macrô ergue o plugue que faltava, como um tesouro.",
+    "foco": "50% 45%",
+    "alt": "Sem CD40L, o linfócito B não troca de classe"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had recurrent otitis media, sinusitis, and one episode of Pneumocystis jirovecii pneumonia. His tonsils and lymph nodes are small. Serum IgM is elevated, whereas IgG, IgA, and IgE are nearly undetectable. Circulating B-cell and T-cell counts are normal.",
+    "pergunta": "Which protein is most likely defective?",
+    "alternativas": {
+      "A": {
+        "texto": "Bruton tyrosine kinase",
+        "quiz": "BTK"
+      },
+      "B": {
+        "texto": "CD40 ligand",
+        "quiz": "CD40 ligand"
+      },
+      "C": {
+        "texto": "Activation-induced cytidine deaminase",
+        "quiz": "AID"
+      },
+      "D": {
+        "texto": "Common gamma chain of cytokine receptors",
+        "quiz": "Common gamma chain"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem *CD40L*, o linfócito B não troca de classe",
+    "certa": [
+      "IgM alta com IgG, IgA e IgE ausentes indica falha no *class switching*. Na hiper-IgM ligada ao X falta o *CD40 ligand* (CD154) do linfócito T auxiliar, que precisa encostar no CD40 do linfócito B para liberar a troca de classe e formar centros germinativos. Como o CD40L também ativa macrófagos, aparecem infecções oportunistas como *Pneumocystis*."
+    ],
+    "termos": [
+      "hyper-IgM syndrome",
+      "CD40 ligand (CD154)",
+      "class switching",
+      "germinal centers"
+    ],
+    "erradas": {
+      "A": "Sem *BTK* faltam linfócitos B e todas as imunoglobulinas, inclusive a IgM; aqui o número de células B é normal.",
+      "C": "A deficiência de *AID* também bloqueia a troca de classe, mas é autossômica recessiva, aumenta os linfonodos e não causa Pneumocystis.",
+      "D": "Defeito da *cadeia gama comum* causa SCID ligada ao X, com linfócitos T e NK ausentes, e não IgM alta isolada."
+    },
+    "macete": {
+      "frase": "*Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM*",
+      "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica) e ninguém veste a de IgG, IgA ou IgE. Pneumocystis entra porque o macrófago também depende desse aperto de mão.",
+      "fala": "Comi, mostrei, avisei. Mas sem aperto de mão ninguém troca de camisa."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no vestiário: o Macrô virou roupeiro e ninguém troca de camisa. Quatro peças possíveis, e duas delas param a troca de camisa; a infecção que a vinheta conta separa as duas.",
+    "palavras_chave": [
+      "recurrent infections",
+      "immunodeficiency",
+      "toddler",
+      "immunology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?"
+  },
+  "reel": null,
+  "exemplo": false
+}

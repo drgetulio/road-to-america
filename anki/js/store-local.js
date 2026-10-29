@@ -16,6 +16,19 @@
      getConfigPlataforma(), saveConfigPlataforma(c)
      listParticipantes(), getMeuResumo({ agora }), listResumoParticipantes({ agora, incluirSinteticos }),
      getAtividadeDiaria(userId, { dias, agora })
+   Banco de questões (plataforma/INTERFACE.md, seção "Banco de questões"):
+     listQuestoes({ step, incluirInativas }), setStatusQuestao(id, status, { motivo }), salvarCalibracao(itens),
+     setAtivo(userId, ativo), editarGabarito(id, { correta, motivo, recorrigir }),
+     marcarRevisaoQuestao(id, { revisao, nota }), listHistoricoQuestao(id)
+     saveRespostas(lista), saveResposta(r), listRespostas({ step, origem, desde, userId, todos })
+     criarSimuladoCompleto({ formulario, sessao }), salvarProgressoSimulado(id, sessao),
+     concluirSimuladoCompleto(id, { sessao, resultado }), abandonarSimuladoCompleto(id),
+     getSimuladoCompleto(id), listSimuladosCompletos({ todos, userId, step, estado }), deleteSimuladoCompleto(id)
+     getAnotacaoItem(questaoId), saveAnotacaoItem(questaoId, texto), listAnotacoesItem()
+     reportarItem({ questao_id, motivo, texto }), listReportes({ todos, status, questaoId }), resolverReporte(id, { status, resposta })
+     saveResultadoOficial(x), listResultadosOficiais({ todos, userId, step }), deleteResultadoOficial(id)
+     listRespostasCalibracao({ step, incluirTutor, todasVersoes }), getEstatisticasItens({ step, incluirTutor, todasVersoes })
+     getModelosPsicometricos(), saveModeloPsicometrico(step, dados)
    No painel do admin, este modo junta o participante de demonstração (dados reais
    deste navegador) a uma COORTE SINTÉTICA gerada na memória por
    plataforma/js/coorte-demo.js (linhas com sintetico: true). A coorte não é
@@ -26,13 +39,25 @@ import { uid, dayKey } from "./util.js";
 import { validarTentativa } from "../../plataforma/js/simulado.js";
 import { resumirParticipante, validarNbme, normalizarNbme, parsePresencaCsv, mergeConfig, atividadeDiaria } from "../../plataforma/js/desempenho.js";
 import { gerarCoorte, ehSintetico } from "../../plataforma/js/coorte-demo.js";
+import { lerBancoDemo, normalizarItem, partePrivada, partePublica } from "../../plataforma/js/banco.js";
+
+/* Mentores fictícios do painel Angoff da demonstração (selo "fictício" na tela) */
+const PREFIXO_MENTOR = "demo-sint-mentor-";
+const MENTORES_FICTICIOS = Object.freeze(["Helena Prado", "Rafael Moura", "Camila Teixeira", "Daniel Souza", "Lívia Andrade", "Marcos Faria", "Beatriz Nunes", "Gustavo Lima", "Paula Rezende", "Thiago Barros", "Renata Costa", "Felipe Araújo"].map((n, i) => Object.freeze({ id: PREFIXO_MENTOR + (i + 1), nome: n + " (fictício)" })));
+import { analisarItens } from "../../plataforma/js/psicometria.js";
+import { gerarRespostasDemo, gerarDesfechosDemo, gerarReportesDemo, modeloVerdadeiro } from "../../plataforma/js/respostas-demo.js";
+import {
+  normalizarResposta, validarResposta, validarFormularioGravado, validarSessao, validarProgresso,
+  validarAnotacaoItem, validarReporte, validarResultadoOficial, normalizarResultadoOficial, validarCalibracao,
+  STATUS_REPORTE, ESTADOS_SIMULADO
+} from "../../plataforma/js/registros.js";
 
 const CHAVE = "r2a-anki-demo-v1";
 export const CHAVE_COORTE = "r2a-plataforma-coorte-v1";
 
 export const DEMO_USERS = {
-  admin: { id: "demo-admin", nome: "Administrador (demonstração)", email: "admin@demo.local", papel: "admin" },
-  participante: { id: "demo-participante", nome: "Participante (demonstração)", email: "participante@demo.local", papel: "participante" }
+  admin: { id: "demo-admin", nome: "Administrador (demonstração)", email: "admin@demo.local", papel: "admin", ativo: true },
+  participante: { id: "demo-participante", nome: "Participante (demonstração)", email: "participante@demo.local", papel: "participante", ativo: true }
 };
 
 function memoria() {
@@ -43,7 +68,10 @@ function memoria() {
 function vazio() {
   return {
     versao: 1, papel: "participante", cards: {}, historico: [], estados: {}, revlog: {}, sinalizacoes: [], configuracoes: {}, seeds: {},
-    simulados: [], nbme: [], presenca: {}, planos: {}, plataforma: {}, anotacoes: {}
+    simulados: [], nbme: [], presenca: {}, planos: {}, plataforma: {}, anotacoes: {},
+    respostas: [], simuladosCompletos: [], anotacoesItem: {}, reportes: [], resultadosOficiais: [],
+    calibracao: {}, statusQuestoes: {}, ativos: {}, modelos: {},
+    questoesEdicoes: {}, historicoQuestoes: [], reportesDemo: {}
   };
 }
 function edicoesVazias() {
@@ -51,9 +79,11 @@ function edicoesVazias() {
 }
 
 export class LocalStore {
-  constructor({ storage, bancosSimulado = null } = {}) {
+  constructor({ storage, bancosSimulado = null, questoes = null } = {}) {
     this.mode = "local";
     this.bancosSimulado = bancosSimulado;
+    this.questoesInjetadas = questoes;
+    this.ultimaLeituraQuestoes = null;
     this._coorteCache = null;
     this.storage = storage || (() => { try { localStorage.setItem("__t", "1"); localStorage.removeItem("__t"); return localStorage; } catch { return memoria(); } })();
     this.persistente = !!storage || this.storage !== undefined;
@@ -101,7 +131,10 @@ export class LocalStore {
     if (mudou) this._gravar();
   }
 
-  get user() { return DEMO_USERS[this.db.papel] || DEMO_USERS.participante; }
+  get user() {
+    const u = DEMO_USERS[this.db.papel] || DEMO_USERS.participante;
+    return { ...u, ativo: this._ativo(u.id) };
+  }
   onAuthChange(cb) { this.ouvintes.add(cb); return () => this.ouvintes.delete(cb); }
   setDemoRole(papel) {
     if (!DEMO_USERS[papel]) return;
@@ -124,7 +157,8 @@ export class LocalStore {
   }
 
   _historico(c, acao) {
-    this.db.historico.push({ id: uid("h"), card_id: c.id, versao: c.versao, acao, editor_id: this.user.id, dados: { ...c, tags: [...c.tags] }, criado_em: new Date().toISOString() });
+    const seq = (this.db.seqHistoricoCards = (Number(this.db.seqHistoricoCards) || this.db.historico.length) + 1);
+    this.db.historico.push({ id: uid("h"), seq, card_id: c.id, versao: c.versao, acao, editor_id: this.user.id, dados: { ...c, tags: [...c.tags] }, criado_em: new Date().toISOString() });
   }
 
   async saveCard(input) {
@@ -188,7 +222,8 @@ export class LocalStore {
   async listHistory(cardId) {
     const c = this.db.cards[cardId];
     if (c && !canView(c, this.user)) return [];
-    return this.db.historico.filter((h) => h.card_id === cardId).sort((a, b) => b.criado_em.localeCompare(a.criado_em));
+    /* mais recente primeiro; no mesmo milissegundo, a ordem de gravação (seq) desempata */
+    return this.db.historico.filter((h) => h.card_id === cardId).sort((a, b) => b.criado_em.localeCompare(a.criado_em) || (b.seq ?? 0) - (a.seq ?? 0));
   }
 
   /* Importação em lote. Admin escolhe o baralho; participante importa como pessoal. */
@@ -523,10 +558,10 @@ export class LocalStore {
   async listParticipantes({ incluirSinteticos = true } = {}) {
     this._exigeAdmin("Só administradores veem a lista de participantes.");
     const p = DEMO_USERS.participante;
-    const reais = [{ id: p.id, nome: p.nome, email: p.email, papel: "participante", criado_em: this.db.criado_em || null, sintetico: false }];
+    const reais = [{ id: p.id, nome: p.nome, email: p.email, papel: "participante", criado_em: this.db.criado_em || null, sintetico: false, ativo: this._ativo(p.id) }];
     if (!incluirSinteticos) return reais;
     const c = await this._coorte();
-    return reais.concat(c.participantes.map((x) => ({ id: x.id, nome: x.nome, email: x.email, papel: x.papel, criado_em: x.criado_em, sintetico: true, perfil_demo: x.perfil_demo })));
+    return reais.concat(c.participantes.map((x) => ({ id: x.id, nome: x.nome, email: x.email, papel: x.papel, criado_em: x.criado_em, sintetico: true, perfil_demo: x.perfil_demo, ativo: true })));
   }
   _resumoReal(perfil, agora) {
     const id = perfil.id;
@@ -540,6 +575,8 @@ export class LocalStore {
       presenca: this.db.presenca[id] || null,
       plano: this.db.planos[id] || null,
       configuracoes: this.db.configuracoes[id] || null,
+      respostas: (this.db.respostas || []).filter((r) => r.user_id === id),
+      simuladosCompletos: (this.db.simuladosCompletos || []).filter((s) => s.user_id === id),
       agora
     });
   }
@@ -570,6 +607,662 @@ export class LocalStore {
     const revlog = ehSintetico(alvo) ? ((await this._coorte(agora)).revlog[alvo] || []) : (this.db.revlog[alvo] || []);
     return atividadeDiaria(revlog, { dias, agora });
   }
+
+  /* =====================================================================
+     Banco de questões: itens, respostas por item, simulados completos,
+     anotações do aluno, reportes de erro, resultados oficiais e leituras
+     agregadas do admin (plataforma/INTERFACE.md)
+     ===================================================================== */
+  /* No modo demonstração, todo participante tem matrícula ativa, salvo se o admin
+     desativar (a chave fica em db.ativos) */
+  _ativo(userId) { return this.db?.ativos?.[userId] !== false; }
+
+  async _questoesBrutas() {
+    if (this.questoesInjetadas) { this.ultimaLeituraQuestoes = { fontes: [], privado: false }; return this.questoesInjetadas; }
+    if (!this._questoesPromessa) {
+      this._questoesPromessa = lerBancoDemo().then((r) => { this.ultimaLeituraQuestoes = { fontes: r.fontes, privado: r.privado, formularios: r.formularios || null }; return r.itens; })
+        .catch((e) => { this._questoesPromessa = null; throw e; });
+    }
+    return this._questoesPromessa;
+  }
+  /* Itens com as correções de gabarito do admin aplicadas (o arquivo original não muda;
+     a correção sobe a versão do item, como o gatilho questoes_guard do banco) */
+  async _questoesVigentes() {
+    const brutas = await this._questoesBrutas();
+    const ed = this.db.questoesEdicoes || {};
+    const chave = JSON.stringify(ed);
+    if (this._vigentesCache?.fonte === brutas && this._vigentesCache.chave === chave) return this._vigentesCache.itens;
+    const itens = brutas.map((q) => { const x = ed[q.id]; return x && x.correta ? { ...q, correta: x.correta, versao: x.versao } : q; });
+    this._vigentesCache = { fonte: brutas, chave, itens };
+    return itens;
+  }
+  async _gabarito() {
+    const brutas = await this._questoesVigentes();
+    if (this._gabaritoCache?.fonte === brutas) return this._gabaritoCache.mapa;
+    const mapa = new Map();
+    for (const b of brutas) { const q = normalizarItem(b); if (q.id) mapa.set(q.id, q); }
+    this._gabaritoCache = { fonte: brutas, mapa };
+    return mapa;
+  }
+
+  /* No modo demonstração o navegador tem o banco inteiro: o gabarito não fica no
+     servidor e a correção acontece no próprio navegador, como antes. Os métodos
+     responderItens, revelarItens e corrigirSimulado existem para que as telas usem a
+     mesma chamada nos dois modos. */
+  get gabaritoNoServidor() { return false; }
+  async responderItens(lista, { revelar = true } = {}) {
+    const linhas = Array.isArray(lista) ? lista : [lista];
+    const gravadas = await this.saveRespostas(linhas);
+    const mapa = await this._gabarito();
+    return gravadas.map((r) => ({ id: r.id, questao_id: r.questao_id, posicao: r.posicao ?? null, resposta: r.resposta ?? null, correta: !!r.correta, ...(revelar && mapa.get(r.questao_id) ? { revelado: partePrivada(mapa.get(r.questao_id)) } : {}) }));
+  }
+  async revelarItens(ids) {
+    const mapa = await this._gabarito();
+    const out = {};
+    for (const id of ids || []) if (mapa.has(id)) out[id] = partePrivada(mapa.get(id));
+    return out;
+  }
+
+  async listQuestoes({ step = null, incluirInativas = false } = {}) {
+    const u = this.user;
+    const admin = isAdmin(u);
+    if (!admin && !this._ativo(u.id)) return [];
+    const out = [];
+    const ed = this.db.questoesEdicoes || {};
+    for (const q of await this._questoesVigentes()) {
+      const norm = normalizarItem(q);
+      if (step && norm.step !== step) continue;
+      const status = this.db.statusQuestoes[q.id] || q.status || "ativo";
+      if (status !== "ativo" && !(admin && incluirInativas)) continue;
+      const cal = this.db.calibracao[q.id];
+      const rev = admin ? { em_revisao: !!ed[q.id]?.em_revisao, revisao_nota: ed[q.id]?.revisao_nota || "" } : {};
+      /* Angoff publicado pelo painel (vale enquanto a versão do item for a mesma) */
+      const pub = this.db.angoff?.publicado?.[q.id];
+      const ang = pub && pub.versao === (norm.versao || 1) ? { angoff_painel: pub.angoff, angoff_painel_juizes: pub.juizes, angoff_painel_ep: pub.ep ?? null } : {};
+      out.push({ ...structuredClone(q), status, ...rev, ...ang, ...(cal ? { b_calibrado: cal.b, ep_calibrado: cal.ep, n_calibracao: cal.n, calibrado_em: cal.em } : {}) });
+    }
+    return out;
+  }
+  async _itemVigente(id) {
+    const q = (await this._gabarito()).get(id);
+    if (!q) throw new Error("Questão não encontrada.");
+    return q;
+  }
+  _historicoQuestao(questao_id, versao, acao, de, para, motivo, extra = {}) {
+    /* seq: ordem de gravação. Duas ações no mesmo milissegundo têm o mesmo criado_em, e o
+       desempate pelo id (aleatório) trocava a ordem às vezes (como o identity do banco) */
+    const seq = (this.db.seqHistorico = (Number(this.db.seqHistorico) || this.db.historicoQuestoes.length) + 1);
+    const reg = { id: uid("qh"), seq, questao_id, versao, acao, de: de ?? null, para: para ?? null, motivo: String(motivo || "").trim(), recorrigidas: null, editor_id: this.user.id, criado_em: new Date().toISOString(), ...extra };
+    this.db.historicoQuestoes.push(reg);
+    return reg;
+  }
+  async setStatusQuestao(id, status, { motivo = "" } = {}) {
+    this._exigeAdmin("Só administradores mudam o status de uma questão.");
+    if (!["ativo", "rascunho", "suspenso", "aposentado"].includes(status)) throw new Error("Status inválido.");
+    if (String(motivo).length > 1000) throw new Error("O motivo tem no máximo 1000 caracteres.");
+    const q = await this._itemVigente(id);
+    const antes = this.db.statusQuestoes[id] || "ativo";
+    this.db.statusQuestoes[id] = status;
+    if (antes !== status) this._historicoQuestao(id, q.versao, "status", antes, status, motivo);
+    this._gravar();
+    return { id, status };
+  }
+  /* Correção de gabarito com registro de versão: a versão do item sobe, a calibração
+     dele é apagada e, com recorrigir, as respostas já gravadas são corrigidas de novo
+     pela alternativa nova (no Supabase: r2a_admin_editar_gabarito). */
+  async editarGabarito(id, { correta, motivo = "", recorrigir = true } = {}) {
+    this._exigeAdmin("Só administradores editam o gabarito.");
+    const q = await this._itemVigente(id);
+    const letra = String(correta || "").trim().toUpperCase();
+    const m = String(motivo || "").trim();
+    if (m.length < 5 || m.length > 1000) throw new Error("Explique o motivo da mudança (de 5 a 1000 caracteres).");
+    if (!q.alternativas.some((a) => a.letra === letra)) throw new Error("A resposta correta não está entre as alternativas.");
+    if (letra === q.correta) throw new Error("A alternativa escolhida já é o gabarito.");
+    const versao = (q.versao || 1) + 1;
+    const ed = (this.db.questoesEdicoes[id] ||= {});
+    Object.assign(ed, { correta: letra, versao });
+    delete this.db.calibracao[id];
+    let recorrigidas = 0;
+    if (recorrigir) {
+      for (const r of this.db.respostas) {
+        if (r.questao_id !== id) continue;
+        /* só as respostas da versão em vigor (o mesmo conteúdo): respostas de uma
+           versão de conteúdo anterior continuam fora */
+        if (r.versao_item !== null && r.versao_item !== undefined && r.versao_item !== (q.versao || 1)) continue;
+        r.correta = r.resposta !== null && r.resposta === letra;
+        r.versao_item = versao;
+        recorrigidas++;
+      }
+    }
+    this._historicoQuestao(id, versao, "gabarito", q.correta, letra, m, { recorrigidas: recorrigir ? recorrigidas : null });
+    this._gravar();
+    return { id, versao, de: q.correta, para: letra, recorrigidas };
+  }
+  /* Marca para revisão: o item continua no banco (e na estimativa dos alunos) até
+     a equipe decidir; retirar do banco é setStatusQuestao(id, "suspenso"). */
+  async marcarRevisaoQuestao(id, { revisao = true, nota = "" } = {}) {
+    this._exigeAdmin("Só administradores marcam itens para revisão.");
+    const q = await this._itemVigente(id);
+    const n = String(nota || "").trim();
+    if (n.length > 1000) throw new Error("A nota tem no máximo 1000 caracteres.");
+    const ed = (this.db.questoesEdicoes[id] ||= {});
+    const antes = !!ed.em_revisao;
+    ed.em_revisao = !!revisao;
+    ed.revisao_nota = revisao ? n : "";
+    if (antes !== !!revisao || revisao) this._historicoQuestao(id, q.versao, "revisao", antes ? "sim" : "nao", revisao ? "sim" : "nao", n);
+    this._gravar();
+    return { id, em_revisao: !!revisao, revisao_nota: ed.revisao_nota };
+  }
+  async listHistoricoQuestao(id = null) {
+    this._exigeAdmin("Só administradores leem o histórico das questões.");
+    return this.db.historicoQuestoes.filter((h) => !id || h.questao_id === id).sort((a, b) => a.criado_em.localeCompare(b.criado_em) || (a.seq ?? 0) - (b.seq ?? 0)).map((h) => ({ ...h }));
+  }
+  /* itens: [{ id, b, ep, n }]; b = null apaga a calibração do item */
+  async salvarCalibracao(itens) {
+    this._exigeAdmin("Só administradores gravam a calibração.");
+    const lista = (itens || []).filter((x) => x && x.b !== null);
+    const erros = lista.length ? validarCalibracao(lista) : [];
+    if (erros.length) throw new Error(erros.join(" "));
+    const em = new Date().toISOString();
+    for (const it of itens || []) {
+      if (it.b === null) delete this.db.calibracao[it.id];
+      else this.db.calibracao[it.id] = { b: Number(it.b), ep: Number.isFinite(it.ep) ? Number(it.ep) : null, n: Number.isInteger(it.n) ? it.n : 0, em };
+    }
+    this._gravar();
+    return { gravados: (itens || []).length };
+  }
+  async setAtivo(userId, ativo) {
+    this._exigeAdmin("Só administradores ativam matrículas.");
+    if (ehSintetico(userId)) throw new Error("Participantes fictícios ficam sempre ativos.");
+    this.db.ativos[userId] = !!ativo;
+    this._gravar();
+    return { id: userId, ativo: !!ativo };
+  }
+
+  /* ---------- respostas por item ---------- */
+  async saveRespostas(lista) {
+    const u = this.user;
+    const gab = await this._gabarito();
+    const agora = new Date().toISOString();
+    const regs = [];
+    for (const r of Array.isArray(lista) ? lista : [lista]) {
+      const n = normalizarResposta(r);
+      const g = gab.get(n.questao_id);
+      /* como no banco: com o item no banco, o gabarito, o Step e a versão vêm de lá */
+      if (g) { n.step = g.step; n.correta = n.resposta !== null && n.resposta === g.correta; n.versao_item = g.versao; }
+      const e = validarResposta(n);
+      if (e.length) throw new Error(e.join(" "));
+      regs.push({ ...n, id: uid("ri"), user_id: u.id, criado_em: agora });
+    }
+    this.db.respostas.push(...regs);
+    this._gravar();
+    return structuredClone(regs);
+  }
+  async saveResposta(r) { return (await this.saveRespostas([r]))[0]; }
+  /* Dados fictícios da demonstração (respostas, desfechos e reportes), gerados na
+     memória a cada dia por respostas-demo.js. As respostas seguem o gabarito em
+     vigor (uma correção do admin vale também para elas). */
+  async _demo(agora = new Date()) {
+    const brutas = await this._questoesBrutas();
+    const corr = Object.entries(this.db.questoesEdicoes || {}).filter(([, x]) => x.correta);
+    const chave = dayKey(agora) + "|" + brutas.length + "|" + JSON.stringify(corr.map(([id, x]) => [id, x.correta, x.versao]));
+    if (this._demoCache?.chave === chave && this._demoCache.fonte === brutas) return this._demoCache.dados;
+    const modelo = this._modeloDemo?.fonte === brutas ? this._modeloDemo.modelo : (this._modeloDemo = { fonte: brutas, modelo: modeloVerdadeiro(brutas) }).modelo;
+    const gabaritos = new Map(corr.map(([id, x]) => [id, { correta: x.correta, versao: x.versao }]));
+    const respostas = gerarRespostasDemo({ itens: brutas, agora, gabaritos, modelo });
+    const dados = { respostas, desfechos: gerarDesfechosDemo({ itens: brutas, respostas, agora }), reportes: gerarReportesDemo({ itens: brutas, agora, modelo }) };
+    this._demoCache = { chave, fonte: brutas, dados };
+    return dados;
+  }
+  async _respostasSinteticas(agora = new Date()) { return (await this._demo(agora)).respostas; }
+  /* Defeito plantado no item pela simulação da demonstração (ou null), para a ficha
+     do item avisar que o problema é da simulação e não do item público */
+  async _defeitoDemo(id) {
+    const brutas = await this._questoesBrutas();
+    if (this._modeloDemo?.fonte !== brutas) this._modeloDemo = { fonte: brutas, modelo: modeloVerdadeiro(brutas) };
+    const m = this._modeloDemo.modelo.get(id);
+    return m?.defeito ? { defeito: m.defeito, chave_simulada: m.chave_verdadeira } : null;
+  }
+  async listRespostas({ step = null, origem = null, desde = null, userId = null, todos = false } = {}) {
+    const u = this.user;
+    let lista = this.db.respostas.slice();
+    if (isAdmin(u) && (todos || (userId && ehSintetico(userId)))) lista = lista.concat(await this._respostasSinteticas());
+    if (!isAdmin(u)) lista = lista.filter((r) => r.user_id === u.id);
+    else if (userId) lista = lista.filter((r) => r.user_id === userId);
+    else if (!todos) lista = lista.filter((r) => r.user_id === u.id);
+    if (step) lista = lista.filter((r) => r.step === step);
+    if (origem) lista = lista.filter((r) => r.origem === origem);
+    if (desde) { const d = Date.parse(desde); lista = lista.filter((r) => Date.parse(r.respondida_em) >= d); }
+    return lista.sort((a, b) => String(a.respondida_em).localeCompare(String(b.respondida_em))).map((r) => ({ ...r }));
+  }
+
+  /* ---------- simulados completos ---------- */
+  _simCompleto(id) {
+    const s = this.db.simuladosCompletos.find((x) => x.id === id);
+    if (!s) throw new Error("Simulado não encontrado.");
+    const u = this.user;
+    if (s.user_id !== u.id && !isAdmin(u)) throw new PermissionError("Você só acessa os seus simulados.");
+    return s;
+  }
+  async criarSimuladoCompleto({ formulario, sessao }) {
+    const u = this.user;
+    const e = validarFormularioGravado(formulario).concat(formulario ? validarSessao(formulario, sessao) : []);
+    if (e.length) throw new Error(e.join(" "));
+    const agora = new Date().toISOString();
+    const reg = {
+      id: uid("sc"), user_id: u.id, step: formulario.step, tipo: formulario.tipo, montagem: formulario.modo === "personalizado" ? "personalizado" : "fixo",
+      formulario_id: String(formulario.id), nome: String(formulario.nome || "").slice(0, 120), reduzido: !!formulario.reduzido,
+      formulario: structuredClone(formulario), sessao: structuredClone(sessao), estado: "em_andamento", bloco_atual: sessao.bloco_atual,
+      resultado: null, inicio: agora, atualizado_em: agora, fim: null, criado_em: agora
+    };
+    this.db.simuladosCompletos.push(reg);
+    this._gravar();
+    return structuredClone(reg);
+  }
+  _atualizarSimCompleto(id, sessao, patch = {}) {
+    const s = this._simCompleto(id);
+    const admin = isAdmin(this.user);
+    if (s.estado !== "em_andamento" && !admin) throw new PermissionError("Simulado encerrado não pode ser alterado.");
+    if (sessao) {
+      const e = validarSessao(s.formulario, sessao).concat(admin ? [] : validarProgresso(s.sessao, sessao));
+      if (e.length) throw new Error(e.join(" "));
+      s.sessao = structuredClone(sessao);
+      s.bloco_atual = sessao.bloco_atual;
+    }
+    Object.assign(s, patch, { atualizado_em: new Date().toISOString() });
+    this._gravar();
+    return structuredClone(s);
+  }
+  async salvarProgressoSimulado(id, sessao) { return this._atualizarSimCompleto(id, sessao); }
+  async concluirSimuladoCompleto(id, { sessao = null, resultado = null } = {}) {
+    return this._atualizarSimCompleto(id, sessao, { estado: "concluido", resultado: resultado ? structuredClone(resultado) : null, fim: new Date().toISOString() });
+  }
+  /* =====================================================================
+     Painel Angoff (plataforma/js/angoff.js). No Supabase: tabelas angoff_* e funções
+     r2a_angoff_* (supabase/schema.sql). Na demonstração: o admin de demonstração pode
+     ser juiz, e 6 mentores fictícios (com selo) completam o painel; as estimativas
+     deles entram quando a rodada é fechada.
+     ===================================================================== */
+  _angoff() {
+    const a = (this.db.angoff ||= { paineis: [], juizes: [], avaliacoes: [], discussao: [], hofstee: [], publicado: {}, seq: 0 });
+    for (const k of ["paineis", "juizes", "avaliacoes", "discussao", "hofstee"]) a[k] ||= [];
+    a.publicado ||= {};
+    return a;
+  }
+  _painel(id) {
+    const p = this._angoff().paineis.find((x) => x.id === id);
+    if (!p) throw new Error("Painel não encontrado.");
+    if (!isAdmin(this.user) && !this._souJuiz(id)) throw new PermissionError("Só o admin e os juízes designados veem este painel.");
+    return p;
+  }
+  _souJuiz(id, userId = this.user.id) { return this._angoff().juizes.some((j) => j.painel_id === id && j.juiz_id === userId); }
+  async listJuizesPossiveis() {
+    this._exigeAdmin("Só administradores designam juízes.");
+    return [{ id: DEMO_USERS.admin.id, nome: DEMO_USERS.admin.nome, sintetico: false }, ...MENTORES_FICTICIOS.map((m) => ({ ...m, sintetico: true }))];
+  }
+  async listPaineisAngoff() {
+    const a = this._angoff();
+    const lista = isAdmin(this.user) ? a.paineis : a.paineis.filter((p) => this._souJuiz(p.id));
+    return structuredClone(lista).sort((x, y) => String(y.criado_em).localeCompare(String(x.criado_em)));
+  }
+  async getPainelAngoff(id) {
+    const p = this._painel(id);
+    const juizes = this._angoff().juizes.filter((j) => j.painel_id === id);
+    return { painel: structuredClone(p), juizes: isAdmin(this.user) ? structuredClone(juizes) : juizes.filter((j) => j.juiz_id === this.user.id).map((j) => ({ ...j })), n_juizes: juizes.length, sou_juiz: this._souJuiz(id) };
+  }
+  async criarPainelAngoff({ step, nome, descricao = "", itens = [], rodadas_max = 3, juizes = [] } = {}) {
+    this._exigeAdmin("Só administradores criam painéis.");
+    const { validarPainel } = await import("../../plataforma/js/angoff.js");
+    const e = validarPainel({ step, nome, itens, rodadas_max });
+    if (e.length) throw new Error(e.join(" "));
+    const mapa = await this._gabarito();
+    if (itens.some((id) => mapa.get(id)?.step !== step)) throw new Error("Todos os itens do painel precisam estar no banco e no Step do painel.");
+    const a = this._angoff();
+    const p = { id: uid("pa"), step, nome: String(nome).trim(), descricao: String(descricao || "").slice(0, 2000), itens: [...itens], rodada: 1, rodadas_max: Number(rodadas_max), estado: "avaliacao", publicado_em: null, criado_por: this.user.id, criado_em: new Date().toISOString(), atualizado_em: new Date().toISOString() };
+    a.paineis.push(p);
+    this._gravar();
+    if (juizes.length) await this.designarJuizesAngoff(p.id, juizes);
+    return structuredClone(p);
+  }
+  async designarJuizesAngoff(id, juizes) {
+    this._exigeAdmin("Só administradores designam juízes.");
+    this._painel(id);
+    const ids = [...new Set((juizes || []).map((j) => (typeof j === "string" ? j : j.id)))];
+    if (ids.includes(DEMO_USERS.participante.id) && this._ativo(DEMO_USERS.participante.id)) throw new Error("Aluno com matrícula ativa não pode ser juiz do painel Angoff.");
+    const nomes = new Map([[DEMO_USERS.admin.id, DEMO_USERS.admin.nome], ...MENTORES_FICTICIOS.map((m) => [m.id, m.nome])]);
+    const a = this._angoff();
+    a.juizes = a.juizes.filter((j) => j.painel_id !== id).concat(ids.map((jid) => ({ painel_id: id, juiz_id: jid, nome: nomes.get(jid) || jid, sintetico: jid.startsWith(PREFIXO_MENTOR), designado_em: new Date().toISOString() })));
+    this._gravar();
+    return a.juizes.filter((j) => j.painel_id === id).map((j) => ({ ...j }));
+  }
+  async listItensPainelAngoff(id) {
+    const p = this._painel(id);
+    const mapa = await this._gabarito();
+    return p.itens.map((qid) => mapa.get(qid)).filter(Boolean).map((q) => partePublica(structuredClone(q)));
+  }
+  async avaliarItemAngoff(id, questao_id, valor, comentario = "") {
+    const p = this._painel(id);
+    if (!this._souJuiz(id)) throw new PermissionError("Só os juízes designados avaliam os itens do painel.");
+    if (p.estado !== "avaliacao") throw new Error("Não há rodada de avaliação aberta neste painel.");
+    if (!p.itens.includes(questao_id)) throw new Error("O item não faz parte do painel.");
+    const { validarEstimativa } = await import("../../plataforma/js/angoff.js");
+    const e = validarEstimativa(valor);
+    if (e.length) throw new Error(e.join(" "));
+    if (String(comentario || "").length > 1000) throw new Error("O comentário tem no máximo 1000 caracteres.");
+    const a = this._angoff();
+    const k = (x) => x.painel_id === id && x.juiz_id === this.user.id && x.questao_id === questao_id && x.rodada === p.rodada;
+    const reg = { painel_id: id, juiz_id: this.user.id, questao_id, rodada: p.rodada, valor: Number(valor), comentario: String(comentario || "").trim(), atualizado_em: new Date().toISOString() };
+    const i = a.avaliacoes.findIndex(k);
+    if (i >= 0) a.avaliacoes[i] = { ...a.avaliacoes[i], ...reg }; else a.avaliacoes.push({ ...reg, criado_em: reg.atualizado_em });
+    this._gravar();
+    const q = (await this._gabarito()).get(questao_id);
+    return { questao_id, rodada: p.rodada, valor: Number(valor), revelado: partePrivada(q) };
+  }
+  async revelarPainelAngoff(id) {
+    const p = this._painel(id);
+    const mapa = await this._gabarito();
+    const minhas = new Set(this._angoff().avaliacoes.filter((x) => x.painel_id === id && x.juiz_id === this.user.id).map((x) => x.questao_id));
+    const out = {};
+    for (const qid of p.itens) if (mapa.has(qid) && (isAdmin(this.user) || minhas.has(qid))) out[qid] = partePrivada(mapa.get(qid));
+    return out;
+  }
+  async listAvaliacoesAngoff(id) {
+    this._painel(id);
+    const l = this._angoff().avaliacoes.filter((x) => x.painel_id === id);
+    return structuredClone(isAdmin(this.user) ? l : l.filter((x) => x.juiz_id === this.user.id));
+  }
+  async feedbackPainelAngoff(id) {
+    const p = this._painel(id);
+    const { rodadasFechadas, estatisticaItem, pObservado } = await import("../../plataforma/js/angoff.js");
+    const fechadas = rodadasFechadas(p);
+    const av = this._angoff().avaliacoes.filter((x) => x.painel_id === id);
+    const estimativas = [];
+    for (const r of fechadas) for (const qid of p.itens) {
+      const vs = av.filter((x) => x.rodada === r && x.questao_id === qid).map((x) => x.valor);
+      if (!vs.length) continue;
+      const st = estatisticaItem(vs);
+      estimativas.push({ questao_id: qid, rodada: r, n: st.n, media: Math.round(st.media * 100) / 100, dp: Math.round(st.dp * 100) / 100, min: st.min, max: st.max, histograma: st.histograma });
+    }
+    let p_observado = {};
+    if (fechadas.length) {
+      const mapa = await this._gabarito();
+      const todas = (await this._todasRespostas()).filter((r) => mapa.get(r.questao_id) && (r.versao_item === null || r.versao_item === undefined || r.versao_item === mapa.get(r.questao_id).versao));
+      p_observado = pObservado(todas, p.itens);
+    }
+    return { rodadas_fechadas: fechadas.length ? Math.max(...fechadas) : 0, estimativas, p_observado };
+  }
+  /* todas as respostas da turma (as do aluno de demonstração e as fictícias) */
+  async _todasRespostas() {
+    const ant = this.db.papel;
+    this.db.papel = "admin";
+    try { return await this.listRespostas({ todos: true }); } finally { this.db.papel = ant; }
+  }
+  async listDiscussaoAngoff(id) {
+    this._painel(id);
+    return structuredClone(this._angoff().discussao.filter((x) => x.painel_id === id)).sort((a, b) => a.seq - b.seq);
+  }
+  async comentarAngoff(id, { questao_id = null, texto = "" } = {}) {
+    const p = this._painel(id);
+    if (p.estado === "encerrado") throw new Error("O painel está encerrado.");
+    if (questao_id && !p.itens.includes(questao_id)) throw new Error("O item não faz parte do painel.");
+    const t = String(texto || "").trim();
+    if (!t || t.length > 2000) throw new Error("O comentário tem de 1 a 2000 caracteres.");
+    const a = this._angoff();
+    const c = { id: uid("ad"), seq: ++a.seq, painel_id: id, questao_id: questao_id || null, rodada: p.rodada, autor_id: this.user.id, autor_nome: this.user.nome, texto: t, criado_em: new Date().toISOString() };
+    a.discussao.push(c);
+    this._gravar();
+    return { ...c };
+  }
+  async listHofsteeAngoff(id) {
+    this._painel(id);
+    const l = this._angoff().hofstee.filter((x) => x.painel_id === id);
+    return structuredClone(isAdmin(this.user) ? l : l.filter((x) => x.juiz_id === this.user.id));
+  }
+  async salvarHofsteeAngoff(id, h) {
+    const p = this._painel(id);
+    if (!this._souJuiz(id) && !isAdmin(this.user)) throw new PermissionError("Só os juízes designados respondem o Hofstee.");
+    if (p.estado === "encerrado") throw new Error("O painel está encerrado.");
+    const { validarHofstee } = await import("../../plataforma/js/angoff.js");
+    const e = validarHofstee(h);
+    if (e.length) throw new Error(e.join(" "));
+    const a = this._angoff();
+    const reg = { painel_id: id, juiz_id: this.user.id, k_min: Number(h.k_min), k_max: Number(h.k_max), f_min: Number(h.f_min), f_max: Number(h.f_max), atualizado_em: new Date().toISOString() };
+    a.hofstee = a.hofstee.filter((x) => !(x.painel_id === id && x.juiz_id === this.user.id)).concat([reg]);
+    this._gravar();
+    return { ...reg };
+  }
+  async avancarPainelAngoff(id, acao) {
+    this._exigeAdmin("Somente administradores conduzem o painel.");
+    const p = this._painel(id);
+    const { proximoEstado, estimativasFicticias, pObservado } = await import("../../plataforma/js/angoff.js");
+    const prox = proximoEstado(p, acao);
+    const a = this._angoff();
+    /* ao fechar a rodada (ou encerrar com a rodada aberta), os mentores fictícios
+       designados entram com as estimativas da rodada e, no fim, com o Hofstee */
+    if ((acao === "fechar_rodada" || acao === "encerrar") && p.estado === "avaliacao") {
+      const ficticios = a.juizes.filter((j) => j.painel_id === id && j.sintetico).map((j) => j.juiz_id)
+        .filter((jid) => !a.avaliacoes.some((x) => x.painel_id === id && x.juiz_id === jid && x.rodada === p.rodada));
+      if (ficticios.length) {
+        const mapa = await this._gabarito();
+        const pObs = p.rodada > 1 ? pObservado(await this._todasRespostas(), p.itens) : {};
+        const novas = estimativasFicticias({ juizes: ficticios, itens: p.itens, porId: mapa, rodada: p.rodada, anteriores: a.avaliacoes.filter((x) => x.painel_id === id), pObs });
+        const agora = new Date().toISOString();
+        a.avaliacoes.push(...novas.map(({ ordem, ...x }) => ({ painel_id: id, comentario: "", criado_em: agora, atualizado_em: agora, ...x })));
+      }
+    }
+    if (prox.estado === "encerrado" || acao === "fechar_rodada") {
+      for (const j of a.juizes.filter((x) => x.painel_id === id && x.sintetico)) {
+        if (a.hofstee.some((x) => x.painel_id === id && x.juiz_id === j.juiz_id)) continue;
+        const k = MENTORES_FICTICIOS.findIndex((m) => m.id === j.juiz_id);
+        a.hofstee.push({ painel_id: id, juiz_id: j.juiz_id, k_min: 52 + (k % 3) * 2, k_max: 68 + (k % 4) * 2, f_min: 3 + (k % 3), f_max: 18 + (k % 4) * 3, sintetico: true, atualizado_em: new Date().toISOString() });
+      }
+    }
+    Object.assign(p, prox, { atualizado_em: new Date().toISOString() });
+    this._gravar();
+    return { id, estado: p.estado, rodada: p.rodada };
+  }
+  async publicarAngoff(id, { minJuizes = 10, justificativa = "" } = {}) {
+    this._exigeAdmin("Somente administradores publicam o Angoff do painel.");
+    const p = this._painel(id);
+    const { valoresParaPublicar, regraHofsteePublicacao, MIN_JUIZES } = await import("../../plataforma/js/angoff.js");
+    if (minJuizes < MIN_JUIZES) throw new Error("O mínimo é de " + MIN_JUIZES + " juízes por item.");
+    if (p.estado !== "encerrado") throw new Error("Encerre o painel antes de publicar.");
+    const a = this._angoff();
+    /* juízes e erro-padrão do corte; a regra de Hofstee é a do servidor, logo abaixo */
+    const { publicar, insuficientes, bloqueado, motivo, corte, corte_ep } = valoresParaPublicar(p, a.avaliacoes.filter((x) => x.painel_id === id), { minJuizes, verificacao: { ok: true } });
+    if (bloqueado) throw new Error(motivo);
+    const hof = regraHofsteePublicacao(corte, a.hofstee.filter((x) => x.painel_id === id), justificativa);
+    if (hof.bloqueado) throw new Error(hof.motivo);
+    p.publicacao_justificativa = hof.ok ? null : String(justificativa).trim();
+    p.publicacao_hofstee = { ok: hof.ok, k_min: hof.k_min ?? null, k_max: hof.k_max ?? null, corte };
+    const agora = new Date().toISOString();
+    const mapa = await this._gabarito();
+    for (const x of publicar) a.publicado[x.questao_id] = { angoff: x.angoff, juizes: x.juizes, ep: x.ep, painel_id: id, em: agora, versao: mapa.get(x.questao_id)?.versao || 1 };
+    p.publicado_em = agora;
+    this._gravar();
+    this._vigentesCache = null;
+    return { publicados: publicar.length, insuficientes, corte_ep, hofstee_ok: hof.ok, justificativa: p.publicacao_justificativa };
+  }
+
+  /* Mesma chamada do SupabaseStore (r2a_corrigir_simulado): corrige pelo gabarito do
+     banco em memória, grava uma resposta por item e conclui. As telas do modo
+     demonstração continuam usando concluirSimuladoCompleto; este método existe para que
+     as duas camadas tenham a mesma interface. */
+  async corrigirSimulado(id, complemento = {}) {
+    const s = this._simCompleto(id);
+    if (s.estado === "abandonado") throw new Error("Simulado abandonado não é corrigido.");
+    if (s.estado === "em_andamento" && s.bloco_atual < s.formulario.blocos.length) throw new Error("O simulado só é corrigido depois do último bloco.");
+    const mapa = await this._gabarito();
+    const { corrigirSessao } = await import("../../plataforma/js/formularios.js");
+    const { resultado, respostas } = corrigirSessao(s.formulario, s.sessao, mapa, { sessaoId: s.id });
+    if (!this.db.respostas.some((r) => r.sessao_id === s.id && r.origem === "simulado")) await this.saveRespostas(respostas);
+    const permitidos = ["estimativa", "dia", "por", "tempo_medio_ms", "encerramentos", "reduzido", "formulario_id", "step", "tipo"];
+    const comp = Object.fromEntries(Object.entries(complemento || {}).filter(([k]) => permitidos.includes(k)));
+    const final = { ...(s.resultado || {}), ...resultado, ...comp, total: resultado.total, acertos: resultado.acertos, percentual: resultado.percentual, em_branco: resultado.em_branco, por_bloco: resultado.por_bloco };
+    Object.assign(s, { estado: "concluido", resultado: structuredClone(final), fim: s.fim || new Date().toISOString(), atualizado_em: new Date().toISOString() });
+    this._gravar();
+    return { resultado: structuredClone(final), itens: respostas.map((r) => ({ questao_id: r.questao_id, bloco: r.bloco, posicao: r.posicao, resposta: r.resposta, correta: r.correta, ...(mapa.get(r.questao_id) ? { revelado: partePrivada(mapa.get(r.questao_id)) } : {}) })) };
+  }
+  async abandonarSimuladoCompleto(id) { return this._atualizarSimCompleto(id, null, { estado: "abandonado", fim: new Date().toISOString() }); }
+  async getSimuladoCompleto(id) {
+    try { return structuredClone(this._simCompleto(id)); } catch (e) { if (e instanceof PermissionError) return null; if (/não encontrado/.test(e.message)) return null; throw e; }
+  }
+  async listSimuladosCompletos({ todos = false, userId = null, step = null, estado = null } = {}) {
+    const u = this.user;
+    let lista = this.db.simuladosCompletos.slice();
+    if (!isAdmin(u)) lista = lista.filter((s) => s.user_id === u.id);
+    else if (userId) lista = lista.filter((s) => s.user_id === userId);
+    else if (!todos) lista = lista.filter((s) => s.user_id === u.id);
+    if (step) lista = lista.filter((s) => s.step === step);
+    if (estado) {
+      if (!ESTADOS_SIMULADO.includes(estado)) throw new Error("Estado inválido.");
+      lista = lista.filter((s) => s.estado === estado);
+    }
+    return lista.sort((a, b) => String(b.atualizado_em).localeCompare(String(a.atualizado_em))).map((s) => structuredClone(s));
+  }
+  async deleteSimuladoCompleto(id) {
+    this._exigeAdmin("Só administradores excluem simulados.");
+    const i = this.db.simuladosCompletos.findIndex((s) => s.id === id);
+    if (i >= 0) { this.db.simuladosCompletos.splice(i, 1); this._gravar(); }
+  }
+
+  /* ---------- anotações do aluno por item (só o próprio aluno lê e grava) ---------- */
+  async getAnotacaoItem(questaoId) {
+    const a = this.db.anotacoesItem[this.user.id]?.[questaoId];
+    return a ? { ...a } : null;
+  }
+  async saveAnotacaoItem(questaoId, texto) {
+    const e = validarAnotacaoItem(questaoId, texto);
+    if (e.length) throw new Error(e.join(" "));
+    const u = this.user;
+    const m = (this.db.anotacoesItem[u.id] ||= {});
+    const t = String(texto ?? "");
+    if (!t.trim()) { delete m[questaoId]; this._gravar(); return null; }
+    m[questaoId] = { user_id: u.id, questao_id: questaoId, texto: t, atualizado_em: new Date().toISOString() };
+    this._gravar();
+    return { ...m[questaoId] };
+  }
+  async listAnotacoesItem() {
+    return Object.values(this.db.anotacoesItem[this.user.id] || {}).map((a) => ({ ...a })).sort((a, b) => b.atualizado_em.localeCompare(a.atualizado_em));
+  }
+
+  /* ---------- reportes de erro em item (fila do admin) ---------- */
+  async reportarItem({ questao_id, motivo, texto = "" }) {
+    const e = validarReporte({ questao_id, motivo, texto });
+    if (e.length) throw new Error(e.join(" "));
+    const u = this.user;
+    const g = (await this._gabarito()).get(questao_id);
+    const reg = { id: uid("rep"), user_id: u.id, autor_nome: u.nome, questao_id, versao_item: g?.versao ?? null, motivo, texto: String(texto).trim(), status: "aberto", resposta: "", resolvido_por: null, resolvido_em: null, criado_em: new Date().toISOString() };
+    this.db.reportes.push(reg);
+    this._gravar();
+    return { ...reg };
+  }
+  async listReportes({ todos = false, status = null, questaoId = null } = {}) {
+    const u = this.user;
+    let lista = this.db.reportes.slice();
+    if (!isAdmin(u) || !todos) lista = lista.filter((r) => r.user_id === u.id);
+    else lista = lista.concat((await this._demo()).reportes.map((r) => ({ ...r, ...(this.db.reportesDemo[r.id] || {}) })));
+    if (status) lista = lista.filter((r) => r.status === status);
+    if (questaoId) lista = lista.filter((r) => r.questao_id === questaoId);
+    return lista.sort((a, b) => b.criado_em.localeCompare(a.criado_em)).map((r) => ({ ...r }));
+  }
+  async resolverReporte(id, { status = "resolvido", resposta = "" } = {}) {
+    this._exigeAdmin("Só administradores tratam reportes.");
+    if (!STATUS_REPORTE.includes(status)) throw new Error("Status inválido.");
+    if (String(resposta).length > 2000) throw new Error("A resposta tem no máximo 2000 caracteres.");
+    const fecha = status === "resolvido" || status === "rejeitado";
+    const fict = (await this._demo()).reportes.find((x) => x.id === id);
+    if (fict) {
+      this.db.reportesDemo[id] = { status, resposta: String(resposta), resolvido_por: fecha ? this.user.id : null, resolvido_em: fecha ? new Date().toISOString() : null };
+      this._gravar();
+      return { ...fict, ...this.db.reportesDemo[id] };
+    }
+    const r = this.db.reportes.find((x) => x.id === id);
+    if (!r) throw new Error("Reporte não encontrado.");
+    Object.assign(r, { status, resposta: String(resposta), resolvido_por: fecha ? this.user.id : null, resolvido_em: fecha ? new Date().toISOString() : null });
+    this._gravar();
+    return { ...r };
+  }
+
+  /* ---------- resultados oficiais (desfechos para a calibração) ---------- */
+  async saveResultadoOficial(x) {
+    this._exigeAdmin("Só administradores lançam resultados oficiais.");
+    const e = validarResultadoOficial(x);
+    if (e.length) throw new Error(e.join(" "));
+    const dados = normalizarResultadoOficial(x);
+    const agora = new Date().toISOString();
+    if (x.id) {
+      if (String(x.id).startsWith("demo-res-")) throw new Error("Desfecho fictício da demonstração não pode ser alterado.");
+      const old = this.db.resultadosOficiais.find((r) => r.id === x.id);
+      if (!old) throw new Error("Resultado não encontrado.");
+      Object.assign(old, dados, { atualizado_em: agora });
+      this._gravar();
+      return { ...old };
+    }
+    const reg = { ...dados, id: uid("res"), registrado_por: this.user.id, criado_em: agora, atualizado_em: agora };
+    this.db.resultadosOficiais.push(reg);
+    this._gravar();
+    return { ...reg };
+  }
+  async listResultadosOficiais({ todos = false, userId = null, step = null } = {}) {
+    const u = this.user;
+    let lista = this.db.resultadosOficiais.slice();
+    if (isAdmin(u) && (todos || (userId && ehSintetico(userId)))) lista = lista.concat((await this._demo()).desfechos);
+    if (!isAdmin(u)) lista = lista.filter((r) => r.user_id === u.id);
+    else if (userId) lista = lista.filter((r) => r.user_id === userId);
+    else if (!todos) lista = lista.filter((r) => r.user_id === u.id);
+    if (step) lista = lista.filter((r) => r.step === step);
+    return lista.sort((a, b) => String(b.data).localeCompare(String(a.data))).map((r) => ({ ...r }));
+  }
+  async deleteResultadoOficial(id) {
+    this._exigeAdmin("Só administradores excluem resultados oficiais.");
+    if (String(id).startsWith("demo-res-")) throw new Error("Desfecho fictício da demonstração não pode ser excluído.");
+    const i = this.db.resultadosOficiais.findIndex((r) => r.id === id);
+    if (i >= 0) { this.db.resultadosOficiais.splice(i, 1); this._gravar(); }
+  }
+
+  /* ---------- modelos psicométricos (desfechos reais; todos leem, admin grava) ---------- */
+  async getModelosPsicometricos() {
+    return { step1: this.db.modelos.step1 ? structuredClone(this.db.modelos.step1) : null, step2ck: this.db.modelos.step2ck ? structuredClone(this.db.modelos.step2ck) : null };
+  }
+  async saveModeloPsicometrico(step, dados) {
+    this._exigeAdmin("Só administradores gravam modelos psicométricos.");
+    if (!["step1", "step2ck"].includes(step)) throw new Error("Step inválido.");
+    if (!dados || typeof dados !== "object" || Array.isArray(dados)) throw new Error("Modelo inválido.");
+    this.db.modelos[step] = { ...structuredClone(dados), atualizado_em: new Date().toISOString(), atualizado_por: this.user.id };
+    this._gravar();
+    return structuredClone(this.db.modelos[step]);
+  }
+
+  /* ---------- leituras agregadas (só admin) ----------
+     Mesma regra das funções r2a_admin_* do banco: primeira resposta de cada pessoa
+     em cada item; modo tutor fora, salvo incluirTutor; só a versão atual do item,
+     salvo todasVersoes; pessoa pseudonimizada (1, 2, 3... pela ordem do user_id). */
+  async listRespostasCalibracao({ step = null, incluirTutor = false, todasVersoes = false, _comUsuario = false } = {}) {
+    this._exigeAdmin("Só administradores leem as respostas da turma.");
+    const gab = await this._gabarito();
+    const todas = this.db.respostas.concat(await this._respostasSinteticas())
+      .filter((r) => !step || r.step === step)
+      .filter((r) => { const g = gab.get(r.questao_id); return todasVersoes || !g || r.versao_item === null || r.versao_item === undefined || r.versao_item === g.versao; })
+      .sort((a, b) => String(a.respondida_em).localeCompare(String(b.respondida_em)) || (String(a.id) < String(b.id) ? -1 : String(a.id) > String(b.id) ? 1 : 0));
+    /* primeira resposta de cada pessoa no item; se ela foi no modo tutor, o item sai
+       para essa pessoa (a segunda exposição já não é independente) */
+    const vistos = new Set();
+    const primeiras = [];
+    for (const r of todas) { const k = r.user_id + "\u0000" + r.questao_id; if (vistos.has(k)) continue; vistos.add(k); if (incluirTutor || r.modo !== "tutor") primeiras.push(r); }
+    const users = [...new Set(primeiras.map((r) => r.user_id))].sort();
+    const pseud = new Map(users.map((x, i) => [x, i + 1]));
+    return primeiras.map((r) => ({ pessoa: pseud.get(r.user_id), ...(_comUsuario ? { user_id: r.user_id } : {}), questao_id: r.questao_id, step: r.step, resposta: r.resposta, correta: !!r.correta, modo: r.modo, origem: r.origem, tempo_ms: r.tempo_ms }))
+      .sort((a, b) => a.pessoa - b.pessoa || (a.questao_id < b.questao_id ? -1 : 1));
+  }
+  async getEstatisticasItens({ step = null, incluirTutor = false, todasVersoes = false } = {}) {
+    const linhas = await this.listRespostasCalibracao({ step, incluirTutor, todasVersoes, _comUsuario: true });
+    const gab = await this._gabarito();
+    const a = analisarItens(linhas.map((r) => ({ ...r, pessoa: r.user_id })), gab, { usarCalibrado: false });
+    const tempos = new Map();
+    for (const r of linhas) (tempos.get(r.questao_id) || tempos.set(r.questao_id, []).get(r.questao_id)).push(r.tempo_ms || 0);
+    return a.itens.map((it) => estatisticaNoFormatoDoBanco(it, tempos.get(it.questao_id), gab.get(it.questao_id)));
+  }
 }
 
 export const LIMITE_ANOTACAO = 5000;
@@ -583,4 +1276,16 @@ function normalizarCampoPlano(k, v) {
   const s = String(v).slice(0, 10);
   if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) throw new Error("Data inválida em " + k + " (use AAAA-MM-DD).");
   return s;
+}
+
+/* Converte a saída de analisarItens() para a linha de r2a_admin_estatisticas_itens() */
+export function estatisticaNoFormatoDoBanco(it, tempos = [], item = null) {
+  const so = (campo) => Object.fromEntries(it.opcoes.filter((o) => o[campo] > 0).map((o) => [o.letra, o[campo]]));
+  const t = (tempos || []).slice().sort((x, y) => x - y);
+  const mediana = t.length ? (t.length % 2 ? t[(t.length - 1) / 2] : (t[t.length / 2 - 1] + t[t.length / 2]) / 2) : null;
+  return {
+    questao_id: it.questao_id, step: item?.step || it.step, n: it.n, acertos: it.acertos, p: it.p, em_branco: it.em_branco,
+    opcoes: so("n"), tempo_mediano_ms: mediana === null ? null : Math.round(mediana), pbis: it.pbis,
+    n_superior: it.n_superior, n_inferior: it.n_inferior, opcoes_superior: so("n_superior"), opcoes_inferior: so("n_inferior")
+  };
 }

@@ -1,0 +1,97 @@
+{
+  "dia": 310,
+  "data": "2027-09-07",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Hipercalcemia da malignidade",
+  "conceito": "Hypercalcemia of malignancy: IV saline, calcitonin and a bisphosphonate",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Independência do Brasil (7/9).",
+  "remix_de": null,
+  "explicacao_em": "2027-09-08",
+  "tom": null,
+  "gancho": "7 de setembro no plantão: *alguém deu o grito de independência* às 3 da manhã",
+  "gancho_apoio": "Às 3 da manhã, a Dona Térmica vê o desfile passar pela janela da copa e já pega a prancheta.",
+  "imagem": {
+    "arquivo": "dia-310.png",
+    "cena": "Copa do plantão de madrugada, com um relógio de parede sem números nas 3 horas; a Dona Térmica, no balcão, olha pela janela um desfile de 7 de setembro que passa com bandeirinhas verdes e amarelas; no parapeito, um vaso de planta com a terra rachada de seca.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica vê um desfile de 7 de setembro pela janela da copa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-310-macete.png",
+    "cena": "Callback: um castelo em forma de osso, de portão aberto, solta bolinhas brancas de giz que desfilam pela rua; três ferramentas param o desfile: uma mangueira lava as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy tranca o portão do castelo. A Dona Térmica anota na prancheta e a planta do parapeito volta a ficar verde.",
+    "foco": "50% 45%",
+    "alt": "Hipercalcemia grave: lava, freia e tranca"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man with squamous cell carcinoma of the lung has 3 days of confusion, polyuria, and constipation. Blood pressure is 102/64 mm Hg, and his mucous membranes are dry. Serum calcium is 14.6 mg/dL, creatinine is 1.4 mg/dL (baseline 1.0), and PTH is suppressed.",
+    "pergunta": "Which is the most appropriate initial management?",
+    "alternativas": {
+      "A": {
+        "texto": "IV furosemide, then oral fluids",
+        "quiz": "IV furosemide"
+      },
+      "B": {
+        "texto": "IV saline, calcitonin, and zoledronate",
+        "quiz": "Saline + calcitonin + ZOL"
+      },
+      "C": {
+        "texto": "Oral alendronate and a low-calcium diet",
+        "quiz": "Oral alendronate + low-Ca diet"
+      },
+      "D": {
+        "texto": "Emergent hemodialysis",
+        "quiz": "Emergent hemodialysis"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Hipercalcemia grave: *lava, freia e tranca*",
+    "certa": [
+      "Cálcio acima de 14 mg/dL com confusão é hipercalcemia grave, aqui pelo *PTHrP* do carcinoma escamoso (PTH suprimido). O tratamento ataca em três tempos: *IV normal saline* para corrigir a desidratação da poliúria, *calcitonin* para baixar o cálcio em horas (o efeito some em cerca de 48 h por taquifilaxia) e *zoledronic acid*, que bloqueia os osteoclastos e age em 2 a 4 dias. Furosemida só entra se houver sobrecarga de volume, depois da hidratação."
+    ],
+    "termos": [
+      "hypercalcemia of malignancy",
+      "PTHrP",
+      "calcitonin",
+      "zoledronic acid"
+    ],
+    "erradas": {
+      "A": "*Furosemida* antes de hidratar piora a desidratação; hoje só se usa em quem fica hipervolêmico com o soro.",
+      "C": "*Bifosfonato oral* é lento e mal absorvido; na hipercalcemia grave o bifosfonato é intravenoso.",
+      "D": "*Hemodiálise* fica para cálcio acima de 18 mg/dL com sintomas neurológicos ou insuficiência renal que impede a hidratação."
+    },
+    "macete": {
+      "frase": "*Lava, freia e tranca*: soro lava, calcitonina freia e bifosfonato tranca o osteoclasto",
+      "apoio": "O soro lava o cálcio pelo rim e corrige a desidratação; a calcitonina freia em poucas horas, mas cansa em dois dias; o ácido zoledrônico tranca o osteoclasto por semanas. Furosemida antes de hidratar é tirar água de quem já chegou seco: só entra depois, se sobrar volume. Diálise fica para insuficiência renal grave ou cálcio que não responde.",
+      "fala": "Já vi esse caso às 3 da manhã. Primeiro o soro."
+    }
+  },
+  "legenda": {
+    "contexto": "Independência do Brasil no Plantão de Terça: o desfile passou pela janela da copa às 3 da manhã, e a Dona Térmica pegou a prancheta antes do hino acabar. Quatro condutas iniciais, e a vinheta traz um número que pede pressa.",
+    "palavras_chave": [
+      "emergency department",
+      "internal medicine",
+      "altered mental status",
+      "initial management"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Endocrinologia",
+      "#Endocrinology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cálcio 14,6, confusão e mucosas secas: o que fazer primeiro?"
+  },
+  "reel": null,
+  "exemplo": false
+}

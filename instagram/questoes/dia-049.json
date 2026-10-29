@@ -1,0 +1,100 @@
+{
+  "dia": 49,
+  "data": "2026-12-20",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Síndrome de Goodpasture (dia 15), Dermatite de contato (dia 43), Sensibilidade e especificidade (dia 48)",
+  "conceito": "Remix: Goodpasture syndrome + Contact dermatitis to nickel + SnNOut and SpPIn",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    15,
+    43,
+    48
+  ],
+  "explicacao_em": "2026-12-21",
+  "gancho": "Rim e pulmão de novo no balcão, e o envelope do exame *chegou*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, abre um envelope de exame em branco na repartição, com o carimbo levantado. Num quadro na parede, um tubo de pasta de dente fechado. Um vinil pequeno serve de peso de papel.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron abre um envelope de exame com o carimbo levantado; num quadro, um tubo de pasta de dente fechado.",
+    "arquivo": "dia-049.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da repartição: Seu Néfron carimba o formulário com força, e o tubo de pasta de dente do quadro espreme uma linha reta e contínua; no teto, um detector de fumaça acende só diante de uma chaminha de verdade. Num cantinho, uma tigela de massa cresce devagar.",
+    "alt": "Positivo específico confirma",
+    "arquivo": "dia-049-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old man has 1 week of hemoptysis and dark urine. Urinalysis shows red blood cell casts, and creatinine is 2.8 mg/dL. ANCA testing is negative. A serum anti-GBM antibody assay with 90% sensitivity and 99% specificity is positive. Renal biopsy results are pending.",
+    "pergunta": "Which conclusion about anti-GBM disease is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "It is unlikely, given the 90% sensitivity",
+        "quiz": "Unlikely, low sensitivity"
+      },
+      "B": {
+        "texto": "No conclusion is possible before the biopsy",
+        "quiz": "Wait for the biopsy"
+      },
+      "C": {
+        "texto": "It is very likely after this result",
+        "quiz": "Very likely now",
+        "dia": 48
+      },
+      "D": {
+        "texto": "It is excluded because ANCA is negative",
+        "quiz": "Excluded by ANCA",
+        "dia": 15
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Positivo específico confirma",
+    "certa": [
+      "Hemoptise com cilindros hemáticos é síndrome pulmão-rim, e o anti-GBM do dia 15 entra na lista. O teste veio positivo e tem 99% de *specificity*: um teste muito específico quase não acusa quem não tem a doença, então o positivo praticamente confirma (*SpPIn*, a outra metade da regra do dia 48), com *positive predictive value* alto. A biópsia ainda vai mostrar o depósito linear de IgG, mas a plasmaférese costuma começar antes dela."
+    ],
+    "termos": [
+      "SpPIn",
+      "specificity",
+      "positive predictive value",
+      "pulmonary-renal syndrome"
+    ],
+    "erradas": {
+      "A": "A sensibilidade de 90% pesa no resultado negativo (SnNOut); com o teste positivo, quem fala é a especificidade.",
+      "B": "A biópsia confirma o padrão, mas um teste com 99% de especificidade positivo já muda a conduta e permite iniciar o tratamento.",
+      "D": "Dia 15: ANCA negativo afasta a vasculite pauci-imune e combina com a doença anti-MBG; ele não exclui o diagnóstico."
+    },
+    "macete": {
+      "frase": "Detector que só apita com fogo de verdade: *positivo específico confirma*. A pasta de dente do Goodpasture saiu do tubo.",
+      "apoio": "Pegadinha de prova: O NBME troca o resultado de um dia para o outro: negativo se lê pela sensibilidade (SnNOut), positivo pela especificidade (SpPIn).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando a pasta de dente do Goodpasture (dia 15) e a dupla de siglas do teste diagnóstico (dia 48). O bônus do macete traz o pão de fermentação natural do níquel (dia 43). Selo é lembrança, e não gabarito.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Imunologia",
+      "#Biostatistics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pulmão e rim com anti-MBG positivo e 99% específico: o que concluir?"
+  },
+  "exemplo": false
+}

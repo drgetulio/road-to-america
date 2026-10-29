@@ -1,0 +1,95 @@
+{
+  "dia": 9,
+  "data": "2026-11-10",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Hemorragia digestiva alta",
+  "conceito": "Upper GI bleeding: resuscitate, IV PPI, endoscopy within 24 hours",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-11",
+  "tom": null,
+  "gancho": "Sangue no plantão de madrugada e a Capitã Plaqueta com *um apito só*. Por onde começa?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-009.png",
+    "cena": "Capitã Plaqueta, de colete verde, apita ao lado de um carrinho vermelho de olhos simpáticos parado no acostamento, com um furinho pingando no tanque. No fim da estrada, um guincho espera de motor ligado. Num poste, um relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta apita ao lado de um carrinho vermelho com um furinho pingando no tanque; um guincho espera no fim da estrada."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-009-macete.png",
+    "cena": "Callback do acostamento: dois frentistas sorridentes enchem o tanque do carrinho com duas mangueiras grossas ao mesmo tempo, e um escudinho em forma de comprimido acende no painel (IBP). Só depois a Capitã libera o guincho, que leva o carro para a oficina da endoscopia.",
+    "alt": "Primeiro o tanque, depois o guincho"
+  },
+  "questao": {
+    "vinheta": "A 63-year-old man vomits bright red blood twice and has black stools. He takes ibuprofen daily for knee pain. He is pale and diaphoretic. BP is 86/52 mm Hg and pulse 124/min. Hemoglobin is 8.1 g/dL.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Upper endoscopy within the next hour",
+        "quiz": "Urgent EGD"
+      },
+      "B": {
+        "texto": "CT angiography of the abdomen and pelvis",
+        "quiz": "CT angiography"
+      },
+      "C": {
+        "texto": "Two large-bore IV lines and fluid bolus",
+        "quiz": "IV access + fluids"
+      },
+      "D": {
+        "texto": "Nasogastric lavage",
+        "quiz": "Nasogastric lavage"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Primeiro o tanque, depois o guincho",
+    "certa": [
+      "Hematêmese, melena, anti-inflamatório todo dia e choque (PA 86/52, FC 124) pedem primeiro ressuscitação: dois acessos venosos calibrosos, cristaloide e concentrado de hemácias se continuar instável; no paciente já estável, a transfusão é restritiva, com gatilho de hemoglobina 7 g/dL (8 na doença cardiovascular). Junto entra o inibidor de bomba de prótons intravenoso. A endoscopia digestiva alta vem depois da estabilização, em até 24 horas, para achar e tratar a provável úlcera."
+    ],
+    "termos": [
+      "upper GI bleeding",
+      "hemodynamic instability",
+      "IV proton pump inhibitor",
+      "endoscopy within 24 hours"
+    ],
+    "erradas": {
+      "A": "Endoscopia em paciente chocado e sem ressuscitação aumenta o risco; ela vem logo depois de estabilizar, em até 24 horas.",
+      "B": "A angio-TC entra quando o sangramento continua e a endoscopia não acha ou não controla a fonte.",
+      "D": "A lavagem nasogástrica não muda o desfecho e não é recomendada para decidir a conduta."
+    },
+    "macete": {
+      "frase": "Ninguém guincha carro de *tanque vazio*: primeiro abastece com dois acessos e volume, liga o IBP no painel e só depois chama o guincho da endoscopia.",
+      "apoio": "Pegadinha de prova: O NBME coloca a endoscopia como alternativa tentadora; com instabilidade hemodinâmica, a resposta é estabilizar antes.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: vômito com sangue às 3 da manhã e quatro condutas que todo interno já ouviu alguém gritar no corredor. A Capitã Plaqueta só tem um apito: qual vem primeiro?",
+    "palavras_chave": [
+      "hematemesis",
+      "emergency medicine",
+      "initial management",
+      "night shift"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#EmergencyMedicine",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Hematêmese com PA 86/52 e FC 124: o que fazer primeiro?"
+  },
+  "exemplo": false
+}

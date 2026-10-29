@@ -1,0 +1,99 @@
+{
+  "dia": 229,
+  "data": "2027-06-18",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Erradicação do H. pylori",
+  "conceito": "H. pylori eradication: bismuth quadruple therapy when clarithromycin resistance is likely",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-19",
+  "tom": null,
+  "gancho": "Sextou na Farmácia em clima de Copa: *a escalação certa* contra uma bactéria teimosa",
+  "gancho_apoio": "Esquema de H. pylori é a escalação que todo estudante sabe de cor e erra a duração.",
+  "imagem": {
+    "arquivo": "dia-229.png",
+    "cena": "Tia Meia-Vida transformou o balcão num banco de reservas de futebol e olha, pensativa, uma prancheta de escalação em branco. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, no banco de reservas, olha uma prancheta de escalação em branco"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-229-macete.png",
+    "cena": "Callback: quatro jogadores entram juntos do banco (um escudo azul, um frasco rosa, uma taça dourada e um comprimido vermelho), e a bactéria em espiral de luva de goleiro não defende os quatro chutes. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Quatro jogadores entram juntos e a bactéria em espiral não defende os quatro chutes"
+  },
+  "questao": {
+    "vinheta": "A 49-year-old woman has had epigastric discomfort for 2 months. A urea breath test is positive for Helicobacter pylori. She took clarithromycin for sinusitis last year. She has no drug allergies and takes no medications.",
+    "pergunta": "Which is the most appropriate treatment?",
+    "alternativas": {
+      "A": {
+        "texto": "PPI, clarithromycin, and amoxicillin for 14 days",
+        "quiz": "PPI + clari + amox"
+      },
+      "B": {
+        "texto": "PPI, levofloxacin, and amoxicillin for 10 to 14 days",
+        "quiz": "PPI + levo + amox"
+      },
+      "C": {
+        "texto": "PPI, bismuth, tetracycline, metronidazole, 14 days",
+        "quiz": "Bismuth quadruple"
+      },
+      "D": {
+        "texto": "PPI alone for 8 weeks",
+        "quiz": "PPI alone, 8 weeks"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Macrolídeo no passado: *quádrupla com bismuto*",
+    "certa": [
+      "Uso prévio de macrolídeo indica resistência provável à claritromicina, e a tripla com claritromicina tende a falhar. A ACG (2024) prefere a *bismuth quadruple therapy* por 14 dias: *PPI*, *bismuth*, *tetracycline* e *metronidazole*. Depois, confirmar a erradicação com teste respiratório, antígeno fecal ou biópsia, pelo menos 4 semanas após o antibiótico e com 2 semanas sem IBP."
+    ],
+    "termos": [
+      "Helicobacter pylori",
+      "clarithromycin resistance",
+      "bismuth quadruple therapy",
+      "test of cure"
+    ],
+    "erradas": {
+      "A": "A tripla com claritromicina só vale quando a resistência é baixa ou o teste de sensibilidade confirma; ela tomou macrolídeo há um ano.",
+      "B": "A tripla com levofloxacino não é recomendada como primeira escolha empírica nos EUA, por causa da resistência alta às quinolonas.",
+      "D": "O IBP sozinho alivia o sintoma, mas não erradica a bactéria, e o risco de úlcera e de linfoma MALT continua."
+    },
+    "macete": {
+      "frase": "*Pra Bater o Tetra Mesmo*: PPI, Bismuto, Tetraciclina, Metronidazol",
+      "apoio": "Na imagem, a bactéria em espiral de luva de goleiro defende o chute único do macrolídeo, mas não segura o quarteto que entra junto em campo: o escudo, o frasco rosa, a taça do tetra e o comprimido vermelho.",
+      "fala": "Macrolídeo no ano passado? Esse time já perdeu. Escala o quarteto."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um teste positivo e uma história clínica descrita na vinheta. É ela que escolhe a escalação.",
+    "palavras_chave": [
+      "Helicobacter pylori",
+      "urea breath test",
+      "antibiotic regimen",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#Gastroenterology",
+      "#Farmacologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "H. pylori e macrolídeo prévio: qual esquema?"
+  },
+  "reel": null,
+  "exemplo": false
+}

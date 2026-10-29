@@ -1,0 +1,100 @@
+{
+  "dia": 334,
+  "data": "2027-10-01",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Tamoxifeno",
+  "conceito": "Tamoxifen: SERM, antagonist in breast, agonist in endometrium, raises VTE risk",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Início do Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-02",
+  "tom": "acolhedor",
+  "gancho": "Outubro Rosa: dois anos de remédio diário e *um sinal novo*",
+  "gancho_apoio": "Outubro Rosa. Uma questão com calma sobre como um remédio age em cada tecido.",
+  "imagem": {
+    "arquivo": "dia-334.png",
+    "cena": "Tia Meia-Vida, calma, no balcão da farmácia organiza quatro frasquinhos diferentes numa bandeja; ao lado, um laço rosa e um vaso de planta; luz suave de fim de tarde. Tom calmo e acolhedor.",
+    "foco": "50% 35%",
+    "alt": "Outubro Rosa: dois anos de remédio diário e um sinal novo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-334-macete.png",
+    "cena": "Callback: da bandeja, a Tia Meia-Vida pega uma única chave dourada, que tranca a porta do laço rosa com um cadeado verde e abre outra porta, de onde brotam folhas; ao lado, um pequeno nó vermelho de lã sinaliza o risco de trombose.",
+    "foco": "50% 45%",
+    "alt": "Tamoxifeno: SERM que bloqueia a mama e estimula o endométrio"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman with estrogen receptor-positive breast cancer has taken a daily oral adjuvant drug for 2 years. She now has painless vaginal bleeding, and transvaginal ultrasound shows a thickened endometrium. Her bone mineral density has not decreased since she began the drug.",
+    "pergunta": "Which mechanism best describes this drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of aromatase in peripheral tissue",
+        "quiz": "Aromatase inhibition"
+      },
+      "B": {
+        "texto": "ER antagonist in breast, agonist in endometrium",
+        "quiz": "SERM: uterine agonist"
+      },
+      "C": {
+        "texto": "ER antagonist in breast and uterus, agonist in bone",
+        "quiz": "SERM: uterine antagonist"
+      },
+      "D": {
+        "texto": "ER degradation in all tissues",
+        "quiz": "ER degradation (SERD)"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Tamoxifeno: *SERM* que bloqueia a mama e estimula o endométrio",
+    "certa": [
+      "O tamoxifeno é um *selective estrogen receptor modulator* (SERM): bloqueia o receptor de estrogênio na mama e o ativa no endométrio e no osso. Por isso, o sangramento uterino com endométrio espesso pede investigação (hiperplasia ou *endometrial cancer*), e a trombose venosa é um efeito adverso conhecido (*VTE risk*)."
+    ],
+    "termos": [
+      "tamoxifen",
+      "selective estrogen receptor modulator",
+      "endometrial hyperplasia",
+      "venous thromboembolism"
+    ],
+    "erradas": {
+      "A": "Inibidores da aromatase (anastrozol, letrozol) reduzem estrogênio sem estimular endométrio e causam perda óssea e artralgia.",
+      "C": "Esse perfil é o do raloxifeno: antagonista na mama e no útero, agonista no osso, sem estímulo endometrial, embora também aumente TEV.",
+      "D": "O fulvestranto degrada o receptor em todos os tecidos e é injetável mensal, não um comprimido diário."
+    },
+    "macete": {
+      "frase": "*Os três Ts do tamoxifeno*: tranca a mama, toca o útero, trombose no caminho",
+      "apoio": "A mesma chave faz coisas diferentes em cada porta: na mama, bloqueia o receptor de estrogênio; no útero e no osso, estimula. Sangramento vaginal e perna inchada são os dois avisos para procurar o médico.",
+      "fala": "A mesma chave, cada porta do seu jeito."
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa, com calma: um remédio usado por anos depois do tratamento do câncer de mama e um sinal novo que pede atenção. A pergunta é sobre como ele age em cada tecido.",
+    "palavras_chave": [
+      "breast cancer care",
+      "adjuvant therapy",
+      "pharmacology",
+      "women's health"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#OutubroRosa",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Câncer de mama RE positivo e endométrio espesso: como age o remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

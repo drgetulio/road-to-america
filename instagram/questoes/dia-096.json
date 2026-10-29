@@ -1,0 +1,96 @@
+{
+  "dia": 96,
+  "data": "2027-02-05",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Heparina",
+  "conceito": "Unfractionated heparin: potentiates antithrombin against thrombin and Xa, reversed by protamine",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-06",
+  "tom": null,
+  "gancho": "Sangrou na virilha depois da hemodinâmica: *quem desliga* o remédio?",
+  "gancho_apoio": "A Capitã Plaqueta tem quatro antídotos no colete, e só um serve para este remédio.",
+  "imagem": {
+    "arquivo": "dia-096.png",
+    "cena": "Capitã Plaqueta apita num cruzamento enquanto um fiscal de trânsito redondo, com um megafone enorme emprestado por uma ajudante em forma de corrente comprida, para dois carros de cores diferentes ao mesmo tempo. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta no cruzamento; um fiscal com megafone emprestado por uma corrente para dois carros ao mesmo tempo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-096-macete.png",
+    "cena": "Callback: um caminhão-guincho vermelho com um ímã gigante puxa a corrente, que gruda no ímã como clipe, e a Capitã Plaqueta libera o trânsito, aliviada. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um guincho com ímã gigante puxa a corrente, e a Capitã Plaqueta libera o trânsito."
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man undergoing percutaneous coronary intervention receives an intravenous bolus of a drug that binds antithrombin and greatly accelerates its inactivation of thrombin and factor Xa. Two hours later, he has persistent bleeding from the femoral puncture site, and the aPTT is markedly prolonged.",
+    "pergunta": "Which agent most rapidly reverses this drug's effect?",
+    "alternativas": {
+      "A": {
+        "texto": "Vitamin K",
+        "quiz": "Vitamin K"
+      },
+      "B": {
+        "texto": "Idarucizumab",
+        "quiz": "Idarucizumab"
+      },
+      "C": {
+        "texto": "Four-factor prothrombin complex concentrate",
+        "quiz": "4-factor PCC"
+      },
+      "D": {
+        "texto": "Protamine sulfate",
+        "quiz": "Protamine"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Heparina não fracionada: *protamina* reverte",
+    "certa": [
+      "O remédio é a heparina não fracionada (unfractionated heparin): ela se liga à antitrombina e acelera a inativação da trombina (fator IIa) e do fator Xa, o que alarga o TTPa (aPTT). A protamina é uma proteína de carga positiva que se liga à heparina, de carga negativa, e neutraliza o efeito em minutos. Na heparina de baixo peso molecular, a protamina reverte só parte do efeito."
+    ],
+    "termos": [
+      "unfractionated heparin",
+      "antithrombin",
+      "protamine sulfate",
+      "aPTT"
+    ],
+    "erradas": {
+      "A": "Vitamina K reverte a varfarina, porque devolve a síntese dos fatores II, VII, IX e X; demora horas e não age sobre a heparina.",
+      "B": "Idarucizumabe é o anticorpo que reverte a dabigatrana, um inibidor direto da trombina.",
+      "C": "O complexo protrombínico de quatro fatores repõe fatores e é usado para reverter a varfarina com sangramento grave."
+    },
+    "macete": {
+      "frase": "Heparina *negativa*, protamina *positiva*: o guincho-ímã arrasta",
+      "apoio": "Pegadinha de prova: O NBME pede o exame de controle (TTPa na não fracionada, anti-Xa na de baixo peso) e cobra a trombocitopenia induzida por heparina, que pede suspender a heparina e usar argatrobana.",
+      "fala": "Ela é negativa, ele é positivo. Grudaram e pararam de trabalhar. Trânsito liberado!"
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta: um cateterismo, um bolus na veia e uma punção que não para de sangrar. O mecanismo do remédio está descrito na vinheta. Ache o remédio pelo mecanismo, e o antídoto vem junto.",
+    "palavras_chave": [
+      "percutaneous coronary intervention",
+      "femoral access bleeding",
+      "anticoagulant reversal",
+      "prolonged aPTT"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Hematologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sangrou com TTPa alto após bolus na hemodinâmica: qual antídoto?"
+  },
+  "reel": null,
+  "exemplo": false
+}

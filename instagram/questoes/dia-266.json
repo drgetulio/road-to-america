@@ -1,0 +1,106 @@
+{
+  "dia": 266,
+  "data": "2027-07-25",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Influenza: shift e drift (dia 204), Deficiência do complemento terminal (dia 246), Doença granulomatosa crônica (dia 260)",
+  "conceito": "Remix: Influenza shift vs drift + Terminal complement deficiency + Chronic granulomatous disease",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": [
+    204,
+    246,
+    260
+  ],
+  "explicacao_em": "2027-07-26",
+  "tom": null,
+  "gancho": "Remix de Domingo: a escola gripada e *um menino que já é conhecido do feed*",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 204, 246 e 260) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-266.png",
+    "cena": "Numa sala de aula, Seu Allen, de avental navy, faz a chamada com uma prancheta diante de carteiras vazias e de um cabide cheio de cachecóis. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen faz a chamada numa sala de carteiras vazias e cabide cheio de cachecóis"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-266-macete.png",
+    "cena": "Callback: uma bolota felpuda (o fungo) tira o chapéu: segura um extintor vermelho e está cercada por um anel de neblina, como um halo, e Seu Allen anota no manual que a fogueira do neutrófilo não acende. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A bolota felpuda de extintor, cercada de neblina, e Seu Allen anotando no manual"
+  },
+  "questao": {
+    "vinheta": "A 6-year-old boy has had a Staphylococcus aureus liver abscess and Serratia lymphadenitis. His neutrophils show no fluorescence on dihydrorhodamine testing. While influenza circulates at his school, he develops fever and cough. CT of the chest shows several lung nodules with surrounding ground-glass halos.",
+    "pergunta": "Which organism is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Influenza A virus",
+        "quiz": "Influenza A virus",
+        "dia": 204
+      },
+      "B": {
+        "texto": "Neisseria meningitidis",
+        "quiz": "Neisseria meningitidis",
+        "dia": 246
+      },
+      "C": {
+        "texto": "Aspergillus fumigatus",
+        "quiz": "Aspergillus fumigatus",
+        "dia": 260
+      },
+      "D": {
+        "texto": "Streptococcus pneumoniae",
+        "quiz": "Streptococcus pneumoniae"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "DGC no pulmão: *Aspergillus*",
+    "certa": [
+      "Neutrófilo que não fluoresce no *DHR* é *chronic granulomatous disease* (dia 260): sem *NADPH oxidase*, o fagócito não faz o burst e perde para os catalase-positivos. Nódulos com halo em vidro fosco no pulmão de quem tem DGC apontam para *Aspergillus fumigatus*, a principal causa de pneumonia e de morte nessa doença. A gripe da escola é só a distração do enunciado."
+    ],
+    "termos": [
+      "chronic granulomatous disease",
+      "Aspergillus fumigatus",
+      "angioinvasive mold",
+      "catalase-positive organisms"
+    ],
+    "erradas": {
+      "A": "A influenza (dia 204) circula na escola, mas não explica nódulos com halo num menino com DHR negativo e abscessos por catalase-positivos.",
+      "B": "Neisseria é a marca da falta de C5 a C9 (dia 246), que dá meningite e sepse, e não abscesso hepático nem nódulo pulmonar.",
+      "D": "Intruso: o pneumococo é catalase-negativo; o próprio H2O2 dele abastece o neutrófilo da DGC, que consegue matá-lo, e ele não faz nódulos com halo."
+    },
+    "macete": {
+      "frase": "Na DGC, *quem traz extintor* ganha a festa: no pulmão, é o *Aspergillus*",
+      "apoio": "DHR apagado é a fogueira do neutrófilo que não acende. Quem chega com extintor (catalase) faz a festa: S. aureus no fígado, Serratia no gânglio e Aspergillus no pulmão, com halo em vidro fosco. A gripe da escola e a Neisseria do complemento são distração.",
+      "fala": "Sobrou peça? Então faltou mecanismo: sem NADPH oxidase, quem traz extintor ganha a festa."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com o Seu Allen. A escola está gripada, mas o menino da vinheta tem uma história própria que muda a conta. Qual é o micróbio?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#Imunologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DHR apagado e nódulos com halo no pulmão: qual é o micróbio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

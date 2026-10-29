@@ -15,5 +15,5 @@
     "lib": ["DOM", "ES2022"],
     "noEmit": true
   },
-  "include": ["src", "roteiros.json"]
+  "include": ["src", "roteiros.json", "../instagram/reels-semanais.json"]
 }

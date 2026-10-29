@@ -1,0 +1,100 @@
+{
+  "dia": 234,
+  "data": "2027-06-23",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Psoríase",
+  "conceito": "Psoriasis histology: parakeratosis, Munro microabscesses, thinned suprapapillary plates",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-24",
+  "tom": null,
+  "gancho": "Quarta do Porquê na dermatopatologia: *o Seu Allen trouxe o microscópio*",
+  "gancho_apoio": "Dermato no Step 1: tudo é \"eritematoso\", e só a lâmina te salva.",
+  "imagem": {
+    "arquivo": "dia-234.png",
+    "cena": "Vitrine de padaria com um mil-folhas alto; Seu Allen, de avental navy, observa a torre com uma lupa, com setinhas de manual de montagem em volta. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen observa com a lupa um mil-folhas alto na vitrine"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-234-macete.png",
+    "cena": "Callback: em corte, as folhas de cima do mil-folhas ainda têm sementinhas escuras dentro (os núcleos) e grupinhos de bolinhas brancas (os neutrófilos), e Seu Allen marca o achado com o lápis vermelho. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "As folhas de cima do mil-folhas guardam sementinhas e bolinhas brancas; Seu Allen marca"
+  },
+  "questao": {
+    "vinheta": "A 32-year-old man has sharply demarcated red plaques covered by silvery scale over the elbows, knees, and lower back. His fingernails show small pits. Gently removing the scale causes pinpoint bleeding.",
+    "pergunta": "A skin biopsy is most likely to show which finding?",
+    "alternativas": {
+      "A": {
+        "texto": "Spongiosis with intraepidermal vesicles",
+        "quiz": "Spongiosis with vesicles"
+      },
+      "B": {
+        "texto": "Parakeratosis with neutrophils in the stratum corneum",
+        "quiz": "Parakeratosis + PMNs"
+      },
+      "C": {
+        "texto": "Subepidermal blister with eosinophils",
+        "quiz": "Subepidermal blister"
+      },
+      "D": {
+        "texto": "Saw-tooth rete ridges with a band-like lymphocytic infiltrate",
+        "quiz": "Saw-tooth band infiltrate"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Psoríase: a pele sobe rápido e *leva o núcleo*",
+    "certa": [
+      "Na *psoriasis*, os queratinócitos se renovam rápido demais e chegam à superfície ainda com núcleo: é a *parakeratosis*. Neutrófilos se juntam na camada córnea (*Munro microabscesses*), a camada granular some, as cristas epidérmicas se alongam e a epiderme sobre as papilas dérmicas fica fina (*thinned suprapapillary plates*). Com capilares dilatados logo abaixo, raspar a escama faz o sangramento em ponto, o sinal de Auspitz."
+    ],
+    "termos": [
+      "parakeratosis",
+      "Munro microabscesses",
+      "Auspitz sign",
+      "thinned suprapapillary plates"
+    ],
+    "erradas": {
+      "A": "A *spongiosis* com vesículas é o padrão da dermatite eczematosa, com coceira e placas mal delimitadas.",
+      "C": "A bolha subepidérmica com eosinófilos é o penfigoide bolhoso, com bolhas tensas, mais comum em idosos.",
+      "D": "Cristas em dente de serra com infiltrado linfocitário em banda são do líquen plano, com pápulas violáceas que coçam."
+    },
+    "macete": {
+      "frase": "Psoríase é *mil-folhas apressado*: sobe rápido e leva o recheio junto",
+      "apoio": "Na imagem, o mil-folhas da vitrine cresce tão rápido que as folhas de cima ainda têm sementinhas dentro (os núcleos) e grupinhos de bolinhas brancas (os neutrófilos); por cima das colunas, a casquinha fica fininha.",
+      "fala": "Sobrou peça? Então faltou mecanismo: esse mil-folhas saiu do forno com núcleo e tudo."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na pele, com o Seu Allen. As lesões e onde elas ficam estão descritas na vinheta. O que o patologista vai ver na biópsia?",
+    "palavras_chave": [
+      "skin plaques",
+      "skin biopsy",
+      "histopathology",
+      "Step 1 pathology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Histologia",
+      "#Dermatology",
+      "#Patologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Placa prateada: o que a biópsia mostra?"
+  },
+  "reel": null,
+  "exemplo": false
+}

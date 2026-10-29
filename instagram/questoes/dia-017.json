@@ -1,0 +1,97 @@
+{
+  "dia": 17,
+  "data": "2026-11-18",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Enfisema e alfa-1 antitripsina",
+  "conceito": "Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).",
+  "remix_de": null,
+  "explicacao_em": "2026-11-19",
+  "tom": null,
+  "gancho": "Dia Mundial da DPOC: o Seu Allen abriu o pulmão para achar a *peça que sobrou*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-017.png",
+    "cena": "Seu Allen, de avental de marceneiro, examina de prancheta na mão um par de pulmões desenhado como a arquibancada de um estádio, com setinhas de manual de montagem em volta.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen examina, de prancheta na mão, um par de pulmões desenhado como arquibancada de estádio."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-017-macete.png",
+    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso no ônibus em forma de fígado, acenando da janela, e o Seu Allen anota tudo na prancheta.",
+    "alt": "Sem goleiro, gol nos lobos inferiores"
+  },
+  "questao": {
+    "vinheta": "A 36-year-old man who has never smoked has 2 years of progressive dyspnea. Spirometry shows an FEV1/FVC ratio of 0.58. Chest CT shows panacinar emphysema predominantly in the lower lobes. Serum aminotransferases are mildly elevated.",
+    "pergunta": "Which mechanism best explains his lung disease?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective epithelial chloride channel",
+        "quiz": "Chloride channel"
+      },
+      "B": {
+        "texto": "Th2-mediated bronchial hyperreactivity",
+        "quiz": "Th2 hyperreactivity"
+      },
+      "C": {
+        "texto": "Hypertrophy of submucosal mucous glands",
+        "quiz": "Mucous glands"
+      },
+      "D": {
+        "texto": "Unopposed neutrophil elastase activity",
+        "quiz": "Unopposed elastase"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Sem goleiro, gol nos lobos inferiores",
+    "certa": [
+      "Enfisema panacinar nos lobos inferiores num adulto jovem que nunca fumou, com enzimas hepáticas alteradas, é deficiência de alfa-1 antitripsina (alpha-1 antitrypsin). Essa proteína fabricada no fígado inibe a elastase dos neutrófilos; sem ela, a elastase age sem freio e destrói as paredes dos alvéolos, mais nas bases. No fígado, a proteína mal dobrada (alelo PiZ) fica presa nos hepatócitos e causa lesão hepática."
+    ],
+    "termos": [
+      "alpha-1 antitrypsin deficiency",
+      "panacinar emphysema",
+      "neutrophil elastase",
+      "PiZZ"
+    ],
+    "erradas": {
+      "A": "Canal de cloro defeituoso é fibrose cística, com bronquiectasias e infecções desde a infância, e não enfisema panacinar isolado.",
+      "B": "Hiper-reatividade Th2 é asma, com obstrução reversível e sem destruição dos alvéolos na tomografia.",
+      "C": "Hipertrofia das glândulas mucosas é a bronquite crônica, ligada à tosse produtiva e ao tabagismo."
+    },
+    "macete": {
+      "frase": "A alfa-1 é o goleiro do pulmão, e ele ficou *preso no ônibus do fígado*. Sem goleiro, a elastase faz gol embaixo, nos lobos inferiores.",
+      "apoio": "Pegadinha de prova: O NBME junta enfisema em jovem não fumante com enzimas hepáticas alteradas; pense em alfa-1 antitripsina e lembre dos glóbulos PAS positivos nos hepatócitos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, o Seu Allen desmonta um enfisema peça por peça. Os detalhes da vinheta decidem a letra; o resto é torcida.",
+    "palavras_chave": [
+      "emphysema",
+      "pulmonary function",
+      "World COPD Day",
+      "pathophysiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pulmonology",
+      "#DiaMundialDaDPOC",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Enfisema panacinar basal aos 36 anos, sem cigarro: qual mecanismo?"
+  },
+  "exemplo": false
+}

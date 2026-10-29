@@ -1,0 +1,100 @@
+{
+  "dia": 262,
+  "data": "2027-07-21",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Melanoma",
+  "conceito": "Melanoma prognosis: Breslow thickness is the strongest predictor",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-22",
+  "tom": null,
+  "gancho": "Seu Allen trouxe quatro réguas para uma mancha. *Só uma decide*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-262.png",
+    "cena": "Na bancada de uma confeitaria, um bolo redondo de cobertura lisa tem uma pequena mancha escura; Seu Allen, de avental navy, segura uma régua de metal e uma fita métrica, indeciso. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen, indeciso, com uma régua e uma fita métrica diante de um bolo com uma mancha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-262-macete.png",
+    "cena": "O bolo é cortado e a régua de pé desce dentro da fatia, logo abaixo da cobertura até o ponto mais fundo que a mancha alcançou, com uma luz destacando essa profundidade. A fita métrica, a paleta e o cortador ficam de lado, apagados, e Seu Allen aponta a régua com uma setinha.",
+    "foco": "50% 40%",
+    "alt": "Breslow: quanto mais fundo, maior o risco"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man has a pigmented lesion excised from his upper back. It is 9 mm wide and asymmetric, with irregular borders and several shades of brown and black. Histology shows atypical melanocytes invading the dermis, consistent with melanoma.",
+    "pergunta": "Which feature of the primary tumor best predicts his risk of metastasis?",
+    "alternativas": {
+      "A": {
+        "texto": "Diameter of the lesion",
+        "quiz": "Lesion diameter"
+      },
+      "B": {
+        "texto": "Number of colors",
+        "quiz": "Number of colors"
+      },
+      "C": {
+        "texto": "Vertical tumor thickness",
+        "quiz": "Vertical thickness"
+      },
+      "D": {
+        "texto": "Irregularity of the borders",
+        "quiz": "Border irregularity"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "*Breslow*: quanto mais fundo, maior o risco",
+    "certa": [
+      "No tumor primário, o fator prognóstico mais forte é a *Breslow thickness*: a espessura em milímetros da camada granulosa da epiderme até a célula tumoral mais profunda. Quanto mais fundo, maior a chance de o tumor alcançar vasos e linfáticos na fase de *vertical growth*. A ulceração também entra no estadiamento, e o *sentinel lymph node* é avaliado nos tumores mais espessos."
+    ],
+    "termos": [
+      "Breslow thickness",
+      "vertical growth phase",
+      "ulceration",
+      "sentinel lymph node"
+    ],
+    "erradas": {
+      "A": "O diâmetro acima de 6 mm ajuda a suspeitar (o D do ABCDE), mas não prediz metástase tão bem quanto a espessura.",
+      "B": "A variação de cor é critério de suspeita clínica, não de prognóstico.",
+      "D": "A borda irregular ajuda a reconhecer a lesão, mas não mede o quanto ela invadiu."
+    },
+    "macete": {
+      "frase": "No melanoma, vale a *profundidade*, não a *largura*",
+      "apoio": "No bolo de camadas, a fita métrica, a paleta e o cortador ondulado ajudam a desconfiar da lesão (diâmetro, cor e borda do ABCDE); a régua de pé, que mede até onde a mancha desceu, é a que conta para o prognóstico: a espessura de Breslow.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui a peça que conta é a régua de pé."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na patologia da pele, com informação sem medo. Uma lesão retirada das costas, descrita na vinheta, e quatro medidas possíveis. Qual delas mais prediz o risco de metástase?",
+    "palavras_chave": [
+      "skin lesion",
+      "pathology report",
+      "prognosis",
+      "Step 1 pathology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Patologia",
+      "#Dermatologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Melanoma confirmado: qual medida da lesão mais prediz metástase?"
+  },
+  "reel": null,
+  "exemplo": false
+}

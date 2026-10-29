@@ -1,0 +1,45 @@
+{
+  "programa": "Questão de Embarque",
+  "marca": "ROAD TO AMERICA",
+  "perfil": null,
+  "assinatura": {
+    "nome": "Dr. Getúlio Bernardo Morato Filho",
+    "crm": "CRM-DF 13610",
+    "rqe": null,
+    "especialidade": null
+  },
+  "horario_feed": "12h00",
+  "site": "https://drgetulio.github.io/road-to-america/",
+  "links": {
+    "simulado": "https://drgetulio.github.io/road-to-america/simulado/",
+    "pre_inscricao": "https://drgetulio.github.io/road-to-america/#pre-inscricao",
+    "verificador": "https://drgetulio.github.io/road-to-america/verificar.html"
+  },
+  "utm": {
+    "utm_source": "instagram",
+    "utm_campaign": "questao_de_embarque"
+  },
+  "aviso": "Conteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+  "hashtags_base": [
+    "#USMLE",
+    "#MedicinaNosEUA",
+    "#RoadToAmerica",
+    "#IMG",
+    "#QuestaoDoDia"
+  ],
+  "limites": {
+    "palavras_vinheta": 60,
+    "caracteres_quiz": 30,
+    "teto_personagem_ano": 0.15,
+    "intruso_remix": [
+      0.35,
+      0.65
+    ],
+    "elementos_cena_erro": 6,
+    "palavras_cena_erro": 60
+  },
+  "enquete": {
+    "pergunta": "Qual é a sua letra?",
+    "regra": "Dia D: a enquete pergunta só \"Qual é a sua letra?\" e as quatro opções são as alternativas curtas, em inglês da prova, até 30 caracteres, sem achado da vinheta. O achado decisivo fica em quiz.resumo, que vai para o quiz do D+1 (segunda chance) e para o Reel da sexta, depois do gabarito."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "dia": 62,
+  "data": "2027-01-02",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Capacidade de decisão",
+  "conceito": "Decision-making capacity: task-specific, assessed by the treating physician, not by a court",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-03",
+  "gancho": "Capacidade para recusar intubação: *quem apita* esse jogo?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Viés, de lupa, distribui crachás em branco numa bandeja na porta de um quarto de enfermaria, como quem monta a banca de um concurso público. Lá dentro, um leito vazio e arrumado tem um apito pendurado na grade, esperando dono. Na parede, uma tabela 2x2 em branco.",
+    "foco": "50% 35%",
+    "alt": "O Viés distribui crachás em branco na porta de um quarto; lá dentro, um apito espera pendurado na grade de um leito vazio.",
+    "arquivo": "dia-062.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do quarto: o apito saiu da grade e está no pescoço de um estetoscópio simpático, de bracinhos, que confere quatro plaquinhas de ícones (balão de fala, lâmpada, espelho e engrenagens). A bandeja de crachás do Viés ficou intocada, e ele olha de lado, contrariado.",
+    "alt": "Um estetoscópio de bracinhos usa o apito e confere quatro plaquinhas de ícones; o Viés fica emburrado ao lado da bandeja de crachás.",
+    "arquivo": "dia-062-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 74-year-old man with severe pneumonia refuses intubation. He is alert, explains his condition, the risk of death without intubation, and the alternatives, and his choice has been consistent for two days. His daughter insists that he is not able to decide.",
+    "pergunta": "Who should determine his decision-making capacity?",
+    "alternativas": {
+      "A": {
+        "texto": "The treating physician",
+        "quiz": "Treating physician"
+      },
+      "B": {
+        "texto": "A probate court judge",
+        "quiz": "Court judge"
+      },
+      "C": {
+        "texto": "The hospital ethics committee",
+        "quiz": "Hospital ethics committee"
+      },
+      "D": {
+        "texto": "A consulting psychiatrist",
+        "quiz": "Psychiatrist"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Capacidade se avalia *no leito*",
+    "certa": [
+      "A *decision-making capacity* é uma avaliação clínica, feita pelo médico que trata o paciente, e vale para aquela decisão específica. O médico confere quatro pontos (o paciente expressa uma escolha, entende a informação, aprecia como ela se aplica a ele e raciocina sobre as opções), e este homem cumpre todos, então a recusa dele vale mesmo contra a vontade da filha. Já a *competence* é um conceito legal, decidido por um juiz."
+    ],
+    "termos": [
+      "decision-making capacity",
+      "competence",
+      "informed refusal",
+      "patient autonomy"
+    ],
+    "erradas": {
+      "B": "O juiz decide competência, que é jurídica e global; capacidade para uma decisão médica é avaliada pelo médico, sem processo judicial.",
+      "C": "O comitê de ética ajuda em conflitos e dilemas, mas não é quem avalia a capacidade à beira do leito.",
+      "D": "Qualquer médico pode avaliar capacidade; a psiquiatria ajuda em casos duvidosos, mas não é obrigatória."
+    },
+    "macete": {
+      "frase": "Capacidade *não tem banca*: quem atende, avalia",
+      "apoio": "Pegadinha de prova: O NBME coloca um familiar contestando e oferece juiz ou comitê de ética; se o paciente cumpre os quatro critérios, a escolha dele vale e quem avalia é o próprio médico.",
+      "fala": "Eu ia chamar o juiz. Ainda bem que ninguém me ouviu."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de ética: uma recusa de intubação, uma família dividida e quatro candidatos a juiz da capacidade. A prova cobra quem decide, e não quem fala mais alto no corredor.",
+    "palavras_chave": [
+      "refusal of intubation",
+      "severe pneumonia",
+      "family disagreement",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Recusa lúcida de intubação: quem avalia a capacidade dele?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,107 @@
+{
+  "dia": 350,
+  "data": "2027-10-17",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Estreptococos do grupo viridans (dia 295), Febre maculosa (dia 323), E. coli uropatogênica (dia 344)",
+  "conceito": "Remix: Viridans streptococci + Rickettsia rickettsii + Uropathogenic E. coli",
+  "personagem": null,
+  "anfitriao": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    295,
+    323,
+    344
+  ],
+  "explicacao_em": "2027-10-18",
+  "tom": null,
+  "gancho": "Domingo de revisão na portaria: *a bactéria de mochila voltou* com crachá novo",
+  "gancho_apoio": "Quatro jeitos de grudar, e só um combina com o andar da vinheta.",
+  "imagem": {
+    "arquivo": "dia-350.png",
+    "cena": "Seu Néfron, com o carimbo na mão, confere na portaria de um prédio o crachá de uma bactéria de mochila que espera no tapete do saguão. Num canto, um vinil pequeno encostado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron confere o crachá de uma bactéria de mochila na portaria."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-350-macete.png",
+    "cena": "Callback: no prédio do Seu Néfron, uma bactéria de mochila gruda no tapete do térreo com um crachá de ganchinhos em forma de chave, enquanto outra, com crachá de outro formato, sobe pelo elevador até a cobertura; o Seu Néfron carimba de vermelho as duas fichas e o vinil gira no canto.",
+    "foco": "50% 45%",
+    "alt": "Cistite sem febre: fímbria tipo 1 no térreo"
+  },
+  "questao": {
+    "vinheta": "A 23-year-old woman has 2 days of dysuria, urinary frequency, and suprapubic pain. She is afebrile and has no flank pain or costovertebral angle tenderness. Urinalysis shows pyuria and nitrites without white blood cell casts. Urine culture grows Escherichia coli.",
+    "pergunta": "Which virulence factor most directly mediates its attachment to the bladder epithelium?",
+    "alternativas": {
+      "A": {
+        "texto": "Mannose-binding type 1 fimbriae",
+        "quiz": "Type 1 fimbriae",
+        "dia": 344
+      },
+      "B": {
+        "texto": "P fimbriae binding Gal-Gal globoside",
+        "quiz": "P fimbriae (Gal-Gal)",
+        "dia": 344
+      },
+      "C": {
+        "texto": "Dextran binding fibrin-platelet clots",
+        "quiz": "Dextran (fibrin clots)",
+        "dia": 295
+      },
+      "D": {
+        "texto": "Filamentous hemagglutinin of pertussis",
+        "quiz": "Filamentous hemagglutinin"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Cistite sem febre: *fímbria tipo 1 no térreo*",
+    "certa": [
+      "Disúria, polaciúria e dor suprapúbica sem febre, sem dor lombar e sem cilindros leucocitários localizam a infecção na bexiga: é cistite por *uropathogenic E. coli*. Quem prende a bactéria ao urotélio da bexiga é a *type 1 fimbriae*, cuja ponta (FimH) se liga à manose da uroplaquina. A *P fimbriae* do dia 344 é a que se liga ao globosídeo do rim e leva à pielonefrite. Mesma bactéria, crachá diferente para cada andar."
+    ],
+    "termos": [
+      "type 1 fimbriae (FimH)",
+      "mannose on uroplakin",
+      "cystitis",
+      "P fimbriae in pyelonephritis"
+    ],
+    "erradas": {
+      "B": "A fímbria P (dia 344) prende a E. coli ao epitélio do ureter e do rim, na pielonefrite, que viria com febre, dor lombar e cilindros.",
+      "C": "A dextrana do viridans (dia 295) gruda na fibrina e nas plaquetas de uma valva lesada, na endocardite.",
+      "D": "A hemaglutinina filamentosa é a adesina da Bordetella pertussis no epitélio ciliado das vias aéreas, e não uma adesina da E. coli na bexiga."
+    },
+    "macete": {
+      "frase": "*Térreo é tipo 1, cobertura é P*: a fímbria muda conforme o andar do trato urinário",
+      "apoio": "A tipo 1 gruda na manose da bexiga; a P gruda no globosídeo do rim. Bônus da semana: o Proteus do dia 288 também mora na urina, mas o truque dele é a urease, que faz pedra; e o lipídio A da E. coli que cai no sangue (dia 316) toca o interfone do TLR4. A febre maculosa (dia 323) fica de fora: a Rickettsia gruda no endotélio, não na bexiga.",
+      "fala": "Sem carimbo, não sai. Com fímbria tipo 1, para no térreo."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: estreptococos do grupo viridans (dia 295), febre maculosa (dia 323) e E. coli uropatogênica (dia 344) voltaram, e o Seu Néfron conferiu os crachás de quem gruda. Quatro adesinas; a vinheta diz em que andar a bactéria parou.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cistite sem febre por E. coli: qual adesina prende na bexiga?"
+  },
+  "reel": null,
+  "exemplo": false
+}

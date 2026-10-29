@@ -1,0 +1,96 @@
+{
+  "dia": 306,
+  "data": "2027-09-03",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Propiltiouracil",
+  "conceito": "Propylthiouracil: blocks thyroid peroxidase and peripheral T4 to T3 conversion, preferred in the first trimester",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-04",
+  "tom": null,
+  "gancho": "A tireoide ligou *o modo turbo* e a Tia tem dois frascos quase gêmeos",
+  "gancho_apoio": "Sextou na Farmácia: quatro opções na prateleira e dois frascos quase gêmeos.",
+  "imagem": {
+    "arquivo": "dia-306.png",
+    "cena": "Tia Meia-Vida atrás do balcão com dois frascos quase idênticos, um redondo e um quadrado; sobre o balcão, uma tireoide em forma de borboleta zumbe com uma hélice de turbo nas costas.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida e dois frascos quase gêmeos diante de uma tireoide turbo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-306-macete.png",
+    "cena": "Callback: a Tia Meia-Vida entrega o frasco redondo à cegonha e, no quarto quadradinho do calendário, o frasco redondo passa um bastão de revezamento ao frasco quadrado; do frasco redondo sai uma tesoura que corta a esteira de uma fabriquinha em forma de borboleta e a estrada de uma motoca de entrega; num canto, um fígado simpático abre um guarda-chuva.",
+    "foco": "50% 45%",
+    "alt": "Graves no 1º trimestre: PTU, que corta na fábrica e na estrada"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has palpitations, heat intolerance, and a 3-kg weight loss. She is 8 weeks pregnant. Pulse is 112/min. She has a diffuse, nontender goiter and lid lag. TSH is undetectable, free T4 is elevated, and TSH receptor antibodies are positive.",
+    "pergunta": "Which drug is most appropriate now?",
+    "alternativas": {
+      "A": {
+        "texto": "Methimazole",
+        "quiz": "Methimazole"
+      },
+      "B": {
+        "texto": "Radioactive iodine",
+        "quiz": "Radioactive iodine"
+      },
+      "C": {
+        "texto": "Propylthiouracil",
+        "quiz": "Propylthiouracil"
+      },
+      "D": {
+        "texto": "Potassium iodide",
+        "quiz": "Potassium iodide"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Graves no 1º trimestre: *PTU*, que corta na fábrica e na estrada",
+    "certa": [
+      "Doença de Graves no primeiro trimestre pede *propylthiouracil*, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a *thyroid peroxidase*, que faz a organificação e o acoplamento do iodo, e também a *5'-deiodinase* periférica, que converte T4 em T3. Depois do primeiro trimestre, a troca para methimazole é decidida caso a caso, porque o PTU pode causar lesão hepática grave."
+    ],
+    "termos": [
+      "propylthiouracil",
+      "thyroid peroxidase",
+      "peripheral 5'-deiodinase",
+      "first trimester"
+    ],
+    "erradas": {
+      "A": "O *methimazole* bloqueia a peroxidase, mas não a conversão periférica, e é evitado no primeiro trimestre pelo risco de embriopatia.",
+      "B": "O *iodo radioativo* é contraindicado na gravidez: atravessa a placenta e destrói a tireoide do feto a partir de 10 a 12 semanas.",
+      "D": "O *iodeto de potássio* em dose alta (efeito Wolff-Chaikoff) só serve por pouco tempo, no preparo para cirurgia ou na tempestade tireoidiana."
+    },
+    "macete": {
+      "frase": "*PTU é Primeiro Trimestre; Metimazol é Mais tarde*",
+      "apoio": "No primeiro trimestre, o metimazol pode causar aplasia cutis e embriopatia, então entra o PTU, que bloqueia a peroxidase na fábrica e ainda corta a conversão de T4 em T3 na estrada. Depois de 12 semanas, troca para metimazol, porque o PTU cobra caro do fígado. É o único revezamento em que trocar de remédio no meio do jogo é o plano.",
+      "fala": "Primeiro trimestre? Primeiro o PTU."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia: a tireoide ligou o turbo e a Tia Meia-Vida tem dois frascos quase gêmeos na prateleira. A vinheta tem um detalhe da agenda da paciente que muda a escolha, e o NBME adora colocar esse detalhe na segunda linha.",
+    "palavras_chave": [
+      "thyroid",
+      "endocrinology",
+      "drug choice",
+      "pharmacology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Graves com 8 semanas de gestação: qual antitireoidiano agora?"
+  },
+  "reel": null,
+  "exemplo": false
+}

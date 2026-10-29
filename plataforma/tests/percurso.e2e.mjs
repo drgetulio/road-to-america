@@ -20,6 +20,7 @@ import { join, extname, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
+import { prepararRede, vigiarErros } from "./e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-percurso-capturas"));
@@ -57,6 +58,8 @@ async function etapa(nome, fn) {
 }
 
 const ctx = await navegador.newContext({ viewport: { width: 1280, height: 900 }, colorScheme: "light", locale: "pt-BR" });
+
+await prepararRede(ctx, base);
 await ctx.addInitScript(() => {
   if (sessionStorage.getItem("__papel")) return;
   sessionStorage.setItem("__papel", "1");
@@ -68,8 +71,7 @@ await ctx.addInitScript(() => {
 });
 const page = await ctx.newPage();
 const erros = [];
-page.on("console", (m) => { if (m.type() === "error" && !/Failed to load resource/.test(m.text())) erros.push(m.text()); });
-page.on("pageerror", (e) => erros.push(e.message));
+vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
 page.on("dialog", (d) => d.accept());
 await page.clock.install();
 

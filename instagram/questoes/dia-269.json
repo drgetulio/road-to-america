@@ -1,0 +1,100 @@
+{
+  "dia": 269,
+  "data": "2027-07-28",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Sorologia da hepatite B",
+  "conceito": "Hepatitis B window period: HBsAg and anti-HBs both negative, IgM anti-HBc positive",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": "Dia Mundial das Hepatites (28/7) e Julho Amarelo.",
+  "remix_de": null,
+  "explicacao_em": "2027-07-29",
+  "tom": null,
+  "gancho": "Julho Amarelo e Dia Mundial das Hepatites: *vacine, teste e leia a sorologia com calma*",
+  "gancho_apoio": "Sorologia de hepatite B é o único sudoku que cai na prova e no plantão.",
+  "imagem": {
+    "arquivo": "dia-269.png",
+    "cena": "A portaria de um prédio de apartamentos numa manhã de sol, com fitinhas amarelas nas varandas; Seu Allen, de avental, confere um painel de campainhas com o lápis vermelho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen confere o painel de campainhas na portaria de um prédio com fitinhas amarelas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-269-macete.png",
+    "cena": "Callback: um caminhão de mudança vai embora levando uma bola de espinhos (o HBsAg), outro caminhão com um anticorpo em forma de Y ainda vem lá longe, e no intervalo um porteiro de quepe (o IgM anti-HBc) segura a portaria sozinho. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um caminhão leva o HBsAg, o do anti-HBs vem longe, e o porteiro segura a portaria sozinho"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man had acute hepatitis B diagnosed 3 months ago. He now feels better, and his ALT is falling. Current serology shows HBsAg negative, anti-HBs negative, IgM anti-HBc positive, and HBeAg negative.",
+    "pergunta": "Which best describes his current status?",
+    "alternativas": {
+      "A": {
+        "texto": "Window period of acute infection",
+        "quiz": "Window period"
+      },
+      "B": {
+        "texto": "Chronic hepatitis B infection",
+        "quiz": "Chronic hepatitis B"
+      },
+      "C": {
+        "texto": "Immunity from vaccination",
+        "quiz": "Vaccine immunity"
+      },
+      "D": {
+        "texto": "Resolved infection with immunity",
+        "quiz": "Resolved, immune"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Janela: *só o IgM anti-HBc*",
+    "certa": [
+      "No período de janela da *acute hepatitis B*, o *HBsAg* já foi eliminado e o *anti-HBs* ainda não ficou detectável. O único marcador positivo é o *IgM anti-HBc*, que prova infecção recente. Por isso o painel com anti-HBc é necessário para não deixar passar a infecção nessa fase."
+    ],
+    "termos": [
+      "window period",
+      "IgM anti-HBc",
+      "HBsAg",
+      "anti-HBs"
+    ],
+    "erradas": {
+      "B": "Na infecção crônica, o HBsAg continua positivo por mais de 6 meses, e o anti-HBc é IgG.",
+      "C": "Quem é imune pela vacina tem só o anti-HBs positivo, porque a vacina contém apenas HBsAg; o anti-HBc é negativo.",
+      "D": "Na infecção resolvida, o anti-HBs fica positivo junto com o anti-HBc IgG."
+    },
+    "macete": {
+      "frase": "Na janela, *só o porteiro* fica: *IgM anti-HBc*",
+      "apoio": "O caminhão do HBsAg foi embora e o do anti-HBs ainda não chegou. No intervalo, quem segura a portaria (e sabe de tudo o que aconteceu) é o porteiro, o IgM anti-HBc. Se a pergunta fala em janela, procure o core. No Dia Mundial das Hepatites, o recado é vacinar e testar.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Na janela, só o porteiro IgM anti-HBc está em casa."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê no Dia Mundial das Hepatites, com o Seu Allen. Um homem se recuperando de uma hepatite B aguda e uma sorologia nova, marcador por marcador, na vinheta. Em que fase ele está?",
+    "palavras_chave": [
+      "hepatitis B",
+      "recovery",
+      "falling ALT",
+      "serology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#JulhoAmarelo",
+      "#Hepatologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "HBsAg e anti-HBs negativos, IgM anti-HBc positivo: que fase é essa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

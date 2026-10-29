@@ -1,0 +1,97 @@
+{
+  "dia": 312,
+  "data": "2027-09-09",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Epifisiólise femoral proximal",
+  "conceito": "Slipped capital femoral epiphysis: adolescent with hip or knee pain, surgical pinning",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-10",
+  "tom": null,
+  "gancho": "Dói no joelho, mas *a conta veio do andar de cima*",
+  "gancho_apoio": "Rodízio de Quinta na festa do time: a goteira pinga no joelho, mas a água vem do andar de cima.",
+  "imagem": {
+    "arquivo": "dia-312.png",
+    "cena": "O Garçom Espetinho olha para o teto: uma goteira do andar de cima pinga bem em cima de uma joelheira de futebol esquecida numa cadeira. A plaquinha verde e vermelha está no bolso. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A goteira do andar de cima pinga numa joelheira"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-312-macete.png",
+    "cena": "Callback: o garçom desembrulha a casquinha e a bola de sorvete escorregou para trás; ele crava um espeto de metal atravessando a bola e a casquinha, fixando a bola onde ela parou, sem empurrar de volta; ele levanta o lado verde da plaquinha e a bola de futebol descansa num banco.",
+    "foco": "50% 45%",
+    "alt": "Dor no joelho do adolescente: examine o quadril"
+  },
+  "questao": {
+    "vinheta": "A 13-year-old boy has had 4 weeks of dull left knee pain and a limp that worsen after soccer practice. He has no fever. His BMI is at the 97th percentile. Knee examination is normal. Passive flexion of the left hip causes obligatory external rotation, and internal rotation is limited.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Legg-Calvé-Perthes disease of the hip",
+        "quiz": "Legg-Calvé-Perthes"
+      },
+      "B": {
+        "texto": "Osgood-Schlatter disease",
+        "quiz": "Osgood-Schlatter"
+      },
+      "C": {
+        "texto": "Slipped capital femoral epiphysis",
+        "quiz": "SCFE"
+      },
+      "D": {
+        "texto": "Transient synovitis",
+        "quiz": "Transient synovitis"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dor no joelho do adolescente: *examine o quadril*",
+    "certa": [
+      "Adolescente com sobrepeso, dor no joelho ou na coxa, claudicação e *obligatory external rotation* ao fletir o quadril tem *slipped capital femoral epiphysis*. A epífise escorrega para trás sobre a metáfise pela fise enfraquecida, e a dor referida pelo nervo obturatório leva a queixa para o joelho. O diagnóstico vem pelo raio X de quadril em AP e em perfil (frog-leg), e o tratamento é fixação cirúrgica *in situ* com parafuso, sem tentar reduzir."
+    ],
+    "termos": [
+      "slipped capital femoral epiphysis",
+      "obligatory external rotation",
+      "referred knee pain",
+      "in situ screw fixation"
+    ],
+    "erradas": {
+      "A": "*Perthes* é necrose avascular da cabeça femoral em crianças menores, em geral de 4 a 8 anos, com dor que piora aos poucos.",
+      "B": "*Osgood-Schlatter* dói na tuberosidade da tíbia, com exame do quadril normal.",
+      "D": "*Sinovite transitória* ocorre em criança pequena depois de virose e melhora em poucos dias, sem rotação externa obrigatória."
+    },
+    "macete": {
+      "frase": "*Sorvete escorregou da casquinha? Não empurra de volta*: espeta no lugar",
+      "apoio": "A bola de sorvete é a epífise que escorregou da casquinha (o colo do fêmur). O garçom crava um espeto e fixa como está: parafuso in situ, sem tentar reduzir. Rotação externa obrigatória ao fletir o quadril é a assinatura, e todo joelho de adolescente que dói pede exame do quadril.",
+      "fala": "Vai uma conduta aí? Parafuso, sem empurrar."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na festa do time: a goteira pinga na joelheira, mas a água vem do andar de cima. Quatro diagnósticos de quem manca, e a idade e o exame do quadril da vinheta separam os quatro. Quem examina só onde dói erra no plantão e no NBME.",
+    "palavras_chave": [
+      "pediatric orthopedics",
+      "limp",
+      "sports medicine",
+      "physical examination"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Ortopedia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "13 anos, dor no joelho e quadril que roda para fora ao fletir: qual?"
+  },
+  "reel": null,
+  "exemplo": false
+}

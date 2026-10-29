@@ -1,0 +1,88 @@
+{
+  "dia": 172,
+  "data": "2027-04-22",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Intussuscepção",
+  "conceito": "Intussusception: target sign on ultrasound, air or contrast enema reduction",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-23",
+  "tom": null,
+  "gancho": "Choro em crise e *um ultrassom que já fechou o caso*",
+  "gancho_apoio": "O diagnóstico já está na vinheta. O Garçom Espetinho só quer saber o próximo espeto.",
+  "imagem": {
+    "arquivo": "dia-172.png",
+    "cena": "Numa padaria de bairro, atrás do balcão de rosquinhas, o Garçom Espetinho segura uma luneta de pirata com os gomos todos encaixados um dentro do outro. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho, atrás do balcão de rosquinhas, segura uma luneta com os gomos encaixados."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-172-macete.png",
+    "cena": "Callback: uma bombinha de ar sopra a luneta e os gomos deslizam para fora, abrindo de novo, enquanto um bisturi fica de reserva numa bandeja coberta ao fundo. Fundo limpo.",
+    "alt": "Uma bombinha de ar abre a luneta de novo; o bisturi fica de reserva ao fundo."
+  },
+  "questao": {
+    "vinheta": "A 14-month-old boy has bouts of inconsolable crying with drawn-up knees every 15 to 20 minutes, lethargy between bouts, vomiting, and a bloody, mucoid stool. He is afebrile and hemodynamically stable, without peritoneal signs. Ultrasound shows a target sign in the right abdomen.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Stool culture and observation",
+        "quiz": "Stool culture, observe"
+      },
+      "B": {
+        "texto": "Immediate exploratory laparotomy",
+        "quiz": "Exploratory laparotomy"
+      },
+      "C": {
+        "texto": "Upper gastrointestinal contrast series",
+        "quiz": "Upper GI series"
+      },
+      "D": {
+        "texto": "Air or contrast enema reduction",
+        "quiz": "Air enema"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Intussuscepção estável: *enema* que diagnostica e trata",
+    "certa": [
+      "Dor em cólica intermitente, letargia entre as crises, fezes com sangue e muco (*currant jelly stool*) e *target sign* no ultrassom, entre 6 meses e 3 anos, é *intussusception*, geralmente ileocólica. Com a criança estável e sem peritonite, o próximo passo é a redução por *air or contrast enema* guiada por imagem, que diagnostica e trata, com a cirurgia de sobreaviso."
+    ],
+    "termos": [
+      "intussusception",
+      "target sign",
+      "currant jelly stool",
+      "air enema reduction"
+    ],
+    "erradas": {
+      "A": "Observar atrasa a redução e aumenta o risco de isquemia e perfuração.",
+      "B": "Laparotomia é para peritonite, perfuração, instabilidade ou falha da redução por enema.",
+      "C": "A seriografia contrastada procura má rotação no vômito bilioso; não trata e não é o exame da intussuscepção."
+    },
+    "macete": {
+      "frase": "O intestino vira *luneta* fechada e aparece a *rosquinha* no ultrassom; um sopro de *ar* abre a luneta de volta",
+      "apoio": "Peritonite, perfuração ou choque vão direto para a cirurgia. Em criança maior, procure o divertículo de Meckel como ponto de partida.",
+      "fala": "Luneta fechada? Um sopro de ar resolve. Bisturi só se o enema falhar, doutor."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na emergência pediátrica. O padrão do choro, as fezes e o achado do ultrassom estão na vinheta, e o diagnóstico está fechado. Qual é o próximo passo?",
+    "palavras_chave": [
+      "episodic crying",
+      "drawn-up knees",
+      "bloody stool",
+      "target sign"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bebê estável, fezes com sangue e sinal do alvo no ultrassom: e agora?"
+  },
+  "exemplo": false
+}

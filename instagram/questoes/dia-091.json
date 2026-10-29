@@ -1,0 +1,100 @@
+{
+  "dia": 91,
+  "data": "2027-01-31",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix das micobactérias: Dermatite de contato (dia 43), Mycobacterium tuberculosis (dia 64), Hanseníase (dia 85)",
+  "conceito": "Mycobacteria remix: Contact dermatitis to nickel + Mycobacterium tuberculosis + Mycobacterium leprae",
+  "personagem": "Macrô",
+  "gancho_data": "Dia Mundial contra a Hanseníase (último domingo de janeiro, 31/1/2027).",
+  "remix_de": [
+    43,
+    64,
+    85
+  ],
+  "explicacao_em": "2027-02-01",
+  "tom": "acolhedor",
+  "gancho": "Último domingo de janeiro: *informação* cura, e estigma não tem vez",
+  "gancho_apoio": "Domingo de revisão com três conceitos já vistos (dias 43, 64 e 85).",
+  "imagem": {
+    "arquivo": "dia-091.png",
+    "cena": "Macrô, sereno e de comanda no bolso, está numa praça ao nascer do sol, ao lado de um banco com uma fita roxa de conscientização amarrada. Um vinil pequeno no canto.",
+    "foco": "50% 35%",
+    "alt": "Macrô, sereno, numa praça ao nascer do sol, ao lado de um banco com uma fita roxa de conscientização."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-091-macete.png",
+    "cena": "Callback da praça: um linfócito T de capacete entrega ao Macrô um envelope amarelo brilhante, e os dois erguem um muro redondo e bem feito em volta de dois bacilos pequenos, ao lado de uma tigela de massa que cresceu devagar. A fita roxa continua no banco.",
+    "foco": "50% 40%",
+    "alt": "Um linfócito Th1 entrega um envelope amarelo ao Macrô, e os dois constroem um muro em volta de dois bacilos; ao lado, cartela de comprimidos e um coração verde."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has two well-defined, hypopigmented, anesthetic plaques on his forearm and a thickened ulnar nerve. Skin biopsy shows well-formed granulomas with rare acid-fast bacilli. An intradermal lepromin test produces a firm nodule at the injection site 4 weeks later.",
+    "pergunta": "This skin test reaction is mediated mainly by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE on mast cells"
+      },
+      "B": {
+        "texto": "Immune complex deposition with complement",
+        "quiz": "Immune complexes"
+      },
+      "C": {
+        "texto": "Sensitized T cells activating macrophages",
+        "quiz": "Sensitized T cells",
+        "dia": 43
+      },
+      "D": {
+        "texto": "IgG antibodies against skin antigens",
+        "quiz": "IgG to skin antigens"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Teste tardio é linfócito T",
+    "certa": [
+      "Placas hipocrômicas anestésicas, nervo espessado e granulomas com raros bacilos são a hanseníase tuberculoide do dia 85. A lepromina é um extrato de *Mycobacterium leprae* injetado na pele; na forma tuberculoide, com resposta Th1 forte, ela produz um nódulo firme em 3 a 4 semanas (reação de Mitsuda). É uma *type IV hypersensitivity*, igual à dermatite de contato ao níquel do dia 43: linfócitos T sensibilizados reconhecem o antígeno, liberam IFN-gama e ativam macrófagos, sem anticorpo no meio. Na forma virchowiana, com resposta Th2, o teste é negativo. Ele ajuda a classificar a forma clínica, e não a fazer o diagnóstico; a hanseníase tem cura com a poliquimioterapia, gratuita pelo SUS."
+    ],
+    "termos": [
+      "lepromin test",
+      "type IV hypersensitivity",
+      "tuberculoid leprosy",
+      "Th1 response"
+    ],
+    "erradas": {
+      "A": "IgE no mastócito é o tipo I, imediato, em minutos, como a anafilaxia; não forma nódulo depois de semanas.",
+      "B": "Imunocomplexo com complemento é o tipo III, como a doença do soro, e aparece em horas a dias, com vasculite.",
+      "D": "IgG contra antígeno fixo da pele é o tipo II, como no pênfigo, e não explica um nódulo granulomatoso no local da injeção."
+    },
+    "macete": {
+      "frase": "Teste de pele que *demora semanas* é fermentação natural: linfócito T, como no níquel. Th1 forte, teste positivo e poucos bacilos.",
+      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, lepromina, dermatite de contato e rejeição celular; todas tardias e sem anticorpo.",
+      "fala": "Granuloma firme, poucos bacilos e tratamento que cura."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é o Dia Mundial contra a Hanseníase. A doença tem cura, o tratamento é gratuito pelo SUS, e diagnóstico cedo evita sequela e estigma. No domingo de revisão, três conceitos já vistos voltam juntos (dias 43, 64 e 85), com tom de respeito.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Hanseniase",
+      "#Imunologia",
+      "#Immunology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lepromina com nódulo firme em 4 semanas: qual mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

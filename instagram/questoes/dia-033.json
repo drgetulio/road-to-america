@@ -1,0 +1,94 @@
+{
+  "dia": 33,
+  "data": "2026-12-04",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Betabloqueadores",
+  "conceito": "Beta-1 selective blockers: metoprolol spares beta-2, nonselective agents can trigger bronchospasm",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-05",
+  "gancho": "Sexta de betabloqueador: *quatro chaves* no molho da Tia Meia-Vida, e só uma serve hoje",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Tia Meia-Vida, atrás do balcão de uma farmácia de interior, segura um molho de quatro chaves e escolhe uma delas com a lupa.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, atrás do balcão, escolhe com a lupa uma chave num molho de quatro.",
+    "arquivo": "dia-033.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: Tia Meia-Vida gira uma chave que só serve na porta do coração único; a porta dos dois pulmões continua aberta, com uma brisa e uma biruta tranquila. As outras chaves, maiores, ficam penduradas no gancho.",
+    "alt": "Beta-1 tem um coração; beta-2 tem dois pulmões",
+    "arquivo": "dia-033-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with moderate persistent asthma, well controlled on inhaled budesonide-formoterol, is recovering from an acute myocardial infarction. A beta-blocker is planned for secondary prevention.",
+    "pergunta": "Which drug is the most appropriate choice to minimize the risk of bronchospasm?",
+    "alternativas": {
+      "A": {
+        "texto": "Carvedilol",
+        "quiz": "Carvedilol"
+      },
+      "B": {
+        "texto": "Metoprolol",
+        "quiz": "Metoprolol"
+      },
+      "C": {
+        "texto": "Nadolol",
+        "quiz": "Nadolol"
+      },
+      "D": {
+        "texto": "Propranolol",
+        "quiz": "Propranolol"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Beta-1* tem um coração; *beta-2* tem dois pulmões",
+    "certa": [
+      "O metoprolol é *beta-1 selective*: em dose usual bloqueia o receptor do coração e poupa o *beta-2* do músculo liso brônquico, que mantém o brônquio aberto e é o alvo do formoterol. Os betabloqueadores não seletivos bloqueiam o beta-2 e podem disparar *bronchospasm* em quem tem asma. A seletividade é relativa e cai em doses altas, por isso a escolha vem com dose baixa e acompanhamento."
+    ],
+    "termos": [
+      "beta-1 selective",
+      "metoprolol",
+      "nonselective beta-blocker",
+      "bronchospasm"
+    ],
+    "erradas": {
+      "A": "O carvedilol bloqueia beta-1, beta-2 e alfa-1, então não poupa o brônquio.",
+      "C": "O nadolol é não seletivo e de meia-vida longa, um dos piores para quem tem asma.",
+      "D": "O propranolol é o protótipo do não seletivo e bloqueia o beta-2 brônquico."
+    },
+    "macete": {
+      "frase": "Beta-1 tem *um coração*; beta-2 tem *dois pulmões*. O metoprolol só tem a chave da porta do coração.",
+      "apoio": "Pegadinha de prova: O NBME costuma cobrar o broncoespasmo do propranolol ou do timolol em colírio num paciente com asma, e o carvedilol aparece como armadilha por ser \"de cardiologia\".",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com betabloqueador, o assunto em que todo mundo jura que sabe tudo até o NBME perguntar. A Tia Meia-Vida tem quatro chaves e um paciente com mais de um problema.",
+    "palavras_chave": [
+      "beta-blockers",
+      "cardiology",
+      "pharmacology",
+      "comorbidities"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pós-infarto com asma: qual betabloqueador poupa o brônquio?"
+  },
+  "exemplo": false
+}

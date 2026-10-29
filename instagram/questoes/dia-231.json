@@ -1,0 +1,103 @@
+{
+  "dia": 231,
+  "data": "2027-06-20",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Translocação robertsoniana (dia 136), Influenza: shift e drift (dia 204), Grupos sanguíneos ABO (dia 225)",
+  "conceito": "Remix: Robertsonian translocation + Influenza shift vs drift + ABO compatibility",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": [
+    136,
+    204,
+    225
+  ],
+  "explicacao_em": "2027-06-21",
+  "tom": null,
+  "gancho": "Tipo sanguíneo desconhecido às 2 da manhã: a Capitã precisa de um plasma *diplomata*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-231.png",
+    "cena": "Sala de trauma às 2 da manhã, desenhada como um cruzamento: a Capitã Plaqueta apita diante de um carrinho de apoio com quatro garrafinhas de líquido dourado, cada uma com uma tampa de forma diferente. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta apita ao lado de quatro garrafinhas douradas de tampas diferentes"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-231-macete.png",
+    "cena": "A Capitã escolhe a garrafinha de tampa com as duas formas: dentro dela não há nenhuma estrela-do-mar (sem anti-A e sem anti-B), e ela entra tranquila em casas de telhados de todas as formas. Já a garrafinha de tampa lisa está cheia de estrelas-do-mar agitadas.",
+    "foco": "50% 45%",
+    "alt": "Plasma AB é o plasma universal"
+  },
+  "questao": {
+    "vinheta": "A 25-year-old man arrives in hemorrhagic shock after a motorcycle crash, and the massive transfusion protocol is activated before his blood type is known. He is receiving uncrossmatched group O red cells. The team now needs plasma.",
+    "pergunta": "Plasma from which ABO group is compatible with recipients of any blood type?",
+    "alternativas": {
+      "A": {
+        "texto": "Group O plasma",
+        "quiz": "Group O"
+      },
+      "B": {
+        "texto": "Group O, Rh-negative plasma",
+        "quiz": "Group O Rh-negative"
+      },
+      "C": {
+        "texto": "Group A plasma",
+        "quiz": "Group A"
+      },
+      "D": {
+        "texto": "Group AB plasma",
+        "quiz": "Group AB",
+        "dia": 225
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Plasma AB é o *plasma universal*",
+    "certa": [
+      "Dia 225: o plasma do grupo *AB* não tem anti-A nem anti-B, então não ataca hemácia de nenhum grupo: é o *universal plasma donor*. Na hemácia a lógica se inverte, e a *O* (sem antígeno A ou B) é a doadora universal. Quem tem o antígeno na hemácia não tem o anticorpo no plasma."
+    ],
+    "termos": [
+      "universal plasma donor (AB)",
+      "universal red cell donor (O)",
+      "anti-A and anti-B IgM",
+      "massive transfusion"
+    ],
+    "erradas": {
+      "A": "O plasma do grupo O tem anti-A e anti-B e atacaria as hemácias de quem é A, B ou AB. O grupo O é o doador universal de hemácias, não de plasma.",
+      "B": "Grupo O e Rh negativo fazem da hemácia O negativo a doadora universal de hemácias. No plasma, o grupo O carrega anti-A e anti-B, e o Rh não muda isso.",
+      "C": "Plasma A carrega anti-B e hemolisaria hemácias B e AB. Muitos centros de trauma usam plasma A com título baixo de anti-B quando falta AB, mas o plasma compatível com todos os grupos é o AB."
+    },
+    "macete": {
+      "frase": "*Antígeno no carro, anticorpo no plasma*: quem tem um não tem o outro. Hemácia O passa em todo bairro; *plasma AB* entra em toda casa.",
+      "apoio": "Bônus de domingo: o portador equilibrado de translocação robertsoniana tem 45 cromossomos e fenótipo normal (dia 136); shift é troca de segmentos e pandemia, drift é mutação pontual e vacina anual (dia 204). O NBME inverte doador universal de hemácia (O) e de plasma (AB).",
+      "fala": "Parou, colou... plasma AB pode entrar em qualquer bairro."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com a Capitã Plaqueta. Hoje o caso é de ABO (dia 225): trauma grave, transfusão maciça e tipo sanguíneo ainda desconhecido. A translocação robertsoniana (dia 136) e o shift e drift (dia 204) voltam no macete.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Genetica",
+      "#Hematology",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tipo desconhecido no trauma: qual plasma serve a todos?"
+  },
+  "reel": null,
+  "exemplo": false
+}

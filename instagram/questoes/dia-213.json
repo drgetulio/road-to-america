@@ -1,0 +1,99 @@
+{
+  "dia": 213,
+  "data": "2027-06-02",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Hiperparatireoidismo primário",
+  "conceito": "Primary hyperparathyroidism: high calcium, high PTH, low phosphate",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-03",
+  "tom": null,
+  "gancho": "Quarta do Porquê: cansaço, intestino preso e *um exame de rotina que ninguém esperava*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-213.png",
+    "cena": "Em estilo de manual de montagem, Seu Néfron segura contra a luz um único exame de sangue, com a sobrancelha erguida. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron, de sobrancelha erguida, olha um exame de sangue contra a luz"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-213-macete.png",
+    "cena": "Callback: num banquinho em forma de gravata-borboleta (a tireoide), estão quatro ervilhas verdes; três pequenas dormem e uma, enorme, segura um megafone e manda esvaziar um cofrinho em forma de osso. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Uma das quatro ervilhas, enorme, manda de megafone esvaziar o cofrinho de osso"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman has fatigue and constipation. Serum calcium is 11.4 mg/dL, and parathyroid hormone is 58 pg/mL (normal 10 to 65). Her 24-hour urinary calcium excretion is elevated. Serum creatinine and 25-hydroxyvitamin D are normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Humoral hypercalcemia of malignancy",
+        "quiz": "PTHrP from a tumor"
+      },
+      "B": {
+        "texto": "Secondary hyperparathyroidism",
+        "quiz": "Secondary hyperparathyroidism"
+      },
+      "C": {
+        "texto": "Familial hypocalciuric hypercalcemia",
+        "quiz": "FHH (CaSR defect)"
+      },
+      "D": {
+        "texto": "Primary hyperparathyroidism",
+        "quiz": "Primary hyperparathyroidism"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Cálcio alto com PTH alto: *paratireoide* no comando",
+    "certa": [
+      "Cálcio alto com PTH alto, ou *inapropriadamente normal*, é *primary hyperparathyroidism*, quase sempre por um *parathyroid adenoma*. O PTH de 58 parece normal, mas, com cálcio de 11,4, a paratireoide sadia estaria suprimida: quem ainda secreta está no comando. A calciúria de 24 horas alta afasta a hipercalcemia hipocalciúrica familiar, e a creatinina normal afasta o hiperparatireoidismo secundário da doença renal."
+    ],
+    "termos": [
+      "primary hyperparathyroidism",
+      "parathyroid adenoma",
+      "hypophosphatemia",
+      "hypercalciuria"
+    ],
+    "erradas": {
+      "A": "Na *humoral hypercalcemia of malignancy*, o PTHrP do tumor sobe o cálcio e o PTH verdadeiro fica suprimido.",
+      "B": "No *secondary hyperparathyroidism* da doença renal crônica ou da falta de vitamina D, o cálcio está baixo ou normal; aqui o cálcio está alto, e a creatinina e a vitamina D são normais.",
+      "C": "Na *familial hypocalciuric hypercalcemia*, o receptor sensor de cálcio funciona mal e a calciúria é baixa, não alta."
+    },
+    "macete": {
+      "frase": "*Pedras, ossos, gemidos e trono*: o PTH esvaziou o cofre",
+      "apoio": "Na imagem, uma das quatro ervilhas da paratireoide cresceu e dá ordens de megafone: o cofre de osso se esvazia, as pedrinhas param no rim e o fosfato vai embora rio abaixo. Cálcio alto com PTH alto é ela; PTH baixo, procure outro culpado.",
+      "fala": "Sem carimbo, não sai. Mas pedra está chegando sem pedir licença."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na endocrinologia, com o Seu Néfron de óculos na ponta do nariz. Um cálcio, um hormônio e uma urina de 24 horas: os números estão na vinheta, e cada um elimina um suspeito.",
+    "palavras_chave": [
+      "calcium disorder",
+      "parathyroid hormone",
+      "24-hour urine",
+      "Step 1 physiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#Fisiologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cálcio 11,4, PTH 58 e calciúria alta: qual diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

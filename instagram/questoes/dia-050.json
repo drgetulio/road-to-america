@@ -1,0 +1,94 @@
+{
+  "dia": 50,
+  "data": "2026-12-21",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de DiGeorge",
+  "conceito": "DiGeorge syndrome: 22q11.2 deletion with thymic aplasia, hypocalcemia and conotruncal defects",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-22",
+  "gancho": "Segunda-feira na UTI neonatal: o Macrô foi chamado para um *caso de quatro suspeitos*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, segura uma prancheta na beira de um berçário de desenho, ao lado de um bercinho vazio e arrumado, conferindo a lista de chamada.",
+    "foco": "50% 35%",
+    "alt": "Macrô, de prancheta na mão, na beira de um berçário de desenho, ao lado de um bercinho vazio e arrumado.",
+    "arquivo": "dia-050.png"
+  },
+  "imagem_macete": {
+    "cena": "Revelação: na prancheta, a foto oficial de um time tem dois lugares vazios, que ganham contornos pontilhados de um timo em forma de borboleta e de quatro bolinhas de paratireoide; no banco, um coração de camisa tem um tronco único saindo do topo, e numa lagoa ao lado nadam dois patinhos amarelos.",
+    "alt": "CATCH-22: faltaram as bolsas 3 e 4",
+    "arquivo": "dia-050-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 4-day-old boy has a generalized seizure. He has a cleft palate, low-set ears, and a harsh systolic murmur; echocardiography shows truncus arteriosus. Serum calcium is 6.2 mg/dL with a low PTH level. Chest x-ray shows no thymic shadow.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Williams syndrome",
+        "quiz": "Williams syndrome"
+      },
+      "B": {
+        "texto": "X-linked agammaglobulinemia",
+        "quiz": "Bruton (XLA)"
+      },
+      "C": {
+        "texto": "Adenosine deaminase deficiency",
+        "quiz": "ADA deficiency"
+      },
+      "D": {
+        "texto": "22q11.2 deletion syndrome",
+        "quiz": "22q11.2 deletion"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*CATCH-22*: faltaram as bolsas 3 e 4",
+    "certa": [
+      "A deleção *22q11.2* (*DiGeorge syndrome*) impede o desenvolvimento da 3ª e da 4ª bolsas faríngeas, que formam o timo e as paratireoides. Daí a *thymic aplasia* (sem sombra tímica e com poucas células T), o PTH baixo com *hypocalcemia* e convulsão, e os defeitos conotruncais como o *truncus arteriosus*. Fenda palatina e orelhas baixas completam o CATCH-22."
+    ],
+    "termos": [
+      "22q11.2 deletion",
+      "DiGeorge syndrome",
+      "thymic aplasia",
+      "third and fourth pharyngeal pouches"
+    ],
+    "erradas": {
+      "A": "A síndrome de Williams (7q11.23) cursa com hipercalcemia e estenose aórtica supravalvar, o oposto deste quadro.",
+      "B": "Na agamaglobulinemia ligada ao X faltam células B, e as infecções começam depois dos 6 meses; não há hipocalcemia nem cardiopatia.",
+      "C": "A deficiência de ADA causa SCID sem hipocalcemia, fenda palatina ou defeito conotruncal."
+    },
+    "macete": {
+      "frase": "Dois patinhos na lagoa, *22*: faltaram dois titulares na foto (timo e paratireoide, bolsas 3 e 4) e o coração veio de tronco único.",
+      "apoio": "Pegadinha de prova: O NBME costuma abrir com a convulsão por hipocalcemia no recém-nascido com cardiopatia e pedir a estrutura embriológica: 3ª e 4ª bolsas faríngeas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na UTI neonatal: convulsão no quarto dia de vida e quatro diagnósticos que a prova adora misturar. O Macrô confere a lista de chamada do berçário.",
+    "palavras_chave": [
+      "newborn",
+      "seizure",
+      "congenital heart disease",
+      "immunology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Genetics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Convulsão, cálcio baixo, truncus e sem sombra do timo: qual diagnóstico?"
+  },
+  "exemplo": false
+}

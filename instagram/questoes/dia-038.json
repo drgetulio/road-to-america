@@ -1,0 +1,95 @@
+{
+  "dia": 38,
+  "data": "2026-12-09",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Relação ventilação-perfusão",
+  "conceito": "Shunt vs dead space: 100 percent O2 corrects V/Q mismatch but not true shunt",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-10",
+  "gancho": "O Mito pegou o ônibus do oxigênio, e a *linha* tem quatro pontos possíveis de problema",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito, de jaleco amassado e café na mão, espera no fim de uma linha de ônibus, olhando o relógio do ponto, com setinhas de manual em volta do mapa da linha.",
+    "foco": "50% 35%",
+    "alt": "Mito espera no fim de uma linha de ônibus, olhando o relógio do ponto, com setinhas em volta do mapa da linha.",
+    "arquivo": "dia-038.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o ônibus vermelho passa pelo ponto alagado e segue vazio, enquanto uma multidão de bolinhas de oxigênio acena de longe, sem conseguir atravessar a água. No ponto com poucos passageiros, as bolinhas extras sobem e o ônibus sai cheio. O Mito suspira.",
+    "alt": "Ponto alagado: oxigênio a mais não sobe no ônibus",
+    "arquivo": "dia-038-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man is intubated for ARDS. On FiO2 0.4, PaO2 is 58 mm Hg with normal PaCO2. FiO2 is increased to 1.0 without changing PEEP, and PaO2 rises only to 64 mm Hg. Chest x-ray shows diffuse bilateral alveolar opacities.",
+    "pergunta": "Which mechanism best explains his hypoxemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Alveolar hypoventilation",
+        "quiz": "Hypoventilation"
+      },
+      "B": {
+        "texto": "Diffusion limitation",
+        "quiz": "Diffusion limitation"
+      },
+      "C": {
+        "texto": "Low ventilation-perfusion ratio units",
+        "quiz": "Low V/Q units"
+      },
+      "D": {
+        "texto": "Right-to-left intrapulmonary shunt",
+        "quiz": "Intrapulmonary shunt"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Ponto *alagado*: oxigênio a mais não sobe no ônibus",
+    "certa": [
+      "No *ARDS*, alvéolos cheios de líquido continuam perfundidos mas não ventilam, então o sangue passa por eles sem pegar oxigênio: é *shunt* (V/Q igual a zero). Como esse sangue nunca encontra o gás, subir para *100% O2* quase não muda o PaO2. Já no *V/Q mismatch* com unidades de V/Q baixo, o oxigênio extra chega a esses alvéolos e o PaO2 sobe bastante."
+    ],
+    "termos": [
+      "intrapulmonary shunt",
+      "V/Q mismatch",
+      "dead space",
+      "100% oxygen challenge"
+    ],
+    "erradas": {
+      "A": "Hipoventilação subiria o PaCO2, e o gradiente A-a seria normal; aqui o PaCO2 está normal.",
+      "B": "Limitação de difusão melhora bem com oxigênio a 100%, porque aumenta a pressão que empurra o gás pela membrana.",
+      "C": "Unidades com V/Q baixo respondem ao oxigênio a 100%; a resposta mínima aponta para shunt."
+    },
+    "macete": {
+      "frase": "Ponto *alagado* é shunt: pode lotar a calçada de oxigênio que o ônibus passa vazio. FiO2 de 100% quase não mexe.",
+      "apoio": "Pegadinha de prova: O NBME diferencia shunt de V/Q mismatch pela resposta ao oxigênio a 100%; espaço morto aparece na embolia pulmonar como área ventilada sem perfusão.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na UTI: hipoxemia, quatro mecanismos e um teste que separa todos eles. O Mito está no fim da linha esperando oxigênio, e você, no fim do bloco, esperando o intervalo.",
+    "palavras_chave": [
+      "ARDS",
+      "mechanical ventilation",
+      "oxygenation",
+      "respiratory physiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology",
+      "#Pneumologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "FiO2 de 1,0 e PaO2 quase igual: qual mecanismo da hipoxemia?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 123,
+  "data": "2027-03-04",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Bronquiolite",
+  "conceito": "RSV bronchiolitis: supportive care, no routine bronchodilators or steroids",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-05",
+  "tom": null,
+  "gancho": "Bebê chiando e o grupo da família já mandou *quatro receitas*. Qual espeto você aceita?",
+  "gancho_apoio": "Sibilo, crepitação e o Anki jurando que você já viu esse caso às 3 da manhã.",
+  "imagem": {
+    "arquivo": "dia-123.png",
+    "cena": "Num quiosque de praia, o Garçom Espetinho equilibra uma bandeja enquanto um celular no balcão não para de acender com notificações em branco. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho equilibra uma bandeja num quiosque; no balcão, um celular não para de acender com notificações."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-123-macete.png",
+    "cena": "Callback: o Garçom Espetinho serve só o espeto da pera de borracha e do copo d'água e guarda os outros no isopor, de tampa fechada; o celular do balcão está em modo avião. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O garçom serve só o espeto da pera de borracha e do copo d'água; os outros vão para o isopor."
+  },
+  "questao": {
+    "vinheta": "A 4-month-old girl has had rhinorrhea and cough for 3 days. Temperature is 38.1°C, respirations are 48/min and SpO2 is 95% on room air. She has mild subcostal retractions with diffuse wheezes and fine crackles. She is breastfeeding a little less than usual and has normal wet diapers.",
+    "pergunta": "Which is the most appropriate management?",
+    "alternativas": {
+      "A": {
+        "texto": "Nebulized albuterol every 4 hours",
+        "quiz": "Nebulized albuterol"
+      },
+      "B": {
+        "texto": "Oral prednisolone for 5 days",
+        "quiz": "Oral prednisolone"
+      },
+      "C": {
+        "texto": "Suctioning and supportive care",
+        "quiz": "Supportive care"
+      },
+      "D": {
+        "texto": "Oral amoxicillin for 10 days",
+        "quiz": "Oral amoxicillin"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Bronquiolite: *suporte*, não remédio de asma",
+    "certa": [
+      "Lactente com coriza, depois tosse, sibilos e crepitações difusos tem bronquiolite viral, quase sempre pelo RSV. O tratamento é de suporte: aspiração nasal, hidratação e oxigênio reservado para SpO2 menor que 90%. A diretriz da AAP não recomenda broncodilatador, corticoide, antibiótico nem raio X de rotina."
+    ],
+    "termos": [
+      "RSV bronchiolitis",
+      "supportive care",
+      "nasal suctioning",
+      "AAP guideline"
+    ],
+    "erradas": {
+      "A": "Salbutamol não muda o curso da bronquiolite e não é recomendado de rotina pela AAP.",
+      "B": "Corticoide sistêmico não reduz internação nem tempo de doença na bronquiolite.",
+      "D": "Antibiótico não trata vírus; só entra se houver infecção bacteriana documentada, como otite."
+    },
+    "macete": {
+      "frase": "Bronquiolite: *aspira, hidrata e observa*. Salbutamol, corticoide e antibiótico ficam no isopor",
+      "apoio": "Oxigênio só se a saturação cair abaixo de 90%. Sinal de alarme muda o lugar do cuidado, não a receita.",
+      "fala": "Vai uma conduta aí, doutor? Hoje o espeto campeão é o que não tem remédio."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, estação pediatria: uma lactente com o nariz escorrendo há alguns dias e um grupo de WhatsApp da família com quatro receitas diferentes. Os sinais vitais e a mamada estão na vinheta. O Garçom Espetinho passa com quatro espetos e só um vai para o prato.",
+    "palavras_chave": [
+      "rhinorrhea and cough",
+      "wheezes and crackles",
+      "infant",
+      "breastfeeding"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pediatria",
+      "#Pediatrics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lactente com sibilos, SpO2 95% e fraldas molhadas: qual a conduta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

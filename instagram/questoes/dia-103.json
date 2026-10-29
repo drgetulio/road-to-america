@@ -1,0 +1,96 @@
+{
+  "dia": 103,
+  "data": "2027-02-12",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Pré-eclâmpsia com sinais de gravidade",
+  "conceito": "Preeclampsia with severe features: magnesium sulfate, calcium gluconate for toxicity",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-13",
+  "tom": null,
+  "gancho": "O porteiro *cochilou no turno*: quem acorda ele?",
+  "gancho_apoio": "Uma gestante internada, um remédio na bomba de infusão e a Tia Meia-Vida de olho no relógio.",
+  "imagem": {
+    "arquivo": "dia-103.png",
+    "cena": "Numa farmácia de interior à noite, a Tia Meia-Vida observa por cima dos óculos um porteiro grandão em forma de pedra prateada que cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida observa um porteiro de pedra prateada cochilando na porta; um martelinho de reflexo parado no chão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-103-macete.png",
+    "cena": "Callback: um gerente branco e firme, em forma de giz, bate no ombro do porteiro prateado, que acorda e se espreguiça, e o martelinho de reflexo volta a quicar. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um gerente em forma de giz acorda o porteiro prateado, e o martelinho de reflexo volta a quicar."
+  },
+  "questao": {
+    "vinheta": "At 35 weeks' gestation, a 31-year-old woman is receiving intravenous magnesium sulfate for preeclampsia with severe features. Six hours later she is drowsy, her respiratory rate is 8/min and her patellar reflexes are absent. Urine output has fallen to 15 mL/h. The infusion is stopped.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Calcium gluconate",
+        "quiz": "Calcium gluconate"
+      },
+      "B": {
+        "texto": "Naloxone",
+        "quiz": "Naloxone"
+      },
+      "C": {
+        "texto": "Flumazenil",
+        "quiz": "Flumazenil"
+      },
+      "D": {
+        "texto": "Physostigmine salicylate",
+        "quiz": "Physostigmine salicylate"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Intoxicação por magnésio: *gluconato de cálcio*",
+    "certa": [
+      "O sulfato de magnésio previne a eclâmpsia, mas sai pelo rim, e a oligúria faz o nível subir. A toxicidade aparece em ordem: primeiro somem os reflexos patelares, depois vem a depressão respiratória e, em níveis ainda maiores, a parada cardíaca. Além de suspender a infusão, o antídoto é gluconato de cálcio IV, que antagoniza o magnésio na junção neuromuscular e no coração."
+    ],
+    "termos": [
+      "magnesium sulfate",
+      "magnesium toxicity",
+      "calcium gluconate",
+      "preeclampsia with severe features"
+    ],
+    "erradas": {
+      "B": "Naloxona reverte opioide; o quadro aqui se explica pelo magnésio acumulado com a oligúria.",
+      "C": "Flumazenil reverte benzodiazepínico e não age sobre o magnésio.",
+      "D": "Fisostigmina reverte intoxicação anticolinérgica, com pele seca, midríase e taquicardia."
+    },
+    "macete": {
+      "frase": "*Joelho, pulmão, coração*: o cálcio acorda o porteiro",
+      "apoio": "Pegadinha de prova: O NBME cobra a vigilância do magnésio (reflexo patelar, frequência respiratória e diurese) e a oligúria como gatilho do acúmulo; o antídoto é gluconato de cálcio.",
+      "fala": "Com o rim parado, o magnésio não vai embora nem em cinco meias-vidas. E o porteiro não acorda com café."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: gestante de 35 semanas internada, uma infusão que já foi suspensa e um exame físico que preocupa. O que passou do ponto está na vinheta. Qual remédio acorda o porteiro?",
+    "palavras_chave": [
+      "35 weeks",
+      "drowsiness",
+      "respiratory depression",
+      "absent patellar reflexes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Obstetricia",
+      "#Obstetrics",
+      "#Farmacologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem reflexo e FR 8 no sulfato de magnésio: qual antídoto?"
+  },
+  "reel": null,
+  "exemplo": false
+}

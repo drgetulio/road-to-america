@@ -1,0 +1,88 @@
+{
+  "dia": 155,
+  "data": "2027-04-05",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Cólera",
+  "conceito": "Vibrio cholerae toxin: permanently activates Gs, raises cAMP, rice-water diarrhea",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-06",
+  "tom": null,
+  "gancho": "Bicho de Segunda na feira: o freguês *pediu a jarra maior*",
+  "gancho_apoio": "Macrô já desconfiou. A pergunta é o que a toxina faz dentro do enterócito.",
+  "imagem": {
+    "arquivo": "dia-155.png",
+    "cena": "Numa barraca de feira, o Macrô atende um freguês tímido, escondido atrás de uma jarra gigante de água, enquanto uma torneira atrás da barraca pinga sem parar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô atende um freguês escondido atrás de uma jarra gigante de água; uma torneira pinga sem parar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-155-macete.png",
+    "cena": "Callback: uma bactéria em forma de vírgula prende um interruptor na posição ligada com fita adesiva vermelha, e a torneira jorra; o Macrô segura a ponta da fita com cara de flagra. Fundo limpo.",
+    "alt": "Uma bactéria em vírgula prende o interruptor ligado com fita vermelha e a torneira jorra; o Macrô flagra."
+  },
+  "questao": {
+    "vinheta": "A 26-year-old aid worker returns from a flooded coastal region with sudden, painless, profuse watery diarrhea that looks like rice water. She has no fever and no blood in the stool. Stool culture grows curved, oxidase-positive, gram-negative rods on alkaline agar.",
+    "pergunta": "The toxin of this organism acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "ADP-ribosylation of Gs, keeping adenylyl cyclase on",
+        "quiz": "Gs stuck on"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of Gi, removing inhibition of adenylyl cyclase",
+        "quiz": "Gi inhibited"
+      },
+      "C": {
+        "texto": "Activation of guanylyl cyclase, raising cGMP",
+        "quiz": "Guanylyl cyclase on"
+      },
+      "D": {
+        "texto": "Cleavage of 28S rRNA, halting protein synthesis",
+        "quiz": "28S rRNA cleaved"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Cólera *cola* o interruptor do Gs no ON",
+    "certa": [
+      "A subunidade B da toxina da cólera se liga ao gangliosídeo GM1, e a subunidade A faz *ADP-ribosylation* da *Gs alpha*, que perde a capacidade de hidrolisar GTP e fica ligada para sempre. A adenilato ciclase não para, o *cAMP* sobe e o CFTR joga cloreto e água na luz do intestino: diarreia aquosa volumosa, sem inflamação, em água de arroz."
+    ],
+    "termos": [
+      "Vibrio cholerae",
+      "cholera toxin",
+      "Gs alpha",
+      "cAMP",
+      "rice-water stool"
+    ],
+    "erradas": {
+      "B": "Ribosilar a *Gi* é a toxina pertussis: ela tira o freio da adenilato ciclase, mas o alvo é outro.",
+      "C": "Aumentar *cGMP* pela guanilato ciclase é a toxina termoestável (ST) da *E. coli* enterotoxigênica.",
+      "D": "Cortar o rRNA 28S da subunidade 60S é a Shiga toxin e a toxina Shiga-like da EHEC, que matam a célula e dão diarreia com sangue."
+    },
+    "macete": {
+      "frase": "A cólera *cola* o interruptor do Gs no ON; a pertussis *rouba o freio* Gi",
+      "apoio": "Cólera (Gs ligado), pertussis (Gi desligado), ETEC (LT sobe cAMP, ST sobe cGMP) e Shiga (corta o 60S).",
+      "fala": "Comi, mostrei, avisei: fita adesiva no interruptor do Gs. Esse aí deixa a torneira aberta a noite toda."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na feira dos micróbios: uma voluntária volta de uma região alagada com uma diarreia que a vinheta descreve em detalhe, e uma cultura que entrega o bicho. Como a toxina dele age?",
+    "palavras_chave": [
+      "aid worker",
+      "profuse watery diarrhea",
+      "comma-shaped rods",
+      "dehydration"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia em água de arroz, sem febre nem sangue: como age a toxina?"
+  },
+  "exemplo": false
+}

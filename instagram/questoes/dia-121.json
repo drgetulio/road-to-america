@@ -1,0 +1,96 @@
+{
+  "dia": 121,
+  "data": "2027-03-02",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Tamponamento cardíaco",
+  "conceito": "Cardiac tamponade: Beck triad and pulsus paradoxus, pericardiocentesis",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-03",
+  "tom": null,
+  "gancho": "Seis horas depois da ablação, *a pressão foi embora sem avisar*",
+  "gancho_apoio": "Dona Térmica já viu esse aperto às 3 da manhã. Você vê na vinheta.",
+  "imagem": {
+    "arquivo": "dia-121.png",
+    "cena": "Na enfermaria à noite, Dona Térmica, de prancheta, observa um monitor simpático em forma de coração que pisca devagar, ao lado de um relógio sem números nas 3. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica observa um monitor em forma de coração que pisca devagar, ao lado de um relógio nas 3."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-121-macete.png",
+    "cena": "Callback: um coração simpático, apertado até a cintura dentro de uma bolsa de água, fica livre quando um canudo comprido e gentil drena a água, e ele abre os braços sambando, de fantasia de purpurina. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Um canudo comprido drena a bolsa de água que apertava o coração, que volta a sambar de fantasia de purpurina."
+  },
+  "questao": {
+    "vinheta": "Six hours after catheter ablation for atrial fibrillation, a 64-year-old woman becomes dyspneic and lightheaded. BP 84/62 mm Hg; heart rate 122/min. Systolic pressure falls 16 mm Hg on inspiration. Jugular veins are distended, heart sounds are muffled, the trachea is midline and the lungs are clear.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Tension pneumothorax",
+        "quiz": "Tension pneumothorax"
+      },
+      "B": {
+        "texto": "Cardiac tamponade",
+        "quiz": "Cardiac tamponade"
+      },
+      "C": {
+        "texto": "Constrictive pericarditis",
+        "quiz": "Constrictive pericarditis"
+      },
+      "D": {
+        "texto": "Massive pulmonary embolism",
+        "quiz": "Massive pulmonary embolism"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Tríade de Beck e *pulso paradoxal*",
+    "certa": [
+      "Hipotensão, jugulares cheias e bulhas abafadas formam a tríade de Beck (Beck triad), e a queda da sistólica de mais de 10 mm Hg na inspiração é o pulsus paradoxus. Depois de ablação, a perfuração do átrio enche o pericárdio de sangue e o coração não consegue relaxar para encher. A conduta no paciente instável é a pericardiocentese guiada por ecocardiograma."
+    ],
+    "termos": [
+      "Beck triad",
+      "pulsus paradoxus",
+      "electrical alternans",
+      "pericardiocentesis"
+    ],
+    "erradas": {
+      "A": "Pneumotórax hipertensivo desvia a traqueia e tira o murmúrio vesicular de um lado; aqui a traqueia está central e os pulmões estão limpos.",
+      "C": "Pericardite constritiva é crônica, com sinal de Kussmaul e knock pericárdico, e não aparece seis horas depois de um procedimento.",
+      "D": "TEP maciço dá hipoxemia e dilatação do VD, mas não deixa as bulhas abafadas."
+    },
+    "macete": {
+      "frase": "Beck é a *bateria abafada*: balão murcho, mangueira estufada, tamborim com toalha",
+      "apoio": "Pegadinha de prova: O NBME costuma esconder o tamponamento depois de trauma, ablação ou cirurgia cardíaca e pede o próximo passo no instável, que é pericardiocentese, não diurético.",
+      "fala": "Inspirou e a pressão caiu mais de 10? É o vizinho da direita empurrando. Agulha guiada por eco, já."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Dona Térmica: um procedimento para fibrilação atrial, uma enfermaria tranquila e, de repente, uma paciente que fica tonta. O exame à beira do leito está na vinheta, e ele fecha o diagnóstico.",
+    "palavras_chave": [
+      "catheter ablation",
+      "hypotension",
+      "distended neck veins",
+      "muffled heart sounds"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#Cardiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pós-ablação: hipotensão, jugular cheia e bulhas abafadas. Diagnóstico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

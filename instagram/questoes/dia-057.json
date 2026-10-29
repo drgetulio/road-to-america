@@ -1,0 +1,95 @@
+{
+  "dia": 57,
+  "data": "2026-12-28",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Febre reumática",
+  "conceito": "Rheumatic fever: molecular mimicry between streptococcal M protein and cardiac antigens",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-29",
+  "gancho": "Segunda-feira de boteco: o Macrô investiga uma *confusão* com quatro suspeitos",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na porta de um boteco de bairro, de bloquinho na mão, anotando o depoimento de um freguês em forma de coração que segura um copo de suco.",
+    "foco": "50% 35%",
+    "alt": "Macrô, na porta de um boteco, anota o depoimento de um freguês em forma de coração que segura um copo de suco.",
+    "arquivo": "dia-057.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do boteco: os seguranças em Y agarram o freguês coração porque ele usa o mesmo chapéu vermelho que uma corrente de bactérias redondas usava; as bactérias já foram embora pelos fundos, e o Macrô põe a mão na testa.",
+    "alt": "Caso de sósia: mimetismo molecular",
+    "arquivo": "dia-057-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old girl has fever and migratory pain and swelling of the knees and ankles. She has a new apical holosystolic murmur. She had an untreated pharyngitis 3 weeks earlier. Antistreptolysin O titer is elevated, and blood cultures are negative.",
+    "pergunta": "Which mechanism best explains her cardiac findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Cross-reacting anti-M protein antibodies",
+        "quiz": "Molecular mimicry"
+      },
+      "B": {
+        "texto": "Direct bacterial invasion of the endocardium",
+        "quiz": "Bacterial invasion"
+      },
+      "C": {
+        "texto": "Superantigen-driven T-cell activation",
+        "quiz": "Superantigen"
+      },
+      "D": {
+        "texto": "Immune complex deposition in the valves",
+        "quiz": "Immune complexes"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Caso de *sósia*: mimetismo molecular",
+    "certa": [
+      "Na *rheumatic fever*, os anticorpos e as células T formados contra a *streptococcal M protein* reconhecem antígenos parecidos no coração, como a miosina e proteínas das valvas (*molecular mimicry*). É uma *type II hypersensitivity*, e o ataque à valva mitral explica o sopro de insuficiência mitral. As hemoculturas negativas e o intervalo de 2 a 4 semanas depois da faringite afastam infecção direta."
+    ],
+    "termos": [
+      "rheumatic fever",
+      "molecular mimicry",
+      "M protein",
+      "type II hypersensitivity"
+    ],
+    "erradas": {
+      "B": "Invasão bacteriana direta é endocardite infecciosa, com hemoculturas positivas; aqui são negativas e o quadro vem semanas após a faringite.",
+      "C": "Superantígeno ativa células T em massa na síndrome do choque tóxico, com choque e rash, não valvite.",
+      "D": "Deposição de imunocomplexos explica a glomerulonefrite pós-estreptocócica, não a cardite reumática."
+    },
+    "macete": {
+      "frase": "Febre reumática é *caso de sósia*: o anticorpo contra a proteína M confunde o coração com o estreptococo e expulsa o freguês errado, três semanas depois.",
+      "apoio": "Pegadinha de prova: O NBME pergunta o tipo de hipersensibilidade (tipo II) e compara com a glomerulonefrite pós-estreptocócica, que é tipo III.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no boteco dos micróbios: um coração envolvido numa confusão e quatro mecanismos possíveis. O Macrô anota o depoimento; a linha do tempo da vinheta resolve.",
+    "palavras_chave": [
+      "pharyngitis",
+      "cardiac findings",
+      "immunology",
+      "school-age child"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Microbiology",
+      "#Cardiologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Faringite sem tratamento há 3 semanas e sopro novo: qual mecanismo?"
+  },
+  "exemplo": false
+}

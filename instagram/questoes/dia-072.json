@@ -1,0 +1,96 @@
+{
+  "dia": 72,
+  "data": "2027-01-12",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Varizes esofágicas",
+  "conceito": "Variceal bleeding: octreotide, ceftriaxone and endoscopic band ligation",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-13",
+  "gancho": "Cirrose, sangue vivo e a Dona Térmica com a *lista de pendências*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Na copa do plantão, Dona Térmica observa uma mangueira de jardim azulada e inchada que espirra água pela pia. Na parede, o relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Na copa do plantão, Dona Térmica observa uma mangueira azulada e inchada que espirra água pela pia.",
+    "arquivo": "dia-072.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da copa: uma luvinha de desenho, sem pessoa, dá um nó de elástico bem no ponto que vazava, igual vó fechando saco de pão, e a mangueira para de espirrar. O registro está fechado, o escudinho de comprimido segue de guarda e Dona Térmica ergue a caneca, aliviada.",
+    "alt": "Uma luvinha amarra um elástico no ponto que vazava da mangueira, como quem fecha saco de pão; Dona Térmica ergue a caneca, aliviada.",
+    "arquivo": "dia-072-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 54-year-old man with cirrhosis vomits bright red blood. His blood pressure is 92/58 mm Hg, with a pulse of 118/min. He is intubated for airway protection, transfused to a hemoglobin of 7.5 g/dL, and started on IV octreotide and ceftriaxone.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Balloon tamponade of the esophagus",
+        "quiz": "Balloon tamponade"
+      },
+      "B": {
+        "texto": "Endoscopic variceal band ligation",
+        "quiz": "Band ligation"
+      },
+      "C": {
+        "texto": "Immediate TIPS placement",
+        "quiz": "Immediate TIPS"
+      },
+      "D": {
+        "texto": "Start oral propranolol",
+        "quiz": "Oral propranolol"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Depois do pacote, *endoscopia com ligadura*",
+    "certa": [
+      "No sangramento por *esophageal varices*, o pacote inicial é via aérea, acesso, transfusão restritiva (alvo de hemoglobina perto de 7), *octreotide* para baixar a pressão portal e *ceftriaxone* para prevenir infecção e ressangramento. O próximo passo é a endoscopia em até 12 horas com *endoscopic band ligation*, que amarra a variz e para o sangramento."
+    ],
+    "termos": [
+      "esophageal varices",
+      "octreotide",
+      "ceftriaxone prophylaxis",
+      "endoscopic band ligation"
+    ],
+    "erradas": {
+      "A": "O balão é ponte temporária para sangramento que não para com endoscopia, não a primeira escolha.",
+      "C": "O TIPS entra no sangramento refratário ou de forma precoce em pacientes de alto risco depois da endoscopia, não antes dela.",
+      "D": "Betabloqueador não seletivo é profilaxia, e não se começa na fase aguda com hipotensão."
+    },
+    "macete": {
+      "frase": "Varizes: *OCE*, Octreotida, Ceftriaxona e Elástico",
+      "apoio": "Pegadinha de prova: O NBME esquece de dar o antibiótico na vinheta para ver se você lembra; na cirrose com hemorragia digestiva, a ceftriaxona reduz infecção, ressangramento e mortalidade.",
+      "fala": "Elástico no lugar certo resolve. Minha avó já sabia, a endoscopia só confirmou."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: cirrose, sangue vivo e uma equipe que já fez muita coisa antes de você chegar. A Dona Térmica, que não dorme desde ontem, quer saber o que falta. Dica de plantonista: leia o que já foi feito antes de escolher o que fazer.",
+    "palavras_chave": [
+      "cirrhosis",
+      "hematemesis",
+      "GI bleeding",
+      "night shift"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#Hepatology",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Varizes sangrando, octreotida e ceftriaxona correndo: e agora?"
+  },
+  "exemplo": false
+}

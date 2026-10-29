@@ -1,0 +1,88 @@
+{
+  "dia": 192,
+  "data": "2027-05-12",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Paralisia de Erb",
+  "conceito": "Erb palsy: C5-C6 upper trunk injury, waiter tip posture",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-13",
+  "tom": null,
+  "gancho": "Quarta do Porquê: o parto foi difícil, e o Seu Allen *trouxe o manual do plexo*",
+  "gancho_apoio": "Plexo braquial: o único manual de montagem que você jura que entendeu e esquece no dia seguinte.",
+  "imagem": {
+    "arquivo": "dia-192.png",
+    "cena": "Seu Allen abre um manual de montagem gigante no jardim diante de uma árvore de cinco raízes, de galhos ainda todos no lugar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-192-macete.png",
+    "cena": "Callback: os dois galhos de cima da árvore ficam caídos, e ao lado o Garçom Espetinho imita a pose: braço colado no corpo, cotovelo reto e palma virada para trás, como quem pede gorjeta escondido. Fundo limpo.",
+    "alt": "Os galhos de cima caídos e o garçom imitando a pose de quem pede gorjeta escondido"
+  },
+  "questao": {
+    "vinheta": "A 4.6-kg newborn is delivered vaginally after shoulder dystocia. He does not move his right arm, which hangs adducted and internally rotated, with the elbow extended and the forearm pronated. The grasp reflex is present in both hands.",
+    "pergunta": "Which structure was most likely injured?",
+    "alternativas": {
+      "A": {
+        "texto": "Upper trunk of the brachial plexus (C5 to C6)",
+        "quiz": "Upper trunk C5-C6"
+      },
+      "B": {
+        "texto": "Lower trunk of the brachial plexus (C8 to T1)",
+        "quiz": "Lower trunk C8-T1"
+      },
+      "C": {
+        "texto": "Radial nerve at the spiral groove",
+        "quiz": "Radial nerve"
+      },
+      "D": {
+        "texto": "Long thoracic nerve",
+        "quiz": "Long thoracic nerve"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Erb: tronco superior, *C5 e C6*",
+    "certa": [
+      "A tração lateral do pescoço no parto com distocia de ombro estica o *upper trunk* (C5 e C6). Ficam fracos os abdutores do ombro (deltoide e supraespinal), os rotadores externos (infraespinal) e os flexores do cotovelo e supinadores (bíceps). O braço fica aduzido, rodado para dentro, com cotovelo estendido e antebraço pronado: a *waiter tip posture* da *Erb palsy*. A preensão normal mostra que C8 e T1 estão bem."
+    ],
+    "termos": [
+      "Erb palsy",
+      "upper trunk",
+      "C5 to C6",
+      "waiter tip posture"
+    ],
+    "erradas": {
+      "B": "Lesão do tronco inferior (Klumpke) vem da tração do braço para cima e afeta a mão, com garra e perda da preensão, às vezes com síndrome de Horner.",
+      "C": "O nervo radial no sulco espiral causa mão caída (wrist drop), não a postura de ombro e cotovelo descrita.",
+      "D": "O nervo torácico longo inerva o serrátil anterior; a lesão causa escápula alada, não paralisia do braço."
+    },
+    "macete": {
+      "frase": "Erb é o *garçom pedindo gorjeta escondida*: braço colado, cotovelo reto, palma para trás. Esticou *em cima* (C5 e C6): perde ombro e cotovelo, e a mão segue pegando a xícara. Klumpke é *embaixo* (C8 e T1) e leva a mão em garra.",
+      "apoio": "O NBME separa Erb (ombro e cotovelo, preensão preservada, tração do pescoço) de Klumpke (mão em garra, Horner possível, tração do braço para cima); bebê grande e distocia de ombro são as pistas.",
+      "fala": "Sobrou peça? Então faltou mecanismo: C5 e C6 saíram do encaixe."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na anatomia, com o Seu Allen. Um recém-nascido depois de um parto difícil e um braço que não se mexe. A posição exata do braço e da mão está na vinheta: é ela que diz qual parte do plexo esticou.",
+    "palavras_chave": [
+      "newborn",
+      "brachial plexus",
+      "birth injury",
+      "Step 1 anatomy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Braço caído, palma para trás, preensão ok: qual lesão?"
+  },
+  "exemplo": false
+}

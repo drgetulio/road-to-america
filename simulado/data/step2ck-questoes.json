@@ -288,43 +288,44 @@
   {
     "id": "ck-008",
     "step": "step2ck",
-    "vinheta": "A 52-year-old man comes to the emergency department because of swelling of his lips and tongue that began 4 hours ago. He has no itching, rash, wheezing, or abdominal pain. Lisinopril was started for hypertension 3 weeks ago. He has no personal or family history of similar episodes and no known allergies. Pulse is 84/min, respirations are 16/min, and blood pressure is 142/88 mm Hg. Oxygen saturation is 98% on room air. Examination shows nonpitting edema of the lips and tongue without urticaria; there is no stridor. Serum C4 concentration is within the reference range.",
-    "pergunta": "Which of the following best explains the pathogenesis of this patient's condition?",
+    "vinheta": "A 64-year-old man is brought to the emergency department 2 hours after the onset of swelling of his lips and tongue. During the past 30 minutes, his voice has become muffled, and he has had difficulty swallowing his saliva. He has no itching, rash, wheezing, or abdominal pain. He has taken lisinopril for hypertension for 3 years. He has no personal or family history of similar episodes. Paramedics gave intramuscular epinephrine and intravenous diphenhydramine and methylprednisolone 20 minutes ago, without improvement. Pulse is 104/min, respirations are 22/min, and blood pressure is 148/90 mm Hg. Oxygen saturation is 96% on room air. He is sitting upright and drooling. Examination shows marked nonpitting swelling of the tongue and floor of the mouth without urticaria. There is no stridor.",
+    "pergunta": "Which of the following is the most appropriate next step in management?",
     "alternativas": [
       {
         "letra": "A",
-        "texto": "C1 esterase inhibitor deficiency"
+        "texto": "Awake fiberoptic nasotracheal intubation"
       },
       {
         "letra": "B",
-        "texto": "IgE-mediated mast cell degranulation"
+        "texto": "Discontinuation of lisinopril and discharge with a prescription for losartan"
       },
       {
         "letra": "C",
-        "texto": "Immune complex deposition in vessel walls"
+        "texto": "Emergency cricothyrotomy"
       },
       {
         "letra": "D",
-        "texto": "Impaired breakdown of bradykinin"
+        "texto": "Repeat intramuscular epinephrine and observation for 6 hours"
       },
       {
         "letra": "E",
-        "texto": "T-lymphocyte-mediated delayed hypersensitivity"
+        "texto": "Subcutaneous icatibant and observation in the emergency department"
       }
     ],
-    "correta": "D",
-    "explicacao": "Angiotensin-converting enzyme (kininase II) degrades bradykinin. ACE inhibitors raise bradykinin levels, which increases vascular permeability and causes angioedema without urticaria or pruritus. The risk is higher in Black patients, and the reaction can appear weeks to years after the drug is started. Because the process is not mediated by histamine, antihistamines, glucocorticoids, and epinephrine often work poorly; the drug must be stopped permanently and the airway monitored. Hereditary or acquired C1 esterase inhibitor deficiency also produces bradykinin-mediated angioedema, but it causes recurrent episodes and typically a low C4 level. IgE-mediated reactions cause urticaria, pruritus, and bronchospasm. Immune complex disease (serum sickness) presents with fever, rash, and arthralgia 1 to 2 weeks after exposure, and delayed T-cell hypersensitivity causes contact dermatitis.",
-    "explicacao_pt": "O IECA bloqueia a degradação da bradicinina, que aumenta a permeabilidade vascular e causa angioedema sem urticária nem prurido. Por não ser mediado por histamina, responde mal a anti-histamínico e corticoide; a conduta é suspender o IECA de forma definitiva e vigiar a via aérea.",
+    "correta": "A",
+    "explicacao": "This man has angiotensin-converting enzyme (ACE) inhibitor angioedema with signs of impending airway obstruction: a muffled voice, drooling, and inability to handle secretions with progressive swelling of the tongue and floor of the mouth. The reaction is mediated by bradykinin, which ACE normally degrades, so epinephrine, antihistamines, and glucocorticoids are often ineffective, as they were here. The priority is to secure the airway early and in a controlled way, before swelling makes intubation impossible; awake fiberoptic nasotracheal intubation, by the most experienced operator and with preparation for a surgical airway, preserves spontaneous breathing while the airway is secured. Cricothyrotomy is reserved for failure of intubation with inability to oxygenate. Discharge is unsafe while the swelling is progressing, and switching to an angiotensin receptor blocker is a later, cautious decision. Icatibant, a bradykinin B2 receptor antagonist, did not improve outcomes in a randomized trial of ACE inhibitor angioedema, and no drug replaces airway management. Lisinopril must be stopped permanently, and other ACE inhibitors avoided.",
+    "explicacao_pt": "O angioedema por IECA é mediado por bradicinina e responde mal a adrenalina, anti-histamínico e corticoide. Voz abafada, sialorreia e dificuldade para engolir a saliva indicam obstrução iminente da via aérea, e a conduta é garantir a via aérea de forma controlada, com intubação nasotraqueal por fibroscopia com o paciente acordado. A cricotireoidostomia fica para a falha da intubação, e o IECA deve ser suspenso para sempre.",
     "sistema": "medicina_interna",
-    "disciplina": "mecanismo",
+    "disciplina": "manejo",
     "dificuldade": "media",
     "tags": [
       "angioedema",
       "IECA",
       "bradicinina",
-      "farmacologia clinica"
+      "via aerea",
+      "emergencia"
     ],
-    "fonte": "Jones DW et al. 2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults; Maurer M et al. The international WAO/EAACI guideline for the management of hereditary angioedema, 2021 revision. Allergy 2022;77:1961-1990."
+    "fonte": "Bernstein JA et al. Angioedema in the emergency department: a practical guide to differential diagnosis and management. Int J Emerg Med 2017;10:15; Sinert R et al. Randomized trial of icatibant for angiotensin-converting enzyme inhibitor-induced upper airway angioedema. J Allergy Clin Immunol Pract 2017;5:1402-1409; Jones DW et al. 2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults."
   },
   {
     "id": "ck-009",

@@ -1,0 +1,96 @@
+{
+  "dia": 101,
+  "data": "2027-02-10",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Metabolismo do etanol",
+  "conceito": "Ethanol metabolism: excess NADH blocks gluconeogenesis, fasting hypoglycemia and fatty liver",
+  "personagem": "Mito",
+  "gancho_data": "Quarta-feira de Cinzas: o fígado faz a contabilidade do Carnaval (sem apologia ao álcool).",
+  "remix_de": null,
+  "explicacao_em": "2027-02-11",
+  "tom": null,
+  "gancho": "Quarta de Cinzas: o fígado *fecha o caixa* do Carnaval",
+  "gancho_apoio": "O Mito passou a Quarta de Cinzas no caixa do fígado, e a conta não fecha.",
+  "imagem": {
+    "arquivo": "dia-101.png",
+    "cena": "O Mito trabalha no caixa de um banco em forma de fígado, com cara de quem não consegue fechar a conta. Pela janela, a chaminé de uma fábrica de açúcar está sem fumaça. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Mito no caixa de um banco em forma de fígado; lá fora, a fábrica de açúcar está parada."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-101-macete.png",
+    "cena": "Callback: atrás do Mito, sacos de moedas iguais (NADH) lotam o caixa, e a bandeja de moedas livres (NAD+) está vazia; lá fora, a fábrica de açúcar continua parada. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Sacos de moedas lotam o caixa do Mito e a bandeja de moedas livres está vazia; a fábrica segue parada."
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man is brought to the emergency department confused and sweating. Over the past 3 days he has drunk large amounts of alcohol and eaten almost nothing. Fingerstick glucose is 38 mg/dL. Serum lactate is mildly elevated, and the liver is enlarged and nontender.",
+    "pergunta": "Which metabolic change most directly causes his hypoglycemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Increased hepatic NADH/NAD+ ratio",
+        "quiz": "High NADH/NAD+"
+      },
+      "B": {
+        "texto": "Inhibition of hepatic glucose-6-phosphatase",
+        "quiz": "G6Pase inhibition"
+      },
+      "C": {
+        "texto": "Excess insulin secretion by beta cells",
+        "quiz": "Excess insulin"
+      },
+      "D": {
+        "texto": "Thiamine-deficient pyruvate dehydrogenase",
+        "quiz": "Thiamine-poor PDH"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Etanol enche o fígado de *NADH*",
+    "certa": [
+      "A álcool desidrogenase e a aldeído desidrogenase gastam NAD+ e produzem NADH, e a razão NADH/NAD+ no hepatócito dispara. Com tanto NADH, piruvato vira lactato e oxaloacetato vira malato, e a gliconeogênese fica sem substrato; depois de dias de jejum, sem glicogênio, a glicose cai. O mesmo excesso de NADH trava a beta-oxidação e desvia os ácidos graxos para triglicerídeos: esteatose hepática."
+    ],
+    "termos": [
+      "NADH/NAD+ ratio",
+      "gluconeogenesis",
+      "alcohol dehydrogenase",
+      "hepatic steatosis"
+    ],
+    "erradas": {
+      "B": "A falta de glicose-6-fosfatase é a doença de von Gierke, congênita, com hipoglicemia desde o primeiro ano; o etanol não inibe essa enzima.",
+      "C": "No jejum a insulina está baixa; hipoglicemia por excesso de insulina sugere insulinoma ou sulfonilureia, com peptídeo C alto.",
+      "D": "Falta de tiamina prejudica a piruvato desidrogenase e causa Wernicke e acidose lática, mas não explica a queda da glicose."
+    },
+    "macete": {
+      "frase": "Moeda trocada demais (*NADH*): a fábrica de açúcar para",
+      "apoio": "Pegadinha de prova: O NBME junta jejum e álcool e pergunta a razão NADH/NAD+; também cobra a esteatose e a cetoacidose alcoólica, com beta-hidroxibutirato alto.",
+      "fala": "Sem NAD+ no caixa, nem eu faço glicose. E olha que eu trabalho até de Quarta de Cinzas."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na Quarta-feira de Cinzas, sem apologia ao álcool: o fígado fecha o caixa, igual você fechando o UWorld às 2 da manhã com 54% e muita fé. A vinheta conta como foram os três dias dele. Qual mudança dentro do hepatócito explica?",
+    "palavras_chave": [
+      "binge drinking",
+      "poor intake",
+      "hypoglycemia",
+      "hepatomegaly"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Bioquimica",
+      "#Biochemistry",
+      "#Hepatologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Álcool e jejum, glicose 38: por quê?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,94 @@
+{
+  "dia": 37,
+  "data": "2026-12-08",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Cetoacidose diabética",
+  "conceito": "DKA: fluids first, hold insulin until potassium is at least 3.3",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-09",
+  "gancho": "Cetoacidose no plantão e o Mito com *uma chave na mão*: abre ou espera?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Mito, no plantão, segura uma chave dourada diante da porta fechada de uma célula redonda, em dúvida se gira agora. Na parede, um relógio sem números marca 3 da manhã. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Mito segura uma chave dourada diante da porta de uma célula, em dúvida se gira agora.",
+    "arquivo": "dia-037.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: Mito enche uma fruteira com bananas antes de girar a chave; só quando a fruteira está cheia ele abre a porta da célula, e as bananas entram em fila organizada.",
+    "alt": "Primeiro o potássio, depois a insulina",
+    "arquivo": "dia-037-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 19-year-old woman with type 1 diabetes has vomiting and abdominal pain. Pulse is 118/min and BP 96/60 mm Hg. Glucose is 520 mg/dL, pH 7.12, bicarbonate 9 mEq/L, anion gap 26, and potassium 3.0 mEq/L. A 1-L bolus of 0.9% saline is running.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Start an IV regular insulin infusion",
+        "quiz": "Start insulin infusion"
+      },
+      "B": {
+        "texto": "Give IV potassium and delay insulin",
+        "quiz": "IV K, hold insulin"
+      },
+      "C": {
+        "texto": "Give IV sodium bicarbonate",
+        "quiz": "IV bicarbonate"
+      },
+      "D": {
+        "texto": "Give subcutaneous insulin glargine",
+        "quiz": "SC glargine"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro o *potássio*, depois a *insulina*",
+    "certa": [
+      "Na *DKA* o potássio total do corpo está baixo, mesmo quando o sérico parece normal. A *insulin* empurra o potássio para dentro das células e, com K de 3,0, ligá-la agora derruba o sérico e pode causar arritmia. Por isso, com o soro correndo, a conduta é repor *IV potassium* e só iniciar a insulina quando o K passar do limiar (3,3 nas fontes clássicas, 3,5 no consenso ADA de 2024)."
+    ],
+    "termos": [
+      "diabetic ketoacidosis",
+      "potassium repletion",
+      "insulin infusion",
+      "anion gap"
+    ],
+    "erradas": {
+      "A": "Insulina com K de 3,0 joga o potássio para dentro da célula e arrisca hipocalemia grave e arritmia.",
+      "C": "Bicarbonato só se discute com pH abaixo de 7,0; com 7,12 não está indicado e ainda piora a hipocalemia.",
+      "D": "Insulina basal subcutânea não é o tratamento inicial da cetoacidose e também não resolve o potássio baixo."
+    },
+    "macete": {
+      "frase": "Água, *banana*, só depois a chave: insulina com K abaixo de 3,3 empurra o potássio para dentro e deixa o coração sem nenhum.",
+      "apoio": "Pegadinha de prova: O NBME dá o potássio baixo ou no limite numa linha discreta do laboratório; quem olha só a glicose marca insulina e erra.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: cetoacidose clássica, soro já correndo e quatro condutas na mesa. Às 3 da manhã, todo residente tem um protocolo favorito; a vinheta tem o número que manda.",
+    "palavras_chave": [
+      "type 1 diabetes",
+      "metabolic acidosis",
+      "electrolytes",
+      "IV fluids"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DKA com potássio de 3,0 e soro correndo: o que fazer agora?"
+  },
+  "exemplo": false
+}

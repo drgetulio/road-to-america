@@ -1,0 +1,100 @@
+{
+  "dia": 237,
+  "data": "2027-06-26",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Entrevista motivacional",
+  "conceito": "Motivational interviewing: open questions and reflective listening draw out the patient own reasons",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-27",
+  "tom": null,
+  "gancho": "Ele disse \"eu sei, doutor\". *Qual é a sua próxima frase?*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-237.png",
+    "cena": "Um carrinho navy parado numa bifurcação, com duas placas verdes sem texto; Dona Bússola, no painel, gira o ponteiro devagar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Carrinho parado numa bifurcação, com Dona Bússola no painel"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-237-macete.png",
+    "cena": "Callback: o painel mostra um espelhinho que reflete as duas estradas ao mesmo tempo, e o carrinho começa a virar por vontade própria; Dona Bússola sorri, com o ponteiro calmo. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "O espelhinho do painel reflete as duas estradas e o carrinho vira sozinho"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man who smokes 1 pack of cigarettes daily says, \"I know I should quit, but smoking is the only thing that helps me relax after work.\" He has never tried to quit.",
+    "pergunta": "Which is the most appropriate response by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "\"You need to quit now, or you will get lung cancer.\"",
+        "quiz": "Quit now or get cancer"
+      },
+      "B": {
+        "texto": "\"Smoking helps you unwind, and part of you wants to quit.\"",
+        "quiz": "Reflect both sides"
+      },
+      "C": {
+        "texto": "\"Why haven't you quit yet if you know it's harmful?\"",
+        "quiz": "Why haven't you quit?"
+      },
+      "D": {
+        "texto": "\"I'll prescribe varenicline, and we'll set a quit date today.\"",
+        "quiz": "Varenicline today"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Entrevista motivacional: *refletir os dois lados*",
+    "certa": [
+      "Ele está ambivalente, na fase de contemplação. Na *motivational interviewing*, o médico usa perguntas abertas e *reflective listening*; a reflexão de dois lados devolve as duas partes da ambivalência (o alívio que o cigarro traz e a vontade de parar) sem julgamento. Assim o próprio paciente fala os seus motivos para mudar (*change talk*), e a decisão continua com ele."
+    ],
+    "termos": [
+      "motivational interviewing",
+      "reflective listening",
+      "ambivalence",
+      "change talk"
+    ],
+    "erradas": {
+      "A": "Ameaça e confronto aumentam a resistência e fazem o paciente defender o cigarro.",
+      "C": "Perguntar por que ainda não parou soa como acusação e leva à justificativa, não à mudança.",
+      "D": "Marcar data e prescrever é passo de quem já decidiu (preparação); com ambivalência, pular etapas costuma falhar."
+    },
+    "macete": {
+      "frase": "Na entrevista motivacional, *o paciente dirige e o médico é o GPS que reflete*",
+      "apoio": "Na imagem, o carro está numa bifurcação e o caminhão de trás buzina (o confronto), o que só atrapalha. O GPS não manda: mostra as duas estradas num espelho, e o motorista escolhe.",
+      "fala": "Meu norte é o paciente. Sermão não é intervenção: se fosse, a sua mãe já tinha resolvido tudo em 2019."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com a Dona Bússola, na comunicação. Um fumante diz uma frase que todo médico já ouviu, e ela está na vinheta. Qual é a resposta mais adequada?",
+    "palavras_chave": [
+      "smoking",
+      "communication",
+      "primary care",
+      "Step 1 behavioral science"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Comunicacao",
+      "#MotivationalInterviewing",
+      "#Tabagismo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fumante que \"sabe que deveria parar\": qual frase?"
+  },
+  "reel": null,
+  "exemplo": false
+}

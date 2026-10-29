@@ -1,0 +1,101 @@
+{
+  "dia": 335,
+  "data": "2027-10-02",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Diretivas antecipadas",
+  "conceito": "Advance directive vs durable power of attorney for health care: written wishes vs designated surrogate",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-03",
+  "tom": null,
+  "gancho": "Ele não pode decidir: *quem fica com o controle remoto?*",
+  "gancho_apoio": "Sábado Sem Viés: duas poltronas viradas uma para a outra e um envelope na gaveta.",
+  "imagem": {
+    "arquivo": "dia-335.png",
+    "cena": "A Dona Bússola, no braço do sofá de uma sala de estar, olha um controle remoto que descansa numa almofada de veludo; numa gaveta entreaberta, um envelope lacrado; na estante, uma tabela 2x2 em branco num porta-retratos.",
+    "foco": "50% 35%",
+    "alt": "Ele não pode decidir: quem fica com o controle remoto?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-335-macete.png",
+    "cena": "Callback: o controle remoto foi entregue numa bandeja para uma cadeira de diretor de cinema com fita verde, ao lado do envelope lacrado; as duas poltronas agora estão viradas para a TV e o ponteiro da Dona Bússola aponta para a cadeira de diretor.",
+    "foco": "50% 45%",
+    "alt": "Procurador nomeado decide: durable power of attorney"
+  },
+  "questao": {
+    "vinheta": "A 79-year-old man is unconscious and intubated after a cardiac arrest. Years ago, he signed a document naming his niece to make medical decisions if he could not. He left no written treatment preferences. His niece and his son disagree about continuing mechanical ventilation.",
+    "pergunta": "Whose decision should guide the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "His son, as his closest relative",
+        "quiz": "His son"
+      },
+      "B": {
+        "texto": "His niece, as his named health care agent",
+        "quiz": "His niece"
+      },
+      "C": {
+        "texto": "The hospital ethics committee",
+        "quiz": "Ethics committee"
+      },
+      "D": {
+        "texto": "The attending physician, based on best interest",
+        "quiz": "Attending physician"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Procurador nomeado decide: *durable power of attorney*",
+    "certa": [
+      "O documento que nomeia uma pessoa é o *durable power of attorney for health care* (procurador para cuidados de saúde). A sobrinha é a *health care agent* e decide por *substituted judgment*, ou seja, pelo que ele escolheria. Já a *advance directive* escrita (o *living will*) traz desejos por escrito; quando existe e cobre a situação, ela orienta o próprio procurador."
+    ],
+    "termos": [
+      "durable power of attorney for health care",
+      "health care agent",
+      "substituted judgment",
+      "living will"
+    ],
+    "erradas": {
+      "A": "A ordem de parentesco só vale quando o paciente não nomeou ninguém; o procurador escolhido vem antes do filho.",
+      "C": "O comitê de ética ajuda a mediar conflitos, mas não substitui a pessoa que o paciente escolheu.",
+      "D": "O médico só decide por melhor interesse na emergência sem substituto disponível; aqui há uma procuradora válida."
+    },
+    "macete": {
+      "frase": "*Diretiva é o roteiro; procurador é o diretor*",
+      "apoio": "O roteiro escrito (living will) diz o que fazer; quando a cena não está no roteiro, decide o diretor que o paciente escolheu (o health care proxy), e não automaticamente o parente mais próximo. O filho pode reclamar do canal, mas quem aperta o controle é quem foi nomeado.",
+      "fala": "Meu norte é o paciente, mesmo quando ele não pode falar."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés na sala de estar: a TV está desligada, o controle remoto está na almofada e a família não se entende. A vinheta tem um documento e uma discordância; ache quem segura o controle.",
+    "palavras_chave": [
+      "end-of-life decisions",
+      "surrogate decision-making",
+      "ICU",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Bioetica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Intubado, documento nomeando uma parente e filho discordando: quem decide?"
+  },
+  "reel": null,
+  "exemplo": false
+}

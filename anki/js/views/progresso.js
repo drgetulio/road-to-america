@@ -1,5 +1,6 @@
 /* Road to America | Meu progresso: checklist da garantia, prontidão (EXIT 18),
-   datas de prova, autoavaliações NBME e simulados do próprio participante.
+   datas de prova, autoavaliações NBME, simulados de 30 minutos, simulados completos e o
+   cartão do banco de questões do próprio participante.
    Regras em plataforma/js/desempenho.js; textos em plataforma/js/acompanhamento.js. */
 import { avaliarParticipante, validarNbme } from "../../../plataforma/js/desempenho.js";
 import { desempenhoPorArea, SIMULADO_30 } from "../../../plataforma/js/simulado.js";
@@ -7,6 +8,10 @@ import { checklistGarantia, leituraProntidao, nomeArea, NOME_STEP, dataBR, pct, 
 import { $, e, icon, toast, confirmar } from "../ui.js";
 import { dayKey } from "../util.js";
 import { pageHead } from "./shared.js";
+import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
+import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
+import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
+import { textoProbabilidade, nomePadrao } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -15,13 +20,15 @@ export default {
   titulo: "Meu progresso",
   async render(ctx, el, args = {}) {
     const agora = new Date();
-    const [linha, config, nbme, simulados] = await Promise.all([
+    const [linha, config, nbme, simulados, completos] = await Promise.all([
       ctx.store.getMeuResumo({ agora }),
       ctx.store.getConfigPlataforma(),
       ctx.store.listNbme(),
-      ctx.store.listSimulados()
+      ctx.store.listSimulados(),
+      ctx.store.listSimuladosCompletos ? ctx.store.listSimuladosCompletos({}).catch((err) => { console.error(err); return null; }) : []
     ]);
     const av = avaliarParticipante(linha, { config, agora });
+    const cartaoBanco = await cartaoBancoQuestoes(ctx, { nbme, config });
     const check = checklistGarantia(linha, av, { config, participante: true });
     const plano = linha.plano || {};
     const stepsPend = ["step1", "step2ck"].filter((s) => !plano[s + "_aprovado"]);
@@ -55,6 +62,8 @@ export default {
             : '<p class="body">Os dois Steps estão marcados como aprovados.</p>') +
         "</section>" +
       "</div>" +
+
+      cartaoBanco +
 
       '<section class="panel" aria-labelledby="d-t"><div class="panel__head"><h2 class="h-sm" id="d-t">Datas das provas</h2>' +
         '<p class="hint">Quando faltar menos de ' + config.nbme_antecedencia_dias + " dias para uma prova, o painel passa a cobrar as autoavaliações daquele Step. Aprovação e data de matrícula são lançadas pela equipe" + (plano.data_matricula ? " (matrícula em " + e(dataBR(plano.data_matricula)) + ")" : "") + ".</p></div>" +
@@ -94,9 +103,14 @@ export default {
         "</form>" +
       "</section>" +
 
-      '<section class="panel" aria-labelledby="s-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="s-t">Meus simulados</h2><a class="link-btn" href="../simulado/">' + icon("clock") + "Novo simulado</a></div>" +
+      '<section class="panel" aria-labelledby="s-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="s-t">Simulados de 30 minutos</h2><a class="link-btn" href="../simulado/">' + icon("clock") + "Novo simulado de 30 minutos</a></div>" +
         '<p class="hint">Cada simulado reproduz um bloco oficial: ' + SIMULADO_30.questoes + " questões em " + Math.round(SIMULADO_30.duracao_ms / 60000) + " minutos. Eles servem para treinar e não contam para a garantia.</p>" +
         blocoSimulados(simulados, config, ctx) +
+      "</section>" +
+
+      '<section class="panel" aria-labelledby="sc-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="sc-t">Simulados completos</h2><a class="link-btn" href="../simulado/#/completos">' + icon("clock") + "Novo simulado completo</a></div>" +
+        '<p class="hint">O dia de prova no formato oficial: Step 1 com 14 blocos de 30 minutos e Step 2 CK com 16. A probabilidade é a de estar acima do limiar do banco, calculada no fim de cada dia, com o padrão ainda provisório; não é resultado oficial. O dia em condições de estudo ou com itens já vistos aparece como leitura de estudo.</p>' +
+        blocoCompletos(completos) +
       "</section>" +
 
       '<p class="prog-lgpd">' + icon("lock-simple") + '<span>A equipe da Road to America vê estes dados (estudo nos flashcards, simulados, autoavaliações e presença) para o acompanhamento pedagógico e para conferir as condições da garantia, conforme a <a href="../privacidade.html">Política de Privacidade</a>.</span></p>' +
@@ -186,6 +200,33 @@ function listaNbme(lista) {
       "</div></li>").join("") + "</ul>";
 }
 
+/* Simulados completos do próprio participante: em andamento (com o bloco e o link para
+   continuar) e encerrados (acertos e a probabilidade guardada no fim do dia, a mesma do
+   histórico do simulado, por linhaHistorico de simulado/js/relatorio.js) */
+function blocoCompletos(lista) {
+  if (lista === null) return '<p class="body">Não foi possível ler os simulados completos agora.</p>';
+  const andamento = lista.filter((r) => r.estado === "em_andamento");
+  const feitos = lista.filter((r) => r.estado === "concluido").map(linhaHistorico);
+  if (!andamento.length && !feitos.length) return '<p class="body">Nenhum simulado completo ainda.</p>';
+  const nome = (l) => e(NOME_STEP[l.step]) + ", " + e((NOMES_TIPO[l.tipo] || l.tipo).toLowerCase());
+  return '<ul class="prog-sim" data-completos>' +
+    andamento.map((r) => {
+      const nb = r.formulario?.blocos?.length || 0;
+      return '<li><span class="prog-sim__d">' + e(dataBR(r.atualizado_em || r.inicio)) + "</span><b>" + nome(r) + '</b><span class="prog-chip prog-chip--neutro">' +
+        (r.sessao?.suspensa ? "Parado" : "Em andamento") + "</span>" +
+        '<span class="muted">bloco ' + Math.min((r.sessao?.bloco_atual || 0) + 1, nb) + " de " + nb + "</span>" +
+        '<a href="../simulado/#/dia/' + encodeURIComponent(r.id) + '">Continuar</a></li>';
+    }).join("") +
+    feitos.slice(0, 10).map((l) =>
+      '<li><span class="prog-sim__d">' + e(dataBR(l.data)) + "</span><b>" + nome(l) + "</b>" +
+        '<span class="prog-sim__n">' + (l.acertos === null ? "sem dados" : l.acertos + "/" + l.total + " (" + pct(l.percentual) + ")") + "</span>" +
+        (l.p_aprovacao === null ? "" : '<span class="muted">acima do limiar do banco ' + pctProb(l.p_aprovacao) + "</span>" +
+          '<span class="prog-chip prog-chip--' + (l.alta ? "ok" : "aviso") + '">' + (l.alta ? "Precisão alta" : "Estimativa preliminar") + "</span>" +
+          (l.padronizado === false || l.reaplicacao ? '<span class="prog-chip prog-chip--aviso">' + (l.reaplicacao ? "reaplicação" : "estudo") + "</span>" : "")) +
+        '<a href="../simulado/#/relatorio/' + encodeURIComponent(l.id) + '">Relatório<span class="sr-only"> do simulado de ' + e(dataBR(l.data)) + "</span></a></li>").join("") +
+  "</ul>" + (feitos.length > 10 ? '<p class="hint">Mostrando os 10 mais recentes de ' + feitos.length + ". Todos estão em <a href=\"../simulado/#/completos\">Simulados completos</a>.</p>" : "");
+}
+
 function blocoSimulados(simulados, config, ctx) {
   if (!simulados.length) return '<p class="body">Você ainda não fez nenhum simulado.</p>';
   const lista = '<ul class="prog-sim">' + simulados.slice(0, 10).map((s) =>
@@ -204,4 +245,35 @@ function blocoSimulados(simulados, config, ctx) {
       '<p class="hint">' + plural(todas.reduce((n, a) => n + a.total, 0), "questão somada", "questões somadas") + "." + (poucas ? " Em cinza, no fim: " + plural(poucas, "área com", "áreas com") + " menos de " + MIN_QUESTOES_AREA + " questões." : "") + " Com poucas questões por área, use como pista, não como diagnóstico.</p></div>";
   }).join("");
   return lista + '<div class="grid2 grid2--top prog-areas">' + porStep + "</div>";
+}
+
+/* Cartão resumido do banco de questões: posição em relação ao limiar do banco em cada Step, pelo
+   banco (plataforma/js/banco-aluno.js), rótulo de confiança e a área que mais derruba
+   a probabilidade. O painel completo fica em ../questoes/#/aprovacao. */
+const pctProb = (p) => textoProbabilidade(p);
+async function cartaoBancoQuestoes(ctx, { nbme, config }) {
+  let corpo;
+  try {
+    const [banco, respostas, modelos] = await Promise.all([carregarBanco({ store: ctx.store }), ctx.store.listRespostas(), ctx.store.getModelosPsicometricos().catch(() => ({}))]);
+    if (!banco.itens.length) corpo = '<p class="body">O banco de questões ainda não está liberado para a sua conta. A equipe ativa a matrícula depois da confirmação da inscrição.</p>';
+    else corpo = ["step1", "step2ck"].map((st) => {
+      const r = resumoAprovacao({ banco, respostas, step: st, modelos, nbme, config, base: "../questoes/#/" });
+      const est = r.est;
+      const conf = est.confianca;
+      const top = (r.contribuicao.sistema || []).find((c) => c.ganho >= 0.005);
+      return '<div class="prog-pr"><p class="prog-pr__t"><b>' + NOME_STEP[st] + "</b> " +
+        (est.n ? '<span class="prog-banco__p">' + pctProb(est.p_aprovacao) + "</span>" : "") +
+        '<span class="prog-chip prog-chip--' + (conf.alta ? "ok" : "aviso") + '">' + (conf.alta ? e(conf.texto_curto || "Precisão alta") : "Estimativa preliminar") + "</span></p>" +
+        "<p>" + (est.n
+          ? "Probabilidade de estar acima do limiar do banco" + (st === "step2ck" ? ", que representa o 218" : "") + " (padrão " + e(nomePadrao(est.corte?.origem)) + "), com " + plural(est.n, "item respondido", "itens respondidos") + "." +
+            (conf.alta ? "" : conf.faltam_itens ? " Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para a precisão alta." : conf.faltam_sistemas.length ? " Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + "." : "") +
+            (top ? " Área que mais derruba: " + e(nomeChave(st, "sistema", top.chave)) + " (+" + String(Math.round(top.ganho * 1000) / 10).replace(".", ",") + " pontos percentuais em jogo)." : "")
+          : "Ainda sem respostas deste Step no banco de questões.") + "</p></div>";
+    }).join("") + '<p class="hint">Estimativa do banco, complementar à EXIT 18: enquanto o padrão for provisório, ele vem da dificuldade-alvo dos itens, sem painel de juízes nem ligação com as autoavaliações NBME. Não é probabilidade de aprovação no USMLE nem resultado do NBME.</p>';
+  } catch (err) {
+    console.error(err);
+    corpo = '<p class="body">Não foi possível calcular a estimativa do banco agora.</p>';
+  }
+  return '<section class="panel" aria-labelledby="bq-t"><div class="panel__head panel__head--row"><h2 class="h-sm" id="bq-t">Banco de questões: posição em relação ao limiar</h2>' +
+    '<a class="link-btn" href="../questoes/#/aprovacao">' + icon("gauge") + "Abrir o painel</a></div>" + corpo + "</section>";
 }

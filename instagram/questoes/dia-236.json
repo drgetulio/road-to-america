@@ -1,0 +1,99 @@
+{
+  "dia": 236,
+  "data": "2027-06-25",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Lítio",
+  "conceito": "Lithium toxicity: narrow therapeutic index, nephrogenic diabetes insipidus, thiazides raise its level",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-26",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: *dois remédios que não deviam se conhecer*",
+  "gancho_apoio": "Interação medicamentosa é o casal que não pode sentar junto na festa da farmacologia.",
+  "imagem": {
+    "arquivo": "dia-236.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, equilibra dois frascos de remédio um em cima do outro, com a areia da ampulheta escorrendo ao lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida equilibra dois frascos de remédio um em cima do outro"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-236-macete.png",
+    "cena": "Callback: na repartição ao lado, o Seu Néfron, com a gaveta de sal quase vazia, carimba de verde dois envelopes quase gêmeos, um grande (o sódio) e um menor (o lítio), e devolve os dois para o rio vermelho do sangue. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "Seu Néfron carimba de verde os envelopes do sódio e do lítio e devolve os dois ao sangue"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old woman with bipolar I disorder has taken lithium for 5 years with stable levels. Two weeks after starting hydrochlorothiazide for hypertension, she develops coarse tremor, diarrhea, ataxia, and confusion. Serum lithium is 2.4 mEq/L.",
+    "pergunta": "Which mechanism best explains the rise in her lithium level?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of hepatic CYP450 metabolism of lithium",
+        "quiz": "CYP450 inhibition"
+      },
+      "B": {
+        "texto": "Displacement of lithium from plasma proteins",
+        "quiz": "Albumin displacement"
+      },
+      "C": {
+        "texto": "Increased proximal tubular reabsorption of lithium",
+        "quiz": "Renal reabsorption"
+      },
+      "D": {
+        "texto": "Increased intestinal absorption of lithium",
+        "quiz": "Gut absorption"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Tiazida faz o rim *segurar o lítio* junto com o sódio",
+    "certa": [
+      "O *lithium* é filtrado e reabsorvido em grande parte no *proximal tubule*, pelo mesmo caminho do sódio. A tiazida causa perda de sódio e contração de volume, e o túbulo proximal compensa reabsorvendo mais sódio e, junto, mais lítio. Com *narrow therapeutic index*, o nível sobe para a faixa tóxica; AINEs e IECA fazem o mesmo. O uso crônico também causa *nephrogenic diabetes insipidus* e hipotireoidismo."
+    ],
+    "termos": [
+      "lithium toxicity",
+      "narrow therapeutic index",
+      "proximal tubule reabsorption",
+      "nephrogenic diabetes insipidus"
+    ],
+    "erradas": {
+      "A": "O lítio não é metabolizado no fígado; sai quase todo inalterado pela urina.",
+      "B": "O lítio praticamente não se liga a proteínas do plasma, então não há o que deslocar.",
+      "D": "A absorção oral do lítio já é quase completa, e a tiazida não mexe nela."
+    },
+    "macete": {
+      "frase": "*Seu Néfron confunde lítio com sódio*: faltou sódio, carimba REABSORVIDO nos dois",
+      "apoio": "Na imagem, chegam à mesa do Seu Néfron dois envelopes quase gêmeos, um grande (sódio) e um menor (lítio). Com a gaveta de sal vazia por causa do diurético, ele carimba os dois de verde e devolve tudo para o sangue.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Tiazida com lítio a Tia lembra: o rim segura os dois."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um remédio antigo, estável há anos, e um remédio novo na receita. A vinheta conta o que aconteceu depois. Por que o nível subiu?",
+    "palavras_chave": [
+      "drug interaction",
+      "serum drug level",
+      "toxicity",
+      "Step 1 pharmacology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Psychopharmacology",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lítio + tiazida: por que o nível subiu?"
+  },
+  "reel": null,
+  "exemplo": false
+}

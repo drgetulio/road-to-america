@@ -1,0 +1,96 @@
+{
+  "dia": 106,
+  "data": "2027-02-15",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Streptococcus pneumoniae",
+  "conceito": "Streptococcus pneumoniae: polysaccharide capsule, optochin-sensitive, top cause of community pneumonia",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-16",
+  "tom": null,
+  "gancho": "Macrô tentou abraçar a dupla e *escorregou igual sabonete*",
+  "gancho_apoio": "O Macrô perdeu a luta no lava-rápido e agora quer um teste que dedure a dupla.",
+  "imagem": {
+    "arquivo": "dia-106.png",
+    "cena": "Num lava-rápido cheio de espuma, o Macrô tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva lisa, que escorregam dos pseudópodes dele como sabonete. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Num lava-rápido, Macrô tenta abraçar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-106-macete.png",
+    "cena": "Callback: a dupla de capa de chuva passa diante da vitrine de uma ótica, onde brilha um disco redondo, e desmaia dramaticamente; um primo verde parecido, sem capa, passa assobiando sem se abalar. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A dupla de capa desmaia diante de um disco na vitrine de uma ótica; um primo verde passa assobiando."
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man has had fever, rigors and a cough productive of rust-colored sputum for 2 days. Chest radiograph shows right lower lobe consolidation. Sputum Gram stain shows lancet-shaped gram-positive cocci in pairs, and blood agar colonies are surrounded by a green zone of partial hemolysis.",
+    "pergunta": "Which additional finding best identifies the most likely organism?",
+    "alternativas": {
+      "A": {
+        "texto": "Positive coagulase test",
+        "quiz": "Positive coagulase test"
+      },
+      "B": {
+        "texto": "Growth in 6.5% sodium chloride",
+        "quiz": "Growth in 6.5% sodium chloride"
+      },
+      "C": {
+        "texto": "Growth inhibited by optochin",
+        "quiz": "Growth inhibited by optochin"
+      },
+      "D": {
+        "texto": "Growth resistant to optochin",
+        "quiz": "Growth resistant to optochin"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Pneumococo: alfa-hemolítico e *sensível à optoquina*",
+    "certa": [
+      "Diplococos gram-positivos em forma de lança, alfa-hemólise e pneumonia lobar com escarro cor de ferrugem apontam para Streptococcus pneumoniae, a causa mais comum de pneumonia adquirida na comunidade. Entre os alfa-hemolíticos, ele é sensível à optoquina e solúvel em bile, o que o separa do viridans. A cápsula polissacarídica, que atrapalha a fagocitose, é quem faz o estrago e é o alvo das vacinas."
+    ],
+    "termos": [
+      "Streptococcus pneumoniae",
+      "optochin",
+      "alpha-hemolysis",
+      "polysaccharide capsule"
+    ],
+    "erradas": {
+      "A": "Coagulase positiva identifica Staphylococcus aureus, que forma cachos e não pares em lança.",
+      "B": "Crescer em sal 6,5% é do Enterococcus, que costuma ser gama-hemolítico e causa infecção urinária e endocardite.",
+      "D": "Resistência à optoquina é do estreptococo viridans, o primo alfa-hemolítico que mora na boca."
+    },
+    "macete": {
+      "frase": "Optoquina lembra *ótica*: o pneumococo desmaia, o viridans nem liga",
+      "apoio": "Pegadinha de prova: O NBME separa os alfa-hemolíticos pela optoquina e pela bile, e cobra a cápsula como alvo das vacinas conjugadas, indicadas para todos os adultos a partir dos 50 anos.",
+      "fala": "Comi, mostrei, avisei? Nem consegui comer. Escorregou."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: uma infecção respiratória de começo rápido e uma dupla difícil de pegar. O Gram e a placa de ágar estão na vinheta. Qual achado a mais fecha a identidade do bicho?",
+    "palavras_chave": [
+      "rust-colored sputum",
+      "lobar consolidation",
+      "lancet-shaped diplococci",
+      "green hemolysis"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Pneumonia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diplococo em lança, alfa-hemolítico: qual achado identifica o bicho?"
+  },
+  "reel": null,
+  "exemplo": false
+}

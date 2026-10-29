@@ -1,0 +1,95 @@
+{
+  "dia": 90,
+  "data": "2027-01-30",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Análise por intenção de tratar",
+  "conceito": "Intention-to-treat analysis keeps patients in their randomized groups and preserves randomization",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-31",
+  "gancho": "Amigo secreto do ensaio clínico: o Viés chegou *sem ser convidado*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Numa festa de fim de ano da firma, o Viés, de lupa, espia de trás de uma tabela 2x2 em branco enquanto bonequinhos de camisa azul e vermelha trocam presentes de amigo secreto. Um bonequinho azul está sentado sem presente nas mãos, e outro tenta trocar escondido o papel que tirou.",
+    "foco": "50% 35%",
+    "alt": "O Viés espia uma troca de amigo secreto: um bonequinho azul está sem presente e outro tenta trocar escondido o papel sorteado.",
+    "arquivo": "dia-090.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da festa: uma prancheta com olhos confere cada bonequinho pela cor do papel sorteado no começo, inclusive o que ficou sem presente e o que tentou trocar. O Viés fica do lado de fora da porta, espiando pela janela com a lupa.",
+    "alt": "Uma prancheta confere cada bonequinho pela cor do papel sorteado; o Viés fica do lado de fora, espiando pela janela.",
+    "arquivo": "dia-090-macete.png"
+  },
+  "questao": {
+    "vinheta": "In a randomized trial of a new antihypertensive drug versus placebo, 18% of patients assigned to the drug stop it because of side effects, and some placebo patients obtain the drug outside the study. Investigators analyze all patients in their originally randomized groups.",
+    "pergunta": "What is the main advantage of this approach?",
+    "alternativas": {
+      "A": {
+        "texto": "It maximizes the estimated effect",
+        "quiz": "Bigger effect"
+      },
+      "B": {
+        "texto": "It preserves randomization",
+        "quiz": "Keeps randomization"
+      },
+      "C": {
+        "texto": "It eliminates the need for blinding",
+        "quiz": "Blinding not needed"
+      },
+      "D": {
+        "texto": "It reduces the required sample size",
+        "quiz": "Smaller sample size"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Intention-to-treat* protege o sorteio",
+    "certa": [
+      "Na *intention-to-treat analysis*, cada paciente conta no grupo em que caiu no sorteio, tome ou não o remédio, e assim os grupos continuam comparáveis, como a *randomization* deixou, sem que o abandono ligado a efeito adverso ou gravidade crie *selection bias*. O preço é uma estimativa conservadora, porque abandono e troca puxam o efeito para perto de zero. A *per-protocol analysis* mostra o efeito em quem seguiu o tratamento, mas perde essa proteção."
+    ],
+    "termos": [
+      "intention-to-treat analysis",
+      "randomization",
+      "per-protocol analysis",
+      "selection bias"
+    ],
+    "erradas": {
+      "A": "A análise por intenção de tratar tende a subestimar o efeito, porque mistura quem não tomou o remédio no grupo tratado.",
+      "C": "O cegamento protege contra outros vieses (de aferição e de desempenho) e continua necessário.",
+      "D": "Ela não reduz a amostra necessária; como dilui o efeito, pode até pedir uma amostra maior."
+    },
+    "macete": {
+      "frase": "ITT é *amigo secreto*: tirou no sorteio, conta até o fim",
+      "apoio": "Pegadinha de prova: O NBME pergunta qual análise preserva a randomização (intention-to-treat) e qual superestima o efeito em quem aderiu (per-protocol); em estudos de não inferioridade, as duas são apresentadas.",
+      "fala": "Se ninguém troca de papel, eu fico de fora da festa."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de bioestatística: um ensaio clínico com gente que parou o remédio e gente que arrumou o remédio por fora, e uma escolha de análise que a prova cobra todo ano. Qual é a vantagem dela?",
+    "palavras_chave": [
+      "randomized trial",
+      "placebo",
+      "nonadherence",
+      "analysis plan"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Todos analisados no grupo do sorteio: qual a principal vantagem?"
+  },
+  "exemplo": false
+}

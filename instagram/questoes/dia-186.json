@@ -1,0 +1,88 @@
+{
+  "dia": 186,
+  "data": "2027-05-06",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Desacelerações tardias",
+  "conceito": "Late decelerations: uteroplacental insufficiency, start intrauterine resuscitation",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-07",
+  "tom": null,
+  "gancho": "Sala de parto às 4 da tarde e *o garçom não sabe qual espeto servir*",
+  "gancho_apoio": "Traçado no inglês da prova: a pegadinha mora na preposição. Leia \"before\", \"after\" e \"with\" com calma.",
+  "imagem": {
+    "arquivo": "dia-186.png",
+    "cena": "No rodízio, o Garçom Espetinho para diante de uma mesa com um monitor de traçado em branco e segura os espetos no alto, pensativo. A plaquinha verde e vermelha está de lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O Garçom Espetinho, pensativo, diante de um monitor de traçado em branco"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-186-macete.png",
+    "cena": "Callback: o Garçom Espetinho fecha a torneirinha de um soro pendurado e vira a cadeira para o lado esquerdo; um balão em forma de coração volta a flutuar alto e firme. Fundo limpo.",
+    "alt": "O garçom fecha a torneirinha do soro e vira a cadeira para a esquerda; o balão-coração volta a flutuar"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old primigravida in active labor at 39 weeks' gestation is receiving oxytocin augmentation. Six contractions occur every 10 minutes. Fetal heart tracing shows a baseline of 140/min, minimal variability, and recurrent decelerations whose nadir follows the peak of each contraction.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Perform an immediate cesarean delivery",
+        "quiz": "Immediate cesarean delivery"
+      },
+      "B": {
+        "texto": "Increase the oxytocin infusion to shorten labor",
+        "quiz": "Increase oxytocin"
+      },
+      "C": {
+        "texto": "Stop oxytocin and turn her to the left side",
+        "quiz": "Stop oxytocin; turn left"
+      },
+      "D": {
+        "texto": "Start amnioinfusion through a catheter",
+        "quiz": "Amnioinfusion"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Desaceleração tardia: *ressuscitação intrauterina*",
+    "certa": [
+      "Desaceleração que chega ao fundo depois do pico da contração é *late deceleration*: sinal de *uteroplacental insufficiency*. Aqui a causa é a *tachysystole* (mais de 5 contrações em 10 minutos) pela ocitocina. O primeiro passo é a *intrauterine resuscitation*: suspender a ocitocina, decúbito lateral, hidratação venosa e correção de hipotensão; se não melhorar, parto rápido."
+    ],
+    "termos": [
+      "late deceleration",
+      "uteroplacental insufficiency",
+      "tachysystole",
+      "intrauterine resuscitation"
+    ],
+    "erradas": {
+      "A": "A cesárea imediata fica para traçado categoria III ou para o que não responde às medidas de ressuscitação; este traçado é categoria II.",
+      "B": "Aumentar a ocitocina piora a taquissistolia e reduz ainda mais a troca de oxigênio na placenta.",
+      "D": "A amnioinfusão serve para desacelerações variáveis por compressão do cordão, não para insuficiência uteroplacentária."
+    },
+    "macete": {
+      "frase": "*VEAL CHOP*: Variable é Cord, Early é Head, Acceleration é OK, *Late é Placenta*. Seis contrações em dez minutos é taquissistolia: o garçom *para de servir* (desliga a ocitocina) e *vira a mãe de lado* antes de qualquer cesárea.",
+      "apoio": "O NBME mostra desaceleração tardia com ocitocina e oferece cesárea logo de cara; a resposta é corrigir a causa primeiro (parar ocitocina, posição, volume) e reavaliar o traçado.",
+      "fala": "Seis espetos em dez minutos? Nem eu, doutor. Primeiro fecha a torneira."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na obstetrícia: trabalho de parto, um traçado na tela e quatro condutas no espeto. O que define a primeira é a relação entre as contrações e as desacelerações, descrita na vinheta.",
+    "palavras_chave": [
+      "labor and delivery",
+      "fetal heart tracing",
+      "intrapartum management",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Desacelera depois do pico, com ocitocina: o que fazer?"
+  },
+  "exemplo": false
+}

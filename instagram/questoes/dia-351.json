@@ -1,0 +1,100 @@
+{
+  "dia": 351,
+  "data": "2027-10-18",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Febre puerperal",
+  "conceito": "Streptococcus pyogenes puerperal sepsis: Semmelweis showed that hand washing prevents it",
+  "personagem": "Macrô",
+  "gancho_data": "Dia do Médico (18/10): homenagem a Semmelweis e à higiene das mãos.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-19",
+  "tom": null,
+  "gancho": "Semmelweis pediu sabão em 1847 e *até hoje tem gente fugindo da pia*",
+  "gancho_apoio": "Dia do Médico, com homenagem a quem lavou as mãos antes de todo mundo.",
+  "imagem": {
+    "arquivo": "dia-351.png",
+    "cena": "Macrô num corredor de hospital do século 19, com a comanda em branco no bolso, segura uma barra de sabão como troféu ao lado de uma bacia com espuma; ao fundo, uma fileira de cocos redondos em corrente tenta entrar escondida.",
+    "foco": "50% 35%",
+    "alt": "Semmelweis pediu sabão em 1847 e até hoje tem gente fugindo da pia"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-351-macete.png",
+    "cena": "Callback: o Macrô ilumina com uma lanterna uma placa de cultura onde a corrente de cocos está cercada de halos claros, e um pequeno disco de antibiótico abre uma zona vazia em volta; bolhas de sabão flutuam ao fundo.",
+    "foco": "50% 45%",
+    "alt": "Febre puerperal precoce e grave: Streptococcus pyogenes"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman develops fever of 39.8°C, chills, uterine tenderness, and hypotension 30 hours after a vaginal delivery. The lochia is thin and not foul-smelling. Blood cultures grow beta-hemolytic gram-positive cocci in chains that are bacitracin-sensitive and PYR-positive.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Streptococcus agalactiae",
+        "quiz": "S. agalactiae"
+      },
+      "B": {
+        "texto": "Streptococcus pyogenes",
+        "quiz": "S. pyogenes"
+      },
+      "C": {
+        "texto": "Enterococcus faecalis",
+        "quiz": "E. faecalis"
+      },
+      "D": {
+        "texto": "Staphylococcus aureus",
+        "quiz": "S. aureus"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Febre puerperal precoce e grave: *Streptococcus pyogenes*",
+    "certa": [
+      "Febre alta, hipotensão e útero doloroso nas primeiras 48 horas do pós-parto, com cocos em cadeia beta-hemolíticos, sensíveis à *bacitracin* e *PYR-positive*, apontam para *Streptococcus pyogenes* (grupo A), a causa clássica da *puerperal sepsis*. Ignaz Semmelweis mostrou, em 1847, que a *hand hygiene* dos médicos antes do parto derrubava essa mortalidade."
+    ],
+    "termos": [
+      "Streptococcus pyogenes",
+      "puerperal sepsis",
+      "bacitracin-sensitive",
+      "hand hygiene"
+    ],
+    "erradas": {
+      "A": "S. agalactiae (grupo B) também é beta-hemolítico, mas é resistente à bacitracina e CAMP-positivo; é mais famoso pela sepse neonatal.",
+      "C": "Enterococo é PYR-positivo, mas costuma ser gama-hemolítico e cresce em bile e NaCl 6,5%.",
+      "D": "S. aureus forma cachos e é catalase-positivo, não cadeias."
+    },
+    "macete": {
+      "frase": "*Grupo A Apaga com bacitracina; grupo B Banca a bacitracina*",
+      "apoio": "No disco de bacitracina, o pyogenes some em volta (sensível) e o agalactiae fica firme (resistente); PYR positivo também é do grupo A. Febre puerperal com choque e lóquio sem cheiro é grupo A até prova em contrário. E a lição de Semmelweis vale até hoje: sabão antes de cada paciente.",
+      "fala": "Comi, mostrei, avisei. Mas lava a mão antes."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia do Médico, com homenagem a Semmelweis e à pia: o Macrô ergueu a barra de sabão como troféu. Quatro cocos gram-positivos suspeitos, e a vinheta tem os testes de laboratório que separam os parecidos.",
+    "palavras_chave": [
+      "postpartum care",
+      "obstetric infection",
+      "infection control",
+      "microbiology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#DiaDoMedico",
+      "#Microbiologia",
+      "#Microbiology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Choque 30 h após o parto, cocos em cadeia e PYR positivo: qual agente?"
+  },
+  "reel": null,
+  "exemplo": false
+}

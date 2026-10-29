@@ -1,0 +1,88 @@
+{
+  "dia": 169,
+  "data": "2027-04-19",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Malária por falciparum",
+  "conceito": "Plasmodium falciparum: banana-shaped gametocytes, cytoadherence and cerebral malaria",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Semana do Dia Mundial da Malária (25/4).",
+  "remix_de": null,
+  "explicacao_em": "2027-04-20",
+  "tom": null,
+  "gancho": "A Capitã Plaqueta foi buscar no aeroporto um mosquito de *mala e cuia*",
+  "gancho_apoio": "Um esfregaço com um formato que entrega a espécie, e a Capitã de olho nas hemácias.",
+  "imagem": {
+    "arquivo": "dia-169.png",
+    "cena": "No desembarque internacional de um aeroporto, a Capitã Plaqueta segura uma plaquinha em branco e recebe um mosquito turista de chapéu de palha e mala de rodinha. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Capitã Plaqueta recebe no desembarque um mosquito turista de chapéu de palha e mala de rodinha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-169-macete.png",
+    "cena": "Callback: num túnel estreito (o capilar), hemácias com adesivos de velcro grudam nas paredes e formam um engarrafamento, e a Capitã Plaqueta segura um cacho de bananas em forma de foice. Fundo limpo.",
+    "alt": "Hemácias de velcro grudam nas paredes de um túnel estreito; a Capitã segura bananas em forma de foice."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old engineer returned from Mozambique 12 days ago and now has fever, headache, confusion, and a generalized seizure. He took no chemoprophylaxis. Hemoglobin is 9.1 g/dL and platelets 62,000/mm3. A blood smear shows 8% parasitemia with multiple ring forms in single red cells and crescent-shaped gametocytes.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Babesia microti",
+        "quiz": "Babesia microti"
+      },
+      "B": {
+        "texto": "P. vivax",
+        "quiz": "P. vivax"
+      },
+      "C": {
+        "texto": "P. malariae",
+        "quiz": "P. malariae"
+      },
+      "D": {
+        "texto": "P. falciparum",
+        "quiz": "P. falciparum"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*Falciparum*: banana no esfregaço, velcro no vaso",
+    "certa": [
+      "Parasitemia alta, várias formas em anel na mesma hemácia e gametócitos em banana (*crescent-shaped gametocytes*) são da *Plasmodium falciparum*. As hemácias infectadas expressam *PfEMP1* em saliências (knobs) e grudam no endotélio dos capilares cerebrais (*cytoadherence*), o que explica a *cerebral malaria*. Malária grave pede artesunato IV."
+    ],
+    "termos": [
+      "Plasmodium falciparum",
+      "crescent-shaped gametocytes",
+      "PfEMP1",
+      "cytoadherence",
+      "cerebral malaria"
+    ],
+    "erradas": {
+      "A": "A Babesia vem do carrapato no nordeste dos EUA, mostra a \"cruz de Malta\" no esfregaço e não tem gametócito em banana.",
+      "B": "A P. vivax infecta hemácias jovens, dá parasitemia baixa, trofozoítos ameboides com pontilhado de Schüffner e hipnozoítos no fígado.",
+      "C": "A P. malariae dá febre a cada 72 horas, parasitemia baixa, formas em faixa e pode causar síndrome nefrótica."
+    },
+    "macete": {
+      "frase": "*Falci*parum vem de *falx*, foice: gametócito em banana e hemácia de *velcro*",
+      "apoio": "PfEMP1 nas saliências da hemácia gruda no endotélio do cérebro. Malária grave pede artesunato IV.",
+      "fala": "Hemácia de velcro no vaso do cérebro não é lembrancinha de viagem. É falciparum, e é urgente."
+    }
+  },
+  "legenda": {
+    "contexto": "Semana do Dia Mundial da Malária (25/4) no Bicho de Segunda. O viajante voltou sem profilaxia, e o quadro, a parasitemia e o formato do gametócito estão na vinheta.",
+    "palavras_chave": [
+      "Mozambique travel",
+      "seizure",
+      "no chemoprophylaxis",
+      "ring forms"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, convulsão, 8% de parasitemia e gametócito em crescente: qual espécie?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 163,
+  "data": "2027-04-13",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Correção da hiponatremia crônica",
+  "conceito": "Chronic hyponatremia: correct no faster than 8 to 10 mEq/L per day to avoid osmotic demyelination",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-14",
+  "tom": null,
+  "gancho": "O sódio mudou de número e *o Seu Néfron largou o café*",
+  "gancho_apoio": "Tiazídico suspenso, soro correndo e um carimbo que ainda não saiu.",
+  "imagem": {
+    "arquivo": "dia-163.png",
+    "cena": "Seu Néfron, na escrivaninha de plantão, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron olha preocupado um bebedouro que jorra água clara sem parar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-163-macete.png",
+    "cena": "Callback: um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira, e o Seu Néfron puxa uma alavanca verde de freio bem a tempo. Fundo limpo.",
+    "alt": "Um carrinho-saleiro dispara rumo a uma ponte frágil; Seu Néfron puxa a alavanca de freio a tempo."
+  },
+  "questao": {
+    "vinheta": "A 74-year-old woman taking hydrochlorothiazide has 4 days of fatigue and mild confusion without seizures. Serum sodium is 116 mEq/L. The thiazide is stopped and isotonic saline is started. Six hours later, she has produced 2 L of dilute urine and serum sodium is 125 mEq/L.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Continue isotonic saline at the same rate",
+        "quiz": "Continue normal saline"
+      },
+      "B": {
+        "texto": "Switch to 3% hypertonic saline",
+        "quiz": "Switch to 3% saline"
+      },
+      "C": {
+        "texto": "Desmopressin plus 5% dextrose in water",
+        "quiz": "DDAVP + D5W"
+      },
+      "D": {
+        "texto": "Start oral tolvaptan",
+        "quiz": "Oral tolvaptan"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sódio acima da velocidade: *freia* com DDAVP e água livre",
+    "certa": [
+      "Na hiponatremia crônica (mais de 48 horas ou duração desconhecida), o sódio deve subir no máximo *8 a 10 mEq/L em 24 horas*, e 8 nos pacientes de alto risco (sódio de 105 ou menos, hipocalemia, desnutrição, álcool, hepatopatia). Aqui ele subiu 9 em 6 horas porque, sem o tiazídico e com volume reposto, o rim passou a eliminar água livre. A conduta é frear e até baixar de novo o sódio com *desmopressin* e *D5W*, para evitar a *osmotic demyelination syndrome*."
+    ],
+    "termos": [
+      "chronic hyponatremia",
+      "overcorrection",
+      "osmotic demyelination syndrome",
+      "desmopressin"
+    ],
+    "erradas": {
+      "A": "Manter o soro com diurese aquosa vai continuar subindo o sódio e estourar o limite do dia.",
+      "B": "Salina a 3% é para sintomas graves (convulsão, rebaixamento) e aqui só aceleraria a correção excessiva.",
+      "D": "A tolvaptana aumenta a eliminação de água livre e subiria o sódio ainda mais rápido."
+    },
+    "macete": {
+      "frase": "Do baixo para o alto rápido demais, a *ponte* cai (pons): no máximo *8 por dia* no carimbo",
+      "apoio": "Passou do limite por diurese aquosa: freia com desmopressina e soro glicosado a 5%. A desmielinização aparece dias depois.",
+      "fala": "Do baixo para o alto rápido demais, quem cai é a ponte. Multa: DDAVP e soro glicosado."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com o Seu Néfron de olho no sódio. Uma senhora chegou com um número muito baixo, o remédio culpado foi suspenso e, horas depois, os exames da vinheta mudaram bastante. Qual é o próximo passo?",
+    "palavras_chave": [
+      "hydrochlorothiazide",
+      "serum sodium 116",
+      "dilute urine",
+      "rapid rise in sodium"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sódio de 116 para 125 em 6 horas, com diurese aquosa: o que fazer agora?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 65,
+  "data": "2027-01-05",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "AVC isquêmico agudo",
+  "conceito": "Acute stroke: noncontrast head CT first to exclude hemorrhage",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-06",
+  "gancho": "Tempo é cérebro: 50 minutos no relógio e *quatro botões* piscando. Qual você aperta primeiro?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Sala de emergência à noite. Dona Térmica, a garrafa de café do plantão, segura um celular gigante com quatro botões grandes e coloridos piscando, sem nada escrito, e o dedo indeciso passeia entre eles. Ao lado, um cérebro simpático em forma de cofrinho rói as unhas. Na parede, o relógio sem números marca 3 da manhã.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, indecisa, passa o dedo entre quatro botões de um celular gigante; um cérebro em forma de cofrinho rói as unhas ao lado.",
+    "arquivo": "dia-065.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: antes de apertar enviar, Dona Térmica passa o cérebro-cofrinho por um anel de tomógrafo com uma lanterna dentro, que mostra um cano entupido e sem vazamento. Só então o botão verde do celular libera o desentupidor.",
+    "alt": "Dona Térmica passa o cérebro-cofrinho por um anel de tomógrafo que mostra o cano entupido, e só então o botão verde libera o desentupidor.",
+    "arquivo": "dia-065-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man is brought to the emergency department 50 minutes after sudden right face and arm weakness and difficulty speaking. Blood pressure is 172/94 mm Hg and fingerstick glucose is 118 mg/dL. Examination confirms right hemiparesis and expressive aphasia.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Noncontrast CT of the head",
+        "quiz": "Noncontrast head CT"
+      },
+      "B": {
+        "texto": "IV alteplase immediately",
+        "quiz": "IV alteplase now"
+      },
+      "C": {
+        "texto": "MRI of the brain with diffusion",
+        "quiz": "Brain MRI with diffusion"
+      },
+      "D": {
+        "texto": "Oral aspirin 325 mg",
+        "quiz": "Aspirin 325 mg"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *tomografia sem contraste*",
+    "certa": [
+      "Déficit focal súbito com glicemia normal é AVC até prova em contrário, e o primeiro passo é a *noncontrast head CT*: ela é rápida, está disponível e separa isquemia de hemorragia, que contraindica trombólise. Com a TC sem sangue e o paciente dentro da janela, entra a trombólise venosa (*alteplase* ou *tenecteplase*), e a angiotomografia procura oclusão de grande vaso para trombectomia."
+    ],
+    "termos": [
+      "acute ischemic stroke",
+      "noncontrast head CT",
+      "intracranial hemorrhage",
+      "thrombolysis"
+    ],
+    "erradas": {
+      "B": "Trombolítico antes da imagem pode ser desastroso se for hemorragia; a TC vem antes.",
+      "C": "A ressonância com difusão é mais sensível para isquemia, mas é lenta e não deve atrasar a decisão; no pronto-socorro, a TC vem primeiro.",
+      "D": "Aspirina antes de excluir hemorragia é erro, e quem vai receber trombolítico espera 24 horas para o antiagregante."
+    },
+    "macete": {
+      "frase": "Trombolisar sem TC é *Pix sem conferir a chave*",
+      "apoio": "Pegadinha de prova: O NBME dá um AVC dentro da janela e oferece o trombolítico como isca; sem imagem, nada de trombólise, e a glicemia capilar vem antes de tudo.",
+      "fala": "Às 3 da manhã eu confiro a chave até do café."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça: déficit neurológico súbito, relógio correndo e todo mundo olhando para a Dona Térmica. No inglês da prova, next step quer dizer agora, e não depois do café; ela já viu esse filme às 3 da manhã e sabe que a pressa tem ordem.",
+    "palavras_chave": [
+      "sudden weakness",
+      "emergency medicine",
+      "time-sensitive care",
+      "neurology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Neurologia",
+      "#Stroke",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Déficit focal há 50 min e glicemia 118: qual o primeiro passo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 5,
+  "data": "2026-11-06",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Finasterida e tansulosina",
+  "conceito": "Finasteride vs tamsulosin: 5-alpha reductase inhibition shrinks the prostate, alpha-1A blockade relaxes smooth muscle",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Novembro Azul.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-07",
+  "tom": null,
+  "gancho": "Um remédio da próstata chega de *motoboy*; o outro, de carro de boi",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-005.png",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura dois frascos sem rótulo. Na porta estaciona um motoboy de capacete e baú de entrega; lá longe, na estradinha de terra, vem um carro de boi bem devagar.",
+    "foco": "50% 35%",
+    "alt": "Um remédio da próstata chega de motoboy; o outro, de carro de boi"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-005-macete.png",
+    "cena": "Callback da farmácia: o motoboy abre na hora um portão de garagem emperrado, soltando as molas apertadas (o músculo liso relaxado). No fundo, o carro de boi chega meses depois e lixa a parede grossa até deixá-la fina, enquanto a areia da Tia escorre.",
+    "alt": "Um abre a porta, o outro afina a parede"
+  },
+  "questao": {
+    "vinheta": "A 71-year-old man with benign prostatic hyperplasia starts a new medication. Within 1 week his urinary stream improves. After 6 months, his prostate volume and PSA level are unchanged.",
+    "pergunta": "This drug most likely acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of 5-alpha reductase",
+        "quiz": "5-alpha reductase inhibitor"
+      },
+      "B": {
+        "texto": "Alpha-1A adrenergic receptor blockade",
+        "quiz": "Alpha-1A blocker"
+      },
+      "C": {
+        "texto": "Agonism of beta-3 adrenergic receptors",
+        "quiz": "Beta-3 agonist"
+      },
+      "D": {
+        "texto": "Antagonism of muscarinic M3 receptors",
+        "quiz": "M3 antagonist"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Um abre a porta, o outro afina a parede",
+    "certa": [
+      "Melhora do jato em poucos dias e próstata do mesmo tamanho depois de 6 meses, com PSA igual, descrevem a tansulosina (*tamsulosin*), que bloqueia os receptores alfa-1A do músculo liso da próstata e do colo vesical. O músculo relaxa, a uretra abre e o efeito é rápido, mas a glândula não encolhe e o PSA não muda. Por ser seletiva para alfa-1A, ela dá menos hipotensão postural que terazosina e doxazosina; os efeitos típicos dela são a ejaculação alterada e a síndrome da íris flácida na cirurgia de catarata. A finasterida faz o contrário: demora de 6 a 12 meses, reduz o volume da próstata e corta o PSA pela metade."
+    ],
+    "termos": [
+      "tamsulosin",
+      "alpha-1A blockade",
+      "finasteride",
+      "floppy iris syndrome"
+    ],
+    "erradas": {
+      "A": "Inibir a 5-alfa-redutase (finasterida) leva meses e reduz o volume da próstata e o PSA, que aqui ficaram iguais.",
+      "C": "O agonista beta-3 (mirabegrona) relaxa o detrusor na bexiga hiperativa; não abre a saída da bexiga e pode subir a pressão.",
+      "D": "Antimuscarínicos tratam urgência e incontinência, não melhoram o jato fraco e podem até piorar a retenção urinária."
+    },
+    "macete": {
+      "frase": "TAMsulosina é motoboy: *TÁ aberto* em dias. FINAsterida é carro de boi: *AFINA* a próstata em meses.",
+      "apoio": "Pegadinha de prova: O NBME cobra o efeito adverso: hipotensão postural mais com terazosina e doxazosina, ejaculação alterada e íris flácida com a tansulosina, PSA caindo à metade com a finasterida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia, ainda no Novembro Azul. A Tia Meia-Vida tem dois remédios para a próstata aumentada no balcão: um entrega em dias, o outro em meses. Qual deles o paciente levou?",
+    "palavras_chave": [
+      "prostate",
+      "urinary symptoms",
+      "pharmacology",
+      "mechanism of action"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Jato melhorou em 1 semana e a próstata não mudou: qual mecanismo?"
+  },
+  "exemplo": false
+}

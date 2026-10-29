@@ -1,0 +1,97 @@
+{
+  "dia": 95,
+  "data": "2027-02-04",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Nódulo mamário em mulher jovem",
+  "conceito": "Palpable breast mass in a woman under 30: ultrasound first",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": "Dia Mundial do Câncer (4/2).",
+  "remix_de": null,
+  "explicacao_em": "2027-02-05",
+  "tom": "acolhedor",
+  "gancho": "Dia Mundial do Câncer: um nódulo na mama e *a primeira parada*",
+  "gancho_apoio": "Informação sem medo: todo nódulo na mama merece avaliação, e a ordem dos exames importa.",
+  "imagem": {
+    "arquivo": "dia-095.png",
+    "cena": "Garçom Espetinho, sereno, segura uma bandeja com três cúpulas fechadas. Ao fundo, uma estrada calma sob uma neblina leve da manhã. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho, sereno, com uma bandeja de três cúpulas fechadas; ao fundo, uma estrada com neblina leve."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-095-macete.png",
+    "cena": "Callback: a cúpula do meio se abre e revela um pequeno transdutor de ultrassom que emite ondas suaves, como círculos na água, que atravessam a neblina da estrada. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A cúpula do meio aberta mostra um transdutor de ultrassom cujas ondas atravessam a neblina."
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman noticed a lump in her left breast 3 weeks ago. Examination shows a 2-cm firm, mobile, nontender mass in the upper outer quadrant without skin changes, nipple discharge or axillary lymphadenopathy. No relatives have had breast or ovarian cancer.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Diagnostic mammography",
+        "quiz": "Diagnostic mammography"
+      },
+      "B": {
+        "texto": "Breast ultrasonography",
+        "quiz": "Breast ultrasonography"
+      },
+      "C": {
+        "texto": "Core needle biopsy",
+        "quiz": "Core needle biopsy"
+      },
+      "D": {
+        "texto": "Reexamination in 1 year",
+        "quiz": "Reexamination in 1 year"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Abaixo dos 30 anos: *ultrassom primeiro*",
+    "certa": [
+      "Abaixo dos 30 anos, diante de um nódulo palpável, o primeiro exame é o ultrassom (breast ultrasonography). O tecido mamário jovem é denso, o que tira sensibilidade da mamografia, e o ultrassom diferencia cisto de nódulo sólido sem radiação. O resultado guia o passo seguinte: achado provavelmente benigno, como um fibroadenoma, pode seguir em controle de curto prazo, e achado suspeito vai para biópsia."
+    ],
+    "termos": [
+      "palpable breast mass",
+      "breast ultrasonography",
+      "dense breast tissue",
+      "fibroadenoma"
+    ],
+    "erradas": {
+      "A": "A mamografia entra como exame inicial a partir dos 30 a 40 anos; antes disso, o tecido denso esconde o nódulo.",
+      "C": "A biópsia vem depois da imagem, quando o ultrassom mostra achado suspeito ou quando há dúvida.",
+      "D": "Todo nódulo palpável precisa de investigação agora; esperar um ano sem imagem atrasa o diagnóstico."
+    },
+    "macete": {
+      "frase": "Menos de 30: o *som* atravessa a neblina",
+      "apoio": "Pegadinha de prova: O NBME coloca mamografia e biópsia como iscas em mulher jovem com nódulo móvel; a resposta é ultrassom primeiro.",
+      "fala": "Hoje o espeto é informação: abaixo dos 30, o som vem primeiro."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta no Dia Mundial do Câncer, com informação sem medo. Um nódulo palpável, uma paciente preocupada e quatro caminhos possíveis. A idade dela, que está na vinheta, decide a primeira parada.",
+    "palavras_chave": [
+      "breast lump",
+      "mobile mass",
+      "young woman",
+      "no family history"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Ginecologia",
+      "#Gynecology",
+      "#SaudeDaMulher"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo de mama aos 24: primeiro exame?"
+  },
+  "reel": null,
+  "exemplo": false
+}

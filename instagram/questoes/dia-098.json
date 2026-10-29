@@ -1,0 +1,101 @@
+{
+  "dia": 98,
+  "data": "2027-02-07",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), SCID por deficiência de ADA (dia 71), Neisseria meningitidis (dia 92)",
+  "conceito": "Remix: Chlamydia trachomatis + ADA-deficient SCID + Neisseria meningitidis",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    1,
+    71,
+    92
+  ],
+  "explicacao_em": "2027-02-08",
+  "tom": null,
+  "gancho": "Véspera de Carnaval e o Gram *já está fantasiado*: quem é o folião?",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 1, 71 e 92) e um intruso. Só um nome explica a secreção.",
+  "imagem": {
+    "arquivo": "dia-098.png",
+    "cena": "Na véspera do Carnaval, o Seu Néfron confere com a lupa uma lâmina de microscópio onde dois feijõezinhos cor-de-rosa, fantasiados de pierrô, se escondem dentro de uma bolha maior. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron examina com a lupa uma lâmina onde dois feijõezinhos de pierrô se escondem dentro de uma bolha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-098-macete.png",
+    "cena": "Callback: os dois feijõezinhos pierrô recusam um pirulito em forma de M e aceitam só um cubinho de açúcar, e o Seu Néfron carimba a lâmina, satisfeito. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Os feijõezinhos pierrô recusam um pirulito em forma de M e aceitam só o cubinho de açúcar; Seu Néfron carimba."
+  },
+  "questao": {
+    "vinheta": "Three days after unprotected sex, a 24-year-old man notices burning on urination and a thick, yellow-green penile discharge. Microscopy of the discharge shows neutrophils packed with gram-negative diplococci. On Thayer-Martin agar, the isolate produces acid from glucose but not from maltose.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Chlamydia trachomatis",
+        "quiz": "C. trachomatis",
+        "dia": 1
+      },
+      "B": {
+        "texto": "Neisseria gonorrhoeae",
+        "quiz": "N. gonorrhoeae"
+      },
+      "C": {
+        "texto": "Neisseria meningitidis",
+        "quiz": "N. meningitidis",
+        "dia": 92
+      },
+      "D": {
+        "texto": "Mycoplasma genitalium",
+        "quiz": "M. genitalium"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Diplococo *dentro do neutrófilo* na uretra: *gonococo*",
+    "certa": [
+      "Secreção uretral purulenta com diplococos gram-negativos dentro dos neutrófilos é a assinatura da Neisseria gonorrhoeae. O meio de Thayer-Martin seleciona as neissérias, e a fermentação desempata: o gonococo usa só glicose; o meningococo usa glicose e maltose."
+    ],
+    "termos": [
+      "Neisseria gonorrhoeae",
+      "intracellular gram-negative diplococci",
+      "Thayer-Martin agar",
+      "maltose fermentation"
+    ],
+    "erradas": {
+      "A": "Dia 1: a clamídia causa uretrite com secreção mais escassa e Gram sem bactérias, porque é intracelular obrigatória e não cora; o diagnóstico é por teste de amplificação de ácido nucleico (NAAT).",
+      "C": "Dia 92: o meningococo tem o mesmo formato e também cresce no Thayer-Martin, mas fermenta maltose, além de glicose. É o bicho da meningite com púrpura, não da uretrite.",
+      "D": "Também fora dos dias revisados: o Mycoplasma genitalium causa uretrite não gonocócica e não tem parede celular, então não aparece no Gram."
+    },
+    "macete": {
+      "frase": "*Go*nococo só *go*sta de glicose; *M*eningococo come glicose e *M*altose",
+      "apoio": "Pegadinha de prova: O NBME mostra o mesmo diplococo gram-negativo e separa as duas neissérias pela maltose ou pelo lugar: uretra e articulação para o gonococo, meninge e pele para o meningococo. E pede tratar a clamídia junto quando ela não foi descartada.",
+      "fala": "Na uretra, quem fica dentro do neutrófilo é o gonococo. Sem carimbo, não sai: teste de clamídia também."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo na véspera do Carnaval, com o Seu Néfron conferindo a papelada da uretra. A clamídia, a SCID e o meningococo já passaram por aqui. A vinheta traz a lâmina e um teste de açúcar que desempata. Camisinha também é fantasia de Carnaval.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Imunologia",
+      "#Immunology",
+      "#Microbiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Corrimento amarelo-esverdeado e diplococo que só fermenta glicose: qual germe?"
+  },
+  "reel": null,
+  "exemplo": false
+}

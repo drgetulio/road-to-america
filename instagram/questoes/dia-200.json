@@ -1,0 +1,88 @@
+{
+  "dia": 200,
+  "data": "2027-05-20",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Convulsão febril simples",
+  "conceito": "Simple febrile seizure: no labs, EEG or imaging needed, reassure the family",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-21",
+  "tom": null,
+  "gancho": "Dia 200 da Questão de Embarque: obrigado por estar aqui! Hoje o rodízio é *na pediatria*",
+  "gancho_apoio": "200 dias de questão: você já estudou mais do que o seu eu de janeiro prometeu no Réveillon.",
+  "imagem": {
+    "arquivo": "dia-200.png",
+    "cena": "O Garçom Espetinho, de bandeja na mão, chega com calma a uma mesa onde uma família de balões espera, ainda assustada; num cantinho do salão, um bolo pequeno com uma velinha comemora o dia 200. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O garçom chega com calma a uma família de balões assustada; ao fundo, um bolo pequeno do dia 200"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-200-macete.png",
+    "cena": "Callback: o Garçom Espetinho fecha o cardápio de exames e serve só uma xícara de chá com um cobertorzinho; a família de balões sorri, aliviada. Fundo limpo.",
+    "alt": "O garçom fecha o cardápio de exames e serve só um chá; a família de balões sorri aliviada"
+  },
+  "questao": {
+    "vinheta": "An 18-month-old girl has a 2-minute generalized tonic-clonic seizure at home on the first day of a fever of 39.4°C (103°F). Twenty minutes later she is fully alert and has a runny nose. Vaccinations are up to date. Neurologic examination is normal, with no meningeal signs.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Electroencephalography within 24 hours",
+        "quiz": "EEG within 24 hours"
+      },
+      "B": {
+        "texto": "Lumbar puncture with CSF culture",
+        "quiz": "Lumbar puncture"
+      },
+      "C": {
+        "texto": "Reassure parents; treat the fever",
+        "quiz": "Reassurance"
+      },
+      "D": {
+        "texto": "Start daily oral levetiracetam",
+        "quiz": "Daily levetiracetam"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Convulsão febril simples: *tranquilizar*",
+    "certa": [
+      "A *simple febrile seizure* acontece entre 6 meses e 5 anos, é generalizada, dura menos de 15 minutos, não se repete em 24 horas e a criança volta ao normal. Com exame normal e vacinas em dia, a AAP não indica EEG, imagem, exames de sangue ou punção de rotina. A conduta é tratar a causa da febre e *reassure* a família, explicando o risco de recorrência e o que fazer."
+    ],
+    "termos": [
+      "simple febrile seizure",
+      "reassurance",
+      "meningeal signs",
+      "AAP guideline"
+    ],
+    "erradas": {
+      "A": "O EEG não muda a conduta na convulsão febril simples e não prevê epilepsia.",
+      "B": "A punção lombar fica para sinais meníngeos, vacinação incompleta para Hib e pneumococo ou uso prévio de antibiótico.",
+      "D": "Anticonvulsivante contínuo não é indicado: o risco dos efeitos adversos supera o benefício, e antitérmico não previne a recorrência."
+    },
+    "macete": {
+      "frase": "Convulsão febril simples é *15, 24, 1*: menos de *15* minutos, uma vez em *24* horas, *1* episódio generalizado. Criança bem e vacinada: o garçom recolhe o cardápio e diz *\"não, obrigado\"* para EEG, punção e remédio diário.",
+      "apoio": "O NBME oferece EEG, imagem ou punção para criança bem e vacinada; a resposta é tranquilizar. Convulsão focal, longa ou repetida em 24 horas é complexa e muda a investigação.",
+      "fala": "Vai uma conduta aí? Hoje só a da conversa e a do antitérmico, doutor."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia 200, e a gente agradece cada voto na enquete. No Rodízio de Quinta, uma criança pequena teve um episódio em casa, e os pais chegaram assustados. A duração, a história e o exame de agora estão na vinheta: são eles que definem o que servir.",
+    "palavras_chave": [
+      "pediatric emergency",
+      "seizure",
+      "toddler",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Convulsão de 2 min no 1º dia de febre: conduta?"
+  },
+  "exemplo": false
+}

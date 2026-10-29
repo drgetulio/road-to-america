@@ -1,0 +1,101 @@
+{
+  "dia": 352,
+  "data": "2027-10-19",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Colangite aguda",
+  "conceito": "Acute cholangitis: Charcot triad, antibiotics and biliary drainage by ERCP",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-20",
+  "tom": null,
+  "gancho": "Engarrafamento às 3 da manhã: *buzinar não resolve*. Quem chama o guincho?",
+  "gancho_apoio": "Plantão de Terça na central de trânsito: o soro e o antibiótico já entraram, e agora?",
+  "imagem": {
+    "arquivo": "dia-352.png",
+    "cena": "Cabine de controle de trânsito à noite, com um relógio de parede sem números nas 3 horas; a Dona Térmica observa pela janela um engarrafamento de carrinhos parados e buzinando diante de um semáforo vermelho.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica vê um engarrafamento da cabine de controle"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-352-macete.png",
+    "cena": "Callback: o engarrafamento era num túnel amarelo bloqueado por uma pedra redonda enorme; um guincho de braço longo e flexível entra pela saída do túnel e puxa a pedra com uma cestinha na ponta; os carrinhos voltam a andar, o semáforo fica verde e a Dona Térmica anota na prancheta.",
+    "foco": "50% 45%",
+    "alt": "Colangite aguda: antibiótico e biliary drainage por ERCP"
+  },
+  "questao": {
+    "vinheta": "A 72-year-old woman has 1 day of fever of 39.1°C, right upper quadrant pain, and jaundice. Blood pressure is 108/68 mm Hg. Total bilirubin is 5.8 mg/dL, alkaline phosphatase 410 U/L, and leukocytes 17,500/mm³. Ultrasound shows a dilated common bile duct with a distal stone. IV fluids and piperacillin-tazobactam were started.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Laparoscopic cholecystectomy today",
+        "quiz": "Lap cholecystectomy today"
+      },
+      "B": {
+        "texto": "HIDA scan",
+        "quiz": "HIDA scan"
+      },
+      "C": {
+        "texto": "Antibiotics and repeat ultrasound in 1 week",
+        "quiz": "Antibiotics, US in 1 week"
+      },
+      "D": {
+        "texto": "ERCP with biliary drainage",
+        "quiz": "ERCP with drainage"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Colangite aguda: antibiótico e *biliary drainage* por *ERCP*",
+    "certa": [
+      "Febre, dor no hipocôndrio direito e icterícia formam a *Charcot triad* da *acute cholangitis*, aqui com colédoco dilatado e cálculo distal. Além de hidratação e antibiótico, a bile infectada sob pressão precisa sair: *ERCP* com extração do cálculo ou prótese, nas primeiras 24 a 48 horas nos casos moderados como este (leucocitose acima de 12.000 e bilirrubina de 5 ou mais)."
+    ],
+    "termos": [
+      "acute cholangitis",
+      "Charcot triad",
+      "ERCP",
+      "biliary drainage"
+    ],
+    "erradas": {
+      "A": "A colecistectomia vem depois da drenagem e da estabilização, ainda na mesma internação, e não resolve o cálculo no colédoco.",
+      "B": "A cintilografia HIDA ajuda na colecistite aguda duvidosa; aqui o diagnóstico já está feito e o problema é a obstrução.",
+      "C": "Esperar com antibiótico deixa a bile infectada represada; a mortalidade sobe sem drenagem."
+    },
+    "macete": {
+      "frase": "*Três buzinas no túnel, chama o guincho pela saída*",
+      "apoio": "Charcot são três buzinas: febre, dor no hipocôndrio direito e icterícia; Reynolds soma confusão e hipotensão. Antibiótico é o guarda de trânsito, mas quem tira o caminhão é o guincho que entra pela saída do túnel (o duodeno): CPRE com drenagem em até 24 a 48 horas, antes se piorar. A colecistectomia vem depois, com o trânsito liberado.",
+      "fala": "Já vi esse caso às 3 da manhã. Na Marginal."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na central de trânsito: engarrafamento às 3 da manhã, carrinhos buzinando e um semáforo vermelho. O soro e o antibiótico já entraram; a vinheta mostra onde está o nó, e o NBME quer saber quem desfaz, de preferência antes do seu café esfriar.",
+    "palavras_chave": [
+      "emergency department",
+      "abdominal pain",
+      "infection",
+      "next step"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#Cirurgia",
+      "#ClinicaMedica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, dor e icterícia com cálculo no colédoco: o que vem depois do antibiótico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

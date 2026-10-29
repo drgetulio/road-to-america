@@ -1,0 +1,100 @@
+{
+  "dia": 349,
+  "data": "2027-10-16",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Incidência e prevalência",
+  "conceito": "Prevalence approximates incidence times average disease duration",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-17",
+  "tom": null,
+  "gancho": "O remédio *não cura*, mas a banheira enche",
+  "gancho_apoio": "Incidência igual, duração dobrada. O Viés quer saber o que acontece com a água.",
+  "imagem": {
+    "arquivo": "dia-349.png",
+    "cena": "O Viés espia de trás de uma tabela 2x2 ao lado de uma banheira antiga com a torneira aberta, o ralo destampado e um patinho de borracha boiando.",
+    "foco": "50% 35%",
+    "alt": "O remédio não cura, mas a banheira enche"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-349-macete.png",
+    "cena": "Callback: a tampa cobre metade do ralo, a água subiu e o patinho flutua bem mais alto, enquanto a torneira mantém o mesmo jato; o Viés olha espantado pela lupa.",
+    "foco": "50% 45%",
+    "alt": "Prevalence = incidence x duration: a duração dobrou"
+  },
+  "questao": {
+    "vinheta": "A chronic, noncurable lung disease has a stable incidence of 20 new cases per 10,000 people per year, and patients live with it for an average of 5 years. A new drug doubles average survival with the disease but does not change who develops it.",
+    "pergunta": "At the new steady state, what is the expected prevalence?",
+    "alternativas": {
+      "A": {
+        "texto": "0.2%",
+        "quiz": "0.2%"
+      },
+      "B": {
+        "texto": "1%",
+        "quiz": "1%"
+      },
+      "C": {
+        "texto": "2%",
+        "quiz": "2%"
+      },
+      "D": {
+        "texto": "4%",
+        "quiz": "4%"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "*Prevalence = incidence x duration*: a duração dobrou",
+    "certa": [
+      "Em estado estável, *prevalence* é aproximadamente *incidence* vezes *average disease duration*. Antes: 20/10.000 por ano x 5 anos = 100/10.000 = 1%. Com o remédio, a duração passa para 10 anos: 20/10.000 x 10 = 200/10.000 = 2%. A incidência não muda, porque o remédio não evita casos novos."
+    ],
+    "termos": [
+      "prevalence",
+      "incidence",
+      "average disease duration",
+      "steady state"
+    ],
+    "erradas": {
+      "A": "0,2% é a incidência de um único ano (20/10.000), não o total de pessoas vivendo com a doença.",
+      "B": "1% é a prevalência antiga, antes de a sobrevida dobrar.",
+      "D": "4% seria dobrar duas vezes; a duração passou de 5 para 10 anos, só uma vez."
+    },
+    "macete": {
+      "frase": "*Torneira é incidência, ralo é saída, água é prevalência*",
+      "apoio": "A torneira despeja casos novos e o ralo leva quem sai (cura ou óbito). Prevalência é incidência vezes duração: 20 por 10.000 por ano vezes 10 anos dá 200 por 10.000, ou 2%. Remédio que prolonga a vida sem curar fecha meio ralo: a água sobe com a mesma torneira. Prevalência subir pode ser boa notícia.",
+      "fala": "Se você não randomizou, eu entrei. Na banheira, não precisa."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés na banheira: a torneira não mudou, mas o ralo ficou mais lento. Faça a conta com os números da vinheta, porque no Prometric a calculadora da tela até existe, mas some quando você mais precisa.",
+    "palavras_chave": [
+      "epidemiology",
+      "chronic disease",
+      "disease frequency",
+      "biostatistics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Bioestatistica",
+      "#Epidemiology",
+      "#Epidemiologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Incidência 20 por 10.000 ao ano e duração de 5 para 10 anos: prevalência?"
+  },
+  "reel": null,
+  "exemplo": false
+}

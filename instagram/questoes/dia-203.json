@@ -1,0 +1,93 @@
+{
+  "dia": 203,
+  "data": "2027-05-23",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Streptococcus pneumoniae (dia 106), Malária por falciparum (dia 169), Síndrome de Wiskott-Aldrich (dia 197)",
+  "conceito": "Remix: Streptococcus pneumoniae + Plasmodium falciparum + Wiskott-Aldrich syndrome",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": [
+    106,
+    169,
+    197
+  ],
+  "explicacao_em": "2027-05-24",
+  "tom": null,
+  "gancho": "Remix de Domingo: *três conhecidos do feed* e um viajante cansado no desembarque",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 106, 169 e 197) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-203.png",
+    "cena": "Desembarque do aeroporto: a Capitã Plaqueta, de colete e apito, organiza a fila de malas cheias de adesivos de viagem. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta organiza a fila de malas no desembarque do aeroporto"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-203-macete.png",
+    "cena": "Callback: dentro de uma rede de tunelzinhos em forma de cérebro, carrinhos vermelhos cobertos de bolinhas de chiclete grudam nas paredes e travam o trânsito; a Capitã apita, e numa banca ao lado há bananas em forma de crescente. Fundo limpo.",
+    "alt": "Carrinhos vermelhos com chiclete grudam nos túneis do cérebro e a Capitã apita"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old man has fever, headache, and confusion 10 days after returning from Ghana, where he took no malaria prophylaxis. He is drowsy, without neck stiffness. Hemoglobin is 9.8 g/dL and platelets 62,000/mm3. A blood smear shows ring forms in 11% of red cells and crescent-shaped gametocytes.",
+    "pergunta": "Which mechanism best explains his neurologic findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Adhesion of infected red cells to brain microvascular endothelium",
+        "quiz": "RBC cytoadherence",
+        "dia": 169
+      },
+      "B": {
+        "texto": "A polysaccharide capsule that resists opsonization in the meninges",
+        "quiz": "Capsule resisting opsonins",
+        "dia": 106
+      },
+      "C": {
+        "texto": "Bleeding from small platelets with a defective cytoskeleton",
+        "quiz": "Bleeding from tiny platelets",
+        "dia": 197
+      },
+      "D": {
+        "texto": "Reactivation of dormant hypnozoites in the liver",
+        "quiz": "Liver hypnozoites waking up"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Malária cerebral: a hemácia *gruda no vaso*",
+    "certa": [
+      "Dia 169: anéis em mais de 5% das hemácias, gametócitos em crescente (banana) e confusão depois de viagem à África subsaariana são *Plasmodium falciparum* com *cerebral malaria*. A proteína *PfEMP1* forma botões na hemácia infectada, que grudam no endotélio da microcirculação cerebral (*cytoadherence*), entopem o vaso e causam hipóxia e edema."
+    ],
+    "termos": [
+      "cerebral malaria",
+      "cytoadherence (PfEMP1)",
+      "crescent-shaped gametocytes",
+      "Plasmodium falciparum"
+    ],
+    "erradas": {
+      "B": "Dia 106: a cápsula do pneumococo explica a meningite bacteriana, com rigidez de nuca e bactéria no líquor; aqui o esfregaço já mostra o culpado no sangue.",
+      "C": "Dia 197: plaqueta pequena e disfuncional é Wiskott-Aldrich, de meninos com eczema e infecções desde o primeiro ano; a plaqueta baixa dele vem da malária.",
+      "D": "Intruso: hipnozoítos são do P. vivax e do P. ovale e causam recaídas semanas a meses depois; o falciparum não tem forma dormente no fígado e é o que causa malária cerebral."
+    },
+    "macete": {
+      "frase": "Falciparum é a hemácia com *chiclete na lataria*: gruda na parede do vaso do cérebro (*citoaderência*) e trava o trânsito. Gametócito em *banana* e muitos anéis por hemácia entregam a espécie.",
+      "apoio": "O NBME coloca a meningite como distrator de febre com confusão; quando o esfregaço já mostra o parasita e houve viagem, a resposta é malária, e a gravidade do falciparum vem da citoaderência.",
+      "fala": "Parou, colou... grudou! Banana no esfregaço é falciparum, e falciparum gruda."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com a Capitã Plaqueta. Um viajante com febre e um quadro neurológico, mais um hemograma e um esfregaço cheio de achados, tudo na vinheta. Qual mecanismo explica a parte neurológica?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Voltou de Gana confuso: qual mecanismo explica?"
+  },
+  "exemplo": false
+}

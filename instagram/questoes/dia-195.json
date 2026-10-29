@@ -1,0 +1,88 @@
+{
+  "dia": 195,
+  "data": "2027-05-15",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Pedido de exame sem indicação",
+  "conceito": "Patient demands MRI for low back pain without red flags: explore concerns and explain why it is not indicated",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-16",
+  "tom": null,
+  "gancho": "Ele quer ressonância *porque o colega do trabalho fez*. O que você responde?",
+  "gancho_apoio": "Na prova de comunicação, o paciente sempre tem um colega de trabalho que já fez o exame.",
+  "imagem": {
+    "arquivo": "dia-195.png",
+    "cena": "Dona Bússola, diante da vitrine de uma padaria, olha uma rosquinha gigante coberta de confeitos, com o ponteiro girando de leve. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola diante de uma rosquinha gigante na vitrine da padaria"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-195-macete.png",
+    "cena": "Callback: Dona Bússola puxa uma cadeira e serve um cafezinho para uma conversa; o ponteiro dela aponta firme para a xícara, e a rosquinha continua na vitrine. Fundo limpo.",
+    "alt": "Dona Bússola serve um cafezinho para a conversa e a rosquinha fica na vitrine"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has had low back pain for 10 days after moving furniture. He denies fever, weight loss, prior cancer, and bowel or bladder changes; neurologic examination is normal. He insists on an MRI because a coworker had one.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "\"I will order the MRI so you can feel reassured.\"",
+        "quiz": "I'll order it to reassure you"
+      },
+      "B": {
+        "texto": "\"What worries you most about your back pain?\"",
+        "quiz": "What worries you most?"
+      },
+      "C": {
+        "texto": "\"Your insurance will not pay for that test.\"",
+        "quiz": "Insurance won't pay"
+      },
+      "D": {
+        "texto": "\"There is nothing wrong, so it will go away.\"",
+        "quiz": "Nothing is wrong"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *preocupação*, depois a explicação",
+    "certa": [
+      "Na dor lombar aguda sem sinais de alarme (*red flags*), imagem não muda a conduta, encontra achados sem importância e pode levar a procedimentos desnecessários. Antes de explicar isso, o melhor passo é perguntar o que preocupa o paciente (*explore concerns*): o medo por trás do pedido guia a explicação e o plano de calor, atividade e analgesia."
+    ],
+    "termos": [
+      "low back pain",
+      "red flags",
+      "explore concerns",
+      "Choosing Wisely"
+    ],
+    "erradas": {
+      "A": "Pedir o exame só para tranquilizar contraria a evidência e expõe o paciente a achados incidentais e custos.",
+      "C": "Culpar o plano de saúde tira a decisão do médico e não responde ao que o paciente sente.",
+      "D": "Dizer que não há nada desvaloriza a dor e fecha a conversa; a dor é real, mesmo sem indicação de exame."
+    },
+    "macete": {
+      "frase": "Dor lombar sem bandeira vermelha: primeiro o *cafezinho da conversa* (o que mais te preocupa?), depois a explicação. A *rosquinha da ressonância* fica na vitrine: em quem não sente nada, ela já acha disco \"gasto\" com frequência.",
+      "apoio": "O NBME oferece pedir o exame para agradar, culpar o seguro ou encerrar o assunto; a resposta certa é uma pergunta aberta sobre a preocupação do paciente.",
+      "fala": "Meu norte é o paciente. E o paciente quase nunca quer a máquina: quer saber se é grave."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com a Dona Bússola, que gira com a pressão do paciente e volta para o mesmo norte. Dor lombar de dez dias, um exame normal e um pedido firme. Quatro frases possíveis: qual delas a prova quer ouvir?",
+    "palavras_chave": [
+      "low back pain",
+      "imaging request",
+      "patient communication",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lombalgia sem sinal de alarme e pedido de RM: o que dizer?"
+  },
+  "exemplo": false
+}

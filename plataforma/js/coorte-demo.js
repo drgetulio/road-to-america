@@ -56,7 +56,7 @@ export const PERFIS = [
     nbme: [], sim: [["step1", 9, 14]] },
   { slug: "hugo-ficticio", nome: "Hugo Fictício", perfil: "Simulados abaixo de 60%",
     hist: 80, p: 0.88, rev: 70, ret: 0.87, inativo: 2, cob: 0.36, leeches: 3, pres: [37, 40], prova1: 130,
-    nbme: [], sim: [["step1", 21, 8], ["step1", 11, 9], ["step1", 1, 11]] },
+    nbme: [], sim: [["step1", 21, 6], ["step1", 11, 7], ["step1", 1, 9]] },
   { slug: "iris-modelo", nome: "Íris Modelo", perfil: "Prova em 25 dias com uma só autoavaliação",
     hist: 150, p: 0.94, rev: 130, ret: 0.9, inativo: 0, cob: 0.83, leeches: 2, pres: [39, 40], prova1: 25,
     nbme: [["step1", 15, 91, 219, "standard", true, false]], sim: [["step1", 13, 15], ["step1", 5, 16]] },

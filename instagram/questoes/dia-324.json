@@ -1,0 +1,97 @@
+{
+  "dia": 324,
+  "data": "2027-09-21",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Investigação de demência",
+  "conceito": "Dementia workup: check B12 and TSH to exclude reversible causes",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": "Dia Mundial do Alzheimer (21/9): tom respeitoso.",
+  "remix_de": null,
+  "explicacao_em": "2027-09-22",
+  "tom": "acolhedor",
+  "gancho": "Dia Mundial do Alzheimer: *quais exames procuram o que tem tratamento?*",
+  "gancho_apoio": "Antes de fechar um diagnóstico, o plantão procura as causas que podem ser revertidas.",
+  "imagem": {
+    "arquivo": "dia-324.png",
+    "cena": "Mesa tranquila de consultório ao entardecer, com um relógio de parede sem números; a Dona Térmica, serena, está ao lado de um caderno de memórias aberto e de um vasinho de flores lilases; pela janela, uma estrada calma. Tom acolhedor.",
+    "foco": "50% 35%",
+    "alt": "Dia Mundial do Alzheimer: quais exames procuram o que tem tratamento?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-324-macete.png",
+    "cena": "Callback: a mesma estrada pela janela, agora com duas portas laterais abertas; a Dona Térmica segura duas chaves, uma em forma de cápsula de vitamina e outra em forma de borboleta; a estrada principal continua iluminada e as flores lilases seguem no vaso.",
+    "foco": "50% 45%",
+    "alt": "Declínio cognitivo: B12 e TSH para todos"
+  },
+  "questao": {
+    "vinheta": "A 72-year-old woman is brought by her son for 1 year of progressive forgetfulness. She repeats questions and has missed paying bills, but she dresses and bathes independently. She has no gait problems, incontinence, or hallucinations. Neurologic examination is normal. Montreal Cognitive Assessment score is 20/30.",
+    "pergunta": "In addition to brain imaging, which laboratory studies are most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Serum vitamin B12 and TSH",
+        "quiz": "B12 and TSH"
+      },
+      "B": {
+        "texto": "Serum ceruloplasmin and urine copper",
+        "quiz": "Ceruloplasmin, urine Cu"
+      },
+      "C": {
+        "texto": "CSF 14-3-3 protein",
+        "quiz": "CSF 14-3-3"
+      },
+      "D": {
+        "texto": "APOE genotyping",
+        "quiz": "APOE genotype"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Declínio cognitivo: *B12 e TSH* para todos",
+    "certa": [
+      "Na investigação de declínio cognitivo, a AAN recomenda dosar *vitamin B12* e *TSH* em todos, porque deficiência de B12 e hipotireoidismo são causas tratáveis que imitam demência. A neuroimagem (TC ou RM) completa a busca de causas estruturais, como hematoma subdural, tumor ou hidrocefalia de pressão normal. Também vale rastrear depressão, que pode aparecer como queixa de memória."
+    ],
+    "termos": [
+      "reversible causes of dementia",
+      "vitamin B12",
+      "TSH",
+      "neuroimaging"
+    ],
+    "erradas": {
+      "B": "*Ceruloplasmina* e cobre urinário investigam doença de Wilson, que começa antes dos 40 anos, com sinais hepáticos e de movimento.",
+      "C": "*Proteína 14-3-3* no líquor se pede na suspeita de Creutzfeldt-Jakob, com declínio rápido em semanas e mioclonia.",
+      "D": "*Genotipagem de APOE* não faz o diagnóstico; só entra na conversa de risco antes de terapia antiamiloide."
+    },
+    "macete": {
+      "frase": "*Antes de fechar o diagnóstico, abra as portas reversíveis*: B12 e TSH",
+      "apoio": "Na investigação de declínio cognitivo, a diretriz pede B12 e TSH, além da imagem do crânio. São causas que têm tratamento e não podem passar sem ser conferidas. Ceruloplasmina, proteína 14-3-3 e APOE ficam para quadros com outras pistas.",
+      "fala": "Primeiro, o que tem tratamento."
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial do Alzheimer. Uma questão com calma sobre o começo da investigação: antes de dar nome ao esquecimento, o plantão procura o que pode ser revertido.",
+    "palavras_chave": [
+      "memory concerns",
+      "older adult",
+      "primary care",
+      "laboratory workup"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Neurologia",
+      "#Neurology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Esquecimento há 1 ano, MoCA 20 e exame normal: quais exames de sangue?"
+  },
+  "reel": null,
+  "exemplo": false
+}

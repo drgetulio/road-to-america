@@ -1,0 +1,95 @@
+{
+  "dia": 64,
+  "data": "2027-01-04",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Mycobacterium tuberculosis",
+  "conceito": "Mycobacterium tuberculosis: mycolic acid makes it acid-fast, cord factor drives virulence",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-05",
+  "gancho": "Segunda-feira de microbiologia: o Macrô abre o *dossiê* de um suspeito antigo",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de comanda no bolso, está numa sala de arquivo de bairro abrindo uma pasta grossa de dossiê, com uma lupa na mão e uma luminária acesa sobre a mesa.",
+    "foco": "50% 35%",
+    "alt": "Macrô, numa sala de arquivo, abre uma pasta grossa de dossiê com uma lupa na mão, sob uma luminária acesa.",
+    "arquivo": "dia-064.png"
+  },
+  "imagem_macete": {
+    "cena": "Revelação do dossiê: a foto mostra bacilos de capa de chuva de cera grossa, com a tinta vermelha presa nela, que saem de uma máquina de lavar ainda vermelhinhos, enfileirados num cordão sinuoso como bloco de Carnaval; o Macrô segura a fila com o guardanapo xadrez.",
+    "alt": "Bacilos de capa de cera saem da máquina em cordão, como bloco de Carnaval, e o Macrô segura a fila com o guardanapo.",
+    "arquivo": "dia-064-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man has 2 months of productive cough, night sweats, and weight loss. A sputum smear stained with carbolfuchsin shows red rods that remain stained after an acid-alcohol wash.",
+    "pergunta": "Which bacterial component is chiefly responsible for this staining property?",
+    "alternativas": {
+      "A": {
+        "texto": "Teichoic acid",
+        "quiz": "Teichoic acid"
+      },
+      "B": {
+        "texto": "Mycolic acid",
+        "quiz": "Mycolic acid"
+      },
+      "C": {
+        "texto": "Lipopolysaccharide",
+        "quiz": "LPS"
+      },
+      "D": {
+        "texto": "Polysaccharide capsule",
+        "quiz": "Capsule"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A capa de cera é o *ácido micólico*",
+    "certa": [
+      "A parede do *Mycobacterium tuberculosis* tem uma camada grossa de *mycolic acid*, lipídio de cadeia longa que funciona como cera: a carbolfucsina entra com calor (Ziehl-Neelsen) e o álcool-ácido não consegue tirar. Daí o nome *acid-fast*. O mesmo ácido micólico forma o *cord factor* (trehalose dimycolate), que faz os bacilos crescerem em cordões serpentiformes, ativa macrófagos e ajuda a montar o granuloma."
+    ],
+    "termos": [
+      "Mycobacterium tuberculosis",
+      "mycolic acid",
+      "acid-fast",
+      "cord factor"
+    ],
+    "erradas": {
+      "A": "Ácido teicoico é das Gram-positivas e não segura o corante depois do álcool-ácido.",
+      "C": "LPS é a endotoxina da membrana externa das Gram-negativas, e as micobactérias não têm LPS.",
+      "D": "Cápsula de polissacarídeo protege contra fagocitose (pneumococo, por exemplo), mas não explica a álcool-ácido resistência."
+    },
+    "macete": {
+      "frase": "Ácido micólico é a *meia vermelha* da máquina",
+      "apoio": "Pegadinha de prova: O NBME pergunta o mesmo ácido de dois jeitos: a coloração (acid-fast) e a virulência em cordões (cord factor), que inibe a migração de neutrófilos e ativa macrófagos.",
+      "fala": "Lavei com álcool-ácido. Continua vermelho. Igual minha camisa depois do plantão."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: quatro componentes da parede bacteriana na mesa. O Macrô quer saber qual peça explica o que a lâmina mostra. Laboratório de micro, onde todo estudante já confundiu a ordem dos corantes pelo menos uma vez.",
+    "palavras_chave": [
+      "respiratory infection",
+      "microbiology",
+      "bacterial cell wall",
+      "laboratory stains"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#BichoDeSegunda",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bacilo segue vermelho após álcool-ácido: qual componente?"
+  },
+  "exemplo": false
+}

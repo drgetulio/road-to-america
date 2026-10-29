@@ -1,0 +1,102 @@
+{
+  "dia": 322,
+  "data": "2027-09-19",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Cólica renal (dia 240), Pericardite aguda (dia 289), Síndrome de lise tumoral (dia 317)",
+  "conceito": "Remix: Suspected kidney stone + Acute pericarditis + Tumor lysis prevention",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    240,
+    289,
+    317
+  ],
+  "explicacao_em": "2027-09-20",
+  "tom": null,
+  "gancho": "Domingo de revisão e *o coração entrou na fila da repartição*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso.",
+  "imagem": {
+    "arquivo": "dia-322.png",
+    "cena": "Seu Néfron, de gravata, confere uma prancheta numa sala de espera de repartição; ao lado, um coração de desenho animado espera numa cadeira, com cara de incômodo; num canto, um vinil pequeno encostado.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron e um coração esperando na sala da repartição"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-322-macete.png",
+    "cena": "Callback: atrás do Seu Néfron, os formulários sem carimbo viraram uma montanha; ele liga uma máquina grande e simpática, como uma lavadora de filtro, que limpa a pilha toda; o coração tira o suéter de lã que arranhava; na porta, um comprimidinho anti-inflamatório é barrado por um cone vermelho.",
+    "foco": "50% 45%",
+    "alt": "Pericardite urêmica na lise tumoral: quem trata é a diálise"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man with Burkitt lymphoma began chemotherapy 4 days ago. He now has sharp chest pain that improves when he leans forward, and a pericardial friction rub is heard. Creatinine is 6.9 mg/dL, BUN 118 mg/dL, potassium 6.1 mEq/L, and uric acid 17 mg/dL. Echocardiography shows a small effusion without tamponade.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Ibuprofen plus colchicine",
+        "quiz": "NSAID + colchicine",
+        "dia": 289
+      },
+      "B": {
+        "texto": "Rasburicase and IV fluids only",
+        "quiz": "Rasburicase + fluids only",
+        "dia": 317
+      },
+      "C": {
+        "texto": "Pericardiocentesis",
+        "quiz": "Pericardiocentesis"
+      },
+      "D": {
+        "texto": "Urgent hemodialysis",
+        "quiz": "Urgent hemodialysis"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Pericardite urêmica na lise tumoral: *quem trata é a diálise*",
+    "certa": [
+      "A *tumor lysis syndrome* (dia 317) evoluiu para lesão renal grave, com ureia de 118, potássio de 6,1 e ácido úrico de 17, e a dor que melhora inclinado com atrito é *uremic pericarditis*. Pericardite urêmica é indicação absoluta de *hemodialysis*, que também corrige o potássio e o ácido úrico. Sem tamponamento, não há por que puncionar."
+    ],
+    "termos": [
+      "uremic pericarditis",
+      "tumor lysis syndrome",
+      "hemodialysis",
+      "AEIOU indications"
+    ],
+    "erradas": {
+      "A": "*AINE com colchicina* trata a pericardite viral do dia 289; com creatinina de 6,9, o AINE piora o rim e não resolve a causa urêmica.",
+      "B": "*Rasburicase e soro* (dia 317) previnem e ajudam no começo, mas com pericardite urêmica e ureia de 118 a indicação de diálise já está posta.",
+      "C": "A *pericardiocentese* é para tamponamento; o derrame é pequeno e sem repercussão."
+    },
+    "macete": {
+      "frase": "*Pericardite com ureia nas alturas não é caso de AINE*: é caso de diálise",
+      "apoio": "Pericardite urêmica é indicação absoluta de diálise, junto com hipercalemia refratária, acidose grave, sobrecarga de volume e encefalopatia (o AEIOU). AINE com creatinina 6,9 piora o rim. Bônus do dia 240: cristal de ácido úrico vira cálculo radiotransparente, que some no raio X e aparece na TC sem contraste.",
+      "fala": "Ureia 118? Sai do carimbo e vai para a máquina."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: cólica renal (dia 240), pericardite aguda (dia 289) e lise tumoral (dia 317) voltaram, e um intruso entrou na repartição. Três condutas que você já viu aqui; a vinheta mostra por que nenhuma delas basta hoje.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Quimio há 4 dias, atrito pericárdico e ureia 118: o que resolve?"
+  },
+  "reel": null,
+  "exemplo": false
+}

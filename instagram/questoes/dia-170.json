@@ -1,0 +1,88 @@
+{
+  "dia": 170,
+  "data": "2027-04-20",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Crise adrenal",
+  "conceito": "Adrenal crisis: give IV hydrocortisone immediately, do not wait for tests",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-21",
+  "tom": null,
+  "gancho": "Plantão de Terça: *a garrafa térmica esvaziou* e a pressão foi junto",
+  "gancho_apoio": "Uma doença crônica conhecida, uma virose comum e um soro que já está correndo.",
+  "imagem": {
+    "arquivo": "dia-170.png",
+    "cena": "Na copa do plantão, Dona Térmica, de prancheta, observa duas glandulinhas em forma de chapéu triangular, murchas em cima de dois feijões, como plantas sem água. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica observa duas glandulinhas murchas em cima de dois feijões, como plantas sem água."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-170-macete.png",
+    "cena": "Callback: uma bolsa de soro em forma de garrafa térmica pinga nas duas glandulinhas, que se levantam como flores regadas, e Dona Térmica sorri. Fundo limpo.",
+    "alt": "Uma bolsa de soro em forma de garrafa térmica pinga nas glandulinhas, que se levantam como flores regadas."
+  },
+  "questao": {
+    "vinheta": "A 38-year-old woman with primary adrenal insufficiency takes hydrocortisone and fludrocortisone. After 2 days of vomiting from gastroenteritis, she is lethargic. She is hypotensive (78/44 mm Hg) and tachycardic (124/min). Sodium is 128 mEq/L, potassium 5.7 mEq/L, and glucose 61 mg/dL. Isotonic saline is running.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Cosyntropin stimulation test first",
+        "quiz": "Cosyntropin test first"
+      },
+      "B": {
+        "texto": "Intravenous hydrocortisone 100 mg now",
+        "quiz": "IV hydrocortisone now"
+      },
+      "C": {
+        "texto": "Increase the oral fludrocortisone dose",
+        "quiz": "More fludrocortisone"
+      },
+      "D": {
+        "texto": "Norepinephrine infusion alone",
+        "quiz": "Norepinephrine alone"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Crise adrenal: o *cortisol* vem antes da papelada",
+    "certa": [
+      "Insuficiência adrenal conhecida, vômitos (ela não absorveu o remédio), choque, hiponatremia, hipercalemia e hipoglicemia é *adrenal crisis*. A conduta é *IV hydrocortisone* 100 mg na hora, seguida de 200 mg nas 24 horas, com soro fisiológico e glicose. Em dose alta, a hidrocortisona também tem efeito mineralocorticoide."
+    ],
+    "termos": [
+      "adrenal crisis",
+      "IV hydrocortisone",
+      "primary adrenal insufficiency",
+      "hyperkalemia"
+    ],
+    "erradas": {
+      "A": "Teste de estímulo não muda a conduta de quem já tem o diagnóstico e só atrasa o tratamento.",
+      "C": "Fludrocortisona oral não resolve choque, ela está vomitando e a hidrocortisona em dose alta já cobre o mineralocorticoide.",
+      "D": "Vasopressor sem corticoide funciona mal na crise adrenal, porque sem cortisol os vasos respondem pouco às catecolaminas."
+    },
+    "macete": {
+      "frase": "Adrenal sem cortisol é *plantão sem café*: tudo cai. O café (hidrocortisona IV) vem antes da papelada",
+      "apoio": "Hidrocortisona 100 mg IV na hora, depois 200 mg em 24 horas, com soro e glicose. Em dose alta, ela cobre o mineralocorticoide.",
+      "fala": "Adrenal sem cortisol é plantão sem café: tudo cai. Café primeiro, papelada depois."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça. Uma paciente com uma doença endócrina conhecida, dois dias de gastroenterite e sinais vitais na vinheta que pedem ação. O soro já está correndo. Qual é o próximo passo?",
+    "palavras_chave": [
+      "primary adrenal insufficiency",
+      "gastroenteritis",
+      "hypotension",
+      "hypoglycemia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Addison com vômitos, PA 78/44, Na 128 e K 5,7: qual o próximo passo?"
+  },
+  "exemplo": false
+}

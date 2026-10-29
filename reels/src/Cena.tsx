@@ -16,6 +16,8 @@ import { MapaEUA, RotaBrasilEUA } from "./componentes/Mapas";
 import { NumeroGigante } from "./componentes/NumeroGigante";
 import { PlacaExit } from "./componentes/PlacaExit";
 import { TelaApp } from "./componentes/TelaApp";
+import { Alternativas } from "./componentes/Alternativas";
+import { Personagem } from "./componentes/Personagem";
 
 const Conteudo: React.FC<{ s: Segmento }> = ({ s }) => {
   const texto = s.itens[0].cena.texto_tela;
@@ -43,6 +45,12 @@ const Conteudo: React.FC<{ s: Segmento }> = ({ s }) => {
       return <RotaBrasilEUA itens={s.itens} duracao={duracao} />;
     case "mapa_eua":
       return <MapaEUA texto={texto} duracao={duracao} />;
+    case "alternativas": {
+      const c = s.itens[0].cena;
+      return <Alternativas texto={texto} duracao={duracao} opcoes={c.opcoes ?? ["", "", "", ""]} correta={c.correta} percentuais={c.percentuais} />;
+    }
+    case "personagem":
+      return <Personagem texto={texto} duracao={duracao} nome={s.itens[0].cena.personagem ?? ""} imagem={s.itens[0].cena.imagem} />;
     case "comparativo":
       return s.troca ? <Comparativo texto={texto} duracao={duracao} troca={s.troca} /> : <LegendaCinetica texto={texto} duracao={duracao} />;
     case "comente":

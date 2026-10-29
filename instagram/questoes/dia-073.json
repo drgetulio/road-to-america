@@ -1,0 +1,96 @@
+{
+  "dia": 73,
+  "data": "2027-01-13",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Distrofia muscular de Duchenne",
+  "conceito": "Duchenne muscular dystrophy: X-linked frameshift deletion in dystrophin, Gowers sign",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-14",
+  "gancho": "Seu Allen abriu o *manual de um gene* e achou um erro. Que tipo?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Allen, a chavinha do manual de montagem, encara um armário de caixa meio montado, ainda de pé por enquanto, com o manual aberto no chão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen encara um armário meio montado, com o manual aberto no chão.",
+    "arquivo": "dia-073.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do armário: o furo fora do lugar estava na primeira tábua. Todas as peças seguintes entraram tortas, uma casa para o lado, e a corda que prendia o armário na parede nem chegou a ser presa. Ao lado, um segundo armário, montado com o manual sem a página, saiu menor, mas ficou de pé.",
+    "alt": "O armário com o furo deslocado sai todo torto e sem a corda na parede; ao lado, o armário montado sem uma página fica menor, mas de pé.",
+    "arquivo": "dia-073-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has frequent falls and difficulty climbing stairs. To stand up from the floor, he pushes on his thighs with his hands. His calves are enlarged, and serum creatine kinase is markedly elevated. A maternal uncle had similar weakness.",
+    "pergunta": "Which mutation most likely causes this disorder?",
+    "alternativas": {
+      "A": {
+        "texto": "In-frame deletion within the dystrophin gene",
+        "quiz": "In-frame DMD deletion"
+      },
+      "B": {
+        "texto": "CTG repeat expansion in DMPK",
+        "quiz": "CTG repeat in DMPK"
+      },
+      "C": {
+        "texto": "Homozygous deletion of SMN1",
+        "quiz": "SMN1 deletion"
+      },
+      "D": {
+        "texto": "Frameshift deletion in the dystrophin gene",
+        "quiz": "Frameshift in DMD"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Duchenne é *frameshift* na distrofina",
+    "certa": [
+      "Fraqueza proximal com *Gowers sign*, pseudo-hipertrofia de panturrilha, CK muito alta e tio materno afetado apontam para *Duchenne muscular dystrophy*, ligada ao X. A maioria dos casos é uma deleção que tira um número de bases não múltiplo de três: a *frameshift deletion* troca a leitura de todos os códons seguintes, cria um códon de parada precoce e a *dystrophin* praticamente some. Sem ela, a membrana da fibra muscular não aguenta a contração e se rompe."
+    ],
+    "termos": [
+      "Duchenne muscular dystrophy",
+      "dystrophin",
+      "frameshift deletion",
+      "Gowers sign"
+    ],
+    "erradas": {
+      "A": "A deleção em fase (in-frame) mantém a leitura e produz uma distrofina menor e parcialmente funcional: é a distrofia de Becker, mais leve e de início mais tardio.",
+      "B": "A expansão CTG no DMPK é a distrofia miotônica, com miotonia, catarata e fraqueza distal, de herança autossômica dominante.",
+      "C": "A deleção do SMN1 é a atrofia muscular espinhal, doença do neurônio motor com hipotonia, fasciculações e CK quase normal."
+    },
+    "macete": {
+      "frase": "Duchenne é *furo deslocado*, Becker é *página a menos*",
+      "apoio": "Pegadinha de prova: O NBME não pergunta o tamanho da deleção, pergunta se ela mantém a fase de leitura: frameshift é Duchenne, in-frame é Becker.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui faltou ler de três em três."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Seu Allen: um gene enorme, um menino e quatro tipos de erro de montagem. A idade e a força da vinheta decidem qual. Genética é a matéria que mais parece manual de móvel às 2 da manhã.",
+    "palavras_chave": [
+      "muscle weakness",
+      "pediatric neurology",
+      "genetics",
+      "family history"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics",
+      "#QuartaDoPorque",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sinal de Gowers, panturrilha grande e CK alta: qual mutação?"
+  },
+  "exemplo": false
+}

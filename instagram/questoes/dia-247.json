@@ -1,0 +1,100 @@
+{
+  "dia": 247,
+  "data": "2027-07-06",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Rastreamento de Cushing",
+  "conceito": "Cushing screening: late-night salivary cortisol, 24-hour urine cortisol or 1 mg dexamethasone suppression",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-07",
+  "tom": null,
+  "gancho": "Plantão de Terça: *a Dona Térmica virou delegada* e quer saber qual prova colher primeiro",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-247.png",
+    "cena": "Na copa do plantão, Dona Térmica, de delegada, olha um quadro de cortiça com três cartões presos por um barbante vermelho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica, de delegada, estuda um quadro de cortiça com três cartões"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-247-macete.png",
+    "cena": "Callback: três da manhã, Dona Térmica, de lanterna, flagra uma molécula redonda de hormônio acordada na varanda, pulando corda, e colhe a prova num tubinho de saliva. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "Dona Térmica flagra o hormônio acordado às 3 da manhã e colhe a saliva"
+  },
+  "questao": {
+    "vinheta": "Over 12 months, a 38-year-old woman has developed easy bruising, proximal muscle weakness, and new hypertension. She uses no glucocorticoids or other drugs. Examination shows wide violaceous abdominal striae, facial plethora, and thin skin. Fasting glucose is 132 mg/dL.",
+    "pergunta": "Which is the most appropriate initial test?",
+    "alternativas": {
+      "A": {
+        "texto": "Morning plasma ACTH level",
+        "quiz": "Morning plasma ACTH level"
+      },
+      "B": {
+        "texto": "MRI of the pituitary gland",
+        "quiz": "Pituitary MRI"
+      },
+      "C": {
+        "texto": "Random morning serum cortisol",
+        "quiz": "Random AM serum cortisol"
+      },
+      "D": {
+        "texto": "Late-night salivary cortisol",
+        "quiz": "Night salivary cortisol"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Primeiro provar o *hipercortisolismo*",
+    "certa": [
+      "Antes de pedir ACTH ou imagem, é preciso provar que existe hipercortisolismo. Os testes de rastreamento aceitos são o *late-night salivary cortisol* (o cortisol deveria estar no ponto mais baixo perto da meia-noite), o *24-hour urinary free cortisol* e o *1 mg overnight dexamethasone suppression test*; dois alterados confirmam. Só depois o ACTH separa a causa dependente da independente de ACTH."
+    ],
+    "termos": [
+      "late-night salivary cortisol",
+      "24-hour urinary free cortisol",
+      "dexamethasone suppression test",
+      "ACTH"
+    ],
+    "erradas": {
+      "A": "O ACTH vem depois de confirmar o hipercortisolismo, para separar causa hipofisária ou ectópica de causa adrenal.",
+      "B": "Ressonância antes da bioquímica encontra incidentalomas de hipófise em cerca de 10% das pessoas e confunde mais do que ajuda.",
+      "C": "O cortisol aleatório da manhã varia muito e pode ser normal no Cushing, porque o que se perde é a queda noturna."
+    },
+    "macete": {
+      "frase": "Cushing é o hormônio que *não dorme*: flagre ele *à noite*",
+      "apoio": "Cortisol normal cai de madrugada; o do Cushing fica acordado como quem estuda para o Step depois do plantão. Primeiro prova o hipercortisolismo (saliva à noite, urina de 24 horas ou supressão com 1 mg de dexametasona) e só depois procura a origem com ACTH e imagem.",
+      "fala": "Já vi esse caso às 3 da manhã. Cortisol aleatório para Cushing é como simulado sem cronômetro: dá um número, e o número não diz nada."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na endocrinologia, com a Dona Térmica. Um ano de mudanças no corpo, descritas na vinheta, e nenhum remédio que explique. Qual exame abre a investigação?",
+    "palavras_chave": [
+      "endocrine evaluation",
+      "screening test",
+      "hypertension",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Endocrinologia",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Suspeita de Cushing sem uso de corticoide: qual é o primeiro exame?"
+  },
+  "reel": null,
+  "exemplo": false
+}

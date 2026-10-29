@@ -1,0 +1,104 @@
+{
+  "dia": 294,
+  "data": "2027-08-22",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Arterite de células gigantes (dia 219), Neutropenia febril (dia 261), Pericardite aguda (dia 289)",
+  "conceito": "Remix: Giant cell arteritis + Febrile neutropenia + Acute pericarditis",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": [
+    219,
+    261,
+    289
+  ],
+  "explicacao_em": "2027-08-23",
+  "tom": null,
+  "gancho": "Três da manhã na copa e *o paciente do leito 4 reclamando de novo*",
+  "gancho_apoio": "Revisão de domingo com três conceitos que já passaram pelo feed e um intruso. Qual remédio sai agora?",
+  "imagem": {
+    "arquivo": "dia-294.png",
+    "cena": "Três da manhã na copa do plantão: Dona Térmica, a garrafa térmica, ao lado de quatro bandejas tampadas; num banquinho, um coração de desenho animado com um curativo redondo no pulso faz careta. Num canto, um vinil pequeno serve de bandeja do café, e o relógio redondo sem números marca 3 horas.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica confere quatro bandejas tampadas às 3 da manhã"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-294-macete.png",
+    "cena": "Callback: Dona Térmica destampa uma das quatro bandejas e serve ao coração um comprimido grande de aspirina; nas outras bandejas, um anti-inflamatório laranja, um frasco de antibiótico e um comprimido de corticoide ficam barrados por um cone vermelho, e no peito do coração aparece uma parede de tijolos ainda com o reboco molhado. O vinil serve de bandeja do café.",
+    "foco": "50% 45%",
+    "alt": "Pericardite logo depois do infarto: aspirina, e só ela"
+  },
+  "questao": {
+    "vinheta": "Three days after primary PCI for an anterior ST-elevation myocardial infarction, a 64-year-old man has sharp chest pain that worsens when he lies flat and eases when he sits forward. Temperature is 37.9°C. A friction rub is heard. Troponin is falling, neutrophils are 7,400/mm3, and echocardiography shows a trace effusion.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Ibuprofen plus colchicine",
+        "quiz": "Ibuprofen + colchicine",
+        "dia": 289
+      },
+      "B": {
+        "texto": "Intravenous cefepime",
+        "quiz": "IV cefepime",
+        "dia": 261
+      },
+      "C": {
+        "texto": "High-dose prednisone",
+        "quiz": "High-dose prednisone",
+        "dia": 219
+      },
+      "D": {
+        "texto": "High-dose aspirin",
+        "quiz": "High-dose aspirin"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Pericardite logo depois do infarto: *aspirina, e só ela*",
+    "certa": [
+      "Dor pleurítica que melhora inclinado para a frente, atrito e derrame mínimo três dias depois de um infarto com supra são *peri-infarction pericarditis*, a inflamação do pericárdio por cima da área necrosada. O tratamento é *high-dose aspirin*. Ibuprofeno e outros AINE, assim como o corticoide, atrapalham a cicatrização da parede infartada e aumentam o risco de *ventricular free wall rupture*, por isso ficam de fora nessa fase. É o intruso do domingo."
+    ],
+    "termos": [
+      "peri-infarction pericarditis",
+      "high-dose aspirin",
+      "avoid NSAIDs and steroids after MI",
+      "free wall rupture"
+    ],
+    "erradas": {
+      "A": "Ibuprofeno com colchicina trata a pericardite viral do dia 289, mas logo depois do infarto o ibuprofeno atrapalha a cicatrização e aumenta o risco de ruptura.",
+      "B": "Cefepime é a conduta da neutropenia febril (dia 261); aqui há febrícula de pericardite e neutrófilos normais.",
+      "C": "Prednisona em dose alta é a conduta da arterite de células gigantes (dia 219); depois do infarto, o corticoide afina a cicatriz e aumenta o risco de ruptura."
+    },
+    "macete": {
+      "frase": "*Pericardite com infarto fresco: só a aspirina entra no quarto*",
+      "apoio": "A parede infartada ainda está cicatrizando. AINE comum e corticoide amolecem a obra e aumentam o risco de ruptura, então a aspirina em dose alta trabalha sozinha. Na síndrome de Dressler, semanas depois, a aspirina também é a preferida.",
+      "fala": "Já vi esse caso às 3 da manhã. O ibuprofeno quis entrar e eu barrei na porta."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão: arterite de células gigantes (dia 219), neutropenia febril (dia 261) e pericardite aguda (dia 289) voltaram, e um intruso entrou no carrinho de bandejas. Três condutas que você já acertou aqui, agora no paciente errado.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Reumatologia",
+      "#Rheumatology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pericardite três dias depois do infarto: qual remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

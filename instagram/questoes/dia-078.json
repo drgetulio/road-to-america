@@ -1,0 +1,96 @@
+{
+  "dia": 78,
+  "data": "2027-01-18",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Doença do soro",
+  "conceito": "Serum sickness: type III immune complexes 1 to 2 weeks after exposure, low complement",
+  "personagem": "Seu Néfron",
+  "anfitriao": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-19",
+  "gancho": "Picada de cobra resolvida, e o Seu Néfron recebeu um *envelope*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, abre um envelope em branco na repartição com cara de surpresa. Ao longe, pela janela, uma cobra de desenho descansa tranquila na grama.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron abre um envelope em branco com cara de surpresa; pela janela, uma cobra de desenho descansa na grama.",
+    "arquivo": "dia-078.png"
+  },
+  "imagem_macete": {
+    "cena": "Revelação do envelope: é a fatura, com dez folhas do calendário caídas na mesa. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim, e o Seu Néfron paga os juros com moedinhas douradas.",
+    "alt": "Dez folhas do calendário caem; bolinhos de anticorpo com pedacinhos de cavalo entopem canos, e o Macrô paga os juros com moedas douradas.",
+    "arquivo": "dia-078-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man develops fever, an urticarial rash, polyarthralgia, and generalized lymphadenopathy 10 days after receiving equine-derived antivenom for a snakebite. Urinalysis shows mild proteinuria. Serum C3 and C4 levels are low.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Anaphylaxis",
+        "quiz": "Anaphylaxis"
+      },
+      "B": {
+        "texto": "Arthus reaction",
+        "quiz": "Arthus reaction"
+      },
+      "C": {
+        "texto": "DRESS syndrome",
+        "quiz": "DRESS"
+      },
+      "D": {
+        "texto": "Serum sickness",
+        "quiz": "Serum sickness"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Conta que chega depois: *doença do soro*",
+    "certa": [
+      "Febre, urticária, artralgia, linfadenopatia e proteinúria 1 a 2 semanas depois de uma proteína estranha (aqui, o soro de cavalo) é *serum sickness*, a *type III hypersensitivity* sistêmica. O tempo é o que o corpo leva para produzir anticorpos contra a proteína, que ainda circula: formam-se *immune complexes* que se depositam em vasos, articulações e glomérulos e consomem complemento, por isso C3 e C4 baixos."
+    ],
+    "termos": [
+      "serum sickness",
+      "type III hypersensitivity",
+      "immune complexes",
+      "hypocomplementemia"
+    ],
+    "erradas": {
+      "A": "A anafilaxia é tipo I, começa em minutos e não consome complemento.",
+      "B": "A reação de Arthus também é tipo III, mas é local, no ponto da injeção, com edema e necrose da pele.",
+      "C": "A DRESS aparece 2 a 8 semanas depois de remédios como anticonvulsivantes e alopurinol, com eosinofilia, edema facial e hepatite."
+    },
+    "macete": {
+      "frase": "Doença do soro é *fatura do cartão*: chega em 1 a 2 semanas",
+      "apoio": "Pegadinha de prova: O NBME diferencia pelo relógio e pelo lugar: minutos é tipo I; 1 a 2 semanas, sistêmico e com complemento baixo é doença do soro; local e em horas, no ponto da injeção, é Arthus.",
+      "fala": "Comi o soro hoje. A fatura veio em dez dias, com juros de C3 e C4."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com o Seu Néfron no lugar do Macrô: uma picada de cobra tratada e um envelope na mesa. Quatro reações a remédio, e a vinheta diz qual chegou.",
+    "palavras_chave": [
+      "snakebite",
+      "drug reaction",
+      "immunology",
+      "rash"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#BichoDeSegunda",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre, artralgia e C3 baixo 10 dias após antiveneno: o que é?"
+  },
+  "exemplo": false
+}

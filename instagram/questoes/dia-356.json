@@ -1,0 +1,101 @@
+{
+  "dia": 356,
+  "data": "2027-10-23",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Conflito de interesses",
+  "conceito": "Industry gifts and conflicts of interest: disclose and decline gifts that can sway prescribing",
+  "personagem": null,
+  "anfitriao": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-24",
+  "tom": null,
+  "gancho": "Praia de graça no fim de semana? *O Viés já passou protetor*",
+  "gancho_apoio": "Um convite com resort, palestra de uma hora e acompanhante incluído.",
+  "imagem": {
+    "arquivo": "dia-356.png",
+    "cena": "O Viés de óculos escuros, com guarda-sol, boia e mala de viagem, espia de trás de uma tabela 2x2; ao lado, uma caixa de presente com laço vermelho em cima de um bloco de receitas em branco.",
+    "foco": "50% 35%",
+    "alt": "Praia de graça no fim de semana? O Viés já passou protetor"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-356-macete.png",
+    "cena": "Callback: a balança desenhada como placa de trânsito tem num prato uma caneta e um livro-texto e, no outro, a mala com toalha de praia barrada por um cone vermelho; o Viés murcha, ainda de boia, com a mala fechada.",
+    "foco": "50% 45%",
+    "alt": "Presente de valor alto da indústria: decline"
+  },
+  "questao": {
+    "vinheta": "A pharmaceutical sales representative invites a family physician and her spouse to an all-expenses-paid weekend at a beach resort. The program includes a 1-hour talk about the company's new anticoagulant, and the rest of the weekend is free time. She says the trip would not change how she prescribes.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "Accept, since it will not change her prescribing",
+        "quiz": "Accept; won't change Rx"
+      },
+      "B": {
+        "texto": "Accept if she discloses the trip to her patients",
+        "quiz": "Accept and disclose"
+      },
+      "C": {
+        "texto": "Decline the invitation",
+        "quiz": "Decline the invitation"
+      },
+      "D": {
+        "texto": "Accept if her spouse pays for his own travel",
+        "quiz": "Accept if spouse pays"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Presente de valor alto da indústria: *decline*",
+    "certa": [
+      "Viagem, hospedagem e lazer pagos pela indústria são um presente pessoal de valor alto e criam *conflict of interest*. O Código de Ética da AMA e o código da PhRMA aceitam apenas itens de valor modesto que beneficiam o paciente ou a formação (um livro-texto, por exemplo); viagem de lazer não entra. O correto é *decline the gift*, mesmo que ela se sinta imune à influência."
+    ],
+    "termos": [
+      "conflict of interest",
+      "industry gifts",
+      "decline the gift",
+      "disclosure"
+    ],
+    "erradas": {
+      "A": "Estudos mostram que presentes mudam a prescrição mesmo quando o médico acredita que não; a intenção não torna o presente aceitável.",
+      "B": "Revelar o conflito ajuda em outras situações, mas não legitima um presente pessoal de alto valor.",
+      "D": "O problema é o presente para a médica; quem paga a passagem do cônjuge não muda isso."
+    },
+    "macete": {
+      "frase": "*Teste da padaria*: cabe no balcão, talvez; precisa de mala, recuse",
+      "apoio": "Se o brinde cabe no balcão da padaria e serve ao paciente ou ao estudo, pode ser aceitável. Se precisa de mala de viagem, não. Uma hora de palestra num fim de semana de praia: a palestra é a desculpa, a praia é o recado. Presente cria dívida, e o Viés adora uma dívida.",
+      "fala": "Se pagaram a viagem, eu fui junto."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés à beira-mar: o fantasminha já passou protetor e arrumou a mala, e a médica jura que nada vai mudar na receita dela. Quatro respostas; no NBME de ética, a resposta que deixa todo mundo feliz no grupo da turma raramente é a certa.",
+    "palavras_chave": [
+      "professionalism",
+      "medical ethics",
+      "sales representative",
+      "travel"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#ConflitoDeInteresse",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fim de semana em resort pago, com palestra de 1 hora: qual a resposta?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,97 @@
+{
+  "dia": 275,
+  "data": "2027-08-03",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Encefalopatia hepática",
+  "conceito": "Hepatic encephalopathy: lactulose first, add rifaximin",
+  "personagem": null,
+  "anfitriao": "Dona Térmica",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-04",
+  "tom": null,
+  "gancho": "Três da manhã no viaduto: *Dona Térmica e um fígado cansado dividem o café*",
+  "gancho_apoio": "Plantão de Terça com um fígado cansado no viaduto e quatro remédios na prancheta.",
+  "imagem": {
+    "arquivo": "dia-275.png",
+    "cena": "Três da manhã no alto de um viaduto de cidade grande: Dona Térmica, a garrafa térmica de café, serve café para um fígado cansado e cheio de nós sentado ao lado dela, enquanto as luzes da cidade piscam lá embaixo. Num poste, um relógio redondo sem números marca 3 horas.",
+    "foco": "50% 35%",
+    "alt": "Dona Térmica serve café para um fígado cansado no viaduto"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-275-macete.png",
+    "cena": "Callback: lá embaixo do viaduto, carrinhos amarelos de fumaça seguem para uma cidade em forma de cérebro; um pedágio em forma de limão transforma cada carrinho num caminhão quadrado grande demais para o túnel do cérebro, os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo. No viaduto, Dona Térmica e o fígado brindam com café.",
+    "foco": "50% 45%",
+    "alt": "Lactulose: ácido no cólon, amônia presa"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old man with alcohol-associated cirrhosis is brought by his wife for 2 days of confusion and daytime sleepiness. He has asterixis. He is afebrile, hemoglobin is stable, stool is guaiac negative, and ascitic fluid has 90 neutrophils/µL. Glucose and electrolytes are normal.",
+    "pergunta": "Which is the most appropriate initial pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Rifaximin alone",
+        "quiz": "Rifaximin alone"
+      },
+      "B": {
+        "texto": "Octreotide",
+        "quiz": "Octreotide"
+      },
+      "C": {
+        "texto": "Neomycin",
+        "quiz": "Neomycin"
+      },
+      "D": {
+        "texto": "Lactulose",
+        "quiz": "Lactulose"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Lactulose: *ácido no cólon*, amônia presa",
+    "certa": [
+      "É *hepatic encephalopathy* sem gatilho de sangramento ou de infecção (neutrófilos abaixo de 250/µL afastam peritonite bacteriana espontânea). A *lactulose* é a primeira escolha: as bactérias do cólon a fermentam, o meio fica ácido e a amônia (NH3) vira amônio (NH4+), que não volta para o sangue, enquanto o efeito laxativo acelera a saída. A *rifaximin* entra junto quando o episódio se repete, como prevenção secundária."
+    ],
+    "termos": [
+      "hepatic encephalopathy",
+      "lactulose",
+      "NH3 to NH4+ trapping",
+      "rifaximin"
+    ],
+    "erradas": {
+      "A": "Rifaximina sozinha não é a primeira linha; ela é somada à lactulose depois de recorrência.",
+      "B": "Octreotida reduz a pressão portal no sangramento varicoso, que a vinheta afasta.",
+      "C": "Neomicina reduz a amônia, mas é nefrotóxica e ototóxica e ficou como opção de exceção."
+    },
+    "macete": {
+      "frase": "Lactulose *azeda, prende e despacha* a amônia",
+      "apoio": "A amônia é o carrinho de fumaça indo para a cidade-cérebro. A lactulose é o pedágio de limão: acidifica o cólon, transforma NH3 em NH4+ (o caminhão grande demais para o túnel) e a pista expressa, o efeito laxativo, leva tudo para fora. A rifaximina entra junto na recorrência, não sozinha no primeiro episódio.",
+      "fala": "Já vi esse caso às 3 da manhã. O GPS da amônia sempre manda para o cérebro."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça às 3 da manhã, aquele horário em que você lê \"most appropriate initial pharmacotherapy\" e só pensa no café da Dona Térmica. Um fígado cansado no viaduto e quatro remédios na prancheta; a vinheta diz o que já foi descartado.",
+    "palavras_chave": [
+      "liver disease",
+      "emergency medicine",
+      "night shift",
+      "pharmacotherapy"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Hepatologia",
+      "#Hepatology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cirrose, confusão e flapping, sem gatilho: qual é o primeiro remédio?"
+  },
+  "reel": null,
+  "exemplo": false
+}

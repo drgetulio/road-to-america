@@ -1,0 +1,99 @@
+{
+  "dia": 126,
+  "data": "2027-03-07",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hipersensibilidade tipo I (dia 36), Neisseria meningitidis (dia 92), Malária e hipnozoítos (dia 120)",
+  "conceito": "Remix: Type I hypersensitivity + Neisseria meningitidis + Plasmodium vivax and ovale",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": [
+    36,
+    92,
+    120
+  ],
+  "explicacao_em": "2027-03-08",
+  "tom": null,
+  "gancho": "Malária tratada, vida normal e *a febre pediu bis*",
+  "gancho_apoio": "Remix com alergia (dia 36), meningococo (dia 92) e malária (dia 120). Só um mecanismo explica o bis.",
+  "imagem": {
+    "arquivo": "dia-126.png",
+    "cena": "Na esteira de bagagens de um aeroporto, a Capitã Plaqueta apita, desconfiada, para uma mala com adesivo de mosquito que passa pela segunda vez. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "A Capitã Plaqueta apita para uma mala com adesivo de mosquito que passa pela segunda vez na esteira."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-126-macete.png",
+    "cena": "Callback: a mala do mosquito se abre e revela um hotelzinho em forma de fígado, onde um parasita de pijama acorda com o despertador num quarto escondido, e a Capitã Plaqueta apita de susto. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A mala se abre num hotelzinho-fígado onde um parasita de pijama acorda; a Capitã apita de susto."
+  },
+  "questao": {
+    "vinheta": "A 25-year-old volunteer had Plasmodium vivax malaria in Southeast Asia, completed chloroquine and recovered fully. Eight months after returning to her nonendemic home country, she again has fevers every 48 hours. A blood smear shows enlarged red cells with Schüffner dots.",
+    "pergunta": "Which best explains this new episode?",
+    "alternativas": {
+      "A": {
+        "texto": "Recrudescence of chloroquine-resistant blood-stage parasites",
+        "quiz": "Resistant blood stage"
+      },
+      "B": {
+        "texto": "Reinfection from a new mosquito bite",
+        "quiz": "New mosquito bite"
+      },
+      "C": {
+        "texto": "Dormant liver hypnozoites",
+        "quiz": "Liver hypnozoites",
+        "dia": 120
+      },
+      "D": {
+        "texto": "Red-cell sequestration in brain capillaries",
+        "quiz": "Brain sequestration"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Vivax e ovale deixam *hipnozoítos* no fígado",
+    "certa": [
+      "P. vivax e P. ovale deixam formas dormentes no fígado, os hipnozoítos, que acordam meses depois e causam recaída. A cloroquina limpa só as formas do sangue; para prevenir a recaída é preciso primaquina ou tafenoquina, depois de confirmar que a G6PD é normal. Febre em dias alternados e hemácias grandes com pontilhado de Schüffner fecham vivax."
+    ],
+    "termos": [
+      "hypnozoites",
+      "relapse",
+      "primaquine",
+      "G6PD testing"
+    ],
+    "erradas": {
+      "A": "A recrudescência vem de formas do sangue que sobreviveram ao tratamento e aparece em semanas, não oito meses depois de uma cura completa.",
+      "B": "Reinfecção exige nova picada, e ela vive desde a volta num país sem malária.",
+      "D": "Intruso: o sequestro de hemácias nos capilares do cérebro é a malária cerebral do P. falciparum, que não forma hipnozoíto."
+    },
+    "macete": {
+      "frase": "Vivax e ovale deixam *hóspede dormindo* no hotel fígado",
+      "apoio": "Antes da primaquina ou da tafenoquina, a recepção confere a G6PD. Bônus: IgE cruzada no mastócito é a alergia do dia 36; o LOS do meningococo derruba a pressão (dia 92).",
+      "fala": "A cloroquina limpou o salão. O quarto escondido ainda tinha hóspede."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo com a Capitã Plaqueta de olho nas hemácias: três bichos já vistos voltam numa vinheta só. Uma voluntária tratada direito, de volta para casa, e uma febre que reapareceu. Quanto tempo passou e por onde ela andou estão na vinheta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Vivax tratado, sem viagem nova e febre 8 meses depois: por quê?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 190,
+  "data": "2027-05-10",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Endocardite em uso de drogas injetáveis",
+  "conceito": "Staphylococcus aureus endocarditis in injection drug use: tricuspid valve, acute course",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-11",
+  "tom": null,
+  "gancho": "Bicho de Segunda: *um sopro novo* e quatro suspeitos de sempre",
+  "gancho_apoio": "Na prova, \"blood cultures are pending\" quer dizer: você vai ter que achar o bicho pela história.",
+  "imagem": {
+    "arquivo": "dia-190.png",
+    "cena": "Macrô, de porteiro e com a comanda em branco no bolso, está na entrada de um prédio em forma de coração e olha intrigado para quatro campainhas sem nome. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô, de porteiro, olha quatro campainhas sem nome num prédio em forma de coração"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-190-macete.png",
+    "cena": "Callback: Macrô puxa um pano e revela cachos de uva dourados grudados na porta da direita do prédio-coração; bolinhas douradas voam até um balão em forma de pulmão. Fundo limpo.",
+    "alt": "Cachos de uva dourados na porta da direita do prédio-coração e bolinhas voando para o pulmão"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old man who injects drugs has 4 days of high fever and rigors. A new holosystolic murmur is heard along the left lower sternal edge, louder during inspiration. Chest CT shows multiple peripheral cavitating nodules. Blood cultures are pending.",
+    "pergunta": "Which is the most likely causative organism?",
+    "alternativas": {
+      "A": {
+        "texto": "Viridans group streptococci",
+        "quiz": "Viridans streptococci"
+      },
+      "B": {
+        "texto": "Staphylococcus aureus",
+        "quiz": "Staphylococcus aureus"
+      },
+      "C": {
+        "texto": "Enterococcus faecalis",
+        "quiz": "Enterococcus faecalis"
+      },
+      "D": {
+        "texto": "Candida albicans",
+        "quiz": "Candida albicans"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Aguda, tricúspide e pulmão: *S. aureus*",
+    "certa": [
+      "Em quem usa drogas injetáveis, a endocardite mais comum é por *Staphylococcus aureus*, com curso agudo (dias) e predileção pela *tricuspid valve*. O sopro de regurgitação tricúspide aumenta na inspiração (sinal de Carvallo), e pedaços da vegetação vão para o pulmão como *septic pulmonary emboli*, os nódulos cavitados."
+    ],
+    "termos": [
+      "Staphylococcus aureus",
+      "tricuspid endocarditis",
+      "septic pulmonary emboli",
+      "Carvallo sign"
+    ],
+    "erradas": {
+      "A": "Os estreptococos viridans causam endocardite subaguda, em semanas, em valva já lesada, muitas vezes após procedimento dentário.",
+      "C": "O enterococo causa endocardite subaguda em idosos, após manipulação urinária ou gastrointestinal.",
+      "D": "A Candida pode aparecer no uso de drogas injetáveis, mas é bem menos comum e costuma ter curso mais arrastado, com vegetações grandes."
+    },
+    "macete": {
+      "frase": "*Staphylo* é cacho de uva e *aureus* é ouro: o *cacho dourado* entra pela veia, chega pela *porta da direita* (tricúspide) e chega rápido. Os pedacinhos que se soltam vão direto ao pulmão, a primeira parada depois do coração direito.",
+      "apoio": "O NBME junta uso de drogas injetáveis, sopro tricúspide que cresce ao inspirar e êmbolos sépticos no pulmão; o tratamento empírico cobre MRSA com vancomicina até sair o antibiograma.",
+      "fala": "Comi, mostrei, avisei: esse chegou em 4 dias, igual entrega expressa."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no cardiovascular, com o Macrô na portaria. Quatro micróbios disputam uma valva. O hábito do paciente, a valva atingida e a velocidade do quadro estão na vinheta: são eles que escolhem o culpado.",
+    "palavras_chave": [
+      "cardiac murmur",
+      "blood cultures",
+      "fever",
+      "Step 1 microbiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Febre de 4 dias, sopro à direita e nódulos no pulmão: quem?"
+  },
+  "exemplo": false
+}

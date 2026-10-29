@@ -1,0 +1,97 @@
+{
+  "dia": 11,
+  "data": "2026-11-12",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Pneumonia na criança",
+  "conceito": "Uncomplicated pediatric community-acquired pneumonia: high-dose oral amoxicillin",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": "Dia Mundial da Pneumonia (12/11).",
+  "remix_de": null,
+  "explicacao_em": "2026-11-13",
+  "tom": null,
+  "gancho": "Dia Mundial da Pneumonia: o Garçom Espetinho trouxe *quatro espetos* para um pulmão de 3 anos",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-011.png",
+    "cena": "O Garçom Espetinho passa por uma mesa de churrascaria onde um par de pulmões de pelúcia, de cachecol e termômetro, espera o pedido; nos espetos dele, frascos de xarope e cápsulas gigantes estão espetados como carne. A plaquinha verde e vermelha está de lado na mesa.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho passa com espetos de frascos e cápsulas por uma mesa onde pulmões de pelúcia de cachecol esperam o pedido."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-011-macete.png",
+    "cena": "Callback do rodízio: o Garçom Espetinho serve, em porção dupla, o espeto das cápsulas rosa e brancas (amoxicilina) no prato dos pulmões de pelúcia e vira a plaquinha para o verde. Os outros espetos voltam para a churrasqueira, e os pulmões afrouxam o cachecol.",
+    "alt": "O primeiro espeto é amoxicilina, porção dupla"
+  },
+  "questao": {
+    "vinheta": "A 3-year-old girl has 3 days of fever and cough. She is fully immunized, with no known drug allergy. Her temperature is 39°C, respirations 38/min and SpO2 96% on room air. Crackles are heard over the right lower lobe; chest x-ray confirms lobar consolidation. She is drinking well.",
+    "pergunta": "Which is the most appropriate outpatient pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral azithromycin for 5 days",
+        "quiz": "Azithromycin"
+      },
+      "B": {
+        "texto": "Intramuscular ceftriaxone",
+        "quiz": "Intramuscular ceftriaxone"
+      },
+      "C": {
+        "texto": "Oral doxycycline",
+        "quiz": "Doxycycline"
+      },
+      "D": {
+        "texto": "High-dose oral amoxicillin",
+        "quiz": "High-dose amoxicillin"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O primeiro espeto é amoxicilina, porção dupla",
+    "certa": [
+      "Criança vacinada com febre alta e consolidação lobar tem pneumonia bacteriana típica, e o principal agente é o Streptococcus pneumoniae. Sem sinais de gravidade (saturação boa, bebendo bem), ela trata em casa com amoxicilina oral em dose alta, 90 mg/kg/dia em duas tomadas, dose pensada para vencer os pneumococos com sensibilidade reduzida à penicilina. A diretriz da IDSA e da PIDS mantém a amoxicilina como primeira escolha nessa idade."
+    ],
+    "termos": [
+      "pediatric community-acquired pneumonia",
+      "high-dose amoxicillin",
+      "Streptococcus pneumoniae",
+      "outpatient treatment"
+    ],
+    "erradas": {
+      "A": "A azitromicina é para suspeita de germe atípico (Mycoplasma), mais comum na idade escolar e sem consolidação lobar típica.",
+      "B": "A ceftriaxona parenteral fica para internação, criança que não aceita via oral ou vacinação incompleta.",
+      "C": "A doxiciclina não é escolha para pneumonia típica em criança pequena, e o pneumococo pede um betalactâmico."
+    },
+    "macete": {
+      "frase": "No rodízio da pneumonia infantil, a amoxicilina é a *picanha da casa*: sai primeiro e em *porção dupla*. Azitromicina é o espeto do escolar com Mycoplasma.",
+      "apoio": "Pegadinha de prova: O NBME oferece azitromicina para a criança pequena com consolidação lobar; a resposta continua sendo amoxicilina em dose alta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "12/11 é o Dia Mundial da Pneumonia. No Rodízio de Quinta, o Garçom Espetinho atende a mesa da pediatria, e cada espeto é um antibiótico. Escolha como se fosse a sua prescrição, e não como quem chuta no último bloco do NBME.",
+    "palavras_chave": [
+      "pediatric pneumonia",
+      "home care",
+      "antibiotics",
+      "preschool child"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Pneumonia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pneumonia lobar aos 3 anos, tratamento em casa: qual antibiótico?"
+  },
+  "exemplo": false
+}

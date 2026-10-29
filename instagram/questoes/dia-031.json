@@ -1,0 +1,94 @@
+{
+  "dia": 31,
+  "data": "2026-12-02",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Síndrome de Brown-Séquard",
+  "conceito": "Brown-Sequard syndrome: ipsilateral weakness and proprioception loss, contralateral pain and temperature loss",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-03",
+  "gancho": "Facada nas costas, meia avenida interditada e cada *perna* reclamando de um jeito",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Capitã Plaqueta, de colete e apito, organiza o trânsito de uma avenida de mão dupla vista de cima, com metade da pista fechada por cones (a imagem não mostra qual lado). Caminhões azuis seguem retos na mesma faixa, e motos vermelhas cruzam o canteiro logo depois do acesso; setinhas de manual de montagem marcam os cruzamentos.",
+    "foco": "50% 35%",
+    "alt": "Facada nas costas, meia avenida interditada e cada perna reclamando de um jeito",
+    "arquivo": "dia-031.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da avenida: a interdição aparece no lado direito. O caminhão azul da direita está parado no bloqueio, e a moto vermelha que entrou pela esquerda e já tinha cruzado para a direita também está parada. Do lado esquerdo, os caminhões seguem livres, e a Capitã aponta o bloqueio.",
+    "alt": "Corte do lado direito, dor perdida do lado esquerdo",
+    "arquivo": "dia-031-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man is stabbed in the back. Examination shows weakness, hyperreflexia, and loss of vibration and position sense in the right leg. Pain and temperature sensation are lost in the left leg, starting two segments below the wound. Upper limbs are normal.",
+    "pergunta": "Which lesion best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Left hemisection of the thoracic spinal cord",
+        "quiz": "Left hemisection"
+      },
+      "B": {
+        "texto": "Right hemisection of the thoracic spinal cord",
+        "quiz": "Right hemisection"
+      },
+      "C": {
+        "texto": "Anterior cord syndrome from spinal artery infarct",
+        "quiz": "Anterior cord syndrome"
+      },
+      "D": {
+        "texto": "Posterior cord syndrome",
+        "quiz": "Posterior cord"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Corte do lado *direito*, dor perdida do lado *esquerdo*",
+    "certa": [
+      "Na *Brown-Séquard syndrome* (hemissecção da medula), o trato corticoespinhal e a coluna dorsal (*dorsal column-medial lemniscus*) cruzam apenas no bulbo; por isso força, vibração e propriocepção caem do mesmo lado do corte, a direita. O *spinothalamic tract* cruza um ou dois segmentos acima da entrada, e é a perna oposta, a esquerda, que deixa de sentir dor e calor, a partir de um ou dois níveis abaixo do corte."
+    ],
+    "termos": [
+      "Brown-Sequard syndrome",
+      "dorsal column-medial lemniscus",
+      "spinothalamic tract",
+      "lateral corticospinal tract"
+    ],
+    "erradas": {
+      "A": "Uma hemissecção esquerda daria fraqueza e perda de propriocepção na perna esquerda e perda de dor e temperatura na direita, o espelho deste quadro.",
+      "C": "A síndrome medular anterior tira força e dor dos dois lados e poupa vibração e propriocepção, porque a coluna dorsal fica de fora.",
+      "D": "A síndrome medular posterior tira vibração e propriocepção dos dois lados e preserva a força e a dor."
+    },
+    "macete": {
+      "frase": "Na avenida da medula, o *caminhão* (força e vibração) só troca de pista no bulbo; a *moto* (dor e temperatura) cruza logo na entrada.",
+      "apoio": "Pegadinha de prova: O NBME gosta de dar só os achados e perguntar o lado da lesão: o lado da fraqueza e da propriocepção é sempre o lado do corte.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com a Capitã Plaqueta no trânsito da medula: quem troca de pista cedo e quem troca só no bulbo decide a letra. Leia de que lado está cada queixa, com a calma de quem nunca trocou direita e esquerda no Prometric.",
+    "palavras_chave": [
+      "stab wound",
+      "hyperreflexia",
+      "vibration and position sense",
+      "pain and temperature"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Neuroanatomia",
+      "#Neuroanatomy",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Perna direita fraca e perna esquerda sem dor: qual lado foi cortado?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,97 @@
+{
+  "dia": 307,
+  "data": "2027-09-04",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Hesitação vacinal",
+  "conceito": "Parents refusing vaccines: explore concerns, educate, keep caring for the child",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-05",
+  "tom": null,
+  "gancho": "Os pais chegaram com 47 prints do grupo da família. *Primeira fala?*",
+  "gancho_apoio": "No Sábado Sem Viés, a Dona Bússola gira tonta no meio de 47 prints.",
+  "imagem": {
+    "arquivo": "dia-307.png",
+    "cena": "A Dona Bússola, em pé numa mesa de consultório pediátrico, está com o ponteiro rodando, tonta, ao lado de uma pasta gorda, amarrada com barbante, que transborda de prints de celular; na parede, uma tabela 2x2 pequena num quadrinho.",
+    "foco": "50% 35%",
+    "alt": "Os pais chegaram com 47 prints do grupo da família. Primeira fala?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-307-macete.png",
+    "cena": "Callback: o ponteiro da Dona Bússola para e aponta para uma orelha gigante de desenho animado em cima da mesa; os balões de conversa pousam quietos dentro da pasta aberta; a porta do consultório está aberta, o calendário de parede tem a próxima consulta circulada e o frasco escudo continua pronto na prateleira.",
+    "foco": "50% 45%",
+    "alt": "Recusa vacinal: primeiro ouvir, depois explicar"
+  },
+  "questao": {
+    "vinheta": "At a routine 2-month visit, an infant girl has normal growth and examination findings. Her parents decline all scheduled vaccines because they read online that many vaccines at once will overload her immune system. They ask whether they can keep bringing her to this clinic.",
+    "pergunta": "Which is the most appropriate response by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "\"Our practice requires vaccines, so you will need another physician.\"",
+        "quiz": "Find another doctor"
+      },
+      "B": {
+        "texto": "\"If you refuse, I am required to notify child protective services.\"",
+        "quiz": "I must report you"
+      },
+      "C": {
+        "texto": "\"Can you tell me more about what worries you about the vaccines?\"",
+        "quiz": "What worries you?"
+      },
+      "D": {
+        "texto": "\"We can give one vaccine now and the rest after her first birthday.\"",
+        "quiz": "Delay the schedule"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Recusa vacinal: *primeiro ouvir*, depois explicar",
+    "certa": [
+      "Diante da recusa vacinal, o primeiro passo é perguntar o que os pais leram e o que temem, sem julgamento. Depois vem a informação clara (o bebê responde a milhares de antígenos todos os dias e o calendário usa uma fração mínima disso) e a recomendação firme, com a porta aberta para vacinar em outra consulta. A criança continua em acompanhamento e a recusa informada fica registrada no prontuário."
+    ],
+    "termos": [
+      "vaccine hesitancy",
+      "explore concerns",
+      "informed refusal",
+      "continuity of care"
+    ],
+    "erradas": {
+      "A": "Dispensar a família na primeira conversa rompe o vínculo e tira a criança do acompanhamento sem tentar resolver a dúvida.",
+      "B": "Recusar vacina, com a criança saudável e acompanhada, não é negligência que exija notificação ao serviço de proteção.",
+      "D": "Atrasar o calendário por conta própria deixa a criança desprotegida justamente na idade de maior risco e não tem respaldo da AAP."
+    },
+    "macete": {
+      "frase": "*Print se responde com pergunta*: escuta, explica, recomenda e mantém a porta aberta",
+      "apoio": "Contra print do grupo da família, a vacina mais eficaz é uma pergunta. Dispensar a família ou ameaçar com o conselho tutelar fecha a porta e deixa o bebê sem vacina e sem médico. A AAP pede escuta, informação honesta, recomendação clara e retorno marcado; o calendário espaçado inventado não tem base e só alarga a janela sem proteção.",
+      "fala": "Pergunta primeiro. O norte aparece."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés no consultório: os pais chegaram com 47 prints do grupo da família, e a Dona Bússola rodou até ficar tonta. Quatro primeiras falas possíveis; no NBME de ética, a primeira fala quase nunca é a que você daria depois de 12 horas de plantão.",
+    "palavras_chave": [
+      "pediatrics",
+      "vaccination",
+      "communication",
+      "ethics"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Etica",
+      "#MedicalEthics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pais recusam todas as vacinas aos 2 meses: qual a primeira fala do médico?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,88 @@
+{
+  "dia": 207,
+  "data": "2027-05-27",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Trabalho de parto prematuro",
+  "conceito": "Preterm labor at 24 to 34 weeks: betamethasone for fetal lung maturity",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-28",
+  "tom": null,
+  "gancho": "Rodízio de Quinta: *a pressa de nascer* chegou antes da hora",
+  "gancho_apoio": "GO no inglês da prova: \"gravida 1\" não é nome de banda.",
+  "imagem": {
+    "arquivo": "dia-207.png",
+    "cena": "O Garçom Espetinho segura quatro espetos tampados diante de uma pequena horta com dois brotos, e a plaquinha de duas cores está de lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O garçom segura quatro espetos tampados diante de uma horta com dois brotos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-207-macete.png",
+    "cena": "Callback: o garçom rega a horta com um regador dourado, e os dois brotos viram árvores em forma de balão, cheias de bolhas de sabão brilhantes. Fundo limpo.",
+    "alt": "O garçom rega a horta com o regador dourado e os brotos viram árvores-balão"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman, gravida 1, at 30 weeks of gestation has regular painful contractions every 4 minutes. On examination, the cervix is dilated to 4 cm with 80% effacement. Membranes are intact, and the fetal heart tracing is category I.",
+    "pergunta": "Which medication most directly lowers her newborn risk of respiratory distress syndrome?",
+    "alternativas": {
+      "A": {
+        "texto": "Intramuscular betamethasone",
+        "quiz": "IM betamethasone"
+      },
+      "B": {
+        "texto": "Intravenous magnesium sulfate",
+        "quiz": "IV magnesium sulfate"
+      },
+      "C": {
+        "texto": "Oral nifedipine",
+        "quiz": "Oral nifedipine"
+      },
+      "D": {
+        "texto": "Vaginal progesterone",
+        "quiz": "Vaginal progesterone"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Entre 24 e 34 semanas: *betametasona*",
+    "certa": [
+      "No trabalho de parto prematuro entre 24 e 34 semanas, o *antenatal corticosteroid* (betametasona 12 mg IM, duas doses com 24 horas de intervalo) acelera a maturação pulmonar: os *type II pneumocytes* produzem mais surfactante. Isso reduz a *respiratory distress syndrome*, a hemorragia intraventricular, a enterocolite necrosante e a mortalidade neonatal."
+    ],
+    "termos": [
+      "antenatal corticosteroids",
+      "betamethasone",
+      "surfactant",
+      "respiratory distress syndrome"
+    ],
+    "erradas": {
+      "B": "Antes de 32 semanas, o magnésio intravenoso serve de neuroproteção fetal (menos paralisia cerebral), sem efeito sobre o pulmão.",
+      "C": "O nifedipino é tocolítico: segura o parto por cerca de 48 horas para o corticoide agir, mas sozinho não amadurece o pulmão.",
+      "D": "A progesterona vaginal previne parto prematuro em gestante assintomática com colo curto; não serve no trabalho de parto ativo."
+    },
+    "macete": {
+      "frase": "Corticoide é o *adubo do pulmão*: duas doses, 24 horas de intervalo, e o pneumócito tipo II começa a fazer o *sabão* (surfactante). Tocolítico *compra tempo* para o adubo agir; magnésio abaixo de 32 semanas *protege o cérebro*.",
+      "apoio": "O NBME lista as quatro drogas do parto prematuro e pergunta o papel de cada uma: corticoide para o pulmão, magnésio para o cérebro (antes de 32 semanas), tocolítico para ganhar 48 horas e penicilina se o GBS for positivo ou desconhecido.",
+      "fala": "Vai uma conduta aí? Duas doses de adubo, com 24 horas de intervalo."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na obstetrícia. Uma gestante em trabalho de parto antes do tempo, e quatro remédios no espeto, cada um com um trabalho diferente. A pergunta da vinheta diz qual trabalho é o de hoje.",
+    "palavras_chave": [
+      "preterm labor",
+      "obstetrics",
+      "pregnancy medications",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Parto prematuro com 30 semanas. E o pulmão?"
+  },
+  "exemplo": false
+}

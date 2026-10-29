@@ -20,6 +20,7 @@ import { join, extname, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
+import { prepararRede, vigiarErros } from "../../plataforma/tests/e2e-rede.mjs";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const saida = resolve(process.argv[2] || join(tmpdir(), "r2a-admin-capturas"));
@@ -57,6 +58,7 @@ async function etapa(nome, fn) {
 /* contexto novo com papel de demonstração pré-definido */
 async function abrir(papel, { largura = 1280, altura = 900, tema = "light" } = {}) {
   const ctx = await navegador.newContext({ viewport: { width: largura, height: altura }, colorScheme: tema, locale: "pt-BR", acceptDownloads: true });
+  await prepararRede(ctx, base);
   await ctx.addInitScript((papel) => {
     if (!papel || sessionStorage.getItem("__papel")) return;
     sessionStorage.setItem("__papel", "1");
@@ -68,8 +70,7 @@ async function abrir(papel, { largura = 1280, altura = 900, tema = "light" } = {
   }, papel);
   const page = await ctx.newPage();
   const erros = [];
-  page.on("console", (m) => { if (m.type() === "error") erros.push(m.text()); });
-  page.on("pageerror", (e) => erros.push(e.message));
+  vigiarErros(page, base, erros, { esperados: [/\/banco-privado\//, /\/favicon\.ico$/] });
   return { ctx, page, erros };
 }
 const semRolagem = async (page) => {
@@ -124,7 +125,7 @@ await etapa("2. participante e visitante veem acesso negado", async () => {
   assert.equal(await page.locator("table").count(), 0, "nenhuma tabela");
   assert.equal(await page.getByText("Ana Exemplo").count(), 0, "nenhum participante exposto");
   assert.equal(await page.getByRole("link", { name: "Ver meu progresso" }).getAttribute("href"), "../anki/#/progresso");
-  assert.equal(await page.locator("[data-nav] a").count(), 3, "menu só com links externos");
+  assert.deepEqual(await page.locator("[data-nav] a").evaluateAll((as) => as.map((a) => a.getAttribute("href"))), ["../anki/#/", "../questoes/", "../simulado/", "../conteudo-step1.html"], "menu só com links externos");
   await page.screenshot({ path: join(saida, "04-acesso-negado.png"), fullPage: true });
   await page.goto(base + "/admin/#/p/demo-sint-ana-exemplo");
   await page.getByRole("heading", { name: "Área da equipe" }).waitFor();

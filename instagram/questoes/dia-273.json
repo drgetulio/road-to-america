@@ -1,0 +1,102 @@
+{
+  "dia": 273,
+  "data": "2027-08-01",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: MHC I e MHC II (dia 176), Angioedema hereditário (dia 239), Superantígenos (dia 267)",
+  "conceito": "Remix: MHC I vs MHC II + Hereditary angioedema + Toxic shock syndrome toxin",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    176,
+    239,
+    267
+  ],
+  "explicacao_em": "2027-08-02",
+  "tom": null,
+  "gancho": "Remix de Domingo: *um inchaço sem coceira* e três suspeitos que já passaram por aqui",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 176, 239 e 267) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-273.png",
+    "cena": "Num baile de forró, Macrô, de guardanapo xadrez, trabalha na porta com uma lista de convidados em branco, conferindo um balão de chapéu que incha devagar. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Macrô, na porta do forró, confere um balão de chapéu que incha devagar"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-273-macete.png",
+    "cena": "Callback: atrás do balcão do forró, uma lixeira tampada por um comprimido deixa transbordar bolinhas que enchem os balões do salão, e o Macrô tenta segurar a tampa. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "A lixeira tampada por um comprimido transborda e enche os balões; Macrô segura a tampa"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man has painless swelling of the lips and tongue, without urticaria or itching, 3 months after starting lisinopril for hypertension. He has no prior episodes and no family history of swelling. Antihistamines and epinephrine did not help. Serum C4 and C1 inhibitor levels are normal.",
+    "pergunta": "Which mechanism best explains his swelling?",
+    "alternativas": {
+      "A": {
+        "texto": "Deficient C1 esterase inhibitor function",
+        "quiz": "Low C1 esterase inhibitor",
+        "dia": 239
+      },
+      "B": {
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE cross-linking"
+      },
+      "C": {
+        "texto": "Superantigen-driven capillary leak",
+        "quiz": "Superantigen capillary leak",
+        "dia": 267
+      },
+      "D": {
+        "texto": "Reduced bradykinin breakdown by ACE",
+        "quiz": "Less bradykinin breakdown"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Lisinopril e lábio inchado: *bradicinina que ninguém quebra*",
+    "certa": [
+      "Angioedema sem urticária e sem coceira, que não responde a anti-histamínico nem a adrenalina, num paciente com lisinopril e com C4 e inibidor de C1 normais, é angioedema por inibidor da ECA, o intruso de hoje. A ECA (cininase II) também quebra a *bradicinina*; com ela bloqueada, a bradicinina se acumula e abre os vasos. Pode surgir meses ou anos depois do início. O remédio sai de vez, a via aérea vem primeiro, e um BRA no futuro exige cautela."
+    ],
+    "termos": [
+      "ACE inhibitor angioedema",
+      "bradykinin",
+      "kininase II",
+      "C1 esterase inhibitor"
+    ],
+    "erradas": {
+      "A": "Dia 239: no angioedema hereditário, o mediador também é a bradicinina, mas a causa é falta ou mau funcionamento do inibidor de C1, com C4 baixo e história familiar. Aqui C4 e inibidor de C1 estão normais.",
+      "B": "Fora dos dias revisados: IgE ligando o mastócito é a anafilaxia e a urticária, com coceira, e responde a adrenalina e anti-histamínico.",
+      "C": "Dia 267: o superantígeno liga MHC II ao TCR por fora e solta uma tempestade de citocinas, com febre, choque e eritrodermia; não causa inchaço localizado de lábio sem febre."
+    },
+    "macete": {
+      "frase": "A *ECA é a lixeira da bradicinina*: tampou a lixeira, a bradicinina transborda e *incha sem coçar*.",
+      "apoio": "Pegadinha de prova: o NBME mostra o lábio inchado e oferece o inibidor de C1 do angioedema hereditário. Olhe o C4 e a receita: C4 normal com lisinopril é a ECA. Bônus do dia 176: peptídeo de dentro da célula vai no MHC I para o CD8.",
+      "fala": "Comi, mostrei, avisei: com a ECA travada, a bradicinina não vai para o lixo."
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com o Macrô na porta do forró. Um homem com um inchaço no rosto, a lista de remédios dele e dois exames de complemento estão na vinheta. Qual mecanismo explica?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Lábio inchado com lisinopril e C4 normal: mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

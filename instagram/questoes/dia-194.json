@@ -1,0 +1,87 @@
+{
+  "dia": 194,
+  "data": "2027-05-14",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Diabetes tipo 2 e risco cardiovascular",
+  "conceito": "Type 2 diabetes with ASCVD, heart failure or CKD: add an SGLT2 inhibitor or GLP-1 agonist",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-15",
+  "tom": null,
+  "gancho": "Sextou na Farmácia: *quatro caixinhas* para um diabético que já passou por muita coisa",
+  "gancho_apoio": "Na prateleira da Tia Meia-Vida, cada caixinha tem um currículo de ensaio clínico.",
+  "imagem": {
+    "arquivo": "dia-194.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, segura quatro caixinhas sem rótulo abertas em leque, como cartas de baralho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida segura quatro caixinhas sem rótulo em leque"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-194-macete.png",
+    "cena": "Callback: a Tia Meia-Vida vira uma das caixinhas numa pia de ralo aberto, por onde escorrem cubinhos de açúcar, e ao lado um coração e um rim simpáticos ganham escudos brilhantes. Fundo limpo.",
+    "alt": "A caixinha vira pia e o açúcar escorre pelo ralo; coração e rim ganham escudos"
+  },
+  "questao": {
+    "vinheta": "A 62-year-old man with type 2 diabetes has an HbA1c of 8.1% on metformin. He had a myocardial infarction 1 year ago and has heart failure with an ejection fraction of 35%. His eGFR is 58 mL/min/1.73 m2 with an albuminuria of 250 mg/g creatinine.",
+    "pergunta": "Which drug should be added to best reduce his cardiorenal risk?",
+    "alternativas": {
+      "A": {
+        "texto": "Pioglitazone",
+        "quiz": "Pioglitazone"
+      },
+      "B": {
+        "texto": "Insulin glargine",
+        "quiz": "Insulin glargine"
+      },
+      "C": {
+        "texto": "Saxagliptin",
+        "quiz": "Saxagliptin"
+      },
+      "D": {
+        "texto": "Empagliflozin",
+        "quiz": "Empagliflozin"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Diabetes com coração e rim doentes: *iSGLT2*",
+    "certa": [
+      "No diabetes tipo 2 com insuficiência cardíaca, doença renal crônica ou doença aterosclerótica, a ADA indica um remédio com benefício comprovado, independente da HbA1c. Com IC de fração reduzida e albuminúria, o preferido é o *SGLT2 inhibitor* (empagliflozina), que reduz hospitalização por IC, morte cardiovascular e progressão da doença renal. *GLP-1 receptor agonist* seria a alternativa para ASCVD."
+    ],
+    "termos": [
+      "SGLT2 inhibitor",
+      "heart failure",
+      "chronic kidney disease",
+      "cardiorenal protection"
+    ],
+    "erradas": {
+      "A": "A pioglitazona retém sódio e água e piora a insuficiência cardíaca; é contraindicada em IC sintomática.",
+      "B": "A insulina glargina baixa a HbA1c, mas não reduz eventos cardiovasculares nem a progressão da doença renal, e ainda traz hipoglicemia e ganho de peso.",
+      "C": "A saxagliptina aumentou hospitalização por insuficiência cardíaca em ensaio clínico e não traz proteção cardiorrenal."
+    },
+    "macete": {
+      "frase": "Aqui o remédio se escolhe pelo *órgão*, não pela HbA1c. Coração fraco, rim cansado ou artéria entupida: o açúcar *sai pelo ralo* (iSGLT2) e coração e rim *ganham escudo*. Glitazona *encharca* o coração; insulina só baixa o número.",
+      "apoio": "O NBME dá um paciente com IC ou DRC e oferece a insulina, a gliptina ou a pioglitazona; a resposta é o iSGLT2 (ou o agonista de GLP-1 se o foco for ASCVD), mesmo com HbA1c perto da meta.",
+      "fala": "Aqui a gente escolhe pelo coração e pelo rim. A HbA1c espera na fila."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um diabético tipo 2 em uso de metformina precisa de mais um remédio. A história clínica dele, que está na vinheta, decide qual caixinha sai da prateleira.",
+    "palavras_chave": [
+      "type 2 diabetes",
+      "metformin",
+      "add-on therapy",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "DM2, IC com FE 35% e albuminúria: o que somar?"
+  },
+  "exemplo": false
+}

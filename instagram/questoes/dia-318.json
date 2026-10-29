@@ -1,0 +1,97 @@
+{
+  "dia": 318,
+  "data": "2027-09-15",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Compressão do nervo oculomotor",
+  "conceito": "Oculomotor nerve compression: the pupil dilates first because parasympathetic fibers run on the outside",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-16",
+  "tom": null,
+  "gancho": "Seu Allen desmontou o nervo e *a pupila reclamou primeiro*",
+  "gancho_apoio": "Na Quarta do Porquê, o Seu Allen desmonta o nervo e procura onde fica cada fio.",
+  "imagem": {
+    "arquivo": "dia-318.png",
+    "cena": "Seu Allen ao lado de um cabo grosso e liso, visto de lado e inteiro, com setinhas de manual de montagem; o cabo termina num poste de luz em forma de olho, com a cúpula caída como pálpebra e a lâmpada redonda enorme e acesa.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen e um cabo que termina num poste em forma de olho"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-318-macete.png",
+    "cena": "Callback: um balão vermelho inchado aperta o cabo, que aparece em corte como uma coxinha: a casca dourada achatada pelo balão e o recheio intacto; ao lado, outra coxinha em corte tem a casca perfeita e o recheio acinzentado; o Seu Allen aponta com o lápis vermelho.",
+    "foco": "50% 45%",
+    "alt": "Compressão do oculomotor: pupila primeiro"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old woman has a sudden, severe headache and drooping of her right eyelid. The right eye is deviated inferolaterally, with a 7-mm pupil that does not react to light. Visual acuity is normal. Imaging later shows a posterior communicating artery aneurysm.",
+    "pergunta": "Which feature of the affected nerve best explains the pupillary finding?",
+    "alternativas": {
+      "A": {
+        "texto": "Its parasympathetic fibers lie superficially",
+        "quiz": "Superficial parasympathetics"
+      },
+      "B": {
+        "texto": "Its parasympathetic fibers lie in the nerve core",
+        "quiz": "Parasympathetics in the core"
+      },
+      "C": {
+        "texto": "It carries sympathetic fibers to the dilator",
+        "quiz": "Carries sympathetic fibers"
+      },
+      "D": {
+        "texto": "It carries the afferent limb of the light reflex",
+        "quiz": "Afferent limb of light reflex"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Compressão do oculomotor: *pupila primeiro*",
+    "certa": [
+      "Ptose, olho para baixo e para fora e pupila dilatada e fixa com cefaleia súbita indicam compressão do *oculomotor nerve* por aneurisma da *posterior communicating artery*. As fibras *parasympathetic* que contraem a pupila correm na superfície do nervo, então a compressão de fora para dentro pega a pupila primeiro. Na neuropatia isquêmica do diabetes acontece o contrário: sofre o centro do nervo e a pupila costuma ser poupada."
+    ],
+    "termos": [
+      "oculomotor nerve palsy",
+      "superficial parasympathetic fibers",
+      "posterior communicating artery aneurysm",
+      "pupil-sparing ischemic palsy"
+    ],
+    "erradas": {
+      "B": "Fibras no centro do nervo explicariam a pupila poupada da isquemia; na verdade o parassimpático fica na superfície.",
+      "C": "As fibras simpáticas do dilatador sobem pelo plexo carotídeo e pelo nervo nasociliar, e não pelo oculomotor.",
+      "D": "A via aferente do reflexo fotomotor é o nervo óptico; o oculomotor é a via eferente."
+    },
+    "macete": {
+      "frase": "*Aneurisma amassa a casca da coxinha; diabetes estraga o recheio*",
+      "apoio": "Corte o oculomotor como uma coxinha: as fibras parassimpáticas da pupila correm na casca e as dos músculos do olho, no recheio. Compressão de fora (aneurisma da comunicante posterior, herniação do uncus) amassa a casca e a pupila dilata primeiro. A isquemia do diabetes estraga o recheio e poupa a pupila. Pupila dilatada com cefaleia súbita: angiotomografia antes do lanche esfriar.",
+      "fala": "Abriu a coxinha, achou o mecanismo."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê: o Seu Allen desmontou o nervo e quer saber por que a pupila foi a primeira a reclamar. Quatro respostas de anatomia, e a causa está na última linha da vinheta, aquela que você pula quando faltam 10 minutos no bloco.",
+    "palavras_chave": [
+      "neuroanatomy",
+      "cranial nerves",
+      "headache",
+      "eye findings"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Neuroanatomia",
+      "#Neuroanatomy"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cefaleia súbita, ptose e pupila de 7 mm: por que a pupila foi primeiro?"
+  },
+  "reel": null,
+  "exemplo": false
+}

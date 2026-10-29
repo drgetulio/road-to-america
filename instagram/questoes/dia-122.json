@@ -1,0 +1,95 @@
+{
+  "dia": 122,
+  "data": "2027-03-03",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estenose aórtica",
+  "conceito": "Aortic stenosis: calcific degeneration, crescendo-decrescendo murmur, pulsus parvus et tardus",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": "Prazo final do rank order list do Match 2027 (3/3, 21h ET, segundo o NRMP).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-04",
+  "tom": null,
+  "gancho": "Prazo do rank order list: *tudo chega no limite*, até uma válvula",
+  "gancho_apoio": "Hoje fecha o rank order list do Match. Boa sorte a quem ainda está trocando a ordem dos programas.",
+  "imagem": {
+    "arquivo": "dia-122.png",
+    "cena": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória gira emperrada, enquanto glóbulos vermelhos fazem fila para passar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Capitã Plaqueta apita diante de uma porta giratória emperrada, com uma fila de glóbulos vermelhos."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-122-macete.png",
+    "cena": "Callback: de perto, as três folhas da porta giratória estão incrustadas de calcário branco, e do outro lado sai só uma tartaruga pequenina carregando um coração, bem devagar. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "As três folhas da porta giratória estão cheias de calcário; do outro lado sai só uma tartaruga devagar."
+  },
+  "questao": {
+    "vinheta": "A 78-year-old man has chest pressure and lightheadedness when he climbs stairs. Auscultation reveals a harsh crescendo-decrescendo systolic murmur, loudest in the second right intercostal space and transmitted to both carotids. The second heart sound is soft, and the carotid upstroke is weak and delayed.",
+    "pergunta": "Which is the most likely cause of this murmur?",
+    "alternativas": {
+      "A": {
+        "texto": "Age-related aortic valve calcification",
+        "quiz": "Calcific aortic valve"
+      },
+      "B": {
+        "texto": "Rheumatic fusion of the mitral commissures",
+        "quiz": "Rheumatic mitral valve"
+      },
+      "C": {
+        "texto": "Myxomatous degeneration of the mitral valve",
+        "quiz": "Myxomatous mitral valve"
+      },
+      "D": {
+        "texto": "Asymmetric hypertrophy of the septum",
+        "quiz": "Septal hypertrophy"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Estenose aórtica: *parvus et tardus*",
+    "certa": [
+      "Sopro sistólico em diamante no foco aórtico, irradiado para as carótidas, com B2 hipofonética e pulso carotídeo fraco e tardio (pulsus parvus et tardus) é estenose aórtica. Aos 78 anos, a causa mais comum é a calcificação degenerativa de uma valva com três folhetos; a valva bicúspide costuma dar sintomas uma ou duas décadas antes. Angina, síncope e dispneia aos esforços indicam doença grave e pedem troca valvar."
+    ],
+    "termos": [
+      "crescendo-decrescendo murmur",
+      "pulsus parvus et tardus",
+      "calcific aortic stenosis",
+      "bicuspid valve"
+    ],
+    "erradas": {
+      "B": "A febre reumática funde as comissuras da mitral e causa estenose mitral, com sopro diastólico e estalido de abertura.",
+      "C": "A degeneração mixomatosa causa prolapso mitral, com clique mesossistólico no ápice.",
+      "D": "Na cardiomiopatia hipertrófica o sopro fica na borda esternal esquerda, não irradia para as carótidas e o pulso é rápido, às vezes bífido."
+    },
+    "macete": {
+      "frase": "Pulso *parvus et tardus*: pequeno e atrasado, como inscrição enviada às 20h59",
+      "apoio": "Pegadinha de prova: O NBME diferencia pelo local e pela manobra: estenose aórtica irradia para as carótidas e o sopro diminui com Valsalva, ao contrário da cardiomiopatia hipertrófica.",
+      "fala": "Organizo trânsito há anos. Porta giratória com calcário é a pior fila do hospital."
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje, 3/3, fecha o rank order list do Match 2027. Boa sorte a quem ainda está reordenando programas às 20h59, com o dedo em cima do certify. Para a prova: um paciente que cansa na escada, um sopro e um pulso que a vinheta descreve com detalhe.",
+    "palavras_chave": [
+      "exertional chest pressure",
+      "systolic murmur",
+      "carotid radiation",
+      "older man"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#Cardiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

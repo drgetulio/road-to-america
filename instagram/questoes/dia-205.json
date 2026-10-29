@@ -1,0 +1,87 @@
+{
+  "dia": 205,
+  "data": "2027-05-25",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Fibrilação atrial e anticoagulação",
+  "conceito": "Atrial fibrillation: anticoagulate when CHA2DS2-VASc is 2 or more in men, 3 or more in women",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-26",
+  "tom": null,
+  "gancho": "Plantão de Terça com a Capitã Plaqueta: *uma conta de cabeça* às 3 da manhã",
+  "gancho_apoio": "Somar escore às 3 da manhã é o cardio que a residência te deu.",
+  "imagem": {
+    "arquivo": "dia-205.png",
+    "cena": "Às 3 da manhã, com o relógio sem números num poste, a Capitã Plaqueta faz uma conta numa calculadora antiga, sentada no meio-fio de um cruzamento vazio. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta faz uma conta na calculadora, sentada no meio-fio às 3 da manhã"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-205-macete.png",
+    "cena": "Callback: a Capitã põe três blocos coloridos numa balança (um bolo de aniversário, um medidor de pressão e o símbolo do sexo feminino), e o prato desce para o lado de um frasco de comprimidos. Fundo limpo.",
+    "alt": "Três blocos na balança da Capitã fazem o prato descer para o frasco de comprimidos"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old woman has had palpitations for 3 weeks. Her ECG shows an irregularly irregular rhythm without P waves at 82/min. She has hypertension controlled with lisinopril and no diabetes, heart failure, stroke, or vascular disease. Creatinine clearance is 75 mL/min, and she has no history of bleeding.",
+    "pergunta": "Which is the most appropriate pharmacotherapy to reduce her stroke risk?",
+    "alternativas": {
+      "A": {
+        "texto": "Apixaban",
+        "quiz": "Apixaban"
+      },
+      "B": {
+        "texto": "Aspirin alone",
+        "quiz": "Aspirin alone"
+      },
+      "C": {
+        "texto": "Aspirin plus clopidogrel",
+        "quiz": "Aspirin + clopidogrel"
+      },
+      "D": {
+        "texto": "No antithrombotic therapy",
+        "quiz": "No antithrombotic"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "CHA2DS2-VASc 3 na mulher: *anticoagular*",
+    "certa": [
+      "O escore *CHA2DS2-VASc* dela é 3: idade de 65 a 74 anos (1), hipertensão (1) e sexo feminino (1). A diretriz de 2023 indica anticoagulação com escore de 2 ou mais em homens e 3 ou mais em mulheres. Sem valva mecânica ou estenose mitral moderada a grave, o preferido é um *DOAC*, como a *apixaban*, em vez da varfarina."
+    ],
+    "termos": [
+      "atrial fibrillation",
+      "CHA2DS2-VASc",
+      "DOAC",
+      "apixaban"
+    ],
+    "erradas": {
+      "B": "A aspirina sozinha protege pouco contra AVC na fibrilação atrial e ainda causa sangramento; não substitui o anticoagulante.",
+      "C": "Aspirina com clopidogrel é inferior ao anticoagulante para prevenir AVC e sangra quase tanto.",
+      "D": "Com escore 3 numa mulher, o risco anual de AVC justifica a anticoagulação; deixar sem tratamento é errado."
+    },
+    "macete": {
+      "frase": "*CHA2DS2-VASc* na balança da Capitã: *C*ongestive HF, *H*ipertensão, *A2* (75 ou mais, 2 pontos), *D*iabetes, *S2* (AVC, 2 pontos), *V*ascular, *A* (65 a 74), *Sc* (sexo feminino). *Homem a partir de 2, mulher a partir de 3*: anticoagula, de preferência com DOAC.",
+      "apoio": "O NBME oferece aspirina como meio-termo e a varfarina sem motivo; aspirina não basta, e varfarina fica para valva mecânica ou estenose mitral moderada a grave.",
+      "fala": "Parou, colou, coagulou: com 3 pontos na mulher, eu não deixo colar."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Capitã Plaqueta. Uma senhora com palpitações, um ECG descrito na vinheta e uma lista de doenças que ela tem e não tem. Faça a conta do escore antes de escolher.",
+    "palavras_chave": [
+      "palpitations",
+      "ECG",
+      "stroke prevention",
+      "Step 2 CK"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "68 anos, HAS e ritmo sem onda P: qual antitrombótico?"
+  },
+  "exemplo": false
+}

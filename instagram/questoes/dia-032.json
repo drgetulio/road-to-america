@@ -1,0 +1,95 @@
+{
+  "dia": 32,
+  "data": "2026-12-03",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Síndrome compartimental",
+  "conceito": "Compartment syndrome: pain with passive stretch, emergency fasciotomy",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-04",
+  "gancho": "Fratura na tíbia, tala na perna e o Mito de *plantão na ortopedia*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Mito, de jaleco amassado, está ao lado de uma mesa de churrascaria segurando uma tala de perna de brinquedo e um relógio de bolso, com cara de quem conta as horas. Ao lado, a plaquinha verde e vermelha está virada de lado.",
+    "foco": "50% 35%",
+    "alt": "O Mito, ao lado de uma mesa de churrascaria, segura uma tala de perna de brinquedo e um relógio de bolso.",
+    "arquivo": "dia-032.png"
+  },
+  "imagem_macete": {
+    "cena": "Revelação: dentro da tala havia uma mala navy abarrotada, de costuras esticadas. O zíper é aberto de ponta a ponta, o conteúdo se acomoda e o Mito respira aliviado, com o café na mão. Uma almofada e um travesseiro alto ficam de lado com a plaquinha vermelha.",
+    "alt": "Abriu o zíper: fasciotomia de urgência",
+    "arquivo": "dia-032-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 22-year-old man has a closed tibial shaft fracture. Six hours after splinting, he has severe leg pain despite IV morphine, and the pain worsens with passive toe extension. The splint was removed 1 hour ago without relief. The calf is tense. Dorsalis pedis pulse is palpable.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Elevate the leg above heart level",
+        "quiz": "Elevate the leg"
+      },
+      "B": {
+        "texto": "Increase opioid dose and reassess in 4 hours",
+        "quiz": "More opioid, wait"
+      },
+      "C": {
+        "texto": "Emergency fasciotomy",
+        "quiz": "Fasciotomy now"
+      },
+      "D": {
+        "texto": "CT angiography of the leg",
+        "quiz": "CT angiography"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Abriu o zíper: *fasciotomia* de urgência",
+    "certa": [
+      "Dor desproporcional que piora com o estiramento passivo, compartimento tenso e nenhuma melhora depois de tirar a tala fecham o diagnóstico clínico de *compartment syndrome*. A fáscia não estica, a pressão passa da perfusão capilar e o músculo começa a morrer em poucas horas, por isso a conduta é *emergency fasciotomy*. Pulso palpável não afasta o quadro: ele é um dos últimos sinais a sumir."
+    ],
+    "termos": [
+      "compartment syndrome",
+      "pain with passive stretch",
+      "emergency fasciotomy",
+      "compartment pressure"
+    ],
+    "erradas": {
+      "A": "Elevar acima do coração reduz a pressão de perfusão e piora a isquemia; o membro fica na altura do coração.",
+      "B": "Esperar com mais opioide atrasa a descompressão e mascara o sinal mais útil, que é a dor desproporcional.",
+      "D": "O pulso está presente e o problema é pressão no compartimento, não oclusão arterial; exame de imagem só atrasa a cirurgia."
+    },
+    "macete": {
+      "frase": "Fáscia é mala de volta de *Orlando*: não estica. Morfina não fecha zíper; só abrir de ponta a ponta devolve o ar para o Mito.",
+      "apoio": "Pegadinha de prova: O NBME coloca pulso palpável e enchimento capilar normal para te fazer esperar; dor ao estiramento passivo com compartimento tenso já basta para operar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na cirurgia: uma fratura fechada e quatro espetos, de elevar a perna a chamar o centro cirúrgico, e só um é o certo. No Prometric e na perna, ninguém devolve as horas perdidas.",
+    "palavras_chave": [
+      "tibial fracture",
+      "orthopedic trauma",
+      "acute pain",
+      "surgery"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Surgery",
+      "#Ortopedia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Dor desproporcional e panturrilha tensa sem a tala: qual conduta?"
+  },
+  "exemplo": false
+}

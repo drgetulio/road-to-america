@@ -1,0 +1,99 @@
+{
+  "dia": 264,
+  "data": "2027-07-23",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Broncodilatadores inalatórios",
+  "conceito": "Albuterol vs tiotropium: beta-2 agonist relaxes airway smooth muscle, muscarinic antagonist blocks bronchoconstriction",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-24",
+  "tom": null,
+  "gancho": "A visita que chegou para o almoço *e ficou até a novela das nove*",
+  "gancho_apoio": "DPOC no Step 1: o paciente usa quatro bombinhas, e você decora as quatro pela cor da tampa.",
+  "imagem": {
+    "arquivo": "dia-264.png",
+    "cena": "Num domingo, na sala da casa da Tia Meia-Vida, dois inaladores com braços e pernas: um de tênis, já saindo pela porta, e outro de chinelo, esparramado no sofá. A Tia olha o relógio, de braços cruzados. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um inalador de tênis sai pela porta e outro, de chinelo, fica no sofá; a Tia olha o relógio"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-264-macete.png",
+    "cena": "O inalador de chinelo se senta numa cadeira em forma de receptor e não sai mais, impedindo que uma campainha toque e feche as vias aéreas; ele segura um copo d'água vazio. O de tênis aperta o botão de outro receptor e sai correndo. A Tia observa, com a areia escorrendo devagar.",
+    "foco": "50% 40%",
+    "alt": "Tiotrópio senta no M3 e não sai"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man with COPD has daily dyspnea despite using albuterol as needed. A once-daily inhaled drug is added. Two weeks later, his breathlessness has improved, but he reports dry mouth and a slightly weaker urinary stream.",
+    "pergunta": "The added drug most likely acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Stimulation of beta-2 receptors, raising cAMP",
+        "quiz": "Beta-2 agonist"
+      },
+      "B": {
+        "texto": "Inhibition of phosphodiesterase-4",
+        "quiz": "PDE-4 inhibitor"
+      },
+      "C": {
+        "texto": "Blockade of M3 muscarinic receptors",
+        "quiz": "M3 antagonist"
+      },
+      "D": {
+        "texto": "Blockade of leukotriene receptors",
+        "quiz": "Leukotriene blocker"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Tiotrópio *bloqueia o M3*",
+    "certa": [
+      "O *tiotropium* é um antimuscarínico de longa ação (*LAMA*): bloqueia os receptores *M3* da musculatura lisa brônquica, impede a broncoconstrição causada pela acetilcolina vagal (via Gq e IP3) e dura 24 horas. Os efeitos anticolinérgicos explicam a boca seca e o jato urinário mais fraco, sobretudo em quem tem hiperplasia prostática. Já o *albuterol* é agonista *beta-2* de curta ação, que aumenta o cAMP e relaxa o músculo em minutos."
+    ],
+    "termos": [
+      "tiotropium",
+      "M3 muscarinic receptor",
+      "albuterol",
+      "beta-2 agonist"
+    ],
+    "erradas": {
+      "A": "Estimular o beta-2 e aumentar o cAMP é o mecanismo do albuterol e dos LABA, que dão tremor e taquicardia, não boca seca.",
+      "B": "Inibir a PDE-4 é o mecanismo do *roflumilast*, um comprimido que reduz exacerbações e causa náusea e diarreia.",
+      "D": "Bloquear o receptor de leucotrieno é o mecanismo do *montelukast*, um comprimido usado mais na asma."
+    },
+    "macete": {
+      "frase": "*ALbuterol ALivia* na hora; o *TIOtrópio* é o tio que fica o dia todo",
+      "apoio": "O de tênis é o albuterol: corre para o beta-2, alivia na hora e vai embora. O de chinelo é o tiotrópio, a visita que chegou para o almoço e ficou até a novela: senta na cadeira do M3 por 24 horas e não deixa a acetilcolina fechar o brônquio. O copo vazio é a boca seca; o jato fraco é a bexiga sem o empurrão muscarínico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Esse aí fica 24 horas, e eu lembro."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Um paciente com DPOC ganha um inalador novo, e a vinheta conta o que melhorou e o que apareceu depois. Qual é o mecanismo?",
+    "palavras_chave": [
+      "COPD",
+      "inhaled therapy",
+      "adverse effects",
+      "Step 1 pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Farmacologia",
+      "#Pneumologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Inalador de 1 vez ao dia, boca seca e jato fraco: qual mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

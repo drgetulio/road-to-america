@@ -1,0 +1,95 @@
+{
+  "dia": 18,
+  "data": "2026-11-19",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Gravidez ectópica",
+  "conceito": "Ectopic pregnancy: hCG above the discriminatory zone with an empty uterus, methotrexate if stable",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-20",
+  "tom": null,
+  "gancho": "O embrião *estacionou* na contramão. Remédio resolve ou chama o guincho?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-018.png",
+    "cena": "Capitã Plaqueta, de colete e apito, para diante de uma rua estreita de mão única onde um carrinho pequeno estacionou na contramão, longe da garagem redonda, que está vazia. A plaquinha verde e vermelha está de lado.",
+    "foco": "50% 35%",
+    "alt": "O embrião estacionou na contramão. Remédio resolve ou chama o guincho?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-018-macete.png",
+    "cena": "Callback da contramão: as cinco luzinhas acendem em verde, a Capitã vira a plaquinha para o verde diante do espeto dos frasquinhos, e o espeto de ferramentas fica de prontidão num guincho estacionado na esquina.",
+    "alt": "Cinco luzes verdes, remédio na mesa"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has pelvic pain and spotting 7 weeks after her last period. Vital signs and laboratory studies are normal. β-hCG is 4,100 mIU/mL. Transvaginal ultrasound shows an empty uterus and a 2.5-cm adnexal mass with a yolk sac, no cardiac activity, and no free fluid. She prefers to avoid surgery.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Repeat β-hCG in 48 hours",
+        "quiz": "Repeat hCG in 48 h"
+      },
+      "B": {
+        "texto": "Laparoscopic salpingectomy",
+        "quiz": "Salpingectomy"
+      },
+      "C": {
+        "texto": "Intramuscular methotrexate",
+        "quiz": "IM methotrexate"
+      },
+      "D": {
+        "texto": "Dilation and curettage",
+        "quiz": "D&C"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Cinco luzes verdes, remédio na mesa",
+    "certa": [
+      "Útero vazio com beta-hCG acima da zona discriminatória e massa anexial com saco vitelino confirmam gravidez ectópica tubária. Ela está estável, sem rotura, com hCG abaixo de 5.000, massa menor que 3,5 cm, sem batimento cardíaco embrionário e prefere evitar cirurgia, então é candidata ao metotrexato intramuscular com dosagens seriadas de hCG. O metotrexato é um antagonista do folato que interrompe a divisão do trofoblasto."
+    ],
+    "termos": [
+      "ectopic pregnancy",
+      "discriminatory zone",
+      "methotrexate",
+      "beta-hCG"
+    ],
+    "erradas": {
+      "A": "Repetir o hCG serve para a gravidez de localização desconhecida, e aqui o ultrassom já mostrou a ectópica.",
+      "B": "A cirurgia é a escolha na instabilidade, na rotura ou quando o metotrexato é contraindicado, e ela prefere evitá-la.",
+      "D": "A curetagem procura tecido trofoblástico no útero, mas o útero está vazio e a gestação está na tuba."
+    },
+    "macete": {
+      "frase": "Contramão sem acidente pede *remédio*; acidente pede *guincho*. Cinco luzes verdes e o metotrexato resolve.",
+      "apoio": "Pegadinha de prova: O NBME muda um detalhe para tirar o metotrexato da mesa: batimento cardíaco embrionário, líquido livre com instabilidade, hCG muito alto ou contraindicação ao remédio levam à cirurgia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na obstetrícia: uma gravidez fora do lugar e duas escolas no corredor, a do remédio e a do bisturi. A Capitã Plaqueta confere os critérios da vinheta antes de apitar.",
+    "palavras_chave": [
+      "early pregnancy",
+      "pelvic pain",
+      "transvaginal ultrasound",
+      "obstetrics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Ectópica de 2,5 cm, hCG 4.100 e sem batimento: qual conduta?"
+  },
+  "exemplo": false
+}

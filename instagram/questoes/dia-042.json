@@ -1,0 +1,99 @@
+{
+  "dia": 42,
+  "data": "2026-12-13",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Deficiência de 21-hidroxilase (dia 10), Hipersensibilidade tipo I (dia 36), Relação ventilação-perfusão (dia 38)",
+  "conceito": "Remix: 21-hydroxylase deficiency + Type I hypersensitivity + Shunt vs dead space",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": [
+    10,
+    36,
+    38
+  ],
+  "explicacao_em": "2026-12-14",
+  "gancho": "O camarão do dia 36 voltou, e agora o *oxímetro* entrou na conversa",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito, de jaleco amassado, está num ponto de ônibus à beira-mar, ao lado de um quiosque de pipoca que solta fumaça logo depois de um prato de camarão passar. Um vinil pequeno está colado no poste.",
+    "foco": "50% 35%",
+    "alt": "Mito num ponto de ônibus à beira-mar, ao lado de um quiosque de pipoca que solta fumaça.",
+    "arquivo": "dia-042.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do ponto: alguém aumenta o fluxo de bolinhas de oxigênio, e mesmo pelos canudinhos amassados elas chegam e enchem o ônibus, que sai lotado. Ao longe, um ponto alagado continua com o ônibus vazio, não importa quanto oxigênio chegue. Mito comemora com o café erguido.",
+    "alt": "Canudo amassado enche o ônibus com oxigênio",
+    "arquivo": "dia-042-macete.png"
+  },
+  "questao": {
+    "vinheta": "Twenty minutes after eating shrimp, a 24-year-old woman has diffuse urticaria and widespread expiratory wheezing. Pulse oximetry shows 86% on room air, rising to 98% with 100% oxygen by face mask. Chest x-ray shows hyperinflation without infiltrates. PaCO2 is 34 mm Hg.",
+    "pergunta": "Which mechanism best explains her hypoxemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Low ventilation-perfusion units",
+        "quiz": "Low V/Q units"
+      },
+      "B": {
+        "texto": "Right-to-left intrapulmonary shunt",
+        "quiz": "Intrapulmonary shunt",
+        "dia": 38
+      },
+      "C": {
+        "texto": "Diffusion limitation",
+        "quiz": "Diffusion limitation"
+      },
+      "D": {
+        "texto": "Alveolar hypoventilation",
+        "quiz": "Hypoventilation"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Canudo amassado enche o ônibus com oxigênio",
+    "certa": [
+      "Camarão, urticária e sibilos difusos são a reação tipo I do dia 36: a IgE no mastócito libera histamina e leucotrienos, e o broncoespasmo deixa muitos alvéolos mal ventilados, mas ainda perfundidos. São *low V/Q units*, e por isso a saturação sobe bem com oxigênio a 100%: o gás extra acaba chegando aos alvéolos mal ventilados. No *shunt* do dia 38, o sangue passa por alvéolos sem ventilação nenhuma, e o oxigênio quase não ajuda."
+    ],
+    "termos": [
+      "low V/Q units",
+      "bronchospasm",
+      "type I hypersensitivity",
+      "response to 100% oxygen"
+    ],
+    "erradas": {
+      "B": "Dia 38: no shunt, oxigênio a 100% quase não mexe a PaO2, e aqui a saturação foi de 86% para 98%.",
+      "C": "Limitação da difusão aparece com membrana espessa, como na fibrose, sem sibilos e sem urticária.",
+      "D": "Na hipoventilação a PaCO2 sobe; aqui ela está baixa, em 34, porque a paciente respira rápido."
+    },
+    "macete": {
+      "frase": "Canudo amassado é *V/Q baixo*: mais oxigênio força a entrada e o ônibus enche. Ponto alagado é shunt, e aí não adianta.",
+      "apoio": "Pegadinha de prova: O NBME usa a resposta ao oxigênio a 100% para separar V/Q baixo, que melhora bem, de shunt, que quase não melhora.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão juntando a pipoca do tipo I (dia 36) e o ponto de ônibus alagado (dia 38), mais um intruso. O bônus do macete traz o forno 21 da padaria (dia 10). Cada alternativa que já apareceu leva o selo do dia, e selo não é gabarito.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Saturação de 86% para 98% com O2 após o camarão: qual mecanismo?"
+  },
+  "exemplo": false
+}

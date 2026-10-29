@@ -1,0 +1,97 @@
+{
+  "dia": 13,
+  "data": "2026-11-14",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Ponto de corte da HbA1c",
+  "conceito": "Lowering a diagnostic cutoff (HbA1c): sensitivity rises, specificity falls",
+  "personagem": "Viés",
+  "gancho_data": "Dia Mundial do Diabetes (14/11).",
+  "remix_de": null,
+  "explicacao_em": "2026-11-15",
+  "tom": null,
+  "gancho": "Dia Mundial do Diabetes: a *régua* da HbA1c mudou de lugar. Quem ganha e quem perde?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-013.png",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, está num barquinho num lago calmo segurando duas redes de pesca, uma de malha larga e outra de malha bem fina, sem decidir qual jogar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "O Viés, num barquinho, segura duas redes de pesca: uma de malha larga e outra de malha fina."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-013-macete.png",
+    "cena": "Callback do lago: a rede de malha fina veio lotada, com todos os peixes e também o chinelo, a garrafa e o envelope de recibos. Na margem, um balde verde de peixes e um balde vermelho enchendo de entulho, e o Viés conta o entulho com a lupa.",
+    "alt": "Malha fina pega peixe e chinelo"
+  },
+  "questao": {
+    "vinheta": "A health system lowers the HbA1c cutoff for diagnosing diabetes in its screening program from 6.5% to 6.0%. The test itself and the population screened do not change.",
+    "pergunta": "Which change in test performance is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Higher sensitivity and lower specificity",
+        "quiz": "Sens ↑, Spec ↓"
+      },
+      "B": {
+        "texto": "Lower sensitivity and higher specificity",
+        "quiz": "Sens ↓, Spec ↑"
+      },
+      "C": {
+        "texto": "Higher sensitivity and higher specificity",
+        "quiz": "Sens ↑, Spec ↑"
+      },
+      "D": {
+        "texto": "Higher positive and lower negative predictive value",
+        "quiz": "PPV ↑, NPV ↓"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Malha fina pega peixe e chinelo",
+    "certa": [
+      "Baixar o ponto de corte transforma em positivo quem tem HbA1c entre 6,0% e 6,4%: quase nenhum doente escapa (menos falsos negativos, sensibilidade sobe), mas entram mais pessoas sem diabetes (mais falsos positivos, especificidade cai). Com mais falsos positivos, o valor preditivo positivo cai e o negativo sobe. Quando só o ponto de corte muda, sensibilidade e especificidade andam em sentidos opostos."
+    ],
+    "termos": [
+      "diagnostic cutoff",
+      "sensitivity",
+      "specificity",
+      "positive predictive value",
+      "HbA1c"
+    ],
+    "erradas": {
+      "B": "Esse é o efeito de subir o ponto de corte, que deixa o teste mais exigente.",
+      "C": "Mudar só o ponto de corte não melhora as duas ao mesmo tempo; para isso seria preciso um teste melhor.",
+      "D": "Com mais falsos positivos, o VPP cai e o VPN sobe, o contrário do que diz a alternativa."
+    },
+    "macete": {
+      "frase": "Baixar o ponto de corte é cair na *malha fina*: pega todo mundo que deve (sensibilidade sobe) e também quem só esqueceu um recibo (especificidade cai).",
+      "apoio": "Pegadinha de prova: O NBME mostra duas curvas sobrepostas, de doentes e sadios, e pergunta o que acontece ao mover a linha do corte para a esquerda; lembre também do efeito nos valores preditivos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a régua da HbA1c mudou de lugar, e o exame e a população continuam os mesmos. Leia as quatro alternativas com calma: o Viés está no barco, e a pressa de quem faz bioestatística no fim do bloco é o anzol dele.",
+    "palavras_chave": [
+      "HbA1c",
+      "screening program",
+      "test performance",
+      "biostatistics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#DiaMundialDoDiabetes",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "O corte da HbA1c caiu de 6,5% para 6,0%: o que muda no teste?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 209,
+  "data": "2027-05-29",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Razão de verossimilhança",
+  "conceito": "Positive likelihood ratio: sensitivity divided by (1 minus specificity)",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-30",
+  "tom": null,
+  "gancho": "O *VAR* do diagnóstico: quanto um teste positivo vale?",
+  "gancho_apoio": "LR positiva do \"acho que é a C\": 1,0. Não muda nada.",
+  "imagem": {
+    "arquivo": "dia-209.png",
+    "cena": "O fantasminha Viés, com apito e crachá de árbitro em branco, espia de trás de uma tabela 2x2 desenhada no gramado; ao lado, uma tela de VAR apagada e um balão de chance ainda pequeno amarrado na trave.",
+    "foco": "50% 35%",
+    "alt": "O VAR do diagnóstico: quanto um teste positivo vale?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-209-macete.png",
+    "cena": "A tela do VAR acende com uma lupa enorme; o balão de chance na trave cresce quatro vezes e meia, e o Viés, flagrado, tropeça no próprio lençol tentando dividir pela especificidade inteira.",
+    "alt": "LR+ = sensibilidade sobre (1 menos especificidade)"
+  },
+  "questao": {
+    "vinheta": "A new rapid antigen test for streptococcal pharyngitis is compared with throat culture as the reference standard. Its sensitivity is 90%, and its specificity is 80%.",
+    "pergunta": "What is the positive likelihood ratio of this test?",
+    "alternativas": {
+      "A": {
+        "texto": "0.125",
+        "quiz": "0.125"
+      },
+      "B": {
+        "texto": "1.125",
+        "quiz": "1.125"
+      },
+      "C": {
+        "texto": "4.5",
+        "quiz": "4.5"
+      },
+      "D": {
+        "texto": "9.0",
+        "quiz": "9.0"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "LR+ = sensibilidade sobre *(1 menos especificidade)*",
+    "certa": [
+      "A *positive likelihood ratio* compara a chance de um teste positivo em doentes (verdadeiro positivo, a sensibilidade) com a chance em não doentes (falso positivo, 1 menos a especificidade): 0,90/0,20 = 4,5. Ela multiplica as *pretest odds* para dar as *posttest odds*. Valores acima de 10 mudam muito a chance; 4,5 muda de forma moderada."
+    ],
+    "termos": [
+      "positive likelihood ratio",
+      "sensitivity",
+      "specificity",
+      "pretest odds"
+    ],
+    "erradas": {
+      "A": "0,125 é a LR negativa: (1 menos sensibilidade) sobre especificidade, ou 0,10/0,80.",
+      "B": "1,125 é sensibilidade dividida pela especificidade (0,90/0,80), uma conta sem significado clínico.",
+      "D": "9,0 é sensibilidade dividida por (1 menos sensibilidade), que mistura só doentes e não compara com os sadios."
+    },
+    "macete": {
+      "frase": "LR é o *VAR do diagnóstico*: o replay positivo multiplica a chance que você já tinha. Conta do VAR positivo: *verdadeiro positivo sobre falso positivo*, sensibilidade sobre (1 menos especificidade). O Viés quer que você divida pela especificidade inteira.",
+      "apoio": "O NBME oferece a LR negativa e a razão sensibilidade sobre especificidade como distratores; lembre que LR positiva é sensibilidade sobre (1 menos especificidade) e que ela não depende da prevalência.",
+      "fala": "Se você dividiu pela especificidade inteira, eu entrei."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés, com o fantasminha vestido de árbitro de vídeo. Um teste novo, sensibilidade e especificidade na mão e uma pergunta: quanto o resultado positivo muda a chance de doença?",
+    "palavras_chave": [
+      "rapid antigen test",
+      "throat culture",
+      "reference standard",
+      "diagnostic accuracy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sens 90%, espec 80%. Qual a LR positiva?"
+  },
+  "exemplo": false
+}

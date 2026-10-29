@@ -1,0 +1,99 @@
+{
+  "dia": 215,
+  "data": "2027-06-04",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Inibidores da bomba de prótons",
+  "conceito": "Proton pump inhibitors: irreversibly block H+/K+ ATPase, long-term use lowers magnesium and B12",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-05",
+  "tom": null,
+  "gancho": "Sextou: *um remédio de muitos anos* e um exame que veio baixo",
+  "gancho_apoio": "Receita sem data de revisão é como cronograma sem simulado: ninguém sabe se ainda funciona.",
+  "imagem": {
+    "arquivo": "dia-215.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, assopra a poeira de um frasco antigo, cercada por folhas de calendário que voam. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida assopra a poeira de um frasco antigo entre folhas de calendário"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-215-macete.png",
+    "cena": "Callback: ao lado da farmácia aparece um posto de combustível em forma de estômago. A Tia Meia-Vida passa um cadeado grande na bomba do posto, e a loja de conveniência está com as prateleiras de cristais prateados e de caixinhas vermelhas vazias.",
+    "foco": "50% 45%",
+    "alt": "Bomba de prótons trancada, magnésio e B12 em falta"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old woman has had muscle cramps and hand tremor for 2 weeks. She has taken the same drug daily for 7 years for gastroesophageal reflux disease. Chvostek sign is positive. Serum magnesium is 0.9 mg/dL, calcium 7.6 mg/dL, and vitamin B12 is low.",
+    "pergunta": "Which is the mechanism of action of her drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Irreversible inhibition of the parietal cell H+/K+ ATPase",
+        "quiz": "Blocks H+/K+ ATPase"
+      },
+      "B": {
+        "texto": "Competitive blockade of histamine H2 receptors on parietal cells",
+        "quiz": "Blocks H2 receptors"
+      },
+      "C": {
+        "texto": "Activation of prostaglandin E1 receptors",
+        "quiz": "PGE1 analog"
+      },
+      "D": {
+        "texto": "Neutralization of acid by magnesium hydroxide",
+        "quiz": "Mg hydroxide antacid"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Bomba de prótons trancada, *magnésio e B12* em falta",
+    "certa": [
+      "O omeprazol e os outros *proton pump inhibitors* se ligam de forma covalente e *irreversible* à *H+/K+ ATPase* da célula parietal; o ácido só volta quando a célula fabrica bombas novas. Com anos de uso, cai a absorção intestinal de magnésio (*hypomagnesemia*), e o magnésio baixo derruba o PTH e o cálcio. Sem ácido, a B12 não se solta da proteína do alimento; também aumentam o risco de fratura e de infecção por *C. difficile*."
+    ],
+    "termos": [
+      "proton pump inhibitor",
+      "H+/K+ ATPase",
+      "hypomagnesemia",
+      "vitamin B12 deficiency"
+    ],
+    "erradas": {
+      "B": "Os *H2 receptor antagonists*, como a famotidina, bloqueiam de forma reversível e competitiva e não se associam a hipomagnesemia.",
+      "C": "O *misoprostol* é análogo de PGE1, protege a mucosa e dá diarreia; também não derruba o magnésio.",
+      "D": "O hidróxido de magnésio neutraliza o ácido e, se mudasse o exame, subiria o magnésio, não baixaria."
+    },
+    "macete": {
+      "frase": "Prazol é *cadeado na bomba do posto*",
+      "apoio": "Na imagem, a Tia Meia-Vida passa um cadeado na bomba de combustível do posto em forma de estômago: só abre quando chega bomba nova. Com o posto fechado por anos, a loja de conveniência fica sem magnésio e sem B12 na prateleira.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Receita de sete anos sem revisão, também não."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. Uma senhora toma o mesmo remédio há anos para um problema comum, e agora os exames mudaram. A doença de base e os achados estão na vinheta. Como age esse remédio?",
+    "palavras_chave": [
+      "long-term medication",
+      "laboratory changes",
+      "mechanism of action",
+      "Step 1 pharmacology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Gastroenterologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Remédio de 7 anos e magnésio baixo: como age?"
+  },
+  "reel": null,
+  "exemplo": false
+}

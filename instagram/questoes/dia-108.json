@@ -1,0 +1,97 @@
+{
+  "dia": 108,
+  "data": "2027-02-17",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Afasias de Broca e de Wernicke",
+  "conceito": "Broca vs Wernicke aphasia: nonfluent frontal lesion vs fluent temporal lesion with poor comprehension",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-18",
+  "tom": null,
+  "gancho": "Seu Allen desmontou o rádio: *qual peça queimou*?",
+  "gancho_apoio": "Uma conversa saiu torta, e o manual tem quatro endereços possíveis.",
+  "imagem": {
+    "arquivo": "dia-108.png",
+    "cena": "Na bancada de uma oficina, Seu Allen desmonta com cuidado um rádio antigo e simpático, com um microfone na frente e uma antena do lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen desmonta com cuidado um rádio antigo com microfone na frente e antena do lado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-108-macete.png",
+    "cena": "Callback da oficina: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos de papel batem nela e caem sem entrar; o microfone da frente segue inteiro e brilhando. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A antena do rádio está torta e solta faíscas; os bilhetes batem nela e caem, e o microfone segue inteiro."
+  },
+  "questao": {
+    "vinheta": "A 71-year-old right-handed man has sudden difficulty communicating. He speaks fluently in long sentences filled with wrong and invented words, cannot follow simple spoken commands and cannot repeat a short phrase. He seems unaware of his errors. Strength and sensation are normal.",
+    "pergunta": "A lesion in which location most likely explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Left inferior frontal gyrus",
+        "quiz": "L inferior frontal gyrus"
+      },
+      "B": {
+        "texto": "Left arcuate fasciculus",
+        "quiz": "L arcuate fasciculus"
+      },
+      "C": {
+        "texto": "Left posterior superior temporal gyrus",
+        "quiz": "L post. sup. temporal"
+      },
+      "D": {
+        "texto": "Right posterior superior temporal gyrus",
+        "quiz": "R post. sup. temporal"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Wernicke: fala *fluente*, compreensão ruim",
+    "certa": [
+      "Fala fluente com parafasias e neologismos, compreensão ruim, repetição ruim e pouca noção do erro descrevem a afasia de Wernicke. A lesão fica na parte posterior do giro temporal superior esquerdo, território da divisão inferior da artéria cerebral média. Como não há área motora perto, força e sensibilidade costumam estar normais."
+    ],
+    "termos": [
+      "Wernicke aphasia",
+      "superior temporal gyrus",
+      "arcuate fasciculus",
+      "conduction aphasia"
+    ],
+    "erradas": {
+      "A": "O giro frontal inferior esquerdo é a área de Broca: fala travada e pouco fluente, compreensão preservada, muitas vezes com fraqueza da face e do braço direitos.",
+      "B": "Lesão do fascículo arqueado dá afasia de condução: fala fluente e compreensão boa, com falha só na repetição.",
+      "D": "Num destro, a linguagem fica no hemisfério esquerdo; o temporal direito cuida da prosódia, o tom emocional da fala."
+    },
+    "macete": {
+      "frase": "Broca é o *microfone*, Wernicke é a *antena*",
+      "apoio": "Pegadinha de prova: O NBME usa a repetição para separar: se só a repetição falha, é condução; se a repetição está preservada, é transcortical; e cobra o território da cerebral média.",
+      "fala": "Desmontei o rádio: o microfone está inteiro. O problema é a antena."
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê, neuroanatomia: um homem destro com uma dificuldade súbita de conversa. O que ele fala, o que ele entende e o que ele repete estão na vinheta, e cada detalhe aponta um endereço no cérebro.",
+    "palavras_chave": [
+      "fluent speech",
+      "paraphasias",
+      "poor comprehension",
+      "impaired repetition"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Neurologia",
+      "#Neurology",
+      "#Neuroanatomia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Fala fluente, não entende nem repete: onde está a lesão?"
+  },
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 20,
+  "data": "2026-11-21",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Recusa de transfusão por adulto capaz",
+  "conceito": "Competent adult Jehovah Witness refusing blood: respect the informed refusal and offer alternatives",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-22",
+  "tom": null,
+  "gancho": "Recusa de transfusão no plantão: a Capitã Plaqueta consulta o *manual de ética*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-020.png",
+    "cena": "Capitã Plaqueta, de colete e quepe, está diante de uma placa amarela em losango com uma balança desenhada, num corredor de hospital calmo e bem iluminado. Uma pequena tabela 2x2 em branco aparece num quadro na parede.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta diante de uma placa amarela em losango com uma balança desenhada, num corredor de hospital calmo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-020-macete.png",
+    "cena": "Callback da placa: em primeiro plano, uma mão tranquila segura a caneta-tinteiro e assina um documento. A Capitã guarda o apito no bolso e oferece uma bandeja com as alternativas aceitas, desenhadas de forma simples: uma bolsinha de soro cor de ferrugem (ferro intravenoso) e um frasquinho. A balança continua nivelada.",
+    "alt": "A caneta é dela"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old woman with heavy menstrual bleeding has fatigue and exertional dyspnea. Hemoglobin is 6.6 g/dL; she is hemodynamically stable. She is a Jehovah's Witness and, after a full discussion of risks, clearly declines any blood transfusion. She has decision-making capacity.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "Seek a court order to authorize transfusion",
+        "quiz": "Court order"
+      },
+      "B": {
+        "texto": "Ask her husband to consent to transfusion",
+        "quiz": "Ask her husband"
+      },
+      "C": {
+        "texto": "Plan to transfuse if she loses consciousness later",
+        "quiz": "Transfuse when unconscious"
+      },
+      "D": {
+        "texto": "Respect her refusal and offer blood alternatives",
+        "quiz": "Respect refusal + IV iron"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "A caneta é dela",
+    "certa": [
+      "Uma adulta capaz, informada dos riscos, tem o direito de recusar qualquer tratamento, inclusive sangue, mesmo que a recusa possa custar a vida. O papel do médico é respeitar a decisão, registrar a conversa e oferecer tudo o que ela aceitar: ferro intravenoso, eritropoetina, controle do sangramento (com ácido tranexâmico ou terapia hormonal) e técnicas de preservação de sangue. Também cabe perguntar, em privado, quais derivados e procedimentos ela aceita, porque isso varia de pessoa para pessoa."
+    ],
+    "termos": [
+      "informed refusal",
+      "decision-making capacity",
+      "patient autonomy",
+      "blood management alternatives"
+    ],
+    "erradas": {
+      "A": "Ordem judicial é para quem não tem capacidade ou para menores, e não para contrariar uma adulta capaz.",
+      "B": "O marido não decide por uma paciente que tem capacidade, e o substituto só entra quando ela não pode decidir.",
+      "C": "Uma recusa clara, feita com capacidade, continua valendo se ela perder a consciência."
+    },
+    "macete": {
+      "frase": "A Capitã manda no trânsito do sangue, não na decisão: adulta capaz e informada segura a *própria caneta*. Perder a consciência não passa a caneta para ninguém.",
+      "apoio": "Pegadinha de prova: O NBME testa a recusa que \"perderia a validade\" quando a paciente piora, e ela não perde; a resposta muda se for criança, se houver dúvida sobre a capacidade ou se ninguém souber a vontade dela.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de ética: uma recusa de transfusão por motivo religioso, um tema delicado em que a prova cobra a regra com precisão e respeito. Quem decide, e em que condições? A vinheta traz tudo.",
+    "palavras_chave": [
+      "Jehovah's Witness",
+      "blood transfusion",
+      "anemia",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Adulta capaz e estável recusa sangue: qual a melhor conduta?"
+  },
+  "exemplo": false
+}

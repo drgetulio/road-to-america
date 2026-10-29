@@ -1,0 +1,95 @@
+{
+  "dia": 52,
+  "data": "2026-12-23",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Desenvolvimento humano",
+  "topico": "Puberdade e estágios de Tanner",
+  "conceito": "Puberty onset: thelarche in girls and testicular enlargement in boys are the first signs",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-24",
+  "gancho": "Uma mãe preocupada na consulta, e o Seu Allen conferindo o *manual*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma estação de trem antiga com quatro vagões estacionados; o Seu Allen, de avental de marceneiro, segura a folha do manual de montagem do trem, e setinhas de manual pairam sobre os vagões sem mostrar qual vai na frente.",
+    "foco": "50% 35%",
+    "alt": "Uma mãe preocupada na consulta, e o Seu Allen conferindo o manual",
+    "arquivo": "dia-052.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o trem parte com a locomotiva em forma de broto de flor; atrás vêm um vagão com grama, um vagão com uma mola e um último vagão com uma lua crescente, em fila. O Seu Allen confere a ordem no manual.",
+    "alt": "O primeiro vagão das meninas é o broto mamário",
+    "arquivo": "dia-052-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 10-year-old girl is brought because her mother noticed a small, firm, mildly tender nodule beneath the right areola 2 weeks ago. There is no pubic or axillary hair. Her height has followed the 50th percentile, with a recent modest increase in growth velocity. She is otherwise healthy.",
+    "pergunta": "Which is the most likely explanation for this finding?",
+    "alternativas": {
+      "A": {
+        "texto": "Breast fibroadenoma",
+        "quiz": "Fibroadenoma"
+      },
+      "B": {
+        "texto": "Premature adrenarche",
+        "quiz": "Premature adrenarche"
+      },
+      "C": {
+        "texto": "Central precocious puberty",
+        "quiz": "Precocious puberty"
+      },
+      "D": {
+        "texto": "Normal onset of puberty",
+        "quiz": "Normal puberty"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O primeiro vagão das meninas é o *broto mamário*",
+    "certa": [
+      "Nas meninas, o primeiro sinal de puberdade costuma ser a *thelarche*, o broto mamário (*Tanner stage 2*), que pode começar de um lado só e ser um pouco doloroso. Nos meninos, o primeiro sinal é o aumento do volume testicular. Aos 10 anos, dentro da faixa normal de 8 a 13 anos para meninas, com crescimento na curva, o quadro é de *normal puberty*."
+    ],
+    "termos": [
+      "thelarche",
+      "Tanner stage 2",
+      "testicular enlargement",
+      "normal puberty"
+    ],
+    "erradas": {
+      "A": "Fibroadenoma é raro antes da puberdade completa e não explica um broto retroareolar com aceleração do crescimento.",
+      "B": "Adrenarca precoce traz pelos pubianos ou axilares e odor antes dos 8 anos, sem broto mamário.",
+      "C": "Puberdade precoce central em menina é o início antes dos 8 anos; aos 10, está no tempo certo."
+    },
+    "macete": {
+      "frase": "Meninas: *broto, pelo, pulo, menarca*. O primeiro vagão é o broto mamário, e ele pode chegar de um lado só.",
+      "apoio": "Pegadinha de prova: O NBME descreve o broto unilateral e doloroso para assustar; é normal, e o primeiro sinal no menino é o aumento testicular, não os pelos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Seu Allen e uma consulta que todo pediatra conhece: a mãe preocupada com uma mudança no corpo da filha. Quatro explicações na mesa; a idade e os sinais da vinheta escolhem uma.",
+    "palavras_chave": [
+      "pediatric endocrinology",
+      "10-year-old girl",
+      "growth",
+      "parental concern"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Pediatria",
+      "#Pediatrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nódulo subareolar aos 10 anos, sem pelos: o que explica o achado?"
+  },
+  "exemplo": false
+}

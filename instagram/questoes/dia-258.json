@@ -1,0 +1,100 @@
+{
+  "dia": 258,
+  "data": "2027-07-17",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "EMTALA",
+  "conceito": "EMTALA: screen and stabilize emergencies regardless of insurance before any transfer",
+  "personagem": null,
+  "anfitriao": "Dona Bússola",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-18",
+  "tom": null,
+  "gancho": "Dor no peito no pronto-socorro americano e a pergunta da recepção: *débito ou crédito?*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-258.png",
+    "cena": "Na entrada de um pronto-socorro com catraca de estádio, Dona Bússola segura o caderninho e olha uma maquininha de cartão em cima do balcão. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Dona Bússola na catraca do pronto-socorro, diante de uma maquininha de cartão"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-258-macete.png",
+    "cena": "Callback: a catraca está escancarada e um cinto de segurança afivelado envolve um coração sorridente; Dona Bússola, de ponteiro firme, deixa a maquininha de cartão de lado. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A catraca aberta e um coração de cinto afivelado; a maquininha fica de lado"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old uninsured man arrives at the emergency department of a private hospital with 1 hour of crushing chest pain. While he waits in triage, a registration clerk suggests sending him to the county hospital 15 minutes away, which accepts uninsured patients. He is alert, and his vital signs are stable.",
+    "pergunta": "Which is the most appropriate action?",
+    "alternativas": {
+      "A": {
+        "texto": "Arrange transfer to the county hospital",
+        "quiz": "Transfer to county"
+      },
+      "B": {
+        "texto": "Medical screening exam and stabilization",
+        "quiz": "Screen and stabilize"
+      },
+      "C": {
+        "texto": "Obtain a payment guarantee before evaluation",
+        "quiz": "Payment guarantee first"
+      },
+      "D": {
+        "texto": "Discharge him with a cardiology referral",
+        "quiz": "Discharge + referral"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*EMTALA*: avaliar e estabilizar",
+    "certa": [
+      "A *EMTALA*, lei federal americana, obriga todo hospital que participa do Medicare e tem pronto-socorro a fazer um *medical screening examination* em quem chega pedindo atendimento, sem depender de seguro ou de capacidade de pagar. Se houver condição de emergência, o hospital precisa *stabilize* o paciente; a transferência só é permitida depois disso, ou quando o médico certifica que o benefício supera o risco e o hospital de destino aceita. Perguntar sobre seguro não pode atrasar a avaliação."
+    ],
+    "termos": [
+      "EMTALA",
+      "medical screening examination",
+      "stabilization",
+      "patient dumping"
+    ],
+    "erradas": {
+      "A": "Transferir antes de avaliar e estabilizar, por motivo financeiro, é o *patient dumping* que a EMTALA proíbe.",
+      "C": "Exigir garantia de pagamento antes da avaliação viola a EMTALA.",
+      "D": "Dar alta sem avaliar uma dor torácica que pode ser infarto viola a lei e o dever de cuidado."
+    },
+    "macete": {
+      "frase": "*Catraca livre*: triagem e estabilização *antes* de falar do plano",
+      "apoio": "Pela EMTALA, todo pronto-socorro de hospital que recebe Medicare examina e estabiliza quem chega, com ou sem seguro. Primeiro o estetoscópio (avaliação), depois o cinto (estabilização) e só então a ambulância, se a transferência for necessária e aceita. A maquininha do Viés é o viés financeiro: fica para depois.",
+      "fala": "Meu norte é o paciente. No inglês da prova, \"county hospital\" nunca vem antes de \"stabilize\"."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com a Dona Bússola, num pronto-socorro dos Estados Unidos. A vinheta conta quem chegou, com que queixa e o que a recepção sugeriu. O que fazer?",
+    "palavras_chave": [
+      "emergency department",
+      "US health law",
+      "chest pain",
+      "Step 2 CK"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#EticaMedica",
+      "#MedicinaNosEUA",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Sem seguro e com dor no peito: o que a lei americana manda fazer?"
+  },
+  "reel": null,
+  "exemplo": false
+}

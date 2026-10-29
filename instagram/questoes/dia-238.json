@@ -1,0 +1,105 @@
+{
+  "dia": 238,
+  "data": "2027-06-27",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Malária e hipnozoítos (dia 120), Doença do enxerto contra o hospedeiro (dia 211), E. coli êntero-hemorrágica (dia 232)",
+  "conceito": "Remix: Plasmodium vivax and ovale + Graft-versus-host disease + EHEC O157",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    120,
+    211,
+    232
+  ],
+  "explicacao_em": "2027-06-28",
+  "tom": null,
+  "gancho": "Remix de Domingo: *três suspeitos no banco de espera* do Seu Néfron",
+  "gancho_apoio": "Remix de Domingo: três conceitos já vistos (dias 120, 211 e 232) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-238.png",
+    "cena": "Repartição do Seu Néfron: de lupa na mão, ele examina um banco de espera com três silhuetas sentadas, de costas. Fundo limpo. Um vinil pequeno no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron, de lupa, examina três silhuetas no banco de espera"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-238-macete.png",
+    "cena": "Callback: um bacilinho de chapéu de palha joga confete vermelho nas peneirinhas do Seu Néfron, que tenta protegê-las com as mãos, e discos vermelhos se partem como peças de quebra-cabeça. Fundo limpo.",
+    "foco": "50% 45%",
+    "alt": "O bacilinho joga confete nas peneiras do Seu Néfron e discos vermelhos se partem"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old girl had bloody diarrhea for 3 days after a farm visit. One week later she is pale, has petechiae, and is passing little urine. Hemoglobin is 7.8 g/dL, platelets 42,000/mm3, and creatinine 2.3 mg/dL. The smear shows schistocytes. She has no history of travel or transplant.",
+    "pergunta": "Which mechanism best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Shiga toxin inactivating the 60S ribosomal subunit",
+        "quiz": "Shiga toxin, 60S",
+        "dia": 232
+      },
+      "B": {
+        "texto": "Donor T cells attacking host gut epithelium",
+        "quiz": "Donor T cells in the gut",
+        "dia": 211
+      },
+      "C": {
+        "texto": "Dormant liver forms that reactivate and invade red cells",
+        "quiz": "Reactivated hypnozoites",
+        "dia": 120
+      },
+      "D": {
+        "texto": "Autoantibodies against ADAMTS13",
+        "quiz": "Anti-ADAMTS13 antibody"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Diarreia com sangue e rim parado: *toxina Shiga*",
+    "certa": [
+      "Dia 232: depois de diarreia com sangue (contato com animais de fazenda ou carne malpassada), anemia hemolítica com esquizócitos, plaquetas baixas e lesão renal aguda formam a *hemolytic uremic syndrome*. A *Shiga-like toxin* da EHEC O157:H7 inativa a subunidade *60S* do ribossomo nas células endoteliais do glomérulo; o endotélio lesado forma microtrombos que fragmentam as hemácias e consomem plaquetas."
+    ],
+    "termos": [
+      "hemolytic uremic syndrome",
+      "Shiga-like toxin (60S)",
+      "schistocytes",
+      "EHEC O157:H7"
+    ],
+    "erradas": {
+      "B": "Dia 211: a GVHD precisa de linfócitos T de um doador, e ela nunca foi transplantada.",
+      "C": "Dia 120: hipnozoítos são do P. vivax e do P. ovale e causam recaídas de febre depois de viagem; ela não viajou e não tem febre cíclica.",
+      "D": "Anticorpo contra ADAMTS13 é a púrpura trombocitopênica trombótica, mais comum em adultos, com sintomas neurológicos e sem diarreia com sangue antes."
+    },
+    "macete": {
+      "frase": "*O157 não come sorbitol, mas come o rim*",
+      "apoio": "Na imagem, o bacilinho do arraiá joga confete de toxina nas peneiras do Seu Néfron: a toxina Shiga desliga o 60S do endotélio do glomérulo, formam-se microtrombos e as hemácias se partem. A GVHD não tem doador e a malária não tem viagem.",
+      "fala": "Sem carimbo, não sai. Sem filtro, não sai nada!"
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de Remix com o Seu Néfron. Uma criança com uma semana difícil, contada na vinheta junto com o hemograma, a creatinina e o esfregaço. Qual mecanismo explica?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Microbiology",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Diarreia com sangue, esquizócitos e pouca urina: mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

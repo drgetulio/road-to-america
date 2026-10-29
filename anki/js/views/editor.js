@@ -84,9 +84,11 @@ export default {
         return;
       }
     }
+    const pre = original || copiar ? null : preenchimento(params);
+    const retorno = retornoSeguro(params.get("retorno"));
     const base = original ? { ...original } : copiar && ctx.cardMap.get(copiar)
       ? { ...ctx.cardMap.get(copiar), id: "", baralho: "pessoal", status: "rascunho", autor_id: ctx.user.id, tags: [...ctx.cardMap.get(copiar).tags, "minha_versao"] }
-      : normalizeCard({ tipo: "basico", baralho: "pessoal", ...(lembrar() || {}) });
+      : normalizeCard({ tipo: "basico", baralho: "pessoal", ...(pre || lembrar() || {}) });
     const admin = isAdmin(ctx.user);
     const aprovadoComunidade = original && original.baralho === "comunidade" && original.status === "aprovado" && !admin;
 
@@ -98,6 +100,7 @@ export default {
         titulo: e(titulo),
         lead: original ? "" : "Um fato por card, resposta curta e o mecanismo no campo de explicação. O verificador ao lado aponta o que costuma atrapalhar a memória."
       }) +
+      (pre ? '<p class="alert alert--info">' + icon("cards") + "<span><b>Card preenchido a partir do item " + e(pre.de_questao || "") + " do simulado.</b> Reescreva a frente como uma pergunta curta, com um fato só, e confira o verso antes de salvar.</span></p>" : "") +
       (original && original.comentario_revisao && original.status === "rejeitado" ? '<p class="alert alert--aviso">' + icon("chat-text") + "<span><b>Comentário da curadoria:</b> " + e(original.comentario_revisao) + "</span></p>" : "") +
       '<div class="editor">' +
       '<form class="editor__form panel" novalidate data-form>' +
@@ -155,7 +158,7 @@ export default {
         destinoHtml(base, admin, original, aprovadoComunidade, revisar) +
         '<div class="editor__acts">' +
           '<button class="btn" type="submit" data-salvar>' + icon(revisar ? "seal-check" : "check") + (revisar ? "Salvar e aprovar" : original ? "Salvar alterações" : "Salvar card") + "</button>" +
-          '<a class="btn btn--ghost" href="' + (voltar === "estudar" ? "#/estudar" : voltar === "curadoria" || revisar ? "#/curadoria" : "#/cards") + '">Cancelar</a>' +
+          '<a class="btn btn--ghost" href="' + e(retorno || (voltar === "estudar" ? "#/estudar" : voltar === "curadoria" || revisar ? "#/curadoria" : "#/cards")) + '">' + (retorno ? "Voltar ao relatório" : "Cancelar") + "</a>" +
           '<p class="hint editor__kbd"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> salva</p>' +
         "</div>" +
       "</form>" +
@@ -314,6 +317,7 @@ export default {
           salvo.status === "em_revisao" ? "Card enviado para a revisão da comunidade. Enquanto isso, ele não aparece para os outros." :
           "Card salvo.";
         toast(msg, "ok");
+        if (retorno) { location.href = retorno; return; }
         if (revisar || voltar === "curadoria") ctx.go("#/curadoria");
         else if (voltar === "estudar") ctx.go("#/estudar");
         else if (original) ctx.go("#/cards");
@@ -362,6 +366,30 @@ function destinoHtml(base, admin, original, travado, revisar) {
   return '<fieldset class="field"><legend>Onde salvar</legend><div class="radios">' +
     opcoes.map(([v, r, d]) => '<label class="radio radio--card"><input type="radio" name="baralho" value="' + v + '"' + (v === atual ? " checked" : "") + "><span><b>" + e(r) + "</b><small>" + e(d) + "</small></span></label>").join("") +
     "</div></fieldset>";
+}
+
+/* Card pré-preenchido por outra página (relatório do simulado completo):
+   #/criar?frente=...&verso=...&extra=...&nota_pt=...&sistema=...&disciplina=...&tags=...&fonte=...&de_questao=...
+   O aluno revisa tudo no editor; nada é salvo sem ele tocar em Salvar. */
+export function preenchimento(params) {
+  if (!params || !params.get("frente")) return null;
+  const campo = (k, max) => String(params.get(k) || "").slice(0, max);
+  return {
+    tipo: "basico",
+    frente: campo("frente", 1000),
+    verso: campo("verso", 500),
+    extra: campo("extra", 1500),
+    nota_pt: campo("nota_pt", 1000),
+    sistema: campo("sistema", 60),
+    disciplina: campo("disciplina", 60),
+    tags: parseTags(campo("tags", 300)),
+    fonte: campo("fonte", 300),
+    de_questao: campo("de_questao", 40)
+  };
+}
+/* Só aceita voltar para uma página do próprio site (caminho relativo) */
+export function retornoSeguro(r) {
+  return typeof r === "string" && /^\.\.\/(simulado|questoes)\/[^\s"'<>]*$/.test(r) && !r.includes("//", 3) ? r : "";
 }
 
 function lembrar() {

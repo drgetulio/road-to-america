@@ -1,0 +1,95 @@
+{
+  "dia": 45,
+  "data": "2026-12-16",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Potencial de ação cardíaco",
+  "conceito": "Ventricular action potential: phase 0 fast Na influx, phase 2 plateau from L-type Ca channels",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-17",
+  "gancho": "O Mito pegou a *estrada do potencial de ação*. Em que curva a toxina bateu?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Mito, de jaleco amassado, dirige um carrinho numa estrada de montanha desenhada como a curva do potencial de ação: subida íngreme, pequeno pico, um trecho plano longo, a descida e um vale. Ele confere o mapa, com setinhas de manual em volta da estrada, sem que a imagem mostre onde está a mudança.",
+    "foco": "50% 35%",
+    "alt": "O Mito pegou a estrada do potencial de ação. Em que curva a toxina bateu?",
+    "arquivo": "dia-045.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: agora o planalto fica no foco; portões em forma de L deixam entrar bolinhas brancas de cálcio que sustentam a estrada plana. Um portão com cadeado faz o planalto afundar e encurtar, e o carrinho do Mito chega mais cedo à descida.",
+    "alt": "Fase 2 é o Planalto do Cálcio",
+    "arquivo": "dia-045-macete.png"
+  },
+  "questao": {
+    "vinheta": "An isolated human ventricular myocyte is paced while its membrane potential is recorded. A toxin that selectively blocks L-type voltage-gated calcium channels is added, and the force of contraction decreases.",
+    "pergunta": "Which phase of the ventricular action potential is most directly altered?",
+    "alternativas": {
+      "A": {
+        "texto": "Phase 0",
+        "quiz": "Phase 0"
+      },
+      "B": {
+        "texto": "Phase 1",
+        "quiz": "Phase 1"
+      },
+      "C": {
+        "texto": "Phase 2",
+        "quiz": "Phase 2"
+      },
+      "D": {
+        "texto": "Phase 4",
+        "quiz": "Phase 4"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Fase 2 é o *Planalto do Cálcio*",
+    "certa": [
+      "No miócito ventricular, a *phase 2 plateau* existe porque a entrada de cálcio pelos *L-type calcium channels* equilibra a saída de potássio. Esse cálcio também dispara a liberação de mais cálcio pelo retículo sarcoplasmático (*calcium-induced calcium release*), e é por isso que a contração enfraquece. Com o canal bloqueado, o platô fica mais curto e mais baixo."
+    ],
+    "termos": [
+      "ventricular action potential",
+      "phase 2 plateau",
+      "L-type calcium channel",
+      "calcium-induced calcium release"
+    ],
+    "erradas": {
+      "A": "A fase 0 é a subida rápida por entrada de sódio (canais rápidos de Na), que não depende do canal tipo L no ventrículo.",
+      "B": "A fase 1 é a repolarização rápida inicial pela corrente transitória de potássio para fora.",
+      "D": "A fase 4 do miócito ventricular é o repouso estável mantido pelos canais de potássio retificadores."
+    },
+    "macete": {
+      "frase": "Fase 2 é o *Planalto do Cálcio*: o canal L segura a estrada plana e dá força ao músculo. Fechou o portão L, o planalto afunda e a força cai.",
+      "apoio": "Pegadinha de prova: O NBME troca o miócito pelo nodo sinusal: no nodo, a fase 0 depende de cálcio tipo L, e no ventrículo, de sódio.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Mito na estrada do potencial de ação: uma toxina, um canal e quatro fases. Quem desenhou essa curva na lousa do cursinho sabe que ela cai em prova de tudo que é jeito.",
+    "palavras_chave": [
+      "ventricular myocyte",
+      "ion channels",
+      "cardiac electrophysiology",
+      "action potential"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology",
+      "#Cardiologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Bloqueio do canal de cálcio tipo L e contração fraca: qual fase?"
+  },
+  "exemplo": false
+}

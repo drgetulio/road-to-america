@@ -1,0 +1,95 @@
+{
+  "dia": 75,
+  "data": "2027-01-15",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Diuréticos de alça",
+  "conceito": "Loop diuretics: block NKCC2 in the thick ascending limb, ototoxicity and hypokalemia",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-16",
+  "gancho": "Seu Néfron de porteiro numa *rua de baladas* com quatro portarias",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, de gravata e carimbo, é o porteiro de uma rua de baladas desenhada como um tubo comprido e sinuoso, com quatro portarias ao longo do caminho; um comprimido simpático chega com uma placa de fechado sem letras.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron é porteiro de uma rua de baladas em forma de tubo, com quatro portarias; um comprimido chega com uma placa de fechado.",
+    "arquivo": "dia-075.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do tubo: o comprimido trancou o guichê da subida íngreme, onde um grupo de quatro bolinhas (uma azul, uma amarela e duas verdes) fica do lado de fora. Muita água desce pelo tubo, Seu Néfron carimba com força e a concha em forma de orelha vibra com ondinhas de zumbido.",
+    "alt": "A furosemida fecha o NKCC2",
+    "arquivo": "dia-075-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 70-year-old man with heart failure receives high-dose IV furosemide for pulmonary edema. Two days later he reports tinnitus and decreased hearing, and his serum potassium is 3.1 mEq/L.",
+    "pergunta": "Which transporter does this drug inhibit?",
+    "alternativas": {
+      "A": {
+        "texto": "Na-K-2Cl cotransporter in the loop of Henle",
+        "quiz": "NKCC2 in TAL"
+      },
+      "B": {
+        "texto": "Epithelial Na channel in the collecting duct",
+        "quiz": "ENaC"
+      },
+      "C": {
+        "texto": "Na-Cl cotransporter in the distal tubule",
+        "quiz": "NCC in DCT"
+      },
+      "D": {
+        "texto": "Carbonic anhydrase in the proximal tubule",
+        "quiz": "Carbonic anhydrase"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "A furosemida fecha o *NKCC2*",
+    "certa": [
+      "Os *loop diuretics* (furosemida, bumetanida, torsemida) bloqueiam o *NKCC2*, o cotransportador Na-K-2Cl da *thick ascending limb* da alça de Henle, que reabsorve cerca de 25% do sódio filtrado: daí a diurese potente. Mais sódio chega ao túbulo coletor e é trocado por potássio e hidrogênio, o que causa *hypokalemia* e alcalose metabólica. O mesmo tipo de transportador existe na orelha interna, e a dose alta pode dar *ototoxicity*."
+    ],
+    "termos": [
+      "loop diuretics",
+      "NKCC2",
+      "thick ascending limb",
+      "ototoxicity"
+    ],
+    "erradas": {
+      "B": "O ENaC é bloqueado pela amilorida e pelo triantereno, poupadores de potássio que tendem a elevar o K.",
+      "C": "O cotransportador Na-Cl do túbulo distal é o alvo dos tiazídicos, que não costumam causar ototoxicidade.",
+      "D": "A anidrase carbônica é o alvo da acetazolamida, que causa acidose metabólica, não alcalose."
+    },
+    "macete": {
+      "frase": "Alça é a *balada do quarteto*: fechou, sai sal, K e audição",
+      "apoio": "Pegadinha de prova: O NBME diferencia os diuréticos pelo cálcio: a alça aumenta a perda urinária de cálcio, e o tiazídico diminui.",
+      "fala": "Sem os quatro juntos, não entra. E sem carimbo, não sai."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o Seu Néfron de porteiro: quatro portarias ao longo do túbulo e um remédio que fechou uma delas. A vinheta traz o nome e os efeitos colaterais; o túbulo, você traz de casa.",
+    "palavras_chave": [
+      "heart failure",
+      "renal pharmacology",
+      "renal physiology",
+      "adverse effects"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Nephrology",
+      "#SextouNaFarmacia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Furosemida, zumbido e K de 3,1: qual transportador caiu?"
+  },
+  "exemplo": false
+}

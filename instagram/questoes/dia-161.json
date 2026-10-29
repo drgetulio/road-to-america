@@ -1,0 +1,92 @@
+{
+  "dia": 161,
+  "data": "2027-04-11",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: SCID por deficiência de ADA (dia 71), HPV e câncer do colo do útero (dia 127), Cólera (dia 155)",
+  "conceito": "Remix: ADA-deficient SCID + HPV 16 and 18 oncogenesis + Vibrio cholerae toxin",
+  "personagem": null,
+  "anfitriao": "Seu Allen",
+  "gancho_data": null,
+  "remix_de": [
+    71,
+    127,
+    155
+  ],
+  "explicacao_em": "2027-04-12",
+  "tom": null,
+  "gancho": "Teste do pezinho com *zero TREC*: o bebê está ótimo, o exame não. Quem travou?",
+  "gancho_apoio": "Remix com SCID por ADA (dia 71), HPV (dia 127) e cólera (dia 155), e um intruso.",
+  "imagem": {
+    "arquivo": "dia-161.png",
+    "cena": "Seu Allen, de lupa, examina uma caixa de peças de montar ainda fechada, sozinha numa bancada vazia. Fundo limpo. Um pequeno vinil no canto, assinatura do Remix.",
+    "foco": "50% 35%",
+    "alt": "Seu Allen examina com a lupa uma caixa de peças de montar ainda fechada numa bancada vazia."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-161-macete.png",
+    "cena": "Callback: da caixa saem peças de três formatos que não se encaixam porque falta a folha do manual, e ao lado um linfocitozinho redondo, já montado de fábrica, acena feliz. Fundo limpo.",
+    "alt": "Peças de três formatos não se encaixam sem o manual; ao lado, um linfocitozinho pronto de fábrica acena."
+  },
+  "questao": {
+    "vinheta": "A 4-week-old girl is referred because her newborn screen showed undetectable T-cell receptor excision circles. She is feeding well. Flow cytometry shows very low T and B cells with normal NK cells. Erythrocyte adenosine deaminase activity is normal. Her parents are first cousins.",
+    "pergunta": "Which mechanism best explains her lymphopenia?",
+    "alternativas": {
+      "A": {
+        "texto": "Mutation of the IL-2 receptor common gamma chain",
+        "quiz": "Common gamma chain defect"
+      },
+      "B": {
+        "texto": "Defective BTK-dependent B-cell maturation",
+        "quiz": "BTK defect"
+      },
+      "C": {
+        "texto": "Toxic dATP accumulation inhibiting DNA synthesis",
+        "quiz": "Toxic dATP buildup",
+        "dia": 71
+      },
+      "D": {
+        "texto": "Defective RAG-mediated V(D)J recombination",
+        "quiz": "RAG/V(D)J defect"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "T e B no chão, NK de pé: o defeito é *na recombinação*",
+    "certa": [
+      "TREC indetectável na triagem neonatal indica que quase não saem linfócitos T novos do timo. Quando T e B estão muito baixos e as NK estão normais (padrão T-B-NK+), o defeito está na recombinação V(D)J, feita pelas enzimas RAG1 e RAG2: sem montar o receptor de antígeno, nem o linfócito T nem o B amadurece, mas a NK, que não precisa de receptor rearranjado, segue normal. ADA normal afasta a SCID por ADA, e pais primos combinam com herança autossômica recessiva."
+    ],
+    "termos": [
+      "RAG1/RAG2 deficiency",
+      "V(D)J recombination",
+      "T-B-NK+ SCID",
+      "TREC"
+    ],
+    "erradas": {
+      "A": "A cadeia gama comum (SCID ligada ao X) derruba T e NK, mas costuma poupar o número de B (T-B+NK-), e o caso clássico é um menino.",
+      "B": "A falta de BTK (agamaglobulinemia de Bruton) derruba só os linfócitos B; a triagem de TREC seria normal, porque o timo funciona.",
+      "C": "Dia 71: o dATP tóxico da deficiência de ADA derruba T, B e NK; aqui a ADA é normal e as NK estão preservadas."
+    },
+    "macete": {
+      "frase": "*RAG* lê o manual do receptor: sem ele, T e B *não saem da caixa*",
+      "apoio": "Pegadinha de prova: O NBME pede o padrão de linfócitos: T-B-NK+ é RAG; T-B+NK- é cadeia gama comum (ligada ao X); T-B-NK- é ADA. A NK é a pista que separa.",
+      "fala": "Sobrou peça? Faltou o manual. Sem RAG, nenhum receptor sai montado da caixa."
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo com o Seu Allen e o manual de montagem do sistema imune: uma menina de 4 semanas, mamando bem, encaminhada pela triagem neonatal. A contagem de cada tipo de linfócito e dois exames que afastam suspeitos estão na vinheta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "TREC indetectável, T e B baixos, NK e ADA normais: qual mecanismo?"
+  },
+  "exemplo": false
+}

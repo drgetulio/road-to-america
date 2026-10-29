@@ -1,0 +1,87 @@
+{
+  "dia": 180,
+  "data": "2027-04-30",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Digoxina",
+  "conceito": "Digoxin: inhibits Na/K-ATPase, toxicity brings yellow vision and hyperkalemia",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-01",
+  "tom": null,
+  "gancho": "Tia Meia-Vida e *um mundo que mudou de cor* sem ser dia de jogo",
+  "gancho_apoio": "Um remédio antigo, um remédio novo na receita e um sintoma que ninguém esperava.",
+  "imagem": {
+    "arquivo": "dia-180.png",
+    "cena": "Na calçada da farmácia, a Tia Meia-Vida olha pela vitrine de uma loja vizinha onde bolinhas navy e verdes entram e saem como clientes. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "A Tia Meia-Vida olha a vitrine de uma loja vizinha por onde bolinhas navy e verdes entram e saem."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-180-macete.png",
+    "cena": "Callback: um galho de dedaleira trava a porta giratória da loja, as bolinhas verdes se amontoam do lado de fora e a vitrine fica amarela canarinho, enquanto a Tia Meia-Vida segura um frasco de antídoto. Fundo limpo.",
+    "alt": "Um galho de dedaleira trava a porta giratória, as bolinhas verdes ficam fora e a vitrine fica amarela."
+  },
+  "questao": {
+    "vinheta": "An 80-year-old woman takes digoxin for heart failure with atrial fibrillation. Two weeks after starting amiodarone, she has nausea, confusion, and yellow halos around lights. Serum potassium is 6.0 mEq/L, and ECG shows frequent ventricular ectopy.",
+    "pergunta": "Direct inhibition of which protein explains both the inotropic effect and the hyperkalemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Na+/K+-ATPase",
+        "quiz": "Na/K-ATPase"
+      },
+      "B": {
+        "texto": "Na+/Ca2+ exchanger",
+        "quiz": "Na/Ca exchanger"
+      },
+      "C": {
+        "texto": "L-type calcium channel",
+        "quiz": "L-type Ca channel"
+      },
+      "D": {
+        "texto": "Na-K-2Cl cotransporter",
+        "quiz": "Na-K-2Cl cotransporter"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Digoxina trava a *bomba Na/K*",
+    "certa": [
+      "A *digoxin* inibe diretamente a *Na+/K+-ATPase* do miócito: o sódio acumula dentro da célula, o *Na+/Ca2+ exchanger* tira menos cálcio e a contração fica mais forte. A mesma bomba parada no corpo todo deixa o potássio fora das células, e a *hyperkalemia* indica gravidade na intoxicação aguda. A amiodarona aumentou o nível da digoxina."
+    ],
+    "termos": [
+      "digoxin",
+      "Na+/K+-ATPase",
+      "hyperkalemia",
+      "digoxin immune Fab"
+    ],
+    "erradas": {
+      "B": "O trocador Na/Ca é afetado de forma indireta, pelo excesso de sódio; ele não é o alvo direto da droga.",
+      "C": "Bloquear o canal de cálcio tipo L é o mecanismo de verapamil e diltiazem, que diminuem a contração.",
+      "D": "O cotransportador Na-K-2Cl da alça de Henle é o alvo da furosemida, que tende a baixar o potássio."
+    },
+    "macete": {
+      "frase": "A digoxina *trava a catraca* (bomba Na/K): sódio dentro, potássio fora e o mundo *amarelo canarinho*",
+      "apoio": "Gatilhos: hipocalemia por diurético, insuficiência renal, amiodarona, verapamil, quinidina. Hipercalemia indica gravidade; antídoto é o Fab antidigoxina.",
+      "fala": "Mundo amarelo canarinho e não é dia de jogo do Brasil? Confere a digoxina."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: uma receita com remédio antigo e remédio novo, e sintomas que a vinheta descreve. Qual proteína a droga trava?",
+    "palavras_chave": [
+      "heart failure",
+      "amiodarone started",
+      "yellow vision",
+      "ventricular ectopy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Digoxina com amiodarona, visão amarela e K 6,0: qual proteína ela inibe?"
+  },
+  "exemplo": false
+}

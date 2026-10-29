@@ -1,0 +1,96 @@
+{
+  "dia": 111,
+  "data": "2027-02-20",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Mecanismos de defesa",
+  "conceito": "Defense mechanisms: sublimation channels impulses into acceptable acts, reaction formation does the opposite of the impulse",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-21",
+  "tom": null,
+  "gancho": "O Viés achou um colega de esconderijo *no tatame*",
+  "gancho_apoio": "Impulso antigo, comportamento novo e um mecanismo de defesa com nome de prova.",
+  "imagem": {
+    "arquivo": "dia-111.png",
+    "cena": "Um vulcãozinho simpático, soltando fumaça, para numa bifurcação de estrada de terra; numa placa da bifurcação, o Viés espia de trás de uma tabela 2x2 em branco, com a lupa. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Um vulcãozinho fumegante para numa bifurcação; o Viés espia da placa, atrás de uma tabela 2x2."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-111-macete.png",
+    "cena": "Callback: a lava do vulcãozinho escorre para um forno de cerâmica e sai como um troféu dourado, que ele ergue orgulhoso, enquanto o Viés aplaude de trás da tabela. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A lava do vulcãozinho vira um troféu dourado no forno de cerâmica; o Viés aplaude."
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man has had strong aggressive impulses since adolescence. Over several years he has channeled them into judo training; he now competes nationally and coaches teenagers at a community club. Friends describe him as calm and patient outside the mat.",
+    "pergunta": "Which defense mechanism is he most likely using?",
+    "alternativas": {
+      "A": {
+        "texto": "Displacement",
+        "quiz": "Displacement"
+      },
+      "B": {
+        "texto": "Reaction formation",
+        "quiz": "Reaction formation"
+      },
+      "C": {
+        "texto": "Sublimation",
+        "quiz": "Sublimation"
+      },
+      "D": {
+        "texto": "Acting out",
+        "quiz": "Acting out"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sublimação: o impulso vira *conquista*",
+    "certa": [
+      "Na sublimação (sublimation), um impulso inaceitável é canalizado para uma atividade socialmente valorizada, como esporte, arte ou trabalho. Aqui a agressividade virou treino, competição e ensino, de forma estável ao longo dos anos. É um dos mecanismos de defesa maduros, ao lado do altruísmo, do humor e da supressão."
+    ],
+    "termos": [
+      "sublimation",
+      "defense mechanisms",
+      "reaction formation",
+      "displacement"
+    ],
+    "erradas": {
+      "A": "O deslocamento joga a emoção num alvo mais seguro, como chutar a porta depois de brigar com o chefe, sem transformá-la em algo produtivo.",
+      "B": "A formação reativa faz o oposto do impulso de forma exagerada, como tratar com doçura excessiva alguém de quem se sente raiva.",
+      "D": "A atuação descarrega o impulso em ações impulsivas, como brigas e explosões, para não precisar senti-lo."
+    },
+    "macete": {
+      "frase": "Sublimação: a lava vira *troféu*; formação reativa: o vulcão sorri demais",
+      "apoio": "Pegadinha de prova: O NBME pede para separar os mecanismos maduros (sublimação, altruísmo, humor, supressão) dos outros, e troca sublimação por deslocamento e formação reativa nas alternativas.",
+      "fala": "Raiva que vira medalha eu não consigo distorcer."
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés: o fantasma que vive se escondendo reconheceu um colega de esconderijo. Quem ele era e o que faz hoje estão na vinheta. Qual mecanismo de defesa está em ação?",
+    "palavras_chave": [
+      "aggressive impulses",
+      "judo",
+      "coaching",
+      "ego defenses"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#Comportamento"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Agressividade canalizada em judô e ensino: qual mecanismo de defesa?"
+  },
+  "reel": null,
+  "exemplo": false
+}

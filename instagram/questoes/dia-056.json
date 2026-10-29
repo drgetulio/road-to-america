@@ -1,0 +1,100 @@
+{
+  "dia": 56,
+  "data": "2026-12-27",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Retrospectiva 2026: Uretrite e epididimite no homem jovem (dia 1), Miastenia gravis (dia 22), Síndrome de DiGeorge (dia 50)",
+  "conceito": "Year-end review 2026 remix: Chlamydia trachomatis + Myasthenia gravis + DiGeorge syndrome",
+  "personagem": "Macrô",
+  "gancho_data": "Retrospectiva 2026: os conceitos do primeiro mês de estrada.",
+  "remix_de": [
+    1,
+    22,
+    50
+  ],
+  "explicacao_em": "2026-12-28",
+  "gancho": "Retrospectiva 2026: o *álbum de figurinhas* do primeiro mês de estrada",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô, de guardanapo xadrez e chapeuzinho de fim de ano, folheia um álbum de figurinhas numa mesa com confete. Num cantinho, um vinil pequeno faz as vezes de figurinha brilhante.",
+    "foco": "50% 35%",
+    "alt": "Macrô, de chapeuzinho de fim de ano, folheia um álbum de figurinhas numa mesa com confete.",
+    "arquivo": "dia-056.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do álbum: Macrô abre uma sanfona de quatro bolsinhas coloridas e tira da terceira uma borboleta (o timo) junto com duas bolinhas pequenas (as paratireoides de baixo). A borboleta vai para a página do interfone, que ganha uma luz amarela de alerta.",
+    "alt": "O timo nasceu na terceira bolsa",
+    "arquivo": "dia-056-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old woman has 4 months of fluctuating ptosis and diplopia, worse by evening. Acetylcholine receptor antibodies are positive. Chest CT shows an anterior mediastinal mass, and thymectomy is planned.",
+    "pergunta": "The organ from which this mass most likely arises develops from which embryologic structure?",
+    "alternativas": {
+      "A": {
+        "texto": "First pharyngeal pouch",
+        "quiz": "1st pharyngeal pouch"
+      },
+      "B": {
+        "texto": "Third pharyngeal pouch",
+        "quiz": "3rd pharyngeal pouch",
+        "dia": 50
+      },
+      "C": {
+        "texto": "Fourth pharyngeal pouch",
+        "quiz": "4th pharyngeal pouch",
+        "dia": 50
+      },
+      "D": {
+        "texto": "Second pharyngeal pouch",
+        "quiz": "2nd pharyngeal pouch"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "O timo nasceu na terceira bolsa",
+    "certa": [
+      "Ptose e diplopia que pioram à noite com anticorpo contra o receptor de acetilcolina são a miastenia do dia 22, e a massa no mediastino anterior aponta para o timo (*thymoma* ou hiperplasia tímica). O timo nasce da *third pharyngeal pouch*, junto com as *inferior parathyroid glands*; é justamente o par que falta no DiGeorge (dia 50), em que as bolsas 3 e 4 não se formam direito."
+    ],
+    "termos": [
+      "third pharyngeal pouch",
+      "thymoma",
+      "myasthenia gravis",
+      "inferior parathyroid glands"
+    ],
+    "erradas": {
+      "A": "A primeira bolsa forma a orelha média e a tuba auditiva.",
+      "C": "Dia 50: a quarta bolsa forma as paratireoides superiores e contribui para as células parafoliculares, não o timo.",
+      "D": "A segunda bolsa forma o epitélio da tonsila palatina."
+    },
+    "macete": {
+      "frase": "O timo é figurinha da *bolsa 3*, junto com as paratireoides de baixo. Por isso o DiGeorge perde os dois, e a miastenia pode trazer um timoma de brinde.",
+      "apoio": "Pegadinha de prova: O NBME liga a miastenia ao timo e cobra a embriologia: terceira bolsa para o timo e as paratireoides inferiores, quarta para as superiores.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Último remix do ano, juntando a miastenia (dia 22) e o DiGeorge (dia 50) numa pergunta de embriologia, o assunto que todo mundo deixa para o fim e o NBME coloca no começo. O bônus do macete traz o hóspede que não aparece no Gram (dia 1).",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Retrospectiva2026",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Miastenia com massa no mediastino anterior: de qual bolsa vem o órgão?"
+  },
+  "exemplo": false
+}

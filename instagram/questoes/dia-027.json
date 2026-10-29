@@ -1,0 +1,95 @@
+{
+  "dia": 27,
+  "data": "2026-11-28",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Transfusão em criança na emergência",
+  "conceito": "Child in a life-threatening emergency whose parents refuse blood: transfuse",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-29",
+  "tom": null,
+  "gancho": "Uma semana depois, outra recusa de sangue no pronto-socorro. *Mesma resposta*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-027.png",
+    "cena": "Capitã Plaqueta, de colete e quepe, está na entrada de um pronto-socorro tranquilo, ao lado da placa amarela em losango com a balança desenhada, segurando o apito. Uma tabela 2x2 em branco aparece pequena num quadro.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta na entrada de um pronto-socorro tranquilo, ao lado de uma placa amarela com uma balança desenhada."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-027-macete.png",
+    "cena": "Callback do pronto-socorro: a balança da placa pende para um escudo verde que envolve o leito do ursinho. Uma bolsinha com um coraçãozinho desenhado pende do suporte ao lado do leito, a Capitã acena para seguir, e um martelo de juiz descansa num banco do lado de fora, sem uso por enquanto.",
+    "alt": "Na emergência, proteja a criança"
+  },
+  "questao": {
+    "vinheta": "A 7-year-old girl arrives by ambulance after a motor vehicle collision. She has a splenic laceration, BP 70/40 mm Hg, pulse 160/min and hemoglobin 5.8 g/dL despite intravenous fluids. Her parents, who are Jehovah's Witnesses, refuse blood transfusion.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Obtain a court order before transfusing",
+        "quiz": "Court order first"
+      },
+      "B": {
+        "texto": "Transfuse packed red blood cells now",
+        "quiz": "Transfuse now"
+      },
+      "C": {
+        "texto": "Respect the parents' refusal",
+        "quiz": "Respect the refusal"
+      },
+      "D": {
+        "texto": "Consult the ethics committee before transfusing",
+        "quiz": "Ethics consult first"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Na emergência, proteja a criança",
+    "certa": [
+      "Os pais podem recusar tratamentos para si, mas não podem recusar, em nome de uma criança, um tratamento que salva a vida dela numa emergência. Com choque hemorrágico e hemoglobina de 5,8, a conduta é transfundir agora, acolhendo a família e registrando tudo no prontuário. A ordem judicial só é buscada quando a situação não é de emergência e há tempo para isso."
+    ],
+    "termos": [
+      "pediatric emergency",
+      "parental refusal",
+      "best interest of the child",
+      "emergency exception"
+    ],
+    "erradas": {
+      "A": "Esperar uma ordem judicial em choque hemorrágico atrasa o tratamento, e na emergência a transfusão vem antes da papelada.",
+      "C": "A recusa dos pais não vale para um tratamento que salva a vida de uma criança numa emergência.",
+      "D": "O comitê de ética ajuda em conflitos sem urgência, e aqui a demora pode custar a vida."
+    },
+    "macete": {
+      "frase": "Adulta capaz decide por si (dia 20). Criança em risco de morte *agora*: o médico protege a criança e transfunde; o juiz só entra no jogo quando há tempo.",
+      "apoio": "Pegadinha de prova: O NBME troca a urgência: se a transfusão ou a cirurgia pode esperar, a resposta passa a ser buscar a ordem judicial; se é emergência, transfundir.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés de ética, uma semana depois da recusa do dia 20. A pergunta parece repetida; leia a vinheta inteira antes de decidir. Tema delicado, tom respeitoso.",
+    "palavras_chave": [
+      "Jehovah's Witness",
+      "trauma",
+      "blood transfusion",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#PediatricEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Criança em choque e pais recusam sangue: qual o próximo passo?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 218,
+  "data": "2027-06-07",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Botulismo",
+  "conceito": "Botulinum toxin: cleaves SNARE proteins and blocks acetylcholine release, descending flaccid paralysis",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-08",
+  "tom": null,
+  "gancho": "Bicho de Segunda: *uma fraqueza que ninguém entendeu*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-218.png",
+    "cena": "Macrô, de comanda no bolso, é o fiscal do cais de um pequeno porto e olha desconfiado para barquinhos parados junto ao cais. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô, fiscal do cais, olha desconfiado os barquinhos parados"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-218-macete.png",
+    "cena": "No porto, uma bactéria marota em forma de bastão usa uma tesoura gigante para cortar as cordas que prendem os barquinhos ao cais. Os barquinhos (as vesículas de acetilcolina) ficam boiando sem conseguir encostar, e o Macrô aponta, espantado, do píer.",
+    "foco": "50% 45%",
+    "alt": "A toxina corta as cordas do cais"
+  },
+  "questao": {
+    "vinheta": "A 41-year-old woman has blurred and double vision, slurred speech, and difficulty swallowing 18 hours after eating home-canned vegetables. Her pupils are dilated and poorly reactive. Weakness then spreads to the arms and trunk. She is afebrile and alert, with normal sensation.",
+    "pergunta": "Which mechanism best explains her weakness?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies against postsynaptic acetylcholine receptors",
+        "quiz": "Anti-AChR antibodies"
+      },
+      "B": {
+        "texto": "Blocked glycine release from spinal inhibitory interneurons",
+        "quiz": "Blocks glycine release"
+      },
+      "C": {
+        "texto": "Cleavage of SNARE proteins needed for acetylcholine release",
+        "quiz": "Cleaves SNARE proteins"
+      },
+      "D": {
+        "texto": "Antibodies against presynaptic voltage-gated calcium channels",
+        "quiz": "Anti-VGCC antibodies"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "A toxina *corta as cordas* do cais",
+    "certa": [
+      "A toxina do *Clostridium botulinum*, já pronta na conserva caseira, entra no terminal colinérgico e cliva as *SNARE proteins* (como SNAP-25 e sinaptobrevina). Sem elas, a vesícula de *acetylcholine* não se funde à membrana e o músculo não recebe o recado. A paralisia é flácida e *descending*: começa nos nervos cranianos (diplopia, disfagia, pupilas dilatadas) e poupa a sensibilidade."
+    ],
+    "termos": [
+      "Clostridium botulinum",
+      "SNARE proteins",
+      "acetylcholine release",
+      "descending flaccid paralysis"
+    ],
+    "erradas": {
+      "A": "Anticorpo contra o receptor pós-sináptico é a miastenia gravis, que piora com o esforço e mantém as pupilas normais.",
+      "B": "A toxina tetânica também cliva SNARE, mas nos interneurônios inibitórios, e bloqueia glicina e GABA: o resultado é espasmo e rigidez, não flacidez.",
+      "D": "Anticorpo contra o canal de cálcio pré-sináptico é a síndrome de Lambert-Eaton, com fraqueza proximal que melhora com o uso repetido do músculo."
+    },
+    "macete": {
+      "frase": "Botulínica é *tesoura no cais*: corta a corda e o barco não atraca",
+      "apoio": "Na imagem, o Macrô vê a toxina de tesoura cortar as cordas (SNARE) que prendem os barquinhos de acetilcolina ao cais. Sem barco atracado, o porto para, de cima para baixo. A tetânica corta as cordas do porto vizinho, o dos freios.",
+      "fala": "Tampa estufada? Eu não como. Nem você."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no sistema nervoso, com o Macrô. Uma história, uma fraqueza que avança numa direção definida e um exame neurológico descritos na vinheta. Qual mecanismo explica a fraqueza?",
+    "palavras_chave": [
+      "neuromuscular weakness",
+      "synapse",
+      "mechanism",
+      "Step 1"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#Neurologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Conserva, diplopia e paralisia que desce: como?"
+  },
+  "reel": null,
+  "exemplo": false
+}

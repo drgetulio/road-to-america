@@ -1,0 +1,96 @@
+{
+  "dia": 110,
+  "data": "2027-02-19",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Inibidores da ECA",
+  "conceito": "ACE inhibitors: bradykinin buildup causes cough and angioedema, contraindicated in pregnancy",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-20",
+  "tom": null,
+  "gancho": "Remédio novo para a pressão e, dois meses depois, *a casa começou a tossir*",
+  "gancho_apoio": "A Tia Meia-Vida desconfia de algo que deveria ter ido embora e ficou.",
+  "imagem": {
+    "arquivo": "dia-110.png",
+    "cena": "Atrás do balcão da farmácia de interior, a Tia Meia-Vida olha intrigada para bolinhas fofas de poeira que se acumulam pelo chão e sobem até um sininho de vento na porta, que não para de tocar. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida olha bolinhas de poeira que se acumulam e fazem o sininho da porta tocar sem parar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-110-macete.png",
+    "cena": "Callback: a Tia Meia-Vida religa uma vassoura robô em forma de tesourinha (a ECA), que finalmente suga a poeira, e o sininho da porta para de tocar. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "A Tia Meia-Vida religa a vassoura robô, que suga a poeira, e o sininho para de tocar."
+  },
+  "questao": {
+    "vinheta": "A 54-year-old woman with hypertension started a new medication 2 months ago. Since then she has had a persistent dry cough without fever or wheezing. Today she has painless swelling of the lips and tongue without hives or itching. Serum potassium is mildly elevated.",
+    "pergunta": "Accumulation of which substance best explains her cough and swelling?",
+    "alternativas": {
+      "A": {
+        "texto": "Angiotensin II",
+        "quiz": "Angiotensin II"
+      },
+      "B": {
+        "texto": "Bradykinin",
+        "quiz": "Bradykinin"
+      },
+      "C": {
+        "texto": "Histamine",
+        "quiz": "Histamine"
+      },
+      "D": {
+        "texto": "Leukotriene D4",
+        "quiz": "Leukotriene D4"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "IECA: *bradicinina* acumulada",
+    "certa": [
+      "A enzima conversora de angiotensina (ECA, também chamada cininase II) transforma angiotensina I em II e degrada a bradicinina. O inibidor da ECA (captopril, enalapril, lisinopril) acumula bradicinina, que causa tosse seca e angioedema sem urticária; o potássio sobe porque cai a aldosterona. No angioedema, o remédio é suspenso para sempre, e IECA e BRA são contraindicados na gestação."
+    ],
+    "termos": [
+      "ACE inhibitors",
+      "bradykinin",
+      "angioedema",
+      "dry cough"
+    ],
+    "erradas": {
+      "A": "Com o IECA, a angiotensina II cai, não sobe; é justamente assim que a pressão baixa.",
+      "C": "O angioedema por histamina vem com urticária e coceira, como na alergia; aqui não há nenhuma das duas.",
+      "D": "O leucotrieno D4 participa da asma e da broncoconstrição, sem relação com o IECA."
+    },
+    "macete": {
+      "frase": "Desligou a *faxineira* ECA: a poeira de bradicinina se acumula",
+      "apoio": "Pegadinha de prova: O NBME troca IECA por BRA quando aparece tosse, atribui o angioedema sem urticária à bradicinina e lembra que IECA e BRA são proibidos na gestação.",
+      "fala": "Desliguei o robô para economizar pressão. A poeira cobrou com juros."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: um anti-hipertensivo novo, uma queixa que não passa e outra que assusta. A vinheta conta quais são. A pergunta é o que se acumulou.",
+    "palavras_chave": [
+      "hypertension",
+      "dry cough",
+      "lip and tongue swelling",
+      "new medication"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Cardiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "IECA, tosse e lábio inchado: o que acumulou?"
+  },
+  "reel": null,
+  "exemplo": false
+}

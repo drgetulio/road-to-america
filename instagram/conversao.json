@@ -1,0 +1,573 @@
+{
+ "versao": 2,
+ "descricao": "Conversão ativa da Questão de Embarque: palavras-chave de comentário com resposta automática no direct, CTA por quadro, desafio de 30 dias, live mensal de correção, plano de stories, ordem do carrossel e rotina de produção. Fonte única para templates/lib/conversao.mjs, montar-programa.mjs, a planilha e o guia.",
+ "regra_dos_links": "Endereço escrito só no direct (resposta automática), no adesivo de link dos stories e na bio. Legenda de post e de Reel não leva endereço: leva a palavra-chave. A única exceção é o CVV (cvv.org.br) nas datas de saúde mental.",
+ "ferramenta_dm": {
+  "o_que_usar": "Ferramenta parceira oficial da Meta para mensagens do Instagram (por exemplo ManyChat), ligada à conta profissional pelo login da Meta. Nunca uma ferramenta que peça a senha do Instagram.",
+  "configuracao": [
+   "Conta profissional (criador ou empresa) com a opção Permitir acesso às mensagens ligada em Configurações, Mensagens e respostas a stories, Ferramentas conectadas.",
+   "Um gatilho por palavra-chave: comentário em qualquer post ou Reel que contenha a palavra (sem diferenciar maiúscula, minúscula ou acento) e mensagem direta com a mesma palavra.",
+   "Resposta pública curta no comentário, sorteada entre as variações de cada palavra, para o perfil não parecer robô.",
+   "Mensagem privada com o texto desta lista, o link com UTM e o aviso de privacidade no fim.",
+   "Palavra SAIR em mensagem direta: para qualquer fluxo e marca a pessoa para não receber mais mensagens automáticas.",
+   "Teste com uma conta pessoal antes de cada campanha nova (DESAFIO e LIVE mudam de texto a cada edição)."
+  ],
+  "regras_da_meta": [
+   "A resposta privada a um comentário só pode ser enviada uma vez por comentário e até 7 dias depois dele.",
+   "Depois que a pessoa responde no direct, a conta pode escrever por 24 horas. Fora dessa janela, nada de mensagem automática: o lembrete diário do desafio é o story das 12h05, não o direct.",
+   "Não condicione o envio a seguir o perfil, curtir ou marcar amigos. Quem comenta a palavra recebe o material."
+  ],
+  "tempo": "Configuração inicial de cerca de 2 horas. Depois, 5 minutos toda sexta às 12h para trocar o texto do MACETE (aba Automação de DM) e 10 minutos por semana para as conversas que a automação não entendeu."
+ },
+ "aviso_privacidade": "Mensagem automática da Road to America. Usamos só o seu nome de usuário, para responder a este pedido; não vendemos nem compartilhamos seus dados. Para não receber mais mensagens automáticas, responda SAIR. Política de privacidade: {privacidade}",
+ "assinatura_dm": "Dr. Getúlio Bernardo Morato Filho, CRM-DF 13610",
+ "links": {
+  "simulado": "https://drgetulio.github.io/road-to-america/simulado/",
+  "verificador": "https://drgetulio.github.io/road-to-america/verificar.html",
+  "pre_inscricao": "https://drgetulio.github.io/road-to-america/#pre-inscricao",
+  "privacidade": "https://drgetulio.github.io/road-to-america/privacidade.html"
+ },
+ "palavras": {
+  "SIMULADO": {
+   "entrega": "Link do bloco grátis de 20 questões em 30 minutos, com relatório e revisão item a item",
+   "link": "simulado",
+   "resposta_publica": [
+    "Mandei o link no seu direct. Se não aparecer, olhe a pasta de solicitações.",
+    "Enviado no direct. Bom bloco, e conta aqui depois quantas foram.",
+    "Já está no seu direct. Cronômetro ligado e sem consulta, combinado?"
+   ],
+   "dm": "Oi! Aqui está o simulado grátis da Road to America: um bloco de 20 questões em 30 minutos, no formato do USMLE, com relatório de desempenho e revisão item a item.\n{link}\n\nFaça com o cronômetro ligado e sem consultar nada, como no dia da prova. A questão de amanhã sai às 12h no feed.\n\n{assinatura}\n{aviso}"
+  },
+  "MACETE": {
+   "entrega": "Os sete macetes mais recentes com gabarito publicado (de sexta a quinta), em texto, um por dia, com a data do Remix de domingo em que cada conceito volta, quando volta. O texto troca toda sexta às 12h, quando sai o gabarito da quinta, antes do Reel das 19h.",
+   "link": null,
+   "resposta_publica": [
+    "Os sete macetes mais recentes foram para o seu direct.",
+    "Mandei no direct. Dá para revisar na fila do pão.",
+    "No seu direct agora, um macete por dia, inclusive o do Reel desta sexta."
+   ],
+   "dm": "Oi! Os sete macetes mais recentes da Questão de Embarque ({semana}), um por dia, todos com gabarito já publicado:\n\n{macetes}\n\nQuando um conceito volta num Remix de domingo, a data está entre parênteses. Quer treinar no formato da prova? Responda SIMULADO aqui que eu mando o bloco grátis de 30 minutos.\n\n{assinatura}\n{aviso}"
+  },
+  "FACULDADE": {
+   "entrega": "Link do verificador de faculdade (critério do World Directory of Medical Schools)",
+   "link": "verificador",
+   "resposta_publica": [
+    "O verificador foi para o seu direct. Leva cerca de 1 minuto.",
+    "Mandei no direct. Tenha o nome oficial da escola à mão."
+   ],
+   "dm": "Oi! O verificador da Road to America confere, pelo critério oficial do World Directory of Medical Schools, se a sua escola permite fazer o USMLE e pedir a certificação ECFMG. Leva cerca de 1 minuto:\n{link}\n\nO resultado é uma orientação. A palavra final é sempre do ECFMG, então guarde o print do diretório.\n\n{assinatura}\n{aviso}"
+  },
+  "EMBARQUE": {
+   "entrega": "Link da pré-inscrição gratuita na turma fundadora",
+   "link": "pre_inscricao",
+   "resposta_publica": [
+    "Mandei o link da pré-inscrição no seu direct.",
+    "Está no seu direct. A pré-inscrição é gratuita e não obriga a matrícula."
+   ],
+   "dm": "Oi! Aqui está a pré-inscrição na turma fundadora da Road to America, para quem quer estudar para o USMLE com método e acompanhamento:\n{link}\n\nA pré-inscrição é gratuita e não obriga a matrícula. Você recebe as datas e as vagas antes da abertura geral.\n\n{assinatura}\n{aviso}"
+  },
+  "DESAFIO": {
+   "entrega": "Regras, datas e a cartela do Desafio 30 Dias de Embarque",
+   "link": null,
+   "resposta_publica": [
+    "Regras e cartela no seu direct. Começa {inicio}.",
+    "Você está dentro. Mandei tudo no direct."
+   ],
+   "dm": "Oi! Você entrou no {nome}, edição {edicao}: de {inicio} a {fim}.\n\nComo funciona:\n{regras}\n\nA cartela vai na próxima mensagem. Salve no celular e marque um quadradinho por dia.\n\nLembrete diário: por regra do Instagram eu só posso escrever no direct por 24 horas depois da sua última mensagem. Por isso o lembrete é o story das 12h05. Ative as notificações de stories do perfil.\n\n{assinatura}\n{aviso}"
+  },
+  "LIVE": {
+   "entrega": "Data, horário e lembrete da próxima live de correção",
+   "link": null,
+   "resposta_publica": [
+    "Lembrete anotado. Mandei os detalhes no direct.",
+    "Te espero na live. Detalhes no direct."
+   ],
+   "dm": "Oi! A próxima Live de Correção é {data_live}, às {hora_live}, aqui no Instagram. Vamos resolver juntos as questões do mês que mais derrubaram a turma no quiz.\n\nPara receber o aviso na hora: toque no post da live agendada e em Lembrar-me. Tem uma dúvida que quer ver corrigida? Responda aqui com o número do dia.\n\n{assinatura}\n{aviso}"
+  }
+ },
+ "cta_por_quadro": {
+  "Bicho de Segunda": "macete",
+  "Plantão de Terça": "simulado",
+  "Quarta do Porquê": "compartilhar",
+  "Rodízio de Quinta": "simulado",
+  "Sextou na Farmácia": "macete",
+  "Sábado Sem Viés": "debate",
+  "Remix de Domingo": "pre_inscricao"
+ },
+ "cta_excecoes": {
+  "primeira_quarta_do_mes": "verificador",
+  "inscricao_do_desafio": "desafio",
+  "dia_da_live_e_sabado_antes": "live"
+ },
+ "frases_cta": {
+  "simulado": [
+   "Gostou do formato? Comente SIMULADO e a resposta automática manda no seu direct um bloco grátis de 20 questões em 30 minutos.",
+   "Quer treinar com o relógio correndo? Comente SIMULADO e receba no direct o bloco grátis de 30 minutos.",
+   "Comente SIMULADO e eu mando no direct o bloco de 20 questões em 30 minutos, grátis, no formato da prova."
+  ],
+  "macete": [
+   "Comente MACETE e receba no direct os sete macetes mais recentes em texto, um por dia, para revisar sem abrir o app.",
+   "Quer a revisão de bolso? Comente MACETE e os sete macetes mais recentes chegam no seu direct.",
+   "Comente MACETE: a resposta automática manda no direct os sete últimos macetes, de sexta a quinta."
+  ],
+  "verificador": [
+   "Sua escola está habilitada para o USMLE? Comente FACULDADE e receba o verificador no direct. Leva 1 minuto.",
+   "Comente FACULDADE e eu mando no direct o verificador da sua escola pelo critério do World Directory."
+  ],
+  "pre_inscricao": [
+   "Quer estudar com método e acompanhamento? Comente EMBARQUE e receba no direct o link da pré-inscrição gratuita.",
+   "Comente EMBARQUE e a pré-inscrição na turma fundadora chega no seu direct. É gratuita e não obriga a matrícula."
+  ],
+  "desafio": [
+   "Desafio 30 Dias de Embarque começa {inicio}. Comente DESAFIO e receba as regras e a cartela no direct.",
+   "Trinta dias, uma questão por dia, sem prêmio e sem ranking: só o hábito. Comente DESAFIO e entre na edição que começa {inicio}."
+  ],
+  "live": [
+   "Live de Correção {data_live}, às {hora_live}: as questões do mês que mais derrubaram a turma. Comente LIVE e receba o lembrete no direct.",
+   "Qual questão do mês você quer ver corrigida ao vivo? Comente LIVE e o número do dia; a live é {data_live}, às {hora_live}."
+  ],
+  "compartilhar": [
+   "Mande para a pessoa do grupo que sempre pergunta o porquê.",
+   "Salve para o Remix de domingo e mande para quem vai fazer o Step com você.",
+   "Mande para quem estuda com você e combinem a letra antes do gabarito."
+  ],
+  "debate": [
+   "Comente a letra e o porquê em uma frase. As respostas mais discutidas da semana entram na live do mês.",
+   "Discordou da maioria? Comente a letra e o argumento. Sábado é dia de debate sem viés."
+  ],
+  "salvar": [
+   "Salve para revisar no Remix de domingo e mande para quem vai fazer o Step com você."
+  ]
+ },
+ "slide_cta": {
+  "simulado": {
+   "titulo": "Gostou do *formato?*",
+   "sub": "Bloco grátis de 20 questões em 30 minutos, no formato da prova.",
+   "palavra": "SIMULADO",
+   "cab": "SIMULADO GRÁTIS",
+   "campos": [
+    [
+     "DURAÇÃO",
+     "30 MIN"
+    ],
+    [
+     "QUESTÕES",
+     "20"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "DIRECT"
+    ]
+   ]
+  },
+  "macete": {
+   "titulo": "Revisão de *bolso*",
+   "sub": "Os sete macetes mais recentes em texto, direto no seu direct.",
+   "palavra": "MACETE",
+   "cab": "MACETES RECENTES",
+   "campos": [
+    [
+     "CONTEÚDO",
+     "7 MACETES"
+    ],
+    [
+     "FORMATO",
+     "TEXTO"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "DIRECT"
+    ]
+   ]
+  },
+  "verificador": {
+   "titulo": "Sua escola está *habilitada?*",
+   "sub": "Verificador pelo critério oficial do World Directory of Medical Schools.",
+   "palavra": "FACULDADE",
+   "cab": "VERIFICADOR",
+   "campos": [
+    [
+     "DURAÇÃO",
+     "1 MIN"
+    ],
+    [
+     "CRITÉRIO",
+     "WDOMS"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "DIRECT"
+    ]
+   ]
+  },
+  "pre_inscricao": {
+   "titulo": "Estudar com *método?*",
+   "sub": "Pré-inscrição gratuita na turma fundadora. Não obriga a matrícula.",
+   "palavra": "EMBARQUE",
+   "cab": "PRÉ-INSCRIÇÃO",
+   "campos": [
+    [
+     "TURMA",
+     "FUNDADORA"
+    ],
+    [
+     "COMPROMISSO",
+     "NENHUM"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "DIRECT"
+    ]
+   ]
+  },
+  "desafio": {
+   "titulo": "Desafio *30 dias*",
+   "sub": "Uma questão por dia, enquete antes, gabarito depois. Sem prêmio e sem ranking.",
+   "palavra": "DESAFIO",
+   "cab": "DESAFIO DE EMBARQUE",
+   "campos": [
+    [
+     "INÍCIO",
+     "{inicio_curto}"
+    ],
+    [
+     "DURAÇÃO",
+     "30 DIAS"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "DIRECT"
+    ]
+   ]
+  },
+  "live": {
+   "titulo": "Live de *correção*",
+   "sub": "As questões do mês que mais derrubaram a turma, resolvidas ao vivo.",
+   "palavra": "LIVE",
+   "cab": "LIVE DO MÊS",
+   "campos": [
+    [
+     "DATA",
+     "{data_live_curta}"
+    ],
+    [
+     "HORA",
+     "{hora_live}"
+    ],
+    [
+     "TARIFA",
+     "GRÁTIS"
+    ],
+    [
+     "PORTÃO",
+     "PERFIL"
+    ]
+   ]
+  },
+  "compartilhar": {
+   "titulo": "Manda para a *turma*",
+   "sub": "Quem estuda junto acerta junto no Remix de domingo."
+  },
+  "debate": {
+   "titulo": "Sábado sem *viés*",
+   "sub": "Comente a letra e o porquê em uma frase. O debate entra na live do mês."
+  },
+  "salvar": {
+   "titulo": "Salve para o *Remix*",
+   "sub": "Este conceito volta no domingo, com outra vinheta."
+  }
+ },
+ "desafio": {
+  "nome": "Desafio 30 Dias de Embarque",
+  "palavra": "DESAFIO",
+  "edicoes": [
+   {
+    "edicao": 1,
+    "inscricao": [
+     "2026-11-09",
+     "2026-11-15"
+    ],
+    "inicio": "2026-11-16",
+    "fim": "2026-12-15",
+    "dia_inicio": 15,
+    "dia_fim": 44,
+    "live_de_encerramento": "2026-12-17",
+    "por_que": "Logo depois da estreia, quando o perfil ainda forma o hábito do público e antes das festas de fim de ano."
+   },
+   {
+    "edicao": 2,
+    "inscricao": [
+     "2027-06-21",
+     "2027-06-27"
+    ],
+    "inicio": "2027-06-28",
+    "fim": "2027-07-27",
+    "dia_inicio": 239,
+    "dia_fim": 268,
+    "live_de_encerramento": "2027-07-29",
+    "por_que": "Férias de julho do internato e da graduação: mais tempo livre e a metade do programa."
+   }
+  ],
+  "regras": [
+   "Todo dia, vote na enquete das 12h06 antes de ver qualquer comentário. Um voto, sem consultar.",
+   "No dia seguinte, abra o post das 12h: o primeiro slide é a resposta. Marque a cartela: verde se acertou, amarelo se errou e entendeu o porquê.",
+   "Domingo, às 18h, tem story de check-in: conte na caixinha quantos quadradinhos já marcou.",
+   "Errou? Vale igual. O desafio é aparecer 30 dias; o acerto vem com o hábito.",
+   "Sem sorteio, sem prêmio e sem ranking público. Ninguém tem o nome divulgado sem autorização por escrito.",
+   "No fim, a live de encerramento corrige as cinco questões que mais derrubaram a turma."
+  ],
+  "por_que_sem_premio": "Sorteio ou prêmio para seguidor é distribuição gratuita de prêmio com fins de propaganda, que depende de autorização prévia do Ministério da Fazenda (Lei 5.768/1971). Sem prêmio, o desafio fica simples e dentro da regra, e a recompensa é a correção ao vivo.",
+  "pecas": "story-desafio.png nos 30 dias (dia X de 30, barra de progresso) e desafio-cartela.png no primeiro dia de cada edição, para mandar no direct de quem comentar DESAFIO."
+ },
+ "lives": {
+  "nome": "Live de Correção",
+  "horario": "20h30",
+  "duracao_min": 45,
+  "regra_da_data": "Última quinta-feira do mês, às 20h30. Exceções: dezembro (17/12, antes das festas e fechando o desafio 1), março (18/03, porque 25/03 é Quinta-feira Santa), maio (20/05, porque 27/05 é Corpus Christi) e junho (17/06, porque 24/06 é São João).",
+  "datas": [
+   "2026-11-26",
+   "2026-12-17",
+   "2027-01-28",
+   "2027-02-25",
+   "2027-03-18",
+   "2027-04-29",
+   "2027-05-20",
+   "2027-06-17",
+   "2027-07-29",
+   "2027-08-26",
+   "2027-09-30",
+   "2027-10-28"
+  ],
+  "roteiro": [
+   "0 a 3 min: boas-vindas e o placar do mês (acerto médio do quiz por Step, sem nome de ninguém).",
+   "3 a 30 min: as cinco questões do mês com menor acerto no quiz do D+1. Para cada uma: ler a vinheta, achar a pista que decide, eliminar as erradas e repetir o macete.",
+   "30 a 40 min: perguntas da caixinha do story e dos comentários de sábado.",
+   "40 a 45 min: como a questão de amanhã se liga ao que foi corrigido e o CTA do mês (SIMULADO ou EMBARQUE, sem promessa de aprovação)."
+  ],
+  "preparo": [
+   "Sete dias antes: agendar a live no Instagram (aparece no perfil com o botão Lembrar-me) e trocar o texto da palavra LIVE.",
+   "Sábado antes: caixa de perguntas nos stories para coletar dúvidas.",
+   "No dia: escolher as cinco questões pela coluna Acerto no quiz (%) da planilha e abrir os slides do gabarito de cada uma.",
+   "Depois: compartilhar o replay no perfil e cortar um trecho de 30 segundos para o Reel da semana seguinte."
+  ]
+ },
+ "stories": {
+  "completo": [
+   {
+    "hora": "12h05",
+    "peca": "story-gabarito.png do dia anterior",
+    "adesivo": "QUIZ com a pergunta de ontem em quiz.resumo (agora com o achado da vinheta) e a letra certa marcada",
+    "texto": "Abre com o resultado da enquete de ontem (porcentagem de cada letra) e dá a segunda chance no quiz. A explicação completa está no primeiro slide do post."
+   },
+   {
+    "hora": "12h06",
+    "peca": "story-enquete.png de hoje",
+    "adesivo": "ENQUETE \"Qual é a sua letra?\" com quatro opções (A, B, C e D) em inglês da prova, sem resposta certa e sem achado da vinheta",
+    "texto": "Questão de hoje. Gabarito amanhã às 12h."
+   },
+   {
+    "hora": "12h07",
+    "peca": "mesmo fundo do story-enquete",
+    "adesivo": "CONTROLE DESLIZANTE: quanta certeza você tem?",
+    "texto": "Metacognição: a certeza de hoje comparada com o gabarito de amanhã."
+   },
+   {
+    "hora": "20h30",
+    "peca": "print da enquete",
+    "adesivo": "LINK para o post",
+    "texto": "Resultado parcial sem revelar a letra certa (\"a turma está dividida entre duas letras\")."
+   },
+   {
+    "hora": "Domingo 18h00",
+    "peca": "placar da semana",
+    "adesivo": "LINK do simulado e CAIXA DE PERGUNTAS",
+    "texto": "As três questões da semana com menor acerto e o check-in do desafio quando houver."
+   }
+  ],
+  "enxuto": [
+   {
+    "hora": "12h05",
+    "peca": "story-gabarito.png do dia anterior",
+    "adesivo": "QUIZ com a letra certa",
+    "texto": "Resultado da enquete de ontem e segunda chance."
+   },
+   {
+    "hora": "12h06",
+    "peca": "story-enquete.png de hoje",
+    "adesivo": "ENQUETE \"Qual é a sua letra?\", A, B, C, D",
+    "texto": "Questão de hoje, gabarito amanhã."
+   }
+  ],
+  "por_que": "A enquete não mostra resposta certa, então o dia D termina sem gabarito e a curiosidade leva o seguidor ao post de amanhã. O quiz, que revela a letra, só entra no D+1, depois do resultado da enquete: quem errou ontem tem uma segunda chance com a explicação já publicada."
+ },
+ "carrossel": {
+  "escolha": "Um post por dia, com a recompensa primeiro.",
+  "completo": [
+   "Resposta de ontem (capa com a letra carimbada e a imagem do macete)",
+   "Por que a certa está certa",
+   "Por que as outras estão erradas",
+   "Macete com o personagem",
+   "Capa da questão de hoje",
+   "Vinheta e alternativas",
+   "Responda (enquete nos stories, comentário, gabarito amanhã)",
+   "CTA do dia com a palavra-chave"
+  ],
+  "enxuto": [
+   "Resposta de ontem",
+   "Por que a certa está certa",
+   "Macete (sem imagem nova: avatar do personagem e texto)",
+   "Capa da questão de hoje",
+   "Vinheta e alternativas",
+   "Responda com o CTA do dia"
+  ],
+  "dia_1": "Só a questão: capa, vinheta, responda e CTA (4 slides no completo, 3 no enxuto)."
+ },
+ "rotina": {
+  "dia_do_lote": "quarta-feira",
+  "antecedencia": "O lote de quarta prepara a semana que começa na segunda seguinte (5 dias de folga para refazer imagem ou reconferir fonte).",
+  "semana": [
+   {
+    "dia": "segunda-feira",
+    "completo": [
+     "12h00 post agendado sai sozinho",
+     "12h05, 12h06 e 12h07 stories com adesivos (12 min, no celular)",
+     "Responder comentários e direct que a automação não entendeu (20 min)",
+     "Métricas da semana anterior na planilha (30 min)"
+    ],
+    "enxuto": [
+     "12h05 e 12h06 stories (6 min)",
+     "Comentários (12 min)",
+     "Métricas (20 min)"
+    ]
+   },
+   {
+    "dia": "terça-feira",
+    "completo": [
+     "Stories 12h05, 12h06, 12h07 e 20h30 (15 min)",
+     "Comentários e direct (20 min)"
+    ],
+    "enxuto": [
+     "Stories 12h05 e 12h06 (6 min)",
+     "Comentários (12 min)"
+    ]
+   },
+   {
+    "dia": "quarta-feira",
+    "completo": [
+     "Stories e comentários (35 min)",
+     "LOTE: gerar as 14 imagens da semana seguinte no Higgsfield, com a folha de referência de cada personagem em medias (cerca de 8 min por imagem, contando refação: 110 min)",
+     "Conferir as imagens, renderizar a semana com render.mjs e olhar a folha de contato (30 min)",
+     "Reconferir na fonte primária as condutas e números das 7 questões (40 min)",
+     "Agendar os 7 posts com as legendas e o primeiro comentário (50 min)",
+     "Reel da sexta seguinte: conferir o texto, gravar a voz no celular, renderizar e escolher o áudio (35 min)",
+     "Conferir as conversas do direct que a automação não entendeu (10 min)"
+    ],
+    "enxuto": [
+     "Stories e comentários (18 min)",
+     "LOTE: gerar as 7 imagens da questão (56 min)",
+     "Renderizar e conferir (20 min)",
+     "Reconferir fontes das 7 questões (35 min)",
+     "Agendar os 7 posts (35 min)",
+     "Reel da sexta seguinte, sem voz ou com a voz já gravada (20 min)",
+     "Conferir as conversas do direct (5 min)"
+    ]
+   },
+   {
+    "dia": "quinta-feira",
+    "completo": [
+     "Stories e comentários (35 min)",
+     "Semana de live: preparo (45 min), live às 20h30 (45 min) e corte do replay (30 min)"
+    ],
+    "enxuto": [
+     "Stories e comentários (18 min)",
+     "Semana de live: preparo e live (90 min)"
+    ]
+   },
+   {
+    "dia": "sexta-feira",
+    "completo": [
+     "Stories e comentários (35 min)",
+     "12h depois do post: trocar o texto do MACETE pelos sete macetes mais recentes (aba Automação de DM, 5 min)",
+     "Reel do formato Resultado: copiar os números da enquete em resultados-enquete.json e gerar de novo (5 min); sem números, sai o plano B",
+     "19h00 publicar o Reel com o áudio e responder os primeiros comentários (15 min)"
+    ],
+    "enxuto": [
+     "Stories e comentários (18 min)",
+     "12h: trocar o texto do MACETE (5 min)",
+     "19h00 Reel (10 min)"
+    ]
+   },
+   {
+    "dia": "sábado",
+    "completo": [
+     "Stories e comentários (35 min)",
+     "Semana de live: caixa de perguntas (5 min)"
+    ],
+    "enxuto": [
+     "Stories e comentários (18 min)"
+    ]
+   },
+   {
+    "dia": "domingo",
+    "completo": [
+     "Stories e comentários (35 min)",
+     "18h00 placar da semana e check-in do desafio (10 min)"
+    ],
+    "enxuto": [
+     "Stories e comentários (18 min)",
+     "18h00 placar (5 min)"
+    ]
+   }
+  ],
+  "horas": {
+   "completo": {
+    "lote_min": 275,
+    "diario_min": 245,
+    "semanal_fixo_min": 70,
+    "live_min_por_semana": 28,
+    "total_min": 618,
+    "total_texto": "cerca de 10 horas por semana",
+    "imagens_por_semana": 14,
+    "slides_por_post": 8,
+    "stories_por_dia": 4,
+    "conta": "Lote de quarta 275 min (14 imagens a cerca de 8 min cada, contando conferência da consistência do personagem e uma refação em cada três: 110; render e folha de contato 30; fontes 40; agendamento de 7 carrosséis com legenda e comentário fixado 50; Reel com voz própria 35; direct 10) + 35 min por dia de stories, comentários e direct (245) + métricas 30, MACETE 5, número da enquete 5, Reel publicado 15, placar 10 e caixa de perguntas 5 (70) + live mensal de 120 min (preparo, live e corte) dividida por 4,3 semanas (28)."
+   },
+   "enxuto": {
+    "lote_min": 171,
+    "diario_min": 126,
+    "semanal_fixo_min": 40,
+    "live_min_por_semana": 21,
+    "total_min": 358,
+    "total_texto": "cerca de 6 horas por semana",
+    "imagens_por_semana": 7,
+    "slides_por_post": 6,
+    "stories_por_dia": 2,
+    "conta": "Lote de quarta 171 min (7 imagens a 8 min: 56; render 20; fontes 35; agendamento 35; Reel 20; direct 5) + 18 min por dia (126) + métricas 20, MACETE 5, Reel 10 e placar 5 (40) + live de 90 min por mês (21)."
+   },
+   "implantacao_unica_min": 420,
+   "implantacao_texto": "Uma vez, antes da estreia: cerca de 7 horas (10 folhas de referência dos personagens no Nano Banana Pro, com conferência e refação, 180 min; automação de DM 120 min; teste do render, da folha de contato e de um Reel completo 120 min).",
+   "primeiras_semanas": "Nas duas primeiras semanas, conte o dobro para o lote de quarta (cerca de 14 horas no total da semana no modo completo)."
+  },
+  "quando_usar_o_enxuto": "Semanas de prova, plantão pesado ou viagem. Pode alternar semana a semana: o render gera as duas versões do post (post-do-dia/ e post-do-dia-enxuto/). No enxuto, a imagem do macete não é gerada; o slide do macete sai com o avatar do personagem."
+ }
+}

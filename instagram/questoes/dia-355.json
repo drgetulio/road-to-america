@@ -1,0 +1,100 @@
+{
+  "dia": 355,
+  "data": "2027-10-22",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Nitratos",
+  "conceito": "Nitrates: venodilation lowers preload, dangerous with PDE-5 inhibitors",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-23",
+  "tom": null,
+  "gancho": "Dia de clássico no estádio do coração: *por que a torcida sumiu?*",
+  "gancho_apoio": "Sextou na Farmácia: duas caixinhas sem rótulo no balcão.",
+  "imagem": {
+    "arquivo": "dia-355.png",
+    "cena": "Tia Meia-Vida no balcão da farmácia; pela janela, um estádio de futebol em forma de coração recebe uma fila de carrinhos vermelhos em dia de clássico; sobre o balcão, duas caixinhas de remédio sem rótulo.",
+    "foco": "50% 35%",
+    "alt": "Dia de clássico no estádio do coração: por que a torcida sumiu?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-355-macete.png",
+    "cena": "Callback: estacionamentos enormes nas bordas da cidade guardam os carrinhos e o estádio joga tranquilo; quando um segundo estacionamento se abre, o estádio esvazia e a Tia Meia-Vida levanta a mão com um cone vermelho.",
+    "foco": "50% 45%",
+    "alt": "Nitrato: cGMP, venodilation e queda da pré-carga"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with stable angina uses sublingual nitroglycerin. Two hours after his first dose of tadalafil, prescribed for urinary symptoms of benign prostatic hyperplasia, he takes nitroglycerin for chest pain and becomes dizzy. Blood pressure is 74/40 mm Hg.",
+    "pergunta": "Which mechanism of nitroglycerin best explains its antianginal effect and this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Beta-1 blockade lowering heart rate",
+        "quiz": "β1 blockade, lower HR"
+      },
+      "B": {
+        "texto": "L-type calcium channel blockade",
+        "quiz": "L-type Ca channel block"
+      },
+      "C": {
+        "texto": "Increased cGMP causing venodilation",
+        "quiz": "↑cGMP, venodilation"
+      },
+      "D": {
+        "texto": "Increased cAMP causing arteriolar dilation",
+        "quiz": "↑cAMP, arteriolar dilation"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Nitrato: *cGMP*, *venodilation* e queda da pré-carga",
+    "certa": [
+      "A nitroglicerina libera *nitric oxide*, que ativa a guanilato ciclase e aumenta o *cGMP* no músculo liso, sobretudo das veias. A *venodilation* guarda sangue na periferia, reduz o retorno venoso e a *preload*, e o coração gasta menos oxigênio. O tadalafil é *PDE-5 inhibitor* e impede a degradação do cGMP: somados, os dois derrubam a pressão."
+    ],
+    "termos": [
+      "nitric oxide",
+      "cGMP",
+      "venodilation",
+      "PDE-5 inhibitor"
+    ],
+    "erradas": {
+      "A": "Bloqueio beta-1 é o mecanismo do metoprolol; o nitrato, ao contrário, pode causar taquicardia reflexa.",
+      "B": "Bloqueio do canal de cálcio tipo L é do verapamil e do diltiazem, sem relação com o cGMP.",
+      "D": "O nitrato não age pelo cAMP, e seu efeito principal em dose usual é venoso, não arteriolar."
+    },
+    "macete": {
+      "frase": "*Nitrato abre estacionamento longe do estádio*",
+      "apoio": "As veias são estacionamentos gigantes: com nitrato (mais cGMP e venodilatação), os carros ficam lá, a pré-carga cai e o coração joga com menos torcida. O inibidor da PDE-5 também segura o cGMP alto; os dois juntos abrem estacionamento demais e a pressão despenca. Nitrato e tadalafila na mesma tarde: o único clássico que termina com o estádio vazio.",
+      "fala": "Do tadalafila, a pressão lembra."
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia em dia de clássico: duas caixinhas na mesma tarde e a torcida do coração sumiu do estádio. A pergunta é como uma delas alivia a angina, e a resposta também explica o susto.",
+    "palavras_chave": [
+      "cardiology",
+      "chest pain",
+      "pharmacology",
+      "hypotension"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Cardiologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Nitroglicerina duas horas após tadalafila e PA 74/40: qual o mecanismo?"
+  },
+  "reel": null,
+  "exemplo": false
+}

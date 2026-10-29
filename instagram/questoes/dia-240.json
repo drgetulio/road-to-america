@@ -1,0 +1,99 @@
+{
+  "dia": 240,
+  "data": "2027-06-29",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Cólica renal",
+  "conceito": "Suspected kidney stone: noncontrast CT, tamsulosin helps distal stones up to 10 mm",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-30",
+  "tom": null,
+  "gancho": "Plantão de Terça: uma dor que *não deixa ninguém parado* e quatro exames na mesa",
+  "gancho_apoio": "Na Prometric, a dor da vinheta não te deixa ficar parado, e o relógio da prova também não.",
+  "imagem": {
+    "arquivo": "dia-240.png",
+    "cena": "Seu Néfron, de gravata e óculos, examina com uma lupa um cano transparente que desce em zigue-zague; na parede, o relógio sem números marca 3 horas. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron examina com a lupa um cano transparente em zigue-zague"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-240-macete.png",
+    "cena": "Callback: dois painéis lado a lado. No primeiro, a tinta branca derramada no cano deixa tudo branco e a pedrinha some. No segundo, sem tinta, o aparelho em forma de rosquinha mostra a pedrinha brilhando, e o Seu Néfron carimba de verde, satisfeito.",
+    "foco": "50% 45%",
+    "alt": "Suspeita de cálculo: tomografia sem contraste"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has sudden, severe left flank pain radiating to the groin, with nausea. He cannot find a comfortable position. Temperature is 37.0°C. Urinalysis shows blood but no nitrites or leukocyte esterase. Serum creatinine is normal.",
+    "pergunta": "Which is the most appropriate initial imaging study?",
+    "alternativas": {
+      "A": {
+        "texto": "Noncontrast CT of the abdomen and pelvis",
+        "quiz": "CT without contrast"
+      },
+      "B": {
+        "texto": "Contrast-enhanced CT of the abdomen and pelvis",
+        "quiz": "Contrast-enhanced CT"
+      },
+      "C": {
+        "texto": "Plain abdominal radiograph",
+        "quiz": "Plain radiograph"
+      },
+      "D": {
+        "texto": "Intravenous pyelography",
+        "quiz": "IV pyelography"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Suspeita de cálculo: *tomografia sem contraste*",
+    "certa": [
+      "Na suspeita de *nephrolithiasis*, a *noncontrast CT* de abdome e pelve, de baixa dose, é o exame mais sensível e mostra tamanho e posição do cálculo, inclusive os de ácido úrico. O contraste esconderia a pedra, que já aparece branca na tomografia. Cálculo distal de até 10 mm, com dor controlada e sem infecção, pode receber *tamsulosin* (*medical expulsive therapy*); na gestante e na criança, o ultrassom vem primeiro."
+    ],
+    "termos": [
+      "nephrolithiasis",
+      "noncontrast CT",
+      "medical expulsive therapy",
+      "tamsulosin"
+    ],
+    "erradas": {
+      "B": "O contraste iodado fica tão branco quanto a pedra no sistema coletor e atrapalha a visão do cálculo.",
+      "C": "O raio X simples não mostra cálculos de ácido úrico e perde muitos pequenos, sobre o osso ou no ureter.",
+      "D": "A urografia excretora foi substituída pela tomografia, usa contraste e demora mais."
+    },
+    "macete": {
+      "frase": "*Pedra já é branca*: na tomografia, não precisa pintar",
+      "apoio": "Na imagem, o Seu Néfron, de lupa, procura uma pedrinha branca num cano; quando a tinta branca (o contraste) é derramada, tudo fica branco e a pedra some. Sem tinta, a pedra aparece.",
+      "fala": "Sem contraste, sai. Com contraste, a pedra some na tinta."
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com o Seu Néfron. Uma dor forte e típica, um exame de urina e uma creatinina descritos na vinheta. Qual é o exame de imagem inicial?",
+    "palavras_chave": [
+      "acute pain",
+      "urinalysis",
+      "imaging choice",
+      "Step 2 CK"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Urologia",
+      "#Urology",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Cólica renal típica: qual o exame inicial?"
+  },
+  "reel": null,
+  "exemplo": false
+}

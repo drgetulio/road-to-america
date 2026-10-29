@@ -1,0 +1,99 @@
+{
+  "dia": 267,
+  "data": "2027-07-26",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Superantígenos",
+  "conceito": "Toxic shock syndrome toxin: superantigen links MHC II to the TCR outside the groove, massive cytokine release",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-27",
+  "tom": null,
+  "gancho": "Bicho de Segunda: uma cirurgia simples e *um pós-operatório que esquentou*",
+  "gancho_apoio": "Toxina bacteriana no Step 1: a lista em que \"ADP-ribosila\" aparece mais que o seu nome no grupo da turma.",
+  "imagem": {
+    "arquivo": "dia-267.png",
+    "cena": "Na praia, ao lado de um guarda-sol listrado, o Macrô, de comanda no bolso, olha desconfiado para um grampeador de óculos escuros e boné que sai de fininho. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Macrô desconfia de um grampeador de óculos escuros que sai de fininho na praia"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-267-macete.png",
+    "cena": "Callback: o grampeador prende o crachá do Macrô direto na lateral do chapéu dos linfócitos azuis, por fora, e uma multidão de linfócitos dança ao mesmo tempo. Fundo limpo.",
+    "foco": "50% 40%",
+    "alt": "O grampeador prende o crachá do Macrô por fora no chapéu do linfócito e todos dançam"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old man had nasal packing placed after septoplasty 2 days ago. Today his temperature is 39.8°C, blood pressure of 82/50 mm Hg, vomiting, and a diffuse sunburn-like rash without blisters. Blood cultures are negative. Culture of the packing grows Staphylococcus aureus.",
+    "pergunta": "The responsible toxin acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Cross-linking MHC II and TCR outside the groove",
+        "quiz": "Links MHC II to TCR"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of elongation factor 2 in host cells",
+        "quiz": "ADP-ribosylates EF-2"
+      },
+      "C": {
+        "texto": "Cleavage of desmoglein 1",
+        "quiz": "Cleaves desmoglein 1"
+      },
+      "D": {
+        "texto": "Formation of pores in host cell membranes",
+        "quiz": "Forms membrane pores"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Superantígeno: *linfócitos T em massa*",
+    "certa": [
+      "A *toxic shock syndrome toxin-1* (TSST-1) do *S. aureus* é um *superantigen*: liga a molécula de MHC II da célula apresentadora à região V-beta do receptor do linfócito T, por fora do sulco onde o peptídeo deveria estar. Assim ativa até 20% dos linfócitos T de uma vez (contra uma fração mínima num antígeno comum), com liberação maciça de IL-2, IFN-gama e TNF, que causam febre, choque e eritrodermia. Hemocultura negativa é comum no choque tóxico estafilocócico."
+    ],
+    "termos": [
+      "superantigen",
+      "TSST-1",
+      "MHC class II",
+      "V-beta region"
+    ],
+    "erradas": {
+      "B": "ADP-ribosilar o fator de elongação 2 é o mecanismo da toxina diftérica e da exotoxina A da *Pseudomonas*.",
+      "C": "Clivar a desmogleína 1 é a ação da toxina esfoliativa na síndrome da pele escaldada, que forma bolhas com sinal de Nikolsky.",
+      "D": "Formar poros é o mecanismo da alfa-toxina estafilocócica e da estreptolisina, que lesam células sem ativar linfócitos T em massa."
+    },
+    "macete": {
+      "frase": "Superantígeno é o *grampeador*: prende *MHC II no TCR por fora*",
+      "apoio": "Superantígeno é o amigo que adiciona o bairro inteiro no grupo sem perguntar: grampeia o MHC II no TCR por fora, sem a comanda do antígeno, e até 20% dos linfócitos T acordam ao mesmo tempo. A tempestade de citocinas é o grupo apitando: febre, choque e vermelhão.",
+      "fala": "Comi, mostrei, avisei. Esse aí avisou todo mundo de uma vez."
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda na imunologia, com o Macrô de férias na praia. Um procedimento recente, um quadro sistêmico e uma cultura que aponta o bicho, tudo na vinheta. Qual é o truque da toxina?",
+    "palavras_chave": [
+      "postoperative fever",
+      "bacterial toxin",
+      "shock",
+      "Step 1 immunology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Microbiologia",
+      "#Imunologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Tampão nasal, choque e eritrodermia: como a toxina age?"
+  },
+  "reel": null,
+  "exemplo": false
+}

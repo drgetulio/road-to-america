@@ -1,0 +1,97 @@
+{
+  "dia": 284,
+  "data": "2027-08-12",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Fibrose cística",
+  "conceito": "Cystic fibrosis: sweat chloride test confirms the diagnosis",
+  "personagem": null,
+  "anfitriao": "Garçom Espetinho",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-13",
+  "tom": null,
+  "gancho": "O neto não engorda e *a avó já trocou o feijão três vezes*",
+  "gancho_apoio": "Rodízio de Quinta na mesa da família: quatro espetos de exame e só um confirma.",
+  "imagem": {
+    "arquivo": "dia-284.png",
+    "cena": "Numa mesa de família da churrascaria, o Garçom Espetinho segura um espeto vazio e olha intrigado para um pratinho de bebê limpinho, ao lado de uma panela de feijão. A plaquinha verde e vermelha está de lado. Fundo limpo.",
+    "foco": "50% 35%",
+    "alt": "Garçom Espetinho olha intrigado para um pratinho de bebê limpo, ao lado de uma panela de feijão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-284-macete.png",
+    "cena": "Callback: o Garçom Espetinho vira a plaquinha para o verde e serve um espeto com um adesivo redondo de braço de dois fiozinhos; ao lado, gotinhas de suor viram cristais de sal brilhando numa balancinha que passa da marca.",
+    "foco": "50% 45%",
+    "alt": "Confirmação da fibrose cística: cloreto no suor"
+  },
+  "questao": {
+    "vinheta": "A 4-month-old boy has poor weight gain despite a good appetite, frequent bulky, greasy stools, and a chronic cough. His parents say his skin tastes salty when they kiss him. Newborn screening showed an elevated immunoreactive trypsinogen level.",
+    "pergunta": "Which test is most appropriate to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Fecal elastase",
+        "quiz": "Fecal elastase"
+      },
+      "B": {
+        "texto": "Repeat immunoreactive trypsinogen",
+        "quiz": "Repeat trypsinogen (IRT)"
+      },
+      "C": {
+        "texto": "Chest CT",
+        "quiz": "Chest CT"
+      },
+      "D": {
+        "texto": "Sweat chloride test",
+        "quiz": "Sweat chloride test"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Confirmação da fibrose cística: *cloreto no suor*",
+    "certa": [
+      "Má absorção com fezes gordurosas, tosse crônica e pele salgada num lactente com *IRT* alto na triagem neonatal apontam para *cystic fibrosis*. A confirmação é o *sweat chloride test*: cloreto no suor de 60 mmol/L ou mais, com quadro clínico ou triagem positiva. O defeito do *CFTR* impede a reabsorção de cloreto no ducto da glândula sudorípara, e o sal sobra no suor."
+    ],
+    "termos": [
+      "cystic fibrosis",
+      "sweat chloride test",
+      "CFTR",
+      "immunoreactive trypsinogen"
+    ],
+    "erradas": {
+      "A": "Elastase fecal baixa mostra insuficiência pancreática, mas não confirma a causa.",
+      "B": "Repetir o IRT só repete a triagem, e triagem não é diagnóstico.",
+      "C": "TC de tórax mostra dano pulmonar, mas não confirma fibrose cística e expõe o lactente à radiação."
+    },
+    "macete": {
+      "frase": "Na fibrose cística, *quem dá o veredito é o sal*",
+      "apoio": "A triagem com IRT só acende a luz amarela; quem dá o veredito é o cloreto no suor, colhido com pilocarpina no antebraço: 60 mmol/L ou mais confirma. O beijo salgado da avó é a pista clássica. Elastase fecal mostra a insuficiência pancreática, mas não fecha o diagnóstico.",
+      "fala": "Vai uma conduta aí, doutor? O sal desta mesa vem do suor."
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta, mesa da pediatria: o neto mama bem e não engorda, e a avó já culpou o feijão. O Garçom Espetinho trouxe quatro espetos de exame; um deles confirma o diagnóstico e os outros só fazem a conta do hospital subir.",
+    "palavras_chave": [
+      "infant",
+      "poor weight gain",
+      "pediatric gastroenterology",
+      "diagnostic testing"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual é a sua letra?",
+    "resumo": "Pele salgada, fezes gordurosas e IRT alto: qual exame confirma?"
+  },
+  "reel": null,
+  "exemplo": false
+}
