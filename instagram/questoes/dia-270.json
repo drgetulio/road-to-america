@@ -8,21 +8,22 @@
   "topico": "Avaliação primária no trauma",
   "conceito": "Trauma primary survey: airway with cervical spine protection comes first (ABCDE)",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-30",
   "tom": null,
-  "gancho": "Rodízio do trauma: *qual espeto* chega primeiro na mesa?",
+  "gancho": "Rodízio do trauma: cinco espetos na mão e *o garçom travou*",
   "gancho_apoio": "Respiração gorgolejante, Glasgow 7, pressão no limite e uma coxa deformada. Por onde começar?",
   "imagem": {
     "arquivo": "dia-270.png",
-    "cena": "O garçom do rodízio segura cinco espetos de cores diferentes, lado a lado, diante de uma mesa onde um carrinho de brinquedo amassado está em cima da toalha. Ele olha os espetos, em dúvida sobre qual servir primeiro.",
+    "cena": "O Garçom Espetinho está paralisado diante de uma mesa com um carrinho de brinquedo amassado em cima da toalha, segurando cinco espetos de cores diferentes abertos como um leque de cartas, com gotinhas de suor na cabeça redonda, sem saber qual servir primeiro. A plaquinha verde e vermelha está de lado, perto da cesta de pão de queijo.",
     "foco": "50% 35%",
-    "alt": "Rodízio do trauma: qual espeto chega primeiro na mesa?"
+    "alt": "Garçom Espetinho com cinco espetos e um carrinho amassado na mesa"
   },
   "imagem_macete": {
     "arquivo": "dia-270-macete.png",
-    "cena": "O garçom serve o primeiro espeto, que traz um tubo de respirar curvo e um colar cervical acolchoado encaixado como um anel; os outros quatro espetos esperam em fila, na ordem. O carrinho de brinquedo na mesa parece aliviado.",
+    "cena": "O garçom serve, confiante, o primeiro espeto, que traz um tubo de respirar curvo com um colar cervical acolchoado encaixado como um anel; os outros quatro espetos esperam em fila, na ordem, e a plaquinha mostra o verde. O carrinho de brinquedo na mesa parece aliviado.",
     "foco": "50% 40%",
     "alt": "Via aérea com colar vem primeiro"
   },
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "No rodízio do trauma, o *primeiro espeto* já vem *com colar*",
       "apoio": "O garçom serve os espetos na ordem A, B, C, D e E, e o primeiro, a via aérea, já vem com o colar cervical encaixado. Ninguém pula para a picanha da tomografia antes do pão de queijo da via aérea.",
-      "fala": null
+      "fala": "Vai uma conduta aí, doutor? Primeiro o pão de queijo da via aérea."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é o primeiro passo?"
+    "pergunta": "Gorgolejo, Glasgow 7 e fêmur deformado: qual é o primeiro passo?"
   },
   "cta": "simulado",
   "reel": null,

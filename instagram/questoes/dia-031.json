@@ -7,20 +7,20 @@
   "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
   "topico": "Síndrome de Brown-Séquard",
   "conceito": "Brown-Sequard syndrome: ipsilateral weakness and proprioception loss, contralateral pain and temperature loss",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-03",
-  "gancho": "A avenida medular parou pela metade e cada lado reclamou diferente",
+  "gancho": "Facada nas costas, meia avenida interditada e cada *perna* reclamando de um jeito",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma avenida de mão dupla vista de cima, em obras: metade da pista fechada com cones. Caminhões azuis seguem retos na mesma faixa e motos vermelhas cruzam o canteiro logo depois do acesso. A imagem não mostra qual lado foi interditado.",
+    "cena": "Capitã Plaqueta, de colete e apito, organiza o trânsito de uma avenida de mão dupla vista de cima, com metade da pista fechada por cones (a imagem não mostra qual lado). Caminhões azuis seguem retos na mesma faixa, e motos vermelhas cruzam o canteiro logo depois do acesso; setinhas de manual de montagem marcam os cruzamentos.",
     "foco": "50% 35%",
-    "alt": "Uma avenida de mão dupla vista de cima, em obras: metade da pista fechada com cones. Caminhões azuis seguem retos na mesma faixa e motos vermelhas cruzam o canteiro logo depois do acesso.",
+    "alt": "Facada nas costas, meia avenida interditada e cada perna reclamando de um jeito",
     "arquivo": "dia-031.png"
   },
   "imagem_macete": {
-    "cena": "Callback da avenida: agora a interdição aparece no lado direito. O caminhão azul da direita está parado no bloqueio e a moto vermelha que entrou pela esquerda e já tinha cruzado para a direita também está parada. Do lado esquerdo, os caminhões seguem livres.",
+    "cena": "Callback da avenida: a interdição aparece no lado direito. O caminhão azul da direita está parado no bloqueio, e a moto vermelha que entrou pela esquerda e já tinha cruzado para a direita também está parada. Do lado esquerdo, os caminhões seguem livres, e a Capitã aponta o bloqueio.",
     "alt": "Corte do lado direito, dor perdida do lado esquerdo",
     "arquivo": "dia-031-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "A síndrome medular posterior tira vibração e propriocepção dos dois lados e preserva a força e a dor."
     },
     "macete": {
-      "frase": "Caminhão *só cruza no bulbo*, moto *cruza na entrada*",
+      "frase": "Na avenida da medula, o *caminhão* (força e vibração) só troca de pista no bulbo; a *moto* (dor e temperatura) cruza logo na entrada.",
       "apoio": "Pegadinha de prova: O NBME gosta de dar só os achados e perguntar o lado da lesão: o lado da fraqueza e da propriocepção é sempre o lado do corte.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Um corte de um lado só da medula e duas pernas com queixas opostas. Quem cruza a pista cedo e quem cruza só no bulbo decide a letra.",
+    "contexto": "Um corte de um lado só da medula e duas pernas com queixas opostas. Quem troca de pista cedo e quem troca só no bulbo decide a letra. A Capitã Plaqueta está organizando o trânsito.",
     "palavras_chave": [
       "stab wound",
       "hyperreflexia",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual lesão explica o quadro?"
+    "pergunta": "Perna direita fraca e perna esquerda sem dor: qual lado foi cortado?"
   },
   "cta": "simulado",
   "exemplo": false

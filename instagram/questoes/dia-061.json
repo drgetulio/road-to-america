@@ -14,13 +14,13 @@
   "gancho": "Réveillon com metronidazol: por que o brinde *virou mal-estar*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida, de roupa branca de réveillon, numa praia à meia-noite com fogos ao fundo. Ela segura uma taça de suco de uva roxo e, com a outra mão, impede uma rolha de espumante de estourar. Na areia, um frasco de comprimidos com uma ampulheta desenhada.",
+    "cena": "Tia Meia-Vida, de roupa branca de réveillon, numa praia à meia-noite com fogos ao fundo. Ela segura uma taça de suco de uva roxo e, com a outra mão, impede uma rolha de espumante de estourar. Na areia, um frasco de comprimidos sem rótulo.",
     "foco": "50% 35%",
     "alt": "Réveillon com metronidazol: por que o brinde virou mal-estar?",
     "arquivo": "dia-061.png"
   },
   "imagem_macete": {
-    "cena": "Callback do réveillon: a entrada da festa tem duas catracas em sequência. A primeira gira livre, a segunda está presa por um cadeado em forma de comprimido. Entre as duas, bolinhas vermelhas e enjoadas (acetaldeído) se acumulam, e Tia Meia-Vida aponta para o cadeado.",
+    "cena": "Callback do réveillon: a entrada da festa tem duas catracas em sequência. A primeira gira livre, a segunda está presa por um cadeado em forma de comprimido. Entre as duas, bolinhas vermelhas e enjoadas se acumulam, e Tia Meia-Vida aponta para o cadeado.",
     "alt": "A festa trava na aldeído desidrogenase",
     "arquivo": "dia-061-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Inibir a MAO causa crise hipertensiva com alimentos ricos em tiramina, não reação ao álcool."
     },
     "macete": {
-      "frase": "Metronidazol tranca a *segunda catraca* (ALDH)",
+      "frase": "Metronidazol tranca a *segunda catraca* (ALDH): o acetaldeído fica preso no meio da festa, e a virada vira rubor e enjoo em 20 minutos.",
       "apoio": "Pegadinha de prova: O NBME troca as duas enzimas: fomepizol bloqueia a primeira (ADH), dissulfiram e metronidazol bloqueiam a segunda (ALDH).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Ano Novo, roupa branca, sete ondas e um antibiótico na bolsa. Ela brindou com uma taça e a noite virou do avesso em 20 minutos. Qual enzima ficou travada?",
+    "contexto": "Ano Novo, roupa branca, sete ondas e um antibiótico na bolsa. Ela brindou com uma taça, e a noite virou do avesso em 20 minutos. A Tia Meia-Vida quer saber qual catraca travou.",
     "palavras_chave": [
       "bacterial vaginosis",
       "alcohol",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual enzima travou o réveillon?"
+    "pergunta": "Metronidazol e uma taça no réveillon: qual enzima ficou travada?"
   },
   "cta": "simulado",
   "exemplo": false

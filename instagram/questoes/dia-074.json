@@ -8,6 +8,7 @@
   "topico": "Episódio depressivo maior",
   "conceito": "Major depressive episode: 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Janeiro Branco (saúde mental): tom acolhedor, sem piada com o sofrimento.",
   "remix_de": null,
   "explicacao_em": "2027-01-15",
@@ -15,14 +16,14 @@
   "gancho": "Janeiro Branco: tristeza, cansaço ou um *episódio depressivo*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um caminho de parque ao amanhecer, com uma fita branca presa num banco de madeira e uma xícara de chá fumegante. Ao longo do caminho, nove lanternas apagadas esperando para serem conferidas.",
+    "cena": "Um caminho de parque ao amanhecer. Garçom Espetinho, sem espetos e com um sorriso tranquilo, deixa uma xícara de chá fumegante num banco de madeira com uma fita branca amarrada. Ao longo do caminho, nove lanternas apagadas esperam para ser conferidas. A plaquinha verde e vermelha descansa de lado no banco.",
     "foco": "50% 35%",
-    "alt": "Janeiro Branco: tristeza, cansaço ou um episódio depressivo?",
+    "alt": "Garçom Espetinho, sem espetos, deixa uma xícara de chá num banco de parque com fita branca; nove lanternas apagadas ao longo do caminho.",
     "arquivo": "dia-074.png"
   },
   "imagem_macete": {
-    "cena": "Callback do parque: cinco das nove lanternas estão acesas, e a primeira acesa tem um ícone de nuvenzinha, o humor. No céu, uma fileira de pequenos sóis desenha duas semanas. Ao lado do banco, uma placa de rodovia com o ícone de um telefone aponta para um posto de ajuda.",
-    "alt": "Cinco sintomas por duas semanas: episódio depressivo maior",
+    "cena": "Callback do parque: cinco das nove lanternas estão acesas, e a primeira acesa tem um ícone de nuvenzinha, o humor. No céu, uma fileira de pequenos sóis desenha duas semanas. Ao lado do banco, o Garçom Espetinho aponta com delicadeza para uma placa com o ícone de um telefone, que leva a um posto de ajuda.",
+    "alt": "Cinco de nove lanternas acesas e uma fileira de sóis de duas semanas; o Garçom Espetinho aponta para uma placa com ícone de telefone.",
     "arquivo": "dia-074-macete.png"
   },
   "questao": {
@@ -67,7 +68,7 @@
     "macete": {
       "frase": "*5 de 9* por *2 semanas*, com humor ou anedonia",
       "apoio": "Pegadinha de prova: O NBME testa a duração: 2 semanas é episódio depressivo maior, 2 anos é transtorno persistente, e qualquer hipomania no passado muda para bipolar.",
-      "fala": null
+      "fala": "Hoje não tem espeto. Tem escuta, e o critério certo."
     }
   },
   "legenda": {
@@ -90,7 +91,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o diagnóstico mais provável?"
+    "pergunta": "Cinco sintomas há 3 semanas, sem hipomania: qual diagnóstico?"
   },
   "cta": "simulado",
   "exemplo": false

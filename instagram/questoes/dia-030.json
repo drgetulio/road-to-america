@@ -7,7 +7,7 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Profilaxia no HIV",
   "conceito": "HIV with CD4 below 200: TMP-SMX prophylaxis against Pneumocystis",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Dia Mundial de Luta contra a AIDS (1/12): sem estigma, foco em prevenção.",
   "remix_de": null,
   "explicacao_em": "2026-12-02",
@@ -16,13 +16,13 @@
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-030.png",
-    "cena": "Cena tranquila numa praça: um par de pulmões de pelúcia sorridentes está sentado num banco ao lado de um guarda-chuva azul-marinho fechado, com nuvens leves se juntando no céu. Um lacinho vermelho, símbolo da luta contra a AIDS, está amarrado num poste de luz.",
+    "cena": "Macrô, sereno, está sentado num banco de praça ao lado de um par de pulmões de pelúcia sorridentes; ele segura um guarda-chuva azul-marinho ainda fechado, enquanto nuvens leves se juntam no céu. Um lacinho vermelho, símbolo da luta contra a AIDS, está amarrado num poste de luz.",
     "foco": "50% 35%",
     "alt": "1º de dezembro: cuidado, informação e prevenção, sem estigma"
   },
   "imagem_macete": {
     "arquivo": "dia-030-macete.png",
-    "cena": "Callback da praça: o guarda-chuva agora está aberto e protege os pulmões de pelúcia de uma garoa leve. A cobertura é feita de dois tecidos costurados, vermelho e branco (as duas drogas da combinação), e ao fundo o sol começa a aparecer, iluminando o lacinho vermelho.",
+    "cena": "Callback da praça: Macrô abre o guarda-chuva e protege os pulmões de pelúcia de uma garoa leve. A cobertura é feita de dois tecidos costurados, vermelho e branco (as duas drogas da combinação), e ao fundo o sol começa a aparecer, iluminando o lacinho vermelho.",
     "alt": "Guarda-chuva aberto antes da chuva"
   },
   "questao": {
@@ -65,7 +65,7 @@
       "C": "O valganciclovir não é usado como profilaxia primária de citomegalovírus no adulto com HIV."
     },
     "macete": {
-      "frase": "CD4 abaixo de 200: guarda-chuva aberto antes da chuva, com TMP-SMX. Abaixo de 100 e toxo positivo, o mesmo guarda-chuva cobre o cérebro. CD4 acima de 200 por 3 meses com tratamento, pode fechar o guarda-chuva.",
+      "frase": "CD4 abaixo de 200: guarda-chuva *aberto antes da chuva*, com TMP-SMX. Abaixo de 100 e toxo positivo, o mesmo guarda-chuva cobre o cérebro.",
       "apoio": "Pegadinha de prova: O NBME dá a contagem de CD4 e pergunta qual profilaxia começar; guarde os cortes 200 (Pneumocystis), 100 (toxoplasmose, com IgG positiva) e 50 (MAC, só se o antirretroviral não começa logo).",
       "fala": null
     }
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "HIV com CD4 de 160: qual profilaxia?"
+    "pergunta": "HIV recente com CD4 de 160 e toxo negativo: qual profilaxia somar?"
   },
   "exemplo": false
 }

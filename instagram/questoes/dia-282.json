@@ -8,21 +8,22 @@
   "topico": "Estado de mal epiléptico",
   "conceito": "Status epilepticus: IV lorazepam first, then fosphenytoin, levetiracetam or valproate",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-11",
   "tom": null,
-  "gancho": "Cobrança de pênalti no plantão: *quem bate primeiro?*",
-  "gancho_apoio": "Crise que não para, via aérea garantida e acesso venoso pronto.",
+  "gancho": "Crise há 8 minutos e o técnico *ainda escolhendo o batedor do pênalti*",
+  "gancho_apoio": "Crise que não para, via aérea garantida e acesso venoso pronto. Quem bate primeiro?",
   "imagem": {
     "arquivo": "dia-282.png",
-    "cena": "Placa verde de rodovia NEXT STEP com saídas; abaixo, uma prancheta de técnico de futebol com quatro fichas de jogador em cores diferentes (redondas e iguais, uma azul-marinho, uma vermelha, uma amarela e uma verde) e um cronômetro grande já bem além da marquinha de tempo.",
+    "cena": "Três da manhã no vestiário de um estádio: Dona Térmica, a garrafa térmica, com apito de técnico no pescoço, segura uma prancheta tática com quatro fichas de jogador iguais e redondas (navy, vermelha, amarela e verde) perto da marca do pênalti, e um cronômetro grande na parede já passou bem da marquinha de tempo. Um relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Cobrança de pênalti no plantão: quem bate primeiro?"
+    "alt": "Dona Térmica na prancheta com quatro batedores"
   },
   "imagem_macete": {
     "arquivo": "dia-282-macete.png",
-    "cena": "Callback: a ficha azul-marinho, agora com forma de travesseiro macio (o benzo que acalma o cérebro), cobra o pênalti primeiro e a bola entra; as fichas vermelha e amarela esperam no banco como segundo tempo, e a verde aguarda no vestiário como prorrogação.",
+    "cena": "Na mesma prancheta, a ficha navy, agora com forma de travesseiro macio, cobra primeiro e a bola entra; as fichas vermelha e amarela esperam no banco como segundo tempo, e a verde aguarda no vestiário como prorrogação. O cronômetro para e Dona Térmica comemora erguendo o café.",
     "foco": "50% 45%",
     "alt": "Mais de 5 minutos: benzodiazepínico primeiro"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "No pênalti do status, *o batedor oficial é o benzo*",
-      "apoio": "Na imagem, a prancheta do técnico tem os batedores em fila. O primeiro a chutar é o benzodiazepínico; o segundo tempo é fosfenitoína, levetiracetam ou valproato; a prorrogação é a anestesia.",
-      "fala": null
+      "apoio": "Passou de 5 minutos, é estado de mal: o primeiro a chutar é o benzodiazepínico (lorazepam IV, ou midazolam IM se não houver acesso). O segundo tempo é fosfenitoína, levetiracetam ou valproato; a prorrogação é a anestesia com propofol ou midazolam em infusão.",
+      "fala": "Já vi esse caso às 3 da manhã. O benzo sempre bate primeiro."
     }
   },
   "legenda": {
-    "contexto": "Crise tônico-clônica há 8 minutos, via aérea garantida, acesso venoso pronto e glicemia normal. A placa do Plantão de Terça mostra as saídas. Qual é o próximo passo?",
+    "contexto": "Crise tônico-clônica há 8 minutos, via aérea garantida, acesso venoso pronto e glicemia normal. Qual é o próximo passo?",
     "palavras_chave": [
       "epilepsy",
       "generalized tonic-clonic seizure",
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Crise há 8 minutos, acesso pronto: próximo passo?"
+    "pergunta": "Crise há 8 minutos e acesso venoso pronto: qual remédio primeiro?"
   },
   "cta": null,
   "reel": null,

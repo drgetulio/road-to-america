@@ -7,20 +7,20 @@
   "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
   "topico": "Síndrome compartimental",
   "conceito": "Compartment syndrome: pain with passive stretch, emergency fasciotomy",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-04",
-  "gancho": "A mala não fecha, o zíper geme e o garçom quer saber",
+  "gancho": "A *mala* de volta de Orlando não fecha, e o Mito lá dentro está sem ar",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma mala navy abarrotada numa mesa de churrascaria, com as costuras esticadas e o zíper suando, enquanto o garçom do rodízio chega com três espetos e a plaquinha de duas cores ainda virada de lado.",
+    "cena": "Uma mala navy abarrotada de volta de viagem, em cima de uma mesa de churrascaria, com as costuras esticadas e o zíper suando. Pelo vãozinho do zíper espia o Mito, de jaleco amassado, abanando o rosto com o crachá, sem ar. Ao lado, a plaquinha verde e vermelha está virada de lado.",
     "foco": "50% 35%",
-    "alt": "Uma mala navy abarrotada numa mesa de churrascaria, com as costuras esticadas e o zíper suando, enquanto o garçom do rodízio chega com três espetos e a plaquinha de duas cores ainda virada de lado.",
+    "alt": "A mala de volta de Orlando não fecha, e o Mito lá dentro está sem ar",
     "arquivo": "dia-032.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o garçom vira a plaquinha para o verde e abre o zíper da mala inteira, de ponta a ponta; o conteúdo se acomoda e a mala sorri aliviada. Ao lado, uma almofada e um travesseiro alto ficam de lado com a plaquinha vermelha.",
+    "cena": "Callback: o zíper da mala é aberto de ponta a ponta, o conteúdo se acomoda e o Mito sai respirando aliviado, com o café na mão. Ao lado, uma almofada e um travesseiro alto ficam de lado com a plaquinha vermelha.",
     "alt": "Abriu o zíper: fasciotomia de urgência",
     "arquivo": "dia-032-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "O pulso está presente e o problema é pressão no compartimento, não oclusão arterial; exame de imagem só atrasa a cirurgia."
     },
     "macete": {
-      "frase": "Fáscia é *mala que não estica*: abre o zíper",
+      "frase": "Fáscia é mala de volta de *Orlando*: não estica. Morfina não fecha zíper; só abrir de ponta a ponta devolve o ar para o Mito.",
       "apoio": "Pegadinha de prova: O NBME coloca pulso palpável e enchimento capilar normal para te fazer esperar; dor ao estiramento passivo com compartimento tenso já basta para operar.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Fratura fechada, tala, analgesia caprichada e uma dor que não obedece. O rodízio de hoje é de cirurgia, e só um espeto é a conduta certa.",
+    "contexto": "Fratura fechada, tala retirada, morfina caprichada e uma dor que piora quando o dedo do pé é esticado. O rodízio de hoje é de cirurgia, e só um espeto é a conduta certa.",
     "palavras_chave": [
       "tibial shaft fracture",
       "pain out of proportion",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "Dor desproporcional e panturrilha tensa sem a tala: qual conduta?"
   },
   "cta": "simulado",
   "exemplo": false

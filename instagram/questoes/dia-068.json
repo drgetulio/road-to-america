@@ -7,21 +7,21 @@
   "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
   "topico": "Cistite não complicada",
   "conceito": "Uncomplicated cystitis: nitrofurantoin or TMP-SMX, avoid fluoroquinolones",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-09",
-  "gancho": "Bexiga pegando fogo: bicicleta, helicóptero, *ambulância ou carro*?",
+  "gancho": "Cistite sem febre: a Tia Meia-Vida despacha *qual entregador*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "No balcão de uma farmácia de interior com uma ampulheta, uma caixa d'água em forma de bexiga, simpática, solta fumacinha e pequenas chamas no topo. Na rua, quatro veículos esperam: uma bicicleta de bombeiro, um helicóptero, uma ambulância e um carro comum.",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura um pedido de entrega em branco. Na calçada esperam uma bicicleta de bombeiro com tanquinho de água, um helicóptero enorme estacionado no meio da rua estreita, uma ambulância e um carro de família. Ao fundo, uma caixa d'água em forma de bexiga solta fumacinha.",
     "foco": "50% 35%",
-    "alt": "Bexiga pegando fogo: bicicleta, helicóptero, ambulância ou carro?",
+    "alt": "Tia Meia-Vida segura um pedido de entrega; na rua esperam uma bicicleta de bombeiro, um helicóptero enorme, uma ambulância e um carro.",
     "arquivo": "dia-068.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o bombeiro de bicicleta entra na caixa d'água e apaga o fogo por dentro, sem subir para o telhado da casa, onde mora um rim tranquilo. O helicóptero continua estacionado com uma capa protetora.",
-    "alt": "Cistite simples: nitrofurantoína",
+    "cena": "Callback: o bombeiro de bicicleta entra na caixa d'água e apaga o fogo por dentro, sem subir no telhado da casa, onde mora um rim tranquilo. O helicóptero continua parado na rua, coberto por uma capa, ao lado de um saquinho de pão francês que ninguém precisou buscar de jatinho.",
+    "alt": "A bicicleta de bombeiro apaga o fogo dentro da caixa d'água sem subir ao telhado do rim; o helicóptero fica coberto ao lado de um saquinho de pão.",
     "arquivo": "dia-068-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "D": "Amoxicilina tem resistência alta entre as E. coli e não é recomendada como tratamento empírico."
     },
     "macete": {
-      "frase": "Bombeiro *do bairro* na bexiga, helicóptero *guardado*",
+      "frase": "Nitrofurantoína é o *bombeiro do bairro*: bexiga sim, rim não",
       "apoio": "Pegadinha de prova: O NBME dá cistite simples e oferece ciprofloxacino; guarde a fluoroquinolona e lembre que nitrofurantoína não trata pielonefrite nem funciona bem com filtração renal muito baixa.",
-      "fala": null
+      "fala": "Helicóptero para cistite? Isso é buscar pão na esquina de jatinho, meu bem."
     }
   },
   "legenda": {
-    "contexto": "Ardor para urinar, urgência, nenhuma febre e nenhuma dor lombar. No Sextou na Farmácia, o balcão tem quatro remédios e só um é a primeira escolha.",
+    "contexto": "Ardor para urinar, urgência, nenhuma febre e nenhuma dor lombar. Na porta da farmácia, quatro entregadores esperam o pedido, e a Tia Meia-Vida só manda um. Qual é a primeira escolha?",
     "palavras_chave": [
       "dysuria",
       "urinary frequency",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual remédio vai para a bexiga?"
+    "pergunta": "Cistite simples, sem gravidez nem alergia: qual antibiótico?"
   },
   "cta": "simulado",
   "exemplo": false

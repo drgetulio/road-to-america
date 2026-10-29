@@ -8,17 +8,18 @@
   "topico": "Ruptura do tendão de Aquiles",
   "conceito": "Achilles tendon rupture: positive Thompson test",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-19",
   "tom": null,
-  "gancho": "Futsal de fim de semana: quem *chutou* o calcanhar?",
-  "gancho_apoio": "Um estalo atrás do tornozelo e ninguém por perto. Qual é o diagnóstico?",
+  "gancho": "Casados x solteiros, *um chute de ninguém* e um calcanhar que não obedece",
+  "gancho_apoio": "Um estalo atrás do tornozelo, e ninguém por perto.",
   "imagem": {
     "arquivo": "dia-109.png",
-    "cena": "Numa quadra de futsal vazia, um tênis simpático com olhos para e olha para trás, procurando quem o chutou, mas não há ninguém. Na beira da quadra, o garçom de rodízio segura a plaquinha redonda verde e vermelha.",
+    "cena": "Numa quadra de futsal vazia, com um placar em branco, um tênis simpático com olhos para e olha para trás, procurando quem o chutou, mas não há ninguém. Na beira da quadra, o Garçom Espetinho segura a plaquinha redonda verde e vermelha.",
     "foco": "50% 35%",
-    "alt": "Tênis olhando para trás numa quadra vazia; o garçom segura a plaquinha verde e vermelha."
+    "alt": "Numa quadra vazia, um tênis olha para trás procurando quem o chutou; o Garçom Espetinho segura a plaquinha verde e vermelha."
   },
   "imagem_macete": {
     "arquivo": "dia-109-macete.png",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Anterior talofibular ligament sprain",
-        "quiz": "Entorse do LTFA"
+        "quiz": "ATFL sprain"
       },
       "B": {
         "texto": "Medial gastrocnemius strain",
-        "quiz": "Lesão da panturrilha"
+        "quiz": "Medial calf strain"
       },
       "C": {
         "texto": "Posterior tibial tendon dysfunction",
-        "quiz": "Tibial posterior"
+        "quiz": "Tibialis posterior"
       },
       "D": {
         "texto": "Achilles tendon rupture",
-        "quiz": "Ruptura do Aquiles"
+        "quiz": "Achilles rupture"
       }
     },
     "correta": "D"
@@ -68,11 +69,11 @@
     "macete": {
       "frase": "Marionete de *fio cortado*: aperta a panturrilha e o pé não mexe",
       "apoio": "Na imagem, o tênis olha para trás procurando quem chutou, e não há ninguém.",
-      "fala": null
+      "fala": "Ninguém te chutou, doutor. Foi o seu Aquiles pedindo demissão."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de quinta, espeto de cirurgia ortopédica: futsal de fim de semana, um estalo e a sensação de que alguém chutou o calcanhar.",
+    "contexto": "Futsal de fim de semana, um estalo atrás do tornozelo, a sensação de que alguém chutou o calcanhar e ninguém atrás. Ele anda mancando e não fica na ponta do pé. O Garçom Espetinho traz o espeto de cirurgia ortopédica: qual é o diagnóstico?",
     "palavras_chave": [
       "weekend futsal",
       "sudden pop",
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Estalo no calcanhar e Thompson positivo?"
+    "pergunta": "Estalo, sem ponta de pé e panturrilha que não move o pé: diagnóstico?"
   },
   "cta": null,
   "reel": null,

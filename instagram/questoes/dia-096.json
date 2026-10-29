@@ -12,8 +12,8 @@
   "remix_de": null,
   "explicacao_em": "2027-02-06",
   "tom": null,
-  "gancho": "Capitã Plaqueta deu um *megafone* ao fiscal: quem desliga?",
-  "gancho_apoio": "Um remédio turbina a antitrombina contra dois carros da coagulação. Qual é o antídoto?",
+  "gancho": "Bolus na hemodinâmica, virilha sangrando e *um megafone ligado*: quem desliga?",
+  "gancho_apoio": "Um remédio turbina a antitrombina contra dois carros da coagulação.",
   "imagem": {
     "arquivo": "dia-096.png",
     "cena": "Capitã Plaqueta apita num cruzamento movimentado. Uma ajudante tímida em forma de corrente comprida entrega um megafone enorme a um fiscal de trânsito redondo, que agora consegue parar dois carros de cores diferentes ao mesmo tempo. Os outros carros seguem sem problema.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Vitamin K",
-        "quiz": "Vitamina K"
+        "quiz": "Vitamin K"
       },
       "B": {
         "texto": "Idarucizumab",
-        "quiz": "Idarucizumabe"
+        "quiz": "Idarucizumab"
       },
       "C": {
         "texto": "Four-factor prothrombin complex concentrate",
-        "quiz": "CCP 4 fatores"
+        "quiz": "4-factor PCC"
       },
       "D": {
         "texto": "Protamine sulfate",
-        "quiz": "Protamina"
+        "quiz": "Protamine sulfate"
       }
     },
     "correta": "D"
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "Heparina *negativa*, protamina *positiva*: o guincho-ímã arrasta",
       "apoio": "Na imagem, a ajudante em forma de corrente dá o megafone ao fiscal; amanhã o guincho-ímã chega.",
-      "fala": null
+      "fala": "Ela é negativa, ele é positivo. Grudaram e pararam de trabalhar. Trânsito liberado!"
     }
   },
   "legenda": {
-    "contexto": "Sextou na farmácia com a Capitã Plaqueta: um remédio da sala de hemodinâmica, um TTPa nas alturas e quatro antídotos para escolher.",
+    "contexto": "Na sala de hemodinâmica, um remédio que turbina a antitrombina contra a trombina e o fator Xa. Duas horas depois, a punção femoral não para de sangrar e o TTPa está nas alturas. A Capitã Plaqueta tem quatro antídotos no colete: qual desliga isso mais rápido?",
     "palavras_chave": [
       "percutaneous coronary intervention",
       "femoral access bleeding",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sangrou com heparina: qual é o antídoto?"
+    "pergunta": "Sangrou com TTPa alto após bolus na hemodinâmica: qual antídoto?"
   },
   "cta": null,
   "reel": null,

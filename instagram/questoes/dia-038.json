@@ -7,20 +7,20 @@
   "sistema": "Sistemas respiratório e renal/urinário",
   "topico": "Relação ventilação-perfusão",
   "conceito": "Shunt vs dead space: 100 percent O2 corrects V/Q mismatch but not true shunt",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-10",
-  "gancho": "Lotaram o ponto de oxigênio e o ônibus passou vazio",
+  "gancho": "O Mito espera oxigênio no ponto, e o ônibus passou *vazio*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma linha de ônibus com três pontos: um lotado de bolinhas de oxigênio sem ônibus por perto, um alagado e um com poucos passageiros; um botão gigante de oxigênio está girado no máximo. Não fica claro qual ponto explica o problema.",
+    "cena": "Mito, de jaleco amassado e café na mão, está no fim de uma linha de ônibus com três pontos: um lotado de bolinhas de oxigênio sem ônibus por perto, um alagado e um com poucos passageiros. Um botão gigante de oxigênio está girado no máximo, e setinhas de manual apontam os pontos. Não fica claro qual ponto explica o problema.",
     "foco": "50% 35%",
-    "alt": "Uma linha de ônibus com três pontos: um lotado de bolinhas de oxigênio sem ônibus por perto, um alagado e um com poucos passageiros; um botão gigante de oxigênio está girado no máximo.",
+    "alt": "O Mito espera oxigênio no ponto, e o ônibus passou vazio",
     "arquivo": "dia-038.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o ônibus vermelho passa pelo ponto alagado e segue vazio, enquanto uma multidão de bolinhas de oxigênio acena de longe, sem conseguir entrar na água. No ponto com poucos passageiros, as bolinhas extras sobem e o ônibus sai cheio.",
+    "cena": "Callback: o ônibus vermelho passa pelo ponto alagado e segue vazio, enquanto uma multidão de bolinhas de oxigênio acena de longe, sem conseguir atravessar a água. No ponto com poucos passageiros, as bolinhas extras sobem e o ônibus sai cheio. O Mito suspira.",
     "alt": "Ponto alagado: oxigênio a mais não sobe no ônibus",
     "arquivo": "dia-038-macete.png"
   },
@@ -64,13 +64,13 @@
       "C": "Unidades com V/Q baixo respondem ao oxigênio a 100%; a resposta mínima aponta para shunt."
     },
     "macete": {
-      "frase": "Ponto *alagado* é shunt: mais passageiro *não adianta*",
+      "frase": "Ponto *alagado* é shunt: pode lotar a calçada de oxigênio que o ônibus passa vazio. FiO2 de 100% quase não mexe.",
       "apoio": "Pegadinha de prova: O NBME diferencia shunt de V/Q mismatch pela resposta ao oxigênio a 100%; espaço morto aparece na embolia pulmonar como área ventilada sem perfusão.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Hipoxemia na UTI, FiO2 no máximo e o PaO2 quase não sai do lugar. A pergunta é por quê.",
+    "contexto": "Hipoxemia na UTI, FiO2 no máximo e o PaO2 quase não sai do lugar. O Mito está no fim da linha, esperando oxigênio. A pergunta é por quê.",
     "palavras_chave": [
       "ARDS",
       "PaO2",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mecanismo explica a hipoxemia?"
+    "pergunta": "FiO2 de 1,0 e PaO2 quase igual: qual mecanismo da hipoxemia?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -12,8 +12,8 @@
   "remix_de": null,
   "explicacao_em": "2027-02-28",
   "tom": "acolhedor",
-  "gancho": "Sinais na pele, no peso e nos remédios: o que fazer?",
-  "gancho_apoio": "Uma senhora de 82 anos, um cuidador e sinais que não combinam. Qual é o próximo passo?",
+  "gancho": "Pele, peso e pílulas que *não fecham a conta*: o que o médico faz?",
+  "gancho_apoio": "Uma senhora de 82 anos, um cuidador e sinais que não combinam.",
   "imagem": {
     "arquivo": "dia-118.png",
     "cena": "Uma varanda tranquila no fim da tarde, com uma cadeira de balanço vazia, uma xícara de chá na mesinha e uma única janela acesa. Ao lado do portão, uma placa de trânsito redonda com o desenho de uma balança de tribunal, e um guarda-chuva encostado na parede.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Confront the son about the bruises",
-        "quiz": "Confrontar o filho"
+        "quiz": "Confront the son"
       },
       "B": {
         "texto": "Report the suspicion to Adult Protective Services",
-        "quiz": "Notificar ao APS"
+        "quiz": "Report to APS"
       },
       "C": {
         "texto": "Wait for her explicit permission to report",
-        "quiz": "Esperar autorização"
+        "quiz": "Wait for permission"
       },
       "D": {
         "texto": "Reexamine her in 1 month for new injuries",
-        "quiz": "Rever em 1 mês"
+        "quiz": "Recheck in 1 month"
       }
     },
     "correta": "B"
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Suspeita de violência contra idosa: e agora?"
+    "pergunta": "Hematomas, perda de peso e medo do filho: qual é a conduta?"
   },
   "cta": null,
   "reel": null,

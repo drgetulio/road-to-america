@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-28",
   "tom": null,
-  "gancho": "O forno da padaria travou. *Quem entrega a pizza pronta?*",
-  "gancho_apoio": "Remédio semanal tomado todo dia e uma enzima travada.",
+  "gancho": "Remédio de uma vez por semana tomado *todo santo dia*: a Tia gelou",
+  "gancho_apoio": "Aftas, manchas roxas e pancitopenia. Qual frasco contorna a enzima travada?",
   "imagem": {
     "arquivo": "dia-299.png",
-    "cena": "Tia Meia-Vida atrás de um balcão que é meio farmácia, meio padaria; um forno de pão trancado com cadeado vermelho, uma bola de massa crua esperando ao lado, um calendário semanal com só um dia destacado em verde e quatro frascos no balcão.",
+    "cena": "Na cozinha da Tia Meia-Vida, um calendário de parede tem só o domingo pintado de verde, mas sete comprimidos amarelos estão enfileirados, um em cada dia. O forno de pão está trancado com cadeado vermelho e uma bola de massa crua espera ao lado. A Tia, de óculos vermelhos, olha o calendário com a mão na testa; quatro frascos esperam na bancada.",
     "foco": "50% 35%",
-    "alt": "O forno da padaria travou. Quem entrega a pizza pronta?"
+    "alt": "Sete comprimidos num calendário que pedia só um"
   },
   "imagem_macete": {
     "arquivo": "dia-299-macete.png",
-    "cena": "Callback: um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram, passando pelo forno trancado; a massa crua (ácido fólico) continua parada na frente do forno, e a Tia Meia-Vida faz sinal de positivo.",
+    "cena": "Um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram, passando pelo forno trancado; a massa crua continua parada na frente do forno, e a Tia Meia-Vida faz sinal de positivo.",
     "foco": "50% 45%",
     "alt": "Leucovorina pula a DHFR e resgata a célula"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Leucovorina é *a pizza que já chega pronta*: pula o forno quebrado (DHFR)",
-      "apoio": "Na imagem, o forno da padaria da Tia Meia-Vida está trancado com cadeado (DHFR inibida). O ácido fólico é a massa crua esperando o forno; a leucovorina chega de motoboy já assada. E o metotrexato da artrite é semanal, como o jogo de domingo.",
-      "fala": null
+      "apoio": "O forno trancado é a DHFR inibida pelo metotrexato. O ácido fólico é a massa crua, que precisa do forno; a leucovorina (ácido folínico) chega de motoboy já assada e alimenta a medula. E o metotrexato da artrite é semanal, como o jogo de domingo.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Metotrexato semanal, todo mundo tem que lembrar."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Metotrexato em excesso: qual é o antídoto?"
+    "pergunta": "Metotrexato diário por engano e pancitopenia: qual é o resgate?"
   },
   "cta": null,
   "reel": null,

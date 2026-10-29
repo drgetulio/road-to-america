@@ -7,7 +7,7 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Febre na doença falciforme",
   "conceito": "Child with sickle cell disease and fever: blood culture and empiric IV ceftriaxone",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-25",
@@ -16,13 +16,13 @@
   "gancho_apoio": "Criança com doença falciforme e febre de 39,2°C. Dá para esperar?",
   "imagem": {
     "arquivo": "dia-235.png",
-    "cena": "Um gol de futebol com o lugar do goleiro vazio, só um par de luvas na grama, enquanto bolas encapadas com capas brilhantes rolam em direção à área. No banco, um jogador reserva em forma de cápsula amarra a chuteira.",
+    "cena": "Um gol de futebol com o lugar do goleiro vazio, só um par de luvas em forma de feijão na grama, enquanto bolas encapadas com capas brilhantes rolam em direção à área. Na beira do campo, o Macrô, de técnico, grita para o banco, onde um reserva em forma de cápsula amarra a chuteira. A plaquinha verde e vermelha está no banco.",
     "foco": "50% 35%",
-    "alt": "O goleiro não veio e as bolas estão encapadas"
+    "alt": "O gol está sem goleiro e o Macrô, de técnico, chama o reserva"
   },
   "imagem_macete": {
     "arquivo": "dia-235-macete.png",
-    "cena": "Callback: um frasquinho de hemocultura recolhe uma das bolas encapadas, e o reserva em forma de cápsula entra correndo, com um cronômetro grande na mão, e defende as outras bolas. As luvas continuam na grama.",
+    "cena": "Callback: um frasquinho de hemocultura recolhe uma das bolas encapadas, e o reserva em forma de cápsula entra correndo, com um cronômetro grande na mão, e defende as outras bolas. As luvas continuam na grama. O Macrô comemora na beira do campo.",
     "foco": "50% 45%",
     "alt": "Febre na falciforme: ceftriaxona sem demora"
   },
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "*Sem goleiro, o reserva entra em 1 hora*",
       "apoio": "Na imagem, o baço goleiro não está no gol (só as luvas na grama), e as bolas encapadas avançam. O reserva ceftriaxona entra correndo de cronômetro na mão, depois que o frasco da hemocultura já pegou uma das bolas.",
-      "fala": null
+      "fala": "Comi, mostrei, avisei: sem baço no gol, bola encapada entra. Reserva em campo em 1 hora."
     }
   },
   "legenda": {
-    "contexto": "Três anos, doença falciforme (HbSS), febre de 39,2°C há seis horas, bom estado geral e nenhum foco aparente. O garçom do rodízio pergunta: qual espeto sai primeiro?",
+    "contexto": "Três anos, doença falciforme (HbSS), febre de 39,2°C há seis horas, bom estado geral e nenhum foco aparente. O Macrô, de técnico, quer saber o que entra em campo primeiro.",
     "palavras_chave": [
       "HbSS disease",
       "fever",

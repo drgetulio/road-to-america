@@ -12,11 +12,11 @@
   "remix_de": null,
   "explicacao_em": "2027-05-18",
   "tom": null,
-  "gancho": "A Capitã Plaqueta *encolheu*. Quem fez isso com ela?",
+  "gancho": "A Capitã Plaqueta voltou do plantão *tamanho P*. Quem lavou na água quente?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-197.png",
-    "cena": "Capitã Plaqueta, espantada, olha para uma fila de agentes de trânsito em miniatura, do tamanho de botões, que não conseguem fechar o cruzamento; perto dela, um cachecol que pinica pendurado num poste.",
+    "cena": "Capitã Plaqueta, espantada, olha uma fila de agentes de trânsito em miniatura, do tamanho de botões, que não conseguem fechar o cruzamento. Num poste, um cachecol que pinica e uma comanda em branco; no varal, o colete dela parece ter encolhido na máquina.",
     "foco": "50% 35%",
     "alt": "A Capitã Plaqueta, espantada, diante de uma fila de plaquetinhas do tamanho de botões"
   },
@@ -67,7 +67,7 @@
     "macete": {
       "frase": "*WATER*: *W*iskott-*A*ldrich com *T*hrombocytopenia, *E*czema e *R*ecurrent infections. A assinatura é a *plaqueta miniatura*: a Capitã Plaqueta encolheu. Na Bernard-Soulier e na PTI, a plaqueta é grande.",
       "apoio": "O NBME separa pelo tamanho da plaqueta: pequena na Wiskott-Aldrich, grande na Bernard-Soulier e na PTI; menino com tio materno afetado sugere herança ligada ao X.",
-      "fala": null
+      "fala": "Parou, colou... encolheu! Com plaqueta tamanho P, nem apito resolve."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Eczema, infecções e plaqueta pequena. Qual é?"
+    "pergunta": "Menino, eczema, otites e plaqueta pequena: qual é?"
   },
   "cta": "simulado",
   "exemplo": false

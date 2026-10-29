@@ -13,7 +13,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-03-03",
-    "gancho_pt": "Coração querendo sambar numa cabine telefônica apertada",
+    "gancho_pt": "Coração tentando sambar no metrô das 18h: o que está apertando?",
     "vinheta_en": "Six hours after catheter ablation for atrial fibrillation, a 64-year-old woman becomes dyspneic and lightheaded. BP 84/62 mm Hg; heart rate 122/min. Systolic pressure falls 16 mm Hg on inspiration. Jugular veins are distended, heart sounds are muffled, the trachea is midline and the lungs are clear.",
     "pergunta_en": "Which is the most likely diagnosis?",
     "alternativas": [
@@ -42,12 +42,12 @@
         "C": "Pericardite constritiva é crônica, com sinal de Kussmaul e knock pericárdico, e não aparece seis horas depois de um procedimento.",
         "D": "TEP maciço dá hipoxemia e dilatação do VD, mas não deixa as bulhas abafadas."
       },
-      "macete": "Beck é a bateria da escola de samba abafada: pressão caiu (balão murcho), pescoço cheio (mangueira estufada), som abafado (tamborim com toalha). Na inspiração, o VD incha, o septo invade a casa do VE e a pressão cai mais de 10: pulso paradoxal.",
+      "macete": "Tamponamento é o coração no metrô às 18h: não consegue nem encher o peito, e na inspiração o vizinho da direita (o VD) incha e empurra o septo para a casa do VE, e a pressão cai mais de 10 (pulso paradoxal). Beck é a bateria abafada: balão murcho (pressão baixa), mangueira estufada (jugular) e tamborim com toalha (bulhas abafadas).",
       "pegadinha_de_prova": "O NBME costuma esconder o tamponamento depois de trauma, ablação ou cirurgia cardíaca e pede o próximo passo no instável, que é pericardiocentese, não diurético."
     },
     "imagem_questao": {
-      "conceito_visual": "Um coração simpático, de cocar de Carnaval, tenta sambar dentro de uma cabine telefônica estreita, com os braços espremidos no vidro. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a cheerful cartoon heart character wearing a small samba carnival feathered headband tries to dance inside a narrow old-fashioned phone booth, its arms squeezed against the glass walls, looking a little short of breath; in the background stands a green highway sign with three exit arrows and no text. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Num vagão de metrô lotado, um coração simpático de cocar de Carnaval tenta sambar espremido entre passageiros em forma de balões. Dona Térmica, segurando a barra de apoio, confere no pulso um relógio sem números nas 3.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: Inside a packed subway car, a cheerful cartoon heart character wearing a small samba feathered headband tries to dance while squeezed between round balloon-shaped passengers; Dona Térmica holds the grab bar and checks a wristwatch without numbers showing three o'clock. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -55,44 +55,44 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: agora se vê por que a cabine aperta: ela está cheia de água até a cintura do coração. Um canudo comprido e gentil drena a água pela portinhola de baixo (pericardiocentese) e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho (pressão baixa), mangueira estufada (jugular) e tamborim com toalha (bulhas abafadas).",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same cartoon heart in the same phone booth, now revealed to be filled with red-tinted water up to its waist; a long friendly drinking straw drains the water out through a small hatch at the bottom of the booth and the heart, relieved, dances with open arms; beside the booth, three clues stand in a tidy row, each under a small spotlight: a half-deflated red balloon, a bulging green garden hose and a small samba tambourine muffled by a folded towel. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Callback: o vagão está cheio de água até a cintura do coração. Um canudo comprido e gentil drena a água pela porta de baixo, e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho, mangueira estufada e tamborim com toalha.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Dona Térmica, a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard. Scene: Callback: the subway car turns out to be filled with water up to the waist of the heart character; a long gentle straw drains the water through a small lower door, and the heart opens its arms and dances; beside it stand three signs in a row: a deflated balloon, a bulging garden hose and a small samba drum covered with a towel. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Coração querendo sambar numa cabine telefônica apertada\n\nPlantão de terça: pressão baixa depois de um procedimento cardíaco, pescoço cheio e um detalhe na inspiração que vale ouro.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: catheter ablation, hypotension, distended neck veins, muffled heart sounds\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Cardiologia #Cardiology",
-    "legenda_explicacao_pt": "Gabarito do dia 121 (Plantão de Terça): letra B, Cardiac tamponade.\n\nHipotensão, jugulares cheias e bulhas abafadas formam a tríade de Beck (Beck triad), e a queda da sistólica de mais de 10 mm Hg na inspiração é o pulsus paradoxus. Depois de ablação, a perfuração do átrio enche o pericárdio de sangue e o coração não consegue relaxar para encher. A conduta no paciente instável é a pericardiocentese guiada por ecocardiograma.\n\nMacete: Beck é a bateria da escola de samba abafada: pressão caiu (balão murcho), pescoço cheio (mangueira estufada), som abafado (tamborim com toalha). Na inspiração, o VD incha, o septo invade a casa do VE e a pressão cai mais de 10: pulso paradoxal.\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis, em drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #QuestaoDoDia #MedicinaNosEUA #Cardiologia #Cardiology",
+    "legenda_questao_pt": "Coração tentando sambar no metrô das 18h: o que está apertando?\n\nSeis horas depois de uma ablação, pressão de 84/62, jugulares cheias, bulhas abafadas, traqueia no meio e pulmões limpos. Na inspiração, a sistólica cai 16. Dona Térmica, que já viu esse aperto às 3 da manhã, quer o diagnóstico.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: catheter ablation, hypotension, distended neck veins, muffled heart sounds\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Cardiologia #Cardiology",
+    "legenda_explicacao_pt": "Gabarito do dia 121 (Plantão de Terça): letra B, Cardiac tamponade.\n\nHipotensão, jugulares cheias e bulhas abafadas formam a tríade de Beck (Beck triad), e a queda da sistólica de mais de 10 mm Hg na inspiração é o pulsus paradoxus. Depois de ablação, a perfuração do átrio enche o pericárdio de sangue e o coração não consegue relaxar para encher. A conduta no paciente instável é a pericardiocentese guiada por ecocardiograma.\n\nMacete: Tamponamento é o coração no metrô às 18h: não consegue nem encher o peito, e na inspiração o vizinho da direita (o VD) incha e empurra o septo para a casa do VE, e a pressão cai mais de 10 (pulso paradoxal). Beck é a bateria abafada: balão murcho (pressão baixa), mangueira estufada (jugular) e tamborim com toalha (bulhas abafadas).\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis, em drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #QuestaoDoDia #MedicinaNosEUA #Cardiologia #Cardiology",
     "story_quiz": {
-      "pergunta_curta_pt": "Hipotensão pós-ablação: qual o diagnóstico?",
+      "pergunta_curta_pt": "Pós-ablação: hipotensão, jugular cheia e bulhas abafadas. Diagnóstico?",
       "opcoes": [
-        "Pneumotórax hipert.",
-        "Tamponamento",
-        "Pericardite constr.",
-        "TEP maciço"
+        "Tension pneumothorax",
+        "Cardiac tamponade",
+        "Constrictive pericarditis",
+        "Massive PE"
       ],
       "correta": "B"
     },
-    "fonte": "2025 ESC Guidelines for the management of myocarditis and pericarditis; Harrison's Principles of Internal Medicine, 21st ed., 2022.",
+    "fonte": "2025 ESC Guidelines for the management of myocarditis and pericarditis; Loscalzo J et al. Harrison's Principles of Internal Medicine, 21st ed., McGraw Hill, 2022.",
     "revisao": {
       "medica": "Questão resolvida antes do gabarito: tamponamento (B) é a única resposta. Tríade de Beck, pulso paradoxal de 16 mm Hg, traqueia central e pulmões limpos separam bem de pneumotórax hipertensivo, constrição e TEP. Explicação, erradas e macete conferidos. Corrigido: capa e imagem da questão mostravam a cabine cheia de água e os três sinais de Beck, o que entregava o derrame; a água e os sinais passaram para a imagem da explicação.",
-      "humor_compliance": "Samba e Carnaval ligados ao conceito, sem zombar de paciente. Gancho reescrito sem pista (7 palavras). Legendas dentro do limite, assinatura com CRM-DF 13610, CTA do simulado sem promessa. Prompts no estilo da marca, 4:5, sem texto."
+      "humor_compliance": "Samba e Carnaval ligados ao conceito, sem zombar de paciente. Gancho reescrito sem pista (7 palavras). Legendas dentro do limite, assinatura com CRM-DF 13610, CTA do simulado sem promessa. Prompts no estilo da marca, 4:5, sem texto. Reescrita de humor em 29/10/2026 (dias 62 a 122): gancho, contexto, pergunta do story, cenas das duas imagens, macete e fala com tirada própria, personagem ou anfitrião fixo do quadro e assinatura pequena do quadro no lugar da cena-base repetida."
     },
-    "gancho": "Coração querendo sambar numa *cabine telefônica* apertada",
-    "gancho_apoio": "Seis horas depois de uma ablação, a pressão despencou. O que está apertando esse coração?",
+    "gancho": "Coração tentando sambar *no metrô das 18h*: o que está apertando?",
+    "gancho_apoio": "Seis horas depois de uma ablação, a pressão despencou.",
     "imagem": {
       "arquivo": "dia-121.png",
-      "cena": "Um coração simpático, de cocar de Carnaval, tenta sambar dentro de uma cabine telefônica estreita, com os braços espremidos no vidro. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+      "cena": "Num vagão de metrô lotado, um coração simpático de cocar de Carnaval tenta sambar espremido entre passageiros em forma de balões. Dona Térmica, segurando a barra de apoio, confere no pulso um relógio sem números nas 3.",
       "foco": "50% 35%",
-      "alt": "Coração de cocar de Carnaval tentando sambar, espremido numa cabine telefônica estreita; ao fundo, placa verde de três saídas."
+      "alt": "Um coração de cocar tenta sambar espremido num vagão de metrô lotado de passageiros-balão; Dona Térmica segura a barra de apoio."
     },
     "imagem_macete": {
       "arquivo": "dia-121-macete.png",
-      "cena": "Callback: agora se vê por que a cabine aperta: ela está cheia de água até a cintura do coração. Um canudo comprido e gentil drena a água pela portinhola de baixo (pericardiocentese) e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho (pressão baixa), mangueira estufada (jugular) e tamborim com toalha (bulhas abafadas).",
+      "cena": "Callback: o vagão está cheio de água até a cintura do coração. Um canudo comprido e gentil drena a água pela porta de baixo, e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho, mangueira estufada e tamborim com toalha.",
       "foco": "50% 40%",
-      "alt": "A cabine aparece cheia de água e um canudo a esvazia; o coração samba aliviado ao lado de balão murcho, mangueira estufada e tamborim abafado."
+      "alt": "A água do vagão é drenada por um canudo e o coração samba aliviado, ao lado de um balão murcho, uma mangueira estufada e um tamborim com toalha."
     },
     "questao": {
       "vinheta": "Six hours after catheter ablation for atrial fibrillation, a 64-year-old woman becomes dyspneic and lightheaded. BP 84/62 mm Hg; heart rate 122/min. Systolic pressure falls 16 mm Hg on inspiration. Jugular veins are distended, heart sounds are muffled, the trachea is midline and the lungs are clear.",
@@ -100,19 +100,19 @@
       "alternativas": {
         "A": {
           "texto": "Tension pneumothorax",
-          "quiz": "Pneumotórax hipert."
+          "quiz": "Tension pneumothorax"
         },
         "B": {
           "texto": "Cardiac tamponade",
-          "quiz": "Tamponamento"
+          "quiz": "Cardiac tamponade"
         },
         "C": {
           "texto": "Constrictive pericarditis",
-          "quiz": "Pericardite constr."
+          "quiz": "Constrictive pericarditis"
         },
         "D": {
           "texto": "Massive pulmonary embolism",
-          "quiz": "TEP maciço"
+          "quiz": "Massive PE"
         }
       },
       "correta": "B"
@@ -136,11 +136,11 @@
       "macete": {
         "frase": "Beck é a *bateria abafada*: balão murcho, mangueira estufada, tamborim com toalha",
         "apoio": "Na imagem de ontem a cabine apertava; hoje se vê a água em volta do coração, e o canudo esvazia a cabine.",
-        "fala": null
+        "fala": "Inspirou e a pressão caiu mais de 10? É o vizinho da direita empurrando. Agulha guiada por eco, já."
       }
     },
     "legenda": {
-      "contexto": "Plantão de terça: pressão baixa depois de um procedimento cardíaco, pescoço cheio e um detalhe na inspiração que vale ouro.",
+      "contexto": "Seis horas depois de uma ablação, pressão de 84/62, jugulares cheias, bulhas abafadas, traqueia no meio e pulmões limpos. Na inspiração, a sistólica cai 16. Dona Térmica, que já viu esse aperto às 3 da manhã, quer o diagnóstico.",
       "palavras_chave": [
         "catheter ablation",
         "hypotension",
@@ -155,12 +155,13 @@
       ]
     },
     "quiz": {
-      "pergunta": "Hipotensão pós-ablação: qual o diagnóstico?"
+      "pergunta": "Pós-ablação: hipotensão, jugular cheia e bulhas abafadas. Diagnóstico?"
     },
     "cta": null,
     "tom": null,
     "reel": null,
-    "exemplo": false
+    "exemplo": false,
+    "anfitriao": "Dona Térmica"
   },
   {
     "dia": 122,
@@ -172,7 +173,7 @@
     "topico": "Estenose aórtica",
     "conceito": "Aortic stenosis: calcific degeneration, crescendo-decrescendo murmur, pulsus parvus et tardus",
     "tipo_pergunta": "diagnóstico",
-    "personagem": null,
+    "personagem": "Capitã Plaqueta",
     "gancho_data": "Prazo final do rank order list do Match 2027 (3/3, 21h ET, segundo o NRMP).",
     "remix_de": null,
     "explicacao_em": "2027-03-04",
@@ -209,8 +210,8 @@
       "pegadinha_de_prova": "O NBME diferencia pelo local e pela manobra: estenose aórtica irradia para as carótidas e o sopro diminui com Valsalva, ao contrário da cardiomiopatia hipertrófica."
     },
     "imagem_questao": {
-      "conceito_visual": "Uma porta giratória de agência bancária, de três folhas, gira com dificuldade, emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a revolving glass door with three panels at the entrance of a building turns stiffly and slowly, as if jammed; a queue of small round red blood cell characters waits to squeeze through, while a large wall clock without numbers shows its hands almost at the top, suggesting a deadline. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória de três folhas gira emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo. Setinhas de manual apontam para a porta.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Capitã Plaqueta, a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her. Scene: The platelet character blows her whistle at the entrance of a building where a three-panel revolving glass door turns stiffly and slowly, as if jammed; a queue of small round red blood cell characters waits to squeeze through; a large wall clock without numbers shows its hands almost at the top, suggesting a deadline; small instruction-manual arrows point at the door. Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -219,7 +220,7 @@
     },
     "imagem_explicacao": {
       "conceito_visual": "Callback: de perto, as três folhas da porta giratória estão incrustadas de calcário branco, e por isso ela quase não gira. Do outro lado sai só uma tartaruga pequenina carregando um coração, devagar, rumo a uma estrada em forma de carótida. Atrás, a fila espera.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same revolving door seen up close, its three glass panels now clearly crusted with chunky white limestone deposits so it barely turns; on the far side, a tiny slow turtle carrying a small red heart on its shell walks out along a narrow road that curves upward like a neck artery, while the queue of red blood cells waits behind the door and the wall clock hands have just passed the top. Clever, friendly, educational humor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Capitã Plaqueta, a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her. Scene: . Playful, witty and friendly mood with one clear visual punchline that points to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -229,27 +230,27 @@
     "legenda_questao_pt": "Pulso que chega pequeno e atrasado, igual inscrição às 20h59\n\nHoje, 3/3, fecha o rank order list do Match 2027. Boa sorte a quem está enviando a lista. Para a prova: idoso, sopro sistólico e um pulso que chega devagar.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: exertional chest pressure, systolic murmur, carotid radiation, older man\n\nSua escola está habilitada para o USMLE? Confira em 1 minuto. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Cardiologia #Cardiology",
     "legenda_explicacao_pt": "Gabarito do dia 122 (Quarta do Porquê): letra A, Calcific degeneration of a trileaflet aortic valve.\n\nSopro sistólico em diamante no foco aórtico, irradiado para as carótidas, com B2 hipofonética e pulso carotídeo fraco e tardio (pulsus parvus et tardus) é estenose aórtica. Aos 78 anos, a causa mais comum é a calcificação degenerativa de uma valva com três folhetos; a valva bicúspide costuma dar sintomas uma ou duas décadas antes. Angina, síncope e dispneia aos esforços indicam doença grave e pedem troca valvar.\n\nMacete: Pulso parvus et tardus é a inscrição enviada às 20h59 do último dia: chega pequena e atrasada. A porta giratória cheia de calcário (valva calcificada) só deixa passar uma tartaruguinha. Sintomas de gravidade em ordem de prova: angina, síncope, dispneia.\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis, em drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #QuestaoDoDia #MedicinaNosEUA #Cardiologia #Cardiology",
     "story_quiz": {
-      "pergunta_curta_pt": "Sopro aórtico no idoso: qual a causa?",
+      "pergunta_curta_pt": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?",
       "opcoes": [
-        "Calcificação aórtica",
-        "Reumática mitral",
-        "Mixomatosa mitral",
-        "Septo hipertrófico"
+        "Calcific aortic valve",
+        "Rheumatic mitral",
+        "Myxomatous mitral",
+        "Septal hypertrophy"
       ],
       "correta": "A"
     },
-    "fonte": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease; Robbins and Cotran Pathologic Basis of Disease, 10th ed., 2020.",
+    "fonte": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease; Kumar V, Abbas AK, Aster JC. Robbins and Cotran Pathologic Basis of Disease, 10th ed., Elsevier, 2020.",
     "revisao": {
       "medica": "Questão resolvida antes do gabarito: calcificação degenerativa de valva trileaflet (A) aos 78 anos, com parvus et tardus e irradiação para carótidas. Distratores homogêneos (causas de sopro). Angina, síncope e dispneia como marcadores de gravidade e Valsalva reduzindo o sopro da EA conferidos. Corrigido: a imagem da questão mostrava a porta coberta de calcário, o que entregava a alternativa A; o calcário passou para a imagem da explicação.",
-      "humor_compliance": "Piada do prazo das 20h59 ligada ao rank order list e ao pulso tardio, sem zombar de candidato; mensagem de boa sorte respeitosa. Legendas no limite, CRM-DF 13610, sem promessa. Prompts coerentes, 4:5, sem texto."
+      "humor_compliance": "Piada do prazo das 20h59 ligada ao rank order list e ao pulso tardio, sem zombar de candidato; mensagem de boa sorte respeitosa. Legendas no limite, CRM-DF 13610, sem promessa. Prompts coerentes, 4:5, sem texto. Reescrita de humor em 29/10/2026 (dias 62 a 122): gancho, contexto, pergunta do story, cenas das duas imagens, macete e fala com tirada própria, personagem ou anfitrião fixo do quadro e assinatura pequena do quadro no lugar da cena-base repetida."
     },
     "gancho": "Pulso que chega *pequeno e atrasado*, igual inscrição às 20h59",
     "gancho_apoio": "Hoje fecha o rank order list do Match. Tem uma válvula que também está no limite.",
     "imagem": {
       "arquivo": "dia-122.png",
-      "cena": "Uma porta giratória de agência bancária, de três folhas, gira com dificuldade, emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo.",
+      "cena": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória de três folhas gira emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo. Setinhas de manual apontam para a porta.",
       "foco": "50% 35%",
-      "alt": "Porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase no horário do prazo."
+      "alt": "A Capitã Plaqueta apita diante de uma porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase na hora do prazo."
     },
     "imagem_macete": {
       "arquivo": "dia-122-macete.png",
@@ -263,19 +264,19 @@
       "alternativas": {
         "A": {
           "texto": "Calcific degeneration of a trileaflet aortic valve",
-          "quiz": "Calcificação aórtica"
+          "quiz": "Calcific aortic valve"
         },
         "B": {
           "texto": "Rheumatic fusion of the mitral commissures",
-          "quiz": "Reumática mitral"
+          "quiz": "Rheumatic mitral"
         },
         "C": {
           "texto": "Myxomatous degeneration of the mitral valve",
-          "quiz": "Mixomatosa mitral"
+          "quiz": "Myxomatous mitral"
         },
         "D": {
           "texto": "Asymmetric hypertrophy of the septum",
-          "quiz": "Septo hipertrófico"
+          "quiz": "Septal hypertrophy"
         }
       },
       "correta": "A"
@@ -299,7 +300,7 @@
       "macete": {
         "frase": "Pulso *parvus et tardus*: pequeno e atrasado, como inscrição enviada às 20h59",
         "apoio": "Na imagem, a porta giratória cheia de calcário só deixa passar uma tartaruguinha.",
-        "fala": null
+        "fala": "Organizo trânsito há anos. Porta giratória com calcário é a pior fila do hospital."
       }
     },
     "legenda": {
@@ -318,7 +319,7 @@
       ]
     },
     "quiz": {
-      "pergunta": "Sopro aórtico no idoso: qual a causa?"
+      "pergunta": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?"
     },
     "cta": null,
     "tom": null,

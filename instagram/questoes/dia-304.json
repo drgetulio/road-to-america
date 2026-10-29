@@ -8,21 +8,22 @@
   "topico": "Síndrome do X frágil",
   "conceito": "Fragile X syndrome: CGG repeat expansion silences FMR1 by methylation",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-02",
   "tom": null,
-  "gancho": "O disco repetiu o refrão 200 vezes. *Quem desligou a música?*",
+  "gancho": "O refrão repetiu 200 vezes, *pior que hit do verão*. Quem desligou a música?",
   "gancho_apoio": "Repetição demais no lugar errado faz o gene ficar em silêncio. Mas como?",
   "imagem": {
     "arquivo": "dia-304.png",
-    "cena": "Uma vitrola em forma de letra X com uma pequena rachadura perto da ponta, com a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão. Notas musicais saem tortas e repetidas.",
+    "cena": "Uma vitrola em forma de cromossomo X, com uma rachadinha perto de uma ponta, tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
     "foco": "50% 35%",
-    "alt": "O disco repetiu o refrão 200 vezes. Quem desligou a música?"
+    "alt": "A vitrola em X presa no mesmo refrão"
   },
   "imagem_macete": {
     "arquivo": "dia-304-macete.png",
-    "cena": "Callback: a mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa; o colar de contas repetidas continua no chão, e as notas musicais caíram no chão, apagadas.",
+    "cena": "A mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
     "foco": "50% 45%",
     "alt": "X frágil: CGG demais metila e silencia o FMR1"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "*Disco arranhado no X*: repetiu demais, ganhou cadeado de metil e ficou mudo",
-      "apoio": "Na imagem, a vitrola em forma de X repete o mesmo trecho até que dezenas de cadeadinhos (os grupos metil) trancam os botões. O som não está errado: ele simplesmente parou.",
-      "fala": null
+      "apoio": "A vitrola em forma de X repete o mesmo trecho CGG até que dezenas de cadeadinhos (os grupos metil) trancam o promotor do FMR1. O som não sai errado: ele simplesmente para, e falta a proteína FMRP. Mais de 200 repetições é a mutação completa; entre 55 e 200, pré-mutação.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui sobrou repetição."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "CGG demais no FMR1: qual mecanismo?"
+    "pergunta": "Mais de 200 CGG no FMR1: como o gene fica em silêncio?"
   },
   "cta": null,
   "reel": null,

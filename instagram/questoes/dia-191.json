@@ -8,21 +8,22 @@
   "topico": "Hemorragia subaracnoide",
   "conceito": "Thunderclap headache: CT first, lumbar puncture for xanthochromia if CT is negative",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-12",
   "tom": null,
-  "gancho": "Cefaleia em *trovoada*, tomografia limpa. Pode ir para casa?",
+  "gancho": "Pior dor de cabeça da vida, TC limpa e você, às 3 da manhã, *louco para dar alta*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-191.png",
-    "cena": "Uma placa verde de rodovia com três saídas sem letras, numa noite de céu limpo; um único raio cai sobre um telhado em forma de cérebro, e ao lado uma máquina fotográfica em forma de rosquinha (o tomógrafo) mostra uma foto em branco.",
+    "cena": "Corredor do pronto-socorro às 3 da manhã, com o relógio sem números. Dona Térmica segura uma foto instantânea que acabou de sair, toda em branco, de uma câmera em forma de rosquinha. Pela janela, um único raio cai sobre um telhado em forma de cérebro, e a porta de saída está entreaberta, com um tapete de boas-vindas.",
     "foco": "50% 35%",
-    "alt": "Cefaleia em trovoada, tomografia limpa. Pode ir para casa?"
+    "alt": "Dona Térmica segura uma foto em branco enquanto um raio cai sobre um telhado em forma de cérebro"
   },
   "imagem_macete": {
     "arquivo": "dia-191-macete.png",
-    "cena": "A saída da placa leva a uma pequena fonte de pedra de onde escorre uma água levemente amarelada para dentro de um copo de vidro; a foto em branco do tomógrafo fica presa num varal, e o raio virou só um risco no céu.",
+    "cena": "Dona Térmica fecha a porta de saída e vai até uma pequena fonte de pedra embaixo do telhado-cérebro, onde enche um copinho de vidro com uma água levemente amarelada. A foto em branco fica presa num varal, e o raio virou só um risquinho no céu.",
     "alt": "TC normal depois de 6 horas: punção lombar"
   },
   "questao": {
@@ -65,13 +66,13 @@
       "C": "Ressonância ambulatorial em 2 semanas deixa sem diagnóstico um aneurisma que pode sangrar de novo nos primeiros dias."
     },
     "macete": {
-      "frase": "Cefaleia em trovoada: *primeiro a foto* (TC sem contraste); se a foto veio limpa, *vá olhar a água* (punção lombar). Xantocromia é a *água amarelada*, sangue que já se desmanchou no líquor.",
+      "frase": "Trovoada com TC limpa: *a foto não viu, então vá olhar a água*. Depois de 6 horas, TC normal não exclui sangramento: punção lombar atrás da *xantocromia*, o amarelinho do sangue que já se desmanchou no líquor.",
       "apoio": "O NBME mostra TC normal horas depois do início e oferece alta com analgésico; com cefaleia em trovoada, o próximo passo é a punção lombar (alguns protocolos aceitam angiotomografia).",
-      "fala": null
+      "fala": "Já vi esse caso às 3 da manhã: foto limpa não é alta."
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça na neurologia. A pior dor de cabeça da vida chegou em segundos, e a primeira foto veio sem nada. A prova quer o próximo passo, e o relógio importa.",
+    "contexto": "Plantão de Terça na neurologia. Nove horas atrás, carregando uma caixa, veio a pior dor de cabeça da vida em menos de um minuto. Rigidez de nuca e uma TC sem nada. O relógio importa.",
     "palavras_chave": [
       "sudden severe headache",
       "neck stiffness",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Trovoada com TC normal. Próximo passo?"
+    "pergunta": "Trovoada há 9 h e TC normal: pode dar alta?"
   },
   "cta": "simulado",
   "exemplo": false

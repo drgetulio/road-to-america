@@ -7,20 +7,20 @@
   "sistema": "Gestação, parto e puerpério",
   "topico": "Placenta prévia",
   "conceito": "Painless third-trimester bleeding: ultrasound before any digital exam (placenta previa)",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-25",
-  "gancho": "Véspera de Natal no plantão: foto primeiro ou toque primeiro?",
+  "gancho": "Véspera de Natal: alguém *estacionou* na frente da saída da garagem",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um garçom de rodízio numa ceia de Natal decorada, segurando quatro espetos cobertos com tampinhas, diante de uma almofada macia e um relógio; a plaquinha de duas cores ainda está de lado.",
+    "cena": "Capitã Plaqueta, de colete e apito, está na saída de uma garagem enfeitada para o Natal, com pisca-pisca no portão; um carro redondo e macio estacionou bem na frente da porta de saída, e ela levanta a mão sem tocar em nada. Numa mesinha ao lado, dois espetos de rodízio cobertos por tampinhas e a plaquinha verde e vermelha virada de lado.",
     "foco": "50% 35%",
-    "alt": "Um garçom de rodízio numa ceia de Natal decorada, segurando quatro espetos cobertos com tampinhas, diante de uma almofada macia e um relógio; a plaquinha de duas cores ainda está de lado.",
+    "alt": "Véspera de Natal: alguém estacionou na frente da saída da garagem",
     "arquivo": "dia-053.png"
   },
   "imagem_macete": {
-    "cena": "Callback: as tampinhas saem; o garçom vira o lado vermelho para o espeto com uma luva de procedimento dobrada e o lado verde para o espeto com um transdutor de ultrassom que mostra uma telinha brilhante.",
+    "cena": "Callback da garagem: a Capitã vira a plaquinha para o vermelho diante do espeto com uma luva dobrada e para o verde diante do espeto com um transdutor de ultrassom, que projeta uma telinha mostrando onde o carro redondo estacionou. Ninguém encosta no carro.",
     "alt": "Primeiro a foto, depois o toque",
     "arquivo": "dia-053-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Induzir parto vaginal sem saber onde está a placenta é perigoso, e a prévia contraindica o parto vaginal."
     },
     "macete": {
-      "frase": "Sangrou sem dor? *Foto antes do toque*",
+      "frase": "Sangrou sem dor? *Foto antes do toque*: se a placenta estacionou na frente da saída, toque vaginal é empurrar o carro com a mão.",
       "apoio": "Pegadinha de prova: O NBME separa prévia de descolamento pela dor: prévia é indolor com útero mole; descolamento dói e o útero fica duro e sensível.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Gestante de 32 semanas, sangramento vermelho vivo que começou sem dor, útero tranquilo e bebê bem. O garçom do rodízio de GO traz quatro espetos.",
+    "contexto": "Véspera de Natal no plantão: gestante de 32 semanas, sangramento vermelho vivo que começou sem dor, útero tranquilo e bebê bem. A Capitã Plaqueta precisa decidir o que vem primeiro antes de mexer em qualquer coisa.",
     "palavras_chave": [
       "third-trimester bleeding",
       "prior cesarean delivery",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "32 semanas, sangramento indolor e útero mole: qual o próximo passo?"
   },
   "cta": "simulado",
   "exemplo": false

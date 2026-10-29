@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-08",
   "tom": null,
-  "gancho": "O Viés jura que *30% a menos* significa outra coisa",
+  "gancho": "No grupo da turma, o HR de 0,70 *já virou três versões diferentes*",
   "gancho_apoio": "Hazard ratio de 0,70. Três leituras erradas estão escondidas nas alternativas.",
   "imagem": {
     "arquivo": "dia-279.png",
-    "cena": "O Viés espia atrás de um placar quadriculado (tabela 2x2) ao lado de uma corrida de rua com duas raias, uma de camisetas azul-marinho e outra de camisetas vermelhas, com um cronômetro gigante no alto.",
+    "cena": "O Viés espia atrás de um placar quadriculado (tabela 2x2) ao lado de uma corrida de rua com duas raias, uma de camisetas navy e outra de camisetas vermelhas, com um cronômetro gigante no alto. Na calçada, três torcedores digitam no celular sem parar, cada um com um balão de conversa em branco diferente.",
     "foco": "50% 35%",
-    "alt": "O Viés jura que 30% a menos significa outra coisa"
+    "alt": "Viés atrás do placar 2x2 numa corrida de rua"
   },
   "imagem_macete": {
     "arquivo": "dia-279-macete.png",
-    "cena": "Callback: a corrida ganha marcos a cada trecho; em todos eles, a raia azul-marinho (remédio) tem menos corredores saindo para a calçada que a raia vermelha (placebo), sempre na mesma proporção, e o Viés, flagrado pelo reflexo da própria lupa, desiste de embaralhar.",
+    "cena": "Vista de cima, a corrida ganha marcos a cada trecho; em todos eles, a raia navy (remédio) tem menos corredores saindo para a calçada que a raia vermelha (placebo), sempre na mesma proporção, e o Viés, flagrado pelo reflexo da própria lupa, desiste de embaralhar.",
     "foco": "50% 45%",
     "alt": "HR 0,70: 30% menos eventos a cada instante"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "HR 0,7: *a cada 10 eventos no placebo, 7 no remédio*, em qualquer trecho da corrida",
-      "apoio": "Na imagem, o Viés observa duas raias de uma corrida de rua. Em cada trecho, a raia do remédio perde menos corredores na mesma proporção. É ritmo de saída, não tempo de prova nem total de chegada.",
-      "fala": null
+      "apoio": "Em cada trecho da corrida, a raia do remédio perde menos corredores, sempre na mesma proporção: é ritmo de saída, não tempo de prova nem total de chegada. Queda absoluta exige os números absolutos, e \"vivem 30% mais\" é o boato do grupo.",
+      "fala": "Se você não randomizou, eu entrei. Aqui randomizaram, então só espalhei boato."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "HR de 0,70: o que significa?"
+    "pergunta": "HR de 0,70 (IC 0,60 a 0,82): qual leitura está certa?"
   },
   "cta": null,
   "reel": null,

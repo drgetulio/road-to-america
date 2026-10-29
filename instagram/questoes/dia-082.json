@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-23",
-  "gancho": "Choque, rim parado e *lactato lá em cima*: culpa de quem?",
+  "gancho": "Lactato acumulando *igual Anki atrasado*: quem parou de processar?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O Mito, de jaleco amassado e café na mão, numa cozinha de padaria de bairro. Uma pilha de pães dormidos espera ao lado de uma forma de pudim, e um frasco de comprimidos está no balcão. Não dá para ver se a cozinha vai funcionar.",
+    "cena": "Mito, de jaleco amassado e café na mão, está numa cozinha de padaria de bairro antes do amanhecer. Uma pilha de pães dormidos espera ao lado de uma forma de pudim vazia e de um forno frio. Um frasco de comprimidos está no balcão. Na parede, um quadro de cortiça coberto de cartõezinhos de revisão empilhados.",
     "foco": "50% 35%",
-    "alt": "Choque, rim parado e lactato lá em cima: culpa de quem?",
+    "alt": "Mito numa cozinha de padaria com pães dormidos empilhados, forma de pudim vazia e forno frio; na parede, uma pilha de cartões de revisão.",
     "arquivo": "dia-082.png"
   },
   "imagem_macete": {
@@ -66,11 +66,11 @@
     "macete": {
       "frase": "Cozinha do pudim *fechada*, pão dormido *empilhado*",
       "apoio": "Pegadinha de prova: O NBME liga a metformina à acidose láctica em quem tem insuficiência renal, choque ou contraste iodado; a TFG abaixo de 30 contraindica o uso.",
-      "fala": null
+      "fala": "Sem oxigênio eu não trabalho. Com metformina, a cozinha do pudim também não."
     }
   },
   "legenda": {
-    "contexto": "Diabetes tipo 2 com metformina, choque séptico, rim parado e lactato lá em cima. O Mito quer saber qual efeito do remédio deixou o lactato sobrando.",
+    "contexto": "Diabetes tipo 2 com metformina, choque séptico, creatinina de 3,4 e lactato de 9. O Mito quer saber qual efeito do remédio deixou o lactato sobrando na prateleira.",
     "palavras_chave": [
       "type 2 diabetes",
       "septic shock",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual ação do remédio explica isso?"
+    "pergunta": "Metformina, choque e lactato 9: qual ação do remédio explica isso?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -11,17 +11,17 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-21",
-  "gancho": "Ferro de sobra no estoque e *hemácia passando fome*. Por quê?",
+  "gancho": "Garagem lotada de ferro e *a avenida vazia*: quem trancou o portão?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "A Capitã Plaqueta, de colete verde e apito, num cruzamento ao lado de um galpão cheio de caminhõezinhos carregados de barras de ferro. A avenida que leva à fábrica de hemácias está vazia, e não dá para ver o que segura os caminhões.",
+    "cena": "A Capitã Plaqueta apita na saída da garagem de um prédio, onde caminhõezinhos carregados de barras de ferro estão estacionados em fila, sem sair. A avenida que leva à fábrica de hemácias está vazia. Um carro parado esconde o portão, e não dá para ver o que segura os caminhões. Setinhas de manual apontam para a garagem.",
     "foco": "50% 35%",
-    "alt": "Ferro de sobra no estoque e hemácia passando fome. Por quê?",
+    "alt": "A Capitã Plaqueta apita na saída de uma garagem cheia de caminhões de ferro parados; a avenida para a fábrica de hemácias está vazia.",
     "arquivo": "dia-080.png"
   },
   "imagem_macete": {
-    "cena": "Callback do cruzamento: a porteira do galpão aparece trancada por um cadeado colocado por uma fiscal pequena, em forma de gotinha, que veio de uma casa em forma de fígado. Os caminhões de ferro se amontoam lá dentro e a Capitã Plaqueta aponta para o cadeado.",
-    "alt": "A hepcidina fechou a porteira",
+    "cena": "Callback: o portão da garagem aparece trancado com cadeado por um síndico pequeno, em forma de gotinha, que veio de um prédio em forma de fígado, com uma fitinha de inflamação no braço. Os caminhões de ferro se amontoam lá dentro, e a Capitã Plaqueta aponta para o cadeado.",
+    "alt": "Um síndico em forma de gotinha, vindo de um prédio-fígado, trancou o portão da garagem; os caminhões de ferro se amontoam lá dentro.",
     "arquivo": "dia-080-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "C": "Falta de folato causa anemia macrocítica, e o VCM aqui é 82."
     },
     "macete": {
-      "frase": "Galpão *cheio*, porteira *trancada*, avenida *vazia*",
+      "frase": "Hepcidina é o *síndico*: trancou a garagem do ferro",
       "apoio": "Pegadinha de prova: O NBME diferencia pela ferritina e pela TIBC: ferropriva tem ferritina baixa e TIBC alta; doença crônica tem ferritina alta e TIBC baixa.",
-      "fala": null
+      "fala": "Parou, colou, coagulou. Mas trânsito trancado pelo síndico eu não libero."
     }
   },
   "legenda": {
-    "contexto": "Artrite reumatoide de longa data, cansaço e uma anemia com ferro sérico baixo e ferritina alta. A Capitã Plaqueta quer saber quem fechou a saída do ferro.",
+    "contexto": "Artrite reumatoide de longa data, cansaço, ferro sérico baixo e ferritina alta. A Capitã Plaqueta apita no cruzamento, mas os caminhões de ferro não saem do prédio. Quem fechou a saída?",
     "palavras_chave": [
       "rheumatoid arthritis",
       "fatigue",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Por que o ferro não sai?"
+    "pergunta": "Ferritina alta e ferro sérico baixo na AR: qual mecanismo?"
   },
   "cta": "simulado",
   "exemplo": false

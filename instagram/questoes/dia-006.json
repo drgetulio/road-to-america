@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-08",
   "tom": null,
-  "gancho": "Mais anos de sobrevida no placar. Foi gol ou foi o *Viés*?",
+  "gancho": "Três anos a mais de sobrevida, e o relógio do fim não mexeu. Cadê o *truque*?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-006.png",
-    "cena": "O Viés, fantasminha da estatística, espia por trás de uma tabela 2x2 na beira do gramado. No alto do estádio, dois cronômetros lado a lado marcam tempos diferentes, um bem mais longo que o outro, e a torcida de bolinhas comemora com bandeirinhas verdes e amarelas. Quem mexeu no tempo fica para amanhã.",
+    "cena": "O Viés espia por trás de uma tabela 2x2 na beira de um estádio. No telão, dois cronômetros lado a lado mostram barras de tamanhos diferentes, e a torcida de bolinhas comemora com bandeirinhas verdes e amarelas. O Viés esconde um ponteiro de relógio solto atrás das costas.",
     "foco": "50% 35%",
-    "alt": "Mais anos de sobrevida no placar. Foi gol ou foi o Viés?"
+    "alt": "Três anos a mais de sobrevida, e o relógio do fim não mexeu. Cadê o truque?"
   },
   "imagem_macete": {
     "arquivo": "dia-006-macete.png",
-    "cena": "Callback dos cronômetros: dois sofás lado a lado diante de duas TVs com o mesmo jogo. Um torcedor ligou a TV no pré-jogo, o outro só no intervalo, mas o apito final aparece no mesmo instante nas duas telas. O Viés ri, com o ponteiro de início que ele adiantou na mão.",
+    "cena": "Callback dos cronômetros: dois sofás lado a lado diante de duas TVs com o mesmo jogo. Um torcedor ligou a TV no pré-jogo, o outro só no intervalo, mas o apito final aparece no mesmo instante nas duas telas. O Viés segura o ponteiro que ele adiantou.",
     "alt": "O relógio foi adiantado, o apito é o mesmo"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "C": "O viés de memória (recall bias) depende de lembrar exposições passadas, típico do caso-controle, e não muda a data do diagnóstico."
     },
     "macete": {
-      "frase": "Você ligou a TV mais cedo, mas o jogo não ficou mais longo: o apito final toca na mesma hora. Lead-time só adianta o relógio do Viés.",
+      "frase": "Ligou a TV no pré-jogo? O jogo não ficou mais longo: o *apito final* toca na mesma hora. Lead-time só adianta o seu relógio.",
       "apoio": "Pegadinha de prova: O NBME mostra sobrevida maior com o rastreamento e idade de morte igual; a saída é olhar a mortalidade, e não a sobrevida desde o diagnóstico.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Novembro Azul também é decisão compartilhada sobre o PSA. Hoje o Viés mexe nos números de um estudo de rastreamento.",
+    "contexto": "Novembro Azul também é decisão compartilhada sobre o PSA. Hoje o Viés mexe nos números de um estudo de rastreamento, e a pergunta é se alguém viveu mais de verdade.",
     "palavras_chave": [
       "screening study",
       "survival from diagnosis",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sobrevida maior, morte na mesma idade. Por quê?"
+    "pergunta": "Sobrevida maior e idade de morte igual: qual viés explica?"
   },
   "exemplo": false
 }

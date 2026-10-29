@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-10",
   "tom": null,
-  "gancho": "A escola dos linfócitos B está de *portas* fechadas. Por quê?",
+  "gancho": "A escola dos linfócitos B não abriu, e o *vale-presente* da mamãe venceu",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-008.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, mostra o pedaço de um invasor como quem mostra a comanda, mas o balcão dos anticorpos está vazio, com as banquetas viradas. Em cima do balcão, um presente embrulhado e uma ampulheta quase no fim. No quintal ao lado, as bolinhas T brincam normalmente.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está no portão trancado de uma escolinha das células B, com as banquetas do pátio viradas. Ele mostra o pedaço de um invasor como quem mostra a comanda, mas não tem ninguém para receber. Num banco, um vale-presente embrulhado ao lado de uma ampulheta quase no fim; no quintal vizinho, as bolinhas T brincam normalmente.",
     "foco": "50% 35%",
-    "alt": "A escola dos linfócitos B está de portas fechadas. Por quê?"
+    "alt": "A escola dos linfócitos B não abriu, e o vale-presente da mamãe venceu"
   },
   "imagem_macete": {
     "arquivo": "dia-008-macete.png",
-    "cena": "Callback: ao lado do boteco, a escolinha das células B está com o portão trancado. Os pequenos pré-B esperam do lado de fora com mochilas vazias, olhando a fechadura, porque a chave dourada (BTK) sumiu do gancho. O presente da mãe (IgG) já foi aberto e está vazio.",
+    "cena": "Callback da escolinha: os pequenos pré-B esperam do lado de fora com mochilas vazias, olhando a fechadura, porque a chave dourada (BTK) sumiu do gancho. O presente da mãe (IgG) já foi aberto e está vazio, e o Macrô aponta o gancho sem chave.",
     "alt": "A escola B fechou por falta de chave"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "Na doença granulomatosa crônica (NADPH oxidase), células B e imunoglobulinas são normais e as infecções são por germes catalase-positivos."
     },
     "macete": {
-      "frase": "B de Bruton, de BTK, de B cell e de boy (ligada ao X). A escola B fechou porque faltou a chave BTK, e o vale-presente de IgG da mãe vence aos 6 meses.",
+      "frase": "*B* de Bruton, de BTK, de B cell e de boy. O vale-presente de IgG da mãe *vence aos 6 meses*, e a escolinha B nunca abriu.",
       "apoio": "Pegadinha de prova: O NBME marca a idade: infecções que começam por volta dos 6 meses, quando a IgG materna acaba, junto com amígdalas e linfonodos pequenos.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda: um bebê bem até os 6 meses e, depois disso, uma infecção atrás da outra. O que mudou?",
+    "contexto": "Bicho de Segunda: um bebê ótimo até os 6 meses e, depois disso, uma otite atrás da outra. O Macrô apresenta os invasores, mas ninguém do outro lado do balcão responde.",
     "palavras_chave": [
       "recurrent otitis media",
       "low immunoglobulins",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem célula B e Ig baixa: qual proteína falhou?"
+    "pergunta": "Bebê sem células CD19 e com Ig baixas: qual proteína falhou?"
   },
   "exemplo": false
 }

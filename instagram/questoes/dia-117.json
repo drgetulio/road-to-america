@@ -12,8 +12,8 @@
   "remix_de": null,
   "explicacao_em": "2027-02-27",
   "tom": null,
-  "gancho": "Um cliente *toca a campainha* sem parar; o outro segura a porta",
-  "gancho_apoio": "Dois remédios, o mesmo canal de cloreto, dois jeitos de abrir a porta. Quem é quem?",
+  "gancho": "Um cliente *toca o interfone sem parar*; o outro já entrou com a chave",
+  "gancho_apoio": "Dois remédios, o mesmo canal de cloreto, dois jeitos de abrir a porta.",
   "imagem": {
     "arquivo": "dia-117.png",
     "cena": "Na porta da farmácia de interior, dois clientes em forma de cápsula: um aperta a campainha várias vezes bem rápido, com risquinhos de movimento, e o outro se apoia na porta e a mantém escancarada com um tijolo pesado. Atrás do balcão, Tia Meia-Vida observa por cima dos óculos.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "X = lorazepam; Y = phenobarbital",
-        "quiz": "Benzo; barbitúrico"
+        "quiz": "X benzo; Y barbiturate"
       },
       "B": {
         "texto": "X = phenobarbital; Y = lorazepam",
-        "quiz": "Barbitúrico; benzo"
+        "quiz": "X barbiturate; Y benzo"
       },
       "C": {
         "texto": "X = flumazenil; Y = lorazepam",
-        "quiz": "Flumazenil; benzo"
+        "quiz": "X flumazenil; Y benzo"
       },
       "D": {
         "texto": "X = baclofen; Y = zolpidem",
-        "quiz": "Baclofeno; zolpidem"
+        "quiz": "X baclofen; Y zolpidem"
       }
     },
     "correta": "A"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Benzo*FRE*quência, Barbi*DURA*ção",
       "apoio": "Na imagem, um cliente toca a campainha sem parar e o outro segura a porta da farmácia escancarada.",
-      "fala": null
+      "fala": "Benzo toca a campainha. Barbitúrico mora aqui e tem a chave."
     }
   },
   "legenda": {

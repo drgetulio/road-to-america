@@ -8,20 +8,21 @@
   "topico": "Isoimunização Rh",
   "conceito": "Rh-negative mother: anti-D immune globulin at 28 weeks and after delivery of an Rh-positive baby",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-29",
-  "gancho": "Mãe Rh negativo, pai Rh positivo, 28 semanas: *e agora*?",
+  "gancho": "28 semanas, tudo tranquilo e *um penetra que ainda nem chegou*: e agora?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O garçom do rodízio passa com espetos perto de uma ponte que leva a um castelo. Algumas hemácias com chapeuzinhos amarelos atravessam a ponte em direção ao castelo, onde guardinhas com cadernos esperam no portão.",
+    "cena": "Garçom Espetinho passa com espetos perto de uma ponte que leva a um castelo em festa. Algumas hemácias de chapeuzinho amarelo atravessam a ponte em direção ao portão, onde guardinhas com celulares de câmera esperam, curiosos. A plaquinha verde e vermelha fica de lado.",
     "foco": "50% 35%",
-    "alt": "Mãe Rh negativo, pai Rh positivo, 28 semanas: e agora?",
+    "alt": "Garçom Espetinho passa perto de uma ponte; hemácias de chapeuzinho amarelo vão para o castelo, onde guardinhas esperam com celulares.",
     "arquivo": "dia-088.png"
   },
   "imagem_macete": {
-    "cena": "Callback do castelo: uma equipe de seguranças de boné navy acompanha as hemácias de chapeuzinho amarelo para fora do castelo, gentilmente, antes que os guardinhas abram os cadernos. Os cadernos continuam em branco, e o garçom levanta a plaquinha verde.",
-    "alt": "Aos 28 semanas: anti-D",
+    "cena": "Callback do castelo: uma equipe de seguranças de boné navy acompanha as hemácias de chapeuzinho para fora, gentilmente, antes que os guardinhas tirem a foto. Os celulares ficam sem nenhuma foto na galeria, e o garçom levanta a plaquinha verde.",
+    "alt": "Seguranças de boné tiram as hemácias de chapeuzinho do castelo antes da foto; o Garçom Espetinho levanta a plaquinha verde.",
     "arquivo": "dia-088-macete.png"
   },
   "questao": {
@@ -66,11 +67,11 @@
     "macete": {
       "frase": "*28 semanas* e *depois do parto*",
       "apoio": "Pegadinha de prova: O NBME dá a pesquisa de anticorpos positiva para ver se você lembra que, com a mãe já sensibilizada, a imunoglobulina não adianta e o caminho é o seguimento com Doppler.",
-      "fala": null
+      "fala": "Vai um anti-D aí? Agora e depois do parto."
     }
   },
   "legenda": {
-    "contexto": "Gestação tranquila, mãe O negativo, pai Rh positivo e pesquisa de anticorpos negativa. No Rodízio de Quinta, o espeto de obstetrícia pergunta o que fazer hoje.",
+    "contexto": "Gestação tranquila, mãe O negativo, pai Rh positivo, pesquisa de anticorpos negativa e 28 semanas. O Garçom Espetinho traz o espeto de obstetrícia: o que fazer hoje?",
     "palavras_chave": [
       "28 weeks",
       "blood group O",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é a conduta com 28 semanas?"
+    "pergunta": "Rh negativo não sensibilizada com 28 semanas: qual conduta?"
   },
   "cta": "simulado",
   "exemplo": false

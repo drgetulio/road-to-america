@@ -7,22 +7,22 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "HIPAA",
   "conceito": "HIPAA minimum necessary rule: share only what the purpose requires",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-25",
   "tom": null,
-  "gancho": "Plano de saúde pediu: vai *um pão* ou a padaria inteira?",
+  "gancho": "O plano pediu um pão: vai *o pão* ou a padaria com o caderninho de fiado?",
   "gancho_apoio": "O plano de saúde quer os papéis da cirurgia do joelho. O prontuário tem muito mais. O que vai?",
   "imagem": {
     "arquivo": "dia-265.png",
-    "cena": "Um entregador de bicicleta para na porta de uma padaria e olha, em dúvida, para uma janelinha pequena no alto da ladeira, de onde só sai uma mão aberta. Ele alterna o olhar entre um saquinho de pão e as cordas prontas para amarrar a padaria inteira na garupa. Ao fundo, um arquivo de gavetas está todo escancarado.",
+    "cena": "Um entregador de bicicleta para na porta de uma padaria e olha, em dúvida, para uma janelinha pequena no alto da ladeira, de onde só sai uma mão aberta. Ele alterna o olhar entre um saquinho de pão e uma pilha de cordas para amarrar a padaria inteira na garupa. O Viés, meio escondido atrás de uma tabela 2x2 em branco na parede da padaria, oferece as cordas, empolgado. Ao fundo, um arquivo de gavetas escancarado.",
     "foco": "50% 35%",
-    "alt": "Plano de saúde pediu: vai um pão ou a padaria inteira?"
+    "alt": "Entregador em dúvida entre um pão e a padaria inteira"
   },
   "imagem_macete": {
     "arquivo": "dia-265-macete.png",
-    "cena": "O mesmo entregador agora pedala leve, levando só um pão francês num saquinho de papel até a janelinha. O arquivo do fundo está fechado com cadeado, guardando o resto em segurança.",
+    "cena": "O mesmo entregador pedala leve, levando só um pão francês num saquinho de papel até a janelinha. O arquivo do fundo está fechado com cadeado, e o Viés ficou enrolado nas cordas que sobraram, emburrado.",
     "foco": "50% 40%",
     "alt": "HIPAA: o mínimo necessário"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Pediu um pão, manda um pão*: minimum necessary",
-      "apoio": "Amarrar a padaria inteira na garupa seria mandar o prontuário inteiro para o plano. A regra do mínimo necessário manda levar só o pão francês, a parte do joelho, e trancar o resto no armário.",
-      "fala": null
+      "apoio": "Para pagamento, a HIPAA libera o mínimo necessário: só a parte do joelho. Mandar a padaria inteira, com o caderninho de fiado (depressão e HIV), seria expor o que o plano não pediu. Tirar o nome não resolve, e para pagamento não precisa de ordem judicial.",
+      "fala": "Se você não randomizou, eu entrei. Se mandou o prontuário inteiro, também."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que você manda?"
+    "pergunta": "O plano pede os papéis da artroscopia: o que você manda?"
   },
   "cta": "pre_inscricao",
   "reel": null,

@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-05",
-  "gancho": "Duas portas no balcão da Tia: qual chave abre só uma?",
+  "gancho": "Duas portas no balcão da Tia: qual *chave* abre só uma?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida atrás do balcão de uma farmácia de interior, com um molho de chaves na mão; atrás dela há duas portas: uma com um único vitral em forma de coração e outra com dois vitrais em forma de pulmão.",
+    "cena": "Tia Meia-Vida atrás do balcão de uma farmácia de interior, com um molho de chaves na mão; atrás dela há duas portas: uma com um único vitral em forma de coração e outra com dois vitrais em forma de pulmão, lado a lado.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida atrás do balcão de uma farmácia de interior, com um molho de chaves na mão; atrás dela há duas portas: uma com um único vitral em forma de coração e outra com dois vitrais em forma de pulmão.",
+    "alt": "Duas portas no balcão da Tia: qual chave abre só uma?",
     "arquivo": "dia-033.png"
   },
   "imagem_macete": {
@@ -64,7 +64,7 @@
       "D": "O propranolol é o protótipo do não seletivo e bloqueia o beta-2 brônquico."
     },
     "macete": {
-      "frase": "Beta-1: *um coração*. Beta-2: *dois pulmões*",
+      "frase": "Beta-1 tem *um coração*; beta-2 tem *dois pulmões*. O metoprolol só tem a chave da porta do coração.",
       "apoio": "Pegadinha de prova: O NBME costuma cobrar o broncoespasmo do propranolol ou do timolol em colírio num paciente com asma, e o carvedilol aparece como armadilha por ser \"de cardiologia\".",
       "fala": null
     }
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual betabloqueador poupa o brônquio?"
+    "pergunta": "Pós-infarto com asma: qual betabloqueador poupa o brônquio?"
   },
   "cta": "simulado",
   "exemplo": false

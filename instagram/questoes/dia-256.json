@@ -8,23 +8,24 @@
   "topico": "TDAH",
   "conceito": "ADHD: symptoms in 2 or more settings with onset before age 12",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-16",
   "tom": null,
-  "gancho": "No rodízio do DSM, *uma mesa só* não fecha a conta",
-  "gancho_apoio": "A professora relata, e os pais contam a mesma coisa em casa. Qual é o diagnóstico?",
+  "gancho": "O grupo dos pais da escola e o da família *concordaram pela primeira vez*",
+  "gancho_apoio": "Professora e pais descrevem a mesma inquietação há um ano, sem desafio e com leitura no nível da série. Qual é o diagnóstico?",
   "imagem": {
     "arquivo": "dia-256.png",
-    "cena": "O garçom do rodízio, sorridente, carrega espetos e olha para duas mesas diferentes: uma tem o formato de uma casinha, a outra de uma escola com sininho. Nas duas, os pratos estão vazios, esperando. Na parede, um relógio redondo sem números.",
+    "cena": "Na churrascaria, o Garçom Espetinho segura o celular com duas conversas abertas, de balões vazios: uma com o desenho de uma casinha e outra com o de uma escola de sininho, e as duas terminam com o mesmo joinha gigante. Ele arregala os olhos, surpreso, com os espetos debaixo do braço. A plaquinha verde e vermelha aparece de lado no bolso do colete; na parede, um relógio redondo sem números.",
     "foco": "50% 35%",
-    "alt": "No rodízio do DSM, uma mesa só não fecha a conta"
+    "alt": "Os dois grupos de mensagens concordam e o garçom se espanta"
   },
   "imagem_macete": {
     "arquivo": "dia-256-macete.png",
-    "cena": "O garçom serve as duas mesas ao mesmo tempo, e cada uma levanta a plaquinha verde de sim. O relógio da parede mostra os ponteiros um pouco antes do meio-dia, lembrando que os sintomas começaram antes dos 12 anos.",
+    "cena": "O garçom serve as duas mesas ao mesmo tempo, uma em forma de casinha e outra de escola, e cada uma levanta a plaquinha verde. O relógio da parede mostra os ponteiros um pouco antes do meio-dia, lembrando que os sintomas começaram antes dos 12 anos.",
     "foco": "50% 40%",
-    "alt": "Dois ambientes, antes dos 12"
+    "alt": "TDAH: duas mesas e começo antes dos 12 anos"
   },
   "questao": {
     "vinheta": "An 8-year-old boy's teacher reports that for the past year he often leaves his seat, interrupts classmates, loses materials, and makes careless mistakes. His parents see the same restlessness during homework and family meals. He is cheerful, not defiant, and reads at grade level. Hearing and vision are normal.",
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "TDAH no rodízio: *duas mesas* e servido *antes do meio-dia*",
-      "apoio": "O garçom precisa servir pelo menos duas mesas (casa e escola), e o relógio marca pouco antes do meio-dia: sintomas em dois ou mais ambientes, começando antes dos 12 anos, por mais de 6 meses.",
-      "fala": null
+      "apoio": "Para fechar a conta do TDAH, o garçom precisa servir pelo menos duas mesas (casa e escola), com sintomas por mais de 6 meses e começo antes do meio-dia, os 12 anos. Uma mesa só, desafio aos adultos ou leitura atrasada levam o pedido para outro diagnóstico.",
+      "fala": "Vai uma conduta aí, doutor? Conta do TDAH só fecha com duas mesas."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é o diagnóstico?"
+    "pergunta": "Inquieto na escola e em casa há 1 ano, sem desafio: qual diagnóstico?"
   },
   "cta": "simulado",
   "reel": null,

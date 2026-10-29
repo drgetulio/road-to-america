@@ -7,20 +7,20 @@
   "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
   "topico": "Vacinas de vírus vivo aos 12 meses",
   "conceito": "MMR and varicella: live vaccines given at 12 to 15 months",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-11",
-  "gancho": "Festa de 1 ano: quais convidados chegam vivos?",
+  "gancho": "Festa de 1 ano: o Macrô confere a *lista* dos convidados vivos",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e um porteiro gentil confere uma pulseira de idade. Não se vê quais caixas entram.",
+    "cena": "Macrô, de guardanapo xadrez e prancheta, é o porteiro de uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e ele confere uma pulseira de idade em cada uma. Não se vê quais caixas entram. A plaquinha verde e vermelha está de lado na mesa do bolo.",
     "foco": "50% 35%",
-    "alt": "Uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e um porteiro gentil confere uma pulseira de idade. Não se vê quais caixas entram.",
+    "alt": "Festa de 1 ano: o Macrô confere a lista dos convidados vivos",
     "arquivo": "dia-039.png"
   },
   "imagem_macete": {
-    "cena": "Callback: duas caixas entram na festa e se abrem em confete perto do bolo; uma caixa vai embora pela calçada com uma mala (passou da idade) e a última espera sentada num banco com um calendário de dois anos.",
+    "cena": "Callback: duas caixas entram na festa e se abrem em confete perto do bolo; uma caixa vai embora pela calçada com uma mala (passou da idade) e a última espera num banco com um calendário de dois anos. Macrô vira a plaquinha para o verde.",
     "alt": "No bolo de 1 ano entram MMR e varicela",
     "arquivo": "dia-039-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "A influenza intranasal de vírus vivo só é aprovada a partir de 2 anos."
     },
     "macete": {
-      "frase": "Festa de 1 ano: *MMR e varicela* chegam juntas",
+      "frase": "Festa de 1 ano: *MMR e varicela* entram juntas. Rotavírus já passou da idade, e a gripe de nariz só entra a partir dos 2.",
       "apoio": "Pegadinha de prova: O NBME cobra idades-limite: rotavírus até 8 meses, MMR e varicela a partir de 12 meses, influenza intranasal a partir de 2 anos.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Consulta de rotina, criança saudável, carteira de vacinas em dia até os 6 meses. A mãe quer saber quais vacinas de vírus vivo entram agora.",
+    "contexto": "Consulta de rotina, criança saudável, carteira de vacinas em dia até os 6 meses. A mãe quer saber quais vacinas de vírus vivo entram agora, e o Macrô é o porteiro da festa.",
     "palavras_chave": [
       "12-month visit",
       "well-child care",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Quais vacinas vivas entram aos 12 meses?"
+    "pergunta": "Criança saudável de 12 meses: quais vacinas de vírus vivo hoje?"
   },
   "cta": "simulado",
   "exemplo": false

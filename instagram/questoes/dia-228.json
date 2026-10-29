@@ -8,17 +8,18 @@
   "topico": "Torção ovariana",
   "conceito": "Ovarian torsion: sudden unilateral pain with an adnexal mass, urgent laparoscopy",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-18",
   "tom": null,
-  "gancho": "O espeto girou tanto que *a cordinha enrolou*",
+  "gancho": "Dor súbita no treino, massa de 7 cm e *um Doppler tímido*: dá para esperar?",
   "gancho_apoio": "Dor súbita, massa no ovário e fluxo diminuído. O garçom precisa decidir rápido.",
   "imagem": {
     "arquivo": "dia-228.png",
-    "cena": "Garçom de rodízio, de colete, segura um espeto do qual pende um balão redondo por uma cordinha que já começou a dar voltas. Na mesa, uma plaquinha verde e vermelha ainda sem decisão.",
+    "cena": "No rodízio, o Garçom Espetinho segura um espeto do qual pende um balão redondo por uma cordinha. O balão está perdendo a cor, e um cronômetro corre em cima da mesa. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "O espeto girou tanto que a cordinha enrolou"
+    "alt": "O garçom segura um balão que perde a cor na ponta de um espeto"
   },
   "imagem_macete": {
     "arquivo": "dia-228-macete.png",
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "*Torceu, destorce*: tempo é ovário",
       "apoio": "Na imagem, o garçom do rodízio percebe que o espeto girou tanto que a cordinha do balão enrolou e o balão perdeu a cor. Ele desenrola na hora, de cronômetro na mão, e o balão volta a ficar colorido.",
-      "fala": null
+      "fala": "Vai uma conduta aí? Laparoscopia agora, que esse espeto não espera."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dor súbita e massa no ovário: e agora?"
+    "pergunta": "Massa ovariana de 7 cm e pouco fluxo: qual conduta?"
   },
   "cta": null,
   "reel": null,

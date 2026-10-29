@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-28",
   "tom": null,
-  "gancho": "Black Friday no fígado: o anticoagulante saiu em *liquidação*",
+  "gancho": "Black Friday no fígado: a varfarina saiu *pela metade* do preço",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-026.png",
     "cena": "A Tia Meia-Vida olha pela vitrine da farmácia uma loja de departamentos em forma de fígado, do outro lado da rua, em plena liquidação, com faixas vermelhas e amarelas sem texto e balões. Uma esteira despacha caixinhas de remédio a toda velocidade, e a areia da ampulheta dela escorre rápido demais.",
     "foco": "50% 35%",
-    "alt": "Black Friday no fígado: o anticoagulante saiu em liquidação"
+    "alt": "Black Friday no fígado: a varfarina saiu pela metade do preço"
   },
   "imagem_macete": {
     "arquivo": "dia-026-macete.png",
-    "cena": "Callback da loja: lá dentro, um gerente que chegou com uma xícara enorme de café (o indutor) contratou uma multidão de funcionários novos (enzimas CYP), que embrulham e despacham a varfarina num piscar de olhos. Um medidor em forma de gota na parede marca nível baixo, no vermelho (INR caindo).",
+    "cena": "Callback da loja: lá dentro, um gerente que chegou com uma xícara enorme de café contratou uma multidão de funcionários temporários (enzimas CYP), que embrulham e despacham a varfarina num piscar de olhos. Um medidor em forma de gota na parede marca nível baixo, no vermelho.",
     "alt": "Liquidação no fígado"
   },
   "questao": {
@@ -66,13 +66,13 @@
       "C": "Antibiótico que reduz a flora produtora de vitamina K tende a aumentar o INR, e não a diminuir."
     },
     "macete": {
-      "frase": "Indutor é CAFÉ RI no fígado: CArbamazepina, FEnitoína e FEnobarbital, RIfampina. Fígado ligado no café (é só a imagem: cafeína não induz o CYP) faz liquidação de Black Friday e despacha a varfarina rapidinho, e o INR cai.",
+      "frase": "Indutor é *CAFÉ RI*: CArbamazepina, FEnitoína, FEnobarbital e RIfampina. O fígado contrata temporário na Black Friday, despacha a varfarina e o INR cai.",
       "apoio": "Pegadinha de prova: O NBME pergunta o que acontece ao suspender o indutor: o metabolismo volta ao normal em semanas e o INR pode subir demais se a dose não for corrigida.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Black Friday também acontece no fígado. Sextou na Farmácia com uma interação que derruba o INR.",
+    "contexto": "Black Friday também acontece no fígado. Sextou na Farmácia com uma interação que derruba o INR em três semanas, sem mudança de dieta nem de adesão.",
     "palavras_chave": [
       "atrial fibrillation",
       "anticoagulation",
@@ -90,7 +90,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Varfarina com rifampina e INR caiu. Por quê?"
+    "pergunta": "INR caiu de 2,5 para 1,3 com rifampina: qual mecanismo?"
   },
   "exemplo": false
 }

@@ -8,21 +8,22 @@
   "topico": "Osteogênese imperfeita",
   "conceito": "Osteogenesis imperfecta: COL1A1/COL1A2 defects in type I collagen, blue sclerae and fractures",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-11-26",
   "tom": null,
-  "gancho": "No canteiro do osso, qual *material* veio com defeito?",
+  "gancho": "Puxadinho com *vergalhão* de arame: racha à toa e a parede ficou azul",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-024.png",
-    "cena": "Canteiro de obras em corte, estilo manual de montagem: um predinho de concreto bem acabado, mas com rachaduras finas. Dentro das colunas, as barras de ferro são finíssimas e tortas, e uma parede é tão fina que deixa ver uma parede azul-escura por trás.",
+    "cena": "Canteiro de obras em corte, estilo manual de montagem: um puxadinho de concreto bem acabado, mas cheio de rachaduras finas. Dentro das colunas, os vergalhões são finos como arame e tortos, e uma parede é tão fina que deixa ver uma parede azul-escura por trás. O Seu Allen, de avental de marceneiro, aponta as rachaduras com setinhas de manual.",
     "foco": "50% 35%",
-    "alt": "No canteiro do osso, qual material veio com defeito?"
+    "alt": "Puxadinho com vergalhão de arame: racha à toa e a parede ficou azul"
   },
   "imagem_macete": {
     "arquivo": "dia-024-macete.png",
-    "cena": "Callback da obra: uma lupa gigante sobre a coluna revela que cada vergalhão é uma trança de três fios (a tripla hélice do colágeno tipo I), com um dos fios desfiado. Ao lado, uma luva de obra levanta um dedo só, junto de um sininho em forma de orelha com o badalo rachado e de um tijolinho em forma de dente, acinzentado.",
+    "cena": "Callback da obra: uma lupa gigante sobre a coluna mostra que cada vergalhão é uma trança de três fios (a tripla hélice do colágeno tipo I), com um fio desfiado. O Seu Allen levanta um dedo só, ao lado de um sininho em forma de orelha com o badalo rachado e de um tijolinho em forma de dente, acinzentado.",
     "alt": "Diga OI com um dedo só"
   },
   "questao": {
@@ -66,13 +67,13 @@
       "D": "FGFR3 ativado é acondroplasia, com membros curtos e osso de boa qualidade."
     },
     "macete": {
-      "frase": "Diga OI levantando um dedo só: Osteogênese Imperfeita é colágeno tipo I. No canteiro de obras, o concreto (mineral) é bom, mas o vergalhão (colágeno I) veio fino, e dá para ver a parede azul por trás.",
+      "frase": "Diga *OI* com um dedo só: Osteogênese Imperfeita é colágeno tipo *I*. Concreto bom, vergalhão de arame, e a parede azul aparece por trás.",
       "apoio": "Pegadinha de prova: O NBME põe a osteogênese imperfeita como diagnóstico diferencial de maus-tratos; esclera azul, dentes alterados, perda auditiva e história familiar favorecem a doença genética.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê: fraturas fáceis, esclera azul e uma história de família. Qual proteína falhou na obra?",
+    "contexto": "Quarta do Porquê com o Seu Allen: quatro fraturas em quedas bobas, esclera azul, dentes acinzentados e um pai com perda auditiva. Qual material veio com defeito de fábrica?",
     "palavras_chave": [
       "recurrent fractures",
       "gray-brown teeth",
@@ -89,7 +90,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Fraturas e esclera azul: qual proteína?"
+    "pergunta": "Fraturas fáceis, esclera azul e dentes cinza: qual proteína falha?"
   },
   "exemplo": false
 }

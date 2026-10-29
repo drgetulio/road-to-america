@@ -7,22 +7,22 @@
   "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
   "topico": "Cadeirinha no carro",
   "conceito": "Child car seat: rear-facing as long as possible, at least until about age 2",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-11-06",
   "tom": null,
-  "gancho": "A *cadeirinha* quer virar de frente. A pediatria deixa?",
+  "gancho": "Blitz da Capitã Plaqueta: o pé do bebê encostou no banco. Dá *multa*?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-004.png",
-    "cena": "Um garçom de rodízio chega à mesa com um espeto onde estão duas cadeirinhas de carro em miniatura, uma virada para a frente e outra para trás. A plaquinha redonda de mesa, verde de um lado e vermelha do outro, está em pé, esperando a escolha.",
+    "cena": "Capitã Plaqueta, de colete e apito, faz uma blitz amigável numa rua de brinquedo: ela se inclina na janela de um carrinho e olha a cadeirinha no banco de trás, onde um ursinho de pelúcia encosta as perninhas no encosto. Na mão, ela segura a plaquinha redonda verde e vermelha, virada de lado.",
     "foco": "50% 35%",
-    "alt": "A cadeirinha quer virar de frente. A pediatria deixa?"
+    "alt": "Blitz da Capitã Plaqueta: o pé do bebê encostou no banco. Dá multa?"
   },
   "imagem_macete": {
     "arquivo": "dia-004-macete.png",
-    "cena": "Callback do rodízio: o garçom vira a plaquinha para o verde diante da cadeirinha virada para trás, instalada no banco traseiro de um carrinho de brinquedo, com um ursinho de pelúcia tranquilo e de perninhas dobradas. A cadeirinha virada para a frente fica de lado, com a plaquinha no vermelho.",
+    "cena": "Callback da blitz: a Capitã vira a plaquinha para o verde, guarda o bloco de multas e aponta a etiqueta em branco costurada na lateral da cadeirinha, que continua virada para trás. O ursinho segue tranquilo, de perninhas dobradas.",
     "alt": "De costas até o limite do fabricante"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A AAP orienta o banco de trás para todos os menores de 13 anos, e uma cadeirinha de costas nunca deve ficar diante de um airbag ativo."
     },
     "macete": {
-      "frase": "Quem manda é a etiqueta da cadeirinha, não o aniversário: de costas até o limite do fabricante. Perninha dobrada não é problema; o pescoço é quem agradece.",
+      "frase": "Na blitz da cadeirinha, quem manda é a *etiqueta do fabricante*, não o bolo de aniversário. Perninha dobrada não dá multa.",
       "apoio": "Pegadinha de prova: O NBME traz a regra antiga (1 ano e 9 kg) como distrator; a resposta é seguir o limite de peso e de altura da própria cadeirinha.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "O Rodízio de Quinta começa pela pediatria preventiva. A pergunta é das mais comuns na consulta de puericultura nos EUA.",
+    "contexto": "O Rodízio de Quinta começa pela pediatria preventiva, com blitz da Capitã Plaqueta. Bebê de 15 meses, pé encostando no banco do carro e os pais doidos para virar a cadeirinha.",
     "palavras_chave": [
       "well-child visit",
       "car seat",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que você recomenda sobre a cadeirinha?"
+    "pergunta": "Bebê de 15 meses com o pé no banco do carro: o que orientar?"
   },
   "exemplo": false
 }

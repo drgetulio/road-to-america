@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Miastenia gravis (dia 22), Indutores do CYP450 (dia 26)",
   "conceito": "Remix: Bruton agammaglobulinemia + Myasthenia gravis + CYP450 inducers",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": [
     8,
@@ -16,69 +16,68 @@
   ],
   "explicacao_em": "2026-11-30",
   "tom": null,
-  "gancho": "*Remix*: chave perdida, chiclete no botão e liquidação no fígado",
+  "gancho": "Chegou o antibiótico *laranja* e a pálpebra caiu de novo. Coincidência?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-028.png",
-    "cena": "O toca-discos vermelho e três discos com ícones no rótulo: uma chave dourada, uma campainha e uma xícara de café. Um quarto disco misterioso espia de uma capa lisa, e a agulha paira no ar.",
+    "cena": "Tia Meia-Vida, atrás do balcão, observa do outro lado da rua uma loja em forma de fígado com faixas de liquidação sem texto, de onde caixinhas de remédio saem em disparada. Na calçada, um prédio com interfone de botões apagados; no balcão, um frasco de comprimidos cor de laranja. Um vinil pequeno decora a vitrine.",
     "foco": "50% 35%",
-    "alt": "Remix: chave perdida, chiclete no botão e liquidação no fígado"
+    "alt": "Chegou o antibiótico laranja e a pálpebra caiu de novo. Coincidência?"
   },
   "imagem_macete": {
     "arquivo": "dia-028-macete.png",
-    "cena": "Callback do toca-discos: a agulha pousa no disco da campainha, que gira soltando notas verdes, com um chiclete rosa grudado no botão do rótulo. A chave, o café e o disco intruso ficam de lado com o símbolo vermelho de pausa.",
-    "alt": "O chiclete continua no botão"
+    "cena": "Callback da liquidação: dentro da loja-fígado, funcionários temporários contratados pelo frasco laranja embrulham e despacham as caixinhas de corticoide; sem elas, anticorpos em Y voltam a colar chiclete nos botões do interfone. A Tia Meia-Vida dobra a pilha de caixinhas no balcão.",
+    "alt": "Liquidação de corticoide no fígado"
   },
   "questao": {
-    "vinheta": "At a Sunday review, a tutor shows four statements, each linking a disease or a drug interaction to its mechanism.",
-    "pergunta": "Which statement is correct?",
+    "vinheta": "A 45-year-old woman with generalized myasthenia gravis has been stable for a year on pyridostigmine and prednisone 20 mg daily. She starts rifampin for latent tuberculosis infection. Three weeks later, ptosis, diplopia, and proximal weakness return. Her adherence is unchanged, and she has no infection.",
+    "pergunta": "Which drug effect best explains her worsening?",
     "alternativas": {
       "A": {
-        "texto": "Bruton agammaglobulinemia: B cells are normal, but class switching fails",
-        "quiz": "Bruton: B normais",
-        "dia": 8
+        "texto": "Inhibition of hepatic CYP3A4",
+        "quiz": "Inibe o CYP3A4"
       },
       "B": {
-        "texto": "Rifampin raises the INR by inhibiting warfarin metabolism",
-        "quiz": "Rifampina sobe INR",
-        "dia": 26
+        "texto": "Displacement of prednisone from albumin",
+        "quiz": "Desloca da albumina"
       },
       "C": {
-        "texto": "Myasthenia gravis: antibodies block postsynaptic acetylcholine receptors",
-        "quiz": "MG: receptor pós",
-        "dia": 22
+        "texto": "Induction of hepatic CYP3A4",
+        "quiz": "Induz o CYP3A4",
+        "dia": 26
       },
       "D": {
-        "texto": "Lambert-Eaton syndrome: weakness worsens with repeated effort",
-        "quiz": "LEMS piora com uso"
+        "texto": "Direct neuromuscular junction blockade",
+        "quiz": "Bloqueia a junção NM",
+        "dia": 22
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "O chiclete continua no botão",
+    "titulo": "Liquidação de corticoide no fígado",
     "certa": [
-      "Na miastenia gravis (dia 22), anticorpos IgG bloqueiam e destroem os receptores de acetilcolina da membrana pós-sináptica, numa hipersensibilidade tipo II, e a fraqueza piora com o uso. É a única frase certa, e se você errou, volte ao dia 22 e refaça antes do próximo remix."
+      "A miastenia do dia 22 estava controlada com prednisona, que segura a produção dos anticorpos contra o receptor de acetilcolina. A rifampina é indutor clássico (dia 26) e acelera o *CYP3A4* do fígado, que metaboliza a prednisolona: o nível do corticoide cai e os anticorpos voltam a travar a junção (*CYP3A4 induction*). Na prática, a dose do corticoide costuma precisar subir enquanto durar a rifampina."
     ],
     "termos": [
-      "Bruton tyrosine kinase",
-      "acetylcholine receptor antibodies",
-      "CYP450 induction",
-      "Lambert-Eaton syndrome"
+      "rifampin",
+      "CYP3A4 induction",
+      "prednisolone clearance",
+      "acetylcholine receptor antibodies"
     ],
     "erradas": {
-      "A": "Dia 8: no Bruton faltam células B, porque o pré-B não amadurece sem a BTK; células B presentes sem troca de classe é hiper-IgM.",
-      "B": "Dia 26: a rifampina induz o CYP450, acelera o metabolismo da varfarina e faz o INR cair.",
-      "D": "Intruso: no Lambert-Eaton a força melhora com o esforço repetido, porque o cálcio se acumula no terminal pré-sináptico."
+      "A": "Inibir o CYP3A4 (claritromicina, cetoconazol) faria o corticoide subir, e não cair.",
+      "B": "O deslocamento da albumina aumenta a fração livre por pouco tempo e não tira o efeito do remédio por semanas.",
+      "D": "Dia 22: aminoglicosídeos e outros antibióticos podem bloquear a junção diretamente, mas a rifampina não faz isso; aqui o corticoide é que foi embora mais rápido."
     },
     "macete": {
-      "frase": "Chave BTK perdida, chiclete no botão de dentro e café acelerando o fígado: três imagens, três mecanismos.",
-      "apoio": "Pegadinha de prova: O NBME adora pares opostos: miastenia contra Lambert-Eaton, indutor contra inibidor, Bruton contra hiper-IgM.",
+      "frase": "Rifampina na Black Friday do fígado: o corticoide sai em *liquidação* e o chiclete volta ao interfone da miastenia.",
+      "apoio": "Pegadinha de prova: O NBME esconde a interação num antibiótico para tuberculose latente: rifampina com corticoide, varfarina, anticoncepcional ou tacrolimo.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: dias 8, 22 e 26, mais um intruso. Lembre da imagem de cada dia antes de escolher.",
+    "contexto": "Domingo de revisão juntando o interfone com chiclete (dia 22) e a Black Friday do fígado (dia 26). O bônus do macete traz a chave perdida do Bruton (dia 8).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,7 +93,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual frase está certa?"
+    "pergunta": "Miastenia piorou 3 semanas após a rifampina: qual efeito da droga?"
   },
   "exemplo": false
 }

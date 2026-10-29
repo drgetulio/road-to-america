@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Insolação (dia 100), Hemorragia subaracnoide (dia 191), Arterite de células gigantes (dia 219)",
   "conceito": "Remix: Exertional heat stroke + Thunderclap headache + Giant cell arteritis",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": [
     100,
@@ -16,42 +17,42 @@
   ],
   "explicacao_em": "2027-06-14",
   "tom": null,
-  "gancho": "Onda de calor no plantão: *qual prescrição passa* no carimbo?",
-  "gancho_apoio": "Quatro planos, só um certo. Revisão de insolação, cefaleia em trovoada e arterite de células gigantes.",
+  "gancho": "41,3°C depois da corrida e alguém já está chamando *a tomografia*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-224.png",
-    "cena": "O toca-discos do Remix de Domingo num balcão de plantão, com três discos: um com um sol escaldante, um com um raio e um com uma montanha em forma de têmpora. Ao lado, quatro fichas de prescrição em branco.",
+    "cena": "Pista de corrida sob sol de rachar, com um vinil pequeno pendurado na barraca de hidratação. Dona Térmica, ao lado da barraca, olha um termômetro de rua no vermelho e um personagem-termômetro caído na pista, todo suado. Chega um reboque com uma tomografia em forma de rosquinha, e uma banheira azul inflável está dobrada no chão.",
     "foco": "50% 35%",
-    "alt": "Onda de calor no plantão: qual prescrição passa no carimbo?"
+    "alt": "Dona Térmica na pista de corrida diante de um termômetro caído no sol"
   },
   "imagem_macete": {
     "arquivo": "dia-224-macete.png",
-    "cena": "Callback: a agulha pousa no disco do sol; dele sai uma bolha de som com uma banheira cheia de gelo e, só depois, uma ambulância esperando com calma. Bolhas menores mostram um raio ao lado de uma agulha fina e um carrinho de comprimido à frente de um caminhão de microscópio.",
+    "cena": "Dona Térmica enche a banheira azul de gelo, e o personagem-termômetro senta dentro, aliviado, com a coluna vermelha descendo. A ambulância espera com calma, o reboque da tomografia fica estacionado e dois frasquinhos de remédio ficam na prateleira, sem uso.",
     "foco": "50% 45%",
-    "alt": "Na insolação, esfria primeiro e transporta depois"
+    "alt": "Insolação por esforço: esfria primeiro, transporta depois"
   },
   "questao": {
-    "vinheta": "During a summer heat wave, an emergency physician reviews four management plans written by an intern overnight. Only one plan follows current US guidelines.",
-    "pergunta": "Which plan is correct?",
+    "vinheta": "A 19-year-old military recruit collapses during a 10-km run on a hot, humid afternoon. He is confused and combative. Rectal temperature is 41.3°C (106.3°F), pulse is 140/min, and blood pressure is 96/58 mm Hg. He has no muscle rigidity and takes no medications. Trained medical staff are at the scene.",
+    "pergunta": "Which is the most appropriate next step in management?",
     "alternativas": {
       "A": {
-        "texto": "Exertional heat stroke: cold-water immersion at once, then transport",
-        "quiz": "Insolação: gelo já",
+        "texto": "Cold-water immersion at the scene",
+        "quiz": "Imersão em água gelada",
         "dia": 100
       },
       "B": {
-        "texto": "Thunderclap headache, normal CT at 12 hours: discharge home",
-        "quiz": "Trovoada: alta",
+        "texto": "Noncontrast CT of the head",
+        "quiz": "TC de crânio",
         "dia": 191
       },
       "C": {
-        "texto": "Suspected giant cell arteritis with visual symptoms: steroids after biopsy",
-        "quiz": "ACG: biópsia antes",
-        "dia": 219
+        "texto": "Intravenous dantrolene",
+        "quiz": "Dantroleno IV"
       },
       "D": {
-        "texto": "Suspected bacterial meningitis: antibiotics only after head CT",
-        "quiz": "Meningite: TC antes"
+        "texto": "Intravenous methylprednisolone",
+        "quiz": "Metilprednisolona IV",
+        "dia": 219
       }
     },
     "correta": "A"
@@ -59,27 +60,27 @@
   "explicacao": {
     "titulo": "Na insolação, *esfria primeiro e transporta depois*",
     "certa": [
-      "Dia 100: no *exertional heat stroke* (alteração mental depois de esforço, com temperatura retal acima de 40°C), a *cold-water immersion* começa no local, antes do transporte, até a temperatura chegar perto de 39°C. Cada minuto acima de 40°C aumenta a lesão de órgãos, e antitérmico não funciona. *Cool first, transport second*."
+      "Dia 100: confusão depois de esforço no calor, com temperatura retal acima de 40°C, é *exertional heat stroke*. A conduta é *cold-water immersion* no local, antes do transporte, até cerca de 38,6 a 39°C, com a temperatura retal monitorada. *Cool first, transport second*: antitérmico não ajuda, porque o termostato do hipotálamo não mudou; o corpo é que não consegue perder calor."
     ],
     "termos": [
       "exertional heat stroke",
       "cold-water immersion",
       "cool first, transport second",
-      "thunderclap headache: LP or CTA"
+      "rectal temperature"
     ],
     "erradas": {
-      "B": "Dia 191: cefaleia em trovoada com tomografia normal feita depois de 6 horas pede punção lombar (xantocromia) ou angiotomografia, nunca alta direta.",
-      "C": "Dia 219: na suspeita de arterite de células gigantes, ainda mais com sintoma visual, o corticoide entra antes da biópsia.",
-      "D": "Na suspeita de meningite bacteriana, hemocultura e antibiótico vêm antes da tomografia; esperar a imagem atrasa o tratamento."
+      "B": "Dia 191: a TC de crânio abre o roteiro da cefaleia em trovoada. Aqui a confusão tem causa à vista, e cada minuto acima de 40°C aumenta a lesão de órgãos; imagem, se precisar, vem depois do resfriamento.",
+      "C": "Intruso: dantroleno trata a hipertermia maligna (dia 201), com gatilho anestésico, rigidez e CO2 alto; na insolação por esforço não tem benefício.",
+      "D": "Dia 219: corticoide em dose alta antes da biópsia é a regra da arterite de células gigantes, não da insolação."
     },
     "macete": {
-      "frase": "*Gelo na hora, ambulância depois*; *pílula na frente, microscópio atrás*",
-      "apoio": "No toca-discos do plantão, o disco do dia 100 toca primeiro a banheira de gelo e só depois a sirene. O disco do dia 191 lembra: foto limpa, vá olhar a água (punção lombar). E o do dia 219 repete o refrão da pílula na frente.",
-      "fala": null
+      "frase": "*Esfria primeiro, transporta depois*: na insolação por esforço, banheira de água gelada no local. Quem guarda calor é garrafa térmica, não atleta.",
+      "apoio": "O NBME oferece transporte imediato, tomografia ou antitérmico como opção tentadora; com temperatura retal acima de 40°C e confusão depois de esforço, a resposta é imersão em água fria na hora. Dantroleno é da hipertermia maligna.",
+      "fala": "Já vi esse caso às 3 da manhã. E às 3 da tarde, no sol: gelo primeiro."
     }
   },
   "legenda": {
-    "contexto": "Onda de calor, plantão lotado e um interno que escreveu quatro planos. Só um segue as diretrizes americanas. Revisão dos dias 100, 191 e 219, com um intruso.",
+    "contexto": "Domingo é dia de Remix com a Dona Térmica: três conceitos de Step 2 CK (dias 100, 191 e 219) e um intruso. Um recruta desaba numa corrida no calor, confuso, com 41,3°C no termômetro retal. O que fazer primeiro?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +98,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Qual dos quatro planos está certo?"
+    "pergunta": "41,3°C após corrida e confusão: o que fazer já?"
   },
   "cta": null,
   "reel": null,

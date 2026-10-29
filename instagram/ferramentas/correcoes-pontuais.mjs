@@ -33,9 +33,8 @@ for (const n of [6, 137, 193, 226, 262, 263]) {
 const VINHETAS = {
   // 112 e 182 revisitavam a doença do soro com o mesmo caso do antiveneno; 182 passa a usar a globulina antitimócito equina
   182: 'A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.',
-  // mesmo enunciado-modelo de flashcards de outros remixes
-  189: 'A study group preparing for an obstetrics exam trades four prenatal care cards on Mother\'s Day. Three of the cards contain an error.',
-  266: 'Two classmates quiz each other with four index cards on viral genetics and immune defects. Three cards contain an error.',
+  // os remixes 189 e 266 usavam o mesmo enunciado-modelo de flashcards; viraram vinhetas clínicas nas rodadas de humor
+  // (dias 184 a 244 e 245 a 305) e a fonte de verdade deles fica só em instagram/dias
   // remix da cetoacidose (dia 37): mesmo caso, outra redação
   70: 'A 24-year-old woman with type 1 diabetes has had 2 days of vomiting and abdominal pain; her neurologic examination is normal. Labs: glucose 520 mg/dL, arterial pH 7.12, anion gap 24, serum potassium 3.0 mEq/L. ECG shows U waves and sinus tachycardia without ST elevation. IV normal saline is running.',
 };
@@ -43,7 +42,7 @@ Object.assign(VINHETAS, {
   // repetia 8 palavras seguidas de um item do banco privado (R2A-CK-0326)
   88: "At a routine prenatal visit at 28 weeks' gestation, a 29-year-old woman in her second pregnancy has blood group O, Rh(D)-negative, with a negative antibody screen. Her first child was born at term. The father of the baby is Rh(D)-positive. The pregnancy has been uncomplicated.",
 });
-const PERGUNTAS = { 189: 'Which card follows current US guidelines?', 266: 'Which card is accurate?' };
+const PERGUNTAS = {};
 for (const [n, v] of Object.entries(VINHETAS)) {
   const d = dia(Number(n));
   if (d.questao.vinheta !== v) { d.questao.vinheta = v; log.push(`dia ${n}: vinheta reescrita`); }
@@ -63,8 +62,9 @@ const troca = (d, caminho, de, para) => {
 };
 {
   const d = dia(16);
-  troca(d, 'gancho', null, 'Capitã Plaqueta *apita*: engarrafamento no pós-operatório');
-  troca(d, 'imagem.alt', null, 'Capitã Plaqueta apita: engarrafamento no pós-operatório');
+  // gancho e alt reescritos no roteiro de humor de 29/10/2026 (sem pista da angio-TC)
+  troca(d, 'gancho', null, 'Prótese de quadril, panturrilha inchada e um *caminhão* atravessado no túnel');
+  troca(d, 'imagem.alt', null, 'Prótese de quadril, panturrilha inchada e um caminhão atravessado no túnel');
 }
 troca(dia(32), 'legenda.contexto', 'e só um espeto salva o membro.', 'e só um espeto é a conduta certa.');
 {

@@ -7,22 +7,22 @@
   "sistema": "Sistema cardiovascular",
   "topico": "Infarto com supra de ST",
   "conceito": "STEMI: primary PCI with door-to-balloon time under 90 minutes",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-11-04",
   "tom": null,
-  "gancho": "Peito apertado, *cronômetro* ligado: qual saída você pega?",
+  "gancho": "Mito entrou em greve: sem oxigênio, *sem* ATP. Quantos minutos você tem?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-002.png",
-    "cena": "Um coração com camisa de futebol corre pelo gramado de olho num cronômetro gigante do estádio. No fim do campo, uma placa verde de rodovia mostra três saídas em direções diferentes. Fica a dúvida de qual saída cabe dentro do tempo do jogo.",
+    "cena": "Mito, de jaleco amassado e olheiras, está sentado de braços cruzados na esteira parada de uma usina em forma de coração, com um cartaz de greve em branco no colo. No alto, um placar de estádio com o cronômetro correndo; lá fora, um caminhão-pipa de oxigênio está preso atrás de um cano entupido. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Peito apertado, cronômetro ligado: qual saída você pega?"
+    "alt": "Mito entrou em greve: sem oxigênio, sem ATP. Quantos minutos você tem?"
   },
   "imagem_macete": {
     "arquivo": "dia-002-macete.png",
-    "cena": "Callback do jogo: o coração cabeceia para o gol uma bola em forma de balão de angioplastia, presa num cateter fino, e a rede do gol é uma artéria coronária que se abre. O ponteiro do cronômetro ainda não chegou ao apito final: deu tempo nos 90 minutos.",
+    "cena": "Callback da usina: um balãozinho na ponta de um fio fino desentope o cano, o caminhão-pipa de oxigênio passa e o Mito volta ao trabalho, café na mão. O cronômetro do placar parou antes do apito dos 90 minutos.",
     "alt": "90 minutos, sem prorrogação"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A angio-TC de coronárias serve para dor torácica estável ou de risco baixo, nunca para supra de ST."
     },
     "macete": {
-      "frase": "Porta-balão é jogo de futebol: 90 minutos, sem prorrogação. Se precisar de transferência, ganha só os acréscimos, até 120.",
+      "frase": "Porta-balão é futebol: *90 minutos*. A prorrogação até 120 é só para quem precisa pegar a estrada.",
       "apoio": "Pegadinha de prova: O NBME oferece troponina seriada ou exame de imagem como distrator; com supra de ST e hemodinâmica disponível, a resposta é PCI primária.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça: dor no peito, ECG na mão e uma decisão que não pode esperar. Escolha a saída certa na placa.",
+    "contexto": "Plantão de Terça: dor no peito há uma hora, supra de ST no ECG e hemodinâmica de portas abertas. No miocárdio, o Mito já cruzou os braços e o cronômetro está correndo.",
     "palavras_chave": [
       "chest pain",
       "ST elevation",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Supra de ST, hemodinâmica livre: e agora?"
+    "pergunta": "Supra de ST e hemodinâmica disponível agora: qual conduta?"
   },
   "exemplo": false
 }

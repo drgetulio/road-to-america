@@ -8,21 +8,22 @@
   "topico": "Arterite de células gigantes",
   "conceito": "Giant cell arteritis: start high-dose steroids before temporal artery biopsy",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-09",
   "tom": null,
   "gancho": "Dor na têmpora e visão piscando: *quem fura a fila?*",
-  "gancho_apoio": "Biópsia, ressonância ou remédio? Na estrada do plantão, só uma saída protege o olho.",
+  "gancho_apoio": "Biópsia, ressonância ou remédio? No plantão, só uma escolha protege o olho.",
   "imagem": {
     "arquivo": "dia-219.png",
-    "cena": "Placa verde de rodovia com três saídas numa estrada que serpenteia em volta de uma montanha em forma de têmpora. No acostamento, um par de óculos esquecido sobre uma pedra e um relógio grande lembrando a pressa.",
+    "cena": "Triagem às 3 da manhã, com o relógio sem números. Dona Térmica organiza a fila: um carrinho em forma de comprimido, com sirene, e um caminhãozinho com um microscópio na carroceria esperam lado a lado. Num banquinho, um par de óculos esquecido, e ao fundo uma montanha em forma de têmpora.",
     "foco": "50% 35%",
-    "alt": "Dor na têmpora e visão piscando: quem fura a fila?"
+    "alt": "Dona Térmica organiza a fila entre um carrinho de comprimido e um caminhão de microscópio"
   },
   "imagem_macete": {
     "arquivo": "dia-219-macete.png",
-    "cena": "Callback: na mesma estrada, um carrinho em forma de comprimido, com sirene, pega a faixa expressa e dispara na frente; um caminhãozinho com um microscópio na carroceria vem atrás, tranquilo. Os óculos no acostamento brilham, protegidos.",
+    "cena": "O carrinho do comprimido pega a faixa expressa e dispara na frente, de sirene ligada; o caminhão do microscópio vem atrás, tranquilo, porque a biópsia ainda acha a resposta por duas semanas. Os óculos no banquinho brilham, protegidos, e Dona Térmica aprova com um cafezinho.",
     "foco": "50% 45%",
     "alt": "Na arterite de células gigantes, corticoide primeiro"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "*Pílula na frente, microscópio atrás*",
-      "apoio": "Na imagem, o carro da pílula sai pela faixa expressa da placa NEXT STEP, com a sirene ligada, e o caminhão do microscópio vem atrás, sem pressa: ele ainda acha a resposta por duas semanas.",
-      "fala": null
+      "apoio": "Na imagem, o carro da pílula sai pela faixa expressa com a sirene ligada e o caminhão do microscópio vem atrás, sem pressa: a biópsia continua positiva por até duas semanas depois do corticoide.",
+      "fala": "Já vi esse caso às 3 da manhã: o olho não espera a biópsia."
     }
   },
   "legenda": {
-    "contexto": "Cefaleia nova na têmpora, dor na mandíbula ao mastigar, couro cabeludo dolorido, VHS de 92 e um episódio de visão embaçada hoje cedo. Qual saída o plantonista pega primeiro?",
+    "contexto": "Cefaleia nova na têmpora, dor na mandíbula ao mastigar, couro cabeludo dolorido, VHS de 92 e visão embaçada hoje cedo. Qual conduta a Dona Térmica coloca na frente da fila?",
     "palavras_chave": [
       "new headache",
       "jaw pain",

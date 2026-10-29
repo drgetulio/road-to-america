@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Arterite de células gigantes (dia 219), Neutropenia febril (dia 261), Pericardite aguda (dia 289)",
   "conceito": "Remix: Giant cell arteritis + Febrile neutropenia + Acute pericarditis",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": [
     219,
@@ -16,17 +17,17 @@
   ],
   "explicacao_em": "2027-08-23",
   "tom": null,
-  "gancho": "Três discos no plantão: *qual conduta não pode esperar?*",
-  "gancho_apoio": "Arterite temporal, neutropenia febril e pericardite, mais um intruso.",
+  "gancho": "Dói até mastigar o pão de queijo e a VHS *está em 96*: o que não espera?",
+  "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual conduta sai agora?",
   "imagem": {
     "arquivo": "dia-294.png",
-    "cena": "Toca-discos numa mesa de plantão com três discos de ícones (uma coroa grande de gigante, um escudo vazio e um coração de suéter) e um quarto disco com uma ampulheta; um relógio de hospital na parede.",
+    "cena": "Três da manhã na copa do plantão: um quebra-nozes de madeira tenta mastigar um pão de queijo e faz careta, enquanto Dona Térmica, a garrafa térmica, consulta uma agenda em branco com um dia bem distante circulado. Na mesa, quatro bandejas tampadas. Num canto, um vinil pequeno serve de bandeja do café, e o relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Três discos no plantão: qual conduta não pode esperar?"
+    "alt": "Quebra-nozes com dor ao mastigar e a biópsia marcada para longe"
   },
   "imagem_macete": {
     "arquivo": "dia-294-macete.png",
-    "cena": "Callback: o disco da coroa de gigante toca; um extintor apaga uma chaminha numa artéria em forma de mangueira que contorna a têmpora de um abajur, antes que a fumaça chegue a um olho em forma de farol; a tesoura da biópsia espera na fila, ainda útil.",
+    "cena": "Da primeira bandeja salta um extintor pequeno, que apaga uma chaminha numa artéria em forma de mangueira que contorna um abajur, antes que a fumaça chegue a um olho em forma de farol; a tesoura da biópsia espera tranquila na fila, ao lado da agenda. O quebra-nozes, enfim, mastiga o pão de queijo.",
     "foco": "50% 45%",
     "alt": "Arterite de células gigantes: corticoide antes da biópsia"
   },
@@ -74,12 +75,12 @@
     },
     "macete": {
       "frase": "Na arterite temporal, *o corticoide não espera a biópsia*",
-      "apoio": "No toca-discos, o disco do gigante toca primeiro e o extintor de corticoide entra antes da tesoura da biópsia. O que se protege é a visão.",
-      "fala": null
+      "apoio": "O extintor de corticoide entra antes da tesoura da biópsia, que continua útil por cerca de duas semanas depois do início do tratamento. O que se protege é a visão. AINE com colchicina é da pericardite e cefepima em 1 hora é da neutropenia febril.",
+      "fala": "Já vi esse caso às 3 da manhã. O corticoide não espera a agenda da biópsia."
     }
   },
   "legenda": {
-    "contexto": "Remix com arterite de células gigantes (dia 219), neutropenia febril (dia 261) e pericardite aguda (dia 289), mais um intruso. Cefaleia nova, dor na mandíbula ao mastigar e VHS de 96 aos 72 anos.",
+    "contexto": "Domingo de revisão com os dias 219, 261 e 289, mais um intruso. Cefaleia nova, couro cabeludo dolorido, dor na mandíbula ao mastigar e VHS de 96 aos 72 anos. A biópsia está marcada para a semana que vem.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +96,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "VHS alta e dor ao mastigar: o que fazer já?"
+    "pergunta": "VHS de 96, dor ao mastigar e biópsia só na semana que vem: o que fazer?"
   },
   "cta": null,
   "reel": null,

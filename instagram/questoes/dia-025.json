@@ -7,22 +7,22 @@
   "sistema": "Sangue e sistemas linforreticular e imune",
   "topico": "Anafilaxia alimentar",
   "conceito": "Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.",
   "remix_de": null,
   "explicacao_em": "2026-11-27",
   "tom": null,
-  "gancho": "Thanksgiving: o *amendoim* chegou disfarçado na sobremesa",
+  "gancho": "Thanksgiving: o *amendoim* chegou de bigode falso dentro da torta",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-025.png",
-    "cena": "O garçom do rodízio serve uma mesa festiva de Thanksgiving com um peru assado no espeto. Na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa. A plaquinha verde e vermelha está ao lado.",
+    "cena": "Macrô, de guardanapo xadrez, está à mesa festiva de Thanksgiving numa churrascaria, ao lado de um peru assado no espeto. Na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa; Macrô estreita os olhos, desconfiado. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "Thanksgiving: o amendoim chegou disfarçado na sobremesa"
+    "alt": "Thanksgiving: o amendoim chegou de bigode falso dentro da torta"
   },
   "imagem_macete": {
     "arquivo": "dia-025-macete.png",
-    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. O garçom vira a plaquinha para o verde, e uma caneta autoinjetora de adrenalina voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa.",
+    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. Macrô vira a plaquinha para o verde, e uma caneta autoinjetora voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa. Um frasco de antialérgico espera no banco de reservas.",
     "alt": "Chute de coxa, e já"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "O corticoide demora horas para agir e não tem benefício comprovado na fase aguda da anafilaxia."
     },
     "macete": {
-      "frase": "Anafilaxia é pênalti: chute de coxa, e já! Adrenalina IM no vasto lateral, porque no músculo da coxa ela é absorvida mais rápido do que no braço ou embaixo da pele.",
+      "frase": "Anafilaxia é pênalti: *chute de coxa*, e já. Antialérgico na veia antes da adrenalina é comemorar antes da bola entrar.",
       "apoio": "Pegadinha de prova: O NBME oferece anti-histamínico e corticoide como alternativas que parecem completas; toda anafilaxia, inclusive na criança, começa pela adrenalina IM.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Thanksgiving nos EUA é dia de jantar em família, e as alergias alimentares viram assunto. No Rodízio de Quinta, a emergência pediátrica.",
+    "contexto": "Thanksgiving nos EUA é jantar em família, e a alergia alimentar sempre aparece na mesa. No Rodízio de Quinta, o Macrô está de plantão na emergência pediátrica: urticária, chiado e pressão de 78 por 44.",
     "palavras_chave": [
       "peanut",
       "urticaria",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Anafilaxia com hipotensão: primeiro remédio?"
+    "pergunta": "Anafilaxia aos 9 anos com PA 78/44: qual é o primeiro remédio?"
   },
   "exemplo": false
 }

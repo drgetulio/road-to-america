@@ -8,21 +8,22 @@
   "topico": "Paralisia de Erb",
   "conceito": "Erb palsy: C5-C6 upper trunk injury, waiter tip posture",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-13",
   "tom": null,
-  "gancho": "O braço do bebê ficou pedindo *gorjeta* escondida",
+  "gancho": "4,6 kg, ombro entalado e um bracinho que *não quis dar tchau*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-192.png",
-    "cena": "Em estilo manual de montagem, uma árvore de cinco raízes no jardim de uma churrascaria; uma ventania puxa a copa para o lado e um redemoinho de folhas esconde quais galhos estão sendo esticados; uma bandeja de garçom balança num galho.",
+    "cena": "Seu Allen abre um manual de montagem gigante no jardim: a peça do dia é uma árvore de cinco raízes, com setinhas de montagem em volta. Uma ventania puxa a copa para o lado, e um redemoinho de folhas esconde quais galhos estão sendo esticados.",
     "foco": "50% 35%",
-    "alt": "O braço do bebê ficou pedindo gorjeta escondida"
+    "alt": "Seu Allen abre um manual de montagem diante de uma árvore de cinco raízes puxada pelo vento"
   },
   "imagem_macete": {
     "arquivo": "dia-192-macete.png",
-    "cena": "As folhas assentam e revelam: os dois galhos de cima, esticados pelo vento, ficam caídos, com a ponta virada para trás como a mão de um garçom pedindo gorjeta discreta; os galhos de baixo seguram firme uma xícara, mostrando que a preensão continua boa.",
+    "cena": "As folhas assentam: os dois galhos de cima, esticados, ficam caídos. Ao lado, o Garçom Espetinho, que veio de quinta só para isso, imita a pose: braço colado no corpo, cotovelo reto e palma virada para trás, como quem pede gorjeta escondido. Os galhos de baixo seguram firme uma xícara.",
     "alt": "Erb: tronco superior, C5 e C6"
   },
   "questao": {
@@ -65,9 +66,9 @@
       "D": "O nervo torácico longo inerva o serrátil anterior; a lesão causa escápula alada, não paralisia do braço."
     },
     "macete": {
-      "frase": "Erb é o *garçom de cima*: C5 e C6 seguram ombro e cotovelo. Quando o tronco superior estica, o braço fica *pedindo gorjeta escondida* (palma para trás, cotovelo reto). Klumpke é o *de baixo*: a mão em garra.",
+      "frase": "Erb é o *garçom pedindo gorjeta escondida*: braço colado, cotovelo reto, palma para trás. Esticou *em cima* (C5 e C6): perde ombro e cotovelo, e a mão segue pegando a xícara. Klumpke é *embaixo* (C8 e T1) e leva a mão em garra.",
       "apoio": "O NBME separa Erb (ombro e cotovelo, preensão preservada, tração do pescoço) de Klumpke (mão em garra, Horner possível, tração do braço para cima); bebê grande e distocia de ombro são as pistas.",
-      "fala": null
+      "fala": "Sobrou peça? Então faltou mecanismo: C5 e C6 saíram do encaixe."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Braço em gorjeta após distocia. Qual lesão?"
+    "pergunta": "Braço caído, palma para trás, preensão ok: qual lesão?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -8,21 +8,22 @@
   "topico": "Pericardite aguda",
   "conceito": "Acute pericarditis: diffuse ST elevation with PR depression, NSAID plus colchicine",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-18",
   "tom": null,
-  "gancho": "O coração vestiu *um suéter que arranha*. E agora, plantão?",
-  "gancho_apoio": "Dor que piora deitado e alivia inclinado para a frente.",
+  "gancho": "O coração vestiu *o suéter de lã que a avó tricotou* e tudo arranha",
+  "gancho_apoio": "Dor que piora deitado e alivia inclinado para a frente, uma semana depois de um resfriado.",
   "imagem": {
     "arquivo": "dia-289.png",
-    "cena": "Placa verde NEXT STEP com saídas; um coração simpático sentado num banco, inclinado para a frente, usando um suéter de lã áspera que solta faíscas de atrito; um traçado ondulado de batimento ao fundo.",
+    "cena": "Três da manhã numa sala de espera vazia: um coração simpático, sentado num banco e inclinado para a frente, veste um suéter de lã áspera, tricotado à mão, que solta faisquinhas de atrito; ele faz cara de incômodo. Dona Térmica, a garrafa térmica de café, oferece uma xícara e anota na prancheta. Ao fundo, um traçado ondulado de batimento e um relógio sem números nas 3 horas.",
     "foco": "50% 35%",
-    "alt": "O coração vestiu um suéter que arranha. E agora, plantão?"
+    "alt": "Coração de suéter de lã inclinado para a frente no banco"
   },
   "imagem_macete": {
     "arquivo": "dia-289-macete.png",
-    "cena": "Callback: o coração tira o suéter que arranha e recebe numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado (colchicina); ao fundo, o traçado sobe suavemente em toda a extensão.",
+    "cena": "O coração tira o suéter que arranha e relaxa, recebendo numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado; o traçado ao fundo sobe suavemente em toda a extensão. Dona Térmica dobra o suéter em cima da prancheta.",
     "foco": "50% 45%",
     "alt": "ST difuso e PR deprimido: pericardite aguda"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "Pericardite: *o ST sobe em todo lugar, o PR desce* e a cura vem com *flor*",
-      "apoio": "Na imagem, o coração tira o suéter de lã que arranha (o atrito) e recebe um comprimido de anti-inflamatório e uma florzinha de açafrão-do-prado, a planta de onde veio a colchicina.",
-      "fala": null
+      "apoio": "O suéter de lã que arranha é o atrito pericárdico; inclinar para a frente afasta o suéter da pele. O ST sobe difuso e o PR desce. O tratamento é anti-inflamatório com colchicina, a florzinha de açafrão-do-prado de onde ela veio.",
+      "fala": "Já vi esse caso às 3 da manhã. A culpa era do suéter."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Melhora inclinado e ECG difuso: qual diagnóstico?"
+    "pergunta": "Dor que alivia inclinado, atrito e ST difuso: qual é o diagnóstico?"
   },
   "cta": null,
   "reel": null,

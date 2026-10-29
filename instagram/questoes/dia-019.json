@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-21",
   "tom": null,
-  "gancho": "Tia Meia-Vida tentou todas as chaves e a *porta* não abriu",
+  "gancho": "Tia Meia-Vida tentou o molho inteiro de *chaves* e a porta nem piscou",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-019.png",
     "cena": "A Tia Meia-Vida, na porta dos fundos da farmácia, testa um molho de chaves douradas na porta de um castelinho redondo feito de bolinhas em cacho de uva. Nenhuma chave funciona, e ela franze a testa por cima dos óculos vermelhos enquanto a areia da ampulheta escorre.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida tentou todas as chaves e a porta não abriu"
+    "alt": "Tia Meia-Vida tentou o molho inteiro de chaves e a porta nem piscou"
   },
   "imagem_macete": {
     "arquivo": "dia-019-macete.png",
-    "cena": "Callback do castelinho: um corte da fechadura mostra que o miolo antigo foi trocado por um novo, de formato esquisito (PBP2a), em que as chaves douradas não encaixam. Uma latinha de óleo (clavulanato) está esquecida no degrau, e chega um segundo chaveiro com uma chave azul-marinho em forma de grampo (vancomicina).",
+    "cena": "Callback do castelinho: um corte da fechadura mostra que o miolo antigo foi trocado por um novo, de formato esquisito (PBP2a), em que as chaves douradas não encaixam. Uma latinha de óleo (clavulanato) foi esquecida no degrau, e chega um chaveiro 24 horas com uma chave azul-marinho em forma de grampo (vancomicina).",
     "alt": "Trocaram a fechadura"
   },
   "questao": {
@@ -66,13 +66,13 @@
       "D": "Trocar D-Ala-D-Ala por D-Ala-D-Lac é a resistência do enterococo à vancomicina (VRE), e este isolado é sensível à vancomicina."
     },
     "macete": {
-      "frase": "O MRSA trocou a fechadura: a chave betalactâmica é a mesma, o miolo (PBP2a) é novo. Não adianta passar óleo de clavulanato na chave; chame outro chaveiro, como a vancomicina.",
+      "frase": "O MRSA não quebrou a chave: trocou o *miolo* da fechadura (PBP2a). Óleo de clavulanato não resolve; chame o chaveiro 24 horas, a vancomicina.",
       "apoio": "Pegadinha de prova: O NBME oferece betalactamase para qualquer resistência a penicilinas; resistência à oxacilina é PBP alterada, codificada pelo mecA.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Semana Mundial de Conscientização sobre Resistência Antimicrobiana. Sextou na Farmácia com um estafilococo que não liga para a oxacilina.",
+    "contexto": "Semana Mundial de Conscientização sobre Resistência Antimicrobiana. Sextou na Farmácia com um estafilococo que não liga para a oxacilina nem para o clavulanato.",
     "palavras_chave": [
       "skin abscess",
       "gram-positive cocci in clusters",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Estafilo resistente à oxacilina: qual mecanismo?"
+    "pergunta": "Estafilo resistente à oxacilina e ao clavulanato: qual mecanismo?"
   },
   "exemplo": false
 }

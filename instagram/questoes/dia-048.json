@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-20",
-  "gancho": "O alarme apita até com pão na chapa. E quando fica mudo?",
+  "gancho": "O alarme apita até com pão na chapa. E quando fica *mudo*?",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Viés na cozinha de uma padaria, meio escondido atrás de uma tabela 2x2, olhando para um detector de fumaça no teto enquanto um pão francês tosta na chapa.",
     "foco": "50% 35%",
-    "alt": "Viés na cozinha de uma padaria, meio escondido atrás de uma tabela 2x2, olhando para um detector de fumaça no teto enquanto um pão francês tosta na chapa.",
+    "alt": "O alarme apita até com pão na chapa. E quando fica mudo?",
     "arquivo": "dia-048.png"
   },
   "imagem_macete": {
@@ -64,7 +64,7 @@
       "C": "Especificidade baixa afeta a confiança no positivo, não no negativo; o negativo depende da sensibilidade."
     },
     "macete": {
-      "frase": "Detector sensível *mudo* = *não tem fogo*",
+      "frase": "Detector sensível apita até com pão na chapa; quando fica *mudo*, pode ir dormir: não tem fogo. *SnNOut*.",
       "apoio": "Pegadinha de prova: O NBME embaralha sensibilidade com valor preditivo e pergunta qual teste usar para rastrear (sensível) e qual para confirmar (específico).",
       "fala": null
     }
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Teste sensível deu negativo. E agora?"
+    "pergunta": "Teste 99% sensível negativo em paciente de baixo risco: o que concluir?"
   },
   "cta": "simulado",
   "exemplo": false

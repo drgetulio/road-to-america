@@ -7,22 +7,22 @@
   "sistema": "Sistema nervoso e órgãos dos sentidos",
   "topico": "Otite média aguda",
   "conceito": "Acute otitis media: high-dose amoxicillin first-line",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-29",
   "tom": null,
-  "gancho": "O tímpano virou *zabumba* estufada. Qual xarope sai do balcão?",
+  "gancho": "O tímpano virou *zabumba de São João*: qual frasco a Tia tira da prateleira?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-208.png",
-    "cena": "No balcão de uma farmácia de interior com ampulheta, uma zabumba de festa junina vermelha e estufada, prestes a estourar, ao lado de quatro frascos sem rótulo; bandeirinhas de São João enfeitam o teto.",
+    "cena": "Tia Meia-Vida, atrás do balcão enfeitado com bandeirinhas de São João, olha por cima dos óculos para uma zabumba vermelha e estufada, prestes a estourar, ao lado de quatro frascos sem rótulo.",
     "foco": "50% 35%",
-    "alt": "O tímpano virou zabumba estufada. Qual xarope sai do balcão?"
+    "alt": "Tia Meia-Vida diante de uma zabumba vermelha estufada no balcão de São João"
   },
   "imagem_macete": {
     "arquivo": "dia-208-macete.png",
-    "cena": "Do balcão sai um frasco grande de xarope cor-de-rosa com duas colheres medidoras lado a lado (dose dobrada); a pele da zabumba volta a ficar lisinha e afinada, e um passarinho de forró dança em cima dela.",
+    "cena": "A Tia Meia-Vida serve um frasco grande de xarope cor-de-rosa com duas colheres medidoras lado a lado (dose dobrada); a pele da zabumba volta a ficar lisinha e afinada, e um passarinho de forró dança em cima dela.",
     "alt": "Otite média aguda: amoxicilina em dose alta"
   },
   "questao": {
@@ -67,7 +67,7 @@
     "macete": {
       "frase": "O tímpano é a *zabumba estufada* do forró; o primeiro remédio é o velho *xarope rosa* de amoxicilina, em *dose dobrada* (80 a 90 mg/kg/dia). Usou amoxicilina há 30 dias ou tem conjuntivite junto: *amoxicilina-clavulanato*.",
       "apoio": "O NBME troca para amoxicilina-clavulanato quando houve amoxicilina nos últimos 30 dias ou conjuntivite purulenta junto (Haemophilus); alergia não grave à penicilina pede cefdinir ou cefuroxima.",
-      "fala": null
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da dose dobrada, todo mundo lembra."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Otite média aguda com febre alta. O que dar?"
+    "pergunta": "Tímpano abaulado, 2 anos, sem alergia: o que dar?"
   },
   "cta": "simulado",
   "exemplo": false

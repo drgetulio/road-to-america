@@ -8,6 +8,7 @@
   "topico": "Pneumotórax hipertensivo",
   "conceito": "Tension pneumothorax: immediate needle decompression before imaging",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-02",
@@ -16,7 +17,7 @@
   "gancho_apoio": "Traqueia desviada, veias do pescoço cheias e um lado do tórax mudo. Qual é o próximo passo?",
   "imagem": {
     "arquivo": "dia-242.png",
-    "cena": "No rodízio, um balão enorme cresce embaixo da toalha de uma mesa e empurra pratos, copos e saleiro para um lado só. O garçom, com os espetos no alto, olha a cena; no canto, uma câmera num tripé espera.",
+    "cena": "No rodízio, um balão enorme cresce embaixo da toalha de uma mesa e empurra pratos, copos e saleiro para um lado só. O garçom, com os espetos no alto, olha a cena; no canto, uma câmera num tripé espera. A plaquinha verde e vermelha tombou na mesa.",
     "foco": "50% 35%",
     "alt": "Rodízio parado: um balão empurrou a mesa inteira para o lado"
   },
@@ -68,11 +69,11 @@
     "macete": {
       "frase": "Balão empurrando a mesa: *fura primeiro*, fotografa depois",
       "apoio": "Lembre do balão embaixo da toalha: quando ele empurra a mesa inteira para um lado, o garçom não vai buscar a câmera, ele fura com o espeto. No pneumotórax hipertensivo, a punção vem antes de qualquer imagem.",
-      "fala": null
+      "fala": "Vai uma conduta aí? Agulha agora, foto depois."
     }
   },
   "legenda": {
-    "contexto": "Acidente de moto, hipotensão e um lado do tórax que não respira. Você está no plantão: o que fazer primeiro?",
+    "contexto": "Acidente de moto, PA de 78/40, saturação de 84%, traqueia desviada para a esquerda, jugulares cheias e o hemitórax direito timpânico e sem murmúrio. Qual é a primeira conduta?",
     "palavras_chave": [
       "motorcycle crash",
       "hypotension",
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que fazer primeiro?"
+    "pergunta": "Traqueia desviada, PA 78/40 e tórax mudo: conduta?"
   },
   "cta": "simulado",
   "reel": null,

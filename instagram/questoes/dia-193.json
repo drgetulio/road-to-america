@@ -7,23 +7,23 @@
   "sistema": "Saúde comportamental",
   "topico": "Síndrome de realimentação",
   "conceito": "Anorexia nervosa refeeding syndrome: watch for hypophosphatemia",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-14",
   "tom": null,
-  "gancho": "Realimentação: o *terceiro dia* de dieta virou plantão. Por quê?",
+  "gancho": "Terceiro dia de dieta por sonda, e a usina *religou com tudo*. O que a equipe faz?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-193.png",
-    "cena": "Na churrascaria, o garçom do rodízio chega com uma bandeja cheia a uma mesa que ficou muitos dias vazia; no caixa da casa, uma registradora antiga está fechada e quieta, e a plaquinha de duas cores ainda está de lado.",
+    "cena": "Uma pequena usina em forma de célula está religando depois de muito tempo parada. Mito, de jaleco e café, acompanha um tubo fino que traz cubinhos de açúcar para dentro, gota a gota. Do lado de fora, um pote de vidro com poucas moedinhas brilhantes, e o painel da usina começa a piscar.",
     "foco": "50% 35%",
-    "alt": "Realimentação: o terceiro dia de dieta virou plantão. Por quê?"
+    "alt": "Mito acompanha uma usina em forma de célula que religa depois de muito tempo parada"
   },
   "imagem_macete": {
     "arquivo": "dia-193-macete.png",
-    "cena": "A gaveta da registradora se abre e as moedinhas (o fósforo) saem voando para dentro de uma pequena fábrica em forma de célula que acende as luzes (o ATP), deixando o caixa vazio; o garçom passa a servir um espeto de cada vez e um ajudante repõe moedas novas na gaveta.",
-    "alt": "Realimentação: o fósforo foge para dentro"
+    "cena": "Uma chave em forma de insulina abre a porta da usina, e as moedinhas do pote correm todas para dentro, virando baterias acesas (o ATP); o pote fica vazio. Mito diminui a vazão do tubo e coloca moedas novas no pote, com calma.",
+    "alt": "Realimentação: o fósforo foge para dentro da célula"
   },
   "questao": {
     "vinheta": "A 17-year-old girl with anorexia nervosa and a BMI of 14.5 kg/m2 is admitted for nutritional rehabilitation. On day 3 of rapidly increasing nasogastric feeds, she develops weakness, shortness of breath, confusion, and new ankle edema. Heart rate is 118/min.",
@@ -65,13 +65,13 @@
       "D": "Suspender toda a nutrição prolonga a desnutrição; a recomendação é reduzir a velocidade e corrigir os eletrólitos."
     },
     "macete": {
-      "frase": "Na realimentação, a insulina abre a porta da célula e *o fósforo entra todo para virar ATP*. O caixa do sangue fica *sem moedas*: músculo fraco, pulmão cansado, coração falhando. Começa devagar, mede e repõe.",
+      "frase": "Na realimentação, a insulina volta e a usina do Mito religa: o *fósforo* corre para dentro da célula para virar ATP, e o sangue fica *sem moeda*. Músculo fraco, respiração curta, coração cansado. Começa devagar, dosa e repõe fósforo, potássio e magnésio.",
       "apoio": "O NBME descreve piora nos primeiros dias de dieta em paciente muito desnutrido e pergunta o eletrólito; a resposta é hipofosfatemia, com potássio e magnésio baixos também.",
-      "fala": null
+      "fala": "Fiquei muito tempo parado. Se o turno volta com tudo, eu gasto o cofrinho inteiro de fósforo."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na psiquiatria e na clínica. A adolescente da vinheta começou o tratamento nutricional e, no terceiro dia, piorou. A conduta certa protege o coração e os músculos dela.",
+    "contexto": "Rodízio de Quinta na psiquiatria e na clínica. Uma adolescente em reabilitação nutricional por sonda piora no terceiro dia: fraqueza, falta de ar, confusão e edema. Além de desacelerar a dieta, qual é a conduta?",
     "palavras_chave": [
       "anorexia nervosa",
       "nutritional rehabilitation",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Piorou no 3º dia de dieta. Próximo passo?"
+    "pergunta": "3º dia de dieta por sonda, fraqueza e edema: conduta?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Miastenia gravis (dia 22), Doença do soro (dia 78), Streptococcus pneumoniae (dia 106)",
   "conceito": "Remix: Myasthenia gravis + Serum sickness + Streptococcus pneumoniae",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     22,
@@ -16,70 +16,69 @@
   ],
   "explicacao_em": "2027-02-22",
   "tom": null,
-  "gancho": "Remix: dez dias depois do soro, *febre* e dor nas juntas",
-  "gancho_apoio": "Três conceitos já vistos (dias 22, 78 e 106) e um intruso. Só um explica o quadro.",
+  "gancho": "Nove dias depois da infusão, *chegou uma fatura* que ninguém pediu",
+  "gancho_apoio": "Três conceitos já vistos (dias 22, 78 e 106) e um intruso.",
   "imagem": {
     "arquivo": "dia-112.png",
-    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma campainha de prédio, um com uma capa de chuva transparente e um com um frasco de soro de tampa em forma de cabeça de cavalo. Ao lado, uma caixa de discos e um par de fones de ouvido.",
+    "cena": "Macrô, de comanda no bolso, abre a caixa de correio de casa e encontra um envelope de fatura em branco. Na mesa da cozinha, atrás dele, um frasco de infusão com um rabinho de camundongo de desenho na tampa e um painel de campainha de prédio. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Toca-discos com três discos: campainha, capa de chuva e frasco de soro com tampa de cavalo."
+    "alt": "Macrô abre a caixa de correio e acha um envelope de fatura; na mesa, um frasco de infusão com rabinho de camundongo e uma campainha de prédio."
   },
   "imagem_macete": {
     "arquivo": "dia-112-macete.png",
-    "cena": "Callback: no balcão do boteco, o caderninho de fiado está aberto e dez folhas do calendário caíram. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo (imunocomplexos) entopem três filtros de uma casa em corte: o da pia, o de um radiador e um filtro em forma de rim. Ao lado, uma carteira solta as últimas moedinhas douradas (complemento) e fica vazia.",
+    "cena": "Callback: dentro do envelope, bolinhos de anticorpos em Y agarrados a pedacinhos com rabinho de camundongo entopem três filtros de uma casa em corte: o da pia, o de um radiador e um filtro em forma de rim. A carteira do Macrô solta as últimas moedinhas douradas e fica vazia.",
     "foco": "50% 40%",
-    "alt": "Caderninho de fiado aberto; imunocomplexos entopem os filtros da pia, do radiador e um em forma de rim, e a carteira de moedas douradas fica vazia."
+    "alt": "Bolinhos de anticorpo agarrados a pedacinhos com rabinho de camundongo entopem os filtros de uma casa em corte; a carteira do Macrô fica vazia."
   },
   "questao": {
-    "vinheta": "Ten days after receiving equine-derived antivenom for a snakebite, a 35-year-old farmer develops fever, an itchy rash on his trunk, pain in several joints and mild proteinuria. Serum C3 and C4 levels are low.",
-    "pergunta": "Which mechanism best explains these findings?",
+    "vinheta": "A 42-year-old woman with refractory generalized myasthenia gravis receives her first rituximab infusion, which is uneventful. Nine days later she develops fever, an urticarial rash, polyarthralgia and mild proteinuria. Serum C3 and C4 levels are low.",
+    "pergunta": "Which mechanism best explains her new symptoms?",
     "alternativas": {
       "A": {
-        "texto": "Antibodies against postsynaptic acetylcholine receptors",
-        "quiz": "Anti-receptor de ACh",
+        "texto": "Antibodies against acetylcholine receptors",
+        "quiz": "Anti-AChR antibodies",
         "dia": 22
       },
       "B": {
-        "texto": "Immune complexes depositing in vessel walls",
-        "quiz": "Imunocomplexos",
+        "texto": "Circulating immune complexes with complement",
+        "quiz": "Immune complexes",
         "dia": 78
       },
       "C": {
-        "texto": "Polysaccharide capsule that resists phagocytosis",
-        "quiz": "Cápsula bacteriana",
-        "dia": 106
+        "texto": "Cytokine release from lysed B cells",
+        "quiz": "Cytokine release"
       },
       "D": {
         "texto": "IgE-mediated mast cell degranulation",
-        "quiz": "IgE no mastócito"
+        "quiz": "IgE on mast cells"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Doença do soro: hipersensibilidade *tipo III*",
+    "titulo": "Nove dias depois do anticorpo quimérico: *doença do soro*",
     "certa": [
-      "Uma a duas semanas depois de receber proteína estranha, como o soro antiofídico feito em cavalo, o corpo fabrica anticorpos contra ela, e os imunocomplexos se depositam em vasos, articulações e rim. O complemento é ativado e consumido, por isso C3 e C4 caem, e aparecem febre, exantema, artralgia e proteinúria. É a doença do soro (serum sickness), uma hipersensibilidade tipo III que costuma melhorar sozinha."
+      "Febre, urticária, artralgia e proteinúria 1 a 2 semanas depois de uma proteína estranha, com C3 e C4 baixos, é *serum sickness* (dia 78), a *type III hypersensitivity*. O rituximabe é um anticorpo quimérico, com uma parte de camundongo: a paciente faz anticorpos contra ele, e os *immune complexes* se depositam em vasos, articulações e rim e consomem complemento. A *myasthenia gravis* (dia 22) explica por que ela recebeu o remédio, não os sintomas novos."
     ],
     "termos": [
       "serum sickness",
       "type III hypersensitivity",
       "immune complexes",
-      "hypocomplementemia"
+      "chimeric monoclonal antibody"
     ],
     "erradas": {
-      "A": "Dia 22: anticorpo contra o receptor de acetilcolina é tipo II, com fraqueza que piora com o uso, sem febre nem queda de complemento.",
-      "C": "Dia 106: a cápsula é o fator de virulência do pneumococo numa infecção, e não uma reação a um soro recebido.",
-      "D": "Intruso: a degranulação de mastócitos por IgE é imediata, em minutos depois do soro, e não dez dias depois."
+      "A": "Dia 22: o anticorpo contra o receptor de acetilcolina é tipo II e dá fraqueza que piora com o esforço, sem febre, urticária nem complemento baixo.",
+      "C": "A liberação de citocinas pela lise das células B é a reação infusional, que aparece durante ou logo depois da primeira infusão, não nove dias depois.",
+      "D": "Intruso: a degranulação de mastócitos por IgE é tipo I, aparece em minutos e não consome complemento."
     },
     "macete": {
-      "frase": "Tipo III é o *fiado*: a conta chega em 1 a 2 semanas e cobra juros do complemento",
+      "frase": "Anticorpo *meio camundongo*: a fatura tipo III chega em 1 a 2 semanas",
       "apoio": "Na imagem, a conta do fiado chegou: os imunocomplexos entopem os filtros e a carteira do complemento esvazia.",
-      "fala": null
+      "fala": "A fatura chegou em nove dias, com juros de C3 e C4. Eu reconheço essa letra."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: miastenia, doença do soro e pneumococo. Um trabalhador rural recebeu soro antiofídico e, dez dias depois, apareceu febre com dor nas juntas.",
+    "contexto": "Miastenia refratária, primeira infusão de rituximabe sem intercorrências e, nove dias depois, febre, urticária, dor nas juntas e C3 e C4 baixos. Três conceitos já vistos estão por perto: a miastenia, a doença do soro e o pneumococo. Qual mecanismo explica os sintomas novos?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,7 +93,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Febre e artralgia 10 dias após o soro?"
+    "pergunta": "Febre e artralgia 9 dias após rituximabe, C3 baixo: qual mecanismo?"
   },
   "cta": "pre_inscricao",
   "reel": null,

@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-19",
-  "gancho": "A levodopa saiu de casa e metade ficou no pedágio",
+  "gancho": "A levodopa saiu de casa e metade ficou no *pedágio*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida na beira de uma estrada de serra olhando ônibus subindo para uma cidade murada no alto; no meio do caminho há um pedágio que tira passageiros dos ônibus.",
+    "cena": "Tia Meia-Vida na beira de uma estrada de serra, olhando ônibus subirem para uma cidade murada no alto; no meio do caminho há um pedágio que tira passageiros dos ônibus.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida na beira de uma estrada de serra olhando ônibus subindo para uma cidade murada no alto; no meio do caminho há um pedágio que tira passageiros dos ônibus.",
+    "alt": "A levodopa saiu de casa e metade ficou no pedágio",
     "arquivo": "dia-047.png"
   },
   "imagem_macete": {
@@ -26,23 +26,23 @@
   },
   "questao": {
     "vinheta": "A 68-year-old man with Parkinson disease starts levodopa alone and develops marked nausea and orthostatic hypotension. Carbidopa is added, and these effects improve while a lower levodopa dose achieves the same motor benefit.",
-    "pergunta": "Which action of carbidopa best explains these changes?",
+    "pergunta": "Carbidopa most likely inhibits which enzyme at which site?",
     "alternativas": {
       "A": {
-        "texto": "Inhibition of monoamine oxidase B",
-        "quiz": "MAO-B block"
+        "texto": "MAO-B in the brain",
+        "quiz": "MAO-B no cérebro"
       },
       "B": {
-        "texto": "Inhibition of central DOPA decarboxylase",
-        "quiz": "Central DDC block"
+        "texto": "DOPA decarboxylase in the brain",
+        "quiz": "DDC no cérebro"
       },
       "C": {
-        "texto": "Inhibition of catechol-O-methyltransferase",
-        "quiz": "COMT block"
+        "texto": "COMT in the periphery",
+        "quiz": "COMT periférica"
       },
       "D": {
-        "texto": "Inhibition of peripheral DOPA decarboxylase",
-        "quiz": "Peripheral DDC block"
+        "texto": "DOPA decarboxylase in the periphery",
+        "quiz": "DDC periférica"
       }
     },
     "correta": "D"
@@ -59,18 +59,18 @@
       "levodopa"
     ],
     "erradas": {
-      "A": "Inibir a MAO-B é o papel da selegilina, da rasagilina e da safinamida.",
-      "B": "Se a carbidopa bloqueasse a enzima no cérebro, a levodopa deixaria de funcionar; ela não cruza a barreira.",
-      "C": "Bloquear a COMT é o trabalho da entacapona e da tolcapona, que prolongam o efeito de cada dose."
+      "A": "Inibir a MAO-B no cérebro é o papel da selegilina, da rasagilina e da safinamida.",
+      "B": "Se a carbidopa bloqueasse a descarboxilase no cérebro, a levodopa deixaria de funcionar; ela não cruza a barreira.",
+      "C": "Bloquear a COMT periférica é o trabalho da entacapona, que prolonga o efeito de cada dose."
     },
     "macete": {
-      "frase": "Carbidopa: *fecha a estrada*, *não entra na cidade*",
+      "frase": "Carbidopa é o fiscal do *pedágio da estrada*: barra a conversão antes da serra, mas não tem passe para entrar na cidade murada.",
       "apoio": "Pegadinha de prova: O NBME pergunta por que a carbidopa não atrapalha o efeito central: ela não atravessa a barreira hematoencefálica.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Parkinson, levodopa sozinha e um enjoo que não deixa ninguém em paz. Uma segunda molécula entra na receita e resolve. A Tia Meia-Vida explica onde ela age.",
+    "contexto": "Parkinson, levodopa sozinha e um enjoo que não deixa ninguém em paz. Uma segunda molécula entra na receita e resolve. A Tia Meia-Vida explica onde ela trabalha.",
     "palavras_chave": [
       "Parkinson disease",
       "nausea",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Onde age a carbidopa?"
+    "pergunta": "Carbidopa melhorou náusea e hipotensão: qual enzima e onde?"
   },
   "cta": "simulado",
   "exemplo": false

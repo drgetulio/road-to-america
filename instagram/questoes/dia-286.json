@@ -7,22 +7,22 @@
   "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
   "topico": "Condicionamento operante",
   "conceito": "Operant conditioning: negative reinforcement removes an aversive stimulus to increase a behavior",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-15",
   "tom": null,
-  "gancho": "O carro apita até você obedecer. *Que aprendizado é esse?*",
+  "gancho": "O carro apita até você obedecer: *mesmo método da sua mãe com a louça*",
   "gancho_apoio": "Apito sem cinto, silêncio com cinto. Duas semanas depois, virou hábito.",
   "imagem": {
     "arquivo": "dia-286.png",
-    "cena": "Painel de carro desenhado do banco do motorista: um sininho de alarme tremendo e soltando ondas de som, o cinto solto e a mão da motorista indo até a fivela; pela janela, uma placa de trânsito em forma de balança de tribunal.",
+    "cena": "Painel de carro visto do banco do motorista: um sininho de alarme treme e solta ondas de som, o cinto está solto e a mão da motorista vai até a fivela. No banco do carona, o Viés segura uma tabela 2x2 em branco como se fosse jornal e cochicha quatro palpites diferentes. Pela janela, uma placa de trânsito em forma de balança de tribunal.",
     "foco": "50% 35%",
-    "alt": "O carro apita até você obedecer. Que aprendizado é esse?"
+    "alt": "O sininho do painel apita e o Viés cochicha palpites no carona"
   },
   "imagem_macete": {
     "arquivo": "dia-286-macete.png",
-    "cena": "Callback: o cinto faz clique, o sininho dorme de touca num travesseirinho e, lá fora, uma placa de seta para cima mostra o comportamento subindo.",
+    "cena": "O cinto faz clique, o sininho dorme de touca num travesseirinho e, lá fora, uma placa de seta para cima mostra o comportamento subindo. No carona, o Viés cochila em cima da tabela 2x2.",
     "foco": "50% 45%",
     "alt": "Reforço negativo: tira o chato, aumenta o comportamento"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Tira o apito, sobe o cinto*: reforço negativo",
-      "apoio": "Na imagem, o sininho do painel toca até o cinto fazer clique. Reforço sempre faz o comportamento subir; negativo é o que sai de cena. Punição não é sinônimo de reforço negativo.",
-      "fala": null
+      "apoio": "O sininho do painel toca até o cinto fazer clique. Reforço sempre faz o comportamento subir; negativo é o que sai de cena (o apito). A mãe que para de reclamar quando a louça aparece lavada usa o mesmo princípio. Punição não é sinônimo de reforço negativo.",
+      "fala": "Se você não randomizou, eu entrei. Se confundiu reforço negativo com punição, também."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "O apito some quando o cinto encaixa: o que é?"
+    "pergunta": "O apito para quando o cinto encaixa e o hábito cresce: o que é isso?"
   },
   "cta": null,
   "reel": null,

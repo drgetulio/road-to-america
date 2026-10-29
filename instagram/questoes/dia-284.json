@@ -8,21 +8,22 @@
   "topico": "Fibrose cística",
   "conceito": "Cystic fibrosis: sweat chloride test confirms the diagnosis",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-13",
   "tom": null,
-  "gancho": "O beijo da família *veio salgado*. Qual exame confirma?",
-  "gancho_apoio": "Mama bem, não ganha peso e a triagem neonatal já acendeu a luz amarela.",
+  "gancho": "A avó beijou o neto e *achou que tinha errado no sal do feijão*",
+  "gancho_apoio": "Mama bem, não ganha peso e a triagem neonatal já acendeu a luz amarela. Qual exame confirma?",
   "imagem": {
     "arquivo": "dia-284.png",
-    "cena": "Garçom do Rodízio de Quinta com quatro espetos que levam objetos de exame em vez de carne (um saleiro, um tubinho de sangue, um tomógrafo em miniatura e uma placa de laboratório) e a plaquinha verde e vermelha ainda de lado, indecisa.",
+    "cena": "Na churrascaria, numa mesa de família, ao lado de um pratinho de bebê com colherzinha, aparece uma marca de beijo de batom em forma de coração com cristais de sal brilhando, e um saleiro tombado de vergonha. O Garçom Espetinho chega com quatro espetos de exame em vez de carne: um potinho de amostra, um cartãozinho com uma gota de sangue, um tomógrafo em miniatura e um adesivo redondo de braço com dois fiozinhos. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "O beijo da família veio salgado. Qual exame confirma?"
+    "alt": "Beijo salgado na mesa e o garçom com quatro espetos de exame"
   },
   "imagem_macete": {
     "arquivo": "dia-284-macete.png",
-    "cena": "Callback: o garçom vira a plaquinha para o lado verde diante do saleiro; gotinhas de suor viram cristais de sal brilhando ao lado, e os outros espetos ficam com o lado vermelho.",
+    "cena": "O garçom vira a plaquinha para o verde diante do espeto do adesivo de braço; ao lado, gotinhas de água viram cristais de sal brilhando numa balancinha que passa de uma marca. Os outros três espetos descansam num suporte com plaquinhas vermelhas.",
     "foco": "50% 45%",
     "alt": "Confirmação da fibrose cística: cloreto no suor"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "Na fibrose cística, *quem dá o veredito é o sal*",
-      "apoio": "Na churrascaria do Rodízio de Quinta, o garçom passa vários espetos, mas só vira a plaquinha para o verde diante do saleiro. Cloreto no suor de 60 ou mais confirma.",
-      "fala": null
+      "apoio": "A triagem com IRT só acende a luz amarela; quem dá o veredito é o cloreto no suor, colhido com pilocarpina no antebraço: 60 mmol/L ou mais confirma. O beijo salgado da avó é a pista clássica. Elastase fecal mostra a insuficiência pancreática, mas não fecha o diagnóstico.",
+      "fala": "Vai uma conduta aí, doutor? O sal desta mesa vem do suor."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pele salgada e triagem alterada: qual exame?"
+    "pergunta": "Pele salgada, fezes gordurosas e IRT alto: qual exame confirma?"
   },
   "cta": null,
   "reel": null,

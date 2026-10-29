@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-11",
   "tom": null,
-  "gancho": "Gol, VAR e polêmica: quem *errou* nesse estudo?",
-  "gancho_apoio": "Um estudo pequeno disse que não; vários estudos grandes disseram que sim. Qual foi o erro?",
+  "gancho": "Gol, VAR e quatro minutos de análise: *quem errou nesse estudo*?",
+  "gancho_apoio": "Um estudo pequeno disse que não; anos depois, vários estudos grandes disseram que sim.",
   "imagem": {
     "arquivo": "dia-251.png",
-    "cena": "Uma bola de futebol parada bem em cima da linha do gol, sem dar para saber se entrou. O Viés, fantasminha de lençol, espia de trás da trave segurando uma lupa, enquanto um telão de estádio, sem nenhuma escrita, mostra uma imagem borrada.",
+    "cena": "Uma bola de futebol parada bem em cima da linha do gol, sem dar para saber se entrou. O Viés, fantasminha de lençol, espia de trás da trave com a lupa, enquanto o placar do estádio é uma tabela 2x2 em branco e o telão mostra só uma imagem borrada, com a rodinha de carregando girando há uma eternidade.",
     "foco": "50% 35%",
-    "alt": "Gol, VAR e polêmica: quem errou nesse estudo?"
+    "alt": "Bola na linha e o Viés espiando atrás da trave"
   },
   "imagem_macete": {
     "arquivo": "dia-251-macete.png",
-    "cena": "Duas cenas lado a lado. À esquerda, o Viés comemora um gol em impedimento que foi validado (erro tipo I). À direita, o mesmo gol com a arquibancada lotada, muitos torcedores apontando a bola dentro da rede e o telão nítido: com mais gente olhando, o gol que entrou não passa despercebido (mais poder).",
+    "cena": "Duas cenas lado a lado. À esquerda, o Viés comemora um gol em impedimento que foi validado. À direita, o mesmo lance com a arquibancada lotada, muitos torcedores apontando a bola dentro da rede e o telão nítido: com mais gente olhando, o gol que entrou não passa batido.",
     "foco": "50% 40%",
-    "alt": "Falso negativo é erro tipo II"
+    "alt": "Arquibancada cheia enxerga o gol: mais poder"
   },
   "questao": {
     "vinheta": "A randomized trial of 60 patients finds no significant difference in monthly migraine days between a new drug and placebo (p = 0.31). Five years later, several large, well-designed trials consistently show that the drug reduces migraine days.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Tipo I *valida gol impedido*; tipo II *anula gol que entrou*",
-      "apoio": "No VAR do Viés, o erro tipo I comemora gol que não existiu (falso positivo, alfa) e o tipo II deixa passar o gol que entrou (falso negativo, beta). Arquibancada cheia é amostra grande: mais gente enxerga o gol, mais poder.",
-      "fala": null
+      "apoio": "No VAR do Viés, o erro tipo I comemora gol que não existiu (falso positivo, alfa) e o tipo II deixa passar o gol que entrou (falso negativo, beta). Estudo de 60 pessoas é arquibancada vazia: com amostra maior, mais gente enxerga o gol verdadeiro. Isso é poder.",
+      "fala": "Se você não randomizou, eu entrei. Se não tinha ninguém olhando, também."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual erro e como evitar?"
+    "pergunta": "Estudo de 60 pessoas deu p = 0,31: qual erro e o que evitaria?"
   },
   "cta": "pre_inscricao",
   "reel": null,

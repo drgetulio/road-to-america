@@ -7,21 +7,21 @@
   "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
   "topico": "Capacidade de decisão",
   "conceito": "Decision-making capacity: task-specific, assessed by the treating physician, not by a court",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-03",
-  "gancho": "Quem apita a *capacidade*: o médico ou o juiz?",
+  "gancho": "Capacidade para recusar intubação: precisa de *juiz, banca ou edital*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um leito de hospital desenhado no meio de um pequeno campo de futebol de várzea. Um apito de juiz está pendurado num gancho ao lado da cama, sem ninguém para pegar. Ao fundo, longe, um prédio de fórum com um martelo de juiz descansando na escadaria.",
+    "cena": "O Viés, de lupa, distribui crachás em branco numa bandeja na porta de um quarto de enfermaria, como quem monta a banca de um concurso público. Lá dentro, um leito vazio e arrumado tem um apito pendurado na grade, esperando dono. Na parede, uma tabela 2x2 em branco.",
     "foco": "50% 35%",
-    "alt": "Quem apita a capacidade: o médico ou o juiz?",
+    "alt": "O Viés distribui crachás em branco na porta de um quarto; lá dentro, um apito espera pendurado na grade de um leito vazio.",
     "arquivo": "dia-062.png"
   },
   "imagem_macete": {
-    "cena": "Callback da várzea: um estetoscópio simpático, com bracinhos, pega o apito do gancho e confere quatro plaquinhas de ícones (balão de fala, lâmpada, espelho e engrenagens). No fórum, o martelo continua dormindo na escada.",
-    "alt": "Capacidade se avalia no leito",
+    "cena": "Callback do quarto: o apito saiu da grade e está no pescoço de um estetoscópio simpático, de bracinhos, que confere quatro plaquinhas de ícones (balão de fala, lâmpada, espelho e engrenagens). A bandeja de crachás do Viés ficou intocada, e ele olha de lado, contrariado.",
+    "alt": "Um estetoscópio de bracinhos usa o apito e confere quatro plaquinhas de ícones; o Viés fica emburrado ao lado da bandeja de crachás.",
     "arquivo": "dia-062-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "D": "Qualquer médico pode avaliar capacidade; a psiquiatria ajuda em casos duvidosos, mas não é obrigatória."
     },
     "macete": {
-      "frase": "Capacidade: *quem está em campo apita*",
+      "frase": "Capacidade *não tem banca*: quem atende, avalia",
       "apoio": "Pegadinha de prova: O NBME coloca um familiar contestando e oferece juiz ou comitê de ética; se o paciente cumpre os quatro critérios, a escolha dele vale e quem avalia é o próprio médico.",
-      "fala": null
+      "fala": "Eu ia chamar o juiz. Ainda bem que ninguém me ouviu."
     }
   },
   "legenda": {
-    "contexto": "Um paciente lúcido recusa a intubação e a filha quer que alguém diga que ele não pode decidir. No Sábado Sem Viés, a pergunta é quem tem o apito.",
+    "contexto": "Um senhor lúcido recusa a intubação, explica os riscos e não muda de ideia há dois dias. A filha quer que alguém diga que ele não pode decidir, e o Viés já está oferecendo atalhos. Quem tem a palavra final sobre a capacidade?",
     "palavras_chave": [
       "refusal of intubation",
       "severe pneumonia",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Quem avalia a capacidade?"
+    "pergunta": "Recusa lúcida de intubação: quem avalia a capacidade dele?"
   },
   "cta": "simulado",
   "exemplo": false

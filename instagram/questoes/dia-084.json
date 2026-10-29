@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Síndrome de Goodpasture (dia 15), Síndrome de DiGeorge (dia 50), Doença do soro (dia 78)",
   "conceito": "Remix: Goodpasture syndrome + DiGeorge syndrome + Serum sickness",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     15,
@@ -15,17 +15,17 @@
     78
   ],
   "explicacao_em": "2027-01-25",
-  "gancho": "Remix de domingo: pasta de dente, fiado ou *time sem zagueiro*?",
+  "gancho": "Tosse com sangue, urina escura e *complemento intacto*: quem passou por aqui?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho com três discos em pé: um com um tubo de pasta de dente no selo, um com um caderninho de fiado e um com um time de botão faltando dois jogadores. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "cena": "Seu Néfron, de óculos na ponta do nariz, confere no cartório dois carimbos borrados de vermelho: um com o desenho de um rim e outro com o desenho de um pulmão. Na mesa, um tubo de pasta de dente, uma fatura de cartão em branco e uma camisa de time sem número. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: pasta de dente, fiado ou time sem zagueiro?",
+    "alt": "Seu Néfron confere dois carimbos borrados, um de rim e um de pulmão; na mesa, um tubo de pasta de dente, uma fatura em branco e uma camisa de time.",
     "arquivo": "dia-084.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco da pasta de dente gira, e no selo uma linha contínua de pasta corre ao longo de um carpete de malha que passa por baixo de uma mesa em forma de rim e de uma mesa em forma de pulmão. Os discos do caderninho e do time ficam guardados na capa.",
-    "alt": "Pulmão e rim no mesmo piso: colágeno tipo IV",
+    "cena": "Callback do cartório: o tubo de pasta de dente desenha uma linha contínua e lisa por um carpete de malha que passa por baixo de uma mesa em forma de rim e de uma mesa em forma de pulmão. A fatura do cartão segue fechada, e a camisa do time fica no varal.",
+    "alt": "O tubo de pasta de dente traça uma linha contínua por um carpete que passa sob uma mesa de rim e uma de pulmão.",
     "arquivo": "dia-084-macete.png"
   },
   "questao": {
@@ -73,11 +73,11 @@
     "macete": {
       "frase": "Fio de *pasta de dente* no *colágeno tipo IV*",
       "apoio": "Pegadinha de prova: O NBME separa as síndromes pulmão-rim pelo exame: anti-GBM com depósito linear, ANCA positivo na vasculite pauci-imune e complemento baixo nas doenças por imunocomplexo.",
-      "fala": null
+      "fala": "Rim e pulmão no mesmo carimbo. Isso é membrana basal, meu filho."
     }
   },
   "legenda": {
-    "contexto": "Três conceitos de imunologia e rim voltam juntos: o anticorpo em fila de pasta de dente, a conta do fiado e o time que perdeu titulares. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Uma semana de hemoptise e urina escura num homem de 23 anos, C3 normal e ANCA negativo. Três conceitos já vistos voltam juntos: a pasta de dente em linha, a fatura que chega depois e o time sem zagueiro. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +95,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mecanismo explica a doença?"
+    "pergunta": "Hemoptise, cilindros hemáticos, C3 normal e ANCA negativo: mecanismo?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-03",
   "tom": null,
-  "gancho": "A bateria da escola *não para de tocar*. Quem sumiu?",
-  "gancho_apoio": "Garfo de jardim, vacina só na infância e espasmo a cada barulho.",
+  "gancho": "Ensaio da escola de samba e a bateria *não para nem com o sol nascendo*",
+  "gancho_apoio": "Garfo de jardim, vacina só na infância e espasmo a cada barulho. Quem sumiu da bateria?",
   "imagem": {
     "arquivo": "dia-274.png",
-    "cena": "Macrô na porta do boteco dos micróbios; lá dentro, bacilos em forma de baqueta (esporo redondo na ponta) cercam uma bateria de escola de samba congelada em pose de batida máxima, com os braços duros; um garfo de jardim encostado na porta.",
+    "cena": "Na quadra de uma escola de samba ao amanhecer, a bateria está congelada em pose de batida máxima, de braços duros, enquanto bacilos em forma de baqueta, com um esporo redondo na ponta, circulam entre os ritmistas. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, tampa os ouvidos. Um garfo de jardim está encostado no muro.",
     "foco": "50% 35%",
-    "alt": "A bateria da escola não para de tocar. Quem sumiu?"
+    "alt": "A bateria da escola de samba não para de tocar ao amanhecer"
   },
   "imagem_macete": {
     "arquivo": "dia-274-macete.png",
-    "cena": "Callback: os bacilos baqueta fogem com o apito do mestre de bateria; o mestre (um neurônio de boné) tenta sinalizar sem apito e a bateria segue tocando sem parar. Num cantinho, outra bateria em silêncio total, com as baquetas no chão, representa o botulismo.",
+    "cena": "Os bacilos baqueta fogem com o apito do mestre de bateria; o mestre, um neurônio de boné, tenta sinalizar sem apito e a bateria segue tocando sem parar. Num cantinho, outra bateria em silêncio total, com as baquetas no chão, representa o botulismo.",
     "foco": "50% 45%",
     "alt": "Sem freio inibitório, o músculo não relaxa"
   },
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Tétano *rouba o apito do mestre de bateria*",
       "apoio": "Na escola de samba, a célula de Renshaw é o mestre que apita para a bateria parar. Sem apito (sem GABA e glicina), ninguém para de tocar: espasmo. Já o botulismo corta o som da bateria inteira: ninguém toca.",
-      "fala": null
+      "fala": "Comi, mostrei, avisei. Mas quem roubou o apito foi ele."
     }
   },
   "legenda": {
@@ -89,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Espasmo sem fim: a toxina bloqueia o quê?"
+    "pergunta": "Garfo de jardim e espasmos com barulho: a toxina bloqueia o quê?"
   },
   "cta": null,
   "reel": null,

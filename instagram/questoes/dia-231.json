@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Translocação robertsoniana (dia 136), Influenza: shift e drift (dia 204), Grupos sanguíneos ABO (dia 225)",
   "conceito": "Remix: Robertsonian translocation + Influenza shift vs drift + ABO compatibility",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     136,
@@ -16,41 +16,39 @@
   ],
   "explicacao_em": "2027-06-21",
   "tom": null,
-  "gancho": "Quatro fichas de revisão e *só uma não mente*",
-  "gancho_apoio": "Translocação robertsoniana, shift e drift e grupos ABO. Qual ficha está certa?",
+  "gancho": "Tipo sanguíneo desconhecido às 2 da manhã: a Capitã precisa de um plasma *diplomata*",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-231.png",
-    "cena": "O toca-discos do Remix de Domingo com três discos: um com dois vagões de trem engatados, um com dois vírus trocando figurinhas e um com carrinhos vermelhos de selos de formas diferentes. Ao lado, quatro fichas de estudo espalhadas sob a luminária.",
+    "cena": "Sala de trauma às 2 da manhã, desenhada como um cruzamento movimentado, com um vinil pequeno num canto. A Capitã Plaqueta apita enquanto carrinhos chegam em alta velocidade. Num carrinho de apoio, quatro garrafinhas de líquido dourado, cada uma com uma tampa de forma diferente: triângulo, quadrado, as duas formas e nenhuma.",
     "foco": "50% 35%",
-    "alt": "Quatro fichas de revisão e só uma não mente"
+    "alt": "Capitã Plaqueta na sala de trauma diante de quatro garrafinhas douradas"
   },
   "imagem_macete": {
     "arquivo": "dia-231-macete.png",
-    "cena": "Callback: a agulha pousa no disco dos carrinhos; dele sai uma bolha de som com uma garrafa de plasma dourado, sem nenhuma estrela-do-mar dentro, sendo recebida em casas de telhados de todas as formas. As outras fichas ficam viradas para baixo.",
+    "cena": "A Capitã escolhe a garrafinha de tampa com as duas formas: dentro dela não há nenhuma estrela-do-mar (sem anti-A e sem anti-B), e ela entra tranquila em casas de telhados de todas as formas. Já a garrafinha de tampa lisa está cheia de estrelas-do-mar agitadas.",
     "foco": "50% 45%",
     "alt": "Plasma AB é o plasma universal"
   },
   "questao": {
-    "vinheta": "The night before an exam, a student reviews four flashcards written in a hurry over the past months. Only one card is completely correct.",
-    "pergunta": "Which card is correct?",
+    "vinheta": "A 25-year-old man arrives in hemorrhagic shock after a motorcycle crash, and the massive transfusion protocol is activated before his blood type is known. He is receiving uncrossmatched group O red cells. The team now needs plasma.",
+    "pergunta": "Plasma from which ABO group is compatible with recipients of any blood type?",
     "alternativas": {
       "A": {
-        "texto": "Balanced Robertsonian carrier: 47 chromosomes and abnormal phenotype",
-        "quiz": "Robertsoniana: 47",
-        "dia": 136
+        "texto": "Group O plasma",
+        "quiz": "Plasma O"
       },
       "B": {
-        "texto": "Antigenic shift: point mutations in hemagglutinin cause yearly epidemics",
-        "quiz": "Shift: mut. pontual",
-        "dia": 204
+        "texto": "Group A plasma",
+        "quiz": "Plasma A"
       },
       "C": {
-        "texto": "Most trisomy 21 arises from paternal meiosis II nondisjunction",
-        "quiz": "T21: meiose II pai"
+        "texto": "Group B plasma",
+        "quiz": "Plasma B"
       },
       "D": {
-        "texto": "Group AB plasma can be given to patients of any ABO group",
-        "quiz": "Plasma AB: universal",
+        "texto": "Group AB plasma",
+        "quiz": "Plasma AB",
         "dia": 225
       }
     },
@@ -59,27 +57,27 @@
   "explicacao": {
     "titulo": "Plasma AB é o *plasma universal*",
     "certa": [
-      "Dia 225: o plasma do grupo *AB* não tem anti-A nem anti-B, então pode ir para receptor de qualquer grupo ABO; é o *universal plasma donor*. Para hemácias a lógica se inverte: a hemácia *O*, sem antígeno A ou B, é a doadora universal. Quem tem o antígeno não tem o anticorpo, e vice-versa."
+      "Dia 225: o plasma do grupo *AB* não tem anti-A nem anti-B, então não ataca hemácia de nenhum grupo: é o *universal plasma donor*. Na hemácia a lógica se inverte, e a *O* (sem antígeno A ou B) é a doadora universal. Quem tem o antígeno na hemácia não tem o anticorpo no plasma."
     ],
     "termos": [
       "universal plasma donor (AB)",
       "universal red cell donor (O)",
-      "antigenic shift vs drift",
-      "Robertsonian translocation"
+      "anti-A and anti-B IgM",
+      "massive transfusion"
     ],
     "erradas": {
-      "A": "Dia 136: o portador equilibrado de translocação robertsoniana tem 45 cromossomos e fenótipo normal; o risco aparece nos filhos.",
-      "B": "Dia 204: mutação pontual na hemaglutinina é o antigenic drift, das epidemias anuais; o shift é a troca de segmentos entre vírus e causa pandemias.",
-      "C": "A maioria das trissomias do 21 vem de não disjunção na meiose I materna, e o risco sobe com a idade materna."
+      "A": "O plasma do grupo O tem anti-A e anti-B e atacaria as hemácias de quem é A, B ou AB. O grupo O é o doador universal de hemácias, não de plasma.",
+      "B": "Plasma A tem anti-B e só serve para receptores A e O. Alguns centros de trauma usam plasma A com título baixo de anti-B quando falta AB, mas ele não é compatível com todos os grupos.",
+      "C": "Plasma B tem anti-A e só serve para receptores B e O."
     },
     "macete": {
-      "frase": "*Antígeno no carro, anticorpo no plasma*: quem tem um não tem o outro",
-      "apoio": "No toca-discos, o disco do dia 225 toca o refrão da Capitã Plaqueta: carro sem selo (O) passa em todo bairro, e plasma sem estrela-do-mar (AB) entra em qualquer casa. O disco do dia 136 lembra o engate dos vagões, e o do dia 204, a troca de figurinhas entre vírus.",
-      "fala": null
+      "frase": "*Antígeno no carro, anticorpo no plasma*: quem tem um não tem o outro. Hemácia O passa em todo bairro; *plasma AB* entra em toda casa.",
+      "apoio": "Bônus de domingo: o portador equilibrado de translocação robertsoniana tem 45 cromossomos e fenótipo normal (dia 136); shift é troca de segmentos e pandemia, drift é mutação pontual e vacina anual (dia 204). O NBME inverte doador universal de hemácia (O) e de plasma (AB).",
+      "fala": "Parou, colou... plasma AB pode entrar em qualquer bairro."
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com quatro fichas escritas às pressas. Três conceitos já vistos (dias 136, 204 e 225) e um intruso. Só uma ficha está certa.",
+    "contexto": "Domingo de Remix com a Capitã Plaqueta. Hoje o caso é de ABO (dia 225): trauma grave, transfusão maciça e tipo sanguíneo ainda desconhecido. A translocação robertsoniana (dia 136) e o shift e drift (dia 204) voltam no macete.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +95,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Qual destas fichas de revisão está certa?"
+    "pergunta": "Tipo desconhecido no trauma: qual plasma serve a todos?"
   },
   "cta": null,
   "reel": null,

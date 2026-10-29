@@ -16,17 +16,17 @@
   ],
   "explicacao_em": "2027-08-30",
   "tom": null,
-  "gancho": "Três discos no toca-discos: *qual toxina estragou o churrasco?*",
-  "gancho_apoio": "Remix com EHEC, superantígenos e viridans. Um dos discos é intruso.",
+  "gancho": "Hambúrguer mal passado no churrasco da família e *o rim pagou a conta*",
+  "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual mecanismo explica o sangue nas fezes e depois o rim?",
   "imagem": {
     "arquivo": "dia-301.png",
-    "cena": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
+    "cena": "Churrasco de domingo no quintal: Macrô, de avental sobre o guardanapo xadrez, vira os hambúrgueres na churrasqueira de tijolo e para, desconfiado, diante de um ainda rosado por dentro. Na mesa estão três convidados que ele conhece de outros carnavais (um bacilinho de chapéu de palha, um grampeador de óculos escuros e um potinho de calda dourada) e um penetra segurando um interruptor de luz. Na parede, um vinil pequeno.",
     "foco": "50% 35%",
-    "alt": "Três discos no toca-discos: qual toxina estragou o churrasco?"
+    "alt": "Macrô no churrasco desconfia de um hambúrguer rosado"
   },
   "imagem_macete": {
     "arquivo": "dia-301-macete.png",
-    "cena": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
+    "cena": "O bacilinho de chapéu de palha dá um passo à frente e uma tesourinha vermelha sai do chapéu dele, cortando ao meio uma pequena fábrica redonda de duas partes; ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O grampeador, o potinho e o penetra voltam para a mesa, e Macrô aponta a espátula para o bacilinho: caso resolvido.",
     "foco": "50% 45%",
     "alt": "Shiga-like toxin: tesoura no 60S, conta no rim"
   },
@@ -74,12 +74,12 @@
     },
     "macete": {
       "frase": "*Hambúrguer mal passado, tesoura no 60S e rim no carimbo*: é a EHEC",
-      "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
-      "fala": null
+      "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio (o 60S). Quem paga a conta é o glomérulo, que entope de microtrombos. O grampeador é o superantígeno, a calda é a dextrana do viridans e o interruptor é o cAMP da cólera.",
+      "fala": "Comi, mostrei, avisei. Hambúrguer bem passado, eu também aviso."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com E. coli êntero-hemorrágica (dia 232), superantígenos (dia 267) e estreptococos do grupo viridans (dia 295), mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual disco explica o quadro?",
+    "contexto": "Domingo de revisão com os dias 232, 267 e 295, mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual mecanismo explica o quadro?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +95,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Diarreia com sangue e depois HUS: qual?"
+    "pergunta": "Diarreia com sangue e, dias depois, anemia e rim parando: qual mecanismo?"
   },
   "cta": null,
   "reel": null,

@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Cetoacidose diabética (dia 37), AVC isquêmico agudo (dia 65)",
   "conceito": "Remix: STEMI + DKA + Acute stroke",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": null,
   "remix_de": [
     2,
@@ -15,17 +15,17 @@
     65
   ],
   "explicacao_em": "2027-01-11",
-  "gancho": "Remix de domingo: coração, cérebro ou *fruteira*?",
+  "gancho": "Glicose 520 e *potássio 3,0*: o portão da célula abre agora?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho com três discos em pé: um com um coração, um com um cérebro e um com uma fruteira de bananas no selo. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "cena": "Mito, de jaleco amassado e café na mão, está diante do portão fechado de uma célula desenhada como um shopping em dia de liquidação, segurando uma chave dourada. Na calçada, só uma filinha curta de bolinhas de potássio espera, aflita. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: coração, cérebro ou fruteira?",
+    "alt": "Mito, com uma chave dourada, diante do portão fechado de uma célula-shopping; só uma filinha curta de bolinhas de potássio espera na calçada.",
     "arquivo": "dia-070.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco da fruteira gira, e no selo o Mito enche a fruteira de bananas antes de girar uma chave dourada na porta da célula. Os discos do coração e do cérebro ficam guardados na capa, e a chave sozinha espera a vez.",
-    "alt": "Primeiro a banana, depois a chave",
+    "cena": "Callback do shopping: antes de girar a chave, o Mito descarrega um caminhão de bananas na calçada até a fila de potássio ficar comprida. Só então a chave dourada abre o portão, e um coraçãozinho, que vigiava do estacionamento, relaxa.",
+    "alt": "Mito descarrega bananas até a fila de potássio crescer e só depois abre o portão com a chave dourada; um coraçãozinho relaxa.",
     "arquivo": "dia-070-macete.png"
   },
   "questao": {
@@ -71,13 +71,13 @@
       "C": "Intruso: insulina agora, com K de 3,0, joga o potássio para dentro da célula e pode causar arritmia grave."
     },
     "macete": {
-      "frase": "Água, *banana*, depois *a chave*",
+      "frase": "*Banana antes da chave*: K acima de 3,3 antes da insulina",
       "apoio": "Pegadinha de prova: O NBME deixa o potássio \"normal ou baixo\" escondido no meio dos exames da cetoacidose; abaixo do limiar, a insulina espera.",
-      "fala": null
+      "fala": "Abaixo de 3,3, nem eu abro o portão."
     }
   },
   "legenda": {
-    "contexto": "Três conceitos do Step 2 CK voltam no mesmo plantão: infarto, cetoacidose e AVC. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Vômitos, dor abdominal, glicose de 520, pH 7,12 e potássio de 3,0 numa jovem com diabetes tipo 1, com o soro já correndo. Infarto, cetoacidose e AVC já passaram por aqui, mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +95,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "CAD com K 3,0 e soro correndo: qual é a próxima medida?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

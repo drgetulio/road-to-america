@@ -7,7 +7,7 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Confidencialidade do adolescente",
   "conceito": "Adolescent STI testing and treatment: confidential, no parental consent needed",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": "Dia dos Namorados (12/6).",
   "remix_de": null,
   "explicacao_em": "2027-06-13",
@@ -16,13 +16,13 @@
   "gancho_apoio": "Uma adolescente, um teste positivo e um pedido de sigilo. Qual é a conduta?",
   "imagem": {
     "arquivo": "dia-223.png",
-    "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, e na ponta da ponte a porta de um consultório com um estetoscópio pendurado na maçaneta. Clima leve e respeitoso.",
+    "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, termina na porta de um consultório com um estetoscópio na maçaneta. O Viés espia de trás de uma tabelinha 2x2 presa no corrimão, segurando um envelope de correio elegante de festa junina.",
     "foco": "50% 35%",
-    "alt": "Dia dos Namorados no consultório: quem fica sabendo?"
+    "alt": "O Viés espia de trás de uma tabelinha na ponte dos cadeados que leva a um consultório"
   },
   "imagem_macete": {
     "arquivo": "dia-223-macete.png",
-    "cena": "Callback: a porta do consultório agora está fechada por um cadeado em forma de coração. Por baixo da porta saem uma receita dobrada e um envelope lacrado, e um telefone fixo antigo, numa mesinha ao lado, continua quieto.",
+    "cena": "Callback: a porta do consultório agora está fechada por um cadeado em forma de coração. Por baixo da porta saem uma receita dobrada e um envelope lacrado, e um telefone fixo antigo, numa mesinha ao lado, continua quieto. O Viés fecha a própria boca com um zíper.",
     "foco": "50% 45%",
     "alt": "IST na adolescência: trata e guarda o sigilo"
   },
@@ -66,9 +66,9 @@
       "D": "Relação consensual com parceiro da mesma idade não indica abuso; a notificação entra quando há coerção, diferença de idade prevista em lei ou suspeita de abuso."
     },
     "macete": {
-      "frase": "*Cadeado do sigilo* no consultório: IST se trata sem chamar os pais",
+      "frase": "*Cadeado do sigilo* no consultório: IST na adolescência se testa e se trata *sem chamar os pais*. É correio elegante: só o destinatário fica sabendo.",
       "apoio": "Na imagem, a ponte dos cadeados do Dia dos Namorados termina num consultório com um cadeado em forma de coração na porta. O telefone de casa fica quieto, e a receita sai por baixo da porta.",
-      "fala": null
+      "fala": "Se você não randomizou, eu entrei. Mas nesse prontuário nem eu entro."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IST aos 16 anos e pedido de sigilo: e agora?"
+    "pergunta": "Clamídia aos 16 e pedido de sigilo: o que fazer?"
   },
   "cta": null,
   "reel": null,

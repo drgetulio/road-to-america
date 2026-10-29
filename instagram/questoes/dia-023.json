@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-25",
   "tom": null,
-  "gancho": "Seu Néfron em modo *economia*: nada sai sem carimbo",
+  "gancho": "Crise hídrica na repartição: Seu Néfron não deixa sair nem uma *gota*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-023.png",
-    "cena": "Seu Néfron, no balcão da repartição em plena seca, com um cacto empoeirado na prateleira e o galão de água quase vazio. Uma fila de gotinhas de água e cristais de sal espera na porta de saída com senha na mão, e ele ergue o carimbo por cima dos óculos.",
+    "cena": "Seu Néfron, de gravata e carimbo, está em cima de uma caixa-d'água de bairro quase vazia, num sol de rachar, com um cacto empoeirado ao lado. Lá embaixo, uma fila de gotinhas e de cristais de sal espera com senha na mão diante de uma torneira fechada com cadeado. Na parede da casinha ao lado, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron em modo economia: nada sai sem carimbo"
+    "alt": "Crise hídrica na repartição: Seu Néfron não deixa sair nem uma gota"
   },
   "imagem_macete": {
     "arquivo": "dia-023-macete.png",
-    "cena": "Callback da repartição: Seu Néfron carimba de verde cada gotinha e cada cristal de sal, e todos voltam marchando por uma porta de retorno. Só um fiozinho sai pela porta de saída, e um personagem cinza (a ureia) volta de mãos dadas com uma gotinha de água.",
+    "cena": "Callback da caixa-d'água: Seu Néfron carimba de verde cada gotinha e cada cristal de sal, e todos voltam marchando por um cano de retorno para a caixa. Só um fiozinho sai pela torneira, e um personagem cinza (a ureia) volta de mãos dadas com uma gotinha de água.",
     "alt": "Em crise hídrica, tudo é reabsorvido"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A obstrução pós-renal mostra hidronefrose no ultrassom e costuma ter história de próstata aumentada ou bexiga cheia."
     },
     "macete": {
-      "frase": "Seu Néfron em crise hídrica carimba tudo como REABSORVIDO: o sódio não sai (FENa abaixo de 1%) e a ureia volta junto com a água (BUN/creatinina acima de 20).",
+      "frase": "Em crise hídrica, Seu Néfron carimba tudo como *REABSORVIDO*: o sódio não sai (FENa abaixo de 1%) e a ureia volta de carona com a água.",
       "apoio": "Pegadinha de prova: O NBME coloca diurético na história para estragar a FENa; nesse caso, use a fração de excreção de ureia (abaixo de 35% sugere pré-renal).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça com Seu Néfron: creatinina subindo depois de vômitos e diarreia. Os números da urina contam a história.",
+    "contexto": "Plantão de Terça com Seu Néfron: creatinina subindo depois de três dias de vômito e diarreia. Sódio urinário de 9, FENa de 0,4% e um sedimento quase sem nada. Os números contam a história.",
     "palavras_chave": [
       "vomiting and diarrhea",
       "orthostatic hypotension",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "FENa 0,4% e cilindro hialino: qual diagnóstico?"
+    "pergunta": "Vômito, diarreia, FENa de 0,4% e cilindro hialino: qual diagnóstico?"
   },
   "exemplo": false
 }

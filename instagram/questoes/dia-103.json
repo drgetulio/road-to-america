@@ -7,18 +7,18 @@
   "sistema": "Gestação, parto e puerpério",
   "topico": "Pré-eclâmpsia com sinais de gravidade",
   "conceito": "Preeclampsia with severe features: magnesium sulfate, calcium gluconate for toxicity",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-13",
   "tom": null,
   "gancho": "O porteiro da convulsão *cochilou*: quem acorda ele?",
-  "gancho_apoio": "Sulfato de magnésio na pré-eclâmpsia grave. Sem reflexo e respirando devagar. Qual é o remédio?",
+  "gancho_apoio": "Sulfato de magnésio, diurese caindo, reflexo sumindo e respiração lenta.",
   "imagem": {
     "arquivo": "dia-103.png",
-    "cena": "Numa farmácia de interior à noite, um porteiro grandão em forma de pedra prateada cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado, e no balcão um pequeno cata-vento que quase não gira.",
+    "cena": "Numa farmácia de interior à noite, a Tia Meia-Vida observa por cima dos óculos um porteiro grandão em forma de pedra prateada que cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado, e no balcão um cata-vento que quase não gira.",
     "foco": "50% 35%",
-    "alt": "Porteiro de pedra prateada cochilando na farmácia, com um martelinho de reflexo parado no chão."
+    "alt": "Tia Meia-Vida observa um porteiro de pedra prateada cochilando na porta da farmácia; um martelinho de reflexo parado no chão."
   },
   "imagem_macete": {
     "arquivo": "dia-103-macete.png",
@@ -32,11 +32,11 @@
     "alternativas": {
       "A": {
         "texto": "Calcium gluconate",
-        "quiz": "Gluconato de cálcio"
+        "quiz": "Calcium gluconate"
       },
       "B": {
         "texto": "Naloxone",
-        "quiz": "Naloxona"
+        "quiz": "Naloxone"
       },
       "C": {
         "texto": "Flumazenil",
@@ -44,7 +44,7 @@
       },
       "D": {
         "texto": "Physostigmine",
-        "quiz": "Fisostigmina"
+        "quiz": "Physostigmine"
       }
     },
     "correta": "A"
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "*Joelho, pulmão, coração*: o cálcio acorda o porteiro",
       "apoio": "Na imagem, o porteiro de pedra cochila e o martelinho de reflexo está parado no chão.",
-      "fala": null
+      "fala": "Com o rim parado, o magnésio não vai embora nem em cinco meias-vidas."
     }
   },
   "legenda": {
-    "contexto": "Sextou na farmácia, obstetrícia: gestante de 35 semanas no sulfato de magnésio, diurese caindo e reflexo sumindo.",
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida: gestante de 35 semanas no sulfato de magnésio, diurese caindo, reflexo sumindo e respiração em 8 por minuto. A infusão já foi suspensa. Qual remédio acorda o porteiro?",
     "palavras_chave": [
       "35 weeks",
       "drowsiness",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem reflexo e FR 8 no magnésio: antídoto?"
+    "pergunta": "Sem reflexo e FR 8 no sulfato de magnésio: qual antídoto?"
   },
   "cta": null,
   "reel": null,

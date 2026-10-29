@@ -8,20 +8,21 @@
   "topico": "AVC isquêmico agudo",
   "conceito": "Acute stroke: noncontrast head CT first to exclude hemorrhage",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-06",
-  "gancho": "Fala enrolada, braço fraco e *o relógio correndo*: qual saída?",
+  "gancho": "Tempo é cérebro. Mas você manda *Pix sem conferir a chave*?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um anel de tomógrafo, um desentupidor de pia e um comprimido. Um carrinho em forma de cérebro freia no entroncamento, com um cano de água sobre o capô, sem dar para ver se está entupido ou furado.",
+    "cena": "Sala de emergência à noite. Dona Térmica, a garrafa de café do plantão, segura um celular gigante com o botão verde de enviar pulsando, o dedo parado em cima. Ao lado, um cérebro simpático em forma de cofrinho rói as unhas. Na parede, o relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Fala enrolada, braço fraco e o relógio correndo: qual saída?",
+    "alt": "Dona Térmica hesita com o dedo sobre o botão de enviar de um celular gigante; um cérebro em forma de cofrinho rói as unhas ao lado.",
     "arquivo": "dia-065.png"
   },
   "imagem_macete": {
-    "cena": "Callback da rodovia: o carrinho-cérebro entra primeiro na saída do anel de tomógrafo, que acende uma lanterna e mostra o cano por dentro, entupido e sem vazamento. Só então o desentupidor, na caixa de ferramentas, ganha luz verde.",
-    "alt": "Primeiro a tomografia sem contraste",
+    "cena": "Callback: antes de apertar enviar, Dona Térmica passa o cérebro-cofrinho por um anel de tomógrafo com uma lanterna dentro, que mostra um cano entupido e sem vazamento. Só então o botão verde do celular libera o desentupidor.",
+    "alt": "Dona Térmica passa o cérebro-cofrinho por um anel de tomógrafo que mostra o cano entupido, e só então o botão verde libera o desentupidor.",
     "arquivo": "dia-065-macete.png"
   },
   "questao": {
@@ -64,13 +65,13 @@
       "D": "Aspirina antes de excluir hemorragia é erro, e quem vai receber trombolítico espera 24 horas para o antiagregante."
     },
     "macete": {
-      "frase": "Antes do desentupidor, *a lanterna*",
+      "frase": "Trombolisar sem TC é *Pix sem conferir a chave*",
       "apoio": "Pegadinha de prova: O NBME dá um AVC dentro da janela e oferece o trombolítico como isca; sem imagem, nada de trombólise, e a glicemia capilar vem antes de tudo.",
-      "fala": null
+      "fala": "Às 3 da manhã eu confiro a chave até do café."
     }
   },
   "legenda": {
-    "contexto": "Fraqueza súbita no braço e na face, fala travada e o relógio correndo. No Plantão de Terça, três saídas na estrada e só uma vem primeiro.",
+    "contexto": "Fraqueza súbita na face e no braço, fala travada, 50 minutos do início e todo mundo olhando para o relógio. Dona Térmica já viu esse filme às 3 da manhã: qual é o primeiro movimento?",
     "palavras_chave": [
       "sudden hemiparesis",
       "aphasia",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "Déficit focal há 50 minutos: o que vem antes de qualquer remédio?"
   },
   "cta": "simulado",
   "exemplo": false

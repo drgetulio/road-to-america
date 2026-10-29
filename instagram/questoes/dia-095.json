@@ -8,6 +8,7 @@
   "topico": "Nódulo mamário em mulher jovem",
   "conceito": "Palpable breast mass in a woman under 30: ultrasound first",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Dia Mundial do Câncer (4/2).",
   "remix_de": null,
   "explicacao_em": "2027-02-05",
@@ -16,9 +17,9 @@
   "gancho_apoio": "Dia Mundial do Câncer. A maioria dos nódulos em mulheres jovens é benigna, e todo nódulo merece avaliação.",
   "imagem": {
     "arquivo": "dia-095.png",
-    "cena": "Um garçom de rodízio, sereno, segura uma bandeja com três cúpulas fechadas, e a plaquinha verde e vermelha está em pé na mesa. Ao fundo, uma estrada calma com uma placa de distância em branco e uma leve neblina.",
+    "cena": "Garçom Espetinho, sereno, segura uma bandeja com três cúpulas fechadas, e a plaquinha verde e vermelha está em pé na mesa. Ao fundo, uma estrada calma com uma placa de distância em branco e uma leve neblina da manhã.",
     "foco": "50% 35%",
-    "alt": "Garçom de rodízio com três cúpulas fechadas; ao fundo, uma estrada com neblina leve."
+    "alt": "Garçom Espetinho, sereno, com uma bandeja de três cúpulas fechadas; ao fundo, uma estrada com neblina leve."
   },
   "imagem_macete": {
     "arquivo": "dia-095-macete.png",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Diagnostic mammography",
-        "quiz": "Mamografia"
+        "quiz": "Diagnostic mammography"
       },
       "B": {
         "texto": "Breast ultrasonography",
-        "quiz": "Ultrassom de mama"
+        "quiz": "Breast ultrasound"
       },
       "C": {
         "texto": "Core needle biopsy",
-        "quiz": "Biópsia por agulha"
+        "quiz": "Core needle biopsy"
       },
       "D": {
         "texto": "Reexamination in 1 year",
-        "quiz": "Reexame em 1 ano"
+        "quiz": "Reexamine in 1 year"
       }
     },
     "correta": "B"
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "Menos de 30: o *som* atravessa a neblina",
       "apoio": "Na imagem, a onda sonora atravessa a neblina e mostra o caminho com calma.",
-      "fala": null
+      "fala": "Hoje o espeto é informação: abaixo dos 30, o som vem primeiro."
     }
   },
   "legenda": {

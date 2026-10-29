@@ -12,8 +12,8 @@
   "remix_de": null,
   "explicacao_em": "2027-02-20",
   "tom": null,
-  "gancho": "Tia Meia-Vida desligou a *faxineira* e a poeira tomou conta",
-  "gancho_apoio": "Remédio novo para pressão, tosse seca há dois meses e lábios inchados hoje. O que acumulou?",
+  "gancho": "Tia Meia-Vida desligou o *robô aspirador* e a casa começou a tossir",
+  "gancho_apoio": "Remédio novo para pressão, tosse seca há dois meses e lábios inchados hoje.",
   "imagem": {
     "arquivo": "dia-110.png",
     "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, olha intrigada para uma vassoura robô desligada no canto. Bolinhas fofas de poeira se acumulam pelo chão e algumas sobem até um sininho de vento pendurado na porta, que não para de tocar.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Angiotensin II",
-        "quiz": "Angiotensina II"
+        "quiz": "Angiotensin II"
       },
       "B": {
         "texto": "Bradykinin",
-        "quiz": "Bradicinina"
+        "quiz": "Bradykinin"
       },
       "C": {
         "texto": "Histamine",
-        "quiz": "Histamina"
+        "quiz": "Histamine"
       },
       "D": {
         "texto": "Leukotriene D4",
-        "quiz": "Leucotrieno D4"
+        "quiz": "Leukotriene D4"
       }
     },
     "correta": "B"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Desligou a *faxineira* ECA: a poeira de bradicinina se acumula",
       "apoio": "Na imagem, a Tia Meia-Vida olha a vassoura robô desligada e a poeira que faz o sininho tocar.",
-      "fala": null
+      "fala": "Desliguei o robô para economizar pressão. A poeira cobrou com juros."
     }
   },
   "legenda": {

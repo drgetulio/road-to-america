@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-14",
   "tom": null,
-  "gancho": "A Tia Meia-Vida avisa: *esse remédio visita a família toda*",
-  "gancho_apoio": "Antiarrítmico de meia-vida longa e uma pergunta justa: por que tantos exames?",
+  "gancho": "Amiodarona é aquela parente que *chega para um café e fica três meses*",
+  "gancho_apoio": "Meia-vida de semanas e uma pergunta justa do paciente: por que tantos exames?",
   "imagem": {
     "arquivo": "dia-285.png",
-    "cena": "Tia Meia-Vida atrás do balcão ao lado de uma ampulheta enorme em que a areia quase não escorre, um frasco de comprimidos em forma de coração e um calendário de folhas que nunca acabam; quatro sacolas de exames fechadas sobre o balcão.",
+    "cena": "Na rodoviária de uma cidade do interior, a Tia Meia-Vida, de óculos vermelhos, recebe um frasco de comprimidos em forma de coração que arrasta uma mala gigante, coberta de adesivos de viagem em branco, com cara de quem veio para ficar. A areia da ampulheta dela quase não escorre. Quatro sacolinhas de papel fechadas esperam no banco ao lado.",
     "foco": "50% 35%",
-    "alt": "A Tia Meia-Vida avisa: esse remédio visita a família toda"
+    "alt": "O frasco de amiodarona chega na rodoviária com uma mala gigante"
   },
   "imagem_macete": {
     "arquivo": "dia-285-macete.png",
-    "cena": "Callback: a Tia Meia-Vida sai do balcão com três cestas de visita para três casinhas, uma em forma de borboleta (tireoide), uma em forma de pulmões e uma em forma de fígado; uma estrela-do-mar (o iodo do mar) vai numa das cestas e outra leva um lenço azul-acinzentado e um par de óculos (pele e córnea).",
+    "cena": "A Tia Meia-Vida sai com três cestas de visita para três casinhas: uma em forma de borboleta, uma em forma de pulmões e uma em forma de fígado. Uma estrela-do-mar vai numa das cestas, e outra leva um lenço azul-acinzentado e um par de óculos. A ampulheta gigante continua quase parada ao fundo.",
     "foco": "50% 45%",
     "alt": "Amiodarona: tireoide, pulmão e fígado no radar"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Amiodarona é *tia de novela*: mexe com a *tireoide*, o *pulmão* e o *fígado*",
-      "apoio": "Na imagem, a ampulheta da Tia Meia-Vida quase não escorre (meia-vida de semanas) e ela sai com três cestas de visita: tireoide em forma de borboleta, pulmões e fígado. Pele azul-acinzentada e depósitos na córnea completam a fofoca.",
-      "fala": null
+      "apoio": "A amiodarona chega para um café e fica meses (meia-vida de semanas) e visita a família toda: tireoide (iodo, a estrela-do-mar), pulmão (fibrose) e fígado. Por isso TSH, enzimas hepáticas e prova de função pulmonar no começo e no seguimento. Pele azul-acinzentada e depósitos na córnea completam a fofoca.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da amiodarona, só daqui a meses."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Amiodarona: o que monitorar?"
+    "pergunta": "Amiodarona para taquicardia ventricular: quais exames monitorar?"
   },
   "cta": null,
   "reel": null,

@@ -8,19 +8,20 @@
   "topico": "Taquicardia instável",
   "conceito": "Unstable tachyarrhythmia with a pulse: synchronized cardioversion",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-30",
-  "gancho": "Coração a 180, pressão no chão: qual é a jogada agora?",
+  "gancho": "Coração a 180, pressão de 74 e o pulso ainda batendo: quem *rege* a bateria?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma bateria de escola de samba desenhada com instrumentos personificados; um coração vermelho toca o tamborim rápido demais e um surdo grande com um raio desenhado espera, sem saber quando bater.",
+    "cena": "Uma bateria de escola de samba com instrumentos personificados; um coração vermelho toca o tamborim rápido demais. Dona Térmica, de estetoscópio no pescoço e olhos de sono, está na frente da bateria como mestre, segurando o apito, e um surdo grande com um raio desenhado espera, sem saber quando bater. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Uma bateria de escola de samba desenhada com instrumentos personificados; um coração vermelho toca o tamborim rápido demais e um surdo grande com um raio desenhado espera, sem saber quando bater.",
+    "alt": "Coração a 180, pressão de 74 e o pulso ainda batendo: quem rege a bateria?",
     "arquivo": "dia-058.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o raio do surdo cai exatamente sobre a marca do tempo forte de uma pauta desenhada como um traçado de ECG, e um contratempo logo depois fica marcado com um sinal vermelho de proibido; o coração volta a tocar no ritmo.",
+    "cena": "Callback: Dona Térmica levanta a mão, e o raio do surdo cai exatamente sobre a marca do tempo forte de uma pauta desenhada como um traçado de ECG; um contratempo logo depois fica marcado com um sinal vermelho de proibido, e o coração volta a tocar no ritmo.",
     "alt": "Instável com pulso: choque sincronizado",
     "arquivo": "dia-058-macete.png"
   },
@@ -64,13 +65,13 @@
       "D": "Adenosina só se considera em taquicardia regular estável, e não substitui o choque no paciente instável."
     },
     "macete": {
-      "frase": "Instável com pulso: choque *no tempo do surdo*",
+      "frase": "Instável *com* pulso: o raio entra no tempo do surdo, sincronizado no QRS. *Sem* pulso, desfibrila sem esperar o compasso.",
       "apoio": "Pegadinha de prova: O NBME dá o pulso palpável no meio da vinheta; quem não lê marca desfibrilação, e quem não vê a instabilidade marca amiodarona.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Taquicardia regular de complexo largo, confusão, sudorese e pressão de 74 por 40, com pulso presente. Não é hora de pensar muito, mas é hora de acertar o ritmo.",
+    "contexto": "Taquicardia regular de complexo largo, confusão, sudorese e pressão de 74 por 40, com pulso presente. A Dona Térmica já viu esse caso às 3 da manhã, e não é hora de pensar muito.",
     "palavras_chave": [
       "palpitations",
       "hypotension",
@@ -88,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é a conduta agora?"
+    "pergunta": "Taquicardia de QRS largo a 180 com PA 74/40 e pulso: qual conduta?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-12",
-  "gancho": "Fábrica de linfócitos parada: *T, B e NK* de braços cruzados",
+  "gancho": "*Greve da coleta de lixo* na fábrica de linfócitos: quem parou?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Ao lado do boteco dos micróbios, o Macrô olha uma pequena fábrica de linfócitos com a chaminé parada. Um caminhão de lixo está quebrado na porta, com o capô aberto, e alguns sacos começam a se acumular. Não dá para ver qual máquina parou lá dentro.",
+    "cena": "Macrô, de comanda no bolso, para numa rua onde sacos de lixo se empilham na calçada de uma pequena fábrica de linfócitos de chaminé parada. Um caminhão de lixo está estacionado, de capô aberto, com uma placa de greve em branco encostada nele. As janelas da fábrica estão escuras.",
     "foco": "50% 35%",
-    "alt": "Fábrica de linfócitos parada: T, B e NK de braços cruzados",
+    "alt": "Sacos de lixo se empilham na calçada de uma fábrica de linfócitos parada; o caminhão de lixo está de capô aberto, com uma placa de greve em branco.",
     "arquivo": "dia-071.png"
   },
   "imagem_macete": {
@@ -64,13 +64,13 @@
       "D": "O defeito da NADPH oxidase é a doença granulomatosa crônica, um problema de fagócito, sem linfopenia."
     },
     "macete": {
-      "frase": "ADA quebrou: *dATP entope* a fábrica de DNA",
+      "frase": "ADA em greve: o *lixo dATP* trava a fábrica de DNA",
       "apoio": "Pegadinha de prova: O NBME diferencia as SCID pelo perfil: ADA derruba T, B e NK; a cadeia gama ligada ao X poupa o número de B. O tratamento inclui reposição enzimática, transplante de medula e terapia gênica.",
-      "fala": null
+      "fala": "Eu como de tudo, mas lixo de dATP nem eu dou conta."
     }
   },
   "legenda": {
-    "contexto": "Sapinho que não sai, diarreia, pneumocistose aos 5 meses e um timo que não aparece no raio X. Falta uma enzima de limpeza, e o Macrô quer saber o que o lixo travou.",
+    "contexto": "Sapinho que não sai, diarreia, pneumocistose aos 5 meses e um timo que não aparece no raio X. Falta uma enzima de limpeza, e o Macrô quer saber o que o lixo acumulado travou lá dentro.",
     "palavras_chave": [
       "oral thrush",
       "chronic diarrhea",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "O que causa a linfopenia?"
+    "pergunta": "ADA ausente com T, B e NK baixos: o que trava os linfócitos?"
   },
   "cta": "simulado",
   "exemplo": false

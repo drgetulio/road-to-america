@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Hemorragia subaracnoide (dia 191), Cólica renal (dia 240), Emergência hipertensiva (dia 254)",
   "conceito": "Remix: Thunderclap headache + Suspected kidney stone + Hypertensive emergency",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     191,
@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-07-19",
   "tom": null,
-  "gancho": "Remix: trovoada, freada e *pedrinha* no mesmo plantão",
-  "gancho_apoio": "Três condutas de dias passados (191, 240 e 254) e um intruso. Qual cartão está certo?",
+  "gancho": "Internada pela pedrinha no rim, ela *fez força no banheiro* e tudo mudou",
+  "gancho_apoio": "Cólica renal, pressão alta e uma dor de cabeça que chegou ao máximo em 1 minuto. Qual é o próximo passo?",
   "imagem": {
     "arquivo": "dia-259.png",
-    "cena": "Toca-discos navy e vermelho com três discos coloridos e um disco intruso torto. Em volta, como plateia, uma pequena nuvem de trovão, um carrinho com o freio de mão puxado e uma pedrinha com cara de teimosa.",
+    "cena": "No leito do pronto-socorro, Seu Néfron, de gravata e óculos na ponta do nariz, preenche a papelada de alta de uma pedrinha teimosa quando, de repente, cai um raio de desenho bem em cima da sala e uma nuvem de trovão aparece no teto. Ele congela com o carimbo no ar. Na mesinha, um vinil pequeno serve de porta-copo.",
     "foco": "50% 35%",
-    "alt": "Remix: trovoada, freada e pedrinha no mesmo plantão"
+    "alt": "Seu Néfron congela quando o trovão cai no meio da cólica"
   },
   "imagem_macete": {
     "arquivo": "dia-259-macete.png",
-    "cena": "Só o disco da pedrinha toca: um tobogã de parque aquático, largo e liso, leva a pedrinha sorridente até a saída, enquanto uma chave pequena afrouxa um anel do tobogã para alargá-lo. A nuvem, o carrinho e o disco intruso param perto de uma placa de pare.",
+    "cena": "A nuvem de trovão entra primeiro num túnel de tomografia em forma de rosquinha, sem nenhum frasco de contraste por perto; a pedrinha espera sentada na fila, com um tobogã ao fundo, e um frasco de anti-inflamatório fica trancado na gaveta. Seu Néfron carimba a ordem certa.",
     "foco": "50% 40%",
-    "alt": "Cálculo distal: tansulosina ajuda"
+    "alt": "Cefaleia em trovoada: TC sem contraste antes de tudo"
   },
   "questao": {
-    "vinheta": "During Sunday sign-out, an intern reads four teaching cards aloud. Only one card describes management that follows current guidelines.",
-    "pergunta": "Which card is correct?",
+    "vinheta": "A 50-year-old woman is being treated in the emergency department for renal colic from a 5-mm distal ureteral stone. While straining on the toilet, she develops a sudden, severe occipital headache that peaks within 1 minute. Blood pressure is 176/98 mm Hg. She is alert, with neck stiffness and no focal deficits.",
+    "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "Thunderclap headache: lumbar puncture before head CT",
-        "quiz": "Trovoada: punção 1o",
-        "dia": 191
+        "texto": "Lumbar puncture",
+        "quiz": "Punção lombar"
       },
       "B": {
-        "texto": "Hypertensive emergency: normalize blood pressure within 1 hour",
-        "quiz": "PA normal em 1 hora",
+        "texto": "IV nicardipine to lower blood pressure by 25%",
+        "quiz": "Nicardipina, baixar 25%",
         "dia": 254
       },
       "C": {
-        "texto": "Acute ischemic stroke, no thrombolysis: lower BP to 120/80 at once",
-        "quiz": "AVC: PA 120/80 já"
+        "texto": "An additional dose of IV ketorolac",
+        "quiz": "Mais cetorolaco IV",
+        "dia": 240
       },
       "D": {
-        "texto": "Distal ureteral stone of 6 mm: tamsulosin can aid passage",
-        "quiz": "Cálculo: tansulosina",
-        "dia": 240
+        "texto": "Noncontrast CT of the head",
+        "quiz": "TC de crânio sem contraste",
+        "dia": 191
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "Cálculo distal: *tansulosina* ajuda",
+    "titulo": "Trovoada no meio da cólica: *TC primeiro*",
     "certa": [
-      "Dia 240: para cálculos do ureter distal de até 10 mm, a *medical expulsive therapy* com *tamsulosin* (alfabloqueador) relaxa a musculatura lisa do ureter e ajuda a eliminação, junto com a analgesia (AINE de primeira linha). O benefício é maior nos cálculos de 5 a 10 mm; febre com obstrução, rim único ou dor refratária pedem descompressão urológica."
+      "Cefaleia em trovoada (pico em 1 minuto) com rigidez de nuca é *subarachnoid hemorrhage* até prova em contrário (dia 191): o próximo passo é a *noncontrast head CT*, já. A cólica renal (dia 240) virou coadjuvante, e a pressão de 176/98 sem lesão de órgão-alvo comprovada não é a emergência hipertensiva clássica (dia 254); ela é tratada depois que a TC mostra o que há."
     ],
     "termos": [
-      "medical expulsive therapy",
-      "tamsulosin",
+      "thunderclap headache",
+      "subarachnoid hemorrhage",
       "noncontrast head CT",
-      "permissive hypertension"
+      "lumbar puncture after 6 hours"
     ],
     "erradas": {
-      "A": "Dia 191: na cefaleia em trovoada a primeira etapa é a *noncontrast head CT*; a punção lombar entra se a tomografia for normal e a suspeita continuar.",
-      "B": "Dia 254: na emergência hipertensiva se reduz no máximo 25% na primeira hora; normalizar rápido causa isquemia.",
-      "C": "Intruso: no AVC isquêmico sem trombólise, a pressão é permissiva (só se trata acima de 220/120), e baixar a 120/80 piora a penumbra."
+      "A": "Intruso: a punção lombar só entra se a TC vier normal e já tiverem passado mais de 6 horas do início; antes da TC, não.",
+      "B": "Baixar 25% na primeira hora é a regra da emergência hipertensiva com lesão de órgão-alvo (dia 254); aqui o problema é a cefaleia em trovoada, e a imagem vem antes.",
+      "C": "Mais cetorolaco trata a cólica (dia 240), mas um AINE numa possível hemorragia piora o sangramento e atrasa o diagnóstico."
     },
     "macete": {
-      "frase": "Pedrinha de até *1 cm*: *tobogã* com tansulosina",
-      "apoio": "A pedrinha no tobogã largo é o cálculo descendo com o ureter relaxado pela tansulosina. A nuvem de trovão pede tomografia antes da punção, e o carrinho freia só uma fatia de 25%.",
-      "fala": null
+      "frase": "Trovoada na cabeça? *TC antes de tudo*, até antes da pedrinha",
+      "apoio": "Cólica renal dói muito, mas cefaleia que chega ao pico em 1 minuto fura a fila. TC de crânio sem contraste na hora; se vier normal e já tiverem passado 6 horas, punção lombar. O cetorolaco fica guardado (sangra) e a regra dos 25% é de outra emergência.",
+      "fala": "Sem carimbo, não sai. Sem TC de crânio, ninguém sai da sala."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: hemorragia subaracnoide (dia 191), cólica renal (dia 240), emergência hipertensiva (dia 254) e um intruso.",
+    "contexto": "Três conceitos dos dias 191, 240 e 254 no mesmo leito, mais um intruso. A pedrinha ainda está lá, a pressão subiu e a dor de cabeça chegou ao máximo em 1 minuto.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +97,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual cartão está certo?"
+    "pergunta": "Cólica renal e cefaleia súbita no banheiro: qual é o próximo passo?"
   },
   "cta": "simulado",
   "reel": null,

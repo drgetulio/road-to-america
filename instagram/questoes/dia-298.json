@@ -8,21 +8,22 @@
   "topico": "Grande queimado",
   "conceito": "Burn resuscitation: Parkland formula 4 mL x kg x percent TBSA, half in the first 8 hours",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-27",
   "tom": null,
-  "gancho": "A conta do soro: *quanto vai nas primeiras 8 horas?*",
+  "gancho": "Garçom Espetinho trouxe a calculadora, *mas a conta não é da picanha*",
   "gancho_apoio": "Peso, porcentagem de área queimada e um relógio que já está correndo.",
   "imagem": {
     "arquivo": "dia-298.png",
-    "cena": "Garçom do Rodízio de Quinta com uma bandeja de quatro jarras de soro de tamanhos bem diferentes; na mesa, uma ampulheta grande e uma calculadora de tela vazia; a plaquinha verde e vermelha de lado. Nada de churrasco, brasa ou fogo nesta cena.",
+    "cena": "O Garçom Espetinho carrega uma bandeja com quatro jarras de soro de tamanhos bem diferentes; na mesa, uma ampulheta grande e uma calculadora de tela vazia; a plaquinha verde e vermelha está de lado. Nada de churrasco, brasa ou fogo nesta cena.",
     "foco": "50% 35%",
-    "alt": "A conta do soro: quanto vai nas primeiras 8 horas?"
+    "alt": "Garçom com quatro jarras de soro e uma calculadora"
   },
   "imagem_macete": {
     "arquivo": "dia-298-macete.png",
-    "cena": "Callback: o garçom vira a plaquinha verde para a segunda maior jarra; uma jarra grande do dia inteiro aparece dividida exatamente ao meio, com a primeira metade escorrendo antes de a ampulheta acabar, e uma amostra rosa-clara (a área só vermelha) fica fora da bandeja.",
+    "cena": "O garçom vira a plaquinha verde para a segunda maior jarra; uma jarra grande do dia inteiro aparece dividida exatamente ao meio, com a primeira metade escorrendo antes de a ampulheta acabar, e uma amostra de tecido rosa-clara fica fora da bandeja.",
     "foco": "50% 45%",
     "alt": "Parkland: 4 × kg × %SCQ, metade em 8 horas"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Parkland é *4, 8 e 16*: 4 mL, metade em 8 horas e o resto em 16",
-      "apoio": "Na imagem, o garçom serve jarras de soro: metade do total sai antes de a ampulheta de 8 horas acabar, e ela começa a correr na hora da queimadura, não na chegada. A área só vermelha fica fora da bandeja.",
-      "fala": null
+      "apoio": "A conta é 4 × 80 × 30 = 9.600 mL nas 24 horas; metade, 4.800 mL, antes de a ampulheta das 8 horas acabar, contadas da hora da queimadura e não da chegada. A área só vermelha (primeiro grau) fica fora da bandeja.",
+      "fala": "Vai uma conduta aí, doutor? Metade da jarra antes da ampulheta das 8 horas."
     }
   },
   "legenda": {
-    "contexto": "Homem de 80 kg, incêndio em casa há uma hora, 30% de queimadura de espessura parcial e mais 10% só de vermelhidão. A calculadora está na mesa do Rodízio de Quinta. Quanto de Ringer lactato nas primeiras 8 horas?",
+    "contexto": "Homem de 80 kg, incêndio em casa há uma hora, 30% de queimadura de espessura parcial e mais 10% só de vermelhidão. Quanto de Ringer lactato nas primeiras 8 horas?",
     "palavras_chave": [
       "house fire",
       "30% TBSA",
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Parkland, 80 kg e 30%: quanto nas primeiras 8 h?"
+    "pergunta": "Parkland: 80 kg e 30% de queimadura parcial. Quanto nas primeiras 8 h?"
   },
   "cta": null,
   "reel": null,

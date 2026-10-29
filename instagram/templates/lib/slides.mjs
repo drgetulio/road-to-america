@@ -90,6 +90,10 @@ const PERSONAGENS = {
   'Capitã Plaqueta': { bordao: 'Parou, colou, coagulou.', svg: `<circle cx="50" cy="56" r="32" fill="#f1c232" stroke="#0f2747" stroke-width="4.5"/><path d="M22 34c4-14 52-14 56 0z" fill="#0f2747"/><rect x="18" y="32" width="64" height="7" rx="3.5" fill="#0f2747"/><circle cx="50" cy="26" r="4" fill="#f1c232"/>${OLHOS(54, 12)}<path d="M24 74q26 14 52 0" fill="none" stroke="#1d8a4b" stroke-width="7" stroke-linecap="round"/>` },
   'Tia Meia-Vida': { bordao: 'Cinco meias-vidas e ninguém lembra mais.', svg: `<path d="M24 12h52M24 88h52" stroke="#0f2747" stroke-width="6" stroke-linecap="round"/><path d="M29 14h42c0 18-14 26-21 36 7 10 21 18 21 36H29c0-18 14-26 21-36-7-10-21-18-21-36z" fill="#fff" stroke="#0f2747" stroke-width="4.5" stroke-linejoin="round"/><path d="M36 82c4-10 10-12 14-14 4 2 10 4 14 14z" fill="#f1c232"/><path d="M38 26h24c-3 6-8 10-12 14-4-4-9-8-12-14z" fill="#f1c232"/><circle cx="41" cy="30" r="6" fill="none" stroke="#b0243a" stroke-width="3"/><circle cx="59" cy="30" r="6" fill="none" stroke="#b0243a" stroke-width="3"/><path d="M47 30h6" stroke="#b0243a" stroke-width="3"/>` },
   'Viés': { bordao: 'Se você não randomizou, eu entrei.', svg: `<path d="M20 86V44c0-18 13-30 30-30s30 12 30 30v42l-7.5-7-7.5 7-7.5-7-7.5 7-7.5-7-7.5 7-7.5-7z" fill="#fff" stroke="#0f2747" stroke-width="4.5" stroke-linejoin="round"/><ellipse cx="40" cy="44" rx="5" ry="7" fill="#0f2747"/><ellipse cx="60" cy="44" rx="5" ry="7" fill="#0f2747"/><circle cx="74" cy="66" r="9" fill="#dde3de" stroke="#0f2747" stroke-width="4"/><path d="M80 73l7 8" stroke="#0f2747" stroke-width="5" stroke-linecap="round"/>` },
+  // anfitriões dos quadros (PROGRAMA.md, seção 3): entram quando o dia não tem um dos seis personagens
+  "Dona Térmica": { bordao: "Já vi esse caso às 3 da manhã.", svg: `<rect x="28" y="30" width="44" height="60" rx="12" fill="#b0243a" stroke="#0f2747" stroke-width="4.5"/><rect x="31" y="16" width="38" height="16" rx="6" fill="#0f2747"/><rect x="44" y="8" width="12" height="9" rx="3" fill="#0f2747"/><path d="M72 40q12 2 10 16t-10 14" fill="none" stroke="#0f2747" stroke-width="4.5"/>${OLHOS(50, 11)}<path d="M36 46q5-3 10 0M54 46q5-3 10 0" fill="none" stroke="#0f2747" stroke-width="2.5" stroke-linecap="round"/><path d="M34 70q16 14 32 0" fill="none" stroke="#dde3de" stroke-width="4" stroke-linecap="round"/>` },
+  "Seu Allen": { bordao: "Sobrou peça? Então faltou mecanismo.", svg: `<path d="M30 14h18v52h30v18H30z" fill="#dde3de" stroke="#0f2747" stroke-width="4.5" stroke-linejoin="round"/><path d="M30 60h48v24H30z" fill="#0f2747" opacity=".9"/>${OLHOS(32, 8)}<path d="M50 10l10-6" stroke="#b0243a" stroke-width="5" stroke-linecap="round"/>` },
+  "Garçom Espetinho": { bordao: "Vai uma conduta aí, doutor?", svg: `<circle cx="50" cy="38" r="24" fill="#f3f5f2" stroke="#0f2747" stroke-width="4.5"/>${OLHOS(36, 9)}<path d="M40 48q10 7 20 0" fill="none" stroke="#0f2747" stroke-width="3" stroke-linecap="round"/><path d="M24 92q0-28 26-30 26 2 26 30z" fill="#b0243a" stroke="#0f2747" stroke-width="4.5" stroke-linejoin="round"/><path d="M40 64l10 6 10-6-10 6z" fill="#0f2747" stroke="#0f2747" stroke-width="5" stroke-linejoin="round"/>` },
 };
 export const avatar = (nome) => (PERSONAGENS[nome] ? `<svg class="avatar" viewBox="0 0 100 100">${PERSONAGENS[nome].svg}</svg>` : '');
 
@@ -352,14 +356,15 @@ export function explicacaoErradas(dia) {
 
 export function explicacaoMacete(dia) {
   const m = dia.explicacao.macete;
-  const p = dia.personagem && PERSONAGENS[dia.personagem];
+  const quem = dia.personagem || dia.anfitriao || null;
+  const p = quem && PERSONAGENS[quem];
   const fala = m.fala || (p ? p.bordao : null);
   // quanto mais longo o macete e o apoio, menor a imagem, para o texto caber sem cair abaixo de 36 px
   const tamTexto = semMarca(m.frase || '').length + semMarca(m.apoio || '').length;
   const altImg = tamTexto <= 230 ? 420 : tamTexto <= 290 ? 350 : tamTexto <= 350 ? 290 : tamTexto <= 410 ? 240 : 200;
   const blocoImg = dia.imagem_macete ? `<div class="e4__img" style="height:${altImg}px">${imagem(dia.imagem_macete)}</div>` : '';
   const personagem = p
-    ? `<div class="persona"><span class="persona__av">${avatar(dia.personagem)}</span><div><b class="persona__nome">${esc(dia.personagem.toUpperCase())}</b>${fala ? `<span class="persona__fala">“${esc(fala)}”</span>` : ''}</div></div>`
+    ? `<div class="persona"><span class="persona__av">${avatar(quem)}</span><div><b class="persona__nome">${esc(quem.toUpperCase())}</b>${fala ? `<span class="persona__fala">“${esc(fala)}”</span>` : ''}</div></div>`
     : '';
   return `<div class="tela noite e4 ${dia.imagem_macete ? 'e4--com-img' : ''} copacabana-fundo">
     <section class="placa placa--macete">

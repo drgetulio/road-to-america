@@ -7,7 +7,7 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Passagem de plantão",
   "conceito": "Structured handoff (I-PASS) reduces communication errors",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-04",
@@ -16,7 +16,7 @@
   "gancho_apoio": "Os erros apareceram sempre na troca de turno. Qual mudança protege o paciente?",
   "imagem": {
     "arquivo": "dia-244.png",
-    "cena": "Num campo de futebol, duas pranchetas com pernas e tênis trocam de lugar no meio do jogo. Uma chuta a bola de qualquer jeito e ela sai pela lateral, enquanto a outra corre perdida, olhando para o lado errado. Um apito de juiz pendurado na trave.",
+    "cena": "Num campo de futebol, duas pranchetas com pernas e tênis trocam de lugar no meio do jogo. Uma chuta a bola de qualquer jeito e ela sai pela lateral, enquanto a outra corre perdida, olhando para o lado errado. Um apito de juiz pendurado na trave. O Viés, de trás de uma tabelinha 2x2 presa na trave, aproveita a confusão para entrar em campo.",
     "foco": "50% 35%",
     "alt": "No plantão, passe torto vira gol contra"
   },
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "*I-PASS*: o passe que o colega *devolve*",
       "apoio": "Lembre do campo: passe torto dá gol contra. No I-PASS a bola anda por cinco cones (gravidade, resumo, lista de ações, plano de contingência e síntese de quem recebe) e quem recebe devolve o toque, repetindo o plano.",
-      "fala": null
+      "fala": "Se você passou o plantão no corredor, eu entrei."
     }
   },
   "legenda": {

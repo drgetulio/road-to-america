@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-15",
-  "gancho": "A fivela chegou na segunda; a coceira, só na quarta",
+  "gancho": "A fivela chegou na segunda; a *coceira*, só na quarta",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô no balcão de uma padaria que também é boteco, segurando uma fivela de metal brilhante; atrás dele, uma tigela de massa descansa ao lado de um relógio de parede, e a massa ainda está baixa.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está no balcão de uma padaria de bairro segurando uma fivela de cinto brilhante; atrás dele, uma tigela de massa descansa coberta por um pano ao lado de um relógio de parede, e a massa ainda está baixa.",
     "foco": "50% 35%",
-    "alt": "Macrô no balcão de uma padaria que também é boteco, segurando uma fivela de metal brilhante; atrás dele, uma tigela de massa descansa ao lado de um relógio de parede, e a massa ainda está baixa.",
+    "alt": "A fivela chegou na segunda; a coceira, só na quarta",
     "arquivo": "dia-043.png"
   },
   "imagem_macete": {
-    "cena": "Callback: dois dias depois, o pano sai da tigela e a massa cresceu enorme; os fermentos são bolinhas redondas com antenas (linfócitos T) trabalhando, e o Macrô entrega a eles um pedacinho da fivela num pratinho.",
+    "cena": "Callback: dois dias depois, o pano sai da tigela e a massa cresceu enorme; os fermentos são bolinhas redondas com antenas (linfócitos T) trabalhando, e o Macrô entrega a elas um pedacinho da fivela num pratinho.",
     "alt": "Fermentação natural: linfócito T, 48 a 72 horas",
     "arquivo": "dia-043-macete.png"
   },
@@ -29,20 +29,20 @@
     "pergunta": "Which cells directly mediate this reaction?",
     "alternativas": {
       "A": {
-        "texto": "Mast cells sensitized with IgE",
-        "quiz": "Mast cells"
+        "texto": "IgE-coated mast cells",
+        "quiz": "Mastócitos com IgE"
       },
       "B": {
-        "texto": "Neutrophils recruited by immune complexes",
-        "quiz": "Neutrophils"
+        "texto": "Neutrophils and complement",
+        "quiz": "Neutrófilos e complemento"
       },
       "C": {
         "texto": "Sensitized T lymphocytes",
-        "quiz": "T lymphocytes"
+        "quiz": "Linfócitos T sensibilizados"
       },
       "D": {
-        "texto": "Plasma cells secreting IgG",
-        "quiz": "Plasma cells"
+        "texto": "IgG-secreting plasma cells",
+        "quiz": "Plasmócitos com IgG"
       }
     },
     "correta": "C"
@@ -64,8 +64,8 @@
       "D": "IgG produzida por plasmócito contra antígeno de pele é tipo II, como no pênfigo vulgar."
     },
     "macete": {
-      "frase": "Tipo IV é *fermentação natural*: T e 48 horas",
-      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, dermatite de contato (níquel, hera venenosa), rejeição crônica e alguns casos de reação a droga; todas sem anticorpo e tardias.",
+      "frase": "Tipo IV é *fermentação natural*: o fermento é o linfócito T e o pão só cresce em 48 horas. Cinto novo que coça em 2 dias não é pipoca.",
+      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, dermatite de contato (níquel, hera venenosa), rejeição celular aguda do enxerto e algumas reações a droga; todas sem anticorpo e tardias.",
       "fala": null
     }
   },
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Quem medeia a dermatite do níquel?"
+    "pergunta": "Placa sob a fivela que acende no patch test em 48 h: qual célula?"
   },
   "cta": "simulado",
   "exemplo": false

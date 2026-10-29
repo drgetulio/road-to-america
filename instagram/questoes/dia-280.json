@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix do X que o pai não passa: Agamaglobulinemia de Bruton (dia 8), Distrofia muscular de Duchenne (dia 73), Síndrome de Wiskott-Aldrich (dia 197)",
   "conceito": "X-linked inheritance remix: Bruton agammaglobulinemia + Duchenne muscular dystrophy + Wiskott-Aldrich syndrome",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Dia dos Pais (segundo domingo de agosto, 8/8/2027): herança ligada ao X.",
   "remix_de": [
     8,
@@ -17,40 +17,40 @@
   "explicacao_em": "2027-08-09",
   "tom": null,
   "gancho": "Pai dá *o time e o Y*. E o X do filho?",
-  "gancho_apoio": "Remix especial de Dia dos Pais com três doenças ligadas ao X e um intruso.",
+  "gancho_apoio": "Dia dos Pais com três genes do X e um intruso. Eczema, otite e petéquias num menino de 2 anos.",
   "imagem": {
     "arquivo": "dia-280.png",
-    "cena": "Sala de Dia dos Pais com um toca-discos e três discos com ícones (uma portinha de escola fechada, um halter pequeno, uma plaquinha minúscula ao lado de uma folha que coça), um quarto disco de outra cor afastado, uma camisa de futebol listrada na cadeira e uma caixa de presente com laço.",
+    "cena": "Almoço de Dia dos Pais: numa cadeira, uma camisa de futebol listrada grande; na cadeirinha ao lado, a mesma camisa em miniatura e, em cima dela, um cromossomo de pelúcia baixinho de presente. No lugar da mãe, uma caixa de presente com um cromossomo de pelúcia comprido e laço. Macrô, de guardanapo xadrez, serve farofa e olha para a caixinha, curioso. Num canto, um vinil pequeno serve de descanso de panela.",
     "foco": "50% 35%",
-    "alt": "Pai dá o time e o Y. E o X do filho?"
+    "alt": "Almoço de Dia dos Pais com o presente do pai e o da mãe"
   },
   "imagem_macete": {
     "arquivo": "dia-280-macete.png",
-    "cena": "Callback: só o disco da plaquinha minúscula com a folha que coça gira, cercado de notas musicais em forma de orelha (otite); os outros dois discos ligados ao X ficam nas capas, amarrados com a mesma fitinha (mesma família), e o disco intruso fica longe, sem fita.",
+    "cena": "Macrô abre a caixa da mãe: o cromossomo comprido tem uma pecinha faltando bem onde deveria segurar um andaime minúsculo. Sem ela, plaquetinhas pequenas rolam da mesa, uma folhinha de urtiga de desenho pousa na camisa pequena e notas musicais em forma de orelha flutuam. Dois outros presentes da família, um halter e uma portinha de escola, continuam fechados na mesa.",
     "foco": "50% 45%",
     "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
   },
   "questao": {
     "vinheta": "A 2-year-old boy has eczema, recurrent otitis media, and petechiae. Platelet count is 38,000/mm3 with small platelets. Serum IgM is low and IgE is high. His father and paternal grandfather are healthy; a maternal uncle died in childhood from bleeding.",
-    "pergunta": "Which is the most likely diagnosis?",
+    "pergunta": "A defect in which protein is most likely?",
     "alternativas": {
       "A": {
-        "texto": "Bruton agammaglobulinemia",
-        "quiz": "Bruton",
+        "texto": "Bruton tyrosine kinase",
+        "quiz": "BTK",
         "dia": 8
       },
       "B": {
-        "texto": "Hyper-IgE syndrome",
-        "quiz": "Hiper-IgE (Job)"
+        "texto": "CD40 ligand",
+        "quiz": "Ligante de CD40"
       },
       "C": {
-        "texto": "Duchenne muscular dystrophy",
-        "quiz": "Duchenne",
+        "texto": "Dystrophin",
+        "quiz": "Distrofina",
         "dia": 73
       },
       "D": {
-        "texto": "Wiskott-Aldrich syndrome",
-        "quiz": "Wiskott-Aldrich",
+        "texto": "WAS protein (WASp)",
+        "quiz": "Proteína WAS",
         "dia": 197
       }
     },
@@ -59,27 +59,27 @@
   "explicacao": {
     "titulo": "Plaqueta pequena, eczema e infecção: *Wiskott-Aldrich*",
     "certa": [
-      "Eczema, infecções de repetição e *plaquetopenia com plaquetas pequenas* num menino formam a tríade da *Wiskott-Aldrich syndrome* (gene *WAS*, ligado ao X). O tio materno afetado e o pai saudável contam a história da herança *X-linked recessive*: a mãe é portadora, e o pai passa o Y para o filho, nunca o X."
+      "Eczema, infecções de repetição e *plaquetopenia com plaquetas pequenas* num menino, com tio materno afetado, são a tríade da *Wiskott-Aldrich syndrome* (dia 197): falta a *WAS protein*, que organiza o citoesqueleto de actina de linfócitos e plaquetas. O tio materno afetado e o pai saudável contam a história da herança *X-linked recessive*: a mãe é portadora, e o pai passa o Y para o filho, nunca o X."
     ],
     "termos": [
       "Wiskott-Aldrich syndrome",
-      "WAS gene",
+      "WAS protein",
       "X-linked recessive",
       "microthrombocytopenia"
     ],
     "erradas": {
-      "A": "Bruton (dia 8) também é ligada ao X, mas não dá eczema nem plaquetopenia, e todas as imunoglobulinas caem.",
-      "B": "Hiper-IgE (Job) tem eczema e IgE alta, mas a forma clássica é autossômica dominante (STAT3), com abscessos frios e plaquetas normais.",
-      "C": "Duchenne (dia 73) é ligada ao X, mas causa fraqueza muscular proximal e sinal de Gowers, não sangramento."
+      "A": "Sem BTK (dia 8), faltam células B e todas as imunoglobulinas; não há eczema nem plaquetas pequenas.",
+      "B": "Intruso: a falta do ligante de CD40 dá a hiper-IgM ligada ao X, com IgM normal ou alta e Pneumocystis, sem plaquetopenia.",
+      "C": "A distrofina (dia 73) é do músculo: Duchenne dá fraqueza proximal e sinal de Gowers, não eczema nem petéquias."
     },
     "macete": {
       "frase": "Pai passa *o sobrenome, o time e o Y*; o X do menino vem da mãe",
-      "apoio": "No toca-discos do Dia dos Pais, três discos são da mesma família ligada ao X. O que toca hoje é o da plaqueta pequena, da pele que coça e da otite que volta.",
-      "fala": null
+      "apoio": "No Dia dos Pais, os três genes da revisão moram no X: BTK (Bruton), distrofina (Duchenne) e a proteína WAS. O que toca hoje é o da plaqueta pequena, da pele que coça e da otite que volta: Wiskott-Aldrich, o andaime de actina que falta. O pai saudável não passa nada disso: ele dá o Y e o time.",
+      "fala": "Comi, mostrei, avisei. E o pai só passou o time."
     }
   },
   "legenda": {
-    "contexto": "Remix especial de Dia dos Pais com três doenças ligadas ao X: Bruton (dia 8), Duchenne (dia 73) e Wiskott-Aldrich (dia 197), mais um intruso. Menino de 2 anos com eczema, otites e petéquias. Qual disco toca hoje?",
+    "contexto": "Dia dos Pais com três conceitos ligados ao X que já passaram por aqui (dias 8, 73 e 197) e um intruso. Menino de 2 anos com eczema, otites e petéquias; o pai e o avô paterno são saudáveis. Qual peça do X falhou?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -96,7 +96,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Eczema, otite e petéquias: qual disco?"
+    "pergunta": "Eczema, otite e plaquetas pequenas: qual gene do X falhou?"
   },
   "cta": null,
   "reel": null,

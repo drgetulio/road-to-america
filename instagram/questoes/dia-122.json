@@ -7,7 +7,7 @@
   "sistema": "Sistema cardiovascular",
   "topico": "Estenose aórtica",
   "conceito": "Aortic stenosis: calcific degeneration, crescendo-decrescendo murmur, pulsus parvus et tardus",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": "Prazo final do rank order list do Match 2027 (3/3, 21h ET, segundo o NRMP).",
   "remix_de": null,
   "explicacao_em": "2027-03-04",
@@ -16,9 +16,9 @@
   "gancho_apoio": "Hoje fecha o rank order list do Match. Tem uma válvula que também está no limite.",
   "imagem": {
     "arquivo": "dia-122.png",
-    "cena": "Uma porta giratória de agência bancária, de três folhas, gira com dificuldade, emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo.",
+    "cena": "A Capitã Plaqueta apita na entrada de um prédio onde uma porta giratória de três folhas gira emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo. Setinhas de manual apontam para a porta.",
     "foco": "50% 35%",
-    "alt": "Porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase no horário do prazo."
+    "alt": "A Capitã Plaqueta apita diante de uma porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase na hora do prazo."
   },
   "imagem_macete": {
     "arquivo": "dia-122-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Calcific degeneration of a trileaflet aortic valve",
-        "quiz": "Calcificação aórtica"
+        "quiz": "Calcific aortic valve"
       },
       "B": {
         "texto": "Rheumatic fusion of the mitral commissures",
-        "quiz": "Reumática mitral"
+        "quiz": "Rheumatic mitral"
       },
       "C": {
         "texto": "Myxomatous degeneration of the mitral valve",
-        "quiz": "Mixomatosa mitral"
+        "quiz": "Myxomatous mitral"
       },
       "D": {
         "texto": "Asymmetric hypertrophy of the septum",
-        "quiz": "Septo hipertrófico"
+        "quiz": "Septal hypertrophy"
       }
     },
     "correta": "A"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Pulso *parvus et tardus*: pequeno e atrasado, como inscrição enviada às 20h59",
       "apoio": "Na imagem, a porta giratória cheia de calcário só deixa passar uma tartaruguinha.",
-      "fala": null
+      "fala": "Organizo trânsito há anos. Porta giratória com calcário é a pior fila do hospital."
     }
   },
   "legenda": {
@@ -87,7 +87,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sopro aórtico no idoso: qual a causa?"
+    "pergunta": "Sopro sistólico irradiado às carótidas aos 78 anos: qual a causa?"
   },
   "cta": null,
   "reel": null,

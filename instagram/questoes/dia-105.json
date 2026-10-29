@@ -8,6 +8,7 @@
   "topico": "Remix de domingo: Cadeirinha no carro (dia 4), Varizes esofágicas (dia 72), Insolação (dia 100)",
   "conceito": "Remix: Child car seat + Variceal bleeding + Exertional heat stroke",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": [
     4,
@@ -16,71 +17,68 @@
   ],
   "explicacao_em": "2027-02-15",
   "tom": null,
-  "gancho": "Remix pós-Carnaval: só *um* plano passou no VAR",
-  "gancho_apoio": "Três situações já vistas (dias 4, 72 e 100) e um intruso. Qual plano está certo?",
+  "gancho": "Alta depois de uma insolação no carro: *de costas ou de frente* na volta para casa?",
+  "gancho_apoio": "Cadeirinha, insolação e varizes já passaram por aqui. Hoje dois deles se encontram.",
   "imagem": {
     "arquivo": "dia-105.png",
-    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma cadeirinha de carro vista de lado, um com um carrinho de bloco soltando vapor e um com uma mangueira de jardim inchada e azulada. Ao lado, uma mesa de som com três controles deslizantes no meio do caminho.",
+    "cena": "No estacionamento do hospital, sob um sol forte, Dona Térmica confere uma cadeirinha de carro vazia dentro de um carrinho de desenho, sem decidir para que lado ela deve ficar virada. No braço dela, um relógio sem números nas 3. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Toca-discos com três discos: cadeirinha de carro, carrinho de bloco fervendo e mangueira inchada; ao lado, mesa de som."
+    "alt": "Dona Térmica confere uma cadeirinha vazia dentro de um carrinho, sem decidir para que lado ela fica, num estacionamento ensolarado."
   },
   "imagem_macete": {
     "arquivo": "dia-105-macete.png",
-    "cena": "Callback: na mesa de som, cada controle chega à posição certa: ao lado do carrinho de bloco, uma banheira de gelo na frente de uma ambulância que espera; ao lado da cadeirinha, ela virada para trás; ao lado da mangueira, uma xuxinha vermelha amarrando o vazamento, o registro fechado e um escudinho de comprimido de guarda.",
+    "cena": "Callback do estacionamento: a cadeirinha está virada para trás no banco traseiro, ao lado de uma régua de altura e de uma balança que mostram que ainda falta muito para o limite. No banco da frente, um airbag inflado de cara brava. No painel, um ursinho de pelúcia lembra que ninguém fica sozinho no carro.",
     "foco": "50% 40%",
-    "alt": "Mesa de som com os controles certos: banheira de gelo antes da ambulância, cadeirinha de costas e mangueira amarrada com xuxinha."
+    "alt": "A cadeirinha virada para trás no banco traseiro, ao lado de uma régua e de uma balança; um airbag bravo na frente e um ursinho no painel."
   },
   "questao": {
-    "vinheta": "On a hot summer weekend, an emergency physician reviews three plans: cooling for a runner who collapsed with a core temperature of 41°C and confusion; car-seat advice for a 15-month-old going home; and care for a man with cirrhosis vomiting blood, BP 92/60 mm Hg.",
-    "pergunta": "Which plan is most appropriate?",
+    "vinheta": "A 15-month-old boy is being discharged after treatment for heat stroke; he had been left asleep in his car seat in a parked car on a hot afternoon. He weighs 10 kg, well below the rear-facing limit of his convertible seat. His parents ask how to use the seat at home.",
+    "pergunta": "Which recommendation is most appropriate?",
     "alternativas": {
       "A": {
-        "texto": "Runner: transport first, then start cooling at the hospital",
-        "quiz": "Transporte antes",
-        "dia": 100
+        "texto": "Turn the seat forward-facing now",
+        "quiz": "Forward-facing now"
       },
       "B": {
-        "texto": "Toddler: turn the seat forward-facing, since he is over 1 year",
-        "quiz": "Virar para a frente",
-        "dia": 4
+        "texto": "Move the seat to the front passenger seat",
+        "quiz": "Front passenger seat"
       },
       "C": {
-        "texto": "Cirrhosis: octreotide, ceftriaxone and endoscopy within 12 hours",
-        "quiz": "Octreotida + EDA",
-        "dia": 72
+        "texto": "Keep it rear-facing in the back seat",
+        "quiz": "Rear-facing, back seat",
+        "dia": 4
       },
       "D": {
-        "texto": "Runner: acetaminophen to lower the hypothalamic set point",
-        "quiz": "Paracetamol"
+        "texto": "Switch to a belt-positioning booster",
+        "quiz": "Booster seat"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Varizes sangrando: *vasoativo, antibiótico e endoscopia*",
+    "titulo": "Cadeirinha: *de costas*, no banco de trás",
     "certa": [
-      "No cirrótico com hemorragia varicosa, a conduta é começar um vasoativo (octreotide), dar antibiótico profilático (ceftriaxona) e fazer endoscopia com ligadura elástica em até 12 horas, depois de estabilizar. A transfusão é restritiva: só quando a hemoglobina cai abaixo de 7 g/dL. O antibiótico reduz infecção, ressangramento e morte."
+      "A AAP recomenda manter a criança *rear-facing* o maior tempo possível, até atingir o limite de peso ou altura da cadeirinha, sempre no *back seat* (dia 4). Com 10 kg e 15 meses, ele está longe do limite, e fazer 1 ano não muda nada. A internação por *heat stroke* (dia 100) vira o momento de orientar também: nunca deixar a criança sozinha no carro, nem por poucos minutos, e criar um lembrete no banco de trás."
     ],
     "termos": [
-      "variceal hemorrhage",
-      "octreotide",
-      "band ligation",
-      "cold-water immersion",
-      "rear-facing car seat"
+      "rear-facing car seat",
+      "back seat",
+      "vehicular heat stroke",
+      "child passenger safety"
     ],
     "erradas": {
-      "A": "Dia 100: na insolação por esforço, esfria primeiro, com imersão em água fria, e transporta depois.",
-      "B": "Dia 4: a cadeirinha fica de costas até atingir o limite de peso ou altura do fabricante; o aniversário de 1 ano não é critério.",
-      "D": "Intruso: na insolação o termostato do hipotálamo está normal, e antitérmico não esfria."
+      "A": "Dia 4: o aniversário de 1 ano não é critério; virar para a frente antes do limite da cadeirinha aumenta o risco de lesão de cabeça e coluna cervical numa batida.",
+      "B": "No banco da frente, o airbag pode ferir gravemente a criança; até os 13 anos ela viaja no banco de trás.",
+      "D": "O assento de elevação com cinto é para crianças maiores, que já passaram do limite da cadeirinha voltada para a frente."
     },
     "macete": {
-      "frase": "Varizes: *OCE*, Octreotida, Ceftriaxona e Elástico em até 12 h",
+      "frase": "Cadeirinha: *de costas até o limite da etiqueta*, sempre atrás",
       "apoio": "Na mesa de som do remix, os três controles ficam na posição certa.",
-      "fala": null
+      "fala": "Aniversário de 1 ano é para bolo, não para virar cadeirinha."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo depois do Carnaval: um corredor no calor, uma criança na cadeirinha e um sangramento de varizes. Três planos, só um está certo.",
+    "contexto": "Um menino de 15 meses teve alta depois de uma insolação dentro de um carro estacionado. Na saída, os pais perguntam como usar a cadeirinha conversível. Três conceitos de Step 2 CK já vistos estão por perto, e um deles decide a resposta.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +93,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual dos três planos está certo?"
+    "pergunta": "15 meses, 10 kg, cadeirinha conversível: qual orientação dar?"
   },
   "cta": "pre_inscricao",
   "reel": null,

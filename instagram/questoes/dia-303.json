@@ -7,22 +7,22 @@
   "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
   "topico": "Hematúria macroscópica",
   "conceito": "Painless gross hematuria in an older smoker: cystoscopy plus CT urography",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-09-01",
   "tom": null,
-  "gancho": "Caixa d'água soltando água vermelha *sem dor*: chama qual encanador?",
-  "gancho_apoio": "A torneira parou de pingar vermelho, mas o plantão sabe que isso não encerra o caso.",
+  "gancho": "A caixa d'água solta água vermelha *sem dor* e o Seu Néfron desconfia",
+  "gancho_apoio": "A torneira parou de pingar vermelho, mas isso não encerra o caso.",
   "imagem": {
     "arquivo": "dia-303.png",
-    "cena": "Placa verde de rodovia com três saídas sobre uma caixa d'água de telhado, com uma torneira pingando água vermelha num balde; não há sinal de dor, só um calendário na parede mostrando dois dias marcados. Ferramentas de encanador ficam numa maleta fechada.",
+    "cena": "Três da manhã no telhado de uma casa: Seu Néfron, de gravata e óculos na ponta do nariz, inspeciona uma caixa d'água ligada a uma longa fileira de canos; embaixo, uma torneira pinga água avermelhada num balde branco, sem drama. Ele segura o carimbo, desconfiado. Um calendário com dois quadradinhos marcados e uma maleta de encanador fechada estão no chão; no muro, um relógio sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Caixa d'água soltando água vermelha sem dor: chama qual encanador?"
+    "alt": "Seu Néfron inspeciona a caixa d'água que pinga vermelho"
   },
   "imagem_macete": {
     "arquivo": "dia-303-macete.png",
-    "cena": "Callback: o encanador desce uma câmera numa haste flexível dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. A seta da terceira saída da placa acende em verde.",
+    "cena": "Uma câmera numa haste flexível desce dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. Seu Néfron, satisfeito, carimba um formulário em branco.",
     "foco": "50% 45%",
     "alt": "Hematúria sem dor em fumante: olhe o trato inteiro"
   },
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "*Água vermelha sem dor no fumante: câmera por dentro e scanner por cima*",
-      "apoio": "Na imagem, o encanador desce uma câmera dentro da caixa d'água (a cistoscopia) e passa um arco de scanner sobre todo o encanamento (a urotomografia). Um só exame deixa metade do cano sem olhar.",
-      "fala": null
+      "apoio": "Hematúria macroscópica sem dor no fumante é câncer de urotélio até prova em contrário. A câmera dentro da caixa d'água é a cistoscopia (bexiga) e o arco de scanner sobre o encanamento é a urotomografia (rim e ureter). Um só exame deixa metade do cano sem olhar.",
+      "fala": "Sem carimbo, não sai. Sem olhar o cano inteiro, também não."
     }
   },
   "legenda": {
-    "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. A placa verde mostra três saídas e só uma investiga o encanamento inteiro.",
+    "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. Qual é o próximo passo?",
     "palavras_chave": [
       "painless red urine",
       "40 pack-years",
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Hematúria indolor no fumante: próximo passo?"
+    "pergunta": "Urina vermelha sem dor em fumante de 40 maços-ano: qual é o próximo passo?"
   },
   "cta": null,
   "reel": null,

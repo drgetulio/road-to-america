@@ -8,23 +8,24 @@
   "topico": "Afasias de Broca e de Wernicke",
   "conceito": "Broca vs Wernicke aphasia: nonfluent frontal lesion vs fluent temporal lesion with poor comprehension",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-18",
   "tom": null,
   "gancho": "O rádio fala sem parar, mas não *escuta* ninguém",
-  "gancho_apoio": "Fala fluente, palavras trocadas, não entende nem repete. Onde está a lesão?",
+  "gancho_apoio": "Fala fluente, palavras trocadas, não entende nem repete.",
   "imagem": {
     "arquivo": "dia-108.png",
-    "cena": "Um rádio antigo e simpático, com um microfone na frente e uma antena do lado, solta uma enxurrada de formas coloridas misturadas, como confete de estrelas, espirais e triângulos, em fluxo contínuo. Bilhetinhos de papel dobrado voam na direção dele.",
+    "cena": "Na bancada de uma oficina, Seu Allen, a chavinha do manual de montagem, desmonta com cuidado um rádio antigo e simpático, com um microfone na frente e uma antena do lado. O rádio solta uma enxurrada de formas coloridas misturadas, estrelas, espirais e triângulos, e bilhetinhos de papel dobrado voam na direção dele. Setinhas de manual apontam para o microfone e para a antena.",
     "foco": "50% 35%",
-    "alt": "Rádio antigo com microfone e antena soltando uma enxurrada de formas coloridas misturadas."
+    "alt": "Seu Allen desmonta um rádio antigo que solta uma enxurrada de formas misturadas; bilhetinhos de papel voam na direção dele."
   },
   "imagem_macete": {
     "arquivo": "dia-108-macete.png",
-    "cena": "Callback: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos batem nela e caem no chão sem entrar. O microfone da frente está inteiro e brilhando. Um fio fino liga o microfone à antena.",
+    "cena": "Callback da oficina: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos batem nela e caem no chão sem entrar. O microfone da frente está inteiro e brilhando, e um fio fino liga o microfone à antena. Seu Allen aponta para a antena.",
     "foco": "50% 40%",
-    "alt": "A antena lateral do rádio torta e soltando faíscas; os bilhetes batem nela e caem."
+    "alt": "A antena do rádio está torta e solta faíscas, e os bilhetes caem sem entrar; o microfone está inteiro, e Seu Allen aponta para a antena."
   },
   "questao": {
     "vinheta": "A 71-year-old right-handed man has sudden difficulty communicating. He speaks fluently in long sentences filled with wrong and invented words, cannot follow simple spoken commands and cannot repeat a short phrase. He seems unaware of his errors. Strength and sensation are normal.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Left inferior frontal gyrus",
-        "quiz": "Giro frontal esq."
+        "quiz": "L inferior frontal gyrus"
       },
       "B": {
         "texto": "Left arcuate fasciculus",
-        "quiz": "Fascículo arqueado"
+        "quiz": "L arcuate fasciculus"
       },
       "C": {
         "texto": "Left posterior superior temporal gyrus",
-        "quiz": "Temporal sup. esq."
+        "quiz": "L post. sup. temporal"
       },
       "D": {
         "texto": "Right posterior superior temporal gyrus",
-        "quiz": "Temporal sup. dir."
+        "quiz": "R post. sup. temporal"
       }
     },
     "correta": "C"
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "Broca é o *microfone*, Wernicke é a *antena*",
       "apoio": "Na imagem, o rádio antigo solta uma enxurrada de formas coloridas misturadas.",
-      "fala": null
+      "fala": "Desmontei o rádio: o microfone está inteiro. O problema é a antena."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Fala fluente e não entende: onde é?"
+    "pergunta": "Fala fluente, não entende nem repete: onde está a lesão?"
   },
   "cta": null,
   "reel": null,

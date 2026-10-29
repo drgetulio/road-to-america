@@ -7,20 +7,20 @@
   "sistema": "Saúde comportamental",
   "topico": "Estágios de mudança",
   "conceito": "Stages of change: contemplation (thinking about it) vs preparation (planning soon) vs action",
-  "personagem": null,
+  "personagem": "Mito",
   "gancho_data": "Réveillon: as resoluções de Ano Novo e os estágios de mudança.",
   "remix_de": null,
   "explicacao_em": "2027-01-01",
-  "gancho": "Promessa de Ano Novo: pensar, planejar ou fazer?",
+  "gancho": "O Mito promete largar o café \"nos próximos meses\". Em que *degrau* ele está?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar: uma rede, uma nuvem de pensamento, uma mochila arrumada, pegadas nas ondas e um calendário novo; nenhum personagem está em degrau algum.",
+    "cena": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar. O Mito, de roupa branca por cima do jaleco e copo de café na mão, olha a escada lá de baixo segurando uma lista de resoluções em branco; nenhum degrau está ocupado ainda. A plaquinha verde e vermelha está fincada na areia, de lado.",
     "foco": "50% 35%",
-    "alt": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar: uma rede, uma nuvem de pensamento, uma mochila arrumada, pegadas nas ondas e um calendário novo; nenhum personagem está em degrau algum.",
+    "alt": "O Mito promete largar o café \"nos próximos meses\". Em que degrau ele está?",
     "arquivo": "dia-060.png"
   },
   "imagem_macete": {
-    "cena": "Callback: um personagem redondo de roupa branca está sentado no segundo degrau, dentro da nuvem de pensamento, olhando as ondas; a mochila do degrau seguinte ainda está fechada e um balão gentil de conversa sem palavras chega oferecendo ajuda.",
+    "cena": "Callback: o Mito está sentado no segundo degrau, dentro de uma nuvem de pensamento, olhando as ondas com o café ainda na mão; a mochila do degrau seguinte continua fechada, e um balão gentil de conversa sem palavras chega oferecendo ajuda.",
     "alt": "Pensa em mudar, ainda sem data: contemplação",
     "arquivo": "dia-060-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Ação é já ter mudado o comportamento nos últimos 6 meses; ele ainda fuma um maço por dia."
     },
     "macete": {
-      "frase": "Contemplação: *olha as ondas*, ainda *sem data*",
+      "frase": "Contemplação é o Mito no *réveillon*: \"vou largar o café nos próximos meses\", mas ainda *sem data*. Com data no mês que vem, aí é preparação.",
       "apoio": "Pegadinha de prova: O NBME separa contemplação de preparação pelo prazo (6 meses versus 30 dias) e por um passo concreto já tomado.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Réveillon é a festa oficial das resoluções. Um paciente fala sobre o cigarro, e a forma como ele fala diz em que degrau da mudança ele está.",
+    "contexto": "Réveillon é a festa oficial das resoluções, e o Mito já prometeu largar o café em 2027. Um paciente fala sobre o cigarro do mesmo jeito: quer parar, mas sem data. Em que degrau da mudança ele está?",
     "palavras_chave": [
       "smoking cessation",
       "readiness to change",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Em que estágio da mudança ele está?"
+    "pergunta": "Quer parar de fumar nos próximos meses, sem data: qual estágio?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -7,22 +7,22 @@
   "sistema": "Sistemas reprodutor e endócrino",
   "topico": "Deficiência de 21-hidroxilase",
   "conceito": "21-hydroxylase deficiency: low cortisol and aldosterone, high androgens, salt wasting",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-11-12",
   "tom": null,
-  "gancho": "Padaria do esteroide: um *forno* parou e a fila mudou",
+  "gancho": "Seu Néfron foi buscar pão de *sal* e a padaria só tinha doce",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-010.png",
-    "cena": "Padaria em corte, estilo manual de montagem: uma esteira leva bolinhas de massa por três fornos em fila. O forno do meio está desligado e frio, a massa se acumula na frente dele e parte escorrega por um tobogã lateral até a vitrine de doces. Na prateleira de cima, o saleiro tombou vazio.",
+    "cena": "Padaria em corte, estilo manual de montagem: uma esteira leva bolinhas de massa por três fornos em fila; o forno do meio está frio, a massa se acumula na frente dele e parte escorrega por um tobogã até a vitrine de doces, que transborda. Setinhas de manual apontam para o forno frio. No balcão, Seu Néfron segura um saquinho de pão vazio e olha o saleiro tombado.",
     "foco": "50% 35%",
-    "alt": "Padaria do esteroide: um forno parou e a fila mudou"
+    "alt": "Seu Néfron foi buscar pão de sal e a padaria só tinha doce"
   },
   "imagem_macete": {
     "arquivo": "dia-010-macete.png",
-    "cena": "Callback da padaria: uma lanterna ilumina o forno do meio quebrado (21-hidroxilase). A montanha de massa antes dele é a 17-OHP; as prateleiras do pão salgado (aldosterona) e do pão francês (cortisol) estão vazias, e a vitrine de doces (androgênios) transborda. No alto, um padeirinho em forma de hipófise acena pedindo ainda mais massa (ACTH).",
+    "cena": "Callback da padaria: uma lanterna ilumina o forno do meio quebrado (21-hidroxilase). A montanha de massa antes dele é a 17-OHP; as prateleiras do pão salgado (aldosterona) e do pão francês (cortisol) estão vazias, e a vitrine de doces (androgênios) transborda. Seu Néfron, sem aldosterona, deixa os cristais de sal saírem sem carimbo.",
     "alt": "O forno 21 parou e a massa sobrou"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "O cortisol está baixo, e é justamente isso que faz o ACTH subir e a adrenal crescer."
     },
     "macete": {
-      "frase": "Olhe os dígitos: 1 na frente (11, 17) dá hipertensão; 1 no fim (11, 21) dá virilização. O 21 só tem o 1 no fim: virilização e perda de sal. Na padaria, o forno 21 parou, a massa (17-OHP) empilhou e virou doce de androgênio.",
+      "frase": "Forno *21* quebrou: sem pão de sal, o Seu Néfron solta o sódio sem carimbo, e a massa que sobra (17-OHP) vira *doce de andrógeno*.",
       "apoio": "Pegadinha de prova: O NBME cobra a 17-OHP no teste do pezinho americano e põe a 11-desoxicorticosterona como distrator para quem confunde com a 11-beta.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Quarta do Porquê: a adrenal tem uma linha de produção de hormônios. Quando uma etapa falha, alguma coisa sobra antes dela.",
+    "contexto": "Quarta do Porquê: a fábrica de esteroides é uma padaria com fornos em fila. Um forno parou, faltou sal no balcão do Seu Néfron e a vitrine encheu de doce. O que ficou empilhado antes do forno quebrado?",
     "palavras_chave": [
       "ambiguous genitalia",
       "hyponatremia",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Bebê com perda de sal: qual hormônio sobe?"
+    "pergunta": "Bebê 46,XX com sódio baixo e potássio alto: qual nível sobe?"
   },
   "exemplo": false
 }

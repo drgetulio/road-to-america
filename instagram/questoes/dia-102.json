@@ -8,17 +8,18 @@
   "topico": "Crupe",
   "conceito": "Croup: steeple sign and barking cough, dexamethasone plus nebulized epinephrine if stridor at rest",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-12",
   "tom": null,
   "gancho": "Uma *foca* sentou no rodízio e começou a tossir",
-  "gancho_apoio": "Dois anos, coriza, e à noite uma tosse que parece latido. Qual é o diagnóstico?",
+  "gancho_apoio": "Dois anos, coriza há dois dias e, à noite, uma tosse que parece latido.",
   "imagem": {
     "arquivo": "dia-102.png",
-    "cena": "Um garçom de rodízio chega à mesa com um espeto e encontra uma foca simpática de cachecol de lã sentada na cadeira, tossindo alto. A plaquinha redonda verde e vermelha está em pé na mesa, esperando a escolha.",
+    "cena": "Garçom Espetinho chega à mesa com um espeto e encontra uma foca simpática de cachecol de lã sentada na cadeira, tossindo alto. Pela janela, o prédio vizinho acende as luzes, uma a uma, às 2 da manhã. A plaquinha verde e vermelha está em pé na mesa, esperando a escolha.",
     "foco": "50% 35%",
-    "alt": "Garçom de rodízio diante de uma foca de cachecol que tosse sentada à mesa."
+    "alt": "Garçom Espetinho encontra uma foca de cachecol tossindo alto na mesa; pela janela, o prédio vizinho acende as luzes no meio da noite."
   },
   "imagem_macete": {
     "arquivo": "dia-102-macete.png",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Epiglottitis",
-        "quiz": "Epiglotite"
+        "quiz": "Epiglottitis"
       },
       "B": {
         "texto": "Bacterial tracheitis",
-        "quiz": "Traqueíte bacteriana"
+        "quiz": "Bacterial tracheitis"
       },
       "C": {
         "texto": "Retropharyngeal abscess",
-        "quiz": "Abscesso retrofar."
+        "quiz": "Retropharyngeal abscess"
       },
       "D": {
         "texto": "Laryngotracheobronchitis",
-        "quiz": "Crupe viral"
+        "quiz": "Viral croup"
       }
     },
     "correta": "D"
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "*Tosse de foca* e torre de igreja: crupe",
       "apoio": "Na imagem, a foca de cachecol tosse na mesa do rodízio; amanhã aparece a torre.",
-      "fala": null
+      "fala": "Dexa para toda foca. Adrenalina para a que faz barulho até sentada."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Tosse de latido e estridor aos 2 anos?"
+    "pergunta": "Tosse de latido e estridor em repouso aos 2 anos: qual diagnóstico?"
   },
   "cta": null,
   "reel": null,

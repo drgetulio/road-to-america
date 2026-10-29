@@ -16,13 +16,13 @@
   "gancho_apoio": "No vestiário dos linfócitos B, todo mundo ficou com a camisa de treino.",
   "imagem": {
     "arquivo": "dia-302.png",
-    "cena": "Macrô de roupeiro num vestiário de futebol: uma fileira de linfócitos B redondos veste a mesma camisa de treino com cinco estrelas, segurando camisas novas de outras cores que não conseguem vestir. Um linfócito T estende a mão vazia, sem aperto de mão.",
+    "cena": "Num vestiário de futebol, uma fileira de linfócitos B redondos veste a mesma camisa de treino estampada de estrelinhas e segura camisas novas de outras cores que não consegue vestir. Um linfócito T mais alto estende a mão vazia, sem aperto de mão. Macrô, de roupeiro, com um cesto de roupa e a comanda em branco no bolso do guardanapo, coça a cabeça.",
     "foco": "50% 35%",
-    "alt": "Fim de jogo e ninguém consegue trocar de camisa. Por quê?"
+    "alt": "Fim de jogo e ninguém consegue trocar de camisa"
   },
   "imagem_macete": {
     "arquivo": "dia-302-macete.png",
-    "cena": "Callback: em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. O Macrô segura o plugue que faltava.",
+    "cena": "Em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. Macrô ergue o plugue que faltava, como um tesouro.",
     "foco": "50% 45%",
     "alt": "Sem CD40L, o linfócito B não troca de classe"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM*",
-      "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica).",
-      "fala": null
+      "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica) e ninguém veste a de IgG, IgA ou IgE. Pneumocystis entra porque o macrófago também depende desse aperto de mão.",
+      "fala": "Comi, mostrei, avisei. Mas sem aperto de mão ninguém troca de camisa."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "IgM alta e o resto sumiu: qual defeito?"
+    "pergunta": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?"
   },
   "cta": null,
   "reel": null,

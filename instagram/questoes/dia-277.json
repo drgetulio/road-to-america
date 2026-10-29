@@ -8,23 +8,24 @@
   "topico": "Icterícia e aleitamento",
   "conceito": "Breastfeeding jaundice (poor intake, first week) vs breast milk jaundice (after the first week)",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": "Agosto Dourado e Semana Mundial do Aleitamento Materno (1 a 7/8).",
   "remix_de": null,
   "explicacao_em": "2027-08-06",
   "tom": null,
-  "gancho": "Agosto Dourado: bebê amarelinho no quarto dia. *O que explica?*",
+  "gancho": "Agosto Dourado: bebê amarelinho no quarto dia e *a balança dedurou*",
   "gancho_apoio": "Semana Mundial do Aleitamento Materno. A pista está nas fraldas e na balança.",
   "imagem": {
     "arquivo": "dia-277.png",
-    "cena": "Garçom do Rodízio de Quinta com a plaquinha verde e vermelha diante de uma fábrica em forma de sol coberta de neblina amarela; na estrada, uma lambreta de entrega de leite estacionada ao lado de um calendário de parede; laço dourado do Agosto Dourado no canto.",
+    "cena": "O Garçom Espetinho, ao lado de uma pequena fábrica em forma de sol coberta por uma neblina amarela, segura a plaquinha verde e vermelha de lado. Na estrada em frente, uma lambreta de entrega de leite está estacionada ao lado de um calendário de parede em branco e de uma balancinha de bebê. Um laço dourado do Agosto Dourado enfeita o canto.",
     "foco": "50% 35%",
-    "alt": "Agosto Dourado: bebê amarelinho no quarto dia. O que explica?"
+    "alt": "Garçom ao lado da fábrica de bilirrubina coberta de neblina amarela"
   },
   "imagem_macete": {
     "arquivo": "dia-277-macete.png",
-    "cena": "Callback: agora várias lambretas cheias de gotas de leite chegam em fila, a neblina amarela se dissipa e o garçom vira a plaquinha para o lado verde; ao fundo, uma segunda fábrica, ao lado de um calendário com muitas folhas arrancadas, lembra a icterícia do leite materno, que vem mais tarde.",
+    "cena": "Agora várias lambretas cheias de gotas de leite chegam em fila, a neblina amarela se dissipa e o garçom vira a plaquinha para o lado verde. Ao fundo, uma segunda fábrica, ao lado de um calendário com muitas folhas arrancadas, lembra a icterícia do leite materno, que vem mais tarde.",
     "foco": "50% 45%",
-    "alt": "Primeira semana, pouca mamada: suboptimal intake jaundice"
+    "alt": "Primeira semana, pouca mamada: breastfeeding jaundice"
   },
   "questao": {
     "vinheta": "A term 4-day-old girl is exclusively breastfed. She feeds about 5 times daily and has had 2 wet diapers in 24 hours. Her weight is 11% below birth weight. Total bilirubin is 15 mg/dL, direct 0.4 mg/dL. Hemoglobin is normal, and the direct Coombs test is negative.",
@@ -32,43 +33,43 @@
     "alternativas": {
       "A": {
         "texto": "Breast milk jaundice",
-        "quiz": "Fator do leite"
+        "quiz": "Icterícia do leite materno"
       },
       "B": {
-        "texto": "Breastfeeding (suboptimal intake) jaundice",
-        "quiz": "Mamada insuficiente"
+        "texto": "Breastfeeding jaundice",
+        "quiz": "Icterícia da amamentação"
       },
       "C": {
         "texto": "ABO hemolytic disease",
         "quiz": "Hemólise ABO"
       },
       "D": {
-        "texto": "Biliary atresia",
-        "quiz": "Atresia biliar"
+        "texto": "Physiologic jaundice",
+        "quiz": "Icterícia fisiológica"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Primeira semana, pouca mamada: *suboptimal intake jaundice*",
+    "titulo": "Primeira semana, pouca mamada: *breastfeeding jaundice*",
     "certa": [
-      "Na primeira semana, poucas mamadas (o esperado é 8 a 12 por dia), poucas fraldas molhadas e perda de peso acima de 10% apontam para *suboptimal intake jaundice*, o antigo *breastfeeding jaundice*. Com pouco leite, o intestino anda devagar e a bilirrubina volta pela *circulação êntero-hepática*. A conduta é apoiar a amamentação (mais mamadas, ajuda de lactação) e acompanhar a bilirrubina, sem suspender o aleitamento."
+      "Na primeira semana, poucas mamadas (o esperado é 8 a 12 por dia), poucas fraldas molhadas e perda de peso acima de 10% apontam para *breastfeeding jaundice*, hoje também chamada de *suboptimal intake jaundice*. Com pouco leite, o intestino anda devagar e a bilirrubina volta pela *circulação êntero-hepática*. A conduta é apoiar a amamentação (mais mamadas, ajuda de lactação) e acompanhar a bilirrubina, sem suspender o aleitamento."
     ],
     "termos": [
-      "suboptimal intake jaundice",
-      "breast milk jaundice",
+      "breastfeeding jaundice",
+      "suboptimal intake",
       "enterohepatic circulation",
       "unconjugated bilirubin"
     ],
     "erradas": {
       "A": "A icterícia do leite materno (breast milk jaundice) começa depois da primeira semana, em bebê que mama bem e ganha peso.",
       "C": "Hemólise ABO traria Coombs direto positivo, anemia ou reticulócitos altos.",
-      "D": "Atresia biliar eleva a bilirrubina direta e deixa as fezes claras, e aqui a direta está normal."
+      "D": "A icterícia fisiológica também é indireta e aparece entre o segundo e o quarto dia, mas não explica perda de 11% do peso com só 2 fraldas molhadas: aqui a causa é a ingestão baixa."
     },
     "macete": {
       "frase": "*FEEDING* é falta de mamada; *MILK* é o leite em si",
-      "apoio": "Na imagem, a lambreta do leite chega poucas vezes e a fábrica de bilirrubina fica coberta de neblina amarela. Mais entregas por dia limpam o céu. No Agosto Dourado, o recado é apoiar a mamada, não tirar o peito.",
-      "fala": null
+      "apoio": "Na primeira semana, a lambreta do leite chega poucas vezes e a fábrica de bilirrubina fica coberta de neblina amarela; mais entregas por dia limpam o céu. A do leite materno vem depois da primeira semana, em bebê que ganha peso. No Agosto Dourado, o recado é apoiar a mamada, não tirar o peito.",
+      "fala": "Vai uma conduta aí, doutor? Hoje a conduta é mais mamada, com apoio."
     }
   },
   "legenda": {
@@ -89,7 +90,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Bebê de 4 dias amarelinho: qual o diagnóstico?"
+    "pergunta": "Bebê de 4 dias, só no peito, perdeu 11% do peso: qual diagnóstico?"
   },
   "cta": null,
   "reel": null,

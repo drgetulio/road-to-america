@@ -8,6 +8,7 @@
   "topico": "Trissomia do 21",
   "conceito": "Trisomy 21: most cases come from maternal meiotic nondisjunction",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-07",
@@ -15,14 +16,14 @@
   "gancho": "Na dança da meiose, um par de cromossomos não se soltou",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um salão de dança com pares de cromossomos em forma de X, simpáticos, dançando de mãos dadas. A música está terminando e quase todos os pares começam a se soltar. Não dá para ver qual par vai continuar junto nem de que lado do salão ele está.",
+    "cena": "Um salão de dança com luzinhas suaves. Pares de cromossomos em forma de X, simpáticos, dançam de mãos dadas. A música está terminando e quase todos os pares começam a se soltar. Na beirada, Seu Allen, a chavinha do manual de montagem, observa com calma, e setinhas de manual contornam os pares sem destacar nenhum.",
     "foco": "50% 35%",
-    "alt": "Na dança da meiose, um par de cromossomos não se soltou",
+    "alt": "Pares de cromossomos em forma de X dançam de mãos dadas no fim da música; Seu Allen observa com calma na beira do salão.",
     "arquivo": "dia-066.png"
   },
   "imagem_macete": {
-    "cena": "Callback do salão: a música acabou e os pares se soltaram, menos um, que segue de mãos dadas e entra junto numa célula grande e redonda (o ovócito), ao lado de um banco de espera com um relógio de parede, onde a célula ficou esperando por anos.",
-    "alt": "O par que não se separou veio da meiose I materna",
+    "cena": "Callback do salão: a música acabou e os pares se soltaram, menos um, que segue de mãos dadas e entra junto numa célula grande e redonda (o ovócito), ao lado de um banco de espera com um relógio de parede, onde a célula ficou esperando por anos. Seu Allen aponta com calma para o relógio.",
+    "alt": "Um único par de cromossomos segue de mãos dadas e entra no ovócito, ao lado de um banco de espera com relógio; Seu Allen aponta para o relógio.",
     "arquivo": "dia-066-macete.png"
   },
   "questao": {
@@ -67,7 +68,7 @@
     "macete": {
       "frase": "Par que *não solta* na *meiose I materna*",
       "apoio": "Pegadinha de prova: O NBME cobra a diferença pelo número: 47 é não disjunção, 46 com um 21 extra preso a outro cromossomo é translocação robertsoniana, e mistura de linhagens é mosaicismo.",
-      "fala": null
+      "fala": "Aqui a peça que importa é o momento de soltar as mãos."
     }
   },
   "legenda": {
@@ -90,7 +91,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual evento causou o cariótipo?"
+    "pergunta": "47,XX,+21 com pais de cariótipo normal: qual evento gerou isso?"
   },
   "cta": "simulado",
   "exemplo": false

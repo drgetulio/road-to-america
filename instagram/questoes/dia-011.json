@@ -7,22 +7,22 @@
   "sistema": "Sistema respiratório",
   "topico": "Pneumonia na criança",
   "conceito": "Uncomplicated pediatric community-acquired pneumonia: high-dose oral amoxicillin",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Dia Mundial da Pneumonia (12/11).",
   "remix_de": null,
   "explicacao_em": "2026-11-13",
   "tom": null,
-  "gancho": "No rodízio da pneumonia infantil, qual *espeto* sai primeiro?",
+  "gancho": "Macrô no rodízio da pediatria: o pulmão pediu a *picanha* da casa",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-011.png",
-    "cena": "O garçom do rodízio passa com vários espetos, cada um com frascos de xarope e cápsulas gigantes espetados como carne. Na mesa, a plaquinha verde e vermelha está em pé ao lado de um par de pulmões de pelúcia de cachecol e termômetro.",
+    "cena": "Macrô, de guardanapo xadrez, está à mesa de uma churrascaria ao lado de um par de pulmões de pelúcia de cachecol e termômetro. O Garçom Espetinho passa com espetos de frascos de xarope e cápsulas gigantes espetados como carne; a plaquinha verde e vermelha está de lado na mesa.",
     "foco": "50% 35%",
-    "alt": "No rodízio da pneumonia infantil, qual espeto sai primeiro?"
+    "alt": "Macrô no rodízio da pediatria: o pulmão pediu a picanha da casa"
   },
   "imagem_macete": {
     "arquivo": "dia-011-macete.png",
-    "cena": "Callback do rodízio: o garçom serve, em porção dupla, o espeto das cápsulas rosa e brancas (amoxicilina) no prato dos pulmões de pelúcia, com a plaquinha no verde. Os outros espetos voltam para a churrasqueira, e os pulmões sorriem com o cachecol afrouxado.",
+    "cena": "Callback do rodízio: o garçom serve, em porção dupla, o espeto das cápsulas rosa e brancas (amoxicilina) no prato dos pulmões de pelúcia, e o Macrô vira a plaquinha para o verde. Os outros espetos voltam para a churrasqueira, e os pulmões afrouxam o cachecol.",
     "alt": "O primeiro espeto é amoxicilina, porção dupla"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "C": "A doxiciclina não é escolha para pneumonia típica em criança pequena, e o pneumococo pede um betalactâmico."
     },
     "macete": {
-      "frase": "No rodízio da pneumonia infantil, o primeiro espeto é sempre a amoxicilina, e em porção dupla (dose alta, 90 mg/kg/dia). Azitromicina é o espeto do escolar com Mycoplasma.",
+      "frase": "No rodízio da pneumonia infantil, a amoxicilina é a *picanha da casa*: sai primeiro e em *porção dupla*. Azitromicina é o espeto do escolar com Mycoplasma.",
       "apoio": "Pegadinha de prova: O NBME oferece azitromicina para a criança pequena com consolidação lobar; a resposta continua sendo amoxicilina em dose alta.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "12/11 é o Dia Mundial da Pneumonia. No Rodízio de Quinta, a pediatria pergunta qual antibiótico abre a mesa.",
+    "contexto": "12/11 é o Dia Mundial da Pneumonia. No Rodízio de Quinta, o Macrô está na mesa da pediatria: criança de 3 anos, consolidação lobar, bebendo bem e indo para casa. Qual espeto abre a mesa?",
     "palavras_chave": [
       "fever and cough",
       "lobar consolidation",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Pneumonia lobar, tratamento em casa: qual remédio?"
+    "pergunta": "Pneumonia lobar aos 3 anos, tratamento em casa: qual antibiótico?"
   },
   "exemplo": false
 }

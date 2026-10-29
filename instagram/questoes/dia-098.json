@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), SCID por deficiência de ADA (dia 71), Neisseria meningitidis (dia 92)",
   "conceito": "Remix: Chlamydia trachomatis + ADA-deficient SCID + Neisseria meningitidis",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     1,
@@ -16,13 +16,13 @@
   ],
   "explicacao_em": "2027-02-08",
   "tom": null,
-  "gancho": "Remix: qual peça travou a *fábrica* de linfócitos?",
+  "gancho": "Bebê de 7 meses *sem timo e sem linfonodos*: quem sabotou a fábrica?",
   "gancho_apoio": "Três conceitos já vistos (dias 1, 71 e 92) e um intruso. Só um explica o quadro.",
   "imagem": {
     "arquivo": "dia-098.png",
-    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma casinha redonda de janela acesa, um com uma pequena fábrica de chaminé parada e um com duas bactérias em forma de feijão jogando confete vermelho. Uma caixa de discos fica ao lado.",
+    "cena": "Macrô, de comanda no bolso, banca o detetive com uma lupa diante de três pistas numa mesa: uma casinha redonda de janela acesa, uma pequena fábrica de chaminé parada e um canhãozinho de confete vermelho. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Toca-discos com três discos: casinha de janela acesa, fábrica de chaminé parada e dupla de feijões com confete."
+    "alt": "Macrô, de lupa, investiga três pistas: uma casinha de janela acesa, uma fábrica de chaminé parada e um canhãozinho de confete."
   },
   "imagem_macete": {
     "arquivo": "dia-098-macete.png",
@@ -36,22 +36,22 @@
     "alternativas": {
       "A": {
         "texto": "Obligate intracellular replication as reticulate bodies",
-        "quiz": "Corpo reticulado",
+        "quiz": "Reticulate bodies",
         "dia": 1
       },
       "B": {
         "texto": "Toxic dATP accumulation in lymphocytes",
-        "quiz": "dATP tóxico",
+        "quiz": "Toxic dATP buildup",
         "dia": 71
       },
       "C": {
         "texto": "Lipooligosaccharide-triggered cytokine release",
-        "quiz": "LOS e citocinas",
+        "quiz": "LOS cytokine release",
         "dia": 92
       },
       "D": {
         "texto": "Absent CD40 ligand on helper T cells",
-        "quiz": "Falta de CD40L"
+        "quiz": "Absent CD40 ligand"
       }
     },
     "correta": "B"
@@ -75,11 +75,11 @@
     "macete": {
       "frase": "Caminhão de lixo ADA quebrado: os *sacos de dATP* travam a fábrica",
       "apoio": "Na imagem, os sacos de lixo entopem a máquina de tijolos e a esteira de linfócitos para.",
-      "fala": null
+      "fala": "A greve do lixo voltou. Sem coleta de ADA, a fábrica inteira para."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo: clamídia, SCID e meningococo. Um bebê de 7 meses sem timo, sem linfonodos e com infecções oportunistas.",
+    "contexto": "Um bebê de 7 meses com sapinho de repetição, diarreia, pneumocistose e nenhum linfonodo palpável. Três conceitos de Step 1 voltam juntos: a clamídia, a greve do lixo na fábrica de linfócitos e o confete do meningococo. Mais um intruso.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,7 +94,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Sem T, B e NK aos 7 meses: qual mecanismo?"
+    "pergunta": "Sem timo e sem T, B e NK aos 7 meses: qual mecanismo?"
   },
   "cta": "pre_inscricao",
   "reel": null,

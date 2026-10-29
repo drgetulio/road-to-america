@@ -8,6 +8,7 @@
   "topico": "Endocardite infecciosa",
   "conceito": "Suspected endocarditis: three sets of blood cultures before antibiotics, then echocardiography",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-23",
@@ -16,13 +17,13 @@
   "gancho_apoio": "Paciente estável, sopro novo e febre há cinco dias. O que vem antes do antibiótico?",
   "imagem": {
     "arquivo": "dia-233.png",
-    "cena": "Placa verde de rodovia com três saídas na estrada de uma padaria de bairro ao amanhecer. Na porta, um caminhão de entrega buzina, ansioso para entrar, enquanto o forno ainda está aceso.",
+    "cena": "Padaria de bairro ao amanhecer, com o relógio sem números ainda marcando 3 horas. Dona Térmica, de avental, segura a porta: lá fora, um caminhão de entrega buzina, ansioso para entrar, enquanto o forno ainda está aceso. Ao fundo, uma montanha com um megafone no topo.",
     "foco": "50% 35%",
-    "alt": "Febre, sopro novo e uma pressa danada de tratar"
+    "alt": "Dona Térmica segura a porta da padaria enquanto o caminhão de entrega buzina"
   },
   "imagem_macete": {
     "arquivo": "dia-233-macete.png",
-    "cena": "Callback: três bandejas de pães saem do forno e ficam em fila no balcão; só então o caminhão entra. Ao fundo, numa montanha, um megafone solta uma onda de som que volta como eco.",
+    "cena": "Três bandejas de pães saem do forno e ficam em fila no balcão; só então o caminhão entra. Ao fundo, o megafone da montanha solta uma onda de som que volta como eco, e Dona Térmica confere as três bandejas, satisfeita.",
     "foco": "50% 45%",
     "alt": "Endocardite: hemocultura antes do antibiótico"
   },
@@ -68,11 +69,11 @@
     "macete": {
       "frase": "*Três fornadas antes de abrir a padaria*",
       "apoio": "Na imagem, as três bandejas saem do forno ao amanhecer, e só depois o caminhão de entrega (o antibiótico) entra na padaria; por último, o megafone na montanha faz eco. Cultura, antibiótico, eco.",
-      "fala": null
+      "fala": "Já vi esse caso às 3 da manhã: três fornadas antes do caminhão."
     }
   },
   "legenda": {
-    "contexto": "Febre há cinco dias, sopro holossistólico novo que aumenta na inspiração, hemorragias em lasca e uso de drogas injetáveis. Ele está estável. Qual é a primeira saída na placa do plantão?",
+    "contexto": "Febre há cinco dias, sopro holossistólico novo que aumenta na inspiração, hemorragias em lasca e uso de drogas injetáveis. Ele está estável. Qual é o primeiro passo com ele estável?",
     "palavras_chave": [
       "fever",
       "heroin injection",
@@ -91,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Suspeita de endocardite, estável: e agora?"
+    "pergunta": "Usa drogas IV, sopro novo e está estável: 1º passo?"
   },
   "cta": null,
   "reel": null,

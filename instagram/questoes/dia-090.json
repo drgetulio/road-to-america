@@ -11,17 +11,17 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-31",
-  "gancho": "Largou, trocou ou ficou: *em que time cada paciente conta*?",
+  "gancho": "Amigo secreto do ensaio clínico: quem *não deu presente* ainda conta?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O Viés, fantasminha de lençol com lupa, espia de trás de uma tabela 2x2 na beira de um campo de futebol. Jogadores de camisa azul e vermelha andam pelo campo; alguns azuis estão sentados no banco e um troca de camisa no túnel.",
+    "cena": "Numa festa de fim de ano da firma, o Viés, de lupa, espia de trás de uma tabela 2x2 em branco enquanto bonequinhos de camisa azul e vermelha trocam presentes de amigo secreto. Um bonequinho azul está sentado sem presente nas mãos, e outro tenta trocar escondido o papel que tirou.",
     "foco": "50% 35%",
-    "alt": "Largou, trocou ou ficou: em que time cada paciente conta?",
+    "alt": "O Viés espia uma troca de amigo secreto: um bonequinho azul está sem presente e outro tenta trocar escondido o papel sorteado.",
     "arquivo": "dia-090.png"
   },
   "imagem_macete": {
-    "cena": "Callback do estádio: um juiz em forma de prancheta conta cada jogador pela cor da camisa sorteada no começo, inclusive os do banco e o que trocou de camisa. O portão do estádio está fechado, e o Viés fica do lado de fora, espiando pela grade com a lupa.",
-    "alt": "Intention-to-treat protege o sorteio",
+    "cena": "Callback da festa: uma prancheta com olhos confere cada bonequinho pela cor do papel sorteado no começo, inclusive o que ficou sem presente e o que tentou trocar. O Viés fica do lado de fora da porta, espiando pela janela com a lupa.",
+    "alt": "Uma prancheta confere cada bonequinho pela cor do papel sorteado; o Viés fica do lado de fora, espiando pela janela.",
     "arquivo": "dia-090-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "D": "Ela não reduz a amostra necessária; como dilui o efeito, pode até pedir uma amostra maior."
     },
     "macete": {
-      "frase": "*Escalou, contou*: o sorteio fica protegido",
+      "frase": "ITT é *amigo secreto*: tirou no sorteio, conta até o fim",
       "apoio": "Pegadinha de prova: O NBME pergunta qual análise preserva a randomização (intention-to-treat) e qual superestima o efeito em quem aderiu (per-protocol); em estudos de não inferioridade, as duas são apresentadas.",
-      "fala": null
+      "fala": "Se ninguém troca de papel, eu fico de fora da festa."
     }
   },
   "legenda": {
-    "contexto": "Um ensaio clínico em que parte do grupo do remédio largou o tratamento e parte do placebo arrumou o remédio por fora. A análise manteve todo mundo no grupo sorteado. Qual é a vantagem disso?",
+    "contexto": "Num ensaio clínico, parte do grupo do remédio parou por efeito adverso e parte do placebo arrumou o remédio por fora. A análise manteve todo mundo no grupo sorteado. O Viés está inconformado. Qual é a vantagem disso?",
     "palavras_chave": [
       "randomized trial",
       "placebo",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é a vantagem dessa análise?"
+    "pergunta": "Todos analisados no grupo do sorteio: qual a principal vantagem?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -8,15 +8,16 @@
   "topico": "Transtorno de pânico",
   "conceito": "Panic disorder: SSRI plus CBT, benzodiazepines only short-term",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-18",
-  "gancho": "No rodízio do tratamento, qual espeto fica para o longo prazo?",
+  "gancho": "No rodízio do pânico, o *pão de alho* chega rápido. Mas é ele que fica?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um garçom de rodízio com quatro espetos diante de uma churrasqueira: um assando devagar na brasa, um pão de alho pequeno, um espeto com uma pílula em forma de coração e outro com uma nuvem azul. A plaquinha de duas cores ainda está virada de lado.",
+    "cena": "O Garçom Espetinho, diante de uma churrasqueira, segura quatro espetos: um assando devagar na brasa, um pão de alho pequeno, um com uma pílula em forma de coração e outro com uma nuvem azul. A plaquinha de duas cores ainda está virada de lado numa mesa tranquila.",
     "foco": "50% 35%",
-    "alt": "Um garçom de rodízio com quatro espetos diante de uma churrasqueira: um assando devagar na brasa, um pão de alho pequeno, um espeto com uma pílula em forma de coração e outro com uma nuvem azul.",
+    "alt": "No rodízio do pânico, o pão de alho chega rápido. Mas é ele que fica?",
     "arquivo": "dia-046.png"
   },
   "imagem_macete": {
@@ -64,13 +65,13 @@
       "D": "A buspirona tem algum papel na ansiedade generalizada, mas não funciona no transtorno de pânico."
     },
     "macete": {
-      "frase": "ISRS *assa devagar e fica*; benzo é *só a entrada*",
+      "frase": "Benzo é o *pão de alho* do rodízio: alivia na hora, mas ninguém janta só pão de alho. Quem fica para o longo prazo é o ISRS, junto com a TCC.",
       "apoio": "Pegadinha de prova: O NBME costuma perguntar a terapia de longo prazo e oferece o benzodiazepínico, que alivia rápido; a resposta é ISRS com TCC.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Crises que chegam do nada, exames normais e o pedido de um tratamento que dure. O garçom do rodízio traz quatro espetos e só um assa no tempo certo.",
+    "contexto": "Crises que chegam do nada, exames normais e o pedido de um tratamento que dure. O Garçom Espetinho traz quatro espetos, e só um assa no tempo certo para o longo prazo.",
     "palavras_chave": [
       "recurrent palpitations",
       "fear of dying",
@@ -88,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual remédio a longo prazo no pânico?"
+    "pergunta": "Crises de pânico recorrentes e TCC marcada: qual remédio fica?"
   },
   "cta": "simulado",
   "exemplo": false

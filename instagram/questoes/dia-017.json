@@ -7,22 +7,22 @@
   "sistema": "Sistemas respiratório e renal/urinário",
   "topico": "Enfisema e alfa-1 antitripsina",
   "conceito": "Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).",
   "remix_de": null,
   "explicacao_em": "2026-11-19",
   "tom": null,
-  "gancho": "Dia da DPOC: por que o estrago começou nos andares de *baixo*?",
+  "gancho": "Dia da DPOC: o time nunca fumou e mesmo assim tomou *goleada* embaixo",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-017.png",
-    "cena": "Estádio de futebol em corte, estilo manual de montagem, com o formato de dois pulmões. As arquibancadas de baixo estão cheias de buracos espalhados por igual, e as de cima estão inteiras. No portão do estádio, um ônibus de time em forma de fígado está parado no engarrafamento.",
+    "cena": "Estádio de futebol em corte, com o formato de dois pulmões: as arquibancadas de baixo estão cheias de buracos espalhados por igual, e as de cima estão inteiras. Na cabine de narração, Macrô, de guardanapo xadrez e fone de locutor, aponta o gol vazio lá embaixo, com setinhas de manual em volta. No portão, um ônibus de time em forma de fígado está preso no engarrafamento.",
     "foco": "50% 35%",
-    "alt": "Dia da DPOC: por que o estrago começou nos andares de baixo?"
+    "alt": "Dia da DPOC: o time nunca fumou e mesmo assim tomou goleada embaixo"
   },
   "imagem_macete": {
     "arquivo": "dia-017-macete.png",
-    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, que está vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso dentro daquele ônibus em forma de fígado, engarrafado no portão do estádio, acenando da janela.",
+    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso no ônibus em forma de fígado, acenando da janela, e o Macrô narra de pé.",
     "alt": "Sem goleiro, gol nos lobos inferiores"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "C": "Hipertrofia das glândulas mucosas é a bronquite crônica, ligada à tosse produtiva e ao tabagismo."
     },
     "macete": {
-      "frase": "A alfa-1 é o goleiro do pulmão. Sem goleiro, a elastase faz gol embaixo, nos lobos inferiores, e o placar é panacinar. O cigarro é o atacante que entra junto e piora o jogo.",
+      "frase": "A alfa-1 é o goleiro do pulmão, e ele ficou *preso no ônibus do fígado*. Sem goleiro, a elastase faz gol embaixo, nos lobos inferiores.",
       "apoio": "Pegadinha de prova: O NBME junta enfisema em jovem não fumante com enzimas hepáticas alteradas; pense em alfa-1 antitripsina e lembre dos glóbulos PAS positivos nos hepatócitos.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, um enfisema que não segue o roteiro do cigarro.",
+    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, o Macrô narra um enfisema que não segue o roteiro do cigarro: 36 anos, nunca fumou, buracos nos lobos de baixo e o fígado reclamando.",
     "palavras_chave": [
       "never smoker",
       "FEV1/FVC",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Enfisema em jovem que não fuma: qual mecanismo?"
+    "pergunta": "Enfisema panacinar basal aos 36 anos, sem cigarro: qual mecanismo?"
   },
   "exemplo": false
 }

@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Hipersensibilidade tipo I (dia 36), Febre reumática (dia 57)",
   "conceito": "Remix: Bruton agammaglobulinemia + Type I hypersensitivity + Rheumatic fever",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     8,
@@ -15,17 +15,17 @@
     57
   ],
   "explicacao_em": "2027-01-04",
-  "gancho": "Remix de domingo: pipoca, sósia ou escola fechada?",
+  "gancho": "Penicilina, *dez minutos* e um menino chiando: que relógio é esse?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho com três discos em pé ao lado: um com um carrinho de pipoca no selo, um com um chapéu igual em dois bonecos e um com o portão trancado de uma escolinha. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "cena": "Macrô, de comanda no bolso, é o porteiro de um prédio e recebe três entregas ao mesmo tempo: a bag térmica de um motoboy, uma caixa de encomenda internacional coberta de selos que chega devagar numa esteira e um envelope de uma escolinha lacrado com um cadeado desenhado. Ele coça a cabeça, sem saber qual abrir primeiro. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: pipoca, sósia ou escola fechada?",
+    "alt": "Macrô, porteiro de prédio, recebe três entregas: a bag de um motoboy, uma encomenda internacional e o envelope trancado de uma escolinha.",
     "arquivo": "dia-063.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco da pipoca gira e o carrinho, coberto de antenas em forma de Y, explode pipoca para todo lado, com um cronômetro de cozinha quase sem girar ao lado. O disco do chapéu espera com um calendário de várias semanas, e o da escola continua trancado.",
-    "alt": "Estourou em minutos: é a pipoca",
+    "cena": "Callback da portaria: a bag do motoboy está aberta e dela saem antenas em forma de Y grudadas em pipocas estourando, e o relógio do Macrô marca poucos minutos. A encomenda internacional ainda espera na alfândega com um coraçãozinho preso no lacre, e o envelope da escolinha continua trancado.",
+    "alt": "A bag do motoboy explode em pipoca e antenas em Y; a encomenda internacional espera na alfândega com um coraçãozinho no lacre.",
     "arquivo": "dia-063-macete.png"
   },
   "questao": {
@@ -71,13 +71,13 @@
       "D": "Intruso: imunocomplexo com complemento baixo é o tipo III, como a doença do soro, que leva 1 a 2 semanas para aparecer."
     },
     "macete": {
-      "frase": "Minutos é *pipoca*, semanas é *sósia*",
+      "frase": "Tipo I é *motoboy*: chega em minutos",
       "apoio": "Pegadinha de prova: O NBME planta um estreptococo na vinheta para puxar febre reumática; olhe primeiro o relógio: minutos depois do remédio é tipo I.",
-      "fala": null
+      "fala": "Pedi IgE, chegou em 10 minutos. A febre reumática ainda está na alfândega."
     }
   },
   "legenda": {
-    "contexto": "Três conceitos de imunologia já vistos voltam juntos: uma escola B fechada, um carrinho de pipoca e um caso de sósia. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Faringite, injeção de penicilina benzatina e, dez minutos depois, urticária, chiado e pressão caindo. Três conceitos de imuno já vistos voltam juntos, mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +95,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mecanismo explica a reação?"
+    "pergunta": "Urticária e chiado 10 min após penicilina: qual mecanismo?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

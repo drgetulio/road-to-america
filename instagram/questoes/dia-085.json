@@ -15,13 +15,13 @@
   "gancho": "Janeiro Roxo: o Macrô e o *granuloma bem organizado*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O Macrô, de guardanapo xadrez, na porta do boteco dos micróbios, enfeitada com uma fita roxa de conscientização. Ele olha para dois cenários lado a lado: uma salinha com poucos bacilos e uma sala cheia, sem dizer qual é o caso de hoje.",
+    "cena": "Macrô, sereno e de comanda no bolso, numa praça com uma fita roxa de conscientização amarrada num banco. Ao lado, dois canteiros desenhados como um diagrama: num, poucos bastonetes; no outro, muitos bastonetes espalhados. Ele observa os dois com cuidado, sem dizer qual é o caso de hoje.",
     "foco": "50% 35%",
-    "alt": "Janeiro Roxo: o Macrô e o granuloma bem organizado",
+    "alt": "Macrô, numa praça com uma fita roxa no banco, observa dois canteiros: um com poucos bastonetes e outro com muitos.",
     "arquivo": "dia-085.png"
   },
   "imagem_macete": {
-    "cena": "Callback: uma célula T auxiliar entrega ao Macrô um envelope amarelo brilhante (IFN-gama), e ele, ativado, constrói um muro de pedras arrumado em volta dos poucos bacilos. A fita roxa continua na porta.",
+    "cena": "Callback da praça: uma célula T auxiliar de capacete entrega ao Macrô um envelope amarelo brilhante (IFN-gama), e ele, ativado, constrói um muro de pedras arrumado em volta dos poucos bacilos. A fita roxa continua amarrada no banco.",
     "alt": "Poucos bacilos, granuloma firme: Th1",
     "arquivo": "dia-085-macete.png"
   },
@@ -67,7 +67,7 @@
     "macete": {
       "frase": "Tuberculoide é *Th1 e trancado*, lepromatosa é *lotada*",
       "apoio": "Pegadinha de prova: O NBME dá a lesão única e anestésica com nervo espessado e pergunta a citocina ou a célula; poucos bacilos e granuloma organizado é Th1 com IFN-gama.",
-      "fala": null
+      "fala": "Granuloma firme, poucos bacilos e tratamento que cura."
     }
   },
   "legenda": {
@@ -90,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual resposta imune predomina?"
+    "pergunta": "Placa anestésica, nervo espesso e raros bacilos: qual resposta imune?"
   },
   "cta": "simulado",
   "exemplo": false

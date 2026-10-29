@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-02-07",
   "tom": null,
-  "gancho": "Estádio lotado ou várzea vazia: qual grito de *gol* é verdade?",
-  "gancho_apoio": "O mesmo teste, com a mesma sensibilidade e especificidade, em duas plateias diferentes.",
+  "gancho": "O mesmo teste rápido saiu da clínica e *foi para a feira*: o que mudou?",
+  "gancho_apoio": "O mesmo teste, com a mesma sensibilidade e especificidade, em dois lugares diferentes.",
   "imagem": {
     "arquivo": "dia-097.png",
-    "cena": "Duas arquibancadas de futebol lado a lado, uma lotada e outra quase vazia, com o mesmo apito de juiz pendurado entre elas. O Viés espia por trás de um placar quadriculado em branco, com a lupa na mão.",
+    "cena": "Numa feira de rua com barracas de frutas, o Viés, de lupa, espia de trás de uma tabela 2x2 em branco. De um lado, uma clínica pequena com a porta lotada; do outro, o corredor da feira quase vazio. O mesmo kit de teste rápido, sem marcas, flutua entre os dois lugares.",
     "foco": "50% 35%",
-    "alt": "Duas arquibancadas, uma lotada e outra vazia, com o Viés espiando atrás do placar."
+    "alt": "O Viés espia numa feira de rua: de um lado, uma clínica lotada; do outro, o corredor quase vazio; o mesmo kit de teste flutua entre os dois."
   },
   "imagem_macete": {
     "arquivo": "dia-097-macete.png",
-    "cena": "Callback: na arquibancada vazia, a maioria das bandeiras levantadas é segurada por torcedores de papelão (falsos positivos), e só dois torcedores de verdade comemoram. O Viés ri por trás do placar. Na arquibancada lotada, quase todas as bandeiras são de torcedores reais.",
+    "cena": "Callback da feira: das bandeirinhas de alerta levantadas no corredor vazio, quase todas são seguradas por bonecos de papelão, e só dois personagens de verdade aparecem. O Viés ri atrás da tabela, segurando um celular com uma corrente de mensagens sem palavras. Na porta da clínica lotada, quase toda bandeirinha é de verdade.",
     "foco": "50% 40%",
-    "alt": "Na arquibancada vazia, quase todas as bandeiras são de torcedores de papelão; o Viés ri atrás do placar."
+    "alt": "No corredor vazio, quase toda bandeirinha de alerta é de boneco de papelão; o Viés ri com um celular cheio de mensagens; na clínica, as bandeiras são de verdade."
   },
   "questao": {
     "vinheta": "A rapid viral antigen test has 90% sensitivity and 90% specificity. It is first used in a referral clinic where disease prevalence is 50%, and then at a community health fair where prevalence is 5%.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Higher sensitivity",
-        "quiz": "Sensibilidade maior"
+        "quiz": "Higher sensitivity"
       },
       "B": {
         "texto": "Lower specificity",
-        "quiz": "Especificidade menor"
+        "quiz": "Lower specificity"
       },
       "C": {
         "texto": "Lower positive predictive value",
-        "quiz": "VPP menor"
+        "quiz": "Lower PPV"
       },
       "D": {
         "texto": "Lower negative predictive value",
-        "quiz": "VPN menor"
+        "quiz": "Lower NPV"
       }
     },
     "correta": "C"
@@ -66,13 +66,13 @@
       "D": "Com menos doentes, um negativo fica ainda mais confiável: o VPN sobe, de 90% para mais de 99%."
     },
     "macete": {
-      "frase": "Prevalência é a *plateia*: várzea vazia, grito de gol falso",
+      "frase": "VPP é *corrente de WhatsApp*: com pouca doença, quase todo alerta é golpe",
       "apoio": "Na imagem, o Viés se esconde atrás do placar enquanto as duas arquibancadas torcem.",
-      "fala": null
+      "fala": "Prevalência baixa é o meu habitat. Ali todo alarme parece verdade."
     }
   },
   "legenda": {
-    "contexto": "Sábado sem viés: o mesmo teste rápido vai da clínica de referência para a feira de saúde do bairro. O que muda nos números?",
+    "contexto": "O mesmo teste rápido, com 90% de sensibilidade e 90% de especificidade, sai da clínica de referência, onde metade das pessoas tem a doença, e vai para a feira de saúde do bairro, onde só 5% têm. O Viés adorou a mudança. O que muda nos números?",
     "palavras_chave": [
       "rapid antigen test",
       "referral clinic",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Prevalência caiu de 50% para 5%: e aí?"
+    "pergunta": "Mesmo teste, prevalência de 50% para 5%: qual valor muda e como?"
   },
   "cta": null,
   "reel": null,

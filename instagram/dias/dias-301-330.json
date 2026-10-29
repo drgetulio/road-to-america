@@ -17,7 +17,7 @@
       295
     ],
     "explicacao_em": "2027-08-30",
-    "gancho_pt": "Três discos no toca-discos: qual toxina estragou o churrasco?",
+    "gancho_pt": "Hambúrguer mal passado no churrasco da família e o rim pagou a conta",
     "vinheta_en": "A 4-year-old boy has had bloody diarrhea for 5 days, beginning 3 days after eating an undercooked hamburger at a family barbecue. He has had no fever. Today he is pale and has decreased urine output. Hemoglobin is 7.6 g/dL, platelets are 41,000/mm3, and creatinine is 1.8 mg/dL. The blood smear shows schistocytes.",
     "pergunta_en": "Which mechanism best explains his condition?",
     "alternativas": [
@@ -46,12 +46,12 @@
         "B": "O superantígeno (dia 267) causa febre alta, choque e eritrodermia difusa, e não diarreia com sangue seguida de HUS.",
         "D": "A dextrana (dia 295) prende o viridans à valva lesada depois de procedimento dentário e causa endocardite subaguda, não diarreia."
       },
-      "macete": "Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC. É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
+      "macete": "Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC. É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio (o 60S). Quem paga a conta é o glomérulo, que entope de microtrombos. O grampeador é o superantígeno, a calda é a dextrana do viridans e o interruptor é o cAMP da cólera.",
       "pegadinha_de_prova": "O NBME cobra que a EHEC não fermenta sorbitol, não invade a mucosa, quase não dá febre e que antibiótico pode aumentar o risco de HUS."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: a vintage turntable with three vinyl records side by side, each center label showing a simple icon: a tiny rod-shaped bacterium wearing a straw hat, a stapler, and a small jar of golden syrup; a fourth record in a different color, with a light switch icon, lies apart; Macrô wears headphones as the DJ, scratching his head, unsure which record to play. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Churrasco de domingo no quintal: Macrô, de avental sobre o guardanapo xadrez, vira os hambúrgueres na churrasqueira de tijolo e para, desconfiado, diante de um ainda rosado por dentro. Na mesa estão três convidados que ele conhece de outros carnavais (um bacilinho de chapéu de palha, um grampeador de óculos escuros e um potinho de calda dourada) e um penetra segurando um interruptor de luz. Na parede, um vinil pequeno.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: At a Sunday family barbecue in a backyard, Macrô wears an apron over his checkered napkin, flips burgers on a brick grill and pauses, suspicious, at one burger still pink inside. At the table sit three guests he knows from before (a tiny rod-shaped bacterium in a straw hat, a small stapler in sunglasses and a little jar of golden syrup) plus a gate-crasher holding a light switch. A small vinyl record hangs on the wall in one corner. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -59,18 +59,18 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: the same turntable: only the record with the straw-hat bacterium spins; a small red pair of scissors flies out of it and snips a little round two-part factory in half; in the background a bean-shaped filter is clogged with tiny round grains; Macrô points at the spinning record with his headphones around his neck, looking proud. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "O bacilinho de chapéu de palha dá um passo à frente e uma tesourinha vermelha sai do chapéu dele, cortando ao meio uma pequena fábrica redonda de duas partes; ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O grampeador, o potinho e o penetra voltam para a mesa, e Macrô aponta a espátula para o bacilinho: caso resolvido.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: The straw-hat bacterium steps forward and a small red pair of scissors flies out of its hat, snipping a little round two-part factory in half; in the background a bean-shaped filter is clogged with tiny round grains. The stapler, the syrup jar and the gate-crasher go back to the table, and Macrô points at the straw-hat bacterium with his spatula, case solved. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Três discos no toca-discos: qual toxina estragou o churrasco?\n\nRemix de domingo com E. coli êntero-hemorrágica (dia 232), superantígenos (dia 267) e estreptococos do grupo viridans (dia 295), mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual disco explica o quadro?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 1 review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Microbiologia #Microbiology",
-    "legenda_explicacao_pt": "Gabarito do dia 301: letra C, Toxin inactivating the 60S ribosomal subunit.\n\nDiarreia com sangue e sem febre depois de carne mal passada, seguida de esquizócitos no sangue periférico, plaquetas baixas e creatinina subindo, é a hemolytic uremic syndrome por EHEC O157:H7. A Shiga-like toxin cliva o rRNA 28S da subunidade 60S, para a síntese de proteína do endotélio e lesa sobretudo os capilares do glomérulo. Antibiótico não ajuda e pode aumentar a liberação da toxina.\n\nMacete: Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC.\n\nQuer estudar com método e acompanhamento? A pré-inscrição da Road to America está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_questao_pt": "Hambúrguer mal passado no churrasco da família e o rim pagou a conta\n\nDomingo de revisão com os dias 232, 267 e 295, mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual mecanismo explica o quadro?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: Sunday remix, spaced repetition, Step 1 review\n\nQuer estudar com método e acompanhamento? A pré-inscrição está aberta. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Microbiologia #Microbiology",
+    "legenda_explicacao_pt": "Gabarito do dia 301: letra C, Toxin inactivating the 60S ribosomal subunit.\n\nDiarreia com sangue e sem febre depois de carne mal passada, seguida de esquizócitos no sangue periférico, plaquetas baixas e creatinina subindo, é a hemolytic uremic syndrome por EHEC O157:H7. A Shiga-like toxin cliva o rRNA 28S da subunidade 60S, para a síntese de proteína do endotélio e lesa sobretudo os capilares do glomérulo. Antibiótico não ajuda e pode aumentar a liberação da toxina.\n\nMacete: Hambúrguer mal passado, tesoura no 60S e rim no carimbo: é a EHEC. É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio (o 60S). Quem paga a conta é o glomérulo, que entope de microtrombos. O grampeador é o superantígeno, a calda é a dextrana do viridans e o interruptor é o cAMP da cólera.\n\nQuer estudar com método e acompanhamento? A pré-inscrição da Road to America está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "Diarreia com sangue e depois HUS: qual?",
+      "pergunta_curta_pt": "Diarreia com sangue e, dias depois, anemia e rim parando: qual mecanismo?",
       "opcoes": [
         "cAMP no enterócito",
         "Superantígeno",
@@ -82,19 +82,19 @@
     "fonte": "Murray PR, Rosenthal KS, Pfaller MA. Medical Microbiology, 9th ed., 2021; CDC, Shiga toxin-producing E. coli: information for clinicians, 2024.",
     "revisao": {
       "medica": "Resolvida às cegas: C (Shiga-like toxin no 60S, HUS por EHEC). Gabarito único; A é o intruso (cAMP), B e D são os discos 267 e 295. Mecanismo, explicação e pegadinha conferidos (Murray 2021, CDC). Mudado: o disco da EHEC na capa e na explicação passou do hambúrguer para o bacilinho de chapéu de palha do dia 232, e o macete agora cita o dia 232.",
-      "humor_compliance": "Piada do DJ com três discos ajuda a separar os conceitos e agora reaproveita o bacilinho do dia 232, o que ajuda o seguidor a reconhecer. Sem paciente na imagem, legendas dentro do limite, CTA de pré-inscrição sem promessa, CRM-DF 13610. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
+      "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Macrô no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Piada do DJ com três discos ajuda a separar os conceitos e agora reaproveita o bacilinho do dia 232, o que ajuda o seguidor a reconhecer. Sem paciente na imagem, legendas dentro do limite, CTA de pré-inscrição sem promessa, CRM-DF 13610. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
     },
-    "gancho": "Três discos no toca-discos: *qual toxina estragou o churrasco?*",
-    "gancho_apoio": "Remix com EHEC, superantígenos e viridans. Um dos discos é intruso.",
+    "gancho": "Hambúrguer mal passado no churrasco da família e *o rim pagou a conta*",
+    "gancho_apoio": "Três conceitos que já passaram pelo feed e um intruso. Qual mecanismo explica o sangue nas fezes e depois o rim?",
     "imagem": {
       "arquivo": "dia-301.png",
-      "cena": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
+      "cena": "Churrasco de domingo no quintal: Macrô, de avental sobre o guardanapo xadrez, vira os hambúrgueres na churrasqueira de tijolo e para, desconfiado, diante de um ainda rosado por dentro. Na mesa estão três convidados que ele conhece de outros carnavais (um bacilinho de chapéu de palha, um grampeador de óculos escuros e um potinho de calda dourada) e um penetra segurando um interruptor de luz. Na parede, um vinil pequeno.",
       "foco": "50% 35%",
-      "alt": "Três discos no toca-discos: qual toxina estragou o churrasco?"
+      "alt": "Macrô no churrasco desconfia de um hambúrguer rosado"
     },
     "imagem_macete": {
       "arquivo": "dia-301-macete.png",
-      "cena": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
+      "cena": "O bacilinho de chapéu de palha dá um passo à frente e uma tesourinha vermelha sai do chapéu dele, cortando ao meio uma pequena fábrica redonda de duas partes; ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O grampeador, o potinho e o penetra voltam para a mesa, e Macrô aponta a espátula para o bacilinho: caso resolvido.",
       "foco": "50% 45%",
       "alt": "Shiga-like toxin: tesoura no 60S, conta no rim"
     },
@@ -142,12 +142,12 @@
       },
       "macete": {
         "frase": "*Hambúrguer mal passado, tesoura no 60S e rim no carimbo*: é a EHEC",
-        "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
-        "fala": null
+        "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio (o 60S). Quem paga a conta é o glomérulo, que entope de microtrombos. O grampeador é o superantígeno, a calda é a dextrana do viridans e o interruptor é o cAMP da cólera.",
+        "fala": "Comi, mostrei, avisei. Hambúrguer bem passado, eu também aviso."
       }
     },
     "legenda": {
-      "contexto": "Remix de domingo com E. coli êntero-hemorrágica (dia 232), superantígenos (dia 267) e estreptococos do grupo viridans (dia 295), mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual disco explica o quadro?",
+      "contexto": "Domingo de revisão com os dias 232, 267 e 295, mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual mecanismo explica o quadro?",
       "palavras_chave": [
         "Sunday remix",
         "spaced repetition",
@@ -163,7 +163,7 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "Diarreia com sangue e depois HUS: qual?"
+      "pergunta": "Diarreia com sangue e, dias depois, anemia e rim parando: qual mecanismo?"
     },
     "cta": null,
     "tom": null,
@@ -213,12 +213,12 @@
         "C": "A deficiência de AID também bloqueia a troca de classe, mas é autossômica recessiva, aumenta os linfonodos e não causa Pneumocystis.",
         "D": "Defeito da cadeia gama comum causa SCID ligada ao X, com linfócitos T e NK ausentes, e não IgM alta isolada."
       },
-      "macete": "Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM. No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica).",
+      "macete": "Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM. No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica) e ninguém veste a de IgG, IgA ou IgE. Pneumocystis entra porque o macrófago também depende desse aperto de mão.",
       "pegadinha_de_prova": "O NBME dá IgM alta com o resto baixo e pede o defeito; Pneumocystis ou Cryptosporidium apontam para CD40L no linfócito T, e não para AID no linfócito B."
     },
     "imagem_questao": {
-      "conceito_visual": "Macrô de roupeiro num vestiário de futebol: uma fileira de linfócitos B redondos veste a mesma camisa de treino com cinco estrelas, segurando camisas novas de outras cores que não conseguem vestir. Um linfócito T estende a mão vazia, sem aperto de mão.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: a cozy soccer locker room; a row of round lymphocyte characters all wear the same oversized training jersey with a five-star pattern, each holding a new jersey in a different color (blue, green, red) that they cannot put on; a taller round helper cell stands in front of them with an open empty hand, no handshake happening; Macrô stands nearby as the kit manager holding a laundry basket, puzzled. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Num vestiário de futebol, uma fileira de linfócitos B redondos veste a mesma camisa de treino estampada de estrelinhas e segura camisas novas de outras cores que não consegue vestir. Um linfócito T mais alto estende a mão vazia, sem aperto de mão. Macrô, de roupeiro, com um cesto de roupa e a comanda em branco no bolso do guardanapo, coça a cabeça.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: A cozy soccer locker room: a row of round lymphocyte characters all wear the same oversized training jersey with a star pattern, each holding a new jersey in a different color (blue, green, red) that they cannot put on; a taller round helper cell stands in front of them with an open empty hand, no handshake happening. Macrô stands nearby as the kit manager holding a laundry basket, puzzled, a small blank order slip sticking out of his napkin. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -226,8 +226,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. O Macrô segura o plugue que faltava.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: close-up of the helper cell's open hand, which has an empty socket where a plug should be; the lymphocyte in the five-star jersey has the matching outlet waiting; in a small inset panel in the corner, the plug is connected and the jerseys swirl into blue, green and red; Macrô holds up the missing plug like a found treasure. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. Macrô ergue o plugue que faltava, como um tesouro.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Macrô, a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard. Scene: Close-up of the helper cell's open hand, which has an empty socket where a plug should be; the lymphocyte in the star-pattern jersey has the matching outlet waiting. In a small inset panel in the corner, the plug is connected and the jerseys swirl into blue, green and red. Macrô holds up the missing plug like a found treasure. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -235,9 +235,9 @@
       }
     },
     "legenda_questao_pt": "Fim de jogo e ninguém consegue trocar de camisa. Por quê?\n\nMenino de 2 anos com otites, sinusites e uma pneumonia por Pneumocystis. A IgM está alta e o resto das imunoglobulinas quase sumiu, com linfócitos B e T em número normal. O Macrô virou roupeiro e quer saber qual peça falta no vestiário.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: recurrent sinopulmonary infections, Pneumocystis pneumonia, high IgM, normal B and T cells\n\nSalve para revisar no Remix de domingo e mande para quem vai fazer o Step com você.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Imunologia #Immunology",
-    "legenda_explicacao_pt": "Gabarito do dia 302: letra B, CD40 ligand.\n\nIgM alta com IgG, IgA e IgE ausentes indica falha no class switching. Na hiper-IgM ligada ao X falta o CD40 ligand (CD154) do linfócito T auxiliar, que precisa encostar no CD40 do linfócito B para liberar a troca de classe e formar centros germinativos. Como o CD40L também ativa macrófagos, aparecem infecções oportunistas como Pneumocystis.\n\nMacete: Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_explicacao_pt": "Gabarito do dia 302: letra B, CD40 ligand.\n\nIgM alta com IgG, IgA e IgE ausentes indica falha no class switching. Na hiper-IgM ligada ao X falta o CD40 ligand (CD154) do linfócito T auxiliar, que precisa encostar no CD40 do linfócito B para liberar a troca de classe e formar centros germinativos. Como o CD40L também ativa macrófagos, aparecem infecções oportunistas como Pneumocystis.\n\nMacete: Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM. No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica) e ninguém veste a de IgG, IgA ou IgE. Pneumocystis entra porque o macrófago também depende desse aperto de mão.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "IgM alta e o resto sumiu: qual defeito?",
+      "pergunta_curta_pt": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?",
       "opcoes": [
         "BTK",
         "CD40 ligand",
@@ -249,19 +249,19 @@
     "fonte": "Abbas AK, Lichtman AH, Pillai S. Cellular and Molecular Immunology, 10th ed., 2022; Tangye SG et al. Human inborn errors of immunity: 2022 update on the classification from the IUIS Expert Committee. J Clin Immunol 2022;42:1473-1507.",
     "revisao": {
       "medica": "Resolvida às cegas: B (CD40L). AID (C) separada por herança, linfonodos aumentados e ausência de oportunistas; BTK e cadeia gama comum bem excluídas. Explicação e macete (IgM pentamérica, cinco estrelas) corretos. Fontes Abbas 2022 e IUIS 2022 conferidas. Sem mudanças.",
-      "humor_compliance": "Vestiário de futebol e camisa de cinco estrelas: boa piada e ligada à IgM pentamérica. Nada ofensivo; legendas e hashtags dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
+      "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Macrô no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Vestiário de futebol e camisa de cinco estrelas: boa piada e ligada à IgM pentamérica. Nada ofensivo; legendas e hashtags dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
     },
     "gancho": "Fim de jogo e *ninguém consegue trocar de camisa*. Por quê?",
     "gancho_apoio": "No vestiário dos linfócitos B, todo mundo ficou com a camisa de treino.",
     "imagem": {
       "arquivo": "dia-302.png",
-      "cena": "Macrô de roupeiro num vestiário de futebol: uma fileira de linfócitos B redondos veste a mesma camisa de treino com cinco estrelas, segurando camisas novas de outras cores que não conseguem vestir. Um linfócito T estende a mão vazia, sem aperto de mão.",
+      "cena": "Num vestiário de futebol, uma fileira de linfócitos B redondos veste a mesma camisa de treino estampada de estrelinhas e segura camisas novas de outras cores que não consegue vestir. Um linfócito T mais alto estende a mão vazia, sem aperto de mão. Macrô, de roupeiro, com um cesto de roupa e a comanda em branco no bolso do guardanapo, coça a cabeça.",
       "foco": "50% 35%",
-      "alt": "Fim de jogo e ninguém consegue trocar de camisa. Por quê?"
+      "alt": "Fim de jogo e ninguém consegue trocar de camisa"
     },
     "imagem_macete": {
       "arquivo": "dia-302-macete.png",
-      "cena": "Callback: em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. O Macrô segura o plugue que faltava.",
+      "cena": "Em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. Macrô ergue o plugue que faltava, como um tesouro.",
       "foco": "50% 45%",
       "alt": "Sem CD40L, o linfócito B não troca de classe"
     },
@@ -306,8 +306,8 @@
       },
       "macete": {
         "frase": "*Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM*",
-        "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica).",
-        "fala": null
+        "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica) e ninguém veste a de IgG, IgA ou IgE. Pneumocystis entra porque o macrófago também depende desse aperto de mão.",
+        "fala": "Comi, mostrei, avisei. Mas sem aperto de mão ninguém troca de camisa."
       }
     },
     "legenda": {
@@ -327,7 +327,7 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "IgM alta e o resto sumiu: qual defeito?"
+      "pergunta": "IgM alta, IgG e IgA quase zero, B e T normais: qual defeito?"
     },
     "cta": null,
     "tom": null,
@@ -344,11 +344,11 @@
     "topico": "Hematúria macroscópica",
     "conceito": "Painless gross hematuria in an older smoker: cystoscopy plus CT urography",
     "tipo_pergunta": "próximo passo",
-    "personagem": null,
+    "personagem": "Seu Néfron",
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-09-01",
-    "gancho_pt": "Caixa d'água soltando água vermelha sem dor: chama qual encanador?",
+    "gancho_pt": "A caixa d'água solta água vermelha sem dor e o Seu Néfron desconfia",
     "vinheta_en": "A 67-year-old man has had two episodes of painless red urine over the past month. He has a 40-pack-year smoking history, and his physical examination is unremarkable. Urinalysis shows many RBCs with normal morphology and no casts, protein, or leukocytes. Urine culture is negative, and serum creatinine is normal.",
     "pergunta_en": "Which is the most appropriate next step?",
     "alternativas": [
@@ -377,12 +377,12 @@
         "B": "A citologia urinária tem baixa sensibilidade para tumores de baixo grau e não substitui cistoscopia e imagem.",
         "C": "Biópsia renal só entra com sinais glomerulares, como hemácias dismórficas, cilindros hemáticos ou proteinúria."
       },
-      "macete": "Água vermelha sem dor no fumante: câmera por dentro e scanner por cima. Na imagem, o encanador desce uma câmera dentro da caixa d'água (a cistoscopia) e passa um arco de scanner sobre todo o encanamento (a urotomografia). Um só exame deixa metade do cano sem olhar.",
+      "macete": "Água vermelha sem dor no fumante: câmera por dentro e scanner por cima. Hematúria macroscópica sem dor no fumante é câncer de urotélio até prova em contrário. A câmera dentro da caixa d'água é a cistoscopia (bexiga) e o arco de scanner sobre o encanamento é a urotomografia (rim e ureter). Um só exame deixa metade do cano sem olhar.",
       "pegadinha_de_prova": "O NBME coloca um episódio que já passou ou um paciente em uso de anticoagulante, e espera que você investigue do mesmo jeito, com cistoscopia e urotomografia."
     },
     "imagem_questao": {
-      "conceito_visual": "Placa verde de rodovia com três saídas sobre uma caixa d'água de telhado, com uma torneira pingando água vermelha num balde; não há sinal de dor, só um calendário na parede mostrando dois dias marcados. Ferramentas de encanador ficam numa maleta fechada.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a green highway sign with three exit arrows (no text) above a rooftop water tank connected to pipes; a garden tap below drips red-tinted water into a white bucket; a calm wall calendar shows two small marked squares; a closed plumber's toolbox sits on the floor. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Três da manhã no telhado de uma casa: Seu Néfron, de gravata e óculos na ponta do nariz, inspeciona uma caixa d'água ligada a uma longa fileira de canos; embaixo, uma torneira pinga água avermelhada num balde branco, sem drama. Ele segura o carimbo, desconfiado. Um calendário com dois quadradinhos marcados e uma maleta de encanador fechada estão no chão; no muro, um relógio sem números marca 3 horas.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: At three in the morning on a rooftop, Seu Néfron inspects a water tank connected to a long line of pipes; below, a garden tap drips red-tinted water into a white bucket, calmly. He holds his rubber stamp, suspicious. A small wall calendar shows two marked squares and a closed plumber's toolbox sits on the floor, while a round clock with no numbers on the wall shows three o'clock. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -390,18 +390,18 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: o encanador desce uma câmera numa haste flexível dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. A seta da terceira saída da placa acende em verde.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same rooftop water tank: a flexible camera on a long cable is lowered inside the tank while a glowing arch-shaped scanner sweeps over the entire pipeline from the roof to the tap; one exit arrow on the green highway sign lights up brighter; tools neatly organized. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Uma câmera numa haste flexível desce dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. Seu Néfron, satisfeito, carimba um formulário em branco.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Néfron, a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms. Scene: The same rooftop: a flexible camera on a long cable is lowered inside the water tank while a glowing arch-shaped scanner sweeps over the entire pipeline from the roof to the tap. Seu Néfron, satisfied, stamps a blank form, and the plumber's tools are neatly organized. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "Caixa d'água soltando água vermelha sem dor: chama qual encanador?\n\nHomem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. A placa verde mostra três saídas e só uma investiga o encanamento inteiro.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: painless red urine, 40 pack-years, normal RBC morphology, negative culture\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Urologia #Urology",
-    "legenda_explicacao_pt": "Gabarito do dia 303: letra D, Cystoscopy and CT urography.\n\nHematúria macroscópica indolor em homem acima de 60 anos e tabagista aponta para urothelial carcinoma até prova em contrário. A avaliação examina o trato inteiro: cystoscopy para a bexiga e CT urography para rins e ureteres. Hemácias de morfologia normal, sem cilindros e sem proteinúria, falam contra causa glomerular.\n\nMacete: Água vermelha sem dor no fumante: câmera por dentro e scanner por cima.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_questao_pt": "A caixa d'água solta água vermelha sem dor e o Seu Néfron desconfia\n\nHomem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. Qual é o próximo passo?\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: painless red urine, 40 pack-years, normal RBC morphology, negative culture\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Urologia #Urology",
+    "legenda_explicacao_pt": "Gabarito do dia 303: letra D, Cystoscopy and CT urography.\n\nHematúria macroscópica indolor em homem acima de 60 anos e tabagista aponta para urothelial carcinoma até prova em contrário. A avaliação examina o trato inteiro: cystoscopy para a bexiga e CT urography para rins e ureteres. Hemácias de morfologia normal, sem cilindros e sem proteinúria, falam contra causa glomerular.\n\nMacete: Água vermelha sem dor no fumante: câmera por dentro e scanner por cima. Hematúria macroscópica sem dor no fumante é câncer de urotélio até prova em contrário. A câmera dentro da caixa d'água é a cistoscopia (bexiga) e o arco de scanner sobre o encanamento é a urotomografia (rim e ureter). Um só exame deixa metade do cano sem olhar.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "Hematúria indolor no fumante: próximo passo?",
+      "pergunta_curta_pt": "Urina vermelha sem dor em fumante de 40 maços-ano: qual é o próximo passo?",
       "opcoes": [
         "Repetir EAS em 6 m",
         "Só citologia",
@@ -413,19 +413,19 @@
     "fonte": "Barocas DA et al. Microhematuria: AUA/SUFU Guideline. J Urol 2020;204:778-86; Barocas DA et al. Updates to Microhematuria: AUA/SUFU Guideline (2025). J Urol 2025;213:547-57; Partin AW et al. Campbell-Walsh-Wein Urology, 12th ed., 2021.",
     "revisao": {
       "medica": "Resolvida às cegas: D (cistoscopia e urotomografia). Vinheta sem sinais glomerulares, conduta conforme AUA/SUFU. Mudado: a citação \"amended 2025\" foi conferida e trocada pela referência completa da atualização (Barocas DA et al., J Urol 2025;213:547-57).",
-      "humor_compliance": "Caixa d'água e encanador: analogia clara, sem humor com câncer. Prompt no estilo da marca, sem texto. Legendas dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
+      "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Seu Néfron no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Caixa d'água e encanador: analogia clara, sem humor com câncer. Prompt no estilo da marca, sem texto. Legendas dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
     },
-    "gancho": "Caixa d'água soltando água vermelha *sem dor*: chama qual encanador?",
-    "gancho_apoio": "A torneira parou de pingar vermelho, mas o plantão sabe que isso não encerra o caso.",
+    "gancho": "A caixa d'água solta água vermelha *sem dor* e o Seu Néfron desconfia",
+    "gancho_apoio": "A torneira parou de pingar vermelho, mas isso não encerra o caso.",
     "imagem": {
       "arquivo": "dia-303.png",
-      "cena": "Placa verde de rodovia com três saídas sobre uma caixa d'água de telhado, com uma torneira pingando água vermelha num balde; não há sinal de dor, só um calendário na parede mostrando dois dias marcados. Ferramentas de encanador ficam numa maleta fechada.",
+      "cena": "Três da manhã no telhado de uma casa: Seu Néfron, de gravata e óculos na ponta do nariz, inspeciona uma caixa d'água ligada a uma longa fileira de canos; embaixo, uma torneira pinga água avermelhada num balde branco, sem drama. Ele segura o carimbo, desconfiado. Um calendário com dois quadradinhos marcados e uma maleta de encanador fechada estão no chão; no muro, um relógio sem números marca 3 horas.",
       "foco": "50% 35%",
-      "alt": "Caixa d'água soltando água vermelha sem dor: chama qual encanador?"
+      "alt": "Seu Néfron inspeciona a caixa d'água que pinga vermelho"
     },
     "imagem_macete": {
       "arquivo": "dia-303-macete.png",
-      "cena": "Callback: o encanador desce uma câmera numa haste flexível dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. A seta da terceira saída da placa acende em verde.",
+      "cena": "Uma câmera numa haste flexível desce dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. Seu Néfron, satisfeito, carimba um formulário em branco.",
       "foco": "50% 45%",
       "alt": "Hematúria sem dor em fumante: olhe o trato inteiro"
     },
@@ -470,12 +470,12 @@
       },
       "macete": {
         "frase": "*Água vermelha sem dor no fumante: câmera por dentro e scanner por cima*",
-        "apoio": "Na imagem, o encanador desce uma câmera dentro da caixa d'água (a cistoscopia) e passa um arco de scanner sobre todo o encanamento (a urotomografia). Um só exame deixa metade do cano sem olhar.",
-        "fala": null
+        "apoio": "Hematúria macroscópica sem dor no fumante é câncer de urotélio até prova em contrário. A câmera dentro da caixa d'água é a cistoscopia (bexiga) e o arco de scanner sobre o encanamento é a urotomografia (rim e ureter). Um só exame deixa metade do cano sem olhar.",
+        "fala": "Sem carimbo, não sai. Sem olhar o cano inteiro, também não."
       }
     },
     "legenda": {
-      "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. A placa verde mostra três saídas e só uma investiga o encanamento inteiro.",
+      "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. Qual é o próximo passo?",
       "palavras_chave": [
         "painless red urine",
         "40 pack-years",
@@ -491,7 +491,7 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "Hematúria indolor no fumante: próximo passo?"
+      "pergunta": "Urina vermelha sem dor em fumante de 40 maços-ano: qual é o próximo passo?"
     },
     "cta": null,
     "tom": null,
@@ -512,7 +512,7 @@
     "gancho_data": null,
     "remix_de": null,
     "explicacao_em": "2027-09-02",
-    "gancho_pt": "O disco repetiu o refrão 200 vezes. Quem desligou a música?",
+    "gancho_pt": "O refrão repetiu 200 vezes, pior que hit do verão. Quem desligou a música?",
     "vinheta_en": "A 6-year-old boy has speech delay and hyperactivity. He avoids eye contact and flaps his hands. He has a long face, large ears, and lax finger joints. His maternal uncle has intellectual disability. Genetic testing shows more than 200 CGG repeats in the 5' untranslated region of FMR1.",
     "pergunta_en": "Which mechanism best explains loss of the gene product?",
     "alternativas": [
@@ -541,12 +541,12 @@
         "C": "A alteração não está na sequência codificadora: é uma repetição na região não traduzida que desliga o gene inteiro.",
         "D": "RNA expandido que prende proteínas de splicing é o mecanismo da distrofia miotônica (CTG na região 3'), sem silenciar o gene."
       },
-      "macete": "Disco arranhado no X: repetiu demais, ganhou cadeado de metil e ficou mudo. Na imagem, a vitrola em forma de X repete o mesmo trecho até que dezenas de cadeadinhos (os grupos metil) trancam os botões. O som não está errado: ele simplesmente parou.",
+      "macete": "Disco arranhado no X: repetiu demais, ganhou cadeado de metil e ficou mudo. A vitrola em forma de X repete o mesmo trecho CGG até que dezenas de cadeadinhos (os grupos metil) trancam o promotor do FMR1. O som não sai errado: ele simplesmente para, e falta a proteína FMRP. Mais de 200 repetições é a mutação completa; entre 55 e 200, pré-mutação.",
       "pegadinha_de_prova": "O NBME separa as doenças de repetição pelo trinucleotídeo e pelo mecanismo: CGG metila e silencia (X frágil), CAG gera proteína tóxica (Huntington) e GAA reduz a transcrição (Friedreich)."
     },
     "imagem_questao": {
-      "conceito_visual": "Uma vitrola em forma de letra X com uma pequena rachadura perto da ponta, com a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão. Notas musicais saem tortas e repetidas.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a jukebox shaped like an X chromosome with a tiny crack near one tip; its needle is stuck in the same groove; from it pours a very long necklace of beads repeating the same three-color pattern over and over, coiling on the floor; identical musical-note shapes float out in a repeating loop. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "Uma vitrola em forma de cromossomo X, com uma rachadinha perto de uma ponta, tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Allen, a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be. Scene: A jukebox shaped like an X chromosome with a tiny crack near one tip; its needle is stuck in the same groove and out pours a very long necklace of beads repeating the same three-color pattern over and over, coiling on the floor, while identical musical-note shapes float out in a loop. Seu Allen, puzzled, stands nearby with small assembly-manual arrows pointing at the stuck needle. Gentle, warm humor about the stuck record, never about people. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -554,18 +554,18 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: a mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa; o colar de contas repetidas continua no chão, e as notas musicais caíram no chão, apagadas.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same X-shaped jukebox, now silent: dozens of small navy padlocks are clipped over all of its buttons and its lid; the long repeating bead necklace still lies coiled on the floor; the musical-note shapes have dropped to the ground, faded and gray; calm, quiet mood. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "A mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Seu Allen, a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be. Scene: The same X-shaped jukebox, now silent: dozens of small navy padlocks are clipped over all of its buttons and its lid; the long repeating bead necklace still lies coiled on the floor, and the musical-note shapes have dropped to the ground, faded and gray. Seu Allen points at the padlocks with a small arrow. Calm, quiet mood. Gentle, warm humor about the stuck record, never about people. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
         "proporcao": "4:5"
       }
     },
-    "legenda_questao_pt": "O disco repetiu o refrão 200 vezes. Quem desligou a música?\n\nMenino de 6 anos com atraso no desenvolvimento e um tio materno com deficiência intelectual. O teste genético encontra o trio CGG copiado mais de 200 vezes no começo do gene FMR1. A pergunta é sobre o mecanismo que tira a proteína de circulação.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: speech delay, hand flapping, large ears, maternal uncle\n\nSua escola está habilitada para o USMLE? Confira em 1 minuto. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Genetica #Genetics",
-    "legenda_explicacao_pt": "Gabarito do dia 304: letra A, Hypermethylation of the gene promoter.\n\nAcima de 200 cópias do trinucleotídeo CGG no começo do FMR1, fora do trecho que vira proteína, caracterizam a full mutation. A expansão atrai hypermethylation do promotor e das ilhas CpG, o FMR1 fica mudo e a FMRP, proteína que regula a tradução nas sinapses, para de ser fabricada. É perda de função por silenciamento epigenético, e a expansão costuma crescer quando passa pela mãe (anticipation).\n\nMacete: Disco arranhado no X: repetiu demais, ganhou cadeado de metil e ficou mudo.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_questao_pt": "O refrão repetiu 200 vezes, pior que hit do verão. Quem desligou a música?\n\nMenino de 6 anos com atraso no desenvolvimento e um tio materno com deficiência intelectual. O teste genético encontra o trio CGG copiado mais de 200 vezes no começo do gene FMR1. A pergunta é sobre o mecanismo que tira a proteína de circulação.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: speech delay, hand flapping, large ears, maternal uncle\n\nSua escola está habilitada para o USMLE? Confira em 1 minuto. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep1 #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Genetica #Genetics",
+    "legenda_explicacao_pt": "Gabarito do dia 304: letra A, Hypermethylation of the gene promoter.\n\nAcima de 200 cópias do trinucleotídeo CGG no começo do FMR1, fora do trecho que vira proteína, caracterizam a full mutation. A expansão atrai hypermethylation do promotor e das ilhas CpG, o FMR1 fica mudo e a FMRP, proteína que regula a tradução nas sinapses, para de ser fabricada. É perda de função por silenciamento epigenético, e a expansão costuma crescer quando passa pela mãe (anticipation).\n\nMacete: Disco arranhado no X: repetiu demais, ganhou cadeado de metil e ficou mudo. A vitrola em forma de X repete o mesmo trecho CGG até que dezenas de cadeadinhos (os grupos metil) trancam o promotor do FMR1. O som não sai errado: ele simplesmente para, e falta a proteína FMRP. Mais de 200 repetições é a mutação completa; entre 55 e 200, pré-mutação.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "CGG demais no FMR1: qual mecanismo?",
+      "pergunta_curta_pt": "Mais de 200 CGG no FMR1: como o gene fica em silêncio?",
       "opcoes": [
         "Metilação",
         "Poliglutamina tóxica",
@@ -577,19 +577,19 @@
     "fonte": "Cohn RD, Scherer SW, Hamosh A. Thompson & Thompson Genetics and Genomics in Medicine, 9th ed., 2023; Kumar V, Abbas AK, Aster JC. Robbins & Kumar Basic Pathology, 11th ed., 2023.",
     "revisao": {
       "medica": "Resolvida às cegas: A (hipermetilação do FMR1). Distratores de Huntington, deleção e distrofia miotônica corretos; pegadinha de Friedreich (GAA reduz transcrição) correta. Sem mudanças.",
-      "humor_compliance": "Humor fica na vitrola e no disco arranhado, nunca na criança ou na deficiência intelectual. Tom adequado. Legendas dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
+      "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Seu Allen no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Humor fica na vitrola e no disco arranhado, nunca na criança ou na deficiência intelectual. Tom adequado. Legendas dentro do limite. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
     },
-    "gancho": "O disco repetiu o refrão 200 vezes. *Quem desligou a música?*",
+    "gancho": "O refrão repetiu 200 vezes, *pior que hit do verão*. Quem desligou a música?",
     "gancho_apoio": "Repetição demais no lugar errado faz o gene ficar em silêncio. Mas como?",
     "imagem": {
       "arquivo": "dia-304.png",
-      "cena": "Uma vitrola em forma de letra X com uma pequena rachadura perto da ponta, com a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão. Notas musicais saem tortas e repetidas.",
+      "cena": "Uma vitrola em forma de cromossomo X, com uma rachadinha perto de uma ponta, tem a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão, e notas musicais repetidas flutuam em loop. Seu Allen, a chavinha Allen de avental, coça a cabeça, com setinhas de manual apontando para a agulha presa.",
       "foco": "50% 35%",
-      "alt": "O disco repetiu o refrão 200 vezes. Quem desligou a música?"
+      "alt": "A vitrola em X presa no mesmo refrão"
     },
     "imagem_macete": {
       "arquivo": "dia-304-macete.png",
-      "cena": "Callback: a mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa; o colar de contas repetidas continua no chão, e as notas musicais caíram no chão, apagadas.",
+      "cena": "A mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa. O colar de contas repetidas continua no chão e as notas musicais caíram, apagadas. Seu Allen aponta os cadeados com uma setinha.",
       "foco": "50% 45%",
       "alt": "X frágil: CGG demais metila e silencia o FMR1"
     },
@@ -634,8 +634,8 @@
       },
       "macete": {
         "frase": "*Disco arranhado no X*: repetiu demais, ganhou cadeado de metil e ficou mudo",
-        "apoio": "Na imagem, a vitrola em forma de X repete o mesmo trecho até que dezenas de cadeadinhos (os grupos metil) trancam os botões. O som não está errado: ele simplesmente parou.",
-        "fala": null
+        "apoio": "A vitrola em forma de X repete o mesmo trecho CGG até que dezenas de cadeadinhos (os grupos metil) trancam o promotor do FMR1. O som não sai errado: ele simplesmente para, e falta a proteína FMRP. Mais de 200 repetições é a mutação completa; entre 55 e 200, pré-mutação.",
+        "fala": "Sobrou peça? Então faltou mecanismo. Aqui sobrou repetição."
       }
     },
     "legenda": {
@@ -655,12 +655,13 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "CGG demais no FMR1: qual mecanismo?"
+      "pergunta": "Mais de 200 CGG no FMR1: como o gene fica em silêncio?"
     },
     "cta": null,
     "tom": null,
     "reel": null,
-    "exemplo": false
+    "exemplo": false,
+    "anfitriao": "Seu Allen"
   },
   {
     "dia": 305,
@@ -705,12 +706,12 @@
         "C": "A ressonância exige sedação e fica para casos complexos ou para conferir a redução depois do gesso.",
         "D": "A cintilografia procura infecção, fratura oculta ou necrose, e não mostra a relação entre a cabeça femoral e o acetábulo."
       },
-      "macete": "Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom. O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer.",
+      "macete": "Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom. O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer (até 4 a 6 meses). Depois disso, o raio X assume.",
       "pegadinha_de_prova": "O NBME troca a idade: de 6 semanas a 4 a 6 meses é ultrassom e Pavlik (antes de 6 semanas a frouxidão fisiológica confunde); depois disso, raio X e, se precisar, redução sob anestesia com gesso."
     },
     "imagem_questao": {
-      "conceito_visual": "Garçom de rodízio com quatro espetos de sobremesa; no prato à frente, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. As plaquinhas verde e vermelha estão no bolso do avental.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: a friendly Brazilian steakhouse waiter in a white shirt and red apron holds four dessert skewers; on the plate in front of him a round chocolate truffle pops out of a very shallow paper cup and back in, drawn with bouncing motion lines; a small green card and a small red card peek out of his apron pocket. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "O Garçom Espetinho segura quatro espetos de sobremesa; no prato à frente dele, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. A plaquinha verde e vermelha aparece de lado no bolso do colete.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: Garçom Espetinho holds four dessert skewers; on the plate in front of him a round chocolate truffle pops out of a very shallow paper cup and back in, drawn with bouncing motion lines. His small round card, green on one side and red on the other, peeks sideways out of his vest pocket. Festive dessert mood. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -718,8 +719,8 @@
       }
     },
     "imagem_explicacao": {
-      "conceito_visual": "Callback: o garçom levanta a plaquinha verde ao lado de um espeto que tem uma sonda de ultrassom na ponta; na tela da sonda aparece o brigadeiro dentro da forminha rasa. Um raio X ao lado mostra só a forminha vazia, porque o doce mole não aparece.",
-      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Scene: the same waiter raises a small green card next to a skewer topped with an ultrasound probe; the probe's little screen shows the round truffle sitting in its shallow paper cup; beside it, a small X-ray film on a light box shows only the empty cup outline, the soft truffle invisible; a tiny soft harness with straps rests on the table. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
+      "conceito_visual": "O garçom levanta a plaquinha verde ao lado de um espeto com uma sonda de ultrassom na ponta; na telinha da sonda aparece o brigadeiro dentro da forminha rasa. Ao lado, um raio X num negatoscópio mostra só a forminha vazia, porque o doce mole não aparece, e um suspensório macio de tiras descansa na mesa.",
+      "prompt_nano_banana_pro": "Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: Garçom Espetinho, a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie. Scene: Garçom Espetinho raises a small green card next to a skewer topped with an ultrasound probe; the probe's little screen shows the round truffle sitting in its shallow paper cup. Beside it, a small X-ray film on a light box shows only the empty cup outline, the soft truffle invisible, and a tiny soft harness with straps rests on the table. Witty, warm humor tied to the concept. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.",
       "parametros": {
         "modelo": "nano_banana_pro",
         "resolucao": "2k",
@@ -727,9 +728,9 @@
       }
     },
     "legenda_questao_pt": "O brigadeiro sai e volta da forminha. Qual exame enxerga isso?\n\nMenina de 7 semanas, primeira filha, nascida de cesárea por apresentação pélvica, com uma prega a mais na coxa esquerda e um ressalto palpável nas manobras do quadril. O garçom do rodízio traz quatro espetos de exame e só um serve nessa idade.\n\nComente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.\n\nPalavras-chave: 7-week-old, breech presentation, thigh skin fold, hip clunk\n\nGostou do formato? Faça um bloco inteiro de 30 minutos, grátis. O link está na bio.\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610.\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.\n\n#USMLE #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia #Pediatria #Pediatrics",
-    "legenda_explicacao_pt": "Gabarito do dia 305: letra B, Hip ultrasonography.\n\nMenina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.\n\nMacete: Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
+    "legenda_explicacao_pt": "Gabarito do dia 305: letra B, Hip ultrasonography.\n\nMenina, primeira gestação e apresentação pélvica, com Barlow e Ortolani positivos, tem developmental dysplasia of the hip. Até os 4 a 6 meses de vida, a cabeça femoral ainda é cartilagem e não aparece bem no raio X, por isso o exame de escolha, feito a partir de 6 semanas, é a hip ultrasonography. Nessa idade o tratamento é o Pavlik harness, que mantém o quadril fletido e abduzido.\n\nMacete: Brigadeiro não aparece no raio X: cabeça de cartilagem, olhe com ultrassom. O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer (até 4 a 6 meses). Depois disso, o raio X assume.\n\nGostou do formato? Faça um bloco de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio).\n\nDr. Getúlio Bernardo Morato Filho, CRM-DF 13610\nConteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras.",
     "story_quiz": {
-      "pergunta_curta_pt": "Quadril que sai e volta no bebê: exame?",
+      "pergunta_curta_pt": "Quadril que sai e volta no bebê de 7 semanas: qual exame?",
       "opcoes": [
         "Raio X de bacia",
         "Ultrassom de quadril",
@@ -741,19 +742,19 @@
     "fonte": "Shaw BA, Segal LS; AAP Section on Orthopaedics. Evaluation and referral for developmental dysplasia of the hip in infants. Pediatrics 2016;138:e20163107; Kliegman RM et al. Nelson Textbook of Pediatrics, 22nd ed., 2024.",
     "revisao": {
       "medica": "Resolvida às cegas: B (ultrassom de quadril). Mudado: idade de 5 para 7 semanas na vinheta e na legenda, porque a AAP (2016) indica o ultrassom de 6 semanas a 4 meses, antes disso a frouxidão fisiológica confunde; por_que_certa e pegadinha passaram a dizer isso.",
-      "humor_compliance": "Brigadeiro na forminha: memorável e ligado ao conceito (cabeça de cartilagem). Legenda atualizada para 7 semanas. Sem paciente na imagem. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
+      "humor_compliance": "Rodada de humor (dias 245 a 305): gancho com punchline, Garçom Espetinho no dia, cena-base nova com só a assinatura pequena do quadro, pergunta do story completa e macete com fala do personagem. Brigadeiro na forminha: memorável e ligado ao conceito (cabeça de cartilagem). Legenda atualizada para 7 semanas. Sem paciente na imagem. Conferido em todos os dias: sem travessão, sem jargão de IA, gancho com até 12 palavras, legendas abaixo de 900 e 1200 caracteres, 6 hashtags em português e inglês, assinatura com CRM-DF 13610 e sem especialidade, CFM 2.336/2023 e CONAR sem promessa de aprovação, sem dado pessoal (LGPD), prompts no estilo da marca com no text, nano_banana_pro, 2k e 4:5."
     },
     "gancho": "O brigadeiro sai e volta da forminha. *Qual exame enxerga isso?*",
     "gancho_apoio": "No rodízio de quinta, a sobremesa vem com uma pergunta de pediatria.",
     "imagem": {
       "arquivo": "dia-305.png",
-      "cena": "Garçom de rodízio com quatro espetos de sobremesa; no prato à frente, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. As plaquinhas verde e vermelha estão no bolso do avental.",
+      "cena": "O Garçom Espetinho segura quatro espetos de sobremesa; no prato à frente dele, um brigadeiro pula para fora de uma forminha rasa de papel e volta, com linhas de movimento. A plaquinha verde e vermelha aparece de lado no bolso do colete.",
       "foco": "50% 35%",
-      "alt": "O brigadeiro sai e volta da forminha. Qual exame enxerga isso?"
+      "alt": "O brigadeiro sai e volta da forminha rasa"
     },
     "imagem_macete": {
       "arquivo": "dia-305-macete.png",
-      "cena": "Callback: o garçom levanta a plaquinha verde ao lado de um espeto que tem uma sonda de ultrassom na ponta; na tela da sonda aparece o brigadeiro dentro da forminha rasa. Um raio X ao lado mostra só a forminha vazia, porque o doce mole não aparece.",
+      "cena": "O garçom levanta a plaquinha verde ao lado de um espeto com uma sonda de ultrassom na ponta; na telinha da sonda aparece o brigadeiro dentro da forminha rasa. Ao lado, um raio X num negatoscópio mostra só a forminha vazia, porque o doce mole não aparece, e um suspensório macio de tiras descansa na mesa.",
       "foco": "50% 45%",
       "alt": "Displasia do quadril antes dos 4 a 6 meses: ultrassom"
     },
@@ -798,8 +799,8 @@
       },
       "macete": {
         "frase": "*Brigadeiro não aparece no raio X*: cabeça de cartilagem, olhe com ultrassom",
-        "apoio": "O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer.",
-        "fala": null
+        "apoio": "O brigadeiro mole é a cabeça femoral de cartilagem e a forminha rasa é o acetábulo. Barlow bota o brigadeiro para fora, Ortolani põe de volta, e o ultrassom é o único que enxerga o doce antes de ele endurecer (até 4 a 6 meses). Depois disso, o raio X assume.",
+        "fala": "Vai uma conduta aí, doutor? Brigadeiro mole, só o ultrassom vê."
       }
     },
     "legenda": {
@@ -819,12 +820,13 @@
       "cta_slide": null
     },
     "quiz": {
-      "pergunta": "Quadril que sai e volta no bebê: exame?"
+      "pergunta": "Quadril que sai e volta no bebê de 7 semanas: qual exame?"
     },
     "cta": null,
     "tom": null,
     "reel": null,
-    "exemplo": false
+    "exemplo": false,
+    "anfitriao": "Garçom Espetinho"
   },
   {
     "dia": 306,

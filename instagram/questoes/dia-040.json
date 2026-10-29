@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-12",
-  "gancho": "LDL de 232: aqui nem o VAR precisa ser chamado",
+  "gancho": "LDL de 232: aqui nem o *VAR* precisa ser chamado",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito vestido de árbitro, com apito e cartão, num campo de futebol; um placar gigante transborda de gotinhas amarelas de gordura, e um monitor de VAR está coberto por um pano.",
+    "cena": "Mito vestido de árbitro, com apito e cartão, num campo de futebol; um placar gigante transborda de gotinhas amarelas de gordura, e um monitor de VAR está coberto por um pano. Na beira do campo, uma ampulheta pequena faz as vezes de cronômetro.",
     "foco": "50% 35%",
-    "alt": "Mito vestido de árbitro, com apito e cartão, num campo de futebol; um placar gigante transborda de gotinhas amarelas de gordura, e um monitor de VAR está coberto por um pano.",
+    "alt": "LDL de 232: aqui nem o VAR precisa ser chamado",
     "arquivo": "dia-040.png"
   },
   "imagem_macete": {
@@ -64,13 +64,13 @@
       "D": "As calculadoras de risco não valem para LDL acima de 190; o tratamento já está indicado."
     },
     "macete": {
-      "frase": "LDL 190 é *pênalti*: sem VAR, *bate forte*",
+      "frase": "LDL acima de 190 é *pênalti claro*: nem chame o VAR da calculadora de risco. Estatina de alta intensidade, bate forte.",
       "apoio": "Pegadinha de prova: O NBME coloca um paciente jovem e sem outros fatores para tentar você a calcular risco; com LDL acima de 190, a calculadora não entra.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Homem jovem, sem outros fatores de risco além da família, e um colesterol de placar elástico. Sexta é dia de escolher o remédio.",
+    "contexto": "Homem jovem, sem outros fatores de risco além da família, xantoma no tendão e um colesterol de placar elástico. Sexta é dia de escolher o remédio, e o Mito apita o jogo.",
     "palavras_chave": [
       "LDL cholesterol",
       "tendon xanthomas",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o tratamento para LDL 232?"
+    "pergunta": "LDL de 232 e xantoma no tendão aos 34 anos: qual tratamento?"
   },
   "cta": "simulado",
   "exemplo": false

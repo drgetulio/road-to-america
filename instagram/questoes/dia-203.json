@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Streptococcus pneumoniae (dia 106), Malária por falciparum (dia 169), Síndrome de Wiskott-Aldrich (dia 197)",
   "conceito": "Remix: Streptococcus pneumoniae + Plasmodium falciparum + Wiskott-Aldrich syndrome",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     106,
@@ -16,69 +16,69 @@
   ],
   "explicacao_em": "2027-05-24",
   "tom": null,
-  "gancho": "Remix no laboratório: qual dupla *bateu* certinho?",
+  "gancho": "Voltou de Gana com febre, confusão e *uma lembrancinha* que ninguém pediu",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-203.png",
-    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (um mosquito, uma cápsula redonda com dois cocos e um regador azul) e um quarto disco com um par de correntinhas de bolinhas tentando entrar na pilha.",
+    "cena": "Desembarque do aeroporto, com um vinil pequeno pendurado na mochila do Macrô. O Macrô, com a comanda no bolso, recebe uma mala cheia de adesivos de viagem; na alça, uma etiqueta em forma de mosquito. Da mala escapa um calorzinho, como se trouxesse uma lembrança que ninguém pediu.",
     "foco": "50% 35%",
-    "alt": "Remix no laboratório: qual dupla bateu certinho?"
+    "alt": "Macrô recebe no desembarque uma mala com etiqueta em forma de mosquito"
   },
   "imagem_macete": {
     "arquivo": "dia-203-macete.png",
-    "cena": "O disco do mosquito toca e acende verde, e saem notas musicais em forma de banana; os discos da cápsula e do regador ganham um risco vermelho, e o disco da correntinha é barrado por um cone.",
-    "alt": "Gametócito em banana: falciparum"
+    "cena": "Dentro de uma rede de tunelzinhos em forma de cérebro, carrinhos vermelhos cobertos de bolinhas de chiclete grudam nas paredes e travam o trânsito. O Macrô aponta, e numa banca ao lado há bananas em forma de crescente.",
+    "alt": "Falciparum gruda no vaso do cérebro"
   },
   "questao": {
-    "vinheta": "In a laboratory review session, a student matches each organism or disease with a classic laboratory finding. Only one of the four matches is correct.",
-    "pergunta": "Which match is correct?",
+    "vinheta": "A 27-year-old man has fever, headache, and confusion 10 days after returning from Ghana, where he took no malaria prophylaxis. He is drowsy, without neck stiffness. Hemoglobin is 9.8 g/dL and platelets 62,000/mm3. A blood smear shows ring forms in 11% of red cells and crescent-shaped gametocytes.",
+    "pergunta": "Which mechanism best explains his neurologic findings?",
     "alternativas": {
       "A": {
-        "texto": "Plasmodium falciparum: banana-shaped gametocytes",
-        "quiz": "Falciparum: banana",
+        "texto": "Adhesion of infected red cells to brain microvascular endothelium",
+        "quiz": "Hemácia gruda no endotélio",
         "dia": 169
       },
       "B": {
-        "texto": "Streptococcus pneumoniae: optochin resistant",
-        "quiz": "Pneumo: optoquina R",
+        "texto": "A polysaccharide capsule that resists opsonization in the meninges",
+        "quiz": "Cápsula nas meninges",
         "dia": 106
       },
       "C": {
-        "texto": "Wiskott-Aldrich syndrome: giant platelets",
-        "quiz": "WAS: plaqueta grande",
+        "texto": "Bleeding from small platelets with a defective cytoskeleton",
+        "quiz": "Plaqueta pequena sangra",
         "dia": 197
       },
       "D": {
-        "texto": "Streptococcus pyogenes: bacitracin resistant",
-        "quiz": "GAS: bacitracina R"
+        "texto": "Reactivation of dormant hypnozoites in the liver",
+        "quiz": "Hipnozoíto reativado"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "Gametócito em *banana*: falciparum",
+    "titulo": "Malária cerebral: a hemácia *gruda no vaso*",
     "certa": [
-      "O *Plasmodium falciparum* tem gametócitos em forma de banana ou crescente (*banana-shaped gametocytes*), muitos anéis finos por hemácia e parasitemia alta. A *cytoadherence* das hemácias infectadas ao endotélio explica a malária cerebral e a gravidade dessa espécie."
+      "Dia 169: anéis em mais de 5% das hemácias, gametócitos em crescente (banana) e confusão depois de viagem à África subsaariana são *Plasmodium falciparum* com *cerebral malaria*. A proteína *PfEMP1* forma botões na hemácia infectada, que grudam no endotélio da microcirculação cerebral (*cytoadherence*), entopem o vaso e causam hipóxia e edema."
     ],
     "termos": [
-      "Plasmodium falciparum",
-      "banana-shaped gametocytes",
-      "optochin sensitivity",
-      "bacitracin sensitivity"
+      "cerebral malaria",
+      "cytoadherence (PfEMP1)",
+      "crescent-shaped gametocytes",
+      "Plasmodium falciparum"
     ],
     "erradas": {
-      "B": "Dia 106: o pneumococo é sensível à optoquina e solúvel em bile; resistente à optoquina é o viridans.",
-      "C": "Dia 197: a Wiskott-Aldrich tem plaquetas pequenas; plaquetas gigantes são da Bernard-Soulier.",
-      "D": "Intruso: o S. pyogenes (grupo A) é sensível à bacitracina; resistente é o S. agalactiae (grupo B)."
+      "B": "Dia 106: a cápsula do pneumococo explica a meningite bacteriana, com rigidez de nuca e bactéria no líquor; aqui o esfregaço já mostra o culpado no sangue.",
+      "C": "Dia 197: plaqueta pequena e disfuncional é Wiskott-Aldrich, de meninos com eczema e infecções desde o primeiro ano; a plaqueta baixa dele vem da malária.",
+      "D": "Intruso: hipnozoítos são do P. vivax e do P. ovale e causam recaídas semanas a meses depois; o falciparum não tem forma dormente no fígado e é o que causa malária cerebral."
     },
     "macete": {
-      "frase": "Falciparum *come banana* (gametócito em crescente) e *gruda no cano* (citoaderência no cérebro). Pneumococo *perde para a optoquina*; Wiskott-Aldrich tem *plaqueta miniatura*; grupo A *perde para a bacitracina*.",
-      "apoio": "O NBME troca sensível por resistente: optoquina separa pneumococo (sensível) de viridans; bacitracina separa grupo A (sensível) de grupo B; e o tamanho da plaqueta separa Wiskott-Aldrich de Bernard-Soulier.",
-      "fala": null
+      "frase": "Falciparum é a hemácia com *chiclete na lataria*: gruda na parede do vaso do cérebro (*citoaderência*) e trava o trânsito. Gametócito em *banana* e muitos anéis por hemácia entregam a espécie.",
+      "apoio": "O NBME coloca a meningite como distrator de febre com confusão; quando o esfregaço já mostra o parasita e houve viagem, a resposta é malária, e a gravidade do falciparum vem da citoaderência.",
+      "fala": "Comi, mostrei, avisei: banana no esfregaço é falciparum, e falciparum gruda."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 106, 169 e 197) e um intruso. Só um achado de laboratório está ligado ao micróbio ou à doença certa.",
+    "contexto": "Domingo é dia de Remix com o Macrô: três conceitos de Step 1 (dias 106, 169 e 197) disputam um viajante com febre, confusão, plaquetas baixas e um esfregaço cheio de achados. Qual mecanismo explica a confusão?",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -86,7 +86,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual dupla está certa?"
+    "pergunta": "Voltou de Gana confuso: qual mecanismo explica?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

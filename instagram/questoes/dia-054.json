@@ -11,16 +11,16 @@
   "gancho_data": "Natal: a gota do Papai Noel (personagem fictício).",
   "remix_de": null,
   "explicacao_em": "2026-12-26",
-  "gancho": "Papai Noel tratou a gota e esqueceu de avisar a farmácia",
+  "gancho": "Papai Noel tratou a gota e esqueceu de avisar a *farmácia*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Tia Meia-Vida numa farmácia de interior decorada para o Natal; pela vitrine se vê um trenó vermelho estacionado e, no balcão, uma caixa de presente com um cadeado ao lado de um frasco novo.",
+    "cena": "Tia Meia-Vida numa farmácia de interior decorada para o Natal; pela vitrine se vê um trenó vermelho estacionado e, no balcão, uma caixa de presente com um cadeado ao lado de um frasco novo e de uma travessa de pavê.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida numa farmácia de interior decorada para o Natal; pela vitrine se vê um trenó vermelho estacionado e, no balcão, uma caixa de presente com um cadeado ao lado de um frasco novo.",
+    "alt": "Papai Noel tratou a gota e esqueceu de avisar a farmácia",
     "arquivo": "dia-054.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o cadeado está na porta de saída de uma salinha; dentro, muitos duendezinhos em forma de comprimido se amontoam sem conseguir sair, e a Tia Meia-Vida, com uma tesoura, corta um comprimido grande em pedaços menores.",
+    "cena": "Callback: o cadeado está na porta de saída de uma salinha; dentro, muitos duendezinhos em forma de comprimido se amontoam sem conseguir sair, e a Tia Meia-Vida, com uma tesoura, corta um comprimido grande em quatro pedaços.",
     "alt": "O alopurinol trancou a saída do 6-MP",
     "arquivo": "dia-054-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "A TPMT é a outra via de inativação, e sua deficiência é genética; o alopurinol não a inibe."
     },
     "macete": {
-      "frase": "Alopurinol *tranca a porta*, 6-MP *lota a medula*",
+      "frase": "Alopurinol *tranca a porta* de saída do 6-MP: a xantina oxidase sai de férias de Natal e o remédio lota a medula. A azatioprina cai para um quarto.",
       "apoio": "Pegadinha de prova: O NBME costuma esconder a azatioprina ou a mercaptopurina na lista de remédios de um transplantado ou de um paciente com doença inflamatória intestinal que começa alopurinol.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Na véspera, a ceia; hoje, a farmácia. Um transplantado com crises de gota ganha um remédio novo e, semanas depois, o sangue inteiro reclama. A Tia Meia-Vida investiga a interação.",
+    "contexto": "Na véspera, a ceia; hoje, a farmácia. Um transplantado com crises de gota ganha um remédio novo e, semanas depois, o sangue inteiro reclama. A Tia Meia-Vida investiga a interação antes que o tio do pavê pergunte se o remédio novo é pavê ou pacumê.",
     "palavras_chave": [
       "kidney transplant",
       "gout flares",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mecanismo explica a aplasia?"
+    "pergunta": "Azatioprina com alopurinol e leucócitos a 1.200: qual mecanismo?"
   },
   "cta": "simulado",
   "exemplo": false

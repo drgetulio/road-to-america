@@ -8,15 +8,16 @@
   "topico": "Reflexos primitivos",
   "conceito": "Moro reflex: disappears by about 4 to 6 months, persistence is a red flag",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-22",
-  "gancho": "Bebê de 9 meses abrindo os braços: *comemoração ou alerta*?",
+  "gancho": "Bebê de 9 meses comemorando *igual gol do Brasil*: festa ou alerta?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "O garçom do rodízio passa com espetos por uma casinha. Na janela, um ursinho de pelúcia abre os dois braços como quem comemora um gol. Na calçada, um caminhão de mudança espera com caixas, e não dá para saber se ele chegou cedo ou atrasado.",
+    "cena": "Garçom Espetinho, com a plaquinha verde e vermelha de lado, passa com espetos por uma casinha. Na janela, um ursinho de pelúcia abre os dois braços como quem comemora gol. Na calçada, um caminhão de mudança espera com caixas, e um calendário na parede mostra várias folhas, sem números.",
     "foco": "50% 35%",
-    "alt": "Bebê de 9 meses abrindo os braços: comemoração ou alerta?",
+    "alt": "Garçom Espetinho passa por uma casinha onde um ursinho abre os braços na janela; na calçada, um caminhão de mudança espera.",
     "arquivo": "dia-081.png"
   },
   "imagem_macete": {
@@ -66,11 +67,11 @@
     "macete": {
       "frase": "O Moro *mora até os 6 meses*",
       "apoio": "Pegadinha de prova: O NBME pergunta a idade em que o reflexo some ou dá um reflexo assimétrico; Moro assimétrico pensa em plexo braquial ou fratura de clavícula, e Moro persistente pensa em lesão do SNC.",
-      "fala": null
+      "fala": "Reflexo que passou da hora da mudança não é festa, doutor. É encaminhamento."
     }
   },
   "legenda": {
-    "contexto": "Consulta de puericultura, um bebê que ainda não senta sem apoio e um reflexo que abre os braços como quem comemora gol. No Rodízio de Quinta, o espeto é de pediatria.",
+    "contexto": "Consulta de puericultura, um bebê de 9 meses que ainda não senta sem apoio e um movimento dos dois braços quando a cabeça cai para trás. O Garçom Espetinho traz o espeto de pediatria: isso combina com a idade?",
     "palavras_chave": [
       "well-child visit",
       "cannot sit without support",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Como interpretar esse reflexo?"
+    "pergunta": "Braços abrem com a queda da cabeça aos 9 meses: como interpretar?"
   },
   "cta": "simulado",
   "exemplo": false

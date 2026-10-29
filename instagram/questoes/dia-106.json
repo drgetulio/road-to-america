@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-02-16",
   "tom": null,
-  "gancho": "Macrô tenta pegar a dupla de *capa de chuva* e escorrega",
-  "gancho_apoio": "Escarro cor de ferrugem, lobo inferior consolidado e cocos em pares. Qual teste fecha o bicho?",
+  "gancho": "Macrô tentou abraçar a dupla e *escorregou igual sabonete*",
+  "gancho_apoio": "Escarro cor de ferrugem, lobo inferior consolidado e cocos em pares.",
   "imagem": {
     "arquivo": "dia-106.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva transparente e lisa. Elas escorregam dos pseudópodes dele como sabonete. No chão, uma poça esverdeada.",
+    "cena": "Num lava-rápido de bairro, cheio de espuma, Macrô, de comanda no bolso, tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva transparente e lisa. Elas escorregam dos pseudópodes dele como sabonete. No chão, uma poça esverdeada.",
     "foco": "50% 35%",
-    "alt": "Macrô tenta segurar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
+    "alt": "Num lava-rápido cheio de espuma, Macrô tenta abraçar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
   },
   "imagem_macete": {
     "arquivo": "dia-106-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Positive coagulase test",
-        "quiz": "Coagulase positiva"
+        "quiz": "Positive coagulase"
       },
       "B": {
         "texto": "Growth in 6.5% sodium chloride",
-        "quiz": "Cresce em NaCl 6,5%"
+        "quiz": "Grows in 6.5% NaCl"
       },
       "C": {
         "texto": "Growth inhibited by optochin",
-        "quiz": "Sensível à optoquina"
+        "quiz": "Optochin-inhibited"
       },
       "D": {
         "texto": "Growth resistant to optochin",
-        "quiz": "Optoquina resistente"
+        "quiz": "Optochin-resistant"
       }
     },
     "correta": "C"
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "Optoquina lembra *ótica*: o pneumococo desmaia, o viridans nem liga",
       "apoio": "Na imagem, a dupla de capa de chuva escorrega dos braços do Macrô; amanhã ela passa diante da ótica.",
-      "fala": null
+      "fala": "Comi, mostrei, avisei? Nem consegui comer. Escorregou."
     }
   },
   "legenda": {
-    "contexto": "Bicho de segunda: pneumonia lobar, escarro cor de ferrugem e uma dupla que aparece no Gram. Qual teste confirma quem é?",
+    "contexto": "Bicho de Segunda: pneumonia lobar, escarro cor de ferrugem e uma dupla que aparece no Gram. Na placa de ágar, um halo verde. Qual teste confirma quem é?",
     "palavras_chave": [
       "rust-colored sputum",
       "lobar consolidation",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diplococo em lança, alfa-hemólise: e aí?"
+    "pergunta": "Diplococo em lança, alfa-hemolítico: qual achado identifica o bicho?"
   },
   "cta": null,
   "reel": null,

@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Síndrome de Goodpasture (dia 15), Dermatite de contato (dia 43), Sensibilidade e especificidade (dia 48)",
   "conceito": "Remix: Goodpasture syndrome + Contact dermatitis to nickel + SnNOut and SpPIn",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     15,
@@ -15,69 +15,68 @@
     48
   ],
   "explicacao_em": "2026-12-21",
-  "gancho": "Remix: quatro frases no quadro e só uma passa no embarque",
+  "gancho": "Rim e pulmão sangrando, e o exame do Seu Néfron veio *negativo*. Confia?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho com três discos: um com um rim estilizado, um com uma tigela de massa crescendo e um com um detector de fumaça; um quarto disco liso, o intruso, fica de lado.",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com o carimbo levantado e um envelope de exame em branco na mão; num quadro na parede, um tubo de pasta de dente fechado; no teto, um detector de fumaça com a luzinha apagada. Um vinil pequeno serve de peso de papel.",
     "foco": "50% 35%",
-    "alt": "Um toca-discos vermelho com três discos: um com um rim estilizado, um com uma tigela de massa crescendo e um com um detector de fumaça; um quarto disco liso, o intruso, fica de lado.",
+    "alt": "Rim e pulmão sangrando, e o exame do Seu Néfron veio negativo. Confia?",
     "arquivo": "dia-049.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco do detector de fumaça gira com a luz verde acesa e silêncio; os outros dois discos mostram as correções, a linha reta brilhando no rim e a massa com bolinhas de linfócito, enquanto o disco liso é posto para fora.",
-    "alt": "Só o detector mudo passou no embarque",
+    "cena": "Callback da repartição: o detector segue mudo e de luz verde, o tubo de pasta de dente continua fechado, sem nenhuma linha espremida, e Seu Néfron manda o formulário para a mesa vizinha, onde uma lupa procura outro suspeito. Num cantinho, uma tigela de massa cresce devagar.",
+    "alt": "Detector mudo também vale no rim",
     "arquivo": "dia-049-macete.png"
   },
   "questao": {
-    "vinheta": "During a Sunday review session, a study group writes four statements on the board, one from each recent topic plus one new topic. Only one statement is accurate.",
-    "pergunta": "Which statement is correct?",
+    "vinheta": "A 31-year-old man has 1 week of hemoptysis and dark urine. Urinalysis shows red blood cell casts, and creatinine is 2.8 mg/dL. A serum anti-GBM antibody assay with 99% sensitivity and 90% specificity is negative. Renal biopsy results are not yet available.",
+    "pergunta": "Which conclusion about anti-GBM disease is most appropriate?",
     "alternativas": {
       "A": {
-        "texto": "Goodpasture: granular immunofluorescence along the GBM",
-        "quiz": "Goodpasture granular",
+        "texto": "It is confirmed by the clinical picture",
+        "quiz": "Confirmada pela clínica",
         "dia": 15
       },
       "B": {
-        "texto": "Nickel dermatitis: IgE-coated mast cells",
-        "quiz": "Nickel: IgE",
-        "dia": 43
+        "texto": "It is likely, given the 90% specificity",
+        "quiz": "Provável pela especificidade"
       },
       "C": {
-        "texto": "Negative highly sensitive test helps rule out",
-        "quiz": "Sensitive neg: out",
+        "texto": "It is very unlikely after this result",
+        "quiz": "Muito improvável",
         "dia": 48
       },
       "D": {
-        "texto": "Highly specific tests are best for screening",
-        "quiz": "Specific to screen"
+        "texto": "The negative result has a high PPV",
+        "quiz": "Negativo com VPP alto"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "Só o *detector mudo* passou no embarque",
+    "titulo": "Detector mudo também vale no rim",
     "certa": [
-      "Teste muito sensível quase não tem falso negativo, então um negativo ajuda a descartar a doença (*SnNOut*, dia 48). As outras três frases trocam detalhes que o NBME adora: o padrão da imunofluorescência no *Goodpasture syndrome* (dia 15) e a célula que medeia a *allergic contact dermatitis* (dia 43). O intruso inverte o papel dos testes no rastreamento."
+      "Hemoptise com cilindros hemáticos é síndrome pulmão-rim, e o anti-GBM do dia 15 entra na lista. Só que o teste tem 99% de *sensitivity* e veio negativo: um teste muito sensível quase não deixa doente passar, então o negativo praticamente afasta a doença (*SnNOut*, dia 48), com *negative predictive value* alto. O próximo suspeito passa a ser a vasculite ANCA, e a biópsia vai mostrar o padrão."
     ],
     "termos": [
-      "linear immunofluorescence",
-      "type IV hypersensitivity",
       "SnNOut",
-      "screening test"
+      "sensitivity",
+      "negative predictive value",
+      "pulmonary-renal syndrome"
     ],
     "erradas": {
-      "A": "Dia 15: no Goodpasture, o anticorpo anti-membrana basal (colágeno tipo IV) dá imunofluorescência linear, não granular.",
-      "B": "Dia 43: a dermatite ao níquel é tipo IV, mediada por linfócitos T, e aparece em 48 a 72 horas.",
-      "D": "Intruso: para rastrear, usa-se teste sensível; o específico serve para confirmar (SpPIn)."
+      "A": "Dia 15: o quadro é compatível, mas um teste com 99% de sensibilidade negativo pesa muito contra a doença.",
+      "B": "Especificidade alta ajuda a confirmar quando o teste dá positivo (SpPIn); com resultado negativo, quem fala é a sensibilidade.",
+      "D": "Valor preditivo positivo só existe para resultado positivo; o negativo é lido pelo valor preditivo negativo, que aqui é alto."
     },
     "macete": {
-      "frase": "*Linha* no Goodpasture, *fermento* no níquel, *detector mudo* no SnNOut",
-      "apoio": "Pegadinha de prova: O NBME troca linear por granular (granular é de imunocomplexo, como na glomerulonefrite pós-estreptocócica) e sensível por específico na hora de rastrear.",
+      "frase": "Detector *mudo* também vale no rim: teste de 99% de sensibilidade negativo, e a pasta de dente do Goodpasture nem saiu do tubo.",
+      "apoio": "Pegadinha de prova: O NBME testa se você lê o negativo pela sensibilidade e o positivo pela especificidade (SnNOut e SpPIn), mesmo no meio de um caso clínico.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Domingo de revisão com três assuntos das últimas semanas, rim e pulmão, pele e estatística, mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Domingo de revisão juntando a pasta de dente do Goodpasture (dia 15) e o detector de fumaça mudo (dia 48). O bônus do macete traz o pão de fermentação natural do níquel (dia 43).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +94,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual frase do quadro está certa?"
+    "pergunta": "Pulmão e rim com anti-MBG negativo e 99% sensível: o que concluir?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

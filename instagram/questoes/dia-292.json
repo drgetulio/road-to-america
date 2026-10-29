@@ -7,22 +7,22 @@
   "sistema": "Processos e doenças multissistêmicos",
   "topico": "Intoxicação por organofosforado",
   "conceito": "Organophosphate poisoning: atropine plus pralidoxime",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-21",
   "tom": null,
-  "gancho": "Todas as torneiras da casa *abriram ao mesmo tempo*",
-  "gancho_apoio": "Inseticida sem proteção, secreção por todo lado e pupilas puntiformes.",
+  "gancho": "Inseticida sem máscara e o corpo *virou parque aquático*",
+  "gancho_apoio": "Secreção por todo lado, pupilas puntiformes e pulso de 46. Depois de descontaminar, o que entra?",
   "imagem": {
     "arquivo": "dia-292.png",
-    "cena": "Balcão de farmácia de interior; atrás dele, uma parede com várias torneiras abertas escorrendo ao mesmo tempo em baldinhos, um pulverizador de jardim encostado e quatro frascos diferentes na prateleira; poças se espalhando no chão.",
+    "cena": "No quintal de um sítio, a Tia Meia-Vida, de óculos vermelhos e galochas, descobre que todas as torneiras do muro abriram ao mesmo tempo e escorrem em baldinhos; um pulverizador de jardim está encostado na cerca e quatro frascos de remédio diferentes esperam numa mesinha. Ela abre um guarda-chuva, espantada, enquanto as poças se espalham.",
     "foco": "50% 35%",
-    "alt": "Todas as torneiras da casa abriram ao mesmo tempo"
+    "alt": "Tia Meia-Vida e todas as torneiras do quintal abertas"
   },
   "imagem_macete": {
     "arquivo": "dia-292-macete.png",
-    "cena": "Callback: uma mão fecha o registro geral, que tem uma florzinha de beladona amarrada (atropina), e as torneiras param; outra mão usa uma chave inglesa para soltar uma engrenagem presa antes que a ferrugem tome conta (pralidoxima reativando a enzima).",
+    "cena": "A Tia Meia-Vida fecha o registro geral, que tem uma florzinha roxa de beladona amarrada, e as torneiras param; com a outra mão, solta com uma chave inglesa uma engrenagem presa antes que a ferrugem tome conta. As poças secam e o guarda-chuva está fechado.",
     "foco": "50% 45%",
     "alt": "Atropina para o muscarínico, pralidoxima para a enzima"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Atropina seca, pralidoxima solta*",
-      "apoio": "Na imagem, todas as torneiras da casa estão abertas. A atropina fecha o registro geral (seca as secreções); a pralidoxima solta a engrenagem da enzima antes que ela enferruje para sempre.",
-      "fala": null
+      "apoio": "Todas as torneiras da casa abertas é o excesso de acetilcolina. A atropina fecha o registro geral e seca as secreções (dose até o pulmão secar); a pralidoxima solta a engrenagem da acetilcolinesterase antes que ela enferruje de vez (o envelhecimento da enzima) e cuida da fasciculação, que a atropina não alcança.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Da atropina eu lembro: vai até o pulmão secar."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Excesso colinérgico: qual é o tratamento?"
+    "pergunta": "Inseticida, secreção, miose e pulso de 46: qual é o tratamento?"
   },
   "cta": null,
   "reel": null,

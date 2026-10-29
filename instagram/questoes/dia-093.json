@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-02-03",
   "tom": null,
-  "gancho": "Potássio lotou o cartório: o que o coração pede *primeiro*?",
-  "gancho_apoio": "Potássio de 7,4 com QRS alargado e acesso venoso pronto. Qual é o primeiro passo?",
+  "gancho": "Potássio 7,4 e QRS largo: *capacete, mudança ou caminhão*?",
+  "gancho_apoio": "Potássio de 7,4, QRS alargado e acesso venoso pronto.",
   "imagem": {
     "arquivo": "dia-093.png",
-    "cena": "Seu Néfron, atrás da mesa do cartório, está soterrado por uma montanha de bananas que chegam por uma esteira. Na janela, um coração simpático se equilibra numa corda bamba. No alto, uma placa verde de rodovia com três saídas em branco.",
+    "cena": "Seu Néfron, atrás da mesa do cartório, está soterrado por uma montanha de bananas que chegam por uma esteira. Pela janela, um coração simpático se equilibra numa corda bamba. Na calçada esperam um capacete branco de obra, um caminhão de mudança e um caminhão de lixo. Na parede, um relógio sem números nas 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron soterrado de bananas enquanto um coração se equilibra numa corda bamba."
+    "alt": "Seu Néfron soterrado de bananas; pela janela, um coração na corda bamba; na calçada, um capacete, um caminhão de mudança e um de lixo."
   },
   "imagem_macete": {
     "arquivo": "dia-093-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Intravenous insulin with dextrose",
-        "quiz": "Insulina com glicose"
+        "quiz": "IV insulin + dextrose"
       },
       "B": {
         "texto": "Oral sodium zirconium cyclosilicate",
-        "quiz": "Ciclossilicato oral"
+        "quiz": "Oral zirconium silicate"
       },
       "C": {
         "texto": "Intravenous calcium gluconate",
-        "quiz": "Cálcio IV"
+        "quiz": "IV calcium gluconate"
       },
       "D": {
         "texto": "Emergency hemodialysis",
-        "quiz": "Hemodiálise já"
+        "quiz": "Emergency hemodialysis"
       }
     },
     "correta": "C"
@@ -68,11 +68,11 @@
     "macete": {
       "frase": "*Capacete*, mudança, caminhão de lixo",
       "apoio": "Na imagem, o coração recebe o capacete antes de qualquer caminhão chegar ao cartório do Seu Néfron.",
-      "fala": null
+      "fala": "Cálcio não tira potássio nenhum. Só segura o coração até eu carimbar a saída."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça: renal crônico, dois remédios que seguram potássio e um ECG que assusta. Qual é o primeiro passo?",
+    "contexto": "Renal crônico, lisinopril e espironolactona recém-começados, pulso de 52, potássio de 7,4 e um ECG que assusta. O acesso venoso está pronto. Seu Néfron já está soterrado de bananas: qual é o primeiro passo?",
     "palavras_chave": [
       "chronic kidney disease",
       "lisinopril and spironolactone",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "K 7,4 e QRS largo: o que fazer primeiro?"
+    "pergunta": "K 7,4 com QRS largo e acesso venoso pronto: o que vem primeiro?"
   },
   "cta": null,
   "reel": null,

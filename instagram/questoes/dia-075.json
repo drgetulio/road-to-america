@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-16",
-  "gancho": "Seu Néfron fechou um guichê e *o ouvido começou a zumbir*",
+  "gancho": "Seu Néfron fechou a *balada do quarteto* e o ouvido saiu zumbindo",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, cuida de um tubo comprido com quatro guichês de catraca ao longo do caminho, um deles numa subida íngreme. Um comprimido simpático com um raio no peito chega para fechar um dos guichês. Ao lado, uma concha do mar em forma de orelha.",
+    "cena": "Seu Néfron, de gravata e carimbo, é o porteiro de uma rua de baladas desenhada como um tubo comprido, com quatro portarias ao longo do caminho, uma delas no alto de uma ladeira íngreme. Um comprimido simpático com um raio no peito chega com uma placa de fechado sem letras. Ao lado, uma concha do mar em forma de orelha.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron fechou um guichê e o ouvido começou a zumbir",
+    "alt": "Seu Néfron é porteiro de uma rua de baladas em forma de tubo, com quatro portarias; um comprimido com raio no peito chega com uma placa de fechado.",
     "arquivo": "dia-075.png"
   },
   "imagem_macete": {
@@ -64,13 +64,13 @@
       "D": "A anidrase carbônica é o alvo da acetazolamida, que causa acidose metabólica, não alcalose."
     },
     "macete": {
-      "frase": "Guichê de *quatro* fechado: *ouvido* e *potássio*",
+      "frase": "Alça é a *balada do quarteto*: fechou, sai sal, K e audição",
       "apoio": "Pegadinha de prova: O NBME diferencia os diuréticos pelo cálcio: a alça aumenta a perda urinária de cálcio, e o tiazídico diminui.",
-      "fala": null
+      "fala": "Sem os quatro juntos, não entra. E sem carimbo, não sai."
     }
   },
   "legenda": {
-    "contexto": "Furosemida em dose alta, pulmão desinchando e, dois dias depois, zumbido no ouvido e potássio baixo. Seu Néfron quer saber qual guichê foi fechado.",
+    "contexto": "Furosemida em dose alta, pulmão desinchando e, dois dias depois, zumbido no ouvido e potássio de 3,1. Seu Néfron tem quatro portarias ao longo do túbulo e quer saber qual delas o remédio fechou.",
     "palavras_chave": [
       "heart failure",
       "pulmonary edema",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual transportador foi bloqueado?"
+    "pergunta": "Furosemida, zumbido e K de 3,1: qual transportador caiu?"
   },
   "cta": "simulado",
   "exemplo": false

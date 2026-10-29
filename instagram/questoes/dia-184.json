@@ -8,22 +8,23 @@
   "topico": "Asma",
   "conceito": "Asthma: as-needed ICS-formoterol preferred over SABA alone (GINA)",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": "Dia Mundial da Asma (primeira terça de maio, 4/5/2027).",
   "remix_de": null,
   "explicacao_em": "2027-05-05",
   "tom": null,
-  "gancho": "Dia Mundial da Asma: o que *mudou* na bombinha de resgate?",
+  "gancho": "Dia Mundial da Asma: a bombinha azul faz plantão sozinha há 50 anos. *Ainda é titular?*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-184.png",
-    "cena": "Uma estrada com uma placa verde de rodovia de três saídas, sem letras; um carrinho esportivo azul em forma de bombinha corre sozinho pela pista e, ao fundo, uma árvore em forma de pulmão balança ao vento.",
+    "cena": "Conforto médico às 3 da manhã, com o relógio de parede sem números. Dona Térmica, de olho meio fechado, assiste a uma bombinha azul de capa de super-herói correndo sozinha entre balões em forma de pulmão, apagando um foco de fumaça atrás do outro. Numa estante, um troféu empoeirado.",
     "foco": "50% 35%",
-    "alt": "Dia Mundial da Asma: o que mudou na bombinha de resgate?"
+    "alt": "Dona Térmica observa uma bombinha azul de capa correndo sozinha entre balões em forma de pulmão"
   },
   "imagem_macete": {
     "arquivo": "dia-184-macete.png",
-    "cena": "Surge uma bicicleta de dois lugares que pega a saída verde, com o inalador vinho pedalando rápido na frente e o laranja na garupa, enquanto a árvore-pulmão se acalma; o carrinho azul solitário para numa placa de dê a preferência.",
-    "alt": "Resgate com corticoide junto"
+    "cena": "Agora a bombinha azul divide uma bicicleta de dois lugares com uma bombinha vinho na garupa (o corticoide inalatório): os dois pedalam juntos e os balões-pulmão param de soltar fumaça. Dona Térmica serve dois cafezinhos, e o troféu ganha um laço verde.",
+    "alt": "SABA sozinho saiu do time: o resgate vem com corticoide junto"
   },
   "questao": {
     "vinheta": "A 24-year-old woman with asthma uses albuterol 2 to 3 times per week for wheezing and has no nighttime awakenings or activity limitation. She takes no other medications. Spirometry shows obstruction that reverses after bronchodilator. She asks for a better treatment plan.",
@@ -65,13 +66,13 @@
       "D": "LABA sem corticoide inalatório (*LABA monotherapy*) aumenta o risco de morte relacionada à asma e é contraindicado."
     },
     "macete": {
-      "frase": "Na asma, o resgate vem de *bicicleta de dois lugares*: o formoterol pedala rápido na frente e o corticoide vai na garupa. Bombinha azul andando sozinha é motorista sem cinto.",
+      "frase": "SABA sozinho é *estudar só na véspera*: apaga a crise de hoje e garante a de amanhã. Pela GINA, o resgate vem em *combo*: o formoterol abre rápido e o *corticoide inalatório* vai na garupa, no mesmo jato.",
       "apoio": "O NBME pune LABA sem corticoide e SABA sozinho como único tratamento; se a vinheta citar GINA ou asma leve em adulto, a resposta é ICS-formoterol conforme a necessidade.",
-      "fala": null
+      "fala": "Já vi esse caso às 3 da manhã: bombinha sozinha só adia a próxima crise."
     }
   },
   "legenda": {
-    "contexto": "Hoje é o Dia Mundial da Asma. Uma paciente jovem usa a bombinha de resgate algumas vezes por semana e pede um plano melhor. A diretriz mudou a resposta nos últimos anos.",
+    "contexto": "Hoje é o Dia Mundial da Asma. Ela usa a bombinha de resgate duas ou três vezes por semana, não acorda à noite e quer um plano melhor. A GINA mudou essa resposta nos últimos anos, e a prova foi junto.",
     "palavras_chave": [
       "mild asthma",
       "albuterol use",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Asma leve em adulto. Qual o melhor plano?"
+    "pergunta": "Asma leve, salbutamol 3x/semana: qual plano pela GINA?"
   },
   "cta": "simulado",
   "exemplo": false

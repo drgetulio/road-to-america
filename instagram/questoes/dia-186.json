@@ -8,22 +8,23 @@
   "topico": "Desacelerações tardias",
   "conceito": "Late decelerations: uteroplacental insufficiency, start intrauterine resuscitation",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-07",
   "tom": null,
-  "gancho": "O traçado só desce *depois* do pico da contração. E agora?",
+  "gancho": "Seis espetos em dez minutos: *nem no rodízio* isso é educado",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-186.png",
-    "cena": "O garçom do rodízio chega à mesa com seis espetos de uma vez, apressado; um balão vermelho em forma de coração, amarrado na cadeira, dá uma afundadinha sempre logo depois que cada espeto passa, e a plaquinha de duas cores ainda está de lado.",
+    "cena": "No rodízio, o Garçom Espetinho chega correndo com seis espetos de uma vez. Na cadeira, um balão em forma de coração dá uma afundadinha sempre logo depois que cada espeto passa. Ao lado da mesa, um soro pendurado com uma torneirinha aberta, e a plaquinha verde e vermelha de lado.",
     "foco": "50% 35%",
-    "alt": "O traçado só desce depois do pico da contração. E agora?"
+    "alt": "O garçom chega com seis espetos de uma vez e o balão-coração afunda depois de cada um"
   },
   "imagem_macete": {
     "arquivo": "dia-186-macete.png",
-    "cena": "O garçom fecha a torneira de um soro pendurado ao lado do balcão (a ocitocina), vira a cadeira de lado e vira a plaquinha para o vermelho para os espetos extras; o balão-coração volta a flutuar alto e firme.",
-    "alt": "Desaceleração tardia: ressuscitação intrauterina"
+    "cena": "O Garçom Espetinho fecha a torneirinha do soro, vira a cadeira para o lado esquerdo e mostra o lado vermelho da plaquinha para os espetos extras. O balão-coração volta a flutuar alto e firme.",
+    "alt": "Desaceleração tardia: para a ocitocina e vira de lado"
   },
   "questao": {
     "vinheta": "A 30-year-old primigravida in active labor at 39 weeks' gestation is receiving oxytocin augmentation. Six contractions occur every 10 minutes. Fetal heart tracing shows a baseline of 140/min, minimal variability, and recurrent decelerations whose nadir follows the peak of each contraction.",
@@ -65,13 +66,13 @@
       "D": "A amnioinfusão serve para desacelerações variáveis por compressão do cordão, não para insuficiência uteroplacentária."
     },
     "macete": {
-      "frase": "*VEAL CHOP*: Variable é Cord, Early é Head, Acceleration é OK, *Late é Placenta*. No rodízio, o garçom trouxe espeto demais: o oxigênio chega atrasado. Feche a torneira da ocitocina e vire a mãe de lado.",
+      "frase": "*VEAL CHOP*: Variable é Cord, Early é Head, Acceleration é OK, *Late é Placenta*. Seis contrações em dez minutos é taquissistolia: o garçom *para de servir* (desliga a ocitocina) e *vira a mãe de lado* antes de qualquer cesárea.",
       "apoio": "O NBME mostra desaceleração tardia com ocitocina e oferece cesárea logo de cara; a resposta é corrigir a causa primeiro (parar ocitocina, posição, volume) e reavaliar o traçado.",
-      "fala": null
+      "fala": "Seis espetos em dez minutos? Nem eu, doutor. Primeiro fecha a torneira."
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta no espeto da obstetrícia: trabalho de parto com ocitocina, contrações demais e um traçado que desce sempre atrasado. Qual é o primeiro movimento da equipe?",
+    "contexto": "Rodízio de Quinta na obstetrícia: ocitocina correndo, seis contrações a cada dez minutos e um traçado que desce sempre depois do pico. Qual é o primeiro movimento da equipe?",
     "palavras_chave": [
       "active labor",
       "oxytocin augmentation",
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Desaceleração tardia com ocitocina. Primeiro passo?"
+    "pergunta": "Desacelera depois do pico, com ocitocina: o que fazer?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -27,20 +27,20 @@ Nenhum conceito se repete. Cada conceito tem um rótulo em inglês único (`conc
 
 | Dia | Quadro | Step | Conteúdo | Assinatura visual |
 |---|---|---|---|---|
-| Segunda | **Bicho de Segunda** | Step 1 | Microbiologia e imunologia | Macrô na porta de um "boteco dos micróbios", com uma placa de estrada em branco (o sistema do dia entra no template) |
-| Terça | **Plantão de Terça** | Step 2 CK | Clínica médica: diagnóstico e próximo passo | Placa verde de rodovia com três saídas em branco, uma para cada conduta (o "NEXT STEP" entra no template) |
-| Quarta | **Quarta do Porquê** | Step 1 | Mecanismos: patologia, fisiologia, anatomia, bioquímica, genética, histologia | Mito, Seu Néfron ou Capitã Plaqueta explicando a engrenagem em corte, estilo manual de montagem |
-| Quinta | **Rodízio de Quinta** | Step 2 CK | Pediatria, GO, psiquiatria e cirurgia em rodízio, como no internato e na churrascaria | Garçom de rodízio com espetos que são especialidades; a plaquinha verde e vermelha fica de lado na questão e mostra o verde na explicação |
+| Segunda | **Bicho de Segunda** | Step 1 | Microbiologia e imunologia | Macrô em cenário que muda toda semana, com a comanda de boteco em branco no bolso como assinatura (o sistema do dia entra no template) |
+| Terça | **Plantão de Terça** | Step 2 CK | Clínica médica: diagnóstico e próximo passo | Dona Térmica, a garrafa de café do plantão, com um relógio sem números nas 3 da manhã como assinatura (o "NEXT STEP" entra no template) |
+| Quarta | **Quarta do Porquê** | Step 1 | Mecanismos: patologia, fisiologia, anatomia, bioquímica, genética, histologia | Mito, Seu Néfron, Capitã Plaqueta ou, quando nenhum deles combina, Seu Allen explicando a engrenagem em corte, estilo manual de montagem |
+| Quinta | **Rodízio de Quinta** | Step 2 CK | Pediatria, GO, psiquiatria e cirurgia em rodízio, como no internato e na churrascaria | Garçom Espetinho servindo especialidades no espeto, em cenário variado; a plaquinha verde e vermelha fica de lado na questão e mostra o verde na explicação |
 | Sexta | **Sextou na Farmácia** | Step 1 em 31 sextas, Step 2 CK em 21 | Farmacologia (mecanismo e efeito adverso) e farmacoterapia (escolha do remédio) | Tia Meia-Vida atrás do balcão de uma farmácia de interior, com ampulheta |
 | Sábado | **Sábado Sem Viés** | Step 1 em 22 sábados, Step 2 CK em 30 | Ética, comunicação, segurança do paciente e bioestatística | Viés escondido atrás de uma tabela 2x2, ou uma balança de tribunal desenhada como placa de trânsito |
-| Domingo | **Remix de Domingo** | Step 1 em 39 domingos, Step 2 CK em 13 | Revisão cumulativa de três conceitos já vistos, com o dia original marcado | Toca-discos com três discos de rótulo ilustrado e um quarto disco intruso; o selo "visto no dia X" entra no slide |
+| Domingo | **Remix de Domingo** | Step 1 em 39 domingos, Step 2 CK em 13 | Revisão cumulativa de três conceitos já vistos, com o dia original marcado | Vinheta clínica nova que junta os conceitos da semana; um vinil pequeno no canto é a assinatura e o personagem de um dos conceitos ocupa a cena; o selo "visto no dia X" entra no slide |
 
 ### Como o espaçamento funciona
 
 1. **D+1**: a explicação sai no dia seguinte, junto com a questão nova.
 2. **Remix de domingo**: cada remix junta três conceitos do mesmo Step, um de cada janela: da semana que passou (1 a 6 dias), de 2 a 5 semanas atrás e de 2 a 4 meses atrás. O mesmo conceito sobe de janela em janela, com intervalos que só aumentam. No calendário atual, a primeira revisão vem em mediana 6 dias depois do post original, a segunda 28 dias depois da primeira e a terceira 49 dias depois da segunda. Em 40 das 42 cadeias com duas ou mais revisões, cada intervalo é maior que o anterior; as duas exceções são remixes temáticos de data especial, que escolhem os conceitos pelo tema.
 3. **Intercalação**: os sistemas se espalham pelo ano em proporção às faixas, e o gerador evita repetir o mesmo sistema em dois dias seguidos do mesmo Step (sobraram 7 repetições em 313 dias, todas em dias de data especial, em que o tema fixa o conteúdo, como a semana de estreia no Novembro Azul).
-4. **Remix na prática**: a pergunta do domingo é uma vinheta nova que obriga a separar os três conceitos (por exemplo, "qual destes três explica o quadro?"), ou uma questão de "qual é o intruso". As quatro alternativas saem dos três conceitos revisados mais um distrator. No slide, cada alternativa leva o selo "visto no dia X".
+4. **Remix na prática**: a pergunta do domingo é uma vinheta clínica nova, no formato do USMLE, que junta dois ou três conceitos já vistos num mesmo paciente (por exemplo, uma miastenia controlada que piora depois da rifampina junta o dia 22 e o dia 26). Nada de "Which statement is correct?" nem de grupo de estudo com cartões. As quatro alternativas são da mesma categoria (quatro mecanismos, quatro diagnósticos ou quatro condutas; também valem quatro micro-organismos, quatro proteínas ou a triagem de quatro pacientes estáveis, "qual atender primeiro", como no dia 245), e o conceito revisado que não cabe na vinheta volta no macete como bônus. No slide, a alternativa que vem de um dia revisado leva o selo "visto no dia X"; o validador avisa quando um dos três dias ficou só no macete, e esse aviso é esperado quando a homogeneidade das alternativas pede.
 
 ## 3. Personagens recorrentes
 
@@ -65,6 +65,36 @@ Regras dos personagens: nenhum deles adoece, sofre ou faz piada com paciente. El
 - Capitã Plaqueta: *a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her*
 - Tia Meia-Vida: *a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away*
 - Viés: *a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart*
+
+### Anfitriões dos quadros
+
+Três quadros não têm órgão nem célula que combine com todo tema (o plantão de clínica, a quarta de anatomia e neuro, o rodízio de especialidades). Para esses dias entra um anfitrião fixo do quadro, com desenho e bordão próprios. Ele não ocupa o campo `personagem` do calendário (que continua com os seis acima); vai no campo `anfitriao` do dia e no prompt, sempre com a mesma descrição, depois de "Recurring character: Nome,". Quando o tema pede um dos seis (o Seu Néfron numa hipercalemia, a Capitã Plaqueta numa PTT), o personagem fixo ganha o dia e o anfitrião fica de fora ou aparece pequeno, de figurante.
+
+| Anfitrião | Quadro | Quem é | Descrição visual fixa | Bordão |
+|---|---|---|---|---|
+| **Dona Térmica** | Plantão de Terça | A garrafa térmica de café do plantão. Já viu de tudo às 3 da manhã, cochila em pé e acorda certa. É a autoironia de quem estuda para o Step depois de 12 horas de plantão | Garrafa térmica vermelha de pressão, tampa navy, olhos de sono mas espertos, estetoscópio no pescoço, prancheta em branco | "Já vi esse caso às 3 da manhã." |
+| **Seu Allen** | Quarta do Porquê | A chave Allen que vem na caixa do móvel. Desmonta qualquer mecanismo e sempre acha a peça que sobrou | Chavinha Allen prateada em forma de L, olhos grandes e redondos, avental navy de marceneiro, lápis vermelho atrás da "orelha" | "Sobrou peça? Então faltou mecanismo." |
+| **Garçom Espetinho** | Rodízio de Quinta | O garçom do rodízio, que passa servindo condutas no espeto (o mascote que já existia, agora com nome e bordão) | Mascote de cabeça redonda, camisa branca, colete vermelho e gravata-borboleta navy, nunca uma pessoa real | "Vai uma conduta aí, doutor?" |
+
+Descrição fixa em inglês:
+
+- Dona Térmica: *a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard*
+- Seu Allen: *a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be*
+- Garçom Espetinho: *a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie*
+
+**Assinatura pequena, cena variada.** Cada quadro guarda só um detalhe de assinatura no canto da cena, e a cena-base muda toda semana (nenhuma se repete no mesmo mês):
+
+- Bicho de Segunda: a comanda de boteco em branco no bolso do Macrô (o boteco não precisa aparecer).
+- Plantão de Terça: um relógio de parede sem números com os ponteiros nas 3 da manhã. A placa verde de três saídas sai de cena.
+- Quarta do Porquê: setinhas de manual de montagem em volta da peça que importa.
+- Rodízio de Quinta: a plaquinha verde e vermelha do rodízio.
+- Sextou na Farmácia: a ampulheta da Tia Meia-Vida (ela mesma).
+- Sábado Sem Viés: a tabela 2x2 em branco, nem que seja pequena num quadro na parede.
+- Remix de Domingo: um vinil pequeno num canto, com o personagem de um dos conceitos revisados no centro. O toca-discos com três discos sai de cena.
+
+**Humor que vai para o grupo da turma.** Cada dia tenta ter uma tirada com punchline (a frase que dá vontade de mandar para o grupo), de preferência com piada interna de quem estuda para o USMLE (o NBME que esconde a pista na última linha, o "most likely" que nunca é o mais provável para quem está cansado, o Anki com 900 revisões atrasadas, a vinheta lida às 2 da manhã depois do plantão) ou referência brasileira atual (rodízio, fila do pão, Pix, grupo da família, bloco de Carnaval, VAR). A piada é sempre do estudante, da prova, do órgão ou do remédio, nunca do paciente.
+
+**Ganchos e stories.** O gancho da capa é específico e curioso, ligado à cena do dia ("Seu Néfron foi buscar pão de sal e a padaria só tinha doce"), nunca genérico ("Qual é o próximo passo?") e nunca começa com "Remix". A pergunta do adesivo de quiz é uma frase completa, com o dado da vinheta que decide (até 80 caracteres): "Hematêmese com PA 86/52 e FC 124: o que fazer primeiro?", e não "E agora?".
 
 **Base do prompt de imagem** (Higgsfield, modelo Nano Banana Pro, resolução 2k, proporção 4:5). Os 730 prompts de `instagram/dias/` seguem esta ordem, e `ferramentas/normalizar-dias.mjs` mantém o começo e o fim iguais em todos:
 
@@ -208,4 +238,4 @@ Checklist antes de publicar: vinheta com até 60 palavras; quatro alternativas; 
 
 ## 12. Campos do calendário
 
-Cada dia em `calendario.json` tem: `dia` (1 a 365), `data` (AAAA-MM-DD), `dia_semana`, `quadro`, `step`, `sistema` (nome do outline oficial do Step), `disciplina_ou_area` (principal), `disciplinas_secundarias`, `topico` (português), `conceito` (inglês, único), `tipo_pergunta`, `personagem` (ou null), `gancho_data` (ou null), `remix_de` (dias revisados, só aos domingos), `explicacao_em` (D+1) e `chave`. Os domingos também têm `sistemas_revisados`. O arquivo traz ainda `quadros`, `personagens`, `periodo` e `regras`.
+Cada dia em `calendario.json` tem: `dia` (1 a 365), `data` (AAAA-MM-DD), `dia_semana`, `quadro`, `step`, `sistema` (nome do outline oficial do Step), `disciplina_ou_area` (principal), `disciplinas_secundarias`, `topico` (português), `conceito` (inglês, único), `tipo_pergunta`, `personagem` (ou null), `gancho_data` (ou null), `remix_de` (dias revisados, só aos domingos), `explicacao_em` (D+1) e `chave`. Os domingos também têm `sistemas_revisados`. O personagem de um domingo de remix vem da data especial (`especiais[data].personagem`) ou, nos domingos comuns, do mapa `personagensRemix` de `ferramentas/dados-calendario.js`, sem mudar o Step nem os conceitos do dia; o anfitrião do quadro (`anfitriao`) fica no JSON do dia em `instagram/dias/`. O arquivo traz ainda `quadros`, `personagens`, `periodo` e `regras`.

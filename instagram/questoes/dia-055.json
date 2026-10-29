@@ -7,20 +7,20 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Cirurgia no local errado",
   "conceito": "Wrong-site surgery prevention: site marking and a time-out before incision",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-27",
-  "gancho": "O cartão de embarque diz uma coisa e a etiqueta, outra",
+  "gancho": "O cartão de embarque diz uma coisa, e a *etiqueta* da mala diz outra",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um portão de embarque com o ônibus Road to America estacionado; um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro, e uma placa de balança de tribunal ao fundo.",
+    "cena": "Capitã Plaqueta, de colete e apito, está num cruzamento de corredor de centro cirúrgico desenhado como estrada; diante dela, um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro. Ela leva o apito à boca, e uma pequena tabela 2x2 em branco aparece num quadro na parede.",
     "foco": "50% 35%",
-    "alt": "Um portão de embarque com o ônibus Road to America estacionado; um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro, e uma placa de balança de tribunal ao fundo.",
+    "alt": "O cartão de embarque diz uma coisa, e a etiqueta da mala diz outra",
     "arquivo": "dia-055.png"
   },
   "imagem_macete": {
-    "cena": "Callback: todo mundo no portão faz o sinal de pausa com a mão levantada; o cartão e a etiqueta agora mostram flechas para o mesmo lado, uma marca de caneta aparece sobre a mala certa e a balança fica equilibrada.",
+    "cena": "Callback: a Capitã apita e todos param com a mão levantada; o cartão e a etiqueta agora mostram flechas para o mesmo lado, uma marca de caneta aparece sobre a mala certa e um bloco de boletim de ocorrência fica guardado, sem uso.",
     "alt": "Divergência? Para tudo e confere",
     "arquivo": "dia-055-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Uma divergência de documento ainda não é infração; cancelar e denunciar é exagerado quando a checagem resolve."
     },
     "macete": {
-      "frase": "Time-out é *check-in*: passageiro, destino e assento",
+      "frase": "Time-out é a Capitã apitando *antes* do cruzamento: divergência para tudo e confere com o paciente e os papéis. Boletim de ocorrência depois da batida não conserta joelho.",
       "apoio": "Pegadinha de prova: O NBME coloca a pressão de quem tem mais hierarquia na sala; a resposta é sempre parar e verificar antes de prosseguir.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Sala de cirurgia, paciente ainda acordado e uma divergência entre o termo de consentimento e a escala. Alguém precisa decidir o que vem antes da incisão.",
+    "contexto": "Sala de cirurgia, paciente ainda acordado e uma divergência entre o termo de consentimento e a escala. A Capitã Plaqueta tem um apito e uma pergunta: o que vem antes da incisão?",
     "palavras_chave": [
       "preoperative verification",
       "consent form",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "Termo diz esquerdo, escala diz direito: o que fazer antes da indução?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -26,6 +26,9 @@ export const PERSONAGENS = {
 export const APOIO = {
   garcom: 'a friendly cartoon churrascaria waiter drawn as a simple round-headed mascot (not a real person), white shirt, red vest and navy bow tie',
   onibus: 'the Road to America bus, a rounded navy cartoon bus with a green and yellow stripe along its side',
+  // anfitriões dos quadros (PROGRAMA.md, seção 3)
+  termica: 'a red pump-top coffee thermos character with a navy cap, sleepy but sharp eyes, a small stethoscope around her neck and a blank clipboard',
+  allen: 'a small silver L-shaped hex key character with big round eyes, a navy carpenter apron and a tiny red pencil tucked behind where an ear would be',
 };
 const NOMES = {
   Macro: 'Macrô', 'Macrô': 'Macrô', Mito: 'Mito', 'Seu Nefron': 'Seu Néfron', 'Seu Néfron': 'Seu Néfron', 'Capitã Plaqueta': 'Capitã Plaqueta',

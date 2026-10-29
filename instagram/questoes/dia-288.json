@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-17",
   "tom": null,
-  "gancho": "Seu Néfron achou *uma galhada de cervo* no meio dos formulários",
+  "gancho": "Seu Néfron abriu a gaveta dos formulários e achou *uma galhada de cervo*",
   "gancho_apoio": "Urina alcalina, cristal em tampa de caixão e uma pedra que ocupa a pelve inteira.",
   "imagem": {
     "arquivo": "dia-288.png",
-    "cena": "Seu Néfron na escrivaninha com pilhas de formulários; no meio da papelada cresce uma pedra branca ramificada como galhada de cervo, e bastonetes pequenos deslizam sobre a mesa em ondas, como enxame.",
+    "cena": "Seu Néfron, na escrivaninha, abre a gaveta dos formulários e leva um susto: no meio da papelada cresce uma pedra branca ramificada como galhada de cervo, e bastonetes pequenos deslizam sobre a mesa em ondas, como enxame. No canto da mesa, uma comanda de boteco em branco.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron achou uma galhada de cervo no meio dos formulários"
+    "alt": "Seu Néfron acha uma galhada de cervo na gaveta"
   },
   "imagem_macete": {
     "arquivo": "dia-288-macete.png",
-    "cena": "Callback: os bastonetes usam martelinhos para quebrar moléculas de ureia em nuvens de amônia; uma fita de pH fica azul-escura (alcalina) e cristais retangulares empilham a galhada; Seu Néfron ergue o carimbo vermelho, sem poder liberar a pedra.",
+    "cena": "Os bastonetes usam martelinhos para quebrar moléculas de ureia em nuvens de amônia; uma fita de pH fica azul-escura e cristais retangulares empilham a galhada. Seu Néfron ergue o carimbo vermelho, contrariado, sem poder liberar a pedra.",
     "foco": "50% 45%",
     "alt": "Urease: urina alcalina e pedra de estruvita"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*Chifre na pelve? Urease no Proteus*: ureia vira amônia e a urina vira cal",
-      "apoio": "Seu Néfron carimba cada formulário, mas o Proteus entra com uma marreta que quebra ureia em amônia; a urina fica alcalina e a estruvita cresce como galhada de cervo. Sem carimbo, essa pedra não sai.",
-      "fala": null
+      "apoio": "Seu Néfron carimba cada formulário, mas o Proteus entra com uma marreta que quebra ureia em amônia; a urina fica alcalina e a estruvita cresce como galhada de cervo. Sem carimbo, essa pedra não sai: precisa tirar a pedra inteira e tratar a infecção.",
+      "fala": "Sem carimbo, não sai. E essa pedra não sai nem com carimbo."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Urina pH 8 e pedra em galhada: qual produto?"
+    "pergunta": "Urina com pH 8 e cálculo em galhada: qual produto bacteriano causou?"
   },
   "cta": null,
   "reel": null,

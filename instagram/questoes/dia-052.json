@@ -8,19 +8,20 @@
   "topico": "Puberdade e estágios de Tanner",
   "conceito": "Puberty onset: thelarche in girls and testicular enlargement in boys are the first signs",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-24",
-  "gancho": "Na estação da puberdade, qual vagão sai primeiro?",
+  "gancho": "Na estação da puberdade, qual *vagão* sai primeiro?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma estação de trem antiga com quatro vagões estacionados e o chefe da estação com o apito na boca; não se vê qual vagão vai na frente.",
+    "cena": "Uma estação de trem antiga com quatro vagões estacionados; o Seu Allen, de avental de marceneiro, segura a folha do manual de montagem do trem, e setinhas de manual pairam sobre os vagões sem mostrar qual vai na frente.",
     "foco": "50% 35%",
-    "alt": "Uma estação de trem antiga com quatro vagões estacionados e o chefe da estação com o apito na boca; não se vê qual vagão vai na frente.",
+    "alt": "Na estação da puberdade, qual vagão sai primeiro?",
     "arquivo": "dia-052.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o trem parte com a locomotiva em forma de broto de flor; atrás vêm um vagão com grama, um vagão com uma mola e um último vagão com uma lua crescente, em fila.",
+    "cena": "Callback: o trem parte com a locomotiva em forma de broto de flor; atrás vêm um vagão com grama, um vagão com uma mola e um último vagão com uma lua crescente, em fila. O Seu Allen confere a ordem no manual.",
     "alt": "O primeiro vagão das meninas é o broto mamário",
     "arquivo": "dia-052-macete.png"
   },
@@ -64,13 +65,13 @@
       "C": "Puberdade precoce central em menina é o início antes dos 8 anos; aos 10, está no tempo certo."
     },
     "macete": {
-      "frase": "Meninas: *broto, pelo, pulo, menarca*",
+      "frase": "Meninas: *broto, pelo, pulo, menarca*. O primeiro vagão é o broto mamário, e ele pode chegar de um lado só.",
       "apoio": "Pegadinha de prova: O NBME descreve o broto unilateral e doloroso para assustar; é normal, e o primeiro sinal no menino é o aumento testicular, não os pelos.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Menina de 10 anos, um nódulo pequeno embaixo da aréola, sem outros sinais e crescendo na curva de sempre. A mãe quer saber se está tudo bem.",
+    "contexto": "Menina de 10 anos, um nódulo pequeno embaixo da aréola, sem outros sinais e crescendo na curva de sempre. A mãe quer saber se está tudo bem, e o Seu Allen confere a ordem das peças.",
     "palavras_chave": [
       "subareolar nodule",
       "10-year-old girl",
@@ -88,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "O que explica o nódulo da menina?"
+    "pergunta": "Nódulo subareolar aos 10 anos, sem pelos: o que explica o achado?"
   },
   "cta": "simulado",
   "exemplo": false

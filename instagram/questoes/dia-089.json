@@ -7,21 +7,21 @@
   "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
   "topico": "Bisfosfonatos orais",
   "conceito": "Oral bisphosphonates: take fasting with water and stay upright 30 minutes (pill esophagitis)",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-30",
-  "gancho": "Alendronato antes de dormir, com leite: *o que deu errado*?",
+  "gancho": "Tomou alendronato com leite e foi deitar. *A Tia Meia-Vida desmaiou*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "No balcão da farmácia de interior, ao amanhecer, um comprimido grande e simpático olha para quatro opções: um copo de leite, um travesseiro, um prato de comida e um copo de água. Uma ampulheta está no canto do balcão.",
+    "cena": "Na farmácia de interior, à noite, a Tia Meia-Vida quase desmaia atrás do balcão ao ver um comprimido grande e simpático de pijama, com um copo de leite numa mão e um travesseiro na outra. No balcão, um prato com pãozinho e um copo de água esperam.",
     "foco": "50% 35%",
-    "alt": "Alendronato antes de dormir, com leite: o que deu errado?",
+    "alt": "Tia Meia-Vida quase desmaia ao ver um comprimido de pijama com um copo de leite e um travesseiro; no balcão, um pãozinho e um copo de água.",
     "arquivo": "dia-089.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o comprimido desce de pé por um escorregador em forma de esôfago junto com uma onda de água limpa, enquanto a ampulheta marca meia hora. O travesseiro, o leite e o prato foram empurrados para o canto do balcão.",
-    "alt": "Jejum, água pura e de pé por 30 minutos",
+    "cena": "Callback, de manhã cedo: o comprimido, ainda em jejum, desce de pé por um escorregador em forma de esôfago com uma onda de água limpa, enquanto a ampulheta da Tia marca meia hora. O pijama, o leite e o pãozinho ficaram para depois.",
+    "alt": "De manhã, o comprimido desce de pé pelo escorregador do esôfago com água; a ampulheta da Tia marca meia hora.",
     "arquivo": "dia-089-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "C": "Triturar e misturar com comida irrita a mucosa e derruba a absorção."
     },
     "macete": {
-      "frase": "Primeiro freguês: *jejum, água, de pé*",
+      "frase": "Alendronato é a *fila do pão de domingo*: jejum, água e de pé",
       "apoio": "Pegadinha de prova: O NBME pergunta a orientação de uso ou dá uma esofagite depois do bisfosfonato; os outros efeitos cobrados são osteonecrose de mandíbula e fratura atípica de fêmur.",
-      "fala": null
+      "fala": "Com leite e deitado? Esse comprimido vai parar no meio do caminho, meu bem."
     }
   },
   "legenda": {
-    "contexto": "Alendronato semanal, dor atrás do esterno e dor para engolir no dia seguinte a cada dose. O jeito de tomar está errado. No Sextou na Farmácia, qual orientação teria evitado isso?",
+    "contexto": "Alendronato semanal, dor atrás do esterno e dor para engolir no dia seguinte a cada dose. Ela toma o comprimido na hora de dormir, com um copo de leite. Qual orientação teria evitado tudo isso?",
     "palavras_chave": [
       "osteoporosis",
       "retrosternal pain",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual orientação evitaria isso?"
+    "pergunta": "Alendronato com leite antes de dormir: que orientação evitaria isso?"
   },
   "cta": "simulado",
   "exemplo": false

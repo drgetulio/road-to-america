@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-08-16",
   "tom": null,
-  "gancho": "Três discos no remix: *quem atacou pele, fígado e intestino?*",
-  "gancho_apoio": "GVHD, doença granulomatosa crônica e hepatite E, mais um intruso.",
+  "gancho": "Palma da mão coçando é dinheiro chegando? *Depois do transplante, não*",
+  "gancho_apoio": "Quatro semanas depois do transplante de medula: rash, diarreia e bilirrubina subindo. Qual é o diagnóstico?",
   "imagem": {
     "arquivo": "dia-287.png",
-    "cena": "Toca-discos com três discos de ícones (uma mala de viagem, um isqueiro que não acende e uma gota de chuva) e um quarto disco de outra cor ao lado; Macrô de DJ, com fones, coçando a cabeça.",
+    "cena": "Um caminhão de mudança está estacionado na frente de uma casinha recém-pintada. Macrô, de guardanapo xadrez, confere uma lista em branco de quem vai entrar: na calçada, como suspeitos, esperam uma caixa de mudança cheia de bolinhas azuis de óculos escuros, uma bolota felpuda, uma gota de água turva e um tijolinho tampando um cano. Macrô coça a palma do próprio pseudópode, intrigado. Num canto, um vinil pequeno faz de calota do caminhão.",
     "foco": "50% 35%",
-    "alt": "Três discos no remix: quem atacou pele, fígado e intestino?"
+    "alt": "Macrô confere quem entra na casa nova depois da mudança"
   },
   "imagem_macete": {
     "arquivo": "dia-287-macete.png",
-    "cena": "Callback: só o disco da mala gira; da mala sai um linfócito T turista de óculos escuros, emburrado, apontando três cômodos de uma casa em corte: a sala de parede estampada (pele), a cozinha com fogão em forma de fígado e os canos sob o piso (intestino).",
+    "cena": "Dentro da casinha, as bolinhas azuis de óculos escuros desfizeram as malas e, emburradas, apontam três cômodos numa casa em corte: a sala de papel de parede estampado, os canos sob o piso e a cozinha com fogão em forma de fígado. A bolota, a gota e o tijolinho ficam liberados na calçada.",
     "foco": "50% 45%",
-    "alt": "GVHD: T do doador contra pele, fígado e intestino"
+    "alt": "GVHD: T da doadora contra pele, fígado e intestino"
   },
   "questao": {
-    "vinheta": "Four weeks after an allogeneic hematopoietic stem cell transplant, a 40-year-old woman develops a pruritic maculopapular rash on her palms and soles, profuse watery diarrhea, and rising bilirubin. She is afebrile. Stool studies are negative for infection.",
-    "pergunta": "Which mechanism best explains her findings?",
+    "vinheta": "A 9-year-old boy with chronic granulomatous disease receives an allogeneic hematopoietic stem cell transplant from his HLA-matched sister. Four weeks later, he develops a pruritic maculopapular rash on his palms and soles, profuse watery diarrhea, and a serum bilirubin of 4.6 mg/dL. Stool studies and serum hepatitis E RNA are negative.",
+    "pergunta": "Which is the most likely diagnosis?",
     "alternativas": {
       "A": {
-        "texto": "Defective NADPH oxidase in phagocytes",
-        "quiz": "NADPH oxidase",
+        "texto": "Invasive aspergillosis",
+        "quiz": "Aspergilose invasiva",
         "dia": 260
       },
       "B": {
-        "texto": "Donor T cells attacking host tissues",
-        "quiz": "T do doador",
+        "texto": "Acute graft-versus-host disease",
+        "quiz": "GVHD aguda",
         "dia": 211
       },
       "C": {
-        "texto": "Fecal-oral hepevirus infection",
-        "quiz": "Hepevírus",
+        "texto": "Chronic hepatitis E infection",
+        "quiz": "Hepatite E crônica",
         "dia": 281
       },
       "D": {
-        "texto": "Preformed recipient antibodies against the graft",
-        "quiz": "Anticorpo prévio"
+        "texto": "Hepatic sinusoidal obstruction syndrome",
+        "quiz": "Obstrução sinusoidal"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "GVHD: *T do doador* contra pele, fígado e intestino",
+    "titulo": "Pele, fígado e intestino: *T da doadora*",
     "certa": [
-      "Pele (palmas e plantas), intestino (diarreia volumosa) e fígado (bilirrubina subindo) semanas depois de um *transplante alogênico de medula* formam a tríade da *graft-versus-host disease*. Os *linfócitos T do doador* reconhecem os antígenos do receptor como estranhos e atacam os tecidos dele. Por isso a GVHD é típica do transplante de medula e da transfusão não irradiada em imunossuprimido."
+      "Rash em palmas e plantas, diarreia aquosa e bilirrubina subindo semanas depois de um *allogeneic stem cell transplant* são *acute graft-versus-host disease* (dia 211): os *donor T cells* da irmã reconhecem os antígenos do menino como estranhos e atacam pele, intestino e fígado. O transplante, que cura a doença granulomatosa crônica (dia 260), trouxe junto o exército da doadora."
     ],
     "termos": [
-      "graft-versus-host disease",
+      "acute graft-versus-host disease",
       "donor T cells",
       "allogeneic stem cell transplant",
-      "irradiated blood products"
+      "skin, gut and liver"
     ],
     "erradas": {
-      "A": "Doença granulomatosa crônica (dia 260) é um defeito de nascença da NADPH oxidase, com infecções por catalase-positivos, não uma reação ao transplante.",
-      "C": "Hepatite E (dia 281) pode ficar crônica em transplantado, mas não explica o rash de palmas e plantas, e a pesquisa de infecção veio negativa.",
-      "D": "Anticorpos pré-formados do receptor causam rejeição hiperaguda de órgão sólido em minutos, não esta tríade semanas depois."
+      "A": "A aspergilose é a sombra da DGC (dia 260), mas dá nódulos no pulmão, não rash palmoplantar com diarreia.",
+      "C": "A hepatite E (dia 281) pode cronificar no imunossuprimido, mas o RNA veio negativo e ela não explica a pele.",
+      "D": "Intruso: a síndrome de obstrução sinusoidal costuma vir nas 3 primeiras semanas, com fígado grande, ascite e ganho de peso, sem rash nem diarreia."
     },
     "macete": {
       "frase": "GVHD: *o hóspede briga com a casa*, na pele, no fígado e no intestino",
-      "apoio": "No toca-discos, o disco da mala de viagem (o enxerto) toca: o linfócito T do doador chega na casa nova e reclama da parede (pele), da cozinha (fígado) e do encanamento (intestino).",
-      "fala": null
+      "apoio": "Na GVHD, quem chega com o enxerto são os linfócitos T da doadora, que estranham a casa nova e reclamam da parede (pele), do encanamento (intestino) e da cozinha (fígado). Aspergilose é a sombra da DGC, hepatite E pede RNA positivo e a obstrução sinusoidal vem antes, sem rash.",
+      "fala": "Comi, mostrei, avisei. Mas esses linfócitos vieram na mudança."
     }
   },
   "legenda": {
-    "contexto": "Remix de domingo com GVHD (dia 211), doença granulomatosa crônica (dia 260) e hepatite E (dia 281), mais um intruso. Quatro semanas depois de um transplante de medula, rash nas palmas, diarreia e bilirrubina subindo.",
+    "contexto": "Domingo de revisão com os dias 211, 260 e 281, mais um intruso. Um menino com doença granulomatosa crônica fez transplante de medula da irmã. Quatro semanas depois: coceira nas palmas, diarreia e bilirrubina subindo.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +95,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pós-transplante, rash e diarreia: qual mecanismo?"
+    "pergunta": "Transplante há 4 semanas, rash nas palmas, diarreia e icterícia: qual é?"
   },
   "cta": null,
   "reel": null,

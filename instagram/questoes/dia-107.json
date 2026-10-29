@@ -8,17 +8,18 @@
   "topico": "Nódulo de tireoide",
   "conceito": "Thyroid nodule: check TSH first, then ultrasound to decide on fine-needle aspiration",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-17",
   "tom": null,
-  "gancho": "A borboleta achou uma *pedrinha* na asa: qual é a primeira saída?",
-  "gancho_apoio": "Nódulo de 2 cm na tireoide, sem sintomas. Qual é o primeiro passo?",
+  "gancho": "A borboleta achou uma pedrinha na asa: furar, fotografar ou *falar com o gerente*?",
+  "gancho_apoio": "Nódulo de 2 cm na tireoide, achado no exame de rotina, sem sintomas.",
   "imagem": {
     "arquivo": "dia-107.png",
-    "cena": "Uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas, para diante da placa verde de rodovia com três saídas em branco: uma estrada leva a uma agulha gigante, outra a uma câmera e outra a um telefone antigo.",
+    "cena": "No balcão de atendimento do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica recebe uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas. Na bancada, uma agulha gigante de desenho, uma câmera e um telefone antigo de gancho.",
     "foco": "50% 35%",
-    "alt": "Borboleta com uma pedrinha na asa diante de uma placa com três saídas: agulha, câmera e telefone."
+    "alt": "Dona Térmica recebe uma borboleta-tireoide com uma pedrinha na asa; na bancada, uma agulha gigante, uma câmera e um telefone antigo."
   },
   "imagem_macete": {
     "arquivo": "dia-107-macete.png",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Measurement of serum TSH",
-        "quiz": "Dosar TSH"
+        "quiz": "Serum TSH"
       },
       "B": {
         "texto": "Fine-needle aspiration",
-        "quiz": "Punção (PAAF)"
+        "quiz": "Fine-needle aspiration"
       },
       "C": {
         "texto": "Radioactive iodine uptake scan",
-        "quiz": "Cintilografia"
+        "quiz": "Radioiodine uptake scan"
       },
       "D": {
         "texto": "Total thyroidectomy",
-        "quiz": "Tireoidectomia total"
+        "quiz": "Total thyroidectomy"
       }
     },
     "correta": "A"
@@ -66,13 +67,13 @@
       "D": "Cirurgia sem diagnóstico não é conduta inicial; ela depende da citologia e do ultrassom."
     },
     "macete": {
-      "frase": "Primeiro *liga para o chefe* na cadeira turca: TSH",
+      "frase": "Nódulo de tireoide: *primeiro fala com o gerente* (TSH)",
       "apoio": "Na imagem, a borboleta com a pedrinha na asa para diante das três saídas da placa.",
-      "fala": null
+      "fala": "Antes de furar qualquer coisa, eu pergunto para a hipófise."
     }
   },
   "legenda": {
-    "contexto": "Plantão de terça, endócrino: nódulo de 2 cm achado no exame de rotina, sem sintomas e sem fator de risco. Por onde começar?",
+    "contexto": "Nódulo de 2 cm na tireoide, sem sintomas, sem radiação no pescoço e sem família com câncer de tireoide. Dona Térmica já viu muito nódulo às 3 da manhã: por onde começar?",
     "palavras_chave": [
       "neck mass",
       "routine exam",
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Nódulo de tireoide de 2 cm: primeiro?"
+    "pergunta": "Nódulo tireoidiano de 2 cm sem sintomas: qual é o primeiro exame?"
   },
   "cta": null,
   "reel": null,

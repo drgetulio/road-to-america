@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Cólera (dia 155), Síndrome de Wiskott-Aldrich (dia 197), Doença do enxerto contra o hospedeiro (dia 211)",
   "conceito": "Remix: Vibrio cholerae toxin + Wiskott-Aldrich syndrome + Graft-versus-host disease",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     155,
@@ -16,19 +16,19 @@
   ],
   "explicacao_em": "2027-06-07",
   "tom": null,
-  "gancho": "No toca-discos de domingo, *qual faixa toca* para esse menino?",
-  "gancho_apoio": "Revisão de cólera, Wiskott-Aldrich e GVHD. Só um mecanismo explica o caso.",
+  "gancho": "Eczema, otite e plaqueta baixa: *três suspeitos* e dois álibis",
+  "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-217.png",
-    "cena": "O toca-discos do Remix de Domingo com três discos coloridos: um com gotinhas de água e grãos de arroz, um com plaquetinhas minúsculas e um com um ônibus de torcida. A agulha paira sem escolher.",
+    "cena": "Uma sala de reconhecimento de suspeitos, com um vinil pequeno pendurado na parede. A Capitã Plaqueta, de prancheta, observa três suspeitos em fila: uma gotinha de água com grãos de arroz, uma plaquetinha minúscula de suéter que pinica e um ônibus de torcida visitante. Um quarto suspeito, um plugue sem tomada, tenta se enfiar na fila.",
     "foco": "50% 35%",
-    "alt": "No toca-discos de domingo, qual faixa toca para esse menino?"
+    "alt": "Capitã Plaqueta numa sala de reconhecimento com três suspeitos em fila"
   },
   "imagem_macete": {
     "arquivo": "dia-217-macete.png",
-    "cena": "Callback: a agulha pousa no disco das plaquetinhas minúsculas; dele sai uma onda de som com três bolhas: uma mancha de pele seca, um ouvidinho e uma plaqueta bem pequena. Os outros dois discos voltam para a capa.",
+    "cena": "A Capitã aponta para a plaquetinha de suéter: por baixo do suéter, um andaime de varetas (a actina) está torto, e no crachá dela brilha a forma de um cromossomo X. A gotinha de arroz e o ônibus mostram seus álibis: nada de sangue nas fezes e nenhum doador.",
     "foco": "50% 45%",
-    "alt": "Plaqueta pequena, eczema e infecção: WAS"
+    "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
   },
   "questao": {
     "vinheta": "A 20-month-old boy has had eczema since infancy, three episodes of otitis media, and recent bloody stools. Platelet count is 30,000/mm3, and the smear shows unusually small platelets. He has never had a transfusion or transplant. His maternal uncle had similar problems.",
@@ -74,8 +74,8 @@
     },
     "macete": {
       "frase": "*WATER*: Wiskott-Aldrich, Thrombocytopenia, Eczema, Recurrent infections",
-      "apoio": "No toca-discos, o disco do dia 197 toca a faixa WATER, a do regador azul da Capitã Plaqueta, e a agulha só para nele quando vê plaqueta pequena. O disco do dia 155 é o interruptor do Gs colado no ON com fita adesiva: água de arroz, sem sangue. O da GVHD só toca se houver doador.",
-      "fala": null
+      "apoio": "Na sala de reconhecimento, a cólera tem álibi (diarreia em água de arroz, sem sangue e sem eczema) e a GVHD também (nunca houve transplante nem transfusão). Sobra a WAS, com o andaime de actina torto no X.",
+      "fala": "Parou, colou... encolheu de novo! Esse andaime de actina não segura ninguém."
     }
   },
   "legenda": {
@@ -97,7 +97,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Eczema, otite e plaqueta pequena: qual é?"
+    "pergunta": "Eczema, otite e plaqueta pequena: qual mecanismo?"
   },
   "cta": null,
   "reel": null,

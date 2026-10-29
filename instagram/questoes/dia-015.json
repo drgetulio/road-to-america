@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-17",
   "tom": null,
-  "gancho": "Seu Néfron e o pulmão receberam a *mesma* visita indesejada",
+  "gancho": "Seu Néfron e o pulmão dividem o mesmo carpete, e alguém *sujou* os dois",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-015.png",
-    "cena": "Seu Néfron, de gravata e carimbo na mão, trabalha numa repartição ao lado de um colega pulmão de cardigã. Os dois olham surpresos para o chão, onde dardinhos amarelos em forma de Y caem sobre o mesmo carpete que passa por baixo das duas mesas.",
+    "cena": "Seu Néfron, de gravata e carimbo na mão, trabalha numa repartição ao lado de um colega pulmão de cardigã. Os dois olham surpresos para o chão, onde dardinhos amarelos em forma de Y caem sobre o mesmo carpete que passa por baixo das duas mesas. Uma comanda de boteco em branco está presa no mural.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron e o pulmão receberam a mesma visita indesejada"
+    "alt": "Seu Néfron e o pulmão dividem o mesmo carpete, e alguém sujou os dois"
   },
   "imagem_macete": {
     "arquivo": "dia-015-macete.png",
-    "cena": "Callback da repartição: os dardinhos Y agora formam uma linha reta perfeita e contínua na emenda do carpete, como pasta de dente espremida numa escova comprida. O carpete é uma malha de fios (colágeno tipo IV) que passa por baixo da mesa do rim e da mesa do pulmão, e um tubo gigante de pasta está no fim da linha.",
+    "cena": "Callback da repartição: os dardinhos Y formam uma linha reta e contínua na emenda do carpete, como pasta de dente espremida numa escova comprida. O carpete é uma malha de fios (colágeno tipo IV) que passa pelas duas mesas, e um tubo gigante de pasta está no fim da linha; num pratinho ao lado, um montinho de farofa fica de fora.",
     "alt": "Pasta de dente em linha reta"
   },
   "questao": {
@@ -66,13 +66,13 @@
       "C": "A nefropatia por IgA mostra depósitos mesangiais de IgA e hematúria logo depois de uma infecção, sem hemoptise."
     },
     "macete": {
-      "frase": "Good-PASTA-ure: o anticorpo sai como pasta de dente, num fio linear e contínuo ao longo da membrana basal. Seu Néfron e o pulmão dividem o mesmo piso de colágeno tipo IV.",
+      "frase": "Good-*PASTA*-ure: o anticorpo sai como pasta de dente, numa *linha contínua*. Granular é farofa, e farofa é outra doença.",
       "apoio": "Pegadinha de prova: O NBME separa as doenças pulmão-rim pela imunofluorescência: linear é anti-GBM, granular é imunocomplexo e vazia é pauci-imune (ANCA).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda com Seu Néfron: rim e pulmão adoecem ao mesmo tempo, e a biópsia mostra um padrão que a prova adora.",
+    "contexto": "Bicho de Segunda com Seu Néfron: rim e pulmão sangrando ao mesmo tempo, ANCA negativo e uma biópsia com o padrão que a prova adora desenhar. Lembre que o NBME sempre esconde o detalhe decisivo na última linha.",
     "palavras_chave": [
       "hemoptysis",
       "red blood cell casts",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Hemoptise e IF linear no rim: qual diagnóstico?"
+    "pergunta": "Hemoptise, cilindros hemáticos e IF linear no rim: qual diagnóstico?"
   },
   "exemplo": false
 }

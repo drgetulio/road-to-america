@@ -7,22 +7,22 @@
   "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
   "topico": "Artrite reumatoide",
   "conceito": "Rheumatoid arthritis: methotrexate first-line, screen for latent TB before anti-TNF",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-07",
   "tom": null,
-  "gancho": "A artrite não cedeu ao metotrexato. *O que checar antes do reforço?*",
-  "gancho_apoio": "Um biológico está a caminho e o balcão não libera a caneta sem um exame.",
+  "gancho": "Tia Meia-Vida não libera a caneta do biológico *sem um exame na nota*",
+  "gancho_apoio": "Artrite ainda ativa depois de quatro meses de metotrexato e o adalimumabe a caminho.",
   "imagem": {
     "arquivo": "dia-278.png",
-    "cena": "Balcão de farmácia de interior com uma caneta injetora embrulhada para presente; atrás, uma pequena fortaleza de pedra redonda com uma janelinha fechada e um martelo encostado, pronto para tirar o cimento entre as pedras.",
+    "cena": "Numa feira de artesanato de cidade do interior, a Tia Meia-Vida, de óculos vermelhos, ergue uma caneta injetora embrulhada para presente e se recusa a entregar, apontando para um bloquinho de nota em branco na barraca. Atrás dela, uma pequena fortaleza redonda de pedra, com uma janelinha fechada, e um martelo encostado no muro, pronto para tirar o cimento entre as pedras.",
     "foco": "50% 35%",
-    "alt": "A artrite não cedeu ao metotrexato. O que checar antes do reforço?"
+    "alt": "Tia Meia-Vida não entrega a caneta de presente sem a nota"
   },
   "imagem_macete": {
     "arquivo": "dia-278-macete.png",
-    "cena": "Callback: antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca; só depois de conferir (e tratar, se preciso) a caneta é liberada.",
+    "cena": "Antes do martelo, uma lanterna em forma de tubinho de coleta de sangue ilumina a janelinha da fortaleza e mostra um bacilo em forma de bastão dormindo de touca. Só depois de conferir a Tia anota no bloquinho e entrega a caneta, agora com uma fitinha verde.",
     "foco": "50% 45%",
     "alt": "Anti-TNF só depois de rastrear TB latente"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Antes do anti-TNF, *bata na porta do granuloma*",
-      "apoio": "O TNF é o cimento da parede do granuloma onde o bacilo dorme. Tirar o cimento sem olhar quem está lá dentro é acordar o inquilino. O IGRA é a lanterna que espia pela fresta antes.",
-      "fala": null
+      "apoio": "O TNF é o cimento do granuloma onde o bacilo dorme. Tirar o cimento sem olhar quem mora lá dentro é acordar o inquilino. O IGRA (ou o PPD) é a lanterna que espia pela fresta antes, a nota que a Tia exige; TB latente positiva trata antes ou junto do biológico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Do IGRA antes do biológico, eu lembro."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Antes do anti-TNF, qual exame?"
+    "pergunta": "Antes de começar o adalimumabe, qual exame a Tia exige?"
   },
   "cta": null,
   "reel": null,

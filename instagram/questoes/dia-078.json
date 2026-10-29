@@ -11,17 +11,17 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-19",
-  "gancho": "No boteco do Macrô, a *conta do fiado* chegou dez dias depois",
+  "gancho": "Picada de cobra resolvida. *Dez dias depois chegou a fatura*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "No balcão do boteco dos micróbios, o Macrô anota num caderninho de fiado. Ao lado, um frasco de soro com tampa em forma de cabeça de cavalo simpático e um calendário de mesa. Não dá para ver o que vai acontecer quando a conta chegar.",
+    "cena": "Numa banca de feira, Macrô, de comanda no bolso, paga na maquininha de cartão um frasco de soro com tampa em forma de cabeça de cavalo simpático. Ao lado, um calendário de mesa em branco. Ao longe, numa trilha, uma cobra de desenho descansa tranquila na grama.",
     "foco": "50% 35%",
-    "alt": "No boteco do Macrô, a conta do fiado chegou dez dias depois",
+    "alt": "Macrô paga na maquininha de cartão um frasco de soro com tampa de cavalo numa banca de feira; ao longe, uma cobra descansa na trilha.",
     "arquivo": "dia-078.png"
   },
   "imagem_macete": {
-    "cena": "Callback: dez folhas do calendário caíram e a conta chegou. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo (imunocomplexos) entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim. O Macrô paga com moedinhas douradas (complemento) e a carteira fica vazia.",
-    "alt": "Conta que chega depois: doença do soro",
+    "cena": "Callback da feira: dez folhas do calendário caíram e chegou a fatura. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim. O Macrô paga os juros com moedinhas douradas, e a carteira fica vazia.",
+    "alt": "Dez folhas do calendário caem; bolinhos de anticorpo com pedacinhos de cavalo entopem canos, e o Macrô paga os juros com moedas douradas.",
     "arquivo": "dia-078-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "C": "A DRESS aparece 2 a 8 semanas depois de remédios como anticonvulsivantes e alopurinol, com eosinofilia, edema facial e hepatite."
     },
     "macete": {
-      "frase": "Fiado: *conta em 1 a 2 semanas*, juros no *complemento*",
+      "frase": "Doença do soro é *fatura do cartão*: chega em 1 a 2 semanas",
       "apoio": "Pegadinha de prova: O NBME diferencia pelo relógio e pelo lugar: minutos é tipo I; 1 a 2 semanas, sistêmico e com complemento baixo é doença do soro; local e em horas, no ponto da injeção, é Arthus.",
-      "fala": null
+      "fala": "Comi o soro hoje. A fatura veio em dez dias, com juros de C3 e C4."
     }
   },
   "legenda": {
-    "contexto": "Um soro de cavalo salvou o paciente de uma picada de cobra. Dez dias depois vieram febre, placas na pele, dor nas juntas e complemento baixo. O Macrô quer o diagnóstico.",
+    "contexto": "Um soro de cavalo salvou um homem de uma picada de cobra. Dez dias depois vieram febre, placas na pele, dor nas juntas e complemento baixo. O Macrô está conferindo a fatura: qual é o diagnóstico?",
     "palavras_chave": [
       "snakebite",
       "antivenom",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o diagnóstico mais provável?"
+    "pergunta": "Febre, artralgia e C3 baixo 10 dias após antiveneno: o que é?"
   },
   "cta": "simulado",
   "exemplo": false

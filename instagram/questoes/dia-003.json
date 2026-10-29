@@ -7,22 +7,22 @@
   "sistema": "Sistemas reprodutor e endócrino",
   "topico": "Hiperplasia prostática benigna",
   "conceito": "BPH: dihydrotestosterone from 5-alpha reductase drives transition zone growth",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": "Novembro Azul.",
   "remix_de": null,
   "explicacao_em": "2026-11-05",
   "tom": null,
-  "gancho": "Obra no centro da cidade: por que o *trânsito* parou?",
+  "gancho": "Seu Néfron liberou a urina, e ela parou numa *obra* no meio da avenida",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-003.png",
-    "cena": "Mapa de uma cidadezinha vista de cima: uma avenida (a uretra) passa bem no meio, e um prédio redondo no centro está inchando e espremendo a avenida. Carrinhos em forma de gota de água fazem fila num engarrafamento.",
+    "cena": "Seu Néfron, de gravata e carimbo, carimba uma fila de gotinhas de água que saem da repartição. Logo adiante, na avenida da cidade, uma obra redonda no meio da pista cresce em volta do asfalto e espreme a passagem; setinhas de manual de montagem apontam para a obra. As gotinhas fazem fila no engarrafamento, e ele olha por cima dos óculos.",
     "foco": "50% 35%",
-    "alt": "Obra no centro da cidade: por que o trânsito parou?"
+    "alt": "Seu Néfron liberou a urina, e ela parou numa obra no meio da avenida"
   },
   "imagem_macete": {
     "arquivo": "dia-003-macete.png",
-    "cena": "Callback da obra: em corte, um operário com uma betoneira transforma tijolos cinza comuns (testosterona) em tijolos dourados e mais fortes (DHT). Os tijolos dourados se empilham só no anel em volta da avenida, que é a parte do prédio que cresce.",
+    "cena": "Callback da obra, em corte: um operário em forma de bolinha, com uma betoneira, transforma tijolos cinza (testosterona) em tijolos dourados mais fortes (DHT). Os dourados se empilham só no anel em volta da avenida. Seu Néfron, de capacete por cima dos óculos, confere a nota fiscal da betoneira.",
     "alt": "A obra fica bem no meio da avenida"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A 3-beta-HSD também é uma etapa inicial da síntese de esteroides, longe da conversão final que acontece na próstata."
     },
     "macete": {
-      "frase": "Obra no meio da avenida: a zona de TRANSIÇÃO cresce bem em volta da uretra e trava o TRÂNSITO. Quem paga o concreto é a DHT, fabricada pela 5-alfa-redutase.",
+      "frase": "BPH é obra no meio da avenida: cresce na zona de *transição*, trava o *trânsito*, e quem paga o concreto é a DHT da 5-alfa-redutase.",
       "apoio": "Pegadinha de prova: O NBME troca as zonas: a BPH nasce na zona de transição (sintoma urinário cedo) e o carcinoma, na zona periférica (nódulo no toque retal).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Novembro Azul também é falar de próstata sem medo. Hoje, o mecanismo do crescimento benigno que aperta a uretra.",
+    "contexto": "Novembro Azul também é falar de próstata sem medo. Seu Néfron carimba, a urina sai e trava logo depois da bexiga, numa obra que só cresce. Quarta do Porquê: quem está pagando o concreto?",
     "palavras_chave": [
       "nocturia",
       "weak urinary stream",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "A próstata cresce por causa de qual enzima?"
+    "pergunta": "Próstata lisa e aumentada: qual enzima local faz o hormônio?"
   },
   "exemplo": false
 }

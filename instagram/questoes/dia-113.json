@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-02-23",
   "tom": null,
-  "gancho": "Um surfista no *lago de ácido* que não se queima",
-  "gancho_apoio": "Úlcera duodenal, bastonete curvo na biópsia e um sopro que denuncia. Qual enzima salva o bicho?",
+  "gancho": "Biópsia num gel amarelo que *virou rosa em uma hora*: quem pintou?",
+  "gancho_apoio": "Úlcera duodenal, bastonete curvo e um gel de laboratório que mudou de cor.",
   "imagem": {
     "arquivo": "dia-113.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, olha espantado para uma bactéria em espiral com rabinho de hélice que surfa num lago amarelo-esverdeado de ácido borbulhante, sem se queimar. Uma nuvenzinha branca flutua bem em cima dela.",
+    "cena": "Numa piscina de ondas de ácido amarelo-esverdeado, uma bactéria em espiral com rabinho de hélice surfa tranquila, sem se queimar, sob uma nuvenzinha branca. Na borda, Macrô, de comanda no bolso e protetor solar no nariz, segura uma tirinha de papel que passou de amarelo para rosa.",
     "foco": "50% 35%",
-    "alt": "Macrô olha uma bactéria espiral surfando num lago de ácido, com uma nuvem em cima."
+    "alt": "Uma bactéria espiral surfa numa piscina de ácido sob uma nuvem branca; na borda, Macrô segura uma tirinha que ficou rosa."
   },
   "imagem_macete": {
     "arquivo": "dia-113-macete.png",
@@ -27,8 +27,8 @@
     "alt": "O surfista solta a nuvem de um cilindro de gás e uma bolha sobe para encher um balão."
   },
   "questao": {
-    "vinheta": "A 38-year-old man has epigastric pain that improves with meals. Endoscopy shows a duodenal ulcer. Antral biopsy shows curved, flagellated gram-negative rods in the mucus layer. After he drinks a solution of 13C-labeled urea, labeled carbon dioxide is detected in his breath.",
-    "pergunta": "Which bacterial enzyme protects this organism from gastric acid and explains the breath test?",
+    "vinheta": "A 38-year-old man has epigastric pain that improves with meals. Endoscopy shows a duodenal ulcer. An antral biopsy placed in a gel containing a pH indicator turns from yellow to pink within an hour, and histology shows curved gram-negative rods in the mucus layer.",
+    "pergunta": "Which bacterial enzyme explains the color change and the organism's survival in gastric acid?",
     "alternativas": {
       "A": {
         "texto": "Urease",
@@ -39,45 +39,45 @@
         "quiz": "Catalase"
       },
       "C": {
-        "texto": "Coagulase",
-        "quiz": "Coagulase"
+        "texto": "Cytochrome c oxidase",
+        "quiz": "Oxidase"
       },
       "D": {
-        "texto": "Hyaluronidase",
-        "quiz": "Hialuronidase"
+        "texto": "Superoxide dismutase",
+        "quiz": "Superoxide dismutase"
       }
     },
     "correta": "A"
   },
   "explicacao": {
-    "titulo": "H. pylori: a *urease* faz o escudo de amônia",
+    "titulo": "Gel ficou rosa: é a *urease*",
     "certa": [
-      "A urease do Helicobacter pylori quebra a ureia em amônia e CO2. A amônia neutraliza o ácido ao redor da bactéria, que sobrevive na camada de muco, e ainda lesa o epitélio. No teste respiratório (urea breath test), o CO2 marcado que sai no sopro mostra que a urease está ativa, ou seja, que há infecção atual."
+      "O gel do *rapid urease test* tem ureia e um indicador de pH. A *urease* do *Helicobacter pylori* quebra a ureia em amônia e CO2; a *ammonia* alcaliniza o meio, e o indicador fica rosa. É a mesma nuvem de amônia que protege a bactéria do ácido na camada de muco e ainda lesa o epitélio. O *urea breath test* usa o mesmo princípio, medindo o CO2 marcado no sopro."
     ],
     "termos": [
-      "Helicobacter pylori",
       "urease",
-      "urea breath test",
-      "duodenal ulcer"
+      "ammonia",
+      "rapid urease test",
+      "urea breath test"
     ],
     "erradas": {
-      "B": "O H. pylori também é catalase positivo, mas a catalase protege contra peróxido dos neutrófilos e não neutraliza o ácido nem gera CO2.",
-      "C": "Coagulase é marca do Staphylococcus aureus e forma fibrina ao redor da bactéria.",
-      "D": "Hialuronidase ajuda bactérias como o estreptococo a se espalhar pelo tecido conjuntivo."
+      "B": "O H. pylori é catalase positivo, mas a catalase desfaz o peróxido dos neutrófilos; não gera amônia nem muda o pH do gel.",
+      "C": "O teste de oxidase positivo ajuda a identificar o H. pylori no laboratório, mas a oxidase é enzima da cadeia respiratória e não neutraliza ácido.",
+      "D": "A superóxido dismutase protege a bactéria do radical superóxido dos fagócitos, não do ácido gástrico."
     },
     "macete": {
       "frase": "Urease faz o *guarda-chuva de amônia*; o CO2 sai no sopro",
       "apoio": "Na imagem, o surfista espiral desliza no lago de ácido com uma nuvem por cima.",
-      "fala": null
+      "fala": "O surfista leva o próprio guarda-chuva de amônia. E ainda deixa o gel rosa de prova."
     }
   },
   "legenda": {
-    "contexto": "Bicho de segunda, gastro: úlcera duodenal, bastonete curvo na biópsia e um teste de sopro positivo. Como esse bicho vive no ácido?",
+    "contexto": "Úlcera duodenal, dor que melhora com a comida e uma biópsia que mudou de cor no gel do laboratório. Das quatro enzimas da lista, o bicho tem mais de uma; só uma explica a mudança de cor e o sossego dele no ácido.",
     "palavras_chave": [
       "epigastric pain",
-      "ulcer on endoscopy",
-      "curved gram-negative rods",
-      "breath test"
+      "duodenal ulcer",
+      "antral biopsy",
+      "curved gram-negative rods"
     ],
     "cta_texto": null,
     "cta_slide": null,
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual enzima protege o H. pylori do ácido?"
+    "pergunta": "Gel da biópsia ficou rosa e o bicho vive no ácido: qual enzima?"
   },
   "cta": null,
   "reel": null,

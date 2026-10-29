@@ -7,22 +7,22 @@
   "sistema": "Sistema endócrino",
   "topico": "Hiperaldosteronismo primário",
   "conceito": "Primary aldosteronism screening: aldosterone/renin ratio in resistant or hypokalemic hypertension",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": "Semana do Dia Mundial da Hipertensão (17/5).",
   "remix_de": null,
   "explicacao_em": "2027-05-19",
   "tom": null,
-  "gancho": "Pressão que não baixa e *potássio* que some: o que pedir?",
+  "gancho": "Três remédios em dose cheia, adesão perfeita e a pressão *nem tchum*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-198.png",
-    "cena": "Uma placa verde de rodovia de três saídas sem letras; na estrada, um carrinho leva um saleiro gigante no banco de trás e deixa cair bananas pela janela, enquanto um medidor de pressão num poste aponta para o vermelho.",
+    "cena": "Repartição do Seu Néfron às 3 da manhã, com o relógio sem números na parede. Pela janela passa um carrinho com um saleiro gigante no banco de trás, deixando cair bananas pelo caminho, e um medidor de pressão no poste aponta para o vermelho. Na mesa, três caixas de remédio vazias empilhadas.",
     "foco": "50% 35%",
-    "alt": "Pressão que não baixa e potássio que some: o que pedir?"
+    "alt": "Pela janela do Seu Néfron, um carrinho com um saleiro gigante deixa cair bananas"
   },
   "imagem_macete": {
     "arquivo": "dia-198-macete.png",
-    "cena": "Antes da saída da tomografia, o carrinho, agora com dois chapeuzinhos triangulares no teto (as adrenais), para numa balança de feira: de um lado, um saco pesado de sal (aldosterona alta), do outro, uma pena levinha (renina baixa); a balança pende e uma seta verde aponta para a conta, não para a câmera.",
+    "cena": "Seu Néfron põe dois chapeuzinhos triangulares (as adrenais) numa balança de feira: de um lado, um saco pesado de sal (aldosterona alta); do outro, uma pena levinha (renina baixa). Ele carimba de verde a conta e deixa a câmera em forma de rosquinha esperando no corredor.",
     "alt": "Hipertensão resistente com K baixo: aldosterona sobre renina"
   },
   "questao": {
@@ -67,11 +67,11 @@
     "macete": {
       "frase": "Hiperaldosteronismo: a adrenal *guarda o sal e joga a banana fora* (retém sódio, perde potássio). Para achar, *primeiro a conta* (aldosterona alta sobre renina baixa), *depois a foto* (TC).",
       "apoio": "O NBME oferece a TC de adrenal como primeiro passo; a sequência é rastrear com a relação aldosterona/renina, confirmar e só então localizar com imagem e cateterismo venoso.",
-      "fala": null
+      "fala": "Sem a conta carimbada, não sai tomografia."
     }
   },
   "legenda": {
-    "contexto": "Semana do Dia Mundial da Hipertensão. Três remédios em dose cheia, boa adesão e uma pressão teimosa, com potássio baixo de brinde. A prova quer o primeiro exame, não a imagem.",
+    "contexto": "Semana do Dia Mundial da Hipertensão. Anlodipino, lisinopril e clortalidona em dose cheia, boa adesão, pressão em 162/98 e potássio de 3,2 mesmo com reposição. Qual é o primeiro exame?",
     "palavras_chave": [
       "uncontrolled hypertension",
       "three antihypertensives",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "HAS resistente e K baixo. Primeiro exame?"
+    "pergunta": "HAS com 3 drogas e K 3,2: qual o primeiro exame?"
   },
   "cta": "simulado",
   "exemplo": false

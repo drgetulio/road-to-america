@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Influenza: shift e drift (dia 204), Deficiência do complemento terminal (dia 246), Doença granulomatosa crônica (dia 260)",
   "conceito": "Remix: Influenza shift vs drift + Terminal complement deficiency + Chronic granulomatous disease",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     204,
@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-07-26",
   "tom": null,
-  "gancho": "Remix: gripe, complemento e *fogão apagado* no mesmo toca-discos",
-  "gancho_apoio": "Influenza (dia 204), complemento (dia 246), DGC (dia 260) e um intruso. Só um cartão vale.",
+  "gancho": "Metade da turma gripada e o pulmão dele *resolveu ser original*",
+  "gancho_apoio": "DHR apagado, abscesso no fígado e nódulos com halo no pulmão. Qual é o micróbio?",
   "imagem": {
     "arquivo": "dia-266.png",
-    "cena": "Toca-discos navy e vermelho com três discos coloridos e um intruso torto. Em volta, como plateia, um vírus redondo segurando um álbum de figurinhas, uma furadeira pequena e um fogão de brinquedo apagado.",
+    "cena": "Numa sala de aula, metade das carteiras tem alunos-vírus de cachecol, espirrando em lencinhos. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, faz a chamada com uma prancheta e para, intrigado, diante de uma fileira onde quatro visitantes de chapéu de festa igual sentam lado a lado: um vírus de cachecol, dois grãos de café de mãos dadas, uma bolota felpuda e uma correntinha de bolinhas. Na lousa em branco, um vinil pequeno serve de ímã.",
     "foco": "50% 35%",
-    "alt": "Remix: gripe, complemento e fogão apagado no mesmo toca-discos"
+    "alt": "Macrô faz a chamada e encontra quatro visitantes"
   },
   "imagem_macete": {
     "arquivo": "dia-266-macete.png",
-    "cena": "Só o disco do vírus toca: dois vírus de cores diferentes trocam figurinhas inteiras do álbum e surge um terceiro vírus, misturado e novo, que sai correndo por cima de um globo. A furadeira, o fogão e o disco intruso param perto de uma placa de pare.",
+    "cena": "Na mesma sala, a lâmpada de teste na mesa do professor continua apagada e, pela janela, a fogueira da festa julina não acende. A bolota felpuda tira o chapéu: segura um extintor vermelho e está cercada por um anel de neblina, como um halo. Os outros três visitantes voltam para as turmas deles.",
     "foco": "50% 40%",
-    "alt": "Shift: rearranjo e pandemia"
+    "alt": "DGC: o fungo com extintor e halo no pulmão"
   },
   "questao": {
-    "vinheta": "Two classmates quiz each other with four index cards on viral genetics and immune defects. Three cards contain an error.",
-    "pergunta": "Which card is accurate?",
+    "vinheta": "A 6-year-old boy has had a Staphylococcus aureus liver abscess and Serratia lymphadenitis. His neutrophils show no fluorescence on dihydrorhodamine testing. While influenza circulates at his school, he develops fever and cough. CT of the chest shows several lung nodules with surrounding ground-glass halos.",
+    "pergunta": "Which organism is the most likely cause?",
     "alternativas": {
       "A": {
-        "texto": "C5-C9 deficiency: high risk of Aspergillus pneumonia",
-        "quiz": "C5-C9: Aspergillus",
-        "dia": 246
-      },
-      "B": {
-        "texto": "CGD: normal respiratory burst with absent myeloperoxidase",
-        "quiz": "DGC: burst normal",
-        "dia": 260
-      },
-      "C": {
-        "texto": "Influenza antigenic shift: segment reassortment can cause pandemics",
-        "quiz": "Shift: pandemia",
+        "texto": "Influenza A virus",
+        "quiz": "Vírus influenza A",
         "dia": 204
       },
+      "B": {
+        "texto": "Neisseria meningitidis",
+        "quiz": "Neisseria",
+        "dia": 246
+      },
+      "C": {
+        "texto": "Aspergillus fumigatus",
+        "quiz": "Aspergillus",
+        "dia": 260
+      },
       "D": {
-        "texto": "Bruton agammaglobulinemia: normal numbers of CD19+ B cells",
-        "quiz": "Bruton: CD19 normal"
+        "texto": "Streptococcus pneumoniae",
+        "quiz": "Pneumococo"
       }
     },
     "correta": "C"
   },
   "explicacao": {
-    "titulo": "*Shift*: rearranjo e pandemia",
+    "titulo": "DGC no pulmão: *Aspergillus*",
     "certa": [
-      "Dia 204: no *antigenic shift*, dois vírus influenza A infectam a mesma célula e trocam segmentos inteiros do genoma (*reassortment*), criando hemaglutinina ou neuraminidase novas, para as quais quase ninguém tem imunidade; é assim que surgem as pandemias. O *antigenic drift*, com mutações pontuais, causa as epidemias de todo ano e obriga a atualizar a vacina."
+      "Neutrófilo que não fluoresce no *DHR* é *chronic granulomatous disease* (dia 260): sem *NADPH oxidase*, o fagócito não faz o burst e perde para os catalase-positivos. Nódulos com halo em vidro fosco no pulmão de quem tem DGC apontam para *Aspergillus fumigatus*, a principal causa de pneumonia e de morte nessa doença. A gripe da escola é só a distração do enunciado."
     ],
     "termos": [
-      "antigenic shift",
-      "reassortment",
-      "antigenic drift",
-      "NADPH oxidase"
+      "chronic granulomatous disease",
+      "Aspergillus fumigatus",
+      "angioinvasive mold",
+      "catalase-positive organisms"
     ],
     "erradas": {
-      "A": "Dia 246: a falta de C5 a C9 dá infecção de repetição por *Neisseria*, não por Aspergillus.",
-      "B": "Dia 260: na DGC o que falha é a *respiratory burst* (NADPH oxidase); a mieloperoxidase está presente.",
-      "D": "Intruso: na agamaglobulinemia de Bruton quase não há células B CD19+, porque elas não amadurecem."
+      "A": "A influenza (dia 204) circula na escola, mas não explica nódulos com halo num menino com DHR negativo e abscessos por catalase-positivos.",
+      "B": "Neisseria é a marca da falta de C5 a C9 (dia 246), que dá meningite e sepse, e não abscesso hepático nem nódulo pulmonar.",
+      "D": "Intruso: o pneumococo é catalase-negativo; o próprio H2O2 dele abastece o neutrófilo da DGC, que consegue matá-lo, e ele não faz nódulos com halo."
     },
     "macete": {
-      "frase": "*Shift* troca a *figurinha inteira*; *drift* só borra o desenho",
-      "apoio": "Os dois vírus trocando figurinhas inteiras do álbum são o rearranjo de segmentos do shift, que gera pandemia. A furadeira sem peça é o complemento terminal da Neisseria e o fogão apagado é a DGC.",
-      "fala": null
+      "frase": "Na DGC, *quem traz extintor* ganha a festa: no pulmão, é o *Aspergillus*",
+      "apoio": "DHR apagado é a fogueira do neutrófilo que não acende. Quem chega com extintor (catalase) faz a festa: S. aureus no fígado, Serratia no gânglio e Aspergillus no pulmão, com halo em vidro fosco. A gripe da escola e a Neisseria do complemento são distração.",
+      "fala": "Comi, mostrei, avisei. Esse fungo veio de extintor."
     }
   },
   "legenda": {
-    "contexto": "Domingo de remix: influenza (dia 204), complemento terminal (dia 246), doença granulomatosa crônica (dia 260) e um intruso.",
+    "contexto": "Domingo de revisão com os dias 204, 246 e 260, mais um intruso. A escola está gripada, mas o menino tem DHR apagado, histórico de abscessos e nódulos com halo no pulmão.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +97,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual cartão está certo?"
+    "pergunta": "DHR apagado e nódulos com halo no pulmão: qual é o micróbio?"
   },
   "cta": "simulado",
   "reel": null,

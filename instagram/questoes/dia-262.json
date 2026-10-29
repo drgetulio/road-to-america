@@ -8,21 +8,22 @@
   "topico": "Melanoma",
   "conceito": "Melanoma prognosis: Breslow thickness is the strongest predictor",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-22",
   "tom": null,
-  "gancho": "No bolo de camadas da pele, *qual régua* decide?",
+  "gancho": "Seu Allen trouxe quatro réguas para um bolo de camadas. *Só uma decide*",
   "gancho_apoio": "Lesão pigmentada assimétrica, laudo de melanoma. Qual medida pesa mais no prognóstico?",
   "imagem": {
     "arquivo": "dia-262.png",
-    "cena": "Uma fatia de bolo de padaria vista de lado, com várias camadas coloridas, como as camadas da pele, e uma pequena mancha escura na cobertura. Em volta, ferramentas de medir esperam: uma fita métrica esticada na largura, uma paleta de pintor, um cortador de massa de borda ondulada e uma régua de pé.",
+    "cena": "Na bancada de uma confeitaria, uma fatia de bolo de várias camadas coloridas, vista de lado, com uma pequena mancha escura na cobertura. Seu Allen, a chavinha Allen de avental navy, organiza quatro instrumentos com setinhas de manual em volta: uma fita métrica esticada na largura, uma paleta de pintor, um cortador de massa de borda ondulada e uma régua de pé.",
     "foco": "50% 35%",
-    "alt": "No bolo de camadas da pele, qual régua decide?"
+    "alt": "Seu Allen organiza quatro réguas diante de um bolo de camadas"
   },
   "imagem_macete": {
     "arquivo": "dia-262-macete.png",
-    "cena": "A régua de pé desce dentro da fatia de bolo, logo abaixo da cobertura até o ponto mais fundo que a mancha alcançou, com uma luz destacando essa profundidade. A fita métrica, a paleta e o cortador ficam de lado, apagados.",
+    "cena": "A régua de pé desce dentro da fatia de bolo, logo abaixo da cobertura até o ponto mais fundo que a mancha alcançou, com uma luz destacando essa profundidade. A fita métrica, a paleta e o cortador ficam de lado, apagados, e Seu Allen aponta a régua com uma setinha.",
     "foco": "50% 40%",
     "alt": "Breslow: quanto mais fundo, maior o risco"
   },
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "No melanoma, vale a *profundidade*, não a *largura*",
-      "apoio": "No bolo de camadas, a fita métrica, a paleta e o cortador ondulado servem para desconfiar; a régua de pé, que mede até onde a mancha desceu, é a que conta para o prognóstico: Breslow.",
-      "fala": null
+      "apoio": "No bolo de camadas, a fita métrica, a paleta e o cortador ondulado ajudam a desconfiar da lesão (diâmetro, cor e borda do ABCDE); a régua de pé, que mede até onde a mancha desceu, é a que conta para o prognóstico: a espessura de Breslow.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui a peça que conta é a régua de pé."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual medida pesa mais?"
+    "pergunta": "Melanoma confirmado: qual medida da lesão mais prediz metástase?"
   },
   "cta": "simulado",
   "reel": null,

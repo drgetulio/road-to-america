@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix Independence Day: Bronquiolite (dia 123), Arterite de células gigantes (dia 219), Cólica renal (dia 240)",
   "conceito": "Independence Day remix: RSV bronchiolitis + Giant cell arteritis + Suspected kidney stone",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": "Independence Day (4/7): checkpoint da Road to America.",
   "remix_de": [
     123,
@@ -16,70 +16,70 @@
   ],
   "explicacao_em": "2027-07-05",
   "tom": null,
-  "gancho": "Independence Day: só *um plano* ganha o passaporte",
-  "gancho_apoio": "Três cartões dos últimos meses e um intruso. Qual conduta passa na imigração?",
+  "gancho": "4 de julho: quatro chamados juntos e a Capitã só tem *um apito*",
+  "gancho_apoio": "Quatro pacientes estáveis chamando no mesmo minuto. Quem passa primeiro no cruzamento?",
   "imagem": {
     "arquivo": "dia-245.png",
-    "cena": "Toca-discos vermelho e navy com três discos de cores diferentes girando, sobre uma mesa de piquenique com toalha xadrez, e fogos de artifício navy, vermelhos e brancos no céu. Um quarto disco, meio torto, tenta entrar na pilha. Ao fundo, o ônibus da Road to America espera.",
+    "cena": "A Capitã Plaqueta, de apito na boca, organiza um cruzamento enfeitado com bandeirinhas de 4 de julho. Quatro carrinhos chegam no mesmo segundo e buzinam juntos: um leva uma mamadeira com uma nuvenzinha, outro um quebra-nozes, outro uma pedrinha emburrada e o último um cachorrinho que late. No céu, fogos navy, vermelhos e brancos; ao fundo, o ônibus da Road to America; num canto, um vinil pequeno faz as vezes de placa de rua.",
     "foco": "50% 35%",
-    "alt": "Independence Day: só um plano ganha o passaporte"
+    "alt": "Capitã Plaqueta com um apito só e quatro carrinhos chegando juntos"
   },
   "imagem_macete": {
     "arquivo": "dia-245-macete.png",
-    "cena": "Só um disco toca: dele sai uma pílula de corticoide correndo na frente, enquanto um microscópio vem andando atrás, sem pressa, porque a biópsia pode esperar alguns dias. Os outros três discos param ao lado de uma placa de pare.",
+    "cena": "A Capitã abre passagem só para o carrinho do quebra-nozes, escoltado por uma pílula de corticoide com sirene na cabeça; um microscópio vem atrás, sem pressa. Os outros três esperam tranquilos: a mamadeira cochila, a pedrinha boceja e o cachorrinho parou de latir.",
     "foco": "50% 40%",
-    "alt": "Arterite temporal: corticoide primeiro"
+    "alt": "A Capitã libera primeiro o quebra-nozes, escoltado pelo corticoide"
   },
   "questao": {
-    "vinheta": "On July 4, a resident reviews four sign-out cards before rounds. Each card carries a management plan, but only one plan follows current US guidelines.",
-    "pergunta": "Which plan is correct?",
+    "vinheta": "On July 4, a physician covering a busy emergency department is paged about four patients at the same moment. All four have stable vital signs.",
+    "pergunta": "Which patient should be evaluated and treated first?",
     "alternativas": {
       "A": {
-        "texto": "RSV bronchiolitis in an infant: scheduled albuterol and oral steroids",
-        "quiz": "RSV: albuterol",
+        "texto": "Infant with RSV bronchiolitis, SpO2 95%, feeding well",
+        "quiz": "Bebê com VSR, sat 95%",
         "dia": 123
       },
       "B": {
-        "texto": "Suspected giant cell arteritis: start prednisone before the temporal artery biopsy",
-        "quiz": "ACG: corticoide já",
+        "texto": "Woman, 74, with jaw claudication and new blurred vision",
+        "quiz": "Idosa com visão turva",
         "dia": 219
       },
       "C": {
-        "texto": "Suspected ureteral stone: contrast-enhanced CT as the first imaging test",
-        "quiz": "Cálculo: contraste",
+        "texto": "Man, 40, with renal colic from a 4-mm stone, pain controlled",
+        "quiz": "Cólica renal controlada",
         "dia": 240
       },
       "D": {
-        "texto": "Croup with stridor at rest: chest radiograph before dexamethasone",
-        "quiz": "Crupe: raio X antes"
+        "texto": "Child, 3, with croup, barking cough, no stridor at rest",
+        "quiz": "Crupe sem estridor"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Arterite temporal: *corticoide primeiro*",
+    "titulo": "Visão em risco passa *na frente*",
     "certa": [
-      "Dia 219: na suspeita de *giant cell arteritis* (cefaleia nova, claudicação de mandíbula, VHS alta, idade acima de 50 anos), o corticoide em dose alta começa na hora, para proteger a visão. A *temporal artery biopsy* continua útil por cerca de duas semanas depois do início do tratamento, então não há motivo para esperar por ela."
+      "Claudicação de mandíbula com visão turva nova numa senhora de 74 anos é *giant cell arteritis* com ameaça de perda visual irreversível (dia 219). A conduta é *high-dose glucocorticoids* na hora, antes da biópsia, e por isso ela passa na frente mesmo com sinais vitais normais. Na triagem, quem fura a fila é o órgão com relógio correndo."
     ],
     "termos": [
       "giant cell arteritis",
-      "temporal artery biopsy",
-      "noncontrast CT",
-      "supportive care"
+      "jaw claudication",
+      "visual symptoms",
+      "high-dose glucocorticoids"
     ],
     "erradas": {
-      "A": "Dia 123: na *bronchiolitis* o tratamento é de suporte (oxigênio se precisar, hidratação, aspiração nasal); broncodilatador e corticoide de rotina não são recomendados.",
-      "C": "Dia 240: a primeira imagem na suspeita de cálculo no adulto é a *noncontrast CT*; o contraste atrapalha a visualização do cálculo.",
-      "D": "Intruso: no crupe, o diagnóstico é clínico; com estridor em repouso entram dexametasona e epinefrina nebulizada, sem esperar raio X."
+      "A": "Bronquiolite com saturação de 95% e boa aceitação da mamada pede só suporte e reavaliação (dia 123); não é a prioridade.",
+      "C": "Cálculo de 4 mm com dor controlada costuma passar sozinho, e a analgesia já resolveu a urgência (dia 240).",
+      "D": "Intruso: crupe com tosse ladrante e sem estridor em repouso é leve; dexametasona oral e alta, sem pressa de vaga."
     },
     "macete": {
-      "frase": "Na arterite, o *corticoide corre na frente* da biópsia",
-      "apoio": "Revisão do Independence Day: pílula na frente, microscópio atrás. Bronquiolite é suporte, cálculo é tomografia sem contraste e crupe é dexametasona sem raio X.",
-      "fala": null
+      "frase": "Na arterite, *olho em risco fura a fila*: corticoide já",
+      "apoio": "Quatro chamados estáveis, mas só um tem um órgão com relógio correndo: o olho da arterite. Bronquiolite saturando bem é suporte, pedra de 4 mm com dor controlada espera e crupe sem estridor em repouso vai para casa com dexametasona.",
+      "fala": "Apito só tenho um: o olho passa primeiro."
     }
   },
   "legenda": {
-    "contexto": "Feriado nos EUA, checkpoint para a gente: três conceitos que já passaram por aqui (dias 123, 219 e 240) e um intruso.",
+    "contexto": "Feriado nos Estados Unidos e checkpoint aqui: três casos dos dias 123, 219 e 240 e um intruso chamam ao mesmo tempo. Todos com sinais vitais normais, e só um não pode esperar.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +97,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual plano passa na imigração?"
+    "pergunta": "Quatro chamados ao mesmo tempo: quem a Capitã atende primeiro?"
   },
   "cta": "simulado",
   "reel": null,

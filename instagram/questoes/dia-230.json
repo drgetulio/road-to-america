@@ -7,22 +7,22 @@
   "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
   "topico": "Identificação do paciente",
   "conceito": "Two patient identifiers before medication, blood or procedures",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-20",
   "tom": null,
-  "gancho": "Dois *José da Silva* na mesma enfermaria. E agora?",
+  "gancho": "Dois *José da Silva* em quartos vizinhos e uma bolsa de hemácias pronta",
   "gancho_apoio": "Transfusão pronta e dois homônimos no corredor. Como confirmar quem é quem?",
   "imagem": {
     "arquivo": "dia-230.png",
-    "cena": "Corredor de enfermaria com duas portas idênticas lado a lado, cada uma com uma plaquinha igual e um par de chinelos iguais na frente. Entre as portas, um carrinho com um cofrinho vermelho com um coração espera.",
+    "cena": "Corredor de enfermaria com duas portas idênticas lado a lado, cada uma com uma plaquinha igual e um par de chinelos iguais na frente. O Viés espia de trás de uma tabelinha 2x2 presa no carrinho, onde um cofrinho vermelho com um coração espera.",
     "foco": "50% 35%",
-    "alt": "Dois José da Silva na mesma enfermaria. E agora?"
+    "alt": "O Viés espia entre duas portas idênticas com chinelos iguais"
   },
   "imagem_macete": {
     "arquivo": "dia-230-macete.png",
-    "cena": "Callback: o cofrinho vermelho tem duas fechaduras e só abre com duas chaves ao mesmo tempo: uma com o desenho de um crachá e outra com um bolo de aniversário. Uma terceira chave, em forma de porta, fica de fora, sem servir.",
+    "cena": "Callback: o cofrinho vermelho tem duas fechaduras e só abre com duas chaves ao mesmo tempo: uma com o desenho de um crachá e outra com um bolo de aniversário. Uma terceira chave, em forma de porta, fica de fora, sem servir. O Viés, desmascarado, murcha atrás da tabela.",
     "foco": "50% 45%",
     "alt": "Dois identificadores, nunca o quarto"
   },
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "*Nome e nascimento*, nunca quarto e leito",
       "apoio": "Na imagem, o cofrinho da transfusão só abre com duas chaves girando juntas: uma com o desenho de um crachá e outra com um bolo de aniversário. A chave em forma de porta não entra na fechadura.",
-      "fala": null
+      "fala": "Se você conferiu pelo leito, eu entrei."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dois homônimos: como confirmar quem é quem?"
+    "pergunta": "Dois homônimos e uma transfusão: como conferir?"
   },
   "cta": null,
   "reel": null,

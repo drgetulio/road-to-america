@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-13",
   "tom": null,
-  "gancho": "A pneumonia que foi *a pé* até a padaria",
-  "gancho_apoio": "Duas semanas de tosse seca, aula normal e uma amoxicilina que não fez nada. Quem é o bicho?",
+  "gancho": "Duas semanas de tosse e *nenhuma falta na aula*: até o bicho é CDF",
+  "gancho_apoio": "Tosse seca, raio X pior que o paciente, amoxicilina inútil e sangue que aglutina no gelo. Quem é o bicho?",
   "imagem": {
     "arquivo": "dia-253.png",
-    "cena": "Na porta do boteco dos micróbios, Macrô observa um micróbio miudinho, embrulhado num cachecol listrado e numa jaqueta fofa que esconde o formato do corpo, voltando a pé da padaria com um saco de pão debaixo do braço e uma mochila de escola nas costas. No balcão do boteco, um balde de gelo de metal.",
+    "cena": "Numa sala de aula, um micróbio miudinho de cachecol listrado e jaqueta fofa, que esconde o formato do corpo, senta na primeira fileira com o caderno impecável e tosse baixinho no cotovelo. Macrô, de guardanapo xadrez e com a comanda em branco no bolso, é o colega do lado e se afasta discretamente, sorrindo amarelo. No canto da mesa, um balde de gelo de metal com uma garrafinha.",
     "foco": "50% 35%",
-    "alt": "A pneumonia que foi a pé até a padaria"
+    "alt": "Micróbio de cachecol na primeira fileira da aula"
   },
   "imagem_macete": {
     "arquivo": "dia-253-macete.png",
-    "cena": "Uma bola de demolição (a amoxicilina) passa direto pelo micróbio sem casca, sem acertar nada, porque não há parede para quebrar. No balde de gelo, hemácias se abraçam de frio. Macrô oferece uma chavinha que encaixa no ribossomo do bicho (macrolídeo ou doxiciclina).",
+    "cena": "Uma bola de demolição (a amoxicilina) passa direto pelo micróbio sem casca, sem acertar nada, porque não há parede para quebrar. No balde de gelo, hemácias se abraçam de frio. Macrô oferece uma chavinha que encaixa no ribossomo do bicho.",
     "foco": "50% 40%",
-    "alt": "Bicho sem parede, walking pneumonia"
+    "alt": "Sem parede, a amoxicilina passa reto"
   },
   "questao": {
     "vinheta": "A 20-year-old student has had low-grade fever, headache, and dry cough for 2 weeks but keeps attending classes. Chest x-ray shows patchy bilateral interstitial infiltrates. Sputum Gram stain shows no organisms, and amoxicillin did not help. His red cells agglutinate when the blood sample is chilled.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Sem parede, *sem Gram*, sem penicilina; no frio, as hemácias *se abraçam*",
-      "apoio": "O micróbio de cachecol que vai a pé à padaria é a walking pneumonia. A bola de demolição passa reto porque não há parede, e as hemácias abraçadas no balde de gelo são as aglutininas frias.",
-      "fala": null
+      "apoio": "O micróbio de cachecol que não falta à aula é a walking pneumonia: raio X feio, paciente andando. Sem parede, a bola de demolição da amoxicilina passa reto e o Gram não acha nada; no gelo, as hemácias se abraçam (aglutinina fria). A chave certa é a do ribossomo: macrolídeo ou doxiciclina.",
+      "fala": "Comi, mostrei, avisei. Esse aí nem casca tinha para eu mostrar."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Quem é o bicho?"
+    "pergunta": "Tosse seca há 2 semanas e aglutinina fria: qual é o micróbio?"
   },
   "cta": "simulado",
   "reel": null,

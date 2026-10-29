@@ -7,24 +7,24 @@
   "sistema": "Gestação, parto e puerpério",
   "topico": "Hipertensão na gestação",
   "conceito": "Hypertension in pregnancy: labetalol, nifedipine or methyldopa, never ACE inhibitors",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-17",
   "tom": null,
-  "gancho": "*Tia Meia-Vida* trancou uma prateleira inteira para a cegonha",
+  "gancho": "Tia Meia-Vida foi ao chá de bebê e *confiscou o presente da sobrinha*",
   "gancho_apoio": "Hipertensa crônica descobre a gestação usando lisinopril. Qual é a troca certa?",
   "imagem": {
     "arquivo": "dia-257.png",
-    "cena": "Na farmácia de interior, uma cegonha simpática, com uma trouxinha no bico, chega ao balcão. Tia Meia-Vida, de óculos vermelhos, passa uma corrente com cadeado numa prateleira inteira, enquanto outra prateleira continua aberta e iluminada.",
+    "cena": "Num chá de bebê com bandeirinhas e bolo, a Tia Meia-Vida, de óculos vermelhos e avental, inspeciona a mesa de presentes como fiscal de alfândega. Ela ergue, com cara de \"aqui não\", um frasco de comprimidos embrulhado com laço. A futura mamãe, uma cegonha simpática, observa curiosa; outros três frasquinhos sem laço esperam numa cesta.",
     "foco": "50% 35%",
-    "alt": "Tia Meia-Vida trancou uma prateleira inteira para a cegonha"
+    "alt": "Tia Meia-Vida confisca um presente no chá de bebê"
   },
   "imagem_macete": {
     "arquivo": "dia-257-macete.png",
-    "cena": "Tia Meia-Vida entrega à cegonha um frasco da prateleira aberta, onde três frascos se destacam lado a lado. Na prateleira trancada, cada frasco tem um rinzinho em forma de feijão como símbolo, lembrando o dano renal fetal dos IECA e dos BRA.",
+    "cena": "A Tia entrega à cegonha um frasco da cesta, onde três frascos navy, verde e amarelo se destacam lado a lado. O presente confiscado e um irmão gêmeo dele, ambos agora com um rinzinho desenhado, ficam trancados com cadeado na bolsa dela. A cegonha sorri, e o bolo continua intacto.",
     "foco": "50% 40%",
-    "alt": "Gestante: IECA sai, labetalol entra"
+    "alt": "Gestação: IECA e BRA saem, Lá Na Maternidade entra"
   },
   "questao": {
     "vinheta": "A home pregnancy test is positive in a 29-year-old woman (gravida 2, para 1); ultrasound confirms an 8-week intrauterine pregnancy. Lisinopril has controlled her chronic hypertension since age 26. Today, her blood pressure reads 148/94 mm Hg; serum creatinine is normal and there is no proteinuria.",
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "Na gestação, *Lá Na Maternidade*: Labetalol, Nifedipina, Metildopa",
-      "apoio": "A prateleira trancada da Tia guarda IECA e BRA, com o rinzinho no rótulo. A aberta tem os três da maternidade: Labetalol, Nifedipina e Metildopa, o LNM de Lá Na Maternidade.",
-      "fala": null
+      "apoio": "IECA e BRA dão dano renal fetal: a Tia confisca os dois, que são gêmeos no efeito (por isso a losartana não serve de troca). Na cesta liberada ficam os três da maternidade, Labetalol, Nifedipina e Metildopa, o LNM de Lá Na Maternidade. A espironolactona também fica fora, pelo efeito antiandrogênico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Do presente errado, a Tia lembra."
     }
   },
   "legenda": {
-    "contexto": "Hipertensa crônica, 8 semanas de gestação, usando lisinopril e com pressão de 148/94. O que a Tia Meia-Vida faz com a receita?",
+    "contexto": "Hipertensa crônica, 8 semanas de gestação, usando lisinopril e com pressão de 148/94. O que a Tia Meia-Vida troca na receita?",
     "palavras_chave": [
       "early pregnancy",
       "chronic hypertension",
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é a troca certa?"
+    "pergunta": "Grávida de 8 semanas usando lisinopril: qual é a troca certa?"
   },
   "cta": "simulado",
   "reel": null,

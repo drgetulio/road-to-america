@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-16",
-  "gancho": "Poucas plaquetas na rua e mesmo assim engarrafamento geral",
+  "gancho": "Poucas plaquetas na rua e mesmo assim *engarrafamento* geral",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Capitã Plaqueta num cruzamento quase vazio de colegas plaquetas, mas com carros engarrafados por todos os lados; no meio do nó, um carro azul em forma de seringa.",
+    "cena": "Capitã Plaqueta num cruzamento quase vazio de colegas plaquetas, mas com carros engarrafados por todos os lados; no meio do nó, um carro azul em forma de seringa. Num prédio da esquina, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Capitã Plaqueta num cruzamento quase vazio de colegas plaquetas, mas com carros engarrafados por todos os lados; no meio do nó, um carro azul em forma de seringa.",
+    "alt": "Poucas plaquetas na rua e mesmo assim engarrafamento geral",
     "arquivo": "dia-044.png"
   },
   "imagem_macete": {
-    "cena": "Callback: um guincho leva embora o carro-seringa azul e também um carrinho-seringa menor; um carro de patrulha em forma de flecha prende um carro marcado com dois pontos (a trombina), e o trânsito começa a fluir.",
+    "cena": "Callback: um guincho leva embora o carro-seringa azul e também um carrinho-seringa menor; uma viatura em forma de flecha prende um carro marcado com dois pontos (a trombina), e o trânsito começa a fluir.",
     "alt": "Guincha toda heparina, chama o argatroban",
     "arquivo": "dia-044-macete.png"
   },
@@ -64,13 +64,13 @@
       "C": "Transfundir plaqueta joga mais combustível na trombose; não se faz sem sangramento grave."
     },
     "macete": {
-      "frase": "Guincha *toda heparina*, trava o *carro 2*",
+      "frase": "No HIT, guincha *toda* heparina, até a de baixo peso, e chama a viatura do *argatroban*, que prende a trombina. Varfarina só depois das plaquetas voltarem.",
       "apoio": "Pegadinha de prova: O NBME oferece enoxaparina como \"outra heparina mais segura\" e transfusão de plaquetas pela contagem baixa; as duas pioram a trombose.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Pós-operatório de quadril, heparina correndo, plaquetas despencando e uma trombose nova na perna. A Capitã Plaqueta precisa decidir quem guinchar e quem chamar.",
+    "contexto": "Pós-operatório de quadril, heparina correndo, plaquetas despencando no sétimo dia e uma trombose nova na perna. A Capitã Plaqueta precisa decidir quem guinchar e quem chamar.",
     "palavras_chave": [
       "unfractionated heparin",
       "platelet count drop",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo no HIT?"
+    "pergunta": "Plaquetas caíram 60% no 7º dia, com trombose: o que iniciar?"
   },
   "cta": "simulado",
   "exemplo": false

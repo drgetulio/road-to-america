@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Deficiência de 21-hidroxilase (dia 10), Dermatite de contato (dia 43), SCID por deficiência de ADA (dia 71)",
   "conceito": "Remix: 21-hydroxylase deficiency + Contact dermatitis to nickel + ADA-deficient SCID",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": [
     10,
@@ -15,69 +15,68 @@
     71
   ],
   "explicacao_em": "2027-01-18",
-  "gancho": "Remix de domingo: forno quebrado, fermento lento ou *caminhão de lixo*?",
+  "gancho": "Bebê perdendo sal e o Seu Néfron *sem carimbo para tanto potássio*",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho com três discos em pé: um com um forno de padaria no selo, um com uma tigela de massa coberta por um pano e um com um caminhão de lixo. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "cena": "Seu Néfron, no balcão do cartório, vê o sódio sair pela porta em fila enquanto o potássio se amontoa na sala de espera. Pela janela, uma padaria em forma de suprarrenal tem três fornos, só um soltando fumaça, e as outras portas fechadas. Um vinil pequeno no canto.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: forno quebrado, fermento lento ou caminhão de lixo?",
+    "alt": "Seu Néfron vê o sódio sair em fila e o potássio lotar a sala de espera; pela janela, uma padaria em forma de suprarrenal com só um forno aceso.",
     "arquivo": "dia-077.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco do forno gira e, no selo, o forno do meio está apagado, com uma montanha de massa antes dele e uma vitrine de doces transbordando depois; a prateleira do pão salgado está vazia. Os discos da tigela e do caminhão de lixo ficam guardados na capa.",
-    "alt": "O forno 21 parou: 17-OHP alta",
+    "cena": "Callback da padaria: o forno do meio, o 21, está apagado. Antes dele, a massa se empilha até o teto e escorre para a vitrine de doces; depois dele, as prateleiras do pão salgado e do pão de queijo estão vazias. No cartório, o Seu Néfron, sem ordem de segurar sódio, carimba saída contra a vontade.",
+    "alt": "O forno do meio da padaria-suprarrenal está apagado: massa empilhada antes dele, vitrine de doces transbordando e prateleiras de pão vazias.",
     "arquivo": "dia-077-macete.png"
   },
   "questao": {
-    "vinheta": "A 2-week-old infant has clitoromegaly and fused labioscrotal folds, vomiting, and poor feeding. Serum sodium is 126 mEq/L and potassium is 6.4 mEq/L. Karyotype is 46,XX.",
-    "pergunta": "Which laboratory finding is most likely?",
+    "vinheta": "A 2-week-old infant has had vomiting and poor feeding for 3 days. Examination shows clitoromegaly and fused labioscrotal folds. Laboratory studies show Na+ 126 mEq/L, K+ 6.4 mEq/L and glucose 58 mg/dL. Karyotype is 46,XX. The total lymphocyte count is normal.",
+    "pergunta": "Deficiency of which enzyme is most likely?",
     "alternativas": {
       "A": {
-        "texto": "Elevated 11-deoxycorticosterone",
-        "quiz": "High DOC"
+        "texto": "11-beta-hydroxylase",
+        "quiz": "11-beta-hydroxylase"
       },
       "B": {
-        "texto": "Elevated 17-hydroxyprogesterone",
-        "quiz": "High 17-OHP",
+        "texto": "21-hydroxylase",
+        "quiz": "21-hydroxylase",
         "dia": 10
       },
       "C": {
-        "texto": "Elevated erythrocyte dATP",
-        "quiz": "High RBC dATP",
+        "texto": "Adenosine deaminase",
+        "quiz": "Adenosine deaminase",
         "dia": 71
       },
       "D": {
-        "texto": "Positive nickel patch test at 48 hours",
-        "quiz": "Nickel patch test",
-        "dia": 43
+        "texto": "17-alpha-hydroxylase",
+        "quiz": "17-alpha-hydroxylase"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "O forno 21 parou: *17-OHP alta*",
+    "titulo": "Virilizou e perdeu sal: falta a *21-hidroxilase*",
     "certa": [
-      "Menina 46,XX com genitália virilizada, vômitos, sódio baixo e potássio alto tem *21-hydroxylase deficiency* na forma perdedora de sal (dia 10). Sem a enzima, falta cortisol e aldosterona, o ACTH sobe e o substrato *17-hydroxyprogesterone* se acumula e é desviado para androgênios. O dATP alto é da *ADA-deficient SCID* (dia 71), e o *patch test* positivo em 48 horas é da *contact dermatitis* ao níquel (dia 43), nenhum dos dois com este quadro."
+      "Menina 46,XX com genitália virilizada, vômitos, sódio baixo, potássio alto e glicose limítrofe tem a forma perdedora de sal da *21-hydroxylase deficiency* (dia 10). Sem a enzima, faltam cortisol e aldosterona, o ACTH sobe e a *17-hydroxyprogesterone* acumulada é desviada para androgênios. A contagem normal de linfócitos afasta a falta de *adenosine deaminase* da SCID (dia 71), e a *contact dermatitis* ao níquel (dia 43) é hipersensibilidade tipo IV, sem relação com enzima da suprarrenal."
     ],
     "termos": [
       "21-hydroxylase deficiency",
       "17-hydroxyprogesterone",
-      "salt-wasting crisis",
-      "congenital adrenal hyperplasia"
+      "salt-wasting congenital adrenal hyperplasia",
+      "adenosine deaminase"
     ],
     "erradas": {
-      "A": "Intruso: o 11-desoxicorticosterona alto é da deficiência de 11-beta-hidroxilase, que causa hipertensão e potássio baixo, o contrário deste quadro.",
-      "C": "Dia 71: dATP alto nas hemácias é a marca da SCID por falta de ADA, com infecções graves e linfopenia, sem virilização ou distúrbio de sódio.",
-      "D": "Dia 43: o teste de contato positivo em 48 horas mostra hipersensibilidade tipo IV ao níquel, sem relação com genitália ou eletrólitos."
+      "A": "Intruso: na deficiência de 11-beta-hidroxilase também há virilização, mas o 11-desoxicorticosterona acumulado retém sódio, e o quadro é de hipertensão com potássio baixo, o contrário daqui.",
+      "C": "Dia 71: a falta de ADA acumula dATP e derruba T, B e NK; aqui a contagem de linfócitos é normal, e a SCID não explica virilização nem perda de sal.",
+      "D": "Na deficiência de 17-alfa-hidroxilase faltam androgênios, então a menina 46,XX não virilizaria; o quadro é de hipertensão com potássio baixo."
     },
     "macete": {
       "frase": "Forno 21 parou: *massa 17-OHP* empilhada",
-      "apoio": "Pegadinha de prova: O NBME separa 21 e 11-hidroxilase pela pressão e pelo potássio: perda de sal com K alto é 21; hipertensão com K baixo é 11.",
-      "fala": null
+      "apoio": "Pegadinha de prova: O NBME troca 21 por 11: as duas virilizam, mas a de 11 vem com hipertensão e potássio baixo, e a de 21 perde sal.",
+      "fala": "Sem aldosterona, eu carimbo saída para todo sódio. Contra a minha vontade."
     }
   },
   "legenda": {
-    "contexto": "Três conceitos de Step 1 voltam juntos: a padaria das suprarrenais, a massa que cresce em dois dias e a fábrica de linfócitos sem caminhão de lixo. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Duas semanas de vida, vômitos, sódio 126, potássio 6,4 e genitália virilizada numa menina 46,XX. Três conceitos já vistos voltam juntos: a padaria das suprarrenais, a alergia ao níquel e a fábrica de linfócitos sem coleta de lixo. Cada alternativa mostra o dia em que o tema apareceu.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +94,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual exame deve estar alterado?"
+    "pergunta": "Menina 46,XX virilizada, Na 126 e K 6,4: qual enzima falta?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

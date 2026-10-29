@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Retrospectiva 2026: Uretrite e epididimite no homem jovem (dia 1), Miastenia gravis (dia 22), Síndrome de DiGeorge (dia 50)",
   "conceito": "Year-end review 2026 remix: Chlamydia trachomatis + Myasthenia gravis + DiGeorge syndrome",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Retrospectiva 2026: os conceitos do primeiro mês de estrada.",
   "remix_de": [
     1,
@@ -15,69 +15,68 @@
     50
   ],
   "explicacao_em": "2026-12-28",
-  "gancho": "Retrospectiva 2026: só uma figurinha do álbum está certa",
+  "gancho": "Retrospectiva 2026: o interfone com chiclete tinha um *vizinho* no peito",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um toca-discos vermelho de fim de ano, com confete; três discos com selos de álbum de figurinhas (uma bactéria redondinha, uma fechadura e dois patinhos) e um quarto disco liso, o intruso.",
+    "cena": "Macrô, de guardanapo xadrez e chapeuzinho de fim de ano, folheia um álbum de figurinhas do ano numa mesa com confete; numa página, um prédio com interfone de botões apagados; na outra, a foto do time com dois lugares vazios. Num cantinho, um vinil pequeno faz as vezes de figurinha brilhante.",
     "foco": "50% 35%",
-    "alt": "Um toca-discos vermelho de fim de ano, com confete; três discos com selos de álbum de figurinhas (uma bactéria redondinha, uma fechadura e dois patinhos) e um quarto disco liso, o intruso.",
+    "alt": "Retrospectiva 2026: o interfone com chiclete tinha um vizinho no peito",
     "arquivo": "dia-056.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o disco da fechadura gira; no selo, a chave (acetilcolina) não entra porque a fechadura do lado de dentro da porta está coberta por tampinhas em forma de Y. Os outros discos mostram as correções: a bactéria pequena e dura entrando na célula e os patinhos ao lado de dois lugares vazios.",
-    "alt": "A figurinha certa é a da miastenia",
+    "cena": "Callback do álbum: Macrô abre uma sanfona de quatro bolsinhas coloridas e tira da terceira uma borboleta (o timo) junto com duas bolinhas pequenas (as paratireoides de baixo). A borboleta vai para a página do interfone, que ganha uma luz amarela de alerta.",
+    "alt": "O timo nasceu na terceira bolsa",
     "arquivo": "dia-056-macete.png"
   },
   "questao": {
-    "vinheta": "At a year-end review, a student rereads three flashcards from her first two months of study and one new card written that morning. Only one card is accurate.",
-    "pergunta": "Which statement is correct?",
+    "vinheta": "A 42-year-old woman has 4 months of fluctuating ptosis and diplopia, worse by evening. Acetylcholine receptor antibodies are positive. Chest CT shows an anterior mediastinal mass, and thymectomy is planned.",
+    "pergunta": "The organ from which this mass most likely arises develops from which embryologic structure?",
     "alternativas": {
       "A": {
-        "texto": "Chlamydia: the reticulate body is the infectious form",
-        "quiz": "Chlamydia RB infects",
-        "dia": 1
+        "texto": "First pharyngeal pouch",
+        "quiz": "Primeira bolsa faríngea"
       },
       "B": {
-        "texto": "Myasthenia: antibodies to postsynaptic ACh receptors",
-        "quiz": "MG: post AChR",
-        "dia": 22
+        "texto": "Third pharyngeal pouch",
+        "quiz": "Terceira bolsa faríngea",
+        "dia": 50
       },
       "C": {
-        "texto": "DiGeorge: failure of pharyngeal pouches 1 and 2",
-        "quiz": "DiGeorge pouches 1-2",
+        "texto": "Fourth pharyngeal pouch",
+        "quiz": "Quarta bolsa faríngea",
         "dia": 50
       },
       "D": {
-        "texto": "Lambert-Eaton: postsynaptic antibodies",
-        "quiz": "LEMS: postsynaptic"
+        "texto": "Second pharyngeal pouch",
+        "quiz": "Segunda bolsa faríngea"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "A figurinha certa é a da *miastenia*",
+    "titulo": "O timo nasceu na terceira bolsa",
     "certa": [
-      "Na *myasthenia gravis* (dia 22), autoanticorpos contra os *postsynaptic acetylcholine receptors* bloqueiam e destroem os receptores, e a fraqueza piora com o uso. As outras frases trocam detalhes que caem muito: na *Chlamydia trachomatis* (dia 1) quem infecta é o corpúsculo elementar, e no *DiGeorge syndrome* (dia 50) faltam as bolsas 3 e 4. O intruso troca o alvo da Lambert-Eaton."
+      "Ptose e diplopia que pioram à noite com anticorpo contra o receptor de acetilcolina são a miastenia do dia 22, e a massa no mediastino anterior aponta para o timo (*thymoma* ou hiperplasia tímica). O timo nasce da *third pharyngeal pouch*, junto com as *inferior parathyroid glands*; é justamente o par que falta no DiGeorge (dia 50), em que as bolsas 3 e 4 não se formam direito."
     ],
     "termos": [
-      "elementary body",
-      "postsynaptic acetylcholine receptor",
-      "third and fourth pharyngeal pouches",
-      "Lambert-Eaton syndrome"
+      "third pharyngeal pouch",
+      "thymoma",
+      "myasthenia gravis",
+      "inferior parathyroid glands"
     ],
     "erradas": {
-      "A": "Dia 1: o corpúsculo elementar é a forma infecciosa e extracelular; o reticular é a forma que se replica dentro da célula.",
-      "C": "Dia 50: no DiGeorge falham a 3ª e a 4ª bolsas faríngeas, que formam o timo e as paratireoides.",
-      "D": "Intruso: na Lambert-Eaton o alvo é o canal de cálcio voltagem-dependente do terminal pré-sináptico, e a contração repetida devolve parte da força."
+      "A": "A primeira bolsa forma a orelha média e a tuba auditiva.",
+      "C": "Dia 50: a quarta bolsa forma as paratireoides superiores e contribui para as células parafoliculares, não o timo.",
+      "D": "A segunda bolsa forma o epitélio da tonsila palatina."
     },
     "macete": {
-      "frase": "*Elementar entra*, miastenia *pós*, DiGeorge *3 e 4*",
-      "apoio": "Pegadinha de prova: O NBME adora trocar pré por pós-sináptico (Lambert-Eaton versus miastenia) e corpúsculo elementar por reticular.",
+      "frase": "O timo é figurinha da *bolsa 3*, junto com as paratireoides de baixo. Por isso o DiGeorge perde os dois, e a miastenia pode trazer um timoma de brinde.",
+      "apoio": "Pegadinha de prova: O NBME liga a miastenia ao timo e cobra a embriologia: terceira bolsa para o timo e as paratireoides inferiores, quarta para as superiores.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Último remix do ano, com três conceitos dos dois primeiros meses de estrada: uma bactéria, uma junção neuromuscular e um timo que não veio. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "contexto": "Último remix do ano, juntando o interfone com chiclete da miastenia (dia 22) e a foto do time sem dois titulares do DiGeorge (dia 50). O bônus do macete traz o hóspede que não aparece no Gram (dia 1).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -95,7 +94,7 @@
     "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual figurinha do álbum está certa?"
+    "pergunta": "Miastenia com massa no mediastino anterior: de qual bolsa vem o órgão?"
   },
   "cta": "pre_inscricao",
   "exemplo": false

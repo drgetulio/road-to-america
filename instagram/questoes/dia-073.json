@@ -8,20 +8,21 @@
   "topico": "Distrofia muscular de Duchenne",
   "conceito": "Duchenne muscular dystrophy: X-linked frameshift deletion in dystrophin, Gowers sign",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-14",
-  "gancho": "Trem do DNA com um buraco: *vagão inteiro ou assento solto*?",
+  "gancho": "Manual sem uma página ou *furo fora do lugar*: qual derruba o armário?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um trem de brinquedo com vagões de três assentos coloridos leva uma corda comprida até uma barraca de acampamento. No meio do trem há um espaço estranho, e não dá para saber se falta um vagão inteiro ou só um assento.",
+    "cena": "Seu Allen, a chavinha do manual de montagem, encara um armário de caixa meio montado, ainda de pé por enquanto. No chão, duas pistas: um manual com uma página faltando e uma tábua com um furo que parece fora do lugar. Setinhas de manual apontam para as duas, sem dizer qual é o problema.",
     "foco": "50% 35%",
-    "alt": "Trem do DNA com um buraco: vagão inteiro ou assento solto?",
+    "alt": "Seu Allen encara um armário meio montado; no chão, um manual sem uma página e uma tábua com um furo fora do lugar.",
     "arquivo": "dia-073.png"
   },
   "imagem_macete": {
-    "cena": "Callback do trem: falta um assento solto, e todos os passageiros depois dele sentaram um lugar para o lado, tortos. O trem para numa estaçãozinha antes da hora com um sinal vermelho de parada, e a corda não chega à barraca, que fica bamba ao vento.",
-    "alt": "Duchenne é frameshift na distrofina",
+    "cena": "Callback do armário: o furo fora do lugar estava na primeira tábua. Todas as peças seguintes entraram tortas, uma casa para o lado, e a corda que prendia o armário na parede nem chegou a ser presa. Ao lado, um segundo armário, montado com o manual sem a página, saiu menor, mas ficou de pé.",
+    "alt": "O armário com o furo deslocado sai todo torto e sem a corda na parede; ao lado, o armário montado sem uma página fica menor, mas de pé.",
     "arquivo": "dia-073-macete.png"
   },
   "questao": {
@@ -64,13 +65,13 @@
       "C": "A deleção do SMN1 é a atrofia muscular espinhal, doença do neurônio motor com hipotonia, fasciculações e CK quase normal."
     },
     "macete": {
-      "frase": "Duchenne *desliza o quadro*, Becker *só encurta*",
+      "frase": "Duchenne é *furo deslocado*, Becker é *página a menos*",
       "apoio": "Pegadinha de prova: O NBME não pergunta o tamanho da deleção, pergunta se ela mantém a fase de leitura: frameshift é Duchenne, in-frame é Becker.",
-      "fala": null
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui faltou ler de três em três."
     }
   },
   "legenda": {
-    "contexto": "Um menino de 4 anos com quedas, panturrilhas grandes e CK muito alta. A pergunta é que tipo de mutação explica o quadro, e o segredo está na leitura de três em três.",
+    "contexto": "Um menino de 4 anos cai muito, sobe escada com dificuldade e apoia as mãos nas coxas para levantar do chão, com CK nas alturas e um tio materno com a mesma fraqueza. Seu Allen abriu o manual desse gene: que tipo de erro está lá?",
     "palavras_chave": [
       "frequent falls",
       "calf enlargement",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mutação causa o quadro?"
+    "pergunta": "Sinal de Gowers, panturrilha grande e CK alta: qual mutação?"
   },
   "cta": "simulado",
   "exemplo": false

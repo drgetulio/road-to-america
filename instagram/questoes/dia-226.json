@@ -8,21 +8,22 @@
   "topico": "Rastreamento de câncer colorretal",
   "conceito": "Average-risk colorectal cancer screening starts at age 45",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-16",
   "tom": null,
-  "gancho": "Fez 45 anos e chegou um *convite especial* no correio",
+  "gancho": "Fez 45 anos e chegou *um convite que ninguém esperava* no correio",
   "gancho_apoio": "Sem sintomas e sem história na família. A festa do rastreamento já começou?",
   "imagem": {
     "arquivo": "dia-226.png",
-    "cena": "Uma sala de espera de consultório decorada com bandeirinhas e balões de aniversário; numa cadeira, um presente navy com laço vermelho ainda fechado, e um calendário de parede com folhas voando.",
+    "cena": "Sala de espera de consultório com o relógio sem números na parede. Dona Térmica entrega um envelope de convite fechado a um bolo de aniversário simpático, de velinhas apagadas. Na mesinha, um presente navy com laço vermelho, e um calendário de parede solta folhas voando.",
     "foco": "50% 35%",
-    "alt": "Fez 45 anos e chegou um convite especial no correio"
+    "alt": "Dona Térmica entrega um convite fechado a um bolo de aniversário na sala de espera"
   },
   "imagem_macete": {
     "arquivo": "dia-226-macete.png",
-    "cena": "Callback: o presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde. As folhas do calendário voltam voando, como se a festa tivesse sido antecipada.",
+    "cena": "O presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde. As folhas do calendário voltam voando para a parede, como se a festa tivesse sido antecipada, e Dona Térmica ergue um cafezinho.",
     "foco": "50% 45%",
     "alt": "Risco médio: o rastreamento começa aos 45"
   },
@@ -66,9 +67,9 @@
       "C": "O CEA serve para acompanhar recidiva depois do tratamento e não tem sensibilidade para rastreamento."
     },
     "macete": {
-      "frase": "*45 é o novo 50* para o cólon",
-      "apoio": "Na imagem, o presente de aniversário chega antes do esperado: dentro da caixa, uma câmera numa mangueirinha e um kit de amostra. As folhas do calendário voltam no tempo.",
-      "fala": null
+      "frase": "*45 é o novo 50* para o cólon: no risco médio, o rastreamento começa aos 45, com colonoscopia ou exame de fezes. CEA não rastreia nada; ele acompanha quem já tratou.",
+      "apoio": "O NBME ainda oferece \"esperar os 50\" e o CEA; desde 2021 a USPSTF recomenda começar aos 45 no risco médio, com colonoscopia a cada 10 anos ou teste de fezes (FIT anual, por exemplo).",
+      "fala": "Já vi esse caso às 3 da manhã: o convite agora chega cinco anos antes."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "45 anos e risco médio: quando rastrear?"
+    "pergunta": "45 anos, risco médio e sem sintomas: o que recomendar?"
   },
   "cta": null,
   "reel": null,

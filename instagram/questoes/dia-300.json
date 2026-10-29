@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-29",
   "tom": null,
-  "gancho": "O cafezinho da padaria *foi parar no banco dos réus*",
+  "gancho": "O cafezinho da padaria *foi parar no banco dos réus* e já pediu advogado",
   "gancho_apoio": "O risco dobrou, até alguém separar fumantes de não fumantes.",
   "imagem": {
     "arquivo": "dia-300.png",
-    "cena": "Tribunal em miniatura: uma xícara de cafezinho de padaria nervosa no banco dos réus; o Viés espia por trás de uma tabela 2x2 em branco; uma nuvenzinha cinza meio escondida atrás da xícara.",
+    "cena": "Um tribunal em miniatura: uma xícara de cafezinho de padaria, nervosa, no banco dos réus, segurando um cartão de advogado em branco. O Viés espia por trás de uma tabela 2x2 em branco, e uma nuvenzinha cinza se esconde meio atrás da xícara.",
     "foco": "50% 35%",
-    "alt": "O cafezinho da padaria foi parar no banco dos réus"
+    "alt": "O cafezinho da padaria no banco dos réus"
   },
   "imagem_macete": {
     "arquivo": "dia-300-macete.png",
-    "cena": "Callback: a tabela 2x2 se divide em duas tabelas menores iguais e, nas duas, a xícara aparece igualmente tranquila; a lupa ilumina a nuvem cinza, flagrada com cara de culpada, enquanto o cafezinho sai livre do banco dos réus e o Viés fica contrariado por ter sido descoberto.",
+    "cena": "A tabela 2x2 se divide em duas tabelas menores iguais, e nas duas a xícara aparece tranquila; a lupa ilumina a nuvem cinza, flagrada com cara de culpada, enquanto o cafezinho sai livre do banco dos réus e o Viés fica contrariado por ter sido descoberto.",
     "foco": "50% 45%",
     "alt": "Estratos iguais e diferentes do bruto: confusão"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Estratificou e *sumiu nos dois*? Confusão. Ficou *diferente entre eles*? Modificação",
-      "apoio": "Na imagem, o cafezinho da padaria estava no banco dos réus, mas a lupa do Viés achou a nuvem de fumaça escondida atrás dele. Partida a tabela em duas, o café sai inocente.",
-      "fala": null
+      "apoio": "O cafezinho estava no banco dos réus, mas a lupa do Viés achou a nuvem de fumaça escondida atrás dele: o fumo anda junto com o café e causa o infarto. Partida a tabela em duas, o RR vira 1,0 nos dois estratos e o café sai inocente. Se o RR fosse diferente entre fumantes e não fumantes, seria modificação de efeito.",
+      "fala": "Se você não randomizou, eu entrei. E trouxe o cigarro escondido."
     }
   },
   "legenda": {
@@ -88,7 +88,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Estratificou e o RR virou 1,0 nos dois: é o quê?"
+    "pergunta": "Café dobrou o risco, mas estratificado por fumo deu RR 1,0: é o quê?"
   },
   "cta": null,
   "reel": null,

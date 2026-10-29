@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Deficiência de 21-hidroxilase (dia 10), Ponto de corte da HbA1c (dia 13)",
   "conceito": "Remix: Bruton agammaglobulinemia + 21-hydroxylase deficiency + Lowering a diagnostic cutoff (HbA1c)",
-  "personagem": null,
+  "personagem": "Viés",
   "gancho_data": null,
   "remix_de": [
     8,
@@ -16,69 +16,68 @@
   ],
   "explicacao_em": "2026-11-16",
   "tom": null,
-  "gancho": "*Remix*: a chave do Bruton, o forno 21 ou a rede?",
+  "gancho": "O teste do pezinho baixou a *régua* da 17-OHP. Quem paga a conta?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-014.png",
-    "cena": "O toca-discos vermelho e três discos com ícones no rótulo: uma chave dourada, um forninho de padaria e uma rede de pesca. Um quarto disco misterioso espia de uma capa lisa, e a agulha paira no ar.",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, segura uma régua comprida na porta de uma maternidade de desenho, ao lado de um varal de pezinhos de papel em branco. Um vinil pequeno pende do varal como enfeite; ao fundo, uma padaria com três fornos, o do meio apagado.",
     "foco": "50% 35%",
-    "alt": "Remix: a chave do Bruton, o forno 21 ou a rede?"
+    "alt": "O teste do pezinho baixou a régua da 17-OHP. Quem paga a conta?"
   },
   "imagem_macete": {
     "arquivo": "dia-014-macete.png",
-    "cena": "Callback do toca-discos: a agulha pousa no disco da chave dourada, que toca notas verdes, com o presente aberto da mãe em cima, marcando o fim da proteção aos 6 meses. Os outros discos ficam de lado com o símbolo vermelho de pausa.",
-    "alt": "O vale-presente vence aos 6 meses"
+    "cena": "Callback do varal: o Viés abaixa a régua, e uma rede de malha fina pega todos os pezinhos que têm um forninho apagado desenhado, mas pega também vários pezinhos lisos, sem desenho nenhum, que vão para uma caixinha ao lado de um relógio, para colher de novo.",
+    "alt": "Malha fina no teste do pezinho"
   },
   "questao": {
-    "vinheta": "At a Sunday study group, students write four flashcards from last week's topics: a humoral immunodeficiency, an adrenal enzyme defect and diagnostic test cutoffs.",
-    "pergunta": "Which flashcard is correct?",
+    "vinheta": "A state newborn screening program measures 17-hydroxyprogesterone in dried blood spots to detect classic congenital adrenal hyperplasia before salt-wasting crises occur. To miss fewer affected infants, the program lowers its 17-hydroxyprogesterone cutoff. The assay and the screened population are unchanged.",
+    "pergunta": "Which change in screening performance is most likely?",
     "alternativas": {
       "A": {
-        "texto": "21-hydroxylase deficiency causes hypertension with hypokalemia",
-        "quiz": "21-OH: hipertensão",
-        "dia": 10
+        "texto": "Higher specificity and fewer false-positive recalls",
+        "quiz": "Mais específico, menos falsos"
       },
       "B": {
-        "texto": "Lowering a diagnostic cutoff raises specificity",
-        "quiz": "Corte ↓: espec. ↑",
-        "dia": 13
+        "texto": "Lower sensitivity for 21-hydroxylase deficiency",
+        "quiz": "Menos sensível para 21-OH",
+        "dia": 10
       },
       "C": {
-        "texto": "X-linked hyper-IgM syndrome: B cells are absent",
-        "quiz": "Hiper-IgM: sem B"
+        "texto": "Higher positive predictive value of a positive screen",
+        "quiz": "VPP maior"
       },
       "D": {
-        "texto": "Bruton agammaglobulinemia: infections start around 6 months of age",
-        "quiz": "Bruton: após 6 meses",
-        "dia": 8
+        "texto": "Higher sensitivity and more false-positive recalls",
+        "quiz": "Mais sensível, mais falsos +",
+        "dia": 13
       }
     },
     "correta": "D"
   },
   "explicacao": {
-    "titulo": "O vale-presente vence aos 6 meses",
+    "titulo": "Malha fina no teste do pezinho",
     "certa": [
-      "Na agamaglobulinemia de Bruton (dia 8), o bebê fica protegido pela IgG que passou da mãe pela placenta, e as infecções bacterianas começam quando ela acaba, por volta dos 6 meses. É a única frase certa, e se você errou, volte ao dia 8 e refaça antes do próximo remix."
+      "Baixar o corte da 17-OHP é jogar no teste do pezinho a rede de malha fina do dia 13: mais bebês com deficiência de 21-hidroxilase (dia 10) são pegos antes da crise de perda de sal, e a *sensitivity* sobe. O preço é reconvocar mais bebês saudáveis, sobretudo prematuros e recém-nascidos estressados, que têm 17-OHP mais alta: a *specificity* cai e chegam mais *false-positive recalls*."
     ],
     "termos": [
-      "X-linked agammaglobulinemia",
-      "21-hydroxylase deficiency",
-      "sensitivity vs specificity",
-      "hyper-IgM syndrome"
+      "newborn screening",
+      "17-hydroxyprogesterone cutoff",
+      "sensitivity",
+      "false-positive recall"
     ],
     "erradas": {
-      "A": "Dia 10: a deficiência de 21-hidroxilase perde sal, com hipotensão e potássio alto; hipertensão com potássio baixo é da 11-beta-hidroxilase.",
-      "B": "Dia 13: baixar o ponto de corte aumenta a sensibilidade e diminui a especificidade.",
-      "C": "Intruso: na hiper-IgM ligada ao X as células B existem, mas falta o CD40 ligante para trocar de classe."
+      "A": "É o contrário: baixar o corte derruba a especificidade e aumenta os falsos positivos.",
+      "B": "Dias 10 e 13: corte mais baixo pega mais bebês com a 21-hidroxilase deficiente, então a sensibilidade sobe, não cai.",
+      "C": "Com mais falsos positivos entre os positivos, o valor preditivo positivo cai, como a malha fina que traz chinelo junto com o peixe."
     },
     "macete": {
-      "frase": "O vale-presente da mãe vence aos 6 meses (Bruton), o forno 21 deixa o pão sem sal e a malha fina pega chinelo.",
-      "apoio": "Pegadinha de prova: O NBME cobra a idade de início: imunodeficiência só de anticorpos costuma aparecer depois dos 6 meses; infecções graves nas primeiras semanas lembram defeito de célula T ou combinado.",
+      "frase": "Régua mais baixa no pezinho é malha fina de novo: pega *todo bebê com o forno 21 quebrado* e chama de volta quem só nasceu cedo.",
+      "apoio": "Pegadinha de prova: O NBME muda só o ponto de corte e mantém o teste e a população: sensibilidade e especificidade andam em sentidos opostos, e o VPP acompanha a especificidade.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo do Step 1: dias 8, 10 e 13, mais um intruso. O selo de cada alternativa mostra o dia original.",
+    "contexto": "Domingo de revisão juntando duas semanas: o forno 21 da padaria (dia 10) e a malha fina do ponto de corte (dia 13). O bônus do macete traz a chave perdida do Bruton (dia 8).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,7 +93,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: qual cartão está certo?"
+    "pergunta": "Corte da 17-OHP mais baixo no pezinho: o que acontece com o teste?"
   },
   "exemplo": false
 }

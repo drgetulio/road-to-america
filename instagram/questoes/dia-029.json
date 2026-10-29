@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-12-01",
   "tom": null,
-  "gancho": "Macrô investiga: o *ferro* some e ninguém sabe para onde",
+  "gancho": "Tomou sulfato ferroso por meses e o *cofrinho* continua vazio",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-029.png",
-    "cena": "Macrô, de guardanapo xadrez, examina com uma lupa um tapete felpudo (as vilosidades do intestino) que ficou achatado e careca num canto. Ao lado, um cofrinho de ferro está vazio, com a tampa aberta. Quem pisou no tapete fica para amanhã.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, examina com uma lupa um tapete felpudo (as vilosidades do intestino) que ficou achatado e careca num canto. Ao lado, um cofrinho de ferro está vazio, com a tampa aberta. Quem pisou no tapete fica para amanhã.",
     "foco": "50% 35%",
-    "alt": "Macrô investiga: o ferro some e ninguém sabe para onde"
+    "alt": "Tomou sulfato ferroso por meses e o cofrinho continua vazio"
   },
   "imagem_macete": {
     "arquivo": "dia-029-macete.png",
-    "cena": "Callback do tapete: ele estava atrás do balcão de uma padaria. Um fiscal em forma de Y, de boné e prancheta (anti-tTG IgA), recolhe uma migalha de glúten num saquinho de prova. Ao lado, dois pãezinhos apresentadores, um com duas sementes e outro com oito (DQ2 e DQ8), mostram a migalha a bolinhas T, que pisoteiam o tapete felpudo. Macrô aponta o fiscal.",
+    "cena": "Callback do tapete: ele estava atrás do balcão de uma padaria. Um fiscal em forma de Y, de boné e prancheta, recolhe uma migalha de pão num saquinho de prova. Dois pãezinhos apresentadores, um com duas sementes e outro com oito, mostram a migalha a bolinhas T, que pisoteiam o tapete. Macrô aponta o fiscal.",
     "alt": "O fiscal só aparece com pão no balcão"
   },
   "questao": {
@@ -66,13 +66,13 @@
       "D": "O antifator intrínseco é da anemia perniciosa, que é megaloblástica, e não ferropriva."
     },
     "macete": {
-      "frase": "Na padaria do intestino, o fiscal é o tTG, e ele só aparece com o pão no balcão (paciente comendo glúten). Peça sempre a IgA total junto, porque às vezes o fiscal está de folga. DQ2 e DQ8: dois pães, oito fatias.",
+      "frase": "O fiscal tTG só aparece com *pão no balcão*: paciente comendo glúten. E peça a IgA total junto, porque às vezes o fiscal nem foi contratado.",
       "apoio": "Pegadinha de prova: O NBME traz uma paciente que já cortou o glúten; nesse caso a sorologia e a biópsia podem vir falsamente normais.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda: uma anemia que não melhora, um intestino que reclama e uma pista na pele.",
+    "contexto": "Bicho de Segunda: uma anemia que não melhora com ferro oral, um intestino que reclama e bolhinhas que coçam no cotovelo. O Macrô foi investigar a padaria do intestino.",
     "palavras_chave": [
       "bloating",
       "iron deficiency anemia",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Anemia, diarreia e vesículas: qual exame inicial?"
+    "pergunta": "Anemia ferropriva refratária e vesículas no cotovelo: qual exame?"
   },
   "exemplo": false
 }

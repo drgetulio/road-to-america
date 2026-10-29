@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-08",
   "tom": null,
-  "gancho": "*Seu Néfron* fechou o caixa e sobrou um ânion sem nome",
-  "gancho_apoio": "Ânion gap de 30 e visão em nevasca. Quem é o ânion misterioso?",
+  "gancho": "Seu Néfron fez a conta três vezes e o caixa *continua sem fechar*",
+  "gancho_apoio": "Ânion gap de 30, visão em nevasca e um gole de fluido do para-brisa. Quem é o ânion sem nome?",
   "imagem": {
     "arquivo": "dia-248.png",
-    "cena": "Seu Néfron, no caixa da padaria, confere uma balança: de um lado, um íon grande; do outro, dois íons menores, e a conta não fecha. Na fila, um freguês mascarado e misterioso espera, e pela janela neva sem parar.",
+    "cena": "Fim de expediente no cartório. Seu Néfron, de gravata e óculos na ponta do nariz, confere uma balança de dois pratos no balcão: de um lado um íon grande, do outro dois íons menores, e a balança não fecha. Ele pega a calculadora pela terceira vez, suando. Na fila, um freguês baixinho de máscara navy espera, e pela janela neva sobre um coqueiro. Setinhas de manual de montagem apontam para o prato que sobra.",
     "foco": "50% 35%",
-    "alt": "Seu Néfron fechou o caixa e sobrou um ânion sem nome"
+    "alt": "Seu Néfron faz a conta pela terceira vez e o caixa não fecha"
   },
   "imagem_macete": {
     "arquivo": "dia-248-macete.png",
-    "cena": "O freguês tira a máscara: é uma formiga simpática, que sobe na balança e equilibra a conta, e Seu Néfron carimba aprovado. Ao lado da janela, um par de óculos embaçados. Num pires separado, na beirada, uma pedrinha de cristal (o oxalato do outro álcool).",
+    "cena": "O freguês tira a máscara: é uma formiguinha simpática, de capa feita de palheta de limpador de para-brisa, que sobe no prato mais leve e equilibra a conta. Seu Néfron carimba aliviado. Na janela, um par de óculos embaçados; num pires separado, uma pedrinha de cristal brilhante.",
     "foco": "50% 40%",
-    "alt": "O ânion sem nome era o formato"
+    "alt": "O ânion mascarado era a formiga do metanol"
   },
   "questao": {
     "vinheta": "A 45-year-old man drank windshield washer fluid by mistake 18 hours ago. He now has blurred vision, 'like a snowstorm.' Arterial pH is 7.15; Na+ 138, Cl- 100, and HCO3- 8 mEq/L. The serum osmolal gap is elevated, and urinalysis is normal.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Metanol vira *formiga* no olho; etilenoglicol vira *pedra* no rim",
-      "apoio": "Ácido fórmico vem do latim formica, formiga. O freguês mascarado da padaria era a formiga que entra no olho e embaça a visão. O cristal no pires é o oxalato do etilenoglicol, que vai para o rim.",
-      "fala": null
+      "apoio": "Ácido fórmico vem de formica, formiga em latim: é ela que embaça a visão em nevasca. O etilenoglicol do anticongelante vira oxalato, a pedrinha no pires que vai para o rim. Nos dois, o antídoto bloqueia a álcool desidrogenase: fomepizol.",
+      "fala": "Sem carimbo, não sai. E esse ânion estava sem carimbo."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual ânion explica tudo?"
+    "pergunta": "Ânion gap de 30 e visão em nevasca: qual ânion explica os dois?"
   },
   "cta": "simulado",
   "reel": null,

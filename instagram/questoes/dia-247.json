@@ -8,23 +8,24 @@
   "topico": "Rastreamento de Cushing",
   "conceito": "Cushing screening: late-night salivary cortisol, 24-hour urine cortisol or 1 mg dexamethasone suppression",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-07",
   "tom": null,
-  "gancho": "Hormônio *hiperativo* no plantão: qual exame flagra primeiro?",
-  "gancho_apoio": "Hematomas fáceis, fraqueza nas coxas e estrias violáceas. Qual exame abre a investigação?",
+  "gancho": "Dona Térmica avisa: sem provar o crime, *nada de ressonância*",
+  "gancho_apoio": "Hematomas fáceis, coxa fraca e estrias violáceas, sem corticoide nenhum. Qual exame abre a investigação?",
   "imagem": {
     "arquivo": "dia-247.png",
-    "cena": "Numa estrada, uma placa verde de rodovia sem letras aponta três saídas. Um carrinho de detetive, com uma lupa saindo pela janela, para no acostamento e observa uma molécula redonda de hormônio, elétrica, que corre em círculos sem parar. Uma saída sobe o morro até um enorme aparelho de ressonância, outra leva a um laboratório pequeno cheio de tubos e a terceira some numa curva.",
+    "cena": "Na copa do plantão, Dona Térmica, a garrafa térmica de café, faz papel de delegada diante de um quadro de cortiça: um barbante vermelho liga três cartões (um risco roxo, uma mancha de hematoma e uma perninha bamba) a uma molécula redonda de hormônio, que assobia disfarçando. Ao lado, uma ressonância de brinquedo com uma etiqueta de preço enorme, em branco. O relógio da parede está coberto por um jaleco pendurado.",
     "foco": "50% 35%",
-    "alt": "Hormônio hiperativo no plantão: qual exame flagra primeiro?"
+    "alt": "Dona Térmica investiga o cortisol antes da ressonância"
   },
   "imagem_macete": {
     "arquivo": "dia-247-macete.png",
-    "cena": "O detetive segue a molécula até uma cidadezinha de madrugada, com todas as janelas apagadas menos uma varanda. Lá, sob a lua, a molécula continua acordada e cai num tubinho de coleta de saliva. Ao lado, uma jarra grande de coleta de 24 horas e um comprimido pequeno de dexametasona que tenta apagar a luz da varanda e não consegue. A ressonância fica lá no morro, esperando a vez dela.",
+    "cena": "Três da manhã, cidade dormindo. Dona Térmica, de lanterna, flagra a molécula de hormônio acordada na varanda, pulando corda, e colhe a prova num tubinho de saliva. Na mesa, a jarra de urina de 24 horas e um comprimido de dexametasona que tenta apagar a luz e não consegue. O jaleco caiu e o relógio aparece com os ponteiros nas 3. A ressonância espera no fim da fila.",
     "foco": "50% 40%",
-    "alt": "Primeiro provar o hipercortisolismo"
+    "alt": "Às 3 da manhã, o cortisol do Cushing continua acordado"
   },
   "questao": {
     "vinheta": "Over 12 months, a 38-year-old woman has developed easy bruising, proximal muscle weakness, and new hypertension. She uses no glucocorticoids or other drugs. Examination shows wide violaceous abdominal striae, facial plethora, and thin skin. Fasting glucose is 132 mg/dL.",
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Cushing é o hormônio que *não dorme*: flagre ele *à noite*",
-      "apoio": "A molécula que pula na varanda de madrugada é o cortisol sem ritmo. Para flagrar, colha a saliva à noite, junte a urina de 24 horas ou dê 1 mg de dexametasona e veja se a luz apaga de manhã.",
-      "fala": null
+      "apoio": "Cortisol normal cai de madrugada; o do Cushing fica acordado como quem estuda para o Step depois do plantão. Primeiro prova o hipercortisolismo (saliva à noite, urina de 24 horas ou supressão com 1 mg de dexametasona) e só depois procura a origem com ACTH e imagem.",
+      "fala": "Já vi esse caso às 3 da manhã. Literalmente."
     }
   },
   "legenda": {
-    "contexto": "Hematomas, fraqueza proximal, estrias violáceas e glicemia subindo, sem uso de corticoide. Qual é o primeiro exame?",
+    "contexto": "Hematomas, fraqueza proximal, estrias violáceas e glicemia subindo, sem uso de corticoide. Qual exame abre a investigação?",
     "palavras_chave": [
       "easy bruising",
       "proximal weakness",
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é o primeiro exame?"
+    "pergunta": "Suspeita de Cushing sem uso de corticoide: qual é o primeiro exame?"
   },
   "cta": "simulado",
   "reel": null,

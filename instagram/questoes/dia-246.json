@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-06",
   "tom": null,
-  "gancho": "A *furadeira* do boteco quebrou e os grãos de café voltaram",
-  "gancho_apoio": "Meningococo duas vezes no mesmo paciente e também no irmão. Qual peça do complemento falta?",
+  "gancho": "Montou a furadeira pelo tutorial e *sobrou uma peça*. Adivinha quem voltou?",
+  "gancho_apoio": "Meningococo duas vezes no paciente e uma no irmão. Qual peça do complemento sumiu da caixa?",
   "imagem": {
     "arquivo": "dia-246.png",
-    "cena": "Na porta do boteco dos micróbios, Macrô revira uma caixa de ferramentas vermelha cheia de peças misturadas, procurando a que falta. No balcão, grãos de café sorridentes, sempre em pares, dançam como fregueses antigos da casa.",
+    "cena": "Na sala de casa, Macrô, de guardanapo xadrez e com a comanda em branco no bolso, monta uma furadeira de brinquedo seguindo um tutorial no celular apoiado num copo. As peças coloridas estão espalhadas no tapete e uma delas claramente sobrou. Pela janela, dois grãos de café sorridentes, de mãos dadas, acenam como quem diz \"voltamos\".",
     "foco": "50% 35%",
-    "alt": "A furadeira do boteco quebrou e os grãos de café voltaram"
+    "alt": "Macrô monta a furadeira pelo tutorial e sobra uma peça"
   },
   "imagem_macete": {
     "arquivo": "dia-246-macete.png",
-    "cena": "Macrô monta a furadeira com cinco peças empilhadas, uma de cada cor, e com ela faz um furo redondo na casca de um par de grãos de café, que murcha. Ao lado, dois frascos de vacina em forma de escudo esperam na prateleira.",
+    "cena": "Macrô encaixa a quinta peça, a furadeira liga e faz um furo redondo na casca de um par de grãos de café, que murcha sem drama. Na parede, cinco ganchos de ferramenta, um de cada cor, agora todos ocupados, e na estante dois frascos de vacina em forma de escudo.",
     "foco": "50% 40%",
-    "alt": "Sem MAC, a Neisseria volta"
+    "alt": "Com as cinco peças, a furadeira fura o diplococo"
   },
   "questao": {
     "vinheta": "A 19-year-old college student is hospitalized with meningococcal meningitis. At age 13, he had meningococcal sepsis, and his older brother had meningococcal meningitis at age 17. He has no other history of serious infections. Serum immunoglobulins are normal, and total hemolytic complement (CH50) activity is nearly absent.",
@@ -67,12 +67,12 @@
     },
     "macete": {
       "frase": "*C5 a C9* é a furadeira que fura a *Neisseria*",
-      "apoio": "Os grãos de café em dupla são os diplococos da Neisseria. A furadeira do Macrô tem cinco peças, de C5 a C9; se faltar qualquer uma, o MAC não fura e os grãos voltam ao boteco.",
-      "fala": null
+      "apoio": "Sobrou peça, a furadeira não fura: faltou qualquer uma de C5 a C9 e o MAC não monta. Os grãos de café em dupla são os diplococos da Neisseria, que voltam sempre, inclusive no irmão. Antes do eculizumabe (anti-C5), vacina contra meningococo.",
+      "fala": "Comi, mostrei, avisei. Montar furadeira já é outra história."
     }
   },
   "legenda": {
-    "contexto": "Meningococo de repetição, um irmão com a mesma história e imunoglobulinas normais. Onde está o defeito?",
+    "contexto": "Meningococo de repetição, o irmão mais velho com a mesma história e imunoglobulinas normais. O CH50 quase zerou. Onde está o defeito?",
     "palavras_chave": [
       "recurrent meningococcal infection",
       "family history",
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual componente falta?"
+    "pergunta": "Qual componente do complemento falta nos dois irmãos?"
   },
   "cta": "simulado",
   "reel": null,

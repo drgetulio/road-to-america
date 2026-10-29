@@ -8,21 +8,22 @@
   "topico": "Fasciíte necrosante",
   "conceito": "Necrotizing fasciitis: pain out of proportion and crepitus, urgent surgical debridement",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-25",
   "tom": null,
-  "gancho": "Na pele, quase nada. *E essa dor toda, de onde vem?*",
-  "gancho_apoio": "Arranhão pequeno, dor enorme e um som estranho ao apertar a pele.",
+  "gancho": "Arranhão nota 2 e dor nota 10: *a matemática do plantão não fecha*",
+  "gancho_apoio": "Diabético, arranhão na perna há dois dias, bolhas escuras e um som estranho ao apertar a pele.",
   "imagem": {
     "arquivo": "dia-296.png",
-    "cena": "Placa verde NEXT STEP com saídas; abaixo, um mar calmo com uma pontinha de iceberg na superfície e a água turva, que não deixa ver o que há embaixo; uma boia de alerta vermelha pisca ao lado.",
+    "cena": "Três da manhã num cais: Dona Térmica, a garrafa térmica de café, olha pelo binóculo um mar calmo com uma pontinha de iceberg na superfície e a água turva, que não deixa ver o que há embaixo; uma boia vermelha de alerta pisca ao lado. No poste do cais, um relógio sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Na pele, quase nada. E essa dor toda, de onde vem?"
+    "alt": "Dona Térmica vê só a ponta do iceberg"
   },
   "imagem_macete": {
     "arquivo": "dia-296-macete.png",
-    "cena": "Callback: um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg e formões de escultor cortam a parte submersa ao longo da camada plana; três frascos de antibiótico vão no barco, e na placa verde só uma saída acende.",
+    "cena": "Um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg, e formões de escultor cortam depressa a parte submersa, enorme, ao longo de uma camada plana; três frascos de antibiótico vão no barco. No cais, Dona Térmica acena com a prancheta.",
     "foco": "50% 45%",
     "alt": "Dor desproporcional e crepitação: fasciíte necrosante"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Dor maior que a pele *é iceberg*: o que importa está por baixo",
-      "apoio": "Na imagem, a ponta do iceberg é pequena e calma, mas embaixo da água ele cresce rápido pela camada plana (a fáscia), soltando bolhas (o gás). Contra iceberg, o barco vai direto, com a luz do centro cirúrgico acesa.",
-      "fala": null
+      "apoio": "A ponta do iceberg é pequena e calma, mas embaixo da água ele cresce rápido pela camada plana (a fáscia), soltando bolhas (o gás que dá crepitação). Contra iceberg, o barco vai direto, com a luz do centro cirúrgico acesa: desbridamento cirúrgico já e antibiótico de amplo espectro.",
+      "fala": "Já vi esse caso às 3 da manhã. Iceberg não espera o dia clarear."
     }
   },
   "legenda": {
-    "contexto": "Diabético, arranhão na perna há dois dias, dor muito maior do que a vermelhidão explica, bolhas escuras, crepitação e pressão de 88/54. A placa do Plantão de Terça mostra quatro saídas.",
+    "contexto": "Diabético, arranhão na perna há dois dias, dor muito maior do que a vermelhidão explica, bolhas escuras, crepitação e pressão de 88/54. Qual é o diagnóstico?",
     "palavras_chave": [
       "skin scrape",
       "diabetes",
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Dor desproporcional e crepitação: diagnóstico?"
+    "pergunta": "Dor desproporcional, bolhas escuras e crepitação: qual é o diagnóstico?"
   },
   "cta": null,
   "reel": null,

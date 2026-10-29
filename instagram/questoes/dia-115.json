@@ -8,17 +8,18 @@
   "topico": "Manguito rotador",
   "conceito": "Supraspinatus: initiates the first 15 degrees of abduction, empty can test",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-25",
   "tom": null,
-  "gancho": "O guindaste do ombro emperrou na *largada*",
-  "gancho_apoio": "Dor para pintar o teto e fraqueza com o polegar para baixo. Qual músculo?",
+  "gancho": "O guindaste do ombro *não sai da largada*: qual motor queimou?",
+  "gancho_apoio": "Dor para pintar o teto e fraqueza com o polegar para baixo.",
   "imagem": {
     "arquivo": "dia-115.png",
-    "cena": "Um guindaste de obra simpático, com quatro cabos coloridos presos na base, tenta levantar uma latinha de refrigerante sem rótulo virada de cabeça para baixo, que derrama gotas. O braço do guindaste não sai do chão, e um motorzinho pequeno na base solta uma fumacinha.",
+    "cena": "Num canteiro de obras, Seu Allen, a chavinha do manual de montagem, confere com o manual aberto um guindaste simpático com quatro cabos coloridos presos na base. O guindaste tenta levantar uma latinha de refrigerante sem rótulo, virada de cabeça para baixo, que derrama gotas, mas o braço não sai do chão, e um motorzinho na base solta fumacinha.",
     "foco": "50% 35%",
-    "alt": "Guindaste com quatro cabos tenta levantar uma latinha virada e não sai do chão."
+    "alt": "Seu Allen confere o manual de um guindaste de quatro cabos que tenta levantar uma latinha virada e não sai do chão."
   },
   "imagem_macete": {
     "arquivo": "dia-115-macete.png",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Supraspinatus",
-        "quiz": "Supraespinal"
+        "quiz": "Supraspinatus"
       },
       "B": {
         "texto": "Infraspinatus",
-        "quiz": "Infraespinal"
+        "quiz": "Infraspinatus"
       },
       "C": {
         "texto": "Teres minor",
-        "quiz": "Redondo menor"
+        "quiz": "Teres minor"
       },
       "D": {
         "texto": "Subscapularis",
-        "quiz": "Subescapular"
+        "quiz": "Subscapularis"
       }
     },
     "correta": "A"
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "Supraespinal é o *motor de arranque* do guindaste",
       "apoio": "Na imagem, o guindaste segura uma latinha virada e o braço não sai do lugar.",
-      "fala": null
+      "fala": "Sobrou peça? Então faltou o motor de arranque."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Dor na lata vazia: qual músculo?"
+    "pergunta": "Dor e fraqueza no teste do polegar para baixo: qual músculo?"
   },
   "cta": null,
   "reel": null,

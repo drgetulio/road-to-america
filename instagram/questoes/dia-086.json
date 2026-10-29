@@ -8,20 +8,21 @@
   "topico": "Exacerbação de DPOC",
   "conceito": "COPD exacerbation: bronchodilators, systemic steroids, antibiotics if sputum changes, target SpO2 88 to 92 percent",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-27",
-  "gancho": "DPOC com saturação de 84%: *quanto oxigênio vai na panela*?",
+  "gancho": "DPOC saturando 84%: *quanto é nota de aprovação* aqui?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um cilindro de oxigênio, um saleiro e uma panela de feijoada. No acostamento, um par de pulmões simpático e cansado segura um mostrador redondo com ponteiro, sem números.",
+    "cena": "Na mesa do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica corrige uma pilha de provas em branco com caneta vermelha, ao lado de um par de pulmões simpático e cansado que segura um mostrador redondo com ponteiro e faixas coloridas, sem números. Uma nuvenzinha cinza flutua por perto.",
     "foco": "50% 35%",
-    "alt": "DPOC com saturação de 84%: quanto oxigênio vai na panela?",
+    "alt": "Dona Térmica corrige provas ao lado de um par de pulmões cansado que segura um mostrador de ponteiro; uma nuvem cinza flutua perto.",
     "arquivo": "dia-086.png"
   },
   "imagem_macete": {
-    "cena": "Callback da rodovia: o ponteiro do mostrador fica parado numa faixa verde estreita, nem no começo nem no fim. Ao lado, uma panela de feijoada com a dose certa de sal solta um vapor leve; numa segunda panela, com sal demais, sobe uma nuvem cinza de CO2.",
-    "alt": "Alvo de 88 a 92%",
+    "cena": "Callback: o ponteiro do mostrador para numa faixa verde estreita, nem no começo nem no fim, e Dona Térmica carimba aprovação em verde na prova. Ao lado, a nuvem cinza de CO2 incha quando uma mão de desenho tenta girar o oxigênio até o máximo.",
+    "alt": "O ponteiro para numa faixa verde estreita e Dona Térmica carimba aprovação; a nuvem cinza incha quando alguém gira o oxigênio ao máximo.",
     "arquivo": "dia-086-macete.png"
   },
   "questao": {
@@ -64,13 +65,13 @@
       "D": "Saturação de 80 a 84% deixa a paciente hipoxêmica, com risco de arritmia e lesão de órgãos."
     },
     "macete": {
-      "frase": "Sal na feijoada: *88 a 92*",
+      "frase": "DPOC: *88 a 92* é nota de aprovação",
       "apoio": "Pegadinha de prova: O NBME dá um DPOC com saturação baixa e oferece 100% de oxigênio; a resposta é oxigênio controlado com alvo de 88 a 92%, e gasometria de controle se houver retenção de CO2.",
-      "fala": null
+      "fala": "Única prova em que tirar menos de 95 é passar."
     }
   },
   "legenda": {
-    "contexto": "DPOC com piora da falta de ar, catarro purulento e saturação de 84%. Broncodilatador, corticoide e antibiótico já entraram. No Plantão de Terça, a pergunta é até onde subir o oxigênio.",
+    "contexto": "Piora da falta de ar, catarro purulento, saturação de 84% e PaCO2 de 54. Broncodilatador, corticoide e antibiótico já entraram. Dona Térmica já viu muito oxigênio no talo às 3 da manhã e pergunta: até onde subir?",
     "palavras_chave": [
       "COPD",
       "worsening dyspnea",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual alvo de saturação?"
+    "pergunta": "DPOC hipercápnico em exacerbação: qual alvo de saturação?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -8,20 +8,21 @@
   "topico": "Varizes esofágicas",
   "conceito": "Variceal bleeding: octreotide, ceftriaxone and endoscopic band ligation",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-13",
-  "gancho": "A mangueira do esôfago estourou: *qual saída agora*?",
+  "gancho": "Octreotida e ceftriaxona já correram. *E a mangueira*, quem fecha?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um balão, um tubo em forma de ponte e uma xuxinha de cabelo. Ao lado da estrada, uma mangueira de jardim inchada e azulada vaza água, com um registro já fechado pela metade.",
+    "cena": "Na copa do plantão, às 3 da manhã no relógio sem números, Dona Térmica observa uma mangueira de jardim azulada e inchada que espirra água pela pia. O registro já está meio fechado e um escudinho de comprimido monta guarda. No armário aberto, um balão de festa murcho, um cano em forma de ponte e um pote de elásticos de cabelo.",
     "foco": "50% 35%",
-    "alt": "A mangueira do esôfago estourou: qual saída agora?",
+    "alt": "Dona Térmica olha uma mangueira azulada que espirra água na pia da copa; no armário, um balão murcho, um cano em ponte e um pote de elásticos.",
     "arquivo": "dia-072.png"
   },
   "imagem_macete": {
-    "cena": "Callback da rodovia: uma mão de luvinha de desenho, sem pessoa, amarra uma xuxinha vermelha bem no ponto que vazava, e a mangueira para de espirrar. O registro está fechado e o escudinho de comprimido fica de guarda.",
-    "alt": "Depois do pacote, endoscopia com ligadura",
+    "cena": "Callback da copa: uma luvinha de desenho, sem pessoa, dá um nó de elástico bem no ponto que vazava, igual vó fechando saco de pão, e a mangueira para de espirrar. O registro está fechado, o escudinho de comprimido segue de guarda e Dona Térmica ergue a caneca, aliviada.",
+    "alt": "Uma luvinha amarra um elástico no ponto que vazava da mangueira, como quem fecha saco de pão; Dona Térmica ergue a caneca, aliviada.",
     "arquivo": "dia-072-macete.png"
   },
   "questao": {
@@ -64,13 +65,13 @@
       "D": "Betabloqueador não seletivo é profilaxia, e não se começa na fase aguda com hipotensão."
     },
     "macete": {
-      "frase": "*OCE*: Octreotida, Ceftriaxona, *Elástico*",
+      "frase": "Varizes: *OCE*, Octreotida, Ceftriaxona e Elástico",
       "apoio": "Pegadinha de prova: O NBME esquece de dar o antibiótico na vinheta para ver se você lembra; na cirrose com hemorragia digestiva, a ceftriaxona reduz infecção, ressangramento e mortalidade.",
-      "fala": null
+      "fala": "Elástico no lugar certo resolve. Minha avó já sabia, a endoscopia só confirmou."
     }
   },
   "legenda": {
-    "contexto": "Cirrose, vômito de sangue vivo e pressão caindo. A equipe já fez a parte de soro, sangue, octreotida e antibiótico. No Plantão de Terça, qual saída vem agora?",
+    "contexto": "Cirrose, vômito de sangue vivo e pressão caindo. Via aérea, sangue, octreotida e antibiótico já foram. Dona Térmica, que não dorme desde ontem, quer saber o que vem agora.",
     "palavras_chave": [
       "cirrhosis",
       "hematemesis",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "Varizes sangrando, pacote inicial feito: qual procedimento agora?"
   },
   "cta": "simulado",
   "exemplo": false

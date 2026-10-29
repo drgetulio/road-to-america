@@ -7,20 +7,20 @@
   "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
   "topico": "Gota",
   "conceito": "Gout: needle-shaped negatively birefringent crystals",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-23",
-  "gancho": "Agulhas amarelas ou paralelepípedos azuis: quem está na articulação?",
+  "gancho": "Seu Néfron segurou o ácido *úrico*, e o dedão acordou às 3 da manhã",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Um microscópio de luz polarizada desenhado como uma caixinha de costura: de um lado agulhas, do outro pequenos paralelepípedos, e um filtro de duas cores (amarelo e azul) ainda desligado.",
+    "cena": "Seu Néfron, de gravata e carimbo, está no guichê de saída da repartição, onde uma fila de bolinhas de ácido úrico espera; uma caixinha de diurético está no balcão, e ele segura o carimbo parado, sem liberar ninguém. Ao lado, um microscópio desenhado como caixinha de costura tem agulhas de um lado e pequenos paralelepípedos do outro. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Um microscópio de luz polarizada desenhado como uma caixinha de costura: de um lado agulhas, do outro pequenos paralelepípedos, e um filtro de duas cores (amarelo e azul) ainda desligado.",
+    "alt": "Seu Néfron segurou o ácido úrico, e o dedão acordou às 3 da manhã",
     "arquivo": "dia-051.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o filtro acende e as agulhas deitadas em paralelo à flecha brilham amarelas; os paralelepípedos, do outro lado, brilham azuis e são empurrados para fora do foco com uma placa de desvio.",
+    "cena": "Callback: o filtro de duas cores do microscópio acende, e as agulhas deitadas em paralelo à flecha brilham amarelas; os paralelepípedos do outro lado brilham azuis e são empurrados para fora do foco. Seu Néfron, sem jeito, devolve a caixinha de diurético.",
     "alt": "Agulha amarela em paralelo: gota",
     "arquivo": "dia-051-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Artrite reativa é oligoartrite após infecção intestinal ou urogenital, sem cristais no líquido."
     },
     "macete": {
-      "frase": "Gota: *agulha amarela*. Pseudogota: *paralelepípedo azul*",
+      "frase": "Gota é *agulha amarela em paralelo*; pseudogota é *paralelepípedo* azul. E a tiazida faz o Seu Néfron segurar o ácido úrico na fila de saída.",
       "apoio": "Pegadinha de prova: O NBME descreve a cor sob o compensador em vez de dizer \"birrefringência negativa\"; amarelo em paralelo é gota, azul em paralelo é pseudogota.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Dor intensa no dedão de madrugada, diurético na receita e um líquido articular que vai para o microscópio de luz polarizada. A cor do cristal decide.",
+    "contexto": "Dor intensa no dedão de madrugada, diurético na receita e um líquido articular que vai para o microscópio de luz polarizada. Quem estuda depois do plantão conhece essa hora.",
     "palavras_chave": [
       "first MTP joint",
       "hydrochlorothiazide",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o diagnóstico mais provável?"
+    "pergunta": "Dedão de madrugada, tiazida e cristal em agulha: qual diagnóstico?"
   },
   "cta": "simulado",
   "exemplo": false

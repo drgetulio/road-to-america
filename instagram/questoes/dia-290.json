@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-08-19",
   "tom": null,
-  "gancho": "Mito achou *duas sanfonas*: uma de 25, outra de 80 anos",
-  "gancho_apoio": "Pulmão sem doença nenhuma, só com tempo de casa.",
+  "gancho": "Mito achou duas sanfonas: uma nova e outra *que tocou no casamento da avó*",
+  "gancho_apoio": "Pulmão sem doença nenhuma, só com tempo de casa. O que muda com os anos?",
   "imagem": {
     "arquivo": "dia-290.png",
-    "cena": "Mito, a mitocôndria de plantão, compara duas sanfonas de forró sobre uma mesa: uma nova e brilhante, outra antiga com o fole gasto e macio.",
+    "cena": "Num arraiá de agosto, Mito, a mitocôndria de jaleco amassado e café, compara duas sanfonas de forró sobre uma mesa de festa: uma nova e brilhante, outra antiga, com o fole gasto e macio. Setinhas de manual de montagem apontam para os dois foles, e bandeirinhas enfeitam o alto.",
     "foco": "50% 35%",
-    "alt": "Mito achou duas sanfonas: uma de 25, outra de 80 anos"
+    "alt": "Mito compara uma sanfona nova e uma antiga"
   },
   "imagem_macete": {
     "arquivo": "dia-290-macete.png",
-    "cena": "Callback: Mito toca a sanfona antiga; o fole abre muito com um dedo só, mas no fim fica um bolsão de ar preso dentro, e as notas saem lentas perto das notas rápidas da sanfona nova; uma caixa de madeira rígida (parede torácica) em volta quase não muda de tamanho.",
+    "cena": "Mito toca a sanfona antiga: o fole abre muito com um dedo só, mas no fim fica um bolsão de ar preso dentro, e as notas saem lentas perto das notas rápidas da sanfona nova. Uma caixa de madeira rígida em volta quase não muda de tamanho.",
     "foco": "50% 45%",
     "alt": "Envelhecer: complacência e VR sobem, FEV1 cai"
   },
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Pulmão idoso é *sanfona antiga*: abre fácil, mas não fecha tudo",
-      "apoio": "Na imagem, Mito toca uma sanfona de forró antiga: o fole abre sem esforço (complacência alta), sobra ar dentro no fim (volume residual alto) e a nota sai mais lenta (FEV1 menor).",
-      "fala": null
+      "apoio": "Mito toca uma sanfona de forró antiga: o fole abre sem esforço (complacência do pulmão alta), sobra ar dentro no fim (volume residual alto) e a nota sai mais lenta (FEV1 menor). A caixa de madeira é a parede torácica, que endurece; a capacidade pulmonar total quase não muda.",
+      "fala": "Sem oxigênio eu não trabalho. Com sanfona velha, eu toco devagar."
     }
   },
   "legenda": {
@@ -89,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Pulmão aos 80 anos: qual padrão?"
+    "pergunta": "Pulmão aos 80 anos: complacência, volume residual e FEV1?"
   },
   "cta": null,
   "reel": null,

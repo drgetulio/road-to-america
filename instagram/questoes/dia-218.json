@@ -16,13 +16,13 @@
   "gancho_apoio": "Visão dupla, fala embolada e fraqueza que desce. Como a toxina trabalha?",
   "imagem": {
     "arquivo": "dia-218.png",
-    "cena": "Macrô na porta do boteco dos micróbios olha desconfiado para um pote de conserva caseira com a tampa estufada na prateleira. Pela janela, um pequeno porto com barquinhos esperando junto ao cais, presos por cordas.",
+    "cena": "Macrô, de comanda no bolso, é o fiscal do cais de um pequeno porto e olha desconfiado para um pote de conserva caseira com a tampa estufada, em cima de um caixote. Barquinhos esperam junto ao cais, presos por cordas.",
     "foco": "50% 35%",
     "alt": "A conserva da festa deixou o cais parado"
   },
   "imagem_macete": {
     "arquivo": "dia-218-macete.png",
-    "cena": "Callback: no porto, uma bactéria marota em forma de bastão usa uma tesoura gigante para cortar as cordas que prendem os barquinhos ao cais. Os barquinhos (as vesículas de acetilcolina) ficam boiando sem conseguir encostar, e o Macrô aponta, espantado.",
+    "cena": "No porto, uma bactéria marota em forma de bastão usa uma tesoura gigante para cortar as cordas que prendem os barquinhos ao cais. Os barquinhos (as vesículas de acetilcolina) ficam boiando sem conseguir encostar, e o Macrô aponta, espantado, do píer.",
     "foco": "50% 45%",
     "alt": "A toxina corta as cordas do cais"
   },
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Botulínica é *tesoura no cais*: corta a corda e o barco não atraca",
       "apoio": "Na imagem, o Macrô vê a toxina de tesoura cortar as cordas (SNARE) que prendem os barquinhos de acetilcolina ao cais. Sem barco atracado, o porto para, de cima para baixo. A tetânica corta as cordas do porto vizinho, o dos freios.",
-      "fala": null
+      "fala": "Tampa estufada? Eu não como. Nem você."
     }
   },
   "legenda": {

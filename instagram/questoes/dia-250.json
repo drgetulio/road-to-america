@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-10",
   "tom": null,
-  "gancho": "A *fábrica de colesterol* parou. Para onde foi o LDL?",
-  "gancho_apoio": "Seis semanas de atorvastatina e o LDL despencou. Qual é a engrenagem?",
+  "gancho": "A fábrica de colesterol *entrou em greve*. Para onde foi o LDL?",
+  "gancho_apoio": "Seis semanas de atorvastatina, LDL de 162 para 88 e uma dorzinha nas coxas. Qual é a engrenagem?",
   "imagem": {
     "arquivo": "dia-250.png",
-    "cena": "Mito, de jaleco e café, encosta numa fábrica em forma de fígado com a engrenagem principal presa por uma trava vermelha. Na rua, bolinhas amarelas de LDL fazem fila, sem saber por onde entrar.",
+    "cena": "Uma fábrica em forma de fígado está com uma faixa de greve em branco na porta e a engrenagem principal presa por uma trava vermelha. Mito, de jaleco amassado e café na mão, faz piquete na calçada com cara de quem não dorme desde a faculdade. Na rua, bolinhas amarelas de LDL fazem fila como na porta da padaria às 7 da manhã. No muro, uma ampulheta pequena marca o tempo.",
     "foco": "50% 35%",
-    "alt": "A fábrica de colesterol parou. Para onde foi o LDL?"
+    "alt": "A fábrica de colesterol entrou em greve e o LDL faz fila na rua"
   },
   "imagem_macete": {
     "arquivo": "dia-250-macete.png",
-    "cena": "A fábrica, ainda com a engrenagem travada, abre muitas portinhas na parede, e as bolinhas de LDL são aspiradas da rua para dentro. Num canto, Mito alonga a coxa com cara de dorzinha, lembrando o efeito no músculo.",
+    "cena": "A fábrica, com a engrenagem ainda travada, abre dezenas de portinhas na parede, e as bolinhas de LDL são puxadas da rua para dentro como por um aspirador gentil; a fila da padaria some. Na calçada, Mito alonga a coxa com cara de dorzinha, sem largar o café.",
     "foco": "50% 40%",
-    "alt": "Menos síntese, mais receptor"
+    "alt": "Sem fábrica própria, o fígado abre portas para o LDL"
   },
   "questao": {
     "vinheta": "A 58-year-old man with type 2 diabetes and an LDL cholesterol of 162 mg/dL begins atorvastatin. Six weeks later, his LDL is 88 mg/dL. He reports mild, symmetric thigh aches, and his creatine kinase level is normal.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Estatina *fecha a fábrica* e *abre as portas*",
-      "apoio": "A fábrica travada é a HMG-CoA redutase bloqueada; sem produção própria, o fígado abre portinhas (receptores de LDL) e puxa o colesterol da rua. O Mito alongando a coxa é a mialgia.",
-      "fala": null
+      "apoio": "Com a HMG-CoA redutase travada, o fígado fica sem colesterol próprio e faz o que todo mundo faz no fim do mês: busca na rua. Ele abre mais receptores de LDL e esvazia a fila do sangue. A dorzinha na coxa do Mito é a mialgia; com CK normal, segue o jogo.",
+      "fala": "Sem oxigênio eu não trabalho. Sem HMG-CoA redutase, o fígado também não."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Por que o LDL caiu?"
+    "pergunta": "Atorvastatina e LDL despencando: qual mecanismo baixou o LDL?"
   },
   "cta": "simulado",
   "reel": null,

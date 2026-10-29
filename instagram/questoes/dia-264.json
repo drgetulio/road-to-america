@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-24",
   "tom": null,
-  "gancho": "A visita que chegou para o *almoço* e ficou até o jantar",
+  "gancho": "A visita que chegou para o almoço *e ficou até a novela das nove*",
   "gancho_apoio": "Uma vez ao dia, falta de ar melhor, boca seca e jato urinário mais fraco. Quem é o remédio?",
   "imagem": {
     "arquivo": "dia-264.png",
-    "cena": "Na farmácia de interior, Tia Meia-Vida apresenta dois inaladores com braços e pernas: um de tênis de corrida e faixa na testa, pronto para disparar; o outro de chinelo, com um travesseiro debaixo do braço e cara de quem veio para ficar o dia todo.",
+    "cena": "Na sala da casa da Tia Meia-Vida, num domingo, dois inaladores com braços e pernas: um de tênis de corrida e faixa na testa, que já está saindo pela porta; o outro de chinelo, esparramado no sofá com travesseiro e controle remoto, com cara de quem vai ficar. A Tia, de óculos vermelhos, olha o relógio da parede e depois o sofá, de braços cruzados.",
     "foco": "50% 35%",
-    "alt": "A visita que chegou para o almoço e ficou até o jantar"
+    "alt": "A visita de chinelo no sofá e a de tênis saindo pela porta"
   },
   "imagem_macete": {
     "arquivo": "dia-264-macete.png",
-    "cena": "O inalador de chinelo se senta numa cadeira em forma de receptor e não sai mais, impedindo que uma campainha (a acetilcolina) toque e feche as vias aéreas; ele segura um copo d'água vazio, lembrando a boca seca. O de tênis aperta o botão de outro receptor e sai correndo.",
+    "cena": "O inalador de chinelo se senta numa cadeira em forma de receptor e não sai mais, impedindo que uma campainha toque e feche as vias aéreas; ele segura um copo d'água vazio. O de tênis aperta o botão de outro receptor e sai correndo. A Tia observa, com a areia escorrendo devagar.",
     "foco": "50% 40%",
-    "alt": "Tiotrópio bloqueia o M3"
+    "alt": "Tiotrópio senta no M3 e não sai"
   },
   "questao": {
     "vinheta": "A 68-year-old man with COPD has daily dyspnea despite using albuterol as needed. A once-daily inhaled drug is added. Two weeks later, his breathlessness has improved, but he reports dry mouth and a slightly weaker urinary stream.",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "*ALbuterol ALivia* na hora; o *TIOtrópio* é o tio que fica o dia todo",
-      "apoio": "O inalador de tênis é o albuterol, que corre para o beta-2. O de chinelo é o tiotrópio, o tio que chegou para o almoço e ficou até o jantar sentado na cadeira do M3; o copo vazio é a boca seca.",
-      "fala": null
+      "apoio": "O de tênis é o albuterol: corre para o beta-2, alivia na hora e vai embora. O de chinelo é o tiotrópio, a visita que chegou para o almoço e ficou até a novela: senta na cadeira do M3 por 24 horas e não deixa a acetilcolina fechar o brônquio. O copo vazio é a boca seca; o jato fraco é a bexiga sem o empurrão muscarínico.",
+      "fala": "Cinco meias-vidas e ninguém lembra mais. Esse aí fica 24 horas, e eu lembro."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é o mecanismo?"
+    "pergunta": "Inalador de 1 vez ao dia, boca seca e jato fraco: qual mecanismo?"
   },
   "cta": "simulado",
   "reel": null,

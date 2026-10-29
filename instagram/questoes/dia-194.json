@@ -7,22 +7,22 @@
   "sistema": "Sistema endócrino",
   "topico": "Diabetes tipo 2 e risco cardiovascular",
   "conceito": "Type 2 diabetes with ASCVD, heart failure or CKD: add an SGLT2 inhibitor or GLP-1 agonist",
-  "personagem": null,
+  "personagem": "Tia Meia-Vida",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-15",
   "tom": null,
-  "gancho": "Coração fraco e rim cansado: qual remédio *protege os dois*?",
+  "gancho": "Sextou: para esse paciente, a HbA1c é *a última da fila*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-194.png",
-    "cena": "No balcão de uma farmácia de interior com uma ampulheta em cima, quatro caixinhas sem rótulo; na fila, um coração cansado de bengala e um rim em forma de feijão com cachecol esperam a vez, e um pote de cubos de açúcar transborda.",
+    "cena": "Tia Meia-Vida, atrás do balcão, tem quatro caixinhas sem rótulo. Na fila, um coração cansado de bengala e um rim de cachecol esperam a vez, mas um cubo de açúcar gigante tenta furar a fila na frente deles, e a Tia olha por cima dos óculos, sem pressa de atendê-lo.",
     "foco": "50% 35%",
-    "alt": "Coração fraco e rim cansado: qual remédio protege os dois?"
+    "alt": "Tia Meia-Vida atende um coração de bengala e um rim de cachecol enquanto um cubo de açúcar tenta furar a fila"
   },
   "imagem_macete": {
     "arquivo": "dia-194-macete.png",
-    "cena": "Uma das caixinhas vira uma pia com o ralo aberto por onde escorrem os cubos de açúcar; o coração e o rim da fila ganham escudos brilhantes e se endireitam, e uma esponja encharcada fica de lado, longe do coração.",
+    "cena": "Uma das caixinhas vira uma pia com o ralo aberto, por onde escorrem os cubinhos de açúcar; o coração e o rim da fila ganham escudos brilhantes e endireitam a postura. O cubo gigante, ignorado, encolhe, e uma esponja encharcada fica de lado, longe do coração.",
     "alt": "Diabetes com coração e rim doentes: iSGLT2"
   },
   "questao": {
@@ -65,9 +65,9 @@
       "C": "A saxagliptina aumentou hospitalização por insuficiência cardíaca em ensaio clínico e não traz proteção cardiorrenal."
     },
     "macete": {
-      "frase": "Coração fraco, rim cansado ou artéria entupida: o açúcar *sai pelo ralo* (iSGLT2) e coração e rim *ganham escudo*. Glitazona *encharca* o coração; sulfonilureia só baixa o número.",
+      "frase": "Aqui o remédio se escolhe pelo *órgão*, não pela HbA1c. Coração fraco, rim cansado ou artéria entupida: o açúcar *sai pelo ralo* (iSGLT2) e coração e rim *ganham escudo*. Glitazona *encharca* o coração; sulfonilureia só baixa o número.",
       "apoio": "O NBME dá um paciente com IC ou DRC e oferece a sulfonilureia barata ou a pioglitazona; a resposta é o iSGLT2 (ou o agonista de GLP-1 se o foco for ASCVD), mesmo com HbA1c perto da meta.",
-      "fala": null
+      "fala": "Aqui a gente escolhe pelo coração e pelo rim. A HbA1c espera na fila."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Diabetes com IC e DRC. O que acrescentar?"
+    "pergunta": "DM2, IC com FE 35% e albuminúria: o que somar?"
   },
   "cta": "simulado",
   "exemplo": false

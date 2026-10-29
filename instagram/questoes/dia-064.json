@@ -11,17 +11,17 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-05",
-  "gancho": "O bacilo vermelho que *nenhum banho de álcool* consegue lavar",
+  "gancho": "O bacilo que sai da *máquina de lavar* ainda vermelho",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Na porta do boteco dos micróbios, o Macrô observa bacilos em forma de bastão vestindo capas de chuva brilhantes. Ao lado, um balde de tinta vermelha e um borrifador. Uma placa de estrada simples aponta para o pulmão.",
+    "cena": "Numa lavanderia de bairro, Macrô, de comanda no bolso, abre uma máquina de lavar e encontra bacilos em forma de bastão, de capa de chuva brilhante, ainda vermelhinhos depois da lavagem. Na prateleira, um galão sem rótulo e um balde de tinta vermelha. Ao lado, uma pilha de camisetas brancas manchadas de rosa.",
     "foco": "50% 35%",
-    "alt": "O bacilo vermelho que nenhum banho de álcool consegue lavar",
+    "alt": "Macrô abre uma máquina de lavar e encontra bacilos de capa de chuva ainda vermelhos; ao lado, camisetas brancas manchadas de rosa.",
     "arquivo": "dia-064.png"
   },
   "imagem_macete": {
-    "cena": "Callback do boteco: um balde de álcool-ácido é jogado nos bacilos, mas a tinta vermelha continua grudada nas capas de cera. Os bacilos saem enfileirados num cordão sinuoso, como bloco de Carnaval, e o Macrô os segura com o guardanapo xadrez.",
-    "alt": "A capa de cera é o ácido micólico",
+    "cena": "Callback da lavanderia: de perto, a capa de chuva dos bacilos é de cera grossa, com a tinta vermelha presa nela. Os bacilos saem da máquina enfileirados num cordão sinuoso, como bloco de Carnaval, e o Macrô segura a fila com o guardanapo xadrez.",
+    "alt": "Bacilos de capa de cera saem da máquina em cordão, como bloco de Carnaval, e o Macrô segura a fila com o guardanapo.",
     "arquivo": "dia-064-macete.png"
   },
   "questao": {
@@ -64,13 +64,13 @@
       "D": "Cápsula de polissacarídeo protege contra fagocitose (pneumococo, por exemplo), mas não explica a álcool-ácido resistência."
     },
     "macete": {
-      "frase": "Capa de *cera micólica*, desfile em *cordão*",
+      "frase": "Ácido micólico é a *meia vermelha* da máquina",
       "apoio": "Pegadinha de prova: O NBME pergunta o mesmo ácido de dois jeitos: a coloração (acid-fast) e a virulência em cordões (cord factor), que inibe a migração de neutrófilos e ativa macrófagos.",
-      "fala": null
+      "fala": "Lavei com álcool-ácido. Continua vermelho. Igual minha camisa depois do plantão."
     }
   },
   "legenda": {
-    "contexto": "Tosse há dois meses, suor noturno e um bacilo que não larga a tinta vermelha nem lavado com álcool-ácido. O Macrô quer saber de onde vem tanta teimosia.",
+    "contexto": "Dois meses de tosse, suor à noite e um bacilo que não larga a tinta vermelha nem lavado com álcool-ácido. O Macrô foi à lavanderia descobrir o que deixa essa roupa tão impermeável.",
     "palavras_chave": [
       "chronic cough",
       "night sweats",
@@ -89,7 +89,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "O que segura a tinta vermelha?"
+    "pergunta": "Bacilo segue vermelho após álcool-ácido: qual componente?"
   },
   "cta": "simulado",
   "exemplo": false

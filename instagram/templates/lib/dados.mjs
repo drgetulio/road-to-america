@@ -132,6 +132,7 @@ export function montarDia(n, pastaFonte, pastaImagens) {
     topico: json.topico || cal.topico || '',
     conceito: json.conceito || cal.conceito || '',
     personagem: json.personagem !== undefined ? json.personagem : cal.personagem || null,
+    anfitriao: json.anfitriao || null,
     gancho_data: json.gancho_data !== undefined ? json.gancho_data : cal.gancho_data || null,
     remix_de: json.remix_de || cal.remix_de || null,
     tom: tomDoDia(json, cal, data),

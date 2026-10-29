@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Cadeirinha no carro (dia 4), Rastreamento do câncer de próstata (dia 6)",
   "conceito": "Remix: STEMI + Child car seat + Lead-time bias",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": [
     2,
@@ -16,69 +16,67 @@
   ],
   "explicacao_em": "2026-11-09",
   "tom": null,
-  "gancho": "Remix de domingo: quatro cartões e só *um* embarca",
+  "gancho": "Engarrafamento na coronária, e a hemodinâmica fica a *150* minutos de estrada",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-007.png",
-    "cena": "Um toca-discos vermelho e três discos ao lado, cada um com um ícone no rótulo: um coração, uma cadeirinha de carro e um relógio. Um quarto disco misterioso espia de uma capa lisa, e o braço da agulha está no ar, pronto para escolher.",
+    "cena": "Capitã Plaqueta, de apito na boca, está no meio de uma estradinha de interior que vira uma artéria vermelha, ao lado de um engarrafamento de carrinhos amarelos que tampa a pista. No horizonte, bem longe, um hospital só é alcançado por uma estrada comprida e cheia de curvas. Um vinil pequeno está preso no colete dela.",
     "foco": "50% 35%",
-    "alt": "Remix de domingo: quatro cartões e só um embarca"
+    "alt": "Engarrafamento na coronária, e a hemodinâmica fica a 150 minutos de estrada"
   },
   "imagem_macete": {
     "arquivo": "dia-007-macete.png",
-    "cena": "Callback do toca-discos: a agulha pousa no disco da cadeirinha, que gira soltando notas musicais verdes. O disco do coração, o do relógio e o intruso ficam de lado, apagados, cada um com um pequeno símbolo vermelho de pausa.",
-    "alt": "Só a cadeirinha embarcou"
+    "cena": "Callback da estradinha: um borrifador em forma de bolsa de soro desfaz o engarrafamento em bolhas, e os carrinhos amarelos se soltam. A Capitã levanta os braços, surpresa: o trânsito liberou sem esperar a viagem longa. No acostamento, um ursinho numa cadeirinha virada para trás e um relógio de ponteiro adiantado assistem.",
+    "alt": "Passou de 120, o fibrinolítico entra em campo"
   },
   "questao": {
-    "vinheta": "A resident preparing a Sunday review session writes four statements from last week's cases on the whiteboard: chest pain, child car safety and a screening study.",
-    "pergunta": "Which statement is correct?",
+    "vinheta": "A 61-year-old man has had 50 minutes of crushing chest pain. At a rural hospital without a catheterization laboratory, ECG shows 3-mm ST elevations in leads II, III, and aVF. BP is 134/82 mm Hg. Transfer to the nearest PCI center would take 150 minutes. He has no contraindication to thrombolysis.",
+    "pergunta": "Which is the most appropriate next step?",
     "alternativas": {
       "A": {
-        "texto": "STEMI at a hospital with a cath lab: give fibrinolysis first",
-        "quiz": "STEMI: fibrinólise",
+        "texto": "Transfer for primary PCI",
+        "quiz": "Transferir para PCI",
         "dia": 2
       },
       "B": {
-        "texto": "A 2-year-old below the seat's rear-facing limits stays rear-facing",
-        "quiz": "Ainda de costas",
-        "dia": 4
+        "texto": "Fibrinolytic therapy now",
+        "quiz": "Fibrinolítico já"
       },
       "C": {
-        "texto": "Lead-time bias: earlier detection makes patients live longer",
-        "quiz": "Lead-time: vive mais",
-        "dia": 6
+        "texto": "Serial troponins first",
+        "quiz": "Troponina seriada"
       },
       "D": {
-        "texto": "Right ventricular infarction: give nitroglycerin for the pain",
-        "quiz": "IAM de VD: nitrato"
+        "texto": "Coronary CT angiography",
+        "quiz": "Angio-TC coronária"
       }
     },
     "correta": "B"
   },
   "explicacao": {
-    "titulo": "Só a cadeirinha embarcou",
+    "titulo": "Passou de 120, o fibrinolítico entra em campo",
     "certa": [
-      "Na cadeirinha, quem manda é o limite de peso e de altura do fabricante: abaixo dele, a criança de 2 anos continua de costas (rear-facing), como no dia 4. É a única frase certa do quadro, e se você errou, volte ao dia 4 e refaça a questão antes do próximo remix."
+      "Supra de ST na parede inferior há 50 minutos é STEMI (dia 2), mas a meta de 90 minutos vale para quem já está num hospital com hemodinâmica. Aqui a transferência levaria 150 minutos, acima do limite de 120 entre o primeiro contato e o balão, então a reperfusão é a *fibrinolytic therapy*, de preferência em até 30 minutos da chegada (*door-to-needle*), seguida de transferência para cateterismo nas horas seguintes (*pharmacoinvasive strategy*)."
     ],
     "termos": [
-      "primary PCI",
-      "rear-facing car seat",
-      "lead-time bias",
-      "right ventricular infarction"
+      "fibrinolytic therapy",
+      "door-to-needle 30 minutes",
+      "first medical contact-to-device 120 minutes",
+      "pharmacoinvasive strategy"
     ],
     "erradas": {
-      "A": "Dia 2: com hemodinâmica disponível, a escolha é a PCI primária em até 90 minutos; fibrinólise só quando a PCI não sai em 120.",
-      "C": "Dia 6: no lead-time bias ninguém vive mais, o diagnóstico só chega antes e a morte acontece na mesma idade.",
-      "D": "Intruso: no infarto do ventrículo direito o coração depende da pré-carga, o nitrato pode derrubar a pressão e a conduta é dar volume."
+      "A": "Dia 2: a PCI primária com transferência só vale se o balão abrir a artéria em até 120 minutos; 150 minutos passou do tempo.",
+      "C": "Esperar troponina atrasa a reperfusão: no STEMI, o ECG basta para decidir (dia 2).",
+      "D": "A angio-TC de coronárias é para dor torácica estável ou de risco baixo, nunca para supra de ST."
     },
     "macete": {
-      "frase": "Domingo de revisão: 90 minutos no balão, de costas até a etiqueta mandar, e relógio adiantado não é vida mais longa.",
-      "apoio": "Pegadinha de prova: O NBME mistura temas parecidos no mesmo bloco; saber a regra exata (PCI em 90, limite do fabricante, mortalidade em vez de sobrevida) separa a certa das quase certas.",
+      "frase": "Passou de *120 minutos* até o balão? O fibrinolítico desfaz o engarrafamento da Capitã antes da viagem.",
+      "apoio": "Pegadinha de prova: O NBME repete o STEMI num hospital sem hemodinâmica para ver se você confere o tempo até o balão antes de escolher a PCI.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Remix de Domingo: três assuntos da semana (dias 2, 4 e 6) e um intruso. Cada alternativa mostra o dia em que o assunto apareceu.",
+    "contexto": "Domingo de revisão: o STEMI do dia 2 voltou, agora num hospital do interior, longe da hemodinâmica. A regra dos 90 minutos ainda vale? O macete de hoje também puxa a cadeirinha (dia 4) e o relógio do Viés (dia 6).",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -94,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Remix: só uma frase está certa. Qual?"
+    "pergunta": "STEMI a 150 minutos da hemodinâmica: qual reperfusão agora?"
   },
   "exemplo": false
 }

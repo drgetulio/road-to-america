@@ -13,12 +13,12 @@
   "explicacao_em": "2027-03-02",
   "tom": null,
   "gancho": "Hotel fígado: tem *hóspede escondido* no quarto dos fundos",
-  "gancho_apoio": "Febre a cada 48 horas depois da Amazônia, cloroquina feita. O que falta?",
+  "gancho_apoio": "Febre a cada 48 horas depois da Amazônia, cloroquina feita.",
   "imagem": {
     "arquivo": "dia-120.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, olha para o outro lado da rua, onde há um pequeno hotel em forma de fígado. Um mosquito simpático faz check-in na recepção, e no andar de cima uma janela está apagada, com um aviso de porta pendurado na maçaneta, sem nada escrito.",
+    "cena": "Macrô, de comanda no bolso, é o recepcionista de um pequeno hotel em forma de fígado. Um mosquito simpático faz check-in no balcão, e no andar de cima uma janela está apagada, com um aviso de porta em branco pendurado na maçaneta, igual hóspede de aluguel por temporada que nunca sai.",
     "foco": "50% 35%",
-    "alt": "Macrô olha um hotel em forma de fígado; um mosquito faz check-in e uma janela do andar de cima está apagada."
+    "alt": "Macrô é recepcionista de um hotel em forma de fígado; um mosquito faz check-in e uma janela do andar de cima está apagada, com aviso na maçaneta."
   },
   "imagem_macete": {
     "arquivo": "dia-120-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Primaquine",
-        "quiz": "Primaquina"
+        "quiz": "Primaquine"
       },
       "B": {
         "texto": "Atovaquone-proguanil",
-        "quiz": "Atovaquona-proguanil"
+        "quiz": "Atovaquone-proguanil"
       },
       "C": {
         "texto": "Artemether-lumefantrine",
-        "quiz": "Artemeter-lumefant."
+        "quiz": "Artemether-lumefantrine"
       },
       "D": {
         "texto": "Mefloquine",
-        "quiz": "Mefloquina"
+        "quiz": "Mefloquine"
       }
     },
     "correta": "A"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Cloroquina arruma o *salão*; primaquina faz o *check-out* do quarto",
       "apoio": "Na imagem, o Macrô vê o hotel fígado com uma janela apagada e um aviso de não perturbe na porta.",
-      "fala": null
+      "fala": "Tem hóspede de não perturbe no quarto dos fundos. Antes do check-out, confere a G6PD."
     }
   },
   "legenda": {

@@ -12,19 +12,19 @@
   "remix_de": null,
   "explicacao_em": "2027-07-20",
   "tom": null,
-  "gancho": "Macrô engoliu o bicho, e o bicho *saiu andando*",
+  "gancho": "Macrô engoliu o bicho e o bicho *saiu dançando quadrilha*",
   "gancho_apoio": "Abscessos de repetição por estafilococo e Aspergillus. O que falha dentro do fagócito?",
   "imagem": {
     "arquivo": "dia-260.png",
-    "cena": "Macrô, de guardanapo xadrez, está de barriga cheia, e dentro dela micróbios sorridentes carregam pequenos extintores vermelhos e passeiam como se estivessem num shopping. Ao fundo, a porta da cozinha do boteco está fechada.",
+    "cena": "Num arraiá de festa julina com bandeirinhas, Macrô, de chapéu de palha sobre o guardanapo xadrez, está de barriga cheia, e dentro dela micróbios sorridentes, cada um com um extintor vermelho pequenininho, dançam quadrilha de braços dados. A comanda em branco aparece no bolso. Macrô olha a própria barriga, desconfiado.",
     "foco": "50% 35%",
-    "alt": "Macrô engoliu o bicho, e o bicho saiu andando"
+    "alt": "Macrô de barriga cheia e os bichos dançando quadrilha lá dentro"
   },
   "imagem_macete": {
     "arquivo": "dia-260-macete.png",
-    "cena": "O fogão da cozinha tem a válvula de gás quebrada e nenhuma chama acende; os micróbios com extintor apagam as poucas faíscas que sobram. Ao lado do fogão, uma lâmpada de teste continua apagada. Num quadrinho no canto, um micróbio sem extintor se apaga com as próprias faíscas.",
+    "cena": "No canto do arraiá, a fogueira de São João não acende: o registro do gás, montado com quatro pecinhas, está quebrado, e os micróbios de extintor apagam as faíscas que sobram. Uma lâmpada de teste no poste continua apagada. Num quadrinho, um micróbio sem extintor se apaga com a própria faísca.",
     "foco": "50% 40%",
-    "alt": "Sem NADPH oxidase, sem explosão"
+    "alt": "Sem NADPH oxidase, a fogueira do burst não acende"
   },
   "questao": {
     "vinheta": "A 3-year-old boy has had recurrent Staphylococcus aureus skin abscesses, a liver abscess, and Aspergillus pneumonia. His neutrophil count is normal. After stimulation, his neutrophils show no fluorescence on dihydrorhodamine flow cytometry. There is no history of delayed umbilical cord separation or partial albinism.",
@@ -66,9 +66,9 @@
       "C": "Na falta de *myeloperoxidase* o superóxido continua sendo gerado e a maioria das pessoas não tem sintomas; quando há, costuma ser Candida, não abscessos graves por estafilococo e Aspergillus."
     },
     "macete": {
-      "frase": "Na DGC, o *fogão não acende* e o bicho do *extintor* faz a festa",
-      "apoio": "A barriga cheia do Macrô mostra que engolir não é o problema: o fogão (NADPH oxidase) é que não acende. Os micróbios com extintor são os catalase-positivos, e a lâmpada apagada é o DHR negativo.",
-      "fala": null
+      "frase": "Na DGC, a *fogueira não acende* e o bicho do *extintor* faz a festa",
+      "apoio": "Engolir não é o problema: a barriga cheia do Macrô prova. Sem NADPH oxidase, a fogueira do burst respiratório não acende. Quem traz extintor (catalase) apaga a pouca água oxigenada que sobra e dança: S. aureus, Aspergillus, Serratia, Nocardia e Burkholderia. DHR negativo é a lâmpada apagada.",
+      "fala": "Comi, mostrei, avisei. Só não consegui acender a fogueira."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que falha no fagócito?"
+    "pergunta": "Abscesso por S. aureus e Aspergillus: o que falha no neutrófilo?"
   },
   "cta": "simulado",
   "reel": null,

@@ -13,12 +13,12 @@
   "explicacao_em": "2027-02-09",
   "tom": null,
   "gancho": "Segunda de Carnaval: o vírus do beijo entra por *qual porta*?",
-  "gancho_apoio": "Febre, dor de garganta, cansaço e um baço que dá para sentir. Qual célula o vírus escolhe?",
+  "gancho_apoio": "Febre, dor de garganta, cansaço e um baço que dá para sentir.",
   "imagem": {
     "arquivo": "dia-099.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, assiste a um bloco de Carnaval passar. Um vírus redondo e espetado, com máscara de Carnaval, segura uma chave e passeia diante de quatro casinhas com portas de cores diferentes, azul, vermelha, verde e amarela.",
+    "cena": "Numa ladeira de paralelepípedo, Macrô, de comanda no bolso, assiste a um bloco de Carnaval passar. Um vírus redondo e espetado, de máscara de Carnaval, segura uma chave e passeia diante de quatro casinhas com portas azul, vermelha, verde e amarela.",
     "foco": "50% 35%",
-    "alt": "Macrô assiste ao bloco; um vírus de máscara de Carnaval passeia com uma chave diante de quatro portas coloridas."
+    "alt": "Macrô assiste a um bloco numa ladeira; um vírus de máscara de Carnaval passeia com uma chave diante de quatro portas coloridas."
   },
   "imagem_macete": {
     "arquivo": "dia-099-macete.png",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "B lymphocytes",
-        "quiz": "Linfócitos B"
+        "quiz": "B cells"
       },
       "B": {
         "texto": "CD8+ T lymphocytes",
-        "quiz": "Linfócitos T CD8"
+        "quiz": "CD8+ T cells"
       },
       "C": {
         "texto": "CD4+ T lymphocytes",
-        "quiz": "Linfócitos T CD4"
+        "quiz": "CD4+ T cells"
       },
       "D": {
         "texto": "Monocytes",
-        "quiz": "Monócitos"
+        "quiz": "Monocytes"
       }
     },
     "correta": "A"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "O folião EBV entra pela *porta 21* da casa B",
       "apoio": "Na imagem, o vírus de máscara de Carnaval passeia com a chave diante de casas com portas de cores diferentes.",
-      "fala": null
+      "fala": "No bloco, quem beija é o vírus. Quem aparece fantasiado no esfregaço é o segurança CD8."
     }
   },
   "legenda": {

@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-08",
-  "gancho": "Dez minutos depois do camarão, o carrinho de pipoca explodiu",
+  "gancho": "Dez minutos depois do camarão, o carrinho de *pipoca* explodiu",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Macrô na porta do boteco dos micróbios olha um carrinho de pipoca soltando fumaça logo depois que um prato de camarão passou; a cena não mostra as antenas nem o mecanismo.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, toca um carrinho de pipoca na porta de um quiosque de praia; um prato de camarão acabou de passar, e o carrinho começa a soltar fumaça. A cena não mostra o que tem dentro do carrinho.",
     "foco": "50% 35%",
-    "alt": "Macrô na porta do boteco dos micróbios olha um carrinho de pipoca soltando fumaça logo depois que um prato de camarão passou; a cena não mostra as antenas nem o mecanismo.",
+    "alt": "Dez minutos depois do camarão, o carrinho de pipoca explodiu",
     "arquivo": "dia-036.png"
   },
   "imagem_macete": {
-    "cena": "Callback do carrinho: agora em close, o carrinho está coberto de antenas em Y; o camarão está preso entre duas delas ao mesmo tempo e a pipoca explode para todos os lados. Um aroma dourado fica pairando no ar, com o Macrô farejando.",
+    "cena": "Callback do carrinho: em close, ele está coberto de antenas em Y; o camarão está preso entre duas delas ao mesmo tempo, e a pipoca explode para todos os lados. Um aroma dourado fica pairando no ar, com o Macrô farejando.",
     "alt": "Duas antenas IgE presas, pipoca estourada",
     "arquivo": "dia-036-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Linfócito T sensibilizado é tipo IV, tardio, de 48 a 72 horas."
     },
     "macete": {
-      "frase": "Tipo I é *pipoca*: duas antenas presas, estouro em minutos",
+      "frase": "Tipo I é *pipoca*: o alérgeno junta duas IgE vizinhas no mastócito e estoura tudo em minutos. A triptase é o cheirinho que fica no ar.",
       "apoio": "Pegadinha de prova: O NBME pede o exame que confirma degranulação de mastócito: é a triptase sérica, porque a histamina dura minutos no sangue.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Urticária, chiado e pressão baixa logo depois do almoço, e um exame de sangue que confirma quem estourou. O Macrô quer saber qual mecanismo abriu a porta do boteco.",
+    "contexto": "Urticária, chiado e pressão baixa logo depois do almoço, e um exame de sangue que confirma quem estourou. O Macrô quer saber qual mecanismo abriu a porta da reação.",
     "palavras_chave": [
       "shrimp allergy",
       "urticaria",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual mecanismo explica a reação?"
+    "pergunta": "Camarão, urticária e triptase alta em minutos: qual mecanismo?"
   },
   "cta": "simulado",
   "exemplo": false

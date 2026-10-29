@@ -11,12 +11,12 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-09",
-  "gancho": "Glicose nas alturas, mas quem manda na fila é outro",
+  "gancho": "Glicose 520, e o Mito avisa que hoje quem manda na *fila* é outro",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Mito no plantão, de jaleco amassado, diante de um painel com três mostradores (uma gota de água, um cubo de açúcar e um raio) e uma chave dourada na mão, em dúvida sobre qual botão apertar primeiro.",
+    "cena": "Mito no plantão, de jaleco amassado, diante de um painel com três mostradores (uma gota de água, um cubo de açúcar e um raio) e uma chave dourada na mão, em dúvida sobre qual botão apertar primeiro. Na parede, um relógio sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Mito no plantão, de jaleco amassado, diante de um painel com três mostradores (uma gota de água, um cubo de açúcar e um raio) e uma chave dourada na mão, em dúvida sobre qual botão apertar primeiro.",
+    "alt": "Glicose 520, e o Mito avisa que hoje quem manda na fila é outro",
     "arquivo": "dia-037.png"
   },
   "imagem_macete": {
@@ -64,13 +64,13 @@
       "D": "Insulina basal subcutânea não é o tratamento inicial da cetoacidose e também não resolve o potássio baixo."
     },
     "macete": {
-      "frase": "Água, *banana*, só depois *a chave*",
+      "frase": "Água, *banana*, só depois a chave: insulina com K abaixo de 3,3 empurra o potássio para dentro e deixa o coração sem nenhum.",
       "apoio": "Pegadinha de prova: O NBME dá o potássio baixo ou no limite numa linha discreta do laboratório; quem olha só a glicose marca insulina e erra.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Cetoacidose clássica, soro já correndo e uma tentação enorme de ligar a insulina. Um número do laboratório pede calma antes do próximo passo.",
+    "contexto": "Cetoacidose clássica, soro já correndo e uma tentação enorme de ligar a insulina. Um número do laboratório pede calma antes do próximo passo, mesmo às 3 da manhã.",
     "palavras_chave": [
       "type 1 diabetes",
       "metabolic acidosis",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo na DKA?"
+    "pergunta": "DKA com potássio de 3,0 e soro correndo: o que fazer agora?"
   },
   "cta": "simulado",
   "exemplo": false

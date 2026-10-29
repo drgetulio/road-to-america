@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-07",
   "tom": null,
-  "gancho": "Dois remédios para a próstata: um *corre*, o outro caminha",
+  "gancho": "Um remédio da próstata chega de *motoboy*; o outro, de carro de boi",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-005.png",
-    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura dois frascos sem rótulo: um com uma lebrinha correndo na tampa e outro com uma tartaruguinha. Atrás dela, uma porta estreita de garagem está meio emperrada.",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura dois frascos sem rótulo. Na porta estaciona um motoboy de capacete e baú de entrega; lá longe, na estradinha de terra, vem um carro de boi bem devagar. Atrás dela, uma porta estreita de garagem está meio emperrada.",
     "foco": "50% 35%",
-    "alt": "Dois remédios para a próstata: um corre, o outro caminha"
+    "alt": "Um remédio da próstata chega de motoboy; o outro, de carro de boi"
   },
   "imagem_macete": {
     "arquivo": "dia-005-macete.png",
-    "cena": "Callback da farmácia: a lebre ganha vida e abre o portão da garagem na hora, soltando as molas apertadas (músculo liso relaxado), mas fica com uma nuvenzinha de tontura na cabeça. Lá no fundo, a tartaruga lixa devagar uma parede grossa para deixá-la mais fina, enquanto a areia da ampulheta mostra os meses passando.",
+    "cena": "Callback da farmácia: o motoboy abre o portão da garagem na hora, soltando as molas apertadas (músculo liso relaxado), mas sai cambaleando com uma nuvenzinha de tontura no capacete. No fundo, o carro de boi chega meses depois e lixa a parede grossa até deixá-la fina, enquanto a areia da Tia escorre.",
     "alt": "Um abre a porta, o outro afina a parede"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "Antimuscarínicos tratam urgência e incontinência, não melhoram o jato fraco e podem até piorar a retenção urinária."
     },
     "macete": {
-      "frase": "TAMsulosina é \"TÁ, abri\": relaxa o músculo na hora, mas pode baixar a pressão. FINAsterida AFINA a próstata devagar, no ritmo da ampulheta da Tia Meia-Vida.",
+      "frase": "TAMsulosina é motoboy: *TÁ aberto* em dias, mas dá tontura na curva. FINAsterida é carro de boi: *AFINA* a próstata em meses.",
       "apoio": "Pegadinha de prova: O NBME cobra o efeito adverso: tontura postural com o alfa-bloqueador, PSA caindo à metade com a finasterida e síndrome da íris flácida na cirurgia de catarata com a tansulosina.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Sextou na Farmácia, ainda no Novembro Azul. Dois remédios clássicos para a próstata aumentada, com velocidades bem diferentes.",
+    "contexto": "Sextou na Farmácia, ainda no Novembro Azul. A Tia Meia-Vida tem dois remédios para a próstata aumentada no balcão: um entrega em dias, o outro em meses. Qual deles o paciente levou?",
     "palavras_chave": [
       "lower urinary tract symptoms",
       "prostate volume",
@@ -89,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O jato melhorou em 1 semana. Qual mecanismo?"
+    "pergunta": "Jato melhorou em 1 semana e a próstata não mudou: qual mecanismo?"
   },
   "exemplo": false
 }

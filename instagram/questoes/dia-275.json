@@ -8,21 +8,22 @@
   "topico": "Encefalopatia hepática",
   "conceito": "Hepatic encephalopathy: lactulose first, add rifaximin",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-08-04",
   "tom": null,
-  "gancho": "Engarrafamento de *amônia* na estrada para o cérebro",
-  "gancho_apoio": "Cirrose, confusão e flapping. Sem sangramento e sem infecção.",
+  "gancho": "A amônia pegou a marginal em horário de pico *rumo ao cérebro*",
+  "gancho_apoio": "Cirrose, confusão e flapping, sem sangramento e sem infecção. Qual remédio libera a pista?",
   "imagem": {
     "arquivo": "dia-275.png",
-    "cena": "Placa verde de rodovia NEXT STEP com quatro saídas; nuvens de fumaça amarelada em forma de carrinhos seguem por uma estrada em direção a uma cidade com silhueta de cérebro, num engarrafamento.",
+    "cena": "Três da manhã numa avenida marginal de cidade grande: um engarrafamento de nuvenzinhas amarelas em forma de carrinho segue para uma cidade com silhueta de cérebro, que vai apagando as luzes. De cima de um viaduto, Dona Térmica, a garrafa térmica de café, assiste e serve café para um fígado cansado e cheio de nós sentado ao lado dela. Num poste, um relógio redondo sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Engarrafamento de amônia na estrada para o cérebro"
+    "alt": "Engarrafamento de amônia rumo à cidade-cérebro"
   },
   "imagem_macete": {
     "arquivo": "dia-275-macete.png",
-    "cena": "Callback: na mesma estrada, um pedágio em forma de limão transforma cada carrinho de fumaça num caminhão quadrado grande demais para o túnel do cérebro; os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo.",
+    "cena": "Na mesma estrada, um pedágio em forma de limão transforma cada carrinho de fumaça num caminhão quadrado grande demais para o túnel do cérebro; os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo. No viaduto, Dona Térmica e o fígado brindam com café.",
     "foco": "50% 45%",
     "alt": "Lactulose: ácido no cólon, amônia presa"
   },
@@ -67,12 +68,12 @@
     },
     "macete": {
       "frase": "Lactulose *azeda, prende e despacha* a amônia",
-      "apoio": "Na imagem, a amônia é um carrinho de fumaça indo para a cidade-cérebro. O pedágio de limão (ácido) transforma cada carro num caminhão grande demais para o túnel, e a pista expressa leva tudo para fora.",
-      "fala": null
+      "apoio": "A amônia é o carrinho de fumaça indo para a cidade-cérebro. A lactulose é o pedágio de limão: acidifica o cólon, transforma NH3 em NH4+ (o caminhão grande demais para o túnel) e a pista expressa, o efeito laxativo, leva tudo para fora. A rifaximina entra junto na recorrência, não sozinha no primeiro episódio.",
+      "fala": "Já vi esse caso às 3 da manhã. O GPS da amônia sempre manda para o cérebro."
     }
   },
   "legenda": {
-    "contexto": "Cirrose, dois dias de confusão, flapping nas mãos e nenhum sinal de sangramento ou de infecção. A placa do Plantão de Terça mostra quatro saídas. Qual remédio libera a pista?",
+    "contexto": "Cirrose, dois dias de confusão, flapping nas mãos e nenhum sinal de sangramento ou de infecção. Qual remédio libera a pista?",
     "palavras_chave": [
       "cirrhosis",
       "confusion",
@@ -88,7 +89,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Cirrose com flapping: qual o primeiro remédio?"
+    "pergunta": "Cirrose, confusão e flapping, sem gatilho: qual é o primeiro remédio?"
   },
   "cta": null,
   "reel": null,

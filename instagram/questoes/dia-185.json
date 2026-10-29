@@ -7,23 +7,23 @@
   "sistema": "Sistema gastrointestinal",
   "topico": "Colite pseudomembranosa",
   "conceito": "Pseudomembranous colitis: C. difficile toxins A and B damage colonocytes, spores resist alcohol",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": "Dia Mundial da Higiene das Mãos (5/5): álcool não mata esporo, use água e sabão.",
   "remix_de": null,
   "explicacao_em": "2027-05-06",
   "tom": null,
-  "gancho": "Dia Mundial da Higiene das Mãos: quem entrou na *festa* sem convite?",
+  "gancho": "Dia da Higiene das Mãos: o álcool em gel bateu ponto, e *o penetra nem ligou*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-185.png",
-    "cena": "Em corte, estilo manual de montagem, um túnel de lava-jato em forma de cólon com placas amareladas grudadas nas paredes; na entrada, um frasco de antibiótico vazio e uma corda de veludo de festa solta, como se alguém tivesse entrado sem convite.",
+    "cena": "Em corte de manual de montagem, com setinhas apontando, um salão de festa em forma de cólon logo depois que o segurança (um frasco de antibiótico) expulsou quase todos os convidados de sempre. Macrô, com a comanda em branco no bolso, vê um convidado encouraçado entrar tranquilo, de capa de chuva, enquanto um dispenser de álcool em gel borrifa à toa.",
     "foco": "50% 35%",
-    "alt": "Dia Mundial da Higiene das Mãos: quem entrou na festa sem convite?"
+    "alt": "Macrô vê um convidado de capa de chuva entrar na festa enquanto o álcool em gel borrifa à toa"
   },
   "imagem_macete": {
     "arquivo": "dia-185-macete.png",
-    "cena": "Duas tesourinhas travessas, uma marcada com um triângulo e outra com um quadrado (as toxinas A e B), cortam as vigas da parede do túnel; ao lado, sementinhas encouraçadas (os esporos) riem embaixo do jato de um dispenser de álcool em gel, e só a pia com sabão e água corrente consegue levá-las pelo ralo.",
-    "alt": "Depois do antibiótico: toxinas A e B"
+    "cena": "O convidado encouraçado tira da capa duas tesourinhas, uma com um triângulo e outra com um quadrado (as toxinas A e B), e corta as vigas da parede do salão. Macrô aponta para a pia ao lado: só água corrente e sabão levam as sementinhas encouraçadas pelo ralo, e o álcool em gel continua borrifando à toa.",
+    "alt": "Depois do antibiótico: toxinas A e B, e só sabão leva o esporo"
   },
   "questao": {
     "vinheta": "A 68-year-old woman develops fever, abdominal cramps, and 8 watery stools daily on day 6 of clindamycin for cellulitis. Leukocyte count is 19,000/mm3. Colonoscopy shows raised yellow-white plaques on an inflamed colonic mucosa.",
@@ -65,13 +65,13 @@
       "D": "A enterotoxina pré-formada do S. aureus causa vômitos poucas horas após a refeição, sem febre alta nem colite."
     },
     "macete": {
-      "frase": "C. diff é o *penetra* que chega quando o antibiótico esvazia a festa: duas toxinas, *A e B*, derrubam a parede do colonócito, e o esporo veste *capa de chuva* contra o álcool. Contra esporo, só *água e sabão* esfregando.",
+      "frase": "C. diff é o *penetra da festa vazia*: o antibiótico expulsa os convidados de sempre e ele entra com duas tesouras, as *toxinas A e B*. O esporo vem de *capa de chuva*: álcool em gel não tira, só *água e sabão*.",
       "apoio": "O NBME cita clindamicina, fluoroquinolona ou cefalosporina, pede teste de toxina nas fezes e lembra a precaução de contato com água e sabão; o tratamento inicial é fidaxomicina ou vancomicina oral.",
-      "fala": null
+      "fala": "Álcool em gel em esporo é marca-texto no First Aid inteiro: dá sensação de dever cumprido e não resolve nada."
     }
   },
   "legenda": {
-    "contexto": "Hoje é o Dia Mundial da Higiene das Mãos. A paciente da vinheta estava tratando uma infecção de pele e, no meio do caminho, o intestino reclamou. Qual toxina explica o que a colonoscopia mostrou?",
+    "contexto": "Hoje é o Dia Mundial da Higiene das Mãos. No sexto dia de clindamicina, ela tem febre, cólica, oito evacuações aquosas por dia e leucocitose. A colonoscopia mostra placas amareladas. Quem entrou e com que arma?",
     "palavras_chave": [
       "clindamycin",
       "watery diarrhea",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Clindamicina e placas no cólon. Qual a causa?"
+    "pergunta": "6º dia de clindamicina e placas no cólon: qual a causa?"
   },
   "cta": "simulado",
   "exemplo": false

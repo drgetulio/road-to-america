@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2027-05-26",
   "tom": null,
-  "gancho": "Fibrilação atrial: quanto pesa a *balança* da Capitã hoje?",
+  "gancho": "Samba atravessado no átrio: *a Capitã soma os pontos* antes de apitar",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-205.png",
-    "cena": "Capitã Plaqueta no cruzamento observa uma praça de baile (o átrio) onde dezenas de passistas dançam cada um num ritmo; num beco sem saída ao lado, carrinhos estacionados começam a se grudar, e uma balança de feira vazia espera ao lado dela, junto à placa verde de três saídas.",
+    "cena": "Às 3 da manhã, com o relógio sem números num poste, Capitã Plaqueta observa uma praça de baile onde dezenas de passistas dançam cada um num ritmo. Num beco sem saída ao lado, carrinhos estacionados começam a se grudar, e uma balança de feira vazia espera ao lado dela.",
     "foco": "50% 35%",
-    "alt": "Fibrilação atrial: quanto pesa a balança da Capitã hoje?"
+    "alt": "Capitã Plaqueta observa uma praça de baile onde cada passista dança num ritmo"
   },
   "imagem_macete": {
     "arquivo": "dia-205-macete.png",
-    "cena": "A Capitã põe três blocos coloridos na balança (um bolo de aniversário, um medidor de pressão e o símbolo do sexo feminino) e o prato desce para o lado de um frasco de comprimidos; ela apita, e o engarrafamento do beco se desfaz.",
+    "cena": "A Capitã põe três blocos coloridos na balança (um bolo de aniversário, um medidor de pressão e o símbolo do sexo feminino) e o prato desce para o lado de um frasco de comprimidos; ela apita, e o engarrafamento do beco se desfaz. Um guarda-chuva de papel fica jogado de lado.",
     "alt": "CHA2DS2-VASc 3 na mulher: anticoagular"
   },
   "questao": {
@@ -67,11 +67,11 @@
     "macete": {
       "frase": "*CHA2DS2-VASc* na balança da Capitã: *C*ongestive HF, *H*ipertensão, *A2* (75 ou mais, 2 pontos), *D*iabetes, *S2* (AVC, 2 pontos), *V*ascular, *A* (65 a 74), *Sc* (sexo feminino). *Homem a partir de 2, mulher a partir de 3*: anticoagula, de preferência com DOAC.",
       "apoio": "O NBME oferece aspirina como meio-termo e a varfarina sem motivo; aspirina não basta, e varfarina fica para valva mecânica ou estenose mitral moderada a grave.",
-      "fala": null
+      "fala": "Parou, colou, coagulou: com 3 pontos na mulher, eu não deixo colar."
     }
   },
   "legenda": {
-    "contexto": "Plantão de Terça na cardiologia com a Capitã Plaqueta. Uma senhora com fibrilação atrial, pressão controlada e nenhuma outra doença. Faça a conta do escore antes de escolher.",
+    "contexto": "Plantão de Terça na cardiologia com a Capitã Plaqueta. Uma senhora de 68 anos com palpitações, ritmo irregularmente irregular sem onda P, hipertensão controlada e nenhuma outra doença. Faça a conta do escore antes de escolher.",
     "palavras_chave": [
       "palpitations",
       "irregularly irregular rhythm",
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "FA com CHA2DS2-VASc 3 na mulher. O que dar?"
+    "pergunta": "68 anos, HAS e ritmo sem onda P: qual antitrombótico?"
   },
   "cta": "simulado",
   "exemplo": false

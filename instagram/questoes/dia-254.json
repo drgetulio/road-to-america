@@ -7,24 +7,24 @@
   "sistema": "Sistema cardiovascular",
   "topico": "Emergência hipertensiva",
   "conceito": "Hypertensive emergency: lower mean arterial pressure by no more than 25 percent in the first hour",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-14",
   "tom": null,
-  "gancho": "Pressão a 230: *freia*, mas sem jogar ninguém no para-brisa",
-  "gancho_apoio": "Papiledema e creatinina subindo. A nicardipina já está correndo. Até onde baixar na primeira hora?",
+  "gancho": "Pressão a 228 na descida da serra e o Seu Néfron *no banco de trás*",
+  "gancho_apoio": "Papiledema e creatinina dobrando. A nicardipina já está correndo. Até onde baixar na primeira hora?",
   "imagem": {
     "arquivo": "dia-254.png",
-    "cena": "Um carrinho de desenho desce uma serra em alta velocidade; dentro, um cérebro, um rim e um olho, todos personagens, se seguram nos bancos com cara de susto. O motorista, um medidor de pressão redondo com braços, olha para o pedal do freio.",
+    "cena": "Um carrinho desce a serra em alta velocidade. Ao volante, um medidor de pressão redondo com braços olha para o pedal do freio; no banco de trás, Seu Néfron, de gravata e óculos na ponta do nariz, abraça a pilha de formulários, e ao lado dele um cérebro e um olho se seguram com cara de susto. Pendurado no retrovisor, um reloginho sem números marca 3 da manhã.",
     "foco": "50% 35%",
-    "alt": "Pressão a 230: freia, mas sem jogar ninguém no para-brisa"
+    "alt": "Carrinho desce a serra com Seu Néfron no banco de trás"
   },
   "imagem_macete": {
     "arquivo": "dia-254-macete.png",
-    "cena": "O mesmo carrinho freia com suavidade: no mostrador redondo do painel, só um quarto do círculo aparece sombreado, como uma fatia de pizza tirada, e os passageiros, de cinto, seguem tranquilos. Atrás, outro carrinho que freou com tudo tem os passageiros espremidos no vidro, sem se machucar.",
+    "cena": "O mesmo carrinho freia com suavidade: no mostrador redondo do painel, só um quarto do círculo aparece sombreado, como uma fatia de pizza tirada, e os passageiros seguem tranquilos, de cinto; Seu Néfron carimba aprovado. Atrás, outro carrinho que freou com tudo tem os passageiros espremidos no vidro, sem se machucar.",
     "foco": "50% 40%",
-    "alt": "Emergência: 25% na primeira hora"
+    "alt": "Emergência hipertensiva: só 25% na primeira hora"
   },
   "questao": {
     "vinheta": "A 56-year-old man has had headache and blurred vision for 1 day. Blood pressure is 228/134 mm Hg in both arms. Funduscopy shows papilledema and flame hemorrhages. Creatinine is 2.4 mg/dL (baseline 1.0). Head CT and chest imaging are normal, and an intravenous nicardipine infusion is started.",
@@ -36,7 +36,7 @@
       },
       "B": {
         "texto": "Lower by no more than 25%",
-        "quiz": "Até 25% na 1a hora"
+        "quiz": "Até 25% na 1ª hora"
       },
       "C": {
         "texto": "Lower systolic to below 120 mm Hg within 20 minutes",
@@ -67,8 +67,8 @@
     },
     "macete": {
       "frase": "Na primeira hora, tira *só uma fatia* da pizza: *25%*",
-      "apoio": "O carrinho que freia de leve tira só um quarto da pizza do velocímetro. Quem freia de uma vez joga cérebro, rim e olho no para-brisa: é a isquemia da queda rápida.",
-      "fala": null
+      "apoio": "O carrinho que freia de leve tira só um quarto da pizza do velocímetro na primeira hora e depois vai para 160/100 em 2 a 6 horas. Quem freia de uma vez joga cérebro, rim e olho no para-brisa: a autorregulação acostumada à pressão alta vira isquemia.",
+      "fala": "Sem carimbo, não sai. E sem cinto, ninguém desce a serra."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é a meta da 1a hora?"
+    "pergunta": "PA de 228/134 com papiledema: qual é a meta da primeira hora?"
   },
   "cta": "simulado",
   "reel": null,

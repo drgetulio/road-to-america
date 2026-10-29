@@ -7,7 +7,7 @@
   "sistema": "Revisão cumulativa (remix)",
   "topico": "Remix de domingo: Malária por falciparum (dia 169), E. coli êntero-hemorrágica (dia 232), Deficiência do complemento terminal (dia 246)",
   "conceito": "Remix: Plasmodium falciparum + EHEC O157 + Terminal complement deficiency",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": [
     169,
@@ -16,42 +16,42 @@
   ],
   "explicacao_em": "2027-07-12",
   "tom": null,
-  "gancho": "Remix: quatro cartões, *três furadas* e um só confiável",
-  "gancho_apoio": "Malária, EHEC e complemento voltam para a mesa. Qual cartão passa no embarque?",
+  "gancho": "Febre e convulsão depois de Gana: o Macrô *já viu esses suspeitos* no feed",
+  "gancho_apoio": "Malária, EHEC e complemento voltam num caso só. Qual mecanismo explica a convulsão?",
   "imagem": {
     "arquivo": "dia-252.png",
-    "cena": "Toca-discos navy e vermelho com três discos de cores diferentes empilhados e um quarto disco intruso, meio torto, entrando de lado. Em volta, como plateia, um mosquito de desenho de óculos escuros, uma vaquinha de fazenda e uma furadeira pequena.",
+    "cena": "Na delegacia do bairro, Macrô, de guardanapo xadrez, faz o reconhecimento atrás de um vidro: em fila estão um mosquito de óculos escuros, uma vaquinha de fazenda segurando um hambúrguer, uma furadeira pequena e outro mosquito, de pijama, bocejando. Macrô aperta os olhos, com um pseudópode no queixo. Na parede, um vinil pequeno serve de relógio.",
     "foco": "50% 35%",
-    "alt": "Remix: quatro cartões, três furadas e um só confiável"
+    "alt": "Macrô no reconhecimento de suspeitos já conhecidos"
   },
   "imagem_macete": {
     "arquivo": "dia-252-macete.png",
-    "cena": "Só o disco do mosquito toca: dele saem hemácias com pequenas ventosas que grudam nas paredes de um tubo fino, formando um engarrafamento numa ruela estreita. A vaquinha, a furadeira e o disco intruso param ao lado de uma placa de pare.",
+    "cena": "O mosquito de óculos escuros dá um passo à frente: atrás dele, hemácias com ventosas grudam nas paredes de uma ruela estreita e formam um engarrafamento. A vaquinha, a furadeira e o mosquito de pijama voltam para o banco, liberados.",
     "foco": "50% 40%",
-    "alt": "Falciparum gruda no cérebro"
+    "alt": "Falciparum: hemácia de ventosa engarrafa a vênula"
   },
   "questao": {
-    "vinheta": "Before Sunday rounds, a student reviews four flashcards about infections and immune defects. Only one card is accurate.",
-    "pergunta": "Which statement is correct?",
+    "vinheta": "Ten days after returning from Ghana, where he took no malaria prophylaxis, a 24-year-old man has fever, confusion, and a generalized seizure. Hemoglobin is 8.1 g/dL, platelets are 58,000/mm3, and creatinine is 2.1 mg/dL. The blood smear shows many ring forms and crescent-shaped gametocytes.",
+    "pergunta": "Which mechanism best explains his neurologic findings?",
     "alternativas": {
       "A": {
-        "texto": "P. falciparum: infected red cells adhere to cerebral venules",
-        "quiz": "Falciparum gruda",
+        "texto": "Infected red cells adhering to cerebral venules",
+        "quiz": "Hemácia gruda na vênula",
         "dia": 169
       },
       "B": {
-        "texto": "EHEC O157:H7: invades the colonic mucosa like Shigella",
-        "quiz": "EHEC invade mucosa",
+        "texto": "Shiga toxin inactivating the 60S ribosomal subunit",
+        "quiz": "Toxina Shiga no 60S",
         "dia": 232
       },
       "C": {
-        "texto": "C5-C9 deficiency: recurrent catalase-positive abscesses",
-        "quiz": "C5-C9: catalase +",
+        "texto": "Meningococcal invasion without a membrane attack complex",
+        "quiz": "Meningococo sem MAC",
         "dia": 246
       },
       "D": {
-        "texto": "Cholera toxin: lowers enterocyte cAMP",
-        "quiz": "Cólera baixa cAMP"
+        "texto": "Liver hypnozoites reactivating after exposure",
+        "quiz": "Hipnozoíta no fígado"
       }
     },
     "correta": "A"
@@ -59,27 +59,27 @@
   "explicacao": {
     "titulo": "Falciparum *gruda* no cérebro",
     "certa": [
-      "Dia 169: no *Plasmodium falciparum*, a proteína *PfEMP1* faz a hemácia infectada grudar no endotélio das vênulas (*cytoadherence*). Isso entope a microcirculação do cérebro e explica a malária cerebral, além de tirar as hemácias infectadas da circulação, longe do baço."
+      "Muitos anéis e gametócitos em forma de banana são *Plasmodium falciparum* (dia 169). A proteína *PfEMP1* faz a hemácia infectada grudar no endotélio das vênulas cerebrais (*cytoadherence*); o fluxo trava e vêm confusão, convulsão e coma, a *cerebral malaria*. A anemia, as plaquetas baixas e o rim ruim também cabem na malária grave."
     ],
     "termos": [
-      "cytoadherence",
+      "cerebral malaria",
       "PfEMP1",
-      "Shiga-like toxin",
-      "membrane attack complex"
+      "cytoadherence",
+      "banana-shaped gametocytes"
     ],
     "erradas": {
-      "B": "Dia 232: a *EHEC* não invade a mucosa; o estrago vem da *Shiga-like toxin*, que pode levar à síndrome hemolítico-urêmica.",
-      "C": "Dia 246: a falta de C5 a C9 dá *Neisseria* de repetição; abscessos por catalase-positivos são da doença granulomatosa crônica.",
-      "D": "Intruso: a toxina da cólera ativa a proteína Gs e aumenta o cAMP, causando a diarreia aquosa."
+      "B": "A toxina Shiga da EHEC (dia 232) também dá anemia, plaquetopenia e rim ruim, mas vem depois de diarreia com sangue e com esquizócitos, não com anéis na hemácia.",
+      "C": "Falta de C5 a C9 (dia 246) predispõe a meningococo de repetição; aqui o esfregaço mostra o parasita e não há história de Neisseria.",
+      "D": "Intruso: hipnozoíta é do vivax e do ovale e explica recaída meses depois, não malária cerebral dez dias após a viagem."
     },
     "macete": {
-      "frase": "Falciparum é a hemácia de *ventosa*: gruda e engarrafa o cérebro",
-      "apoio": "A hemácia com ventosa grudando na ruela estreita é a citoaderência do falciparum. A vaquinha lembra a EHEC da carne malpassada, que intoxica sem invadir, e a furadeira é o MAC que fura a Neisseria.",
-      "fala": null
+      "frase": "Falciparum *gruda e engarrafa*; Shiga *corta o 60S*; MAC *fura a Neisseria*",
+      "apoio": "Três vilões, três verbos. A hemácia com ventosa gruda na vênula do cérebro (falciparum), a tesoura da Shiga corta o ribossomo e entope o rim (EHEC) e a furadeira de C5 a C9 fura o diplococo (complemento). Hipnozoíta é o inquilino que volta meses depois: vivax e ovale.",
+      "fala": "Comi, mostrei, avisei. Dessa vez quem travou o trânsito foi a hemácia."
     }
   },
   "legenda": {
-    "contexto": "Domingo é dia de remix: falciparum (dia 169), EHEC (dia 232), complemento terminal (dia 246) e um intruso. Só um cartão está certo.",
+    "contexto": "Domingo de revisão com os dias 169, 232 e 246, mais um intruso. Febre, convulsão, anemia, plaquetas baixas e creatinina subindo: três vilões explicariam parte disso, só um explica tudo.",
     "palavras_chave": [
       "Sunday remix",
       "spaced repetition",
@@ -97,7 +97,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual cartão está certo?"
+    "pergunta": "Febre e convulsão depois de Gana: qual mecanismo explica o quadro?"
   },
   "cta": "simulado",
   "reel": null,

@@ -7,7 +7,7 @@
   "sistema": "Sistema respiratório",
   "topico": "Sarcoidose",
   "conceito": "Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia",
-  "personagem": null,
+  "personagem": "Macrô",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-06-02",
@@ -16,13 +16,13 @@
   "gancho_apoio": "Tosse seca, nódulos nas canelas e cálcio alto. Que diagnóstico junta tudo?",
   "imagem": {
     "arquivo": "dia-212.png",
-    "cena": "Um par de pulmões simpáticos, de ombreiras enormes e simétricas no estilo festa dos anos 80, escolhe um salgado no balcão de uma padaria. No balcão, uma cestinha com pedaços de giz branco.",
+    "cena": "Padaria de madrugada, com o relógio sem números marcando 3 horas. Atrás do balcão, o Macrô tira do forno uma fornada de pães de queijo. Na frente, um par de pulmões simpáticos, de ombreiras enormes e simétricas no estilo festa dos anos 80, escolhe um salgado. No balcão, uma cestinha com pedaços de giz branco.",
     "foco": "50% 35%",
-    "alt": "Ombreira dos anos 80 no raio X e cálcio sobrando"
+    "alt": "Macrô serve pão de queijo a um par de pulmões com ombreiras dos anos 80"
   },
   "imagem_macete": {
     "arquivo": "dia-212-macete.png",
-    "cena": "Callback: o pulmão de ombreiras morde o pão de queijo e descobre que o miolo está vazio, sem queijo nenhum. A cestinha de giz transborda, mostrando o cálcio que sobrou.",
+    "cena": "O pulmão de ombreiras morde o pão de queijo e descobre que o miolo está vazio, sem queijo nenhum. O Macrô, orgulhoso, mostra que a massa do pão é feita de cópias dele mesmo, e ao lado acende uma lâmpada em forma de sol (a vitamina D ativada) enquanto a cestinha de giz transborda.",
     "foco": "50% 45%",
     "alt": "Granuloma sem caseificação e cálcio alto"
   },
@@ -66,9 +66,9 @@
       "D": "O *Hodgkin lymphoma* aumenta linfonodos do mediastino, mas a biópsia mostraria células de Reed-Sternberg, não granulomas com colorações negativas e cálcio alto."
     },
     "macete": {
-      "frase": "Sarcoidose é *pão de queijo sem queijo*: granuloma sem caseificação",
-      "apoio": "Na imagem, o pulmão de ombreiras (as duas adenopatias hilares) morde o pão de queijo da padaria e não acha queijo nenhum; ao lado, a cestinha de giz é o cálcio que o macrófago fabrica sozinho.",
-      "fala": null
+      "frase": "Sarcoidose é *pão de queijo sem queijo*: granuloma sem caseificação. Quem faz a massa é o Macrô (o macrófago epitelioide), que ainda ativa vitamina D por conta própria e deixa o *cálcio sobrando*.",
+      "apoio": "O NBME junta adenopatia hilar bilateral, eritema nodoso e cálcio alto; granuloma sem caseificação com pesquisa de BAAR e de fungos negativa fecha o quadro. A hipercalcemia vem da 1-alfa-hidroxilase do macrófago.",
+      "fala": "Comi, mostrei, avisei... e ainda fiz vitamina D sem receita."
     }
   },
   "legenda": {
@@ -91,7 +91,7 @@
     "cta_slide": null
   },
   "quiz": {
-    "pergunta": "Hilo bilateral, granuloma e cálcio alto?"
+    "pergunta": "Hilo bilateral, eritema nodoso e cálcio alto: o que é?"
   },
   "cta": null,
   "reel": null,

@@ -13,7 +13,7 @@
   "explicacao_em": "2027-02-11",
   "tom": null,
   "gancho": "Quarta de Cinzas: o fígado *fecha o caixa* do Carnaval",
-  "gancho_apoio": "Três dias de álcool quase sem comer e uma glicemia de 38. Onde a conta não fecha?",
+  "gancho_apoio": "Três dias de álcool quase sem comer e uma glicemia de 38.",
   "imagem": {
     "arquivo": "dia-101.png",
     "cena": "O Mito trabalha no caixa de um banco em forma de fígado, com cara de quem não consegue fechar a conta. A porta do cofre do estoque está aberta e o cofre está vazio. Pela janela, a chaminé de uma fábrica de açúcar está sem fumaça.",
@@ -32,19 +32,19 @@
     "alternativas": {
       "A": {
         "texto": "Increased hepatic NADH/NAD+ ratio",
-        "quiz": "NADH/NAD+ alto"
+        "quiz": "High NADH/NAD+ ratio"
       },
       "B": {
         "texto": "Inhibition of hepatic glucose-6-phosphatase",
-        "quiz": "G6Pase inibida"
+        "quiz": "G6Pase inhibition"
       },
       "C": {
         "texto": "Excess insulin secretion by beta cells",
-        "quiz": "Excesso de insulina"
+        "quiz": "Excess insulin"
       },
       "D": {
         "texto": "Thiamine-deficient pyruvate dehydrogenase",
-        "quiz": "PDH sem tiamina"
+        "quiz": "Thiamine-poor PDH"
       }
     },
     "correta": "A"
@@ -68,7 +68,7 @@
     "macete": {
       "frase": "Moeda trocada demais (*NADH*): a fábrica de açúcar para",
       "apoio": "Na imagem, o Mito está soterrado de sacos de moeda iguais e a chaminé da fábrica de açúcar não solta fumaça.",
-      "fala": null
+      "fala": "Sem NAD+ no caixa, nem eu faço glicose. E olha que eu trabalho até de Quarta de Cinzas."
     }
   },
   "legenda": {

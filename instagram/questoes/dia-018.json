@@ -7,22 +7,22 @@
   "sistema": "Gestação, parto e puerpério",
   "topico": "Gravidez ectópica",
   "conceito": "Ectopic pregnancy: hCG above the discriminatory zone with an empty uterus, methotrexate if stable",
-  "personagem": null,
+  "personagem": "Capitã Plaqueta",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-11-20",
   "tom": null,
-  "gancho": "Remédio ou centro cirúrgico? Hoje a *plaquinha* decide",
+  "gancho": "O embrião *estacionou* na contramão. Remédio resolve ou chama o guincho?",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-018.png",
-    "cena": "O garçom do rodízio está diante de uma mesa tranquila com dois espetos: um de frasquinhos de remédio e uma seringa grande de brinquedo, outro de instrumentos cirúrgicos de brinquedo. A plaquinha verde e vermelha está de lado, sem escolha ainda, e na parede há um quadro com cinco luzinhas apagadas.",
+    "cena": "Capitã Plaqueta, de colete e apito, para diante de uma rua estreita de mão única onde um carrinho pequeno estacionou na contramão, longe da garagem redonda, que está vazia. Ao lado, um painel com cinco luzinhas apagadas e dois espetos de rodízio: um de frasquinhos e seringa de brinquedo, outro de ferramentas de oficina. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "Remédio ou centro cirúrgico? Hoje a plaquinha decide"
+    "alt": "O embrião estacionou na contramão. Remédio resolve ou chama o guincho?"
   },
   "imagem_macete": {
     "arquivo": "dia-018-macete.png",
-    "cena": "Callback do rodízio: as cinco luzinhas do quadro acenderam em verde (estável, sem rotura, hCG abaixo de 5 mil, massa pequena, sem batimento). O garçom vira a plaquinha para o verde diante do espeto do remédio, e o espeto cirúrgico fica de prontidão num carrinho perto da cozinha.",
+    "cena": "Callback da contramão: as cinco luzinhas acendem em verde, a Capitã vira a plaquinha para o verde diante do espeto dos frasquinhos, e o espeto de ferramentas fica de prontidão num guincho estacionado na esquina.",
     "alt": "Cinco luzes verdes, remédio na mesa"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A curetagem procura tecido trofoblástico no útero, mas o útero está vazio e a gestação está na tuba."
     },
     "macete": {
-      "frase": "Plaquinha verde para o metotrexato quando a mesa está calma: paciente estável, sem rotura, hCG abaixo de 5 mil, massa abaixo de 3,5 cm e sem batimento. Qualquer luz vermelha, centro cirúrgico.",
+      "frase": "Contramão sem acidente pede *remédio*; acidente pede *guincho*. Cinco luzes verdes e o metotrexato resolve.",
       "apoio": "Pegadinha de prova: O NBME muda um detalhe para tirar o metotrexato da mesa: batimento cardíaco embrionário, líquido livre com instabilidade, hCG muito alto ou contraindicação ao remédio levam à cirurgia.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Rodízio de Quinta na obstetrícia: gravidez ectópica numa paciente estável. Cada número da vinheta pesa na conduta.",
+    "contexto": "Rodízio de Quinta na obstetrícia: gravidez ectópica numa paciente estável, sem líquido livre e que prefere evitar cirurgia. A Capitã Plaqueta tem cinco luzes para conferir antes de decidir.",
     "palavras_chave": [
       "pelvic pain",
       "spotting",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ectópica estável, sem batimento: e agora?"
+    "pergunta": "Ectópica de 2,5 cm, hCG 4.100 e sem batimento: qual conduta?"
   },
   "exemplo": false
 }

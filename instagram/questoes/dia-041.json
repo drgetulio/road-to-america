@@ -11,16 +11,16 @@
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-13",
-  "gancho": "O cafezinho aumenta o risco ou o pão encostou na linha?",
+  "gancho": "Quatro cafezinhos por dia e um intervalo que *encosta* no 1. Pode pedir o quinto?",
   "gancho_apoio": null,
   "imagem": {
     "cena": "Viés espiando atrás de uma tabela 2x2 no balcão de uma padaria, com uma xícara de cafezinho e uma baguete comprida deitada sobre uma linha pintada no balcão; um açucareiro esconde justamente o ponto em que ela encontraria a linha.",
     "foco": "50% 35%",
-    "alt": "Viés espiando atrás de uma tabela 2x2 no balcão de uma padaria, com uma xícara de cafezinho e uma baguete comprida deitada sobre uma linha pintada no balcão.",
+    "alt": "Quatro cafezinhos por dia e um intervalo que encosta no 1. Pode pedir o quinto?",
     "arquivo": "dia-041.png"
   },
   "imagem_macete": {
-    "cena": "Callback: o açucareiro sai do lugar e a baguete aparece passando por cima da linha pintada; o Viés dá de ombros com um sorriso maroto e a xícara de café fica com cara de inocente, mas ainda sob a lupa.",
+    "cena": "Callback: o açucareiro sai do lugar e a baguete aparece passando por cima da linha pintada; o Viés dá de ombros com um sorriso maroto, e a xícara de café fica com cara de inocente, mas ainda sob a lupa.",
     "alt": "O intervalo cruzou o 1: sem significância",
     "arquivo": "dia-041-macete.png"
   },
@@ -64,7 +64,7 @@
       "C": "Ausência de significância não prova ausência de efeito; o intervalo vai de leve proteção a aumento de 84%."
     },
     "macete": {
-      "frase": "A *baguete* encostou na linha do 1? *Não é significativo*",
+      "frase": "A *baguete* do intervalo encostou na linha do 1? Não dá para dizer de que lado da padaria ela está: *não é significativo*.",
       "apoio": "Pegadinha de prova: O NBME troca a linha nula de lugar: para razões (RR, OR) é 1, para diferenças é 0, e quem confunde marca significativo onde não é.",
       "fala": null
     }
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Como interpretar RR 1,30 (0,92 a 1,84)?"
+    "pergunta": "Como interpretar um RR de 1,30 com IC de 0,92 a 1,84?"
   },
   "cta": "simulado",
   "exemplo": false

@@ -8,23 +8,24 @@
   "topico": "Neutropenia febril",
   "conceito": "Febrile neutropenia: antipseudomonal beta-lactam such as cefepime within 1 hour",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-21",
   "tom": null,
-  "gancho": "Febre na neutropenia: o antibiótico precisa *correr mais que o motoboy*",
-  "gancho_apoio": "Dez dias depois da quimioterapia, febre e neutrófilos em 300. Qual é o próximo passo?",
+  "gancho": "Febre e neutrófilos em 300: o antibiótico chega *antes da pizza do app*",
+  "gancho_apoio": "Dez dias depois da quimioterapia, febre e neutrófilos em 300. Hemoculturas colhidas. Qual é o próximo passo?",
   "imagem": {
     "arquivo": "dia-261.png",
-    "cena": "Um motoboy de entrega, de capacete verde, acelera numa avenida embaixo de um cronômetro gigante que gira rápido. Na garupa, uma caixa térmica fechada. Na calçada, poucos glóbulos brancos de escudo pequeno olham a avenida, preocupados.",
+    "cena": "Três da manhã. Na porta da copa do plantão, Dona Térmica, a garrafa térmica de café, segura um cronômetro gigante e torce por um motoboy de capacete verde que acelera pela avenida com uma caixa térmica fechada na garupa. Na calçada, poucos glóbulos brancos de escudinho olham preocupados. Na parede, o relógio sem números marca 3 horas.",
     "foco": "50% 35%",
-    "alt": "Febre na neutropenia: o antibiótico precisa correr mais que o motoboy"
+    "alt": "Dona Térmica cronometra o motoboy do antibiótico"
   },
   "imagem_macete": {
     "arquivo": "dia-261-macete.png",
-    "cena": "O motoboy chega antes de o ponteiro do cronômetro completar uma volta e abre a caixa: dela sai uma bolsa de soro em forma de escudo largo, que rebate os bichinhos esverdeados em forma de bastão. Uma seringa extra (a vancomicina) continua guardada na caixa, esperando indicação.",
+    "cena": "O motoboy chega antes de o ponteiro do cronômetro completar uma volta e abre a caixa: dela sai uma bolsa de soro em forma de escudo largo, que rebate bichinhos esverdeados em forma de bastão. Uma seringa extra continua guardada na caixa, esperando indicação. Dona Térmica serve um café de comemoração.",
     "foco": "50% 40%",
-    "alt": "Cefepima em até 1 hora"
+    "alt": "Neutropenia febril: anti-Pseudomonas em até 1 hora"
   },
   "questao": {
     "vinheta": "A 58-year-old woman received chemotherapy for breast cancer 10 days ago. Today her temperature is 38.6°C, her heart rate 104/min, and her blood pressure 118/72 mm Hg. Her port site is clean, and there are no focal findings. Absolute neutrophil count is 300/mm3. Blood cultures have been drawn.",
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "Neutropenia febril: *uma hora* para o *anti-Pseudomonas*",
-      "apoio": "O motoboy tem uma volta do cronômetro (1 hora) para entregar o escudo que rebate os bastões verdes, a Pseudomonas. A seringa extra da vancomicina só sai da caixa com indicação.",
-      "fala": null
+      "apoio": "O motoboy tem uma volta do cronômetro, 1 hora, para entregar o escudo que rebate os bastões verdes da Pseudomonas: betalactâmico antipseudomonas, como a cefepima. A seringa da vancomicina só sai da caixa com indicação (cateter infectado, pele, pneumonia, instabilidade ou MRSA). Esperar cultura não é opção.",
+      "fala": "Já vi esse caso às 3 da manhã. Ele não espera a cultura."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Qual é o próximo passo?"
+    "pergunta": "Febre 10 dias após a quimioterapia e neutrófilos em 300: o que fazer já?"
   },
   "cta": "simulado",
   "reel": null,

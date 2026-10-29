@@ -7,20 +7,20 @@
   "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
   "topico": "Consentimento informado",
   "conceito": "Informed consent: diagnosis, risks, benefits and alternatives, including no treatment",
-  "personagem": null,
+  "personagem": "Seu Néfron",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2026-12-06",
-  "gancho": "O papel foi assinado, mas falta uma peça no quebra-cabeça",
+  "gancho": "Seu Néfron recebeu um formulário *assinado* e mesmo assim não carimbou",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Uma tela de GPS gigante numa placa de estrada mostra uma única rota destacada até um hospital estilizado; ao lado, uma prancheta com caneta e um quebra-cabeça com uma peça faltando. Uma balança de tribunal desenhada como placa de trânsito observa a cena.",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, está na repartição com um formulário assinado na mão e o carimbo parado no ar. Na parede, uma tela de GPS mostra uma única rota destacada até um hospital estilizado, ao lado de uma pequena tabela 2x2 em branco; na mesa, um quebra-cabeça com uma peça faltando.",
     "foco": "50% 35%",
-    "alt": "Uma tela de GPS gigante numa placa de estrada mostra uma única rota destacada até um hospital estilizado; ao lado, uma prancheta com caneta e um quebra-cabeça com uma peça faltando.",
+    "alt": "Seu Néfron recebeu um formulário assinado e mesmo assim não carimbou",
     "arquivo": "dia-034.png"
   },
   "imagem_macete": {
-    "cena": "Callback: a tela do GPS agora mostra três rotas, uma delas voltando para a casinha; a peça que faltava se encaixa no quebra-cabeça com forma de placa de bifurcação, e a balança fica equilibrada.",
+    "cena": "Callback: a tela do GPS agora mostra três rotas, uma delas voltando para a casinha; a peça que faltava se encaixa no quebra-cabeça com formato de placa de bifurcação, e Seu Néfron finalmente carimba, satisfeito.",
     "alt": "Sem alternativas, não é consentimento",
     "arquivo": "dia-034-macete.png"
   },
@@ -64,13 +64,13 @@
       "D": "Cirurgia eletiva em adulta capaz não passa por comitê de ética; o comitê entra em conflitos e dilemas."
     },
     "macete": {
-      "frase": "GPS sem *rota alternativa* não é GPS",
+      "frase": "Consentimento sem *alternativa* é GPS com rota única: até o Seu Néfron, que ama papel assinado, se recusa a carimbar.",
       "apoio": "Pegadinha de prova: O NBME esconde o erro na alternativa que esquece a opção de não tratar, ou oferece a assinatura da família como se fosse exigida para adulto capaz.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Diagnóstico explicado, procedimento descrito, riscos e benefícios na mesa, paciente capaz e caneta na mão. Ainda falta um elemento para o consentimento valer.",
+    "contexto": "Diagnóstico explicado, procedimento descrito, riscos e benefícios na mesa, paciente capaz e caneta na mão. Até o Seu Néfron, que ama papel assinado, achou que faltou alguma coisa.",
     "palavras_chave": [
       "elective cholecystectomy",
       "biliary colic",
@@ -88,7 +88,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "O que faltou no consentimento?"
+    "pergunta": "Diagnóstico, riscos e benefícios explicados: o que faltou no termo?"
   },
   "cta": "simulado",
   "exemplo": false

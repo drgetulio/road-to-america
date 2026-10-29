@@ -230,7 +230,7 @@ dias.forEach((d) => {
     topico: `${tema ? tema + ': ' : 'Remix de domingo: '}${escolhidos.map((x) => `${x.topico} (dia ${x.dia})`).join(', ')}`,
     conceito: `${temaEn ? temaEn + ' remix' : 'Remix'}: ${escolhidos.map((x) => rotulo(x.conceito)).join(' + ')}`,
     tipo_pergunta: step === 1 ? 'imagem mental' : 'próximo passo',
-    personagem: d._esp && d._esp.personagem ? PERSONAGENS[d._esp.personagem] : null,
+    personagem: d._esp && d._esp.personagem ? PERSONAGENS[d._esp.personagem] : (D.personagensRemix || {})[d.data] ? PERSONAGENS[D.personagensRemix[d.data]] : null,
     gancho_data: (d._esp && d._esp.gancho) || D.ganchosExtras[d.data] || null,
     remix_de: escolhidos.map((x) => x.dia),
     explicacao_em: addDias(d.data, 1),

@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-24",
   "tom": null,
-  "gancho": "Macrô investiga: a *campainha* toca e ninguém atende",
+  "gancho": "O interfone do prédio funciona de manhã, e à noite ninguém *atende*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-022.png",
-    "cena": "Macrô, na porta do boteco dos micróbios, observa do outro lado da rua um carteiro em forma de bolinha, com bolsa a tiracolo, apertando uma fileira de campainhas num prédio. Só algumas campainhas acendem, e Macrô coça a cabeça com um pseudópode.",
+    "cena": "Macrô, de guardanapo xadrez e comanda em branco no bolso, está na portaria de um prédio olhando um carteiro em forma de bolinha que aperta o interfone de vários apartamentos; só alguns botões acendem, e o céu lá fora está alaranjado, de fim de tarde. Macrô coça a cabeça com um pseudópode.",
     "foco": "50% 35%",
-    "alt": "Macrô investiga: a campainha toca e ninguém atende"
+    "alt": "O interfone do prédio funciona de manhã, e à noite ninguém atende"
   },
   "imagem_macete": {
     "arquivo": "dia-022-macete.png",
-    "cena": "Callback do prédio: um corte da parede mostra o lado de dentro do painel de campainhas. Anticorpos pequenos em forma de Y colaram chiclete rosa nos botões receptores, e o sinal não entra. O carteiro está exausto de tanto tocar, e Macrô aponta o chiclete com cara de quem descobriu tudo.",
+    "cena": "Callback do prédio: um corte da parede mostra o lado de dentro do painel do interfone. Anticorpos pequenos em forma de Y colaram chiclete rosa nos botões de dentro, e o sinal não entra. O carteiro está exausto de tanto tocar, e Macrô aponta o chiclete com cara de quem descobriu tudo.",
     "alt": "Chiclete no botão de dentro"
   },
   "questao": {
@@ -65,13 +65,13 @@
       "D": "A desmielinização periférica (Guillain-Barré) dá fraqueza ascendente com reflexos abolidos."
     },
     "macete": {
-      "frase": "O carteiro (acetilcolina) toca a campainha, mas alguém colou chiclete nos botões do lado de dentro (receptor pós-sináptico). Quanto mais ele toca no fim do dia, menos portas abrem.",
+      "frase": "Miastenia é interfone com *chiclete do lado de dentro*: o carteiro (acetilcolina) toca, e quanto mais tarde, menos apartamento atende.",
       "apoio": "Pegadinha de prova: O NBME contrasta miastenia (piora com o uso, reflexos normais, receptor pós) com Lambert-Eaton (melhora com o uso, reflexos baixos, canal pré, associação com câncer de pulmão de pequenas células).",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "Bicho de Segunda na junção neuromuscular: uma fraqueza que piora com o uso e melhora com o repouso.",
+    "contexto": "Bicho de Segunda na junção neuromuscular: pálpebra caindo no fim do dia, visão dupla e uma bolsa de gelo que melhora tudo. O Macrô foi investigar o interfone do prédio.",
     "palavras_chave": [
       "diplopia",
       "ptosis",
@@ -88,7 +88,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Ptose que piora à noite: qual mecanismo?"
+    "pergunta": "Ptose que piora à noite e melhora com gelo: qual mecanismo?"
   },
   "exemplo": false
 }

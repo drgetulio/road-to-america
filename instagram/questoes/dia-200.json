@@ -8,21 +8,22 @@
   "topico": "Convulsão febril simples",
   "conceito": "Simple febrile seizure: no labs, EEG or imaging needed, reassure the family",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-05-21",
   "tom": null,
-  "gancho": "Febre, convulsão de 2 minutos e pais *assustados*. E agora?",
+  "gancho": "Dia 200! Convulsão de 2 minutos, criança já rindo e *os pais querendo o cardápio inteiro de exames*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-200.png",
-    "cena": "O garçom do rodízio chega à mesa de uma família com quatro espetos tampados por tampas prateadas; numa delas aparece a ponta de fios coloridos, noutra a ponta de uma agulha comprida, noutra uma caixinha de comprimidos, e a última solta o vapor de uma xícara de chá; a plaquinha de duas cores está de lado e há confetes de festa pelo dia 200.",
+    "cena": "Dia 200 no rodízio, com confete na mesa. O Garçom Espetinho entrega a uma família de balões um cardápio gigante só de desenhos: fios coloridos de eletrodo, uma agulha comprida, um frasco de comprimidos e uma xícara de chá. A plaquinha verde e vermelha está de lado.",
     "foco": "50% 35%",
-    "alt": "Febre, convulsão de 2 minutos e pais assustados. E agora?"
+    "alt": "O garçom entrega um cardápio de exames a uma família de balões no dia 200"
   },
   "imagem_macete": {
     "arquivo": "dia-200-macete.png",
-    "cena": "O garçom vira a plaquinha para o vermelho diante dos espetos dos fios, da agulha e dos comprimidos e serve só a xícara de chá com um cobertorzinho; o termômetro da mesa sorri aliviado.",
+    "cena": "O Garçom Espetinho recolhe o cardápio, vira a plaquinha para o vermelho diante dos fios, da agulha e dos comprimidos e serve só a xícara de chá com um cobertorzinho. O termômetro da mesa sorri aliviado.",
     "alt": "Convulsão febril simples: tranquilizar"
   },
   "questao": {
@@ -65,9 +66,9 @@
       "D": "Anticonvulsivante contínuo não é indicado: o risco dos efeitos adversos supera o benefício, e antitérmico não previne a recorrência."
     },
     "macete": {
-      "frase": "Convulsão febril simples é *15, 24, 1*: menos de *15* minutos, uma vez em *24* horas, *1* episódio generalizado. No rodízio, o garçom vira a plaquinha para o vermelho: *\"não, obrigado\"* para EEG, punção e remédio diário.",
+      "frase": "Convulsão febril simples é *15, 24, 1*: menos de *15* minutos, uma vez em *24* horas, *1* episódio generalizado. Criança bem e vacinada: o garçom recolhe o cardápio e diz *\"não, obrigado\"* para EEG, punção e remédio diário.",
       "apoio": "O NBME oferece EEG, imagem ou punção para criança bem e vacinada; a resposta é tranquilizar. Convulsão focal, longa ou repetida em 24 horas é complexa e muda a investigação.",
-      "fala": null
+      "fala": "Vai uma conduta aí? Hoje só a da conversa e a do antitérmico, doutor."
     }
   },
   "legenda": {
@@ -80,7 +81,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Convulsão febril simples. Próximo passo?"
+    "pergunta": "Convulsão de 2 min no 1º dia de febre: conduta?"
   },
   "cta": "simulado",
   "exemplo": false

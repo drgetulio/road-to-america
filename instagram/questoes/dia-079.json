@@ -8,20 +8,21 @@
   "topico": "Dissecção de aorta",
   "conceito": "Aortic dissection: IV beta-blocker first, CT angiography if stable, TEE if unstable",
   "personagem": null,
+  "anfitriao": "Dona Térmica",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-01-20",
-  "gancho": "Asfalto da aorta descascando: *freia, alarga ou conserta*?",
+  "gancho": "A aorta abriu *igual zíper de calça jeans*: o que você faz primeiro?",
   "gancho_apoio": null,
   "imagem": {
-    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um pedal de freio, uma estrada se alargando e uma chave inglesa. Na pista, o asfalto de cima descasca em duas faixas, e um carrinho em forma de coração vem rápido demais.",
+    "cena": "Na sala de descanso do plantão, com o relógio sem números nas 3 da manhã, Dona Térmica olha preocupada para uma mangueira vermelha em forma de aorta com um zíper que começou a abrir no meio. Na mesinha, um pedal de freio, uma chave inglesa e um rolo de fita.",
     "foco": "50% 35%",
-    "alt": "Asfalto da aorta descascando: freia, alarga ou conserta?",
+    "alt": "Dona Térmica olha uma mangueira em forma de aorta com um zíper abrindo; na mesinha, um pedal de freio, uma chave inglesa e um rolo de fita.",
     "arquivo": "dia-079.png"
   },
   "imagem_macete": {
-    "cena": "Callback da rodovia: o carrinho-coração pisa no freio, o ponteiro do velocímetro desce até a faixa verde e a casca do asfalto para de abrir. Só depois disso a estrada começa a se alargar ao fundo.",
-    "alt": "Betabloqueador venoso primeiro",
+    "cena": "Callback: Dona Térmica pisa no pedal de freio e o zíper para de abrir. Só depois ela afrouxa um cinto em volta da aorta. A chave inglesa fica guardada na caixa, porque a tipo B sem complicação não vai para a cirurgia.",
+    "alt": "Dona Térmica pisa no freio e o zíper da aorta para de abrir; depois ela afrouxa o cinto, e a chave inglesa fica guardada.",
     "arquivo": "dia-079-macete.png"
   },
   "questao": {
@@ -64,13 +65,13 @@
       "D": "Cirurgia de urgência é para tipo A ou tipo B complicada (ruptura, má perfusão, dor refratária), não para tipo B sem complicação."
     },
     "macete": {
-      "frase": "*B antes de V*: beta antes do vasodilatador",
+      "frase": "Dissecção é *zíper*: primeiro para de puxar, depois afrouxa o cinto",
       "apoio": "Pegadinha de prova: O NBME oferece o nitroprussiato como primeira escolha; ele só entra depois do betabloqueador, e a anticoagulação não faz parte do tratamento inicial da dissecção.",
-      "fala": null
+      "fala": "Ninguém afrouxa o cinto puxando o zíper. Beta primeiro."
     }
   },
   "legenda": {
-    "contexto": "Dor rasgando que vai para as costas, pressão alta e diferença entre os braços. A angiotomografia já confirmou a dissecção. No Plantão de Terça, o que entra primeiro?",
+    "contexto": "Dor rasgando que vai para as costas, pressão de 186 num braço e 150 no outro, e a angiotomografia confirma dissecção tipo B sem má perfusão. Dona Térmica quer saber qual remédio entra antes de todos.",
     "palavras_chave": [
       "tearing chest pain",
       "pulse differential",
@@ -89,7 +90,7 @@
     "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
   },
   "quiz": {
-    "pergunta": "Qual remédio entra primeiro?"
+    "pergunta": "Dissecção tipo B, PA 186/104 e FC 102: qual remédio primeiro?"
   },
   "cta": "simulado",
   "exemplo": false

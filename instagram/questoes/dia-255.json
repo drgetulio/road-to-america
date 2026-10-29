@@ -8,23 +8,24 @@
   "topico": "Tireoidite de Hashimoto",
   "conceito": "Hashimoto thyroiditis: lymphocytic infiltrate with germinal centers and Hurthle cells, anti-TPO",
   "personagem": null,
+  "anfitriao": "Seu Allen",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-07-15",
   "tom": null,
-  "gancho": "A *borboleta* do pescoço desacelerou. O que tem lá dentro?",
-  "gancho_apoio": "Tireoide firme, indolor, TSH alto e anti-TPO lá em cima. O que o patologista vê?",
+  "gancho": "O TSH toca o interfone 14 vezes e a tireoide *finge que não está em casa*",
+  "gancho_apoio": "Tireoide firme, indolor, TSH alto e anti-TPO lá em cima. O que o patologista vê lá dentro?",
   "imagem": {
     "arquivo": "dia-255.png",
-    "cena": "Uma casa em forma de borboleta, com duas alas e um corredor no meio, numa tarde fria. A lareira está quase apagada, e a dona da casa, uma célula cúbica simpática de cachecol e meias grossas, cochila no sofá com uma xícara de chá. A campainha toca e ninguém atende.",
+    "cena": "Uma casa em forma de borboleta, de duas alas, numa tarde fria. No portão, uma hipófise de gravata aperta o interfone sem parar, com cara de cobrador. Pela janela, a dona da casa, uma célula cúbica de cachecol e meias grossas, cochila no sofá com uma xícara de chá, ao lado da lareira quase apagada. Seu Allen, a chavinha Allen de avental, espia pela fechadura, com setinhas de manual de montagem em volta da porta.",
     "foco": "50% 35%",
-    "alt": "A borboleta do pescoço desacelerou. O que tem lá dentro?"
+    "alt": "O TSH aperta o interfone e a tireoide não atende"
   },
   "imagem_macete": {
     "arquivo": "dia-255-macete.png",
-    "cena": "Dentro da casa-borboleta aparece o motivo do cansaço: dezenas de bolinhas roxas se mudaram com malas e colchões e montaram coretos redondos de festa (os centros germinativos), e a dona da casa trocou de roupa por um casaco rosa enorme, com os bolsos cheios de feijõezinhos laranja, como se carregasse muitas mitocôndrias (a célula de Hürthle).",
+    "cena": "Seu Allen desmonta a parede da casa-borboleta como num manual: lá dentro, dezenas de bolinhas roxas se mudaram com malas e colchões e montaram coretos redondos de festa nos cômodos, e a dona da casa agora veste um casaco rosa enorme, com os bolsos cheios de feijõezinhos laranja. No portão, a hipófise senta, exausta, ainda segurando o interfone.",
     "foco": "50% 40%",
-    "alt": "Linfócitos com centro germinativo"
+    "alt": "Hashimoto: linfócitos com centro germinativo e célula de Hürthle"
   },
   "questao": {
     "vinheta": "A 45-year-old woman has had fatigue, cold intolerance, and constipation for 6 months. Her thyroid gland is diffusely enlarged, firm, and painless. TSH is 14 μU/mL, free T4 is low, and anti-thyroid peroxidase antibodies are markedly elevated. A core needle biopsy is obtained.",
@@ -67,8 +68,8 @@
     },
     "macete": {
       "frase": "Hashimoto: *bloco com coreto* e anfitriã de *casaco rosa*",
-      "apoio": "Os inquilinos roxos são os linfócitos, os coretos são os centros germinativos e o casaco rosa cheio de feijões laranja é a célula de Hürthle, rosada de tanta mitocôndria.",
-      "fala": null
+      "apoio": "Os inquilinos roxos são os linfócitos que se mudaram para a tireoide e montaram coretos (centros germinativos). O casaco rosa cheio de feijões laranja é a célula de Hürthle, rosada de tanta mitocôndria. E o TSH no interfone é a hipófise cobrando hormônio de quem não consegue mais fazer.",
+      "fala": "Sobrou peça? Então faltou mecanismo. Aqui sobrou linfócito."
     }
   },
   "legenda": {
@@ -91,7 +92,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "O que a lâmina mostra?"
+    "pergunta": "Bócio firme, TSH de 14 e anti-TPO alto: o que a biópsia mostra?"
   },
   "cta": "simulado",
   "reel": null,

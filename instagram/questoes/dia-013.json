@@ -12,17 +12,17 @@
   "remix_de": null,
   "explicacao_em": "2026-11-15",
   "tom": null,
-  "gancho": "Baixaram a *régua* da HbA1c. Quem ganha e quem perde?",
+  "gancho": "Baixaram a régua da HbA1c e metade da cidade *caiu na malha fina*",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-013.png",
-    "cena": "O Viés está num barquinho num lago calmo, segurando duas redes de pesca, uma de malha larga e outra de malha fina, sem saber qual usar. Embaixo da água clara, peixinhos nadam misturados com um chinelo velho, uma garrafa e algas.",
+    "cena": "O Viés, meio escondido atrás de uma tabela 2x2, está num barquinho num lago calmo segurando duas redes de pesca, uma de malha larga e outra de malha bem fina. Embaixo da água, peixinhos nadam misturados com um chinelo velho, uma garrafa e um envelope em branco cheio de recibos.",
     "foco": "50% 35%",
-    "alt": "Baixaram a régua da HbA1c. Quem ganha e quem perde?"
+    "alt": "Baixaram a régua da HbA1c e metade da cidade caiu na malha fina"
   },
   "imagem_macete": {
     "arquivo": "dia-013-macete.png",
-    "cena": "Callback do lago: o Viés puxou a rede de malha fina e ela veio lotada, com todos os peixes (verdadeiros positivos) e também o chinelo, a garrafa e a alga (falsos positivos). Na margem, um balde verde de peixes e um balde vermelho enchendo de entulho.",
+    "cena": "Callback do lago: a rede de malha fina veio lotada, com todos os peixes e também o chinelo, a garrafa e o envelope de recibos. Na margem, um balde verde de peixes e um balde vermelho enchendo de entulho, e o Viés conta o entulho com a lupa.",
     "alt": "Malha fina pega peixe e chinelo"
   },
   "questao": {
@@ -66,13 +66,13 @@
       "D": "Com mais falsos positivos, o VPP cai e o VPN sobe, o contrário do que diz a alternativa."
     },
     "macete": {
-      "frase": "Rede de pesca de malha mais fina: pega todos os peixes (sensibilidade sobe), mas vêm junto chinelo, garrafa e alga (especificidade cai). E quanto mais chinelo na rede, menor o valor preditivo positivo.",
+      "frase": "Baixar o ponto de corte é cair na *malha fina*: pega todo mundo que deve (sensibilidade sobe) e também quem só esqueceu um recibo (especificidade cai).",
       "apoio": "Pegadinha de prova: O NBME mostra duas curvas sobrepostas, de doentes e sadios, e pergunta o que acontece ao mover a linha do corte para a esquerda; lembre também do efeito nos valores preditivos.",
       "fala": null
     }
   },
   "legenda": {
-    "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a pergunta é o que acontece quando o ponto de corte de um teste muda.",
+    "contexto": "14/11 é o Dia Mundial do Diabetes. No Sábado Sem Viés, a pergunta é o que acontece quando o ponto de corte de um teste desce de 6,5% para 6,0%. Dica: pense na declaração do imposto de renda.",
     "palavras_chave": [
       "HbA1c",
       "screening program",
@@ -90,7 +90,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "HbA1c de 6,5% para 6,0%: o que muda?"
+    "pergunta": "O corte da HbA1c caiu de 6,5% para 6,0%: o que muda no teste?"
   },
   "exemplo": false
 }

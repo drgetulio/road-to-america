@@ -8,12 +8,13 @@
   "topico": "Diabetes gestacional",
   "conceito": "Gestational diabetes screening at 24 to 28 weeks with an oral glucose test",
   "personagem": null,
+  "anfitriao": "Garçom Espetinho",
   "gancho_data": null,
   "remix_de": null,
   "explicacao_em": "2027-02-26",
   "tom": null,
   "gancho": "O garçom chegou com o *espeto doce* às 26 semanas",
-  "gancho_apoio": "Gestante de baixo risco, teste de 50 g alterado e um teste de 3 horas. Qual é o diagnóstico?",
+  "gancho_apoio": "Gestante de baixo risco, teste de 50 g alterado e um teste de 3 horas.",
   "imagem": {
     "arquivo": "dia-116.png",
     "cena": "Um garçom de rodízio chega à mesa com um espeto de abacaxi assado com canela. Na parede, quatro sininhos de cobre enfileirados, todos parados. A plaquinha redonda verde e vermelha está em pé na mesa.",
@@ -32,19 +33,19 @@
     "alternativas": {
       "A": {
         "texto": "Normal insulin resistance of pregnancy",
-        "quiz": "Resistência normal"
+        "quiz": "Normal pregnancy change"
       },
       "B": {
         "texto": "Overt type 2 diabetes mellitus",
-        "quiz": "DM2 prévio"
+        "quiz": "Overt type 2 diabetes"
       },
       "C": {
         "texto": "Gestational diabetes mellitus",
-        "quiz": "Diabetes gestacional"
+        "quiz": "Gestational diabetes"
       },
       "D": {
         "texto": "Renal glycosuria of pregnancy",
-        "quiz": "Glicosúria renal"
+        "quiz": "Renal glycosuria"
       }
     },
     "correta": "C"
@@ -68,7 +69,7 @@
     "macete": {
       "frase": "Provinha de 50 g, rodízio de 100 g e *dois sininhos* tocando",
       "apoio": "Na imagem, o garçom traz o abacaxi com canela e quatro sininhos esperam na parede.",
-      "fala": null
+      "fala": "Dois sininhos tocaram? Fecha a conta, doutor."
     }
   },
   "legenda": {
@@ -88,7 +89,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Três valores altos no teste de 100 g?"
+    "pergunta": "Teste de 100 g com três valores altos às 26 semanas: diagnóstico?"
   },
   "cta": null,
   "reel": null,

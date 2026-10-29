@@ -12,13 +12,13 @@
   "remix_de": null,
   "explicacao_em": "2027-05-08",
   "tom": null,
-  "gancho": "Sextou: por que uma *viatura* apagou antes de todo o trânsito?",
+  "gancho": "Sextou com a Capitã: a viatura *C* apagou primeiro, e a pele pagou o pato",
   "gancho_apoio": null,
   "imagem": {
     "arquivo": "dia-187.png",
-    "cena": "Capitã Plaqueta, intrigada, no meio de um cruzamento: uma das duas pequenas viaturas de patrulha apagou de repente, enquanto quatro carrinhos coloridos e a outra viatura seguem devagar, com a luz de bateria fraca piscando.",
+    "cena": "Capitã Plaqueta, intrigada, no meio de um cruzamento: uma das duas pequenas viaturas de patrulha apagou de repente, enquanto quatro carrinhos coloridos e a outra viatura seguem devagar, com a luz de bateria fraca piscando. Em cima do semáforo, uma ampulheta pequena.",
     "foco": "50% 35%",
-    "alt": "Sextou: por que uma viatura apagou antes de todo o trânsito?"
+    "alt": "Capitã Plaqueta, intrigada, vê uma viatura apagar antes dos outros carros"
   },
   "imagem_macete": {
     "arquivo": "dia-187-macete.png",
@@ -67,7 +67,7 @@
     "macete": {
       "frase": "A varfarina tira da tomada o *recarregador da vitamina K*. Sem carga, vão parando os carros *2, 7, 9 e 10* e as viaturas *C e S*. A *viatura C* tem a bateria mais curta e apaga primeiro, junto com o carro 7: por isso, no começo, faz-se a *ponte com heparina*.",
       "apoio": "O NBME pergunta qual fator cai primeiro (fator VII, por isso o INR sobe antes) e associa necrose de pele nos primeiros dias à queda precoce da proteína C; valva mecânica pede varfarina, não DOAC.",
-      "fala": null
+      "fala": "Parou, colou, coagulou. Menos a viatura C, que tem bateria de celular de 2016."
     }
   },
   "legenda": {
@@ -80,7 +80,7 @@
     ]
   },
   "quiz": {
-    "pergunta": "Valva mecânica, necrose de pele. Qual a enzima?"
+    "pergunta": "Necrose de pele no 2º dia do anticoagulante: qual enzima?"
   },
   "cta": "simulado",
   "exemplo": false
