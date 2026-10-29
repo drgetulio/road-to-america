@@ -124,7 +124,7 @@ await etapa("2. participante e visitante veem acesso negado", async () => {
   assert.equal(await page.locator("table").count(), 0, "nenhuma tabela");
   assert.equal(await page.getByText("Ana Exemplo").count(), 0, "nenhum participante exposto");
   assert.equal(await page.getByRole("link", { name: "Ver meu progresso" }).getAttribute("href"), "../anki/#/progresso");
-  assert.equal(await page.locator("[data-nav] a").count(), 3, "menu só com links externos");
+  assert.deepEqual(await page.locator("[data-nav] a").evaluateAll((as) => as.map((a) => a.getAttribute("href"))), ["../anki/#/", "../questoes/", "../simulado/", "../conteudo-step1.html"], "menu só com links externos");
   await page.screenshot({ path: join(saida, "04-acesso-negado.png"), fullPage: true });
   await page.goto(base + "/admin/#/p/demo-sint-ana-exemplo");
   await page.getByRole("heading", { name: "Área da equipe" }).waitFor();
