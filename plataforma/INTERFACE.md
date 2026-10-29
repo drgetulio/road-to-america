@@ -641,11 +641,14 @@ iguais entre blocos e o gabarito equilibrado por bloco
 O corte provisório de cada formulário é a média do Angoff dos seus itens; quando o painel
 de juízes publica valores (pelo menos 10 juízes por item e Hofstee verificado, ou
 publicação justificada), `angoff` passa a ser o do painel (`angoff_origem: "painel"`) e a
-composição não muda. Itens públicos (`legado`) de um formulário fixo ficam fora da
-estimativa: `itensForaDoCorte(form, porId)` devolve o `Set` desses ids, e
+composição não muda. Itens públicos (`legado`) de um formulário, fixo ou personalizado,
+ficam fora da estimativa pela regra única de PSICOMETRIA.md, seção 23:
+`itensForaDoCorte(form, porId)` devolve o `Set` desses ids, e
 `estimativaDoSimulado` (simulado/js/relatorio.js) os tira das respostas e do percentual
-esperado (`est.fora_do_corte: { n, ids }`). No modo demonstração, com só os itens
-públicos, todos contam.
+esperado (`est.fora_do_corte: { n, ids }`). Fora do relatório, `prepararRespostas()` e
+`estimarAluno()` aplicam a mesma regra (`publicosForaDaEstimativa(itens, step)`;
+`est.publicos_fora: { n, regra }`). No modo demonstração, com só os itens públicos,
+todos contam.
 
 Dois alunos com o mesmo `formulario_id` fizeram exatamente os mesmos itens (a assinatura
 muda quando o banco muda). Relógio: pular o tutorial ou terminar antes dá o tempo que

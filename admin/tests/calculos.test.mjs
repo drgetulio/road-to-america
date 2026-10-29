@@ -239,4 +239,6 @@ test("checklist da garantia e leitura da prontidão (EXIT 18)", () => {
   assert.equal(pct(null), "sem dado");
   assert.equal(textoUltimaAtividade({ ultima_atividade: null }), "Nunca estudou");
   assert.equal(textoUltimaAtividade({ ultima_atividade: "x", dias_sem_estudo: 1 }), "Ontem");
+  assert.equal(textoUltimaAtividade({ ultima_atividade: "x", dias_sem_estudo: -1 }), "Hoje", "relógio adiantado: nunca \"Há -1 dias\"");
+  assert.equal(textoUltimaAtividade({ ultima_atividade: "x", dias_sem_estudo: 5 }), "Há 5 dias");
 });

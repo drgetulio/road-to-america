@@ -670,3 +670,47 @@ test("ligação com a NBME: escores repetidos do mesmo aluno agrupados (peso por
   assert.equal(a1.metodo, "minimos_quadrados_um_escore_por_aluno");
   assert.ok(Math.abs(a1.b - a2.b) < 1e-9 && Math.abs(a1.var_b - a2.var_b) < 1e-9, "sem repetição, com ou sem user_id dá o mesmo ajuste");
 });
+
+/* Regra única dos itens públicos (PSICOMETRIA.md, seção 23) */
+import { publicosForaDaEstimativa, textoPublicosFora, estimarAluno as estimarAlunoRegra, prepararRespostas as prepararRegra } from "../js/psicometria.js";
+import { itensForaDoCorte as foraDoCorteRegra } from "../js/formularios.js";
+import { estimativaGeral, estimativaDoSimulado } from "../../simulado/js/relatorio.js";
+import { resumoAprovacao } from "../js/banco-aluno.js";
+import { readFileSync as lerArq } from "node:fs";
+test("itens públicos: a mesma regra no relatório, no banco do aluno e no indicador", () => {
+  const publicos = JSON.parse(lerArq(new URL("../../simulado/data/step1-questoes.json", import.meta.url), "utf8"));
+  const privados = gerarBancoSintetico({ porStep: 300, semente: 5 }).filter((q) => q.step === "step1");
+  const so = montarBanco(publicos, { origem: "teste" });
+  const misto = montarBanco([...publicos, ...privados], { origem: "teste" });
+  assert.equal(publicosForaDaEstimativa(so.porId, "step1"), false, "só públicos: todos contam");
+  assert.equal(publicosForaDaEstimativa(misto.porId, "step1"), true);
+  assert.equal(publicosForaDaEstimativa(misto.porId, "step2ck"), false, "sem itens do Step 2 CK, nada muda nesse Step");
+  const ids = [...publicos.slice(0, 20).map((q) => misto.porId.get(q.id) ? q.id : null), ...privados.slice(0, 40).map((q) => q.id)].filter(Boolean);
+  const respostas = ids.map((id, i) => ({ questao_id: id, step: "step1", resposta: "A", correta: i % 3 !== 0, modo: "cronometrado", origem: "banco", respondida_em: new Date(Date.UTC(2026, 9, 1, 0, i)).toISOString() }));
+  const pr = prepararRegra(respostas, misto.porId, { step: "step1" });
+  assert.equal(pr.usadas.length, 40);
+  assert.equal(pr.publicos_fora, 20);
+  assert.equal(prepararRegra(respostas, misto.porId, { step: "step1", publicos: "incluir" }).usadas.length, 60, "a opção incluir existe para a calibração");
+  const geral = estimativaGeral({ step: "step1", respostas, porId: misto.porId });
+  const banco = resumoAprovacao({ banco: misto, respostas, step: "step1" }).est;
+  const direto = estimarAlunoRegra({ step: "step1", respostas: respostas.filter((r) => !misto.porId.get(r.questao_id).legado), itens: misto.porId, sistemas: sistemasDoOutline("step1"), pesosSistemas: null });
+  for (const est of [geral, banco]) {
+    assert.equal(est.n, 40, "indicador e banco do aluno com 40 itens, sem os 20 públicos");
+    assert.equal(est.publicos_fora.n, 20);
+    assert.match(textoPublicosFora(est), /^20 respostas a itens públicos/);
+  }
+  assert.equal(direto.n, 40);
+  assert.ok(Math.abs(geral.theta - banco.theta) < 1e-12, "indicador e banco do aluno dão o mesmo número");
+  /* relatório: formulário personalizado com os mesmos itens */
+  const form = { modo: "personalizado", step: "step1", blocos: [ids.slice(0, 30), ids.slice(30)] };
+  assert.equal(foraDoCorteRegra(form, misto.porId).size, 20);
+  const rel = estimativaDoSimulado({ form, linhas: respostas, porId: misto.porId });
+  assert.equal(rel.n, 40);
+  assert.equal(rel.fora_do_corte.n, 20);
+  /* só públicos: todos contam e não há frase */
+  const rsPub = respostas.slice(0, 20);
+  const soPub = estimativaGeral({ step: "step1", respostas: rsPub, porId: so.porId });
+  assert.equal(soPub.n, 20);
+  assert.equal(soPub.publicos_fora.n, 0);
+  assert.equal(textoPublicosFora(soPub), "");
+});

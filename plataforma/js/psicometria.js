@@ -460,8 +460,45 @@ function fmt0(x) { return String(Math.round(Number(x) * 10) / 10).replace(".", "
    - efeitoModo ({ delta } de estimarEfeitoModo, gravado no modelo do Step): no modo
      tutor, o item entra com b - delta, porque a resposta sem relógio acerta mais que
      a cronometrada; o peso do tutor continua valendo. */
-export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS_MODO, usarCalibrado = true, desde = null, ate = null, efeitoModo = null } = {}) {
+/* Regra única dos itens públicos (PSICOMETRIA.md, seção 23). Os 80 itens públicos
+   (legado: os de simulado/data/, com gabarito e explicação no repositório aberto) contam
+   nos acertos e no percentual de cada sessão, mas ficam fora de toda estimativa
+   (probabilidade, habilidade, perfil por área, cobertura, curva de evolução e itens que
+   faltam para a precisão alta) sempre que o banco carregado tiver itens privados do mesmo
+   Step. Com só os públicos (modo demonstração público), todos contam. Vale no relatório
+   do simulado, no banco do aluno, no indicador, em Meu progresso e na ficha do admin,
+   porque todos passam por prepararRespostas() ou por itensForaDoCorte(). */
+const cachePublicos = new WeakMap();
+export function publicosForaDaEstimativa(itens, step = null) {
+  if (!itens || typeof itens !== "object") return false;
+  const lista = itens instanceof Map ? [...itens.values()] : Object.values(itens);
+  const chave = (step || "*") + "|" + lista.length;
+  const memo = cachePublicos.get(itens);
+  if (memo && memo.has(chave)) return memo.get(chave);
+  let pub = false, priv = false;
+  for (const q of lista) {
+    if (!q || (step && q.step && q.step !== step)) continue;
+    if (q.legado) pub = true; else priv = true;
+    if (pub && priv) break;
+  }
+  const r = pub && priv;
+  (memo || cachePublicos.set(itens, new Map()).get(itens)).set(chave, r);
+  return r;
+}
+/* Frase única para as telas quando a regra tirou respostas da estimativa (est de
+   estimarAluno). Vazia quando nada saiu. */
+export function textoPublicosFora(est) {
+  const n = est?.publicos_fora?.n || 0;
+  if (!n) return "";
+  return (n === 1 ? "1 resposta a item público (publicado no site, com gabarito aberto) conta" : n + " respostas a itens públicos (publicados no site, com gabarito aberto) contam") + " nos acertos de cada sessão, mas fica" + (n === 1 ? "" : "m") + " fora desta estimativa, como os itens de pré-teste da prova.";
+}
+/* o item conta na estimativa? (mesma regra, item a item) */
+export const contaNaEstimativa = (q, itens, step = q?.step) => !(q?.legado && publicosForaDaEstimativa(itens, step));
+
+export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS_MODO, usarCalibrado = true, desde = null, ate = null, efeitoModo = null, publicos = "regra" } = {}) {
   const get = itens instanceof Map ? (id) => itens.get(id) : (id) => itens?.[id];
+  const tirarPublicos = publicos !== "incluir" && publicosForaDaEstimativa(itens, step);
+  let foraPublicos = 0;
   const ordenadas = (respostas || []).map((r, i) => ({ r, i })).sort((a, b) =>
     String(a.r.respondida_em || "").localeCompare(String(b.r.respondida_em || "")) || a.i - b.i);
   const vistos = new Set();
@@ -472,6 +509,7 @@ export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS
   for (const { r } of ordenadas) {
     const q = get(r.questao_id);
     if (!q || (step && q.step !== step)) { ignoradas++; continue; }
+    if (tirarPublicos && q.legado && (!step ? publicosForaDaEstimativa(itens, q.step) : true)) { if (!vistos.has(r.questao_id)) { vistos.add(r.questao_id); foraPublicos++; } continue; }
     const t = r.respondida_em ? Date.parse(r.respondida_em) : null;
     if (dIni !== null && t !== null && t < dIni) continue;
     if (dFim !== null && t !== null && t > dFim) continue;
@@ -491,7 +529,7 @@ export function prepararRespostas(respostas, itens, { step = null, pesos = PESOS
     const delta = r.modo === "tutor" && Number.isFinite(efeitoModo?.delta) ? efeitoModo.delta : 0;
     usadas.push({ questao_id: q.id, item: q, b: bDoItem(q, { usarCalibrado }) - delta, x: r.correta ? 1 : 0, w, modo: r.modo, origem });
   }
-  return { usadas, ignoradas };
+  return { usadas, ignoradas, publicos_fora: foraPublicos };
 }
 
 /* Perfil por área em relação ao examinando no limiar, como no relatório oficial de
@@ -549,8 +587,9 @@ export const DIMENSOES_PERFIL = Object.freeze({ step1: ["sistema", "disciplinas"
              c ~ N(mu, ep²), no lugar do provisório (seção 6.2) */
 export function estimarAluno({ step, respostas, itens, sistemas = null, pesosSistemas = null, bsFormulario = null, pesos = PESOS_MODO, regra = REGRA_CONFIANCA, usarCalibrado = true, modeloDesfechos = null, modeloEscore = null, ligacaoNbme = null, priori = PRIORI_PADRAO, desde = null, ate = null, efeitoModo = null, sigmaCorte = undefined, ponderar = true } = {}) {
   const todos = itens instanceof Map ? [...itens.values()] : Object.values(itens || {});
-  const doStep = todos.filter((q) => q.step === step);
-  const { usadas: brutas, ignoradas } = prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate, efeitoModo });
+  const semPublicos = publicosForaDaEstimativa(itens, step);
+  const doStep = todos.filter((q) => q.step === step && !(semPublicos && q.legado));
+  const { usadas: brutas, ignoradas, publicos_fora } = prepararRespostas(respostas, itens, { step, pesos, usarCalibrado, desde, ate, efeitoModo });
   const pond = ponderar && pesosSistemas ? ponderarPeloOutline(brutas, pesosSistemas) : { usadas: brutas, fatores: {}, distancia: null, mistura: {} };
   const usadas = pond.usadas;
   let inc = Number.isFinite(sigmaCorte) ? { sigma: sigmaCorte, origem: sigmaCorte > 0 ? "informada" : "sem_incerteza" } : incertezaCorte(brutas);
@@ -606,6 +645,7 @@ export function estimarAluno({ step, respostas, itens, sistemas = null, pesosSis
     acertos: est.acertos,
     taxa_bruta: est.n ? est.acertos / est.n : null,
     ignoradas,
+    publicos_fora: { n: publicos_fora, regra: semPublicos },
     theta: est.theta,
     dp: est.dp,
     ic90: est.ic90,

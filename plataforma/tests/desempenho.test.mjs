@@ -245,3 +245,9 @@ test("última atividade conta o banco de questões e os simulados completos", as
   const c = resumirParticipante({ perfil, agora, respostas: [{ respondida_em: "2026-10-28T10:00:00Z" }], simuladosCompletos: [{ atualizado_em: "2026-10-29T09:00:00Z" }] });
   assert.equal(c.ultima_atividade, "2026-10-29T09:00:00.000Z", "dia de prova parado no meio, ainda sem respostas gravadas");
 });
+
+test("relógio adiantado: atividade gravada no futuro conta como hoje, nunca dias negativos", () => {
+  const a = avaliarParticipante(linha({ ultima_atividade: diasAtras(-1) }), { agora: AGORA });
+  assert.equal(a.dias_sem_estudo, 0);
+  assert.equal(a.status, "em_dia");
+});

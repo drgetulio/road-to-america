@@ -489,7 +489,9 @@ export function prioridadeAtencao(rows, limite = 6) {
 /* Texto curto da última atividade */
 export function textoUltimaAtividade(r) {
   if (!r.ultima_atividade) return "Nunca estudou";
-  const d = r.dias_sem_estudo;
+  /* com o relógio adiantado em relação à data gravada, a diferença pode sair negativa:
+     o limite é 0 ("Hoje"), nunca "Há -1 dias" */
+  const d = Math.max(0, Number(r.dias_sem_estudo) || 0);
   if (d === 0) return "Hoje";
   if (d === 1) return "Ontem";
   return "Há " + d + " dias";

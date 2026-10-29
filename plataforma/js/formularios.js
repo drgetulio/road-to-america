@@ -19,6 +19,7 @@
 import { TAXONOMIA, DIMENSOES, CAMPO_MULTIRROTULO, assinaturaBanco, hashTexto, normalizarFormulariosGravados } from "./banco.js";
 export { normalizarFormulariosGravados };
 import { rng } from "./simulado.js";
+import { publicosForaDaEstimativa } from "./psicometria.js";
 
 const MIN = 60 * 1000;
 export const TEMPOS_OFICIAIS = Object.freeze({
@@ -698,18 +699,19 @@ export function montarFormularioFixo(banco, step, codigo, tipo = "completo", { i
   return form;
 }
 
-/* Itens fora do corte num formulário fixo: os itens públicos (legado, os 80 de
-   simulado/data/, com gabarito e explicação no repositório aberto) continuam no
+/* Itens fora do corte num formulário (fixo ou personalizado): os itens públicos (legado,
+   os 80 de simulado/data/, com gabarito e explicação no repositório aberto) continuam no
    formulário, para não mudar a composição nem o tempo, mas não entram na estimativa,
-   como os itens de pré-teste da prova real. Só vale quando o formulário também tem
-   itens privados: no modo demonstração, com os 80 públicos apenas, todos contam.
-   Devolve um Set de ids. */
+   como os itens de pré-teste da prova real. É a regra única de
+   publicosForaDaEstimativa() (psicometria.js; PSICOMETRIA.md, seção 23): vale quando o
+   banco carregado tem itens privados do mesmo Step; no modo demonstração, com os 80
+   públicos apenas, todos contam. Devolve um Set de ids. */
 export function itensForaDoCorte(form, porId) {
-  if (!form || form.modo !== "fixo") return new Set();
+  if (!form) return new Set();
   const get = porId instanceof Map ? (id) => porId.get(id) : (id) => porId?.[id];
   const ids = (form.blocos || []).flat();
   const legado = ids.filter((id) => get(id)?.legado);
-  if (!legado.length || legado.length === ids.filter((id) => get(id)).length) return new Set();
+  if (!legado.length || !publicosForaDaEstimativa(porId, form.step || get(legado[0])?.step || null)) return new Set();
   return new Set(legado);
 }
 

@@ -618,6 +618,48 @@ export function resumoRevisao(itens) {
   return { ...c, sem_medica: sem, aviso };
 }
 
+/* Figura gerada por programa (traçado de ECG, curva, gráfico, heredograma, esquema) ou
+   imagem clínica real (radiografia, tomografia, fotografia de pele, lâmina, esfregaço)?
+   A figura do acervo próprio traz na fonte "gerado por programa" ou "gerada por programa"
+   (ou é declarada obra própria); qualquer outra imagem com licença conta como clínica real.
+   CONTRATO-ITEM.md, campo midia. */
+export const ehFiguraGerada = (m) => /gerad[ao] por programa|obra própria/i.test([m?.fonte, m?.licenca, m?.credito].join(" "));
+export const ehImagemClinicaReal = (m) => m?.tipo === "imagem" && !!m?.licenca && !ehFiguraGerada(m);
+
+/* Resumo da mídia de uma lista de itens, para os avisos das telas do aluno: quantos itens
+   têm figura, quantos trazem imagem clínica real licenciada e quantos descrevem em texto um
+   achado que a prova mostraria como imagem (etiqueta exibicao-em-texto; as etiquetas não
+   vão para o aluno no Supabase, e aí exibicao_em_texto fica null). */
+export function resumoMidia(itens) {
+  const lista = (itens || []).filter(Boolean);
+  const r = { total: lista.length, com_figura: 0, com_imagem_real: 0, com_audio_video: 0, exibicao_em_texto: null };
+  let comTags = false, exib = 0;
+  for (const q of lista) {
+    const m = Array.isArray(q.midia) ? q.midia : [];
+    if (m.some((x) => x?.tipo === "imagem")) r.com_figura++;
+    if (m.some(ehImagemClinicaReal)) r.com_imagem_real++;
+    if (m.some((x) => x?.tipo === "audio" || x?.tipo === "video")) r.com_audio_video++;
+    if (Array.isArray(q.tags) && q.tags.length) comTags = true;
+    if ((q.tags || []).includes("exibicao-em-texto")) exib++;
+  }
+  if (comTags) r.exibicao_em_texto = exib;
+  return r;
+}
+
+/* Frase única sobre a mídia, usada no relatório, na página dos simulados completos e no
+   painel do banco. onde: "deste formulário", "do Step 1 no banco" etc. */
+export function textoMidia(r, onde = "") {
+  if (!r?.total) return "";
+  const de = " dos " + r.total + " itens" + (onde ? " " + onde : "");
+  const fig = r.com_figura ? r.com_figura + de + (r.com_figura === 1 ? " tem figura" : " têm figura") : "Nenhum" + de + " tem figura";
+  const gerada = r.com_figura && r.com_figura > r.com_imagem_real ? " (traçados de ECG, curvas, gráficos, heredogramas e esquemas gerados por programa)" : "";
+  const exib = r.exibicao_em_texto ? " (em " + r.exibicao_em_texto + (r.exibicao_em_texto === 1 ? " item)" : " itens)") : "";
+  const real = r.com_imagem_real
+    ? " " + r.com_imagem_real + (r.com_imagem_real === 1 ? " traz" : " trazem") + " imagem clínica real licenciada; nos demais, radiografia, tomografia, pele, lâmina e esfregaço aparecem descritos no texto" + exib + "."
+    : " Não há imagem clínica real licenciada (radiografia, tomografia, fotografia de pele, lâmina ou esfregaço): esses achados aparecem descritos no texto" + exib + ".";
+  return fig + gerada + "." + real + (r.com_audio_video ? "" : " Não há áudio nem vídeo.");
+}
+
 /* Mídia do item: [{ tipo, src, alt, legenda, licenca, fonte, credito, transcricao }]
    (transcricao para áudio e vídeo). Itens sem mídia devolvem lista vazia. */
 export function normalizarMidia(m) {
