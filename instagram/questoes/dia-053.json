@@ -1,0 +1,95 @@
+{
+  "dia": 53,
+  "data": "2026-12-24",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Placenta prévia",
+  "conceito": "Painless third-trimester bleeding: ultrasound before any digital exam (placenta previa)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-25",
+  "gancho": "Véspera de Natal no plantão: foto primeiro ou toque primeiro?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um garçom de rodízio numa ceia de Natal decorada, segurando quatro espetos cobertos com tampinhas, diante de uma almofada macia e um relógio; a plaquinha de duas cores ainda está de lado.",
+    "foco": "50% 35%",
+    "alt": "Um garçom de rodízio numa ceia de Natal decorada, segurando quatro espetos cobertos com tampinhas, diante de uma almofada macia e um relógio; a plaquinha de duas cores ainda está de lado.",
+    "arquivo": "dia-053.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: as tampinhas saem; o garçom vira o lado vermelho para o espeto com uma luva de procedimento dobrada e o lado verde para o espeto com um transdutor de ultrassom que mostra uma telinha brilhante.",
+    "alt": "Primeiro a foto, depois o toque",
+    "arquivo": "dia-053-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old woman, gravida 3 para 2, at 32 weeks gestation has sudden painless bright red vaginal bleeding. She had two previous cesarean deliveries and no prenatal care. Pulse is 92/min and BP 116/72 mm Hg. The uterus is soft and nontender. Fetal heart rate tracing is reassuring.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Digital cervical examination",
+        "quiz": "Digital exam"
+      },
+      "B": {
+        "texto": "Ultrasonography to locate the placenta",
+        "quiz": "Ultrasound"
+      },
+      "C": {
+        "texto": "Immediate cesarean delivery",
+        "quiz": "Immediate cesarean"
+      },
+      "D": {
+        "texto": "Oxytocin induction of labor",
+        "quiz": "Oxytocin"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *foto*, depois o *toque*",
+    "certa": [
+      "Sangramento vermelho vivo e indolor no terceiro trimestre, com útero mole, é *placenta previa* até prova em contrário. Sem pré-natal, ninguém sabe onde está a placenta, então a conduta é *ultrasonography* (transabdominal e, se preciso, transvaginal com cuidado) antes de qualquer *digital exam*, que pode provocar hemorragia grave. Duas cesáreas prévias também aumentam o risco de acretismo, que o ultrassom ajuda a avaliar."
+    ],
+    "termos": [
+      "placenta previa",
+      "painless third-trimester bleeding",
+      "no digital exam",
+      "transvaginal ultrasound"
+    ],
+    "erradas": {
+      "A": "Toque vaginal com placenta prévia pode romper vasos e causar sangramento maciço; é contraindicado até a placenta ser localizada.",
+      "C": "Mãe e feto estão estáveis com 32 semanas; cesárea imediata fica para sangramento intenso, instabilidade ou sofrimento fetal.",
+      "D": "Induzir parto vaginal sem saber onde está a placenta é perigoso, e a prévia contraindica o parto vaginal."
+    },
+    "macete": {
+      "frase": "Sangrou sem dor? *Foto antes do toque*",
+      "apoio": "Pegadinha de prova: O NBME separa prévia de descolamento pela dor: prévia é indolor com útero mole; descolamento dói e o útero fica duro e sensível.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Gestante de 32 semanas, sangramento vermelho vivo que começou sem dor, útero tranquilo e bebê bem. O garçom do rodízio de GO traz quatro espetos.",
+    "palavras_chave": [
+      "third-trimester bleeding",
+      "prior cesarean delivery",
+      "soft uterus",
+      "obstetric emergency"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

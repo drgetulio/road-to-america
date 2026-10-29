@@ -1,0 +1,99 @@
+{
+  "dia": 213,
+  "data": "2027-06-02",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Hiperparatireoidismo primário",
+  "conceito": "Primary hyperparathyroidism: high calcium, high PTH, low phosphate",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-03",
+  "tom": null,
+  "gancho": "Alguém está *saqueando o cofre* de cálcio dos ossos",
+  "gancho_apoio": "Pedra no rim, intestino preso e cálcio alto no exame. Quem deu a ordem?",
+  "imagem": {
+    "arquivo": "dia-213.png",
+    "cena": "Um cofrinho em forma de osso é esvaziado sozinho: moedas brancas de giz saem e caem num riacho, que desce até um pequeno dique em forma de feijão onde pedrinhas se acumulam. Bolinhas azuis seguem rio abaixo.",
+    "foco": "50% 35%",
+    "alt": "Alguém está saqueando o cofre de cálcio dos ossos"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-213-macete.png",
+    "cena": "Callback: o mesmo cenário visto de longe. Atrás do cofre, num banquinho em forma de gravata-borboleta (a tireoide), estão quatro ervilhas verdes; três pequenas dormem e uma, enorme, segura um megafone e manda esvaziar o cofre.",
+    "foco": "50% 45%",
+    "alt": "Cálcio alto com PTH alto: paratireoide no comando"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman has fatigue, constipation, and a recent calcium oxalate kidney stone. Serum calcium is 11.6 mg/dL, phosphate 2.2 mg/dL, and parathyroid hormone 145 pg/mL (normal 10 to 65). Her 24-hour urinary calcium excretion is elevated. Serum creatinine is normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Humoral hypercalcemia of malignancy",
+        "quiz": "PTHrP do tumor"
+      },
+      "B": {
+        "texto": "Secondary hyperparathyroidism",
+        "quiz": "HPT secundário"
+      },
+      "C": {
+        "texto": "Familial hypocalciuric hypercalcemia",
+        "quiz": "FHH"
+      },
+      "D": {
+        "texto": "Primary hyperparathyroidism",
+        "quiz": "HPT primário"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Cálcio alto com PTH alto: *paratireoide* no comando",
+    "certa": [
+      "Cálcio alto com PTH alto (ou inapropriadamente normal) é *primary hyperparathyroidism*, quase sempre por um *parathyroid adenoma*. O PTH tira cálcio do osso, aumenta a reabsorção de cálcio no túbulo distal e joga fosfato fora na urina, por isso o fósforo cai. Com tanto cálcio filtrado, a calciúria sobe e aparecem os cálculos."
+    ],
+    "termos": [
+      "primary hyperparathyroidism",
+      "parathyroid adenoma",
+      "hypophosphatemia",
+      "hypercalciuria"
+    ],
+    "erradas": {
+      "A": "Na *humoral hypercalcemia of malignancy*, o PTHrP do tumor sobe o cálcio e o PTH verdadeiro fica suprimido.",
+      "B": "No *secondary hyperparathyroidism* da doença renal crônica, o cálcio está baixo ou normal e o fósforo alto; aqui a creatinina é normal.",
+      "C": "Na *familial hypocalciuric hypercalcemia*, o receptor sensor de cálcio funciona mal e a calciúria é baixa, não alta."
+    },
+    "macete": {
+      "frase": "*Pedras, ossos, gemidos e trono*: o PTH esvaziou o cofre",
+      "apoio": "Na imagem, uma das quatro ervilhas da paratireoide cresceu e dá ordens de megafone: o cofre de osso se esvazia, as pedrinhas param no rim e o fosfato vai embora rio abaixo. Cálcio alto com PTH alto é ela; PTH baixo, procure outro culpado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cálculo renal, intestino preso, cansaço, cálcio alto, fósforo baixo e PTH alto. O cofre dos ossos está sendo esvaziado. Qual é o diagnóstico?",
+    "palavras_chave": [
+      "fatigue",
+      "constipation",
+      "kidney stone",
+      "high serum calcium"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#Fisiologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Cálcio alto, fósforo baixo e PTH alto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

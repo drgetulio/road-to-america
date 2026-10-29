@@ -1,0 +1,95 @@
+{
+  "dia": 48,
+  "data": "2026-12-19",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Sensibilidade e especificidade",
+  "conceito": "SnNOut and SpPIn: a negative highly sensitive test rules out, a positive highly specific test rules in",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-20",
+  "gancho": "O alarme apita até com pão na chapa. E quando fica mudo?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Viés na cozinha de uma padaria, meio escondido atrás de uma tabela 2x2, olhando para um detector de fumaça no teto enquanto um pão francês tosta na chapa.",
+    "foco": "50% 35%",
+    "alt": "Viés na cozinha de uma padaria, meio escondido atrás de uma tabela 2x2, olhando para um detector de fumaça no teto enquanto um pão francês tosta na chapa.",
+    "arquivo": "dia-048.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o detector de fumaça está em silêncio, com a luzinha verde, e a cozinha inteira está calma e sem fogo; o Viés relaxa encostado na tabela 2x2 tomando um cafezinho.",
+    "alt": "SnNOut: sensível e negativo, fora",
+    "arquivo": "dia-048-macete.png"
+  },
+  "questao": {
+    "vinheta": "A new rapid blood test for deep venous thrombosis has 99% sensitivity and 60% specificity. A 45-year-old woman with low pretest probability of deep venous thrombosis is tested, and the result is negative.",
+    "pergunta": "Which is the most appropriate conclusion?",
+    "alternativas": {
+      "A": {
+        "texto": "The positive predictive value is 99%",
+        "quiz": "PPV is 99%"
+      },
+      "B": {
+        "texto": "Deep venous thrombosis is effectively ruled in",
+        "quiz": "DVT ruled in"
+      },
+      "C": {
+        "texto": "Specificity is too low to trust a negative",
+        "quiz": "Low Sp: distrust"
+      },
+      "D": {
+        "texto": "Deep venous thrombosis is effectively ruled out",
+        "quiz": "DVT ruled out"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*SnNOut*: sensível e negativo, *fora*",
+    "certa": [
+      "Um teste muito *sensitive* quase não deixa doente passar como negativo, então quase não há falso negativo. Por isso um resultado negativo num teste sensível, em quem tem baixa probabilidade pré-teste, praticamente *rules out* a doença (*SnNOut*). A especificidade baixa só significa muitos falsos positivos, o que pesa quando o resultado é positivo."
+    ],
+    "termos": [
+      "sensitivity",
+      "SnNOut",
+      "SpPIn",
+      "pretest probability"
+    ],
+    "erradas": {
+      "A": "Sensibilidade não é valor preditivo positivo; com especificidade de 60%, o VPP é baixo.",
+      "B": "Resultado negativo não confirma doença; confirmar é papel de um positivo num teste muito específico (SpPIn).",
+      "C": "Especificidade baixa afeta a confiança no positivo, não no negativo; o negativo depende da sensibilidade."
+    },
+    "macete": {
+      "frase": "Detector sensível *mudo* = *não tem fogo*",
+      "apoio": "Pegadinha de prova: O NBME embaralha sensibilidade com valor preditivo e pergunta qual teste usar para rastrear (sensível) e qual para confirmar (específico).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um teste rápido muito sensível e pouco específico, uma paciente de baixo risco e um resultado negativo. O Viés quer saber o que você conclui.",
+    "palavras_chave": [
+      "new diagnostic test",
+      "deep venous thrombosis",
+      "negative result",
+      "low clinical suspicion"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Teste sensível deu negativo. E agora?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

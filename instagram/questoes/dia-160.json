@@ -1,0 +1,87 @@
+{
+  "dia": 160,
+  "data": "2027-04-10",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Intérprete profissional",
+  "conceito": "Language barrier: use a professional medical interpreter, not a family member",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-11",
+  "tom": null,
+  "gancho": "Consentimento em outra língua: quem *traduz* essa conversa?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-160.png",
+    "cena": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar. Um adolescente segura um dicionário de bolso, um celular no banco mostra só ondinhas e um telefone com fone espera num suporte na parede.",
+    "foco": "50% 35%",
+    "alt": "No corredor do hospital, duas bolhas de fala de cores diferentes flutuam perto uma da outra sem se encontrar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-160-macete.png",
+    "cena": "O telefone com fone acende em verde e vira uma ponte de luz entre as duas bolhas de fala, que enfim se tocam. O neto guarda o dicionário na mochila e faz sinal de positivo da cadeira da sala de espera.",
+    "alt": "Procedimento se traduz com intérprete profissional"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old Portuguese-speaking woman with limited English is admitted to a US hospital with chest pain, and coronary angiography is recommended. Her 17-year-old grandson, who is fluent in English, offers to translate the consent discussion. The hospital has a 24-hour professional telephone interpreter service.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Use the professional telephone interpreter",
+        "quiz": "Intérprete oficial"
+      },
+      "B": {
+        "texto": "Use the grandson as the interpreter",
+        "quiz": "Neto traduz"
+      },
+      "C": {
+        "texto": "Use a smartphone translation app",
+        "quiz": "App de tradução"
+      },
+      "D": {
+        "texto": "Explain in simple English with gestures",
+        "quiz": "Inglês e gestos"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Procedimento se traduz com *intérprete profissional*",
+    "certa": [
+      "Quando o paciente tem proficiência limitada em inglês, a conduta é usar um *professional medical interpreter*, presencial, por vídeo ou por telefone. O intérprete treinado traduz com precisão, mantém a confidencialidade e não filtra informações, o que pesa ainda mais numa conversa de *informed consent*."
+    ],
+    "termos": [
+      "limited English proficiency",
+      "professional medical interpreter",
+      "informed consent",
+      "confidentiality"
+    ],
+    "erradas": {
+      "B": "Familiar, ainda mais menor de idade, pode omitir ou suavizar informação, quebra a privacidade e não domina os termos médicos; só se usa em emergência sem outra opção.",
+      "C": "Aplicativo de tradução erra termos médicos e não garante compreensão; não substitui intérprete num consentimento.",
+      "D": "Inglês simples e gestos não garantem que a paciente entenda riscos e alternativas, e o consentimento fica inválido."
+    },
+    "macete": {
+      "frase": "A família traduz o pedido de pão de queijo na padaria; *procedimento* quem traduz é o *intérprete profissional*.",
+      "apoio": "O NBME oferece o familiar bilíngue, o funcionário que \"fala um pouco\" e o aplicativo: a resposta é o intérprete profissional, mesmo por telefone, salvo emergência sem alternativa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com uma cena que muito brasileiro vai viver nos EUA: a paciente só fala português, e o neto bilíngue se oferece para ajudar. É um caso clássico de comunicação na prova.",
+    "palavras_chave": [
+      "language barrier",
+      "family member translator",
+      "coronary angiography",
+      "communication"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Paciente só fala português. Quem traduz?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

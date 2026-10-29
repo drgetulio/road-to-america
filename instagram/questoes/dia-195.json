@@ -1,0 +1,87 @@
+{
+  "dia": 195,
+  "data": "2027-05-15",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Pedido de exame sem indicação",
+  "conceito": "Patient demands MRI for low back pain without red flags: explore concerns and explain why it is not indicated",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-16",
+  "tom": null,
+  "gancho": "Ele quer *ressonância* para dor nas costas. O que você diz?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-195.png",
+    "cena": "Na vitrine de uma padaria, uma ressonância desenhada como uma rosquinha gigante coberta de confeitos; do lado de fora, uma placa de trânsito em forma de balança, e no balcão uma xícara de café ainda vazia.",
+    "foco": "50% 35%",
+    "alt": "Ele quer ressonância para dor nas costas. O que você diz?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-195-macete.png",
+    "cena": "O balconista, em vez de embrulhar a rosquinha, serve o cafezinho e puxa a cadeira para uma conversa; num quadro ao lado, cinco bandeirinhas vermelhas estão todas abaixadas, e a rosquinha continua na vitrine.",
+    "alt": "Primeiro a preocupação, depois a explicação"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has had low back pain for 10 days after moving furniture. He denies fever, weight loss, prior cancer, and bowel or bladder changes; neurologic examination is normal. He insists on an MRI because a coworker had one.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "\"I will order the MRI so you can feel reassured.\"",
+        "quiz": "Peço a RM"
+      },
+      "B": {
+        "texto": "\"What worries you most about your back pain?\"",
+        "quiz": "O que mais preocupa?"
+      },
+      "C": {
+        "texto": "\"Your insurance will not pay for that test.\"",
+        "quiz": "O plano não cobre"
+      },
+      "D": {
+        "texto": "\"There is nothing wrong, so it will go away.\"",
+        "quiz": "Não tem nada"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *preocupação*, depois a explicação",
+    "certa": [
+      "Na dor lombar aguda sem sinais de alarme (*red flags*), imagem não muda a conduta, encontra achados sem importância e pode levar a procedimentos desnecessários. Antes de explicar isso, o melhor passo é perguntar o que preocupa o paciente (*explore concerns*): o medo por trás do pedido guia a explicação e o plano de calor, atividade e analgesia."
+    ],
+    "termos": [
+      "low back pain",
+      "red flags",
+      "explore concerns",
+      "Choosing Wisely"
+    ],
+    "erradas": {
+      "A": "Pedir o exame só para tranquilizar contraria a evidência e expõe o paciente a achados incidentais e custos.",
+      "C": "Culpar o plano de saúde tira a decisão do médico e não responde ao que o paciente sente.",
+      "D": "Dizer que não há nada desvaloriza a dor e fecha a conversa; a dor é real, mesmo sem indicação de exame."
+    },
+    "macete": {
+      "frase": "Dor lombar sem bandeira vermelha: primeiro o *cafezinho da conversa* (o que te preocupa?), depois a explicação; a *rosquinha da ressonância* fica na vitrine da padaria.",
+      "apoio": "O NBME oferece pedir o exame para agradar, culpar o seguro ou encerrar o assunto; a resposta certa é uma pergunta aberta sobre a preocupação do paciente.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés na comunicação. Dor lombar de dez dias, exame normal e um pedido firme por ressonância. A prova cobra a frase que respeita o paciente e a evidência ao mesmo tempo.",
+    "palavras_chave": [
+      "acute low back pain",
+      "lifting injury",
+      "patient request for MRI",
+      "communication"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Paciente exige RM sem indicação. O que dizer?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

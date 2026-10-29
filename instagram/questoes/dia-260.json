@@ -1,0 +1,99 @@
+{
+  "dia": 260,
+  "data": "2027-07-19",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Doença granulomatosa crônica",
+  "conceito": "Chronic granulomatous disease: NADPH oxidase defect, catalase-positive infections, abnormal DHR test",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-20",
+  "tom": null,
+  "gancho": "Macrô engoliu o bicho, e o bicho *saiu andando*",
+  "gancho_apoio": "Abscessos de repetição por estafilococo e Aspergillus. O que falha dentro do fagócito?",
+  "imagem": {
+    "arquivo": "dia-260.png",
+    "cena": "Macrô, de guardanapo xadrez, está de barriga cheia, e dentro dela micróbios sorridentes carregam pequenos extintores vermelhos e passeiam como se estivessem num shopping. Ao fundo, a porta da cozinha do boteco está fechada.",
+    "foco": "50% 35%",
+    "alt": "Macrô engoliu o bicho, e o bicho saiu andando"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-260-macete.png",
+    "cena": "O fogão da cozinha tem a válvula de gás quebrada e nenhuma chama acende; os micróbios com extintor apagam as poucas faíscas que sobram. Ao lado do fogão, uma lâmpada de teste continua apagada. Num quadrinho no canto, um micróbio sem extintor se apaga com as próprias faíscas.",
+    "foco": "50% 40%",
+    "alt": "Sem NADPH oxidase, sem explosão"
+  },
+  "questao": {
+    "vinheta": "A 3-year-old boy has had recurrent Staphylococcus aureus skin abscesses, a liver abscess, and Aspergillus pneumonia. His neutrophil count is normal. After stimulation, his neutrophils show no fluorescence on dihydrorhodamine flow cytometry. There is no history of delayed umbilical cord separation or partial albinism.",
+    "pergunta": "Which neutrophil function is most likely defective?",
+    "alternativas": {
+      "A": {
+        "texto": "Adhesion to endothelium via CD18 integrins",
+        "quiz": "Adesão (CD18)"
+      },
+      "B": {
+        "texto": "Fusion of phagosomes with lysosomes",
+        "quiz": "Fusão fagolisossomo"
+      },
+      "C": {
+        "texto": "Conversion of hydrogen peroxide to hypochlorous acid",
+        "quiz": "Fazer hipoclorito"
+      },
+      "D": {
+        "texto": "Generation of superoxide by the respiratory burst",
+        "quiz": "Burst respiratório"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Sem *NADPH oxidase*, sem explosão",
+    "certa": [
+      "Na *chronic granulomatous disease* falta a *NADPH oxidase*, que gera superóxido na *respiratory burst*. Sem ela, o fagócito engole mas não mata direito os germes *catalase-positive* (como *S. aureus*, *Aspergillus*, *Burkholderia*, *Serratia* e *Nocardia*), que destroem o próprio peróxido. O teste da *dihydrorhodamine* (DHR) sem fluorescência confirma o diagnóstico."
+    ],
+    "termos": [
+      "NADPH oxidase",
+      "respiratory burst",
+      "catalase-positive",
+      "dihydrorhodamine test"
+    ],
+    "erradas": {
+      "A": "Falha na adesão por *CD18* é a deficiência de adesão leucocitária, com atraso na queda do coto umbilical e neutrofilia sem pus.",
+      "B": "Defeito na fusão do fagolisossomo é a síndrome de *Chédiak-Higashi*, com albinismo parcial e grânulos gigantes.",
+      "C": "Na falta de *myeloperoxidase* o superóxido continua sendo gerado e a maioria das pessoas não tem sintomas; quando há, costuma ser Candida, não abscessos graves por estafilococo e Aspergillus."
+    },
+    "macete": {
+      "frase": "Na DGC, o *fogão não acende* e o bicho do *extintor* faz a festa",
+      "apoio": "A barriga cheia do Macrô mostra que engolir não é o problema: o fogão (NADPH oxidase) é que não acende. Os micróbios com extintor são os catalase-positivos, e a lâmpada apagada é o DHR negativo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Abscessos de repetição por S. aureus e uma pneumonia por Aspergillus num menino de 3 anos. O fagócito come, mas e depois?",
+    "palavras_chave": [
+      "recurrent abscesses",
+      "Aspergillus pneumonia",
+      "neutrophil flow cytometry",
+      "normal neutrophil count"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Imunologia",
+      "#Microbiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que falha no fagócito?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

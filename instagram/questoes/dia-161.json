@@ -1,0 +1,94 @@
+{
+  "dia": 161,
+  "data": "2027-04-11",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: SCID por deficiência de ADA (dia 71), HPV e câncer do colo do útero (dia 127), Cólera (dia 155)",
+  "conceito": "Remix: ADA-deficient SCID + HPV 16 and 18 oncogenesis + Vibrio cholerae toxin",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    71,
+    127,
+    155
+  ],
+  "explicacao_em": "2027-04-12",
+  "tom": null,
+  "gancho": "Remix de domingo: três mecanismos e um *impostor* na pista",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-161.png",
+    "cena": "Toca-discos com três discos de rótulos coloridos (uma fábrica com a chaminé entupida, uma célula com dois cadeados e um interruptor de luz) e um quarto disco impostor de bigode falso e óculos escuros.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos de rótulos coloridos (uma fábrica com a chaminé entupida, uma célula com dois cadeados e um interruptor de luz) e um quarto disco impostor de bigode fal"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-161-macete.png",
+    "cena": "O disco da fábrica entupida toca e brilha verde, com engrenagens travadas por bolinhas (o dATP na ribonucleotídeo redutase). Os discos dos cadeados e do interruptor ganham um risco vermelho (pares trocados) e o impostor perde o bigode.",
+    "alt": "ADA: o dATP entope a fábrica de DNA"
+  },
+  "questao": {
+    "vinheta": "A student reviews four mechanism flashcards from the last two months before an exam. Only one of them is accurate.",
+    "pergunta": "Which flashcard is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Pertussis toxin permanently activates Gs",
+        "quiz": "Pertussis ativa Gs"
+      },
+      "B": {
+        "texto": "HPV 16 E6 protein binds and inactivates Rb",
+        "quiz": "HPV: E6 inativa Rb",
+        "dia": 127
+      },
+      "C": {
+        "texto": "Cholera toxin ADP-ribosylates Gi",
+        "quiz": "Cólera: ribosila Gi",
+        "dia": 155
+      },
+      "D": {
+        "texto": "Adenosine deaminase deficiency: excess dATP inhibits ribonucleotide reductase",
+        "quiz": "ADA: dATP trava RNR",
+        "dia": 71
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "ADA: o *dATP* entope a fábrica de DNA",
+    "certa": [
+      "Sem *adenosine deaminase*, a desoxiadenosina vira excesso de *dATP* dentro dos linfócitos. O dATP inibe a *ribonucleotide reductase*, falta desoxirribonucleotídeo para copiar DNA e os linfócitos T e B não proliferam: *SCID* autossômica recessiva."
+    ],
+    "termos": [
+      "adenosine deaminase",
+      "dATP",
+      "ribonucleotide reductase",
+      "E6 and p53",
+      "E7 and Rb"
+    ],
+    "erradas": {
+      "A": "Impostor: a pertussis ribosila a Gi e tira o freio da adenilato ciclase; ela não ativa a Gs.",
+      "B": "Dia 127: no HPV, a E6 degrada a p53 e a E7 inativa a Rb; o cartão trocou as duas.",
+      "C": "Dia 155: a toxina da cólera ribosila a Gs e a deixa ligada; quem mexe na Gi é a pertussis."
+    },
+    "macete": {
+      "frase": "*ADA* entope a fábrica de DNA com dATP. *E7* derruba o *Rb* de Rebelde (sete letras), e a p53 fica para a E6. A cólera *cola* a Gs no ON; a pertussis rouba o freio Gi.",
+      "apoio": "No remix, o NBME troca pares parecidos (E6 e E7, Gs e Gi) para ver se você guardou o mecanismo ou só o nome.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com três mecanismos de Step 1 que já passaram por aqui (dias 71, 127 e 155) e um impostor. Só um cartão está certo do começo ao fim.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual mecanismo está certo?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

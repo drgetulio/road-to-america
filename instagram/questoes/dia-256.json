@@ -1,0 +1,99 @@
+{
+  "dia": 256,
+  "data": "2027-07-15",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "TDAH",
+  "conceito": "ADHD: symptoms in 2 or more settings with onset before age 12",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-16",
+  "tom": null,
+  "gancho": "No rodízio do DSM, *uma mesa só* não fecha a conta",
+  "gancho_apoio": "A professora relata, e os pais contam a mesma coisa em casa. Qual é o diagnóstico?",
+  "imagem": {
+    "arquivo": "dia-256.png",
+    "cena": "O garçom do rodízio, sorridente, carrega espetos e olha para duas mesas diferentes: uma tem o formato de uma casinha, a outra de uma escola com sininho. Nas duas, os pratos estão vazios, esperando. Na parede, um relógio redondo sem números.",
+    "foco": "50% 35%",
+    "alt": "No rodízio do DSM, uma mesa só não fecha a conta"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-256-macete.png",
+    "cena": "O garçom serve as duas mesas ao mesmo tempo, e cada uma levanta a plaquinha verde de sim. O relógio da parede mostra os ponteiros um pouco antes do meio-dia, lembrando que os sintomas começaram antes dos 12 anos.",
+    "foco": "50% 40%",
+    "alt": "Dois ambientes, antes dos 12"
+  },
+  "questao": {
+    "vinheta": "An 8-year-old boy's teacher reports that for the past year he often leaves his seat, interrupts classmates, loses materials, and makes careless mistakes. His parents see the same restlessness during homework and family meals. He is cheerful, not defiant, and reads at grade level. Hearing and vision are normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Attention-deficit/hyperactivity disorder",
+        "quiz": "TDAH"
+      },
+      "B": {
+        "texto": "Oppositional defiant disorder",
+        "quiz": "TOD (opositor)"
+      },
+      "C": {
+        "texto": "Specific learning disorder",
+        "quiz": "Transt. aprendizagem"
+      },
+      "D": {
+        "texto": "Disruptive mood dysregulation disorder",
+        "quiz": "DMDD"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Dois ambientes, *antes dos 12*",
+    "certa": [
+      "O DSM-5-TR exige pelo menos seis sintomas de desatenção e/ou de hiperatividade e impulsividade (cinco a partir dos 17 anos) por pelo menos 6 meses, com vários deles presentes antes dos 12 anos e em *two or more settings*, como casa e escola. Aqui há sintomas dos dois grupos, há mais de 6 meses, na escola e em casa, com prejuízo e sem outra explicação melhor: é *attention-deficit/hyperactivity disorder*, apresentação combinada."
+    ],
+    "termos": [
+      "two or more settings",
+      "onset before age 12",
+      "DSM-5-TR",
+      "combined presentation"
+    ],
+    "erradas": {
+      "B": "No *oppositional defiant disorder* o centro é raiva, discussão e desafio aos adultos, e ele não é desafiador.",
+      "C": "No *specific learning disorder* a dificuldade fica numa habilidade acadêmica; ele lê no nível da série e tem sintomas também em casa.",
+      "D": "O *disruptive mood dysregulation disorder* exige explosões de raiva frequentes e humor irritável quase todo dia, o que não aparece aqui."
+    },
+    "macete": {
+      "frase": "TDAH no rodízio: *duas mesas* e servido *antes do meio-dia*",
+      "apoio": "O garçom precisa servir pelo menos duas mesas (casa e escola), e o relógio marca pouco antes do meio-dia: sintomas em dois ou mais ambientes, começando antes dos 12 anos, por mais de 6 meses.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sintomas na escola e em casa há um ano, sem desafio aos adultos e sem dificuldade de leitura. O que o DSM diz?",
+    "palavras_chave": [
+      "school-age boy",
+      "teacher report",
+      "restlessness",
+      "careless mistakes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Psiquiatria",
+      "#Pediatria",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é o diagnóstico?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

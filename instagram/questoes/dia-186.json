@@ -1,0 +1,87 @@
+{
+  "dia": 186,
+  "data": "2027-05-06",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Desacelerações tardias",
+  "conceito": "Late decelerations: uteroplacental insufficiency, start intrauterine resuscitation",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-07",
+  "tom": null,
+  "gancho": "O traçado só desce *depois* do pico da contração. E agora?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-186.png",
+    "cena": "O garçom do rodízio chega à mesa com seis espetos de uma vez, apressado; um balão vermelho em forma de coração, amarrado na cadeira, dá uma afundadinha sempre logo depois que cada espeto passa, e a plaquinha de duas cores ainda está de lado.",
+    "foco": "50% 35%",
+    "alt": "O traçado só desce depois do pico da contração. E agora?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-186-macete.png",
+    "cena": "O garçom fecha a torneira de um soro pendurado ao lado do balcão (a ocitocina), vira a cadeira de lado e vira a plaquinha para o vermelho para os espetos extras; o balão-coração volta a flutuar alto e firme.",
+    "alt": "Desaceleração tardia: ressuscitação intrauterina"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old primigravida in active labor at 39 weeks' gestation is receiving oxytocin augmentation. Six contractions occur every 10 minutes. Fetal heart tracing shows a baseline of 140/min, minimal variability, and recurrent decelerations whose nadir follows the peak of each contraction.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Perform an immediate cesarean delivery",
+        "quiz": "Cesárea imediata"
+      },
+      "B": {
+        "texto": "Increase oxytocin to shorten labor",
+        "quiz": "Aumentar ocitocina"
+      },
+      "C": {
+        "texto": "Stop oxytocin and turn her to the left side",
+        "quiz": "Parar ocitocina"
+      },
+      "D": {
+        "texto": "Start amnioinfusion through a catheter",
+        "quiz": "Amnioinfusão"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Desaceleração tardia: *ressuscitação intrauterina*",
+    "certa": [
+      "Desaceleração que chega ao fundo depois do pico da contração é *late deceleration*: sinal de *uteroplacental insufficiency*. Aqui a causa é a *tachysystole* (mais de 5 contrações em 10 minutos) pela ocitocina. O primeiro passo é a *intrauterine resuscitation*: suspender a ocitocina, decúbito lateral, hidratação venosa e correção de hipotensão; se não melhorar, parto rápido."
+    ],
+    "termos": [
+      "late deceleration",
+      "uteroplacental insufficiency",
+      "tachysystole",
+      "intrauterine resuscitation"
+    ],
+    "erradas": {
+      "A": "A cesárea imediata fica para traçado categoria III ou para o que não responde às medidas de ressuscitação; este traçado é categoria II.",
+      "B": "Aumentar a ocitocina piora a taquissistolia e reduz ainda mais a troca de oxigênio na placenta.",
+      "D": "A amnioinfusão serve para desacelerações variáveis por compressão do cordão, não para insuficiência uteroplacentária."
+    },
+    "macete": {
+      "frase": "*VEAL CHOP*: Variable é Cord, Early é Head, Acceleration é OK, *Late é Placenta*. No rodízio, o garçom trouxe espeto demais: o oxigênio chega atrasado. Feche a torneira da ocitocina e vire a mãe de lado.",
+      "apoio": "O NBME mostra desaceleração tardia com ocitocina e oferece cesárea logo de cara; a resposta é corrigir a causa primeiro (parar ocitocina, posição, volume) e reavaliar o traçado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta no espeto da obstetrícia: trabalho de parto com ocitocina, contrações demais e um traçado que desce sempre atrasado. Qual é o primeiro movimento da equipe?",
+    "palavras_chave": [
+      "active labor",
+      "oxytocin augmentation",
+      "frequent contractions",
+      "fetal heart tracing"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Desaceleração tardia com ocitocina. Primeiro passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

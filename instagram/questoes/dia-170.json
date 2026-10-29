@@ -1,0 +1,87 @@
+{
+  "dia": 170,
+  "data": "2027-04-20",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Crise adrenal",
+  "conceito": "Adrenal crisis: give IV hydrocortisone immediately, do not wait for tests",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-21",
+  "tom": null,
+  "gancho": "Pressão no chão, sódio baixo, potássio alto: qual *saída* pegar?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-170.png",
+    "cena": "Placa verde de rodovia com três saídas e, no acostamento, duas glandulinhas em forma de chapéu triangular murchas em cima de dois feijões, com um copo de café vazio caído ao lado e uma prancheta de exames num banco.",
+    "foco": "50% 35%",
+    "alt": "Placa verde de rodovia com três saídas e, no acostamento, duas glandulinhas em forma de chapéu triangular murchas em cima de dois feijões, com um copo de café vazio caído ao lado e"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-170-macete.png",
+    "cena": "Uma bolsa de soro em forma de garrafa térmica de café pinga nas duas glândulas, que se levantam como flores regadas. A primeira saída da placa acende verde, e a prancheta de exames espera no banco.",
+    "alt": "Crise adrenal: o cortisol vem antes da papelada"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old woman with primary adrenal insufficiency takes hydrocortisone and fludrocortisone. After 2 days of vomiting from gastroenteritis, she is lethargic. She is hypotensive (78/44 mm Hg) and tachycardic (124/min). Sodium is 128 mEq/L, potassium 5.7 mEq/L, and glucose 61 mg/dL. Isotonic saline is running.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Cosyntropin stimulation test first",
+        "quiz": "Teste da cortrosina"
+      },
+      "B": {
+        "texto": "Intravenous hydrocortisone 100 mg now",
+        "quiz": "Hidrocortisona IV"
+      },
+      "C": {
+        "texto": "Increase the oral fludrocortisone dose",
+        "quiz": "Mais fludrocortisona"
+      },
+      "D": {
+        "texto": "Norepinephrine infusion alone",
+        "quiz": "Só noradrenalina"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Crise adrenal: o *cortisol* vem antes da papelada",
+    "certa": [
+      "Insuficiência adrenal conhecida, vômitos (ela não absorveu o remédio), choque, hiponatremia, hipercalemia e hipoglicemia é *adrenal crisis*. A conduta é *IV hydrocortisone* 100 mg na hora, seguida de 200 mg nas 24 horas, com soro fisiológico e glicose. Em dose alta, a hidrocortisona também tem efeito mineralocorticoide."
+    ],
+    "termos": [
+      "adrenal crisis",
+      "IV hydrocortisone",
+      "primary adrenal insufficiency",
+      "hyperkalemia"
+    ],
+    "erradas": {
+      "A": "Teste de estímulo não muda a conduta de quem já tem o diagnóstico e só atrasa o tratamento.",
+      "C": "Fludrocortisona oral não resolve choque, ela está vomitando e a hidrocortisona em dose alta já cobre o mineralocorticoide.",
+      "D": "Vasopressor sem corticoide funciona mal na crise adrenal, porque sem cortisol os vasos respondem pouco às catecolaminas."
+    },
+    "macete": {
+      "frase": "Adrenal sem cortisol é plantão sem café: tudo cai. Na crise, o *café* (hidrocortisona IV) vem *antes* da papelada (exames).",
+      "apoio": "O NBME oferece o teste da cortrosina ou a dosagem de ACTH antes do corticoide; na instabilidade, trata primeiro, e no paciente sem diagnóstico colhe cortisol e ACTH e dá hidrocortisona sem esperar o resultado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça. Paciente com insuficiência adrenal conhecida, dois dias de vômitos e pressão no chão. A placa tem três saídas e o tempo está correndo.",
+    "palavras_chave": [
+      "primary adrenal insufficiency",
+      "gastroenteritis",
+      "hypotension",
+      "hypoglycemia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Addison, choque e K alto. Próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

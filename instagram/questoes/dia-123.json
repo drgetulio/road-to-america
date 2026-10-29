@@ -1,0 +1,95 @@
+{
+  "dia": 123,
+  "data": "2027-03-04",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Bronquiolite",
+  "conceito": "RSV bronchiolitis: supportive care, no routine bronchodilators or steroids",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-05",
+  "tom": null,
+  "gancho": "No rodízio do bebê chiador, qual *espeto* você aceita?",
+  "gancho_apoio": "Nariz escorrendo, chiado e um garçom oferecendo de tudo. Calma.",
+  "imagem": {
+    "arquivo": "dia-123.png",
+    "cena": "Garçom de churrascaria rodízio oferece quatro espetos a uma mesa vazia: um de copinhos de nebulização, um de comprimidos, um de cápsulas e um com um aspirador nasal de pera e uma mamadeira. Ele segura a plaquinha verde e vermelha virada de lado.",
+    "foco": "50% 35%",
+    "alt": "Garçom de rodízio oferecendo quatro espetos: nebulização, comprimidos, cápsulas e aspirador nasal com mamadeira."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-123-macete.png",
+    "cena": "Callback: o garçom vira a plaquinha verde para o prato do aspirador nasal e da mamadeira e a vermelha para os espetos de remédio, que ele recolhe educadamente.",
+    "foco": "50% 40%",
+    "alt": "Garçom mostra o lado verde para o aspirador nasal e a mamadeira e recolhe os espetos de remédio."
+  },
+  "questao": {
+    "vinheta": "A 4-month-old girl has had rhinorrhea and cough for 3 days. Temperature is 38.1°C, respirations are 48/min and SpO2 is 95% on room air. She has mild subcostal retractions with diffuse wheezes and fine crackles. She is breastfeeding a little less than usual and has normal wet diapers.",
+    "pergunta": "Which is the most appropriate management?",
+    "alternativas": {
+      "A": {
+        "texto": "Nebulized albuterol",
+        "quiz": "Salbutamol inalado"
+      },
+      "B": {
+        "texto": "Oral prednisolone",
+        "quiz": "Prednisolona oral"
+      },
+      "C": {
+        "texto": "Nasal suctioning and supportive care",
+        "quiz": "Aspirar e suporte"
+      },
+      "D": {
+        "texto": "Oral amoxicillin",
+        "quiz": "Amoxicilina oral"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Bronquiolite: *suporte*, não remédio de asma",
+    "certa": [
+      "Lactente com coriza, depois tosse, sibilos e crepitações difusos tem bronquiolite viral, quase sempre pelo RSV. O tratamento é de suporte: aspiração nasal, hidratação e oxigênio reservado para SpO2 menor que 90%. A diretriz da AAP não recomenda broncodilatador, corticoide, antibiótico nem raio X de rotina."
+    ],
+    "termos": [
+      "RSV bronchiolitis",
+      "supportive care",
+      "nasal suctioning",
+      "AAP guideline"
+    ],
+    "erradas": {
+      "A": "Salbutamol não muda o curso da bronquiolite e não é recomendado de rotina pela AAP.",
+      "B": "Corticoide sistêmico não reduz internação nem tempo de doença na bronquiolite.",
+      "D": "Antibiótico não trata vírus; só entra se houver infecção bacteriana documentada, como otite."
+    },
+    "macete": {
+      "frase": "Bronquiolite no rodízio: *aspira, hidrata e observa*; o resto é \"não, obrigado\"",
+      "apoio": "Na imagem, a plaquinha verde fica ao lado do aspirador nasal e da mamadeira.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, estação pediatria: um lactente com nariz escorrendo e chiado. O garçom traz quatro opções e só uma entra no prato.",
+    "palavras_chave": [
+      "rhinorrhea and cough",
+      "wheezes and crackles",
+      "infant",
+      "breastfeeding"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pediatria",
+      "#Pediatrics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Lactente com bronquiolite: qual a conduta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

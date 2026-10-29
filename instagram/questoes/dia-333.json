@@ -1,0 +1,100 @@
+{
+  "dia": 333,
+  "data": "2027-09-30",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Febre pós-operatória",
+  "conceito": "Postoperative fever by timing: urinary infection after day 3, wound infection around days 5 to 7",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-01",
+  "tom": null,
+  "gancho": "Rodízio da febre: *cada espeto passa na sua hora*",
+  "gancho_apoio": "Febre no sexto dia depois de uma colectomia. Qual espeto chegou?",
+  "imagem": {
+    "arquivo": "dia-333.png",
+    "cena": "Garçom de rodízio segura cinco espetos, cada um com um ícone no topo: nuvem de vento, gota de água, tênis de caminhada, curativo adesivo e cápsula de remédio; atrás, um relógio de parede sem números.",
+    "foco": "50% 35%",
+    "alt": "Rodízio da febre: cada espeto passa na sua hora"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-333-macete.png",
+    "cena": "Callback: o garçom serve só o espeto do curativo adesivo e levanta a plaquinha verde; os outros quatro espetos ficam no apoio, com a face vermelha da plaquinha virada para eles.",
+    "foco": "50% 45%",
+    "alt": "Dias 5 a 7 com incisão inflamada: surgical site infection"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old woman has a temperature of 38.6°C on postoperative day 6 after open sigmoid colectomy. Her urinary catheter was removed on day 2, she walks the halls, and she has no cough or dysuria. Calves are nontender. The midline incision is warm, red, and tender, with cloudy drainage.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Atelectasis",
+        "quiz": "Atelectasia"
+      },
+      "B": {
+        "texto": "Catheter-associated urinary infection",
+        "quiz": "ITU por sonda"
+      },
+      "C": {
+        "texto": "Surgical site infection",
+        "quiz": "Infecção de ferida"
+      },
+      "D": {
+        "texto": "Deep vein thrombosis",
+        "quiz": "TVP"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dias 5 a 7 com incisão inflamada: *surgical site infection*",
+    "certa": [
+      "Febre entre os dias 5 e 7 com incisão quente, vermelha, dolorosa e drenando secreção turva é *surgical site infection* (infecção de ferida operatória). O dia sugere a lista e o exame decide: aqui, nada de tosse, disúria ou panturrilha dolorosa. A conduta é abrir e drenar a incisão e associar antibiótico se houver celulite ou sinais sistêmicos."
+    ],
+    "termos": [
+      "surgical site infection",
+      "postoperative fever",
+      "wound",
+      "five Ws"
+    ],
+    "erradas": {
+      "A": "Atelectasia fica nas primeiras 24 a 48 horas e nem é causa comprovada de febre; aqui não há tosse nem sinal pulmonar.",
+      "B": "Infecção urinária costuma surgir a partir do dia 3, mas a sonda saiu no dia 2 e não há disúria; a incisão aponta outro foco.",
+      "D": "TVP aparece por volta dos dias 4 a 6, mas as panturrilhas estão indolores e o achado está na ferida."
+    },
+    "macete": {
+      "frase": "*Os 5 Ws do rodízio*: Wind, Water, Walking, Wound, Wonder drugs",
+      "apoio": "O garçom traz os espetos em ordem: vento (pulmão, dias 1 e 2), água (urina, a partir do dia 3), caminhada (TVP, dias 4 a 6), ferida (dias 5 a 7) e remédio (qualquer dia). No dia 6, o espeto da ferida ganha a plaquinha verde.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sexto dia depois de uma colectomia aberta, febre de 38,6 °C, a paciente anda pelo corredor e a sonda já saiu. No rodízio da febre pós-operatória, qual espeto chegou à mesa?",
+    "palavras_chave": [
+      "postoperative day 6",
+      "sigmoid colectomy",
+      "fever",
+      "incision findings"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Surgery",
+      "#ClinicaCirurgica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Febre no 6º dia pós-op e incisão vermelha:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

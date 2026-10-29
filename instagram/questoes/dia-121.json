@@ -1,0 +1,95 @@
+{
+  "dia": 121,
+  "data": "2027-03-02",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Tamponamento cardíaco",
+  "conceito": "Cardiac tamponade: Beck triad and pulsus paradoxus, pericardiocentesis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-03",
+  "tom": null,
+  "gancho": "Coração querendo sambar numa *cabine telefônica* apertada",
+  "gancho_apoio": "Seis horas depois de uma ablação, a pressão despencou. O que está apertando esse coração?",
+  "imagem": {
+    "arquivo": "dia-121.png",
+    "cena": "Um coração simpático, de cocar de Carnaval, tenta sambar dentro de uma cabine telefônica estreita, com os braços espremidos no vidro. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+    "foco": "50% 35%",
+    "alt": "Coração de cocar de Carnaval tentando sambar, espremido numa cabine telefônica estreita; ao fundo, placa verde de três saídas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-121-macete.png",
+    "cena": "Callback: agora se vê por que a cabine aperta: ela está cheia de água até a cintura do coração. Um canudo comprido e gentil drena a água pela portinhola de baixo (pericardiocentese) e o coração abre os braços e samba. Ao lado, os três sinais de Beck em fila: balão murcho (pressão baixa), mangueira estufada (jugular) e tamborim com toalha (bulhas abafadas).",
+    "foco": "50% 40%",
+    "alt": "A cabine aparece cheia de água e um canudo a esvazia; o coração samba aliviado ao lado de balão murcho, mangueira estufada e tamborim abafado."
+  },
+  "questao": {
+    "vinheta": "Six hours after catheter ablation for atrial fibrillation, a 64-year-old woman becomes dyspneic and lightheaded. BP 84/62 mm Hg; heart rate 122/min. Systolic pressure falls 16 mm Hg on inspiration. Jugular veins are distended, heart sounds are muffled, the trachea is midline and the lungs are clear.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Tension pneumothorax",
+        "quiz": "Pneumotórax hipert."
+      },
+      "B": {
+        "texto": "Cardiac tamponade",
+        "quiz": "Tamponamento"
+      },
+      "C": {
+        "texto": "Constrictive pericarditis",
+        "quiz": "Pericardite constr."
+      },
+      "D": {
+        "texto": "Massive pulmonary embolism",
+        "quiz": "TEP maciço"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Tríade de Beck e *pulso paradoxal*",
+    "certa": [
+      "Hipotensão, jugulares cheias e bulhas abafadas formam a tríade de Beck (Beck triad), e a queda da sistólica de mais de 10 mm Hg na inspiração é o pulsus paradoxus. Depois de ablação, a perfuração do átrio enche o pericárdio de sangue e o coração não consegue relaxar para encher. A conduta no paciente instável é a pericardiocentese guiada por ecocardiograma."
+    ],
+    "termos": [
+      "Beck triad",
+      "pulsus paradoxus",
+      "electrical alternans",
+      "pericardiocentesis"
+    ],
+    "erradas": {
+      "A": "Pneumotórax hipertensivo desvia a traqueia e tira o murmúrio vesicular de um lado; aqui a traqueia está central e os pulmões estão limpos.",
+      "C": "Pericardite constritiva é crônica, com sinal de Kussmaul e knock pericárdico, e não aparece seis horas depois de um procedimento.",
+      "D": "TEP maciço dá hipoxemia e dilatação do VD, mas não deixa as bulhas abafadas."
+    },
+    "macete": {
+      "frase": "Beck é a *bateria abafada*: balão murcho, mangueira estufada, tamborim com toalha",
+      "apoio": "Na imagem de ontem a cabine apertava; hoje se vê a água em volta do coração, e o canudo esvazia a cabine.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: pressão baixa depois de um procedimento cardíaco, pescoço cheio e um detalhe na inspiração que vale ouro.",
+    "palavras_chave": [
+      "catheter ablation",
+      "hypotension",
+      "distended neck veins",
+      "muffled heart sounds"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#Cardiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Hipotensão pós-ablação: qual o diagnóstico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

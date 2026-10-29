@@ -1,0 +1,95 @@
+{
+  "dia": 4,
+  "data": "2026-11-05",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
+  "topico": "Cadeirinha no carro",
+  "conceito": "Child car seat: rear-facing as long as possible, at least until about age 2",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-06",
+  "tom": null,
+  "gancho": "A *cadeirinha* quer virar de frente. A pediatria deixa?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-004.png",
+    "cena": "Um garçom de rodízio chega à mesa com um espeto onde estão duas cadeirinhas de carro em miniatura, uma virada para a frente e outra para trás. A plaquinha redonda de mesa, verde de um lado e vermelha do outro, está em pé, esperando a escolha.",
+    "foco": "50% 35%",
+    "alt": "A cadeirinha quer virar de frente. A pediatria deixa?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-004-macete.png",
+    "cena": "Callback do rodízio: o garçom vira a plaquinha para o verde diante da cadeirinha virada para trás, instalada no banco traseiro de um carrinho de brinquedo, com um ursinho de pelúcia tranquilo e de perninhas dobradas. A cadeirinha virada para a frente fica de lado, com a plaquinha no vermelho.",
+    "alt": "De costas até o limite do fabricante"
+  },
+  "questao": {
+    "vinheta": "At a 15-month-old boy's well-child visit, his parents ask whether they can turn his convertible car seat to face forward because his feet now touch the vehicle seat. He weighs 11 kg and is below the seat's rear-facing weight and height limits.",
+    "pergunta": "Which is the most appropriate recommendation?",
+    "alternativas": {
+      "A": {
+        "texto": "Turn the seat forward-facing with the 5-point harness now",
+        "quiz": "De frente, 5 pontos"
+      },
+      "B": {
+        "texto": "Switch to a belt-positioning booster seat",
+        "quiz": "Assento de elevação"
+      },
+      "C": {
+        "texto": "Keep the seat rear-facing until he reaches its rear-facing limits",
+        "quiz": "De costas até limite"
+      },
+      "D": {
+        "texto": "Move the seat to the front passenger seat with the airbag off",
+        "quiz": "Banco da frente"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "De costas até o limite do fabricante",
+    "certa": [
+      "A Academia Americana de Pediatria (AAP) recomenda manter a criança de costas para o movimento (rear-facing) pelo maior tempo possível, até ela atingir o limite de peso ou de altura indicado pelo fabricante da cadeirinha, o que costuma passar dos 2 anos. Nessa posição, o encosto distribui a força da batida pelas costas, pela cabeça e pelo pescoço. Pé encostado no banco do carro não é motivo para virar a cadeirinha."
+    ],
+    "termos": [
+      "rear-facing car seat",
+      "convertible car seat",
+      "booster seat",
+      "AAP"
+    ],
+    "erradas": {
+      "A": "Virar de frente antes do limite troca a proteção do encosto pelo tranco no pescoço; a regra antiga de 1 ano e 9 kg não vale mais.",
+      "B": "O assento de elevação (booster) é para crianças maiores, que já passaram do limite da cadeirinha de frente com cinto de 5 pontos.",
+      "D": "A AAP orienta o banco de trás para todos os menores de 13 anos, e uma cadeirinha de costas nunca deve ficar diante de um airbag ativo."
+    },
+    "macete": {
+      "frase": "Quem manda é a etiqueta da cadeirinha, não o aniversário: de costas até o limite do fabricante. Perninha dobrada não é problema; o pescoço é quem agradece.",
+      "apoio": "Pegadinha de prova: O NBME traz a regra antiga (1 ano e 9 kg) como distrator; a resposta é seguir o limite de peso e de altura da própria cadeirinha.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "O Rodízio de Quinta começa pela pediatria preventiva. A pergunta é das mais comuns na consulta de puericultura nos EUA.",
+    "palavras_chave": [
+      "well-child visit",
+      "car seat",
+      "child passenger safety",
+      "injury prevention"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Puericultura",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que você recomenda sobre a cadeirinha?"
+  },
+  "exemplo": false
+}

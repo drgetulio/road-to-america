@@ -1,0 +1,95 @@
+{
+  "dia": 129,
+  "data": "2027-03-10",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Desenvolvimento humano",
+  "topico": "Hemoglobina fetal",
+  "conceito": "Fetal hemoglobin: binds 2,3-BPG poorly, so it has higher O2 affinity",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-11",
+  "tom": null,
+  "gancho": "Na rodoviária da placenta, o ônibus pequeno *segura* melhor o passageiro",
+  "gancho_apoio": "O oxigênio troca de ônibus mesmo com pouco O2 por perto. Qual é o truque?",
+  "imagem": {
+    "arquivo": "dia-129.png",
+    "cena": "Uma rodoviária em forma de placenta com dois ônibus lado a lado: um grande e vermelho e um pequeno e amarelo. Balõezinhos de oxigênio com perninhas passam de um para o outro, e o Mito observa da plataforma com seu café.",
+    "foco": "50% 35%",
+    "alt": "Rodoviária em forma de placenta: balõezinhos de oxigênio passam do ônibus vermelho para o amarelo; Mito observa."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-129-macete.png",
+    "cena": "Callback: dentro do ônibus vermelho, sacos de areia cinzentos ocupam os bancos e empurram os passageiros O2 para a porta. No ônibus amarelo, os bancos têm um formato em que o saco não encaixa, e os passageiros ficam sentados, abraçados ao banco.",
+    "foco": "50% 40%",
+    "alt": "Sacos de areia empurram os passageiros do ônibus vermelho; no amarelo, os sacos não encaixam e os passageiros ficam."
+  },
+  "questao": {
+    "vinheta": "Oxygen moves from maternal to fetal blood across the placenta even though placental PO2 is low. The fetal oxygen-hemoglobin dissociation curve lies to the left of the adult curve.",
+    "pergunta": "Which property of fetal hemoglobin best explains this shift?",
+    "alternativas": {
+      "A": {
+        "texto": "Weaker binding of 2,3-bisphosphoglycerate",
+        "quiz": "Menos 2,3-BPG"
+      },
+      "B": {
+        "texto": "Stronger binding of 2,3-bisphosphoglycerate",
+        "quiz": "Mais 2,3-BPG"
+      },
+      "C": {
+        "texto": "Greater sensitivity to hydrogen ions",
+        "quiz": "Mais efeito Bohr"
+      },
+      "D": {
+        "texto": "Loss of cooperative oxygen binding",
+        "quiz": "Sem cooperatividade"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "HbF quase não liga *2,3-BPG*",
+    "certa": [
+      "A hemoglobina fetal tem duas cadeias gama no lugar das beta, e a gama liga mal o 2,3-BPG. Como o 2,3-BPG estabiliza a forma que solta o oxigênio, menos 2,3-BPG ligado significa mais afinidade pelo O2. A curva vai para a esquerda e o feto consegue puxar o oxigênio do sangue materno."
+    ],
+    "termos": [
+      "fetal hemoglobin",
+      "gamma chains",
+      "2,3-BPG",
+      "left shift"
+    ],
+    "erradas": {
+      "B": "Ligar mais 2,3-BPG desviaria a curva para a direita e diminuiria a afinidade, o contrário do que o feto precisa.",
+      "C": "Mais sensibilidade ao H+ (efeito Bohr) faria a hemoglobina soltar mais O2, com desvio para a direita.",
+      "D": "A HbF continua cooperativa e tem curva sigmoide; curva sem cooperatividade é a da mioglobina."
+    },
+    "macete": {
+      "frase": "2,3-BPG é a *mala que empurra* o O2; a HbF não deixa a mala sentar",
+      "apoio": "Na imagem, os sacos de areia ocupam os bancos do ônibus vermelho e não cabem no amarelo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê com o Mito: como o feto consegue oxigênio num lugar onde o O2 é pouco?",
+    "palavras_chave": [
+      "placenta",
+      "oxygen-hemoglobin dissociation curve",
+      "fetal circulation",
+      "oxygen affinity"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Fisiologia",
+      "#Physiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Por que a curva da HbF vai à esquerda?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

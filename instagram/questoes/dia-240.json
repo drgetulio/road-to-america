@@ -1,0 +1,99 @@
+{
+  "dia": 240,
+  "data": "2027-06-29",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Cólica renal",
+  "conceito": "Suspected kidney stone: noncontrast CT, tamsulosin helps distal stones up to 10 mm",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-30",
+  "tom": null,
+  "gancho": "Dor do flanco à virilha: *que exame o Seu Néfron pede?*",
+  "gancho_apoio": "Hematúria, cólica e nenhum sinal de infecção. Com contraste ou sem?",
+  "imagem": {
+    "arquivo": "dia-240.png",
+    "cena": "Seu Néfron, de gravata e óculos, examina com uma lupa um cano transparente que desce em zigue-zague; dentro, uma pedrinha branca quase escondida. Na mesa ao lado, uma lata de tinta branca e um aparelho em forma de rosquinha.",
+    "foco": "50% 35%",
+    "alt": "Dor do flanco à virilha: que exame o Seu Néfron pede?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-240-macete.png",
+    "cena": "Callback: dois painéis lado a lado. No primeiro, a tinta branca derramada no cano deixa tudo branco e a pedrinha some. No segundo, sem tinta, o aparelho em forma de rosquinha mostra a pedrinha brilhando, e o Seu Néfron carimba de verde, satisfeito.",
+    "foco": "50% 45%",
+    "alt": "Suspeita de cálculo: tomografia sem contraste"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has sudden, severe left flank pain radiating to the groin, with nausea. He cannot find a comfortable position. Temperature is 37.0°C. Urinalysis shows blood but no nitrites or leukocyte esterase. Serum creatinine is normal.",
+    "pergunta": "Which is the most appropriate initial imaging study?",
+    "alternativas": {
+      "A": {
+        "texto": "Noncontrast CT of the abdomen and pelvis",
+        "quiz": "TC sem contraste"
+      },
+      "B": {
+        "texto": "Contrast-enhanced CT of the abdomen and pelvis",
+        "quiz": "TC com contraste"
+      },
+      "C": {
+        "texto": "Plain abdominal radiograph",
+        "quiz": "Raio X simples"
+      },
+      "D": {
+        "texto": "Intravenous pyelography",
+        "quiz": "Urografia excretora"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Suspeita de cálculo: *tomografia sem contraste*",
+    "certa": [
+      "Na suspeita de *nephrolithiasis*, a *noncontrast CT* de abdome e pelve, de baixa dose, é o exame mais sensível e mostra tamanho e posição do cálculo, inclusive os de ácido úrico. O contraste esconderia a pedra, que já aparece branca na tomografia. Cálculo distal de até 10 mm, com dor controlada e sem infecção, pode receber *tamsulosin* (*medical expulsive therapy*); na gestante e na criança, o ultrassom vem primeiro."
+    ],
+    "termos": [
+      "nephrolithiasis",
+      "noncontrast CT",
+      "medical expulsive therapy",
+      "tamsulosin"
+    ],
+    "erradas": {
+      "B": "O contraste iodado fica tão branco quanto a pedra no sistema coletor e atrapalha a visão do cálculo.",
+      "C": "O raio X simples não mostra cálculos de ácido úrico e perde muitos pequenos, sobre o osso ou no ureter.",
+      "D": "A urografia excretora foi substituída pela tomografia, usa contraste e demora mais."
+    },
+    "macete": {
+      "frase": "*Pedra já é branca*: na tomografia, não precisa pintar",
+      "apoio": "Na imagem, o Seu Néfron, de lupa, procura uma pedrinha branca num cano; quando a tinta branca (o contraste) é derramada, tudo fica branco e a pedra some. Sem tinta, a pedra aparece.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor súbita no flanco esquerdo que desce para a virilha, náuseas, sangue na urina e nenhum sinal de infecção. Creatinina normal. Qual é o exame de imagem inicial?",
+    "palavras_chave": [
+      "flank pain",
+      "radiation to the groin",
+      "hematuria",
+      "restlessness"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Urologia",
+      "#Urology",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Cólica renal típica: qual o exame inicial?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

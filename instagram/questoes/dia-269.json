@@ -1,0 +1,99 @@
+{
+  "dia": 269,
+  "data": "2027-07-28",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Sorologia da hepatite B",
+  "conceito": "Hepatitis B window period: HBsAg and anti-HBs both negative, IgM anti-HBc positive",
+  "personagem": null,
+  "gancho_data": "Dia Mundial das Hepatites (28/7) e Julho Amarelo.",
+  "remix_de": null,
+  "explicacao_em": "2027-07-29",
+  "tom": null,
+  "gancho": "Julho Amarelo: no prédio da hepatite B, *só o porteiro* ficou",
+  "gancho_apoio": "HBsAg negativo, anti-HBs negativo e IgM anti-HBc positivo. Em que fase ele está?",
+  "imagem": {
+    "arquivo": "dia-269.png",
+    "cena": "A portaria de um prédio de apartamentos numa manhã de sol, com fitinhas amarelas nas varandas. Só um porteiro simpático, de quepe navy, está no balcão; ao lado dele, duas cadeiras vazias. Na rua tranquila, nenhum caminhão de mudança à vista.",
+    "foco": "50% 35%",
+    "alt": "Julho Amarelo: no prédio da hepatite B, só o porteiro ficou"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-269-macete.png",
+    "cena": "Do lado de fora, um caminhão de mudança vai embora levando o antígeno de superfície (uma bola com espinhos), e outro caminhão, com o anticorpo protetor em forma de Y, ainda vem lá longe na estrada. No intervalo entre os dois, o porteiro (o IgM anti-core) segura a portaria sozinho, confiante.",
+    "foco": "50% 40%",
+    "alt": "Janela: só o IgM anti-HBc"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man had acute hepatitis B diagnosed 3 months ago. He now feels better, and his ALT is falling. Current serology shows HBsAg negative, anti-HBs negative, IgM anti-HBc positive, and HBeAg negative.",
+    "pergunta": "Which best describes his current status?",
+    "alternativas": {
+      "A": {
+        "texto": "Window period of acute infection",
+        "quiz": "Período de janela"
+      },
+      "B": {
+        "texto": "Chronic hepatitis B infection",
+        "quiz": "Hepatite B crônica"
+      },
+      "C": {
+        "texto": "Immunity from vaccination",
+        "quiz": "Imune por vacina"
+      },
+      "D": {
+        "texto": "Resolved infection with immunity",
+        "quiz": "Curado e imune"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Janela: *só o IgM anti-HBc*",
+    "certa": [
+      "No período de janela da *acute hepatitis B*, o *HBsAg* já foi eliminado e o *anti-HBs* ainda não ficou detectável. O único marcador positivo é o *IgM anti-HBc*, que prova infecção recente. Por isso o painel com anti-HBc é necessário para não deixar passar a infecção nessa fase."
+    ],
+    "termos": [
+      "window period",
+      "IgM anti-HBc",
+      "HBsAg",
+      "anti-HBs"
+    ],
+    "erradas": {
+      "B": "Na infecção crônica, o HBsAg continua positivo por mais de 6 meses, e o anti-HBc é IgG.",
+      "C": "Quem é imune pela vacina tem só o anti-HBs positivo, porque a vacina contém apenas HBsAg; o anti-HBc é negativo.",
+      "D": "Na infecção resolvida, o anti-HBs fica positivo junto com o anti-HBc IgG."
+    },
+    "macete": {
+      "frase": "Na janela, *só o porteiro* fica: *IgM anti-HBc*",
+      "apoio": "O caminhão do HBsAg foi embora e o do anti-HBs ainda não chegou; quem segura a portaria é o porteiro, o IgM anti-core. Se a pergunta fala em janela, procure o core.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Julho Amarelo e Dia Mundial das Hepatites. Três meses depois de uma hepatite B aguda, a sorologia mudou. Leia marcador por marcador.",
+    "palavras_chave": [
+      "hepatitis B",
+      "recovery",
+      "falling ALT",
+      "serology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#JulhoAmarelo",
+      "#Hepatologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Em que fase ele está?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

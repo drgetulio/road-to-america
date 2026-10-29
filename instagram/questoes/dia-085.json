@@ -1,0 +1,97 @@
+{
+  "dia": 85,
+  "data": "2027-01-25",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Hanseníase",
+  "conceito": "Mycobacterium leprae: tuberculoid (Th1, few bacilli) vs lepromatous (Th2, many bacilli)",
+  "personagem": "Macrô",
+  "gancho_data": "Janeiro Roxo (conscientização sobre hanseníase). Prepara o remix do Dia Mundial contra a Hanseníase (31/1).",
+  "remix_de": null,
+  "explicacao_em": "2027-01-26",
+  "tom": "acolhedor",
+  "gancho": "Janeiro Roxo: o Macrô e o *granuloma bem organizado*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Macrô, de guardanapo xadrez, na porta do boteco dos micróbios, enfeitada com uma fita roxa de conscientização. Ele olha para dois cenários lado a lado: uma salinha com poucos bacilos e uma sala cheia, sem dizer qual é o caso de hoje.",
+    "foco": "50% 35%",
+    "alt": "Janeiro Roxo: o Macrô e o granuloma bem organizado",
+    "arquivo": "dia-085.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: uma célula T auxiliar entrega ao Macrô um envelope amarelo brilhante (IFN-gama), e ele, ativado, constrói um muro de pedras arrumado em volta dos poucos bacilos. A fita roxa continua na porta.",
+    "alt": "Poucos bacilos, granuloma firme: Th1",
+    "arquivo": "dia-085-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has a single well-demarcated, hypopigmented, anesthetic plaque on his forearm and a thickened, palpable ulnar nerve. Skin biopsy shows well-formed granulomas with very rare acid-fast bacilli.",
+    "pergunta": "Which immune response predominates in this patient?",
+    "alternativas": {
+      "A": {
+        "texto": "Th2 response with IL-4 and IL-10",
+        "quiz": "Th2: IL-4, IL-10"
+      },
+      "B": {
+        "texto": "Th1 response with IFN-gamma and IL-2",
+        "quiz": "Th1: IFN-gamma"
+      },
+      "C": {
+        "texto": "Th17 response with IL-17",
+        "quiz": "Th17: IL-17"
+      },
+      "D": {
+        "texto": "IgE response with eosinophilia",
+        "quiz": "IgE + eosinophils"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Poucos bacilos, granuloma firme: *Th1*",
+    "certa": [
+      "Placa única, bem delimitada, hipocrômica e sem sensibilidade, nervo espessado e granulomas bem formados com raros bacilos é a *tuberculoid leprosy*. Nela predomina a resposta *Th1*: IL-2 e *IFN-gamma* ativam o macrófago, que forma granulomas organizados e contém o *Mycobacterium leprae*. Na *lepromatous leprosy* a resposta é *Th2* (IL-4 e IL-10), o macrófago não é ativado e os bacilos se multiplicam aos montes."
+    ],
+    "termos": [
+      "tuberculoid leprosy",
+      "Th1 response",
+      "IFN-gamma",
+      "lepromatous leprosy"
+    ],
+    "erradas": {
+      "A": "A resposta Th2 é a da forma lepromatosa, com muitas lesões, muitos bacilos e granulomas pouco organizados.",
+      "C": "A resposta Th17 é importante contra fungos e bactérias extracelulares e não define as formas da hanseníase.",
+      "D": "IgE com eosinofilia é a resposta contra helmintos e na alergia, não contra micobactérias."
+    },
+    "macete": {
+      "frase": "Tuberculoide é *Th1 e trancado*, lepromatosa é *lotada*",
+      "apoio": "Pegadinha de prova: O NBME dá a lesão única e anestésica com nervo espessado e pergunta a citocina ou a célula; poucos bacilos e granuloma organizado é Th1 com IFN-gama.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Janeiro Roxo é o mês de conscientização sobre a hanseníase. A questão compara as duas pontas da doença e pergunta qual resposta imune predomina quando há poucos bacilos.",
+    "palavras_chave": [
+      "hypopigmented plaque",
+      "anesthetic skin lesion",
+      "thickened ulnar nerve",
+      "granulomas"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#JaneiroRoxo",
+      "#Hanseniase",
+      "#Microbiology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual resposta imune predomina?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 29,
+  "data": "2026-11-30",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Doença celíaca",
+  "conceito": "Celiac disease: HLA-DQ2/DQ8, IgA anti-tissue transglutaminase as screening",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-01",
+  "tom": null,
+  "gancho": "Macrô investiga: o *ferro* some e ninguém sabe para onde",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-029.png",
+    "cena": "Macrô, de guardanapo xadrez, examina com uma lupa um tapete felpudo (as vilosidades do intestino) que ficou achatado e careca num canto. Ao lado, um cofrinho de ferro está vazio, com a tampa aberta. Quem pisou no tapete fica para amanhã.",
+    "foco": "50% 35%",
+    "alt": "Macrô investiga: o ferro some e ninguém sabe para onde"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-029-macete.png",
+    "cena": "Callback do tapete: ele estava atrás do balcão de uma padaria. Um fiscal em forma de Y, de boné e prancheta (anti-tTG IgA), recolhe uma migalha de glúten num saquinho de prova. Ao lado, dois pãezinhos apresentadores, um com duas sementes e outro com oito (DQ2 e DQ8), mostram a migalha a bolinhas T, que pisoteiam o tapete felpudo. Macrô aponta o fiscal.",
+    "alt": "O fiscal só aparece com pão no balcão"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman has 1 year of bloating, loose stools and fatigue. She has iron deficiency anemia that did not improve with oral iron, and itchy grouped vesicles on her elbows. She eats a regular diet that includes wheat.",
+    "pergunta": "Which is the most appropriate initial test?",
+    "alternativas": {
+      "A": {
+        "texto": "IgA anti-tissue transglutaminase with total IgA",
+        "quiz": "Anti-tTG IgA + IgA"
+      },
+      "B": {
+        "texto": "Anti-Saccharomyces cerevisiae antibodies",
+        "quiz": "ASCA"
+      },
+      "C": {
+        "texto": "Perinuclear ANCA",
+        "quiz": "p-ANCA"
+      },
+      "D": {
+        "texto": "Anti-intrinsic factor antibodies",
+        "quiz": "Antifator intrínseco"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O fiscal só aparece com pão no balcão",
+    "certa": [
+      "Diarreia crônica, falta de ferro que persiste apesar do sulfato ferroso (o ferro é absorvido no duodeno, o segmento mais atingido) e dermatite herpetiforme nos cotovelos apontam para doença celíaca. O teste inicial é a IgA antitransglutaminase tecidual (anti-tTG IgA), feita com a paciente ainda comendo glúten e acompanhada da dosagem de IgA sérica total, já que celíacos têm mais deficiência seletiva de IgA. A confirmação vem da biópsia duodenal, e a doença depende dos alelos HLA-DQ2 ou DQ8, que apresentam a gliadina modificada às células T."
+    ],
+    "termos": [
+      "celiac disease",
+      "tissue transglutaminase IgA",
+      "total IgA",
+      "HLA-DQ2/DQ8",
+      "dermatitis herpetiformis"
+    ],
+    "erradas": {
+      "B": "O ASCA aparece mais na doença de Crohn, que não explica as vesículas nos cotovelos.",
+      "C": "O p-ANCA se associa à retocolite ulcerativa e à colangite esclerosante, e não à doença celíaca.",
+      "D": "O antifator intrínseco é da anemia perniciosa, que é megaloblástica, e não ferropriva."
+    },
+    "macete": {
+      "frase": "Na padaria do intestino, o fiscal é o tTG, e ele só aparece com o pão no balcão (paciente comendo glúten). Peça sempre a IgA total junto, porque às vezes o fiscal está de folga. DQ2 e DQ8: dois pães, oito fatias.",
+      "apoio": "Pegadinha de prova: O NBME traz uma paciente que já cortou o glúten; nesse caso a sorologia e a biópsia podem vir falsamente normais.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: uma anemia que não melhora, um intestino que reclama e uma pista na pele.",
+    "palavras_chave": [
+      "bloating",
+      "iron deficiency anemia",
+      "pruritic vesicles",
+      "wheat"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Gastroenterologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Anemia, diarreia e vesículas: qual exame inicial?"
+  },
+  "exemplo": false
+}

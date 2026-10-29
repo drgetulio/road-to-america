@@ -1,0 +1,102 @@
+{
+  "dia": 119,
+  "data": "2027-02-28",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix das doenças raras: Deficiência de 21-hidroxilase (dia 10), Osteogênese imperfeita (dia 24), Distrofia muscular de Duchenne (dia 73)",
+  "conceito": "Rare disease remix: 21-hydroxylase deficiency + Osteogenesis imperfecta + Duchenne muscular dystrophy",
+  "personagem": null,
+  "gancho_data": "Dia Mundial das Doenças Raras (último dia de fevereiro, 28/2/2027).",
+  "remix_de": [
+    10,
+    24,
+    73
+  ],
+  "explicacao_em": "2027-03-01",
+  "tom": "acolhedor",
+  "gancho": "Dia Mundial das Doenças Raras: qual defeito explica a *fraqueza*?",
+  "gancho_apoio": "Três conceitos já vistos (dias 10, 24 e 73) e um intruso. Qual defeito explica o quadro?",
+  "imagem": {
+    "arquivo": "dia-119.png",
+    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com um forno de padaria, um com vergalhões finos de obra e um com um trem de brinquedo de vagões de três assentos. Ao lado, uma caixa de discos e uma luz suave de fim de tarde.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos: forno de padaria, vergalhões finos e um trem de vagões de três assentos."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-119-macete.png",
+    "cena": "Callback: dois trens de brinquedo com vagões de três assentos coloridos levam uma corda até uma barraca. No de cima falta um assento solto, os passageiros seguintes sentam tortos, um lugar para o lado, e o trem para numa estaçãozinha antes da hora, sem levar a corda. No de baixo falta um vagão inteiro: o trem, mais curto, chega, e a barraca fica firme.",
+    "foco": "50% 40%",
+    "alt": "Dois trens de vagões de três assentos: no de cima falta um assento e o trem para antes da hora; no de baixo falta um vagão e o trem, mais curto, chega à barraca."
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has trouble climbing stairs and rises from the floor by pushing on his thighs with his hands. His calves are enlarged and firm. Serum creatine kinase is 50 times the upper limit of normal. A maternal uncle had similar weakness that began in childhood.",
+    "pergunta": "Which molecular defect is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "COL1A1 mutation reducing type I collagen",
+        "quiz": "COL1A1, colágeno I",
+        "dia": 24
+      },
+      "B": {
+        "texto": "CYP21A2 mutation blocking cortisol synthesis",
+        "quiz": "21-hidroxilase",
+        "dia": 10
+      },
+      "C": {
+        "texto": "In-frame deletion in the dystrophin gene",
+        "quiz": "In-frame na DMD"
+      },
+      "D": {
+        "texto": "Frameshift deletion in the dystrophin gene",
+        "quiz": "Frameshift na DMD",
+        "dia": 73
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Duchenne: deleção que *tira a moldura* de leitura",
+    "certa": [
+      "Fraqueza proximal antes dos 5 anos, sinal de Gowers, panturrilhas aumentadas, CK muito alta e um tio materno afetado apontam para distrofia muscular de Duchenne, ligada ao X. A deleção que desloca a moldura de leitura (frameshift) cria um códon de parada precoce, e a distrofina, que prende o citoesqueleto da fibra à matriz, praticamente não é produzida. O cuidado é multidisciplinar e inclui corticoide."
+    ],
+    "termos": [
+      "Duchenne muscular dystrophy",
+      "dystrophin",
+      "frameshift mutation",
+      "Becker muscular dystrophy"
+    ],
+    "erradas": {
+      "A": "Dia 24: a mutação do colágeno tipo I é a osteogênese imperfeita, com fraturas e esclera azulada, sem CK alta.",
+      "B": "Dia 10: a deficiência de 21-hidroxilase causa perda de sal e virilização, com 17-hidroxiprogesterona alta.",
+      "C": "Intruso: a deleção que mantém a moldura (in-frame) é a distrofia de Becker, com distrofina menor, início mais tarde e evolução mais lenta."
+    },
+    "macete": {
+      "frase": "Um assento a menos *embaralha tudo*; um vagão a menos só encurta o trem",
+      "apoio": "Na imagem, os dois trens mostram a diferença entre perder um assento e perder um vagão inteiro.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo no Dia Mundial das Doenças Raras: hiperplasia adrenal, osteogênese imperfeita e Duchenne. Um menino de 4 anos com dificuldade para subir escadas.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#DoencasRaras",
+      "#Genetica",
+      "#Genetics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Gowers, CK alta e tio materno: qual defeito?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

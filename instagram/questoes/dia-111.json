@@ -1,0 +1,96 @@
+{
+  "dia": 111,
+  "data": "2027-02-20",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Mecanismos de defesa",
+  "conceito": "Defense mechanisms: sublimation channels impulses into acceptable acts, reaction formation does the opposite of the impulse",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-21",
+  "tom": null,
+  "gancho": "O vulcãozinho achou um *destino* para a lava",
+  "gancho_apoio": "Impulso agressivo desde a adolescência e, hoje, campeão e professor de judô. Qual é o mecanismo?",
+  "imagem": {
+    "arquivo": "dia-111.png",
+    "cena": "Um vulcãozinho simpático solta fumaça e anda por uma estrada de terra até uma bifurcação. Um caminho leva a uma oficina de cerâmica com um forno aceso; o outro leva a uma floricultura cheia de buquês.",
+    "foco": "50% 35%",
+    "alt": "Vulcãozinho fumegante numa bifurcação entre uma oficina de cerâmica e uma floricultura."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-111-macete.png",
+    "cena": "Callback: na oficina, a lava do vulcãozinho escorre para o forno e sai como um troféu dourado e brilhante, que ele ergue orgulhoso. Na floricultura, um segundo vulcão com um sorriso exagerado entrega um buquê enorme a outro vulcão, enquanto solta fumaça escondido.",
+    "foco": "50% 40%",
+    "alt": "O vulcãozinho transforma a lava em troféu; outro vulcão sorri demais e entrega flores enquanto solta fumaça escondido."
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man has had strong aggressive impulses since adolescence. Over several years he has channeled them into judo training; he now competes nationally and coaches teenagers at a community club. Friends describe him as calm and patient outside the mat.",
+    "pergunta": "Which defense mechanism is he most likely using?",
+    "alternativas": {
+      "A": {
+        "texto": "Displacement",
+        "quiz": "Deslocamento"
+      },
+      "B": {
+        "texto": "Reaction formation",
+        "quiz": "Formação reativa"
+      },
+      "C": {
+        "texto": "Sublimation",
+        "quiz": "Sublimação"
+      },
+      "D": {
+        "texto": "Acting out",
+        "quiz": "Atuação"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sublimação: o impulso vira *conquista*",
+    "certa": [
+      "Na sublimação (sublimation), um impulso inaceitável é canalizado para uma atividade socialmente valorizada, como esporte, arte ou trabalho. Aqui a agressividade virou treino, competição e ensino, de forma estável ao longo dos anos. É um dos mecanismos de defesa maduros, ao lado do altruísmo, do humor e da supressão."
+    ],
+    "termos": [
+      "sublimation",
+      "defense mechanisms",
+      "reaction formation",
+      "displacement"
+    ],
+    "erradas": {
+      "A": "O deslocamento joga a emoção num alvo mais seguro, como chutar a porta depois de brigar com o chefe, sem transformá-la em algo produtivo.",
+      "B": "A formação reativa faz o oposto do impulso de forma exagerada, como tratar com doçura excessiva alguém de quem se sente raiva.",
+      "D": "A atuação descarrega o impulso em ações impulsivas, como brigas e explosões, para não precisar senti-lo."
+    },
+    "macete": {
+      "frase": "Sublimação: a lava vira *troféu*; formação reativa: o vulcão sorri demais",
+      "apoio": "Na imagem, o vulcãozinho fumegante para numa bifurcação com dois caminhos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado sem viés, comportamento: impulso agressivo desde jovem e, anos depois, um atleta calmo que ensina adolescentes. Qual mecanismo está em ação?",
+    "palavras_chave": [
+      "aggressive impulses",
+      "judo",
+      "coaching",
+      "ego defenses"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#Comportamento"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Agressividade que virou judô: qual defesa?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

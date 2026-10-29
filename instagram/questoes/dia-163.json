@@ -1,0 +1,87 @@
+{
+  "dia": 163,
+  "data": "2027-04-13",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Correção da hiponatremia crônica",
+  "conceito": "Chronic hyponatremia: correct no faster than 8 to 10 mEq/L per day to avoid osmotic demyelination",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-14",
+  "tom": null,
+  "gancho": "O sódio subiu 9 em 6 horas. Seu Néfron carimba o quê?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-163.png",
+    "cena": "Seu Néfron na escrivaninha, com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar. Na mesa, um saleiro e um relógio de parede sem números.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron na escrivaninha, com a pilha de formulários, olha preocupado um bebedouro de escritório que jorra água clara sem parar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-163-macete.png",
+    "cena": "Um carrinho-saleiro dispara pela estrada rumo a uma ponte delicada de madeira; Seu Néfron, de radar na mão, puxa uma alavanca verde de freio e tem ao lado um copo de água com açúcar e um spray nasal, o freio do sódio.",
+    "alt": "Sódio acima da velocidade: freia com DDAVP e água livre"
+  },
+  "questao": {
+    "vinheta": "A 74-year-old woman taking hydrochlorothiazide has 4 days of fatigue and mild confusion without seizures. Serum sodium is 116 mEq/L. The thiazide is stopped and isotonic saline is started. Six hours later, she has produced 2 L of dilute urine and serum sodium is 125 mEq/L.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Continue isotonic saline at the same rate",
+        "quiz": "Manter soro 0,9%"
+      },
+      "B": {
+        "texto": "Switch to 3% hypertonic saline",
+        "quiz": "Trocar por NaCl 3%"
+      },
+      "C": {
+        "texto": "Give desmopressin and 5% dextrose in water",
+        "quiz": "DDAVP + SG 5%"
+      },
+      "D": {
+        "texto": "Start oral tolvaptan",
+        "quiz": "Tolvaptana"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sódio acima da velocidade: *freia* com DDAVP e água livre",
+    "certa": [
+      "Na hiponatremia crônica (mais de 48 horas ou duração desconhecida), o sódio deve subir no máximo *8 a 10 mEq/L em 24 horas*, e 8 nos pacientes de alto risco (sódio de 105 ou menos, hipocalemia, desnutrição, álcool, hepatopatia). Aqui ele subiu 9 em 6 horas porque, sem o tiazídico e com volume reposto, o rim passou a eliminar água livre. A conduta é frear e até baixar de novo o sódio com *desmopressin* e *D5W*, para evitar a *osmotic demyelination syndrome*."
+    ],
+    "termos": [
+      "chronic hyponatremia",
+      "overcorrection",
+      "osmotic demyelination syndrome",
+      "desmopressin"
+    ],
+    "erradas": {
+      "A": "Manter o soro com diurese aquosa vai continuar subindo o sódio e estourar o limite do dia.",
+      "B": "Salina a 3% é para sintomas graves (convulsão, rebaixamento) e aqui só aceleraria a correção excessiva.",
+      "D": "A tolvaptana aumenta a eliminação de água livre e subiria o sódio ainda mais rápido."
+    },
+    "macete": {
+      "frase": "Do baixo para o alto rápido demais, a *ponte* cai (pons). Seu Néfron é o radar da estrada: no máximo *8* por dia no carimbo, e quem passou disso leva multa de *DDAVP com soro glicosado*.",
+      "apoio": "O NBME mostra o sódio subindo rápido por diurese aquosa (parou o tiazídico, repôs volume, tratou a causa) e quer que você reconheça a hipercorreção; a desmielinização aparece dias depois, com disartria, disfagia e tetraparesia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com o Seu Néfron de olho no sódio. A paciente chegou com 116, o tiazídico foi suspenso e, seis horas depois, o número mudou bastante. Qual é o próximo passo?",
+    "palavras_chave": [
+      "hydrochlorothiazide",
+      "serum sodium 116",
+      "dilute urine",
+      "rapid rise in sodium"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Na subiu 9 em 6 h. O que fazer agora?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

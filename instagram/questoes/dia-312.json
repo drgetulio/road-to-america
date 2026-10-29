@@ -1,0 +1,96 @@
+{
+  "dia": 312,
+  "data": "2027-09-09",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Epifisiólise femoral proximal",
+  "conceito": "Slipped capital femoral epiphysis: adolescent with hip or knee pain, surgical pinning",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-10",
+  "tom": null,
+  "gancho": "O joelho reclama, mas o problema *pode estar em outro andar*",
+  "gancho_apoio": "No rodízio de quinta, o garçom traz a sobremesa que escorregou.",
+  "imagem": {
+    "arquivo": "dia-312.png",
+    "cena": "Garçom de rodízio com um espeto de sobremesa: uma casquinha de sorvete em que a bola está escorregando para trás; ao fundo, uma bola de futebol e um campinho. As plaquinhas verde e vermelha estão no bolso do avental.",
+    "foco": "50% 35%",
+    "alt": "O joelho reclama, mas o problema pode estar em outro andar"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-312-macete.png",
+    "cena": "Callback: o garçom crava um espeto de metal atravessando a bola de sorvete e a casquinha, fixando a bola onde ela parou, sem empurrar de volta; ele levanta a plaquinha verde. A bola de futebol descansa num banco.",
+    "foco": "50% 45%",
+    "alt": "Dor no joelho do adolescente: examine o quadril"
+  },
+  "questao": {
+    "vinheta": "A 13-year-old boy has had 4 weeks of dull left knee pain and a limp that worsen after soccer practice. He has no fever. His BMI is at the 97th percentile. Knee examination is normal. Passive flexion of the left hip causes obligatory external rotation, and internal rotation is limited.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Legg-Calvé-Perthes disease",
+        "quiz": "Perthes"
+      },
+      "B": {
+        "texto": "Osgood-Schlatter disease",
+        "quiz": "Osgood-Schlatter"
+      },
+      "C": {
+        "texto": "Slipped capital femoral epiphysis",
+        "quiz": "Epifisiólise (SCFE)"
+      },
+      "D": {
+        "texto": "Transient synovitis",
+        "quiz": "Sinovite transitória"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dor no joelho do adolescente: *examine o quadril*",
+    "certa": [
+      "Adolescente com sobrepeso, dor no joelho ou na coxa, claudicação e *obligatory external rotation* ao fletir o quadril tem *slipped capital femoral epiphysis*. A epífise escorrega para trás sobre a metáfise pela fise enfraquecida, e a dor referida pelo nervo obturatório leva a queixa para o joelho. O diagnóstico vem pelo raio X de quadril em AP e em perfil (frog-leg), e o tratamento é fixação cirúrgica *in situ* com parafuso, sem tentar reduzir."
+    ],
+    "termos": [
+      "slipped capital femoral epiphysis",
+      "obligatory external rotation",
+      "referred knee pain",
+      "in situ screw fixation"
+    ],
+    "erradas": {
+      "A": "*Perthes* é necrose avascular da cabeça femoral em crianças menores, em geral de 4 a 8 anos, com dor que piora aos poucos.",
+      "B": "*Osgood-Schlatter* dói na tuberosidade da tíbia, com exame do quadril normal.",
+      "D": "*Sinovite transitória* ocorre em criança pequena depois de virose e melhora em poucos dias, sem rotação externa obrigatória."
+    },
+    "macete": {
+      "frase": "*Sorvete escorregou da casquinha? Não empurra de volta*: espeta no lugar",
+      "apoio": "A bola de sorvete é a epífise que escorregou da casquinha (o colo do fêmur). O garçom crava um espeto e fixa como está, que é o parafuso in situ. E toda dor no joelho de adolescente pede exame do quadril.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Adolescente de 13 anos, boleiro, com dor surda no joelho e claudicação há 4 semanas, sem febre. O exame do joelho é normal, mas ao fletir o quadril ele roda para fora sozinho. Qual é o diagnóstico?",
+    "palavras_chave": [
+      "adolescent",
+      "knee pain",
+      "limp",
+      "limited hip internal rotation"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Ortopedia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Joelho dói, quadril roda para fora: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

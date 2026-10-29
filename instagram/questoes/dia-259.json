@@ -1,0 +1,105 @@
+{
+  "dia": 259,
+  "data": "2027-07-18",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hemorragia subaracnoide (dia 191), Cólica renal (dia 240), Emergência hipertensiva (dia 254)",
+  "conceito": "Remix: Thunderclap headache + Suspected kidney stone + Hypertensive emergency",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    191,
+    240,
+    254
+  ],
+  "explicacao_em": "2027-07-19",
+  "tom": null,
+  "gancho": "Remix: trovoada, freada e *pedrinha* no mesmo plantão",
+  "gancho_apoio": "Três condutas de dias passados (191, 240 e 254) e um intruso. Qual cartão está certo?",
+  "imagem": {
+    "arquivo": "dia-259.png",
+    "cena": "Toca-discos navy e vermelho com três discos coloridos e um disco intruso torto. Em volta, como plateia, uma pequena nuvem de trovão, um carrinho com o freio de mão puxado e uma pedrinha com cara de teimosa.",
+    "foco": "50% 35%",
+    "alt": "Remix: trovoada, freada e pedrinha no mesmo plantão"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-259-macete.png",
+    "cena": "Só o disco da pedrinha toca: um tobogã de parque aquático, largo e liso, leva a pedrinha sorridente até a saída, enquanto uma chave pequena afrouxa um anel do tobogã para alargá-lo. A nuvem, o carrinho e o disco intruso param perto de uma placa de pare.",
+    "foco": "50% 40%",
+    "alt": "Cálculo distal: tansulosina ajuda"
+  },
+  "questao": {
+    "vinheta": "During Sunday sign-out, an intern reads four teaching cards aloud. Only one card describes management that follows current guidelines.",
+    "pergunta": "Which card is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Thunderclap headache: lumbar puncture before head CT",
+        "quiz": "Trovoada: punção 1o",
+        "dia": 191
+      },
+      "B": {
+        "texto": "Hypertensive emergency: normalize blood pressure within 1 hour",
+        "quiz": "PA normal em 1 hora",
+        "dia": 254
+      },
+      "C": {
+        "texto": "Acute ischemic stroke, no thrombolysis: lower BP to 120/80 at once",
+        "quiz": "AVC: PA 120/80 já"
+      },
+      "D": {
+        "texto": "Distal ureteral stone of 6 mm: tamsulosin can aid passage",
+        "quiz": "Cálculo: tansulosina",
+        "dia": 240
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Cálculo distal: *tansulosina* ajuda",
+    "certa": [
+      "Dia 240: para cálculos do ureter distal de até 10 mm, a *medical expulsive therapy* com *tamsulosin* (alfabloqueador) relaxa a musculatura lisa do ureter e ajuda a eliminação, junto com a analgesia (AINE de primeira linha). O benefício é maior nos cálculos de 5 a 10 mm; febre com obstrução, rim único ou dor refratária pedem descompressão urológica."
+    ],
+    "termos": [
+      "medical expulsive therapy",
+      "tamsulosin",
+      "noncontrast head CT",
+      "permissive hypertension"
+    ],
+    "erradas": {
+      "A": "Dia 191: na cefaleia em trovoada a primeira etapa é a *noncontrast head CT*; a punção lombar entra se a tomografia for normal e a suspeita continuar.",
+      "B": "Dia 254: na emergência hipertensiva se reduz no máximo 25% na primeira hora; normalizar rápido causa isquemia.",
+      "C": "Intruso: no AVC isquêmico sem trombólise, a pressão é permissiva (só se trata acima de 220/120), e baixar a 120/80 piora a penumbra."
+    },
+    "macete": {
+      "frase": "Pedrinha de até *1 cm*: *tobogã* com tansulosina",
+      "apoio": "A pedrinha no tobogã largo é o cálculo descendo com o ureter relaxado pela tansulosina. A nuvem de trovão pede tomografia antes da punção, e o carrinho freia só uma fatia de 25%.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: hemorragia subaracnoide (dia 191), cólica renal (dia 240), emergência hipertensiva (dia 254) e um intruso.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#Emergencia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual cartão está certo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

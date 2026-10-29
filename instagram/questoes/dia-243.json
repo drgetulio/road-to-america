@@ -1,0 +1,99 @@
+{
+  "dia": 243,
+  "data": "2027-07-02",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Gonorreia",
+  "conceito": "Gonorrhea: single IM dose of ceftriaxone 500 mg, add doxycycline if chlamydia is not excluded",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-03",
+  "tom": null,
+  "gancho": "Receita de 2015 no balcão? A *Tia* carimbou: vencida!",
+  "gancho_apoio": "Diplococos gram-negativos e um teste de clamídia que ainda não voltou. Qual é a receita atual?",
+  "imagem": {
+    "arquivo": "dia-243.png",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, segura com dois dedos uma receita amarelada, cheia de teia de aranha, e olha por cima dos óculos. Na prateleira atrás dela, frascos novos e brilhantes esperam. Nada mostra seringa nem caixa de comprimidos.",
+    "foco": "50% 35%",
+    "alt": "Receita de 2015 no balcão? A Tia carimbou: vencida!"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-243-macete.png",
+    "cena": "Tia Meia-Vida entrega um kit: uma seringa única dentro de uma caixinha de presente vermelha e, ao lado, um porta-comprimidos de sete compartimentos com uma cápsula em cada. A receita velha foi para o lixo junto com a teia de aranha.",
+    "foco": "50% 40%",
+    "alt": "Ceftriaxona 500 mg e doxiciclina"
+  },
+  "questao": {
+    "vinheta": "A 23-year-old man has had dysuria and purulent urethral discharge for 3 days. He reports a new sexual partner. Gram stain of the discharge shows gram-negative intracellular diplococci. A chlamydia NAAT is pending. He weighs 75 kg, has no allergies, and is otherwise healthy.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Azithromycin 1 g orally once",
+        "quiz": "Azitro 1 g"
+      },
+      "B": {
+        "texto": "Ciprofloxacin 500 mg orally once",
+        "quiz": "Cipro 500 mg"
+      },
+      "C": {
+        "texto": "Ceftriaxone 250 mg IM once plus azithromycin 1 g orally",
+        "quiz": "Ceftri 250 + azitro"
+      },
+      "D": {
+        "texto": "Ceftriaxone 500 mg IM once plus doxycycline for 7 days",
+        "quiz": "Ceftri 500 + doxi"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Ceftriaxona *500 mg* e doxiciclina",
+    "certa": [
+      "Desde a atualização do *CDC* de 2021, a gonorreia não complicada se trata com *ceftriaxone 500 mg IM* em dose única (1 g se o peso for de 150 kg ou mais). Como a clamídia ainda não foi descartada, entra *doxycycline* oral, 100 mg a cada 12 horas, por uma semana. A azitromicina saiu do esquema padrão por causa da resistência crescente do gonococo."
+    ],
+    "termos": [
+      "ceftriaxone 500 mg IM",
+      "doxycycline",
+      "gram-negative diplococci",
+      "CDC 2021"
+    ],
+    "erradas": {
+      "A": "A azitromicina sozinha não cobre o gonococo com segurança e deixou de fazer parte do esquema padrão.",
+      "B": "O gonococo tem alta resistência às *fluoroquinolones*; a ciprofloxacina não é mais recomendada.",
+      "C": "Esse era o esquema antigo (ceftriaxona 250 mg mais azitromicina); a dose subiu e a azitromicina saiu."
+    },
+    "macete": {
+      "frase": "*Uma picada de 500* e *uma semana de doxi*",
+      "apoio": "A receita amarelada da Tia é o esquema de 250 com azitromicina: vencido. O kit novo tem uma seringa só, de 500 mg, e um porta-comprimidos de sete dias, que é a doxiciclina para a clamídia que ainda não foi descartada.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Corrimento uretral purulento, diplococos gram-negativos no Gram e o teste de clamídia ainda pendente. Qual esquema a Tia Meia-Vida aprova?",
+    "palavras_chave": [
+      "dysuria",
+      "purulent discharge",
+      "new sexual partner",
+      "Gram stain"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Infectologia",
+      "#Farmacologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual esquema a Tia aprova?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

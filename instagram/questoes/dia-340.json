@@ -1,0 +1,100 @@
+{
+  "dia": 340,
+  "data": "2027-10-07",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Rastreamento do câncer de mama",
+  "conceito": "Breast cancer screening: biennial mammography from 40 to 74 (USPSTF 2024)",
+  "personagem": null,
+  "gancho_data": "Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-08",
+  "tom": "acolhedor",
+  "gancho": "Quarenta anos, *de dois em dois*: o rastreamento mudou",
+  "gancho_apoio": "Outubro Rosa. Mulher sem sintomas e sem risco aumentado pergunta o que fazer.",
+  "imagem": {
+    "arquivo": "dia-340.png",
+    "cena": "Garçom de rodízio com quatro cartões de cardápio, cada um com um ícone: um ímã grande, uma dupla hélice de DNA, um pequeno aparelho de raio X e uma ampulheta; um laço rosa discreto no avental; tom calmo.",
+    "foco": "50% 35%",
+    "alt": "Quarenta anos, de dois em dois: o rastreamento mudou"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-340-macete.png",
+    "cena": "Callback: o garçom entrega o cartão do pequeno aparelho de raio X e levanta a plaquinha verde; ao fundo, um calendário com páginas viradas de duas em duas, sem números.",
+    "foco": "50% 45%",
+    "alt": "USPSTF 2024: biennial mammography dos 40 aos 74"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old woman presents for her annual checkup. She has no breast symptoms, and breast examination is normal. She has never had a mammogram. No relatives have had breast or ovarian cancer, and she never received chest radiation. She asks about breast cancer screening.",
+    "pergunta": "Which is the most appropriate recommendation?",
+    "alternativas": {
+      "A": {
+        "texto": "Annual breast MRI",
+        "quiz": "RM anual"
+      },
+      "B": {
+        "texto": "BRCA1 and BRCA2 genetic testing",
+        "quiz": "Teste genético BRCA"
+      },
+      "C": {
+        "texto": "Begin mammography at age 50",
+        "quiz": "Começar aos 50"
+      },
+      "D": {
+        "texto": "Mammography every 2 years",
+        "quiz": "Mamografia bienal"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "USPSTF 2024: *biennial mammography* dos 40 aos 74",
+    "certa": [
+      "Desde 2024, a USPSTF recomenda *biennial screening mammography* para mulheres de risco médio dos 40 aos 74 anos (recomendação B). Ela tem 42 anos, sem sintomas, sem história familiar e sem radiação torácica, então entra no rastreamento de rotina, a cada 2 anos."
+    ],
+    "termos": [
+      "USPSTF",
+      "biennial screening mammography",
+      "average risk",
+      "age 40 to 74"
+    ],
+    "erradas": {
+      "A": "RM anual é para alto risco (BRCA, radiação torácica antes dos 30 ou risco ao longo da vida de 20% ou mais), não para risco médio.",
+      "B": "Teste genético é para quem tem história pessoal ou familiar que sugere síndrome hereditária, o que ela não tem.",
+      "C": "Começar aos 50 era a recomendação de 2016; a atualização de 2024 trouxe o início para os 40."
+    },
+    "macete": {
+      "frase": "*40, de 2 em 2, até 74*",
+      "apoio": "O garçom do rodízio traz o cartão da mamografia a cada dois anos, a partir dos 40. Risco alto pede outro cardápio (RM); risco médio fica no 40, 2, 74.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa. Mulher de 42 anos, sem sintomas, sem história familiar e sem radiação no tórax, quer saber como rastrear câncer de mama. O que recomendar, segundo a diretriz americana?",
+    "palavras_chave": [
+      "annual checkup",
+      "42-year-old",
+      "no family history",
+      "no breast symptoms"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#OutubroRosa",
+      "#Ginecologia",
+      "#USPSTF",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Risco médio, 42 anos. Qual rastreamento?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

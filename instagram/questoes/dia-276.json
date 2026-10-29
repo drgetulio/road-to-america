@@ -1,0 +1,96 @@
+{
+  "dia": 276,
+  "data": "2027-08-04",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Bernard-Soulier e Glanzmann",
+  "conceito": "Platelet adhesion vs aggregation: GpIb defect in Bernard-Soulier, GpIIb/IIIa defect in Glanzmann",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-05",
+  "tom": null,
+  "gancho": "Trânsito parado no vaso: *qual peça falta na plaqueta?*",
+  "gancho_apoio": "A Capitã Plaqueta apita, mas o cruzamento não anda.",
+  "imagem": {
+    "arquivo": "dia-276.png",
+    "cena": "Capitã Plaqueta apitando num cruzamento perto de uma rachadura na parede vermelha do vaso; discos amarelos de tamanhos variados, uns gigantes e outros pequenos, se amontoam no cruzamento num congestionamento, e a Capitã confere uma prancheta de peças.",
+    "foco": "50% 35%",
+    "alt": "Trânsito parado no vaso: qual peça falta na plaqueta?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-276-macete.png",
+    "cena": "Callback: zoom no meio-fio. Há ganchos vermelhos de vWF saindo da parede, e os discos gigantes não têm o engate na lateral (sem GpIb), por isso passam reto; os discos menores já estão de mãos dadas com fitinhas, mostrando que a agregação funciona.",
+    "foco": "50% 45%",
+    "alt": "Bernard-Soulier: falta GpIb, falha a adesão"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy has had recurrent nosebleeds and gum bleeding since early childhood. Platelet count is 85,000/mm3, and the smear shows giant platelets. PT and PTT are normal. Platelets fail to aggregate with ristocetin, even after normal plasma is added, but respond normally to ADP.",
+    "pergunta": "Which molecule is most likely defective?",
+    "alternativas": {
+      "A": {
+        "texto": "Glycoprotein IIb/IIIa",
+        "quiz": "GpIIb/IIIa"
+      },
+      "B": {
+        "texto": "von Willebrand factor",
+        "quiz": "vWF"
+      },
+      "C": {
+        "texto": "Glycoprotein Ib",
+        "quiz": "GpIb"
+      },
+      "D": {
+        "texto": "P2Y12 ADP receptor",
+        "quiz": "Receptor P2Y12"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Bernard-Soulier: falta *GpIb*, falha a adesão",
+    "certa": [
+      "Plaqueta gigante, plaquetopenia leve e ristocetina que não corrige com plasma normal fecham *Bernard-Soulier syndrome*: falta a *GpIb*, o engate que prende a plaqueta ao *vWF* exposto no vaso lesado. É um defeito de *adesão*. Como a resposta ao ADP está preservada, a agregação pela GpIIb/IIIa funciona."
+    ],
+    "termos": [
+      "Bernard-Soulier syndrome",
+      "GpIb",
+      "ristocetin",
+      "platelet adhesion"
+    ],
+    "erradas": {
+      "A": "Defeito de GpIIb/IIIa é a trombastenia de Glanzmann: plaquetas de tamanho e número normais, que não agregam com ADP mas respondem à ristocetina.",
+      "B": "Na doença de von Willebrand a ristocetina também falha, mas corrige quando se adiciona plasma normal, que traz o vWF.",
+      "D": "Bloqueio do P2Y12 (como com clopidogrel) tiraria a agregação com ADP, que aqui está normal."
+    },
+    "macete": {
+      "frase": "*Bernard-Soulier é Big e sem Ib*: não estaciona. *Glanzmann* estaciona, mas não dá as mãos",
+      "apoio": "A Capitã Plaqueta organiza o trânsito: adesão é encostar no meio-fio (GpIb no vWF); agregação é os carros darem as mãos com fitinhas de fibrinogênio (GpIIb/IIIa).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sangramento de nariz e gengiva desde pequeno, plaquetas gigantes e um teste de ristocetina que não corrige com plasma normal. A Capitã Plaqueta precisa achar a peça que falta.",
+    "palavras_chave": [
+      "recurrent nosebleeds",
+      "giant platelets",
+      "ristocetin",
+      "platelet aggregation"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Hematologia",
+      "#Hematology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Plaqueta gigante, ristocetina falha: o que falta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

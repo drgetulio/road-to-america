@@ -1,0 +1,96 @@
+{
+  "dia": 298,
+  "data": "2027-08-26",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Grande queimado",
+  "conceito": "Burn resuscitation: Parkland formula 4 mL x kg x percent TBSA, half in the first 8 hours",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-27",
+  "tom": null,
+  "gancho": "A conta do soro: *quanto vai nas primeiras 8 horas?*",
+  "gancho_apoio": "Peso, porcentagem de área queimada e um relógio que já está correndo.",
+  "imagem": {
+    "arquivo": "dia-298.png",
+    "cena": "Garçom do Rodízio de Quinta com uma bandeja de quatro jarras de soro de tamanhos bem diferentes; na mesa, uma ampulheta grande e uma calculadora de tela vazia; a plaquinha verde e vermelha de lado. Nada de churrasco, brasa ou fogo nesta cena.",
+    "foco": "50% 35%",
+    "alt": "A conta do soro: quanto vai nas primeiras 8 horas?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-298-macete.png",
+    "cena": "Callback: o garçom vira a plaquinha verde para a segunda maior jarra; uma jarra grande do dia inteiro aparece dividida exatamente ao meio, com a primeira metade escorrendo antes de a ampulheta acabar, e uma amostra rosa-clara (a área só vermelha) fica fora da bandeja.",
+    "foco": "50% 45%",
+    "alt": "Parkland: 4 × kg × %SCQ, metade em 8 horas"
+  },
+  "questao": {
+    "vinheta": "An 80-kg man arrives at the emergency department 1 hour after a house fire. He has partial-thickness burns over 30% of his total body surface area and superficial (first-degree) erythema over another 10%. His airway is patent.",
+    "pergunta": "Using the Parkland formula, how much lactated Ringer solution should he receive in the first 8 hours after the burn?",
+    "alternativas": {
+      "A": {
+        "texto": "2,400 mL",
+        "quiz": "2.400 mL"
+      },
+      "B": {
+        "texto": "4,800 mL",
+        "quiz": "4.800 mL"
+      },
+      "C": {
+        "texto": "6,400 mL",
+        "quiz": "6.400 mL"
+      },
+      "D": {
+        "texto": "9,600 mL",
+        "quiz": "9.600 mL"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Parkland: *4 × kg × %SCQ*, metade em 8 horas",
+    "certa": [
+      "A *Parkland formula* é 4 mL × peso (kg) × *%SCQ*, contando só as queimaduras de espessura parcial e total; a área só vermelha (primeiro grau) fica de fora. Aqui, 4 × 80 × 30 = 9.600 mL em 24 horas, e *metade já nas 8 horas iniciais*, com o relógio correndo desde a queimadura: 4.800 mL. Depois, o volume é ajustado pela diurese (cerca de 0,5 mL/kg/h no adulto)."
+    ],
+    "termos": [
+      "Parkland formula",
+      "total body surface area",
+      "lactated Ringer",
+      "urine output"
+    ],
+    "erradas": {
+      "A": "2.400 mL seria a metade com 2 mL × kg × %SCQ, o ponto de partida do ATLS atual, mas a pergunta pede a fórmula de Parkland.",
+      "C": "6.400 mL vem de somar os 10% de primeiro grau, que não entram na conta.",
+      "D": "9.600 mL é o volume das 24 horas inteiras, não das primeiras 8."
+    },
+    "macete": {
+      "frase": "Parkland é *4, 8 e 16*: 4 mL, metade em 8 horas e o resto em 16",
+      "apoio": "Na imagem, o garçom serve jarras de soro: metade do total sai antes de a ampulheta de 8 horas acabar, e ela começa a correr na hora da queimadura, não na chegada. A área só vermelha fica fora da bandeja.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 80 kg, incêndio em casa há uma hora, 30% de queimadura de espessura parcial e mais 10% só de vermelhidão. A calculadora está na mesa do Rodízio de Quinta. Quanto de Ringer lactato nas primeiras 8 horas?",
+    "palavras_chave": [
+      "house fire",
+      "30% TBSA",
+      "fluid resuscitation",
+      "first 8 hours"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Trauma"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Parkland, 80 kg e 30%: quanto nas primeiras 8 h?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

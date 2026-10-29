@@ -1,0 +1,100 @@
+{
+  "dia": 356,
+  "data": "2027-10-23",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Conflito de interesses",
+  "conceito": "Industry gifts and conflicts of interest: disclose and decline gifts that can sway prescribing",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-24",
+  "tom": null,
+  "gancho": "Praia de graça no fim de semana? *O Viés fez as malas*",
+  "gancho_apoio": "Um convite da indústria com resort, palestra de uma hora e acompanhante.",
+  "imagem": {
+    "arquivo": "dia-356.png",
+    "cena": "O Viés de óculos escuros, com guarda-sol e mala de viagem, espia de trás de uma tabela 2x2; ao lado, uma caixa de presente com laço vermelho em cima de um bloco de receitas em branco.",
+    "foco": "50% 35%",
+    "alt": "Praia de graça no fim de semana? O Viés fez as malas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-356-macete.png",
+    "cena": "Callback: a balança desenhada como placa de trânsito tem num prato uma caneta e um livro-texto e, no outro, a mala com toalha de praia barrada por um cone vermelho; o Viés murcha, com a mala fechada.",
+    "foco": "50% 45%",
+    "alt": "Presente de valor alto da indústria: decline"
+  },
+  "questao": {
+    "vinheta": "A pharmaceutical sales representative invites a family physician and her spouse to an all-expenses-paid weekend at a beach resort. The program includes a 1-hour talk about the company's new anticoagulant, and the rest of the weekend is free time. She says the trip would not change how she prescribes.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "Accept, since it will not change her prescribing",
+        "quiz": "Aceitar"
+      },
+      "B": {
+        "texto": "Accept if she discloses the trip to her patients",
+        "quiz": "Aceitar e contar"
+      },
+      "C": {
+        "texto": "Decline the invitation",
+        "quiz": "Recusar"
+      },
+      "D": {
+        "texto": "Accept if her spouse pays for his own travel",
+        "quiz": "Cônjuge paga"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Presente de valor alto da indústria: *decline*",
+    "certa": [
+      "Viagem, hospedagem e lazer pagos pela indústria são um presente pessoal de valor alto e criam *conflict of interest*. O Código de Ética da AMA e o código da PhRMA aceitam apenas itens de valor modesto que beneficiam o paciente ou a formação (um livro-texto, por exemplo); viagem de lazer não entra. O correto é *decline the gift*, mesmo que ela se sinta imune à influência."
+    ],
+    "termos": [
+      "conflict of interest",
+      "industry gifts",
+      "decline the gift",
+      "disclosure"
+    ],
+    "erradas": {
+      "A": "Estudos mostram que presentes mudam a prescrição mesmo quando o médico acredita que não; a intenção não torna o presente aceitável.",
+      "B": "Revelar o conflito ajuda em outras situações, mas não legitima um presente pessoal de alto valor.",
+      "D": "O problema é o presente para a médica; quem paga a passagem do cônjuge não muda isso."
+    },
+    "macete": {
+      "frase": "*Teste da padaria*: cabe no balcão, talvez; cabe na mala, recuse",
+      "apoio": "Se o brinde cabe no balcão da padaria e serve ao paciente ou ao estudo, pode ser aceitável. Se precisa de mala de viagem, não. Presente cria dívida, e o Viés adora uma dívida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um representante convida a médica e o marido para um fim de semana num resort, tudo pago, com uma palestra de uma hora sobre um anticoagulante novo. Ela jura que nada vai mudar na prescrição. Qual a resposta adequada?",
+    "palavras_chave": [
+      "pharmaceutical representative",
+      "paid weekend",
+      "beach resort",
+      "professionalism"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#ConflitoDeInteresse",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Resort pago pela indústria. E agora?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 128,
+  "data": "2027-03-09",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Pancreatite aguda",
+  "conceito": "Acute pancreatitis: 2 of 3 criteria (pain, lipase 3 times normal, imaging), early fluids",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-10",
+  "tom": null,
+  "gancho": "Dois bandeirinhas já levantaram a bandeira. E agora, *juiz*?",
+  "gancho_apoio": "Dor em faixa nas costas, lipase lá em cima. Qual é a jogada certa agora?",
+  "imagem": {
+    "arquivo": "dia-128.png",
+    "cena": "Um campo de futebol com um pâncreas jogador de chuteira caído segurando a barriga. O juiz hesita olhando para o monitor do VAR, enquanto dois bandeirinhas já estão com as bandeiras levantadas e um terceiro espera.",
+    "foco": "50% 35%",
+    "alt": "Juiz hesitando diante do monitor do VAR; dois bandeirinhas já levantaram a bandeira e o pâncreas jogador está no gramado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-128-macete.png",
+    "cena": "Callback: o juiz dispensa o VAR com a mão e aponta para a beira do campo, onde entra um galão de água com soro, como reforço do time. O pâncreas jogador já toma água sentado.",
+    "foco": "50% 40%",
+    "alt": "O juiz dispensa o VAR e um galão de soro entra em campo para hidratar o pâncreas jogador."
+  },
+  "questao": {
+    "vinheta": "A 46-year-old woman with known gallstones has 8 hours of constant epigastric pain radiating to the back, with vomiting. Temperature is 37.8°C and pulse is 112/min. The epigastrium is tender without rigidity. Serum lipase is 5 times the upper limit of normal. Bilirubin and liver enzymes are normal.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Contrast-enhanced CT of the abdomen",
+        "quiz": "TC com contraste"
+      },
+      "B": {
+        "texto": "IV lactated Ringer solution and analgesia",
+        "quiz": "Ringer e analgesia"
+      },
+      "C": {
+        "texto": "Urgent ERCP",
+        "quiz": "CPRE urgente"
+      },
+      "D": {
+        "texto": "Prophylactic IV imipenem",
+        "quiz": "Imipenem profilático"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Pancreatite: *2 de 3* e hidratação cedo",
+    "certa": [
+      "A pancreatite aguda se confirma com 2 de 3 critérios: dor típica, lipase pelo menos 3 vezes o normal e imagem compatível. Ela já tem dois, então a imagem não é necessária para o diagnóstico. O passo seguinte é hidratação venosa precoce, em volume moderado e ajustada à resposta, com Ringer lactato como primeira escolha, e analgesia."
+    ],
+    "termos": [
+      "2 of 3 criteria",
+      "lipase 3 times normal",
+      "lactated Ringer",
+      "no prophylactic antibiotics"
+    ],
+    "erradas": {
+      "A": "Tomografia com contraste não muda a conduta nas primeiras horas; fica para dúvida diagnóstica ou piora depois de 48 a 72 horas.",
+      "C": "CPRE de urgência entra quando há colangite ou obstrução biliar persistente, e aqui bilirrubina e enzimas estão normais.",
+      "D": "Antibiótico profilático não é recomendado na pancreatite, nem na grave; só para infecção comprovada."
+    },
+    "macete": {
+      "frase": "Pancreatite é *2 de 3 bandeirinhas*: com duas no alto, não chama o VAR",
+      "apoio": "Na imagem, o juiz dispensa o VAR e manda a hidratação entrar em campo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: dor em faixa, cálculo na vesícula e uma lipase que não deixa dúvida. A pergunta é o que fazer agora.",
+    "palavras_chave": [
+      "gallstones",
+      "epigastric pain radiating to the back",
+      "elevated lipase",
+      "vomiting"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Gastroenterologia",
+      "#Pancreatitis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Pancreatite confirmada: qual o próximo passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

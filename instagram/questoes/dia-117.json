@@ -1,0 +1,96 @@
+{
+  "dia": 117,
+  "data": "2027-02-26",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Benzodiazepínicos e barbitúricos",
+  "conceito": "GABA-A modulators: benzodiazepines increase opening frequency, barbiturates increase opening duration",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-27",
+  "tom": null,
+  "gancho": "Um cliente *toca a campainha* sem parar; o outro segura a porta",
+  "gancho_apoio": "Dois remédios, o mesmo canal de cloreto, dois jeitos de abrir a porta. Quem é quem?",
+  "imagem": {
+    "arquivo": "dia-117.png",
+    "cena": "Na porta da farmácia de interior, dois clientes em forma de cápsula: um aperta a campainha várias vezes bem rápido, com risquinhos de movimento, e o outro se apoia na porta e a mantém escancarada com um tijolo pesado. Atrás do balcão, Tia Meia-Vida observa por cima dos óculos.",
+    "foco": "50% 35%",
+    "alt": "Dois clientes em forma de cápsula: um toca a campainha sem parar e o outro segura a porta com um tijolo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-117-macete.png",
+    "cena": "Callback: o cliente da campainha agora tem um metrônomo batendo rápido ao lado (frequência), e só ele carrega no pescoço uma chavinha de resgate (o flumazenil). O cliente da porta está sentado num tijolo enorme e firme (duração), e a porta abre até sem ninguém tocar. Tia Meia-Vida aponta para os dois.",
+    "foco": "50% 40%",
+    "alt": "Cliente da campainha com metrônomo e chavinha de resgate; cliente da porta sentado num tijolo enorme."
+  },
+  "questao": {
+    "vinheta": "In a patch-clamp study of GABA-A receptors, drug X added with GABA increases how often the chloride channel opens without changing how long each opening lasts. Drug Y prolongs each opening and, at high concentrations, opens the channel even without GABA.",
+    "pergunta": "Which pair best matches drugs X and Y?",
+    "alternativas": {
+      "A": {
+        "texto": "X = lorazepam; Y = phenobarbital",
+        "quiz": "Benzo; barbitúrico"
+      },
+      "B": {
+        "texto": "X = phenobarbital; Y = lorazepam",
+        "quiz": "Barbitúrico; benzo"
+      },
+      "C": {
+        "texto": "X = flumazenil; Y = lorazepam",
+        "quiz": "Flumazenil; benzo"
+      },
+      "D": {
+        "texto": "X = baclofen; Y = zolpidem",
+        "quiz": "Baclofeno; zolpidem"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Benzo aumenta a *frequência*, barbitúrico aumenta a *duração*",
+    "certa": [
+      "Os benzodiazepínicos, como o lorazepam, são moduladores alostéricos do receptor GABA-A: precisam do GABA e fazem o canal de cloreto abrir mais vezes. Os barbitúricos, como o fenobarbital, deixam cada abertura mais longa e, em doses altas, ativam o receptor mesmo sem GABA. Por isso o barbitúrico deprime mais a respiração em overdose e não tem antídoto, enquanto o benzodiazepínico tem o flumazenil."
+    ],
+    "termos": [
+      "GABA-A receptor",
+      "benzodiazepines",
+      "barbiturates",
+      "flumazenil"
+    ],
+    "erradas": {
+      "B": "É a dupla invertida: o fenobarbital aumenta a duração, não a frequência, e o lorazepam não abre o canal sem GABA.",
+      "C": "O flumazenil é antagonista competitivo no sítio benzodiazepínico e não aumenta a abertura do canal.",
+      "D": "O baclofeno age no receptor GABA-B, ligado à proteína G, e o zolpidem age no sítio benzodiazepínico, aumentando a frequência."
+    },
+    "macete": {
+      "frase": "Benzo*FRE*quência, Barbi*DURA*ção",
+      "apoio": "Na imagem, um cliente toca a campainha sem parar e o outro segura a porta da farmácia escancarada.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na farmácia com a Tia Meia-Vida: dois remédios que agem no mesmo receptor, com uma diferença que o NBME adora.",
+    "palavras_chave": [
+      "patch-clamp study",
+      "chloride channel",
+      "GABA",
+      "sedative-hypnotics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Neurociencia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Frequência x duração no GABA-A: quem é quem?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

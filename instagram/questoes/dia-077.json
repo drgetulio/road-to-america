@@ -1,0 +1,102 @@
+{
+  "dia": 77,
+  "data": "2027-01-17",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Deficiência de 21-hidroxilase (dia 10), Dermatite de contato (dia 43), SCID por deficiência de ADA (dia 71)",
+  "conceito": "Remix: 21-hydroxylase deficiency + Contact dermatitis to nickel + ADA-deficient SCID",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    10,
+    43,
+    71
+  ],
+  "explicacao_em": "2027-01-18",
+  "gancho": "Remix de domingo: forno quebrado, fermento lento ou *caminhão de lixo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos em pé: um com um forno de padaria no selo, um com uma tigela de massa coberta por um pano e um com um caminhão de lixo. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "foco": "50% 35%",
+    "alt": "Remix de domingo: forno quebrado, fermento lento ou caminhão de lixo?",
+    "arquivo": "dia-077.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco do forno gira e, no selo, o forno do meio está apagado, com uma montanha de massa antes dele e uma vitrine de doces transbordando depois; a prateleira do pão salgado está vazia. Os discos da tigela e do caminhão de lixo ficam guardados na capa.",
+    "alt": "O forno 21 parou: 17-OHP alta",
+    "arquivo": "dia-077-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 2-week-old infant has clitoromegaly and fused labioscrotal folds, vomiting, and poor feeding. Serum sodium is 126 mEq/L and potassium is 6.4 mEq/L. Karyotype is 46,XX.",
+    "pergunta": "Which laboratory finding is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Elevated 11-deoxycorticosterone",
+        "quiz": "High DOC"
+      },
+      "B": {
+        "texto": "Elevated 17-hydroxyprogesterone",
+        "quiz": "High 17-OHP",
+        "dia": 10
+      },
+      "C": {
+        "texto": "Elevated erythrocyte dATP",
+        "quiz": "High RBC dATP",
+        "dia": 71
+      },
+      "D": {
+        "texto": "Positive nickel patch test at 48 hours",
+        "quiz": "Nickel patch test",
+        "dia": 43
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "O forno 21 parou: *17-OHP alta*",
+    "certa": [
+      "Menina 46,XX com genitália virilizada, vômitos, sódio baixo e potássio alto tem *21-hydroxylase deficiency* na forma perdedora de sal (dia 10). Sem a enzima, falta cortisol e aldosterona, o ACTH sobe e o substrato *17-hydroxyprogesterone* se acumula e é desviado para androgênios. O dATP alto é da *ADA-deficient SCID* (dia 71), e o *patch test* positivo em 48 horas é da *contact dermatitis* ao níquel (dia 43), nenhum dos dois com este quadro."
+    ],
+    "termos": [
+      "21-hydroxylase deficiency",
+      "17-hydroxyprogesterone",
+      "salt-wasting crisis",
+      "congenital adrenal hyperplasia"
+    ],
+    "erradas": {
+      "A": "Intruso: o 11-desoxicorticosterona alto é da deficiência de 11-beta-hidroxilase, que causa hipertensão e potássio baixo, o contrário deste quadro.",
+      "C": "Dia 71: dATP alto nas hemácias é a marca da SCID por falta de ADA, com infecções graves e linfopenia, sem virilização ou distúrbio de sódio.",
+      "D": "Dia 43: o teste de contato positivo em 48 horas mostra hipersensibilidade tipo IV ao níquel, sem relação com genitália ou eletrólitos."
+    },
+    "macete": {
+      "frase": "Forno 21 parou: *massa 17-OHP* empilhada",
+      "apoio": "Pegadinha de prova: O NBME separa 21 e 11-hidroxilase pela pressão e pelo potássio: perda de sal com K alto é 21; hipertensão com K baixo é 11.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três conceitos de Step 1 voltam juntos: a padaria das suprarrenais, a massa que cresce em dois dias e a fábrica de linfócitos sem caminhão de lixo. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual exame deve estar alterado?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

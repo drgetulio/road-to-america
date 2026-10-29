@@ -1,0 +1,95 @@
+{
+  "dia": 122,
+  "data": "2027-03-03",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estenose aórtica",
+  "conceito": "Aortic stenosis: calcific degeneration, crescendo-decrescendo murmur, pulsus parvus et tardus",
+  "personagem": null,
+  "gancho_data": "Prazo final do rank order list do Match 2027 (3/3, 21h ET, segundo o NRMP).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-04",
+  "tom": null,
+  "gancho": "Pulso que chega *pequeno e atrasado*, igual inscrição às 20h59",
+  "gancho_apoio": "Hoje fecha o rank order list do Match. Tem uma válvula que também está no limite.",
+  "imagem": {
+    "arquivo": "dia-122.png",
+    "cena": "Uma porta giratória de agência bancária, de três folhas, gira com dificuldade, emperrada. Glóbulos vermelhos fazem fila para passar, e um relógio de parede sem números marca quase a hora do prazo.",
+    "foco": "50% 35%",
+    "alt": "Porta giratória emperrada, com uma fila de glóbulos vermelhos e um relógio quase no horário do prazo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-122-macete.png",
+    "cena": "Callback: de perto, as três folhas da porta giratória estão incrustadas de calcário branco, e por isso ela quase não gira. Do outro lado sai só uma tartaruga pequenina carregando um coração, devagar, rumo a uma estrada em forma de carótida. Atrás, a fila espera.",
+    "foco": "50% 40%",
+    "alt": "A porta giratória de três folhas aparece coberta de calcário; uma tartaruga pequena sai do outro lado levando um coração, devagar."
+  },
+  "questao": {
+    "vinheta": "A 78-year-old man has chest pressure and lightheadedness when he climbs stairs. Auscultation reveals a harsh crescendo-decrescendo systolic murmur, loudest in the second right intercostal space and transmitted to both carotids. The second heart sound is soft, and the carotid upstroke is weak and delayed.",
+    "pergunta": "Which is the most likely cause of this murmur?",
+    "alternativas": {
+      "A": {
+        "texto": "Calcific degeneration of a trileaflet aortic valve",
+        "quiz": "Calcificação aórtica"
+      },
+      "B": {
+        "texto": "Rheumatic fusion of the mitral commissures",
+        "quiz": "Reumática mitral"
+      },
+      "C": {
+        "texto": "Myxomatous degeneration of the mitral valve",
+        "quiz": "Mixomatosa mitral"
+      },
+      "D": {
+        "texto": "Asymmetric hypertrophy of the septum",
+        "quiz": "Septo hipertrófico"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Estenose aórtica: *parvus et tardus*",
+    "certa": [
+      "Sopro sistólico em diamante no foco aórtico, irradiado para as carótidas, com B2 hipofonética e pulso carotídeo fraco e tardio (pulsus parvus et tardus) é estenose aórtica. Aos 78 anos, a causa mais comum é a calcificação degenerativa de uma valva com três folhetos; a valva bicúspide costuma dar sintomas uma ou duas décadas antes. Angina, síncope e dispneia aos esforços indicam doença grave e pedem troca valvar."
+    ],
+    "termos": [
+      "crescendo-decrescendo murmur",
+      "pulsus parvus et tardus",
+      "calcific aortic stenosis",
+      "bicuspid valve"
+    ],
+    "erradas": {
+      "B": "A febre reumática funde as comissuras da mitral e causa estenose mitral, com sopro diastólico e estalido de abertura.",
+      "C": "A degeneração mixomatosa causa prolapso mitral, com clique mesossistólico no ápice.",
+      "D": "Na cardiomiopatia hipertrófica o sopro fica na borda esternal esquerda, não irradia para as carótidas e o pulso é rápido, às vezes bífido."
+    },
+    "macete": {
+      "frase": "Pulso *parvus et tardus*: pequeno e atrasado, como inscrição enviada às 20h59",
+      "apoio": "Na imagem, a porta giratória cheia de calcário só deixa passar uma tartaruguinha.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje, 3/3, fecha o rank order list do Match 2027. Boa sorte a quem está enviando a lista. Para a prova: idoso, sopro sistólico e um pulso que chega devagar.",
+    "palavras_chave": [
+      "exertional chest pressure",
+      "systolic murmur",
+      "carotid radiation",
+      "older man"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#Cardiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Sopro aórtico no idoso: qual a causa?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

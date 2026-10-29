@@ -1,0 +1,87 @@
+{
+  "dia": 193,
+  "data": "2027-05-13",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Síndrome de realimentação",
+  "conceito": "Anorexia nervosa refeeding syndrome: watch for hypophosphatemia",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-14",
+  "tom": null,
+  "gancho": "Realimentação: o *terceiro dia* de dieta virou plantão. Por quê?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-193.png",
+    "cena": "Na churrascaria, o garçom do rodízio chega com uma bandeja cheia a uma mesa que ficou muitos dias vazia; no caixa da casa, uma registradora antiga está fechada e quieta, e a plaquinha de duas cores ainda está de lado.",
+    "foco": "50% 35%",
+    "alt": "Realimentação: o terceiro dia de dieta virou plantão. Por quê?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-193-macete.png",
+    "cena": "A gaveta da registradora se abre e as moedinhas (o fósforo) saem voando para dentro de uma pequena fábrica em forma de célula que acende as luzes (o ATP), deixando o caixa vazio; o garçom passa a servir um espeto de cada vez e um ajudante repõe moedas novas na gaveta.",
+    "alt": "Realimentação: o fósforo foge para dentro"
+  },
+  "questao": {
+    "vinheta": "A 17-year-old girl with anorexia nervosa and a BMI of 14.5 kg/m2 is admitted for nutritional rehabilitation. On day 3 of rapidly increasing nasogastric feeds, she develops weakness, shortness of breath, confusion, and new ankle edema. Heart rate is 118/min.",
+    "pergunta": "In addition to slowing the feeds, which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Give an intravenous 5% dextrose bolus",
+        "quiz": "Bolus de glicose"
+      },
+      "B": {
+        "texto": "Measure serum phosphate and replace it",
+        "quiz": "Repor fósforo"
+      },
+      "C": {
+        "texto": "Start oral olanzapine",
+        "quiz": "Olanzapina"
+      },
+      "D": {
+        "texto": "Stop all nutrition for 72 hours",
+        "quiz": "Suspender 72 h"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Realimentação: o *fósforo* foge para dentro",
+    "certa": [
+      "Na *refeeding syndrome*, o carboidrato eleva a insulina, e a insulina puxa o fósforo (junto com potássio e magnésio) do sangue para o interior da célula. O fósforo é gasto para fazer ATP e 2,3-BPG, e a *hypophosphatemia* causa fraqueza muscular, insuficiência respiratória, insuficiência cardíaca, arritmia e confusão. Conduta: medir e repor fósforo, potássio e magnésio, dar tiamina e avançar a dieta devagar."
+    ],
+    "termos": [
+      "refeeding syndrome",
+      "hypophosphatemia",
+      "anorexia nervosa",
+      "thiamine"
+    ],
+    "erradas": {
+      "A": "Bolus de glicose aumenta a insulina e empurra ainda mais fósforo para dentro das células, piorando o quadro.",
+      "C": "A olanzapina pode ajudar no tratamento da anorexia, mas não corrige a emergência metabólica atual.",
+      "D": "Suspender toda a nutrição prolonga a desnutrição; a recomendação é reduzir a velocidade e corrigir os eletrólitos."
+    },
+    "macete": {
+      "frase": "Na realimentação, a insulina abre a porta da célula e *o fósforo entra todo para virar ATP*. O caixa do sangue fica *sem moedas*: músculo fraco, pulmão cansado, coração falhando. Começa devagar, mede e repõe.",
+      "apoio": "O NBME descreve piora nos primeiros dias de dieta em paciente muito desnutrido e pergunta o eletrólito; a resposta é hipofosfatemia, com potássio e magnésio baixos também.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na psiquiatria e na clínica. A adolescente da vinheta começou o tratamento nutricional e, no terceiro dia, piorou. A conduta certa protege o coração e os músculos dela.",
+    "palavras_chave": [
+      "anorexia nervosa",
+      "nutritional rehabilitation",
+      "nasogastric feeds",
+      "new edema"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Piorou no 3º dia de dieta. Próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 246,
+  "data": "2027-07-05",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Deficiência do complemento terminal",
+  "conceito": "Terminal complement deficiency: C5-C9 defect predisposes to recurrent Neisseria infections",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-06",
+  "tom": null,
+  "gancho": "A *furadeira* do boteco quebrou e os grãos de café voltaram",
+  "gancho_apoio": "Meningococo duas vezes no mesmo paciente e também no irmão. Qual peça do complemento falta?",
+  "imagem": {
+    "arquivo": "dia-246.png",
+    "cena": "Na porta do boteco dos micróbios, Macrô revira uma caixa de ferramentas vermelha cheia de peças misturadas, procurando a que falta. No balcão, grãos de café sorridentes, sempre em pares, dançam como fregueses antigos da casa.",
+    "foco": "50% 35%",
+    "alt": "A furadeira do boteco quebrou e os grãos de café voltaram"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-246-macete.png",
+    "cena": "Macrô monta a furadeira com cinco peças empilhadas, uma de cada cor, e com ela faz um furo redondo na casca de um par de grãos de café, que murcha. Ao lado, dois frascos de vacina em forma de escudo esperam na prateleira.",
+    "foco": "50% 40%",
+    "alt": "Sem MAC, a Neisseria volta"
+  },
+  "questao": {
+    "vinheta": "A 19-year-old college student is hospitalized with meningococcal meningitis. At age 13, he had meningococcal sepsis, and his older brother had meningococcal meningitis at age 17. He has no other history of serious infections. Serum immunoglobulins are normal, and total hemolytic complement (CH50) activity is nearly absent.",
+    "pergunta": "Deficiency of which of the following is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "C1 esterase inhibitor",
+        "quiz": "Inibidor de C1"
+      },
+      "B": {
+        "texto": "C3",
+        "quiz": "C3"
+      },
+      "C": {
+        "texto": "C8",
+        "quiz": "C8"
+      },
+      "D": {
+        "texto": "Decay-accelerating factor (CD55)",
+        "quiz": "DAF (CD55)"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sem *MAC*, a Neisseria volta",
+    "certa": [
+      "Os componentes terminais (*C5 a C9*) formam o *membrane attack complex* (MAC), que abre poros na membrana externa fina das bactérias gram-negativas. A *Neisseria* depende muito desse mecanismo para ser destruída, e por isso a falta de qualquer componente de C5 a C9 dá meningococcemia ou meningite de repetição, muitas vezes com outro caso na família. O CH50 baixo com imunoglobulinas normais aponta para o complemento."
+    ],
+    "termos": [
+      "membrane attack complex",
+      "C5-C9",
+      "Neisseria meningitidis",
+      "CH50"
+    ],
+    "erradas": {
+      "A": "A falta do inibidor de C1 causa *hereditary angioedema*, com inchaço por bradicinina e sem infecções de repetição.",
+      "B": "A deficiência de C3 também facilita a Neisseria, mas vem com infecções piogênicas graves desde cedo, como pneumonia e sinusite por bactérias encapsuladas.",
+      "D": "Sem DAF (CD55), o complemento ataca as hemácias: é a *paroxysmal nocturnal hemoglobinuria*, com hemólise e não com meningite."
+    },
+    "macete": {
+      "frase": "*C5 a C9* é a furadeira que fura a *Neisseria*",
+      "apoio": "Os grãos de café em dupla são os diplococos da Neisseria. A furadeira do Macrô tem cinco peças, de C5 a C9; se faltar qualquer uma, o MAC não fura e os grãos voltam ao boteco.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Meningococo de repetição, um irmão com a mesma história e imunoglobulinas normais. Onde está o defeito?",
+    "palavras_chave": [
+      "recurrent meningococcal infection",
+      "family history",
+      "normal immunoglobulins",
+      "CH50"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Imunologia",
+      "#Microbiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual componente falta?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

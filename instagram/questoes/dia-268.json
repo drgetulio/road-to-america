@@ -1,0 +1,99 @@
+{
+  "dia": 268,
+  "data": "2027-07-27",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Derrame pleural",
+  "conceito": "Light criteria: exudate if pleural/serum protein above 0.5 or pleural/serum LDH above 0.6",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-28",
+  "tom": null,
+  "gancho": "Acende a luz do líquido: ele é *visita ou invasor*?",
+  "gancho_apoio": "Insuficiência cardíaca, mas também febre e tosse. O líquido pleural tem a palavra.",
+  "imagem": {
+    "arquivo": "dia-268.png",
+    "cena": "Um farol de praia lança o facho de luz sobre três copos de líquido em cima de uma pedra: um transparente, um amarelado e um turvo. Na pedra, um caranguejo de desenho com lupa tenta decidir qual é qual.",
+    "foco": "50% 35%",
+    "alt": "Acende a luz do líquido: ele é visita ou invasor?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-268-macete.png",
+    "cena": "O facho do farol agora tem três lâmpadas lado a lado; sobre o copo turvo as três acendem, e basta uma acesa para ser exsudato. Dentro do copo, chaminhas de inflamação abrem buracos na parede de um vasinho e deixam escapar contas de proteína. Sobre o copo transparente, as três continuam apagadas.",
+    "foco": "50% 40%",
+    "alt": "Light: três luzes acesas, exsudato"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with heart failure has had 5 days of fever, productive cough, and right pleuritic chest pain. Thoracentesis yields cloudy fluid. Pleural protein is 4.0 g/dL (serum 6.2 g/dL), and pleural LDH is 310 U/L (serum 250 U/L; upper limit of normal, 220 U/L).",
+    "pergunta": "Which is the most likely cause of the effusion?",
+    "alternativas": {
+      "A": {
+        "texto": "Transudate from heart failure",
+        "quiz": "Transudato da IC"
+      },
+      "B": {
+        "texto": "Exudate from a parapneumonic process",
+        "quiz": "Exsudato pneumonia"
+      },
+      "C": {
+        "texto": "Transudate from hypoalbuminemia",
+        "quiz": "Transud. hipoalbum."
+      },
+      "D": {
+        "texto": "Transudate from hepatic hydrothorax",
+        "quiz": "Hidrotórax hepático"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Light*: três luzes acesas, exsudato",
+    "certa": [
+      "Pelos *Light criteria*, o derrame é exsudato quando pelo menos um critério está presente: proteína pleural/sérica acima de 0,5, LDH pleural/sérico acima de 0,6, ou LDH do líquido maior que 2/3 do teto de referência do LDH no sangue. Aqui a proteína dá 0,65, o LDH dá 1,24 e 310 passa de 147: os três estão positivos. Febre, tosse produtiva e dor pleurítica apontam para *parapneumonic effusion*, em que a inflamação aumenta a permeabilidade capilar."
+    ],
+    "termos": [
+      "Light criteria",
+      "exudate",
+      "parapneumonic effusion",
+      "serum-pleural albumin gradient"
+    ],
+    "erradas": {
+      "A": "Insuficiência cardíaca dá transudato por aumento da pressão hidrostática; o paciente tem IC, mas o líquido não se comporta como transudato.",
+      "C": "Hipoalbuminemia (nefrose, desnutrição) dá transudato por queda da pressão oncótica.",
+      "D": "O hidrotórax hepático é ascite que passa pelo diafragma e também é transudato."
+    },
+    "macete": {
+      "frase": "Light: *basta uma luz acesa* para ser exsudato",
+      "apoio": "O farol tem três lâmpadas (meio, seis décimos e dois terços); se qualquer uma acender, o copo é exsudato. As chaminhas que furam o vaso são a inflamação da pneumonia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Paciente com insuficiência cardíaca, mas agora com febre e tosse. Os números do líquido pleural decidem. Calcule antes de comentar.",
+    "palavras_chave": [
+      "heart failure",
+      "fever and productive cough",
+      "thoracentesis",
+      "pleural fluid LDH"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Pneumologia",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a causa do derrame?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

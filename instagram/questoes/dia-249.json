@@ -1,0 +1,99 @@
+{
+  "dia": 249,
+  "data": "2027-07-08",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Púrpura trombocitopênica imune",
+  "conceito": "Childhood ITP after a viral illness: observe if there is no significant bleeding",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-09",
+  "tom": null,
+  "gancho": "Poucas guardas no cruzamento: chama *reforço* ou espera?",
+  "gancho_apoio": "Petéquias depois de uma virose, criança brincando e plaquetas em 18 mil. E agora?",
+  "imagem": {
+    "arquivo": "dia-249.png",
+    "cena": "Capitã Plaqueta, de colete verde e apito, está quase sozinha num cruzamento grande, com poucos cones espalhados. Ela olha para os lados, pensativa, com o apito na boca. Ao fundo, uma fábrica de chaminé redonda solta fumacinha.",
+    "foco": "50% 35%",
+    "alt": "Poucas guardas no cruzamento: chama reforço ou espera?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-249-macete.png",
+    "cena": "Capitã Plaqueta senta num banquinho na calçada com um binóculo, só observando, enquanto plaquetas grandes e novas saem da fábrica e assumem os cruzamentos, e os carrinhos passam devagar e em ordem. Uma caixa fechada com cadeado fica na calçada, guardando o que não vai ser usado.",
+    "foco": "50% 40%",
+    "alt": "Só pele? Observa"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old girl has had petechiae and bruises on her legs for 2 days. Three weeks ago, she had an upper respiratory infection. She is active and playful, with no mucosal bleeding, lymphadenopathy, or hepatosplenomegaly. Hemoglobin and leukocyte count are normal; platelet count is 18,000/mm3. The smear shows only large platelets.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Platelet transfusion",
+        "quiz": "Transfundir plaqueta"
+      },
+      "B": {
+        "texto": "Observation with close follow-up",
+        "quiz": "Observar de perto"
+      },
+      "C": {
+        "texto": "Intravenous immunoglobulin",
+        "quiz": "Imunoglobulina IV"
+      },
+      "D": {
+        "texto": "Bone marrow aspiration",
+        "quiz": "Mielograma"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Só pele? *Observa*",
+    "certa": [
+      "É a *immune thrombocytopenia* típica da criança: plaquetopenia isolada semanas depois de uma virose, sem outras alterações no hemograma e com plaquetas grandes no esfregaço. Na criança sem sangramento ou só com sangramento de pele (petéquias e hematomas), a diretriz da *ASH* recomenda observação, seja qual for a contagem; a maioria se resolve sozinha em semanas a poucos meses."
+    ],
+    "termos": [
+      "immune thrombocytopenia",
+      "watchful waiting",
+      "IVIG",
+      "isolated thrombocytopenia"
+    ],
+    "erradas": {
+      "A": "A plaqueta transfundida é destruída pelos mesmos anticorpos; a transfusão fica para sangramento com risco de vida.",
+      "C": "A *IVIG* (ou o corticoide) entra quando há sangramento mucoso ou importante; aqui o sangramento é só de pele.",
+      "D": "O mielograma só entra quando há algo atípico, como outras citopenias, linfonodos ou baço aumentados."
+    },
+    "macete": {
+      "frase": "Criança, pós-virose, só pele: *senta e observa*",
+      "apoio": "Capitã Plaqueta no banquinho com binóculo é o watchful waiting: o cruzamento tem poucas guardas, mas o trânsito segue em ordem e a fábrica (a medula) manda reforço.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Criança de 4 anos, petéquias três semanas depois de uma virose, brincando no consultório. Plaquetas em 18 mil. Qual é a conduta?",
+    "palavras_chave": [
+      "petechiae",
+      "recent viral infection",
+      "low platelets",
+      "well-appearing child"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Pediatria",
+      "#Hematologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a conduta?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

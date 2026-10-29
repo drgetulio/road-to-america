@@ -1,0 +1,96 @@
+{
+  "dia": 318,
+  "data": "2027-09-15",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Compressão do nervo oculomotor",
+  "conceito": "Oculomotor nerve compression: the pupil dilates first because parasympathetic fibers run on the outside",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-16",
+  "tom": null,
+  "gancho": "Balão apertou o cabo e a *pupila foi a primeira a reclamar*",
+  "gancho_apoio": "Na Quarta do Porquê, a resposta está em como os fios se arrumam dentro do nervo.",
+  "imagem": {
+    "arquivo": "dia-318.png",
+    "cena": "Um balão vermelho inchando aperta um cabo grosso e liso, visto só por fora; o cabo termina num poste de luz em forma de olho, com a cúpula caída como uma pálpebra e a lâmpada redonda enorme e acesa.",
+    "foco": "50% 35%",
+    "alt": "Balão apertou o cabo e a pupila foi a primeira a reclamar"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-318-macete.png",
+    "cena": "Callback: o cabo aparece em corte como uma coxinha: a casca dourada achatada pelo balão, o recheio intacto. Ao lado, uma segunda coxinha em corte tem a casca perfeita e o recheio acinzentado (a isquemia do diabetes, que poupa a pupila).",
+    "foco": "50% 45%",
+    "alt": "Compressão do oculomotor: pupila primeiro"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old woman has a sudden, severe headache and drooping of her right eyelid. The right eye is deviated inferolaterally, with a 7-mm pupil that does not react to light. Visual acuity is normal. Imaging later shows a posterior communicating artery aneurysm.",
+    "pergunta": "Which feature of the affected nerve best explains the pupillary finding?",
+    "alternativas": {
+      "A": {
+        "texto": "Its parasympathetic fibers lie superficially",
+        "quiz": "Parassimp. por fora"
+      },
+      "B": {
+        "texto": "Its parasympathetic fibers lie in the nerve core",
+        "quiz": "Parassimp. no centro"
+      },
+      "C": {
+        "texto": "It carries sympathetic fibers to the dilator",
+        "quiz": "Leva simpático"
+      },
+      "D": {
+        "texto": "It carries the afferent limb of the light reflex",
+        "quiz": "É a via aferente"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Compressão do oculomotor: *pupila primeiro*",
+    "certa": [
+      "Ptose, olho para baixo e para fora e pupila dilatada e fixa com cefaleia súbita indicam compressão do *oculomotor nerve* por aneurisma da *posterior communicating artery*. As fibras *parasympathetic* que contraem a pupila correm na superfície do nervo, então a compressão de fora para dentro pega a pupila primeiro. Na neuropatia isquêmica do diabetes acontece o contrário: sofre o centro do nervo e a pupila costuma ser poupada."
+    ],
+    "termos": [
+      "oculomotor nerve palsy",
+      "superficial parasympathetic fibers",
+      "posterior communicating artery aneurysm",
+      "pupil-sparing ischemic palsy"
+    ],
+    "erradas": {
+      "B": "Fibras no centro do nervo explicariam a pupila poupada da isquemia; na verdade o parassimpático fica na superfície.",
+      "C": "As fibras simpáticas do dilatador sobem pelo plexo carotídeo e pelo nervo nasociliar, e não pelo oculomotor.",
+      "D": "A via aferente do reflexo fotomotor é o nervo óptico; o oculomotor é a via eferente."
+    },
+    "macete": {
+      "frase": "*Coxinha apertada por fora amassa a casca*; isquemia estraga o recheio",
+      "apoio": "No corte da imagem, o nervo é uma coxinha: a casca são as fibras da pupila e o recheio, as fibras dos músculos do olho. O balão do aneurisma amassa a casca primeiro; a isquemia do diabetes estraga o recheio e deixa a casca inteira.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Mulher de 61 anos com cefaleia súbita e intensa, ptose à direita, olho desviado para baixo e para fora e pupila de 7 mm sem reação à luz. Por que a pupila entra na história logo no começo?",
+    "palavras_chave": [
+      "sudden severe headache",
+      "ptosis",
+      "dilated pupil",
+      "eye deviated down and out"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Neuroanatomia",
+      "#Neuroanatomy"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Por que a pupila dilata primeiro?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 83,
+  "data": "2027-01-23",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Dever de proteger terceiros",
+  "conceito": "Duty to warn and protect: confidentiality yields to a credible threat to an identifiable person",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-24",
+  "gancho": "Uma ameaça com nome e data: *até onde vai o sigilo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um cofre trancado em cima de uma pedra à beira-mar, ao lado de um farol apagado. No horizonte, um veleiro pequeno navega em direção às pedras. Uma balança de tribunal desenhada como placa de trânsito está fincada na areia.",
+    "foco": "50% 35%",
+    "alt": "Uma ameaça com nome e data: até onde vai o sigilo?",
+    "arquivo": "dia-083.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do farol: o farol acende um feixe forte direto no veleiro, que desvia das pedras, e um barco de patrulha da guarda costeira vem ao encontro dele. O cofre continua trancado, com só uma frestinha aberta de onde sai a luz.",
+    "alt": "Ameaça séria a alguém identificável: dever de proteger",
+    "arquivo": "dia-083-macete.png"
+  },
+  "questao": {
+    "vinheta": "During a psychotherapy session, a 32-year-old man says he has bought a gun and plans to shoot his former business partner, whom he names, this weekend. He refuses voluntary hospitalization.",
+    "pergunta": "Which is the most appropriate action by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "Warn the partner and notify police",
+        "quiz": "Warn and notify"
+      },
+      "B": {
+        "texto": "Keep confidentiality and document",
+        "quiz": "Keep it confidential"
+      },
+      "C": {
+        "texto": "Ask his family for permission to disclose",
+        "quiz": "Ask the family"
+      },
+      "D": {
+        "texto": "Schedule an earlier follow-up visit",
+        "quiz": "Earlier follow-up"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Ameaça séria a alguém identificável: *dever de proteger*",
+    "certa": [
+      "O sigilo médico é a regra, mas tem exceções. Pelo princípio do caso *Tarasoff*, quando o paciente faz uma ameaça séria e crível contra uma pessoa identificável, o médico tem o *duty to warn and protect*: avisar a vítima, comunicar a polícia e tomar outras medidas razoáveis, como avaliar internação involuntária. A quebra de *confidentiality* se limita ao necessário para proteger a pessoa ameaçada."
+    ],
+    "termos": [
+      "duty to warn",
+      "Tarasoff",
+      "confidentiality",
+      "identifiable victim"
+    ],
+    "erradas": {
+      "B": "Só documentar deixa a vítima exposta; o risco sério e iminente a uma pessoa identificada se sobrepõe ao sigilo.",
+      "C": "A exceção ao sigilo não depende de permissão da família, e pedir autorização atrasa a proteção.",
+      "D": "Antecipar a consulta não protege a vítima de um plano para este fim de semana."
+    },
+    "macete": {
+      "frase": "Farol só acende para *barco com nome*",
+      "apoio": "Pegadinha de prova: O NBME testa os dois requisitos: ameaça crível e vítima identificável; ameaça vaga contra ninguém em particular não autoriza a quebra de sigilo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Na terapia, um paciente conta que comprou uma arma e diz o nome de quem quer atingir neste fim de semana. Até onde vai o sigilo? No Sábado Sem Viés, o tom é sério e a resposta é única.",
+    "palavras_chave": [
+      "psychotherapy session",
+      "threat of violence",
+      "named person",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é a conduta do médico?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 226,
+  "data": "2027-06-15",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Rastreamento de câncer colorretal",
+  "conceito": "Average-risk colorectal cancer screening starts at age 45",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-16",
+  "tom": null,
+  "gancho": "Fez 45 anos e chegou um *convite especial* no correio",
+  "gancho_apoio": "Sem sintomas e sem história na família. A festa do rastreamento já começou?",
+  "imagem": {
+    "arquivo": "dia-226.png",
+    "cena": "Uma sala de espera de consultório decorada com bandeirinhas e balões de aniversário; numa cadeira, um presente navy com laço vermelho ainda fechado, e um calendário de parede com folhas voando.",
+    "foco": "50% 35%",
+    "alt": "Fez 45 anos e chegou um convite especial no correio"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-226-macete.png",
+    "cena": "Callback: o presente aberto mostra uma câmera fofa na ponta de uma mangueirinha enrolada e um kit de amostra com tampa verde. As folhas do calendário voltam voando, como se a festa tivesse sido antecipada.",
+    "foco": "50% 45%",
+    "alt": "Risco médio: o rastreamento começa aos 45"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man comes for a routine visit. He feels well and has no gastrointestinal symptoms. He has no personal history of polyps or inflammatory bowel disease and no family history of colorectal cancer. Examination and complete blood count are normal.",
+    "pergunta": "Which is the most appropriate recommendation regarding colorectal cancer screening?",
+    "alternativas": {
+      "A": {
+        "texto": "Defer screening until age 50",
+        "quiz": "Esperar os 50"
+      },
+      "B": {
+        "texto": "CT colonography every year",
+        "quiz": "Colono-TC anual"
+      },
+      "C": {
+        "texto": "Measure serum carcinoembryonic antigen",
+        "quiz": "Dosar CEA"
+      },
+      "D": {
+        "texto": "Begin screening now with colonoscopy or a stool-based test",
+        "quiz": "Rastrear agora"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Risco médio: o rastreamento começa *aos 45*",
+    "certa": [
+      "Desde 2021, a USPSTF recomenda rastrear câncer colorretal em adultos de risco médio dos *45 aos 75 anos* (grau B entre 45 e 49, grau A entre 50 e 75). Valem *colonoscopy* a cada 10 anos, *FIT* anual, FIT-DNA a cada 1 a 3 anos, colonografia por TC a cada 5 anos ou sigmoidoscopia flexível a cada 5 anos. O melhor teste é o que a pessoa vai fazer, e um teste de fezes positivo leva à colonoscopia."
+    ],
+    "termos": [
+      "colorectal cancer screening",
+      "USPSTF 2021: age 45",
+      "colonoscopy every 10 years",
+      "annual FIT"
+    ],
+    "erradas": {
+      "A": "Esperar os 50 segue a recomendação antiga; a idade baixou para 45 com o aumento de casos em adultos mais jovens.",
+      "B": "A colonografia por TC é uma opção, mas a cada 5 anos, não todo ano.",
+      "C": "O CEA serve para acompanhar recidiva depois do tratamento e não tem sensibilidade para rastreamento."
+    },
+    "macete": {
+      "frase": "*45 é o novo 50* para o cólon",
+      "apoio": "Na imagem, o presente de aniversário chega antes do esperado: dentro da caixa, uma câmera numa mangueirinha e um kit de amostra. As folhas do calendário voltam no tempo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarenta e cinco anos, sem sintomas, sem pólipo, sem doença inflamatória intestinal e sem câncer colorretal na família. Ele pergunta sobre exames. O que recomendar hoje?",
+    "palavras_chave": [
+      "routine visit",
+      "45-year-old",
+      "average risk",
+      "preventive care"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Prevencao",
+      "#PreventiveMedicine",
+      "#Rastreamento",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "45 anos e risco médio: quando rastrear?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

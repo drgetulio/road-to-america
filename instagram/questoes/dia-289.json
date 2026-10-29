@@ -1,0 +1,96 @@
+{
+  "dia": 289,
+  "data": "2027-08-17",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Pericardite aguda",
+  "conceito": "Acute pericarditis: diffuse ST elevation with PR depression, NSAID plus colchicine",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-18",
+  "tom": null,
+  "gancho": "O coração vestiu *um suéter que arranha*. E agora, plantão?",
+  "gancho_apoio": "Dor que piora deitado e alivia inclinado para a frente.",
+  "imagem": {
+    "arquivo": "dia-289.png",
+    "cena": "Placa verde NEXT STEP com saídas; um coração simpático sentado num banco, inclinado para a frente, usando um suéter de lã áspera que solta faíscas de atrito; um traçado ondulado de batimento ao fundo.",
+    "foco": "50% 35%",
+    "alt": "O coração vestiu um suéter que arranha. E agora, plantão?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-289-macete.png",
+    "cena": "Callback: o coração tira o suéter que arranha e recebe numa bandeja um comprimido laranja de anti-inflamatório e uma flor lilás de açafrão-do-prado (colchicina); ao fundo, o traçado sobe suavemente em toda a extensão.",
+    "foco": "50% 45%",
+    "alt": "ST difuso e PR deprimido: pericardite aguda"
+  },
+  "questao": {
+    "vinheta": "One week after a cold, a 29-year-old man has 2 days of sharp chest pain that is worse lying flat and better sitting forward. A scratchy, three-component sound is heard over the precordium. ECG shows diffuse ST elevation with PR depression. Troponin is normal, and echocardiography shows no effusion.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Acute pericarditis",
+        "quiz": "Pericardite aguda"
+      },
+      "B": {
+        "texto": "Benign early repolarization",
+        "quiz": "Repolariz. precoce"
+      },
+      "C": {
+        "texto": "Acute anterior STEMI",
+        "quiz": "IAM anterior"
+      },
+      "D": {
+        "texto": "Cardiac tamponade",
+        "quiz": "Tamponamento"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "ST difuso e PR deprimido: *pericardite aguda*",
+    "certa": [
+      "Dor pleurítica que piora deitado e melhora inclinado para a frente, *atrito pericárdico* e ECG com *supradesnivelamento difuso do ST* e *infradesnivelamento do PR* fecham *acute pericarditis*, quase sempre viral ou idiopática. O tratamento de primeira linha é *AINE (ou aspirina) mais colchicina*, e a colchicina por 3 meses reduz a recorrência."
+    ],
+    "termos": [
+      "acute pericarditis",
+      "diffuse ST elevation",
+      "PR depression",
+      "NSAID plus colchicine"
+    ],
+    "erradas": {
+      "B": "Repolarização precoce não dá dor, atrito nem depressão do PR.",
+      "C": "No IAM com supra, o ST sobe em um território, com imagem em espelho, e a troponina sobe.",
+      "D": "Tamponamento exige derrame com hipotensão, turgência jugular e pulso paradoxal, e o eco não mostra derrame."
+    },
+    "macete": {
+      "frase": "Pericardite: *o ST sobe em todo lugar, o PR desce* e a cura vem com *flor*",
+      "apoio": "Na imagem, o coração tira o suéter de lã que arranha (o atrito) e recebe um comprimido de anti-inflamatório e uma florzinha de açafrão-do-prado, a planta de onde veio a colchicina.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor no peito que piora deitado e alivia inclinado para a frente, uma semana depois de um resfriado. Barulho de atrito, ECG com supra difuso e troponina normal. Qual é o diagnóstico?",
+    "palavras_chave": [
+      "chest pain after a cold",
+      "positional pain",
+      "scratchy heart sound",
+      "ECG changes"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Melhora inclinado e ECG difuso: qual diagnóstico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 363,
+  "data": "2027-10-30",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Comunicação de erro médico",
+  "conceito": "Medical error disclosure: tell the patient promptly and honestly what happened and what will be done",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-31",
+  "tom": null,
+  "gancho": "O VAR não esconde o lance: *e o médico?*",
+  "gancho_apoio": "Uma dose dada ao paciente errado, sem dano até agora.",
+  "imagem": {
+    "arquivo": "dia-363.png",
+    "cena": "À beira de um campo de futebol, um monitor de VAR com a tela em branco, um apito e um boné de árbitro num banco; o Viés, de trás de uma tabela 2x2, tenta cobrir a tela com o lençol.",
+    "foco": "50% 35%",
+    "alt": "O VAR não esconde o lance: e o médico?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-363-macete.png",
+    "cena": "Callback: a tela do VAR mostra um grande ícone de replay em círculo para o estádio todo, ao lado de uma balança desenhada como placa de trânsito e de um balão de fala em forma de coração; o lençol do Viés ficou caído no chão.",
+    "foco": "50% 45%",
+    "alt": "Erro com o paciente: disclosure honesto e rápido"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old hospitalized man receives a dose of enoxaparin that was ordered for the patient in the next bed. One hour later, the error is discovered. He has no bleeding, and laboratory results are normal. He is alert and asks why the team is checking on him so often.",
+    "pergunta": "Which is the most appropriate action by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "Disclose the error to him now",
+        "quiz": "Contar tudo"
+      },
+      "B": {
+        "texto": "Disclose only if a complication develops",
+        "quiz": "Só se complicar"
+      },
+      "C": {
+        "texto": "Inform only his family",
+        "quiz": "Só a família"
+      },
+      "D": {
+        "texto": "File an incident report without telling him",
+        "quiz": "Só notificar"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Erro com o paciente: *disclosure* honesto e rápido",
+    "certa": [
+      "Diante de um erro, o paciente tem direito a saber, mesmo sem dano. O médico deve fazer o *error disclosure* logo: explicar com clareza o que aconteceu, os riscos possíveis, o que será feito para monitorar e corrigir e como evitar que se repita, com um pedido de desculpas. A *incident report* também deve ser feita, mas não substitui a conversa."
+    ],
+    "termos": [
+      "medical error",
+      "error disclosure",
+      "apology",
+      "incident report"
+    ],
+    "erradas": {
+      "B": "A obrigação de contar não depende de complicação; esconder um erro sem dano também quebra a confiança.",
+      "C": "Ele está lúcido e capaz; contar só para a família sem a autorização dele viola a autonomia e a confidencialidade.",
+      "D": "Notificar é obrigatório para a segurança do paciente, mas não dispensa a conversa honesta com ele."
+    },
+    "macete": {
+      "frase": "*Seja o VAR*: mostra o lance, explica, diz o plano",
+      "apoio": "O VAR mostra o replay para o estádio inteiro, explica a decisão e o jogo segue. No erro médico, é igual: o que aconteceu, o que significa, o que vai ser feito e um pedido de desculpas. Esconder o lance é que dá cartão vermelho.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Ele recebeu a enoxaparina prescrita para o paciente do leito ao lado. Está bem, sem sangramento, e pergunta por que tanta gente aparece no quarto. O que o médico deve fazer?",
+    "palavras_chave": [
+      "wrong-patient medication",
+      "enoxaparin",
+      "no harm",
+      "physician-patient communication"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Dose errada, sem dano. O que fazer?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

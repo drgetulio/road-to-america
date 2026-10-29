@@ -1,0 +1,100 @@
+{
+  "dia": 360,
+  "data": "2027-10-27",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Diferenciação sexual",
+  "conceito": "Male differentiation: SRY drives Sertoli cells (anti-Mullerian hormone) and Leydig cells (testosterone)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-28",
+  "tom": null,
+  "gancho": "Na obra do embrião, *uma equipe faltou ao serviço*",
+  "gancho_apoio": "Menino com genitália típica e um útero achado na cirurgia de hérnia.",
+  "imagem": {
+    "arquivo": "dia-360.png",
+    "cena": "Um canteiro de obras com duas torres de andaime lado a lado, um capacete de mestre de obras sobre a mesa e duas equipes: uma com bola de demolição e outra com tijolos; uma nuvem de poeira esconde qual equipe não apareceu.",
+    "foco": "50% 35%",
+    "alt": "Na obra do embrião, uma equipe faltou ao serviço"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-360-macete.png",
+    "cena": "Callback: a equipe da bola de demolição não veio, e o guindaste fica parado; por isso a primeira torre continua de pé ao lado da segunda, já completa e com bandeirinha; o capacete do mestre de obras brilha sobre a mesa.",
+    "foco": "50% 45%",
+    "alt": "Útero num menino 46,XY: faltou o anti-Mullerian hormone"
+  },
+  "questao": {
+    "vinheta": "During repair of an inguinal hernia in a 3-year-old boy, the surgeon finds a uterus and fallopian tubes in the hernia sac next to a normal-appearing testis. Karyotype is 46,XY. The penis and scrotum are normally formed, and the vas deferens is present.",
+    "pergunta": "Deficiency of which product most likely explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "SRY protein from the Y chromosome",
+        "quiz": "Proteína SRY"
+      },
+      "B": {
+        "texto": "Testosterone from Leydig cells",
+        "quiz": "Testosterona"
+      },
+      "C": {
+        "texto": "Dihydrotestosterone from 5-alpha-reductase",
+        "quiz": "DHT"
+      },
+      "D": {
+        "texto": "Anti-Mullerian hormone from Sertoli cells",
+        "quiz": "AMH (Sertoli)"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Útero num menino 46,XY: faltou o *anti-Mullerian hormone*",
+    "certa": [
+      "O *SRY* forma o testículo, e nele as *Sertoli cells* produzem o *anti-Mullerian hormone*, que faz o ducto de Müller (útero, tubas e terço superior da vagina) regredir. As *Leydig cells* fazem testosterona, que mantém o ducto de Wolff (epidídimo, ducto deferente), e a DHT forma a genitália externa. Genitália masculina normal, ducto deferente presente e útero persistente indicam falta isolada de AMH: síndrome da persistência dos ductos de Müller."
+    ],
+    "termos": [
+      "SRY",
+      "Sertoli cells",
+      "anti-Mullerian hormone",
+      "Leydig cells"
+    ],
+    "erradas": {
+      "A": "Sem SRY não se forma testículo: gônadas em fita, útero presente e fenótipo feminino.",
+      "B": "Sem testosterona, os ductos de Wolff não se desenvolveriam e a genitália externa seria ambígua.",
+      "C": "Falta de DHT (deficiência de 5-alfa-redutase) deixa a genitália externa ambígua, com estruturas internas masculinas e sem útero."
+    },
+    "macete": {
+      "frase": "*Sertoli Some com o Müller; Leydig Levanta o Wolff*",
+      "apoio": "O SRY é o mestre de obras que contrata duas equipes: a da Sertoli, com a bola de demolição (AMH) que derruba a torre de Müller, e a da Leydig, com os tijolos (testosterona) que levanta a torre de Wolff. Se a demolição falta, a torre de Müller fica de pé.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Na cirurgia de hérnia de um menino de 3 anos, aparecem útero e tubas ao lado de um testículo. Cariótipo 46,XY, genitália externa típica. Que produto faltou?",
+    "palavras_chave": [
+      "inguinal hernia repair",
+      "uterus in a boy",
+      "46,XY",
+      "normal external genitalia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Embriologia",
+      "#Embryology",
+      "#Endocrinologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "46,XY com útero e genitália típica:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 25,
+  "data": "2026-11-26",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Anafilaxia alimentar",
+  "conceito": "Food anaphylaxis: intramuscular epinephrine in the anterolateral thigh first",
+  "personagem": null,
+  "gancho_data": "Thanksgiving (26/11): jantar em família nos EUA e a alergia a amendoim.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-27",
+  "tom": null,
+  "gancho": "Thanksgiving: o *amendoim* chegou disfarçado na sobremesa",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-025.png",
+    "cena": "O garçom do rodízio serve uma mesa festiva de Thanksgiving com um peru assado no espeto. Na mesa, uma torta dourada esconde um amendoim de óculos escuros e bigode falso espiando pela massa. A plaquinha verde e vermelha está ao lado.",
+    "foco": "50% 35%",
+    "alt": "Thanksgiving: o amendoim chegou disfarçado na sobremesa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-025-macete.png",
+    "cena": "Callback da mesa: o amendoim foi desmascarado, com os óculos caídos. O garçom vira a plaquinha para o verde, e uma caneta autoinjetora de adrenalina voa como bola de futebol em direção a um gol montado sobre uma almofada de pelúcia em forma de coxa.",
+    "alt": "Chute de coxa, e já"
+  },
+  "questao": {
+    "vinheta": "At a Thanksgiving dinner, a 9-year-old boy eats pie containing peanuts. Fifteen minutes later, in the emergency department, he has diffuse hives, lip swelling, wheezing and vomiting. BP is 78/44 mm Hg and pulse 138/min. He weighs 30 kg.",
+    "pergunta": "Which is the most appropriate initial treatment?",
+    "alternativas": {
+      "A": {
+        "texto": "Intramuscular epinephrine in the anterolateral thigh",
+        "quiz": "Adrenalina IM coxa"
+      },
+      "B": {
+        "texto": "Intravenous diphenhydramine",
+        "quiz": "Difenidramina IV"
+      },
+      "C": {
+        "texto": "Nebulized albuterol",
+        "quiz": "Salbutamol inalado"
+      },
+      "D": {
+        "texto": "Intravenous methylprednisolone",
+        "quiz": "Metilprednisolona IV"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Chute de coxa, e já",
+    "certa": [
+      "Exposição a um alérgeno seguida, em minutos, de pele (urticária, edema de lábio), respiração (sibilância), trato digestivo (vômitos) e hipotensão é anafilaxia. O primeiro remédio é a adrenalina intramuscular na face anterolateral da coxa, na dose de 0,01 mg/kg da solução de 1 mg/mL (no máximo 0,5 mg, aqui 0,3 mg), que pode voltar a ser aplicada depois de 5 a 15 minutos, com o paciente deitado e volume intravenoso pela hipotensão. A adrenalina age nos receptores alfa-1 (sobe a pressão e reduz o edema) e beta-2 (abre os brônquios e freia a liberação de mediadores dos mastócitos)."
+    ],
+    "termos": [
+      "anaphylaxis",
+      "intramuscular epinephrine",
+      "anterolateral thigh",
+      "peanut allergy"
+    ],
+    "erradas": {
+      "B": "O anti-histamínico só alivia coceira e urticária, não trata choque nem obstrução da via aérea e nunca substitui a adrenalina.",
+      "C": "O salbutamol ajuda o broncoespasmo que sobra depois da adrenalina, mas não corrige a hipotensão.",
+      "D": "O corticoide demora horas para agir e não tem benefício comprovado na fase aguda da anafilaxia."
+    },
+    "macete": {
+      "frase": "Anafilaxia é pênalti: chute de coxa, e já! Adrenalina IM no vasto lateral, porque no músculo da coxa ela é absorvida mais rápido do que no braço ou embaixo da pele.",
+      "apoio": "Pegadinha de prova: O NBME oferece anti-histamínico e corticoide como alternativas que parecem completas; toda anafilaxia, inclusive na criança, começa pela adrenalina IM.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Thanksgiving nos EUA é dia de jantar em família, e as alergias alimentares viram assunto. No Rodízio de Quinta, a emergência pediátrica.",
+    "palavras_chave": [
+      "peanut",
+      "urticaria",
+      "wheezing",
+      "hypotension"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Anaphylaxis",
+      "#Thanksgiving",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Anafilaxia com hipotensão: primeiro remédio?"
+  },
+  "exemplo": false
+}

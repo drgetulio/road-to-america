@@ -1,0 +1,107 @@
+{
+  "dia": 343,
+  "data": "2027-10-10",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix da saúde mental: Transtorno de pânico (dia 46), Episódio depressivo maior (dia 74), Esquizofrenia e transtornos relacionados (dia 137)",
+  "conceito": "Mental health remix: Panic disorder + Major depressive episode + Psychotic disorders by duration",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Saúde Mental (10/10): tom acolhedor.",
+  "remix_de": [
+    46,
+    74,
+    137
+  ],
+  "explicacao_em": "2027-10-11",
+  "tom": "acolhedor",
+  "cvv": true,
+  "gancho": "Três discos sobre saúde mental. *Hoje a conversa é com calma.*",
+  "gancho_apoio": "Dia Mundial da Saúde Mental. Remix de pânico, depressão e psicose.",
+  "imagem": {
+    "arquivo": "dia-343.png",
+    "cena": "Toca-discos sereno com três discos lado a lado, cada um com um ícone suave (um coração com ondas leves, uma pequena nuvem de chuva, uma ampulheta) e um quarto disco de outra cor; luz quente e plantas ao redor.",
+    "foco": "50% 35%",
+    "alt": "Três discos sobre saúde mental. Hoje a conversa é com calma."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-343-macete.png",
+    "cena": "Callback: o disco do coração com ondas toca, e um alarme de incêndio na parede é ajustado com uma pequena chave de fenda, enquanto uma trilha de pegadas atravessa um túnel iluminado sem pressa.",
+    "foco": "50% 45%",
+    "alt": "Transtorno de pânico: SSRI com CBT a longo prazo"
+  },
+  "questao": {
+    "vinheta": "A 29-year-old woman has recurrent sudden episodes of palpitations, sweating, chest tightness, and fear of dying that peak within 10 minutes. For 3 months, she has avoided the subway for fear of another episode. ECG, TSH, and glucose are normal, and she uses no substances.",
+    "pergunta": "Which is the most appropriate long-term treatment?",
+    "alternativas": {
+      "A": {
+        "texto": "Sertraline plus cognitive behavioral therapy",
+        "quiz": "Sertralina + TCC",
+        "dia": 46
+      },
+      "B": {
+        "texto": "Long-term daily alprazolam alone",
+        "quiz": "Alprazolam diário"
+      },
+      "C": {
+        "texto": "Risperidone",
+        "quiz": "Risperidona",
+        "dia": 137
+      },
+      "D": {
+        "texto": "Bupropion",
+        "quiz": "Bupropiona",
+        "dia": 74
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Transtorno de pânico: *SSRI* com *CBT* a longo prazo",
+    "certa": [
+      "Crises inesperadas e recorrentes que atingem o pico em minutos, com medo de novas crises e evitação por mais de 1 mês, depois de afastar causas clínicas, definem *panic disorder*. O tratamento de manutenção é um *SSRI* (como a sertralina) associado a *cognitive behavioral therapy*. Benzodiazepínico só como ponte curta no início."
+    ],
+    "termos": [
+      "panic disorder",
+      "SSRI",
+      "cognitive behavioral therapy",
+      "benzodiazepine"
+    ],
+    "erradas": {
+      "B": "Benzodiazepínico alivia rápido, mas uso diário prolongado traz tolerância, dependência e rebote; serve só como ponte curta (dia 46).",
+      "C": "Risperidona trata psicose (dia 137), e ela não tem delírio, alucinação nem desorganização.",
+      "D": "Bupropiona é antidepressivo para episódio depressivo (dia 74), sem eficácia no pânico, e pode aumentar a ansiedade."
+    },
+    "macete": {
+      "frase": "*Alarme que toca sem fogo*",
+      "apoio": "No pânico, o alarme de incêndio dispara sem incêndio. O ISRS recalibra o alarme aos poucos, e a TCC ensina que dá para atravessar o som sem fugir. O benzodiazepínico só abaixa o volume por alguns dias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial da Saúde Mental. Remix com transtorno de pânico (dia 46), episódio depressivo maior (dia 74) e transtornos psicóticos por duração (dia 137), mais um distrator. Crises de minutos, medo de novas crises e exames normais. Qual tratamento?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SaudeMental",
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pânico com evitação. Longo prazo:"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 181,
+  "data": "2027-05-01",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Colega com capacidade prejudicada",
+  "conceito": "Colleague who seems impaired at work: protect patients first and report through institutional channels",
+  "personagem": null,
+  "gancho_data": "Dia do Trabalhador (1/5): cuidar de quem cuida.",
+  "remix_de": null,
+  "explicacao_em": "2027-05-02",
+  "tom": "acolhedor",
+  "gancho": "Dia do Trabalhador: quem *cuida* também precisa de cuidado",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-181.png",
+    "cena": "A porta de um centro cirúrgico com um semáforo ainda amarelo em cima, uma placa de trânsito em forma de balança da justiça ao lado e, no corredor, um cabide com um jaleco e um capacete de operário pendurados lado a lado, lembrando o 1º de maio.",
+    "foco": "50% 35%",
+    "alt": "Dia do Trabalhador: quem cuida também precisa de cuidado"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-181-macete.png",
+    "cena": "O semáforo fica vermelho na porta da sala e uma seta verde aponta para o elevador da chefia; um guarda-chuva protege a mesa cirúrgica vazia, e o jaleco do cabide ganha um cachecol quentinho: o colega também é cuidado.",
+    "alt": "Primeiro o paciente, depois o canal da instituição"
+  },
+  "questao": {
+    "vinheta": "A surgical resident notices that the attending surgeon smells of alcohol, has slurred speech, and is unsteady while scrubbing for an elective case scheduled to start in 10 minutes. The resident worries about damaging their working relationship.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Ask the attending to finish this case and then seek help",
+        "quiz": "Termina e depois vê"
+      },
+      "B": {
+        "texto": "Notify the chief of surgery before the case begins",
+        "quiz": "Avisar a chefia já"
+      },
+      "C": {
+        "texto": "Report the attending to the state medical board next week",
+        "quiz": "Conselho na semana"
+      },
+      "D": {
+        "texto": "Document the concern and watch for a second episode",
+        "quiz": "Anotar e esperar"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Primeiro o paciente, depois o *canal da instituição*",
+    "certa": [
+      "Um colega com sinais de intoxicação prestes a operar é risco imediato para o paciente (*patient safety*). O passo certo é impedir que ele atue agora, avisando a chefia antes de a cirurgia começar (*chain of command*). Depois, a instituição encaminha o colega ao programa de saúde do médico (*physician health program*), que trata o problema como doença, sem punição automática."
+    ],
+    "termos": [
+      "impaired physician",
+      "patient safety",
+      "chain of command",
+      "physician health program"
+    ],
+    "erradas": {
+      "A": "Deixar terminar a cirurgia mantém o paciente exposto ao risco que você já percebeu; a conversa particular não protege ninguém nos próximos 10 minutos.",
+      "C": "O conselho estadual (*state medical board*) entra quando o canal interno falha ou não existe; esperar uma semana deixa o paciente de hoje sem proteção.",
+      "D": "Anotar e esperar um segundo episódio adia a proteção; a suspeita já basta para agir."
+    },
+    "macete": {
+      "frase": "Pense no *semáforo* da porta da sala: primeiro fica *vermelho* para a cirurgia, depois você pega o *elevador* até a chefia. Proteger agora, encaminhar com cuidado em seguida.",
+      "apoio": "O NBME oferece a conversa particular depois do caso ou a denúncia direta ao conselho; a resposta protege o paciente agora e usa o canal interno da instituição.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é 1º de maio, e a questão é sobre um colega que não está bem para trabalhar. Na prova e na vida, existe uma ordem certa: proteger quem está na mesa e, ao mesmo tempo, encaminhar quem precisa de ajuda.",
+    "palavras_chave": [
+      "attending surgeon",
+      "smell of alcohol",
+      "slurred speech",
+      "operating room"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Colega sem condição de operar. E agora?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

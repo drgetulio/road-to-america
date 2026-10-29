@@ -69,7 +69,7 @@ export default {
       "</section>" +
 
       '<section class="panel" aria-labelledby="rg-t"><div class="panel__head"><h2 class="h-sm" id="rg-t">3. Regressão sobre o θ do banco</h2>' +
-        '<p class="hint">Para cada desfecho, o θ do aluno é calculado só com as respostas dadas até a data da prova. Pass/Fail: regressão logística, considerada suficiente com pelo menos ' + DESFECHOS_PADRAO.min_por_classe + " aprovados e " + DESFECHOS_PADRAO.min_por_classe + " reprovados (cerca de 10 eventos por variável; Peduzzi e colaboradores, 1996). Notas: regressão linear, suficiente com pelo menos " + DESFECHOS_PADRAO.min_escores + " notas (critério interno).</p></div>" +
+        '<p class="hint">Para cada desfecho, o θ do aluno é calculado só com as respostas dadas até a data da prova. Pass/Fail: regressão logística, considerada suficiente com pelo menos ' + DESFECHOS_PADRAO.min_por_classe + " aprovados e " + DESFECHOS_PADRAO.min_por_classe + " reprovados (cerca de 10 eventos por variável; Peduzzi e colaboradores, 1996). Notas: regressão linear com efeito do aluno (várias autoavaliações do mesmo aluno não contam como alunos diferentes), suficiente com pelo menos " + DESFECHOS_PADRAO.min_alunos + " alunos distintos (critério interno).</p></div>" +
         '<p class="acts-row"><button class="btn btn--sm" type="button" data-ajustar>' + icon("chart-bar") + "Ajustar os modelos</button></p>" +
         '<div data-reg-out aria-live="polite"></div>' +
         '<h3 class="h-xs">Modelo em uso nas telas dos alunos</h3>' + resumoModelo(modelo, step) +
@@ -165,12 +165,12 @@ function htmlRegressao(d, step) {
   const pf = d.pass_fail;
   const t50 = pf.beta1 ? -pf.beta0 / pf.beta1 : null;
   const linear = (m, rotulo) => !m || m.a === null ? '<p class="body">' + e(rotulo) + ": " + e(m?.aviso || "sem dados.") + "</p>"
-    : '<p class="body"><b>' + e(rotulo) + "</b>: nota = " + numTxt(m.a, 1) + " + " + numTxt(m.b, 1) + " × θ (desvio residual " + numTxt(m.sigma, 1) + ", R² " + numTxt(m.r2, 2) + ", " + plural(m.n, "nota", "notas") + "). " + (m.suficiente ? "Suficiente." : e(m.aviso)) + "</p>";
+    : '<p class="body"><b>' + e(rotulo) + "</b>: nota = " + numTxt(m.a, 1) + " + " + numTxt(m.b, 1) + " × θ (desvio para um aluno novo " + numTxt(m.sigma, 1) + (Number.isFinite(m.tau) && m.tau > 0 ? ", dos quais " + numTxt(m.tau, 1) + " do efeito do aluno" : "") + ", R² " + numTxt(m.r2, 2) + ", " + plural(m.n, "nota", "notas") + (Number.isFinite(m.n_alunos) ? " de " + plural(m.n_alunos, "aluno", "alunos") : "") + "). " + (m.suficiente ? "Suficiente." : e(m.aviso)) + "</p>";
   const algum = pf.suficiente || d.escore_nbme?.suficiente || d.escore_oficial?.suficiente || d.efeito_modo?.suficiente || d.ligacao_nbme?.suficiente;
   const lg = d.ligacao_nbme;
   const ligacao = !lg ? "" : '<h3 class="h-xs">Limiar ligado às autoavaliações NBME</h3>' +
     (lg.mu === null ? '<p class="body">' + e(lg.motivo) + "</p>"
-      : '<p class="body" data-ligacao-nbme>θ em que o escore NBME previsto atinge ' + lg.limiar + ": <b>" + numTxt(lg.mu, 2) + "</b> logit (erro-padrão " + numTxt(lg.ep, 2) + ", método delta; " + plural(lg.n, "escore", "escores") + "). O limiar provisório do banco está em 0; a diferença mede o viés do padrão provisório. " +
+      : '<p class="body" data-ligacao-nbme>θ em que o escore NBME previsto atinge ' + lg.limiar + ": <b>" + numTxt(lg.mu, 2) + "</b> logit (erro-padrão " + numTxt(lg.ep, 2) + ", método delta; " + plural(lg.n, "escore", "escores") + (Number.isFinite(lg.n_alunos) ? " de " + plural(lg.n_alunos, "aluno", "alunos") : "") + "). O limiar provisório do banco está em 0; a diferença mede o viés do padrão provisório. " +
         (lg.suficiente ? "Suficiente: ao salvar, as telas trocam o limiar provisório por este, com a incerteza dele." : "Ainda não vai para as telas: " + e(lg.motivo)) + "</p>");
   return '<div class="reg">' +
     '<h3 class="h-xs">Pass/Fail oficial</h3>' +
@@ -199,7 +199,7 @@ function resumoModelo(m, step) {
   const pf = m.desfechos;
   return '<p class="body">' + (m.demonstracao ? '<span class="selo-demo">dados de demonstração</span> ' : "") + "Gravado em " + e(dataBR(m.atualizado_em)) + ". " +
     (pf ? "Pass/Fail com " + plural(pf.n, "desfecho", "desfechos") + ", β0 " + numTxt(pf.beta0, 2) + " e β1 " + numTxt(pf.beta1, 2) + ", área sob a curva " + numTxt(pf.auc, 2) + (pf.suficiente ? "." : ", ainda exploratório.") : "Sem modelo de Pass/Fail.") +
-    (m.escore_nbme ? " Escore NBME: " + plural(m.escore_nbme.n, "nota", "notas") + (m.escore_nbme.suficiente ? "." : ", insuficiente.") : "") +
+    (m.escore_nbme ? " Escore NBME: " + plural(m.escore_nbme.n, "nota", "notas") + (Number.isFinite(m.escore_nbme.n_alunos) ? " de " + plural(m.escore_nbme.n_alunos, "aluno", "alunos") : "") + (m.escore_nbme.suficiente ? "." : ", insuficiente.") : "") +
     (m.ligacao_nbme?.suficiente ? " Limiar ligado à NBME em " + numTxt(m.ligacao_nbme.mu, 2) + " logit (erro-padrão " + numTxt(m.ligacao_nbme.ep, 2) + "), em uso nas telas." : m.ligacao_nbme ? " Ligação com a NBME ainda insuficiente." : "") +
     (step === "step2ck" && m.escore_oficial ? " Nota oficial: " + plural(m.escore_oficial.n, "nota", "notas") + (m.escore_oficial.suficiente ? "." : ", insuficiente para mostrar a nota ao aluno.") : "") + "</p>";
 }

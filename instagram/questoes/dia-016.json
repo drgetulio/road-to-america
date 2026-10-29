@@ -1,0 +1,95 @@
+{
+  "dia": 16,
+  "data": "2026-11-17",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Tromboembolismo pulmonar",
+  "conceito": "Suspected PE: Wells score guides CT angiography, D-dimer only when probability is low",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-18",
+  "tom": null,
+  "gancho": "Capitã Plaqueta *apita*: engarrafamento no pós-operatório",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-016.png",
+    "cena": "A Capitã Plaqueta apita no meio de um cruzamento dentro de uma estrada em forma de túnel rosado (o vaso pulmonar). Um caminhão grande, escuro e encaroçado está atravessado na pista e os carrinhos fazem fila. Mais à frente a estrada se divide: uma faixa vai para uma cabine de pedágio pequena e a outra segue reto até um grande aparelho em forma de anel.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta apita: engarrafamento no pós-operatório"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-016-macete.png",
+    "cena": "Callback do túnel: com o escore alto, a Capitã levanta a cancela e guia o trânsito direto para dentro do anel do tomógrafo, cujo feixe ilumina o caminhão do coágulo. A cabine de pedágio do D-dímero fica fechada, com um cone na frente.",
+    "alt": "Wells alto não para no pedágio"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old man has sudden dyspnea and pleuritic chest pain 5 days after hip replacement. Pulse is 114/min, BP 128/78 mm Hg, SpO2 90% on room air. His right calf is swollen and tender. Creatinine is normal and he has no allergies.",
+    "pergunta": "Which is the most appropriate next step in diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "CT pulmonary angiography",
+        "quiz": "Angio-TC de tórax"
+      },
+      "B": {
+        "texto": "D-dimer assay",
+        "quiz": "D-dímero"
+      },
+      "C": {
+        "texto": "Ventilation-perfusion scan",
+        "quiz": "Cintilografia V/Q"
+      },
+      "D": {
+        "texto": "Transthoracic echocardiography",
+        "quiz": "Ecocardiograma"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Wells alto não para no pedágio",
+    "certa": [
+      "No escore de Wells ele soma 9: sinais de trombose venosa profunda (3), TEP como hipótese mais provável (3), frequência acima de 100 (1,5) e cirurgia recente (1,5), probabilidade alta. Com probabilidade alta e paciente estável, o exame é direto a angiotomografia de tórax (CT pulmonary angiography), e a anticoagulação pode começar enquanto ela é feita se o risco de sangramento permitir. O D-dímero só serve para descartar quando a probabilidade é baixa, ou intermediária em alguns algoritmos."
+    ],
+    "termos": [
+      "pulmonary embolism",
+      "Wells score",
+      "CT pulmonary angiography",
+      "D-dimer",
+      "pretest probability"
+    ],
+    "erradas": {
+      "B": "D-dímero alto não confirma nada no pós-operatório, e normal não descarta com probabilidade alta, por isso ele só serve para probabilidade baixa.",
+      "C": "A cintilografia V/Q fica para quem não pode receber contraste iodado, como na alergia grave ou na insuficiência renal.",
+      "D": "O ecocardiograma à beira do leito ajuda no paciente instável que não pode ir à tomografia, e este está estável."
+    },
+    "macete": {
+      "frase": "D-dímero é D de Descartar: só funciona com Wells baixo. Com Wells alto, a Capitã Plaqueta manda o trânsito direto para a angiotomografia, sem parar no pedágio.",
+      "apoio": "Pegadinha de prova: O NBME traz um paciente pós-operatório com Wells alto e oferece o D-dímero; ele estará alto de qualquer jeito e não muda a conduta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com a Capitã Plaqueta: falta de ar no pós-operatório. Calcule a probabilidade antes de escolher o exame.",
+    "palavras_chave": [
+      "postoperative dyspnea",
+      "pleuritic chest pain",
+      "calf swelling",
+      "hip replacement"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pneumologia",
+      "#EmergencyMedicine",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Wells alto e estável: qual exame primeiro?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 100,
+  "data": "2027-02-09",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Insolação",
+  "conceito": "Exertional heat stroke: core temperature above 40 C with CNS dysfunction, cold-water immersion",
+  "personagem": null,
+  "gancho_data": "Terça de Carnaval: bloco de rua no calor.",
+  "remix_de": null,
+  "explicacao_em": "2027-02-10",
+  "tom": null,
+  "gancho": "Bloco de rua, motor fervendo: qual é a *primeira* conduta?",
+  "gancho_apoio": "Quatro horas dançando no calor, temperatura acima de 41 e confusão. Qual é o próximo passo?",
+  "imagem": {
+    "arquivo": "dia-100.png",
+    "cena": "Um carrinho alegórico de bloco de Carnaval, em forma de carro pequeno, ferve no sol forte: sai vapor do radiador. No alto, a placa verde de rodovia com três saídas em branco: uma estrada leva a um frasco de comprimidos, outra a uma banheira e outra a um aparelho de tomografia.",
+    "foco": "50% 35%",
+    "alt": "Carrinho de bloco fervendo no sol diante de uma placa com três saídas: comprimidos, banheira e tomógrafo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-100-macete.png",
+    "cena": "Callback: o carrinho de bloco agora relaxa dentro de uma piscininha inflável cheia de água e cubos de gelo, soltando o último vapor e sorrindo. Atrás, a ambulância espera com paciência, de faróis ligados, a vez de levar o carrinho já resfriado.",
+    "foco": "50% 40%",
+    "alt": "O carrinho de bloco relaxa numa piscininha com gelo; a ambulância espera atrás."
+  },
+  "questao": {
+    "vinheta": "A 23-year-old man collapses after dancing for 4 hours in a street parade on a hot, humid afternoon. He is confused and agitated. Rectal temperature is 41.3°C (106.3°F), pulse 128/min and BP 98/60 mm Hg; the skin feels hot and sweaty. His airway is patent and fingerstick glucose is normal.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral acetaminophen",
+        "quiz": "Paracetamol oral"
+      },
+      "B": {
+        "texto": "Cold-water immersion",
+        "quiz": "Banho de água gelada"
+      },
+      "C": {
+        "texto": "Intravenous dantrolene",
+        "quiz": "Dantrolene IV"
+      },
+      "D": {
+        "texto": "Noncontrast head CT before cooling",
+        "quiz": "TC de crânio antes"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Insolação por esforço: *esfria primeiro*, transporta depois",
+    "certa": [
+      "Temperatura central acima de 40 °C com disfunção do sistema nervoso central depois de esforço no calor é insolação por esforço (exertional heat stroke). A conduta é imersão em água fria (cold-water immersion) já no local, até a temperatura chegar perto de 39 °C, porque o tempo acima de 40 °C é o que define o dano. A pele suada, comum na forma por esforço, não afasta o diagnóstico."
+    ],
+    "termos": [
+      "exertional heat stroke",
+      "cold-water immersion",
+      "core temperature"
+    ],
+    "erradas": {
+      "A": "Antitérmico não funciona: o termostato do hipotálamo não mudou, o problema é calor demais produzido e retido.",
+      "C": "Dantrolene trata hipertermia maligna depois de anestésico e não tem papel na insolação.",
+      "D": "Atrasar o resfriamento para fazer tomografia aumenta o dano; o quadro neurológico se explica pelo calor."
+    },
+    "macete": {
+      "frase": "Bloco quente, *banheira gelada*: esfria primeiro, transporta depois",
+      "apoio": "Na imagem, o carrinho de bloco ferve no sol e as três saídas da placa esperam a escolha.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça de Carnaval: quatro horas de bloco no sol, um folião confuso e um termômetro que assusta. Qual saída você pega?",
+    "palavras_chave": [
+      "street parade",
+      "hot and humid",
+      "confusion",
+      "rectal temperature"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#MedicinaDeEmergencia",
+      "#EmergencyMedicine",
+      "#Carnaval"
+    ]
+  },
+  "quiz": {
+    "pergunta": "41 °C e confuso no bloco: o que fazer?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

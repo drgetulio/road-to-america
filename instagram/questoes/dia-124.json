@@ -1,0 +1,96 @@
+{
+  "dia": 124,
+  "data": "2027-03-05",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Intoxicação por paracetamol",
+  "conceito": "Acetaminophen overdose: N-acetylcysteine guided by the Rumack-Matthew nomogram",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-06",
+  "tom": null,
+  "cvv": true,
+  "gancho": "O fígado ficou sem *estoque* de glutationa. Quem repõe?",
+  "gancho_apoio": "Na farmácia da Tia Meia-Vida, um antídoto clássico que todo plantão precisa saber.",
+  "imagem": {
+    "arquivo": "dia-124.png",
+    "cena": "Um armazém em forma de fígado tem as prateleiras de potes iguais quase vazias, e uma poça roxa e grudenta se espalha no chão. A Tia Meia-Vida olha do balcão da farmácia com a mão no queixo.",
+    "foco": "50% 35%",
+    "alt": "Armazém em forma de fígado com prateleiras vazias e uma poça roxa; a Tia Meia-Vida observa do balcão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-124-macete.png",
+    "cena": "Callback: um caminhãozinho de entrega estaciona e a Tia Meia-Vida passa caixas de potes amarelos cor de enxofre para as prateleiras do fígado. A poça roxa encolhe à medida que os potes voltam.",
+    "foco": "50% 40%",
+    "alt": "Caminhão de entrega e a Tia Meia-Vida reabastecem as prateleiras do fígado com potes amarelos."
+  },
+  "questao": {
+    "vinheta": "A 20-year-old woman is brought to the emergency department 4 hours after ingesting about forty 500-mg acetaminophen tablets. She is nauseated but alert, and vital signs are normal. Her 4-hour serum acetaminophen concentration is above the treatment line on the Rumack-Matthew nomogram. AST and ALT are normal.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Deferoxamine",
+        "quiz": "Deferoxamina"
+      },
+      "B": {
+        "texto": "Fomepizole",
+        "quiz": "Fomepizol"
+      },
+      "C": {
+        "texto": "N-acetylcysteine",
+        "quiz": "N-acetilcisteína"
+      },
+      "D": {
+        "texto": "Sodium bicarbonate",
+        "quiz": "Bicarbonato"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Paracetamol: *N-acetilcisteína* pelo nomograma",
+    "certa": [
+      "Na dose tóxica, o paracetamol vira NAPQI pelo CYP2E1, e o NAPQI só é neutralizado pela glutationa do fígado. A N-acetilcisteína repõe a cisteína para refazer a glutationa e protege o fígado, com benefício máximo se começar até 8 horas depois da ingestão. O nível sérico a partir de 4 horas, acima da linha do nomograma de Rumack-Matthew, indica o tratamento mesmo com transaminases normais."
+    ],
+    "termos": [
+      "NAPQI",
+      "glutathione",
+      "N-acetylcysteine",
+      "Rumack-Matthew nomogram"
+    ],
+    "erradas": {
+      "A": "Deferoxamina é o quelante do ferro.",
+      "B": "Fomepizol bloqueia a álcool desidrogenase e é o antídoto de metanol e etilenoglicol.",
+      "D": "Bicarbonato de sódio trata a intoxicação por tricíclicos e alcaliniza a urina na intoxicação por salicilato."
+    },
+    "macete": {
+      "frase": "NAC = *Novo Abastecimento de Cisteína* para o estoque de glutationa",
+      "apoio": "Na imagem, o caminhão da Tia Meia-Vida reabastece as prateleiras vazias do fígado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com um antídoto que cai em toda prova e em todo pronto-socorro. Um nível sérico, um gráfico e uma decisão.",
+    "palavras_chave": [
+      "intentional overdose",
+      "acetaminophen level",
+      "nomogram",
+      "emergency department"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Toxicologia",
+      "#Toxicology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Paracetamol acima da linha: qual o antídoto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 107,
+  "data": "2027-02-16",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Nódulo de tireoide",
+  "conceito": "Thyroid nodule: check TSH first, then ultrasound to decide on fine-needle aspiration",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-17",
+  "tom": null,
+  "gancho": "A borboleta achou uma *pedrinha* na asa: qual é a primeira saída?",
+  "gancho_apoio": "Nódulo de 2 cm na tireoide, sem sintomas. Qual é o primeiro passo?",
+  "imagem": {
+    "arquivo": "dia-107.png",
+    "cena": "Uma borboleta simpática em forma de tireoide, com uma pedrinha redonda numa das asas, para diante da placa verde de rodovia com três saídas em branco: uma estrada leva a uma agulha gigante, outra a uma câmera e outra a um telefone antigo.",
+    "foco": "50% 35%",
+    "alt": "Borboleta com uma pedrinha na asa diante de uma placa com três saídas: agulha, câmera e telefone."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-107-macete.png",
+    "cena": "Callback: a borboleta fala ao telefone com o chefe, um pequeno grão de ervilha de gravata sentado numa cadeira de osso em forma de sela. Atrás dela, uma câmera dispara um flash suave (o ultrassom), e a agulha espera na fila, por último.",
+    "foco": "50% 40%",
+    "alt": "A borboleta tireoide liga para o chefe ervilha na cadeira em forma de sela; a câmera dispara e a agulha espera."
+  },
+  "questao": {
+    "vinheta": "During a routine examination, a 42-year-old woman is found to have a 2-cm nodule on the right side of her thyroid. She feels well, never received radiation to the head or neck and has no relatives with thyroid cancer. The nodule is firm and mobile, without cervical lymphadenopathy.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Measurement of serum TSH",
+        "quiz": "Dosar TSH"
+      },
+      "B": {
+        "texto": "Fine-needle aspiration",
+        "quiz": "Punção (PAAF)"
+      },
+      "C": {
+        "texto": "Radioactive iodine uptake scan",
+        "quiz": "Cintilografia"
+      },
+      "D": {
+        "texto": "Total thyroidectomy",
+        "quiz": "Tireoidectomia total"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Nódulo de tireoide: *TSH primeiro*",
+    "certa": [
+      "Todo nódulo de tireoide começa com TSH sérico (e ultrassom da tireoide, que não está entre as alternativas). Se o TSH vier baixo, a cintilografia mostra se o nódulo é quente (hiperfuncionante); nódulo quente raramente é câncer e não precisa de punção. Com TSH normal ou alto, o ultrassom define pelo tamanho e pelo padrão se o nódulo vai para punção aspirativa por agulha fina (fine-needle aspiration)."
+    ],
+    "termos": [
+      "thyroid nodule",
+      "serum TSH",
+      "radionuclide scan",
+      "fine-needle aspiration"
+    ],
+    "erradas": {
+      "B": "A punção vem depois do TSH e do ultrassom; num nódulo quente ela é desnecessária e pode confundir.",
+      "C": "A cintilografia só entra se o TSH estiver baixo.",
+      "D": "Cirurgia sem diagnóstico não é conduta inicial; ela depende da citologia e do ultrassom."
+    },
+    "macete": {
+      "frase": "Primeiro *liga para o chefe* na cadeira turca: TSH",
+      "apoio": "Na imagem, a borboleta com a pedrinha na asa para diante das três saídas da placa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça, endócrino: nódulo de 2 cm achado no exame de rotina, sem sintomas e sem fator de risco. Por onde começar?",
+    "palavras_chave": [
+      "neck mass",
+      "routine exam",
+      "no radiation exposure",
+      "euthyroid symptoms"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#Tireoide"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Nódulo de tireoide de 2 cm: primeiro?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

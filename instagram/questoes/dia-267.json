@@ -1,0 +1,99 @@
+{
+  "dia": 267,
+  "data": "2027-07-26",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Superantígenos",
+  "conceito": "Toxic shock syndrome toxin: superantigen links MHC II to the TCR outside the groove, massive cytokine release",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-27",
+  "tom": null,
+  "gancho": "Um *penetra* no boteco e a festa saiu do controle",
+  "gancho_apoio": "Tampão nasal, choque, febre alta e uma vermelhidão de sol. Como essa toxina age?",
+  "imagem": {
+    "arquivo": "dia-267.png",
+    "cena": "Na porta do boteco dos micróbios, Macrô segura o crachá no pescoço, assustado, enquanto lá dentro a festa saiu do controle: confete por todo lado, mesas balançando e notas musicais voando. Um convidado mascarado sai de fininho pela porta lateral.",
+    "foco": "50% 35%",
+    "alt": "Um penetra no boteco e a festa saiu do controle"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-267-macete.png",
+    "cena": "O mascarado é revelado: é um grampeador vivo que prende o crachá do Macrô direto na lateral do chapéu dos linfócitos, por fora, sem passar pela comanda. Cada grampo solta uma chuva de confete (as citocinas), e dezenas de linfócitos entram no samba ao mesmo tempo.",
+    "foco": "50% 40%",
+    "alt": "Superantígeno: linfócitos T em massa"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old man had nasal packing placed after septoplasty 2 days ago. He now has a temperature of 39.8°C, blood pressure of 82/50 mm Hg, vomiting, and a diffuse sunburn-like rash without blisters. Blood cultures are negative. Culture of the packing grows Staphylococcus aureus.",
+    "pergunta": "The responsible toxin acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Binding MHC II and the T-cell receptor outside the antigen groove",
+        "quiz": "Liga MHC II ao TCR"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of elongation factor 2",
+        "quiz": "ADP-ribosila EF-2"
+      },
+      "C": {
+        "texto": "Cleavage of desmoglein 1",
+        "quiz": "Cliva desmogleína 1"
+      },
+      "D": {
+        "texto": "Formation of pores in host cell membranes",
+        "quiz": "Forma poros"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Superantígeno: *linfócitos T em massa*",
+    "certa": [
+      "A *toxic shock syndrome toxin-1* (TSST-1) do *S. aureus* é um *superantigen*: liga a molécula de MHC II da célula apresentadora à região V-beta do receptor do linfócito T, por fora do sulco onde o peptídeo deveria estar. Assim ativa até 20% dos linfócitos T de uma vez (contra uma fração mínima num antígeno comum), com liberação maciça de IL-2, IFN-gama e TNF, que causam febre, choque e eritrodermia. Hemocultura negativa é comum no choque tóxico estafilocócico."
+    ],
+    "termos": [
+      "superantigen",
+      "TSST-1",
+      "MHC class II",
+      "V-beta region"
+    ],
+    "erradas": {
+      "B": "ADP-ribosilar o fator de elongação 2 é o mecanismo da toxina diftérica e da exotoxina A da *Pseudomonas*.",
+      "C": "Clivar a desmogleína 1 é a ação da toxina esfoliativa na síndrome da pele escaldada, que forma bolhas com sinal de Nikolsky.",
+      "D": "Formar poros é o mecanismo da alfa-toxina estafilocócica e da estreptolisina, que lesam células sem ativar linfócitos T em massa."
+    },
+    "macete": {
+      "frase": "Superantígeno é o *grampeador*: prende *MHC II no TCR por fora*",
+      "apoio": "O penetra mascarado é o grampeador que prende o crachá do Macrô (MHC II) no chapéu do linfócito T por fora, sem a comanda do antígeno. Por isso o salão inteiro cai no samba das citocinas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Tampão nasal depois de uma septoplastia, choque e eritrodermia em 48 horas. Qual é o truque da toxina?",
+    "palavras_chave": [
+      "nasal packing",
+      "high fever",
+      "hypotension",
+      "sunburn-like rash"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Microbiologia",
+      "#Imunologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Como a toxina age?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

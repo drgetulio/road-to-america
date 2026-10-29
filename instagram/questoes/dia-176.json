@@ -1,0 +1,88 @@
+{
+  "dia": 176,
+  "data": "2027-04-26",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "MHC I e MHC II",
+  "conceito": "MHC I vs MHC II: MHC I shows endogenous peptides to CD8, MHC II shows exogenous peptides to CD4",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-27",
+  "tom": null,
+  "gancho": "Macrô e a *regra do 8*: quem serve qual prato?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-176.png",
+    "cena": "Macrô no balcão do boteco com o crachá de duas listras, ao lado de uma célula vizinha com crachá de uma listra. Na fila, um polvo e um trevo de quatro folhas esperam ser servidos, e dois pratos vazios aguardam no balcão.",
+    "foco": "50% 35%",
+    "alt": "Macrô no balcão do boteco com o crachá de duas listras, ao lado de uma célula vizinha com crachá de uma listra."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-176-macete.png",
+    "cena": "A célula de uma listra serve ao polvo de 8 braços, num prato de uma listra, uma marmita caseira fumegante (comida do citosol); o Macrô, de duas listras, serve ao trevo de 4 folhas, num prato de duas listras, um pedaço do lanche de rua que ele comeu.",
+    "alt": "Comida de casa vai no prato 1, para o CD8"
+  },
+  "questao": {
+    "vinheta": "Cultured human epithelial cells are infected with influenza virus. Viral proteins made in the cytosol are degraded by the proteasome, and the resulting peptides are transported into the endoplasmic reticulum by TAP.",
+    "pergunta": "These peptides are presented on which molecule to which cells?",
+    "alternativas": {
+      "A": {
+        "texto": "MHC class I to CD4+ T cells",
+        "quiz": "MHC I p/ CD4"
+      },
+      "B": {
+        "texto": "MHC class II to CD4+ T cells",
+        "quiz": "MHC II p/ CD4"
+      },
+      "C": {
+        "texto": "MHC class I to CD8+ T cells",
+        "quiz": "MHC I p/ CD8"
+      },
+      "D": {
+        "texto": "MHC class II to CD8+ T cells",
+        "quiz": "MHC II p/ CD8"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Comida de casa vai no prato 1, para o *CD8*",
+    "certa": [
+      "Proteína feita dentro da célula (vírus, tumor) é *endogenous*: o *proteasome* corta, o *TAP* leva os peptídeos ao retículo e eles se encaixam no *MHC class I*, com a beta-2 microglobulina. Na superfície, o MHC I mostra o peptídeo ao linfócito *CD8+*, que mata a célula infectada, e toda célula nucleada tem MHC I."
+    ],
+    "termos": [
+      "MHC class I",
+      "MHC class II",
+      "CD8+ T cell",
+      "TAP",
+      "proteasome"
+    ],
+    "erradas": {
+      "A": "O CD4 se encaixa no MHC II, não no MHC I.",
+      "B": "MHC II mostra peptídeos exógenos, engolidos e digeridos no fagolisossomo, ao CD4+, e células epiteliais comuns não expressam MHC II de rotina.",
+      "D": "O CD8 se encaixa no MHC I; MHC II com CD8 é combinação que não existe."
+    },
+    "macete": {
+      "frase": "Regra do 8: *1 x 8* e *2 x 4*. Comida *de casa*, feita na cozinha da célula (citosol), vai no prato 1 para o polvo de *8* braços (CD8). Comida *de rua*, que o Macrô comeu, vai no prato 2 para o trevo de *4* folhas (CD4).",
+      "apoio": "O NBME cobra as peças de cada via (proteassoma e TAP no MHC I, cadeia invariante e CLIP no MHC II) e as deficiências: falta de TAP derruba o MHC I, e a síndrome do linfócito nu derruba o MHC II.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com o Macrô e o crachá que ele usa desde o primeiro dia. Um vírus dentro da célula, peptídeos cortados no citosol e dois pratos possíveis. Para quem vai esse prato?",
+    "palavras_chave": [
+      "influenza virus",
+      "cytosolic proteins",
+      "proteasome",
+      "antigen processing"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Peptídeo viral do citosol vai para:"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

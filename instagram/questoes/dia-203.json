@@ -1,0 +1,93 @@
+{
+  "dia": 203,
+  "data": "2027-05-23",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Streptococcus pneumoniae (dia 106), Malária por falciparum (dia 169), Síndrome de Wiskott-Aldrich (dia 197)",
+  "conceito": "Remix: Streptococcus pneumoniae + Plasmodium falciparum + Wiskott-Aldrich syndrome",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    106,
+    169,
+    197
+  ],
+  "explicacao_em": "2027-05-24",
+  "tom": null,
+  "gancho": "Remix no laboratório: qual dupla *bateu* certinho?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-203.png",
+    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (um mosquito, uma cápsula redonda com dois cocos e um regador azul) e um quarto disco com um par de correntinhas de bolinhas tentando entrar na pilha.",
+    "foco": "50% 35%",
+    "alt": "Remix no laboratório: qual dupla bateu certinho?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-203-macete.png",
+    "cena": "O disco do mosquito toca e acende verde, e saem notas musicais em forma de banana; os discos da cápsula e do regador ganham um risco vermelho, e o disco da correntinha é barrado por um cone.",
+    "alt": "Gametócito em banana: falciparum"
+  },
+  "questao": {
+    "vinheta": "In a laboratory review session, a student matches each organism or disease with a classic laboratory finding. Only one of the four matches is correct.",
+    "pergunta": "Which match is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Plasmodium falciparum: banana-shaped gametocytes",
+        "quiz": "Falciparum: banana",
+        "dia": 169
+      },
+      "B": {
+        "texto": "Streptococcus pneumoniae: optochin resistant",
+        "quiz": "Pneumo: optoquina R",
+        "dia": 106
+      },
+      "C": {
+        "texto": "Wiskott-Aldrich syndrome: giant platelets",
+        "quiz": "WAS: plaqueta grande",
+        "dia": 197
+      },
+      "D": {
+        "texto": "Streptococcus pyogenes: bacitracin resistant",
+        "quiz": "GAS: bacitracina R"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Gametócito em *banana*: falciparum",
+    "certa": [
+      "O *Plasmodium falciparum* tem gametócitos em forma de banana ou crescente (*banana-shaped gametocytes*), muitos anéis finos por hemácia e parasitemia alta. A *cytoadherence* das hemácias infectadas ao endotélio explica a malária cerebral e a gravidade dessa espécie."
+    ],
+    "termos": [
+      "Plasmodium falciparum",
+      "banana-shaped gametocytes",
+      "optochin sensitivity",
+      "bacitracin sensitivity"
+    ],
+    "erradas": {
+      "B": "Dia 106: o pneumococo é sensível à optoquina e solúvel em bile; resistente à optoquina é o viridans.",
+      "C": "Dia 197: a Wiskott-Aldrich tem plaquetas pequenas; plaquetas gigantes são da Bernard-Soulier.",
+      "D": "Intruso: o S. pyogenes (grupo A) é sensível à bacitracina; resistente é o S. agalactiae (grupo B)."
+    },
+    "macete": {
+      "frase": "Falciparum *come banana* (gametócito em crescente) e *gruda no cano* (citoaderência no cérebro). Pneumococo *perde para a optoquina*; Wiskott-Aldrich tem *plaqueta miniatura*; grupo A *perde para a bacitracina*.",
+      "apoio": "O NBME troca sensível por resistente: optoquina separa pneumococo (sensível) de viridans; bacitracina separa grupo A (sensível) de grupo B; e o tamanho da plaqueta separa Wiskott-Aldrich de Bernard-Soulier.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 106, 169 e 197) e um intruso. Só um achado de laboratório está ligado ao micróbio ou à doença certa.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual dupla está certa?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

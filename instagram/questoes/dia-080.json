@@ -1,0 +1,96 @@
+{
+  "dia": 80,
+  "data": "2027-01-20",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Anemia da doença crônica",
+  "conceito": "Anemia of chronic disease: hepcidin blocks ferroportin, high ferritin with low serum iron",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-21",
+  "gancho": "Ferro de sobra no estoque e *hemácia passando fome*. Por quê?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "A Capitã Plaqueta, de colete verde e apito, num cruzamento ao lado de um galpão cheio de caminhõezinhos carregados de barras de ferro. A avenida que leva à fábrica de hemácias está vazia, e não dá para ver o que segura os caminhões.",
+    "foco": "50% 35%",
+    "alt": "Ferro de sobra no estoque e hemácia passando fome. Por quê?",
+    "arquivo": "dia-080.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do cruzamento: a porteira do galpão aparece trancada por um cadeado colocado por uma fiscal pequena, em forma de gotinha, que veio de uma casa em forma de fígado. Os caminhões de ferro se amontoam lá dentro e a Capitã Plaqueta aponta para o cadeado.",
+    "alt": "A hepcidina fechou a porteira",
+    "arquivo": "dia-080-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman with long-standing rheumatoid arthritis has fatigue. Hemoglobin is 10.1 g/dL and MCV is 82 fL. Serum iron is low, total iron-binding capacity is low, and ferritin is elevated.",
+    "pergunta": "Which mechanism best explains her anemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Chronic blood loss depleting iron stores",
+        "quiz": "Iron loss"
+      },
+      "B": {
+        "texto": "Lead inhibition of ferrochelatase",
+        "quiz": "Lead poisoning"
+      },
+      "C": {
+        "texto": "Impaired DNA synthesis from folate deficiency",
+        "quiz": "Folate deficiency"
+      },
+      "D": {
+        "texto": "Hepcidin-mediated ferroportin degradation",
+        "quiz": "Hepcidin"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "A *hepcidina* fechou a porteira",
+    "certa": [
+      "Na *anemia of chronic disease*, a inflamação (IL-6) faz o fígado produzir *hepcidin*. A hepcidina se liga à *ferroportin*, a única porta de saída do ferro, e faz a célula degradá-la: o ferro fica preso nos macrófagos e no enterócito. Por isso a *ferritin* (estoque) sobe, o ferro sérico e a TIBC caem e a medula recebe pouco ferro."
+    ],
+    "termos": [
+      "anemia of chronic disease",
+      "hepcidin",
+      "ferroportin",
+      "ferritin"
+    ],
+    "erradas": {
+      "A": "Perda crônica de sangue esgota o estoque: a ferritina cai e a TIBC sobe, o contrário deste quadro.",
+      "B": "O chumbo bloqueia a ferroquelatase e a ALA desidratase, com pontilhado basofílico e sideroblastos em anel, sem o padrão inflamatório.",
+      "C": "Falta de folato causa anemia macrocítica, e o VCM aqui é 82."
+    },
+    "macete": {
+      "frase": "Galpão *cheio*, porteira *trancada*, avenida *vazia*",
+      "apoio": "Pegadinha de prova: O NBME diferencia pela ferritina e pela TIBC: ferropriva tem ferritina baixa e TIBC alta; doença crônica tem ferritina alta e TIBC baixa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Artrite reumatoide de longa data, cansaço e uma anemia com ferro sérico baixo e ferritina alta. A Capitã Plaqueta quer saber quem fechou a saída do ferro.",
+    "palavras_chave": [
+      "rheumatoid arthritis",
+      "fatigue",
+      "iron studies",
+      "microcytic anemia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Hematologia",
+      "#Hematology",
+      "#QuartaDoPorque",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Por que o ferro não sai?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 304,
+  "data": "2027-09-01",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Síndrome do X frágil",
+  "conceito": "Fragile X syndrome: CGG repeat expansion silences FMR1 by methylation",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-02",
+  "tom": null,
+  "gancho": "O disco repetiu o refrão 200 vezes. *Quem desligou a música?*",
+  "gancho_apoio": "Repetição demais no lugar errado faz o gene ficar em silêncio. Mas como?",
+  "imagem": {
+    "arquivo": "dia-304.png",
+    "cena": "Uma vitrola em forma de letra X com uma pequena rachadura perto da ponta, com a agulha presa no mesmo sulco; dela sai um colar enorme de contas em trios de três cores, sempre iguais, que se enrola pelo chão. Notas musicais saem tortas e repetidas.",
+    "foco": "50% 35%",
+    "alt": "O disco repetiu o refrão 200 vezes. Quem desligou a música?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-304-macete.png",
+    "cena": "Callback: a mesma vitrola em X agora está muda, com dezenas de cadeadinhos navy trancando todos os botões e a tampa; o colar de contas repetidas continua no chão, e as notas musicais caíram no chão, apagadas.",
+    "foco": "50% 45%",
+    "alt": "X frágil: CGG demais metila e silencia o FMR1"
+  },
+  "questao": {
+    "vinheta": "A 6-year-old boy has speech delay and hyperactivity. He avoids eye contact and flaps his hands. He has a long face, large ears, and lax finger joints. His maternal uncle has intellectual disability. Genetic testing shows more than 200 CGG repeats in the 5' untranslated region of FMR1.",
+    "pergunta": "Which mechanism best explains loss of the gene product?",
+    "alternativas": {
+      "A": {
+        "texto": "Hypermethylation of the gene promoter",
+        "quiz": "Metilação"
+      },
+      "B": {
+        "texto": "Toxic polyglutamine protein",
+        "quiz": "Poliglutamina tóxica"
+      },
+      "C": {
+        "texto": "Frameshift deletion in the coding sequence",
+        "quiz": "Frameshift"
+      },
+      "D": {
+        "texto": "Expanded RNA sequestering splicing proteins",
+        "quiz": "RNA sequestrador"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "X frágil: CGG demais *metila e silencia* o FMR1",
+    "certa": [
+      "Acima de 200 cópias do trinucleotídeo CGG no começo do FMR1, fora do trecho que vira proteína, caracterizam a *full mutation*. A expansão atrai *hypermethylation* do promotor e das ilhas CpG, o FMR1 fica mudo e a *FMRP*, proteína que regula a tradução nas sinapses, para de ser fabricada. É perda de função por silenciamento epigenético, e a expansão costuma crescer quando passa pela mãe (*anticipation*)."
+    ],
+    "termos": [
+      "fragile X syndrome",
+      "CGG repeat expansion",
+      "FMR1 hypermethylation",
+      "FMRP"
+    ],
+    "erradas": {
+      "B": "*Poliglutamina tóxica* é o mecanismo da doença de Huntington (CAG na região codificadora), um ganho de função.",
+      "C": "A alteração não está na sequência codificadora: é uma repetição na região não traduzida que desliga o gene inteiro.",
+      "D": "*RNA expandido* que prende proteínas de splicing é o mecanismo da distrofia miotônica (CTG na região 3'), sem silenciar o gene."
+    },
+    "macete": {
+      "frase": "*Disco arranhado no X*: repetiu demais, ganhou cadeado de metil e ficou mudo",
+      "apoio": "Na imagem, a vitrola em forma de X repete o mesmo trecho até que dezenas de cadeadinhos (os grupos metil) trancam os botões. O som não está errado: ele simplesmente parou.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Menino de 6 anos com atraso no desenvolvimento e um tio materno com deficiência intelectual. O teste genético encontra o trio CGG copiado mais de 200 vezes no começo do gene FMR1. A pergunta é sobre o mecanismo que tira a proteína de circulação.",
+    "palavras_chave": [
+      "speech delay",
+      "hand flapping",
+      "large ears",
+      "maternal uncle"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "CGG demais no FMR1: qual mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

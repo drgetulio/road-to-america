@@ -1,0 +1,105 @@
+{
+  "dia": 217,
+  "data": "2027-06-06",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Cólera (dia 155), Síndrome de Wiskott-Aldrich (dia 197), Doença do enxerto contra o hospedeiro (dia 211)",
+  "conceito": "Remix: Vibrio cholerae toxin + Wiskott-Aldrich syndrome + Graft-versus-host disease",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    155,
+    197,
+    211
+  ],
+  "explicacao_em": "2027-06-07",
+  "tom": null,
+  "gancho": "No toca-discos de domingo, *qual faixa toca* para esse menino?",
+  "gancho_apoio": "Revisão de cólera, Wiskott-Aldrich e GVHD. Só um mecanismo explica o caso.",
+  "imagem": {
+    "arquivo": "dia-217.png",
+    "cena": "O toca-discos do Remix de Domingo com três discos coloridos: um com gotinhas de água e grãos de arroz, um com plaquetinhas minúsculas e um com um ônibus de torcida. A agulha paira sem escolher.",
+    "foco": "50% 35%",
+    "alt": "No toca-discos de domingo, qual faixa toca para esse menino?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-217-macete.png",
+    "cena": "Callback: a agulha pousa no disco das plaquetinhas minúsculas; dele sai uma onda de som com três bolhas: uma mancha de pele seca, um ouvidinho e uma plaqueta bem pequena. Os outros dois discos voltam para a capa.",
+    "foco": "50% 45%",
+    "alt": "Plaqueta pequena, eczema e infecção: WAS"
+  },
+  "questao": {
+    "vinheta": "A 20-month-old boy has had eczema since infancy, three episodes of otitis media, and recent bloody stools. Platelet count is 30,000/mm3, and the smear shows unusually small platelets. He has never had a transfusion or transplant. His maternal uncle had similar problems.",
+    "pergunta": "Which mechanism best explains his condition?",
+    "alternativas": {
+      "A": {
+        "texto": "ADP-ribosylation of Gs that keeps adenylyl cyclase on",
+        "quiz": "Toxina ativa Gs",
+        "dia": 155
+      },
+      "B": {
+        "texto": "Mutation in an X-linked gene that regulates the actin cytoskeleton",
+        "quiz": "WAS: actina (X)",
+        "dia": 197
+      },
+      "C": {
+        "texto": "Donor T cells attacking host skin, liver, and gut",
+        "quiz": "T do doador",
+        "dia": 211
+      },
+      "D": {
+        "texto": "Absent CD40 ligand on helper T cells",
+        "quiz": "Falta CD40L"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Plaqueta pequena, eczema e infecção: *WAS*",
+    "certa": [
+      "Dia 197: menino, herança pela linha materna, eczema, infecções de repetição e *thrombocytopenia* com *small platelets* formam a *Wiskott-Aldrich syndrome*. A mutação no gene *WAS*, ligado ao X, prejudica o citoesqueleto de actina das células do sangue, e linfócitos e plaquetas funcionam mal. As fezes com sangue vêm das plaquetas baixas, não de uma toxina."
+    ],
+    "termos": [
+      "Wiskott-Aldrich syndrome",
+      "WAS gene (X-linked)",
+      "small platelets",
+      "eczema"
+    ],
+    "erradas": {
+      "A": "Dia 155: a toxina da cólera trava o Gs ligado e dá diarreia aquosa volumosa, em água de arroz, sem sangue, sem eczema e sem plaqueta baixa.",
+      "C": "Dia 211: a GVHD exige linfócitos T de um doador, por transplante ou transfusão, e ele nunca recebeu nenhum dos dois.",
+      "D": "A falta de *CD40 ligand* causa a hiper-IgM ligada ao X, com infecções, mas sem eczema e com plaquetas normais."
+    },
+    "macete": {
+      "frase": "*WATER*: Wiskott-Aldrich, Thrombocytopenia, Eczema, Recurrent infections",
+      "apoio": "No toca-discos, o disco do dia 197 toca a faixa WATER, a do regador azul da Capitã Plaqueta, e a agulha só para nele quando vê plaqueta pequena. O disco do dia 155 é o interruptor do Gs colado no ON com fita adesiva: água de arroz, sem sangue. O da GVHD só toca se houver doador.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Eczema desde bebê, otites de repetição, fezes com sangue e plaquetas baixas e pequenas. No Remix de hoje, três conceitos das últimas semanas (dias 155, 197 e 211) e um intruso disputam o caso.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Eczema, otite e plaqueta pequena: qual é?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

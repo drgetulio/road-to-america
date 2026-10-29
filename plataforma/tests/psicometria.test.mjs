@@ -557,7 +557,7 @@ test("ligação com a NBME: recupera o theta do padrão, erro-padrão pelo méto
   assert.ok(Math.abs(c.ep - ep) < 1e-12 && Math.abs(c.mu - d / mod.b) < 1e-12);
   assert.equal(c.sigma, Math.max(c.ep, 0.1));
   /* insuficiente: poucos escores, relação fraca ou sem covariância */
-  assert.equal(corteLigadoNbme({ ...mod, n: 12 }, { step: "step1" }).suficiente, false);
+  assert.equal(corteLigadoNbme({ ...mod, n_alunos: 12 }, { step: "step1" }).suficiente, false);
   assert.equal(corteLigadoNbme({ ...mod, b: 0.5 }, { step: "step1" }).suficiente, false);
   assert.match(corteLigadoNbme({ a: 200, b: 10, n: 40 }).motivo, /covariância/);
   assert.equal(corteLigadoNbme(null).suficiente, false);
@@ -602,4 +602,71 @@ test("sensibilidade ao padrão provisório: probabilidade com o banco 0,75 logit
   assert.ok(s.itens_mais_faceis < e.p_medida && e.p_medida < s.itens_mais_dificeis, JSON.stringify(s));
   assert.equal(s.pontos, 15);
   assert.equal(typeof s.muda_leitura, "boolean");
+});
+
+/* ---------- rodada 4: ligação com a NBME conta alunos, não escores ---------- */
+test("ligação com a NBME: escores repetidos do mesmo aluno agrupados (peso por aluno e erro-padrão robusto); mínimo de alunos distintos", () => {
+  /* cada aluno faz de 1 a 6 autoavaliações; escore = 200 + 15 theta + u (DP 8) + e (DP 4).
+     O regressor imita o EAP: theta_obs = theta + N(0; 0,3²), encolhido para a média da
+     população (0,3) com r = 1 / (1 + 0,09), de modo que E[theta | EAP] = EAP. */
+  const alvo = -4 / 15;
+  const r2 = 1 / (1 + 0.09);
+  const gerar = (r, nAlunos) => {
+    const regs = [];
+    for (let i = 0; i < nAlunos; i++) {
+      const th = 0.3 + normalAleatoria(r);
+      const u = 8 * normalAleatoria(r);
+      const k = 1 + Math.floor(r() * 6);
+      for (let j = 0; j < k; j++) {
+        const eap = 0.3 + r2 * (th + 0.3 * normalAleatoria(r) - 0.3);
+        regs.push({ user_id: "a" + i, theta: eap, escore: 200 + 15 * th + u + 4 * normalAleatoria(r) });
+      }
+    }
+    return regs;
+  };
+  let cobreAgr = 0, cobreIng = 0, razaoEp = 0, icc = 0, somaMu = 0;
+  const R = 80;
+  for (let rep = 0; rep < R; rep++) {
+    const r = rng(4000 + rep);
+    const regs = gerar(r, 45);
+    const agr = ajustarEscore(regs);
+    const ing = ajustarEscore(regs.map(({ user_id, ...x }) => x));
+    assert.equal(agr.n_alunos, 45);
+    assert.equal(agr.metodo, "mqp_peso_por_aluno_ep_robusto_agrupado");
+    assert.equal(ing.n_alunos, regs.length, "sem user_id, cada escore vira um aluno");
+    const ca = corteLigadoNbme(agr, { step: "step1" }), ci = corteLigadoNbme(ing, { step: "step1" });
+    somaMu += ca.mu;
+    if (Math.abs(ca.mu - alvo) <= 1.6449 * ca.ep) cobreAgr++;
+    if (Math.abs(ci.mu - alvo) <= 1.6449 * ci.ep) cobreIng++;
+    razaoEp += ca.ep / ci.ep;
+    icc += agr.icc;
+  }
+  console.log("# ligação NBME: cobertura do IC 90% do corte " + cobreAgr + "/" + R + " agrupando, " + cobreIng + "/" + R + " contando escores; EP agrupado / EP ingênuo " + (razaoEp / R).toFixed(2) + "; ICC médio " + (icc / R).toFixed(2));
+  assert.ok(Math.abs(somaMu / R - alvo) < 0.08, "média do corte " + (somaMu / R).toFixed(3));
+  assert.ok(cobreAgr / R >= 0.82, "cobertura agrupando: " + cobreAgr + " de " + R);
+  assert.ok(cobreIng < cobreAgr, "contar escores como independentes cobre menos: " + cobreIng + " contra " + cobreAgr);
+  assert.ok(razaoEp / R > 1.2, "o erro-padrão agrupado é maior que o ingênuo");
+  assert.ok(icc / R > 0.5 && icc / R < 0.9, "ICC estimado " + (icc / R).toFixed(2) + " (verdadeiro 64 / 89 = 0,72)");
+  /* mínimo de alunos: 12 alunos com 5 escores cada (60 escores) não bastam */
+  const r = rng(77);
+  const poucos = [];
+  for (let i = 0; i < 12; i++) { const th = normalAleatoria(r); for (let j = 0; j < 5; j++) poucos.push({ user_id: "p" + i, theta: th + 0.2 * normalAleatoria(r), escore: 200 + 15 * th + 3 * normalAleatoria(r) }); }
+  const m = ajustarEscore(poucos);
+  assert.equal(m.n, 60);
+  assert.equal(m.n_alunos, 12);
+  assert.equal(m.suficiente, false);
+  assert.match(m.aviso, /12 alunos, 60 escores/);
+  const c = corteLigadoNbme(m, { step: "step1" });
+  assert.equal(c.suficiente, false);
+  assert.match(c.motivo, /Faltam alunos: 12 de 30/);
+  assert.equal(LIGACAO_NBME.min_alunos, 30);
+  /* modelo gravado antes desta rodada (sem n_alunos) não libera a ligação */
+  const { n_alunos, ...antigo } = ajustarEscore(gerar(rng(5), 60));
+  assert.equal(corteLigadoNbme(antigo, { step: "step1" }).suficiente, false);
+  assert.match(corteLigadoNbme(antigo, { step: "step1" }).motivo, /contagem de alunos/);
+  /* sem repetição, o ajuste agrupado é o de mínimos quadrados */
+  const um = gerar(rng(6), 50).filter((x, i, l) => l.findIndex((y) => y.user_id === x.user_id) === i);
+  const a1 = ajustarEscore(um), a2 = ajustarEscore(um.map(({ user_id, ...x }) => x));
+  assert.equal(a1.metodo, "minimos_quadrados_um_escore_por_aluno");
+  assert.ok(Math.abs(a1.b - a2.b) < 1e-9 && Math.abs(a1.var_b - a2.var_b) < 1e-9, "sem repetição, com ou sem user_id dá o mesmo ajuste");
 });

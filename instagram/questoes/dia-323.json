@@ -1,0 +1,96 @@
+{
+  "dia": 323,
+  "data": "2027-09-20",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Febre maculosa",
+  "conceito": "Rickettsia rickettsii: rash starts at wrists and ankles and spreads centrally after a tick bite",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-21",
+  "tom": null,
+  "gancho": "Acampou em junho e voltou com manchas no punho. *Quem veio junto?*",
+  "gancho_apoio": "O Macrô recebeu um visitante que voltou do acampamento agarrado numa perna.",
+  "imagem": {
+    "arquivo": "dia-323.png",
+    "cena": "Macrô na porta do boteco dos micróbios recebe um carrapatinho de mochila nas costas, que chegou de um acampamento agarrado num galho; ao fundo, uma barraca e uma fogueira apagada.",
+    "foco": "50% 35%",
+    "alt": "Acampou em junho e voltou com manchas no punho. Quem veio junto?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-323-macete.png",
+    "cena": "Callback: um estádio visto de cima; torcedores em forma de bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro do campo; o Macrô, de juiz, levanta um apito em forma de cápsula. Num canto da arquibancada, uma capivara tranquila assiste ao jogo.",
+    "foco": "50% 45%",
+    "alt": "Febre maculosa: o exantema entra pelos punhos"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy from North Carolina has had fever, severe headache, and myalgias for 4 days after a camping trip in June. Two days ago, a blanching rash appeared on his wrists and ankles; it now involves the palms, soles, and trunk and has become petechial. Platelets are 82,000/mm3, and sodium is 129 mEq/L.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Borrelia burgdorferi",
+        "quiz": "Borrelia"
+      },
+      "B": {
+        "texto": "Rickettsia rickettsii",
+        "quiz": "R. rickettsii"
+      },
+      "C": {
+        "texto": "Ehrlichia chaffeensis",
+        "quiz": "Ehrlichia"
+      },
+      "D": {
+        "texto": "Rickettsia typhi",
+        "quiz": "R. typhi"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Febre maculosa: o exantema *entra pelos punhos*",
+    "certa": [
+      "Febre, cefaleia e exantema que começa em punhos e tornozelos, sobe para o tronco e pega palmas e plantas depois de acampar no verão é *Rocky Mountain spotted fever*. A *Rickettsia rickettsii*, transmitida pelo carrapato Dermacentor, infecta o endotélio e causa vasculite, o que explica as petéquias, a plaquetopenia e a hiponatremia. O tratamento é *doxycycline* já na suspeita, em qualquer idade, porque o atraso aumenta muito a mortalidade."
+    ],
+    "termos": [
+      "Rocky Mountain spotted fever",
+      "Rickettsia rickettsii",
+      "centripetal rash",
+      "doxycycline"
+    ],
+    "erradas": {
+      "A": "*Borrelia burgdorferi* dá erythema migrans, uma lesão que cresce em alvo no local da picada, e não petéquias que começam nas extremidades.",
+      "C": "*Ehrlichia* infecta leucócitos (mórulas em monócitos) e causa leucopenia; o exantema é raro, sobretudo em adultos.",
+      "D": "*Rickettsia typhi* (tifo murino) vem da pulga, e o exantema começa no tronco e vai para as extremidades, poupando palmas e plantas."
+    },
+    "macete": {
+      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos* e enche o estádio",
+      "apoio": "Na imagem, os torcedores de bolinha vermelha entram pelos quatro portões dos cantos e vão lotando o estádio até o meio de campo. A doxiciclina é o apito final, em qualquer idade. A capivara na arquibancada lembra que no Brasil a mesma R. rickettsii causa a febre maculosa brasileira, com o carrapato-estrela.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Menino de 9 anos com febre, cefaleia forte e dor no corpo há 4 dias, depois de acampar em junho na Carolina do Norte. As manchas começaram nos punhos e tornozelos e agora pegam palmas, plantas e tronco, com petéquias. Qual é o agente?",
+    "palavras_chave": [
+      "camping trip",
+      "fever and headache",
+      "rash on palms and soles",
+      "thrombocytopenia"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Manchas que começam nos punhos: agente?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

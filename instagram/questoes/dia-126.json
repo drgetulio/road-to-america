@@ -1,0 +1,101 @@
+{
+  "dia": 126,
+  "data": "2027-03-07",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hipersensibilidade tipo I (dia 36), Neisseria meningitidis (dia 92), Malária e hipnozoítos (dia 120)",
+  "conceito": "Remix: Type I hypersensitivity + Neisseria meningitidis + Plasmodium vivax and ovale",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    36,
+    92,
+    120
+  ],
+  "explicacao_em": "2027-03-08",
+  "tom": null,
+  "gancho": "Remix: qual hóspede *volta* meses depois do check-out?",
+  "gancho_apoio": "Três bichos já vistos (dias 36, 92 e 120) e um intruso. Só um explica o quadro.",
+  "imagem": {
+    "arquivo": "dia-126.png",
+    "cena": "Macrô é o DJ de um toca-discos com três discos sem rótulo: um com um mosquito, um com um mastócito estourando como pipoca e um com dois grãos de feijão juntinhos. Ao fundo, um pequeno hotel comum com uma janela de luz apagada.",
+    "foco": "50% 35%",
+    "alt": "Macrô de DJ com três discos: mosquito, mastócito e diplococo; ao fundo, um pequeno hotel com uma janela apagada."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-126-macete.png",
+    "cena": "Callback: o hotel, visto de perto, tem a forma de um fígado. Num quarto escondido, um parasita dorme de pijama e o despertador toca meses depois. Macrô aparece na porta com a conta do check-out e uma vassoura em forma de comprimido (primaquina).",
+    "foco": "50% 40%",
+    "alt": "O hotel tem forma de fígado: um parasita dorme num quarto escondido enquanto o despertador toca; Macrô chega com a vassoura de comprimido."
+  },
+  "questao": {
+    "vinheta": "A 25-year-old volunteer had Plasmodium vivax malaria in Southeast Asia, completed chloroquine and recovered fully. Eight months after returning to her nonendemic home country, she again has fevers every 48 hours. A blood smear shows enlarged red cells with Schüffner dots.",
+    "pergunta": "Which best explains this new episode?",
+    "alternativas": {
+      "A": {
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE no mastócito",
+        "dia": 36
+      },
+      "B": {
+        "texto": "Lipooligosaccharide endotoxin release",
+        "quiz": "Endotoxina LOS",
+        "dia": 92
+      },
+      "C": {
+        "texto": "Dormant liver hypnozoites",
+        "quiz": "Hipnozoíto hepático",
+        "dia": 120
+      },
+      "D": {
+        "texto": "Red-cell sequestration in brain capillaries",
+        "quiz": "Sequestro cerebral"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Vivax e ovale deixam *hipnozoítos* no fígado",
+    "certa": [
+      "P. vivax e P. ovale deixam formas dormentes no fígado, os hipnozoítos, que acordam meses depois e causam recaída. A cloroquina limpa só as formas do sangue; para prevenir a recaída é preciso primaquina ou tafenoquina, depois de confirmar que a G6PD é normal. Febre em dias alternados e hemácias grandes com pontilhado de Schüffner fecham vivax."
+    ],
+    "termos": [
+      "hypnozoites",
+      "relapse",
+      "primaquine",
+      "G6PD testing"
+    ],
+    "erradas": {
+      "A": "Dia 36: a ligação cruzada de IgE nos mastócitos explica anafilaxia e alergia, com urticária e broncoespasmo, não febre cíclica.",
+      "B": "Dia 92: o lipo-oligossacarídeo da Neisseria meningitidis causa choque e petéquias, sem parasita no esfregaço.",
+      "D": "Intruso: o sequestro de hemácias nos capilares do cérebro é a malária cerebral do P. falciparum, que não forma hipnozoíto."
+    },
+    "macete": {
+      "frase": "Vivax e ovale deixam *hóspede dormindo* no hotel fígado",
+      "apoio": "Na imagem, o Macrô faz o check-out do hóspede que dormia escondido.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: alergia, meningococo e malária. Febre que volta oito meses depois pede explicação.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Febre volta 8 meses depois: por quê?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 264,
+  "data": "2027-07-23",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Broncodilatadores inalatórios",
+  "conceito": "Albuterol vs tiotropium: beta-2 agonist relaxes airway smooth muscle, muscarinic antagonist blocks bronchoconstriction",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-24",
+  "tom": null,
+  "gancho": "A visita que chegou para o *almoço* e ficou até o jantar",
+  "gancho_apoio": "Uma vez ao dia, falta de ar melhor, boca seca e jato urinário mais fraco. Quem é o remédio?",
+  "imagem": {
+    "arquivo": "dia-264.png",
+    "cena": "Na farmácia de interior, Tia Meia-Vida apresenta dois inaladores com braços e pernas: um de tênis de corrida e faixa na testa, pronto para disparar; o outro de chinelo, com um travesseiro debaixo do braço e cara de quem veio para ficar o dia todo.",
+    "foco": "50% 35%",
+    "alt": "A visita que chegou para o almoço e ficou até o jantar"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-264-macete.png",
+    "cena": "O inalador de chinelo se senta numa cadeira em forma de receptor e não sai mais, impedindo que uma campainha (a acetilcolina) toque e feche as vias aéreas; ele segura um copo d'água vazio, lembrando a boca seca. O de tênis aperta o botão de outro receptor e sai correndo.",
+    "foco": "50% 40%",
+    "alt": "Tiotrópio bloqueia o M3"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man with COPD has daily dyspnea despite using albuterol as needed. A once-daily inhaled drug is added. Two weeks later, his breathlessness has improved, but he reports dry mouth and a slightly weaker urinary stream.",
+    "pergunta": "The added drug most likely acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Stimulation of beta-2 receptors, raising cAMP",
+        "quiz": "Agonista beta-2"
+      },
+      "B": {
+        "texto": "Inhibition of phosphodiesterase-4",
+        "quiz": "Inibe PDE-4"
+      },
+      "C": {
+        "texto": "Blockade of M3 muscarinic receptors",
+        "quiz": "Bloqueia M3"
+      },
+      "D": {
+        "texto": "Blockade of leukotriene receptors",
+        "quiz": "Antileucotrieno"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Tiotrópio *bloqueia o M3*",
+    "certa": [
+      "O *tiotropium* é um antimuscarínico de longa ação (*LAMA*): bloqueia os receptores *M3* da musculatura lisa brônquica, impede a broncoconstrição causada pela acetilcolina vagal (via Gq e IP3) e dura 24 horas. Os efeitos anticolinérgicos explicam a boca seca e o jato urinário mais fraco, sobretudo em quem tem hiperplasia prostática. Já o *albuterol* é agonista *beta-2* de curta ação, que aumenta o cAMP e relaxa o músculo em minutos."
+    ],
+    "termos": [
+      "tiotropium",
+      "M3 muscarinic receptor",
+      "albuterol",
+      "beta-2 agonist"
+    ],
+    "erradas": {
+      "A": "Estimular o beta-2 e aumentar o cAMP é o mecanismo do albuterol e dos LABA, que dão tremor e taquicardia, não boca seca.",
+      "B": "Inibir a PDE-4 é o mecanismo do *roflumilast*, um comprimido que reduz exacerbações e causa náusea e diarreia.",
+      "D": "Bloquear o receptor de leucotrieno é o mecanismo do *montelukast*, um comprimido usado mais na asma."
+    },
+    "macete": {
+      "frase": "*ALbuterol ALivia* na hora; o *TIOtrópio* é o tio que fica o dia todo",
+      "apoio": "O inalador de tênis é o albuterol, que corre para o beta-2. O de chinelo é o tiotrópio, o tio que chegou para o almoço e ficou até o jantar sentado na cadeira do M3; o copo vazio é a boca seca.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "DPOC com falta de ar diária, um inalador novo de uso único diário e, depois, boca seca. Qual é o mecanismo?",
+    "palavras_chave": [
+      "COPD",
+      "daily dyspnea",
+      "dry mouth",
+      "weak urinary stream"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Farmacologia",
+      "#Pneumologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é o mecanismo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

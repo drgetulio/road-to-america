@@ -1,0 +1,99 @@
+{
+  "dia": 248,
+  "data": "2027-07-07",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Acidose com ânion gap aumentado",
+  "conceito": "High anion gap metabolic acidosis: unmeasured anions such as lactate, ketones and methanol",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-08",
+  "tom": null,
+  "gancho": "*Seu Néfron* fechou o caixa e sobrou um ânion sem nome",
+  "gancho_apoio": "Ânion gap de 30 e visão em nevasca. Quem é o ânion misterioso?",
+  "imagem": {
+    "arquivo": "dia-248.png",
+    "cena": "Seu Néfron, no caixa da padaria, confere uma balança: de um lado, um íon grande; do outro, dois íons menores, e a conta não fecha. Na fila, um freguês mascarado e misterioso espera, e pela janela neva sem parar.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron fechou o caixa e sobrou um ânion sem nome"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-248-macete.png",
+    "cena": "O freguês tira a máscara: é uma formiga simpática, que sobe na balança e equilibra a conta, e Seu Néfron carimba aprovado. Ao lado da janela, um par de óculos embaçados. Num pires separado, na beirada, uma pedrinha de cristal (o oxalato do outro álcool).",
+    "foco": "50% 40%",
+    "alt": "O ânion sem nome era o formato"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man drank windshield washer fluid by mistake 18 hours ago. He now has blurred vision, 'like a snowstorm.' Arterial pH is 7.15; Na+ 138, Cl- 100, and HCO3- 8 mEq/L. The serum osmolal gap is elevated, and urinalysis is normal.",
+    "pergunta": "Which anion best explains both the acid-base disorder and his visual symptoms?",
+    "alternativas": {
+      "A": {
+        "texto": "Formate",
+        "quiz": "Formato"
+      },
+      "B": {
+        "texto": "Oxalate",
+        "quiz": "Oxalato"
+      },
+      "C": {
+        "texto": "Beta-hydroxybutyrate",
+        "quiz": "Beta-hidroxibutirato"
+      },
+      "D": {
+        "texto": "Lactate",
+        "quiz": "Lactato"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O ânion sem nome era o *formato*",
+    "certa": [
+      "O ânion gap é o sódio menos a soma de cloreto e bicarbonato: 138 menos 108, igual a 30, e sobra um ânion que a bioquímica de rotina não mede. No metanol, a álcool desidrogenase e a aldeído desidrogenase geram *formic acid*, e o *formate* é o ânion não medido que consome o bicarbonato e lesa a retina e o nervo óptico, daí a visão em nevasca. O *osmolal gap* alto mostra o álcool tóxico ainda circulando."
+    ],
+    "termos": [
+      "anion gap",
+      "formate",
+      "osmolal gap",
+      "fomepizole"
+    ],
+    "erradas": {
+      "B": "O *oxalate* vem do etilenoglicol (anticongelante), com lesão renal e cristais na urina; aqui a urina está normal.",
+      "C": "O *beta-hydroxybutyrate* é da cetoacidose, que não lesa a retina nem deixa o gap osmolar tão alto.",
+      "D": "O lactato pode subir um pouco, mas não explica a lesão da retina nem o gap osmolar."
+    },
+    "macete": {
+      "frase": "Metanol vira *formiga* no olho; etilenoglicol vira *pedra* no rim",
+      "apoio": "Ácido fórmico vem do latim formica, formiga. O freguês mascarado da padaria era a formiga que entra no olho e embaça a visão. O cristal no pires é o oxalato do etilenoglicol, que vai para o rim.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Fluido do limpador de para-brisa por engano, visão em nevasca e uma acidose que não fecha a conta. Faça o cálculo antes de comentar.",
+    "palavras_chave": [
+      "windshield washer fluid",
+      "snowstorm vision",
+      "metabolic acidosis",
+      "osmolal gap"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Fisiologia",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual ânion explica tudo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 319,
+  "data": "2027-09-16",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Síndrome dos ovários policísticos",
+  "conceito": "PCOS: combined oral contraceptives are first-line for cycle control and hirsutism",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-17",
+  "tom": null,
+  "gancho": "Ovário de colar de pérolas e calendário bagunçado: *qual espeto?*",
+  "gancho_apoio": "O garçom do rodízio quer saber primeiro se ela quer engravidar agora.",
+  "imagem": {
+    "arquivo": "dia-319.png",
+    "cena": "Garçom de rodízio com quatro espetos diferentes diante de uma mesa onde dois ovários de desenho animado usam colares de pérolas; na parede, um calendário com as folhas fora de ordem, pulando meses. As plaquinhas verde e vermelha estão no avental.",
+    "foco": "50% 35%",
+    "alt": "Ovário de colar de pérolas e calendário bagunçado: qual espeto?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-319-macete.png",
+    "cena": "Callback: o garçom levanta a plaquinha verde ao lado de um espeto com uma cartela redonda de pílulas; o calendário da parede agora vira uma folha por mês, em ordem, e uma esponja amarela enxuga gotinhas na mesa.",
+    "foco": "50% 45%",
+    "alt": "SOP sem desejo de gestação: pílula combinada"
+  },
+  "questao": {
+    "vinheta": "A 23-year-old woman has had 4 to 5 menstrual periods per year since menarche and increasing hair growth on her chin and lower abdomen. She does not want to become pregnant now. Total testosterone is mildly elevated; TSH, prolactin, and 17-hydroxyprogesterone are normal. Ultrasound shows enlarged ovaries with many small follicles.",
+    "pergunta": "Which is the most appropriate initial pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Letrozole",
+        "quiz": "Letrozol"
+      },
+      "B": {
+        "texto": "Metformin alone",
+        "quiz": "Só metformina"
+      },
+      "C": {
+        "texto": "Spironolactone alone",
+        "quiz": "Só espironolactona"
+      },
+      "D": {
+        "texto": "Combined estrogen-progestin oral contraceptive",
+        "quiz": "Pílula combinada"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "SOP sem desejo de gestação: *pílula combinada*",
+    "certa": [
+      "Oligomenorreia desde a menarca, hiperandrogenismo clínico e laboratorial e ovários policísticos, com TSH, prolactina e 17-OH-progesterona normais, preenchem os critérios de Rotterdam para *polycystic ovary syndrome*. Em quem não quer engravidar, a primeira linha é o *combined oral contraceptive*: regula o ciclo, protege o endométrio do estrogênio sem oposição e reduz os andrógenos livres porque aumenta a *SHBG* e freia o LH. Mudanças de estilo de vida acompanham qualquer opção."
+    ],
+    "termos": [
+      "polycystic ovary syndrome",
+      "Rotterdam criteria",
+      "combined oral contraceptive",
+      "SHBG"
+    ],
+    "erradas": {
+      "A": "*Letrozol* induz ovulação e é a primeira linha para quem quer engravidar, o que não é o caso.",
+      "B": "*Metformina* ajuda no perfil metabólico, mas sozinha tem pouco efeito sobre o ciclo e o hirsutismo.",
+      "C": "*Espironolactona* sozinha reduz o hirsutismo, mas não regula o ciclo nem protege o endométrio e é teratogênica sem contracepção."
+    },
+    "macete": {
+      "frase": "*Colar de pérolas sem plano de gravidez*: pílula combinada organiza o calendário",
+      "apoio": "Na imagem, o garçom levanta a plaquinha verde para a cartela de pílulas, o calendário volta a marcar um mês por vez e uma esponja (a SHBG) enxuga as gotinhas de andrógeno. Se o plano fosse engravidar, o espeto seria o letrozol.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Mulher de 23 anos com 4 a 5 menstruações por ano desde a menarca, aumento de pelos no queixo e no abdome, testosterona levemente alta, TSH, prolactina e 17-OH-progesterona normais e ovários com muitos folículos. Ela não quer engravidar agora. Qual é a primeira linha?",
+    "palavras_chave": [
+      "oligomenorrhea",
+      "hirsutism",
+      "mildly high testosterone",
+      "no pregnancy plans"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Ginecologia",
+      "#Gynecology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "SOP sem plano de gravidez: primeira linha?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

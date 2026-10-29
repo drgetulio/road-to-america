@@ -1,0 +1,96 @@
+{
+  "dia": 75,
+  "data": "2027-01-15",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Diuréticos de alça",
+  "conceito": "Loop diuretics: block NKCC2 in the thick ascending limb, ototoxicity and hypokalemia",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-16",
+  "gancho": "Seu Néfron fechou um guichê e *o ouvido começou a zumbir*",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, cuida de um tubo comprido com quatro guichês de catraca ao longo do caminho, um deles numa subida íngreme. Um comprimido simpático com um raio no peito chega para fechar um dos guichês. Ao lado, uma concha do mar em forma de orelha.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron fechou um guichê e o ouvido começou a zumbir",
+    "arquivo": "dia-075.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do tubo: o comprimido trancou o guichê da subida íngreme, onde um grupo de quatro bolinhas (uma azul, uma amarela e duas verdes) fica do lado de fora. Muita água desce pelo tubo, Seu Néfron carimba com força e a concha em forma de orelha vibra com ondinhas de zumbido.",
+    "alt": "A furosemida fecha o NKCC2",
+    "arquivo": "dia-075-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 70-year-old man with heart failure receives high-dose IV furosemide for pulmonary edema. Two days later he reports tinnitus and decreased hearing, and his serum potassium is 3.1 mEq/L.",
+    "pergunta": "Which transporter does this drug inhibit?",
+    "alternativas": {
+      "A": {
+        "texto": "Na-K-2Cl cotransporter in the thick ascending limb",
+        "quiz": "NKCC2 in TAL"
+      },
+      "B": {
+        "texto": "Epithelial Na channel in the collecting duct",
+        "quiz": "ENaC"
+      },
+      "C": {
+        "texto": "Na-Cl cotransporter in the distal tubule",
+        "quiz": "NCC in DCT"
+      },
+      "D": {
+        "texto": "Carbonic anhydrase in the proximal tubule",
+        "quiz": "Carbonic anhydrase"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "A furosemida fecha o *NKCC2*",
+    "certa": [
+      "Os *loop diuretics* (furosemida, bumetanida, torsemida) bloqueiam o *NKCC2*, o cotransportador Na-K-2Cl da *thick ascending limb* da alça de Henle, que reabsorve cerca de 25% do sódio filtrado: daí a diurese potente. Mais sódio chega ao túbulo coletor e é trocado por potássio e hidrogênio, o que causa *hypokalemia* e alcalose metabólica. O mesmo tipo de transportador existe na orelha interna, e a dose alta pode dar *ototoxicity*."
+    ],
+    "termos": [
+      "loop diuretics",
+      "NKCC2",
+      "thick ascending limb",
+      "ototoxicity"
+    ],
+    "erradas": {
+      "B": "O ENaC é bloqueado pela amilorida e pelo triantereno, poupadores de potássio que tendem a elevar o K.",
+      "C": "O cotransportador Na-Cl do túbulo distal é o alvo dos tiazídicos, que não costumam causar ototoxicidade.",
+      "D": "A anidrase carbônica é o alvo da acetazolamida, que causa acidose metabólica, não alcalose."
+    },
+    "macete": {
+      "frase": "Guichê de *quatro* fechado: *ouvido* e *potássio*",
+      "apoio": "Pegadinha de prova: O NBME diferencia os diuréticos pelo cálcio: a alça aumenta a perda urinária de cálcio, e o tiazídico diminui.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Furosemida em dose alta, pulmão desinchando e, dois dias depois, zumbido no ouvido e potássio baixo. Seu Néfron quer saber qual guichê foi fechado.",
+    "palavras_chave": [
+      "heart failure",
+      "pulmonary edema",
+      "tinnitus",
+      "hypokalemia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Nephrology",
+      "#SextouNaFarmacia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual transportador foi bloqueado?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,102 @@
+{
+  "dia": 56,
+  "data": "2026-12-27",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Retrospectiva 2026: Uretrite e epididimite no homem jovem (dia 1), Miastenia gravis (dia 22), Síndrome de DiGeorge (dia 50)",
+  "conceito": "Year-end review 2026 remix: Chlamydia trachomatis + Myasthenia gravis + DiGeorge syndrome",
+  "personagem": null,
+  "gancho_data": "Retrospectiva 2026: os conceitos do primeiro mês de estrada.",
+  "remix_de": [
+    1,
+    22,
+    50
+  ],
+  "explicacao_em": "2026-12-28",
+  "gancho": "Retrospectiva 2026: só uma figurinha do álbum está certa",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho de fim de ano, com confete; três discos com selos de álbum de figurinhas (uma bactéria redondinha, uma fechadura e dois patinhos) e um quarto disco liso, o intruso.",
+    "foco": "50% 35%",
+    "alt": "Um toca-discos vermelho de fim de ano, com confete; três discos com selos de álbum de figurinhas (uma bactéria redondinha, uma fechadura e dois patinhos) e um quarto disco liso, o intruso.",
+    "arquivo": "dia-056.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco da fechadura gira; no selo, a chave (acetilcolina) não entra porque a fechadura do lado de dentro da porta está coberta por tampinhas em forma de Y. Os outros discos mostram as correções: a bactéria pequena e dura entrando na célula e os patinhos ao lado de dois lugares vazios.",
+    "alt": "A figurinha certa é a da miastenia",
+    "arquivo": "dia-056-macete.png"
+  },
+  "questao": {
+    "vinheta": "At a year-end review, a student rereads three flashcards from her first two months of study and one new card written that morning. Only one card is accurate.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Chlamydia: the reticulate body is the infectious form",
+        "quiz": "Chlamydia RB infects",
+        "dia": 1
+      },
+      "B": {
+        "texto": "Myasthenia: antibodies to postsynaptic ACh receptors",
+        "quiz": "MG: post AChR",
+        "dia": 22
+      },
+      "C": {
+        "texto": "DiGeorge: failure of pharyngeal pouches 1 and 2",
+        "quiz": "DiGeorge pouches 1-2",
+        "dia": 50
+      },
+      "D": {
+        "texto": "Lambert-Eaton: postsynaptic antibodies",
+        "quiz": "LEMS: postsynaptic"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A figurinha certa é a da *miastenia*",
+    "certa": [
+      "Na *myasthenia gravis* (dia 22), autoanticorpos contra os *postsynaptic acetylcholine receptors* bloqueiam e destroem os receptores, e a fraqueza piora com o uso. As outras frases trocam detalhes que caem muito: na *Chlamydia trachomatis* (dia 1) quem infecta é o corpúsculo elementar, e no *DiGeorge syndrome* (dia 50) faltam as bolsas 3 e 4. O intruso troca o alvo da Lambert-Eaton."
+    ],
+    "termos": [
+      "elementary body",
+      "postsynaptic acetylcholine receptor",
+      "third and fourth pharyngeal pouches",
+      "Lambert-Eaton syndrome"
+    ],
+    "erradas": {
+      "A": "Dia 1: o corpúsculo elementar é a forma infecciosa e extracelular; o reticular é a forma que se replica dentro da célula.",
+      "C": "Dia 50: no DiGeorge falham a 3ª e a 4ª bolsas faríngeas, que formam o timo e as paratireoides.",
+      "D": "Intruso: na Lambert-Eaton o alvo é o canal de cálcio voltagem-dependente do terminal pré-sináptico, e a contração repetida devolve parte da força."
+    },
+    "macete": {
+      "frase": "*Elementar entra*, miastenia *pós*, DiGeorge *3 e 4*",
+      "apoio": "Pegadinha de prova: O NBME adora trocar pré por pós-sináptico (Lambert-Eaton versus miastenia) e corpúsculo elementar por reticular.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Último remix do ano, com três conceitos dos dois primeiros meses de estrada: uma bactéria, uma junção neuromuscular e um timo que não veio. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Retrospectiva2026",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual figurinha do álbum está certa?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

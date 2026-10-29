@@ -1,0 +1,99 @@
+{
+  "dia": 219,
+  "data": "2027-06-08",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Arterite de células gigantes",
+  "conceito": "Giant cell arteritis: start high-dose steroids before temporal artery biopsy",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-09",
+  "tom": null,
+  "gancho": "Dor na têmpora e visão piscando: *quem fura a fila?*",
+  "gancho_apoio": "Biópsia, ressonância ou remédio? Na estrada do plantão, só uma saída protege o olho.",
+  "imagem": {
+    "arquivo": "dia-219.png",
+    "cena": "Placa verde de rodovia com três saídas numa estrada que serpenteia em volta de uma montanha em forma de têmpora. No acostamento, um par de óculos esquecido sobre uma pedra e um relógio grande lembrando a pressa.",
+    "foco": "50% 35%",
+    "alt": "Dor na têmpora e visão piscando: quem fura a fila?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-219-macete.png",
+    "cena": "Callback: na mesma estrada, um carrinho em forma de comprimido, com sirene, pega a faixa expressa e dispara na frente; um caminhãozinho com um microscópio na carroceria vem atrás, tranquilo. Os óculos no acostamento brilham, protegidos.",
+    "foco": "50% 45%",
+    "alt": "Na arterite de células gigantes, corticoide primeiro"
+  },
+  "questao": {
+    "vinheta": "A 72-year-old woman has had a new right temporal headache for 2 weeks, jaw pain when chewing, and scalp tenderness. This morning she had 10 minutes of blurred vision in the right eye, now resolved. The right temporal artery is tender and nodular. ESR is 92 mm/h.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Temporal artery biopsy before any treatment",
+        "quiz": "Biópsia antes"
+      },
+      "B": {
+        "texto": "MRI of the brain with contrast",
+        "quiz": "RM de crânio"
+      },
+      "C": {
+        "texto": "Naproxen and follow-up in 2 weeks",
+        "quiz": "Naproxeno"
+      },
+      "D": {
+        "texto": "High-dose glucocorticoids now",
+        "quiz": "Corticoide já"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Na arterite de células gigantes, *corticoide primeiro*",
+    "certa": [
+      "Cefaleia nova depois dos 50 anos, *jaw claudication*, artéria temporal dolorosa e VHS alta formam a *giant cell arteritis*. A perda visual, por neuropatia óptica isquêmica, pode ficar permanente em horas, e o episódio de visão turva é o aviso. Por isso o *high-dose glucocorticoid* começa já; a *temporal artery biopsy* continua confiável por cerca de 2 semanas depois do início do tratamento."
+    ],
+    "termos": [
+      "giant cell arteritis",
+      "jaw claudication",
+      "high-dose glucocorticoids",
+      "temporal artery biopsy"
+    ],
+    "erradas": {
+      "A": "Esperar a biópsia para tratar arrisca cegueira; ela é feita depois, com o corticoide já correndo.",
+      "B": "Ressonância de crânio não confirma nem trata a arterite e só atrasa a conduta que protege a visão.",
+      "C": "Anti-inflamatório não controla a vasculite de grandes vasos nem previne a perda visual."
+    },
+    "macete": {
+      "frase": "*Pílula na frente, microscópio atrás*",
+      "apoio": "Na imagem, o carro da pílula sai pela faixa expressa da placa NEXT STEP, com a sirene ligada, e o caminhão do microscópio vem atrás, sem pressa: ele ainda acha a resposta por duas semanas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cefaleia nova na têmpora, dor na mandíbula ao mastigar, couro cabeludo dolorido, VHS de 92 e um episódio de visão embaçada hoje cedo. Qual saída o plantonista pega primeiro?",
+    "palavras_chave": [
+      "new headache",
+      "jaw pain",
+      "transient vision loss",
+      "high ESR"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Reumatologia",
+      "#Rheumatology",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "ACG com visão turva: qual a próxima conduta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

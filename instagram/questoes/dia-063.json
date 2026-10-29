@@ -1,0 +1,102 @@
+{
+  "dia": 63,
+  "data": "2027-01-03",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Hipersensibilidade tipo I (dia 36), Febre reumática (dia 57)",
+  "conceito": "Remix: Bruton agammaglobulinemia + Type I hypersensitivity + Rheumatic fever",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    8,
+    36,
+    57
+  ],
+  "explicacao_em": "2027-01-04",
+  "gancho": "Remix de domingo: pipoca, sósia ou escola fechada?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos em pé ao lado: um com um carrinho de pipoca no selo, um com um chapéu igual em dois bonecos e um com o portão trancado de uma escolinha. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "foco": "50% 35%",
+    "alt": "Remix de domingo: pipoca, sósia ou escola fechada?",
+    "arquivo": "dia-063.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco da pipoca gira e o carrinho, coberto de antenas em forma de Y, explode pipoca para todo lado, com um cronômetro de cozinha quase sem girar ao lado. O disco do chapéu espera com um calendário de várias semanas, e o da escola continua trancado.",
+    "alt": "Estourou em minutos: é a pipoca",
+    "arquivo": "dia-063-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old boy with streptococcal pharyngitis receives an intramuscular injection of benzathine penicillin G. Within 10 minutes he develops diffuse urticaria, wheezing, and hypotension. He took amoxicillin uneventfully last year. His growth and vaccination history are normal.",
+    "pergunta": "Which mechanism best explains this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Cross-linking of IgE on mast cells",
+        "quiz": "IgE cross-linking",
+        "dia": 36
+      },
+      "B": {
+        "texto": "Antibodies to M protein cross-reacting with heart",
+        "quiz": "M protein mimicry",
+        "dia": 57
+      },
+      "C": {
+        "texto": "Failure of pre-B cell maturation",
+        "quiz": "No B cell maturation",
+        "dia": 8
+      },
+      "D": {
+        "texto": "Immune complex deposition with low complement",
+        "quiz": "Immune complexes"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Estourou em minutos: é a *pipoca*",
+    "certa": [
+      "Reação em 10 minutos com urticária, sibilância e hipotensão é anafilaxia, a *type I hypersensitivity* (dia 36). A amoxicilina do ano passado sensibilizou o menino: ele fez IgE contra o anel beta-lactâmico, e agora o antígeno faz o *cross-linking of IgE* na superfície do mastócito, que libera histamina na hora. A garganta com estreptococo é isca para a *rheumatic fever* (dia 57), que leva semanas, e quem tem *Bruton agammaglobulinemia* (dia 8) quase não faz anticorpo."
+    ],
+    "termos": [
+      "type I hypersensitivity",
+      "IgE cross-linking",
+      "rheumatic fever",
+      "Bruton agammaglobulinemia"
+    ],
+    "erradas": {
+      "B": "Dia 57: a mímica molecular da proteína M aparece 2 a 4 semanas depois da faringite e dá cardite, artrite e coreia, não anafilaxia em minutos.",
+      "C": "Dia 8: sem BTK o pré-B não amadurece, faltam anticorpos e o quadro é de infecções de repetição, não de reação alérgica.",
+      "D": "Intruso: imunocomplexo com complemento baixo é o tipo III, como a doença do soro, que leva 1 a 2 semanas para aparecer."
+    },
+    "macete": {
+      "frase": "Minutos é *pipoca*, semanas é *sósia*",
+      "apoio": "Pegadinha de prova: O NBME planta um estreptococo na vinheta para puxar febre reumática; olhe primeiro o relógio: minutos depois do remédio é tipo I.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três conceitos de imunologia já vistos voltam juntos: uma escola B fechada, um carrinho de pipoca e um caso de sósia. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Imunologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual mecanismo explica a reação?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

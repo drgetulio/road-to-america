@@ -1,0 +1,95 @@
+{
+  "dia": 55,
+  "data": "2026-12-26",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Cirurgia no local errado",
+  "conceito": "Wrong-site surgery prevention: site marking and a time-out before incision",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-27",
+  "gancho": "O cartão de embarque diz uma coisa e a etiqueta, outra",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um portão de embarque com o ônibus Road to America estacionado; um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro, e uma placa de balança de tribunal ao fundo.",
+    "foco": "50% 35%",
+    "alt": "Um portão de embarque com o ônibus Road to America estacionado; um cartão de embarque com uma flecha para um lado e uma etiqueta de mala com uma flecha para o outro, e uma placa de balança de tribunal ao fundo.",
+    "arquivo": "dia-055.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: todo mundo no portão faz o sinal de pausa com a mão levantada; o cartão e a etiqueta agora mostram flechas para o mesmo lado, uma marca de caneta aparece sobre a mala certa e a balança fica equilibrada.",
+    "alt": "Divergência? Para tudo e confere",
+    "arquivo": "dia-055-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 60-year-old man is scheduled for knee arthroscopy. During preoperative verification, before anesthesia induction, the circulating nurse notices that the consent form says left knee while the operating room schedule says right knee. The surgeon states that the right knee is correct and asks to proceed.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Proceed, since the surgeon confirms the side",
+        "quiz": "Proceed as told"
+      },
+      "B": {
+        "texto": "Pause and resolve it with the patient and records",
+        "quiz": "Pause and verify"
+      },
+      "C": {
+        "texto": "Proceed and file an incident report afterward",
+        "quiz": "Report afterward"
+      },
+      "D": {
+        "texto": "Cancel and report the surgeon to the board",
+        "quiz": "Cancel and report"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Divergência? *Para tudo* e confere",
+    "certa": [
+      "O *Universal Protocol* pede *preprocedure verification*, *site marking* e *time-out* antes da incisão, e qualquer pessoa da equipe pode e deve parar o processo quando algo não bate. A divergência se resolve com o paciente acordado, o prontuário, os exames de imagem e um termo corrigido, com o local marcado pelo cirurgião que vai operar. Só depois disso a cirurgia segue."
+    ],
+    "termos": [
+      "Universal Protocol",
+      "time-out",
+      "site marking",
+      "wrong-site surgery"
+    ],
+    "erradas": {
+      "A": "A palavra de um só membro da equipe não substitui a verificação; é assim que acontece a cirurgia no lado errado.",
+      "C": "Notificar depois não previne o erro; a verificação tem de acontecer antes da incisão.",
+      "D": "Uma divergência de documento ainda não é infração; cancelar e denunciar é exagerado quando a checagem resolve."
+    },
+    "macete": {
+      "frase": "Time-out é *check-in*: passageiro, destino e assento",
+      "apoio": "Pegadinha de prova: O NBME coloca a pressão de quem tem mais hierarquia na sala; a resposta é sempre parar e verificar antes de prosseguir.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sala de cirurgia, paciente ainda acordado e uma divergência entre o termo de consentimento e a escala. Alguém precisa decidir o que vem antes da incisão.",
+    "palavras_chave": [
+      "preoperative verification",
+      "consent form",
+      "laterality discrepancy",
+      "patient safety"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

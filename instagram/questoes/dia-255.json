@@ -1,0 +1,99 @@
+{
+  "dia": 255,
+  "data": "2027-07-14",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Tireoidite de Hashimoto",
+  "conceito": "Hashimoto thyroiditis: lymphocytic infiltrate with germinal centers and Hurthle cells, anti-TPO",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-15",
+  "tom": null,
+  "gancho": "A *borboleta* do pescoço desacelerou. O que tem lá dentro?",
+  "gancho_apoio": "Tireoide firme, indolor, TSH alto e anti-TPO lá em cima. O que o patologista vê?",
+  "imagem": {
+    "arquivo": "dia-255.png",
+    "cena": "Uma casa em forma de borboleta, com duas alas e um corredor no meio, numa tarde fria. A lareira está quase apagada, e a dona da casa, uma célula cúbica simpática de cachecol e meias grossas, cochila no sofá com uma xícara de chá. A campainha toca e ninguém atende.",
+    "foco": "50% 35%",
+    "alt": "A borboleta do pescoço desacelerou. O que tem lá dentro?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-255-macete.png",
+    "cena": "Dentro da casa-borboleta aparece o motivo do cansaço: dezenas de bolinhas roxas se mudaram com malas e colchões e montaram coretos redondos de festa (os centros germinativos), e a dona da casa trocou de roupa por um casaco rosa enorme, com os bolsos cheios de feijõezinhos laranja, como se carregasse muitas mitocôndrias (a célula de Hürthle).",
+    "foco": "50% 40%",
+    "alt": "Linfócitos com centro germinativo"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old woman has had fatigue, cold intolerance, and constipation for 6 months. Her thyroid gland is diffusely enlarged, firm, and painless. TSH is 14 μU/mL, free T4 is low, and anti-thyroid peroxidase antibodies are markedly elevated. A core needle biopsy is obtained.",
+    "pergunta": "Which histologic finding is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Granulomatous inflammation with multinucleated giant cells",
+        "quiz": "Granuloma gigante"
+      },
+      "B": {
+        "texto": "Dense fibrosis extending into adjacent neck muscles",
+        "quiz": "Fibrose invasiva"
+      },
+      "C": {
+        "texto": "Tall follicular cells with scalloped colloid",
+        "quiz": "Coloide recortado"
+      },
+      "D": {
+        "texto": "Lymphoid follicles with germinal centers and Hürthle cells",
+        "quiz": "Folículo linfoide"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Linfócitos com *centro germinativo*",
+    "certa": [
+      "Na *Hashimoto thyroiditis*, linfócitos T e B invadem a tireoide, formam *lymphoid follicles with germinal centers* e destroem os folículos aos poucos. As células foliculares que sobram viram *Hürthle cells* (oncocíticas): grandes, com citoplasma rosa e granular cheio de mitocôndrias. O anti-TPO e o hipotireoidismo com bócio firme e indolor fecham o quadro."
+    ],
+    "termos": [
+      "Hashimoto thyroiditis",
+      "germinal centers",
+      "Hürthle cells",
+      "anti-TPO"
+    ],
+    "erradas": {
+      "A": "Granulomas com células gigantes são da tireoidite subaguda de *de Quervain*, que dói e vem depois de virose.",
+      "B": "Fibrose que invade os músculos do pescoço é a tireoidite de *Riedel*, com glândula dura como pedra.",
+      "C": "Células altas com coloide recortado (*scalloped colloid*) são da doença de *Graves*, que causa hipertireoidismo."
+    },
+    "macete": {
+      "frase": "Hashimoto: *bloco com coreto* e anfitriã de *casaco rosa*",
+      "apoio": "Os inquilinos roxos são os linfócitos, os coretos são os centros germinativos e o casaco rosa cheio de feijões laranja é a célula de Hürthle, rosada de tanta mitocôndria.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cansaço, frio e intestino preso, com bócio firme e indolor. Na lâmina, o que você esperaria ver?",
+    "palavras_chave": [
+      "fatigue",
+      "cold intolerance",
+      "firm goiter",
+      "anti-TPO antibodies"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Patologia",
+      "#Endocrinologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que a lâmina mostra?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

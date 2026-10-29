@@ -1,0 +1,94 @@
+{
+  "dia": 23,
+  "data": "2026-11-24",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Lesão renal aguda pré-renal",
+  "conceito": "Prerenal AKI: FENa below 1 percent, BUN/creatinine above 20",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-25",
+  "tom": null,
+  "gancho": "Seu Néfron em modo *economia*: nada sai sem carimbo",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-023.png",
+    "cena": "Seu Néfron, no balcão da repartição em plena seca, com um cacto empoeirado na prateleira e o galão de água quase vazio. Uma fila de gotinhas de água e cristais de sal espera na porta de saída com senha na mão, e ele ergue o carimbo por cima dos óculos.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron em modo economia: nada sai sem carimbo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-023-macete.png",
+    "cena": "Callback da repartição: Seu Néfron carimba de verde cada gotinha e cada cristal de sal, e todos voltam marchando por uma porta de retorno. Só um fiozinho sai pela porta de saída, e um personagem cinza (a ureia) volta de mãos dadas com uma gotinha de água.",
+    "alt": "Em crise hídrica, tudo é reabsorvido"
+  },
+  "questao": {
+    "vinheta": "A 74-year-old man has 3 days of vomiting and watery diarrhea. He has dry mucous membranes and orthostatic hypotension. Creatinine is 2.3 mg/dL (baseline 1.0) and BUN 56 mg/dL. Urine sodium is 9 mEq/L, fractional excretion of sodium 0.4%, and sediment shows only hyaline casts. He takes no diuretics.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Prerenal acute kidney injury",
+        "quiz": "Pré-renal"
+      },
+      "B": {
+        "texto": "Acute tubular necrosis",
+        "quiz": "Necrose tubular"
+      },
+      "C": {
+        "texto": "Acute interstitial nephritis",
+        "quiz": "Nefrite intersticial"
+      },
+      "D": {
+        "texto": "Postrenal obstruction",
+        "quiz": "Pós-renal"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Em crise hídrica, tudo é reabsorvido",
+    "certa": [
+      "Vômitos e diarreia com mucosas secas e hipotensão postural reduzem o fluxo para o rim, que reage segurando sódio e água: sódio urinário baixo, fração de excreção de sódio (FENa) abaixo de 1% e relação ureia/creatinina (BUN/creatinine) acima de 20, aqui perto de 24. Os túbulos estão íntegros, por isso o sedimento é inocente, só com cilindros hialinos. É a lesão renal aguda pré-renal, que melhora com reposição de volume."
+    ],
+    "termos": [
+      "prerenal AKI",
+      "FENa",
+      "BUN/creatinine ratio",
+      "hyaline casts"
+    ],
+    "erradas": {
+      "B": "Na necrose tubular aguda o túbulo lesado não segura sódio, com FENa acima de 2% e cilindros granulosos cor de barro.",
+      "C": "A nefrite intersticial costuma vir depois de um remédio novo, com febre, exantema e cilindros leucocitários na urina.",
+      "D": "A obstrução pós-renal mostra hidronefrose no ultrassom e costuma ter história de próstata aumentada ou bexiga cheia."
+    },
+    "macete": {
+      "frase": "Seu Néfron em crise hídrica carimba tudo como REABSORVIDO: o sódio não sai (FENa abaixo de 1%) e a ureia volta junto com a água (BUN/creatinina acima de 20).",
+      "apoio": "Pegadinha de prova: O NBME coloca diurético na história para estragar a FENa; nesse caso, use a fração de excreção de ureia (abaixo de 35% sugere pré-renal).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça com Seu Néfron: creatinina subindo depois de vômitos e diarreia. Os números da urina contam a história.",
+    "palavras_chave": [
+      "vomiting and diarrhea",
+      "orthostatic hypotension",
+      "urine sodium",
+      "creatinine"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Nefrologia",
+      "#Nephrology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "FENa 0,4% e cilindro hialino: qual diagnóstico?"
+  },
+  "exemplo": false
+}

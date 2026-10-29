@@ -1,0 +1,96 @@
+{
+  "dia": 43,
+  "data": "2026-12-14",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Dermatite de contato",
+  "conceito": "Contact dermatitis to nickel: type IV delayed hypersensitivity mediated by T cells",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-15",
+  "gancho": "A fivela chegou na segunda; a coceira, só na quarta",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô no balcão de uma padaria que também é boteco, segurando uma fivela de metal brilhante; atrás dele, uma tigela de massa descansa ao lado de um relógio de parede, e a massa ainda está baixa.",
+    "foco": "50% 35%",
+    "alt": "Macrô no balcão de uma padaria que também é boteco, segurando uma fivela de metal brilhante; atrás dele, uma tigela de massa descansa ao lado de um relógio de parede, e a massa ainda está baixa.",
+    "arquivo": "dia-043.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: dois dias depois, o pano sai da tigela e a massa cresceu enorme; os fermentos são bolinhas redondas com antenas (linfócitos T) trabalhando, e o Macrô entrega a eles um pedacinho da fivela num pratinho.",
+    "alt": "Fermentação natural: linfócito T, 48 a 72 horas",
+    "arquivo": "dia-043-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman has an itchy, scaly, erythematous plaque beneath the metal buckle of a new belt. It appeared 2 days after she began wearing the belt daily. Patch testing with nickel sulfate produces a vesicular reaction at 48 to 72 hours.",
+    "pergunta": "Which cells directly mediate this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Mast cells sensitized with IgE",
+        "quiz": "Mast cells"
+      },
+      "B": {
+        "texto": "Neutrophils recruited by immune complexes",
+        "quiz": "Neutrophils"
+      },
+      "C": {
+        "texto": "Sensitized T lymphocytes",
+        "quiz": "T lymphocytes"
+      },
+      "D": {
+        "texto": "Plasma cells secreting IgG",
+        "quiz": "Plasma cells"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Fermentação natural: *linfócito T*, 48 a 72 horas",
+    "certa": [
+      "A *allergic contact dermatitis* ao níquel é *type IV hypersensitivity*, a única que não depende de anticorpo. O níquel funciona como hapteno, as células de Langerhans apresentam o complexo aos *T cells* sensibilizados, e eles liberam citocinas e matam queratinócitos. Como precisa recrutar e ativar células, a reação demora de 48 a 72 horas, o tempo do *patch test*."
+    ],
+    "termos": [
+      "allergic contact dermatitis",
+      "type IV hypersensitivity",
+      "hapten",
+      "patch test"
+    ],
+    "erradas": {
+      "A": "Mastócito com IgE é tipo I, imediato, em minutos, com urticária e não placa descamativa tardia.",
+      "B": "Neutrófilos atraídos por imunocomplexos são tipo III (vasculite, doença do soro).",
+      "D": "IgG produzida por plasmócito contra antígeno de pele é tipo II, como no pênfigo vulgar."
+    },
+    "macete": {
+      "frase": "Tipo IV é *fermentação natural*: T e 48 horas",
+      "apoio": "Pegadinha de prova: O NBME agrupa as reações do tipo IV: PPD, dermatite de contato (níquel, hera venenosa), rejeição crônica e alguns casos de reação a droga; todas sem anticorpo e tardias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cinto novo, placa que coça embaixo da fivela de metal e um teste de contato que só acende depois de 48 horas. O Macrô quer saber quem fermenta essa reação.",
+    "palavras_chave": [
+      "metal belt buckle",
+      "itchy plaque",
+      "nickel",
+      "delayed reaction"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#Dermatologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Quem medeia a dermatite do níquel?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

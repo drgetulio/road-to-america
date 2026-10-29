@@ -1,0 +1,96 @@
+{
+  "dia": 39,
+  "data": "2026-12-10",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
+  "topico": "Vacinas de vírus vivo aos 12 meses",
+  "conceito": "MMR and varicella: live vaccines given at 12 to 15 months",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-11",
+  "gancho": "Festa de 1 ano: quais convidados chegam vivos?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e um porteiro gentil confere uma pulseira de idade. Não se vê quais caixas entram.",
+    "foco": "50% 35%",
+    "alt": "Uma festa de 1 ano com bolo de uma vela; na porta, quatro caixas de presente com laços de cores diferentes esperam, e um porteiro gentil confere uma pulseira de idade. Não se vê quais caixas entram.",
+    "arquivo": "dia-039.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: duas caixas entram na festa e se abrem em confete perto do bolo; uma caixa vai embora pela calçada com uma mala (passou da idade) e a última espera sentada num banco com um calendário de dois anos.",
+    "alt": "No bolo de 1 ano entram MMR e varicela",
+    "arquivo": "dia-039-macete.png"
+  },
+  "questao": {
+    "vinheta": "A healthy girl has her 12-month checkup. Her immunizations are up to date through 6 months of age. She has no allergies, no immunodeficiency, and no household contacts with immunosuppression. Her mother asks which live-virus vaccines are due.",
+    "pergunta": "Which is the most appropriate recommendation?",
+    "alternativas": {
+      "A": {
+        "texto": "MMR and varicella vaccines today",
+        "quiz": "MMR + varicella"
+      },
+      "B": {
+        "texto": "Rotavirus vaccine today",
+        "quiz": "Rotavirus"
+      },
+      "C": {
+        "texto": "MMR today, varicella at age 4 years",
+        "quiz": "MMR now, VAR at 4"
+      },
+      "D": {
+        "texto": "Intranasal live influenza vaccine today",
+        "quiz": "Nasal flu (LAIV)"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "No bolo de 1 ano entram *MMR* e *varicela*",
+    "certa": [
+      "A primeira dose de *MMR* e de *varicella vaccine* é dada entre 12 e 15 meses, com reforço entre 4 e 6 anos. Antes de 1 ano, os anticorpos da mãe ainda podem neutralizar o vírus vacinal vivo e a resposta fica fraca. Abaixo de 4 anos, a recomendação é aplicar as duas separadas, porque a combinada MMRV aumenta o risco de convulsão febril na primeira dose."
+    ],
+    "termos": [
+      "MMR vaccine",
+      "varicella vaccine",
+      "live attenuated vaccine",
+      "maternal antibodies"
+    ],
+    "erradas": {
+      "B": "A rotavírus tem idade máxima de 8 meses para a última dose; aos 12 meses não se aplica mais.",
+      "C": "A varicela não espera até os 4 anos: a primeira dose também vai entre 12 e 15 meses; aos 4 a 6 anos vem a segunda.",
+      "D": "A influenza intranasal de vírus vivo só é aprovada a partir de 2 anos."
+    },
+    "macete": {
+      "frase": "Festa de 1 ano: *MMR e varicela* chegam juntas",
+      "apoio": "Pegadinha de prova: O NBME cobra idades-limite: rotavírus até 8 meses, MMR e varicela a partir de 12 meses, influenza intranasal a partir de 2 anos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Consulta de rotina, criança saudável, carteira de vacinas em dia até os 6 meses. A mãe quer saber quais vacinas de vírus vivo entram agora.",
+    "palavras_chave": [
+      "12-month visit",
+      "well-child care",
+      "live-virus vaccines",
+      "immunization schedule"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Vacinas",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Quais vacinas vivas entram aos 12 meses?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

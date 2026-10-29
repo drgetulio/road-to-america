@@ -1,0 +1,87 @@
+{
+  "dia": 172,
+  "data": "2027-04-22",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Intussuscepção",
+  "conceito": "Intussusception: target sign on ultrasound, air or contrast enema reduction",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-23",
+  "tom": null,
+  "gancho": "Rosquinha no ultrassom do bebê: qual espeto vem *agora*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-172.png",
+    "cena": "O garçom do rodízio traz um espeto de rosquinhas de padaria; na mesa, uma luneta de pirata com os gomos todos encaixados um dentro do outro e a plaquinha verde e vermelha.",
+    "foco": "50% 35%",
+    "alt": "O garçom do rodízio traz um espeto de rosquinhas de padaria; na mesa, uma luneta de pirata com os gomos todos encaixados um dentro do outro e a plaquinha verde e vermelha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-172-macete.png",
+    "cena": "Uma bombinha de ar sopra a luneta e os gomos deslizam para fora, abrindo de novo; a plaquinha vira verde. O bisturi fica de reserva numa bandeja coberta, ao fundo.",
+    "alt": "Intussuscepção estável: enema que diagnostica e trata"
+  },
+  "questao": {
+    "vinheta": "A 14-month-old boy has bouts of inconsolable crying with drawn-up knees every 15 to 20 minutes, lethargy between bouts, vomiting, and a bloody, mucoid stool. He is afebrile and hemodynamically stable, without peritoneal signs. Ultrasound shows a target sign in the right abdomen.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Stool culture and observation",
+        "quiz": "Coprocultura e obs."
+      },
+      "B": {
+        "texto": "Immediate exploratory laparotomy",
+        "quiz": "Laparotomia"
+      },
+      "C": {
+        "texto": "Upper gastrointestinal contrast series",
+        "quiz": "Seriografia EED"
+      },
+      "D": {
+        "texto": "Air or contrast enema reduction",
+        "quiz": "Enema de ar"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Intussuscepção estável: *enema* que diagnostica e trata",
+    "certa": [
+      "Dor em cólica intermitente, letargia entre as crises, fezes com sangue e muco (*currant jelly stool*) e *target sign* no ultrassom, entre 6 meses e 3 anos, é *intussusception*, geralmente ileocólica. Com a criança estável e sem peritonite, o próximo passo é a redução por *air or contrast enema* guiada por imagem, que diagnostica e trata, com a cirurgia de sobreaviso."
+    ],
+    "termos": [
+      "intussusception",
+      "target sign",
+      "currant jelly stool",
+      "air enema reduction"
+    ],
+    "erradas": {
+      "A": "Observar atrasa a redução e aumenta o risco de isquemia e perfuração.",
+      "B": "Laparotomia é para peritonite, perfuração, instabilidade ou falha da redução por enema.",
+      "C": "A seriografia contrastada procura má rotação no vômito bilioso; não trata e não é o exame da intussuscepção."
+    },
+    "macete": {
+      "frase": "O intestino vira *luneta* fechada, um pedaço entrando no outro, e no ultrassom aparece a *rosquinha*. Um sopro de *ar* abre a luneta de volta.",
+      "apoio": "O NBME cobra quando não fazer o enema (peritonite, perfuração, choque vão direto para cirurgia) e lembra o divertículo de Meckel como ponto de partida em crianças maiores.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na emergência pediátrica. Crises de choro em cólica, fezes com sangue e muco, e o ultrassom já mostrou a imagem que fecha o diagnóstico. O bebê está estável. Qual espeto o garçom traz agora?",
+    "palavras_chave": [
+      "episodic crying",
+      "drawn-up knees",
+      "bloody stool",
+      "target sign"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Sinal do alvo, bebê estável. E agora?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

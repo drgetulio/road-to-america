@@ -1,0 +1,93 @@
+{
+  "dia": 182,
+  "data": "2027-05-02",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Doença do soro (dia 78), Cólera (dia 155), MHC I e MHC II (dia 176)",
+  "conceito": "Remix: Serum sickness + Vibrio cholerae toxin + MHC I vs MHC II",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    78,
+    155,
+    176
+  ],
+  "explicacao_em": "2027-05-03",
+  "tom": null,
+  "gancho": "Remix de domingo: o soro de cavalo *cobrou a conta* depois",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-182.png",
+    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (uma ferradura, uma vírgula com um interruptor de luz e uma bandeja de garçom com duas pratas) e um quarto disco com uma pipoca estourando tentando entrar na pilha.",
+    "foco": "50% 35%",
+    "alt": "Remix de domingo: o soro de cavalo cobrou a conta depois"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-182-macete.png",
+    "cena": "O disco da ferradura toca e, da caixa de som, saem bolinhas cor-de-rosa de chiclete que grudam numa peneira em forma de rim, num joelho de boneco articulado e num tapete; os outros dois discos ganham um risco vermelho e o da pipoca é barrado por um cone.",
+    "alt": "Soro de cavalo, 10 dias depois: imunocomplexos"
+  },
+  "questao": {
+    "vinheta": "A 41-year-old man with severe aplastic anemia was treated with equine antithymocyte globulin 10 days ago. He now has fever, a pruritic rash along the sides of his hands and feet, and painful swelling of the knees and wrists. Urinalysis shows mild proteinuria. Serum C3 and C4 are low.",
+    "pergunta": "Which mechanism best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Endogenous peptides shown on MHC I to CD8+ T cells",
+        "quiz": "MHC I para CD8",
+        "dia": 176
+      },
+      "B": {
+        "texto": "Toxin that locks Gs on, raising cAMP",
+        "quiz": "Gs travado, cAMP",
+        "dia": 155
+      },
+      "C": {
+        "texto": "Immune complex deposition with complement activation",
+        "quiz": "Imunocomplexos",
+        "dia": 78
+      },
+      "D": {
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE no mastócito"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Soro de cavalo, 10 dias depois: *imunocomplexos*",
+    "certa": [
+      "A proteína estranha do soro de cavalo induz anticorpos em 1 a 2 semanas. Antígeno e anticorpo formam *immune complexes* que se depositam nos vasos da pele, nas articulações e no glomérulo e ativam o complemento, que é consumido (C3 e C4 baixos). É a *serum sickness*, hipersensibilidade tipo III."
+    ],
+    "termos": [
+      "serum sickness",
+      "type III hypersensitivity",
+      "immune complexes",
+      "hypocomplementemia"
+    ],
+    "erradas": {
+      "A": "Dia 176: MHC I apresenta peptídeos de dentro da célula ao CD8; é a via da célula infectada por vírus, não explica febre, artralgia e complemento baixo após soro.",
+      "B": "Dia 155: a toxina da cólera trava o Gs ligado e causa diarreia aquosa; não há toxina nem diarreia aqui.",
+      "D": "Intruso: a ponte de IgE no mastócito é tipo I, começa em minutos (urticária, broncoespasmo, anafilaxia) e não consome complemento."
+    },
+    "macete": {
+      "frase": "Na doença do soro, antígeno e anticorpo viram *bolinhas de chiclete* que grudam no rim, na pele e na junta, e o complemento é gasto para limpar (C3 baixo). Dez dias é o tempo de a fábrica produzir o anticorpo.",
+      "apoio": "O NBME cita soro animal, anticorpo monoclonal quimérico ou antibiótico (penicilina, cefaclor) com sintomas 1 a 2 semanas depois e complemento baixo; o tipo I aparece em minutos, o tipo III demora dias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 78, 155 e 176) e um intruso. Só um mecanismo explica o quadro da vinheta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Soro de cavalo e C3 baixo. Qual mecanismo?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

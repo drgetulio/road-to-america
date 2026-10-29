@@ -1,0 +1,95 @@
+{
+  "dia": 15,
+  "data": "2026-11-16",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Síndrome de Goodpasture",
+  "conceito": "Goodpasture syndrome: anti-GBM (type IV collagen) antibodies with linear immunofluorescence",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-17",
+  "tom": null,
+  "gancho": "Seu Néfron e o pulmão receberam a *mesma* visita indesejada",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-015.png",
+    "cena": "Seu Néfron, de gravata e carimbo na mão, trabalha numa repartição ao lado de um colega pulmão de cardigã. Os dois olham surpresos para o chão, onde dardinhos amarelos em forma de Y caem sobre o mesmo carpete que passa por baixo das duas mesas.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron e o pulmão receberam a mesma visita indesejada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-015-macete.png",
+    "cena": "Callback da repartição: os dardinhos Y agora formam uma linha reta perfeita e contínua na emenda do carpete, como pasta de dente espremida numa escova comprida. O carpete é uma malha de fios (colágeno tipo IV) que passa por baixo da mesa do rim e da mesa do pulmão, e um tubo gigante de pasta está no fim da linha.",
+    "alt": "Pasta de dente em linha reta"
+  },
+  "questao": {
+    "vinheta": "A 23-year-old man who smokes has 1 week of hemoptysis and dark urine. BP is 152/94 mm Hg. Urinalysis shows red blood cell casts; creatinine is 3.4 mg/dL. Renal biopsy shows crescents, and immunofluorescence shows linear IgG along the glomerular basement membrane. ANCA testing is negative.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Granulomatosis with polyangiitis",
+        "quiz": "Granulomatose (GPA)"
+      },
+      "B": {
+        "texto": "Lupus nephritis",
+        "quiz": "Nefrite lúpica"
+      },
+      "C": {
+        "texto": "IgA nephropathy",
+        "quiz": "Nefropatia por IgA"
+      },
+      "D": {
+        "texto": "Anti-glomerular basement membrane disease",
+        "quiz": "Goodpasture"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Pasta de dente em linha reta",
+    "certa": [
+      "Hemoptise com glomerulonefrite rapidamente progressiva (cilindros hemáticos, crescentes) e imunofluorescência linear de IgG na membrana basal é a doença antimembrana basal glomerular, a síndrome de Goodpasture. Os anticorpos miram o domínio NC1 da cadeia alfa-3 do colágeno IV, que forma a membrana basal tanto do glomérulo quanto do alvéolo, por isso rim e pulmão adoecem juntos, numa hipersensibilidade tipo II. Tratar é urgente: plasmaférese para retirar os anticorpos, mais corticoide e ciclofosfamida."
+    ],
+    "termos": [
+      "anti-GBM disease",
+      "Goodpasture syndrome",
+      "type IV collagen",
+      "linear immunofluorescence",
+      "type II hypersensitivity"
+    ],
+    "erradas": {
+      "A": "A GPA também causa doença pulmão-rim, mas é pauci-imune (imunofluorescência quase vazia) e costuma ter c-ANCA positivo.",
+      "B": "Na nefrite lúpica a imunofluorescência é granular (\"full house\"), e não linear, com sinais sistêmicos de lúpus.",
+      "C": "A nefropatia por IgA mostra depósitos mesangiais de IgA e hematúria logo depois de uma infecção, sem hemoptise."
+    },
+    "macete": {
+      "frase": "Good-PASTA-ure: o anticorpo sai como pasta de dente, num fio linear e contínuo ao longo da membrana basal. Seu Néfron e o pulmão dividem o mesmo piso de colágeno tipo IV.",
+      "apoio": "Pegadinha de prova: O NBME separa as doenças pulmão-rim pela imunofluorescência: linear é anti-GBM, granular é imunocomplexo e vazia é pauci-imune (ANCA).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda com Seu Néfron: rim e pulmão adoecem ao mesmo tempo, e a biópsia mostra um padrão que a prova adora.",
+    "palavras_chave": [
+      "hemoptysis",
+      "red blood cell casts",
+      "renal biopsy",
+      "immunofluorescence"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Nefrologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Hemoptise e IF linear no rim: qual diagnóstico?"
+  },
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 275,
+  "data": "2027-08-03",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Encefalopatia hepática",
+  "conceito": "Hepatic encephalopathy: lactulose first, add rifaximin",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-04",
+  "tom": null,
+  "gancho": "Engarrafamento de *amônia* na estrada para o cérebro",
+  "gancho_apoio": "Cirrose, confusão e flapping. Sem sangramento e sem infecção.",
+  "imagem": {
+    "arquivo": "dia-275.png",
+    "cena": "Placa verde de rodovia NEXT STEP com quatro saídas; nuvens de fumaça amarelada em forma de carrinhos seguem por uma estrada em direção a uma cidade com silhueta de cérebro, num engarrafamento.",
+    "foco": "50% 35%",
+    "alt": "Engarrafamento de amônia na estrada para o cérebro"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-275-macete.png",
+    "cena": "Callback: na mesma estrada, um pedágio em forma de limão transforma cada carrinho de fumaça num caminhão quadrado grande demais para o túnel do cérebro; os caminhões saem por uma pista expressa e a cidade-cérebro acende as luzes de novo.",
+    "foco": "50% 45%",
+    "alt": "Lactulose: ácido no cólon, amônia presa"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old man with alcohol-associated cirrhosis is brought by his wife for 2 days of confusion and daytime sleepiness. He has asterixis. He is afebrile, hemoglobin is stable, stool is guaiac negative, and ascitic fluid has 90 neutrophils/µL. Glucose and electrolytes are normal.",
+    "pergunta": "Which is the most appropriate initial pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Rifaximin alone",
+        "quiz": "Rifaximina sozinha"
+      },
+      "B": {
+        "texto": "Octreotide",
+        "quiz": "Octreotida"
+      },
+      "C": {
+        "texto": "Neomycin",
+        "quiz": "Neomicina"
+      },
+      "D": {
+        "texto": "Lactulose",
+        "quiz": "Lactulose"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Lactulose: *ácido no cólon*, amônia presa",
+    "certa": [
+      "É *hepatic encephalopathy* sem gatilho de sangramento ou de infecção (neutrófilos abaixo de 250/µL afastam peritonite bacteriana espontânea). A *lactulose* é a primeira escolha: as bactérias do cólon a fermentam, o meio fica ácido e a amônia (NH3) vira amônio (NH4+), que não volta para o sangue, enquanto o efeito laxativo acelera a saída. A *rifaximin* entra junto quando o episódio se repete, como prevenção secundária."
+    ],
+    "termos": [
+      "hepatic encephalopathy",
+      "lactulose",
+      "NH3 to NH4+ trapping",
+      "rifaximin"
+    ],
+    "erradas": {
+      "A": "Rifaximina sozinha não é a primeira linha; ela é somada à lactulose depois de recorrência.",
+      "B": "Octreotida reduz a pressão portal no sangramento varicoso, que a vinheta afasta.",
+      "C": "Neomicina reduz a amônia, mas é nefrotóxica e ototóxica e ficou como opção de exceção."
+    },
+    "macete": {
+      "frase": "Lactulose *azeda, prende e despacha* a amônia",
+      "apoio": "Na imagem, a amônia é um carrinho de fumaça indo para a cidade-cérebro. O pedágio de limão (ácido) transforma cada carro num caminhão grande demais para o túnel, e a pista expressa leva tudo para fora.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cirrose, dois dias de confusão, flapping nas mãos e nenhum sinal de sangramento ou de infecção. A placa do Plantão de Terça mostra quatro saídas. Qual remédio libera a pista?",
+    "palavras_chave": [
+      "cirrhosis",
+      "confusion",
+      "asterixis",
+      "daytime sleepiness"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Hepatologia",
+      "#Hepatology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Cirrose com flapping: qual o primeiro remédio?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

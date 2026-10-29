@@ -1,0 +1,96 @@
+{
+  "dia": 78,
+  "data": "2027-01-18",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Doença do soro",
+  "conceito": "Serum sickness: type III immune complexes 1 to 2 weeks after exposure, low complement",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-19",
+  "gancho": "No boteco do Macrô, a *conta do fiado* chegou dez dias depois",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "No balcão do boteco dos micróbios, o Macrô anota num caderninho de fiado. Ao lado, um frasco de soro com tampa em forma de cabeça de cavalo simpático e um calendário de mesa. Não dá para ver o que vai acontecer quando a conta chegar.",
+    "foco": "50% 35%",
+    "alt": "No boteco do Macrô, a conta do fiado chegou dez dias depois",
+    "arquivo": "dia-078.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: dez folhas do calendário caíram e a conta chegou. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo (imunocomplexos) entopem canos finos que levam a uma articulação, à pele e a um filtro em forma de rim. O Macrô paga com moedinhas douradas (complemento) e a carteira fica vazia.",
+    "alt": "Conta que chega depois: doença do soro",
+    "arquivo": "dia-078-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man develops fever, an urticarial rash, polyarthralgia, and generalized lymphadenopathy 10 days after receiving equine-derived antivenom for a snakebite. Urinalysis shows mild proteinuria. Serum C3 and C4 levels are low.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Anaphylaxis",
+        "quiz": "Anaphylaxis"
+      },
+      "B": {
+        "texto": "Arthus reaction",
+        "quiz": "Arthus reaction"
+      },
+      "C": {
+        "texto": "DRESS syndrome",
+        "quiz": "DRESS"
+      },
+      "D": {
+        "texto": "Serum sickness",
+        "quiz": "Serum sickness"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Conta que chega depois: *doença do soro*",
+    "certa": [
+      "Febre, urticária, artralgia, linfadenopatia e proteinúria 1 a 2 semanas depois de uma proteína estranha (aqui, o soro de cavalo) é *serum sickness*, a *type III hypersensitivity* sistêmica. O tempo é o que o corpo leva para produzir anticorpos contra a proteína, que ainda circula: formam-se *immune complexes* que se depositam em vasos, articulações e glomérulos e consomem complemento, por isso C3 e C4 baixos."
+    ],
+    "termos": [
+      "serum sickness",
+      "type III hypersensitivity",
+      "immune complexes",
+      "hypocomplementemia"
+    ],
+    "erradas": {
+      "A": "A anafilaxia é tipo I, começa em minutos e não consome complemento.",
+      "B": "A reação de Arthus também é tipo III, mas é local, no ponto da injeção, com edema e necrose da pele.",
+      "C": "A DRESS aparece 2 a 8 semanas depois de remédios como anticonvulsivantes e alopurinol, com eosinofilia, edema facial e hepatite."
+    },
+    "macete": {
+      "frase": "Fiado: *conta em 1 a 2 semanas*, juros no *complemento*",
+      "apoio": "Pegadinha de prova: O NBME diferencia pelo relógio e pelo lugar: minutos é tipo I; 1 a 2 semanas, sistêmico e com complemento baixo é doença do soro; local e em horas, no ponto da injeção, é Arthus.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um soro de cavalo salvou o paciente de uma picada de cobra. Dez dias depois vieram febre, placas na pele, dor nas juntas e complemento baixo. O Macrô quer o diagnóstico.",
+    "palavras_chave": [
+      "snakebite",
+      "antivenom",
+      "rash and arthralgia",
+      "proteinuria"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#BichoDeSegunda",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o diagnóstico mais provável?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

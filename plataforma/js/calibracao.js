@@ -7,7 +7,9 @@
    2. aplicarRecalibracao: grava os b novos (store.salvarCalibracao).
    3. calibrarDesfechos: junta resultados oficiais (Pass/Fail e nota do Step 2 CK)
       e escores NBME em standard-paced ao theta de cada aluno na data e ajusta a
-      regressão logística (Pass/Fail) e as regressões lineares (notas).
+      regressão logística (Pass/Fail) e as regressões lineares (notas), estas com o
+      efeito do aluno: várias autoavaliações do mesmo aluno entram agrupadas, e o
+      mínimo para a ligação é de alunos distintos, não de escores.
       Da regressão do escore NBME sai a ligação com a NBME (corteLigadoNbme): o
       theta em que o escore previsto atinge o padrão de aprovação, com erro-padrão
       pelo método delta, que substitui o limiar provisório quando é suficiente.
@@ -100,14 +102,14 @@ export async function calibrarDesfechos({ store, step } = {}) {
     escore_oficial: step === "step2ck" ? ajustarEscore(dadosOficiais.filter((d) => d.escore !== null)) : null,
     escore_nbme: escoreNbme,
     ligacao_nbme: corteLigadoNbme(escoreNbme, { step }),
-    n: { resultados_oficiais: dadosOficiais.length, nbme: dadosNbme.length, alunos: usuarios.length, elegiveis, nao_respondentes: naoRespondentes.length },
+    n: { resultados_oficiais: dadosOficiais.length, nbme: dadosNbme.length, nbme_alunos: new Set(dadosNbme.map((x) => x.user_id)).size, alunos: usuarios.length, elegiveis, nao_respondentes: naoRespondentes.length },
     /* pontos usados no ajuste (theta na data do desfecho), para os gráficos do admin */
     dados: { oficiais: dadosOficiais, nbme: dadosNbme },
     demonstracao: store.mode === "local"
   };
 }
 
-const linear = (m) => ({ a: m.a, b: m.b, sigma: m.sigma, r2: m.r2, n: m.n, var_a: m.var_a ?? null, var_b: m.var_b ?? null, cov_ab: m.cov_ab ?? null, suficiente: !!m.suficiente });
+const linear = (m) => ({ a: m.a, b: m.b, sigma: m.sigma, r2: m.r2, n: m.n, n_alunos: m.n_alunos ?? null, tau: m.tau ?? null, metodo: m.metodo || null, var_a: m.var_a ?? null, var_b: m.var_b ?? null, cov_ab: m.cov_ab ?? null, suficiente: !!m.suficiente });
 
 /* Modelo gravado para as telas: só o que estimarAluno usa, mais a procedência */
 export async function salvarModelo({ store, step, desfechos }) {
@@ -125,7 +127,7 @@ export async function salvarModelo({ store, step, desfechos }) {
     escore_oficial: d.escore_oficial ? linear(d.escore_oficial) : null,
     escore_nbme: d.escore_nbme ? linear(d.escore_nbme) : null,
     /* corte ligado à NBME: só vai para as telas quando é suficiente */
-    ligacao_nbme: d.ligacao_nbme ? { metodo: d.ligacao_nbme.metodo, limiar: d.ligacao_nbme.limiar, n: d.ligacao_nbme.n, mu: d.ligacao_nbme.mu, ep: d.ligacao_nbme.ep, sigma: d.ligacao_nbme.sigma, t: d.ligacao_nbme.t ?? null, suficiente: !!d.ligacao_nbme.suficiente, motivo: d.ligacao_nbme.motivo || "" } : null,
+    ligacao_nbme: d.ligacao_nbme ? { metodo: d.ligacao_nbme.metodo, limiar: d.ligacao_nbme.limiar, n: d.ligacao_nbme.n, n_alunos: d.ligacao_nbme.n_alunos ?? null, mu: d.ligacao_nbme.mu, ep: d.ligacao_nbme.ep, sigma: d.ligacao_nbme.sigma, t: d.ligacao_nbme.t ?? null, suficiente: !!d.ligacao_nbme.suficiente, motivo: d.ligacao_nbme.motivo || "" } : null,
     demonstracao: !!d.demonstracao
   };
   return store.saveModeloPsicometrico(step, modelo);

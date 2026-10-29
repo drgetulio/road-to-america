@@ -1,0 +1,100 @@
+{
+  "dia": 351,
+  "data": "2027-10-18",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Febre puerperal",
+  "conceito": "Streptococcus pyogenes puerperal sepsis: Semmelweis showed that hand washing prevents it",
+  "personagem": "Macrô",
+  "gancho_data": "Dia do Médico (18/10): homenagem a Semmelweis e à higiene das mãos.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-19",
+  "tom": null,
+  "gancho": "Semmelweis lavou as mãos *antes de virar moda*",
+  "gancho_apoio": "Dia do Médico. Febre alta e choque 30 horas depois do parto.",
+  "imagem": {
+    "arquivo": "dia-351.png",
+    "cena": "Macrô na porta do boteco dos micróbios, numa rua de hospital antigo do século 19, segura uma barra de sabão como um troféu, ao lado de uma bacia com espuma; ao fundo, uma fileira de cocos redondos em corrente tenta entrar escondida.",
+    "foco": "50% 35%",
+    "alt": "Semmelweis lavou as mãos antes de virar moda"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-351-macete.png",
+    "cena": "Callback: Macrô ilumina com uma lanterna uma placa de cultura onde a corrente de cocos está cercada de halos claros, e um pequeno disco de antibiótico abre uma zona vazia ao redor; bolhas de sabão flutuam ao fundo.",
+    "foco": "50% 45%",
+    "alt": "Febre puerperal precoce e grave: Streptococcus pyogenes"
+  },
+  "questao": {
+    "vinheta": "A 27-year-old woman develops fever of 39.8°C, chills, uterine tenderness, and hypotension 30 hours after a vaginal delivery. The lochia is thin and not foul-smelling. Blood cultures grow beta-hemolytic gram-positive cocci in chains that are bacitracin-sensitive and PYR-positive.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Streptococcus agalactiae",
+        "quiz": "S. agalactiae"
+      },
+      "B": {
+        "texto": "Streptococcus pyogenes",
+        "quiz": "S. pyogenes"
+      },
+      "C": {
+        "texto": "Enterococcus faecalis",
+        "quiz": "E. faecalis"
+      },
+      "D": {
+        "texto": "Staphylococcus aureus",
+        "quiz": "S. aureus"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Febre puerperal precoce e grave: *Streptococcus pyogenes*",
+    "certa": [
+      "Febre alta, hipotensão e útero doloroso nas primeiras 48 horas do pós-parto, com cocos em cadeia beta-hemolíticos, sensíveis à *bacitracin* e *PYR-positive*, apontam para *Streptococcus pyogenes* (grupo A), a causa clássica da *puerperal sepsis*. Ignaz Semmelweis mostrou, em 1847, que a *hand hygiene* dos médicos antes do parto derrubava essa mortalidade."
+    ],
+    "termos": [
+      "Streptococcus pyogenes",
+      "puerperal sepsis",
+      "bacitracin-sensitive",
+      "hand hygiene"
+    ],
+    "erradas": {
+      "A": "S. agalactiae (grupo B) também é beta-hemolítico, mas é resistente à bacitracina e CAMP-positivo; é mais famoso pela sepse neonatal.",
+      "C": "Enterococo é PYR-positivo, mas costuma ser gama-hemolítico e cresce em bile e NaCl 6,5%.",
+      "D": "S. aureus forma cachos e é catalase-positivo, não cadeias."
+    },
+    "macete": {
+      "frase": "*Grupo A Apaga com bacitracina; grupo B Banca a bacitracina*",
+      "apoio": "No disco de bacitracina, o pyogenes some ao redor (sensível) e o agalactiae fica firme (resistente). E a lição de Semmelweis vale até hoje: sabão antes de cada paciente.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia do Médico, com homenagem a Semmelweis. Trinta horas depois do parto, febre de 39,8 °C, calafrios e pressão caindo. Na hemocultura, cocos em cadeia que respeitam a bacitracina. Quem é?",
+    "palavras_chave": [
+      "30 hours after delivery",
+      "fever and chills",
+      "uterine tenderness",
+      "hypotension"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#DiaDoMedico",
+      "#Microbiologia",
+      "#Microbiology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Sepse pós-parto, sensível à bacitracina:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

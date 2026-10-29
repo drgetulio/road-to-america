@@ -1,0 +1,103 @@
+{
+  "dia": 294,
+  "data": "2027-08-22",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Arterite de células gigantes (dia 219), Neutropenia febril (dia 261), Pericardite aguda (dia 289)",
+  "conceito": "Remix: Giant cell arteritis + Febrile neutropenia + Acute pericarditis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    219,
+    261,
+    289
+  ],
+  "explicacao_em": "2027-08-23",
+  "tom": null,
+  "gancho": "Três discos no plantão: *qual conduta não pode esperar?*",
+  "gancho_apoio": "Arterite temporal, neutropenia febril e pericardite, mais um intruso.",
+  "imagem": {
+    "arquivo": "dia-294.png",
+    "cena": "Toca-discos numa mesa de plantão com três discos de ícones (uma coroa grande de gigante, um escudo vazio e um coração de suéter) e um quarto disco com uma ampulheta; um relógio de hospital na parede.",
+    "foco": "50% 35%",
+    "alt": "Três discos no plantão: qual conduta não pode esperar?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-294-macete.png",
+    "cena": "Callback: o disco da coroa de gigante toca; um extintor apaga uma chaminha numa artéria em forma de mangueira que contorna a têmpora de um abajur, antes que a fumaça chegue a um olho em forma de farol; a tesoura da biópsia espera na fila, ainda útil.",
+    "foco": "50% 45%",
+    "alt": "Arterite de células gigantes: corticoide antes da biópsia"
+  },
+  "questao": {
+    "vinheta": "For 3 weeks, a 72-year-old woman has had a new temporal headache, scalp tenderness, and jaw pain while chewing. Temperature is 37.9°C, and vision is normal. ESR is 96 mm/h, and the neutrophil count is 7,800/mm3. A temporal artery biopsy is scheduled for next week.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Ibuprofen plus colchicine",
+        "quiz": "AINE + colchicina",
+        "dia": 289
+      },
+      "B": {
+        "texto": "Cefepime within 1 hour",
+        "quiz": "Cefepime em 1 hora",
+        "dia": 261
+      },
+      "C": {
+        "texto": "Await biopsy results before treating",
+        "quiz": "Esperar a biópsia"
+      },
+      "D": {
+        "texto": "High-dose prednisone now",
+        "quiz": "Prednisona já",
+        "dia": 219
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Arterite de células gigantes: *corticoide antes da biópsia*",
+    "certa": [
+      "Cefaleia temporal nova, couro cabeludo dolorido, *jaw claudication* e VHS alta depois dos 50 anos é *giant cell arteritis*. O risco é a cegueira por neuropatia óptica isquêmica, então o *corticoide em dose alta começa já*, antes da biópsia. A biópsia continua útil por cerca de 2 semanas depois do início do corticoide."
+    ],
+    "termos": [
+      "giant cell arteritis",
+      "jaw claudication",
+      "high-dose glucocorticoids",
+      "temporal artery biopsy"
+    ],
+    "erradas": {
+      "A": "AINE com colchicina trata a pericardite (dia 289), que tem dor torácica pleurítica e atrito, não cefaleia.",
+      "B": "Cefepime em 1 hora é a regra da neutropenia febril (dia 261), e aqui os neutrófilos estão normais.",
+      "C": "Esperar a biópsia expõe a paciente à perda visual, que pode ser permanente."
+    },
+    "macete": {
+      "frase": "Na arterite temporal, *o corticoide não espera a biópsia*",
+      "apoio": "No toca-discos, o disco do gigante toca primeiro e o extintor de corticoide entra antes da tesoura da biópsia. O que se protege é a visão.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix com arterite de células gigantes (dia 219), neutropenia febril (dia 261) e pericardite aguda (dia 289), mais um intruso. Cefaleia nova, dor na mandíbula ao mastigar e VHS de 96 aos 72 anos.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Reumatologia",
+      "#Rheumatology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "VHS alta e dor ao mastigar: o que fazer já?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

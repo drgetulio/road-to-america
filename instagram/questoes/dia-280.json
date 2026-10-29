@@ -1,0 +1,104 @@
+{
+  "dia": 280,
+  "data": "2027-08-08",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do X que o pai não passa: Agamaglobulinemia de Bruton (dia 8), Distrofia muscular de Duchenne (dia 73), Síndrome de Wiskott-Aldrich (dia 197)",
+  "conceito": "X-linked inheritance remix: Bruton agammaglobulinemia + Duchenne muscular dystrophy + Wiskott-Aldrich syndrome",
+  "personagem": null,
+  "gancho_data": "Dia dos Pais (segundo domingo de agosto, 8/8/2027): herança ligada ao X.",
+  "remix_de": [
+    8,
+    73,
+    197
+  ],
+  "explicacao_em": "2027-08-09",
+  "tom": null,
+  "gancho": "Pai dá *o time e o Y*. E o X do filho?",
+  "gancho_apoio": "Remix especial de Dia dos Pais com três doenças ligadas ao X e um intruso.",
+  "imagem": {
+    "arquivo": "dia-280.png",
+    "cena": "Sala de Dia dos Pais com um toca-discos e três discos com ícones (uma portinha de escola fechada, um halter pequeno, uma plaquinha minúscula ao lado de uma folha que coça), um quarto disco de outra cor afastado, uma camisa de futebol listrada na cadeira e uma caixa de presente com laço.",
+    "foco": "50% 35%",
+    "alt": "Pai dá o time e o Y. E o X do filho?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-280-macete.png",
+    "cena": "Callback: só o disco da plaquinha minúscula com a folha que coça gira, cercado de notas musicais em forma de orelha (otite); os outros dois discos ligados ao X ficam nas capas, amarrados com a mesma fitinha (mesma família), e o disco intruso fica longe, sem fita.",
+    "foco": "50% 45%",
+    "alt": "Plaqueta pequena, eczema e infecção: Wiskott-Aldrich"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has eczema, recurrent otitis media, and petechiae. Platelet count is 38,000/mm3 with small platelets. Serum IgM is low and IgE is high. His father and paternal grandfather are healthy; a maternal uncle died in childhood from bleeding.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Bruton agammaglobulinemia",
+        "quiz": "Bruton",
+        "dia": 8
+      },
+      "B": {
+        "texto": "Hyper-IgE syndrome",
+        "quiz": "Hiper-IgE (Job)"
+      },
+      "C": {
+        "texto": "Duchenne muscular dystrophy",
+        "quiz": "Duchenne",
+        "dia": 73
+      },
+      "D": {
+        "texto": "Wiskott-Aldrich syndrome",
+        "quiz": "Wiskott-Aldrich",
+        "dia": 197
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Plaqueta pequena, eczema e infecção: *Wiskott-Aldrich*",
+    "certa": [
+      "Eczema, infecções de repetição e *plaquetopenia com plaquetas pequenas* num menino formam a tríade da *Wiskott-Aldrich syndrome* (gene *WAS*, ligado ao X). O tio materno afetado e o pai saudável contam a história da herança *X-linked recessive*: a mãe é portadora, e o pai passa o Y para o filho, nunca o X."
+    ],
+    "termos": [
+      "Wiskott-Aldrich syndrome",
+      "WAS gene",
+      "X-linked recessive",
+      "microthrombocytopenia"
+    ],
+    "erradas": {
+      "A": "Bruton (dia 8) também é ligada ao X, mas não dá eczema nem plaquetopenia, e todas as imunoglobulinas caem.",
+      "B": "Hiper-IgE (Job) tem eczema e IgE alta, mas a forma clássica é autossômica dominante (STAT3), com abscessos frios e plaquetas normais.",
+      "C": "Duchenne (dia 73) é ligada ao X, mas causa fraqueza muscular proximal e sinal de Gowers, não sangramento."
+    },
+    "macete": {
+      "frase": "Pai passa *o sobrenome, o time e o Y*; o X do menino vem da mãe",
+      "apoio": "No toca-discos do Dia dos Pais, três discos são da mesma família ligada ao X. O que toca hoje é o da plaqueta pequena, da pele que coça e da otite que volta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix especial de Dia dos Pais com três doenças ligadas ao X: Bruton (dia 8), Duchenne (dia 73) e Wiskott-Aldrich (dia 197), mais um intruso. Menino de 2 anos com eczema, otites e petéquias. Qual disco toca hoje?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Genetica",
+      "#Immunology",
+      "#DiaDosPais",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Eczema, otite e petéquias: qual disco?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 21,
+  "data": "2026-11-22",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), Síndrome de Goodpasture (dia 15), Resistência do MRSA (dia 19)",
+  "conceito": "Remix: Chlamydia trachomatis + Goodpasture syndrome + MRSA resistance",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    1,
+    15,
+    19
+  ],
+  "explicacao_em": "2026-11-23",
+  "tom": null,
+  "gancho": "*Remix*: o hóspede, a pasta de dente e a fechadura trocada",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-021.png",
+    "cena": "O toca-discos vermelho e três discos com ícones no rótulo: uma malinha de viagem, um tubo de pasta de dente e um cadeado. Um quarto disco misterioso espia de uma capa lisa, e a agulha paira no ar.",
+    "foco": "50% 35%",
+    "alt": "Remix: o hóspede, a pasta de dente e a fechadura trocada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-021-macete.png",
+    "cena": "Callback do toca-discos: a agulha pousa no disco do cadeado, que gira soltando notas verdes, com uma chave dourada que não encaixa pendurada ao lado. A malinha, a pasta de dente e o disco intruso ficam de lado com o símbolo vermelho de pausa.",
+    "alt": "A fechadura continua trocada"
+  },
+  "questao": {
+    "vinheta": "On Sunday, a student mixes four flashcards from three earlier topics: an intracellular cause of urethritis, a pulmonary-renal syndrome and a resistant staphylococcus.",
+    "pergunta": "Which flashcard is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "MRSA: mecA encodes PBP2a with low beta-lactam affinity",
+        "quiz": "MRSA: PBP2a",
+        "dia": 19
+      },
+      "B": {
+        "texto": "Chlamydia: the reticulate body is the infectious form",
+        "quiz": "Reticulado infecta",
+        "dia": 1
+      },
+      "C": {
+        "texto": "Anti-GBM disease: granular immunofluorescence",
+        "quiz": "Anti-MBG granular",
+        "dia": 15
+      },
+      "D": {
+        "texto": "MRSA: clavulanate restores oxacillin activity",
+        "quiz": "Clavulanato no MRSA"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "A fechadura continua trocada",
+    "certa": [
+      "No MRSA (dia 19), o gene mecA codifica a PBP2a, uma proteína ligadora de penicilina com baixa afinidade pelos betalactâmicos, e a parede continua sendo montada. É a única frase certa, e se você errou, volte ao dia 19 e refaça antes do próximo remix."
+    ],
+    "termos": [
+      "PBP2a",
+      "elementary body",
+      "linear immunofluorescence",
+      "clavulanate"
+    ],
+    "erradas": {
+      "B": "Dia 1: quem infecta é o corpo elementar, pequeno e resistente fora da célula; o reticulado se replica dentro da inclusão.",
+      "C": "Dia 15: na doença antimembrana basal a imunofluorescência é linear, e o padrão granular sugere imunocomplexos, como no lúpus.",
+      "D": "Intruso: o clavulanato inibe a betalactamase, mas o MRSA resiste pela PBP2a, então ele não ajuda."
+    },
+    "macete": {
+      "frase": "E de Entra, pasta de dente em linha reta e fechadura trocada: três imagens, três dias, um domingo.",
+      "apoio": "Pegadinha de prova: O NBME troca as formas da clamídia e os padrões de imunofluorescência; ensaie os pares elementar e reticulado, linear e granular.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo: dias 1, 15 e 19, mais um intruso. Antes de responder, tente lembrar a imagem de cada dia.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RevisaoEspacada",
+      "#SpacedRepetition",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: só um cartão está certo. Qual?"
+  },
+  "exemplo": false
+}

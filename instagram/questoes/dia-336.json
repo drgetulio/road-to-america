@@ -1,0 +1,106 @@
+{
+  "dia": 336,
+  "data": "2027-10-03",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Hepatite E (dia 281), Gangrena gasosa (dia 309), Giardíase (dia 330)",
+  "conceito": "Remix: Hepatitis E + Clostridium perfringens alpha toxin + Giardia lamblia",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    281,
+    309,
+    330
+  ],
+  "explicacao_em": "2027-10-04",
+  "tom": null,
+  "gancho": "Três discos de água suja: *qual tocou na gravidez?*",
+  "gancho_apoio": "Remix com hepatite E, gangrena gasosa e giardíase. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-336.png",
+    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (um fígado com uma gota de água, bolhas de gás numa bexiga de festa, uma pera com dois olhinhos) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "foco": "50% 35%",
+    "alt": "Três discos de água suja: qual tocou na gravidez?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-336-macete.png",
+    "cena": "Callback: o disco do fígado com a gota de água toca e brilha; ao lado, um balde de poço e um chocalho de bebê com um cone vermelho de alerta, enquanto o Macrô aponta para o disco certo.",
+    "foco": "50% 45%",
+    "alt": "Gestante, água contaminada e hepatite fulminante: HEV"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman who is 31 weeks pregnant develops nausea, jaundice, and confusion 5 weeks after drinking untreated well water while traveling. She received two doses of hepatitis A vaccine in childhood. ALT is 2,850 U/L, INR is 2.4, and hemoglobin is normal. HBsAg is negative.",
+    "pergunta": "Which pathogen is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Giardia lamblia",
+        "quiz": "Giardia",
+        "dia": 330
+      },
+      "B": {
+        "texto": "Hepatitis A virus",
+        "quiz": "Hepatite A"
+      },
+      "C": {
+        "texto": "Hepatitis E virus",
+        "quiz": "Hepatite E",
+        "dia": 281
+      },
+      "D": {
+        "texto": "Clostridium perfringens",
+        "quiz": "C. perfringens",
+        "dia": 309
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Gestante, água contaminada e hepatite fulminante: *HEV*",
+    "certa": [
+      "Hepatite aguda grave (ALT altíssima, INR alto e encefalopatia) no terceiro trimestre depois de água contaminada é a assinatura do *hepatitis E virus*: vírus RNA de transmissão *fecal-oral*, que na gestação pode evoluir para *fulminant hepatic failure* com mortalidade alta. A vacina da hepatite A afasta o HAV, e a hemoglobina normal afasta hemólise."
+    ],
+    "termos": [
+      "hepatitis E virus",
+      "fecal-oral",
+      "fulminant hepatic failure",
+      "pregnancy"
+    ],
+    "erradas": {
+      "A": "Giardia (dia 330) dá diarreia gordurosa e distensão depois de água de riacho, sem icterícia nem insuficiência hepática.",
+      "B": "Hepatite A também vem da água, mas ela foi vacinada e o HAV não tem a mortalidade típica da gestação.",
+      "D": "C. perfringens (dia 309) causa gangrena gasosa com crepitação ou hemólise maciça; aqui a hemoglobina está normal."
+    },
+    "macete": {
+      "frase": "*E de Expectante*: a hepatite E é a que pesa na gravidez",
+      "apoio": "No toca-discos, o disco do fígado com a gota de água do poço toca alto quando chega o chocalho de bebê. A e E vêm pela água; só a E assusta na gestante.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: hepatite E (dia 281), gangrena gasosa (dia 309) e giardíase (dia 330), mais um intruso. Gestante, água de poço e um fígado que entrou em pane. Qual disco explica o quadro?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Gestante, água de poço, hepatite grave:"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

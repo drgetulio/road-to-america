@@ -1,0 +1,103 @@
+{
+  "dia": 329,
+  "data": "2027-09-26",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Superantígenos (dia 267), Síndrome de hiper-IgM (dia 302), Febre maculosa (dia 323)",
+  "conceito": "Remix: Toxic shock syndrome toxin + Hyper-IgM syndrome + Rickettsia rickettsii",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    267,
+    302,
+    323
+  ],
+  "explicacao_em": "2027-09-27",
+  "tom": null,
+  "gancho": "Três discos, uma trilha no mato: *quem pintou os punhos primeiro?*",
+  "gancho_apoio": "Remix com superantígenos, hiper-IgM e febre maculosa. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-329.png",
+    "cena": "Macrô de DJ diante de um toca-discos com três discos: um com um grampeador, outro com uma camisa de cinco estrelas e outro com um estádio; um quarto disco, de outra cor, com dois grãos de café em dupla, fica separado. Ao fundo, uma trilha no mato.",
+    "foco": "50% 35%",
+    "alt": "Três discos, uma trilha no mato: quem pintou os punhos primeiro?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-329-macete.png",
+    "cena": "Callback: o disco do estádio gira; torcedores em bolinhas vermelhas entram pelos quatro portões dos cantos e enchem a arquibancada até o centro; o Macrô, de fones no pescoço, levanta um apito em forma de cápsula.",
+    "foco": "50% 45%",
+    "alt": "Carrapato e exantema centrípeto: Rickettsia rickettsii"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman has had fever, headache, and myalgias for 5 days. She went hiking in Tennessee 9 days ago and removed a tick from her leg. On day 3, a rash appeared on her wrists and ankles; it now involves the palms, soles, and trunk and is petechial. Platelets are 76,000/mm3.",
+    "pergunta": "Which is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Toxic shock syndrome toxin-1",
+        "quiz": "TSST-1",
+        "dia": 267
+      },
+      "B": {
+        "texto": "CD40 ligand deficiency",
+        "quiz": "Falta de CD40L",
+        "dia": 302
+      },
+      "C": {
+        "texto": "Neisseria meningitidis",
+        "quiz": "Meningococo"
+      },
+      "D": {
+        "texto": "Rickettsia rickettsii",
+        "quiz": "R. rickettsii",
+        "dia": 323
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Carrapato e exantema centrípeto: *Rickettsia rickettsii*",
+    "certa": [
+      "Picada de carrapato, febre e cefaleia por dias e exantema que começa em punhos e tornozelos, vai para o tronco e pega palmas e plantas é *Rocky Mountain spotted fever*. A *Rickettsia rickettsii* infecta o endotélio, causa vasculite com petéquias e consome plaquetas. O tratamento é *doxycycline* já na suspeita, sem esperar a sorologia."
+    ],
+    "termos": [
+      "Rocky Mountain spotted fever",
+      "Rickettsia rickettsii",
+      "centripetal petechial rash",
+      "doxycycline"
+    ],
+    "erradas": {
+      "A": "A *TSST-1* (dia 267) causa eritrodermia difusa tipo queimadura de sol desde o início, que descama depois, sem picada de carrapato.",
+      "B": "A *deficiência de CD40L* (dia 302) é uma imunodeficiência da infância com IgM alta, e não um quadro febril agudo em adulta saudável.",
+      "C": "A *meningococcemia* evolui em horas, com petéquias e púrpura sem predileção pelos punhos, e não tem a história de carrapato."
+    },
+    "macete": {
+      "frase": "*A torcida da Rickettsia entra pelos portões dos punhos e tornozelos*",
+      "apoio": "É o disco do dia 323: os torcedores de bolinha vermelha entram pelos portões dos cantos e enchem o estádio até o meio. Na febre maculosa, quem dá o apito final é a doxiciclina.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com superantígenos (dia 267), síndrome de hiper-IgM (dia 302) e febre maculosa (dia 323), mais um intruso. Mulher de 26 anos com febre e cefaleia há 5 dias, depois de uma trilha com picada de carrapato, e manchas que começaram nos punhos e tornozelos. Qual disco toca?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Carrapato e manchas nos punhos: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,87 @@
+{
+  "dia": 190,
+  "data": "2027-05-10",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Endocardite em uso de drogas injetáveis",
+  "conceito": "Staphylococcus aureus endocarditis in injection drug use: tricuspid valve, acute course",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-11",
+  "tom": null,
+  "gancho": "Quem bateu na *porta direita* do coração sem pedir licença?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-190.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, observa uma casinha em forma de coração com quatro portas; a porta do lado direito levou uma batida forte e recente, e um pano cobre alguma coisa amontoada na soleira, enquanto bolinhas saem voando em direção a um balão em forma de pulmão.",
+    "foco": "50% 35%",
+    "alt": "Quem bateu na porta direita do coração sem pedir licença?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-190-macete.png",
+    "cena": "O pano é puxado e revela cachos de uva dourados grudados na porta direita da casinha-coração; Macrô aponta para o cacho, e as bolinhas douradas que voaram estão grudadas no balão-pulmão.",
+    "alt": "Aguda, tricúspide e pulmão: S. aureus"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old man who injects drugs has 4 days of high fever and rigors. A new holosystolic murmur is heard along the left lower sternal edge, louder during inspiration. Chest CT shows multiple peripheral cavitating nodules. Blood cultures are pending.",
+    "pergunta": "Which is the most likely causative organism?",
+    "alternativas": {
+      "A": {
+        "texto": "Viridans group streptococci",
+        "quiz": "Estrepto viridans"
+      },
+      "B": {
+        "texto": "Staphylococcus aureus",
+        "quiz": "S. aureus"
+      },
+      "C": {
+        "texto": "Enterococcus faecalis",
+        "quiz": "Enterococo"
+      },
+      "D": {
+        "texto": "Candida albicans",
+        "quiz": "Candida"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Aguda, tricúspide e pulmão: *S. aureus*",
+    "certa": [
+      "Em quem usa drogas injetáveis, a endocardite mais comum é por *Staphylococcus aureus*, com curso agudo (dias) e predileção pela *tricuspid valve*. O sopro de regurgitação tricúspide aumenta na inspiração (sinal de Carvallo), e pedaços da vegetação vão para o pulmão como *septic pulmonary emboli*, os nódulos cavitados."
+    ],
+    "termos": [
+      "Staphylococcus aureus",
+      "tricuspid endocarditis",
+      "septic pulmonary emboli",
+      "Carvallo sign"
+    ],
+    "erradas": {
+      "A": "Os estreptococos viridans causam endocardite subaguda, em semanas, em valva já lesada, muitas vezes após procedimento dentário.",
+      "C": "O enterococo causa endocardite subaguda em idosos, após manipulação urinária ou gastrointestinal.",
+      "D": "A Candida pode aparecer no uso de drogas injetáveis, mas é bem menos comum e costuma ter curso mais arrastado, com vegetações grandes."
+    },
+    "macete": {
+      "frase": "*Staphylo* é cacho de uva e *aureus* é ouro: o *cacho dourado* entra pela veia, chega pela *porta da direita* (tricúspide) e chega rápido. Os pedacinhos que se soltam vão direto ao pulmão, a primeira parada depois do coração direito.",
+      "apoio": "O NBME junta uso de drogas injetáveis, sopro tricúspide que cresce ao inspirar e êmbolos sépticos no pulmão; o tratamento empírico cobre MRSA com vancomicina até sair o antibiograma.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no sistema cardiovascular. Febre alta de poucos dias, sopro novo do lado direito e nódulos no pulmão. Qual micróbio costuma chegar assim, rápido e pela veia?",
+    "palavras_chave": [
+      "injection drug use",
+      "high fever",
+      "holosystolic murmur",
+      "cavitating lung nodules"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Endocardite tricúspide aguda. Qual micróbio?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

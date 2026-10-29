@@ -1,0 +1,105 @@
+{
+  "dia": 245,
+  "data": "2027-07-04",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix Independence Day: Bronquiolite (dia 123), Arterite de células gigantes (dia 219), Cólica renal (dia 240)",
+  "conceito": "Independence Day remix: RSV bronchiolitis + Giant cell arteritis + Suspected kidney stone",
+  "personagem": null,
+  "gancho_data": "Independence Day (4/7): checkpoint da Road to America.",
+  "remix_de": [
+    123,
+    219,
+    240
+  ],
+  "explicacao_em": "2027-07-05",
+  "tom": null,
+  "gancho": "Independence Day: só *um plano* ganha o passaporte",
+  "gancho_apoio": "Três cartões dos últimos meses e um intruso. Qual conduta passa na imigração?",
+  "imagem": {
+    "arquivo": "dia-245.png",
+    "cena": "Toca-discos vermelho e navy com três discos de cores diferentes girando, sobre uma mesa de piquenique com toalha xadrez, e fogos de artifício navy, vermelhos e brancos no céu. Um quarto disco, meio torto, tenta entrar na pilha. Ao fundo, o ônibus da Road to America espera.",
+    "foco": "50% 35%",
+    "alt": "Independence Day: só um plano ganha o passaporte"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-245-macete.png",
+    "cena": "Só um disco toca: dele sai uma pílula de corticoide correndo na frente, enquanto um microscópio vem andando atrás, sem pressa, porque a biópsia pode esperar alguns dias. Os outros três discos param ao lado de uma placa de pare.",
+    "foco": "50% 40%",
+    "alt": "Arterite temporal: corticoide primeiro"
+  },
+  "questao": {
+    "vinheta": "On July 4, a resident reviews four sign-out cards before rounds. Each card carries a management plan, but only one plan follows current US guidelines.",
+    "pergunta": "Which plan is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "RSV bronchiolitis in an infant: scheduled albuterol and oral steroids",
+        "quiz": "RSV: albuterol",
+        "dia": 123
+      },
+      "B": {
+        "texto": "Suspected giant cell arteritis: start prednisone before the temporal artery biopsy",
+        "quiz": "ACG: corticoide já",
+        "dia": 219
+      },
+      "C": {
+        "texto": "Suspected ureteral stone: contrast-enhanced CT as the first imaging test",
+        "quiz": "Cálculo: contraste",
+        "dia": 240
+      },
+      "D": {
+        "texto": "Croup with stridor at rest: chest radiograph before dexamethasone",
+        "quiz": "Crupe: raio X antes"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Arterite temporal: *corticoide primeiro*",
+    "certa": [
+      "Dia 219: na suspeita de *giant cell arteritis* (cefaleia nova, claudicação de mandíbula, VHS alta, idade acima de 50 anos), o corticoide em dose alta começa na hora, para proteger a visão. A *temporal artery biopsy* continua útil por cerca de duas semanas depois do início do tratamento, então não há motivo para esperar por ela."
+    ],
+    "termos": [
+      "giant cell arteritis",
+      "temporal artery biopsy",
+      "noncontrast CT",
+      "supportive care"
+    ],
+    "erradas": {
+      "A": "Dia 123: na *bronchiolitis* o tratamento é de suporte (oxigênio se precisar, hidratação, aspiração nasal); broncodilatador e corticoide de rotina não são recomendados.",
+      "C": "Dia 240: a primeira imagem na suspeita de cálculo no adulto é a *noncontrast CT*; o contraste atrapalha a visualização do cálculo.",
+      "D": "Intruso: no crupe, o diagnóstico é clínico; com estridor em repouso entram dexametasona e epinefrina nebulizada, sem esperar raio X."
+    },
+    "macete": {
+      "frase": "Na arterite, o *corticoide corre na frente* da biópsia",
+      "apoio": "Revisão do Independence Day: pílula na frente, microscópio atrás. Bronquiolite é suporte, cálculo é tomografia sem contraste e crupe é dexametasona sem raio X.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Feriado nos EUA, checkpoint para a gente: três conceitos que já passaram por aqui (dias 123, 219 e 240) e um intruso.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#IndependenceDay",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual plano passa na imigração?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 299,
+  "data": "2027-08-27",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Metotrexato",
+  "conceito": "Methotrexate: inhibits dihydrofolate reductase, leucovorin rescues normal cells",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-28",
+  "tom": null,
+  "gancho": "O forno da padaria travou. *Quem entrega a pizza pronta?*",
+  "gancho_apoio": "Remédio semanal tomado todo dia e uma enzima travada.",
+  "imagem": {
+    "arquivo": "dia-299.png",
+    "cena": "Tia Meia-Vida atrás de um balcão que é meio farmácia, meio padaria; um forno de pão trancado com cadeado vermelho, uma bola de massa crua esperando ao lado, um calendário semanal com só um dia destacado em verde e quatro frascos no balcão.",
+    "foco": "50% 35%",
+    "alt": "O forno da padaria travou. Quem entrega a pizza pronta?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-299-macete.png",
+    "cena": "Callback: um motoboy chega com uma caixa de pizza já assada e entrega as fatias direto a células redondas famintas, que comemoram, passando pelo forno trancado; a massa crua (ácido fólico) continua parada na frente do forno, e a Tia Meia-Vida faz sinal de positivo.",
+    "foco": "50% 45%",
+    "alt": "Leucovorina pula a DHFR e resgata a célula"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old woman has painful mouth ulcers, fatigue, and easy bruising 10 days after she began taking her rheumatoid arthritis medication, methotrexate, once daily instead of once weekly by mistake. Laboratory studies show pancytopenia (hemoglobin 8.9 g/dL, leukocytes 1,800/mm3, platelets 42,000/mm3).",
+    "pergunta": "Which agent is most appropriate because it bypasses the inhibited enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Folic acid",
+        "quiz": "Ácido fólico"
+      },
+      "B": {
+        "texto": "Cyanocobalamin",
+        "quiz": "Cianocobalamina"
+      },
+      "C": {
+        "texto": "Mesna",
+        "quiz": "Mesna"
+      },
+      "D": {
+        "texto": "Leucovorin (folinic acid)",
+        "quiz": "Leucovorina"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Leucovorina *pula a DHFR* e resgata a célula",
+    "certa": [
+      "O *methotrexate* inibe a *dihydrofolate reductase* (DHFR), que transforma di-hidrofolato em tetra-hidrofolato; sem THF, faltam timidina e purinas, e as células que se dividem rápido (medula, mucosa) sofrem. A *leucovorin* (ácido folínico) já é um folato reduzido, entra no ciclo depois da DHFR e resgata as células normais. Por isso é o antídoto, junto com suporte e hidratação."
+    ],
+    "termos": [
+      "methotrexate",
+      "dihydrofolate reductase",
+      "leucovorin rescue",
+      "folinic acid"
+    ],
+    "erradas": {
+      "A": "Ácido fólico precisa da DHFR para virar THF, justamente a enzima bloqueada.",
+      "B": "Cianocobalamina corrige falta de B12, que não é o problema aqui.",
+      "C": "Mesna protege a bexiga da acroleína da ciclofosfamida."
+    },
+    "macete": {
+      "frase": "Leucovorina é *a pizza que já chega pronta*: pula o forno quebrado (DHFR)",
+      "apoio": "Na imagem, o forno da padaria da Tia Meia-Vida está trancado com cadeado (DHFR inibida). O ácido fólico é a massa crua esperando o forno; a leucovorina chega de motoboy já assada. E o metotrexato da artrite é semanal, como o jogo de domingo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Artrite reumatoide, metotrexato tomado todo dia em vez de uma vez por semana, aftas, manchas roxas e pancitopenia. A Tia Meia-Vida separou quatro frascos no balcão. Qual deles contorna a enzima travada?",
+    "palavras_chave": [
+      "rheumatoid arthritis",
+      "dosing error",
+      "mouth ulcers",
+      "pancytopenia"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Metotrexato em excesso: qual é o antídoto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -253,8 +253,10 @@ As autoavaliações oficiais (CBSSA no Step 1, CCSSA no Step 2 CK) que os alunos
 "Meu progresso" são o caminho mais rápido para um padrão com base empírica, muito antes
 de haver 30 reprovações oficiais. `calibrarDesfechos()` junta cada escore NBME em
 standard-paced ao `θ` EAP do aluno com as respostas dadas até a data da autoavaliação e
-ajusta, por mínimos quadrados, `escore = a + b θ + erro` (`ajustarEscore()`, com
-`var_a`, `var_b` e `cov_ab`). `corteLigadoNbme()` acha o `θ` em que o escore previsto
+ajusta `escore = a + b θ + erro` (`ajustarEscore()`, com `var_a`, `var_b` e `cov_ab`).
+O mesmo aluno costuma lançar várias autoavaliações, e os escores dele são
+correlacionados; por isso o ajuste conta alunos, não escores (ver "Escores repetidos do
+mesmo aluno", abaixo). `corteLigadoNbme()` acha o `θ` em que o escore previsto
 atinge o padrão de aprovação (`LIGACAO_NBME.limiar`: 196 no Step 1, o padrão de três
 dígitos desde 26/01/2022; 218 no Step 2 CK, desde 01/07/2025; conferir em usmle.org a
 cada ciclo):
@@ -274,11 +276,46 @@ com θ ~ N(0,3; 1), 100 itens, escore = 200 + 15 θ + N(0; 8²)), o coeficiente 
 de 13,7 em vez de 15, a média do corte ligado ficou em -0,30 para o verdadeiro -0,27, e
 o intervalo de 90% do corte cobriu o valor verdadeiro em 88% das réplicas.
 
+**Escores repetidos do mesmo aluno (rodada 4).** Até a rodada 3, cada escore entrava
+como uma observação independente, e o mínimo era de 30 escores: 10 alunos com 3
+autoavaliações cada já liberavam a ligação, com um erro-padrão pequeno demais. Agora:
+
+- cada aluno pesa 1 no ajuste (mínimos quadrados ponderados, peso `1/n_i` em cada um dos
+  `n_i` escores do aluno `i`); sem repetição, é o ajuste de um escore por aluno;
+- `var_a`, `var_b` e `cov_ab` vêm do estimador robusto agrupado por aluno (sanduíche
+  `(X'WX)⁻¹ [Σ_i X_i'W_i e_i e_i'W_i X_i] (X'WX)⁻¹`, com a correção
+  `G/(G-1) × (N-1)/(N-2)` para G alunos e N escores), que vale para qualquer correlação
+  entre os escores do mesmo aluno; o método delta usa essa covariância;
+- `sigma` é o desvio de um escore novo de um aluno novo (média, por aluno, do quadrado do
+  resíduo, com G - 2 graus de liberdade), e `tau` e `icc` dizem quanto dele é do aluno
+  (estimativa por momentos, só quando há repetição);
+- o mínimo é de **30 alunos distintos** (`LIGACAO_NBME.min_alunos` e
+  `DESFECHOS_PADRAO.min_alunos`); o número de escores não conta. Um modelo gravado antes
+  desta mudança, sem `n_alunos`, não libera a ligação (`corteLigadoNbme` pede para
+  recalcular).
+
+Por que não um modelo de efeito aleatório (GLS com intercepto do aluno)? O GLS usa também
+a variação do EAP de um aluno entre uma data e outra, que é em boa parte erro de medida;
+com correlação alta entre os escores do mesmo aluno, ele dá peso a essa variação e puxa
+`b` para baixo. Na simulação do teste, o corte ligado pelo GLS saiu em -1,74 logit para o
+verdadeiro -0,27, enquanto a regressão marginal (a reta do escore sobre o EAP de cada data)
+continua sem viés, porque `E[θ | EAP] = EAP` em cada data. Por isso ficou a regressão
+marginal com peso por aluno e erro-padrão agrupado.
+
+Teste "ligação com a NBME: escores repetidos do mesmo aluno agrupados"
+(`tests/psicometria.test.mjs`): 80 réplicas de 45 alunos, cada um com 1 a 6
+autoavaliações, `escore = 200 + 15 θ + u + e` com efeito do aluno `u ~ N(0; 8²)` e
+`e ~ N(0; 4²)` (correlação intraclasse verdadeira de 0,72). O intervalo de 90% do corte
+cobriu o valor verdadeiro em 74 de 80 réplicas (92%) com o agrupamento e em 56 de 80 (70%)
+contando cada escore como independente; o erro-padrão agrupado foi, em média, 1,66 vez o
+ingênuo; a correlação intraclasse estimada ficou em 0,66. O mesmo teste confere que 12
+alunos com 5 escores cada (60 escores) não bastam.
+
 **Ligação linear, não equipercentil.** Com 30 a 100 escores, a ligação equipercentil
 fica instável nas caudas, e o que interessa é um ponto só, o corte. A regressão também
 usa o `θ` de cada aluno na data, e não distribuições marginais de grupos diferentes.
 
-**Quando entra.** A ligação é `suficiente` com pelo menos 30 escores, `b / ep(b) >= 4` e
+**Quando entra.** A ligação é `suficiente` com pelo menos 30 alunos distintos com escore, `b / ep(b) >= 4` e
 `ep(μ_c) <= 0,35` logit. Gravada por `salvarModelo()` em `ligacao_nbme`, ela substitui o
 limiar provisório em `estimarAluno({ ligacaoNbme })`: `c ~ N(μ_c, σ_c²)`, o perfil por
 área, a contribuição de cada área, o percentual esperado do limiar e a escala do
@@ -828,7 +865,8 @@ limite de prova; a resposta trava ao ser confirmada e a explicação aparece em 
 sorteio usa `sortearQuestoes()` estratificado por sistema, com os itens não vistos
 primeiro. Os itens do formulário reservado ainda não feito pelo aluno ficam fora do
 sorteio (seção 17), e pares inimigos (campo `inimigos` do contrato) nunca saem no mesmo
-bloco: o segundo item do par é trocado pelo próximo do pool. Filtros: "não vistas" (sem nenhuma resposta), "erradas" (a tentativa mais
+bloco: o segundo item do par é trocado pelo próximo do pool. Nos formulários fixos e
+personalizados vale o mesmo, para o formulário inteiro (seção 22). Filtros: "não vistas" (sem nenhuma resposta), "erradas" (a tentativa mais
 recente foi errada ou ficou em branco), "marcadas" (marcada na tentativa mais recente) e
 "todas".
 
@@ -1066,3 +1104,18 @@ troca dos itens públicos dos formulários reservados por itens privados equival
 os formulários adicionais para que cada Step tenha pelo menos dois formulários
 reservados além de um banco de prática separado. A ligação com a NBME e o modelo de
 desfechos já estão prontos e entram sozinhos quando a turma tiver dados suficientes.
+
+## 22. Correções da rodada 4 (30/10/2026)
+
+| Achado | O que mudou | Onde |
+|---|---|---|
+| ligação com a NBME contava escores, não alunos: 10 alunos com 3 autoavaliações liberavam a ligação, com erro-padrão pequeno demais | cada aluno pesa 1 no ajuste e a covariância dos coeficientes é robusta agrupada por aluno; mínimo de 30 alunos distintos; modelo antigo sem a contagem de alunos não libera; teste de cobertura com escores repetidos (92% agrupando, 70% contando escores) | seção 6.2; `ajustarEscore`, `corteLigadoNbme`, `LIGACAO_NBME.min_alunos`, `calibracao.js`, tela Calibração |
+| pares inimigos respeitados só no bloco do banco | formulários fixos (partição de A e B) e personalizados nunca juntam um par; gravação com par dentro é recusada; `verificarFormulario` acusa o par; quando um trio de itens que se entregam não cabe em dois formulários, um item sai do B, que continua no formato oficial com blocos de 19 ou 20 | `mapaInimigos`, `paresInimigosEm`, `montarParticao`, `montarFormularioFixo`, `tests/formularios.test.mjs` |
+| pares inimigos incompletos no banco | detecção por TF-IDF (vinheta, conceito e alternativa correta) e por resposta escrita na vinheta do outro item; cada candidato lido e decidido; campo completo nos dois itens | `banco-privado/ferramentas/inimigos.mjs`, `decisoes-inimigos.json` |
+| A puxado para a meta de dificuldade e B com o que sobrava (S1-B com 12% de difíceis) | A e B paralelos na composição de dificuldade e na dificuldade-alvo média; a meta do projeto fica como aviso | `restricoesDoStep`, `montarParticao` |
+| `formularios.json` e `relatorio-banco.md` desatualizados em relação aos lotes | os dois regenerados; teste de integração que recalcula proporções, dificuldade, gabarito, corte e inimigos a partir dos lotes, remonta os formulários e regenera o relatório, e falha se o arquivo gravado divergir | `tests/relatorio-formularios.test.mjs`, `formularios.mjs`, `relatorio.mjs` |
+| cobertura do Step 2 CK medida por expressão regular | marcação explícita `topicos_nucleares` em todos os itens privados do Step 2 CK; o validador conta a marcação, lista as lacunas e deixa a expressão só como auditoria | `validar-banco.mjs`, `topicos-nucleares-step2ck.json`, `CONTRATO-ITEM.md` |
+
+Continua pendente o que depende de gente: revisão médica item a item, painel de juízes
+real, imagens reais licenciadas e itens difíceis novos para chegar à meta de 25%.
+

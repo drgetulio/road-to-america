@@ -1,0 +1,103 @@
+{
+  "dia": 105,
+  "data": "2027-02-14",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Cadeirinha no carro (dia 4), Varizes esofágicas (dia 72), Insolação (dia 100)",
+  "conceito": "Remix: Child car seat + Variceal bleeding + Exertional heat stroke",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    4,
+    72,
+    100
+  ],
+  "explicacao_em": "2027-02-15",
+  "tom": null,
+  "gancho": "Remix pós-Carnaval: só *um* plano passou no VAR",
+  "gancho_apoio": "Três situações já vistas (dias 4, 72 e 100) e um intruso. Qual plano está certo?",
+  "imagem": {
+    "arquivo": "dia-105.png",
+    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma cadeirinha de carro vista de lado, um com um carrinho de bloco soltando vapor e um com uma mangueira de jardim inchada e azulada. Ao lado, uma mesa de som com três controles deslizantes no meio do caminho.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos: cadeirinha de carro, carrinho de bloco fervendo e mangueira inchada; ao lado, mesa de som."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-105-macete.png",
+    "cena": "Callback: na mesa de som, cada controle chega à posição certa: ao lado do carrinho de bloco, uma banheira de gelo na frente de uma ambulância que espera; ao lado da cadeirinha, ela virada para trás; ao lado da mangueira, uma xuxinha vermelha amarrando o vazamento, o registro fechado e um escudinho de comprimido de guarda.",
+    "foco": "50% 40%",
+    "alt": "Mesa de som com os controles certos: banheira de gelo antes da ambulância, cadeirinha de costas e mangueira amarrada com xuxinha."
+  },
+  "questao": {
+    "vinheta": "On a hot summer weekend, an emergency physician reviews three plans: cooling for a runner who collapsed with a core temperature of 41°C and confusion; car-seat advice for a 15-month-old going home; and care for a man with cirrhosis vomiting blood, BP 92/60 mm Hg.",
+    "pergunta": "Which plan is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Runner: transport first, then start cooling at the hospital",
+        "quiz": "Transporte antes",
+        "dia": 100
+      },
+      "B": {
+        "texto": "Toddler: turn the seat forward-facing, since he is over 1 year",
+        "quiz": "Virar para a frente",
+        "dia": 4
+      },
+      "C": {
+        "texto": "Cirrhosis: octreotide, ceftriaxone and endoscopy within 12 hours",
+        "quiz": "Octreotida + EDA",
+        "dia": 72
+      },
+      "D": {
+        "texto": "Runner: acetaminophen to lower the hypothalamic set point",
+        "quiz": "Paracetamol"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Varizes sangrando: *vasoativo, antibiótico e endoscopia*",
+    "certa": [
+      "No cirrótico com hemorragia varicosa, a conduta é começar um vasoativo (octreotide), dar antibiótico profilático (ceftriaxona) e fazer endoscopia com ligadura elástica em até 12 horas, depois de estabilizar. A transfusão é restritiva: só quando a hemoglobina cai abaixo de 7 g/dL. O antibiótico reduz infecção, ressangramento e morte."
+    ],
+    "termos": [
+      "variceal hemorrhage",
+      "octreotide",
+      "band ligation",
+      "cold-water immersion",
+      "rear-facing car seat"
+    ],
+    "erradas": {
+      "A": "Dia 100: na insolação por esforço, esfria primeiro, com imersão em água fria, e transporta depois.",
+      "B": "Dia 4: a cadeirinha fica de costas até atingir o limite de peso ou altura do fabricante; o aniversário de 1 ano não é critério.",
+      "D": "Intruso: na insolação o termostato do hipotálamo está normal, e antitérmico não esfria."
+    },
+    "macete": {
+      "frase": "Varizes: *OCE*, Octreotida, Ceftriaxona e Elástico em até 12 h",
+      "apoio": "Na mesa de som do remix, os três controles ficam na posição certa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo depois do Carnaval: um corredor no calor, uma criança na cadeirinha e um sangramento de varizes. Três planos, só um está certo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#MedicinaDeEmergencia",
+      "#EmergencyMedicine",
+      "#Hepatologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual dos três planos está certo?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

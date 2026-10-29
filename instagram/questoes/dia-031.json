@@ -1,0 +1,95 @@
+{
+  "dia": 31,
+  "data": "2026-12-02",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Síndrome de Brown-Séquard",
+  "conceito": "Brown-Sequard syndrome: ipsilateral weakness and proprioception loss, contralateral pain and temperature loss",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-03",
+  "gancho": "A avenida medular parou pela metade e cada lado reclamou diferente",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma avenida de mão dupla vista de cima, em obras: metade da pista fechada com cones. Caminhões azuis seguem retos na mesma faixa e motos vermelhas cruzam o canteiro logo depois do acesso. A imagem não mostra qual lado foi interditado.",
+    "foco": "50% 35%",
+    "alt": "Uma avenida de mão dupla vista de cima, em obras: metade da pista fechada com cones. Caminhões azuis seguem retos na mesma faixa e motos vermelhas cruzam o canteiro logo depois do acesso.",
+    "arquivo": "dia-031.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da avenida: agora a interdição aparece no lado direito. O caminhão azul da direita está parado no bloqueio e a moto vermelha que entrou pela esquerda e já tinha cruzado para a direita também está parada. Do lado esquerdo, os caminhões seguem livres.",
+    "alt": "Corte do lado direito, dor perdida do lado esquerdo",
+    "arquivo": "dia-031-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man is stabbed in the back. Examination shows weakness, hyperreflexia, and loss of vibration and position sense in the right leg. Pain and temperature sensation are lost in the left leg, starting two segments below the wound. Upper limbs are normal.",
+    "pergunta": "Which lesion best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Left hemisection of the thoracic spinal cord",
+        "quiz": "Left hemisection"
+      },
+      "B": {
+        "texto": "Right hemisection of the thoracic spinal cord",
+        "quiz": "Right hemisection"
+      },
+      "C": {
+        "texto": "Anterior cord syndrome",
+        "quiz": "Anterior cord"
+      },
+      "D": {
+        "texto": "Posterior cord syndrome",
+        "quiz": "Posterior cord"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Corte do lado *direito*, dor perdida do lado *esquerdo*",
+    "certa": [
+      "Na *Brown-Séquard syndrome* (hemissecção da medula), o trato corticoespinhal e a coluna dorsal (*dorsal column-medial lemniscus*) cruzam apenas no bulbo; por isso força, vibração e propriocepção caem do mesmo lado do corte, a direita. O *spinothalamic tract* cruza um ou dois segmentos acima da entrada, e é a perna oposta, a esquerda, que deixa de sentir dor e calor, a partir de um ou dois níveis abaixo do corte."
+    ],
+    "termos": [
+      "Brown-Sequard syndrome",
+      "dorsal column-medial lemniscus",
+      "spinothalamic tract",
+      "lateral corticospinal tract"
+    ],
+    "erradas": {
+      "A": "Uma hemissecção esquerda daria fraqueza e perda de propriocepção na perna esquerda e perda de dor e temperatura na direita, o espelho deste quadro.",
+      "C": "A síndrome medular anterior tira força e dor dos dois lados e poupa vibração e propriocepção, porque a coluna dorsal fica de fora.",
+      "D": "A síndrome medular posterior tira vibração e propriocepção dos dois lados e preserva a força e a dor."
+    },
+    "macete": {
+      "frase": "Caminhão *só cruza no bulbo*, moto *cruza na entrada*",
+      "apoio": "Pegadinha de prova: O NBME gosta de dar só os achados e perguntar o lado da lesão: o lado da fraqueza e da propriocepção é sempre o lado do corte.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um corte de um lado só da medula e duas pernas com queixas opostas. Quem cruza a pista cedo e quem cruza só no bulbo decide a letra.",
+    "palavras_chave": [
+      "stab wound",
+      "hyperreflexia",
+      "vibration and position sense",
+      "pain and temperature"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Neuroanatomia",
+      "#Neuroanatomy",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual lesão explica o quadro?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

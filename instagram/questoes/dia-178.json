@@ -1,0 +1,87 @@
+{
+  "dia": 178,
+  "data": "2027-04-28",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Doença de Parkinson",
+  "conceito": "Parkinson disease: loss of dopaminergic neurons in the substantia nigra pars compacta, Lewy bodies with alpha-synuclein",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-29",
+  "tom": null,
+  "gancho": "A fábrica de chocolate do cérebro *apagou* as luzes",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-178.png",
+    "cena": "Uma fábrica de chocolate escuro em corte, estilo manual de montagem, com esteiras que produzem balinhas e um caminhãozinho de entregas na porta, pronto para levar a carga a um prédio vizinho onde bonequinhos dançam.",
+    "foco": "50% 35%",
+    "alt": "Uma fábrica de chocolate escuro em corte, estilo manual de montagem, com esteiras que produzem balinhas e um caminhãozinho de entregas na porta, pronto para levar a carga a um préd"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-178-macete.png",
+    "cena": "Metade da fábrica está com as luzes apagadas e as paredes desbotadas de marrom para bege; nos cômodos que restam, caixas redondas cor-de-rosa (corpos de Lewy) lotam os corredores. O caminhão sai quase vazio, e no telhado encaixam um tanque de reabastecimento (levodopa).",
+    "alt": "Substância negra pálida e corpos de Lewy"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man has a 2-year history of a resting tremor in his right hand that lessens with movement, slowness when buttoning shirts, and cogwheel rigidity. His symptoms improve markedly with carbidopa-levodopa.",
+    "pergunta": "Which finding is most likely in his substantia nigra pars compacta?",
+    "alternativas": {
+      "A": {
+        "texto": "Neurofibrillary tangles of hyperphosphorylated tau",
+        "quiz": "Emaranhados de tau"
+      },
+      "B": {
+        "texto": "Loss of pigmented neurons with alpha-synuclein Lewy bodies",
+        "quiz": "Corpos de Lewy"
+      },
+      "C": {
+        "texto": "Round argyrophilic tau inclusions (Pick bodies)",
+        "quiz": "Corpos de Pick"
+      },
+      "D": {
+        "texto": "Intranuclear huntingtin aggregates",
+        "quiz": "Huntingtina"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Substância negra pálida e *corpos de Lewy*",
+    "certa": [
+      "Na *Parkinson disease* morrem os neurônios dopaminérgicos pigmentados da *substantia nigra pars compacta*, que fica pálida, e os que sobram têm *Lewy bodies*, inclusões citoplasmáticas eosinofílicas de *alpha-synuclein*. Com menos dopamina no estriado, a via direta (D1) perde força e a indireta (D2) fica sem freio: menos movimento, tremor de repouso e rigidez."
+    ],
+    "termos": [
+      "substantia nigra pars compacta",
+      "Lewy bodies",
+      "alpha-synuclein",
+      "dopaminergic neurons"
+    ],
+    "erradas": {
+      "A": "Emaranhados neurofibrilares de tau hiperfosforilada são marca da doença de Alzheimer, no córtex e no hipocampo.",
+      "C": "Corpos de Pick (tau redonda) são da demência frontotemporal, com atrofia frontal e temporal.",
+      "D": "Agregados de huntingtina, por expansão CAG, são da doença de Huntington, com perda no núcleo caudado e coreia."
+    },
+    "macete": {
+      "frase": "A *substância negra* é a fábrica de chocolate do movimento: quando os funcionários (neurônios) vão embora, as paredes ficam pálidas e sobram caixas de *alfa-sinucleína* empilhadas no corredor (corpos de Lewy).",
+      "apoio": "O NBME cobra a localização (pars compacta), a proteína (alfa-sinucleína) e o efeito nos núcleos da base, e pode trocar por parkinsonismo de antipsicótico ou por MPTP.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na fábrica de chocolate do cérebro. Tremor de repouso, lentidão, rigidez em roda denteada e ótima resposta à levodopa. O que o patologista vai ver na substância negra?",
+    "palavras_chave": [
+      "resting tremor",
+      "bradykinesia",
+      "cogwheel rigidity",
+      "levodopa response"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Tremor de repouso. O que há na substância negra?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

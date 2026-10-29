@@ -1,0 +1,96 @@
+{
+  "dia": 314,
+  "data": "2027-09-11",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Internação psiquiátrica involuntária",
+  "conceito": "Involuntary psychiatric hold: imminent danger to self or others, or grave disability",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-12",
+  "tom": null,
+  "gancho": "Autonomia de um lado, segurança do outro: *quem segura a balança?*",
+  "gancho_apoio": "No Sábado Sem Viés, a lei define quando o cuidado pode vir antes do sim.",
+  "imagem": {
+    "arquivo": "dia-314.png",
+    "cena": "Uma balança de tribunal desenhada como placa de trânsito, em navy e branco: num prato, uma chave de casa dourada; no outro, um capacete de segurança amarelo. Ao lado, uma ampulheta pequena. Cena neutra e respeitosa, sem pessoas.",
+    "foco": "50% 35%",
+    "alt": "Autonomia de um lado, segurança do outro: quem segura a balança?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-314-macete.png",
+    "cena": "Callback: a balança pende para o lado do capacete; a ampulheta corre com pouca areia (um prazo curto); a chave dourada está guardada numa caixinha aberta com um laço verde, à espera de ser devolvida.",
+    "foco": "50% 45%",
+    "alt": "Perigo iminente ou grave incapacidade: hold involuntário"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man with schizophrenia stopped his medication 1 month ago. Police bring him to the emergency department after finding him walking along a highway at night. He says his body is made of metal and cannot be hurt. He has not eaten for 3 days. He refuses admission.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Discharge him with outpatient follow-up",
+        "quiz": "Alta com retorno"
+      },
+      "B": {
+        "texto": "Obtain a court order before further evaluation",
+        "quiz": "Ordem judicial antes"
+      },
+      "C": {
+        "texto": "Ask his sister to sign a voluntary admission for him",
+        "quiz": "Irmã assina por ele"
+      },
+      "D": {
+        "texto": "Place him on an emergency involuntary hold",
+        "quiz": "Hold involuntário"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Perigo iminente ou grave incapacidade: *hold involuntário*",
+    "certa": [
+      "A internação involuntária de emergência é permitida quando um transtorno mental causa perigo iminente para si ou para outros, ou *grave disability* (incapacidade de garantir comida, abrigo e segurança). Ele andava numa rodovia à noite acreditando ser indestrutível e não come há três dias, o que preenche os dois critérios. O *emergency involuntary hold* (em geral de 72 horas, conforme o estado) permite avaliar e tratar enquanto se busca a decisão judicial, se for preciso prolongar."
+    ],
+    "termos": [
+      "involuntary psychiatric hold",
+      "imminent danger",
+      "grave disability",
+      "decision-making capacity"
+    ],
+    "erradas": {
+      "A": "Dar alta com psicose ativa e risco iminente seria inseguro; a recusa não basta quando a capacidade de decidir está comprometida.",
+      "B": "A ordem judicial vem depois, para prolongar a internação; o hold de emergência não espera o juiz.",
+      "C": "Um familiar não pode transformar a internação em voluntária assinando por um adulto; o caminho legal é o hold involuntário."
+    },
+    "macete": {
+      "frase": "*Perigo para si, para os outros ou incapaz de se cuidar*: o hold é um pare temporário",
+      "apoio": "Na imagem, a balança em forma de placa de trânsito pende para o capacete da segurança por um tempo marcado na ampulheta. A chave da autonomia fica guardada numa caixa, pronta para ser devolvida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 34 anos com esquizofrenia, sem medicação há 1 mês, encontrado à noite andando numa rodovia, acreditando que nada pode feri-lo e sem comer há 3 dias. Ele recusa a internação. Qual é o próximo passo?",
+    "palavras_chave": [
+      "schizophrenia",
+      "stopped medication",
+      "walking on a highway",
+      "refuses admission"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Etica",
+      "#Psiquiatria"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Psicose com risco iminente e recusa: e aí?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

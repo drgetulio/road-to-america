@@ -1,0 +1,100 @@
+{
+  "dia": 334,
+  "data": "2027-10-01",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Tamoxifeno",
+  "conceito": "Tamoxifen: SERM, antagonist in breast, agonist in endometrium, raises VTE risk",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Início do Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-02",
+  "tom": "acolhedor",
+  "gancho": "Uma chave que *tranca uma porta e abre outra*",
+  "gancho_apoio": "Outubro Rosa. Um remédio que age de jeitos diferentes em cada tecido.",
+  "imagem": {
+    "arquivo": "dia-334.png",
+    "cena": "Tia Meia-Vida no balcão da farmácia segura uma única chave dourada diante de duas portas: uma com laço rosa e outra com um vaso de planta; tom calmo e acolhedor.",
+    "foco": "50% 35%",
+    "alt": "Uma chave que tranca uma porta e abre outra"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-334-macete.png",
+    "cena": "Callback: a mesma chave tranca a porta do laço rosa, com um cadeado verde, e abre a outra porta, de onde brotam folhas; ao lado, um pequeno nó vermelho de lã sinaliza o risco de trombose.",
+    "foco": "50% 45%",
+    "alt": "Tamoxifeno: SERM que bloqueia a mama e estimula o endométrio"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old woman with estrogen receptor-positive breast cancer has taken a daily oral adjuvant drug for 2 years. She now has painless vaginal bleeding, and transvaginal ultrasound shows a thickened endometrium. Six months ago, she was treated for a deep vein thrombosis.",
+    "pergunta": "Which mechanism best describes this drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of aromatase in peripheral tissue",
+        "quiz": "Inibe aromatase"
+      },
+      "B": {
+        "texto": "ER antagonist in breast, agonist in endometrium",
+        "quiz": "Mama não, útero sim"
+      },
+      "C": {
+        "texto": "ER antagonist in breast and uterus, agonist in bone",
+        "quiz": "Poupa útero"
+      },
+      "D": {
+        "texto": "ER degradation in all tissues",
+        "quiz": "Degrada o receptor"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Tamoxifeno: *SERM* que bloqueia a mama e estimula o endométrio",
+    "certa": [
+      "O tamoxifeno é um *selective estrogen receptor modulator* (SERM): bloqueia o receptor de estrogênio na mama e o ativa no endométrio e no osso. Por isso, o sangramento uterino com endométrio espesso pede investigação (hiperplasia ou *endometrial cancer*), e a trombose venosa é um efeito adverso conhecido (*VTE risk*)."
+    ],
+    "termos": [
+      "tamoxifen",
+      "selective estrogen receptor modulator",
+      "endometrial hyperplasia",
+      "venous thromboembolism"
+    ],
+    "erradas": {
+      "A": "Inibidores da aromatase (anastrozol, letrozol) reduzem estrogênio sem estimular endométrio e causam perda óssea e artralgia.",
+      "C": "Esse perfil é o do raloxifeno: antagonista na mama e no útero, agonista no osso, sem estímulo endometrial, embora também aumente TEV.",
+      "D": "O fulvestranto degrada o receptor em todos os tecidos e é injetável mensal, não um comprimido diário."
+    },
+    "macete": {
+      "frase": "*Os três Ts do tamoxifeno*: tranca a mama, toca o útero, trombose no caminho",
+      "apoio": "Tia Meia-Vida mostra a mesma chave diante de duas portas: na da mama, ela tranca; na do útero, ela abre. Sangramento e perna inchada são os dois avisos para procurar o médico.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa. Uma mulher em tratamento adjuvante para câncer de mama com receptor de estrogênio positivo passa a ter sangramento vaginal e já teve uma trombose. Como age o remédio que ela usa?",
+    "palavras_chave": [
+      "ER-positive breast cancer",
+      "adjuvant therapy",
+      "vaginal bleeding",
+      "prior DVT"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#OutubroRosa",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Como age o remédio dela no receptor?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

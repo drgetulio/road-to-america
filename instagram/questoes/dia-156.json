@@ -1,0 +1,87 @@
+{
+  "dia": 156,
+  "data": "2027-04-06",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Peritonite bacteriana espontânea",
+  "conceito": "Spontaneous bacterial peritonitis: ascitic neutrophils 250 or more, ceftriaxone plus albumin",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-07",
+  "tom": null,
+  "gancho": "Caixa d'água com febre: o que a punção vai mostrar?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-156.png",
+    "cena": "Uma caixa d'água de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado. Na beira da estrada, a placa verde com três saídas.",
+    "foco": "50% 35%",
+    "alt": "Uma caixa d'água de casa de interior em cima de um morrinho, com um termômetro espetado na tampa e um tubinho de coleta vazio ao lado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-156-macete.png",
+    "cena": "A caixa d'água ganha uma torneirinha que enche o tubo, e no palco ao lado uma dupla sertaneja de frascos (um de antibiótico e um de albumina) canta junta de violão. A primeira saída da placa acende verde.",
+    "alt": "Passou de 250, é peritonite espontânea"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with alcohol-related cirrhosis and ascites has 2 days of low-grade fever, diffuse mild abdominal tenderness, and new confusion. Paracentesis shows 410 neutrophils/µL, total protein 0.9 g/dL, glucose 110 mg/dL, and LDH below the serum upper limit of normal. Gram stain shows no organisms.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Spontaneous bacterial peritonitis",
+        "quiz": "PBE"
+      },
+      "B": {
+        "texto": "Secondary bacterial peritonitis",
+        "quiz": "Perit. secundária"
+      },
+      "C": {
+        "texto": "Tuberculous peritonitis",
+        "quiz": "Perit. tuberculosa"
+      },
+      "D": {
+        "texto": "Uncomplicated cirrhotic ascites",
+        "quiz": "Ascite não infectada"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Passou de *250*, é peritonite espontânea",
+    "certa": [
+      "Na cirrose com ascite, *ascitic fluid neutrophils* (PMN) de 250/µL ou mais, sem fonte cirúrgica, fecham o diagnóstico de *spontaneous bacterial peritonitis*, mesmo com Gram negativo. O tratamento começa logo: *ceftriaxone* (ou cefotaxima) com *albumin* IV, 1,5 g/kg no dia 1 e 1 g/kg no dia 3, que reduz a lesão renal e a mortalidade."
+    ],
+    "termos": [
+      "spontaneous bacterial peritonitis",
+      "ascitic PMN count",
+      "ceftriaxone",
+      "albumin"
+    ],
+    "erradas": {
+      "B": "A peritonite secundária (perfuração ou abscesso) costuma ter dois de três critérios de Runyon (proteína acima de 1 g/dL, glicose abaixo de 50 mg/dL, LDH acima do limite sérico) e flora mista.",
+      "C": "A peritonite tuberculosa tem predomínio de linfócitos, evolui em semanas e, sem cirrose, tem SAAG abaixo de 1,1 g/dL.",
+      "D": "Ascite sem infecção tem menos de 250 neutrófilos/µL; com 410 há infecção."
+    },
+    "macete": {
+      "frase": "*250* é a senha da caixa d'água: passou disso, chama a dupla sertaneja *Ceftriaxona e Albumina*, que só se apresenta junta.",
+      "apoio": "O NBME pede paracentese diagnóstica em todo cirrótico com ascite que interna ou piora (febre, dor, confusão, lesão renal) e testa o número 250 e a albumina junto com o antibiótico.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça. Cirrótico com ascite, febre baixa e confusão nova. A punção já saiu: olhe os neutrófilos, a proteína, a glicose e o LDH antes de escolher.",
+    "palavras_chave": [
+      "cirrhosis",
+      "ascites",
+      "fever and confusion",
+      "paracentesis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Cirrose, febre e 410 PMN na ascite. Qual é?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 90,
+  "data": "2027-01-30",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Análise por intenção de tratar",
+  "conceito": "Intention-to-treat analysis keeps patients in their randomized groups and preserves randomization",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-31",
+  "gancho": "Largou, trocou ou ficou: *em que time cada paciente conta*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O Viés, fantasminha de lençol com lupa, espia de trás de uma tabela 2x2 na beira de um campo de futebol. Jogadores de camisa azul e vermelha andam pelo campo; alguns azuis estão sentados no banco e um troca de camisa no túnel.",
+    "foco": "50% 35%",
+    "alt": "Largou, trocou ou ficou: em que time cada paciente conta?",
+    "arquivo": "dia-090.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do estádio: um juiz em forma de prancheta conta cada jogador pela cor da camisa sorteada no começo, inclusive os do banco e o que trocou de camisa. O portão do estádio está fechado, e o Viés fica do lado de fora, espiando pela grade com a lupa.",
+    "alt": "Intention-to-treat protege o sorteio",
+    "arquivo": "dia-090-macete.png"
+  },
+  "questao": {
+    "vinheta": "In a randomized trial of a new antihypertensive drug versus placebo, 18% of patients assigned to the drug stop it because of side effects, and some placebo patients obtain the drug outside the study. Investigators analyze all patients in their originally randomized groups.",
+    "pergunta": "What is the main advantage of this approach?",
+    "alternativas": {
+      "A": {
+        "texto": "It maximizes the estimated effect",
+        "quiz": "Bigger effect"
+      },
+      "B": {
+        "texto": "It preserves randomization",
+        "quiz": "Keeps randomization"
+      },
+      "C": {
+        "texto": "It eliminates the need for blinding",
+        "quiz": "No blinding needed"
+      },
+      "D": {
+        "texto": "It reduces the required sample size",
+        "quiz": "Smaller sample"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Intention-to-treat* protege o sorteio",
+    "certa": [
+      "Na *intention-to-treat analysis*, cada paciente conta no grupo em que caiu no sorteio, tome ou não o remédio, e assim os grupos continuam comparáveis, como a *randomization* deixou, sem que o abandono ligado a efeito adverso ou gravidade crie *selection bias*. O preço é uma estimativa conservadora, porque abandono e troca puxam o efeito para perto de zero. A *per-protocol analysis* mostra o efeito em quem seguiu o tratamento, mas perde essa proteção."
+    ],
+    "termos": [
+      "intention-to-treat analysis",
+      "randomization",
+      "per-protocol analysis",
+      "selection bias"
+    ],
+    "erradas": {
+      "A": "A análise por intenção de tratar tende a subestimar o efeito, porque mistura quem não tomou o remédio no grupo tratado.",
+      "C": "O cegamento protege contra outros vieses (de aferição e de desempenho) e continua necessário.",
+      "D": "Ela não reduz a amostra necessária; como dilui o efeito, pode até pedir uma amostra maior."
+    },
+    "macete": {
+      "frase": "*Escalou, contou*: o sorteio fica protegido",
+      "apoio": "Pegadinha de prova: O NBME pergunta qual análise preserva a randomização (intention-to-treat) e qual superestima o efeito em quem aderiu (per-protocol); em estudos de não inferioridade, as duas são apresentadas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um ensaio clínico em que parte do grupo do remédio largou o tratamento e parte do placebo arrumou o remédio por fora. A análise manteve todo mundo no grupo sorteado. Qual é a vantagem disso?",
+    "palavras_chave": [
+      "randomized trial",
+      "placebo",
+      "side effects",
+      "analysis plan"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é a vantagem dessa análise?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

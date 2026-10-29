@@ -1,0 +1,105 @@
+{
+  "dia": 238,
+  "data": "2027-06-27",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Malária e hipnozoítos (dia 120), Doença do enxerto contra o hospedeiro (dia 211), E. coli êntero-hemorrágica (dia 232)",
+  "conceito": "Remix: Plasmodium vivax and ovale + Graft-versus-host disease + EHEC O157",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    120,
+    211,
+    232
+  ],
+  "explicacao_em": "2027-06-28",
+  "tom": null,
+  "gancho": "Domingo de revisão: *qual faixa* explica o rim parado?",
+  "gancho_apoio": "Malária, GVHD e E. coli O157 no mesmo toca-discos. Só um mecanismo fecha o caso.",
+  "imagem": {
+    "arquivo": "dia-238.png",
+    "cena": "O toca-discos do Remix de Domingo com três discos: um com um mosquito e um fígado dormindo de touca, um com um ônibus de torcida e um com bandeirinhas de festa junina e um hambúrguer. A agulha paira indecisa.",
+    "foco": "50% 35%",
+    "alt": "Domingo de revisão: qual faixa explica o rim parado?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-238-macete.png",
+    "cena": "Callback: a agulha pousa no disco da festa junina; dele sai uma bolha de som com o bacilinho de chapéu de palha jogando confete vermelho em peneirinhas redondas, e hemácias se partindo como peças de quebra-cabeça. Os outros discos voltam para a capa.",
+    "foco": "50% 45%",
+    "alt": "Diarreia com sangue e rim parado: toxina Shiga"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old girl had bloody diarrhea for 3 days after a farm visit. One week later she is pale, has petechiae, and is passing little urine. Hemoglobin is 7.8 g/dL, platelets 42,000/mm3, and creatinine 2.3 mg/dL. The smear shows schistocytes. She has no history of travel or transplant.",
+    "pergunta": "Which mechanism best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Toxin that inactivates the 60S ribosomal subunit in endothelial cells",
+        "quiz": "Toxina no 60S",
+        "dia": 232
+      },
+      "B": {
+        "texto": "Donor T cells attacking host gut epithelium",
+        "quiz": "T do doador",
+        "dia": 211
+      },
+      "C": {
+        "texto": "Dormant liver forms that reactivate and invade red cells",
+        "quiz": "Hipnozoíto",
+        "dia": 120
+      },
+      "D": {
+        "texto": "Autoantibodies against ADAMTS13",
+        "quiz": "Anti-ADAMTS13"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Diarreia com sangue e rim parado: *toxina Shiga*",
+    "certa": [
+      "Dia 232: depois de diarreia com sangue (contato com animais de fazenda ou carne malpassada), anemia hemolítica com esquizócitos, plaquetas baixas e lesão renal aguda formam a *hemolytic uremic syndrome*. A *Shiga-like toxin* da EHEC O157:H7 inativa a subunidade *60S* do ribossomo nas células endoteliais do glomérulo; o endotélio lesado forma microtrombos que fragmentam as hemácias e consomem plaquetas."
+    ],
+    "termos": [
+      "hemolytic uremic syndrome",
+      "Shiga-like toxin (60S)",
+      "schistocytes",
+      "EHEC O157:H7"
+    ],
+    "erradas": {
+      "B": "Dia 211: a GVHD precisa de linfócitos T de um doador, e ela nunca foi transplantada.",
+      "C": "Dia 120: hipnozoítos são do P. vivax e do P. ovale e causam recaídas de febre depois de viagem; ela não viajou e não tem febre cíclica.",
+      "D": "Anticorpo contra ADAMTS13 é a púrpura trombocitopênica trombótica, mais comum em adultos, com sintomas neurológicos e sem diarreia com sangue antes."
+    },
+    "macete": {
+      "frase": "*O157 não come sorbitol, mas come o rim*",
+      "apoio": "No toca-discos, o disco do dia 232 toca a festa junina: o bacilinho de chapéu de palha jogando confete nos filtros do Seu Néfron. O disco da GVHD só toca com doador, e o da malária, o do hóspede dormindo no hotel fígado, só depois de viagem.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma criança com diarreia com sangue na semana passada e, agora, palidez, petéquias, pouca urina e esquizócitos no sangue. Três conceitos das últimas semanas (dias 120, 211 e 232) e um intruso disputam a resposta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Microbiology",
+      "#Nefrologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Diarreia com sangue e rim parado: qual faixa?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

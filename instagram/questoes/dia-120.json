@@ -1,0 +1,96 @@
+{
+  "dia": 120,
+  "data": "2027-03-01",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Malária e hipnozoítos",
+  "conceito": "Plasmodium vivax and ovale: liver hypnozoites require primaquine to prevent relapse",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-02",
+  "tom": null,
+  "gancho": "Hotel fígado: tem *hóspede escondido* no quarto dos fundos",
+  "gancho_apoio": "Febre a cada 48 horas depois da Amazônia, cloroquina feita. O que falta?",
+  "imagem": {
+    "arquivo": "dia-120.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, olha para o outro lado da rua, onde há um pequeno hotel em forma de fígado. Um mosquito simpático faz check-in na recepção, e no andar de cima uma janela está apagada, com um aviso de porta pendurado na maçaneta, sem nada escrito.",
+    "foco": "50% 35%",
+    "alt": "Macrô olha um hotel em forma de fígado; um mosquito faz check-in e uma janela do andar de cima está apagada."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-120-macete.png",
+    "cena": "Callback: no saguão do hotel fígado, um aspirador em forma de comprimido limpa o salão (a cloroquina). No andar de cima, um carrinho de camareira em forma de cápsula bate à porta do quarto escondido para o check-out. Na recepção, uma prancheta com um sinal verde de conferido.",
+    "foco": "50% 40%",
+    "alt": "Aspirador em forma de comprimido limpa o saguão; um carrinho em forma de cápsula bate à porta do quarto escondido."
+  },
+  "questao": {
+    "vinheta": "A 30-year-old engineer returns from 6 months of work in the Amazon region with fever every 48 hours. A blood smear shows enlarged red cells with Schüffner stippling. He is treated with chloroquine, and the fever resolves. G6PD activity is normal.",
+    "pergunta": "Which additional drug acts on the parasite stage responsible for later relapses?",
+    "alternativas": {
+      "A": {
+        "texto": "Primaquine",
+        "quiz": "Primaquina"
+      },
+      "B": {
+        "texto": "Atovaquone-proguanil",
+        "quiz": "Atovaquona-proguanil"
+      },
+      "C": {
+        "texto": "Artemether-lumefantrine",
+        "quiz": "Artemeter-lumefant."
+      },
+      "D": {
+        "texto": "Mefloquine",
+        "quiz": "Mefloquina"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Vivax e ovale: *primaquina* contra o hipnozoíto",
+    "certa": [
+      "Febre a cada 48 horas e hemácias grandes com pontilhado de Schüffner indicam Plasmodium vivax, a espécie mais comum no Brasil. Vivax e ovale deixam hipnozoítos, formas dormentes no fígado que acordam meses depois e causam recaída. A cloroquina limpa só o sangue; a cura radical exige primaquina ou tafenoquina, sempre depois de confirmar G6PD normal, pelo risco de hemólise."
+    ],
+    "termos": [
+      "Plasmodium vivax",
+      "hypnozoites",
+      "primaquine",
+      "G6PD deficiency"
+    ],
+    "erradas": {
+      "B": "Atovaquona-proguanil age no sangue e no fígado em desenvolvimento, por isso serve de profilaxia, mas não elimina o hipnozoíto dormente.",
+      "C": "Artemeter-lumefantrina limpa as formas do sangue muito rápido, mas não age no hipnozoíto.",
+      "D": "Mefloquina também age só nas formas do sangue e é usada em profilaxia, sem efeito no hipnozoíto."
+    },
+    "macete": {
+      "frase": "Cloroquina arruma o *salão*; primaquina faz o *check-out* do quarto",
+      "apoio": "Na imagem, o Macrô vê o hotel fígado com uma janela apagada e um aviso de não perturbe na porta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de segunda: um engenheiro volta da Amazônia com febre em dias alternados e melhora com cloroquina. O tratamento acabou?",
+    "palavras_chave": [
+      "Amazon travel",
+      "fever every 48 hours",
+      "Schuffner stippling",
+      "chloroquine"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Malaria"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Vivax tratado: o que evita a recaída?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,102 @@
+{
+  "dia": 98,
+  "data": "2027-02-07",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Uretrite e epididimite no homem jovem (dia 1), SCID por deficiência de ADA (dia 71), Neisseria meningitidis (dia 92)",
+  "conceito": "Remix: Chlamydia trachomatis + ADA-deficient SCID + Neisseria meningitidis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    1,
+    71,
+    92
+  ],
+  "explicacao_em": "2027-02-08",
+  "tom": null,
+  "gancho": "Remix: qual peça travou a *fábrica* de linfócitos?",
+  "gancho_apoio": "Três conceitos já vistos (dias 1, 71 e 92) e um intruso. Só um explica o quadro.",
+  "imagem": {
+    "arquivo": "dia-098.png",
+    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma casinha redonda de janela acesa, um com uma pequena fábrica de chaminé parada e um com duas bactérias em forma de feijão jogando confete vermelho. Uma caixa de discos fica ao lado.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos: casinha de janela acesa, fábrica de chaminé parada e dupla de feijões com confete."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-098-macete.png",
+    "cena": "Callback: dentro da fábrica, sacos de lixo iguais (dATP) estão enfiados nas engrenagens da máquina de tijolos, e a esteira que produz linfócitos redondinhos parou. Na porta, o caminhão de lixo segue quebrado, e uma caixa de ferramentas aberta traz uma peça nova e uma mudinha de planta (as células-tronco do transplante).",
+    "foco": "50% 40%",
+    "alt": "Sacos de lixo entopem a máquina de tijolos e a esteira de linfócitos para; caminhão de lixo quebrado na porta e caixa de ferramentas com peça nova e muda de planta."
+  },
+  "questao": {
+    "vinheta": "A 7-month-old girl has had recurrent oral thrush, chronic diarrhea and poor weight gain and is now hospitalized with Pneumocystis pneumonia. No lymph nodes are palpable, and the chest radiograph shows no thymic shadow. Blood counts show profound lymphopenia, with very low T, B and NK cells.",
+    "pergunta": "Which mechanism best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Obligate intracellular replication as reticulate bodies",
+        "quiz": "Corpo reticulado",
+        "dia": 1
+      },
+      "B": {
+        "texto": "Toxic dATP accumulation in lymphocytes",
+        "quiz": "dATP tóxico",
+        "dia": 71
+      },
+      "C": {
+        "texto": "Lipooligosaccharide-triggered cytokine release",
+        "quiz": "LOS e citocinas",
+        "dia": 92
+      },
+      "D": {
+        "texto": "Absent CD40 ligand on helper T cells",
+        "quiz": "Falta de CD40L"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "SCID por falta de ADA: *dATP* envenena o linfócito",
+    "certa": [
+      "Infecções oportunistas nos primeiros meses, sem timo e sem linfonodos, com T, B e NK muito baixos, descrevem a imunodeficiência combinada grave por deficiência de adenosina desaminase (ADA-deficient SCID). Sem ADA, acumula dATP, que inibe a ribonucleotídeo redutase e trava a síntese de DNA dos linfócitos, que se dividem muito. O tratamento é transplante de células-tronco, reposição enzimática ou terapia gênica."
+    ],
+    "termos": [
+      "adenosine deaminase",
+      "SCID",
+      "dATP",
+      "ribonucleotide reductase"
+    ],
+    "erradas": {
+      "A": "Dia 1: o corpo reticulado é a forma que se replica da Chlamydia trachomatis, causa de uretrite e conjuntivite, não de falta de linfócitos.",
+      "C": "Dia 92: o LOS da Neisseria meningitidis causa choque e púrpura numa infecção aguda, sem linfopenia congênita.",
+      "D": "Intruso: a falta de CD40L é a síndrome de hiper-IgM, com IgM alta e células B presentes no sangue."
+    },
+    "macete": {
+      "frase": "Caminhão de lixo ADA quebrado: os *sacos de dATP* travam a fábrica",
+      "apoio": "Na imagem, os sacos de lixo entopem a máquina de tijolos e a esteira de linfócitos para.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: clamídia, SCID e meningococo. Um bebê de 7 meses sem timo, sem linfonodos e com infecções oportunistas.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Imunologia",
+      "#Immunology",
+      "#Microbiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Sem T, B e NK aos 7 meses: qual mecanismo?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

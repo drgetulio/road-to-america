@@ -1,0 +1,95 @@
+{
+  "dia": 146,
+  "data": "2027-03-27",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Risco relativo e odds ratio",
+  "conceito": "Relative risk comes from cohort studies, odds ratio from case-control studies",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-28",
+  "tom": null,
+  "gancho": "Estudo que olha *pelo retrovisor* calcula o quê?",
+  "gancho_apoio": "O Viés está escondido atrás da tabela 2x2 esperando você escolher a medida errada.",
+  "imagem": {
+    "arquivo": "dia-146.png",
+    "cena": "O Viés, o fantasminha da estatística, espia por trás de uma tabela 2x2 em branco. De um lado passa um trenzinho para a frente; do outro, um carro com um retrovisor enorme.",
+    "foco": "50% 35%",
+    "alt": "Fantasminha Viés atrás de uma tabela 2x2 em branco; de um lado um trem, do outro um carro com retrovisor enorme."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-146-macete.png",
+    "cena": "Callback: o Viés segura o retrovisor do carro, que reflete a tabela 2x2 com as duas diagonais ligadas por um grande X verde. O trem da coorte segue para a frente, ao fundo.",
+    "foco": "50% 40%",
+    "alt": "O Viés segura o retrovisor, que reflete a tabela 2x2 com um X verde nas diagonais; o trem segue ao fundo."
+  },
+  "questao": {
+    "vinheta": "Investigators identify 100 adults with hip fracture and 200 adults without hip fracture. Long-term proton pump inhibitor use is found in 60 of those with fracture and in 50 of those without fracture.",
+    "pergunta": "Which measure of association is appropriate, and what is its value?",
+    "alternativas": {
+      "A": {
+        "texto": "Odds ratio of 4.5",
+        "quiz": "OR = 4,5"
+      },
+      "B": {
+        "texto": "Relative risk of 4.5",
+        "quiz": "RR = 4,5"
+      },
+      "C": {
+        "texto": "Relative risk of 2.4",
+        "quiz": "RR = 2,4"
+      },
+      "D": {
+        "texto": "Odds ratio of 2.4",
+        "quiz": "OR = 2,4"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Caso-controle dá *odds ratio*",
+    "certa": [
+      "O estudo começa pela doença (com e sem fratura) e volta para a exposição, então é caso-controle, e a medida é a odds ratio. Na tabela 2x2: a = 60, b = 50, c = 40, d = 150; OR = ad/bc = (60 x 150)/(50 x 40) = 9.000/2.000 = 4,5. Como foi o pesquisador que escolheu quantos doentes entraram, não há incidência para calcular risco relativo."
+    ],
+    "termos": [
+      "case-control study",
+      "odds ratio",
+      "cohort study",
+      "relative risk"
+    ],
+    "erradas": {
+      "B": "O valor 4,5 está certo, mas é odds; risco relativo exige incidência, que só a coorte mede.",
+      "C": "O 2,4 vem de dividir 60% por 25% (proporções de expostos), o que não é risco relativo nem odds ratio.",
+      "D": "O 2,4 compara proporções de exposição; a odds ratio correta multiplica as diagonais e dá 4,5."
+    },
+    "macete": {
+      "frase": "Coorte anda *de trem para a frente* (RR); caso-controle olha *pelo retrovisor* (OR)",
+      "apoio": "Na imagem, o Viés segura o retrovisor enquanto o trem da coorte segue adiante.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés, estação bioestatística. Uma tabela, quatro números e uma pergunta: que estudo é esse e o que ele calcula?",
+    "palavras_chave": [
+      "hip fracture",
+      "proton pump inhibitors",
+      "study design",
+      "2x2 table"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Bioestatistica",
+      "#Biostatistics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Caso-controle: qual medida e valor?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

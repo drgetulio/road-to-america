@@ -1,0 +1,87 @@
+{
+  "dia": 191,
+  "data": "2027-05-11",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Hemorragia subaracnoide",
+  "conceito": "Thunderclap headache: CT first, lumbar puncture for xanthochromia if CT is negative",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-12",
+  "tom": null,
+  "gancho": "Cefaleia em *trovoada*, tomografia limpa. Pode ir para casa?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-191.png",
+    "cena": "Uma placa verde de rodovia com três saídas sem letras, numa noite de céu limpo; um único raio cai sobre um telhado em forma de cérebro, e ao lado uma máquina fotográfica em forma de rosquinha (o tomógrafo) mostra uma foto em branco.",
+    "foco": "50% 35%",
+    "alt": "Cefaleia em trovoada, tomografia limpa. Pode ir para casa?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-191-macete.png",
+    "cena": "A saída da placa leva a uma pequena fonte de pedra de onde escorre uma água levemente amarelada para dentro de um copo de vidro; a foto em branco do tomógrafo fica presa num varal, e o raio virou só um risco no céu.",
+    "alt": "TC normal depois de 6 horas: punção lombar"
+  },
+  "questao": {
+    "vinheta": "Nine hours ago, while carrying a heavy box, a 44-year-old woman felt an abrupt, severe headache that reached maximal intensity in under a minute. She vomited once. Examination shows neck stiffness and no focal neurologic deficits. Noncontrast head CT shows no abnormalities.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Discharge with oral sumatriptan",
+        "quiz": "Alta com triptano"
+      },
+      "B": {
+        "texto": "Repeat noncontrast head CT in 24 hours",
+        "quiz": "Nova TC em 24 h"
+      },
+      "C": {
+        "texto": "Outpatient brain MRI in 2 weeks",
+        "quiz": "RM em 2 semanas"
+      },
+      "D": {
+        "texto": "Lumbar puncture for xanthochromia",
+        "quiz": "Punção lombar"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "TC normal depois de 6 horas: *punção lombar*",
+    "certa": [
+      "Cefaleia que atinge o máximo em menos de 1 minuto (*thunderclap headache*) é hemorragia subaracnoide até prova em contrário. A TC sem contraste é o primeiro exame; feita depois de 6 horas do início, uma TC normal não exclui o sangramento. O próximo passo é a *lumbar puncture*, buscando *xanthochromia* e hemácias que não diminuem do primeiro ao último tubo."
+    ],
+    "termos": [
+      "thunderclap headache",
+      "subarachnoid hemorrhage",
+      "lumbar puncture",
+      "xanthochromia"
+    ],
+    "erradas": {
+      "A": "Dar alta com triptano trata como enxaqueca uma cefaleia em trovoada com rigidez de nuca, sem excluir sangramento.",
+      "B": "Repetir a TC em 24 horas atrasa o diagnóstico, e a sensibilidade da TC cai com o passar das horas.",
+      "C": "Ressonância ambulatorial em 2 semanas deixa sem diagnóstico um aneurisma que pode sangrar de novo nos primeiros dias."
+    },
+    "macete": {
+      "frase": "Cefaleia em trovoada: *primeiro a foto* (TC sem contraste); se a foto veio limpa, *vá olhar a água* (punção lombar). Xantocromia é a *água amarelada*, sangue que já se desmanchou no líquor.",
+      "apoio": "O NBME mostra TC normal horas depois do início e oferece alta com analgésico; com cefaleia em trovoada, o próximo passo é a punção lombar (alguns protocolos aceitam angiotomografia).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de Terça na neurologia. A pior dor de cabeça da vida chegou em segundos, e a primeira foto veio sem nada. A prova quer o próximo passo, e o relógio importa.",
+    "palavras_chave": [
+      "sudden severe headache",
+      "neck stiffness",
+      "normal head CT",
+      "9 hours"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Trovoada com TC normal. Próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

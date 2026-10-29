@@ -1,0 +1,100 @@
+{
+  "dia": 361,
+  "data": "2027-10-28",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "ITU febril na criança",
+  "conceito": "First febrile UTI in a young child: renal and bladder ultrasound",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-29",
+  "tom": null,
+  "gancho": "Primeira multa do rim: *vistoria antes de processo*",
+  "gancho_apoio": "Bebê com a primeira infecção urinária febril, já melhorando com antibiótico.",
+  "imagem": {
+    "arquivo": "dia-361.png",
+    "cena": "Seu Néfron numa mesa de vistoria, como de órgão de trânsito, analisa um carrinho de brinquedo em forma de rim com uma bandeirinha de termômetro; o garçom de rodízio oferece quatro espetos com ícones: onda sonora, gota de contraste com tubinho, estrela brilhante e calendário de pílulas.",
+    "foco": "50% 35%",
+    "alt": "Primeira multa do rim: vistoria antes de processo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-361-macete.png",
+    "cena": "Callback: o Seu Néfron carimba de verde a ficha da onda sonora e manda o carrinho para a vistoria simples, enquanto os outros três espetos ficam numa prateleira com a etiqueta de depois.",
+    "foco": "50% 45%",
+    "alt": "Primeira ITU febril de 2 a 24 meses: renal and bladder ultrasound"
+  },
+  "questao": {
+    "vinheta": "A 9-month-old girl had fever of 39.5°C and irritability. A catheterized urine sample showed pyuria, and culture grew more than 100,000 CFU/mL of Escherichia coli. She improved within 48 hours on oral cephalexin. This is her first febrile urinary tract infection. Growth and examination are normal.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Renal and bladder ultrasonography",
+        "quiz": "Ultrassom renal"
+      },
+      "B": {
+        "texto": "Voiding cystourethrography",
+        "quiz": "Uretrocistografia"
+      },
+      "C": {
+        "texto": "DMSA renal scan",
+        "quiz": "Cintilografia DMSA"
+      },
+      "D": {
+        "texto": "Daily antibiotic prophylaxis",
+        "quiz": "Profilaxia diária"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Primeira ITU febril de 2 a 24 meses: *renal and bladder ultrasound*",
+    "certa": [
+      "Na primeira *febrile urinary tract infection* entre 2 e 24 meses, a AAP recomenda *renal and bladder ultrasonography* para procurar hidronefrose, cicatriz ou malformação. A *voiding cystourethrography* (VCUG), que procura *vesicoureteral reflux*, fica para quando o ultrassom vem alterado ou depois de uma segunda ITU febril."
+    ],
+    "termos": [
+      "febrile urinary tract infection",
+      "renal and bladder ultrasonography",
+      "voiding cystourethrography",
+      "vesicoureteral reflux"
+    ],
+    "erradas": {
+      "B": "A uretrocistografia exige sonda e radiação; só entra com ultrassom alterado ou ITU febril de repetição.",
+      "C": "A cintilografia com DMSA avalia cicatriz renal e não é exame de rotina depois da primeira ITU.",
+      "D": "Profilaxia diária não é rotina depois da primeira ITU febril: reduz pouco a recorrência e não evita cicatriz."
+    },
+    "macete": {
+      "frase": "*Primeira infração, vistoria; reincidente, processo*",
+      "apoio": "O Seu Néfron é rigoroso, mas justo: na primeira ITU febril, faz só a vistoria do imóvel com ultrassom. A uretrocistografia, que dá mais trabalho, fica para o reincidente ou para a vistoria que achou problema.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bebê de 9 meses, primeira infecção urinária febril, urina colhida por sonda e melhora em 48 horas com cefalexina. Que exame pedir agora?",
+    "palavras_chave": [
+      "9-month-old",
+      "first febrile UTI",
+      "E. coli",
+      "good response to treatment"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Nefrologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "1ª ITU febril aos 9 meses. Próximo passo:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

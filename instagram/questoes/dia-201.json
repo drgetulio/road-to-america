@@ -1,0 +1,87 @@
+{
+  "dia": 201,
+  "data": "2027-05-21",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Hipertermia maligna",
+  "conceito": "Malignant hyperthermia: RYR1 variant, volatile anesthetic or succinylcholine trigger, dantrolene",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-22",
+  "tom": null,
+  "gancho": "Sextou: a cirurgia *esquentou*, e a culpa não é do ar-condicionado",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-201.png",
+    "cena": "Tia Meia-Vida, atrás do balcão, olha espantada para uma caixa d'água em forma de fibra muscular que treme, endurece e solta vapor; o termômetro da parede sobe, e no chão rola uma latinha de gás.",
+    "foco": "50% 35%",
+    "alt": "Sextou: a cirurgia esquentou, e a culpa não é do ar-condicionado"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-201-macete.png",
+    "cena": "Tia Meia-Vida acha a torneira escondida da caixa d'água, emperrada aberta e jorrando bolinhas brilhantes (o cálcio), e a aperta com uma grande chave inglesa laranja; a cascata para, o termômetro da parede desce para o azul, e a latinha de gás vai para a lixeira.",
+    "alt": "Hipertermia maligna: dantroleno fecha o RyR1"
+  },
+  "questao": {
+    "vinheta": "During knee arthroscopy under sevoflurane, a 22-year-old man develops masseter and generalized muscle rigidity, rising end-tidal CO2, and tachycardia. His temperature rises from 37.0°C to 39.8°C (103.6°F) within 30 minutes. Serum potassium is 6.1 mEq/L. A cousin had a similar reaction during surgery.",
+    "pergunta": "The most appropriate drug for this condition acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Blocking calcium release through the ryanodine receptor",
+        "quiz": "Bloqueia o RyR1"
+      },
+      "B": {
+        "texto": "Inhibiting prostaglandin synthesis in the hypothalamus",
+        "quiz": "Inibe prostaglandina"
+      },
+      "C": {
+        "texto": "Blocking central dopamine D2 receptors",
+        "quiz": "Bloqueia D2"
+      },
+      "D": {
+        "texto": "Blocking nicotinic receptors at the motor end plate",
+        "quiz": "Bloqueia nicotínico"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Hipertermia maligna: *dantroleno* fecha o RyR1",
+    "certa": [
+      "Na *malignant hyperthermia*, uma variante do *RYR1* (herança autossômica dominante) deixa o receptor de rianodina do retículo sarcoplasmático liberar cálcio sem controle quando exposto a anestésico inalatório ou succinilcolina. O músculo contrai sem parar, gasta ATP, produz calor, CO2 e lactato e libera potássio. O *dantrolene* se liga ao RyR1 e bloqueia a saída de cálcio."
+    ],
+    "termos": [
+      "malignant hyperthermia",
+      "RYR1",
+      "dantrolene",
+      "end-tidal CO2"
+    ],
+    "erradas": {
+      "B": "Inibir prostaglandina no hipotálamo é o efeito do paracetamol na febre comum; aqui o calor vem do músculo, não do termostato.",
+      "C": "Bloquear D2 é o mecanismo dos antipsicóticos, que causam síndrome neuroléptica maligna em vez de tratá-la.",
+      "D": "Bloquear o receptor nicotínico da placa motora relaxa o músculo esquelético, mas não age no cálcio liberado dentro da fibra, onde está o defeito."
+    },
+    "macete": {
+      "frase": "Na hipertermia maligna, a *torneira do cálcio* (RyR1) emperra aberta com gás anestésico ou succinilcolina. A Tia Meia-Vida chega com a *chave laranja*: *dan-TROLE-no, dá o controle* do cálcio no retículo.",
+      "apoio": "O NBME costuma dar o CO2 expirado subindo como primeiro sinal, depois rigidez, febre e hipercalemia; a conduta é interromper o anestésico na hora e infundir dantroleno. Síndrome neuroléptica maligna tem outro gatilho e evolui em dias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida. No meio de uma cirurgia simples, o músculo endurece, o CO2 sobe e a temperatura dispara. O antídoto tem um mecanismo que a prova adora.",
+    "palavras_chave": [
+      "knee arthroscopy",
+      "sevoflurane",
+      "muscle rigidity",
+      "rising temperature"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Hipertermia maligna. Como age o antídoto?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

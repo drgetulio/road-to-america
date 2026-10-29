@@ -1,0 +1,87 @@
+{
+  "dia": 200,
+  "data": "2027-05-20",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Convulsão febril simples",
+  "conceito": "Simple febrile seizure: no labs, EEG or imaging needed, reassure the family",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-21",
+  "tom": null,
+  "gancho": "Febre, convulsão de 2 minutos e pais *assustados*. E agora?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-200.png",
+    "cena": "O garçom do rodízio chega à mesa de uma família com quatro espetos tampados por tampas prateadas; numa delas aparece a ponta de fios coloridos, noutra a ponta de uma agulha comprida, noutra uma caixinha de comprimidos, e a última solta o vapor de uma xícara de chá; a plaquinha de duas cores está de lado e há confetes de festa pelo dia 200.",
+    "foco": "50% 35%",
+    "alt": "Febre, convulsão de 2 minutos e pais assustados. E agora?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-200-macete.png",
+    "cena": "O garçom vira a plaquinha para o vermelho diante dos espetos dos fios, da agulha e dos comprimidos e serve só a xícara de chá com um cobertorzinho; o termômetro da mesa sorri aliviado.",
+    "alt": "Convulsão febril simples: tranquilizar"
+  },
+  "questao": {
+    "vinheta": "An 18-month-old girl has a 2-minute generalized tonic-clonic seizure at home on the first day of a fever of 39.4°C (103°F). Twenty minutes later she is fully alert and has a runny nose. Vaccinations are up to date. Neurologic examination is normal, with no meningeal signs.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Electroencephalography",
+        "quiz": "EEG"
+      },
+      "B": {
+        "texto": "Lumbar puncture",
+        "quiz": "Punção lombar"
+      },
+      "C": {
+        "texto": "Reassure the parents and treat the fever",
+        "quiz": "Tranquilizar"
+      },
+      "D": {
+        "texto": "Start daily levetiracetam",
+        "quiz": "Levetiracetam"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Convulsão febril simples: *tranquilizar*",
+    "certa": [
+      "A *simple febrile seizure* acontece entre 6 meses e 5 anos, é generalizada, dura menos de 15 minutos, não se repete em 24 horas e a criança volta ao normal. Com exame normal e vacinas em dia, a AAP não indica EEG, imagem, exames de sangue ou punção de rotina. A conduta é tratar a causa da febre e *reassure* a família, explicando o risco de recorrência e o que fazer."
+    ],
+    "termos": [
+      "simple febrile seizure",
+      "reassurance",
+      "meningeal signs",
+      "AAP guideline"
+    ],
+    "erradas": {
+      "A": "O EEG não muda a conduta na convulsão febril simples e não prevê epilepsia.",
+      "B": "A punção lombar fica para sinais meníngeos, vacinação incompleta para Hib e pneumococo ou uso prévio de antibiótico.",
+      "D": "Anticonvulsivante contínuo não é indicado: o risco dos efeitos adversos supera o benefício, e antitérmico não previne a recorrência."
+    },
+    "macete": {
+      "frase": "Convulsão febril simples é *15, 24, 1*: menos de *15* minutos, uma vez em *24* horas, *1* episódio generalizado. No rodízio, o garçom vira a plaquinha para o vermelho: *\"não, obrigado\"* para EEG, punção e remédio diário.",
+      "apoio": "O NBME oferece EEG, imagem ou punção para criança bem e vacinada; a resposta é tranquilizar. Convulsão focal, longa ou repetida em 24 horas é complexa e muda a investigação.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia 200 da Questão de Embarque, obrigado por estudar com a gente! No Rodízio de hoje, uma criança teve uma convulsão no primeiro dia de febre e já está brincando. Qual é a conduta?",
+    "palavras_chave": [
+      "seizure with fever",
+      "18-month-old",
+      "normal neurologic exam",
+      "toddler"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Convulsão febril simples. Próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

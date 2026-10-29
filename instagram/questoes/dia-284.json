@@ -1,0 +1,96 @@
+{
+  "dia": 284,
+  "data": "2027-08-12",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Fibrose cística",
+  "conceito": "Cystic fibrosis: sweat chloride test confirms the diagnosis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-13",
+  "tom": null,
+  "gancho": "O beijo da família *veio salgado*. Qual exame confirma?",
+  "gancho_apoio": "Mama bem, não ganha peso e a triagem neonatal já acendeu a luz amarela.",
+  "imagem": {
+    "arquivo": "dia-284.png",
+    "cena": "Garçom do Rodízio de Quinta com quatro espetos que levam objetos de exame em vez de carne (um saleiro, um tubinho de sangue, um tomógrafo em miniatura e uma placa de laboratório) e a plaquinha verde e vermelha ainda de lado, indecisa.",
+    "foco": "50% 35%",
+    "alt": "O beijo da família veio salgado. Qual exame confirma?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-284-macete.png",
+    "cena": "Callback: o garçom vira a plaquinha para o lado verde diante do saleiro; gotinhas de suor viram cristais de sal brilhando ao lado, e os outros espetos ficam com o lado vermelho.",
+    "foco": "50% 45%",
+    "alt": "Confirmação da fibrose cística: cloreto no suor"
+  },
+  "questao": {
+    "vinheta": "A 4-month-old boy has poor weight gain despite a good appetite, frequent bulky, greasy stools, and a chronic cough. His parents say his skin tastes salty when they kiss him. Newborn screening showed an elevated immunoreactive trypsinogen level.",
+    "pergunta": "Which test is most appropriate to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Fecal elastase",
+        "quiz": "Elastase fecal"
+      },
+      "B": {
+        "texto": "Repeat immunoreactive trypsinogen",
+        "quiz": "Repetir IRT"
+      },
+      "C": {
+        "texto": "Chest CT",
+        "quiz": "TC de tórax"
+      },
+      "D": {
+        "texto": "Sweat chloride test",
+        "quiz": "Cloreto no suor"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Confirmação da fibrose cística: *cloreto no suor*",
+    "certa": [
+      "Má absorção com fezes gordurosas, tosse crônica e pele salgada num lactente com *IRT* alto na triagem neonatal apontam para *cystic fibrosis*. A confirmação é o *sweat chloride test*: cloreto no suor de 60 mmol/L ou mais, com quadro clínico ou triagem positiva. O defeito do *CFTR* impede a reabsorção de cloreto no ducto da glândula sudorípara, e o sal sobra no suor."
+    ],
+    "termos": [
+      "cystic fibrosis",
+      "sweat chloride test",
+      "CFTR",
+      "immunoreactive trypsinogen"
+    ],
+    "erradas": {
+      "A": "Elastase fecal baixa mostra insuficiência pancreática, mas não confirma a causa.",
+      "B": "Repetir o IRT só repete a triagem, e triagem não é diagnóstico.",
+      "C": "TC de tórax mostra dano pulmonar, mas não confirma fibrose cística e expõe o lactente à radiação."
+    },
+    "macete": {
+      "frase": "Na fibrose cística, *quem dá o veredito é o sal*",
+      "apoio": "Na churrascaria do Rodízio de Quinta, o garçom passa vários espetos, mas só vira a plaquinha para o verde diante do saleiro. Cloreto no suor de 60 ou mais confirma.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Lactente de 4 meses que mama bem mas não ganha peso, fezes gordurosas, tosse que não passa e pele salgada no beijo. A triagem neonatal já acendeu a luz amarela. Qual exame confirma?",
+    "palavras_chave": [
+      "poor weight gain",
+      "greasy stools",
+      "salty skin",
+      "newborn screening"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pele salgada e triagem alterada: qual exame?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

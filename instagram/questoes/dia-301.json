@@ -1,0 +1,103 @@
+{
+  "dia": 301,
+  "data": "2027-08-29",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: E. coli êntero-hemorrágica (dia 232), Superantígenos (dia 267), Estreptococos do grupo viridans (dia 295)",
+  "conceito": "Remix: EHEC O157 + Toxic shock syndrome toxin + Viridans streptococci",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    232,
+    267,
+    295
+  ],
+  "explicacao_em": "2027-08-30",
+  "tom": null,
+  "gancho": "Três discos no toca-discos: *qual toxina estragou o churrasco?*",
+  "gancho_apoio": "Remix com EHEC, superantígenos e viridans. Um dos discos é intruso.",
+  "imagem": {
+    "arquivo": "dia-301.png",
+    "cena": "Macrô de DJ, com fones, diante de um toca-discos com três discos lado a lado: um com um bacilinho de chapéu de palha no rótulo (o disco do dia 232), outro com um grampeador e outro com um potinho de calda dourada; um quarto disco, de outra cor, com um interruptor de luz, fica separado. Macrô não sabe qual tocar.",
+    "foco": "50% 35%",
+    "alt": "Três discos no toca-discos: qual toxina estragou o churrasco?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-301-macete.png",
+    "cena": "Callback: só o disco do bacilinho de chapéu de palha gira. Dele sai uma tesourinha vermelha que corta ao meio uma pequena fábrica redonda de duas partes (o ribossomo 60S); ao fundo, um filtro em forma de feijão fica entupido de grãozinhos. O Macrô aponta para o disco certo, com os fones no pescoço.",
+    "foco": "50% 45%",
+    "alt": "Shiga-like toxin: tesoura no 60S, conta no rim"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has had bloody diarrhea for 5 days, beginning 3 days after eating an undercooked hamburger at a family barbecue. He has had no fever. Today he is pale and has decreased urine output. Hemoglobin is 7.6 g/dL, platelets are 41,000/mm3, and creatinine is 1.8 mg/dL. The blood smear shows schistocytes.",
+    "pergunta": "Which mechanism best explains his condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Toxin raising cAMP in enterocytes",
+        "quiz": "cAMP no enterócito"
+      },
+      "B": {
+        "texto": "Toxin linking MHC II to the TCR outside the groove",
+        "quiz": "Superantígeno",
+        "dia": 267
+      },
+      "C": {
+        "texto": "Toxin inactivating the 60S ribosomal subunit",
+        "quiz": "Toxina no 60S",
+        "dia": 232
+      },
+      "D": {
+        "texto": "Dextran-mediated adhesion to fibrin-platelet clots",
+        "quiz": "Dextrana na valva",
+        "dia": 295
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Shiga-like toxin: *tesoura no 60S*, conta no rim",
+    "certa": [
+      "Diarreia com sangue e sem febre depois de carne mal passada, seguida de esquizócitos no sangue periférico, plaquetas baixas e creatinina subindo, é a *hemolytic uremic syndrome* por *EHEC O157:H7*. A *Shiga-like toxin* cliva o rRNA 28S da *subunidade 60S*, para a síntese de proteína do endotélio e lesa sobretudo os capilares do glomérulo. Antibiótico não ajuda e pode aumentar a liberação da toxina."
+    ],
+    "termos": [
+      "EHEC O157:H7",
+      "Shiga-like toxin",
+      "60S ribosomal subunit",
+      "hemolytic uremic syndrome"
+    ],
+    "erradas": {
+      "A": "Toxina que eleva o *cAMP* é a da ETEC (diarreia do viajante) e a da cólera: diarreia aquosa, sem sangue e sem HUS.",
+      "B": "O *superantígeno* (dia 267) causa febre alta, choque e eritrodermia difusa, e não diarreia com sangue seguida de HUS.",
+      "D": "A *dextrana* (dia 295) prende o viridans à valva lesada depois de procedimento dentário e causa endocardite subaguda, não diarreia."
+    },
+    "macete": {
+      "frase": "*Hambúrguer mal passado, tesoura no 60S e rim no carimbo*: é a EHEC",
+      "apoio": "É o disco do dia 232: o bacilinho de chapéu de palha, que recusa o doce de sorbitol, chega de tesoura e corta a fábrica de proteína do endotélio. Quem fica com a conta é o glomérulo, que entope de microtrombos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com E. coli êntero-hemorrágica (dia 232), superantígenos (dia 267) e estreptococos do grupo viridans (dia 295), mais um intruso. Criança com diarreia com sangue depois do hambúrguer do churrasco e, dias depois, pálida e urinando pouco. Qual disco explica o quadro?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Diarreia com sangue e depois HUS: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

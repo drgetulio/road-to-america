@@ -1,0 +1,95 @@
+{
+  "dia": 142,
+  "data": "2027-03-23",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Nódulo pulmonar incidental",
+  "conceito": "Incidental pulmonary nodule: compare with prior imaging first",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-24",
+  "tom": null,
+  "gancho": "Nódulo achado *sem querer* na tomografia: qual saída você pega?",
+  "gancho_apoio": "Uma tomografia de abdome achou algo no pulmão. Antes de correr, um detalhe da história.",
+  "imagem": {
+    "arquivo": "dia-142.png",
+    "cena": "Uma lupa gigante examina uma figurinha redonda colada numa folha solta em forma de pulmão. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+    "foco": "50% 35%",
+    "alt": "Folha em forma de pulmão com uma figurinha redonda sob uma lupa; ao fundo, placa verde de três saídas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-142-macete.png",
+    "cena": "Callback: ao lado do álbum novo, um álbum antigo e amarelado mostra a mesma figurinha redonda, no mesmo lugar e do mesmo tamanho. Um selo verde de aprovado aparece entre os dois.",
+    "foco": "50% 40%",
+    "alt": "Álbum antigo e álbum novo com a mesma figurinha no mesmo lugar; um selo verde de aprovado entre eles."
+  },
+  "questao": {
+    "vinheta": "A 63-year-old man who quit smoking 5 years ago after 30 pack-years undergoes abdominal CT for flank pain. The lung bases show a 9-mm solid nodule in the right lower lobe. He has no respiratory symptoms. He had a chest CT at another hospital 3 years ago.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "PET-CT",
+        "quiz": "PET-CT"
+      },
+      "B": {
+        "texto": "Obtain the prior chest CT for comparison",
+        "quiz": "Comparar TC antiga"
+      },
+      "C": {
+        "texto": "CT-guided biopsy",
+        "quiz": "Biópsia por TC"
+      },
+      "D": {
+        "texto": "Repeat chest CT in 12 months",
+        "quiz": "Nova TC em 12 meses"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Nódulo incidental: *compare* com a imagem antiga",
+    "certa": [
+      "Diante de um nódulo pulmonar achado por acaso, o primeiro passo é procurar exames anteriores. Um nódulo sólido sem crescimento por 2 anos ou mais é considerado benigno e não precisa de seguimento. Se não houver imagem antiga, a conduta segue a Fleischner pelo tamanho e pelo risco: aqui, 9 mm em ex-tabagista pesado levaria a TC em 3 meses, PET-CT ou biópsia."
+    ],
+    "termos": [
+      "incidental pulmonary nodule",
+      "prior imaging",
+      "Fleischner Society",
+      "2-year stability"
+    ],
+    "erradas": {
+      "A": "O PET-CT pode entrar depois, mas não antes de saber se o nódulo já existia e estava estável.",
+      "C": "A biópsia é invasiva e pode ser desnecessária se o nódulo estiver estável há 3 anos.",
+      "D": "Esperar 12 meses é longo demais para um nódulo sólido de 9 mm em paciente de alto risco sem imagem anterior."
+    },
+    "macete": {
+      "frase": "*Abra o álbum antigo* antes de pedir figurinha nova",
+      "apoio": "Na imagem, a mesma figurinha no mesmo lugar, três anos antes, encerra o caso.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: o radiologista achou um nódulo que ninguém procurava. Qual é o primeiro passo?",
+    "palavras_chave": [
+      "former smoker",
+      "solid lung nodule",
+      "incidental finding",
+      "abdominal CT"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pneumologia",
+      "#Pulmonology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Nódulo achado por acaso: qual o 1º passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

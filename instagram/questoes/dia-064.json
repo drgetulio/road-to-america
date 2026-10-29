@@ -1,0 +1,96 @@
+{
+  "dia": 64,
+  "data": "2027-01-04",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Mycobacterium tuberculosis",
+  "conceito": "Mycobacterium tuberculosis: mycolic acid makes it acid-fast, cord factor drives virulence",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-05",
+  "gancho": "O bacilo vermelho que *nenhum banho de álcool* consegue lavar",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Na porta do boteco dos micróbios, o Macrô observa bacilos em forma de bastão vestindo capas de chuva brilhantes. Ao lado, um balde de tinta vermelha e um borrifador. Uma placa de estrada simples aponta para o pulmão.",
+    "foco": "50% 35%",
+    "alt": "O bacilo vermelho que nenhum banho de álcool consegue lavar",
+    "arquivo": "dia-064.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do boteco: um balde de álcool-ácido é jogado nos bacilos, mas a tinta vermelha continua grudada nas capas de cera. Os bacilos saem enfileirados num cordão sinuoso, como bloco de Carnaval, e o Macrô os segura com o guardanapo xadrez.",
+    "alt": "A capa de cera é o ácido micólico",
+    "arquivo": "dia-064-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man has 2 months of productive cough, night sweats, and weight loss. A sputum smear stained with carbolfuchsin shows red rods that remain stained after an acid-alcohol wash.",
+    "pergunta": "Which bacterial component is chiefly responsible for this staining property?",
+    "alternativas": {
+      "A": {
+        "texto": "Teichoic acid",
+        "quiz": "Teichoic acid"
+      },
+      "B": {
+        "texto": "Mycolic acid",
+        "quiz": "Mycolic acid"
+      },
+      "C": {
+        "texto": "Lipopolysaccharide",
+        "quiz": "LPS"
+      },
+      "D": {
+        "texto": "Polysaccharide capsule",
+        "quiz": "Capsule"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A capa de cera é o *ácido micólico*",
+    "certa": [
+      "A parede do *Mycobacterium tuberculosis* tem uma camada grossa de *mycolic acid*, lipídio de cadeia longa que funciona como cera: a carbolfucsina entra com calor (Ziehl-Neelsen) e o álcool-ácido não consegue tirar. Daí o nome *acid-fast*. O mesmo ácido micólico forma o *cord factor* (trehalose dimycolate), que faz os bacilos crescerem em cordões serpentiformes, ativa macrófagos e ajuda a montar o granuloma."
+    ],
+    "termos": [
+      "Mycobacterium tuberculosis",
+      "mycolic acid",
+      "acid-fast",
+      "cord factor"
+    ],
+    "erradas": {
+      "A": "Ácido teicoico é das Gram-positivas e não segura o corante depois do álcool-ácido.",
+      "C": "LPS é a endotoxina da membrana externa das Gram-negativas, e as micobactérias não têm LPS.",
+      "D": "Cápsula de polissacarídeo protege contra fagocitose (pneumococo, por exemplo), mas não explica a álcool-ácido resistência."
+    },
+    "macete": {
+      "frase": "Capa de *cera micólica*, desfile em *cordão*",
+      "apoio": "Pegadinha de prova: O NBME pergunta o mesmo ácido de dois jeitos: a coloração (acid-fast) e a virulência em cordões (cord factor), que inibe a migração de neutrófilos e ativa macrófagos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Tosse há dois meses, suor noturno e um bacilo que não larga a tinta vermelha nem lavado com álcool-ácido. O Macrô quer saber de onde vem tanta teimosia.",
+    "palavras_chave": [
+      "chronic cough",
+      "night sweats",
+      "weight loss",
+      "carbolfuchsin stain"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#BichoDeSegunda",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "O que segura a tinta vermelha?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

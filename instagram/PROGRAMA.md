@@ -5,7 +5,9 @@ Programa de 365 dias de questões de USMLE Step 1 e Step 2 CK no Instagram da Ro
 - Calendário completo: `instagram/calendario.json` (365 dias, um objeto por dia).
 - Banco de conceitos e datas especiais: `instagram/ferramentas/dados-calendario.js`.
 - Gerar de novo: `node instagram/ferramentas/gerar-calendario.js`.
-- Validar: `node instagram/ferramentas/validar-calendario.js` (datas, proporções, unicidade, remix, datas especiais, travessões e comparação com o banco privado).
+- Validar o calendário: `node instagram/ferramentas/validar-calendario.js` (datas, proporções, unicidade, remix, datas especiais, travessões e comparação com o banco privado).
+- Os 365 dias escritos: `instagram/dias/dias-XXX-YYY.json`. Validar o ano inteiro: `node instagram/ferramentas/validar-dias.mjs` (calendário, duplicidade, letras, pistas da resposta, quiz, datas sensíveis, promessas, prompts e `render.mjs --so-conferir` com o banco privado).
+- Programa consolidado: `instagram/programa-365.json`; planilha de produção: `entregas/instagram-365-dias.xlsx`; guia: `entregas/instagram-programa-guia.pdf`.
 
 ## 1. Números do calendário
 
@@ -25,13 +27,13 @@ Nenhum conceito se repete. Cada conceito tem um rótulo em inglês único (`conc
 
 | Dia | Quadro | Step | Conteúdo | Assinatura visual |
 |---|---|---|---|---|
-| Segunda | **Bicho de Segunda** | Step 1 | Microbiologia e imunologia | Macrô na porta de um "boteco dos micróbios", com a placa de estrada do sistema do dia |
-| Terça | **Plantão de Terça** | Step 2 CK | Clínica médica: diagnóstico e próximo passo | Placa verde de rodovia "NEXT STEP, 500 m" com três saídas, uma para cada conduta |
+| Segunda | **Bicho de Segunda** | Step 1 | Microbiologia e imunologia | Macrô na porta de um "boteco dos micróbios", com uma placa de estrada em branco (o sistema do dia entra no template) |
+| Terça | **Plantão de Terça** | Step 2 CK | Clínica médica: diagnóstico e próximo passo | Placa verde de rodovia com três saídas em branco, uma para cada conduta (o "NEXT STEP" entra no template) |
 | Quarta | **Quarta do Porquê** | Step 1 | Mecanismos: patologia, fisiologia, anatomia, bioquímica, genética, histologia | Mito, Seu Néfron ou Capitã Plaqueta explicando a engrenagem em corte, estilo manual de montagem |
-| Quinta | **Rodízio de Quinta** | Step 2 CK | Pediatria, GO, psiquiatria e cirurgia em rodízio, como no internato e na churrascaria | Garçom de rodízio com espetos que são especialidades; a plaquinha verde e vermelha vira "SIM, ESSA CONDUTA" e "NÃO, OBRIGADO" |
+| Quinta | **Rodízio de Quinta** | Step 2 CK | Pediatria, GO, psiquiatria e cirurgia em rodízio, como no internato e na churrascaria | Garçom de rodízio com espetos que são especialidades; a plaquinha verde e vermelha fica de lado na questão e mostra o verde na explicação |
 | Sexta | **Sextou na Farmácia** | Step 1 em 31 sextas, Step 2 CK em 21 | Farmacologia (mecanismo e efeito adverso) e farmacoterapia (escolha do remédio) | Tia Meia-Vida atrás do balcão de uma farmácia de interior, com ampulheta |
 | Sábado | **Sábado Sem Viés** | Step 1 em 22 sábados, Step 2 CK em 30 | Ética, comunicação, segurança do paciente e bioestatística | Viés escondido atrás de uma tabela 2x2, ou uma balança de tribunal desenhada como placa de trânsito |
-| Domingo | **Remix de Domingo** | Step 1 em 39 domingos, Step 2 CK em 13 | Revisão cumulativa de três conceitos já vistos, com o dia original marcado | Toca-discos com três discos rotulados "Dia 8", "Dia 31", "Dia 92" |
+| Domingo | **Remix de Domingo** | Step 1 em 39 domingos, Step 2 CK em 13 | Revisão cumulativa de três conceitos já vistos, com o dia original marcado | Toca-discos com três discos de rótulo ilustrado e um quarto disco intruso; o selo "visto no dia X" entra no slide |
 
 ### Como o espaçamento funciona
 
@@ -42,22 +44,33 @@ Nenhum conceito se repete. Cada conceito tem um rótulo em inglês único (`conc
 
 ## 3. Personagens recorrentes
 
-Seis personagens, sempre com o mesmo desenho. Todos são ilustrações planas (flat vector), traço grosso arredondado, contorno navy, sombra em bloco, sem degradê. Paleta da marca: navy `#0f2747`, vermelho `#b0243a`, amarelo `#f1c232`, verde `#1d8a4b`, branco e papel `#f3f5f2`. Nenhum personagem imita estilo de anime, de estúdio ou de série conhecida.
+Seis personagens, sempre com o mesmo desenho. Ilustração editorial colorida, sombreado limpo de vetor, contorno navy grosso e arredondado. Paleta do site (`assets/css/base.css`): navy `#0f2747`, vermelho `#b0243a`, papel `#f3f5f2`, verde `#1d8a4b` e amarelo `#f1c232`, mais branco. Nenhum personagem imita estilo de anime, de estúdio ou de série conhecida, e nenhum objeto da cena leva texto: crachás, copos, carimbos e placas saem em branco, e as palavras entram no template.
 
-| Personagem | Quem é | Descrição visual fixa (usar igual em todo prompt) | Onde aparece | Bordão |
+| Personagem | Quem é | Descrição visual fixa | Onde aparece | Bordão |
 |---|---|---|---|---|
-| **Macrô** | Macrófago guloso e generoso, "come" o invasor e apresenta o pedaço aos linfócitos como quem mostra a comanda | Bolha arredondada lilás clara com pseudópodes curtos, olhos grandes, guardanapo xadrez vermelho e branco no pescoço, crachá "MHC II" pendurado | Bicho de Segunda, remix de micro e imuno | "Comi, mostrei, avisei." |
-| **Mito** | Mitocôndria cansada de plantão, faz ATP sem parar | Feijão alaranjado com cristas internas aparentes, olheiras, jaleco amassado, copo de café com "ATP" escrito, crachá "PLANTÃO 24 H" | Metabolismo, bioquímica, apoptose, estatinas e metformina | "Sem oxigênio eu não trabalho." |
-| **Seu Néfron** | Rim burocrata que confere tudo antes de liberar | Feijão vinho com gravata navy, óculos de leitura na ponta, carimbo na mão ("REABSORVIDO" em verde, "EXCRETADO" em vermelho), pilha de formulários | Renal, ácido-base, diuréticos, eletrólitos | "Sem carimbo, não sai." |
-| **Capitã Plaqueta** | Agente de trânsito do sangue, organiza a coagulação como um cruzamento | Disco amarelo com colete refletivo verde, apito, quepe navy, cones de trânsito ao lado; os fatores da coagulação são carros numerados | Hematologia, coagulação, anticoagulantes, transfusão | "Parou, colou, coagulou." |
-| **Tia Meia-Vida** | Farmacêutica de balcão de interior, divide tudo pela metade | Ampulheta com braços e óculos de armação vermelha, avental branco com bolso de canetas, coque grisalho; a areia é o remédio que vai embora | Sextou na Farmácia | "Cinco meias-vidas e ninguém lembra mais." |
-| **Viés** | Fantasminha da estatística, distorce resultados quando ninguém está olhando | Lençol branco com bainha em zigue-zague, olhos navy, lupa na mão, sempre meio escondido atrás de uma tabela 2x2 ou de um gráfico | Sábado Sem Viés, Halloween | "Se você não randomizou, eu entrei." |
+| **Macrô** | Macrófago guloso e generoso, "come" o invasor e apresenta o pedaço aos linfócitos como quem mostra a comanda | Bolha arredondada lilás clara com pseudópodes curtos, olhos grandes e simpáticos, guardanapo xadrez vermelho e branco no pescoço, crachá em branco num cordão | Bicho de Segunda, remix de micro e imuno | "Comi, mostrei, avisei." |
+| **Mito** | Mitocôndria cansada de plantão, faz ATP sem parar | Feijão alaranjado com cristas internas aparentes, olheiras, jaleco branco amassado, copo de café sem rótulo, crachá em branco | Metabolismo, bioquímica, apoptose, estatinas e metformina | "Sem oxigênio eu não trabalho." |
+| **Seu Néfron** | Rim burocrata que confere tudo antes de liberar | Feijão vinho com gravata navy, óculos de leitura na ponta do nariz, carimbo na mão, pilha de formulários em branco | Renal, ácido-base, diuréticos, eletrólitos | "Sem carimbo, não sai." |
+| **Capitã Plaqueta** | Agente de trânsito do sangue, organiza a coagulação como um cruzamento | Disco amarelo sorridente com colete refletivo verde, apito, quepe navy, cones de trânsito ao lado; os fatores da coagulação são carrinhos | Hematologia, coagulação, anticoagulantes, transfusão | "Parou, colou, coagulou." |
+| **Tia Meia-Vida** | Farmacêutica de balcão de interior, divide tudo pela metade | Ampulheta simpática com braços, óculos de armação vermelha, avental branco com canetas no bolso, coque grisalho; a areia é o remédio indo embora | Sextou na Farmácia | "Cinco meias-vidas e ninguém lembra mais." |
+| **Viés** | Fantasminha da estatística, distorce resultados quando ninguém está olhando | Lençol branco com bainha em zigue-zague, olhos navy, lupa na mão, sempre meio escondido atrás de uma tabela 2x2 ou de um gráfico em branco | Sábado Sem Viés, Halloween | "Se você não randomizou, eu entrei." |
 
-Regras dos personagens: nenhum deles adoece, sofre ou faz piada com paciente. Eles são o órgão, a célula ou a ideia, e o humor sai da burocracia, do cansaço ou da teimosia deles. O ônibus "Road to America" (navy com faixa verde e amarela) pode levar os seis nos posts de data especial e no dia 365.
+Regras dos personagens: nenhum deles adoece, sofre ou faz piada com paciente. Eles são o órgão, a célula ou a ideia, e o humor sai da burocracia, do cansaço ou da teimosia deles. O ônibus "Road to America" (navy com faixa verde e amarela) leva os seis nos posts de data especial e no dia 365. O garçom do Rodízio de Quinta é um mascote de cabeça redonda, de camisa branca, colete vermelho e gravata-borboleta navy, nunca uma pessoa real.
 
-**Base do prompt de imagem** (acrescentar a cena do dia no final):
+**Descrição fixa em inglês** (entra igual em todo prompt, depois de "Recurring character: Nome,"):
 
-> Ilustração vetorial plana, traço grosso arredondado, contorno navy #0f2747, cores chapadas navy, vermelho #b0243a, amarelo #f1c232, verde #1d8a4b e branco, fundo papel #f3f5f2 com uma placa de estrada simples. Personagem: [descrição fixa da tabela]. Cena: [mnemônico do dia]. Sem texto na imagem, sem logotipos, sem pessoas reais, sem sangue, sem pacientes. Proporção 4:5.
+- Macrô: *a round pale-lilac macrophage blob with short stubby pseudopods, big friendly eyes, a red-and-white checkered napkin tied around the neck and a small blank ID badge on a lanyard*
+- Mito: *a tired orange bean-shaped mitochondrion with visible inner cristae, soft dark under-eye circles, a wrinkled white lab coat, a blank coffee cup in hand and a small blank ID badge*
+- Seu Néfron: *a wine-red kidney-bean character with a navy necktie, reading glasses on the tip of his nose, a rubber stamp in one hand and a neat stack of blank paper forms*
+- Capitã Plaqueta: *a cheerful yellow disc-shaped platelet character wearing a green reflective safety vest, a whistle and a navy cap, with small traffic cones beside her*
+- Tia Meia-Vida: *a friendly hourglass-shaped pharmacist character with arms, red-framed glasses, a white apron with pens in the pocket and a gray hair bun; the sand inside her hourglass body is the medicine slowly draining away*
+- Viés: *a small white bedsheet ghost with a zigzag hem, navy eyes and a magnifying glass, always half hidden behind a blank 2x2 table or chart*
+
+**Base do prompt de imagem** (Higgsfield, modelo Nano Banana Pro, resolução 2k, proporção 4:5). Os 730 prompts de `instagram/dias/` seguem esta ordem, e `ferramentas/normalizar-dias.mjs` mantém o começo e o fim iguais em todos:
+
+> Colorful editorial cartoon illustration, clean vector-like shading, thick rounded navy outlines, Road to America brand palette of navy #0f2747, red #b0243a and white, with small green #1d8a4b and yellow #f1c232 accents, on a flat paper background in #f3f5f2. Recurring character: [nome], [descrição fixa em inglês]. Scene: [cena do dia]. [tom: humor leve ligado ao conceito ou, nas datas sensíveis, calm, gentle and respectful mood, no gags]. Vertical 4:5 composition: main character and key elements in the upper half, the lower third left as a smooth plain floor with no details, top corners kept clear. No text, no letters, no numbers, no logos, no watermark, no real people, no patients, no blood, no gore.
+
+A imagem da questão (dia D) mostra a situação e nunca a resposta. A imagem da explicação (D+1) revela o macete com a mesma cena, como um "antes e depois".
 
 O texto vai sempre no template (Barlow Condensed nos títulos, Barlow no corpo, Overpass Mono nos rótulos de dia e de letra), nunca dentro da imagem gerada.
 
@@ -83,25 +96,28 @@ No dia 1 (02/11/2026) o post tem só a questão. A explicação do dia 365 sai e
 1. Gancho em uma linha, ligado à imagem.
 2. Contexto em duas ou três linhas, sem dar a resposta.
 3. "Comente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima."
-4. Palavras-chave em inglês: três a cinco (ex.: *Bruton tyrosine kinase, X-linked, CD19*).
-5. CTA do dia (ver seção 7).
-6. Assinatura: Dr. Getúlio Bernardo Morato Filho, CRM-DF [número]. Especialidade só com RQE conferido.
-7. Aviso fixo curto: "Conteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras."
-8. Hashtags (5 a 8): #USMLE #USMLEStep1 ou #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia e uma do sistema.
+4. Palavras-chave em inglês, três a cinco, **neutras**: sinais, exames e contexto da vinheta, nunca o nome da resposta (ex. do dia 8: *recurrent otitis media, low immunoglobulins, flow cytometry, primary immunodeficiency*). Ficam em `legenda.palavras_chave` e em `ferramentas/palavras-chave-neutras.json`.
+5. Gabarito de ontem (a partir do dia 2): "Gabarito de ontem (dia N): letra X, resposta" e os termos da resposta, tirados de `explicacao.termos` (ex. do dia 8, no post do dia 9: *X-linked agammaglobulinemia, Bruton tyrosine kinase, CD19, maternal IgG*). Os termos da resposta só aparecem aqui, no D+1.
+6. CTA do dia (ver seção 9).
+7. Assinatura: Dr. Getúlio Bernardo Morato Filho, CRM-DF 13610. Especialidade só com RQE conferido.
+8. Aviso fixo curto: "Conteúdo educacional para a prova. Condutas seguem as diretrizes dos EUA cobradas no USMLE e podem diferir das brasileiras."
+9. Hashtags (5 a 8): #USMLE #USMLEStep1 ou #USMLEStep2CK #MedicinaNosEUA #RoadToAmerica #IMG #QuestaoDoDia e uma do sistema.
 
 **Exemplo completo (dia 8, segunda-feira 09/11/2026, Bicho de Segunda)**
 
-> A 9-month-old boy has had three ear infections and one pneumonia since age 6 months. His tonsils are barely visible and no lymph nodes are palpable. Serum IgG, IgA and IgM are very low, and flow cytometry shows almost no CD19+ cells. Which protein is most likely defective?
+> A 9-month-old boy has had recurrent otitis media and two pneumonias since age 6 months. Tonsils are tiny and no lymph nodes are palpable. Serum IgG, IgA and IgM are markedly decreased. Flow cytometry shows almost no CD19+ cells; T-cell counts are normal. A defect in which protein is most likely?
 >
-> A. Adenosine deaminase · B. Bruton tyrosine kinase · C. CD40 ligand · D. NADPH oxidase
+> A. CD40 ligand · B. Adenosine deaminase · C. Bruton tyrosine kinase · D. NADPH oxidase
 
-Imagem: Macrô diante de uma "escola de linfócitos B" com a porta trancada e a placa "FECHADO: FALTOU A CHAVE BTK"; no canto, um vale-presente de IgG materna "válido até 6 meses". Explicação no dia 9: B. Sem BTK, o pré-B não amadurece, faltam células B e todas as imunoglobulinas. As infecções começam quando a IgG da mãe acaba, por volta dos 6 meses. Mnemônico: "B de Bruton, de BTK, de B cell e de boy" (ligada ao X). A é SCID (faltam também células T), C é hiper-IgM (IgM alta) e D é doença granulomatosa crônica (B e imunoglobulinas normais).
+Capa: "A escola dos linfócitos B está de *portas* fechadas. Por quê?". Imagem da questão (sem texto e sem a resposta): Macrô na porta do boteco dos micróbios mostra o pedaço de um invasor, mas o balcão dos anticorpos está vazio, com as banquetas viradas; em cima do balcão, um presente embrulhado e uma ampulheta quase no fim; no quintal, as bolinhas T brincam normalmente. Legenda do dia 8: contexto sem a resposta e palavras-chave neutras (*recurrent otitis media, low immunoglobulins, flow cytometry, primary immunodeficiency*).
+
+Explicação no dia 9: C. Sem BTK, o pré-B não amadurece, faltam células B e todas as imunoglobulinas. As infecções começam quando a IgG da mãe acaba, por volta dos 6 meses. Imagem do macete: a escolinha das células B de portão trancado, porque a chave dourada sumiu do gancho, e o presente da mãe já aberto e vazio. Mnemônico: "B de Bruton, de BTK, de B cell e de boy" (ligada ao X). A é hiper-IgM (IgM normal ou alta), B é SCID por ADA (faltam também células T) e D é doença granulomatosa crônica (B e imunoglobulinas normais). Legenda do dia 9, no bloco do gabarito: letra C e os termos da resposta (*X-linked agammaglobulinemia, Bruton tyrosine kinase, CD19, maternal IgG*).
 
 ## 5. Formato das questões
 
 - **Original**, escrita do zero a partir do conceito do calendário. Não copiar nem adaptar itens do banco privado de 1000 questões (produto pago), nem de NBME, UWorld, AMBOSS, livros ou outros perfis. O validador confere que nenhum conceito do calendário aparece com texto idêntico no banco privado; ao escrever as vinhetas, faça a mesma conferência (vinheta, alternativas e explicação).
 - **Inglês do USMLE**: vinheta clínica curta (até 60 palavras), pergunta única no fim, uma só resposta certa.
-- **Quatro alternativas (A a D)**, para caber no adesivo de quiz dos stories, que aceita no máximo quatro. Alternativas curtas (até 30 caracteres para o adesivo; no slide pode ter a versão completa).
+- **Quatro alternativas (A a D)**, para caber no adesivo de quiz dos stories, que aceita no máximo quatro. A letra certa fica equilibrada: no ano, 91 dias com A, 92 com B, 91 com C e 91 com D, e cada mês fica entre 7 e 8 de cada letra (`ferramentas/rebalancear-letras.mjs`, conferido por `validar-dias.mjs`). Alternativas curtas (até 30 caracteres para o adesivo; no slide pode ter a versão completa).
 - `tipo_pergunta` define o formato: mecanismo ("which mechanism"), diagnóstico ("most likely diagnosis"), próximo passo ("most appropriate next step"), farmaco ("most appropriate pharmacotherapy" ou "adverse effect"), ética ("most appropriate response"), bioestatística (cálculo simples ou interpretação), imagem mental (comparação visual entre dois ou três conceitos).
 - Números e condutas conferidos na fonte primária (diretriz americana vigente, USPSTF, ACC/AHA, GINA, CDC) antes de postar. Diretrizes mudam: revisar as questões de rastreamento e de conduta a cada trimestre.
 - Sem foto de paciente, de exame de paciente ou de prontuário. Achados de imagem viram descrição no texto ou desenho esquemático próprio.

@@ -1,0 +1,97 @@
+{
+  "dia": 66,
+  "data": "2027-01-06",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Trissomia do 21",
+  "conceito": "Trisomy 21: most cases come from maternal meiotic nondisjunction",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-07",
+  "tom": "acolhedor",
+  "gancho": "Na dança da meiose, um par de cromossomos não se soltou",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um salão de dança com pares de cromossomos em forma de X, simpáticos, dançando de mãos dadas. A música está terminando e quase todos os pares começam a se soltar. Não dá para ver qual par vai continuar junto nem de que lado do salão ele está.",
+    "foco": "50% 35%",
+    "alt": "Na dança da meiose, um par de cromossomos não se soltou",
+    "arquivo": "dia-066.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do salão: a música acabou e os pares se soltaram, menos um, que segue de mãos dadas e entra junto numa célula grande e redonda (o ovócito), ao lado de um banco de espera com um relógio de parede, onde a célula ficou esperando por anos.",
+    "alt": "O par que não se separou veio da meiose I materna",
+    "arquivo": "dia-066-macete.png"
+  },
+  "questao": {
+    "vinheta": "A newborn girl has upslanting palpebral fissures, a single transverse palmar crease, and an atrioventricular septal defect. Karyotype is 47,XX,+21. Both parents have normal karyotypes, and the mother is 41 years old.",
+    "pergunta": "Which event most likely caused this karyotype?",
+    "alternativas": {
+      "A": {
+        "texto": "Nondisjunction in paternal meiosis II",
+        "quiz": "Paternal meiosis II"
+      },
+      "B": {
+        "texto": "Robertsonian translocation from a parent",
+        "quiz": "Robertsonian"
+      },
+      "C": {
+        "texto": "Nondisjunction in maternal meiosis I",
+        "quiz": "Maternal meiosis I"
+      },
+      "D": {
+        "texto": "Mitotic nondisjunction after fertilization",
+        "quiz": "Postzygotic mitosis"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "O par que não se separou veio da *meiose I materna*",
+    "certa": [
+      "Cerca de 95% dos casos de *trisomy 21* são trissomia livre por *meiotic nondisjunction*, e em torno de 90% delas o cromossomo extra vem da mãe, na maioria das vezes na meiose I, quando os homólogos deveriam se separar. O risco sobe com a idade materna, porque o ovócito primário passa décadas parado na prófase I. O cariótipo 47 com pais normais afasta translocação."
+    ],
+    "termos": [
+      "trisomy 21",
+      "meiotic nondisjunction",
+      "advanced maternal age",
+      "Robertsonian translocation"
+    ],
+    "erradas": {
+      "A": "A origem paterna existe, mas é minoria (perto de 5 a 10%); com mãe de 41 anos, a explicação mais provável é materna.",
+      "B": "Na translocação robertsoniana o cariótipo tem 46 cromossomos, com o 21 extra grudado em outro, e muitas vezes um dos pais é portador equilibrado.",
+      "D": "A não disjunção mitótica depois da fecundação causa mosaicismo, com mistura de células normais e trissômicas, em cerca de 2% dos casos."
+    },
+    "macete": {
+      "frase": "Par que *não solta* na *meiose I materna*",
+      "apoio": "Pegadinha de prova: O NBME cobra a diferença pelo número: 47 é não disjunção, 46 com um 21 extra preso a outro cromossomo é translocação robertsoniana, e mistura de linhagens é mosaicismo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje o tom é de respeito: o assunto é a meiose, e cada pessoa com síndrome de Down é muito mais do que um cariótipo. A pergunta é em que etapa e de quem veio o cromossomo extra.",
+    "palavras_chave": [
+      "newborn",
+      "palmar crease",
+      "atrioventricular septal defect",
+      "karyotype"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics",
+      "#QuartaDoPorque",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual evento causou o cariótipo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

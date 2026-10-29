@@ -1,0 +1,96 @@
+{
+  "dia": 106,
+  "data": "2027-02-15",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Streptococcus pneumoniae",
+  "conceito": "Streptococcus pneumoniae: polysaccharide capsule, optochin-sensitive, top cause of community pneumonia",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-16",
+  "tom": null,
+  "gancho": "Macrô tenta pegar a dupla de *capa de chuva* e escorrega",
+  "gancho_apoio": "Escarro cor de ferrugem, lobo inferior consolidado e cocos em pares. Qual teste fecha o bicho?",
+  "imagem": {
+    "arquivo": "dia-106.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, tenta abraçar duas bactérias em forma de gota pontuda, coladas lado a lado e vestidas com uma capa de chuva transparente e lisa. Elas escorregam dos pseudópodes dele como sabonete. No chão, uma poça esverdeada.",
+    "foco": "50% 35%",
+    "alt": "Macrô tenta segurar duas bactérias de capa de chuva lisa, que escorregam como sabonete."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-106-macete.png",
+    "cena": "Callback: a dupla de capa de chuva passa diante da vitrine de uma ótica, onde um disco redondo brilha, e desmaia dramaticamente. Ao lado, um primo verde parecido, sem capa, passa assobiando sem se abalar. O Macrô aproveita e segura a dupla pela capa.",
+    "foco": "50% 40%",
+    "alt": "A dupla de capa de chuva desmaia diante do disco da ótica, e o primo verde passa sem se abalar."
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man has had fever, rigors and a cough productive of rust-colored sputum for 2 days. Chest radiograph shows right lower lobe consolidation. Sputum Gram stain shows lancet-shaped gram-positive cocci in pairs, and blood agar colonies are surrounded by a green zone of partial hemolysis.",
+    "pergunta": "Which additional finding best identifies the most likely organism?",
+    "alternativas": {
+      "A": {
+        "texto": "Positive coagulase test",
+        "quiz": "Coagulase positiva"
+      },
+      "B": {
+        "texto": "Growth in 6.5% sodium chloride",
+        "quiz": "Cresce em NaCl 6,5%"
+      },
+      "C": {
+        "texto": "Growth inhibited by optochin",
+        "quiz": "Sensível à optoquina"
+      },
+      "D": {
+        "texto": "Growth resistant to optochin",
+        "quiz": "Optoquina resistente"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Pneumococo: alfa-hemolítico e *sensível à optoquina*",
+    "certa": [
+      "Diplococos gram-positivos em forma de lança, alfa-hemólise e pneumonia lobar com escarro cor de ferrugem apontam para Streptococcus pneumoniae, a causa mais comum de pneumonia adquirida na comunidade. Entre os alfa-hemolíticos, ele é sensível à optoquina e solúvel em bile, o que o separa do viridans. A cápsula polissacarídica, que atrapalha a fagocitose, é quem faz o estrago e é o alvo das vacinas."
+    ],
+    "termos": [
+      "Streptococcus pneumoniae",
+      "optochin",
+      "alpha-hemolysis",
+      "polysaccharide capsule"
+    ],
+    "erradas": {
+      "A": "Coagulase positiva identifica Staphylococcus aureus, que forma cachos e não pares em lança.",
+      "B": "Crescer em sal 6,5% é do Enterococcus, que costuma ser gama-hemolítico e causa infecção urinária e endocardite.",
+      "D": "Resistência à optoquina é do estreptococo viridans, o primo alfa-hemolítico que mora na boca."
+    },
+    "macete": {
+      "frase": "Optoquina lembra *ótica*: o pneumococo desmaia, o viridans nem liga",
+      "apoio": "Na imagem, a dupla de capa de chuva escorrega dos braços do Macrô; amanhã ela passa diante da ótica.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de segunda: pneumonia lobar, escarro cor de ferrugem e uma dupla que aparece no Gram. Qual teste confirma quem é?",
+    "palavras_chave": [
+      "rust-colored sputum",
+      "lobar consolidation",
+      "lancet-shaped diplococci",
+      "green hemolysis"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Pneumonia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Diplococo em lança, alfa-hemólise: e aí?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

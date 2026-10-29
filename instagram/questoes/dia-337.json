@@ -1,0 +1,100 @@
+{
+  "dia": 337,
+  "data": "2027-10-04",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Encefalite herpética",
+  "conceito": "HSV-1 encephalitis: temporal lobe involvement, CSF PCR confirms",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-05",
+  "tom": null,
+  "gancho": "O vizinho do gânglio *mudou para o andar das memórias*",
+  "gancho_apoio": "Febre, convulsão e lobo temporal aceso. Como confirmar?",
+  "imagem": {
+    "arquivo": "dia-337.png",
+    "cena": "Macrô na porta do boteco dos micróbios olha para um prédio em forma de cérebro onde só uma janela lateral está acesa, com um pequeno vírus redondo fazendo festa lá dentro; ao lado, a mala de mudança vazia.",
+    "foco": "50% 35%",
+    "alt": "O vizinho do gânglio mudou para o andar das memórias"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-337-macete.png",
+    "cena": "Callback: Macrô opera uma fotocopiadora que solta uma pilha enorme de cópias de uma dupla hélice de DNA, e uma seringa de soro com escudo verde já está a caminho do prédio.",
+    "foco": "50% 45%",
+    "alt": "Encefalite herpética: CSF PCR confirma, aciclovir não espera"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old man has 3 days of fever, headache, and personality change, and today had a focal seizure. MRI shows T2 hyperintensity in the left medial temporal lobe. CSF has 110 lymphocytes/mm³, many red blood cells, elevated protein, and normal glucose.",
+    "pergunta": "Which test is most likely to confirm the diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "CSF India ink stain",
+        "quiz": "Tinta da China"
+      },
+      "B": {
+        "texto": "CSF PCR for HSV DNA",
+        "quiz": "PCR para HSV"
+      },
+      "C": {
+        "texto": "CSF VDRL",
+        "quiz": "VDRL no líquor"
+      },
+      "D": {
+        "texto": "CSF Gram stain and culture",
+        "quiz": "Gram e cultura"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Encefalite herpética: *CSF PCR* confirma, aciclovir não espera",
+    "certa": [
+      "Febre, alteração de comportamento, convulsão focal e lesão no lobo temporal medial são a cara da *HSV-1 encephalitis*. O líquor tem linfócitos, hemácias (necrose hemorrágica) e glicose normal. A *CSF PCR for HSV DNA* confirma, com sensibilidade e especificidade acima de 95%, e o *IV acyclovir* começa antes do resultado."
+    ],
+    "termos": [
+      "HSV-1 encephalitis",
+      "temporal lobe",
+      "CSF PCR",
+      "IV acyclovir"
+    ],
+    "erradas": {
+      "A": "Tinta da China busca Cryptococcus, de evolução subaguda no imunossuprimido, sem predileção pelo lobo temporal.",
+      "C": "VDRL no líquor investiga neurossífilis, de evolução lenta, sem convulsão aguda com lesão temporal hemorrágica.",
+      "D": "Gram e cultura servem para meningite bacteriana, com neutrófilos e glicose baixa; o HSV quase nunca cresce em cultura de líquor."
+    },
+    "macete": {
+      "frase": "*PCR é a fotocopiadora* que acha o HSV no líquor",
+      "apoio": "O HSV-1 mora quieto no gânglio trigeminal e um dia sobe para o lobo temporal, o andar das memórias. A PCR pega um pedacinho do DNA dele e tira milhões de cópias até aparecer. Na imagem, o Macrô segura a pilha de cópias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três dias de febre, mudança de comportamento e uma convulsão focal. A ressonância acende o lobo temporal medial, e o líquor tem linfócitos e hemácias. Qual exame confirma?",
+    "palavras_chave": [
+      "fever and headache",
+      "personality change",
+      "focal seizure",
+      "temporal lobe MRI"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Neurologia",
+      "#Neurology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Encefalite com lobo temporal aceso:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

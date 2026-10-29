@@ -1,0 +1,96 @@
+{
+  "dia": 1,
+  "data": "2026-11-02",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Uretrite e epididimite no homem jovem",
+  "conceito": "Chlamydia trachomatis: obligate intracellular, infectious elementary body vs replicating reticulate body",
+  "personagem": "Macrô",
+  "gancho_data": "Estreia do programa e início do Novembro Azul (saúde do homem). Também é Finados: tom leve, sem piada sobre morte.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-03",
+  "tom": "acolhedor",
+  "gancho": "Primeira parada: o *hóspede* que só vive dentro da célula",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-001.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, examina com uma lupa uma lâmina enorme cheia de neutrófilos e nenhuma bactéria à vista. Atrás dele, uma casinha redonda (a célula) tem a janela acesa, sinal de que alguém se hospedou lá dentro. A pista é que o convidado não aparece no Gram.",
+    "foco": "50% 35%",
+    "alt": "Primeira parada: o hóspede que só vive dentro da célula"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-001-macete.png",
+    "cena": "Callback da casinha: agora em corte. Na porta, um visitante pequeno e compacto, de mala na mão, bate para entrar (corpo elementar, infectante). Lá dentro, num quarto redondo (a inclusão), as visitas desfizeram as malas, ficaram grandes e fofas e se dividem em várias (corpos reticulados). Macrô aponta, sereno.",
+    "alt": "O hóspede que só vive dentro da célula"
+  },
+  "questao": {
+    "vinheta": "A 22-year-old man has 10 days of dysuria and a scant watery urethral discharge, plus new right scrotal pain. Gram stain of the discharge shows many neutrophils and no organisms. The organism grows only in cell culture, forming intracytoplasmic inclusions.",
+    "pergunta": "Which is the most likely causal organism?",
+    "alternativas": {
+      "A": {
+        "texto": "Chlamydia trachomatis",
+        "quiz": "C. trachomatis"
+      },
+      "B": {
+        "texto": "Neisseria gonorrhoeae",
+        "quiz": "N. gonorrhoeae"
+      },
+      "C": {
+        "texto": "Escherichia coli",
+        "quiz": "E. coli"
+      },
+      "D": {
+        "texto": "Trichomonas vaginalis",
+        "quiz": "T. vaginalis"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "O hóspede que só vive dentro da célula",
+    "certa": [
+      "Secreção aquosa, muitos neutrófilos sem bactéria visível no Gram e crescimento só em cultura de células, com inclusões no citoplasma, apontam para Chlamydia trachomatis, a causa mais comum de uretrite e de epididimite no homem jovem sexualmente ativo. Ela é intracelular obrigatória e alterna duas formas: o corpo elementar (elementary body), pequeno e infectante, que entra na célula, e o corpo reticulado (reticulate body), que se replica dentro da inclusão. Na prática o diagnóstico é por NAAT e, na epididimite, o CDC indica ceftriaxona em dose única mais doxiciclina por 10 dias."
+    ],
+    "termos": [
+      "Chlamydia trachomatis",
+      "elementary body",
+      "reticulate body",
+      "obligate intracellular",
+      "NAAT"
+    ],
+    "erradas": {
+      "B": "O gonococo costuma dar secreção purulenta abundante, aparece no Gram como diplococo gram-negativo dentro dos neutrófilos e cresce em ágar Thayer-Martin.",
+      "C": "E. coli causa epididimite sobretudo em homens mais velhos ou com alteração urinária, cresce em meio comum e aparece como bacilo gram-negativo.",
+      "D": "Trichomonas é um protozoário flagelado, visto se mexendo no exame a fresco, e não depende de cultura de células."
+    },
+    "macete": {
+      "frase": "E de Entra, R de Replica: o corpo Elementar é a visita que bate na porta da célula; o Reticulado é quem desfaz as malas e se multiplica lá dentro.",
+      "apoio": "Pegadinha de prova: O NBME usa \"neutrófilos sem organismos no Gram\" como pista principal e gosta de perguntar qual das duas formas é a infectante (a elementar).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Estreia da Questão de Embarque, no começo do Novembro Azul, o mês de cuidar da saúde do homem. Hoje também é Finados, e o nosso tom é tranquilo: uma questão por dia, com a explicação no dia seguinte.",
+    "palavras_chave": [
+      "urethritis",
+      "scrotal pain",
+      "Gram stain",
+      "cell culture"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Uretrite e Gram sem bactéria: quem é?"
+  },
+  "exemplo": false
+}

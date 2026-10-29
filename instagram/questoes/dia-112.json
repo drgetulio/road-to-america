@@ -1,0 +1,102 @@
+{
+  "dia": 112,
+  "data": "2027-02-21",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Miastenia gravis (dia 22), Doença do soro (dia 78), Streptococcus pneumoniae (dia 106)",
+  "conceito": "Remix: Myasthenia gravis + Serum sickness + Streptococcus pneumoniae",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    22,
+    78,
+    106
+  ],
+  "explicacao_em": "2027-02-22",
+  "tom": null,
+  "gancho": "Remix: dez dias depois do soro, *febre* e dor nas juntas",
+  "gancho_apoio": "Três conceitos já vistos (dias 22, 78 e 106) e um intruso. Só um explica o quadro.",
+  "imagem": {
+    "arquivo": "dia-112.png",
+    "cena": "Um toca-discos vermelho gira três discos sem rótulo: um com uma campainha de prédio, um com uma capa de chuva transparente e um com um frasco de soro de tampa em forma de cabeça de cavalo. Ao lado, uma caixa de discos e um par de fones de ouvido.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos: campainha, capa de chuva e frasco de soro com tampa de cavalo."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-112-macete.png",
+    "cena": "Callback: no balcão do boteco, o caderninho de fiado está aberto e dez folhas do calendário caíram. Bolinhos de anticorpos em Y agarrados a pedacinhos em forma de cavalo (imunocomplexos) entopem três filtros de uma casa em corte: o da pia, o de um radiador e um filtro em forma de rim. Ao lado, uma carteira solta as últimas moedinhas douradas (complemento) e fica vazia.",
+    "foco": "50% 40%",
+    "alt": "Caderninho de fiado aberto; imunocomplexos entopem os filtros da pia, do radiador e um em forma de rim, e a carteira de moedas douradas fica vazia."
+  },
+  "questao": {
+    "vinheta": "Ten days after receiving equine-derived antivenom for a snakebite, a 35-year-old farmer develops fever, an itchy rash on his trunk, pain in several joints and mild proteinuria. Serum C3 and C4 levels are low.",
+    "pergunta": "Which mechanism best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies against postsynaptic acetylcholine receptors",
+        "quiz": "Anti-receptor de ACh",
+        "dia": 22
+      },
+      "B": {
+        "texto": "Immune complexes depositing in vessel walls",
+        "quiz": "Imunocomplexos",
+        "dia": 78
+      },
+      "C": {
+        "texto": "Polysaccharide capsule that resists phagocytosis",
+        "quiz": "Cápsula bacteriana",
+        "dia": 106
+      },
+      "D": {
+        "texto": "IgE-mediated mast cell degranulation",
+        "quiz": "IgE no mastócito"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Doença do soro: hipersensibilidade *tipo III*",
+    "certa": [
+      "Uma a duas semanas depois de receber proteína estranha, como o soro antiofídico feito em cavalo, o corpo fabrica anticorpos contra ela, e os imunocomplexos se depositam em vasos, articulações e rim. O complemento é ativado e consumido, por isso C3 e C4 caem, e aparecem febre, exantema, artralgia e proteinúria. É a doença do soro (serum sickness), uma hipersensibilidade tipo III que costuma melhorar sozinha."
+    ],
+    "termos": [
+      "serum sickness",
+      "type III hypersensitivity",
+      "immune complexes",
+      "hypocomplementemia"
+    ],
+    "erradas": {
+      "A": "Dia 22: anticorpo contra o receptor de acetilcolina é tipo II, com fraqueza que piora com o uso, sem febre nem queda de complemento.",
+      "C": "Dia 106: a cápsula é o fator de virulência do pneumococo numa infecção, e não uma reação a um soro recebido.",
+      "D": "Intruso: a degranulação de mastócitos por IgE é imediata, em minutos depois do soro, e não dez dias depois."
+    },
+    "macete": {
+      "frase": "Tipo III é o *fiado*: a conta chega em 1 a 2 semanas e cobra juros do complemento",
+      "apoio": "Na imagem, a conta do fiado chegou: os imunocomplexos entopem os filtros e a carteira do complemento esvazia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: miastenia, doença do soro e pneumococo. Um trabalhador rural recebeu soro antiofídico e, dez dias depois, apareceu febre com dor nas juntas.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Imunologia",
+      "#Immunology",
+      "#Microbiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Febre e artralgia 10 dias após o soro?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

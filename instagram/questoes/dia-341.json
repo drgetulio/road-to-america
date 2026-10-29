@@ -1,0 +1,100 @@
+{
+  "dia": 341,
+  "data": "2027-10-08",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Doença de Kawasaki",
+  "conceito": "Kawasaki disease: IVIG plus aspirin to prevent coronary aneurysms",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-09",
+  "tom": null,
+  "gancho": "Cinco dias de febre e o *bloco CRASH* na avenida",
+  "gancho_apoio": "Criança de 3 anos, febre que não cede e um checklist que todo pediatra decora.",
+  "imagem": {
+    "arquivo": "dia-341.png",
+    "cena": "Tia Meia-Vida no balcão olha uma caixa de brinquedos com pistas: um ursinho de olhos vermelhos, um morango rachado, um par de luvas vermelhas inchadas e um termômetro com cinco velinhas; dois frascos tampados atrás dela.",
+    "foco": "50% 35%",
+    "alt": "Cinco dias de febre e o bloco CRASH na avenida"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-341-macete.png",
+    "cena": "Callback: a Tia Meia-Vida entrega um escudo em forma de bolsa de soro que protege um mapa de estradas em forma de coração, enquanto uma pequena pílula acalma a Capitã Plaqueta, sentada e tranquila.",
+    "foco": "50% 45%",
+    "alt": "Kawasaki: IVIG plus aspirin para proteger as coronárias"
+  },
+  "questao": {
+    "vinheta": "A 3-year-old boy has had fever above 39°C for 6 days despite antipyretics. He has bilateral nonexudative conjunctival injection, cracked red lips, a polymorphous truncal rash, swollen red hands and feet, and a 2-cm unilateral cervical lymph node. Echocardiography is scheduled.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral amoxicillin",
+        "quiz": "Amoxicilina"
+      },
+      "B": {
+        "texto": "Intravenous immunoglobulin plus aspirin",
+        "quiz": "IVIG + aspirina"
+      },
+      "C": {
+        "texto": "Oral prednisolone alone",
+        "quiz": "Só prednisolona"
+      },
+      "D": {
+        "texto": "Ibuprofen and observation",
+        "quiz": "Ibuprofeno"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Kawasaki: *IVIG plus aspirin* para proteger as coronárias",
+    "certa": [
+      "Febre por 5 dias ou mais com 4 dos 5 critérios (conjuntivite, alteração de lábios e boca, exantema, mãos e pés, linfonodo cervical) fecha *Kawasaki disease*, uma vasculite de médios vasos. O tratamento é *intravenous immunoglobulin* em dose única, de preferência nos primeiros 10 dias, mais *aspirin*, para reduzir o risco de *coronary artery aneurysm*."
+    ],
+    "termos": [
+      "Kawasaki disease",
+      "intravenous immunoglobulin",
+      "aspirin",
+      "coronary artery aneurysm"
+    ],
+    "erradas": {
+      "A": "Amoxicilina trata faringite estreptocócica, com exsudato e sem mãos e pés inchados; não protege as coronárias.",
+      "C": "Corticoide entra como adjuvante em casos de alto risco ou resistência à IVIG, não como monoterapia de primeira linha.",
+      "D": "Ibuprofeno não previne aneurisma e ainda atrapalha o efeito antiagregante da aspirina."
+    },
+    "macete": {
+      "frase": "*CRASH and burn*: Conjunctivitis, Rash, Adenopathy, Strawberry tongue, Hands, e Burn de febre",
+      "apoio": "O bloco CRASH desfila com febre de 5 dias puxando a bateria. A Tia Meia-Vida entrega o escudo de IVIG para as coronárias e a aspirina acalma a Capitã Plaqueta. Kawasaki é a exceção em que criança recebe aspirina.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Seis dias de febre sem ceder, olhos vermelhos sem secreção, lábios rachados, mãos e pés inchados e um linfonodo no pescoço. Qual é o tratamento?",
+    "palavras_chave": [
+      "fever for 6 days",
+      "conjunctival injection",
+      "cracked lips",
+      "swollen hands and feet"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Kawasaki",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Febre 6 dias + CRASH. Qual tratamento?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

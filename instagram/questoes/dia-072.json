@@ -1,0 +1,96 @@
+{
+  "dia": 72,
+  "data": "2027-01-12",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Varizes esofágicas",
+  "conceito": "Variceal bleeding: octreotide, ceftriaxone and endoscopic band ligation",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-13",
+  "gancho": "A mangueira do esôfago estourou: *qual saída agora*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um balão, um tubo em forma de ponte e uma xuxinha de cabelo. Ao lado da estrada, uma mangueira de jardim inchada e azulada vaza água, com um registro já fechado pela metade.",
+    "foco": "50% 35%",
+    "alt": "A mangueira do esôfago estourou: qual saída agora?",
+    "arquivo": "dia-072.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da rodovia: uma mão de luvinha de desenho, sem pessoa, amarra uma xuxinha vermelha bem no ponto que vazava, e a mangueira para de espirrar. O registro está fechado e o escudinho de comprimido fica de guarda.",
+    "alt": "Depois do pacote, endoscopia com ligadura",
+    "arquivo": "dia-072-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 54-year-old man with cirrhosis vomits bright red blood. His blood pressure is 92/58 mm Hg, with a pulse of 118/min. He is intubated for airway protection, transfused to a hemoglobin of 7.5 g/dL, and started on IV octreotide and ceftriaxone.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Esophageal balloon tamponade",
+        "quiz": "Balloon tamponade"
+      },
+      "B": {
+        "texto": "Endoscopic variceal band ligation",
+        "quiz": "Band ligation"
+      },
+      "C": {
+        "texto": "Immediate TIPS placement",
+        "quiz": "Immediate TIPS"
+      },
+      "D": {
+        "texto": "Start oral propranolol",
+        "quiz": "Oral propranolol"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Depois do pacote, *endoscopia com ligadura*",
+    "certa": [
+      "No sangramento por *esophageal varices*, o pacote inicial é via aérea, acesso, transfusão restritiva (alvo de hemoglobina perto de 7), *octreotide* para baixar a pressão portal e *ceftriaxone* para prevenir infecção e ressangramento. O próximo passo é a endoscopia em até 12 horas com *endoscopic band ligation*, que amarra a variz e para o sangramento."
+    ],
+    "termos": [
+      "esophageal varices",
+      "octreotide",
+      "ceftriaxone prophylaxis",
+      "endoscopic band ligation"
+    ],
+    "erradas": {
+      "A": "O balão é ponte temporária para sangramento que não para com endoscopia, não a primeira escolha.",
+      "C": "O TIPS entra no sangramento refratário ou de forma precoce em pacientes de alto risco depois da endoscopia, não antes dela.",
+      "D": "Betabloqueador não seletivo é profilaxia, e não se começa na fase aguda com hipotensão."
+    },
+    "macete": {
+      "frase": "*OCE*: Octreotida, Ceftriaxona, *Elástico*",
+      "apoio": "Pegadinha de prova: O NBME esquece de dar o antibiótico na vinheta para ver se você lembra; na cirrose com hemorragia digestiva, a ceftriaxona reduz infecção, ressangramento e mortalidade.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Cirrose, vômito de sangue vivo e pressão caindo. A equipe já fez a parte de soro, sangue, octreotida e antibiótico. No Plantão de Terça, qual saída vem agora?",
+    "palavras_chave": [
+      "cirrhosis",
+      "hematemesis",
+      "hypotension",
+      "airway protection"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#Hepatology",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

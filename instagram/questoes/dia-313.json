@@ -1,0 +1,96 @@
+{
+  "dia": 313,
+  "data": "2027-09-10",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Antidepressivo no adolescente",
+  "conceito": "Adolescent depression on an SSRI: boxed warning, close follow-up for suicidal thoughts",
+  "personagem": null,
+  "gancho_data": "Setembro Amarelo e Dia Mundial de Prevenção do Suicídio (10/9): sem humor, com CVV 188 na legenda.",
+  "remix_de": null,
+  "explicacao_em": "2027-09-11",
+  "tom": "acolhedor",
+  "gancho": "Setembro Amarelo: *o que combinar* quando um adolescente começa antidepressivo?",
+  "gancho_apoio": "Uma questão sobre cuidado, acompanhamento e conversa com a família.",
+  "imagem": {
+    "arquivo": "dia-313.png",
+    "cena": "Cena calma ao amanhecer: um caminho de pedras atravessa um jardim até um banco, com uma fita amarela presa num poste de luz; ao lado, um caderno aberto e uma xícara de chá. Sem personagens, tom acolhedor.",
+    "foco": "50% 35%",
+    "alt": "Setembro Amarelo: o que combinar quando um adolescente começa antidepressivo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-313-macete.png",
+    "cena": "Callback: o mesmo caminho, agora com vários postes de luz acesos bem próximos uns dos outros no começo e mais espaçados adiante (retornos frequentes nas primeiras semanas); no banco, o caderno mostra um calendário com encontros marcados em amarelo. A fita amarela continua no primeiro poste.",
+    "foco": "50% 45%",
+    "alt": "ISRS no adolescente: orientar e acompanhar de perto"
+  },
+  "questao": {
+    "vinheta": "A 15-year-old girl has had 2 months of depressed mood, poor sleep, and declining grades. She denies suicidal ideation, plans, or prior attempts. Weekly psychotherapy has helped only partially. Her physician starts fluoxetine.",
+    "pergunta": "Which is the most appropriate counseling and follow-up plan?",
+    "alternativas": {
+      "A": {
+        "texto": "Stop fluoxetine if mood has not improved after 1 week",
+        "quiz": "Parar em 1 semana"
+      },
+      "B": {
+        "texto": "Explain the boxed warning and schedule close follow-up",
+        "quiz": "Alerta e retorno"
+      },
+      "C": {
+        "texto": "Schedule the next visit in 6 months",
+        "quiz": "Retorno em 6 meses"
+      },
+      "D": {
+        "texto": "Keep the prescription confidential from her parents",
+        "quiz": "Sigilo aos pais"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "ISRS no adolescente: *orientar e acompanhar de perto*",
+    "certa": [
+      "Antidepressivos em menores de 25 anos têm *boxed warning* da FDA por um aumento pequeno de pensamentos e comportamentos suicidas nas primeiras semanas e depois de mudanças de dose. Na depressão moderada a grave o benefício supera o risco, então o plano é orientar a paciente e a família sobre os sinais de alerta e fazer *close follow-up*, sobretudo no primeiro mês. A *fluoxetine* é a primeira escolha aprovada pela FDA a partir dos 8 anos."
+    ],
+    "termos": [
+      "boxed warning",
+      "SSRI in adolescents",
+      "close follow-up",
+      "fluoxetine"
+    ],
+    "erradas": {
+      "A": "O ISRS leva de 4 a 6 semanas para fazer efeito; suspender em 1 semana é cedo demais e interrompe um tratamento indicado.",
+      "C": "Seis meses sem retorno deixam sem acompanhamento justamente as primeiras semanas, que pedem mais atenção.",
+      "D": "A família participa do plano de segurança e precisa conhecer os sinais de alerta; a segurança se sobrepõe ao sigilo."
+    },
+    "macete": {
+      "frase": "*Começou o ISRS, encurtou o retorno*: as primeiras semanas pedem mais perto",
+      "apoio": "Na imagem, o calendário mostra encontros próximos nas primeiras semanas e uma luz acesa no caminho. Remédio, conversa e família andam juntos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Adolescente de 15 anos com depressão há 2 meses, sem ideação suicida, com resposta parcial à psicoterapia, vai começar fluoxetina. Hoje, no Dia Mundial de Prevenção do Suicídio, a pergunta é sobre o plano de orientação e de retorno.",
+    "palavras_chave": [
+      "adolescent depression",
+      "partial response to therapy",
+      "fluoxetine",
+      "family counseling"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Psiquiatria",
+      "#SetembroAmarelo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Adolescente começa ISRS: qual plano?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

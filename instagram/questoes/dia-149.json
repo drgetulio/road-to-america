@@ -1,0 +1,95 @@
+{
+  "dia": 149,
+  "data": "2027-03-30",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Insuficiência cardíaca com fração reduzida",
+  "conceito": "HFrEF mortality pillars: ARNI or ACE inhibitor, beta-blocker, MRA and SGLT2 inhibitor",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-31",
+  "tom": null,
+  "gancho": "O pagode da insuficiência cardíaca está com *um músico a menos*",
+  "gancho_apoio": "Três já estão na roda. Qual instrumento falta para fechar o samba?",
+  "imagem": {
+    "arquivo": "dia-149.png",
+    "cena": "Uma roda de pagode no fundo de quintal: um coração simpático canta no centro, três músicos tocam cavaquinho, pandeiro e surdo, e uma cadeira de plástico está vazia com um tantã encostado. Ao fundo, uma placa verde de rodovia com três saídas, sem texto.",
+    "foco": "50% 35%",
+    "alt": "Roda de pagode com um coração cantando, três músicos e uma cadeira vazia com um tantã encostado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-149-macete.png",
+    "cena": "Callback: chega o quarto músico, um cubinho de açúcar simpático que sai pela porta carregando o tantã, senta na cadeira vazia e a roda fecha. O coração canta sorrindo.",
+    "foco": "50% 40%",
+    "alt": "Um cubinho de açúcar chega com o tantã, senta na cadeira vazia e completa a roda de pagode."
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man has ischemic cardiomyopathy, an LVEF of 30% and NYHA class II symptoms; he is euvolemic. He takes sacubitril-valsartan, carvedilol, spironolactone and furosemide as needed. BP 112/70 mm Hg; heart rate 62/min in sinus rhythm. eGFR is 55 mL/min/1.73 m2.",
+    "pergunta": "Adding which drug will most likely reduce mortality?",
+    "alternativas": {
+      "A": {
+        "texto": "Dapagliflozin",
+        "quiz": "Dapagliflozina"
+      },
+      "B": {
+        "texto": "Digoxin",
+        "quiz": "Digoxina"
+      },
+      "C": {
+        "texto": "Diltiazem",
+        "quiz": "Diltiazem"
+      },
+      "D": {
+        "texto": "Ivabradine",
+        "quiz": "Ivabradina"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "ICFER: os *quatro pilares*",
+    "certa": [
+      "Na insuficiência cardíaca com fração reduzida, quatro classes reduzem mortalidade: betabloqueador, ARNI (na falta dele, IECA ou BRA), inibidor de SGLT2 e antagonista do receptor mineralocorticoide. Ele já usa as três primeiras, então falta o iSGLT2, como dapagliflozina ou empagliflozina, que funciona com ou sem diabetes e com eGFR acima de 20 a 25."
+    ],
+    "termos": [
+      "HFrEF",
+      "SGLT2 inhibitor",
+      "ARNI",
+      "mineralocorticoid receptor antagonist"
+    ],
+    "erradas": {
+      "B": "A digoxina reduz internações e sintomas, mas não a mortalidade.",
+      "C": "O diltiazem, bloqueador de canal de cálcio não di-hidropiridínico, tem efeito inotrópico negativo e piora a ICFER.",
+      "D": "A ivabradina só entra com frequência de 70 ou mais em ritmo sinusal, apesar do betabloqueador, e reduz internação, não mortalidade total."
+    },
+    "macete": {
+      "frase": "ICFER é *pagode de quatro*: ARNI, beta, ARM e iSGLT2",
+      "apoio": "Na imagem, o quarto músico chega, senta na cadeira vazia e a roda fecha.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: insuficiência cardíaca com fração reduzida, três remédios em dose certa e uma pergunta sobre sobrevida.",
+    "palavras_chave": [
+      "ischemic cardiomyopathy",
+      "LVEF 30%",
+      "NYHA class II",
+      "guideline-directed therapy"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cardiologia",
+      "#HeartFailure"
+    ]
+  },
+  "quiz": {
+    "pergunta": "ICFER com 3 pilares: o que falta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

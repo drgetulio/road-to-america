@@ -1,0 +1,96 @@
+{
+  "dia": 73,
+  "data": "2027-01-13",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Distrofia muscular de Duchenne",
+  "conceito": "Duchenne muscular dystrophy: X-linked frameshift deletion in dystrophin, Gowers sign",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-14",
+  "gancho": "Trem do DNA com um buraco: *vagão inteiro ou assento solto*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um trem de brinquedo com vagões de três assentos coloridos leva uma corda comprida até uma barraca de acampamento. No meio do trem há um espaço estranho, e não dá para saber se falta um vagão inteiro ou só um assento.",
+    "foco": "50% 35%",
+    "alt": "Trem do DNA com um buraco: vagão inteiro ou assento solto?",
+    "arquivo": "dia-073.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do trem: falta um assento solto, e todos os passageiros depois dele sentaram um lugar para o lado, tortos. O trem para numa estaçãozinha antes da hora com um sinal vermelho de parada, e a corda não chega à barraca, que fica bamba ao vento.",
+    "alt": "Duchenne é frameshift na distrofina",
+    "arquivo": "dia-073-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has frequent falls and difficulty climbing stairs. To stand up from the floor, he pushes on his thighs with his hands. His calves are enlarged, and serum creatine kinase is markedly elevated. A maternal uncle had similar weakness.",
+    "pergunta": "Which mutation most likely causes this disorder?",
+    "alternativas": {
+      "A": {
+        "texto": "In-frame deletion in the dystrophin gene",
+        "quiz": "In-frame DMD del"
+      },
+      "B": {
+        "texto": "CTG repeat expansion in DMPK",
+        "quiz": "CTG repeat in DMPK"
+      },
+      "C": {
+        "texto": "Homozygous deletion of SMN1",
+        "quiz": "SMN1 deletion"
+      },
+      "D": {
+        "texto": "Frameshift deletion in the dystrophin gene",
+        "quiz": "Frameshift in DMD"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Duchenne é *frameshift* na distrofina",
+    "certa": [
+      "Fraqueza proximal com *Gowers sign*, pseudo-hipertrofia de panturrilha, CK muito alta e tio materno afetado apontam para *Duchenne muscular dystrophy*, ligada ao X. A maioria dos casos é uma deleção que tira um número de bases não múltiplo de três: a *frameshift deletion* troca a leitura de todos os códons seguintes, cria um códon de parada precoce e a *dystrophin* praticamente some. Sem ela, a membrana da fibra muscular não aguenta a contração e se rompe."
+    ],
+    "termos": [
+      "Duchenne muscular dystrophy",
+      "dystrophin",
+      "frameshift deletion",
+      "Gowers sign"
+    ],
+    "erradas": {
+      "A": "A deleção em fase (in-frame) mantém a leitura e produz uma distrofina menor e parcialmente funcional: é a distrofia de Becker, mais leve e de início mais tardio.",
+      "B": "A expansão CTG no DMPK é a distrofia miotônica, com miotonia, catarata e fraqueza distal, de herança autossômica dominante.",
+      "C": "A deleção do SMN1 é a atrofia muscular espinhal, doença do neurônio motor com hipotonia, fasciculações e CK quase normal."
+    },
+    "macete": {
+      "frase": "Duchenne *desliza o quadro*, Becker *só encurta*",
+      "apoio": "Pegadinha de prova: O NBME não pergunta o tamanho da deleção, pergunta se ela mantém a fase de leitura: frameshift é Duchenne, in-frame é Becker.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um menino de 4 anos com quedas, panturrilhas grandes e CK muito alta. A pergunta é que tipo de mutação explica o quadro, e o segredo está na leitura de três em três.",
+    "palavras_chave": [
+      "frequent falls",
+      "calf enlargement",
+      "creatine kinase",
+      "maternal uncle"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics",
+      "#QuartaDoPorque",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual mutação causa o quadro?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

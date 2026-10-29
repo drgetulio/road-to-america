@@ -1,0 +1,87 @@
+{
+  "dia": 162,
+  "data": "2027-04-12",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Legionella",
+  "conceito": "Legionella pneumophila: pneumonia with hyponatremia and diarrhea, urinary antigen test",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-13",
+  "tom": null,
+  "gancho": "Pneumonia, diarreia e sódio baixo: qual exame entrega o *culpado*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-162.png",
+    "cena": "Macrô na porta do boteco dos micróbios, desconfiado de um ar-condicionado antigo de janela que pinga num balde. Na fresta do aparelho, um bacilo pequeno se esconde; no balcão, uma chave de quarto de hotel e um saleiro quase vazio.",
+    "foco": "50% 35%",
+    "alt": "Macrô na porta do boteco dos micróbios, desconfiado de um ar-condicionado antigo de janela que pinga num balde."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-162-macete.png",
+    "cena": "Pego no flagra, o bacilo mostra a carteira de identidade que tirou de dentro de um potinho de coleta de tampa amarela. Macrô confere o documento com a lupa: o antígeno urinário entregou o culpado. O saleiro vazio lembra o sódio baixo.",
+    "alt": "A Legionella entrega o RG na urina"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man who smokes returns from a hotel conference with 3 days of fever to 39.8°C, dry cough, watery diarrhea, and confusion. Serum sodium is 127 mEq/L. Chest x-ray shows patchy bilateral infiltrates. Sputum Gram stain shows many neutrophils but no organisms.",
+    "pergunta": "Which test is most likely to confirm the diagnosis rapidly?",
+    "alternativas": {
+      "A": {
+        "texto": "Sputum culture on sheep blood agar",
+        "quiz": "Cultura ágar sangue"
+      },
+      "B": {
+        "texto": "Cold agglutinin titer",
+        "quiz": "Crioaglutininas"
+      },
+      "C": {
+        "texto": "Sputum acid-fast stain",
+        "quiz": "BAAR no escarro"
+      },
+      "D": {
+        "texto": "Urinary antigen test",
+        "quiz": "Antígeno urinário"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "A *Legionella* entrega o RG na *urina*",
+    "certa": [
+      "Pneumonia com febre alta, diarreia, confusão e *hyponatremia*, depois de exposição a água em aerossol (ar-condicionado, chuveiro, torre de resfriamento), aponta para *Legionella pneumophila*, que cora mal no Gram e vive dentro dos macrófagos alveolares. O exame rápido é o *urinary antigen test*, que detecta o sorogrupo 1, responsável pela maioria dos casos; a cultura em ágar BCYE confirma e permite tipar."
+    ],
+    "termos": [
+      "Legionella pneumophila",
+      "urinary antigen",
+      "hyponatremia",
+      "BCYE agar"
+    ],
+    "erradas": {
+      "A": "A Legionella não cresce em ágar sangue comum; precisa de ágar com carvão e extrato de levedura (BCYE), com ferro e cisteína.",
+      "B": "Crioaglutininas lembram *Mycoplasma pneumoniae*, em adulto jovem, com quadro mais leve e sem hiponatremia marcante.",
+      "C": "BAAR procura micobactérias, num quadro arrastado de semanas, com perda de peso e cavitação."
+    },
+    "macete": {
+      "frase": "A *Legião* de sintomas: pulmão, barriga, cabeça e *sódio* baixo. A Legionella mora no ar-condicionado do hotel e *entrega o RG na urina*.",
+      "apoio": "O NBME descreve pneumonia grave com diarreia e hiponatremia depois de hotel, cruzeiro ou spa e pede o antígeno urinário ou o meio BCYE; também lembra que não há transmissão de pessoa para pessoa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda. O cliente de hoje voltou de um congresso no hotel com pneumonia, diarreia, confusão e sódio baixo. O Gram do escarro veio cheio de neutrófilos e sem bactéria. Qual exame confirma rápido?",
+    "palavras_chave": [
+      "hotel stay",
+      "high fever",
+      "diarrhea and confusion",
+      "low serum sodium"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Pneumonia, diarreia, Na 127. Qual exame?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

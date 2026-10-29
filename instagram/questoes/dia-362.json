@@ -1,0 +1,100 @@
+{
+  "dia": 362,
+  "data": "2027-10-29",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Trombólise no AVC",
+  "conceito": "Alteplase for ischemic stroke: within 4.5 hours of last known well",
+  "personagem": null,
+  "gancho_data": "Dia Mundial do AVC (29/10).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-30",
+  "tom": null,
+  "gancho": "O relógio do cérebro *não aceita \"só mais cinco minutinhos\"*",
+  "gancho_apoio": "Dia Mundial do AVC. Fraqueza súbita, fala travada e a contagem já começou.",
+  "imagem": {
+    "arquivo": "dia-362.png",
+    "cena": "Tia Meia-Vida diante de um grande relógio de parede em forma de cérebro, sem números, com os ponteiros correndo; lá fora, um ônibus se aproxima do ponto, e um nó de lã emaranhado bloqueia uma estradinha no mapa do cérebro.",
+    "foco": "50% 35%",
+    "alt": "O relógio do cérebro não aceita \"só mais cinco minutinhos\""
+  },
+  "imagem_macete": {
+    "arquivo": "dia-362-macete.png",
+    "cena": "Callback: a Tia Meia-Vida chega ao ponto a tempo e usa uma tesourinha brilhante para desfazer o nó de lã na estrada do mapa do cérebro; a fatia do relógio ainda dentro do prazo fica verde.",
+    "foco": "50% 45%",
+    "alt": "AVC isquêmico em até 4,5 h: intravenous thrombolysis"
+  },
+  "questao": {
+    "vinheta": "A 70-year-old woman arrives by ambulance with sudden right face and arm weakness and aphasia; she was last known well 2 hours ago. Blood pressure is 168/94 mm Hg and glucose is 118 mg/dL. Noncontrast head CT shows no hemorrhage. She takes no anticoagulants, and platelet count is normal.",
+    "pergunta": "Which is the most appropriate pharmacotherapy now?",
+    "alternativas": {
+      "A": {
+        "texto": "Aspirin 325 mg",
+        "quiz": "Aspirina"
+      },
+      "B": {
+        "texto": "Intravenous alteplase",
+        "quiz": "Alteplase IV"
+      },
+      "C": {
+        "texto": "Intravenous heparin infusion",
+        "quiz": "Heparina IV"
+      },
+      "D": {
+        "texto": "IV labetalol to below 140/90 mm Hg",
+        "quiz": "Labetalol"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "AVC isquêmico em até 4,5 h: *intravenous thrombolysis*",
+    "certa": [
+      "Déficit focal súbito, *last known well* há 2 horas, TC sem sangramento, glicemia normal e sem contraindicação: é candidata a *intravenous thrombolysis* com *alteplase* (0,9 mg/kg) dentro de 4,5 horas. As diretrizes atuais aceitam a *tenecteplase* como alternativa equivalente. Em paralelo, angiotomografia para procurar oclusão de grande vaso e avaliar trombectomia."
+    ],
+    "termos": [
+      "last known well",
+      "alteplase",
+      "intravenous thrombolysis",
+      "tenecteplase"
+    ],
+    "erradas": {
+      "A": "Aspirina é para quem não recebe trombólise, ou só 24 horas depois dela; não substitui o trombolítico na janela.",
+      "C": "Heparina plena no AVC agudo não melhora o desfecho e aumenta o risco de sangramento.",
+      "D": "A pressão só precisa baixar se estiver acima de 185/110 antes da trombólise; 168/94 já permite tratar."
+    },
+    "macete": {
+      "frase": "*Tempo é cérebro: quatro horas e meia, a partir do último \"estava bem\"*",
+      "apoio": "A Tia Meia-Vida corre para o ponto de ônibus antes do último horário: o relógio conta desde a última vez em que a pessoa foi vista bem, não desde que foi encontrada. Quem acorda com o déficit conta a partir da hora em que foi dormir.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial do AVC. Fraqueza súbita no rosto e no braço direito, fala travada, vista bem pela última vez há 2 horas. A TC não mostra sangramento. Qual é o tratamento agora?",
+    "palavras_chave": [
+      "sudden weakness",
+      "aphasia",
+      "2 hours",
+      "CT without hemorrhage"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#AVC",
+      "#Stroke",
+      "#Neurologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "AVC isquêmico há 2 h, TC limpa:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

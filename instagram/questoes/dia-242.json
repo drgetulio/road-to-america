@@ -1,0 +1,99 @@
+{
+  "dia": 242,
+  "data": "2027-07-01",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Pneumotórax hipertensivo",
+  "conceito": "Tension pneumothorax: immediate needle decompression before imaging",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-02",
+  "tom": null,
+  "gancho": "Rodízio parado: um *balão* empurrou a mesa inteira para o lado",
+  "gancho_apoio": "Traqueia desviada, veias do pescoço cheias e um lado do tórax mudo. Qual é o próximo passo?",
+  "imagem": {
+    "arquivo": "dia-242.png",
+    "cena": "No rodízio, um balão enorme cresce embaixo da toalha de uma mesa e empurra pratos, copos e saleiro para um lado só. O garçom, com os espetos no alto, olha a cena; no canto, uma câmera num tripé espera.",
+    "foco": "50% 35%",
+    "alt": "Rodízio parado: um balão empurrou a mesa inteira para o lado"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-242-macete.png",
+    "cena": "O garçom usa um espeto fino para furar o balão com cuidado, na lateral da mesa; o ar sai assobiando, a toalha assenta e os pratos voltam para o centro. A câmera continua no canto, esperando a vez dela.",
+    "foco": "50% 40%",
+    "alt": "Diagnóstico clínico, punção imediata"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man arrives after a motorcycle crash, anxious and gasping. Blood pressure is 78/40 mm Hg, pulse is 136/min, and SpO2 is 84%. The trachea deviates to the left, neck veins are distended, and the right hemithorax is hyperresonant with absent breath sounds.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Portable chest radiograph",
+        "quiz": "Raio X portátil"
+      },
+      "B": {
+        "texto": "CT scan of the chest",
+        "quiz": "TC de tórax"
+      },
+      "C": {
+        "texto": "Needle decompression of the right chest",
+        "quiz": "Punção de alívio"
+      },
+      "D": {
+        "texto": "Pericardiocentesis",
+        "quiz": "Pericardiocentese"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Diagnóstico clínico, *punção* imediata",
+    "certa": [
+      "Hipotensão, traqueia desviada para o lado oposto, turgência jugular e hemitórax hipertimpânico sem murmúrio fecham o diagnóstico clínico de *tension pneumothorax*. O ar preso comprime o mediastino, reduz o retorno venoso e pode levar à parada em minutos. A conduta é *needle decompression* imediata (no adulto, quarto ou quinto espaço intercostal logo à frente da linha axilar média, ou segundo espaço na linha hemiclavicular), seguida de dreno de tórax (*tube thoracostomy*)."
+    ],
+    "termos": [
+      "tension pneumothorax",
+      "needle decompression",
+      "tube thoracostomy",
+      "tracheal deviation"
+    ],
+    "erradas": {
+      "A": "Pedir *chest radiograph* atrasa a conduta num diagnóstico que é clínico; o paciente instável não pode esperar o filme.",
+      "B": "A *CT* exige transporte e tempo, e paciente instável não vai para o tomógrafo.",
+      "D": "A *pericardiocentesis* trata tamponamento, que também tem hipotensão e jugular cheia, mas com murmúrio presente dos dois lados e traqueia no meio."
+    },
+    "macete": {
+      "frase": "Balão empurrando a mesa: *fura primeiro*, fotografa depois",
+      "apoio": "Lembre do balão embaixo da toalha: quando ele empurra a mesa inteira para um lado, o garçom não vai buscar a câmera, ele fura com o espeto. No pneumotórax hipertensivo, a punção vem antes de qualquer imagem.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Acidente de moto, hipotensão e um lado do tórax que não respira. Você está no plantão: o que fazer primeiro?",
+    "palavras_chave": [
+      "motorcycle crash",
+      "hypotension",
+      "trachea shifted to the left",
+      "absent breath sounds"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Trauma",
+      "#Cirurgia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que fazer primeiro?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

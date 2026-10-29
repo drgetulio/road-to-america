@@ -1,0 +1,96 @@
+{
+  "dia": 307,
+  "data": "2027-09-04",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Hesitação vacinal",
+  "conceito": "Parents refusing vaccines: explore concerns, educate, keep caring for the child",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-05",
+  "tom": null,
+  "gancho": "Pais preocupados chegaram com uma pasta de prints. *E agora?*",
+  "gancho_apoio": "No Sábado Sem Viés, a conversa começa antes da agulha.",
+  "imagem": {
+    "arquivo": "dia-307.png",
+    "cena": "Mesa de consultório pediátrico com duas cadeiras e um cafezinho de padaria; sobre a mesa, uma pasta amarrada com barbante, cheia de folhas impressas; numa prateleira, um frasquinho em forma de escudo espera; a balança da justiça, desenhada como placa de trânsito, está na parede.",
+    "foco": "50% 35%",
+    "alt": "Pais preocupados chegaram com uma pasta de prints. E agora?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-307-macete.png",
+    "cena": "Callback: a pasta está aberta e as folhas espalhadas na mesa, com uma grande orelha de desenho animado ao lado (escutar primeiro); a porta do consultório está aberta, um calendário de parede tem a próxima consulta circulada e o frasco escudo continua pronto na prateleira.",
+    "foco": "50% 45%",
+    "alt": "Recusa vacinal: primeiro ouvir, depois explicar"
+  },
+  "questao": {
+    "vinheta": "At a routine 2-month visit, an infant girl has normal growth and examination findings. Her parents decline all scheduled vaccines because they read online that many vaccines at once will overload her immune system. They ask whether they can keep bringing her to this clinic.",
+    "pergunta": "Which is the most appropriate response by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "\"Our practice requires vaccines, so you will need another physician.\"",
+        "quiz": "Procure outro médico"
+      },
+      "B": {
+        "texto": "\"If you refuse, I am required to notify child protective services.\"",
+        "quiz": "Vou notificar"
+      },
+      "C": {
+        "texto": "\"Can you tell me more about what worries you about the vaccines?\"",
+        "quiz": "O que preocupa?"
+      },
+      "D": {
+        "texto": "\"We can give one vaccine now and the rest after her first birthday.\"",
+        "quiz": "Adiar o calendário"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Recusa vacinal: *primeiro ouvir*, depois explicar",
+    "certa": [
+      "Diante da recusa vacinal, o primeiro passo é perguntar o que os pais leram e o que temem, sem julgamento. Depois vem a informação clara (o bebê responde a milhares de antígenos todos os dias e o calendário usa uma fração mínima disso) e a recomendação firme, com a porta aberta para vacinar em outra consulta. A criança continua em acompanhamento e a recusa informada fica registrada no prontuário."
+    ],
+    "termos": [
+      "vaccine hesitancy",
+      "explore concerns",
+      "informed refusal",
+      "continuity of care"
+    ],
+    "erradas": {
+      "A": "Dispensar a família na primeira conversa rompe o vínculo e tira a criança do acompanhamento sem tentar resolver a dúvida.",
+      "B": "Recusar vacina, com a criança saudável e acompanhada, não é negligência que exija notificação ao serviço de proteção.",
+      "D": "Atrasar o calendário por conta própria deixa a criança desprotegida justamente na idade de maior risco e não tem respaldo da AAP."
+    },
+    "macete": {
+      "frase": "*Ouvir, explicar, recomendar e manter a porta aberta*: o cafezinho vem antes da vacina",
+      "apoio": "Na imagem, a pasta de prints é aberta e lida em conjunto na mesa do cafezinho. A porta do consultório fica aberta e o frasco em forma de escudo espera na prateleira pela próxima consulta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bebê de 2 meses, saudável, na consulta de rotina. Os pais leram na internet que tantas vacinas de uma vez sobrecarregam o sistema imune, recusam todas e perguntam se podem continuar no consultório. Qual é a melhor resposta?",
+    "palavras_chave": [
+      "2-month visit",
+      "parents decline vaccines",
+      "online information",
+      "communication"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Etica",
+      "#MedicalEthics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pais recusam vacinas: melhor resposta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 241,
+  "data": "2027-06-30",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Encefalopatia de Wernicke",
+  "conceito": "Wernicke encephalopathy: thiamine deficiency impairs pyruvate dehydrogenase, mammillary body damage",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-01",
+  "tom": null,
+  "gancho": "Chegou glicose na padaria, mas o forno do *Mito* não acendeu",
+  "gancho_apoio": "O soro piorou a confusão. Que peça falta na porta da mitocôndria?",
+  "imagem": {
+    "arquivo": "dia-241.png",
+    "cena": "Mito, de jaleco amassado e café na mão, olha desolado para um forno gigante de padaria apagado. Um caminhãozinho descarrega sacos de açúcar na porta, a fila de pãezinhos crus só cresce, e na engrenagem do forno falta uma pecinha. Não aparece vitamina nem abelha.",
+    "foco": "50% 35%",
+    "alt": "Chegou glicose na padaria, mas o forno do Mito não acendeu"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-241-macete.png",
+    "cena": "O mesmo forno, agora aceso: uma abelha pequena e simpática (a B1) encaixa a pecinha que faltava na engrenagem, e os pãezinhos (o piruvato) entram no forno. Ao lado, dois montinhos redondos iguais acendem como lâmpadas, lembrando os corpos mamilares.",
+    "foco": "50% 40%",
+    "alt": "Sem tiamina, a PDH trava"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has had persistent vomiting since bariatric surgery 3 months ago. She is now confused and has horizontal nystagmus, bilateral lateral rectus weakness, and a wide-based gait. Her confusion worsened after an intravenous dextrose infusion. MRI shows signal changes in the mammillary bodies.",
+    "pergunta": "Decreased activity of which enzyme best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Pyruvate carboxylase",
+        "quiz": "Pyruvate carboxylase"
+      },
+      "B": {
+        "texto": "Pyruvate dehydrogenase",
+        "quiz": "Pyruvate DH"
+      },
+      "C": {
+        "texto": "Methylmalonyl-CoA mutase",
+        "quiz": "MMA-CoA mutase"
+      },
+      "D": {
+        "texto": "Lactate dehydrogenase",
+        "quiz": "Lactate DH"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem tiamina, a *PDH* trava",
+    "certa": [
+      "A tiamina (vitamina B1) vira *thiamine pyrophosphate*, cofator da *pyruvate dehydrogenase*, da alfa-cetoglutarato desidrogenase, da transcetolase e da desidrogenase dos aminoácidos de cadeia ramificada. Sem ela, o piruvato não entra no ciclo de Krebs e os neurônios, que dependem de glicose, ficam sem ATP; os *mammillary bodies* e a região periaquedutal sofrem primeiro. Dar glicose antes da tiamina aumenta o fluxo por essa via travada e piora o quadro."
+    ],
+    "termos": [
+      "thiamine pyrophosphate",
+      "pyruvate dehydrogenase",
+      "mammillary bodies",
+      "Wernicke encephalopathy"
+    ],
+    "erradas": {
+      "A": "A *pyruvate carboxylase* usa biotina e transforma piruvato em oxaloacetato na gliconeogênese; não depende de tiamina.",
+      "C": "A *methylmalonyl-CoA mutase* depende de vitamina B12; a falta dela eleva o ácido metilmalônico e lesa o cordão posterior, não os corpos mamilares.",
+      "D": "A *lactate dehydrogenase* usa NADH e continua funcionando; é ela que faz o lactato subir quando a PDH trava."
+    },
+    "macete": {
+      "frase": "Sem a *abelha B1*, o forno da PDH não acende",
+      "apoio": "Pense na abelha B1 como a pecinha da engrenagem do forno: sem ela, o piruvato fica na fila da porta da mitocôndria, e mais açúcar só aumenta a fila. Por isso, no plantão, tiamina entra antes da glicose.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Vômitos depois da bariátrica, nistagmo, marcha alargada e piora logo depois do soro com glicose. Qual enzima ficou sem o cofator?",
+    "palavras_chave": [
+      "bariatric surgery",
+      "persistent vomiting",
+      "nystagmus",
+      "wide-based gait"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Bioquimica",
+      "#Neurologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Que enzima explica o quadro?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

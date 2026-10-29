@@ -1,0 +1,95 @@
+{
+  "dia": 46,
+  "data": "2026-12-17",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Transtorno de pânico",
+  "conceito": "Panic disorder: SSRI plus CBT, benzodiazepines only short-term",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-18",
+  "gancho": "No rodízio do tratamento, qual espeto fica para o longo prazo?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um garçom de rodízio com quatro espetos diante de uma churrasqueira: um assando devagar na brasa, um pão de alho pequeno, um espeto com uma pílula em forma de coração e outro com uma nuvem azul. A plaquinha de duas cores ainda está virada de lado.",
+    "foco": "50% 35%",
+    "alt": "Um garçom de rodízio com quatro espetos diante de uma churrasqueira: um assando devagar na brasa, um pão de alho pequeno, um espeto com uma pílula em forma de coração e outro com uma nuvem azul.",
+    "arquivo": "dia-046.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o garçom serve o espeto que assou devagar e vira a plaquinha para o verde; uma cadeira ao lado tem uma prancheta com balões de conversa (a terapia). O pão de alho chega pequeno e já de saída, com um relogiozinho.",
+    "alt": "Longo prazo no pânico: ISRS e TCC",
+    "arquivo": "dia-046-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has had recurrent, sudden episodes of palpitations, chest tightness, trembling, and fear of dying that peak within 10 minutes. She now avoids driving because she fears another episode. ECG, TSH, and urine toxicology are normal. She will start cognitive behavioral therapy.",
+    "pergunta": "Which is the most appropriate long-term pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Propranolol as needed",
+        "quiz": "Propranolol PRN"
+      },
+      "B": {
+        "texto": "Daily alprazolam",
+        "quiz": "Daily alprazolam"
+      },
+      "C": {
+        "texto": "Sertraline",
+        "quiz": "Sertraline"
+      },
+      "D": {
+        "texto": "Buspirone",
+        "quiz": "Buspirone"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Longo prazo no pânico: *ISRS* e *TCC*",
+    "certa": [
+      "Ataques súbitos e recorrentes com medo de novas crises e mudança de comportamento definem *panic disorder*. O tratamento de primeira linha a longo prazo é um *SSRI*, como a *sertraline*, junto com *cognitive behavioral therapy*. O ISRS começa em dose baixa, porque pode aumentar a ansiedade nas primeiras semanas, e leva de 4 a 6 semanas para agir."
+    ],
+    "termos": [
+      "panic disorder",
+      "SSRI",
+      "cognitive behavioral therapy",
+      "benzodiazepine dependence"
+    ],
+    "erradas": {
+      "A": "Propranolol sob demanda é para ansiedade de desempenho e não previne as crises de pânico.",
+      "B": "Benzodiazepínico diário a longo prazo traz tolerância, dependência e risco de abstinência; serve só como ponte curta.",
+      "D": "A buspirona tem algum papel na ansiedade generalizada, mas não funciona no transtorno de pânico."
+    },
+    "macete": {
+      "frase": "ISRS *assa devagar e fica*; benzo é *só a entrada*",
+      "apoio": "Pegadinha de prova: O NBME costuma perguntar a terapia de longo prazo e oferece o benzodiazepínico, que alivia rápido; a resposta é ISRS com TCC.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Crises que chegam do nada, exames normais e o pedido de um tratamento que dure. O garçom do rodízio traz quatro espetos e só um assa no tempo certo.",
+    "palavras_chave": [
+      "recurrent palpitations",
+      "fear of dying",
+      "avoidance",
+      "long-term treatment"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual remédio a longo prazo no pânico?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

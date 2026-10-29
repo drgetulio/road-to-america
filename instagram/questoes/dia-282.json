@@ -1,0 +1,96 @@
+{
+  "dia": 282,
+  "data": "2027-08-10",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Estado de mal epiléptico",
+  "conceito": "Status epilepticus: IV lorazepam first, then fosphenytoin, levetiracetam or valproate",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-11",
+  "tom": null,
+  "gancho": "Cobrança de pênalti no plantão: *quem bate primeiro?*",
+  "gancho_apoio": "Crise que não para, via aérea garantida e acesso venoso pronto.",
+  "imagem": {
+    "arquivo": "dia-282.png",
+    "cena": "Placa verde de rodovia NEXT STEP com saídas; abaixo, uma prancheta de técnico de futebol com quatro fichas de jogador em cores diferentes (redondas e iguais, uma azul-marinho, uma vermelha, uma amarela e uma verde) e um cronômetro grande já bem além da marquinha de tempo.",
+    "foco": "50% 35%",
+    "alt": "Cobrança de pênalti no plantão: quem bate primeiro?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-282-macete.png",
+    "cena": "Callback: a ficha azul-marinho, agora com forma de travesseiro macio (o benzo que acalma o cérebro), cobra o pênalti primeiro e a bola entra; as fichas vermelha e amarela esperam no banco como segundo tempo, e a verde aguarda no vestiário como prorrogação.",
+    "foco": "50% 45%",
+    "alt": "Mais de 5 minutos: benzodiazepínico primeiro"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man who has epilepsy arrives by ambulance in a generalized tonic-clonic seizure that started 8 minutes ago. Oxygen is given, the airway is supported, and IV access is obtained. Fingerstick glucose is 96 mg/dL. The seizure continues.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Intravenous lorazepam",
+        "quiz": "Lorazepam IV"
+      },
+      "B": {
+        "texto": "Intravenous fosphenytoin",
+        "quiz": "Fosfenitoína IV"
+      },
+      "C": {
+        "texto": "Intravenous valproate",
+        "quiz": "Valproato IV"
+      },
+      "D": {
+        "texto": "Propofol infusion",
+        "quiz": "Propofol"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Mais de 5 minutos: *benzodiazepínico primeiro*",
+    "certa": [
+      "Crise que dura mais de 5 minutos já é *status epilepticus*. Com via aérea, oxigênio e glicemia resolvidos, a primeira droga é um *benzodiazepínico*: *lorazepam IV* (ou midazolam IM, ou diazepam IV). Se a crise continuar, entra a segunda linha (fosphenytoin, levetiracetam ou valproate) e, depois dela, anestesia com intubação."
+    ],
+    "termos": [
+      "status epilepticus",
+      "lorazepam",
+      "second-line antiseizure drug",
+      "refractory status epilepticus"
+    ],
+    "erradas": {
+      "B": "Fosfenitoína é segunda linha e entra depois do benzodiazepínico.",
+      "C": "Valproato também é segunda linha e não vem antes do benzodiazepínico.",
+      "D": "Propofol é para o estado de mal refratário, depois da falha das duas primeiras linhas."
+    },
+    "macete": {
+      "frase": "No pênalti do status, *o batedor oficial é o benzo*",
+      "apoio": "Na imagem, a prancheta do técnico tem os batedores em fila. O primeiro a chutar é o benzodiazepínico; o segundo tempo é fosfenitoína, levetiracetam ou valproato; a prorrogação é a anestesia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Crise tônico-clônica há 8 minutos, via aérea garantida, acesso venoso pronto e glicemia normal. A placa do Plantão de Terça mostra as saídas. Qual é o próximo passo?",
+    "palavras_chave": [
+      "epilepsy",
+      "generalized tonic-clonic seizure",
+      "seizure lasting 8 minutes",
+      "prehospital care"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Neurologia",
+      "#Neurology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Crise há 8 minutos, acesso pronto: próximo passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

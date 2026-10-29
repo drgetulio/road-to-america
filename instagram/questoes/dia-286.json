@@ -1,0 +1,96 @@
+{
+  "dia": 286,
+  "data": "2027-08-14",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Condicionamento operante",
+  "conceito": "Operant conditioning: negative reinforcement removes an aversive stimulus to increase a behavior",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-15",
+  "tom": null,
+  "gancho": "O carro apita até você obedecer. *Que aprendizado é esse?*",
+  "gancho_apoio": "Apito sem cinto, silêncio com cinto. Duas semanas depois, virou hábito.",
+  "imagem": {
+    "arquivo": "dia-286.png",
+    "cena": "Painel de carro desenhado do banco do motorista: um sininho de alarme tremendo e soltando ondas de som, o cinto solto e a mão da motorista indo até a fivela; pela janela, uma placa de trânsito em forma de balança de tribunal.",
+    "foco": "50% 35%",
+    "alt": "O carro apita até você obedecer. Que aprendizado é esse?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-286-macete.png",
+    "cena": "Callback: o cinto faz clique, o sininho dorme de touca num travesseirinho e, lá fora, uma placa de seta para cima mostra o comportamento subindo.",
+    "foco": "50% 45%",
+    "alt": "Reforço negativo: tira o chato, aumenta o comportamento"
+  },
+  "questao": {
+    "vinheta": "A 35-year-old woman's new car sounds a loud, continuous beep whenever she drives without her seatbelt fastened. The beeping stops as soon as she buckles up. After two weeks, she fastens the seatbelt every time before starting the car.",
+    "pergunta": "Which learning process best explains this change?",
+    "alternativas": {
+      "A": {
+        "texto": "Negative reinforcement",
+        "quiz": "Reforço negativo"
+      },
+      "B": {
+        "texto": "Positive punishment",
+        "quiz": "Punição positiva"
+      },
+      "C": {
+        "texto": "Negative punishment",
+        "quiz": "Punição negativa"
+      },
+      "D": {
+        "texto": "Positive reinforcement",
+        "quiz": "Reforço positivo"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Reforço negativo: *tira o chato*, aumenta o comportamento",
+    "certa": [
+      "No *operant conditioning*, reforço aumenta um comportamento e punição diminui; *negativo* quer dizer tirar alguma coisa. Ela passa a pôr o cinto (o comportamento aumenta) porque isso *remove o estímulo aversivo*, o apito. Isso é *negative reinforcement*."
+    ],
+    "termos": [
+      "operant conditioning",
+      "negative reinforcement",
+      "aversive stimulus",
+      "positive punishment"
+    ],
+    "erradas": {
+      "B": "Punição positiva acrescenta algo desagradável para diminuir um comportamento, e aqui o comportamento aumenta.",
+      "C": "Punição negativa retira algo bom para diminuir um comportamento, como tirar o videogame do filho.",
+      "D": "Reforço positivo acrescentaria algo agradável, como um prêmio, para aumentar o comportamento."
+    },
+    "macete": {
+      "frase": "*Tira o apito, sobe o cinto*: reforço negativo",
+      "apoio": "Na imagem, o sininho do painel toca até o cinto fazer clique. Reforço sempre faz o comportamento subir; negativo é o que sai de cena. Punição não é sinônimo de reforço negativo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Carro novo, apito insistente sem cinto e silêncio quando o cinto encaixa. Duas semanas depois, ela nem pensa: coloca o cinto antes de ligar o carro. Qual é o nome disso na prova?",
+    "palavras_chave": [
+      "seatbelt alarm",
+      "behavior change",
+      "learning theory",
+      "behavioral science"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Psicologia",
+      "#BehavioralScience"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "O apito some quando o cinto encaixa: o que é?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

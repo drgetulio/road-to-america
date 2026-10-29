@@ -1,0 +1,93 @@
+{
+  "dia": 189,
+  "data": "2027-05-09",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do pré-natal: Placenta prévia (dia 53), Isoimunização Rh (dia 88), Diabetes gestacional (dia 116)",
+  "conceito": "Prenatal care remix: Painless third-trimester bleeding + Rh-negative mother + Gestational diabetes screening at 24 to 28 weeks with an oral glucose test",
+  "personagem": null,
+  "gancho_data": "Dia das Mães (segundo domingo de maio, 9/5/2027).",
+  "remix_de": [
+    53,
+    88,
+    116
+  ],
+  "explicacao_em": "2027-05-10",
+  "tom": null,
+  "gancho": "Dia das Mães: quatro cartões do *pré-natal*, só um certo",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-189.png",
+    "cena": "Um toca-discos de DJ enfeitado com flores para o Dia das Mães, com três discos de rótulos com ícones simples (um transdutor de ultrassom, uma gota com um escudinho e um cubo de açúcar) e um quarto disco com um calendário tentando entrar na pilha.",
+    "foco": "50% 35%",
+    "alt": "Dia das Mães: quatro cartões do pré-natal, só um certo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-189-macete.png",
+    "cena": "O disco do cubo de açúcar toca e acende verde; os discos do transdutor e da gota ganham um risco vermelho, e o disco do calendário é levado de volta para o fim da fila, perto de uma ampulheta quase vazia.",
+    "alt": "Entre 24 e 28 semanas, a curva do açúcar"
+  },
+  "questao": {
+    "vinheta": "A study group preparing for an obstetrics exam trades four prenatal care cards on Mother's Day. Three of the cards contain an error.",
+    "pergunta": "Which card follows current US guidelines?",
+    "alternativas": {
+      "A": {
+        "texto": "Painless bleeding at 34 weeks: digital cervical exam before ultrasound",
+        "quiz": "Toque antes do US",
+        "dia": 53
+      },
+      "B": {
+        "texto": "Rh-negative, unsensitized mother: anti-D only after delivery",
+        "quiz": "Anti-D só no parto",
+        "dia": 88
+      },
+      "C": {
+        "texto": "No prior diabetes: glucose screen at 24 to 28 weeks",
+        "quiz": "Glicose 24 a 28 sem",
+        "dia": 116
+      },
+      "D": {
+        "texto": "Group B strep vaginal-rectal culture at 28 weeks",
+        "quiz": "GBS com 28 semanas"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Entre *24 e 28 semanas*, a curva do açúcar",
+    "certa": [
+      "Toda gestante sem diabetes prévio faz rastreamento de *gestational diabetes* entre 24 e 28 semanas, com teste oral de glicose (*1-hour 50-g glucose challenge* e, se alterado, 3 horas com 100 g; ou 75 g em 2 horas). Gestantes de alto risco podem ser testadas mais cedo, mas o rastreamento universal acontece nessa janela."
+    ],
+    "termos": [
+      "gestational diabetes",
+      "glucose challenge test",
+      "anti-D immune globulin",
+      "placenta previa"
+    ],
+    "erradas": {
+      "A": "Dia 53: sangramento indolor no terceiro trimestre pede ultrassom antes de qualquer toque, porque a placenta prévia pode sangrar muito com o exame digital.",
+      "B": "Dia 88: a mãe Rh negativo não sensibilizada recebe anti-D com 28 semanas e de novo até 72 horas após o parto de bebê Rh positivo, não só no parto.",
+      "D": "Intruso: a cultura para estreptococo do grupo B é feita entre 36 0/7 e 37 6/7 semanas, não com 28."
+    },
+    "macete": {
+      "frase": "Pré-natal em três discos: *primeiro a foto, depois o toque* (placenta prévia); *anti-D com 28 e no parto* (Rh); *açúcar entre 24 e 28* (diabetes gestacional). O GBS só entra no fim da festa, com 36 semanas.",
+      "apoio": "O NBME gosta de oferecer o toque vaginal no sangramento do terceiro trimestre e datas trocadas (GBS com 28, anti-D só no parto); decore as janelas de cada exame.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Feliz Dia das Mães! O Remix de hoje revisa três conceitos do pré-natal que já passaram por aqui (dias 53, 88 e 116) e traz um intruso. Só um cartão segue a diretriz americana.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Pré-natal: qual cartão está certo?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

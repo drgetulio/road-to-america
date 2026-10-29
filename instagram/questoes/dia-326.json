@@ -1,0 +1,96 @@
+{
+  "dia": 326,
+  "data": "2027-09-23",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Síndrome neuroléptica maligna",
+  "conceito": "Neuroleptic malignant syndrome: rigidity, fever and high CK, stop the antipsychotic, dantrolene or bromocriptine",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-24",
+  "tom": null,
+  "gancho": "O espeto virou *cano de chumbo* e começou a ferver",
+  "gancho_apoio": "No rodízio de quinta, o garçom precisa saber qual espeto devolver e qual servir.",
+  "imagem": {
+    "arquivo": "dia-326.png",
+    "cena": "Garçom de rodízio segura um espeto que virou um cano de chumbo cinza e rígido, soltando vapor como chaleira; ao lado, um semáforo em forma de gota está com todas as luzes apagadas. As plaquinhas verde e vermelha estão no bolso do avental.",
+    "foco": "50% 35%",
+    "alt": "O espeto virou cano de chumbo e começou a ferver"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-326-macete.png",
+    "cena": "Callback: o garçom levanta a plaquinha vermelha e devolve o espeto de cano de chumbo; um ventilador e um balde de gelo esfriam a cena, e ele gira uma chave dourada que tranca um portãozinho cheio de bolinhas de cálcio dentro de uma fibra muscular listrada.",
+    "foco": "50% 45%",
+    "alt": "Síndrome neuroléptica maligna: suspender, esfriar e dantrolene"
+  },
+  "questao": {
+    "vinheta": "A 29-year-old man with schizophrenia received IM haloperidol 3 days ago. He is now confused and diaphoretic. Temperature is 40.1°C, heart rate 128/min, and BP 168/98 mm Hg. He has generalized lead-pipe rigidity, normal reflexes, and no clonus. Serum CK is 18,000 U/L.",
+    "pergunta": "Besides stopping haloperidol, cooling, and IV fluids, which drug is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Benztropine",
+        "quiz": "Benztropina"
+      },
+      "B": {
+        "texto": "Cyproheptadine",
+        "quiz": "Ciproeptadina"
+      },
+      "C": {
+        "texto": "Dantrolene",
+        "quiz": "Dantrolene"
+      },
+      "D": {
+        "texto": "Olanzapine",
+        "quiz": "Olanzapina"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Síndrome neuroléptica maligna: *suspender, esfriar e dantrolene*",
+    "certa": [
+      "Febre alta, rigidez em cano de chumbo, instabilidade autonômica, confusão e CK muito alta dias depois de antipsicótico é *neuroleptic malignant syndrome*, causada pelo bloqueio D2 no hipotálamo e no estriado. Além de suspender o remédio e dar suporte (resfriamento e hidratação para proteger o rim da rabdomiólise), nos casos graves usa-se *dantrolene*, que bloqueia o *ryanodine receptor* e reduz a liberação de cálcio no músculo. A *bromocriptine*, agonista dopaminérgico, é a outra opção."
+    ],
+    "termos": [
+      "neuroleptic malignant syndrome",
+      "lead-pipe rigidity",
+      "dantrolene (ryanodine receptor)",
+      "bromocriptine"
+    ],
+    "erradas": {
+      "A": "*Benztropina* trata distonia aguda e parkinsonismo do antipsicótico, sem febre alta nem CK nas alturas.",
+      "B": "*Ciproeptadina* é o antídoto da síndrome serotoninérgica, que tem clônus e hiper-reflexia, e não rigidez com reflexos normais.",
+      "D": "Trocar por outro antipsicótico mantém o bloqueio D2 e piora o quadro; o antipsicótico só volta semanas depois da recuperação."
+    },
+    "macete": {
+      "frase": "*Cano de chumbo fervendo*: devolve o espeto, esfria, hidrata e fecha o portão do cálcio",
+      "apoio": "Na imagem, o garçom levanta a plaquinha vermelha para o espeto do antipsicótico, liga o ventilador e entrega a chave que tranca o portão do cálcio dentro do músculo (o dantrolene no receptor de rianodina).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 29 anos recebeu haloperidol intramuscular há 3 dias. Agora está confuso, suando, com 40,1 °C, pressão alta, rigidez generalizada, reflexos normais, sem clônus, e CK de 18.000 U/L. Além de suspender o haloperidol, resfriar e hidratar, qual remédio entra?",
+    "palavras_chave": [
+      "schizophrenia",
+      "IM haloperidol",
+      "hyperthermia",
+      "very high CK"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Psiquiatria",
+      "#Psychiatry"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Rigidez, febre e CK alta: qual remédio?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

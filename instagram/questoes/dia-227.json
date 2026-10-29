@@ -1,0 +1,99 @@
+{
+  "dia": 227,
+  "data": "2027-06-16",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Tetralogia de Fallot",
+  "conceito": "Tetralogy of Fallot: anterosuperior displacement of the infundibular septum causes all four defects",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-17",
+  "tom": null,
+  "gancho": "Coração de bota e *crise de cianose* na mamada",
+  "gancho_apoio": "Quatro defeitos e uma origem só. Que erro da obra explica tudo?",
+  "imagem": {
+    "arquivo": "dia-227.png",
+    "cena": "Uma casinha vista de cima, desenhada como planta de arquitetura, com o contorno em forma de bota. Um capacete de obra e uma colher de pedreiro descansam ao lado, e o problema ainda não aparece.",
+    "foco": "50% 35%",
+    "alt": "Coração de bota e crise de cianose na mamada"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-227-macete.png",
+    "cena": "Callback: na planta, uma parede está destacada em vermelho, empurrada para a frente e para cima. Por causa dela, a porta do quarto da direita ficou estreita, esse quarto engrossou, a varanda ficou dividida entre dois quartos e abriu um buraco na parede do meio.",
+    "foco": "50% 45%",
+    "alt": "Um septo fora do lugar, quatro defeitos"
+  },
+  "questao": {
+    "vinheta": "A 4-month-old girl has episodes of irritability and deep cyanosis during feeding that improve when her knees are pulled to her chest. She has a harsh systolic ejection murmur along the upper left sternal border. Chest x-ray shows a boot-shaped heart with decreased pulmonary vascular markings.",
+    "pergunta": "Which embryologic abnormality best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Anterosuperior displacement of the infundibular septum",
+        "quiz": "Septo infundibular"
+      },
+      "B": {
+        "texto": "Failure of the aorticopulmonary septum to spiral",
+        "quiz": "Septo não espiralou"
+      },
+      "C": {
+        "texto": "Failure of the truncus arteriosus to divide",
+        "quiz": "Tronco não dividiu"
+      },
+      "D": {
+        "texto": "Defective fusion of the endocardial cushions",
+        "quiz": "Coxim endocárdico"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Um septo fora do lugar, *quatro defeitos*",
+    "certa": [
+      "Na *tetralogy of Fallot*, o *infundibular septum* se desloca para a frente e para cima. Esse único erro estreita a via de saída do ventrículo direito (*pulmonary stenosis*), deixa uma *VSD* por desalinhamento e faz a aorta cavalgar o septo (*overriding aorta*); a hipertrofia do ventrículo direito vem da sobrecarga. Dobrar os joelhos no peito (ou agachar, na criança maior) aumenta a resistência sistêmica e manda mais sangue para o pulmão."
+    ],
+    "termos": [
+      "tetralogy of Fallot",
+      "infundibular septum",
+      "boot-shaped heart",
+      "tet spell"
+    ],
+    "erradas": {
+      "B": "Se o septo aorticopulmonar não espirala, nasce a *transposition of the great arteries*, com cianose grave logo ao nascer e coração em ovo deitado.",
+      "C": "Tronco que não se divide é o *persistent truncus arteriosus*, com um único vaso saindo do coração e fluxo pulmonar aumentado.",
+      "D": "Falha dos coxins endocárdicos dá o defeito do septo atrioventricular, muito associado à síndrome de Down, sem obstrução da saída pulmonar."
+    },
+    "macete": {
+      "frase": "*PROVe*: Pulmonary stenosis, RVH, Overriding aorta, VSD",
+      "apoio": "Na imagem, uma única parede da obra foi colocada para a frente e para cima: a porta do quarto direito ficou apertada, o quarto engrossou, a varanda ficou dividida entre dois quartos e abriu um buraco na parede do meio. A casa ficou em forma de bota.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bebê de 4 meses com crises de choro e cianose na mamada, que melhoram com os joelhos dobrados no peito, sopro sistólico na borda esternal esquerda alta e coração em bota no raio X. De onde vêm os quatro defeitos?",
+    "palavras_chave": [
+      "cyanotic spells",
+      "knee-chest position",
+      "ejection murmur",
+      "boot-shaped heart"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Embriologia",
+      "#Embryology",
+      "#Cardiologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Coração em bota: qual erro embriológico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

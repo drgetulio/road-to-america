@@ -1,0 +1,87 @@
+{
+  "dia": 208,
+  "data": "2027-05-28",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Otite média aguda",
+  "conceito": "Acute otitis media: high-dose amoxicillin first-line",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-29",
+  "tom": null,
+  "gancho": "O tímpano virou *zabumba* estufada. Qual xarope sai do balcão?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-208.png",
+    "cena": "No balcão de uma farmácia de interior com ampulheta, uma zabumba de festa junina vermelha e estufada, prestes a estourar, ao lado de quatro frascos sem rótulo; bandeirinhas de São João enfeitam o teto.",
+    "foco": "50% 35%",
+    "alt": "O tímpano virou zabumba estufada. Qual xarope sai do balcão?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-208-macete.png",
+    "cena": "Do balcão sai um frasco grande de xarope cor-de-rosa com duas colheres medidoras lado a lado (dose dobrada); a pele da zabumba volta a ficar lisinha e afinada, e um passarinho de forró dança em cima dela.",
+    "alt": "Otite média aguda: amoxicilina em dose alta"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had a fever of 39.2°C (102.6°F), ear pulling, and irritability for 2 days. Otoscopy shows a bulging, erythematous, immobile right tympanic membrane. He attends day care, has no drug allergies, and took no antibiotics during the last month.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral azithromycin",
+        "quiz": "Azitromicina"
+      },
+      "B": {
+        "texto": "Ciprofloxacin-dexamethasone ear drops",
+        "quiz": "Gotas de cipro"
+      },
+      "C": {
+        "texto": "Oral trimethoprim-sulfamethoxazole",
+        "quiz": "Sulfa-trimetoprima"
+      },
+      "D": {
+        "texto": "High-dose oral amoxicillin",
+        "quiz": "Amoxicilina alta"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Otite média aguda: *amoxicilina em dose alta*",
+    "certa": [
+      "Membrana timpânica abaulada, vermelha e sem mobilidade é *acute otitis media*. Com febre de 39 °C ou mais, a AAP indica antibiótico em qualquer idade, e o de primeira linha é *high-dose amoxicillin* (80 a 90 mg/kg/dia, dividida em duas doses). A dose alta vence o *Streptococcus pneumoniae* com resistência intermediária à penicilina."
+    ],
+    "termos": [
+      "acute otitis media",
+      "high-dose amoxicillin",
+      "bulging tympanic membrane",
+      "Streptococcus pneumoniae"
+    ],
+    "erradas": {
+      "A": "A azitromicina tem resistência alta entre pneumococos e não é primeira linha; fica para alergia grave à penicilina.",
+      "B": "Gotas otológicas servem para otite externa ou para otite com tubo de ventilação ou tímpano perfurado; aqui a membrana está íntegra.",
+      "C": "Sulfametoxazol-trimetoprima tem resistência alta entre pneumococos e Haemophilus e não é recomendado para otite média."
+    },
+    "macete": {
+      "frase": "O tímpano é a *zabumba estufada* do forró; o primeiro remédio é o velho *xarope rosa* de amoxicilina, em *dose dobrada* (80 a 90 mg/kg/dia). Usou amoxicilina há 30 dias ou tem conjuntivite junto: *amoxicilina-clavulanato*.",
+      "apoio": "O NBME troca para amoxicilina-clavulanato quando houve amoxicilina nos últimos 30 dias ou conjuntivite purulenta junto (Haemophilus); alergia não grave à penicilina pede cefdinir ou cefuroxima.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia na pediatria. Febre alta, criança mexendo na orelha e uma otoscopia de livro. A escolha certa depende da dose tanto quanto do nome do remédio.",
+    "palavras_chave": [
+      "ear pulling",
+      "fever",
+      "day care",
+      "otoscopy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Otite média aguda com febre alta. O que dar?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

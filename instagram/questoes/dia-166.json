@@ -1,0 +1,88 @@
+{
+  "dia": 166,
+  "data": "2027-04-16",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Antipsicóticos típicos",
+  "conceito": "Typical antipsychotics: D2 blockade in the nigrostriatal pathway causes extrapyramidal effects",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-17",
+  "tom": null,
+  "gancho": "Tia Meia-Vida e o *mapa do metrô* da dopamina",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-166.png",
+    "cena": "Tia Meia-Vida aponta com a caneta para um mapa de metrô colorido na parede da farmácia, com quatro linhas saindo da mesma estação.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida aponta com a caneta para um mapa de metrô colorido na parede da farmácia, com quatro linhas saindo da mesma estação."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-166-macete.png",
+    "cena": "O mapa ganha vida: na linha que leva a um salão de dança, os trens estão engarrafados e os dançarinos pararam como estátuas; a Tia desentope a linha com uma chave inglesa em forma de pílula. As outras seguem livres: uma vai para um balão de pensamento, uma para uma lousa e uma para uma garrafa de leite.",
+    "alt": "Movimento travado: via nigrostriatal"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man is started on haloperidol for acute psychosis. The next morning, he develops a sustained, painful twisting of his neck to the right, and his eyes deviate upward. He is alert and afebrile, with normal vital signs.",
+    "pergunta": "Blockade of dopamine D2 receptors in which pathway best explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Mesolimbic",
+        "quiz": "Mesolímbica"
+      },
+      "B": {
+        "texto": "Mesocortical",
+        "quiz": "Mesocortical"
+      },
+      "C": {
+        "texto": "Nigrostriatal",
+        "quiz": "Nigroestriatal"
+      },
+      "D": {
+        "texto": "Tuberoinfundibular",
+        "quiz": "Tuberoinfundibular"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Movimento travado: via *nigrostriatal*",
+    "certa": [
+      "Torcicolo doloroso e crise oculógira horas depois de começar haloperidol é *acute dystonia*, um *extrapyramidal symptom*. O bloqueio de *D2* na via *nigrostriatal* desequilibra dopamina e acetilcolina nos núcleos da base. O tratamento é anticolinérgico (*benztropine*) ou difenidramina."
+    ],
+    "termos": [
+      "D2 receptor",
+      "nigrostriatal pathway",
+      "acute dystonia",
+      "extrapyramidal symptoms",
+      "benztropine"
+    ],
+    "erradas": {
+      "A": "Bloquear a via mesolímbica é o efeito terapêutico: reduz alucinações e delírios (sintomas positivos).",
+      "B": "Bloquear a via mesocortical pode piorar sintomas negativos e cognitivos, mas não causa distonia.",
+      "D": "Bloquear a via tuberoinfundibular tira o freio da prolactina: galactorreia, amenorreia e ginecomastia."
+    },
+    "macete": {
+      "frase": "Nigro-*estriado* é a *estrada* do movimento: bloqueou, engarrafou. Regra dos 4 do trânsito (aproximada): distonia em *horas*, acatisia em *dias*, parkinsonismo em *semanas* e discinesia tardia em *meses*.",
+      "apoio": "O NBME pede a via a partir do efeito: movimento é nigroestriatal, prolactina é tuberoinfundibular, sintoma positivo é mesolímbica e sintoma negativo é mesocortical.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com o mapa do metrô da dopamina. Um antipsicótico típico, quatro vias possíveis e um efeito adverso que aparece na manhã seguinte. Qual linha travou?",
+    "palavras_chave": [
+      "haloperidol",
+      "neck twisting",
+      "upward eye deviation",
+      "dopamine pathways"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Distonia com haloperidol: qual via?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

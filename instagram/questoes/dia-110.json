@@ -1,0 +1,96 @@
+{
+  "dia": 110,
+  "data": "2027-02-19",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Inibidores da ECA",
+  "conceito": "ACE inhibitors: bradykinin buildup causes cough and angioedema, contraindicated in pregnancy",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-20",
+  "tom": null,
+  "gancho": "Tia Meia-Vida desligou a *faxineira* e a poeira tomou conta",
+  "gancho_apoio": "Remédio novo para pressão, tosse seca há dois meses e lábios inchados hoje. O que acumulou?",
+  "imagem": {
+    "arquivo": "dia-110.png",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, olha intrigada para uma vassoura robô desligada no canto. Bolinhas fofas de poeira se acumulam pelo chão e algumas sobem até um sininho de vento pendurado na porta, que não para de tocar.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida olha uma vassoura robô desligada enquanto a poeira se acumula e faz o sininho tocar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-110-macete.png",
+    "cena": "Callback: as bolinhas de poeira enchem um balão que vai inchando perto do sininho. Tia Meia-Vida religa a vassoura robô, que suga a poeira, e coloca um cadeado numa portinha ao lado (o BRA trancando o receptor).",
+    "foco": "50% 40%",
+    "alt": "A poeira enche um balão; Tia Meia-Vida religa a vassoura robô e tranca uma portinha com cadeado."
+  },
+  "questao": {
+    "vinheta": "A 54-year-old woman with hypertension started a new medication 2 months ago. Since then she has had a persistent dry cough without fever or wheezing. Today she has painless swelling of the lips and tongue without hives or itching. Serum potassium is mildly elevated.",
+    "pergunta": "Accumulation of which substance best explains her cough and swelling?",
+    "alternativas": {
+      "A": {
+        "texto": "Angiotensin II",
+        "quiz": "Angiotensina II"
+      },
+      "B": {
+        "texto": "Bradykinin",
+        "quiz": "Bradicinina"
+      },
+      "C": {
+        "texto": "Histamine",
+        "quiz": "Histamina"
+      },
+      "D": {
+        "texto": "Leukotriene D4",
+        "quiz": "Leucotrieno D4"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "IECA: *bradicinina* acumulada",
+    "certa": [
+      "A enzima conversora de angiotensina (ECA, também chamada cininase II) transforma angiotensina I em II e degrada a bradicinina. O inibidor da ECA (captopril, enalapril, lisinopril) acumula bradicinina, que causa tosse seca e angioedema sem urticária; o potássio sobe porque cai a aldosterona. No angioedema, o remédio é suspenso para sempre, e IECA e BRA são contraindicados na gestação."
+    ],
+    "termos": [
+      "ACE inhibitors",
+      "bradykinin",
+      "angioedema",
+      "dry cough"
+    ],
+    "erradas": {
+      "A": "Com o IECA, a angiotensina II cai, não sobe; é justamente assim que a pressão baixa.",
+      "C": "O angioedema por histamina vem com urticária e coceira, como na alergia; aqui não há nenhuma das duas.",
+      "D": "O leucotrieno D4 participa da asma e da broncoconstrição, sem relação com o IECA."
+    },
+    "macete": {
+      "frase": "Desligou a *faxineira* ECA: a poeira de bradicinina se acumula",
+      "apoio": "Na imagem, a Tia Meia-Vida olha a vassoura robô desligada e a poeira que faz o sininho tocar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na farmácia com a Tia Meia-Vida: remédio novo para pressão, tosse que não passa e um inchaço que assusta. Qual substância sobrou?",
+    "palavras_chave": [
+      "hypertension",
+      "dry cough",
+      "lip and tongue swelling",
+      "new medication"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Cardiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "IECA, tosse e lábio inchado: o que acumulou?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

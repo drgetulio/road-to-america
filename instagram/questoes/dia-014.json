@@ -1,0 +1,100 @@
+{
+  "dia": 14,
+  "data": "2026-11-15",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Agamaglobulinemia de Bruton (dia 8), Deficiência de 21-hidroxilase (dia 10), Ponto de corte da HbA1c (dia 13)",
+  "conceito": "Remix: Bruton agammaglobulinemia + 21-hydroxylase deficiency + Lowering a diagnostic cutoff (HbA1c)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    8,
+    10,
+    13
+  ],
+  "explicacao_em": "2026-11-16",
+  "tom": null,
+  "gancho": "*Remix*: a chave do Bruton, o forno 21 ou a rede?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-014.png",
+    "cena": "O toca-discos vermelho e três discos com ícones no rótulo: uma chave dourada, um forninho de padaria e uma rede de pesca. Um quarto disco misterioso espia de uma capa lisa, e a agulha paira no ar.",
+    "foco": "50% 35%",
+    "alt": "Remix: a chave do Bruton, o forno 21 ou a rede?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-014-macete.png",
+    "cena": "Callback do toca-discos: a agulha pousa no disco da chave dourada, que toca notas verdes, com o presente aberto da mãe em cima, marcando o fim da proteção aos 6 meses. Os outros discos ficam de lado com o símbolo vermelho de pausa.",
+    "alt": "O vale-presente vence aos 6 meses"
+  },
+  "questao": {
+    "vinheta": "At a Sunday study group, students write four flashcards from last week's topics: a humoral immunodeficiency, an adrenal enzyme defect and diagnostic test cutoffs.",
+    "pergunta": "Which flashcard is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "21-hydroxylase deficiency causes hypertension with hypokalemia",
+        "quiz": "21-OH: hipertensão",
+        "dia": 10
+      },
+      "B": {
+        "texto": "Lowering a diagnostic cutoff raises specificity",
+        "quiz": "Corte ↓: espec. ↑",
+        "dia": 13
+      },
+      "C": {
+        "texto": "X-linked hyper-IgM syndrome: B cells are absent",
+        "quiz": "Hiper-IgM: sem B"
+      },
+      "D": {
+        "texto": "Bruton agammaglobulinemia: infections start around 6 months of age",
+        "quiz": "Bruton: após 6 meses",
+        "dia": 8
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O vale-presente vence aos 6 meses",
+    "certa": [
+      "Na agamaglobulinemia de Bruton (dia 8), o bebê fica protegido pela IgG que passou da mãe pela placenta, e as infecções bacterianas começam quando ela acaba, por volta dos 6 meses. É a única frase certa, e se você errou, volte ao dia 8 e refaça antes do próximo remix."
+    ],
+    "termos": [
+      "X-linked agammaglobulinemia",
+      "21-hydroxylase deficiency",
+      "sensitivity vs specificity",
+      "hyper-IgM syndrome"
+    ],
+    "erradas": {
+      "A": "Dia 10: a deficiência de 21-hidroxilase perde sal, com hipotensão e potássio alto; hipertensão com potássio baixo é da 11-beta-hidroxilase.",
+      "B": "Dia 13: baixar o ponto de corte aumenta a sensibilidade e diminui a especificidade.",
+      "C": "Intruso: na hiper-IgM ligada ao X as células B existem, mas falta o CD40 ligante para trocar de classe."
+    },
+    "macete": {
+      "frase": "O vale-presente da mãe vence aos 6 meses (Bruton), o forno 21 deixa o pão sem sal e a malha fina pega chinelo.",
+      "apoio": "Pegadinha de prova: O NBME cobra a idade de início: imunodeficiência só de anticorpos costuma aparecer depois dos 6 meses; infecções graves nas primeiras semanas lembram defeito de célula T ou combinado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo do Step 1: dias 8, 10 e 13, mais um intruso. O selo de cada alternativa mostra o dia original.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RevisaoEspacada",
+      "#SpacedRepetition",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual cartão está certo?"
+  },
+  "exemplo": false
+}

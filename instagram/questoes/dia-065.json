@@ -1,0 +1,96 @@
+{
+  "dia": 65,
+  "data": "2027-01-05",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "AVC isquêmico agudo",
+  "conceito": "Acute stroke: noncontrast head CT first to exclude hemorrhage",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-06",
+  "gancho": "Fala enrolada, braço fraco e *o relógio correndo*: qual saída?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um anel de tomógrafo, um desentupidor de pia e um comprimido. Um carrinho em forma de cérebro freia no entroncamento, com um cano de água sobre o capô, sem dar para ver se está entupido ou furado.",
+    "foco": "50% 35%",
+    "alt": "Fala enrolada, braço fraco e o relógio correndo: qual saída?",
+    "arquivo": "dia-065.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da rodovia: o carrinho-cérebro entra primeiro na saída do anel de tomógrafo, que acende uma lanterna e mostra o cano por dentro, entupido e sem vazamento. Só então o desentupidor, na caixa de ferramentas, ganha luz verde.",
+    "alt": "Primeiro a tomografia sem contraste",
+    "arquivo": "dia-065-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man is brought to the emergency department 50 minutes after sudden right face and arm weakness and difficulty speaking. Blood pressure is 172/94 mm Hg and fingerstick glucose is 118 mg/dL. Examination confirms right hemiparesis and expressive aphasia.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Noncontrast CT of the head",
+        "quiz": "Noncontrast head CT"
+      },
+      "B": {
+        "texto": "IV alteplase immediately",
+        "quiz": "IV alteplase now"
+      },
+      "C": {
+        "texto": "MRI of the brain with diffusion",
+        "quiz": "Brain MRI"
+      },
+      "D": {
+        "texto": "Oral aspirin 325 mg",
+        "quiz": "Aspirin 325 mg"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *tomografia sem contraste*",
+    "certa": [
+      "Déficit focal súbito com glicemia normal é AVC até prova em contrário, e o primeiro passo é a *noncontrast head CT*: ela é rápida, está disponível e separa isquemia de hemorragia, que contraindica trombólise. Com a TC sem sangue e o paciente dentro da janela, entra a trombólise venosa (*alteplase* ou *tenecteplase*), e a angiotomografia procura oclusão de grande vaso para trombectomia."
+    ],
+    "termos": [
+      "acute ischemic stroke",
+      "noncontrast head CT",
+      "intracranial hemorrhage",
+      "thrombolysis"
+    ],
+    "erradas": {
+      "B": "Trombolítico antes da imagem pode ser desastroso se for hemorragia; a TC vem antes.",
+      "C": "A ressonância com difusão é mais sensível para isquemia, mas é lenta e não deve atrasar a decisão; no pronto-socorro, a TC vem primeiro.",
+      "D": "Aspirina antes de excluir hemorragia é erro, e quem vai receber trombolítico espera 24 horas para o antiagregante."
+    },
+    "macete": {
+      "frase": "Antes do desentupidor, *a lanterna*",
+      "apoio": "Pegadinha de prova: O NBME dá um AVC dentro da janela e oferece o trombolítico como isca; sem imagem, nada de trombólise, e a glicemia capilar vem antes de tudo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Fraqueza súbita no braço e na face, fala travada e o relógio correndo. No Plantão de Terça, três saídas na estrada e só uma vem primeiro.",
+    "palavras_chave": [
+      "sudden hemiparesis",
+      "aphasia",
+      "last known well",
+      "emergency department"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Neurologia",
+      "#Stroke",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o próximo passo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

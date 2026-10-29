@@ -1,0 +1,87 @@
+{
+  "dia": 151,
+  "data": "2027-04-01",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Transtorno factício e simulação",
+  "conceito": "Factitious disorder vs malingering: internal motive (sick role) vs external gain",
+  "personagem": null,
+  "gancho_data": "Dia da Mentira (1/4).",
+  "remix_de": null,
+  "explicacao_em": "2027-04-02",
+  "tom": null,
+  "gancho": "1º de abril: o que separa os dois é o *motivo*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-151.png",
+    "cena": "O garçom do rodízio oferece dois espetos curiosos, um com uma pulseira de hospital e outro com um malote de banco, e a plaquinha da mesa gira no ar, ainda sem decidir a cor.",
+    "foco": "50% 35%",
+    "alt": "O garçom do rodízio oferece dois espetos curiosos, um com uma pulseira de hospital e outro com um malote de banco, e a plaquinha da mesa gira no ar, ainda sem decidir a cor."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-151-macete.png",
+    "cena": "A plaquinha pousa no verde ao lado do espeto da pulseira (motivo de dentro, factício); o espeto do malote fica com o lado vermelho. Uma setinha curva aponta para dentro, para o coração do garçom: o motivo é interno.",
+    "alt": "Sem malote, com pulseira: factitious disorder"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old woman is admitted for the fourth time this year with confusion and a glucose of 38 mg/dL. She has no history of diabetes. Serum insulin is markedly elevated and C-peptide is low. She has no pending lawsuit or disability claim and repeatedly asks for more tests and a longer stay.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Factitious disorder imposed on self",
+        "quiz": "Factício"
+      },
+      "B": {
+        "texto": "Malingering",
+        "quiz": "Simulação"
+      },
+      "C": {
+        "texto": "Illness anxiety disorder",
+        "quiz": "Ansiedade de doença"
+      },
+      "D": {
+        "texto": "Somatic symptom disorder",
+        "quiz": "Sintomas somáticos"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Sem malote, com pulseira: *factitious disorder*",
+    "certa": [
+      "Insulina alta com *C-peptide* baixo indica insulina vinda de fora: alguém está aplicando insulina. Sem ganho externo e com o pedido de ficar internada, o motivo é interno, ocupar o papel de doente (*sick role*), e isso define o *factitious disorder imposed on self*."
+    ],
+    "termos": [
+      "factitious disorder",
+      "malingering",
+      "C-peptide",
+      "sick role"
+    ],
+    "erradas": {
+      "B": "Na simulação (*malingering*) existe um ganho externo, como indenização, afastamento ou fugir de uma obrigação, e a vinheta exclui isso.",
+      "C": "No *illness anxiety disorder* a pessoa tem medo de estar doente, com poucos ou nenhum sintoma, e não fabrica achados.",
+      "D": "No *somatic symptom disorder* os sintomas são reais e não intencionais; o problema é a preocupação desproporcional, sem fabricação."
+    },
+    "macete": {
+      "frase": "Factício pede a *pulseira* de paciente; simulação pede o *malote* (dinheiro, atestado, folga). Pulseira é motivo de dentro, malote é motivo de fora.",
+      "apoio": "O NBME separa os dois pelo motivo: se a vinheta citar processo, benefício, prisão ou folga no trabalho, é simulação; sem ganho externo e com quadro fabricado, é factício.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é 1º de abril, mas a questão é séria: dois diagnósticos parecidos no papel, e a prova separa os dois por um único detalhe. Leia a vinheta prestando atenção no que a paciente ganha, ou não ganha.",
+    "palavras_chave": [
+      "recurrent hypoglycemia",
+      "high insulin",
+      "low C-peptide",
+      "repeated admissions"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Insulina alta e peptídeo C baixo. Qual é?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

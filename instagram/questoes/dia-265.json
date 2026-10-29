@@ -1,0 +1,99 @@
+{
+  "dia": 265,
+  "data": "2027-07-24",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "HIPAA",
+  "conceito": "HIPAA minimum necessary rule: share only what the purpose requires",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-25",
+  "tom": null,
+  "gancho": "Plano de saúde pediu: vai *um pão* ou a padaria inteira?",
+  "gancho_apoio": "O plano de saúde quer os papéis da cirurgia do joelho. O prontuário tem muito mais. O que vai?",
+  "imagem": {
+    "arquivo": "dia-265.png",
+    "cena": "Um entregador de bicicleta para na porta de uma padaria e olha, em dúvida, para uma janelinha pequena no alto da ladeira, de onde só sai uma mão aberta. Ele alterna o olhar entre um saquinho de pão e as cordas prontas para amarrar a padaria inteira na garupa. Ao fundo, um arquivo de gavetas está todo escancarado.",
+    "foco": "50% 35%",
+    "alt": "Plano de saúde pediu: vai um pão ou a padaria inteira?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-265-macete.png",
+    "cena": "O mesmo entregador agora pedala leve, levando só um pão francês num saquinho de papel até a janelinha. O arquivo do fundo está fechado com cadeado, guardando o resto em segurança.",
+    "foco": "50% 40%",
+    "alt": "HIPAA: o mínimo necessário"
+  },
+  "questao": {
+    "vinheta": "A health insurer requests documentation to process a claim for a patient's recent knee arthroscopy. The patient's chart also contains notes about depression treatment and an HIV diagnosis. The office staff member preparing the records asks the physician what to send.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "Send the complete medical record",
+        "quiz": "Prontuário inteiro"
+      },
+      "B": {
+        "texto": "Refuse until a court order is obtained",
+        "quiz": "Ordem judicial"
+      },
+      "C": {
+        "texto": "Send the records with the patient's name removed",
+        "quiz": "Tirar o nome"
+      },
+      "D": {
+        "texto": "Send only the records related to the knee procedure",
+        "quiz": "Só o do joelho"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "HIPAA: o *mínimo necessário*",
+    "certa": [
+      "Pela *HIPAA*, informações podem ser compartilhadas sem autorização para tratamento, pagamento e operações de saúde, mas, fora do tratamento, vale a *minimum necessary rule*: só vai o que o objetivo exige. Para processar o pagamento da artroscopia, o plano precisa da documentação do joelho, e não dos registros de depressão nem do diagnóstico de HIV. Leis estaduais costumam dar proteção extra a saúde mental e HIV."
+    ],
+    "termos": [
+      "HIPAA",
+      "minimum necessary",
+      "treatment, payment and operations",
+      "protected health information"
+    ],
+    "erradas": {
+      "A": "Mandar o prontuário inteiro viola a regra do mínimo necessário e expõe dados sensíveis sem motivo.",
+      "B": "Pagamento é uma finalidade permitida pela HIPAA; não precisa de ordem judicial.",
+      "C": "Tirar o nome impede o plano de processar a conta e não corrige o excesso de informação."
+    },
+    "macete": {
+      "frase": "*Pediu um pão, manda um pão*: minimum necessary",
+      "apoio": "Amarrar a padaria inteira na garupa seria mandar o prontuário inteiro para o plano. A regra do mínimo necessário manda levar só o pão francês, a parte do joelho, e trancar o resto no armário.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "O plano de saúde pede documentos para pagar a cirurgia do joelho, e o prontuário tem outras informações sensíveis. O que você manda?",
+    "palavras_chave": [
+      "insurance claim",
+      "knee arthroscopy",
+      "medical records",
+      "privacy"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#EticaMedica",
+      "#MedicinaNosEUA",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que você manda?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

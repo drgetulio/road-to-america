@@ -1,0 +1,100 @@
+{
+  "dia": 335,
+  "data": "2027-10-02",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Diretivas antecipadas",
+  "conceito": "Advance directive vs durable power of attorney for health care: written wishes vs designated surrogate",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-03",
+  "tom": null,
+  "gancho": "Ele não pode decidir: *quem fica com o controle remoto?*",
+  "gancho_apoio": "Um documento antigo, dois parentes e uma decisão a tomar.",
+  "imagem": {
+    "arquivo": "dia-335.png",
+    "cena": "Sala de estar com uma TV desligada, um controle remoto sobre uma almofada de veludo e, ao redor, um caderno de roteiro fechado e uma claquete de cinema vazia, duas poltronas viradas uma para a outra.",
+    "foco": "50% 35%",
+    "alt": "Ele não pode decidir: quem fica com o controle remoto?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-335-macete.png",
+    "cena": "Callback: o controle remoto foi entregue numa bandeja para a cadeira de diretor com fita verde, ao lado de um envelope lacrado e assinado; as duas poltronas agora estão viradas para a TV.",
+    "foco": "50% 45%",
+    "alt": "Procurador nomeado decide: durable power of attorney"
+  },
+  "questao": {
+    "vinheta": "A 79-year-old man is unconscious and intubated after a cardiac arrest. Years ago, he signed a document naming his niece to make medical decisions if he could not. He left no written treatment preferences. His niece and his son disagree about continuing mechanical ventilation.",
+    "pergunta": "Whose decision should guide the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "His son, as his closest relative",
+        "quiz": "O filho"
+      },
+      "B": {
+        "texto": "His niece, as his named health care agent",
+        "quiz": "A sobrinha"
+      },
+      "C": {
+        "texto": "The hospital ethics committee",
+        "quiz": "Comitê de ética"
+      },
+      "D": {
+        "texto": "The attending physician, based on best interest",
+        "quiz": "O médico"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Procurador nomeado decide: *durable power of attorney*",
+    "certa": [
+      "O documento que nomeia uma pessoa é o *durable power of attorney for health care* (procurador para cuidados de saúde). A sobrinha é a *health care agent* e decide por *substituted judgment*, ou seja, pelo que ele escolheria. Já a *advance directive* escrita (o *living will*) traz desejos por escrito; quando existe e cobre a situação, ela orienta o próprio procurador."
+    ],
+    "termos": [
+      "durable power of attorney for health care",
+      "health care agent",
+      "substituted judgment",
+      "living will"
+    ],
+    "erradas": {
+      "A": "A ordem de parentesco só vale quando o paciente não nomeou ninguém; o procurador escolhido vem antes do filho.",
+      "C": "O comitê de ética ajuda a mediar conflitos, mas não substitui a pessoa que o paciente escolheu.",
+      "D": "O médico só decide por melhor interesse na emergência sem substituto disponível; aqui há uma procuradora válida."
+    },
+    "macete": {
+      "frase": "*Diretiva é o roteiro; procurador é o diretor*",
+      "apoio": "No set de filmagem, o roteiro escrito (living will) diz o que fazer; quando a cena não está no roteiro, decide o diretor que o paciente escolheu, e não automaticamente o parente mais próximo. O controle remoto da imagem vai para a cadeira do diretor.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Ele assinou, anos atrás, um papel nomeando a sobrinha para decidir por ele. Agora está inconsciente, e o filho discorda dela sobre manter a ventilação. Quem decide?",
+    "palavras_chave": [
+      "cardiac arrest",
+      "unconscious patient",
+      "signed document",
+      "family disagreement"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Bioetica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Inconsciente, sobrinha nomeada. Quem decide?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

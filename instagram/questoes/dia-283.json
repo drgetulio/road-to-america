@@ -1,0 +1,97 @@
+{
+  "dia": 283,
+  "data": "2027-08-11",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Potenciação de longo prazo",
+  "conceito": "Long-term potentiation: NMDA receptor Ca influx in the hippocampus strengthens synapses",
+  "personagem": null,
+  "gancho_data": "Dia do Estudante (11/8).",
+  "remix_de": null,
+  "explicacao_em": "2027-08-12",
+  "tom": null,
+  "gancho": "Dia do Estudante: *por que revisar funciona* no hipocampo?",
+  "gancho_apoio": "Estímulo forte, repetido, e a sinapse fica maior por horas.",
+  "imagem": {
+    "arquivo": "dia-283.png",
+    "cena": "Um cavalo-marinho (hipocampo) estudante numa mesa cheia de fichas de revisão, de fone de ouvido, levantando um halter feito de dois botões sinápticos; atrás, uma parede com várias portinhas fechadas de formatos diferentes.",
+    "foco": "50% 35%",
+    "alt": "Dia do Estudante: por que revisar funciona no hipocampo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-283-macete.png",
+    "cena": "Callback: o cavalo-marinho levanta o halter várias vezes, a rolha de uma das portinhas pula, bolinhas brancas de cálcio entram e um pequeno personal trainer instala portas novas na parede da sinapse; as fichas viram uma pilha alta e arrumada.",
+    "foco": "50% 45%",
+    "alt": "LTP: cálcio pelo NMDA fortalece a sinapse"
+  },
+  "questao": {
+    "vinheta": "Investigators apply brief high-frequency stimulation to Schaffer collateral axons in rat hippocampal slices. Afterward, CA1 excitatory postsynaptic potentials remain larger for hours. Adding AP5 before the stimulation prevents this change, although baseline synaptic transmission is unaffected.",
+    "pergunta": "Induction of this change most directly requires which event in CA1 neurons?",
+    "alternativas": {
+      "A": {
+        "texto": "Chloride influx through GABA-A receptors",
+        "quiz": "Cl- pelo GABA-A"
+      },
+      "B": {
+        "texto": "Potassium efflux through GIRK channels",
+        "quiz": "K+ pelo GIRK"
+      },
+      "C": {
+        "texto": "Calcium influx through NMDA receptors",
+        "quiz": "Ca2+ pelo NMDA"
+      },
+      "D": {
+        "texto": "Sodium influx at the axon hillock",
+        "quiz": "Na+ no cone axônico"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "LTP: *cálcio pelo NMDA* fortalece a sinapse",
+    "certa": [
+      "Na *long-term potentiation* (LTP), o glutamato abre o AMPA e despolariza o neurônio, e essa despolarização expulsa o *Mg2+* que tampa o *NMDA receptor*. O *cálcio* entra pelo NMDA, ativa a CaMKII e leva mais AMPA para a membrana, e a sinapse fica mais forte por horas a dias. O AP5 é antagonista do NMDA, por isso bloqueia a indução sem mexer na transmissão basal, que depende do AMPA."
+    ],
+    "termos": [
+      "long-term potentiation",
+      "NMDA receptor",
+      "Mg2+ block",
+      "CA1 hippocampus"
+    ],
+    "erradas": {
+      "A": "Entrada de cloreto pelo GABA-A hiperpolariza e inibe, o contrário de potenciar.",
+      "B": "Saída de potássio pelos canais GIRK (via GABA-B) também inibe o neurônio.",
+      "D": "O sódio no cone axônico dispara o potencial de ação, mas não deixa a sinapse mais forte."
+    },
+    "macete": {
+      "frase": "NMDA é *porta com rolha de magnésio*: só abre com estímulo forte e repetido",
+      "apoio": "No Dia do Estudante, o cavalo-marinho (hipocampo) vai para a academia. Cada revisão forte tira a rolha, o cálcio entra como personal trainer e a sinapse ganha mais AMPA. É a revisão espaçada em versão molecular.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia do Estudante. Estímulo forte e repetido no hipocampo e a sinapse fica maior por horas, a não ser que o AP5 chegue antes. Qual evento faz a memória grudar?",
+    "palavras_chave": [
+      "hippocampal slices",
+      "Schaffer collaterals",
+      "high-frequency stimulation",
+      "AP5"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Neurofisiologia",
+      "#Neuroscience",
+      "#DiaDoEstudante"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Memória que gruda: qual evento?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 239,
+  "data": "2027-06-28",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Angioedema hereditário",
+  "conceito": "Hereditary angioedema: C1 esterase inhibitor deficiency raises bradykinin, swelling without urticaria",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-29",
+  "tom": null,
+  "gancho": "Incha tudo, *não coça nada*, e o antialérgico não resolve",
+  "gancho_apoio": "Lábios, mãos e barriga inchando em crises, e o pai tem o mesmo. Qual mediador está sobrando?",
+  "imagem": {
+    "arquivo": "dia-239.png",
+    "cena": "Macrô na porta do boteco dos micróbios, de guardanapo xadrez, vê os balões da festa inchando sem parar, sem nenhum mosquito por perto. Na prateleira, um spray de antialérgico intocado.",
+    "foco": "50% 35%",
+    "alt": "Incha tudo, não coça nada, e o antialérgico não resolve"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-239-macete.png",
+    "cena": "Callback: atrás do balcão, a cadeira do porteiro está vazia e a torneira de água jorra sem freio, enchendo os balões. O spray de antialérgico tenta ajudar e não funciona; o Macrô fecha a torneira girando uma válvula em forma de meia-lua.",
+    "foco": "50% 45%",
+    "alt": "Sem o porteiro C1, a bradicinina inunda"
+  },
+  "questao": {
+    "vinheta": "A 19-year-old woman has recurrent 2- to 4-day episodes of painless, nonpitting swelling of the lips and hands and crampy abdominal pain, without urticaria or itching. Episodes began at puberty and worsened after she started an estrogen-containing contraceptive. Her father has similar episodes. Serum C4 is low.",
+    "pergunta": "Excess of which mediator causes the swelling?",
+    "alternativas": {
+      "A": {
+        "texto": "Histamine",
+        "quiz": "Histamina"
+      },
+      "B": {
+        "texto": "Bradykinin",
+        "quiz": "Bradicinina"
+      },
+      "C": {
+        "texto": "Leukotriene D4",
+        "quiz": "Leucotrieno D4"
+      },
+      "D": {
+        "texto": "Tumor necrosis factor-alpha",
+        "quiz": "TNF-alfa"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem o porteiro C1, *a bradicinina inunda*",
+    "certa": [
+      "No *hereditary angioedema* (autossômico dominante), falta ou não funciona o *C1 esterase inhibitor*. Ele freia o complemento e também a calicreína; sem ele, a calicreína gera *bradykinin* em excesso, que abre os vasos e causa edema sem urticária e sem coceira. O C4 fica baixo porque o C1 sem freio consome C4 o tempo todo. Estrogênio piora, e o IECA é contraindicado, porque a ECA degrada a bradicinina."
+    ],
+    "termos": [
+      "hereditary angioedema",
+      "C1 esterase inhibitor",
+      "bradykinin",
+      "low C4"
+    ],
+    "erradas": {
+      "A": "A histamina causa urticária e coceira e responde a anti-histamínico e adrenalina; aqui não há placa nem prurido.",
+      "C": "Os leucotrienos causam broncoespasmo e edema na asma e na doença respiratória exacerbada por aspirina, e não baixam o C4 do complemento.",
+      "D": "O TNF-alfa é citocina de inflamação sistêmica e febre, sem crises familiares de edema."
+    },
+    "macete": {
+      "frase": "*C1 é o porteiro da enchente*: sem ele, a bradicinina inunda e não coça",
+      "apoio": "Na imagem, o porteiro do boteco do Macrô sumiu do posto e a torneira jorra sem freio; os balões incham na festa, e o spray de antialérgico na prateleira não faz nada. Inchou sem coçar, pense no C1.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Crises de inchaço nos lábios, nas mãos e na barriga desde a puberdade, sem urticária e sem coceira, piores depois do anticoncepcional com estrogênio. O pai tem crises iguais e o C4 está baixo.",
+    "palavras_chave": [
+      "recurrent swelling",
+      "abdominal pain",
+      "no urticaria",
+      "family history"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#Alergia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Incha sem coçar e C4 baixo: qual mediador?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

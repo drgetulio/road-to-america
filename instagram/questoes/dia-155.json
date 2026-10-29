@@ -1,0 +1,88 @@
+{
+  "dia": 155,
+  "data": "2027-04-05",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Cólera",
+  "conceito": "Vibrio cholerae toxin: permanently activates Gs, raises cAMP, rice-water diarrhea",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-06",
+  "tom": null,
+  "gancho": "Boteco dos micróbios: o cliente que pediu *água de arroz*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-155.png",
+    "cena": "Macrô na porta do boteco dos micróbios, de olho num cliente em forma de vírgula que pede uma jarra gigante de água com grãos de arroz boiando, enquanto a torneira do balcão pinga e o interruptor da parede espera.",
+    "foco": "50% 35%",
+    "alt": "Macrô na porta do boteco dos micróbios, de olho num cliente em forma de vírgula que pede uma jarra gigante de água com grãos de arroz boiando, enquanto a torneira do balcão pinga e"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-155-macete.png",
+    "cena": "A bactéria em vírgula prende o interruptor na posição ligada com fita adesiva vermelha: a lâmpada não apaga e a torneira jorra. Macrô aponta para a fita, a \"cola\" da cólera, Gs travado no ON. Ao lado, um segundo interruptor com um pedalzinho de freio fica intacto (a Gi, que é da pertussis).",
+    "alt": "Cólera cola o interruptor do Gs no ON"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old aid worker returns from a flooded coastal region with sudden, painless, profuse watery diarrhea that looks like rice water. She has no fever and no blood in the stool. Stool culture grows curved, oxidase-positive, gram-negative rods on alkaline agar.",
+    "pergunta": "The toxin of this organism acts by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "ADP-ribosylation of Gs, keeping adenylyl cyclase on",
+        "quiz": "Gs ligado, cAMP alto"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of Gi, removing inhibition of adenylyl cyclase",
+        "quiz": "Gi desligado"
+      },
+      "C": {
+        "texto": "Activation of guanylyl cyclase, raising cGMP",
+        "quiz": "cGMP alto"
+      },
+      "D": {
+        "texto": "Cleavage of 28S rRNA, halting protein synthesis",
+        "quiz": "Corta rRNA 60S"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Cólera *cola* o interruptor do Gs no ON",
+    "certa": [
+      "A subunidade B da toxina da cólera se liga ao gangliosídeo GM1, e a subunidade A faz *ADP-ribosylation* da *Gs alpha*, que perde a capacidade de hidrolisar GTP e fica ligada para sempre. A adenilato ciclase não para, o *cAMP* sobe e o CFTR joga cloreto e água na luz do intestino: diarreia aquosa volumosa, sem inflamação, em água de arroz."
+    ],
+    "termos": [
+      "Vibrio cholerae",
+      "cholera toxin",
+      "Gs alpha",
+      "cAMP",
+      "rice-water stool"
+    ],
+    "erradas": {
+      "B": "Ribosilar a *Gi* é a toxina pertussis: ela tira o freio da adenilato ciclase, mas o alvo é outro.",
+      "C": "Aumentar *cGMP* pela guanilato ciclase é a toxina termoestável (ST) da *E. coli* enterotoxigênica.",
+      "D": "Cortar o rRNA 28S da subunidade 60S é a Shiga toxin e a toxina Shiga-like da EHEC, que matam a célula e dão diarreia com sangue."
+    },
+    "macete": {
+      "frase": "A cólera *cola* o interruptor do Gs no ON com fita adesiva: cAMP aceso a noite toda e a torneira do boteco aberta. A pertussis não cola o ligado, ela *rouba o freio* (Gi).",
+      "apoio": "O NBME coloca lado a lado cólera (Gs ligado), pertussis (Gi desligado), ETEC (LT aumenta cAMP, ST aumenta cGMP) e Shiga (60S), e pede só o mecanismo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda no boteco dos micróbios. O cliente de hoje chega de uma área alagada e pede água de arroz. A pergunta é como a toxina dele age dentro do enterócito.",
+    "palavras_chave": [
+      "aid worker",
+      "profuse watery diarrhea",
+      "comma-shaped rods",
+      "dehydration"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Água de arroz: como age a toxina?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

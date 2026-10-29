@@ -1,0 +1,87 @@
+{
+  "dia": 171,
+  "data": "2027-04-21",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Bloqueio do nervo alveolar inferior",
+  "conceito": "Inferior alveolar nerve: branch of V3 (mandibular), numbs lower teeth and lip",
+  "personagem": null,
+  "gancho_data": "Tiradentes (21/4): homenagem bem-humorada aos dentistas.",
+  "remix_de": null,
+  "explicacao_em": "2027-04-22",
+  "tom": null,
+  "gancho": "Feriado de Tiradentes: qual *fio* o dentista desligou?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-171.png",
+    "cena": "Um dente molar sorridente, de babador, sentado numa cadeira de dentista como num trono. Três fios coloridos saem de trás da cadeira até um quadro de luz com três disjuntores, todos ligados.",
+    "foco": "50% 35%",
+    "alt": "Um dente molar sorridente, de babador, sentado numa cadeira de dentista como num trono."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-171-macete.png",
+    "cena": "Um prédio de três andares em forma de perfil de rosto: só o térreo (queixo) está com a luz apagada, e ali o dente dorme tranquilo de pijama. No quadro de luz, o terceiro disjuntor, o vermelho, está desligado.",
+    "alt": "Dente de baixo é do V3"
+  },
+  "questao": {
+    "vinheta": "Before extracting a lower molar, a dentist injects local anesthetic near the mandibular foramen. Minutes later, the patient has numbness of the lower teeth on that side and of the ipsilateral lower lip and chin. Sensation of the upper teeth and cheek is normal.",
+    "pergunta": "The anesthetized nerve is a branch of which nerve?",
+    "alternativas": {
+      "A": {
+        "texto": "Ophthalmic nerve (V1)",
+        "quiz": "V1 oftálmico"
+      },
+      "B": {
+        "texto": "Maxillary nerve (V2)",
+        "quiz": "V2 maxilar"
+      },
+      "C": {
+        "texto": "Mandibular nerve (V3)",
+        "quiz": "V3 mandibular"
+      },
+      "D": {
+        "texto": "Facial nerve (CN VII)",
+        "quiz": "VII facial"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dente de baixo é do *V3*",
+    "certa": [
+      "O *inferior alveolar nerve* é ramo do *mandibular nerve (V3)*: entra no forame mandibular, inerva os dentes de baixo e sai pelo forame mentual como *mental nerve*, para o lábio inferior e o queixo. O V3 sai do crânio pelo *foramen ovale* e é o único ramo do trigêmeo com fibras motoras, para os músculos da mastigação."
+    ],
+    "termos": [
+      "inferior alveolar nerve",
+      "mandibular nerve V3",
+      "foramen ovale",
+      "mental nerve"
+    ],
+    "erradas": {
+      "A": "O V1 inerva testa, couro cabeludo da frente, pálpebra superior e córnea.",
+      "B": "O V2 inerva bochecha, lábio superior e dentes de cima, pelos nervos alveolares superiores.",
+      "D": "O facial é motor da mímica e leva o paladar dos dois terços anteriores da língua, mas não a sensibilidade dos dentes."
+    },
+    "macete": {
+      "frase": "Rosto em *prédio de três andares*: V1 no último (testa), V2 no do meio (bochecha), V3 no térreo (queixo e dentes de baixo). Para o dentista de baixo, desliga o disjuntor do *térreo*. Saídas do crânio: *Standing Room Only* (fissura orbital Superior, Rotundo, Oval).",
+      "apoio": "O NBME pergunta o forame (oval para V3, redondo para V2), o nervo lingual que costuma ser bloqueado junto (língua dormente) ou a perda motora da mastigação numa lesão do V3.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "21 de abril é feriado de Tiradentes, e a questão é uma homenagem aos dentistas que cuidam do nosso sorriso. Um bloqueio na mandíbula, três ramos do trigêmeo e um intruso.",
+    "palavras_chave": [
+      "dental anesthesia",
+      "mandibular foramen",
+      "lower lip numbness",
+      "head and neck anatomy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Dormiu dente de baixo e lábio. Qual ramo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

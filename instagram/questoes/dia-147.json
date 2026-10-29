@@ -1,0 +1,101 @@
+{
+  "dia": 147,
+  "data": "2027-03-28",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix da caça aos ovos: Puberdade e estágios de Tanner (dia 52), Pico de LH (dia 59), Ovogênese (dia 87)",
+  "conceito": "Easter egg hunt remix: Puberty onset + LH surge + Oocyte arrest",
+  "personagem": null,
+  "gancho_data": "Páscoa (28/3/2027): o ovo que fica parado em prófase I.",
+  "remix_de": [
+    52,
+    59,
+    87
+  ],
+  "explicacao_em": "2027-03-29",
+  "tom": null,
+  "gancho": "Remix da Páscoa: só *um* ovo esconde o cartão certo",
+  "gancho_apoio": "Puberdade, pico de LH e ovogênese voltam hoje (dias 52, 59 e 87), com um intruso.",
+  "imagem": {
+    "arquivo": "dia-147.png",
+    "cena": "Um jardim de caça aos ovos com quatro ovos de chocolate em papel colorido escondidos na grama. No centro, um toca-discos cujos três discos são pintados como ovos de Páscoa.",
+    "foco": "50% 35%",
+    "alt": "Jardim com quatro ovos de chocolate escondidos e um toca-discos com discos pintados de ovo de Páscoa."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-147-macete.png",
+    "cena": "Callback: o ovo verde se abre e revela uma escada de degraus amarelos que sobe até um interruptor; o interruptor virado solta fogos de artifício. Num outro ovo aberto, um ovócito redondo está congelado no meio de um passo de dança, com um relógio de pausa ao lado.",
+    "foco": "50% 40%",
+    "alt": "Ovo verde aberto com escada até um interruptor que solta fogos; outro ovo mostra um ovócito parado no meio da dança."
+  },
+  "questao": {
+    "vinheta": "At a study-group Easter egg hunt, each hidden egg holds a flashcard on reproductive physiology. Only one card is accurate.",
+    "pergunta": "Which card is accurate?",
+    "alternativas": {
+      "A": {
+        "texto": "First sign of puberty in girls: menarche",
+        "quiz": "Menarca é o 1º sinal",
+        "dia": 52
+      },
+      "B": {
+        "texto": "LH surge: sustained high estradiol switches to positive feedback",
+        "quiz": "Feedback + do E2",
+        "dia": 59
+      },
+      "C": {
+        "texto": "Ovulated oocyte: arrested in prophase I",
+        "quiz": "Ovulado em prófase I",
+        "dia": 87
+      },
+      "D": {
+        "texto": "Ovulation: triggered by the progesterone peak",
+        "quiz": "Pico de progesterona"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Estradiol alto e sustentado: *feedback positivo*",
+    "certa": [
+      "Na maior parte do ciclo, o estradiol freia o eixo (feedback negativo). Quando fica alto, acima de cerca de 200 pg/mL por uns 2 dias, a resposta inverte: vira feedback positivo na hipófise e no hipotálamo, e vem o pico de LH. A ovulação acontece de 24 a 36 horas depois do início do pico."
+    ],
+    "termos": [
+      "LH surge",
+      "positive feedback",
+      "metaphase II arrest",
+      "thelarche"
+    ],
+    "erradas": {
+      "A": "Dia 52: o primeiro sinal da puberdade nas meninas é a telarca (broto mamário); a menarca vem 2 a 3 anos depois.",
+      "C": "Dia 87: o ovócito ovulado está parado em metáfase II até a fertilização; a parada em prófase I vai da vida fetal até perto da ovulação.",
+      "D": "Intruso: o pico de progesterona vem do corpo lúteo, depois da ovulação, na fase lútea."
+    },
+    "macete": {
+      "frase": "*Prófase I* desde antes de nascer, *Metáfase II* esperando o espermatozoide",
+      "apoio": "Errou alguma? Volte ao dia original (52, 59 ou 87) e refaça antes do próximo remix.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Feliz Páscoa! No Remix de domingo, a caça aos ovos é de fisiologia: três cartões trazem erro e um está certo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Fisiologia",
+      "#Physiology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix da Páscoa: qual cartão está certo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

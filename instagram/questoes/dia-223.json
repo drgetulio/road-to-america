@@ -1,0 +1,99 @@
+{
+  "dia": 223,
+  "data": "2027-06-12",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Confidencialidade do adolescente",
+  "conceito": "Adolescent STI testing and treatment: confidential, no parental consent needed",
+  "personagem": null,
+  "gancho_data": "Dia dos Namorados (12/6).",
+  "remix_de": null,
+  "explicacao_em": "2027-06-13",
+  "tom": null,
+  "gancho": "Dia dos Namorados no consultório: *quem fica sabendo?*",
+  "gancho_apoio": "Uma adolescente, um teste positivo e um pedido de sigilo. Qual é a conduta?",
+  "imagem": {
+    "arquivo": "dia-223.png",
+    "cena": "Uma ponte de parque cheia de cadeadinhos coloridos de casais, no Dia dos Namorados, e na ponta da ponte a porta de um consultório com um estetoscópio pendurado na maçaneta. Clima leve e respeitoso.",
+    "foco": "50% 35%",
+    "alt": "Dia dos Namorados no consultório: quem fica sabendo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-223-macete.png",
+    "cena": "Callback: a porta do consultório agora está fechada por um cadeado em forma de coração. Por baixo da porta saem uma receita dobrada e um envelope lacrado, e um telefone fixo antigo, numa mesinha ao lado, continua quieto.",
+    "foco": "50% 45%",
+    "alt": "IST na adolescência: trata e guarda o sigilo"
+  },
+  "questao": {
+    "vinheta": "A 16-year-old girl comes alone with vaginal discharge and dysuria for 4 days. She has one consensual sexual partner, also 16. She asks that her parents not be told. Urine pregnancy test is negative, and nucleic acid amplification testing is positive for Chlamydia trachomatis.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Obtain parental consent before treatment",
+        "quiz": "Pedir consentimento"
+      },
+      "B": {
+        "texto": "Notify her parents because she is a minor",
+        "quiz": "Avisar os pais"
+      },
+      "C": {
+        "texto": "Treat with doxycycline and keep the visit confidential",
+        "quiz": "Doxiciclina e sigilo"
+      },
+      "D": {
+        "texto": "Report the case to child protective services",
+        "quiz": "Notificar conselho"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "IST na adolescência: *trata e guarda o sigilo*",
+    "certa": [
+      "Em todos os estados americanos, o adolescente pode consentir sozinho com o diagnóstico e o tratamento de *sexually transmitted infections* (alguns estados fixam uma idade mínima, em geral entre 12 e 14 anos), e a consulta fica *confidential*. Com teste de gravidez negativo, a clamídia se trata com *doxycycline* 100 mg de 12 em 12 horas, por uma semana (CDC 2021). Na mesma consulta: tratar o parceiro (*expedited partner therapy*), orientar preservativo e retestar em 3 meses."
+    ],
+    "termos": [
+      "adolescent confidentiality",
+      "minor consent for STI care",
+      "doxycycline",
+      "expedited partner therapy"
+    ],
+    "erradas": {
+      "A": "Exigir consentimento dos pais afasta o adolescente do cuidado, e a lei não pede isso para IST.",
+      "B": "Quebrar o sigilo sem risco grave à vida dela ou de outra pessoa viola a confidencialidade; o médico pode incentivar a conversa com a família, sem obrigar.",
+      "D": "Relação consensual com parceiro da mesma idade não indica abuso; a notificação entra quando há coerção, diferença de idade prevista em lei ou suspeita de abuso."
+    },
+    "macete": {
+      "frase": "*Cadeado do sigilo* no consultório: IST se trata sem chamar os pais",
+      "apoio": "Na imagem, a ponte dos cadeados do Dia dos Namorados termina num consultório com um cadeado em forma de coração na porta. O telefone de casa fica quieto, e a receita sai por baixo da porta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dezesseis anos, veio sozinha, corrimento e ardência ao urinar, um parceiro da mesma idade e um pedido: não contar aos pais. O teste deu clamídia. No Dia dos Namorados, a questão é sobre sigilo.",
+    "palavras_chave": [
+      "adolescent",
+      "vaginal discharge",
+      "positive NAAT",
+      "parents"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Adolescencia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "IST aos 16 anos e pedido de sigilo: e agora?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

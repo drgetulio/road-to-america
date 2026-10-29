@@ -1,0 +1,100 @@
+{
+  "dia": 339,
+  "data": "2027-10-06",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "BRCA1 e BRCA2",
+  "conceito": "BRCA1/BRCA2: tumor suppressors for homologous recombination repair of double-strand breaks",
+  "personagem": null,
+  "gancho_data": "Outubro Rosa.",
+  "remix_de": null,
+  "explicacao_em": "2027-10-07",
+  "tom": "acolhedor",
+  "gancho": "Outubro Rosa: a costureira do DNA perdeu *um dos kits*. Qual?",
+  "gancho_apoio": "Um gene que cuida de um tipo específico de conserto do DNA.",
+  "imagem": {
+    "arquivo": "dia-339.png",
+    "cena": "Ateliê de costura com uma fita de DNA em dupla hélice cortada nas duas fitas sobre a mesa e quatro kits de conserto diferentes: um molde com uma fita gêmea idêntica, uma lupa de revisão, uma tesoura cortando um nó volumoso e uma conta isolada; um laço rosa discreto num cabide.",
+    "foco": "50% 35%",
+    "alt": "Outubro Rosa: a costureira do DNA perdeu um dos kits. Qual?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-339-macete.png",
+    "cena": "Callback: a fita gêmea idêntica foi estendida ao lado do rasgo e uma linha dourada costura as duas fitas copiando o molde; os outros três kits ficam fechados na prateleira.",
+    "foco": "50% 45%",
+    "alt": "BRCA1 e BRCA2: homologous recombination da quebra dupla"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman is referred for genetic counseling. Her mother had breast cancer at 41, and her maternal aunt had ovarian cancer at 50. Germline testing shows a pathogenic BRCA1 variant. Cells that lose the remaining normal allele cannot properly repair one specific type of DNA damage.",
+    "pergunta": "Which repair process is most directly impaired?",
+    "alternativas": {
+      "A": {
+        "texto": "Mismatch repair after replication",
+        "quiz": "Reparo de pareamento"
+      },
+      "B": {
+        "texto": "Nucleotide excision repair",
+        "quiz": "Excisão nucleotídeo"
+      },
+      "C": {
+        "texto": "Base excision repair",
+        "quiz": "Excisão de base"
+      },
+      "D": {
+        "texto": "Homologous recombination repair",
+        "quiz": "Recomb. homóloga"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "BRCA1 e BRCA2: *homologous recombination* da quebra dupla",
+    "certa": [
+      "BRCA1 e BRCA2 são *tumor suppressor genes* que consertam a *double-strand break* por *homologous recombination*, usando a cromátide irmã como molde fiel. Herda-se uma cópia alterada e a segunda se perde na célula (dois golpes de Knudson). Sem esse conserto, a célula depende de vias sujeitas a erro e acumula mutações."
+    ],
+    "termos": [
+      "BRCA1",
+      "homologous recombination",
+      "double-strand break",
+      "tumor suppressor gene"
+    ],
+    "erradas": {
+      "A": "Reparo de pareamento (MLH1, MSH2) corrige erros da replicação; o defeito dá síndrome de Lynch, com cólon e endométrio.",
+      "B": "Excisão de nucleotídeo remove dímeros de timina e lesões volumosas por UV; o defeito é o xeroderma pigmentoso.",
+      "C": "Excisão de base troca bases isoladas danificadas por glicosilases; o defeito clássico é o MUTYH, com polipose."
+    },
+    "macete": {
+      "frase": "*BRCA: Break Repair Com Amostra*",
+      "apoio": "A costureira do BRCA conserta o rasgo nas duas fitas copiando a fita gêmea, a cromátide irmã. Sem ela, o conserto vira remendo improvisado e os erros se acumulam. Na imagem, o molde gêmeo fica estendido ao lado do rasgo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Outubro Rosa. Mãe com câncer de mama aos 41, tia com câncer de ovário aos 50 e uma variante patogênica no BRCA1. Que tipo de conserto do DNA fica comprometido?",
+    "palavras_chave": [
+      "family history of breast and ovarian cancer",
+      "genetic counseling",
+      "germline testing",
+      "DNA damage"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#OutubroRosa",
+      "#Genetica",
+      "#Genetics",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "BRCA1 alterado: que reparo falha?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

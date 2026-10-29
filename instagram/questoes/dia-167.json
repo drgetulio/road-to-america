@@ -1,0 +1,88 @@
+{
+  "dia": 167,
+  "data": "2027-04-17",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Retirar e não iniciar suporte",
+  "conceito": "Withdrawing and withholding life support are ethically equivalent",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-18",
+  "tom": "acolhedor",
+  "gancho": "Desligar ou nunca ligar o ventilador: o que pesa mais?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-167.png",
+    "cena": "Uma balança de tribunal desenhada como placa de trânsito, com dois pratos cobertos por campânulas fechadas, numa mesa tranquila perto de uma janela com cortina. Tom sereno, sem piada.",
+    "foco": "50% 35%",
+    "alt": "Uma balança de tribunal desenhada como placa de trânsito, com dois pratos cobertos por campânulas fechadas, numa mesa tranquila perto de uma janela com cortina."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-167-macete.png",
+    "cena": "As campânulas se abrem: nos dois pratos está a mesma carta escrita à mão, com um selo de coração (a vontade do paciente). A balança fica perfeitamente nivelada, e ao lado aparecem uma manta dobrada e um travesseiro macio, o cuidado de conforto.",
+    "alt": "Retirar e não iniciar: mesmo peso na ética"
+  },
+  "questao": {
+    "vinheta": "An 81-year-old man has been on mechanical ventilation for 10 days after a severe anoxic brain injury; neurology expects no meaningful recovery. His advance directive refuses prolonged life support. His wife, the health care proxy, asks to remove the ventilator. A resident says stopping is different from never starting.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Continue ventilation, since withdrawing differs from withholding",
+        "quiz": "Manter o ventilador"
+      },
+      "B": {
+        "texto": "Withdraw ventilation and provide comfort care",
+        "quiz": "Retirar com conforto"
+      },
+      "C": {
+        "texto": "Obtain a court order before extubation",
+        "quiz": "Ordem judicial"
+      },
+      "D": {
+        "texto": "Continue ventilation until brain death criteria are met",
+        "quiz": "Até morte encefálica"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Retirar e não iniciar: *mesmo peso* na ética",
+    "certa": [
+      "Para a ética e a lei nos EUA, *withdrawing* e *withholding* um suporte de vida são equivalentes. Se o paciente, pela *advance directive* e pelo *health care proxy*, recusaria a ventilação prolongada, ela pode ser retirada com *comfort care* e controle de sintomas. O residente confunde a sensação de \"desligar\" com uma diferença moral que não existe."
+    ],
+    "termos": [
+      "withdrawing life support",
+      "withholding life support",
+      "advance directive",
+      "health care proxy",
+      "comfort care"
+    ],
+    "erradas": {
+      "A": "Manter só porque já começou fere a autonomia do paciente; começar um suporte não obriga a mantê-lo.",
+      "C": "Ordem judicial não é necessária quando a vontade do paciente está documentada e o representante concorda; a justiça fica para conflito sem solução.",
+      "D": "Morte encefálica não é pré-requisito para retirar um suporte que o paciente recusou."
+    },
+    "macete": {
+      "frase": "Na balança da ética, *retirar* e *não iniciar* pesam exatamente o mesmo: nos dois pratos está a mesma carta, a *vontade do paciente*. Quem decide é ela, não o momento em que o suporte começou.",
+      "apoio": "O NBME costuma colocar um colega ou um familiar dizendo que \"agora que começou não dá para parar\": a resposta respeita a vontade documentada do paciente e garante conforto.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com um tema delicado e muito cobrado. O paciente deixou a vontade por escrito, a esposa é a representante legal e um colega acha que retirar é diferente de não iniciar. Qual é a conduta?",
+    "palavras_chave": [
+      "mechanical ventilation",
+      "anoxic brain injury",
+      "advance directive",
+      "end-of-life care"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Esposa pede retirar o ventilador. E agora?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

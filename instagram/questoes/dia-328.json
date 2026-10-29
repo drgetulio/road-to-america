@@ -1,0 +1,96 @@
+{
+  "dia": 328,
+  "data": "2027-09-25",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Viés de publicação",
+  "conceito": "Publication bias: asymmetric funnel plot in a meta-analysis",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-26",
+  "tom": null,
+  "gancho": "O funil ficou torto. *Quem roubou um pedaço do gráfico?*",
+  "gancho_apoio": "No Sábado Sem Viés, o fantasminha esconde alguma coisa atrás do gráfico.",
+  "imagem": {
+    "arquivo": "dia-328.png",
+    "cena": "Um grande funil de cozinha desenhado com bolinhas, como um gráfico de dispersão; um dos cantos de baixo está vazio. O Viés, fantasminha de lençol com lupa, espia meio escondido atrás do funil, com uma das mãos escondida nas costas.",
+    "foco": "50% 35%",
+    "alt": "O funil ficou torto. Quem roubou um pedaço do gráfico?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-328-macete.png",
+    "cena": "Callback: atrás do funil aparece um arquivo de escritório; o Viés abre a gaveta e dela pulam bolinhas pequenas que preenchem o canto vazio do funil; o funil fica simétrico e o fantasminha faz cara de flagrado.",
+    "foco": "50% 45%",
+    "alt": "Funil assimétrico: viés de publicação"
+  },
+  "questao": {
+    "vinheta": "A meta-analysis pools 18 randomized trials of a new drug for migraine prevention. A plot of each trial's effect size against its standard error shows that large trials cluster around a small benefit. Small trials showing large benefits are present, but small trials showing no benefit or harm are almost absent.",
+    "pergunta": "Which is the most likely explanation for this pattern?",
+    "alternativas": {
+      "A": {
+        "texto": "Lead-time bias",
+        "quiz": "Lead-time"
+      },
+      "B": {
+        "texto": "Confounding",
+        "quiz": "Confusão"
+      },
+      "C": {
+        "texto": "Recall bias",
+        "quiz": "Viés de memória"
+      },
+      "D": {
+        "texto": "Publication bias",
+        "quiz": "Viés de publicação"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Funil assimétrico: *viés de publicação*",
+    "certa": [
+      "O *funnel plot* coloca o efeito de cada estudo contra o seu tamanho (ou erro padrão): sem viés, os estudos pequenos se espalham dos dois lados dos grandes, formando um funil simétrico. Quando falta o canto dos estudos pequenos com resultado nulo ou negativo, o mais provável é *publication bias*, porque estudo pequeno sem efeito tende a ficar na gaveta. Isso infla o efeito estimado pela meta-análise."
+    ],
+    "termos": [
+      "funnel plot",
+      "publication bias",
+      "small-study effects",
+      "trial registration"
+    ],
+    "erradas": {
+      "A": "*Lead-time bias* aparece no rastreamento, quando o diagnóstico antecipado parece aumentar a sobrevida sem mudar a evolução.",
+      "B": "*Confusão* exige uma terceira variável ligada à exposição e ao desfecho dentro de um estudo, e não estudos ausentes da literatura.",
+      "C": "*Recall bias* acontece no caso-controle, quando quem teve o desfecho lembra melhor das exposições."
+    },
+    "macete": {
+      "frase": "*Funil torto é estudo pequeno engavetado*: o que deu nulo ficou na gaveta do Viés",
+      "apoio": "Na imagem, o Viés abre a gaveta e as bolinhas que faltavam (os estudos pequenos sem efeito) pulam para o canto vazio do funil, que volta a ficar simétrico.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Meta-análise de 18 ensaios sobre um remédio para prevenir enxaqueca. No gráfico de efeito contra tamanho do estudo, os ensaios grandes ficam perto de um benefício pequeno e quase não há ensaios pequenos com resultado nulo ou negativo. Qual é a explicação mais provável?",
+    "palavras_chave": [
+      "meta-analysis",
+      "18 trials",
+      "migraine prevention",
+      "small trials"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Bioestatistica",
+      "#Biostatistics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Funil assimétrico na meta-análise: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

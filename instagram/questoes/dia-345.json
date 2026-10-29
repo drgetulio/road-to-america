@@ -1,0 +1,100 @@
+{
+  "dia": 345,
+  "data": "2027-10-12",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Desenvolvimento humano (achados normais por idade e cuidado do paciente saudável)",
+  "topico": "Marcos do desenvolvimento",
+  "conceito": "Two-year milestones: about 50 words and two-word phrases",
+  "personagem": null,
+  "gancho_data": "Dia das Crianças (12/10).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-13",
+  "tom": null,
+  "gancho": "Cinquenta palavras e *tabelinha de duas*: atraso ou craque?",
+  "gancho_apoio": "Dia das Crianças. Consulta de rotina aos 2 anos e um primo que fala muito.",
+  "imagem": {
+    "arquivo": "dia-345.png",
+    "cena": "Um campinho de futebol de brinquedo onde dois balões de fala, sem letras, trocam passes com uma bola pequena; ao fundo, um placar em branco e bandeirinhas coloridas de festa.",
+    "foco": "50% 35%",
+    "alt": "Cinquenta palavras e tabelinha de duas: atraso ou craque?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-345-macete.png",
+    "cena": "Callback: o time completo de pequenos balões de fala posa para a foto oficial com camisas iguais, e dois deles à frente fazem a tabelinha com a bola; uma medalha verde no peito de cada um.",
+    "foco": "50% 45%",
+    "alt": "Aos 2 anos: two-word phrases e cerca de 50 palavras"
+  },
+  "questao": {
+    "vinheta": "At a 24-month checkup, the parents of a girl worry because her cousin speaks in sentences. She runs, kicks a ball, and climbs stairs holding the rail. She says about 50 words, combines two words (\"more juice\"), follows one-step commands, and points to body parts. Hearing screening is normal.",
+    "pergunta": "Which best describes her development?",
+    "alternativas": {
+      "A": {
+        "texto": "Normal development for age",
+        "quiz": "Normal para idade"
+      },
+      "B": {
+        "texto": "Expressive language delay",
+        "quiz": "Atraso expressivo"
+      },
+      "C": {
+        "texto": "Receptive language delay",
+        "quiz": "Atraso receptivo"
+      },
+      "D": {
+        "texto": "Global developmental delay",
+        "quiz": "Atraso global"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Aos 2 anos: *two-word phrases* e cerca de 50 palavras",
+    "certa": [
+      "Aos 24 meses, frases de duas palavras e um vocabulário de cerca de 50 palavras estão dentro do esperado, e ela também corre, chuta bola e segue comandos simples. Os *developmental milestones* estão adequados nos domínios motor, de linguagem e social, então a conduta é tranquilizar a família e seguir a vigilância de rotina (*developmental surveillance*). Falar em frases completas é esperado mais perto dos 3 anos."
+    ],
+    "termos": [
+      "developmental milestones",
+      "two-word phrases",
+      "expressive language",
+      "developmental surveillance"
+    ],
+    "erradas": {
+      "B": "Atraso expressivo seria não juntar duas palavras aos 24 meses ou ter vocabulário muito pequeno, o que não é o caso.",
+      "C": "Atraso receptivo apareceria como não seguir comandos nem apontar partes do corpo, e ela faz as duas coisas.",
+      "D": "Atraso global exige atraso em dois ou mais domínios; o motor e a linguagem dela estão normais."
+    },
+    "macete": {
+      "frase": "*Aos 2 anos, joga de dois*: tabelinha de duas palavras",
+      "apoio": "Craque de 2 anos tem uns 50 jogadores no elenco (palavras) e faz tabelinha de dois (frases de duas palavras). A torcida desconhecida entende metade do jogo: inteligibilidade de cerca de 50% aos 2, 75% aos 3 e quase 100% aos 4.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia das Crianças. Dois anos, corre, chuta bola, fala umas 50 palavras e junta duas de cada vez. Os pais se preocupam porque o primo já fala frases. Como está o desenvolvimento dela?",
+    "palavras_chave": [
+      "24-month visit",
+      "parental worry",
+      "language",
+      "motor skills"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#DesenvolvimentoInfantil",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "2 anos, 50 palavras e frases de duas:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

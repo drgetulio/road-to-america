@@ -1,0 +1,94 @@
+{
+  "dia": 10,
+  "data": "2026-11-11",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Deficiência de 21-hidroxilase",
+  "conceito": "21-hydroxylase deficiency: low cortisol and aldosterone, high androgens, salt wasting",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-12",
+  "tom": null,
+  "gancho": "Padaria do esteroide: um *forno* parou e a fila mudou",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-010.png",
+    "cena": "Padaria em corte, estilo manual de montagem: uma esteira leva bolinhas de massa por três fornos em fila. O forno do meio está desligado e frio, a massa se acumula na frente dele e parte escorrega por um tobogã lateral até a vitrine de doces. Na prateleira de cima, o saleiro tombou vazio.",
+    "foco": "50% 35%",
+    "alt": "Padaria do esteroide: um forno parou e a fila mudou"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-010-macete.png",
+    "cena": "Callback da padaria: uma lanterna ilumina o forno do meio quebrado (21-hidroxilase). A montanha de massa antes dele é a 17-OHP; as prateleiras do pão salgado (aldosterona) e do pão francês (cortisol) estão vazias, e a vitrine de doces (androgênios) transborda. No alto, um padeirinho em forma de hipófise acena pedindo ainda mais massa (ACTH).",
+    "alt": "O forno 21 parou e a massa sobrou"
+  },
+  "questao": {
+    "vinheta": "A 2-week-old infant with a 46,XX karyotype has vomiting and poor feeding. At birth there was clitoromegaly with fused labia. The infant is hypotensive. Serum sodium is 126 mEq/L and potassium 6.8 mEq/L.",
+    "pergunta": "Which serum level is most likely elevated?",
+    "alternativas": {
+      "A": {
+        "texto": "11-Deoxycorticosterone",
+        "quiz": "DOC"
+      },
+      "B": {
+        "texto": "11-Deoxycortisol",
+        "quiz": "11-desoxicortisol"
+      },
+      "C": {
+        "texto": "17-Hydroxyprogesterone",
+        "quiz": "17-OH-progesterona"
+      },
+      "D": {
+        "texto": "Cortisol",
+        "quiz": "Cortisol"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "O forno 21 parou e a massa sobrou",
+    "certa": [
+      "Virilização num bebê 46,XX com perda de sal (sódio baixo, potássio alto e hipotensão) na segunda semana de vida é a forma clássica da deficiência de 21-hidroxilase. Sem a enzima, a adrenal não fabrica cortisol nem aldosterona, e a 17-hidroxiprogesterona (17-OHP) acumula antes do bloqueio e escoa para a via dos androgênios. O cortisol baixo tira o freio do ACTH, que estimula ainda mais a adrenal e piora a virilização."
+    ],
+    "termos": [
+      "21-hydroxylase deficiency",
+      "17-hydroxyprogesterone",
+      "salt wasting",
+      "congenital adrenal hyperplasia"
+    ],
+    "erradas": {
+      "A": "A 11-desoxicorticosterona sobe na deficiência de 11-beta-hidroxilase, que dá hipertensão, e não perda de sal.",
+      "B": "O 11-desoxicortisol acumula na deficiência de 11-beta-hidroxilase; na de 21 ele nem chega a ser formado.",
+      "D": "O cortisol está baixo, e é justamente isso que faz o ACTH subir e a adrenal crescer."
+    },
+    "macete": {
+      "frase": "Olhe os dígitos: 1 na frente (11, 17) dá hipertensão; 1 no fim (11, 21) dá virilização. O 21 só tem o 1 no fim: virilização e perda de sal. Na padaria, o forno 21 parou, a massa (17-OHP) empilhou e virou doce de androgênio.",
+      "apoio": "Pegadinha de prova: O NBME cobra a 17-OHP no teste do pezinho americano e põe a 11-desoxicorticosterona como distrator para quem confunde com a 11-beta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê: a adrenal tem uma linha de produção de hormônios. Quando uma etapa falha, alguma coisa sobra antes dela.",
+    "palavras_chave": [
+      "ambiguous genitalia",
+      "hyponatremia",
+      "hyperkalemia",
+      "newborn"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Endocrinologia",
+      "#Biochemistry",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Bebê com perda de sal: qual hormônio sobe?"
+  },
+  "exemplo": false
+}

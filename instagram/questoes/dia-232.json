@@ -1,0 +1,99 @@
+{
+  "dia": 232,
+  "data": "2027-06-21",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "E. coli êntero-hemorrágica",
+  "conceito": "EHEC O157:H7: Shiga-like toxin, bloody diarrhea, risk of hemolytic uremic syndrome",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-22",
+  "tom": null,
+  "gancho": "No arraiá, o hambúrguer *ficou rosado* por dentro",
+  "gancho_apoio": "Diarreia com sangue, sem febre, e o Seu Néfron já está preocupado. Quem é o micróbio?",
+  "imagem": {
+    "arquivo": "dia-232.png",
+    "cena": "Seu Néfron, de gravata e óculos, numa barraca de festa junina com bandeirinhas, franze a testa para um hambúrguer na chapa ainda rosado por dentro. De dentro do pão, espia um bacilinho de chapéu de palha.",
+    "foco": "50% 35%",
+    "alt": "No arraiá, o hambúrguer ficou rosado por dentro"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-232-macete.png",
+    "cena": "Callback: o bacilinho de chapéu de palha recusa um doce de sorbitol oferecido na barraca e joga confete vermelho nas peneirinhas da mesa do Seu Néfron, que protege as peneiras com as mãos e carimba um formulário de alerta.",
+    "foco": "50% 45%",
+    "alt": "Não fermenta sorbitol e ameaça o rim: O157:H7"
+  },
+  "questao": {
+    "vinheta": "Three days after eating an undercooked hamburger at a party, a 5-year-old boy develops crampy abdominal pain and bloody stools. He is afebrile. Stool culture grows a gram-negative rod that ferments lactose but does not ferment sorbitol on MacConkey-sorbitol agar.",
+    "pergunta": "Which organism is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Shigella dysenteriae",
+        "quiz": "Shigella"
+      },
+      "B": {
+        "texto": "Salmonella enterica serovar Enteritidis",
+        "quiz": "Salmonella"
+      },
+      "C": {
+        "texto": "Campylobacter jejuni",
+        "quiz": "Campylobacter"
+      },
+      "D": {
+        "texto": "Escherichia coli O157:H7",
+        "quiz": "E. coli O157:H7"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Não fermenta sorbitol e *ameaça o rim*: O157:H7",
+    "certa": [
+      "A *EHEC O157:H7* vem da carne moída malpassada, dá diarreia com sangue com pouca ou nenhuma febre e, diferente da maioria das *E. coli*, não fermenta sorbitol. A *Shiga-like toxin* inativa a subunidade 60S do ribossomo no endotélio dos glomérulos, e até cerca de 15% das crianças evoluem para *hemolytic uremic syndrome* (anemia hemolítica, plaquetas baixas e lesão renal aguda). Antibiótico não ajuda e pode aumentar esse risco."
+    ],
+    "termos": [
+      "EHEC O157:H7",
+      "sorbitol MacConkey agar",
+      "Shiga-like toxin",
+      "hemolytic uremic syndrome"
+    ],
+    "erradas": {
+      "A": "A *Shigella* também produz toxina Shiga e diarreia com sangue, mas costuma dar febre alta e não fermenta lactose.",
+      "B": "A *Salmonella* Enteritidis vem de ovo e frango, dá febre, não fermenta lactose e produz H2S.",
+      "C": "O *Campylobacter* é um bacilo curvo, cresce a 42°C, vem de frango malpassado e se associa a Guillain-Barré."
+    },
+    "macete": {
+      "frase": "*O157 não come sorbitol, mas come o rim*",
+      "apoio": "Na imagem, o bacilinho de chapéu de palha recusa o doce de sorbitol da barraca e joga confete de toxina nos filtros do Seu Néfron. Diarreia com sangue, sem febre, depois de hambúrguer: pense no rim.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Festa junina, hambúrguer malpassado, três dias de diarreia com sangue e nada de febre. Na cultura, um bacilo que não fermenta sorbitol. O Seu Néfron já sabe por que deve se preocupar.",
+    "palavras_chave": [
+      "undercooked hamburger",
+      "bloody diarrhea",
+      "afebrile child",
+      "MacConkey agar"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#FestaJunina",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Diarreia com sangue e sem sorbitol: quem é?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

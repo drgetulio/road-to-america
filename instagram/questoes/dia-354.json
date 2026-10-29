@@ -1,0 +1,100 @@
+{
+  "dia": 354,
+  "data": "2027-10-21",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Líquen escleroso",
+  "conceito": "Vulvar lichen sclerosus: biopsy if unclear, high-potency topical steroid",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-22",
+  "tom": null,
+  "gancho": "A pipa de papel de seda branca *que desenha um oito*",
+  "gancho_apoio": "Coceira vulvar de longa data, placas brancas finas e biópsia confirmada.",
+  "imagem": {
+    "arquivo": "dia-354.png",
+    "cena": "Garçom de rodízio com quatro espetos, cada um com um ícone (um fungo redondo, um pote de creme com flor, um pote de creme com halter, um tubo com escudo), e ao fundo uma pipa de papel de seda branca em forma de oito no céu.",
+    "foco": "50% 35%",
+    "alt": "A pipa de papel de seda branca que desenha um oito"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-354-macete.png",
+    "cena": "Callback: o garçom serve o espeto do tubo com escudo e levanta a plaquinha verde; a pipa em oito agora está presa por uma linha forte e brilhante e ganha cor aos poucos.",
+    "foco": "50% 45%",
+    "alt": "Líquen escleroso: clobetasol e seguimento para sempre"
+  },
+  "questao": {
+    "vinheta": "A 62-year-old woman has 1 year of intense vulvar itching and dyspareunia. Examination shows thin, white, wrinkled plaques in a figure-of-eight pattern around the vulva and anus, with loss of the labia minora. There are no ulcers, masses, or thickened areas. Biopsy confirms the suspected diagnosis.",
+    "pergunta": "Which is the most appropriate treatment?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral fluconazole",
+        "quiz": "Fluconazol oral"
+      },
+      "B": {
+        "texto": "Topical estrogen cream",
+        "quiz": "Estrogênio tópico"
+      },
+      "C": {
+        "texto": "Topical testosterone cream",
+        "quiz": "Testosterona tópica"
+      },
+      "D": {
+        "texto": "Ultrapotent topical corticosteroid",
+        "quiz": "Corticoide potente"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Líquen escleroso: *clobetasol* e seguimento para sempre",
+    "certa": [
+      "Placas brancas, finas e enrugadas em figura de oito ao redor da vulva e do ânus, com perda dos pequenos lábios, são *lichen sclerosus*. A biópsia é feita quando há dúvida ou área atípica. O tratamento de primeira linha é *ultrapotent topical corticosteroid*, como o *clobetasol propionate* em pomada, com seguimento por toda a vida pelo risco de *vulvar squamous cell carcinoma*."
+    ],
+    "termos": [
+      "lichen sclerosus",
+      "clobetasol propionate",
+      "figure-of-eight",
+      "vulvar squamous cell carcinoma"
+    ],
+    "erradas": {
+      "A": "Fluconazol trata candidíase, com corrimento grumoso e eritema, sem placas atróficas nem perda da arquitetura vulvar.",
+      "B": "Estrogênio tópico trata a síndrome geniturinária da menopausa, que não causa figura de oito nem reabsorção dos pequenos lábios.",
+      "C": "Testosterona tópica já foi usada, mas é inferior ao clobetasol e não é mais recomendada."
+    },
+    "macete": {
+      "frase": "*Pipa branca em oito, linha de clobetasol*",
+      "apoio": "A pele vira papel de seda branco, como pipa de papel de seda, e desenha um oito ao redor da vulva e do ânus. A linha forte que segura a pipa é o corticoide de alta potência, e o dono da pipa nunca deixa de olhar para ela (seguimento por toda a vida).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um ano de coceira vulvar intensa e dor na relação. No exame, placas brancas e finas em figura de oito, com perda dos pequenos lábios. A biópsia confirmou. Qual é o tratamento?",
+    "palavras_chave": [
+      "vulvar itching",
+      "dyspareunia",
+      "white wrinkled plaques",
+      "loss of labia minora"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Ginecologia",
+      "#Gynecology",
+      "#SaudeDaMulher",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Placas brancas em 8, biópsia feita:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

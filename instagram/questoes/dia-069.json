@@ -1,0 +1,96 @@
+{
+  "dia": 69,
+  "data": "2027-01-09",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Análise de causa raiz",
+  "conceito": "Root cause analysis looks back at an event, FMEA looks ahead at a process",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-10",
+  "gancho": "VAR depois do gol ou treino *antes do jogo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um estádio de futebol dividido ao meio. De um lado, um monitor de VAR repassando um lance. Do outro, uma prancheta tática com cones e setas antes do jogo. No banco de reservas, uma bomba de infusão simpática com colete de treino.",
+    "foco": "50% 35%",
+    "alt": "VAR depois do gol ou treino antes do jogo?",
+    "arquivo": "dia-069.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do estádio: o lado da prancheta acende. A bomba de infusão corre pelo circuito de cones, e cada cone tem uma bandeirinha vermelha, amarela ou verde, como uma nota de risco. O monitor do VAR fica desligado, esperando um jogo que ainda não aconteceu.",
+    "alt": "Olhar para a frente é FMEA",
+    "arquivo": "dia-069-macete.png"
+  },
+  "questao": {
+    "vinheta": "A hospital will introduce smart infusion pumps next month. Before go-live, a team maps every step of the new process, lists how each step could fail, and scores each failure by severity, likelihood, and detectability to redesign the riskiest steps.",
+    "pergunta": "Which quality improvement method is this team using?",
+    "alternativas": {
+      "A": {
+        "texto": "Root cause analysis",
+        "quiz": "Root cause analysis"
+      },
+      "B": {
+        "texto": "Plan-Do-Study-Act cycle",
+        "quiz": "PDSA cycle"
+      },
+      "C": {
+        "texto": "Failure mode and effects analysis",
+        "quiz": "FMEA"
+      },
+      "D": {
+        "texto": "Morbidity and mortality conference",
+        "quiz": "M&M conference"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Olhar para a frente é *FMEA*",
+    "certa": [
+      "A *failure mode and effects analysis* (FMEA) é prospectiva: antes de implantar um processo, a equipe lista cada etapa, imagina como ela pode falhar e dá nota de gravidade, probabilidade e detecção para atacar primeiro os pontos de maior risco. A *root cause analysis* faz o caminho inverso: parte de um evento que já aconteceu e volta no tempo para achar as causas do sistema."
+    ],
+    "termos": [
+      "failure mode and effects analysis",
+      "root cause analysis",
+      "prospective risk assessment",
+      "patient safety"
+    ],
+    "erradas": {
+      "A": "A análise de causa raiz é retrospectiva e começa depois de um evento adverso, não antes da implantação.",
+      "B": "O PDSA testa uma mudança em ciclos pequenos e mede o resultado; não pontua modos de falha antes de começar.",
+      "D": "A reunião de morbidade e mortalidade discute casos que já aconteceram, com foco educativo."
+    },
+    "macete": {
+      "frase": "RCA no *retrovisor*, FMEA *para a frente*",
+      "apoio": "Pegadinha de prova: O NBME diferencia pela linha do tempo: evento que já aconteceu é RCA; processo novo ou mudança planejada, com notas de risco, é FMEA.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma bomba de infusão nova chega no mês que vem e a equipe quer saber onde ela pode falhar antes do primeiro paciente. Qual ferramenta de qualidade é essa?",
+    "palavras_chave": [
+      "smart infusion pumps",
+      "new process",
+      "quality improvement",
+      "hospital technology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual ferramenta a equipe usou?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

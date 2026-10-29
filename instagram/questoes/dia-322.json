@@ -1,0 +1,103 @@
+{
+  "dia": 322,
+  "data": "2027-09-19",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Cólica renal (dia 240), Pericardite aguda (dia 289), Síndrome de lise tumoral (dia 317)",
+  "conceito": "Remix: Suspected kidney stone + Acute pericarditis + Tumor lysis prevention",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": [
+    240,
+    289,
+    317
+  ],
+  "explicacao_em": "2027-09-20",
+  "tom": null,
+  "gancho": "Três discos no toca-discos e uma dor que *melhora inclinado*",
+  "gancho_apoio": "Remix com cólica renal, pericardite e lise tumoral. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-322.png",
+    "cena": "Seu Néfron de DJ, de gravata e fones, diante de um toca-discos com três discos: um com uma pedrinha num cano, outro com um coração de suéter de lã e outro com um caminhão de cristais; um quarto disco, de outra cor, com uma artéria entupida, fica separado.",
+    "foco": "50% 35%",
+    "alt": "Três discos no toca-discos e uma dor que melhora inclinado"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-322-macete.png",
+    "cena": "Callback: o disco do coração gira; o coração tira o suéter que arranha e recebe numa bandeja um comprimido laranja e uma flor lilás de açafrão-do-prado; o Seu Néfron aplaude, aliviado por não ser um disco do rim desta vez.",
+    "foco": "50% 45%",
+    "alt": "Pericardite aguda: anti-inflamatório e colchicina"
+  },
+  "questao": {
+    "vinheta": "A 31-year-old man has 2 days of sharp chest pain that worsens when lying down and improves when leaning forward. He had a cold last week. A scratchy sound is heard at the left sternal border. ECG shows diffuse ST elevation with PR depression. Echocardiography shows no effusion, and troponin is normal.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Noncontrast CT of the abdomen and pelvis",
+        "quiz": "TC sem contraste",
+        "dia": 240
+      },
+      "B": {
+        "texto": "Emergency coronary angiography",
+        "quiz": "Cateterismo urgente"
+      },
+      "C": {
+        "texto": "IV hydration plus rasburicase",
+        "quiz": "Soro + rasburicase",
+        "dia": 317
+      },
+      "D": {
+        "texto": "Ibuprofen plus colchicine",
+        "quiz": "AINE + colchicina",
+        "dia": 289
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Pericardite aguda: *anti-inflamatório e colchicina*",
+    "certa": [
+      "Dor torácica pleurítica que melhora inclinando para frente, atrito pericárdico e supra de ST difuso com infra de PR depois de virose é *acute pericarditis*. O tratamento de primeira linha é anti-inflamatório (*ibuprofen* ou aspirina em dose alta) somado a *colchicine* por cerca de 3 meses, que reduz a recorrência. Sem derrame, sem febre alta e com troponina normal, ele pode tratar em casa."
+    ],
+    "termos": [
+      "acute pericarditis",
+      "diffuse ST elevation with PR depression",
+      "NSAID plus colchicine",
+      "pericardial friction rub"
+    ],
+    "erradas": {
+      "A": "A *TC sem contraste* (dia 240) é o exame da cólica renal, com dor em flanco que irradia para a virilha.",
+      "B": "O *cateterismo de emergência* é para STEMI, com supra localizado num território coronariano e infra recíproco, e não difuso com infra de PR.",
+      "C": "*Hidratação com rasburicase* (dia 317) previne lise tumoral antes da quimioterapia, sem relação com dor torácica."
+    },
+    "macete": {
+      "frase": "*Pericardite: o ST sobe em todo lugar, o PR desce e a cura vem com flor*",
+      "apoio": "É o disco do dia 289: o coração tira o suéter de lã que arranha (o atrito) e recebe o comprimido de anti-inflamatório e a flor de açafrão-do-prado, a planta de onde veio a colchicina.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com cólica renal (dia 240), pericardite aguda (dia 289) e síndrome de lise tumoral (dia 317), mais um intruso. Homem de 31 anos com dor no peito que piora deitado e melhora inclinado, depois de um resfriado. Qual é o próximo passo?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Dor que melhora inclinado: próximo passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

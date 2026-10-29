@@ -1,0 +1,100 @@
+{
+  "dia": 358,
+  "data": "2027-10-25",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Deficiência seletiva de IgA",
+  "conceito": "Selective IgA deficiency: anti-IgA antibodies cause anaphylaxis to standard blood products",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-26",
+  "tom": null,
+  "gancho": "O porteiro das mucosas *nunca apareceu*. E a transfusão?",
+  "gancho_apoio": "Anafilaxia minutos depois de começar o concentrado de hemácias.",
+  "imagem": {
+    "arquivo": "dia-358.png",
+    "cena": "Macrô na porta do boteco dos micróbios ao lado de uma porta de mucosa com o banquinho do porteiro vazio; um entregador traz uma encomenda lacrada com laço de presente.",
+    "foco": "50% 35%",
+    "alt": "O porteiro das mucosas nunca apareceu. E a transfusão?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-358-macete.png",
+    "cena": "Callback: Macrô coloca a encomenda numa máquina de lavar cheia de espuma, que solta pequenos enfeites em forma de Y duplo; a encomenda sai limpa e brilhante, e um cone vermelho fica ao lado de outra caixa ainda sem lavar.",
+    "foco": "50% 45%",
+    "alt": "Deficiência de IgA: washed ou de doador sem IgA"
+  },
+  "questao": {
+    "vinheta": "A 35-year-old man develops hypotension, wheezing, and diffuse urticaria within minutes of starting a red blood cell transfusion after surgery. He has a history of recurrent sinusitis and celiac disease. The transfusion is stopped and epinephrine is given. Serum IgA is undetectable, with normal IgG and IgM.",
+    "pergunta": "Which is the most appropriate approach for his future transfusions?",
+    "alternativas": {
+      "A": {
+        "texto": "Irradiated red blood cells",
+        "quiz": "Irradiado"
+      },
+      "B": {
+        "texto": "Leukoreduced red blood cells",
+        "quiz": "Leucorreduzido"
+      },
+      "C": {
+        "texto": "Washed or IgA-deficient donor products",
+        "quiz": "Lavado ou sem IgA"
+      },
+      "D": {
+        "texto": "CMV-negative red blood cells",
+        "quiz": "CMV negativo"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Deficiência de IgA: *washed* ou de doador sem IgA",
+    "certa": [
+      "Na *selective IgA deficiency*, alguns pacientes formam *anti-IgA antibodies*. Quando recebem plasma de doador com IgA, mesmo o pouco que sobra num concentrado de hemácias, podem ter *anaphylaxis*. Nas próximas transfusões, usar *washed red blood cells* (a lavagem retira o plasma) ou hemocomponentes de doadores com deficiência de IgA."
+    ],
+    "termos": [
+      "selective IgA deficiency",
+      "anti-IgA antibodies",
+      "anaphylactic transfusion reaction",
+      "washed red blood cells"
+    ],
+    "erradas": {
+      "A": "Irradiar inativa os linfócitos do doador e protege imunossuprimidos da GVHD transfusional, mas não muda a IgA do plasma.",
+      "B": "Leucorredução reduz reação febril não hemolítica, aloimunização HLA e transmissão de CMV, mas não remove a IgA do plasma.",
+      "D": "Hemocomponente CMV negativo protege receptores CMV negativos de alto risco, como transplantados e recém-nascidos."
+    },
+    "macete": {
+      "frase": "*Roupa emprestada a gente lava antes*",
+      "apoio": "Quem nunca teve IgA estranha a IgA do doador e reage como a um penetra. Lavar o concentrado tira o perfume do plasma de outra pessoa. Na imagem, o Macrô passa a encomenda na máquina de lavar antes de entregar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Minutos depois de começar a transfusão, pressão caindo, chiado e urticária pelo corpo. Ele tem sinusites de repetição e doença celíaca, e a IgA veio indetectável. Como transfundir da próxima vez?",
+    "palavras_chave": [
+      "transfusion reaction",
+      "urticaria and wheezing",
+      "recurrent sinusitis",
+      "celiac disease"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Hematologia",
+      "#Immunology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Sem IgA e anafilaxia na transfusão:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

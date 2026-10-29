@@ -1,0 +1,100 @@
+{
+  "dia": 353,
+  "data": "2027-10-20",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Osteoporose pós-menopausa",
+  "conceito": "Postmenopausal osteoporosis: estrogen loss raises RANKL and osteoclast activity",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Osteoporose (20/10).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-21",
+  "tom": null,
+  "gancho": "A síndica saiu e *a turma da demolição deu festa*",
+  "gancho_apoio": "Dia Mundial da Osteoporose. Exames normais e uma densitometria baixa.",
+  "imagem": {
+    "arquivo": "dia-353.png",
+    "cena": "Um prédio feito de favos de osso trabecular, com a cadeira da síndica vazia e um molho de chaves pendurado; no portão, uma equipe com britadeiras e outra com tijolos esperam a ordem.",
+    "foco": "50% 35%",
+    "alt": "A síndica saiu e a turma da demolição deu festa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-353-macete.png",
+    "cena": "Callback: dezenas de convites dourados sem texto voam até as células grandes da britadeira, que abrem buracos nas vigas; o porteiro tenta recolher os convites, mas não dá conta.",
+    "foco": "50% 45%",
+    "alt": "Sem estrogênio, sobe o RANKL e o osteoclasto trabalha mais"
+  },
+  "questao": {
+    "vinheta": "A 61-year-old woman, 10 years after menopause, has a lumbar spine DXA T-score of -2.8. Serum calcium, phosphate, alkaline phosphatase, PTH, and 25-hydroxyvitamin D are normal. She has never used hormone therapy.",
+    "pergunta": "Loss of estrogen most directly causes her bone loss by which mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Increased osteoprotegerin secretion by osteoblasts",
+        "quiz": "Mais OPG"
+      },
+      "B": {
+        "texto": "Defective mineralization of osteoid",
+        "quiz": "Mineraliza mal"
+      },
+      "C": {
+        "texto": "Increased RANKL signaling and osteoclast activity",
+        "quiz": "Mais RANKL"
+      },
+      "D": {
+        "texto": "Excess parathyroid hormone stimulating resorption",
+        "quiz": "Excesso de PTH"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Sem estrogênio, sobe o *RANKL* e o osteoclasto trabalha mais",
+    "certa": [
+      "O estrogênio freia a reabsorção: reduz o *RANKL* e aumenta a *osteoprotegerin* (OPG), o receptor falso que sequestra o RANKL. Depois da menopausa, mais RANKL se liga ao RANK dos precursores, e surgem mais *osteoclasts*, mais ativos e de vida mais longa. A reabsorção passa a formação, com perda de osso trabecular e cálcio, fósforo e PTH normais: *postmenopausal osteoporosis*."
+    ],
+    "termos": [
+      "postmenopausal osteoporosis",
+      "RANKL",
+      "osteoprotegerin",
+      "osteoclasts"
+    ],
+    "erradas": {
+      "A": "Mais OPG reduziria a reabsorção; sem estrogênio, a OPG cai.",
+      "B": "Mineralização defeituosa é osteomalácia, com vitamina D baixa, fosfatase alcalina alta e às vezes cálcio e fósforo baixos.",
+      "D": "PTH normal afasta hiperparatireoidismo como causa da perda óssea."
+    },
+    "macete": {
+      "frase": "*Estrogênio é a síndica do prédio do osso*",
+      "apoio": "Com a síndica, os convites da festa da demolição (RANKL) são poucos e o porteiro OPG recolhe os que sobram. Sem ela, os convites se espalham e a turma da britadeira (osteoclasto) faz festa. O denosumabe recolhe os convites: é anticorpo anti-RANKL.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial da Osteoporose. Dez anos depois da menopausa, densitometria com T-score de -2,8 e todos os exames de sangue normais. Por que a falta de estrogênio tira osso?",
+    "palavras_chave": [
+      "10 years after menopause",
+      "DXA T-score",
+      "normal calcium and PTH",
+      "bone remodeling"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Osteoporose",
+      "#Fisiologia",
+      "#Physiology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Sem estrogênio, por que perde osso?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

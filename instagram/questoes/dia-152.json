@@ -1,0 +1,88 @@
+{
+  "dia": 152,
+  "data": "2027-04-02",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Irritabilidade no autismo",
+  "conceito": "Severe irritability in autism: risperidone or aripiprazole with metabolic monitoring",
+  "personagem": null,
+  "gancho_data": "Dia Mundial de Conscientização do Autismo (2/4): tom respeitoso, sem humor sobre a condição.",
+  "remix_de": null,
+  "explicacao_em": "2027-04-03",
+  "tom": "acolhedor",
+  "gancho": "Irritabilidade intensa no autismo: quais remédios têm aprovação da FDA?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-152.png",
+    "cena": "Um balcão de farmácia sereno, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada, à luz suave da manhã. Sem piada: a imagem lembra que remédio vem junto com acompanhamento.",
+    "foco": "50% 35%",
+    "alt": "Um balcão de farmácia sereno, com uma balança, uma estante de tubos de exame e uma caixa de remédio fechada, à luz suave da manhã."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-152-macete.png",
+    "cena": "Duas chaves num chaveiro sobre o balcão, uma vermelha e uma verde (os dois remédios aprovados), ao lado da balança e dos tubos de exame: remédio e monitorização andam juntos.",
+    "alt": "Irritabilidade grave no autismo: risperidone ou aripiprazole"
+  },
+  "questao": {
+    "vinheta": "An 8-year-old boy with autism spectrum disorder has had 6 months of severe irritability with aggression toward family members and self-injury, despite 4 months of consistent behavioral therapy and parent training. Evaluation for medical causes, including pain, constipation, and sleep problems, is unremarkable.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Methylphenidate",
+        "quiz": "Metilfenidato"
+      },
+      "B": {
+        "texto": "Fluoxetine",
+        "quiz": "Fluoxetina"
+      },
+      "C": {
+        "texto": "Risperidone",
+        "quiz": "Risperidona"
+      },
+      "D": {
+        "texto": "Clonidine",
+        "quiz": "Clonidina"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Irritabilidade grave no autismo: *risperidone* ou *aripiprazole*",
+    "certa": [
+      "Na irritabilidade grave do *autism spectrum disorder* que persiste apesar da terapia comportamental, *risperidone* (a partir de 5 anos) e *aripiprazole* (a partir de 6 anos) são os dois remédios aprovados pela FDA. Eles tratam irritabilidade e agressividade, não as características centrais do autismo. Antes e durante o uso, acompanhar peso, IMC, glicemia, lipídios e, com risperidona, sinais de *hyperprolactinemia*."
+    ],
+    "termos": [
+      "autism spectrum disorder",
+      "irritability",
+      "risperidone",
+      "aripiprazole",
+      "metabolic monitoring"
+    ],
+    "erradas": {
+      "A": "O *methylphenidate* ajuda quando há sintomas de TDAH associados, mas não é a escolha para irritabilidade grave com agressividade.",
+      "B": "Os ISRS como a *fluoxetine* não mostraram benefício consistente para irritabilidade no autismo e podem causar ativação comportamental em crianças.",
+      "D": "A *clonidine* pode ajudar no sono e na hiperatividade, mas não é a primeira escolha para agressividade grave."
+    },
+    "macete": {
+      "frase": "Duas chaves aprovadas, *R* e *A*: risperidona e aripiprazol. Junto com elas, sempre a balança e o exame de sangue.",
+      "apoio": "O NBME costuma exigir que a terapia comportamental e as causas médicas de desconforto, como dor e constipação, tenham sido avaliadas antes do antipsicótico, e cobra a monitorização metabólica.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "2 de abril é o Dia Mundial de Conscientização do Autismo. A questão de hoje trata de um ponto que cai na prova e aparece no consultório: quando a irritabilidade é intensa e a terapia comportamental já foi feita, o que a diretriz americana recomenda?",
+    "palavras_chave": [
+      "autism spectrum disorder",
+      "aggression",
+      "self-injury",
+      "behavioral therapy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Irritabilidade grave no TEA: qual remédio?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 262,
+  "data": "2027-07-21",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Melanoma",
+  "conceito": "Melanoma prognosis: Breslow thickness is the strongest predictor",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-22",
+  "tom": null,
+  "gancho": "No bolo de camadas da pele, *qual régua* decide?",
+  "gancho_apoio": "Lesão pigmentada assimétrica, laudo de melanoma. Qual medida pesa mais no prognóstico?",
+  "imagem": {
+    "arquivo": "dia-262.png",
+    "cena": "Uma fatia de bolo de padaria vista de lado, com várias camadas coloridas, como as camadas da pele, e uma pequena mancha escura na cobertura. Em volta, ferramentas de medir esperam: uma fita métrica esticada na largura, uma paleta de pintor, um cortador de massa de borda ondulada e uma régua de pé.",
+    "foco": "50% 35%",
+    "alt": "No bolo de camadas da pele, qual régua decide?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-262-macete.png",
+    "cena": "A régua de pé desce dentro da fatia de bolo, logo abaixo da cobertura até o ponto mais fundo que a mancha alcançou, com uma luz destacando essa profundidade. A fita métrica, a paleta e o cortador ficam de lado, apagados.",
+    "foco": "50% 40%",
+    "alt": "Breslow: quanto mais fundo, maior o risco"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man has a pigmented lesion excised from his upper back. It is 9 mm wide and asymmetric, with irregular borders and several shades of brown and black. Histology shows atypical melanocytes invading the dermis, consistent with melanoma.",
+    "pergunta": "Which feature of the primary tumor best predicts his risk of metastasis?",
+    "alternativas": {
+      "A": {
+        "texto": "Diameter of the lesion",
+        "quiz": "Diâmetro"
+      },
+      "B": {
+        "texto": "Number of colors",
+        "quiz": "Número de cores"
+      },
+      "C": {
+        "texto": "Vertical tumor thickness",
+        "quiz": "Espessura vertical"
+      },
+      "D": {
+        "texto": "Irregularity of the borders",
+        "quiz": "Borda irregular"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "*Breslow*: quanto mais fundo, maior o risco",
+    "certa": [
+      "No tumor primário, o fator prognóstico mais forte é a *Breslow thickness*: a espessura em milímetros da camada granulosa da epiderme até a célula tumoral mais profunda. Quanto mais fundo, maior a chance de o tumor alcançar vasos e linfáticos na fase de *vertical growth*. A ulceração também entra no estadiamento, e o *sentinel lymph node* é avaliado nos tumores mais espessos."
+    ],
+    "termos": [
+      "Breslow thickness",
+      "vertical growth phase",
+      "ulceration",
+      "sentinel lymph node"
+    ],
+    "erradas": {
+      "A": "O diâmetro acima de 6 mm ajuda a suspeitar (o D do ABCDE), mas não prediz metástase tão bem quanto a espessura.",
+      "B": "A variação de cor é critério de suspeita clínica, não de prognóstico.",
+      "D": "A borda irregular ajuda a reconhecer a lesão, mas não mede o quanto ela invadiu."
+    },
+    "macete": {
+      "frase": "No melanoma, vale a *profundidade*, não a *largura*",
+      "apoio": "No bolo de camadas, a fita métrica, a paleta e o cortador ondulado servem para desconfiar; a régua de pé, que mede até onde a mancha desceu, é a que conta para o prognóstico: Breslow.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Lesão de 9 mm, assimétrica, de várias cores, com laudo de melanoma. Qual medida mais pesa no risco de metástase?",
+    "palavras_chave": [
+      "pigmented lesion",
+      "asymmetry",
+      "irregular borders",
+      "prognosis"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Patologia",
+      "#Dermatologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual medida pesa mais?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

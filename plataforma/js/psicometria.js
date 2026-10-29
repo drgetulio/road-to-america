@@ -50,7 +50,7 @@ export const SENSIBILIDADE_PADRAO = Object.freeze({ deslocamento: 0.75, pontos: 
    angular precisa ser pelo menos 4 vezes o seu erro-padrão; ep_max: erro-padrão do
    corte ligado de no máximo 0,35 logit (acima disso o corte provisório, com 0,7, ainda
    é a escolha mais honesta). */
-export const LIGACAO_NBME = Object.freeze({ limiar: Object.freeze({ step1: 196, step2ck: 218 }), min_escores: 30, min_t: 4, ep_max: 0.35 });
+export const LIGACAO_NBME = Object.freeze({ limiar: Object.freeze({ step1: 196, step2ck: 218 }), min_alunos: 30, min_t: 4, ep_max: 0.35 });
 /* Nome do padrão em uso, para todas as telas */
 export function nomePadrao(origem) {
   return origem === "painel" ? "do painel de juízes" : origem === "nbme" ? "ligado às autoavaliações NBME da turma" : "provisório";
@@ -91,7 +91,7 @@ export const RECALIBRACAO_PADRAO = Object.freeze({ tau: 0.5, priori_theta: PRIOR
 /* Desfechos reais: o modelo só é mostrado ao aluno com pelo menos 30 aprovados e 30
    reprovados e taxa de resposta de pelo menos 50% (seção 13); com 10 de cada, fica
    exploratório, só na área administrativa. */
-export const DESFECHOS_PADRAO = Object.freeze({ min_por_classe: 30, min_exploratorio: 10, min_escores: 30, taxa_resposta_min: 0.5, peso_ipw_max: 10 });
+export const DESFECHOS_PADRAO = Object.freeze({ min_por_classe: 30, min_exploratorio: 10, min_alunos: 30, taxa_resposta_min: 0.5, peso_ipw_max: 10 });
 /* Padrão mínimo de aprovação do Step 2 CK desde 01/07/2025
    (https://usmle.org/scores-transcripts/examination-results-and-scoring) */
 export const PADRAO_STEP2CK = 218;
@@ -1106,29 +1106,85 @@ export function estimarEfeitoModo(respostas, itens, { minCronometradas = 10, min
   return { delta: d, ep: 1 / Math.sqrt(h), n_tutor: linhas.length, pessoas, suficiente: linhas.length >= minTutor };
 }
 
-/* Escores reais (Step 2 CK oficial ou NBME) contra o theta do banco, por mínimos
-   quadrados: escore = a + b * theta + erro (desvio-padrão residual sigma), com a
-   covariância dos coeficientes (var_a, var_b, cov_ab) para o corte ligado e a
-   predição. O regressor é o EAP: como E[theta | respostas] = EAP, a covariância entre
-   theta e EAP é a variância do EAP, e o coeficiente angular sobre o EAP estima o da
-   relação com o theta verdadeiro sem a atenuação de um regressor com erro clássico
-   (seção 6.2), desde que a priori represente a população.
-   suficiente = pelo menos min_escores registros (critério interno). */
-export function ajustarEscore(registros, { min_escores = DESFECHOS_PADRAO.min_escores } = {}) {
+/* Escores reais (Step 2 CK oficial ou NBME) contra o theta do banco:
+   escore = a + b * theta + erro. O mesmo aluno costuma fazer várias autoavaliações NBME, e
+   os escores dele são correlacionados (efeito do aluno). Tratar cada escore como
+   independente conta escores em vez de alunos e encolhe o erro-padrão dos coeficientes.
+   Por isso:
+   - cada aluno pesa 1 no ajuste (mínimos quadrados ponderados, peso 1/n_i em cada um dos
+     n_i escores do aluno i), o que equivale a um escore por aluno quando ninguém repete;
+   - a covariância dos coeficientes (var_a, var_b, cov_ab) é a robusta por aluno
+     (sanduíche agrupado, com a correção G/(G-1) x (N-1)/(N-2) para poucos grupos), que
+     vale com qualquer correlação entre os escores do mesmo aluno;
+   - suficiente exige pelo menos min_alunos ALUNOS distintos (critério interno); o número
+     de escores não conta para esse mínimo.
+   Os pontos são os da regressão marginal: o regressor é o EAP de cada data, e como
+   E[theta | respostas] = EAP, a reta sobre o EAP estima a relação com o theta verdadeiro
+   sem a atenuação de um regressor com erro clássico (seção 6.2), desde que a priori
+   represente a população. Um modelo de efeito aleatório (GLS) usaria também a variação do
+   EAP dentro do aluno entre uma data e outra, que é em boa parte erro de medida, e
+   puxaria b para baixo; por isso ficou de fora (PSICOMETRIA.md, seção 6.2).
+   sigma: desvio de um escore novo de um aluno novo (média, por aluno, do quadrado do
+   resíduo, com G - 2 graus de liberdade); tau e icc: parte desse desvio que é do aluno
+   (estimativa por momentos, só com repetição). Registros sem user_id contam cada um como
+   um aluno. */
+export function ajustarEscore(registros, { min_alunos = DESFECHOS_PADRAO.min_alunos } = {}) {
   const ok = (registros || []).filter((r) => Number.isFinite(r.theta) && Number.isFinite(r.escore));
   const n = ok.length;
-  if (n < 3) return { n, suficiente: false, a: null, b: null, sigma: null, r2: null, aviso: "Ainda não há escores reais para calibrar a nota." };
-  const mx = ok.reduce((s, r) => s + r.theta, 0) / n, my = ok.reduce((s, r) => s + r.escore, 0) / n;
-  let sxy = 0, sxx = 0, syy = 0;
-  for (const r of ok) { sxy += (r.theta - mx) * (r.escore - my); sxx += (r.theta - mx) ** 2; syy += (r.escore - my) ** 2; }
-  const b = sxx > 0 ? sxy / sxx : 0, a = my - b * mx;
-  const sse = ok.reduce((s, r) => s + (r.escore - a - b * r.theta) ** 2, 0);
-  const sigma = Math.sqrt(sse / Math.max(1, n - 2));
-  const s2 = sigma * sigma;
-  const var_b = sxx > 0 ? s2 / sxx : null;
-  const var_a = sxx > 0 ? s2 * (1 / n + (mx * mx) / sxx) : null;
-  const cov_ab = sxx > 0 ? -mx * s2 / sxx : null;
-  return { n, suficiente: n >= min_escores, a, b, sigma, r2: syy > 0 ? 1 - sse / syy : null, var_a, var_b, cov_ab, media_theta: mx, aviso: n >= min_escores ? "" : "Poucos escores reais (" + n + "); a nota estimada ainda não é mostrada ao aluno." };
+  const grupos = new Map();
+  ok.forEach((r, i) => { const k = r.user_id !== undefined && r.user_id !== null && r.user_id !== "" ? "u:" + r.user_id : "r:" + i; (grupos.get(k) || grupos.set(k, []).get(k)).push(r); });
+  const G = [...grupos.values()];
+  const nAlunos = G.length;
+  const base = { n, n_alunos: nAlunos, min_alunos, suficiente: false, a: null, b: null, sigma: null, r2: null };
+  if (n < 3 || nAlunos < 3) return { ...base, aviso: "Ainda não há escores reais de alunos suficientes para calibrar a nota." };
+  /* mínimos quadrados ponderados, cada aluno com peso total 1 */
+  let sw = 0, sx = 0, sy = 0;
+  for (const g of G) for (const r of g) { const w = 1 / g.length; sw += w; sx += w * r.theta; sy += w * r.escore; }
+  const mx = sx / sw, my = sy / sw;
+  let sxx = 0, sxy = 0, syy = 0;
+  for (const g of G) for (const r of g) { const w = 1 / g.length; sxx += w * (r.theta - mx) ** 2; sxy += w * (r.theta - mx) * (r.escore - my); syy += w * (r.escore - my) ** 2; }
+  if (!(sxx > 1e-12)) return { ...base, aviso: "Os escores não variam em theta; não há como ajustar a regressão." };
+  const b = sxy / sxx, a = my - b * mx;
+  /* (X'WX)^-1 e o "meio" do sanduíche, somado por aluno */
+  const m00 = sw, m01 = sx, m11 = sxx + sw * mx * mx;
+  const det = m00 * m11 - m01 * m01;
+  const i00 = m11 / det, i01 = -m01 / det, i11 = m00 / det;
+  let c00 = 0, c01 = 0, c11 = 0, sseAluno = 0, sse = 0, ssw = 0, glw = 0;
+  for (const g of G) {
+    let u0 = 0, u1 = 0, se = 0, s1 = 0;
+    for (const r of g) { const e = r.escore - a - b * r.theta, w = 1 / g.length; u0 += w * e; u1 += w * r.theta * e; se += e * e; s1 += e; sse += w * e * e; }
+    c00 += u0 * u0; c01 += u0 * u1; c11 += u1 * u1;
+    sseAluno += se / g.length;
+    if (g.length > 1) { const mE = s1 / g.length; for (const r of g) ssw += (r.escore - a - b * r.theta - mE) ** 2; glw += g.length - 1; }
+  }
+  const corr = nAlunos > 1 ? (nAlunos / (nAlunos - 1)) * ((n - 1) / Math.max(1, n - 2)) : 1;
+  const sand = (p, q) => {
+    const A = [[i00, i01], [i01, i11]], C = [[c00, c01], [c01, c11]];
+    let v = 0;
+    for (let k = 0; k < 2; k++) for (let l = 0; l < 2; l++) v += A[p][k] * C[k][l] * A[l][q];
+    return corr * v;
+  };
+  const var_a = sand(0, 0), var_b = sand(1, 1), cov_ab = sand(0, 1);
+  const s2 = sseAluno / Math.max(1, nAlunos - 2);
+  const s2w = glw > 0 ? ssw / glw : null;
+  const tau2 = s2w === null ? null : Math.max(0, s2 - s2w);
+  /* erro-padrão de b se cada escore contasse como um aluno (só para comparar) */
+  let oxx = 0, ox = 0, oy = 0, oxy = 0;
+  for (const r of ok) { ox += r.theta; oy += r.escore; }
+  ox /= n; oy /= n;
+  for (const r of ok) { oxx += (r.theta - ox) ** 2; oxy += (r.theta - ox) * (r.escore - oy); }
+  const ob = oxx > 0 ? oxy / oxx : 0, oa = oy - ob * ox;
+  const osse = ok.reduce((t, r) => t + (r.escore - oa - ob * r.theta) ** 2, 0);
+  const repetido = nAlunos < n;
+  const suficiente = nAlunos >= min_alunos;
+  return {
+    n, n_alunos: nAlunos, escores_por_aluno: Math.round((n / nAlunos) * 100) / 100, min_alunos, suficiente,
+    metodo: repetido ? "mqp_peso_por_aluno_ep_robusto_agrupado" : "minimos_quadrados_um_escore_por_aluno",
+    a, b, sigma: Math.sqrt(s2), tau: tau2 === null ? null : Math.sqrt(tau2), icc: tau2 === null || !(s2 > 0) ? null : tau2 / s2,
+    r2: syy > 0 ? 1 - sse / syy : null, var_a, var_b, cov_ab, media_theta: mx,
+    ep_b_sem_agrupar: oxx > 0 && n > 2 ? Math.sqrt(osse / (n - 2) / oxx) : null,
+    aviso: suficiente ? "" : "Poucos alunos com escore real (" + nAlunos + " alunos, " + n + " escores; mínimo de " + min_alunos + " alunos); a nota estimada ainda não é mostrada ao aluno."
+  };
 }
 /* Escore previsto, intervalo preditivo de 90% e P(escore >= limiar). Mesma abordagem
    dos desfechos: a regressão é sobre o EAP e o resíduo sigma já contém o erro de
@@ -1148,12 +1204,13 @@ export function preverEscore(modelo, { theta } = {}, limiar = PADRAO_STEP2CK) {
    escore previsto atinge o padrão de aprovação: mu = (limiar - a) / b. Erro-padrão pelo
    método delta, com gradiente (-1/b, -(limiar - a)/b²):
      ep² = var_a / b² + (limiar - a)² var_b / b⁴ + 2 (limiar - a) cov_ab / b³
-   suficiente: pelo menos min_escores escores, b > 0 com b / ep(b) >= min_t e
-   ep <= ep_max. sigma = max(ep, INCERTEZA_CORTE.minimo) vai no lugar do provisório. É
+   suficiente: pelo menos min_alunos ALUNOS distintos (escores repetidos do mesmo aluno
+   entram no ajuste com o efeito do aluno, mas não contam para o mínimo), b > 0 com
+   b / ep(b) >= min_t e ep <= ep_max. sigma = max(ep, INCERTEZA_CORTE.minimo) vai no lugar do provisório. É
    uma ligação linear (regressão), não equipercentil: com 30 a 100 escores a ligação
    equipercentil fica instável nas caudas, e o que interessa é um ponto só, o corte. */
-export function corteLigadoNbme(modelo, { step = "step1", limiar = LIGACAO_NBME.limiar[step], min_escores = LIGACAO_NBME.min_escores, min_t = LIGACAO_NBME.min_t, ep_max = LIGACAO_NBME.ep_max } = {}) {
-  const base = { metodo: "linear_regressao_sobre_eap", limiar, n: modelo?.n ?? 0, mu: null, ep: null, sigma: null, suficiente: false };
+export function corteLigadoNbme(modelo, { step = "step1", limiar = LIGACAO_NBME.limiar[step], min_alunos = LIGACAO_NBME.min_alunos, min_t = LIGACAO_NBME.min_t, ep_max = LIGACAO_NBME.ep_max } = {}) {
+  const base = { metodo: "linear_regressao_sobre_eap_agrupada_por_aluno", limiar, n: modelo?.n ?? 0, n_alunos: modelo?.n_alunos ?? null, min_alunos, mu: null, ep: null, sigma: null, suficiente: false };
   if (!modelo || !Number.isFinite(modelo.a) || !Number.isFinite(modelo.b)) return { ...base, motivo: "Ainda não há escores NBME suficientes para a ligação." };
   const { a, b } = modelo;
   if (!Number.isFinite(modelo.var_b) || !Number.isFinite(modelo.var_a) || !Number.isFinite(modelo.cov_ab)) return { ...base, motivo: "Modelo sem a covariância dos coeficientes; recalcule a calibração." };
@@ -1163,7 +1220,9 @@ export function corteLigadoNbme(modelo, { step = "step1", limiar = LIGACAO_NBME.
   const ep2 = modelo.var_a / (b * b) + (d * d * modelo.var_b) / b ** 4 + (2 * d * modelo.cov_ab) / b ** 3;
   const mu = d / b, ep = Math.sqrt(Math.max(0, ep2));
   const motivos = [];
-  if ((modelo.n ?? 0) < min_escores) motivos.push("Faltam escores: " + (modelo.n ?? 0) + " de " + min_escores + ".");
+  /* o mínimo é de alunos: modelo antigo, sem a contagem de alunos, não serve */
+  if (!Number.isFinite(modelo.n_alunos)) motivos.push("Modelo sem a contagem de alunos (escores repetidos do mesmo aluno contados como independentes); recalcule a calibração.");
+  else if (modelo.n_alunos < min_alunos) motivos.push("Faltam alunos: " + modelo.n_alunos + " de " + min_alunos + " (" + (modelo.n ?? 0) + " escores; escores repetidos do mesmo aluno não contam para o mínimo).");
   if (t < min_t) motivos.push("Relação fraca entre o escore NBME e a habilidade do banco (b / ep = " + String(Math.round(t * 10) / 10).replace(".", ",") + "; mínimo " + min_t + ").");
   if (ep > ep_max) motivos.push("Erro-padrão do corte ligado de " + String(Math.round(ep * 100) / 100).replace(".", ",") + " logit, acima de " + String(ep_max).replace(".", ",") + ".");
   return { ...base, mu, ep, sigma: Math.max(ep, INCERTEZA_CORTE.minimo), t, suficiente: motivos.length === 0, motivo: motivos.join(" ") };

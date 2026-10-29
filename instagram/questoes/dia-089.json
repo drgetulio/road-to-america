@@ -1,0 +1,96 @@
+{
+  "dia": 89,
+  "data": "2027-01-29",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Bisfosfonatos orais",
+  "conceito": "Oral bisphosphonates: take fasting with water and stay upright 30 minutes (pill esophagitis)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-30",
+  "gancho": "Alendronato antes de dormir, com leite: *o que deu errado*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "No balcão da farmácia de interior, ao amanhecer, um comprimido grande e simpático olha para quatro opções: um copo de leite, um travesseiro, um prato de comida e um copo de água. Uma ampulheta está no canto do balcão.",
+    "foco": "50% 35%",
+    "alt": "Alendronato antes de dormir, com leite: o que deu errado?",
+    "arquivo": "dia-089.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o comprimido desce de pé por um escorregador em forma de esôfago junto com uma onda de água limpa, enquanto a ampulheta marca meia hora. O travesseiro, o leite e o prato foram empurrados para o canto do balcão.",
+    "alt": "Jejum, água pura e de pé por 30 minutos",
+    "arquivo": "dia-089-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old woman with osteoporosis started oral alendronate 70 mg weekly 1 month ago. She has retrosternal pain and pain on swallowing the day after each dose. She takes the tablet at bedtime with a glass of milk.",
+    "pergunta": "Which counseling would most likely have prevented these symptoms?",
+    "alternativas": {
+      "A": {
+        "texto": "Take it with a calcium supplement",
+        "quiz": "With calcium"
+      },
+      "B": {
+        "texto": "Take it at bedtime lying on the left side",
+        "quiz": "Bedtime, left side"
+      },
+      "C": {
+        "texto": "Crush the tablet and mix it with food",
+        "quiz": "Crush into food"
+      },
+      "D": {
+        "texto": "Take it fasting with water, stay upright",
+        "quiz": "Fasting, upright"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Jejum, água pura e *de pé por 30 minutos*",
+    "certa": [
+      "Os *oral bisphosphonates* (alendronato, risedronato) podem grudar na mucosa e causar *pill esophagitis*. A orientação é tomar de manhã, em jejum, com um copo cheio de água pura, e ficar sentado ou em pé por pelo menos 30 minutos, sem comer, beber ou tomar outros remédios nesse intervalo. Leite, cálcio, café e comida também reduzem muito a absorção, que já é baixa."
+    ],
+    "termos": [
+      "oral bisphosphonates",
+      "alendronate",
+      "pill esophagitis",
+      "upright for 30 minutes"
+    ],
+    "erradas": {
+      "A": "O cálcio se liga ao bisfosfonato no intestino e bloqueia a absorção; o suplemento vai em outro horário.",
+      "B": "Deitar logo depois deixa o comprimido parado no esôfago, que é exatamente o que causa a esofagite.",
+      "C": "Triturar e misturar com comida irrita a mucosa e derruba a absorção."
+    },
+    "macete": {
+      "frase": "Primeiro freguês: *jejum, água, de pé*",
+      "apoio": "Pegadinha de prova: O NBME pergunta a orientação de uso ou dá uma esofagite depois do bisfosfonato; os outros efeitos cobrados são osteonecrose de mandíbula e fratura atípica de fêmur.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Alendronato semanal, dor atrás do esterno e dor para engolir no dia seguinte a cada dose. O jeito de tomar está errado. No Sextou na Farmácia, qual orientação teria evitado isso?",
+    "palavras_chave": [
+      "osteoporosis",
+      "retrosternal pain",
+      "odynophagia",
+      "medication counseling"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Farmacologia",
+      "#Osteoporosis",
+      "#SextouNaFarmacia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual orientação evitaria isso?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

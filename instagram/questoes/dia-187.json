@@ -1,0 +1,87 @@
+{
+  "dia": 187,
+  "data": "2027-05-07",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Varfarina",
+  "conceito": "Warfarin: inhibits vitamin K epoxide reductase, so factors II, VII, IX, X and proteins C and S fall",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-08",
+  "tom": null,
+  "gancho": "Sextou: por que uma *viatura* apagou antes de todo o trânsito?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-187.png",
+    "cena": "Capitã Plaqueta, intrigada, no meio de um cruzamento: uma das duas pequenas viaturas de patrulha apagou de repente, enquanto quatro carrinhos coloridos e a outra viatura seguem devagar, com a luz de bateria fraca piscando.",
+    "foco": "50% 35%",
+    "alt": "Sextou: por que uma viatura apagou antes de todo o trânsito?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-187-macete.png",
+    "cena": "Aparece o culpado: no canto, um posto de recarga ao lado de um canteiro de couve (a vitamina K) tem a tomada travada por uma chave inglesa (a varfarina); a viatura C apagou primeiro, junto com um carrinho vermelho (o fator VII), e, para segurar o trânsito no começo, a Capitã chama um caminhão-pipa azul de reforço (a heparina).",
+    "alt": "Varfarina tira a vitamina K da tomada"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with a new mechanical mitral valve starts an oral anticoagulant. On day 2, he develops painful dark purple lesions on his thigh that become necrotic. Further testing shows heterozygous protein C deficiency.",
+    "pergunta": "This drug acts by inhibiting which enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Factor Xa",
+        "quiz": "Fator Xa"
+      },
+      "B": {
+        "texto": "Thrombin",
+        "quiz": "Trombina"
+      },
+      "C": {
+        "texto": "Vitamin K epoxide reductase",
+        "quiz": "Epóxido redutase K"
+      },
+      "D": {
+        "texto": "Cyclooxygenase-1",
+        "quiz": "COX-1"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Varfarina tira a *vitamina K* da tomada",
+    "certa": [
+      "A *warfarin* inibe a *vitamin K epoxide reductase* (VKORC1), que recicla a vitamina K. Sem ela, o fígado não faz a gama-carboxilação dos fatores II, VII, IX e X nem das *proteins C and S*. A proteína C tem meia-vida curta e cai primeiro, o que cria um estado pró-trombótico transitório (*warfarin skin necrosis*), sobretudo em quem já tem deficiência dela."
+    ],
+    "termos": [
+      "warfarin",
+      "vitamin K epoxide reductase",
+      "protein C",
+      "warfarin skin necrosis"
+    ],
+    "erradas": {
+      "A": "Inibir o fator Xa diretamente é o mecanismo de rivaroxabana e apixabana, contraindicadas em valva mecânica.",
+      "B": "Inibir a trombina diretamente é o mecanismo da dabigatrana, também contraindicada em valva mecânica, e da argatrobana, de uso venoso na trombocitopenia induzida por heparina.",
+      "D": "Inibir a COX-1 é o efeito da aspirina sobre a plaqueta, que não reduz os fatores dependentes de vitamina K."
+    },
+    "macete": {
+      "frase": "A varfarina tira da tomada o *recarregador da vitamina K*. Sem carga, vão parando os carros *2, 7, 9 e 10* e as viaturas *C e S*. A *viatura C* tem a bateria mais curta e apaga primeiro, junto com o carro 7: por isso, no começo, faz-se a *ponte com heparina*.",
+      "apoio": "O NBME pergunta qual fator cai primeiro (fator VII, por isso o INR sobe antes) e associa necrose de pele nos primeiros dias à queda precoce da proteína C; valva mecânica pede varfarina, não DOAC.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Capitã Plaqueta. Um paciente com valva mecânica começa um anticoagulante oral e, no segundo dia, aparece uma lesão de pele estranha. A enzima bloqueada explica tudo.",
+    "palavras_chave": [
+      "mechanical mitral valve",
+      "oral anticoagulant",
+      "skin necrosis",
+      "protein C deficiency"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Valva mecânica, necrose de pele. Qual a enzima?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

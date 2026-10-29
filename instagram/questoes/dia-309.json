@@ -1,0 +1,96 @@
+{
+  "dia": 309,
+  "data": "2027-09-06",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Gangrena gasosa",
+  "conceito": "Clostridium perfringens alpha toxin: lecithinase destroys membranes, gas gangrene with crepitus",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-07",
+  "tom": null,
+  "gancho": "Plástico bolha estalando no músculo: *qual arma o bastão gigante usou?*",
+  "gancho_apoio": "O Macrô chegou para trabalhar e encontrou o salão vazio de neutrófilos.",
+  "imagem": {
+    "arquivo": "dia-309.png",
+    "cena": "Macrô na porta do boteco dos micróbios, de bandeja na mão, olhando um bastão retangular gigante, em forma de vagão, que sopra bolhas num sofá listrado em forma de fibra muscular; o sofá estala como plástico bolha. O salão está quase vazio de células de defesa.",
+    "foco": "50% 35%",
+    "alt": "Plástico bolha estalando no músculo: qual arma o bastão gigante usou?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-309-macete.png",
+    "cena": "Callback: o bastão gigante segura uma faquinha e corta ao meio uma gema de ovo frito, que escorre sobre uma parede feita de fileiras de bolinhas com caudas (a membrana); o Macrô aponta para uma placa de Petri amarelada no balcão.",
+    "foco": "50% 45%",
+    "alt": "Gangrena gasosa: a alpha toxin é uma lecitinase"
+  },
+  "questao": {
+    "vinheta": "A 42-year-old man has rapidly worsening pain in his left thigh 2 days after a crush injury in a motorcycle collision; the wound was contaminated with soil. The skin is bronze with hemorrhagic bullae, and crepitus is palpable. Gram stain of the exudate shows large gram-positive rods and few neutrophils.",
+    "pergunta": "Which virulence factor most directly causes the tissue destruction?",
+    "alternativas": {
+      "A": {
+        "texto": "Lecithinase hydrolyzing membrane phospholipids",
+        "quiz": "Lecitinase"
+      },
+      "B": {
+        "texto": "ADP-ribosylation of elongation factor 2",
+        "quiz": "ADP-ribosila EF-2"
+      },
+      "C": {
+        "texto": "Blockade of acetylcholine release",
+        "quiz": "Bloqueia ACh"
+      },
+      "D": {
+        "texto": "Blockade of glycine release by Renshaw cells",
+        "quiz": "Bloqueia glicina"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Gangrena gasosa: a *alpha toxin* é uma lecitinase",
+    "certa": [
+      "Ferida suja de terra, dor desproporcional, crepitação e bastonetes gram-positivos grandes com poucos neutrófilos é *gas gangrene* (mionecrose) por *Clostridium perfringens*. A *alpha toxin* é uma *lecithinase* (phospholipase C) que quebra a lecitina das membranas e destrói músculo, hemácias e leucócitos, o que explica a falta de neutrófilos no Gram. A conduta é levar logo ao centro cirúrgico para desbridar, junto com penicilina e clindamicina."
+    ],
+    "termos": [
+      "Clostridium perfringens",
+      "alpha toxin",
+      "lecithinase (phospholipase C)",
+      "gas gangrene"
+    ],
+    "erradas": {
+      "B": "*ADP-ribosilar o EF-2* é a ação da toxina diftérica e da exotoxina A da Pseudomonas, que param a síntese de proteína.",
+      "C": "*Bloquear a acetilcolina* é a toxina botulínica, que dá paralisia flácida descendente sem destruir tecido.",
+      "D": "*Bloquear a glicina* das células de Renshaw é a tetanospasmina do C. tetani, que causa espasmo e trismo, não necrose com gás."
+    },
+    "macete": {
+      "frase": "*Perfringens corta a gema*: lecitinase é a faca na lecitina da membrana",
+      "apoio": "Na imagem, o bastão gigante corta uma gema de ovo (rica em lecitina) como se fosse a parede da célula, e o músculo estala como plástico bolha. Gema é a pista da placa de ágar com gema de ovo do laboratório.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem com ferida suja de terra depois de um acidente de moto. Dois dias depois: dor que piora rápido, pele bronzeada com bolhas e crepitação. No Gram, bastonetes gram-positivos grandes e quase nenhum neutrófilo. Qual fator de virulência destrói o tecido?",
+    "palavras_chave": [
+      "crush injury",
+      "soil contamination",
+      "bronze skin",
+      "large gram-positive rods"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Crepitação e bastão gram-positivo: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

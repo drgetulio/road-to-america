@@ -1,0 +1,96 @@
+{
+  "dia": 97,
+  "data": "2027-02-06",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Valor preditivo positivo",
+  "conceito": "Positive predictive value rises with prevalence while sensitivity and specificity stay fixed",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-07",
+  "tom": null,
+  "gancho": "Estádio lotado ou várzea vazia: qual grito de *gol* é verdade?",
+  "gancho_apoio": "O mesmo teste, com a mesma sensibilidade e especificidade, em duas plateias diferentes.",
+  "imagem": {
+    "arquivo": "dia-097.png",
+    "cena": "Duas arquibancadas de futebol lado a lado, uma lotada e outra quase vazia, com o mesmo apito de juiz pendurado entre elas. O Viés espia por trás de um placar quadriculado em branco, com a lupa na mão.",
+    "foco": "50% 35%",
+    "alt": "Duas arquibancadas, uma lotada e outra vazia, com o Viés espiando atrás do placar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-097-macete.png",
+    "cena": "Callback: na arquibancada vazia, a maioria das bandeiras levantadas é segurada por torcedores de papelão (falsos positivos), e só dois torcedores de verdade comemoram. O Viés ri por trás do placar. Na arquibancada lotada, quase todas as bandeiras são de torcedores reais.",
+    "foco": "50% 40%",
+    "alt": "Na arquibancada vazia, quase todas as bandeiras são de torcedores de papelão; o Viés ri atrás do placar."
+  },
+  "questao": {
+    "vinheta": "A rapid viral antigen test has 90% sensitivity and 90% specificity. It is first used in a referral clinic where disease prevalence is 50%, and then at a community health fair where prevalence is 5%.",
+    "pergunta": "Compared with its use in the clinic, which change is expected at the health fair?",
+    "alternativas": {
+      "A": {
+        "texto": "Higher sensitivity",
+        "quiz": "Sensibilidade maior"
+      },
+      "B": {
+        "texto": "Lower specificity",
+        "quiz": "Especificidade menor"
+      },
+      "C": {
+        "texto": "Lower positive predictive value",
+        "quiz": "VPP menor"
+      },
+      "D": {
+        "texto": "Lower negative predictive value",
+        "quiz": "VPN menor"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "VPP *depende da prevalência*",
+    "certa": [
+      "Sensibilidade e especificidade pertencem ao teste e ficam iguais em qualquer população. O valor preditivo positivo (positive predictive value) cai quando a prevalência cai: em 1000 pessoas na feira, há 45 verdadeiros positivos e 95 falsos positivos, e o VPP vai de 90% para cerca de 32%. Com menos doentes, o valor preditivo negativo sobe, e não desce."
+    ],
+    "termos": [
+      "positive predictive value",
+      "prevalence",
+      "sensitivity",
+      "specificity"
+    ],
+    "erradas": {
+      "A": "A sensibilidade é uma propriedade do teste nos doentes e não muda com a prevalência.",
+      "B": "A especificidade é uma propriedade do teste nos sadios e também não muda com a prevalência.",
+      "D": "Com menos doentes, um negativo fica ainda mais confiável: o VPN sobe, de 90% para mais de 99%."
+    },
+    "macete": {
+      "frase": "Prevalência é a *plateia*: várzea vazia, grito de gol falso",
+      "apoio": "Na imagem, o Viés se esconde atrás do placar enquanto as duas arquibancadas torcem.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado sem viés: o mesmo teste rápido vai da clínica de referência para a feira de saúde do bairro. O que muda nos números?",
+    "palavras_chave": [
+      "rapid antigen test",
+      "referral clinic",
+      "health fair",
+      "screening"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#Epidemiologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Prevalência caiu de 50% para 5%: e aí?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

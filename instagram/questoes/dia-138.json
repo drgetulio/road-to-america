@@ -1,0 +1,95 @@
+{
+  "dia": 138,
+  "data": "2027-03-19",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Antagonistas competitivo e não competitivo",
+  "conceito": "Competitive vs noncompetitive antagonist: right shift with the same Emax vs lower Emax",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": "Match Day (19/3/2027, confirmado pelo NRMP): o dia em que ligante e receptor dão match.",
+  "remix_de": null,
+  "explicacao_em": "2027-03-20",
+  "tom": null,
+  "gancho": "Match Day: o receptor deu match, mas tinha *alguém* na cadeira",
+  "gancho_apoio": "No baile da farmácia da Tia Meia-Vida, mais convidados resolvem o problema?",
+  "imagem": {
+    "arquivo": "dia-138.png",
+    "cena": "Na farmácia da Tia Meia-Vida, um baile: chavinhas amarelas (agonistas) querem sentar nas cadeiras dos receptores, mas um sósia de roupa igual já está sentado numa delas. A Tia observa do balcão.",
+    "foco": "50% 35%",
+    "alt": "Baile na farmácia: chavinhas amarelas querem sentar nas cadeiras; um sósia cinza já ocupa uma delas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-138-macete.png",
+    "cena": "Callback: à esquerda, uma multidão de chavinhas amarelas empurra o sósia cinza para fora da cadeira (competitivo, superável). À direita, outra cadeira está com a perna quebrada e ninguém consegue sentar (não competitivo).",
+    "foco": "50% 40%",
+    "alt": "À esquerda, muitas chaves amarelas tiram o rival da cadeira; à direita, a cadeira quebrada não aceita ninguém."
+  },
+  "questao": {
+    "vinheta": "In an isolated tissue experiment, an agonist produces a sigmoid dose-response curve. Adding drug X shifts the curve to the right without changing the maximal response, and the shift is overcome by increasing the agonist concentration. Drug X alone produces no response.",
+    "pergunta": "Drug X is best classified as which type of drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Inverse agonist",
+        "quiz": "Agonista inverso"
+      },
+      "B": {
+        "texto": "Noncompetitive antagonist",
+        "quiz": "Antag. não compet."
+      },
+      "C": {
+        "texto": "Partial agonist",
+        "quiz": "Agonista parcial"
+      },
+      "D": {
+        "texto": "Competitive antagonist",
+        "quiz": "Antag. competitivo"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Competitivo: curva *para a direita*, mesmo teto",
+    "certa": [
+      "O antagonista competitivo ocupa o mesmo sítio do agonista de forma reversível. Com mais agonista, ele perde a disputa: a curva se desloca para a direita (a potência cai e a EC50 sobe), mas o efeito máximo (Emax) continua o mesmo. Exemplos: atropina nos receptores muscarínicos e naloxona nos opioides."
+    ],
+    "termos": [
+      "competitive antagonist",
+      "right shift",
+      "Emax",
+      "potency vs efficacy"
+    ],
+    "erradas": {
+      "A": "O agonista inverso reduz a atividade basal do receptor sozinho, o que o drug X não fez.",
+      "B": "O antagonista não competitivo (ou irreversível, como a fenoxibenzamina) reduz o Emax, e mais agonista não recupera o efeito.",
+      "C": "O agonista parcial produz algum efeito sozinho, com Emax menor que o do agonista pleno."
+    },
+    "macete": {
+      "frase": "Competitivo *disputa a cadeira*; não competitivo *quebra a cadeira*",
+      "apoio": "Na imagem, uma multidão de agonistas tira o rival da cadeira; na outra, a cadeira quebrada não tem conserto.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é Match Day! Parabéns a quem deu match e força a quem segue no caminho. Na farmacologia, o match é entre ligante e receptor.",
+    "palavras_chave": [
+      "dose-response curve",
+      "isolated tissue",
+      "maximal response",
+      "pharmacodynamics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#MatchDay"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Curva à direita, mesmo Emax: que droga é?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

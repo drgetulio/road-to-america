@@ -1,0 +1,99 @@
+{
+  "dia": 253,
+  "data": "2027-07-12",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Mycoplasma pneumoniae",
+  "conceito": "Mycoplasma pneumoniae: no cell wall, cold agglutinins, walking pneumonia in young adults",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-13",
+  "tom": null,
+  "gancho": "A pneumonia que foi *a pé* até a padaria",
+  "gancho_apoio": "Duas semanas de tosse seca, aula normal e uma amoxicilina que não fez nada. Quem é o bicho?",
+  "imagem": {
+    "arquivo": "dia-253.png",
+    "cena": "Na porta do boteco dos micróbios, Macrô observa um micróbio miudinho, embrulhado num cachecol listrado e numa jaqueta fofa que esconde o formato do corpo, voltando a pé da padaria com um saco de pão debaixo do braço e uma mochila de escola nas costas. No balcão do boteco, um balde de gelo de metal.",
+    "foco": "50% 35%",
+    "alt": "A pneumonia que foi a pé até a padaria"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-253-macete.png",
+    "cena": "Uma bola de demolição (a amoxicilina) passa direto pelo micróbio sem casca, sem acertar nada, porque não há parede para quebrar. No balde de gelo, hemácias se abraçam de frio. Macrô oferece uma chavinha que encaixa no ribossomo do bicho (macrolídeo ou doxiciclina).",
+    "foco": "50% 40%",
+    "alt": "Bicho sem parede, walking pneumonia"
+  },
+  "questao": {
+    "vinheta": "A 20-year-old student has had low-grade fever, headache, and dry cough for 2 weeks but keeps attending classes. Chest x-ray shows patchy bilateral interstitial infiltrates. Sputum Gram stain shows no organisms, and amoxicillin did not help. His red cells agglutinate when the blood sample is chilled.",
+    "pergunta": "Which organism is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Streptococcus pneumoniae",
+        "quiz": "Pneumococo"
+      },
+      "B": {
+        "texto": "Legionella pneumophila",
+        "quiz": "Legionella"
+      },
+      "C": {
+        "texto": "Mycoplasma pneumoniae",
+        "quiz": "Mycoplasma"
+      },
+      "D": {
+        "texto": "Chlamydia pneumoniae",
+        "quiz": "Chlamydia pneum."
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Bicho sem parede, *walking pneumonia*",
+    "certa": [
+      "Tosse seca arrastada num adulto jovem que segue a rotina (*walking pneumonia*), raio X pior que o exame e falha do betalactâmico apontam para *Mycoplasma pneumoniae*. Ele não tem parede celular, então não aparece no Gram e não sofre com penicilinas; a membrana tem esteróis. As *cold agglutinins* (IgM contra o antígeno I das hemácias) explicam o sangue que aglutina no gelo, e o tratamento é com macrolídeo, doxiciclina ou fluoroquinolona."
+    ],
+    "termos": [
+      "Mycoplasma pneumoniae",
+      "cold agglutinins",
+      "no cell wall",
+      "walking pneumonia"
+    ],
+    "erradas": {
+      "A": "O pneumococo aparece no Gram como diplococo gram-positivo, dá consolidação lobar e costuma responder à amoxicilina.",
+      "B": "A *Legionella* vem com doença mais grave, hiponatremia e diarreia, e sem aglutininas frias.",
+      "D": "A *Chlamydia pneumoniae* também é atípica, mas não causa aglutininas frias; costuma vir com rouquidão e faringite."
+    },
+    "macete": {
+      "frase": "Sem parede, *sem Gram*, sem penicilina; no frio, as hemácias *se abraçam*",
+      "apoio": "O micróbio de cachecol que vai a pé à padaria é a walking pneumonia. A bola de demolição passa reto porque não há parede, e as hemácias abraçadas no balde de gelo são as aglutininas frias.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Estudante com tosse seca há duas semanas, indo às aulas normalmente. A amoxicilina não fez nada e o sangue aglutina no gelo.",
+    "palavras_chave": [
+      "low-grade fever",
+      "dry cough",
+      "interstitial infiltrates",
+      "chilled blood sample"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Microbiologia",
+      "#Pneumologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Quem é o bicho?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 113,
+  "data": "2027-02-22",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Helicobacter pylori",
+  "conceito": "Helicobacter pylori: urease makes an ammonia buffer, positive urea breath test",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-23",
+  "tom": null,
+  "gancho": "Um surfista no *lago de ácido* que não se queima",
+  "gancho_apoio": "Úlcera duodenal, bastonete curvo na biópsia e um sopro que denuncia. Qual enzima salva o bicho?",
+  "imagem": {
+    "arquivo": "dia-113.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, olha espantado para uma bactéria em espiral com rabinho de hélice que surfa num lago amarelo-esverdeado de ácido borbulhante, sem se queimar. Uma nuvenzinha branca flutua bem em cima dela.",
+    "foco": "50% 35%",
+    "alt": "Macrô olha uma bactéria espiral surfando num lago de ácido, com uma nuvem em cima."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-113-macete.png",
+    "cena": "Callback: a nuvem sai de um pequeno cilindro de gás que o surfista carrega nas costas, e o ácido em volta dele fica calmo e azulado. Uma bolha de gás sobe do lago e enche um balão de festa lá no alto, enquanto o Macrô aponta para o balão.",
+    "foco": "50% 40%",
+    "alt": "O surfista solta a nuvem de um cilindro de gás e uma bolha sobe para encher um balão."
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man has epigastric pain that improves with meals. Endoscopy shows a duodenal ulcer. Antral biopsy shows curved, flagellated gram-negative rods in the mucus layer. After he drinks a solution of 13C-labeled urea, labeled carbon dioxide is detected in his breath.",
+    "pergunta": "Which bacterial enzyme protects this organism from gastric acid and explains the breath test?",
+    "alternativas": {
+      "A": {
+        "texto": "Urease",
+        "quiz": "Urease"
+      },
+      "B": {
+        "texto": "Catalase",
+        "quiz": "Catalase"
+      },
+      "C": {
+        "texto": "Coagulase",
+        "quiz": "Coagulase"
+      },
+      "D": {
+        "texto": "Hyaluronidase",
+        "quiz": "Hialuronidase"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "H. pylori: a *urease* faz o escudo de amônia",
+    "certa": [
+      "A urease do Helicobacter pylori quebra a ureia em amônia e CO2. A amônia neutraliza o ácido ao redor da bactéria, que sobrevive na camada de muco, e ainda lesa o epitélio. No teste respiratório (urea breath test), o CO2 marcado que sai no sopro mostra que a urease está ativa, ou seja, que há infecção atual."
+    ],
+    "termos": [
+      "Helicobacter pylori",
+      "urease",
+      "urea breath test",
+      "duodenal ulcer"
+    ],
+    "erradas": {
+      "B": "O H. pylori também é catalase positivo, mas a catalase protege contra peróxido dos neutrófilos e não neutraliza o ácido nem gera CO2.",
+      "C": "Coagulase é marca do Staphylococcus aureus e forma fibrina ao redor da bactéria.",
+      "D": "Hialuronidase ajuda bactérias como o estreptococo a se espalhar pelo tecido conjuntivo."
+    },
+    "macete": {
+      "frase": "Urease faz o *guarda-chuva de amônia*; o CO2 sai no sopro",
+      "apoio": "Na imagem, o surfista espiral desliza no lago de ácido com uma nuvem por cima.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de segunda, gastro: úlcera duodenal, bastonete curvo na biópsia e um teste de sopro positivo. Como esse bicho vive no ácido?",
+    "palavras_chave": [
+      "epigastric pain",
+      "ulcer on endoscopy",
+      "curved gram-negative rods",
+      "breath test"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Gastroenterologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual enzima protege o H. pylori do ácido?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,100 @@
+{
+  "dia": 346,
+  "data": "2027-10-13",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Pênfigo vulgar e penfigoide bolhoso",
+  "conceito": "Pemphigus vulgaris vs bullous pemphigoid: desmoglein (intraepidermal) vs hemidesmosome BP180 (subepidermal)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-14",
+  "tom": null,
+  "gancho": "Soltou o rejunte ou *descolou o piso inteiro?*",
+  "gancho_apoio": "Bolhas tensas, coceira e uma imunofluorescência em linha.",
+  "imagem": {
+    "arquivo": "dia-346.png",
+    "cena": "Corte de uma parede de banheiro em azulejos sobre o contrapiso, com dois problemas lado a lado: um vão onde o rejunte soltou entre dois azulejos e uma placa de azulejos que começa a levantar do cimento; ferramentas de encanador no chão.",
+    "foco": "50% 35%",
+    "alt": "Soltou o rejunte ou descolou o piso inteiro?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-346-macete.png",
+    "cena": "Callback: a placa inteira de azulejos levantou como um balão firme a partir do cimento, com o rejunte entre eles intacto; uma faixa verde marca a linha da cola que falhou.",
+    "foco": "50% 45%",
+    "alt": "Penfigoide bolhoso: anticorpo contra hemidesmosome (BP180)"
+  },
+  "questao": {
+    "vinheta": "A 76-year-old man has itching for 1 month, then tense blisters on the flexural thighs and abdomen. The oral mucosa is spared, rubbing the skin does not detach it, and lesions heal without scarring. Biopsy shows an eosinophil-rich subepidermal split and a linear band of IgG and C3 at the dermal-epidermal junction.",
+    "pergunta": "Antibodies against which structure are most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Desmoglein 3 in desmosomes",
+        "quiz": "Desmogleína 3"
+      },
+      "B": {
+        "texto": "BP180 in hemidesmosomes",
+        "quiz": "BP180"
+      },
+      "C": {
+        "texto": "Type VII collagen in anchoring fibrils",
+        "quiz": "Colágeno VII"
+      },
+      "D": {
+        "texto": "Epidermal transglutaminase",
+        "quiz": "Transglutaminase"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Penfigoide bolhoso: anticorpo contra *hemidesmosome* (BP180)",
+    "certa": [
+      "Idoso com prurido, *tense blisters* em flexuras, mucosa poupada, Nikolsky negativo e bolha *subepidermal* com eosinófilos é *bullous pemphigoid*. Os autoanticorpos IgG atacam o BP180 (colágeno XVII) e o BP230 dos *hemidesmosomes*, que prendem a epiderme à membrana basal, com IgG e C3 em linha na imunofluorescência direta."
+    ],
+    "termos": [
+      "bullous pemphigoid",
+      "hemidesmosome",
+      "BP180",
+      "subepidermal blister"
+    ],
+    "erradas": {
+      "A": "Desmogleína 3 é o alvo do pênfigo vulgar: bolha intraepidérmica flácida, mucosa oral acometida, Nikolsky positivo e IF em rede de pesca.",
+      "C": "Colágeno VII é o alvo da epidermólise bolhosa adquirida, com bolhas em áreas de trauma que cicatrizam com mília.",
+      "D": "Transglutaminase epidérmica é da dermatite herpetiforme, com vesículas em superfícies extensoras e IgA granular nas papilas."
+    },
+    "macete": {
+      "frase": "*Pênfigo solta o rejunte; penfigoide descola o piso*",
+      "apoio": "Desmossomo é o rejunte entre os azulejos (as células): no pênfigo ele solta e a bolha fica dentro da epiderme, frouxa. Hemidesmossomo é a cola do piso no contrapiso: no penfigoide o piso inteiro levanta, bolha tensa e abaixo da epiderme.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um mês de coceira e depois bolhas tensas nas coxas e no abdome, boca poupada e pele que não descola ao esfregar. A imunofluorescência mostra IgG em linha. Qual é o alvo dos anticorpos?",
+    "palavras_chave": [
+      "older adult",
+      "itching",
+      "tense blisters",
+      "linear IgG and C3"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Dermatologia",
+      "#Dermatology",
+      "#Histologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Bolha tensa, IgG linear. Qual alvo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

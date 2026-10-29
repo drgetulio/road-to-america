@@ -1,0 +1,99 @@
+{
+  "dia": 237,
+  "data": "2027-06-26",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Entrevista motivacional",
+  "conceito": "Motivational interviewing: open questions and reflective listening draw out the patient own reasons",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-27",
+  "tom": null,
+  "gancho": "Ele sabe que deveria parar. *O que você responde?*",
+  "gancho_apoio": "Ambivalência no consultório: buzinar, perguntar por quê ou refletir?",
+  "imagem": {
+    "arquivo": "dia-237.png",
+    "cena": "Um carrinho navy parado numa bifurcação de estrada com duas placas verdes sem texto, uma de cada lado. Atrás, um caminhão vermelho com a buzina em evidência, e no painel do carro um GPS apagado.",
+    "foco": "50% 35%",
+    "alt": "Ele sabe que deveria parar. O que você responde?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-237-macete.png",
+    "cena": "Callback: o GPS acende e mostra um espelhinho que reflete as duas estradas ao mesmo tempo; o caminhão buzinador ficou para trás, pequeno, e o carrinho começa a virar por vontade própria para uma das saídas.",
+    "foco": "50% 45%",
+    "alt": "Entrevista motivacional: refletir os dois lados"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man who smokes 1 pack of cigarettes daily says, \"I know I should quit, but smoking is the only thing that helps me relax after work.\" He has never tried to quit.",
+    "pergunta": "Which is the most appropriate response by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "\"You need to quit now, or you will get lung cancer.\"",
+        "quiz": "Pare agora!"
+      },
+      "B": {
+        "texto": "\"Smoking helps you unwind, and part of you wants to quit.\"",
+        "quiz": "Reflexão dupla"
+      },
+      "C": {
+        "texto": "\"Why haven't you quit yet if you know it's harmful?\"",
+        "quiz": "Por que não parou?"
+      },
+      "D": {
+        "texto": "\"I'll prescribe varenicline, and we'll set a quit date today.\"",
+        "quiz": "Vareniclina hoje"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Entrevista motivacional: *refletir os dois lados*",
+    "certa": [
+      "Ele está ambivalente, na fase de contemplação. Na *motivational interviewing*, o médico usa perguntas abertas e *reflective listening*; a reflexão de dois lados devolve as duas partes da ambivalência (o alívio que o cigarro traz e a vontade de parar) sem julgamento. Assim o próprio paciente fala os seus motivos para mudar (*change talk*), e a decisão continua com ele."
+    ],
+    "termos": [
+      "motivational interviewing",
+      "reflective listening",
+      "ambivalence",
+      "change talk"
+    ],
+    "erradas": {
+      "A": "Ameaça e confronto aumentam a resistência e fazem o paciente defender o cigarro.",
+      "C": "Perguntar por que ainda não parou soa como acusação e leva à justificativa, não à mudança.",
+      "D": "Marcar data e prescrever é passo de quem já decidiu (preparação); com ambivalência, pular etapas costuma falhar."
+    },
+    "macete": {
+      "frase": "Na entrevista motivacional, *o paciente dirige e o médico é o GPS que reflete*",
+      "apoio": "Na imagem, o carro está numa bifurcação e o caminhão de trás buzina (o confronto), o que só atrapalha. O GPS não manda: mostra as duas estradas num espelho, e o motorista escolhe.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Fumante de um maço por dia diz: eu sei que deveria parar, mas o cigarro é a única coisa que me relaxa depois do trabalho. Qual frase ajuda a mudança a sair dele?",
+    "palavras_chave": [
+      "smoking",
+      "stress relief",
+      "behavior change",
+      "communication"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Comunicacao",
+      "#MotivationalInterviewing",
+      "#Tabagismo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Fumante ambivalente: qual frase usar?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

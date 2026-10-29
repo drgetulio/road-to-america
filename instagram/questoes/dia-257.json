@@ -1,0 +1,99 @@
+{
+  "dia": 257,
+  "data": "2027-07-16",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Hipertensão na gestação",
+  "conceito": "Hypertension in pregnancy: labetalol, nifedipine or methyldopa, never ACE inhibitors",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-17",
+  "tom": null,
+  "gancho": "*Tia Meia-Vida* trancou uma prateleira inteira para a cegonha",
+  "gancho_apoio": "Hipertensa crônica descobre a gestação usando lisinopril. Qual é a troca certa?",
+  "imagem": {
+    "arquivo": "dia-257.png",
+    "cena": "Na farmácia de interior, uma cegonha simpática, com uma trouxinha no bico, chega ao balcão. Tia Meia-Vida, de óculos vermelhos, passa uma corrente com cadeado numa prateleira inteira, enquanto outra prateleira continua aberta e iluminada.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida trancou uma prateleira inteira para a cegonha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-257-macete.png",
+    "cena": "Tia Meia-Vida entrega à cegonha um frasco da prateleira aberta, onde três frascos se destacam lado a lado. Na prateleira trancada, cada frasco tem um rinzinho em forma de feijão como símbolo, lembrando o dano renal fetal dos IECA e dos BRA.",
+    "foco": "50% 40%",
+    "alt": "Gestante: IECA sai, labetalol entra"
+  },
+  "questao": {
+    "vinheta": "A home pregnancy test is positive in a 29-year-old woman (gravida 2, para 1); ultrasound confirms an 8-week intrauterine pregnancy. Lisinopril has controlled her chronic hypertension since age 26. Today, her blood pressure reads 148/94 mm Hg; serum creatinine is normal and there is no proteinuria.",
+    "pergunta": "Which is the most appropriate change in her medication?",
+    "alternativas": {
+      "A": {
+        "texto": "Continue lisinopril",
+        "quiz": "Manter lisinopril"
+      },
+      "B": {
+        "texto": "Switch to losartan",
+        "quiz": "Losartana"
+      },
+      "C": {
+        "texto": "Switch to spironolactone",
+        "quiz": "Espironolactona"
+      },
+      "D": {
+        "texto": "Switch to labetalol",
+        "quiz": "Labetalol"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Gestante: *IECA sai*, labetalol entra",
+    "certa": [
+      "IECA e BRA são contraindicados na gestação: no segundo e no terceiro trimestres causam lesão renal fetal, oligoidrâmnio, hipoplasia pulmonar e defeitos de ossificação do crânio, e o ideal é trocar assim que a gestação é descoberta. As opções de primeira linha nos EUA são *labetalol* e *nifedipine* de liberação prolongada; a *methyldopa* também é segura, mas é menos usada por causa da sedação. Com pressão de 148/94, o tratamento continua, com meta abaixo de 140/90."
+    ],
+    "termos": [
+      "ACE inhibitor fetotoxicity",
+      "labetalol",
+      "nifedipine",
+      "chronic hypertension in pregnancy"
+    ],
+    "erradas": {
+      "A": "Manter o *ACE inhibitor* expõe o feto à toxicidade renal; a troca deve ser feita já.",
+      "B": "A *losartan* é um BRA e tem a mesma toxicidade fetal dos IECA.",
+      "C": "A *spironolactone* tem efeito antiandrogênico e pode feminizar o feto masculino; não é usada na gestação."
+    },
+    "macete": {
+      "frase": "Na gestação, *Lá Na Maternidade*: Labetalol, Nifedipina, Metildopa",
+      "apoio": "A prateleira trancada da Tia guarda IECA e BRA, com o rinzinho no rótulo. A aberta tem os três da maternidade: Labetalol, Nifedipina e Metildopa, o LNM de Lá Na Maternidade.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hipertensa crônica, 8 semanas de gestação, usando lisinopril e com pressão de 148/94. O que a Tia Meia-Vida faz com a receita?",
+    "palavras_chave": [
+      "early pregnancy",
+      "chronic hypertension",
+      "lisinopril",
+      "medication safety"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Obstetricia",
+      "#Farmacologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a troca certa?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

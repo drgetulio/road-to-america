@@ -1,0 +1,100 @@
+{
+  "dia": 344,
+  "data": "2027-10-11",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "E. coli uropatogênica",
+  "conceito": "Uropathogenic E. coli: P fimbriae drive ascent to the kidney",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-12",
+  "tom": null,
+  "gancho": "Seu Néfron confere o crachá: *quem deixou a bactéria subir?*",
+  "gancho_apoio": "Febre, dor lombar e cilindros leucocitários. A bactéria chegou ao rim.",
+  "imagem": {
+    "arquivo": "dia-344.png",
+    "cena": "Seu Néfron na recepção de um prédio em forma de rim confere crachás de uma bactéria em bastão de mochila nas costas, diante de quatro acessórios na mesa: pulseira de ganchinhos, capa de chuva grossa, frasco de toxina e garrafa térmica de líquido.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron confere o crachá: quem deixou a bactéria subir?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-344-macete.png",
+    "cena": "Callback: a bactéria em bastão usa os ganchinhos dos pelos para subir agarrada no trilho do elevador até o andar de cima, e o Seu Néfron levanta o carimbo vermelho, furioso e engraçado.",
+    "foco": "50% 45%",
+    "alt": "Pielonefrite por E. coli: P fimbriae sobem até o rim"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman has fever of 39.2°C, right flank pain, and costovertebral angle tenderness after 3 days of dysuria. Urinalysis shows pyuria and white blood cell casts. Urine culture grows a lactose-fermenting, indole-positive, gram-negative rod.",
+    "pergunta": "Which virulence factor most directly allowed this organism to reach the kidney?",
+    "alternativas": {
+      "A": {
+        "texto": "K1 capsular antigen",
+        "quiz": "Cápsula K1"
+      },
+      "B": {
+        "texto": "P fimbriae",
+        "quiz": "Fímbria P"
+      },
+      "C": {
+        "texto": "Shiga-like toxin",
+        "quiz": "Toxina Shiga-like"
+      },
+      "D": {
+        "texto": "Heat-labile enterotoxin",
+        "quiz": "Enterotoxina LT"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Pielonefrite por E. coli: *P fimbriae* sobem até o rim",
+    "certa": [
+      "Febre, dor no flanco e *white blood cell casts* localizam a infecção no rim (*pyelonephritis*). A *uropathogenic E. coli* usa as *P fimbriae*, que se ligam ao antígeno do grupo sanguíneo P (glicolipídeos Gal-Gal) do uroepitélio, para subir pelo ureter. As fímbrias tipo 1 prendem a bactéria à bexiga, na cistite."
+    ],
+    "termos": [
+      "uropathogenic E. coli",
+      "P fimbriae",
+      "pyelonephritis",
+      "white blood cell casts"
+    ],
+    "erradas": {
+      "A": "A cápsula K1 é o fator da E. coli na meningite neonatal, não da subida pelo trato urinário.",
+      "C": "A toxina Shiga-like é da EHEC O157:H7, com diarreia sanguinolenta e síndrome hemolítico-urêmica.",
+      "D": "A enterotoxina termolábil é da ETEC, que causa a diarreia aquosa do viajante."
+    },
+    "macete": {
+      "frase": "*Fímbria P de Pielo*: o crachá para subir ao andar do rim",
+      "apoio": "No prédio do Seu Néfron, a bexiga é o térreo. Fímbria tipo 1 entra no térreo; fímbria P é o crachá do elevador que leva ao rim. Cilindro de leucócito é o carimbo de que ela subiu.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três dias de ardência para urinar e agora febre, dor no flanco e cilindros leucocitários. A cultura mostra um bacilo gram-negativo que fermenta lactose. Que fator deixou a bactéria subir até o rim?",
+    "palavras_chave": [
+      "fever and flank pain",
+      "costovertebral angle tenderness",
+      "white blood cell casts",
+      "gram-negative rod"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Nefrologia",
+      "#Microbiology",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pielonefrite por E. coli. Que fator?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

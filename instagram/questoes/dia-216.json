@@ -1,0 +1,99 @@
+{
+  "dia": 216,
+  "data": "2027-06-05",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Luto",
+  "conceito": "Grief is not linear: denial, anger, bargaining, depression and acceptance can come and go",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-06",
+  "tom": "acolhedor",
+  "gancho": "Quatro meses depois, a saudade voltou forte. *Isso é normal?*",
+  "gancho_apoio": "Uma pergunta delicada, que todo médico escuta. Qual é a melhor resposta?",
+  "imagem": {
+    "arquivo": "dia-216.png",
+    "cena": "Uma praia tranquila ao entardecer, com um barquinho navy descansando na areia, um banco de madeira de frente para o mar e um farol ao longe. Tom sereno e acolhedor, sem personagens.",
+    "foco": "50% 35%",
+    "alt": "Quatro meses depois, a saudade voltou forte. Isso é normal?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-216-macete.png",
+    "cena": "Callback: a mesma praia vista de cima. Na areia molhada há uma escada reta desenhada, e as ondas passam por cima dela; o barquinho segue subindo e descendo, e o farol acende uma luz suave.",
+    "foco": "50% 45%",
+    "alt": "O luto vai e volta, em ondas"
+  },
+  "questao": {
+    "vinheta": "A 63-year-old man whose wife died 4 months ago says he first felt numb, then angry, then calmer. On their wedding anniversary last week, he cried all day and felt angry again. He sleeps, eats, and works normally and denies hopelessness or suicidal thoughts. He asks whether something is wrong with him.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "\"You should have reached acceptance by now.\"",
+        "quiz": "Já devia aceitar"
+      },
+      "B": {
+        "texto": "\"Grief often comes in waves, especially on meaningful dates.\"",
+        "quiz": "Luto vem em ondas"
+      },
+      "C": {
+        "texto": "\"Feeling angry again means you have prolonged grief disorder.\"",
+        "quiz": "É luto prolongado"
+      },
+      "D": {
+        "texto": "\"An antidepressant will help you move to the next stage.\"",
+        "quiz": "Antidepressivo já"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "O luto vai e volta, *em ondas*",
+    "certa": [
+      "As fases do luto (negação, raiva, barganha, tristeza e aceitação) não seguem uma ordem fixa e podem voltar, principalmente em datas importantes. Ele mantém sono, apetite e trabalho e não tem desesperança nem ideação suicida, então é *normal grief*. A melhor resposta valida a experiência, explica que o luto vem *in waves* e deixa a porta aberta para ele voltar quando precisar."
+    ],
+    "termos": [
+      "normal grief",
+      "stages are not linear",
+      "prolonged grief disorder (12 months)",
+      "validation"
+    ],
+    "erradas": {
+      "A": "Cobrar aceitação em quatro meses trata as fases como uma escada obrigatória, o que não corresponde ao luto real e invalida o que ele sente.",
+      "C": "O *prolonged grief disorder* exige pelo menos 12 meses de saudade intensa e incapacitante em adultos (DSM-5-TR); um dia difícil no aniversário não basta.",
+      "D": "Luto normal não pede antidepressivo; ele seria considerado diante de episódio depressivo maior, com culpa difusa, desesperança ou prejuízo importante."
+    },
+    "macete": {
+      "frase": "Luto é *maré*, não escada",
+      "apoio": "Na imagem, o barquinho sobe e desce nas ondas, e o farol acende nas datas que importam. A maré volta, e voltar não quer dizer andar para trás.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Ele perdeu a esposa há quatro meses. Sentiu choque, depois raiva, depois calma, e no aniversário de casamento chorou o dia inteiro. Dorme, come e trabalha. Ele pergunta se há algo errado com ele.",
+    "palavras_chave": [
+      "widower",
+      "wedding anniversary",
+      "crying",
+      "patient communication"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Comunicacao",
+      "#Communication",
+      "#Luto",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "A saudade voltou forte. O que responder?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

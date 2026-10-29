@@ -1,0 +1,93 @@
+{
+  "dia": 196,
+  "data": "2027-05-16",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Varizes esofágicas (dia 72), Correção da hiponatremia crônica (dia 163), Hemorragia subaracnoide (dia 191)",
+  "conceito": "Remix: Variceal bleeding + Chronic hyponatremia + Thunderclap headache",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    72,
+    163,
+    191
+  ],
+  "explicacao_em": "2027-05-17",
+  "tom": null,
+  "gancho": "Remix do plantão: quatro prescrições, só uma *passa* na auditoria",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-196.png",
+    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (um saleiro, uma veia azul com bolinhas de uva roxa e um raio) e um quarto disco com uma bolsa de sangue tentando entrar na pilha.",
+    "foco": "50% 35%",
+    "alt": "Remix do plantão: quatro prescrições, só uma passa na auditoria"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-196-macete.png",
+    "cena": "O disco da veia com uvas toca e acende verde, com três notas musicais em forma de seringa, escudo e elástico; o saleiro e o raio ganham um risco vermelho, e o disco da bolsa de sangue é barrado por um cone.",
+    "alt": "Varizes sangrando: octreotide, ceftriaxona e endoscopia"
+  },
+  "questao": {
+    "vinheta": "During a night shift, a resident writes four admission orders for four different patients. A senior physician reviews them the next morning. Only one order follows current US guidelines.",
+    "pergunta": "Which order is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Chronic sodium 112 mEq/L: raise it by 16 mEq/L in 24 h",
+        "quiz": "Na +16 em 24 h",
+        "dia": 163
+      },
+      "B": {
+        "texto": "Cirrhosis with hematemesis: octreotide, ceftriaxone, endoscopy within 12 h",
+        "quiz": "Octreotide e ceftri",
+        "dia": 72
+      },
+      "C": {
+        "texto": "Thunderclap headache, normal CT at 9 h: discharge home",
+        "quiz": "Trovoada: alta",
+        "dia": 191
+      },
+      "D": {
+        "texto": "Upper GI bleeding: transfuse to hemoglobin above 10 g/dL",
+        "quiz": "Transfundir até 10"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Varizes sangrando: *octreotide, ceftriaxona e endoscopia*",
+    "certa": [
+      "No sangramento por *esophageal varices* na cirrose, a conduta é *octreotide* (reduz a pressão portal), *ceftriaxone* profilática (reduz infecção e mortalidade) e *endoscopic band ligation* em até 12 horas, depois de estabilizar a via aérea e o volume."
+    ],
+    "termos": [
+      "variceal hemorrhage",
+      "octreotide",
+      "ceftriaxone prophylaxis",
+      "osmotic demyelination"
+    ],
+    "erradas": {
+      "A": "Dia 163: na hiponatremia crônica, a correção não deve passar de 8 a 10 mEq/L em 24 horas, para evitar a desmielinização osmótica.",
+      "C": "Dia 191: TC normal depois de 6 horas não exclui hemorragia subaracnoide; o próximo passo é a punção lombar.",
+      "D": "Intruso: no sangramento digestivo alto a transfusão é restritiva, com alvo de hemoglobina de 7 g/dL; passar desse alvo eleva a pressão no sistema porta e faz a variz voltar a sangrar."
+    },
+    "macete": {
+      "frase": "Varizes: *trio de plantão* com octreotide, ceftriaxona e elástico (ligadura). Sódio crônico sobe *devagar* (8 a 10 por dia, como o Seu Néfron carimbando com calma). Trovoada com TC limpa: *vá olhar a água*.",
+      "apoio": "O NBME esquece de propósito o antibiótico profilático na hemorragia varicosa e oferece transfusão liberal; a ceftriaxona reduz mortalidade e a meta de hemoglobina é 7 g/dL.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de Remix: três condutas de Step 2 CK que já passaram por aqui (dias 72, 163 e 191) e um intruso. Só uma prescrição da madrugada segue a diretriz.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual prescrição está certa?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

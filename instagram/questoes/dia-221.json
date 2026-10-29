@@ -1,0 +1,99 @@
+{
+  "dia": 221,
+  "data": "2027-06-10",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Meningite neonatal",
+  "conceito": "Neonatal meningitis: ampicillin plus cefotaxime or gentamicin to cover GBS, E. coli and Listeria",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-11",
+  "tom": null,
+  "gancho": "Três convidados indesejados no *chá de bebê*",
+  "gancho_apoio": "Recém-nascido com febre e fontanela abaulada. Que dupla de antibióticos cobre todo mundo?",
+  "imagem": {
+    "arquivo": "dia-221.png",
+    "cena": "Garçom de rodízio, de colete e espetos na mão, chega a uma mesa decorada de chá de bebê onde três convidados bacterianos esperam: uma correntinha de bolinhas, um bastão gordinho e um bastãozinho dando cambalhota.",
+    "foco": "50% 35%",
+    "alt": "Três convidados indesejados no chá de bebê"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-221-macete.png",
+    "cena": "Callback: o garçom oferece dois espetos. O bastãozinho da cambalhota (a Listeria) vira a cara para o espeto das cefalosporinas e aceita, todo feliz, o espeto da ampicilina, com pedaços em forma de rodinha. A correntinha e o bastão gordinho aceitam os dois.",
+    "foco": "50% 45%",
+    "alt": "Neonato com meningite: ampicilina sempre no espeto"
+  },
+  "questao": {
+    "vinheta": "A 10-day-old boy born at term has a temperature of 38.8°C, poor feeding, and lethargy. The anterior fontanelle is bulging. Cerebrospinal fluid shows 1,900 leukocytes/mm3 (88% neutrophils), protein 210 mg/dL, and glucose 15 mg/dL. Gram stain is pending.",
+    "pergunta": "Which is the most appropriate empiric antibiotic regimen?",
+    "alternativas": {
+      "A": {
+        "texto": "Ampicillin plus cefotaxime",
+        "quiz": "Ampi + cefotaxima"
+      },
+      "B": {
+        "texto": "Vancomycin plus ceftriaxone",
+        "quiz": "Vanco + ceftriaxona"
+      },
+      "C": {
+        "texto": "Clindamycin plus gentamicin",
+        "quiz": "Clinda + genta"
+      },
+      "D": {
+        "texto": "Acyclovir alone",
+        "quiz": "Só aciclovir"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Neonato com meningite: *ampicilina* sempre no espeto",
+    "certa": [
+      "No primeiro mês de vida, as três grandes causas são *group B Streptococcus*, *E. coli* e *Listeria monocytogenes*. Nenhuma cefalosporina pega a Listeria, então a *ampicillin* entra sempre; a cefalosporina de terceira geração (*cefotaxime*) cobre os gram-negativos e entra bem no líquor. Nos EUA, com a falta de cefotaxima, usa-se ceftazidima ou cefepima no lugar; ampicilina com gentamicina é o esquema da sepse neonatal sem meningite."
+    ],
+    "termos": [
+      "neonatal meningitis",
+      "group B Streptococcus",
+      "Listeria monocytogenes",
+      "ampicillin plus cefotaxime"
+    ],
+    "erradas": {
+      "B": "Vancomicina com ceftriaxona é o esquema da criança maior e do adulto; não cobre Listeria, e a ceftriaxona desloca bilirrubina e precipita com cálcio no recém-nascido.",
+      "C": "A clindamicina não atravessa bem a barreira hematoencefálica e não serve para meningite.",
+      "D": "O aciclovir entra quando há suspeita de herpes neonatal (convulsão, vesículas, líquor linfocítico), mas sozinho deixa as bactérias sem cobertura, e este líquor é bacteriano."
+    },
+    "macete": {
+      "frase": "Recém-nascido é *GEL*: GBS, E. coli e Listeria",
+      "apoio": "Na imagem, o garçom do rodízio serve dois espetos no chá de bebê: o da cefalosporina, que a Listeria esnoba, e o da ampicilina, o único que ela aceita. Sem ampicilina, a Listeria fica na festa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dez dias de vida, febre, mamando mal, sonolento, fontanela abaulada e líquor com neutrófilos e glicose baixa. O garçom do rodízio precisa escolher os espetos certos para cobrir três bactérias.",
+    "palavras_chave": [
+      "10-day-old",
+      "fever",
+      "bulging fontanelle",
+      "CSF neutrophils"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Neonatologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Meningite com 10 dias de vida: qual esquema?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

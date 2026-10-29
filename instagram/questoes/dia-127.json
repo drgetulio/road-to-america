@@ -1,0 +1,95 @@
+{
+  "dia": 127,
+  "data": "2027-03-08",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "HPV e câncer do colo do útero",
+  "conceito": "HPV 16 and 18 oncogenesis: E6 degrades p53, E7 inactivates Rb",
+  "personagem": "Macrô",
+  "gancho_data": "Dia Internacional da Mulher (8/3): prevenção do câncer do colo do útero.",
+  "remix_de": null,
+  "explicacao_em": "2027-03-09",
+  "tom": "acolhedor",
+  "gancho": "Dia da Mulher: o vírus que solta os *freios* da célula",
+  "gancho_apoio": "Hoje é dia de falar de prevenção. E de duas proteínas que a prova adora.",
+  "imagem": {
+    "arquivo": "dia-127.png",
+    "cena": "Macrô, tranquilo, mostra uma bicicleta parada que representa o ciclo celular, com dois freios de cores diferentes, um vermelho e um verde. Duas luvinhas cinzentas se aproximam dos freios.",
+    "foco": "50% 35%",
+    "alt": "Macrô apontando uma bicicleta com freio vermelho e freio verde; duas luvinhas cinzentas se aproximam."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-127-macete.png",
+    "cena": "Callback: uma luvinha corta o cabo do freio vermelho (E6 e p53) e a outra segura a alavanca do freio verde aberta (E7 e Rb). No canto, um escudo navy e um calendário com um dia marcado lembram vacina e exame preventivo.",
+    "foco": "50% 40%",
+    "alt": "Uma luva corta o freio vermelho e outra segura o freio verde; Macrô mostra um escudo e um calendário."
+  },
+  "questao": {
+    "vinheta": "Cervical cytology in a 32-year-old woman shows HSIL; HPV 16 is detected. In the infected epithelial cells, one viral oncoprotein binds the host retinoblastoma protein, releasing E2F and pushing the cells from G1 into S phase.",
+    "pergunta": "Which viral protein is responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "E2",
+        "quiz": "E2"
+      },
+      "B": {
+        "texto": "E6",
+        "quiz": "E6"
+      },
+      "C": {
+        "texto": "E7",
+        "quiz": "E7"
+      },
+      "D": {
+        "texto": "L1",
+        "quiz": "L1"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "E6 tira o p53, *E7 segura o Rb*",
+    "certa": [
+      "A E7 dos HPV de alto risco (16 e 18) se liga à proteína Rb e solta o E2F, que empurra a célula de G1 para S sem controle. A E6 faz a outra parte: marca o p53 para degradação, e a célula perde o freio que corrigiria o DNA ou levaria à apoptose. Os dois juntos, depois da integração do vírus ao genoma, levam à lesão de alto grau."
+    ],
+    "termos": [
+      "HPV 16 and 18",
+      "E6 and p53",
+      "E7 and Rb",
+      "L1 capsid vaccine"
+    ],
+    "erradas": {
+      "A": "A E2 controla a transcrição de E6 e E7; quando o vírus se integra ao genoma, a E2 costuma se perder e E6 e E7 aumentam.",
+      "B": "A E6 age sobre o p53, levando-o à degradação, e não sobre o Rb.",
+      "D": "A L1 é a proteína do capsídeo e é a base da vacina, sem papel no ciclo celular."
+    },
+    "macete": {
+      "frase": "*Seis antes de sete, P antes de R*: E6 com p53, E7 com Rb",
+      "apoio": "Na imagem, cada luva viral mexe num freio diferente da bicicleta da célula.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Neste Dia Internacional da Mulher, a questão é sobre o vírus por trás de quase todos os cânceres do colo do útero, que a vacina e o exame preventivo ajudam a prevenir.",
+    "palavras_chave": [
+      "cervical cytology",
+      "HSIL",
+      "HPV 16",
+      "cell cycle"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#SaudeDaMulher",
+      "#HPV"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual proteína do HPV inativa o Rb?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

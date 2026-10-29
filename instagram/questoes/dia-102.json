@@ -1,0 +1,96 @@
+{
+  "dia": 102,
+  "data": "2027-02-11",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Crupe",
+  "conceito": "Croup: steeple sign and barking cough, dexamethasone plus nebulized epinephrine if stridor at rest",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-12",
+  "tom": null,
+  "gancho": "Uma *foca* sentou no rodízio e começou a tossir",
+  "gancho_apoio": "Dois anos, coriza, e à noite uma tosse que parece latido. Qual é o diagnóstico?",
+  "imagem": {
+    "arquivo": "dia-102.png",
+    "cena": "Um garçom de rodízio chega à mesa com um espeto e encontra uma foca simpática de cachecol de lã sentada na cadeira, tossindo alto. A plaquinha redonda verde e vermelha está em pé na mesa, esperando a escolha.",
+    "foco": "50% 35%",
+    "alt": "Garçom de rodízio diante de uma foca de cachecol que tosse sentada à mesa."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-102-macete.png",
+    "cena": "Callback: no espeto do garçom aparece uma torre de igreja fina, em forma de ponta de lápis. A foca, agora calma, respira uma nuvenzinha de nebulização, e no prato há um comprimido pequeno. A plaquinha está virada para o verde.",
+    "foco": "50% 40%",
+    "alt": "O espeto traz uma torre de igreja em ponta de lápis; a foca calma respira uma nuvem de nebulização."
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had rhinorrhea and low-grade fever for 2 days. Tonight he developed a barking cough, a hoarse voice and inspiratory stridor at rest with mild suprasternal retractions. He is drinking fluids and is not drooling. Temperature is 38.1°C (100.6°F). A frontal neck radiograph shows subglottic narrowing.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Epiglottitis",
+        "quiz": "Epiglotite"
+      },
+      "B": {
+        "texto": "Bacterial tracheitis",
+        "quiz": "Traqueíte bacteriana"
+      },
+      "C": {
+        "texto": "Retropharyngeal abscess",
+        "quiz": "Abscesso retrofar."
+      },
+      "D": {
+        "texto": "Laryngotracheobronchitis",
+        "quiz": "Crupe viral"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Crupe: tosse de foca e *sinal da torre*",
+    "certa": [
+      "Pródromo de resfriado, tosse ladrante, rouquidão e estridor inspiratório entre 6 meses e 3 anos são crupe (laryngotracheobronchitis), quase sempre pelo vírus parainfluenza. O estreitamento subglótico na radiografia frontal é o sinal da torre de igreja (steeple sign). O tratamento é dexametasona para todos e, com estridor em repouso, epinefrina nebulizada, com observação de 2 a 4 horas depois da dose."
+    ],
+    "termos": [
+      "croup",
+      "laryngotracheobronchitis",
+      "steeple sign",
+      "parainfluenza virus"
+    ],
+    "erradas": {
+      "A": "Epiglotite dá febre alta, baba, posição de tripé e aspecto toxêmico, com sinal do polegar na radiografia lateral.",
+      "B": "Traqueíte bacteriana, em geral por S. aureus, começa como crupe, mas evolui com febre alta, aspecto tóxico e falta de resposta à epinefrina.",
+      "C": "Abscesso retrofaríngeo causa febre, dor ao engolir, rigidez de pescoço e alargamento pré-vertebral na radiografia lateral."
+    },
+    "macete": {
+      "frase": "*Tosse de foca* e torre de igreja: crupe",
+      "apoio": "Na imagem, a foca de cachecol tosse na mesa do rodízio; amanhã aparece a torre.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, espeto de pediatria: criança de 2 anos, coriza há dois dias e, à noite, um barulho que assusta a família.",
+    "palavras_chave": [
+      "barking cough",
+      "hoarseness",
+      "inspiratory stridor",
+      "toddler"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Pediatria",
+      "#Pediatrics",
+      "#Crupe"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Tosse de latido e estridor aos 2 anos?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

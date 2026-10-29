@@ -1,0 +1,95 @@
+{
+  "dia": 135,
+  "data": "2027-03-16",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Artrite séptica",
+  "conceito": "Suspected septic arthritis: arthrocentesis before antibiotics",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-17",
+  "tom": null,
+  "gancho": "Perícia *antes* da faxina: quem entra primeiro no joelho?",
+  "gancho_apoio": "Joelho quente, vermelho e febre. O antibiótico está ansioso na porta.",
+  "imagem": {
+    "arquivo": "dia-135.png",
+    "cena": "Uma casinha em forma de articulação de joelho cercada por fita amarela e preta de cena de investigação. Um detetive de lupa olha a porta, e uma equipe de faxina formada por cápsulas de antibiótico com rodos e baldes espera ansiosa.",
+    "foco": "50% 35%",
+    "alt": "Casinha em forma de joelho com fita de investigação; um detetive na porta e cápsulas de antibiótico com rodos esperando."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-135-macete.png",
+    "cena": "Callback: o detetive sai da casinha com um frasco de amostra cheio de líquido turvo, colhido com uma seringa. Só então as cápsulas da faxina entram com os rodos.",
+    "foco": "50% 40%",
+    "alt": "O detetive sai com a amostra de líquido; depois entram as cápsulas da faxina."
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with type 2 diabetes has had a painful, swollen right knee for 1 day. Temperature is 38.6°C; BP is 132/80 mm Hg. The knee is warm and red with a large effusion, and any passive movement causes severe pain. Leukocyte count is 15,800/mm3. He has no prosthetic joints.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral colchicine",
+        "quiz": "Colchicina oral"
+      },
+      "B": {
+        "texto": "Empiric IV vancomycin and ceftriaxone",
+        "quiz": "Antibiótico IV já"
+      },
+      "C": {
+        "texto": "MRI of the knee",
+        "quiz": "Ressonância"
+      },
+      "D": {
+        "texto": "Arthrocentesis with fluid analysis and culture",
+        "quiz": "Artrocentese"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Artrite séptica: *punção antes* do antibiótico",
+    "certa": [
+      "Monoartrite aguda, quente e com febre é artrite séptica até prova em contrário. No paciente estável, o primeiro passo é a artrocentese, com celularidade, Gram, cultura e pesquisa de cristais, colhida antes do antibiótico para não negativar a cultura. Logo depois da punção (e das hemoculturas) começa o antibiótico empírico."
+    ],
+    "termos": [
+      "septic arthritis",
+      "arthrocentesis",
+      "synovial fluid culture",
+      "Staphylococcus aureus"
+    ],
+    "erradas": {
+      "A": "Colchicina trata gota, e só se pensa nela depois que o líquido mostra cristais e exclui infecção.",
+      "B": "O antibiótico é necessário, mas iniciado antes da punção pode esterilizar a cultura; no paciente estável, a punção vem primeiro e sem demora.",
+      "C": "A ressonância atrasa o diagnóstico e não diferencia infecção de cristal; o líquido sinovial é que decide."
+    },
+    "macete": {
+      "frase": "*Perícia antes da faxina*: punciona, depois limpa com antibiótico",
+      "apoio": "Na imagem, o detetive colhe a amostra enquanto a equipe de limpeza espera na porta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: um joelho que esquentou da noite para o dia. Todo mundo quer tratar logo, mas a ordem importa.",
+    "palavras_chave": [
+      "acute monoarthritis",
+      "fever",
+      "knee effusion",
+      "type 2 diabetes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Reumatologia",
+      "#SepticArthritis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Joelho séptico estável: qual o 1º passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

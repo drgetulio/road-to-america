@@ -1,0 +1,99 @@
+{
+  "dia": 258,
+  "data": "2027-07-17",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "EMTALA",
+  "conceito": "EMTALA: screen and stabilize emergencies regardless of insurance before any transfer",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-18",
+  "tom": null,
+  "gancho": "Chegou sem *carteirinha* no pronto-socorro americano. A catraca abre?",
+  "gancho_apoio": "Dor no peito, sem plano de saúde, e alguém sugere o hospital do condado. O que a lei manda?",
+  "imagem": {
+    "arquivo": "dia-258.png",
+    "cena": "A porta de um pronto-socorro tem uma catraca de estádio. Uma carteira de bolso, de olhos grandes e sem nenhum cartão dentro, chega aflita e encara a catraca. Ao fundo, uma ambulância estacionada espera com as luzes apagadas.",
+    "foco": "50% 35%",
+    "alt": "Chegou sem carteirinha no pronto-socorro americano. A catraca abre?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-258-macete.png",
+    "cena": "A catraca está escancarada e um estetoscópio simpático dá as boas-vindas. Logo depois da entrada, um cinto de segurança afivelado envolve um coração sorridente; só depois disso a ambulância acende as luzes, pronta para uma transferência se for necessária.",
+    "foco": "50% 40%",
+    "alt": "EMTALA: avaliar e estabilizar"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old uninsured man arrives at the emergency department of a private hospital with 1 hour of crushing chest pain. While he waits in triage, a registration clerk suggests sending him to the county hospital 15 minutes away, which accepts uninsured patients. He is alert, and his vital signs are stable.",
+    "pergunta": "Which is the most appropriate action?",
+    "alternativas": {
+      "A": {
+        "texto": "Arrange transfer to the county hospital",
+        "quiz": "Transferir já"
+      },
+      "B": {
+        "texto": "Perform a medical screening examination and stabilize him",
+        "quiz": "Triar e estabilizar"
+      },
+      "C": {
+        "texto": "Obtain a payment guarantee before evaluation",
+        "quiz": "Pedir pagamento"
+      },
+      "D": {
+        "texto": "Discharge him with a cardiology referral",
+        "quiz": "Alta + ambulatório"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*EMTALA*: avaliar e estabilizar",
+    "certa": [
+      "A *EMTALA*, lei federal americana, obriga todo hospital que participa do Medicare e tem pronto-socorro a fazer um *medical screening examination* em quem chega pedindo atendimento, sem depender de seguro ou de capacidade de pagar. Se houver condição de emergência, o hospital precisa *stabilize* o paciente; a transferência só é permitida depois disso, ou quando o médico certifica que o benefício supera o risco e o hospital de destino aceita. Perguntar sobre seguro não pode atrasar a avaliação."
+    ],
+    "termos": [
+      "EMTALA",
+      "medical screening examination",
+      "stabilization",
+      "patient dumping"
+    ],
+    "erradas": {
+      "A": "Transferir antes de avaliar e estabilizar, por motivo financeiro, é o *patient dumping* que a EMTALA proíbe.",
+      "C": "Exigir garantia de pagamento antes da avaliação viola a EMTALA.",
+      "D": "Dar alta sem avaliar uma dor torácica que pode ser infarto viola a lei e o dever de cuidado."
+    },
+    "macete": {
+      "frase": "*Catraca livre*: triagem e estabilização *antes* de falar do plano",
+      "apoio": "A carteira vazia passa pela catraca escancarada: primeiro o estetoscópio (avaliação), depois o cinto (estabilização) e só então a ambulância, se precisar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor torácica, sem seguro, e a sugestão de mandar para outro hospital. O que a lei americana manda fazer?",
+    "palavras_chave": [
+      "uninsured patient",
+      "chest pain",
+      "triage",
+      "private hospital"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#EticaMedica",
+      "#MedicinaNosEUA",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que a lei manda?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

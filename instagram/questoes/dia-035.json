@@ -1,0 +1,102 @@
+{
+  "dia": 35,
+  "data": "2026-12-06",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Profilaxia no HIV (dia 30), Síndrome compartimental (dia 32)",
+  "conceito": "Remix: STEMI + HIV with CD4 below 200 + Compartment syndrome",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    2,
+    30,
+    32
+  ],
+  "explicacao_em": "2026-12-07",
+  "gancho": "Remix de domingo: três discos tocando e só um é urgente",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos empilhados: um com um coração, um com um escudo e um com uma mala; ao lado, um quarto disco sem selo, o intruso. Nenhum está tocando ainda.",
+    "foco": "50% 35%",
+    "alt": "Um toca-discos vermelho com três discos empilhados: um com um coração, um com um escudo e um com uma mala; ao lado, um quarto disco sem selo, o intruso. Nenhum está tocando ainda.",
+    "arquivo": "dia-035.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco da mala gira no toca-discos e a mala do desenho abre o zíper de ponta a ponta; o disco do escudo espera na fila com um lembrete preso, e o disco do coração fica guardado na capa.",
+    "alt": "O disco que toca primeiro é o da mala que não fecha",
+    "arquivo": "dia-035-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 38-year-old man with untreated HIV (CD4 count 150/mm3) has a closed tibial fracture after a motorcycle crash. Four hours after splinting, leg pain is out of proportion and worsens with passive plantar flexion despite splint removal. The anterior compartment is tense. ECG and troponin are normal.",
+    "pergunta": "Which is the most urgent next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Primary PCI within 90 minutes",
+        "quiz": "Primary PCI",
+        "dia": 2
+      },
+      "B": {
+        "texto": "Start TMP-SMX prophylaxis",
+        "quiz": "TMP-SMX",
+        "dia": 30
+      },
+      "C": {
+        "texto": "Emergency fasciotomy",
+        "quiz": "Fasciotomy",
+        "dia": 32
+      },
+      "D": {
+        "texto": "Elevate the leg and reassess in 4 hours",
+        "quiz": "Elevate and wait"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "O disco que toca primeiro é o da *mala que não fecha*",
+    "certa": [
+      "Dor desproporcional, dor ao estiramento passivo e compartimento tenso mesmo sem a tala fazem o diagnóstico de *compartment syndrome* (dia 32), e a perna tem poucas horas: *emergency fasciotomy* agora. O CD4 abaixo de 200 pede *TMP-SMX* contra *Pneumocystis* (dia 30), mas isso entra no plano depois e não salva o membro hoje. ECG e troponina normais tiram o *STEMI* (dia 2) da mesa."
+    ],
+    "termos": [
+      "compartment syndrome",
+      "emergency fasciotomy",
+      "Pneumocystis prophylaxis",
+      "primary PCI"
+    ],
+    "erradas": {
+      "A": "Dia 2: PCI primária é para STEMI, e aqui ECG e troponina estão normais.",
+      "B": "Dia 30: a profilaxia está indicada, mas não é a urgência que ameaça o membro nas próximas horas.",
+      "D": "Intruso: elevar a perna reduz a perfusão e esperar atrasa a descompressão."
+    },
+    "macete": {
+      "frase": "Toca primeiro o que se perde *em horas*",
+      "apoio": "Pegadinha de prova: O NBME mistura uma indicação verdadeira mas não urgente (profilaxia) com a emergência real e pergunta o passo mais urgente; ordene por tempo até o dano.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um paciente que lembra três conceitos das últimas semanas: infarto, HIV e fratura. Só uma conduta é a mais urgente agora. Cada alternativa mostra o dia em que o assunto apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#RemixDeDomingo",
+      "#Emergencia",
+      "#EmergencyMedicine",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual conduta é a mais urgente?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

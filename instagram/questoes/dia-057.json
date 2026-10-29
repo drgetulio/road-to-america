@@ -1,0 +1,96 @@
+{
+  "dia": 57,
+  "data": "2026-12-28",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Febre reumática",
+  "conceito": "Rheumatic fever: molecular mimicry between streptococcal M protein and cardiac antigens",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-29",
+  "gancho": "O segurança foi atrás do sósia e expulsou o freguês errado",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô na porta do boteco vê uma corrente de bactérias redondas de chapeuzinho vermelho saindo pelos fundos enquanto seguranças em forma de Y entram marchando; no balcão, um freguês em forma de coração toma um suco, despreocupado.",
+    "foco": "50% 35%",
+    "alt": "Macrô na porta do boteco vê uma corrente de bactérias redondas de chapeuzinho vermelho saindo pelos fundos enquanto seguranças em forma de Y entram marchando.",
+    "arquivo": "dia-057.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: os seguranças em Y agarram o freguês coração porque ele usa o mesmo chapéu que as bactérias usavam; as bactérias já foram embora, e o Macrô põe a mão na testa.",
+    "alt": "Caso de sósia: mimetismo molecular",
+    "arquivo": "dia-057-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 9-year-old girl has fever and migratory pain and swelling of the knees and ankles. She has a new apical holosystolic murmur. She had an untreated pharyngitis 3 weeks earlier. Antistreptolysin O titer is elevated, and blood cultures are negative.",
+    "pergunta": "Which mechanism best explains her cardiac findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies to M protein cross-reacting with heart",
+        "quiz": "Molecular mimicry"
+      },
+      "B": {
+        "texto": "Direct bacterial invasion of the endocardium",
+        "quiz": "Bacterial invasion"
+      },
+      "C": {
+        "texto": "Superantigen-driven T-cell activation",
+        "quiz": "Superantigen"
+      },
+      "D": {
+        "texto": "Immune complex deposition in the valves",
+        "quiz": "Immune complexes"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Caso de *sósia*: mimetismo molecular",
+    "certa": [
+      "Na *rheumatic fever*, os anticorpos e as células T formados contra a *streptococcal M protein* reconhecem antígenos parecidos no coração, como a miosina e proteínas das valvas (*molecular mimicry*). É uma *type II hypersensitivity*, e o ataque à valva mitral explica o sopro de insuficiência mitral. As hemoculturas negativas e o intervalo de 2 a 4 semanas depois da faringite afastam infecção direta."
+    ],
+    "termos": [
+      "rheumatic fever",
+      "molecular mimicry",
+      "M protein",
+      "type II hypersensitivity"
+    ],
+    "erradas": {
+      "B": "Invasão bacteriana direta é endocardite infecciosa, com hemoculturas positivas; aqui são negativas e o quadro vem semanas após a faringite.",
+      "C": "Superantígeno ativa células T em massa na síndrome do choque tóxico, com choque e rash, não valvite.",
+      "D": "Deposição de imunocomplexos explica a glomerulonefrite pós-estreptocócica, não a cardite reumática."
+    },
+    "macete": {
+      "frase": "Febre reumática é *caso de sósia*",
+      "apoio": "Pegadinha de prova: O NBME pergunta o tipo de hipersensibilidade (tipo II) e compara com a glomerulonefrite pós-estreptocócica, que é tipo III.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma dor de garganta sem tratamento, três semanas de silêncio, depois febre, articulações que doem uma de cada vez e um sopro novo. O Macrô quer saber por que o coração entrou na briga.",
+    "palavras_chave": [
+      "migratory arthritis",
+      "new murmur",
+      "untreated pharyngitis",
+      "ASO titer"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Microbiology",
+      "#Cardiologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual mecanismo explica a cardite?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

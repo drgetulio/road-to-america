@@ -1,0 +1,95 @@
+{
+  "dia": 36,
+  "data": "2026-12-07",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Hipersensibilidade tipo I",
+  "conceito": "Type I hypersensitivity: allergen cross-links IgE on mast cells, tryptase confirms degranulation",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-08",
+  "gancho": "Dez minutos depois do camarão, o carrinho de pipoca explodiu",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô na porta do boteco dos micróbios olha um carrinho de pipoca soltando fumaça logo depois que um prato de camarão passou; a cena não mostra as antenas nem o mecanismo.",
+    "foco": "50% 35%",
+    "alt": "Macrô na porta do boteco dos micróbios olha um carrinho de pipoca soltando fumaça logo depois que um prato de camarão passou; a cena não mostra as antenas nem o mecanismo.",
+    "arquivo": "dia-036.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do carrinho: agora em close, o carrinho está coberto de antenas em Y; o camarão está preso entre duas delas ao mesmo tempo e a pipoca explode para todos os lados. Um aroma dourado fica pairando no ar, com o Macrô farejando.",
+    "alt": "Duas antenas IgE presas, pipoca estourada",
+    "arquivo": "dia-036-macete.png"
+  },
+  "questao": {
+    "vinheta": "Ten minutes after eating shrimp, a 19-year-old woman develops diffuse urticaria, wheezing, and hypotension. She improves after intramuscular epinephrine. Serum tryptase measured 1 hour after onset is elevated.",
+    "pergunta": "Which mechanism best explains this reaction?",
+    "alternativas": {
+      "A": {
+        "texto": "Allergen cross-linking of IgE bound to mast cells",
+        "quiz": "IgE cross-linking"
+      },
+      "B": {
+        "texto": "IgG binding to antigens on cell surfaces",
+        "quiz": "IgG on cell surface"
+      },
+      "C": {
+        "texto": "Immune complex deposition with complement",
+        "quiz": "Immune complexes"
+      },
+      "D": {
+        "texto": "Cytokine release by sensitized T cells",
+        "quiz": "Sensitized T cells"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Duas antenas *IgE* presas, *pipoca* estourada",
+    "certa": [
+      "Na *type I hypersensitivity*, uma exposição anterior gerou *IgE* específica, que fica presa ao receptor FcεRI do *mast cell*. Na nova exposição, o alérgeno liga duas IgE vizinhas (*cross-linking*) e o mastócito libera histamina, triptase e mediadores em minutos. A *tryptase* atinge o pico entre 1 e 2 horas e confirma a degranulação, o que ajuda quando a dúvida é anafilaxia."
+    ],
+    "termos": [
+      "type I hypersensitivity",
+      "IgE cross-linking",
+      "mast cell",
+      "serum tryptase"
+    ],
+    "erradas": {
+      "B": "IgG contra antígeno da superfície da célula é tipo II (anemia hemolítica autoimune, Goodpasture), e não explica minutos depois de comer.",
+      "C": "Imunocomplexos com complemento são tipo III (doença do soro, lúpus) e levam dias, não minutos.",
+      "D": "Linfócito T sensibilizado é tipo IV, tardio, de 48 a 72 horas."
+    },
+    "macete": {
+      "frase": "Tipo I é *pipoca*: duas antenas presas, estouro em minutos",
+      "apoio": "Pegadinha de prova: O NBME pede o exame que confirma degranulação de mastócito: é a triptase sérica, porque a histamina dura minutos no sangue.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Urticária, chiado e pressão baixa logo depois do almoço, e um exame de sangue que confirma quem estourou. O Macrô quer saber qual mecanismo abriu a porta do boteco.",
+    "palavras_chave": [
+      "shrimp allergy",
+      "urticaria",
+      "wheezing",
+      "hypotension"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual mecanismo explica a reação?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

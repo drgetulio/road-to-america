@@ -1,0 +1,95 @@
+{
+  "dia": 24,
+  "data": "2026-11-25",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Osteogênese imperfeita",
+  "conceito": "Osteogenesis imperfecta: COL1A1/COL1A2 defects in type I collagen, blue sclerae and fractures",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-26",
+  "tom": null,
+  "gancho": "No canteiro do osso, qual *material* veio com defeito?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-024.png",
+    "cena": "Canteiro de obras em corte, estilo manual de montagem: um predinho de concreto bem acabado, mas com rachaduras finas. Dentro das colunas, as barras de ferro são finíssimas e tortas, e uma parede é tão fina que deixa ver uma parede azul-escura por trás.",
+    "foco": "50% 35%",
+    "alt": "No canteiro do osso, qual material veio com defeito?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-024-macete.png",
+    "cena": "Callback da obra: uma lupa gigante sobre a coluna revela que cada vergalhão é uma trança de três fios (a tripla hélice do colágeno tipo I), com um dos fios desfiado. Ao lado, uma luva de obra levanta um dedo só, junto de um sininho em forma de orelha com o badalo rachado e de um tijolinho em forma de dente, acinzentado.",
+    "alt": "Diga OI com um dedo só"
+  },
+  "questao": {
+    "vinheta": "A 5-year-old boy has had four long-bone fractures after minor falls. His sclerae are blue, and his teeth are gray-brown and translucent. His father has short stature and hearing loss. Skeletal survey shows osteopenia and healing fractures.",
+    "pergunta": "A defect in which protein is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Fibrillin-1",
+        "quiz": "Fibrilina 1"
+      },
+      "B": {
+        "texto": "Type I collagen",
+        "quiz": "Colágeno tipo I"
+      },
+      "C": {
+        "texto": "Type III collagen",
+        "quiz": "Colágeno tipo III"
+      },
+      "D": {
+        "texto": "Fibroblast growth factor receptor 3",
+        "quiz": "FGFR3"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Diga OI com um dedo só",
+    "certa": [
+      "Fraturas com traumas mínimos, esclera azul, dentes acinzentados (dentinogênese imperfeita) e um pai com baixa estatura e perda auditiva apontam para osteogênese imperfeita, em geral autossômica dominante. Mutações em COL1A1 ou COL1A2 geram colágeno tipo I defeituoso ou em pouca quantidade, e o tipo I é o principal colágeno do osso, da dentina, da esclera e dos ossículos do ouvido. A esclera fina deixa ver a coroide escura por trás, e daí vem o azul."
+    ],
+    "termos": [
+      "osteogenesis imperfecta",
+      "type I collagen",
+      "COL1A1",
+      "blue sclerae",
+      "dentinogenesis imperfecta"
+    ],
+    "erradas": {
+      "A": "Fibrilina 1 é Marfan, com membros longos, luxação do cristalino e dilatação da aorta, sem fraturas de repetição.",
+      "C": "Colágeno tipo III é o Ehlers-Danlos vascular, com ruptura de artérias e de vísceras, e não fraturas.",
+      "D": "FGFR3 ativado é acondroplasia, com membros curtos e osso de boa qualidade."
+    },
+    "macete": {
+      "frase": "Diga OI levantando um dedo só: Osteogênese Imperfeita é colágeno tipo I. No canteiro de obras, o concreto (mineral) é bom, mas o vergalhão (colágeno I) veio fino, e dá para ver a parede azul por trás.",
+      "apoio": "Pegadinha de prova: O NBME põe a osteogênese imperfeita como diagnóstico diferencial de maus-tratos; esclera azul, dentes alterados, perda auditiva e história familiar favorecem a doença genética.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê: fraturas fáceis, esclera azul e uma história de família. Qual proteína falhou na obra?",
+    "palavras_chave": [
+      "recurrent fractures",
+      "gray-brown teeth",
+      "hearing loss",
+      "osteopenia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Genetica",
+      "#Genetics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Fraturas e esclera azul: qual proteína?"
+  },
+  "exemplo": false
+}

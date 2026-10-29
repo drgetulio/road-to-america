@@ -1,0 +1,95 @@
+{
+  "dia": 50,
+  "data": "2026-12-21",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de DiGeorge",
+  "conceito": "DiGeorge syndrome: 22q11.2 deletion with thymic aplasia, hypocalcemia and conotruncal defects",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-22",
+  "gancho": "Faltaram dois titulares na foto do time. Adivinha quem?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Macrô na porta do boteco olhando a foto oficial de um time de futebol com dois lugares vazios na fila de trás, e coça a cabeça tentando lembrar quem faltou.",
+    "foco": "50% 35%",
+    "alt": "Macrô na porta do boteco olhando a foto oficial de um time de futebol com dois lugares vazios na fila de trás, e coça a cabeça tentando lembrar quem faltou.",
+    "arquivo": "dia-050.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: os dois lugares vazios da foto ganham contornos pontilhados de um timo em forma de borboleta e de quatro bolinhas de paratireoide, e um coração com um tronco único aparece no banco de reservas; numa lagoa ao lado chegam nadando dois patinhos amarelos, o 22 do bingo.",
+    "alt": "CATCH-22: faltaram as bolsas 3 e 4",
+    "arquivo": "dia-050-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 4-day-old boy has a generalized seizure. He has a cleft palate, low-set ears, and a harsh systolic murmur; echocardiography shows truncus arteriosus. Serum calcium is 6.2 mg/dL with a low PTH level. Chest x-ray shows no thymic shadow.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Williams syndrome",
+        "quiz": "Williams syndrome"
+      },
+      "B": {
+        "texto": "X-linked agammaglobulinemia",
+        "quiz": "Bruton (XLA)"
+      },
+      "C": {
+        "texto": "Adenosine deaminase deficiency",
+        "quiz": "ADA deficiency"
+      },
+      "D": {
+        "texto": "22q11.2 deletion syndrome",
+        "quiz": "22q11.2 deletion"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*CATCH-22*: faltaram as bolsas 3 e 4",
+    "certa": [
+      "A deleção *22q11.2* (*DiGeorge syndrome*) impede o desenvolvimento da 3ª e da 4ª bolsas faríngeas, que formam o timo e as paratireoides. Daí a *thymic aplasia* (sem sombra tímica e com poucas células T), o PTH baixo com *hypocalcemia* e convulsão, e os defeitos conotruncais como o *truncus arteriosus*. Fenda palatina e orelhas baixas completam o CATCH-22."
+    ],
+    "termos": [
+      "22q11.2 deletion",
+      "DiGeorge syndrome",
+      "thymic aplasia",
+      "third and fourth pharyngeal pouches"
+    ],
+    "erradas": {
+      "A": "A síndrome de Williams (7q11.23) cursa com hipercalcemia e estenose aórtica supravalvar, o oposto deste quadro.",
+      "B": "Na agamaglobulinemia ligada ao X faltam células B, e as infecções começam depois dos 6 meses; não há hipocalcemia nem cardiopatia.",
+      "C": "A deficiência de ADA causa SCID sem hipocalcemia, fenda palatina ou defeito conotruncal."
+    },
+    "macete": {
+      "frase": "Dois patinhos na lagoa: *22q11*, sem *bolsas 3 e 4*",
+      "apoio": "Pegadinha de prova: O NBME costuma abrir com a convulsão por hipocalcemia no recém-nascido com cardiopatia e pedir a estrutura embriológica: 3ª e 4ª bolsas faríngeas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Recém-nascido com convulsão, sopro, fenda no palato e uma radiografia que não mostra uma sombra esperada. O Macrô sente falta de um time inteiro de células.",
+    "palavras_chave": [
+      "neonatal seizure",
+      "cleft palate",
+      "truncus arteriosus",
+      "hypocalcemia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Genetics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o diagnóstico mais provável?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

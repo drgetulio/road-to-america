@@ -1,0 +1,103 @@
+{
+  "dia": 315,
+  "data": "2027-09-12",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Doença granulomatosa crônica (dia 260), Estreptococos do grupo viridans (dia 295), Gangrena gasosa (dia 309)",
+  "conceito": "Remix: Chronic granulomatous disease + Viridans streptococci + Clostridium perfringens alpha toxin",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    260,
+    295,
+    309
+  ],
+  "explicacao_em": "2027-09-13",
+  "tom": null,
+  "gancho": "Três discos no toca-discos: *qual deles explica tanto abscesso?*",
+  "gancho_apoio": "Remix com doença granulomatosa crônica, viridans e gangrena gasosa. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-315.png",
+    "cena": "Macrô de DJ diante de um toca-discos com três discos: um com um fogão, outro com um trenzinho de cocos verdes e outro com uma gema de ovo cortada; um quarto disco, de outra cor, com um ímã que não gruda, fica separado. A barriga do Macrô está estufada.",
+    "foco": "50% 35%",
+    "alt": "Três discos no toca-discos: qual deles explica tanto abscesso?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-315-macete.png",
+    "cena": "Callback: o disco do fogão gira; o fogão tem a válvula de gás quebrada e nenhuma chama acende, micróbios com extintor apagam as poucas faíscas e uma lâmpada de teste ao lado continua apagada. O Macrô, de barriga cheia, aponta para o fogão.",
+    "foco": "50% 45%",
+    "alt": "DGC: o fagócito come, mas não acende o fogão"
+  },
+  "questao": {
+    "vinheta": "A 4-year-old boy has a Staphylococcus aureus liver abscess. Last year he had Aspergillus pneumonia. A lymph node biopsy shows granulomas. His umbilical cord separated at 10 days of age, and his neutrophil count is normal. Dihydrorhodamine flow cytometry shows no fluorescence after neutrophil stimulation.",
+    "pergunta": "Which is the most likely underlying mechanism?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective integrin-mediated neutrophil adhesion",
+        "quiz": "Falha de integrina"
+      },
+      "B": {
+        "texto": "Lecithinase destroying cell membranes",
+        "quiz": "Lecitinase",
+        "dia": 309
+      },
+      "C": {
+        "texto": "Defective superoxide generation by phagocytes",
+        "quiz": "Sem superóxido",
+        "dia": 260
+      },
+      "D": {
+        "texto": "Dextran-mediated adhesion to damaged valves",
+        "quiz": "Dextrana na valva",
+        "dia": 295
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "DGC: o fagócito come, mas *não acende o fogão*",
+    "certa": [
+      "Abscessos por germes catalase-positivos (S. aureus, Aspergillus), granulomas e teste de *dihydrorhodamine* sem fluorescência fecham *chronic granulomatous disease*. Falta a *NADPH oxidase*, que gera superóxido no *respiratory burst*: o fagócito engole o micróbio, mas não consegue matá-lo, e a resposta vira granuloma. Os catalase-positivos são os mais perigosos porque destroem o próprio peróxido que o fagócito poderia aproveitar."
+    ],
+    "termos": [
+      "chronic granulomatous disease",
+      "NADPH oxidase",
+      "respiratory burst",
+      "dihydrorhodamine test"
+    ],
+    "erradas": {
+      "A": "Defeito de *integrina CD18* é a deficiência de adesão leucocitária: neutrofilia, queda tardia do coto umbilical e infecções sem pus, com DHR normal.",
+      "B": "A *lecitinase* (dia 309) é a alpha toxin do C. perfringens na gangrena gasosa, e não um defeito do paciente.",
+      "D": "A *dextrana* (dia 295) prende o viridans à valva lesada na endocardite subaguda, sem relação com abscessos de repetição."
+    },
+    "macete": {
+      "frase": "*A barriga cheia do Macrô mostra que engolir não é o problema*: o fogão é que não acende",
+      "apoio": "É o disco do dia 260: o fogão sem chama é a NADPH oxidase, os micróbios com extintor são os catalase-positivos e a lâmpada apagada é o DHR negativo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com doença granulomatosa crônica (dia 260), estreptococos do grupo viridans (dia 295) e gangrena gasosa (dia 309), mais um intruso. Menino de 4 anos com abscesso hepático por S. aureus, pneumonia por Aspergillus e teste de DHR sem fluorescência. Qual disco toca?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Catalase-positivos e DHR apagado: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 58,
+  "data": "2026-12-29",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Taquicardia instável",
+  "conceito": "Unstable tachyarrhythmia with a pulse: synchronized cardioversion",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-30",
+  "gancho": "Coração a 180, pressão no chão: qual é a jogada agora?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma bateria de escola de samba desenhada com instrumentos personificados; um coração vermelho toca o tamborim rápido demais e um surdo grande com um raio desenhado espera, sem saber quando bater.",
+    "foco": "50% 35%",
+    "alt": "Uma bateria de escola de samba desenhada com instrumentos personificados; um coração vermelho toca o tamborim rápido demais e um surdo grande com um raio desenhado espera, sem saber quando bater.",
+    "arquivo": "dia-058.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o raio do surdo cai exatamente sobre a marca do tempo forte de uma pauta desenhada como um traçado de ECG, e um contratempo logo depois fica marcado com um sinal vermelho de proibido; o coração volta a tocar no ritmo.",
+    "alt": "Instável com pulso: choque sincronizado",
+    "arquivo": "dia-058-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 66-year-old man has palpitations and chest pressure for 30 minutes. He is confused and diaphoretic. Pulse is 180/min and regular, and BP is 74/40 mm Hg. A carotid pulse is palpable. ECG shows a regular wide-complex tachycardia.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Synchronized cardioversion",
+        "quiz": "Synchronized shock"
+      },
+      "B": {
+        "texto": "Unsynchronized defibrillation",
+        "quiz": "Defibrillation"
+      },
+      "C": {
+        "texto": "IV amiodarone infusion",
+        "quiz": "IV amiodarone"
+      },
+      "D": {
+        "texto": "IV adenosine",
+        "quiz": "IV adenosine"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Instável com pulso: *choque sincronizado*",
+    "certa": [
+      "Taquiarritmia com hipotensão, confusão e dor no peito é *unstable tachyarrhythmia*, e com pulso presente a conduta é *synchronized cardioversion* imediata, com sedação se não atrasar. O sincronismo dispara o choque na onda R e evita cair na onda T, o que poderia gerar fibrilação ventricular (*R-on-T*). Remédio fica para o paciente estável."
+    ],
+    "termos": [
+      "unstable tachyarrhythmia",
+      "synchronized cardioversion",
+      "R-on-T phenomenon",
+      "ACLS"
+    ],
+    "erradas": {
+      "B": "Desfibrilação não sincronizada é para TV sem pulso e fibrilação ventricular; com pulso, o choque precisa ser sincronizado.",
+      "C": "Amiodarona entra na TV estável ou depois da cardioversão; em paciente instável, atrasa o tratamento.",
+      "D": "Adenosina só se considera em taquicardia regular estável, e não substitui o choque no paciente instável."
+    },
+    "macete": {
+      "frase": "Instável com pulso: choque *no tempo do surdo*",
+      "apoio": "Pegadinha de prova: O NBME dá o pulso palpável no meio da vinheta; quem não lê marca desfibrilação, e quem não vê a instabilidade marca amiodarona.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Taquicardia regular de complexo largo, confusão, sudorese e pressão de 74 por 40, com pulso presente. Não é hora de pensar muito, mas é hora de acertar o ritmo.",
+    "palavras_chave": [
+      "palpitations",
+      "hypotension",
+      "wide-complex tachycardia",
+      "altered mental status"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#ACLS",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é a conduta agora?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

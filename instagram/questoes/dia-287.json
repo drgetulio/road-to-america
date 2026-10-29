@@ -1,0 +1,103 @@
+{
+  "dia": 287,
+  "data": "2027-08-15",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Doença do enxerto contra o hospedeiro (dia 211), Doença granulomatosa crônica (dia 260), Hepatite E (dia 281)",
+  "conceito": "Remix: Graft-versus-host disease + Chronic granulomatous disease + Hepatitis E",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    211,
+    260,
+    281
+  ],
+  "explicacao_em": "2027-08-16",
+  "tom": null,
+  "gancho": "Três discos no remix: *quem atacou pele, fígado e intestino?*",
+  "gancho_apoio": "GVHD, doença granulomatosa crônica e hepatite E, mais um intruso.",
+  "imagem": {
+    "arquivo": "dia-287.png",
+    "cena": "Toca-discos com três discos de ícones (uma mala de viagem, um isqueiro que não acende e uma gota de chuva) e um quarto disco de outra cor ao lado; Macrô de DJ, com fones, coçando a cabeça.",
+    "foco": "50% 35%",
+    "alt": "Três discos no remix: quem atacou pele, fígado e intestino?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-287-macete.png",
+    "cena": "Callback: só o disco da mala gira; da mala sai um linfócito T turista de óculos escuros, emburrado, apontando três cômodos de uma casa em corte: a sala de parede estampada (pele), a cozinha com fogão em forma de fígado e os canos sob o piso (intestino).",
+    "foco": "50% 45%",
+    "alt": "GVHD: T do doador contra pele, fígado e intestino"
+  },
+  "questao": {
+    "vinheta": "Four weeks after an allogeneic hematopoietic stem cell transplant, a 40-year-old woman develops a pruritic maculopapular rash on her palms and soles, profuse watery diarrhea, and rising bilirubin. She is afebrile. Stool studies are negative for infection.",
+    "pergunta": "Which mechanism best explains her findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective NADPH oxidase in phagocytes",
+        "quiz": "NADPH oxidase",
+        "dia": 260
+      },
+      "B": {
+        "texto": "Donor T cells attacking host tissues",
+        "quiz": "T do doador",
+        "dia": 211
+      },
+      "C": {
+        "texto": "Fecal-oral hepevirus infection",
+        "quiz": "Hepevírus",
+        "dia": 281
+      },
+      "D": {
+        "texto": "Preformed recipient antibodies against the graft",
+        "quiz": "Anticorpo prévio"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "GVHD: *T do doador* contra pele, fígado e intestino",
+    "certa": [
+      "Pele (palmas e plantas), intestino (diarreia volumosa) e fígado (bilirrubina subindo) semanas depois de um *transplante alogênico de medula* formam a tríade da *graft-versus-host disease*. Os *linfócitos T do doador* reconhecem os antígenos do receptor como estranhos e atacam os tecidos dele. Por isso a GVHD é típica do transplante de medula e da transfusão não irradiada em imunossuprimido."
+    ],
+    "termos": [
+      "graft-versus-host disease",
+      "donor T cells",
+      "allogeneic stem cell transplant",
+      "irradiated blood products"
+    ],
+    "erradas": {
+      "A": "Doença granulomatosa crônica (dia 260) é um defeito de nascença da NADPH oxidase, com infecções por catalase-positivos, não uma reação ao transplante.",
+      "C": "Hepatite E (dia 281) pode ficar crônica em transplantado, mas não explica o rash de palmas e plantas, e a pesquisa de infecção veio negativa.",
+      "D": "Anticorpos pré-formados do receptor causam rejeição hiperaguda de órgão sólido em minutos, não esta tríade semanas depois."
+    },
+    "macete": {
+      "frase": "GVHD: *o hóspede briga com a casa*, na pele, no fígado e no intestino",
+      "apoio": "No toca-discos, o disco da mala de viagem (o enxerto) toca: o linfócito T do doador chega na casa nova e reclama da parede (pele), da cozinha (fígado) e do encanamento (intestino).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com GVHD (dia 211), doença granulomatosa crônica (dia 260) e hepatite E (dia 281), mais um intruso. Quatro semanas depois de um transplante de medula, rash nas palmas, diarreia e bilirrubina subindo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pós-transplante, rash e diarreia: qual mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

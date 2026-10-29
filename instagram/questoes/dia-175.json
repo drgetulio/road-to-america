@@ -1,0 +1,94 @@
+{
+  "dia": 175,
+  "data": "2027-04-25",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix do mosquito: Anemia da doença crônica (dia 80), Malária e hipnozoítos (dia 120), Malária por falciparum (dia 169)",
+  "conceito": "Mosquito remix: Anemia of chronic disease + Plasmodium vivax and ovale + Plasmodium falciparum",
+  "personagem": "Macrô",
+  "gancho_data": "Dia Mundial da Malária (25/4).",
+  "remix_de": [
+    80,
+    120,
+    169
+  ],
+  "explicacao_em": "2027-04-26",
+  "tom": null,
+  "gancho": "Remix do mosquito: a febre voltou depois de *dois meses*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-175.png",
+    "cena": "Macrô ao lado de um toca-discos vermelho no boteco; o mosquito turista de chapéu de palha está de volta à porta. Ao lado do toca-discos, três discos com ícones (uma gota de ferro, uma campainha de recepção de hotel e um pedaço de velcro) e um quarto disco desconhecido, de casaco ondulado.",
+    "foco": "50% 35%",
+    "alt": "Macrô ao lado de um toca-discos vermelho no boteco; o mosquito turista de chapéu de palha está de volta à porta."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-175-macete.png",
+    "cena": "O disco da campainha toca e acende verde: atrás dele, um hotelzinho em forma de lobo de fígado tem uma janela acesa onde um hóspede de touca de dormir está acordando. Macrô segura a chave do check-out, com cabo em forma de pílula, depois de conferir na recepção uma prancheta com check verde (a G6PD).",
+    "alt": "Vivax deixa um hóspede dormindo no fígado"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old man was treated with chloroquine for Plasmodium vivax malaria acquired in the Amazon 2 months ago. He now has fever every 48 hours, and the smear again shows P. vivax. He has not traveled since. G6PD activity is normal.",
+    "pergunta": "Which mechanism best explains the recurrence?",
+    "alternativas": {
+      "A": {
+        "texto": "PfEMP1-mediated cytoadherence",
+        "quiz": "Citoaderência PfEMP1",
+        "dia": 169
+      },
+      "B": {
+        "texto": "Hepcidin-mediated iron sequestration",
+        "quiz": "Hepcidina e ferro",
+        "dia": 80
+      },
+      "C": {
+        "texto": "Reactivation of dormant liver hypnozoites",
+        "quiz": "Hipnozoíto hepático",
+        "dia": 120
+      },
+      "D": {
+        "texto": "Antigenic variation of variant surface glycoprotein",
+        "quiz": "Variação de VSG"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Vivax deixa um *hóspede dormindo* no fígado",
+    "certa": [
+      "A *P. vivax* e a *P. ovale* deixam *hypnozoites* adormecidos no fígado, e a cloroquina mata as formas do sangue, mas não as do fígado. Semanas a meses depois os hipnozoítos acordam e a doença volta (*relapse*). Para evitar, depois de checar a *G6PD*, entra *primaquine* por 14 dias ou *tafenoquine* em dose única."
+    ],
+    "termos": [
+      "Plasmodium vivax",
+      "hypnozoites",
+      "relapse",
+      "primaquine",
+      "G6PD"
+    ],
+    "erradas": {
+      "A": "Dia 169: a citoaderência pela PfEMP1 é da falciparum e explica a malária cerebral, não a recaída.",
+      "B": "Dia 80: a hepcidina prende o ferro nos macrófagos na anemia da doença crônica; explica anemia, não febre que volta.",
+      "D": "Intruso: a variação da VSG é a estratégia do Trypanosoma brucei, na doença do sono africana."
+    },
+    "macete": {
+      "frase": "*Vivax* e *ovale* deixam um *hóspede dormindo* no hotel fígado (o hipnozoíto do dia 120), que acorda semanas depois. A cloroquina só arruma o salão (o sangue); o check-out do quarto escondido é da *primaquina*, depois de a recepção conferir a G6PD.",
+      "apoio": "O NBME pergunta qual remédio evita a recaída (primaquina ou tafenoquina) e qual exame vem antes (G6PD, pelo risco de hemólise).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "25 de abril é o Dia Mundial da Malária, e o Remix de domingo é do mosquito: anemia da doença crônica (dia 80), hipnozoítos (dia 120) e falciparum (dia 169), mais um intruso. A febre voltou dois meses depois. Por quê?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Vivax voltou em 2 meses. Por quê?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

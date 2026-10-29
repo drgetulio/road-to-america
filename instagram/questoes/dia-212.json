@@ -1,0 +1,99 @@
+{
+  "dia": 212,
+  "data": "2027-06-01",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Sarcoidose",
+  "conceito": "Sarcoidosis: bilateral hilar adenopathy, noncaseating granulomas, hypercalcemia",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-02",
+  "tom": null,
+  "gancho": "Ombreira dos anos 80 no raio X *e cálcio sobrando*",
+  "gancho_apoio": "Tosse seca, nódulos nas canelas e cálcio alto. Que diagnóstico junta tudo?",
+  "imagem": {
+    "arquivo": "dia-212.png",
+    "cena": "Um par de pulmões simpáticos, de ombreiras enormes e simétricas no estilo festa dos anos 80, escolhe um salgado no balcão de uma padaria. No balcão, uma cestinha com pedaços de giz branco.",
+    "foco": "50% 35%",
+    "alt": "Ombreira dos anos 80 no raio X e cálcio sobrando"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-212-macete.png",
+    "cena": "Callback: o pulmão de ombreiras morde o pão de queijo e descobre que o miolo está vazio, sem queijo nenhum. A cestinha de giz transborda, mostrando o cálcio que sobrou.",
+    "foco": "50% 45%",
+    "alt": "Granuloma sem caseificação e cálcio alto"
+  },
+  "questao": {
+    "vinheta": "A 36-year-old woman has had a dry cough and exertional dyspnea for 3 months. She has tender red nodules on both shins. Chest x-ray shows bilateral hilar lymphadenopathy. Serum calcium is 11.2 mg/dL. Transbronchial biopsy shows noncaseating granulomas; acid-fast and fungal stains are negative.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Pulmonary tuberculosis",
+        "quiz": "Tuberculosis"
+      },
+      "B": {
+        "texto": "Sarcoidosis",
+        "quiz": "Sarcoidosis"
+      },
+      "C": {
+        "texto": "Histoplasmosis",
+        "quiz": "Histoplasmosis"
+      },
+      "D": {
+        "texto": "Hodgkin lymphoma",
+        "quiz": "Hodgkin lymphoma"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Granuloma sem caseificação e *cálcio alto*",
+    "certa": [
+      "Adenopatia hilar bilateral, *erythema nodosum* nas canelas e *noncaseating granulomas* com colorações negativas para micobactéria e fungo apontam para *sarcoidosis*. O cálcio sobe porque os macrófagos do granuloma expressam *1-alpha-hydroxylase* e fabricam calcitriol por conta própria, fora do controle do PTH."
+    ],
+    "termos": [
+      "bilateral hilar lymphadenopathy",
+      "noncaseating granulomas",
+      "erythema nodosum",
+      "1-alpha-hydroxylase"
+    ],
+    "erradas": {
+      "A": "A *tuberculosis* forma granulomas caseosos, com necrose central, e a coloração álcool-ácido resistente costuma achar o bacilo.",
+      "C": "A *histoplasmosis* pode dar adenopatia hilar, mas os granulomas tendem a necrosar, e a coloração para fungos mostraria leveduras pequenas dentro dos macrófagos.",
+      "D": "O *Hodgkin lymphoma* aumenta linfonodos do mediastino, mas a biópsia mostraria células de Reed-Sternberg, não granulomas com colorações negativas e cálcio alto."
+    },
+    "macete": {
+      "frase": "Sarcoidose é *pão de queijo sem queijo*: granuloma sem caseificação",
+      "apoio": "Na imagem, o pulmão de ombreiras (as duas adenopatias hilares) morde o pão de queijo da padaria e não acha queijo nenhum; ao lado, a cestinha de giz é o cálcio que o macrófago fabrica sozinho.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Tosse seca há meses, nódulos vermelhos e doloridos nas canelas, linfonodos dos dois lados do hilo e cálcio alto. A biópsia mostrou granulomas e as colorações vieram negativas. Qual é o diagnóstico?",
+    "palavras_chave": [
+      "dry cough",
+      "tender shin nodules",
+      "hilar adenopathy",
+      "hypercalcemia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pneumologia",
+      "#Pulmonology",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Hilo bilateral, granuloma e cálcio alto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

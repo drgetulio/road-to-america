@@ -1,0 +1,99 @@
+{
+  "dia": 251,
+  "data": "2027-07-10",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Erros tipo I e tipo II",
+  "conceito": "Type I vs type II error: alpha is a false positive, beta a false negative, power is 1 minus beta",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-11",
+  "tom": null,
+  "gancho": "Gol, VAR e polêmica: quem *errou* nesse estudo?",
+  "gancho_apoio": "Um estudo pequeno disse que não; vários estudos grandes disseram que sim. Qual foi o erro?",
+  "imagem": {
+    "arquivo": "dia-251.png",
+    "cena": "Uma bola de futebol parada bem em cima da linha do gol, sem dar para saber se entrou. O Viés, fantasminha de lençol, espia de trás da trave segurando uma lupa, enquanto um telão de estádio, sem nenhuma escrita, mostra uma imagem borrada.",
+    "foco": "50% 35%",
+    "alt": "Gol, VAR e polêmica: quem errou nesse estudo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-251-macete.png",
+    "cena": "Duas cenas lado a lado. À esquerda, o Viés comemora um gol em impedimento que foi validado (erro tipo I). À direita, o mesmo gol com a arquibancada lotada, muitos torcedores apontando a bola dentro da rede e o telão nítido: com mais gente olhando, o gol que entrou não passa despercebido (mais poder).",
+    "foco": "50% 40%",
+    "alt": "Falso negativo é erro tipo II"
+  },
+  "questao": {
+    "vinheta": "A randomized trial of 60 patients finds no significant difference in monthly migraine days between a new drug and placebo (p = 0.31). Five years later, several large, well-designed trials consistently show that the drug reduces migraine days.",
+    "pergunta": "Which error did the first trial most likely make, and what would have reduced it?",
+    "alternativas": {
+      "A": {
+        "texto": "Type I error; lower alpha",
+        "quiz": "Tipo I + alfa menor"
+      },
+      "B": {
+        "texto": "Type I error; larger sample size",
+        "quiz": "Tipo I + amostra"
+      },
+      "C": {
+        "texto": "Type II error; lower alpha",
+        "quiz": "Tipo II + alfa menor"
+      },
+      "D": {
+        "texto": "Type II error; larger sample size",
+        "quiz": "Tipo II + amostra"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Falso negativo é *erro tipo II*",
+    "certa": [
+      "O primeiro estudo disse que não havia efeito quando o efeito existia: é um falso negativo, o *type II error* (*beta*). Estudo pequeno tem pouco *power* (poder = 1 menos beta), e o jeito mais direto de aumentar o poder é aumentar o tamanho da amostra. O poder também sobe com efeito maior e com alfa maior."
+    ],
+    "termos": [
+      "type II error",
+      "beta",
+      "statistical power",
+      "sample size"
+    ],
+    "erradas": {
+      "A": "Erro tipo I é falso positivo (achar efeito que não existe), e o estudo não achou efeito; baixar o alfa ainda aumentaria o beta.",
+      "B": "Erro tipo I é achar diferença que não existe; aqui a diferença existia e não foi vista.",
+      "C": "O erro é tipo II, mas baixar o alfa diminui o poder e deixa esse erro ainda mais provável."
+    },
+    "macete": {
+      "frase": "Tipo I *valida gol impedido*; tipo II *anula gol que entrou*",
+      "apoio": "No VAR do Viés, o erro tipo I comemora gol que não existiu (falso positivo, alfa) e o tipo II deixa passar o gol que entrou (falso negativo, beta). Arquibancada cheia é amostra grande: mais gente enxerga o gol, mais poder.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Estudo pequeno, p = 0,31. Anos depois, estudos grandes mostram que o remédio funciona. Quem errou, e como evitar?",
+    "palavras_chave": [
+      "small randomized trial",
+      "migraine",
+      "p-value",
+      "later large trials"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Bioestatistica",
+      "#Epidemiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual erro e como evitar?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

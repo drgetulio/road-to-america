@@ -1,0 +1,87 @@
+{
+  "dia": 159,
+  "data": "2027-04-09",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Clozapina",
+  "conceito": "Clozapine: for treatment-resistant schizophrenia, monitor the absolute neutrophil count",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-10",
+  "tom": null,
+  "gancho": "Tia Meia-Vida abriu a gaveta *trancada* da farmácia",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-159.png",
+    "cena": "Tia Meia-Vida, atrás do balcão da farmácia de interior, destranca uma gaveta especial com cadeado dourado, reservada para depois de duas caixas comuns já tentadas. Na estante, uma fileira de tubos de exame.",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida, atrás do balcão da farmácia de interior, destranca uma gaveta especial com cadeado dourado, reservada para depois de duas caixas comuns já tentadas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-159-macete.png",
+    "cena": "Da gaveta sai uma fila de soldadinhos brancos (neutrófilos), e a Tia conta um por um com um contador de mão, como porteira de bloco de Carnaval.",
+    "alt": "Clozapine pede close watch dos neutrófilos"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man with schizophrenia has persistent auditory hallucinations and paranoid delusions despite 8-week trials of risperidone and then olanzapine at adequate doses. Adherence is confirmed by plasma drug levels. His psychiatrist plans to start the antipsychotic with the best evidence for this situation.",
+    "pergunta": "Which laboratory value must be monitored regularly with this drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Serum creatinine",
+        "quiz": "Creatinina"
+      },
+      "B": {
+        "texto": "Absolute neutrophil count",
+        "quiz": "Neutrófilos (ANC)"
+      },
+      "C": {
+        "texto": "Thyroid-stimulating hormone",
+        "quiz": "TSH"
+      },
+      "D": {
+        "texto": "Serum ammonia",
+        "quiz": "Amônia"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Clozapine* pede *close watch* dos neutrófilos",
+    "certa": [
+      "Falha de dois antipsicóticos em dose e tempo adequados é *treatment-resistant schizophrenia*, e a escolha é a *clozapine*. Ela pode causar *severe neutropenia* (agranulocitose), por isso o *absolute neutrophil count* é medido antes de começar e repetido com frequência, semanalmente nos primeiros 6 meses. Em 2025 a FDA deixou de exigir o programa REMS, mas a bula mantém essa monitorização."
+    ],
+    "termos": [
+      "treatment-resistant schizophrenia",
+      "clozapine",
+      "absolute neutrophil count",
+      "agranulocytosis"
+    ],
+    "erradas": {
+      "A": "Creatinina é o controle do lítio (e de remédios de excreção renal), não da clozapina.",
+      "C": "TSH também é controle do lítio, pelo risco de hipotireoidismo; não é a prioridade com clozapina.",
+      "D": "Amônia se dosa quando há suspeita de encefalopatia por valproato."
+    },
+    "macete": {
+      "frase": "*Cloza*pina pede *close* watch: a Tia Meia-Vida conta os neutrófilos, soldadinhos brancos em fila, como porteira de bloco contando foliões.",
+      "apoio": "Além da neutropenia, o NBME cobra miocardite, convulsões, constipação grave, sialorreia e ganho de peso com clozapina, e lembra que ela também reduz comportamento suicida na esquizofrenia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia. Dois antipsicóticos já foram tentados direito, com adesão confirmada. A Tia Meia-Vida vai abrir a gaveta especial. Qual exame vem junto?",
+    "palavras_chave": [
+      "persistent hallucinations",
+      "failed antipsychotic trials",
+      "adherence",
+      "lab monitoring"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Esquizofrenia refratária: o que monitorar?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 59,
+  "data": "2026-12-30",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Pico de LH",
+  "conceito": "LH surge: sustained high estrogen switches to positive feedback and triggers ovulation",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-31",
+  "gancho": "Meio do ciclo, fogos no céu: quem acendeu o pavio?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um painel de controle de fogos de artifício na praia, à noite, com uma alavanca de pedal ainda na posição de freio; uma plateia de bolinhas segura bandeirinhas e cresce em volume, e a contagem é um ponteiro de relógio sem números.",
+    "foco": "50% 35%",
+    "alt": "Um painel de controle de fogos de artifício na praia, à noite, com uma alavanca de pedal ainda na posição de freio.",
+    "arquivo": "dia-059.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: a alavanca do painel muda do ícone de freio para o ícone de acelerador e os fogos explodem no céu; do maior fogo sai um ovinho dourado brilhando, e a plateia comemora.",
+    "alt": "Estrogênio alto e sustentado vira acelerador",
+    "arquivo": "dia-059-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has regular 28-day menstrual cycles. During the late follicular phase, serum estradiol rises steadily and stays above about 200 pg/mL for roughly 2 days. Within the next 24 to 36 hours, serum LH rises sharply and ovulation follows.",
+    "pergunta": "Which mechanism best explains the sharp rise in LH?",
+    "alternativas": {
+      "A": {
+        "texto": "Estrogen switches to positive feedback",
+        "quiz": "Estrogen + feedback"
+      },
+      "B": {
+        "texto": "Positive feedback by luteal progesterone",
+        "quiz": "Luteal progesterone"
+      },
+      "C": {
+        "texto": "Stimulation of LH release by inhibin B",
+        "quiz": "Inhibin B"
+      },
+      "D": {
+        "texto": "Estrogen withdrawal at end of luteal phase",
+        "quiz": "Estrogen withdrawal"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Estrogênio *alto e sustentado* vira *acelerador*",
+    "certa": [
+      "Durante quase todo o ciclo o estrogênio faz *negative feedback* sobre o hipotálamo e a hipófise. Quando o estradiol fica alto (cerca de 200 pg/mL) por uns 2 dias, o efeito se inverte para *positive feedback*, a hipófise fica mais sensível ao GnRH e solta o *LH surge*. O pico de LH provoca a *ovulation* em 24 a 36 horas."
+    ],
+    "termos": [
+      "LH surge",
+      "estrogen positive feedback",
+      "ovulation",
+      "GnRH"
+    ],
+    "erradas": {
+      "B": "O corpo lúteo só se forma depois da ovulação; a progesterona da fase lútea faz feedback negativo.",
+      "C": "A inibina B inibe a secreção de FSH, não estimula o LH.",
+      "D": "A queda do estrogênio no fim da fase lútea libera o FSH do ciclo seguinte, não o pico de LH."
+    },
+    "macete": {
+      "frase": "Estrogênio alto por 2 dias: *o freio vira acelerador*",
+      "apoio": "Pegadinha de prova: O NBME cobra a inversão do feedback e por que o anticoncepcional combinado impede a ovulação: estrogênio e progestagênio constantes bloqueiam o pico de LH.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Fase folicular, estradiol subindo sem parar e, de repente, um hormônio que dispara. Na véspera da véspera do Ano Novo, a pergunta é quem acendeu o pavio.",
+    "palavras_chave": [
+      "menstrual cycle",
+      "late follicular phase",
+      "estradiol",
+      "hypothalamic-pituitary-ovarian axis"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology",
+      "#Ginecologia",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "O que dispara o pico de LH?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

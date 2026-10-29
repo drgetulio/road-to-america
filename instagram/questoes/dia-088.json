@@ -1,0 +1,96 @@
+{
+  "dia": 88,
+  "data": "2027-01-28",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Isoimunização Rh",
+  "conceito": "Rh-negative mother: anti-D immune globulin at 28 weeks and after delivery of an Rh-positive baby",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-29",
+  "gancho": "Mãe Rh negativo, pai Rh positivo, 28 semanas: *e agora*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "O garçom do rodízio passa com espetos perto de uma ponte que leva a um castelo. Algumas hemácias com chapeuzinhos amarelos atravessam a ponte em direção ao castelo, onde guardinhas com cadernos esperam no portão.",
+    "foco": "50% 35%",
+    "alt": "Mãe Rh negativo, pai Rh positivo, 28 semanas: e agora?",
+    "arquivo": "dia-088.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do castelo: uma equipe de seguranças de boné navy acompanha as hemácias de chapeuzinho amarelo para fora do castelo, gentilmente, antes que os guardinhas abram os cadernos. Os cadernos continuam em branco, e o garçom levanta a plaquinha verde.",
+    "alt": "Aos 28 semanas: anti-D",
+    "arquivo": "dia-088-macete.png"
+  },
+  "questao": {
+    "vinheta": "At a routine prenatal visit at 28 weeks' gestation, a 29-year-old woman in her second pregnancy has blood group O, Rh(D)-negative, with a negative antibody screen. Her first child was born at term. The father of the baby is Rh(D)-positive. The pregnancy has been uncomplicated.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Anti-D immune globulin now",
+        "quiz": "Anti-D now"
+      },
+      "B": {
+        "texto": "Anti-D immune globulin only after delivery",
+        "quiz": "Anti-D after birth"
+      },
+      "C": {
+        "texto": "Middle cerebral artery Doppler surveillance",
+        "quiz": "MCA Doppler"
+      },
+      "D": {
+        "texto": "Repeat antibody screen, no treatment",
+        "quiz": "Repeat screen only"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Aos 28 semanas: *anti-D*",
+    "certa": [
+      "Mãe Rh(D) negativo ainda não sensibilizada (pesquisa de anticorpos negativa) com pai Rh positivo recebe *anti-D immune globulin* (RhoGAM, 300 microgramas) com 28 semanas, porque pequenas passagens de hemácias fetais acontecem no terceiro trimestre. Depois do parto, se o recém-nascido for Rh positivo, ela recebe nova dose em até 72 horas, ajustada pelo teste de Kleihauer-Betke. A imunoglobulina remove as hemácias fetais antes que a mãe forme memória contra o antígeno D, prevenindo a *alloimmunization* e a *hemolytic disease of the fetus and newborn*."
+    ],
+    "termos": [
+      "anti-D immune globulin",
+      "Rh alloimmunization",
+      "Kleihauer-Betke test",
+      "hemolytic disease of the fetus and newborn"
+    ],
+    "erradas": {
+      "B": "Esperar o parto deixa descoberto o terceiro trimestre, quando boa parte das sensibilizações acontece.",
+      "C": "O Doppler da artéria cerebral média segue fetos de mães já sensibilizadas, para detectar anemia, e esta pesquisa é negativa.",
+      "D": "Repetir o exame sem tratar perde a chance de prevenir a sensibilização."
+    },
+    "macete": {
+      "frase": "*28 semanas* e *depois do parto*",
+      "apoio": "Pegadinha de prova: O NBME dá a pesquisa de anticorpos positiva para ver se você lembra que, com a mãe já sensibilizada, a imunoglobulina não adianta e o caminho é o seguimento com Doppler.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Gestação tranquila, mãe O negativo, pai Rh positivo e pesquisa de anticorpos negativa. No Rodízio de Quinta, o espeto de obstetrícia pergunta o que fazer hoje.",
+    "palavras_chave": [
+      "28 weeks",
+      "blood group O",
+      "antibody screen",
+      "prenatal care"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RodizioDeQuinta",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é a conduta com 28 semanas?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

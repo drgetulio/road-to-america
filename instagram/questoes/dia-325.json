@@ -1,0 +1,96 @@
+{
+  "dia": 325,
+  "data": "2027-09-22",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Angiotensina II e TFG",
+  "conceito": "Angiotensin II: constricts the efferent arteriole to preserve GFR",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-23",
+  "tom": null,
+  "gancho": "Mangueira fraca, remédio novo e *o jardim do Seu Néfron secou*",
+  "gancho_apoio": "Na Quarta do Porquê, o Seu Néfron descobre quem segurava a pressão.",
+  "imagem": {
+    "arquivo": "dia-325.png",
+    "cena": "Seu Néfron no quintal da repartição, de gravata e óculos, rega o jardim com uma mangueira dobrada perto da torneira; o jato sai fraco. Na outra mão, ele segura um frasco de remédio novo e olha as plantas murchando.",
+    "foco": "50% 35%",
+    "alt": "Mangueira fraca, remédio novo e o jardim do Seu Néfron secou"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-325-macete.png",
+    "cena": "Callback: em primeiro plano, um ajudante em forma de grampo de navy, com quepe, aperta a ponta da mangueira e o jato vai longe; num segundo quadro, o frasco de remédio afasta o ajudante, a ponta fica solta e o jato cai aos pés do Seu Néfron.",
+    "foco": "50% 45%",
+    "alt": "Angiotensina II aperta a eferente e segura a TFG"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man with hypertension has bilateral renal artery stenosis on imaging. Two weeks after starting lisinopril, his serum creatinine rises from 1.1 to 2.4 mg/dL. His blood pressure has fallen to 118/72 mm Hg, and the urine dipstick and sediment are bland.",
+    "pergunta": "Loss of which effect most directly explains the decrease in his glomerular filtration rate?",
+    "alternativas": {
+      "A": {
+        "texto": "Constriction of the afferent arteriole by angiotensin II",
+        "quiz": "Aferente pela Ang II"
+      },
+      "B": {
+        "texto": "Constriction of the efferent arteriole by angiotensin II",
+        "quiz": "Eferente pela Ang II"
+      },
+      "C": {
+        "texto": "Dilation of the afferent arteriole by prostaglandins",
+        "quiz": "Prostaglandina"
+      },
+      "D": {
+        "texto": "Stimulation of aldosterone secretion",
+        "quiz": "Aldosterona"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Angiotensina II *aperta a eferente* e segura a TFG",
+    "certa": [
+      "Na estenose bilateral de artéria renal, a pressão que chega ao glomérulo é baixa, e quem segura a TFG é a *angiotensin II*, que contrai preferencialmente a *efferent arteriole* e aumenta a pressão hidrostática do capilar glomerular. O IECA tira essa angiotensina, a eferente relaxa e a filtração despenca, o que aparece como subida da creatinina. Por isso IECA e BRA são evitados na estenose bilateral e pedem creatinina de controle 1 a 2 semanas depois do início."
+    ],
+    "termos": [
+      "angiotensin II",
+      "efferent arteriole constriction",
+      "bilateral renal artery stenosis",
+      "filtration fraction"
+    ],
+    "erradas": {
+      "A": "O efeito da angiotensina II na aferente é pequeno; perdê-lo aumentaria o fluxo para o glomérulo, e não reduziria a TFG.",
+      "C": "As *prostaglandinas* dilatam a aferente; quem tira esse efeito é o AINE, e não o IECA.",
+      "D": "Menos *aldosterona* explica a hipercalemia do IECA, mas não a queda da filtração."
+    },
+    "macete": {
+      "frase": "*Angiotensina II é o polegar na ponta da mangueira*: aperta a saída e o jato vai longe",
+      "apoio": "Todo mundo já apertou a ponta da mangueira para o jato alcançar o fundo do quintal. A ponta é a arteríola eferente e o jato é a TFG; tirou o polegar com o IECA, o jato cai e o jardim do Seu Néfron seca.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 68 anos com estenose bilateral de artéria renal começa lisinopril e, duas semanas depois, a creatinina sobe de 1,1 para 2,4 mg/dL, com urina sem alterações. A perda de qual efeito explica a queda da filtração?",
+    "palavras_chave": [
+      "bilateral renal artery stenosis",
+      "lisinopril",
+      "rising creatinine",
+      "renal physiology"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Fisiologia",
+      "#Physiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "IECA na estenose bilateral: o que perdeu?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

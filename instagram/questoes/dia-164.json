@@ -1,0 +1,87 @@
+{
+  "dia": 164,
+  "data": "2027-04-14",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Doença de Chagas",
+  "conceito": "Chagas disease: Trypanosoma cruzi destroys the myenteric plexus, megaesophagus and megacolon",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Doença de Chagas (14/4).",
+  "remix_de": null,
+  "explicacao_em": "2027-04-15",
+  "tom": null,
+  "gancho": "Esôfago, cólon e coração: quem ligou o modo *mega*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-164.png",
+    "cena": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro. No quintal, três mangueiras de jardim enroladas com fiozinhos coloridos, e uma tesourinha esquecida no parapeito da janela, sem dono à vista.",
+    "foco": "50% 35%",
+    "alt": "Uma casa de adobe ao entardecer, com uma frestinha na parede de barro."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-164-macete.png",
+    "cena": "O barbeiro cortou os fiozinhos das mangueiras, e elas incharam como balões gigantes: um tubo comprido (esôfago), um tubo em laço (cólon) e um balão em forma de coração. Modo mega ligado.",
+    "alt": "Trypanosoma cruzi: o modo mega"
+  },
+  "questao": {
+    "vinheta": "A 52-year-old man who grew up in an adobe house in rural Bolivia has 3 years of progressive dysphagia to solids and liquids, regurgitation, and chronic constipation. Barium swallow shows a dilated esophagus with distal bird's-beak narrowing. His ECG has a right bundle branch block plus a left anterior fascicular block.",
+    "pergunta": "Which is the most likely underlying cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Esophageal adenocarcinoma",
+        "quiz": "Adenocarcinoma"
+      },
+      "B": {
+        "texto": "Idiopathic achalasia",
+        "quiz": "Acalasia idiopática"
+      },
+      "C": {
+        "texto": "Systemic sclerosis",
+        "quiz": "Esclerose sistêmica"
+      },
+      "D": {
+        "texto": "Trypanosoma cruzi infection",
+        "quiz": "Trypanosoma cruzi"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "*Trypanosoma cruzi*: o modo mega",
+    "certa": [
+      "Megaesôfago com bico de pássaro, constipação crônica (megacólon) e bloqueio de ramo direito com bloqueio fascicular anterior esquerdo em quem viveu em área endêmica é *Chagas disease* crônica. O *Trypanosoma cruzi*, transmitido pelo barbeiro (*triatomine bug*), destrói os neurônios do *myenteric (Auerbach) plexus* e o miocárdio. A acalasia idiopática dá o mesmo esôfago, mas não explica o coração nem o cólon."
+    ],
+    "termos": [
+      "Trypanosoma cruzi",
+      "myenteric plexus",
+      "megaesophagus",
+      "right bundle branch block"
+    ],
+    "erradas": {
+      "A": "O adenocarcinoma pode imitar acalasia, mas a disfagia começa por sólidos, evolui em meses com perda de peso e não explica cólon nem coração.",
+      "B": "A acalasia idiopática também perde o plexo mioentérico, mas fica restrita ao esôfago e não explica megacólon nem bloqueio de ramo.",
+      "C": "Na esclerose sistêmica o esfíncter esofágico inferior fica frouxo, com refluxo, e não estreito em bico de pássaro."
+    },
+    "macete": {
+      "frase": "O *barbeiro* corta os fios do plexo mioentérico e os tubos viram balão: *mega*esôfago, *mega*cólon e coração grande. Chagas é o modo *mega*, descrito por um brasileiro, Carlos Chagas, em 1909.",
+      "apoio": "O NBME junta disfagia com bico de pássaro a bloqueio de ramo direito, cardiomiopatia dilatada ou megacólon em quem morou na América Latina rural; na fase aguda e em jovens, o tratamento é benznidazol ou nifurtimox.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "14 de abril é uma data importante para a saúde da América Latina, e a homenagem completa sai no gabarito de amanhã. Hoje esôfago, cólon e coração aparecem na mesma vinheta. Qual é a causa por trás de tudo?",
+    "palavras_chave": [
+      "rural Bolivia",
+      "dysphagia",
+      "bird's-beak sign",
+      "conduction abnormalities"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Megaesôfago e bloqueio de ramo. Causa?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

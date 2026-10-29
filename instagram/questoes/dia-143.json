@@ -1,0 +1,95 @@
+{
+  "dia": 143,
+  "data": "2027-03-24",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Tuberculose primária",
+  "conceito": "Primary tuberculosis: Ghon complex with caseating granuloma",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Tuberculose (24/3).",
+  "remix_de": null,
+  "explicacao_em": "2027-03-25",
+  "tom": null,
+  "gancho": "Dia Mundial da Tuberculose: um *gol* no campo de baixo",
+  "gancho_apoio": "O bacilo marcou no pulmão e o zagueiro do hilo levou a bola junto.",
+  "imagem": {
+    "arquivo": "dia-143.png",
+    "cena": "Meio campo de futebol em forma de pulmão. Um bacilo em forma de bastão, de boné vermelho, chuta a bola para a parte de baixo do campo, perto da lateral, e o goleiro está posicionado perto do centro (hilo).",
+    "foco": "50% 35%",
+    "alt": "Campo de futebol em forma de pulmão; um bacilo de boné chuta a bola para a parte de baixo, perto da lateral."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-143-macete.png",
+    "cena": "Callback: no ponto do gol, perto da lateral, aparece uma rodinha de queijo minas cercada por uma roda de macrófagos de mãos dadas; outra rodinha igual aparece na área do hilo, ligada à primeira por uma trilha pontilhada.",
+    "foco": "50% 40%",
+    "alt": "Duas rodinhas de queijo cercadas por macrófagos: uma perto da lateral e outra no hilo, ligadas por uma trilha."
+  },
+  "questao": {
+    "vinheta": "A 7-year-old boy has a positive tuberculin skin test after his grandfather is diagnosed with pulmonary tuberculosis. He is asymptomatic, with normal vital signs. Chest CT shows a small subpleural nodule in the lower right lung field with enlarged ipsilateral hilar lymph nodes.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Miliary tuberculosis",
+        "quiz": "TB miliar"
+      },
+      "B": {
+        "texto": "Secondary (reactivation) tuberculosis",
+        "quiz": "TB secundária"
+      },
+      "C": {
+        "texto": "Primary tuberculosis with a Ghon complex",
+        "quiz": "Ghon (primária)"
+      },
+      "D": {
+        "texto": "Sarcoidosis",
+        "quiz": "Sarcoidose"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Complexo de Ghon: *foco + linfonodo hilar*",
+    "certa": [
+      "Na tuberculose primária, o bacilo inalado se instala na periferia subpleural dos campos médios e inferiores (foco de Ghon) e drena para os linfonodos hilares do mesmo lado; os dois juntos formam o complexo de Ghon. Os dois têm granulomas com necrose caseosa, e na maioria das pessoas a infecção fica contida e sem sintomas. Quando calcifica, recebe o nome de complexo de Ranke."
+    ],
+    "termos": [
+      "Ghon complex",
+      "primary tuberculosis",
+      "caseating granuloma",
+      "Ranke complex"
+    ],
+    "erradas": {
+      "A": "A tuberculose miliar mostra incontáveis micronódulos espalhados pelos dois pulmões, por disseminação hematogênica.",
+      "B": "A tuberculose secundária (reativação) prefere os ápices, onde o oxigênio é mais alto, e costuma cavitar, com tosse, febre e perda de peso.",
+      "D": "A sarcoidose dá linfonodos hilares dos dois lados, com granulomas não caseosos, e é rara nessa idade."
+    },
+    "macete": {
+      "frase": "Ghon = *gol no campo de baixo + zagueiro do hilo*, recheio de queijo",
+      "apoio": "Na imagem, o gol e a área do hilo viram duas rodas de queijo minas cercadas de macrófagos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje, 24/3, é o Dia Mundial da Tuberculose. Na Quarta do Porquê, uma criança assintomática, um avô com tuberculose e um achado de imagem que conta a história.",
+    "palavras_chave": [
+      "positive tuberculin skin test",
+      "household contact",
+      "subpleural nodule",
+      "hilar lymph nodes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Tuberculose",
+      "#Tuberculosis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Nódulo subpleural e hilo: qual o diagnóstico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

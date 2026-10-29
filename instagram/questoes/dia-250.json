@@ -1,0 +1,99 @@
+{
+  "dia": 250,
+  "data": "2027-07-09",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Estatinas",
+  "conceito": "Statins: inhibit HMG-CoA reductase and upregulate LDL receptors, watch for myopathy",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-10",
+  "tom": null,
+  "gancho": "A *fábrica de colesterol* parou. Para onde foi o LDL?",
+  "gancho_apoio": "Seis semanas de atorvastatina e o LDL despencou. Qual é a engrenagem?",
+  "imagem": {
+    "arquivo": "dia-250.png",
+    "cena": "Mito, de jaleco e café, encosta numa fábrica em forma de fígado com a engrenagem principal presa por uma trava vermelha. Na rua, bolinhas amarelas de LDL fazem fila, sem saber por onde entrar.",
+    "foco": "50% 35%",
+    "alt": "A fábrica de colesterol parou. Para onde foi o LDL?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-250-macete.png",
+    "cena": "A fábrica, ainda com a engrenagem travada, abre muitas portinhas na parede, e as bolinhas de LDL são aspiradas da rua para dentro. Num canto, Mito alonga a coxa com cara de dorzinha, lembrando o efeito no músculo.",
+    "foco": "50% 40%",
+    "alt": "Menos síntese, mais receptor"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man with type 2 diabetes and an LDL cholesterol of 162 mg/dL begins atorvastatin. Six weeks later, his LDL is 88 mg/dL. He reports mild, symmetric thigh aches, and his creatine kinase level is normal.",
+    "pergunta": "Which mechanism best explains the fall in his serum LDL?",
+    "alternativas": {
+      "A": {
+        "texto": "Inhibition of intestinal cholesterol absorption",
+        "quiz": "Menos absorção"
+      },
+      "B": {
+        "texto": "Activation of lipoprotein lipase via PPAR-alpha",
+        "quiz": "Ativa LPL"
+      },
+      "C": {
+        "texto": "Increased expression of hepatic LDL receptors",
+        "quiz": "Mais receptor de LDL"
+      },
+      "D": {
+        "texto": "Sequestration of bile acids in the gut",
+        "quiz": "Sequestra bile"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Menos síntese, *mais receptor*",
+    "certa": [
+      "A atorvastatina inibe a *HMG-CoA reductase*, etapa limitante da síntese de colesterol no fígado. Com menos colesterol dentro do hepatócito, o *SREBP-2* é ativado e aumenta a expressão de *LDL receptors* na membrana, que tiram o LDL do sangue. O efeito adverso clássico é a *statin-associated myopathy* (de mialgia com CK normal até rabdomiólise), com risco maior junto de genfibrozila ou de inibidores do CYP3A4."
+    ],
+    "termos": [
+      "HMG-CoA reductase",
+      "LDL receptor",
+      "SREBP-2",
+      "statin myopathy"
+    ],
+    "erradas": {
+      "A": "Bloquear a absorção intestinal pela NPC1L1 é o mecanismo da *ezetimibe*.",
+      "B": "Ativar a lipoproteína lipase via PPAR-alfa é o mecanismo dos *fibrates*, que baixam mais o triglicerídeo.",
+      "D": "Prender ácidos biliares no intestino é o mecanismo das resinas, como a *cholestyramine*."
+    },
+    "macete": {
+      "frase": "Estatina *fecha a fábrica* e *abre as portas*",
+      "apoio": "A fábrica travada é a HMG-CoA redutase bloqueada; sem produção própria, o fígado abre portinhas (receptores de LDL) e puxa o colesterol da rua. O Mito alongando a coxa é a mialgia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "LDL de 162 para 88 em seis semanas, e uma dorzinha nas coxas. Qual mecanismo explica a queda do LDL?",
+    "palavras_chave": [
+      "type 2 diabetes",
+      "LDL cholesterol",
+      "atorvastatin",
+      "thigh aches"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#Farmacologia",
+      "#Cardiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Por que o LDL caiu?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

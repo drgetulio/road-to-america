@@ -248,6 +248,7 @@ ol, ul { list-style: none; }
 .e4__img .pendente__tag { font-size: 54px; }
 .e4__corpo { flex: 1; min-height: 0; overflow: hidden; padding: 64px var(--margem) 30px; font-size: 116px; display: flex; flex-direction: column; justify-content: center; }
 .e4--com-img .e4__corpo { font-size: 70px; padding-top: 40px; }
+.e4--com-img .e4__apoio { font-size: max(0.4em, 30px); }
 .ficha { position: relative; background: var(--papel); color: var(--navy); border-radius: 10px; padding: 0.42em 0.5em 0.46em; transform: rotate(-1.4deg); box-shadow: 0 30px 50px -24px rgba(0,0,0,0.7); border-top: 0.11em solid var(--vermelho); }
 .ficha::after { content: ""; position: absolute; right: 0; bottom: 0; width: 0.62em; height: 0.62em; background: linear-gradient(315deg, var(--navy) 50%, var(--papel-3) 50%); border-radius: 0 0 10px 0; }
 .ficha__fita { position: absolute; left: 50%; top: -0.34em; width: 2.2em; height: 0.5em; transform: translateX(-50%) rotate(2deg); background: rgba(241, 194, 50, 0.85); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }

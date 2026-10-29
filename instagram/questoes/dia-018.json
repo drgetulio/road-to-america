@@ -1,0 +1,94 @@
+{
+  "dia": 18,
+  "data": "2026-11-19",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Gravidez ectópica",
+  "conceito": "Ectopic pregnancy: hCG above the discriminatory zone with an empty uterus, methotrexate if stable",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-20",
+  "tom": null,
+  "gancho": "Remédio ou centro cirúrgico? Hoje a *plaquinha* decide",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-018.png",
+    "cena": "O garçom do rodízio está diante de uma mesa tranquila com dois espetos: um de frasquinhos de remédio e uma seringa grande de brinquedo, outro de instrumentos cirúrgicos de brinquedo. A plaquinha verde e vermelha está de lado, sem escolha ainda, e na parede há um quadro com cinco luzinhas apagadas.",
+    "foco": "50% 35%",
+    "alt": "Remédio ou centro cirúrgico? Hoje a plaquinha decide"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-018-macete.png",
+    "cena": "Callback do rodízio: as cinco luzinhas do quadro acenderam em verde (estável, sem rotura, hCG abaixo de 5 mil, massa pequena, sem batimento). O garçom vira a plaquinha para o verde diante do espeto do remédio, e o espeto cirúrgico fica de prontidão num carrinho perto da cozinha.",
+    "alt": "Cinco luzes verdes, remédio na mesa"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has pelvic pain and spotting 7 weeks after her last period. Vital signs and laboratory studies are normal. β-hCG is 4,100 mIU/mL. Transvaginal ultrasound shows an empty uterus and a 2.5-cm adnexal mass with a yolk sac, no cardiac activity, and no free fluid. She prefers to avoid surgery.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Repeat β-hCG in 48 hours",
+        "quiz": "Repetir hCG em 48 h"
+      },
+      "B": {
+        "texto": "Laparoscopic salpingectomy",
+        "quiz": "Salpingectomia"
+      },
+      "C": {
+        "texto": "Intramuscular methotrexate",
+        "quiz": "Metotrexato IM"
+      },
+      "D": {
+        "texto": "Dilation and curettage",
+        "quiz": "Curetagem"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Cinco luzes verdes, remédio na mesa",
+    "certa": [
+      "Útero vazio com beta-hCG acima da zona discriminatória e massa anexial com saco vitelino confirmam gravidez ectópica tubária. Ela está estável, sem rotura, com hCG abaixo de 5.000, massa menor que 3,5 cm, sem batimento cardíaco embrionário e prefere evitar cirurgia, então é candidata ao metotrexato intramuscular com dosagens seriadas de hCG. O metotrexato é um antagonista do folato que interrompe a divisão do trofoblasto."
+    ],
+    "termos": [
+      "ectopic pregnancy",
+      "discriminatory zone",
+      "methotrexate",
+      "beta-hCG"
+    ],
+    "erradas": {
+      "A": "Repetir o hCG serve para a gravidez de localização desconhecida, e aqui o ultrassom já mostrou a ectópica.",
+      "B": "A cirurgia é a escolha na instabilidade, na rotura ou quando o metotrexato é contraindicado, e ela prefere evitá-la.",
+      "D": "A curetagem procura tecido trofoblástico no útero, mas o útero está vazio e a gestação está na tuba."
+    },
+    "macete": {
+      "frase": "Plaquinha verde para o metotrexato quando a mesa está calma: paciente estável, sem rotura, hCG abaixo de 5 mil, massa abaixo de 3,5 cm e sem batimento. Qualquer luz vermelha, centro cirúrgico.",
+      "apoio": "Pegadinha de prova: O NBME muda um detalhe para tirar o metotrexato da mesa: batimento cardíaco embrionário, líquido livre com instabilidade, hCG muito alto ou contraindicação ao remédio levam à cirurgia.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na obstetrícia: gravidez ectópica numa paciente estável. Cada número da vinheta pesa na conduta.",
+    "palavras_chave": [
+      "pelvic pain",
+      "spotting",
+      "adnexal mass",
+      "transvaginal ultrasound"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Obstetricia",
+      "#Obstetrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Ectópica estável, sem batimento: e agora?"
+  },
+  "exemplo": false
+}

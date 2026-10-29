@@ -1,0 +1,105 @@
+{
+  "dia": 224,
+  "data": "2027-06-13",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Insolação (dia 100), Hemorragia subaracnoide (dia 191), Arterite de células gigantes (dia 219)",
+  "conceito": "Remix: Exertional heat stroke + Thunderclap headache + Giant cell arteritis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    100,
+    191,
+    219
+  ],
+  "explicacao_em": "2027-06-14",
+  "tom": null,
+  "gancho": "Onda de calor no plantão: *qual prescrição passa* no carimbo?",
+  "gancho_apoio": "Quatro planos, só um certo. Revisão de insolação, cefaleia em trovoada e arterite de células gigantes.",
+  "imagem": {
+    "arquivo": "dia-224.png",
+    "cena": "O toca-discos do Remix de Domingo num balcão de plantão, com três discos: um com um sol escaldante, um com um raio e um com uma montanha em forma de têmpora. Ao lado, quatro fichas de prescrição em branco.",
+    "foco": "50% 35%",
+    "alt": "Onda de calor no plantão: qual prescrição passa no carimbo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-224-macete.png",
+    "cena": "Callback: a agulha pousa no disco do sol; dele sai uma bolha de som com uma banheira cheia de gelo e, só depois, uma ambulância esperando com calma. Bolhas menores mostram um raio ao lado de uma agulha fina e um carrinho de comprimido à frente de um caminhão de microscópio.",
+    "foco": "50% 45%",
+    "alt": "Na insolação, esfria primeiro e transporta depois"
+  },
+  "questao": {
+    "vinheta": "During a summer heat wave, an emergency physician reviews four management plans written by an intern overnight. Only one plan follows current US guidelines.",
+    "pergunta": "Which plan is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Exertional heat stroke: cold-water immersion at once, then transport",
+        "quiz": "Insolação: gelo já",
+        "dia": 100
+      },
+      "B": {
+        "texto": "Thunderclap headache, normal CT at 12 hours: discharge home",
+        "quiz": "Trovoada: alta",
+        "dia": 191
+      },
+      "C": {
+        "texto": "Suspected giant cell arteritis with visual symptoms: steroids after biopsy",
+        "quiz": "ACG: biópsia antes",
+        "dia": 219
+      },
+      "D": {
+        "texto": "Suspected bacterial meningitis: antibiotics only after head CT",
+        "quiz": "Meningite: TC antes"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Na insolação, *esfria primeiro e transporta depois*",
+    "certa": [
+      "Dia 100: no *exertional heat stroke* (alteração mental depois de esforço, com temperatura retal acima de 40°C), a *cold-water immersion* começa no local, antes do transporte, até a temperatura chegar perto de 39°C. Cada minuto acima de 40°C aumenta a lesão de órgãos, e antitérmico não funciona. *Cool first, transport second*."
+    ],
+    "termos": [
+      "exertional heat stroke",
+      "cold-water immersion",
+      "cool first, transport second",
+      "thunderclap headache: LP or CTA"
+    ],
+    "erradas": {
+      "B": "Dia 191: cefaleia em trovoada com tomografia normal feita depois de 6 horas pede punção lombar (xantocromia) ou angiotomografia, nunca alta direta.",
+      "C": "Dia 219: na suspeita de arterite de células gigantes, ainda mais com sintoma visual, o corticoide entra antes da biópsia.",
+      "D": "Na suspeita de meningite bacteriana, hemocultura e antibiótico vêm antes da tomografia; esperar a imagem atrasa o tratamento."
+    },
+    "macete": {
+      "frase": "*Gelo na hora, ambulância depois*; *pílula na frente, microscópio atrás*",
+      "apoio": "No toca-discos do plantão, o disco do dia 100 toca primeiro a banheira de gelo e só depois a sirene. O disco do dia 191 lembra: foto limpa, vá olhar a água (punção lombar). E o do dia 219 repete o refrão da pílula na frente.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Onda de calor, plantão lotado e um interno que escreveu quatro planos. Só um segue as diretrizes americanas. Revisão dos dias 100, 191 e 219, com um intruso.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Emergencia",
+      "#EmergencyMedicine",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual dos quatro planos está certo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

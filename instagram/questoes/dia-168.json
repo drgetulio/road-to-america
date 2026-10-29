@@ -1,0 +1,93 @@
+{
+  "dia": 168,
+  "data": "2027-04-18",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Neisseria meningitidis (dia 92), Translocação robertsoniana (dia 136), Legionella (dia 162)",
+  "conceito": "Remix: Neisseria meningitidis + Robertsonian translocation + Legionella pneumophila",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    92,
+    136,
+    162
+  ],
+  "explicacao_em": "2027-04-19",
+  "tom": null,
+  "gancho": "Remix de domingo: três cartões e um *penetra* na festa",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-168.png",
+    "cena": "Toca-discos com três discos de rótulos coloridos (dois grãos de café lado a lado, dois palitinhos colados pela ponta e um ar-condicionado pingando) e um quarto disco penetra de chapéu de festa.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos de rótulos coloridos (dois grãos de café lado a lado, dois palitinhos colados pela ponta e um ar-condicionado pingando) e um quarto disco penetra de cha"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-168-macete.png",
+    "cena": "O disco dos grãos de café toca e acende verde, com faíscas de alerta em volta (endotoxina, choque). Os discos dos palitinhos e do ar-condicionado ganham um risco vermelho, e o penetra é acompanhado até a saída por um cone de trânsito.",
+    "alt": "Meningococo: o LOS dispara o choque"
+  },
+  "questao": {
+    "vinheta": "A student reviews four flashcards: a meningococcal sepsis case, a family with recurrent trisomy 21, a pneumonia after a hotel stay, and one extra card. Only one statement is accurate.",
+    "pergunta": "Which flashcard is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Listeria monocytogenes: gram-negative rod",
+        "quiz": "Listeria gram-neg."
+      },
+      "B": {
+        "texto": "Robertsonian translocation: fusion of two metacentric chromosomes",
+        "quiz": "Funde metacêntricos",
+        "dia": 136
+      },
+      "C": {
+        "texto": "Legionella pneumophila: spreads from person to person",
+        "quiz": "Legionella contagia",
+        "dia": 162
+      },
+      "D": {
+        "texto": "Neisseria meningitidis: lipooligosaccharide drives septic shock",
+        "quiz": "Meningo: LOS, choque",
+        "dia": 92
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Meningococo: o *LOS* dispara o choque",
+    "certa": [
+      "A *Neisseria meningitidis* tem *lipooligosaccharide* (LOS), uma endotoxina que dispara citocinas, coagulação intravascular disseminada e choque. Daí as petéquias que viram púrpura e, no extremo, a *Waterhouse-Friderichsen syndrome*, com hemorragia das adrenais."
+    ],
+    "termos": [
+      "lipooligosaccharide",
+      "Waterhouse-Friderichsen syndrome",
+      "Robertsonian translocation",
+      "acrocentric chromosomes"
+    ],
+    "erradas": {
+      "A": "Penetra: a *Listeria* é bacilo gram-positivo, com motilidade em cambalhota e crescimento na geladeira.",
+      "B": "Dia 136: a translocação robertsoniana junta dois cromossomos *acrocêntricos* (13, 14, 15, 21 e 22), e o portador equilibrado pode ter filhos com trissomia 21.",
+      "C": "Dia 162: a Legionella vem de água em aerossol (ar-condicionado, chuveiro, torre de resfriamento) e não passa de pessoa para pessoa."
+    },
+    "macete": {
+      "frase": "Meningococo tem *LOS*, a endotoxina do choque. Robertson cola as *pontas curtas* (acrocêntricos). Legionella mora na água, *não no aperto de mão*.",
+      "apoio": "No remix, o NBME troca uma palavra só (acrocêntrico por metacêntrico, gram-positivo por gram-negativo) para ver se você leu o cartão inteiro.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com três assuntos de Step 1 que já apareceram aqui (dias 92, 136 e 162) e um penetra. Só um cartão está certo do começo ao fim.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual cartão está certo?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

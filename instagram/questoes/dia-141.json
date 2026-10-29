@@ -1,0 +1,95 @@
+{
+  "dia": 141,
+  "data": "2027-03-22",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Doenças priônicas",
+  "conceito": "Prion disease: misfolded PrP beta-sheets, spongiform encephalopathy, rapid dementia with myoclonus",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-23",
+  "tom": null,
+  "gancho": "O Macrô ganhou um prato que *ninguém sabe* por onde começar",
+  "gancho_apoio": "Quatro meses de sintomas, um EEG que marca o compasso e um Macrô intrigado.",
+  "imagem": {
+    "arquivo": "dia-141.png",
+    "cena": "Na porta do boteco dos micróbios, o Macrô, de garfo na mão e guardanapo no pescoço, olha intrigado para um prato coberto por uma tampa de metal. Ele não sabe por onde começar.",
+    "foco": "50% 35%",
+    "alt": "Macrô de garfo na mão olha intrigado para um prato coberto por uma tampa de metal."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-141-macete.png",
+    "cena": "Callback: a tampa se levanta e mostra fitas de papel em espiral virando leques pregueados em efeito dominó, cada leque ensinando a fita vizinha a dobrar errado. O Macrô dá de ombros com o garfo vazio, e ao lado do prato há uma esponja cheia de furinhos.",
+    "foco": "50% 40%",
+    "alt": "A tampa se levanta: fitas em espiral viram leques em efeito dominó; Macrô dá de ombros ao lado de uma esponja furadinha."
+  },
+  "questao": {
+    "vinheta": "A 61-year-old woman has 4 months of rapidly progressive memory loss, gait ataxia and myoclonic jerks triggered by sudden noise. EEG shows periodic sharp-wave complexes, and cerebrospinal fluid 14-3-3 protein is elevated. Diffusion-weighted brain MRI shows cortical ribboning.",
+    "pergunta": "Which mechanism underlies this disease?",
+    "alternativas": {
+      "A": {
+        "texto": "Persistent defective measles virus infection",
+        "quiz": "Sarampo persistente"
+      },
+      "B": {
+        "texto": "JC virus infection of oligodendrocytes",
+        "quiz": "Vírus JC"
+      },
+      "C": {
+        "texto": "Hyperphosphorylated tau in neurofibrillary tangles",
+        "quiz": "Tau fosforilada"
+      },
+      "D": {
+        "texto": "Conversion of alpha-helical prion protein into beta-pleated sheets",
+        "quiz": "PrP vira folha beta"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Príon: *hélice alfa vira folha beta*",
+    "certa": [
+      "Declínio cognitivo rápido, mioclonia de sobressalto, complexos periódicos no EEG, proteína 14-3-3 no liquor e fita cortical na ressonância apontam para Creutzfeldt-Jakob. Nela, a PrPc, rica em hélices alfa, muda para a forma PrPsc, rica em folhas beta pregueadas, que resiste a proteases e converte as moléculas normais vizinhas. O resultado é a degeneração espongiforme: vacúolos na substância cinzenta, sem inflamação."
+    ],
+    "termos": [
+      "prion protein",
+      "beta-pleated sheet",
+      "spongiform encephalopathy",
+      "Creutzfeldt-Jakob disease"
+    ],
+    "erradas": {
+      "A": "O sarampo defeituoso persistente causa panencefalite esclerosante subaguda, em geral anos depois de sarampo na infância.",
+      "B": "O vírus JC infecta oligodendrócitos e causa leucoencefalopatia multifocal progressiva em imunossuprimidos, com lesões de substância branca.",
+      "C": "Tau hiperfosforilada em emaranhados neurofibrilares é achado da doença de Alzheimer, de evolução lenta, em anos."
+    },
+    "macete": {
+      "frase": "Príon é *origami mal dobrado*: a fita em espiral vira leque pregueado",
+      "apoio": "Na imagem, o leque amassado ensina as fitas vizinhas a virarem leque, uma por uma.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de Segunda: um quadro neurológico que avança em meses e um agente que intriga até o Macrô. Qual mecanismo explica?",
+    "palavras_chave": [
+      "rapidly progressive dementia",
+      "myoclonus",
+      "periodic sharp waves",
+      "14-3-3 protein"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Neurologia",
+      "#Neurology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Declínio rápido e mioclonia: qual mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

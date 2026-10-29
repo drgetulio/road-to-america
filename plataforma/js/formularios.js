@@ -83,6 +83,31 @@ export const FAIXAS_DIFICULDADE = Object.freeze({ facil: Object.freeze([17, 23])
    mesmos. O corte do formulário usa o Angoff em vigor (q.angoff, do painel quando há). */
 export const angoffMontagem = (q) => (Number.isFinite(q?.angoff_item) ? q.angoff_item : q?.angoff);
 
+/* ---------- pares inimigos (item.inimigos, CONTRATO-ITEM.md) ----------
+   Itens que testam o mesmo ponto ou que entregam a resposta um do outro não saem no
+   mesmo formulário, fixo ou personalizado (e, por consequência, nem no mesmo bloco).
+   O par vale nos dois sentidos: basta um dos itens listar o outro. Só contam os itens
+   presentes no pool. Devolve Map id -> Set(ids inimigos). */
+export function mapaInimigos(pool) {
+  const ids = new Set((pool || []).map((q) => q?.id).filter(Boolean));
+  const m = new Map();
+  const liga = (a, b) => { if (a === b || !ids.has(a) || !ids.has(b)) return; (m.get(a) || m.set(a, new Set()).get(a)).add(b); (m.get(b) || m.set(b, new Set()).get(b)).add(a); };
+  for (const q of pool || []) for (const x of q?.inimigos || []) liga(q.id, x);
+  return m;
+}
+/* Pares inimigos dentro de uma lista de ids: [[a, b], ...] com a < b */
+export function paresInimigosEm(ids, mapa) {
+  const dentro = new Set(ids);
+  const out = [];
+  for (const a of dentro) for (const b of mapa.get(a) || []) if (a < b && dentro.has(b)) out.push([a, b]);
+  return out.sort((x, y) => (x[0] + x[1] < y[0] + y[1] ? -1 : 1));
+}
+/* Menor número de itens por bloco aceito num formulário com o número oficial de blocos:
+   o formato oficial é "até 20 itens por bloco" (318 em 16 blocos já tem dois de 19). Um
+   formulário fixo pode ficar com menos itens que o máximo quando pares inimigos impedem
+   usar todo o banco (por exemplo, três itens que se entregam e só dois formulários). */
+export const MIN_ITENS_POR_BLOCO_COMPLETO = 19;
+
 /* Tamanhos dos blocos: os primeiros ficam com um item a mais quando a divisão não
    é exata (318 em 16 blocos: 14 de 20 e 2 de 19). */
 export function tamanhosBlocos(total, blocos, max = TEMPOS_OFICIAIS.itens_por_bloco_max) {
@@ -239,8 +264,12 @@ export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo"
   const restantes = Object.fromEntries(Object.entries(grupos).map(([kk, v]) => [kk, v.slice()]));
   const pegos = Object.fromEntries(Object.keys(cotas).map((kk) => [kk, 0]));
   const escolhidos = [];
+  /* pares inimigos: item com inimigo já escolhido só entra se não houver outro */
+  const inim = mapaInimigos(pool);
+  const noForm = new Set();
+  const conflitos = (q, fora = null) => { let c = 0; for (const x of inim.get(q.id) || []) if (x !== fora && noForm.has(x)) c++; return c; };
   const penalidade = (q) => {
-    let p = 0;
+    let p = conflitos(q) ? 1e8 : 0;
     for (const d of secundarias) {
       const v = q[d] || "_sem";
       const t = (alvos[d][v] || 0) * N;
@@ -280,20 +309,53 @@ export function montarFormulario(banco, { step, tipo = "completo", modo = "fixo"
     }
     const q = cand.splice(melhor, 1)[0];
     escolhidos.push(q);
+    noForm.add(q.id);
     pegos[estrato]++;
     for (const d of secundarias) { const v = q[d] || "_sem"; contagem[d][v] = (contagem[d][v] || 0) + 1; }
     for (const m of multi) for (const r of rotulos(q, m)) m.cont[r] = (m.cont[r] || 0) + 1;
   }
   /* completa com o que sobrou se as cotas não fecharam (banco desequilibrado) */
   if (escolhidos.length < N) {
-    const usados = new Set(escolhidos.map((q) => q.id));
-    const resto = pool.filter((q) => !usados.has(q.id)).sort((a, b) => penalidade(a) - penalidade(b) || chaveAleatoria.get(a.id) - chaveAleatoria.get(b.id));
-    escolhidos.push(...resto.slice(0, N - escolhidos.length));
+    const resto = pool.filter((q) => !noForm.has(q.id)).sort((a, b) => penalidade(a) - penalidade(b) || chaveAleatoria.get(a.id) - chaveAleatoria.get(b.id));
+    /* primeiro os que não conflitam com o que já entrou; os que conflitam, só se faltar */
+    const adiados = [];
+    for (const q of resto) {
+      if (escolhidos.length >= N) break;
+      if (conflitos(q)) { adiados.push(q); continue; }
+      escolhidos.push(q); noForm.add(q.id);
+    }
+    for (const q of adiados) { if (escolhidos.length >= N) break; escolhidos.push(q); noForm.add(q.id); }
   }
 
-  const reparo = repararFaixas(escolhidos, pool, { step, principal, N, prioridade: (q) => (modo === "personalizado" && vistasSet.has(q.id) ? 2 : 0) + (evitarSet.has(q.id) ? 1 : 0) + chaveAleatoria.get(q.id) * 1e-3 });
-  if (apenasItens) return { itens: escolhidos, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas, dim };
-  return formularioDeItens(escolhidos, { step, tipo, modo, semente, codigo, nome, pool, dim, random, chaveAleatoria, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas });
+  const reparo = repararFaixas(escolhidos, pool, { step, principal, N, inim, prioridade: (q) => (modo === "personalizado" && vistasSet.has(q.id) ? 2 : 0) + (evitarSet.has(q.id) ? 1 : 0) + chaveAleatoria.get(q.id) * 1e-3 });
+  const trocasInimigos = resolverInimigos(escolhidos, pool, inim, principal, (q) => (modo === "personalizado" && vistasSet.has(q.id) ? 2 : 0) + (evitarSet.has(q.id) ? 1 : 0) + chaveAleatoria.get(q.id) * 1e-3);
+  if (apenasItens) return { itens: escolhidos, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas + trocasInimigos, dim };
+  return formularioDeItens(escolhidos, { step, tipo, modo, semente, codigo, nome, pool, dim, random, chaveAleatoria, fora: [...new Set([...fora, ...reparo.pendentes])].sort(), trocas: reparo.trocas + trocasInimigos });
+}
+
+/* Troca, no lugar, o segundo item de cada par inimigo que sobrou na escolha por um item
+   fora do formulário que não conflite com nenhum escolhido: primeiro do mesmo sistema,
+   da mesma dificuldade e da mesma competência; depois só do mesmo sistema (as cotas de
+   sistema não mudam); por fim de qualquer sistema. Sem candidato, o par fica (banco
+   pequeno demais) e aparece em verificarFormulario. Devolve o número de trocas. */
+function resolverInimigos(escolhidos, pool, inim, principal, prioridade) {
+  if (!inim.size) return 0;
+  const dentro = new Set(escolhidos.map((q) => q.id));
+  const livre = (q, sai) => ![...(inim.get(q.id) || [])].some((x) => x !== sai && dentro.has(x));
+  let trocas = 0;
+  for (let i = 0; i < escolhidos.length; i++) {
+    const sai = escolhidos[i];
+    if (livre(sai, null)) continue;
+    const fora = pool.filter((q) => !dentro.has(q.id) && livre(q, sai.id)).sort((a, b) => prioridade(a) - prioridade(b));
+    const entra = fora.find((q) => q[principal] === sai[principal] && q.dificuldade === sai.dificuldade && q.competencia === sai.competencia)
+      || fora.find((q) => q[principal] === sai[principal] && q.dificuldade === sai.dificuldade)
+      || fora.find((q) => q[principal] === sai[principal]) || fora[0];
+    if (!entra) continue;
+    dentro.delete(sai.id); dentro.add(entra.id);
+    escolhidos[i] = entra;
+    trocas++;
+  }
+  return trocas;
 }
 
 /* Monta o objeto do formulário a partir dos itens escolhidos: blocos equilibrados,
@@ -339,7 +401,7 @@ function formularioDeItens(escolhidos, { step, tipo, modo, semente, codigo, nome
    rótulo único com faixa exigida (competência) e para as disciplinas contadas com
    todos os rótulos (multirrótulo). Altera "escolhidos" no lugar.
    Devolve { trocas, pendentes: [chaves que continuaram fora] }. */
-function repararFaixas(escolhidos, pool, { step, principal, N, prioridade }) {
+function repararFaixas(escolhidos, pool, { step, principal, N, prioridade, inim = new Map() }) {
   const limites = (d) => Object.fromEntries(TAXONOMIA[step][d].chaves.filter((c) => c.faixa).map((c) => [c.chave, [Math.ceil((c.faixa[0] / 100) * N - 1e-9), Math.floor((c.faixa[1] / 100) * N + 1e-9)]]));
   const restricoes = [];
   for (const d of SECUNDARIAS[step]) if (TAXONOMIA[step]?.[d]?.exigir_faixa) restricoes.push({ d, rot: (q) => [q[d]], lim: limites(d), cont: {} });
@@ -371,7 +433,9 @@ function repararFaixas(escolhidos, pool, { step, principal, N, prioridade }) {
     const candEntra = pool.filter((q) => !usados.has(q.id) && (falta ? tem(q) : !tem(q))).sort((a, b) => prioridade(a) - prioridade(b));
     let feito = false;
     for (const entra of candEntra) {
-      const i = escolhidos.findIndex((sai) => sai[principal] === entra[principal] && (falta ? !tem(sai) : tem(sai)) && aceita(sai, entra));
+      /* a troca não pode juntar um par inimigo */
+      const semConflito = (sai) => ![...(inim.get(entra.id) || [])].some((x) => x !== sai.id && usados.has(x));
+      const i = escolhidos.findIndex((sai) => sai[principal] === entra[principal] && (falta ? !tem(sai) : tem(sai)) && aceita(sai, entra) && semConflito(sai));
       if (i < 0) continue;
       const sai = escolhidos[i];
       for (const rr of restricoes) { for (const kk of rr.rot(sai)) rr.cont[kk]--; for (const kk of rr.rot(entra)) rr.cont[kk] = (rr.cont[kk] || 0) + 1; }
@@ -401,7 +465,10 @@ function restricoesDoStep(step) {
     if (!Object.keys(faixas).length || (!tax.exigir_faixa && !campo)) continue;
     out.push({ d, exigida: !!tax.exigir_faixa, peso: tax.exigir_faixa ? 1 : 0.6, faixas, rot: campo ? (q) => [...new Set([q[d], ...(q[campo] || [])].filter(Boolean))] : (q) => (q[d] ? [q[d]] : []) });
   }
-  out.push({ d: "dificuldade", peso: 0.6, faixas: FAIXAS_DIFICULDADE, rot: (q) => (q.dificuldade ? [q.dificuldade] : []) });
+  /* dificuldade: A e B com a mesma composição (formulários paralelos), em vez de puxar o A
+     para a meta do projeto e deixar o B com o que sobra; a meta 20/55/25% continua no
+     relatório como aviso (verificarFormulario) */
+  out.push({ d: "dificuldade", paralela: true, peso: 0.6, faixas: FAIXAS_DIFICULDADE, rot: (q) => (q.dificuldade ? [q.dificuldade] : []) });
   return out;
 }
 /* Penalidade de uma chave: fora da faixa oficial pesa 1000 vezes mais que ficar na
@@ -421,11 +488,14 @@ function penalidadeFaixa(c, n, faixa, soDuro = false) {
    local a partir da escolha gulosa: trocas de itens entre os grupos que diminuem a soma
    das penalidades de faixa dos dois formulários e a diferença de Angoff médio entre
    eles; as penalidades do A pesam 100 vezes as do B. Determinística pela semente do A.
-   Devolve { A, B, reserva }. */
+   Pares inimigos (mapaInimigos) não podem ficar no mesmo formulário: uma troca nunca
+   junta um par no A, e cada par no B custa mais que qualquer faixa. A reserva não tem
+   restrição. Devolve { A, B, reserva, conflitos: { A: [[a, b]], B: [[a, b]] } }. */
 /* O A tem prioridade: quando o banco não comporta dois formulários dentro das faixas,
    o B (completo ou parcial) cede, e o A continua dentro delas */
 const PESO_GRUPO = [100, 1];
-export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = null, inicialB = null } = {}) {
+const PESO_INIMIGO = [1e12, 1e8];
+export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = null, inicialB = null, inim = mapaInimigos(pool) } = {}) {
   const random = rng(semente ^ 0x5bd1e995);
   const restr = restricoesDoStep(step);
   const grupo = new Map();
@@ -439,12 +509,23 @@ export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = nul
   for (const g of [0, 1]) for (const q of membros[g]) { soma[g] += angoffMontagem(q); restr.forEach((r, i) => { for (const k of r.rot(q)) cont[g][i][k] = (cont[g][i][k] || 0) + 1; }); }
   const n = [membros[0].length, membros[1].length];
   const custoAngoff = () => (n[0] && n[1] ? 1e4 * (soma[0] / n[0] - soma[1] / n[1]) ** 2 : 0);
+  /* formulários paralelos: diferença entre A e B na proporção de cada chave das dimensões
+     "paralelas" (dificuldade); 10 pontos percentuais de diferença custam 1000 */
+  const iPar = restr.map((r, i) => (r.paralela ? i : -1)).filter((i) => i >= 0);
+  const custoParalelo = () => {
+    if (!n[0] || !n[1]) return 0;
+    let c = 0;
+    for (const i of iPar) for (const k of Object.keys(restr[i].faixas)) c += 1e5 * ((cont[0][i][k] || 0) / n[0] - (cont[1][i][k] || 0) / n[1]) ** 2;
+    return c;
+  };
+  /* inimigos de q no grupo g, sem contar "fora" (o item que sai na troca) */
+  const inimigosEm = (q, g, fora = null) => { let c = 0; for (const x of inim.get(q.id) || []) if (x !== fora && grupo.get(x) === g) c++; return c; };
   /* variação da penalidade do grupo g quando sai x e entra y (qualquer um pode ser null);
      soDuro: só a parte fora das faixas oficiais exigidas (sistema e competência) */
   const delta = (g, x, y, soDuro = false) => {
     let d = 0;
     restr.forEach((r, i) => {
-      if (soDuro && !r.exigida) return;
+      if ((soDuro && !r.exigida) || r.paralela) return;
       const mud = {};
       if (x) for (const k of r.rot(x)) mud[k] = (mud[k] || 0) - 1;
       if (y) for (const k of r.rot(y)) mud[k] = (mud[k] || 0) + 1;
@@ -456,6 +537,8 @@ export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = nul
     });
     return d;
   };
+  /* variação dos pares inimigos no grupo g quando sai x e entra y */
+  const deltaInimigos = (g, x, y) => (g > 1 ? 0 : PESO_INIMIGO[g] * ((y ? inimigosEm(y, g, x?.id) : 0) - (x ? inimigosEm(x, g) : 0)));
   const aplicar = (g, x, y) => {
     restr.forEach((r, i) => { for (const k of r.rot(x)) cont[g][i][k]--; for (const k of r.rot(y)) cont[g][i][k] = (cont[g][i][k] || 0) + 1; });
     soma[g] += angoffMontagem(y) - angoffMontagem(x);
@@ -471,21 +554,47 @@ export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = nul
     /* o A nunca sai mais das faixas oficiais exigidas para melhorar o B */
     const durA = g1 === 0 ? delta(0, x, y, true) : g2 === 0 ? delta(0, y, x, true) : 0;
     if (durA > 1e-9) continue;
-    const ang0 = custoAngoff();
-    let d = delta(g1, x, y) + (g2 < 2 ? delta(g2, y, x) : 0);
-    soma[g1] += angoffMontagem(y) - angoffMontagem(x);
-    if (g2 < 2) soma[g2] += angoffMontagem(x) - angoffMontagem(y);
-    d += custoAngoff() - ang0;
-    soma[g1] -= angoffMontagem(y) - angoffMontagem(x);
-    if (g2 < 2) soma[g2] -= angoffMontagem(x) - angoffMontagem(y);
+    const dIni = deltaInimigos(g1, x, y) + deltaInimigos(g2, y, x);
+    const glob0 = custoAngoff() + custoParalelo();
+    let d = dIni + delta(g1, x, y) + (g2 < 2 ? delta(g2, y, x) : 0);
+    aplicar(g1, x, y);
+    if (g2 < 2) aplicar(g2, y, x);
+    d += custoAngoff() + custoParalelo() - glob0;
     if (d < -1e-9) {
-      aplicar(g1, x, y);
-      if (g2 < 2) aplicar(g2, y, x);
       membros[g1][i1] = y; membros[g2][i2] = x;
+      grupo.set(y.id, g1); grupo.set(x.id, g2);
+    } else {
+      aplicar(g1, y, x);
+      if (g2 < 2) aplicar(g2, x, y);
+    }
+  }
+  /* pares que sobraram: tenta desfazer cada um com qualquer troca que não junte outro par
+     e não tire o A das faixas exigidas (varredura completa, determinística) */
+  for (const g of [0, 1]) {
+    for (let volta = 0; volta < 3; volta++) {
+      let mudou = false;
+      for (let i1 = 0; i1 < membros[g].length; i1++) {
+        const x = membros[g][i1];
+        if (!inimigosEm(x, g)) continue;
+        let feito = false;
+        for (const g2 of [2, 1 - g]) {
+          for (let i2 = 0; i2 < membros[g2].length && !feito; i2++) {
+            const y = membros[g2][i2];
+            if (inimigosEm(y, g, x.id) || (g2 < 2 && inimigosEm(x, g2, y.id))) continue;
+            if ((g === 0 && delta(0, x, y, true) > 1e-9) || (g2 === 0 && delta(0, y, x, true) > 1e-9)) continue;
+            aplicar(g, x, y); if (g2 < 2) aplicar(g2, y, x);
+            membros[g][i1] = y; membros[g2][i2] = x; grupo.set(y.id, g); grupo.set(x.id, g2);
+            feito = mudou = true;
+          }
+          if (feito) break;
+        }
+      }
+      if (!mudou) break;
     }
   }
   const ordem = (l) => l.slice().sort((a, b) => (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
-  return { A: ordem(membros[0]), B: ordem(membros[1]), reserva: ordem(membros[2]) };
+  const conflitos = { A: paresInimigosEm(membros[0].map((q) => q.id), inim), B: paresInimigosEm(membros[1].map((q) => q.id), inim) };
+  return { A: ordem(membros[0]), B: ordem(membros[1]), reserva: ordem(membros[2]), conflitos };
 }
 
 /* Formulário fixo pelo código (S1-A, S1-B, CK-A, CK-B). A e B saem da mesma partição
@@ -493,15 +602,17 @@ export function montarParticao(pool, step, nA, nB, { semente = 1, inicialA = nul
    quando se pede o B. Com banco pequeno demais para separar (menos de um bloco
    sobrando depois do A), o B repete itens, evitando os do A até onde der. */
 /* Formulário a partir de blocos gravados (ordem e composição fixas). Devolve null quando
-   a gravação não serve para o banco atual (item ausente, inativo ou repetido). */
+   a gravação não serve para o banco atual (item ausente, inativo ou repetido, par
+   inimigo no mesmo formulário, ou tamanho fora do formato). */
 function formularioGravado(banco, step, f, tipo, pool) {
   const g = banco?.formularios_fixos?.[step]?.[f.codigo];
   if (!g || tipo !== "completo" || (g.tipo && g.tipo !== "completo")) return null;
   const porId = new Map(pool.map((q) => [q.id, q]));
   const ids = g.blocos.flat();
   if (new Set(ids).size !== ids.length || ids.some((id) => !porId.has(id))) return null;
+  if (paresInimigosEm(ids, mapaInimigos(pool)).length) return null;
   const t = TIPOS_FORMULARIO[tipo];
-  if (!g.parcial && (ids.length !== t[step].itens || g.blocos.length !== t[step].blocos)) return null;
+  if (!g.parcial && (ids.length > t[step].itens || ids.length < t[step].blocos * MIN_ITENS_POR_BLOCO_COMPLETO || g.blocos.length !== t[step].blocos)) return null;
   const assinatura = assinaturaBanco(pool);
   const blocos = g.blocos.map((b) => b.slice());
   const pausa = g.parcial ? pausaProporcional(t.pausa_ms, blocos.length, t[step].blocos) : t.pausa_ms;
@@ -520,7 +631,8 @@ function formularioGravado(banco, step, f, tipo, pool) {
     assinatura_banco: assinatura,
     fora_da_faixa: [],
     trocas_de_reparo: 0,
-    origem_montagem: "gravado"
+    origem_montagem: "gravado",
+    omitidos_por_inimigos: g.parcial ? 0 : t[step].itens - ids.length
   };
   form.hash = hashTexto(form.blocos.map((b) => b.join(",")).join("|"));
   return form;
@@ -549,7 +661,27 @@ export function montarFormularioFixo(banco, step, codigo, tipo = "completo", { i
   const idsA = new Set(selA.itens.map((q) => q.id));
   const restoItens = pool.filter((q) => !idsA.has(q.id));
   const inicialB = parcialB ? restoItens : montarFormulario({ steps: { [step]: restoItens } }, { step, tipo, modo: "fixo", semente: fB.semente, codigo: fB.codigo, apenasItens: true }).itens;
-  const part = montarParticao(pool, step, N, nB, { semente: fA.semente, inicialA: selA.itens, inicialB });
+  const inim = mapaInimigos(pool);
+  const part = montarParticao(pool, step, N, nB, { semente: fA.semente, inicialA: selA.itens, inicialB, inim });
+  /* par inimigo que não coube em formulários diferentes (por exemplo, três itens que se
+     entregam, com só dois formulários e nenhum item sobrando): um item do par sai do B
+     para a reserva. Sai primeiro o item público, depois o que tem mais inimigos no B e,
+     no empate, o de id maior. O B continua no formato oficial enquanto cada bloco tiver
+     pelo menos MIN_ITENS_POR_BLOCO_COMPLETO itens. */
+  const omitidosB = [];
+  for (let guarda = 0; guarda < 1000; guarda++) {
+    const ids = part.B.map((q) => q.id);
+    const pares = paresInimigosEm(ids, inim);
+    if (!pares.length) break;
+    const noB = new Set(ids);
+    const grau = (id) => [...(inim.get(id) || [])].filter((x) => noB.has(x)).length;
+    const porIdB = new Map(part.B.map((q) => [q.id, q]));
+    const [a, b] = pares[0];
+    const sai = [a, b].sort((x, y) => (porIdB.get(y).legado ? 1 : 0) - (porIdB.get(x).legado ? 1 : 0) || grau(y) - grau(x) || (y > x ? 1 : -1))[0];
+    part.B = part.B.filter((q) => q.id !== sai);
+    part.reserva.push(porIdB.get(sai));
+    omitidosB.push(sai);
+  }
   const f = i === 0 ? fA : fB;
   const itens = i === 0 ? part.A : part.B;
   const random = rng(f.semente);
@@ -560,7 +692,8 @@ export function montarFormularioFixo(banco, step, codigo, tipo = "completo", { i
     step, tipo, modo: "fixo", semente: f.semente, codigo: f.codigo, nome: nomeDe(f) + (parcial ? ", parcial" : ""), pool, dim: dimB, random, chaveAleatoria, parcial,
     motivoParcial: parcial ? "Formulário parcial: depois do formulário A sobram " + itens.length + " itens deste Step, menos que os " + N + " do formato, e nenhum item do A é repetido." : ""
   });
-  form.particao = { codigos: lista.map((x) => x.codigo), itens_a: N, itens_b: nB, reserva: part.reserva.length };
+  form.particao = { codigos: lista.map((x) => x.codigo), itens_a: N, itens_b: part.B.length, reserva: part.reserva.length, omitidos_do_b_por_inimigos: omitidosB, pares_inimigos_no_a: part.conflitos.A.length };
+  form.omitidos_por_inimigos = i === 1 && !parcial ? N - itens.length : 0;
   form.origem_montagem = "calculado";
   return form;
 }
@@ -706,8 +839,15 @@ export function verificarFormulario(form, porId) {
   const total = ids.length;
   if (form.blocos.some((b) => b.length > TEMPOS_OFICIAIS.itens_por_bloco_max)) problemas.push("Bloco com mais de 20 itens.");
   const inteiro = !form.reduzido && !form.parcial;
-  if (inteiro && total !== form.oficial.itens) problemas.push("Total diferente do formato: " + total + " de " + form.oficial.itens + ".");
+  /* formato oficial: número de blocos oficial, até 20 itens por bloco e até o total do
+     formato; com pares inimigos, o formulário pode ficar com menos itens, desde que cada
+     bloco tenha pelo menos MIN_ITENS_POR_BLOCO_COMPLETO */
+  if (inteiro && (total > form.oficial.itens || total < form.oficial.blocos * MIN_ITENS_POR_BLOCO_COMPLETO)) problemas.push("Total diferente do formato: " + total + " de " + form.oficial.itens + ".");
+  else if (inteiro && total < form.oficial.itens) avisos.push(total + " itens, " + (form.oficial.itens - total) + " abaixo do máximo do formato: pares inimigos impediram usar todo o banco neste formulário (blocos de " + MIN_ITENS_POR_BLOCO_COMPLETO + " e 20 itens).");
   if (inteiro && form.blocos.length !== form.oficial.blocos) problemas.push("Número de blocos diferente do formato.");
+  /* pares inimigos no mesmo formulário (contam os dois sentidos do campo inimigos) */
+  const paresNoForm = paresInimigosEm(ids, mapaInimigos(ids.map(get).filter(Boolean)));
+  if (paresNoForm.length) problemas.push("Pares inimigos no mesmo formulário: " + paresNoForm.map((p) => p.join(" e ")).join("; ") + ".");
   if (form.parcial) avisos.push(form.motivo_parcial || "Formulário parcial.");
   const blocos = form.blocos.map((b, i) => {
     const qs = b.map(get).filter(Boolean);
@@ -759,7 +899,7 @@ export function verificarFormulario(form, porId) {
     ok: problemas.length === 0, total, blocos,
     equilibrio: { angoff_medio: mg, dp_entre_blocos: dpb, amplitude: medias.length ? Math.max(...medias) - Math.min(...medias) : 0 },
     corte: { angoff_medio: corte, origem: doPainel === validos.length && validos.length ? "painel" : doPainel ? "misto" : "provisorio", itens_com_painel: doPainel },
-    dimensoes, problemas, avisos
+    dimensoes, problemas, avisos, pares_inimigos: paresNoForm
   };
 }
 

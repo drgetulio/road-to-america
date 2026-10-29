@@ -1,0 +1,95 @@
+{
+  "dia": 51,
+  "data": "2026-12-22",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Gota",
+  "conceito": "Gout: needle-shaped negatively birefringent crystals",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-23",
+  "gancho": "Agulhas amarelas ou paralelepípedos azuis: quem está na articulação?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um microscópio de luz polarizada desenhado como uma caixinha de costura: de um lado agulhas, do outro pequenos paralelepípedos, e um filtro de duas cores (amarelo e azul) ainda desligado.",
+    "foco": "50% 35%",
+    "alt": "Um microscópio de luz polarizada desenhado como uma caixinha de costura: de um lado agulhas, do outro pequenos paralelepípedos, e um filtro de duas cores (amarelo e azul) ainda desligado.",
+    "arquivo": "dia-051.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o filtro acende e as agulhas deitadas em paralelo à flecha brilham amarelas; os paralelepípedos, do outro lado, brilham azuis e são empurrados para fora do foco com uma placa de desvio.",
+    "alt": "Agulha amarela em paralelo: gota",
+    "arquivo": "dia-051-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man wakes with severe pain, swelling, and redness of the right first metatarsophalangeal joint. He takes hydrochlorothiazide. Temperature is 37.8 C. Synovial fluid shows 18,000 leukocytes/mm3 and a negative Gram stain. Polarized microscopy shows needle-shaped crystals that are yellow when parallel to the compensator axis.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Septic arthritis",
+        "quiz": "Septic arthritis"
+      },
+      "B": {
+        "texto": "Calcium pyrophosphate deposition disease",
+        "quiz": "CPPD (pseudogout)"
+      },
+      "C": {
+        "texto": "Gout",
+        "quiz": "Gout"
+      },
+      "D": {
+        "texto": "Reactive arthritis",
+        "quiz": "Reactive arthritis"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Agulha *amarela em paralelo*: gota",
+    "certa": [
+      "Cristais em agulha, com *negative birefringence* (amarelos quando paralelos ao eixo do compensador), são de urato monossódico: *gout*. A primeira metatarsofalangeana (podagra) é o local clássico, e a hidroclorotiazida reduz a excreção renal de ácido úrico. O líquido inflamatório com Gram negativo combina com crise de gota, embora a cultura ainda seja enviada."
+    ],
+    "termos": [
+      "gout",
+      "negatively birefringent crystals",
+      "monosodium urate",
+      "podagra"
+    ],
+    "erradas": {
+      "A": "Artrite séptica costuma ter mais de 50 mil leucócitos, Gram ou cultura positivos e nenhum cristal que explique o quadro.",
+      "B": "Na pseudogota os cristais de pirofosfato de cálcio são romboides, com birrefringência positiva (azuis em paralelo), e o joelho é o alvo mais comum.",
+      "D": "Artrite reativa é oligoartrite após infecção intestinal ou urogenital, sem cristais no líquido."
+    },
+    "macete": {
+      "frase": "Gota: *agulha amarela*. Pseudogota: *paralelepípedo azul*",
+      "apoio": "Pegadinha de prova: O NBME descreve a cor sob o compensador em vez de dizer \"birrefringência negativa\"; amarelo em paralelo é gota, azul em paralelo é pseudogota.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor intensa no dedão de madrugada, diurético na receita e um líquido articular que vai para o microscópio de luz polarizada. A cor do cristal decide.",
+    "palavras_chave": [
+      "first MTP joint",
+      "hydrochlorothiazide",
+      "synovial fluid",
+      "polarized microscopy"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Reumatologia",
+      "#Rheumatology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o diagnóstico mais provável?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

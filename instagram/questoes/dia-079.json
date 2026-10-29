@@ -1,0 +1,96 @@
+{
+  "dia": 79,
+  "data": "2027-01-19",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Dissecção de aorta",
+  "conceito": "Aortic dissection: IV beta-blocker first, CT angiography if stable, TEE if unstable",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-20",
+  "gancho": "Asfalto da aorta descascando: *freia, alarga ou conserta*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Placa verde de rodovia com três saídas, cada uma com um ícone: um pedal de freio, uma estrada se alargando e uma chave inglesa. Na pista, o asfalto de cima descasca em duas faixas, e um carrinho em forma de coração vem rápido demais.",
+    "foco": "50% 35%",
+    "alt": "Asfalto da aorta descascando: freia, alarga ou conserta?",
+    "arquivo": "dia-079.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da rodovia: o carrinho-coração pisa no freio, o ponteiro do velocímetro desce até a faixa verde e a casca do asfalto para de abrir. Só depois disso a estrada começa a se alargar ao fundo.",
+    "alt": "Betabloqueador venoso primeiro",
+    "arquivo": "dia-079-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 62-year-old man with hypertension has sudden tearing chest pain radiating to the back. Blood pressure is 186/104 mm Hg in the right arm and 150/88 mm Hg in the left; pulse is 102/min. CT angiography shows a type B aortic dissection without malperfusion.",
+    "pergunta": "Which is the most appropriate initial therapy?",
+    "alternativas": {
+      "A": {
+        "texto": "IV esmolol infusion",
+        "quiz": "IV esmolol"
+      },
+      "B": {
+        "texto": "IV nitroprusside alone",
+        "quiz": "Nitroprusside alone"
+      },
+      "C": {
+        "texto": "IV unfractionated heparin",
+        "quiz": "IV heparin"
+      },
+      "D": {
+        "texto": "Emergency open surgical repair",
+        "quiz": "Open surgery"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Betabloqueador venoso *primeiro*",
+    "certa": [
+      "Na *aortic dissection*, o primeiro remédio é um *IV beta-blocker* (esmolol ou labetalol): ele baixa a frequência e a força de ejeção (dP/dt), que empurram o rasgo adiante. A diretriz ACC/AHA de 2022 mira pressão sistólica abaixo de 120 mm Hg e frequência de 60 a 80; o vasodilatador só entra depois do betabloqueio. Dissecção tipo B sem complicação é tratamento clínico; tipo A vai para cirurgia, e o paciente instável faz *TEE* à beira do leito."
+    ],
+    "termos": [
+      "aortic dissection",
+      "IV beta-blocker",
+      "esmolol",
+      "type B dissection"
+    ],
+    "erradas": {
+      "B": "Nitroprussiato sozinho causa taquicardia reflexa, aumenta a força de ejeção e pode estender a dissecção.",
+      "C": "Anticoagular uma aorta rasgada aumenta o risco de sangramento e ruptura; a dor torácica aqui não é síndrome coronariana.",
+      "D": "Cirurgia de urgência é para tipo A ou tipo B complicada (ruptura, má perfusão, dor refratária), não para tipo B sem complicação."
+    },
+    "macete": {
+      "frase": "*B antes de V*: beta antes do vasodilatador",
+      "apoio": "Pegadinha de prova: O NBME oferece o nitroprussiato como primeira escolha; ele só entra depois do betabloqueador, e a anticoagulação não faz parte do tratamento inicial da dissecção.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor rasgando que vai para as costas, pressão alta e diferença entre os braços. A angiotomografia já confirmou a dissecção. No Plantão de Terça, o que entra primeiro?",
+    "palavras_chave": [
+      "tearing chest pain",
+      "pulse differential",
+      "hypertension",
+      "CT angiography"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Cardiology",
+      "#PlantaoDeTerca",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual remédio entra primeiro?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

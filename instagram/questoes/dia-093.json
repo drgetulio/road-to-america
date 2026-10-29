@@ -1,0 +1,96 @@
+{
+  "dia": 93,
+  "data": "2027-02-02",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Hipercalemia com alteração no ECG",
+  "conceito": "Hyperkalemia with ECG changes: IV calcium first to stabilize the myocardium",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-03",
+  "tom": null,
+  "gancho": "Potássio lotou o cartório: o que o coração pede *primeiro*?",
+  "gancho_apoio": "Potássio de 7,4 com QRS alargado e acesso venoso pronto. Qual é o primeiro passo?",
+  "imagem": {
+    "arquivo": "dia-093.png",
+    "cena": "Seu Néfron, atrás da mesa do cartório, está soterrado por uma montanha de bananas que chegam por uma esteira. Na janela, um coração simpático se equilibra numa corda bamba. No alto, uma placa verde de rodovia com três saídas em branco.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron soterrado de bananas enquanto um coração se equilibra numa corda bamba."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-093-macete.png",
+    "cena": "Callback: o coração agora usa um capacete branco de obra (cálcio) e fica firme na corda. Atrás, um caminhão de mudança leva bananas para dentro de casinhas (as células), e um caminhão de lixo espera a vez no fim da rua. Seu Néfron, aliviado, ergue o carimbo.",
+    "foco": "50% 40%",
+    "alt": "Coração de capacete firme na corda; caminhão de mudança leva bananas para casinhas e um caminhão de lixo espera."
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man with advanced chronic kidney disease (eGFR 22 mL/min/1.73 m2) recently started lisinopril and spironolactone. He reports generalized weakness. Pulse is 52/min. Serum potassium is 7.4 mEq/L. ECG shows peaked T waves, a prolonged PR interval and widened QRS complexes. Intravenous access is established.",
+    "pergunta": "Which is the most appropriate next step in management?",
+    "alternativas": {
+      "A": {
+        "texto": "Intravenous insulin with dextrose",
+        "quiz": "Insulina com glicose"
+      },
+      "B": {
+        "texto": "Oral sodium zirconium cyclosilicate",
+        "quiz": "Ciclossilicato oral"
+      },
+      "C": {
+        "texto": "Intravenous calcium gluconate",
+        "quiz": "Cálcio IV"
+      },
+      "D": {
+        "texto": "Emergency hemodialysis",
+        "quiz": "Hemodiálise já"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Hipercalemia com ECG alterado: *cálcio primeiro*",
+    "certa": [
+      "Com alteração no ECG, a primeira medida é proteger o miocárdio com cálcio IV (gluconato ou cloreto), que estabiliza a membrana em minutos sem baixar o potássio. Depois vêm as medidas que levam o potássio para dentro da célula (insulina com glicose, beta-agonista) e, por fim, as que tiram o potássio do corpo (quelantes, diurético, diálise). Suspender lisinopril e espironolactona também entra no plano."
+    ],
+    "termos": [
+      "hyperkalemia",
+      "calcium gluconate",
+      "peaked T waves",
+      "membrane stabilization"
+    ],
+    "erradas": {
+      "A": "Insulina com glicose desloca o potássio para dentro das células em 15 a 30 minutos, mas não protege o coração agora; vem logo depois do cálcio.",
+      "B": "O quelante intestinal remove potássio em horas, devagar demais para um QRS largo.",
+      "D": "A diálise remove potássio de fato, mas demora a começar; o coração precisa do cálcio enquanto ela é preparada."
+    },
+    "macete": {
+      "frase": "*Capacete*, mudança, caminhão de lixo",
+      "apoio": "Na imagem, o coração recebe o capacete antes de qualquer caminhão chegar ao cartório do Seu Néfron.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça: renal crônico, dois remédios que seguram potássio e um ECG que assusta. Qual é o primeiro passo?",
+    "palavras_chave": [
+      "chronic kidney disease",
+      "lisinopril and spironolactone",
+      "bradycardia",
+      "ECG changes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Nefrologia",
+      "#Nephrology",
+      "#Emergencia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "K 7,4 e QRS largo: o que fazer primeiro?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 99,
+  "data": "2027-02-08",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Mononucleose infecciosa",
+  "conceito": "EBV mononucleosis: infects B cells via CD21, atypical CD8 lymphocytes, heterophile antibodies, no contact sports",
+  "personagem": "Macrô",
+  "gancho_data": "Segunda de Carnaval: a \"doença do beijo\", sem moralismo.",
+  "remix_de": null,
+  "explicacao_em": "2027-02-09",
+  "tom": null,
+  "gancho": "Segunda de Carnaval: o vírus do beijo entra por *qual porta*?",
+  "gancho_apoio": "Febre, dor de garganta, cansaço e um baço que dá para sentir. Qual célula o vírus escolhe?",
+  "imagem": {
+    "arquivo": "dia-099.png",
+    "cena": "Macrô, na porta do boteco dos micróbios, assiste a um bloco de Carnaval passar. Um vírus redondo e espetado, com máscara de Carnaval, segura uma chave e passeia diante de quatro casinhas com portas de cores diferentes, azul, vermelha, verde e amarela.",
+    "foco": "50% 35%",
+    "alt": "Macrô assiste ao bloco; um vírus de máscara de Carnaval passeia com uma chave diante de quatro portas coloridas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-099-macete.png",
+    "cena": "Callback: a chave do vírus encaixa só na porta azul (a casa B). Atrás, um segurança enorme com fantasia exagerada (o T CD8 atípico) chega para conferir. No canto, uma bola de futebol com um sinal de proibido ao lado de um balão em forma de baço.",
+    "foco": "50% 40%",
+    "alt": "A chave do vírus abre só a porta azul; um segurança fantasiado chega; bola de futebol proibida ao lado de um balão em forma de baço."
+  },
+  "questao": {
+    "vinheta": "An 18-year-old student has had fever, sore throat and marked fatigue for 10 days. She has tonsillar exudates, posterior cervical lymphadenopathy and a palpable spleen tip. Blood smear shows large lymphocytes with abundant cytoplasm indenting adjacent red cells. A heterophile antibody test is positive.",
+    "pergunta": "The causative virus primarily infects which cells?",
+    "alternativas": {
+      "A": {
+        "texto": "B lymphocytes",
+        "quiz": "Linfócitos B"
+      },
+      "B": {
+        "texto": "CD8+ T lymphocytes",
+        "quiz": "Linfócitos T CD8"
+      },
+      "C": {
+        "texto": "CD4+ T lymphocytes",
+        "quiz": "Linfócitos T CD4"
+      },
+      "D": {
+        "texto": "Monocytes",
+        "quiz": "Monócitos"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "EBV entra no *linfócito B* pelo CD21",
+    "certa": [
+      "Febre, exsudato amigdaliano, linfonodos cervicais posteriores, baço palpável e anticorpo heterófilo positivo fecham mononucleose pelo vírus Epstein-Barr (EBV). O vírus usa a glicoproteína gp350 para se ligar ao CD21 (receptor de complemento CR2) e infecta os linfócitos B. Os linfócitos atípicos do esfregaço são T CD8 reativos, que respondem à infecção das células B."
+    ],
+    "termos": [
+      "Epstein-Barr virus",
+      "CD21",
+      "heterophile antibody",
+      "atypical lymphocytes"
+    ],
+    "erradas": {
+      "B": "Os linfócitos atípicos (células de Downey) são T CD8, mas eles reagem à infecção; o vírus não entra neles.",
+      "C": "O CD4 é a porta do HIV, que causa síndrome retroviral aguda com anticorpo heterófilo negativo.",
+      "D": "O citomegalovírus fica latente em monócitos e dá quadro parecido, mas com anticorpo heterófilo negativo."
+    },
+    "macete": {
+      "frase": "O folião EBV entra pela *porta 21* da casa B",
+      "apoio": "Na imagem, o vírus de máscara de Carnaval passeia com a chave diante de casas com portas de cores diferentes.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Bicho de segunda de Carnaval: a famosa doença do beijo. Jovem com garganta inflamada, baço palpável e um esfregaço cheio de células grandes.",
+    "palavras_chave": [
+      "fever and sore throat",
+      "fatigue",
+      "posterior cervical lymphadenopathy",
+      "splenomegaly"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Microbiologia",
+      "#Microbiology",
+      "#Carnaval"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Mononucleose: qual célula o vírus infecta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

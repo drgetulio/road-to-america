@@ -1,0 +1,96 @@
+{
+  "dia": 109,
+  "data": "2027-02-18",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Ruptura do tendão de Aquiles",
+  "conceito": "Achilles tendon rupture: positive Thompson test",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-19",
+  "tom": null,
+  "gancho": "Futsal de fim de semana: quem *chutou* o calcanhar?",
+  "gancho_apoio": "Um estalo atrás do tornozelo e ninguém por perto. Qual é o diagnóstico?",
+  "imagem": {
+    "arquivo": "dia-109.png",
+    "cena": "Numa quadra de futsal vazia, um tênis simpático com olhos para e olha para trás, procurando quem o chutou, mas não há ninguém. Na beira da quadra, o garçom de rodízio segura a plaquinha redonda verde e vermelha.",
+    "foco": "50% 35%",
+    "alt": "Tênis olhando para trás numa quadra vazia; o garçom segura a plaquinha verde e vermelha."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-109-macete.png",
+    "cena": "Callback: o tênis agora é uma marionete de madeira. Uma mão aperta a barrinha da panturrilha, mas o pé fica parado, porque o fio do calcanhar arrebentou como um elástico cortado. No canto, um comprimido com um triângulo de alerta.",
+    "foco": "50% 40%",
+    "alt": "Marionete de perna com o fio do calcanhar arrebentado; um comprimido com triângulo de alerta no canto."
+  },
+  "questao": {
+    "vinheta": "A 41-year-old man playing weekend futsal felt a sudden pop behind his right ankle, as if someone had kicked him, though no one was behind him. He walks with a limp and cannot stand on tiptoe on that side. With him prone, squeezing the right calf produces no plantar flexion.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Anterior talofibular ligament sprain",
+        "quiz": "Entorse do LTFA"
+      },
+      "B": {
+        "texto": "Medial gastrocnemius strain",
+        "quiz": "Lesão da panturrilha"
+      },
+      "C": {
+        "texto": "Posterior tibial tendon dysfunction",
+        "quiz": "Tibial posterior"
+      },
+      "D": {
+        "texto": "Achilles tendon rupture",
+        "quiz": "Ruptura do Aquiles"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Aquiles rompido: *Thompson positivo*",
+    "certa": [
+      "Estalo súbito atrás do tornozelo, sensação de chute e incapacidade de ficar na ponta do pé descrevem ruptura do tendão de Aquiles. O teste de Thompson é positivo quando apertar a panturrilha não produz flexão plantar, porque o tendão que transmite a força está rompido. Andar mancando não afasta o diagnóstico, pois outros flexores ainda ajudam a mover o pé."
+    ],
+    "termos": [
+      "Achilles tendon rupture",
+      "Thompson test",
+      "plantar flexion",
+      "fluoroquinolones"
+    ],
+    "erradas": {
+      "A": "A entorse do ligamento talofibular anterior acontece na inversão, com dor e edema na face lateral do tornozelo, e o Thompson é normal.",
+      "B": "O estiramento do gastrocnêmio medial dói no meio da panturrilha, e apertá-la ainda produz flexão plantar.",
+      "C": "A disfunção do tibial posterior é crônica, com pé plano adquirido e dor na face medial, sem estalo agudo."
+    },
+    "macete": {
+      "frase": "Marionete de *fio cortado*: aperta a panturrilha e o pé não mexe",
+      "apoio": "Na imagem, o tênis olha para trás procurando quem chutou, e não há ninguém.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, espeto de cirurgia ortopédica: futsal de fim de semana, um estalo e a sensação de que alguém chutou o calcanhar.",
+    "palavras_chave": [
+      "weekend futsal",
+      "sudden pop",
+      "ankle pain",
+      "cannot stand on tiptoe"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Ortopedia",
+      "#Orthopedics",
+      "#MedicinaEsportiva"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Estalo no calcanhar e Thompson positivo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

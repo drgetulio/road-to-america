@@ -1,0 +1,106 @@
+{
+  "dia": 357,
+  "data": "2027-10-24",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Síndrome de hiper-IgM (dia 302), Giardíase (dia 330), Febre puerperal (dia 351)",
+  "conceito": "Remix: Hyper-IgM syndrome + Giardia lamblia + Streptococcus pyogenes puerperal sepsis",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    302,
+    330,
+    351
+  ],
+  "explicacao_em": "2027-10-25",
+  "tom": null,
+  "gancho": "O DJ que *não troca a música*: quem é ele?",
+  "gancho_apoio": "Remix com hiper-IgM, giardíase e febre puerperal. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-357.png",
+    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (um plugue e uma tomada, uma pera com dois olhinhos, uma barra de sabão) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "foco": "50% 35%",
+    "alt": "O DJ que não troca a música: quem é ele?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-357-macete.png",
+    "cena": "Callback: o disco do plugue gira, mas o plugue está sem os pinos e não encaixa na tomada; a pista de dança só tem grandes estrelas de cinco pontas repetidas, todas iguais, e o Macrô aponta para o plugue quebrado.",
+    "foco": "50% 45%",
+    "alt": "Hiper-IgM: sem CD40L, o linfócito B não faz class switching"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had recurrent otitis media and sinusitis since age 8 months and is now hospitalized with Pneumocystis jirovecii pneumonia. Serum IgM is elevated, while IgG, IgA, and IgE are very low. The peripheral B-cell count is normal.",
+    "pergunta": "Which mechanism best explains his condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective CD40 ligand blocking class switching",
+        "quiz": "CD40L defeituoso",
+        "dia": 302
+      },
+      "B": {
+        "texto": "Trophozoites adhering to the duodenal brush border",
+        "quiz": "Giardia aderida",
+        "dia": 330
+      },
+      "C": {
+        "texto": "Streptococcal M protein blocking opsonization",
+        "quiz": "Proteína M",
+        "dia": 351
+      },
+      "D": {
+        "texto": "Absent Bruton tyrosine kinase arresting B-cell maturation",
+        "quiz": "Falta de BTK"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Hiper-IgM: sem *CD40L*, o linfócito B não faz *class switching*",
+    "certa": [
+      "IgM alta com IgG, IgA e IgE baixas, infecções sinopulmonares e *Pneumocystis* num menino é a *hyper-IgM syndrome* ligada ao X. O linfócito T ativado não expressa o *CD40 ligand*, então o B não recebe o segundo sinal para a *class switching* e fica preso na IgM. O defeito também prejudica a ativação de macrófagos pelo T, por isso aparecem oportunistas."
+    ],
+    "termos": [
+      "hyper-IgM syndrome",
+      "CD40 ligand",
+      "class switching",
+      "Pneumocystis jirovecii"
+    ],
+    "erradas": {
+      "B": "A Giardia (dia 330) adere à borda em escova e causa diarreia gordurosa; ela complica deficiências de anticorpo, mas não explica o defeito imune.",
+      "C": "A proteína M é o escudo do S. pyogenes (dia 351) contra a opsonização, um fator do micróbio e não um defeito do paciente.",
+      "D": "Falta de BTK é a agamaglobulinemia de Bruton, com todas as imunoglobulinas baixas e quase nenhum linfócito B."
+    },
+    "macete": {
+      "frase": "*Hiper-IgM é o DJ sem o plugue*: a festa toca só IgM",
+      "apoio": "O CD40L é o plugue do linfócito T que encaixa na tomada CD40 do B e manda trocar a faixa. Sem plugue, a festa toca IgM a noite inteira. No toca-discos, é o disco da tomada que explica o quadro.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com hiper-IgM (dia 302), giardíase (dia 330) e febre puerperal (dia 351), mais um intruso. Menino de 2 anos com otites, sinusites e pneumonia por Pneumocystis. IgM alta e o resto lá embaixo. Qual disco explica?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "IgM alta, IgG baixa e Pneumocystis:"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

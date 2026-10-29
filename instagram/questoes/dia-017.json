@@ -1,0 +1,95 @@
+{
+  "dia": 17,
+  "data": "2026-11-18",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Enfisema e alfa-1 antitripsina",
+  "conceito": "Alpha-1 antitrypsin deficiency: unopposed elastase causes panacinar emphysema in the lower lobes",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da DPOC (terceira quarta-feira de novembro, 18/11/2026).",
+  "remix_de": null,
+  "explicacao_em": "2026-11-19",
+  "tom": null,
+  "gancho": "Dia da DPOC: por que o estrago começou nos andares de *baixo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-017.png",
+    "cena": "Estádio de futebol em corte, estilo manual de montagem, com o formato de dois pulmões. As arquibancadas de baixo estão cheias de buracos espalhados por igual, e as de cima estão inteiras. No portão do estádio, um ônibus de time em forma de fígado está parado no engarrafamento.",
+    "foco": "50% 35%",
+    "alt": "Dia da DPOC: por que o estrago começou nos andares de baixo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-017-macete.png",
+    "cena": "Callback do estádio: entra em campo um jogador em forma de tesoura (a elastase dos neutrófilos), chutando bola atrás de bola no gol de baixo, que está vazio. O goleiro, um escudo verde (alfa-1 antitripsina), ficou preso dentro daquele ônibus em forma de fígado, engarrafado no portão do estádio, acenando da janela.",
+    "alt": "Sem goleiro, gol nos lobos inferiores"
+  },
+  "questao": {
+    "vinheta": "A 36-year-old man who has never smoked has 2 years of progressive dyspnea. Spirometry shows an FEV1/FVC ratio of 0.58. Chest CT shows panacinar emphysema predominantly in the lower lobes. Serum aminotransferases are mildly elevated.",
+    "pergunta": "Which mechanism best explains his lung disease?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective epithelial chloride channel",
+        "quiz": "Canal de cloro"
+      },
+      "B": {
+        "texto": "Th2-mediated bronchial hyperreactivity",
+        "quiz": "Reatividade Th2"
+      },
+      "C": {
+        "texto": "Hypertrophy of submucosal mucous glands",
+        "quiz": "Glândulas mucosas"
+      },
+      "D": {
+        "texto": "Unopposed neutrophil elastase activity",
+        "quiz": "Elastase sem freio"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Sem goleiro, gol nos lobos inferiores",
+    "certa": [
+      "Enfisema panacinar nos lobos inferiores num adulto jovem que nunca fumou, com enzimas hepáticas alteradas, é deficiência de alfa-1 antitripsina (alpha-1 antitrypsin). Essa proteína fabricada no fígado inibe a elastase dos neutrófilos; sem ela, a elastase age sem freio e destrói as paredes dos alvéolos, mais nas bases. No fígado, a proteína mal dobrada (alelo PiZ) fica presa nos hepatócitos e causa lesão hepática."
+    ],
+    "termos": [
+      "alpha-1 antitrypsin deficiency",
+      "panacinar emphysema",
+      "neutrophil elastase",
+      "PiZZ"
+    ],
+    "erradas": {
+      "A": "Canal de cloro defeituoso é fibrose cística, com bronquiectasias e infecções desde a infância, e não enfisema panacinar isolado.",
+      "B": "Hiper-reatividade Th2 é asma, com obstrução reversível e sem destruição dos alvéolos na tomografia.",
+      "C": "Hipertrofia das glândulas mucosas é a bronquite crônica, ligada à tosse produtiva e ao tabagismo."
+    },
+    "macete": {
+      "frase": "A alfa-1 é o goleiro do pulmão. Sem goleiro, a elastase faz gol embaixo, nos lobos inferiores, e o placar é panacinar. O cigarro é o atacante que entra junto e piora o jogo.",
+      "apoio": "Pegadinha de prova: O NBME junta enfisema em jovem não fumante com enzimas hepáticas alteradas; pense em alfa-1 antitripsina e lembre dos glóbulos PAS positivos nos hepatócitos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "18/11 é o Dia Mundial da DPOC. Na Quarta do Porquê, um enfisema que não segue o roteiro do cigarro.",
+    "palavras_chave": [
+      "never smoker",
+      "FEV1/FVC",
+      "lower-lobe emphysema",
+      "elevated aminotransferases"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pulmonology",
+      "#DiaMundialDaDPOC",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Enfisema em jovem que não fuma: qual mecanismo?"
+  },
+  "exemplo": false
+}

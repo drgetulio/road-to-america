@@ -1,0 +1,96 @@
+{
+  "dia": 321,
+  "data": "2027-09-18",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Menor emancipado",
+  "conceito": "Emancipated minor: married, in the military or self-supporting adolescents consent for themselves",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-19",
+  "tom": null,
+  "gancho": "Dezessete anos, aliança no dedo e marmita na bolsa: *quem assina?*",
+  "gancho_apoio": "No Sábado Sem Viés, a idade não é a única coisa que conta.",
+  "imagem": {
+    "arquivo": "dia-321.png",
+    "cena": "Uma balança de tribunal desenhada como placa de trânsito; em cima de uma mesa, um chaveiro com uma aliança, um crachá em branco e uma marmita; uma caneta paira sobre um formulário em branco. Ao fundo, uma casinha num morro distante, do outro lado de uma estrada comprida.",
+    "foco": "50% 35%",
+    "alt": "Dezessete anos, aliança no dedo e marmita na bolsa: quem assina?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-321-macete.png",
+    "cena": "Callback: a caneta pousa ao lado do chaveiro com a aliança, do crachá e da marmita, e a balança fica equilibrada do lado deles; a casinha distante continua no morro, com a estrada vazia.",
+    "foco": "50% 45%",
+    "alt": "Menor emancipado decide como adulto"
+  },
+  "questao": {
+    "vinheta": "A 17-year-old woman has recurrent biliary colic, and her surgeon advises an elective laparoscopic cholecystectomy. Eight months ago she got married; she lives with her husband and works full time. She understands the risks and benefits and wants the surgery. Her parents live in another state and disagree with the plan.",
+    "pergunta": "Who should provide informed consent for the procedure?",
+    "alternativas": {
+      "A": {
+        "texto": "The patient herself",
+        "quiz": "Ela mesma"
+      },
+      "B": {
+        "texto": "Her parents",
+        "quiz": "Os pais"
+      },
+      "C": {
+        "texto": "Her husband",
+        "quiz": "O marido"
+      },
+      "D": {
+        "texto": "A court-appointed guardian",
+        "quiz": "Tutor judicial"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Menor emancipado *decide como adulto*",
+    "certa": [
+      "*Emancipated minor* é quem casou, está nas forças armadas ou vive de forma independente e se sustenta; para fins médicos, decide como um adulto. Ela é casada, mora com o marido e trabalha, então o consentimento é dela, mesmo para cirurgia eletiva e mesmo que os pais discordem. Isso vale porque ela tem *decision-making capacity*: entende, raciocina e expressa uma escolha."
+    ],
+    "termos": [
+      "emancipated minor",
+      "informed consent",
+      "decision-making capacity",
+      "surrogate decision maker"
+    ],
+    "erradas": {
+      "B": "Os pais deixam de ser responsáveis legais pela decisão médica de um menor emancipado.",
+      "C": "O cônjuge não consente por um adulto capaz; ele só seria consultado como substituto se ela perdesse a capacidade.",
+      "D": "Tutor nomeado pelo juiz só entra quando o paciente não tem capacidade e não há substituto legal."
+    },
+    "macete": {
+      "frase": "*Casou, fardou ou se sustenta: assinou* (married, military, self-supporting)",
+      "apoio": "Na imagem, a caneta pula para o chaveiro com a aliança, o crachá e a marmita, que juntos são a independência. A casinha dos pais, lá longe na estrada, fica fora da balança.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Jovem de 17 anos, casada, mora com o marido e trabalha em tempo integral. Ela tem cólica biliar de repetição e vai fazer colecistectomia eletiva. Os pais moram em outro estado e não concordam com a cirurgia. De quem é o consentimento?",
+    "palavras_chave": [
+      "17-year-old",
+      "married",
+      "elective cholecystectomy",
+      "parents disagree"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Etica",
+      "#MedicalEthics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Casada aos 17, cirurgia eletiva: quem?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

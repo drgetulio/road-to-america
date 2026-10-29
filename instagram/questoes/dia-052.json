@@ -1,0 +1,95 @@
+{
+  "dia": 52,
+  "data": "2026-12-23",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Desenvolvimento humano",
+  "topico": "Puberdade e estágios de Tanner",
+  "conceito": "Puberty onset: thelarche in girls and testicular enlargement in boys are the first signs",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-24",
+  "gancho": "Na estação da puberdade, qual vagão sai primeiro?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma estação de trem antiga com quatro vagões estacionados e o chefe da estação com o apito na boca; não se vê qual vagão vai na frente.",
+    "foco": "50% 35%",
+    "alt": "Uma estação de trem antiga com quatro vagões estacionados e o chefe da estação com o apito na boca; não se vê qual vagão vai na frente.",
+    "arquivo": "dia-052.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o trem parte com a locomotiva em forma de broto de flor; atrás vêm um vagão com grama, um vagão com uma mola e um último vagão com uma lua crescente, em fila.",
+    "alt": "O primeiro vagão das meninas é o broto mamário",
+    "arquivo": "dia-052-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 10-year-old girl is brought because her mother noticed a small, firm, mildly tender nodule beneath the right areola 2 weeks ago. There is no pubic or axillary hair. Her height has followed the 50th percentile, with a recent modest increase in growth velocity. She is otherwise healthy.",
+    "pergunta": "Which is the most likely explanation for this finding?",
+    "alternativas": {
+      "A": {
+        "texto": "Breast fibroadenoma",
+        "quiz": "Fibroadenoma"
+      },
+      "B": {
+        "texto": "Premature adrenarche",
+        "quiz": "Premature adrenarche"
+      },
+      "C": {
+        "texto": "Central precocious puberty",
+        "quiz": "Precocious puberty"
+      },
+      "D": {
+        "texto": "Normal onset of puberty",
+        "quiz": "Normal puberty"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "O primeiro vagão das meninas é o *broto mamário*",
+    "certa": [
+      "Nas meninas, o primeiro sinal de puberdade costuma ser a *thelarche*, o broto mamário (*Tanner stage 2*), que pode começar de um lado só e ser um pouco doloroso. Nos meninos, o primeiro sinal é o aumento do volume testicular. Aos 10 anos, dentro da faixa normal de 8 a 13 anos para meninas, com crescimento na curva, o quadro é de *normal puberty*."
+    ],
+    "termos": [
+      "thelarche",
+      "Tanner stage 2",
+      "testicular enlargement",
+      "normal puberty"
+    ],
+    "erradas": {
+      "A": "Fibroadenoma é raro antes da puberdade completa e não explica um broto retroareolar com aceleração do crescimento.",
+      "B": "Adrenarca precoce traz pelos pubianos ou axilares e odor antes dos 8 anos, sem broto mamário.",
+      "C": "Puberdade precoce central em menina é o início antes dos 8 anos; aos 10, está no tempo certo."
+    },
+    "macete": {
+      "frase": "Meninas: *broto, pelo, pulo, menarca*",
+      "apoio": "Pegadinha de prova: O NBME descreve o broto unilateral e doloroso para assustar; é normal, e o primeiro sinal no menino é o aumento testicular, não os pelos.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Menina de 10 anos, um nódulo pequeno embaixo da aréola, sem outros sinais e crescendo na curva de sempre. A mãe quer saber se está tudo bem.",
+    "palavras_chave": [
+      "subareolar nodule",
+      "10-year-old girl",
+      "growth velocity",
+      "pediatric endocrinology"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Pediatria",
+      "#Pediatrics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "O que explica o nódulo da menina?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

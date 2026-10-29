@@ -1,0 +1,99 @@
+{
+  "dia": 244,
+  "data": "2027-07-03",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Passagem de plantão",
+  "conceito": "Structured handoff (I-PASS) reduces communication errors",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-04",
+  "tom": null,
+  "gancho": "No plantão, *passe torto* vira gol contra",
+  "gancho_apoio": "Os erros apareceram sempre na troca de turno. Qual mudança protege o paciente?",
+  "imagem": {
+    "arquivo": "dia-244.png",
+    "cena": "Num campo de futebol, duas pranchetas com pernas e tênis trocam de lugar no meio do jogo. Uma chuta a bola de qualquer jeito e ela sai pela lateral, enquanto a outra corre perdida, olhando para o lado errado. Um apito de juiz pendurado na trave.",
+    "foco": "50% 35%",
+    "alt": "No plantão, passe torto vira gol contra"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-244-macete.png",
+    "cena": "As mesmas pranchetas agora tocam a bola em sequência por cinco cones iguais, em linha reta. A que recebe devolve um toque curto, confirmando que entendeu, e a bola chega redonda ao gol.",
+    "foco": "50% 40%",
+    "alt": "Passagem estruturada, menos erro"
+  },
+  "questao": {
+    "vinheta": "At a teaching hospital, a safety review finds that several adverse events followed evening shift changes. Overnight residents missed pending test results and did not know the contingency plans for their patients. Handoffs currently happen as informal hallway conversations without a set format.",
+    "pergunta": "Which intervention is most likely to reduce these errors?",
+    "alternativas": {
+      "A": {
+        "texto": "Implement a standardized, structured handoff tool",
+        "quiz": "Handoff estruturado"
+      },
+      "B": {
+        "texto": "Extend resident shifts to reduce the number of handoffs",
+        "quiz": "Plantões mais longos"
+      },
+      "C": {
+        "texto": "Discipline the residents involved in each event",
+        "quiz": "Punir os envolvidos"
+      },
+      "D": {
+        "texto": "Require attending cosignature of all overnight orders",
+        "quiz": "Cossinatura noturna"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Passagem estruturada, *menos erro*",
+    "certa": [
+      "Falhas de comunicação na passagem de plantão estão entre as principais causas de eventos adversos, e o problema aqui é de sistema, não de pessoa. Ferramentas estruturadas como o *I-PASS* (gravidade, resumo do paciente, lista de ações, consciência da situação com plano de contingência e síntese de quem recebe) reduziram erros médicos evitáveis num estudo multicêntrico. Com o formato fixo, pendências e planos de contingência são ditos em voz alta e quem recebe repete o que entendeu."
+    ],
+    "termos": [
+      "I-PASS",
+      "handoff",
+      "systems-based practice",
+      "just culture"
+    ],
+    "erradas": {
+      "B": "Plantões mais longos aumentam fadiga e erro; reduzir o número de passagens não conserta passagens mal feitas.",
+      "C": "Punir indivíduos alimenta a cultura do medo e diminui as notificações; a abordagem de segurança é sistêmica (*just culture*).",
+      "D": "Cossinatura das prescrições não resolve pendências e planos de contingência que se perdem na troca de turno."
+    },
+    "macete": {
+      "frase": "*I-PASS*: o passe que o colega *devolve*",
+      "apoio": "Lembre do campo: passe torto dá gol contra. No I-PASS a bola anda por cinco cones (gravidade, resumo, lista de ações, plano de contingência e síntese de quem recebe) e quem recebe devolve o toque, repetindo o plano.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Os eventos adversos se concentram na troca de turno, e a passagem é feita no corredor. Qual mudança resolve de verdade?",
+    "palavras_chave": [
+      "shift change",
+      "adverse events",
+      "pending results",
+      "teaching hospital"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#SegurancaDoPaciente",
+      "#EticaMedica",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "O que reduz erro na troca de turno?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

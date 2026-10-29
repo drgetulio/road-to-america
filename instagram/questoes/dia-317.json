@@ -1,0 +1,96 @@
+{
+  "dia": 317,
+  "data": "2027-09-14",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de lise tumoral",
+  "conceito": "Tumor lysis prevention: aggressive hydration plus allopurinol or rasburicase",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-15",
+  "tom": null,
+  "gancho": "Caminhão de cristais chegando ao rim amanhã cedo. *O que fazer hoje?*",
+  "gancho_apoio": "O Seu Néfron já separou os carimbos. Falta escolher a conduta.",
+  "imagem": {
+    "arquivo": "dia-317.png",
+    "cena": "Placa verde de rodovia com três saídas; embaixo, o Seu Néfron na mesa de repartição, de gravata e óculos na ponta do nariz, vê pela janela um caminhão basculante prestes a despejar cascalho de cristais pontudos. A pilha de formulários treme.",
+    "foco": "50% 35%",
+    "alt": "Caminhão de cristais chegando ao rim amanhã cedo. O que fazer hoje?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-317-macete.png",
+    "cena": "Callback: o Seu Néfron segura um aspirador mágico que suga os cristais pontudos e os solta como bolhas de sabão que flutuam pelo túbulo; a torneira do canto foi fechada com uma chave inglesa pequena (o allopurinol, para risco menor). Um frasquinho em forma de escudo com um sinal verde de conferido (o G6PD normal) fica na mesa.",
+    "foco": "50% 45%",
+    "alt": "Lise tumoral de alto risco: hidratação e rasburicase"
+  },
+  "questao": {
+    "vinheta": "Burkitt lymphoma with a large abdominal mass was diagnosed last week in a 22-year-old man, and induction chemotherapy begins tomorrow. Laboratory studies show creatinine 1.1 mg/dL, uric acid 9.8 mg/dL, potassium 4.6 mEq/L, and a markedly elevated LDH. G6PD activity is normal.",
+    "pergunta": "In addition to aggressive IV hydration, which is the most appropriate preventive measure?",
+    "alternativas": {
+      "A": {
+        "texto": "Urine alkalinization with sodium bicarbonate",
+        "quiz": "Bicarbonato"
+      },
+      "B": {
+        "texto": "Rasburicase",
+        "quiz": "Rasburicase"
+      },
+      "C": {
+        "texto": "Probenecid",
+        "quiz": "Probenecida"
+      },
+      "D": {
+        "texto": "Prophylactic hemodialysis",
+        "quiz": "Diálise profilática"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Lise tumoral de alto risco: *hidratação e rasburicase*",
+    "certa": [
+      "Burkitt volumoso, LDH alto e ácido úrico acima de 8 mg/dL antes da quimioterapia é alto risco de *tumor lysis syndrome*. Além da hidratação, a escolha é *rasburicase*, uma urato oxidase recombinante que transforma o ácido úrico já formado em alantoína, muito mais solúvel; o *allopurinol* só impede a formação de ácido úrico novo e fica para risco intermediário. Antes da rasburicase confira o *G6PD*, porque o peróxido de hidrogênio gerado pode causar hemólise e metemoglobinemia."
+    ],
+    "termos": [
+      "tumor lysis syndrome",
+      "rasburicase (urate oxidase)",
+      "allopurinol (xanthine oxidase)",
+      "G6PD deficiency"
+    ],
+    "erradas": {
+      "A": "Alcalinizar a urina não é mais recomendado: ajuda pouco o urato e favorece a precipitação de fosfato de cálcio no rim.",
+      "C": "*Probenecida* aumenta a excreção de ácido úrico pelo rim e piora o risco de cristais nos túbulos.",
+      "D": "Diálise trata a lise já instalada, com hipercalemia ou insuficiência renal grave, e não é prevenção."
+    },
+    "macete": {
+      "frase": "*Rasburicase raspa o que já existe; allopurinol fecha a torneira* do que vai vir",
+      "apoio": "Na imagem, o Seu Néfron usa um aspirador mágico que transforma os cristais pontudos em bolhas de sabão que descem pelo túbulo. A torneira no canto, fechada com uma chave menor, é o allopurinol, para quando o risco é menor.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rapaz de 22 anos com linfoma de Burkitt volumoso vai começar quimioterapia amanhã. Ácido úrico de 9,8 mg/dL, LDH muito alto e G6PD normal. Além de hidratação vigorosa, qual medida protege o rim do Seu Néfron?",
+    "palavras_chave": [
+      "Burkitt lymphoma",
+      "chemotherapy tomorrow",
+      "high uric acid",
+      "high LDH"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Hematologia",
+      "#Oncology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Burkitt antes da quimio: além do soro?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

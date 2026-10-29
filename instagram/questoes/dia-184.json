@@ -1,0 +1,87 @@
+{
+  "dia": 184,
+  "data": "2027-05-04",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema respiratório",
+  "topico": "Asma",
+  "conceito": "Asthma: as-needed ICS-formoterol preferred over SABA alone (GINA)",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Asma (primeira terça de maio, 4/5/2027).",
+  "remix_de": null,
+  "explicacao_em": "2027-05-05",
+  "tom": null,
+  "gancho": "Dia Mundial da Asma: o que *mudou* na bombinha de resgate?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-184.png",
+    "cena": "Uma estrada com uma placa verde de rodovia de três saídas, sem letras; um carrinho esportivo azul em forma de bombinha corre sozinho pela pista e, ao fundo, uma árvore em forma de pulmão balança ao vento.",
+    "foco": "50% 35%",
+    "alt": "Dia Mundial da Asma: o que mudou na bombinha de resgate?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-184-macete.png",
+    "cena": "Surge uma bicicleta de dois lugares que pega a saída verde, com o inalador vinho pedalando rápido na frente e o laranja na garupa, enquanto a árvore-pulmão se acalma; o carrinho azul solitário para numa placa de dê a preferência.",
+    "alt": "Resgate com corticoide junto"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman with asthma uses albuterol 2 to 3 times per week for wheezing and has no nighttime awakenings or activity limitation. She takes no other medications. Spirometry shows obstruction that reverses after bronchodilator. She asks for a better treatment plan.",
+    "pergunta": "Following GINA recommendations, which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "As-needed low-dose budesonide-formoterol",
+        "quiz": "ICS-formoterol"
+      },
+      "B": {
+        "texto": "Continue as-needed albuterol alone",
+        "quiz": "Só salbutamol"
+      },
+      "C": {
+        "texto": "Daily oral montelukast",
+        "quiz": "Montelucaste diário"
+      },
+      "D": {
+        "texto": "Daily inhaled salmeterol alone",
+        "quiz": "Só salmeterol"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Resgate com *corticoide junto*",
+    "certa": [
+      "Pela GINA, em adolescentes e adultos com asma leve (passos 1 e 2), o preferido é *as-needed low-dose ICS-formoterol*: cada resgate leva junto uma dose de corticoide inalatório, o que reduz crises graves em comparação com o SABA sozinho. O formoterol age rápido e permite usar o mesmo inalador para alívio."
+    ],
+    "termos": [
+      "ICS-formoterol",
+      "as-needed therapy",
+      "SABA-only",
+      "GINA"
+    ],
+    "erradas": {
+      "B": "Com SABA sozinho a inflamação segue sem tratamento, e as crises graves e as mortes por asma ficam mais frequentes; a GINA deixou de recomendar essa opção isolada.",
+      "C": "O montelucaste é alternativa menos eficaz que o corticoide inalatório e tem alerta da FDA para efeitos neuropsiquiátricos.",
+      "D": "LABA sem corticoide inalatório (*LABA monotherapy*) aumenta o risco de morte relacionada à asma e é contraindicado."
+    },
+    "macete": {
+      "frase": "Na asma, o resgate vem de *bicicleta de dois lugares*: o formoterol pedala rápido na frente e o corticoide vai na garupa. Bombinha azul andando sozinha é motorista sem cinto.",
+      "apoio": "O NBME pune LABA sem corticoide e SABA sozinho como único tratamento; se a vinheta citar GINA ou asma leve em adulto, a resposta é ICS-formoterol conforme a necessidade.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é o Dia Mundial da Asma. Uma paciente jovem usa a bombinha de resgate algumas vezes por semana e pede um plano melhor. A diretriz mudou a resposta nos últimos anos.",
+    "palavras_chave": [
+      "mild asthma",
+      "albuterol use",
+      "reversible obstruction",
+      "treatment plan"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Asma leve em adulto. Qual o melhor plano?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,95 @@
+{
+  "dia": 62,
+  "data": "2027-01-02",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Capacidade de decisão",
+  "conceito": "Decision-making capacity: task-specific, assessed by the treating physician, not by a court",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-03",
+  "gancho": "Quem apita a *capacidade*: o médico ou o juiz?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um leito de hospital desenhado no meio de um pequeno campo de futebol de várzea. Um apito de juiz está pendurado num gancho ao lado da cama, sem ninguém para pegar. Ao fundo, longe, um prédio de fórum com um martelo de juiz descansando na escadaria.",
+    "foco": "50% 35%",
+    "alt": "Quem apita a capacidade: o médico ou o juiz?",
+    "arquivo": "dia-062.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da várzea: um estetoscópio simpático, com bracinhos, pega o apito do gancho e confere quatro plaquinhas de ícones (balão de fala, lâmpada, espelho e engrenagens). No fórum, o martelo continua dormindo na escada.",
+    "alt": "Capacidade se avalia no leito",
+    "arquivo": "dia-062-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 74-year-old man with severe pneumonia refuses intubation. He is alert, explains his condition, the risk of death without intubation, and the alternatives, and his choice has been consistent for two days. His daughter insists that he is not able to decide.",
+    "pergunta": "Who should determine his decision-making capacity?",
+    "alternativas": {
+      "A": {
+        "texto": "The treating physician",
+        "quiz": "Treating physician"
+      },
+      "B": {
+        "texto": "A probate court judge",
+        "quiz": "Court judge"
+      },
+      "C": {
+        "texto": "The hospital ethics committee",
+        "quiz": "Ethics committee"
+      },
+      "D": {
+        "texto": "A consulting psychiatrist",
+        "quiz": "Psychiatrist"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Capacidade se avalia *no leito*",
+    "certa": [
+      "A *decision-making capacity* é uma avaliação clínica, feita pelo médico que trata o paciente, e vale para aquela decisão específica. O médico confere quatro pontos (o paciente expressa uma escolha, entende a informação, aprecia como ela se aplica a ele e raciocina sobre as opções), e este homem cumpre todos, então a recusa dele vale mesmo contra a vontade da filha. Já a *competence* é um conceito legal, decidido por um juiz."
+    ],
+    "termos": [
+      "decision-making capacity",
+      "competence",
+      "informed refusal",
+      "patient autonomy"
+    ],
+    "erradas": {
+      "B": "O juiz decide competência, que é jurídica e global; capacidade para uma decisão médica é avaliada pelo médico, sem processo judicial.",
+      "C": "O comitê de ética ajuda em conflitos e dilemas, mas não é quem avalia a capacidade à beira do leito.",
+      "D": "Qualquer médico pode avaliar capacidade; a psiquiatria ajuda em casos duvidosos, mas não é obrigatória."
+    },
+    "macete": {
+      "frase": "Capacidade: *quem está em campo apita*",
+      "apoio": "Pegadinha de prova: O NBME coloca um familiar contestando e oferece juiz ou comitê de ética; se o paciente cumpre os quatro critérios, a escolha dele vale e quem avalia é o próprio médico.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Um paciente lúcido recusa a intubação e a filha quer que alguém diga que ele não pode decidir. No Sábado Sem Viés, a pergunta é quem tem o apito.",
+    "palavras_chave": [
+      "refusal of intubation",
+      "severe pneumonia",
+      "family disagreement",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Quem avalia a capacidade?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

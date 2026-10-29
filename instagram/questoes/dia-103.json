@@ -1,0 +1,96 @@
+{
+  "dia": 103,
+  "data": "2027-02-12",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Pré-eclâmpsia com sinais de gravidade",
+  "conceito": "Preeclampsia with severe features: magnesium sulfate, calcium gluconate for toxicity",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-13",
+  "tom": null,
+  "gancho": "O porteiro da convulsão *cochilou*: quem acorda ele?",
+  "gancho_apoio": "Sulfato de magnésio na pré-eclâmpsia grave. Sem reflexo e respirando devagar. Qual é o remédio?",
+  "imagem": {
+    "arquivo": "dia-103.png",
+    "cena": "Numa farmácia de interior à noite, um porteiro grandão em forma de pedra prateada cochila num banquinho ao lado da porta. No chão, um martelinho de reflexo parado, e no balcão um pequeno cata-vento que quase não gira.",
+    "foco": "50% 35%",
+    "alt": "Porteiro de pedra prateada cochilando na farmácia, com um martelinho de reflexo parado no chão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-103-macete.png",
+    "cena": "Callback: um gerente branco e firme, em forma de giz, com colete, bate no ombro do porteiro prateado, que acorda e se espreguiça. O martelinho de reflexo volta a quicar, e o cata-vento do balcão gira de novo.",
+    "foco": "50% 40%",
+    "alt": "Gerente em forma de giz acorda o porteiro de pedra; o martelinho quica e o cata-vento gira."
+  },
+  "questao": {
+    "vinheta": "At 35 weeks' gestation, a 31-year-old woman is receiving intravenous magnesium sulfate for preeclampsia with severe features. Six hours later she is drowsy, her respiratory rate is 8/min and her patellar reflexes are absent. Urine output has fallen to 15 mL/h. The infusion is stopped.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Calcium gluconate",
+        "quiz": "Gluconato de cálcio"
+      },
+      "B": {
+        "texto": "Naloxone",
+        "quiz": "Naloxona"
+      },
+      "C": {
+        "texto": "Flumazenil",
+        "quiz": "Flumazenil"
+      },
+      "D": {
+        "texto": "Physostigmine",
+        "quiz": "Fisostigmina"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Intoxicação por magnésio: *gluconato de cálcio*",
+    "certa": [
+      "O sulfato de magnésio previne a eclâmpsia, mas sai pelo rim, e a oligúria faz o nível subir. A toxicidade aparece em ordem: primeiro somem os reflexos patelares, depois vem a depressão respiratória e, em níveis ainda maiores, a parada cardíaca. Além de suspender a infusão, o antídoto é gluconato de cálcio IV, que antagoniza o magnésio na junção neuromuscular e no coração."
+    ],
+    "termos": [
+      "magnesium sulfate",
+      "magnesium toxicity",
+      "calcium gluconate",
+      "preeclampsia with severe features"
+    ],
+    "erradas": {
+      "B": "Naloxona reverte opioide; o quadro aqui se explica pelo magnésio acumulado com a oligúria.",
+      "C": "Flumazenil reverte benzodiazepínico e não age sobre o magnésio.",
+      "D": "Fisostigmina reverte intoxicação anticolinérgica, com pele seca, midríase e taquicardia."
+    },
+    "macete": {
+      "frase": "*Joelho, pulmão, coração*: o cálcio acorda o porteiro",
+      "apoio": "Na imagem, o porteiro de pedra cochila e o martelinho de reflexo está parado no chão.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na farmácia, obstetrícia: gestante de 35 semanas no sulfato de magnésio, diurese caindo e reflexo sumindo.",
+    "palavras_chave": [
+      "35 weeks",
+      "drowsiness",
+      "respiratory depression",
+      "absent patellar reflexes"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Obstetricia",
+      "#Obstetrics",
+      "#Farmacologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Sem reflexo e FR 8 no magnésio: antídoto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

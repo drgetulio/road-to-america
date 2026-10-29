@@ -1,0 +1,87 @@
+{
+  "dia": 207,
+  "data": "2027-05-27",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Gestação, parto e puerpério",
+  "topico": "Trabalho de parto prematuro",
+  "conceito": "Preterm labor at 24 to 34 weeks: betamethasone for fetal lung maturity",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-28",
+  "tom": null,
+  "gancho": "Bebê com pressa de nascer: qual remédio *amadurece* o pulmão?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-207.png",
+    "cena": "O garçom do rodízio segura quatro espetos tampados diante de uma pequena horta com duas árvores em forma de balão, ainda verdinhas e murchas; um relógio de parede marca o meio da tarde e a plaquinha de duas cores está de lado.",
+    "foco": "50% 35%",
+    "alt": "Bebê com pressa de nascer: qual remédio amadurece o pulmão?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-207-macete.png",
+    "cena": "O garçom rega a horta com um regador dourado; as duas árvores-balão enchem e as folhas ganham bolhas de sabão brilhantes; no céu da janela aparecem duas luas, uma para cada dose, e a plaquinha fica no verde.",
+    "alt": "Entre 24 e 34 semanas: betametasona"
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman, gravida 1, at 30 weeks of gestation has regular painful contractions every 4 minutes. Her cervix is 4 cm dilated and 80% effaced. Membranes are intact, and the fetal heart tracing is category I.",
+    "pergunta": "Which medication most directly lowers her newborn risk of respiratory distress syndrome?",
+    "alternativas": {
+      "A": {
+        "texto": "Intramuscular betamethasone",
+        "quiz": "Betametasona"
+      },
+      "B": {
+        "texto": "Intravenous magnesium sulfate",
+        "quiz": "Sulfato de magnésio"
+      },
+      "C": {
+        "texto": "Oral nifedipine",
+        "quiz": "Nifedipino"
+      },
+      "D": {
+        "texto": "Vaginal progesterone",
+        "quiz": "Progesterona"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Entre 24 e 34 semanas: *betametasona*",
+    "certa": [
+      "No trabalho de parto prematuro entre 24 e 34 semanas, o *antenatal corticosteroid* (betametasona 12 mg IM, duas doses com 24 horas de intervalo) acelera a maturação pulmonar: os *type II pneumocytes* produzem mais surfactante. Isso reduz a *respiratory distress syndrome*, a hemorragia intraventricular, a enterocolite necrosante e a mortalidade neonatal."
+    ],
+    "termos": [
+      "antenatal corticosteroids",
+      "betamethasone",
+      "surfactant",
+      "respiratory distress syndrome"
+    ],
+    "erradas": {
+      "B": "Antes de 32 semanas, o magnésio intravenoso serve de neuroproteção fetal (menos paralisia cerebral), sem efeito sobre o pulmão.",
+      "C": "O nifedipino é tocolítico: segura o parto por cerca de 48 horas para o corticoide agir, mas sozinho não amadurece o pulmão.",
+      "D": "A progesterona vaginal previne parto prematuro em gestante assintomática com colo curto; não serve no trabalho de parto ativo."
+    },
+    "macete": {
+      "frase": "Corticoide é o *adubo do pulmão*: duas doses, 24 horas de intervalo, e o pneumócito tipo II começa a fazer o *sabão* (surfactante). Tocolítico *compra tempo* para o adubo agir; magnésio abaixo de 32 semanas *protege o cérebro*.",
+      "apoio": "O NBME lista as quatro drogas do parto prematuro e pergunta o papel de cada uma: corticoide para o pulmão, magnésio para o cérebro (antes de 32 semanas), tocolítico para ganhar 48 horas e penicilina se o GBS for positivo ou desconhecido.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de Quinta na obstetrícia. Uma gestante de 30 semanas em trabalho de parto, e a equipe quer dar ao pulmão do bebê a melhor chance. Várias drogas entram nesse cenário, mas só uma faz esse trabalho.",
+    "palavras_chave": [
+      "30 weeks",
+      "regular contractions",
+      "cervical dilation",
+      "neonatal outcomes"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Parto prematuro com 30 semanas. E o pulmão?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

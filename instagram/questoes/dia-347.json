@@ -1,0 +1,100 @@
+{
+  "dia": 347,
+  "data": "2027-10-14",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Leucocoria",
+  "conceito": "Leukocoria in an infant: think retinoblastoma (RB1), urgent ophthalmology referral",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Visão (segunda quinta-feira de outubro, 14/10/2027).",
+  "remix_de": null,
+  "explicacao_em": "2027-10-15",
+  "tom": "acolhedor",
+  "gancho": "A foto com flash *pode trazer um aviso importante*",
+  "gancho_apoio": "Dia Mundial da Visão. Um reflexo diferente num dos olhos de um bebê.",
+  "imagem": {
+    "arquivo": "dia-347.png",
+    "cena": "Uma câmera antiga com flash sobre a mesa e, à frente dela, duas lanternas pequenas: uma brilha em vermelho quente e a outra brilha em branco; luz suave, clima calmo.",
+    "foco": "50% 35%",
+    "alt": "A foto com flash pode trazer um aviso importante"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-347-macete.png",
+    "cena": "Callback: a lanterna branca guia um barquinho de papel até um porto com um farol em forma de olho, onde uma porta aberta e iluminada espera; a lanterna vermelha fica tranquila na mesa.",
+    "foco": "50% 45%",
+    "alt": "Leucocoria com estrabismo: retinoblastoma até prova em contrário"
+  },
+  "questao": {
+    "vinheta": "A 14-month-old girl is brought because her parents noticed that her right pupil looks white in flash photographs. Recently, her right eye has started turning inward. She was born at term. Her father had an eye removed in early childhood because of a tumor. The red reflex is absent on the right.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Congenital cataract",
+        "quiz": "Catarata congênita"
+      },
+      "B": {
+        "texto": "Coats disease",
+        "quiz": "Doença de Coats"
+      },
+      "C": {
+        "texto": "Retinopathy of prematurity",
+        "quiz": "Retinop. prematuro"
+      },
+      "D": {
+        "texto": "Retinoblastoma",
+        "quiz": "Retinoblastoma"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Leucocoria com estrabismo: *retinoblastoma* até prova em contrário",
+    "certa": [
+      "*Leukocoria* (reflexo branco no lugar do vermelho) com estrabismo numa criança pequena e pai com tumor ocular na infância aponta para *retinoblastoma* hereditário, por mutação germinativa no *RB1* (13q14). A conduta é *urgent ophthalmology referral* para exame sob anestesia e imagem, sem biópsia, porque ela pode espalhar células tumorais."
+    ],
+    "termos": [
+      "leukocoria",
+      "retinoblastoma",
+      "RB1",
+      "urgent ophthalmology referral"
+    ],
+    "erradas": {
+      "A": "Catarata congênita está presente desde o nascimento e não explica a história familiar de tumor ocular tratado com retirada do olho.",
+      "B": "Doença de Coats é uma telangiectasia retiniana, geralmente em meninos, unilateral e sem padrão hereditário.",
+      "C": "Retinopatia da prematuridade ocorre em prematuros que receberam oxigênio, e ela nasceu a termo."
+    },
+    "macete": {
+      "frase": "*Flash vermelho tranquiliza; flash branco encaminha*",
+      "apoio": "No flash, o olho vermelho é bom sinal. Reflexo branco em criança pequena é aviso para o oftalmologista com urgência. RB1 fica no cromossomo 13, e quem tem a forma hereditária precisa de seguimento longo, porque o risco de osteossarcoma também aumenta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial da Visão. Nas fotos com flash, uma pupila sai branca. O olho começou a desviar, e o pai teve um tumor ocular quando era pequeno. Qual é o diagnóstico mais provável?",
+    "palavras_chave": [
+      "14-month-old",
+      "white pupil in photos",
+      "strabismus",
+      "family history"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Oftalmologia",
+      "#Pediatrics",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Pupila branca no flash e estrabismo:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

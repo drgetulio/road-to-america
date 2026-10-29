@@ -1,0 +1,87 @@
+{
+  "dia": 180,
+  "data": "2027-04-30",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Digoxina",
+  "conceito": "Digoxin: inhibits Na/K-ATPase, toxicity brings yellow vision and hyperkalemia",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-01",
+  "tom": null,
+  "gancho": "Tia Meia-Vida e o mundo pintado de *amarelo canarinho*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-180.png",
+    "cena": "Tia Meia-Vida atrás do balcão, ao lado de um vaso de dedaleiras roxas. A farmácia tem quatro entradas diferentes, todas abertas e funcionando: uma porta giratória, uma porta de correr, uma catraca estreita e uma porta vaivém. Qual delas vai emperrar?",
+    "foco": "50% 35%",
+    "alt": "Tia Meia-Vida atrás do balcão, ao lado de um vaso de dedaleiras roxas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-180-macete.png",
+    "cena": "Um galho de dedaleira trava a porta giratória, enquanto as outras três entradas seguem funcionando: as bolinhas verdes (potássio) se amontoam do lado de fora, as navy (sódio) ficam presas dentro, e a vitrine inteira fica tingida de amarelo canarinho. A Tia mostra um frasco de antídoto com um anticorpo em forma de Y.",
+    "alt": "Digoxina trava a bomba Na/K"
+  },
+  "questao": {
+    "vinheta": "An 80-year-old woman takes digoxin for heart failure with atrial fibrillation. Two weeks after starting amiodarone, she has nausea, confusion, and yellow halos around lights. Serum potassium is 6.0 mEq/L, and ECG shows frequent ventricular ectopy.",
+    "pergunta": "Direct inhibition of which protein explains both the inotropic effect and the hyperkalemia?",
+    "alternativas": {
+      "A": {
+        "texto": "Na+/K+-ATPase",
+        "quiz": "Na/K-ATPase"
+      },
+      "B": {
+        "texto": "Na+/Ca2+ exchanger",
+        "quiz": "Trocador Na/Ca"
+      },
+      "C": {
+        "texto": "L-type calcium channel",
+        "quiz": "Canal de Ca tipo L"
+      },
+      "D": {
+        "texto": "Na-K-2Cl cotransporter",
+        "quiz": "Cotransp. Na-K-2Cl"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Digoxina trava a *bomba Na/K*",
+    "certa": [
+      "A *digoxin* inibe diretamente a *Na+/K+-ATPase* do miócito: o sódio acumula dentro da célula, o *Na+/Ca2+ exchanger* tira menos cálcio e a contração fica mais forte. A mesma bomba parada no corpo todo deixa o potássio fora das células, e a *hyperkalemia* indica gravidade na intoxicação aguda. A amiodarona aumentou o nível da digoxina."
+    ],
+    "termos": [
+      "digoxin",
+      "Na+/K+-ATPase",
+      "hyperkalemia",
+      "digoxin immune Fab"
+    ],
+    "erradas": {
+      "B": "O trocador Na/Ca é afetado de forma indireta, pelo excesso de sódio; ele não é o alvo direto da droga.",
+      "C": "Bloquear o canal de cálcio tipo L é o mecanismo de verapamil e diltiazem, que diminuem a contração.",
+      "D": "O cotransportador Na-K-2Cl da alça de Henle é o alvo da furosemida, que tende a baixar o potássio."
+    },
+    "macete": {
+      "frase": "A digoxina *trava a catraca* (bomba Na/K): o sódio fica preso dentro, sobra cálcio e o coração bate forte; o potássio fica do lado de fora e o mundo ganha um filtro *amarelo canarinho*. Antídoto: *digoxin immune Fab*.",
+      "apoio": "O NBME cobra os gatilhos de toxicidade (hipocalemia por diurético, insuficiência renal, amiodarona, verapamil, quinidina), a hipercalemia como sinal de gravidade e o Fab antidigoxina como tratamento.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com a Tia Meia-Vida e um vaso de dedaleiras no balcão. Paciente em uso de digoxina, remédio novo na receita e um mundo que ficou amarelo. Qual proteína a droga trava?",
+    "palavras_chave": [
+      "heart failure",
+      "amiodarone started",
+      "yellow vision",
+      "ventricular ectopy"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Digoxina: qual proteína ela inibe?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

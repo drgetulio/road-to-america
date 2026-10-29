@@ -1,0 +1,93 @@
+{
+  "dia": 210,
+  "data": "2027-05-30",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: HPV e câncer do colo do útero (dia 127), MHC I e MHC II (dia 176), Influenza: shift e drift (dia 204)",
+  "conceito": "Remix: HPV 16 and 18 oncogenesis + MHC I vs MHC II + Influenza shift vs drift",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    127,
+    176,
+    204
+  ],
+  "explicacao_em": "2027-05-31",
+  "tom": null,
+  "gancho": "Remix viral: HPV, MHC e influenza na *mesma* mesa",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-210.png",
+    "cena": "Um toca-discos de DJ com três discos de rótulos com ícones simples (uma bicicleta com dois freios, uma bandeja de garçom com uma prata e um álbum de figurinhas) e um quarto disco com uma seringa tentando entrar na pilha.",
+    "foco": "50% 35%",
+    "alt": "Remix viral: HPV, MHC e influenza na mesma mesa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-210-macete.png",
+    "cena": "O disco da bandeja toca e acende verde, e uma bandejinha de prata é oferecida a um personagem de capacete com o formato de um 8; os discos da bicicleta e do álbum ganham um risco vermelho, e o disco da seringa é barrado por um cone.",
+    "alt": "Vírus dentro da célula: MHC I para CD8"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has cervical intraepithelial neoplasia grade 3, and biopsy is positive for HPV 16. Her 11-year-old daughter is due for HPV vaccination, and the mother asks several questions about the virus.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "HPV E6 binds and inactivates Rb",
+        "quiz": "E6 inativa Rb",
+        "dia": 127
+      },
+      "B": {
+        "texto": "Infected cells show viral peptides on MHC I to CD8+ T cells",
+        "quiz": "MHC I para CD8",
+        "dia": 176
+      },
+      "C": {
+        "texto": "The vaccine is updated yearly because of antigenic shift",
+        "quiz": "Vacina anual (shift)",
+        "dia": 204
+      },
+      "D": {
+        "texto": "The vaccine contains live attenuated virus",
+        "quiz": "Vírus vivo atenuado"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Vírus dentro da célula: *MHC I para CD8*",
+    "certa": [
+      "Proteínas virais produzidas dentro da célula infectada são quebradas no proteassomo, entram no retículo pelo *TAP* e são apresentadas no *MHC I* aos linfócitos *CD8+* citotóxicos, que eliminam a célula. É a via endógena; MHC II apresenta peptídeos de fora (fagocitados) ao CD4."
+    ],
+    "termos": [
+      "MHC class I",
+      "CD8+ T cells",
+      "HPV E6 and E7",
+      "L1 virus-like particle"
+    ],
+    "erradas": {
+      "A": "Dia 127: o E6 degrada a p53; quem inativa a Rb é o E7 (seis vem antes de sete, P vem antes de R).",
+      "C": "Dia 204: o antigenic shift é do influenza A, com genoma segmentado; a vacina de HPV não é anual e o vírus é de DNA.",
+      "D": "Intruso: a vacina de HPV é recombinante, feita de partículas semelhantes a vírus com a proteína L1, sem vírus vivo."
+    },
+    "macete": {
+      "frase": "Vírus *mora dentro*, então mostra na *bandeja do MHC I* para o *CD8* (a regra do 8: um vezes oito, dois vezes quatro). E6 com p53, E7 com Rb (*seis antes de sete, P antes de R*). Vacina de HPV é só a *capa* (L1), sem vírus vivo e sem dose anual.",
+      "apoio": "O NBME troca E6 com E7 e MHC I com MHC II; lembre a regra do 8 (MHC I com CD8, MHC II com CD4) e que a vacina de HPV é de VLP com L1.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de Remix: três conceitos de Step 1 que já passaram por aqui (dias 127, 176 e 204) e um intruso. Uma mãe em acompanhamento e uma filha na idade da vacina. Só uma afirmação está correta.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual afirmação está certa?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

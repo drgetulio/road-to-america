@@ -1,0 +1,99 @@
+{
+  "dia": 247,
+  "data": "2027-07-06",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Rastreamento de Cushing",
+  "conceito": "Cushing screening: late-night salivary cortisol, 24-hour urine cortisol or 1 mg dexamethasone suppression",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-07",
+  "tom": null,
+  "gancho": "Hormônio *hiperativo* no plantão: qual exame flagra primeiro?",
+  "gancho_apoio": "Hematomas fáceis, fraqueza nas coxas e estrias violáceas. Qual exame abre a investigação?",
+  "imagem": {
+    "arquivo": "dia-247.png",
+    "cena": "Numa estrada, uma placa verde de rodovia sem letras aponta três saídas. Um carrinho de detetive, com uma lupa saindo pela janela, para no acostamento e observa uma molécula redonda de hormônio, elétrica, que corre em círculos sem parar. Uma saída sobe o morro até um enorme aparelho de ressonância, outra leva a um laboratório pequeno cheio de tubos e a terceira some numa curva.",
+    "foco": "50% 35%",
+    "alt": "Hormônio hiperativo no plantão: qual exame flagra primeiro?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-247-macete.png",
+    "cena": "O detetive segue a molécula até uma cidadezinha de madrugada, com todas as janelas apagadas menos uma varanda. Lá, sob a lua, a molécula continua acordada e cai num tubinho de coleta de saliva. Ao lado, uma jarra grande de coleta de 24 horas e um comprimido pequeno de dexametasona que tenta apagar a luz da varanda e não consegue. A ressonância fica lá no morro, esperando a vez dela.",
+    "foco": "50% 40%",
+    "alt": "Primeiro provar o hipercortisolismo"
+  },
+  "questao": {
+    "vinheta": "Over 12 months, a 38-year-old woman has developed easy bruising, proximal muscle weakness, and new hypertension. She uses no glucocorticoids or other drugs. Examination shows wide violaceous abdominal striae, facial plethora, and thin skin. Fasting glucose is 132 mg/dL.",
+    "pergunta": "Which is the most appropriate initial test?",
+    "alternativas": {
+      "A": {
+        "texto": "Morning plasma ACTH level",
+        "quiz": "ACTH matinal"
+      },
+      "B": {
+        "texto": "MRI of the pituitary gland",
+        "quiz": "RM de hipófise"
+      },
+      "C": {
+        "texto": "Random morning serum cortisol",
+        "quiz": "Cortisol aleatório"
+      },
+      "D": {
+        "texto": "Late-night salivary cortisol",
+        "quiz": "Salivar à noite"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Primeiro provar o *hipercortisolismo*",
+    "certa": [
+      "Antes de pedir ACTH ou imagem, é preciso provar que existe hipercortisolismo. Os testes de rastreamento aceitos são o *late-night salivary cortisol* (o cortisol deveria estar no ponto mais baixo perto da meia-noite), o *24-hour urinary free cortisol* e o *1 mg overnight dexamethasone suppression test*; dois alterados confirmam. Só depois o ACTH separa a causa dependente da independente de ACTH."
+    ],
+    "termos": [
+      "late-night salivary cortisol",
+      "24-hour urinary free cortisol",
+      "dexamethasone suppression test",
+      "ACTH"
+    ],
+    "erradas": {
+      "A": "O ACTH vem depois de confirmar o hipercortisolismo, para separar causa hipofisária ou ectópica de causa adrenal.",
+      "B": "Ressonância antes da bioquímica encontra incidentalomas de hipófise em cerca de 10% das pessoas e confunde mais do que ajuda.",
+      "C": "O cortisol aleatório da manhã varia muito e pode ser normal no Cushing, porque o que se perde é a queda noturna."
+    },
+    "macete": {
+      "frase": "Cushing é o hormônio que *não dorme*: flagre ele *à noite*",
+      "apoio": "A molécula que pula na varanda de madrugada é o cortisol sem ritmo. Para flagrar, colha a saliva à noite, junte a urina de 24 horas ou dê 1 mg de dexametasona e veja se a luz apaga de manhã.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hematomas, fraqueza proximal, estrias violáceas e glicemia subindo, sem uso de corticoide. Qual é o primeiro exame?",
+    "palavras_chave": [
+      "easy bruising",
+      "proximal weakness",
+      "violaceous striae",
+      "new hypertension"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Endocrinologia",
+      "#ClinicaMedica",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é o primeiro exame?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

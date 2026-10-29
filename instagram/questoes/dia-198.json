@@ -1,0 +1,87 @@
+{
+  "dia": 198,
+  "data": "2027-05-18",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Hiperaldosteronismo primário",
+  "conceito": "Primary aldosteronism screening: aldosterone/renin ratio in resistant or hypokalemic hypertension",
+  "personagem": null,
+  "gancho_data": "Semana do Dia Mundial da Hipertensão (17/5).",
+  "remix_de": null,
+  "explicacao_em": "2027-05-19",
+  "tom": null,
+  "gancho": "Pressão que não baixa e *potássio* que some: o que pedir?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-198.png",
+    "cena": "Uma placa verde de rodovia de três saídas sem letras; na estrada, um carrinho leva um saleiro gigante no banco de trás e deixa cair bananas pela janela, enquanto um medidor de pressão num poste aponta para o vermelho.",
+    "foco": "50% 35%",
+    "alt": "Pressão que não baixa e potássio que some: o que pedir?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-198-macete.png",
+    "cena": "Antes da saída da tomografia, o carrinho, agora com dois chapeuzinhos triangulares no teto (as adrenais), para numa balança de feira: de um lado, um saco pesado de sal (aldosterona alta), do outro, uma pena levinha (renina baixa); a balança pende e uma seta verde aponta para a conta, não para a câmera.",
+    "alt": "Hipertensão resistente com K baixo: aldosterona sobre renina"
+  },
+  "questao": {
+    "vinheta": "A 46-year-old woman has a blood pressure of 162/98 mm Hg despite full doses of amlodipine, lisinopril, and chlorthalidone with good adherence. Serum potassium is 3.2 mEq/L despite oral supplements, and sodium is 143 mEq/L. She does not use NSAIDs or licorice.",
+    "pergunta": "Which is the most appropriate next step in diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "CT scan of the adrenal glands",
+        "quiz": "TC de adrenais"
+      },
+      "B": {
+        "texto": "Plasma aldosterone and renin activity",
+        "quiz": "Aldosterona/renina"
+      },
+      "C": {
+        "texto": "24-hour urine metanephrines",
+        "quiz": "Metanefrinas"
+      },
+      "D": {
+        "texto": "Renal artery duplex ultrasonography",
+        "quiz": "Doppler renal"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Hipertensão resistente com K baixo: *aldosterona sobre renina*",
+    "certa": [
+      "Hipertensão resistente (três remédios, um deles diurético) e hipocalemia são indicações clássicas de rastrear *primary aldosteronism*. O primeiro exame é a *aldosterone-to-renin ratio*: aldosterona alta com renina suprimida. Se positivo, vem a confirmação (por exemplo, sobrecarga de sal) e só depois a TC das adrenais e o cateterismo das veias adrenais."
+    ],
+    "termos": [
+      "primary aldosteronism",
+      "aldosterone-to-renin ratio",
+      "resistant hypertension",
+      "hypokalemia"
+    ],
+    "erradas": {
+      "A": "A TC antes do diagnóstico bioquímico acha nódulos que não funcionam (incidentalomas) e pode levar à cirurgia errada.",
+      "C": "Metanefrinas investigam feocromocitoma, que costuma dar crises de cefaleia, sudorese e palpitação, sem hipocalemia típica.",
+      "D": "O Doppler renal procura estenose de artéria renal, que também eleva a renina; aqui a pista do potássio baixo aponta para a aldosterona."
+    },
+    "macete": {
+      "frase": "Hiperaldosteronismo: a adrenal *guarda o sal e joga a banana fora* (retém sódio, perde potássio). Para achar, *primeiro a conta* (aldosterona alta sobre renina baixa), *depois a foto* (TC).",
+      "apoio": "O NBME oferece a TC de adrenal como primeiro passo; a sequência é rastrear com a relação aldosterona/renina, confirmar e só então localizar com imagem e cateterismo venoso.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Semana do Dia Mundial da Hipertensão. Três remédios em dose cheia, boa adesão e uma pressão teimosa, com potássio baixo de brinde. A prova quer o primeiro exame, não a imagem.",
+    "palavras_chave": [
+      "uncontrolled hypertension",
+      "three antihypertensives",
+      "low potassium",
+      "secondary hypertension"
+    ]
+  },
+  "quiz": {
+    "pergunta": "HAS resistente e K baixo. Primeiro exame?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

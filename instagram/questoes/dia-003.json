@@ -1,0 +1,95 @@
+{
+  "dia": 3,
+  "data": "2026-11-04",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Hiperplasia prostática benigna",
+  "conceito": "BPH: dihydrotestosterone from 5-alpha reductase drives transition zone growth",
+  "personagem": null,
+  "gancho_data": "Novembro Azul.",
+  "remix_de": null,
+  "explicacao_em": "2026-11-05",
+  "tom": null,
+  "gancho": "Obra no centro da cidade: por que o *trânsito* parou?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-003.png",
+    "cena": "Mapa de uma cidadezinha vista de cima: uma avenida (a uretra) passa bem no meio, e um prédio redondo no centro está inchando e espremendo a avenida. Carrinhos em forma de gota de água fazem fila num engarrafamento.",
+    "foco": "50% 35%",
+    "alt": "Obra no centro da cidade: por que o trânsito parou?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-003-macete.png",
+    "cena": "Callback da obra: em corte, um operário com uma betoneira transforma tijolos cinza comuns (testosterona) em tijolos dourados e mais fortes (DHT). Os tijolos dourados se empilham só no anel em volta da avenida, que é a parte do prédio que cresce.",
+    "alt": "A obra fica bem no meio da avenida"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man has 2 years of nocturia, hesitancy and a weak urinary stream. Digital rectal examination shows a smooth, symmetric, rubbery, enlarged prostate without nodules. The enlarged tissue surrounds the prostatic urethra.",
+    "pergunta": "Growth of this tissue is driven mainly by a hormone formed locally by which enzyme?",
+    "alternativas": {
+      "A": {
+        "texto": "Aromatase",
+        "quiz": "Aromatase"
+      },
+      "B": {
+        "texto": "5-alpha reductase type 2",
+        "quiz": "5-alfa-redutase"
+      },
+      "C": {
+        "texto": "17-alpha hydroxylase",
+        "quiz": "17-alfa-hidroxilase"
+      },
+      "D": {
+        "texto": "3-beta hydroxysteroid dehydrogenase",
+        "quiz": "3-beta-HSD"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "A obra fica bem no meio da avenida",
+    "certa": [
+      "O quadro é hiperplasia prostática benigna (BPH): próstata lisa, simétrica e elástica, com sintomas obstrutivos porque cresce a zona de transição (transition zone), que abraça a uretra. Dentro da próstata, a 5-alfa-redutase tipo 2 transforma a testosterona em di-hidrotestosterona (DHT), um androgênio mais potente que estimula a proliferação do estroma e do epitélio. Por isso a finasterida, que bloqueia essa enzima, reduz o volume da glândula."
+    ],
+    "termos": [
+      "benign prostatic hyperplasia",
+      "5-alpha reductase type 2",
+      "dihydrotestosterone",
+      "transition zone"
+    ],
+    "erradas": {
+      "A": "A aromatase transforma testosterona em estradiol, não em DHT, o androgênio que faz a próstata crescer.",
+      "C": "A 17-alfa-hidroxilase atua na adrenal e no testículo, antes da testosterona existir, e não é a etapa local que alimenta a próstata.",
+      "D": "A 3-beta-HSD também é uma etapa inicial da síntese de esteroides, longe da conversão final que acontece na próstata."
+    },
+    "macete": {
+      "frase": "Obra no meio da avenida: a zona de TRANSIÇÃO cresce bem em volta da uretra e trava o TRÂNSITO. Quem paga o concreto é a DHT, fabricada pela 5-alfa-redutase.",
+      "apoio": "Pegadinha de prova: O NBME troca as zonas: a BPH nasce na zona de transição (sintoma urinário cedo) e o carcinoma, na zona periférica (nódulo no toque retal).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Novembro Azul também é falar de próstata sem medo. Hoje, o mecanismo do crescimento benigno que aperta a uretra.",
+    "palavras_chave": [
+      "nocturia",
+      "weak urinary stream",
+      "digital rectal exam",
+      "androgens"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pathology",
+      "#NovembroAzul",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "A próstata cresce por causa de qual enzima?"
+  },
+  "exemplo": false
+}

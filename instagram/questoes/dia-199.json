@@ -1,0 +1,87 @@
+{
+  "dia": 199,
+  "data": "2027-05-19",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Nefropatia membranosa",
+  "conceito": "Membranous nephropathy: anti-PLA2R antibodies, subepithelial spike and dome deposits",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-20",
+  "tom": null,
+  "gancho": "Seu Néfron achou um *pente* na membrana do glomérulo",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-199.png",
+    "cena": "Em estilo manual de montagem, Seu Néfron examina com lupa a cerca do quintal, que ganhou pontinhas enfileiradas como os dentes de um pente; do outro lado, bolinhas brancas de proteína passam pela cerca e caem num balde cheio de espuma.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron achou um pente na membrana do glomérulo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-199-macete.png",
+    "cena": "Do lado de fora da cerca, entre as pontinhas, aparecem montinhos redondos grudados (os depósitos); Seu Néfron carimba em verde uma pequena fechadura pendurada num prego do lado de fora (o PLA2R) e aponta com a caneta.",
+    "alt": "Membranosa: anticorpo contra PLA2R"
+  },
+  "questao": {
+    "vinheta": "A 55-year-old man has 2 months of progressive leg swelling. Urine dipstick shows 4+ protein without blood, and 24-hour urine protein is 7 g. Serum albumin is 2.2 g/dL. Kidney biopsy shows diffusely thickened capillary walls, and silver stain shows spikes projecting from the glomerular basement membrane.",
+    "pergunta": "The antibody causing this condition most likely targets which antigen?",
+    "alternativas": {
+      "A": {
+        "texto": "Alpha-3 chain of type IV collagen",
+        "quiz": "Colágeno IV"
+      },
+      "B": {
+        "texto": "Myeloperoxidase",
+        "quiz": "Mieloperoxidase"
+      },
+      "C": {
+        "texto": "Phospholipase A2 receptor",
+        "quiz": "Receptor PLA2R"
+      },
+      "D": {
+        "texto": "C3 convertase",
+        "quiz": "C3 convertase"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Membranosa: anticorpo contra *PLA2R*",
+    "certa": [
+      "A *membranous nephropathy* é a causa clássica de síndrome nefrótica no adulto. Na forma primária, autoanticorpos contra o *phospholipase A2 receptor* do podócito formam imunocomplexos no lado de fora da membrana basal (*subepithelial deposits*). A membrana cresce entre os depósitos e, na prata, aparecem as espículas (*spike and dome*). Há risco de trombose, como a da veia renal."
+    ],
+    "termos": [
+      "membranous nephropathy",
+      "anti-PLA2R",
+      "subepithelial deposits",
+      "spike and dome"
+    ],
+    "erradas": {
+      "A": "Anticorpos contra a cadeia alfa-3 do colágeno IV causam a doença anti-membrana basal (Goodpasture), nefrítica, com depósito linear.",
+      "B": "Anticorpos contra a mieloperoxidase (p-ANCA) causam glomerulonefrite pauci-imune crescêntica, nefrítica, sem espículas.",
+      "D": "O fator nefrítico C3, que estabiliza a C3 convertase, aparece na glomerulopatia C3 e na glomerulonefrite membranoproliferativa, com aspecto de trilho de trem."
+    },
+    "macete": {
+      "frase": "Membranosa é a *cerca com pente*: os depósitos ficam *do lado de fora* da membrana (subepitelial) e a membrana cresce *espinhos* entre eles. Seu Néfron carimba o alvo: *PLA2R*, a fechadura do podócito.",
+      "apoio": "O NBME descreve adulto nefrótico com espículas na prata e pede o anticorpo (anti-PLA2R) ou as causas secundárias: lúpus classe V, hepatite B, tumores sólidos e AINEs.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na patologia renal. Edema de pernas, muita proteína na urina e uma biópsia com um desenho muito característico na prata. Qual alvo o anticorpo procura?",
+    "palavras_chave": [
+      "leg edema",
+      "heavy proteinuria",
+      "hypoalbuminemia",
+      "silver stain"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Nefrótico com espículas na prata. Qual alvo?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

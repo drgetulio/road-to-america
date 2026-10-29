@@ -1,0 +1,95 @@
+{
+  "dia": 272,
+  "data": "2027-07-31",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Paciente irritado",
+  "conceito": "Angry patient: acknowledge the emotion and apologize for the experience before explaining",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-01",
+  "tom": null,
+  "gancho": "A sala de espera virou *panela de pressão*. Quem baixa o fogo?",
+  "gancho_apoio": "Laudo perdido, viagem à toa e uma frase dita em voz alta. A ordem das próximas frases vale ponto.",
+  "imagem": {
+    "arquivo": "dia-272.png",
+    "cena": "Sala de espera desenhada como uma copa: um envelope de laudo vazio no balcão e, no fogão, uma panela de pressão apitando; a mão de um médico, com estetoscópio no pulso, hesita entre o botão do fogo e a tampa da panela.",
+    "foco": "50% 35%",
+    "alt": "A sala de espera virou panela de pressão. Quem baixa o fogo?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-272-macete.png",
+    "cena": "Callback: a mão do médico gira primeiro o botão do fogo para baixo, o vapor some e o apito para; só então a tampa se abre e sai um prato de feijão quentinho, servido com calma.",
+    "foco": "50% 45%",
+    "alt": "Primeiro acolhe, depois explica"
+  },
+  "questao": {
+    "vinheta": "A 47-year-old woman learns at the front desk that her MRI report never reached the clinic and her visit must be rescheduled. When the physician comes out, she raises her voice: \"I drove two hours and nobody bothered to call me!\" She makes no threats.",
+    "pergunta": "Which is the most appropriate initial response by the physician?",
+    "alternativas": {
+      "A": {
+        "texto": "\"The imaging center is responsible for sending the report.\"",
+        "quiz": "Explicar a falha"
+      },
+      "B": {
+        "texto": "\"Please lower your voice, or I will need to call security.\"",
+        "quiz": "Chamar a segurança"
+      },
+      "C": {
+        "texto": "\"I can see how frustrating this is, and I'm sorry it happened.\"",
+        "quiz": "Acolher e desculpar"
+      },
+      "D": {
+        "texto": "\"Let's use the time to go over your symptoms right now.\"",
+        "quiz": "Ir aos sintomas"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Primeiro *acolhe*, depois explica",
+    "certa": [
+      "Diante da raiva, o primeiro passo é *nomear a emoção e pedir desculpas pela experiência* (\"vejo que isso é frustrante, sinto muito pelo que aconteceu\"). Isso baixa a tensão e abre espaço para a conversa. A explicação da falha e a remarcação vêm depois, nunca antes."
+    ],
+    "termos": [
+      "acknowledge the emotion",
+      "apologize for the experience",
+      "empathic statement"
+    ],
+    "erradas": {
+      "A": "Explicar a falha (ou jogar a culpa em outro serviço) antes de acolher soa como desculpa e costuma aumentar a irritação.",
+      "B": "Segurança só entra quando há ameaça ou risco real; aqui há frustração, sem ameaça.",
+      "D": "Pular direto para os sintomas ignora a emoção e deixa a conversa travada."
+    },
+    "macete": {
+      "frase": "*Panela de pressão*: primeiro baixa o fogo, depois abre a tampa",
+      "apoio": "Na imagem, a frustração virou uma panela de pressão apitando no consultório. Acolher e pedir desculpas é baixar o fogo; explicar o que deu errado é abrir a tampa, e isso só funciona depois.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Duas horas de estrada, um laudo de ressonância que não chegou e uma reclamação em voz alta. Qual é a primeira coisa que o médico fala? Na prova, a ordem das frases decide a questão.",
+    "palavras_chave": [
+      "missed MRI report",
+      "rescheduled visit",
+      "upset patient",
+      "communication"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Comunicacao",
+      "#BehavioralScience"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Paciente irritada: qual é a primeira frase?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

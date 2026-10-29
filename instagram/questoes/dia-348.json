@@ -1,0 +1,100 @@
+{
+  "dia": 348,
+  "data": "2027-10-15",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Aminoglicosídeos",
+  "conceito": "Aminoglycosides: bind 30S, need oxygen-dependent uptake, nephrotoxic and ototoxic",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-16",
+  "tom": null,
+  "gancho": "O remédio que *só entra com oxigênio* e cobra caro do rim",
+  "gancho_apoio": "Antibiótico contra Pseudomonas, creatinina subindo e zumbido no ouvido.",
+  "imagem": {
+    "arquivo": "dia-348.png",
+    "cena": "Seu Néfron numa portaria confere um carrinho de entrega que só passa pela porta de uma bactéria se mostrar um bilhete em forma de bolha de oxigênio; ao lado, a porta de outra bactéria sem oxigênio fica fechada.",
+    "foco": "50% 35%",
+    "alt": "O remédio que só entra com oxigênio e cobra caro do rim"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-348-macete.png",
+    "cena": "Callback: dentro da bactéria, o carrinho emperra a metade menor de uma impressora de duas partes, que solta formulários com rabiscos trocados; do lado de fora, o Seu Néfron segura as costas com um cone vermelho e a Tia Meia-Vida aponta para uma concha do mar com etiqueta vermelha.",
+    "foco": "50% 45%",
+    "alt": "Aminoglicosídeos: 30S e entrada que depende de O2"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man receives an intravenous antibiotic for Pseudomonas bacteremia. After 10 days, his creatinine rises from 0.9 to 2.1 mg/dL, and he reports tinnitus and unsteadiness. The drug is ineffective against anaerobes because its uptake into bacteria requires oxygen.",
+    "pergunta": "Which mechanism best describes this drug?",
+    "alternativas": {
+      "A": {
+        "texto": "Binding the 30S subunit, causing mRNA misreading",
+        "quiz": "Liga 30S"
+      },
+      "B": {
+        "texto": "Inhibiting 50S peptidyl transferase",
+        "quiz": "Inibe 50S"
+      },
+      "C": {
+        "texto": "Inhibiting DNA gyrase",
+        "quiz": "Inibe DNA girase"
+      },
+      "D": {
+        "texto": "Binding D-Ala-D-Ala cell wall precursors",
+        "quiz": "Liga D-Ala-D-Ala"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Aminoglicosídeos: *30S* e entrada que depende de O2",
+    "certa": [
+      "Gentamicina, tobramicina e amicacina são *aminoglycosides*: ligam a subunidade *30S* do ribossomo, impedem a formação do complexo de iniciação e fazem o mRNA ser lido errado. Entram na bactéria por transporte que depende de oxigênio, por isso não atingem anaeróbios. Os efeitos adversos clássicos são *nephrotoxicity* (necrose tubular aguda), *ototoxicity* e bloqueio neuromuscular."
+    ],
+    "termos": [
+      "aminoglycosides",
+      "30S subunit",
+      "nephrotoxicity",
+      "ototoxicity"
+    ],
+    "erradas": {
+      "B": "Inibir a peptidil transferase da 50S é o mecanismo do cloranfenicol, ligado a anemia aplástica e síndrome do bebê cinzento.",
+      "C": "Inibir a DNA girase é das fluoroquinolonas, ligadas a tendinopatia e QT longo.",
+      "D": "Ligar D-Ala-D-Ala é da vancomicina, que age em gram-positivos e não cobre Pseudomonas."
+    },
+    "macete": {
+      "frase": "*Mean GNATS caNNOT kill anaerobes*",
+      "apoio": "Gentamicin, Neomycin, Amikacin, Tobramycin, Streptomycin; e NNOT de Nephrotoxicity, Neuromuscular blockade, Ototoxicity e Teratogen. Na imagem, o carrinho do remédio só passa na porta da bactéria com o bilhete de oxigênio, emperra a metade pequena da impressora e os formulários saem trocados.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dez dias de antibiótico venoso para Pseudomonas, creatinina dobrando, zumbido e desequilíbrio. E um detalhe: o remédio não funciona contra anaeróbios. Qual é o mecanismo?",
+    "palavras_chave": [
+      "Pseudomonas bacteremia",
+      "rising creatinine",
+      "tinnitus",
+      "oxygen-dependent uptake"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Antibioticos",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Nefro e ototóxico, sem anaeróbio:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

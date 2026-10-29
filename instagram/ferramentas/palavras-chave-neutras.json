@@ -1,0 +1,1883 @@
+{
+ "_sobre": "Palavras-chave neutras da legenda do dia D: sinais, exames e contexto da vinheta, nunca o nome da resposta nem os termos de explicacao.termos (esses ficam para o gabarito, no D+1). Os domingos de remix usam a lista padrão de sincronizar-legendas.mjs.",
+ "dias": {
+  "1": [
+   "urethritis",
+   "scrotal pain",
+   "Gram stain",
+   "cell culture"
+  ],
+  "2": [
+   "chest pain",
+   "ST elevation",
+   "cardiac catheterization lab",
+   "reperfusion"
+  ],
+  "3": [
+   "nocturia",
+   "weak urinary stream",
+   "digital rectal exam",
+   "androgens"
+  ],
+  "4": [
+   "well-child visit",
+   "car seat",
+   "child passenger safety",
+   "injury prevention"
+  ],
+  "5": [
+   "lower urinary tract symptoms",
+   "prostate volume",
+   "PSA",
+   "adverse effects"
+  ],
+  "6": [
+   "screening study",
+   "survival from diagnosis",
+   "age at death",
+   "study bias"
+  ],
+  "8": [
+   "recurrent otitis media",
+   "low immunoglobulins",
+   "flow cytometry",
+   "primary immunodeficiency"
+  ],
+  "9": [
+   "hematemesis",
+   "melena",
+   "NSAID use",
+   "hypotension"
+  ],
+  "10": [
+   "ambiguous genitalia",
+   "hyponatremia",
+   "hyperkalemia",
+   "newborn"
+  ],
+  "11": [
+   "fever and cough",
+   "lobar consolidation",
+   "fully immunized",
+   "preschool child"
+  ],
+  "12": [
+   "anhedonia",
+   "hypersomnia",
+   "decreased need for sleep",
+   "mood disorders"
+  ],
+  "13": [
+   "HbA1c",
+   "screening program",
+   "test performance",
+   "biostatistics"
+  ],
+  "15": [
+   "hemoptysis",
+   "red blood cell casts",
+   "renal biopsy",
+   "immunofluorescence"
+  ],
+  "16": [
+   "postoperative dyspnea",
+   "pleuritic chest pain",
+   "calf swelling",
+   "hip replacement"
+  ],
+  "17": [
+   "never smoker",
+   "FEV1/FVC",
+   "lower-lobe emphysema",
+   "elevated aminotransferases"
+  ],
+  "18": [
+   "pelvic pain",
+   "spotting",
+   "adnexal mass",
+   "transvaginal ultrasound"
+  ],
+  "19": [
+   "skin abscess",
+   "gram-positive cocci in clusters",
+   "oxacillin",
+   "antibiotic resistance"
+  ],
+  "20": [
+   "Jehovah's Witness",
+   "severe anemia",
+   "blood transfusion",
+   "medical ethics"
+  ],
+  "22": [
+   "diplopia",
+   "ptosis",
+   "fatigable weakness",
+   "ice pack test"
+  ],
+  "23": [
+   "vomiting and diarrhea",
+   "orthostatic hypotension",
+   "urine sodium",
+   "creatinine"
+  ],
+  "24": [
+   "recurrent fractures",
+   "gray-brown teeth",
+   "hearing loss",
+   "osteopenia"
+  ],
+  "25": [
+   "peanut",
+   "urticaria",
+   "wheezing",
+   "hypotension"
+  ],
+  "26": [
+   "atrial fibrillation",
+   "anticoagulation",
+   "latent tuberculosis",
+   "pharmacokinetics"
+  ],
+  "27": [
+   "motor vehicle collision",
+   "splenic laceration",
+   "hemorrhagic shock",
+   "Jehovah's Witness"
+  ],
+  "29": [
+   "bloating",
+   "iron deficiency anemia",
+   "pruritic vesicles",
+   "wheat"
+  ],
+  "30": [
+   "new HIV diagnosis",
+   "viral load",
+   "antiretroviral therapy",
+   "Toxoplasma IgG"
+  ],
+  "31": [
+   "stab wound",
+   "hyperreflexia",
+   "vibration and position sense",
+   "pain and temperature"
+  ],
+  "32": [
+   "tibial shaft fracture",
+   "pain out of proportion",
+   "passive stretch",
+   "orthopedic trauma"
+  ],
+  "33": [
+   "asthma",
+   "myocardial infarction",
+   "secondary prevention",
+   "beta-blockers"
+  ],
+  "34": [
+   "elective cholecystectomy",
+   "biliary colic",
+   "consent form",
+   "medical ethics"
+  ],
+  "36": [
+   "shrimp allergy",
+   "urticaria",
+   "wheezing",
+   "hypotension"
+  ],
+  "37": [
+   "type 1 diabetes",
+   "metabolic acidosis",
+   "hypokalemia",
+   "IV fluids"
+  ],
+  "38": [
+   "ARDS",
+   "PaO2",
+   "FiO2",
+   "PEEP"
+  ],
+  "39": [
+   "12-month visit",
+   "well-child care",
+   "live-virus vaccines",
+   "immunization schedule"
+  ],
+  "40": [
+   "LDL cholesterol",
+   "tendon xanthomas",
+   "family history of MI",
+   "primary prevention"
+  ],
+  "41": [
+   "cohort study",
+   "coffee",
+   "atrial fibrillation",
+   "study interpretation"
+  ],
+  "43": [
+   "metal belt buckle",
+   "itchy plaque",
+   "nickel",
+   "delayed reaction"
+  ],
+  "44": [
+   "unfractionated heparin",
+   "platelet count drop",
+   "deep vein thrombosis",
+   "anticoagulation"
+  ],
+  "45": [
+   "ventricular myocyte",
+   "voltage-gated calcium channel",
+   "contractility",
+   "cardiac electrophysiology"
+  ],
+  "46": [
+   "recurrent palpitations",
+   "fear of dying",
+   "avoidance",
+   "long-term treatment"
+  ],
+  "47": [
+   "Parkinson disease",
+   "nausea",
+   "orthostatic hypotension",
+   "dopamine"
+  ],
+  "48": [
+   "new diagnostic test",
+   "deep venous thrombosis",
+   "negative result",
+   "low clinical suspicion"
+  ],
+  "50": [
+   "neonatal seizure",
+   "cleft palate",
+   "truncus arteriosus",
+   "hypocalcemia"
+  ],
+  "51": [
+   "first MTP joint",
+   "hydrochlorothiazide",
+   "synovial fluid",
+   "polarized microscopy"
+  ],
+  "52": [
+   "subareolar nodule",
+   "10-year-old girl",
+   "growth velocity",
+   "pediatric endocrinology"
+  ],
+  "53": [
+   "third-trimester bleeding",
+   "prior cesarean delivery",
+   "soft uterus",
+   "obstetric emergency"
+  ],
+  "54": [
+   "kidney transplant",
+   "gout flares",
+   "pancytopenia",
+   "drug interaction"
+  ],
+  "55": [
+   "preoperative verification",
+   "consent form",
+   "laterality discrepancy",
+   "patient safety"
+  ],
+  "57": [
+   "migratory arthritis",
+   "new murmur",
+   "untreated pharyngitis",
+   "ASO titer"
+  ],
+  "58": [
+   "palpitations",
+   "hypotension",
+   "wide-complex tachycardia",
+   "altered mental status"
+  ],
+  "59": [
+   "menstrual cycle",
+   "late follicular phase",
+   "estradiol",
+   "hypothalamic-pituitary-ovarian axis"
+  ],
+  "60": [
+   "smoking cessation",
+   "readiness to change",
+   "counseling",
+   "behavioral science"
+  ],
+  "61": [
+   "bacterial vaginosis",
+   "alcohol",
+   "facial flushing",
+   "drug reaction"
+  ],
+  "62": [
+   "refusal of intubation",
+   "severe pneumonia",
+   "family disagreement",
+   "medical ethics"
+  ],
+  "64": [
+   "chronic cough",
+   "night sweats",
+   "weight loss",
+   "carbolfuchsin stain"
+  ],
+  "65": [
+   "sudden hemiparesis",
+   "aphasia",
+   "last known well",
+   "emergency department"
+  ],
+  "66": [
+   "newborn",
+   "palmar crease",
+   "atrioventricular septal defect",
+   "karyotype"
+  ],
+  "67": [
+   "fall on outstretched hand",
+   "wrist pain",
+   "skateboarding",
+   "normal radiographs"
+  ],
+  "68": [
+   "dysuria",
+   "urinary frequency",
+   "nitrites",
+   "nonpregnant woman"
+  ],
+  "69": [
+   "smart infusion pumps",
+   "new process",
+   "quality improvement",
+   "hospital technology"
+  ],
+  "71": [
+   "oral thrush",
+   "chronic diarrhea",
+   "failure to thrive",
+   "Pneumocystis pneumonia"
+  ],
+  "72": [
+   "cirrhosis",
+   "hematemesis",
+   "hypotension",
+   "airway protection"
+  ],
+  "73": [
+   "frequent falls",
+   "calf enlargement",
+   "creatine kinase",
+   "maternal uncle"
+  ],
+  "74": [
+   "sad mood",
+   "loss of interest",
+   "poor sleep",
+   "worthlessness"
+  ],
+  "75": [
+   "heart failure",
+   "pulmonary edema",
+   "tinnitus",
+   "hypokalemia"
+  ],
+  "76": [
+   "insulin overdose",
+   "medication error",
+   "event review",
+   "patient safety"
+  ],
+  "78": [
+   "snakebite",
+   "antivenom",
+   "rash and arthralgia",
+   "proteinuria"
+  ],
+  "79": [
+   "tearing chest pain",
+   "pulse differential",
+   "hypertension",
+   "CT angiography"
+  ],
+  "80": [
+   "rheumatoid arthritis",
+   "fatigue",
+   "iron studies",
+   "microcytic anemia"
+  ],
+  "81": [
+   "well-child visit",
+   "cannot sit without support",
+   "infant reflexes",
+   "motor milestones"
+  ],
+  "82": [
+   "type 2 diabetes",
+   "septic shock",
+   "acute kidney injury",
+   "high anion gap"
+  ],
+  "83": [
+   "psychotherapy session",
+   "threat of violence",
+   "named person",
+   "medical ethics"
+  ],
+  "85": [
+   "hypopigmented plaque",
+   "anesthetic skin lesion",
+   "thickened ulnar nerve",
+   "granulomas"
+  ],
+  "86": [
+   "COPD",
+   "worsening dyspnea",
+   "purulent sputum",
+   "arterial blood gas"
+  ],
+  "87": [
+   "in vitro fertilization",
+   "oocyte retrieval",
+   "hCG trigger",
+   "meiosis"
+  ],
+  "88": [
+   "28 weeks",
+   "blood group O",
+   "antibody screen",
+   "prenatal care"
+  ],
+  "89": [
+   "osteoporosis",
+   "retrosternal pain",
+   "odynophagia",
+   "medication counseling"
+  ],
+  "90": [
+   "randomized trial",
+   "placebo",
+   "side effects",
+   "analysis plan"
+  ],
+  "92": [
+   "college dormitory",
+   "fever and neck stiffness",
+   "purpura",
+   "adrenal hemorrhage"
+  ],
+  "93": [
+   "chronic kidney disease",
+   "lisinopril and spironolactone",
+   "bradycardia",
+   "ECG changes"
+  ],
+  "94": [
+   "continuous infusion",
+   "glomerular filtration",
+   "tubular secretion",
+   "renal physiology"
+  ],
+  "95": [
+   "breast lump",
+   "mobile mass",
+   "young woman",
+   "no family history"
+  ],
+  "96": [
+   "percutaneous coronary intervention",
+   "femoral access bleeding",
+   "anticoagulant reversal",
+   "prolonged aPTT"
+  ],
+  "97": [
+   "rapid antigen test",
+   "referral clinic",
+   "health fair",
+   "screening"
+  ],
+  "99": [
+   "fever and sore throat",
+   "fatigue",
+   "posterior cervical lymphadenopathy",
+   "splenomegaly"
+  ],
+  "100": [
+   "street parade",
+   "hot and humid",
+   "confusion",
+   "rectal temperature"
+  ],
+  "101": [
+   "binge drinking",
+   "poor intake",
+   "hypoglycemia",
+   "hepatomegaly"
+  ],
+  "102": [
+   "barking cough",
+   "hoarseness",
+   "inspiratory stridor",
+   "toddler"
+  ],
+  "103": [
+   "35 weeks",
+   "drowsiness",
+   "respiratory depression",
+   "absent patellar reflexes"
+  ],
+  "104": [
+   "potassium chloride",
+   "wrong patient bag",
+   "medication administration",
+   "error caught in time"
+  ],
+  "106": [
+   "rust-colored sputum",
+   "lobar consolidation",
+   "lancet-shaped diplococci",
+   "green hemolysis"
+  ],
+  "107": [
+   "neck mass",
+   "routine exam",
+   "no radiation exposure",
+   "euthyroid symptoms"
+  ],
+  "108": [
+   "fluent speech",
+   "paraphasias",
+   "poor comprehension",
+   "impaired repetition"
+  ],
+  "109": [
+   "weekend futsal",
+   "sudden pop",
+   "ankle pain",
+   "cannot stand on tiptoe"
+  ],
+  "110": [
+   "hypertension",
+   "dry cough",
+   "lip and tongue swelling",
+   "new medication"
+  ],
+  "111": [
+   "aggressive impulses",
+   "judo",
+   "coaching",
+   "ego defenses"
+  ],
+  "113": [
+   "epigastric pain",
+   "ulcer on endoscopy",
+   "curved gram-negative rods",
+   "breath test"
+  ],
+  "114": [
+   "confusion",
+   "petechiae",
+   "schistocytes",
+   "low platelets"
+  ],
+  "115": [
+   "shoulder pain",
+   "overhead work",
+   "house painter",
+   "shoulder exam"
+  ],
+  "116": [
+   "26 weeks",
+   "glucose screen",
+   "3-hour glucose test",
+   "prenatal care"
+  ],
+  "117": [
+   "patch-clamp study",
+   "chloride channel",
+   "GABA",
+   "sedative-hypnotics"
+  ],
+  "118": [
+   "82-year-old woman",
+   "bruises of different ages",
+   "weight loss",
+   "caregiver"
+  ],
+  "120": [
+   "Amazon travel",
+   "fever every 48 hours",
+   "Schuffner stippling",
+   "chloroquine"
+  ],
+  "121": [
+   "catheter ablation",
+   "hypotension",
+   "distended neck veins",
+   "muffled heart sounds"
+  ],
+  "122": [
+   "exertional chest pressure",
+   "systolic murmur",
+   "carotid radiation",
+   "older man"
+  ],
+  "123": [
+   "rhinorrhea and cough",
+   "wheezes and crackles",
+   "infant",
+   "breastfeeding"
+  ],
+  "124": [
+   "intentional overdose",
+   "acetaminophen level",
+   "nomogram",
+   "emergency department"
+  ],
+  "125": [
+   "colon biopsy",
+   "private room",
+   "doctor-patient communication",
+   "difficult conversations"
+  ],
+  "127": [
+   "cervical cytology",
+   "HSIL",
+   "HPV 16",
+   "cell cycle"
+  ],
+  "128": [
+   "gallstones",
+   "epigastric pain radiating to the back",
+   "elevated lipase",
+   "vomiting"
+  ],
+  "129": [
+   "placenta",
+   "oxygen-hemoglobin dissociation curve",
+   "fetal circulation",
+   "oxygen affinity"
+  ],
+  "130": [
+   "periorbital edema",
+   "leg swelling",
+   "proteinuria",
+   "hypoalbuminemia"
+  ],
+  "131": [
+   "hypertension",
+   "calcium oxalate stones",
+   "urinary calcium",
+   "uric acid"
+  ],
+  "132": [
+   "femur fracture",
+   "rib fracture",
+   "inconsistent history",
+   "2-month-old"
+  ],
+  "134": [
+   "arthralgia",
+   "pleuritic chest pain",
+   "hydralazine",
+   "positive ANA"
+  ],
+  "135": [
+   "acute monoarthritis",
+   "fever",
+   "knee effusion",
+   "type 2 diabetes"
+  ],
+  "136": [
+   "Down syndrome",
+   "recurrence risk",
+   "karyotype",
+   "genetic counseling"
+  ],
+  "137": [
+   "auditory hallucinations",
+   "persecutory delusions",
+   "3 months",
+   "psychosis"
+  ],
+  "138": [
+   "dose-response curve",
+   "isolated tissue",
+   "maximal response",
+   "pharmacodynamics"
+  ],
+  "139": [
+   "prenatal visit",
+   "bruises",
+   "controlling partner",
+   "patient safety"
+  ],
+  "141": [
+   "rapidly progressive dementia",
+   "myoclonus",
+   "periodic sharp waves",
+   "14-3-3 protein"
+  ],
+  "142": [
+   "former smoker",
+   "solid lung nodule",
+   "incidental finding",
+   "abdominal CT"
+  ],
+  "143": [
+   "positive tuberculin skin test",
+   "household contact",
+   "subpleural nodule",
+   "hilar lymph nodes"
+  ],
+  "144": [
+   "immune thrombocytopenia",
+   "elective splenectomy",
+   "surgical planning",
+   "vaccination history"
+  ],
+  "145": [
+   "grilled tuna",
+   "flushing",
+   "peppery taste",
+   "foodborne illness"
+  ],
+  "146": [
+   "hip fracture",
+   "proton pump inhibitors",
+   "study design",
+   "2x2 table"
+  ],
+  "148": [
+   "kidney transplant",
+   "minutes after anastomosis",
+   "cyanotic graft",
+   "glomerular thrombi"
+  ],
+  "149": [
+   "ischemic cardiomyopathy",
+   "LVEF 30%",
+   "NYHA class II",
+   "guideline-directed therapy"
+  ],
+  "150": [
+   "infertility",
+   "tall stature",
+   "small firm testes",
+   "azoospermia"
+  ],
+  "151": [
+   "recurrent hypoglycemia",
+   "high insulin",
+   "low C-peptide",
+   "repeated admissions"
+  ],
+  "152": [
+   "autism spectrum disorder",
+   "aggression",
+   "self-injury",
+   "behavioral therapy"
+  ],
+  "153": [
+   "cancer screening trial",
+   "tumor grade",
+   "interval tumors",
+   "survival analysis"
+  ],
+  "155": [
+   "aid worker",
+   "profuse watery diarrhea",
+   "comma-shaped rods",
+   "dehydration"
+  ],
+  "156": [
+   "cirrhosis",
+   "ascites",
+   "fever and confusion",
+   "paracentesis"
+  ],
+  "157": [
+   "respiratory virus",
+   "susceptible population",
+   "vaccine efficacy",
+   "transmission"
+  ],
+  "158": [
+   "vaginal delivery",
+   "macrosomia",
+   "boggy uterus",
+   "blood loss"
+  ],
+  "159": [
+   "persistent hallucinations",
+   "failed antipsychotic trials",
+   "adherence",
+   "lab monitoring"
+  ],
+  "160": [
+   "language barrier",
+   "family member translator",
+   "coronary angiography",
+   "communication"
+  ],
+  "162": [
+   "hotel stay",
+   "high fever",
+   "diarrhea and confusion",
+   "low serum sodium"
+  ],
+  "163": [
+   "hydrochlorothiazide",
+   "serum sodium 116",
+   "dilute urine",
+   "rapid rise in sodium"
+  ],
+  "164": [
+   "rural Bolivia",
+   "dysphagia",
+   "bird's-beak sign",
+   "conduction abnormalities"
+  ],
+  "165": [
+   "nonbilious vomiting",
+   "4-week-old",
+   "hungry after vomiting",
+   "metabolic alkalosis"
+  ],
+  "166": [
+   "haloperidol",
+   "neck twisting",
+   "upward eye deviation",
+   "dopamine pathways"
+  ],
+  "167": [
+   "mechanical ventilation",
+   "anoxic brain injury",
+   "advance directive",
+   "end-of-life care"
+  ],
+  "169": [
+   "Mozambique travel",
+   "seizure",
+   "no chemoprophylaxis",
+   "ring forms"
+  ],
+  "170": [
+   "primary adrenal insufficiency",
+   "gastroenteritis",
+   "hypotension",
+   "hypoglycemia"
+  ],
+  "171": [
+   "dental anesthesia",
+   "mandibular foramen",
+   "lower lip numbness",
+   "head and neck anatomy"
+  ],
+  "172": [
+   "episodic crying",
+   "drawn-up knees",
+   "bloody stool",
+   "target sign"
+  ],
+  "173": [
+   "aortic valve replacement",
+   "bicuspid aortic valve",
+   "anticoagulation",
+   "patient preference"
+  ],
+  "174": [
+   "long-term patient",
+   "homemade cookies",
+   "thank-you card",
+   "professionalism"
+  ],
+  "176": [
+   "influenza virus",
+   "cytosolic proteins",
+   "proteasome",
+   "antigen processing"
+  ],
+  "177": [
+   "fatigue",
+   "microcytic anemia",
+   "low ferritin",
+   "older man"
+  ],
+  "178": [
+   "resting tremor",
+   "bradykinesia",
+   "cogwheel rigidity",
+   "levodopa response"
+  ],
+  "179": [
+   "18 weeks' gestation",
+   "migrating abdominal pain",
+   "fever",
+   "leukocytosis"
+  ],
+  "180": [
+   "heart failure",
+   "amiodarone started",
+   "yellow vision",
+   "ventricular ectopy"
+  ],
+  "181": [
+   "attending surgeon",
+   "smell of alcohol",
+   "slurred speech",
+   "operating room"
+  ],
+  "183": [
+   "weight loss",
+   "tremor",
+   "proptosis",
+   "diffuse goiter"
+  ],
+  "184": [
+   "mild asthma",
+   "albuterol use",
+   "reversible obstruction",
+   "treatment plan"
+  ],
+  "185": [
+   "clindamycin",
+   "watery diarrhea",
+   "leukocytosis",
+   "yellow-white plaques"
+  ],
+  "186": [
+   "active labor",
+   "oxytocin augmentation",
+   "frequent contractions",
+   "fetal heart tracing"
+  ],
+  "187": [
+   "mechanical mitral valve",
+   "oral anticoagulant",
+   "skin necrosis",
+   "protein C deficiency"
+  ],
+  "188": [
+   "traumatic brain injury",
+   "death by neurologic criteria",
+   "ICU",
+   "family meeting"
+  ],
+  "190": [
+   "injection drug use",
+   "high fever",
+   "holosystolic murmur",
+   "cavitating lung nodules"
+  ],
+  "191": [
+   "sudden severe headache",
+   "neck stiffness",
+   "normal head CT",
+   "9 hours"
+  ],
+  "192": [
+   "newborn",
+   "shoulder dystocia",
+   "arm weakness",
+   "macrosomia"
+  ],
+  "193": [
+   "anorexia nervosa",
+   "nutritional rehabilitation",
+   "nasogastric feeds",
+   "new edema"
+  ],
+  "194": [
+   "type 2 diabetes",
+   "prior myocardial infarction",
+   "albuminuria",
+   "HbA1c 8.1%"
+  ],
+  "195": [
+   "acute low back pain",
+   "lifting injury",
+   "patient request for MRI",
+   "communication"
+  ],
+  "197": [
+   "recurrent infections",
+   "eczema",
+   "easy bruising",
+   "small platelets"
+  ],
+  "198": [
+   "uncontrolled hypertension",
+   "three antihypertensives",
+   "low potassium",
+   "secondary hypertension"
+  ],
+  "199": [
+   "leg edema",
+   "heavy proteinuria",
+   "hypoalbuminemia",
+   "silver stain"
+  ],
+  "200": [
+   "seizure with fever",
+   "18-month-old",
+   "normal neurologic exam",
+   "toddler"
+  ],
+  "201": [
+   "knee arthroscopy",
+   "sevoflurane",
+   "muscle rigidity",
+   "rising temperature"
+  ],
+  "202": [
+   "randomized trial",
+   "heart failure",
+   "hospitalization",
+   "placebo"
+  ],
+  "204": [
+   "2009 pandemic",
+   "influenza A",
+   "gene segments",
+   "population immunity"
+  ],
+  "205": [
+   "palpitations",
+   "irregularly irregular rhythm",
+   "hypertension",
+   "stroke prevention"
+  ],
+  "206": [
+   "pancreatic islets",
+   "glucose stimulation",
+   "beta cells",
+   "ATP-sensitive potassium channels"
+  ],
+  "207": [
+   "30 weeks",
+   "regular contractions",
+   "cervical dilation",
+   "neonatal outcomes"
+  ],
+  "208": [
+   "ear pulling",
+   "fever",
+   "day care",
+   "otoscopy"
+  ],
+  "209": [
+   "rapid antigen test",
+   "throat culture",
+   "reference standard",
+   "diagnostic accuracy"
+  ],
+  "211": [
+   "acute myeloid leukemia",
+   "stem cell transplant",
+   "rash on palms",
+   "conjugated bilirubin"
+  ],
+  "212": [
+   "dry cough",
+   "tender shin nodules",
+   "hilar adenopathy",
+   "hypercalcemia"
+  ],
+  "213": [
+   "fatigue",
+   "constipation",
+   "kidney stone",
+   "high serum calcium"
+  ],
+  "214": [
+   "blow to the temple",
+   "brief loss of consciousness",
+   "dilated pupil",
+   "temporal bone fracture"
+  ],
+  "215": [
+   "muscle cramps",
+   "Chvostek sign",
+   "long-term GERD therapy",
+   "low magnesium"
+  ],
+  "216": [
+   "widower",
+   "wedding anniversary",
+   "crying",
+   "patient communication"
+  ],
+  "218": [
+   "home-canned vegetables",
+   "diplopia",
+   "dysphagia",
+   "dilated pupils"
+  ],
+  "219": [
+   "new headache",
+   "jaw pain",
+   "transient vision loss",
+   "high ESR"
+  ],
+  "220": [
+   "cultured thymocytes",
+   "growth factor withdrawal",
+   "nuclear fragmentation",
+   "cell death"
+  ],
+  "221": [
+   "10-day-old",
+   "fever",
+   "bulging fontanelle",
+   "CSF neutrophils"
+  ],
+  "222": [
+   "type 2 diabetes",
+   "heart failure",
+   "candidal balanitis",
+   "ketoacidosis"
+  ],
+  "223": [
+   "adolescent",
+   "vaginal discharge",
+   "positive NAAT",
+   "parents"
+  ],
+  "225": [
+   "wrong blood unit",
+   "fever and chills",
+   "flank pain",
+   "dark urine"
+  ],
+  "226": [
+   "routine visit",
+   "45-year-old",
+   "average risk",
+   "preventive care"
+  ],
+  "227": [
+   "cyanotic spells",
+   "knee-chest position",
+   "ejection murmur",
+   "boot-shaped heart"
+  ],
+  "228": [
+   "sudden pelvic pain",
+   "after exercise",
+   "ovarian mass",
+   "Doppler flow"
+  ],
+  "229": [
+   "epigastric discomfort",
+   "urea breath test",
+   "prior macrolide use",
+   "treatment choice"
+  ],
+  "230": [
+   "red cell transfusion",
+   "patients with the same name",
+   "nursing",
+   "patient safety"
+  ],
+  "232": [
+   "undercooked hamburger",
+   "bloody diarrhea",
+   "afebrile child",
+   "MacConkey agar"
+  ],
+  "233": [
+   "fever",
+   "heroin injection",
+   "new murmur",
+   "splinter hemorrhages"
+  ],
+  "234": [
+   "silvery scale",
+   "nail pitting",
+   "elbows and knees",
+   "skin biopsy"
+  ],
+  "235": [
+   "HbSS disease",
+   "fever",
+   "penicillin prophylaxis",
+   "well-appearing child"
+  ],
+  "236": [
+   "bipolar I disorder",
+   "hydrochlorothiazide",
+   "coarse tremor",
+   "ataxia"
+  ],
+  "237": [
+   "smoking",
+   "stress relief",
+   "behavior change",
+   "communication"
+  ],
+  "239": [
+   "recurrent swelling",
+   "abdominal pain",
+   "no urticaria",
+   "family history"
+  ],
+  "240": [
+   "flank pain",
+   "radiation to the groin",
+   "hematuria",
+   "restlessness"
+  ],
+  "241": [
+   "bariatric surgery",
+   "persistent vomiting",
+   "nystagmus",
+   "wide-based gait"
+  ],
+  "242": [
+   "motorcycle crash",
+   "hypotension",
+   "trachea shifted to the left",
+   "absent breath sounds"
+  ],
+  "243": [
+   "dysuria",
+   "purulent discharge",
+   "new sexual partner",
+   "Gram stain"
+  ],
+  "244": [
+   "shift change",
+   "adverse events",
+   "pending results",
+   "teaching hospital"
+  ],
+  "246": [
+   "recurrent meningococcal infection",
+   "family history",
+   "normal immunoglobulins",
+   "CH50"
+  ],
+  "247": [
+   "easy bruising",
+   "proximal weakness",
+   "violaceous striae",
+   "new hypertension"
+  ],
+  "248": [
+   "windshield washer fluid",
+   "snowstorm vision",
+   "metabolic acidosis",
+   "osmolal gap"
+  ],
+  "249": [
+   "petechiae",
+   "recent viral infection",
+   "low platelets",
+   "well-appearing child"
+  ],
+  "250": [
+   "type 2 diabetes",
+   "LDL cholesterol",
+   "atorvastatin",
+   "thigh aches"
+  ],
+  "251": [
+   "small randomized trial",
+   "migraine",
+   "p-value",
+   "later large trials"
+  ],
+  "253": [
+   "low-grade fever",
+   "dry cough",
+   "interstitial infiltrates",
+   "chilled blood sample"
+  ],
+  "254": [
+   "severe hypertension",
+   "papilledema",
+   "rising creatinine",
+   "IV infusion"
+  ],
+  "255": [
+   "fatigue",
+   "cold intolerance",
+   "firm goiter",
+   "anti-TPO antibodies"
+  ],
+  "256": [
+   "school-age boy",
+   "teacher report",
+   "restlessness",
+   "careless mistakes"
+  ],
+  "257": [
+   "early pregnancy",
+   "chronic hypertension",
+   "lisinopril",
+   "medication safety"
+  ],
+  "258": [
+   "uninsured patient",
+   "chest pain",
+   "triage",
+   "private hospital"
+  ],
+  "260": [
+   "recurrent abscesses",
+   "Aspergillus pneumonia",
+   "neutrophil flow cytometry",
+   "normal neutrophil count"
+  ],
+  "261": [
+   "chemotherapy",
+   "fever",
+   "neutrophil count 300",
+   "port site"
+  ],
+  "262": [
+   "pigmented lesion",
+   "asymmetry",
+   "irregular borders",
+   "prognosis"
+  ],
+  "263": [
+   "routine visit",
+   "prior normal Pap tests",
+   "HPV vaccination",
+   "31-year-old"
+  ],
+  "264": [
+   "COPD",
+   "daily dyspnea",
+   "dry mouth",
+   "weak urinary stream"
+  ],
+  "265": [
+   "insurance claim",
+   "knee arthroscopy",
+   "medical records",
+   "privacy"
+  ],
+  "267": [
+   "nasal packing",
+   "high fever",
+   "hypotension",
+   "sunburn-like rash"
+  ],
+  "268": [
+   "heart failure",
+   "fever and productive cough",
+   "thoracentesis",
+   "pleural fluid LDH"
+  ],
+  "269": [
+   "hepatitis B",
+   "recovery",
+   "falling ALT",
+   "serology"
+  ],
+  "270": [
+   "high-speed crash",
+   "gurgling breathing",
+   "GCS 7",
+   "femur deformity"
+  ],
+  "271": [
+   "sertraline",
+   "linezolid",
+   "hyperthermia",
+   "clonus"
+  ],
+  "272": [
+   "missed MRI report",
+   "rescheduled visit",
+   "upset patient",
+   "communication"
+  ],
+  "274": [
+   "puncture wound",
+   "jaw stiffness",
+   "generalized spasms",
+   "incomplete vaccination"
+  ],
+  "275": [
+   "cirrhosis",
+   "confusion",
+   "asterixis",
+   "daytime sleepiness"
+  ],
+  "276": [
+   "recurrent nosebleeds",
+   "giant platelets",
+   "ristocetin",
+   "platelet aggregation"
+  ],
+  "277": [
+   "exclusive breastfeeding",
+   "few wet diapers",
+   "weight loss after birth",
+   "neonatal jaundice"
+  ],
+  "278": [
+   "active rheumatoid arthritis",
+   "methotrexate",
+   "biologic therapy",
+   "pretreatment screening"
+  ],
+  "279": [
+   "randomized trial",
+   "heart failure",
+   "all-cause death",
+   "survival analysis"
+  ],
+  "281": [
+   "pregnancy",
+   "contaminated drinking water",
+   "jaundice outbreak",
+   "acute liver failure"
+  ],
+  "282": [
+   "epilepsy",
+   "generalized tonic-clonic seizure",
+   "seizure lasting 8 minutes",
+   "prehospital care"
+  ],
+  "283": [
+   "hippocampal slices",
+   "Schaffer collaterals",
+   "high-frequency stimulation",
+   "AP5"
+  ],
+  "284": [
+   "poor weight gain",
+   "greasy stools",
+   "salty skin",
+   "newborn screening"
+  ],
+  "285": [
+   "ventricular tachycardia",
+   "prior myocardial infarction",
+   "antiarrhythmic therapy",
+   "drug monitoring"
+  ],
+  "286": [
+   "seatbelt alarm",
+   "behavior change",
+   "learning theory",
+   "behavioral science"
+  ],
+  "288": [
+   "recurrent UTI",
+   "alkaline urine",
+   "coffin-lid crystals",
+   "swarming motility"
+  ],
+  "289": [
+   "chest pain after a cold",
+   "positional pain",
+   "scratchy heart sound",
+   "ECG changes"
+  ],
+  "290": [
+   "80-year-old",
+   "never smoker",
+   "pulmonary function tests",
+   "normal aging"
+  ],
+  "291": [
+   "postmenopausal woman",
+   "vaginal bleeding",
+   "transvaginal ultrasound",
+   "no hormone therapy"
+  ],
+  "292": [
+   "insecticide spraying",
+   "pinpoint pupils",
+   "bronchial secretions",
+   "fasciculations"
+  ],
+  "293": [
+   "active labor",
+   "late decelerations",
+   "declines cesarean delivery",
+   "medical ethics"
+  ],
+  "295": [
+   "dental extraction",
+   "mitral valve prolapse",
+   "low-grade fever",
+   "alpha-hemolytic cocci"
+  ],
+  "296": [
+   "skin scrape",
+   "diabetes",
+   "crepitus",
+   "septic shock"
+  ],
+  "297": [
+   "6 weeks' gestation",
+   "corpus luteum cyst",
+   "progesterone",
+   "early pregnancy"
+  ],
+  "298": [
+   "house fire",
+   "30% TBSA",
+   "fluid resuscitation",
+   "first 8 hours"
+  ],
+  "299": [
+   "rheumatoid arthritis",
+   "dosing error",
+   "mouth ulcers",
+   "pancytopenia"
+  ],
+  "300": [
+   "cohort study",
+   "coffee and myocardial infarction",
+   "smokers and nonsmokers",
+   "stratified analysis"
+  ],
+  "302": [
+   "recurrent sinopulmonary infections",
+   "Pneumocystis pneumonia",
+   "high IgM",
+   "normal B and T cells"
+  ],
+  "303": [
+   "painless red urine",
+   "40 pack-years",
+   "normal RBC morphology",
+   "negative culture"
+  ],
+  "304": [
+   "speech delay",
+   "hand flapping",
+   "large ears",
+   "maternal uncle"
+  ],
+  "305": [
+   "7-week-old",
+   "breech presentation",
+   "thigh skin fold",
+   "hip clunk"
+  ],
+  "306": [
+   "8 weeks pregnant",
+   "palpitations",
+   "diffuse goiter",
+   "TSH receptor antibodies"
+  ],
+  "307": [
+   "2-month visit",
+   "parents decline vaccines",
+   "online information",
+   "communication"
+  ],
+  "309": [
+   "crush injury",
+   "soil contamination",
+   "bronze skin",
+   "large gram-positive rods"
+  ],
+  "310": [
+   "lung cancer",
+   "confusion",
+   "polyuria",
+   "very high serum calcium"
+  ],
+  "311": [
+   "autopsy",
+   "abdominal aorta",
+   "yellow intimal streaks",
+   "young adult"
+  ],
+  "312": [
+   "adolescent",
+   "knee pain",
+   "limp",
+   "limited hip internal rotation"
+  ],
+  "313": [
+   "adolescent depression",
+   "partial response to therapy",
+   "fluoxetine",
+   "family counseling"
+  ],
+  "314": [
+   "schizophrenia",
+   "stopped medication",
+   "walking on a highway",
+   "refuses admission"
+  ],
+  "316": [
+   "pyelonephritis",
+   "septic shock",
+   "bleeding from venipuncture sites",
+   "low fibrinogen"
+  ],
+  "317": [
+   "Burkitt lymphoma",
+   "chemotherapy tomorrow",
+   "high uric acid",
+   "high LDH"
+  ],
+  "318": [
+   "sudden severe headache",
+   "ptosis",
+   "dilated pupil",
+   "eye deviated down and out"
+  ],
+  "319": [
+   "oligomenorrhea",
+   "hirsutism",
+   "mildly high testosterone",
+   "no pregnancy plans"
+  ],
+  "320": [
+   "alcohol use disorder",
+   "after detoxification",
+   "daily oxycodone",
+   "relapse prevention"
+  ],
+  "321": [
+   "17-year-old",
+   "married",
+   "elective cholecystectomy",
+   "parents disagree"
+  ],
+  "323": [
+   "camping trip",
+   "fever and headache",
+   "rash on palms and soles",
+   "thrombocytopenia"
+  ],
+  "324": [
+   "progressive forgetfulness",
+   "independent in self-care",
+   "MoCA 20/30",
+   "cognitive workup"
+  ],
+  "325": [
+   "bilateral renal artery stenosis",
+   "lisinopril",
+   "rising creatinine",
+   "renal physiology"
+  ],
+  "326": [
+   "schizophrenia",
+   "IM haloperidol",
+   "hyperthermia",
+   "very high CK"
+  ],
+  "327": [
+   "open-angle glaucoma",
+   "latanoprost",
+   "second eye drop",
+   "bradycardia"
+  ],
+  "328": [
+   "meta-analysis",
+   "18 trials",
+   "migraine prevention",
+   "small trials"
+  ],
+  "330": [
+   "camping in Colorado",
+   "stream water",
+   "greasy diarrhea",
+   "bloating"
+  ],
+  "331": [
+   "raccoon bite",
+   "camping",
+   "no prior rabies vaccine",
+   "wound care"
+  ],
+  "332": [
+   "anterior STEMI",
+   "no reperfusion",
+   "hospital day 5",
+   "sudden hypotension"
+  ],
+  "333": [
+   "postoperative day 6",
+   "sigmoid colectomy",
+   "fever",
+   "incision findings"
+  ],
+  "334": [
+   "ER-positive breast cancer",
+   "adjuvant therapy",
+   "vaginal bleeding",
+   "prior DVT"
+  ],
+  "335": [
+   "cardiac arrest",
+   "unconscious patient",
+   "signed document",
+   "family disagreement"
+  ],
+  "337": [
+   "fever and headache",
+   "personality change",
+   "focal seizure",
+   "temporal lobe MRI"
+  ],
+  "338": [
+   "daytime sleepiness",
+   "loud snoring",
+   "witnessed apneas",
+   "resistant hypertension"
+  ],
+  "339": [
+   "family history of breast and ovarian cancer",
+   "genetic counseling",
+   "germline testing",
+   "DNA damage"
+  ],
+  "340": [
+   "annual checkup",
+   "42-year-old",
+   "no family history",
+   "no breast symptoms"
+  ],
+  "341": [
+   "fever for 6 days",
+   "conjunctival injection",
+   "cracked lips",
+   "swollen hands and feet"
+  ],
+  "342": [
+   "metastatic pancreatic cancer",
+   "multiorgan failure",
+   "husband insists on everything",
+   "ICU"
+  ],
+  "344": [
+   "fever and flank pain",
+   "costovertebral angle tenderness",
+   "white blood cell casts",
+   "gram-negative rod"
+  ],
+  "345": [
+   "24-month visit",
+   "parental worry",
+   "language",
+   "motor skills"
+  ],
+  "346": [
+   "older adult",
+   "itching",
+   "tense blisters",
+   "linear IgG and C3"
+  ],
+  "347": [
+   "14-month-old",
+   "white pupil in photos",
+   "strabismus",
+   "family history"
+  ],
+  "348": [
+   "Pseudomonas bacteremia",
+   "rising creatinine",
+   "tinnitus",
+   "oxygen-dependent uptake"
+  ],
+  "349": [
+   "chronic lung disease",
+   "stable incidence",
+   "new drug",
+   "longer survival"
+  ],
+  "351": [
+   "30 hours after delivery",
+   "fever and chills",
+   "uterine tenderness",
+   "hypotension"
+  ],
+  "352": [
+   "fever",
+   "right upper quadrant pain",
+   "jaundice",
+   "dilated common bile duct"
+  ],
+  "353": [
+   "10 years after menopause",
+   "DXA T-score",
+   "normal calcium and PTH",
+   "bone remodeling"
+  ],
+  "354": [
+   "vulvar itching",
+   "dyspareunia",
+   "white wrinkled plaques",
+   "loss of labia minora"
+  ],
+  "355": [
+   "stable angina",
+   "sublingual medication",
+   "tadalafil",
+   "hypotension"
+  ],
+  "356": [
+   "pharmaceutical representative",
+   "paid weekend",
+   "beach resort",
+   "professionalism"
+  ],
+  "358": [
+   "transfusion reaction",
+   "urticaria and wheezing",
+   "recurrent sinusitis",
+   "celiac disease"
+  ],
+  "359": [
+   "calf pain with walking",
+   "smoker",
+   "type 2 diabetes",
+   "diminished pedal pulses"
+  ],
+  "360": [
+   "inguinal hernia repair",
+   "uterus in a boy",
+   "46,XY",
+   "normal external genitalia"
+  ],
+  "361": [
+   "9-month-old",
+   "first febrile UTI",
+   "E. coli",
+   "good response to treatment"
+  ],
+  "362": [
+   "sudden weakness",
+   "aphasia",
+   "2 hours",
+   "CT without hemorrhage"
+  ],
+  "363": [
+   "wrong-patient medication",
+   "enoxaparin",
+   "no harm",
+   "physician-patient communication"
+  ],
+  "365": [
+   "fever and chills",
+   "perineal pain",
+   "tender boggy prostate",
+   "pyuria"
+  ]
+ }
+}

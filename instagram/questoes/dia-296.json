@@ -1,0 +1,96 @@
+{
+  "dia": 296,
+  "data": "2027-08-24",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema musculoesquelético, pele e tecido subcutâneo",
+  "topico": "Fasciíte necrosante",
+  "conceito": "Necrotizing fasciitis: pain out of proportion and crepitus, urgent surgical debridement",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-25",
+  "tom": null,
+  "gancho": "Na pele, quase nada. *E essa dor toda, de onde vem?*",
+  "gancho_apoio": "Arranhão pequeno, dor enorme e um som estranho ao apertar a pele.",
+  "imagem": {
+    "arquivo": "dia-296.png",
+    "cena": "Placa verde NEXT STEP com saídas; abaixo, um mar calmo com uma pontinha de iceberg na superfície e a água turva, que não deixa ver o que há embaixo; uma boia de alerta vermelha pisca ao lado.",
+    "foco": "50% 35%",
+    "alt": "Na pele, quase nada. E essa dor toda, de onde vem?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-296-macete.png",
+    "cena": "Callback: um barquinho com uma luz de centro cirúrgico acesa vai direto ao iceberg e formões de escultor cortam a parte submersa ao longo da camada plana; três frascos de antibiótico vão no barco, e na placa verde só uma saída acende.",
+    "foco": "50% 45%",
+    "alt": "Dor desproporcional e crepitação: fasciíte necrosante"
+  },
+  "questao": {
+    "vinheta": "Two days after scraping his leg, a 56-year-old man with type 2 diabetes has severe leg pain far greater than the mild redness suggests, tense edema, dusky bullae, and crepitus. He is febrile (39.2°C), hypotensive (88/54 mm Hg), and tachycardic (122/min).",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Cellulitis",
+        "quiz": "Celulite"
+      },
+      "B": {
+        "texto": "Necrotizing fasciitis",
+        "quiz": "Fasciíte necrosante"
+      },
+      "C": {
+        "texto": "Erysipelas",
+        "quiz": "Erisipela"
+      },
+      "D": {
+        "texto": "Deep venous thrombosis",
+        "quiz": "TVP"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Dor desproporcional e crepitação: *fasciíte necrosante*",
+    "certa": [
+      "*Dor desproporcional* ao que a pele mostra, edema tenso, bolhas escuras, *crepitação* (gás no subcutâneo) e choque num diabético indicam *necrotizing fasciitis*: a infecção corre pela fáscia por baixo de uma pele que ainda parece pouco doente. O tratamento é *desbridamento cirúrgico urgente* mais antibiótico de amplo espectro (vancomicina, piperacilina-tazobactam e clindamicina, que corta a produção de toxina). Exame de imagem nunca pode atrasar a cirurgia."
+    ],
+    "termos": [
+      "necrotizing fasciitis",
+      "pain out of proportion",
+      "crepitus",
+      "urgent surgical debridement"
+    ],
+    "erradas": {
+      "A": "Celulite dá eritema e dor proporcionais, sem crepitação nem bolhas escuras com choque.",
+      "C": "Erisipela é superficial, com borda elevada bem demarcada, e não causa gás nem dor desproporcional.",
+      "D": "Trombose venosa profunda incha e dói, mas não dá febre alta, bolhas, crepitação nem choque."
+    },
+    "macete": {
+      "frase": "Dor maior que a pele *é iceberg*: o que importa está por baixo",
+      "apoio": "Na imagem, a ponta do iceberg é pequena e calma, mas embaixo da água ele cresce rápido pela camada plana (a fáscia), soltando bolhas (o gás). Contra iceberg, o barco vai direto, com a luz do centro cirúrgico acesa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Diabético, arranhão na perna há dois dias, dor muito maior do que a vermelhidão explica, bolhas escuras, crepitação e pressão de 88/54. A placa do Plantão de Terça mostra quatro saídas.",
+    "palavras_chave": [
+      "skin scrape",
+      "diabetes",
+      "crepitus",
+      "septic shock"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Cirurgia",
+      "#Infectologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Dor desproporcional e crepitação: diagnóstico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

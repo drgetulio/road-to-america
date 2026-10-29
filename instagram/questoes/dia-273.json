@@ -1,0 +1,103 @@
+{
+  "dia": 273,
+  "data": "2027-08-01",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: MHC I e MHC II (dia 176), Angioedema hereditário (dia 239), Superantígenos (dia 267)",
+  "conceito": "Remix: MHC I vs MHC II + Hereditary angioedema + Toxic shock syndrome toxin",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    176,
+    239,
+    267
+  ],
+  "explicacao_em": "2027-08-02",
+  "tom": null,
+  "gancho": "Três discos, uma festa: *quem fez a pista inteira dançar?*",
+  "gancho_apoio": "Remix com MHC, angioedema hereditário e superantígenos. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-273.png",
+    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (duas peças de quebra-cabeça, um balão inchando, uma pista de dança lotada) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "foco": "50% 35%",
+    "alt": "Três discos, uma festa: quem fez a pista inteira dançar?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-273-macete.png",
+    "cena": "Callback: o disco da pista de dança toca; duas peças de quebra-cabeça estão presas por um clipe vermelho pela borda de fora (e não pelo encaixe), e todos os linfócitos dançam de uma vez enquanto o Macrô levanta os fones, espantado.",
+    "foco": "50% 45%",
+    "alt": "TSST-1: superantígeno liga MHC II ao TCR por fora"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman develops fever of 39.6°C, vomiting, watery diarrhea, and a diffuse sunburn-like rash 2 days after nasal packing for epistaxis. Blood pressure is 78/44 mm Hg. There is no urticaria, wheezing, or lip swelling. Blood cultures are negative.",
+    "pergunta": "Which mechanism best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "C1 esterase inhibitor deficiency with excess bradykinin",
+        "quiz": "Falta de C1-INH",
+        "dia": 239
+      },
+      "B": {
+        "texto": "Endogenous peptides presented on MHC I to CD8+ cells",
+        "quiz": "MHC I para CD8",
+        "dia": 176
+      },
+      "C": {
+        "texto": "Allergen cross-linking of IgE on mast cells",
+        "quiz": "IgE no mastócito"
+      },
+      "D": {
+        "texto": "Toxin linking MHC II to the TCR outside the peptide groove",
+        "quiz": "Superantígeno",
+        "dia": 267
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "TSST-1: *superantígeno* liga MHC II ao TCR por fora",
+    "certa": [
+      "Tampão nasal, febre alta, hipotensão e eritrodermia em queimadura de sol com hemocultura negativa é a *toxic shock syndrome*. A *TSST-1* do *S. aureus* é um *superantigen*: prende o MHC II à cadeia Vβ do TCR por fora do sulco do peptídeo e ativa até 20% das células T de uma vez. O resultado é uma tempestade de IL-2, IFN-γ e TNF."
+    ],
+    "termos": [
+      "toxic shock syndrome toxin",
+      "superantigen",
+      "MHC II",
+      "TCR V beta"
+    ],
+    "erradas": {
+      "A": "Angioedema hereditário (dia 239) incha pele e mucosa sem urticária, mas não dá febre, choque nem eritrodermia.",
+      "B": "MHC I com CD8 (dia 176) é a apresentação normal de peptídeo intracelular, que respeita o sulco e ativa poucos clones.",
+      "C": "Anafilaxia por IgE traria urticária, broncoespasmo ou edema de lábio, que a vinheta exclui."
+    },
+    "macete": {
+      "frase": "*Superantígeno é penetra*: entra na festa pela janela, sem convite no sulco",
+      "apoio": "No toca-discos, o disco do superantígeno toca todas as faixas ao mesmo tempo: MHC II e TCR ficam grudados por fora e a pista inteira de linfócitos T dança junta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com MHC I e II (dia 176), angioedema hereditário (dia 239) e superantígenos (dia 267), mais um intruso. Febre, choque e pele de quem dormiu no sol, dois dias depois de um tampão nasal. Qual disco explica o quadro?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Febre, choque e eritrodermia: qual mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

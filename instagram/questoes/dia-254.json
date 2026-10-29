@@ -1,0 +1,99 @@
+{
+  "dia": 254,
+  "data": "2027-07-13",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Emergência hipertensiva",
+  "conceito": "Hypertensive emergency: lower mean arterial pressure by no more than 25 percent in the first hour",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-14",
+  "tom": null,
+  "gancho": "Pressão a 230: *freia*, mas sem jogar ninguém no para-brisa",
+  "gancho_apoio": "Papiledema e creatinina subindo. A nicardipina já está correndo. Até onde baixar na primeira hora?",
+  "imagem": {
+    "arquivo": "dia-254.png",
+    "cena": "Um carrinho de desenho desce uma serra em alta velocidade; dentro, um cérebro, um rim e um olho, todos personagens, se seguram nos bancos com cara de susto. O motorista, um medidor de pressão redondo com braços, olha para o pedal do freio.",
+    "foco": "50% 35%",
+    "alt": "Pressão a 230: freia, mas sem jogar ninguém no para-brisa"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-254-macete.png",
+    "cena": "O mesmo carrinho freia com suavidade: no mostrador redondo do painel, só um quarto do círculo aparece sombreado, como uma fatia de pizza tirada, e os passageiros, de cinto, seguem tranquilos. Atrás, outro carrinho que freou com tudo tem os passageiros espremidos no vidro, sem se machucar.",
+    "foco": "50% 40%",
+    "alt": "Emergência: 25% na primeira hora"
+  },
+  "questao": {
+    "vinheta": "A 56-year-old man has had headache and blurred vision for 1 day. Blood pressure is 228/134 mm Hg in both arms. Funduscopy shows papilledema and flame hemorrhages. Creatinine is 2.4 mg/dL (baseline 1.0). Head CT and chest imaging are normal, and an intravenous nicardipine infusion is started.",
+    "pergunta": "Which blood pressure goal is most appropriate for the first hour?",
+    "alternativas": {
+      "A": {
+        "texto": "Lower to below 120/80 mm Hg",
+        "quiz": "Abaixo de 120/80"
+      },
+      "B": {
+        "texto": "Lower by no more than 25%",
+        "quiz": "Até 25% na 1a hora"
+      },
+      "C": {
+        "texto": "Lower systolic to below 120 mm Hg within 20 minutes",
+        "quiz": "PAS < 120 em 20 min"
+      },
+      "D": {
+        "texto": "Lower gradually over 24 to 48 hours with oral agents",
+        "quiz": "Oral em 24 a 48 h"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Emergência: *25%* na primeira hora",
+    "certa": [
+      "Pressão muito alta com lesão aguda de órgão-alvo (papiledema, piora renal) é *hypertensive emergency*, tratada em UTI com droga intravenosa titulável. Como a autorregulação do cérebro e do rim está deslocada para cima, uma queda brusca causa isquemia. A diretriz da *ACC/AHA* pede reduzir no máximo 25% na primeira hora, depois chegar a cerca de 160/100 a 110 nas 2 a 6 horas seguintes e normalizar em 24 a 48 horas."
+    ],
+    "termos": [
+      "hypertensive emergency",
+      "autoregulation",
+      "nicardipine",
+      "end-organ damage"
+    ],
+    "erradas": {
+      "A": "Normalizar a pressão de uma vez provoca isquemia cerebral, renal e coronariana por causa da autorregulação desviada.",
+      "C": "Sistólica abaixo de 120 em 20 minutos é a meta da *aortic dissection*, que não é o caso aqui.",
+      "D": "Remédio oral ao longo de 24 a 48 horas serve para a hipertensão grave sem lesão de órgão-alvo, não para a emergência."
+    },
+    "macete": {
+      "frase": "Na primeira hora, tira *só uma fatia* da pizza: *25%*",
+      "apoio": "O carrinho que freia de leve tira só um quarto da pizza do velocímetro. Quem freia de uma vez joga cérebro, rim e olho no para-brisa: é a isquemia da queda rápida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Pressão de 228/134 com papiledema e creatinina dobrando. A nicardipina está correndo. Qual é a meta da primeira hora?",
+    "palavras_chave": [
+      "severe hypertension",
+      "papilledema",
+      "rising creatinine",
+      "IV infusion"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Cardiologia",
+      "#Emergencia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é a meta da 1a hora?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

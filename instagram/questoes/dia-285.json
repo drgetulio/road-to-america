@@ -1,0 +1,96 @@
+{
+  "dia": 285,
+  "data": "2027-08-13",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Amiodarona",
+  "conceito": "Amiodarone: class III potassium channel blocker, monitor thyroid, lung and liver",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-14",
+  "tom": null,
+  "gancho": "A Tia Meia-Vida avisa: *esse remédio visita a família toda*",
+  "gancho_apoio": "Antiarrítmico de meia-vida longa e uma pergunta justa: por que tantos exames?",
+  "imagem": {
+    "arquivo": "dia-285.png",
+    "cena": "Tia Meia-Vida atrás do balcão ao lado de uma ampulheta enorme em que a areia quase não escorre, um frasco de comprimidos em forma de coração e um calendário de folhas que nunca acabam; quatro sacolas de exames fechadas sobre o balcão.",
+    "foco": "50% 35%",
+    "alt": "A Tia Meia-Vida avisa: esse remédio visita a família toda"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-285-macete.png",
+    "cena": "Callback: a Tia Meia-Vida sai do balcão com três cestas de visita para três casinhas, uma em forma de borboleta (tireoide), uma em forma de pulmões e uma em forma de fígado; uma estrela-do-mar (o iodo do mar) vai numa das cestas e outra leva um lenço azul-acinzentado e um par de óculos (pele e córnea).",
+    "foco": "50% 45%",
+    "alt": "Amiodarona: tireoide, pulmão e fígado no radar"
+  },
+  "questao": {
+    "vinheta": "Because of recurrent ventricular tachycardia after a prior myocardial infarction, a 68-year-old man begins amiodarone. Before discharge, he asks why he needs blood tests and a breathing test now and during follow-up.",
+    "pergunta": "Which set of tests is most important for monitoring this drug's toxicity?",
+    "alternativas": {
+      "A": {
+        "texto": "Creatine kinase and lipid panel",
+        "quiz": "CK e lipídios"
+      },
+      "B": {
+        "texto": "TSH, liver enzymes, and pulmonary function tests",
+        "quiz": "TSH, fígado e PFT"
+      },
+      "C": {
+        "texto": "Complete blood count and antinuclear antibodies",
+        "quiz": "Hemograma e FAN"
+      },
+      "D": {
+        "texto": "Fasting glucose and serum uric acid",
+        "quiz": "Glicose e ác. úrico"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Amiodarona: *tireoide, pulmão e fígado* no radar",
+    "certa": [
+      "A *amiodarone* é antiarrítmico *classe III* (bloqueia canais de K+ e prolonga o potencial de ação e o QT), com efeitos também das classes I, II e IV. É rica em *iodo*, muito lipofílica e tem meia-vida de semanas, por isso a toxicidade aparece nos órgãos onde ela acumula: *tireoide* (hipo ou hipertireoidismo), *pulmão* (fibrose) e *fígado* (hepatite). Por isso o seguimento pede TSH e enzimas hepáticas no início e a cada 6 meses, raio X do tórax e PFT com DLCO, mais exame oftalmológico e da pele."
+    ],
+    "termos": [
+      "amiodarone",
+      "class III antiarrhythmic",
+      "pulmonary fibrosis",
+      "thyroid dysfunction"
+    ],
+    "erradas": {
+      "A": "CK e lipídios acompanham a estatina (miopatia), não a amiodarona.",
+      "C": "Hemograma e FAN lembram a procainamida, que causa lúpus induzido e agranulocitose.",
+      "D": "Glicose e ácido úrico são os exames da tiazida e da niacina."
+    },
+    "macete": {
+      "frase": "Amiodarona é *tia de novela*: mexe com a *tireoide*, o *pulmão* e o *fígado*",
+      "apoio": "Na imagem, a ampulheta da Tia Meia-Vida quase não escorre (meia-vida de semanas) e ela sai com três cestas de visita: tireoide em forma de borboleta, pulmões e fígado. Pele azul-acinzentada e depósitos na córnea completam a fofoca.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Taquicardia ventricular recorrente, amiodarona prescrita e uma pergunta justa: por que tantos exames? A Tia Meia-Vida separou quatro pacotes de exames no balcão.",
+    "palavras_chave": [
+      "ventricular tachycardia",
+      "prior myocardial infarction",
+      "antiarrhythmic therapy",
+      "drug monitoring"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Cardiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Amiodarona: o que monitorar?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

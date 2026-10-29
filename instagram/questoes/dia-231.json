@@ -1,0 +1,105 @@
+{
+  "dia": 231,
+  "data": "2027-06-20",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Translocação robertsoniana (dia 136), Influenza: shift e drift (dia 204), Grupos sanguíneos ABO (dia 225)",
+  "conceito": "Remix: Robertsonian translocation + Influenza shift vs drift + ABO compatibility",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    136,
+    204,
+    225
+  ],
+  "explicacao_em": "2027-06-21",
+  "tom": null,
+  "gancho": "Quatro fichas de revisão e *só uma não mente*",
+  "gancho_apoio": "Translocação robertsoniana, shift e drift e grupos ABO. Qual ficha está certa?",
+  "imagem": {
+    "arquivo": "dia-231.png",
+    "cena": "O toca-discos do Remix de Domingo com três discos: um com dois vagões de trem engatados, um com dois vírus trocando figurinhas e um com carrinhos vermelhos de selos de formas diferentes. Ao lado, quatro fichas de estudo espalhadas sob a luminária.",
+    "foco": "50% 35%",
+    "alt": "Quatro fichas de revisão e só uma não mente"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-231-macete.png",
+    "cena": "Callback: a agulha pousa no disco dos carrinhos; dele sai uma bolha de som com uma garrafa de plasma dourado, sem nenhuma estrela-do-mar dentro, sendo recebida em casas de telhados de todas as formas. As outras fichas ficam viradas para baixo.",
+    "foco": "50% 45%",
+    "alt": "Plasma AB é o plasma universal"
+  },
+  "questao": {
+    "vinheta": "The night before an exam, a student reviews four flashcards written in a hurry over the past months. Only one card is completely correct.",
+    "pergunta": "Which card is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Balanced Robertsonian carrier: 47 chromosomes and abnormal phenotype",
+        "quiz": "Robertsoniana: 47",
+        "dia": 136
+      },
+      "B": {
+        "texto": "Antigenic shift: point mutations in hemagglutinin cause yearly epidemics",
+        "quiz": "Shift: mut. pontual",
+        "dia": 204
+      },
+      "C": {
+        "texto": "Most trisomy 21 arises from paternal meiosis II nondisjunction",
+        "quiz": "T21: meiose II pai"
+      },
+      "D": {
+        "texto": "Group AB plasma can be given to patients of any ABO group",
+        "quiz": "Plasma AB: universal",
+        "dia": 225
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Plasma AB é o *plasma universal*",
+    "certa": [
+      "Dia 225: o plasma do grupo *AB* não tem anti-A nem anti-B, então pode ir para receptor de qualquer grupo ABO; é o *universal plasma donor*. Para hemácias a lógica se inverte: a hemácia *O*, sem antígeno A ou B, é a doadora universal. Quem tem o antígeno não tem o anticorpo, e vice-versa."
+    ],
+    "termos": [
+      "universal plasma donor (AB)",
+      "universal red cell donor (O)",
+      "antigenic shift vs drift",
+      "Robertsonian translocation"
+    ],
+    "erradas": {
+      "A": "Dia 136: o portador equilibrado de translocação robertsoniana tem 45 cromossomos e fenótipo normal; o risco aparece nos filhos.",
+      "B": "Dia 204: mutação pontual na hemaglutinina é o antigenic drift, das epidemias anuais; o shift é a troca de segmentos entre vírus e causa pandemias.",
+      "C": "A maioria das trissomias do 21 vem de não disjunção na meiose I materna, e o risco sobe com a idade materna."
+    },
+    "macete": {
+      "frase": "*Antígeno no carro, anticorpo no plasma*: quem tem um não tem o outro",
+      "apoio": "No toca-discos, o disco do dia 225 toca o refrão da Capitã Plaqueta: carro sem selo (O) passa em todo bairro, e plasma sem estrela-do-mar (AB) entra em qualquer casa. O disco do dia 136 lembra o engate dos vagões, e o do dia 204, a troca de figurinhas entre vírus.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão com quatro fichas escritas às pressas. Três conceitos já vistos (dias 136, 204 e 225) e um intruso. Só uma ficha está certa.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Genetica",
+      "#Hematology",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Qual destas fichas de revisão está certa?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

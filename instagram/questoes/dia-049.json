@@ -1,0 +1,102 @@
+{
+  "dia": 49,
+  "data": "2026-12-20",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Síndrome de Goodpasture (dia 15), Dermatite de contato (dia 43), Sensibilidade e especificidade (dia 48)",
+  "conceito": "Remix: Goodpasture syndrome + Contact dermatitis to nickel + SnNOut and SpPIn",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    15,
+    43,
+    48
+  ],
+  "explicacao_em": "2026-12-21",
+  "gancho": "Remix: quatro frases no quadro e só uma passa no embarque",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos: um com um rim estilizado, um com uma tigela de massa crescendo e um com um detector de fumaça; um quarto disco liso, o intruso, fica de lado.",
+    "foco": "50% 35%",
+    "alt": "Um toca-discos vermelho com três discos: um com um rim estilizado, um com uma tigela de massa crescendo e um com um detector de fumaça; um quarto disco liso, o intruso, fica de lado.",
+    "arquivo": "dia-049.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco do detector de fumaça gira com a luz verde acesa e silêncio; os outros dois discos mostram as correções, a linha reta brilhando no rim e a massa com bolinhas de linfócito, enquanto o disco liso é posto para fora.",
+    "alt": "Só o detector mudo passou no embarque",
+    "arquivo": "dia-049-macete.png"
+  },
+  "questao": {
+    "vinheta": "During a Sunday review session, a study group writes four statements on the board, one from each recent topic plus one new topic. Only one statement is accurate.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "Goodpasture: granular immunofluorescence along the GBM",
+        "quiz": "Goodpasture granular",
+        "dia": 15
+      },
+      "B": {
+        "texto": "Nickel dermatitis: IgE-coated mast cells",
+        "quiz": "Nickel: IgE",
+        "dia": 43
+      },
+      "C": {
+        "texto": "Negative highly sensitive test helps rule out",
+        "quiz": "Sensitive neg: out",
+        "dia": 48
+      },
+      "D": {
+        "texto": "Highly specific tests are best for screening",
+        "quiz": "Specific to screen"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Só o *detector mudo* passou no embarque",
+    "certa": [
+      "Teste muito sensível quase não tem falso negativo, então um negativo ajuda a descartar a doença (*SnNOut*, dia 48). As outras três frases trocam detalhes que o NBME adora: o padrão da imunofluorescência no *Goodpasture syndrome* (dia 15) e a célula que medeia a *allergic contact dermatitis* (dia 43). O intruso inverte o papel dos testes no rastreamento."
+    ],
+    "termos": [
+      "linear immunofluorescence",
+      "type IV hypersensitivity",
+      "SnNOut",
+      "screening test"
+    ],
+    "erradas": {
+      "A": "Dia 15: no Goodpasture, o anticorpo anti-membrana basal (colágeno tipo IV) dá imunofluorescência linear, não granular.",
+      "B": "Dia 43: a dermatite ao níquel é tipo IV, mediada por linfócitos T, e aparece em 48 a 72 horas.",
+      "D": "Intruso: para rastrear, usa-se teste sensível; o específico serve para confirmar (SpPIn)."
+    },
+    "macete": {
+      "frase": "*Linha* no Goodpasture, *fermento* no níquel, *detector mudo* no SnNOut",
+      "apoio": "Pegadinha de prova: O NBME troca linear por granular (granular é de imunocomplexo, como na glomerulonefrite pós-estreptocócica) e sensível por específico na hora de rastrear.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo de revisão com três assuntos das últimas semanas, rim e pulmão, pele e estatística, mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Imunologia",
+      "#Biostatistics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual frase do quadro está certa?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

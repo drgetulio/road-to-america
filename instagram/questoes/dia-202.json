@@ -1,0 +1,87 @@
+{
+  "dia": 202,
+  "data": "2027-05-22",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Número necessário para tratar",
+  "conceito": "Number needed to treat: 1 divided by the absolute risk reduction",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-05-23",
+  "tom": null,
+  "gancho": "Quantos *guarda-chuvas* para uma pessoa a menos se molhar?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-202.png",
+    "cena": "Num ponto de ônibus em dia de chuva, o fantasminha Viés, meio escondido atrás de uma tabela 2x2, distribui guarda-chuvas fechados a uma fila longa de gotinhas sorridentes; ao lado, uma calculadora antiga sem números na tela.",
+    "foco": "50% 35%",
+    "alt": "Quantos guarda-chuvas para uma pessoa a menos se molhar?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-202-macete.png",
+    "cena": "A fila agora tem vinte gotinhas com guarda-chuvas abertos e só um deles brilha verde, o único que de fato evitou uma molhada; o Viés, surpreso, deixa cair uma placa com um pedaço de pizza dividido em quatro, a conta errada.",
+    "alt": "NNT é 1 sobre a redução absoluta"
+  },
+  "questao": {
+    "vinheta": "In a randomized trial, 1,000 patients with heart failure receive a new drug and 1,000 receive placebo for 2 years. Hospitalization occurs in 150 patients in the drug group and in 200 patients in the placebo group.",
+    "pergunta": "How many patients must be treated for 2 years to prevent one hospitalization?",
+    "alternativas": {
+      "A": {
+        "texto": "4",
+        "quiz": "4"
+      },
+      "B": {
+        "texto": "5",
+        "quiz": "5"
+      },
+      "C": {
+        "texto": "7",
+        "quiz": "7"
+      },
+      "D": {
+        "texto": "20",
+        "quiz": "20"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "NNT é *1 sobre a redução absoluta*",
+    "certa": [
+      "O risco no placebo é 200/1.000 = 20% e no remédio é 150/1.000 = 15%. A *absolute risk reduction* é 20% menos 15% = 5% (0,05). O *number needed to treat* é 1 dividido pela ARR: 1/0,05 = 20. É preciso tratar 20 pacientes por 2 anos para evitar uma internação."
+    ],
+    "termos": [
+      "number needed to treat",
+      "absolute risk reduction",
+      "relative risk reduction",
+      "randomized trial"
+    ],
+    "erradas": {
+      "A": "4 é 1 dividido pela redução relativa do risco (5% sobre 20% = 25%); o NNT usa a redução absoluta.",
+      "B": "5 é 1 dividido pelo risco do grupo placebo (20%), uma conta que não mede o efeito do remédio.",
+      "C": "Cerca de 7 é 1 dividido pelo risco do grupo tratado (15%), também sem comparar os grupos."
+    },
+    "macete": {
+      "frase": "NNT é *quantos guarda-chuvas* você distribui para *uma pessoa a menos se molhar*: 1 dividido pela redução *absoluta* do risco. Se você usar a relativa, o *Viés* te engana com 4.",
+      "apoio": "O NBME oferece 1/RRR e os riscos isolados como distratores; calcule a ARR em decimal e inverta. NNH segue a mesma conta com o aumento absoluto do risco.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés, com o fantasminha de plantão. Um ensaio clínico, dois grupos e uma conta que cai em toda prova. O Viés adora quando a gente usa o risco relativo na hora errada.",
+    "palavras_chave": [
+      "randomized trial",
+      "heart failure",
+      "hospitalization",
+      "placebo"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Risco 20% contra 15%. Qual o NNT?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

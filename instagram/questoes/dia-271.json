@@ -1,0 +1,96 @@
+{
+  "dia": 271,
+  "data": "2027-07-30",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Síndrome serotoninérgica",
+  "conceito": "Serotonin syndrome: SSRI plus MAOI or linezolid, clonus and hyperthermia, cyproheptadine",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-31",
+  "tom": null,
+  "gancho": "Antidepressivo e antibiótico no mesmo balcão: *virou bloco de Carnaval*",
+  "gancho_apoio": "A Tia Meia-Vida viu os dois frascos juntos e a festa começou. Qual remédio encerra o bloco?",
+  "imagem": {
+    "arquivo": "dia-271.png",
+    "cena": "Tia Meia-Vida atrás do balcão da farmácia, surpresa, vendo dois frascos (um de comprimidos redondos, outro de cápsulas) despejarem confete no mesmo balde, que transborda como bloco de Carnaval; molinhas pulam do balcão como pernas inquietas.",
+    "foco": "50% 35%",
+    "alt": "Antidepressivo e antibiótico no mesmo balcão: virou bloco de Carnaval"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-271-macete.png",
+    "cena": "Callback: o mesmo balcão depois da festa. A Tia Meia-Vida varre o confete com uma vassoura feita de um galho de cipreste com sete ramos (cypro-hepta-dine), as molinhas se acalmam e os dois frascos ficam tampados num canto.",
+    "foco": "50% 45%",
+    "alt": "Serotonina em excesso pede antagonista 5-HT2A"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman taking sertraline starts linezolid for MRSA pneumonia. Eighteen hours later she is agitated and diaphoretic, with a temperature of 39.4°C and pulse of 124/min. She has mydriasis, hyperactive bowel sounds, hyperreflexia, and inducible ankle clonus.",
+    "pergunta": "Both drugs are stopped, and supportive care with benzodiazepines is begun. Which additional drug is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Cyproheptadine",
+        "quiz": "Cyproheptadine"
+      },
+      "B": {
+        "texto": "Dantrolene",
+        "quiz": "Dantrolene"
+      },
+      "C": {
+        "texto": "Bromocriptine",
+        "quiz": "Bromocriptine"
+      },
+      "D": {
+        "texto": "Physostigmine",
+        "quiz": "Physostigmine"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Serotonina em excesso pede *antagonista 5-HT2A*",
+    "certa": [
+      "A *linezolid* é um *IMAO fraco* e, somada ao *ISRS*, deixa serotonina sobrando na sinapse. Clônus, hiper-reflexia, hipertermia, diarreia e midríase poucas horas depois formam a *serotonin syndrome*. Depois de suspender os remédios e dar suporte (benzodiazepínico para a agitação, resfriamento), o antídoto é a *cyproheptadine*, antagonista 5-HT2A."
+    ],
+    "termos": [
+      "serotonin syndrome",
+      "linezolid (weak MAOI)",
+      "inducible clonus",
+      "cyproheptadine"
+    ],
+    "erradas": {
+      "B": "*Dantrolene* bloqueia o receptor de rianodina e trata a hipertermia maligna, que vem após anestésico inalatório ou succinilcolina, com rigidez e não com clônus.",
+      "C": "*Bromocriptine* é agonista dopaminérgico usado na síndrome neuroléptica maligna, que evolui em dias, com rigidez em cano de chumbo e reflexos lentos.",
+      "D": "*Physostigmine* reverte a intoxicação anticolinérgica, que deixa a pele seca e o intestino parado; aqui há suor e ruídos intestinais aumentados."
+    },
+    "macete": {
+      "frase": "*Cipreste de sete galhos* varre a serotonina: cypro-hepta-dine",
+      "apoio": "Na imagem, a Tia Meia-Vida usa um galho de cipreste com sete ramos como vassoura e varre o confete da serotonina que transbordou do balcão. Clônus é o confete que não para de pular.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Paciente em uso de sertralina começa linezolida para pneumonia por MRSA. Menos de um dia depois: suor, febre, pupilas grandes e clônus no tornozelo. A Tia Meia-Vida quer saber qual frasco tirar da prateleira.",
+    "palavras_chave": [
+      "sertraline",
+      "linezolid",
+      "hyperthermia",
+      "clonus"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Serotonina em festa: qual é o antídoto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

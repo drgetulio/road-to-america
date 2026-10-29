@@ -1,0 +1,101 @@
+{
+  "dia": 140,
+  "data": "2027-03-21",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix dos cromossomos: Síndrome de DiGeorge (dia 50), Trissomia do 21 (dia 66), Translocação robertsoniana (dia 136)",
+  "conceito": "Chromosome remix: DiGeorge syndrome + Trisomy 21 + Robertsonian translocation",
+  "personagem": null,
+  "gancho_data": "Dia Mundial da Síndrome de Down (21/3): tom respeitoso, sem humor sobre a condição.",
+  "remix_de": [
+    50,
+    66,
+    136
+  ],
+  "explicacao_em": "2027-03-22",
+  "tom": "acolhedor",
+  "gancho": "Dia Mundial da Síndrome de Down: entender o *cariótipo* também é cuidado",
+  "gancho_apoio": "Três conceitos de genética já vistos (dias 50, 66 e 136) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-140.png",
+    "cena": "Um toca-discos com três discos sem rótulo, cada um com um desenho simples de cromossomos. Ao lado, um varal colorido com pares de meias trocadas, símbolo do Dia Mundial da Síndrome de Down.",
+    "foco": "50% 35%",
+    "alt": "Toca-discos com três discos de cromossomos e um varal de meias coloridas trocadas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-140-macete.png",
+    "cena": "Callback: cada disco revela uma cena: um cromossomo extra que ficou junto durante a divisão do óvulo (não disjunção materna), dois vagões engatados (robertsoniana) e um pedacinho que falta (deleção do 22). O primeiro disco brilha em verde.",
+    "foco": "50% 40%",
+    "alt": "Três discos revelam não disjunção, vagões engatados e um pedacinho faltando; o primeiro brilha em verde."
+  },
+  "questao": {
+    "vinheta": "A 26-year-old woman asks how her newborn son's Down syndrome occurred. The infant's karyotype is 47,XY,+21 in all cells examined. Both parents have normal karyotypes.",
+    "pergunta": "Which mechanism most likely explains the infant's karyotype?",
+    "alternativas": {
+      "A": {
+        "texto": "Robertsonian translocation from a parent",
+        "quiz": "Robertsoniana",
+        "dia": 136
+      },
+      "B": {
+        "texto": "Maternal meiotic nondisjunction",
+        "quiz": "Não disj. materna",
+        "dia": 66
+      },
+      "C": {
+        "texto": "Microdeletion of 22q11.2",
+        "quiz": "Deleção 22q11.2",
+        "dia": 50
+      },
+      "D": {
+        "texto": "Postzygotic mitotic nondisjunction",
+        "quiz": "Mosaicismo"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "47,+21 com pais normais: *não disjunção materna*",
+    "certa": [
+      "Cerca de 95% dos casos de síndrome de Down são trissomia livre (47,+21), e a maioria vem da não disjunção na meiose I da mãe, que fica mais frequente com a idade materna. Com os cariótipos dos pais normais, a recorrência é baixa. O mesmo cariótipo em todas as células afasta o mosaicismo."
+    ],
+    "termos": [
+      "trisomy 21",
+      "maternal meiotic nondisjunction",
+      "Robertsonian translocation",
+      "mosaicism"
+    ],
+    "erradas": {
+      "A": "Dia 136: na translocação robertsoniana a criança tem 46 cromossomos e, muitas vezes, um dos pais é portador com 45.",
+      "C": "Dia 50: a microdeleção 22q11.2 é a síndrome de DiGeorge, sem cromossomo extra.",
+      "D": "Intruso: a não disjunção mitótica depois da fecundação gera mosaicismo, com mistura de células 46 e 47."
+    },
+    "macete": {
+      "frase": "Leia o cariótipo: *47 e pais normais* é não disjunção materna",
+      "apoio": "Errou alguma? Volte ao dia original (50, 66 ou 136) e refaça antes do próximo remix.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje, 21/3, é o Dia Mundial da Síndrome de Down. As meias trocadas da imagem são o símbolo da data, que celebra a diversidade. No remix, três conceitos de genética que caem juntos.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Genetica",
+      "#Genetics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Cariótipo 47,+21 e pais normais: mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

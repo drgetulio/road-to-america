@@ -1,0 +1,96 @@
+{
+  "dia": 311,
+  "data": "2027-09-08",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Aterosclerose",
+  "conceito": "Atherosclerosis: oxidized LDL taken up by macrophages forms foam cells and fatty streaks",
+  "personagem": "Mito",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-09",
+  "tom": null,
+  "gancho": "Encanamento com manteiga e um *sonho de padaria* na parede. Explica, Mito!",
+  "gancho_apoio": "Na Quarta do Porquê, o Mito abre o cano e mostra a primeira lesão da placa.",
+  "imagem": {
+    "arquivo": "dia-311.png",
+    "cena": "Mito, de jaleco amassado e copo de café, aponta com uma varinha para um cano em corte, estilo manual de montagem: na parede interna há estrias planas de manteiga amarela e células redondas estufadas de creme, como sonhos de padaria.",
+    "foco": "50% 35%",
+    "alt": "Encanamento com manteiga e um sonho de padaria na parede. Explica, Mito!"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-311-macete.png",
+    "cena": "Callback: cubinhos de manteiga com manchas de ferrugem entram numa célula redonda por uma porta giratória sem trava, sem parar; a porta vizinha, com um cadeado de lotado, fica fechada. O Mito mostra a cena com cara de quem já sabia.",
+    "foco": "50% 45%",
+    "alt": "Foam cell: LDL oxidado entra pela porta sem trava"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old man dies in a motor vehicle collision. At autopsy, the intimal surface of the abdominal aorta shows flat, yellow streaks that do not narrow the lumen. Microscopy of the streaks shows intimal cells with abundant pale, foamy, lipid-filled cytoplasm.",
+    "pergunta": "Which process most directly produced these cells?",
+    "alternativas": {
+      "A": {
+        "texto": "Dystrophic calcification of necrotic smooth muscle",
+        "quiz": "Calcificação"
+      },
+      "B": {
+        "texto": "Hyaline deposition of plasma proteins in arterioles",
+        "quiz": "Hialinose"
+      },
+      "C": {
+        "texto": "Uptake of native LDL through regulated LDL receptors",
+        "quiz": "Receptor de LDL"
+      },
+      "D": {
+        "texto": "Uptake of oxidized LDL by macrophage scavenger receptors",
+        "quiz": "Receptor scavenger"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Foam cell: *LDL oxidado* entra pela porta sem trava",
+    "certa": [
+      "Estrias gordurosas são a lesão mais precoce da *atherosclerosis* e já aparecem em adolescentes. O LDL preso na íntima é oxidado e capturado pelos *scavenger receptors* (como CD36 e SR-A) dos macrófagos, que, ao contrário do receptor de LDL, não têm freio por retroalimentação. O macrófago enche de colesterol e vira *foam cell*."
+    ],
+    "termos": [
+      "fatty streak",
+      "oxidized LDL",
+      "scavenger receptors",
+      "foam cells"
+    ],
+    "erradas": {
+      "A": "A *calcificação distrófica* aparece em placas antigas, com necrose, e não nas estrias gordurosas iniciais.",
+      "B": "A *hialinose arteriolar* é a lesão de arteríola da hipertensão e do diabetes, sem lipídio dentro das células.",
+      "C": "O *receptor de LDL* é regulado: quando a célula tem colesterol suficiente, ela reduz o receptor e não vira célula espumosa."
+    },
+    "macete": {
+      "frase": "*LDL enferrujado entra pela porta giratória sem trava*, e o macrófago vira sonho recheado",
+      "apoio": "Na imagem do Mito, o cubinho de manteiga enferrujado (o LDL oxidado) passa por uma porta giratória que nunca tranca (o receptor scavenger). A porta ao lado, com cadeado de lotado, é o receptor de LDL, que sabe dizer chega.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Necropsia de um jovem de 24 anos mostra estrias amarelas e planas na íntima da aorta, com células de citoplasma espumoso. O Mito pergunta qual processo formou essas células.",
+    "palavras_chave": [
+      "autopsy",
+      "abdominal aorta",
+      "yellow intimal streaks",
+      "young adult"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Patologia",
+      "#Pathology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Estria gordurosa: quem formou a foam cell?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

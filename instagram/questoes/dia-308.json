@@ -1,0 +1,103 @@
+{
+  "dia": 308,
+  "data": "2027-09-05",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Deficiência do complemento terminal (dia 246), Hepatite E (dia 281), Síndrome de hiper-IgM (dia 302)",
+  "conceito": "Remix: Terminal complement deficiency + Hepatitis E + Hyper-IgM syndrome",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    246,
+    281,
+    302
+  ],
+  "explicacao_em": "2027-09-06",
+  "tom": null,
+  "gancho": "Três discos e um bis indesejado: *quem explica a meningite repetida?*",
+  "gancho_apoio": "Remix com complemento terminal, hepatite E e hiper-IgM. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-308.png",
+    "cena": "Macrô de DJ diante de um toca-discos com três discos: um com uma furadeira de cinco peças, outro com um guarda-chuva na enchente e outro com uma camisa de cinco estrelas; um quarto disco, de outra cor, com um pulmão de desenho, fica separado. Uma dupla de grãos de café dança na pista pela segunda vez.",
+    "foco": "50% 35%",
+    "alt": "Três discos e um bis indesejado: quem explica a meningite repetida?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-308-macete.png",
+    "cena": "Callback: o disco da furadeira gira; a furadeira tem um encaixe vazio onde falta uma das cinco peças e não consegue furar a dupla de grãos de café, que continua dançando. O Macrô segura a peça que falta e dois frascos de vacina em forma de escudo aparecem na prateleira.",
+    "foco": "50% 45%",
+    "alt": "Neisseria de repetição: falta o MAC (C5 a C9)"
+  },
+  "questao": {
+    "vinheta": "A 19-year-old man has his second episode of meningococcal meningitis in 3 years. Between episodes he is well, with no sinus or lung infections and no diarrhea. Serum IgG, IgA, and IgM levels are normal. Total hemolytic complement (CH50) activity is undetectable, while C3 and C4 levels are normal.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Common variable immunodeficiency",
+        "quiz": "Imunodef. comum"
+      },
+      "B": {
+        "texto": "Hepatitis E infection",
+        "quiz": "Hepatite E",
+        "dia": 281
+      },
+      "C": {
+        "texto": "X-linked hyper-IgM syndrome",
+        "quiz": "Hiper-IgM",
+        "dia": 302
+      },
+      "D": {
+        "texto": "Terminal complement deficiency",
+        "quiz": "Complemento C5-C9",
+        "dia": 246
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Neisseria de repetição: *falta o MAC* (C5 a C9)",
+    "certa": [
+      "Dois episódios de doença meningocócica, imunoglobulinas normais e *CH50* indetectável com C3 e C4 normais apontam para *terminal complement deficiency* (C5 a C9). Sem o *membrane attack complex*, a Neisseria, que tem parede fina, escapa da lise. A conduta inclui vacinas meningocócicas (MenACWY e MenB) e investigação dos familiares."
+    ],
+    "termos": [
+      "terminal complement deficiency",
+      "membrane attack complex",
+      "CH50",
+      "Neisseria meningitidis"
+    ],
+    "erradas": {
+      "A": "A *imunodeficiência comum variável* reduz IgG e IgA e causa infecções sinopulmonares de repetição; aqui as imunoglobulinas são normais.",
+      "B": "A *hepatite E* (dia 281) é transmitida por via fecal-oral e dá hepatite aguda, grave na gestante, e não meningite de repetição.",
+      "C": "A *hiper-IgM* (dia 302) traz IgM alta com IgG e IgA baixas e infecções oportunistas desde a infância."
+    },
+    "macete": {
+      "frase": "*A furadeira do Macrô tem cinco peças, de C5 a C9*: faltou uma, o MAC não fura",
+      "apoio": "É o mesmo disco do dia 246: os grãos de café em dupla são os diplococos da Neisseria e voltam ao boteco sempre que a furadeira está desmontada.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com deficiência do complemento terminal (dia 246), hepatite E (dia 281) e síndrome de hiper-IgM (dia 302), mais um intruso. Rapaz com o segundo episódio de meningite meningocócica, imunoglobulinas normais e CH50 indetectável. Qual disco toca?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#RemixDeDomingo"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Meningococo de novo e CH50 zerado: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

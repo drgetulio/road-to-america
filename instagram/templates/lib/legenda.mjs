@@ -37,32 +37,73 @@ function hashtagDaArea(area) {
   return tag.length > 2 && tag.length <= 30 ? `#${tag}` : null;
 }
 
-export function legenda(dia, ontem, config) {
-  const L = dia.legenda;
+// Bloco do gabarito de ontem (publicado em D+1). É o único lugar da legenda em que
+// entram a letra certa e os termos da resposta (explicacao.termos).
+export function blocoGabarito(ontem) {
+  const c = ontem.questao.correta;
+  const alt = ontem.questao.alternativas.find((a) => a.letra === c);
+  const linhas = [`Gabarito de ontem (dia ${num3(ontem.n)}): letra ${c}, ${alt ? semMarca(alt.texto) : ''}. Arraste até o fim para ver o porquê e o macete.`];
+  const termos = (ontem.explicacao.termos || []).map(semMarca).filter(Boolean);
+  if (termos.length) linhas.push(`Termos-chave da resposta: ${termos.join(', ')}`);
+  return linhas.join('\n');
+}
+
+// Palavras-chave da questão de hoje: só legenda.palavras_chave, que são neutras
+// (assunto, sinais e exames da vinheta). Os termos da resposta nunca entram aqui;
+// eles ficam para o bloco do gabarito, no post do dia seguinte.
+export function palavrasChaveDaQuestao(dia) {
+  const lista = Array.isArray(dia.legenda.palavras_chave) ? dia.legenda.palavras_chave : [];
+  return lista.map(semMarca).filter(Boolean);
+}
+
+function assinaturaEAviso(config) {
   const ass = config.assinatura;
-  const linhas = [];
-  linhas.push(semMarca(L.gancho || dia.gancho));
-  if (L.contexto) linhas.push('', semMarca(L.contexto));
-  linhas.push('', 'Comente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.');
-  if (ontem) {
-    const c = ontem.questao.correta;
-    const alt = ontem.questao.alternativas.find((a) => a.letra === c);
-    linhas.push('', `Gabarito de ontem (dia ${num3(ontem.n)}): letra ${c}, ${alt ? alt.texto : ''}. Arraste até o fim para ver o porquê e o macete.`);
-  }
-  const termos = L.palavras_chave || dia.explicacao.termos;
-  if (termos && termos.length) linhas.push('', `Palavras-chave: ${termos.join(', ')}`);
-  const cta = ctaDoDia(dia);
-  linhas.push('', L.cta_texto || FRASES_CTA[cta] || FRASES_CTA.salvar);
-  if (dia.cvv) linhas.push('', 'Se você está passando por um momento difícil, fale com o CVV: ligue 188, 24 horas, gratuito, ou acesse cvv.org.br.');
   const assinatura = [ass.nome, ass.crm].filter(Boolean).join(', ');
   const espec = ass.rqe && ass.especialidade ? `${ass.especialidade}, RQE ${ass.rqe}` : null;
-  linhas.push('', assinatura + (espec ? `. ${espec}` : '') + '.');
-  linhas.push(config.aviso);
+  return [assinatura + (espec ? `. ${espec}` : '') + '.', config.aviso];
+}
+
+function hashtags(dia, config) {
+  const L = dia.legenda;
   const tags = [...config.hashtags_base];
   tags.splice(1, 0, /2/.test(dia.step) ? '#USMLEStep2CK' : '#USMLEStep1');
   const extra = L.hashtags || [hashtagDaArea(dia.area)].filter(Boolean);
   for (const t of extra) if (!tags.includes(t) && tags.length < 8) tags.push(t);
-  linhas.push('', tags.join(' '));
+  return tags.join(' ');
+}
+
+// Parte da legenda que apresenta a questão do dia D (sem nada da resposta).
+export function legendaQuestao(dia, config) {
+  const L = dia.legenda;
+  const linhas = [semMarca(L.gancho || dia.gancho)];
+  if (L.contexto) linhas.push('', semMarca(L.contexto));
+  linhas.push('', 'Comente A, B, C ou D. O gabarito sai amanhã às 12h, junto com a próxima.');
+  const termos = palavrasChaveDaQuestao(dia);
+  if (termos.length) linhas.push('', `Palavras-chave: ${termos.join(', ')}`);
+  return linhas.join('\n');
+}
+
+// Legenda só da questão do dia D (sem o gabarito de ontem), para revisão e planilha.
+export function legendaSoQuestao(dia, config) {
+  const L = dia.legenda;
+  const linhas = [legendaQuestao(dia, config)];
+  linhas.push('', semMarca(L.cta_texto || FRASES_CTA[ctaDoDia(dia)] || FRASES_CTA.salvar));
+  if (dia.cvv) linhas.push('', 'Se você está passando por um momento difícil, fale com o CVV: ligue 188, 24 horas, gratuito, ou acesse cvv.org.br.');
+  linhas.push('', ...assinaturaEAviso(config));
+  linhas.push('', hashtags(dia, config));
+  return linhas.join('\n') + '\n';
+}
+
+// Legenda completa do post do dia D: questão de hoje + gabarito de ontem (D+1 de ontem).
+export function legenda(dia, ontem, config) {
+  const L = dia.legenda;
+  const linhas = [legendaQuestao(dia, config)];
+  if (ontem) linhas.push('', blocoGabarito(ontem));
+  const cta = ctaDoDia(dia);
+  linhas.push('', semMarca(L.cta_texto || FRASES_CTA[cta] || FRASES_CTA.salvar));
+  if (dia.cvv) linhas.push('', 'Se você está passando por um momento difícil, fale com o CVV: ligue 188, 24 horas, gratuito, ou acesse cvv.org.br.');
+  linhas.push('', ...assinaturaEAviso(config));
+  linhas.push('', hashtags(dia, config));
   return linhas.join('\n') + '\n';
 }
 

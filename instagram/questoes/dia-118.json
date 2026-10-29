@@ -1,0 +1,95 @@
+{
+  "dia": 118,
+  "data": "2027-02-27",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Violência contra a pessoa idosa",
+  "conceito": "Suspected elder abuse: report to Adult Protective Services",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-28",
+  "tom": "acolhedor",
+  "gancho": "Sinais na pele, no peso e nos remédios: o que fazer?",
+  "gancho_apoio": "Uma senhora de 82 anos, um cuidador e sinais que não combinam. Qual é o próximo passo?",
+  "imagem": {
+    "arquivo": "dia-118.png",
+    "cena": "Uma varanda tranquila no fim da tarde, com uma cadeira de balanço vazia, uma xícara de chá na mesinha e uma única janela acesa. Ao lado do portão, uma placa de trânsito redonda com o desenho de uma balança de tribunal, e um guarda-chuva encostado na parede.",
+    "foco": "50% 35%",
+    "alt": "Varanda com cadeira de balanço vazia, xícara de chá, janela acesa e uma placa com uma balança."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-118-macete.png",
+    "cena": "Callback: um envelope voa da varanda até um prédio firme com um escudo verde na fachada e luz quente nas janelas. A cadeira de balanço agora tem uma manta macia e um vaso de flores ao lado, e o guarda-chuva está aberto, protegendo a varanda.",
+    "foco": "50% 40%",
+    "alt": "Envelope voando até um prédio com escudo verde; a cadeira de balanço com manta e flores, protegida pelo guarda-chuva aberto."
+  },
+  "questao": {
+    "vinheta": "An 82-year-old woman with mild cognitive impairment visits with her son, her caregiver. She has bruises of different ages on both upper arms, has lost 5 kg in 3 months and has had no medication refills for 2 months. Alone, she quietly says she is afraid of upsetting her son.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Confront the son about the bruises",
+        "quiz": "Confrontar o filho"
+      },
+      "B": {
+        "texto": "Report the suspicion to Adult Protective Services",
+        "quiz": "Notificar ao APS"
+      },
+      "C": {
+        "texto": "Wait for her explicit permission to report",
+        "quiz": "Esperar autorização"
+      },
+      "D": {
+        "texto": "Reexamine her in 1 month for new injuries",
+        "quiz": "Rever em 1 mês"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Suspeita de violência contra a pessoa idosa: *notificar*",
+    "certa": [
+      "Hematomas de idades diferentes em locais protegidos, perda de peso, remédios sem reposição e medo relatado a sós sugerem violência e negligência contra a pessoa idosa. Nos Estados Unidos, o médico deve notificar a suspeita ao Adult Protective Services (APS), que investiga; não é preciso ter certeza nem prova. Junto com isso, o médico trata as lesões, avalia a segurança imediata e registra os achados com cuidado."
+    ],
+    "termos": [
+      "elder abuse",
+      "Adult Protective Services",
+      "mandatory reporting"
+    ],
+    "erradas": {
+      "A": "Confrontar o cuidador pode aumentar o risco para a paciente, e investigar cabe ao serviço de proteção.",
+      "C": "Na maioria dos estados a notificação da suspeita é obrigatória e não depende de autorização, ainda mais com prejuízo cognitivo.",
+      "D": "Esperar novas lesões expõe a paciente a mais dano; os sinais atuais já justificam a notificação."
+    },
+    "macete": {
+      "frase": "*Pele, peso e pílula*: suspeitou, notificou",
+      "apoio": "Na imagem, a carta segue para o prédio com o escudo, e a cadeira de balanço ganha uma manta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado sem viés, ética: uma consulta de rotina, uma senhora com prejuízo cognitivo leve e sinais que pedem atenção. O que o médico deve fazer?",
+    "palavras_chave": [
+      "82-year-old woman",
+      "bruises of different ages",
+      "weight loss",
+      "caregiver"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#Geriatria"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Suspeita de violência contra idosa: e agora?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

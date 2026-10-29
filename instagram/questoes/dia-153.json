@@ -1,0 +1,87 @@
+{
+  "dia": 153,
+  "data": "2027-04-03",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Bioestatística, epidemiologia, saúde populacional e interpretação da literatura médica",
+  "topico": "Viés de tempo de duração",
+  "conceito": "Length-time bias: screening preferentially detects slow-growing, less aggressive disease",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-04",
+  "tom": null,
+  "gancho": "O Viés foi pescar e voltou só com peixe *preguiçoso*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-153.png",
+    "cena": "O Viés pesca num rio cheio de peixes de velocidades diferentes, com a rede numa mão e um cronômetro na outra. Quem vai cair na rede?",
+    "foco": "50% 35%",
+    "alt": "O Viés pesca num rio cheio de peixes de velocidades diferentes, com a rede numa mão e um cronômetro na outra."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-153-macete.png",
+    "cena": "A rede volta cheia de peixes preguiçosos com casco de caracol, enquanto os peixes ligeiros passam zunindo entre duas redes. Uma fita métrica comprida na margem lembra o \"length\".",
+    "alt": "Rede de rastreamento pega o peixe lento"
+  },
+  "questao": {
+    "vinheta": "In a randomized trial of annual screening for a cancer, tumors found at screening visits are mostly low grade with long doubling times, whereas tumors diagnosed between screens are mostly high grade. Screen-detected patients survive longer, even after correcting for the earlier date of diagnosis.",
+    "pergunta": "Which bias best explains this survival difference?",
+    "alternativas": {
+      "A": {
+        "texto": "Lead-time bias",
+        "quiz": "Lead-time bias"
+      },
+      "B": {
+        "texto": "Length-time bias",
+        "quiz": "Length-time bias"
+      },
+      "C": {
+        "texto": "Volunteer bias",
+        "quiz": "Volunteer bias"
+      },
+      "D": {
+        "texto": "Recall bias",
+        "quiz": "Recall bias"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Rede de rastreamento pega o peixe *lento*",
+    "certa": [
+      "O rastreamento periódico pega com mais facilidade a doença lenta, que passa mais tempo na fase pré-clínica detectável, enquanto os tumores agressivos aparecem entre um exame e outro (*interval cancers*). O grupo detectado no rastreamento parece viver mais porque já era formado por doença menos agressiva: isso é *length-time bias*."
+    ],
+    "termos": [
+      "length-time bias",
+      "lead-time bias",
+      "interval cancer",
+      "screening"
+    ],
+    "erradas": {
+      "A": "O *lead-time bias* só adianta a data do diagnóstico, e a vinheta diz que a diferença persiste depois de corrigir esse adiantamento.",
+      "C": "O *volunteer bias* aparece quando quem escolhe se rastrear é mais saudável; aqui os dois grupos de tumor vêm do mesmo braço rastreado, e o que muda é a biologia do tumor.",
+      "D": "O *recall bias* depende de lembrar exposições passadas, típico de caso-controle, e não há questionário na vinheta."
+    },
+    "macete": {
+      "frase": "*Length* lembra *lento*: a rede do rastreamento pega o peixe preguiçoso, que fica muito tempo na água, e o peixe ligeiro passa entre uma rede e outra.",
+      "apoio": "O NBME separa os dois assim: lead-time mexe no relógio (diagnóstico mais cedo, morte na mesma data); length-time mexe no tipo de doença (tumor lento pego, tumor rápido escapando entre os exames).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com o Viés pescando. Um programa de rastreamento parece salvar vidas, mas tem fantasma no barco. Repare no tipo de tumor que cai na rede e no que aparece entre um exame e outro.",
+    "palavras_chave": [
+      "cancer screening trial",
+      "tumor grade",
+      "interval tumors",
+      "survival analysis"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Rastreio pega mais tumor lento. Qual viés?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 306,
+  "data": "2027-09-03",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Propiltiouracil",
+  "conceito": "Propylthiouracil: blocks thyroid peroxidase and peripheral T4 to T3 conversion, preferred in the first trimester",
+  "personagem": "Tia Meia-Vida",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-04",
+  "tom": null,
+  "gancho": "Dois remédios quase gêmeos no balcão: *qual deles a cegonha leva?*",
+  "gancho_apoio": "A Tia Meia-Vida olha o calendário da gestação antes de entregar o frasco.",
+  "imagem": {
+    "arquivo": "dia-306.png",
+    "cena": "Tia Meia-Vida atrás do balcão da farmácia com dois frascos quase idênticos, um redondo e um quadrado; ao lado, um calendário de nove quadradinhos com os três primeiros destacados em amarelo; uma cegonha simpática espera na fila com uma trouxinha vazia no bico.",
+    "foco": "50% 35%",
+    "alt": "Dois remédios quase gêmeos no balcão: qual deles a cegonha leva?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-306-macete.png",
+    "cena": "Callback: a Tia Meia-Vida entrega o frasco redondo à cegonha; do frasco sai uma tesoura que corta, ao mesmo tempo, a esteira de uma pequena fábrica em forma de borboleta e a estrada de uma motoca de entrega. Num canto, um fígado simpático segura um guarda-chuva.",
+    "foco": "50% 45%",
+    "alt": "Graves no 1º trimestre: PTU, que corta na fábrica e na estrada"
+  },
+  "questao": {
+    "vinheta": "A 28-year-old woman has palpitations, heat intolerance, and a 3-kg weight loss. She is 8 weeks pregnant. Pulse is 112/min. She has a diffuse, nontender goiter and lid lag. TSH is undetectable, free T4 is elevated, and TSH receptor antibodies are positive.",
+    "pergunta": "Which drug and mechanism is most appropriate now?",
+    "alternativas": {
+      "A": {
+        "texto": "Methimazole, inhibiting thyroid peroxidase",
+        "quiz": "Metimazol"
+      },
+      "B": {
+        "texto": "Radioactive iodine, ablating follicular cells",
+        "quiz": "Iodo radioativo"
+      },
+      "C": {
+        "texto": "Propylthiouracil, inhibiting peroxidase and peripheral deiodinase",
+        "quiz": "Propiltiouracil"
+      },
+      "D": {
+        "texto": "Potassium iodide, inhibiting hormone release",
+        "quiz": "Iodeto de potássio"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Graves no 1º trimestre: *PTU*, que corta na fábrica e na estrada",
+    "certa": [
+      "Doença de Graves no primeiro trimestre pede *propylthiouracil*, porque o methimazole nessa fase se associa a embriopatia (aplasia cutis, atresia de cóanas e de esôfago). O PTU inibe a *thyroid peroxidase*, que faz a organificação e o acoplamento do iodo, e também a *5'-deiodinase* periférica, que converte T4 em T3. Depois do primeiro trimestre, a troca para methimazole é decidida caso a caso, porque o PTU pode causar lesão hepática grave."
+    ],
+    "termos": [
+      "propylthiouracil",
+      "thyroid peroxidase",
+      "peripheral 5'-deiodinase",
+      "first trimester"
+    ],
+    "erradas": {
+      "A": "O *methimazole* bloqueia a peroxidase, mas não a conversão periférica, e é evitado no primeiro trimestre pelo risco de embriopatia.",
+      "B": "O *iodo radioativo* é contraindicado na gravidez: atravessa a placenta e destrói a tireoide do feto a partir de 10 a 12 semanas.",
+      "D": "O *iodeto de potássio* em dose alta (efeito Wolff-Chaikoff) só serve por pouco tempo, no preparo para cirurgia ou na tempestade tireoidiana."
+    },
+    "macete": {
+      "frase": "*PTU corta na fábrica e na estrada*, e P é de primeiro trimestre",
+      "apoio": "Na imagem, a tesoura da Tia Meia-Vida corta a esteira da fábrica (a peroxidase na tireoide) e a estrada de entrega da motoca (a conversão de T4 em T3 na periferia). O fígado de guarda-chuva lembra a hepatotoxicidade.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Mulher de 28 anos com 8 semanas de gestação, palpitações, bócio difuso, TSH suprimido, T4 livre alto e anticorpo contra o receptor de TSH positivo. A Tia Meia-Vida tem dois frascos parecidos na prateleira e só um é o preferido nesta fase.",
+    "palavras_chave": [
+      "8 weeks pregnant",
+      "palpitations",
+      "diffuse goiter",
+      "TSH receptor antibodies"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Graves com 8 semanas de gestação: qual?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

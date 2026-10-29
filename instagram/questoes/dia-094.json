@@ -1,0 +1,96 @@
+{
+  "dia": 94,
+  "data": "2027-02-03",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Clearance renal",
+  "conceito": "Inulin clearance estimates GFR, PAH clearance estimates renal plasma flow",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-04",
+  "tom": null,
+  "gancho": "Seu Néfron no pedágio: quanto do plasma passa pela *cancela*?",
+  "gancho_apoio": "Uma substância só é filtrada, a outra é filtrada e secretada. Faça a conta.",
+  "imagem": {
+    "arquivo": "dia-094.png",
+    "cena": "Seu Néfron trabalha numa cabine de pedágio. Carros azuis passam direto pela cancela, sem parar. Carros amarelos que escaparam da cancela são puxados por ele com um gancho comprido por uma estrada lateral. Na mesa, uma pizza inteira ainda sem cortes.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron num pedágio: carros azuis passam pela cancela e carros amarelos são puxados com um gancho."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-094-macete.png",
+    "cena": "Callback: a pizza na mesa do pedágio agora está cortada em cinco fatias iguais, uma delas destacada em verde. Seu Néfron segura a fatia verde com orgulho, enquanto os carros azuis e amarelos fazem fila organizada atrás dele.",
+    "foco": "50% 40%",
+    "alt": "Pizza cortada em cinco fatias, uma em verde, nas mãos do Seu Néfron no pedágio."
+  },
+  "questao": {
+    "vinheta": "A volunteer receives a continuous infusion of two substances. Substance X passes the glomerulus freely and is not reabsorbed or secreted; its clearance is 120 mL/min. Substance Y is filtered and actively secreted by the proximal tubule, so almost none remains in renal venous plasma; its clearance is 600 mL/min.",
+    "pergunta": "Which value is closest to this volunteer's filtration fraction?",
+    "alternativas": {
+      "A": {
+        "texto": "0.17",
+        "quiz": "0,17"
+      },
+      "B": {
+        "texto": "0.20",
+        "quiz": "0,20"
+      },
+      "C": {
+        "texto": "0.80",
+        "quiz": "0,80"
+      },
+      "D": {
+        "texto": "5.0",
+        "quiz": "5,0"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Inulina mede a *TFG*, PAH mede o *fluxo plasmático*",
+    "certa": [
+      "X se comporta como a inulina: filtrada e nada mais, então o clearance dela é a taxa de filtração glomerular (GFR = 120 mL/min). Y se comporta como o PAH: o que escapa do filtro é secretado, e quase todo o plasma sai limpo, então o clearance dele estima o fluxo plasmático renal (RPF = 600 mL/min). A fração de filtração é GFR dividida por RPF: 120/600 = 0,20."
+    ],
+    "termos": [
+      "filtration fraction",
+      "inulin clearance",
+      "PAH clearance",
+      "renal plasma flow"
+    ],
+    "erradas": {
+      "A": "0,17 sai de dividir 120 pela soma 120 + 600; o denominador é só o fluxo plasmático.",
+      "C": "0,80 é a fração do plasma que não foi filtrada (1 menos a fração de filtração).",
+      "D": "5,0 é a conta invertida, fluxo plasmático dividido pela filtração."
+    },
+    "macete": {
+      "frase": "Inulina passa *sem carimbo*; PAH é *puxado* pelo gancho; filtração é uma fatia em cinco",
+      "apoio": "Na imagem, os carros azuis passam pela cancela e os amarelos são puxados pelo gancho do Seu Néfron.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do porquê com o Seu Néfron: duas substâncias, dois clearances e uma divisão que o NBME adora.",
+    "palavras_chave": [
+      "continuous infusion",
+      "glomerular filtration",
+      "tubular secretion",
+      "renal physiology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Fisiologia",
+      "#Physiology",
+      "#Nefrologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "GFR 120 e RPF 600: fração de filtração?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

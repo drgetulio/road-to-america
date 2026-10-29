@@ -21,8 +21,11 @@ em `CONTRATO-ITEM.md`.
   gerados por `banco-privado/ferramentas/formularios.mjs --gravar`). No Supabase vão para
   a tabela `formularios_fixos`.
 - **Ferramentas de consolidação:** `banco-privado/ferramentas/` (validar, duplicidade,
-  laboratório, gabarito, formulários, manifesto e relatório); o resultado da última
-  consolidação está em `banco-privado/relatorio-banco.md`.
+  pares inimigos, laboratório, gabarito, formulários, manifesto e relatório); o resultado
+  da última consolidação está em `banco-privado/relatorio-banco.md`. Depois de mudar os
+  lotes, rode `inimigos.mjs --gravar`, `formularios.mjs --gravar` e `relatorio.mjs`, nessa
+  ordem: `tests/relatorio-formularios.test.mjs` falha enquanto `formularios.json` ou o
+  relatório não corresponderem aos lotes.
 
 ## Importar o banco para o Supabase
 

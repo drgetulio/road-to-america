@@ -1,0 +1,102 @@
+{
+  "dia": 42,
+  "data": "2026-12-13",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Deficiência de 21-hidroxilase (dia 10), Hipersensibilidade tipo I (dia 36), Relação ventilação-perfusão (dia 38)",
+  "conceito": "Remix: 21-hydroxylase deficiency + Type I hypersensitivity + Shunt vs dead space",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    10,
+    36,
+    38
+  ],
+  "explicacao_em": "2026-12-14",
+  "gancho": "Remix: um recém-nascido, três discos e um intruso",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos: um com o desenho de uma suprarrenal em forma de chapéu, um com um carrinho de pipoca e um com um ponto de ônibus alagado; um quarto disco liso fica de lado, o intruso.",
+    "foco": "50% 35%",
+    "alt": "Um toca-discos vermelho com três discos: um com o desenho de uma suprarrenal em forma de chapéu, um com um carrinho de pipoca e um com um ponto de ônibus alagado; um quarto disco liso fica de lado, o intruso.",
+    "arquivo": "dia-042.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco da glândula em forma de chapéu gira; no selo, um saleiro está virado e esvaziando, enquanto do outro lado cresce uma seta feita de anéis de esteroide, o excesso de andrógeno. O carrinho de pipoca e o ponto alagado ficam quietos na prateleira.",
+    "alt": "Perde sal, ganha andrógeno: 21-hidroxilase",
+    "arquivo": "dia-042-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 10-day-old girl is brought for vomiting and poor feeding. She has clitoromegaly and fused labioscrotal folds. BP is 62/34 mm Hg. Labs show sodium 126 mEq/L, potassium 6.8 mEq/L, and glucose 50 mg/dL. Oxygen saturation is 98% while breathing ambient air, and she has no rash or wheezing.",
+    "pergunta": "Which mechanism best explains her condition?",
+    "alternativas": {
+      "A": {
+        "texto": "Deficient adrenal 21-hydroxylase",
+        "quiz": "21-hydroxylase",
+        "dia": 10
+      },
+      "B": {
+        "texto": "IgE cross-linking on mast cells",
+        "quiz": "IgE on mast cells",
+        "dia": 36
+      },
+      "C": {
+        "texto": "Perfusion of nonventilated alveoli",
+        "quiz": "Shunt",
+        "dia": 38
+      },
+      "D": {
+        "texto": "Deficient adrenal 11-beta-hydroxylase",
+        "quiz": "11-beta-hydroxylase"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Perde *sal*, ganha *andrógeno*: 21-hidroxilase",
+    "certa": [
+      "Sem *21-hydroxylase*, a suprarrenal não faz cortisol nem aldosterona, e os precursores escoam para os andrógenos. Daí a virilização da menina, a *salt wasting* com sódio baixo e potássio alto, a hipotensão e a hipoglicemia na segunda semana de vida (conceito do dia 10). Saturação normal e ausência de urticária ou chiado tiram o shunt e a anafilaxia da conversa."
+    ],
+    "termos": [
+      "21-hydroxylase deficiency",
+      "salt-wasting crisis",
+      "congenital adrenal hyperplasia",
+      "11-beta-hydroxylase"
+    ],
+    "erradas": {
+      "B": "Dia 36: anafilaxia teria urticária, chiado e exposição a alérgeno, e não explica virilização nem potássio alto.",
+      "C": "Dia 38: shunt baixaria a saturação, que aqui é de 98%.",
+      "D": "Intruso: a 11-beta-hidroxilase também viriliza, mas o acúmulo de 11-desoxicorticosterona retém sal e dá hipertensão com potássio baixo."
+    },
+    "macete": {
+      "frase": "Termina em 1: *viriliza*. Começa com 1: *hipertensão*",
+      "apoio": "Pegadinha de prova: O NBME separa 21 de 11 pela pressão e pelo potássio: perda de sal com hipercalemia é 21; hipertensão com hipocalemia é 11.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três conceitos das últimas semanas tocam no mesmo toca-discos: suprarrenal, alergia e pulmão. Só um explica a recém-nascida de hoje. Cada alternativa traz o dia em que o assunto apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#RemixDeDomingo",
+      "#Endocrinologia",
+      "#Endocrinology",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual mecanismo explica a recém-nascida?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

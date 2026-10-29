@@ -1,0 +1,95 @@
+{
+  "dia": 139,
+  "data": "2027-03-20",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Violência por parceiro íntimo",
+  "conceito": "Intimate partner violence: screen privately and offer a safety plan",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-21",
+  "tom": "acolhedor",
+  "gancho": "A pergunta certa precisa de *porta fechada*",
+  "gancho_apoio": "Hoje sem piada. Um atendimento de pré-natal e um sinal que não pode passar.",
+  "imagem": {
+    "arquivo": "dia-139.png",
+    "cena": "Um consultório tranquilo com a porta se fechando devagar e um abajur aceso sobre a mesa. Duas cadeiras ficam frente a frente.",
+    "foco": "50% 35%",
+    "alt": "Consultório calmo com a porta se fechando, abajur aceso e duas cadeiras frente a frente."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-139-macete.png",
+    "cena": "Callback: a porta está fechada; sobre a mesa, um mapa com um caminho verde até uma casinha com escudo, uma mochila pronta e um guarda-chuva aberto.",
+    "foco": "50% 40%",
+    "alt": "Porta fechada; na mesa, um mapa com rota até uma casa protegida, uma mochila pronta e um guarda-chuva."
+  },
+  "questao": {
+    "vinheta": "At a routine prenatal visit, a 31-year-old woman who is 20 weeks pregnant is accompanied by her partner, who answers most questions for her. She has bruises of different ages on both upper arms and says she bumped into a door. Her partner then leaves the room to take a phone call.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Schedule a follow-up visit in 4 weeks",
+        "quiz": "Retorno em 4 semanas"
+      },
+      "B": {
+        "texto": "Report the partner to police without her consent",
+        "quiz": "Polícia sem aval"
+      },
+      "C": {
+        "texto": "Ask the partner about the bruises when he returns",
+        "quiz": "Perguntar a ele"
+      },
+      "D": {
+        "texto": "Ask her privately whether she feels safe at home",
+        "quiz": "Perguntar a sós"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Violência por parceiro: *a sós*, depois plano de segurança",
+    "certa": [
+      "Parceiro controlador, hematomas de idades diferentes e uma história que não combina sugerem violência por parceiro íntimo, que costuma aumentar na gestação. O momento a sós é a chance de perguntar de forma direta e sem julgamento se ela está segura. Se ela confirmar, o médico acolhe, documenta, avalia o risco e monta com ela um plano de segurança com recursos de apoio."
+    ],
+    "termos": [
+      "intimate partner violence",
+      "private screening",
+      "safety plan",
+      "USPSTF"
+    ],
+    "erradas": {
+      "A": "Adiar perde a oportunidade de oferecer proteção agora.",
+      "B": "Na maioria dos estados americanos, a adulta capaz decide sobre a denúncia; notificar sem consentimento pode aumentar o risco.",
+      "C": "Perguntar ao parceiro expõe a paciente e pode piorar a violência."
+    },
+    "macete": {
+      "frase": "*Porta fechada, pergunta direta, plano de segurança*",
+      "apoio": "Na imagem, a porta fechada, a luz acesa e a mochila pronta lembram a ordem da conduta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés, estação ética. Há perguntas que só podem ser feitas a sós.",
+    "palavras_chave": [
+      "prenatal visit",
+      "bruises",
+      "controlling partner",
+      "patient safety"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#SaudeDaMulher",
+      "#IPV"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Suspeita de violência no pré-natal: o que fazer?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

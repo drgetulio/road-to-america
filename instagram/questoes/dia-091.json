@@ -1,0 +1,102 @@
+{
+  "dia": 91,
+  "data": "2027-01-31",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix das micobactérias: Dermatite de contato (dia 43), Mycobacterium tuberculosis (dia 64), Hanseníase (dia 85)",
+  "conceito": "Mycobacteria remix: Contact dermatitis to nickel + Mycobacterium tuberculosis + Mycobacterium leprae",
+  "personagem": "Macrô",
+  "gancho_data": "Dia Mundial contra a Hanseníase (último domingo de janeiro, 31/1/2027).",
+  "remix_de": [
+    43,
+    64,
+    85
+  ],
+  "explicacao_em": "2027-02-01",
+  "tom": "acolhedor",
+  "gancho": "Hanseníase tem cura: qual resposta imune *segura* o bacilo?",
+  "gancho_apoio": "Dia Mundial contra a Hanseníase. Três conceitos já vistos (dias 43, 64 e 85) e um intruso.",
+  "imagem": {
+    "arquivo": "dia-091.png",
+    "cena": "Macrô, sereno, é o DJ do Remix de Domingo diante de um toca-discos com três discos sem rótulo: um com uma fivela de metal ao lado de uma tigela de massa de pão, um com um bastonete coberto de cera brilhante e um com uma fita roxa de conscientização. Ao fundo, um nascer do sol suave.",
+    "foco": "50% 35%",
+    "alt": "Macrô de DJ com três discos: fivela e massa de pão, bastonete encerado e fita roxa de conscientização."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-091-macete.png",
+    "cena": "Callback: um linfócito Th1 de capacete entrega ao Macrô um envelope amarelo brilhante (IFN-gama), e os dois constroem um muro redondo e bem feito em volta de dois bacilos pequenos. Ao lado, uma cartela de comprimidos coloridos com um coração verde, sinal de que o tratamento cura.",
+    "foco": "50% 40%",
+    "alt": "Um linfócito Th1 entrega um envelope amarelo ao Macrô, e os dois constroem um muro em volta de dois bacilos; ao lado, cartela de comprimidos e um coração verde."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has two well-defined hypopigmented plaques on his forearm that have lost sensation to light touch and temperature. The nearby ulnar nerve is thickened. Skin biopsy shows well-formed granulomas with rare acid-fast bacilli.",
+    "pergunta": "Which immune response best explains the small number of bacilli?",
+    "alternativas": {
+      "A": {
+        "texto": "Delayed T-cell reaction to a nickel hapten",
+        "quiz": "Hapteno de níquel",
+        "dia": 43
+      },
+      "B": {
+        "texto": "Cord factor-driven TNF release by macrophages",
+        "quiz": "Cord factor e TNF",
+        "dia": 64
+      },
+      "C": {
+        "texto": "Strong Th1 response with IFN-gamma",
+        "quiz": "Th1 forte, IFN-gama",
+        "dia": 85
+      },
+      "D": {
+        "texto": "Th2-skewed response with IL-4 and IL-10",
+        "quiz": "Th2, IL-4 e IL-10"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Forma tuberculoide: *Th1 forte*, poucos bacilos",
+    "certa": [
+      "Poucas lesões bem delimitadas, perda de sensibilidade, nervo espessado e granulomas bem formados com raros bacilos álcool-ácido resistentes descrevem a hanseníase tuberculoide (paucibacilar). Nela, a resposta Th1 com IL-2 e IFN-gama ativa os macrófagos, que cercam o Mycobacterium leprae em granulomas e mantêm a carga bacilar baixa. A hanseníase tem cura com poliquimioterapia (multidrug therapy), oferecida de graça pelo SUS."
+    ],
+    "termos": [
+      "tuberculoid leprosy",
+      "Th1",
+      "IFN-gamma",
+      "Mycobacterium leprae"
+    ],
+    "erradas": {
+      "A": "Dia 43: a reação tardia ao níquel é hipersensibilidade tipo IV na pele que tocou o metal, sem bacilo e sem nervo espessado.",
+      "B": "Dia 64: o cord factor é fator de virulência do Mycobacterium tuberculosis e não explica por que aqui há poucos bacilos.",
+      "D": "Intruso: a resposta Th2 com IL-4 e IL-10 é a da forma virchowiana (lepromatous), com muitos bacilos e lesões difusas."
+    },
+    "macete": {
+      "frase": "*T* de Tuberculoide, *T* de Th1: defesa forte, poucos bacilos",
+      "apoio": "Na imagem, o Macrô recebe do linfócito Th1 o envelope de IFN-gama e tranca o bacilo dentro de um muro bem feito.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo no Dia Mundial contra a Hanseníase: alergia ao níquel, tuberculose e hanseníase. A biópsia mostra granulomas bem formados e quase nenhum bacilo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Hanseniase",
+      "#Imunologia",
+      "#Immunology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Poucos bacilos na biópsia: qual resposta?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

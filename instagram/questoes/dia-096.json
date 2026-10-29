@@ -1,0 +1,96 @@
+{
+  "dia": 96,
+  "data": "2027-02-05",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Heparina",
+  "conceito": "Unfractionated heparin: potentiates antithrombin against thrombin and Xa, reversed by protamine",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-06",
+  "tom": null,
+  "gancho": "Capitã Plaqueta deu um *megafone* ao fiscal: quem desliga?",
+  "gancho_apoio": "Um remédio turbina a antitrombina contra dois carros da coagulação. Qual é o antídoto?",
+  "imagem": {
+    "arquivo": "dia-096.png",
+    "cena": "Capitã Plaqueta apita num cruzamento movimentado. Uma ajudante tímida em forma de corrente comprida entrega um megafone enorme a um fiscal de trânsito redondo, que agora consegue parar dois carros de cores diferentes ao mesmo tempo. Os outros carros seguem sem problema.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta no cruzamento; uma ajudante em forma de corrente dá um megafone ao fiscal, que para dois carros."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-096-macete.png",
+    "cena": "Callback: um caminhão-guincho vermelho com um ímã gigante encosta no cruzamento e puxa a corrente azul-marinho, que gruda no ímã como clipe. O fiscal fica sem o megafone, e a Capitã Plaqueta libera o trânsito e acena aliviada.",
+    "foco": "50% 40%",
+    "alt": "Guincho vermelho com ímã puxa a corrente azul-marinho; Capitã Plaqueta libera o trânsito."
+  },
+  "questao": {
+    "vinheta": "A 58-year-old man undergoing percutaneous coronary intervention receives an intravenous bolus of a drug that binds antithrombin and greatly accelerates its inactivation of thrombin and factor Xa. Two hours later, he has persistent bleeding from the femoral puncture site, and the aPTT is markedly prolonged.",
+    "pergunta": "Which agent most rapidly reverses this drug's effect?",
+    "alternativas": {
+      "A": {
+        "texto": "Vitamin K",
+        "quiz": "Vitamina K"
+      },
+      "B": {
+        "texto": "Idarucizumab",
+        "quiz": "Idarucizumabe"
+      },
+      "C": {
+        "texto": "Four-factor prothrombin complex concentrate",
+        "quiz": "CCP 4 fatores"
+      },
+      "D": {
+        "texto": "Protamine sulfate",
+        "quiz": "Protamina"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Heparina não fracionada: *protamina* reverte",
+    "certa": [
+      "O remédio é a heparina não fracionada (unfractionated heparin): ela se liga à antitrombina e acelera a inativação da trombina (fator IIa) e do fator Xa, o que alarga o TTPa (aPTT). A protamina é uma proteína de carga positiva que se liga à heparina, de carga negativa, e neutraliza o efeito em minutos. Na heparina de baixo peso molecular, a protamina reverte só parte do efeito."
+    ],
+    "termos": [
+      "unfractionated heparin",
+      "antithrombin",
+      "protamine sulfate",
+      "aPTT"
+    ],
+    "erradas": {
+      "A": "Vitamina K reverte a varfarina, porque devolve a síntese dos fatores II, VII, IX e X; demora horas e não age sobre a heparina.",
+      "B": "Idarucizumabe é o anticorpo que reverte a dabigatrana, um inibidor direto da trombina.",
+      "C": "O complexo protrombínico de quatro fatores repõe fatores e é usado para reverter a varfarina com sangramento grave."
+    },
+    "macete": {
+      "frase": "Heparina *negativa*, protamina *positiva*: o guincho-ímã arrasta",
+      "apoio": "Na imagem, a ajudante em forma de corrente dá o megafone ao fiscal; amanhã o guincho-ímã chega.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na farmácia com a Capitã Plaqueta: um remédio da sala de hemodinâmica, um TTPa nas alturas e quatro antídotos para escolher.",
+    "palavras_chave": [
+      "percutaneous coronary intervention",
+      "femoral access bleeding",
+      "anticoagulant reversal",
+      "prolonged aPTT"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Hematologia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Sangrou com heparina: qual é o antídoto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

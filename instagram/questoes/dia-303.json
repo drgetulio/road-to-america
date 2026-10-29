@@ -1,0 +1,96 @@
+{
+  "dia": 303,
+  "data": "2027-08-31",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Hematúria macroscópica",
+  "conceito": "Painless gross hematuria in an older smoker: cystoscopy plus CT urography",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-01",
+  "tom": null,
+  "gancho": "Caixa d'água soltando água vermelha *sem dor*: chama qual encanador?",
+  "gancho_apoio": "A torneira parou de pingar vermelho, mas o plantão sabe que isso não encerra o caso.",
+  "imagem": {
+    "arquivo": "dia-303.png",
+    "cena": "Placa verde de rodovia com três saídas sobre uma caixa d'água de telhado, com uma torneira pingando água vermelha num balde; não há sinal de dor, só um calendário na parede mostrando dois dias marcados. Ferramentas de encanador ficam numa maleta fechada.",
+    "foco": "50% 35%",
+    "alt": "Caixa d'água soltando água vermelha sem dor: chama qual encanador?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-303-macete.png",
+    "cena": "Callback: o encanador desce uma câmera numa haste flexível dentro da caixa d'água e, ao mesmo tempo, um arco de scanner luminoso passa por cima de todos os canos, do telhado até a torneira. A seta da terceira saída da placa acende em verde.",
+    "foco": "50% 45%",
+    "alt": "Hematúria sem dor em fumante: olhe o trato inteiro"
+  },
+  "questao": {
+    "vinheta": "A 67-year-old man has had two episodes of painless red urine over the past month. He has a 40-pack-year smoking history, and his physical examination is unremarkable. Urinalysis shows many RBCs with normal morphology and no casts, protein, or leukocytes. Urine culture is negative, and serum creatinine is normal.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Repeat urinalysis in 6 months",
+        "quiz": "Repetir EAS em 6 m"
+      },
+      "B": {
+        "texto": "Urine cytology alone",
+        "quiz": "Só citologia"
+      },
+      "C": {
+        "texto": "Renal biopsy",
+        "quiz": "Biópsia renal"
+      },
+      "D": {
+        "texto": "Cystoscopy and CT urography",
+        "quiz": "Cistoscopia + uro-TC"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Hematúria sem dor em fumante: *olhe o trato inteiro*",
+    "certa": [
+      "Hematúria macroscópica indolor em homem acima de 60 anos e tabagista aponta para *urothelial carcinoma* até prova em contrário. A avaliação examina o trato inteiro: *cystoscopy* para a bexiga e *CT urography* para rins e ureteres. Hemácias de morfologia normal, sem cilindros e sem proteinúria, falam contra causa glomerular."
+    ],
+    "termos": [
+      "painless gross hematuria",
+      "urothelial carcinoma",
+      "cystoscopy",
+      "CT urography"
+    ],
+    "erradas": {
+      "A": "Esperar 6 meses atrasa o diagnóstico; hematúria macroscópica em paciente de risco exige investigação mesmo que tenha parado sozinha.",
+      "B": "A *citologia urinária* tem baixa sensibilidade para tumores de baixo grau e não substitui cistoscopia e imagem.",
+      "C": "*Biópsia renal* só entra com sinais glomerulares, como hemácias dismórficas, cilindros hemáticos ou proteinúria."
+    },
+    "macete": {
+      "frase": "*Água vermelha sem dor no fumante: câmera por dentro e scanner por cima*",
+      "apoio": "Na imagem, o encanador desce uma câmera dentro da caixa d'água (a cistoscopia) e passa um arco de scanner sobre todo o encanamento (a urotomografia). Um só exame deixa metade do cano sem olhar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 67 anos, tabagista de longa data, viu a urina vermelha duas vezes no último mês, sem dor. Urina sem cilindros, sem leucócitos e com creatinina normal. A placa verde mostra três saídas e só uma investiga o encanamento inteiro.",
+    "palavras_chave": [
+      "painless red urine",
+      "40 pack-years",
+      "normal RBC morphology",
+      "negative culture"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Urologia",
+      "#Urology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Hematúria indolor no fumante: próximo passo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

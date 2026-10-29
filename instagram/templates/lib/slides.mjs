@@ -2,7 +2,7 @@
 // para o Chromium renderizar sem depender de servidor nem de rede.
 import fs from 'node:fs';
 import path from 'node:path';
-import { PASTA_TEMPLATES, RAIZ, num3, dataCurta } from './dados.mjs';
+import { PASTA_TEMPLATES, RAIZ, num3, dataCurta, diaSemanaDe, DIAS_CURTOS } from './dados.mjs';
 
 // ---------- texto ----------
 export const esc = (t) =>
@@ -12,7 +12,7 @@ export const esc = (t) =>
 const semQuebra = (h) =>
   h.replace(/(^|[\s(>])([\p{L}\p{N}]+(?:-[\p{L}\p{N}+]+)+)(?=[\s.,;:!?)<]|$)/gu, (m, a, b) => (b.length <= 18 ? `${a}<span class="nw">${b}</span>` : m));
 export const rico = (t) => semQuebra(esc(t).replace(/\*([^*]+)\*/g, '<em>$1</em>')).replace(/\n/g, '<br>');
-export const semMarca = (t) => String(t ?? '').replace(/\*/g, '');
+export const semMarca = (t) => String(t ?? '').replace(/\*([^*\n]+)\*/g, '$1');
 
 // ---------- recursos embutidos ----------
 let _fontes = null;
@@ -177,7 +177,7 @@ function imagem(img, classe = '') {
       <div class="pendente__tag">IMAGEM PENDENTE</div>
       <div class="pendente__arq">${esc(img ? img.esperado : 'sem campo imagem')}</div>
       ${img && img.cena ? `<p class="pendente__cena">${esc(img.cena)}</p>` : ''}
-      <div class="pendente__dica">Gere com o prompt base do PROGRAMA.md, seção 3, e salve com este nome.</div>
+      <div class="pendente__dica">Gere com o prompt pronto da planilha (aba Prompts das imagens) e salve com este nome.</div>
     </div>
   </div>`;
 }
@@ -185,12 +185,15 @@ function imagem(img, classe = '') {
 const tarja = (dia) => (dia.exemplo ? '<div class="tarja">EXEMPLO DE TESTE · NÃO POSTAR</div>' : '');
 const cvv = (dia) => (dia.cvv ? '<div class="cvv">Precisa conversar? CVV 188, 24 horas, ligação gratuita.</div>' : '');
 
-function topo(dia, rotulo, claro = true) {
+// Os slides do gabarito saem no dia seguinte: o canto mostra a data de publicação (D+1).
+function topo(dia, rotulo, claro = true, noDiaSeguinte = false) {
+  const data = noDiaSeguinte && dia.explicacao_em ? dia.explicacao_em : dia.data;
+  const curto = noDiaSeguinte && dia.explicacao_em ? DIAS_CURTOS[diaSemanaDe(dia.explicacao_em)] : dia.dia_curto;
   const area = semMarca(dia.area).replace(/\s*\(.*\)\s*/, '').toUpperCase();
   return `<header class="topo ${claro ? '' : 'topo--escuro'}">
     ${escudo(dia.step, 'escudo--mini')}
     <div class="topo__txt"><b>${esc(rotulo)}</b><span>${esc(area)}</span></div>
-    <div class="topo__data">${esc(dia.dia_curto)} ${esc(dataCurta(dia.data))}</div>
+    <div class="topo__data">${esc(curto)} ${esc(dataCurta(data))}</div>
   </header>`;
 }
 
@@ -312,7 +315,7 @@ export function explicacaoCerta(dia) {
     ? `<div class="termos"><span class="termos__rot">TERMOS-CHAVE</span>${dia.explicacao.termos.map((t) => `<span class="termo">${esc(t)}</span>`).join('')}</div>`
     : '';
   return `<div class="tela papel e2">
-    ${topo(dia, `GABARITO · DIA ${num3(dia.n)}`)}
+    ${topo(dia, `GABARITO · DIA ${num3(dia.n)}`, true, true)}
     <div class="selo-letra selo-letra--certa"><span class="selo-letra__l">${esc(c)}</span>${ICONES.certo}</div>
     <div class="eyebrow eyebrow--verde">POR QUE A ${esc(c)} ESTÁ CERTA</div>
     <main class="e2__corpo" data-fit="explicação da certa" data-min="28">
@@ -337,7 +340,7 @@ export function explicacaoErradas(dia) {
   const letras = erradas.map((a) => a.letra);
   const titulo = `Por que não é ${letras.slice(0, -1).join(', ')} nem ${letras.slice(-1)}`;
   return `<div class="tela papel2 e3">
-    ${topo(dia, `GABARITO · DIA ${num3(dia.n)}`)}
+    ${topo(dia, `GABARITO · DIA ${num3(dia.n)}`, true, true)}
     <div class="eyebrow eyebrow--verm">E AS OUTRAS?</div>
     <h2 class="e3__titulo">${esc(titulo)}</h2>
     <div class="e3__certa">${ICONES.certo}<b>${esc(c)}</b><span>${esc(alternativa(dia, c).texto)}</span></div>
@@ -351,7 +354,10 @@ export function explicacaoMacete(dia) {
   const m = dia.explicacao.macete;
   const p = dia.personagem && PERSONAGENS[dia.personagem];
   const fala = m.fala || (p ? p.bordao : null);
-  const blocoImg = dia.imagem_macete ? `<div class="e4__img">${imagem(dia.imagem_macete)}</div>` : '';
+  // quanto mais longo o macete e o apoio, menor a imagem, para o texto caber sem cair abaixo de 36 px
+  const tamTexto = semMarca(m.frase || '').length + semMarca(m.apoio || '').length;
+  const altImg = tamTexto <= 230 ? 420 : tamTexto <= 290 ? 350 : tamTexto <= 350 ? 290 : tamTexto <= 410 ? 240 : 200;
+  const blocoImg = dia.imagem_macete ? `<div class="e4__img" style="height:${altImg}px">${imagem(dia.imagem_macete)}</div>` : '';
   const personagem = p
     ? `<div class="persona"><span class="persona__av">${avatar(dia.personagem)}</span><div><b class="persona__nome">${esc(dia.personagem.toUpperCase())}</b>${fala ? `<span class="persona__fala">“${esc(fala)}”</span>` : ''}</div></div>`
     : '';
@@ -361,7 +367,7 @@ export function explicacaoMacete(dia) {
       <div class="placa__linha"><span>MACETE PARA A PROVA</span>${ICONES.saida}</div>
     </section>
     ${blocoImg}
-    <main class="e4__corpo" data-fit="macete" data-min="40">
+    <main class="e4__corpo" data-fit="macete" data-min="36">
       <div class="ficha">
         <span class="ficha__fita"></span>
         <div class="ficha__rot"><span>CARTÃO DE REVISÃO</span><span>DIA ${num3(dia.n)} · ${/2/.test(dia.step) ? 'STEP 2 CK' : 'STEP 1'}</span></div>

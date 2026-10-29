@@ -85,7 +85,7 @@ function tomDoDia(json, cal, data) {
   return data && DATAS_ACOLHEDORAS.includes(data.slice(5)) ? 'acolhedor' : 'normal';
 }
 
-const DIAS_CURTOS = { 'segunda-feira': 'SEG', 'terça-feira': 'TER', 'quarta-feira': 'QUA', 'quinta-feira': 'QUI', 'sexta-feira': 'SEX', 'sábado': 'SÁB', domingo: 'DOM' };
+export const DIAS_CURTOS = { 'segunda-feira': 'SEG', 'terça-feira': 'TER', 'quarta-feira': 'QUA', 'quinta-feira': 'QUI', 'sexta-feira': 'SEX', 'sábado': 'SÁB', domingo: 'DOM' };
 
 export function dataCurta(iso) {
   const [, m, d] = iso.split('-');

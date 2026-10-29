@@ -1,0 +1,87 @@
+{
+  "dia": 157,
+  "data": "2027-04-07",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Imunidade de rebanho",
+  "conceito": "Herd immunity threshold: 1 minus 1/R0",
+  "personagem": "Viés",
+  "gancho_data": "Dia Mundial da Saúde (7/4).",
+  "remix_de": null,
+  "explicacao_em": "2027-04-08",
+  "tom": null,
+  "gancho": "Rebanho protegido: quantas ovelhas precisam de *escudo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-157.png",
+    "cena": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída.",
+    "foco": "50% 35%",
+    "alt": "O Viés tenta se esgueirar num rebanho de ovelhinhas no pasto, escondido atrás de uma tabela 2x2, enquanto uma pilha de escudos verdes espera para ser distribuída."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-157-macete.png",
+    "cena": "Em cada grupo de quatro ovelhas, três usam escudo verde e fazem uma cerca em volta da quarta; o germe, uma bolinha vermelha com espinhos, bate nos escudos e não chega nela. O Viés fica de fora, sem conseguir entrar.",
+    "alt": "Limiar de rebanho: 1 menos 1/R0"
+  },
+  "questao": {
+    "vinheta": "A health department models a new respiratory virus in a fully susceptible population. On average, each infected person transmits the virus to 4 other people. A new vaccine is assumed to be 100% effective.",
+    "pergunta": "What is the minimum proportion of the population that must be immune to prevent sustained transmission?",
+    "alternativas": {
+      "A": {
+        "texto": "25%",
+        "quiz": "25%"
+      },
+      "B": {
+        "texto": "50%",
+        "quiz": "50%"
+      },
+      "C": {
+        "texto": "75%",
+        "quiz": "75%"
+      },
+      "D": {
+        "texto": "80%",
+        "quiz": "80%"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Limiar de rebanho: *1 menos 1/R0*",
+    "certa": [
+      "O limiar de imunidade de rebanho (*herd immunity threshold*) é *1 menos 1/R0*. Com *R0* de 4, a conta é 1 menos 1/4 = 0,75, ou seja, 75% da população imune. Abaixo disso, cada caso ainda gera mais de um caso novo em média e a transmissão se sustenta."
+    ],
+    "termos": [
+      "herd immunity threshold",
+      "basic reproduction number",
+      "R0",
+      "vaccine coverage"
+    ],
+    "erradas": {
+      "A": "25% é só o 1/R0, a fração que pode ficar suscetível; é a metade errada da conta.",
+      "B": "50% seria o limiar com R0 de 2.",
+      "D": "80% seria o limiar com R0 de 5, ou o erro de usar 1 menos 1/(R0 + 1)."
+    },
+    "macete": {
+      "frase": "Rebanho de *R0* ovelhas: se cada uma passa para 4, de cada 4 ovelhas só *1* pode ficar sem escudo. Escudos = 1 menos 1/R0.",
+      "apoio": "O NBME pode dar a eficácia da vacina: aí a cobertura necessária é o limiar dividido pela eficácia (75% com vacina 90% eficaz pede cerca de 83%).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "7 de abril é o Dia Mundial da Saúde, e a questão de hoje é sobre proteger o grupo inteiro. Uma conta de uma linha que cai em bioestatística e em saúde pública.",
+    "palavras_chave": [
+      "respiratory virus",
+      "susceptible population",
+      "vaccine efficacy",
+      "transmission"
+    ]
+  },
+  "quiz": {
+    "pergunta": "R0 = 4. Quantos % imunes para frear?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

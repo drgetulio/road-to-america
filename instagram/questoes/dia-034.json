@@ -1,0 +1,95 @@
+{
+  "dia": 34,
+  "data": "2026-12-05",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Consentimento informado",
+  "conceito": "Informed consent: diagnosis, risks, benefits and alternatives, including no treatment",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-12-06",
+  "gancho": "O papel foi assinado, mas falta uma peça no quebra-cabeça",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma tela de GPS gigante numa placa de estrada mostra uma única rota destacada até um hospital estilizado; ao lado, uma prancheta com caneta e um quebra-cabeça com uma peça faltando. Uma balança de tribunal desenhada como placa de trânsito observa a cena.",
+    "foco": "50% 35%",
+    "alt": "Uma tela de GPS gigante numa placa de estrada mostra uma única rota destacada até um hospital estilizado; ao lado, uma prancheta com caneta e um quebra-cabeça com uma peça faltando.",
+    "arquivo": "dia-034.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: a tela do GPS agora mostra três rotas, uma delas voltando para a casinha; a peça que faltava se encaixa no quebra-cabeça com forma de placa de bifurcação, e a balança fica equilibrada.",
+    "alt": "Sem alternativas, não é consentimento",
+    "arquivo": "dia-034-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old woman with recurrent biliary colic is scheduled for elective laparoscopic cholecystectomy. The surgeon explains her diagnosis, the planned procedure, its expected benefits, and the risks of bleeding, infection, and bile duct injury. She has decision-making capacity and signs the form.",
+    "pergunta": "Which additional element was required for valid informed consent?",
+    "alternativas": {
+      "A": {
+        "texto": "An estimate of total hospital costs",
+        "quiz": "Hospital costs"
+      },
+      "B": {
+        "texto": "Alternatives to surgery, including no treatment",
+        "quiz": "Alternatives"
+      },
+      "C": {
+        "texto": "A witness signature from a family member",
+        "quiz": "Family signature"
+      },
+      "D": {
+        "texto": "Approval from the hospital ethics committee",
+        "quiz": "Ethics committee"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem *alternativas*, não é consentimento",
+    "certa": [
+      "O *informed consent* válido tem diagnóstico, natureza do procedimento, riscos, benefícios e *alternatives*, incluindo a opção de não tratar e o que se espera dela. A paciente só decide de verdade se sabe o que acontece em cada caminho. Capacidade de decisão e ausência de coerção completam o pacote; a assinatura apenas registra a conversa."
+    ],
+    "termos": [
+      "informed consent",
+      "alternatives",
+      "decision-making capacity",
+      "right to refuse"
+    ],
+    "erradas": {
+      "A": "Custo pode ser discutido, mas não faz parte dos elementos obrigatórios do consentimento.",
+      "C": "Paciente adulta e capaz decide sozinha; família não assina no lugar dela nem precisa testemunhar.",
+      "D": "Cirurgia eletiva em adulta capaz não passa por comitê de ética; o comitê entra em conflitos e dilemas."
+    },
+    "macete": {
+      "frase": "GPS sem *rota alternativa* não é GPS",
+      "apoio": "Pegadinha de prova: O NBME esconde o erro na alternativa que esquece a opção de não tratar, ou oferece a assinatura da família como se fosse exigida para adulto capaz.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Diagnóstico explicado, procedimento descrito, riscos e benefícios na mesa, paciente capaz e caneta na mão. Ainda falta um elemento para o consentimento valer.",
+    "palavras_chave": [
+      "elective cholecystectomy",
+      "biliary colic",
+      "consent form",
+      "medical ethics"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "O que faltou no consentimento?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

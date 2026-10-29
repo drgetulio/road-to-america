@@ -1,0 +1,100 @@
+{
+  "dia": 332,
+  "data": "2027-09-29",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Evolução histológica do infarto",
+  "conceito": "Myocardial infarction timeline: neutrophils at 1 to 3 days, macrophages at 3 to 7 days with the highest rupture risk",
+  "personagem": null,
+  "gancho_data": "Dia Mundial do Coração (29/9).",
+  "remix_de": null,
+  "explicacao_em": "2027-09-30",
+  "tom": null,
+  "gancho": "Dia 5 da reforma no coração: *qual turma está na obra?*",
+  "gancho_apoio": "Dia Mundial do Coração. Infarto sem reperfusão e uma complicação no meio da semana.",
+  "imagem": {
+    "arquivo": "dia-332.png",
+    "cena": "Uma casa em forma de coração em reforma, cercada por fita zebrada, com quatro equipes de células esperando no portão: uma com marretas, uma com caçamba de entulho, uma com colher de pedreiro e uma com rolos de pintura; um calendário de parede sem números.",
+    "foco": "50% 35%",
+    "alt": "Dia 5 da reforma no coração: qual turma está na obra?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-332-macete.png",
+    "cena": "Callback: só a equipe da caçamba está trabalhando, células grandes e redondas levando entulho, e a parede da casa-coração ficou fina e com uma rachadura protegida por um cone vermelho.",
+    "foco": "50% 45%",
+    "alt": "Dias 3 a 7: macrófagos limpam e a parede fica frágil"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man is admitted with an anterior ST-elevation myocardial infarction and does not receive reperfusion. On hospital day 5, he suddenly develops hypotension, jugular venous distention, and muffled heart sounds, then pulseless electrical activity.",
+    "pergunta": "Which finding would most likely predominate in the infarcted wall at this time?",
+    "alternativas": {
+      "A": {
+        "texto": "Wavy myocyte fibers without inflammation",
+        "quiz": "Fibras onduladas"
+      },
+      "B": {
+        "texto": "Coagulative necrosis with neutrophils",
+        "quiz": "Neutrófilos"
+      },
+      "C": {
+        "texto": "Macrophages removing necrotic myocytes",
+        "quiz": "Macrófagos"
+      },
+      "D": {
+        "texto": "Dense collagenous scar",
+        "quiz": "Cicatriz de colágeno"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Dias 3 a 7: *macrófagos* limpam e a parede fica frágil",
+    "certa": [
+      "Hipotensão, turgência jugular e bulhas abafadas no dia 5 sugerem *free wall rupture* com tamponamento. Entre os dias 3 e 7, os *macrophages* fagocitam os miócitos mortos e a parede fica mais fina e mole, antes de o *granulation tissue* dar sustentação. É a janela de maior risco de ruptura de parede livre, septo e músculo papilar."
+    ],
+    "termos": [
+      "free wall rupture",
+      "macrophages",
+      "granulation tissue",
+      "cardiac tamponade"
+    ],
+    "erradas": {
+      "A": "Fibras onduladas aparecem nas primeiras horas, antes de qualquer infiltrado inflamatório.",
+      "B": "Necrose de coagulação com neutrófilos domina os dias 1 a 3, fase da pericardite fibrinosa.",
+      "D": "Cicatriz densa de colágeno só se completa por volta de 2 meses e se associa a aneurisma ventricular."
+    },
+    "macete": {
+      "frase": "*Demolição, caçamba, reboco, pintura*",
+      "apoio": "Neutrófilo é a demolição (1 a 3 dias), macrófago é a caçamba que tira o entulho (3 a 7 dias, parede fina, cuidado), granulação é o reboco (1 a 2 semanas) e cicatriz é a parede pintada (2 meses). Rompe na hora da caçamba.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dia Mundial do Coração. Infarto anterior sem reperfusão e, no quinto dia, a pressão despenca com bulhas abafadas. Quem está trabalhando na parede do coração nessa hora?",
+    "palavras_chave": [
+      "anterior STEMI",
+      "no reperfusion",
+      "hospital day 5",
+      "sudden hypotension"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Cardiologia",
+      "#Pathology",
+      "#Patologia",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Infarto, dia 5, ruptura. O que domina?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

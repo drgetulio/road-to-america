@@ -1,0 +1,96 @@
+{
+  "dia": 114,
+  "data": "2027-02-23",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Púrpura trombocitopênica trombótica",
+  "conceito": "TTP: microangiopathic anemia with schistocytes and low ADAMTS13, plasma exchange",
+  "personagem": "Capitã Plaqueta",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-24",
+  "tom": null,
+  "gancho": "Capitã Plaqueta encontrou a avenida virada num *varal*",
+  "gancho_apoio": "Anemia com esquizócitos, plaquetas no chão, febre e confusão. Qual é a causa?",
+  "imagem": {
+    "arquivo": "dia-114.png",
+    "cena": "Capitã Plaqueta, no meio de uma avenida, procura algo na caixa de ferramentas aberta. Fitas compridas e grudentas atravessam a rua de um poste a outro, com discos amarelos grudados nelas, e carrinhos vermelhos redondos que passam por baixo saem com a lataria rasgada em tiras de papel.",
+    "foco": "50% 35%",
+    "alt": "Capitã Plaqueta procura algo na caixa de ferramentas; fitas grudentas atravessam a avenida e rasgam os carrinhos vermelhos."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-114-macete.png",
+    "cena": "Callback: um caminhão chega trazendo uma tesoura gigante e brilhante (a plasmaférese repõe a ADAMTS13). A Capitã Plaqueta corta as fitas em pedaços pequenos, os discos amarelos se soltam e os carrinhos vermelhos passam inteiros.",
+    "foco": "50% 40%",
+    "alt": "Um caminhão traz uma tesoura gigante; a Capitã Plaqueta corta as fitas e os carrinhos passam inteiros."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has had fatigue, headache and intermittent confusion for 3 days. Temperature is 38.0°C. She has leg petechiae. Hemoglobin is 7.9 g/dL, platelets 14,000/mm3, LDH high and haptoglobin undetectable; the smear shows many schistocytes. Creatinine is 1.3 mg/dL. PT, aPTT and direct Coombs test are normal.",
+    "pergunta": "Which is the most likely underlying cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Shiga toxin injury to endothelium",
+        "quiz": "Toxina Shiga"
+      },
+      "B": {
+        "texto": "Consumption of clotting factors",
+        "quiz": "Consumo de fatores"
+      },
+      "C": {
+        "texto": "Antibodies to platelet factor 4-heparin",
+        "quiz": "Anti-PF4/heparina"
+      },
+      "D": {
+        "texto": "Autoantibody against ADAMTS13",
+        "quiz": "Anti-ADAMTS13"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "PTT: sem *ADAMTS13*, o von Willebrand gigante prende as plaquetas",
+    "certa": [
+      "Hemácias rasgadas (esquizócitos) com hemólise, plaquetopenia grave, alteração neurológica, febre e piora renal leve, com coagulograma e Coombs normais, descrevem púrpura trombocitopênica trombótica (TTP). Na forma adquirida, um autoanticorpo inibe a ADAMTS13, a protease que corta os grandes multímeros de von Willebrand, e as plaquetas formam microtrombos. A conduta é plasmaférese urgente com corticoide, além de caplacizumabe e rituximabe."
+    ],
+    "termos": [
+      "thrombotic thrombocytopenic purpura",
+      "ADAMTS13",
+      "schistocytes",
+      "plasma exchange"
+    ],
+    "erradas": {
+      "A": "A toxina Shiga causa síndrome hemolítico-urêmica, em geral em criança depois de diarreia com sangue, com lesão renal predominante.",
+      "B": "Na coagulação intravascular disseminada os fatores são gastos, e o TP e o TTPa ficam alargados; aqui são normais.",
+      "C": "Anticorpo anti-PF4 com heparina causa trombocitopenia induzida por heparina, com trombose e sem esquizócitos, e exige exposição à heparina."
+    },
+    "macete": {
+      "frase": "Sem a *tesoura* ADAMTS13, o varal de von Willebrand rasga as hemácias",
+      "apoio": "Na imagem, a Capitã Plaqueta procura a tesoura enquanto fitas grudentas atravessam a avenida.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Plantão de terça com a Capitã Plaqueta: anemia com hemácias rasgadas, plaquetas no chão e confusão mental. Os fatores da coagulação estão normais.",
+    "palavras_chave": [
+      "confusion",
+      "petechiae",
+      "schistocytes",
+      "low platelets"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Hematologia",
+      "#Hematology",
+      "#ClinicaMedica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Esquizócitos, plaqueta baixa, TP normal?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

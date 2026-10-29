@@ -1,0 +1,94 @@
+{
+  "dia": 12,
+  "data": "2026-11-13",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Depressão bipolar",
+  "conceito": "Bipolar depression: avoid antidepressant monotherapy because of the switch to mania",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2026-11-14",
+  "tom": null,
+  "gancho": "Na farmácia, um remédio sozinho pode virar a *gangorra*",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-012.png",
+    "cena": "No balcão de madeira da farmácia de interior há uma gangorra de parquinho em miniatura. Numa ponta, uma nuvenzinha cinza está sentada, pesando um pouco; ao lado, caixinhas de remédio sem rótulo esperam, e uma delas paira no ar, prestes a ir para um lado só.",
+    "foco": "50% 35%",
+    "alt": "Na farmácia, um remédio sozinho pode virar a gangorra"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-012-macete.png",
+    "cena": "Callback da gangorra, em duas metades. À esquerda, a caixinha colocada sozinha numa ponta lançou a outra ponta para o alto, desequilibrada. À direita, uma mão firme coloca outra caixinha bem no eixo do meio, e a gangorra fica nivelada sob um sol suave, com a nuvem mais clara.",
+    "alt": "Segure o meio da gangorra"
+  },
+  "questao": {
+    "vinheta": "A 29-year-old woman has 4 weeks of low mood, anhedonia, hypersomnia and poor concentration. She denies suicidal ideation. Two years ago she had 8 days of little need for sleep, rapid speech and impulsive spending. She uses no medication, and a pregnancy test is negative.",
+    "pergunta": "Which is the most appropriate pharmacotherapy?",
+    "alternativas": {
+      "A": {
+        "texto": "Sertraline",
+        "quiz": "Sertralina"
+      },
+      "B": {
+        "texto": "Quetiapine",
+        "quiz": "Quetiapina"
+      },
+      "C": {
+        "texto": "Venlafaxine",
+        "quiz": "Venlafaxina"
+      },
+      "D": {
+        "texto": "Haloperidol",
+        "quiz": "Haloperidol"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Segure o meio da gangorra",
+    "certa": [
+      "Um episódio depressivo em quem já teve um episódio de humor elevado (8 dias de pouca necessidade de sono, fala rápida e gastos impulsivos) é depressão bipolar, e a escolha do remédio vale para o tipo I e para o tipo II. O tratamento usa um remédio com eficácia comprovada nessa fase, como a quetiapina (aprovada para a depressão bipolar dos tipos I e II), a lurasidona, a cariprazina, a lumateperona ou o lítio. Antidepressivo sozinho (monoterapia) pode virar o quadro para mania ou acelerar os ciclos, por isso não entra sem um estabilizador."
+    ],
+    "termos": [
+      "bipolar depression",
+      "antidepressant monotherapy",
+      "manic switch",
+      "quetiapine"
+    ],
+    "erradas": {
+      "A": "Sertralina sozinha, sem estabilizador de humor, arrisca a virada para mania (switch).",
+      "C": "Venlafaxina em monoterapia tem o mesmo risco de virada, até maior que o dos ISRS.",
+      "D": "Haloperidol trata a mania aguda e a psicose, mas não tem eficácia comprovada na fase depressiva."
+    },
+    "macete": {
+      "frase": "Gangorra do parquinho: empurrar só o lado da tristeza com antidepressivo joga o outro lado lá para cima. Na bipolar, primeiro segure o meio, com quetiapina, lítio ou lurasidona.",
+      "apoio": "Pegadinha de prova: O NBME esconde o episódio de mania no passado da história; pergunte sempre por mania antes de escolher um antidepressivo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sextou na Farmácia com um tema que cai muito: a história de mania muda a escolha do remédio para a depressão.",
+    "palavras_chave": [
+      "anhedonia",
+      "hypersomnia",
+      "decreased need for sleep",
+      "mood disorders"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Depressão com mania no passado: qual remédio?"
+  },
+  "exemplo": false
+}

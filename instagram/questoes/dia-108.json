@@ -1,0 +1,96 @@
+{
+  "dia": 108,
+  "data": "2027-02-17",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Afasias de Broca e de Wernicke",
+  "conceito": "Broca vs Wernicke aphasia: nonfluent frontal lesion vs fluent temporal lesion with poor comprehension",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-18",
+  "tom": null,
+  "gancho": "O rádio fala sem parar, mas não *escuta* ninguém",
+  "gancho_apoio": "Fala fluente, palavras trocadas, não entende nem repete. Onde está a lesão?",
+  "imagem": {
+    "arquivo": "dia-108.png",
+    "cena": "Um rádio antigo e simpático, com um microfone na frente e uma antena do lado, solta uma enxurrada de formas coloridas misturadas, como confete de estrelas, espirais e triângulos, em fluxo contínuo. Bilhetinhos de papel dobrado voam na direção dele.",
+    "foco": "50% 35%",
+    "alt": "Rádio antigo com microfone e antena soltando uma enxurrada de formas coloridas misturadas."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-108-macete.png",
+    "cena": "Callback: a antena lateral do rádio está torta e solta faíscas, e os bilhetinhos batem nela e caem no chão sem entrar. O microfone da frente está inteiro e brilhando. Um fio fino liga o microfone à antena.",
+    "foco": "50% 40%",
+    "alt": "A antena lateral do rádio torta e soltando faíscas; os bilhetes batem nela e caem."
+  },
+  "questao": {
+    "vinheta": "A 71-year-old right-handed man has sudden difficulty communicating. He speaks fluently in long sentences filled with wrong and invented words, cannot follow simple spoken commands and cannot repeat a short phrase. He seems unaware of his errors. Strength and sensation are normal.",
+    "pergunta": "A lesion in which location most likely explains these findings?",
+    "alternativas": {
+      "A": {
+        "texto": "Left inferior frontal gyrus",
+        "quiz": "Giro frontal esq."
+      },
+      "B": {
+        "texto": "Left arcuate fasciculus",
+        "quiz": "Fascículo arqueado"
+      },
+      "C": {
+        "texto": "Left posterior superior temporal gyrus",
+        "quiz": "Temporal sup. esq."
+      },
+      "D": {
+        "texto": "Right posterior superior temporal gyrus",
+        "quiz": "Temporal sup. dir."
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Wernicke: fala *fluente*, compreensão ruim",
+    "certa": [
+      "Fala fluente com parafasias e neologismos, compreensão ruim, repetição ruim e pouca noção do erro descrevem a afasia de Wernicke. A lesão fica na parte posterior do giro temporal superior esquerdo, território da divisão inferior da artéria cerebral média. Como não há área motora perto, força e sensibilidade costumam estar normais."
+    ],
+    "termos": [
+      "Wernicke aphasia",
+      "superior temporal gyrus",
+      "arcuate fasciculus",
+      "conduction aphasia"
+    ],
+    "erradas": {
+      "A": "O giro frontal inferior esquerdo é a área de Broca: fala travada e pouco fluente, compreensão preservada, muitas vezes com fraqueza da face e do braço direitos.",
+      "B": "Lesão do fascículo arqueado dá afasia de condução: fala fluente e compreensão boa, com falha só na repetição.",
+      "D": "Num destro, a linguagem fica no hemisfério esquerdo; o temporal direito cuida da prosódia, o tom emocional da fala."
+    },
+    "macete": {
+      "frase": "Broca é o *microfone*, Wernicke é a *antena*",
+      "apoio": "Na imagem, o rádio antigo solta uma enxurrada de formas coloridas misturadas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do porquê, neuroanatomia: um homem destro de repente fala muito, mas sem sentido, e não entende o que dizem a ele.",
+    "palavras_chave": [
+      "fluent speech",
+      "paraphasias",
+      "poor comprehension",
+      "impaired repetition"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Neurologia",
+      "#Neurology",
+      "#Neuroanatomia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Fala fluente e não entende: onde é?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

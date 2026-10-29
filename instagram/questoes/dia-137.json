@@ -1,0 +1,95 @@
+{
+  "dia": 137,
+  "data": "2027-03-18",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Esquizofrenia e transtornos relacionados",
+  "conceito": "Psychotic disorders by duration: brief under 1 month, schizophreniform 1 to 6 months, schizophrenia 6 months or more",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-19",
+  "tom": null,
+  "gancho": "Na psiquiatria, o *calendário* também dá o diagnóstico",
+  "gancho_apoio": "Mesmos sintomas, durações diferentes. O garçom traz três blocos de calendário.",
+  "imagem": {
+    "arquivo": "dia-137.png",
+    "cena": "Um garçom de rodízio traz um espeto com três blocos de calendário sem números, de espessuras bem diferentes: uma folha solta, um bloco médio e um bloco grosso. Ele segura a plaquinha verde e vermelha de lado.",
+    "foco": "50% 35%",
+    "alt": "Garçom de rodízio com um espeto de três blocos de calendário de espessuras diferentes."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-137-macete.png",
+    "cena": "Callback: o bloco médio ganha a plaquinha verde. A folha solta recebe uma faixa amarela, o bloco grosso uma faixa navy, formando uma régua de tempo da esquerda para a direita.",
+    "foco": "50% 40%",
+    "alt": "Os três blocos em fila como uma régua de tempo; o bloco médio recebe a plaquinha verde."
+  },
+  "questao": {
+    "vinheta": "A 23-year-old man has heard voices commenting on his actions and has believed that his neighbors are monitoring him for the past 3 months. He has stopped attending classes. He has no history of substance use, medical illness or prominent mood episodes.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Brief psychotic disorder",
+        "quiz": "Psicótico breve"
+      },
+      "B": {
+        "texto": "Schizophreniform disorder",
+        "quiz": "Esquizofreniforme"
+      },
+      "C": {
+        "texto": "Schizophrenia",
+        "quiz": "Esquizofrenia"
+      },
+      "D": {
+        "texto": "Schizoaffective disorder",
+        "quiz": "Esquizoafetivo"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Psicose pela régua do *tempo*",
+    "certa": [
+      "Alucinações e delírios por 3 meses, sem substância, doença clínica ou episódio de humor, encaixam no transtorno esquizofreniforme, que dura de 1 a 6 meses. Com menos de 1 mês seria transtorno psicótico breve, e com 6 meses ou mais, incluindo pródromo e fase residual, esquizofrenia. O diagnóstico muda com o tempo, então o acompanhamento é parte da conduta."
+    ],
+    "termos": [
+      "schizophreniform disorder",
+      "brief psychotic disorder",
+      "schizophrenia",
+      "DSM-5-TR duration"
+    ],
+    "erradas": {
+      "A": "O transtorno psicótico breve dura de 1 dia a menos de 1 mês e termina com volta ao funcionamento anterior.",
+      "C": "A esquizofrenia exige sinais da doença por pelo menos 6 meses, contando pródromo e fase residual.",
+      "D": "O esquizoafetivo pede episódio de humor importante junto com a psicose e pelo menos 2 semanas de psicose sem sintomas de humor."
+    },
+    "macete": {
+      "frase": "Régua da psicose: *menos de 1 mês* breve, *1 a 6* esquizofreniforme, *6 ou mais* esquizofrenia",
+      "apoio": "Na imagem, cada bloco de calendário tem uma espessura: folha solta, bloco médio e bloco grosso.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, estação psiquiatria. Nesse grupo de diagnósticos, quem decide é a duração dos sintomas.",
+    "palavras_chave": [
+      "auditory hallucinations",
+      "persecutory delusions",
+      "3 months",
+      "psychosis"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Psiquiatria",
+      "#Psychiatry"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Psicose há 3 meses: qual o diagnóstico?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

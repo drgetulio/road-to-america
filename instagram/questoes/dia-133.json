@@ -1,0 +1,101 @@
+{
+  "dia": 133,
+  "data": "2027-03-14",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Síndrome de DiGeorge (dia 50), Streptococcus pneumoniae (dia 106), HPV e câncer do colo do útero (dia 127)",
+  "conceito": "Remix: DiGeorge syndrome + Streptococcus pneumoniae + HPV 16 and 18 oncogenesis",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": [
+    50,
+    106,
+    127
+  ],
+  "explicacao_em": "2027-03-15",
+  "tom": null,
+  "gancho": "Remix: três flashcards mentem, *um* fala a verdade",
+  "gancho_apoio": "DiGeorge, pneumococo e HPV voltam hoje (dias 50, 106 e 127), com um intruso.",
+  "imagem": {
+    "arquivo": "dia-133.png",
+    "cena": "Macrô de DJ num toca-discos com quatro cartões de memória espalhados sobre o tampo e três discos girando sem rótulo: um com o desenho de um timo vazio, um com dois cocos encapsulados e um com uma bicicleta de dois freios.",
+    "foco": "50% 35%",
+    "alt": "Macrô DJ com três discos (timo vazio, bactérias com cápsula, bicicleta) e quatro flashcards em branco."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-133-macete.png",
+    "cena": "Callback: só um flashcard brilha com selo verde, o do timo vazio. Os outros três ganham um pequeno X vermelho, e o Macrô aponta para um baço segurança na porta, barrando as bactérias de capa.",
+    "foco": "50% 40%",
+    "alt": "Um flashcard com selo verde; os outros com X vermelho; um baço segurança barra bactérias com cápsula."
+  },
+  "questao": {
+    "vinheta": "During Sunday review, a student writes four flashcards. Three contain an error.",
+    "pergunta": "Which flashcard is accurate?",
+    "alternativas": {
+      "A": {
+        "texto": "Encapsulated bacteria are cleared mainly by the liver",
+        "quiz": "Fígado limpa cápsula"
+      },
+      "B": {
+        "texto": "Pneumococcus: optochin-resistant alpha-hemolytic diplococcus",
+        "quiz": "Pneumo resiste opto",
+        "dia": 106
+      },
+      "C": {
+        "texto": "HPV 16: E6 binds and inactivates Rb",
+        "quiz": "E6 inativa Rb",
+        "dia": 127
+      },
+      "D": {
+        "texto": "DiGeorge: thymic aplasia from 3rd and 4th pouch failure",
+        "quiz": "DiGeorge: sem timo",
+        "dia": 50
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "DiGeorge: *3ª e 4ª bolsas* faríngeas",
+    "certa": [
+      "Na deleção 22q11.2, a 3ª e a 4ª bolsas faríngeas não se desenvolvem: falta o timo (células T baixas e infecções virais e fúngicas) e faltam as paratireoides (hipocalcemia e tetania), com defeitos conotruncais no coração. É o CATCH-22: Cardiac, Abnormal facies, Thymic aplasia, Cleft palate, Hypocalcemia, cromossomo 22."
+    ],
+    "termos": [
+      "22q11.2 deletion",
+      "optochin",
+      "E7 and Rb",
+      "asplenia"
+    ],
+    "erradas": {
+      "A": "Intruso: quem remove bactérias encapsuladas opsonizadas é o baço, e por isso a asplenia aumenta o risco dessas infecções.",
+      "B": "Dia 106: o pneumococo é sensível à optoquina; o alfa-hemolítico resistente é o Streptococcus viridans.",
+      "C": "Dia 127: quem inativa o Rb é a E7; a E6 leva o p53 à degradação."
+    },
+    "macete": {
+      "frase": "*CATCH-22*, pneumo *opto-sim*, *E7 com Rb*, baço contra cápsula",
+      "apoio": "Errou alguma? Volte ao dia original (50, 106 ou 127) e refaça antes do próximo remix.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo: três conceitos do mês e um intruso. Só um flashcard está certo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Imunologia",
+      "#Immunology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: qual flashcard está certo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

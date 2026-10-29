@@ -1,0 +1,96 @@
+{
+  "dia": 288,
+  "data": "2027-08-16",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistemas respiratório e renal/urinário",
+  "topico": "Proteus e cálculos de estruvita",
+  "conceito": "Proteus mirabilis: urease alkalinizes urine and builds struvite staghorn stones",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-17",
+  "tom": null,
+  "gancho": "Seu Néfron achou *uma galhada de cervo* no meio dos formulários",
+  "gancho_apoio": "Urina alcalina, cristal em tampa de caixão e uma pedra que ocupa a pelve inteira.",
+  "imagem": {
+    "arquivo": "dia-288.png",
+    "cena": "Seu Néfron na escrivaninha com pilhas de formulários; no meio da papelada cresce uma pedra branca ramificada como galhada de cervo, e bastonetes pequenos deslizam sobre a mesa em ondas, como enxame.",
+    "foco": "50% 35%",
+    "alt": "Seu Néfron achou uma galhada de cervo no meio dos formulários"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-288-macete.png",
+    "cena": "Callback: os bastonetes usam martelinhos para quebrar moléculas de ureia em nuvens de amônia; uma fita de pH fica azul-escura (alcalina) e cristais retangulares empilham a galhada; Seu Néfron ergue o carimbo vermelho, sem poder liberar a pedra.",
+    "foco": "50% 45%",
+    "alt": "Urease: urina alcalina e pedra de estruvita"
+  },
+  "questao": {
+    "vinheta": "A 54-year-old woman with recurrent urinary tract infections has right flank pain. Urine pH is 8.0, and microscopy shows coffin-lid crystals. CT shows a large branching calculus filling the right renal pelvis and calyces. Urine culture grows a motile, swarming, gram-negative rod.",
+    "pergunta": "Which bacterial product most directly caused the stone?",
+    "alternativas": {
+      "A": {
+        "texto": "P fimbriae",
+        "quiz": "Fímbria P"
+      },
+      "B": {
+        "texto": "Polysaccharide capsule",
+        "quiz": "Cápsula"
+      },
+      "C": {
+        "texto": "Urease",
+        "quiz": "Urease"
+      },
+      "D": {
+        "texto": "Lipopolysaccharide",
+        "quiz": "LPS"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Urease: *urina alcalina* e pedra de estruvita",
+    "certa": [
+      "A *urease* do *Proteus mirabilis* quebra a ureia em amônia e CO2, e a amônia alcaliniza a urina (pH 8). Nesse meio precipitam os cristais de *struvite* (fosfato de amônio e magnésio), em formato de tampa de caixão. A pedra cresce pelos cálices e vira o cálculo *staghorn* (coraliforme), que abriga bactéria e costuma precisar de retirada cirúrgica."
+    ],
+    "termos": [
+      "Proteus mirabilis",
+      "urease",
+      "struvite",
+      "staghorn calculus"
+    ],
+    "erradas": {
+      "A": "Fímbrias P ajudam a E. coli a subir até o rim, mas não mexem no pH da urina.",
+      "B": "A cápsula protege contra a fagocitose e não forma cálculo.",
+      "D": "O LPS é a endotoxina que causa febre e choque, sem papel na precipitação de cristais."
+    },
+    "macete": {
+      "frase": "*Chifre na pelve? Urease no Proteus*: ureia vira amônia e a urina vira cal",
+      "apoio": "Seu Néfron carimba cada formulário, mas o Proteus entra com uma marreta que quebra ureia em amônia; a urina fica alcalina e a estruvita cresce como galhada de cervo. Sem carimbo, essa pedra não sai.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Infecção urinária de repetição, urina com pH 8, cristais em tampa de caixão e um cálculo que preenche a pelve inteira. Seu Néfron quer saber qual produto da bactéria montou essa obra.",
+    "palavras_chave": [
+      "recurrent UTI",
+      "alkaline urine",
+      "coffin-lid crystals",
+      "swarming motility"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Nefrologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Urina pH 8 e pedra em galhada: qual produto?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 235,
+  "data": "2027-06-24",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Febre na doença falciforme",
+  "conceito": "Child with sickle cell disease and fever: blood culture and empiric IV ceftriaxone",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-25",
+  "tom": null,
+  "gancho": "O goleiro *não veio* e as bolas estão encapadas",
+  "gancho_apoio": "Criança com doença falciforme e febre de 39,2°C. Dá para esperar?",
+  "imagem": {
+    "arquivo": "dia-235.png",
+    "cena": "Um gol de futebol com o lugar do goleiro vazio, só um par de luvas na grama, enquanto bolas encapadas com capas brilhantes rolam em direção à área. No banco, um jogador reserva em forma de cápsula amarra a chuteira.",
+    "foco": "50% 35%",
+    "alt": "O goleiro não veio e as bolas estão encapadas"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-235-macete.png",
+    "cena": "Callback: um frasquinho de hemocultura recolhe uma das bolas encapadas, e o reserva em forma de cápsula entra correndo, com um cronômetro grande na mão, e defende as outras bolas. As luvas continuam na grama.",
+    "foco": "50% 45%",
+    "alt": "Febre na falciforme: ceftriaxona sem demora"
+  },
+  "questao": {
+    "vinheta": "A 3-year-old boy with HbSS disease has had a temperature of 39.2°C for 6 hours. He is alert and well appearing, with normal blood pressure and oxygen saturation. There is no focal source of infection. He takes penicillin prophylaxis.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Oral amoxicillin and follow-up in 48 hours",
+        "quiz": "Amoxicilina oral"
+      },
+      "B": {
+        "texto": "Antipyretics and observation at home",
+        "quiz": "Antitérmico e casa"
+      },
+      "C": {
+        "texto": "Exchange transfusion",
+        "quiz": "Transfusão de troca"
+      },
+      "D": {
+        "texto": "Blood culture and empiric IV ceftriaxone",
+        "quiz": "Hemocultura + ceftri"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Febre na falciforme: *ceftriaxona sem demora*",
+    "certa": [
+      "A criança com doença falciforme tem *functional asplenia* desde cedo e corre risco de sepse por germes encapsulados, sobretudo *Streptococcus pneumoniae*, mesmo com profilaxia com penicilina e vacinas em dia. Febre de 38,5°C ou mais pede avaliação imediata: hemograma com reticulócitos, *blood culture* e *empiric IV ceftriaxone* o mais rápido possível, idealmente em até 1 hora, sem esperar resultado. O bom estado geral não muda a conduta."
+    ],
+    "termos": [
+      "functional asplenia",
+      "encapsulated organisms",
+      "Streptococcus pneumoniae",
+      "empiric IV ceftriaxone"
+    ],
+    "erradas": {
+      "A": "Antibiótico oral e retorno em 48 horas deixa a criança sem cobertura parenteral diante de uma sepse que pode evoluir em horas.",
+      "B": "Observar em casa ignora o risco da asplenia funcional, mesmo com a criança bem.",
+      "C": "A transfusão de troca serve para síndrome torácica aguda grave ou AVC, não para febre sem foco."
+    },
+    "macete": {
+      "frase": "*Sem goleiro, o reserva entra em 1 hora*",
+      "apoio": "Na imagem, o baço goleiro não está no gol (só as luvas na grama), e as bolas encapadas avançam. O reserva ceftriaxona entra correndo de cronômetro na mão, depois que o frasco da hemocultura já pegou uma das bolas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três anos, doença falciforme (HbSS), febre de 39,2°C há seis horas, bom estado geral e nenhum foco aparente. O garçom do rodízio pergunta: qual espeto sai primeiro?",
+    "palavras_chave": [
+      "HbSS disease",
+      "fever",
+      "penicillin prophylaxis",
+      "well-appearing child"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Pediatria",
+      "#Pediatrics",
+      "#Hematologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Falciforme com febre: qual a conduta?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

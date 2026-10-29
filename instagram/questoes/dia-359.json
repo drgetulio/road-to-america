@@ -1,0 +1,100 @@
+{
+  "dia": 359,
+  "data": "2027-10-26",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema cardiovascular",
+  "topico": "Doença arterial periférica",
+  "conceito": "Peripheral artery disease: ankle-brachial index below 0.9",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-27",
+  "tom": null,
+  "gancho": "Ele para em toda vitrine. *Não é para comprar.*",
+  "gancho_apoio": "Dor na panturrilha ao andar que melhora parado em pé.",
+  "imagem": {
+    "arquivo": "dia-359.png",
+    "cena": "Uma calçada com vitrines de padaria cheias de pães e bolos, pegadas que param diante de cada vitrine e uma mangueira de jardim que vai afinando ao longo do meio-fio; acima, a placa verde de rodovia com três saídas.",
+    "foco": "50% 35%",
+    "alt": "Ele para em toda vitrine. Não é para comprar."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-359-macete.png",
+    "cena": "Callback: dois manguitos de pressão, um no pé de um banco em forma de tornozelo e outro num poste em forma de braço, ligados a uma balança que pende para o braço; a mangueira estreita aparece em destaque.",
+    "foco": "50% 45%",
+    "alt": "Claudicação: o primeiro exame é o ankle-brachial index"
+  },
+  "questao": {
+    "vinheta": "A 68-year-old man who smokes has 6 months of cramping pain in both calves after walking two blocks, relieved by standing still for a few minutes. He has type 2 diabetes. Pedal pulses are diminished, and the skin of the lower legs is cool and shiny. Sensation is normal.",
+    "pergunta": "Which is the most appropriate initial diagnostic test?",
+    "alternativas": {
+      "A": {
+        "texto": "Venous duplex ultrasonography",
+        "quiz": "Duplex venoso"
+      },
+      "B": {
+        "texto": "CT angiography of the lower extremities",
+        "quiz": "Angiotomografia"
+      },
+      "C": {
+        "texto": "MRI of the lumbar spine",
+        "quiz": "RM da coluna"
+      },
+      "D": {
+        "texto": "Ankle-brachial index",
+        "quiz": "Tornozelo-braço"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Claudicação: o primeiro exame é o *ankle-brachial index*",
+    "certa": [
+      "Dor em cãibra na panturrilha ao caminhar, que melhora em poucos minutos parado em pé, com pulsos diminuídos e fatores de risco, é *intermittent claudication* da *peripheral artery disease*. O primeiro exame é o *ankle-brachial index* (pressão do tornozelo dividida pela do braço): 0,90 ou menos confirma. Acima de 1,40 a artéria não comprime (comum no diabetes), e o próximo passo é o *toe-brachial index*."
+    ],
+    "termos": [
+      "peripheral artery disease",
+      "intermittent claudication",
+      "ankle-brachial index",
+      "toe-brachial index"
+    ],
+    "erradas": {
+      "A": "Duplex venoso investiga trombose venosa ou insuficiência venosa, não dor de esforço que cede com repouso.",
+      "B": "Angiotomografia serve para planejar revascularização, depois do diagnóstico, e não como primeiro exame.",
+      "C": "Estenose do canal lombar causa claudicação neurogênica, que melhora sentado ou inclinado para a frente, com pulsos normais."
+    },
+    "macete": {
+      "frase": "*Doença da vitrine*: anda, dói, para, melhora",
+      "apoio": "Na calçada da padaria, quem tem claudicação para em cada vitrine até a dor passar. O ITB compara tornozelo com braço: abaixo de 0,9 tem obstrução. Quem melhora só sentado ou empurrando carrinho de supermercado pensa na coluna.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Fumante e diabético, ele sente cãibra nas panturrilhas depois de dois quarteirões e melhora parado em pé, como quem olha vitrine. Pulsos dos pés fracos. Qual é o primeiro exame?",
+    "palavras_chave": [
+      "calf pain with walking",
+      "smoker",
+      "type 2 diabetes",
+      "diminished pedal pulses"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Cardiologia",
+      "#Angiologia",
+      "#ClinicaMedica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Claudicação nas panturrilhas. 1º exame:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

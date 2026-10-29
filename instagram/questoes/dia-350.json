@@ -1,0 +1,106 @@
+{
+  "dia": 350,
+  "data": "2027-10-17",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Estreptococos do grupo viridans (dia 295), Febre maculosa (dia 323), E. coli uropatogênica (dia 344)",
+  "conceito": "Remix: Viridans streptococci + Rickettsia rickettsii + Uropathogenic E. coli",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    295,
+    323,
+    344
+  ],
+  "explicacao_em": "2027-10-18",
+  "tom": null,
+  "gancho": "Três discos, uma válvula: *quem colou ali?*",
+  "gancho_apoio": "Remix com viridans, febre maculosa e E. coli uropatogênica. Um disco é intruso.",
+  "imagem": {
+    "arquivo": "dia-350.png",
+    "cena": "Toca-discos com três discos lado a lado, cada um com um ícone (uma gota de calda doce, um carrapatinho simpático, um elevador em forma de rim) e um quarto disco de outra cor; Macrô de DJ, com fones, sem saber qual tocar.",
+    "foco": "50% 35%",
+    "alt": "Três discos, uma válvula: quem colou ali?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-350-macete.png",
+    "cena": "Callback: o disco da calda doce gira, e um fio de calda dourada cola uma bolinha de bactéria na dobradiça de uma portinha em forma de válvula do coração; Macrô levanta os fones, impressionado.",
+    "foco": "50% 45%",
+    "alt": "Endocardite subaguda: dextran gruda o viridans na válvula lesada"
+  },
+  "questao": {
+    "vinheta": "A 46-year-old man with known mitral valve prolapse and regurgitation has had 5 weeks of low-grade fever, fatigue, and weight loss that began after a tooth extraction. He has splinter hemorrhages. Blood cultures grow catalase-negative, alpha-hemolytic, gram-positive cocci in chains that are optochin-resistant.",
+    "pergunta": "Which factor most directly allowed this organism to colonize the valve?",
+    "alternativas": {
+      "A": {
+        "texto": "Dextran binding fibrin-platelet deposits",
+        "quiz": "Dextrana",
+        "dia": 295
+      },
+      "B": {
+        "texto": "P fimbriae binding uroepithelial cells",
+        "quiz": "Fímbria P",
+        "dia": 344
+      },
+      "C": {
+        "texto": "Replication inside vascular endothelial cells",
+        "quiz": "Invade endotélio",
+        "dia": 323
+      },
+      "D": {
+        "texto": "Protein A binding the Fc region of IgG",
+        "quiz": "Proteína A"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Endocardite subaguda: *dextran* gruda o viridans na válvula lesada",
+    "certa": [
+      "Febre arrastada depois de extração dentária numa válvula já lesada, com cocos gram-positivos em cadeia, alfa-hemolíticos e resistentes à optoquina, é *subacute endocarditis* por *viridans streptococci*. Eles produzem *dextran* a partir da sacarose, um polissacarídeo que adere aos depósitos de fibrina e plaquetas sobre o endotélio danificado."
+    ],
+    "termos": [
+      "viridans streptococci",
+      "dextran",
+      "subacute endocarditis",
+      "optochin resistance"
+    ],
+    "erradas": {
+      "B": "Fímbria P (dia 344) é o crachá da E. coli para subir até o rim na pielonefrite, não da adesão à válvula.",
+      "C": "Replicação no endotélio é da Rickettsia rickettsii (dia 323), com vasculite e exantema que começa em punhos e tornozelos.",
+      "D": "Proteína A é do S. aureus, catalase-positivo, em cachos, que causa endocardite aguda até em válvula normal."
+    },
+    "macete": {
+      "frase": "*Viridans é o confeiteiro do dentista*: faz calda de dextrana",
+      "apoio": "Extração de dente solta o viridans no sangue, e ele chega com a calda de dextrana, que gruda no coágulo da válvula machucada. No toca-discos, o disco da calda doce é o que toca.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de domingo com viridans (dia 295), febre maculosa (dia 323) e E. coli uropatogênica (dia 344), mais um intruso. Válvula com prolapso, extração dentária e febre arrastada. Qual disco explica a adesão?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#RemixDeDomingo",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Viridans na válvula: o que gruda?"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

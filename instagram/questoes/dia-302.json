@@ -1,0 +1,96 @@
+{
+  "dia": 302,
+  "data": "2027-08-30",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Síndrome de hiper-IgM",
+  "conceito": "Hyper-IgM syndrome: CD40L defect prevents class switching",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-31",
+  "tom": null,
+  "gancho": "Fim de jogo e *ninguém consegue trocar de camisa*. Por quê?",
+  "gancho_apoio": "No vestiário dos linfócitos B, todo mundo ficou com a camisa de treino.",
+  "imagem": {
+    "arquivo": "dia-302.png",
+    "cena": "Macrô de roupeiro num vestiário de futebol: uma fileira de linfócitos B redondos veste a mesma camisa de treino com cinco estrelas, segurando camisas novas de outras cores que não conseguem vestir. Um linfócito T estende a mão vazia, sem aperto de mão.",
+    "foco": "50% 35%",
+    "alt": "Fim de jogo e ninguém consegue trocar de camisa. Por quê?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-302-macete.png",
+    "cena": "Callback: em primeiro plano, a mão do linfócito T tem uma tomada vazia onde deveria haver um plugue; do lado do linfócito B, a tomada correspondente espera. Num quadrinho no canto, com o plugue encaixado, as camisas trocam de cor num redemoinho. O Macrô segura o plugue que faltava.",
+    "foco": "50% 45%",
+    "alt": "Sem CD40L, o linfócito B não troca de classe"
+  },
+  "questao": {
+    "vinheta": "A 2-year-old boy has had recurrent otitis media, sinusitis, and one episode of Pneumocystis jirovecii pneumonia. His tonsils and lymph nodes are small. Serum IgM is elevated, whereas IgG, IgA, and IgE are nearly undetectable. Circulating B-cell and T-cell counts are normal.",
+    "pergunta": "Which protein is most likely defective?",
+    "alternativas": {
+      "A": {
+        "texto": "Bruton tyrosine kinase",
+        "quiz": "BTK"
+      },
+      "B": {
+        "texto": "CD40 ligand",
+        "quiz": "CD40 ligand"
+      },
+      "C": {
+        "texto": "Activation-induced cytidine deaminase",
+        "quiz": "AID"
+      },
+      "D": {
+        "texto": "Common gamma chain of cytokine receptors",
+        "quiz": "Cadeia gama comum"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Sem *CD40L*, o linfócito B não troca de classe",
+    "certa": [
+      "IgM alta com IgG, IgA e IgE ausentes indica falha no *class switching*. Na hiper-IgM ligada ao X falta o *CD40 ligand* (CD154) do linfócito T auxiliar, que precisa encostar no CD40 do linfócito B para liberar a troca de classe e formar centros germinativos. Como o CD40L também ativa macrófagos, aparecem infecções oportunistas como *Pneumocystis*."
+    ],
+    "termos": [
+      "hyper-IgM syndrome",
+      "CD40 ligand (CD154)",
+      "class switching",
+      "germinal centers"
+    ],
+    "erradas": {
+      "A": "Sem *BTK* faltam linfócitos B e todas as imunoglobulinas, inclusive a IgM; aqui o número de células B é normal.",
+      "C": "A deficiência de *AID* também bloqueia a troca de classe, mas é autossômica recessiva, aumenta os linfonodos e não causa Pneumocystis.",
+      "D": "Defeito da *cadeia gama comum* causa SCID ligada ao X, com linfócitos T e NK ausentes, e não IgM alta isolada."
+    },
+    "macete": {
+      "frase": "*Sem o aperto de mão CD40L com CD40, ninguém troca a camisa IgM*",
+      "apoio": "No vestiário, o linfócito T estende a mão, mas falta o plugue que encaixa no linfócito B. Sem esse encaixe, todo mundo continua com a camisa de treino de cinco estrelas (a IgM pentamérica).",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Menino de 2 anos com otites, sinusites e uma pneumonia por Pneumocystis. A IgM está alta e o resto das imunoglobulinas quase sumiu, com linfócitos B e T em número normal. O Macrô virou roupeiro e quer saber qual peça falta no vestiário.",
+    "palavras_chave": [
+      "recurrent sinopulmonary infections",
+      "Pneumocystis pneumonia",
+      "high IgM",
+      "normal B and T cells"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "IgM alta e o resto sumiu: qual defeito?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

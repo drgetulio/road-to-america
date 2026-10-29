@@ -1,0 +1,105 @@
+{
+  "dia": 252,
+  "data": "2027-07-11",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Malária por falciparum (dia 169), E. coli êntero-hemorrágica (dia 232), Deficiência do complemento terminal (dia 246)",
+  "conceito": "Remix: Plasmodium falciparum + EHEC O157 + Terminal complement deficiency",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    169,
+    232,
+    246
+  ],
+  "explicacao_em": "2027-07-12",
+  "tom": null,
+  "gancho": "Remix: quatro cartões, *três furadas* e um só confiável",
+  "gancho_apoio": "Malária, EHEC e complemento voltam para a mesa. Qual cartão passa no embarque?",
+  "imagem": {
+    "arquivo": "dia-252.png",
+    "cena": "Toca-discos navy e vermelho com três discos de cores diferentes empilhados e um quarto disco intruso, meio torto, entrando de lado. Em volta, como plateia, um mosquito de desenho de óculos escuros, uma vaquinha de fazenda e uma furadeira pequena.",
+    "foco": "50% 35%",
+    "alt": "Remix: quatro cartões, três furadas e um só confiável"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-252-macete.png",
+    "cena": "Só o disco do mosquito toca: dele saem hemácias com pequenas ventosas que grudam nas paredes de um tubo fino, formando um engarrafamento numa ruela estreita. A vaquinha, a furadeira e o disco intruso param ao lado de uma placa de pare.",
+    "foco": "50% 40%",
+    "alt": "Falciparum gruda no cérebro"
+  },
+  "questao": {
+    "vinheta": "Before Sunday rounds, a student reviews four flashcards about infections and immune defects. Only one card is accurate.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "P. falciparum: infected red cells adhere to cerebral venules",
+        "quiz": "Falciparum gruda",
+        "dia": 169
+      },
+      "B": {
+        "texto": "EHEC O157:H7: invades the colonic mucosa like Shigella",
+        "quiz": "EHEC invade mucosa",
+        "dia": 232
+      },
+      "C": {
+        "texto": "C5-C9 deficiency: recurrent catalase-positive abscesses",
+        "quiz": "C5-C9: catalase +",
+        "dia": 246
+      },
+      "D": {
+        "texto": "Cholera toxin: lowers enterocyte cAMP",
+        "quiz": "Cólera baixa cAMP"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Falciparum *gruda* no cérebro",
+    "certa": [
+      "Dia 169: no *Plasmodium falciparum*, a proteína *PfEMP1* faz a hemácia infectada grudar no endotélio das vênulas (*cytoadherence*). Isso entope a microcirculação do cérebro e explica a malária cerebral, além de tirar as hemácias infectadas da circulação, longe do baço."
+    ],
+    "termos": [
+      "cytoadherence",
+      "PfEMP1",
+      "Shiga-like toxin",
+      "membrane attack complex"
+    ],
+    "erradas": {
+      "B": "Dia 232: a *EHEC* não invade a mucosa; o estrago vem da *Shiga-like toxin*, que pode levar à síndrome hemolítico-urêmica.",
+      "C": "Dia 246: a falta de C5 a C9 dá *Neisseria* de repetição; abscessos por catalase-positivos são da doença granulomatosa crônica.",
+      "D": "Intruso: a toxina da cólera ativa a proteína Gs e aumenta o cAMP, causando a diarreia aquosa."
+    },
+    "macete": {
+      "frase": "Falciparum é a hemácia de *ventosa*: gruda e engarrafa o cérebro",
+      "apoio": "A hemácia com ventosa grudando na ruela estreita é a citoaderência do falciparum. A vaquinha lembra a EHEC da carne malpassada, que intoxica sem invadir, e a furadeira é o MAC que fura a Neisseria.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Domingo é dia de remix: falciparum (dia 169), EHEC (dia 232), complemento terminal (dia 246) e um intruso. Só um cartão está certo.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#QuestaoDoDia",
+      "#RemixDeDomingo",
+      "#Microbiologia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual cartão está certo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

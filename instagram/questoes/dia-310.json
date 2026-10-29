@@ -1,0 +1,96 @@
+{
+  "dia": 310,
+  "data": "2027-09-07",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema endócrino",
+  "topico": "Hipercalcemia da malignidade",
+  "conceito": "Hypercalcemia of malignancy: IV saline, calcitonin and a bisphosphonate",
+  "personagem": null,
+  "gancho_data": "Independência do Brasil (7/9).",
+  "remix_de": null,
+  "explicacao_em": "2027-09-08",
+  "tom": null,
+  "gancho": "No 7 de setembro, *o cálcio também quis dar o grito*",
+  "gancho_apoio": "O cálcio saiu do osso em desfile. Qual é a conduta do plantão?",
+  "imagem": {
+    "arquivo": "dia-310.png",
+    "cena": "Placa verde de rodovia com três saídas; embaixo, um castelo em forma de osso abre o portão e bolinhas brancas de giz (o cálcio) saem em desfile com bandeirinhas verdes e amarelas, rumo à estrada.",
+    "foco": "50% 35%",
+    "alt": "No 7 de setembro, o cálcio também quis dar o grito"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-310-macete.png",
+    "cena": "Callback: três ferramentas param o desfile: uma mangueira de soro empurra as bolinhas para um ralo em forma de feijão, um freio de mão vermelho segura a fila e um cadeado navy fecha o portão do castelo de osso.",
+    "foco": "50% 45%",
+    "alt": "Hipercalcemia grave: lava, freia e tranca"
+  },
+  "questao": {
+    "vinheta": "A 64-year-old man with squamous cell carcinoma of the lung has 3 days of confusion, polyuria, and constipation. Blood pressure is 102/64 mm Hg, and his mucous membranes are dry. Serum calcium is 14.6 mg/dL, creatinine is 1.4 mg/dL (baseline 1.0), and PTH is suppressed.",
+    "pergunta": "Which is the most appropriate initial management?",
+    "alternativas": {
+      "A": {
+        "texto": "IV furosemide, then oral fluids",
+        "quiz": "Furosemida IV"
+      },
+      "B": {
+        "texto": "IV saline, calcitonin, and zoledronic acid",
+        "quiz": "Soro+calcitonina+ZOL"
+      },
+      "C": {
+        "texto": "Oral alendronate and a low-calcium diet",
+        "quiz": "Alendronato oral"
+      },
+      "D": {
+        "texto": "Emergent hemodialysis",
+        "quiz": "Hemodiálise"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Hipercalcemia grave: *lava, freia e tranca*",
+    "certa": [
+      "Cálcio acima de 14 mg/dL com confusão é hipercalcemia grave, aqui pelo *PTHrP* do carcinoma escamoso (PTH suprimido). O tratamento ataca em três tempos: *IV normal saline* para corrigir a desidratação da poliúria, *calcitonin* para baixar o cálcio em horas (o efeito some em cerca de 48 h por taquifilaxia) e *zoledronic acid*, que bloqueia os osteoclastos e age em 2 a 4 dias. Furosemida só entra se houver sobrecarga de volume, depois da hidratação."
+    ],
+    "termos": [
+      "hypercalcemia of malignancy",
+      "PTHrP",
+      "calcitonin",
+      "zoledronic acid"
+    ],
+    "erradas": {
+      "A": "*Furosemida* antes de hidratar piora a desidratação; hoje só se usa em quem fica hipervolêmico com o soro.",
+      "C": "*Bifosfonato oral* é lento e mal absorvido; na hipercalcemia grave o bifosfonato é intravenoso.",
+      "D": "*Hemodiálise* fica para cálcio acima de 18 mg/dL com sintomas neurológicos ou insuficiência renal que impede a hidratação."
+    },
+    "macete": {
+      "frase": "*Lava, freia e tranca*: soro lava, calcitonina freia e bifosfonato tranca o osteoclasto",
+      "apoio": "Na imagem, a mangueira de soro lava o cálcio para o ralo do rim, o freio de mão para o desfile em poucas horas e o cadeado no portão do osso segura a saída por semanas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 64 anos com carcinoma escamoso de pulmão chega confuso, desidratado, com poliúria e constipação. Cálcio de 14,6 mg/dL e PTH suprimido. A placa verde tem três saídas e o plantão precisa escolher a combinação certa.",
+    "palavras_chave": [
+      "lung cancer",
+      "confusion",
+      "polyuria",
+      "very high serum calcium"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Endocrinologia",
+      "#Endocrinology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Cálcio 14,6 e confusão: conduta inicial?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

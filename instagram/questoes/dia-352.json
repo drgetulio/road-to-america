@@ -1,0 +1,100 @@
+{
+  "dia": 352,
+  "data": "2027-10-19",
+  "dia_semana": "terça-feira",
+  "quadro": "Plantão de Terça",
+  "step": "Step 2 CK",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Colangite aguda",
+  "conceito": "Acute cholangitis: Charcot triad, antibiotics and biliary drainage by ERCP",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-20",
+  "tom": null,
+  "gancho": "Engarrafamento no colédoco: *quem chama o guincho?*",
+  "gancho_apoio": "Febre, dor no hipocôndrio direito e icterícia. Antibiótico já começou.",
+  "imagem": {
+    "arquivo": "dia-352.png",
+    "cena": "Um túnel amarelo bloqueado por uma pedra redonda enorme, com carrinhos parados e buzinando atrás dela; acima, a placa verde de rodovia com três saídas; um semáforo vermelho na entrada.",
+    "foco": "50% 35%",
+    "alt": "Engarrafamento no colédoco: quem chama o guincho?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-352-macete.png",
+    "cena": "Callback: um guincho com braço longo e flexível entra pela saída do túnel e puxa a pedra com uma cestinha na ponta; os carrinhos voltam a andar e o semáforo fica verde.",
+    "foco": "50% 45%",
+    "alt": "Colangite aguda: antibiótico e biliary drainage por ERCP"
+  },
+  "questao": {
+    "vinheta": "A 72-year-old woman has 1 day of fever of 39.1°C, right upper quadrant pain, and jaundice. Blood pressure is 108/68 mm Hg. Total bilirubin is 5.8 mg/dL, alkaline phosphatase 410 U/L, and leukocytes 17,500/mm³. Ultrasound shows a dilated common bile duct with a distal stone. IV fluids and piperacillin-tazobactam were started.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Laparoscopic cholecystectomy today",
+        "quiz": "Colecistectomia já"
+      },
+      "B": {
+        "texto": "HIDA scan",
+        "quiz": "Cintilografia HIDA"
+      },
+      "C": {
+        "texto": "Antibiotics and repeat ultrasound in 1 week",
+        "quiz": "Esperar 1 semana"
+      },
+      "D": {
+        "texto": "ERCP with biliary drainage",
+        "quiz": "CPRE"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Colangite aguda: antibiótico e *biliary drainage* por *ERCP*",
+    "certa": [
+      "Febre, dor no hipocôndrio direito e icterícia formam a *Charcot triad* da *acute cholangitis*, aqui com colédoco dilatado e cálculo distal. Além de hidratação e antibiótico, a bile infectada sob pressão precisa sair: *ERCP* com extração do cálculo ou prótese, nas primeiras 24 a 48 horas nos casos moderados como este (leucocitose acima de 12.000 e bilirrubina de 5 ou mais)."
+    ],
+    "termos": [
+      "acute cholangitis",
+      "Charcot triad",
+      "ERCP",
+      "biliary drainage"
+    ],
+    "erradas": {
+      "A": "A colecistectomia vem depois da drenagem e da estabilização, ainda na mesma internação, e não resolve o cálculo no colédoco.",
+      "B": "A cintilografia HIDA ajuda na colecistite aguda duvidosa; aqui o diagnóstico já está feito e o problema é a obstrução.",
+      "C": "Esperar com antibiótico deixa a bile infectada represada; a mortalidade sobe sem drenagem."
+    },
+    "macete": {
+      "frase": "*Três buzinas no túnel, chama o guincho*",
+      "apoio": "O colédoco é um túnel com um caminhão quebrado (o cálculo). Charcot são três buzinas: febre, dor e icterícia; Reynolds soma confusão e hipotensão. O guincho que entra pela saída do túnel, o duodeno, é a CPRE.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Febre de 39 °C, dor no lado direito da barriga e pele amarelada. O ultrassom mostra o colédoco dilatado com um cálculo. Antibiótico e soro já entraram. E agora?",
+    "palavras_chave": [
+      "fever",
+      "right upper quadrant pain",
+      "jaundice",
+      "dilated common bile duct"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Gastroenterologia",
+      "#Cirurgia",
+      "#ClinicaMedica",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Charcot com cálculo no colédoco:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 230,
+  "data": "2027-06-19",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Identificação do paciente",
+  "conceito": "Two patient identifiers before medication, blood or procedures",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-20",
+  "tom": null,
+  "gancho": "Dois *José da Silva* na mesma enfermaria. E agora?",
+  "gancho_apoio": "Transfusão pronta e dois homônimos no corredor. Como confirmar quem é quem?",
+  "imagem": {
+    "arquivo": "dia-230.png",
+    "cena": "Corredor de enfermaria com duas portas idênticas lado a lado, cada uma com uma plaquinha igual e um par de chinelos iguais na frente. Entre as portas, um carrinho com um cofrinho vermelho com um coração espera.",
+    "foco": "50% 35%",
+    "alt": "Dois José da Silva na mesma enfermaria. E agora?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-230-macete.png",
+    "cena": "Callback: o cofrinho vermelho tem duas fechaduras e só abre com duas chaves ao mesmo tempo: uma com o desenho de um crachá e outra com um bolo de aniversário. Uma terceira chave, em forma de porta, fica de fora, sem servir.",
+    "foco": "50% 45%",
+    "alt": "Dois identificadores, nunca o quarto"
+  },
+  "questao": {
+    "vinheta": "A nurse is about to start a red blood cell transfusion ordered for an alert man on a busy medical floor. Two patients with the same first and last name are in adjacent rooms. The unit has already been checked against the order.",
+    "pergunta": "Which action best confirms the patient's identity before transfusion?",
+    "alternativas": {
+      "A": {
+        "texto": "Confirm the room and bed number on the order",
+        "quiz": "Quarto e leito"
+      },
+      "B": {
+        "texto": "Ask, \"Are you Mr. Silva?\" and wait for a nod",
+        "quiz": "\"É o Sr. Silva?\""
+      },
+      "C": {
+        "texto": "Check that his diagnosis matches the chart",
+        "quiz": "Conferir diagnóstico"
+      },
+      "D": {
+        "texto": "Ask him to state his full name and date of birth, then match the wristband",
+        "quiz": "Nome e nascimento"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Dois identificadores, *nunca o quarto*",
+    "certa": [
+      "A *Joint Commission* exige pelo menos *two patient identifiers* (por exemplo, nome completo e data de nascimento) antes de remédio, sangue, coleta de exames e procedimentos. O paciente acordado diz os dados com as próprias palavras (*open-ended*), e a equipe confere com a pulseira e a requisição; na transfusão, a checagem é feita à beira do leito, por dois profissionais ou com leitor de código de barras."
+    ],
+    "termos": [
+      "two patient identifiers",
+      "National Patient Safety Goals",
+      "bedside verification",
+      "wrong-patient error"
+    ],
+    "erradas": {
+      "A": "Quarto e leito mudam e nunca contam como identificador; pacientes são transferidos e trocados de leito o tempo todo.",
+      "B": "A pergunta fechada com o nome convida um sim automático de quem está confuso, sonolento ou ouviu mal.",
+      "C": "Diagnóstico não identifica ninguém, e dois pacientes internados podem ter a mesma doença."
+    },
+    "macete": {
+      "frase": "*Nome e nascimento*, nunca quarto e leito",
+      "apoio": "Na imagem, o cofrinho da transfusão só abre com duas chaves girando juntas: uma com o desenho de um crachá e outra com um bolo de aniversário. A chave em forma de porta não entra na fechadura.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma transfusão de hemácias pronta, dois pacientes com o mesmo nome em quartos vizinhos e o paciente acordado. Antes de começar, qual é a conferência correta?",
+    "palavras_chave": [
+      "red cell transfusion",
+      "patients with the same name",
+      "nursing",
+      "patient safety"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#Qualidade",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Dois homônimos: como confirmar quem é quem?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

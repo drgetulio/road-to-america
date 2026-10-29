@@ -1,0 +1,102 @@
+{
+  "dia": 70,
+  "data": "2027-01-10",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Cetoacidose diabética (dia 37), AVC isquêmico agudo (dia 65)",
+  "conceito": "Remix: STEMI + DKA + Acute stroke",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    2,
+    37,
+    65
+  ],
+  "explicacao_em": "2027-01-11",
+  "gancho": "Remix de domingo: coração, cérebro ou *fruteira*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um toca-discos vermelho com três discos em pé: um com um coração, um com um cérebro e um com uma fruteira de bananas no selo. Um quarto disco liso, o intruso, fica afastado. Nada tocando ainda.",
+    "foco": "50% 35%",
+    "alt": "Remix de domingo: coração, cérebro ou fruteira?",
+    "arquivo": "dia-070.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: o disco da fruteira gira, e no selo o Mito enche a fruteira de bananas antes de girar uma chave dourada na porta da célula. Os discos do coração e do cérebro ficam guardados na capa, e a chave sozinha espera a vez.",
+    "alt": "Primeiro a banana, depois a chave",
+    "arquivo": "dia-070-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman with type 1 diabetes has had 2 days of vomiting and abdominal pain; her neurologic examination is normal. Labs: glucose 520 mg/dL, arterial pH 7.12, anion gap 24, serum potassium 3.0 mEq/L. ECG shows U waves and sinus tachycardia without ST elevation. IV normal saline is running.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Primary PCI",
+        "quiz": "Primary PCI",
+        "dia": 2
+      },
+      "B": {
+        "texto": "Noncontrast head CT",
+        "quiz": "Head CT",
+        "dia": 65
+      },
+      "C": {
+        "texto": "IV insulin infusion",
+        "quiz": "IV insulin infusion"
+      },
+      "D": {
+        "texto": "IV potassium replacement",
+        "quiz": "IV potassium",
+        "dia": 37
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Primeiro a *banana*, depois a chave",
+    "certa": [
+      "É *diabetic ketoacidosis* (dia 37) com potássio de 3,0 e onda U no ECG. A insulina empurra o potássio para dentro da célula e poderia derrubá-lo a ponto de causar arritmia, então a regra é repor *IV potassium*, manter o soro e só iniciar a insulina quando o K passar do limiar (3,3 nas fontes clássicas, 3,5 no consenso ADA de 2024). Sem supra de ST, não há *primary PCI* (dia 2), e sem déficit neurológico, não há por que pedir a TC do *acute stroke* (dia 65)."
+    ],
+    "termos": [
+      "diabetic ketoacidosis",
+      "hypokalemia",
+      "insulin infusion",
+      "potassium repletion"
+    ],
+    "erradas": {
+      "A": "Dia 2: PCI primária é para supra de ST, e o ECG mostra só taquicardia sinusal com onda U.",
+      "B": "Dia 65: a TC sem contraste é o primeiro passo no déficit focal súbito, e esta paciente tem exame neurológico normal.",
+      "C": "Intruso: insulina agora, com K de 3,0, joga o potássio para dentro da célula e pode causar arritmia grave."
+    },
+    "macete": {
+      "frase": "Água, *banana*, depois *a chave*",
+      "apoio": "Pegadinha de prova: O NBME deixa o potássio \"normal ou baixo\" escondido no meio dos exames da cetoacidose; abaixo do limiar, a insulina espera.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três conceitos do Step 2 CK voltam no mesmo plantão: infarto, cetoacidose e AVC. Mais um intruso. Cada alternativa mostra o dia em que o tema apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#RemixDeDomingo",
+      "#Emergencia",
+      "#EmergencyMedicine",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Quer estudar com método e acompanhamento? A pré-inscrição está aberta: drgetulio.github.io/road-to-america/#pre-inscricao (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o próximo passo?"
+  },
+  "cta": "pre_inscricao",
+  "exemplo": false
+}

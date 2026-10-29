@@ -1,0 +1,96 @@
+{
+  "dia": 71,
+  "data": "2027-01-11",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "SCID por deficiência de ADA",
+  "conceito": "ADA-deficient SCID: accumulated dATP poisons lymphocyte proliferation",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-12",
+  "gancho": "Fábrica de linfócitos parada: *T, B e NK* de braços cruzados",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Ao lado do boteco dos micróbios, o Macrô olha uma pequena fábrica de linfócitos com a chaminé parada. Um caminhão de lixo está quebrado na porta, com o capô aberto, e alguns sacos começam a se acumular. Não dá para ver qual máquina parou lá dentro.",
+    "foco": "50% 35%",
+    "alt": "Fábrica de linfócitos parada: T, B e NK de braços cruzados",
+    "arquivo": "dia-071.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da fábrica: por dentro, uma montanha de sacos de lixo iguais (dATP) está enfiada nas engrenagens da máquina de tijolos, e nenhum tijolo sai pela esteira. Linfocitozinhos T, B e NK esperam com carrinhos de mão vazios, e o Macrô coça a cabeça.",
+    "alt": "O lixo virou dATP e travou a fábrica de DNA",
+    "arquivo": "dia-071-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 5-month-old girl has persistent oral thrush, chronic diarrhea, poor weight gain, and recent Pneumocystis pneumonia. Chest x-ray shows no thymic shadow. T, B, and NK lymphocytes are all markedly decreased. Erythrocyte adenosine deaminase activity is absent.",
+    "pergunta": "Which mechanism best explains her lymphopenia?",
+    "alternativas": {
+      "A": {
+        "texto": "Defective common gamma chain",
+        "quiz": "Common gamma chain"
+      },
+      "B": {
+        "texto": "Absent Bruton tyrosine kinase",
+        "quiz": "Absent BTK"
+      },
+      "C": {
+        "texto": "dATP inhibition of ribonucleotide reductase",
+        "quiz": "dATP blocks RNR"
+      },
+      "D": {
+        "texto": "Defective NADPH oxidase",
+        "quiz": "NADPH oxidase"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "O lixo virou *dATP* e travou a fábrica de DNA",
+    "certa": [
+      "Sem a *adenosine deaminase*, a desoxiadenosina não é degradada e vira *dATP* dentro do linfócito. O dATP em excesso inibe a *ribonucleotide reductase*, que fabrica os desoxirribonucleotídeos do DNA, e o linfócito, que precisa se dividir muito, para de proliferar e morre. Resultado: SCID autossômica recessiva com T, B e NK baixos, infecções oportunistas desde os primeiros meses e timo ausente."
+    ],
+    "termos": [
+      "adenosine deaminase deficiency",
+      "severe combined immunodeficiency",
+      "dATP",
+      "ribonucleotide reductase"
+    ],
+    "erradas": {
+      "A": "A cadeia gama comum (IL2RG) defeituosa causa a SCID ligada ao X, com T e NK baixos e B presentes em número, e a ADA estaria normal.",
+      "B": "Sem BTK faltam só as células B e os anticorpos (Bruton, dia 8); as células T e NK ficam normais.",
+      "D": "O defeito da NADPH oxidase é a doença granulomatosa crônica, um problema de fagócito, sem linfopenia."
+    },
+    "macete": {
+      "frase": "ADA quebrou: *dATP entope* a fábrica de DNA",
+      "apoio": "Pegadinha de prova: O NBME diferencia as SCID pelo perfil: ADA derruba T, B e NK; a cadeia gama ligada ao X poupa o número de B. O tratamento inclui reposição enzimática, transplante de medula e terapia gênica.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sapinho que não sai, diarreia, pneumocistose aos 5 meses e um timo que não aparece no raio X. Falta uma enzima de limpeza, e o Macrô quer saber o que o lixo travou.",
+    "palavras_chave": [
+      "oral thrush",
+      "chronic diarrhea",
+      "failure to thrive",
+      "Pneumocystis pneumonia"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Imunologia",
+      "#Immunology",
+      "#BichoDeSegunda",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "O que causa a linfopenia?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

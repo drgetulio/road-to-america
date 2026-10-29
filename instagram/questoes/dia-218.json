@@ -1,0 +1,99 @@
+{
+  "dia": 218,
+  "data": "2027-06-07",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Saúde comportamental, sistema nervoso e órgãos dos sentidos",
+  "topico": "Botulismo",
+  "conceito": "Botulinum toxin: cleaves SNARE proteins and blocks acetylcholine release, descending flaccid paralysis",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-08",
+  "tom": null,
+  "gancho": "A conserva da festa deixou *o cais parado*",
+  "gancho_apoio": "Visão dupla, fala embolada e fraqueza que desce. Como a toxina trabalha?",
+  "imagem": {
+    "arquivo": "dia-218.png",
+    "cena": "Macrô na porta do boteco dos micróbios olha desconfiado para um pote de conserva caseira com a tampa estufada na prateleira. Pela janela, um pequeno porto com barquinhos esperando junto ao cais, presos por cordas.",
+    "foco": "50% 35%",
+    "alt": "A conserva da festa deixou o cais parado"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-218-macete.png",
+    "cena": "Callback: no porto, uma bactéria marota em forma de bastão usa uma tesoura gigante para cortar as cordas que prendem os barquinhos ao cais. Os barquinhos (as vesículas de acetilcolina) ficam boiando sem conseguir encostar, e o Macrô aponta, espantado.",
+    "foco": "50% 45%",
+    "alt": "A toxina corta as cordas do cais"
+  },
+  "questao": {
+    "vinheta": "A 41-year-old woman has blurred and double vision, slurred speech, and difficulty swallowing 18 hours after eating home-canned vegetables. Her pupils are dilated and poorly reactive. Weakness then spreads to the arms and trunk. She is afebrile and alert, with normal sensation.",
+    "pergunta": "Which mechanism best explains her weakness?",
+    "alternativas": {
+      "A": {
+        "texto": "Antibodies against postsynaptic acetylcholine receptors",
+        "quiz": "Anti-receptor ACh"
+      },
+      "B": {
+        "texto": "Blocked glycine release from spinal inhibitory interneurons",
+        "quiz": "Bloqueia glicina"
+      },
+      "C": {
+        "texto": "Cleavage of SNARE proteins needed for acetylcholine release",
+        "quiz": "Cliva SNARE"
+      },
+      "D": {
+        "texto": "Antibodies against presynaptic voltage-gated calcium channels",
+        "quiz": "Anti-canal de cálcio"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "A toxina *corta as cordas* do cais",
+    "certa": [
+      "A toxina do *Clostridium botulinum*, já pronta na conserva caseira, entra no terminal colinérgico e cliva as *SNARE proteins* (como SNAP-25 e sinaptobrevina). Sem elas, a vesícula de *acetylcholine* não se funde à membrana e o músculo não recebe o recado. A paralisia é flácida e *descending*: começa nos nervos cranianos (diplopia, disfagia, pupilas dilatadas) e poupa a sensibilidade."
+    ],
+    "termos": [
+      "Clostridium botulinum",
+      "SNARE proteins",
+      "acetylcholine release",
+      "descending flaccid paralysis"
+    ],
+    "erradas": {
+      "A": "Anticorpo contra o receptor pós-sináptico é a miastenia gravis, que piora com o esforço e mantém as pupilas normais.",
+      "B": "A toxina tetânica também cliva SNARE, mas nos interneurônios inibitórios, e bloqueia glicina e GABA: o resultado é espasmo e rigidez, não flacidez.",
+      "D": "Anticorpo contra o canal de cálcio pré-sináptico é a síndrome de Lambert-Eaton, com fraqueza proximal que melhora com o uso repetido do músculo."
+    },
+    "macete": {
+      "frase": "Botulínica é *tesoura no cais*: corta a corda e o barco não atraca",
+      "apoio": "Na imagem, o Macrô vê a toxina de tesoura cortar as cordas (SNARE) que prendem os barquinhos de acetilcolina ao cais. Sem barco atracado, o porto para, de cima para baixo. A tetânica corta as cordas do porto vizinho, o dos freios.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Conserva caseira de legumes e, um dia depois, visão dupla, dificuldade para engolir, pupilas que quase não reagem e fraqueza que desce para os braços, sem perda de sensibilidade. Qual é o mecanismo?",
+    "palavras_chave": [
+      "home-canned vegetables",
+      "diplopia",
+      "dysphagia",
+      "dilated pupils"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#Neurologia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Conserva, diplopia e paralisia que desce: como?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

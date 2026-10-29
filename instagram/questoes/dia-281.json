@@ -1,0 +1,97 @@
+{
+  "dia": 281,
+  "data": "2027-08-09",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Hepatite E",
+  "conceito": "Hepatitis E: fecal-oral RNA virus with high mortality in pregnancy",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-10",
+  "tom": null,
+  "gancho": "Choveu no boteco do Macrô. *Qual vírus veio com a enchente?*",
+  "gancho_apoio": "Gestante, água contaminada e um fígado que piorou rápido.",
+  "imagem": {
+    "arquivo": "dia-281.png",
+    "cena": "Macrô na porta do boteco dos micróbios durante uma chuva forte, com água pela canela e um galão de água boiando; vírus redondinhos surfam nas poças; ao lado, uma placa de estrada com o ícone de um fígado.",
+    "foco": "50% 35%",
+    "alt": "Choveu no boteco do Macrô. Qual vírus veio com a enchente?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-281-macete.png",
+    "cena": "Callback: a chuva passou; o Macrô ergue uma barreira de sacos de areia, segura um guarda-chuva sobre uma cadeira de prioridade vazia com almofada amarela e um chocalho de bebê (gestante, grupo de risco) e prende os vírus surfistas num balde tampado de água turva.",
+    "foco": "50% 45%",
+    "alt": "Água contaminada e gestação: hepatite E"
+  },
+  "questao": {
+    "vinheta": "At 30 weeks' gestation, a 26-year-old woman develops jaundice and confusion 4 weeks after returning from a rural area where floods contaminated the drinking water and many residents became jaundiced. She completed the hepatitis A vaccine series as a child. ALT is 3,200 U/L, and INR is 2.6.",
+    "pergunta": "Which virus is the most likely cause?",
+    "alternativas": {
+      "A": {
+        "texto": "Hepatitis A virus",
+        "quiz": "Hepatite A"
+      },
+      "B": {
+        "texto": "Hepatitis E virus",
+        "quiz": "Hepatite E"
+      },
+      "C": {
+        "texto": "Hepatitis B virus",
+        "quiz": "Hepatite B"
+      },
+      "D": {
+        "texto": "Hepatitis C virus",
+        "quiz": "Hepatite C"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Água contaminada e gestação: *hepatite E*",
+    "certa": [
+      "Surto ligado a água contaminada, gestante no terceiro trimestre e *insuficiência hepática aguda* (INR alto, encefalopatia) apontam para o *hepatitis E virus*, um vírus de RNA sem envelope (hepevírus) de transmissão *fecal-oral*. Na gestação, sobretudo no terceiro trimestre, a forma fulminante chega a 20 a 25% de mortalidade. A vacinação completa contra hepatite A torna o HAV pouco provável."
+    ],
+    "termos": [
+      "hepatitis E virus",
+      "fecal-oral transmission",
+      "fulminant hepatitis in pregnancy",
+      "waterborne outbreak"
+    ],
+    "erradas": {
+      "A": "Hepatite A também vem da água, mas ela está vacinada e o HAV não tem a mortalidade alta na gestação que marca o HEV.",
+      "C": "Hepatite B se transmite por sangue, sexo e via vertical, não em surtos pela água.",
+      "D": "Hepatite C é transmitida pelo sangue e quase nunca causa hepatite aguda fulminante."
+    },
+    "macete": {
+      "frase": "Hepatite *E* de *Enchente*, de *Entérica* e de *Expectante*",
+      "apoio": "Na imagem, o Macrô fecha o boteco na enchente e guarda a cadeira de prioridade da gestante embaixo do guarda-chuva. Expectante é a futura mãe (expectant mother), o grupo de maior risco.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Gestante de 30 semanas volta de uma região com enchente e água contaminada, onde muita gente ficou amarela. Agora tem icterícia e confusão. Detalhe: ela tomou a vacina de hepatite A na infância.",
+    "palavras_chave": [
+      "pregnancy",
+      "contaminated drinking water",
+      "jaundice outbreak",
+      "acute liver failure"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Microbiology",
+      "#Hepatologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Enchente e gestante com icterícia: qual vírus?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

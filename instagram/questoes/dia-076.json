@@ -1,0 +1,96 @@
+{
+  "dia": 76,
+  "data": "2027-01-16",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Modelo do queijo suíço",
+  "conceito": "Swiss cheese model: harm happens when latent system flaws line up with an active error",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-01-17",
+  "gancho": "Quatro defesas falharam no mesmo dia: *coincidência ou modelo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Quatro painéis de vidro transparente enfileirados sobre o balcão de uma padaria, cada um com alguns furos redondos em posições diferentes. Na frente deles, um aviãozinho de papel pronto para ser lançado.",
+    "foco": "50% 35%",
+    "alt": "Quatro defesas falharam no mesmo dia: coincidência ou modelo?",
+    "arquivo": "dia-076.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback da padaria: os painéis viraram fatias de queijo suíço amarelo, e os furos agora estão alinhados. O aviãozinho de papel atravessa as quatro fatias pelo mesmo caminho e chega do outro lado. Ao lado, uma rolha flutua, pronta para fechar um dos furos.",
+    "alt": "Os furos se alinharam: queijo suíço",
+    "arquivo": "dia-076-macete.png"
+  },
+  "questao": {
+    "vinheta": "A hospitalized patient receives a 10-fold insulin overdose. Review finds that the order system allowed free-text doses, a pharmacy alert had been turned off, the short-staffed unit skipped the independent double check, and the pump drug library was outdated.",
+    "pergunta": "Which model best explains how this error reached the patient?",
+    "alternativas": {
+      "A": {
+        "texto": "Pareto principle",
+        "quiz": "Pareto principle"
+      },
+      "B": {
+        "texto": "Just culture algorithm",
+        "quiz": "Just culture"
+      },
+      "C": {
+        "texto": "Plan-Do-Study-Act cycle",
+        "quiz": "PDSA cycle"
+      },
+      "D": {
+        "texto": "Swiss cheese model",
+        "quiz": "Swiss cheese model"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Os furos *se alinharam*: queijo suíço",
+    "certa": [
+      "No *Swiss cheese model* de James Reason, cada camada de defesa (sistema de prescrição, alerta da farmácia, dupla checagem, biblioteca da bomba) é uma fatia com furos. Os furos são *latent conditions* do sistema, que ficam escondidas por meses, e o dano acontece quando eles se alinham com um *active error* na ponta. A solução é fechar furos no sistema, não procurar um culpado."
+    ],
+    "termos": [
+      "Swiss cheese model",
+      "latent conditions",
+      "active error",
+      "systems approach"
+    ],
+    "erradas": {
+      "A": "O princípio de Pareto diz que poucas causas respondem pela maior parte dos problemas; ajuda a priorizar, não explica a trajetória deste erro.",
+      "B": "A cultura justa orienta como responder a quem errou (erro humano, comportamento de risco ou imprudência), não descreve como as falhas se somaram.",
+      "C": "O PDSA é um ciclo para testar mudanças de melhoria, não um modelo de causalidade do erro."
+    },
+    "macete": {
+      "frase": "Furos *alinhados*, erro *passa reto*",
+      "apoio": "Pegadinha de prova: O NBME descreve várias falhas de sistema e um erro final e pergunta o modelo; quando pergunta como responder ao profissional, a resposta é cultura justa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma dose de insulina dez vezes maior chegou ao paciente. A revisão achou falhas no sistema, no alerta, na escala e na bomba. Qual modelo explica como o erro atravessou tudo?",
+    "palavras_chave": [
+      "insulin overdose",
+      "medication error",
+      "event review",
+      "patient safety"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#SabadoSemVies",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual modelo explica o erro?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 270,
+  "data": "2027-07-29",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Avaliação primária no trauma",
+  "conceito": "Trauma primary survey: airway with cervical spine protection comes first (ABCDE)",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-30",
+  "tom": null,
+  "gancho": "Rodízio do trauma: *qual espeto* chega primeiro na mesa?",
+  "gancho_apoio": "Respiração gorgolejante, Glasgow 7, pressão no limite e uma coxa deformada. Por onde começar?",
+  "imagem": {
+    "arquivo": "dia-270.png",
+    "cena": "O garçom do rodízio segura cinco espetos de cores diferentes, lado a lado, diante de uma mesa onde um carrinho de brinquedo amassado está em cima da toalha. Ele olha os espetos, em dúvida sobre qual servir primeiro.",
+    "foco": "50% 35%",
+    "alt": "Rodízio do trauma: qual espeto chega primeiro na mesa?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-270-macete.png",
+    "cena": "O garçom serve o primeiro espeto, que traz um tubo de respirar curvo e um colar cervical acolchoado encaixado como um anel; os outros quatro espetos esperam em fila, na ordem. O carrinho de brinquedo na mesa parece aliviado.",
+    "foco": "50% 40%",
+    "alt": "Via aérea com colar vem primeiro"
+  },
+  "questao": {
+    "vinheta": "A 30-year-old man arrives after a high-speed car crash. He moans, his breathing is gurgling, and there is blood in the oropharynx. Glasgow Coma Scale score is 7, blood pressure 96/60 mm Hg, and pulse 118/min. His left thigh is deformed, without external bleeding.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Splint the left femur",
+        "quiz": "Imobilizar o fêmur"
+      },
+      "B": {
+        "texto": "Secure the airway with cervical spine protection",
+        "quiz": "Via aérea + colar"
+      },
+      "C": {
+        "texto": "Noncontrast CT of the head",
+        "quiz": "TC de crânio"
+      },
+      "D": {
+        "texto": "Focused assessment with sonography for trauma",
+        "quiz": "FAST"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "*Via aérea* com colar vem primeiro",
+    "certa": [
+      "Na avaliação primária (*primary survey*) do *ATLS*, a ordem é ABCDE, e o A vem sempre junto da proteção da coluna cervical: *airway with cervical spine motion restriction*. Respiração gorgolejante, sangue na orofaringe e Glasgow de 8 ou menos indicam via aérea definitiva, com intubação e estabilização manual do pescoço. Circulação, imagem e fratura vêm depois, mesmo que a equipe trabalhe em paralelo."
+    ],
+    "termos": [
+      "primary survey",
+      "airway with cervical spine protection",
+      "definitive airway",
+      "ABCDE"
+    ],
+    "erradas": {
+      "A": "Imobilizar o fêmur ajuda a reduzir sangramento e dor, mas vem depois da via aérea.",
+      "C": "A tomografia de crânio exige paciente com via aérea segura e estável; nunca vem antes do ABC.",
+      "D": "O *FAST* entra como complemento do C (circulação), depois de garantir a via aérea."
+    },
+    "macete": {
+      "frase": "No rodízio do trauma, o *primeiro espeto* já vem *com colar*",
+      "apoio": "O garçom serve os espetos na ordem A, B, C, D e E, e o primeiro, a via aérea, já vem com o colar cervical encaixado. Ninguém pula para a picanha da tomografia antes do pão de queijo da via aérea.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Acidente de carro, respiração gorgolejante, Glasgow 7 e uma coxa deformada. Qual é a primeira coisa a fazer?",
+    "palavras_chave": [
+      "high-speed crash",
+      "gurgling breathing",
+      "GCS 7",
+      "femur deformity"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Trauma",
+      "#Cirurgia",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é o primeiro passo?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,96 @@
+{
+  "dia": 330,
+  "data": "2027-09-27",
+  "dia_semana": "segunda-feira",
+  "quadro": "Bicho de Segunda",
+  "step": "Step 1",
+  "sistema": "Sistema gastrointestinal",
+  "topico": "Giardíase",
+  "conceito": "Giardia lamblia: fatty diarrhea after drinking stream water, cysts and trophozoites in stool",
+  "personagem": "Macrô",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-09-28",
+  "tom": null,
+  "gancho": "Cachoeira linda, água de graça e *um passageiro escondido no cantil*",
+  "gancho_apoio": "O Macrô recebeu um visitante que desceu a cachoeira de carona no cantil.",
+  "imagem": {
+    "arquivo": "dia-330.png",
+    "cena": "Macrô na beira de uma cachoeira num acampamento, perto da placa de estrada do boteco; sombrinhas borradas e misteriosas, sem forma definida, descem a cachoeira surfando e entram num cantil aberto deixado numa pedra.",
+    "foco": "50% 35%",
+    "alt": "Cachoeira linda, água de graça e um passageiro escondido no cantil"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-330-macete.png",
+    "cena": "Callback: as criaturas em forma de pera estão grudadas com ventosas num tapete de vilosidades rosadas, e gotas de óleo amarelo passam boiando por cima sem ser absorvidas; o Macrô oferece uma chaleira fervendo e um filtro de barro.",
+    "foco": "50% 45%",
+    "alt": "Água de riacho e gordura nas fezes: Giardia"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old man has had 2 weeks of bloating, flatulence, and foul-smelling, greasy, nonbloody diarrhea that floats. Symptoms began 10 days after a camping trip in Colorado, where he drank untreated stream water. He has no fever. Stool is negative for blood and leukocytes.",
+    "pergunta": "Which organism is most likely responsible?",
+    "alternativas": {
+      "A": {
+        "texto": "Giardia lamblia",
+        "quiz": "Giardia"
+      },
+      "B": {
+        "texto": "Entamoeba histolytica",
+        "quiz": "Entamoeba"
+      },
+      "C": {
+        "texto": "Cryptosporidium parvum",
+        "quiz": "Cryptosporidium"
+      },
+      "D": {
+        "texto": "Cyclospora cayetanensis",
+        "quiz": "Cyclospora"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Água de riacho e gordura nas fezes: *Giardia*",
+    "certa": [
+      "Diarreia gordurosa, fétida e sem sangue, com distensão e gases, em quem bebeu de um riacho sem ferver nem filtrar, é *giardiasis*. A *Giardia lamblia* (G. duodenalis) gruda no duodeno pelo disco ventral, atrapalha a absorção de gordura e não invade, por isso não há sangue nem febre. O diagnóstico é por antígeno ou PCR nas fezes, ou pelo achado de cistos e trofozoítos, e as opções de tratamento incluem tinidazol, metronidazol e nitazoxanida."
+    ],
+    "termos": [
+      "Giardia lamblia",
+      "ventral sucking disk",
+      "steatorrhea",
+      "stool antigen test"
+    ],
+    "erradas": {
+      "B": "*Entamoeba histolytica* invade a mucosa e causa disenteria com sangue e abscesso hepático, com trofozoítos que fagocitam hemácias.",
+      "C": "*Cryptosporidium* dá diarreia aquosa, grave nos imunossuprimidos, e aparece como oocistos ácido-resistentes, sem flagelo.",
+      "D": "*Cyclospora* causa diarreia aquosa prolongada ligada a frutas e verduras frescas e mostra oocistos ácido-resistentes."
+    },
+    "macete": {
+      "frase": "*Giardia é a pera de óculos que gruda de ventosa no duodeno*: a gordura passa direto e as fezes boiam",
+      "apoio": "Na imagem, as peras de óculos (os dois núcleos parecem olhos) grudam com ventosas no tapete de vilosidades, e as gotas de óleo passam boiando sem ser absorvidas. Cachoeira bonita, água fervida ou filtrada.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Homem de 34 anos com 2 semanas de distensão, gases e diarreia gordurosa, fétida e sem sangue, que boia, começou 10 dias depois de acampar e beber água de riacho sem tratar. Sem febre. Fezes sem sangue e sem leucócitos. Qual é o agente?",
+    "palavras_chave": [
+      "camping in Colorado",
+      "stream water",
+      "greasy diarrhea",
+      "bloating"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Microbiologia",
+      "#Parasitologia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Diarreia gordurosa após água de riacho?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

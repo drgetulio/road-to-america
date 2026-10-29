@@ -1,0 +1,96 @@
+{
+  "dia": 60,
+  "data": "2026-12-31",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Estágios de mudança",
+  "conceito": "Stages of change: contemplation (thinking about it) vs preparation (planning soon) vs action",
+  "personagem": null,
+  "gancho_data": "Réveillon: as resoluções de Ano Novo e os estágios de mudança.",
+  "remix_de": null,
+  "explicacao_em": "2027-01-01",
+  "gancho": "Promessa de Ano Novo: pensar, planejar ou fazer?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar: uma rede, uma nuvem de pensamento, uma mochila arrumada, pegadas nas ondas e um calendário novo; nenhum personagem está em degrau algum.",
+    "foco": "50% 35%",
+    "alt": "Uma praia na virada do ano com uma escadinha de cinco degraus na areia rumo ao mar: uma rede, uma nuvem de pensamento, uma mochila arrumada, pegadas nas ondas e um calendário novo; nenhum personagem está em degrau algum.",
+    "arquivo": "dia-060.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback: um personagem redondo de roupa branca está sentado no segundo degrau, dentro da nuvem de pensamento, olhando as ondas; a mochila do degrau seguinte ainda está fechada e um balão gentil de conversa sem palavras chega oferecendo ajuda.",
+    "alt": "Pensa em mudar, ainda sem data: contemplação",
+    "arquivo": "dia-060-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 45-year-old man who smokes 1 pack of cigarettes daily says, \"I know smoking is hurting my lungs, and I have been thinking about quitting sometime in the next few months, but I am not ready to set a date yet.\"",
+    "pergunta": "Which stage of change best describes this patient?",
+    "alternativas": {
+      "A": {
+        "texto": "Precontemplation",
+        "quiz": "Precontemplation"
+      },
+      "B": {
+        "texto": "Contemplation",
+        "quiz": "Contemplation"
+      },
+      "C": {
+        "texto": "Preparation",
+        "quiz": "Preparation"
+      },
+      "D": {
+        "texto": "Action",
+        "quiz": "Action"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Pensa em mudar, ainda sem data: *contemplação*",
+    "certa": [
+      "No modelo transteórico, *contemplation* é reconhecer o problema e pensar em mudar nos próximos 6 meses, ainda com ambivalência e sem plano concreto. *Preparation* exige intenção de agir no próximo mês, em geral com algum passo já dado, como marcar a data. A conduta nesse estágio é a *motivational interviewing*: explorar os prós e contras e oferecer ajuda e tratamento."
+    ],
+    "termos": [
+      "stages of change",
+      "contemplation",
+      "preparation",
+      "motivational interviewing"
+    ],
+    "erradas": {
+      "A": "Na pré-contemplação a pessoa não vê problema ou não pretende mudar nos próximos 6 meses; ele já reconhece o dano.",
+      "C": "Preparação é planejar para os próximos 30 dias, com data ou passos concretos; ele ainda não quer marcar a data.",
+      "D": "Ação é já ter mudado o comportamento nos últimos 6 meses; ele ainda fuma um maço por dia."
+    },
+    "macete": {
+      "frase": "Contemplação: *olha as ondas*, ainda *sem data*",
+      "apoio": "Pegadinha de prova: O NBME separa contemplação de preparação pelo prazo (6 meses versus 30 dias) e por um passo concreto já tomado.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Réveillon é a festa oficial das resoluções. Um paciente fala sobre o cigarro, e a forma como ele fala diz em que degrau da mudança ele está.",
+    "palavras_chave": [
+      "smoking cessation",
+      "readiness to change",
+      "counseling",
+      "behavioral science"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Psiquiatria",
+      "#Psychiatry",
+      "#Reveillon",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Em que estágio da mudança ele está?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

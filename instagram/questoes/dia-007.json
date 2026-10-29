@@ -1,0 +1,100 @@
+{
+  "dia": 7,
+  "data": "2026-11-08",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 2 CK",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix de domingo: Infarto com supra de ST (dia 2), Cadeirinha no carro (dia 4), Rastreamento do câncer de próstata (dia 6)",
+  "conceito": "Remix: STEMI + Child car seat + Lead-time bias",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": [
+    2,
+    4,
+    6
+  ],
+  "explicacao_em": "2026-11-09",
+  "tom": null,
+  "gancho": "Remix de domingo: quatro cartões e só *um* embarca",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-007.png",
+    "cena": "Um toca-discos vermelho e três discos ao lado, cada um com um ícone no rótulo: um coração, uma cadeirinha de carro e um relógio. Um quarto disco misterioso espia de uma capa lisa, e o braço da agulha está no ar, pronto para escolher.",
+    "foco": "50% 35%",
+    "alt": "Remix de domingo: quatro cartões e só um embarca"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-007-macete.png",
+    "cena": "Callback do toca-discos: a agulha pousa no disco da cadeirinha, que gira soltando notas musicais verdes. O disco do coração, o do relógio e o intruso ficam de lado, apagados, cada um com um pequeno símbolo vermelho de pausa.",
+    "alt": "Só a cadeirinha embarcou"
+  },
+  "questao": {
+    "vinheta": "A resident preparing a Sunday review session writes four statements from last week's cases on the whiteboard: chest pain, child car safety and a screening study.",
+    "pergunta": "Which statement is correct?",
+    "alternativas": {
+      "A": {
+        "texto": "STEMI at a hospital with a cath lab: give fibrinolysis first",
+        "quiz": "STEMI: fibrinólise",
+        "dia": 2
+      },
+      "B": {
+        "texto": "A 2-year-old below the seat's rear-facing limits stays rear-facing",
+        "quiz": "Ainda de costas",
+        "dia": 4
+      },
+      "C": {
+        "texto": "Lead-time bias: earlier detection makes patients live longer",
+        "quiz": "Lead-time: vive mais",
+        "dia": 6
+      },
+      "D": {
+        "texto": "Right ventricular infarction: give nitroglycerin for the pain",
+        "quiz": "IAM de VD: nitrato"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Só a cadeirinha embarcou",
+    "certa": [
+      "Na cadeirinha, quem manda é o limite de peso e de altura do fabricante: abaixo dele, a criança de 2 anos continua de costas (rear-facing), como no dia 4. É a única frase certa do quadro, e se você errou, volte ao dia 4 e refaça a questão antes do próximo remix."
+    ],
+    "termos": [
+      "primary PCI",
+      "rear-facing car seat",
+      "lead-time bias",
+      "right ventricular infarction"
+    ],
+    "erradas": {
+      "A": "Dia 2: com hemodinâmica disponível, a escolha é a PCI primária em até 90 minutos; fibrinólise só quando a PCI não sai em 120.",
+      "C": "Dia 6: no lead-time bias ninguém vive mais, o diagnóstico só chega antes e a morte acontece na mesma idade.",
+      "D": "Intruso: no infarto do ventrículo direito o coração depende da pré-carga, o nitrato pode derrubar a pressão e a conduta é dar volume."
+    },
+    "macete": {
+      "frase": "Domingo de revisão: 90 minutos no balão, de costas até a etiqueta mandar, e relógio adiantado não é vida mais longa.",
+      "apoio": "Pegadinha de prova: O NBME mistura temas parecidos no mesmo bloco; saber a regra exata (PCI em 90, limite do fabricante, mortalidade em vez de sobrevida) separa a certa das quase certas.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Remix de Domingo: três assuntos da semana (dias 2, 4 e 6) e um intruso. Cada alternativa mostra o dia em que o assunto apareceu.",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 2 CK review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#RevisaoEspacada",
+      "#SpacedRepetition",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Remix: só uma frase está certa. Qual?"
+  },
+  "exemplo": false
+}

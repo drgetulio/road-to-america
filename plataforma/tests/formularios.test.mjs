@@ -168,3 +168,96 @@ test("relógio: pular o tutorial dá os 5 minutos à pausa; o formulário de pro
   assert.throws(() => iniciarTutorial(novaSessao(pr), 0), /não tem tutorial/);
   assert.equal(pr.tempo.dia_ms, pr.blocos.length * 30 * MIN + 15 * MIN);
 });
+
+/* ---------- rodada 4: pares inimigos nos formulários fixos e personalizados ---------- */
+import { mapaInimigos, paresInimigosEm, montarParticao, MIN_ITENS_POR_BLOCO_COMPLETO } from "../js/formularios.js";
+import { normalizarFormulariosGravados } from "../js/banco.js";
+import { rng as rngT } from "../js/simulado.js";
+
+/* banco sintético com pares inimigos gravados num lado só e um trio (três itens que se
+   entregam): com 560 itens no Step 1 e dois formulários de 280, o trio obriga um item a
+   ficar fora dos dois */
+function bancoComInimigos(porStep, semente) {
+  const brutos = gerarBancoSintetico({ porStep, semente });
+  const r = rngT(semente + 7);
+  const porStep_ = { step1: brutos.filter((q) => q.step === "step1"), step2ck: brutos.filter((q) => q.step === "step2ck") };
+  const pares = [];
+  for (const step of ["step1", "step2ck"]) {
+    const L = porStep_[step];
+    for (let k = 0; k < 40; k++) {
+      const a = L[Math.floor(r() * L.length)];
+      const mesmos = L.filter((q) => q.sistema === a.sistema && q.id !== a.id);
+      const b = mesmos[Math.floor(r() * mesmos.length)];
+      (a.inimigos ||= []).push(b.id); /* só um lado: a plataforma lê nos dois sentidos */
+      pares.push([a.id, b.id]);
+    }
+    const [x, y, z] = L.filter((q) => q.sistema === L[0].sistema).slice(0, 3);
+    (x.inimigos ||= []).push(y.id, z.id); (y.inimigos ||= []).push(z.id);
+  }
+  return { banco: montarBanco(brutos), pares };
+}
+
+test("pares inimigos: nunca no mesmo formulário fixo nem no personalizado; um trio tira um item do B, que continua no formato", () => {
+  const { banco: b560 } = bancoComInimigos(560, 41);
+  for (const step of ["step1"]) {
+    const inim = mapaInimigos(b560.steps[step]);
+    assert.ok(inim.size > 60, "pares lidos nos dois sentidos");
+    const [cA, cB] = FORMULARIOS_FIXOS[step].map((f) => f.codigo);
+    const A = montarFormularioFixo(b560, step, cA, "completo"), B = montarFormularioFixo(b560, step, cB, "completo");
+    const idsA = A.blocos.flat(), idsB = B.blocos.flat();
+    assert.deepEqual(paresInimigosEm(idsA, inim), [], "nenhum par no A");
+    assert.deepEqual(paresInimigosEm(idsB, inim), [], "nenhum par no B");
+    assert.equal(idsA.filter((id) => new Set(idsB).has(id)).length, 0, "A e B sem itens em comum");
+    assert.equal(A.total, 280);
+    assert.ok(B.total < 280 && B.total >= 14 * MIN_ITENS_POR_BLOCO_COMPLETO, "o trio tira item do B: " + B.total);
+    assert.equal(B.parcial, false);
+    assert.equal(B.blocos.length, 14);
+    assert.ok(B.blocos.every((x) => x.length >= 19 && x.length <= 20));
+    assert.equal(B.omitidos_por_inimigos, 280 - B.total);
+    assert.equal(B.particao.omitidos_do_b_por_inimigos.length, 280 - B.total);
+    const vB = verificarFormulario(B, b560.porId);
+    /* o banco sintético de 560 tem a composição sorteada, sem folga para dois formulários
+       nas faixas; aqui só interessa que o tamanho e os pares estejam certos */
+    assert.ok(!vB.problemas.some((x) => /inimigos|Total|blocos/.test(x)), vB.problemas.join(" | "));
+    assert.ok(vB.avisos.some((a) => /pares inimigos impediram/.test(a)));
+    assert.deepEqual(vB.pares_inimigos, []);
+    /* gravação com par inimigo dentro é recusada: o formulário é recalculado */
+    const p1 = idsA.find((id) => inim.has(id));
+    const p2 = [...inim.get(p1)][0];
+    const troca = idsA.find((x) => x !== p1 && !inim.has(x));
+    const blocosRuins = A.blocos.map((bl) => bl.map((id) => (id === troca ? p2 : id)));
+    const ids2 = blocosRuins.flat();
+    assert.ok(new Set(ids2).size === ids2.length && ids2.includes(p1) && ids2.includes(p2), "formulário de teste com um par inimigo dentro");
+    {
+      const gravado = { ...b560, formularios_fixos: normalizarFormulariosGravados({ [step]: { A: { codigo: cA, blocos_itens: blocosRuins } } }) };
+      assert.equal(montarFormularioFixo(gravado, step, cA, "completo").origem_montagem, "calculado", "gravação com par inimigo não abre");
+      const ok = { ...b560, formularios_fixos: normalizarFormulariosGravados({ [step]: { A: { codigo: cA, blocos_itens: A.blocos } } }) };
+      assert.equal(montarFormularioFixo(ok, step, cA, "completo").origem_montagem, "gravado");
+    }
+    /* verificarFormulario acusa o par */
+    const comPar = { ...A, blocos: blocosRuins };
+    {
+      const v = verificarFormulario(comPar, b560.porId);
+      assert.ok(v.problemas.some((x) => /Pares inimigos no mesmo formulário/.test(x)));
+    }
+  }
+  /* banco com folga (500 por Step): personalizado completo e os fixos sem par nenhum */
+  const { banco: b500 } = bancoComInimigos(500, 52);
+  for (const step of ["step1", "step2ck"]) {
+    const inim = mapaInimigos(b500.steps[step]);
+    for (let s = 1; s <= 3; s++) {
+      const vistas = b500.steps[step].slice(0, 60 * s).map((q) => q.id);
+      const P = montarFormularioPersonalizado(b500, { step, tipo: "completo", vistas, semente: 900 + s });
+      assert.deepEqual(paresInimigosEm(P.blocos.flat(), inim), [], "personalizado " + step + " sem par inimigo");
+      assert.ok(verificarFormulario(P, b500.porId).ok);
+    }
+    for (const tipo of ["completo", "meio", "prontidao"]) for (const { codigo } of FORMULARIOS_FIXOS[step]) {
+      const f = montarFormularioFixo(b500, step, codigo, tipo);
+      assert.deepEqual(paresInimigosEm(f.blocos.flat(), inim), [], step + " " + tipo + " " + codigo);
+    }
+  }
+  /* partição direta: o A nunca recebe um par */
+  const pool = b560.steps.step1;
+  const part = montarParticao(pool, "step1", 280, 280, { semente: 3 });
+  assert.deepEqual(part.conflitos.A, []);
+});

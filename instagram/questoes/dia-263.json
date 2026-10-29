@@ -1,0 +1,99 @@
+{
+  "dia": 263,
+  "data": "2027-07-22",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Rastreamento do câncer de colo",
+  "conceito": "Cervical screening: cytology every 3 years from 21 to 29, then HPV-based testing up to 65",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-07-23",
+  "tom": null,
+  "gancho": "Fez 30 anos: o *rodízio* do rastreio muda alguma coisa?",
+  "gancho_apoio": "Citologias normais aos 20 e poucos, vacina completa, 31 anos. Qual é o plano agora?",
+  "imagem": {
+    "arquivo": "dia-263.png",
+    "cena": "O garçom do rodízio caminha por uma fileira de mesas que representam os anos e, nas primeiras, serve um espeto com uma pequena lâmina de vidro a cada três mesas. Mais adiante, ao lado de um bolo de aniversário com velinhas, ele para e consulta o cardápio, pensativo, com os espetos escondidos atrás das costas.",
+    "foco": "50% 35%",
+    "alt": "Fez 30 anos: o rodízio do rastreio muda alguma coisa?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-263-macete.png",
+    "cena": "O garçom, agora com o espeto de bolinha de vírus, serve uma mesa a cada cinco, com quatro mesas tranquilas e vazias entre elas. Numa das mesas, uma seringa de vacina sorridente continua recebendo o espeto: vacina não dispensa o rastreamento.",
+    "foco": "50% 40%",
+    "alt": "Depois dos 30: HPV a cada 5 anos"
+  },
+  "questao": {
+    "vinheta": "At a routine visit, a 31-year-old woman asks about cervical screening. Pap tests done when she was 22, 25, and 28 were all normal. She completed the HPV vaccine series at age 14 and has had one sexual partner for 6 years. She has no symptoms, and pelvic examination is normal.",
+    "pergunta": "Which is the most appropriate cervical cancer screening plan?",
+    "alternativas": {
+      "A": {
+        "texto": "Stop screening because she is vaccinated",
+        "quiz": "Parar: vacinada"
+      },
+      "B": {
+        "texto": "High-risk HPV testing now, repeat in 5 years if negative",
+        "quiz": "HPV agora, 5 anos"
+      },
+      "C": {
+        "texto": "Annual cytology with pelvic examination",
+        "quiz": "Citologia anual"
+      },
+      "D": {
+        "texto": "Cytology now, repeat in 1 year if normal",
+        "quiz": "Citologia em 1 ano"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Depois dos 30: *HPV a cada 5 anos*",
+    "certa": [
+      "Pela *USPSTF*, dos 21 aos 29 anos o rastreamento é com citologia a cada 3 anos; dos 30 aos 65, valem o *primary high-risk HPV testing* a cada 5 anos, a coleta conjunta (*cotesting*) a cada 5 anos ou a citologia a cada 3. Entre as opções, só o teste de HPV agora, repetido em 5 anos se negativo, segue a diretriz. A vacina não muda o rastreamento, porque não cobre todos os tipos oncogênicos."
+    ],
+    "termos": [
+      "primary hrHPV testing",
+      "cervical cytology",
+      "cotesting",
+      "USPSTF"
+    ],
+    "erradas": {
+      "A": "Vacinadas fazem o mesmo rastreamento; a vacina não protege contra todos os tipos de HPV de alto risco.",
+      "C": "Citologia anual é rastreamento em excesso, com mais colposcopias sem benefício, e o exame pélvico não faz parte do rastreio.",
+      "D": "Repetir em 1 ano depois de resultado normal não é recomendado em nenhuma faixa etária."
+    },
+    "macete": {
+      "frase": "*Três* nos 20 e poucos, *cinco* depois dos 30",
+      "apoio": "O garçom serve a lâmina de vidro a cada três mesas enquanto os aniversários são de vinte e poucos; depois do bolo dos 30, troca para o espeto do HPV, a cada cinco. A seringa sentada à mesa lembra que vacinada também recebe o espeto.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "31 anos, citologias normais, vacina contra HPV completa na adolescência. Qual é o próximo passo do rastreamento?",
+    "palavras_chave": [
+      "routine visit",
+      "prior normal Pap tests",
+      "HPV vaccination",
+      "31-year-old"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#QuestaoDoDia",
+      "#Ginecologia",
+      "#Prevencao",
+      "#RoadToAmerica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Qual é o plano de rastreio?"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

@@ -1,0 +1,99 @@
+{
+  "dia": 222,
+  "data": "2027-06-11",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Inibidores de SGLT2",
+  "conceito": "SGLT2 inhibitors: block proximal glucose reabsorption, genital infections, euglycemic DKA",
+  "personagem": "Seu Néfron",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-12",
+  "tom": null,
+  "gancho": "Glicemia quase normal e *o sangue azedou*: quem foi?",
+  "gancho_apoio": "Remédio novo para diabetes e coração, dois dias comendo pouco, e o pH caiu. Onde o remédio age?",
+  "imagem": {
+    "arquivo": "dia-222.png",
+    "cena": "Seu Néfron, de gravata e óculos na ponta do nariz, sentado no banco de espera de uma farmácia de interior, segura um frasco novo de comprimidos e olha intrigado para uma nuvenzinha amarela em forma de limão que paira sobre um medidor de açúcar na parede, que marca quase normal. Num vasinho ao lado do banco, brotam cogumelinhos.",
+    "foco": "50% 35%",
+    "alt": "Glicemia quase normal e o sangue azedou: quem foi?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-222-macete.png",
+    "cena": "Callback: o Seu Néfron volta para a mesa da repartição e carimba de vermelho cada cubinho de açúcar, que escorrega por um ralo para fora do prédio; perto do ralo brotam cogumelinhos. Num canto, gotinhas azedas fazem uma festa discreta, e o medidor de açúcar na parede marca quase normal.",
+    "foco": "50% 45%",
+    "alt": "Gliflozina: açúcar na urina e cetona escondida"
+  },
+  "questao": {
+    "vinheta": "A 56-year-old man with type 2 diabetes and heart failure started a new oral drug 2 months ago. Last month he had candidal balanitis. After 2 days of poor intake, he has vomiting and abdominal pain. Glucose is 182 mg/dL, pH 7.21, bicarbonate 11 mEq/L, and beta-hydroxybutyrate is elevated.",
+    "pergunta": "Where does his new drug most likely act?",
+    "alternativas": {
+      "A": {
+        "texto": "Pancreatic beta-cell ATP-sensitive K+ channel",
+        "quiz": "Canal K+ da célula β"
+      },
+      "B": {
+        "texto": "Hepatic AMP-activated protein kinase",
+        "quiz": "AMPK hepática"
+      },
+      "C": {
+        "texto": "Proximal tubule sodium-glucose cotransporter 2",
+        "quiz": "SGLT2 do túbulo"
+      },
+      "D": {
+        "texto": "Plasma dipeptidyl peptidase-4",
+        "quiz": "DPP-4"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Gliflozina: açúcar na urina e *cetona escondida*",
+    "certa": [
+      "Os *SGLT2 inhibitors* (dapagliflozina, empagliflozina) bloqueiam o cotransportador de sódio e glicose do *proximal convoluted tubule*, que reabsorve cerca de 90% da glicose filtrada. A glicose sai na urina e alimenta as *genital mycotic infections*. Com pouca ingestão, a insulina cai, o glucagon sobe e aparece a *euglycemic DKA*: cetoacidose com glicose abaixo de 250 mg/dL."
+    ],
+    "termos": [
+      "SGLT2 inhibitor",
+      "proximal convoluted tubule",
+      "euglycemic DKA",
+      "genital mycotic infection"
+    ],
+    "erradas": {
+      "A": "As sulfonilureias fecham o canal de potássio sensível a ATP da célula beta e causam hipoglicemia e ganho de peso, não cetoacidose euglicêmica.",
+      "B": "A metformina ativa a AMPK do fígado e reduz a gliconeogênese; o risco grave é acidose láctica, não cetose com fungo genital.",
+      "D": "Os inibidores da DPP-4 prolongam o GLP-1 do próprio corpo e se associam a nasofaringite e pancreatite, sem glicosúria."
+    },
+    "macete": {
+      "frase": "Gliflozina é *carimbo trocado*: açúcar EXCRETADO no túbulo proximal",
+      "apoio": "Na imagem, o Seu Néfron carimba de vermelho os cubinhos de açúcar que antes voltavam para o sangue. Na saída do ralo nascem cogumelinhos (os fungos), e num canto, sem açúcar alto para chamar atenção, as cetonas fazem uma festa quieta.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Diabetes tipo 2, insuficiência cardíaca, remédio novo há dois meses, candidíase genital no mês passado e agora cetoacidose com glicose de 182. O Seu Néfron já desconfia de qual carimbo mudou.",
+    "palavras_chave": [
+      "type 2 diabetes",
+      "heart failure",
+      "candidal balanitis",
+      "ketoacidosis"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Farmacologia",
+      "#Pharmacology",
+      "#Diabetes",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Cetoacidose com glicose 182: onde o remédio age?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

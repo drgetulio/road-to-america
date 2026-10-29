@@ -1,0 +1,96 @@
+{
+  "dia": 300,
+  "data": "2027-08-28",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Bioestatística, epidemiologia e saúde populacional",
+  "topico": "Confusão e modificação de efeito",
+  "conceito": "Confounding vs effect modification: stratification removes confounding but reveals modification",
+  "personagem": "Viés",
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-29",
+  "tom": null,
+  "gancho": "O cafezinho da padaria *foi parar no banco dos réus*",
+  "gancho_apoio": "O risco dobrou, até alguém separar fumantes de não fumantes.",
+  "imagem": {
+    "arquivo": "dia-300.png",
+    "cena": "Tribunal em miniatura: uma xícara de cafezinho de padaria nervosa no banco dos réus; o Viés espia por trás de uma tabela 2x2 em branco; uma nuvenzinha cinza meio escondida atrás da xícara.",
+    "foco": "50% 35%",
+    "alt": "O cafezinho da padaria foi parar no banco dos réus"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-300-macete.png",
+    "cena": "Callback: a tabela 2x2 se divide em duas tabelas menores iguais e, nas duas, a xícara aparece igualmente tranquila; a lupa ilumina a nuvem cinza, flagrada com cara de culpada, enquanto o cafezinho sai livre do banco dos réus e o Viés fica contrariado por ter sido descoberto.",
+    "foco": "50% 45%",
+    "alt": "Estratos iguais e diferentes do bruto: confusão"
+  },
+  "questao": {
+    "vinheta": "In a cohort study, people who drink more than 4 cups of coffee daily have twice the risk of myocardial infarction (crude RR 2.0). Heavy coffee drinkers are more likely to smoke. After stratification by smoking status, the RR is 1.0 among smokers and 1.0 among nonsmokers.",
+    "pergunta": "Which best explains the crude association?",
+    "alternativas": {
+      "A": {
+        "texto": "Effect modification by smoking",
+        "quiz": "Modif. efeito (fumo)"
+      },
+      "B": {
+        "texto": "Selection bias",
+        "quiz": "Viés de seleção"
+      },
+      "C": {
+        "texto": "Confounding by smoking",
+        "quiz": "Confusão (fumo)"
+      },
+      "D": {
+        "texto": "Random error",
+        "quiz": "Acaso"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Estratos iguais e diferentes do bruto: *confusão*",
+    "certa": [
+      "É *confounding*: o fumo se associa ao café e causa infarto por conta própria, então a associação bruta era emprestada do cigarro. Ao *estratificar* por tabagismo, o RR vira 1,0 nos dois estratos, iguais entre si e diferentes do bruto, e a associação do café desaparece. Na *effect modification*, ao contrário, os estratos ficam diferentes entre si, e a estratificação revela isso em vez de apagar."
+    ],
+    "termos": [
+      "confounding",
+      "stratification",
+      "effect modification",
+      "crude relative risk"
+    ],
+    "erradas": {
+      "A": "Modificação de efeito daria RR diferentes entre fumantes e não fumantes, e aqui os dois são iguais.",
+      "B": "Viés de seleção vem do jeito de escolher os participantes, e nada na vinheta sugere isso.",
+      "D": "O acaso não some de forma tão limpa ao estratificar; a mudança tem uma causa identificada, o fumo."
+    },
+    "macete": {
+      "frase": "Estratificou e *sumiu nos dois*? Confusão. Ficou *diferente entre eles*? Modificação",
+      "apoio": "Na imagem, o cafezinho da padaria estava no banco dos réus, mas a lupa do Viés achou a nuvem de fumaça escondida atrás dele. Partida a tabela em duas, o café sai inocente.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quem toma mais de 4 cafés por dia infarta o dobro, até o estudo separar fumantes de não fumantes. Aí o risco relativo vira 1,0 nos dois grupos. O Viés está rindo atrás da tabela 2x2.",
+    "palavras_chave": [
+      "cohort study",
+      "coffee and myocardial infarction",
+      "smokers and nonsmokers",
+      "stratified analysis"
+    ],
+    "hashtags": [
+      "#USMLEStep1",
+      "#Epidemiologia",
+      "#Biostatistics"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Estratificou e o RR virou 1,0 nos dois: é o quê?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

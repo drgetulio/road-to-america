@@ -1,0 +1,107 @@
+{
+  "dia": 364,
+  "data": "2027-10-31",
+  "dia_semana": "domingo",
+  "quadro": "Remix de Domingo",
+  "step": "Step 1",
+  "sistema": "Revisão cumulativa (remix)",
+  "topico": "Remix da casa mal-assombrada do Viés: Valor preditivo positivo (dia 97), Erros tipo I e tipo II (dia 251), Confusão e modificação de efeito (dia 300)",
+  "conceito": "Haunted house of bias remix: Positive predictive value rises with prevalence while sensitivity and specificity stay fixed + Type I vs type II error + Confounding vs effect modification",
+  "personagem": "Viés",
+  "gancho_data": "Halloween (31/10): os fantasmas da estatística.",
+  "remix_de": [
+    97,
+    251,
+    300
+  ],
+  "explicacao_em": "2027-11-01",
+  "tom": null,
+  "gancho": "Casa mal-assombrada da estatística: *qual fantasma mexeu no resultado?*",
+  "gancho_apoio": "Halloween. Remix com valor preditivo, erros tipo I e II e confusão.",
+  "imagem": {
+    "arquivo": "dia-364.png",
+    "cena": "Uma casa mal-assombrada simpática com um toca-discos na sala e três portas de quartos, cada uma com um ícone (uma tabela 2x2, uma lupa, uma tabela partida em duas); o Viés segura uma lanterna de abóbora; um isqueiro e um coração de pelúcia no tapete.",
+    "foco": "50% 35%",
+    "alt": "Casa mal-assombrada da estatística: qual fantasma mexeu no resultado?"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-364-macete.png",
+    "cena": "Callback: o Viés puxa um lençol e revela uma nuvem de fumaça fantasma que segurava as mãos do isqueiro e do coração de pelúcia; quando a tabela se divide em duas, o fio entre isqueiro e coração desaparece.",
+    "foco": "50% 45%",
+    "alt": "Sumiu igual nos dois estratos: confounding"
+  },
+  "questao": {
+    "vinheta": "A case-control study finds that people who carry a lighter have 3.0 times the odds of myocardial infarction (95% CI 2.4 to 3.8). When the analysis is stratified by smoking status, the odds ratio is 1.0 among smokers and 1.0 among nonsmokers.",
+    "pergunta": "Which best explains the original association?",
+    "alternativas": {
+      "A": {
+        "texto": "Confounding by smoking",
+        "quiz": "Confusão",
+        "dia": 300
+      },
+      "B": {
+        "texto": "Effect modification by smoking",
+        "quiz": "Modif. de efeito",
+        "dia": 300
+      },
+      "C": {
+        "texto": "Type I error",
+        "quiz": "Erro tipo I",
+        "dia": 251
+      },
+      "D": {
+        "texto": "Higher prevalence raising positive predictive value",
+        "quiz": "Prevalência e VPP",
+        "dia": 97
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Sumiu igual nos dois estratos: *confounding*",
+    "certa": [
+      "O cigarro se associa tanto ao isqueiro quanto ao infarto e cria uma associação falsa entre os dois: é *confounding*. Na *stratification* por tabagismo, o *odds ratio* vira 1,0 nos dois estratos, ou seja, a associação some igualmente. Se os estratos tivessem OR diferentes entre si, seria *effect modification*."
+    ],
+    "termos": [
+      "confounding",
+      "stratification",
+      "effect modification",
+      "odds ratio"
+    ],
+    "erradas": {
+      "B": "Modificação de efeito (dia 300) aparece quando os estratos têm OR diferentes, como 4,0 em fumantes e 1,0 em não fumantes.",
+      "C": "Erro tipo I (dia 251) é um falso positivo por acaso; aqui a associação some de forma sistemática ao estratificar, o que aponta para confusão.",
+      "D": "Prevalência mexe no valor preditivo positivo de um teste diagnóstico (dia 97), não numa medida de associação entre exposição e desfecho."
+    },
+    "macete": {
+      "frase": "*O confundidor é o fantasma que segura as duas mãos*",
+      "apoio": "Isqueiro e infarto parecem amigos porque o cigarro segura a mão dos dois. Estratificou e a associação sumiu nos dois andares da casa? Confusão. Mudou de um andar para o outro? Modificação de efeito.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Halloween com remix de valor preditivo (dia 97), erros tipo I e II (dia 251) e confusão versus modificação de efeito (dia 300). Quem carrega isqueiro infarta três vezes mais? Estratificou por cigarro, sumiu tudo. Qual fantasma foi?",
+    "palavras_chave": [
+      "Sunday remix",
+      "spaced repetition",
+      "Step 1 review"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep1",
+      "#Bioestatistica",
+      "#Biostatistics",
+      "#Halloween",
+      "#RemixDeDomingo",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "OR some igual nos dois estratos:"
+  },
+  "cta": "pre_inscricao",
+  "reel": null,
+  "exemplo": false
+}

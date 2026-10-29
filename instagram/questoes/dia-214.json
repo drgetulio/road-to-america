@@ -1,0 +1,99 @@
+{
+  "dia": 214,
+  "data": "2027-06-03",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistema nervoso e órgãos dos sentidos",
+  "topico": "Hematoma epidural",
+  "conceito": "Epidural hematoma: lucid interval, biconvex lens on CT, middle meningeal artery",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-04",
+  "tom": null,
+  "gancho": "Voltou do intervalo *sorrindo* e caiu no segundo tempo",
+  "gancho_apoio": "Pancada na têmpora, acordou bem, e duas horas depois tudo piorou. Que vaso rompeu?",
+  "imagem": {
+    "arquivo": "dia-214.png",
+    "cena": "Vestiário de um estádio no intervalo do jogo: tudo calmo, uma chuteira no banco, um cronômetro parado e, numa parede curva perto de uma emenda, uma rachadura fininha com um cano vermelho grosso passando por trás.",
+    "foco": "50% 35%",
+    "alt": "Voltou do intervalo sorrindo e caiu no segundo tempo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-214-macete.png",
+    "cena": "Callback: o cano vermelho de alta pressão estourou, a água empurrou o reboco para fora formando uma bolha em forma de lente, e a bolha parou exatamente nas duas emendas da parede. O cronômetro voltou a correr: é o segundo tempo.",
+    "foco": "50% 45%",
+    "alt": "Intervalo lúcido e lente: artéria meníngea média"
+  },
+  "questao": {
+    "vinheta": "A 20-year-old man is hit on the left temple by a baseball. He loses consciousness for 1 minute, then talks normally. Two hours later he has severe headache, vomiting, drowsiness, and a dilated left pupil. CT shows a left temporal bone fracture and a convex hyperdense collection that does not cross suture lines.",
+    "pergunta": "Injury to which vessel is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "Bridging veins",
+        "quiz": "Bridging veins"
+      },
+      "B": {
+        "texto": "Middle meningeal artery",
+        "quiz": "Middle meningeal a."
+      },
+      "C": {
+        "texto": "Lenticulostriate arteries",
+        "quiz": "Lenticulostriate a."
+      },
+      "D": {
+        "texto": "Anterior communicating artery",
+        "quiz": "ACom artery"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Intervalo lúcido e lente: *artéria meníngea média*",
+    "certa": [
+      "A fratura do osso temporal, perto do *pterion*, rasga a *middle meningeal artery*, e o sangramento arterial separa a dura-máter do crânio. Como a dura está presa nas suturas, a coleção fica *biconvex*, em forma de lente, e não cruza suturas. O *lucid interval* engana: o paciente acorda bem e piora quando o hematoma cresce e hernia o uncus, que dilata a pupila do mesmo lado. A conduta é craniotomia de urgência."
+    ],
+    "termos": [
+      "epidural hematoma",
+      "middle meningeal artery",
+      "lucid interval",
+      "biconvex (lens-shaped)"
+    ],
+    "erradas": {
+      "A": "As *bridging veins* sangram no hematoma subdural, em crescente, que cruza suturas e evolui mais devagar, típico de idosos e de trauma de aceleração e desaceleração.",
+      "C": "As *lenticulostriate arteries* rompem na hemorragia intraparenquimatosa hipertensiva dos núcleos da base, sem fratura nem intervalo lúcido.",
+      "D": "O aneurisma da *anterior communicating artery* causa hemorragia subaracnoide espontânea, com cefaleia em trovoada e sangue nas cisternas, não coleção em lente após trauma."
+    },
+    "macete": {
+      "frase": "Epidural é *intervalo de jogo*: volta sorrindo e cai no segundo tempo",
+      "apoio": "Na imagem, o cano de alta pressão (a artéria) atrás da parede do vestiário estoura e empurra o reboco para fora em forma de lente, que para nas emendas da parede (as suturas). Lente e intervalo, pense na meníngea média.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Pancada na lateral da cabeça, desmaio rápido, acordou conversando e, duas horas depois, cefaleia, vômitos, sonolência e pupila dilatada. Que vaso se rompeu?",
+    "palavras_chave": [
+      "blow to the temple",
+      "brief loss of consciousness",
+      "dilated pupil",
+      "temporal bone fracture"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Neurocirurgia",
+      "#Neurosurgery",
+      "#Trauma",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Intervalo lúcido e lente na TC: qual vaso?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

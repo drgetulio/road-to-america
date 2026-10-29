@@ -1,0 +1,95 @@
+{
+  "dia": 136,
+  "data": "2027-03-17",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Translocação robertsoniana",
+  "conceito": "Robertsonian translocation: fusion of acrocentric chromosomes, familial trisomy 21 risk",
+  "personagem": null,
+  "gancho_data": "Semana do Dia Mundial da Síndrome de Down (21/3): tom respeitoso, sem humor sobre a condição.",
+  "remix_de": null,
+  "explicacao_em": "2027-03-18",
+  "tom": "acolhedor",
+  "gancho": "Dois cromossomos que viajam *engatados*, como vagões",
+  "gancho_apoio": "Semana do Dia Mundial da Síndrome de Down. Hoje é dia de genética e de aconselhamento.",
+  "imagem": {
+    "arquivo": "dia-136.png",
+    "cena": "Uma estação de trem calma com dois vagões compridos, lado a lado, em trilhos paralelos. Cada vagão tem, numa das pontas, um pedacinho muito curto.",
+    "foco": "50% 35%",
+    "alt": "Estação de trem com dois vagões compridos lado a lado, cada um com um pedacinho curto numa ponta."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-136-macete.png",
+    "cena": "Callback: os dois vagões compridos agora estão engatados pela ponta curta, formando um trem só. Os dois pedacinhos curtos foram estacionados com cuidado num trilho lateral.",
+    "foco": "50% 40%",
+    "alt": "Os dois vagões engatados num trem só; os pedacinhos curtos ficam num trilho lateral."
+  },
+  "questao": {
+    "vinheta": "A couple asks about recurrence risk after their son is diagnosed with Down syndrome. His karyotype has 46 chromosomes, one formed by the long arms of chromosomes 14 and 21 joined at the centromere. The healthy mother has 45 chromosomes, including the same fused chromosome.",
+    "pergunta": "Which mechanism produced the fused chromosome?",
+    "alternativas": {
+      "A": {
+        "texto": "Isochromosome formation",
+        "quiz": "Isocromossomo"
+      },
+      "B": {
+        "texto": "Reciprocal translocation",
+        "quiz": "Recíproca"
+      },
+      "C": {
+        "texto": "Meiotic nondisjunction",
+        "quiz": "Não disjunção"
+      },
+      "D": {
+        "texto": "Robertsonian translocation",
+        "quiz": "Robertsoniana"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Translocação *robertsoniana*: acrocêntricos unidos",
+    "certa": [
+      "Na translocação robertsoniana, dois cromossomos acrocêntricos (13, 14, 15, 21 ou 22) se unem pelos braços longos perto do centrômero e perdem os braços curtos, que só têm cópias repetidas de genes de RNA ribossômico. A mãe é portadora equilibrada, saudável, com 45 cromossomos. O filho recebeu o cromossomo fundido e mais um 21 livre: tem 46 cromossomos, mas três cópias do braço longo do 21, e o risco de recorrência para o casal é maior do que na trissomia livre."
+    ],
+    "termos": [
+      "Robertsonian translocation",
+      "acrocentric chromosomes",
+      "balanced carrier",
+      "recurrence risk"
+    ],
+    "erradas": {
+      "A": "O isocromossomo une dois braços iguais do mesmo cromossomo, como dois 21q, e não o 14 com o 21.",
+      "B": "A translocação recíproca troca pedaços entre dois cromossomos sem fundi-los num só e não reduz o número para 45.",
+      "C": "A não disjunção meiótica gera um cromossomo 21 a mais, livre (47 cromossomos), e não um cromossomo fundido."
+    },
+    "macete": {
+      "frase": "Robertsoniana é *engate de vagões*: dois acrocêntricos unidos pelos braços longos",
+      "apoio": "Na imagem, os dois vagões compridos se engatam e os pedacinhos curtos ficam na estação.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Nesta semana do Dia Mundial da Síndrome de Down (21/3), falamos de genética com respeito a cada família. A pergunta é sobre o mecanismo e o aconselhamento.",
+    "palavras_chave": [
+      "Down syndrome",
+      "recurrence risk",
+      "karyotype",
+      "genetic counseling"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Genetica",
+      "#Genetics"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Cromossomo 14 e 21 fundidos: qual mecanismo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

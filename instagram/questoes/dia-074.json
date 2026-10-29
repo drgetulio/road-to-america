@@ -1,0 +1,97 @@
+{
+  "dia": 74,
+  "data": "2027-01-14",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Saúde comportamental",
+  "topico": "Episódio depressivo maior",
+  "conceito": "Major depressive episode: 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia",
+  "personagem": null,
+  "gancho_data": "Janeiro Branco (saúde mental): tom acolhedor, sem piada com o sofrimento.",
+  "remix_de": null,
+  "explicacao_em": "2027-01-15",
+  "tom": "acolhedor",
+  "gancho": "Janeiro Branco: tristeza, cansaço ou um *episódio depressivo*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "cena": "Um caminho de parque ao amanhecer, com uma fita branca presa num banco de madeira e uma xícara de chá fumegante. Ao longo do caminho, nove lanternas apagadas esperando para serem conferidas.",
+    "foco": "50% 35%",
+    "alt": "Janeiro Branco: tristeza, cansaço ou um episódio depressivo?",
+    "arquivo": "dia-074.png"
+  },
+  "imagem_macete": {
+    "cena": "Callback do parque: cinco das nove lanternas estão acesas, e a primeira acesa tem um ícone de nuvenzinha, o humor. No céu, uma fileira de pequenos sóis desenha duas semanas. Ao lado do banco, uma placa de rodovia com o ícone de um telefone aponta para um posto de ajuda.",
+    "alt": "Cinco sintomas por duas semanas: episódio depressivo maior",
+    "arquivo": "dia-074-macete.png"
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman has felt sad nearly every day for 3 weeks. She has lost interest in her hobbies, sleeps poorly, feels worthless, and has trouble concentrating. She denies suicidal ideation and has never had elevated mood. TSH is normal, and she uses no medications or substances.",
+    "pergunta": "Which is the most likely diagnosis?",
+    "alternativas": {
+      "A": {
+        "texto": "Persistent depressive disorder",
+        "quiz": "Dysthymia (PDD)"
+      },
+      "B": {
+        "texto": "Adjustment disorder",
+        "quiz": "Adjustment disorder"
+      },
+      "C": {
+        "texto": "Major depressive disorder",
+        "quiz": "Major depressive"
+      },
+      "D": {
+        "texto": "Bipolar II disorder",
+        "quiz": "Bipolar II"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Cinco sintomas por duas semanas: *episódio depressivo maior*",
+    "certa": [
+      "O *major depressive episode* exige no mínimo cinco de nove sintomas, durante duas semanas ou mais, e um deles precisa ser humor deprimido ou *anhedonia*. Ela tem humor deprimido, perda de interesse, insônia, sentimento de inutilidade e dificuldade de concentração: são 5, há 3 semanas, sem hipomania e sem causa orgânica, então o diagnóstico é *major depressive disorder*. Perguntar sobre ideação suicida faz parte de toda avaliação."
+    ],
+    "termos": [
+      "major depressive disorder",
+      "anhedonia",
+      "SIG E CAPS",
+      "persistent depressive disorder"
+    ],
+    "erradas": {
+      "A": "O transtorno depressivo persistente exige humor deprimido na maior parte dos dias por pelo menos 2 anos.",
+      "B": "O transtorno de adaptação depende de um estressor identificável e não preenche critérios de episódio depressivo maior.",
+      "D": "O bipolar II exige pelo menos um episódio de hipomania, e ela nunca teve humor elevado."
+    },
+    "macete": {
+      "frase": "*5 de 9* por *2 semanas*, com humor ou anedonia",
+      "apoio": "Pegadinha de prova: O NBME testa a duração: 2 semanas é episódio depressivo maior, 2 anos é transtorno persistente, e qualquer hipomania no passado muda para bipolar.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Hoje é Janeiro Branco, mês de cuidar da saúde mental. A questão pede o critério exato: quantos sintomas, por quanto tempo e quais não podem faltar.",
+    "palavras_chave": [
+      "sad mood",
+      "loss of interest",
+      "poor sleep",
+      "worthlessness"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#JaneiroBranco",
+      "#SaudeMental",
+      "#Psychiatry",
+      "#RoadToAmerica",
+      "#QuestaoDoDia"
+    ],
+    "cta_texto": "Gostou do formato? Faça um bloco inteiro de 30 minutos, grátis, no simulado da Road to America: drgetulio.github.io/road-to-america/simulado/ (link na bio)."
+  },
+  "quiz": {
+    "pergunta": "Qual é o diagnóstico mais provável?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

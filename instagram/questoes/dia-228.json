@@ -1,0 +1,99 @@
+{
+  "dia": 228,
+  "data": "2027-06-17",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sistemas renal/urinário e reprodutor (masculino, feminino e mama)",
+  "topico": "Torção ovariana",
+  "conceito": "Ovarian torsion: sudden unilateral pain with an adnexal mass, urgent laparoscopy",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-06-18",
+  "tom": null,
+  "gancho": "O espeto girou tanto que *a cordinha enrolou*",
+  "gancho_apoio": "Dor súbita, massa no ovário e fluxo diminuído. O garçom precisa decidir rápido.",
+  "imagem": {
+    "arquivo": "dia-228.png",
+    "cena": "Garçom de rodízio, de colete, segura um espeto do qual pende um balão redondo por uma cordinha que já começou a dar voltas. Na mesa, uma plaquinha verde e vermelha ainda sem decisão.",
+    "foco": "50% 35%",
+    "alt": "O espeto girou tanto que a cordinha enrolou"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-228-macete.png",
+    "cena": "Callback: a cordinha enrolou tanto que o balão ficou arroxeado; o garçom, com um cronômetro na mão, desenrola as voltas com cuidado, e o balão já recupera a cor. A plaquinha da mesa virou para o lado verde.",
+    "foco": "50% 45%",
+    "alt": "Torção de ovário: destorcer rápido e preservar"
+  },
+  "questao": {
+    "vinheta": "A 24-year-old woman has had sudden, severe right lower quadrant pain with nausea and vomiting since exercising 3 hours ago. Temperature is 37.4°C. Urine hCG is negative. There is right adnexal tenderness. Transvaginal ultrasound shows a 7-cm right ovarian mass with decreased Doppler flow.",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Urgent laparoscopy with detorsion",
+        "quiz": "Laparoscopia já"
+      },
+      "B": {
+        "texto": "CT of the abdomen and pelvis",
+        "quiz": "Tomografia"
+      },
+      "C": {
+        "texto": "Intramuscular methotrexate",
+        "quiz": "Metotrexato"
+      },
+      "D": {
+        "texto": "Analgesia and repeat ultrasound in 6 weeks",
+        "quiz": "Repetir US em 6 sem"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Torção de ovário: *destorcer rápido* e preservar",
+    "certa": [
+      "Dor súbita e unilateral com náuseas, massa anexial (o cisto ou tumor serve de pêndulo) e Doppler com fluxo diminuído formam a *ovarian torsion*. A conduta é *urgent laparoscopy* com *detorsion*; mesmo o ovário escurecido costuma se recuperar, por isso a ACOG recomenda preservar o ovário em vez de retirá-lo, principalmente na mulher jovem."
+    ],
+    "termos": [
+      "ovarian torsion",
+      "adnexal mass",
+      "urgent laparoscopy",
+      "detorsion (ovarian preservation)"
+    ],
+    "erradas": {
+      "B": "A tomografia atrasa a cirurgia e não muda a conduta quando a clínica e o ultrassom já indicam torção.",
+      "C": "O metotrexato trata gravidez ectópica estável, e o beta-hCG é negativo.",
+      "D": "Esperar 6 semanas é conduta de cisto simples sem dor aguda; aqui o ovário está com pouco fluxo e perde viabilidade a cada hora."
+    },
+    "macete": {
+      "frase": "*Torceu, destorce*: tempo é ovário",
+      "apoio": "Na imagem, o garçom do rodízio percebe que o espeto girou tanto que a cordinha do balão enrolou e o balão perdeu a cor. Ele desenrola na hora, de cronômetro na mão, e o balão volta a ficar colorido.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Dor súbita e forte no lado direito durante o treino, náuseas, vômitos, beta-hCG negativo e massa de 7 cm no ovário direito com fluxo reduzido no Doppler. Qual é o próximo passo?",
+    "palavras_chave": [
+      "sudden pelvic pain",
+      "after exercise",
+      "ovarian mass",
+      "Doppler flow"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#Ginecologia",
+      "#Gynecology",
+      "#Cirurgia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Dor súbita e massa no ovário: e agora?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

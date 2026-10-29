@@ -1,0 +1,95 @@
+{
+  "dia": 150,
+  "data": "2027-03-31",
+  "dia_semana": "quarta-feira",
+  "quadro": "Quarta do Porquê",
+  "step": "Step 1",
+  "sistema": "Sistemas reprodutor e endócrino",
+  "topico": "Síndrome de Klinefelter",
+  "conceito": "Klinefelter syndrome 47,XXY: seminiferous tubule dysgenesis, low inhibin, high FSH",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-01",
+  "tom": null,
+  "gancho": "Fábrica parada, *chefe* gritando: quem desligou o setor dos túbulos?",
+  "gancho_apoio": "Infertilidade, testículos pequenos e um hormônio da hipófise lá no alto.",
+  "imagem": {
+    "arquivo": "dia-150.png",
+    "cena": "Uma fábrica em corte, estilo manual de montagem: no térreo, dois setores, um com uma esteira parada e empoeirada, outro trabalhando devagar. No andar de cima, um chefe em forma de glândula gira um botão de volume no painel.",
+    "foco": "50% 35%",
+    "alt": "Fábrica em corte: um setor parado e empoeirado, outro devagar; no alto, um chefe em forma de glândula gira um botão."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-150-macete.png",
+    "cena": "Callback: na planta da fábrica, um cromossomo X extra está colado no projeto. Do setor parado não sobe nenhuma carta pelo tubo de correio, e o chefe lá em cima gira o botão até o máximo.",
+    "foco": "50% 40%",
+    "alt": "Um cromossomo X extra colado no projeto; o tubo de correio do setor parado não leva carta e o chefe gira o botão até o máximo."
+  },
+  "questao": {
+    "vinheta": "A 28-year-old man is evaluated for infertility. He is 191 cm tall, with small, firm testes and sparse facial and body hair. Semen analysis shows azoospermia. Serum FSH and LH are elevated, testosterone is low-normal and inhibin B is low.",
+    "pergunta": "Which karyotype is most likely?",
+    "alternativas": {
+      "A": {
+        "texto": "45,X/46,XY mosaicism",
+        "quiz": "45,X/46,XY"
+      },
+      "B": {
+        "texto": "46,XX with SRY translocation",
+        "quiz": "46,XX com SRY"
+      },
+      "C": {
+        "texto": "47,XXY",
+        "quiz": "47,XXY"
+      },
+      "D": {
+        "texto": "47,XYY",
+        "quiz": "47,XYY"
+      }
+    },
+    "correta": "C"
+  },
+  "explicacao": {
+    "titulo": "Klinefelter: *menos inibina, mais FSH*",
+    "certa": [
+      "Na síndrome de Klinefelter (47,XXY), o X extra leva à disgenesia dos túbulos seminíferos: as células de Sertoli produzem pouca inibina B e a espermatogênese falha, por isso o FSH sobe e há azoospermia. As células de Leydig também funcionam mal, a testosterona cai e o LH sobe. Estatura alta, testículos pequenos e firmes e pouco pelo completam o quadro."
+    ],
+    "termos": [
+      "Klinefelter syndrome",
+      "47,XXY",
+      "seminiferous tubule dysgenesis",
+      "inhibin B"
+    ],
+    "erradas": {
+      "A": "O mosaicismo 45,X/46,XY costuma causar genitália ambígua e baixa estatura, não um homem alto com testículos pequenos e firmes.",
+      "B": "O homem 46,XX com translocação do SRY também tem testículos pequenos e azoospermia, mas costuma ter estatura normal ou baixa.",
+      "D": "Homens 47,XYY são altos, mas em geral têm testículos, hormônios e fertilidade normais."
+    },
+    "macete": {
+      "frase": "XXY: *mais um X, menos inibina, mais FSH*",
+      "apoio": "Na imagem, o setor dos túbulos fecha, a carta de inibina não sobe e o chefe lá em cima aumenta o FSH.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Quarta do Porquê na genética e na endocrinologia: um casal procura ajuda para engravidar e os exames contam a história do eixo hormonal.",
+    "palavras_chave": [
+      "infertility",
+      "tall stature",
+      "small firm testes",
+      "azoospermia"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Genetica",
+      "#Endocrinology"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Azoospermia e FSH alto: qual cariótipo?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

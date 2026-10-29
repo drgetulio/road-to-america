@@ -1,0 +1,95 @@
+{
+  "dia": 104,
+  "data": "2027-02-13",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Quase erro",
+  "conceito": "Near miss: an error caught before reaching the patient still gets reported",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-02-14",
+  "tom": null,
+  "gancho": "Bola na *trave* conta? No hospital, conta",
+  "gancho_apoio": "O erro foi pego antes de chegar ao paciente. E agora?",
+  "imagem": {
+    "arquivo": "dia-104.png",
+    "cena": "Um campo de futebol vazio no fim da tarde: a bola acabou de bater na trave e volta quicando. Ao lado do gol, uma placa de trânsito redonda com o desenho de uma balança de tribunal. Ninguém na arquibancada viu o lance.",
+    "foco": "50% 35%",
+    "alt": "Bola batendo na trave num campo vazio, ao lado de uma placa de trânsito com uma balança."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-104-macete.png",
+    "cena": "Callback: num telão, o replay mostra a trajetória da bola em linha pontilhada até a trave. Ao lado, um envelope voa para dentro de uma caixa de correio em forma de escudo verde, e a placa da balança fica equilibrada.",
+    "foco": "50% 40%",
+    "alt": "Replay da bola na trave num telão e um envelope entrando numa caixa de correio em forma de escudo."
+  },
+  "questao": {
+    "vinheta": "A second-year resident is about to give intravenous potassium chloride to a patient when she notices that the bag is labeled for the patient in the next bed. She stops, the correct bag is obtained and the patient is not harmed. No one else saw the mix-up.",
+    "pergunta": "Which is the most appropriate next step regarding this event?",
+    "alternativas": {
+      "A": {
+        "texto": "Make no report because no harm occurred",
+        "quiz": "Não notificar"
+      },
+      "B": {
+        "texto": "Discuss it only with the nurse who prepared the bag",
+        "quiz": "Avisar só quem errou"
+      },
+      "C": {
+        "texto": "Report it only if a similar event recurs",
+        "quiz": "Só se repetir"
+      },
+      "D": {
+        "texto": "Report it through the hospital's safety reporting system",
+        "quiz": "Notificar no sistema"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Quase erro também se *notifica*",
+    "certa": [
+      "Um erro interceptado antes de chegar ao paciente é um quase erro (near miss). Ele mostra a mesma falha do sistema que um erro com dano mostraria, só que sem custo para ninguém. Por isso vai para o sistema de notificação do hospital, que analisa a causa sem buscar culpado e corrige o processo, como a conferência de identificação na beira do leito."
+    ],
+    "termos": [
+      "near miss",
+      "safety reporting system",
+      "patient safety"
+    ],
+    "erradas": {
+      "A": "A ausência de dano não dispensa a notificação; o quase erro é a chance mais barata de corrigir o sistema.",
+      "B": "Conversar com a colega pode ser útil, mas não substitui a notificação, que permite ao hospital mudar o processo.",
+      "C": "Esperar um segundo evento é esperar o paciente que talvez não tenha a mesma sorte."
+    },
+    "macete": {
+      "frase": "Bola na trave *também vai para o VAR*",
+      "apoio": "Na imagem, a bola bate na trave e ninguém vê o lance; amanhã o replay aparece.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado sem viés, segurança do paciente: o erro foi interceptado, ninguém se machucou e ninguém viu. O que fazer com esse lance?",
+    "palavras_chave": [
+      "potassium chloride",
+      "wrong patient bag",
+      "medication administration",
+      "error caught in time"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#SegurancaDoPaciente",
+      "#PatientSafety",
+      "#EticaMedica"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Erro pego a tempo, sem dano: e agora?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

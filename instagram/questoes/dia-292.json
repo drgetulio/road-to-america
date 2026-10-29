@@ -1,0 +1,96 @@
+{
+  "dia": 292,
+  "data": "2027-08-20",
+  "dia_semana": "sexta-feira",
+  "quadro": "Sextou na Farmácia",
+  "step": "Step 2 CK",
+  "sistema": "Processos e doenças multissistêmicos",
+  "topico": "Intoxicação por organofosforado",
+  "conceito": "Organophosphate poisoning: atropine plus pralidoxime",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-08-21",
+  "tom": null,
+  "gancho": "Todas as torneiras da casa *abriram ao mesmo tempo*",
+  "gancho_apoio": "Inseticida sem proteção, secreção por todo lado e pupilas puntiformes.",
+  "imagem": {
+    "arquivo": "dia-292.png",
+    "cena": "Balcão de farmácia de interior; atrás dele, uma parede com várias torneiras abertas escorrendo ao mesmo tempo em baldinhos, um pulverizador de jardim encostado e quatro frascos diferentes na prateleira; poças se espalhando no chão.",
+    "foco": "50% 35%",
+    "alt": "Todas as torneiras da casa abriram ao mesmo tempo"
+  },
+  "imagem_macete": {
+    "arquivo": "dia-292-macete.png",
+    "cena": "Callback: uma mão fecha o registro geral, que tem uma florzinha de beladona amarrada (atropina), e as torneiras param; outra mão usa uma chave inglesa para soltar uma engrenagem presa antes que a ferrugem tome conta (pralidoxima reativando a enzima).",
+    "foco": "50% 45%",
+    "alt": "Atropina para o muscarínico, pralidoxima para a enzima"
+  },
+  "questao": {
+    "vinheta": "One hour after spraying insecticide in an orchard without protective equipment, a 35-year-old man has vomiting, diarrhea, sweating, drooling, wheezing with copious bronchial secretions, pinpoint pupils, and diffuse muscle fasciculations. Pulse is 46/min.",
+    "pergunta": "After decontamination and airway support, which pharmacotherapy is most appropriate?",
+    "alternativas": {
+      "A": {
+        "texto": "Physostigmine",
+        "quiz": "Fisostigmina"
+      },
+      "B": {
+        "texto": "Pralidoxime alone",
+        "quiz": "Só pralidoxima"
+      },
+      "C": {
+        "texto": "Neostigmine",
+        "quiz": "Neostigmina"
+      },
+      "D": {
+        "texto": "Atropine plus pralidoxime",
+        "quiz": "Atropina+pralidoxima"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Atropina para o muscarínico, *pralidoxima para a enzima*",
+    "certa": [
+      "O *organophosphate* inibe a *acetylcholinesterase*, e sobra acetilcolina nos receptores muscarínicos (secreções, broncorreia, bradicardia, miose) e nicotínicos (fasciculações, fraqueza). A *atropine* bloqueia o lado muscarínico e é repetida até secar as secreções brônquicas. A *pralidoxime* reativa a enzima, se chegar antes do *aging* (a ligação que fica definitiva), e é a única das duas que trata o lado nicotínico."
+    ],
+    "termos": [
+      "organophosphate poisoning",
+      "acetylcholinesterase",
+      "atropine",
+      "pralidoxime and aging"
+    ],
+    "erradas": {
+      "A": "Fisostigmina inibe a acetilcolinesterase e pioraria o excesso de acetilcolina.",
+      "B": "Pralidoxima sozinha não controla as secreções nem a bradicardia, que matam pelo pulmão.",
+      "C": "Neostigmina também inibe a colinesterase, o mesmo mecanismo do veneno."
+    },
+    "macete": {
+      "frase": "*Atropina seca, pralidoxima solta*",
+      "apoio": "Na imagem, todas as torneiras da casa estão abertas. A atropina fecha o registro geral (seca as secreções); a pralidoxima solta a engrenagem da enzima antes que ela enferruje para sempre.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Uma hora depois de pulverizar inseticida sem equipamento de proteção: suor, salivação, chiado com muita secreção, pupilas puntiformes, fasciculações e pulso de 46. Depois da descontaminação, qual é o tratamento?",
+    "palavras_chave": [
+      "insecticide spraying",
+      "pinpoint pupils",
+      "bronchial secretions",
+      "fasciculations"
+    ],
+    "hashtags": [
+      "#USMLEStep2CK",
+      "#Toxicologia",
+      "#Toxicology"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Excesso colinérgico: qual é o tratamento?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}

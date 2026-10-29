@@ -1,0 +1,100 @@
+{
+  "dia": 342,
+  "data": "2027-10-09",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 2 CK",
+  "sistema": "Ciências sociais: ética, aspectos legais, profissionalismo, prática baseada em sistemas e segurança do paciente",
+  "topico": "Tratamento fútil",
+  "conceito": "Request for nonbeneficial treatment: no obligation to provide it, involve the ethics committee",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-10-10",
+  "tom": null,
+  "gancho": "Pedir tudo é humano. *Oferecer tudo, nem sempre.*",
+  "gancho_apoio": "UTI, família pedindo ECMO e uma equipe que não vê benefício.",
+  "imagem": {
+    "arquivo": "dia-342.png",
+    "cena": "Uma balança de tribunal desenhada como placa de trânsito: num prato, uma máquina enorme cheia de tubos transparentes vazios; no outro, uma manta macia e um abajur aceso; o Viés espia de longe, atrás de uma tabela 2x2.",
+    "foco": "50% 35%",
+    "alt": "Pedir tudo é humano. Oferecer tudo, nem sempre."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-342-macete.png",
+    "cena": "Callback: uma mesa redonda com cadeiras vazias, um bule de chá e xícaras, a balança em equilíbrio no centro e a manta e o abajur em destaque; a máquina grande fica desligada num canto.",
+    "foco": "50% 45%",
+    "alt": "Tratamento sem benefício: não há obrigação de oferecer"
+  },
+  "questao": {
+    "vinheta": "A 71-year-old woman with metastatic pancreatic cancer and multiorgan failure has been in the ICU for 3 weeks on maximal vasopressors and dialysis. The team agrees that further interventions cannot restore consciousness or allow survival to discharge. Her husband insists on ECMO and \"everything possible.\"",
+    "pergunta": "Which is the most appropriate next step?",
+    "alternativas": {
+      "A": {
+        "texto": "Start ECMO to respect the family's wishes",
+        "quiz": "Iniciar ECMO"
+      },
+      "B": {
+        "texto": "Withdraw all support without further discussion",
+        "quiz": "Retirar tudo já"
+      },
+      "C": {
+        "texto": "Seek a court order before any decision",
+        "quiz": "Ordem judicial"
+      },
+      "D": {
+        "texto": "Decline ECMO and request an ethics consultation",
+        "quiz": "Explicar + comitê"
+      }
+    },
+    "correta": "D"
+  },
+  "explicacao": {
+    "titulo": "Tratamento sem benefício: *não há obrigação de oferecer*",
+    "certa": [
+      "O médico não é obrigado a oferecer uma *nonbeneficial treatment* (tratamento que não alcança o objetivo do paciente). O caminho é conversar com empatia sobre objetivos de cuidado, explicar que a ECMO não será oferecida, manter conforto e controle de sintomas e acionar o *ethics committee* quando o impasse continua. A família continua ouvida, mas não pode exigir o que não traz benefício."
+    ],
+    "termos": [
+      "nonbeneficial treatment",
+      "goals of care",
+      "ethics committee",
+      "palliative care"
+    ],
+    "erradas": {
+      "A": "Respeitar a família não obriga a oferecer intervenção que a equipe considera sem benefício para a paciente.",
+      "B": "Retirar suporte sem conversa ignora a comunicação com a família e o processo institucional de resolução de conflito.",
+      "C": "Tribunal é o último recurso, depois de conversa, segunda opinião e comitê de ética."
+    },
+    "macete": {
+      "frase": "*Conversa, comitê, conforto*",
+      "apoio": "Na balança desenhada como placa de trânsito, o peso de uma máquina grande sem benefício não vence o cuidado. Primeiro a conversa sobre objetivos, depois o comitê de ética, e o conforto o tempo todo.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Três semanas de UTI, falência de vários órgãos e uma equipe que concorda que nada mais vai trazer benefício. O marido pede ECMO e tudo o que for possível. Qual é o próximo passo?",
+    "palavras_chave": [
+      "metastatic pancreatic cancer",
+      "multiorgan failure",
+      "husband insists on everything",
+      "ICU"
+    ],
+    "hashtags": [
+      "#USMLE",
+      "#USMLEStep2CK",
+      "#EticaMedica",
+      "#MedicalEthics",
+      "#CuidadosPaliativos",
+      "#QuestaoDoDia",
+      "#RoadToAmerica"
+    ],
+    "cta_texto": null,
+    "cta_slide": null
+  },
+  "quiz": {
+    "pergunta": "Família exige ECMO sem benefício:"
+  },
+  "cta": "simulado",
+  "reel": null,
+  "exemplo": false
+}

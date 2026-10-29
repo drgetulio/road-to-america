@@ -1,0 +1,87 @@
+{
+  "dia": 174,
+  "data": "2027-04-24",
+  "dia_semana": "sábado",
+  "quadro": "Sábado Sem Viés",
+  "step": "Step 1",
+  "sistema": "Ciências sociais: comunicação e habilidades interpessoais",
+  "topico": "Presentes de pacientes",
+  "conceito": "Gifts from patients: a small token may be accepted, expensive gifts are declined",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-04-25",
+  "tom": null,
+  "gancho": "Presente de paciente: agradecer, recusar ou *encaminhar*?",
+  "gancho_apoio": null,
+  "imagem": {
+    "arquivo": "dia-174.png",
+    "cena": "Uma balança de tribunal desenhada como placa de trânsito, sobre a mesa do consultório: num prato, uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho; no outro, uma caixinha de veludo com um relógio dourado. O braço da balança ainda balança.",
+    "foco": "50% 35%",
+    "alt": "Uma balança de tribunal desenhada como placa de trânsito, sobre a mesa do consultório: num prato, uma lata de biscoitos caseiros com laço vermelho e um cartão com um coraçãozinho; "
+  },
+  "imagem_macete": {
+    "arquivo": "dia-174-macete.png",
+    "cena": "O prato dos biscoitos ganha um selo verde e a lata aberta vai para a mesinha do café, com o cartão de coração em pé; a caixinha do relógio volta a ser fechada com laço, ao lado de um cone vermelho, pronta para ser devolvida com carinho.",
+    "alt": "Presente pequeno e sincero: obrigado"
+  },
+  "questao": {
+    "vinheta": "At her last visit before moving to another state, a 72-year-old woman whom a physician has treated for 9 years brings a tin of homemade cookies and a handwritten thank-you card. She says it is a small way to thank him for his care.",
+    "pergunta": "Which is the most appropriate response?",
+    "alternativas": {
+      "A": {
+        "texto": "\"I'm sorry, but I can't accept gifts from patients.\"",
+        "quiz": "Recusar o presente"
+      },
+      "B": {
+        "texto": "\"Thank you so much, this is very kind of you.\"",
+        "quiz": "Aceitar e agradecer"
+      },
+      "C": {
+        "texto": "\"Please donate this to the hospital instead.\"",
+        "quiz": "Mandar p/ hospital"
+      },
+      "D": {
+        "texto": "\"I need to report this gift to the ethics committee.\"",
+        "quiz": "Avisar comitê"
+      }
+    },
+    "correta": "B"
+  },
+  "explicacao": {
+    "titulo": "Presente pequeno e sincero: *obrigado*",
+    "certa": [
+      "Pelo *AMA Code of Medical Ethics*, presentes pequenos, de valor simbólico, oferecidos como gratidão e sem expectativa de tratamento diferente podem ser aceitos com um agradecimento, e recusar algo assim pode magoar o paciente e prejudicar a relação. Presentes caros, em dinheiro ou que criam obrigação devem ser recusados com delicadeza."
+    ],
+    "termos": [
+      "gifts from patients",
+      "AMA Code of Medical Ethics",
+      "patient-physician relationship",
+      "conflict of interest"
+    ],
+    "erradas": {
+      "A": "Recusar um gesto pequeno e sincero é rígido demais e pode ferir a relação; a regra não proíbe todos os presentes.",
+      "C": "Redirecionar um presente simbólico e pessoal para o hospital é desnecessário; isso faz sentido para ofertas de valor alto.",
+      "D": "Uma lata de biscoitos caseiros não precisa ser comunicada ao comitê de ética, porque não há conflito de interesse."
+    },
+    "macete": {
+      "frase": "*Bolo de fubá* se aceita, *relógio de ouro* se devolve com carinho. A pergunta é: esse presente muda o meu cuidado ou cria obrigação? Se não, um obrigado sincero.",
+      "apoio": "O NBME varia o valor (dinheiro, joia, ingresso caro), o momento (presente antes de uma cirurgia ou em troca de receita) e a vulnerabilidade do paciente; nesses casos, a resposta é recusar com gentileza.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Sábado Sem Viés com um dilema que todo médico já viveu: a paciente de muitos anos vai se mudar e traz um presente. A balança tem dois pratos, e a prova quer saber para que lado ela pende.",
+    "palavras_chave": [
+      "long-term patient",
+      "homemade cookies",
+      "thank-you card",
+      "professionalism"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Biscoitos caseiros de presente. O que dizer?"
+  },
+  "cta": "simulado",
+  "exemplo": false
+}

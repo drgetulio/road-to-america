@@ -1,0 +1,95 @@
+{
+  "dia": 144,
+  "data": "2027-03-25",
+  "dia_semana": "quinta-feira",
+  "quadro": "Rodízio de Quinta",
+  "step": "Step 2 CK",
+  "sistema": "Sangue e sistemas linforreticular e imune",
+  "topico": "Esplenectomia eletiva",
+  "conceito": "Elective splenectomy: vaccinate against encapsulated bacteria at least 2 weeks before",
+  "personagem": null,
+  "gancho_data": null,
+  "remix_de": null,
+  "explicacao_em": "2027-03-26",
+  "tom": null,
+  "gancho": "O *segurança* da balada vai se aposentar. Quem cobre o turno dele?",
+  "gancho_apoio": "Esplenectomia marcada daqui a seis semanas. O que precisa acontecer antes?",
+  "imagem": {
+    "arquivo": "dia-144.png",
+    "cena": "Um segurança em forma de baço, de terno navy e fone de ouvido, está na porta de uma festa e olha para um relógio de pulso. Ao lado da porta, uma caixa com um presente de aposentadoria e um calendário sem números.",
+    "foco": "50% 35%",
+    "alt": "Baço segurança de terno na porta da festa olhando o relógio, com um presente de aposentadoria ao lado."
+  },
+  "imagem_macete": {
+    "arquivo": "dia-144-macete.png",
+    "cena": "Callback: antes de sair, o baço segurança treina uma fila de anticorpos em forma de Y, de colete verde, que aprendem a barrar três bactérias de capa de chuva. No calendário, duas fileiras estão riscadas antes do dia da festa de despedida.",
+    "foco": "50% 40%",
+    "alt": "O baço treina anticorpos de colete verde para barrar bactérias de capa; duas semanas riscadas no calendário."
+  },
+  "questao": {
+    "vinheta": "A 34-year-old woman with immune thrombocytopenia unresponsive to corticosteroids and thrombopoietin receptor agonists will undergo an elective laparoscopic splenectomy 6 weeks from now. She has received no vaccines since childhood.",
+    "pergunta": "Which is the most appropriate vaccination plan?",
+    "alternativas": {
+      "A": {
+        "texto": "Vaccinate against encapsulated bacteria at least 2 weeks before surgery",
+        "quiz": "Vacinar 2 sem antes"
+      },
+      "B": {
+        "texto": "Vaccinate on the morning of surgery",
+        "quiz": "Vacinar no dia"
+      },
+      "C": {
+        "texto": "Vaccinate 6 months after surgery",
+        "quiz": "Vacinar 6 meses após"
+      },
+      "D": {
+        "texto": "Daily oral penicillin instead of vaccines",
+        "quiz": "Penicilina no lugar"
+      }
+    },
+    "correta": "A"
+  },
+  "explicacao": {
+    "titulo": "Esplenectomia eletiva: vacinar *2 semanas antes*",
+    "certa": [
+      "Sem baço, perde-se o filtro das bactérias encapsuladas, e o risco de infecção grave por pneumococo, meningococo e Haemophilus influenzae tipo b sobe. Na cirurgia eletiva, as vacinas (pneumocócica conjugada, meningocócicas ACWY e B, e Hib) devem ser feitas pelo menos 2 semanas antes, para dar tempo de resposta. Na esplenectomia de urgência, vacina-se 2 semanas depois."
+    ],
+    "termos": [
+      "asplenia",
+      "encapsulated bacteria",
+      "pneumococcal vaccine",
+      "meningococcal vaccine"
+    ],
+    "erradas": {
+      "B": "Vacinar na manhã da cirurgia não dá tempo de formar anticorpos antes da perda do baço.",
+      "C": "Esperar 6 meses deixa a paciente desprotegida no período de maior risco.",
+      "D": "A penicilina profilática pode complementar em situações específicas, mas não substitui as vacinas."
+    },
+    "macete": {
+      "frase": "Vai aposentar o *segurança*? Treine a equipe *2 semanas antes*",
+      "apoio": "Na imagem, o baço segurança treina os anticorpos para barrar quem chega de capa.",
+      "fala": null
+    }
+  },
+  "legenda": {
+    "contexto": "Rodízio de quinta, estação cirurgia. Uma cirurgia eletiva com data marcada e uma pergunta: o que precisa estar planejado antes do dia?",
+    "palavras_chave": [
+      "immune thrombocytopenia",
+      "elective splenectomy",
+      "surgical planning",
+      "vaccination history"
+    ],
+    "cta_texto": null,
+    "cta_slide": null,
+    "hashtags": [
+      "#Cirurgia",
+      "#Surgery"
+    ]
+  },
+  "quiz": {
+    "pergunta": "Esplenectomia eletiva: quando vacinar?"
+  },
+  "cta": null,
+  "reel": null,
+  "exemplo": false
+}
