@@ -1,0 +1,9 @@
+{
+  "name": "road-to-america-site",
+  "private": true,
+  "description": "Site estático da Road to America. O build só copia os arquivos públicos para dist/.",
+  "scripts": {
+    "build": "node tools/build-site.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
