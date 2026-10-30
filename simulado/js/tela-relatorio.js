@@ -7,7 +7,7 @@
 import { NOME_STEP } from "../../plataforma/js/simulado.js";
 import { prontidaoCombinada, PADRAO_STEP2CK, nomePadrao, padraoProvisorio } from "../../plataforma/js/psicometria.js";
 import { prontidao } from "../../plataforma/js/desempenho.js";
-import { nomeChave, garantirGabarito, resumoRevisao, resumoMidia, textoMidia } from "../../plataforma/js/banco.js";
+import { nomeChave, garantirGabarito, resumoRevisao } from "../../plataforma/js/banco.js";
 import { MOTIVOS_REPORTE, LIMITE_REPORTE } from "../../plataforma/js/registros.js";
 import {
   corrigirRegistro, estimativaDoSimulado, estimativaGeral, resultadoEstimado, perfilRelatorio, prioridades, resumoBlocos,
@@ -146,7 +146,7 @@ export default {
     const pe = est.percentual_esperado;
     const jaVistos = itensJaVistos(reg, todas);
     const val = validadeDoSimulado(reg, jaVistos);
-    const midiaForm = resumoMidia(form.blocos.flat().map((qid) => banco.porId.get(qid)));
+    const semMidia = !form.blocos.flat().some((qid) => (banco.porId.get(qid)?.midia || []).length);
     const retorno = "../simulado/#/relatorio/" + encodeURIComponent(id);
     const conf = est.confianca;
     /* a escala é relativa ao limiar em uso (0 no padrão do banco; o corte ligado à NBME quando houver) */
@@ -174,7 +174,7 @@ export default {
             const outros = val.motivos.filter((m) => !/condições de estudo|interrompido|reaplicação/.test(m));
             return " Por isso a estimativa abaixo é leitura de estudo e não entra na leitura de prontidão" + (outros.length ? "; além disso, " + e(outros.join("; ")) : "") + ".";
           })()) + "</p></div>" +
-        (midiaForm.total && midiaForm.com_imagem_real < midiaForm.total ? '<p class="aviso-conta" data-aviso-midia>' + icon("info") + "<span>" + e(textoMidia(midiaForm, "deste formulário")) + " A descrição deixa o item mais fácil que na prova, e o acerto aqui tende a ficar acima do que seria com as imagens.</span></p>" : "") +
+        (semMidia ? '<p class="aviso-conta">' + icon("info") + "<span>Os itens deste formulário não têm imagem, áudio nem vídeo: ECG, exames de imagem e histologia aparecem descritos no texto, o que deixa o item mais fácil que na prova. O acerto aqui tende a ficar acima do que seria com as imagens.</span></p>" : "") +
         (revisao.aviso ? '<p class="aviso-conta" data-aviso-revisao>' + icon("warning") + "<span>" + e(revisao.aviso) + "</span></p>" : "") +
         (fora.n ? '<p class="aviso-conta" data-fora-corte>' + icon("info") + "<span>" + plural(fora.n, "item público deste formulário (publicado no site, com gabarito aberto) ficou", "itens públicos deste formulário (publicados no site, com gabarito aberto) ficaram") + " fora da estimativa, como os itens de pré-teste da prova real. Eles contam nos acertos do dia, mas não na probabilidade, na habilidade nem no perfil.</span></p>" : "") +
 
@@ -206,7 +206,7 @@ export default {
           "<p><strong>" + e(res.confianca) + ".</strong> " + e(leituraConfianca(est)) + "</p>" +
           (conf.motivos?.length ? '<ul class="lista-check">' + conf.motivos.map((m) => "<li>" + icon("info") + "<span>" + e(m) + "</span></li>").join("") + "</ul>" : "") +
           '<p class="fine">' + e(textoRegraConfianca(est)) + "</p>" +
-          (sens ? '<p class="aviso-conta" data-sensibilidade>' + icon("info") + "<span><strong>Se o padrão provisório estiver errado.</strong> Não há imagem clínica real licenciada nos itens (" + midiaForm.com_figura + " de " + midiaForm.total + " têm figura gerada por programa), e eles passaram só por revisão automatizada, então podem ser mais fáceis do que a dificuldade-alvo supõe. Se o banco inteiro for cerca de " + sens.pontos + " pontos percentuais mais fácil (" + num(sens.deslocamento) + " logit), a sua probabilidade seria " + prob(sens.itens_mais_faceis) + "; se for mais difícil na mesma medida, " + prob(sens.itens_mais_dificeis) + ". " + (sens.muda_leitura ? "Num desses cenários a sua leitura mudaria de faixa." : "Nos dois cenários a sua leitura fica na mesma faixa.") + "</span></p>" : "") +
+          (sens ? '<p class="aviso-conta" data-sensibilidade>' + icon("info") + "<span><strong>Se o padrão provisório estiver errado.</strong> Os itens ainda não têm imagem e passaram só por revisão automatizada, então podem ser mais fáceis do que a dificuldade-alvo supõe. Se o banco inteiro for cerca de " + sens.pontos + " pontos percentuais mais fácil (" + num(sens.deslocamento) + " logit), a sua probabilidade seria " + prob(sens.itens_mais_faceis) + "; se for mais difícil na mesma medida, " + prob(sens.itens_mais_dificeis) + ". " + (sens.muda_leitura ? "Num desses cenários a sua leitura mudaria de faixa." : "Nos dois cenários a sua leitura fica na mesma faixa.") + "</span></p>" : "") +
           (est.desfechos ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração: modelo ajustado com desfechos fictícios (" + est.desfechos.modelo.n + " examinandos simulados). Por ele" : "Pelo modelo calibrado com os resultados oficiais da turma (" + est.desfechos.modelo.n + " participantes, " + est.desfechos.modelo.reprovados + " reprovações" + (est.desfechos.modelo.taxa_resposta !== null ? ", taxa de resposta de " + pct(est.desfechos.modelo.taxa_resposta) : "") + ")") + ", a probabilidade de aprovação é " + prob(est.desfechos.p_aprovacao) + (est.desfechos.ic90?.[0] !== null && est.desfechos.ic90?.[0] !== undefined ? " (intervalo de 90% pela incerteza do modelo: " + prob(est.desfechos.ic90[0]) + " a " + prob(est.desfechos.ic90[1]) + ")" : "") + ". " + e(est.desfechos.texto) + ". Estimativa da Road to America, não é resultado oficial.</span></p>" : "") +
           (ck ? (est.escore ? '<p class="aviso-conta aviso-conta--ok">' + icon("seal-check") + "<span>" + (modelos?.[step]?.demonstracao ? "Dados de demonstração. " : "") + "Nota esperada pelo modelo calibrado com notas reais (não é nota oficial): " + Math.round(est.escore.media) + " (intervalo de 90%: " + Math.round(est.escore.ic90[0]) + " a " + Math.round(est.escore.ic90[1]) + "); probabilidade de nota de pelo menos " + PADRAO_STEP2CK + ": " + prob(est.escore.p_limiar) + ".</span></p>"
             : '<p class="aviso-conta">' + icon("info") + "<span><strong>Sem nota de três dígitos.</strong> O limiar do banco foi fixado para representar o padrão mínimo de " + PADRAO_STEP2CK + ", hoje pela dificuldade-alvo dos itens. A nota só será estimada depois da calibração com escores reais da turma.</span></p>") : "") +
@@ -241,7 +241,7 @@ export default {
 
         '<section class="cartao" aria-labelledby="t-geral"><h2 class="h-sm" id="t-geral">Indicador do banco e prontidão</h2>' +
           (geral.n ? "<p>Com todas as suas respostas do " + NOME_STEP[step] + " no banco (" + plural(geral.n, "item", "itens") + "), a probabilidade de estar acima do limiar do banco é <strong>" + prob(geral.p_aprovacao) + "</strong>, " + (geral.confianca.alta ? "com precisão alta em relação ao padrão do banco" : "como estimativa preliminar") + ".</p>" +
-            '<p class="fine" data-indicador-nota>Este número pode diferir do resultado do formulário mesmo quando as respostas são as mesmas: o indicador do banco junta as respostas de todas as sessões (só a primeira de cada item, com peso menor no modo tutor) e repesa cada sistema pela composição do outline; o resultado acima usa só as respostas deste formulário, que já segue o outline e por isso não é repesado.' + (fora.n || geral.publicos_fora?.n ? " Nos dois números, os itens públicos ficam fora da estimativa pela mesma regra." : "") + "</p>" : "") +
+            '<p class="fine" data-indicador-nota>Este número pode diferir do resultado do formulário mesmo quando as respostas são as mesmas: o indicador do banco junta as respostas de todas as sessões (só a primeira de cada item, com peso menor no modo tutor) e repesa cada sistema pela composição do outline; o resultado acima usa só as respostas deste formulário' + (fora.n ? " (sem os itens públicos)" : "") + ", que já segue o outline e por isso não é repesado.</p>" : "") +
           '<div class="aviso-conta' + (pr.status === "pronto" ? " aviso-conta--ok" : "") + '">' + icon("flag-banner") + "<p><strong>EXIT 18.</strong> " + e(pr.mensagem) + "</p></div>" +
           '<p class="fine">' + e(pr.regra) + "</p>" +
         "</section>" +

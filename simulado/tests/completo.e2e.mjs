@@ -249,8 +249,7 @@ await etapa("A7. relatório do Step 1: resultado estimado, confiança, perfil na
   assert.equal(await page.locator(".perfil__tab").count(), 3);
   assert.match(txt, /O dia foi parado 1 vez/);
   assert.match(txt, /Condições padronizadas: não\.[\s\S]*leitura de estudo|Condições padronizadas: não\./, "o dia em condições de estudo não é padronizado");
-  assert.match(txt, /Não há imagem clínica real licenciada/, "aviso de mídia: sem imagem clínica real licenciada");
-  assert.match(txt, /(Nenhum|\d+) dos \d+ itens deste formulário (tem|têm) figura/, "aviso de mídia: quantos itens têm figura");
+  assert.match(txt, /não têm imagem, áudio nem vídeo/);
   assert.match(txt, /Probabilidade de estar acima do limiar do banco/i);
   assert.equal(await page.locator('[data-rot="Encerramento"]:text("tempo esgotado")').count(), 13);
   await page.locator("[data-qrev] details summary").first().click();

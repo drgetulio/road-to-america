@@ -318,9 +318,7 @@ export function riscos(linha, cfg = CONFIG_PADRAO, agora = new Date()) {
   /* 1. inatividade: dias desde a última atividade (revisão, simulado ou NBME);
         sem nenhuma atividade, conta a partir da criação da conta */
   const ref = linha.ultima_atividade || linha.criado_em;
-  /* relógio do aparelho atrás da data gravada (ou atividade gravada com o relógio
-     adiantado): a diferença sai negativa; o limite é 0, "hoje" */
-  const diasSem = ref ? Math.max(0, diasEntre(ref, agora)) : null;
+  const diasSem = ref ? diasEntre(ref, agora) : null;
   if (diasSem !== null && diasSem >= c.dias_inatividade) {
     add("inatividade", diasSem >= 2 * c.dias_inatividade ? "alto" : "normal",
       linha.ultima_atividade ? "Sem estudo registrado há " + diasSem + " dias." : "Nenhum estudo registrado desde a criação da conta, há " + diasSem + " dias.",

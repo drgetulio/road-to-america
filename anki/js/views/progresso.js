@@ -11,7 +11,7 @@ import { pageHead } from "./shared.js";
 import { resumoAprovacao } from "../../../plataforma/js/banco-aluno.js";
 import { carregarBanco, nomeChave } from "../../../plataforma/js/banco.js";
 import { linhaHistorico, NOMES_TIPO } from "../../../simulado/js/relatorio.js";
-import { textoProbabilidade, nomePadrao, textoPublicosFora } from "../../../plataforma/js/psicometria.js";
+import { textoProbabilidade, nomePadrao } from "../../../plataforma/js/psicometria.js";
 
 const ROTULO_MODO = { standard: "standard-paced", self: "self-paced", desconhecido: "não sei" };
 const CLASSE_PR = { pronto: "ok", pronto_sem_faixa: "aviso", aprovado: "ok", nao_pronto: "risco", insuficiente: "neutro" };
@@ -267,8 +267,7 @@ async function cartaoBancoQuestoes(ctx, { nbme, config }) {
         "<p>" + (est.n
           ? "Probabilidade de estar acima do limiar do banco" + (st === "step2ck" ? ", que representa o 218" : "") + " (padrão " + e(nomePadrao(est.corte?.origem)) + "), com " + plural(est.n, "item respondido", "itens respondidos") + "." +
             (conf.alta ? "" : conf.faltam_itens ? " Faltam cerca de " + plural(conf.faltam_itens, "item", "itens") + " para a precisão alta." : conf.faltam_sistemas.length ? " Faltam itens em " + plural(conf.faltam_sistemas.length, "sistema", "sistemas") + "." : "") +
-            (top ? " Área que mais derruba: " + e(nomeChave(st, "sistema", top.chave)) + " (+" + String(Math.round(top.ganho * 1000) / 10).replace(".", ",") + " pontos percentuais em jogo)." : "") +
-            (textoPublicosFora(est) ? " " + e(textoPublicosFora(est)) : "")
+            (top ? " Área que mais derruba: " + e(nomeChave(st, "sistema", top.chave)) + " (+" + String(Math.round(top.ganho * 1000) / 10).replace(".", ",") + " pontos percentuais em jogo)." : "")
           : "Ainda sem respostas deste Step no banco de questões.") + "</p></div>";
     }).join("") + '<p class="hint">Estimativa do banco, complementar à EXIT 18: enquanto o padrão for provisório, ele vem da dificuldade-alvo dos itens, sem painel de juízes nem ligação com as autoavaliações NBME. Não é probabilidade de aprovação no USMLE nem resultado do NBME.</p>';
   } catch (err) {

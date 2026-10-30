@@ -414,7 +414,7 @@ test("recomendações: áreas na ordem do ganho, de qualquer dimensão", () => {
   assert.deepEqual(g, [...g].sort((a, b) => b - a));
 });
 
-test("aviso de revisão: só some quando todos os itens têm revisão médica; itens públicos ficam fora do corte nos formulários (regra única)", () => {
+test("aviso de revisão: só some quando todos os itens têm revisão médica; itens públicos ficam fora do corte nos formulários fixos", () => {
   const auto = { revisao: { verificado: false, tipo: "automatizada", revisor: "Revisão automatizada (modelo de IA)" } };
   const med = { revisao: { verificado: true, revisor: "Dra. Ana Souza, CRM 1234", data: "2026-10-29" } };
   const r1 = resumoRevisao([auto, auto]);
@@ -424,7 +424,6 @@ test("aviso de revisão: só some quando todos os itens têm revisão médica; i
   assert.equal(resumoRevisao([med, med]).aviso, "");
   const porId = new Map([["s1-001", { id: "s1-001", legado: true }], ["R2A-S1-0001", { id: "R2A-S1-0001" }]]);
   assert.deepEqual([...itensForaDoCorte({ modo: "fixo", blocos: [["s1-001", "R2A-S1-0001"]] }, porId)], ["s1-001"]);
-  assert.deepEqual([...itensForaDoCorte({ modo: "personalizado", blocos: [["s1-001", "R2A-S1-0001"]] }, porId)], ["s1-001"], "regra única: também no personalizado");
-  assert.deepEqual([...itensForaDoCorte({ modo: "fixo", blocos: [["s1-001"]] }, porId)], ["s1-001"], "formulário só com o público, mas banco com privados: fica fora");
-  assert.equal(itensForaDoCorte({ modo: "fixo", blocos: [["s1-001"]] }, new Map([["s1-001", { id: "s1-001", legado: true }]])).size, 0, "só públicos (demonstração): todos contam");
+  assert.equal(itensForaDoCorte({ modo: "personalizado", blocos: [["s1-001", "R2A-S1-0001"]] }, porId).size, 0);
+  assert.equal(itensForaDoCorte({ modo: "fixo", blocos: [["s1-001"]] }, porId).size, 0, "só públicos (demonstração): todos contam");
 });

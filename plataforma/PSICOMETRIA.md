@@ -189,7 +189,7 @@ P_medida           = P(θ > 0 | respostas)        (só a incerteza da medida; σ
 
 A maior fonte de erro, enquanto o padrão for provisório, é o próprio padrão: um erro
 comum a todos os itens (todos mais fáceis do que a dificuldade-alvo supõe, por exemplo
-porque não há imagem clínica real licenciada e trazem pistas demais) desloca o limiar e não diminui com mais
+porque não têm imagem e trazem pistas demais) desloca o limiar e não diminui com mais
 respostas. A probabilidade passou a integrar essa incerteza (`pAcimaDoCorte()`):
 
 | Origem do padrão do item | `σ_c` (logit) |
@@ -209,7 +209,7 @@ intervalo de `θ`.
 exatamente o viés de 0,5 logit que a banca tinha testado. A banca da rodada 2 refez a
 simulação com erro de item e vieses maiores, e mostrou que 0,4 voltava a errar 11,7%
 com 0,75 logit e 27% com 1,0 logit. Um viés de 0,75 logit (cerca de 15 pontos
-percentuais no item de 0,65) é plausível para itens sem imagem clínica real e com pistas clássicas.
+percentuais no item de 0,65) é plausível para itens sem imagem e com pistas clássicas.
 Não há dado da turma que fixe esse número; até haver (seção 6.2 ou recalibração com a
 turma), o valor vem da simulação abaixo, com o limite do método documentado.
 
@@ -631,8 +631,8 @@ incerteza do padrão está na seção 6.1.
 
 1. **O padrão é provisório.** Os valores são dificuldades-alvo do projeto do banco, e
    não o julgamento de um painel de juízes nem um corte ligado a dados (seção 2). Um
-   erro comum a todos os itens (por exemplo, todos fáceis demais, porque não há imagem
-   clínica real licenciada e trazem pistas demais) desloca o limiar e não diminui com mais respostas. A
+   erro comum a todos os itens (por exemplo, todos fáceis demais, porque não têm imagem
+   e trazem pistas demais) desloca o limiar e não diminui com mais respostas. A
    probabilidade inclui essa incerteza com `σ_c = 0,7` logit (seção 6.1), escolhido por
    simulação e sem base empírica: a precisão alta erra menos de 4% até 0,75 logit de
    viés e cerca de 5% com 1,0 logit. O rótulo é "precisão alta em relação ao padrão do
@@ -650,19 +650,11 @@ incerteza do padrão está na seção 6.1.
 3. **Banco não é prova.** Itens escritos para ensinar, repetidos em tutor e respondidos
    em casa diferem da prova real (local, cansaço, pressão). O peso de tutor, a correção
    pelo efeito do modo (seção 13.1) e a regra da primeira resposta reduzem, mas não
-   eliminam, essa diferença. Não há imagem clínica real licenciada (radiografia,
-   tomografia, fotografia de pele, lâmina ou esfregaço) nem áudio ou vídeo: 109 dos 1120
-   itens novos têm figura gerada por programa (66 do Step 1 e 43 do Step 2 CK: traçados
-   de ECG, curvas, gráficos, heredogramas e esquemas), e os achados que a prova mostraria
-   como imagem clínica aparecem descritos no texto, com a etiqueta `exibicao-em-texto`
-   (161 itens do Step 1 e 134 do Step 2 CK). Isso facilita o item e puxa o viés no
-   sentido do falso Pass. O contrato já aceita mídia (campo `midia`) e as telas mostram
-   imagem com ampliação e contraste. A tela de escolha dos simulados, o relatório e o
-   painel do banco dizem quantos itens têm figura e que não há imagem clínica real, pela
-   mesma contagem (`resumoMidia()` em `plataforma/js/banco.js`; a frase do relatório e da
-   escolha dos simulados é `textoMidia()`); uma
-   imagem conta como clínica real quando tem licença e a fonte não diz que foi gerada
-   por programa.
+   eliminam, essa diferença. Os itens ainda não têm imagem, áudio nem vídeo: ECG,
+   radiografias, histologia e lesões aparecem descritos no texto, o que facilita o item
+   e puxa o viés no sentido do falso Pass. O contrato já aceita mídia (campo `midia`) e
+   as telas mostram imagem com ampliação e contraste; até haver itens com imagem, a
+   tela de escolha dos simulados e o relatório avisam.
 4. **Rasch supõe a mesma discriminação para todos os itens** e independência local.
    Itens que se ajudam (mesma vinheta, mesmo tema em sequência) violam a independência;
    a montagem evita itens seguidos do mesmo sistema, mas não garante independência.
@@ -769,13 +761,13 @@ frase diz "probabilidade de estar acima do limiar do banco (padrão provisório)
 da faixa, o relatório diz "resultado indefinido, perto do limiar do banco" e escreve a
 tendência em texto ("a tendência é acima do limiar", quando `P >= 0,5`).
 
-**Itens públicos fora do corte** (`itensForaDoCorte()` em `formularios.js`, rodada 2;
-regra única desde a seção 23). Os 80 itens públicos (`legado`, com gabarito e explicação
-no repositório aberto) que estão num formulário, fixo ou personalizado, continuam nele,
-para não mudar a composição nem o tempo, mas ficam fora da probabilidade, da habilidade,
-do perfil e do percentual esperado, como os itens de pré-teste da prova real. O
-relatório diz quantos saíram; os acertos do dia contam todos. No modo demonstração, com
-só os itens públicos, todos contam. Hoje são 17 no S1-B e 22 no CK-A (reservados), 23 no S1-A e 18 no CK-B.
+**Itens públicos fora do corte** (`itensForaDoCorte()` em `formularios.js`, rodada 2).
+Os 80 itens públicos (`legado`, com gabarito e explicação no repositório aberto) que
+estão nos formulários fixos continuam no formulário, para não mudar a composição nem o
+tempo, mas ficam fora da probabilidade, da habilidade, do perfil e do percentual
+esperado, como os itens de pré-teste da prova real. O relatório diz quantos saíram; os
+acertos do dia contam todos. No modo demonstração, com só os itens públicos, todos
+contam. Hoje são 17 no S1-B e 22 no CK-A (reservados), 23 no S1-A e 18 no CK-B.
 
 **Indicador do banco e resultado do formulário.** O relatório mostra os dois números e
 explica por que podem diferir com as mesmas respostas: o indicador do banco usa todas as
@@ -843,8 +835,8 @@ estudo, e o relatório marca esse dia como não padronizado. Nos formulários fi
 dos itens pode já ter sido respondida no banco; o relatório conta esses itens
 (`itensJaVistos()`), e acima de 25% o simulado é reaplicação, não comparável. A
 estimativa não é corrigida pela memória do item, porque o tamanho do efeito não é
-conhecido; por isso a reaplicação sai da leitura de prontidão. Não há imagem clínica real licenciada nos itens (seção 15, limitação 2), e o relatório
-diz quantos itens do formulário têm figura gerada por programa. Validação por simulação em `simulado/tests/relatorio.test.mjs`: examinandos
+conhecido; por isso a reaplicação sai da leitura de prontidão. Os itens não têm imagem
+(seção 15, limitação 2), e o relatório avisa. Validação por simulação em `simulado/tests/relatorio.test.mjs`: examinandos
 simulados com `θ = 1,6` e `θ = -1,6` num formulário completo saem com "Pass" e "Fail" em
 alta confiança, e no limiar (`θ = 0`) o rótulo só é alto quando `P` sai da faixa de 0,10 a
 0,90.
@@ -1127,35 +1119,3 @@ desfechos já estão prontos e entram sozinhos quando a turma tiver dados sufici
 Continua pendente o que depende de gente: revisão médica item a item, painel de juízes
 real, imagens reais licenciadas e itens difíceis novos para chegar à meta de 25%.
 
-## 23. Regra única dos itens públicos (29/10/2026)
-
-Antes desta correção, cada tela contava os 80 itens públicos de um jeito: o relatório do
-simulado completo os tirava da estimativa só nos formulários fixos, enquanto o banco do
-aluno, o indicador do banco (página dos simulados completos e relatório), Meu progresso
-e a ficha do admin os contavam. O mesmo aluno podia ver dois números feitos com regras
-diferentes. A regra agora é uma só:
-
-> Os itens públicos (`legado`: os 80 de `simulado/data/`, com gabarito e explicação no
-> repositório aberto) contam nos acertos e no percentual de cada sessão, mas ficam fora de
-> toda estimativa (probabilidade, habilidade, perfil por área, cobertura, curva de
-> evolução, percentual esperado e itens que faltam para a precisão alta) sempre que o
-> banco carregado tiver itens privados do mesmo Step. Com só os itens públicos (modo
-> demonstração público), todos contam, porque sem eles não haveria estimativa.
-
-Motivo: quem estudou pelo repositório aberto pode conhecer o gabarito, e a resposta a
-esse item mede memória, não habilidade. É o tratamento que o NBME dá aos itens de
-pré-teste: estão na prova, mas não entram na nota.
-
-Onde a regra mora: `publicosForaDaEstimativa(itens, step)` em `plataforma/js/psicometria.js`
-decide se ela vale para o banco carregado; `prepararRespostas()` tira as respostas a itens
-públicos (e devolve quantas tirou em `publicos_fora`), e `estimarAluno()` tira os itens
-públicos da lista do Step usada na cobertura e no percentual esperado
-(`est.publicos_fora: { n, regra }`). Como o banco do aluno (`resumoAprovacao`,
-`curvaPosterior`, curva de evolução), o indicador (`estimativaGeral`), o relatório
-(`estimativaDoSimulado`), Meu progresso, a ficha do admin e o modelo de desfechos passam
-por essas duas funções, todos usam a mesma regra. `itensForaDoCorte(form, porId)` aplica a
-mesma decisão aos formulários, fixos ou personalizados. A frase mostrada ao aluno quando a
-regra tirou respostas é `textoPublicosFora(est)`, no painel do banco, no indicador da
-página dos simulados completos e em Meu progresso; o relatório tem o próprio aviso, com o
-número de itens públicos do formulário. Testes: `plataforma/tests/psicometria.test.mjs`
-(regra nas estimativas) e `plataforma/tests/banco-aluno.test.mjs` (formulários).

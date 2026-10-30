@@ -2,8 +2,8 @@
    andamento, histórico e indicador de aprovação do banco */
 import { FORMATO_OFICIAL, NOME_STEP } from "../../plataforma/js/simulado.js";
 import { TIPOS_FORMULARIO, FORMULARIOS_FIXOS, TEMPOS_OFICIAIS, LIMITE_JA_VISTOS, dimensionar, montarFormularioFixo, montarFormularioPersonalizado, itensReservados, vistosNoFormulario, formularioReservado } from "../../plataforma/js/formularios.js";
-import { prontidaoCombinada, nomePadrao, textoPublicosFora } from "../../plataforma/js/psicometria.js";
-import { resumoRevisao, resumoMidia, textoMidia } from "../../plataforma/js/banco.js";
+import { prontidaoCombinada, nomePadrao } from "../../plataforma/js/psicometria.js";
+import { resumoRevisao } from "../../plataforma/js/banco.js";
 import { prontidao } from "../../plataforma/js/desempenho.js";
 import { criarDia } from "./dia-prova.js";
 import { estimativaGeral, linhaHistorico, NOMES_TIPO, textoRegraConfianca, leituraConfianca } from "./relatorio.js";
@@ -19,9 +19,9 @@ const FONTES = {
 };
 const TIPOS = ["completo", "meio", "prontidao"];
 
-/* mídia dos itens deste Step no banco (figuras geradas por programa, imagem clínica real) */
-function midiaDoStep(banco, step) {
-  return resumoMidia(banco?.steps?.[step] || []);
+/* o banco ainda não tem itens com imagem, áudio ou vídeo neste Step? */
+function semMidia(banco, step) {
+  return !(banco?.steps?.[step] || []).some((q) => (q.midia || []).length);
 }
 
 function dataBr(iso) { const [a, m, d] = iso.split("-"); return d + "/" + m + "/" + a; }
@@ -71,7 +71,7 @@ async function indicador(ctx, el, banco, step) {
     box.innerHTML =
       '<div class="cartao indicador">' +
         '<div class="indicador__topo"><h3 class="h-sm">Posição em relação ao limiar do banco</h3>' + seloConfianca(est.confianca) + "</div>" +
-        '<p class="indicador__p"><b>' + prob(est.p_aprovacao) + "</b><span>de probabilidade de estar acima do limiar do banco (padrão " + e(nomePadrao(est.corte?.origem)) + (step === "step2ck" ? ", que representa o 218" : "") + "), com " + plural(est.n, "item respondido", "itens respondidos") + " do " + NOME_STEP[step] + ". Não é probabilidade de aprovação no USMLE." + (textoPublicosFora(est) ? " " + e(textoPublicosFora(est)) : "") + "</span></p>" +
+        '<p class="indicador__p"><b>' + prob(est.p_aprovacao) + "</b><span>de probabilidade de estar acima do limiar do banco (padrão " + e(nomePadrao(est.corte?.origem)) + (step === "step2ck" ? ", que representa o 218" : "") + "), com " + plural(est.n, "item respondido", "itens respondidos") + " do " + NOME_STEP[step] + ". Não é probabilidade de aprovação no USMLE.</span></p>" +
         "<p>" + e(leituraConfianca(est)) + (!est.confianca.alta && est.confianca.faltam_sistemas?.length ? " Há " + plural(est.confianca.faltam_sistemas.length, "sistema", "sistemas") + " do outline com poucos itens respondidos." : "") + "</p>" +
         '<p class="fine">' + e(textoRegraConfianca(est)) + "</p>" +
         '<p class="fine">' + est.avisos.map(e).join(" ") + "</p>" +
@@ -157,7 +157,7 @@ export default {
     const concluidos = lista.filter((r) => r.estado === "concluido").map(linhaHistorico);
 
     const avisosStep = (step) =>
-      ((() => { const md = midiaDoStep(banco, step); return md.total && md.com_imagem_real < md.total ? '<div class="aviso-conta" data-aviso-midia>' + icon("info") + "<p><strong>" + (md.com_imagem_real ? "Poucas imagens clínicas reais, por enquanto." : "Sem imagem clínica real licenciada, por enquanto.") + "</strong> " + e(textoMidia(md, "do " + NOME_STEP[step] + " no banco")) + " Na prova, você precisa ler a imagem, e a descrição deixa o item mais fácil. Leve isso em conta ao ler o resultado.</p></div>" : ""; })()) +
+      (semMidia(banco, step) ? '<div class="aviso-conta" data-aviso-midia>' + icon("info") + "<p><strong>Sem itens com imagem, por enquanto.</strong> O banco ainda não tem itens com imagem, áudio ou vídeo: ECG, radiografias, histologia e lesões de pele aparecem descritos no texto. Na prova, você precisa ler a imagem, e a descrição deixa o item mais fácil. Leve isso em conta ao ler o resultado.</p></div>" : "") +
       (() => { const rv = resumoRevisao(banco?.steps?.[step] || []); return rv.aviso ? '<div class="aviso-conta" data-aviso-revisao>' + icon("warning") + "<p><strong>Sem revisão médica, por enquanto.</strong> " + e(rv.aviso) + "</p></div>" : ""; })() +
       (step === "step2ck" && (banco?.steps?.step2ck || []).length ? (() => { const tot = banco.steps.step2ck.length; const res = (reservas.formularios || []).filter((f) => f.step === "step2ck").reduce((a, f) => a + (f.itens || 0), 0); return res ? '<div class="aviso-conta" data-aviso-ck>' + icon("info") + "<p><strong>Banco do Step 2 CK ainda pequeno.</strong> O estudo no banco de questões e o simulado completo limpo disputam os mesmos " + tot + " itens: enquanto o formulário reservado espera por você, " + res + " deles ficam fora do banco de questões e sobram " + (tot - res) + " para estudar. Quem faz primeiro o banco inteiro chega aos outros formulários já tendo visto os itens.</p></div>" : ""; })() : "");
     const demoBanco = banco.origem !== "supabase";
