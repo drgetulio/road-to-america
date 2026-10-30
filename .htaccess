@@ -1,0 +1,42 @@
+# Road to America: configuração para a hospedagem Hostinger (Apache/LiteSpeed).
+# O GitHub Pages ignora este arquivo.
+
+# Módulos JavaScript (.mjs) precisam do tipo certo, senão o navegador recusa o arquivo
+AddType text/javascript .js .mjs
+AddType application/json .json
+AddType image/svg+xml .svg
+AddType font/woff2 .woff2
+
+DirectoryIndex index.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Força HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # Pastas internas que não fazem parte do site
+  RewriteRule ^(tools|supabase|banco-privado|entregas|instagram|node_modules)(/|$) - [F,L]
+  RewriteRule (^|/)tests(/|$) - [F,L]
+  RewriteRule (^|/)\.git - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType text/javascript "access plus 1 day"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
