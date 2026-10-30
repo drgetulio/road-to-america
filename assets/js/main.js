@@ -15,7 +15,7 @@
     try { localStorage.setItem("r2a-theme", v); } catch (e) { /* armazenamento indisponível */ }
   }
   var stored = readTheme();
-  if (stored === "light" || stored === "dark") root.setAttribute("data-theme", stored);
+  root.setAttribute("data-theme", stored === "light" ? "light" : "dark"); /* padrão: azul-marinho */
   function syncThemeLabel() {
     var cur = root.getAttribute("data-theme") || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
     document.querySelectorAll("[data-theme-toggle]").forEach(function (b) { b.setAttribute("aria-label", cur === "dark" ? "Ativar tema claro" : "Ativar tema escuro"); });

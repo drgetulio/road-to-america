@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="assets/icons/icons.css">
   <link rel="stylesheet" href="assets/css/base.css">
   <script>
-    try { var t = localStorage.getItem("r2a-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    try { var t = localStorage.getItem("r2a-theme"); document.documentElement.setAttribute("data-theme", t === "light" ? "light" : "dark"); } catch (e) {}
   </script>
   <style>
     .doc { max-width: 760px; padding-block: clamp(48px, 7vw, 96px); }
